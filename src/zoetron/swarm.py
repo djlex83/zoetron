@@ -171,20 +171,25 @@ class SwarmOrchestrator:
         return self.memory.digest(query=goal)
 
     def _plan(self, goal: str, context: str) -> list[SwarmTask]:
+        from .metabolism import Metabolism
+        met = Metabolism(self.cfg, memory=self.memory)
+        met.log_state()
         prompt = (
             f"Goal: {goal}\n\nMemory:\n{context}\n\n"
             'Return ONLY JSON: {"tasks": [{"title": str, "detail": str}, ...]} '
-            '(3-5 concrete tasks).\n"task_type": "plan"'
+            f'({met.plan_budget()["max_tasks"]}-5 concrete tasks, '
+            f'current stress state: {met.state()}).\n"task_type": "plan"'
         )
         raw = self.roles["planner"].ask(prompt, temperature=0.2)
         try:
             data = json.loads(_first_json(raw))
-            return [SwarmTask(title=str(t.get("title", ""))[:120],
-                              detail=str(t.get("detail", "")))
-                    for t in data.get("tasks", [])][:5]
+            tasks = [SwarmTask(title=str(t.get("title", ""))[:120],
+                               detail=str(t.get("detail", "")))
+                     for t in data.get("tasks", [])][:5]
         except (json.JSONDecodeError, AttributeError):
-            return [SwarmTask(title=f"Draft deliverable for: {goal}",
-                              detail="Fallback single-task plan")]
+            tasks = [SwarmTask(title=f"Draft deliverable for: {goal}",
+                               detail="Fallback single-task plan")]
+        return met.apply_to_plan(tasks)
 
     def _execute(self, task: SwarmTask, goal: str, context: str,
                  prior_artifacts: str = "") -> None:
