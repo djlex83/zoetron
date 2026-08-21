@@ -72,6 +72,9 @@ PYEOF
     git push origin main >> "$LOG" 2>&1 && log "gepusht ($CHANGED dateien)" || log "push-fehler"
   fi
 
+  log "phase: wiki-sync"
+  bash scripts/wiki_sync.sh
+
   log "=== HERZSCHLAG ENDE ==="
   sleep 1800
 done
