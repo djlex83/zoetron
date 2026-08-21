@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 import time
 from pathlib import Path
@@ -38,6 +39,10 @@ def main(argv: list[str] | None = None) -> int:
                    help="AutoRouter view: free tool-capable models, ranked")
 
     sub.add_parser("prune", help="Apoptosis: archive stale memories")
+
+    p_hands = sub.add_parser("hands",
+                             help="Motor organ: run real code for a task")
+    p_hands.add_argument("task", help="what should be done")
 
     args = parser.parse_args(argv)
     cfg = Config()
@@ -117,6 +122,12 @@ def main(argv: list[str] | None = None) -> int:
         print(f"prune: {stats['facts_pruned']} Fakten archiviert, "
               f"{stats['events_pruned']} Ereignisse archiviert")
         return 0
+
+    if args.cmd == "hands":
+        from .hands import Hands
+        out = Hands(cfg).do_task(args.task)
+        print(json.dumps(out, ensure_ascii=False, indent=1)[:1200])
+        return 0 if out.get("ok") else 1
 
     if args.cmd == "status":
         mem = MemoryStore(cfg.data_dir / "memory")

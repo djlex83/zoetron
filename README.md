@@ -28,6 +28,7 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 | 🪞 METACOG | self-awareness | `metacog.py` | predicts its own scores, measures calibration |
 | 🌍 SIMULATE | world model | `simulate.py` | dry-runs plans before acting on them |
 | 👁 SENSES | eyes/ears | `senses.py` | watches HN frontier + web search (via scrapling); fresh signals feed DRIVE |
+| ✋ HANDS | motor system | `hands.py` | plans + **executes real code** (sandboxed); results flow back into memory |
 | 🩸 METABOLISM | stress axis | `metabolism.py` | rate limits & timeouts raise stress → smaller plans; cortisol decay |
 | ✂️ PRUNE | apoptosis | `prune.py` | archives stale memories, keeps recalled facts, insights are immortal |
 | 🧬 AUTOROUTER | immune system | `router.py` | only free models WITH tool support; failover + 1h blacklist; **experience beats metadata** (critic scores boost the routing chain) |

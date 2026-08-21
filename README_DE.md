@@ -28,6 +28,7 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 | 🪞 METACOG | Selbstgefühl | `metacog.py` | sagt eigenen Score voraus, misst Kalibrierung |
 | 🌍 SIMULATE | Weltmodell | `simulate.py` | trocken üben vor dem Handeln, Risiken vorab |
 | 👁 SINNE | Augen/Ohren | `senses.py` | beobachtet HN-Frontier + Websuche (via Scrapling); frische Signale speisen DRIVE |
+| ✋ HÄNDE | Motorik | `hands.py` | plant + **führt echten Code aus** (Sandbox); Ergebnisse fließen ins Gedächtnis |
 | 🩸 STOFFWECHSEL | Stressachse | `metabolism.py` | Rate-Limits/Timeouts erhöhen Stress → kleinere Pläne; Cortisol-Abbau |
 | ✂️ PRUNE | Apoptose | `prune.py` | archiviert alte Erinnerungen, behält genutzte Fakten, Einsichten unsterblich |
 | 🧬 AUTOROUTER | Immunsystem | `router.py` | nur freie Modelle MIT Tool-Support; Failover + 1h-Blacklist; **Erfahrung schlägt Papier** (Critic-Scores boosten die Kette) |
