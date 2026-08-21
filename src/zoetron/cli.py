@@ -49,6 +49,10 @@ def main(argv: list[str] | None = None) -> int:
     p_evo.add_argument("problem", help="the problem to attack")
     p_evo.add_argument("--n", type=int, default=3, help="number of variants")
 
+    sub.add_parser("act",
+                   help="Close the loop: run the swarm on the newest "
+                        "unhandled DRIVE goal")
+
     args = parser.parse_args(argv)
     cfg = Config()
 
@@ -133,6 +137,36 @@ def main(argv: list[str] | None = None) -> int:
         out = Hands(cfg).do_task(args.task)
         print(json.dumps(out, ensure_ascii=False, indent=1)[:1200])
         return 0 if out.get("ok") else 1
+
+    if args.cmd == "act":
+        # Close the loop: pick the newest unhandled DRIVE goal and let the
+        # swarm actually work on it. Handled goals get an event marker.
+        from .memory import MemoryStore
+        mem = MemoryStore(cfg.data_dir / "memory")
+        handled = {str((e.get("payload") or {}).get("goal_title", ""))
+                   for e in mem.events(kind="act_done", limit=200)}
+        goal = None
+        for e in mem.events(kind="drive_goal", limit=50):
+            title = str((e.get("payload") or {}).get("title", ""))
+            if title and title not in handled:
+                goal = title
+                break
+        if not goal:
+            print("act: keine unbehandelten Ziele")
+            return 0
+        print(f"act: fuehre aus -> {goal}")
+        from .swarm import SwarmOrchestrator
+        report = SwarmOrchestrator(cfg, memory=mem).run(goal)
+        mem.add_event("act_done", {"goal_title": goal,
+                                   "score": report.get("score"),
+                                   "converged": report.get("converged")})
+        winner = (report.get("evolution") or {}).get("winner_angle")
+        line = (f"ACT: '{goal[:60]}' | Score {report.get('score')}/10, "
+                f"{'konvergiert' if report.get('converged') else 'offen'}"
+                + (f" | evolviert: {winner}" if winner else ""))
+        print(line)
+        return 0
+
 
     if args.cmd == "evolve":
         from .evolution import Evolution
