@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zoetron – an autonomous agent organism</title>
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #0d1117; color: #e6edf3;
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh; padding: 4rem 1.5rem;
+    background-image: radial-gradient(circle at 20% 10%, #16233a 0%, #0d1117 55%);
+  }
+  h1 { font-size: clamp(2.4rem, 8vw, 4rem); letter-spacing: .02em; }
+  h1 span { filter: drop-shadow(0 0 18px rgba(255,80,80,.45)); }
+  p.sub { margin-top: .9rem; color: #9aa7b3; max-width: 46rem; text-align: center; line-height: 1.6; }
+  .pulse {
+    width: 14px; height: 14px; border-radius: 50%; background: #ff5252;
+    margin: 2.2rem auto 0; animation: beat 1.2s infinite;
+  }
+  @keyframes beat { 0%,100% { transform: scale(1); opacity:1 } 12% { transform: scale(1.5); opacity:.75 } 24% { transform: scale(1); } 36% { transform: scale(1.35);} 48%{transform:scale(1);} }
+  .grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem; max-width: 62rem; margin-top: 2.6rem; width: 100%;
+  }
+  .card {
+    background: #101927; border: 1px solid #223047; border-radius: 14px;
+    padding: 1.1rem 1.2rem;
+  }
+  .card b { display: block; margin-bottom: .35rem; }
+  .card small { color: #93a4b5; line-height: 1.5; display: block; }
+  a.btn {
+    display: inline-block; margin-top: 2.4rem; padding: .8rem 1.6rem;
+    border-radius: 999px; background: #238636; color: #fff;
+    text-decoration: none; font-weight: 600;
+  }
+  a.btn.ghost { background: transparent; border: 1px solid #30363d; margin-left: .6rem; color:#58a6ff; }
+  footer { margin-top: 3rem; color: #6e7681; font-size: .85rem; text-align:center; line-height:1.7; }
+</style>
+</head>
+<body>
+  <h1><span>🫀</span> Zoetron</h1>
+  <p class="sub">An autonomous <b>agent organism</b> – it dreams, sets its own goals,
+  executes real code, evolves better strategies, and reports every 30&nbsp;minutes.
+  Built openly, running itself.</p>
+  <div class="pulse" title="heartbeat every 30 minutes"></div>
+
+  <div class="grid">
+    <div class="card"><b>💭 DREAM</b><small>Distills experience into durable insights while the system “sleeps”.</small></div>
+    <div class="card"><b>🔥 DRIVE</b><small>Generates its own goals from knowledge gaps and fresh signals.</small></div>
+    <div class="card"><b>✋ HANDS</b><small>Sandboxed execution of real code – thinking becomes acting.</small></div>
+    <div class="card"><b>🧬 EVOLUTION</b><small>Failing plans breed variants; the fittest strategy is inherited.</small></div>
+    <div class="card"><b>👁 SENSES</b><small>Watches the Hacker News frontier and the web for new input.</small></div>
+    <div class="card"><b>🛡 REFLEX</b><small>Self-heals CI and infrastructure issues before anyone notices.</small></div>
+  </div>
+
+  <div>
+    <a class="btn" href="https://github.com/djlex83/zoetron">GitHub Repository</a>
+    <a class="btn ghost" href="https://github.com/djlex83/zoetron/wiki">Wiki</a>
+    <a class="btn ghost" href="https://github.com/djlex83/zoetron/issues">Task Board</a>
+  </div>
+
+  <footer>
+    65/65 tests green · heartbeat every 30 min · reports via Telegram<br>
+    <a style="color:#58a6ff" href="./REPORTS/">weekly reports</a> ·
+    <a style="color:#58a6ff" href="https://github.com/djlex83/zoetron/releases">v0.2.0 “The Organism Awakens”</a>
+  </footer>
+</body>
+</html>
