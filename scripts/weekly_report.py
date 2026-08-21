@@ -46,7 +46,8 @@ def build_report() -> str:
               if isinstance(e.get("payload"), dict)
               and isinstance(e["payload"].get("score"), (int, float))]
     evolutions = [e for e in events if e.get("kind") == "evolution_run"]
-    insights = [f for f in facts if f.get("key", "").startswith("insight:")]
+    insights = [f for f in facts
+                if f.get("key", "").startswith(("insight:", "dream:"))]
     senses = kinds.get("sense_cycle", 0)
     hand_ok = sum(1 for e in events if e.get("kind") == "hand_action"
                   and isinstance(e.get("payload"), dict)
