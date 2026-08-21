@@ -157,7 +157,6 @@ def main(argv: list[str] | None = None) -> int:
         print(f"act: fuehre aus -> {goal}")
         issue_num = None
         try:
-            from .gh_tools import new_issue  # type: ignore
             import importlib.util as _ilu
             _spec = _ilu.spec_from_file_location(
                 "gh_tools", Path(__file__).parent.parent / "scripts"
@@ -169,7 +168,7 @@ def main(argv: list[str] | None = None) -> int:
                 {"title": f"[Ziel] {goal[:180]}",
                  "body": f"Autonom generiertes DRIVE-Ziel.\n\n"
                          f"Ausgefuehrt vom Swarm im naechsten ACT-Lauf.",
-                 "labels": ["drive-goal"]})
+                 "labels": ["drive-goal", "status:in-arbeit"]})
             if _code == 201:
                 issue_num = _data.get("number")
                 print(f"act: issue #{issue_num} angelegt")
@@ -198,9 +197,13 @@ def main(argv: list[str] | None = None) -> int:
                                         + f"\n{line}"[:600])})
                 _state = "closed" if report.get("converged") else "open"
                 _tag = "erledigt" if _state == "closed" else "offen"
+                _labels = (["status:erledigt"] if _state == "closed"
+                           else ["status:evolviert"])
                 _gh._api("PATCH", f"/issues/{issue_num}",
                          {"state": _state,
                           "title": "[{}] {}".format(_tag, goal[:160])})
+                _gh._api("PUT", f"/issues/{issue_num}/labels",
+                         {"labels": ["drive-goal"] + _labels})
                 mem.add_event("issue_synced", {"issue": issue_num,
                                                "state": _state})
             except Exception:  # noqa: BLE001
