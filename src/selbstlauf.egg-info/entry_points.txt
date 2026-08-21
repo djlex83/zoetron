@@ -1,0 +1,2 @@
+[console_scripts]
+selbstlauf = selbstlauf.cli:main
