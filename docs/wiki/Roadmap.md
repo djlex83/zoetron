@@ -6,9 +6,10 @@
 - [x] Evolution an Swarm gekoppelt (Vererbung von Sieger-Strategien)
 - [x] Wochenreport + Impuls-Layer
 - [x] FaktWächter-Validierung: roter Ozean → geparkt
+- [x] GitHub-Vollausstattung: Pages, Issues-Selbstverwaltung, Releases, Sponsor-Button
 
 ## Nächste Schritte
-- [ ] Wiki automatisch erweitern (sobald GitHub-Wiki existiert)
+- [ ] PR-Workflow: Zoetron arbeitet in Branches, PR mit Selbst-Review
 - [ ] Skill-Vorschläge aus DREAM zu validierten Kompetenzen reifen lassen
 - [ ] EVOLUTION über ganze Pläne statt Einzelstrategien
 - [ ] Öffentlichkeitswirkung: Wochenreport auf X/Reddit teilen
