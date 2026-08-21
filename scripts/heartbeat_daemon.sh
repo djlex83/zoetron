@@ -64,6 +64,9 @@ PYEOF
     bash scripts/tg_post.sh <<< "$SUMMARY" >> "$LOG" 2>&1 || log "telegram-fehl"
   fi
 
+  log "phase: gedachtnis-ansicht"
+  $PY scripts/memory_view.py >> "$LOG" 2>&1 || true
+
   log "phase: git-pflege"
   CHANGED=$(git status --porcelain | wc -l)
   if [ "$CHANGED" -gt 0 ]; then
