@@ -155,6 +155,26 @@ def main(argv: list[str] | None = None) -> int:
             print("act: keine unbehandelten Ziele")
             return 0
         print(f"act: fuehre aus -> {goal}")
+        issue_num = None
+        try:
+            from .gh_tools import new_issue  # type: ignore
+            import importlib.util as _ilu
+            _spec = _ilu.spec_from_file_location(
+                "gh_tools", Path(__file__).parent.parent / "scripts"
+                / "gh_tools.py")
+            _gh = _ilu.module_from_spec(_spec)
+            _spec.loader.exec_module(_gh)
+            _code, _data = _gh._api(
+                "POST", "/issues",
+                {"title": f"[Ziel] {goal[:180]}",
+                 "body": f"Autonom generiertes DRIVE-Ziel.\n\n"
+                         f"Ausgefuehrt vom Swarm im naechsten ACT-Lauf.",
+                 "labels": ["drive-goal"]})
+            if _code == 201:
+                issue_num = _data.get("number")
+                print(f"act: issue #{issue_num} angelegt")
+        except Exception:  # noqa: BLE001 - GitHub may be unreachable
+            pass
         from .swarm import SwarmOrchestrator
         report = SwarmOrchestrator(cfg, memory=mem).run(goal)
         mem.add_event("act_done", {"goal_title": goal,
@@ -165,6 +185,26 @@ def main(argv: list[str] | None = None) -> int:
                 f"{'konvergiert' if report.get('converged') else 'offen'}"
                 + (f" | evolviert: {winner}" if winner else ""))
         print(line)
+        if issue_num:
+            try:
+                _code, _ = _gh._api("POST", f"/issues/{issue_num}/comments",
+                                    {"body": (
+                                        f"**Ergebnis des ACT-Laufs**\n\n"
+                                        f"- Score: {report.get('score')}/10\n"
+                                        f"- Konvergiert: "
+                                        f"{report.get('converged')}\n"
+                                        + (f"- Evolvierte Strategie: "
+                                           f"{winner}\n" if winner else "")
+                                        + f"\n{line}"[:600])})
+                _state = "closed" if report.get("converged") else "open"
+                _tag = "erledigt" if _state == "closed" else "offen"
+                _gh._api("PATCH", f"/issues/{issue_num}",
+                         {"state": _state,
+                          "title": "[{}] {}".format(_tag, goal[:160])})
+                mem.add_event("issue_synced", {"issue": issue_num,
+                                               "state": _state})
+            except Exception:  # noqa: BLE001
+                pass
         return 0
 
 
