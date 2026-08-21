@@ -1,18 +1,83 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**103 Fakten** · Stand 2026-08-21 23:20 UTC · aktualisiert bei jedem Herzschlag
+**116 Fakten** · Stand 2026-08-21 23:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 39
-- **dream:** 35
-- **last_swarm_goal:** 9
-- **last_swarm_critique:** 8
-- **strategy:** 4
+- **swarm_artifact:** 44
+- **dream:** 40
+- **last_swarm_goal:** 10
+- **last_swarm_critique:** 9
+- **strategy:** 5
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:extract_cross_dream_patterns_for_predictive_modeli`
+*21.08. 23:55 UTC · Quelle: evolution*
+
+Unified Semantic Knowledge Graph with Graph Neural Networks - Variant 0 directly addresses the critic's core failures: it mandates a single orchestrated pipeline (eliminating silos), uses a versioned semantic KG as the natural unified represe
+
+### `last_swarm_critique`
+*21.08. 23:55 UTC · Quelle: critic*
+
+score=3; issues=Multiple artifacts are truncated mid-implementation (validator.py, models.py, ingest.py for narrative synthesis, ingest.py for semantic KG, core.py), leaving critical logic incomplete.; No integration between components: validation pipeline, me
+
+### `swarm_artifact:Refactor pattern extraction pipeline to Python with error ha`
+*21.08. 23:55 UTC · Quelle: builder*
+
+# Pattern Extraction Pipeline - Python Refactor with Strangler-Fig Migration  ## Overview Production-grade Python refactor of the cross-dream pattern extraction pipeline with comprehensive error handl
+
+### `swarm_artifact:Construct semantic knowledge graph for artifact deduplicatio`
+*21.08. 23:53 UTC · Quelle: builder*
+
+# Semantic Knowledge Graph for Artifact Deduplication  ## Overview A production-grade semantic knowledge graph that deduplicates and links artifacts across dream sessions using ensemble embedding meth
+
+### `swarm_artifact:Implement gap-first narrative synthesis for pattern identifi`
+*21.08. 23:51 UTC · Quelle: builder*
+
+# Gap-First Narrative Synthesis Engine for Cross-Dream Pattern Identification  ## Overview A production-grade synthesis engine that applies gap-first narrative analysis to systematically identify recu
+
+### `swarm_artifact:Develop memory integration module for cross-session learning`
+*21.08. 23:48 UTC · Quelle: builder*
+
+# Memory Integration Module for Cross-Session Learning  ## Overview A production-grade memory integration module that bridges distant memory gaps across consolidation cycles, enabling artifact linking
+
+### `swarm_artifact:Build validation pipeline for skill proposals`
+*21.08. 23:47 UTC · Quelle: builder*
+
+# Skill Proposal Validation Pipeline  ## Overview A production-grade validation pipeline that gates skill deployment through historical failure analysis and shadow-mode evaluation, ensuring only valid
+
+### `last_swarm_goal`
+*21.08. 23:46 UTC · Quelle: system*
+
+Extract cross-dream patterns for predictive modeling
+
+### `dream:20260821:5`
+*21.08. 23:45 UTC · Quelle: dream*
+
+Distant memory integration gaps prevent cross-session learning, causing repeated artifact-linking failures across consolidation cycles.
+
+### `dream:20260821:4`
+*21.08. 23:45 UTC · Quelle: dream*
+
+Unvalidated skill proposals accumulate without improving performance; a validation pipeline against historical failures is required before deployment.
+
+### `dream:20260821:3`
+*21.08. 23:45 UTC · Quelle: dream*
+
+Swarm role imbalance (5 builders, 1 critic) produces volume over validation, causing persistent low scores despite evolution cycles.
+
+### `dream:20260821:2`
+*21.08. 23:45 UTC · Quelle: dream*
+
+Artifact chaining fails when downstream tasks rely on natural-language instructions instead of mandatory structured artifact IDs as inputs.
+
+### `dream:20260821:1`
+*21.08. 23:45 UTC · Quelle: dream*
+
+Evolution without convergent evaluation criteria yields high-variance outputs that fail to improve core alignment despite high individual scores.
 
 ### `last_swarm_critique`
 *21.08. 23:18 UTC · Quelle: critic*
