@@ -44,6 +44,11 @@ def main(argv: list[str] | None = None) -> int:
                              help="Motor organ: run real code for a task")
     p_hands.add_argument("task", help="what should be done")
 
+    p_evo = sub.add_parser("evolve",
+                           help="Evolution: N variants, critic picks the fittest")
+    p_evo.add_argument("problem", help="the problem to attack")
+    p_evo.add_argument("--n", type=int, default=3, help="number of variants")
+
     args = parser.parse_args(argv)
     cfg = Config()
 
@@ -128,6 +133,12 @@ def main(argv: list[str] | None = None) -> int:
         out = Hands(cfg).do_task(args.task)
         print(json.dumps(out, ensure_ascii=False, indent=1)[:1200])
         return 0 if out.get("ok") else 1
+
+    if args.cmd == "evolve":
+        from .evolution import Evolution
+        out = Evolution(cfg).evolve(args.problem, n=args.n)
+        print(json.dumps(out, ensure_ascii=False, indent=1)[:1200])
+        return 0
 
     if args.cmd == "status":
         mem = MemoryStore(cfg.data_dir / "memory")

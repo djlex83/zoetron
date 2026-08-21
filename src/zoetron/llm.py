@@ -76,6 +76,8 @@ _GOALS_HINT = '"task_type": "goals"'
 _CONSOLIDATE_HINT = '"task_type": "consolidate"'
 _PREDICT_HINT = '"task_type": "predict"'
 _SIMULATE_HINT = '"task_type": "simulate"'
+_EVOLVE_HINT = '"task_type": "evolve"'
+_SELECT_HINT = '"task_type": "select"'
 
 
 class MockLLM:
@@ -146,6 +148,21 @@ class MockLLM:
                                    "change": "Cross-check against memory artifacts first."}],
                 }),
                 model="mock-simulate")
+
+        if _EVOLVE_HINT in prompt:
+            return LLMResponse(
+                text=json.dumps({"variants": [
+                    {"angle": "minimal", "solution": "smallest working step"},
+                    {"angle": "structural", "solution": "redesign the interface"},
+                    {"angle": "automated", "solution": "script the whole path"},
+                ]}),
+                model="mock-evolution")
+
+        if _SELECT_HINT in prompt:
+            return LLMResponse(
+                text=json.dumps({"scores": [7, 8, 6], "winner": 1,
+                                 "reason": "best feasibility/impact balance"}),
+                model="mock-selection")
 
         if _BUILD_HINT in prompt:
             task = _extract_field(prompt, "task") or "the task"
