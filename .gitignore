@@ -6,3 +6,6 @@ artifacts_*/
 data/memory/*.jsonl
 .venv/
 secrets/
+data/hands_workspace/
+data/impulse_state.json
+data/heartbeat.log
