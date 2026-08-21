@@ -22,11 +22,13 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 
 | Organ | Nature analog | File | What it does |
 |---|---|---|---|
-| 💓 HEART | heartbeat | Hermes cron | every 30 min: DREAM + DRIVE + status report |
+| 💓 HEART | heartbeat | Hermes cron | every 30 min: PRUNE + DREAM + DRIVE + status report |
 | 🔥 DRIVE | curiosity/drive | `drive.py` | generates **its own goals** from memory gaps |
 | 💭 DREAM | sleep/replay | `dream.py` | distills experiences into lasting insights |
 | 🪞 METACOG | self-awareness | `metacog.py` | predicts its own scores, measures calibration |
 | 🌍 SIMULATE | world model | `simulate.py` | dry-runs plans before acting on them |
+| 🩸 METABOLISM | stress axis | `metabolism.py` | rate limits & timeouts raise stress → smaller plans; cortisol decay |
+| ✂️ PRUNE | apoptosis | `prune.py` | archives stale memories, keeps recalled facts, insights are immortal |
 | 🧬 AUTOROUTER | immune system | `router.py` | only free models WITH tool support; failover + 1h blacklist; **experience beats metadata** (critic scores boost the routing chain) |
 | 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10) |
 | 🧠 Memory | hippocampus | `memory.py` | JSONL facts + event log + keyword recall |

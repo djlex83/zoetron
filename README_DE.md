@@ -22,11 +22,13 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 
 | Organ | Natur-Vorbild | Datei | Was es tut |
 |---|---|---|---|
-| 💓 HERZ | Herzschlag | Hermes-Cron | alle 30 Min: DREAM + DRIVE + Status |
+| 💓 HERZ | Herzschlag | Hermes-Cron | alle 30 Min: PRUNE + DREAM + DRIVE + Status |
 | 🔥 DRIVE | Neugier/Trieb | `drive.py` | generiert **eigene Ziele** aus Gedächtnislücken |
 | 💭 DREAM | Schlaf/Replay | `dream.py` | destilliert Erlebnisse zu dauerhaften Einsichten |
 | 🪞 METACOG | Selbstgefühl | `metacog.py` | sagt eigenen Score voraus, misst Kalibrierung |
 | 🌍 SIMULATE | Weltmodell | `simulate.py` | trocken üben vor dem Handeln, Risiken vorab |
+| 🩸 STOFFWECHSEL | Stressachse | `metabolism.py` | Rate-Limits/Timeouts erhöhen Stress → kleinere Pläne; Cortisol-Abbau |
+| ✂️ PRUNE | Apoptose | `prune.py` | archiviert alte Erinnerungen, behält genutzte Fakten, Einsichten unsterblich |
 | 🧬 AUTOROUTER | Immunsystem | `router.py` | nur freie Modelle MIT Tool-Support; Failover + 1h-Blacklist; **Erfahrung schlägt Papier** (Critic-Scores boosten die Kette) |
 | 🛡 CRITIC | Abwehr | `swarm.py` | adversariale Qualitätsgate (Score 0–10) |
 | 🧠 Gedächtnis | Hippocampus | `memory.py` | JSONL-Fakten + Ereignis-Log + Keyword-Recall |
