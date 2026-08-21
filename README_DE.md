@@ -29,7 +29,7 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 | 🌍 SIMULATE | Weltmodell | `simulate.py` | trocken üben vor dem Handeln, Risiken vorab |
 | 👁 SINNE | Augen/Ohren | `senses.py` | beobachtet HN-Frontier + Websuche (via Scrapling); frische Signale speisen DRIVE |
 | ✋ HÄNDE | Motorik | `hands.py` | plant + **führt echten Code aus** (Sandbox); Ergebnisse fließen ins Gedächtnis |
-| 🧬 EVOLUTION | Fortpflanzung | `evolution.py` | N verschiedene Lösungsvarianten → Critic wählt den Fitnessten; Abstammung wird protokolliert |
+| 🧬 EVOLUTION | Fortpflanzung | `evolution.py` | N verschiedene Lösungsvarianten → Critic wählt den Fitnessten; **Misserfolge triggern Auto-Evolution, Sieger-Strategien vererben sich an künftige Planner** |
 | 🩸 STOFFWECHSEL | Stressachse | `metabolism.py` | Rate-Limits/Timeouts erhöhen Stress → kleinere Pläne; Cortisol-Abbau |
 | ✂️ PRUNE | Apoptose | `prune.py` | archiviert alte Erinnerungen, behält genutzte Fakten, Einsichten unsterblich |
 | 🧬 AUTOROUTER | Immunsystem | `router.py` | nur freie Modelle MIT Tool-Support; Failover + 1h-Blacklist; **Erfahrung schlägt Papier** (Critic-Scores boosten die Kette) |

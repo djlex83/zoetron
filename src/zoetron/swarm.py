@@ -96,6 +96,7 @@ class SwarmOrchestrator:
         issues: list[str] = []
         converged = False
         cycles_used = 0
+        evolution: dict[str, Any] | None = None
 
         for cycle in range(1, max_cycles + 1):
             cycles_used = cycle
@@ -142,6 +143,7 @@ class SwarmOrchestrator:
             if score >= 8:
                 converged = True
                 break
+            evolution = self._evolve_after_failure(goal, score, issues)
 
         report = {
             "goal": goal,
@@ -159,16 +161,54 @@ class SwarmOrchestrator:
             ],
             "role_calls": role_calls,
             "duration_s": round(time.time() - started, 2),
+            "evolution": {
+                "winner_angle": evolution.get("winner_angle"),
+                "score": evolution.get("score"),
+            } if evolution else None,
         }
         self.memory.add_event("swarm_finished", {
             "goal": goal, "score": score, "converged": converged,
             "cycles": cycles_used, "roles": role_calls,
+            "evolved": bool(evolution),
         })
         return report
 
+    def _evolve_after_failure(self, goal: str, score: int,
+                              issues: list[str]) -> dict[str, Any] | None:
+        """Spawn N alternative strategies; winner is stored as heredity."""
+        try:
+            from .evolution import Evolution
+            evo = Evolution(self.cfg, llm=self.roles["planner"].llm,
+                            memory=self.memory)
+            problem = (
+                f"Previous attempt scored {score}/10. Goal: {goal}\n"
+                f"Critic issues: {'; '.join(map(str, issues))[:400]}\n"
+                "Devise a fundamentally different strategy to reach the goal."
+            )
+            result = evo.evolve(problem, n=3)
+        except Exception:  # noqa: BLE001 - evolution must not break the swarm
+            return None
+        if result.get("winner_angle"):
+            slug = "".join(c if c.isalnum() else "_" for c in goal.lower())[:50]
+            self.memory.remember_fact(
+                f"strategy:{slug}",
+                f"{result['winner_angle']} - "
+                f"{str(result.get('reason', ''))[:180]}",
+                source="evolution")
+        return result
+
+    def _inherit_strategies(self) -> str:
+        """Heredity: winning strategies from past evolutions feed the planner."""
+        wins = [f["value"] for f in self.memory.facts()
+                if f["key"].startswith("strategy:")]
+        if not wins:
+            return ""
+        tail = "\n".join(f"- {w[:160]}" for w in wins[-3:])
+        return f"\nWinning strategies from past evolutions:\n{tail}"
+
     # -- phases ---------------------------------------------------------- #
     def _orient(self, goal: str) -> str:
-        return self.memory.digest(query=goal)
+        return self.memory.digest(query=goal) + self._inherit_strategies()
 
     def _plan(self, goal: str, context: str) -> list[SwarmTask]:
         from .metabolism import Metabolism
