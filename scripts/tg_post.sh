@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Post a message to the Zoetron Telegram channel.
-# Config file (default /workspace/zoetron_tg.txt):
-#   line 1: bot token (from @BotFather)
-#   line 2: channel @name or numeric chat id
+# Post a message to Telegram via the Zoetron bot.
+# Config file (default /workspace/zoetron/secrets/tg.txt):
+#   line 1: bot token
+#   line 2: chat id (user or channel)
 # Exits silently when not configured - heartbeat never breaks.
-CFG="${ZOETRON_TG_CFG:-/workspace/zoetron_tg.txt}"
+CFG="${ZOETRON_TG_CFG:-/workspace/zoetron/secrets/tg.txt}"
 [ -f "$CFG" ] || exit 0
 TOKEN=$(sed -n 1p "$CFG" | tr -d '[:space:]')
 CHAT=$(sed -n 2p "$CFG" | tr -d '[:space:]')

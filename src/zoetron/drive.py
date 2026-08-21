@@ -34,6 +34,15 @@ class Drive:
     # ------------------------------------------------------------------ #
     def generate_goals(self, n: int = 3) -> list[dict[str, Any]]:
         signals = self._collect_signals()
+        # SENSES: fresh external signals become first-class DRIVE input
+        try:
+            from .senses import Senses
+            frontier = Senses(self.cfg,
+                              memory=self.memory).curiosity_goals(max_n=1)
+            if frontier:
+                signals["external"] = frontier
+        except Exception:  # noqa: BLE001 - eyes may fail, DRIVE continues
+            pass
         prompt = (
             "You are the DRIVE module of an autonomous cognitive system "
             "(intrinsic motivation).\n"

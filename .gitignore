@@ -5,3 +5,4 @@ __pycache__/
 artifacts_*/
 data/memory/*.jsonl
 .venv/
+secrets/
