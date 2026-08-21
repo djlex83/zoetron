@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import time
 from collections import Counter
 from datetime import datetime, timezone
@@ -53,6 +54,35 @@ def build_report() -> str:
                   and isinstance(e.get("payload"), dict)
                   and e["payload"].get("ok"))
 
+    # top model of the week: critic scores beat metadata (AUTOROUTER wisdom)
+    per_model: dict[str, list[float]] = {}
+    for e in events:
+        if e.get("kind") != "model_score":
+            continue
+        payload = e.get("payload") or {}
+        model, sc = payload.get("model"), payload.get("score")
+        if isinstance(model, str) and isinstance(sc, (int, float)):
+            per_model.setdefault(model, []).append(float(sc))
+    top_model = None
+    if per_model:
+        name, scs = max(per_model.items(),
+                        key=lambda kv: sum(kv[1]) / len(kv[1]))
+        top_model = (name, round(sum(scs) / len(scs), 1), len(scs))
+
+    # commits pushed this week (public proof of life)
+    try:
+        commits = len(subprocess.run(
+            ["git", "-C", str(ROOT), "log", "--since=7 days ago",
+             "--pretty=%h"], capture_output=True, text=True,
+            timeout=15).stdout.split())
+    except Exception:  # noqa: BLE001
+        commits = 0
+
+    # "Zoetron sagt": one of its own insights, stable per ISO week
+    cal = datetime.now(timezone.utc).isocalendar()
+    zoetron_says = (insights[cal.week % len(insights)]
+                    if insights else None)
+
     iso = datetime.now(timezone.utc).strftime("%G-W%V")
     avg = round(sum(scores) / len(scores), 1) if scores else None
     de, en = [], []
@@ -68,7 +98,18 @@ def build_report() -> str:
               f"(Misserfolg → neue Strategien)")
     de.append(f"- 👁 **{senses} Sinneszyklen** (HN-Frontier beobachtet)")
     de.append(f"- ✋ **{hand_ok} erfolgreiche Code-Ausführungen**")
+    de.append(f"- 📦 **{commits} Commits** auf GitHub")
+    if top_model:
+        name, avg_sc, n = top_model
+        de.append(f"- 🧠 **Top-Modell der Woche:** `{name}` "
+                  f"(ø Score {avg_sc} aus {n} Läufen)")
     de.append("")
+    if zoetron_says:
+        quote = str(zoetron_says.get("value", ""))[:220]
+        de.append('## Zoetron sagt')
+        de.append("")
+        de.append(f"> {quote}")
+        de.append("")
     if insights:
         de.append("## Was gelernt wurde (Auswahl)")
         de.append("")
