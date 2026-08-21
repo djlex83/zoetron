@@ -32,6 +32,22 @@ class MemoryStore:
     def facts(self) -> list[dict[str, Any]]:
         return self._read_jsonl(self.facts_path)
 
+    def write_facts(self, rows: list[dict[str, Any]]) -> None:
+        """Rewrite the fact store (used by PRUNE after archiving)."""
+        tmp = self.facts_path.with_suffix(".tmp")
+        with tmp.open("w", encoding="utf-8") as fh:
+            for r in rows:
+                fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+        tmp.replace(self.facts_path)
+
+    def write_events(self, rows: list[dict[str, Any]]) -> None:
+        """Rewrite the event store (used by PRUNE after archiving)."""
+        tmp = self.events_path.with_suffix(".tmp")
+        with tmp.open("w", encoding="utf-8") as fh:
+            for r in rows:
+                fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+        tmp.replace(self.events_path)
+
     def events(self, kind: str | None = None, limit: int = 100) -> list[dict[str, Any]]:
         items = self._read_jsonl(self.events_path)
         if kind:
@@ -57,7 +73,12 @@ class MemoryStore:
                 recency = max(0.0, 1.0 - (time.time() - doc["ts"]) / (30 * 24 * 3600))
                 scored.append((overlap + 0.25 * recency, doc))
         scored.sort(key=lambda pair: pair[0], reverse=True)
-        return scored[:top_k]
+        result = scored[:top_k]
+        # usage tracking: PRUNE keeps recalled facts alive
+        used_keys = [d["key"] for _, d in result if d.get("type") == "fact" and d.get("key")]
+        if used_keys:
+            self.add_event("recall", {"keys": used_keys})
+        return result
 
     def digest(self, query: str = "", limit: int = 3) -> str:
         """Compact context block injected into prompts (metabolic memory)."""

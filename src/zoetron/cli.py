@@ -37,6 +37,8 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("models",
                    help="AutoRouter view: free tool-capable models, ranked")
 
+    sub.add_parser("prune", help="Apoptosis: archive stale memories")
+
     args = parser.parse_args(argv)
     cfg = Config()
 
@@ -107,6 +109,13 @@ def main(argv: list[str] | None = None) -> int:
             print(f"Discovery fehlgeschlagen: {exc}")
             return 1
         print(format_models_report(models, top_n=8, blacklisted=blacklisted))
+        return 0
+
+    if args.cmd == "prune":
+        from .prune import Prune
+        stats = Prune(cfg).run()
+        print(f"prune: {stats['facts_pruned']} Fakten archiviert, "
+              f"{stats['events_pruned']} Ereignisse archiviert")
         return 0
 
     if args.cmd == "status":
