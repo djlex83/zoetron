@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**91 Fakten** · Stand 2026-08-21 22:43 UTC · aktualisiert bei jedem Herzschlag
+**103 Fakten** · Stand 2026-08-21 23:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 34
-- **dream:** 30
-- **last_swarm_goal:** 8
-- **last_swarm_critique:** 7
+- **swarm_artifact:** 39
+- **dream:** 35
+- **last_swarm_goal:** 9
+- **last_swarm_critique:** 8
 - **strategy:** 4
 - **frontier:** 3
 - **artifact:** 3
@@ -13,6 +13,66 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*21.08. 23:18 UTC · Quelle: critic*
+
+score=3; issues=Acceptance Criteria Checklist does not define baseline implementations, environment, or versioning, making thresholds ambiguous and hard to enforce.; Gap‑First Narrative does not fully cover all acceptance criteria: reproducibility for Skill C 
+
+### `swarm_artifact:Introduce Request Batching and Response Caching in Validatio`
+*21.08. 23:15 UTC · Quelle: builder*
+
+# Introduce Request Batching and Response Caching in Validation Service    ## 1. Overview   The validation service currently invokes skill‑validation endpoints one‑by‑one. At scale this introduces lat
+
+### `swarm_artifact:Implement Python Proposal‑to‑Test Artifact Converter`
+*21.08. 23:15 UTC · Quelle: builder*
+
+# Python Proposal‑to‑Test Artifact Converter    This module converts **deduplicated skill proposals** (in JSON/YAML format) into executable test artifacts (e.g., `pytest` test files or JUnit‑style XML
+
+### `swarm_artifact:Construct Semantic Knowledge Graph for Skill Deduplication`
+*21.08. 23:15 UTC · Quelle: builder*
+
+# Semantic Knowledge Graph for Skill Deduplication    ## 1. Purpose   Create a graph‑based representation of all *proposed* skills, compute semantic similarity between skill nodes, apply formal reason
+
+### `swarm_artifact:Develop Gap‑First Narrative Synthesis`
+*21.08. 23:14 UTC · Quelle: builder*
+
+# Gap‑First Narrative Synthesis    ## Skill A – Data‑cleaning with Pandas    **Proposed Capability**   A reusable Pandas‑based pipeline that ingests raw CSV/JSON, applies schema‑aware transformations 
+
+### `swarm_artifact:Define Acceptance Criteria for Skill Validation Deliverables`
+*21.08. 23:14 UTC · Quelle: builder*
+
+# Acceptance Criteria Checklist for Skill Validation Deliverables    | # | Skill (Proposed) | Measurable Outcome (What to verify) | Verification Method (How to verify) | Acceptance Threshold (Pass/Fai
+
+### `last_swarm_goal`
+*21.08. 23:14 UTC · Quelle: system*
+
+Evolve proposed skills into validated capabilities
+
+### `dream:20260821:5`
+*21.08. 23:13 UTC · Quelle: dream*
+
+Increasing model latency across sequential invocations indicates a need for request batching or response caching to keep response times bounded.
+
+### `dream:20260821:4`
+*21.08. 23:13 UTC · Quelle: dream*
+
+Open‑ended discovery goals without concrete deliverable checklists lead to low scores; pre‑defining a structured deliverable list with acceptance criteria improves outcome quality.
+
+### `dream:20260821:3`
+*21.08. 23:13 UTC · Quelle: dream*
+
+Downstream tasks that rely on implicit natural-language references to upstream outputs frequently fail; requiring explicit artifact IDs as mandatory inputs eliminates chaining errors.
+
+### `dream:20260821:2`
+*21.08. 23:13 UTC · Quelle: dream*
+
+Multiple distinct entity names appearing in pipeline artifacts cause downstream confusion; enforcing a single canonical name at build time prevents inconsistency.
+
+### `dream:20260821:1`
+*21.08. 23:13 UTC · Quelle: dream*
+
+Orphaned swarm sessions persist when there is no automated mechanism to detect missing swarm_finished events and resume or salvage them.
 
 ### `strategy:resolve_incomplete_swarm_execution`
 *21.08. 22:42 UTC · Quelle: evolution*
