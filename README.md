@@ -1,67 +1,68 @@
 # 🫀 Zoetron
 
-**Ein autonomer Agent-Organismus, der aus jeder Erfahrung schlauer wird –
-auf kostenlosen OpenRouter-Modellen, mit AutoRouter gegen Modell-Sterblichkeit.**
+[🇩🇪 Deutsche Version](README_DE.md)
 
-Zoetron ist kein Agent-Framework. Es ist ein **Organismus**: Herzschlag,
-Neugier, Schlaf, Weltmodell, Selbstmodell und ein Immunsystem gegen tote Modelle.
+**An autonomous agent organism that gets smarter from every experience —
+running on free OpenRouter models, with an AutoRouter immune to model mortality.**
+
+Zoetron is not an agent framework. It is an **organism**: heartbeat, curiosity,
+sleep, a world model, a self-model, and an immune system against dead models.
 
 ```
-Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──► BAUEN ──► KRITIK
-          ▲                                                    │
-          └────────── Score < 8: neue Iteration ◄──────────────┘
+Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ──► CRITIQUE
+          ▲                                              │
+          └────────── score < 8: next iteration ◄────────┘
                      ▼
-     JSONL-Gedächtnis (Fakten + Ereignisse) → DREAM destilliert Einsichten
+     JSONL memory (facts + events) → DREAM distills insights
                      ▼
-     DRIVE erzeugt die nächsten eigenen Ziele aus Wissenslücken
+     DRIVE generates the next self-chosen goals from knowledge gaps
 ```
 
-## Die Organe
+## The Organs
 
-| Organ | Natur-Vorbild | Datei | Was es tut |
+| Organ | Nature analog | File | What it does |
 |---|---|---|---|
-| 💓 HERZ | Herzschlag | Hermes-Cron | alle 30 Min: DREAM + DRIVE + Status |
-| 🔥 DRIVE | Neugier/Trieb | `drive.py` | generiert **eigene Ziele** aus Gedächtnislücken |
-| 💭 DREAM | Schlaf/Replay | `dream.py` | destilliert Erlebnisse zu dauerhaften Einsichten |
-| 🪞 METACOG | Selbstgefühl | `metacog.py` | sagt eigenen Score voraus, misst Kalibrierung |
-| 🌍 SIMULATE | Weltmodell | `simulate.py` | trocken üben vor dem Handeln, Risiken vorab |
-| 🧬 AUTOROUTER | Immunsystem | `router.py` | nur freie Modelle MIT Tool-Support; Failover + 1h-Blacklist; **Erfahrung schlägt Papier** (Critic-Scores boosten die Kette) |
-| 🛡 CRITIC | Abwehr | `swarm.py` | adversariale Qualitätsgate (Score 0–10) |
-| 🧠 Gedächtnis | Hippocampus | `memory.py` | JSONL-Fakten + Ereignis-Log + Keyword-Recall |
+| 💓 HEART | heartbeat | Hermes cron | every 30 min: DREAM + DRIVE + status report |
+| 🔥 DRIVE | curiosity/drive | `drive.py` | generates **its own goals** from memory gaps |
+| 💭 DREAM | sleep/replay | `dream.py` | distills experiences into lasting insights |
+| 🪞 METACOG | self-awareness | `metacog.py` | predicts its own scores, measures calibration |
+| 🌍 SIMULATE | world model | `simulate.py` | dry-runs plans before acting on them |
+| 🧬 AUTOROUTER | immune system | `router.py` | only free models WITH tool support; failover + 1h blacklist; **experience beats metadata** (critic scores boost the routing chain) |
+| 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10) |
+| 🧠 Memory | hippocampus | `memory.py` | JSONL facts + event log + keyword recall |
 
-## Quickstart
+## Quick Start
 
 ```bash
 git clone https://github.com/djlex83/zoetron && cd zoetron
 python3 -m venv .venv && .venv/bin/pip install -e .
 echo "OPENROUTER_API_KEY=sk-or-..." > .env
-echo "ZOETRON_MODEL=auto" >> .env        # AutoRouter = modell-unsterblich
+echo "ZOETRON_MODEL=auto" >> .env        # AutoRouter = model immortality
 
-.venv/bin/python -m zoetron.cli run "Dein Ziel" --swarm --save-artifacts out/
-.venv/bin/python -m zoetron.cli models   # Routing-Queue live ansehen
-.venv/bin/python -m zoetron.cli drive    # eigene Ziele generieren lassen
-.venv/bin/python -m zoetron.cli dream    # Schlafphase: Erfahrung konsolidieren
-.venv/bin/python -m zoetron.cli status   # Selbstmodell & Kalibrierung
+.venv/bin/python -m zoetron.cli run "Your goal" --swarm --save-artifacts out/
+.venv/bin/python -m zoetron.cli models   # inspect the live routing queue
+.venv/bin/python -m zoetron.cli drive    # let it generate its own goals
+.venv/bin/python -m zoetron.cli dream    # sleep phase: consolidate experience
+.venv/bin/python -m zoetron.cli status   # self-model & calibration
 ```
 
-Ohne Key: deterministisches Mock-Gehirn, 34 Tests komplett offline grün.
-`ZOETRON_MODEL=auto` entdeckt automatisch alle kostenlosen Tool-fähigen
-OpenRouter-Modelle und lernt aus eigenen Läufen, welche gut sind.
+Without an API key: deterministic mock brain, all 34 tests pass fully offline.
+`ZOETRON_MODEL=auto` automatically discovers every free tool-capable OpenRouter
+model and learns from its own runs which ones perform well.
 
-## Warum das existiert
+## Why This Exists
 
-Aktuelle LLM-Agents sind Orakel auf Abruf: eingefrorene Gewichte, keine eigenen
-Ziele, kein Schlaf, keine Selbstkenntnis. Zoetron baut die fehlenden Organe
-als Software – als offener, selbst-hostbarer Schritt in Richtung
-kontinuierlich-lernender Systeme.
+Today's LLM agents are oracles on demand: frozen weights, no goals of their
+own, no sleep, no self-knowledge. Zoetron builds the missing organs in
+software — as an open, self-hostable step toward continuously learning systems.
 
 ## Status
 
-Früher Prototyp (v0.x), aktive Entwicklung, Design ändert sich schnell.
-Erste Live-Läufe haben gezeigt: Der Critic fängt echte Produkt-Inkonsistenzen,
-DREAM diagnostiziert eigene Pipeline-Bugs aus Erfahrung, der AutoRouter
-überspringt tote Modelle automatisch.
+Early prototype (v0.x), active development, design changes fast. First live
+runs showed: the critic catches real product inconsistencies, DREAM diagnoses
+pipeline bugs from its own experience, and the AutoRouter skips dead models
+automatically.
 
-## Lizenz
+## License
 
-MIT – siehe [LICENSE](LICENSE).
+MIT – see [LICENSE](LICENSE).
