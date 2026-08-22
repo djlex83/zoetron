@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**568 Fakten** · Stand 2026-08-22 19:06 UTC · aktualisiert bei jedem Herzschlag
+**573 Fakten** · Stand 2026-08-22 19:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 231
+- **dream:** 236
 - **swarm_artifact:** 197
 - **last_swarm_goal:** 47
 - **last_swarm_critique:** 35
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 19:27 UTC · Quelle: dream*
+
+Calibration error (predicted 5 risks vs actual 6) reveals systematic underestimation of simulation risk counts.
+
+### `dream:20260822:4`
+*22.08. 19:27 UTC · Quelle: dream*
+
+Simulation revisions show diminishing returns (5→2 revisions over two cycles) while score plateaus at 6/10, indicating need for automatic evolution trigger.
+
+### `dream:20260822:3`
+*22.08. 19:27 UTC · Quelle: dream*
+
+Swarm role imbalance (1 planner : 5 builders : 1 critic) correlates with non-convergence despite evolution improving scores 6→9.
+
+### `dream:20260822:2`
+*22.08. 19:27 UTC · Quelle: dream*
+
+Interface contracts drift silently: MemoryStore missing 'add_fact' caused a runtime AttributeError during hand-action execution.
+
+### `dream:20260822:1`
+*22.08. 19:27 UTC · Quelle: dream*
+
+Model latency exhibits extreme outliers (354s vs median ~17s) requiring circuit-breaker fallbacks to prevent pipeline stalls.
 
 ### `dream:20260822:5`
 *22.08. 19:06 UTC · Quelle: dream*
