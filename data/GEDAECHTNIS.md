@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**288 Fakten** · Stand 2026-08-22 22:59 UTC · aktualisiert bei jedem Herzschlag
+**293 Fakten** · Stand 2026-08-22 23:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 211
 - **strategy:** 30
 - **anti_pattern:** 22
-- **dream:** 15
+- **dream:** 20
 - **frontier:** 3
 - **artifact:** 3
 - **last_swarm_goal:** 1
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608222314:5`
+*22.08. 23:14 UTC · Quelle: dream*
+
+Simulation revision limit of 5 is too high; it wastes cycles without improving convergence.
+
+### `dream:202608222314:4`
+*22.08. 23:14 UTC · Quelle: dream*
+
+Missing MemoryStore.add_fact method reveals interface drift between skill proposals and actual runtime contracts.
+
+### `dream:202608222314:3`
+*22.08. 23:14 UTC · Quelle: dream*
+
+Evolution improves intermediate scores (3 → 8.7) but gains don't persist to production hand-action phase.
+
+### `dream:202608222314:2`
+*22.08. 23:14 UTC · Quelle: dream*
+
+Swarm role imbalance (1 planner, 5 builders, 1 critic) correlates with non-convergence and low final scores.
+
+### `dream:202608222314:1`
+*22.08. 23:14 UTC · Quelle: dream*
+
+Model latency varies wildly (6–215 s) causing unpredictable swarm cycle times and timeout risk.
 
 ### `dream:202608222258:5`
 *22.08. 22:58 UTC · Quelle: dream*

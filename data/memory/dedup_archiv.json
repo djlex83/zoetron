@@ -28,11 +28,5 @@
   "key": "swarm_artifact:Standardize CI Outputs with Real‑Simulation Gate",
   "value": "**Artifact: CI Step – Deterministic Manifest‑Based Simulation Gate**\n\n---\n\n### Overview\nThis artifact provides a reusable CI step (GitHub Actions‑compatible) that:\n1. Loads a model manifest (`manifest",
   "source": "builder"
- },
- {
-  "ts": 1787435891.576301,
-  "key": "swarm_artifact:Implement Skill Activation Tracking",
-  "value": "# Skill Activation Tracking System\n\n## Overview\nComprehensive tracking system for proposed skills with activation monitoring, usage analytics, debt visualization, and audit trails.\n\n---\n\n## 1. Core Da",
-  "source": "builder"
  }
 ]
