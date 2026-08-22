@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**483 Fakten** · Stand 2026-08-22 15:14 UTC · aktualisiert bei jedem Herzschlag
+**498 Fakten** · Stand 2026-08-22 15:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 190
-- **swarm_artifact:** 174
-- **last_swarm_goal:** 42
-- **last_swarm_critique:** 31
-- **strategy:** 26
-- **anti_pattern:** 12
+- **dream:** 195
+- **swarm_artifact:** 179
+- **last_swarm_goal:** 43
+- **last_swarm_critique:** 32
+- **strategy:** 27
+- **anti_pattern:** 14
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:fehler_im_modell_vermeiden`
+*22.08. 15:39 UTC · Quelle: evolution*
+
+Guaranteed role diversity via set difference - Variant 1 guarantees that each call to ensure_diversity adds a new, previously absent role, directly fixing the diversity flaw and thereby improving the evolutionary search's effec
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fehler im Modell vermeid:2`
+*22.08. 15:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Wrapper‑based resilient GitHub client - Instead of monkey‑patching github._request, create a ResilientGitHubClient class that composes a PyGithub Github instance and overrides its request methods (e.g., get, post) with retry 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fehler im Modell vermeid:0`
+*22.08. 15:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Idempotent logger configuration - Encapsulate logger setup in a get_logger() function that adds handlers only when the logger has none, and call it lazily on first use. Remove any logging.basicConfig calls at module level to 
+
+### `last_swarm_critique`
+*22.08. 15:39 UTC · Quelle: critic*
+
+score=7; issues=MemoryStore stub: logging.basicConfig called at module level may add duplicate handlers on re-import; better to configure logger only if no handlers exist.; ensure_diversity function does not guarantee increase in distinct roles because random.
+
+### `swarm_artifact:Design a plug‑in architecture using typing.Protocol and a si`
+*22.08. 15:39 UTC · Quelle: builder*
+
+```python from typing import Protocol, runtime_checkable  @runtime_checkable class ModelValidator(Protocol):     def validate(self, data: dict) -> bool: ...  class SchemaValidator:     def validate(se
+
+### `swarm_artifact:Create a declarative validation pipeline using decorators to`
+*22.08. 15:39 UTC · Quelle: builder*
+
+```markdown ```python import functools from typing import Callable, Any, List  def validate(predicate: Callable[..., bool], msg: str = "Validation failed") -> Callable:     """     Declarative validat
+
+### `swarm_artifact:Use PyGithub with built‑in retry/resilience to avoid API fai`
+*22.08. 15:38 UTC · Quelle: builder*
+
+```markdown ```python import time from github import Github, GithubException from requests.adapters import HTTPAdapter from urllib3.util.retry import Retry import requests  def create_resilient_github
+
+### `swarm_artifact:Implement role diversity mechanism in swarm scheduler to imp`
+*22.08. 15:38 UTC · Quelle: builder*
+
+```python import random from enum import Enum, auto  class Role(Enum):     SCOUT = auto()     WORKER = auto()     ENGINEER = auto()     LEADER = auto()     ANALYST = auto()  def ensure_diversity(roles
+
+### `swarm_artifact:Generate abstract base class stubs for MemoryStore to preven`
+*22.08. 15:38 UTC · Quelle: builder*
+
+```markdown ```python import abc import logging  # Configure a simple logger for the stub logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s") logger 
+
+### `last_swarm_goal`
+*22.08. 15:35 UTC · Quelle: system*
+
+Fehler im Modell vermeiden
+
+### `dream:20260822:5`
+*22.08. 15:35 UTC · Quelle: dream*
+
+Swarm‑based execution stalled after two cycles with low convergence, suggesting that increasing role diversity or cycle count improves solution stability.
+
+### `dream:20260822:4`
+*22.08. 15:35 UTC · Quelle: dream*
+
+Missing method implementations (e.g., MemoryStore.add_fact) cause runtime failures, highlighting the necessity of interface contracts or automated stub generation.
+
+### `dream:20260822:3`
+*22.08. 15:35 UTC · Quelle: dream*
+
+Evolutionary variant generation raises scores from 3/10 to 8‑9/10, proving that exploring multiple model variants yields better solutions.
+
+### `dream:20260822:2`
+*22.08. 15:35 UTC · Quelle: dream*
+
+Calibration predictions consistently overestimate actual outcomes, indicating a bias that must be corrected via outcome‑driven updates.
+
+### `dream:20260822:1`
+*22.08. 15:35 UTC · Quelle: dream*
+
+High inference latency (>2× median) precedes overload errors, showing the need for latency‑aware throttling or fallback.
 
 ### `strategy:träume_nutzen`
 *22.08. 15:14 UTC · Quelle: evolution*
