@@ -1,10 +1,10 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**549 Fakten** · Stand 2026-08-22 17:49 UTC · aktualisiert bei jedem Herzschlag
+**558 Fakten** · Stand 2026-08-22 18:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 216
-- **swarm_artifact:** 194
-- **last_swarm_goal:** 46
+- **dream:** 221
+- **swarm_artifact:** 197
+- **last_swarm_goal:** 47
 - **last_swarm_critique:** 35
 - **strategy:** 30
 - **anti_pattern:** 20
@@ -14,6 +14,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Add property-based testing for model invariants`
+*22.08. 18:24 UTC · Quelle: builder*
+
+# Property-Based Testing for Model Invariants with Hypothesis  ```python # tests/test_property_based_invariants.py """ Property-based tests for model mathematical invariants using Hypothesis. Generate
+
+### `swarm_artifact:Implement integration tests for model inference pipeline`
+*22.08. 18:19 UTC · Quelle: builder*
+
+# Integration Tests for Model Inference Pipeline  ```python # tests/test_integration_inference_pipeline.py """ End-to-end integration tests for the complete model inference pipeline. Exercises: input 
+
+### `swarm_artifact:Create comprehensive unit test suite for core model componen`
+*22.08. 18:14 UTC · Quelle: builder*
+
+# Comprehensive Unit Test Suite for Core Model Components  ```python # tests/test_model_core.py """ Comprehensive unit test suite for core model components. Target: >90% coverage on all public methods
+
+### `last_swarm_goal`
+*22.08. 18:09 UTC · Quelle: system*
+
+Modellfehler reduzieren durch mehr Tests
+
+### `dream:20260822:5`
+*22.08. 18:09 UTC · Quelle: dream*
+
+Proposed skills (MemoryStore validator, circuit-breaker, activation tracker) remain dormant while the exact failures they prevent recur.
+
+### `dream:20260822:4`
+*22.08. 18:09 UTC · Quelle: dream*
+
+Evolution rescue works: variant scoring jumped from 3 to 9 when simulation+swarm stalled, proving hybrid controller value.
+
+### `dream:20260822:3`
+*22.08. 18:09 UTC · Quelle: dream*
+
+Calibration drift of 2 points (predicted 5 vs actual 3) shows simulation scores overestimate real-world fix quality.
+
+### `dream:20260822:2`
+*22.08. 18:09 UTC · Quelle: dream*
+
+Simulation consistently flags risks (4-5) and demands revisions but swarm converges poorly (score 3/10) without evolution intervention.
+
+### `dream:20260822:1`
+*22.08. 18:09 UTC · Quelle: dream*
+
+Model endpoint overload (502) causes silent failures that cascade into hand-action crashes like the MemoryStore AttributeError.
 
 ### `strategy:ci_pipeline_reparieren_und_simulation_validieren`
 *22.08. 17:48 UTC · Quelle: evolution*
