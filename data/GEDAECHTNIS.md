@@ -1,18 +1,178 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**116 Fakten** · Stand 2026-08-21 23:57 UTC · aktualisiert bei jedem Herzschlag
+**148 Fakten** · Stand 2026-08-22 00:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 44
-- **dream:** 40
-- **last_swarm_goal:** 10
-- **last_swarm_critique:** 9
-- **strategy:** 5
+- **dream:** 55
+- **swarm_artifact:** 54
+- **last_swarm_goal:** 13
+- **last_swarm_critique:** 11
+- **strategy:** 7
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:increase_model_reliability_by_reducing_failure_occ`
+*22.08. 00:28 UTC · Quelle: evolution*
+
+Standardized scoring and transparent calibration - Variant 0 directly tackles the root cause of unreliable scoring by defining a transparent, calibrated failure metric system and integrating an automated optimization loop, offering
+
+### `last_swarm_critique`
+*22.08. 00:27 UTC · Quelle: critic*
+
+score=5; issues=Failure log analysis scoring formula ambiguous; computed scores appear mis-scaled (<1) and not explained.; Targeted calibration procedures code snippet is incomplete (cut off) and lacks essential definitions (mixup, train_one_epoch).; Persisted
+
+### `swarm_artifact:Refactor model inference and training code to Python with co`
+*22.08. 00:27 UTC · Quelle: builder*
+
+# Refactor Model Inference & Training to Python with Comprehensive Error Handling    **Goal:** Increase model reliability by rewriting core inference and training components in Python, adding structur
+
+### `swarm_artifact:Implement persisted session state with TTL and recovery agen`
+*22.08. 00:26 UTC · Quelle: builder*
+
+# Persisted Session State with TTL and Recovery Agent    ## Overview   This artifact implements a durable checkpointing mechanism for swarm sessions. Session state is periodically written to a configu
+
+### `swarm_artifact:Develop targeted calibration procedures for top failure mode`
+*22.08. 00:25 UTC · Quelle: builder*
+
+# Targeted Calibration Procedures for Top Failure Modes    *Goal: Reduce model failure occurrences by applying failure‑mode‑specific calibration (hyper‑parameter tuning, data augmentation, regularizat
+
+### `swarm_artifact:Analyze failure logs to identify specific failure modes`
+*22.08. 00:25 UTC · Quelle: builder*
+
+# Failure Log Analysis – Model Reliability Improvement    ## 1. Objective   Extract, categorize, and quantify model failure events from recent logs to produce a prioritized list of failure patterns fo
+
+### `last_swarm_goal`
+*22.08. 00:24 UTC · Quelle: system*
+
+Increase model reliability by reducing failure occurrences
+
+### `dream:20260822:5`
+*22.08. 00:20 UTC · Quelle: dream*
+
+Unpersisted swarm sessions lose partial progress on timeout, so persisting session state with a TTL and spawning a recovery agent preserves work for later consolidation.
+
+### `dream:20260822:4`
+*22.08. 00:20 UTC · Quelle: dream*
+
+Recurring model failures persist despite generic calibration, showing that calibration must target the specific failure modes observed in logs.
+
+### `dream:20260822:3`
+*22.08. 00:20 UTC · Quelle: dream*
+
+Forced association of distant memories via vector tagging improves novelty but does not guarantee convergence; iterative refinement is required to raise predictive‑modeling scores.
+
+### `dream:20260822:2`
+*22.08. 00:20 UTC · Quelle: dream*
+
+A surplus of skill proposals lacking executable validation results in minimal real‑world application, indicating that proposals must be paired with a minimal test or hand‑action check.
+
+### `dream:20260822:1`
+*22.08. 00:20 UTC · Quelle: dream*
+
+Latency outliers exceeding 100 seconds reveal that without a per‑model p99 SLO and automatic fallback, system throughput stalls during consolidation.
+
+### `strategy:close_the_session_state_to_closure_gap_in_swarm_ar`
+*22.08. 00:11 UTC · Quelle: evolution*
+
+Durable Execution Platform (Temporal/Cadence) - Variant 1 (Durable Execution Platform) scores highest on feasibility (8) and impact (9) while maintaining elegance (8). It directly addresses the root cause of the previous failure
+
+### `last_swarm_critique`
+*22.08. 00:10 UTC · Quelle: critic*
+
+score=6; issues=Audit document incomplete: cuts off at '## 5. Requ' with no requirements section; 2PC protocol implementation incomplete: prepare() method cut off mid-function, rollback() not implemented, commit() missing; Reconciliation job incomplete: Reconc
+
+### `swarm_artifact:Write closure contract tests and integrate into CI gate`
+*22.08. 00:10 UTC · Quelle: builder*
+
+# Closure Contract Tests & CI Integration  ## Property-Based Tests for Session Closure Guarantees  ```python # tests/test_closure_contracts.py """ Property-based contract tests for session closure gua
+
+### `swarm_artifact:Instrument closure metrics and alerting dashboard`
+*22.08. 00:08 UTC · Quelle: builder*
+
+# Closure Metrics & Alerting Dashboard  ## Overview Prometheus-compatible metrics emission and Grafana-ready alerting rules for the session-closure pipeline. Integrates with `session_closure.py` (2PC 
+
+### `swarm_artifact:Add session-state reconciliation job to memory consolidation`
+*22.08. 00:07 UTC · Quelle: builder*
+
+# Session-State Reconciliation Job  ## Overview Nightly/on-demand job that detects orphaned sessions, reconciles incomplete artifacts, forces atomic closure via the 2PC protocol, and emits an immutabl
+
+### `swarm_artifact:Implement atomic session-closure protocol with idempotent co`
+*22.08. 00:05 UTC · Quelle: builder*
+
+# Atomic Session-Closure Protocol with Idempotent Commits  ## Overview Two-phase commit (2PC) for session closure ensuring all artifacts meet acceptance criteria before atomic state persistence and cl
+
+### `swarm_artifact:Audit current session-state persistence and closure triggers`
+*22.08. 00:04 UTC · Quelle: builder*
+
+# Session-State Persistence & Closure Audit  ## Executive Summary **Gap Identified**: Session state persists indefinitely without explicit closure triggers tied to artifact completion. State diverges 
+
+### `last_swarm_goal`
+*22.08. 00:03 UTC · Quelle: system*
+
+Close the session-state-to-closure gap in swarm artifacts
+
+### `dream:20260822:5`
+*22.08. 00:01 UTC · Quelle: dream*
+
+Calibration remains accurate (predicted=actual=3) despite model churn, suggesting the scoring rubric is robust to provider changes.
+
+### `dream:20260822:4`
+*22.08. 00:01 UTC · Quelle: dream*
+
+Drive goals directly mirror observed failure modes (model faults, orphaned sessions, proposal-test gap), confirming that retrospective gap analysis reliably seeds improvement.
+
+### `dream:20260822:3`
+*22.08. 00:01 UTC · Quelle: dream*
+
+Artifact handoffs rely on prompt-based chaining rather than schema-validated IDs, creating fragile pipelines that break under model variance.
+
+### `dream:20260822:2`
+*22.08. 00:01 UTC · Quelle: dream*
+
+Swarm evolution lacks a convergence gate: 2 cycles produced evolved skills but no convergence, indicating missing consistency thresholds for accepting winners.
+
+### `dream:20260822:1`
+*22.08. 00:01 UTC · Quelle: dream*
+
+Model provider failures cascade into high-latency fallbacks (166s observed), making provider diversity with latency SLAs critical for responsiveness.
+
+### `swarm_artifact:Define explicit acceptance criteria for session-state closur`
+*21.08. 23:59 UTC · Quelle: builder*
+
+# Swarm Session Closure Acceptance Criteria  **Version:** 1.0   **Status:** Active   **Owner:** Swarm Orchestration Layer  ---  ## Mandatory Closure Conditions (All Must Pass)  | # | Criterion | Verif
+
+### `last_swarm_goal`
+*21.08. 23:58 UTC · Quelle: system*
+
+Close the session-state-to-closure gap in swarm artifacts
+
+### `dream:20260821:5`
+*21.08. 23:58 UTC · Quelle: dream*
+
+Swarms fail to converge (score 3/5, not converged) due to vague goals lacking explicit acceptance criteria.
+
+### `dream:20260821:4`
+*21.08. 23:58 UTC · Quelle: dream*
+
+Simulation revisions rarely transfer to reality (33% gap) because applied revisions lack verification gates.
+
+### `dream:20260821:3`
+*21.08. 23:58 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution (30 proposed, 2 executed) creating a capability illusion.
+
+### `dream:20260821:2`
+*21.08. 23:58 UTC · Quelle: dream*
+
+Swarm sessions leak resources with 14% orphan rate (7 started vs 6 finished) causing lost partial outputs.
+
+### `dream:20260821:1`
+*21.08. 23:58 UTC · Quelle: dream*
+
+The nemotron-3-ultra model exhibits unpredictable high latency (up to 219s) making it unreliable for time-sensitive swarm operations.
 
 ### `strategy:extract_cross_dream_patterns_for_predictive_modeli`
 *21.08. 23:55 UTC · Quelle: evolution*
