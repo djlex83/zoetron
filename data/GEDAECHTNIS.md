@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**293 Fakten** · Stand 2026-08-22 23:14 UTC · aktualisiert bei jedem Herzschlag
+**298 Fakten** · Stand 2026-08-22 23:30 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 211
 - **strategy:** 30
+- **dream:** 25
 - **anti_pattern:** 22
-- **dream:** 20
 - **frontier:** 3
 - **artifact:** 3
 - **last_swarm_goal:** 1
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608222330:5`
+*22.08. 23:30 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack activation tracking, leaving proposed capabilities dormant and unverified.
+
+### `dream:202608222330:4`
+*22.08. 23:30 UTC · Quelle: dream*
+
+Simulation revision loops hit the maximum (5) without convergence, indicating missing exit criteria and auto-escalation triggers.
+
+### `dream:202608222330:3`
+*22.08. 23:30 UTC · Quelle: dream*
+
+Swarm role imbalance (5 builders, 1 planner, 1 critic) consistently produces low scores and non-convergence; minimum role quotas are essential.
+
+### `dream:202608222330:2`
+*22.08. 23:30 UTC · Quelle: dream*
+
+Interface contracts (e.g., MemoryStore.add_fact) must be validated at process start and before every hand-action batch to fail fast on missing methods.
+
+### `dream:202608222330:1`
+*22.08. 23:30 UTC · Quelle: dream*
+
+Model latency exhibits extreme variance (7s–353s) requiring circuit breakers and tiered fallbacks to prevent cascade failures.
 
 ### `dream:202608222314:5`
 *22.08. 23:14 UTC · Quelle: dream*
