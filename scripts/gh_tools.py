@@ -18,9 +18,16 @@ import sys
 import urllib.request
 from pathlib import Path
 
-CREDS = Path.home() / ".git-credentials"
+_CRED_CANDIDATES = [
+    Path.home() / ".git-credentials",
+    Path("/home/hermeswebui/.git-credentials"),
+]
+CREDS = next((p for p in _CRED_CANDIDATES if p.exists()),
+             Path.home() / ".git-credentials")
 REPO = "djlex83/zoetron"
 API = f"https://api.github.com/repos/{REPO}"
+
+_LAST_ERR: str | None = None
 
 
 def _token() -> str:
@@ -31,6 +38,7 @@ def _token() -> str:
 
 
 def _api(method: str, path: str, body: dict | None = None) -> tuple[int, dict]:
+    global _LAST_ERR
     req = urllib.request.Request(
         f"{API}{path}", method=method,
         data=json.dumps(body).encode() if body else None,
@@ -41,7 +49,11 @@ def _api(method: str, path: str, body: dict | None = None) -> tuple[int, dict]:
             text = r.read().decode()
             return r.status, json.loads(text) if text else {}
     except urllib.error.HTTPError as e:
-        return e.code, json.loads(e.read().decode() or "{}")
+        _LAST_ERR = f"HTTP {e.code}: {e.read().decode()[:200]}"
+        return e.code, {}
+    except Exception as exc:  # noqa: BLE001 - network/token errors
+        _LAST_ERR = f"{type(exc).__name__}: {exc}"
+        return 0, {}
 
 
 def ensure_labels() -> None:

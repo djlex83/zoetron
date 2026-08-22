@@ -172,8 +172,15 @@ def main(argv: list[str] | None = None) -> int:
             if _code == 201:
                 issue_num = _data.get("number")
                 print(f"act: issue #{issue_num} angelegt")
-        except Exception:  # noqa: BLE001 - GitHub may be unreachable
-            pass
+            else:
+                mem.add_event("gh_issue_error", {
+                    "where": "act-create",
+                    "error": getattr(_gh, "_LAST_ERR", None)
+                    or f"HTTP {_code}"})
+        except Exception as exc:  # noqa: BLE001 - GitHub may be unreachable
+            mem.add_event("gh_issue_error", {
+                "where": "act-create",
+                "error": f"{type(exc).__name__}: {exc}"})
         from .swarm import SwarmOrchestrator
         report = SwarmOrchestrator(cfg, memory=mem).run(goal)
         mem.add_event("act_done", {"goal_title": goal,
