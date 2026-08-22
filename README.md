@@ -95,4 +95,6 @@ think → act → assess → close loop now runs unattended on every heartbeat.
 
 ## License
 
-MIT – see [LICENSE](LICENSE).
+Alle Rechte vorbehalten – Nutzung/Kopieren/Weitergabe nur mit
+Genehmigung des Autors. Siehe [LICENSE](LICENSE). Anfragen: Issue oder
+[@djlex83](https://github.com/djlex83).

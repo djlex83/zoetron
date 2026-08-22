@@ -1,21 +1,54 @@
-MIT License
+ Zoetron – Proprietary Software
+ Copyright (c) 2026 djlex83
 
-Copyright (c) 2026 djlex83
+ ALLE RECHTE VORBEHALTEN / ALL RIGHTS RESERVED
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+ Diese Software und der zugehörige Quellcode sind urheberrechtlich
+ geschützt. Es wird KEINE Open-Source-Lizenz erteilt.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+ Die Nutzung, Vervielfältigung, Verbreitung, Weitergabe, öffentliche
+ Zugänglichmachung oder Veränderung dieser Software – ganz oder in
+ Teilen – ist OHNE vorherige schriftliche Genehmigung des
+ Rechteinhabers NICHT gestattet.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+ Anfragen zur Nutzung oder Lizenzierung:
+   → GitHub Issue im Repository eröffnen, oder
+   → Kontakt über das GitHub-Profil @djlex83
+
+ Bei erteilter Genehmigung gelten die dort schriftlich vereinbarten
+ Bedingungen.
+
+ Ausdrücklich NICHT betroffen: Das Ansehen und Forken über die
+ GitHub-Weboberfläche zum reinen Lesezweck bleibt technisch möglich;
+ sämtliche darüber hinausgehenden Rechte bleiben vorbehalten.
+
+ DIESE SOFTWARE WIRD OHNE MÄNGELGEWÄHR BEREITGESTELLT; JEGLICHE
+ HAFTUNG DES RECHTEINHABERS IST AUSGESCHLOSSEN.
+
+ ------------------------------------------------------------------
+
+ Zoetron – Proprietary Software
+ Copyright (c) 2026 djlex83
+
+ ALL RIGHTS RESERVED.
+
+ This software and its source code are protected by copyright law.
+ NO open-source license is granted.
+
+ Use, reproduction, distribution, transfer, making available to the
+ public, or modification of this software — in whole or in part —
+ is NOT permitted without the prior written permission of the
+ copyright holder.
+
+ Licensing requests:
+   → open a GitHub issue in this repository, or
+   → contact @djlex83 via GitHub.
+
+ Any granted permission is subject to the terms agreed upon in
+ writing at that time.
+
+ Viewing the code on GitHub remains technically possible; all rights
+ beyond that are expressly reserved.
+
+ THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND; THE
+ COPYRIGHT HOLDER DISCLAIMS ALL LIABILITY.

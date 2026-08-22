@@ -97,4 +97,6 @@ unbemannt bei jedem Herzschlag.
 
 ## Lizenz
 
-MIT – siehe [LICENSE](LICENSE).
+Alle Rechte vorbehalten – Nutzung/Kopieren/Weitergabe nur mit
+Genehmigung des Autors. Siehe [LICENSE](LICENSE). Anfragen: Issue oder
+[@djlex83](https://github.com/djlex83).
