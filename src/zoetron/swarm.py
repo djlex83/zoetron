@@ -218,7 +218,12 @@ class SwarmOrchestrator:
             f"Goal: {goal}\n\nMemory:\n{context}\n\n"
             'Return ONLY JSON: {"tasks": [{"title": str, "detail": str}, ...]} '
             f'({met.plan_budget()["max_tasks"]}-5 concrete tasks, '
-            f'current stress state: {met.state()}).\n"task_type": "plan"'
+            f'current stress state: {met.state()}).\n'
+            'IMPORTANT: Every task MUST end with a runnable Python code '
+            'artifact (complete script in a ```python block, executable '
+            'WITHOUT command-line arguments, prints a result). Design '
+            'documents or descriptions alone score low with the critic.\n'
+            '"task_type": "plan"'
         )
         raw = self.roles["planner"].ask(prompt, temperature=0.2)
         try:
