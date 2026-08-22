@@ -125,13 +125,16 @@ class Drive:
     def _fallback_goals(self, signals: dict[str, Any], n: int) -> list[dict[str, Any]]:
         out: list[dict[str, Any]] = []
         for goal in signals.get("unconverged_goals", [])[:n]:
-            out.append({"title": f"Retry with new strategy: {goal}",
-                        "why": "previous run did not converge",
+            out.append({"title": f"Neuer Anlauf mit anderer Strategie: {goal}",
+                        "why": "Der vorherige Lauf hat das Ziel nicht "
+                               "erreicht - ein anderer Weg soll es schaffen.",
                         "signal": "failure"})
         while len(out) < n:
             i = len(out)
-            out.append({"title": f"Explore blind spot #{i + 1} in memory coverage",
-                        "why": "few events recorded in this area",
+            out.append({"title": f"Blinden Fleck #{i + 1} im Gedächtnis erforschen",
+                        "why": "In diesem Bereich wurden bisher kaum "
+                               "Ereignisse aufgezeichnet - hier fehlt "
+                               "Zoetron Erfahrung.",
                         "signal": "gap"})
         return out[:n]
 
