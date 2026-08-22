@@ -75,6 +75,9 @@ PYEOF
     git push origin main >> "$LOG" 2>&1 && log "gepusht ($CHANGED dateien)" || log "push-fehler"
   fi
 
+  log "phase: graph"
+  $PY src/zoetron/graph.py >> "$LOG" 2>&1 || log "graph-fehler"
+
   log "phase: wiki-sync"
   bash scripts/wiki_sync.sh
 
