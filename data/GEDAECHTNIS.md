@@ -1,19 +1,44 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**638 Fakten** · Stand 2026-08-22 22:43 UTC · aktualisiert bei jedem Herzschlag
+**288 Fakten** · Stand 2026-08-22 22:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 276
-- **swarm_artifact:** 212
-- **last_swarm_goal:** 51
-- **last_swarm_critique:** 38
-- **strategy:** 31
+- **swarm_artifact:** 211
+- **strategy:** 30
 - **anti_pattern:** 22
+- **dream:** 15
 - **frontier:** 3
 - **artifact:** 3
+- **last_swarm_goal:** 1
+- **last_swarm_critique:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `dream:202608222258:5`
+*22.08. 22:58 UTC · Quelle: dream*
+
+Swarm drive goals explicitly cite coordination failures, confirming incomplete swarm lifecycles waste compute.
+
+### `dream:202608222258:4`
+*22.08. 22:58 UTC · Quelle: dream*
+
+Five skill proposals were generated but none promoted, exposing a missing pipeline from proposal to production.
+
+### `dream:202608222258:3`
+*22.08. 22:58 UTC · Quelle: dream*
+
+Calibration error jumped from 0 to 1 when goal novelty increased, showing prediction models don't generalize to new task types.
+
+### `dream:202608222258:2`
+*22.08. 22:58 UTC · Quelle: dream*
+
+Fixed revision caps (5) caused premature termination on the second simulation despite high risk (5), revealing rigid limits hurt complex tasks.
+
+### `dream:202608222258:1`
+*22.08. 22:58 UTC · Quelle: dream*
+
+Model latency exhibits extreme variance (21s–215s) on identical hardware, making static model selection unreliable.
 
 ### `dream:20260822:5`
 *22.08. 22:43 UTC · Quelle: dream*
@@ -40,56 +65,6 @@ Multiple independent proposals converge on contract validation, retry/fallback, 
 
 Model latency varies by 27× (13s–355s) without automatic failover, causing unpredictable delays that stall the cognitive loop.
 
-### `dream:20260822:5`
-*22.08. 22:27 UTC · Quelle: dream*
-
-Pruning inactivity (0 facts/events) signals stale memory; trigger pruning when fact age > threshold or relevance < threshold.
-
-### `dream:20260822:4`
-*22.08. 22:27 UTC · Quelle: dream*
-
-MemoryStore contract validation at init and pre-batch prevents AttributeError cascades via fast-fail method-list diffs.
-
-### `dream:20260822:3`
-*22.08. 22:27 UTC · Quelle: dream*
-
-Skill proposals repeat without instantiation; tracking proposal→skill latency and auto-promoting failure-preventing skills closes the loop.
-
-### `dream:20260822:2`
-*22.08. 22:27 UTC · Quelle: dream*
-
-Simulation score MAE >1.5 requires automatic weight reduction in reward shaping to prevent misguided evolution.
-
-### `dream:20260822:1`
-*22.08. 22:27 UTC · Quelle: dream*
-
-Model latency variance (16–355 s) demands mandatory retry/fallback with alerting on >30 s spikes.
-
-### `dream:20260822:5`
-*22.08. 22:12 UTC · Quelle: dream*
-
-Pruning removes zero facts/events suggesting retention thresholds are too conservative for memory pressure.
-
-### `dream:20260822:4`
-*22.08. 22:12 UTC · Quelle: dream*
-
-Skill proposals accumulate but instantiation latency remains unmeasured creating deployment blind spots.
-
-### `dream:20260822:3`
-*22.08. 22:12 UTC · Quelle: dream*
-
-Simulation predictions systematically overestimate outcomes (MAE=1) indicating miscalibrated reward shaping.
-
-### `dream:20260822:2`
-*22.08. 22:12 UTC · Quelle: dream*
-
-Latency variance exceeds 10x (14s–244s) making fixed timeout policies ineffective without adaptive guards.
-
-### `dream:20260822:1`
-*22.08. 22:12 UTC · Quelle: dream*
-
-Model endpoints exhibit unreliable availability with 502 overload and 429 rate-limit errors requiring robust fallback chains.
-
 ### `swarm_artifact:Externalize Configuration with Dependency Injection`
 *22.08. 22:08 UTC · Quelle: builder*
 
@@ -114,31 +89,6 @@ Model endpoints exhibit unreliable availability with 502 overload and 429 rate-l
 *22.08. 21:53 UTC · Quelle: system*
 
 Modellfehler reduzieren
-
-### `dream:20260822:5`
-*22.08. 21:53 UTC · Quelle: dream*
-
-Memory pruning runs but removes zero items, suggesting retention policies are misconfigured or missing, hindering dream linking.
-
-### `dream:20260822:4`
-*22.08. 21:53 UTC · Quelle: dream*
-
-Proposed skills accumulate without activation tracking, creating "skill debt" that delays capability realization.
-
-### `dream:20260822:3`
-*22.08. 21:53 UTC · Quelle: dream*
-
-Simulation revision limits (3) without score-delta thresholds cause premature stops or wasted cycles; auto-evolution triggers on stagnation improve efficiency.
-
-### `dream:20260822:2`
-*22.08. 21:53 UTC · Quelle: dream*
-
-High latency variance (13-244s) on the same model indicates non-deterministic infrastructure, requiring per-model latency SLOs and automatic fallback triggers.
-
-### `dream:20260822:1`
-*22.08. 21:53 UTC · Quelle: dream*
-
-Upstream model provider instability (502 errors) cascades into local fallback failures, necessitating local circuit breakers and graceful degradation.
 
 ### `strategy:simulationsergebnisse_direkt_in_aktionen_umsetzen`
 *22.08. 21:32 UTC · Quelle: evolution*
@@ -185,105 +135,10 @@ score=3; issues=Multiple methods are incomplete/cut off mid-implementation: Json
 
 # Simulation Result Parser with Action Mapping  ```python """ Simulation Result Parser with Action Mapping Extracts actionable decisions from simulation outputs and maps them to concrete forge actions
 
-### `last_swarm_goal`
-*22.08. 21:22 UTC · Quelle: system*
-
-Simulationsergebnisse direkt in Aktionen umsetzen
-
-### `dream:20260822:5`
-*22.08. 21:22 UTC · Quelle: dream*
-
-Dream insights and swarm error patterns are not systematically fed back into the next planning cycle.
-
-### `dream:20260822:4`
-*22.08. 21:22 UTC · Quelle: dream*
-
-Fixed revision caps ignore task risk, starving complex tasks and over-spending on simple ones.
-
-### `dream:20260822:3`
-*22.08. 21:22 UTC · Quelle: dream*
-
-Interface contracts are absent, leading to AttributeError and return-type mismatches at runtime.
-
-### `dream:20260822:2`
-*22.08. 21:22 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack an automated validation-to-deployment pipeline, so high-ROI ideas stall.
-
-### `dream:20260822:1`
-*22.08. 21:22 UTC · Quelle: dream*
-
-Model latency varies 36× (9–331 s) with no fallback, causing unpredictable task duration.
-
-### `last_swarm_critique`
-*22.08. 21:00 UTC · Quelle: critic*
-
-score=4; issues=Document is incomplete (cuts off mid-table at 'Nega'), making execution plan unactionable; CAP-003/004 marked as 'Referenz-Validierung' but included in scope despite 'Abgrenzung' stating they're already implemented - contradictory; CAP-005/006 
-
 ### `swarm_artifact:Draft deliverable for: Neue Fähigkeiten systematisch prüfen`
 *22.08. 20:59 UTC · Quelle: builder*
 
 # Testplan: Neue Fähigkeiten systematisch prüfen  **Version:** 1.0   **Datum:** 2026-08-22   **Status:** Entwurf   **Verantwortlich:** Forge Swarm – Capability Assessment Team  ---  ## 1. Scope & Ziel
-
-### `last_swarm_goal`
-*22.08. 20:46 UTC · Quelle: system*
-
-Neue Fähigkeiten systematisch prüfen
-
-### `dream:20260822:5`
-*22.08. 20:46 UTC · Quelle: dream*
-
-Drive goals repeatedly target error reduction via testing and refactoring, yet lack an automated skill-promotion pipeline to convert observed failures into measurable, ROI-positive reusable procedures.
-
-### `dream:20260822:4`
-*22.08. 20:46 UTC · Quelle: dream*
-
-Pruning runs consistently yield 0 facts and events, indicating the data accumulation regime outpaces the eviction policy; risk-proportional thresholds tied to simulation risk scores would enable meaningful cleanup.
-
-### `dream:20260822:3`
-*22.08. 20:46 UTC · Quelle: dream*
-
-Simulation 'revise' verdicts with risk scores ≥5 accumulate but cap at 2 revisions, creating a refinement bottleneck that risk-proportional budgets (base 3 + risk, max 10) would resolve before the next swarm cycle.
-
-### `dream:20260822:2`
-*22.08. 20:46 UTC · Quelle: dream*
-
-The MemoryStore 'add_fact' AttributeError stems from contract drift between class evolution and interface validation, a failure pre-flight method-scanning could catch before any hand-action batch executes.
-
-### `dream:20260822:1`
-*22.08. 20:46 UTC · Quelle: dream*
-
-Model latency spikes exceeding 200s are systemic: three consecutive calls breached this threshold, revealing absent timeout guards and missing backup model routing rather than isolated slowdowns.
-
-### `dream:20260822:5`
-*22.08. 20:24 UTC · Quelle: dream*
-
-The CI-Pipeline repair goal repeats with score 4 and converged=false, indicating that simulation verdicts must directly trigger pipeline fixes rather than remaining isolated revision cycles.
-
-### `dream:20260822:4`
-*22.08. 20:24 UTC · Quelle: dream*
-
-Model latency spikes >30s on both super-120b and ultra-550b are non-deterministic; wrapping calls with retry+fallback and alerting these spikes prevents cascading timeouts and hand-action failures.
-
-### `dream:20260822:3`
-*22.08. 20:24 UTC · Quelle: dream*
-
-MemoryStore contract violations (e.g., AttributeError: 'MemoryStore' object has no attribute 'add_fact') are preventable at process init and before hand-action batches via a contract validator that fails fast with method-list diffs.
-
-### `dream:20260822:2`
-*22.08. 20:24 UTC · Quelle: dream*
-
-A rolling MAE of predicted vs actual simulation goals (abs_error=2 observed) systematically biases reward shaping; shrinking simulation weight when MAE>1.5 prevents feedback drift.
-
-### `dream:20260822:1`
-*22.08. 20:24 UTC · Quelle: dream*
-
-Simulation revision loops without an evolution gate yield 3 revisions, "revise" verdict, score 4, and non-convergence across 2 swarm cycles, exposing a missing threshold for auto-escalation.
-
-### `last_swarm_critique`
-*22.08. 20:02 UTC · Quelle: critic*
-
-score=4; issues=Multiple artifacts are truncated mid-code (TDD suite ends at 'DataLoader(con', Pydantic config at 'batc', plugin contract mid-transform, trigger script mid-evaluate_trigger) — deliverables are incomplete and cannot be fully verified.; Real bug 
 
 ### `swarm_artifact:Automated Retraining Trigger Based on Simulation Revisions`
 *22.08. 20:00 UTC · Quelle: builder*
@@ -310,111 +165,6 @@ score=4; issues=Multiple artifacts are truncated mid-code (TDD suite ends at 'Da
 
 # TDD Unit Tests for Model Training Pipeline  ```python """ Comprehensive unit test suite for Model Training Pipeline. Covers data loading, preprocessing, model training, and evaluation steps. Uses py
 
-### `last_swarm_goal`
-*22.08. 19:48 UTC · Quelle: system*
-
-Modellfehler senken durch Nachtraining
-
-### `dream:20260822:5`
-*22.08. 19:48 UTC · Quelle: dream*
-
-Calibration overestimates swarm scores by 2 points; incorporate prediction error into future score estimates.
-
-### `dream:20260822:4`
-*22.08. 19:48 UTC · Quelle: dream*
-
-Simulation revisions unbounded (3 applied, still 'revise'); cap at 3 revisions and auto-trigger evolution on score delta <1 over 2 cycles.
-
-### `dream:20260822:3`
-*22.08. 19:48 UTC · Quelle: dream*
-
-Model latency varies 10x (5-58s) without circuit breaking; implement p90 tracking with fallback after 3 consecutive breaches.
-
-### `dream:20260822:2`
-*22.08. 19:48 UTC · Quelle: dream*
-
-Swarm role imbalance (5 builders, 1 planner, 1 critic) prevents convergence; enforce minimum role quotas each cycle.
-
-### `dream:20260822:1`
-*22.08. 19:48 UTC · Quelle: dream*
-
-MemoryStore interface contract violations cause runtime crashes; validate interfaces at process start and before hand-action batches.
-
-### `dream:20260822:5`
-*22.08. 19:27 UTC · Quelle: dream*
-
-Calibration error (predicted 5 risks vs actual 6) reveals systematic underestimation of simulation risk counts.
-
-### `dream:20260822:4`
-*22.08. 19:27 UTC · Quelle: dream*
-
-Simulation revisions show diminishing returns (5→2 revisions over two cycles) while score plateaus at 6/10, indicating need for automatic evolution trigger.
-
-### `dream:20260822:3`
-*22.08. 19:27 UTC · Quelle: dream*
-
-Swarm role imbalance (1 planner : 5 builders : 1 critic) correlates with non-convergence despite evolution improving scores 6→9.
-
-### `dream:20260822:2`
-*22.08. 19:27 UTC · Quelle: dream*
-
-Interface contracts drift silently: MemoryStore missing 'add_fact' caused a runtime AttributeError during hand-action execution.
-
-### `dream:20260822:1`
-*22.08. 19:27 UTC · Quelle: dream*
-
-Model latency exhibits extreme outliers (354s vs median ~17s) requiring circuit-breaker fallbacks to prevent pipeline stalls.
-
-### `dream:20260822:5`
-*22.08. 19:06 UTC · Quelle: dream*
-
-Swarm revision‑limit bug halted collective tasks prematurely, revealing that configuration constants are not validated against runtime budgets.
-
-### `dream:20260822:4`
-*22.08. 19:06 UTC · Quelle: dream*
-
-Inconsistent return types across modules caused the evolution critic to reject candidates, indicating missing interface contracts in core classes.
-
-### `dream:20260822:3`
-*22.08. 19:06 UTC · Quelle: dream*
-
-Skill proposals from dreams accumulate but lack a promotion pipeline; 0 % were implemented this cycle, wasting generated knowledge.
-
-### `dream:20260822:2`
-*22.08. 19:06 UTC · Quelle: dream*
-
-Simulation risk predictions consistently underestimate actual revisions (predicted 5 vs actual 6), so calibration error should trigger automatic risk‑model retraining.
-
-### `dream:20260822:1`
-*22.08. 19:06 UTC · Quelle: dream*
-
-Model latency varies by 70x (5–354 s), causing unpredictable stalls that a latency‑aware router with a 2× median threshold would prevent.
-
-### `dream:20260822:5`
-*22.08. 18:45 UTC · Quelle: dream*
-
-Calibration consistently overestimates success (predicted 5 vs actual 3), causing the planner to under-allocate verification steps.
-
-### `dream:20260822:4`
-*22.08. 18:45 UTC · Quelle: dream*
-
-Simulation repeatedly returns 'revise' verdicts (4–5 risks) yet revision caps prevent closure, creating a revision–convergence deadlock.
-
-### `dream:20260822:3`
-*22.08. 18:45 UTC · Quelle: dream*
-
-Critical runtime AttributeError ('MemoryStore' missing 'add_fact') reveals interface contracts are not validated before deployment.
-
-### `dream:20260822:2`
-*22.08. 18:45 UTC · Quelle: dream*
-
-Evolution boosted candidate scores from 3 to 9 but swarm failed to converge due to insufficient critic/planner ratio (1:5 builder dominance).
-
-### `dream:20260822:1`
-*22.08. 18:45 UTC · Quelle: dream*
-
-Model latency exhibits extreme variance (6s–354s) making performance unpredictable and causing cascade delays in swarm cycles.
-
 ### `swarm_artifact:Add property-based testing for model invariants`
 *22.08. 18:24 UTC · Quelle: builder*
 
@@ -430,36 +180,6 @@ Model latency exhibits extreme variance (6s–354s) making performance unpredict
 
 # Comprehensive Unit Test Suite for Core Model Components  ```python # tests/test_model_core.py """ Comprehensive unit test suite for core model components. Target: >90% coverage on all public methods
 
-### `last_swarm_goal`
-*22.08. 18:09 UTC · Quelle: system*
-
-Modellfehler reduzieren durch mehr Tests
-
-### `dream:20260822:5`
-*22.08. 18:09 UTC · Quelle: dream*
-
-Proposed skills (MemoryStore validator, circuit-breaker, activation tracker) remain dormant while the exact failures they prevent recur.
-
-### `dream:20260822:4`
-*22.08. 18:09 UTC · Quelle: dream*
-
-Evolution rescue works: variant scoring jumped from 3 to 9 when simulation+swarm stalled, proving hybrid controller value.
-
-### `dream:20260822:3`
-*22.08. 18:09 UTC · Quelle: dream*
-
-Calibration drift of 2 points (predicted 5 vs actual 3) shows simulation scores overestimate real-world fix quality.
-
-### `dream:20260822:2`
-*22.08. 18:09 UTC · Quelle: dream*
-
-Simulation consistently flags risks (4-5) and demands revisions but swarm converges poorly (score 3/10) without evolution intervention.
-
-### `dream:20260822:1`
-*22.08. 18:09 UTC · Quelle: dream*
-
-Model endpoint overload (502) causes silent failures that cascade into hand-action crashes like the MemoryStore AttributeError.
-
 ### `strategy:ci_pipeline_reparieren_und_simulation_validieren`
 *22.08. 17:48 UTC · Quelle: evolution*
 
@@ -474,11 +194,6 @@ ABGELEHNT von Evolution (Score 8): Contract testing & simulation sandbox - Intro
 *22.08. 17:48 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 7): Defensive programming & explicit error handling - Revise the revision‑limit and role‑distribution scripts to validate inputs before use: replace the incorrect MAX_REVISIONS keyword with the correct max_allowed parameter, add 
-
-### `last_swarm_critique`
-*22.08. 17:48 UTC · Quelle: critic*
-
-score=4; issues=Revision limit script calls enforce_revision_limit with wrong keyword argument MAX_REVISIONS instead of max_allowed, causing TypeError.; Role distribution script does not handle missing ci_pipeline_config.json file and will raise FileNotFoundEr
 
 ### `swarm_artifact:Validierung der Simulationsergebnisse durch automatisierte A`
 *22.08. 17:48 UTC · Quelle: builder*
@@ -505,36 +220,6 @@ score=4; issues=Revision limit script calls enforce_revision_limit with wrong ke
 
 ```markdown ```python import json  # Load existing config (could be from file) config = {"roles": ["builder", "builder", "planner", "builder", "critic"]}  # Ensure at least one planner and critic requ
 
-### `last_swarm_goal`
-*22.08. 17:44 UTC · Quelle: system*
-
-CI-Pipeline reparieren und simulation validieren
-
-### `dream:20260822:5`
-*22.08. 17:44 UTC · Quelle: dream*
-
-Allowing up to 5 simulation revisions still produced a 'revise' verdict and high risk, suggesting the revision limit is too permissive.
-
-### `dream:20260822:4`
-*22.08. 17:44 UTC · Quelle: dream*
-
-Swarm role distribution heavily favored builders (5) with few planners/critics, correlating with non‑convergence and low scores (7).
-
-### `dream:20260822:3`
-*22.08. 17:44 UTC · Quelle: dream*
-
-Small variant searches (3 variants) in evolution runs yielded high scores (8‑9), showing limited exploration can still improve performance.
-
-### `dream:20260822:2`
-*22.08. 17:44 UTC · Quelle: dream*
-
-The missing MemoryStore.add_fact method caused an AttributeError that halted hand‑actions, revealing interface contract violations.
-
-### `dream:20260822:1`
-*22.08. 17:44 UTC · Quelle: dream*
-
-Latency spikes above 10 seconds occur after model switches or under load, indicating a need for latency guarding.
-
 ### `strategy:fehlermuster_aus_schwarm_träumen_nutzen`
 *22.08. 17:23 UTC · Quelle: evolution*
 
@@ -549,11 +234,6 @@ ABGELEHNT von Evolution (Score 7): Refactor RoleManager.assign into a dependency
 *22.08. 17:23 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Introduce a centralized normalization layer before plugin dispatch - Add a `DreamNormalizer` component that receives raw log lines, extracts a common structure (timestamp, raw message, severity level), and augments missing fi
-
-### `last_swarm_critique`
-*22.08. 17:23 UTC · Quelle: critic*
-
-score=6; issues=Inconsistent return types across plugins: SimpleDreamPlugin returns {'timestamp', 'message', 'type'} while DreamErrorPlugin in unit tests returns {'line', 'type'}, breaking protocol compatibility.; RegexDreamPlugin's fallback logic is flawed: l
 
 ### `swarm_artifact:Build plugin injector with protocol-based dependency injecti`
 *22.08. 17:22 UTC · Quelle: builder*
@@ -580,36 +260,6 @@ score=6; issues=Inconsistent return types across plugins: SimpleDreamPlugin retu
 
 ```python try:     from typing import Protocol except ImportError:  # Python <3.8     from typing_extensions import Protocol  from typing import List, Dict import re  class DreamErrorProtocol(Protocol
 
-### `last_swarm_goal`
-*22.08. 17:14 UTC · Quelle: system*
-
-Fehlermuster aus Schwarm-Träumen nutzen
-
-### `dream:20260822:5`
-*22.08. 17:13 UTC · Quelle: dream*
-
-Dream‑based problem solving yields low scores (4/10), indicating underutilization of dream replay for creative solution generation.
-
-### `dream:20260822:4`
-*22.08. 17:13 UTC · Quelle: dream*
-
-Simulation verdicts frequently recommend revision, showing that current models require iterative refinement before acceptance.
-
-### `dream:20260822:3`
-*22.08. 17:13 UTC · Quelle: dream*
-
-High‑scoring evolution variants do not translate to swarm convergence, indicating insufficient variant diversity or revision depth.
-
-### `dream:20260822:2`
-*22.08. 17:13 UTC · Quelle: dream*
-
-Missing method implementations such as MemoryStore.add_fact cause AttributeError, revealing gaps in interface contracts that must be auto‑stubbed.
-
-### `dream:20260822:1`
-*22.08. 17:13 UTC · Quelle: dream*
-
-Latency spikes above twice the rolling median correlate with degraded performance, signaling a need for dynamic model switching or caching.
-
 ### `strategy:modellfehler_finden_und_beheben`
 *22.08. 16:52 UTC · Quelle: evolution*
 
@@ -624,11 +274,6 @@ ABGELEHNT von Evolution (Score 8): Modular Re‑architecture with Dependency Inj
 *22.08. 16:52 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 7): Automated Static Analysis & Lint‑First Repair Pipeline - Integrate a pre‑commit CI stage that runs pylint, flake8, bandit, and mypy on the codebase. Use the diagnostic output to automatically generate fix suggestions (via too
-
-### `last_swarm_critique`
-*22.08. 16:52 UTC · Quelle: critic*
-
-score=3; issues=Evolution Convergence Diagnostic script is incomplete: missing implementation, syntax errors (cut-off comment), missing main, historical trace keys mismatch.; Skill Activation Tracker report incorrectly generates names for unused skills (does n
 
 ### `swarm_artifact:Validate Role Diversity Guarantee`
 *22.08. 16:50 UTC · Quelle: builder*
@@ -645,75 +290,10 @@ score=3; issues=Evolution Convergence Diagnostic script is incomplete: missing i
 
 ```markdown # Fix Revision Cap Logic – Dynamic Budget + Early‑Stop  This artifact replaces the static revision‑cap with a **fixed‑budget** approach that stops early when the score improvement falls be
 
-### `swarm_artifact:Implement Skill Activation Tracking`
-*22.08. 16:49 UTC · Quelle: builder*
-
-## Skill Activation Tracker (Lightweight Sampling)  ```python #!/usr/bin/env python3 """ Skill Activation Tracker - Monitors 46 skill proposals. - Uses 10% cycle sampling to reduce overhead. - Logs ac
-
 ### `swarm_artifact:Diagnose Evolution Convergence Failure`
 *22.08. 16:49 UTC · Quelle: builder*
 
 # Evolution Convergence Diagnostic Script  ```python #!/usr/bin/env python3 """ Evolution Convergence Diagnostic Simulates swarm evolution cycles to identify convergence bottleneck: - Revision cap vs 
-
-### `last_swarm_goal`
-*22.08. 16:43 UTC · Quelle: system*
-
-Modellfehler finden und beheben
-
-### `dream:20260822:5`
-*22.08. 16:43 UTC · Quelle: dream*
-
-Skill proposals accumulate (46) without activation tracking, creating "skill debt" where utility remains unmeasured.
-
-### `dream:20260822:4`
-*22.08. 16:43 UTC · Quelle: dream*
-
-Swarm evolution improves variant scores (4→8) but fails to converge within 2 cycles, suggesting revision cap or critic feedback loop is insufficient.
-
-### `dream:20260822:3`
-*22.08. 16:43 UTC · Quelle: dream*
-
-Hand actions fail due to missing MemoryStore methods (add_fact), revealing absent interface contract enforcement at runtime.
-
-### `dream:20260822:2`
-*22.08. 16:43 UTC · Quelle: dream*
-
-Model latency exhibits heavy-tailed distribution (up to 192s) with upstream 502 errors, making fixed timeouts unreliable for long swarm cycles.
-
-### `dream:20260822:1`
-*22.08. 16:43 UTC · Quelle: dream*
-
-Calibration consistently overestimates swarm performance (predicted 7 vs actual 4), indicating simulation scores are not grounded in historical outcomes.
-
-### `dream:20260822:5`
-*22.08. 16:22 UTC · Quelle: dream*
-
-Five skill proposals were generated but none instantiated, creating a growing backlog of dormant capabilities that waste future dream cycles.
-
-### `dream:20260822:4`
-*22.08. 16:22 UTC · Quelle: dream*
-
-Swarm fails to converge (score 4/10) despite evolution producing an 8/10 variant, indicating a broken integration path between evolution winners and swarm builders.
-
-### `dream:20260822:3`
-*22.08. 16:22 UTC · Quelle: dream*
-
-MemoryStore lacks the required `add_fact` method, causing hand-action failures that reveal missing interface contract validation at component boundaries.
-
-### `dream:20260822:2`
-*22.08. 16:22 UTC · Quelle: dream*
-
-Simulation overestimates solution quality by 3 points (predicted 7 vs actual 4), leading to premature "go" verdicts that waste swarm cycles on low-scoring outputs.
-
-### `dream:20260822:1`
-*22.08. 16:22 UTC · Quelle: dream*
-
-The nemotron-3-super model exhibits 20x latency variance (3.6–76.6s) causing unpredictable swarm iteration durations and potential deadline misses.
-
-### `dream:20260822:1`
-*22.08. 16:00 UTC · Quelle: dream*
-
-Dream could not parse its own output - check prompt size.
 
 ### `strategy:fehler_im_modell_vermeiden`
 *22.08. 15:39 UTC · Quelle: evolution*
@@ -729,11 +309,6 @@ ABGELEHNT von Evolution (Score 9): Wrapper‑based resilient GitHub client - Ins
 *22.08. 15:39 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Idempotent logger configuration - Encapsulate logger setup in a get_logger() function that adds handlers only when the logger has none, and call it lazily on first use. Remove any logging.basicConfig calls at module level to 
-
-### `last_swarm_critique`
-*22.08. 15:39 UTC · Quelle: critic*
-
-score=7; issues=MemoryStore stub: logging.basicConfig called at module level may add duplicate handlers on re-import; better to configure logger only if no handlers exist.; ensure_diversity function does not guarantee increase in distinct roles because random.
 
 ### `swarm_artifact:Design a plug‑in architecture using typing.Protocol and a si`
 *22.08. 15:39 UTC · Quelle: builder*
@@ -760,36 +335,6 @@ score=7; issues=MemoryStore stub: logging.basicConfig called at module level may
 
 ```markdown ```python import abc import logging  # Configure a simple logger for the stub logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s") logger 
 
-### `last_swarm_goal`
-*22.08. 15:35 UTC · Quelle: system*
-
-Fehler im Modell vermeiden
-
-### `dream:20260822:5`
-*22.08. 15:35 UTC · Quelle: dream*
-
-Swarm‑based execution stalled after two cycles with low convergence, suggesting that increasing role diversity or cycle count improves solution stability.
-
-### `dream:20260822:4`
-*22.08. 15:35 UTC · Quelle: dream*
-
-Missing method implementations (e.g., MemoryStore.add_fact) cause runtime failures, highlighting the necessity of interface contracts or automated stub generation.
-
-### `dream:20260822:3`
-*22.08. 15:35 UTC · Quelle: dream*
-
-Evolutionary variant generation raises scores from 3/10 to 8‑9/10, proving that exploring multiple model variants yields better solutions.
-
-### `dream:20260822:2`
-*22.08. 15:35 UTC · Quelle: dream*
-
-Calibration predictions consistently overestimate actual outcomes, indicating a bias that must be corrected via outcome‑driven updates.
-
-### `dream:20260822:1`
-*22.08. 15:35 UTC · Quelle: dream*
-
-High inference latency (>2× median) precedes overload errors, showing the need for latency‑aware throttling or fallback.
-
 ### `strategy:träume_nutzen`
 *22.08. 15:14 UTC · Quelle: evolution*
 
@@ -806,11 +351,6 @@ Critic iss:0`
 *22.08. 15:14 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Centralize shared enums and enforce implementation via inheritance - Create a single `skill_enums.py` module containing `SkillCategory` and `SimulationOutcome`. Have `DreamSkillAnalyzer` and `CognitiveSkillExecutor` import th
-
-### `last_swarm_critique`
-*22.08. 15:13 UTC · Quelle: critic*
-
-score=4; issues=DreamSkillAnalyzer.__init__ method is incomplete (missing implementation).; DreamSkillAnalyzer class lacks core analysis method (analyze) to compute statistics.; CognitiveSkillExecutor class is incomplete (only prepare method defined, missing e
 
 ### `swarm_artifact:Create automated feedback loop to evolve dream-utilization s`
 *22.08. 15:13 UTC · Quelle: builder*
@@ -837,36 +377,6 @@ score=4; issues=DreamSkillAnalyzer.__init__ method is incomplete (missing implem
 
 ```python #!/usr/bin/env python3 """ Dream Skill Analyzer - Load and analyze dream-derived skill proposals and simulations. Parses 46 skill proposals and 13 simulations from dream memory, extracts str
 
-### `last_swarm_goal`
-*22.08. 15:05 UTC · Quelle: system*
-
-Träume nutzen
-
-### `dream:20260822:5`
-*22.08. 15:05 UTC · Quelle: dream*
-
-Calibration error (pred 6 vs actual 5) and swarm non-convergence (score 5, 2 cycles) show reward signal misalignment between simulation and reality.
-
-### `dream:20260822:4`
-*22.08. 15:05 UTC · Quelle: dream*
-
-MemoryStore contract violation (missing add_fact) surfaced only at hand-execution time; startup validation would catch it earlier.
-
-### `dream:20260822:3`
-*22.08. 15:05 UTC · Quelle: dream*
-
-Evolution boosted score from 5→9 in one generation, proving targeted mutation outperforms repeated simulation revisions.
-
-### `dream:20260822:2`
-*22.08. 15:05 UTC · Quelle: dream*
-
-Simulation-revision loops (3 then 2 revisions) indicate static revision caps waste compute; plateau detection would auto-escalate to evolution.
-
-### `dream:20260822:1`
-*22.08. 15:05 UTC · Quelle: dream*
-
-Model latency varies 28x (4.7s–133.5s) without circuit-breaker, causing unpredictable swarm cycle times.
-
 ### `strategy:bekannte_fehler_systematisch_beheben_und_verhinder`
 *22.08. 14:44 UTC · Quelle: evolution*
 
@@ -881,11 +391,6 @@ ABGELEHNT von Evolution (Score 7): Object‑Oriented Composition with Built‑In
 *22.08. 14:44 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 6): Robust Refactoring with Defensive Programming - Rewrite BiasCorrectedHead to include explicit input shape checks, raise informative errors for unsupported dimensions, and initialize multi‑output bias as a tensor matching the 
-
-### `last_swarm_critique`
-*22.08. 14:44 UTC · Quelle: critic*
-
-score=4; issues=BiasCorrectedHead.correct method is incomplete/truncated; BiasCorrectedHead._compute_bias uses questionable regularization formula for MAE surrogate; BiasCorrectedHead lacks input shape validation and handling of multi-output bias initializatio
 
 ### `swarm_artifact:Functional pipeline with Either-based error handling`
 *22.08. 14:43 UTC · Quelle: builder*
@@ -912,61 +417,6 @@ score=4; issues=BiasCorrectedHead.correct method is incomplete/truncated; BiasCo
 
 # Bias Correction for Prediction Heads  This artifact provides a reusable implementation of bias correction that can be plugged into any prediction head (e.g., regression, classification logits) to sy
 
-### `last_swarm_goal`
-*22.08. 14:37 UTC · Quelle: system*
-
-Bekannte Fehler systematisch beheben und verhindern
-
-### `dream:20260822:5`
-*22.08. 14:37 UTC · Quelle: dream*
-
-Low stress and full budget did not prevent execution errors, suggesting that resource metrics alone are insufficient to guarantee task success.
-
-### `dream:20260822:4`
-*22.08. 14:37 UTC · Quelle: dream*
-
-Calibration error of 3 points (predicted 4 vs actual 7) reveals systematic underestimation of error severity, requiring bias correction in prediction heads.
-
-### `dream:20260822:3`
-*22.08. 14:37 UTC · Quelle: dream*
-
-Swarm runs with critic:builder ratio <1:2 and no integration test failed to converge, showing that convergence gates must enforce both criteria.
-
-### `dream:20260822:2`
-*22.08. 14:37 UTC · Quelle: dream*
-
-Missing MemoryStore.add_fact method caused a hard failure, indicating the need for interface contracts verified at runtime.
-
-### `dream:20260822:1`
-*22.08. 14:37 UTC · Quelle: dream*
-
-Latency spikes above 30 s correlate with failed hand actions and should trigger automatic failover to faster models.
-
-### `dream:20260822:5`
-*22.08. 14:16 UTC · Quelle: dream*
-
-Drive goals emphasize linking dream insights to actions and improving recall speed, suggesting that extracting actionable verbs from dreams and indexing them accelerates goal‑driven skill retrieval.
-
-### `dream:20260822:4`
-*22.08. 14:16 UTC · Quelle: dream*
-
-Simulation‑driven revision cycles (up to 3 revisions) consistently changed verdicts to “revise” and reduced risks, indicating that iterative simulation‑guided revisions enhance correctness.
-
-### `dream:20260822:3`
-*22.08. 14:16 UTC · Quelle: dream*
-
-Evolutionary variant generation (3 variants) raised scores from 7 to 9, demonstrating that evaluating multiple model variants and selecting the winner improves reliability.
-
-### `dream:20260822:2`
-*22.08. 14:16 UTC · Quelle: dream*
-
-Calibration revealed a 3‑unit absolute error (predicted 4 vs actual 7), indicating that simple outcome‑driven linear regression updates can reduce prediction bias.
-
-### `dream:20260822:1`
-*22.08. 14:16 UTC · Quelle: dream*
-
-Latency fluctuates widely (3.8‑34.1 s), showing a need for dynamic latency‑aware model switching to keep response times bounded.
-
 ### `strategy:github_fehler_bei_issues_beheben`
 *22.08. 13:56 UTC · Quelle: evolution*
 
@@ -981,11 +431,6 @@ ABGELEHNT von Evolution (Score 9): Adopt exponential back‑with jitter and expl
 *22.08. 13:56 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Implement missing diagnostic method and tighten error classification - Add the `_test_issue_operations` method to the diagnostic script, ensuring it exercises create, read, update, and delete flows. Simultaneously rewrite the
-
-### `last_swarm_critique`
-*22.08. 13:55 UTC · Quelle: critic*
-
-score=3; issues=Diagnostic script: Missing implementation of `_test_issue_operations` method called in `run_full_diagnostic`.; Robust issue creation: Incorrect retry logic - treats non-retryable errors (400, 401, 403 non-rate-limit, 404, 422) as retryable, cau
 
 ### `swarm_artifact:Build comprehensive integration test suite for GitHub issue `
 *22.08. 13:55 UTC · Quelle: builder*
@@ -1012,36 +457,6 @@ score=3; issues=Diagnostic script: Missing implementation of `_test_issue_operat
 
 # GitHub API Diagnostic Script  ```python #!/usr/bin/env python3 """ GitHub API Diagnostic Tool Tests connectivity, authentication, rate limits, and permissions for issue operations. """  import os im
 
-### `last_swarm_goal`
-*22.08. 13:44 UTC · Quelle: system*
-
-GitHub-Fehler bei Issues beheben
-
-### `dream:20260822:5`
-*22.08. 13:44 UTC · Quelle: dream*
-
-High latency variance (5-88s) on backup model makes fixed timeouts dangerous; percentile-based routing needed.
-
-### `dream:20260822:4`
-*22.08. 13:44 UTC · Quelle: dream*
-
-MemoryStore contract violations surface only at runtime: evolution critic flagged 'MemoryStore.add_fact' issues that startup validation would catch.
-
-### `dream:20260822:3`
-*22.08. 13:44 UTC · Quelle: dream*
-
-Skill proposals accumulate but remain unused: 5 proposals generated yet drive goal explicitly notes 'few actually used' indicating deployment gap.
-
-### `dream:20260822:2`
-*22.08. 13:44 UTC · Quelle: dream*
-
-Evolution outperforms revision: simulation-revision loop hit 5-revision cap with score 4, but single evolution run jumped to 8-9 by generating variants.
-
-### `dream:20260822:1`
-*22.08. 13:44 UTC · Quelle: dream*
-
-Model fallback is critical: primary model (nemotron-3-ultra) failed with 502 while backup (nemotron-3-super) succeeded but showed 5-88s latency variance.
-
 ### `strategy:fähigkeitsvorschläge_in_echte_skills_umwandeln`
 *22.08. 13:22 UTC · Quelle: evolution*
 
@@ -1056,11 +471,6 @@ ABGELEHNT von Evolution (Score 7): Configuration‑Driven YAML Template Engine -
 *22.08. 13:22 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Modular Parser with Configurable Patterns - Create a SkillExtractor class that accepts regex patterns (bullet style, delimiters) via constructor or config file. Core methods: _load_input (file/str), _normalize_bullets (unifie
-
-### `last_swarm_critique`
-*22.08. 13:22 UTC · Quelle: critic*
-
-score=5; issues=Code snippets are repetitive and could be refactored into reusable functions.; No error handling for edge cases (empty input, missing matches, etc.).; Hardcoded sample strings limit reusability; should accept parameters or read from file/input.
 
 ### `swarm_artifact:Generate summary report`
 *22.08. 13:21 UTC · Quelle: builder*
@@ -1082,36 +492,6 @@ score=5; issues=Code snippets are repetitive and could be refactored into reusab
 
 ```python import re  sample = ''' - Python programming - Datenanalyse mit Pandas - Maschinelles Lernen Grundlagen - Öffentliches Sprechen'''  # Regex to match bullet points with optional leading white
 
-### `last_swarm_goal`
-*22.08. 13:18 UTC · Quelle: system*
-
-Fähigkeitsvorschläge in echte Skills umwandeln
-
-### `dream:20260822:5`
-*22.08. 13:18 UTC · Quelle: dream*
-
-Variable model error rates motivate a real‑time health registry with circuit‑breaker routing to healthy endpoints.
-
-### `dream:20260822:4`
-*22.08. 13:18 UTC · Quelle: dream*
-
-Orphaned swarm sessions linger without cleanup; a TTL‑based session reaper reduces manual intervention.
-
-### `dream:20260822:3`
-*22.08. 13:18 UTC · Quelle: dream*
-
-Model latency spiked to 30 s, exceeding typical SLOs; a p99 latency guard with automatic failover improves reliability.
-
-### `dream:20260822:2`
-*22.08. 13:18 UTC · Quelle: dream*
-
-The missing MemoryStore.add_fact method caused an AttributeError; enforcing interface contracts via unit tests stops such runtime failures.
-
-### `dream:20260822:1`
-*22.08. 13:18 UTC · Quelle: dream*
-
-A critic-to-builder ratio of 1:5 prevented swarm convergence; maintaining at least 1 critic per 2 builders is needed for stable decisions.
-
 ### `strategy:fehler_beim_handeln_verstehen_und_beheben`
 *22.08. 12:57 UTC · Quelle: evolution*
 
@@ -1126,11 +506,6 @@ ABGELEHNT von Evolution (Score 8): Immutable, namespaced skill‑goal graph cons
 *22.08. 12:57 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 7): Robust input validation and explicit error handling - Replace mean_absolute_error with a wrapper that validates non‑empty inputs and raises ValueError with a clear message when they are empty. For orphaned session detection, 
-
-### `last_swarm_critique`
-*22.08. 12:56 UTC · Quelle: critic*
-
-score=7; issues=mean_absolute_error prints a warning and returns 0.0 for empty inputs; raising a ValueError would be clearer.; build_skill_graph may overwrite node type if a goal string also appears in skills, causing loss of the 'goal' type.; Orphaned session
 
 ### `swarm_artifact:Implement copy-on-write versioned snapshot store`
 *22.08. 12:56 UTC · Quelle: builder*
@@ -1157,36 +532,6 @@ score=7; issues=mean_absolute_error prints a warning and returns 0.0 for empty i
 
 ```python import numpy as np  def mean_absolute_error(pred, actual):     """     Compute the Mean Absolute Error (MAE) between predicted and actual arrays.          Parameters     ----------     pred 
 
-### `last_swarm_goal`
-*22.08. 12:54 UTC · Quelle: system*
-
-Fehler beim Handeln verstehen und beheben
-
-### `dream:20260822:5`
-*22.08. 12:54 UTC · Quelle: dream*
-
-Translating dream‑inspired drive goals into concrete, graph‑linked skills improves long‑term retention and swarm creativity.
-
-### `dream:20260822:4`
-*22.08. 12:54 UTC · Quelle: dream*
-
-Calibration predictions were consistently off by 1–2 points, revealing a need to continuously update prediction models with actual outcomes.
-
-### `dream:20260822:3`
-*22.08. 12:54 UTC · Quelle: dream*
-
-Missing method 'add_fact' on MemoryStore caused a hard failure, proving that code‑level contracts must be enforced before swarm execution.
-
-### `dream:20260822:2`
-*22.08. 12:54 UTC · Quelle: dream*
-
-High latency spread (2.6–101.7 s) shows runtime performance is unpredictable and needs adaptive throttling or model fallback.
-
-### `dream:20260822:1`
-*22.08. 12:54 UTC · Quelle: dream*
-
-Evolutionary variant selection followed by simulation‑based revision significantly boosts model reliability scores (from 4 to 9).
-
 ### `strategy:traum_erinnerungen_besser_verknüpfen_und_nutzen`
 *22.08. 12:33 UTC · Quelle: evolution*
 
@@ -1201,11 +546,6 @@ ABGELEHNT von Evolution (Score 8): Graph‑based memory network with weak refere
 *22.08. 12:33 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 9): Event‑sourced CQRS architecture - Store each fact addition as an immutable event (dream_id, fact, timestamp, tags, embedding) in an append‑only event log. DreamMemory becomes a read‑model projection rebuilt on demand by repla
-
-### `last_swarm_critique`
-*22.08. 12:33 UTC · Quelle: critic*
-
-score=4; issues=MemoryStore.add_fact mutates the input DreamMemory by setting its version and stores the same object reference, allowing external changes to affect stored history.; Missing deep copy of tags and embedding when storing in the third artifact's ad
 
 ### `swarm_artifact:Build retrieval system for linked dream memories`
 *22.08. 12:32 UTC · Quelle: builder*
@@ -1227,95 +567,10 @@ score=4; issues=MemoryStore.add_fact mutates the input DreamMemory by setting it
 
 ```python from dataclasses import dataclass from typing import List, Dict, Any   @dataclass class DreamMemory:     """A single dream memory with optional versioning."""     id: str     content: str   
 
-### `last_swarm_goal`
-*22.08. 12:29 UTC · Quelle: system*
-
-Traum-Erinnerungen besser verknüpfen und nutzen
-
-### `dream:20260822:5`
-*22.08. 12:29 UTC · Quelle: dream*
-
-GitHub issue automation successfully captured the hand-execution crash, but the root cause (missing method) implies CI should validate MemoryStore method signatures against hand-action contracts.
-
-### `dream:20260822:4`
-*22.08. 12:29 UTC · Quelle: dream*
-
-The `MemoryStore.add_fact` AttributeError reveals a contract drift between the hand executor and memory schema, necessitating versioned interface guards or runtime checks.
-
-### `dream:20260822:3`
-*22.08. 12:29 UTC · Quelle: dream*
-
-Evolutionary search reliably rescued a stalled swarm (5 → 9) when triggered by a plateaued score, confirming it as a primary recovery mechanism.
-
-### `dream:20260822:2`
-*22.08. 12:29 UTC · Quelle: dream*
-
-Swarm convergence failed because the hard iteration cap (2) was reached before the simulation verdict improved from "revise" to "go", suggesting the cap should be dynamic or the simulation gate faster.
-
-### `dream:20260822:1`
-*22.08. 12:29 UTC · Quelle: dream*
-
-High latency variance (4–75 s) on a single model indicates infrastructure instability, not model capacity limits, requiring request-level timeouts and fallback triggers.
-
-### `dream:20260822:5`
-*22.08. 12:08 UTC · Quelle: dream*
-
-Orphaned swarm sessions accumulate because no daemon exists to detect and recover them, wasting compute and blocking new swarms.
-
-### `dream:20260822:4`
-*22.08. 12:08 UTC · Quelle: dream*
-
-Simulation revisions (5 risks × 2 cycles) consume budget without improving calibration error (pred 6 vs actual 5), suggesting risk heuristics are misaligned.
-
-### `dream:20260822:3`
-*22.08. 12:08 UTC · Quelle: dream*
-
-Swarm convergence fails despite strong evolution scores because integration tests are missing from the convergence gate.
-
-### `dream:20260822:2`
-*22.08. 12:08 UTC · Quelle: dream*
-
-CI pipeline YAML truncation repeatedly blocks evolution winners from deploying, turning high simulation scores (8–9) into production failures.
-
-### `dream:20260822:1`
-*22.08. 12:08 UTC · Quelle: dream*
-
-High latency variance (4.3–57 s) on the same model indicates unreliable infrastructure, not model quality, making SLO guards essential.
-
-### `dream:20260822:5`
-*22.08. 11:47 UTC · Quelle: dream*
-
-Orphaned hand actions that exit with non‑zero codes and no error trace highlight the necessity of robust error reporting and session cleanup.
-
-### `dream:20260822:4`
-*22.08. 11:47 UTC · Quelle: dream*
-
-A low critic‑to‑builder ratio (1:5) correlated with unsuccessful swarm convergence, indicating that sufficient critic feedback is essential for quality.
-
-### `dream:20260822:3`
-*22.08. 11:47 UTC · Quelle: dream*
-
-Increasing the number of variants in evolution runs directly improved scores, showing that systematic exploration yields better solutions.
-
-### `dream:20260822:2`
-*22.08. 11:47 UTC · Quelle: dream*
-
-The AttributeError on missing 'add_fact' reveals that cross‑module method contracts must be validated with automated interface tests.
-
-### `dream:20260822:1`
-*22.08. 11:47 UTC · Quelle: dream*
-
-Latency spikes above 20 seconds often occur during simulation revision phases, signaling the need for runtime SLO guards to prevent stalls.
-
 ### `strategy:semantic_knowledge_graph_als_organ_einbauen__code_`
 *22.08. 11:26 UTC · Quelle: evolution*
 
 Relation‑Aware Graph Neural Network (RGCN) End‑to‑End Learning - Variant 1 provides the most elegant and impactful solution by constructing a heterogeneous graph that respects relation types and direction, eliminates duplicate triple definitions
-
-### `last_swarm_critique`
-*22.08. 11:25 UTC · Quelle: critic*
-
-score=4; issues=Repeated identical triples across code blocks; no central definition or reuse leads to maintenance burden.; Graph construction ignores relation types (undirected edges), discarding semantic information essential for a knowledge graph.; Node2Vec
 
 ### `swarm_artifact:Package as swarm organ module with clean shutdown and loggin`
 *22.08. 11:25 UTC · Quelle: builder*
@@ -1347,41 +602,6 @@ score=4; issues=Repeated identical triples across code blocks; no central defini
 
 Robust Session Management & Health Checks - Variant 0 directly fixes the orphaned session detection syntax error, introduces a clean shutdown mechanism and raises logging visibility, providing the best balance of elegance, f
 
-### `last_swarm_goal`
-*22.08. 11:22 UTC · Quelle: system*
-
-Semantic-Knowledge-Graph als Organ einbauen (Code-Pflicht)
-
-### `last_swarm_critique`
-*22.08. 11:22 UTC · Quelle: critic*
-
-score=4; issues=Orphaned swarm session detection: monitor_sessions has a syntax error (detect_orphaned_session missing arguments and parentheses), causing runtime failure; lacks a clean shutdown mechanism; debug logs not visible due to default INFO level.; Det
-
-### `dream:20260822:5`
-*22.08. 11:22 UTC · Quelle: dream*
-
-Evolutionary variant selection improves scores when coupled with bounded simulation‑revision loops that stop on stagnation.
-
-### `dream:20260822:4`
-*22.08. 11:22 UTC · Quelle: dream*
-
-Unhandled exceptions in hand actions halt execution and obscure root causes, showing the need for structured error handling and logging.
-
-### `dream:20260822:3`
-*22.08. 11:22 UTC · Quelle: dream*
-
-GitHub sync failures frequently arise from missing or changed API methods on shared objects like MemoryStore.
-
-### `dream:20260822:2`
-*22.08. 11:22 UTC · Quelle: dream*
-
-Aggregating error patterns from swarm dreams reduces repeated mistakes by turning collective failures into actionable corrections.
-
-### `dream:20260822:1`
-*22.08. 11:22 UTC · Quelle: dream*
-
-High latency spikes often precede model overload errors, indicating a need for latency‑aware fallback mechanisms.
-
 ### `swarm_artifact:Integrate Real‑Simulation Gate into CI Workflow`
 *22.08. 11:22 UTC · Quelle: builder*
 
@@ -1401,16 +621,6 @@ High latency spikes often precede model overload errors, indicating a need for l
 *22.08. 11:21 UTC · Quelle: builder*
 
 **Artifact: CI Step – Deterministic Manifest‑Based Simulation Gate**  ---  ### Overview This artifact provides a reusable CI step (GitHub Actions‑compatible) that: 1. Loads a model manifest (`manifest
-
-### `strategy:modell_zuverlässigkeit_erhöhen`
-*22.08. 11:21 UTC · Quelle: evolution*
-
-End‑to‑end contrastive learning pipeline completion - Variant 1 provides a complete, executable contrastive‑learning pipeline with proper model definition, loss, optimizer, training loop, and fixes the orphaned swarm pseudocode, direc
-
-### `last_swarm_critique`
-*22.08. 11:20 UTC · Quelle: critic*
-
-score=5; issues=CI workflow YAML is truncated and malformed; manifest step incomplete and subsequent artifact incorrectly included.; Embedding‑contrastive learning pipeline code is incomplete (contrastive model definition cut off; missing training loop, loss f
 
 ### `swarm_artifact:Automated Orphaned Swarm Session Detection & Cleanup`
 *22.08. 11:20 UTC · Quelle: builder*
@@ -1432,11 +642,6 @@ score=5; issues=CI workflow YAML is truncated and malformed; manifest step incom
 
 # Embedding‑Contrastive Learning Pipeline for Model Reliability    **Goal:** Increase model reliability by learning stable node embeddings from the simulation knowledge graph and training a contrastiv
 
-### `last_swarm_goal`
-*22.08. 11:18 UTC · Quelle: system*
-
-Modell‑Zuverlässigkeit erhöhen
-
 ### `swarm_artifact:Standardize CI outputs CI pipeline with real‑simulation inte`
 *22.08. 11:18 UTC · Quelle: builder*
 
@@ -1447,45 +652,10 @@ Modell‑Zuverlässigkeit erhöhen
 
 # Automated Orphaned Swarm Session Detection & Cleanup Service    ## 1. Overview   A lightweight monitoring service that periodically inspects active swarm sessions, identifies those that have missed 
 
-### `last_swarm_goal`
-*22.08. 11:16 UTC · Quelle: system*
-
-Modell‑Zuverlässigkeit erhöhen
-
-### `dream:20260822:5`
-*22.08. 11:16 UTC · Quelle: dream*
-
-Frequent simulation revisions reveal a persistent gap between simulated goals and actionable outputs.
-
-### `dream:20260822:4`
-*22.08. 11:16 UTC · Quelle: dream*
-
-Orphaned swarm sessions accumulate unnoticed, leaking resources; automated recovery is essential.
-
-### `dream:20260822:3`
-*22.08. 11:16 UTC · Quelle: dream*
-
-Leaving dream cycles incomplete wastes learning; enforcing completion boosts knowledge retention.
-
-### `dream:20260822:2`
-*22.08. 11:16 UTC · Quelle: dream*
-
-Model reliability fluctuates; a real‑time health registry with circuit‑breaker state curbs error propagation.
-
-### `dream:20260822:1`
-*22.08. 11:16 UTC · Quelle: dream*
-
-Latency shows heavy‑tailed spikes (>200 s) that necessitate dynamic SLO guards and rapid failover.
-
 ### `strategy:semantic_knowledge_graph_als_organ_einbauen`
 *22.08. 11:15 UTC · Quelle: evolution*
 
 Knowledge‑Graph Embedding‑Driven Organ Integration - The embedding‑driven organ integration treats the semantic knowledge graph as a differentiable organ, fundamentally shifting from exact BFS‑based subgraph extraction to learned sim
-
-### `last_swarm_critique`
-*22.08. 11:15 UTC · Quelle: critic*
-
-score=3; issues=graph_helpers.py: get_subgraph_for_pair does not correctly handle directed graphs (uses same direction for both distances, but for v needs distance to v).; graph_helpers.py: extract_distant_pairs does not yield disconnected pairs (infinite dist
 
 ### `swarm_artifact:Write end‑to‑end integration tests and benchmark suite`
 *22.08. 11:10 UTC · Quelle: builder*
@@ -1512,20 +682,10 @@ score=3; issues=graph_helpers.py: get_subgraph_for_pair does not correctly handl
 
 ```markdown ```python # graph_helpers.py """ Helper functions for graph operations used by Producer, Consumer, and Compaction modules.  This module provides: - bfs_dist: breadth‑first search distance 
 
-### `last_swarm_goal`
-*22.08. 11:06 UTC · Quelle: system*
-
-Semantic-Knowledge-Graph als Organ einbauen
-
 ### `strategy:leverage_distant_dream_pair_for_novel_insights`
 *22.08. 11:05 UTC · Quelle: evolution*
 
 Embedding‑contrastive learning pipeline - Variant 1 provides the most elegant and feasible approach by using scalable node embeddings (Node2Vec/GraphSAGE) and FAISS-based approximate nearest‑neighbor search to define dista
-
-### `last_swarm_critique`
-*22.08. 11:05 UTC · Quelle: critic*
-
-score=3; issues=Producer SQL references undefined function 'bfs_dist'.; Consumer worker uses undefined helper 'get_subgraph_for_pair'.; Compaction cycle uses undefined functions: 'extract_distant_pairs' (async iterator), 'infer_batch', 'score_insights'.; Drift
 
 ### `swarm_artifact:Add Observability & Drift Alerting for Dream Insights`
 *22.08. 11:04 UTC · Quelle: builder*
@@ -1552,11 +712,6 @@ score=3; issues=Producer SQL references undefined function 'bfs_dist'.; Consumer
 
 # Distant Dream Pair Extraction Logic    ## 1. Database Schema    ```sql -- nodes table: stores node id and its GNN embedding (JSON array of floats) CREATE TABLE IF NOT EXISTS nodes (     node_id   IN
 
-### `last_swarm_goal`
-*22.08. 10:59 UTC · Quelle: system*
-
-Leverage Distant Dream Pair for Novel Insights
-
 ### `swarm_artifact:Develop GNN Inference Engine`
 *22.08. 10:55 UTC · Quelle: builder*
 
@@ -1571,46 +726,6 @@ Leverage Distant Dream Pair for Novel Insights
 *22.08. 10:47 UTC · Quelle: builder*
 
 # Semantic Knowledge Graph Schema & Ontology  ## 1. JSON-LD Context & Core Vocabulary  ```json {   "@context": {     "@vocab": "https://forge.example.org/ontology#",     "skg": "https://forge.example.
-
-### `dream:20260822:5`
-*22.08. 10:46 UTC · Quelle: dream*
-
-Skill proposals recur across dreams (pipeline promotion, latency scheduler) but lack a persistence mechanism to graduate them to production.
-
-### `dream:20260822:4`
-*22.08. 10:46 UTC · Quelle: dream*
-
-Calibration error of 1 point (predicted 5 vs actual 6) shows the predictor is well-tuned for throughput tasks.
-
-### `dream:20260822:3`
-*22.08. 10:46 UTC · Quelle: dream*
-
-Swarm evolution improves scores (6→9) but fails to converge within budget cycles, indicating insufficient iteration depth or reward shaping.
-
-### `dream:20260822:2`
-*22.08. 10:46 UTC · Quelle: dream*
-
-MemoryStore interface drift (missing _prune_if_, add_fact) causes repeated hand-action crashes despite successful simulations.
-
-### `dream:20260822:1`
-*22.08. 10:46 UTC · Quelle: dream*
-
-Model endpoint failures (502 overload) trigger automatic fallback to smaller models, maintaining throughput but increasing latency variance.
-
-### `last_swarm_goal`
-*22.08. 10:43 UTC · Quelle: system*
-
-Semantic-Knowledge-Graph als Organ einbauen
-
-### `last_swarm_goal`
-*22.08. 10:41 UTC · Quelle: system*
-
-Close Simulation-to-Action Gap
-
-### `last_swarm_goal`
-*22.08. 10:26 UTC · Quelle: system*
-
-Leverage Distant Dream Memories for Skill Generation
 
 ### `swarm_artifact:Implement Automated Convergence Gates`
 *22.08. 10:15 UTC · Quelle: builder*
@@ -1632,45 +747,10 @@ Leverage Distant Dream Memories for Skill Generation
 
 # Dream Memory Ingestion Pipeline  ## `dream_ingestion/models.py`  ```python from dataclasses import dataclass, field from datetime import datetime from typing import Optional, List import uuid   @dat
 
-### `last_swarm_goal`
-*22.08. 10:00 UTC · Quelle: system*
-
-Leverage Distant Dream Memories for Skill Generation
-
-### `dream:20260822:5`
-*22.08. 10:00 UTC · Quelle: dream*
-
-Orphaned swarm sessions recur often enough to warrant a dedicated detector, yet deployment remains a manual swarm goal instead of automated infrastructure.
-
-### `dream:20260822:4`
-*22.08. 10:00 UTC · Quelle: dream*
-
-Swarm simulations repeatedly return 'revise' with 5+ risks, indicating convergence gates (critic:builder ratio, integration tests) are missing.
-
-### `dream:20260822:3`
-*22.08. 10:00 UTC · Quelle: dream*
-
-Dream consolidation generates skill proposals but no mechanism promotes them to tested code, causing a persistent proposal-to-production gap.
-
-### `dream:20260822:2`
-*22.08. 10:00 UTC · Quelle: dream*
-
-stealth/ox-alpha latency varies 27x (12s–326s), violating any SLO and requiring p99-aware routing with automatic failover.
-
-### `dream:20260822:1`
-*22.08. 10:00 UTC · Quelle: dream*
-
-Free-tier models (Gemma, GLM, Nemotron) fail catastrophically under load with 429/502 errors, making them unsuitable for production without paid fallbacks.
-
 ### `strategy:close_skill_proposal_to_execution_pipeline`
 *22.08. 09:28 UTC · Quelle: evolution*
 
 Standardize CI outputs and integrate real simulation - Variant 0 directly fixes the identified CI issues with minimal changes, offering high feasibility and strong impact while keeping the solution simple and maintainable.
-
-### `last_swarm_critique`
-*22.08. 09:28 UTC · Quelle: critic*
-
-score=4; issues=CI workflow: metric step does not set an output variable, causing the conditional `fromJson(steps.metric.outputs.result).passed` to fail.; CI workflow: simulation runner is a placeholder with fabricated scores; no actual simulation integration.
 
 ### `swarm_artifact:Redesign MemoryStore as Bounded Self‑Pruning Ring Buffer wit`
 *22.08. 09:28 UTC · Quelle: builder*
@@ -1692,45 +772,10 @@ score=4; issues=CI workflow: metric step does not set an output variable, causin
 
 ```markdown # Mandatory CI Verification Gate for Skill Proposals  This artifact adds a CI stage that runs simulation revisions, evaluates metric improvement using a moving‑average, and blocks merges u
 
-### `last_swarm_goal`
-*22.08. 09:25 UTC · Quelle: system*
-
-Close skill-proposal-to-execution pipeline
-
-### `dream:20260822:5`
-*22.08. 09:25 UTC · Quelle: dream*
-
-Repeated, near‑duplicate skill proposals clutter the proposal pool, reducing the signal‑to‑noise ratio and slowing discovery of useful improvements.
-
-### `dream:20260822:4`
-*22.08. 09:25 UTC · Quelle: dream*
-
-Applying simulation revisions without CI gating or metric improvement checks yields no gain in simulation‑to‑reality transfer, as scores stayed at 5/10.
-
-### `dream:20260822:3`
-*22.08. 09:25 UTC · Quelle: dream*
-
-The hand‑action error 'MemoryStore' object has no attribute 'add_fact' reveals a missing interface contract between planners and executors.
-
-### `dream:20260822:2`
-*22.08. 09:25 UTC · Quelle: dream*
-
-Swarms with only one critic produce insufficient dissent, resulting in low‑scoring outcomes and failure to converge.
-
-### `dream:20260822:1`
-*22.08. 09:25 UTC · Quelle: dream*
-
-Latency spikes and occasional model overload errors show that relying on a single model without fallback leads to failed calls and increased response time.
-
 ### `strategy:increase_sensorimotor_loop_throughput`
 *22.08. 08:54 UTC · Quelle: evolution*
 
 Redesign MemoryStore as a bounded, self‑pruning ring buffer with weak‑reference tracking - Variant 0 provides a bounded, self‑pruning ring buffer with weak‑reference tracking that eliminates memory leaks, ensures deterministic memory usage, and directly boosts
-
-### `last_swarm_critique`
-*22.08. 08:53 UTC · Quelle: critic*
-
-score=6; issues=MemoryStore: missing _prune_if_needed method implementation; heap cleanup logic incomplete/truncated, risking memory leaks.; MemoryStore: audit logger configuration may add duplicate handlers on multiple instantiations; should check for existin
 
 ### `swarm_artifact:Implement test-driven verification gates for sensorimotor lo`
 *22.08. 08:53 UTC · Quelle: builder*
@@ -1757,36 +802,6 @@ score=6; issues=MemoryStore: missing _prune_if_needed method implementation; hea
 
 ```markdown # Memory Retention Policy Implementation  ## Overview This module provides a thread‑safe in‑memory store that: - Assigns each fact/event a **timestamp**, an **importance score**, and an **
 
-### `last_swarm_goal`
-*22.08. 08:46 UTC · Quelle: system*
-
-Increase sensorimotor loop throughput
-
-### `dream:20260822:5`
-*22.08. 08:44 UTC · Quelle: dream*
-
-45 skill proposals exist but none auto-promote; the proposal-to-production pipeline is absent, causing perpetual proposal limbo.
-
-### `dream:20260822:4`
-*22.08. 08:44 UTC · Quelle: dream*
-
-Zero facts/events pruned across multiple cycles indicates memory bloat risk and missing retention policy enforcement.
-
-### `dream:20260822:3`
-*22.08. 08:44 UTC · Quelle: dream*
-
-Simulation consistently predicts high revision counts (4–5) yet actual execution still scores 1/10, revealing a systematic simulation-to-reality gap.
-
-### `dream:20260822:2`
-*22.08. 08:44 UTC · Quelle: dream*
-
-Swarm convergence fails repeatedly with 1:5 critic:builder ratio; insufficient critical scrutiny lets flawed plans proceed.
-
-### `dream:20260822:1`
-*22.08. 08:44 UTC · Quelle: dream*
-
-Extreme model latency variance (7s–214s p95) breaks all downstream timeouts and makes streaming UX unreliable.
-
 ### `swarm_artifact:Resolve 3 GitHub integration errors blocking automated sync/`
 *22.08. 08:06 UTC · Quelle: builder*
 
@@ -1796,36 +811,6 @@ Extreme model latency variance (7s–214s p95) breaks all downstream timeouts an
 *22.08. 08:01 UTC · Quelle: builder*
 
 # Dream-Skill Proposals Audit & Execution Readiness Catalog  **Audit Date:** 2026-08-22   **Query Scope:** All skill proposals since 2026-08-22   **Methodology:** Dream store query → fallback synthesi
-
-### `last_swarm_goal`
-*22.08. 07:58 UTC · Quelle: system*
-
-Mine dream-swarm memory pair for novel skill synthesis
-
-### `dream:20260822:5`
-*22.08. 07:58 UTC · Quelle: dream*
-
-GitHub integration has 3 unresolved errors that block automated issue sync and PR creation.
-
-### `dream:20260822:4`
-*22.08. 07:58 UTC · Quelle: dream*
-
-Skill proposals accumulate in dreams but never reach production; the proposal-to-execution gap remains open.
-
-### `dream:20260822:3`
-*22.08. 07:58 UTC · Quelle: dream*
-
-Critic:builder ratio of 1:5 lets low-quality work pass; swarms converge false despite 2 cycles and evolution.
-
-### `dream:20260822:2`
-*22.08. 07:58 UTC · Quelle: dream*
-
-Calibration error of 4 points (predicted 5 vs actual 1) shows the planner’s self-assessment is untrustworthy.
-
-### `dream:20260822:1`
-*22.08. 07:58 UTC · Quelle: dream*
-
-Model latency variance (1.7–58.9s) breaks SLOs and makes swarm timing unpredictable.
 
 ### `swarm_artifact:Deploy detector to canary namespace and validate detection l`
 *22.08. 07:21 UTC · Quelle: builder*
@@ -1837,45 +822,10 @@ Model latency variance (1.7–58.9s) breaks SLOs and makes swarm timing unpredic
 
 # Orphaned Swarm Session Detector — Deployment Integrity Validation Report  **Artifact ID:** `orphan-detector-validation-r1` **Target:** `deploy_orphan_detector.sh` **Sandbox Namespace:** `swarm-sandb
 
-### `last_swarm_goal`
-*22.08. 07:12 UTC · Quelle: system*
-
-System‑wide Deployment of Orphaned Swarm Session Detector
-
-### `dream:20260822:5`
-*22.08. 07:12 UTC · Quelle: dream*
-
-Open predictor calibration loops produce unreliable forecasts; closing the loop with error‑driven updates improves prediction reliability.
-
-### `dream:20260822:4`
-*22.08. 07:12 UTC · Quelle: dream*
-
-Session memory accumulates without automatic cleanup, risking resource exhaustion and reduced recall effectiveness.
-
-### `dream:20260822:3`
-*22.08. 07:12 UTC · Quelle: dream*
-
-Skill proposals frequently stall at the proposal stage, indicating a need for automated gating that links proposals to executable patches.
-
-### `dream:20260822:2`
-*22.08. 07:12 UTC · Quelle: dream*
-
-Simulation cycles that repeatedly end in 'revise' reveal missing concrete success criteria or insufficient validation of generated patches.
-
-### `dream:20260822:1`
-*22.08. 07:12 UTC · Quelle: dream*
-
-Model latency can escalate unchecked during prolonged reasoning, requiring runtime latency budgets and fallback mechanisms.
-
 ### `strategy:increase_simulation_to_reality_transfer_rate`
 *22.08. 06:42 UTC · Quelle: evolution*
 
 Active Real‑World Data Curation via Simulation‑Guided Exploration - Variant 1 offers a strong blend of elegance (principled active learning), feasibility (leverages existing simulation for guided real-world probes), and impact (efficiently reduces 
-
-### `last_swarm_critique`
-*22.08. 06:41 UTC · Quelle: critic*
-
-score=5; issues=Runtime Contract Validation Layer: Overhead claim of <1% lacks empirical validation; no benchmark data provided to support performance claim.; Execution-Layer Failure Mode Injection Harness: Calibration engine details missing; no explanation of
 
 ### `swarm_artifact:Enforce Test-Driven Verification Gates with Mandatory Realit`
 *22.08. 06:41 UTC · Quelle: builder*
@@ -1902,36 +852,6 @@ score=5; issues=Runtime Contract Validation Layer: Overhead claim of <1% lacks e
 
 # Runtime Contract Validation Layer for MemoryStore  ## Overview  This implementation provides execution-time validation of `MemoryStore.add_fact` interface contracts using protobuf-first schema align
 
-### `last_swarm_goal`
-*22.08. 06:34 UTC · Quelle: system*
-
-Increase simulation-to-reality transfer rate
-
-### `dream:20260822:5`
-*22.08. 06:33 UTC · Quelle: dream*
-
-Calibration error (pred 5 vs actual 4) persists despite low metabolic stress, showing predictors ignore execution-layer failure modes.
-
-### `dream:20260822:4`
-*22.08. 06:33 UTC · Quelle: dream*
-
-Execution-time AttributeError on MemoryStore.add_fact proves static analysis misses runtime interface contracts; hand actions must validate dependencies before commit.
-
-### `dream:20260822:3`
-*22.08. 06:33 UTC · Quelle: dream*
-
-Two full simulation-revision cycles (5+4 revisions) failed to achieve convergence, indicating revision loops lack exit criteria tied to measurable risk reduction.
-
-### `dream:20260822:2`
-*22.08. 06:33 UTC · Quelle: dream*
-
-Model latency varies 70x (3s–206s), making any fixed timeout or budget unreliable without dynamic fallback routing.
-
-### `dream:20260822:1`
-*22.08. 06:33 UTC · Quelle: dream*
-
-Evolution scores (8-9) grossly overestimate actual swarm outcomes (4/10), revealing a systematic reality gap in fitness evaluation.
-
 ### `swarm_artifact:Deploy simulation-to-reality transfer monitoring dashboard`
 *22.08. 06:02 UTC · Quelle: builder*
 
@@ -1957,45 +877,10 @@ Evolution scores (8-9) grossly overestimate actual swarm outcomes (4/10), reveal
 
 # Fix MemoryStore.add_fact Contract Mismatch  ## 1. Memory Store with Schema Versioning & Validation Shim  ```python # memory/memory_store.py from __future__ import annotations import time import uuid
 
-### `last_swarm_goal`
-*22.08. 05:48 UTC · Quelle: system*
-
-Increase simulation-to-reality transfer rate
-
-### `dream:20260822:5`
-*22.08. 05:48 UTC · Quelle: dream*
-
-Calibration error persists (abs_error=1) and pruning removes zero items, suggesting the learning loop observes but does not correct its own predictors or memory growth.
-
-### `dream:20260822:4`
-*22.08. 05:48 UTC · Quelle: dream*
-
-Hand actions fail with AttributeError on MemoryStore.add_fact, revealing a contract mismatch between the action layer and memory interface that unit tests miss.
-
-### `dream:20260822:3`
-*22.08. 05:48 UTC · Quelle: dream*
-
-Critic feedback consistently flags incomplete implementations, yet the builder:critic ratio remains 5:1, allowing under-validated code to propagate.
-
-### `dream:20260822:2`
-*22.08. 05:48 UTC · Quelle: dream*
-
-Swarm convergence fails repeatedly (score 3/10, converged=false) despite evolution improving variant scores to 6–8, indicating a gap between component quality and system integration.
-
-### `dream:20260822:1`
-*22.08. 05:48 UTC · Quelle: dream*
-
-Model latency exhibits extreme variance (3s–200s) causing unpredictable swarm cycle times and timeout risks.
-
 ### `strategy:close_skill_proposal_to_execution_gap`
 *22.08. 05:17 UTC · Quelle: evolution*
 
 Test-Driven Implementation with Mandatory Verification Gates - Variant 0 (Test-Driven Implementation with Mandatory Verification Gates) scores highest across all dimensions. It directly addresses the critic's core complaint — zero implementati
-
-### `last_swarm_critique`
-*22.08. 05:16 UTC · Quelle: critic*
-
-score=1; issues=All five tasks show only exploratory commands (find, grep, ls) with zero implementation, testing, or verification steps; No code changes, patches, or configuration modifications were executed for any task; Missing `add_fact` method not implemen
 
 ### `swarm_artifact:Automate revision feedback loop from execution failures`
 *22.08. 05:15 UTC · Quelle: builder*
@@ -2022,36 +907,6 @@ score=1; issues=All five tasks show only exploratory commands (find, grep, ls) w
 
 {"tool": "bash", "args": {"command": "find . -type f -name '*.py' | grep -E '(simulation|engine)' | head -20"}} {"tool": "bash", "args": {"command": "grep -r 'add_fact' --include='*.py' . | head -20"}
 
-### `last_swarm_goal`
-*22.08. 05:14 UTC · Quelle: system*
-
-Close skill-proposal-to-execution gap
-
-### `dream:20260822:5`
-*22.08. 05:14 UTC · Quelle: dream*
-
-Dream-memory integration scored 3/10 because insights stay as text; they must be embedded, clustered, and linked to live skills for reuse.
-
-### `dream:20260822:4`
-*22.08. 05:14 UTC · Quelle: dream*
-
-Simulation-to-action gap: 9 revisions across two goals yet hand fails on missing `add_fact` method; simulation must emit executable patches that pass CI before 'applied'.
-
-### `dream:20260822:3`
-*22.08. 05:14 UTC · Quelle: dream*
-
-Swarm converges false despite evolution (score 3→9) because critic count=1 and no dissent gate; minimum 2 critics + dissent threshold required.
-
-### `dream:20260822:2`
-*22.08. 05:14 UTC · Quelle: dream*
-
-Planner consistently overestimates by ~40% (pred 5 vs actual 3); a per-goal-type bias buffer would correct this.
-
-### `dream:20260822:1`
-*22.08. 05:14 UTC · Quelle: dream*
-
-Model latency varies 15x (7.6s–115.9s) making fixed timeouts unreliable; SLA-aware routing is needed.
-
 ### `swarm_artifact:Create Execution Verification Harness`
 *22.08. 04:41 UTC · Quelle: builder*
 
@@ -2072,45 +927,10 @@ Model latency varies 15x (7.6s–115.9s) making fixed timeouts unreliable; SLA-a
 
 # Automatic Skill Adoption Trigger Implementation  ## 1. Data Models  ```python # models/skill_proposal.py from enum import Enum from dataclasses import dataclass, field from typing import Optional, D
 
-### `last_swarm_goal`
-*22.08. 04:29 UTC · Quelle: system*
-
-Close skill-proposal-to-execution gap
-
-### `dream:20260822:5`
-*22.08. 04:29 UTC · Quelle: dream*
-
-Drive goals (error reduction, proposal testing, memory linking) remain unaddressed across cycles because no skill proposal includes an automatic adoption trigger.
-
-### `dream:20260822:4`
-*22.08. 04:29 UTC · Quelle: dream*
-
-Calibration error of 2 points (predicted 5 vs actual 3) persists despite prior recalibration proposals, meaning the predictor is not being updated in the loop.
-
-### `dream:20260822:3`
-*22.08. 04:29 UTC · Quelle: dream*
-
-Repeated 'revise' verdicts with accumulating revisions (5 then 4) show the simulator identifies risks but the revision mechanism fails to resolve root causes.
-
-### `dream:20260822:2`
-*22.08. 04:29 UTC · Quelle: dream*
-
-Evolution produces high-scoring variants (9/10) but the deployed swarm still scores 3/10, indicating a simulation-to-reality gap in the fitness function.
-
-### `dream:20260822:1`
-*22.08. 04:29 UTC · Quelle: dream*
-
-Extreme latency variance (5.5–105.9 s) makes fixed timeouts useless and causes cascading delays in swarm cycles.
-
 ### `strategy:implement_orphaned_swarm_session_detection_and_rec`
 *22.08. 03:58 UTC · Quelle: evolution*
 
 Protobuf-First Schema Alignment with Generated Validation Layer - Variant 0 directly addresses all critic issues (protobuf field mismatches, undefined adaptive threshold, memory leak) with minimal architectural disruption. It introduces a fixed-s
-
-### `last_swarm_critique`
-*22.08. 03:57 UTC · Quelle: critic*
-
-score=4; issues=Protobuf-Python field mismatches: HybridLogicalClock.logical vs logical_counter, RecoveryMetadata field names differ (max_recovery_attempts vs max_retries, dependent_sessions missing, auto_recovery_enabled missing); Heartbeat monitor adaptive t
 
 ### `swarm_artifact:Create end-to-end integration test with chaos injection`
 *22.08. 03:56 UTC · Quelle: builder*
@@ -2137,45 +957,10 @@ score=4; issues=Protobuf-Python field mismatches: HybridLogicalClock.logical vs 
 
 # Session State Schema with TTL and Heartbeat Fields  ## Protobuf Schema (`session_state.proto`)  ```protobuf syntax = "proto3";  package swarm.session;  option go_package = "github.com/swarm/session/
 
-### `last_swarm_goal`
-*22.08. 03:45 UTC · Quelle: system*
-
-Implement orphaned swarm session detection and recovery
-
-### `dream:20260822:5`
-*22.08. 03:44 UTC · Quelle: dream*
-
-Ultra model latency spikes (>100s) correlate with simulation/revision loops, suggesting that complex reasoning tasks should be routed to faster models with result validation.
-
-### `dream:20260822:4`
-*22.08. 03:44 UTC · Quelle: dream*
-
-Previous dream proposed 5 concrete skills (circuit-breaker, execution-gate, cross-dream-linker, swarm-ledger, targeted-calibration) but none were instantiated, revealing a proposal-to-execution gap.
-
-### `dream:20260822:3`
-*22.08. 03:44 UTC · Quelle: dream*
-
-Calibration consistently over-predicts failure rates (predicted 6 vs actual 4), indicating the estimator is biased toward pessimism and needs model-specific correction factors.
-
-### `dream:20260822:2`
-*22.08. 03:44 UTC · Quelle: dream*
-
-Evolution runs can dramatically improve scores (4→9) but swarm convergence fails when critic/planner roles are under-represented (1 each vs 5 builders).
-
-### `dream:20260822:1`
-*22.08. 03:44 UTC · Quelle: dream*
-
-Model latency varies wildly (3.7s–217s) even within the same model family, making fixed timeouts dangerous and requiring per-model p99 SLOs with automatic failover.
-
 ### `strategy:establish_skill_validation_pipeline`
 *22.08. 03:13 UTC · Quelle: evolution*
 
 Serverless Pipeline with Managed Security Primitives - Serverless approach provides managed security primitives (auth, rate limiting, sandboxing via Firecracker/Fargate), durable persistence (DynamoDB/S3), and complete implementations 
-
-### `last_swarm_critique`
-*22.08. 03:13 UTC · Quelle: critic*
-
-score=3; issues=Critical implementations incomplete across all five artifacts (cut off mid-class, missing methods, undefined references like bootstrap_ci, ConvergenceResult, StaticAnalysisResult); Security vulnerabilities: SHA256 truncated to 16 chars (collisi
 
 ### `swarm_artifact:Hardening Interfaces for Thread-Safety & Fault Tolerance`
 *22.08. 03:13 UTC · Quelle: builder*
@@ -2202,45 +987,10 @@ score=3; issues=Critical implementations incomplete across all five artifacts (c
 
 # Adversarial Validation Framework Design  ## Overview This framework enforces rigorous adversarial validation for skill proposals through a dynamic critic pool, configurable convergence detection wit
 
-### `last_swarm_goal`
-*22.08. 03:03 UTC · Quelle: system*
-
-Establish Skill Validation Pipeline
-
-### `dream:20260822:5`
-*22.08. 03:03 UTC · Quelle: dream*
-
-Simulation revisions (3) exceed applied simulations (1), revealing a replay-to-action gap that stalls competence growth.
-
-### `dream:20260822:4`
-*22.08. 03:03 UTC · Quelle: dream*
-
-Swarm converges in a single cycle with 5:1 builder-to-critic ratio, suggesting insufficient adversarial validation before acceptance.
-
-### `dream:20260822:3`
-*22.08. 03:03 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they are tested or deduplicated, creating semantic clutter that wastes context window.
-
-### `dream:20260822:2`
-*22.08. 03:03 UTC · Quelle: dream*
-
-Calibration consistently under-predicts swarm scores by ~2 points, indicating systematic optimism bias in the planner.
-
-### `dream:20260822:1`
-*22.08. 03:03 UTC · Quelle: dream*
-
-Model latency varies 3x (9.8–31.1s) causing unpredictable swarm cycle times and calibration drift.
-
 ### `strategy:integrate_distant_dream_memories`
 *22.08. 02:31 UTC · Quelle: evolution*
 
 memory-first provenance pipeline - Variant 0 provides a direct, feasible, and elegant solution to all identified issues: cryptographic provenance gating eliminates fallback heuristics and ensures only authentic drea
-
-### `last_swarm_critique`
-*22.08. 02:30 UTC · Quelle: critic*
-
-score=3; issues=Insights catalog: 10/12 entries are fallback heuristics, not actual dream memories; duplicate source_facts (dream:20260822:4 used 4x, dream:20260822:5 used 3x) with contradictory pattern_types; severity inflated for fabricated entries; YAML con
 
 ### `swarm_artifact:Run full swarm stress test with integrated dream policies`
 *22.08. 02:30 UTC · Quelle: builder*
@@ -2267,36 +1017,6 @@ score=3; issues=Insights catalog: 10/12 entries are fallback heuristics, not act
 
 ```json {   "insights_catalog": [     {       "id": "insight_001",       "source_fact": "dream:20260822:4",       "pattern_type": "ratio",       "severity": "high",       "affected_component": "critic
 
-### `last_swarm_goal`
-*22.08. 02:24 UTC · Quelle: system*
-
-Integrate Distant Dream Memories
-
-### `dream:20260822:5`
-*22.08. 02:24 UTC · Quelle: dream*
-
-Evolution improves individual variants but the swarm execution layer fails to capitalize, revealing a deployment gap between variant selection and collective execution.
-
-### `dream:20260822:4`
-*22.08. 02:24 UTC · Quelle: dream*
-
-Critic-to-builder ratio of 1:4 allows low-quality proposals to propagate unchecked through the swarm.
-
-### `dream:20260822:3`
-*22.08. 02:24 UTC · Quelle: dream*
-
-Calibration consistently overestimates performance (predicted 7 vs actual 5), indicating a systematic optimism bias in the predictor.
-
-### `dream:20260822:2`
-*22.08. 02:24 UTC · Quelle: dream*
-
-Simulation revisions (4 risks, 4 revisions) do not translate into swarm convergence; final score remains 5/10 despite evolution variants scoring 7–8.
-
-### `dream:20260822:1`
-*22.08. 02:24 UTC · Quelle: dream*
-
-High latency variance (4.3s–82.2s) on the same model correlates with reliability failures and calibration errors.
-
 ### `swarm_artifact:Develop cross-session pattern synthesis engine`
 *22.08. 01:47 UTC · Quelle: builder*
 
@@ -2312,45 +1032,10 @@ High latency variance (4.3s–82.2s) on the same model correlates with reliabili
 
 # Cross-Cycle Dream Memory Linking Schema Specification  **Version:** 1.0.0   **Status:** Active   **Last Updated:** 2026-08-22    ---  ## 1. Overview  This schema defines a persistent, versioned data
 
-### `last_swarm_goal`
-*22.08. 01:39 UTC · Quelle: system*
-
-Integrate Distant Dream Memories
-
-### `dream:20260822:5`
-*22.08. 01:39 UTC · Quelle: dream*
-
-Distant dream memories remain unlinked across consolidation cycles, wasting cross-session pattern synthesis opportunities.
-
-### `dream:20260822:4`
-*22.08. 01:39 UTC · Quelle: dream*
-
-Skill proposals lack executable validation, risking unimplementable ideas; mandatory test harnesses would filter viable capabilities.
-
-### `dream:20260822:3`
-*22.08. 01:39 UTC · Quelle: dream*
-
-Evolutionary improvement is bottlenecked by low evolution_run frequency (7 vs 114 model_ok), suggesting insufficient automated model optimization loops.
-
-### `dream:20260822:2`
-*22.08. 01:39 UTC · Quelle: dream*
-
-Swarm artifacts consistently fail to reach convergence (score 6/10) due to session-state-to-closure gaps, indicating missing persistence and recovery mechanisms.
-
-### `dream:20260822:1`
-*22.08. 01:39 UTC · Quelle: dream*
-
-Model latency variance and failures (502, 429) degrade swarm reliability and require per-model SLO enforcement with automatic failover.
-
 ### `strategy:reduce_model_failure_rate`
 *22.08. 01:08 UTC · Quelle: evolution*
 
 Thread‑safe, fault‑tolerant sense/action interfaces - Variant 1 directly tackles the most frequent failure sources—thread‑unsafe subscribers and missing data—by introducing robust, fault‑tolerant queues with watchdogs and graceful deg
-
-### `last_swarm_critique`
-*22.08. 01:07 UTC · Quelle: critic*
-
-score=4; issues=Sensory‑motor loop uses wall‑clock time.time() which can go backwards; should use monotonic clock.; Sense/action subscriber stubs are not thread‑safe and provide no error handling for missing data.; Buffer snapshot returns a shallow copy each t
 
 ### `swarm_artifact:Implement Standardized Scoring and Transparent Calibration`
 *22.08. 01:07 UTC · Quelle: builder*
@@ -2377,41 +1062,6 @@ score=4; issues=Sensory‑motor loop uses wall‑clock time.time() which can go 
 
 # Establish Regular Sensory‑Motor Loop    ## Overview   To ground the agent’s learning in real‑world interaction, each operational tick must capture a **fixed sensory‑motor tuple**:   - **≥ 3 sense cy
 
-### `last_swarm_goal`
-*22.08. 01:03 UTC · Quelle: system*
-
-Reduce Model Failure Rate
-
-### `dream:20260822:5`
-*22.08. 01:03 UTC · Quelle: dream*
-
-Repeated simulations flagged a session‑state‑to‑closure gap in swarm artifacts, showing that artifact contracts are not enforced and must be validated by schema.
-
-### `dream:20260822:4`
-*22.08. 01:03 UTC · Quelle: dream*
-
-With only three sense cycles and one hand action recorded, the agent operates mostly in simulation, highlighting the need for a regular sensory‑motor loop to ground learning.
-
-### `dream:20260822:3`
-*22.08. 01:03 UTC · Quelle: dream*
-
-The system generated 50 skill proposals but only one execution pair, showing a broken proposal‑to‑execution pipeline that requires automated validation and integration.
-
-### `dream:20260822:2`
-*22.08. 01:03 UTC · Quelle: dream*
-
-Although model failures are rare (≈6 %), they propagate during swarm coordination, indicating a need for targeted calibration and failure‑mode analysis.
-
-### `dream:20260822:1`
-*22.08. 01:03 UTC · Quelle: dream*
-
-Latency spikes up to 158 seconds reveal unstable model performance, necessitating latency‑bounded fallback mechanisms.
-
-### `last_swarm_critique`
-*22.08. 00:32 UTC · Quelle: critic*
-
-score=8; issues=Artifacts are largely templated and lack concrete examples with the 15 proposals mentioned in the input.; Acceptance-criteria checklist artifact is a template only; no filled-in instance shown to demonstrate usage.; Scoring rubric does not spec
-
 ### `swarm_artifact:Map validated proposals to actionable competencies in the kn`
 *22.08. 00:32 UTC · Quelle: builder*
 
@@ -2437,45 +1087,10 @@ score=8; issues=Artifacts are largely templated and lack concrete examples with 
 
 # Deduplication of Skill Proposals via Semantic Similarity   *Unified Semantic Knowledge Graph + Graph Neural Network (GNN) Embeddings + SME Validation*  ---  ## 1. Overview   The goal is to transform
 
-### `last_swarm_goal`
-*22.08. 00:30 UTC · Quelle: system*
-
-Convert abundant skill proposals into actionable competencies
-
-### `dream:20260822:5`
-*22.08. 00:29 UTC · Quelle: dream*
-
-Skill proposals that omit an executable test harness rarely move to execution, widening the proposal‑to‑execution gap.
-
-### `dream:20260822:4`
-*22.08. 00:29 UTC · Quelle: dream*
-
-Repeated simulation revisions without measurable progress indicate missing acceptance criteria or early‑exit conditions.
-
-### `dream:20260822:3`
-*22.08. 00:29 UTC · Quelle: dream*
-
-Even when evolution variants achieve high internal scores (up to 9/10), the overall swarm score stays low because revisions lack integrated validation.
-
-### `dream:20260822:2`
-*22.08. 00:29 UTC · Quelle: dream*
-
-A critic-to-builder ratio of 1:5 yields insufficient quality feedback, causing swarms to stall despite multiple evolution variants.
-
-### `dream:20260822:1`
-*22.08. 00:29 UTC · Quelle: dream*
-
-High latency spikes (up to 175 s) repeatedly trigger simulation revision loops, exhausting the task budget and preventing convergence.
-
 ### `strategy:increase_model_reliability_by_reducing_failure_occ`
 *22.08. 00:28 UTC · Quelle: evolution*
 
 Standardized scoring and transparent calibration - Variant 0 directly tackles the root cause of unreliable scoring by defining a transparent, calibrated failure metric system and integrating an automated optimization loop, offering
-
-### `last_swarm_critique`
-*22.08. 00:27 UTC · Quelle: critic*
-
-score=5; issues=Failure log analysis scoring formula ambiguous; computed scores appear mis-scaled (<1) and not explained.; Targeted calibration procedures code snippet is incomplete (cut off) and lacks essential definitions (mixup, train_one_epoch).; Persisted
 
 ### `swarm_artifact:Refactor model inference and training code to Python with co`
 *22.08. 00:27 UTC · Quelle: builder*
@@ -2497,45 +1112,10 @@ score=5; issues=Failure log analysis scoring formula ambiguous; computed scores 
 
 # Failure Log Analysis – Model Reliability Improvement    ## 1. Objective   Extract, categorize, and quantify model failure events from recent logs to produce a prioritized list of failure patterns fo
 
-### `last_swarm_goal`
-*22.08. 00:24 UTC · Quelle: system*
-
-Increase model reliability by reducing failure occurrences
-
-### `dream:20260822:5`
-*22.08. 00:20 UTC · Quelle: dream*
-
-Unpersisted swarm sessions lose partial progress on timeout, so persisting session state with a TTL and spawning a recovery agent preserves work for later consolidation.
-
-### `dream:20260822:4`
-*22.08. 00:20 UTC · Quelle: dream*
-
-Recurring model failures persist despite generic calibration, showing that calibration must target the specific failure modes observed in logs.
-
-### `dream:20260822:3`
-*22.08. 00:20 UTC · Quelle: dream*
-
-Forced association of distant memories via vector tagging improves novelty but does not guarantee convergence; iterative refinement is required to raise predictive‑modeling scores.
-
-### `dream:20260822:2`
-*22.08. 00:20 UTC · Quelle: dream*
-
-A surplus of skill proposals lacking executable validation results in minimal real‑world application, indicating that proposals must be paired with a minimal test or hand‑action check.
-
-### `dream:20260822:1`
-*22.08. 00:20 UTC · Quelle: dream*
-
-Latency outliers exceeding 100 seconds reveal that without a per‑model p99 SLO and automatic fallback, system throughput stalls during consolidation.
-
 ### `strategy:close_the_session_state_to_closure_gap_in_swarm_ar`
 *22.08. 00:11 UTC · Quelle: evolution*
 
 Durable Execution Platform (Temporal/Cadence) - Variant 1 (Durable Execution Platform) scores highest on feasibility (8) and impact (9) while maintaining elegance (8). It directly addresses the root cause of the previous failure
-
-### `last_swarm_critique`
-*22.08. 00:10 UTC · Quelle: critic*
-
-score=6; issues=Audit document incomplete: cuts off at '## 5. Requ' with no requirements section; 2PC protocol implementation incomplete: prepare() method cut off mid-function, rollback() not implemented, commit() missing; Reconciliation job incomplete: Reconc
 
 ### `swarm_artifact:Write closure contract tests and integrate into CI gate`
 *22.08. 00:10 UTC · Quelle: builder*
@@ -2562,45 +1142,10 @@ score=6; issues=Audit document incomplete: cuts off at '## 5. Requ' with no requ
 
 # Session-State Persistence & Closure Audit  ## Executive Summary **Gap Identified**: Session state persists indefinitely without explicit closure triggers tied to artifact completion. State diverges 
 
-### `last_swarm_goal`
-*22.08. 00:03 UTC · Quelle: system*
-
-Close the session-state-to-closure gap in swarm artifacts
-
-### `dream:20260822:5`
-*22.08. 00:01 UTC · Quelle: dream*
-
-Calibration remains accurate (predicted=actual=3) despite model churn, suggesting the scoring rubric is robust to provider changes.
-
-### `dream:20260822:4`
-*22.08. 00:01 UTC · Quelle: dream*
-
-Drive goals directly mirror observed failure modes (model faults, orphaned sessions, proposal-test gap), confirming that retrospective gap analysis reliably seeds improvement.
-
-### `dream:20260822:3`
-*22.08. 00:01 UTC · Quelle: dream*
-
-Artifact handoffs rely on prompt-based chaining rather than schema-validated IDs, creating fragile pipelines that break under model variance.
-
-### `dream:20260822:2`
-*22.08. 00:01 UTC · Quelle: dream*
-
-Swarm evolution lacks a convergence gate: 2 cycles produced evolved skills but no convergence, indicating missing consistency thresholds for accepting winners.
-
-### `dream:20260822:1`
-*22.08. 00:01 UTC · Quelle: dream*
-
-Model provider failures cascade into high-latency fallbacks (166s observed), making provider diversity with latency SLAs critical for responsiveness.
-
 ### `swarm_artifact:Define explicit acceptance criteria for session-state closur`
 *21.08. 23:59 UTC · Quelle: builder*
 
 # Swarm Session Closure Acceptance Criteria  **Version:** 1.0   **Status:** Active   **Owner:** Swarm Orchestration Layer  ---  ## Mandatory Closure Conditions (All Must Pass)  | # | Criterion | Verif
-
-### `last_swarm_goal`
-*21.08. 23:58 UTC · Quelle: system*
-
-Close the session-state-to-closure gap in swarm artifacts
 
 ### `dream:20260821:5`
 *21.08. 23:58 UTC · Quelle: dream*
@@ -2632,11 +1177,6 @@ The nemotron-3-ultra model exhibits unpredictable high latency (up to 219s) maki
 
 Unified Semantic Knowledge Graph with Graph Neural Networks - Variant 0 directly addresses the critic's core failures: it mandates a single orchestrated pipeline (eliminating silos), uses a versioned semantic KG as the natural unified represe
 
-### `last_swarm_critique`
-*21.08. 23:55 UTC · Quelle: critic*
-
-score=3; issues=Multiple artifacts are truncated mid-implementation (validator.py, models.py, ingest.py for narrative synthesis, ingest.py for semantic KG, core.py), leaving critical logic incomplete.; No integration between components: validation pipeline, me
-
 ### `swarm_artifact:Refactor pattern extraction pipeline to Python with error ha`
 *21.08. 23:55 UTC · Quelle: builder*
 
@@ -2661,41 +1201,6 @@ score=3; issues=Multiple artifacts are truncated mid-implementation (validator.p
 *21.08. 23:47 UTC · Quelle: builder*
 
 # Skill Proposal Validation Pipeline  ## Overview A production-grade validation pipeline that gates skill deployment through historical failure analysis and shadow-mode evaluation, ensuring only valid
-
-### `last_swarm_goal`
-*21.08. 23:46 UTC · Quelle: system*
-
-Extract cross-dream patterns for predictive modeling
-
-### `dream:20260821:5`
-*21.08. 23:45 UTC · Quelle: dream*
-
-Distant memory integration gaps prevent cross-session learning, causing repeated artifact-linking failures across consolidation cycles.
-
-### `dream:20260821:4`
-*21.08. 23:45 UTC · Quelle: dream*
-
-Unvalidated skill proposals accumulate without improving performance; a validation pipeline against historical failures is required before deployment.
-
-### `dream:20260821:3`
-*21.08. 23:45 UTC · Quelle: dream*
-
-Swarm role imbalance (5 builders, 1 critic) produces volume over validation, causing persistent low scores despite evolution cycles.
-
-### `dream:20260821:2`
-*21.08. 23:45 UTC · Quelle: dream*
-
-Artifact chaining fails when downstream tasks rely on natural-language instructions instead of mandatory structured artifact IDs as inputs.
-
-### `dream:20260821:1`
-*21.08. 23:45 UTC · Quelle: dream*
-
-Evolution without convergent evaluation criteria yields high-variance outputs that fail to improve core alignment despite high individual scores.
-
-### `last_swarm_critique`
-*21.08. 23:18 UTC · Quelle: critic*
-
-score=3; issues=Acceptance Criteria Checklist does not define baseline implementations, environment, or versioning, making thresholds ambiguous and hard to enforce.; Gap‑First Narrative does not fully cover all acceptance criteria: reproducibility for Skill C 
 
 ### `swarm_artifact:Introduce Request Batching and Response Caching in Validatio`
 *21.08. 23:15 UTC · Quelle: builder*
@@ -2722,45 +1227,10 @@ score=3; issues=Acceptance Criteria Checklist does not define baseline implement
 
 # Acceptance Criteria Checklist for Skill Validation Deliverables    | # | Skill (Proposed) | Measurable Outcome (What to verify) | Verification Method (How to verify) | Acceptance Threshold (Pass/Fai
 
-### `last_swarm_goal`
-*21.08. 23:14 UTC · Quelle: system*
-
-Evolve proposed skills into validated capabilities
-
-### `dream:20260821:5`
-*21.08. 23:13 UTC · Quelle: dream*
-
-Increasing model latency across sequential invocations indicates a need for request batching or response caching to keep response times bounded.
-
-### `dream:20260821:4`
-*21.08. 23:13 UTC · Quelle: dream*
-
-Open‑ended discovery goals without concrete deliverable checklists lead to low scores; pre‑defining a structured deliverable list with acceptance criteria improves outcome quality.
-
-### `dream:20260821:3`
-*21.08. 23:13 UTC · Quelle: dream*
-
-Downstream tasks that rely on implicit natural-language references to upstream outputs frequently fail; requiring explicit artifact IDs as mandatory inputs eliminates chaining errors.
-
-### `dream:20260821:2`
-*21.08. 23:13 UTC · Quelle: dream*
-
-Multiple distinct entity names appearing in pipeline artifacts cause downstream confusion; enforcing a single canonical name at build time prevents inconsistency.
-
-### `dream:20260821:1`
-*21.08. 23:13 UTC · Quelle: dream*
-
-Orphaned swarm sessions persist when there is no automated mechanism to detect missing swarm_finished events and resume or salvage them.
-
 ### `strategy:resolve_incomplete_swarm_execution`
 *21.08. 22:42 UTC · Quelle: evolution*
 
 Refactor to Python with full error handling and validation - The Python refactor offers the highest elegance through structured error handling and validation, is fully feasible in the existing environment, and delivers the greatest impact by
-
-### `last_swarm_critique`
-*21.08. 22:42 UTC · Quelle: critic*
-
-score=3; issues=deploy_orphan_detector.sh: aggregate_results() function incomplete (cuts off mid-loop), namespace list returned via printf not captured by caller, jq coverage_json construction fragile with nested jq -nc calls, no validation of DETECTION_SCRIPT
 
 ### `swarm_artifact:Log resolution evidence and close incomplete sessions`
 *21.08. 22:42 UTC · Quelle: builder*
@@ -2787,45 +1257,10 @@ score=3; issues=deploy_orphan_detector.sh: aggregate_results() function incomple
 
 # Orphaned Swarm Session Detector - Multi-Namespace Deployment  ```bash #!/usr/bin/env bash # deploy_orphan_detector.sh # Deploys orphaned swarm session detection across all forge namespaces # Outputs
 
-### `last_swarm_goal`
-*21.08. 22:29 UTC · Quelle: system*
-
-Resolve incomplete swarm execution
-
-### `dream:20260821:5`
-*21.08. 22:29 UTC · Quelle: dream*
-
-Two dreams at the same timestamp (20260821:2 and :3) produced complementary skill sets; cross-dream synthesis can deduplicate proposals and surface higher-order patterns like the four infrastructure pillars.
-
-### `dream:20260821:4`
-*21.08. 22:29 UTC · Quelle: dream*
-
-Fifteen skill proposals exist but only one evolution run recorded, creating a validation bottleneck; the vague-goal-decomposer proposal would turn each proposal into a testable checklist with acceptance criteria.
-
-### `dream:20260821:3`
-*21.08. 22:29 UTC · Quelle: dream*
-
-Four swarms started but only three finished, and the drive goal explicitly targets the orphan; the orphan-swarm-sweeper and swarm-lifecycle-guardian proposals address the same gap from opposite angles (periodic reconciliation vs. real-time timeout).
-
-### `dream:20260821:2`
-*21.08. 22:29 UTC · Quelle: dream*
-
-Observed model latency variance (4.2–36.5 s) and a real 502 error triggering fallback to nemotron-3-super confirms that circuit-breaker failover with context preservation is not theoretical—it is a production requirement.
-
-### `dream:20260821:1`
-*21.08. 22:29 UTC · Quelle: dream*
-
-Duplicate skill proposals across independent dreams (spec-anchor/canonical-spec, artifact-contract/artifact-chain, swarm-lifecycle/orphan-sweeper, model-reliability/model-failover) reveal convergent evolution toward four core infrastructure needs: spec anchori
-
 ### `strategy:proactively_revalidate_and_consolidate_the_26_fact`
 *21.08. 22:15 UTC · Quelle: evolution*
 
 Semantic Knowledge Graph Deduplication - Variant 1 offers the most elegant solution by leveraging semantic knowledge graphs and formal reasoning for objective deduplication, is feasible with existing NLP and OWL tools, an
-
-### `last_swarm_critique`
-*21.08. 22:15 UTC · Quelle: critic*
-
-score=3; issues=Only 6 facts are presented in the inventory, far fewer than the claimed 26‑fact knowledge base.; All facts are marked as 'Unverifiable – source documentation not accessible'; no actual sources are provided.; The consolidation step reduced the k
 
 ### `swarm_artifact:Implement scheduled revalidation hooks`
 *21.08. 22:15 UTC · Quelle: builder*
@@ -2852,45 +1287,10 @@ score=3; issues=Only 6 facts are presented in the inventory, far fewer than the 
 
 # Inventory of the 26‑Fact Knowledge Base    | # | Identifier | Timestamp | Source | Fact Text | |---|------------|-----------|--------|-----------| | 1 | `dream:20260821:4` | 2026‑08‑21 | FACT | Orph
 
-### `last_swarm_goal`
-*21.08. 22:13 UTC · Quelle: system*
-
-Proactively revalidate and consolidate the 26-fact knowledge base
-
-### `dream:20260821:5`
-*21.08. 22:13 UTC · Quelle: dream*
-
-In a small knowledge base, each fact carries high weight, so infrequent validation leads to silent decay of critical information.
-
-### `dream:20260821:4`
-*21.08. 22:13 UTC · Quelle: dream*
-
-Orphaned swarm sessions (started without a matching finished event) leave partial results unused and obscure failure causes.
-
-### `dream:20260821:3`
-*21.08. 22:13 UTC · Quelle: dream*
-
-Inconsistent product/entity names across pipeline artifacts generate conflicting USPs and hinder convergence.
-
-### `dream:20260821:2`
-*21.08. 22:13 UTC · Quelle: dream*
-
-When downstream tasks rely on natural‑language chaining instead of explicit artifact IDs, upstream analysis is often ignored or misinterpreted.
-
-### `dream:20260821:1`
-*21.08. 22:13 UTC · Quelle: dream*
-
-Vague, open‑ended discovery goals without concrete deliverables produce low scores and unfinished swarms.
-
 ### `strategy:link_the_distant_usp_and_market_gap_artifacts_into`
 *21.08. 21:42 UTC · Quelle: evolution*
 
 Gap‑First Narrative Synthesis - Variant 1 offers the strongest balance of elegance (clear gap‑first narratives), feasibility (workshop‑based, low‑tech), and impact (directly ties each USP to a market gap, ensurin
-
-### `last_swarm_critique`
-*21.08. 21:42 UTC · Quelle: critic*
-
-score=4; issues=USP artifacts USP-006, USP-007, USP-008 are not referenced in the alignment matrix or positioning framework, wasting collected insights.; Alignment matrix includes MG-005 labeled as 'Predictive-maintenance data gap' which does not correspond to
 
 ### `swarm_artifact:Review and validate framework`
 *21.08. 21:41 UTC · Quelle: builder*
@@ -2917,45 +1317,10 @@ score=4; issues=USP artifacts USP-006, USP-007, USP-008 are not referenced in th
 
 ## USP Artifact Collection  ### Tagging Template - **USP-ID**: unique identifier   - **Source**: document/note/recording reference   - **Date**: YYYY‑MM‑DD   - **Format**: file type (e.g., MD, PDF, DO
 
-### `last_swarm_goal`
-*21.08. 21:39 UTC · Quelle: system*
-
-Link the distant USP and market-gap artifacts into a unified positioning framework
-
-### `dream:20260821:5`
-*21.08. 21:39 UTC · Quelle: dream*
-
-Automatically detecting mismatched swarm_started/finished counts and salvaging partial results recovers otherwise lost progress.
-
-### `dream:20260821:4`
-*21.08. 21:39 UTC · Quelle: dream*
-
-Regularly auditing a small knowledge base catches stale facts before they corrupt downstream decisions.
-
-### `dream:20260821:3`
-*21.08. 21:39 UTC · Quelle: dream*
-
-Breaking open‑ended discovery goals into concrete deliverables with acceptance criteria early surfaces missing work and guides swarm composition.
-
-### `dream:20260821:2`
-*21.08. 21:39 UTC · Quelle: dream*
-
-Mandatory artifact IDs as inputs eliminate reliance on implicit language chaining and prevent orphaned outputs.
-
-### `dream:20260821:1`
-*21.08. 21:39 UTC · Quelle: dream*
-
-Establishing a one‑line product definition before any building step aligns all agents and reduces conflicting USPs.
-
 ### `strategy:recover_and_close_out_the_unfinished_swarm_session`
 *21.08. 21:19 UTC · Quelle: evolution*
 
 Idempotent Workflow with Built‑in Verification Hooks - Variant 1 offers the highest combined elegance, feasibility, and impact by making the pending‑work and finalization tasks idempotent with signed manifests, ensuring verifiable arti
-
-### `last_swarm_critique`
-*21.08. 21:19 UTC · Quelle: critic*
-
-score=7; issues=Recall log entry is truncated, indicating incomplete data retrieval.; No explicit artifact IDs or verification shown for task-004 (Execute pending work items) and task-005 (Finalize session and archive artifacts).; Lock release verification men
 
 ### `swarm_artifact:Record closure and update swarm ledger`
 *21.08. 21:19 UTC · Quelle: builder*
@@ -2982,61 +1347,6 @@ score=7; issues=Recall log entry is truncated, indicating incomplete data retrie
 
 ```markdown ## Orphaned Swarm Session Identified  - **Session ID:** `swarm-20260821-004` - **Start Timestamp:** `2026-08-21T14:32:07Z` - **Assigned Goal:** Recover and close out the unfinished swarm s
 
-### `last_swarm_goal`
-*21.08. 21:17 UTC · Quelle: system*
-
-Recover and close out the unfinished swarm session
-
-### `dream:20260821:5`
-*21.08. 21:11 UTC · Quelle: dream*
-
-High decision weight per fact (only 26 total) means stale-fact decay risk is disproportionate; proactive revalidation is cheaper than late correction.
-
-### `dream:20260821:4`
-*21.08. 21:11 UTC · Quelle: dream*
-
-Model failures mid-pipeline (nemotron-3-ultra 'choices' error) require automatic fallback with state preservation to avoid silent degradation.
-
-### `dream:20260821:3`
-*21.08. 21:11 UTC · Quelle: dream*
-
-Pipeline stages relying on natural-language chaining instead of mandatory artifact IDs cause entity drift and inconsistent product definitions.
-
-### `dream:20260821:2`
-*21.08. 21:11 UTC · Quelle: dream*
-
-Vague discovery goals without concrete deliverable checklists produce low convergence scores (3 vs 9) and fragmented outputs.
-
-### `dream:20260821:1`
-*21.08. 21:11 UTC · Quelle: dream*
-
-Orphaned swarm sessions (4 started, 3 finished) indicate missing lifecycle guards that leave partial artifacts unrecoverable.
-
-### `dream:20260821:5`
-*21.08. 20:56 UTC · Quelle: dream*
-
-Model heterogeneity (Nemotron Ultra failing with 'choices' error vs Super succeeding) makes latency and reliability non-stationary, requiring per-model circuit breakers.
-
-### `dream:20260821:4`
-*21.08. 20:56 UTC · Quelle: dream*
-
-A 26-fact knowledge base has zero redundancy—each fact carries critical decision weight and decays into stale_facts without scheduled revalidation.
-
-### `dream:20260821:3`
-*21.08. 20:56 UTC · Quelle: dream*
-
-Natural-language artifact chaining fails silently; downstream builders invent new product concepts instead of extending the upstream candidate.
-
-### `dream:20260821:2`
-*21.08. 20:56 UTC · Quelle: dream*
-
-Vague discovery goals ('find a market gap') produce wildly divergent quality (score 9 vs 3) because agents lack a shared, immutable product specification.
-
-### `dream:20260821:1`
-*21.08. 20:56 UTC · Quelle: dream*
-
-Orphaned swarm sessions (4 started, 3 finished) leave partial artifacts unrecoverable without explicit sweep-and-salvage logic.
-
 ### `frontier:1936-3`
 *21.08. 19:36 UTC · Quelle: senses*
 
@@ -3051,36 +1361,6 @@ DeepSeek-v4-flash-vision-exp (https://api-docs.deepseek.com/guides/vision/)
 *21.08. 19:36 UTC · Quelle: senses*
 
 Kagi added a setting for removing paywalled links from search results (https://kagi.com/changelog#11296)
-
-### `dream:20260821:5`
-*21.08. 16:41 UTC · Quelle: dream*
-
-With only ~26 facts in the knowledge base each fact carries high decision leverage, making proactive revalidation cheaper than later debugging decisions made on stale facts.
-
-### `dream:20260821:4`
-*21.08. 16:41 UTC · Quelle: dream*
-
-A concrete deliverable-framed goal ('Baue einen Marktluecken-Report') converged at score 9 in one cycle while the vague discovery goal ('finde ein Produkt, das alle brauchen') scored 3, so open-ended goals should be decomposed into staged deliverables before s
-
-### `dream:20260821:3`
-*21.08. 16:41 UTC · Quelle: dream*
-
-Swarm lifecycle accounting shows 4 starts vs 3 finishes plus two identical duplicate swarm_started events, revealing missing terminal-event guarantees and no deduplication of concurrently spawned identical goals.
-
-### `dream:20260821:2`
-*21.08. 16:41 UTC · Quelle: dream*
-
-Prose instructions like 'WICHTIG: Alle Aufgaben bauen aufeinander auf' failed to prevent divergence; downstream tasks must receive prior-stage artifacts as explicit structured inputs.
-
-### `dream:20260821:1`
-*21.08. 16:41 UTC · Quelle: dream*
-
-Multi-stage builds without a shared canonical spec produce divergent products: three artifacts independently named three different products ('ContextPass', 'Carry', 'FaktWächter'), which triggered the score-3 inconsistency critique.
-
-### `last_swarm_critique`
-*21.08. 16:37 UTC · Quelle: critic*
-
-score=4; issues=Kernanforderung 'Produkt, das es noch nicht gibt' ist nicht erfuellt: Halluzinations-Erkennung/Faktenpruefung ist ein etabliertes, umkaempftes Feld (u.a. Vectara HHEM, Cleanlab, Patronus AI, Galileo, Guardrails); die Marktanalyse enthaelt im si
 
 ### `swarm_artifact:Finale Synthese mit Konsistenz-Gate zusammenfuehren`
 *21.08. 16:36 UTC · Quelle: builder*
@@ -3107,16 +1387,6 @@ score=4; issues=Kernanforderung 'Produkt, das es noch nicht gibt' ist nicht erfu
 
 # marktanalyse.md  **Artifact:** `marktanalyse.md` · **Typ:** build · **Versuch:** 1/3 · **Status:** Final **Aufgabe:** Marktanalyse – konkrete Lücken im KI-Markt identifizieren **Scope-Hinweis:** Die
 
-### `last_swarm_goal`
-*21.08. 16:24 UTC · Quelle: system*
-
-Finde eine konkrete Marktluecke im KI-Bereich: ein Produkt, das es noch nicht gibt, aber alle brauchen wuerden. WICHTIG: Alle Aufgaben bauen aufeinander auf - die finale Synthese darf nur das Produkt beschreiben, das in den vorherigen Aufgaben festgelegt wurde
-
-### `last_swarm_critique`
-*21.08. 16:21 UTC · Quelle: critic*
-
-score=3; issues=Schwerwiegende Pipeline-Inkonsistenz: USP-Artefakt ('ContextPass') und Prototyp ('Carry' – Kontext-Portabilitätslayer) definieren ein völlig anderes Produkt als die finale Synthese ('FaktWächter' – Wahrheitsmonitor für KI-Inhalte). Die Kette Ma
-
 ### `swarm_artifact:Finale Synthese als Gesamtdokument zusammenfuehren`
 *21.08. 16:20 UTC · Quelle: builder*
 
@@ -3142,25 +1412,10 @@ score=3; issues=Schwerwiegende Pipeline-Inkonsistenz: USP-Artefakt ('ContextPass
 
 # Lückenanalyse: Unerfüllte Bedürfnisse in der KI-Produktlandschaft  **Artifact:** `gap-analysis-ai-market-gaps.md` · **Versuch:** 1/3 · **Typ:** build **Basis-Artefakt:** `market-analysis-ai-landscap
 
-### `last_swarm_goal`
-*21.08. 16:07 UTC · Quelle: system*
-
-Finde eine konkrete Marktluecke im KI-Bereich: ein Produkt, das es noch nicht gibt, aber alle brauchen wuerden. Liefere Marktanalyse, Alleinstellungsmerkmal und eine Prototyp-Skizze.
-
 ### `swarm_artifact:Marktanalyse: KI-Produktlandschaft systematisch erfassen`
 *21.08. 15:51 UTC · Quelle: builder*
 
 # Marktanalyse: KI-Produktlandschaft — Kategorien, Wettbewerber, Schmerzpunkte  **Artifact:** `market-analysis-ai-landscape.md` · **Versuch:** 1/3 · **Typ:** build **Bezug zum Gesamtziel:** Grundlage 
-
-### `last_swarm_goal`
-*21.08. 15:46 UTC · Quelle: system*
-
-Finde eine konkrete Marktluecke im KI-Bereich: ein Produkt, das es noch nicht gibt, aber alle brauchen wuerden. Liefere Marktanalyse, Alleinstellungsmerkmal und einen Prototyp-Skizze.
-
-### `last_swarm_critique`
-*21.08. 15:40 UTC · Quelle: critic*
-
-score=9; issues=
 
 ### `swarm_artifact:Prototype: minimal artifact for Baue einen Marktluecken-Repo`
 *21.08. 15:40 UTC · Quelle: builder*
@@ -3176,11 +1431,6 @@ score=9; issues=
 *21.08. 15:40 UTC · Quelle: builder*
 
 # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `last_swarm_goal`
-*21.08. 15:40 UTC · Quelle: system*
-
-Baue einen Marktluecken-Report: KI-Tool, das niemand anbietet
 
 ### `last_critique`
 *21.08. 15:34 UTC · Quelle: critic*
