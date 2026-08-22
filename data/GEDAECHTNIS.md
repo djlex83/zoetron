@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**585 Fakten** · Stand 2026-08-22 20:03 UTC · aktualisiert bei jedem Herzschlag
+**590 Fakten** · Stand 2026-08-22 20:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 241
+- **dream:** 246
 - **swarm_artifact:** 202
 - **last_swarm_goal:** 48
 - **last_swarm_critique:** 36
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 20:24 UTC · Quelle: dream*
+
+The CI-Pipeline repair goal repeats with score 4 and converged=false, indicating that simulation verdicts must directly trigger pipeline fixes rather than remaining isolated revision cycles.
+
+### `dream:20260822:4`
+*22.08. 20:24 UTC · Quelle: dream*
+
+Model latency spikes >30s on both super-120b and ultra-550b are non-deterministic; wrapping calls with retry+fallback and alerting these spikes prevents cascading timeouts and hand-action failures.
+
+### `dream:20260822:3`
+*22.08. 20:24 UTC · Quelle: dream*
+
+MemoryStore contract violations (e.g., AttributeError: 'MemoryStore' object has no attribute 'add_fact') are preventable at process init and before hand-action batches via a contract validator that fails fast with method-list diffs.
+
+### `dream:20260822:2`
+*22.08. 20:24 UTC · Quelle: dream*
+
+A rolling MAE of predicted vs actual simulation goals (abs_error=2 observed) systematically biases reward shaping; shrinking simulation weight when MAE>1.5 prevents feedback drift.
+
+### `dream:20260822:1`
+*22.08. 20:24 UTC · Quelle: dream*
+
+Simulation revision loops without an evolution gate yield 3 revisions, "revise" verdict, score 4, and non-convergence across 2 swarm cycles, exposing a missing threshold for auto-escalation.
 
 ### `last_swarm_critique`
 *22.08. 20:02 UTC · Quelle: critic*
