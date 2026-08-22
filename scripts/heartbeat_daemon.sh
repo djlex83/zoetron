@@ -77,6 +77,7 @@ PYEOF
 
   log "phase: graph"
   $PY src/zoetron/graph.py >> "$LOG" 2>&1 || log "graph-fehler"
+  cp data/graph_view.html docs/graph.html 2>/dev/null || true
 
   log "phase: wiki-sync"
   bash scripts/wiki_sync.sh
