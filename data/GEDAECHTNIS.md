@@ -1,18 +1,83 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**284 Fakten** · Stand 2026-08-22 08:13 UTC · aktualisiert bei jedem Herzschlag
+**297 Fakten** · Stand 2026-08-22 08:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 115
-- **swarm_artifact:** 105
-- **last_swarm_goal:** 25
-- **last_swarm_critique:** 18
-- **strategy:** 13
+- **dream:** 120
+- **swarm_artifact:** 110
+- **last_swarm_goal:** 26
+- **last_swarm_critique:** 19
+- **strategy:** 14
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:increase_sensorimotor_loop_throughput`
+*22.08. 08:54 UTC · Quelle: evolution*
+
+Redesign MemoryStore as a bounded, self‑pruning ring buffer with weak‑reference tracking - Variant 0 provides a bounded, self‑pruning ring buffer with weak‑reference tracking that eliminates memory leaks, ensures deterministic memory usage, and directly boosts
+
+### `last_swarm_critique`
+*22.08. 08:53 UTC · Quelle: critic*
+
+score=6; issues=MemoryStore: missing _prune_if_needed method implementation; heap cleanup logic incomplete/truncated, risking memory leaks.; MemoryStore: audit logger configuration may add duplicate handlers on multiple instantiations; should check for existin
+
+### `swarm_artifact:Implement test-driven verification gates for sensorimotor lo`
+*22.08. 08:53 UTC · Quelle: builder*
+
+# Test‑Driven Verification Gates for Sensorimotor Loop    **Goal:** Ensure every change to the sensorimotor loop improves overall throughput while preventing regressions in individual stages.    ---  
+
+### `swarm_artifact:Align protobuf schemas with generated validation layer`
+*22.08. 08:51 UTC · Quelle: builder*
+
+# Protobuf Schema Alignment & Compile‑Time Validation Layer    ## Goal   Regenerate all `.proto` files from a **single source of truth**, embed **compile‑time validation** for field mismatches, wire t
+
+### `swarm_artifact:Deploy calibration feedback loop for role score correction`
+*22.08. 08:50 UTC · Quelle: builder*
+
+# Calibration Feedback Loop for Role Score Correction    ## Overview   A closed‑loop mechanism that, after each swarm execution, compares predicted role scores with observed scores, updates per‑role c
+
+### `swarm_artifact:Build skill proposal-to-production promotion pipeline`
+*22.08. 08:49 UTC · Quelle: builder*
+
+# Skill Proposal‑to‑Production Promotion Pipeline    **Goal:** Increase sensorimotor loop throughput by automatically promoting high‑impact skill proposals to production after rigorous validation.    
+
+### `swarm_artifact:Implement memory retention policy with automated pruning`
+*22.08. 08:48 UTC · Quelle: builder*
+
+```markdown # Memory Retention Policy Implementation  ## Overview This module provides a thread‑safe in‑memory store that: - Assigns each fact/event a **timestamp**, an **importance score**, and an **
+
+### `last_swarm_goal`
+*22.08. 08:46 UTC · Quelle: system*
+
+Increase sensorimotor loop throughput
+
+### `dream:20260822:5`
+*22.08. 08:44 UTC · Quelle: dream*
+
+45 skill proposals exist but none auto-promote; the proposal-to-production pipeline is absent, causing perpetual proposal limbo.
+
+### `dream:20260822:4`
+*22.08. 08:44 UTC · Quelle: dream*
+
+Zero facts/events pruned across multiple cycles indicates memory bloat risk and missing retention policy enforcement.
+
+### `dream:20260822:3`
+*22.08. 08:44 UTC · Quelle: dream*
+
+Simulation consistently predicts high revision counts (4–5) yet actual execution still scores 1/10, revealing a systematic simulation-to-reality gap.
+
+### `dream:20260822:2`
+*22.08. 08:44 UTC · Quelle: dream*
+
+Swarm convergence fails repeatedly with 1:5 critic:builder ratio; insufficient critical scrutiny lets flawed plans proceed.
+
+### `dream:20260822:1`
+*22.08. 08:44 UTC · Quelle: dream*
+
+Extreme model latency variance (7s–214s p95) breaks all downstream timeouts and makes streaming UX unreliable.
 
 ### `swarm_artifact:Resolve 3 GitHub integration errors blocking automated sync/`
 *22.08. 08:06 UTC · Quelle: builder*
