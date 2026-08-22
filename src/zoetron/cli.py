@@ -186,6 +186,38 @@ def main(argv: list[str] | None = None) -> int:
         mem.add_event("act_done", {"goal_title": goal,
                                    "score": report.get("score"),
                                    "converged": report.get("converged")})
+        # HANDS im Kreislauf: Ausfuehrbaren Code aus den Artefakten
+        # ziehen und in der Sandbox wirklich ausfuehren (max. 1 pro
+        # Lauf) - Ergebnis fliesst als Fakt ins Gedaechtnis.
+        try:
+            import re as _re
+            from .hands import Hands
+            _hands = Hands(cfg, memory=mem)
+            for _t in report.get("tasks", []):
+                _blocks = _re.findall(
+                    r"```(?:python|py)\n(.*?)```",
+                    str(_t.get("artifact", "")), _re.S)
+                if not _blocks:
+                    continue
+                _code_snip = _blocks[0][:4000]
+                if "def main" in _code_snip or "__main__" in _code_snip \
+                        or len(_code_snip.splitlines()) >= 3:
+                    _res = _hands.execute(_code_snip, timeout=20.0)
+                    mem.add_fact(
+                        f"hand_result:{goal[:80]}",
+                        json.dumps({"ok": _res.get("ok"),
+                                    "stdout": (_res.get("stdout") or "")
+                                    [:300],
+                                    "error": _res.get("error")},
+                                   ensure_ascii=False),
+                        source="hands")
+                    print(f"hands: ausgefuehrt -> "
+                          f"{'ok' if _res.get('ok') else 'fehler'}")
+                    break
+        except Exception as exc:  # noqa: BLE001 - motorics must not kill ACT
+            mem.add_event("gh_issue_error", {
+                "where": "hands-execute",
+                "error": f"{type(exc).__name__}: {exc}"})
         winner = (report.get("evolution") or {}).get("winner_angle")
         line = (f"ACT: '{goal[:60]}' | Score {report.get('score')}/10, "
                 f"{'konvergiert' if report.get('converged') else 'offen'}"
