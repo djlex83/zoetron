@@ -207,18 +207,31 @@ def main(argv: list[str] | None = None) -> int:
                                and "required" in _code_snip)
                 if not _needs_args and len(_code_snip.splitlines()) >= 3:
                     _res = _hands.execute(_code_snip, timeout=20.0)
-                    mem.add_fact(
-                        f"hand_result:{goal[:80]}",
-                        json.dumps({"ok": _res.get("ok"),
-                                    "stdout": (_res.get("stdout") or "")
-                                    [:300],
-                                    "stderr": (_res.get("stderr") or "")
-                                    [:200],
-                                    "error": _res.get("error")},
-                                   ensure_ascii=False),
-                        source="hands")
+                    if _res.get("ok"):
+                        # WERKZEUGKISTE: Erfolgreiche Skripte als
+                        # wiederverwendbare Tools speichern.
+                        _tname = _slug(goal)[:40]
+                        _tdir = Path(cfg.data_dir) / "tools"
+                        _tdir.mkdir(parents=True, exist_ok=True)
+                        (_tdir / f"{_tname}.py").write_text(
+                            _code_snip, encoding="utf-8")
+                        mem.add_fact(
+                            f"tool:{_tname}",
+                            f"Ausfuehrbares Python-Werkzeug aus Ziel "
+                            f"'{goal[:60]}'. Datei: data/tools/"
+                            f"{_tname}.py - bei aehnlichen Zielen nutzen "
+                            f"oder weiterentwickeln.",
+                            source="hands")
+                    else:
+                        mem.add_fact(
+                            f"hand_result:{goal[:80]}",
+                            json.dumps({"ok": False,
+                                        "stderr": (_res.get("stderr")
+                                                   or "")[:200]},
+                                       ensure_ascii=False),
+                            source="hands")
                     print(f"hands: ausgefuehrt -> "
-                          f"{'ok' if _res.get('ok') else 'fehler'}"
+                          f"{'ok -> tool gesichert' if _res.get('ok') else 'fehler'}"
                           + ("" if _res.get("ok") else
                              f" | {(_res.get('stderr') or '')[:80]}"))
                     break

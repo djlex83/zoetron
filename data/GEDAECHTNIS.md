@@ -1,10 +1,10 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**309 Fakten** · Stand 2026-08-22 09:29 UTC · aktualisiert bei jedem Herzschlag
+**319 Fakten** · Stand 2026-08-22 10:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 125
-- **swarm_artifact:** 114
-- **last_swarm_goal:** 27
+- **dream:** 130
+- **swarm_artifact:** 118
+- **last_swarm_goal:** 28
 - **last_swarm_critique:** 20
 - **strategy:** 15
 - **frontier:** 3
@@ -13,6 +13,56 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Implement Automated Convergence Gates`
+*22.08. 10:15 UTC · Quelle: builder*
+
+# Automated Convergence Gates Pipeline  ## `convergence_gates/sandbox.py`  ```python from dataclasses import dataclass, field from datetime import datetime, timedelta from typing import Dict, List, Op
+
+### `swarm_artifact:Generate Skill Proposals from PatternCatalog`
+*22.08. 10:11 UTC · Quelle: builder*
+
+# Skill Proposal Generator with Template Library  ## `skill_generation/proposals.py`  ```python from dataclasses import dataclass, field, asdict from datetime import datetime from typing import Dict, 
+
+### `swarm_artifact:Extract Recurring Failure Patterns via Clustering`
+*22.08. 10:08 UTC · Quelle: builder*
+
+# Pattern Extraction via HDBSCAN Clustering  ## `pattern_extraction/clustering.py`  ```python from dataclasses import dataclass, field from typing import List, Dict, Optional, Any import numpy as np f
+
+### `swarm_artifact:Build Dream Memory Ingestion Pipeline`
+*22.08. 10:06 UTC · Quelle: builder*
+
+# Dream Memory Ingestion Pipeline  ## `dream_ingestion/models.py`  ```python from dataclasses import dataclass, field from datetime import datetime from typing import Optional, List import uuid   @dat
+
+### `last_swarm_goal`
+*22.08. 10:00 UTC · Quelle: system*
+
+Leverage Distant Dream Memories for Skill Generation
+
+### `dream:20260822:5`
+*22.08. 10:00 UTC · Quelle: dream*
+
+Orphaned swarm sessions recur often enough to warrant a dedicated detector, yet deployment remains a manual swarm goal instead of automated infrastructure.
+
+### `dream:20260822:4`
+*22.08. 10:00 UTC · Quelle: dream*
+
+Swarm simulations repeatedly return 'revise' with 5+ risks, indicating convergence gates (critic:builder ratio, integration tests) are missing.
+
+### `dream:20260822:3`
+*22.08. 10:00 UTC · Quelle: dream*
+
+Dream consolidation generates skill proposals but no mechanism promotes them to tested code, causing a persistent proposal-to-production gap.
+
+### `dream:20260822:2`
+*22.08. 10:00 UTC · Quelle: dream*
+
+stealth/ox-alpha latency varies 27x (12s–326s), violating any SLO and requiring p99-aware routing with automatic failover.
+
+### `dream:20260822:1`
+*22.08. 10:00 UTC · Quelle: dream*
+
+Free-tier models (Gemma, GLM, Nemotron) fail catastrophically under load with 429/502 errors, making them unsuitable for production without paid fallbacks.
 
 ### `strategy:close_skill_proposal_to_execution_pipeline`
 *22.08. 09:28 UTC · Quelle: evolution*
