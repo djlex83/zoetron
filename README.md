@@ -41,15 +41,24 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 
 ## The Autonomous Loop
 
-Every 20 minutes, Zoetron runs a full developer cycle **without human input**:
+Every **15 minutes** (~96 cycles/day), Zoetron runs a full developer cycle
+**without human input** — and *thinks about itself* while doing it:
 
 ```
-DRIVE picks a goal ──► GitHub Issue opened automatically
-                       (label: status:in-arbeit)
-        ──► Swarm plans, builds, critiques (score 0–10)
-        ──► score ≥ 8: issue closes itself (status:erledigt) ✅
-            score < 8: Evolution breeds better strategies
-                       (status:evolviert), inherited by future runs
+HERZSCHLAG (every 15 min)
+ ├─ ⚡ REFLEX   toolbelt first — known work runs token-free
+ ├─ ✂️ PRUNE    archive stale memories
+ ├─ 💭 DREAM    distill new insights + skill ideas from recent experience
+ ├─ 🔥 DRIVE    pick its own next goal (curiosity) or a whispered one (you)
+ ├─ 🐜 ACT      swarm plans → builds → critic scores 0–10
+ │     score ≥ 8: issue closes itself (status:erledigt) ✅
+ │     score < 8: evolution breeds better strategies, losers become
+ │                forbidden anti-patterns, winners are inherited
+ ├─ ✋ HANDS    artifact code executed in a sandbox; successes become tools
+ ├─ 📱 TELEGRAM posts the proof of execution (tool + result)
+ ├─ 🕸 GRAPH    rebuilds the live knowledge graph over all memory
+ └─ 🪞 RETRO    reviews its own cycles: "what went well / badly?"
+               findings are stored as lessons for future planners
 ```
 
 - **Scoring:** 0–10 from an adversarial critic LLM; 8+ = converged.
@@ -59,6 +68,23 @@ DRIVE picks a goal ──► GitHub Issue opened automatically
   and logs the intervention as `drive_whisper`.
 - **Public self-management:** issues, label kanban, releases, wiki and the
   landing page are maintained by the organism itself.
+
+### 💡 What it thinks about every 15 minutes
+
+Every heartbeat generates fresh ideas you can watch grow in the open:
+
+| Phase | Typical ideas coming out of it |
+|---|---|
+| 💭 DREAM | distilled insights ("what did I learn since last beat?") + concrete skill proposals for new abilities |
+| 🔥 DRIVE | a brand-new goal with a human-readable German *why* — chosen because memory has a gap there |
+| 🐜 ACT | runnable Python artifacts per task (code is mandatory, prose alone scores low) |
+| 🧬 EVOLUTION | up to 3 fundamentally different attack angles per failure; the fittest becomes inherited strategy |
+| 🪞 RETRO | honest self-findings like *"average score only 1.5/10 – code mandate still too weak"* or *"N hands failed – build smaller standalone scripts"* |
+
+Recent real examples from the memory: *"Redesign MemoryStore as self-pruning
+ring buffer"*, *"Embedding-driven organ integration: replace BFS subgraph
+extraction with learned similarity"*, *"Enforce MemoryStore contract validator
+before each hand-action batch; fail fast."*
 
 ## Quick Start
 

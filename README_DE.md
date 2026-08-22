@@ -41,15 +41,25 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 
 ## Der autonome Kreislauf
 
-Alle 20 Minuten läuft Zoetron einen vollständigen Entwickler-Zyklus **ohne menschliches Zutun**:
+Alle **15 Minuten** (~96 Zyklen/Tag) läuft Zoetron einen vollständigen
+Entwickler-Zyklus **ohne menschliches Zutun** – und denkt dabei über sich
+selbst nach:
 
 ```
-DRIVE wählt ein Ziel ──► GitHub-Issue wird automatisch angelegt
-                         (Label: status:in-arbeit)
-        ──► Swarm plant, baut, bewertet (Score 0–10)
-        ──► Score ≥ 8: Issue schließt sich selbst (status:erledigt) ✅
-            Score < 8: Evolution züchtet bessere Strategien
-                       (status:evolviert), die künftige Läufe erben
+HERZSCHLAG (alle 15 Min)
+ ├─ ⚡ REFLEX   Werkzeugkiste zuerst – Bekanntes läuft ohne Token
+ ├─ ✂️ PRUNE    alte Erinnerungen archivieren
+ ├─ 💭 DREAM    neue Einsichten + Skill-Ideen aus frischen Erfahrungen
+ ├─ 🔥 DRIVE    wählt sein nächstes Ziel (Neugier) oder ein Flüster-Ziel (du)
+ ├─ 🐜 ACT      Swarm plant → baut → Critic bewertet 0–10
+ │     Score ≥ 8: Issue schließt sich selbst (status:erledigt) ✅
+ │     Score < 8: Evolution züchtet Strategien, Verlierer werden
+ │                Verbotsliste (Anti-Patterns), Sieger werden vererbt
+ ├─ ✋ HÄNDE    Artefakt-Code in der Sandbox ausgeführt; Erfolge werden Tools
+ ├─ 📱 TELEGRAM postet den Ausführungs-Beweis (Werkzeug + Ergebnis)
+ ├─ 🕸 GRAPH    baut den Live-Wissensgraph über das gesamte Gedächtnis neu
+ └─ 🪞 RETRO   reviewt die eigenen Zyklen: „was lief gut / schlecht?"
+               Lehren wandern ins Gedächtnis für künftige Planner
 ```
 
 - **Scoring:** 0–10 von einem adversarialen Critic-LLM; ab 8 = konvergiert.
@@ -59,6 +69,23 @@ DRIVE wählt ein Ziel ──► GitHub-Issue wird automatisch angelegt
   eigenen Neugier aus und protokolliert den Eingriff als `drive_whisper`.
 - **Öffentliche Selbstverwaltung:** Issues, Label-Kanban, Releases, Wiki und
   die Landing-Page pflegt der Organismus selbst.
+
+### 💡 Was es alle 15 Minuten denkt
+
+Jeder Herzschlag erzeugt frische Ideen, die öffentlich wachsen:
+
+| Phase | Typische Ideen dabei |
+|---|---|
+| 💭 DREAM | destillierte Einsichten („was habe ich seit dem letzten Schlag gelernt?") + konkrete Skill-Vorschläge |
+| 🔥 DRIVE | ein brandneues Ziel mit verständlichem deutschem *Why* – gewählt, weil das Gedächtnis dort eine Lücke hat |
+| 🐜 ACT | lauffähige Python-Artefakte je Task (Code ist Pflicht, Prosa allein gibt schlechte Scores) |
+| 🧬 EVOLUTION | bis zu 3 grundverschiedene Angriffswinkel pro Fehlschlag; der Fitnesste wird Erbstrategie |
+| 🪞 RETRO | ehrliche Selbstbefunde wie *„Durchschnitts-Score nur 1,5/10 – Code-Pflicht greift noch zu schwach"* oder *„N Hände-Fehlschläge – baue kleinere eigenständige Skripte"* |
+
+Echte Beispiele aus dem Gedächtnis: *„MemoryStore als selbst-prunenden
+Ring-Puffer neu entwerfen"*, *„Embedding-getriebene Organ-Integration: BFS
+durch gelernte Ähnlichkeit ersetzen"*, *„MemoryStore-Vertragsprüfer vor jedem
+Hände-Batch erzwingen; früh und laut scheitern."*
 
 ## Quickstart
 
