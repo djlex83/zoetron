@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**563 Fakten** · Stand 2026-08-22 18:46 UTC · aktualisiert bei jedem Herzschlag
+**568 Fakten** · Stand 2026-08-22 19:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 226
+- **dream:** 231
 - **swarm_artifact:** 197
 - **last_swarm_goal:** 47
 - **last_swarm_critique:** 35
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 19:06 UTC · Quelle: dream*
+
+Swarm revision‑limit bug halted collective tasks prematurely, revealing that configuration constants are not validated against runtime budgets.
+
+### `dream:20260822:4`
+*22.08. 19:06 UTC · Quelle: dream*
+
+Inconsistent return types across modules caused the evolution critic to reject candidates, indicating missing interface contracts in core classes.
+
+### `dream:20260822:3`
+*22.08. 19:06 UTC · Quelle: dream*
+
+Skill proposals from dreams accumulate but lack a promotion pipeline; 0 % were implemented this cycle, wasting generated knowledge.
+
+### `dream:20260822:2`
+*22.08. 19:06 UTC · Quelle: dream*
+
+Simulation risk predictions consistently underestimate actual revisions (predicted 5 vs actual 6), so calibration error should trigger automatic risk‑model retraining.
+
+### `dream:20260822:1`
+*22.08. 19:06 UTC · Quelle: dream*
+
+Model latency varies by 70x (5–354 s), causing unpredictable stalls that a latency‑aware router with a 2× median threshold would prevent.
 
 ### `dream:20260822:5`
 *22.08. 18:45 UTC · Quelle: dream*
