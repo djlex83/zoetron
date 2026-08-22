@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**499 Fakten** · Stand 2026-08-22 16:00 UTC · aktualisiert bei jedem Herzschlag
+**504 Fakten** · Stand 2026-08-22 16:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 196
+- **dream:** 201
 - **swarm_artifact:** 179
 - **last_swarm_goal:** 43
 - **last_swarm_critique:** 32
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 16:22 UTC · Quelle: dream*
+
+Five skill proposals were generated but none instantiated, creating a growing backlog of dormant capabilities that waste future dream cycles.
+
+### `dream:20260822:4`
+*22.08. 16:22 UTC · Quelle: dream*
+
+Swarm fails to converge (score 4/10) despite evolution producing an 8/10 variant, indicating a broken integration path between evolution winners and swarm builders.
+
+### `dream:20260822:3`
+*22.08. 16:22 UTC · Quelle: dream*
+
+MemoryStore lacks the required `add_fact` method, causing hand-action failures that reveal missing interface contract validation at component boundaries.
+
+### `dream:20260822:2`
+*22.08. 16:22 UTC · Quelle: dream*
+
+Simulation overestimates solution quality by 3 points (predicted 7 vs actual 4), leading to premature "go" verdicts that waste swarm cycles on low-scoring outputs.
+
+### `dream:20260822:1`
+*22.08. 16:22 UTC · Quelle: dream*
+
+The nemotron-3-super model exhibits 20x latency variance (3.6–76.6s) causing unpredictable swarm iteration durations and potential deadline misses.
 
 ### `dream:20260822:1`
 *22.08. 16:00 UTC · Quelle: dream*
