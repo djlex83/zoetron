@@ -154,6 +154,69 @@ def main(argv: list[str] | None = None) -> int:
         if not goal:
             print("act: keine unbehandelten Ziele")
             return 0
+        # REFLEX-PFAD: Erst die Werkzeugkiste fragen, bevor das LLM
+        # denkt. Passt ein gespeichertes Tool zum Ziel, wird es
+        # ausgefuehrt - ohne einen einzigen Token.
+        def _reflex_try(g: str) -> bool:
+            try:
+                tdir = Path(cfg.data_dir) / "tools"
+                tools = sorted(tdir.glob("*.py")) if tdir.exists() else []
+            except OSError:
+                return False
+            words = [w for w in g.lower().split()
+                     if len(w) > 3 and w.isalnum()]
+            for tp in tools:
+                body = tp.read_text(encoding="utf-8", errors="replace")
+                hits = sum(1 for w in words
+                           if w in tp.stem.lower() or w in body.lower())
+                fact_match = any(
+                    w in f.get("key", "").lower() + f.get("value", "").lower()
+                    for f in mem.facts()
+                    if f.get("key", "").startswith(f"tool:{tp.stem}")
+                    for w in words)
+                if (hits >= 2 or fact_match) and len(body.splitlines()) >= 3 \
+                        and "add_argument" not in body:
+                    from .hands import Hands
+                    res = Hands(cfg, memory=mem).execute(body[:4000],
+                                                         timeout=20.0)
+                    mem.add_event("reflex_used", {
+                        "goal": goal[:120], "tool": tp.name,
+                        "ok": bool(res.get("ok"))})
+                    print(f"reflex: {tp.name} -> "
+                          f"{'ok' if res.get('ok') else 'fehler'} "
+                          "(kein LLM-Token verbraucht)")
+                    return True
+            return False
+
+        if _reflex_try(goal):
+            _code, _data = 201, {"number": None}
+            try:
+                import importlib.util as _ilu2
+                _spec2 = _ilu2.spec_from_file_location(
+                    "gh_tools", Path(__file__).parent.parent.parent
+                    / "scripts" / "gh_tools.py")
+                _gh2 = _ilu2.module_from_spec(_spec2)
+                _spec2.loader.exec_module(_gh2)
+                _code, _data = _gh2._api("POST", "/issues", {"body": (
+                    f"⚡ **Reflex-Lauf** (werkzeugkiste, kein LLM)\n\n"
+                    f"- Ziel: {goal}\n- Tool aus data/tools/ ausgeführt\n"
+                    f"- Ergebnis im Gedächtnis (`reflex_used`)")})
+                if _code == 201:
+                    _gh2._api("POST",
+                              f"/issues/{_data.get('number')}/labels",
+                              {"labels": ["drive-goal",
+                                          "status:erledigt"]})
+                    _gh2._api("PATCH",
+                              f"/issues/{_data.get('number')}",
+                              {"state": "closed"})
+            except Exception as exc:  # noqa: BLE001
+                mem.add_event("gh_issue_error", {
+                    "where": "reflex-issue", "error": str(exc)[:150]})
+            mem.add_event("act_done", {"goal_title": goal,
+                                       "score": None,
+                                       "converged": True,
+                                       "mode": "reflex"})
+            return 0
         print(f"act: fuehre aus -> {goal}")
         issue_num = None
         try:

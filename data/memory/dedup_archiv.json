@@ -1,0 +1,14 @@
+[
+ {
+  "ts": 1787348439.190648,
+  "key": "swarm_artifact:Gather market-gap artifacts",
+  "value": "## Market‑Gap Artifact Collection  \n\n| Gap‑ID | Description (Unmet Need / Gap) | Source (URL / Reference) | Date (ISO‑8601) | Notes |\n|--------|--------------------------------|-----------------------",
+  "source": "builder"
+ },
+ {
+  "ts": 1787368260.941462,
+  "key": "swarm_artifact:Implement Standardized Scoring & Calibration System",
+  "value": "# Standardized Scoring & Calibration System\n\n## Overview\nTransparent, versioned scoring rubrics for all validation gates with automated drift detection against golden-set benchmarks and a real-time ca",
+  "source": "builder"
+ }
+]
