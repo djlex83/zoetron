@@ -24,23 +24,26 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 
 | Organ | Nature analog | File | What it does |
 |---|---|---|---|
-| 💓 HEART | heartbeat | Hermes cron | every 30 min: PRUNE + DREAM + DRIVE + status report |
+| 💓 HEART | heartbeat | `heartbeat_daemon.sh` | every **20 min**: REFLEX → PRUNE → DREAM → DRIVE → ACT (+HANDS) → GRAPH → report |
 | 🔥 DRIVE | curiosity/drive | `drive.py` | generates **its own goals** from memory gaps — in plain German, with a human-readable "why" |
-| 💭 DREAM | sleep/replay | `dream.py` | distills experiences into lasting insights |
+| 💭 DREAM | sleep/replay | `dream.py` | distills experiences into lasting insights + skill proposals |
 | 🪞 METACOG | self-awareness | `metacog.py` | predicts its own scores, measures calibration |
 | 🌍 SIMULATE | world model | `simulate.py` | dry-runs plans before acting on them |
-| 👁 SENSES | eyes/ears | `senses.py` | watches HN frontier + web search (via scrapling); fresh signals feed DRIVE |
-| ✋ HANDS | motor system | `hands.py` | plans + **executes real code** (sandboxed); results flow back into memory |
-| 🧬 EVOLUTION | reproduction | `evolution.py` | N distinct solution variants → critic selects the fittest; **losers trigger auto-evolution, winners are inherited by future planners** |
+| 👁 SENSES | eyes/ears | `senses.py` | watches HN frontier + web search; fresh signals feed DRIVE |
+| ✋ HANDS | motor system | `hands.py` | executes artifact code in a sandbox; **successes become reusable tools** (`data/tools/`) |
+| 🧬 EVOLUTION | reproduction | `evolution.py` | N solution variants → critic picks the fittest; winners are inherited, **losers become forbidden anti-patterns** (never repeated) |
 | 🩸 METABOLISM | stress axis | `metabolism.py` | rate limits & timeouts raise stress → smaller plans; cortisol decay |
 | ✂️ PRUNE | apoptosis | `prune.py` | archives stale memories, keeps recalled facts, insights are immortal |
-| 🧬 AUTOROUTER | immune system | `router.py` | only free models WITH tool support; failover + 1h blacklist; **experience beats metadata** (critic scores boost the routing chain) |
-| 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10) |
+| 🧬 AUTOROUTER | immune system | `router.py` | only free models WITH tool support; failover + 1h blacklist |
+| 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10); demands runnable code, not prose |
+| 🕸 GRAPH | associative cortex | `graph.py` | real knowledge graph over all memory (**368 nodes / 245 edges**), duplicate detection, similarity neighborhoods |
+| ⚡ REFLEX PATH | spinal cord | ACT-first logic | checks the toolbelt **before** the LLM thinks — token-free runs for known work |
+| 💬 WHISPER | human voice | `data/fluester_goals.json` | human priority goals jump the queue (logged as `drive_whisper`) |
 | 🧠 Memory | hippocampus | `memory.py` | JSONL facts + event log + keyword recall |
 
-## The Autonomous Loop (live since v0.2)
+## The Autonomous Loop
 
-Every heartbeat, Zoetron runs a full developer cycle **without human input**:
+Every 20 minutes, Zoetron runs a full developer cycle **without human input**:
 
 ```
 DRIVE picks a goal ──► GitHub Issue opened automatically

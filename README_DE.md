@@ -24,23 +24,26 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 
 | Organ | Natur-Vorbild | Datei | Was es tut |
 |---|---|---|---|
-| 💓 HERZ | Herzschlag | Hermes-Cron | alle 30 Min: PRUNE + DREAM + DRIVE + Status |
-| 🔥 DRIVE | Neugier/Trieb | `drive.py` | generiert **eigene Ziele** aus Gedächtnislücken |
-| 💭 DREAM | Schlaf/Replay | `dream.py` | destilliert Erlebnisse zu dauerhaften Einsichten |
+| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **20 Min**: REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → GRAPH → Bericht |
+| 🔥 DRIVE | Neugier/Trieb | `drive.py` | generiert **eigene Ziele** aus Gedächtnislücken – auf Deutsch mit verständlichem „Why" |
+| 💭 DREAM | Schlaf/Replay | `dream.py` | destilliert Erlebnisse zu dauerhaften Einsichten + Skill-Vorschlägen |
 | 🪞 METACOG | Selbstgefühl | `metacog.py` | sagt eigenen Score voraus, misst Kalibrierung |
 | 🌍 SIMULATE | Weltmodell | `simulate.py` | trocken üben vor dem Handeln, Risiken vorab |
-| 👁 SINNE | Augen/Ohren | `senses.py` | beobachtet HN-Frontier + Websuche (via Scrapling); frische Signale speisen DRIVE |
-| ✋ HÄNDE | Motorik | `hands.py` | plant + **führt echten Code aus** (Sandbox); Ergebnisse fließen ins Gedächtnis |
-| 🧬 EVOLUTION | Fortpflanzung | `evolution.py` | N verschiedene Lösungsvarianten → Critic wählt den Fitnessten; **Misserfolge triggern Auto-Evolution, Sieger-Strategien vererben sich an künftige Planner** |
-| 🩸 STOFFWECHSEL | Stressachse | `metabolism.py` | Rate-Limits/Timeouts erhöhen Stress → kleinere Pläne; Cortisol-Abbau |
-| ✂️ PRUNE | Apoptose | `prune.py` | archiviert alte Erinnerungen, behält genutzte Fakten, Einsichten unsterblich |
-| 🧬 AUTOROUTER | Immunsystem | `router.py` | nur freie Modelle MIT Tool-Support; Failover + 1h-Blacklist; **Erfahrung schlägt Papier** (Critic-Scores boosten die Kette) |
-| 🛡 CRITIC | Abwehr | `swarm.py` | adversariale Qualitätsgate (Score 0–10) |
+| 👁 SINNE | Augen/Ohren | `senses.py` | beobachtet HN-Frontier + Websuche; frische Signale speisen DRIVE |
+| ✋ HÄNDE | Motorik | `hands.py` | führt Artefakt-Code in der Sandbox aus; **Erfolge werden wiederverwendbare Werkzeuge** (`data/tools/`) |
+| 🧬 EVOLUTION | Fortpflanzung | `evolution.py` | N Varianten → Critic wählt den Fitnessten; Sieger vererben sich, **Verlierer werden Verbots-Liste (Anti-Patterns)** |
+| 🩸 STOFFWECHSEL | Stressachse | `metabolism.py` | Rate-Limits/Timeouts erhöhen Stress → kleinere Pläne |
+| ✂️ PRUNE | Apoptose | `prune.py` | archiviert alte Erinnerungen, behält genutzte Fakten |
+| 🧬 AUTOROUTER | Immunsystem | `router.py` | nur freie Modelle MIT Tool-Support; Failover + Blacklist |
+| 🛡 CRITIC | Abwehr | `swarm.py` | Qualitätsgate (Score 0–10); **verlangt lauffähigen Code, keine Prosa** |
+| 🕸 GRAPH | Assoziationsrinde | `graph.py` | echtes Wissensnetz über das gesamte Gedächtnis (**368 Knoten / 245 Kanten**), Duplikat-Erkennung, Nachbarschaftssuche |
+| ⚡ REFLEX-PFAD | Rückenmark | ACT-Logik | prüft die Werkzeugkiste **bevor** das LLM denkt – token-freie Läufe für Bekanntes |
+| 💬 FLÜSTER-KANAL | Menschenstimme | `data/fluester_goals.json` | menschliche Prioritätsziele springen in der Queue nach vorn (`drive_whisper`) |
 | 🧠 Gedächtnis | Hippocampus | `memory.py` | JSONL-Fakten + Ereignis-Log + Keyword-Recall |
 
-## Der autonome Kreislauf (live seit v0.2)
+## Der autonome Kreislauf
 
-Mit jedem Herzschlag läuft Zoetron einen vollständigen Entwickler-Zyklus **ohne menschliches Zutun**:
+Alle 20 Minuten läuft Zoetron einen vollständigen Entwickler-Zyklus **ohne menschliches Zutun**:
 
 ```
 DRIVE wählt ein Ziel ──► GitHub-Issue wird automatisch angelegt
