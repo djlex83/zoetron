@@ -1,18 +1,83 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**195 Fakten** · Stand 2026-08-22 02:32 UTC · aktualisiert bei jedem Herzschlag
+**208 Fakten** · Stand 2026-08-22 03:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 75
-- **swarm_artifact:** 72
-- **last_swarm_goal:** 17
-- **last_swarm_critique:** 14
-- **strategy:** 9
+- **dream:** 80
+- **swarm_artifact:** 77
+- **last_swarm_goal:** 18
+- **last_swarm_critique:** 15
+- **strategy:** 10
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:establish_skill_validation_pipeline`
+*22.08. 03:13 UTC · Quelle: evolution*
+
+Serverless Pipeline with Managed Security Primitives - Serverless approach provides managed security primitives (auth, rate limiting, sandboxing via Firecracker/Fargate), durable persistence (DynamoDB/S3), and complete implementations 
+
+### `last_swarm_critique`
+*22.08. 03:13 UTC · Quelle: critic*
+
+score=3; issues=Critical implementations incomplete across all five artifacts (cut off mid-class, missing methods, undefined references like bootstrap_ci, ConvergenceResult, StaticAnalysisResult); Security vulnerabilities: SHA256 truncated to 16 chars (collisi
+
+### `swarm_artifact:Hardening Interfaces for Thread-Safety & Fault Tolerance`
+*22.08. 03:13 UTC · Quelle: builder*
+
+# Thread-Safe & Fault-Tolerant Sense/Action Interfaces for Validation Pipeline  ## Overview Hardened interfaces providing thread-safety, idempotency, circuit breaking, retry policies, health endpoints
+
+### `swarm_artifact:Implement Standardized Scoring & Calibration System`
+*22.08. 03:11 UTC · Quelle: builder*
+
+# Standardized Scoring & Calibration System  ## Overview Transparent, versioned scoring rubrics for all validation gates with automated drift detection against golden-set benchmarks and a real-time ca
+
+### `swarm_artifact:Develop Automated Skill Proposal Validation Pipeline`
+*22.08. 03:07 UTC · Quelle: builder*
+
+# Automated Skill Proposal Validation Pipeline  ## Overview CI/CD-style workflow orchestrating 50+ skill proposals through decoupled validation gates (static analysis, adversarial critique, simulation
+
+### `swarm_artifact:Build Simulation-to-Execution Bridge`
+*22.08. 03:06 UTC · Quelle: builder*
+
+# Simulation-to-Execution Bridge Pipeline  ## Overview Automated pipeline promoting validated simulation revisions to live execution via sandboxed replay with chaos injection, competence metrics, and 
+
+### `swarm_artifact:Design Adversarial Validation Framework`
+*22.08. 03:04 UTC · Quelle: builder*
+
+# Adversarial Validation Framework Design  ## Overview This framework enforces rigorous adversarial validation for skill proposals through a dynamic critic pool, configurable convergence detection wit
+
+### `last_swarm_goal`
+*22.08. 03:03 UTC · Quelle: system*
+
+Establish Skill Validation Pipeline
+
+### `dream:20260822:5`
+*22.08. 03:03 UTC · Quelle: dream*
+
+Simulation revisions (3) exceed applied simulations (1), revealing a replay-to-action gap that stalls competence growth.
+
+### `dream:20260822:4`
+*22.08. 03:03 UTC · Quelle: dream*
+
+Swarm converges in a single cycle with 5:1 builder-to-critic ratio, suggesting insufficient adversarial validation before acceptance.
+
+### `dream:20260822:3`
+*22.08. 03:03 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are tested or deduplicated, creating semantic clutter that wastes context window.
+
+### `dream:20260822:2`
+*22.08. 03:03 UTC · Quelle: dream*
+
+Calibration consistently under-predicts swarm scores by ~2 points, indicating systematic optimism bias in the planner.
+
+### `dream:20260822:1`
+*22.08. 03:03 UTC · Quelle: dream*
+
+Model latency varies 3x (9.8–31.1s) causing unpredictable swarm cycle times and calibration drift.
 
 ### `strategy:integrate_distant_dream_memories`
 *22.08. 02:31 UTC · Quelle: evolution*
