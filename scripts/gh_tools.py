@@ -22,19 +22,43 @@ _CRED_CANDIDATES = [
     Path.home() / ".git-credentials",
     Path("/home/hermeswebui/.git-credentials"),
 ]
-CREDS = next((p for p in _CRED_CANDIDATES if p.exists()),
-             Path.home() / ".git-credentials")
 REPO = "djlex83/zoetron"
 API = f"https://api.github.com/repos/{REPO}"
 
 _LAST_ERR: str | None = None
 
 
+def _extract(line: str) -> str | None:
+    """Token aus beiden Credential-Formaten ziehen."""
+    if line.startswith("password="):
+        return line.split("=", 1)[1].strip() or None
+    if "://" in line:  # https://user:token@host
+        rest = line.split("://", 1)[1]
+        parts = rest.split(":")
+        if len(parts) > 1 and parts[1].strip():
+            return parts[1].split("@", 1)[0].strip()
+    return None
+
+
 def _token() -> str:
-    for line in CREDS.read_text().splitlines():
-        if line.startswith("password="):
-            return line.split("=", 1)[1].strip()
-    raise SystemExit("kein Token in ~/.git-credentials")
+    candidates = [
+        Path("/home/hermeswebui/.git-credentials"),
+        Path.home() / ".git-credentials",
+    ]
+    best: str | None = None
+    for p in candidates:
+        try:
+            for line in p.read_text().splitlines():
+                tok = _extract(line)
+                if tok and len(tok) >= len(best or ""):
+                    best = tok  # laengster gewinnt (github_pat_ > alt)
+                    break
+        except OSError:
+            continue
+    if not best:
+        raise SystemExit(
+            "kein verwertbarer Token in den git-credentials")
+    return best
 
 
 def _api(method: str, path: str, body: dict | None = None) -> tuple[int, dict]:
