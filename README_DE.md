@@ -38,6 +38,27 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 | 🛡 CRITIC | Abwehr | `swarm.py` | adversariale Qualitätsgate (Score 0–10) |
 | 🧠 Gedächtnis | Hippocampus | `memory.py` | JSONL-Fakten + Ereignis-Log + Keyword-Recall |
 
+## Der autonome Kreislauf (live seit v0.2)
+
+Mit jedem Herzschlag läuft Zoetron einen vollständigen Entwickler-Zyklus **ohne menschliches Zutun**:
+
+```
+DRIVE wählt ein Ziel ──► GitHub-Issue wird automatisch angelegt
+                         (Label: status:in-arbeit)
+        ──► Swarm plant, baut, bewertet (Score 0–10)
+        ──► Score ≥ 8: Issue schließt sich selbst (status:erledigt) ✅
+            Score < 8: Evolution züchtet bessere Strategien
+                       (status:evolviert), die künftige Läufe erben
+```
+
+- **Scoring:** 0–10 von einem adversarialen Critic-LLM; ab 8 = konvergiert.
+  Details: [Wiki → Scoring](../../wiki/Scoring)
+- **Flüster-Kanal:** Menschen können Prioritätsziele über
+  `data/fluester_goals.json` einschleusen – Zoetron führt sie **vor** seiner
+  eigenen Neugier aus und protokolliert den Eingriff als `drive_whisper`.
+- **Öffentliche Selbstverwaltung:** Issues, Label-Kanban, Releases, Wiki und
+  die Landing-Page pflegt der Organismus selbst.
+
 ## Quickstart
 
 ```bash
@@ -69,7 +90,10 @@ kontinuierlich lernender Systeme.
 Früher Prototyp (v0.x), aktive Entwicklung, Design ändert sich schnell.
 Erste Live-Läufe haben gezeigt: Der Critic fängt echte Produkt-Inkonsistenzen,
 DREAM diagnostiziert eigene Pipeline-Bugs aus Erfahrung, der AutoRouter
-überspringt tote Modelle automatisch.
+überspringt tote Modelle automatisch. **Meilenstein:** Das erste vollautonome
+Ziel konvergierte (Score 8/10) und schloss sein eigenes GitHub-Issue – der
+komplette Kreislauf *denken → handeln → bewerten → abschließen* läuft
+unbemannt bei jedem Herzschlag.
 
 ## Lizenz
 

@@ -25,7 +25,7 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 | Organ | Nature analog | File | What it does |
 |---|---|---|---|
 | 💓 HEART | heartbeat | Hermes cron | every 30 min: PRUNE + DREAM + DRIVE + status report |
-| 🔥 DRIVE | curiosity/drive | `drive.py` | generates **its own goals** from memory gaps |
+| 🔥 DRIVE | curiosity/drive | `drive.py` | generates **its own goals** from memory gaps — in plain German, with a human-readable "why" |
 | 💭 DREAM | sleep/replay | `dream.py` | distills experiences into lasting insights |
 | 🪞 METACOG | self-awareness | `metacog.py` | predicts its own scores, measures calibration |
 | 🌍 SIMULATE | world model | `simulate.py` | dry-runs plans before acting on them |
@@ -37,6 +37,27 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 | 🧬 AUTOROUTER | immune system | `router.py` | only free models WITH tool support; failover + 1h blacklist; **experience beats metadata** (critic scores boost the routing chain) |
 | 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10) |
 | 🧠 Memory | hippocampus | `memory.py` | JSONL facts + event log + keyword recall |
+
+## The Autonomous Loop (live since v0.2)
+
+Every heartbeat, Zoetron runs a full developer cycle **without human input**:
+
+```
+DRIVE picks a goal ──► GitHub Issue opened automatically
+                       (label: status:in-arbeit)
+        ──► Swarm plans, builds, critiques (score 0–10)
+        ──► score ≥ 8: issue closes itself (status:erledigt) ✅
+            score < 8: Evolution breeds better strategies
+                       (status:evolviert), inherited by future runs
+```
+
+- **Scoring:** 0–10 from an adversarial critic LLM; 8+ = converged.
+  Details: [Wiki → Scoring](../../wiki/Scoring)
+- **Whisper channel:** humans can inject priority goals via
+  `data/fluester_goals.json` — Zoetron executes them before its own curiosity
+  and logs the intervention as `drive_whisper`.
+- **Public self-management:** issues, label kanban, releases, wiki and the
+  landing page are maintained by the organism itself.
 
 ## Quick Start
 
@@ -68,7 +89,9 @@ software — as an open, self-hostable step toward continuously learning systems
 Early prototype (v0.x), active development, design changes fast. First live
 runs showed: the critic catches real product inconsistencies, DREAM diagnoses
 pipeline bugs from its own experience, and the AutoRouter skips dead models
-automatically.
+automatically. **Milestone:** the first fully autonomous goal converged
+(score 8/10) and closed its own GitHub issue — the complete
+think → act → assess → close loop now runs unattended on every heartbeat.
 
 ## License
 
