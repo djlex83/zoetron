@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**404 Fakten** · Stand 2026-08-22 12:34 UTC · aktualisiert bei jedem Herzschlag
+**419 Fakten** · Stand 2026-08-22 12:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 160
-- **swarm_artifact:** 150
-- **last_swarm_goal:** 37
-- **last_swarm_critique:** 26
-- **strategy:** 21
+- **dream:** 165
+- **swarm_artifact:** 155
+- **last_swarm_goal:** 38
+- **last_swarm_critique:** 27
+- **strategy:** 22
+- **anti_pattern:** 4
 - **frontier:** 3
 - **artifact:** 3
-- **anti_pattern:** 2
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:fehler_beim_handeln_verstehen_und_beheben`
+*22.08. 12:57 UTC · Quelle: evolution*
+
+Fully vectorized, relation‑aware message passing - Variant 2 offers the highest impact by eliminating explicit Python loops and enabling GPU‑accelerated, vectorized message passing, while remaining feasible with existing deep‑learn
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fehler beim Handeln vers:1`
+*22.08. 12:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Immutable, namespaced skill‑goal graph construction - Separate the node namespaces for skills and goals by prefixing identifiers (e.g., "skill:" + name and "goal:" + name) before adding them to the graph. Store the node type 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fehler beim Handeln vers:0`
+*22.08. 12:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Robust input validation and explicit error handling - Replace mean_absolute_error with a wrapper that validates non‑empty inputs and raises ValueError with a clear message when they are empty. For orphaned session detection, 
+
+### `last_swarm_critique`
+*22.08. 12:56 UTC · Quelle: critic*
+
+score=7; issues=mean_absolute_error prints a warning and returns 0.0 for empty inputs; raising a ValueError would be clearer.; build_skill_graph may overwrite node type if a goal string also appears in skills, causing loss of the 'goal' type.; Orphaned session
+
+### `swarm_artifact:Implement copy-on-write versioned snapshot store`
+*22.08. 12:56 UTC · Quelle: builder*
+
+## Copy‑on‑Write Versioned Snapshot Store  A copy‑on‑write (COW) versioned store keeps an immutable history of snapshots.   When a mutation (`set`) occurs, the internal dictionary is shallow‑copied, t
+
+### `swarm_artifact:Demonstrate relation-aware message passing (RGCN style)`
+*22.08. 12:56 UTC · Quelle: builder*
+
+```python import numpy as np  # Node features: 4 nodes, 2-dimensional feat = np.array([[1.0, 0.0],                  [0.0, 1.0],                  [1.0, 1.0],                  [2.0, 2.0]])  # Edges: (so
+
+### `swarm_artifact:Detect and clean orphaned sessions`
+*22.08. 12:56 UTC · Quelle: builder*
+
+```python # Simulated session storage sessions = {     'sess1': {'user': 'alice', 'last_active': 100},     'sess2': {'user': None, 'last_active': 90},     'sess3': {'user': 'bob', 'last_active': 80}, 
+
+### `swarm_artifact:Build graph-linked skill repository`
+*22.08. 12:56 UTC · Quelle: builder*
+
+```python import networkx as nx from typing import List, Optional  def build_skill_graph(     goals: List[str],     skills: List[str],     edge_weight: float = 1.0,     max_edges_per_goal: Optional[in
+
+### `swarm_artifact:Analyze prediction error distribution`
+*22.08. 12:56 UTC · Quelle: builder*
+
+```python import numpy as np  def mean_absolute_error(pred, actual):     """     Compute the Mean Absolute Error (MAE) between predicted and actual arrays.          Parameters     ----------     pred 
+
+### `last_swarm_goal`
+*22.08. 12:54 UTC · Quelle: system*
+
+Fehler beim Handeln verstehen und beheben
+
+### `dream:20260822:5`
+*22.08. 12:54 UTC · Quelle: dream*
+
+Translating dream‑inspired drive goals into concrete, graph‑linked skills improves long‑term retention and swarm creativity.
+
+### `dream:20260822:4`
+*22.08. 12:54 UTC · Quelle: dream*
+
+Calibration predictions were consistently off by 1–2 points, revealing a need to continuously update prediction models with actual outcomes.
+
+### `dream:20260822:3`
+*22.08. 12:54 UTC · Quelle: dream*
+
+Missing method 'add_fact' on MemoryStore caused a hard failure, proving that code‑level contracts must be enforced before swarm execution.
+
+### `dream:20260822:2`
+*22.08. 12:54 UTC · Quelle: dream*
+
+High latency spread (2.6–101.7 s) shows runtime performance is unpredictable and needs adaptive throttling or model fallback.
+
+### `dream:20260822:1`
+*22.08. 12:54 UTC · Quelle: dream*
+
+Evolutionary variant selection followed by simulation‑based revision significantly boosts model reliability scores (from 4 to 9).
 
 ### `strategy:traum_erinnerungen_besser_verknüpfen_und_nutzen`
 *22.08. 12:33 UTC · Quelle: evolution*
