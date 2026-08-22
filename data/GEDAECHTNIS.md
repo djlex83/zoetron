@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**453 Fakten** · Stand 2026-08-22 14:16 UTC · aktualisiert bei jedem Herzschlag
+**468 Fakten** · Stand 2026-08-22 14:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 180
-- **swarm_artifact:** 164
-- **last_swarm_goal:** 40
-- **last_swarm_critique:** 29
-- **strategy:** 24
-- **anti_pattern:** 8
+- **dream:** 185
+- **swarm_artifact:** 169
+- **last_swarm_goal:** 41
+- **last_swarm_critique:** 30
+- **strategy:** 25
+- **anti_pattern:** 10
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:bekannte_fehler_systematisch_beheben_und_verhinder`
+*22.08. 14:44 UTC · Quelle: evolution*
+
+Declarative Pipeline with Validation Decorators - Variant 1 offers the most elegant and feasible solution by using a declarative pipeline with validation decorators, ensuring pure functions, automatic shape and NaN/Inf checks, and
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Bekannte Fehler systemat:2`
+*22.08. 14:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Object‑Oriented Composition with Built‑In Metrics - Create a BiasCorrectionLayer subclass of torch.nn.Module that encapsulates bias computation and correction in its forward method, handling arbitrary output shapes via broadc
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Bekannte Fehler systemat:0`
+*22.08. 14:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Robust Refactoring with Defensive Programming - Rewrite BiasCorrectedHead to include explicit input shape checks, raise informative errors for unsupported dimensions, and initialize multi‑output bias as a tensor matching the 
+
+### `last_swarm_critique`
+*22.08. 14:44 UTC · Quelle: critic*
+
+score=4; issues=BiasCorrectedHead.correct method is incomplete/truncated; BiasCorrectedHead._compute_bias uses questionable regularization formula for MAE surrogate; BiasCorrectedHead lacks input shape validation and handling of multi-output bias initializatio
+
+### `swarm_artifact:Functional pipeline with Either-based error handling`
+*22.08. 14:43 UTC · Quelle: builder*
+
+# Functional Pipeline with Either‑Based Error Handling  This artifact presents a type‑safe, functional pipeline for processing error logs.   It leverages Python dataclasses, generics, and an `Either` 
+
+### `swarm_artifact:Vectorized relation-aware message passing`
+*22.08. 14:43 UTC · Quelle: builder*
+
+# Vectorized Relation-Aware Message Passing  This artifact provides a fully vectorized implementation of relation-aware message passing for propagating error scores across heterogeneous graphs using N
+
+### `swarm_artifact:GitHub issue detection pipeline`
+*22.08. 14:42 UTC · Quelle: builder*
+
+```markdown # GitHub Typo‑Issue Detection Pipeline  A production‑ready script that uses the official **PyGithub** client to:  * Authenticate with a personal access token (PAT)   * Iterate over all ope
+
+### `swarm_artifact:Outcome-based validation suite`
+*22.08. 14:41 UTC · Quelle: builder*
+
+# Outcome‑Based Validation Suite  This suite evaluates task success by measuring **actual outcome quality** (e.g., accuracy, latency) and verifying that the allocated budget is sufficient for the obse
+
+### `swarm_artifact:Bias correction for prediction heads`
+*22.08. 14:40 UTC · Quelle: builder*
+
+# Bias Correction for Prediction Heads  This artifact provides a reusable implementation of bias correction that can be plugged into any prediction head (e.g., regression, classification logits) to sy
+
+### `last_swarm_goal`
+*22.08. 14:37 UTC · Quelle: system*
+
+Bekannte Fehler systematisch beheben und verhindern
+
+### `dream:20260822:5`
+*22.08. 14:37 UTC · Quelle: dream*
+
+Low stress and full budget did not prevent execution errors, suggesting that resource metrics alone are insufficient to guarantee task success.
+
+### `dream:20260822:4`
+*22.08. 14:37 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 4 vs actual 7) reveals systematic underestimation of error severity, requiring bias correction in prediction heads.
+
+### `dream:20260822:3`
+*22.08. 14:37 UTC · Quelle: dream*
+
+Swarm runs with critic:builder ratio <1:2 and no integration test failed to converge, showing that convergence gates must enforce both criteria.
+
+### `dream:20260822:2`
+*22.08. 14:37 UTC · Quelle: dream*
+
+Missing MemoryStore.add_fact method caused a hard failure, indicating the need for interface contracts verified at runtime.
+
+### `dream:20260822:1`
+*22.08. 14:37 UTC · Quelle: dream*
+
+Latency spikes above 30 s correlate with failed hand actions and should trigger automatic failover to faster models.
 
 ### `dream:20260822:5`
 *22.08. 14:16 UTC · Quelle: dream*
