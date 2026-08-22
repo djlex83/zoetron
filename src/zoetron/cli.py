@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -163,18 +164,21 @@ def main(argv: list[str] | None = None) -> int:
                 tools = sorted(tdir.glob("*.py")) if tdir.exists() else []
             except OSError:
                 return False
-            words = [w for w in g.lower().split()
-                     if len(w) > 3 and w.isalnum()]
+            words = [w for w in re.split(r"[^\w]+", g.lower())
+                     if len(w) > 4]
             for tp in tools:
                 body = tp.read_text(encoding="utf-8", errors="replace")
+                stem = tp.stem.lower().replace("_", " ")
+                low = body.lower()
                 hits = sum(1 for w in words
-                           if w in tp.stem.lower() or w in body.lower())
+                           if w in stem or w[:6] in low)
                 fact_match = any(
-                    w in f.get("key", "").lower() + f.get("value", "").lower()
+                    w in f.get("key", "").lower()
+                    + f.get("value", "").lower()[:200]
                     for f in mem.facts()
                     if f.get("key", "").startswith(f"tool:{tp.stem}")
                     for w in words)
-                if (hits >= 2 or fact_match) and len(body.splitlines()) >= 3 \
+                if (hits >= 1 or fact_match) and len(body.splitlines()) >= 3 \
                         and "add_argument" not in body:
                     from .hands import Hands
                     res = Hands(cfg, memory=mem).execute(body[:4000],
