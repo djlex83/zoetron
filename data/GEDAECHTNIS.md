@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**433 Fakten** · Stand 2026-08-22 13:23 UTC · aktualisiert bei jedem Herzschlag
+**448 Fakten** · Stand 2026-08-22 13:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 170
-- **swarm_artifact:** 159
-- **last_swarm_goal:** 39
-- **last_swarm_critique:** 28
-- **strategy:** 23
-- **anti_pattern:** 6
+- **dream:** 175
+- **swarm_artifact:** 164
+- **last_swarm_goal:** 40
+- **last_swarm_critique:** 29
+- **strategy:** 24
+- **anti_pattern:** 8
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:github_fehler_bei_issues_beheben`
+*22.08. 13:56 UTC · Quelle: evolution*
+
+Leverage an official GitHub client library with built‑in resilience - Variant 2 provides the highest combined elegance, feasibility, and impact by using a well‑maintained GitHub SDK that handles retries and 422 semantics correctly, eliminating custom
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: GitHub-Fehler bei Issues:1`
+*22.08. 13:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Adopt exponential back‑with jitter and explicit 422 handling - Replace the current naive retry loop with a robust back‑off strategy (exponential delay + jitter) that caps attempts. Include a pre‑check for existing issues via 
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: GitHub-Fehler bei Issues:0`
+*22.08. 13:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Implement missing diagnostic method and tighten error classification - Add the `_test_issue_operations` method to the diagnostic script, ensuring it exercises create, read, update, and delete flows. Simultaneously rewrite the
+
+### `last_swarm_critique`
+*22.08. 13:55 UTC · Quelle: critic*
+
+score=3; issues=Diagnostic script: Missing implementation of `_test_issue_operations` method called in `run_full_diagnostic`.; Robust issue creation: Incorrect retry logic - treats non-retryable errors (400, 401, 403 non-rate-limit, 404, 422) as retryable, cau
+
+### `swarm_artifact:Build comprehensive integration test suite for GitHub issue `
+*22.08. 13:55 UTC · Quelle: builder*
+
+# Comprehensive Integration Test Suite for GitHub Issue Operations  This test suite validates GitHub issue operations including creation, reading, updating, closing, reopening, labeling, and assigning
+
+### `swarm_artifact:Add webhook signature verification and idempotency handling`
+*22.08. 13:50 UTC · Quelle: builder*
+
+# GitHub Webhook Handler with Signature Verification and Idempotency  This Flask-based webhook handler securely processes GitHub webhook events by: 1. Verifying HMAC-SHA256 signatures using the `X-Hub
+
+### `swarm_artifact:Fix issue update/closure race conditions with optimistic loc`
+*22.08. 13:49 UTC · Quelle: builder*
+
+# Fixing GitHub Issue Update/Race Conditions with Optimistic Locking    When multiple processes or workers update the same GitHub Issue concurrently, the last write can silently overwrite earlier chan
+
+### `swarm_artifact:Implement robust issue creation with retry logic and exponen`
+*22.08. 13:48 UTC · Quelle: builder*
+
+```markdown # Robust GitHub Issue Creation with Retry & Exponential Backoff  This module provides a resilient `create_github_issue` function that handles transient failures, rate limiting (HTTP 403/42
+
+### `swarm_artifact:Diagnose GitHub API authentication and rate limit issues`
+*22.08. 13:48 UTC · Quelle: builder*
+
+# GitHub API Diagnostic Script  ```python #!/usr/bin/env python3 """ GitHub API Diagnostic Tool Tests connectivity, authentication, rate limits, and permissions for issue operations. """  import os im
+
+### `last_swarm_goal`
+*22.08. 13:44 UTC · Quelle: system*
+
+GitHub-Fehler bei Issues beheben
+
+### `dream:20260822:5`
+*22.08. 13:44 UTC · Quelle: dream*
+
+High latency variance (5-88s) on backup model makes fixed timeouts dangerous; percentile-based routing needed.
+
+### `dream:20260822:4`
+*22.08. 13:44 UTC · Quelle: dream*
+
+MemoryStore contract violations surface only at runtime: evolution critic flagged 'MemoryStore.add_fact' issues that startup validation would catch.
+
+### `dream:20260822:3`
+*22.08. 13:44 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain unused: 5 proposals generated yet drive goal explicitly notes 'few actually used' indicating deployment gap.
+
+### `dream:20260822:2`
+*22.08. 13:44 UTC · Quelle: dream*
+
+Evolution outperforms revision: simulation-revision loop hit 5-revision cap with score 4, but single evolution run jumped to 8-9 by generating variants.
+
+### `dream:20260822:1`
+*22.08. 13:44 UTC · Quelle: dream*
+
+Model fallback is critical: primary model (nemotron-3-ultra) failed with 502 while backup (nemotron-3-super) succeeded but showed 5-88s latency variance.
 
 ### `strategy:fähigkeitsvorschläge_in_echte_skills_umwandeln`
 *22.08. 13:22 UTC · Quelle: evolution*
