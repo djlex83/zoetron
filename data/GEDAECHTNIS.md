@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**504 Fakten** · Stand 2026-08-22 16:22 UTC · aktualisiert bei jedem Herzschlag
+**519 Fakten** · Stand 2026-08-22 16:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 201
-- **swarm_artifact:** 179
-- **last_swarm_goal:** 43
-- **last_swarm_critique:** 32
-- **strategy:** 27
-- **anti_pattern:** 14
+- **dream:** 206
+- **swarm_artifact:** 184
+- **last_swarm_goal:** 44
+- **last_swarm_critique:** 33
+- **strategy:** 28
+- **anti_pattern:** 16
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:modellfehler_finden_und_beheben`
+*22.08. 16:52 UTC · Quelle: evolution*
+
+Test‑Driven Refactoring (TDD) with Full Unit‑Test Suite - Test‑Driven Refactoring directly targets the missing implementations, syntax errors, and logic flaws by creating failing tests that expose each issue, then iteratively fixing them.
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler finden und :2`
+*22.08. 16:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Modular Re‑architecture with Dependency Injection & Configuration‑Driven Design - Decompose the monolithic scripts into three loosely‑coupled modules: (1) DiagnosticEngine, (2) SkillActivator, and (3) RevisionCapPolicy. Defin
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler finden und :1`
+*22.08. 16:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Automated Static Analysis & Lint‑First Repair Pipeline - Integrate a pre‑commit CI stage that runs pylint, flake8, bandit, and mypy on the codebase. Use the diagnostic output to automatically generate fix suggestions (via too
+
+### `last_swarm_critique`
+*22.08. 16:52 UTC · Quelle: critic*
+
+score=3; issues=Evolution Convergence Diagnostic script is incomplete: missing implementation, syntax errors (cut-off comment), missing main, historical trace keys mismatch.; Skill Activation Tracker report incorrectly generates names for unused skills (does n
+
+### `swarm_artifact:Validate Role Diversity Guarantee`
+*22.08. 16:50 UTC · Quelle: builder*
+
+# Validate Role Diversity Guarantee   **Goal:** Verify that the *guaranteed role diversity via set difference* strategy truly adds a previously absent role in every evolution cycle and quantify the im
+
+### `swarm_artifact:Enhance Critic Feedback Loop`
+*22.08. 16:50 UTC · Quelle: builder*
+
+# Critic Signal Logging and Analysis   *First step toward a richer, gradient‑like critic feedback loop.*  ## Purpose   - Log the raw critic signal emitted for each variant in every evolution cycle.   
+
+### `swarm_artifact:Fix Revision Cap Logic`
+*22.08. 16:49 UTC · Quelle: builder*
+
+```markdown # Fix Revision Cap Logic – Dynamic Budget + Early‑Stop  This artifact replaces the static revision‑cap with a **fixed‑budget** approach that stops early when the score improvement falls be
+
+### `swarm_artifact:Implement Skill Activation Tracking`
+*22.08. 16:49 UTC · Quelle: builder*
+
+## Skill Activation Tracker (Lightweight Sampling)  ```python #!/usr/bin/env python3 """ Skill Activation Tracker - Monitors 46 skill proposals. - Uses 10% cycle sampling to reduce overhead. - Logs ac
+
+### `swarm_artifact:Diagnose Evolution Convergence Failure`
+*22.08. 16:49 UTC · Quelle: builder*
+
+# Evolution Convergence Diagnostic Script  ```python #!/usr/bin/env python3 """ Evolution Convergence Diagnostic Simulates swarm evolution cycles to identify convergence bottleneck: - Revision cap vs 
+
+### `last_swarm_goal`
+*22.08. 16:43 UTC · Quelle: system*
+
+Modellfehler finden und beheben
+
+### `dream:20260822:5`
+*22.08. 16:43 UTC · Quelle: dream*
+
+Skill proposals accumulate (46) without activation tracking, creating "skill debt" where utility remains unmeasured.
+
+### `dream:20260822:4`
+*22.08. 16:43 UTC · Quelle: dream*
+
+Swarm evolution improves variant scores (4→8) but fails to converge within 2 cycles, suggesting revision cap or critic feedback loop is insufficient.
+
+### `dream:20260822:3`
+*22.08. 16:43 UTC · Quelle: dream*
+
+Hand actions fail due to missing MemoryStore methods (add_fact), revealing absent interface contract enforcement at runtime.
+
+### `dream:20260822:2`
+*22.08. 16:43 UTC · Quelle: dream*
+
+Model latency exhibits heavy-tailed distribution (up to 192s) with upstream 502 errors, making fixed timeouts unreliable for long swarm cycles.
+
+### `dream:20260822:1`
+*22.08. 16:43 UTC · Quelle: dream*
+
+Calibration consistently overestimates swarm performance (predicted 7 vs actual 4), indicating simulation scores are not grounded in historical outcomes.
 
 ### `dream:20260822:5`
 *22.08. 16:22 UTC · Quelle: dream*
