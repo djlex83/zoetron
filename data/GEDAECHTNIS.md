@@ -1,10 +1,10 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**276 Fakten** · Stand 2026-08-22 07:27 UTC · aktualisiert bei jedem Herzschlag
+**284 Fakten** · Stand 2026-08-22 08:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 110
-- **swarm_artifact:** 103
-- **last_swarm_goal:** 24
+- **dream:** 115
+- **swarm_artifact:** 105
+- **last_swarm_goal:** 25
 - **last_swarm_critique:** 18
 - **strategy:** 13
 - **frontier:** 3
@@ -13,6 +13,46 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Resolve 3 GitHub integration errors blocking automated sync/`
+*22.08. 08:06 UTC · Quelle: builder*
+
+# GitHub Integration Error Resolution Suite  **Resolution Date:** 2026-08-22   **Task:** Resolve 3 GitHub integration errors blocking automated sync/PR creation   **Method:** Isolated reproduction har
+
+### `swarm_artifact:Audit and catalog all dream-skill proposals with execution r`
+*22.08. 08:01 UTC · Quelle: builder*
+
+# Dream-Skill Proposals Audit & Execution Readiness Catalog  **Audit Date:** 2026-08-22   **Query Scope:** All skill proposals since 2026-08-22   **Methodology:** Dream store query → fallback synthesi
+
+### `last_swarm_goal`
+*22.08. 07:58 UTC · Quelle: system*
+
+Mine dream-swarm memory pair for novel skill synthesis
+
+### `dream:20260822:5`
+*22.08. 07:58 UTC · Quelle: dream*
+
+GitHub integration has 3 unresolved errors that block automated issue sync and PR creation.
+
+### `dream:20260822:4`
+*22.08. 07:58 UTC · Quelle: dream*
+
+Skill proposals accumulate in dreams but never reach production; the proposal-to-execution gap remains open.
+
+### `dream:20260822:3`
+*22.08. 07:58 UTC · Quelle: dream*
+
+Critic:builder ratio of 1:5 lets low-quality work pass; swarms converge false despite 2 cycles and evolution.
+
+### `dream:20260822:2`
+*22.08. 07:58 UTC · Quelle: dream*
+
+Calibration error of 4 points (predicted 5 vs actual 1) shows the planner’s self-assessment is untrustworthy.
+
+### `dream:20260822:1`
+*22.08. 07:58 UTC · Quelle: dream*
+
+Model latency variance (1.7–58.9s) breaks SLOs and makes swarm timing unpredictable.
 
 ### `swarm_artifact:Deploy detector to canary namespace and validate detection l`
 *22.08. 07:21 UTC · Quelle: builder*
