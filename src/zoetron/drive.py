@@ -75,7 +75,15 @@ class Drive:
         return goals
 
     def pick_goal(self) -> dict[str, Any] | None:
-        """Curiosity-weighted choice: novelty + failure-retry + staleness."""
+        """Curiosity-weighted choice: novelty + failure-retry + staleness.
+
+        Flüster-Kanal: Ziele aus data/fluester_goals.json (vom Menschen
+        eingetragen) haben absolute Priorität und werden nach der Wahl
+        als erledigt markiert.
+        """
+        whisper = self._take_whisper_goal()
+        if whisper:
+            return whisper
         goals = self.generate_goals()
         if not goals:
             return None
@@ -91,6 +99,42 @@ class Drive:
             "why": chosen.get("why", "")[:300],
         })
         return chosen
+
+    # -- signals --------------------------------------------------------- #
+    def _take_whisper_goal(self) -> dict[str, Any] | None:
+        """Ältestes ungewispertes Ziel aus dem Flüster-Kanal holen."""
+        path = self.cfg.data_dir / "fluester_goals.json"
+        try:
+            goals = json.loads(path.read_text())
+        except (OSError, json.JSONDecodeError):
+            return None
+        if not isinstance(goals, list):
+            return None
+        for g in goals:
+            if isinstance(g, dict) and not g.get("_done") \
+                    and g.get("title"):
+                g["_done"] = True
+                try:
+                    path.write_text(json.dumps(
+                        goals, ensure_ascii=False, indent=1))
+                except OSError:
+                    pass
+                self.memory.add_event("drive_whisper", {
+                    "title": str(g.get("title"))[:160],
+                    "why": str(g.get("why", ""))[:300],
+                })
+                # Auch als drive_goal protokollieren, damit der
+                # ACT-Lauf (neuestes Ziel zuerst) es sofort uebernimmt.
+                self.memory.add_event("drive_goal", {
+                    "title": str(g.get("title"))[:160],
+                    "why": str(g.get("why", ""))[:300],
+                    "signal": "whisper",
+                })
+                return {"title": str(g.get("title"))[:160],
+                        "why": str(g.get("why", ""))[:300]
+                        or "Vom Menschen direkt priorisiertes Ziel.",
+                        "signal": "gap"}
+        return None
 
     # -- signals --------------------------------------------------------- #
     def _collect_signals(self) -> dict[str, Any]:
