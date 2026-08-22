@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**628 Fakten** · Stand 2026-08-22 22:12 UTC · aktualisiert bei jedem Herzschlag
+**633 Fakten** · Stand 2026-08-22 22:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 266
+- **dream:** 271
 - **swarm_artifact:** 212
 - **last_swarm_goal:** 51
 - **last_swarm_critique:** 38
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 22:27 UTC · Quelle: dream*
+
+Pruning inactivity (0 facts/events) signals stale memory; trigger pruning when fact age > threshold or relevance < threshold.
+
+### `dream:20260822:4`
+*22.08. 22:27 UTC · Quelle: dream*
+
+MemoryStore contract validation at init and pre-batch prevents AttributeError cascades via fast-fail method-list diffs.
+
+### `dream:20260822:3`
+*22.08. 22:27 UTC · Quelle: dream*
+
+Skill proposals repeat without instantiation; tracking proposal→skill latency and auto-promoting failure-preventing skills closes the loop.
+
+### `dream:20260822:2`
+*22.08. 22:27 UTC · Quelle: dream*
+
+Simulation score MAE >1.5 requires automatic weight reduction in reward shaping to prevent misguided evolution.
+
+### `dream:20260822:1`
+*22.08. 22:27 UTC · Quelle: dream*
+
+Model latency variance (16–355 s) demands mandatory retry/fallback with alerting on >30 s spikes.
 
 ### `dream:20260822:5`
 *22.08. 22:12 UTC · Quelle: dream*
