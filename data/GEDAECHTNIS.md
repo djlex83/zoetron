@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**519 Fakten** · Stand 2026-08-22 16:53 UTC · aktualisiert bei jedem Herzschlag
+**534 Fakten** · Stand 2026-08-22 17:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 206
-- **swarm_artifact:** 184
-- **last_swarm_goal:** 44
-- **last_swarm_critique:** 33
-- **strategy:** 28
-- **anti_pattern:** 16
+- **dream:** 211
+- **swarm_artifact:** 189
+- **last_swarm_goal:** 45
+- **last_swarm_critique:** 34
+- **strategy:** 29
+- **anti_pattern:** 18
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:fehlermuster_aus_schwarm_träumen_nutzen`
+*22.08. 17:23 UTC · Quelle: evolution*
+
+Enforce a uniform plugin contract via an abstract base class - Variant 0 provides a clean, uniform plugin contract via an abstract base class, eliminating inconsistent return types and simplifying maintenance while being highly feasible and el
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fehlermuster aus Schwarm:2`
+*22.08. 17:23 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Refactor RoleManager.assign into a dependency‑injected factory with explicit err - Replace the opaque `RoleManager.assign` call with a `RoleFactory` interface that produces role objects given a typed configuration. The factor
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fehlermuster aus Schwarm:1`
+*22.08. 17:23 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Introduce a centralized normalization layer before plugin dispatch - Add a `DreamNormalizer` component that receives raw log lines, extracts a common structure (timestamp, raw message, severity level), and augments missing fi
+
+### `last_swarm_critique`
+*22.08. 17:23 UTC · Quelle: critic*
+
+score=6; issues=Inconsistent return types across plugins: SimpleDreamPlugin returns {'timestamp', 'message', 'type'} while DreamErrorPlugin in unit tests returns {'line', 'type'}, breaking protocol compatibility.; RegexDreamPlugin's fallback logic is flawed: l
+
+### `swarm_artifact:Build plugin injector with protocol-based dependency injecti`
+*22.08. 17:22 UTC · Quelle: builder*
+
+```python from typing import Protocol, List, Dict  class DreamErrorProtocol(Protocol):     def analyze(self, log: str) -> List[Dict[str, str]]: ...  class PluginA:     def analyze(self, log: str) -> L
+
+### `swarm_artifact:Create swarm dream log simulator and aggregate error pattern`
+*22.08. 17:22 UTC · Quelle: builder*
+
+```python try:     from typing import Protocol except ImportError:  # Python <3.8     from typing_extensions import Protocol  from typing import List, Dict, Iterable import random import re  class Dre
+
+### `swarm_artifact:Write unit tests for DreamErrorPlugin using TDD`
+*22.08. 17:21 UTC · Quelle: builder*
+
+```python import unittest from typing import List, Dict  class DreamErrorPlugin:     def analyze(self, log: str) -> List[Dict[str, str]]:         patterns = []         for line in log.splitlines():   
+
+### `swarm_artifact:Ensure role diversity via set difference for dream analysis `
+*22.08. 17:21 UTC · Quelle: builder*
+
+```markdown ```python from __future__ import annotations  from typing import Dict, Iterable, Optional, Set   class RoleExhaustionError(RuntimeError):     """Raised when there are no roles left to assi
+
+### `swarm_artifact:Define DreamErrorProtocol plug-in interface`
+*22.08. 17:20 UTC · Quelle: builder*
+
+```python try:     from typing import Protocol except ImportError:  # Python <3.8     from typing_extensions import Protocol  from typing import List, Dict import re  class DreamErrorProtocol(Protocol
+
+### `last_swarm_goal`
+*22.08. 17:14 UTC · Quelle: system*
+
+Fehlermuster aus Schwarm-Träumen nutzen
+
+### `dream:20260822:5`
+*22.08. 17:13 UTC · Quelle: dream*
+
+Dream‑based problem solving yields low scores (4/10), indicating underutilization of dream replay for creative solution generation.
+
+### `dream:20260822:4`
+*22.08. 17:13 UTC · Quelle: dream*
+
+Simulation verdicts frequently recommend revision, showing that current models require iterative refinement before acceptance.
+
+### `dream:20260822:3`
+*22.08. 17:13 UTC · Quelle: dream*
+
+High‑scoring evolution variants do not translate to swarm convergence, indicating insufficient variant diversity or revision depth.
+
+### `dream:20260822:2`
+*22.08. 17:13 UTC · Quelle: dream*
+
+Missing method implementations such as MemoryStore.add_fact cause AttributeError, revealing gaps in interface contracts that must be auto‑stubbed.
+
+### `dream:20260822:1`
+*22.08. 17:13 UTC · Quelle: dream*
+
+Latency spikes above twice the rolling median correlate with degraded performance, signaling a need for dynamic model switching or caching.
 
 ### `strategy:modellfehler_finden_und_beheben`
 *22.08. 16:52 UTC · Quelle: evolution*
