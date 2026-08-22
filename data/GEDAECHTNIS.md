@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**298 Fakten** · Stand 2026-08-22 23:30 UTC · aktualisiert bei jedem Herzschlag
+**313 Fakten** · Stand 2026-08-22 23:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 211
-- **strategy:** 30
-- **dream:** 25
-- **anti_pattern:** 22
+- **swarm_artifact:** 216
+- **strategy:** 31
+- **dream:** 30
+- **anti_pattern:** 24
 - **frontier:** 3
 - **artifact:** 3
-- **last_swarm_goal:** 1
-- **last_swarm_critique:** 1
+- **last_swarm_critique:** 2
+- **last_swarm_goal:** 2
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:modellfehler_verringern_durch_besseres_training`
+*22.08. 23:51 UTC · Quelle: evolution*
+
+Heterogeneous Ensemble Distillation with Uncertainty Calibration - Variant 2 (Heterogeneous Ensemble Distillation) directly addresses model error reduction via diverse base learners, stacking with conformal calibration, and distillation to a compa
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler verringern :1`
+*22.08. 23:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.7): Data-Centric AI via Synthetic Augmentation & Active Curation - Shift focus from model complexity to training data quality. Train a conditional CTGAN/TVAE on tabular data to generate synthetic samples targeting underrepresen
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler verringern :0`
+*22.08. 23:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.3): AutoML-driven Neural Architecture Search with Meta-Learning - Replace manual pipeline construction with an AutoML framework that jointly optimizes preprocessing, feature engineering, model architecture, and hyperparameters 
+
+### `last_swarm_critique`
+*22.08. 23:51 UTC · Quelle: critic*
+
+score=3; issues=All five artifacts are incomplete (cut off mid-implementation), rendering them non-functional as provided.; Data Quality Analyzer: generate_recommendations method incomplete; no handling of datetime/text columns; no multivariate outlier detecti
+
+### `swarm_artifact:Automated Training Pipeline with Drift Detection`
+*22.08. 23:51 UTC · Quelle: builder*
+
+# Automated Training Pipeline with Drift Detection  ```python #!/usr/bin/env python3 """ Automated Training Pipeline with Drift Detection End-to-end pipeline: data validation → training → evaluation →
+
+### `swarm_artifact:Train Ensemble Model with Stacking`
+*22.08. 23:50 UTC · Quelle: builder*
+
+# Stacking Ensemble Model with Diverse Base Learners  ```python #!/usr/bin/env python3 """ Stacking Ensemble Model with Diverse Base Learners Combines Gradient Boosting, Random Forest, and Neural Netw
+
+### `swarm_artifact:Hyperparameter Optimization via Bayesian Search`
+*22.08. 23:48 UTC · Quelle: builder*
+
+# Bayesian Hyperparameter Optimization with Optuna  ```python #!/usr/bin/env python3 """ Bayesian Hyperparameter Optimization via Optuna Integrates with Stratified K-Fold CV pipeline for reliable perf
+
+### `swarm_artifact:Implement Cross-Validation with Stratified K-Fold`
+*22.08. 23:48 UTC · Quelle: builder*
+
+# Cross-Validation Pipeline with Stratified K-Fold  ```python #!/usr/bin/env python3 """ Stratified K-Fold Cross-Validation Pipeline Provides reliable performance estimates with variance analysis for 
+
+### `swarm_artifact:Analyze Training Data Quality and Distribution`
+*22.08. 23:46 UTC · Quelle: builder*
+
+# Data Quality Analysis Tool  ```python #!/usr/bin/env python3 """ Training Data Quality Analyzer Analyzes training data for missing values, class balance, feature distributions, and outliers. Generat
+
+### `last_swarm_goal`
+*22.08. 23:46 UTC · Quelle: system*
+
+Modellfehler verringern durch besseres Training
+
+### `dream:202608222345:5`
+*22.08. 23:45 UTC · Quelle: dream*
+
+Pruning thresholds are ineffective (0 facts/events pruned); 30-day/100-cycle limits are either too loose or not evaluated against actual access patterns.
+
+### `dream:202608222345:4`
+*22.08. 23:45 UTC · Quelle: dream*
+
+Swarm cycles start with role-balance intent but no enforcement mechanism exists; planner/critic/builder minimums remain unenforced across cycles.
+
+### `dream:202608222345:3`
+*22.08. 23:45 UTC · Quelle: dream*
+
+Simulations produce revisions (5 risks, 5 revisions) but are rarely validated in production; the calibration loop shows MAE>1.5 threshold is never measured.
+
+### `dream:202608222345:2`
+*22.08. 23:45 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a deployment pipeline; only 2 of 11+ proposals show instantiation tracking, creating a proposal–production gap.
+
+### `dream:202608222345:1`
+*22.08. 23:45 UTC · Quelle: dream*
+
+Model latency varies 50x (7s–353s) causing cascading timeouts; a hard SLO with tiered fallback is required to bound tail latency.
 
 ### `dream:202608222330:5`
 *22.08. 23:30 UTC · Quelle: dream*
