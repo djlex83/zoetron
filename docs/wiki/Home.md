@@ -8,6 +8,7 @@ Aufbau, Organe und Betrieb.
 |---|---|
 | [[Architektur]] | Die 15 Organe und wie sie zusammenspielen |
 | [[Organe]] | Detailseiten jedes Organs |
+| [[Scoring]] | Das Notensystem: Score 0–10, Konvergenz bei 8 |
 | [[Betrieb]] | Herzschlag, Daemon, Crons, Telegram |
 | [[Roadmap]] | Was als Nächstes kommt |
 | [[FAQ]] | Häufige Fragen |
