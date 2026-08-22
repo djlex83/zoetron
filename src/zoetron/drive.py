@@ -48,6 +48,10 @@ class Drive:
             "(intrinsic motivation).\n"
             "Below are signals from its memory. Generate exactly "
             f"{n} self-chosen goals that maximize future capability.\n"
+            "IMPORTANT: Write 'title' AND 'why' in GERMAN, simple and "
+            "clear, so a non-technical human can understand what the "
+            "goal means and why it matters. 'title' = max 8 words. "
+            "'why' = 1-2 plain-German sentences (kein Fachchinesisch).\n"
             'Return ONLY JSON: {"goals": [{"title": str, "why": str, '
             '"signal": "gap|failure|stale|combination"}]}\n\n'
             '"task_type": "goals"\n'
