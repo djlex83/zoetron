@@ -1,18 +1,83 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**231 Fakten** · Stand 2026-08-22 04:44 UTC · aktualisiert bei jedem Herzschlag
+**244 Fakten** · Stand 2026-08-22 05:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 90
-- **swarm_artifact:** 86
-- **last_swarm_goal:** 20
-- **last_swarm_critique:** 16
-- **strategy:** 11
+- **dream:** 95
+- **swarm_artifact:** 91
+- **last_swarm_goal:** 21
+- **last_swarm_critique:** 17
+- **strategy:** 12
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:close_skill_proposal_to_execution_gap`
+*22.08. 05:17 UTC · Quelle: evolution*
+
+Test-Driven Implementation with Mandatory Verification Gates - Variant 0 (Test-Driven Implementation with Mandatory Verification Gates) scores highest across all dimensions. It directly addresses the critic's core complaint — zero implementati
+
+### `last_swarm_critique`
+*22.08. 05:16 UTC · Quelle: critic*
+
+score=1; issues=All five tasks show only exploratory commands (find, grep, ls) with zero implementation, testing, or verification steps; No code changes, patches, or configuration modifications were executed for any task; Missing `add_fact` method not implemen
+
+### `swarm_artifact:Automate revision feedback loop from execution failures`
+*22.08. 05:15 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50"}} {"tool": "bash", "args": {"command": "ls -la"}} {"tool": "bash", "args": {"command": "find . -type f \\( -name '*.yml' -
+
+### `swarm_artifact:Deploy cryptographic provenance tracking for skill proposals`
+*22.08. 05:15 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50"}} {"tool": "bash", "args": {"command": "ls -la"}} {"tool": "bash", "args": {"command": "find . -type f \\( -name '*.yml' -
+
+### `swarm_artifact:Enforce CI gate for simulation-emitted patches`
+*22.08. 05:15 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | grep -E '(simulation|engine|ci|test)' | head -30"}} {"tool": "bash", "args": {"command": "ls -la"}} {"tool": "bash", "args": {"comma
+
+### `swarm_artifact:Build dream-memory embedding and clustering pipeline`
+*22.08. 05:15 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -30"}} {"tool": "bash", "args": {"command": "ls -la"}} {"tool": "bash", "args": {"command": "find . -type f -name '*.py' | xarg
+
+### `swarm_artifact:Implement missing `add_fact` method in simulation layer`
+*22.08. 05:15 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | grep -E '(simulation|engine)' | head -20"}} {"tool": "bash", "args": {"command": "grep -r 'add_fact' --include='*.py' . | head -20"}
+
+### `last_swarm_goal`
+*22.08. 05:14 UTC · Quelle: system*
+
+Close skill-proposal-to-execution gap
+
+### `dream:20260822:5`
+*22.08. 05:14 UTC · Quelle: dream*
+
+Dream-memory integration scored 3/10 because insights stay as text; they must be embedded, clustered, and linked to live skills for reuse.
+
+### `dream:20260822:4`
+*22.08. 05:14 UTC · Quelle: dream*
+
+Simulation-to-action gap: 9 revisions across two goals yet hand fails on missing `add_fact` method; simulation must emit executable patches that pass CI before 'applied'.
+
+### `dream:20260822:3`
+*22.08. 05:14 UTC · Quelle: dream*
+
+Swarm converges false despite evolution (score 3→9) because critic count=1 and no dissent gate; minimum 2 critics + dissent threshold required.
+
+### `dream:20260822:2`
+*22.08. 05:14 UTC · Quelle: dream*
+
+Planner consistently overestimates by ~40% (pred 5 vs actual 3); a per-goal-type bias buffer would correct this.
+
+### `dream:20260822:1`
+*22.08. 05:14 UTC · Quelle: dream*
+
+Model latency varies 15x (7.6s–115.9s) making fixed timeouts unreliable; SLA-aware routing is needed.
 
 ### `swarm_artifact:Create Execution Verification Harness`
 *22.08. 04:41 UTC · Quelle: builder*
