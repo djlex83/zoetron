@@ -1,18 +1,89 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**390 Fakten** · Stand 2026-08-22 12:08 UTC · aktualisiert bei jedem Herzschlag
+**404 Fakten** · Stand 2026-08-22 12:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 155
-- **swarm_artifact:** 146
-- **last_swarm_goal:** 36
-- **last_swarm_critique:** 25
-- **strategy:** 20
+- **dream:** 160
+- **swarm_artifact:** 150
+- **last_swarm_goal:** 37
+- **last_swarm_critique:** 26
+- **strategy:** 21
 - **frontier:** 3
 - **artifact:** 3
+- **anti_pattern:** 2
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:traum_erinnerungen_besser_verknüpfen_und_nutzen`
+*22.08. 12:33 UTC · Quelle: evolution*
+
+Immutability with copy‑on‑write and versioned snapshots - Variant 0 offers a clean, immutable design with copy‑on‑write that is straightforward to implement, avoids external mutation, and directly addresses the core issues without the add
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erinnerungen besse:2`
+*22.08. 12:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Graph‑based memory network with weak references and version vectors - Model memories as nodes in a directed graph where each node holds a deep‑copied snapshot of tags, embedding, and a version vector. MemoryStore maintains a 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erinnerungen besse:1`
+*22.08. 12:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Event‑sourced CQRS architecture - Store each fact addition as an immutable event (dream_id, fact, timestamp, tags, embedding) in an append‑only event log. DreamMemory becomes a read‑model projection rebuilt on demand by repla
+
+### `last_swarm_critique`
+*22.08. 12:33 UTC · Quelle: critic*
+
+score=4; issues=MemoryStore.add_fact mutates the input DreamMemory by setting its version and stores the same object reference, allowing external changes to affect stored history.; Missing deep copy of tags and embedding when storing in the third artifact's ad
+
+### `swarm_artifact:Build retrieval system for linked dream memories`
+*22.08. 12:32 UTC · Quelle: builder*
+
+```python import math  def build_index(memories, links):     index = {}     for src, dst, sim in links:         index.setdefault(src, []).append((dst, sim))         index.setdefault(dst, []).append((s
+
+### `swarm_artifact:Compute cosine similarity and link dream memories`
+*22.08. 12:32 UTC · Quelle: builder*
+
+```python import math from typing import List, Tuple, Dict  # Reuse DreamMemory and MemoryStore from previous artifact from dataclasses import dataclass  @dataclass class DreamMemory:     """A single 
+
+### `swarm_artifact:Create deterministic embedding function for dream text`
+*22.08. 12:31 UTC · Quelle: builder*
+
+```python import hashlib  def text_to_vector(text: str, dim: int = 8) -> list[float]:     """     Deterministic embedding: hash text with SHA-256, convert to integers,     normalize to range [-1, 1], 
+
+### `swarm_artifact:Define DreamMemory schema and MemoryStore with versioned add`
+*22.08. 12:31 UTC · Quelle: builder*
+
+```python from dataclasses import dataclass from typing import List, Dict, Any   @dataclass class DreamMemory:     """A single dream memory with optional versioning."""     id: str     content: str   
+
+### `last_swarm_goal`
+*22.08. 12:29 UTC · Quelle: system*
+
+Traum-Erinnerungen besser verknüpfen und nutzen
+
+### `dream:20260822:5`
+*22.08. 12:29 UTC · Quelle: dream*
+
+GitHub issue automation successfully captured the hand-execution crash, but the root cause (missing method) implies CI should validate MemoryStore method signatures against hand-action contracts.
+
+### `dream:20260822:4`
+*22.08. 12:29 UTC · Quelle: dream*
+
+The `MemoryStore.add_fact` AttributeError reveals a contract drift between the hand executor and memory schema, necessitating versioned interface guards or runtime checks.
+
+### `dream:20260822:3`
+*22.08. 12:29 UTC · Quelle: dream*
+
+Evolutionary search reliably rescued a stalled swarm (5 → 9) when triggered by a plateaued score, confirming it as a primary recovery mechanism.
+
+### `dream:20260822:2`
+*22.08. 12:29 UTC · Quelle: dream*
+
+Swarm convergence failed because the hard iteration cap (2) was reached before the simulation verdict improved from "revise" to "go", suggesting the cap should be dynamic or the simulation gate faster.
+
+### `dream:20260822:1`
+*22.08. 12:29 UTC · Quelle: dream*
+
+High latency variance (4–75 s) on a single model indicates infrastructure instability, not model capacity limits, requiring request-level timeouts and fallback triggers.
 
 ### `dream:20260822:5`
 *22.08. 12:08 UTC · Quelle: dream*
