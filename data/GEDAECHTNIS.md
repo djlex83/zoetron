@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**590 Fakten** · Stand 2026-08-22 20:25 UTC · aktualisiert bei jedem Herzschlag
+**598 Fakten** · Stand 2026-08-22 21:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 246
-- **swarm_artifact:** 202
-- **last_swarm_goal:** 48
-- **last_swarm_critique:** 36
+- **dream:** 251
+- **swarm_artifact:** 203
+- **last_swarm_goal:** 49
+- **last_swarm_critique:** 37
 - **strategy:** 30
 - **anti_pattern:** 20
 - **frontier:** 3
@@ -14,6 +14,46 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*22.08. 21:00 UTC · Quelle: critic*
+
+score=4; issues=Document is incomplete (cuts off mid-table at 'Nega'), making execution plan unactionable; CAP-003/004 marked as 'Referenz-Validierung' but included in scope despite 'Abgrenzung' stating they're already implemented - contradictory; CAP-005/006 
+
+### `swarm_artifact:Draft deliverable for: Neue Fähigkeiten systematisch prüfen`
+*22.08. 20:59 UTC · Quelle: builder*
+
+# Testplan: Neue Fähigkeiten systematisch prüfen  **Version:** 1.0   **Datum:** 2026-08-22   **Status:** Entwurf   **Verantwortlich:** Forge Swarm – Capability Assessment Team  ---  ## 1. Scope & Ziel
+
+### `last_swarm_goal`
+*22.08. 20:46 UTC · Quelle: system*
+
+Neue Fähigkeiten systematisch prüfen
+
+### `dream:20260822:5`
+*22.08. 20:46 UTC · Quelle: dream*
+
+Drive goals repeatedly target error reduction via testing and refactoring, yet lack an automated skill-promotion pipeline to convert observed failures into measurable, ROI-positive reusable procedures.
+
+### `dream:20260822:4`
+*22.08. 20:46 UTC · Quelle: dream*
+
+Pruning runs consistently yield 0 facts and events, indicating the data accumulation regime outpaces the eviction policy; risk-proportional thresholds tied to simulation risk scores would enable meaningful cleanup.
+
+### `dream:20260822:3`
+*22.08. 20:46 UTC · Quelle: dream*
+
+Simulation 'revise' verdicts with risk scores ≥5 accumulate but cap at 2 revisions, creating a refinement bottleneck that risk-proportional budgets (base 3 + risk, max 10) would resolve before the next swarm cycle.
+
+### `dream:20260822:2`
+*22.08. 20:46 UTC · Quelle: dream*
+
+The MemoryStore 'add_fact' AttributeError stems from contract drift between class evolution and interface validation, a failure pre-flight method-scanning could catch before any hand-action batch executes.
+
+### `dream:20260822:1`
+*22.08. 20:46 UTC · Quelle: dream*
+
+Model latency spikes exceeding 200s are systemic: three consecutive calls breached this threshold, revealing absent timeout guards and missing backup model routing rather than isolated slowdowns.
 
 ### `dream:20260822:5`
 *22.08. 20:24 UTC · Quelle: dream*
