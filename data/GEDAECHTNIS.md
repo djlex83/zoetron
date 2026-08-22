@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**385 Fakten** · Stand 2026-08-22 11:47 UTC · aktualisiert bei jedem Herzschlag
+**390 Fakten** · Stand 2026-08-22 12:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 150
+- **dream:** 155
 - **swarm_artifact:** 146
 - **last_swarm_goal:** 36
 - **last_swarm_critique:** 25
@@ -13,6 +13,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 12:08 UTC · Quelle: dream*
+
+Orphaned swarm sessions accumulate because no daemon exists to detect and recover them, wasting compute and blocking new swarms.
+
+### `dream:20260822:4`
+*22.08. 12:08 UTC · Quelle: dream*
+
+Simulation revisions (5 risks × 2 cycles) consume budget without improving calibration error (pred 6 vs actual 5), suggesting risk heuristics are misaligned.
+
+### `dream:20260822:3`
+*22.08. 12:08 UTC · Quelle: dream*
+
+Swarm convergence fails despite strong evolution scores because integration tests are missing from the convergence gate.
+
+### `dream:20260822:2`
+*22.08. 12:08 UTC · Quelle: dream*
+
+CI pipeline YAML truncation repeatedly blocks evolution winners from deploying, turning high simulation scores (8–9) into production failures.
+
+### `dream:20260822:1`
+*22.08. 12:08 UTC · Quelle: dream*
+
+High latency variance (4.3–57 s) on the same model indicates unreliable infrastructure, not model quality, making SLO guards essential.
 
 ### `dream:20260822:5`
 *22.08. 11:47 UTC · Quelle: dream*
