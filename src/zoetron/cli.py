@@ -147,11 +147,30 @@ def main(argv: list[str] | None = None) -> int:
         handled = {str((e.get("payload") or {}).get("goal_title", ""))
                    for e in mem.events(kind="act_done", limit=200)}
         goal = None
-        for e in mem.events(kind="drive_goal", limit=50):
-            title = str((e.get("payload") or {}).get("title", ""))
-            if title and title not in handled:
-                goal = title
-                break
+        # FLUESTER-PRIO: ungewisperte Ziele aus data/fluester_goals.json
+        # haben absolute Vorfahrt vor den DRIVE-Zielen.
+        try:
+            _wpath = Path(cfg.data_dir) / "fluester_goals.json"
+            _wgoals = json.loads(_wpath.read_text()) if _wpath.exists() else []
+            for _wg in (_wgoals if isinstance(_wgoals, list) else []):
+                if isinstance(_wg, dict) and not _wg.get("_done") \
+                        and _wg.get("title"):
+                    _wg["_done"] = True
+                    _wpath.write_text(json.dumps(
+                        _wgoals, ensure_ascii=False, indent=1))
+                    goal = str(_wg["title"])[:160]
+                    mem.add_event("drive_whisper", {
+                        "title": goal,
+                        "why": str(_wg.get("why", ""))[:300]})
+                    break
+        except (OSError, json.JSONDecodeError):
+            pass
+        if not goal:
+            for e in mem.events(kind="drive_goal", limit=50):
+                title = str((e.get("payload") or {}).get("title", ""))
+                if title and title not in handled:
+                    goal = title
+                    break
         if not goal:
             print("act: keine unbehandelten Ziele")
             return 0
