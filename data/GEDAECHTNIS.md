@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**598 Fakten** · Stand 2026-08-22 21:01 UTC · aktualisiert bei jedem Herzschlag
+**613 Fakten** · Stand 2026-08-22 21:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 251
-- **swarm_artifact:** 203
-- **last_swarm_goal:** 49
-- **last_swarm_critique:** 37
-- **strategy:** 30
-- **anti_pattern:** 20
+- **dream:** 256
+- **swarm_artifact:** 208
+- **last_swarm_goal:** 50
+- **last_swarm_critique:** 38
+- **strategy:** 31
+- **anti_pattern:** 22
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:simulationsergebnisse_direkt_in_aktionen_umsetzen`
+*22.08. 21:32 UTC · Quelle: evolution*
+
+Declarative Rule Engine with Policy-as-Code - Variant 1 (Declarative Rule Engine) directly addresses the root causes: incomplete parsers, missing classes, and inconsistent naming by replacing imperative parsing/execution logic
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationsergebnisse di:2`
+*22.08. 21:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.3): Actor Model with Hierarchical Supervision - Implement in Akka Typed / Orleans / Proto.Actor: SimulationActor (per run) → on completion sends SimulationResult to CoordinatorActor. CoordinatorActor spawns ActionPlannerActor (
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationsergebnisse di:0`
+*22.08. 21:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5.7): Event-Driven Stream Processing Pipeline - Replace the monolithic parser/executor with a Kafka/Redis Streams pipeline: SimulationRunner publishes raw results to 'simulation.raw' topic → StreamProcessor (stateless, horizontal
+
+### `last_swarm_critique`
+*22.08. 21:32 UTC · Quelle: critic*
+
+score=3; issues=Multiple methods are incomplete/cut off mid-implementation: JsonSimulationParser._extract_actions, SimpleEmbeddingProvider.embed, ComplexityAnalyzer.analyze, ActionExecutionTracker.get_correlations, SyntheticSimulationRunner.run_simulation; Mis
+
+### `swarm_artifact:Integrate Simulation-to-Action Pipeline into Planner`
+*22.08. 21:31 UTC · Quelle: builder*
+
+# Simulation-to-Action Pipeline Integration  ```python """ Simulation-to-Action Pipeline Integration Wires all components into the main planning loop: simulation runs → result parsing → action mapping
+
+### `swarm_artifact:Create Action Execution Tracker with Simulation Correlation`
+*22.08. 21:30 UTC · Quelle: builder*
+
+# Action Execution Tracker with Simulation Correlation  ```python """ Action Execution Tracker with Simulation Correlation Tracks executed actions and correlates outcomes with originating simulation p
+
+### `swarm_artifact:Build Dynamic Revision Cap Calculator`
+*22.08. 21:27 UTC · Quelle: builder*
+
+# Dynamic Revision Cap Calculator  ```python """ Dynamic Revision Cap Calculator Risk-aware budget allocation that adjusts revision caps based on task complexity, historical failure rates, and simulat
+
+### `swarm_artifact:Implement Feedback Loop Engine for Dream Insights`
+*22.08. 21:24 UTC · Quelle: builder*
+
+# Feedback Loop Engine for Dream Insights  ```python """ Feedback Loop Engine for Dream Insights Systematically feeds dream insights and swarm error patterns back into the next planning cycle. Stores 
+
+### `swarm_artifact:Create Simulation Result Parser with Action Mapping`
+*22.08. 21:23 UTC · Quelle: builder*
+
+# Simulation Result Parser with Action Mapping  ```python """ Simulation Result Parser with Action Mapping Extracts actionable decisions from simulation outputs and maps them to concrete forge actions
+
+### `last_swarm_goal`
+*22.08. 21:22 UTC · Quelle: system*
+
+Simulationsergebnisse direkt in Aktionen umsetzen
+
+### `dream:20260822:5`
+*22.08. 21:22 UTC · Quelle: dream*
+
+Dream insights and swarm error patterns are not systematically fed back into the next planning cycle.
+
+### `dream:20260822:4`
+*22.08. 21:22 UTC · Quelle: dream*
+
+Fixed revision caps ignore task risk, starving complex tasks and over-spending on simple ones.
+
+### `dream:20260822:3`
+*22.08. 21:22 UTC · Quelle: dream*
+
+Interface contracts are absent, leading to AttributeError and return-type mismatches at runtime.
+
+### `dream:20260822:2`
+*22.08. 21:22 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an automated validation-to-deployment pipeline, so high-ROI ideas stall.
+
+### `dream:20260822:1`
+*22.08. 21:22 UTC · Quelle: dream*
+
+Model latency varies 36× (9–331 s) with no fallback, causing unpredictable task duration.
 
 ### `last_swarm_critique`
 *22.08. 21:00 UTC · Quelle: critic*
