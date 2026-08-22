@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**623 Fakten** · Stand 2026-08-22 22:08 UTC · aktualisiert bei jedem Herzschlag
+**628 Fakten** · Stand 2026-08-22 22:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 261
+- **dream:** 266
 - **swarm_artifact:** 212
 - **last_swarm_goal:** 51
 - **last_swarm_critique:** 38
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 22:12 UTC · Quelle: dream*
+
+Pruning removes zero facts/events suggesting retention thresholds are too conservative for memory pressure.
+
+### `dream:20260822:4`
+*22.08. 22:12 UTC · Quelle: dream*
+
+Skill proposals accumulate but instantiation latency remains unmeasured creating deployment blind spots.
+
+### `dream:20260822:3`
+*22.08. 22:12 UTC · Quelle: dream*
+
+Simulation predictions systematically overestimate outcomes (MAE=1) indicating miscalibrated reward shaping.
+
+### `dream:20260822:2`
+*22.08. 22:12 UTC · Quelle: dream*
+
+Latency variance exceeds 10x (14s–244s) making fixed timeout policies ineffective without adaptive guards.
+
+### `dream:20260822:1`
+*22.08. 22:12 UTC · Quelle: dream*
+
+Model endpoints exhibit unreliable availability with 502 overload and 429 rate-limit errors requiring robust fallback chains.
 
 ### `swarm_artifact:Externalize Configuration with Dependency Injection`
 *22.08. 22:08 UTC · Quelle: builder*
