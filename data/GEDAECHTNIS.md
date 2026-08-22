@@ -1,19 +1,89 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**419 Fakten** · Stand 2026-08-22 12:57 UTC · aktualisiert bei jedem Herzschlag
+**433 Fakten** · Stand 2026-08-22 13:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 165
-- **swarm_artifact:** 155
-- **last_swarm_goal:** 38
-- **last_swarm_critique:** 27
-- **strategy:** 22
-- **anti_pattern:** 4
+- **dream:** 170
+- **swarm_artifact:** 159
+- **last_swarm_goal:** 39
+- **last_swarm_critique:** 28
+- **strategy:** 23
+- **anti_pattern:** 6
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:fähigkeitsvorschläge_in_echte_skills_umwandeln`
+*22.08. 13:22 UTC · Quelle: evolution*
+
+Functional Pipeline with Type‑Safe Data Classes - Variant 1 offers a clean functional pipeline with type‑safe dataclasses and Either‑based error handling, eliminating repetitive code, providing clear testability, and delivering st
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeitsvorschläge in :2`
+*22.08. 13:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Configuration‑Driven YAML Template Engine - Externalize all variant‑specific logic (bullet regex, transformation rules, default values) into a YAML configuration file. A small engine loads the config, compiles the regexes, an
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeitsvorschläge in :0`
+*22.08. 13:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Modular Parser with Configurable Patterns - Create a SkillExtractor class that accepts regex patterns (bullet style, delimiters) via constructor or config file. Core methods: _load_input (file/str), _normalize_bullets (unifie
+
+### `last_swarm_critique`
+*22.08. 13:22 UTC · Quelle: critic*
+
+score=5; issues=Code snippets are repetitive and could be refactored into reusable functions.; No error handling for edge cases (empty input, missing matches, etc.).; Hardcoded sample strings limit reusability; should accept parameters or read from file/input.
+
+### `swarm_artifact:Generate summary report`
+*22.08. 13:21 UTC · Quelle: builder*
+
+```python import re  sample = ''' - Python programming - Datenanalyse mit Pandas - Maschinelles Lernen Grundlagen - Öffentliches Sprechen''' suggestions = re.findall(r'^- (.+)', sample, flags=re.MULTI
+
+### `swarm_artifact:Create skill entries in registry`
+*22.08. 13:21 UTC · Quelle: builder*
+
+```python import re import uuid  # Sample input containing bullet‑point skill suggestions sample = ''' - Python programming - Datenanalyse mit Pandas - Maschinelles Lernen Grundlagen - Öffentliches Sp
+
+### `swarm_artifact:Validate suggestions against known skill taxonomy`
+*22.08. 13:21 UTC · Quelle: builder*
+
+```python import re from difflib import get_close_matches  def normalize(text: str) -> str:     """Strip whitespace and lower‑case for case‑insensitive comparison."""     return text.strip().lower()  
+
+### `swarm_artifact:Extract skill suggestions from input text`
+*22.08. 13:21 UTC · Quelle: builder*
+
+```python import re  sample = ''' - Python programming - Datenanalyse mit Pandas - Maschinelles Lernen Grundlagen - Öffentliches Sprechen'''  # Regex to match bullet points with optional leading white
+
+### `last_swarm_goal`
+*22.08. 13:18 UTC · Quelle: system*
+
+Fähigkeitsvorschläge in echte Skills umwandeln
+
+### `dream:20260822:5`
+*22.08. 13:18 UTC · Quelle: dream*
+
+Variable model error rates motivate a real‑time health registry with circuit‑breaker routing to healthy endpoints.
+
+### `dream:20260822:4`
+*22.08. 13:18 UTC · Quelle: dream*
+
+Orphaned swarm sessions linger without cleanup; a TTL‑based session reaper reduces manual intervention.
+
+### `dream:20260822:3`
+*22.08. 13:18 UTC · Quelle: dream*
+
+Model latency spiked to 30 s, exceeding typical SLOs; a p99 latency guard with automatic failover improves reliability.
+
+### `dream:20260822:2`
+*22.08. 13:18 UTC · Quelle: dream*
+
+The missing MemoryStore.add_fact method caused an AttributeError; enforcing interface contracts via unit tests stops such runtime failures.
+
+### `dream:20260822:1`
+*22.08. 13:18 UTC · Quelle: dream*
+
+A critic-to-builder ratio of 1:5 prevented swarm convergence; maintaining at least 1 critic per 2 builders is needed for stable decisions.
 
 ### `strategy:fehler_beim_handeln_verstehen_und_beheben`
 *22.08. 12:57 UTC · Quelle: evolution*
