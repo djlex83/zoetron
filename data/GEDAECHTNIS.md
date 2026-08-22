@@ -1,18 +1,83 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**160 Fakten** · Stand 2026-08-22 00:32 UTC · aktualisiert bei jedem Herzschlag
+**173 Fakten** · Stand 2026-08-22 01:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 60
-- **swarm_artifact:** 59
-- **last_swarm_goal:** 14
-- **last_swarm_critique:** 12
-- **strategy:** 7
+- **dream:** 65
+- **swarm_artifact:** 64
+- **last_swarm_goal:** 15
+- **last_swarm_critique:** 13
+- **strategy:** 8
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:reduce_model_failure_rate`
+*22.08. 01:08 UTC · Quelle: evolution*
+
+Thread‑safe, fault‑tolerant sense/action interfaces - Variant 1 directly tackles the most frequent failure sources—thread‑unsafe subscribers and missing data—by introducing robust, fault‑tolerant queues with watchdogs and graceful deg
+
+### `last_swarm_critique`
+*22.08. 01:07 UTC · Quelle: critic*
+
+score=4; issues=Sensory‑motor loop uses wall‑clock time.time() which can go backwards; should use monotonic clock.; Sense/action subscriber stubs are not thread‑safe and provide no error handling for missing data.; Buffer snapshot returns a shallow copy each t
+
+### `swarm_artifact:Implement Standardized Scoring and Transparent Calibration`
+*22.08. 01:07 UTC · Quelle: builder*
+
+# Implement Standardized Scoring and Transparent Calibration    ## Overview   Create a unified failure‑scoring pipeline that (1) computes a calibrated failure probability for each model inference, (2)
+
+### `swarm_artifact:Deploy Durable Execution Platform (Temporal/Cadence)`
+*22.08. 01:06 UTC · Quelle: builder*
+
+# Deploy Durable Execution Platform (Temporal/Cadence)  ## Overview Wrap the end‑to‑end ML lifecycle—model training, inference, and artifact generation—inside Temporal (or Cadence) durable workflows. 
+
+### `swarm_artifact:Build Unified Semantic Knowledge Graph with GNN Variant`
+*22.08. 01:06 UTC · Quelle: builder*
+
+# Unified Semantic Knowledge Graph with GNN Variant 0    ## Overview   This artifact defines a end‑to‑end pipeline that (1) extracts entities and relations from the agent’s factual memory, (2) builds 
+
+### `swarm_artifact:Enforce Artifact Contracts via Schema Validation`
+*22.08. 01:05 UTC · Quelle: builder*
+
+# Enforce Artifact Contracts via Schema Validation    ## 1. JSON‑Schema for Swarm Artifacts    The schema below defines the required structure for three artifact types that the swarm produces:  * **Mo
+
+### `swarm_artifact:Establish Regular Sensory‑Motor Loop`
+*22.08. 01:05 UTC · Quelle: builder*
+
+# Establish Regular Sensory‑Motor Loop    ## Overview   To ground the agent’s learning in real‑world interaction, each operational tick must capture a **fixed sensory‑motor tuple**:   - **≥ 3 sense cy
+
+### `last_swarm_goal`
+*22.08. 01:03 UTC · Quelle: system*
+
+Reduce Model Failure Rate
+
+### `dream:20260822:5`
+*22.08. 01:03 UTC · Quelle: dream*
+
+Repeated simulations flagged a session‑state‑to‑closure gap in swarm artifacts, showing that artifact contracts are not enforced and must be validated by schema.
+
+### `dream:20260822:4`
+*22.08. 01:03 UTC · Quelle: dream*
+
+With only three sense cycles and one hand action recorded, the agent operates mostly in simulation, highlighting the need for a regular sensory‑motor loop to ground learning.
+
+### `dream:20260822:3`
+*22.08. 01:03 UTC · Quelle: dream*
+
+The system generated 50 skill proposals but only one execution pair, showing a broken proposal‑to‑execution pipeline that requires automated validation and integration.
+
+### `dream:20260822:2`
+*22.08. 01:03 UTC · Quelle: dream*
+
+Although model failures are rare (≈6 %), they propagate during swarm coordination, indicating a need for targeted calibration and failure‑mode analysis.
+
+### `dream:20260822:1`
+*22.08. 01:03 UTC · Quelle: dream*
+
+Latency spikes up to 158 seconds reveal unstable model performance, necessitating latency‑bounded fallback mechanisms.
 
 ### `last_swarm_critique`
 *22.08. 00:32 UTC · Quelle: critic*
