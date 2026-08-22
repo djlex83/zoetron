@@ -1,7 +1,5 @@
 # 🫀 Zoetron
 
-[![CI](https://github.com/djlex83/zoetron/actions/workflows/ci.yml/badge.svg)](https://github.com/djlex83/zoetron/actions/workflows/ci.yml)
-
 [🇬🇧 English version](README.md)
 
 **Ein autonomer Agent-Organismus, der aus jeder Erfahrung schlauer wird –
