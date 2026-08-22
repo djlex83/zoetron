@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**448 Fakten** · Stand 2026-08-22 13:56 UTC · aktualisiert bei jedem Herzschlag
+**453 Fakten** · Stand 2026-08-22 14:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 175
+- **dream:** 180
 - **swarm_artifact:** 164
 - **last_swarm_goal:** 40
 - **last_swarm_critique:** 29
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 14:16 UTC · Quelle: dream*
+
+Drive goals emphasize linking dream insights to actions and improving recall speed, suggesting that extracting actionable verbs from dreams and indexing them accelerates goal‑driven skill retrieval.
+
+### `dream:20260822:4`
+*22.08. 14:16 UTC · Quelle: dream*
+
+Simulation‑driven revision cycles (up to 3 revisions) consistently changed verdicts to “revise” and reduced risks, indicating that iterative simulation‑guided revisions enhance correctness.
+
+### `dream:20260822:3`
+*22.08. 14:16 UTC · Quelle: dream*
+
+Evolutionary variant generation (3 variants) raised scores from 7 to 9, demonstrating that evaluating multiple model variants and selecting the winner improves reliability.
+
+### `dream:20260822:2`
+*22.08. 14:16 UTC · Quelle: dream*
+
+Calibration revealed a 3‑unit absolute error (predicted 4 vs actual 7), indicating that simple outcome‑driven linear regression updates can reduce prediction bias.
+
+### `dream:20260822:1`
+*22.08. 14:16 UTC · Quelle: dream*
+
+Latency fluctuates widely (3.8‑34.1 s), showing a need for dynamic latency‑aware model switching to keep response times bounded.
 
 ### `strategy:github_fehler_bei_issues_beheben`
 *22.08. 13:56 UTC · Quelle: evolution*
