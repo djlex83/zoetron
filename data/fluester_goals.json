@@ -2,6 +2,7 @@
  {
   "title": "Semantic-Knowledge-Graph als Organ einbauen",
   "why": "Die GNN-Strategie existiert bisher nur als Design im Gedächtnis. Baue einen echten Graph-Code, der Träume und Artefakte verknüpft und maschinell Duplikate erkennt.",
-  "signal": "gap"
+  "signal": "gap",
+  "_done": true
  }
 ]

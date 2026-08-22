@@ -1,10 +1,10 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**319 Fakten** · Stand 2026-08-22 10:15 UTC · aktualisiert bei jedem Herzschlag
+**327 Fakten** · Stand 2026-08-22 10:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 130
+- **dream:** 135
 - **swarm_artifact:** 118
-- **last_swarm_goal:** 28
+- **last_swarm_goal:** 31
 - **last_swarm_critique:** 20
 - **strategy:** 15
 - **frontier:** 3
@@ -13,6 +13,46 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 10:46 UTC · Quelle: dream*
+
+Skill proposals recur across dreams (pipeline promotion, latency scheduler) but lack a persistence mechanism to graduate them to production.
+
+### `dream:20260822:4`
+*22.08. 10:46 UTC · Quelle: dream*
+
+Calibration error of 1 point (predicted 5 vs actual 6) shows the predictor is well-tuned for throughput tasks.
+
+### `dream:20260822:3`
+*22.08. 10:46 UTC · Quelle: dream*
+
+Swarm evolution improves scores (6→9) but fails to converge within budget cycles, indicating insufficient iteration depth or reward shaping.
+
+### `dream:20260822:2`
+*22.08. 10:46 UTC · Quelle: dream*
+
+MemoryStore interface drift (missing _prune_if_, add_fact) causes repeated hand-action crashes despite successful simulations.
+
+### `dream:20260822:1`
+*22.08. 10:46 UTC · Quelle: dream*
+
+Model endpoint failures (502 overload) trigger automatic fallback to smaller models, maintaining throughput but increasing latency variance.
+
+### `last_swarm_goal`
+*22.08. 10:43 UTC · Quelle: system*
+
+Semantic-Knowledge-Graph als Organ einbauen
+
+### `last_swarm_goal`
+*22.08. 10:41 UTC · Quelle: system*
+
+Close Simulation-to-Action Gap
+
+### `last_swarm_goal`
+*22.08. 10:26 UTC · Quelle: system*
+
+Leverage Distant Dream Memories for Skill Generation
 
 ### `swarm_artifact:Implement Automated Convergence Gates`
 *22.08. 10:15 UTC · Quelle: builder*
