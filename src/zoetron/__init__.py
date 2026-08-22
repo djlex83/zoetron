@@ -1,5 +1,5 @@
 """Zoetron — recursive ASI-style agent loop (mock-first, provider-agnostic)."""
-__version__ = "0.1.0"
+__version__ = "0.3.0"
 
 from .config import Config
 from .core import ForgeAgent, Task, CycleReport
