@@ -1,19 +1,96 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**468 Fakten** · Stand 2026-08-22 14:44 UTC · aktualisiert bei jedem Herzschlag
+**483 Fakten** · Stand 2026-08-22 15:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 185
-- **swarm_artifact:** 169
-- **last_swarm_goal:** 41
-- **last_swarm_critique:** 30
-- **strategy:** 25
-- **anti_pattern:** 10
+- **dream:** 190
+- **swarm_artifact:** 174
+- **last_swarm_goal:** 42
+- **last_swarm_critique:** 31
+- **strategy:** 26
+- **anti_pattern:** 12
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:träume_nutzen`
+*22.08. 15:14 UTC · Quelle: evolution*
+
+Introduce a plug‑in architecture with protocol‑based dependency injection - Variant 2 introduces a plug‑in architecture with protocol‑based dependency injection, which cleanly decouples modules, centralizes enum definitions, and enforces required methods a
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Träume nutzen
+Critic iss:1`
+*22.08. 15:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Apply the Template Method pattern with explicit abstract contracts - Define `AnalyzerTemplate` and `ExecutorTemplate` as ABCs using `abc.ABC`. In `AnalyzerTemplate`, implement `__init__` to accept required parameters and decl
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Träume nutzen
+Critic iss:0`
+*22.08. 15:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Centralize shared enums and enforce implementation via inheritance - Create a single `skill_enums.py` module containing `SkillCategory` and `SimulationOutcome`. Have `DreamSkillAnalyzer` and `CognitiveSkillExecutor` import th
+
+### `last_swarm_critique`
+*22.08. 15:13 UTC · Quelle: critic*
+
+score=4; issues=DreamSkillAnalyzer.__init__ method is incomplete (missing implementation).; DreamSkillAnalyzer class lacks core analysis method (analyze) to compute statistics.; CognitiveSkillExecutor class is incomplete (only prepare method defined, missing e
+
+### `swarm_artifact:Create automated feedback loop to evolve dream-utilization s`
+*22.08. 15:13 UTC · Quelle: builder*
+
+# Automated Feedback Loop for Dream‑Utilization Strategy Evolution    A closed‑loop system that continuously:  1. **Selects** a skill proposal based on the current policy.   2. **Executes** the skill 
+
+### `swarm_artifact:Design functional pipeline for dream-skill extraction with t`
+*22.08. 15:12 UTC · Quelle: builder*
+
+```markdown # Dream‑Skill Extraction Pipeline  A functional, type‑safe pipeline that loads raw dream records, extracts skill proposals, validates them with Either‑based error handling, computes a util
+
+### `swarm_artifact:Implement simulation-to-reality calibration comparator`
+*22.08. 15:12 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Simulation-to-Reality Calibration Comparator Compares predicted outcomes from dream simulations against actual execution results to quantify calibration error and 
+
+### `swarm_artifact:Build validation harness to test dream-skill effectiveness a`
+*22.08. 15:10 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Dream Skill Validation Harness - Test framework that applies dream-derived skills to benchmark tasks and measures performance delta vs baseline. """  from __future
+
+### `swarm_artifact:Load and analyze dream-derived skill proposals and simulatio`
+*22.08. 15:07 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Dream Skill Analyzer - Load and analyze dream-derived skill proposals and simulations. Parses 46 skill proposals and 13 simulations from dream memory, extracts str
+
+### `last_swarm_goal`
+*22.08. 15:05 UTC · Quelle: system*
+
+Träume nutzen
+
+### `dream:20260822:5`
+*22.08. 15:05 UTC · Quelle: dream*
+
+Calibration error (pred 6 vs actual 5) and swarm non-convergence (score 5, 2 cycles) show reward signal misalignment between simulation and reality.
+
+### `dream:20260822:4`
+*22.08. 15:05 UTC · Quelle: dream*
+
+MemoryStore contract violation (missing add_fact) surfaced only at hand-execution time; startup validation would catch it earlier.
+
+### `dream:20260822:3`
+*22.08. 15:05 UTC · Quelle: dream*
+
+Evolution boosted score from 5→9 in one generation, proving targeted mutation outperforms repeated simulation revisions.
+
+### `dream:20260822:2`
+*22.08. 15:05 UTC · Quelle: dream*
+
+Simulation-revision loops (3 then 2 revisions) indicate static revision caps waste compute; plateau detection would auto-escalate to evolution.
+
+### `dream:20260822:1`
+*22.08. 15:05 UTC · Quelle: dream*
+
+Model latency varies 28x (4.7s–133.5s) without circuit-breaker, causing unpredictable swarm cycle times.
 
 ### `strategy:bekannte_fehler_systematisch_beheben_und_verhinder`
 *22.08. 14:44 UTC · Quelle: evolution*
