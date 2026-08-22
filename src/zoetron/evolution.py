@@ -94,7 +94,7 @@ class Evolution:
                 for j, v in enumerate(variants):
                     if j == outcome["index"]:
                         continue
-                    self.memory.add_fact(
+                    self.memory.remember_fact(
                         f"anti_pattern:{problem[:60]}:{j}",
                         f"ABGELEHNT von Evolution (Score "
                         f"{(outcome['scores'] or ['?'])[j:j+1][0] if outcome['scores'] else '?'}): "
