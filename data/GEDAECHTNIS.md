@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**633 Fakten** · Stand 2026-08-22 22:28 UTC · aktualisiert bei jedem Herzschlag
+**638 Fakten** · Stand 2026-08-22 22:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 271
+- **dream:** 276
 - **swarm_artifact:** 212
 - **last_swarm_goal:** 51
 - **last_swarm_critique:** 38
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 22:43 UTC · Quelle: dream*
+
+Revision budgets are fixed (1 revision observed) while risk scores vary (3 risks), leading to under-exploration of high-risk improvements.
+
+### `dream:20260822:4`
+*22.08. 22:43 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are validated; no sandbox-to-production pipeline exists to measure real-world ROI before merge.
+
+### `dream:20260822:3`
+*22.08. 22:43 UTC · Quelle: dream*
+
+Simulation calibration currently shows zero error (MAE=0) but lacks continuous drift detection, risking silent degradation of reward shaping.
+
+### `dream:20260822:2`
+*22.08. 22:43 UTC · Quelle: dream*
+
+Multiple independent proposals converge on contract validation, retry/fallback, and latency-aware routing, revealing a systemic reliability gap.
+
+### `dream:20260822:1`
+*22.08. 22:43 UTC · Quelle: dream*
+
+Model latency varies by 27× (13s–355s) without automatic failover, causing unpredictable delays that stall the cognitive loop.
 
 ### `dream:20260822:5`
 *22.08. 22:27 UTC · Quelle: dream*
