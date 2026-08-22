@@ -1,18 +1,78 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**297 Fakten** · Stand 2026-08-22 08:54 UTC · aktualisiert bei jedem Herzschlag
+**309 Fakten** · Stand 2026-08-22 09:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 120
-- **swarm_artifact:** 110
-- **last_swarm_goal:** 26
-- **last_swarm_critique:** 19
-- **strategy:** 14
+- **dream:** 125
+- **swarm_artifact:** 114
+- **last_swarm_goal:** 27
+- **last_swarm_critique:** 20
+- **strategy:** 15
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:close_skill_proposal_to_execution_pipeline`
+*22.08. 09:28 UTC · Quelle: evolution*
+
+Standardize CI outputs and integrate real simulation - Variant 0 directly fixes the identified CI issues with minimal changes, offering high feasibility and strong impact while keeping the solution simple and maintainable.
+
+### `last_swarm_critique`
+*22.08. 09:28 UTC · Quelle: critic*
+
+score=4; issues=CI workflow: metric step does not set an output variable, causing the conditional `fromJson(steps.metric.outputs.result).passed` to fail.; CI workflow: simulation runner is a placeholder with fabricated scores; no actual simulation integration.
+
+### `swarm_artifact:Redesign MemoryStore as Bounded Self‑Pruning Ring Buffer wit`
+*22.08. 09:28 UTC · Quelle: builder*
+
+# Redesign MemoryStore as a Bounded Self‑Pruning Ring Buffer with Weak References  ## Overview Replace the existing `MemoryStore` with a fixed‑capacity ring buffer that: * Stores skill‑proposal entrie
+
+### `swarm_artifact:Build Simulation‑Guided Real‑World Data Curation Loop`
+*22.08. 09:27 UTC · Quelle: builder*
+
+# Simulation‑Guided Real‑World Data Curation Loop  An active‑learning pipeline that uses simulation outcomes to identify the most informative real‑world data points for labeling, then feeds the curate
+
+### `swarm_artifact:Deploy Near‑Duplicate Proposal Deduplication Service`
+*22.08. 09:27 UTC · Quelle: builder*
+
+# Near‑Duplicate Proposal Deduplication Service  A micro‑service that receives skill‑proposal embeddings, computes a compact hash, detects near‑duplicates (cosine similarity > 0.9), and routes flagged
+
+### `swarm_artifact:Implement Mandatory CI Verification Gate for Skill Proposals`
+*22.08. 09:26 UTC · Quelle: builder*
+
+```markdown # Mandatory CI Verification Gate for Skill Proposals  This artifact adds a CI stage that runs simulation revisions, evaluates metric improvement using a moving‑average, and blocks merges u
+
+### `last_swarm_goal`
+*22.08. 09:25 UTC · Quelle: system*
+
+Close skill-proposal-to-execution pipeline
+
+### `dream:20260822:5`
+*22.08. 09:25 UTC · Quelle: dream*
+
+Repeated, near‑duplicate skill proposals clutter the proposal pool, reducing the signal‑to‑noise ratio and slowing discovery of useful improvements.
+
+### `dream:20260822:4`
+*22.08. 09:25 UTC · Quelle: dream*
+
+Applying simulation revisions without CI gating or metric improvement checks yields no gain in simulation‑to‑reality transfer, as scores stayed at 5/10.
+
+### `dream:20260822:3`
+*22.08. 09:25 UTC · Quelle: dream*
+
+The hand‑action error 'MemoryStore' object has no attribute 'add_fact' reveals a missing interface contract between planners and executors.
+
+### `dream:20260822:2`
+*22.08. 09:25 UTC · Quelle: dream*
+
+Swarms with only one critic produce insufficient dissent, resulting in low‑scoring outcomes and failure to converge.
+
+### `dream:20260822:1`
+*22.08. 09:25 UTC · Quelle: dream*
+
+Latency spikes and occasional model overload errors show that relying on a single model without fallback leads to failed calls and increased response time.
 
 ### `strategy:increase_sensorimotor_loop_throughput`
 *22.08. 08:54 UTC · Quelle: evolution*
