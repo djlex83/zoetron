@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**558 Fakten** · Stand 2026-08-22 18:24 UTC · aktualisiert bei jedem Herzschlag
+**563 Fakten** · Stand 2026-08-22 18:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 221
+- **dream:** 226
 - **swarm_artifact:** 197
 - **last_swarm_goal:** 47
 - **last_swarm_critique:** 35
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 18:45 UTC · Quelle: dream*
+
+Calibration consistently overestimates success (predicted 5 vs actual 3), causing the planner to under-allocate verification steps.
+
+### `dream:20260822:4`
+*22.08. 18:45 UTC · Quelle: dream*
+
+Simulation repeatedly returns 'revise' verdicts (4–5 risks) yet revision caps prevent closure, creating a revision–convergence deadlock.
+
+### `dream:20260822:3`
+*22.08. 18:45 UTC · Quelle: dream*
+
+Critical runtime AttributeError ('MemoryStore' missing 'add_fact') reveals interface contracts are not validated before deployment.
+
+### `dream:20260822:2`
+*22.08. 18:45 UTC · Quelle: dream*
+
+Evolution boosted candidate scores from 3 to 9 but swarm failed to converge due to insufficient critic/planner ratio (1:5 builder dominance).
+
+### `dream:20260822:1`
+*22.08. 18:45 UTC · Quelle: dream*
+
+Model latency exhibits extreme variance (6s–354s) making performance unpredictable and causing cascade delays in swarm cycles.
 
 ### `swarm_artifact:Add property-based testing for model invariants`
 *22.08. 18:24 UTC · Quelle: builder*
