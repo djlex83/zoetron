@@ -1,19 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**534 Fakten** · Stand 2026-08-22 17:24 UTC · aktualisiert bei jedem Herzschlag
+**549 Fakten** · Stand 2026-08-22 17:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 211
-- **swarm_artifact:** 189
-- **last_swarm_goal:** 45
-- **last_swarm_critique:** 34
-- **strategy:** 29
-- **anti_pattern:** 18
+- **dream:** 216
+- **swarm_artifact:** 194
+- **last_swarm_goal:** 46
+- **last_swarm_critique:** 35
+- **strategy:** 30
+- **anti_pattern:** 20
 - **frontier:** 3
 - **artifact:** 3
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:ci_pipeline_reparieren_und_simulation_validieren`
+*22.08. 17:48 UTC · Quelle: evolution*
+
+Configuration‑as‑code & dependency injection - Variant 1 provides the most elegant and impactful solution by externalizing configuration and using dependency injection, which directly resolves the file‑handling bugs, eliminates
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: CI-Pipeline reparieren u:2`
+*22.08. 17:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Contract testing & simulation sandbox - Introduce a contract‑testing layer (e.g., using Pact or JSON Schema) that defines the expected interface between the CI scripts and the simulation tool. Each script writes its output to
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: CI-Pipeline reparieren u:0`
+*22.08. 17:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Defensive programming & explicit error handling - Revise the revision‑limit and role‑distribution scripts to validate inputs before use: replace the incorrect MAX_REVISIONS keyword with the correct max_allowed parameter, add 
+
+### `last_swarm_critique`
+*22.08. 17:48 UTC · Quelle: critic*
+
+score=4; issues=Revision limit script calls enforce_revision_limit with wrong keyword argument MAX_REVISIONS instead of max_allowed, causing TypeError.; Role distribution script does not handle missing ci_pipeline_config.json file and will raise FileNotFoundEr
+
+### `swarm_artifact:Validierung der Simulationsergebnisse durch automatisierte A`
+*22.08. 17:48 UTC · Quelle: builder*
+
+```python import random import os import sys  def run_simulation():     """Simuliere ein Ergebniswert zwischen 0 und 100"""     return random.randint(0, 100)  def validate_simulation_result(result, th
+
+### `swarm_artifact:Durchsetzen eines einheitlichen Plugin‑Contracts mittels abs`
+*22.08. 17:47 UTC · Quelle: builder*
+
+```markdown ```python from abc import ABC, abstractmethod  class PluginBase(ABC):     @abstractmethod     def execute(self):         """Execute the plugin's core functionality."""         pass  class 
+
+### `swarm_artifact:Einführung eines Test‑Driven Refactoring mit vollständiger U`
+*22.08. 17:47 UTC · Quelle: builder*
+
+```markdown ```python # test_pipeline.py import unittest import os import sys  # ---------------------------------------------------------------------- # Functions under test (normally imported from t
+
+### `swarm_artifact:Begrenzen der Simulationsrevisionen auf maximal 2 Durchläufe`
+*22.08. 17:47 UTC · Quelle: builder*
+
+```markdown ```python import os import sys  def get_revision_count() -> int:     """     Retrieve the number of simulation revisions from the CI environment.     Expected environment variable: SIMULAT
+
+### `swarm_artifact:Analyse und Anpassen der Rollenverteilung im CI-Pipeline`
+*22.08. 17:46 UTC · Quelle: builder*
+
+```markdown ```python import json  # Load existing config (could be from file) config = {"roles": ["builder", "builder", "planner", "builder", "critic"]}  # Ensure at least one planner and critic requ
+
+### `last_swarm_goal`
+*22.08. 17:44 UTC · Quelle: system*
+
+CI-Pipeline reparieren und simulation validieren
+
+### `dream:20260822:5`
+*22.08. 17:44 UTC · Quelle: dream*
+
+Allowing up to 5 simulation revisions still produced a 'revise' verdict and high risk, suggesting the revision limit is too permissive.
+
+### `dream:20260822:4`
+*22.08. 17:44 UTC · Quelle: dream*
+
+Swarm role distribution heavily favored builders (5) with few planners/critics, correlating with non‑convergence and low scores (7).
+
+### `dream:20260822:3`
+*22.08. 17:44 UTC · Quelle: dream*
+
+Small variant searches (3 variants) in evolution runs yielded high scores (8‑9), showing limited exploration can still improve performance.
+
+### `dream:20260822:2`
+*22.08. 17:44 UTC · Quelle: dream*
+
+The missing MemoryStore.add_fact method caused an AttributeError that halted hand‑actions, revealing interface contract violations.
+
+### `dream:20260822:1`
+*22.08. 17:44 UTC · Quelle: dream*
+
+Latency spikes above 10 seconds occur after model switches or under load, indicating a need for latency guarding.
 
 ### `strategy:fehlermuster_aus_schwarm_träumen_nutzen`
 *22.08. 17:23 UTC · Quelle: evolution*
