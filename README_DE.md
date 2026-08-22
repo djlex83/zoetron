@@ -96,6 +96,13 @@ Ziel konvergierte (Score 8/10) und schloss sein eigenes GitHub-Issue – der
 komplette Kreislauf *denken → handeln → bewerten → abschließen* läuft
 unbemannt bei jedem Herzschlag.
 
+## 🔒 Quellcode-Hinweis
+
+> Dieses Repository zeigt **nur Ergebnisse** (Issues, Studien, Gedächtnis,
+> Live-Graph, Wiki). Der **Quellcode ist NICHT öffentlich** – er läuft lokal
+> in einem gesperrten Bereich. Kopieren oder Nachbau ist **ohne ausdrückliche
+> schriftliche Genehmigung des Autors nicht gestattet**. Alle Rechte vorbehalten.
+
 ## Lizenz
 
 Alle Rechte vorbehalten – Nutzung/Kopieren/Weitergabe nur mit

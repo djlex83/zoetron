@@ -94,6 +94,18 @@ automatically. **Milestone:** the first fully autonomous goal converged
 (score 8/10) and closed its own GitHub issue — the complete
 think → act → assess → close loop now runs unattended on every heartbeat.
 
+## 🔒 Source Code Notice / Quellcode-Hinweis
+
+> **🇬🇧** This repository shows **results only** (issues, studies, memory, live graph, wiki).
+> The **source code (`src/`, `scripts/`, `tests/`) is NOT public** – it runs locally in a
+> locked area. Copying or rebuilding is **not permitted** without explicit written
+> permission from the author. All rights reserved.
+>
+> **🇩🇪** Dieses Repository zeigt **nur Ergebnisse** (Issues, Studien, Gedächtnis,
+> Live-Graph, Wiki). Der **Quellcode ist NICHT öffentlich** – er läuft lokal in einem
+> gesperrten Bereich. Kopieren oder Nachbau ist **ohne ausdrückliche schriftliche
+> Genehmigung des Autors nicht gestattet**. Alle Rechte vorbehalten.
+
 ## License
 
 Alle Rechte vorbehalten – Nutzung/Kopieren/Weitergabe nur mit
