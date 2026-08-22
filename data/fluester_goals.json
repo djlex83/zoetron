@@ -8,6 +8,7 @@
  {
   "title": "Semantic-Knowledge-Graph als Organ einbauen (Code-Pflicht)",
   "why": "Zwei Anlaeufe endeten bei Score 3, weil nur Design-Dokumente gebaut wurden. Jetzt gibt es eine Code-Pflicht im Planner. Baue einen echten Python-Graph: Knoten fuer Träume/Artefakte, Kanten bei Aehnlichkeit, Duplikat-Erkennung als ausfuehrbares Skript.",
-  "signal": "failure"
+  "signal": "failure",
+  "_done": true
  }
 ]
