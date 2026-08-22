@@ -200,19 +200,27 @@ def main(argv: list[str] | None = None) -> int:
                 if not _blocks:
                     continue
                 _code_snip = _blocks[0][:4000]
-                if "def main" in _code_snip or "__main__" in _code_snip \
-                        or len(_code_snip.splitlines()) >= 3:
+                # Nur eigenstaendig lauffaehigen Code ausfuehren:
+                # CLI-Tools mit Pflicht-Argumenten (argparse etc.)
+                # koennen wir keine Parameter mitgeben.
+                _needs_args = ("add_argument" in _code_snip
+                               and "required" in _code_snip)
+                if not _needs_args and len(_code_snip.splitlines()) >= 3:
                     _res = _hands.execute(_code_snip, timeout=20.0)
                     mem.add_fact(
                         f"hand_result:{goal[:80]}",
                         json.dumps({"ok": _res.get("ok"),
                                     "stdout": (_res.get("stdout") or "")
                                     [:300],
+                                    "stderr": (_res.get("stderr") or "")
+                                    [:200],
                                     "error": _res.get("error")},
                                    ensure_ascii=False),
                         source="hands")
                     print(f"hands: ausgefuehrt -> "
-                          f"{'ok' if _res.get('ok') else 'fehler'}")
+                          f"{'ok' if _res.get('ok') else 'fehler'}"
+                          + ("" if _res.get("ok") else
+                             f" | {(_res.get('stderr') or '')[:80]}"))
                     break
         except Exception as exc:  # noqa: BLE001 - motorics must not kill ACT
             mem.add_event("gh_issue_error", {
