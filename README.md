@@ -96,21 +96,17 @@ think → act → assess → close loop now runs unattended on every heartbeat.
 
 ## 🔒 Source Code Notice / Quellcode-Hinweis
 
-> **🇩🇪 Zugang zum Quellcode (2 Stufen):**
-> **Stufe 1 – Anfrage:** €10.000 Anfragegebühr. Sie filtert Ernsthaftigkeit:
-> **Ohne Gebühr kein Gespräch.** Kontakt: GitHub **@djlex83**.
-> **Stufe 2 – Gespräch & Lizenz:** Das Werk ist **deutlich mehr wert** als die
-> Anfragegebühr. Preis und Lizenzbedingungen werden ausschließlich persönlich
-> verhandelt. Spam und Anfragen ohne Gebühr werden ignoriert.
+> **🇩🇪 Zugang zum Quellcode:** Der Code ist nicht öffentlich (gesperrter Bereich).
+> **Lizenz & Zusammenarbeit nur auf seriöse, schriftliche Anfrage** über GitHub
+> **@djlex83** – mit echtem Namen, Hintergrund und konkretem Anliegen.
+> Formlose Massen-Nachrichten, Werbeangebote und „Preis?“-One-Liner werden
+> ignoriert. Lizenzvergabe erfordert Vertrag + NDA. Alle Rechte vorbehalten.
 >
-> **🇬🇧 Source access (2 steps):**
-> **Step 1 – Request:** €10,000 request fee filters for seriousness —
-> **no fee, no conversation.** Contact: GitHub **@djlex83**.
-> **Step 2 – Talk & license:** The work itself is worth **considerably more**
-> than the fee; price and license terms are negotiated personally.
-> Spam and fee-less requests are ignored.
->
-> Alle Rechte vorbehalten / All rights reserved.
+> **🇬🇧 Source access:** The code is not public (locked area). **License &
+> collaboration only via serious written request** at GitHub **@djlex83** —
+> real name, background and a concrete matter required. Generic mass messages,
+> sales offers and one-line “price?” inquiries are ignored. Licensing requires
+> contract + NDA. All rights reserved.
 
 ## License
 

@@ -98,14 +98,11 @@ unbemannt bei jedem Herzschlag.
 
 ## 🔒 Quellcode-Hinweis
 
-> **Zugang zum Quellcode (2 Stufen):**
-> **Stufe 1 – Anfrage:** €10.000 Anfragegebühr. Sie filtert Ernsthaftigkeit:
-> **Ohne Gebühr kein Gespräch.** Kontakt: GitHub **@djlex83**.
-> **Stufe 2 – Gespräch & Lizenz:** Das Werk ist **deutlich mehr wert** als die
-> Anfragegebühr. Preis und Lizenzbedingungen werden ausschließlich persönlich
-> verhandelt. Spam und Anfragen ohne Gebühr werden ignoriert.
->
-> Alle Rechte vorbehalten.
+> Der Code ist nicht öffentlich (gesperrter Bereich).
+> **Lizenz & Zusammenarbeit nur auf seriöse, schriftliche Anfrage** über GitHub
+> **@djlex83** – mit echtem Namen, Hintergrund und konkretem Anliegen.
+> Formlose Massen-Nachrichten, Werbeangebote und „Preis?“-One-Liner werden
+> ignoriert. Lizenzvergabe erfordert Vertrag + NDA. Alle Rechte vorbehalten.
 
 ## Lizenz
 
