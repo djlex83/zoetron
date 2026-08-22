@@ -79,5 +79,5 @@ PYEOF
   bash scripts/wiki_sync.sh
 
   log "=== HERZSCHLAG ENDE ==="
-  sleep 1800
+  sleep 1200
 done
