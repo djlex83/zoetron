@@ -201,10 +201,20 @@ class SwarmOrchestrator:
         """Heredity: winning strategies from past evolutions feed the planner."""
         wins = [f["value"] for f in self.memory.facts()
                 if f["key"].startswith("strategy:")]
-        if not wins:
+        # ANTI-PATTERNS: abgelehnte Ansaetze explizit verbieten.
+        banned = [f["value"] for f in self.memory.facts()
+                  if f["key"].startswith("anti_pattern:")][-6:]
+        if not wins and not banned:
             return ""
         tail = "\n".join(f"- {w[:160]}" for w in wins[-3:])
-        return f"\nWinning strategies from past evolutions:\n{tail}"
+        out = ""
+        if wins:
+            out += f"\nWinning strategies from past evolutions:\n{tail}\n"
+        if banned:
+            bl = "\n".join(f"- {b[:140]}" for b in banned)
+            out += (f"\nFORBIDDEN approaches (rejected by earlier "
+                    f"evolution, do NOT repeat them):\n{bl}\n")
+        return out
 
     # -- phases ---------------------------------------------------------- #
     def _orient(self, goal: str) -> str:

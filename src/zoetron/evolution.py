@@ -89,6 +89,19 @@ class Evolution:
             result["variants"] = len(variants)
             outcome = self.select(problem, variants)
             if outcome:
+                # ANTI-PATTERNS: Verworfene Varianten merken - sie
+                # duerfen nicht erneut vorgeschlagen werden.
+                for j, v in enumerate(variants):
+                    if j == outcome["index"]:
+                        continue
+                    self.memory.add_fact(
+                        f"anti_pattern:{problem[:60]}:{j}",
+                        f"ABGELEHNT von Evolution (Score "
+                        f"{(outcome['scores'] or ['?'])[j:j+1][0] if outcome['scores'] else '?'}): "
+                        f"{str(v.get('angle', ''))[:80]} - "
+                        f"{str(v.get('solution', ''))[:200]} "
+                        f"NICHT wiederholt anbieten.",
+                        source="evolution")
                 result.update({
                     "winner_angle": str(outcome["winner"].get("angle", ""))[:100],
                     "score": (outcome["scores"] or [None])[outcome["index"]]
