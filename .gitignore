@@ -9,3 +9,9 @@ secrets/
 data/hands_workspace/
 data/impulse_state.json
 data/heartbeat.log
+
+# === KOPFSCHUTZ: Quellcode nicht oeffentlich (Nutzer-Wunsch) ===
+src/
+scripts/
+tests/
+pyproject.toml
