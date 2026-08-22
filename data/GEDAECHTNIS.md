@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**498 Fakten** · Stand 2026-08-22 15:39 UTC · aktualisiert bei jedem Herzschlag
+**499 Fakten** · Stand 2026-08-22 16:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 195
+- **dream:** 196
 - **swarm_artifact:** 179
 - **last_swarm_goal:** 43
 - **last_swarm_critique:** 32
@@ -14,6 +14,11 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:1`
+*22.08. 16:00 UTC · Quelle: dream*
+
+Dream could not parse its own output - check prompt size.
 
 ### `strategy:fehler_im_modell_vermeiden`
 *22.08. 15:39 UTC · Quelle: evolution*
