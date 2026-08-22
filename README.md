@@ -96,15 +96,21 @@ think → act → assess → close loop now runs unattended on every heartbeat.
 
 ## 🔒 Source Code Notice / Quellcode-Hinweis
 
-> **🇬🇧** This repository shows **results only** (issues, studies, memory, live graph, wiki).
-> The **source code (`src/`, `scripts/`, `tests/`) is NOT public** – it runs locally in a
-> locked area. Copying or rebuilding is **not permitted** without explicit written
-> permission from the author. All rights reserved.
+> **🇩🇪 Zugang zum Quellcode (2 Stufen):**
+> **Stufe 1 – Anfrage:** €10.000 Anfragegebühr. Sie filtert Ernsthaftigkeit:
+> **Ohne Gebühr kein Gespräch.** Kontakt: GitHub **@djlex83**.
+> **Stufe 2 – Gespräch & Lizenz:** Das Werk ist **deutlich mehr wert** als die
+> Anfragegebühr. Preis und Lizenzbedingungen werden ausschließlich persönlich
+> verhandelt. Spam und Anfragen ohne Gebühr werden ignoriert.
 >
-> **🇩🇪** Dieses Repository zeigt **nur Ergebnisse** (Issues, Studien, Gedächtnis,
-> Live-Graph, Wiki). Der **Quellcode ist NICHT öffentlich** – er läuft lokal in einem
-> gesperrten Bereich. Kopieren oder Nachbau ist **ohne ausdrückliche schriftliche
-> Genehmigung des Autors nicht gestattet**. Alle Rechte vorbehalten.
+> **🇬🇧 Source access (2 steps):**
+> **Step 1 – Request:** €10,000 request fee filters for seriousness —
+> **no fee, no conversation.** Contact: GitHub **@djlex83**.
+> **Step 2 – Talk & license:** The work itself is worth **considerably more**
+> than the fee; price and license terms are negotiated personally.
+> Spam and fee-less requests are ignored.
+>
+> Alle Rechte vorbehalten / All rights reserved.
 
 ## License
 

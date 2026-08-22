@@ -98,10 +98,14 @@ unbemannt bei jedem Herzschlag.
 
 ## 🔒 Quellcode-Hinweis
 
-> Dieses Repository zeigt **nur Ergebnisse** (Issues, Studien, Gedächtnis,
-> Live-Graph, Wiki). Der **Quellcode ist NICHT öffentlich** – er läuft lokal
-> in einem gesperrten Bereich. Kopieren oder Nachbau ist **ohne ausdrückliche
-> schriftliche Genehmigung des Autors nicht gestattet**. Alle Rechte vorbehalten.
+> **Zugang zum Quellcode (2 Stufen):**
+> **Stufe 1 – Anfrage:** €10.000 Anfragegebühr. Sie filtert Ernsthaftigkeit:
+> **Ohne Gebühr kein Gespräch.** Kontakt: GitHub **@djlex83**.
+> **Stufe 2 – Gespräch & Lizenz:** Das Werk ist **deutlich mehr wert** als die
+> Anfragegebühr. Preis und Lizenzbedingungen werden ausschließlich persönlich
+> verhandelt. Spam und Anfragen ohne Gebühr werden ignoriert.
+>
+> Alle Rechte vorbehalten.
 
 ## Lizenz
 
