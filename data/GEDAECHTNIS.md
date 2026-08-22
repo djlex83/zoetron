@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**380 Fakten** · Stand 2026-08-22 11:26 UTC · aktualisiert bei jedem Herzschlag
+**385 Fakten** · Stand 2026-08-22 11:47 UTC · aktualisiert bei jedem Herzschlag
 
+- **dream:** 150
 - **swarm_artifact:** 146
-- **dream:** 145
 - **last_swarm_goal:** 36
 - **last_swarm_critique:** 25
 - **strategy:** 20
@@ -13,6 +13,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260822:5`
+*22.08. 11:47 UTC · Quelle: dream*
+
+Orphaned hand actions that exit with non‑zero codes and no error trace highlight the necessity of robust error reporting and session cleanup.
+
+### `dream:20260822:4`
+*22.08. 11:47 UTC · Quelle: dream*
+
+A low critic‑to‑builder ratio (1:5) correlated with unsuccessful swarm convergence, indicating that sufficient critic feedback is essential for quality.
+
+### `dream:20260822:3`
+*22.08. 11:47 UTC · Quelle: dream*
+
+Increasing the number of variants in evolution runs directly improved scores, showing that systematic exploration yields better solutions.
+
+### `dream:20260822:2`
+*22.08. 11:47 UTC · Quelle: dream*
+
+The AttributeError on missing 'add_fact' reveals that cross‑module method contracts must be validated with automated interface tests.
+
+### `dream:20260822:1`
+*22.08. 11:47 UTC · Quelle: dream*
+
+Latency spikes above 20 seconds often occur during simulation revision phases, signaling the need for runtime SLO guards to prevent stalls.
 
 ### `strategy:semantic_knowledge_graph_als_organ_einbauen__code_`
 *22.08. 11:26 UTC · Quelle: evolution*

@@ -10,5 +10,23 @@
   "key": "swarm_artifact:Implement Standardized Scoring & Calibration System",
   "value": "# Standardized Scoring & Calibration System\n\n## Overview\nTransparent, versioned scoring rubrics for all validation gates with automated drift detection against golden-set benchmarks and a real-time ca",
   "source": "builder"
+ },
+ {
+  "ts": 1787397004.4595933,
+  "key": "swarm_artifact:Redesign MemoryStore as a bounded self‑pruning ring buffer",
+  "value": "```markdown\n# Redesigned MemoryStore as a Bounded Self‑Pruning Ring Buffer\n\nThis artifact replaces the original `MemoryStore` with a fixed‑capacity ring buffer that:\n* Stores entries via `weakref.ref`",
+  "source": "builder"
+ },
+ {
+  "ts": 1787397629.8324413,
+  "key": "swarm_artifact:Automated Orphaned Swarm Session Detection & Cleanup",
+  "value": "# Automated Orphaned Swarm Session Detection & Cleanup\n\n## Overview\nA lightweight monitoring service that periodically inspects active swarm sessions, identifies orphaned sessions (no heartbeat for a ",
+  "source": "builder"
+ },
+ {
+  "ts": 1787397705.617118,
+  "key": "swarm_artifact:Standardize CI Outputs with Real‑Simulation Gate",
+  "value": "**Artifact: CI Step – Deterministic Manifest‑Based Simulation Gate**\n\n---\n\n### Overview\nThis artifact provides a reusable CI step (GitHub Actions‑compatible) that:\n1. Loads a model manifest (`manifest",
+  "source": "builder"
  }
 ]
