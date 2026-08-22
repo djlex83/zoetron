@@ -15,3 +15,5 @@ src/
 scripts/
 tests/
 pyproject.toml
+data/hands_workspace/
+data/tools/
