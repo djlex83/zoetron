@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1248 Fakten** · Stand 2026-08-23 21:07 UTC · aktualisiert bei jedem Herzschlag
+**1263 Fakten** · Stand 2026-08-23 21:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 512
-- **swarm_artifact:** 421
-- **anti_pattern:** 110
-- **strategy:** 76
-- **last_swarm_goal:** 59
-- **last_swarm_critique:** 51
+- **dream:** 517
+- **swarm_artifact:** 426
+- **anti_pattern:** 112
+- **strategy:** 77
+- **last_swarm_goal:** 60
+- **last_swarm_critique:** 52
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:konvergenz_tor__test_pflicht_vor_erfolg__convergen`
+*23.08. 21:16 UTC · Quelle: evolution*
+
+DRY Orchestrator Refactor - Variant 1 eliminates the unused import and consolidates duplicated risk‑evaluation logic into a reusable function, yielding the highest elegance and feasibility while significantly
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Konvergenz-Tor: Test-Pfl:2`
+*23.08. 21:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Atomic and Idempotent Archiving - Replace `shutil.copytree` with a wrapper that safely handles existing destinations: use `dirs_exist_ok=True` (Python 3.8+) or, for older versions, catch `FileExistsError` and either merge con
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Konvergenz-Tor: Test-Pfl:0`
+*23.08. 21:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Test Guarding and Module Isolation - Encapsulate all test execution and side‑effects inside `if __name__ == '__main__':` blocks (or use a dedicated test runner like pytest). Move any import‑time assertions into functions that
+
+### `last_swarm_critique`
+*23.08. 21:16 UTC · Quelle: critic*
+
+score=4; issues=MemoryStore API Contract Test: test runs on import; should be guarded by if __name__ == '__main__'.; Convergence Gate Orchestrator: unused import 'subprocess'.; Convergence Gate Orchestrator: risk_gate duplicates logic; consider reusing evaluat
+
+### `swarm_artifact:Heartbeat Sentinel Monitor`
+*23.08. 21:15 UTC · Quelle: builder*
+
+```python import os  SENTINEL = 'heartbeat.sentinel'  def main():     if os.path.exists(SENTINEL):         print('Heartbeat OK: sentinel present')     else:         print('Sentinel missing, creating..
+
+### `swarm_artifact:Memory Preservation Archiver`
+*23.08. 21:15 UTC · Quelle: builder*
+
+```python import os import shutil from datetime import datetime  def archive_knowledge(src_dir, archive_root='archive'):     """     Archives the source directory to a timestamped backup in the archiv
+
+### `swarm_artifact:Convergence Gate Orchestrator`
+*23.08. 21:14 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Convergence Gate Orchestrator Runs unit tests and applies risk gate; only prints SUCCESS if both pass. """  import subprocess import sys import unittest  def run_t
+
+### `swarm_artifact:MemoryStore API Contract Test`
+*23.08. 21:14 UTC · Quelle: builder*
+
+```python class MemoryStore:     def get(self, key):         pass     def set(self, key, value):         pass     def delete(self, key):         pass  def test_memorystore_contract():     required = {
+
+### `swarm_artifact:Implement Risk Gate`
+*23.08. 21:14 UTC · Quelle: builder*
+
+```python def evaluate_plan(risks):     """     Evaluate a plan based on identified risks.      A plan passes (returns True) only if:       - At least 3 risks are provided.       - Each risk is a dict
+
+### `last_swarm_goal`
+*23.08. 21:12 UTC · Quelle: system*
+
+Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)
+
+### `dream:202608232112:5`
+*23.08. 21:12 UTC · Quelle: dream*
+
+MemoryStore API drift breaks hands-execute silently; a CI contract test pinning the exact public surface would fail fast instead of producing runtime AttributeErrors.
+
+### `dream:202608232112:4`
+*23.08. 21:12 UTC · Quelle: dream*
+
+Simulations routinely emit zero-risk 'go' verdicts, letting fragile plans advance; a hard gate of ≥3 concrete risks per 'go' would force deeper analysis.
+
+### `dream:202608232112:3`
+*23.08. 21:12 UTC · Quelle: dream*
+
+Every free-tier model shares an implicit rate limit, but callers treat them independently, causing cascading 429/502 errors that a single token-bucket would prevent.
+
+### `dream:202608232112:2`
+*23.08. 21:12 UTC · Quelle: dream*
+
+Model latency varies 4× (8–36 s) on the same endpoint, yet no adaptive router or calibration loop exists to exploit faster tiers or trigger fallbacks.
+
+### `dream:202608232112:1`
+*23.08. 21:12 UTC · Quelle: dream*
+
+The system repeatedly proposes identical reliability skills (rate-limiting, simulation gates, contract tests) but never ships them, revealing a planning–execution gap that stalls all other improvements.
 
 ### `dream:202608232107:5`
 *23.08. 21:07 UTC · Quelle: dream*
