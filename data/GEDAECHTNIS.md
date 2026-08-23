@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**940 Fakten** · Stand 2026-08-23 15:57 UTC · aktualisiert bei jedem Herzschlag
+**945 Fakten** · Stand 2026-08-23 16:04 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 370
-- **dream:** 302
+- **dream:** 307
 - **anti_pattern:** 96
 - **strategy:** 69
 - **last_swarm_goal:** 44
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231603:5`
+*23.08. 16:03 UTC · Quelle: dream*
+
+Reflex-mode convergence without deep validation lets shallow successes mask latent errors; every reflex completion should trigger a lightweight critic audit.
+
+### `dream:202608231603:4`
+*23.08. 16:03 UTC · Quelle: dream*
+
+Critic catches only syntactic typos (e.g., truncated print string) after evolution, suggesting static linting should gate variants before simulation.
+
+### `dream:202608231603:3`
+*23.08. 16:03 UTC · Quelle: dream*
+
+Zero prunes across a full cycle indicate the pruning threshold is stuck above the relevance floor; threshold must decay when prune count is zero.
+
+### `dream:202608231603:2`
+*23.08. 16:03 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 4 vs actual 7) reveals systematic overconfidence; confidence scores must be temperature-scaled before use.
+
+### `dream:202608231603:1`
+*23.08. 16:03 UTC · Quelle: dream*
+
+Model latency varies wildly (4.3–128 s) on the same endpoint, making fixed timeouts unreliable and requiring per-request adaptive deadlines.
 
 ### `strategy:erinnerungen_miteinander_verbinden`
 *23.08. 15:57 UTC · Quelle: evolution*
