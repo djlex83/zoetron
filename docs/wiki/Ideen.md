@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 15:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 15:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,7 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream could not parse its own output - check prompt size.
 - Five new skill proposals were generated while the standing goal remains 'finally actually try the suggestions', confirming the proposal backlog grows 
 - Conserve-mode throttling (stress 0.811 -> max_iterations=1) launched a swarm that then failed to converge in 2 cycles, so budget cuts during high stre
 - The evolution run crowned a variant scoring 9/10 internally, yet the swarm finished at 3/10, revealing that builder/critic self-scores are systematica
@@ -55,7 +56,6 @@
 - Swarm convergence fails with 5:1:1 builder-heavy role ratio and only 2 cycles, suggesting insufficient critic/planner oversight.
 - Critic role producing unparseable output blocks evolution improvement cycles despite high variant scores (8/10).
 - Calibration drift of ±2 points on CI workflow estimates indicates missing feedback loop between predicted and actual scores.
-- Free-tier models exhibit cascading 429/502 failures under load, making them unreliable as primary inference endpoints without circuit-breaker fallback
 
 ---
 

@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-23 15:18:13",
- "ereignisse_ausgewertet": 3514,
+ "stand": "2026-08-23 15:26:25",
+ "ereignisse_ausgewertet": 3524,
  "werkzeuge": [
   {
    "tool": "dedup_skill_proposals.py",
@@ -33,6 +33,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-selbstständig-üben.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "traum-erinnerungen-besser-verknüpfen-und.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -40,12 +46,6 @@
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-selbstständig-üben.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -63,7 +63,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.655,
+ "haende_quote": 0.659,
  "simulationen_angewandt": 118,
  "swarm_scores": {
   "n": 70,
