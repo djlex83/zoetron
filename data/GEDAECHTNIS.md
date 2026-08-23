@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**865 Fakten** · Stand 2026-08-23 14:14 UTC · aktualisiert bei jedem Herzschlag
+**879 Fakten** · Stand 2026-08-23 14:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 353
-- **dream:** 271
-- **anti_pattern:** 86
-- **strategy:** 64
-- **last_swarm_goal:** 38
-- **last_swarm_critique:** 35
+- **swarm_artifact:** 357
+- **dream:** 276
+- **anti_pattern:** 88
+- **strategy:** 65
+- **last_swarm_goal:** 39
+- **last_swarm_critique:** 36
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fehler_bei_modellen_und_issues_reduzieren`
+*23.08. 14:31 UTC · Quelle: evolution*
+
+De-risk via battle-tested libraries plus regression tests - Variant 2 best serves the explicit goal of reducing errors and issues: delegating metric computation to battle-tested sklearn eliminates the largest class of hand-written bugs (bin
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fehler bei Modellen und :1`
+*23.08. 14:31 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Modular decomposition with strategy pattern - Split into three modules: cli.py (thin argument-parsing shell), validator.py (pure validation logic returning a score dict), report.py (template-based rendering). Configuration is
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fehler bei Modellen und :0`
+*23.08. 14:31 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): CLI-first complete rewrite - Rewrite validate_model.py from scratch as a standalone command-line tool: (1) argparse/click entrypoint with --model-path, --data-path, --output-dir, --task-type {binary,multiclass}, --average {ma
+
+### `last_swarm_critique`
+*23.08. 14:29 UTC · Quelle: critic*
+
+score=3; issues=validate_model.py: print_summary method is truncated/incomplete (cuts off at 'Precision:'), rendering script unusable as-is.; validate_model.py: No CLI entrypoint (argparse/click) – paths hardcoded in class defaults, cannot run without external
+
+### `swarm_artifact:Issue-Analyse: vorhandene Issues einlesen und zählen (issue `
+*23.08. 14:28 UTC · Quelle: builder*
+
+# Issue-Analyse: Offene Issues zählen und Prioritäten verteilen  Liest eine Beispiel-Liste von Issues aus einer eingebetteten JSON-Zeichenkette ein, filtert offene Issues und gibt die Verteilung nach 
+
+### `swarm_artifact:Linting und Codequalität prüfen (linting)`
+*23.08. 14:27 UTC · Quelle: builder*
+
+# Linting-Skript für Python-Syntaxprüfung  Führt einen einfachen Syntax-Check auf allen Python-Dateien im aktuellen Verzeichnis aus und gibt die Anzahl der Dateien ohne Syntaxfehler aus.  ```python # 
+
+### `swarm_artifact:Einheitstests für Datenpipeline hinzufügen (unit tests for d`
+*23.08. 14:27 UTC · Quelle: builder*
+
+# Einheitstests für Datenpipeline  Erstellt ein Unit-Test-Skript zur Validierung der Datenbereinigungsfunktion.  ```python # tests/test_data_pipeline.py """ Einheitstests für die Datenbereinigungs-Pip
+
+### `swarm_artifact:Modellvalidierung durchführen (model validation)`
+*23.08. 14:26 UTC · Quelle: builder*
+
+# Modellvalidierungsskript  Erstellt ein validierbares Skript für die Modellbewertung mit echter Projektintegration.  ```python # scripts/validate_model.py """ Modellvalidierung für das Projekt. Evalu
+
+### `last_swarm_goal`
+*23.08. 14:21 UTC · Quelle: system*
+
+Fehler bei Modellen und Issues reduzieren
+
+### `dream:202608231420:5`
+*23.08. 14:20 UTC · Quelle: dream*
+
+MemoryStore API mismatch ('add_fact' missing) reveals schema drift between hand execution and memory module interfaces.
+
+### `dream:202608231420:4`
+*23.08. 14:20 UTC · Quelle: dream*
+
+Swarm convergence fails with 5:1:1 builder-heavy role ratio and only 2 cycles, suggesting insufficient critic/planner oversight.
+
+### `dream:202608231420:3`
+*23.08. 14:20 UTC · Quelle: dream*
+
+Critic role producing unparseable output blocks evolution improvement cycles despite high variant scores (8/10).
+
+### `dream:202608231420:2`
+*23.08. 14:20 UTC · Quelle: dream*
+
+Calibration drift of ±2 points on CI workflow estimates indicates missing feedback loop between predicted and actual scores.
+
+### `dream:202608231420:1`
+*23.08. 14:20 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading 429/502 failures under load, making them unreliable as primary inference endpoints without circuit-breaker fallbacks.
 
 ### `swarm_artifact:Implementation Tracker für Fähigkeiten bauen`
 *23.08. 14:13 UTC · Quelle: builder*

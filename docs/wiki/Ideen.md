@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 14:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 14:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- MemoryStore API mismatch ('add_fact' missing) reveals schema drift between hand execution and memory module interfaces.
+- Swarm convergence fails with 5:1:1 builder-heavy role ratio and only 2 cycles, suggesting insufficient critic/planner oversight.
+- Critic role producing unparseable output blocks evolution improvement cycles despite high variant scores (8/10).
+- Calibration drift of ±2 points on CI workflow estimates indicates missing feedback loop between predicted and actual scores.
+- Free-tier models exhibit cascading 429/502 failures under load, making them unreliable as primary inference endpoints without circuit-breaker fallback
 - Fixed timeouts ignore model-specific p95 latency distributions; route requests to models within SLA budget and shed load when all exceed budget.
 - Swarm role imbalance (insufficient critics) reduces solution quality; maintain dynamic critic:builder quota of at least 1:2 with auto-spawning.
 - Calibration predictions consistently underestimate actual scores by ~1.5×; apply rolling actual/predicted ratio correction before threshold decisions.
@@ -51,11 +56,6 @@
 - Runtime AttributeError on MemoryStore.add_fact reveals missing startup contract validation for core service interfaces.
 - Evolution optimizing internal variant scores (8-9) without post-evolution swarm validation produces overfitted solutions that fail real evaluation (sc
 - Model latency variance (5-60s) breaks role-specific SLAs and causes cascade failures in time-bounded swarms.
-- Pruner inactivity (0 facts/events pruned) indicates either aggressive thresholds or lack of decay policies, risking unbounded memory growth.
-- MemoryStore missing `add_fact` method causes hand-action failures, revealing incomplete interface contracts in core modules.
-- Swarm convergence fails despite evolution gains (3→8) due to role imbalance (4 builders, 1 planner, 1 critic) and missing quorum enforcement.
-- Calibration drift (predicted 4 vs actual 3) systematically overestimates performance, requiring rolling ratio correction before decisions.
-- High latency variance (2.9s–138.3s) across model variants makes p90-based circuit breakers essential for SLA compliance.
 
 ---
 
