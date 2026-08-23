@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**804 Fakten** · Stand 2026-08-23 13:03 UTC · aktualisiert bei jedem Herzschlag
+**818 Fakten** · Stand 2026-08-23 13:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 338
-- **dream:** 246
-- **anti_pattern:** 78
-- **strategy:** 60
-- **last_swarm_goal:** 33
-- **last_swarm_critique:** 31
+- **swarm_artifact:** 342
+- **dream:** 251
+- **anti_pattern:** 80
+- **strategy:** 61
+- **last_swarm_goal:** 34
+- **last_swarm_critique:** 32
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:wie_gut_das_modell_arbeitet_verbessern`
+*23.08. 13:12 UTC · Quelle: evolution*
+
+Realistic inference pipeline with actual model - Variant 1 introduces a real model and meaningful accuracy, offering high impact and good elegance while remaining reasonably feasible to implement.
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Wie gut das Modell arbei:2`
+*23.08. 13:12 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): End‑to‑end profiling and detailed logging - Instrument the benchmark with profiling tools (e.g., torch.cuda.nvtx, NVIDIA Nsight, or Python's cProfile) to capture GPU kernel execution times, memory allocation, and data‑transfe
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Wie gut das Modell arbei:0`
+*23.08. 13:12 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Statistical robustness and variability measurement - Modify the benchmark to run the inference loop N times (e.g., 30 iterations) after a GPU warm‑up phase, collect latency and accuracy per run, then compute mean, standard de
+
+### `last_swarm_critique`
+*23.08. 13:12 UTC · Quelle: critic*
+
+score=3; issues=Benchmark script runs only a single iteration, providing no measure of variability or confidence intervals.; Dummy prediction function uses argmax on random inputs, making accuracy meaningless and not reflective of a real model.; Latency measur
+
+### `swarm_artifact:Unit-Test für Ausgabeform schreiben`
+*23.08. 13:11 UTC · Quelle: builder*
+
+```python import numpy as np import unittest  def dummy_model(x):     # Simuliere Logits: (batch, 3)  # English: Simulate logits: (batch, 3)     return np.random.randn(x.shape[0], 3)  class TestModelO
+
+### `swarm_artifact:Ablationsstudie durchführen`
+*23.08. 13:11 UTC · Quelle: builder*
+
+```python import numpy as np  # Dummy model with two layers: first layer -> hidden tanh, second layer -> logits def full_model(x):     # first layer: random weights (erste Schicht: zufällige Gewichte)
+
+### `swarm_artifact:Vorhersagen protokollieren`
+*23.08. 13:11 UTC · Quelle: builder*
+
+```python import pandas as pd import numpy as np from datetime import datetime  # Dummy model output: probabilities for 2 classes # (Dummy model output: Wahrscheinlichkeiten für 2 Klassen) probs = np.
+
+### `swarm_artifact:Modellleistung messen`
+*23.08. 13:11 UTC · Quelle: builder*
+
+```python # Benchmark-Skript zur Messung von Genauigkeit und Latenz eines Modells # (Benchmark script to measure model accuracy and latency) # English technical terms with short German explanations: #
+
+### `last_swarm_goal`
+*23.08. 13:09 UTC · Quelle: system*
+
+Wie gut das Modell arbeitet verbessern
+
+### `dream:202608231309:5`
+*23.08. 13:09 UTC · Quelle: dream*
+
+Reliance on recalled goals such as last_swarm_goal makes memory correctness vital; validating interface contracts at startup prevents silent failures.
+
+### `dream:202608231309:4`
+*23.08. 13:09 UTC · Quelle: dream*
+
+Under stress the system enters a conserve mode that caps iterations and tasks, indicating the need for adaptive planning depth to avoid overload.
+
+### `dream:202608231309:3`
+*23.08. 13:09 UTC · Quelle: dream*
+
+Calibration drift between predicted and actual scores shows performance can degrade silently, demanding continuous observability with automated stagnation alerts.
+
+### `dream:202608231309:2`
+*23.08. 13:09 UTC · Quelle: dream*
+
+Authentication (403) and service‑overload (502) errors expose external API unreliability, requiring retry logic, circuit breakers, and model diversification.
+
+### `dream:202608231309:1`
+*23.08. 13:09 UTC · Quelle: dream*
+
+Latency spikes above 60 s for high‑capacity models break real‑time expectations, necessitating SLA enforcement and automatic fallback.
 
 ### `strategy:modellfehler_verringern`
 *23.08. 13:03 UTC · Quelle: evolution*
