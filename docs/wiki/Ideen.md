@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
-- Modellfehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
-- GitHub-Fehler bei Issues reduzieren *(wieder aufgegriffen: 2×)*
 - Alte Träume besser verknüpfen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
+- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulator occasionally emits 'go' verdicts with zero enumerated risks, a blind spot that multiple proposals flag by requiring a minimum risk count
+- Free-tier model latency varies 2x (9.7–19.7 s) and 502/429 errors appear, yet fallbacks treat each model independently instead of sharing a single rat
+- MemoryStore API drift causes runtime failures in hands-execute, prompting repeated proposals for both startup contract tests and CI-level static verif
+- Score calibration emerges as a systemic weakness: three independent proposals across cycles demand cross-checking evolution winners, predictor outputs
+- Pruning runs consistently remove zero facts and events across multiple cycles, indicating the retention criteria are either misconfigured or the thres
 - Pruning thresholds are set too high (zero events pruned across runs), leaving calibration-critical data buried in noise.
 - Simulations frequently emit zero-risk 'go' verdicts that bypass scrutiny, requiring a mandatory second-pass gate.
 - Internal score predictors drift upward systematically; only independent re-scoring with a fixed threshold (Δ>2) catches inflation.
@@ -51,11 +56,6 @@
 - Documentation metrics drift across README, docs, and code (heartbeat: 5 min vs 10 min vs 300 s) because no single source of truth is enforced.
 - The pruner runs repeatedly but prunes zero events, indicating the pruning criteria or scheduler are misconfigured or ineffective.
 - Model latency frequently exceeds 30 s (observed 35.2 s) without automatic degradation, causing unpredictable swarm start delays.
-- The system fails to connect recent dreams with older memories, limiting insight generation and goal formation.
-- Applying simulation revisions incrementally leaves partially patched plans, indicating a need for atomic batch updates.
-- Model latency occasionally exceeds acceptable thresholds, risking delays without a fallback mechanism.
-- GitHub synchronization failures stem from unhandled API rate limits and transient errors, requiring retry logic.
-- Many skill proposals remain unimplemented because there is no systematic validation or testing pipeline.
 
 ---
 

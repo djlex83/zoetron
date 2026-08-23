@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1211 Fakten** · Stand 2026-08-23 20:42 UTC · aktualisiert bei jedem Herzschlag
+**1216 Fakten** · Stand 2026-08-23 20:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 487
+- **dream:** 492
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232043:5`
+*23.08. 20:43 UTC · Quelle: dream*
+
+The simulator occasionally emits 'go' verdicts with zero enumerated risks, a blind spot that multiple proposals flag by requiring a minimum risk count and a mandatory second simulation pass for any zero-risk approval.
+
+### `dream:202608232043:4`
+*23.08. 20:43 UTC · Quelle: dream*
+
+Free-tier model latency varies 2x (9.7–19.7 s) and 502/429 errors appear, yet fallbacks treat each model independently instead of sharing a single rate-limit pool with exponential backoff and jitter.
+
+### `dream:202608232043:3`
+*23.08. 20:43 UTC · Quelle: dream*
+
+MemoryStore API drift causes runtime failures in hands-execute, prompting repeated proposals for both startup contract tests and CI-level static verification of every invoked method.
+
+### `dream:202608232043:2`
+*23.08. 20:43 UTC · Quelle: dream*
+
+Score calibration emerges as a systemic weakness: three independent proposals across cycles demand cross-checking evolution winners, predictor outputs, and swarm results against a shared scorer with automatic calibration events when scores diverge >2 points.
+
+### `dream:202608232043:1`
+*23.08. 20:43 UTC · Quelle: dream*
+
+Pruning runs consistently remove zero facts and events across multiple cycles, indicating the retention criteria are either misconfigured or the thresholds are set too high to ever trigger.
 
 ### `dream:202608232042:5`
 *23.08. 20:42 UTC · Quelle: dream*
