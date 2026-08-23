@@ -8,6 +8,10 @@ auf kostenlosen OpenRouter-Modellen, mit AutoRouter gegen Modell-Sterblichkeit.*
 Zoetron ist kein Agent-Framework. Es ist ein **Organismus**: Herzschlag,
 Neugier, Schlaf, Weltmodell, Selbstmodell und ein Immunsystem gegen tote Modelle.
 
+**🧠 Sein Gedächtnis live ansehen:** [2D-Wissensgraph](https://djlex83.github.io/zoetron/graph.html)
+· [3D-Gehirn](https://djlex83.github.io/zoetron/brain.html) – jedes gelernte
+Fakt wird zum Neuron, das Alter lässt es verblassen.
+
 ```
 Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──► BAUEN ──► KRITIK
           ▲                                                    │
