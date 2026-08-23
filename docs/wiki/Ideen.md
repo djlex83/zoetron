@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,6 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
-- GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
@@ -38,6 +37,7 @@
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
+- Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
