@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**833 Fakten** · Stand 2026-08-23 13:29 UTC · aktualisiert bei jedem Herzschlag
+**844 Fakten** · Stand 2026-08-23 13:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 347
-- **dream:** 256
-- **anti_pattern:** 82
-- **strategy:** 62
-- **last_swarm_goal:** 35
-- **last_swarm_critique:** 33
+- **swarm_artifact:** 348
+- **dream:** 261
+- **anti_pattern:** 84
+- **strategy:** 63
+- **last_swarm_goal:** 36
+- **last_swarm_critique:** 34
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,61 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:ersten_swarm_lauf_mit_score_8__konvergieren_lassen`
+*23.08. 13:41 UTC · Quelle: evolution*
+
+Benchmark-First Execution - Variant 0 directly addresses both critic failures: it defines an immutable target task via a standard benchmark (SWE-bench/HumanEval) and executes a swarm run using proven off-the-
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*23.08. 13:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Critic-Driven Self-Improvement - Implement a minimal 'Swarm + Critic' loop (2 agents: Worker, Critic) on a specific task. The Worker attempts the task. The Critic (strong LLM + rubric) scores the output 1-10 and outputs *spec
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*23.08. 13:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Parameter Optimization Loop - Fix the target task to a single, well-defined, difficult problem (e.g., 'Refactor legacy module X to pass all integration tests'). Treat the swarm configuration (system prompts, temperature, agen
+
+### `last_swarm_critique`
+*23.08. 13:40 UTC · Quelle: critic*
+
+score=3; issues=Goal-Plan Mismatch: The plan describes building a swarm orchestration framework (scaffolding orchestrator, agent base class, critic CLI) rather than executing a swarm run on a concrete task to achieve a score ≥8. The goal 'Ersten Swarm-Lauf... 
+
+### `swarm_artifact:Draft deliverable for: Ersten Swarm-Lauf mit Score 8+ konver`
+*23.08. 13:39 UTC · Quelle: builder*
+
+# Swarm Execution Plan: First Convergent Run (Score ≥ 8)  ## 1. Agent Roles & Responsibilities  | Role | Count | Core Duty | Key Tools | |------|-------|-----------|-----------| | **Planner** | 1 | De
+
+### `last_swarm_goal`
+*23.08. 13:37 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:202608231336:5`
+*23.08. 13:36 UTC · Quelle: dream*
+
+Pruner inactivity (0 facts/events pruned) indicates either aggressive thresholds or lack of decay policies, risking unbounded memory growth.
+
+### `dream:202608231336:4`
+*23.08. 13:36 UTC · Quelle: dream*
+
+MemoryStore missing `add_fact` method causes hand-action failures, revealing incomplete interface contracts in core modules.
+
+### `dream:202608231336:3`
+*23.08. 13:36 UTC · Quelle: dream*
+
+Swarm convergence fails despite evolution gains (3→8) due to role imbalance (4 builders, 1 planner, 1 critic) and missing quorum enforcement.
+
+### `dream:202608231336:2`
+*23.08. 13:36 UTC · Quelle: dream*
+
+Calibration drift (predicted 4 vs actual 3) systematically overestimates performance, requiring rolling ratio correction before decisions.
+
+### `dream:202608231336:1`
+*23.08. 13:36 UTC · Quelle: dream*
+
+High latency variance (2.9s–138.3s) across model variants makes p90-based circuit breakers essential for SLA compliance.
 
 ### `strategy:ci_workflow_für_automatisches_mergen_optimieren`
 *23.08. 13:29 UTC · Quelle: evolution*

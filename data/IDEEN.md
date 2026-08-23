@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 13:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 13:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruner inactivity (0 facts/events pruned) indicates either aggressive thresholds or lack of decay policies, risking unbounded memory growth.
+- MemoryStore missing `add_fact` method causes hand-action failures, revealing incomplete interface contracts in core modules.
+- Swarm convergence fails despite evolution gains (3→8) due to role imbalance (4 builders, 1 planner, 1 critic) and missing quorum enforcement.
+- Calibration drift (predicted 4 vs actual 3) systematically overestimates performance, requiring rolling ratio correction before decisions.
+- High latency variance (2.9s–138.3s) across model variants makes p90-based circuit breakers essential for SLA compliance.
 - Repeated simulation revisions and low convergence scores show the current process for reducing thinking errors is ineffective.
 - Predicted scores consistently exceed actual outcomes by ~1.5×, indicating a systematic optimism bias in scoring.
 - The swarm ran with four builders and only one critic, producing insufficient critique and lowering decision quality.
@@ -51,11 +56,6 @@
 - Calibration drift between predicted and actual scores shows performance can degrade silently, demanding continuous observability with automated stagna
 - Authentication (403) and service‑overload (502) errors expose external API unreliability, requiring retry logic, circuit breakers, and model diversifi
 - Latency spikes above 60 s for high‑capacity models break real‑time expectations, necessitating SLA enforcement and automatic fallback.
-- Swarm role ratios drift at startup, leading to insufficient criticism or planning capacity.
-- Predicted goal scores overestimate actual outcomes by ~40%, requiring calibration before critical decisions.
-- Skill proposals recur across dreams without implementation, revealing a missing execution pipeline.
-- Memory pruning triggers but removes nothing, indicating stale thresholds or ineffective criteria.
-- Model latency degrades over consecutive calls without circuit breaker, causing cascading delays.
 
 ---
 
