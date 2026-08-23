@@ -6,7 +6,7 @@
  * heartbeat) is re-fetched live in the browser; the seed only guarantees the
  * page is never empty and stays honest about its timestamp.
  */
-import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync, mkdirSync } from 'node:fs'
 import { execSync } from 'node:child_process'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -99,8 +99,11 @@ const state = {
   beats,
 }
 
-const out = join(here, '..', 'public', 'state.json')
-writeFileSync(out, JSON.stringify(state, null, 2) + '\n')
+// public/state.json is generated, so it is git-ignored — which means the
+// folder can be missing entirely on a fresh checkout (CI).
+const outDir = join(here, '..', 'public')
+mkdirSync(outDir, { recursive: true })
+writeFileSync(join(outDir, 'state.json'), JSON.stringify(state, null, 2) + '\n')
 console.log(
   `[snapshot] ${facts} Fakten · ${neurons} Neuronen · ${synapses} Synapsen · ` +
   `${state.learning.tools.length} Werkzeuge · ${beats.per24h} Herzschläge/24h`,
