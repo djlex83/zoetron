@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1196 Fakten** · Stand 2026-08-23 20:32 UTC · aktualisiert bei jedem Herzschlag
+**1201 Fakten** · Stand 2026-08-23 20:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 472
+- **dream:** 477
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232032:5`
+*23.08. 20:32 UTC · Quelle: dream*
+
+The system fails to connect recent dreams with older memories, limiting insight generation and goal formation.
+
+### `dream:202608232032:4`
+*23.08. 20:32 UTC · Quelle: dream*
+
+Applying simulation revisions incrementally leaves partially patched plans, indicating a need for atomic batch updates.
+
+### `dream:202608232032:3`
+*23.08. 20:32 UTC · Quelle: dream*
+
+Model latency occasionally exceeds acceptable thresholds, risking delays without a fallback mechanism.
+
+### `dream:202608232032:2`
+*23.08. 20:32 UTC · Quelle: dream*
+
+GitHub synchronization failures stem from unhandled API rate limits and transient errors, requiring retry logic.
+
+### `dream:202608232032:1`
+*23.08. 20:32 UTC · Quelle: dream*
+
+Many skill proposals remain unimplemented because there is no systematic validation or testing pipeline.
 
 ### `dream:202608232032:5`
 *23.08. 20:32 UTC · Quelle: dream*
