@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1382 Fakten** · Stand 2026-08-23 22:14 UTC · aktualisiert bei jedem Herzschlag
+**1396 Fakten** · Stand 2026-08-23 22:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 582
-- **swarm_artifact:** 449
-- **anti_pattern:** 122
-- **strategy:** 82
-- **last_swarm_goal:** 70
-- **last_swarm_critique:** 58
+- **dream:** 587
+- **swarm_artifact:** 453
+- **anti_pattern:** 124
+- **strategy:** 83
+- **last_swarm_goal:** 71
+- **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
+*23.08. 22:18 UTC · Quelle: evolution*
+
+Protocol-First Contract Definition - Variant 0 directly resolves all critic issues: missing class definitions via dedicated contracts module, Self type via typing_extensions for 3.10 compat, generic payload type safet
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:2`
+*23.08. 22:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Actor-Based Local-First Bridge - Model the bridge as an Actor (using `asyncio` + `asyncactor` or `thespian`) running in the same process as the Boten-Agent. Hermes messages arrive via a lightweight in-process Channel (queue) 
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:1`
+*23.08. 22:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Message Bus with Schema Registry - Build a central MessageBus class that owns serialization/deserialization via a SchemaRegistry (Pydantic v2 models for every message type). Capabilities are registered as handlers with JSON S
+
+### `last_swarm_critique`
+*23.08. 22:18 UTC · Quelle: critic*
+
+score=3; issues=Hermes Protocol: Missing critical class definitions (Message, Capability, Transport, exceptions) referenced by other modules; Hermes Protocol: MessagePayload protocol uses Self type without importing from typing (requires Python 3.11+); Hermes 
+
+### `swarm_artifact:Create Hermes Agent Stub`
+*23.08. 22:17 UTC · Quelle: builder*
+
+```python """ Hermes Agent Stub Minimal agent implementation for the Hermes Communication Protocol. Serves as the 'other side' of the bridge for testing and development. """  from __future__ import an
+
+### `swarm_artifact:Define Hermes Communication Protocol Schema`
+*23.08. 22:17 UTC · Quelle: builder*
+
+# Hermes Communication Protocol Schema  ```python """ Hermes Communication Protocol Schema Typed protocol definition for message exchange between agents. """  from __future__ import annotations  impor
+
+### `swarm_artifact:Implement Bridge Transport Layer`
+*23.08. 22:17 UTC · Quelle: builder*
+
+```python """ Hermes Bridge Transport Layer Concrete transport implementations for the Hermes Communication Protocol. Supports in-process, file-based, and socket transports with full lifecycle managem
+
+### `swarm_artifact:Define Hermes Communication Protocol`
+*23.08. 22:15 UTC · Quelle: builder*
+
+```python """ Hermes Communication Protocol Typed protocol interface for agent-to-agent communication using structural subtyping. Defines message schemas, transport abstraction, and capability discove
+
+### `last_swarm_goal`
+*23.08. 22:14 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232214:5`
+*23.08. 22:14 UTC · Quelle: dream*
+
+LLM statelessness forces repeated self-reconstruction; a persistent identity layer must survive context windows.
+
+### `dream:202608232214:4`
+*23.08. 22:14 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than validation capacity, creating a proposal graveyard without promotion criteria.
+
+### `dream:202608232214:3`
+*23.08. 22:14 UTC · Quelle: dream*
+
+Swarm goals repeatedly start without completion signals, indicating missing termination conditions or progress tracking.
+
+### `dream:202608232214:2`
+*23.08. 22:14 UTC · Quelle: dream*
+
+Pruning stalls silently when criteria drift from data reality, requiring explicit staleness detection.
+
+### `dream:202608232214:1`
+*23.08. 22:14 UTC · Quelle: dream*
+
+Model fallback chains mask upstream instability but hide degradation until all tiers exhaust.
 
 ### `last_swarm_goal`
 *23.08. 22:13 UTC · Quelle: system*
