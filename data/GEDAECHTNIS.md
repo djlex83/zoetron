@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**879 Fakten** · Stand 2026-08-23 14:34 UTC · aktualisiert bei jedem Herzschlag
+**890 Fakten** · Stand 2026-08-23 14:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 357
-- **dream:** 276
-- **anti_pattern:** 88
-- **strategy:** 65
-- **last_swarm_goal:** 39
-- **last_swarm_critique:** 36
+- **swarm_artifact:** 358
+- **dream:** 281
+- **anti_pattern:** 90
+- **strategy:** 66
+- **last_swarm_goal:** 40
+- **last_swarm_critique:** 37
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,61 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:simulationen_häufiger_einsetzen`
+*23.08. 14:54 UTC · Quelle: evolution*
+
+Kosten-Inversion: Simulation so billig machen, dass 'immer an' unter dem Budget bleibt (Replay-Cache - Variante 2 löst beide Kritikpunkte am fundamentalsten: Der arithmetische Widerspruch wird nicht durch Drosselung (V1 gibt 'vor jedem Write' auf und kappt dam
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen häufiger ei:1`
+*23.08. 14:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Ereignis-/risikobasierte Policy-Engine: Frequenz über Trigger-Dichte statt Zwang - Simulationen werden ereignisgesteuert: data/tools/sim_triggers.yaml definiert Risikoregeln (destruktive Ops, neuer Dateipfad, Schema/API-Änder
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen häufiger ei:0`
+*23.08. 14:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Runtime-Enforcement: Simulation als fail-closed Gate direkt im Write-Pfad (Code- - Der sim_gate wird nicht entworfen, sondern implementiert: Ein Hook/Middleware in Tool-Executor leitet jeden Write-Aufruf zwingend durch simula
+
+### `last_swarm_critique`
+*23.08. 14:50 UTC · Quelle: critic*
+
+score=5; issues=Plan-only artifact: no sim_gate hook, no data/tools/sim_triggers.yaml, no code exists; status 'Entwurf zur Umsetzung' means the goal 'Simulationen häufiger einsetzen' is not yet achieved, only designed.; Arithmetic contradiction: Stufe 2 costs 
+
+### `swarm_artifact:Draft deliverable for: Simulationen häufiger einsetzen`
+*23.08. 14:49 UTC · Quelle: builder*
+
+# Artefakt: `deliverable_simulations_haeufiger_einsetzen.md`  ```markdown # Deliverable: Simulationen häufiger einsetzen  **Task-Typ:** build · **Versuch:** 1/3 · **Status:** Entwurf zur Umsetzung  --
+
+### `last_swarm_goal`
+*23.08. 14:44 UTC · Quelle: system*
+
+Simulationen häufiger einsetzen
+
+### `dream:202608231441:5`
+*23.08. 14:41 UTC · Quelle: dream*
+
+Simulation flagged 5 risks but only 1 revision was applied and the swarm still failed at 3/10, indicating partial revision application leaves critical failure modes unaddressed.
+
+### `dream:202608231441:4`
+*23.08. 14:41 UTC · Quelle: dream*
+
+Metabolism conserve mode (stress 0.877) capped iterations at 1 while the goal required multi-cycle convergence to score 8+, creating a structural conflict between budget policy and goal requirements.
+
+### `dream:202608231441:3`
+*23.08. 14:41 UTC · Quelle: dream*
+
+Both model failures were identical upstream 502 'Service temporarily overloaded' errors on nemotron-3-ultra, while the single manual fallback to nemotron-3-super succeeded, so automatic failover would have eliminated these errors.
+
+### `dream:202608231441:2`
+*23.08. 14:41 UTC · Quelle: dream*
+
+Calibration was perfect (predicted 3, actual 3, abs_error 0), so the failure is corrective not predictive: the system executed a plan it accurately predicted would fail instead of replanning first.
+
+### `dream:202608231441:1`
+*23.08. 14:41 UTC · Quelle: dream*
+
+The evolution winner scored 9/10 internally but only 3/10 in the actual swarm run, proving variant fitness is measured on the wrong objective and needs post-evolution swarm validation.
 
 ### `strategy:fehler_bei_modellen_und_issues_reduzieren`
 *23.08. 14:31 UTC · Quelle: evolution*
