@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1274 Fakten** · Stand 2026-08-23 21:24 UTC · aktualisiert bei jedem Herzschlag
+**1288 Fakten** · Stand 2026-08-23 21:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 522
-- **swarm_artifact:** 430
-- **anti_pattern:** 112
-- **strategy:** 77
-- **last_swarm_goal:** 61
-- **last_swarm_critique:** 53
+- **dream:** 527
+- **swarm_artifact:** 434
+- **anti_pattern:** 114
+- **strategy:** 78
+- **last_swarm_goal:** 62
+- **last_swarm_critique:** 54
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
+*23.08. 21:30 UTC · Quelle: evolution*
+
+Data‑model validation with Pydantic and explicit exception hierarchy - Variant 0 provides the most elegant solution by leveraging Pydantic for robust data validation, defines a clear exception hierarchy, uses an Enum for circuit states with proper thr
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Modell-Gesundheitsregist:2`
+*23.08. 21:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Functional decomposition with validator decorators and atomic state updates via  - Keep Patient as a simple class but wrap its __init__ with a decorator that validates arguments: @validate_args(patient_id=is_instance(str), na
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Modell-Gesundheitsregist:1`
+*23.08. 21:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Dataclass‑based model with post‑init validation and context‑manager circuit brea - Implement Patient as a @dataclass with fields patient_id: str and name: str, and add a __post_init__ method that raises ValueError if patient_
+
+### `last_swarm_critique`
+*23.08. 21:29 UTC · Quelle: critic*
+
+score=3; issues=Patient class lacks validation for patient_id (should be string) and name (should be non-empty string), causing unit tests to fail.; circuit_breaker module missing CircuitBreakerOpenError exception definition (imported and expected in unit test
+
+### `swarm_artifact:Demo Integration of Model and Circuit Breaker`
+*23.08. 21:28 UTC · Quelle: builder*
+
+```markdown # Demo Integration of Model and Circuit Breaker  ```python import time import random from health_register_model import Patient, VitalSigns from circuit_breaker import CircuitBreaker  def s
+
+### `swarm_artifact:Write Unit Tests for Health Register Model`
+*23.08. 21:28 UTC · Quelle: builder*
+
+```python import unittest import time from unittest.mock import patch from health_register_model import Patient, VitalSigns from circuit_breaker import CircuitBreaker, CircuitBreakerOpenError  class T
+
+### `swarm_artifact:Implement Circuit Breaker for External Health API`
+*23.08. 21:27 UTC · Quelle: builder*
+
+# Circuit Breaker Implementation for External Health API  ```python import time import random import threading from typing import Callable, Any  class CircuitBreaker:     """     A circuit breaker imp
+
+### `swarm_artifact:Define Health Register Data Model`
+*23.08. 21:27 UTC · Quelle: builder*
+
+```python import re  class Patient:     def __init__(self, patient_id, name):         self.patient_id = patient_id         self.name = name      def __repr__(self):         return f"Patient(patient_id
+
+### `last_swarm_goal`
+*23.08. 21:24 UTC · Quelle: system*
+
+Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
+
+### `dream:202608232124:5`
+*23.08. 21:24 UTC · Quelle: dream*
+
+Swarm evolution demonstrates that selecting the highest‑scoring variant among candidates improves outcomes; systematic variant evaluation should be built into the optimization loop.
+
+### `dream:202608232124:4`
+*23.08. 21:24 UTC · Quelle: dream*
+
+The AttributeError on MemoryStore.add_fact reveals missing interface contracts; validating required methods before calls prevents runtime failures.
+
+### `dream:202608232124:3`
+*23.08. 21:24 UTC · Quelle: dream*
+
+Simulation outcomes are not automatically pushed to production, causing manual errors; a gate that atomically applies revisions after a successful re‑simulation closes this gap.
+
+### `dream:202608232124:2`
+*23.08. 21:24 UTC · Quelle: dream*
+
+Duplicate skill proposals consume cycles without benefit; a hash‑based deduplication registry prevents rework and ensures traceability.
+
+### `dream:202608232124:1`
+*23.08. 21:24 UTC · Quelle: dream*
+
+Latency spikes above 100 s show that a fixed 2× rolling median timeout is too lax; adaptive thresholds with fast fallback are needed.
 
 ### `last_swarm_critique`
 *23.08. 21:23 UTC · Quelle: critic*
