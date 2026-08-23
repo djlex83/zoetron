@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-23 14:56:42",
- "ereignisse_ausgewertet": 3489,
+ "stand": "2026-08-23 15:18:13",
+ "ereignisse_ausgewertet": 3514,
  "werkzeuge": [
   {
    "tool": "dedup_skill_proposals.py",

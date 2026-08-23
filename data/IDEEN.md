@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 14:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 15:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five new skill proposals were generated while the standing goal remains 'finally actually try the suggestions', confirming the proposal backlog grows 
+- Conserve-mode throttling (stress 0.811 -> max_iterations=1) launched a swarm that then failed to converge in 2 cycles, so budget cuts during high stre
+- The evolution run crowned a variant scoring 9/10 internally, yet the swarm finished at 3/10, revealing that builder/critic self-scores are systematica
+- Latency on the same model varied from 1.6s to 41.1s across calls, proving fixed timeouts are unusable on free-tier providers and per-model adaptive la
+- HTTP 200 does not mean success: the nemotron-ultra endpoint returned status 200 with zero choices and a 502 'Service temporarily overloaded' body, so 
 - Simulation flagged 5 risks but only 1 revision was applied and the swarm still failed at 3/10, indicating partial revision application leaves critical
 - Metabolism conserve mode (stress 0.877) capped iterations at 1 while the goal required multi-cycle convergence to score 8+, creating a structural conf
 - Both model failures were identical upstream 502 'Service temporarily overloaded' errors on nemotron-3-ultra, while the single manual fallback to nemot
@@ -51,11 +56,6 @@
 - Critic role producing unparseable output blocks evolution improvement cycles despite high variant scores (8/10).
 - Calibration drift of ±2 points on CI workflow estimates indicates missing feedback loop between predicted and actual scores.
 - Free-tier models exhibit cascading 429/502 failures under load, making them unreliable as primary inference endpoints without circuit-breaker fallback
-- Fixed timeouts ignore model-specific p95 latency distributions; route requests to models within SLA budget and shed load when all exceed budget.
-- Swarm role imbalance (insufficient critics) reduces solution quality; maintain dynamic critic:builder quota of at least 1:2 with auto-spawning.
-- Calibration predictions consistently underestimate actual scores by ~1.5×; apply rolling actual/predicted ratio correction before threshold decisions.
-- Model provider failures (429/502) and high latency variance (3–306 s) require multi-provider routing with token-bucket rate limiting and exponential b
-- Interface contract violations (missing `add_fact`) cause runtime crashes; enforce ABC validation at component initialization.
 
 ---
 

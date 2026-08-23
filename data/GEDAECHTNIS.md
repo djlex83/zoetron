@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**890 Fakten** · Stand 2026-08-23 14:56 UTC · aktualisiert bei jedem Herzschlag
+**898 Fakten** · Stand 2026-08-23 15:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 358
-- **dream:** 281
+- **swarm_artifact:** 359
+- **dream:** 286
 - **anti_pattern:** 90
 - **strategy:** 66
-- **last_swarm_goal:** 40
-- **last_swarm_critique:** 37
+- **last_swarm_goal:** 41
+- **last_swarm_critique:** 38
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,46 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*23.08. 15:13 UTC · Quelle: critic*
+
+score=6; issues=Zielobjekt unspezifiziert: Der Plan nennt weder Codepfad, Schnittstelle noch Aufrufweise des Vorhersagemodells – ohne diese Anker ist Phase A nicht konkret ausführbar.; Chicken-and-Egg beim Golden Dataset: Die Herkunft der geforderten 'mind. 10
+
+### `swarm_artifact:Draft deliverable for: Modellfehler reduzieren und stabiler `
+*23.08. 15:10 UTC · Quelle: builder*
+
+# Artefakt: Umsetzungsplan „Modellfehler reduzieren und stabiler machen"  **Typ:** build · **Versuch:** 1/3 · **Plan:** Fallback single-task plan  ---  ## 1. Ziel in einem Satz  Das Vorhersagemodell s
+
+### `last_swarm_goal`
+*23.08. 15:03 UTC · Quelle: system*
+
+Modellfehler reduzieren und stabiler machen
+
+### `dream:202608231502:5`
+*23.08. 15:02 UTC · Quelle: dream*
+
+Five new skill proposals were generated while the standing goal remains 'finally actually try the suggestions', confirming the proposal backlog grows faster than the execution loop consumes it.
+
+### `dream:202608231502:4`
+*23.08. 15:02 UTC · Quelle: dream*
+
+Conserve-mode throttling (stress 0.811 -> max_iterations=1) launched a swarm that then failed to converge in 2 cycles, so budget cuts during high stress are converting would-be successes into guaranteed failures.
+
+### `dream:202608231502:3`
+*23.08. 15:02 UTC · Quelle: dream*
+
+The evolution run crowned a variant scoring 9/10 internally, yet the swarm finished at 3/10, revealing that builder/critic self-scores are systematically inflated relative to realized outcomes.
+
+### `dream:202608231502:2`
+*23.08. 15:02 UTC · Quelle: dream*
+
+Latency on the same model varied from 1.6s to 41.1s across calls, proving fixed timeouts are unusable on free-tier providers and per-model adaptive latency budgets are required.
+
+### `dream:202608231502:1`
+*23.08. 15:02 UTC · Quelle: dream*
+
+HTTP 200 does not mean success: the nemotron-ultra endpoint returned status 200 with zero choices and a 502 'Service temporarily overloaded' body, so model calls must validate non-empty choices rather than trust the status code.
 
 ### `strategy:simulationen_häufiger_einsetzen`
 *23.08. 14:54 UTC · Quelle: evolution*
