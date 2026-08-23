@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1473 Fakten** · Stand 2026-08-23 22:48 UTC · aktualisiert bei jedem Herzschlag
+**1482 Fakten** · Stand 2026-08-23 23:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 632
-- **swarm_artifact:** 476
+- **dream:** 637
+- **swarm_artifact:** 479
 - **anti_pattern:** 124
 - **strategy:** 83
-- **last_swarm_goal:** 80
+- **last_swarm_goal:** 81
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Define Hermes Bridge Protocol Contracts`
+*23.08. 22:50 UTC · Quelle: builder*
+
+# Hermes Bridge Protocol Contracts  ## Overview  This document defines the communication protocol for the Hermes Bridge — a bidirectional channel between the local agent (Forge) and the remote Hermes 
+
+### `swarm_artifact:Build Bridge Interface and DI Kernel`
+*23.08. 22:50 UTC · Quelle: builder*
+
+```python # src/hermes/bridge/__init__.py """ Hermes Bridge Interface - Protocol-first bridge for agent communication.  Exposes send/receive/capabilities methods with structural typing. Uses a single 
+
+### `last_swarm_goal`
+*23.08. 22:49 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `swarm_artifact:Implement Transport Layer with Middleware Interception`
+*23.08. 22:49 UTC · Quelle: builder*
+
+```python # src/hermes/transport/__init__.py """ Hermes Transport Layer - Middleware interception transport for bridge communication.  Provides transparent middleware interception that handles seriali
+
+### `dream:202608232248:5`
+*23.08. 22:48 UTC · Quelle: dream*
+
+Baseline benchmark scores 25/25 but without comparative runs, performance regressions or improvements cannot be detected.
+
+### `dream:202608232248:4`
+*23.08. 22:48 UTC · Quelle: dream*
+
+Three drive goals expose systemic gaps: skills untested in simulation, swarms rarely complete, and no regular model benchmarking exists.
+
+### `dream:202608232248:3`
+*23.08. 22:48 UTC · Quelle: dream*
+
+Identical simulation goal 'Hermes-Brücke' executed twice with same risks/revisions parameters, wasting compute on redundant verification.
+
+### `dream:202608232248:2`
+*23.08. 22:48 UTC · Quelle: dream*
+
+Hand actions complete consistently in 20-50ms locally, proving local execution is orders of magnitude more dependable than remote model calls.
+
+### `dream:202608232248:1`
+*23.08. 22:48 UTC · Quelle: dream*
+
+Model latency varies extremely (0.7s to 143s) with upstream 502 overload errors, making remote inference unreliable for time-critical paths.
 
 ### `swarm_artifact:Implement Connection Lifecycle Manager`
 *23.08. 22:48 UTC · Quelle: builder*

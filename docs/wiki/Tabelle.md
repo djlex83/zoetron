@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1284 Neuronen · 19271 bewertete Synapsen
+Stand: 1285 Neuronen · 19415 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 1284 Neuronen · 19271 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 110 | 0.26 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 112 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 119 | 0.23 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 119 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 119 | 0.23 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 119 | 0.23 |
-| 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 101 | 0.27 |
+| 5 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 102 | 0.27 |
+| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 119 | 0.23 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 119 | 0.22 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 119 | 0.22 |
 | 9 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 118 | 0.23 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 119 | 0.22 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 119 | 0.22 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 119 | 0.22 |
-| 13 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 119 | 0.22 |
-| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Ergebnisvalidierung und “ (Note 5/1… | 119 | 0.22 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 119 | 0.22 |
+| 13 | 💭 | Model latency varies by 27× (13s–355s) without automatic failove… | 96 | 0.28 |
+| 14 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 119 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Ergebnisvalidierung und “ (Note 5/1… | 119 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

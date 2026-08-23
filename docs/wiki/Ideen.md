@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Modellkalibrierung verbessern *(wieder aufgegriffen: 3×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
-- Skill-Vorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
 - Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
@@ -38,9 +37,15 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
+- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Baseline benchmark scores 25/25 but without comparative runs, performance regressions or improvements cannot be detected.
+- Three drive goals expose systemic gaps: skills untested in simulation, swarms rarely complete, and no regular model benchmarking exists.
+- Identical simulation goal 'Hermes-Brücke' executed twice with same risks/revisions parameters, wasting compute on redundant verification.
+- Hand actions complete consistently in 20-50ms locally, proving local execution is orders of magnitude more dependable than remote model calls.
+- Model latency varies extremely (0.7s to 143s) with upstream 502 overload errors, making remote inference unreliable for time-critical paths.
 - Previous dream output (5 insights, 5 proposals) did not prevent recurrence of the same latency and adoption issues.
 - Three drive goals (skill adoption, Hermes protocol, swarm completion) remain open across cycles, indicating a systemic execution gap.
 - Prune runs consistently remove zero items, suggesting retention thresholds are too high or accumulation is too slow.
@@ -51,11 +56,6 @@
 - Five skill proposals were generated in one cycle (MemoryStore fallback, model_health, smoke tests, proposal filter, prune metrics) but zero were imple
 - Simulation repeatedly verdicts "go" then demands 5 revisions for the same Hermes-Brücke goal, proving the simulator does not validate actual filesyste
 - Model latency cascades exponentially within a single session (7.7s → 182.8s) without any circuit breaker or failover, turning transient load into syst
-- Drive goals repeatedly target the same gaps (simulation→practice, swarm completion, inter-agent comms) without measurable progress, suggesting missing
-- Skill proposals accumulate (benchmark_arbitrator, prune metrics, model_health, smoke tests, proposal_filter) but no adoption signal exists, creating a
-- Hermes bridge swarm has been started at least twice but no completion event appears, revealing a systemic pattern of swarm initiation without closure.
-- Model latency varies 25x (4.6s–113.7s) with no circuit breaker or fallback, causing unpredictable swarm delays and timeouts.
-- Pruning runs consistently report zero candidates pruned despite instrumentation proposals, indicating the pruning logic or trigger conditions are fund
 
 ---
 
