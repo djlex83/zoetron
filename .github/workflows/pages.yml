@@ -3,7 +3,7 @@ name: PAGES
 on:
   push:
     branches: [main]
-    paths: ["docs/**"]
+    paths: ["docs/**", "site/**", ".github/workflows/pages.yml"]
   workflow_dispatch: {}
 
 permissions:
@@ -23,6 +23,20 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
+
+      # the landing page lives in site/ and builds into docs/ (never emptying
+      # it — the heartbeat owns brain.html, graph.html and wiki/ in there)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Build landing page
+        working-directory: site
+        run: |
+          npm ci
+          npm run build
 
       # creates the Pages site automatically if it does not exist yet
       # NOTE: GitHub forces Node 24 on these actions already; the
