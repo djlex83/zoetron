@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1483 Fakten** · Stand 2026-08-23 23:09 UTC · aktualisiert bei jedem Herzschlag
+**1489 Fakten** · Stand 2026-08-23 23:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 637
+- **dream:** 642
 - **swarm_artifact:** 479
 - **anti_pattern:** 124
+- **last_swarm_goal:** 83
 - **strategy:** 83
-- **last_swarm_goal:** 82
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,36 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*23.08. 23:13 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232311:5`
+*23.08. 23:11 UTC · Quelle: dream*
+
+The Hermes bridge goal emerged independently from both dream analysis and swarm planning (a 'combination' signal), and since filesystem hand-actions ran 100% reliably at ~30ms, building bruecke.py on file-based channels is the highest-confidence next construct
+
+### `dream:202608232311:4`
+*23.08. 23:11 UTC · Quelle: dream*
+
+Prune runs removed 0 facts and 0 events, proving current pruning thresholds never fire and memory will grow unbounded without usage- or age-based eviction.
+
+### `dream:202608232311:3`
+*23.08. 23:11 UTC · Quelle: dream*
+
+Skill proposals systematically outpace simulation testing (confirmed by the explicit 'gap' drive goal), creating an idea graveyard unless proposals are automatically converted into simulation tasks.
+
+### `dream:202608232311:2`
+*23.08. 23:11 UTC · Quelle: dream*
+
+Benchmark scoring reveals reflex (2/5) as the weakest subsystem while cortex is already maxed (5/5), so improvement effort should shift from reasoning depth to hardening reactive loops.
+
+### `dream:202608232311:1`
+*23.08. 23:11 UTC · Quelle: dream*
+
+Model latency on the same endpoint is bimodal (3-14s for light tasks vs 92-164s under load), so critical-path model calls must assume worst-case latency and carry timeout/fallback guards rather than average-case expectations.
 
 ### `last_swarm_goal`
 *23.08. 23:03 UTC · Quelle: system*

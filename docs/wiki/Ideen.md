@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The Hermes bridge goal emerged independently from both dream analysis and swarm planning (a 'combination' signal), and since filesystem hand-actions r
+- Prune runs removed 0 facts and 0 events, proving current pruning thresholds never fire and memory will grow unbounded without usage- or age-based evic
+- Skill proposals systematically outpace simulation testing (confirmed by the explicit 'gap' drive goal), creating an idea graveyard unless proposals ar
+- Benchmark scoring reveals reflex (2/5) as the weakest subsystem while cortex is already maxed (5/5), so improvement effort should shift from reasoning
+- Model latency on the same endpoint is bimodal (3-14s for light tasks vs 92-164s under load), so critical-path model calls must assume worst-case laten
 - Baseline benchmark scores 25/25 but without comparative runs, performance regressions or improvements cannot be detected.
 - Three drive goals expose systemic gaps: skills untested in simulation, swarms rarely complete, and no regular model benchmarking exists.
 - Identical simulation goal 'Hermes-Brücke' executed twice with same risks/revisions parameters, wasting compute on redundant verification.
@@ -51,11 +56,6 @@
 - Prune runs consistently remove zero items, suggesting retention thresholds are too high or accumulation is too slow.
 - Hand actions complete in ~30 ms with zero failures, proving local tooling is stable while remote inference is the bottleneck.
 - Model latency for nemotron-3-ultra varies wildly (4.5–182.8 s) making it unreliable for time-bound tasks.
-- Recurrent drive goals (revive old dream, fix model errors, apply skills) persist across cycles because the system lacks a mechanism to promote a drive
-- The Hermes-Brücke architecture relies on filesystem polling (bruecke.py) for inter-agent communication, which inherently creates race conditions and l
-- Five skill proposals were generated in one cycle (MemoryStore fallback, model_health, smoke tests, proposal filter, prune metrics) but zero were imple
-- Simulation repeatedly verdicts "go" then demands 5 revisions for the same Hermes-Brücke goal, proving the simulator does not validate actual filesyste
-- Model latency cascades exponentially within a single session (7.7s → 182.8s) without any circuit breaker or failover, turning transient load into syst
 
 ---
 
