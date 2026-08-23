@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1433 Fakten** · Stand 2026-08-23 22:34 UTC · aktualisiert bei jedem Herzschlag
+**1454 Fakten** · Stand 2026-08-23 22:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 607
-- **swarm_artifact:** 466
+- **dream:** 622
+- **swarm_artifact:** 470
 - **anti_pattern:** 124
 - **strategy:** 83
-- **last_swarm_goal:** 75
+- **last_swarm_goal:** 77
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,111 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232241:5`
+*23.08. 22:41 UTC · Quelle: dream*
+
+Drive goals repeatedly target the same gaps (simulation→practice, swarm completion, inter-agent comms) without measurable progress, suggesting missing feedback loops.
+
+### `dream:202608232241:4`
+*23.08. 22:41 UTC · Quelle: dream*
+
+Skill proposals accumulate (benchmark_arbitrator, prune metrics, model_health, smoke tests, proposal_filter) but no adoption signal exists, creating a proposal-to-production gap.
+
+### `dream:202608232241:3`
+*23.08. 22:41 UTC · Quelle: dream*
+
+Hermes bridge swarm has been started at least twice but no completion event appears, revealing a systemic pattern of swarm initiation without closure.
+
+### `dream:202608232241:2`
+*23.08. 22:41 UTC · Quelle: dream*
+
+Model latency varies 25x (4.6s–113.7s) with no circuit breaker or fallback, causing unpredictable swarm delays and timeouts.
+
+### `dream:202608232241:1`
+*23.08. 22:41 UTC · Quelle: dream*
+
+Pruning runs consistently report zero candidates pruned despite instrumentation proposals, indicating the pruning logic or trigger conditions are fundamentally broken.
+
+### `swarm_artifact:Implement Hermes Bridge Receiver`
+*23.08. 22:40 UTC · Quelle: builder*
+
+# Hermes Bridge Receiver Implementation  ```python """ Hermes Bridge Receiver - Inbound Communication Component  Listens for messages from Hermes via configurable transport (stdin/stdout, Unix socket,
+
+### `swarm_artifact:Define Hermes Bridge Protocol Contract - Message Schemas & T`
+*23.08. 22:39 UTC · Quelle: builder*
+
+```python """ Hermes Bridge Protocol Contract  Protocol-first contract module defining message schemas, message types, and communication interfaces for the Hermes Bridge.  This establishes the typed c
+
+### `swarm_artifact:Implement Hermes Bridge Sender`
+*23.08. 22:39 UTC · Quelle: builder*
+
+# Hermes Bridge Sender Implementation  ```python """ Hermes Bridge Sender - Outbound Communication Component  Serializes messages and delivers them to Hermes via configurable transport (stdin/stdout, 
+
+### `last_swarm_goal`
+*23.08. 22:37 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `swarm_artifact:Define Hermes Bridge Protocol Contract`
+*23.08. 22:37 UTC · Quelle: builder*
+
+# Hermes Bridge Protocol Contract  ```python """ Hermes Bridge Protocol Contract  Protocol-first contract module defining message schemas, message types, and communication interfaces for the Hermes br
+
+### `dream:202608232235:5`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Eight persistent model errors remain unclassified; error taxonomy is missing, preventing targeted fixes.
+
+### `dream:202608232235:4`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Swarm execution succeeded (simulation approved, all hand_actions ok) showing the filesystem-based coordination protocol works for multi-agent tasks.
+
+### `dream:202608232235:3`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Single baseline benchmark (24/25) provides no trend data; progress cannot be distinguished from variance without repeated measurement.
+
+### `dream:202608232235:2`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Fifty skill proposals exist but adoption is unmeasured, creating a proposal-execution gap where learning doesn't compound.
+
+### `dream:202608232235:1`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Model latency varies 200x (0.6s–114.5s) indicating unreliable inference infrastructure that corrupts timing-dependent decisions.
+
+### `last_swarm_goal`
+*23.08. 22:35 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232235:5`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Swarm simulation required 5 revisions before 'go' verdict, revealing iterative refinement as default path.
+
+### `dream:202608232235:4`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Single baseline benchmark (24/25) cannot detect regression; trend measurement is absent.
+
+### `dream:202608232235:3`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Fifty skill proposals exist but no adoption pipeline—proposals decay without deployment tracking.
+
+### `dream:202608232235:2`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Provider 502 errors are transient; automatic failover to nemotron-3-super-120b succeeded on first retry.
+
+### `dream:202608232235:1`
+*23.08. 22:35 UTC · Quelle: dream*
+
+Model latency varies 27× (1s–27s) on identical nemotron-3-ultra calls, making fixed timeouts unreliable.
 
 ### `swarm_artifact:Build Hermes Listener Daemon Skeleton`
 *23.08. 22:34 UTC · Quelle: builder*

@@ -1,14 +1,14 @@
 {
- "stand": 1787524487.4597535,
+ "stand": 1787524881.1034405,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 42,
+   "laeufe": 50,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 1455.1296892166138,
+   "latenz_summe_s": 1788.5291323661804,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   }

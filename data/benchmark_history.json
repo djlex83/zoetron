@@ -1,0 +1,14 @@
+{
+ "laeufe": [
+  {
+   "ts": 1787524594.3876283,
+   "datum": "2026-08-23",
+   "punkte": 25,
+   "max": 25,
+   "code": 10,
+   "daten": 10,
+   "recall": 5,
+   "basislinie": true
+  }
+ ]
+}
