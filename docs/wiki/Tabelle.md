@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1230 Neuronen · 17451 bewertete Synapsen
+Stand: 1235 Neuronen · 17594 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,8 +12,8 @@ Stand: 1230 Neuronen · 17451 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 117 | 0.23 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 117 | 0.23 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 117 | 0.23 |
-| 4 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 101 | 0.27 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 102 | 0.27 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 117 | 0.23 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 117 | 0.23 |
 | 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 117 | 0.22 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 117 | 0.22 |

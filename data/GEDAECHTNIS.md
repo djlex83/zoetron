@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1376 Fakten** · Stand 2026-08-23 22:11 UTC · aktualisiert bei jedem Herzschlag
+**1382 Fakten** · Stand 2026-08-23 22:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 577
+- **dream:** 582
 - **swarm_artifact:** 449
 - **anti_pattern:** 122
 - **strategy:** 82
-- **last_swarm_goal:** 69
+- **last_swarm_goal:** 70
 - **last_swarm_critique:** 58
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,36 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*23.08. 22:13 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232212:5`
+*23.08. 22:12 UTC · Quelle: dream*
+
+Whispers blocked on creator decisions re-consume execution slots each cycle instead of batching into one decision request.
+
+### `dream:202608232212:4`
+*23.08. 22:12 UTC · Quelle: dream*
+
+Swarm tasks stall at handoff boundaries because completion gates lack mandatory verification artifacts.
+
+### `dream:202608232212:3`
+*23.08. 22:12 UTC · Quelle: dream*
+
+Prune runs repeatedly remove zero items, indicating stale thresholds that never self-adjust.
+
+### `dream:202608232212:2`
+*23.08. 22:12 UTC · Quelle: dream*
+
+Model latency variance (45s–194s) breaks time budgets and triggers cascading retries without a circuit-breaker.
+
+### `dream:202608232212:1`
+*23.08. 22:12 UTC · Quelle: dream*
+
+Duplicate skill proposals recur because no deduplication mechanism exists across dream cycles.
 
 ### `strategy:ich_kern_injektor_bauen__ein_selbst_für_jeden_llm_`
 *23.08. 22:11 UTC · Quelle: evolution*

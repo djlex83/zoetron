@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,10 +16,10 @@
 - Add automated contract tests for the MemoryStore interface (add_fact, get_facts, etc.) to run on every CI buil *(hatte die Idee 3×)*
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
-- Create dream-to-evolution extractor that parses finished logs for recurring error patterns and seeds them as v *(hatte die Idee 2×)*
 - Deploy a tiered model‑call wrapper with circuit breaker (3 failures → open), exponential backoff (1s,2s,4s,8s) *(hatte die Idee 2×)*
 - Build a skill lifecycle tracker logging proposal, review, instantiate, and first‑use timestamps; auto‑flag ski *(hatte die Idee 2×)*
 - Deploy an adaptive timeout with exponential backoff and circuit breaker (3 failures → open), ultra→super→light *(hatte die Idee 2×)*
+- Add an early‑validation gate: before simulation, compare predicted outcome MAE to a rolling threshold; if MAE> *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Whispers blocked on creator decisions re-consume execution slots each cycle instead of batching into one decision request.
+- Swarm tasks stall at handoff boundaries because completion gates lack mandatory verification artifacts.
+- Prune runs repeatedly remove zero items, indicating stale thresholds that never self-adjust.
+- Model latency variance (45s–194s) breaks time budgets and triggers cascading retries without a circuit-breaker.
+- Duplicate skill proposals recur because no deduplication mechanism exists across dream cycles.
 - Reflex-mode execution succeeded for the well-scoped I-core injector, confirming that concrete, single-file tasks converge reliably.
 - Capability benchmark stalled after three automated attempts, revealing a missing arbitration mechanism for non-convergent optimization.
 - Skill proposals accumulate but lack a validation gate, causing low adoption and a quality gap noted in drive goals.
@@ -51,11 +56,6 @@
 - Evolution produces high-scoring variants (8–9/10) but system-level benchmark score remains low (3/10), indicating integration gaps.
 - Benchmark development requires multiple simulation–revision cycles; atomic apply/rollback prevents partial deployments.
 - High latency variance (2.6–20.5 s) across identical model calls demands runtime latency-aware routing with dynamic thresholds.
-- Consecutive prune_run events removed 0 facts and 0 events, meaning retention thresholds are effectively inert and memory grows unchecked until a zero-
-- Both parked whispers burned all 3 attempts waiting on a creator decision, so re-attempting parked items wastes cycles; park once and escalate through 
-- Model latency on the identical provider swung 8.9s to 23.1s (~2.6x spread), so timeout and failover thresholds must be computed relative to a rolling 
-- act_done recorded converged=true with score=null in reflex mode, proving success is currently stamped without measured evidence; every completion must
-- Near-duplicate goals regenerate every cycle ('Modell weniger Fehler machen' vs 'Modellfehler vermeiden'; Konvergenz-Tor appears simultaneously as whis
 
 ---
 
