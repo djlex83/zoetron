@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**844 Fakten** · Stand 2026-08-23 13:42 UTC · aktualisiert bei jedem Herzschlag
+**857 Fakten** · Stand 2026-08-23 13:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 348
-- **dream:** 261
-- **anti_pattern:** 84
-- **strategy:** 63
-- **last_swarm_goal:** 36
-- **last_swarm_critique:** 34
+- **swarm_artifact:** 351
+- **dream:** 266
+- **anti_pattern:** 86
+- **strategy:** 64
+- **last_swarm_goal:** 37
+- **last_swarm_critique:** 35
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:vorschläge_endlich_wirklich_ausprobieren`
+*23.08. 13:52 UTC · Quelle: evolution*
+
+Complete replacement with modern test framework - Variant 0 (pytest replacement) scores highest across all dimensions. It eliminates the broken harness entirely rather than patching or over-engineering, directly solving all critic
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge endlich wirkl:2`
+*23.08. 13:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Systematic repair pipeline with contract verification - Fix the existing harness incrementally using a repair loop: 1) Write contract tests (pre/post conditions) for each incomplete method using hypothesis for property-based 
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge endlich wirkl:1`
+*23.08. 13:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Proposal-centric execution engine with sandboxing - Design a dedicated ProposalExecutor class that treats proposals as first-class objects: load YAML/JSON proposals, parse into typed dataclasses, validate technical feasibilit
+
+### `last_swarm_critique`
+*23.08. 13:51 UTC · Quelle: critic*
+
+score=3; issues=Skill test harness is incomplete - cuts off mid-exception handler (PermissionError), missing general exception handling, method completion, and result retrieval methods; No proposals were actually loaded, parsed, or tested - only directory expl
+
+### `swarm_artifact:Create automated skill test harness`
+*23.08. 13:51 UTC · Quelle: builder*
+
+{   "action": "shell",   "command": "mkdir -p src/forge/tools",   "description": "Create directory for test harness" } {   "action": "write",   "path": "src/forge/tools/skill_test_harness.py",   "cont
+
+### `swarm_artifact:Validate proposals for technical feasibility`
+*23.08. 13:50 UTC · Quelle: builder*
+
+{   "action": "shell",   "command": "find . -name '*proposal*' -o -name '*skill*' -o -name '*vorschlag*' 2>/dev/null | head -30",   "description": "Find proposal/skill files" }
+
+### `swarm_artifact:Load and parse skill proposals from source file`
+*23.08. 13:50 UTC · Quelle: builder*
+
+{   "action": "shell",   "command": "ls -la data/ 2>/dev/null || echo 'data directory not found'",   "description": "Check data directory for proposals file" }
+
+### `last_swarm_goal`
+*23.08. 13:48 UTC · Quelle: system*
+
+Vorschläge endlich wirklich ausprobieren
+
+### `dream:202608231348:5`
+*23.08. 13:48 UTC · Quelle: dream*
+
+Fixed low iteration budget (max_iterations=2) prevents convergence on complex goals despite evolutionary improvements.
+
+### `dream:202608231348:4`
+*23.08. 13:48 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 5 vs actual 3) indicates systematic overestimation requiring continuous recalibration.
+
+### `dream:202608231348:3`
+*23.08. 13:48 UTC · Quelle: dream*
+
+Runtime AttributeError on MemoryStore.add_fact reveals missing startup contract validation for core service interfaces.
+
+### `dream:202608231348:2`
+*23.08. 13:48 UTC · Quelle: dream*
+
+Evolution optimizing internal variant scores (8-9) without post-evolution swarm validation produces overfitted solutions that fail real evaluation (score 3).
+
+### `dream:202608231348:1`
+*23.08. 13:48 UTC · Quelle: dream*
+
+Model latency variance (5-60s) breaks role-specific SLAs and causes cascade failures in time-bounded swarms.
 
 ### `strategy:ersten_swarm_lauf_mit_score_8__konvergieren_lassen`
 *23.08. 13:41 UTC · Quelle: evolution*

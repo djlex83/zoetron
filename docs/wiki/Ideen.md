@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 13:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 13:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modellfehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler bei Issues reduzieren *(wieder aufgegriffen: 2×)*
 - Alte Träume besser verknüpfen *(wieder aufgegriffen: 2×)*
+- Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beheben *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger testen *(wieder aufgegriffen: 2×)*
 - Skill-Vorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
-- GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fixed low iteration budget (max_iterations=2) prevents convergence on complex goals despite evolutionary improvements.
+- Calibration error of 2 points (predicted 5 vs actual 3) indicates systematic overestimation requiring continuous recalibration.
+- Runtime AttributeError on MemoryStore.add_fact reveals missing startup contract validation for core service interfaces.
+- Evolution optimizing internal variant scores (8-9) without post-evolution swarm validation produces overfitted solutions that fail real evaluation (sc
+- Model latency variance (5-60s) breaks role-specific SLAs and causes cascade failures in time-bounded swarms.
 - Pruner inactivity (0 facts/events pruned) indicates either aggressive thresholds or lack of decay policies, risking unbounded memory growth.
 - MemoryStore missing `add_fact` method causes hand-action failures, revealing incomplete interface contracts in core modules.
 - Swarm convergence fails despite evolution gains (3→8) due to role imbalance (4 builders, 1 planner, 1 critic) and missing quorum enforcement.
@@ -51,11 +56,6 @@
 - The swarm ran with four builders and only one critic, producing insufficient critique and lowering decision quality.
 - A missing 'add_fact' method on MemoryStore triggered an AttributeError, revealing a gap in interface contracts.
 - Model latency fluctuates widely (8–185 s), causing unpredictable response times and threatening deadline compliance.
-- Reliance on recalled goals such as last_swarm_goal makes memory correctness vital; validating interface contracts at startup prevents silent failures.
-- Under stress the system enters a conserve mode that caps iterations and tasks, indicating the need for adaptive planning depth to avoid overload.
-- Calibration drift between predicted and actual scores shows performance can degrade silently, demanding continuous observability with automated stagna
-- Authentication (403) and service‑overload (502) errors expose external API unreliability, requiring retry logic, circuit breakers, and model diversifi
-- Latency spikes above 60 s for high‑capacity models break real‑time expectations, necessitating SLA enforcement and automatic fallback.
 
 ---
 
