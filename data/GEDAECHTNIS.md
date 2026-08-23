@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**502 Fakten** · Stand 2026-08-23 04:56 UTC · aktualisiert bei jedem Herzschlag
+**510 Fakten** · Stand 2026-08-23 05:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 258
-- **dream:** 110
+- **swarm_artifact:** 260
+- **dream:** 115
 - **anti_pattern:** 46
 - **strategy:** 44
+- **last_swarm_goal:** 14
 - **last_swarm_critique:** 13
-- **last_swarm_goal:** 13
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,46 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Simulation-to-Action Pipeline`
+*23.08. 05:23 UTC · Quelle: builder*
+
+# Simulation-to-Action Pipeline  ```python # src/simulation_to_action/__init__.py """ Simulation-to-Action Pipeline - Analyzes simulation results and generates actionable tasks based on defined criter
+
+### `swarm_artifact:Simulation Runner Framework`
+*23.08. 05:20 UTC · Quelle: builder*
+
+# Simulation Runner Framework  ```python # src/simulation_runner/__init__.py """ Simulation Runner Framework - A reusable framework for executing simulations, capturing metrics, and storing results fo
+
+### `last_swarm_goal`
+*23.08. 05:12 UTC · Quelle: system*
+
+Simulationen häufiger in die Praxis umsetzen
+
+### `dream:202608230512:5`
+*23.08. 05:12 UTC · Quelle: dream*
+
+Calibration MAE=0 despite non-convergence shows outcome prediction ≠ process quality prediction.
+
+### `dream:202608230512:4`
+*23.08. 05:12 UTC · Quelle: dream*
+
+Swarm role distribution (1 planner, 5 builders, 1 critic) correlates with non-convergence; builder-heavy swarms overproduce code without architectural critique.
+
+### `dream:202608230512:3`
+*23.08. 05:12 UTC · Quelle: dream*
+
+MemoryStore.AttributeError escaped simulation validation, proving runtime infrastructure errors require separate contract testing.
+
+### `dream:202608230512:2`
+*23.08. 05:12 UTC · Quelle: dream*
+
+Simulation revision loops (5+ revisions) and evolution scores (8-9) failed to achieve convergence (score 4), revealing simulation-reality gap for plugin architecture tasks.
+
+### `dream:202608230512:1`
+*23.08. 05:12 UTC · Quelle: dream*
+
+High latency variance (3-68s) and ultra-model overload errors indicate single-model dependency creates reliability bottlenecks.
 
 ### `dream:202608230456:5`
 *23.08. 04:56 UTC · Quelle: dream*
