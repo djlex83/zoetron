@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 3×)*
@@ -35,12 +35,17 @@
 - Alte Träume besser verknüpfen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
+- Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning thresholds are set too high (zero events pruned across runs), leaving calibration-critical data buried in noise.
+- Simulations frequently emit zero-risk 'go' verdicts that bypass scrutiny, requiring a mandatory second-pass gate.
+- Internal score predictors drift upward systematically; only independent re-scoring with a fixed threshold (Δ>2) catches inflation.
+- All :free-tier models share a hidden rate-limit pool, making provider diversity illusory without explicit pooling logic.
+- Model latency spikes (35s vs 19s baseline) cascade into swarm failures and demand automatic tier degradation.
 - Calibration events are sparse while drive goals explicitly demand more frequent calibration to improve model predictions.
 - Skill proposals accumulate without an execution pipeline; none are auto-converted to tracked issues or scheduled for review.
 - Documentation metrics drift across README, docs, and code (heartbeat: 5 min vs 10 min vs 300 s) because no single source of truth is enforced.
@@ -51,11 +56,6 @@
 - Model latency occasionally exceeds acceptable thresholds, risking delays without a fallback mechanism.
 - GitHub synchronization failures stem from unhandled API rate limits and transient errors, requiring retry logic.
 - Many skill proposals remain unimplemented because there is no systematic validation or testing pipeline.
-- Isolated same‑day dreaming fails to leverage older memories; pairing them generates novel goal candidates and improves insight generation.
-- Errors in GitHub‑task synchronization arise from unvalidated external‑API assumptions, necessitating pre‑flight validation and issue tracking.
-- Skill proposals often stay unimplemented; a repetition‑based promotion mechanism turns idle ideas into actionable tasks.
-- Pruning runs that prune zero items while the store exceeds size threshold reveal missing eligibility criteria, risking unbounded growth.
-- Latency variability across models requires adaptive timeout guards to avoid stalls and enable reliable fallback.
 
 ---
 

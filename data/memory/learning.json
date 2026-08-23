@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-23 20:38:11",
+ "stand": "2026-08-23 20:42:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -79,14 +79,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fehler-in-modellen-finden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.695,
+ "haende_quote": 0.698,
  "simulationen_angewandt": 122,
  "swarm_scores": {
-  "n": 70,
+  "n": 69,
   "best": 8.0,
-  "schnitt": 4.21
+  "schnitt": 4.16
  },
  "score_nach_ziel_typ": {
   "analyse": {

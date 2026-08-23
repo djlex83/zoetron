@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1206 Fakten** · Stand 2026-08-23 20:38 UTC · aktualisiert bei jedem Herzschlag
+**1211 Fakten** · Stand 2026-08-23 20:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 482
+- **dream:** 487
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232042:5`
+*23.08. 20:42 UTC · Quelle: dream*
+
+Pruning thresholds are set too high (zero events pruned across runs), leaving calibration-critical data buried in noise.
+
+### `dream:202608232042:4`
+*23.08. 20:42 UTC · Quelle: dream*
+
+Simulations frequently emit zero-risk 'go' verdicts that bypass scrutiny, requiring a mandatory second-pass gate.
+
+### `dream:202608232042:3`
+*23.08. 20:42 UTC · Quelle: dream*
+
+Internal score predictors drift upward systematically; only independent re-scoring with a fixed threshold (Δ>2) catches inflation.
+
+### `dream:202608232042:2`
+*23.08. 20:42 UTC · Quelle: dream*
+
+All :free-tier models share a hidden rate-limit pool, making provider diversity illusory without explicit pooling logic.
+
+### `dream:202608232042:1`
+*23.08. 20:42 UTC · Quelle: dream*
+
+Model latency spikes (35s vs 19s baseline) cascade into swarm failures and demand automatic tier degradation.
 
 ### `dream:202608232037:5`
 *23.08. 20:37 UTC · Quelle: dream*
