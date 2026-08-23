@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1454 Fakten** · Stand 2026-08-23 22:41 UTC · aktualisiert bei jedem Herzschlag
+**1461 Fakten** · Stand 2026-08-23 22:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 622
-- **swarm_artifact:** 470
+- **dream:** 627
+- **swarm_artifact:** 471
 - **anti_pattern:** 124
 - **strategy:** 83
-- **last_swarm_goal:** 77
+- **last_swarm_goal:** 78
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232243:5`
+*23.08. 22:43 UTC · Quelle: dream*
+
+Recurrent drive goals (revive old dream, fix model errors, apply skills) persist across cycles because the system lacks a mechanism to promote a drive goal into a binding work-item with acceptance criteria.
+
+### `dream:202608232243:4`
+*23.08. 22:43 UTC · Quelle: dream*
+
+The Hermes-Brücke architecture relies on filesystem polling (bruecke.py) for inter-agent communication, which inherently creates race conditions and latency that no amount of revision fixes.
+
+### `dream:202608232243:3`
+*23.08. 22:43 UTC · Quelle: dream*
+
+Five skill proposals were generated in one cycle (MemoryStore fallback, model_health, smoke tests, proposal filter, prune metrics) but zero were implemented, confirming the proposal-to-production gap the drive goal explicitly identifies.
+
+### `dream:202608232243:2`
+*23.08. 22:43 UTC · Quelle: dream*
+
+Simulation repeatedly verdicts "go" then demands 5 revisions for the same Hermes-Brücke goal, proving the simulator does not validate actual filesystem I/O or inter-agent handshake logic.
+
+### `dream:202608232243:1`
+*23.08. 22:43 UTC · Quelle: dream*
+
+Model latency cascades exponentially within a single session (7.7s → 182.8s) without any circuit breaker or failover, turning transient load into systemic paralysis.
+
+### `last_swarm_goal`
+*23.08. 22:42 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `swarm_artifact:Implement Hermes Bridge Transport Layer - Async Message Chan`
+*23.08. 22:42 UTC · Quelle: builder*
+
+```python """ Hermes Bridge Transport Layer  Async message channel implementing the Hermes Bridge Protocol Contract. Provides message serialization, delivery guarantees, connection lifecycle, and retr
 
 ### `dream:202608232241:5`
 *23.08. 22:41 UTC · Quelle: dream*
