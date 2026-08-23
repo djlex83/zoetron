@@ -21,7 +21,7 @@
   "title": "Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)",
   "why": "4x selbst gewünscht, und deine häufigsten eigenen Ziele sind Modellfehler. Baue model_health.py: für jedes OpenRouter-Modell Fehlerrate und Antwortzeit in data/model_health.json protokollieren. Bei 3 Fehlern in Folge öffnet der Sicherungsschalter (Circuit Breaker = Modell wird vorübergehend gesperrt), das Modell wird 30 Minuten übersprungen, ein Ersatzmodell übernimmt automatisch. Fertig wenn: ein simulierter 502-Fehler im Test nachweisbar zum automatischen Modellwechsel führt und das Register nach jedem Beat aktualisiert ist.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
@@ -112,5 +112,20 @@
   "why": "Erfindung des Erschaffers: das Zoem als kleinste vererbbare Einheit geprüfter Maschinen-Erfahrung - Kultur statt nur Gene. Baue zoem.py mit drei Teilen: 1) EXPORT: jede Lektion und jedes Anti-Pattern mit Score-Beleg wird als einzelne Datei nach data/zoeme/out/ exportiert - Felder: inhalt (Klartext), beweisrezept (ausführbarer Test), herkunft (Organismus-ID, Zeitpunkt, Quell-Ereignis), stammbaum (Liste der Vorbesitzer). 2) IMPORT mit IMMUNSYSTEM: fremde Zoeme aus data/zoeme/in/ landen zuerst in Quarantäne; ins Gedächtnis übernommen wird nur, was das eigene Beweisrezept lokal besteht - Abgelehntes wird mit Grund protokolliert. 3) EXPERIMENT: dokumentiere den ersten Erbgang - Organismus B übernimmt ein Anti-Pattern-Zoem von Organismus A und vermeidet nachweisbar einen Fehler, den er selbst nie gemacht hat. Fertig wenn: Export und Import mit Logbeleg laufen, mindestens ein Zoem die Prüfung besteht und eines abgelehnt wird, und der Erbgang A nach B als Bericht in docs/ liegt. Hinweis: die zweite Organismus-Instanz startet der Erschaffer - Teamarbeit.",
   "signal": "gap",
   "_done": false
+ },
+ {
+  "title": "Report-Truncation im Wochenreport beheben (harte Kürzung → Satzgrenze)",
+  "why": "Im Report 2026-W34 brechen die Lern-Einträge mitten im Wort ab ('...revealing missing terminal-event', '...die vage Discovery-Goal (fin'). Der Report-Generator schneidet stumpf bei fester Zeichenzahl. Baue eine ausführbare Funktion smart_truncate(text, max_len): kürzt an der letzten Satz- oder Wortgrenze vor max_len und hängt ein Auslassungszeichen an; kürzt nie mitten im Wort. Danach im Report-Generator an ALLEN Stellen einsetzen, an denen aktuell hart geschnitten wird. Fertig wenn: 1) ein Test mit Beispielsätzen beweist, dass kein Ergebnis auf einem Wortfragment endet, 2) der nächste generierte Wochenreport in docs/REPORTS/ keinen abgeschnittenen Worttorso mehr enthält (per grep auf fehlende Endzeichen prüfbar). Nur lauffähiger Code zählt, kein Design-Dokument.",
+  "signal": "failure"
+ },
+ {
+  "title": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren",
+  "why": "Das Ideen-Board zählt Varianten derselben Idee getrennt: 'Modellfehler reduzieren / verringern / verstehen und verringern / beheben und vermeiden / dauerhaft reduzieren' sind fünf Einträge für ein Ziel, der 'skill activation tracker' steht dreimal leicht umformuliert da. Dadurch ist die Dringlichkeitszählung ('hatte die Idee 5x') falsch: echte Häufungen zersplittern über Formulierungen und sehen harmlos aus. Der semantische Vergleich existiert bereits im Graph-Organ (TF-IDF, Kosinus >= 0.18) und greift nur dort. Baue ein ausführbares Skript, das dieselbe Ähnlichkeitsfunktion auf Ideen und DRIVE-Ziele anwendet: Varianten zu Clustern zusammenfassen, die häufigste oder klarste Formulierung als Cluster-Titel wählen, und die Zählung als Summe des Clusters ausgeben statt je Variante. Fertig wenn: 1) das neu generierte data/IDEEN.md die fünf Modellfehler-Varianten als EINEN Eintrag mit summierter Zählung zeigt, 2) ein Test mit bekannten Varianten-Paaren beweist, dass sie im selben Cluster landen und ein unverwandtes Ziel NICHT mitgezogen wird. Nur lauffähiger Code zählt, kein Design-Dokument.",
+  "signal": "gap"
+ },
+ {
+  "title": "Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten",
+  "why": "Die eigene Aussendarstellung widerspricht sich an drei Stellen: README_DE nennt den Herzschlag 'alle 5 Min (~288/Tag)', docs/index.html schreibt 'heartbeat every 15 min' UND 'reports every 30 minutes'; README nennt '34 Tests komplett offline gruen', index.html '65/65 tests green'. Ein Organismus, der auf der eigenen Landing-Page Selbstheilung beansprucht, muss zuerst die eigene Doku heilen. Baue ein ausführbares Skript doc_check.py: liest die WAHREN Werte aus der Quelle der Wahrheit (Herzschlag-Intervall aus heartbeat_daemon.sh, Testanzahl aus dem Testlauf, Telegram-Intervall aus der Heartbeat-Logik), vergleicht sie mit den Zahlen in README.md, README_DE.md und docs/index.html und meldet jede Abweichung mit Datei, Zeile und erwartetem Wert. Werte NICHT raten: was sich nicht aus dem Code ableiten lässt, wird als 'unbestimmt' gemeldet, nicht erfunden (Genom-Regel be_honest). Fertig wenn: 1) das Skript die aktuellen Widersprüche vollständig auflistet, 2) es im Herzschlag läuft und bei Abweichung Alarm gibt, 3) die drei Dateien danach übereinstimmende Zahlen tragen. Nebenbei zu korrigieren: Tippfehler 'konkretiem Anliegen' in docs/index.html. Nur lauffähiger Code zählt, kein Design-Dokument.",
+  "signal": "gap"
  }
 ]
