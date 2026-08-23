@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**368 Fakten** · Stand 2026-08-23 01:31 UTC · aktualisiert bei jedem Herzschlag
+**382 Fakten** · Stand 2026-08-23 01:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 219
-- **dream:** 60
-- **strategy:** 35
-- **anti_pattern:** 28
+- **swarm_artifact:** 223
+- **dream:** 65
+- **strategy:** 36
+- **anti_pattern:** 30
 - **creator_teaching:** 7
-- **last_swarm_critique:** 4
-- **last_swarm_goal:** 4
+- **last_swarm_critique:** 5
+- **last_swarm_goal:** 5
 - **frontier:** 3
 - **artifact:** 3
 - **best_swarm_score:** 1
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:verschiedene_situationen_durchspielen`
+*23.08. 01:52 UTC · Quelle: evolution*
+
+Pure functional pipeline with explicit seeding and validation - Pure functional pipeline offers highest elegance and reproducibility while eliminating duplication and providing clear, testable components.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Verschiedene Situationen:1`
+*23.08. 01:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Object‑oriented simulation using Strategy pattern for success logic - Create an abstract `Scenario` base class with attributes `name`, `description`, and a method `success_probability() -> float`. Implement concrete subclasse
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Verschiedene Situationen:0`
+*23.08. 01:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Data‑driven configuration with a single reusable runner - Define a list of scenario dictionaries (name, description, base_success_rate, modifiers). Write one `run_scenario(scenario: dict, rng: np.random.Generator) -> bool` fu
+
+### `last_swarm_critique`
+*23.08. 01:52 UTC · Quelle: critic*
+
+score=4; issues=Code duplication: the same `run_scenario` function is redefined in each block.; Hardcoded success probability (0.7) applied uniformly to all scenarios, lacking scenario-specific logic.; No random seed is set, making results non‑reproducible.; I
+
+### `swarm_artifact:Ergebnisse auswerten und Memory aktualisieren`
+*23.08. 01:52 UTC · Quelle: builder*
+
+```python import random  def run_scenario(scenario):     return random.random() < 0.7  scenarios = [     {'name': 'Netzwerkausfall', 'description': 'Verlust der Verbindung zu einem kritischen Server.'
+
+### `swarm_artifact:Durchläufe ausführen und Ergebnisse sammeln`
+*23.08. 01:51 UTC · Quelle: builder*
+
+```python import random  def run_scenario(scenario):     # 70% chance of success as in the original example     return random.random() < 0.7  scenarios = [     {'name': 'Netzwerkausfall', 'description
+
+### `swarm_artifact:Simulationsumgebung aufbauen`
+*23.08. 01:51 UTC · Quelle: builder*
+
+```python import random  def run_scenario(scenario):     return random.random() < 0.7  scenarios = [     {'name': 'Netzwerkausfall', 'description': 'Verlust der Verbindung zu einem kritischen Server.'
+
+### `swarm_artifact:Szenarien katalogisieren`
+*23.08. 01:51 UTC · Quelle: builder*
+
+| Name               | Description                                                                 | |--------------------|-----------------------------------------------------------------------------
+
+### `last_swarm_goal`
+*23.08. 01:47 UTC · Quelle: system*
+
+Verschiedene Situationen durchspielen
+
+### `dream:202608230147:5`
+*23.08. 01:47 UTC · Quelle: dream*
+
+Recurring model errors stem from missing real‑time error feedback, reducing system reliability.
+
+### `dream:202608230147:4`
+*23.08. 01:47 UTC · Quelle: dream*
+
+Swarm convergence stalls when worker roles become unbalanced or shards stop progressing without detection.
+
+### `dream:202608230147:3`
+*23.08. 01:47 UTC · Quelle: dream*
+
+Infrequent model calibration allows prediction drift to accumulate, degrading decision quality over time.
+
+### `dream:202608230147:2`
+*23.08. 01:47 UTC · Quelle: dream*
+
+Many skill proposals never reach use because they lack empirical validation, creating an ideation‑to‑impact gap.
+
+### `dream:202608230147:1`
+*23.08. 01:47 UTC · Quelle: dream*
+
+High latency spikes (>20 s) indicate overload and necessitate dynamic fallback to keep responses timely.
 
 ### `strategy:fähigkeiten_selbstständig_üben`
 *23.08. 01:31 UTC · Quelle: evolution*
