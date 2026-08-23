@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-23 21:06:40",
+ "stand": "2026-08-23 21:07:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -85,14 +85,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modell-gesundheitsregister-mit-sicherung.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.689,
- "simulationen_angewandt": 120,
+ "haende_quote": 0.698,
+ "simulationen_angewandt": 119,
  "swarm_scores": {
-  "n": 69,
+  "n": 68,
   "best": 8.0,
-  "schnitt": 4.16
+  "schnitt": 4.18
  },
  "score_nach_ziel_typ": {
   "analyse": {

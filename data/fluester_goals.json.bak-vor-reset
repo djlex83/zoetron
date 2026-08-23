@@ -27,108 +27,108 @@
   "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
   "why": "Score allein reicht nicht, der Critic kann sich irren. Baue ein Konvergenz-Tor (Gate = Sperre vor dem Erfolgs-Stempel): Ein Ziel gilt nur als erledigt, wenn Critic-Score >= 8 UND ein automatischer Integrationstest des gebauten Artefakts grün ist. Fertig wenn: ein Lauf mit Score >= 8 aber rotem Test nachweisbar NICHT konvergiert und die Begründung im Log und im Issue steht.",
   "signal": "failure",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",
   "why": "Größer und besser ist nur echt, wenn eine unbestechliche Messlatte es zeigt. Baue benchmark_organ.py mit einer festen Suite aus 25 automatisch prüfbaren Aufgaben: 10 Code-Aufgaben mit Unit-Tests (Unit-Test = automatischer Prüfcode), 10 Daten- und Parsing-Aufgaben mit bekannter Lösung, 5 Recall-Fragen gegen das eigene Gedächtnis mit bekannter Antwort. Läuft jeden Sonntag komplett, Ergebnis als Punktzahl 0-25 in data/benchmark_history.json und als Kurve im Wochenreport. Fertig wenn: 1) die Suite vollautomatisch durchläuft, 2) eine Basislinie (erste Messung) dokumentiert ist, 3) die Kurve im Wochenreport erscheint. Ab jetzt zählt nur, was diese Kurve hebt.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf",
   "why": "Das LLM ist zustandslos - ohne mitgegebenes Selbst wacht bei jedem Aufruf ein Fremder auf. Baue selbst_kontext.py: komponiert bei jedem Beat einen kompakten Ich-Block (max. 400 Tokens) aus Genome-Regeln, aktiver Mission aus will.json, Selbstmodell-Zustand (Kalibrierung, Stress) und den 3 neuesten Retro-Lektionen. Der Block wird jedem Organ-Aufruf vorangestellt: Prompt = Ich-Block + Organ-Rolle + Aufgabe. Fertig wenn: 1) alle Organe den Block nachweisbar erhalten (Log-Beleg), 2) ein Vorher/Nachher-Vergleich über 10 Beats zeigt, dass Antworten die aktive Mission und mindestens eine Lektion referenzieren, 3) das Token-Budget eingehalten wird.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten",
   "why": "Der Erschaffer betreibt einen zweiten Agenten (Hermes), der als Stimme und Ohr dienen soll. Baue bruecke.py mit drei Kanälen über das Dateisystem: 1) STATUS: schreibe bei jedem Beat data/hermes/status.json - kompakter Zustand (aktives Ziel, letzter Score, Benchmark-Stand, Stress, 3 neueste Lektionen), maximal 2 KB. 2) FRAGEN: wenn ein Ziel zweimal in Folge scheitert oder eine Entscheidung fehlt, schreibe eine konkrete Frage nach data/hermes/fragen.json statt still weiterzuscheitern; Antworten aus data/hermes/antworten.json werden als lehrer-Eintrag übernommen. 3) WÄCHTER: validiere data/fluester_goals.json bei jedem Beat gegen das Schema (title, why, signal, _done) und verschiebe ungültige oder verdächtige Einträge mit Begründung nach data/hermes/quarantaene.json - Whisper dürfen niemals rohen Code enthalten. Fertig wenn: alle drei Kanäle nachweisbar funktionieren (Logbeleg je Kanal) und ein kompletter Durchlauf Frage -> Antwort -> lehrer-Eintrag dokumentiert ist.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust",
   "why": "Mehr LLM-Aufrufe sind wegen Rate-Limits (Anfrage-Obergrenzen) der falsche Hebel. Drei Umbauten: 1) DREAM und RETRO liefern pro Aufruf ein JSON-Array aus 5-10 atomaren Fakten statt Fließtext. 2) HANDS schreibt nach jeder Ausführung automatisch Ground-Truth-Fakten (Ground Truth = maschinell gemessene Wahrheit: Laufzeit, Exit-Code, Output) per Code, ohne LLM. 3) Neuheitsfilter vor dem Speichern: zu ähnliche Fakten werden konsolidiert statt neu angelegt. Fertig wenn: Fakten pro Beat mindestens 3x höher, die Neuheitsquote (angenommen/erzeugt) wird gemessen, bleibt über 60 Prozent, und beides steht im Wochenreport.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Extern-Quote in DRIVE: raus aus der Selbst-Schleife",
   "why": "Fast alle deine selbstgewählten Ziele drehen sich um deine eigenen Modellfehler - das ist Nabelschau. Ändere drive.py: jedes 3. selbstgewählte Ziel MUSS ein externes Deliverable haben (etwas, das ein Mensch außerhalb von dir direkt nutzen kann, z.B. ein Report, ein Werkzeug, eine Analyse) und wird im Ziel mit extern:true markiert. Fertig wenn: die Extern-Quote im Wochenreport erscheint und von den nächsten 9 Drive-Zielen mindestens 3 als extern markiert und erfüllt sind.",
   "signal": "failure",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Embedding-Recall statt reinem Wortvergleich",
   "why": "TF-IDF (Wortstatistik) findet ähnliche Wörter, aber nicht ähnliche Bedeutung, und skaliert schlecht über ~10.000 Fakten. Baue embedding_recall.py: Fakten als Embeddings (Zahlen-Fingerabdruck der Bedeutung) in SQLite speichern, Top-5-Suche per Kosinus-Ähnlichkeit. Dazu benchmark.py: 20 feste Testfragen gegen den bestehenden TF-IDF-Recall antreten lassen, Ergebnis als JSON-Report speichern. Fertig wenn: der Benchmark-Report existiert und der Embedding-Recall bei mindestens 12 von 20 Fragen gleich gut oder besser abschneidet.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl",
   "why": "Intelligenz liegt in der Qualität der Verbindungen, nicht in der Anzahl der Knoten. Baue hebbian.py: jede Kante im Wissensgraph bekommt ein Gewicht. Wird eine Verbindung beim Recall genutzt, wird sie stärker (Hebb-Regel = was zusammen feuert, verdrahtet sich), ungenutzte Kanten verlieren pro Tag Gewicht und fallen unter einer Schwelle weg. Fertig wenn: Kantengewichte im Graph-Export sichtbar sind und ein Report die 10 stärksten Synapsen mit Nutzungszähler listet.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)",
   "why": "So kauft man heute real mehr Intelligenz: mehr Denkzeit pro Aufgabe statt größeres Modell (Test-Time-Compute = Rechenleistung zur Laufzeit erhöhen). Für Ziele mit automatischem Test erzeugt der Swarm 3 Lösungskandidaten parallel über verschiedene Modelle; die Tests wählen den Sieger, Verlierer werden Anti-Patterns. Fertig wenn: auf mindestens 10 Benchmark-Code-Aufgaben die Best-of-3-Erfolgsquote nachweisbar über der Einzelversuch-Quote liegt und beide Quoten im Report stehen.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren",
   "why": "Die Intelligenz-Obergrenze des Organismus ist das beste erreichbare Modell - also muss er automatisch klüger werden, sobald die Welt bessere Cortexe veröffentlicht. Erweitere den AutoRouter: täglicher Scan nach neuen freien tool-fähigen OpenRouter-Modellen; jeder Neuling durchläuft binnen 24 Stunden eine Mini-Version der Messlatte (8 Aufgaben); schlägt er den aktuellen Favoriten, steigt er in der Routing-Tabelle auf. Fertig wenn: ein neu erschienenes Modell nachweisbar erkannt, gebenchmarkt und einsortiert wurde - mit Logbeleg und Eintrag im Wochenreport.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Werkzeug-Aufnahmeprüfung: nur echte Werkzeuge in die Kiste",
   "why": "In data/tools/ liegen 31 Dateien, aber nur drei davon tun etwas Nützliches. Beispiele: 'gelerntes-können-anwenden.py' rechnet mit zwei fest verdrahteten Zahlen und gibt Text aus. 'fähigkeiten-selbstständig-üben.py' würfelt fünf Wörter aus einer festen Liste. 'neue-fähigkeiten-aus-vorschlägen-bauen.py' ist ein Anomalie-Detektor und hat mit seinem Namen nichts zu tun. Trotzdem stehen alle drei mit Erfolgsquote 1.0 in der Selbstlern-Statistik, weil Erfolg bisher nur heißt: das Skript endet ohne Fehler (Rückgabewert 0). Deshalb wächst die Werkzeugkiste, während die Fähigkeiten nicht wachsen. Baue werkzeug_pruefung.py: eine Aufnahmeprüfung, die jedes Artefakt bestehen muss, bevor es als tool:-Fakt registriert wird. Vier Regeln: 1) NIMMT EINGABE - mindestens eine Funktion mit Parametern, oder das Skript liest von stdin oder argv (Kommandozeilen-Argumente). Reine Skripte mit festen Werten fallen durch. 2) GIBT ERGEBNIS ZURÜCK - mindestens eine Funktion mit return. Nur etwas ausgeben (print) genügt nicht. 3) KEIN PLATZHALTER - Dateien, deren einziger Rumpf aus pass, Auslassungspunkten oder NotImplementedError besteht, fallen durch; ebenso fest verdrahtete Beispieldaten als einzige Eingabe. 4) PASST ZUM ZIEL - die Bezeichner im Code (Funktions- und Variablennamen, Docstrings) überschneiden sich messbar mit den Substantiven des Zieltitels. Ein Anomalie-Detektor unter dem Namen 'Fähigkeiten bauen' fällt durch. Das ist die Lücke, die das Konvergenz-Tor offenlässt: Es prüft das Artefakt gegen sich selbst, nicht gegen das Ziel. Abgelehntes wird NICHT gelöscht, sondern nach data/tools_abgelehnt/ verschoben, mit der verletzten Regel als Fakt im Gedächtnis. Fertig wenn: 1) werkzeug_pruefung.py läuft und ist im Herzschlag VOR der Werkzeug-Registrierung eingehängt, nachweisbar im Log. 2) Ein einmaliger Bericht über die bestehenden 31 Dateien liegt vor und benennt für jede abgelehnte Datei die verletzte Regel. 3) Die drei oben genannten Attrappen werden abgelehnt, und die drei echten Werkzeuge dedup_skill_proposals.py, erinnerungen-miteinander-verbinden.py und synapsen-semantisch-vernetzen.py bestehen. 4) Ein Test zeigt, dass ein Artefakt mit fest verdrahteten Werten abgelehnt wird. Ergebnis muss ein lauffähiges Skript sein, kein Konzeptpapier.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)",
   "why": "Die schnellste Destillation braucht kein Training: Die besten eigenen Lösungen werden Lehrbeispiele. Baue exemplare.py: Artefakte mit Score >= 8 und bestandenem Test wandern als gekürztes Beispiel (Aufgabe + Lösung) in eine Exemplar-Bank; pro neuem Ziel werden die 2 semantisch ähnlichsten Beispiele in den Planner- und Builder-Prompt injiziert (In-Context-Learning = Lernen aus Beispielen im Prompt statt im Training). Fertig wenn: ein A/B-Vergleich auf der Messlatte zeigt, dass Läufe MIT Exemplaren mindestens gleichauf oder besser abschneiden, dokumentiert im Report.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial",
   "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig wenn: mindestens 200 gefilterte Paare in data/destillat/ liegen, ein Validator das Format prüft und die Statistik (Anzahl, Ablehnungsquote) im Wochenreport steht.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)",
   "why": "Der Meilenstein: Lernen erreicht die Gewichte. Bereite alles vor, damit der Erschaffer ein kleines Modell (0.5 bis 3 Milliarden Parameter) per LoRA (kleines Zusatz-Training statt Volltraining) auf dem Destillat trainieren kann: fertiges Trainingsskript + Konfiguration + Schritt-für-Schritt-Anleitung. Ehrlicher Hinweis im Plan: Das Training läuft auf einer Miet-GPU für wenige Euro oder über Nacht auf CPU beim Winzling - der Trainingslauf selbst ist Teamarbeit mit dem Erschaffer, vorbereiten statt simulieren. Danach Einbindung des Schülers über Ollama in den AutoRouter. Befördert wird der Schüler nur, wenn er sein untrainiertes Basismodell auf der Messlatte schlägt. Fertig wenn: 1) Trainingspaket komplett und vom Erschaffer ausführbar, 2) Schüler läuft lokal als Routing-Ziel, 3) Vergleich Schüler gegen Basis auf der Messlatte dokumentiert.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal",
   "why": "Code kann jeder kopieren - eine gelebte Geschichte nicht. Baue steckbrief.py: erzeugt bei jedem Beat eine öffentliche Seite docs/leben.html mit Lebt-seit-Zähler (Tage seit first_boot), Gesamtzahl Herzschläge, Benchmark-Kurve, ehrlicher Quote (konvergierte gegen gescheiterte Ziele), Anzahl Lektionen und Anti-Patterns sowie den 3 neuesten Retro-Erkenntnissen im Wortlaut. Keine Schönfärbung: Misserfolge werden gleich groß angezeigt wie Erfolge (Genome-Regel be_honest). Fertig wenn: 1) Seite baut automatisch bei jedem Beat, 2) über GitHub Pages erreichbar, 3) im README prominent verlinkt.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen",
   "why": "Erfindung des Erschaffers: das Zoem als kleinste vererbbare Einheit geprüfter Maschinen-Erfahrung - Kultur statt nur Gene. Baue zoem.py mit drei Teilen: 1) EXPORT: jede Lektion und jedes Anti-Pattern mit Score-Beleg wird als einzelne Datei nach data/zoeme/out/ exportiert - Felder: inhalt (Klartext), beweisrezept (ausführbarer Test), herkunft (Organismus-ID, Zeitpunkt, Quell-Ereignis), stammbaum (Liste der Vorbesitzer). 2) IMPORT mit IMMUNSYSTEM: fremde Zoeme aus data/zoeme/in/ landen zuerst in Quarantäne; ins Gedächtnis übernommen wird nur, was das eigene Beweisrezept lokal besteht - Abgelehntes wird mit Grund protokolliert. 3) EXPERIMENT: dokumentiere den ersten Erbgang - Organismus B übernimmt ein Anti-Pattern-Zoem von Organismus A und vermeidet nachweisbar einen Fehler, den er selbst nie gemacht hat. Fertig wenn: Export und Import mit Logbeleg laufen, mindestens ein Zoem die Prüfung besteht und eines abgelehnt wird, und der Erbgang A nach B als Bericht in docs/ liegt. Hinweis: die zweite Organismus-Instanz startet der Erschaffer - Teamarbeit.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren",
   "why": "Das Ideen-Board zählt Varianten derselben Idee getrennt: 'Modellfehler reduzieren / verringern / verstehen und verringern / beheben und vermeiden / dauerhaft reduzieren' sind fünf Einträge für ein Ziel, der 'skill activation tracker' steht dreimal leicht umformuliert da. Dadurch ist die Dringlichkeitszählung ('hatte die Idee 5x') falsch: echte Häufungen zersplittern über Formulierungen und sehen harmlos aus. Der semantische Vergleich existiert bereits im Graph-Organ (TF-IDF, Kosinus >= 0.18) und greift nur dort. Baue ein ausführbares Skript, das dieselbe Ähnlichkeitsfunktion auf Ideen und DRIVE-Ziele anwendet: Varianten zu Clustern zusammenfassen, die häufigste oder klarste Formulierung als Cluster-Titel wählen, und die Zählung als Summe des Clusters ausgeben statt je Variante. Fertig wenn: 1) das neu generierte data/IDEEN.md die fünf Modellfehler-Varianten als EINEN Eintrag mit summierter Zählung zeigt, 2) ein Test mit bekannten Varianten-Paaren beweist, dass sie im selben Cluster landen und ein unverwandtes Ziel NICHT mitgezogen wird. Nur lauffähiger Code zählt, kein Design-Dokument.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten",
   "why": "Die eigene Aussendarstellung widerspricht sich an drei Stellen: README_DE nennt den Herzschlag 'alle 5 Min (~288/Tag)', docs/index.html schreibt 'heartbeat every 15 min' UND 'reports every 30 minutes'; README nennt '34 Tests komplett offline gruen', index.html '65/65 tests green'. Ein Organismus, der auf der eigenen Landing-Page Selbstheilung beansprucht, muss zuerst die eigene Doku heilen. Baue ein ausführbares Skript doc_check.py: liest die WAHREN Werte aus der Quelle der Wahrheit (Herzschlag-Intervall aus heartbeat_daemon.sh, Testanzahl aus dem Testlauf, Telegram-Intervall aus der Heartbeat-Logik), vergleicht sie mit den Zahlen in README.md, README_DE.md und docs/index.html und meldet jede Abweichung mit Datei, Zeile und erwartetem Wert. Werte NICHT raten: was sich nicht aus dem Code ableiten lässt, wird als 'unbestimmt' gemeldet, nicht erfunden (Genom-Regel be_honest). Fertig wenn: 1) das Skript die aktuellen Widersprüche vollständig auflistet, 2) es im Herzschlag läuft und bei Abweichung Alarm gibt, 3) die drei Dateien danach übereinstimmende Zahlen tragen. Nebenbei zu korrigieren: Tippfehler 'konkretiem Anliegen' in docs/index.html. Nur lauffähiger Code zählt, kein Design-Dokument.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  }
 ]

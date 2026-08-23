@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1243 Fakten** · Stand 2026-08-23 21:06 UTC · aktualisiert bei jedem Herzschlag
+**1248 Fakten** · Stand 2026-08-23 21:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 507
+- **dream:** 512
 - **swarm_artifact:** 421
 - **anti_pattern:** 110
 - **strategy:** 76
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232107:5`
+*23.08. 21:07 UTC · Quelle: dream*
+
+Dream fragments and drive goals reference the same themes (memory linking, skill execution) but remain disconnected, wasting cross-episode learning.
+
+### `dream:202608232107:4`
+*23.08. 21:07 UTC · Quelle: dream*
+
+Prune runs report zero candidates pruned across multiple cycles, indicating the pruner either never fires or its criteria are misconfigured.
+
+### `dream:202608232107:3`
+*23.08. 21:07 UTC · Quelle: dream*
+
+Drive goals explicitly state a simulation-to-execution gap and a GitHub failure pattern, yet no automated rollout or retry logic exists for either.
+
+### `dream:202608232107:2`
+*23.08. 21:07 UTC · Quelle: dream*
+
+Identical skill proposals (latency guard, GitHub retry, proposal-to-issue) appear repeatedly, revealing no deduplication or tracking mechanism for proposals.
+
+### `dream:202608232107:1`
+*23.08. 21:07 UTC · Quelle: dream*
+
+A 35.9 s model latency breach proves the 30 s SLA guard is necessary and currently missing from the hot path.
 
 ### `strategy:fehler_bei_den_github_aufgaben_beheben`
 *23.08. 21:06 UTC · Quelle: evolution*

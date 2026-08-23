@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,6 +26,8 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 4×)*
+- Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
+- GitHub-Fehler beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 3×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
@@ -36,11 +38,14 @@
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 2×)*
 - Fehler beim Modell verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
-- Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream fragments and drive goals reference the same themes (memory linking, skill execution) but remain disconnected, wasting cross-episode learning.
+- Prune runs report zero candidates pruned across multiple cycles, indicating the pruner either never fires or its criteria are misconfigured.
+- Drive goals explicitly state a simulation-to-execution gap and a GitHub failure pattern, yet no automated rollout or retry logic exists for either.
+- Identical skill proposals (latency guard, GitHub retry, proposal-to-issue) appear repeatedly, revealing no deduplication or tracking mechanism for pro
+- A 35.9 s model latency breach proves the 30 s SLA guard is necessary and currently missing from the hot path.
 - Latency SLA breaches trigger no automatic fallback, leaving the system stuck on slow providers despite multi-provider availability.
 - Simulation flagged risks lack a mandatory resolution gate, so act_done can fire with unresolved hazards.
 - Prune runs consistently remove zero items while store size grows, showing the current eligibility heuristic is inert and wastes cycles.
@@ -51,11 +56,6 @@
 - Drive goals for 'use simulations more' and 'connect dream memories' recur across cycles without measurable adoption, showing a gap between intent and 
 - Multiple independent proposals target scoring divergence and calibration, revealing a systemic lack of a single source of truth for evaluation.
 - Prune runs repeatedly return zero pruned items, indicating the retention policy is miscalibrated or the store is not accumulating cruft.
-- Meta-proposals (promote top 2, retire after 3 cycles, hard-cap revisions) show the system detecting its own process thrashing but not yet fixing it.
-- Drive goals repeat identical themes (simulation use, error reduction, dream linking) across cycles without measurable progress signals.
-- Model latency varies 5x (7.9s to 43.5s) on the same ':free' tier, revealing unreliable throughput that breaks timing assumptions.
-- Prune runs report zero facts/events pruned for five consecutive cycles, indicating either ineffective criteria or memory pressure not triggering.
-- Duplicate skill proposals (shared scorer, MemoryStore contracts) recur across dream cycles, wasting consolidation capacity.
 
 ---
 
