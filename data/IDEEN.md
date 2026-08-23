@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 17:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 17:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,13 +25,13 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Modellfehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und verringern *(wieder aufgegriffen: 2×)*
 - Modellfehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler bei Issues reduzieren *(wieder aufgegriffen: 2×)*
 - Alte Träume besser verknüpfen *(wieder aufgegriffen: 2×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-mode act_done returns score:null, so roughly half of executed actions produce no reward signal and cannot participate in learning or calibratio
+- The reflex tool erinnerungen-miteinander-verbinden.py succeeded (ok:true) on the exact goal class where the full swarm failed, proving the tool regist
+- The simulator issued verdict 'go' with 0 risks and 0 revisions for a task that then scored 4/10 in reality, so current simulation output is not predic
+- Evolution variants scored 9/8/7 while the swarm's final score stayed 4/10 without converging in 2 cycles, indicating the winner-integration or final-s
+- The AttributeError 'MemoryStore' object has no attribute 'add_fact' surfaced in hands-execute and again in dream skill proposals, meaning multiple com
 - Model call latency spans 4s to 72s with a heavy tail, so any synchronous call path without a timeout risks stalling the whole control loop.
 - Five skill proposals accumulated this session with zero consumed, demonstrating that without a FIFO implement-or-reject quota per cycle the proposal b
 - The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') is an interface-drift failure between the hands layer and the memory API, m
@@ -51,11 +56,6 @@
 - A runtime AttributeError ('MemoryStore' object has no attribute 'add_fact') proves cross-module API drift is only caught at execution time, crashing t
 - The same model showed 47x latency variance (2.8s-131.9s), making single-call latency useless for routing decisions and demanding timeouts plus fallbac
 - Internal evolution scores (8-9) diverged sharply from the realized swarm score (5), revealing systematic evaluator inflation that masks a progress pla
-- Metabolism reports low stress (0.169) but enforces a tight iteration budget (max_iterations=2), starving convergence-heavy goals.
-- A runtime AttributeError ('MemoryStore' has no 'add_fact') surfaced during hand execution, revealing missing method implementations in core modules.
-- Simulation repeatedly flags risks (3 then 5) requiring revisions, but applied revisions don't achieve convergence, indicating a validation gap.
-- Evolution and swarm cycles consistently produce non-converging results (score 7, converged=false) despite multiple revision passes.
-- Model latency varies extremely (2.8s to 131.9s) on the same endpoint, causing unpredictable task durations and timeouts.
 
 ---
 
