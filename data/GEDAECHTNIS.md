@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**818 Fakten** · Stand 2026-08-23 13:13 UTC · aktualisiert bei jedem Herzschlag
+**833 Fakten** · Stand 2026-08-23 13:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 342
-- **dream:** 251
-- **anti_pattern:** 80
-- **strategy:** 61
-- **last_swarm_goal:** 34
-- **last_swarm_critique:** 32
+- **swarm_artifact:** 347
+- **dream:** 256
+- **anti_pattern:** 82
+- **strategy:** 62
+- **last_swarm_goal:** 35
+- **last_swarm_critique:** 33
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:ci_workflow_für_automatisches_mergen_optimieren`
+*23.08. 13:29 UTC · Quelle: evolution*
+
+Feature‑Flag‑Driven Decentralized Merging - Feature‑flag‑driven decentralized merging isolates changes, lets CI verify independence, and enables fully automatic merges with safe rollback, fundamentally improving the CI workf
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: CI-Workflow für automati:1`
+*23.08. 13:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): AI‑Assisted Conflict Detection and Resolution - Integrate a large language model (or specialized code‑understanding AI) into the CI pipeline to detect potential merge conflicts early. When a conflict is flagged, the AI attemp
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: CI-Workflow für automati:0`
+*23.08. 13:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Prioritization & Automated Queue Management - Implement a priority‑driven merge queue where changes are automatically pre‑validated (static analysis, unit/integration tests) before entering the queue. Low‑risk, conflict‑free 
+
+### `last_swarm_critique`
+*23.08. 13:28 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Telegram-Benachrichtigung bei erfolgreichem Auto-Merge einri`
+*23.08. 13:23 UTC · Quelle: builder*
+
+# Telegram-Benachrichtigung bei erfolgreichem Auto-Merge *(Telegram Notification on Successful Auto-Merge)*  Dieser Schritt ergänzt den bestehenden CI-Workflow um eine vierte Stufe: Nachdem Tests grün
+
+### `swarm_artifact:Aufräum-Job hinzufügen, der alte Merge-Zweige nach erfolgrei`
+*23.08. 13:21 UTC · Quelle: builder*
+
+# Aufräum-Job: Alte Merge-Zweige nach erfolgreicher Integration löschen *(Cleanup Job: Delete Old Merge Branches After Successful Integration)*  Dieser Job ergänzt den bestehenden CI-Workflow um eine 
+
+### `swarm_artifact:Badge zum README hinzufügen, der die Erfolgsrate des automat`
+*23.08. 13:20 UTC · Quelle: builder*
+
+```markdown # README.md  ![Auto-Merge Erfolgsrate (Auto‑Merge Success Rate)](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/<DEIN‑USERNAME>/<GIST‑ID>/raw/auto-merge-success.jso
+
+### `swarm_artifact:Skript erstellen, das PRs automatisch labelt, wenn alle Chec`
+*23.08. 13:20 UTC · Quelle: builder*
+
+```python # Auto-label PRs with 'ready-to-merge' when all required checks are green # Automatisches Labeln von PRs mit 'ready-to-merge', wenn alle erforderlichen Checks erfolgreich sind  import os imp
+
+### `swarm_artifact:CI-YAML für automatisches Mergen prüfen und erweitern (check`
+*23.08. 13:20 UTC · Quelle: builder*
+
+## CI-Workflow für automatisches Mergen bei grünen Tests   *(CI Workflow for Auto-Merge on Green Tests)*    Dieser Workflow führt die Tests aus und löst nur bei erfolgreichen Tests einen Merge aus (on
+
+### `last_swarm_goal`
+*23.08. 13:18 UTC · Quelle: system*
+
+CI-Workflow für automatisches Mergen optimieren
+
+### `dream:202608231318:5`
+*23.08. 13:18 UTC · Quelle: dream*
+
+Repeated simulation revisions and low convergence scores show the current process for reducing thinking errors is ineffective.
+
+### `dream:202608231318:4`
+*23.08. 13:18 UTC · Quelle: dream*
+
+Predicted scores consistently exceed actual outcomes by ~1.5×, indicating a systematic optimism bias in scoring.
+
+### `dream:202608231318:3`
+*23.08. 13:18 UTC · Quelle: dream*
+
+The swarm ran with four builders and only one critic, producing insufficient critique and lowering decision quality.
+
+### `dream:202608231318:2`
+*23.08. 13:18 UTC · Quelle: dream*
+
+A missing 'add_fact' method on MemoryStore triggered an AttributeError, revealing a gap in interface contracts.
+
+### `dream:202608231318:1`
+*23.08. 13:18 UTC · Quelle: dream*
+
+Model latency fluctuates widely (8–185 s), causing unpredictable response times and threatening deadline compliance.
 
 ### `strategy:wie_gut_das_modell_arbeitet_verbessern`
 *23.08. 13:12 UTC · Quelle: evolution*
