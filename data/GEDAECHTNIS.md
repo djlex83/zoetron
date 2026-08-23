@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**680 Fakten** · Stand 2026-08-23 10:40 UTC · aktualisiert bei jedem Herzschlag
+**695 Fakten** · Stand 2026-08-23 11:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 307
-- **dream:** 186
-- **anti_pattern:** 66
-- **strategy:** 54
-- **last_swarm_goal:** 25
-- **last_swarm_critique:** 24
+- **swarm_artifact:** 312
+- **dream:** 191
+- **anti_pattern:** 68
+- **strategy:** 55
+- **last_swarm_goal:** 26
+- **last_swarm_critique:** 25
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:vorgeschlagene_fähigkeiten_prüfen_und_nutzen`
+*23.08. 11:00 UTC · Quelle: evolution*
+
+Skill Lifecycle Management with Continuous Evaluation - Variant 2 (Skill Lifecycle Management) best addresses all critic issues: it includes automated validation (static analysis, contract verification), benchmarking via canary deployme
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeit:1`
+*23.08. 11:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Automated Skill Testing and Integration Framework - Build a dedicated testing framework that treats skills as plugins: 1) Generate a test harness per skill that loads the skill module, injects dependencies, and runs contract 
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeit:0`
+*23.08. 11:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Systematic Skill Validation and Registry Promotion Pipeline - Implement a multi-stage pipeline: 1) Discover skill files via filesystem scan and metadata extraction. 2) Validate each skill against a formal contract schema (inp
+
+### `last_swarm_critique`
+*23.08. 10:58 UTC · Quelle: critic*
+
+score=2; issues=Only discovery commands executed; no skill files found or results captured; No validation of skill contracts/interfaces demonstrated; No benchmarking against baseline performed or shown; No skills promoted to active registry; No feedback loop m
+
+### `swarm_artifact:Create feedback loop for continuous skill evaluation`
+*23.08. 10:58 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "ls -la"}} {"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" -o -name \"*.json\" -o -name \"*.yaml\" -o -name \"*.yml\" 2>/dev/null | head -200"}} {"tool
+
+### `swarm_artifact:Promote top-performing skills to active registry`
+*23.08. 10:58 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "find . -type f \\( -name \"*.py\" -o -name \"*.json\" -o -name \"*.yaml\" -o -name \"*.yml\" \\) 2>/dev/null | head -200"}} {"tool": "bash", "args": {"cmd": "ls -la"}
+
+### `swarm_artifact:Benchmark skills against current baseline`
+*23.08. 10:58 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" -o -name \"*.json\" -o -name \"*.yaml\" -o -name \"*.yml\" 2>/dev/null | head -200"}} {"tool": "bash", "args": {"cmd": "ls -la"}} {"tool
+
+### `swarm_artifact:Validate skill contracts and interfaces`
+*23.08. 10:57 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" 2>/dev/null | head -50"}} {"tool": "bash", "args": {"cmd": "find . -type f -path \"*/skills/*\" 2>/dev/null"}} {"tool": "bash", "args": 
+
+### `swarm_artifact:Discover and load all proposed skills from storage`
+*23.08. 10:57 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" -o -name \"*.json\" -o -name \"*.yaml\" -o -name \"*.yml\" 2>/dev/null | head -100"}} {"tool": "bash", "args": {"cmd": "ls -la"}} {"tool
+
+### `last_swarm_goal`
+*23.08. 10:56 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten prüfen und nutzen
+
+### `dream:202608231056:5`
+*23.08. 10:56 UTC · Quelle: dream*
+
+Evolution consistently produces high-scoring variants (9, 8, 7) but the deployed swarm still scores 3, indicating the promotion pipeline lacks a reality gate.
+
+### `dream:202608231056:4`
+*23.08. 10:56 UTC · Quelle: dream*
+
+Runtime AttributeError on MemoryStore.add_fact proves that interface contracts are not validated before goal execution, turning missing methods into production failures.
+
+### `dream:202608231056:3`
+*23.08. 10:56 UTC · Quelle: dream*
+
+Swarm role distribution (1 planner, 5 builders, 1 critic) violates the minimum-quorum principle and correlates with non-convergence at score 3.
+
+### `dream:202608231056:2`
+*23.08. 10:56 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 5 vs actual 3) persists despite evolution improving variant scores to 9/10, revealing a simulation-to-reality gap.
+
+### `dream:202608231056:1`
+*23.08. 10:56 UTC · Quelle: dream*
+
+Model latency varies 10x (3.6–40.4 s) on the same endpoint, making fixed timeouts unreliable and causing cascade delays in swarm cycles.
 
 ### `dream:202608231040:5`
 *23.08. 10:40 UTC · Quelle: dream*
