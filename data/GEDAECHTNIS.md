@@ -1,10 +1,10 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**313 Fakten** · Stand 2026-08-22 23:52 UTC · aktualisiert bei jedem Herzschlag
+**318 Fakten** · Stand 2026-08-23 00:07 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 216
+- **dream:** 35
 - **strategy:** 31
-- **dream:** 30
 - **anti_pattern:** 24
 - **frontier:** 3
 - **artifact:** 3
@@ -14,6 +14,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608230007:5`
+*23.08. 00:07 UTC · Quelle: dream*
+
+Dream logs contain recurring error signatures (timeout, AttributeError) that are not systematically mined to seed evolution variants.
+
+### `dream:202608230007:4`
+*23.08. 00:07 UTC · Quelle: dream*
+
+Model latency spikes >30s correlate with swarm abandonment; failover to pre-warmed backup at 2× median preserves throughput.
+
+### `dream:202608230007:3`
+*23.08. 00:07 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack automated sandbox testing and ROI gating before production merge.
+
+### `dream:202608230007:2`
+*23.08. 00:07 UTC · Quelle: dream*
+
+Simulation weight must be dynamically calibrated against rolling MAE to avoid overtrusting drifting predictors.
+
+### `dream:202608230007:1`
+*23.08. 00:07 UTC · Quelle: dream*
+
+Contract validation at process boundaries prevents cascade failures like AttributeError in hand-action batches.
 
 ### `strategy:modellfehler_verringern_durch_besseres_training`
 *22.08. 23:51 UTC · Quelle: evolution*
