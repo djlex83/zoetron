@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**764 Fakten** · Stand 2026-08-23 12:21 UTC · aktualisiert bei jedem Herzschlag
+**777 Fakten** · Stand 2026-08-23 12:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 328
-- **dream:** 231
-- **anti_pattern:** 72
-- **strategy:** 57
-- **last_swarm_goal:** 30
-- **last_swarm_critique:** 28
+- **swarm_artifact:** 331
+- **dream:** 236
+- **anti_pattern:** 74
+- **strategy:** 58
+- **last_swarm_goal:** 31
+- **last_swarm_critique:** 29
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:träume_in_echte_aufträge_verwandeln`
+*23.08. 12:32 UTC · Quelle: evolution*
+
+Natural Language Processing Pipeline with spaCy and Custom Entity Recognition - Variant 0 (spaCy NLP pipeline) provides a robust, maintainable solution for German dream texts with custom NER, rule-based fallback, comprehensive unit tests, and structured loggin
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Träume in echte Aufträge:2`
+*23.08. 12:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Domain‑Specific Grammar with Parsing Expression Grammar (PEG) and Code Generatio - Define a PEG grammar (using parsimonious or lark) that captures the syntax of dream‑to‑task phrases (e.g., "Ich möchte [Action] das [Object] b
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Träume in echte Aufträge:1`
+*23.08. 12:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Large Language Model Prompt‑Chaining with Validation Loops - Prompt an LLM (e.g., GPT‑4) to convert each dream sentence into a structured JSON order using few‑shot examples. Chain prompts: first extract intent, then refine fi
+
+### `last_swarm_critique`
+*23.08. 12:32 UTC · Quelle: critic*
+
+score=3; issues=Two of three artifacts are only glob search commands with no implementation code; DreamTaskParser implementation is incomplete - all _extract_* methods declared but not implemented; _clean_text method is cut off mid-implementation; No error han
+
+### `swarm_artifact:Implement Real Swarm Success Fitness Function`
+*23.08. 12:30 UTC · Quelle: builder*
+
+{"tool": "glob", "pattern": "**/*fitness*.py", "root": "."} {"tool": "glob", "pattern": "**/*evolution*.py", "root": "."} {"tool": "glob", "pattern": "**/swarm*.py", "root": "."}
+
+### `swarm_artifact:Build Dream-to-Task Parser with Structured Output`
+*23.08. 12:29 UTC · Quelle: builder*
+
+# Dream-to-Task Parser with Structured Output  ```python #!/usr/bin/env python3 """ Dream-to-Task Parser – wandelt natürliche Sprachbeschreibungen von Träumen in strukturierte, ausführbare Task-Objekt
+
+### `swarm_artifact:Fix MemoryStore.add_fact Critical Infrastructure Gap`
+*23.08. 12:28 UTC · Quelle: builder*
+
+{   "tool": "glob",   "pattern": "**/memory*.py",   "root": "." } {   "tool": "glob",   "pattern": "**/*store*.py",   "root": "." }
+
+### `last_swarm_goal`
+*23.08. 12:27 UTC · Quelle: system*
+
+Träume in echte Aufträge verwandeln
+
+### `dream:202608231226:5`
+*23.08. 12:26 UTC · Quelle: dream*
+
+Evolution produces higher-scoring variants (up to 9) yet the swarm still fails to converge, indicating the fitness function optimizes for proxy metrics rather than real swarm success.
+
+### `dream:202608231226:4`
+*23.08. 12:26 UTC · Quelle: dream*
+
+Missing MemoryStore.add_fact method halts hand execution entirely, exposing a critical infrastructure gap that blocks all downstream automation.
+
+### `dream:202608231226:3`
+*23.08. 12:26 UTC · Quelle: dream*
+
+Perfect calibration prediction (abs_error=0) but low task score (4/10) reveals a fundamental misalignment between the calibration metric and the actual performance objective.
+
+### `dream:202608231226:2`
+*23.08. 12:26 UTC · Quelle: dream*
+
+High model latency variance (5.6s–67.5s) destabilizes planner/critic roles that require timely responses for effective coordination.
+
+### `dream:202608231226:1`
+*23.08. 12:26 UTC · Quelle: dream*
+
+Low iteration budgets (max_iterations=2) prevent swarm convergence on complex calibration goals despite evolution showing variant improvement.
 
 ### `last_swarm_critique`
 *23.08. 12:20 UTC · Quelle: critic*

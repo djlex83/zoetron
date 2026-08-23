@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 12:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 12:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Reduce Model Failure Rate *(wieder aufgegriffen: 2×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
 - Modellfehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler bei Issues reduzieren *(wieder aufgegriffen: 2×)*
 - Alte Träume besser verknüpfen *(wieder aufgegriffen: 2×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beheben *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger testen *(wieder aufgegriffen: 2×)*
 - Skill-Vorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution produces higher-scoring variants (up to 9) yet the swarm still fails to converge, indicating the fitness function optimizes for proxy metric
+- Missing MemoryStore.add_fact method halts hand execution entirely, exposing a critical infrastructure gap that blocks all downstream automation.
+- Perfect calibration prediction (abs_error=0) but low task score (4/10) reveals a fundamental misalignment between the calibration metric and the actua
+- High model latency variance (5.6s–67.5s) destabilizes planner/critic roles that require timely responses for effective coordination.
+- Low iteration budgets (max_iterations=2) prevent swarm convergence on complex calibration goals despite evolution showing variant improvement.
 - The evolution run produced a winner with mixed scores (7,5,8), highlighting the need for multi-criteria evaluation and robust aggregation.
 - The system's repeated drive goals about dream memory linking and model calibration indicate persistent gaps that need automated triggers.
 - The metabolism budget of 2 iterations and 5 tasks is too restrictive for missions with more than 2 risks, leading to incomplete simulations.
@@ -51,11 +56,6 @@
 - Zero-prune runs across multiple cycles suggest memory growth is unbounded, risking performance degradation over time without adaptive pruning threshol
 - Repeated skill proposals highlight a gap between dream-generated ideas and implementation, indicating a need for automated skill integration pipelines
 - Model latency spikes (26-36s) and occasional failures require proactive circuit breakers and fallback models to maintain system responsiveness and rel
-- The swarm's role distribution can become unbalanced, with builders outnumbering critics, leading to inefficient convergence and requiring dynamic quot
-- The MemoryStore interface may be incomplete or inconsistent, as suggested by the need for an interface guard to prevent runtime errors in hand actions
-- The system's predictions are consistently biased by a factor of approximately 0.6, necessitating a calibration step to correct scores before decision 
-- The critic module's output frequently fails JSON parsing, indicating a need for output validation and fallback strategies to ensure pipeline continuit
-- The Nvidia model endpoints are prone to temporary overloads, as evidenced by a 502 error, requiring a robust request handling mechanism with retries a
 
 ---
 
