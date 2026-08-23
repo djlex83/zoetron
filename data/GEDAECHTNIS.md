@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1403 Fakten** · Stand 2026-08-23 22:20 UTC · aktualisiert bei jedem Herzschlag
+**1414 Fakten** · Stand 2026-08-23 22:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 592
-- **swarm_artifact:** 454
+- **dream:** 597
+- **swarm_artifact:** 459
 - **anti_pattern:** 124
 - **strategy:** 83
-- **last_swarm_goal:** 72
+- **last_swarm_goal:** 73
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,61 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Implement Hermes Client Transport Layer`
+*23.08. 22:25 UTC · Quelle: builder*
+
+```python # hermes_client.py """ Hermes Client Transport Layer Multi-backend transport with connection pooling, retry logic, circuit breaker, and async/sync interfaces for agent-to-agent communication
+
+### `swarm_artifact:Implement Message Serialization and Transport Layer`
+*23.08. 22:24 UTC · Quelle: builder*
+
+# Hermes Bridge Serialization & Transport Layer  ```python """ Hermes Bridge - Serialization and Transport Layer  MessagePack-first serialization with JSON fallback. Explicit handshake-based protocol 
+
+### `swarm_artifact:Define Hermes Communication Protocol & Schema`
+*23.08. 22:24 UTC · Quelle: builder*
+
+```python # protocol.py """ Hermes Communication Protocol Formal protocol definition for message exchange between agents. Version: 1.0.0 """  from __future__ import annotations  import json import uui
+
+### `swarm_artifact:Implement Hermes Bridge Client with Transparent Middleware`
+*23.08. 22:23 UTC · Quelle: builder*
+
+# Hermes Bridge Client with Explicit Middleware Pipeline  ```python """ Hermes Bridge Client - Explicit Middleware Pipeline Implementation  Replaces transparent interception with explicit middleware p
+
+### `last_swarm_goal`
+*23.08. 22:22 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232221:5`
+*23.08. 22:21 UTC · Quelle: dream*
+
+Calibration error of 1 point on a 10-point scale compounds over cycles, causing systematic over-confidence in go/no-go decisions.
+
+### `dream:202608232221:4`
+*23.08. 22:21 UTC · Quelle: dream*
+
+Pruning removes zero items across consecutive runs, meaning retention policy is stale and memory grows unbounded.
+
+### `dream:202608232221:3`
+*23.08. 22:21 UTC · Quelle: dream*
+
+Hand execution fails with AttributeError on MemoryStore.add_fact, showing that tool contracts drift from implementation.
+
+### `dream:202608232221:2`
+*23.08. 22:21 UTC · Quelle: dream*
+
+Evolution boosts variant scores (8–9) but swarm convergence still fails at 2/10, revealing a gap between component quality and system integration.
+
+### `dream:202608232221:1`
+*23.08. 22:21 UTC · Quelle: dream*
+
+High latency variance (6.7–108.9 s) for the same model indicates unreliable inference infrastructure that breaks planning assumptions.
+
+### `swarm_artifact:Define Hermes Bridge Protocol Contracts`
+*23.08. 22:21 UTC · Quelle: builder*
+
+# Hermes Bridge Protocol Contracts  **Version:** 1.0.0   **Status:** Protocol-First Definition (No Implementation Dependencies)   **Compatibility Policy:** Semantic Versioning with Forward/Backward Co
 
 ### `last_swarm_goal`
 *23.08. 22:20 UTC · Quelle: system*

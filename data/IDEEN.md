@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,7 +30,6 @@
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
-- Modellfehler schnell erkennen und beheben *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beheben *(wieder aufgegriffen: 2×)*
 - Skill-Vorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
@@ -38,9 +37,15 @@
 - Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen lernen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren und stabiler machen *(wieder aufgegriffen: 2×)*
+- Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 point on a 10-point scale compounds over cycles, causing systematic over-confidence in go/no-go decisions.
+- Pruning removes zero items across consecutive runs, meaning retention policy is stale and memory grows unbounded.
+- Hand execution fails with AttributeError on MemoryStore.add_fact, showing that tool contracts drift from implementation.
+- Evolution boosts variant scores (8–9) but swarm convergence still fails at 2/10, revealing a gap between component quality and system integration.
+- High latency variance (6.7–108.9 s) for the same model indicates unreliable inference infrastructure that breaks planning assumptions.
 - Drive goals (reliable swarms, model health, dream-goal alignment) emerge reactively from failures rather than proactively shaping swarm design.
 - Skill proposals accumulate without a selection filter, flooding the system with unimplemented ideas while critical bugs (AttributeError) block progres
 - Prune_run prunes zero candidates across cycles, indicating the retention threshold is miscalibrated and memory grows unbounded under load.
@@ -51,11 +56,6 @@
 - Swarm goals repeatedly start without completion signals, indicating missing termination conditions or progress tracking.
 - Pruning stalls silently when criteria drift from data reality, requiring explicit staleness detection.
 - Model fallback chains mask upstream instability but hide degradation until all tiers exhaust.
-- Whispers blocked on creator decisions re-consume execution slots each cycle instead of batching into one decision request.
-- Swarm tasks stall at handoff boundaries because completion gates lack mandatory verification artifacts.
-- Prune runs repeatedly remove zero items, indicating stale thresholds that never self-adjust.
-- Model latency variance (45s–194s) breaks time budgets and triggers cascading retries without a circuit-breaker.
-- Duplicate skill proposals recur because no deduplication mechanism exists across dream cycles.
 
 ---
 

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1242 Neuronen · 18041 bewertete Synapsen
+Stand: 1249 Neuronen · 18251 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,8 +11,8 @@ Stand: 1242 Neuronen · 18041 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 119 | 0.23 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 119 | 0.23 |
-| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 104 | 0.27 |
+| 2 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 105 | 0.26 |
+| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 119 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 119 | 0.23 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 119 | 0.23 |
 | 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 119 | 0.22 |
@@ -41,9 +41,9 @@ Stand: 1242 Neuronen · 18041 bewertete Synapsen
 | 7 | **0.53** | 💭 Model latency frequently exceeds 30 s, causing… | 💭 Model latency fluctuates widely (8–185 s), cau… |
 | 8 | **0.53** | 💭 Applying revisions atomically and re‑simulatin… | 💭 Applying simulation revisions non‑atomically l… |
 | 9 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
-| 10 | **0.53** | 🛠 „Define HealthRegister data model“. Ergebnis: … | 🛠 „Define Injector Pydantic Model“. Ergebnis: ``… |
-| 11 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
-| 12 | **0.52** | 💭 hands-execute crashed with AttributeError 'Mem… | 💭 hands-execute crashed with AttributeError: Mem… |
-| 13 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
-| 14 | **0.50** | 💭 Skill proposals accumulate faster than they ar… | 💭 Skill proposals accumulate but lack automated … |
-| 15 | **0.50** | 💭 Intermittent latency spikes above 20 s indicat… | 💭 High latency spikes up to 71.9 s trigger timeo… |
+| 10 | **0.53** | 💭 Model latency variance (6.9s to 208.3s) for id… | 💭 High latency variance (6.7–108.9 s) for the sa… |
+| 11 | **0.53** | 🛠 „Define HealthRegister data model“. Ergebnis: … | 🛠 „Define Injector Pydantic Model“. Ergebnis: ``… |
+| 12 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
+| 13 | **0.52** | 💭 hands-execute crashed with AttributeError 'Mem… | 💭 hands-execute crashed with AttributeError: Mem… |
+| 14 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
+| 15 | **0.50** | 💭 Skill proposals accumulate faster than they ar… | 💭 Skill proposals accumulate but lack automated … |
