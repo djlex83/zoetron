@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1013 Fakten** · Stand 2026-08-23 17:51 UTC · aktualisiert bei jedem Herzschlag
+**1028 Fakten** · Stand 2026-08-23 18:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 390
-- **dream:** 342
-- **anti_pattern:** 98
-- **strategy:** 70
-- **last_swarm_goal:** 49
-- **last_swarm_critique:** 45
+- **swarm_artifact:** 395
+- **dream:** 347
+- **anti_pattern:** 100
+- **strategy:** 71
+- **last_swarm_goal:** 50
+- **last_swarm_critique:** 46
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
+*23.08. 18:07 UTC · Quelle: evolution*
+
+Adopt a battle‑tested third‑party circuit breaker library and modernize Pydantic defaults - Variant 0 adopts a battle‑tested third‑party circuit breaker library, providing proven thread‑safe state transitions and eliminates custom lock bugs, while modernizing 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modell-Gesundheitsregist:2`
+*23.08. 18:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Use a thread‑local functional circuit breaker and Pydantic v2 validation for awa - Implement the circuit breaker as a higher‑order function that returns a wrapper storing its state in `threading.local()`, so each thread has a
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modell-Gesundheitsregist:1`
+*23.08. 18:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Redesign the circuit breaker as a lock‑guarded state machine with the protected  - Create a CircuitBreaker class that holds a single `threading.RLock`. All state reads/writes (including `on_success` and `on_failure`) and the 
+
+### `last_swarm_critique`
+*23.08. 18:07 UTC · Quelle: critic*
+
+score=4; issues=CircuitBreaker implementation has thread safety issues: lock is released before executing the protected function, allowing race conditions when updating state in on_success/on_failure.; Pydantic HealthRegisterEntry uses non-idiomatic __init__ o
+
+### `swarm_artifact:Demo script showing circuit breaker behavior`
+*23.08. 18:06 UTC · Quelle: builder*
+
+```python import time import random  def flaky_service():     if random.random() < 0.8:         raise ConnectionError('Service unavailable')     return {'status': 'ok', 'value': 42}  # Assuming Circui
+
+### `swarm_artifact:Unit tests for CircuitBreaker and HealthRegister`
+*23.08. 18:06 UTC · Quelle: builder*
+
+```python import unittest from health_register import CircuitBreaker, HealthRegister, CircuitBreakerState  class TestCircuitBreaker(unittest.TestCase):     def test_closed_state_success(self):        
+
+### `swarm_artifact:Integrate CircuitBreaker with HealthRegister`
+*23.08. 18:04 UTC · Quelle: builder*
+
+```python from typing import Callable import time from enum import Enum, auto import threading  class CircuitBreakerState(Enum):     CLOSED = auto()     OPEN = auto()     HALF_OPEN = auto()  class Cir
+
+### `swarm_artifact:Implement CircuitBreaker`
+*23.08. 18:02 UTC · Quelle: builder*
+
+```python import time from enum import Enum, auto import threading  class CircuitBreakerState(Enum):     CLOSED = auto()     OPEN = auto()     HALF_OPEN = auto()  class CircuitBreaker:     def __init_
+
+### `swarm_artifact:Define HealthRegister data model`
+*23.08. 18:01 UTC · Quelle: builder*
+
+```python from pydantic import BaseModel, validator from datetime import datetime from typing import Dict, Union  class HealthRegisterEntry(BaseModel):     id: str     timestamp: datetime = None  # wi
+
+### `last_swarm_goal`
+*23.08. 17:57 UTC · Quelle: system*
+
+Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
+
+### `dream:202608231756:5`
+*23.08. 17:56 UTC · Quelle: dream*
+
+GitHub synchronization failures during task transfer point to missing validation of transferred artifacts, implying that a verification step after each sync is needed to avoid information loss.
+
+### `dream:202608231756:4`
+*23.08. 17:56 UTC · Quelle: dream*
+
+Simulation verdicts of 'go' often overestimate actual performance (e.g., predicted 4 vs actual 5 error), demonstrating that a rolling calibration of simulation vs realized scores is required to temper trust in simulators.
+
+### `dream:202608231756:3`
+*23.08. 17:56 UTC · Quelle: dream*
+
+Swarm evolution sometimes yields a winner whose score exceeds the final swarm score by >2 points, indicating that unchecked evolution cycles waste resources and need a reconciliation alarm.
+
+### `dream:202608231756:2`
+*23.08. 17:56 UTC · Quelle: dream*
+
+The AttributeError on MemoryStore.add_fact reveals that runtime failures due to missing store methods can be prevented by enforcing interface contracts via typed stubs or generated tests.
+
+### `dream:202608231756:1`
+*23.08. 17:56 UTC · Quelle: dream*
+
+Latency measurements for the same model vary from 1.1 s to over 230 s, showing that performance outliers must be detected and managed rather than assumed stable.
 
 ### `last_swarm_critique`
 *23.08. 17:51 UTC · Quelle: critic*

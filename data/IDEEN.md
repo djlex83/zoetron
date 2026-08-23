@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 17:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,6 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und verringern *(wieder aufgegriffen: 2×)*
 - Modellfehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler bei Issues reduzieren *(wieder aufgegriffen: 2×)*
 - Alte Träume besser verknüpfen *(wieder aufgegriffen: 2×)*
@@ -38,9 +37,15 @@
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beheben *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger testen *(wieder aufgegriffen: 2×)*
+- Skill-Vorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- GitHub synchronization failures during task transfer point to missing validation of transferred artifacts, implying that a verification step after eac
+- Simulation verdicts of 'go' often overestimate actual performance (e.g., predicted 4 vs actual 5 error), demonstrating that a rolling calibration of s
+- Swarm evolution sometimes yields a winner whose score exceeds the final swarm score by >2 points, indicating that unchecked evolution cycles waste res
+- The AttributeError on MemoryStore.add_fact reveals that runtime failures due to missing store methods can be prevented by enforcing interface contract
+- Latency measurements for the same model vary from 1.1 s to over 230 s, showing that performance outliers must be detected and managed rather than assu
 - Three consecutive prune runs that remove zero facts/events indicate retention thresholds are too lax and risk memory growth.
 - Cross‑module calls often fail due to missing attributes, which can be prevented by pre‑flight existence checks.
 - Simulation outcomes are frequently generated but not applied, creating a learning gap that reduces system improvement.
@@ -51,11 +56,6 @@
 - Score predictor calibration should require a minimum number of recent (predicted, actual) pairs before gating to avoid unstable updates from scarce da
 - Simulation revisions must be applied atomically and verified by re‑simulation to ensure zero residual risk before committing changes.
 - Model latency spikes and occasional 502 errors necessitate exponential‑backoff retry with automatic failover and logging to keep the system available.
-- Reflex-mode act_done returns score:null, so roughly half of executed actions produce no reward signal and cannot participate in learning or calibratio
-- The reflex tool erinnerungen-miteinander-verbinden.py succeeded (ok:true) on the exact goal class where the full swarm failed, proving the tool regist
-- The simulator issued verdict 'go' with 0 risks and 0 revisions for a task that then scored 4/10 in reality, so current simulation output is not predic
-- Evolution variants scored 9/8/7 while the swarm's final score stayed 4/10 without converging in 2 cycles, indicating the winner-integration or final-s
-- The AttributeError 'MemoryStore' object has no attribute 'add_fact' surfaced in hands-execute and again in dream skill proposals, meaning multiple com
 
 ---
 
