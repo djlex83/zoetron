@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**857 Fakten** · Stand 2026-08-23 13:53 UTC · aktualisiert bei jedem Herzschlag
+**865 Fakten** · Stand 2026-08-23 14:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 351
-- **dream:** 266
+- **swarm_artifact:** 353
+- **dream:** 271
 - **anti_pattern:** 86
 - **strategy:** 64
-- **last_swarm_goal:** 37
+- **last_swarm_goal:** 38
 - **last_swarm_critique:** 35
 - **creator_teaching:** 7
 - **frontier:** 3
@@ -18,6 +18,46 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Implementation Tracker für Fähigkeiten bauen`
+*23.08. 14:13 UTC · Quelle: builder*
+
+# Implementation Tracker für Fähigkeiten (Event-Sourced, Idempotent, CLI)  ```python """ Implementation Tracker – verfolgt den Umsetzungsstatus jeder Fähigkeit (vorgeschlagen, in Arbeit, implementiert
+
+### `swarm_artifact:Capability Suggestion Registry erstellen`
+*23.08. 14:07 UTC · Quelle: builder*
+
+# Capability Suggestion Registry (SQLite + WAL + Migrations + Optimistic Locking)  ```python """ Capability Suggestion Registry – SQLite-backed persistence with WAL mode, schema versioning (migrations
+
+### `last_swarm_goal`
+*23.08. 13:59 UTC · Quelle: system*
+
+Fähigkeitsvorschläge konsequent umsetzen
+
+### `dream:202608231358:5`
+*23.08. 13:58 UTC · Quelle: dream*
+
+Fixed timeouts ignore model-specific p95 latency distributions; route requests to models within SLA budget and shed load when all exceed budget.
+
+### `dream:202608231358:4`
+*23.08. 13:58 UTC · Quelle: dream*
+
+Swarm role imbalance (insufficient critics) reduces solution quality; maintain dynamic critic:builder quota of at least 1:2 with auto-spawning.
+
+### `dream:202608231358:3`
+*23.08. 13:58 UTC · Quelle: dream*
+
+Calibration predictions consistently underestimate actual scores by ~1.5×; apply rolling actual/predicted ratio correction before threshold decisions.
+
+### `dream:202608231358:2`
+*23.08. 13:58 UTC · Quelle: dream*
+
+Model provider failures (429/502) and high latency variance (3–306 s) require multi-provider routing with token-bucket rate limiting and exponential backoff.
+
+### `dream:202608231358:1`
+*23.08. 13:58 UTC · Quelle: dream*
+
+Interface contract violations (missing `add_fact`) cause runtime crashes; enforce ABC validation at component initialization.
 
 ### `strategy:vorschläge_endlich_wirklich_ausprobieren`
 *23.08. 13:52 UTC · Quelle: evolution*
