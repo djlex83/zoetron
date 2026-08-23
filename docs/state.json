@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-08-23T21:34:00.765Z",
+  "generatedAt": "2026-08-23T23:57:14.949Z",
   "repo": "djlex83/zoetron",
   "memory": {
-    "facts": 1288,
-    "neurons": 1194,
-    "synapses": 15629,
-    "stand": "2026-08-23 21:30 UTC",
+    "facts": 1501,
+    "neurons": 1288,
+    "synapses": 19524,
+    "stand": "2026-08-23 23:56 UTC",
     "kinds": [
       {
         "kind": "dream",
-        "count": 527
+        "count": 647
       },
       {
         "kind": "swarm_artifact",
-        "count": 434
+        "count": 479
       },
       {
         "kind": "anti_pattern",
-        "count": 114
-      },
-      {
-        "kind": "strategy",
-        "count": 78
+        "count": 124
       },
       {
         "kind": "last_swarm_goal",
-        "count": 62
+        "count": 90
+      },
+      {
+        "kind": "strategy",
+        "count": 83
       },
       {
         "kind": "last_swarm_critique",
-        "count": 54
+        "count": 59
       },
       {
         "kind": "creator_teaching",
@@ -67,24 +67,24 @@
   },
   "learning": {
     "events": 4000,
-    "handsRate": 0.714,
-    "simulations": 118,
+    "handsRate": 0.84,
+    "simulations": 92,
     "swarm": {
-      "n": 67,
+      "n": 54,
       "best": 8,
-      "schnitt": 4.19
+      "schnitt": 4.06
     },
     "tools": [
-      {
-        "name": "dedup_skill_proposals.py",
-        "runs": 13,
-        "wins": 13,
-        "rate": 1
-      },
       {
         "name": "ci-pipeline-reparieren-und-simulation-va.py",
         "runs": 7,
         "wins": 7,
+        "rate": 1
+      },
+      {
+        "name": "dedup_skill_proposals.py",
+        "runs": 6,
+        "wins": 6,
         "rate": 1
       },
       {
@@ -164,9 +164,27 @@
         "runs": 1,
         "wins": 1,
         "rate": 1
+      },
+      {
+        "name": "konvergenz-tor-test-pflicht-vor-erfolg-c.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
+      },
+      {
+        "name": "fähigkeits-messlatte-bauen-capability-be.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
+      },
+      {
+        "name": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
       }
     ],
-    "stand": "2026-08-23 21:30:40"
+    "stand": "2026-08-23 23:55:58"
   },
   "missions": [
     {
@@ -209,96 +227,115 @@
   "firstBoot": "2026-08-23T00:10:46",
   "report": {
     "slug": "2026-W34",
-    "runs": 79,
+    "runs": 87,
     "avgScore": 4.2,
-    "insights": 362,
-    "evolutions": 73,
-    "executions": 67,
+    "insights": 587,
+    "evolutions": 82,
+    "executions": 83,
     "topModel": "stealth/ox-alpha",
     "quote": "Dream logs contain recurring error signatures (timeout, AttributeError) that are not systematically mined to seed evolution variants."
   },
   "beats": {
-    "last": "2026-08-23T23:34:00+02:00",
-    "per24h": 152,
-    "total": 258
+    "last": "2026-08-24T01:57:14+02:00",
+    "per24h": 161,
+    "total": 291
   },
   "wiki": [
     {
       "slug": "Architektur",
-      "file": "Architektur.md",
+      "path": "wiki/Architektur.md",
+      "group": "wiki",
       "title": "Architektur",
       "intro": "Zoetron ist kein Framework, sondern ein Organismus: Zustand liegt im",
       "bytes": 2345
     },
     {
       "slug": "Betrieb",
-      "file": "Betrieb.md",
+      "path": "wiki/Betrieb.md",
+      "group": "wiki",
       "title": "Betrieb",
       "intro": "Der Daemon läuft als Hintergrundprozess auf dem Hermes-Host:",
       "bytes": 1655
     },
     {
       "slug": "Scoring",
-      "file": "Scoring.md",
+      "path": "wiki/Scoring.md",
+      "group": "wiki",
       "title": "Der Score – Zoetrons Notensystem",
       "intro": "Jeder ACT-Lauf endet mit einem Score von 0–10, den der Critic (ein LLM-Richter im Swarm) vergibt. Er bewertet die Artefa",
       "bytes": 2025
     },
     {
       "slug": "Werkzeugkiste",
-      "file": "Werkzeugkiste.md",
+      "path": "wiki/Werkzeugkiste.md",
+      "group": "wiki",
       "title": "Die Werkzeugkiste (`data/tools/`)",
       "intro": "Datei ist ein eigenständig lauffähiges Python-Skript, das der Organismus",
       "bytes": 1329
     },
     {
       "slug": "FAQ",
-      "file": "FAQ.md",
+      "path": "wiki/FAQ.md",
+      "group": "wiki",
       "title": "FAQ",
       "intro": "Nein – ein Organismus. Frameworks warten auf Aufgaben; Zoetron hat einen",
       "bytes": 736
     },
     {
       "slug": "Organe",
-      "file": "Organe.md",
+      "path": "wiki/Organe.md",
+      "group": "wiki",
       "title": "Organe (Detail)",
       "intro": "Planner → Builder → Critic, bis zu 3 Zyklen. Konvergiert bei Score ≥ 8.",
       "bytes": 2841
     },
     {
       "slug": "Roadmap",
-      "file": "Roadmap.md",
+      "path": "wiki/Roadmap.md",
+      "group": "wiki",
       "title": "Roadmap",
       "intro": "- [x] 15 Organe, 65/65 Tests, CI grün",
       "bytes": 2671
     },
     {
       "slug": "Session-2026-08-23",
-      "file": "Session-2026-08-23.md",
+      "path": "wiki/Session-2026-08-23.md",
+      "group": "wiki",
       "title": "Session-Dokumentation 23.08.2026 – Der große Organausbau",
       "intro": "1. GENOM (genome.py) – angeborene Instinkte: 5 DNA-Regeln",
       "bytes": 2717
     },
     {
       "slug": "Home",
-      "file": "Home.md",
+      "path": "wiki/Home.md",
+      "group": "wiki",
       "title": "Zoetron – Wiki",
       "intro": "träumt, hat Neugier, Sinne, Hände – und evolviert. Seit dem 23.08.2026",
       "bytes": 1370
     },
     {
       "slug": "Tabelle",
-      "file": "Tabelle.md",
+      "path": "wiki/Tabelle.md",
+      "group": "wiki",
       "title": "Zoetrons Bestenliste",
-      "intro": "Stand: 1194 Neuronen · 15629 bewertete Synapsen",
-      "bytes": 3737
+      "intro": "Stand: 1288 Neuronen · 19524 bewertete Synapsen",
+      "bytes": 3733
     },
     {
       "slug": "Ideen",
-      "file": "Ideen.md",
+      "path": "wiki/Ideen.md",
+      "group": "wiki",
       "title": "Zoetrons Ideen-Board (AUTONOM)",
-      "intro": "- Deploy a nightly model calibration updater: log (goalembedding, predicted, actual), retrain a lightweight reg (hatte d",
-      "bytes": 5736
+      "intro": "- Implement modelhealth.py with per-model EMA latency, 3-state circuit breaker (trip at 2× median, probe recove (hatte d",
+      "bytes": 5697
+    },
+    {
+      "slug": "2026-W34",
+      "path": "REPORTS/2026-W34.md",
+      "group": "report",
+      "title": "Zoetron Wochenreport 2026-W34",
+      "intro": "- 🫀 87 Swarm-Läufe, ø Score 4.2/10",
+      "bytes": 1381
     }
   ]
 }

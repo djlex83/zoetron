@@ -59,27 +59,36 @@ try {
   }
 } catch { /* no reports yet */ }
 
-// the wiki pages the organism currently keeps (it may add more at any beat)
-let wiki = []
-try {
-  wiki = readdirSync(R('docs/wiki'))
-    .filter((f) => f.endsWith('.md'))
-    .map((file) => {
-      const text = readText(`docs/wiki/${file}`)
-      const title = text.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? file.replace(/\.md$/, '')
-      const intro = text
-        .split('\n')
-        .find((l) => l.trim() && !l.startsWith('#') && !l.startsWith('*') && !l.startsWith('|'))
-      return {
-        slug: file.replace(/\.md$/, ''),
-        file,
-        title: title.replace(/^[^\p{L}\d]+/u, '').trim(),
-        intro: (intro ?? '').replace(/[*_`]/g, '').trim().slice(0, 120),
-        bytes: text.length,
-      }
-    })
-    .sort((a, b) => a.title.localeCompare(b.title, 'de'))
-} catch { /* no wiki mirror */ }
+// every readable page the organism keeps under docs/: the wiki mirror and
+// the weekly reports. Both are rendered by the site's own reader.
+const pageIndex = (dir, group) => {
+  try {
+    return readdirSync(R(`docs/${dir}`))
+      .filter((f) => f.endsWith('.md'))
+      .map((file) => {
+        const text = readText(`docs/${dir}/${file}`)
+        const title = text.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? file.replace(/\.md$/, '')
+        const intro = text
+          .split('\n')
+          .find((l) => l.trim() && !l.startsWith('#') && !l.startsWith('*') && !l.startsWith('|'))
+        return {
+          slug: file.replace(/\.md$/, ''),
+          path: `${dir}/${file}`,
+          group,
+          title: title.replace(/^[^\p{L}\d]+/u, '').trim(),
+          intro: (intro ?? '').replace(/[*_`>]/g, '').trim().slice(0, 120),
+          bytes: text.length,
+        }
+      })
+  } catch {
+    return []
+  }
+}
+
+const wiki = [
+  ...pageIndex('wiki', 'wiki').sort((a, b) => a.title.localeCompare(b.title, 'de')),
+  ...pageIndex('REPORTS', 'report').sort((a, b) => b.slug.localeCompare(a.slug)),
+]
 
 // heartbeat rhythm straight out of git history
 let beats = { last: null, per24h: 0, total: 0 }

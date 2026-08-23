@@ -103,7 +103,7 @@ export const sections = {
   wiki: {
     label: { de: 'Das Wiki', en: 'The wiki' },
     head: { de: 'Sein Handbuch —\nvon ihm selbst geschrieben.', en: 'Its manual —\nwritten by itself.' },
-    sub: { de: 'Architektur, Organe, Notensystem, Werkzeugkiste, Roadmap — jede Seite schreibt der Organismus selbst und spiegelt sie bei jedem Herzschlag hierher. Direkt lesbar, statt als rohe Datei.', en: 'Architecture, organs, scoring, toolbelt, roadmap — the organism writes every page itself and mirrors it here on every heartbeat. Readable right away instead of as a raw file.' },
+    sub: { de: 'Architektur, Organe, Notensystem, Werkzeugkiste, Roadmap und die Wochenreports — jede Seite schreibt der Organismus selbst und spiegelt sie bei jedem Herzschlag hierher. Direkt lesbar, statt als rohe Datei.', en: 'Architecture, organs, scoring, toolbelt, roadmap and the weekly reports — the organism writes every page itself and mirrors it here on every heartbeat. Readable right away instead of as a raw file.' },
   },
   zugang: {
     label: { de: 'Zugang', en: 'Access' },
@@ -198,7 +198,7 @@ export const footer = {
       links: [
         { label: { de: 'Repository', en: 'Repository' }, href: 'https://github.com/djlex83/zoetron' },
         { label: { de: 'Wiki', en: 'Wiki' }, href: '#wiki' },
-        { label: { de: 'Wochenreports', en: 'Weekly reports' }, href: './REPORTS/' },
+        { label: { de: 'Wochenreports', en: 'Weekly reports' }, href: '#wiki' },
         { label: { de: 'Task-Board', en: 'Task board' }, href: 'https://github.com/djlex83/zoetron/issues' },
       ],
     },

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import { sections } from '../lib/content'
 import { useLang } from '../lib/lang'
 import type { Seed } from '../lib/live'
@@ -27,16 +27,17 @@ export default function Wiki({ seed }: { seed: Seed | null }) {
     const ctrl = new AbortController()
     setBody(null)
     setFailed(false)
-    fetch(`./wiki/${slug}.md?t=${Math.floor(Date.now() / 60_000)}`, { signal: ctrl.signal, cache: 'no-store' })
+    const page = pages.find((x) => x.slug === slug)
+    if (!page) return
+    fetch(`./${page.path}?t=${Math.floor(Date.now() / 60_000)}`, { signal: ctrl.signal, cache: 'no-store' })
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error(String(r.status)))))
       .then(setBody)
       .catch((e) => { if (e.name !== 'AbortError') setFailed(true) })
     return () => ctrl.abort()
   }, [slug])
 
-  if (!pages.length) return null
-
   const current = pages.find((p) => p.slug === slug)
+  if (!pages.length) return null
 
   return (
     <Section id="wiki" className="border-t border-white/6">
@@ -47,9 +48,14 @@ export default function Wiki({ seed }: { seed: Seed | null }) {
         <div data-reveal className="lg:sticky lg:top-28 lg:self-start">
           <div className="flex gap-2 overflow-x-auto pb-2 lg:flex-col lg:overflow-visible lg:pb-0"
                style={{ scrollbarWidth: 'none' }}>
-            {pages.map((p) => (
+            {pages.map((p, pi) => (
+              <Fragment key={p.slug}>
+                {p.group === 'report' && pages[pi - 1]?.group !== 'report' && (
+                  <span className="label mt-4 hidden lg:block">
+                    {lang === 'de' ? 'Wochenreports' : 'Weekly reports'}
+                  </span>
+                )}
               <button
-                key={p.slug}
                 onClick={() => {
                   setSlug(p.slug)
                   if (window.innerWidth < 1024) {
@@ -69,6 +75,7 @@ export default function Wiki({ seed }: { seed: Seed | null }) {
                   )}
                 </span>
               </button>
+              </Fragment>
             ))}
           </div>
 
@@ -84,10 +91,10 @@ export default function Wiki({ seed }: { seed: Seed | null }) {
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/8 pb-5">
             <div className="flex items-center gap-3">
               <LiveDot label="live" />
-              <span className="font-mono text-[0.74rem] text-ink-faint">docs/wiki/{slug}.md</span>
+              <span className="font-mono text-[0.74rem] text-ink-faint">docs/{current?.path}</span>
             </div>
             <a
-              href={`https://github.com/djlex83/zoetron/blob/main/docs/wiki/${slug}.md`}
+              href={`https://github.com/djlex83/zoetron/blob/main/docs/${current?.path ?? ''}`}
               target="_blank"
               rel="noreferrer"
               className="btn btn-ghost"
