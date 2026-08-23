@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1067 Fakten** · Stand 2026-08-23 18:43 UTC · aktualisiert bei jedem Herzschlag
+**1072 Fakten** · Stand 2026-08-23 18:49 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 404
-- **dream:** 367
+- **dream:** 372
 - **anti_pattern:** 104
 - **strategy:** 73
 - **last_swarm_goal:** 52
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231848:5`
+*23.08. 18:48 UTC · Quelle: dream*
+
+Updating the score predictor with few (predicted, actual) pairs produces noisy scores; a minimum sample size stabilizes learning.
+
+### `dream:202608231848:4`
+*23.08. 18:48 UTC · Quelle: dream*
+
+Variable model latency (12‑23 s) without adaptive timeouts caused stalled steps; a timeout with fallback improves robustness.
+
+### `dream:202608231848:3`
+*23.08. 18:48 UTC · Quelle: dream*
+
+Applying simulation revisions non‑atomically left residual risks, indicating the need for all‑or‑nothing revision application.
+
+### `dream:202608231848:2`
+*23.08. 18:48 UTC · Quelle: dream*
+
+Runtime AttributeError on MemoryStore.add_fact reveals a missing interface contract that caused failures undetected until execution.
+
+### `dream:202608231848:1`
+*23.08. 18:48 UTC · Quelle: dream*
+
+Insufficient swarm cycles and limited critic participation prevented convergence, yielding a low score despite an evolution winner.
 
 ### `dream:202608231842:5`
 *23.08. 18:42 UTC · Quelle: dream*

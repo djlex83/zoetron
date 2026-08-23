@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Updating the score predictor with few (predicted, actual) pairs produces noisy scores; a minimum sample size stabilizes learning.
+- Variable model latency (12‑23 s) without adaptive timeouts caused stalled steps; a timeout with fallback improves robustness.
+- Applying simulation revisions non‑atomically left residual risks, indicating the need for all‑or‑nothing revision application.
+- Runtime AttributeError on MemoryStore.add_fact reveals a missing interface contract that caused failures undetected until execution.
+- Insufficient swarm cycles and limited critic participation prevented convergence, yielding a low score despite an evolution winner.
 - Applying simulation revisions piecemeal leaves unresolved risks; atomic application followed by re‑simulation ensures consistency.
 - Evolution winners chosen after only two swarm cycles lack sufficient validation; more cycles or a score‑gate improve robustness.
 - Runtime errors arise when the MemoryStore component lacks expected methods such as add_fact, breaking downstream actions.
@@ -51,11 +56,6 @@
 - Model latency variance (6.9s to 208.3s) for identical model calls suggests unreliable inference infrastructure that destabilizes planning budgets.
 - Simulation consistently under-predicted actual scores (predicted 6 vs actual 8), indicating the simulator's risk model is miscalibrated for this task 
 - Swarm convergence (score 8) masked a critical interface mismatch: MemoryStore lacked the contracted `add_fact` method, causing runtime failure after s
-- Multiple prune runs reporting zero facts and zero events pruned signal that retention policies are overly permissive, risking unbounded memory growth.
-- Swarm runs converge to a score of 6 with low convergence, suggesting evolution stops early when critic feedback is insufficient or thresholds are too 
-- Hand‑action failures due to missing MemoryStore methods demonstrate that component interfaces are not validated before execution, leading to runtime e
-- Repeated simulation verdicts to revise without applying changes cause goal scores to stall, showing a missing feedback loop from simulation to policy 
-- High latency spikes (up to 90 s) reveal occasional model overload, indicating a need for adaptive timeouts and fallback mechanisms.
 
 ---
 
