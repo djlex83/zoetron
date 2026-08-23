@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Two consecutive prune runs removed 0 facts and 0 events, indicating the retention policy never selects anything and memory hygiene is currently a no-o
+- The simulation enumerated 4 risks and drafted 4 revisions but only 1 was applied before building, meaning most adversarial findings are discarded at t
+- Reflex-mode completions record score=null, so fast-path successes bypass the calibration loop entirely and silently skew performance statistics.
+- The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') proves call sites reference undeclared store methods and nothing validates 
+- Internal evolution scores disagree with the independent act_done scorer by ±2 points in both directions (winner scored 9 internally but 7 finally; cal
 - prune_run removed 0 facts and 0 events, meaning the pruning criteria are effectively inert and memory hygiene silently degrades unless zero-prune runs
 - hands-execute crashed with AttributeError on MemoryStore.add_fact, proving that callers drift from the store's actual API; every store method used by 
 - The 'Extern-Quote' goal failed because two full swarm cycles still ended unconverged - breaking self-loops requires injecting an external artifact (qu
@@ -51,11 +56,6 @@
 - The simulator's zero-risk 'go' verdict on Embedding-Recall carried a 2-point prediction error while its risk-flagged 'revise' verdict was exact (error
 - All three free-tier fallback models (gemma-4-31b, gemma-4-26b-a4b, glm-5.2) failed with simultaneous 429s immediately after the primary's 502, showing
 - Evolution's internal winner score (9/10) diverged from the independent act_done score (4/10) by 5 points, so intra-evolution rankings must never be tr
-- Two consecutive model_fail events on different providers (Nemotron 502, Gemma client error) show single-provider dependency is a systemic fragility.
-- Embedding-recall simulation passed with zero risks after a drive whisper identified TF-IDF semantic gaps, proving targeted architectural critiques gen
-- Zero pruning occurred despite 14+ model events, suggesting the retention policy is too conservative for high-volume operational logs.
-- Simulation verdicts calibrate perfectly (predicted=actual=4) when risks=0, but require 5 revisions when risks=5, revealing risk count as a proxy for i
-- Extreme latency outliers (123.9s, 72.0s) correlate with upstream 502 errors, indicating infrastructure instability not model slowness.
 
 ---
 

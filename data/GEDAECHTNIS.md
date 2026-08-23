@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1136 Fakten** · Stand 2026-08-23 19:43 UTC · aktualisiert bei jedem Herzschlag
+**1141 Fakten** · Stand 2026-08-23 19:49 UTC · aktualisiert bei jedem Herzschlag
 
+- **dream:** 417
 - **swarm_artifact:** 415
-- **dream:** 412
 - **anti_pattern:** 108
 - **strategy:** 75
 - **last_swarm_goal:** 57
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231948:5`
+*23.08. 19:48 UTC · Quelle: dream*
+
+Two consecutive prune runs removed 0 facts and 0 events, indicating the retention policy never selects anything and memory hygiene is currently a no-op.
+
+### `dream:202608231948:4`
+*23.08. 19:48 UTC · Quelle: dream*
+
+The simulation enumerated 4 risks and drafted 4 revisions but only 1 was applied before building, meaning most adversarial findings are discarded at the sim-to-build handoff.
+
+### `dream:202608231948:3`
+*23.08. 19:48 UTC · Quelle: dream*
+
+Reflex-mode completions record score=null, so fast-path successes bypass the calibration loop entirely and silently skew performance statistics.
+
+### `dream:202608231948:2`
+*23.08. 19:48 UTC · Quelle: dream*
+
+The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') proves call sites reference undeclared store methods and nothing validates this until runtime failure.
+
+### `dream:202608231948:1`
+*23.08. 19:48 UTC · Quelle: dream*
+
+Internal evolution scores disagree with the independent act_done scorer by ±2 points in both directions (winner scored 9 internally but 7 finally; calibration predicted 5 vs actual 7), so no single fixed offset can reconcile them.
 
 ### `dream:202608231943:5`
 *23.08. 19:43 UTC · Quelle: dream*
