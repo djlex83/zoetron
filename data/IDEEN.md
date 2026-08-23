@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple prune runs reporting zero facts and zero events pruned signal that retention policies are overly permissive, risking unbounded memory growth.
+- Swarm runs converge to a score of 6 with low convergence, suggesting evolution stops early when critic feedback is insufficient or thresholds are too 
+- Hand‑action failures due to missing MemoryStore methods demonstrate that component interfaces are not validated before execution, leading to runtime e
+- Repeated simulation verdicts to revise without applying changes cause goal scores to stall, showing a missing feedback loop from simulation to policy 
+- High latency spikes (up to 90 s) reveal occasional model overload, indicating a need for adaptive timeouts and fallback mechanisms.
 - Evolution winners should meet a convergence gate (score≥8) or undergo multiple swarm cycles to avoid accepting suboptimal candidates.
 - Applying revisions atomically and re‑simulating prevents residual risks from persisting after changes.
 - Score predictor updates are reliable only after a sufficient number of recent prediction‑actual pairs, suggesting a minimum sample threshold.
@@ -51,11 +56,6 @@
 - Swarm evolution sometimes yields a winner whose score exceeds the final swarm score by >2 points, indicating that unchecked evolution cycles waste res
 - The AttributeError on MemoryStore.add_fact reveals that runtime failures due to missing store methods can be prevented by enforcing interface contract
 - Latency measurements for the same model vary from 1.1 s to over 230 s, showing that performance outliers must be detected and managed rather than assu
-- Three consecutive prune runs that remove zero facts/events indicate retention thresholds are too lax and risk memory growth.
-- Cross‑module calls often fail due to missing attributes, which can be prevented by pre‑flight existence checks.
-- Simulation outcomes are frequently generated but not applied, creating a learning gap that reduces system improvement.
-- Repeated model failures without root‑cause analysis reveal a missing systematic error‑pattern collection process.
-- High latency outliers (>150 s) destabilize the pipeline and require per‑call timeouts with fallback mechanisms.
 
 ---
 

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1033 Fakten** · Stand 2026-08-23 18:14 UTC · aktualisiert bei jedem Herzschlag
+**1047 Fakten** · Stand 2026-08-23 18:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 395
-- **dream:** 352
-- **anti_pattern:** 100
-- **strategy:** 71
-- **last_swarm_goal:** 50
-- **last_swarm_critique:** 46
+- **swarm_artifact:** 399
+- **dream:** 357
+- **anti_pattern:** 102
+- **strategy:** 72
+- **last_swarm_goal:** 51
+- **last_swarm_critique:** 47
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fähigkeits_messlatte_bauen__capability_benchmark_`
+*23.08. 18:24 UTC · Quelle: evolution*
+
+Explicit Contract Enforcement & Immutable Test Specs - Explicit contract enforcement directly eliminates the self-checking loophole by mandating explicit expected values and schema validation, guaranteeing that each test measures actua
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeits-Messlatte bau:2`
+*23.08. 18:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Robust Scoring Engine with Constraint Solving & Auditing - Replace the ad‑hoc scoring function with a constrained optimization layer. Define the scoring problem as: maximize Σ w_i * s_i subject to w_i ≥ 0, Σ w_i = 1, and s_i 
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeits-Messlatte bau:1`
+*23.08. 18:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Property‑Based & Mutation Testing Layer - Supplement the existing unit tests with property‑based tests (using hypotheses or similar) that assert invariants about the operations (e.g., idempotence, commutativity, bounds). Comp
+
+### `last_swarm_critique`
+*23.08. 18:24 UTC · Quelle: critic*
+
+score=3; issues=Test factories in benchmark.py use self-check when expected value is missing (e.g., if 'expected' not in config, it computes expected from operation), causing tests to always pass regardless of actual computation. This defeats the purpose of a 
+
+### `swarm_artifact:Generate a simple markdown report from benchmark results`
+*23.08. 18:23 UTC · Quelle: builder*
+
+# Benchmark Report  ## Results - addition: PASS - string_len: PASS - list_sum: FAIL  ## Score: 66.67%
+
+### `swarm_artifact:Add persistence layer to store benchmark runs in JSON file`
+*23.08. 18:22 UTC · Quelle: builder*
+
+```markdown # Persistence Layer for Benchmark Results  This module provides functions to save and load benchmark results to/from a JSON file with atomic writes and error handling.  ```python import js
+
+### `swarm_artifact:Implement result aggregation and scoring function`
+*23.08. 18:22 UTC · Quelle: builder*
+
+# Result Aggregation and Scoring Function  This module provides a function to aggregate boolean test results into a percentage score (0-100) with optional weighting support.  ```python def score_resul
+
+### `swarm_artifact:Define benchmark specification and create a dummy capability`
+*23.08. 18:21 UTC · Quelle: builder*
+
+# Fähigkeits‑Messlatte – Capability Benchmark  ## Benchmark Specification | Dimension | Description | Example Test | Variable Difficulty Mechanism | |-----------|-------------|--------------|---------
+
+### `last_swarm_goal`
+*23.08. 18:20 UTC · Quelle: system*
+
+Fähigkeits-Messlatte bauen (Capability-Benchmark)
+
+### `dream:202608231819:5`
+*23.08. 18:19 UTC · Quelle: dream*
+
+Multiple prune runs reporting zero facts and zero events pruned signal that retention policies are overly permissive, risking unbounded memory growth.
+
+### `dream:202608231819:4`
+*23.08. 18:19 UTC · Quelle: dream*
+
+Swarm runs converge to a score of 6 with low convergence, suggesting evolution stops early when critic feedback is insufficient or thresholds are too lax.
+
+### `dream:202608231819:3`
+*23.08. 18:19 UTC · Quelle: dream*
+
+Hand‑action failures due to missing MemoryStore methods demonstrate that component interfaces are not validated before execution, leading to runtime errors.
+
+### `dream:202608231819:2`
+*23.08. 18:19 UTC · Quelle: dream*
+
+Repeated simulation verdicts to revise without applying changes cause goal scores to stall, showing a missing feedback loop from simulation to policy updates.
+
+### `dream:202608231819:1`
+*23.08. 18:19 UTC · Quelle: dream*
+
+High latency spikes (up to 90 s) reveal occasional model overload, indicating a need for adaptive timeouts and fallback mechanisms.
 
 ### `dream:202608231813:5`
 *23.08. 18:13 UTC · Quelle: dream*
