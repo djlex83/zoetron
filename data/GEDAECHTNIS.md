@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**716 Fakten** · Stand 2026-08-23 11:32 UTC · aktualisiert bei jedem Herzschlag
+**730 Fakten** · Stand 2026-08-23 11:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 317
-- **dream:** 206
-- **anti_pattern:** 68
-- **strategy:** 55
-- **last_swarm_goal:** 27
-- **last_swarm_critique:** 25
+- **swarm_artifact:** 321
+- **dream:** 211
+- **anti_pattern:** 70
+- **strategy:** 56
+- **last_swarm_goal:** 28
+- **last_swarm_critique:** 26
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modellleistung_durch_regelmäßiges_kalibrieren_stei`
+*23.08. 11:45 UTC · Quelle: evolution*
+
+Periodic online isotonic regression with model checkpointing - Variant 2 introduces a periodic online isotonic regression calibrator that updates incrementally from streaming data, ensuring regular calibration without retraining the base model
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellleistung durch reg:1`
+*23.08. 11:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 7, 9]): Cross‑validated temperature scaling integrated into training pipeline - Treat calibration as a hyperparameter (temperature) and select it via nested cross‑validation on a validation split, never using the test set. Af
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellleistung durch reg:0`
+*23.08. 11:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 9, 7]): Strict holdout‑based calibration with persistence - Split data into train, calibration holdout, and test. Fit the base model on train only. Fit calibrators (Platt scaling or isotonic regression) exclusively on the cal
+
+### `last_swarm_critique`
+*23.08. 11:44 UTC · Quelle: critic*
+
+score=4; issues=Artifact 1: Uses test set for selecting calibration method, causing data leakage; should select based on calibration holdout only.; Artifact 1: Redundant fitting of calibrators (fits on training data then again on holdout) and unclear docstring
+
+### `swarm_artifact:Feedback-Schleife für kontinuierliche Verbesserung`
+*23.08. 11:44 UTC · Quelle: builder*
+
+```python import numpy as np from sklearn.datasets import make_classification from sklearn.model_selection import train_test_split from sklearn.linear_model import LogisticRegression from sklearn.cali
+
+### `swarm_artifact:Kalibrierungsmetriken überwachen und loggen`
+*23.08. 11:44 UTC · Quelle: builder*
+
+# Kalibrierungsmetriken überwachen und loggen  Dieses Skript berechnet die Kalibrierkurve (Zuverlässigkeitsdiagramm) und schreibt die Ergebnisse in eine Logdatei. Anschließend wird der Pfad der Logdat
+
+### `swarm_artifact:Regelmäßiges Kalibrierungs-Intervall einrichten`
+*23.08. 11:43 UTC · Quelle: builder*
+
+# Regelmäßiges Kalibrierungs‑Intervall einrichten   **Ziel:** Ein Intervall einrichten, das alle *N* Sekunden ein neues Kalibrierungsmodell trainiert, die Leistung ausgibt und dabei Ressourcen schont 
+
+### `swarm_artifact:Kalibrierungsstrategie definieren`
+*23.08. 11:43 UTC · Quelle: builder*
+
+# Kalibrierungsstrategie definieren    **Ziel:** Die Modellleistung durch regelmäßiges Kalibrieren steigern. Dazu wird eine geeignete Kalibrierungsmethode gewählt und die Evaluationsmetrik Brier Score
+
+### `last_swarm_goal`
+*23.08. 11:38 UTC · Quelle: system*
+
+Modellleistung durch regelmäßiges Kalibrieren steigern
+
+### `dream:202608231137:5`
+*23.08. 11:37 UTC · Quelle: dream*
+
+Repeated zero‑prune runs signal stale data accumulation, so prune thresholds must auto‑escalate when two consecutive runs prune nothing to prevent unbounded memory growth.
+
+### `dream:202608231137:4`
+*23.08. 11:37 UTC · Quelle: dream*
+
+Missing interface methods such as MemoryStore.add_fact lead to AttributeError crashes, proving that pre‑flight interface checks are essential for stability.
+
+### `dream:202608231137:3`
+*23.08. 11:37 UTC · Quelle: dream*
+
+Swarm role imbalance (many builders, few critics) correlates with low convergence scores, showing that enforcer‑based role quotas improve validation quality.
+
+### `dream:202608231137:2`
+*23.08. 11:37 UTC · Quelle: dream*
+
+Latency spikes (e.g., 80.9 s) exceed mission timeouts, indicating a need for real‑time latency monitoring and automatic fallback to faster models.
+
+### `dream:202608231137:1`
+*23.08. 11:37 UTC · Quelle: dream*
+
+Critic output must be validated against a strict schema before use, as unparseable critic results caused scoring failures in evolution runs.
 
 ### `dream:202608231131:5`
 *23.08. 11:31 UTC · Quelle: dream*

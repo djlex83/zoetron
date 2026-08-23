@@ -1,12 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 11:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 11:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Add MemoryStore interface validator at process start and before each hand-action batch; fail fast on missing m *(hatte die Idee 5×)*
-- orphan-swarm-sweeper: periodically compare swarm_started vs swarm_finished counts and automatically resume, te *(hatte die Idee 4×)*
 - model-health-registry: maintain a real‑time registry of model endpoints with circuit‑breaker state, p99 latenc *(hatte die Idee 4×)*
 - swarm-convergence-gate: enforce critic:builder ≥1:2 and require a passing integration test before marking conv *(hatte die Idee 4×)*
 - Limit simulation revisions to 3 and auto-trigger evolution when score delta <1 over two consecutive cycles. *(hatte die Idee 4×)*
@@ -14,6 +13,7 @@
 - Deploy a nightly model calibration updater: log (goal_embedding, predicted, actual), retrain a lightweight reg *(hatte die Idee 4×)*
 - canonical-spec-injector: after the first build stage, distill a one‑line product definition (name + value prop *(hatte die Idee 3×)*
 - entity-consistency-checker: post‑build validation that scans all pipeline artifacts for the central product/en *(hatte die Idee 3×)*
+- orphan-swarm-sweeper: periodically compare swarm_started vs swarm_finished counts and automatically resume, te *(hatte die Idee 3×)*
 - cross-dream-linker: embed vector references between dream outputs and tag unlinked distant memories for forced *(hatte die Idee 3×)*
 - model-latency-circuit-breaker: enforce p99 latency SLO per model; auto-failover to faster model when breached, *(hatte die Idee 3×)*
 - swarm-session-ledger: persist swarm_started with TTL; on timeout, auto-spawn recovery agent to harvest and tag *(hatte die Idee 3×)*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellkalibrierung verbessern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Modellkalibrierung verbessern *(wieder aufgegriffen: 3×)*
 - Reduce Model Failure Rate *(wieder aufgegriffen: 2×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated zero‑prune runs signal stale data accumulation, so prune thresholds must auto‑escalate when two consecutive runs prune nothing to prevent unb
+- Missing interface methods such as MemoryStore.add_fact lead to AttributeError crashes, proving that pre‑flight interface checks are essential for stab
+- Swarm role imbalance (many builders, few critics) correlates with low convergence scores, showing that enforcer‑based role quotas improve validation q
+- Latency spikes (e.g., 80.9 s) exceed mission timeouts, indicating a need for real‑time latency monitoring and automatic fallback to faster models.
+- Critic output must be validated against a strict schema before use, as unparseable critic results caused scoring failures in evolution runs.
 - Missing MemoryStore.add_fact method caused a runtime hand-execution error, showing that interface contracts must be enforced via abstract base classes
 - Consistent overprediction of goal scores (predicted 7 vs actual 5) reveals calibration drift that can be corrected by applying a rolling actual/predic
 - Builder-heavy role distribution (4 builders : 1 critic) correlates with low convergence scores, suggesting a minimum critic-to-builder ratio is needed
@@ -51,11 +56,6 @@
 - Critic outputs are often unparseable, blocking evolution; enforcing a strict JSON schema for critic feedback enables reliable variant selection.
 - Nvidia model requests frequently hit resource limits, causing upstream errors; implementing request throttling, exponential backoff, or fallback to al
 - Missing 'add_fact' method on MemoryStore causes hand-action failures; ensuring the store implements the required interface prevents execution errors.
-- MemoryStore lacks an 'add_fact' method causing hand-action failures, revealing an interface contract violation in the persistence layer.
-- Skill proposals are generated but rarely consumed, creating a capability-acquisition bottleneck explicitly recognized by the drive system.
-- Simulation detects risks (3 in second cycle) but revisions are not applied (0 applied), breaking the feedback loop between critic and builder.
-- The calibration swarm fails to converge (score 4/10) despite evolution producing high-scoring variants (9/10), indicating a gap between evolution eval
-- Free-tier models exhibit high failure rates (502/429) making them unreliable for production swarms; only dots-studio/dots-3-note-preview and nvidia/ne
 
 ---
 
