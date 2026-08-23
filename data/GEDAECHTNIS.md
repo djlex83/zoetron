@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**567 Fakten** · Stand 2026-08-23 06:50 UTC · aktualisiert bei jedem Herzschlag
+**582 Fakten** · Stand 2026-08-23 07:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 277
-- **dream:** 135
-- **anti_pattern:** 54
-- **strategy:** 48
-- **last_swarm_goal:** 18
-- **last_swarm_critique:** 17
+- **swarm_artifact:** 282
+- **dream:** 140
+- **anti_pattern:** 56
+- **strategy:** 49
+- **last_swarm_goal:** 19
+- **last_swarm_critique:** 18
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modellfehler_schnell_erkennen_und_beheben`
+*23.08. 07:10 UTC · Quelle: evolution*
+
+Data‑driven, parameterized unit testing with property‑based and failure‑injection tests - Variant 0 directly addresses the critic issues by replacing hardcoded paths with pytest fixtures, adding parameterized and property-based tests (Hypothesis), checking out
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler schnell erk:2`
+*23.08. 07:10 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Model contract testing using schema/expectation validation (e.g., Great Expectat - Define explicit contracts for model inputs (feature names, types, allowed ranges) and outputs (prediction shape, dtype, permissible value rang
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler schnell erk:1`
+*23.08. 07:10 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Continuous drift and performance monitoring with automated rollback - Deploy a lightweight monitoring service that computes statistical drift metrics (KS test, PSI, KL divergence) on live prediction distributions against a re
+
+### `last_swarm_critique`
+*23.08. 07:09 UTC · Quelle: critic*
+
+score=4; issues=Unit test uses hardcoded model path 'model.pkl' and fixed dataset; no parameterization or fixtures for varied inputs, limiting robustness.; Test expects exact integer predictions [0,1] but model may output floats; using np.allclose with atol=0.
+
+### `swarm_artifact:Auto‑retrain trigger on error spike`
+*23.08. 07:09 UTC · Quelle: builder*
+
+# Auto‑retrain Trigger bei Fehlerausbruch   Dieses Skript überwacht den Validierungsfehler eines Modells. Überschreitet der Fehler einen festgelegten Schwellenwert, wird eine Platzhalter‑Retrain‑Routi
+
+### `swarm_artifact:Pre-commit hook to run tests`
+*23.08. 07:08 UTC · Quelle: builder*
+
+## Pre‑commit Hook: Tests ausführen   Dieses Skript wird als **pre‑commit hook** (Vor‑Commit‑Hook) verwendet. Es führt die Unit‑Test‑Suite mit `pytest` aus und bricht den Commit ab, wenn irgendein Tes
+
+### `swarm_artifact:Validation error threshold checker`
+*23.08. 07:08 UTC · Quelle: builder*
+
+# Validierungsfehler-Schwellenwert-Prüfer  Dieses Skript überprüft, ob die Genauigkeit eines Modells auf einem Validierungssatz unter einem definierten Schwellenwert liegt. Es hilft dabei, Modellfehle
+
+### `swarm_artifact:Logging and drift detection script`
+*23.08. 07:08 UTC · Quelle: builder*
+
+```python import numpy as np import logging from mymodel import Model  logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')  def check_drift():     # Set fixed s
+
+### `swarm_artifact:Unit test for model predictions`
+*23.08. 07:07 UTC · Quelle: builder*
+
+```markdown # Unit test for model predictions  Dieser Pytest-Test lädt das Modell, führt eine Inferenz auf einem kleinen festen Datensatz durch und prüft, ob die Vorhersagen innerhalb einer Toleranz d
+
+### `last_swarm_goal`
+*23.08. 07:06 UTC · Quelle: system*
+
+Modellfehler schnell erkennen und beheben
+
+### `dream:202608230706:5`
+*23.08. 07:06 UTC · Quelle: dream*
+
+Evolution improved task score from 5 to 8–9 but critic flagged hardcoded values, showing that parameterization must be enforced as a first-class requirement in generated code.
+
+### `dream:202608230706:4`
+*23.08. 07:06 UTC · Quelle: dream*
+
+Dream-generated skill proposals directly target observed failure modes (validation, latency, calibration, logging, evolution), proving the dream-to-proposal pipeline produces actionable, high-signal mutations.
+
+### `dream:202608230706:3`
+*23.08. 07:06 UTC · Quelle: dream*
+
+Iterative simulation-revision loops converge but revision count grows (1 → 3), indicating a need for bounded iteration budgets or early-stop criteria to prevent runaway refinement.
+
+### `dream:202608230706:2`
+*23.08. 07:06 UTC · Quelle: dream*
+
+Model latency varies 30× (2.2 s to 69.5 s) on the same model, making fixed timeouts unsafe and demanding a latency-aware router with median-based failover thresholds.
+
+### `dream:202608230706:1`
+*23.08. 07:06 UTC · Quelle: dream*
+
+Missing interface validation on MemoryStore caused AttributeError at runtime, revealing a systemic gap in startup contract checking for all store-like components.
 
 ### `strategy:mehr_simulationen_durchführen`
 *23.08. 06:50 UTC · Quelle: evolution*
