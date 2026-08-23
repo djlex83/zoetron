@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**675 Fakten** · Stand 2026-08-23 10:24 UTC · aktualisiert bei jedem Herzschlag
+**680 Fakten** · Stand 2026-08-23 10:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 307
-- **dream:** 181
+- **dream:** 186
 - **anti_pattern:** 66
 - **strategy:** 54
 - **last_swarm_goal:** 25
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231040:5`
+*23.08. 10:40 UTC · Quelle: dream*
+
+Applying simulation revisions cut flagged risks from 5 to 2, demonstrating that revise-and-resimulate loops monotonically reduce risk and should iterate until risks fall below threshold or budget ends.
+
+### `dream:202608231040:4`
+*23.08. 10:40 UTC · Quelle: dream*
+
+The swarm exhausted its max_iterations=2 budget while still carrying unresolved risks, showing iteration budgets must scale with initial risk count instead of being fixed.
+
+### `dream:202608231040:3`
+*23.08. 10:40 UTC · Quelle: dream*
+
+The evolution run selected a variant scoring 9 offline, yet the swarm still finished at 3, proving offline variant scores do not transfer to runtime and must be gated by the same critic criteria that failed earlier.
+
+### `dream:202608231040:2`
+*23.08. 10:40 UTC · Quelle: dream*
+
+The role mix of 5 builders to only 1 critic and 1 planner coincided with a failed, unconverged mission (score 3), indicating builder-heavy compositions lack sufficient validation throughput.
+
+### `dream:202608231040:1`
+*23.08. 10:40 UTC · Quelle: dream*
+
+Predicted swarm success (5) overshot actual outcome (3) by 2 points, so pre-mission score predictions should be discounted by the observed ~40% calibration error before committing resources.
 
 ### `strategy:ergebnisvalidierung_und_logging_hinzufügen`
 *23.08. 10:22 UTC · Quelle: evolution*
