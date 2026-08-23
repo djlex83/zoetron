@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**354 Fakten** · Stand 2026-08-23 01:13 UTC · aktualisiert bei jedem Herzschlag
+**368 Fakten** · Stand 2026-08-23 01:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 215
-- **dream:** 55
-- **strategy:** 34
-- **anti_pattern:** 26
+- **swarm_artifact:** 219
+- **dream:** 60
+- **strategy:** 35
+- **anti_pattern:** 28
 - **creator_teaching:** 7
-- **last_swarm_critique:** 3
-- **last_swarm_goal:** 3
+- **last_swarm_critique:** 4
+- **last_swarm_goal:** 4
 - **frontier:** 3
 - **artifact:** 3
 - **best_swarm_score:** 1
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fähigkeiten_selbstständig_üben`
+*23.08. 01:31 UTC · Quelle: evolution*
+
+Functional‑style pure pipeline with explicit state passing - The functional‑style pure pipeline completely eliminates global state and side effects, makes reproducibility trivial via an explicit seed, and offers a clear, testable data‑flow a
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten selbstständi:1`
+*23.08. 01:31 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Object‑oriented design with configurable components and dependency injection - Create a `SkillTrainer` class encapsulating state (current score, random generator). Inject a `RandomProvider` (wrapper around `random.Random`) so
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten selbstständi:0`
+*23.08. 01:31 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Modular refactor with explicit functions, constants, and a main guard - Extract all logic into well‑named functions (e.g., `generate_exercise`, `evaluate_answer`, `run_session`). Define module‑level constants for magic values
+
+### `last_swarm_critique`
+*23.08. 01:31 UTC · Quelle: critic*
+
+score=4; issues=All code resides in global scope; lacks functions, classes, or a main guard, reducing reusability and testability.; Random usage without a fixed seed makes results non‑reproducible; should allow seeding for debugging.; Magic numbers (e.g., targ
+
+### `swarm_artifact:Übungsfortschritt visualisieren`
+*23.08. 01:31 UTC · Quelle: builder*
+
+**Übungsfortschritt visualisieren**  Zeige den aktuellen Übungsfortschritt als Prozentwert basierend auf einem Ziel von 10 Übungen pro Skill. Jedes `#` im Balken steht für 5 % Fortschritt.  ```python 
+
+### `swarm_artifact:Feedback-Schleife simulieren`
+*23.08. 01:30 UTC · Quelle: builder*
+
+```python import random counters = {'Python programmieren': 0, 'Daten analysieren': 0, 'KI-Modelle trainieren': 0, 'Systeme debuggen': 0, 'Algorithmen optimieren': 0} chosen = random.choice(list(count
+
+### `swarm_artifact:Skill-Vorschläge deduplizieren und bewerten`
+*23.08. 01:30 UTC · Quelle: builder*
+
+## Deduplizierte Skill-Vorschläge mit Längenbewertung  ```python # Eingabe-Liste mit möglichen Duplikaten raw = ['Python programmieren', 'Daten analysieren', 'Python programmieren', 'KI-Modelle traini
+
+### `swarm_artifact:Skill-Vorschlagsgenerator erstellen`
+*23.08. 01:30 UTC · Quelle: builder*
+
+```python import random  # Skills (Fähigkeiten) - list of possible skill proposals skills = [     "Python programmieren",          # Python programming     "Daten analysieren",             # Data anal
+
+### `last_swarm_goal`
+*23.08. 01:29 UTC · Quelle: system*
+
+Fähigkeiten selbstständig üben
+
+### `dream:202608230128:5`
+*23.08. 01:28 UTC · Quelle: dream*
+
+Pruning removes zero facts/events each run, so memory grows unbounded without improving signal.
+
+### `dream:202608230128:4`
+*23.08. 01:28 UTC · Quelle: dream*
+
+Simulation verdicts='go' with 5 risks/5 revisions rarely translate into applied changes (drive goal gap).
+
+### `dream:202608230128:3`
+*23.08. 01:28 UTC · Quelle: dream*
+
+Interface contract violations (MemoryStore missing add_fact) halt hand actions until reflex fallback succeeds.
+
+### `dream:202608230128:2`
+*23.08. 01:28 UTC · Quelle: dream*
+
+Swarm runs consistently stall at 2 cycles with converged=false despite evolution improving variant scores from 3 to 8.7.
+
+### `dream:202608230128:1`
+*23.08. 01:28 UTC · Quelle: dream*
+
+Model latency varies 10× (6.7–79 s) on the same endpoint, making fixed timeouts unreliable and causing cascading delays.
 
 ### `strategy:alte_träume_nach_ideen_durchsuchen`
 *23.08. 01:13 UTC · Quelle: evolution*
