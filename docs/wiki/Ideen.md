@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,7 +9,6 @@
 - Limit simulation revisions to 3 and auto-trigger evolution when score delta <1 over two consecutive cycles. *(hatte die Idee 4×)*
 - Create skill activation tracker logging proposal-to-instantiation latency, flagging dormant skills after 3 swa *(hatte die Idee 4×)*
 - Deploy a nightly model calibration updater: log (goal_embedding, predicted, actual), retrain a lightweight reg *(hatte die Idee 4×)*
-- Implement Latency‑Aware Model Selection: monitor inference latency; if > 2× rolling median, switch to a faster *(hatte die Idee 3×)*
 - Create skill-activation tracker: log proposal→instantiation latency, flag dormant skills after 3 swarm cycles  *(hatte die Idee 3×)*
 - Build calibration-aware reward shaper: blend simulation score with historical actuals to reduce prediction err *(hatte die Idee 3×)*
 - Wrap every model call with retry+fallback: on 502/timeout, switch to backup model (super-120b) and log latency *(hatte die Idee 3×)*
@@ -20,6 +19,7 @@
 - Add a swarm heartbeat controller: workers report progress every 30 s, orchestrator flags stalls >90 s, reassig *(hatte die Idee 3×)*
 - Implement automatic calibration updates: after each prediction, compare predicted vs actual outcome and adjust *(hatte die Idee 3×)*
 - Create a skill promotion pipeline: sandbox‑test each proposal, measure performance delta vs baseline, compute  *(hatte die Idee 3×)*
+- Establish interface contract validation at swarm startup: verify all components expose required methods (e.g., *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self‑generated goals often miss external‑impact orientation, limiting real‑world effectiveness and reliability.
+- Repeated failures in task synchronization arise from applying simulation revisions without transactional rollback on residual risk.
+- Combining related memories or dreams (same‑day or older) consistently produces novel, actionable goals, showing the value of structured reflection.
+- Many skill proposals never reach execution because they lack explicit acceptance criteria and tracking, causing them to expire.
+- High latency spikes (>300s) correlate with stalled or failed tasks, revealing a need for runtime latency guards.
 - Swarms with a builder-heavy ratio (5 builders : 1 critic) under a hard 2-iteration budget terminate at score 7 without converging, indicating converge
 - Hand actions fail in 0.05s on interface drift ('MemoryStore' object has no attribute 'add_fact'), showing generated code is never validated against cu
 - Prune runs repeatedly remove 0 facts and 0 events, meaning the eligibility criteria match nothing or the prune path is effectively dead code while the
@@ -51,11 +56,6 @@
 - The instant 0.05s failure ('MemoryStore' object has no attribute 'add_fact') shows tools are invoked against assumed interfaces without pre-call signa
 - The simulation flagged 4 risks but only 1 revision was applied before shipping, so known defects were knowingly left in the delivered artifact.
 - Two consecutive attempts on embedding-recall stalled at exactly 7/10 with the critic flagging 'Evaluation ist n=1', proving single-sample scoring is t
-- Two consecutive prune runs removed 0 facts and 0 events, indicating the retention policy never selects anything and memory hygiene is currently a no-o
-- The simulation enumerated 4 risks and drafted 4 revisions but only 1 was applied before building, meaning most adversarial findings are discarded at t
-- Reflex-mode completions record score=null, so fast-path successes bypass the calibration loop entirely and silently skew performance statistics.
-- The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') proves call sites reference undeclared store methods and nothing validates 
-- Internal evolution scores disagree with the independent act_done scorer by ±2 points in both directions (winner scored 9 internally but 7 finally; cal
 
 ---
 

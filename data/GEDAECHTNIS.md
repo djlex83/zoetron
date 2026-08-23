@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1151 Fakten** · Stand 2026-08-23 19:59 UTC · aktualisiert bei jedem Herzschlag
+**1156 Fakten** · Stand 2026-08-23 20:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 427
+- **dream:** 432
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232002:5`
+*23.08. 20:02 UTC · Quelle: dream*
+
+Self‑generated goals often miss external‑impact orientation, limiting real‑world effectiveness and reliability.
+
+### `dream:202608232002:4`
+*23.08. 20:02 UTC · Quelle: dream*
+
+Repeated failures in task synchronization arise from applying simulation revisions without transactional rollback on residual risk.
+
+### `dream:202608232002:3`
+*23.08. 20:02 UTC · Quelle: dream*
+
+Combining related memories or dreams (same‑day or older) consistently produces novel, actionable goals, showing the value of structured reflection.
+
+### `dream:202608232002:2`
+*23.08. 20:02 UTC · Quelle: dream*
+
+Many skill proposals never reach execution because they lack explicit acceptance criteria and tracking, causing them to expire.
+
+### `dream:202608232002:1`
+*23.08. 20:02 UTC · Quelle: dream*
+
+High latency spikes (>300s) correlate with stalled or failed tasks, revealing a need for runtime latency guards.
 
 ### `dream:202608231958:5`
 *23.08. 19:58 UTC · Quelle: dream*
