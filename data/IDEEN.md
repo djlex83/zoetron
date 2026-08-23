@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 16:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 16:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- MemoryStore lacks add_fact method, causing a runtime AttributeError that halted issue creation and reveals missing interface contract tests.
+- Swarm budget of max_iterations=2 is too low for convergence on calibration goals, as evidenced by 2 cycles ending with score 7 and converged=false.
+- First simulation flagged 5 risks but only 4 revisions were applied; partial application left residual risk that likely caused non-convergence.
+- Calibration predicted 4 but actual was 7 (abs_error=3), showing the predictor is systematically miscalibrated and untrustworthy for gating.
+- Model latency varies extremely (6.5s to 128s) on the same model, making time budgets unreliable for planning.
 - Reflex-mode convergence without deep validation lets shallow successes mask latent errors; every reflex completion should trigger a lightweight critic
 - Critic catches only syntactic typos (e.g., truncated print string) after evolution, suggesting static linting should gate variants before simulation.
 - Zero prunes across a full cycle indicate the pruning threshold is stuck above the relevance floor; threshold must decay when prune count is zero.
@@ -51,11 +56,6 @@
 - Calibration reveals a consistent under‑prediction of actual scores (predicted 3 vs actual 6), so raw model scores must be scaled before threshold deci
 - Swarm runs regularly end with converged:false despite high scores, indicating the allowed iteration budget (max_iterations=2) is insufficient for comp
 - Model invocation latency spikes and occasional 502 overload errors show that raw model calls are unreliable without timeout, fallback, and jittered ba
-- Conserve metabolism state restricts task budget to 1, causing goals to stall and indicating a need to defer or batch low‑priority work during stress.
-- Missing MemoryStore.add_fact method caused a hand-action failure, highlighting the need for interface validation before executing actions.
-- Simulation risk counts often exceed applied revisions, leaving residual risk that can cause action failures if not fully addressed.
-- Evolution runs produce high-scoring variants that fail in swarm execution, indicating a gap between simulated fitness and real-world performance.
-- High latency outliers (150s+) occur during peak load and suggest need for dynamic model failover to maintain responsiveness.
 
 ---
 

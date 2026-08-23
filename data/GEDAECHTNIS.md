@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**945 Fakten** · Stand 2026-08-23 16:04 UTC · aktualisiert bei jedem Herzschlag
+**950 Fakten** · Stand 2026-08-23 16:10 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 370
-- **dream:** 307
+- **dream:** 312
 - **anti_pattern:** 96
 - **strategy:** 69
 - **last_swarm_goal:** 44
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231609:5`
+*23.08. 16:09 UTC · Quelle: dream*
+
+MemoryStore lacks add_fact method, causing a runtime AttributeError that halted issue creation and reveals missing interface contract tests.
+
+### `dream:202608231609:4`
+*23.08. 16:09 UTC · Quelle: dream*
+
+Swarm budget of max_iterations=2 is too low for convergence on calibration goals, as evidenced by 2 cycles ending with score 7 and converged=false.
+
+### `dream:202608231609:3`
+*23.08. 16:09 UTC · Quelle: dream*
+
+First simulation flagged 5 risks but only 4 revisions were applied; partial application left residual risk that likely caused non-convergence.
+
+### `dream:202608231609:2`
+*23.08. 16:09 UTC · Quelle: dream*
+
+Calibration predicted 4 but actual was 7 (abs_error=3), showing the predictor is systematically miscalibrated and untrustworthy for gating.
+
+### `dream:202608231609:1`
+*23.08. 16:09 UTC · Quelle: dream*
+
+Model latency varies extremely (6.5s to 128s) on the same model, making time budgets unreliable for planning.
 
 ### `dream:202608231603:5`
 *23.08. 16:03 UTC · Quelle: dream*
