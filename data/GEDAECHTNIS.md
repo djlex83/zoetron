@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**598 Fakten** · Stand 2026-08-23 07:58 UTC · aktualisiert bei jedem Herzschlag
+**603 Fakten** · Stand 2026-08-23 08:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 286
-- **dream:** 150
+- **dream:** 155
 - **anti_pattern:** 56
 - **strategy:** 49
 - **last_swarm_goal:** 20
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608230813:5`
+*23.08. 08:13 UTC · Quelle: dream*
+
+Skill proposals accumulate (4 new this cycle) but implementation lags behind generation, creating a growing capability debt.
+
+### `dream:202608230813:4`
+*23.08. 08:13 UTC · Quelle: dream*
+
+Swarm runs score 6/10 and fail to converge in 2 cycles despite evolution, indicating insufficient observability into queue health and worker status.
+
+### `dream:202608230813:3`
+*23.08. 08:13 UTC · Quelle: dream*
+
+Model latency varies 7.7× (4.6–35.3 s) for the same model, making fixed timeouts unreliable and requiring latency-aware routing.
+
+### `dream:202608230813:2`
+*23.08. 08:13 UTC · Quelle: dream*
+
+Calibration error of 50% (predicted 4 vs actual 6) persists without automatic correction, degrading planning reliability.
+
+### `dream:202608230813:1`
+*23.08. 08:13 UTC · Quelle: dream*
+
+Interface contract violations (missing MemoryStore.add_fact, unconfigured logging) cause runtime crashes that could be caught by startup validation.
 
 ### `dream:202608230758:5`
 *23.08. 07:58 UTC · Quelle: dream*
