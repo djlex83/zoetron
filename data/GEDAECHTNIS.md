@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**382 Fakten** · Stand 2026-08-23 01:53 UTC · aktualisiert bei jedem Herzschlag
+**396 Fakten** · Stand 2026-08-23 02:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 223
-- **dream:** 65
-- **strategy:** 36
-- **anti_pattern:** 30
+- **swarm_artifact:** 227
+- **dream:** 70
+- **strategy:** 37
+- **anti_pattern:** 32
 - **creator_teaching:** 7
-- **last_swarm_critique:** 5
-- **last_swarm_goal:** 5
+- **last_swarm_critique:** 6
+- **last_swarm_goal:** 6
 - **frontier:** 3
 - **artifact:** 3
 - **best_swarm_score:** 1
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:neue_fähigkeiten_aus_vorschlägen_bauen`
+*23.08. 02:13 UTC · Quelle: evolution*
+
+Bidirectional, robust anomaly detection - Variant 1 offers the best blend of elegance, feasibility, and impact by providing robust bidirectional anomaly detection that captures both low and high outliers, improving model s
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Vor:2`
+*23.08. 02:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Sample variance with comprehensive property‑based testing - Switch from population variance (divide by n) to the unbiased sample variance (divide by n‑1) and justify the choice based on the dataset’s size and represen
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Vor:0`
+*23.08. 02:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 9, 7]): Explicit Aufwand scaling and normalization framework - Define a clear effort range (e.g., 0–100 person‑hours) and apply min‑max normalization to convert raw Aufwand values into a 0‑1 score before any inverse calculati
+
+### `last_swarm_critique`
+*23.08. 02:12 UTC · Quelle: critic*
+
+score=5; issues=Scoring model lacks explicit definition of Aufwand range and normalization, making the inverse calculation ambiguous.; Anomaly detection only considers upper outliers (mean + 2*std); lower outliers are ignored, limiting usefulness.; Variance ca
+
+### `swarm_artifact:Prototyp testen und Dokumentation erstellen`
+*23.08. 02:12 UTC · Quelle: builder*
+
+## Unit‑Tests für den Prototyp    ```python import unittest # angenommen, das Modul heißt anomaly_detector.py und liegt im gleichen Verzeichnis from anomaly_detector import anomaly_detector    class T
+
+### `swarm_artifact:Prototyp für die höchstbewertete Fähigkeit implementieren`
+*23.08. 02:12 UTC · Quelle: builder*
+
+# Prototyp: Echtzeit‑Anomalieerkennung  Einfaches Modul zur Erkennung von Ausreißern in einer numerischen Datenreihe.   Ein Wert gilt als Anomalie, wenn er größer ist als **Mittelwert + 2 × Standardab
+
+### `swarm_artifact:Vorschläge nach Relevanz und Umsetzbarkeit bewerten`
+*23.08. 02:12 UTC · Quelle: builder*
+
+## Bewertung von Vorschlägen nach gewichtetem Scoring-Modell  ### Verwendete Kriterien und Gewichtungen | Kriterium                | Beschreibung                                                       
+
+### `swarm_artifact:Schlafende Fähigkeitsvorschläge aus dem Archiv finden`
+*23.08. 02:12 UTC · Quelle: builder*
+
+# Schlafende Fähigkeitsvorschläge  - Vorschlag A: Auto‑Tagging   - Vorschlag C: Echtzeit‑Anomalieerkennung
+
+### `last_swarm_goal`
+*23.08. 02:08 UTC · Quelle: system*
+
+Neue Fähigkeiten aus Vorschlägen bauen
+
+### `dream:202608230208:5`
+*23.08. 02:08 UTC · Quelle: dream*
+
+Tracking skill usage and auto‑promoting skills that prevent ≥3 failures keeps the skill set relevant and reduces dormancy.
+
+### `dream:202608230208:4`
+*23.08. 02:08 UTC · Quelle: dream*
+
+Enforcing role quotas (≥1 planner, ≥1 critic, ≥2 builders) before task allocation led to better swarm convergence, showing the value of balanced agent composition.
+
+### `dream:202608230208:3`
+*23.08. 02:08 UTC · Quelle: dream*
+
+Model scores remain low (≈5/10) despite multiple runs, suggesting that increased simulation frequency and calibration would improve accuracy.
+
+### `dream:202608230208:2`
+*23.08. 02:08 UTC · Quelle: dream*
+
+Duplicated file loading and JSON parsing errors caused evolution run failures, indicating a need for deduplication and validation in data pipelines.
+
+### `dream:202608230208:1`
+*23.08. 02:08 UTC · Quelle: dream*
+
+Latency spikes up to 62.5 s reveal the need for timeout, fallback, and alerting in model calls.
 
 ### `strategy:verschiedene_situationen_durchspielen`
 *23.08. 01:52 UTC · Quelle: evolution*
