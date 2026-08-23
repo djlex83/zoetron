@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**483 Fakten** · Stand 2026-08-23 04:21 UTC · aktualisiert bei jedem Herzschlag
+**497 Fakten** · Stand 2026-08-23 04:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 254
-- **dream:** 100
-- **anti_pattern:** 44
-- **strategy:** 43
-- **last_swarm_critique:** 12
-- **last_swarm_goal:** 12
+- **swarm_artifact:** 258
+- **dream:** 105
+- **anti_pattern:** 46
+- **strategy:** 44
+- **last_swarm_critique:** 13
+- **last_swarm_goal:** 13
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:schwarm_aufgaben_zuverlässig_abschließen`
+*23.08. 04:40 UTC · Quelle: evolution*
+
+Replace manual Queue with concurrent.futures ThreadPoolExecutor - Variant 1 replaces the error‑prone manual Queue with a ThreadPoolExecutor, removing sentinel handling altogether, provides straightforward logging, and guarantees clean shutdown vi
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Schwarm-Aufgaben zuverlä:2`
+*23.08. 04:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event‑driven asyncio architecture with async Queue and graceful cancellation - Use asyncio.Queue for task distribution. Worker coroutines await queue.get(), process the item, call queue.task_done(), and break when a sentinel 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Schwarm-Aufgaben zuverlä:0`
+*23.08. 04:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Correct sentinel/poison‑pill pattern with proper task_done and logging - Place a single sentinel (e.g., None) per worker at the end of the queue. Each worker calls queue.task_done() after processing any item, including the se
+
+### `last_swarm_critique`
+*23.08. 04:40 UTC · Quelle: critic*
+
+score=7; issues=Task queue worker's sentinel handling leaves unfinished count incorrect and may cause queue.join() to hang if called after sentinel processing; workers also put sentinel back causing extra sentinels to remain in queue.; Task queue worker does n
+
+### `swarm_artifact:Write unit tests for task queue`
+*23.08. 04:39 UTC · Quelle: builder*
+
+```python import unittest import asyncio  async def process_item(x):     """Simulate an async processing task."""     await asyncio.sleep(0.01)  # Simulate work     return x * 2  class TestTaskQueue(u
+
+### `swarm_artifact:Expose health check endpoint`
+*23.08. 04:39 UTC · Quelle: builder*
+
+```python from http.server import BaseHTTPRequestHandler, HTTPServer import threading  class HealthHandler(BaseHTTPRequestHandler):     def do_GET(self):         if self.path == '/health':            
+
+### `swarm_artifact:Add retry mechanism with exponential backoff`
+*23.08. 04:39 UTC · Quelle: builder*
+
+```python import random import asyncio from typing import Callable, Any, TypeVar, Awaitable  T = TypeVar('T')  async def retry(     func: Callable[..., Awaitable[T]],     *args: Any,     retries: int 
+
+### `swarm_artifact:Implement asyncio task queue`
+*23.08. 04:38 UTC · Quelle: builder*
+
+```python import asyncio  async def worker(name: str, queue: asyncio.Queue):     """Worker that processes items from the queue."""     while True:         try:             task = await queue.get()    
+
+### `last_swarm_goal`
+*23.08. 04:37 UTC · Quelle: system*
+
+Schwarm-Aufgaben zuverlässig abschließen
+
+### `dream:202608230437:5`
+*23.08. 04:37 UTC · Quelle: dream*
+
+Linking dream‑derived insights to swarm critique bridges offline consolidation and online skill improvement.
+
+### `dream:202608230437:4`
+*23.08. 04:37 UTC · Quelle: dream*
+
+Repeated simulation verdicts of 'revise' with moderate risk expose persistent error patterns that can be harvested as mutation seeds.
+
+### `dream:202608230437:3`
+*23.08. 04:37 UTC · Quelle: dream*
+
+Swarm runs with a builder‑heavy ratio (1 planner : 4 builder : 1 critic) converge poorly; adding more critic feedback improves revision quality.
+
+### `dream:202608230437:2`
+*23.08. 04:37 UTC · Quelle: dream*
+
+Model performance stays around 4/10 until low‑risk revise triggers evolution, which yields variants scoring up to 8/10.
+
+### `dream:202608230437:1`
+*23.08. 04:37 UTC · Quelle: dream*
+
+Latency spikes above 150 s disrupt the pipeline, showing the need for adaptive routing with fallback and alerting.
 
 ### `strategy:simulationen_konsequent_anwenden`
 *23.08. 04:21 UTC · Quelle: evolution*
