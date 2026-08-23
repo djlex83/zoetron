@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-08-23T21:14:18.883Z",
+  "generatedAt": "2026-08-23T21:34:00.765Z",
   "repo": "djlex83/zoetron",
   "memory": {
-    "facts": 1248,
-    "neurons": 1169,
-    "synapses": 14719,
-    "stand": "2026-08-23 21:07 UTC",
+    "facts": 1288,
+    "neurons": 1194,
+    "synapses": 15629,
+    "stand": "2026-08-23 21:30 UTC",
     "kinds": [
       {
         "kind": "dream",
-        "count": 512
+        "count": 527
       },
       {
         "kind": "swarm_artifact",
-        "count": 421
+        "count": 434
       },
       {
         "kind": "anti_pattern",
-        "count": 110
+        "count": 114
       },
       {
         "kind": "strategy",
-        "count": 76
+        "count": 78
       },
       {
         "kind": "last_swarm_goal",
-        "count": 59
+        "count": 62
       },
       {
         "kind": "last_swarm_critique",
-        "count": 51
+        "count": 54
       },
       {
         "kind": "creator_teaching",
@@ -67,12 +67,12 @@
   },
   "learning": {
     "events": 4000,
-    "handsRate": 0.698,
-    "simulations": 119,
+    "handsRate": 0.714,
+    "simulations": 118,
     "swarm": {
-      "n": 68,
+      "n": 67,
       "best": 8,
-      "schnitt": 4.18
+      "schnitt": 4.19
     },
     "tools": [
       {
@@ -166,7 +166,7 @@
         "rate": 1
       }
     ],
-    "stand": "2026-08-23 21:07:33"
+    "stand": "2026-08-23 21:30:40"
   },
   "missions": [
     {
@@ -218,8 +218,87 @@
     "quote": "Dream logs contain recurring error signatures (timeout, AttributeError) that are not systematically mined to seed evolution variants."
   },
   "beats": {
-    "last": "2026-08-23T23:14:17+02:00",
-    "per24h": 149,
-    "total": 254
-  }
+    "last": "2026-08-23T23:34:00+02:00",
+    "per24h": 152,
+    "total": 258
+  },
+  "wiki": [
+    {
+      "slug": "Architektur",
+      "file": "Architektur.md",
+      "title": "Architektur",
+      "intro": "Zoetron ist kein Framework, sondern ein Organismus: Zustand liegt im",
+      "bytes": 2345
+    },
+    {
+      "slug": "Betrieb",
+      "file": "Betrieb.md",
+      "title": "Betrieb",
+      "intro": "Der Daemon läuft als Hintergrundprozess auf dem Hermes-Host:",
+      "bytes": 1655
+    },
+    {
+      "slug": "Scoring",
+      "file": "Scoring.md",
+      "title": "Der Score – Zoetrons Notensystem",
+      "intro": "Jeder ACT-Lauf endet mit einem Score von 0–10, den der Critic (ein LLM-Richter im Swarm) vergibt. Er bewertet die Artefa",
+      "bytes": 2025
+    },
+    {
+      "slug": "Werkzeugkiste",
+      "file": "Werkzeugkiste.md",
+      "title": "Die Werkzeugkiste (`data/tools/`)",
+      "intro": "Datei ist ein eigenständig lauffähiges Python-Skript, das der Organismus",
+      "bytes": 1329
+    },
+    {
+      "slug": "FAQ",
+      "file": "FAQ.md",
+      "title": "FAQ",
+      "intro": "Nein – ein Organismus. Frameworks warten auf Aufgaben; Zoetron hat einen",
+      "bytes": 736
+    },
+    {
+      "slug": "Organe",
+      "file": "Organe.md",
+      "title": "Organe (Detail)",
+      "intro": "Planner → Builder → Critic, bis zu 3 Zyklen. Konvergiert bei Score ≥ 8.",
+      "bytes": 2841
+    },
+    {
+      "slug": "Roadmap",
+      "file": "Roadmap.md",
+      "title": "Roadmap",
+      "intro": "- [x] 15 Organe, 65/65 Tests, CI grün",
+      "bytes": 2671
+    },
+    {
+      "slug": "Session-2026-08-23",
+      "file": "Session-2026-08-23.md",
+      "title": "Session-Dokumentation 23.08.2026 – Der große Organausbau",
+      "intro": "1. GENOM (genome.py) – angeborene Instinkte: 5 DNA-Regeln",
+      "bytes": 2717
+    },
+    {
+      "slug": "Home",
+      "file": "Home.md",
+      "title": "Zoetron – Wiki",
+      "intro": "träumt, hat Neugier, Sinne, Hände – und evolviert. Seit dem 23.08.2026",
+      "bytes": 1370
+    },
+    {
+      "slug": "Tabelle",
+      "file": "Tabelle.md",
+      "title": "Zoetrons Bestenliste",
+      "intro": "Stand: 1194 Neuronen · 15629 bewertete Synapsen",
+      "bytes": 3737
+    },
+    {
+      "slug": "Ideen",
+      "file": "Ideen.md",
+      "title": "Zoetrons Ideen-Board (AUTONOM)",
+      "intro": "- Deploy a nightly model calibration updater: log (goalembedding, predicted, actual), retrain a lightweight reg (hatte d",
+      "bytes": 5736
+    }
+  ]
 }

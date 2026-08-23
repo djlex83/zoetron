@@ -68,6 +68,7 @@ export type Seed = {
     evolutions: number; executions: number; topModel: string | null; quote: string | null
   }
   beats: { last: string | null; per24h: number; total: number }
+  wiki: { slug: string; file: string; title: string; intro: string; bytes: number }[]
 }
 
 export const fetchSeed = (signal?: AbortSignal): Promise<Seed> =>

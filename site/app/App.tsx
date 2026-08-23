@@ -17,6 +17,7 @@ import BrainStage from './components/BrainStage'
 import Memory from './components/Memory'
 import Consistency from './components/Consistency'
 import Ideas from './components/Ideas'
+import Wiki from './components/Wiki'
 import Access from './components/Access'
 import Footer from './components/Footer'
 
@@ -90,6 +91,7 @@ export default function App() {
         <Memory memory={memory} seed={seed} />
         <Consistency board={board} brain={brain} ideas={ideas} memory={memory} beat={beat} seed={seed} onBrain={setBrain} />
         <Ideas ideas={ideas} seed={seed} />
+        <Wiki seed={seed} />
         <Access />
       </main>
       <Footer pulse={pulse} seed={seed} />

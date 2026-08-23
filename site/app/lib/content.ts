@@ -9,6 +9,7 @@ export const nav: { id: string; label: L }[] = [
   { id: 'gedaechtnis', label: { de: 'Gedächtnis', en: 'Memory' } },
   { id: 'pruefung', label: { de: 'Prüfung', en: 'Check' } },
   { id: 'ideen', label: { de: 'Ideen', en: 'Ideas' } },
+  { id: 'wiki', label: { de: 'Wiki', en: 'Wiki' } },
   { id: 'zugang', label: { de: 'Zugang', en: 'Access' } },
 ]
 
@@ -87,7 +88,7 @@ export const sections = {
   gehirn: {
     label: { de: 'Live-Organ', en: 'Live organ' },
     head: { de: 'Sein Gehirn.\nJetzt gerade.', en: 'Its brain.\nRight now.' },
-    sub: { de: 'Keine Illustration, kein Video: Diese Ansicht wird bei jedem Herzschlag neu aus dem echten Gedächtnis gerendert. Ziehen dreht, Scrollen zoomt, Klick öffnet ein Neuron.', en: 'No illustration, no video: this view is re-rendered from real memory on every heartbeat. Drag to rotate, scroll to zoom, click to open a neuron.' },
+    sub: { de: 'Keine Illustration, kein Video: Diese Ansicht wird bei jedem Herzschlag neu aus dem echten Gedächtnis gezeichnet — jedes Neuron lässt sich öffnen.', en: 'No illustration, no video: this view is drawn from real memory on every heartbeat — every neuron can be opened.' },
   },
   gedaechtnis: {
     label: { de: 'Das Gedächtnis', en: 'The memory' },
@@ -98,6 +99,11 @@ export const sections = {
     label: { de: 'Ideen-Board', en: 'Ideas board' },
     head: { de: 'Ideen, die niemand\nbestellt hat.', en: 'Ideas nobody\nordered.' },
     sub: { de: 'Alles hier hat Zoetron selbst erfunden — Fähigkeiten, die es sich wünscht, Ziele, die es sich selbst setzt, Erkenntnisse aus der Traumphase.', en: 'Everything here Zoetron invented by itself — abilities it wishes for, goals it sets itself, insights from its dream phase.' },
+  },
+  wiki: {
+    label: { de: 'Das Wiki', en: 'The wiki' },
+    head: { de: 'Sein Handbuch —\nvon ihm selbst geschrieben.', en: 'Its manual —\nwritten by itself.' },
+    sub: { de: 'Architektur, Organe, Notensystem, Werkzeugkiste, Roadmap — jede Seite schreibt der Organismus selbst und spiegelt sie bei jedem Herzschlag hierher. Direkt lesbar, statt als rohe Datei.', en: 'Architecture, organs, scoring, toolbelt, roadmap — the organism writes every page itself and mirrors it here on every heartbeat. Readable right away instead of as a raw file.' },
   },
   zugang: {
     label: { de: 'Zugang', en: 'Access' },
@@ -183,15 +189,15 @@ export const footer = {
       links: [
         { label: { de: '3D-Gehirn', en: '3D brain' }, href: './brain.html' },
         { label: { de: 'Wissensgraph', en: 'Knowledge graph' }, href: './graph.html' },
-        { label: { de: 'Bestenliste', en: 'Leaderboard' }, href: './wiki/Tabelle.md' },
-        { label: { de: 'Ideen-Board', en: 'Ideas board' }, href: './wiki/Ideen.md' },
+        { label: { de: 'Bestenliste', en: 'Leaderboard' }, href: '#gehirn' },
+        { label: { de: 'Ideen-Board', en: 'Ideas board' }, href: '#ideen' },
       ],
     },
     {
       head: { de: 'Logbuch', en: 'Logbook' },
       links: [
         { label: { de: 'Repository', en: 'Repository' }, href: 'https://github.com/djlex83/zoetron' },
-        { label: { de: 'Wiki', en: 'Wiki' }, href: 'https://github.com/djlex83/zoetron/wiki' },
+        { label: { de: 'Wiki', en: 'Wiki' }, href: '#wiki' },
         { label: { de: 'Wochenreports', en: 'Weekly reports' }, href: './REPORTS/' },
         { label: { de: 'Task-Board', en: 'Task board' }, href: 'https://github.com/djlex83/zoetron/issues' },
       ],

@@ -84,7 +84,7 @@ export default function Consistency(input: {
                 : allGood
                   ? (lang === 'de' ? 'Alle vergleichbaren Quellen stimmen überein.' : 'All comparable sources agree.')
                   : (lang === 'de'
-                      ? 'Mindestens eine Quelle hängt hinterher — siehe rechts.'
+                      ? 'Mindestens eine Quelle hängt hinterher — siehe Liste.'
                       : 'At least one source is lagging — see the list.')}
             </p>
           </div>

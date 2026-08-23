@@ -59,6 +59,28 @@ try {
   }
 } catch { /* no reports yet */ }
 
+// the wiki pages the organism currently keeps (it may add more at any beat)
+let wiki = []
+try {
+  wiki = readdirSync(R('docs/wiki'))
+    .filter((f) => f.endsWith('.md'))
+    .map((file) => {
+      const text = readText(`docs/wiki/${file}`)
+      const title = text.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? file.replace(/\.md$/, '')
+      const intro = text
+        .split('\n')
+        .find((l) => l.trim() && !l.startsWith('#') && !l.startsWith('*') && !l.startsWith('|'))
+      return {
+        slug: file.replace(/\.md$/, ''),
+        file,
+        title: title.replace(/^[^\p{L}\d]+/u, '').trim(),
+        intro: (intro ?? '').replace(/[*_`]/g, '').trim().slice(0, 120),
+        bytes: text.length,
+      }
+    })
+    .sort((a, b) => a.title.localeCompare(b.title, 'de'))
+} catch { /* no wiki mirror */ }
+
 // heartbeat rhythm straight out of git history
 let beats = { last: null, per24h: 0, total: 0 }
 try {
@@ -97,6 +119,7 @@ const state = {
   firstBoot: genome.first_boot ?? null,
   report,
   beats,
+  wiki,
 }
 
 // public/state.json is generated, so it is git-ignored — which means the
@@ -106,5 +129,5 @@ mkdirSync(outDir, { recursive: true })
 writeFileSync(join(outDir, 'state.json'), JSON.stringify(state, null, 2) + '\n')
 console.log(
   `[snapshot] ${facts} Fakten · ${neurons} Neuronen · ${synapses} Synapsen · ` +
-  `${state.learning.tools.length} Werkzeuge · ${beats.per24h} Herzschläge/24h`,
+  `${state.learning.tools.length} Werkzeuge · ${beats.per24h} Herzschläge/24h · ${wiki.length} Wiki-Seiten`,
 )
