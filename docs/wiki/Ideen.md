@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five new skill proposals accumulated this cycle while earlier ones remain unimplemented, confirming proposal generation chronically outpaces the execu
+- hands-execute crashed with AttributeError 'MemoryStore.add_fact', demonstrating that callers drifted from the MemoryStore interface with no contract t
+- Both simulations returned 'go' with zero risks and zero revisions right before a score-3 failure, so the current simulation gate carries no predictive
+- The score predictor overestimated by 3 points (predicted 6 vs actual 3), showing systematic optimism that corrupts any decision gated on its output.
+- Evolution-run winner scores (9/8/8) diverged sharply from the final independent score (3), proving the evolution evaluator is inflated relative to the
 - Repeated revision loops (5 revisions, 4 applied) without early interface checks waste cycles; pre‑emptive tool/reflex matching could prevent unnecessa
 - Evolutionary variants can raise scores (up to 9) but swarm convergence fails when generated code lacks required store interfaces, showing that fitness
 - Simulation verdicts consistently over‑predict benchmark scores (predicted 5 vs actual 3), revealing a calibration gap that inflates go‑decisions.
@@ -51,11 +56,6 @@
 - Atomic application of changes followed by re‑verification eliminates residual risk accumulation.
 - Convergence gating (minimum cycles or score threshold) reduces premature acceptance of suboptimal solutions.
 - Early validation of inputs/outputs (e.g., interface contracts, minimum sample size) prevents unstable learning and score corruption.
-- Updating the score predictor with few (predicted, actual) pairs produces noisy scores; a minimum sample size stabilizes learning.
-- Variable model latency (12‑23 s) without adaptive timeouts caused stalled steps; a timeout with fallback improves robustness.
-- Applying simulation revisions non‑atomically left residual risks, indicating the need for all‑or‑nothing revision application.
-- Runtime AttributeError on MemoryStore.add_fact reveals a missing interface contract that caused failures undetected until execution.
-- Insufficient swarm cycles and limited critic participation prevented convergence, yielding a low score despite an evolution winner.
 
 ---
 

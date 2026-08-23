@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-23 19:03:28",
+ "stand": "2026-08-23 19:07:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -67,10 +67,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "synapsen-semantisch-vernetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.684,
- "simulationen_angewandt": 132,
+ "haende_quote": 0.687,
+ "simulationen_angewandt": 131,
  "swarm_scores": {
   "n": 76,
   "best": 8.0,
@@ -78,8 +84,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 75,
-   "schnitt": 4.13
+   "n": 74,
+   "schnitt": 4.14
   },
   "bau": {
    "n": 1,
