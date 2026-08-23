@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**652 Fakten** · Stand 2026-08-23 09:33 UTC · aktualisiert bei jedem Herzschlag
+**665 Fakten** · Stand 2026-08-23 09:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 300
-- **dream:** 175
-- **anti_pattern:** 62
-- **strategy:** 52
-- **last_swarm_goal:** 23
-- **last_swarm_critique:** 22
+- **swarm_artifact:** 303
+- **dream:** 180
+- **anti_pattern:** 64
+- **strategy:** 53
+- **last_swarm_goal:** 24
+- **last_swarm_critique:** 23
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modellkalibrierung_verbessern`
+*23.08. 09:54 UTC · Quelle: evolution*
+
+Proper sklearn Pipeline with Nested CV and Shared Utilities - Variant 0 provides the most comprehensive solution by properly fixing data leakage through nested CV and unfitted estimators, while also addressing code duplication via shared util
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellkalibrierung verbe:2`
+*23.08. 09:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Distribution-Free Calibration via Conformal Prediction and Venn-Abers - Abandon parametric calibration. Use Inductive Conformal Prediction (ICP) with calibration set to produce prediction sets with guaranteed marginal coverag
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellkalibrierung verbe:1`
+*23.08. 09:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Post-hoc Temperature/Platt Scaling on Dedicated Calibration Holdout - Split data three-way: train (60%), calibration (20%), test (20%). Train base model ONLY on train set. Fit temperature scaling (single scalar) or Platt scal
+
+### `last_swarm_critique`
+*23.08. 09:52 UTC · Quelle: critic*
+
+score=4; issues=Critical data leakage risk: base_model is fitted on full X_train before passing to CalibratedClassifierCV, causing calibrators to train on predictions from a model that has already seen the calibration data (sklearn expects unfitted estimator);
+
+### `swarm_artifact:Apply Isotonic Regression for Calibration`
+*23.08. 09:52 UTC · Quelle: builder*
+
+  # Isotonic Regression für Kalibrierung  ## Beschreibung Das Skript implementiert die **Isotonic Regression** (isotonische Regression) zur nicht-parametrischen Kalibrierung von Klassifikationsmodelle
+
+### `swarm_artifact:Apply Platt Scaling for Calibration`
+*23.08. 09:51 UTC · Quelle: builder*
+
+  ```markdown # Platt Scaling für Kalibrierung  ## Beschreibung Das Skript implementiert die **Platt Scaling** (auch bekannt als sigmoid calibration) zur Verbesserung der Modellkalibrierung. Zuerst wi
+
+### `swarm_artifact:Baseline Calibration Assessment`
+*23.08. 09:51 UTC · Quelle: builder*
+
+  ```markdown # Baseline Calibration Assessment  ## Beschreibung Das Skript erzeugt einen synthetischen Binärklassifikations‑Datensatz, trainiert ein logistisches Regressionsmodell und berechnet den *
+
+### `last_swarm_goal`
+*23.08. 09:49 UTC · Quelle: system*
+
+Modellkalibrierung verbessern
+
+### `dream:202608230948:5`
+*23.08. 09:48 UTC · Quelle: dream*
+
+Missing interface contract validation risks AttributeError failures that can halt execution mid‑swarm.
+
+### `dream:202608230948:4`
+*23.08. 09:48 UTC · Quelle: dream*
+
+Repeated identical sections in evolution attempts show insufficient variant diversity, wasting compute cycles.
+
+### `dream:202608230948:3`
+*23.08. 09:48 UTC · Quelle: dream*
+
+Calibration revealed large prediction errors (abs_error = 3), indicating over‑optimistic skill impact estimates.
+
+### `dream:202608230948:2`
+*23.08. 09:48 UTC · Quelle: dream*
+
+Role imbalance (1 planner, 5 builders, 1 critic) limited critical feedback and planning, yielding a low score and non‑convergence.
+
+### `dream:202608230948:1`
+*23.08. 09:48 UTC · Quelle: dream*
+
+High latency variance and occasional model overloads cause timeouts that degrade swarm performance.
 
 ### `strategy:vorschläge_für_fähigkeiten_umsetzen`
 *23.08. 09:32 UTC · Quelle: evolution*
