@@ -28,5 +28,17 @@
   "quelle": "erschaffer",
   "_done": true,
   "taught_at": "2026-08-23T00:27:42"
+ },
+ {
+  "wissen": "Projektziel ist Superintelligenz. Die Memory-API (Memory-as-a-Service) bauen wir SPAETER - erst muss das Gedächtnis größer und intelligenter werden (GNN/embedding-basierte Ähnlichkeit als Nachfolger von semantic.py).",
+  "quelle": "erschaffer",
+  "_done": true,
+  "taught_at": "2026-08-23T00:59:57"
+ },
+ {
+  "wissen": "Der Chat mit dem Erschaffer ist nur Arbeitsgedächtnis (RAM). Alles Zeitlose aus unseren Sessions muss über den LEHRER-Kanal in dieses Gedächtnis übergehen, damit künftige Sessions ohne erneute Erklärung weiterarbeiten können.",
+  "quelle": "erschaffer",
+  "_done": true,
+  "taught_at": "2026-08-23T00:59:57"
  }
 ]
