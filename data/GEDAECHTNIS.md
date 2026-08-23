@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**959 Fakten** · Stand 2026-08-23 16:31 UTC · aktualisiert bei jedem Herzschlag
+**964 Fakten** · Stand 2026-08-23 16:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 373
-- **dream:** 317
+- **dream:** 322
 - **anti_pattern:** 96
 - **strategy:** 69
 - **last_swarm_goal:** 45
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231639:5`
+*23.08. 16:39 UTC · Quelle: dream*
+
+Five skill proposals were queued in one dream cycle while a drive goal explicitly demands more proposal usage, showing generation outpaces consumption and widens the intention-action gap.
+
+### `dream:202608231639:4`
+*23.08. 16:39 UTC · Quelle: dream*
+
+Both simulation runs returned verdict 'revise' (100% rate, 8 total revisions), indicating the simulation gate is non-discriminative and adds revision cost without ever approving.
+
+### `dream:202608231639:3`
+*23.08. 16:39 UTC · Quelle: dream*
+
+A runtime AttributeError ('MemoryStore' object has no attribute 'add_fact') proves cross-module API drift is only caught at execution time, crashing the hands pipeline in 0.03s.
+
+### `dream:202608231639:2`
+*23.08. 16:39 UTC · Quelle: dream*
+
+The same model showed 47x latency variance (2.8s-131.9s), making single-call latency useless for routing decisions and demanding timeouts plus fallback providers.
+
+### `dream:202608231639:1`
+*23.08. 16:39 UTC · Quelle: dream*
+
+Internal evolution scores (8-9) diverged sharply from the realized swarm score (5), revealing systematic evaluator inflation that masks a progress plateau at 5/10.
 
 ### `swarm_artifact:Error-Pattern-Datenbank aufbauen (SQLite)`
 *23.08. 16:28 UTC · Quelle: builder*
