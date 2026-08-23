@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**987 Fakten** · Stand 2026-08-23 17:25 UTC · aktualisiert bei jedem Herzschlag
+**1002 Fakten** · Stand 2026-08-23 17:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 382
-- **dream:** 332
-- **anti_pattern:** 96
-- **strategy:** 69
-- **last_swarm_goal:** 47
-- **last_swarm_critique:** 43
-- **creator_teaching:** 7
+- **swarm_artifact:** 386
+- **dream:** 337
+- **anti_pattern:** 98
+- **strategy:** 70
+- **last_swarm_goal:** 48
+- **last_swarm_critique:** 44
+- **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
 - **best_swarm_score:** 1
@@ -18,6 +18,83 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modellfehler_senken`
+*23.08. 17:36 UTC · Quelle: evolution*
+
+Regularized linear modeling with cross‑validation - Variant 1 introduces regularized linear modeling with cross‑validation, which automatically handles the intercept, avoids numerical warnings, tunes strength to prevent over‑fit, an
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler senken
+Crit:2`
+*23.08. 17:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Non‑linear ensemble learning - Replace the linear regression with a gradient‑boosted decision tree ensemble (e.g., XGBoost, LightGBM, or CatBoost). These algorithms inherently capture non‑linear relationships, handle missing 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler senken
+Crit:0`
+*23.08. 17:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Data‑centric preprocessing and validation - Implement a robust preprocessing pipeline: verify file existence and array shape before loading; replace >= threshold with np.argpartition to select exact top‑5% values; explicitly 
+
+### `last_swarm_critique`
+*23.08. 17:35 UTC · Quelle: critic*
+
+score=6; issues=Snippet 1: Using >= threshold may select more than top 5% due to ties; consider > threshold or np.argpartition.; Snippet 1: No file existence or shape validation for loaded arrays.; Snippet 2: Linear regression omits intercept term; add column 
+
+### `swarm_artifact:Simple ensemble averaging`
+*23.08. 17:35 UTC · Quelle: builder*
+
+```python import numpy as np import os  # Number of models in the ensemble NUM_MODELS = 2  # Helper to load predictions saved as .npy files from a checkpoints directory def load_predictions(model_id: 
+
+### `swarm_artifact:Learning rate reduction on plateau`
+*23.08. 17:35 UTC · Quelle: builder*
+
+```python lr = 0.1 patience = 0 best_loss = 1e9 losses = [0.9, 0.85, 0.85, 0.85, 0.8, 0.8, 0.8]  # Sequence designed to trigger 2 reductions  for loss in losses:     if loss < best_loss - 1e-4:       
+
+### `swarm_artifact:Apply Gaussian noise augmentation and evaluate`
+*23.08. 17:33 UTC · Quelle: builder*
+
+```python import numpy as np import os  # Set random seed for reproducibility np.random.seed(42)  # Define paths for actual training and validation data DATA_DIR = 'data' X_TRAIN_PATH = os.path.join(D
+
+### `swarm_artifact:Identify high-error validation samples`
+*23.08. 17:33 UTC · Quelle: builder*
+
+```python import numpy as np import os  # Ensure reproducibility np.random.seed(42)  # Load validation predictions and true labels from disk # Adjust paths as needed for your project structure val_pre
+
+### `last_swarm_goal`
+*23.08. 17:31 UTC · Quelle: system*
+
+Modellfehler senken
+
+### `creator_teaching:5001265445`
+*23.08. 17:31 UTC · Quelle: creator*
+
+[erschaffer] Masterplan des Erschaffers: 17 Whisper-Ziele in FESTER Reihenfolge, Phasen: Fundament -> Messen/Selbst -> Brücke -> Effizienz/Sinn -> Gehirn -> Gewichts-Lernen (LoRA) -> Nach außen. Whisper-Ziele haben Vorfahrt vor eigener Neugier; Ziel 15 (LoRA-T
+
+### `dream:202608231731:5`
+*23.08. 17:31 UTC · Quelle: dream*
+
+Evolution winners should only be accepted after a minimum number of swarm cycles or a convergence score gate; otherwise they must be recycled to prevent premature adoption.
+
+### `dream:202608231731:4`
+*23.08. 17:31 UTC · Quelle: dream*
+
+Core component interfaces (e.g., MemoryStore) need automated contract tests in CI to catch missing or breaking methods early.
+
+### `dream:202608231731:3`
+*23.08. 17:31 UTC · Quelle: dream*
+
+Score predictor calibration should require a minimum number of recent (predicted, actual) pairs before gating to avoid unstable updates from scarce data.
+
+### `dream:202608231731:2`
+*23.08. 17:31 UTC · Quelle: dream*
+
+Simulation revisions must be applied atomically and verified by re‑simulation to ensure zero residual risk before committing changes.
+
+### `dream:202608231731:1`
+*23.08. 17:31 UTC · Quelle: dream*
+
+Model latency spikes and occasional 502 errors necessitate exponential‑backoff retry with automatic failover and logging to keep the system available.
 
 ### `last_swarm_critique`
 *23.08. 17:25 UTC · Quelle: critic*

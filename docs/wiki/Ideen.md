@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 17:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 17:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution winners should only be accepted after a minimum number of swarm cycles or a convergence score gate; otherwise they must be recycled to preve
+- Core component interfaces (e.g., MemoryStore) need automated contract tests in CI to catch missing or breaking methods early.
+- Score predictor calibration should require a minimum number of recent (predicted, actual) pairs before gating to avoid unstable updates from scarce da
+- Simulation revisions must be applied atomically and verified by re‑simulation to ensure zero residual risk before committing changes.
+- Model latency spikes and occasional 502 errors necessitate exponential‑backoff retry with automatic failover and logging to keep the system available.
 - Reflex-mode act_done returns score:null, so roughly half of executed actions produce no reward signal and cannot participate in learning or calibratio
 - The reflex tool erinnerungen-miteinander-verbinden.py succeeded (ok:true) on the exact goal class where the full swarm failed, proving the tool regist
 - The simulator issued verdict 'go' with 0 risks and 0 revisions for a task that then scored 4/10 in reality, so current simulation output is not predic
@@ -51,11 +56,6 @@
 - The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') is an interface-drift failure between the hands layer and the memory API, m
 - Score prediction is systematically optimistic (predicted 8 vs actual 4, abs_error 4), confirming that raw internal scores cannot be trusted for go/no-
 - The swarm ended unconverged (score 5, 2 cycles) because it was launched under a metabolism budget of max_iterations=2, below the ≥3 threshold later pr
-- Five skill proposals were queued in one dream cycle while a drive goal explicitly demands more proposal usage, showing generation outpaces consumption
-- Both simulation runs returned verdict 'revise' (100% rate, 8 total revisions), indicating the simulation gate is non-discriminative and adds revision 
-- A runtime AttributeError ('MemoryStore' object has no attribute 'add_fact') proves cross-module API drift is only caught at execution time, crashing t
-- The same model showed 47x latency variance (2.8s-131.9s), making single-call latency useless for routing decisions and demanding timeouts plus fallbac
-- Internal evolution scores (8-9) diverged sharply from the realized swarm score (5), revealing systematic evaluator inflation that masks a progress pla
 
 ---
 
