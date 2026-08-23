@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1331 Fakten** · Stand 2026-08-23 21:51 UTC · aktualisiert bei jedem Herzschlag
+**1343 Fakten** · Stand 2026-08-23 22:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 552
+- **dream:** 562
 - **swarm_artifact:** 442
 - **anti_pattern:** 118
 - **strategy:** 80
-- **last_swarm_goal:** 64
+- **last_swarm_goal:** 66
 - **last_swarm_critique:** 56
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*23.08. 21:58 UTC · Quelle: system*
+
+Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
+
+### `dream:202608232157:5`
+*23.08. 21:57 UTC · Quelle: dream*
+
+The reflex path resolved its goal in one 0.02s step while the swarm burned 2 cycles without converging, showing deterministic/simple goals should be routed away from multi-agent swarms.
+
+### `dream:202608232157:4`
+*23.08. 21:57 UTC · Quelle: dream*
+
+Consecutive prune runs removed 0 facts and 0 events, meaning the prune criteria no longer match live memory content and retention policy needs recalibration before memory grows unbounded.
+
+### `dream:202608232157:3`
+*23.08. 21:57 UTC · Quelle: dream*
+
+Model latency varied 3× across calls (7.2s–23.1s), so any fixed timeout either stalls the pipeline or truncates valid work; timeouts must adapt to a rolling median.
+
+### `dream:202608232157:2`
+*23.08. 21:57 UTC · Quelle: dream*
+
+The builder shipped a tool with no input surface (no parameters, argv, stdin, or file), which was rejected — every generated artifact must declare and be validated against an input/output contract before handoff.
+
+### `dream:202608232157:1`
+*23.08. 21:57 UTC · Quelle: dream*
+
+A perfect swarm score (5/5) still failed to converge after 2 cycles, proving score is not evidence of correctness and success-stamping must be gated by explicit test passage.
+
+### `last_swarm_goal`
+*23.08. 21:53 UTC · Quelle: system*
+
+Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
+
+### `dream:202608232153:5`
+*23.08. 21:53 UTC · Quelle: dream*
+
+This exact goal was self-requested 4 times because prior attempts never landed a permanent fix, making repeat-goal frequency a reliable signal of unresolved infrastructure debt.
+
+### `dream:202608232153:4`
+*23.08. 21:53 UTC · Quelle: dream*
+
+The first simulation passed with verdict 'go'/0 risks while a later simulation flagged 5 risks needing 5 revisions, proving early simulations miss interface-level defects like missing I/O contracts.
+
+### `dream:202608232153:3`
+*23.08. 21:53 UTC · Quelle: dream*
+
+Effort calibration systematically underestimated this task (predicted 3, actual 5, abs_error 2), so predictions need a rolling correction factor derived from recent abs_error history.
+
+### `dream:202608232153:2`
+*23.08. 21:53 UTC · Quelle: dream*
+
+The built tool 'modell-gesundheitsregister-mit-sicherung' was rejected because it accepted no input at all (no parameters/argv/stdin/file), showing builders can ship non-invokable artifacts unless an executable smoke test gates completion.
+
+### `dream:202608232153:1`
+*23.08. 21:53 UTC · Quelle: dream*
+
+Free-tier OpenRouter model latency is wildly unstable (same model: 1.7s to 98.0s, ~60x spread), so pipelines must gate on measured timeouts and fallbacks, never assumed latency.
 
 ### `dream:202608232151:5`
 *23.08. 21:51 UTC · Quelle: dream*
