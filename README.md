@@ -22,22 +22,26 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 
 | Organ | Nature analog | File | What it does |
 |---|---|---|---|
-| 💓 HEART | heartbeat | `heartbeat_daemon.sh` | every **20 min**: REFLEX → PRUNE → DREAM → DRIVE → ACT (+HANDS) → GRAPH → report |
+| 💓 HEART | heartbeat | `heartbeat_daemon.sh` | every **15 min** (~96/day): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HANDS) → TELEGRAM proof → GRAPH+3D-BRAIN → RETRO → WILL → GENOME → git/wiki sync |
+| 🧬 GENOME | innate DNA | `genome.py` | **5 instinct rules** (`data/genome.json`) injected into *every* LLM prompt — protect memory, creator first, self-preservation watchdog, honesty, learn from every failure |
 | 🔥 DRIVE | curiosity/drive | `drive.py` | generates **its own goals** from memory gaps — in plain German, with a human-readable "why" |
 | 💭 DREAM | sleep/replay | `dream.py` | distills experiences into lasting insights + skill proposals |
 | 🪞 METACOG | self-awareness | `metacog.py` | predicts its own scores, measures calibration |
 | 🌍 SIMULATE | world model | `simulate.py` | dry-runs plans before acting on them |
 | 👁 SENSES | eyes/ears | `senses.py` | watches HN frontier + web search; fresh signals feed DRIVE |
+| 🔬 RESEARCHER | scout | swarm role 4 | fresh web facts before planning (Phase 2 of ROLES) |
+| 🕸 SEMANTIC MEMORY | meaning cortex | `semantic.py` | TF-IDF + synonym fields + **cross-domain bridging**: finds related knowledge *by meaning*, not wording — injected into every plan |
 | ✋ HANDS | motor system | `hands.py` | executes artifact code in a sandbox; **successes become reusable tools** (`data/tools/`) |
 | 🧬 EVOLUTION | reproduction | `evolution.py` | N solution variants → critic picks the fittest; winners are inherited, **losers become forbidden anti-patterns** (never repeated) |
 | 🩸 METABOLISM | stress axis | `metabolism.py` | rate limits & timeouts raise stress → smaller plans; cortisol decay |
 | ✂️ PRUNE | apoptosis | `prune.py` | archives stale memories, keeps recalled facts, insights are immortal |
-| 🧬 AUTOROUTER | immune system | `router.py` | only free models WITH tool support; failover + 1h blacklist |
-| 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10); demands runnable code, not prose |
-| 🕸 GRAPH | associative cortex | `graph.py` | real knowledge graph over all memory (**368 nodes / 245 edges**), duplicate detection, similarity neighborhoods |
+| 🎯 WILL | prefrontal cortex | `will.py` | long-term **missions** with measurable targets survive across cycles; they outrank short-term curiosity (whisper still wins) |
+| 🪞 RETRO | conscience | `retro.py` | reviews its own cycles after every heartbeat: honest findings become `retro_lesson:` facts that feed the next planner prompt |
+| 🕸 GRAPH+BRAIN | associative cortex | `graph.py`, `graph_view.py`, `brain_view.py` | live knowledge graph (2D physics view + **3D brain** with hemispheres & synapse pulses), duplicates consolidated automatically |
 | ⚡ REFLEX PATH | spinal cord | ACT-first logic | checks the toolbelt **before** the LLM thinks — token-free runs for known work |
+| 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10); demands runnable code, not prose |
 | 💬 WHISPER | human voice | `data/fluester_goals.json` | human priority goals jump the queue (logged as `drive_whisper`) |
-| 🧠 Memory | hippocampus | `memory.py` | JSONL facts + event log + keyword recall |
+| 🧠 Memory | hippocampus | `memory.py` | JSONL facts + event log + keyword recall; auto-deduplicated |
 
 ## The Autonomous Loop
 

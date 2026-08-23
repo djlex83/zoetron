@@ -1,0 +1,21 @@
+{
+  "missions": [
+    {
+      "id": "mission_semantic_memory",
+      "title": "Ein Gedächtnis aufbauen, das Bedeutung versteht",
+      "why": "Wort-Vergleich reicht nicht - Zoetron soll verwandte Ideen finden, auch wenn sie anders formuliert sind.",
+      "created": "2026-08-23",
+      "target_metric": "semantic_organ=aktiv",
+      "done": true,
+      "fulfilled_at": "2026-08-23T00:14:13"
+    },
+    {
+      "id": "mission_score8",
+      "title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen",
+      "why": "Der Critic ist streng - ein echter Erfolg beweist, dass Lernen und Werkzeuge zusammenwirken.",
+      "created": "2026-08-23",
+      "target_metric": "best_swarm_score>=8",
+      "done": false
+    }
+  ]
+}

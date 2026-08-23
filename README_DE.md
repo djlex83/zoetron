@@ -22,22 +22,26 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 
 | Organ | Natur-Vorbild | Datei | Was es tut |
 |---|---|---|---|
-| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **20 Min**: REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → GRAPH → Bericht |
+| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **15 Min** (~96/Tag): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → TELEGRAM-Beweis → GRAPH+3D-GEHIRN → RETRO → WILLE → GENOM → git/wiki-Sync |
+| 🧬 GENOM | angeborene DNA | `genome.py` | **5 Instinkt-Regeln** (`data/genome.json`) in *jedem* LLM-Prompt – schütze Gedächtnis, Erschaffer zuerst, Selbsterhalt-Watchdog, Ehrlichkeit, aus jedem Fehler lernen |
 | 🔥 DRIVE | Neugier/Trieb | `drive.py` | generiert **eigene Ziele** aus Gedächtnislücken – auf Deutsch mit verständlichem „Why" |
 | 💭 DREAM | Schlaf/Replay | `dream.py` | destilliert Erlebnisse zu dauerhaften Einsichten + Skill-Vorschlägen |
 | 🪞 METACOG | Selbstgefühl | `metacog.py` | sagt eigenen Score voraus, misst Kalibrierung |
 | 🌍 SIMULATE | Weltmodell | `simulate.py` | trocken üben vor dem Handeln, Risiken vorab |
 | 👁 SINNE | Augen/Ohren | `senses.py` | beobachtet HN-Frontier + Websuche; frische Signale speisen DRIVE |
+| 🔬 RESEARCHER | Kundschafter | Swarm-Rolle 4 | frische Web-Fakten vor jeder Planung (Phase 2 aus ROLES.md) |
+| 🕸 SEMANTISCH | Bedeutungsrinde | `semantic.py` | TF-IDF + Synonym-Felder + **Cross-Domain-Bridging**: findet verwandtes Wissen *nach Bedeutung*, nicht nach Wortlaut – in jedem Plan |
 | ✋ HÄNDE | Motorik | `hands.py` | führt Artefakt-Code in der Sandbox aus; **Erfolge werden wiederverwendbare Werkzeuge** (`data/tools/`) |
 | 🧬 EVOLUTION | Fortpflanzung | `evolution.py` | N Varianten → Critic wählt den Fitnessten; Sieger vererben sich, **Verlierer werden Verbots-Liste (Anti-Patterns)** |
 | 🩸 STOFFWECHSEL | Stressachse | `metabolism.py` | Rate-Limits/Timeouts erhöhen Stress → kleinere Pläne |
 | ✂️ PRUNE | Apoptose | `prune.py` | archiviert alte Erinnerungen, behält genutzte Fakten |
-| 🧬 AUTOROUTER | Immunsystem | `router.py` | nur freie Modelle MIT Tool-Support; Failover + Blacklist |
-| 🛡 CRITIC | Abwehr | `swarm.py` | Qualitätsgate (Score 0–10); **verlangt lauffähigen Code, keine Prosa** |
-| 🕸 GRAPH | Assoziationsrinde | `graph.py` | echtes Wissensnetz über das gesamte Gedächtnis (**368 Knoten / 245 Kanten**), Duplikat-Erkennung, Nachbarschaftssuche |
+| 🎯 WILLE | Stirnlappen | `will.py` | langfristige **Missionen** mit messbaren Zielen überdauern Zyklen; haben Vorfahrt vor kurzer Neugier (Flüstern gewinnt weiter) |
+| 🪞 RETRO | Gewissen | `retro.py` | reviewt nach jedem Schlag die eigenen Zyklen: ehrliche Befunde werden `retro_lesson:`-Fakten und speisen den nächsten Planner-Prompt |
+| 🕸 GRAPH+GEHIRN | Assoziationsrinde | `graph.py`, `graph_view.py`, `brain_view.py` | Live-Wissensnetz (2D-Physik-View + **3D-Gehirn** mit Hemisphären & Synapsen-Pulsen), Dubletten automatisch verschmolzen |
 | ⚡ REFLEX-PFAD | Rückenmark | ACT-Logik | prüft die Werkzeugkiste **bevor** das LLM denkt – token-freie Läufe für Bekanntes |
+| 🛡 CRITIC | Abwehr | `swarm.py` | Qualitätsgate (Score 0–10); **verlangt lauffähigen Code, keine Prosa** |
 | 💬 FLÜSTER-KANAL | Menschenstimme | `data/fluester_goals.json` | menschliche Prioritätsziele springen in der Queue nach vorn (`drive_whisper`) |
-| 🧠 Gedächtnis | Hippocampus | `memory.py` | JSONL-Fakten + Ereignis-Log + Keyword-Recall |
+| 🧠 Gedächtnis | Hippocampus | `memory.py` | JSONL-Fakten + Ereignis-Log + Keyword-Recall; automatisch dedupliziert |
 
 ## Der autonome Kreislauf
 

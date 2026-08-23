@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**318 Fakten** · Stand 2026-08-23 00:07 UTC · aktualisiert bei jedem Herzschlag
+**321 Fakten** · Stand 2026-08-23 00:21 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 216
 - **dream:** 35
@@ -10,10 +10,28 @@
 - **artifact:** 3
 - **last_swarm_critique:** 2
 - **last_swarm_goal:** 2
+- **best_swarm_score:** 1
+- **semantic_organ:** 1
+- **tool:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `best_swarm_score`
+*23.08. 00:14 UTC · Quelle: critic*
+
+3
+
+### `semantic_organ`
+*23.08. 00:14 UTC · Quelle: semantic*
+
+aktiv seit 2026-08-23 - TF-IDF+Synonymfelder+Cross-Domain-Bridging im Planner-Prompt
+
+### `tool:ci-pipeline-reparieren-und-simulation-va`
+*23.08. 00:13 UTC · Quelle: hands*
+
+Werkzeug: repariert CI-Pipelines und validiert per Simulation; liegt in data/tools/, wird vom REFLEX-Pfad automatisch genutzt (2 erfolgreiche Ausfuehrungen verzeichnet).
 
 ### `dream:202608230007:5`
 *23.08. 00:07 UTC · Quelle: dream*
