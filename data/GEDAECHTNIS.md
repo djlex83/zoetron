@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1103 Fakten** · Stand 2026-08-23 19:07 UTC · aktualisiert bei jedem Herzschlag
+**1118 Fakten** · Stand 2026-08-23 19:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 413
-- **dream:** 387
-- **anti_pattern:** 106
-- **strategy:** 74
-- **last_swarm_goal:** 54
+- **swarm_artifact:** 414
+- **dream:** 397
+- **anti_pattern:** 108
+- **strategy:** 75
+- **last_swarm_goal:** 55
 - **last_swarm_critique:** 50
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231930:5`
+*23.08. 19:30 UTC · Quelle: dream*
+
+Prune runs consistently report 0 facts and 0 events pruned, indicating the pruning criteria never match live data and memory will grow unboundedly.
+
+### `dream:202608231930:4`
+*23.08. 19:30 UTC · Quelle: dream*
+
+All three self-selected drive goals were introspective (dream-linking, skill review, error reduction), confirming the navel-gazing loop persists until fixed structurally via quota rather than by awareness.
+
+### `dream:202608231930:3`
+*23.08. 19:30 UTC · Quelle: dream*
+
+The simulation flagged 5 revisions but only 4 were applied, demonstrating that non-atomic partial application leaves silent residual risk while the system proceeds as if validated.
+
+### `dream:202608231930:2`
+*23.08. 19:30 UTC · Quelle: dream*
+
+Model latency on nvidia/nemotron-3-super-120b-a12b:free ranged 3.3s–123.9s (a 37x spread), meaning single-model routing without a timeout/failover exposes every cycle to multi-minute stalls.
+
+### `dream:202608231930:1`
+*23.08. 19:30 UTC · Quelle: dream*
+
+Across two dream cycles ~10 skill proposals accumulated with zero evidence of implementation, revealing that proposal generation has no adoption path and dies as noise.
+
+### `swarm_artifact:Best-of-N Kern-Engine mit einheitlichem Datenmodell`
+*23.08. 19:26 UTC · Quelle: builder*
+
+# Artefakt: Best-of-N Kern-Engine mit einheitlichem Datenmodell  **Ziel:** Test-Time-Compute über die bewährte Strategie *zentrales Modell + Argmax-Selektion* — N diverse Kandidaten erzeugen, per binä
+
+### `last_swarm_goal`
+*23.08. 19:13 UTC · Quelle: system*
+
+Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
+
+### `dream:202608231913:5`
+*23.08. 19:13 UTC · Quelle: dream*
+
+The fact-yield whisper correctly identifies that rate limits make additional LLM calls the wrong lever; yield must come from richer structured output per call (batched DREAM/RETRO returns), not call volume.
+
+### `dream:202608231913:4`
+*23.08. 19:13 UTC · Quelle: dream*
+
+Drive goals with signal=failure ('Reflexe häufiger einsetzen', 'Fehler im Denken reduzieren') persist across cycles, indicating recurring unresolved failure classes rather than one-off incidents.
+
+### `dream:202608231913:3`
+*23.08. 19:13 UTC · Quelle: dream*
+
+Every prune_run reports facts_pruned=0 and events_pruned=0, meaning pruning eligibility logic is effectively inert and memory will grow unboundedly.
+
+### `dream:202608231913:2`
+*23.08. 19:13 UTC · Quelle: dream*
+
+Free-tier model latency varies 3x within minutes (9.4s to 29.4s on nemotron-3-super), so any fixed timeout will either stall the loop or kill healthy calls; timeouts must be derived from per-model observed medians.
+
+### `dream:202608231913:1`
+*23.08. 19:13 UTC · Quelle: dream*
+
+Skill proposals repeat verbatim across consecutive dream cycles (pre-flight validator, N=10 sample gate, convergence gate, atomic revisions all appeared twice) because no downstream step consumes them, confirming a generation-to-implementation gap.
+
+### `strategy:embedding_recall_statt_reinem_wortvergleich`
+*23.08. 19:07 UTC · Quelle: evolution*
+
+Repraesentationswechsel: dichte Satz-Embeddings mit Cosine Similarity statt Token-Overlap - Variante 1 greift das Ziel direkt an: Sie ersetzt den reinen Wortvergleich vollstaendig durch dichte Satz-Embeddings mit Cosine Similarity und loest damit den dokumenti
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Embedding-Recall statt r:2`
+*23.08. 19:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Adversariales Minimal-Paar-Design: lexikalische Ueberlappung kontrolliert konsta - Konstruiere den Evaluationsdatensatz per Konstruktion so, dass jeder Distraktor genau die Stoer-Token mit der Query teilt, die zum Fehlurteil 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Embedding-Recall statt r:0`
+*23.08. 19:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Statistisches Benchmark-Protokoll: n=1 durch Multi-Query-Evaluation mit Signifik - Baue eine Query-Sammlung mit mindestens 50 Queries (Paraphrasen plus Negativbeispiele) und bekannter Ground-Truth-Relevanz je Dokument. Evalui
 
 ### `dream:202608231905:5`
 *23.08. 19:05 UTC · Quelle: dream*

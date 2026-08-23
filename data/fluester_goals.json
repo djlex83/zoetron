@@ -75,13 +75,13 @@
   "title": "Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)",
   "why": "So kauft man heute real mehr Intelligenz: mehr Denkzeit pro Aufgabe statt größeres Modell (Test-Time-Compute = Rechenleistung zur Laufzeit erhöhen). Für Ziele mit automatischem Test erzeugt der Swarm 3 Lösungskandidaten parallel über verschiedene Modelle; die Tests wählen den Sieger, Verlierer werden Anti-Patterns. Fertig wenn: auf mindestens 10 Benchmark-Code-Aufgaben die Best-of-3-Erfolgsquote nachweisbar über der Einzelversuch-Quote liegt und beide Quoten im Report stehen.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren",
   "why": "Die Intelligenz-Obergrenze des Organismus ist das beste erreichbare Modell - also muss er automatisch klüger werden, sobald die Welt bessere Cortexe veröffentlicht. Erweitere den AutoRouter: täglicher Scan nach neuen freien tool-fähigen OpenRouter-Modellen; jeder Neuling durchläuft binnen 24 Stunden eine Mini-Version der Messlatte (8 Aufgaben); schlägt er den aktuellen Favoriten, steigt er in der Routing-Tabelle auf. Fertig wenn: ein neu erschienenes Modell nachweisbar erkannt, gebenchmarkt und einsortiert wurde - mit Logbeleg und Eintrag im Wochenreport.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)",

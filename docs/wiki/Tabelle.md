@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1021 Neuronen · 12254 bewertete Synapsen
+Stand: 1034 Neuronen · 12464 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 1021 Neuronen · 12254 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 105 | 0.24 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 105 | 0.23 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 105 | 0.23 |
-| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 105 | 0.22 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 105 | 0.22 |
-| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 105 | 0.22 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 105 | 0.22 |
-| 8 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 105 | 0.22 |
-| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 105 | 0.22 |
-| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeits-Messlatte bau“ (Note 3/1… | 105 | 0.22 |
-| 11 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 105 | 0.22 |
-| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Ergebnisvalidierung und “ (Note 5/1… | 105 | 0.22 |
-| 13 | 🚫 | 🚫 Gescheiterter Versuch für „Neue Fähigkeiten aus Vor“ (Note 5/1… | 105 | 0.22 |
-| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 105 | 0.22 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Einheitliche Plugin-Schn“ (Note 4/1… | 105 | 0.22 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 107 | 0.23 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 107 | 0.23 |
+| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 107 | 0.23 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 107 | 0.22 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 107 | 0.22 |
+| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 107 | 0.22 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 107 | 0.22 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 107 | 0.22 |
+| 9 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 107 | 0.22 |
+| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeits-Messlatte bau“ (Note 3/1… | 107 | 0.22 |
+| 11 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 107 | 0.22 |
+| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Ergebnisvalidierung und “ (Note 5/1… | 107 | 0.22 |
+| 13 | 🚫 | 🚫 Gescheiterter Versuch für „Neue Fähigkeiten aus Vor“ (Note 5/1… | 107 | 0.22 |
+| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 107 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Einheitliche Plugin-Schn“ (Note 4/1… | 107 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 
@@ -41,9 +41,9 @@ Stand: 1021 Neuronen · 12254 bewertete Synapsen
 | 7 | **0.53** | 💭 Missing 'add_fact' method in MemoryStore cause… | 💭 MemoryStore lacks required 'add_fact' method c… |
 | 8 | **0.53** | 💭 Applying revisions atomically and re‑simulatin… | 💭 Applying simulation revisions non‑atomically l… |
 | 9 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
-| 10 | **0.53** | 💭 Missing interface validation on MemoryStore ca… | 💭 Missing interface contracts such as MemoryStor… |
-| 11 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
-| 12 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
-| 13 | **0.50** | 💭 Skill proposals accumulate faster than they ar… | 💭 Skill proposals accumulate but lack automated … |
-| 14 | **0.50** | 💭 Intermittent latency spikes above 20 s indicat… | 💭 High latency spikes up to 71.9 s trigger timeo… |
-| 15 | **0.50** | 💭 Swarm convergence fails despite evolution gain… | 💭 Swarm role imbalance (4 builders : 1 critic) c… |
+| 10 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
+| 11 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
+| 12 | **0.50** | 💭 Skill proposals accumulate faster than they ar… | 💭 Skill proposals accumulate but lack automated … |
+| 13 | **0.50** | 💭 Intermittent latency spikes above 20 s indicat… | 💭 High latency spikes up to 71.9 s trigger timeo… |
+| 14 | **0.50** | 💭 Swarm convergence fails despite evolution gain… | 💭 Swarm role imbalance (4 builders : 1 critic) c… |
+| 15 | **0.50** | 💭 Swarm convergence fails despite evolution gain… | 💭 Insufficient swarm cycles and limited critic p… |
