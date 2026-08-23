@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**426 Fakten** · Stand 2026-08-23 03:02 UTC · aktualisiert bei jedem Herzschlag
+**440 Fakten** · Stand 2026-08-23 03:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 237
-- **dream:** 80
-- **strategy:** 39
-- **anti_pattern:** 36
-- **last_swarm_critique:** 8
-- **last_swarm_goal:** 8
+- **swarm_artifact:** 241
+- **dream:** 85
+- **strategy:** 40
+- **anti_pattern:** 38
+- **last_swarm_critique:** 9
+- **last_swarm_goal:** 9
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:schwärme_zuverlässig_zum_abschluss_bringen`
+*23.08. 03:20 UTC · Quelle: evolution*
+
+State‑machine with explicit event hooks - Variant 0 provides a clean, event-driven state machine that directly fixes the queue‑empty timing and heartbeat loss issues while encapsulating archival logic in a dedicated state.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Schwärme zuverlässig zum:2`
+*23.08. 03:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): External watchdog service - Decouple monitoring from the swarm logic: deploy a separate Watchdog process that subscribes to a lightweight message bus (e.g., Redis pub/sub) for queue change events and heartbeat pings. The watc
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Schwärme zuverlässig zum:1`
+*23.08. 03:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Sliding‑window timestamp buffer - Maintain a lock‑free deque of timestamps for every queue activity (enqueue/dequeue). The effective empty duration is now_now - deque.front() if the deque is empty, otherwise zero. Heartbeat l
+
+### `last_swarm_critique`
+*23.08. 03:20 UTC · Quelle: critic*
+
+score=4; issues=Swarm completion criteria: queue_empty_for_n_seconds does not update last_queue_change when the task queue changes, causing incorrect empty‑time measurement.; Heartbeat loss count (heartbeat_loss_count) is never updated in the provided code, ma
+
+### `swarm_artifact:Ensure JSON validation and deduplication (JSON-Validierung u`
+*23.08. 03:20 UTC · Quelle: builder*
+
+## JSON‑Validierung und Deduplizierung sicherstellen   *Goal: Ensure JSON validation and deduplication (JSON‑Validierung und Deduplizierung sicherstellen)*    ### Übersicht   - **JSON‑Validierung** pr
+
+### `swarm_artifact:Implement fault-tolerant restart (Fehlertoleranten Neustart `
+*23.08. 03:19 UTC · Quelle: builder*
+
+# Fault-Tolerant Restart Mechanism for Worker Processes  This implementation provides a robust fault-tolerant restart system that automatically detects and restarts crashed worker processes. The solut
+
+### `swarm_artifact:Implement heartbeat monitoring (Herzschlag-Überwachung imple`
+*23.08. 03:19 UTC · Quelle: builder*
+
+```python # Heartbeat monitoring (Herzschlag-Überwachung) # ------------------------------------------------- # This module implements a reliable heartbeat monitor. # Instead of random simulation it c
+
+### `swarm_artifact:Define swarm completion criteria (Schwarm-Abschlusskriterien`
+*23.08. 03:19 UTC · Quelle: builder*
+
+# Schwarm‑Abschlusskriterien definieren    ## Übersicht   Ein Schwarm gilt als **completed** (abgeschlossen), wenn alle folgenden messbaren Bedingungen erfüllt sind:    | Kriterium | Messbarer Schwell
+
+### `last_swarm_goal`
+*23.08. 03:18 UTC · Quelle: system*
+
+Schwärme zuverlässig zum Abschluss bringen
+
+### `dream:202608230317:5`
+*23.08. 03:17 UTC · Quelle: dream*
+
+Malformed JSON in evolution pipelines causes wasted retries; a deduplication/validation stage that aborts after two attempts improves robustness.
+
+### `dream:202608230317:4`
+*23.08. 03:17 UTC · Quelle: dream*
+
+Missing planner, critic, or builder roles leads to allocation failures; a balancing controller ensures a minimal viable team before each task.
+
+### `dream:202608230317:3`
+*23.08. 03:17 UTC · Quelle: dream*
+
+Skills dormant for >3 swarm cycles correlate with missed improvements; automated promotion/demotion keeps the skill pool effective.
+
+### `dream:202608230317:2`
+*23.08. 03:17 UTC · Quelle: dream*
+
+Repeated simulation revisions (3→5) indicate insufficient early validation; using prediction error thresholds can cut rework.
+
+### `dream:202608230317:1`
+*23.08. 03:17 UTC · Quelle: dream*
+
+High latency spikes (>150 s) reveal the need for adaptive timeouts and fallback mechanisms to avoid stalled tasks.
 
 ### `strategy:schwarm_aufgaben_zu_ende_bringen`
 *23.08. 03:01 UTC · Quelle: evolution*
