@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**749 Fakten** · Stand 2026-08-23 12:04 UTC · aktualisiert bei jedem Herzschlag
+**754 Fakten** · Stand 2026-08-23 12:10 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 325
-- **dream:** 221
+- **dream:** 226
 - **anti_pattern:** 72
 - **strategy:** 57
 - **last_swarm_goal:** 29
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231209:5`
+*23.08. 12:09 UTC · Quelle: dream*
+
+Calibration drift (predicted vs. actual goal scores ~0.6 ratio) consistently skews go/no-go decisions, necessitating real-time correction factors.
+
+### `dream:202608231209:4`
+*23.08. 12:09 UTC · Quelle: dream*
+
+Swarm role imbalances (critic vs. builder ratios) emerge as a recurring failure mode, requiring dynamic quota enforcement at mission startup.
+
+### `dream:202608231209:3`
+*23.08. 12:09 UTC · Quelle: dream*
+
+Zero-prune runs across multiple cycles suggest memory growth is unbounded, risking performance degradation over time without adaptive pruning thresholds.
+
+### `dream:202608231209:2`
+*23.08. 12:09 UTC · Quelle: dream*
+
+Repeated skill proposals highlight a gap between dream-generated ideas and implementation, indicating a need for automated skill integration pipelines.
+
+### `dream:202608231209:1`
+*23.08. 12:09 UTC · Quelle: dream*
+
+Model latency spikes (26-36s) and occasional failures require proactive circuit breakers and fallback models to maintain system responsiveness and reliability.
 
 ### `dream:202608231203:5`
 *23.08. 12:03 UTC · Quelle: dream*
