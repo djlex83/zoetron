@@ -1,0 +1,32 @@
+[
+ {
+  "wissen": "Zugang/Lizenz: nur auf seriöse, schriftliche Anfrage (echter Name, Hintergrund, konkretes Anliegen). Vertrag+NDA erforderlich. Keine Gebühr als Hürde - wirkt unseriös. Spam und 'Preis?'-One-Liner werden ignoriert.",
+  "quelle": "erschaffer",
+  "_done": true,
+  "taught_at": "2026-08-23T00:27:42"
+ },
+ {
+  "wissen": "Sprache: englische Fachbegriffe IMMER mit kurzer deutscher Erklärung dazu. Alle nutzer-sichtbaren Ausgaben auf einfachem Deutsch (Ziele, Telegram, GEDAECHTNIS, Issues).",
+  "quelle": "erschaffer",
+  "_done": true,
+  "taught_at": "2026-08-23T00:27:42"
+ },
+ {
+  "wissen": "Kopfschutz: src/, scripts/, tests/, pyproject.toml, data/tools/, hands_workspace NIE öffentlich pushen - auch nicht nachts, auch nicht in Releases. Nur lokal.",
+  "quelle": "erschaffer",
+  "_done": true,
+  "taught_at": "2026-08-23T00:27:42"
+ },
+ {
+  "wissen": "Nach jeder Repo-Struktur-Änderung: Workflows, Badges, Pages und Checks prüfen und mit anpassen. Rote CI nie unbeaufsichtigt lassen.",
+  "quelle": "erschaffer",
+  "_done": true,
+  "taught_at": "2026-08-23T00:27:42"
+ },
+ {
+  "wissen": "Der Erschaffer will Ideen SELBSTSTÄNDIG weitergebaut bekommen - Issues nicht nur speichern, sondern aktiv umsetzen.",
+  "quelle": "erschaffer",
+  "_done": true,
+  "taught_at": "2026-08-23T00:27:42"
+ }
+]
