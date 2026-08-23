@@ -46,13 +46,15 @@
   "why": "Das LLM ist zustandslos - ohne mitgegebenes Selbst wacht bei jedem Aufruf ein Fremder auf. Baue selbst_kontext.py: komponiert bei jedem Beat einen kompakten Ich-Block (max. 400 Tokens) aus Genome-Regeln, aktiver Mission aus will.json, Selbstmodell-Zustand (Kalibrierung, Stress) und den 3 neuesten Retro-Lektionen. Der Block wird jedem Organ-Aufruf vorangestellt: Prompt = Ich-Block + Organ-Rolle + Aufgabe. Fertig wenn: 1) alle Organe den Block nachweisbar erhalten (Log-Beleg), 2) ein Vorher/Nachher-Vergleich über 10 Beats zeigt, dass Antworten die aktive Mission und mindestens eine Lektion referenzieren, 3) das Token-Budget eingehalten wird.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  },
  {
   "title": "Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten",
   "why": "Der Erschaffer betreibt einen zweiten Agenten (Hermes), der als Stimme und Ohr dienen soll. Baue bruecke.py mit drei Kanälen über das Dateisystem: 1) STATUS: schreibe bei jedem Beat data/hermes/status.json - kompakter Zustand (aktives Ziel, letzter Score, Benchmark-Stand, Stress, 3 neueste Lektionen), maximal 2 KB. 2) FRAGEN: wenn ein Ziel zweimal in Folge scheitert oder eine Entscheidung fehlt, schreibe eine konkrete Frage nach data/hermes/fragen.json statt still weiterzuscheitern; Antworten aus data/hermes/antworten.json werden als lehrer-Eintrag übernommen. 3) WÄCHTER: validiere data/fluester_goals.json bei jedem Beat gegen das Schema (title, why, signal, _done) und verschiebe ungültige oder verdächtige Einträge mit Begründung nach data/hermes/quarantaene.json - Whisper dürfen niemals rohen Code enthalten. Fertig wenn: alle drei Kanäle nachweisbar funktionieren (Logbeleg je Kanal) und ein kompletter Durchlauf Frage -> Antwort -> lehrer-Eintrag dokumentiert ist.",
   "signal": "gap",
-  "_done": false
+  "_done": false,
+  "_versuche": 0
  },
  {
   "title": "Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust",

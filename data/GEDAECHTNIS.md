@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1362 Fakten** · Stand 2026-08-23 22:07 UTC · aktualisiert bei jedem Herzschlag
+**1376 Fakten** · Stand 2026-08-23 22:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 572
-- **swarm_artifact:** 445
-- **anti_pattern:** 120
-- **strategy:** 81
-- **last_swarm_goal:** 68
-- **last_swarm_critique:** 57
+- **dream:** 577
+- **swarm_artifact:** 449
+- **anti_pattern:** 122
+- **strategy:** 82
+- **last_swarm_goal:** 69
+- **last_swarm_critique:** 58
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:ich_kern_injektor_bauen__ein_selbst_für_jeden_llm_`
+*23.08. 22:11 UTC · Quelle: evolution*
+
+Transparent Middleware Interception - Variant 0 (Transparent Middleware Interception) offers the best balance: it solves the injection problem universally without modifying call sites, uses battle-tested middleware pat
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Ich-Kern-Injektor bauen::2`
+*23.08. 22:11 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 4, 9]): Recursive Self-Construction Loop - Ich-Kern starts as minimal seed (name, values, blank memory). On each LLM call, a meta-prompt asks the model to *update* the kernel given the interaction transcript: `"Given this con
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Ich-Kern-Injektor bauen::1`
+*23.08. 22:11 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 7, 7]): Self-as-Executable DSL - Define the Ich-Kern as a typed, executable Python DSL (dataclasses + `__call__` protocol) that renders its own injection block. Each LLM call receives `ich_kern.render(context)` which executes
+
+### `last_swarm_critique`
+*23.08. 22:10 UTC · Quelle: critic*
+
+score=2; issues=All three files are truncated/incomplete (cut off mid-statement), making them non-functional.; models.py: EvolutionMetrics class incomplete - cuts off at 'avg_context_injection_size: float = Field(de'; injector.py: Imports IchKern and MemoryRef
+
+### `swarm_artifact:Define Hermes communication protocol and message schema`
+*23.08. 22:10 UTC · Quelle: builder*
+
+# Hermes Communication Protocol Definition  ```python """ Hermes Bridge Communication Protocol ===================================== Defines the message format, transport methods, and serialization lo
+
+### `swarm_artifact:Implement Persistence Layer for Ich-Kern`
+*23.08. 22:09 UTC · Quelle: builder*
+
+```python # src/ich_kern/persistence.py """ Persistence Layer for Ich-Kern - Atomic, Versioned, Migratable Storage.  Provides JSON file and SQLite storage adapters with atomic writes, schema versionin
+
+### `swarm_artifact:Build Ich-Kern Injector Core Logic`
+*23.08. 22:09 UTC · Quelle: builder*
+
+```python # src/ich_kern/injector.py """ Ich-Kern Injector - Constructs a persistent Self for every LLM call.  Merges identity, runtime context, active goals, and memory references into a system promp
+
+### `swarm_artifact:Define Ich-Kern Data Model with Pydantic`
+*23.08. 22:08 UTC · Quelle: builder*
+
+```python # src/ich_kern/models.py """ Ich-Kern Data Model - Persistent Self for LLM Calls.  Core data model for the persistent identity (Ich-Kern) including identity, memory references, personality t
+
+### `last_swarm_goal`
+*23.08. 22:08 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232207:5`
+*23.08. 22:07 UTC · Quelle: dream*
+
+Reflex-mode execution succeeded for the well-scoped I-core injector, confirming that concrete, single-file tasks converge reliably.
+
+### `dream:202608232207:4`
+*23.08. 22:07 UTC · Quelle: dream*
+
+Capability benchmark stalled after three automated attempts, revealing a missing arbitration mechanism for non-convergent optimization.
+
+### `dream:202608232207:3`
+*23.08. 22:07 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a validation gate, causing low adoption and a quality gap noted in drive goals.
+
+### `dream:202608232207:2`
+*23.08. 22:07 UTC · Quelle: dream*
+
+Pruning runs consistently evaluate zero candidates, indicating either misconfigured thresholds or missing candidate generation upstream.
+
+### `dream:202608232207:1`
+*23.08. 22:07 UTC · Quelle: dream*
+
+Model provider instability (502/429 errors, 11–81s latency variance) cascades into system-wide failures without automated fallback or circuit-breaking.
 
 ### `strategy:ich_kern_injektor_bauen__ein_selbst_für_jeden_llm_`
 *23.08. 22:06 UTC · Quelle: evolution*

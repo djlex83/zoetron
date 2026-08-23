@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 4×)*
-- Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
-- GitHub-Fehler beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 3×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Fähigkeitsvorschläge häufiger testen *(wieder aufgegriffen: 2×)*
 - Modellfehler schnell erkennen und beheben *(wieder aufgegriffen: 2×)*
+- GitHub-Fehler beheben *(wieder aufgegriffen: 2×)*
 - Skill-Vorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 - Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen lernen *(wieder aufgegriffen: 2×)*
+- Modellfehler reduzieren und stabiler machen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-mode execution succeeded for the well-scoped I-core injector, confirming that concrete, single-file tasks converge reliably.
+- Capability benchmark stalled after three automated attempts, revealing a missing arbitration mechanism for non-convergent optimization.
+- Skill proposals accumulate but lack a validation gate, causing low adoption and a quality gap noted in drive goals.
+- Pruning runs consistently evaluate zero candidates, indicating either misconfigured thresholds or missing candidate generation upstream.
+- Model provider instability (502/429 errors, 11–81s latency variance) cascades into system-wide failures without automated fallback or circuit-breaking
 - Swarm non-convergence despite good variant scores suggests missing cross-component validation in the benchmark suite.
 - Calibration accuracy (predicted=actual=3) validates the scoring model but doesn't guarantee capability improvement.
 - Evolution produces high-scoring variants (8–9/10) but system-level benchmark score remains low (3/10), indicating integration gaps.
@@ -51,11 +56,6 @@
 - Model latency on the identical provider swung 8.9s to 23.1s (~2.6x spread), so timeout and failover thresholds must be computed relative to a rolling 
 - act_done recorded converged=true with score=null in reflex mode, proving success is currently stamped without measured evidence; every completion must
 - Near-duplicate goals regenerate every cycle ('Modell weniger Fehler machen' vs 'Modellfehler vermeiden'; Konvergenz-Tor appears simultaneously as whis
-- The reflex path resolved its goal in one 0.02s step while the swarm burned 2 cycles without converging, showing deterministic/simple goals should be r
-- Consecutive prune runs removed 0 facts and 0 events, meaning the prune criteria no longer match live memory content and retention policy needs recalib
-- Model latency varied 3× across calls (7.2s–23.1s), so any fixed timeout either stalls the pipeline or truncates valid work; timeouts must adapt to a r
-- The builder shipped a tool with no input surface (no parameters, argv, stdin, or file), which was rejected — every generated artifact must declare and
-- A perfect swarm score (5/5) still failed to converge after 2 cycles, proving score is not evidence of correctness and success-stamping must be gated b
 
 ---
 
