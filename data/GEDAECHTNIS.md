@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**411 Fakten** · Stand 2026-08-23 02:41 UTC · aktualisiert bei jedem Herzschlag
+**426 Fakten** · Stand 2026-08-23 03:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 232
-- **dream:** 75
-- **strategy:** 38
-- **anti_pattern:** 34
-- **last_swarm_critique:** 7
-- **last_swarm_goal:** 7
+- **swarm_artifact:** 237
+- **dream:** 80
+- **strategy:** 39
+- **anti_pattern:** 36
+- **last_swarm_critique:** 8
+- **last_swarm_goal:** 8
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:schwarm_aufgaben_zu_ende_bringen`
+*23.08. 03:01 UTC · Quelle: evolution*
+
+Decoupled event‑driven orchestration - Variant 1 offers a decoupled, event‑driven architecture that eliminates length‑dependent truncation, provides built‑in retry/failover for notifications, and uses reliable messaging
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Schwarm-Aufgaben zu Ende:2`
+*23.08. 03:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Self‑healing containerized service - Package each component (updater, health writer, notifier, heartbeat) as Docker containers with built‑in healthchecks; deploy via Kubernetes CronJobs or Jobs that enforce pod disruption bud
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Schwarm-Aufgaben zu Ende:0`
+*23.08. 03:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Defensive validation & idempotency - Introduce strict schema validation for all JSON inputs (e.g., using JSON‑Schema), validate THRESHOLD as a positive numeric env var with a safe fallback, wrap health‑file writes in flock‑ba
+
+### `last_swarm_critique`
+*23.08. 03:01 UTC · Quelle: critic*
+
+score=4; issues=Nightly Calibration Updater assumes ordered, equal-length JSON lists and silently truncates mismatched lengths.; No validation of THRESHOLD environment variable (could be negative or non-numeric).; Health file written without checking directory
+
+### `swarm_artifact:Build Swarm Health Dashboard`
+*23.08. 03:01 UTC · Quelle: builder*
+
+```markdown # Swarm Health Dashboard (HTML)  Einfach gehaltenes Echtzeit‑Dashboard, das den Aggregat‑Snapshot `swarm_state.json` (atomisch geschrieben vom Monitor) alle 5 Sekunden lädt und die wichtig
+
+### `swarm_artifact:Create Task Completion Tracker`
+*23.08. 03:00 UTC · Quelle: builder*
+
+# Task Completion Tracker   *Ein persistenter Tracker zur Aufzeichnung von Task‑Start/‑Ende, Erfolg/Fehler und Verknüpfung zu Ausgabe‑Artefakten – ermöglicht einen Audit‑Trail für „Schwarm‑Aufgaben zu
+
+### `swarm_artifact:Enforce Role Quotas for Planner/Critic`
+*23.08. 03:00 UTC · Quelle: builder*
+
+# Rollen‑Quoten Durchsetzung für Planner/Critic   *Soft‑Quoten mit Karenzzeit und automatischer Neubalancierung bevor eine harte Blockierung erfolgt*    ---  ## 1. Ziel (Goal)   Stellen sicher, dass b
+
+### `swarm_artifact:Implement Swarm Heartbeat Monitoring`
+*23.08. 02:59 UTC · Quelle: builder*
+
+# Swarm Heartbeat Monitoring   *Herzschlag‑Überwachung für Shards, Planner und Critics*    ---  ## 1. Überblick (Overview)   Das Herzschlag‑System (heartbeat system) verfolgt aktive **Shards** (Daten‑
+
+### `swarm_artifact:Deploy Nightly Calibration Updater`
+*23.08. 02:59 UTC · Quelle: builder*
+
+# Deploy Nightly Calibration Updater   *Ziel: Ein nächtlicher Cron‑Job vergleicht gespeicherte Kalibrations‑Vorhersagen mit den tatsächlichen Outcomes und löst einen Alarm aus, wenn der Fehler einen S
+
+### `last_swarm_goal`
+*23.08. 02:56 UTC · Quelle: system*
+
+Schwarm-Aufgaben zu Ende bringen
+
+### `dream:202608230256:5`
+*23.08. 02:56 UTC · Quelle: dream*
+
+Swarm runs lack heartbeat monitoring and role quotas, so stalled shards and planner/critic shortages go unnoticed until the goal fails.
+
+### `dream:202608230256:4`
+*23.08. 02:56 UTC · Quelle: dream*
+
+Calibration predictions match actuals (error 0) when run, yet the nightly updater is not deployed so drift goes undetected between sessions.
+
+### `dream:202608230256:3`
+*23.08. 02:56 UTC · Quelle: dream*
+
+The evolution loop (simulate → critic → evolve) reliably lifts scores from 4 to 10, but only when code-duplication critiques are enforced as hard gates.
+
+### `dream:202608230256:2`
+*23.08. 02:56 UTC · Quelle: dream*
+
+Model latency varies 50x (3.8–203 s) without a circuit breaker, making planning unreliable and causing cascade timeouts in swarm orchestration.
+
+### `dream:202608230256:1`
+*23.08. 02:56 UTC · Quelle: dream*
+
+Missing interface validation allows runtime AttributeError crashes like MemoryStore.add_fact, which must be caught at process start and before every hand-action batch.
 
 ### `strategy:simulationen_öfter_in_echt_testen`
 *23.08. 02:40 UTC · Quelle: evolution*
