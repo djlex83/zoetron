@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**510 Fakten** · Stand 2026-08-23 05:27 UTC · aktualisiert bei jedem Herzschlag
+**525 Fakten** · Stand 2026-08-23 05:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 260
-- **dream:** 115
-- **anti_pattern:** 46
-- **strategy:** 44
-- **last_swarm_goal:** 14
-- **last_swarm_critique:** 13
+- **swarm_artifact:** 265
+- **dream:** 120
+- **anti_pattern:** 48
+- **strategy:** 45
+- **last_swarm_goal:** 15
+- **last_swarm_critique:** 14
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fähigkeitsvorschläge_erfolgreicher_machen`
+*23.08. 05:53 UTC · Quelle: evolution*
+
+Modular Pipeline with Fault Tolerance - Variant 1 provides the best combination of elegance (clear modular separation), feasibility (straightforward refactor with existing code), and impact (eliminates incomplete code an
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeitsvorschläge erf:2`
+*23.08. 05:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Probabilistic Skill Recommendation Engine - Shift from deterministic adoption metrics to a probabilistic recommendation system that learns from historical skill usage, test outcomes, and developer feedback. Collect real test 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeitsvorschläge erf:0`
+*23.08. 05:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Data-Driven Real Test Execution - Replace the random simulation in the Skill Adoption Analysis Script with a real test execution framework that pulls actual skill test results from the CI/CD pipeline or test management system
+
+### `last_swarm_critique`
+*23.08. 05:53 UTC · Quelle: critic*
+
+score=4; issues=Skill Adoption Analysis Script uses random simulation for test results instead of actual test execution, making adoption metrics unreliable for decision-making.; Report generation in Skill Adoption Analysis Script is incomplete (code cuts off m
+
+### `swarm_artifact:Add skill simulation with latency SLO enforcement`
+*23.08. 05:52 UTC · Quelle: builder*
+
+# Skill Simulation mit Latenz-SLO-Durchsetzung  ```python #!/usr/bin/env python3 """ Skill Simulation mit Latenz-SLO-Durchsetzung (Skill Simulation with Latency SLO Enforcement).  Führt Skills unter L
+
+### `swarm_artifact:Implement skill adoption tracking and feedback loop`
+*23.08. 05:51 UTC · Quelle: builder*
+
+## Persistenzschicht für Skill-Adoptions-Tracking und Feedback-Schleife  ### Übersicht Dieses Artefakt beschreibt ein System zur Verfolgung der Skill-Nutzung, deren Ergebnisse und zur automatischen Rü
+
+### `swarm_artifact:Create automated skill testing harness`
+*23.08. 05:50 UTC · Quelle: builder*
+
+# Automated Skill Testing Harness  ```python #!/usr/bin/env python3 """ Automated Skill Testing Harness.  Executes skill suggestions against sample scenarios, measures latency, and records pass/fail w
+
+### `swarm_artifact:Build pre-flight validation gate for skill proposals`
+*23.08. 05:48 UTC · Quelle: builder*
+
+# Pre-Flight Validation Gate for Skill Proposals  ```python #!/usr/bin/env python3 """ Pre-Flight Validation Gate für Skill-Vorschläge (Skill Proposals).  Prüft Vollständigkeit, Testbarkeit und Abhäng
+
+### `swarm_artifact:Analyze current skill suggestions and adoption metrics`
+*23.08. 05:46 UTC · Quelle: builder*
+
+# Skill Adoption Analysis Script  ```python #!/usr/bin/env python3 """ Analyze skill suggestions and adoption metrics. Loads all 45 skill suggestions, checks which have been tested/applied, and genera
+
+### `last_swarm_goal`
+*23.08. 05:42 UTC · Quelle: system*
+
+Fähigkeitsvorschläge erfolgreicher machen
+
+### `dream:202608230542:5`
+*23.08. 05:42 UTC · Quelle: dream*
+
+Model latency variance (4.6–138 s) violates SLOs and destabilizes timeout-dependent skills.
+
+### `dream:202608230542:4`
+*23.08. 05:42 UTC · Quelle: dream*
+
+Simulation revision loops (3 risks → 3 revisions) indicate missing pre-flight validation gates.
+
+### `dream:202608230542:3`
+*23.08. 05:42 UTC · Quelle: dream*
+
+Calibration error of 40% (predicted 5 vs actual 3) makes simulation verdicts unreliable for gating.
+
+### `dream:202608230542:2`
+*23.08. 05:42 UTC · Quelle: dream*
+
+MemoryStore API drift (missing add_fact) breaks hand execution and requires interface contracts.
+
+### `dream:202608230542:1`
+*23.08. 05:42 UTC · Quelle: dream*
+
+Role imbalance (5 builders, 1 planner, 1 critic) prevents swarm convergence despite evolution cycles.
 
 ### `swarm_artifact:Simulation-to-Action Pipeline`
 *23.08. 05:23 UTC · Quelle: builder*
