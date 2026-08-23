@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**964 Fakten** · Stand 2026-08-23 16:40 UTC · aktualisiert bei jedem Herzschlag
+**975 Fakten** · Stand 2026-08-23 17:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 373
-- **dream:** 322
+- **swarm_artifact:** 377
+- **dream:** 327
 - **anti_pattern:** 96
 - **strategy:** 69
-- **last_swarm_goal:** 45
-- **last_swarm_critique:** 41
+- **last_swarm_goal:** 46
+- **last_swarm_critique:** 42
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,61 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*23.08. 17:00 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Systematische Fehlermuster clustern (Similarity Clustering)`
+*23.08. 16:57 UTC · Quelle: builder*
+
+# Artefakt: Systematische Fehlermuster clustern (Similarity Clustering)  **Aufgabe:** build · **Ziel:** „Fehler in Modellen finden" · **Versuch:** 1/3  ---  ## Zweck (Purpose)  Das Fehler-Inventar zäh
+
+### `swarm_artifact:Latenz-Ausreißer aufspüren (Anomaly Detection)`
+*23.08. 16:55 UTC · Quelle: builder*
+
+# Artefakt: Latenz-Ausreißer aufspüren (Anomaly Detection)  **Aufgabe:** build · **Ziel:** „Fehler in Modellen finden" · **Versuch:** 1/3  ---  ## Zweck (Purpose)  Das Fehler-Inventar zählt Fehler, de
+
+### `swarm_artifact:Kalibrierungsfehler messen (Calibration Monitor)`
+*23.08. 16:54 UTC · Quelle: builder*
+
+# Artefakt: Kalibrierungsfehler messen (Calibration Monitor)  **Aufgabe:** build · **Ziel:** „Fehler in Modellen finden" · **Versuch:** 1/3  ---  ## Zweck (Purpose)  Das Fehler-Inventar aus dem vorher
+
+### `swarm_artifact:Fehler-Inventar aus Call-Logs erstellen`
+*23.08. 16:53 UTC · Quelle: builder*
+
+# Artefakt: Fehler-Inventar aus Call-Logs (Error Inventory)  **Aufgabe:** build · **Ziel:** „Fehler in Modellen finden" · **Versuch:** 1/3  ---  ## Zweck (Purpose)  Ein **Log-Parser** (Log-Auswerter =
+
+### `last_swarm_goal`
+*23.08. 16:47 UTC · Quelle: system*
+
+Fehler in Modellen finden
+
+### `dream:202608231646:5`
+*23.08. 16:46 UTC · Quelle: dream*
+
+Model call latency spans 4s to 72s with a heavy tail, so any synchronous call path without a timeout risks stalling the whole control loop.
+
+### `dream:202608231646:4`
+*23.08. 16:46 UTC · Quelle: dream*
+
+Five skill proposals accumulated this session with zero consumed, demonstrating that without a FIFO implement-or-reject quota per cycle the proposal backlog grows monotonically.
+
+### `dream:202608231646:3`
+*23.08. 16:46 UTC · Quelle: dream*
+
+The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') is an interface-drift failure between the hands layer and the memory API, meaning every hand action needs a smoke-tested method-contract check before invocation.
+
+### `dream:202608231646:2`
+*23.08. 16:46 UTC · Quelle: dream*
+
+Score prediction is systematically optimistic (predicted 8 vs actual 4, abs_error 4), confirming that raw internal scores cannot be trusted for go/no-go decisions without a rolling calibration multiplier.
+
+### `dream:202608231646:1`
+*23.08. 16:46 UTC · Quelle: dream*
+
+The swarm ended unconverged (score 5, 2 cycles) because it was launched under a metabolism budget of max_iterations=2, below the ≥3 threshold later proposed, so budget gating must happen before launch, not after.
 
 ### `dream:202608231639:5`
 *23.08. 16:39 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 16:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 17:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model call latency spans 4s to 72s with a heavy tail, so any synchronous call path without a timeout risks stalling the whole control loop.
+- Five skill proposals accumulated this session with zero consumed, demonstrating that without a FIFO implement-or-reject quota per cycle the proposal b
+- The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') is an interface-drift failure between the hands layer and the memory API, m
+- Score prediction is systematically optimistic (predicted 8 vs actual 4, abs_error 4), confirming that raw internal scores cannot be trusted for go/no-
+- The swarm ended unconverged (score 5, 2 cycles) because it was launched under a metabolism budget of max_iterations=2, below the ≥3 threshold later pr
 - Five skill proposals were queued in one dream cycle while a drive goal explicitly demands more proposal usage, showing generation outpaces consumption
 - Both simulation runs returned verdict 'revise' (100% rate, 8 total revisions), indicating the simulation gate is non-discriminative and adds revision 
 - A runtime AttributeError ('MemoryStore' object has no attribute 'add_fact') proves cross-module API drift is only caught at execution time, crashing t
@@ -51,11 +56,6 @@
 - Simulation repeatedly flags risks (3 then 5) requiring revisions, but applied revisions don't achieve convergence, indicating a validation gap.
 - Evolution and swarm cycles consistently produce non-converging results (score 7, converged=false) despite multiple revision passes.
 - Model latency varies extremely (2.8s to 131.9s) on the same endpoint, causing unpredictable task durations and timeouts.
-- MemoryStore lacks add_fact method, causing a runtime AttributeError that halted issue creation and reveals missing interface contract tests.
-- Swarm budget of max_iterations=2 is too low for convergence on calibration goals, as evidenced by 2 cycles ending with score 7 and converged=false.
-- First simulation flagged 5 risks but only 4 revisions were applied; partial application left residual risk that likely caused non-convergence.
-- Calibration predicted 4 but actual was 7 (abs_error=3), showing the predictor is systematically miscalibrated and untrustworthy for gating.
-- Model latency varies extremely (6.5s to 128s) on the same model, making time budgets unreliable for planning.
 
 ---
 
