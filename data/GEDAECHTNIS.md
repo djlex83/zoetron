@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1312 Fakten** · Stand 2026-08-23 21:42 UTC · aktualisiert bei jedem Herzschlag
+**1326 Fakten** · Stand 2026-08-23 21:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 542
-- **swarm_artifact:** 438
-- **anti_pattern:** 116
-- **strategy:** 79
-- **last_swarm_goal:** 63
-- **last_swarm_critique:** 55
+- **dream:** 547
+- **swarm_artifact:** 442
+- **anti_pattern:** 118
+- **strategy:** 80
+- **last_swarm_goal:** 64
+- **last_swarm_critique:** 56
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fähigkeits_messlatte_bauen__capability_benchmark_`
+*23.08. 21:50 UTC · Quelle: evolution*
+
+Plugin‑based auto‑discovery with typed interfaces - Variant 0 provides the strongest combination of elegance (typed interfaces, plugin discovery) and impact (eliminates manual lists, enables seamless extensibility) while remaining h
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeits-Messlatte bau:2`
+*23.08. 21:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Metric‑driven pipeline with observable results store - Model each capability as a node in a directed acyclic graph (DAG) using a lightweight workflow engine (e.g., Prefect or Dagster). Nodes encapsulate the benchmark logic, e
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeits-Messlatte bau:1`
+*23.08. 21:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Declarative benchmark specification (YAML/JSON) + interpreter - Describe each capability benchmark as a declarative file containing: name, description, input data, expected‑output checker (Python expression or reference to a 
+
+### `last_swarm_critique`
+*23.08. 21:49 UTC · Quelle: critic*
+
+score=3; issues=Benchmark modules are only placeholders with no actual benchmark logic.; list_benchmarks.py only prints categories; no mechanism to discover or run benchmarks.; README suggests updating category list manually; error-prone and not automated.; Du
+
+### `swarm_artifact:Validate benchmark with a sanity check`
+*23.08. 21:49 UTC · Quelle: builder*
+
+```python # Sanity check for benchmark score validation # Uses the aggregated score from previous step and validates it's within expected bounds # Bounds can be configured via parameters (default: [0.
+
+### `swarm_artifact:Aggregate results into a score`
+*23.08. 21:49 UTC · Quelle: builder*
+
+```python def compute_score(metrics, weights):     """     Compute weighted average score with validation and clamping to [0,1].          Args:         metrics: List of metric values (typically betwee
+
+### `swarm_artifact:Implement a dummy capability test`
+*23.08. 21:49 UTC · Quelle: builder*
+
+```python import timeit  def dummy():     sum(range(1000))  # Ensure a minimum number of iterations to avoid zero‑time measurements number = 100_000   # calls per timing repeat repeat = 5         # ho
+
+### `swarm_artifact:Design benchmark suite structure`
+*23.08. 21:49 UTC · Quelle: builder*
+
+**Directory Layout**  ``` capability-benchmark/ ├── benchmarks/ │   ├── __init__.py │   ├── reasoning.py │   ├── memory.py │   └── planning.py ├── results/ │   └── .gitkeep ├── list_benchmarks.py └── 
+
+### `last_swarm_goal`
+*23.08. 21:48 UTC · Quelle: system*
+
+Fähigkeits-Messlatte bauen (Capability-Benchmark)
+
+### `dream:202608232148:5`
+*23.08. 21:48 UTC · Quelle: dream*
+
+Promoting the highest‑scoring variant in evolution pipelines yields consistent performance gains across cycles.
+
+### `dream:202608232148:4`
+*23.08. 21:48 UTC · Quelle: dream*
+
+Missing required methods on dependencies cause silent failures; pre‑invocation interface validation catches configuration errors early.
+
+### `dream:202608232148:3`
+*23.08. 21:48 UTC · Quelle: dream*
+
+Successful calibration after four revisions shows that limiting revision batches to five prevents endless loops.
+
+### `dream:202608232148:2`
+*23.08. 21:48 UTC · Quelle: dream*
+
+Duplicate skill proposals appear repeatedly; hashing and rejecting them saves proposal‑processing cycles.
+
+### `dream:202608232148:1`
+*23.08. 21:48 UTC · Quelle: dream*
+
+Latency spikes above twice the rolling median often precede simulation revision requests, indicating a need for dynamic throttling.
 
 ### `dream:202608232142:5`
 *23.08. 21:42 UTC · Quelle: dream*

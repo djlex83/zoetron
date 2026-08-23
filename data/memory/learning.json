@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-23 21:42:25",
+ "stand": "2026-08-23 21:50:34",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -105,17 +105,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.722,
+ "haende_quote": 0.731,
  "simulationen_angewandt": 116,
  "swarm_scores": {
   "n": 67,
   "best": 8.0,
-  "schnitt": 4.25
+  "schnitt": 4.22
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 65,
-   "schnitt": 4.23
+   "n": 66,
+   "schnitt": 4.21
   },
   "bau": {
    "n": 1,

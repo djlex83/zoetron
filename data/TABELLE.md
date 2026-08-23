@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1208 Neuronen · 16485 bewertete Synapsen
+Stand: 1210 Neuronen · 16590 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -14,17 +14,17 @@ Stand: 1208 Neuronen · 16485 bewertete Synapsen
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 115 | 0.23 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 115 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 115 | 0.23 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 115 | 0.22 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 115 | 0.22 |
 | 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 115 | 0.22 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 115 | 0.22 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 115 | 0.22 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 115 | 0.22 |
-| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Ergebnisvalidierung und “ (Note 5/1… | 115 | 0.22 |
-| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 114 | 0.22 |
-| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeits-Messlatte bau“ (Note 3/1… | 115 | 0.22 |
-| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 115 | 0.22 |
-| 13 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 115 | 0.22 |
-| 14 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 115 | 0.22 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 115 | 0.22 |
+| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 114 | 0.22 |
+| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Ergebnisvalidierung und “ (Note 5/1… | 115 | 0.22 |
+| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 115 | 0.22 |
+| 12 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 115 | 0.22 |
+| 13 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 115 | 0.22 |
+| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 115 | 0.22 |
+| 15 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 95 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 
