@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1288 Fakten** · Stand 2026-08-23 21:30 UTC · aktualisiert bei jedem Herzschlag
+**1302 Fakten** · Stand 2026-08-23 21:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 527
-- **swarm_artifact:** 434
-- **anti_pattern:** 114
-- **strategy:** 78
-- **last_swarm_goal:** 62
-- **last_swarm_critique:** 54
+- **dream:** 532
+- **swarm_artifact:** 438
+- **anti_pattern:** 116
+- **strategy:** 79
+- **last_swarm_goal:** 63
+- **last_swarm_critique:** 55
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
+*23.08. 21:35 UTC · Quelle: evolution*
+
+Service‑oriented health register using dependency injection and a library‑based breaker - Variant 2 provides a clean, service‑oriented design with dependency injection, eliminates duplicate class definitions by centralizing the model, and leverages a proven ci
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Gesundheitsregist:1`
+*23.08. 21:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Typed circuit‑breaker decorator with whitelisted exceptions - Create a @circuit_breaker decorator that accepts a tuple of exception types to monitor (e.g., (ConnectionError, TimeoutError, ServiceUnavailable)). Inside the wrap
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Gesundheitsregist:0`
+*23.08. 21:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Centralized data model with dataclass and module-level import - Define Patient as a frozen dataclass in a dedicated models module; import it wherever needed to eliminate duplicate definitions. Use type hints and __post_init__
+
+### `last_swarm_critique`
+*23.08. 21:35 UTC · Quelle: critic*
+
+score=5; issues=Duplicate definition of the Patient class across multiple code snippets (though the final combined script defines it once, the earlier snippets would cause confusion if executed sequentially).; CircuitBreaker catches overly broad Exception, whi
+
+### `swarm_artifact:Demonstrate circuit breaker with health register`
+*23.08. 21:34 UTC · Quelle: builder*
+
+```python import time import random from pydantic import BaseModel from typing import Dict, Optional, Callable, Any  class Patient(BaseModel):     id: int     name: str     age: int     status: str = 
+
+### `swarm_artifact:Add circuit breaker decorator`
+*23.08. 21:33 UTC · Quelle: builder*
+
+```python import time import random from typing import Callable, Any  class CircuitBreaker:     def __init__(self, failure_threshold: int = 3, timeout: float = 5.0):         self.failure_threshold = f
+
+### `swarm_artifact:Implement in‑memory health register`
+*23.08. 21:33 UTC · Quelle: builder*
+
+```python from pydantic import BaseModel from typing import Dict, Optional  class Patient(BaseModel):     id: int     name: str     age: int     status: str = 'active'  class HealthRegister:     def _
+
+### `swarm_artifact:Define Patient Pydantic model`
+*23.08. 21:33 UTC · Quelle: builder*
+
+```markdown ```python from pydantic import BaseModel  class Patient(BaseModel):     id: int     name: str     age: int     status: str = 'active'  # Demonstrate creation patient = Patient(id=1, name='
+
+### `last_swarm_goal`
+*23.08. 21:31 UTC · Quelle: system*
+
+Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
+
+### `dream:202608232131:5`
+*23.08. 21:31 UTC · Quelle: dream*
+
+Many proposed skills remain unimplemented, revealing a disconnect between ideation and execution that benefits from explicit execution tracking and prioritization.
+
+### `dream:202608232131:4`
+*23.08. 21:31 UTC · Quelle: dream*
+
+The pruner consistently finds zero candidates to prune, suggesting either overly permissive thresholds or missing detection logic that should be monitored and alerted.
+
+### `dream:202608232131:3`
+*23.08. 21:31 UTC · Quelle: dream*
+
+Simulation results are rarely turned into action, indicating a gap between validation and deployment that can be closed with an automated gate.
+
+### `dream:202608232131:2`
+*23.08. 21:31 UTC · Quelle: dream*
+
+Duplicate skill proposals accumulate without added value, showing that a centralized registry with deduplication and issue tracking would improve proposal hygiene.
+
+### `dream:202608232131:1`
+*23.08. 21:31 UTC · Quelle: dream*
+
+Latency spikes and upstream overloads frequently cause model failures, highlighting the need for dynamic load‑shedding and fallback mechanisms.
 
 ### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
 *23.08. 21:30 UTC · Quelle: evolution*
