@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-23 21:36:27",
+ "stand": "2026-08-23 21:37:24",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -91,10 +91,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "konvergenz-tor-test-pflicht-vor-erfolg-c.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.717,
- "simulationen_angewandt": 117,
+ "haende_quote": 0.72,
+ "simulationen_angewandt": 116,
  "swarm_scores": {
   "n": 67,
   "best": 8.0,

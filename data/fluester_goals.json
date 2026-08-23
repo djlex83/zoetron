@@ -22,13 +22,15 @@
   "why": "4x selbst gewünscht, und deine häufigsten eigenen Ziele sind Modellfehler. Baue model_health.py: für jedes OpenRouter-Modell Fehlerrate und Antwortzeit in data/model_health.json protokollieren. Bei 3 Fehlern in Folge öffnet der Sicherungsschalter (Circuit Breaker = Modell wird vorübergehend gesperrt), das Modell wird 30 Minuten übersprungen, ein Ersatzmodell übernimmt automatisch. Fertig wenn: ein simulierter 502-Fehler im Test nachweisbar zum automatischen Modellwechsel führt und das Register nach jedem Beat aktualisiert ist.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  },
  {
   "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
   "why": "Score allein reicht nicht, der Critic kann sich irren. Baue ein Konvergenz-Tor (Gate = Sperre vor dem Erfolgs-Stempel): Ein Ziel gilt nur als erledigt, wenn Critic-Score >= 8 UND ein automatischer Integrationstest des gebauten Artefakts grün ist. Fertig wenn: ein Lauf mit Score >= 8 aber rotem Test nachweisbar NICHT konvergiert und die Begründung im Log und im Issue steht.",
   "signal": "failure",
-  "_done": false
+  "_done": false,
+  "_versuche": 2
  },
  {
   "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",

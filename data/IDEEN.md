@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm composition heavily favored builders (5) over planners and critics (1 each), limiting convergent improvement.
+- Simulation flagged five risks but act_done proceeded with score 4, showing revisions are not gated before execution.
+- Three consecutive zero‑prune runs indicate pruning criteria may be too strict, allowing stale facts to accumulate.
+- Missing MemoryStore.add_fact method caused a runtime AttributeError, revealing a gap in interface contract enforcement.
+- Latency jitter (5.7‑37.7 s) shows response times are unpredictable, requiring adaptive timeout mechanisms.
 - Many proposed skills remain unimplemented, revealing a disconnect between ideation and execution that benefits from explicit execution tracking and pr
 - The pruner consistently finds zero candidates to prune, suggesting either overly permissive thresholds or missing detection logic that should be monit
 - Simulation results are rarely turned into action, indicating a gap between validation and deployment that can be closed with an automated gate.
@@ -51,11 +56,6 @@
 - Simulation outcomes are not automatically pushed to production, causing manual errors; a gate that atomically applies revisions after a successful re‑
 - Duplicate skill proposals consume cycles without benefit; a hash‑based deduplication registry prevents rework and ensures traceability.
 - Latency spikes above 100 s show that a fixed 2× rolling median timeout is too lax; adaptive thresholds with fast fallback are needed.
-- Documenting a fix or explicit waiver for every simulation‑flagged risk before act_done ensures failures are learned from and not repeated.
-- Spikes in model latency correlate with unbounded internal revision loops, showing that limiting revisions and requiring external validation stabilizes
-- Zero‑prune runs concurrent with a growing store indicate static pruning is ineffective; eligibility based on age and zero access prevents stale data a
-- Associating temporally distant or thematically related dream memories reliably generates novel knowledge, making cross‑memory combination a durable in
-- Tying each drive goal to a concrete simulation or dream‑memory artifact closes the gap between abundant ideas and few executed actions.
 
 ---
 

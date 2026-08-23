@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1302 Fakten** · Stand 2026-08-23 21:36 UTC · aktualisiert bei jedem Herzschlag
+**1307 Fakten** · Stand 2026-08-23 21:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 532
+- **dream:** 537
 - **swarm_artifact:** 438
 - **anti_pattern:** 116
 - **strategy:** 79
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232137:5`
+*23.08. 21:37 UTC · Quelle: dream*
+
+Swarm composition heavily favored builders (5) over planners and critics (1 each), limiting convergent improvement.
+
+### `dream:202608232137:4`
+*23.08. 21:37 UTC · Quelle: dream*
+
+Simulation flagged five risks but act_done proceeded with score 4, showing revisions are not gated before execution.
+
+### `dream:202608232137:3`
+*23.08. 21:37 UTC · Quelle: dream*
+
+Three consecutive zero‑prune runs indicate pruning criteria may be too strict, allowing stale facts to accumulate.
+
+### `dream:202608232137:2`
+*23.08. 21:37 UTC · Quelle: dream*
+
+Missing MemoryStore.add_fact method caused a runtime AttributeError, revealing a gap in interface contract enforcement.
+
+### `dream:202608232137:1`
+*23.08. 21:37 UTC · Quelle: dream*
+
+Latency jitter (5.7‑37.7 s) shows response times are unpredictable, requiring adaptive timeout mechanisms.
 
 ### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
 *23.08. 21:35 UTC · Quelle: evolution*
