@@ -26,7 +26,7 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 
 | Organ | Nature analog | File | What it does |
 |---|---|---|---|
-| 💓 HEART | heartbeat | `heartbeat_daemon.sh` | every **15 min** (~96/day): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HANDS) → TELEGRAM proof → GRAPH+3D-BRAIN → RETRO → WILL → GENOME → git/wiki sync |
+| 💓 HEART | heartbeat | `heartbeat_daemon.sh` | every **5 min** (~288/day): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HANDS) → TELEGRAM proof → GRAPH+3D-BRAIN → RETRO → WILL → GENOME → TEACH → SELF-LEARN → IDEAS → git/wiki sync |
 | 🧬 GENOME | innate DNA | `genome.py` | **5 instinct rules** (`data/genome.json`) injected into *every* LLM prompt — protect memory, creator first, self-preservation watchdog, honesty, learn from every failure |
 | 🔥 DRIVE | curiosity/drive | `drive.py` | generates **its own goals** from memory gaps — in plain German, with a human-readable "why" |
 | 💭 DREAM | sleep/replay | `dream.py` | distills experiences into lasting insights + skill proposals |
@@ -41,20 +41,23 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 | ✂️ PRUNE | apoptosis | `prune.py` | archives stale memories, keeps recalled facts, insights are immortal |
 | 🎯 WILL | prefrontal cortex | `will.py` | long-term **missions** with measurable targets survive across cycles; they outrank short-term curiosity (whisper still wins) |
 | 🪞 RETRO | conscience | `retro.py` | reviews its own cycles after every heartbeat: honest findings become `retro_lesson:` facts that feed the next planner prompt |
-| 🕸 GRAPH+BRAIN | associative cortex | `graph.py`, `graph_view.py`, `brain_view.py` | live knowledge graph (2D physics view + **3D brain** with hemispheres & synapse pulses), duplicates consolidated automatically |
-| ⚡ REFLEX PATH | spinal cord | ACT-first logic | checks the toolbelt **before** the LLM thinks — token-free runs for known work |
+| 🕸 GRAPH+BRAIN | associative cortex | `graph.py`, `graph_view.py`, `brain_view.py` | live knowledge graph (2D physics view + **3D brain** with hemispheres & synapse pulses), **semantic linking**: synapses form by TF-IDF meaning (cosine ≥ 0.18), not word overlap — "timeout during build" finds "aborted due to time exceeded"; duplicates consolidated automatically |
+| 💡 IDEAS BOARD | daydream notebook | `ideen.py` | collects its **own autonomous ideas** (skill wishes, self-chosen goals, dream insights) into a public board — refreshed every heartbeat |
+| ⚡ REFLEX PATH | spinal cord | ACT-first logic | checks the toolbelt **before** the LLM thinks — token-free runs for known work; 6 h throttle per goal+tool combo (no spam) |
 | 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10); demands runnable code, not prose |
 | 💬 WHISPER | human voice | `data/fluester_goals.json` | human priority goals jump the queue (logged as `drive_whisper`) |
 | 🧠 Memory | hippocampus | `memory.py` | JSONL facts + event log + keyword recall; auto-deduplicated |
 
 ## The Autonomous Loop
 
-Every **15 minutes** (~96 cycles/day), Zoetron runs a full developer cycle
-**without human input** — and *thinks about itself* while doing it:
+Every **5 minutes** (~288 cycles/day), Zoetron runs a full developer cycle
+**without human input** — and *thinks about itself* while doing it.
+Telegram reports are throttled to every 3rd beat (~15 min) so the fast
+thinking never spams the human:
 
 ```
-HERZSCHLAG (every 15 min)
- ├─ ⚡ REFLEX   toolbelt first — known work runs token-free
+HERZSCHLAG (every 5 min)
+ ├─ ⚡ REFLEX   toolbelt first — known work runs token-free (6 h throttle)
  ├─ ✂️ PRUNE    archive stale memories
  ├─ 💭 DREAM    distill new insights + skill ideas from recent experience
  ├─ 🔥 DRIVE    pick its own next goal (curiosity) or a whispered one (you)
@@ -63,8 +66,9 @@ HERZSCHLAG (every 15 min)
  │     score < 8: evolution breeds better strategies, losers become
  │                forbidden anti-patterns, winners are inherited
  ├─ ✋ HANDS    artifact code executed in a sandbox; successes become tools
- ├─ 📱 TELEGRAM posts the proof of execution (tool + result)
- ├─ 🕸 GRAPH    rebuilds the live knowledge graph over all memory
+ ├─ 📱 TELEGRAM posts the proof of execution (every 3rd beat)
+ ├─ 🕸 GRAPH    rebuilds the live knowledge graph — semantic synapses
+ ├─ 💡 IDEAS    refreshes the public ideas board (its own inventions!)
  └─ 🪞 RETRO    reviews its own cycles: "what went well / badly?"
                findings are stored as lessons for future planners
 ```
@@ -77,7 +81,7 @@ HERZSCHLAG (every 15 min)
 - **Public self-management:** issues, label kanban, releases, wiki and the
   landing page are maintained by the organism itself.
 
-### 💡 What it thinks about every 15 minutes
+### 💡 What it thinks about every 5 minutes
 
 Every heartbeat generates fresh ideas you can watch grow in the open:
 

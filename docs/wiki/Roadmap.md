@@ -20,6 +20,14 @@
 - [x] Werkzeugkisten-Fixes: dedup löscht wirklich, Reflex ganze-Wort-Matching
 - [x] Herzschlag 15 Min mit Phasen LEHREN + SELBSTLERNEN; 20 Organe dokumentiert (EN/DE)
 
+## Erreicht (2026-08-23, Teil 2) – Schneller Denken, Klartext
+- [x] 💡 IDEEN-BOARD: seine eigenen autonomen Ideen öffentlich lesbar (`ideen.py` → Wiki „Ideen") – 159 Ziele + 260 Skill-Vorschläge in 24 h ohne Zutun des Erschaffers
+- [x] ⏱️ Herzschlag auf **5 Minuten** beschleunigt (~288 Zyklen/Tag); Telegram nur jeder 3. Schlag
+- [x] 🚦 REFLEX-Drossel: Ziel+Werkzeug-Kombination max. alle 6 h (Telegram-Doppler behoben)
+- [x] 🕸 SEMANTISCHES LINKING im Graphen: Synapsen nach TF-IDF-Bedeutung (Kosinus ≥ 0,18) statt Wortgleichheit – ~4.800 Synapsen, isolierte Neuronen 324 → 76
+- [x] 🔗 Ereignis-Klone verschmolzen: dieselbe Erfahrung = EIN Neuron mit „3× act_done"-Bilanz
+- [x] 📖 Klick-Panels auf Deutsch: Narben, Strategien, Träume als lesbare Sätze statt Maschinen-Keys; 700-Zeichen-Texte, 12 Synapsen pro Panel
+
 ## Nächste Schritte
 - [ ] Memory vergrößern: Telegram-Verlauf, GitHub-Issues, Sessions einspeisen
 - [ ] Embedding/GNN-Gedächtnis als Nachfolger von semantic.py (gleiche API, Issue #30)

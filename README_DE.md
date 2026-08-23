@@ -26,7 +26,7 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 
 | Organ | Natur-Vorbild | Datei | Was es tut |
 |---|---|---|---|
-| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **15 Min** (~96/Tag): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → TELEGRAM-Beweis → GRAPH+3D-GEHIRN → RETRO → WILLE → GENOM → git/wiki-Sync |
+| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **5 Min** (~288/Tag): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → TELEGRAM-Beweis → GRAPH+3D-GEHIRN → RETRO → WILLE → GENOM → LEHREN → SELBSTLERNEN → IDEEN → git/wiki-Sync |
 | 🧬 GENOM | angeborene DNA | `genome.py` | **5 Instinkt-Regeln** (`data/genome.json`) in *jedem* LLM-Prompt – schütze Gedächtnis, Erschaffer zuerst, Selbsterhalt-Watchdog, Ehrlichkeit, aus jedem Fehler lernen |
 | 🔥 DRIVE | Neugier/Trieb | `drive.py` | generiert **eigene Ziele** aus Gedächtnislücken – auf Deutsch mit verständlichem „Why" |
 | 💭 DREAM | Schlaf/Replay | `dream.py` | destilliert Erlebnisse zu dauerhaften Einsichten + Skill-Vorschlägen |
@@ -41,21 +41,23 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 | ✂️ PRUNE | Apoptose | `prune.py` | archiviert alte Erinnerungen, behält genutzte Fakten |
 | 🎯 WILLE | Stirnlappen | `will.py` | langfristige **Missionen** mit messbaren Zielen überdauern Zyklen; haben Vorfahrt vor kurzer Neugier (Flüstern gewinnt weiter) |
 | 🪞 RETRO | Gewissen | `retro.py` | reviewt nach jedem Schlag die eigenen Zyklen: ehrliche Befunde werden `retro_lesson:`-Fakten und speisen den nächsten Planner-Prompt |
-| 🕸 GRAPH+GEHIRN | Assoziationsrinde | `graph.py`, `graph_view.py`, `brain_view.py` | Live-Wissensnetz (2D-Physik-View + **3D-Gehirn** mit Hemisphären & Synapsen-Pulsen), Dubletten automatisch verschmolzen |
-| ⚡ REFLEX-PFAD | Rückenmark | ACT-Logik | prüft die Werkzeugkiste **bevor** das LLM denkt – token-freie Läufe für Bekanntes |
+| 🕸 GRAPH+GEHIRN | Assoziationsrinde | `graph.py`, `graph_view.py`, `brain_view.py` | Live-Wissensnetz (2D-Physik-View + **3D-Gehirn** mit Hemisphären & Synapsen-Pulsen), **semantisches Linking**: Synapsen nach TF-IDF-Bedeutung (Kosinus ≥ 0,18), nicht nach Wortgleichheit – „Timeout beim Build" findet „abgebrochen wg. Zeitüberschreitung"; Dubletten automatisch verschmolzen |
+| 💡 IDEEN-BOARD | Tagtraum-Notizbuch | `ideen.py` | sammelt seine **eigenen autonomen Ideen** (Fähigkeits-Wünsche, selbstgewählte Ziele, Traum-Erkenntnisse) auf einem öffentlichen Board – bei jedem Herzschlag frisch |
+| ⚡ REFLEX-PFAD | Rückenmark | ACT-Logik | prüft die Werkzeugkiste **bevor** das LLM denkt – token-freie Läufe für Bekanntes; 6-h-Drossel je Ziel+Werkzeug (kein Spam) |
 | 🛡 CRITIC | Abwehr | `swarm.py` | Qualitätsgate (Score 0–10); **verlangt lauffähigen Code, keine Prosa** |
 | 💬 FLÜSTER-KANAL | Menschenstimme | `data/fluester_goals.json` | menschliche Prioritätsziele springen in der Queue nach vorn (`drive_whisper`) |
 | 🧠 Gedächtnis | Hippocampus | `memory.py` | JSONL-Fakten + Ereignis-Log + Keyword-Recall; automatisch dedupliziert |
 
 ## Der autonome Kreislauf
 
-Alle **15 Minuten** (~96 Zyklen/Tag) läuft Zoetron einen vollständigen
+Alle **5 Minuten** (~288 Zyklen/Tag) läuft Zoetron einen vollständigen
 Entwickler-Zyklus **ohne menschliches Zutun** – und denkt dabei über sich
-selbst nach:
+selbst nach. Telegram-Berichte kommen nur jeden 3. Schlag (~15 Min),
+damit das schnelle Denken den Menschen nicht zuspammt:
 
 ```
-HERZSCHLAG (alle 15 Min)
- ├─ ⚡ REFLEX   Werkzeugkiste zuerst – Bekanntes läuft ohne Token
+HERZSCHLAG (alle 5 Min)
+ ├─ ⚡ REFLEX   Werkzeugkiste zuerst – Bekanntes läuft ohne Token (6-h-Drossel)
  ├─ ✂️ PRUNE    alte Erinnerungen archivieren
  ├─ 💭 DREAM    neue Einsichten + Skill-Ideen aus frischen Erfahrungen
  ├─ 🔥 DRIVE    wählt sein nächstes Ziel (Neugier) oder ein Flüster-Ziel (du)
@@ -64,8 +66,9 @@ HERZSCHLAG (alle 15 Min)
  │     Score < 8: Evolution züchtet Strategien, Verlierer werden
  │                Verbotsliste (Anti-Patterns), Sieger werden vererbt
  ├─ ✋ HÄNDE    Artefakt-Code in der Sandbox ausgeführt; Erfolge werden Tools
- ├─ 📱 TELEGRAM postet den Ausführungs-Beweis (Werkzeug + Ergebnis)
- ├─ 🕸 GRAPH    baut den Live-Wissensgraph über das gesamte Gedächtnis neu
+ ├─ 📱 TELEGRAM postet den Ausführungs-Beweis (jeder 3. Schlag)
+ ├─ 🕸 GRAPH    baut den Live-Wissensgraph neu – semantische Synapsen
+ ├─ 💡 IDEEN    erneuert das öffentliche Ideen-Board (seine eigenen Erfindungen!)
  └─ 🪞 RETRO   reviewt die eigenen Zyklen: „was lief gut / schlecht?"
                Lehren wandern ins Gedächtnis für künftige Planner
 ```

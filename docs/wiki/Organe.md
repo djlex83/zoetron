@@ -2,13 +2,13 @@
 
 | Organ | Datei | Aufgabe |
 |---|---|---|
-| 💓 HERZ | `scripts/heartbeat_daemon.sh` | 15-Minuten-Takt (~96/Tag), fährt alle Phasen: REFLEX → PRUNE → DREAM → DRIVE → ACT → TELEGRAM → GRAPH+3D-GEHIRN → RETRO → WILLE → GENOM → LEHREN → SELBSTLERNEN → git/wiki |
+| 💓 HERZ | `scripts/heartbeat_daemon.sh` | 5-Minuten-Takt (~288/Tag), fährt alle Phasen: REFLEX → PRUNE → DREAM → DRIVE → ACT → TELEGRAM → GRAPH+3D-GEHIRN → IDEEN → RETRO → WILLE → GENOM → LEHREN → SELBSTLERNEN → git/wiki |
 | 🧬 GENOM | `genome.py` | 5 angeborene Instinkt-Regeln (`data/genome.json`) in jedem LLM-Prompt + Selbsterhalt-Watchdog |
 | 📖 LEHRER | `teacher.py` | Erschaffer-Wissen (`data/lehrer.json`) wird zu `creator_teaching:`-Fakten – höchste Autorität nach dem Genom |
 | 🧠 SELBSTLERNEN | `selflearn.py` | statistisches Lernen ohne LLM: Tool-Erfolgsquoten, Score-Historie → strategy/anti_pattern-Fakten |
 | 🕸 SEMANTISCH | `semantic.py` | TF-IDF + Synonymfelder + Cross-Domain-Bridging; Frag das Gedächtnis: `python src/zoetron/semantic.py "Frage"` |
 | 🎯 WILLE | `will.py` | Missionen mit messbaren Zielen überdauern Zyklen; Drossel 6 h; Vorfahrt nach Flüster-Zielen |
-| 🛡 REFLEX | ACT-Logik in `cli.py` | Werkzeugkiste vor dem LLM; ganze-Wort-Matching gegen Zufalls-Treffer |
+| 🛡 REFLEX | ACT-Logik in `cli.py` | Werkzeugkiste vor dem LLM; ganze-Wort-Matching gegen Zufalls-Treffer; 6-h-Drossel je Ziel+Werkzeug (`reflex_last.json`) |
 | ✂️ PRUNE | `prune.py` | archiviert alte Erinnerungen |
 | 💭 DREAM | `dream.py` | destilliert Erlebnisse zu Einsichten + Skill-Vorschlägen |
 | 🔥 DRIVE | `drive.py` | eigene Ziele aus Lücken + Sinnesdaten |
@@ -21,7 +21,8 @@
 | 🪞 RETRO | `retro.py` | Selbstkritik nach jedem Schlag; Lehren werden dauerhafte `retro_lesson:`-Fakten |
 | 🌍 SIMULATE | `simulate.py` | Weltmodell-Trockentest vor der Ausführung |
 | ⚖️ CRITIC | in `swarm.py` | bewertet Artefakte 0–10 |
-| 🕸 GRAPH+BRAIN | `graph.py`, `graph_view.py`, `brain_view.py` | Wissensnetz als 2D-Physik-View + 3D-Gehirn (Hemisphären, Synapsen-Pulse, Alters-Farbverlauf) |
+| 🕸 GRAPH+BRAIN | `graph.py`, `graph_view.py`, `brain_view.py` | Wissensnetz als 2D-Physik-View + 3D-Gehirn (Hemisphären, Synapsen-Pulse, Alters-Farbverlauf); **semantisches Linking**: Synapsen nach TF-IDF-Bedeutung (Kosinus ≥ 0,18) statt Wortgleichheit – ~4.800 Synapsen, deutsche Klartext-Panels mit 700-Zeichen-Texten |
+| 💡 IDEEN | `ideen.py` | sammelt seine eigenen autonomen Ideen (72 h): Fähigkeits-Wünsche ×Häufigkeit, eigene Ziele, Traum-Erkenntnisse → `data/IDEEN.md` + Wiki „Ideen" |
 | 🧠 Gedächtnis | `memory.py` | JSONL-Fakten + Ereignisse + Recall; auto-dedupliziert |
 
 ## Der Swarm-Zyklus
