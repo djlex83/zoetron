@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,7 +10,6 @@
 - Deploy a nightly model calibration updater: log (goal_embedding, predicted, actual), retrain a lightweight reg *(hatte die Idee 4×)*
 - Add mandatory invocation smoke test in act_done: execute each new tool once with synthetic input and verify no *(hatte die Idee 4×)*
 - Build skill_proposal_filter that scores proposals by novelty, feasibility, and alignment with active drive goa *(hatte die Idee 4×)*
-- Add a swarm heartbeat controller: workers report progress every 30 s, orchestrator flags stalls >90 s, reassig *(hatte die Idee 3×)*
 - Implement automatic calibration updates: after each prediction, compare predicted vs actual outcome and adjust *(hatte die Idee 3×)*
 - Create a skill promotion pipeline: sandbox‑test each proposal, measure performance delta vs baseline, compute  *(hatte die Idee 3×)*
 - Establish interface contract validation at swarm startup: verify all components expose required methods (e.g., *(hatte die Idee 3×)*
@@ -20,15 +19,15 @@
 - Add automated contract tests for the MemoryStore interface (add_fact, get_facts, etc.) to run on every CI buil *(hatte die Idee 3×)*
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
+- Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
+- GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
 - Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen lernen *(wieder aufgegriffen: 2×)*
@@ -38,6 +37,7 @@
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
+- Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 

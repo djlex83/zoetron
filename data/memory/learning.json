@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-23 23:13:47",
+ "stand": "2026-08-23 23:23:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "dedup_skill_proposals.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -111,12 +111,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.838,
+ "haende_quote": 0.836,
  "simulationen_angewandt": 96,
  "swarm_scores": {
-  "n": 57,
+  "n": 56,
   "best": 8.0,
-  "schnitt": 4.12
+  "schnitt": 4.07
  },
  "score_nach_ziel_typ": {
   "analyse": {
