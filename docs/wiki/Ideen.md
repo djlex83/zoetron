@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
+- Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Modellfehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler bei Issues reduzieren *(wieder aufgegriffen: 2×)*
 - Alte Träume besser verknüpfen *(wieder aufgegriffen: 2×)*
@@ -37,7 +38,6 @@
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
-- GitHub-Fehler beheben *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
