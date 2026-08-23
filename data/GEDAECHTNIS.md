@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**396 Fakten** · Stand 2026-08-23 02:13 UTC · aktualisiert bei jedem Herzschlag
+**411 Fakten** · Stand 2026-08-23 02:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 227
-- **dream:** 70
-- **strategy:** 37
-- **anti_pattern:** 32
+- **swarm_artifact:** 232
+- **dream:** 75
+- **strategy:** 38
+- **anti_pattern:** 34
+- **last_swarm_critique:** 7
+- **last_swarm_goal:** 7
 - **creator_teaching:** 7
-- **last_swarm_critique:** 6
-- **last_swarm_goal:** 6
 - **frontier:** 3
 - **artifact:** 3
 - **best_swarm_score:** 1
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:simulationen_öfter_in_echt_testen`
+*23.08. 02:40 UTC · Quelle: evolution*
+
+Schema-Driven Development with Code Generation - Schema-driven code generation directly resolves all three critic issues: it enforces a single source of truth for SimConfig/SimResult (eliminating model drift), generates complete 
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationen öfter in ec:2`
+*23.08. 02:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Automated Real-World Test Orchestration via Containerized Environments - Build a containerized test orchestration platform (using Docker Compose or Kubernetes Jobs) that spins up real hardware or high-fidelity digital twins o
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationen öfter in ec:1`
+*23.08. 02:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Plugin-Based Architecture with Standardized Interfaces - Refactor the system into a core framework that discovers and loads plugins for simulation runners, environment adapters, and result comparators. Define a strict Environ
+
+### `last_swarm_critique`
+*23.08. 02:40 UTC · Quelle: critic*
+
+score=3; issues=Inconsistent data models across artifacts: SimConfig and SimResult differ between simulation_runner, comparison_harness, and feedback_loop, breaking integration.; All code snippets are truncated (end with '...' or cut off), making it impossible
+
+### `swarm_artifact:Monitoring-Dashboard für Simulationsqualität`
+*23.08. 02:39 UTC · Quelle: builder*
+
+# Monitoring-Dashboard für Simulationsqualität  ```python #!/usr/bin/env python3 """ Monitoring-Dashboard – liest historische Vergleichsdaten, berechnet Trends (Drift, Genauigkeit) und erzeugt einen J
+
+### `swarm_artifact:Feedback-Loop: Reale Ergebnisse in Simulationsmodell einspei`
+*23.08. 02:38 UTC · Quelle: builder*
+
+# Feedback-Loop: Reale Ergebnisse in Simulationsmodell einspeisen  ```python #!/usr/bin/env python3 """ Feedback-Loop Modul – erkennt Abweichungen zwischen Simulation und Realität, bereitet diese als 
+
+### `swarm_artifact:Automatisierter Scheduler für regelmäßige Simulationstests`
+*23.08. 02:35 UTC · Quelle: builder*
+
+# Automatisierter Scheduler für regelmäßige Simulationstests  ```python #!/usr/bin/env python3 """ Simulation Scheduler – Cron-ähnlicher Runner für regelmäßige Simulationstests. Führt Simulationen in 
+
+### `swarm_artifact:Vergleichs-Harness: Simulation vs. Realität`
+*23.08. 02:34 UTC · Quelle: builder*
+
+# Vergleichs-Harness: Simulation vs. Realität  ```python #!/usr/bin/env python3 """ Vergleichs-Harness – führt identische Szenarien in Simulation UND Realität aus und vergleicht Metriken (Latenz, Erfo
+
+### `swarm_artifact:Simulation Runner für echte Umgebungen erstellen`
+*23.08. 02:32 UTC · Quelle: builder*
+
+# Simulation Runner für echte Umgebungen  ```python #!/usr/bin/env python3 """ Simulation Runner – führt Simulationen gegen echte Test-Umgebungen aus. Unterstützt: lokale Prozesse, Docker-Container, T
+
+### `last_swarm_goal`
+*23.08. 02:30 UTC · Quelle: system*
+
+Simulationen öfter in echt testen
+
+### `dream:202608230229:5`
+*23.08. 02:29 UTC · Quelle: dream*
+
+Evolutionary variant generation improves scores from 4/10 to 7‑9, demonstrating that systematic code mutations (e.g., removing global scope) enhance skill performance.
+
+### `dream:202608230229:4`
+*23.08. 02:29 UTC · Quelle: dream*
+
+Swarm runs for skill practice achieve low scores and fail to converge, pointing to insufficient builder capacity or weak critic feedback.
+
+### `dream:202608230229:3`
+*23.08. 02:29 UTC · Quelle: dream*
+
+Simulation repeatedly returns a 'revise' verdict for the autonomous skill practice goal, revealing a persistent gap between current implementations and desired behavior.
+
+### `dream:202608230229:2`
+*23.08. 02:29 UTC · Quelle: dream*
+
+Model latency shows high variance (from ~4 s to >49 s), suggesting that static model selection leads to unpredictable response times.
+
+### `dream:202608230229:1`
+*23.08. 02:29 UTC · Quelle: dream*
+
+Intermittent upstream overload errors cause complete loss of model output, indicating a need for automatic retry and fallback mechanisms.
 
 ### `strategy:neue_fähigkeiten_aus_vorschlägen_bauen`
 *23.08. 02:13 UTC · Quelle: evolution*
