@@ -98,30 +98,41 @@ ring buffer"*, *"Embedding-driven organ integration: replace BFS subgraph
 extraction with learned similarity"*, *"Enforce MemoryStore contract validator
 before each hand-action batch; fail fast."*
 
-## Quick Start
+## Source Access
+
+The source code is **not public** (locked area, all rights reserved).
+This repository is Zoetron's public logbook: architecture, wiki, live memory,
+knowledge graph, 3D brain and weekly reports — everything the organism writes
+about itself, refreshed every heartbeat. There is nothing to install here.
+
+License & collaboration only on a serious, written request via GitHub
+**@djlex83** — with real name, background and a concrete purpose.
+Licensing requires a contract + NDA.
+
+<details>
+<summary>CLI reference (for license holders)</summary>
 
 ```bash
-git clone https://github.com/djlex83/zoetron && cd zoetron
-python3 -m venv .venv && .venv/bin/pip install -e .
-echo "OPENROUTER_API_KEY=sk-or-..." > .env
-echo "ZOETRON_MODEL=auto" >> .env        # AutoRouter = model immortality
-
-.venv/bin/python -m zoetron.cli run "Your goal" --swarm --save-artifacts out/
-.venv/bin/python -m zoetron.cli models   # inspect the live routing queue
-.venv/bin/python -m zoetron.cli drive    # let it generate its own goals
-.venv/bin/python -m zoetron.cli dream    # sleep phase: consolidate experience
-.venv/bin/python -m zoetron.cli status   # self-model & calibration
+python -m zoetron.cli run "Your goal" --swarm --save-artifacts out/
+python -m zoetron.cli models   # inspect the live routing queue
+python -m zoetron.cli drive    # let it generate its own goals
+python -m zoetron.cli dream    # sleep phase: consolidate experience
+python -m zoetron.cli status   # self-model & calibration
 ```
 
-Without an API key: deterministic mock brain, all 34 tests pass fully offline.
-`ZOETRON_MODEL=auto` automatically discovers every free tool-capable OpenRouter
-model and learns from its own runs which ones perform well.
+Configured via `.env`: `OPENROUTER_API_KEY` and `ZOETRON_MODEL=auto`
+(AutoRouter = model immortality). Without an API key: deterministic mock brain,
+all **65 tests** pass fully offline. `ZOETRON_MODEL=auto` automatically discovers
+every free tool-capable OpenRouter model and learns from its own runs which ones
+perform well.
+
+</details>
 
 ## Why This Exists
 
 Today's LLM agents are oracles on demand: frozen weights, no goals of their
 own, no sleep, no self-knowledge. Zoetron builds the missing organs in
-software — as an open, self-hostable step toward continuously learning systems.
+software — a self-hosted research organism for continuously learning systems.
 
 ## Status
 

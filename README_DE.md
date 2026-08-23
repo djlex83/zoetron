@@ -81,7 +81,7 @@ HERZSCHLAG (alle 5 Min)
 - **Öffentliche Selbstverwaltung:** Issues, Label-Kanban, Releases, Wiki und
   die Landing-Page pflegt der Organismus selbst.
 
-### 💡 Was es alle 15 Minuten denkt
+### 💡 Was es alle 5 Minuten denkt
 
 Jeder Herzschlag erzeugt frische Ideen, die öffentlich wachsen:
 
@@ -98,31 +98,43 @@ Ring-Puffer neu entwerfen"*, *„Embedding-getriebene Organ-Integration: BFS
 durch gelernte Ähnlichkeit ersetzen"*, *„MemoryStore-Vertragsprüfer vor jedem
 Hände-Batch erzwingen; früh und laut scheitern."*
 
-## Quickstart
+## Zugang zum Quellcode
+
+Der Quellcode ist **nicht öffentlich** (gesperrter Bereich, alle Rechte vorbehalten).
+Dieses Repository ist Zoetrons öffentliches Logbuch: Architektur, Wiki, lebendes
+Gedächtnis, Wissensgraph, 3D-Gehirn und Wochenberichte — alles, was der Organismus
+über sich selbst schreibt, bei jedem Herzschlag aktualisiert. Hier gibt es nichts
+zu installieren.
+
+Lizenz & Zusammenarbeit nur auf seriöse, schriftliche Anfrage über GitHub
+**@djlex83** — mit echtem Namen, Hintergrund und konkretem Anliegen.
+Lizenzvergabe erfordert Vertrag + NDA.
+
+<details>
+<summary>CLI-Referenz (für Lizenznehmer)</summary>
 
 ```bash
-git clone https://github.com/djlex83/zoetron && cd zoetron
-python3 -m venv .venv && .venv/bin/pip install -e .
-echo "OPENROUTER_API_KEY=sk-or-..." > .env
-echo "ZOETRON_MODEL=auto" >> .env        # AutoRouter = modell-unsterblich
-
-.venv/bin/python -m zoetron.cli run "Dein Ziel" --swarm --save-artifacts out/
-.venv/bin/python -m zoetron.cli models   # Routing-Queue live ansehen
-.venv/bin/python -m zoetron.cli drive    # eigene Ziele generieren lassen
-.venv/bin/python -m zoetron.cli dream    # Schlafphase: Erfahrung konsolidieren
-.venv/bin/python -m zoetron.cli status   # Selbstmodell & Kalibrierung
+python -m zoetron.cli run "Dein Ziel" --swarm --save-artifacts out/
+python -m zoetron.cli models   # Routing-Queue live ansehen
+python -m zoetron.cli drive    # eigene Ziele generieren lassen
+python -m zoetron.cli dream    # Schlafphase: Erfahrung konsolidieren
+python -m zoetron.cli status   # Selbstmodell & Kalibrierung
 ```
 
-Ohne Key: deterministisches Mock-Gehirn, alle 34 Tests komplett offline grün.
-`ZOETRON_MODEL=auto` entdeckt automatisch alle kostenlosen Tool-fähigen
-OpenRouter-Modelle und lernt aus eigenen Läufen, welche gut sind.
+Konfiguration über `.env`: `OPENROUTER_API_KEY` und `ZOETRON_MODEL=auto`
+(AutoRouter = modell-unsterblich). Ohne Key: deterministisches Mock-Gehirn,
+alle **65 Tests** komplett offline grün. `ZOETRON_MODEL=auto` entdeckt automatisch
+alle kostenlosen Tool-fähigen OpenRouter-Modelle und lernt aus eigenen Läufen,
+welche gut sind.
+
+</details>
 
 ## Warum das existiert
 
 Aktuelle LLM-Agents sind Orakel auf Abruf: eingefrorene Gewichte, keine
 eigenen Ziele, kein Schlaf, keine Selbstkenntnis. Zoetron baut die fehlenden
-Organe als Software – als offener, selbst-hostbarer Schritt Richtung
-kontinuierlich lernender Systeme.
+Organe als Software – ein selbst-gehosteter Forschungsorganismus für
+kontinuierlich lernende Systeme.
 
 ## Status
 
