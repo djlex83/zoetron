@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1228 Fakten** · Stand 2026-08-23 20:59 UTC · aktualisiert bei jedem Herzschlag
+**1243 Fakten** · Stand 2026-08-23 21:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 502
-- **swarm_artifact:** 416
-- **anti_pattern:** 108
-- **strategy:** 75
-- **last_swarm_goal:** 58
-- **last_swarm_critique:** 50
+- **dream:** 507
+- **swarm_artifact:** 421
+- **anti_pattern:** 110
+- **strategy:** 76
+- **last_swarm_goal:** 59
+- **last_swarm_critique:** 51
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fehler_bei_den_github_aufgaben_beheben`
+*23.08. 21:06 UTC · Quelle: evolution*
+
+Direct GitHub REST API integration using PyGithub - Variant 1 (PyGithub) offers the best balance: it fundamentally shifts from fragile gh CLI subprocess calls to a robust, well-maintained library that natively handles pagination, ra
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fehler bei den GitHub-Au:2`
+*23.08. 21:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 5, 8]): Asynchronous modular auditor with pluggable backends - Design an async modular framework where the core auditor is backend-agnostic. Define an abstract BaseBackend with methods list_runs(), get_job_logs(). Implement t
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fehler bei den GitHub-Au:0`
+*23.08. 21:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 9, 8]): Robust gh CLI wrapper with pagination, retries, and validation - Rewrite the script as a robust gh CLI wrapper. Implement a main() entry point that validates gh installation and authentication via 'gh auth status'. Ad
+
+### `last_swarm_critique`
+*23.08. 21:05 UTC · Quelle: critic*
+
+score=4; issues=fetch_job_logs function is incomplete - ends with 'return log' but 'log' is undefined (critical bug); No main entry point - script cannot be executed directly to perform audit; No pagination handling for GitHub API calls (jobs, runs) - will mis
+
+### `swarm_artifact:Validate all required status checks pass on protected branch`
+*23.08. 21:05 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "ls -la .github/workflows/ 2>/dev/null || echo 'No workflows directory'", "description": "List workflow files"}} {"tool": "bash", "args": {"command": "cat .github/
+
+### `swarm_artifact:Update repository badges to reflect current status`
+*23.08. 21:05 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "ls -la", "description": "List repository root"}} {"tool": "bash", "args": {"command": "find . -name 'README*' -o -name 'readme*' | head -10", "description": "Find
+
+### `swarm_artifact:Repair GitHub Pages deployment workflow`
+*23.08. 21:04 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -name '*.yml' -o -name '*.yaml' | grep -E '(workflow|github)' | head -20", "description": "Find GitHub workflow files"}} {"tool": "bash", "args": {"command
+
+### `swarm_artifact:Fix failing CI workflow (lint/type-check/test)`
+*23.08. 21:03 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -name '*.yml' -o -name '*.yaml' | grep -E '(workflow|github)' | head -20", "description": "Find GitHub workflow files"}} {"tool": "bash", "args": {"command
+
+### `swarm_artifact:Audit GitHub Actions workflows for failures`
+*23.08. 21:03 UTC · Quelle: builder*
+
+# GitHub Actions Workflow Audit Script  ```python #!/usr/bin/env python3 """ GitHub Actions Workflow Failure Audit Tool Fetches and analyzes all workflow runs, categorizes failures by type. """  impor
+
+### `last_swarm_goal`
+*23.08. 21:00 UTC · Quelle: system*
+
+Fehler bei den GitHub-Aufgaben beheben
+
+### `dream:202608232100:5`
+*23.08. 21:00 UTC · Quelle: dream*
+
+Latency SLA breaches trigger no automatic fallback, leaving the system stuck on slow providers despite multi-provider availability.
+
+### `dream:202608232100:4`
+*23.08. 21:00 UTC · Quelle: dream*
+
+Simulation flagged risks lack a mandatory resolution gate, so act_done can fire with unresolved hazards.
+
+### `dream:202608232100:3`
+*23.08. 21:00 UTC · Quelle: dream*
+
+Prune runs consistently remove zero items while store size grows, showing the current eligibility heuristic is inert and wastes cycles.
+
+### `dream:202608232100:2`
+*23.08. 21:00 UTC · Quelle: dream*
+
+Proposal deduplication via content-hash ledgers appears in three separate cycles, revealing that the system re-generates identical ideas instead of promoting them.
+
+### `dream:202608232100:1`
+*23.08. 21:00 UTC · Quelle: dream*
+
+Validation guards (interface, pre-call, pre-flight, sanity-check) are proposed repeatedly across cycles, indicating a systemic trust deficit in tool/hand contracts.
 
 ### `swarm_artifact:Collect and categorize common invoice failure reasons from l`
 *23.08. 20:57 UTC · Quelle: builder*

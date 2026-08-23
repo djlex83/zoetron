@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency SLA breaches trigger no automatic fallback, leaving the system stuck on slow providers despite multi-provider availability.
+- Simulation flagged risks lack a mandatory resolution gate, so act_done can fire with unresolved hazards.
+- Prune runs consistently remove zero items while store size grows, showing the current eligibility heuristic is inert and wastes cycles.
+- Proposal deduplication via content-hash ledgers appears in three separate cycles, revealing that the system re-generates identical ideas instead of pr
+- Validation guards (interface, pre-call, pre-flight, sanity-check) are proposed repeatedly across cycles, indicating a systemic trust deficit in tool/h
 - Revision cycles often stall without external artifacts, confirming the need for a hard cap and mandatory verifiable checkpoints.
 - MemoryStore interface drift appears in both contract-test proposals and reflex usage, suggesting callers routinely invoke undeclared methods.
 - Drive goals for 'use simulations more' and 'connect dream memories' recur across cycles without measurable adoption, showing a gap between intent and 
@@ -51,11 +56,6 @@
 - Model latency varies 5x (7.9s to 43.5s) on the same ':free' tier, revealing unreliable throughput that breaks timing assumptions.
 - Prune runs report zero facts/events pruned for five consecutive cycles, indicating either ineffective criteria or memory pressure not triggering.
 - Duplicate skill proposals (shared scorer, MemoryStore contracts) recur across dream cycles, wasting consolidation capacity.
-- The simulator occasionally emits 'go' verdicts with zero enumerated risks, a blind spot that multiple proposals flag by requiring a minimum risk count
-- Free-tier model latency varies 2x (9.7–19.7 s) and 502/429 errors appear, yet fallbacks treat each model independently instead of sharing a single rat
-- MemoryStore API drift causes runtime failures in hands-execute, prompting repeated proposals for both startup contract tests and CI-level static verif
-- Score calibration emerges as a systemic weakness: three independent proposals across cycles demand cross-checking evolution winners, predictor outputs
-- Pruning runs consistently remove zero facts and events across multiple cycles, indicating the retention criteria are either misconfigured or the thres
 
 ---
 
