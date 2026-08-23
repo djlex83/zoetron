@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1349 Fakten** · Stand 2026-08-23 22:04 UTC · aktualisiert bei jedem Herzschlag
+**1362 Fakten** · Stand 2026-08-23 22:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 567
-- **swarm_artifact:** 442
-- **anti_pattern:** 118
-- **strategy:** 80
-- **last_swarm_goal:** 67
-- **last_swarm_critique:** 56
+- **dream:** 572
+- **swarm_artifact:** 445
+- **anti_pattern:** 120
+- **strategy:** 81
+- **last_swarm_goal:** 68
+- **last_swarm_critique:** 57
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:ich_kern_injektor_bauen__ein_selbst_für_jeden_llm_`
+*23.08. 22:06 UTC · Quelle: evolution*
+
+Protocol-First DI Kernel with Structural Subtyping - Variant 0 directly resolves all critic issues: eliminates import cycles via single _core.py, replaces Pydantic with frozen dataclass + tuple[Type[BaseException], ...] avoiding arbi
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Ich-Kern-Injektor bauen::2`
+*23.08. 22:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 4, 5]): Bytecode-Weaving Self-Injection at Import Time - Implement a PEP 569 __getattr__ module that lazily builds the Ich-Kern on first attribute access. The module itself is the container: registration = setattr, resolution
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Ich-Kern-Injektor bauen::1`
+*23.08. 22:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 5, 6]): Effect-System Monadic Core with Algebraic Effects - Model the Ich-Kern as an algebraic effect system: each LLM call runs in an EffectContext that carries identity, circuit-breaker state, and scope. Use a single-file d
+
+### `last_swarm_critique`
+*23.08. 22:05 UTC · Quelle: critic*
+
+score=3; issues=Project skeleton missing src/ich_kern/models.py but container.py imports from .models; Pydantic BreakerSettings.exception_types uses Type[Any] without ConfigDict(arbitrary_types_allowed=True) and mutable default_factory=list; Container implemen
+
+### `last_swarm_goal`
+*23.08. 22:05 UTC · Quelle: system*
+
+Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
+
+### `swarm_artifact:Implement DI Container with Breaker`
+*23.08. 22:05 UTC · Quelle: builder*
+
+```python # src/ich_kern/container.py """ DI Container with Circuit Breaker for Ich-Kern-Injektor.  Provides dependency injection with automatic resolution and circuit breaker protection for external 
+
+### `dream:202608232205:5`
+*23.08. 22:05 UTC · Quelle: dream*
+
+Swarm non-convergence despite good variant scores suggests missing cross-component validation in the benchmark suite.
+
+### `dream:202608232205:4`
+*23.08. 22:05 UTC · Quelle: dream*
+
+Calibration accuracy (predicted=actual=3) validates the scoring model but doesn't guarantee capability improvement.
+
+### `dream:202608232205:3`
+*23.08. 22:05 UTC · Quelle: dream*
+
+Evolution produces high-scoring variants (8–9/10) but system-level benchmark score remains low (3/10), indicating integration gaps.
+
+### `dream:202608232205:2`
+*23.08. 22:05 UTC · Quelle: dream*
+
+Benchmark development requires multiple simulation–revision cycles; atomic apply/rollback prevents partial deployments.
+
+### `dream:202608232205:1`
+*23.08. 22:05 UTC · Quelle: dream*
+
+High latency variance (2.6–20.5 s) across identical model calls demands runtime latency-aware routing with dynamic thresholds.
+
+### `swarm_artifact:Define Injector Pydantic Model`
+*23.08. 22:04 UTC · Quelle: builder*
+
+```python from typing import List, Type, Any from pydantic import BaseModel, Field, ValidationError  class ServiceDep(BaseModel):     name: str = Field(..., description="Identifier of the service")   
+
+### `swarm_artifact:Initialize Project Skeleton`
+*23.08. 22:04 UTC · Quelle: builder*
+
+```python import os  # Directories to create dirs = [     "src",     "scripts",     "tests",     "data/tools",     "hands_workspace", ]  # Create directories for d in dirs:     os.makedirs(d, exist_ok
 
 ### `last_swarm_goal`
 *23.08. 22:02 UTC · Quelle: system*
