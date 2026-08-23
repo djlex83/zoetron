@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
-- GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 3×)*
+- GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Modellfehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Two consecutive model_fail events on different providers (Nemotron 502, Gemma client error) show single-provider dependency is a systemic fragility.
+- Embedding-recall simulation passed with zero risks after a drive whisper identified TF-IDF semantic gaps, proving targeted architectural critiques gen
+- Zero pruning occurred despite 14+ model events, suggesting the retention policy is too conservative for high-volume operational logs.
+- Simulation verdicts calibrate perfectly (predicted=actual=4) when risks=0, but require 5 revisions when risks=5, revealing risk count as a proxy for i
+- Extreme latency outliers (123.9s, 72.0s) correlate with upstream 502 errors, indicating infrastructure instability not model slowness.
 - Prune runs consistently report 0 facts and 0 events pruned, indicating the pruning criteria never match live data and memory will grow unboundedly.
 - All three self-selected drive goals were introspective (dream-linking, skill review, error reduction), confirming the navel-gazing loop persists until
 - The simulation flagged 5 revisions but only 4 were applied, demonstrating that non-atomic partial application leaves silent residual risk while the sy
@@ -51,11 +56,6 @@
 - Every prune_run reports facts_pruned=0 and events_pruned=0, meaning pruning eligibility logic is effectively inert and memory will grow unboundedly.
 - Free-tier model latency varies 3x within minutes (9.4s to 29.4s on nemotron-3-super), so any fixed timeout will either stall the loop or kill healthy 
 - Skill proposals repeat verbatim across consecutive dream cycles (pre-flight validator, N=10 sample gate, convergence gate, atomic revisions all appear
-- Five new skill proposals accumulated this cycle while earlier ones remain unimplemented, confirming proposal generation chronically outpaces the execu
-- hands-execute crashed with AttributeError 'MemoryStore.add_fact', demonstrating that callers drifted from the MemoryStore interface with no contract t
-- Both simulations returned 'go' with zero risks and zero revisions right before a score-3 failure, so the current simulation gate carries no predictive
-- The score predictor overestimated by 3 points (predicted 6 vs actual 3), showing systematic optimism that corrupts any decision gated on its output.
-- Evolution-run winner scores (9/8/8) diverged sharply from the final independent score (3), proving the evolution evaluator is inflated relative to the
 
 ---
 

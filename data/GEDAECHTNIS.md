@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1118 Fakten** · Stand 2026-08-23 19:33 UTC · aktualisiert bei jedem Herzschlag
+**1125 Fakten** · Stand 2026-08-23 19:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 414
-- **dream:** 397
+- **swarm_artifact:** 415
+- **dream:** 402
 - **anti_pattern:** 108
 - **strategy:** 75
-- **last_swarm_goal:** 55
+- **last_swarm_goal:** 56
 - **last_swarm_critique:** 50
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Create Exemplar Data Model and Storage`
+*23.08. 19:36 UTC · Quelle: builder*
+
+# Exemplar Data Model and Storage  ```python # src/exemplar/models.py from __future__ import annotations import json import uuid from datetime import datetime from pathlib import Path from typing impo
+
+### `last_swarm_goal`
+*23.08. 19:33 UTC · Quelle: system*
+
+Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
+
+### `dream:202608231933:5`
+*23.08. 19:33 UTC · Quelle: dream*
+
+Two consecutive model_fail events on different providers (Nemotron 502, Gemma client error) show single-provider dependency is a systemic fragility.
+
+### `dream:202608231933:4`
+*23.08. 19:33 UTC · Quelle: dream*
+
+Embedding-recall simulation passed with zero risks after a drive whisper identified TF-IDF semantic gaps, proving targeted architectural critiques generate shovel-ready work.
+
+### `dream:202608231933:3`
+*23.08. 19:33 UTC · Quelle: dream*
+
+Zero pruning occurred despite 14+ model events, suggesting the retention policy is too conservative for high-volume operational logs.
+
+### `dream:202608231933:2`
+*23.08. 19:33 UTC · Quelle: dream*
+
+Simulation verdicts calibrate perfectly (predicted=actual=4) when risks=0, but require 5 revisions when risks=5, revealing risk count as a proxy for implementation complexity.
+
+### `dream:202608231933:1`
+*23.08. 19:33 UTC · Quelle: dream*
+
+Extreme latency outliers (123.9s, 72.0s) correlate with upstream 502 errors, indicating infrastructure instability not model slowness.
 
 ### `dream:202608231930:5`
 *23.08. 19:30 UTC · Quelle: dream*
