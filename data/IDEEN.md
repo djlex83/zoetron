@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Revision cycles often stall without external artifacts, confirming the need for a hard cap and mandatory verifiable checkpoints.
+- MemoryStore interface drift appears in both contract-test proposals and reflex usage, suggesting callers routinely invoke undeclared methods.
+- Drive goals for 'use simulations more' and 'connect dream memories' recur across cycles without measurable adoption, showing a gap between intent and 
+- Multiple independent proposals target scoring divergence and calibration, revealing a systemic lack of a single source of truth for evaluation.
+- Prune runs repeatedly return zero pruned items, indicating the retention policy is miscalibrated or the store is not accumulating cruft.
 - Meta-proposals (promote top 2, retire after 3 cycles, hard-cap revisions) show the system detecting its own process thrashing but not yet fixing it.
 - Drive goals repeat identical themes (simulation use, error reduction, dream linking) across cycles without measurable progress signals.
 - Model latency varies 5x (7.9s to 43.5s) on the same ':free' tier, revealing unreliable throughput that breaks timing assumptions.
@@ -51,11 +56,6 @@
 - MemoryStore API drift causes runtime failures in hands-execute, prompting repeated proposals for both startup contract tests and CI-level static verif
 - Score calibration emerges as a systemic weakness: three independent proposals across cycles demand cross-checking evolution winners, predictor outputs
 - Pruning runs consistently remove zero facts and events across multiple cycles, indicating the retention criteria are either misconfigured or the thres
-- Pruning thresholds are set too high (zero events pruned across runs), leaving calibration-critical data buried in noise.
-- Simulations frequently emit zero-risk 'go' verdicts that bypass scrutiny, requiring a mandatory second-pass gate.
-- Internal score predictors drift upward systematically; only independent re-scoring with a fixed threshold (Δ>2) catches inflation.
-- All :free-tier models share a hidden rate-limit pool, making provider diversity illusory without explicit pooling logic.
-- Model latency spikes (35s vs 19s baseline) cascade into swarm failures and demand automatic tier degradation.
 
 ---
 

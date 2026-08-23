@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1221 Fakten** · Stand 2026-08-23 20:48 UTC · aktualisiert bei jedem Herzschlag
+**1228 Fakten** · Stand 2026-08-23 20:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 497
-- **swarm_artifact:** 415
+- **dream:** 502
+- **swarm_artifact:** 416
 - **anti_pattern:** 108
 - **strategy:** 75
-- **last_swarm_goal:** 57
+- **last_swarm_goal:** 58
 - **last_swarm_critique:** 50
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Collect and categorize common invoice failure reasons from l`
+*23.08. 20:57 UTC · Quelle: builder*
+
+{   "taxonomy_version": "1.0",   "generated_at": "2025-01-15T10:30:00Z",   "scope": "Comprehensive taxonomy of invoice failure causes from academic literature, industry reports, tax authority guidelin
+
+### `last_swarm_goal`
+*23.08. 20:53 UTC · Quelle: system*
+
+Warum Rechnungen manchmal scheitern
+
+### `dream:202608232053:5`
+*23.08. 20:53 UTC · Quelle: dream*
+
+Revision cycles often stall without external artifacts, confirming the need for a hard cap and mandatory verifiable checkpoints.
+
+### `dream:202608232053:4`
+*23.08. 20:53 UTC · Quelle: dream*
+
+MemoryStore interface drift appears in both contract-test proposals and reflex usage, suggesting callers routinely invoke undeclared methods.
+
+### `dream:202608232053:3`
+*23.08. 20:53 UTC · Quelle: dream*
+
+Drive goals for 'use simulations more' and 'connect dream memories' recur across cycles without measurable adoption, showing a gap between intent and execution.
+
+### `dream:202608232053:2`
+*23.08. 20:53 UTC · Quelle: dream*
+
+Multiple independent proposals target scoring divergence and calibration, revealing a systemic lack of a single source of truth for evaluation.
+
+### `dream:202608232053:1`
+*23.08. 20:53 UTC · Quelle: dream*
+
+Prune runs repeatedly return zero pruned items, indicating the retention policy is miscalibrated or the store is not accumulating cruft.
 
 ### `dream:202608232048:5`
 *23.08. 20:48 UTC · Quelle: dream*
