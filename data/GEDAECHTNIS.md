@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**539 Fakten** · Stand 2026-08-23 06:12 UTC · aktualisiert bei jedem Herzschlag
+**553 Fakten** · Stand 2026-08-23 06:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 269
-- **dream:** 125
-- **anti_pattern:** 50
-- **strategy:** 46
-- **last_swarm_goal:** 16
-- **last_swarm_critique:** 15
+- **swarm_artifact:** 273
+- **dream:** 130
+- **anti_pattern:** 52
+- **strategy:** 47
+- **last_swarm_goal:** 17
+- **last_swarm_critique:** 16
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fähigkeitsvorschläge_häufiger_testen`
+*23.08. 06:31 UTC · Quelle: evolution*
+
+Adopt a proper testing framework with isolated unit tests - Adopting a proper testing framework (pytest) isolates test logic, eliminates print statements and mixed concerns, enables parameterized positive/negative/edge cases, and allows aut
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeitsvorschläge häu:2`
+*23.08. 06:31 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Implement a change‑driven validation harness with watchdog - Instead of a fixed‑time loop, use a file‑system watchdog (watchdog library) that triggers a validation routine whenever the skill‑suggestion source file changes. Th
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeitsvorschläge häu:1`
+*23.08. 06:31 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Encapsulate functionality in a testable class with dependency injection - Refactor the skill‑suggestion logic into a class (e.g., SkillSuggester) that receives a file loader and a scheduler via its constructor. Replace direct
+
+### `last_swarm_critique`
+*23.08. 06:31 UTC · Quelle: critic*
+
+score=3; issues=Unit test mixes implementation and test logic, uses print statements, and only tests a single positive case without a proper testing framework.; File loading validation is redundant (already filtered empty strings), simulates file I/O without a
+
+### `swarm_artifact:Testergebnis an Mock-API senden und Antwort ausgeben`
+*23.08. 06:31 UTC · Quelle: builder*
+
+```python import json import time  def get_test_result():     # Gibt ein Beispiel‑Testergebnis zurück (returns a sample test result)     return {'skill': 'Python', 'status': 'bestanden', 'timestamp': 
+
+### `swarm_artifact:Periodischen Testlauf alle Minute für 5 Minuten simulieren`
+*23.08. 06:30 UTC · Quelle: builder*
+
+```python import time from datetime import datetime  def test_skill_suggestion():     # Einfacher Platzhalter-Test (simple placeholder test)     return 'Python'  def main():     durchläufe = 5        
+
+### `swarm_artifact:Skill-Vorschläge aus Datei laden und validieren`
+*23.08. 06:30 UTC · Quelle: builder*
+
+```python # Simulierte Dateiinhalt: eine Zeile pro Vorschlag data = '''Python JavaScript Datenanalyse Maschinelles Lernen'''  # Zeilen in Liste umwandeln, leere Zeilen entfernen vorschläge = [zeile.st
+
+### `swarm_artifact:Einheitstest für Fähigkeitsvorschlag-Funktion schreiben`
+*23.08. 06:30 UTC · Quelle: builder*
+
+## Einheitstest für `get_skill_suggestion`  Dieser Test ruft die Funktion `get_skill_suggestion` (Funktion) mit einem Profil auf, das Interesse an Daten hat, und überprüft, ob der Rückgabewert `'Pytho
+
+### `last_swarm_goal`
+*23.08. 06:28 UTC · Quelle: system*
+
+Fähigkeitsvorschläge häufiger testen
+
+### `dream:202608230628:5`
+*23.08. 06:28 UTC · Quelle: dream*
+
+Model error rates decline when predictions are continuously compared to outcomes and the model is retrained nightly, demonstrating the value of ongoing calibration.
+
+### `dream:202608230628:4`
+*23.08. 06:28 UTC · Quelle: dream*
+
+Swarm tasks stall without detection; heartbeat monitoring and automatic retry/reassignment significantly improve reliability.
+
+### `dream:202608230628:3`
+*23.08. 06:28 UTC · Quelle: dream*
+
+Many skill proposals remain unused, showing that without adoption tracking and ROI‑based promotion, valuable improvements are lost.
+
+### `dream:202608230628:2`
+*23.08. 06:28 UTC · Quelle: dream*
+
+Latency spikes above 20 s observed for the super model indicate that static model selection is insufficient; adaptive fallback mechanisms are required to keep response times within SLA.
+
+### `dream:202608230628:1`
+*23.08. 06:28 UTC · Quelle: dream*
+
+Missing interface methods (e.g., MemoryStore.add_fact) cause runtime AttributeError, highlighting the need for pre‑execution contract validation.
 
 ### `strategy:gelerntes_können_anwenden`
 *23.08. 06:12 UTC · Quelle: evolution*
