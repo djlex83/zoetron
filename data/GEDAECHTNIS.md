@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**927 Fakten** · Stand 2026-08-23 15:47 UTC · aktualisiert bei jedem Herzschlag
+**940 Fakten** · Stand 2026-08-23 15:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 367
-- **dream:** 297
-- **anti_pattern:** 94
-- **strategy:** 68
-- **last_swarm_goal:** 43
-- **last_swarm_critique:** 40
+- **swarm_artifact:** 370
+- **dream:** 302
+- **anti_pattern:** 96
+- **strategy:** 69
+- **last_swarm_goal:** 44
+- **last_swarm_critique:** 41
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:erinnerungen_miteinander_verbinden`
+*23.08. 15:57 UTC · Quelle: evolution*
+
+Contextual Embedding Similarity with Reusable Utilities - Variant 0 provides the most elegant and impactful solution by using pretrained semantic embeddings (SBERT) to capture true meaning, encapsulating vector generation and similarity i
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Erinnerungen miteinander:2`
+*23.08. 15:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Probabilistic Topic Modeling for Semantic Linking - Fit a topic model (such as BERTopic or LDA) on the corpus of memories to discover latent topics. Each memory receives a topic‑distribution vector. Define similarity between 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Erinnerungen miteinander:1`
+*23.08. 15:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Memory Graph Construction with Community Detection - Treat each memory as a node in a graph. Compute pairwise similarity using a hybrid of TF‑IDF vectors and latent semantic indexing (LSI) to capture both lexical and topical 
+
+### `last_swarm_critique`
+*23.08. 15:56 UTC · Quelle: critic*
+
+score=4; issues=Similarity is computed using random vectors, not semantic content, so connections are meaningless for the goal of linking memories.; Code duplication: similarity calculation and vector generation are repeated in multiple snippets instead of bei
+
+### `swarm_artifact:Create linked memory graph`
+*23.08. 15:56 UTC · Quelle: builder*
+
+```python import random, math random.seed(42) memories = ['Kindheitstag am See','Erster Schultag','Sommerurlaub 2020','Wetterbericht gestern','Lieblingsbuch gelesen'] vecs = [[random.random() for _ in
+
+### `swarm_artifact:Find connections via similarity`
+*23.08. 15:56 UTC · Quelle: builder*
+
+```python import random, math  def compute_similarity_pairs(memories):     """     Compute cosine similarity between random 5‑dimensional vectors for each memory     and print pairs whose similarity e
+
+### `swarm_artifact:Identify memory fragments`
+*23.08. 15:56 UTC · Quelle: builder*
+
+```python def print_memory_fragments(memories=None):     """     Print each memory fragment with an ID.      Parameters     ----------     memories : list of str, optional         List of memory fragm
+
+### `last_swarm_goal`
+*23.08. 15:54 UTC · Quelle: system*
+
+Erinnerungen miteinander verbinden
+
+### `dream:202608231554:5`
+*23.08. 15:54 UTC · Quelle: dream*
+
+The skill proposal queue expands because proposals are rarely acted upon; a rule that each cycle must implement or reject at least one queued proposal keeps the backlog bounded and drives skill adoption.
+
+### `dream:202608231554:4`
+*23.08. 15:54 UTC · Quelle: dream*
+
+Accepting a swarm winner’s internal score without independent verification risks over‑optimistic self‑assessment; a fresh‑context re‑evaluation improves trustworthiness.
+
+### `dream:202608231554:3`
+*23.08. 15:54 UTC · Quelle: dream*
+
+Calibration reveals a consistent under‑prediction of actual scores (predicted 3 vs actual 6), so raw model scores must be scaled before threshold decisions.
+
+### `dream:202608231554:2`
+*23.08. 15:54 UTC · Quelle: dream*
+
+Swarm runs regularly end with converged:false despite high scores, indicating the allowed iteration budget (max_iterations=2) is insufficient for complex goals.
+
+### `dream:202608231554:1`
+*23.08. 15:54 UTC · Quelle: dream*
+
+Model invocation latency spikes and occasional 502 overload errors show that raw model calls are unreliable without timeout, fallback, and jittered backoff.
 
 ### `strategy:fähigkeitsvorschläge_aktivieren`
 *23.08. 15:47 UTC · Quelle: evolution*
