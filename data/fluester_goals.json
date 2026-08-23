@@ -57,13 +57,13 @@
   "title": "Extern-Quote in DRIVE: raus aus der Selbst-Schleife",
   "why": "Fast alle deine selbstgewählten Ziele drehen sich um deine eigenen Modellfehler - das ist Nabelschau. Ändere drive.py: jedes 3. selbstgewählte Ziel MUSS ein externes Deliverable haben (etwas, das ein Mensch außerhalb von dir direkt nutzen kann, z.B. ein Report, ein Werkzeug, eine Analyse) und wird im Ziel mit extern:true markiert. Fertig wenn: die Extern-Quote im Wochenreport erscheint und von den nächsten 9 Drive-Zielen mindestens 3 als extern markiert und erfüllt sind.",
   "signal": "failure",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Embedding-Recall statt reinem Wortvergleich",
   "why": "TF-IDF (Wortstatistik) findet ähnliche Wörter, aber nicht ähnliche Bedeutung, und skaliert schlecht über ~10.000 Fakten. Baue embedding_recall.py: Fakten als Embeddings (Zahlen-Fingerabdruck der Bedeutung) in SQLite speichern, Top-5-Suche per Kosinus-Ähnlichkeit. Dazu benchmark.py: 20 feste Testfragen gegen den bestehenden TF-IDF-Recall antreten lassen, Ergebnis als JSON-Report speichern. Fertig wenn: der Benchmark-Report existiert und der Embedding-Recall bei mindestens 12 von 20 Fragen gleich gut oder besser abschneidet.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl",

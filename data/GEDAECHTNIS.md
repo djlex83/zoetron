@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1072 Fakten** · Stand 2026-08-23 18:49 UTC · aktualisiert bei jedem Herzschlag
+**1097 Fakten** · Stand 2026-08-23 19:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 404
-- **dream:** 372
-- **anti_pattern:** 104
-- **strategy:** 73
-- **last_swarm_goal:** 52
-- **last_swarm_critique:** 48
+- **swarm_artifact:** 413
+- **dream:** 382
+- **anti_pattern:** 106
+- **strategy:** 74
+- **last_swarm_goal:** 54
+- **last_swarm_critique:** 49
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,131 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Compare embedding‑based recall vs TF‑IDF recall on a tiny te`
+*23.08. 19:03 UTC · Quelle: builder*
+
+# Artefakt: Embedding‑Recall vs. TF‑IDF‑Recall auf einem Mini‑Testset  ## Designentscheidungen (bewusste Korrekturen gegenüber der Rohversion)  1. **Vokabular‑Leak behoben:** Der Vectorizer wird **nur
+
+### `swarm_artifact:Implement a TF‑IDF baseline and compute its top‑k retrieval`
+*23.08. 19:01 UTC · Quelle: builder*
+
+# TF‑IDF Baseline: Lexical Retrieval als Kontrast zu Embedding‑Recall  **Zweck:** Derselbe Korpus und dieselbe Query wie im Embedding‑Artefakt – diesmal mit reiner Wortstatistik (`TfidfVectorizer` + C
+
+### `strategy:extern_quote_in_drive__raus_aus_der_selbst_schleif`
+*23.08. 19:01 UTC · Quelle: evolution*
+
+Unified data model and iterative graph traversal - Variant 0 resolves all three critic issues at their root cause: normalizing the 'source' field to None/quote-ID eliminates the critical type incompatibility between fetch_external_
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:2`
+*23.08. 19:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Decoupled event‑driven pipeline with validation stage - Break the process into three independent stages: (1) a fetcher that emits quote events (including external quotes) onto a message queue; (2) a validator that consumes ev
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:1`
+*23.08. 19:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Adapter layer with type coercion - Leave the existing artifacts unchanged and insert a thin adapter between fetch_external_quote and detect_self_loop. The adapter converts the author‑string 'source' returned by fetch_external
+
+### `swarm_artifact:Retrieve top‑k similar items using cosine similarity (embedd`
+*23.08. 19:00 UTC · Quelle: builder*
+
+```markdown # Embedding‑Recall: Brute‑Force Cosine Similarity Search  ```python from sentence_transformers import SentenceTransformer import numpy as np  # Load a pre‑trained sentence‑embedding model 
+
+### `swarm_artifact:Encode a corpus and inspect the resulting embeddings`
+*23.08. 18:59 UTC · Quelle: builder*
+
+```python from sentence_transformers import SentenceTransformer import numpy as np  model = SentenceTransformer('all-MiniLM-L6-v2') texts = [     "Hello world",     "Embeddings are useful",     "Machi
+
+### `swarm_artifact:Select and download a sentence embedding model`
+*23.08. 18:59 UTC · Quelle: builder*
+
+# Sentence Embedding Model Selection  Chosen model: `all-MiniLM-L6-v2`  ## Installation  ```bash pip install sentence-transformers ```  ## Usage  ```python from sentence_transformers import SentenceTr
+
+### `last_swarm_critique`
+*23.08. 18:59 UTC · Quelle: critic*
+
+score=4; issues=Critical incompatibility: Artifact 2's fetch_external_quote returns 'source' as author string, but Artifact 1's detect_self_loop expects 'source' to be either None or a quote ID (dictionary key). This breaks loop detection when external quotes 
+
+### `last_swarm_goal`
+*23.08. 18:58 UTC · Quelle: system*
+
+Embedding-Recall statt reinem Wortvergleich
+
+### `dream:202608231858:5`
+*23.08. 18:58 UTC · Quelle: dream*
+
+Repeated revision loops (5 revisions, 4 applied) without early interface checks waste cycles; pre‑emptive tool/reflex matching could prevent unnecessary swarms.
+
+### `dream:202608231858:4`
+*23.08. 18:58 UTC · Quelle: dream*
+
+Evolutionary variants can raise scores (up to 9) but swarm convergence fails when generated code lacks required store interfaces, showing that fitness alone doesn’t guarantee integrality.
+
+### `dream:202608231858:3`
+*23.08. 18:58 UTC · Quelle: dream*
+
+Simulation verdicts consistently over‑predict benchmark scores (predicted 5 vs actual 3), revealing a calibration gap that inflates go‑decisions.
+
+### `dream:202608231858:2`
+*23.08. 18:58 UTC · Quelle: dream*
+
+Model latency exhibits high variance (9‑85 s), frequently exceeding 30 s, indicating a need for latency‑aware routing to fallback models.
+
+### `dream:202608231858:1`
+*23.08. 18:58 UTC · Quelle: dream*
+
+Missing method contracts (e.g., add_fact) between auto-generated benchmark code and MemoryStore cause AttributeError failures that halt swarm execution.
+
+### `swarm_artifact:Validate loop elimination with tests`
+*23.08. 18:58 UTC · Quelle: builder*
+
+```python import requests import time from unittest.mock import patch, Mock import random  # Assume these are available from existing artifacts: # from quote_diagnostics import detect_self_loop   # Fi
+
+### `swarm_artifact:Update DRIVE configuration to prefer external quotes`
+*23.08. 18:55 UTC · Quelle: builder*
+
+```markdown # DRIVE Configuration Update with External Quote Validation  This script updates the DRIVE configuration to prefer external quotes, adds a validation step that checks the reachability of t
+
+### `swarm_artifact:Implement external quote source integration`
+*23.08. 18:55 UTC · Quelle: builder*
+
+```python import requests import time import random  # Internal fallback quote cache _INTERNAL_QUOTE_CACHE = [     {"quote": "The only limit to our realization of tomorrow is our doubts today.", "sour
+
+### `swarm_artifact:Diagnose self-loop in DRIVE quote generation`
+*23.08. 18:55 UTC · Quelle: builder*
+
+```markdown # Enhanced Self‑Loop Diagnostic for DRIVE Quote Generation  This script recursively traces the `source` reference of each quote and detects any path that leads back to the original quote (
+
+### `last_swarm_goal`
+*23.08. 18:54 UTC · Quelle: system*
+
+Extern-Quote in DRIVE: raus aus der Selbst-Schleife
+
+### `dream:202608231854:5`
+*23.08. 18:54 UTC · Quelle: dream*
+
+Automated contract and simulation‑verdict testing in CI catches regressions before deployment.
+
+### `dream:202608231854:4`
+*23.08. 18:54 UTC · Quelle: dream*
+
+Continuous monitoring of error patterns and resource usage (latency, prune activity) enables proactive throttling and alerts.
+
+### `dream:202608231854:3`
+*23.08. 18:54 UTC · Quelle: dream*
+
+Atomic application of changes followed by re‑verification eliminates residual risk accumulation.
+
+### `dream:202608231854:2`
+*23.08. 18:54 UTC · Quelle: dream*
+
+Convergence gating (minimum cycles or score threshold) reduces premature acceptance of suboptimal solutions.
+
+### `dream:202608231854:1`
+*23.08. 18:54 UTC · Quelle: dream*
+
+Early validation of inputs/outputs (e.g., interface contracts, minimum sample size) prevents unstable learning and score corruption.
 
 ### `dream:202608231848:5`
 *23.08. 18:48 UTC · Quelle: dream*
