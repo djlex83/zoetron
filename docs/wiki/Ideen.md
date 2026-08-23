@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 12:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 12:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Same model (nemotron-3-super) shows 8x latency variance (4.4s to 35s), making timeout-based fallbacks unreliable without percentile-based SLAs.
+- MemoryStore lacks required 'add_fact' method causing AttributeError during hand-execution, revealing missing interface contracts.
+- Swarm role imbalance (4 builders : 1 critic) correlates with non-convergence (score 6, converged false) despite evolution improving variant quality (6
+- Calibration consistently underestimates actual scores by ~33% (predicted 4 vs actual 6), causing premature go/no-go decisions without correction.
+- Free-tier models across all providers (Nvidia, Google, Z.ai, Stealth) simultaneously hit rate limits (429) and resource exhaustion (502), indicating s
 - Evolution produces higher-scoring variants (up to 9) yet the swarm still fails to converge, indicating the fitness function optimizes for proxy metric
 - Missing MemoryStore.add_fact method halts hand execution entirely, exposing a critical infrastructure gap that blocks all downstream automation.
 - Perfect calibration prediction (abs_error=0) but low task score (4/10) reveals a fundamental misalignment between the calibration metric and the actua
@@ -51,11 +56,6 @@
 - The metabolism budget of 2 iterations and 5 tasks is too restrictive for missions with more than 2 risks, leading to incomplete simulations.
 - Despite 5 revisions for 5 risks, the simulation verdict remained 'revise', indicating that the revision process may not be converging effectively.
 - Model latency exhibits high variability, with spikes over 248 seconds, which can cause timeouts and disrupt swarm coordination.
-- Calibration drift (predicted vs. actual goal scores ~0.6 ratio) consistently skews go/no-go decisions, necessitating real-time correction factors.
-- Swarm role imbalances (critic vs. builder ratios) emerge as a recurring failure mode, requiring dynamic quota enforcement at mission startup.
-- Zero-prune runs across multiple cycles suggest memory growth is unbounded, risking performance degradation over time without adaptive pruning threshol
-- Repeated skill proposals highlight a gap between dream-generated ideas and implementation, indicating a need for automated skill integration pipelines
-- Model latency spikes (26-36s) and occasional failures require proactive circuit breakers and fallback models to maintain system responsiveness and rel
 
 ---
 

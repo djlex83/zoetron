@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**777 Fakten** · Stand 2026-08-23 12:33 UTC · aktualisiert bei jedem Herzschlag
+**790 Fakten** · Stand 2026-08-23 12:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 331
-- **dream:** 236
-- **anti_pattern:** 74
-- **strategy:** 58
-- **last_swarm_goal:** 31
-- **last_swarm_critique:** 29
+- **swarm_artifact:** 334
+- **dream:** 241
+- **anti_pattern:** 76
+- **strategy:** 59
+- **last_swarm_goal:** 32
+- **last_swarm_critique:** 30
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fehler_beim_denken_reduzieren`
+*23.08. 12:48 UTC · Quelle: evolution*
+
+immutable-functional-core - Variant 2 (immutable-functional-core) achieves the highest elegance (9) and impact (9) with strong feasibility (8). It eliminates race conditions at the root by removing shared mut
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fehler beim Denken reduz:1`
+*23.08. 12:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 9]): event-sourcing-cqrs - Adopt Event Sourcing + CQRS. Write model: append-only event store (SQLite or file) storing FactAdded/FactUpdated/FactDeleted events. Read model: separate projection databases (in-memory dicts, Re
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fehler beim Denken reduz:0`
+*23.08. 12:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): actor-model-isolation - Replace shared-memory SQLite with actor-based architecture. Each MemoryStore operation becomes a message sent to a dedicated actor process that serializes all DB access internally. Use Python's
+
+### `last_swarm_critique`
+*23.08. 12:47 UTC · Quelle: critic*
+
+score=3; issues=All three artifacts are truncated/incomplete (memory_store.py cuts off at 'FROM facts O', sla_monitor.py at 'Significa', validation_pipeline.py at 'self.knowledg'), making them non-functional.; MemoryStore: Race conditions - add_fact uses self.
+
+### `swarm_artifact:Create reasoning validation pipeline with self-consistency c`
+*23.08. 12:45 UTC · Quelle: builder*
+
+{"filename": "src/reasoning/validation_pipeline.py", "content": "\"\"\"Reasoning Validation Pipeline with Self-Consistency Checks.\n\nImplements a validation layer that runs multiple reasoning passes 
+
+### `swarm_artifact:Add percentile-based SLA monitoring for model latency varian`
+*23.08. 12:42 UTC · Quelle: builder*
+
+{   "artifact_type": "code",   "filename": "src/monitoring/sla_monitor.py",   "content": "\"\"\"Percentile-based SLA monitoring for model latency variance.\n\nImplements adaptive timeout calculation u
+
+### `swarm_artifact:Implement MemoryStore.add_fact method to fix AttributeError `
+*23.08. 12:42 UTC · Quelle: builder*
+
+{   "artifact_type": "code",   "filename": "src/memory/memory_store.py",   "content": "\"\"\"MemoryStore implementation with add_fact method.\"\"\"\n\nimport json\nimport sqlite3\nimport threading\nim
+
+### `last_swarm_goal`
+*23.08. 12:39 UTC · Quelle: system*
+
+Fehler beim Denken reduzieren
+
+### `dream:202608231239:5`
+*23.08. 12:39 UTC · Quelle: dream*
+
+Same model (nemotron-3-super) shows 8x latency variance (4.4s to 35s), making timeout-based fallbacks unreliable without percentile-based SLAs.
+
+### `dream:202608231239:4`
+*23.08. 12:39 UTC · Quelle: dream*
+
+MemoryStore lacks required 'add_fact' method causing AttributeError during hand-execution, revealing missing interface contracts.
+
+### `dream:202608231239:3`
+*23.08. 12:39 UTC · Quelle: dream*
+
+Swarm role imbalance (4 builders : 1 critic) correlates with non-convergence (score 6, converged false) despite evolution improving variant quality (6→9).
+
+### `dream:202608231239:2`
+*23.08. 12:39 UTC · Quelle: dream*
+
+Calibration consistently underestimates actual scores by ~33% (predicted 4 vs actual 6), causing premature go/no-go decisions without correction.
+
+### `dream:202608231239:1`
+*23.08. 12:39 UTC · Quelle: dream*
+
+Free-tier models across all providers (Nvidia, Google, Z.ai, Stealth) simultaneously hit rate limits (429) and resource exhaustion (502), indicating systemic capacity constraints rather than isolated failures.
 
 ### `strategy:träume_in_echte_aufträge_verwandeln`
 *23.08. 12:32 UTC · Quelle: evolution*
