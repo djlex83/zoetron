@@ -15,7 +15,7 @@
   "title": "MemoryStore-Vertragswächter bauen (Contract-Validator)",
   "why": "Deine eigene meistgewünschte Fähigkeit: 5x auf deinem Ideen-Board. Baue ein ausführbares Skript validator.py: prüft beim Prozessstart und vor jedem HANDS-Batch, ob der MemoryStore alle Pflicht-Methoden und Datenfelder besitzt, und bricht sonst sofort mit klarer Fehlermeldung ab (fail fast = lieber sofort scheitern als später mit kaputten Daten arbeiten). Fertig wenn: 1) der Validator im Heartbeat läuft, 2) ein Test absichtlich den Vertrag bricht und der saubere Abbruch nachweisbar im Log steht. Nur lauffähiger Code zählt, kein Design-Dokument.",
   "signal": "gap",
-  "_done": false
+  "_done": true
  },
  {
   "title": "Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)",
