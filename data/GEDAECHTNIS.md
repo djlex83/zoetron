@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**321 Fakten** · Stand 2026-08-23 00:21 UTC · aktualisiert bei jedem Herzschlag
+**326 Fakten** · Stand 2026-08-23 00:23 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 216
-- **dream:** 35
+- **dream:** 40
 - **strategy:** 31
 - **anti_pattern:** 24
 - **frontier:** 3
@@ -17,6 +17,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608230023:5`
+*23.08. 00:23 UTC · Quelle: dream*
+
+Swarms frequently start but rarely converge, suggesting missing heartbeat/stall detection.
+
+### `dream:202608230023:4`
+*23.08. 00:23 UTC · Quelle: dream*
+
+Model errors (5) and GitHub errors (3) cluster around interface mismatches, not model capability.
+
+### `dream:202608230023:3`
+*23.08. 00:23 UTC · Quelle: dream*
+
+13 dreams and 9 simulations produced only 7 applied changes, revealing a 46% transfer gap from insight to action.
+
+### `dream:202608230023:2`
+*23.08. 00:23 UTC · Quelle: dream*
+
+Identical skill proposals recur across 3+ dream cycles but never reach production, indicating a broken promotion pipeline.
+
+### `dream:202608230023:1`
+*23.08. 00:23 UTC · Quelle: dream*
+
+Model latency varies 3x (4-13s) without failover, causing unpredictable task duration.
 
 ### `best_swarm_score`
 *23.08. 00:14 UTC · Quelle: critic*
