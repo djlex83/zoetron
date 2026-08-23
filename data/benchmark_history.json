@@ -1,13 +1,15 @@
 {
  "laeufe": [
   {
-   "ts": 1787524594.3876283,
+   "ts": 1787525132.4732795,
    "datum": "2026-08-23",
-   "punkte": 25,
+   "punkte": 18,
    "max": 25,
-   "code": 10,
-   "daten": 10,
-   "recall": 5,
+   "cortex": 5,
+   "werkzeug": 4,
+   "konvergenz": 3,
+   "reflex": 2,
+   "gedaechtnis": 4,
    "basislinie": true
   }
  ]

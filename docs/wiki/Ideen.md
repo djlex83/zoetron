@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen lernen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren und stabiler machen *(wieder aufgegriffen: 2×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
-- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
-- Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Previous dream output (5 insights, 5 proposals) did not prevent recurrence of the same latency and adoption issues.
+- Three drive goals (skill adoption, Hermes protocol, swarm completion) remain open across cycles, indicating a systemic execution gap.
+- Prune runs consistently remove zero items, suggesting retention thresholds are too high or accumulation is too slow.
+- Hand actions complete in ~30 ms with zero failures, proving local tooling is stable while remote inference is the bottleneck.
+- Model latency for nemotron-3-ultra varies wildly (4.5–182.8 s) making it unreliable for time-bound tasks.
 - Recurrent drive goals (revive old dream, fix model errors, apply skills) persist across cycles because the system lacks a mechanism to promote a drive
 - The Hermes-Brücke architecture relies on filesystem polling (bruecke.py) for inter-agent communication, which inherently creates race conditions and l
 - Five skill proposals were generated in one cycle (MemoryStore fallback, model_health, smoke tests, proposal filter, prune metrics) but zero were imple
@@ -51,11 +56,6 @@
 - Hermes bridge swarm has been started at least twice but no completion event appears, revealing a systemic pattern of swarm initiation without closure.
 - Model latency varies 25x (4.6s–113.7s) with no circuit breaker or fallback, causing unpredictable swarm delays and timeouts.
 - Pruning runs consistently report zero candidates pruned despite instrumentation proposals, indicating the pruning logic or trigger conditions are fund
-- Eight persistent model errors remain unclassified; error taxonomy is missing, preventing targeted fixes.
-- Swarm execution succeeded (simulation approved, all hand_actions ok) showing the filesystem-based coordination protocol works for multi-agent tasks.
-- Single baseline benchmark (24/25) provides no trend data; progress cannot be distinguished from variance without repeated measurement.
-- Fifty skill proposals exist but adoption is unmeasured, creating a proposal-execution gap where learning doesn't compound.
-- Model latency varies 200x (0.6s–114.5s) indicating unreliable inference infrastructure that corrupts timing-dependent decisions.
 
 ---
 

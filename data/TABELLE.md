@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1274 Neuronen · 19080 bewertete Synapsen
+Stand: 1284 Neuronen · 19271 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,12 +10,12 @@ Stand: 1274 Neuronen · 19080 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 109 | 0.26 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 110 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 119 | 0.23 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 119 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 119 | 0.23 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 119 | 0.23 |
-| 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 100 | 0.27 |
+| 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 101 | 0.27 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 119 | 0.22 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 119 | 0.22 |
 | 9 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 118 | 0.23 |

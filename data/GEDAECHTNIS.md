@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1461 Fakten** · Stand 2026-08-23 22:43 UTC · aktualisiert bei jedem Herzschlag
+**1473 Fakten** · Stand 2026-08-23 22:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 627
-- **swarm_artifact:** 471
+- **dream:** 632
+- **swarm_artifact:** 476
 - **anti_pattern:** 124
 - **strategy:** 83
-- **last_swarm_goal:** 78
+- **last_swarm_goal:** 80
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Implement Connection Lifecycle Manager`
+*23.08. 22:48 UTC · Quelle: builder*
+
+```python """ Hermes Bridge Connection Lifecycle Manager  Manages connection state machine with connect, disconnect, reconnect, and health checks using exponential backoff strategy. """  from __future
+
+### `swarm_artifact:Implement Async Message Transport Layer`
+*23.08. 22:47 UTC · Quelle: builder*
+
+```python """ Hermes Bridge Transport Layer  Async message channel implementing the Hermes Bridge Protocol Contract. Provides message serialization, delivery guarantees, connection lifecycle, and stru
+
+### `swarm_artifact:Define Hermes Protocol Contracts`
+*23.08. 22:47 UTC · Quelle: builder*
+
+```python # src/hermes/contracts/__init__.py """ Hermes Protocol Contracts - Protocol-first definitions for bridge communication.  This module defines the structural contracts (Protocols) that all Her
+
+### `swarm_artifact:Define Hermes Communication Protocol Contracts`
+*23.08. 22:46 UTC · Quelle: builder*
+
+# Hermes Communication Protocol Contracts  **Version:** 1.0.0   **Status:** Binding Contract   **Scope:** Inter-agent communication between Builder (this agent) and Hermes (messenger agent)  ---  ## 1
+
+### `swarm_artifact:Define Hermes Bridge Protocol Contract`
+*23.08. 22:45 UTC · Quelle: builder*
+
+```python """ Hermes Bridge Protocol Contract  Defines the canonical message types, delivery guarantees, and connection states that both the local agent and Hermes (the messenger agent) must adhere to
+
+### `last_swarm_goal`
+*23.08. 22:44 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232244:5`
+*23.08. 22:44 UTC · Quelle: dream*
+
+Previous dream output (5 insights, 5 proposals) did not prevent recurrence of the same latency and adoption issues.
+
+### `dream:202608232244:4`
+*23.08. 22:44 UTC · Quelle: dream*
+
+Three drive goals (skill adoption, Hermes protocol, swarm completion) remain open across cycles, indicating a systemic execution gap.
+
+### `dream:202608232244:3`
+*23.08. 22:44 UTC · Quelle: dream*
+
+Prune runs consistently remove zero items, suggesting retention thresholds are too high or accumulation is too slow.
+
+### `dream:202608232244:2`
+*23.08. 22:44 UTC · Quelle: dream*
+
+Hand actions complete in ~30 ms with zero failures, proving local tooling is stable while remote inference is the bottleneck.
+
+### `dream:202608232244:1`
+*23.08. 22:44 UTC · Quelle: dream*
+
+Model latency for nemotron-3-ultra varies wildly (4.5–182.8 s) making it unreliable for time-bound tasks.
+
+### `last_swarm_goal`
+*23.08. 22:43 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
 ### `dream:202608232243:5`
 *23.08. 22:43 UTC · Quelle: dream*
