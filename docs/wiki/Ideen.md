@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarms with a builder-heavy ratio (5 builders : 1 critic) under a hard 2-iteration budget terminate at score 7 without converging, indicating converge
+- Hand actions fail in 0.05s on interface drift ('MemoryStore' object has no attribute 'add_fact'), showing generated code is never validated against cu
+- Prune runs repeatedly remove 0 facts and 0 events, meaning the eligibility criteria match nothing or the prune path is effectively dead code while the
+- Model call latency spans 24s–370s (two calls over 230s), so any pipeline assuming sub-minute responses stalls; timeouts must be derived from per-model
+- Skill proposals are being regenerated cycle after cycle instead of promoted to execution — retry/backoff, pruning eligibility, and a proposal ledger h
 - The reflex-mode goal converged cheaply while the builder-heavy swarm (planner:1, builder:5, critic:1) did not converge in 2 cycles, suggesting role ra
 - A prune run deleting 0 facts and 0 events while the store keeps growing indicates the eligibility logic is inert, not that the data is clean.
 - The instant 0.05s failure ('MemoryStore' object has no attribute 'add_fact') shows tools are invoked against assumed interfaces without pre-call signa
@@ -51,11 +56,6 @@
 - Reflex-mode completions record score=null, so fast-path successes bypass the calibration loop entirely and silently skew performance statistics.
 - The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') proves call sites reference undeclared store methods and nothing validates 
 - Internal evolution scores disagree with the independent act_done scorer by ±2 points in both directions (winner scored 9 internally but 7 finally; cal
-- prune_run removed 0 facts and 0 events, meaning the pruning criteria are effectively inert and memory hygiene silently degrades unless zero-prune runs
-- hands-execute crashed with AttributeError on MemoryStore.add_fact, proving that callers drift from the store's actual API; every store method used by 
-- The 'Extern-Quote' goal failed because two full swarm cycles still ended unconverged - breaking self-loops requires injecting an external artifact (qu
-- Score mispredictions are biased, not random (rolling mean error +3, abs errors 2-3), so a rolling-bias correction must be applied to every prediction 
-- Internal evolution scores are systematically inflated relative to outcomes: the winner scored 9/10 internally but delivered 4/10 at act_done, so any i
 
 ---
 

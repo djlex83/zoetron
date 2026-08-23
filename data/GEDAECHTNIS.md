@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1146 Fakten** · Stand 2026-08-23 19:55 UTC · aktualisiert bei jedem Herzschlag
+**1151 Fakten** · Stand 2026-08-23 19:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 422
+- **dream:** 427
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231958:5`
+*23.08. 19:58 UTC · Quelle: dream*
+
+Swarms with a builder-heavy ratio (5 builders : 1 critic) under a hard 2-iteration budget terminate at score 7 without converging, indicating convergence is gated by critic coverage and iteration allowance rather than builder effort.
+
+### `dream:202608231958:4`
+*23.08. 19:58 UTC · Quelle: dream*
+
+Hand actions fail in 0.05s on interface drift ('MemoryStore' object has no attribute 'add_fact'), showing generated code is never validated against current runtime APIs before execution.
+
+### `dream:202608231958:3`
+*23.08. 19:58 UTC · Quelle: dream*
+
+Prune runs repeatedly remove 0 facts and 0 events, meaning the eligibility criteria match nothing or the prune path is effectively dead code while the memory store grows unbounded.
+
+### `dream:202608231958:2`
+*23.08. 19:58 UTC · Quelle: dream*
+
+Model call latency spans 24s–370s (two calls over 230s), so any pipeline assuming sub-minute responses stalls; timeouts must be derived from per-model observed latency distributions, not fixed defaults.
+
+### `dream:202608231958:1`
+*23.08. 19:58 UTC · Quelle: dream*
+
+Skill proposals are being regenerated cycle after cycle instead of promoted to execution — retry/backoff, pruning eligibility, and a proposal ledger have now each been proposed at least twice with zero implementations.
 
 ### `dream:202608231953:5`
 *23.08. 19:53 UTC · Quelle: dream*
