@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Isolated knowledge (e.g., old dreams, biographies) fails to generate new value unless linked through explicit cross‑referencing mechanisms.
+- Ideas stay unused when there is no systematic process to prototype, evaluate, and promote promising proposals.
+- Calculation failures frequently stem from unchecked assumptions or missing sanity checks in numeric pipelines.
+- Task-transfer errors occur when interface contracts are not validated, causing data loss or corruption.
+- Incomplete group projects often result from missing explicit completion criteria and verification steps before marking tasks as done.
 - Runtime errors from missing or changed interfaces can be avoided by validating contracts at startup and guarding calls.
 - Overreliance on generator self‑scores inflates perceived quality; independent, calibrated scoring is required for reliable selection.
 - Task-transfer failures stem from unclear responsibility and lack of automated verification of hand‑off data.
@@ -51,11 +56,6 @@
 - Stored facts are rarely reused, indicating a need for systematic retrieval and linking mechanisms to unlock latent knowledge.
 - Recurring failures in model and GitHub tasks point to missing root‑cause analysis and preventive guards.
 - Many skill proposals remain unimplemented because they lack explicit testing or integration steps, causing wasted potential.
-- Mandating at least one concrete risk for 'go' verdicts and a second simulation pass for zero‑risk cases prevents unsafe approvals.
-- Exponential backoff with jitter plus a shared ':free' model pool effectively mitigates 502/429 rate‑limit failures.
-- Consecutive prune_run cycles with zero prunes indicate outdated pruning criteria and merit an audit.
-- Independent scorer disagreement >2 points flags unreliable evaluations and should trigger rejection or calibration.
-- Score inflation is corrected by subtracting the rolling mean prediction error before using scores in evolution selection.
 
 ---
 

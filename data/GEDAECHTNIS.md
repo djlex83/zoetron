@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1186 Fakten** · Stand 2026-08-23 20:27 UTC · aktualisiert bei jedem Herzschlag
+**1191 Fakten** · Stand 2026-08-23 20:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 462
+- **dream:** 467
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232027:5`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Isolated knowledge (e.g., old dreams, biographies) fails to generate new value unless linked through explicit cross‑referencing mechanisms.
+
+### `dream:202608232027:4`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Ideas stay unused when there is no systematic process to prototype, evaluate, and promote promising proposals.
+
+### `dream:202608232027:3`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Calculation failures frequently stem from unchecked assumptions or missing sanity checks in numeric pipelines.
+
+### `dream:202608232027:2`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Task-transfer errors occur when interface contracts are not validated, causing data loss or corruption.
+
+### `dream:202608232027:1`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Incomplete group projects often result from missing explicit completion criteria and verification steps before marking tasks as done.
 
 ### `dream:202608232027:5`
 *23.08. 20:27 UTC · Quelle: dream*
