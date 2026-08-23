@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,7 +10,6 @@
 - Deploy a nightly model calibration updater: log (goal_embedding, predicted, actual), retrain a lightweight reg *(hatte die Idee 4×)*
 - Add mandatory invocation smoke test in act_done: execute each new tool once with synthetic input and verify no *(hatte die Idee 4×)*
 - Build skill_proposal_filter that scores proposals by novelty, feasibility, and alignment with active drive goa *(hatte die Idee 4×)*
-- Implement automatic calibration updates: after each prediction, compare predicted vs actual outcome and adjust *(hatte die Idee 3×)*
 - Create a skill promotion pipeline: sandbox‑test each proposal, measure performance delta vs baseline, compute  *(hatte die Idee 3×)*
 - Establish interface contract validation at swarm startup: verify all components expose required methods (e.g., *(hatte die Idee 3×)*
 - Enforce swarm role quorum at startup: require ≥2 planners, ≥2 critics, and builder:planner ratio ≤3:1; abort o *(hatte die Idee 3×)*
@@ -20,6 +19,7 @@
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
+- Implement an adaptive latency circuit breaker: track per‑model p90 latency, trigger fallback to a faster model *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Many simulations were launched but only one was ever applied, revealing a recurring gap between generating plans and executing their results.
+- Local hand actions always succeeded in under 0.05s with exit 0, confirming failures are confined entirely to remote LLM API calls and never to local t
+- Successful stealth/ox-alpha calls took 145–151 seconds, so timeouts and scheduling budgets must assume multi-minute latencies instead of treating slow
+- The automatic 1800-second lockout after 3 consecutive failures worked as intended and should be retained as the standard circuit-breaker policy.
+- All 429 failures came from OpenRouter free-tier models sharing one rate-limited endpoint, so rotating among them provides no real redundancy.
 - The Hermes bridge goal emerged independently from both dream analysis and swarm planning (a 'combination' signal), and since filesystem hand-actions r
 - Prune runs removed 0 facts and 0 events, proving current pruning thresholds never fire and memory will grow unbounded without usage- or age-based evic
 - Skill proposals systematically outpace simulation testing (confirmed by the explicit 'gap' drive goal), creating an idea graveyard unless proposals ar
@@ -51,11 +56,6 @@
 - Identical simulation goal 'Hermes-Brücke' executed twice with same risks/revisions parameters, wasting compute on redundant verification.
 - Hand actions complete consistently in 20-50ms locally, proving local execution is orders of magnitude more dependable than remote model calls.
 - Model latency varies extremely (0.7s to 143s) with upstream 502 overload errors, making remote inference unreliable for time-critical paths.
-- Previous dream output (5 insights, 5 proposals) did not prevent recurrence of the same latency and adoption issues.
-- Three drive goals (skill adoption, Hermes protocol, swarm completion) remain open across cycles, indicating a systemic execution gap.
-- Prune runs consistently remove zero items, suggesting retention thresholds are too high or accumulation is too slow.
-- Hand actions complete in ~30 ms with zero failures, proving local tooling is stable while remote inference is the bottleneck.
-- Model latency for nemotron-3-ultra varies wildly (4.5–182.8 s) making it unreliable for time-bound tasks.
 
 ---
 
