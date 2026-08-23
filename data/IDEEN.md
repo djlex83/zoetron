@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 16:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 16:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
+- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beheben *(wieder aufgegriffen: 2×)*
-- Fähigkeitsvorschläge häufiger testen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism reports low stress (0.169) but enforces a tight iteration budget (max_iterations=2), starving convergence-heavy goals.
+- A runtime AttributeError ('MemoryStore' has no 'add_fact') surfaced during hand execution, revealing missing method implementations in core modules.
+- Simulation repeatedly flags risks (3 then 5) requiring revisions, but applied revisions don't achieve convergence, indicating a validation gap.
+- Evolution and swarm cycles consistently produce non-converging results (score 7, converged=false) despite multiple revision passes.
+- Model latency varies extremely (2.8s to 131.9s) on the same endpoint, causing unpredictable task durations and timeouts.
 - MemoryStore lacks add_fact method, causing a runtime AttributeError that halted issue creation and reveals missing interface contract tests.
 - Swarm budget of max_iterations=2 is too low for convergence on calibration goals, as evidenced by 2 cycles ending with score 7 and converged=false.
 - First simulation flagged 5 risks but only 4 revisions were applied; partial application left residual risk that likely caused non-convergence.
@@ -51,11 +56,6 @@
 - Zero prunes across a full cycle indicate the pruning threshold is stuck above the relevance floor; threshold must decay when prune count is zero.
 - Calibration error of 3 points (predicted 4 vs actual 7) reveals systematic overconfidence; confidence scores must be temperature-scaled before use.
 - Model latency varies wildly (4.3–128 s) on the same endpoint, making fixed timeouts unreliable and requiring per-request adaptive deadlines.
-- The skill proposal queue expands because proposals are rarely acted upon; a rule that each cycle must implement or reject at least one queued proposal
-- Accepting a swarm winner’s internal score without independent verification risks over‑optimistic self‑assessment; a fresh‑context re‑evaluation improv
-- Calibration reveals a consistent under‑prediction of actual scores (predicted 3 vs actual 6), so raw model scores must be scaled before threshold deci
-- Swarm runs regularly end with converged:false despite high scores, indicating the allowed iteration budget (max_iterations=2) is insufficient for comp
-- Model invocation latency spikes and occasional 502 overload errors show that raw model calls are unreliable without timeout, fallback, and jittered ba
 
 ---
 

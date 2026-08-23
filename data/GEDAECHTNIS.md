@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**950 Fakten** · Stand 2026-08-23 16:10 UTC · aktualisiert bei jedem Herzschlag
+**959 Fakten** · Stand 2026-08-23 16:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 370
-- **dream:** 312
+- **swarm_artifact:** 373
+- **dream:** 317
 - **anti_pattern:** 96
 - **strategy:** 69
-- **last_swarm_goal:** 44
+- **last_swarm_goal:** 45
 - **last_swarm_critique:** 41
 - **creator_teaching:** 7
 - **frontier:** 3
@@ -18,6 +18,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Error-Pattern-Datenbank aufbauen (SQLite)`
+*23.08. 16:28 UTC · Quelle: builder*
+
+# Artefakt: Error-Pattern-Datenbank (SQLite)  *Ziel:* Baut direkt auf den beiden vorherigen Artefakten auf (`github_error_logs.json` → `error_classification.json`) und legt eine **lokale SQLite-Datenb
+
+### `swarm_artifact:Fehler-Kategorisierung nach Typ und Häufigkeit`
+*23.08. 16:23 UTC · Quelle: builder*
+
+# Artefakt: Fehler-Kategorisierung nach Typ und Häufigkeit  *Ziel:* Baut direkt auf dem vorherigen Skript (`github_error_logs.json`) auf. Es liest die gesammelten Logs ein, klassifiziert jede Fehlerze
+
+### `swarm_artifact:GitHub API Error Logs abrufen und parsen`
+*23.08. 16:18 UTC · Quelle: builder*
+
+# Skript: GitHub API Error Logs abrufen und parsen   *Ziel:* Über die GitHub REST API (oder `gh` CLI) die letzten Workflow‑Runs, fehlgeschlagene Jobs und Fehlermeldungen holen, strukturiert als JSON s
+
+### `last_swarm_goal`
+*23.08. 16:16 UTC · Quelle: system*
+
+GitHub-Fehler besser verstehen
+
+### `dream:202608231615:5`
+*23.08. 16:15 UTC · Quelle: dream*
+
+Metabolism reports low stress (0.169) but enforces a tight iteration budget (max_iterations=2), starving convergence-heavy goals.
+
+### `dream:202608231615:4`
+*23.08. 16:15 UTC · Quelle: dream*
+
+A runtime AttributeError ('MemoryStore' has no 'add_fact') surfaced during hand execution, revealing missing method implementations in core modules.
+
+### `dream:202608231615:3`
+*23.08. 16:15 UTC · Quelle: dream*
+
+Simulation repeatedly flags risks (3 then 5) requiring revisions, but applied revisions don't achieve convergence, indicating a validation gap.
+
+### `dream:202608231615:2`
+*23.08. 16:15 UTC · Quelle: dream*
+
+Evolution and swarm cycles consistently produce non-converging results (score 7, converged=false) despite multiple revision passes.
+
+### `dream:202608231615:1`
+*23.08. 16:15 UTC · Quelle: dream*
+
+Model latency varies extremely (2.8s to 131.9s) on the same endpoint, causing unpredictable task durations and timeouts.
 
 ### `dream:202608231609:5`
 *23.08. 16:09 UTC · Quelle: dream*
