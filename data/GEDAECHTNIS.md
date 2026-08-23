@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**744 Fakten** · Stand 2026-08-23 11:58 UTC · aktualisiert bei jedem Herzschlag
+**749 Fakten** · Stand 2026-08-23 12:04 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 325
-- **dream:** 216
+- **dream:** 221
 - **anti_pattern:** 72
 - **strategy:** 57
 - **last_swarm_goal:** 29
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231203:5`
+*23.08. 12:03 UTC · Quelle: dream*
+
+The swarm's role distribution can become unbalanced, with builders outnumbering critics, leading to inefficient convergence and requiring dynamic quotas.
+
+### `dream:202608231203:4`
+*23.08. 12:03 UTC · Quelle: dream*
+
+The MemoryStore interface may be incomplete or inconsistent, as suggested by the need for an interface guard to prevent runtime errors in hand actions.
+
+### `dream:202608231203:3`
+*23.08. 12:03 UTC · Quelle: dream*
+
+The system's predictions are consistently biased by a factor of approximately 0.6, necessitating a calibration step to correct scores before decision making.
+
+### `dream:202608231203:2`
+*23.08. 12:03 UTC · Quelle: dream*
+
+The critic module's output frequently fails JSON parsing, indicating a need for output validation and fallback strategies to ensure pipeline continuity.
+
+### `dream:202608231203:1`
+*23.08. 12:03 UTC · Quelle: dream*
+
+The Nvidia model endpoints are prone to temporary overloads, as evidenced by a 502 error, requiring a robust request handling mechanism with retries and fallbacks.
 
 ### `strategy:modellkalibrierung_regelmäßig_durchführen`
 *23.08. 11:57 UTC · Quelle: evolution*

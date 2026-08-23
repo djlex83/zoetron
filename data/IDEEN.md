@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 11:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 12:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Modellkalibrierung verbessern *(wieder aufgegriffen: 4×)*
+- Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Reduce Model Failure Rate *(wieder aufgegriffen: 2×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm's role distribution can become unbalanced, with builders outnumbering critics, leading to inefficient convergence and requiring dynamic quot
+- The MemoryStore interface may be incomplete or inconsistent, as suggested by the need for an interface guard to prevent runtime errors in hand actions
+- The system's predictions are consistently biased by a factor of approximately 0.6, necessitating a calibration step to correct scores before decision 
+- The critic module's output frequently fails JSON parsing, indicating a need for output validation and fallback strategies to ensure pipeline continuit
+- The Nvidia model endpoints are prone to temporary overloads, as evidenced by a 502 error, requiring a robust request handling mechanism with retries a
 - Unaddressed simulation risks (revisions required) led to a revise verdict, demonstrating that risk mitigation must be enforced before swarm continuati
 - Critic feedback limited to discovery commands caused blind spots, implying that diverse critic roles are needed to catch varied failure modes.
 - Limited iteration budget (max_iterations=2) prevented convergence, showing that insufficient search cycles lead to premature termination and low score
@@ -51,11 +56,6 @@
 - Swarm role imbalance (many builders, few critics) correlates with low convergence scores, showing that enforcer‑based role quotas improve validation q
 - Latency spikes (e.g., 80.9 s) exceed mission timeouts, indicating a need for real‑time latency monitoring and automatic fallback to faster models.
 - Critic output must be validated against a strict schema before use, as unparseable critic results caused scoring failures in evolution runs.
-- Missing MemoryStore.add_fact method caused a runtime hand-execution error, showing that interface contracts must be enforced via abstract base classes
-- Consistent overprediction of goal scores (predicted 7 vs actual 5) reveals calibration drift that can be corrected by applying a rolling actual/predic
-- Builder-heavy role distribution (4 builders : 1 critic) correlates with low convergence scores, suggesting a minimum critic-to-builder ratio is needed
-- Critic output parsing failures halt evolution; implementing a validation wrapper that ensures critic output is parseable before use improves robustnes
-- Frequent resource exhaustion errors from the primary model indicate a need for request rate limiting or automatic fallback to alternative models.
 
 ---
 

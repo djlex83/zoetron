@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-23 11:58:21",
- "ereignisse_ausgewertet": 3060,
+ "stand": "2026-08-23 12:04:14",
+ "ereignisse_ausgewertet": 3077,
  "werkzeuge": [
   {
    "tool": "dedup_skill_proposals.py",
@@ -21,15 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-und-simulationen-besser-nutzen.py",
+   "tool": "ci-pipeline-reparieren-und-simulation-va.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
   },
   {
-   "tool": "ci-pipeline-reparieren-und-simulation-va.py",
-   "laeufe": 2,
-   "erfolge": 2,
+   "tool": "träume-und-simulationen-besser-nutzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -63,7 +63,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.688,
+ "haende_quote": 0.692,
  "simulationen_angewandt": 106,
  "swarm_scores": {
   "n": 61,
