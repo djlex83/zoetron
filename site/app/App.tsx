@@ -5,6 +5,7 @@ import {
 } from './lib/live'
 import { ScrollTrigger } from './lib/anim'
 import { installReveal } from './lib/reveal'
+import { installAppear } from './lib/appear'
 import type { Brain } from './lib/brain'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
@@ -68,6 +69,7 @@ export default function App() {
   }
 
   useEffect(() => installReveal(), [])
+  useEffect(() => installAppear(), [])
 
   useEffect(() => {
     document.documentElement.classList.add('is-ready')
@@ -79,7 +81,7 @@ export default function App() {
     <div className="grain relative">
       <Nav pulse={pulse} />
       <main>
-        <Hero pulse={pulse} />
+        <Hero pulse={pulse} board={board} beat={beat} seed={seed} />
         <Heartbeat pulse={pulse} />
         <Vitals seed={seed} board={board} beat={beat} memory={memory} />
         <Cadence pulse={pulse} />

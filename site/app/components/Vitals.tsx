@@ -53,7 +53,7 @@ export default function Vitals({
         <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-abyss to-transparent" />
       </div>
 
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-px bg-white/6 sm:grid-cols-3 lg:grid-cols-6">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-px bg-white/6 sm:grid-cols-3">
         {vitals.map((v) => (
           <div key={v.key} data-reveal className="group bg-void px-6 py-9 transition-colors duration-500 hover:bg-abyss">
             <div className="font-mono text-[2.4rem] leading-none text-ink tabular-nums sm:text-[2.9rem]">

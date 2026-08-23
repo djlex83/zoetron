@@ -75,11 +75,7 @@ export default function Access() {
                 href={tier.href}
                 target={tier.href.startsWith('http') ? '_blank' : undefined}
                 rel="noreferrer"
-                className={`relative mt-8 block rounded-full px-5 py-3.5 text-center text-[1rem] font-medium transition-colors duration-300 ${
-                  tier.featured
-                    ? 'bg-amber text-void hover:bg-amber-soft'
-                    : 'border border-white/14 text-ink hover:border-white/35 hover:bg-white/5'
-                }`}
+                className={`btn btn-hero mt-8 w-full ${tier.featured ? 'btn-solid' : 'btn-ghost'}`}
               >
                 {t(tier.cta)}
               </a>

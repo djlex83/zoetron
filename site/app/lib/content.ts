@@ -27,10 +27,7 @@ export const hero = {
 }
 
 export const vitals: { key: string; label: L; hint: L }[] = [
-  { key: 'neurons', label: { de: 'Neuronen', en: 'Neurons' }, hint: { de: 'jede Erinnerung wird ein Neuron', en: 'every memory becomes a neuron' } },
-  { key: 'synapses', label: { de: 'Synapsen', en: 'Synapses' }, hint: { de: 'nach Bedeutung verknüpft (Kosinus ≥ 0,18)', en: 'linked by meaning (cosine ≥ 0.18)' } },
   { key: 'facts', label: { de: 'Fakten', en: 'Facts' }, hint: { de: 'im Langzeitgedächtnis, dedupliziert', en: 'in long-term memory, deduplicated' } },
-  { key: 'beats', label: { de: 'Herzschläge / 24 h', en: 'Heartbeats / 24 h' }, hint: { de: 'jeder Schlag ein voller Organzyklus', en: 'each beat is a full organ cycle' } },
   { key: 'score', label: { de: 'Ø Critic-Score', en: 'Avg critic score' }, hint: { de: 'strenger Gegen-Gutachter, 0–10', en: 'adversarial judge, 0–10' } },
   { key: 'tools', label: { de: 'Werkzeuge', en: 'Tools' }, hint: { de: 'selbst gebaut, wiederverwendbar', en: 'self-built, reusable' } },
 ]

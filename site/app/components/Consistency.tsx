@@ -38,7 +38,8 @@ export default function Consistency(input: {
             <span className="h-px w-10 bg-amber/60" />
             <span className="label text-amber/90">{lang === 'de' ? 'Datenprüfung' : 'Data check'}</span>
           </div>
-          <h2 data-reveal className="display mt-5 text-[clamp(2.2rem,5vw,3.6rem)] text-ink">
+          <h2 data-reveal className="display mt-5 text-ink"
+            style={{ fontSize: 'max(1.8rem, calc(var(--h1-size) * 0.7))', lineHeight: 1.05 }}>
             {lang === 'de' ? 'Prüft sich\nselbst gegen.' : 'Checks itself\nagainst itself.'}
           </h2>
           <p data-reveal className="mt-6 text-[1.02rem] leading-relaxed text-ink-dim">

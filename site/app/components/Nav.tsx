@@ -4,6 +4,9 @@ import { nav } from '../lib/content'
 import { agoDE, type Pulse } from '../lib/live'
 import { LiveDot } from './ui'
 
+/** entrance delays alternate scale / soft down the row */
+const delay = (i: number) => `${(0.16 + i * 0.12).toFixed(2)}s`
+
 export default function Nav({ pulse }: { pulse: Pulse }) {
   const { lang, setLang, t } = useLang()
   const [solid, setSolid] = useState(false)
@@ -45,10 +48,18 @@ export default function Nav({ pulse }: { pulse: Pulse }) {
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
-    return () => { document.body.style.overflow = '' }
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    const wide = window.matchMedia('(min-width: 1280px)')
+    const onWide = () => { if (wide.matches) setOpen(false) }
+    window.addEventListener('keydown', onKey)
+    wide.addEventListener('change', onWide)
+    return () => {
+      document.body.style.overflow = ''
+      window.removeEventListener('keydown', onKey)
+      wide.removeEventListener('change', onWide)
+    }
   }, [open])
-
-  const beatLabel = pulse.iso ? agoDE(pulse.iso, lang) : '…'
 
   return (
     <header
@@ -56,44 +67,59 @@ export default function Nav({ pulse }: { pulse: Pulse }) {
         solid ? 'border-b border-white/8 bg-void/72 backdrop-blur-xl' : 'border-b border-transparent'
       }`}
     >
-      <div className="mx-auto flex h-[4.5rem] w-full max-w-6xl items-center justify-between gap-4 px-5 sm:h-20 sm:px-8">
-        <a href="#top" className="group flex items-center gap-2.5">
-          <span className="text-lg leading-none">🫀</span>
-          <span className="display text-[1.6rem] tracking-tight text-ink">Zoetron</span>
+      <div
+        className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-4"
+        style={{ padding: 'var(--header-y) var(--header-x) 10px' }}
+      >
+        <a
+          href="#top"
+          className="appear appear--scale flex shrink-0 items-center gap-2.5"
+          style={{ '--d': '0.08s' } as React.CSSProperties}
+          aria-label="Zoetron"
+        >
+          <span style={{ fontSize: 'var(--logo-mark)' }} className="leading-none">🫀</span>
+          <span className="display tracking-tight text-ink" style={{ fontSize: 'calc(var(--logo-size) * 1.55)' }}>
+            Zoetron
+          </span>
         </a>
 
-        <nav className="hidden items-center gap-1 lg:flex">
-          {nav.map((n) => (
+        <nav className="hidden items-center gap-1.5 xl:flex" aria-label="Primary">
+          {nav.map((n, i) => (
             <a
               key={n.id}
               href={`#${n.id}`}
-              className={`rounded-full px-4 py-2.5 text-[0.98rem] transition-colors duration-300 ${
-                active === n.id ? 'bg-white/6 text-ink' : 'text-ink-dim hover:text-ink'
-              }`}
+              className="pill appear appear--scale"
+              data-active={active === n.id ? '1' : '0'}
+              style={{ '--d': delay(i) } as React.CSSProperties}
             >
-              {t(n.label)}
+              <span>{t(n.label)}</span>
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-2.5">
           <a
             href="#gehirn"
-            className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/4 px-3 py-1.5 text-[0.8rem] text-ink-dim transition-colors hover:border-pulse/40 hover:text-ink sm:flex"
+            className="appear appear--soft hidden items-center gap-2 rounded-[7px] border border-white/12 bg-white/4 px-3 text-[0.72rem] text-ink-dim transition-colors hover:border-pulse/40 hover:text-ink sm:flex"
+            style={{ height: 'var(--nav-h)', '--d': '0.9s' } as React.CSSProperties}
             title={lang === 'de' ? 'letzter Herzschlag' : 'last heartbeat'}
           >
             <LiveDot />
-            <span className="font-mono">{beatLabel}</span>
+            <span className="font-mono">{pulse.iso ? agoDE(pulse.iso, lang) : '…'}</span>
           </a>
 
-          <div className="flex overflow-hidden rounded-full border border-white/10 text-[0.78rem]">
+          <div
+            className="appear appear--soft flex overflow-hidden rounded-[7px] border border-white/12 text-[0.7rem]"
+            style={{ '--d': '1s' } as React.CSSProperties}
+          >
             {(['de', 'en'] as const).map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
-                className={`px-2.5 py-1.5 font-mono uppercase transition-colors ${
+                className={`px-2.5 font-mono uppercase transition-colors ${
                   lang === l ? 'bg-amber/90 text-void' : 'text-ink-faint hover:text-ink'
                 }`}
+                style={{ height: 'var(--nav-h)' }}
                 aria-pressed={lang === l}
               >
                 {l}
@@ -105,22 +131,24 @@ export default function Nav({ pulse }: { pulse: Pulse }) {
             href="https://github.com/djlex83/zoetron"
             target="_blank"
             rel="noreferrer"
-            className="hidden rounded-full bg-ink px-5 py-2.5 text-[0.95rem] font-medium text-void transition-transform duration-300 hover:-translate-y-0.5 md:block"
+            className="btn btn-solid appear appear--scale hidden md:inline-flex"
+            style={{ '--d': '1.06s' } as React.CSSProperties}
           >
             GitHub
           </a>
 
           <button
-            className="lg:hidden"
+            className="appear appear--scale grid h-[42px] w-[42px] place-items-center rounded-md border border-white/16 bg-[rgba(8,8,8,0.55)] transition-colors hover:border-white/32 hover:bg-white/5 xl:hidden"
+            style={{ '--d': '0.34s' } as React.CSSProperties}
             onClick={() => setOpen((o) => !o)}
-            aria-label={open ? 'Menü schließen' : 'Menü öffnen'}
+            aria-label={open ? (lang === 'de' ? 'Menü schließen' : 'Close menu') : (lang === 'de' ? 'Menü öffnen' : 'Open menu')}
+            aria-controls="site-nav"
             aria-expanded={open}
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/12">
-              <span className="relative block h-2.5 w-4">
-                <span className={`absolute inset-x-0 top-0 h-px bg-ink transition-transform duration-300 ${open ? 'translate-y-[5px] rotate-45' : ''}`} />
-                <span className={`absolute inset-x-0 bottom-0 h-px bg-ink transition-transform duration-300 ${open ? '-translate-y-[5px] -rotate-45' : ''}`} />
-              </span>
+            <span className="relative block h-[11px] w-4">
+              <span className={`absolute inset-x-0 top-0 h-[1.5px] rounded-sm bg-ink transition-transform duration-250 ${open ? 'translate-y-[5px] rotate-45' : ''}`} />
+              <span className={`absolute inset-x-0 top-[5px] h-[1.5px] rounded-sm bg-ink transition-opacity duration-200 ${open ? 'opacity-0' : ''}`} />
+              <span className={`absolute inset-x-0 bottom-0 h-[1.5px] rounded-sm bg-ink transition-transform duration-250 ${open ? '-translate-y-[5px] -rotate-45' : ''}`} />
             </span>
           </button>
         </div>
@@ -128,29 +156,36 @@ export default function Nav({ pulse }: { pulse: Pulse }) {
 
       <div ref={bar} className="h-px origin-left scale-x-0 bg-gradient-to-r from-amber via-pulse to-synapse" />
 
-      {open && (
-        <div className="fixed inset-x-0 top-[4.5rem] bottom-0 z-40 bg-void/96 px-5 pt-6 backdrop-blur-2xl lg:hidden">
-          <nav className="flex flex-col">
-            {nav.map((n, i) => (
-              <a
-                key={n.id}
-                href={`#${n.id}`}
-                onClick={() => setOpen(false)}
-                className="display border-b border-white/6 py-5 text-3xl text-ink"
-                style={{ animation: `menu-in .5s var(--ease-out-expo) both`, animationDelay: `${i * 45}ms` }}
-              >
-                {t(n.label)}
-              </a>
-            ))}
-          </nav>
+      {/* full-screen menu below the pill breakpoint */}
+      <div
+        className={`fixed inset-0 z-40 bg-[rgba(6,7,10,0.72)] transition-[opacity,backdrop-filter] duration-300 xl:hidden ${
+          open ? 'visible opacity-100 backdrop-blur-2xl' : 'invisible opacity-0'
+        }`}
+        onClick={() => setOpen(false)}
+      />
+      <nav
+        id="site-nav"
+        aria-label="Primary"
+        className={`fixed inset-0 z-45 flex-col items-stretch justify-center gap-3 px-5 transition-opacity duration-300 xl:hidden ${
+          open ? 'flex opacity-100' : 'hidden opacity-0'
+        }`}
+        style={{ paddingTop: 'max(96px, calc(env(safe-area-inset-top) + 88px))', paddingBottom: '32px' }}
+      >
+        {nav.map((n) => (
           <a
-            href="./brain.html"
-            className="mt-8 block rounded-full bg-amber px-5 py-3.5 text-center font-medium text-void"
+            key={n.id}
+            href={`#${n.id}`}
+            onClick={() => setOpen(false)}
+            className="pill w-full justify-center"
+            style={{ height: '56px', fontSize: '19px', borderRadius: '10px' }}
           >
-            {lang === 'de' ? '3D-Gehirn öffnen' : 'Open the 3D brain'}
+            <span>{t(n.label)}</span>
           </a>
-        </div>
-      )}
+        ))}
+        <a href="#gehirn" onClick={() => setOpen(false)} className="btn btn-solid mt-2 w-full" style={{ height: '52px' }}>
+          {lang === 'de' ? '3D-Gehirn öffnen' : 'Open the 3D brain'}
+        </a>
+      </nav>
     </header>
   )
 }

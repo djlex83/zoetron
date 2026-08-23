@@ -10,6 +10,7 @@
   --color-ink: #f4f6fa;
   --color-ink-dim: #a8b3c5;
   --color-ink-faint: #6b7689;
+  --color-stat: #d8d8d8;
 
   --color-amber: #f5a524;
   --color-amber-soft: #ffcb6b;
@@ -148,4 +149,272 @@
     animation-duration: 0.001ms !important;
     transition-duration: 0.001ms !important;
   }
+}
+
+/* =====================================================================
+   First-screen system — sizing tokens, entrance choreography and the
+   pill/button language. Fixed per-breakpoint sizes (instead of fluid
+   clamps) so the opening screen fits exactly one viewport, including
+   short laptops.
+   ===================================================================== */
+
+:root {
+  --logo-size: 15.5px;
+  --logo-mark: 22px;
+  --nav-size: 14px;
+  --nav-h: 40px;
+  --btn-size: 13.5px;
+  --btn-h: 40px;
+  --hero-btn-h: 42px;
+  --h1-size: 52px;
+  --lede-size: 15.5px;
+  --badge-size: 12.5px;
+  --stat-size: 13.5px;
+  --header-y: 22px;
+  --header-x: 40px;
+  --stats-x: 72px;
+  --stats-y: 36px;
+  --hero-gap: 85px;
+  --copy-max: 900px;
+  --lede-max: 500px;
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --logo-size: 17px; --logo-mark: 24px; --nav-size: 15px; --nav-h: 44px;
+    --btn-size: 15px; --btn-h: 44px; --hero-btn-h: 48px;
+    --h1-size: 68px; --lede-size: 18px; --badge-size: 13.5px; --stat-size: 15px;
+    --header-y: 28px; --header-x: 64px; --stats-x: 96px; --stats-y: 44px;
+    --copy-max: 1020px; --lede-max: 560px;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --logo-size: 18px; --logo-mark: 26px; --nav-size: 16px; --nav-h: 48px;
+    --btn-size: 16px; --btn-h: 48px; --hero-btn-h: 52px;
+    --h1-size: 80px; --lede-size: 20px; --badge-size: 14.5px; --stat-size: 16px;
+    --header-y: 32px; --header-x: 80px; --stats-x: 120px; --stats-y: 52px;
+    --copy-max: 1160px; --lede-max: 640px;
+  }
+}
+@media (min-width: 2560px) {
+  :root {
+    --h1-size: 92px; --lede-size: 22px;
+    --header-x: 120px; --stats-x: 160px; --copy-max: 1320px; --lede-max: 700px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  :root { --h1-size: 58px; --lede-size: 16px; --header-x: 48px; --stats-x: 80px; --copy-max: 940px; }
+}
+@media (min-width: 901px) and (max-width: 1279px) {
+  :root {
+    --logo-size: 15px; --nav-size: 13px; --nav-h: 36px; --btn-size: 13px; --btn-h: 38px;
+    --hero-btn-h: 40px; --h1-size: 44px; --lede-size: 15px; --badge-size: 12px; --stat-size: 12.5px;
+    --header-y: 16px; --header-x: 28px; --stats-x: 36px; --stats-y: 28px;
+    --hero-gap: 64px; --copy-max: 780px; --lede-max: 450px;
+  }
+}
+/* short laptops: the opening screen must still hold everything */
+@media (min-width: 901px) and (max-height: 850px) {
+  :root { --header-y: 14px; --stats-y: 24px; --hero-gap: 48px; --h1-size: 42px; }
+}
+@media (min-width: 901px) and (max-height: 720px) {
+  :root {
+    --h1-size: 36px; --lede-size: 14px; --hero-gap: 32px; --stats-y: 18px;
+    --nav-h: 30px; --btn-h: 34px; --hero-btn-h: 36px;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --logo-size: 16px; --btn-size: 15px; --btn-h: 46px; --hero-btn-h: 48px;
+    --h1-size: 38px; --lede-size: 16.5px; --badge-size: 13.5px; --stat-size: 15px;
+    --header-y: 16px; --header-x: 18px; --stats-x: 20px; --stats-y: 28px;
+    --hero-gap: 36px; --copy-max: 100%; --lede-max: 100%;
+  }
+}
+@media (max-width: 560px) {
+  :root { --h1-size: 34px; --lede-size: 16px; --header-x: 16px; }
+}
+
+/* ---------- entrance choreography ----------
+   Resting opacity is 1: if animations never run, the page still shows.
+   `both` applies the 0% frame during the delay when they do run.        */
+.appear {
+  opacity: 1;
+  animation-duration: 1.05s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-delay: var(--d, 0.08s);
+}
+.appear--scale { animation-name: in-scale; }
+.appear--soft { animation-name: in-soft; }
+.appear--mask { animation-name: in-mask; }
+.appear--pop { animation-name: in-pop; }
+.appear--btn { animation-name: in-btn; }
+.appear--side { animation-name: in-side; }
+.appear--stat { animation-name: in-stat; }
+.appear.is-in {
+  animation: none;
+  opacity: 1;
+  transform: none;
+  clip-path: none;
+  filter: none;
+}
+
+@keyframes in-scale { from { opacity: 0; transform: scale(0.84); } to { opacity: 1; transform: none; } }
+@keyframes in-soft { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes in-mask { from { opacity: 0; transform: translateY(40%); } to { opacity: 1; transform: none; } }
+@keyframes in-pop {
+  0% { opacity: 0; transform: scale(0.9); }
+  70% { opacity: 1; transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes in-btn { from { opacity: 0; transform: translateY(18px) scale(0.94); } to { opacity: 1; transform: none; } }
+@keyframes in-side { from { opacity: 0; transform: translateX(22px); } to { opacity: 1; transform: none; } }
+@keyframes in-stat { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+.headline-line {
+  display: block;
+  overflow: hidden;
+  padding: 0.04em 0.12em 0.1em;
+  margin-left: -0.12em;
+}
+
+@layer components {
+  /* ---------- liquid-metal nav pill ---------- */
+  .pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: var(--nav-h);
+    padding: 0 18px;
+    overflow: hidden;
+    border-radius: 7px;
+    border: 1px solid rgb(198 198 198 / 0.4);
+    background: linear-gradient(105deg, #050505 0%, #1c1c1c 48%, #343434 100%);
+    color: #f3f3f3;
+    font-size: var(--nav-size);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  }
+  .pill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.16) 50%, transparent 70%);
+    transform: translateX(-120%);
+    transition: transform 0.6s ease;
+  }
+  .pill:hover {
+    border-color: rgb(235 235 235 / 0.85);
+    background: linear-gradient(105deg, #111 0%, #3a3a3a 45%, #5c5c5c 100%);
+    box-shadow: 0 0 18px rgb(200 210 230 / 0.18);
+  }
+  .pill:hover::before { transform: translateX(120%); }
+  .pill[data-active="1"] {
+    border-color: color-mix(in oklab, var(--color-amber) 55%, transparent);
+    box-shadow: 0 0 18px rgb(245 165 36 / 0.16);
+  }
+  .pill > span { position: relative; z-index: 1; }
+
+  /* ---------- liquid-glass buttons ---------- */
+  .btn {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--btn-h);
+    padding: 0 16px;
+    border-radius: 6px;
+    font-size: var(--btn-size);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease,
+      color 0.35s ease, filter 0.35s ease;
+  }
+  .btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(115deg, transparent 20%, rgb(255 255 255 / 0.45) 48%, transparent 76%);
+    transform: translateX(-130%);
+    transition: transform 0.65s ease;
+  }
+  .btn:hover::after { transform: translateX(130%); }
+
+  .btn-solid {
+    background: linear-gradient(180deg, #ffffff 0%, #e7e7e7 48%, #cfcfcf 100%);
+    color: #111;
+    border: 1px solid #fff;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.95);
+  }
+  .btn-solid:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #fff3dd 42% , #ffd79a 100%);
+    border-color: #fff6e6;
+    box-shadow: inset 0 1px 0 #fff, 0 0 22px rgb(245 165 36 / 0.35), 0 8px 18px rgb(255 255 255 / 0.12);
+  }
+
+  .btn-ghost {
+    background: linear-gradient(135deg, rgb(255 255 255 / 0.1), rgb(0 0 0 / 0.45) 50%, rgb(160 175 200 / 0.08));
+    color: #fff;
+    border: 1px solid rgb(198 198 198 / 0.45);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.12);
+  }
+  .btn-ghost:hover {
+    background: linear-gradient(135deg, rgb(255 224 170 / 0.18), rgb(0 0 0 / 0.35) 48%, rgb(220 195 150 / 0.16));
+    border-color: rgb(255 236 200 / 0.7);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.22), 0 0 20px rgb(245 165 36 / 0.22);
+  }
+
+  .btn-hero { height: var(--hero-btn-h); padding: 0 18px; }
+  .btn-hero.btn-solid:hover {
+    box-shadow: inset 0 1px 0 #fff, 0 0 26px rgb(245 165 36 / 0.4), 0 8px 18px rgb(255 255 255 / 0.14);
+  }
+  .btn-hero.btn-ghost {
+    background: linear-gradient(135deg, rgb(255 255 255 / 0.12), rgb(0 0 0 / 0.5) 46%, rgb(150 170 200 / 0.1));
+    border-color: rgb(198 198 198 / 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  .btn-hero.btn-ghost:hover {
+    border-color: rgb(255 236 200 / 0.8);
+    box-shadow: 0 0 24px rgb(245 165 36 / 0.28);
+  }
+
+  /* ---------- badge ---------- */
+  .badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 15px;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6a6a6a 0%, #262626 52%, #0a0a0a 100%);
+    color: #f2f2f2;
+    font-size: var(--badge-size);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .appear, .headline-line > span {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    filter: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .badge-pill { white-space: normal; line-height: 1.35; }
 }

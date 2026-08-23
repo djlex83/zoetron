@@ -2,17 +2,55 @@ import { useEffect, useRef, useState } from 'react'
 import { hero } from '../lib/content'
 import { useLang } from '../lib/lang'
 import { gsap, reduced, useGsap } from '../lib/anim'
-import { agoDE, type Pulse } from '../lib/live'
+import { agoDE, type Beat, type Leaderboard, type Pulse, type Seed } from '../lib/live'
 import BrainCanvas from './BrainCanvas'
-import { LiveDot } from './ui'
 
-/** Heavy 3D canvas: never boot it on a data-saver or a phone-sized screen. */
+/** Heavy 3D canvas: never boot it on a data-saver or for a still-motion visitor. */
 function saverOrStill() {
   const conn = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
   return Boolean(conn?.saveData) || reduced()
 }
 
-export default function Hero({ pulse }: { pulse: Pulse }) {
+const de = (n: number) => n.toLocaleString('de-DE')
+
+function StatNeurons() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="6" cy="7" r="2.4" fill="#e8e8e8" />
+      <circle cx="17.4" cy="5.6" r="1.7" fill="#9a9a9a" />
+      <circle cx="12.6" cy="13.4" r="2.9" fill="#e8e8e8" />
+      <circle cx="5.2" cy="17.6" r="1.9" fill="#9a9a9a" />
+      <circle cx="18.6" cy="17.2" r="1.6" fill="#e8e8e8" />
+      <path d="M6 7l6.6 6.4M17.4 5.6l-4.8 7.8M12.6 13.4l-7.4 4.2M12.6 13.4l6 3.8"
+        stroke="#6b7689" strokeWidth="0.9" />
+    </svg>
+  )
+}
+
+function StatSynapses() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M3.4 18.6C7.2 18.6 8.6 5.4 12 5.4s4.8 13.2 8.6 13.2"
+        stroke="#e8e8e8" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="12" cy="5.4" r="2" fill="#e8e8e8" />
+      <circle cx="3.4" cy="18.6" r="1.6" fill="#9a9a9a" />
+      <circle cx="20.6" cy="18.6" r="1.6" fill="#9a9a9a" />
+    </svg>
+  )
+}
+
+function StatBeats() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M2.5 12.4h4.2l1.7-4.6 3 9.4 2.3-6.2 1.4 3.1h6.4"
+        stroke="#e8e8e8" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+export default function Hero({
+  pulse, board, beat, seed,
+}: { pulse: Pulse; board: Leaderboard | null; beat: Beat | null; seed: Seed | null }) {
   const { lang, t } = useLang()
   const root = useRef<HTMLDivElement>(null)
   const media = useRef<HTMLDivElement>(null)
@@ -22,8 +60,7 @@ export default function Hero({ pulse }: { pulse: Pulse }) {
   useEffect(() => {
     if (saverOrStill()) return
     // A media query, not innerWidth: the viewport can still measure 0 while the
-    // effect runs (background tab, prerender). The listener boots the brain as
-    // soon as there really is room for it — and a plain timer, not
+    // effect runs (background tab, prerender). A plain timer, not
     // requestIdleCallback, because idle callbacks never fire in a hidden tab.
     const wide = window.matchMedia('(min-width: 380px)')
     let timer = 0
@@ -37,45 +74,52 @@ export default function Hero({ pulse }: { pulse: Pulse }) {
     return () => { wide.removeEventListener('change', evaluate); clearTimeout(timer) }
   }, [])
 
+  // the scroll-driven transform stays with GSAP; the entrance is pure CSS
   useGsap(({ self }) => {
-    if (reduced()) {
-      gsap.set('[data-line] > span, [data-fade]', { opacity: 1, y: 0, yPercent: 0 })
-      gsap.set(media.current, { opacity: 1, scale: 1 })
-      return
-    }
-
-    const intro = gsap.timeline({ defaults: { ease: 'expo.out' } })
-    intro
-      .from('[data-line] > span', { yPercent: 118, duration: 1.5, stagger: 0.12 })
-      .from('[data-fade]', { opacity: 0, y: 22, duration: 1.1, stagger: 0.09 }, 0.35)
-      .fromTo(media.current, { opacity: 0, scale: 1.14 }, { opacity: 1, scale: 1, duration: 2.4 }, 0)
-
-    // the scroll-driven transform: the brain swells and dissolves, the words lift
+    if (reduced()) return
     gsap.to(media.current, {
-      scale: 1.32, yPercent: 9, filter: 'blur(9px)', opacity: 0,
+      scale: 1.3, yPercent: 9, filter: 'blur(9px)', opacity: 0,
       ease: 'none',
       scrollTrigger: { trigger: self, start: 'top top', end: 'bottom top', scrub: 0.6 },
     })
     gsap.to(copy.current, {
-      yPercent: -26, opacity: 0, ease: 'none',
-      scrollTrigger: { trigger: self, start: 'top top', end: '72% top', scrub: 0.6 },
+      yPercent: -22, opacity: 0, ease: 'none',
+      scrollTrigger: { trigger: self, start: 'top top', end: '76% top', scrub: 0.6 },
     })
-  }, root)
+  }, root, [])
+
+  const stats = [
+    {
+      icon: <StatNeurons />,
+      value: board?.neurons ?? seed?.memory.neurons ?? null,
+      label: lang === 'de' ? 'Neuronen im Gedächtnis' : 'neurons in memory',
+      d: '1.12s',
+    },
+    {
+      icon: <StatSynapses />,
+      value: board?.synapses ?? seed?.memory.synapses ?? null,
+      label: lang === 'de' ? 'Synapsen nach Bedeutung' : 'synapses by meaning',
+      d: '1.28s',
+    },
+    {
+      icon: <StatBeats />,
+      value: beat?.per24h ?? seed?.beats.per24h ?? null,
+      label: lang === 'de' ? 'Herzschläge in 24 Stunden' : 'heartbeats in 24 hours',
+      d: '1.44s',
+    },
+  ]
 
   return (
-    <div id="top" ref={root} className="relative isolate min-h-[100svh] overflow-hidden">
+    <div id="top" ref={root} className="relative isolate flex min-h-[100svh] flex-col overflow-hidden">
       {/* --- live organ, used as scenery --- */}
-      <div ref={media} className="absolute inset-0 -z-10 origin-center will-change-transform">
+      <div ref={media} className="absolute inset-0 -z-10 origin-center will-change-transform lg:left-[16%]">
         <div
           className="absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(58% 48% at 50% 42%, #16203a 0%, #0a0e18 46%, #06070a 78%)',
-          }}
+          style={{ background: 'radial-gradient(58% 48% at 50% 42%, #16203a 0%, #0a0e18 46%, #06070a 78%)' }}
         />
         {live ? (
           <div
-            className="pointer-events-none absolute inset-0 opacity-[0.78] lg:left-[16%]"
+            className="pointer-events-none absolute inset-0 opacity-[0.78]"
             style={{
               maskImage: 'radial-gradient(74% 64% at 50% 44%, #000 34%, transparent 84%)',
               WebkitMaskImage: 'radial-gradient(74% 64% at 50% 44%, #000 34%, transparent 84%)',
@@ -95,63 +139,115 @@ export default function Hero({ pulse }: { pulse: Pulse }) {
           />
         )}
         <div className="vignette absolute inset-0" />
-        {/* keeps the headline readable wherever the brain happens to drift */}
-        <div className="absolute inset-y-0 left-0 w-[70%] bg-gradient-to-r from-void via-void/72 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-b from-transparent to-void" />
       </div>
+      {/* keeps the headline readable wherever the brain drifts */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 -z-10 w-[56%] bg-gradient-to-r from-void via-void/60 to-transparent" />
 
-      <div className="relative mx-auto flex min-h-[100svh] w-full max-w-6xl flex-col justify-center px-5 pt-28 pb-24 sm:px-8">
-        <div ref={copy}>
-          <div data-fade className="flex flex-wrap items-center gap-x-4 gap-y-2">
-            <LiveDot label={lang === 'de' ? 'lebt gerade' : 'alive right now'} />
-            <span className="label">{t(hero.eyebrow)}</span>
-          </div>
-
-          <h1 className="mt-7 text-[clamp(3.1rem,11vw,8.8rem)]">
-            <span data-line className="block overflow-hidden pb-[0.08em]">
-              <span className="display block text-ink-dim">{t(hero.title1)}</span>
-            </span>
-            <span data-line className="block overflow-hidden pb-[0.08em]">
-              <span className="display block bg-gradient-to-br from-white via-amber-soft to-amber-deep bg-clip-text text-transparent">
-                {t(hero.title2)}
+      {/* --- copy, anchored to the bottom of the first screen --- */}
+      <div className="flex min-h-0 flex-1 items-end">
+        <div
+          ref={copy}
+          className="mx-auto w-full max-w-[1600px]"
+          style={{ padding: `112px var(--header-x) var(--hero-gap)` }}
+        >
+          <div style={{ maxWidth: 'var(--copy-max)' }}>
+            <span
+              className="badge-pill appear appear--pop"
+              style={{ '--d': '0.22s' } as React.CSSProperties}
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="beat absolute inline-flex h-full w-full rounded-full bg-pulse opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-pulse" />
               </span>
+              {t(hero.eyebrow)}
             </span>
-          </h1>
 
-          <p data-fade className="mt-9 max-w-2xl text-[1.18rem] leading-relaxed text-ink-dim sm:text-[1.32rem]">
-            {t(hero.sub)}
-          </p>
+            <h1
+              className="display mt-6 text-ink"
+              style={{ fontSize: 'var(--h1-size)', lineHeight: 1.0 }}
+            >
+              <span className="headline-line">
+                <span
+                  className="appear appear--mask block text-ink-dim"
+                  style={{ '--d': '0.42s' } as React.CSSProperties}
+                >
+                  {t(hero.title1)}
+                </span>
+              </span>
+              <span className="headline-line">
+                <span
+                  className="appear appear--mask block bg-gradient-to-br from-white via-amber-soft to-amber-deep bg-clip-text text-transparent"
+                  style={{ '--d': '0.62s' } as React.CSSProperties}
+                >
+                  {t(hero.title2)}
+                </span>
+              </span>
+            </h1>
 
-          <div data-fade className="mt-10 flex flex-wrap items-center gap-3">
-            <a
-              href="#gehirn"
-              className="group relative overflow-hidden rounded-full bg-amber px-8 py-4 text-[1.02rem] font-semibold text-void transition-transform duration-300 hover:-translate-y-0.5"
+            <p
+              className="appear appear--soft mt-5 text-ink-dim"
+              style={{
+                '--d': '0.82s',
+                animationDuration: '1.25s',
+                maxWidth: 'var(--lede-max)',
+                fontSize: 'var(--lede-size)',
+                lineHeight: 1.55,
+                letterSpacing: '-0.015em',
+              } as React.CSSProperties}
             >
-              <span className="relative z-10">{t(hero.ctaBrain)}</span>
-              <span className="absolute inset-0 -translate-x-full bg-white/35 transition-transform duration-700 group-hover:translate-x-full" />
-            </a>
-            <a
-              href="#takt"
-              className="rounded-full border border-white/14 px-8 py-4 text-[1.02rem] text-ink transition-colors duration-300 hover:border-white/35 hover:bg-white/5"
+              {t(hero.sub)}
+            </p>
+
+            <div className="mt-7 flex flex-wrap items-center gap-2.5">
+              <a
+                href="#gehirn"
+                className="btn btn-hero btn-solid appear appear--btn"
+                style={{ '--d': '0.96s' } as React.CSSProperties}
+              >
+                {t(hero.ctaBrain)}
+              </a>
+              <a
+                href="#takt"
+                className="btn btn-hero btn-ghost appear appear--side"
+                style={{ '--d': '1.1s' } as React.CSSProperties}
+              >
+                {t(hero.ctaCadence)} ↓
+              </a>
+            </div>
+
+            <p
+              className="appear appear--soft mt-6 max-w-md font-mono text-[0.7rem] leading-relaxed text-ink-faint"
+              style={{ '--d': '1.2s' } as React.CSSProperties}
             >
-              {t(hero.ctaCadence)} ↓
-            </a>
+              {t(hero.liveNote)}
+              {pulse.iso && ` · ${lang === 'de' ? 'letzter Schlag' : 'last beat'} ${agoDE(pulse.iso, lang)}`}
+            </p>
           </div>
-
-          <p data-fade className="mt-8 max-w-md font-mono text-[0.76rem] leading-relaxed text-ink-faint">
-            {t(hero.liveNote)}
-            {pulse.iso && ` · ${lang === 'de' ? 'letzter Schlag' : 'last beat'} ${agoDE(pulse.iso, lang)}`}
-          </p>
         </div>
       </div>
 
-      <div className="pointer-events-none absolute bottom-6 left-1/2 z-10 -translate-x-1/2 sm:bottom-8">
-        <div className="flex flex-col items-center gap-2">
-          <span className="label text-[0.7rem]">{t(hero.scroll)}</span>
-          <span className="relative block h-10 w-px overflow-hidden bg-white/12">
-            <span className="absolute inset-x-0 top-0 h-4 animate-[drift_1.8s_ease-in-out_infinite_alternate] bg-amber" />
+      {/* --- three live numbers close the first screen --- */}
+      <div
+        className="mx-auto flex w-full max-w-[1600px] flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
+        style={{
+          padding: `0 var(--stats-x) var(--stats-y)`,
+          paddingBottom: 'max(var(--stats-y), env(safe-area-inset-bottom))',
+        }}
+      >
+        {stats.map((s) => (
+          <span
+            key={s.label}
+            className="appear appear--stat inline-flex items-center gap-3.5 text-stat"
+            style={{ '--d': s.d, fontSize: 'var(--stat-size)', letterSpacing: '-0.015em' } as React.CSSProperties}
+          >
+            {s.icon}
+            <span className="whitespace-nowrap">
+              <span className="font-mono text-ink">{s.value ? de(s.value) : '—'}</span>{' '}
+              <span className="text-ink-dim">{s.label}</span>
+            </span>
           </span>
-        </div>
+        ))}
       </div>
     </div>
   )

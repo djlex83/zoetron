@@ -12,7 +12,8 @@ export function SectionHead({
         <span className="h-px w-10 bg-amber/60" />
         <span className="label text-amber/90">{t(label)}</span>
       </div>
-      <h2 data-reveal className="display mt-5 text-[clamp(2.6rem,7.2vw,5.6rem)] whitespace-pre-line text-ink">
+      <h2 data-reveal className="display mt-5 whitespace-pre-line text-ink"
+        style={{ fontSize: 'max(1.9rem, calc(var(--h1-size) * 0.78))', lineHeight: 1.04 }}>
         {t(head)}
       </h2>
       {sub && (
@@ -46,7 +47,7 @@ export function Section({
   id, children, className = '',
 }: { id?: string; children: ReactNode; className?: string }) {
   return (
-    <section id={id} className={`relative scroll-mt-24 px-5 py-28 sm:px-8 sm:py-36 lg:py-44 ${className}`}>
+    <section id={id} className={`relative scroll-mt-24 px-5 py-24 sm:px-8 sm:py-28 lg:py-36 ${className}`}>
       <div className="mx-auto w-full max-w-6xl">{children}</div>
     </section>
   )

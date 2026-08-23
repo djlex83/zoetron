@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-23T20:28:09.475Z",
+  "generatedAt": "2026-08-23T20:55:15.015Z",
   "repo": "djlex83/zoetron",
   "memory": {
-    "facts": 1181,
-    "neurons": 1104,
-    "synapses": 13509,
-    "stand": "2026-08-23 20:23 UTC",
+    "facts": 1221,
+    "neurons": 1142,
+    "synapses": 14177,
+    "stand": "2026-08-23 20:48 UTC",
     "kinds": [
       {
         "kind": "dream",
-        "count": 457
+        "count": 497
       },
       {
         "kind": "swarm_artifact",
@@ -67,12 +67,12 @@
   },
   "learning": {
     "events": 4000,
-    "handsRate": 0.689,
-    "simulations": 124,
+    "handsRate": 0.698,
+    "simulations": 122,
     "swarm": {
-      "n": 71,
+      "n": 69,
       "best": 8,
-      "schnitt": 4.23
+      "schnitt": 4.16
     },
     "tools": [
       {
@@ -83,8 +83,8 @@
       },
       {
         "name": "ci-pipeline-reparieren-und-simulation-va.py",
-        "runs": 6,
-        "wins": 6,
+        "runs": 7,
+        "wins": 7,
         "rate": 1
       },
       {
@@ -112,6 +112,12 @@
         "rate": 1
       },
       {
+        "name": "alte-träume-nach-ideen-durchsuchen.py",
+        "runs": 2,
+        "wins": 2,
+        "rate": 1
+      },
+      {
         "name": "traum-erinnerungen-besser-verknüpfen-und.py",
         "runs": 1,
         "wins": 1,
@@ -119,12 +125,6 @@
       },
       {
         "name": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-        "runs": 1,
-        "wins": 1,
-        "rate": 1
-      },
-      {
-        "name": "alte-träume-nach-ideen-durchsuchen.py",
         "runs": 1,
         "wins": 1,
         "rate": 1
@@ -152,9 +152,15 @@
         "runs": 1,
         "wins": 1,
         "rate": 1
+      },
+      {
+        "name": "fehler-in-modellen-finden.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
       }
     ],
-    "stand": "2026-08-23 20:22:59"
+    "stand": "2026-08-23 20:48:40"
   },
   "missions": [
     {
@@ -206,8 +212,8 @@
     "quote": "Dream logs contain recurring error signatures (timeout, AttributeError) that are not systematically mined to seed evolution variants."
   },
   "beats": {
-    "last": "2026-08-23T22:26:57+02:00",
-    "per24h": 135,
-    "total": 239
+    "last": "2026-08-23T22:55:14+02:00",
+    "per24h": 145,
+    "total": 249
   }
 }
