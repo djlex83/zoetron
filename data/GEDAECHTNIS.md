@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**730 Fakten** · Stand 2026-08-23 11:46 UTC · aktualisiert bei jedem Herzschlag
+**744 Fakten** · Stand 2026-08-23 11:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 321
-- **dream:** 211
-- **anti_pattern:** 70
-- **strategy:** 56
-- **last_swarm_goal:** 28
-- **last_swarm_critique:** 26
+- **swarm_artifact:** 325
+- **dream:** 216
+- **anti_pattern:** 72
+- **strategy:** 57
+- **last_swarm_goal:** 29
+- **last_swarm_critique:** 27
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modellkalibrierung_regelmäßig_durchführen`
+*23.08. 11:57 UTC · Quelle: evolution*
+
+Fail‑fast with explicit alerts instead of silent dummy data - Variant 1 provides the strongest improvement by eliminating silent failures and ensuring immediate, actionable alerts, which directly addresses the core reliability issue while bei
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellkalibrierung regel:2`
+*23.08. 11:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Decouple pandas dependency and provide a lightweight validation path - Extract the pandas‑only logic into an optional helper module. In `calibrate_and_score`, first attempt to import pandas; if unavailable, raise a clear `Mis
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellkalibrierung regel:0`
+*23.08. 11:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Enforce timezone‑aware timestamps and centralized storage - Replace naive `datetime.now()` with `datetime.now(timezone.utc)` (or a configured zone) and persist the last‑run timestamp in a durable, shared store (e.g., a Redis 
+
+### `last_swarm_critique`
+*23.08. 11:56 UTC · Quelle: critic*
+
+score=6; issues=save_last_run uses naive datetime without timezone awareness; could cause ambiguity in distributed systems.; calibrate_and_score falls back to random dummy data when file loading fails, which may silently produce meaningless results in producti
+
+### `swarm_artifact:Verifikationstest: Kalibrierung muss Brier-Score verbessern`
+*23.08. 11:56 UTC · Quelle: builder*
+
+```python import json import pathlib  def verify_calibration_improvement():     """     Verifiziert, dass die zuletzt geloggte Kalibrierung den Brier-Score verbessert hat.     Liest den letzten Eintra
+
+### `swarm_artifact:Kalibrierungsmetriken in einer Logdatei speichern`
+*23.08. 11:56 UTC · Quelle: builder*
+
+```python import json import datetime from pathlib import Path  def log_calibration_metrics(brier_before: float, brier_after: float, log_file: str = "calibration_log.json") -> None:     """     Speich
+
+### `swarm_artifact:Isotonische Regressionskalibrierung auf Validierungsdaten an`
+*23.08. 11:54 UTC · Quelle: builder*
+
+```python # Isotonische Regressionskalibrierung (isotonic regression calibration) auf Validierungsdaten # Brier-Score (Brier-Score: Maß für die Genauigkeit von Wahrscheinlichkeitsvorhersagen) vor und 
+
+### `swarm_artifact:Erstelle Kalibrierungszeitplan und speichere letzten Laufzei`
+*23.08. 11:53 UTC · Quelle: builder*
+
+```python # Kalibrierungszeitplan: speichert letzten Laufzeitpunkt import json import datetime import pathlib import logging  # Einrichten einfacher Logging-Ausgabe (logging: Protokollierung) logging.
+
+### `last_swarm_goal`
+*23.08. 11:51 UTC · Quelle: system*
+
+Modellkalibrierung regelmäßig durchführen
+
+### `dream:202608231151:5`
+*23.08. 11:51 UTC · Quelle: dream*
+
+Unaddressed simulation risks (revisions required) led to a revise verdict, demonstrating that risk mitigation must be enforced before swarm continuation.
+
+### `dream:202608231151:4`
+*23.08. 11:51 UTC · Quelle: dream*
+
+Critic feedback limited to discovery commands caused blind spots, implying that diverse critic roles are needed to catch varied failure modes.
+
+### `dream:202608231151:3`
+*23.08. 11:51 UTC · Quelle: dream*
+
+Limited iteration budget (max_iterations=2) prevented convergence, showing that insufficient search cycles lead to premature termination and low scores.
+
+### `dream:202608231151:2`
+*23.08. 11:51 UTC · Quelle: dream*
+
+Evolution-generated high scores did not improve actual swarm outcome, suggesting the fitness function is misaligned with real‑world performance metrics.
+
+### `dream:202608231151:1`
+*23.08. 11:51 UTC · Quelle: dream*
+
+High latency spikes (>30s) correlate with low task scores, indicating that model selection should avoid high‑latency variants for time‑sensitive swarm roles.
 
 ### `strategy:modellleistung_durch_regelmäßiges_kalibrieren_stei`
 *23.08. 11:45 UTC · Quelle: evolution*

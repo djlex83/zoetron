@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 11:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 11:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Unaddressed simulation risks (revisions required) led to a revise verdict, demonstrating that risk mitigation must be enforced before swarm continuati
+- Critic feedback limited to discovery commands caused blind spots, implying that diverse critic roles are needed to catch varied failure modes.
+- Limited iteration budget (max_iterations=2) prevented convergence, showing that insufficient search cycles lead to premature termination and low score
+- Evolution-generated high scores did not improve actual swarm outcome, suggesting the fitness function is misaligned with real‑world performance metric
+- High latency spikes (>30s) correlate with low task scores, indicating that model selection should avoid high‑latency variants for time‑sensitive swarm
 - Repeated zero‑prune runs signal stale data accumulation, so prune thresholds must auto‑escalate when two consecutive runs prune nothing to prevent unb
 - Missing interface methods such as MemoryStore.add_fact lead to AttributeError crashes, proving that pre‑flight interface checks are essential for stab
 - Swarm role imbalance (many builders, few critics) correlates with low convergence scores, showing that enforcer‑based role quotas improve validation q
@@ -51,11 +56,6 @@
 - Builder-heavy role distribution (4 builders : 1 critic) correlates with low convergence scores, suggesting a minimum critic-to-builder ratio is needed
 - Critic output parsing failures halt evolution; implementing a validation wrapper that ensures critic output is parseable before use improves robustnes
 - Frequent resource exhaustion errors from the primary model indicate a need for request rate limiting or automatic fallback to alternative models.
-- Swarm cycles rarely converge within two iterations, suggesting convergence criteria are too strict or insufficient exploration; adjusting criteria or 
-- Prediction calibration consistently overestimates outcomes (e.g., predicted 7 vs actual 5), indicating a bias that can be corrected by adjusting predi
-- Critic outputs are often unparseable, blocking evolution; enforcing a strict JSON schema for critic feedback enables reliable variant selection.
-- Nvidia model requests frequently hit resource limits, causing upstream errors; implementing request throttling, exponential backoff, or fallback to al
-- Missing 'add_fact' method on MemoryStore causes hand-action failures; ensuring the store implements the required interface prevents execution errors.
 
 ---
 
