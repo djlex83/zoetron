@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-23 11:26:16",
- "ereignisse_ausgewertet": 2962,
+ "stand": "2026-08-23 11:32:06",
+ "ereignisse_ausgewertet": 2977,
  "werkzeuge": [
   {
    "tool": "dedup_skill_proposals.py",
@@ -55,9 +55,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "gelerntes-können-anwenden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.689,
+ "haende_quote": 0.693,
  "simulationen_angewandt": 102,
  "swarm_scores": {
   "n": 59,

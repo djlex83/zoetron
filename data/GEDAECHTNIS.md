@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**711 Fakten** · Stand 2026-08-23 11:26 UTC · aktualisiert bei jedem Herzschlag
+**716 Fakten** · Stand 2026-08-23 11:32 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 317
-- **dream:** 201
+- **dream:** 206
 - **anti_pattern:** 68
 - **strategy:** 55
 - **last_swarm_goal:** 27
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231131:5`
+*23.08. 11:31 UTC · Quelle: dream*
+
+Missing MemoryStore.add_fact method caused a runtime hand-execution error, showing that interface contracts must be enforced via abstract base classes or runtime checks.
+
+### `dream:202608231131:4`
+*23.08. 11:31 UTC · Quelle: dream*
+
+Consistent overprediction of goal scores (predicted 7 vs actual 5) reveals calibration drift that can be corrected by applying a rolling actual/predicted ratio before go/no-go decisions.
+
+### `dream:202608231131:3`
+*23.08. 11:31 UTC · Quelle: dream*
+
+Builder-heavy role distribution (4 builders : 1 critic) correlates with low convergence scores, suggesting a minimum critic-to-builder ratio is needed for quality control.
+
+### `dream:202608231131:2`
+*23.08. 11:31 UTC · Quelle: dream*
+
+Critic output parsing failures halt evolution; implementing a validation wrapper that ensures critic output is parseable before use improves robustness.
+
+### `dream:202608231131:1`
+*23.08. 11:31 UTC · Quelle: dream*
+
+Frequent resource exhaustion errors from the primary model indicate a need for request rate limiting or automatic fallback to alternative models.
 
 ### `dream:202608231126:5`
 *23.08. 11:26 UTC · Quelle: dream*

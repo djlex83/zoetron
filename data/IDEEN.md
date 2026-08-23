@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 11:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 11:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Missing MemoryStore.add_fact method caused a runtime hand-execution error, showing that interface contracts must be enforced via abstract base classes
+- Consistent overprediction of goal scores (predicted 7 vs actual 5) reveals calibration drift that can be corrected by applying a rolling actual/predic
+- Builder-heavy role distribution (4 builders : 1 critic) correlates with low convergence scores, suggesting a minimum critic-to-builder ratio is needed
+- Critic output parsing failures halt evolution; implementing a validation wrapper that ensures critic output is parseable before use improves robustnes
+- Frequent resource exhaustion errors from the primary model indicate a need for request rate limiting or automatic fallback to alternative models.
 - Swarm cycles rarely converge within two iterations, suggesting convergence criteria are too strict or insufficient exploration; adjusting criteria or 
 - Prediction calibration consistently overestimates outcomes (e.g., predicted 7 vs actual 5), indicating a bias that can be corrected by adjusting predi
 - Critic outputs are often unparseable, blocking evolution; enforcing a strict JSON schema for critic feedback enables reliable variant selection.
@@ -51,11 +56,6 @@
 - Simulation detects risks (3 in second cycle) but revisions are not applied (0 applied), breaking the feedback loop between critic and builder.
 - The calibration swarm fails to converge (score 4/10) despite evolution producing high-scoring variants (9/10), indicating a gap between evolution eval
 - Free-tier models exhibit high failure rates (502/429) making them unreliable for production swarms; only dots-studio/dots-3-note-preview and nvidia/ne
-- Evolution consistently produces high-scoring variants (9, 8, 7) but the deployed swarm still scores 3, indicating the promotion pipeline lacks a reali
-- Runtime AttributeError on MemoryStore.add_fact proves that interface contracts are not validated before goal execution, turning missing methods into p
-- Swarm role distribution (1 planner, 5 builders, 1 critic) violates the minimum-quorum principle and correlates with non-convergence at score 3.
-- Calibration error of 2 points (predicted 5 vs actual 3) persists despite evolution improving variant scores to 9/10, revealing a simulation-to-reality
-- Model latency varies 10x (3.6–40.4 s) on the same endpoint, making fixed timeouts unreliable and causing cascade delays in swarm cycles.
 
 ---
 
