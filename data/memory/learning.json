@@ -1,0 +1,55 @@
+{
+ "stand": "2026-08-23 01:09:41",
+ "ereignisse_ausgewertet": 1930,
+ "werkzeuge": [
+  {
+   "tool": "dedup_skill_proposals.py",
+   "laeufe": 13,
+   "erfolge": 13,
+   "quote": 1.0
+  },
+  {
+   "tool": "fehlermuster-aus-schwarm-träumen-nutzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "fehler-im-modell-vermeiden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "ci-pipeline-reparieren-und-simulation-va.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "traum-erinnerungen-besser-verknüpfen-und.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  }
+ ],
+ "haende_quote": 0.625,
+ "simulationen_angewandt": 62,
+ "swarm_scores": {
+  "n": 37,
+  "best": 9.0,
+  "schnitt": 4.32
+ },
+ "score_nach_ziel_typ": {
+  "analyse": {
+   "n": 34,
+   "schnitt": 4.24
+  }
+ }
+}

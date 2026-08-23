@@ -28,5 +28,35 @@
   "key": "swarm_artifact:Standardize CI Outputs with Real‑Simulation Gate",
   "value": "**Artifact: CI Step – Deterministic Manifest‑Based Simulation Gate**\n\n---\n\n### Overview\nThis artifact provides a reusable CI step (GitHub Actions‑compatible) that:\n1. Loads a model manifest (`manifest",
   "source": "builder"
+ },
+ {
+  "ts": 1787397501.3823845,
+  "key": "swarm_artifact:Standardize CI outputs CI pipeline with real‑simulation inte",
+  "value": "**Artifact: CI Workflow – Standardized Manifests & Full‑Simulation Gate**  \n*(GitHub Actions – adaptable to other CI systems)*  \n\n```yaml\nname: Model Reliability CI\n\n# --------------------------------",
+  "source": "builder"
+ },
+ {
+  "ts": 1787397479.4727957,
+  "key": "swarm_artifact:Automated orphaned swarm session detection and cleanup",
+  "value": "# Automated Orphaned Swarm Session Detection & Cleanup Service  \n\n## 1. Overview  \nA lightweight monitoring service that periodically inspects active swarm sessions, identifies those that have missed ",
+  "source": "builder"
+ },
+ {
+  "ts": 1787390880.589834,
+  "key": "swarm_artifact:Redesign MemoryStore as Bounded Self‑Pruning Ring Buffer wit",
+  "value": "# Redesign MemoryStore as a Bounded Self‑Pruning Ring Buffer with Weak References\n\n## Overview\nReplace the existing `MemoryStore` with a fixed‑capacity ring buffer that:\n* Stores skill‑proposal entrie",
+  "source": "builder"
+ },
+ {
+  "ts": 1787360831.3572447,
+  "key": "swarm_artifact:Implement Standardized Scoring and Transparent Calibration",
+  "value": "# Implement Standardized Scoring and Transparent Calibration  \n\n## Overview  \nCreate a unified failure‑scoring pipeline that (1) computes a calibrated failure probability for each model inference, (2)",
+  "source": "builder"
+ },
+ {
+  "ts": 1787348426.7176456,
+  "key": "swarm_artifact:Gather USP artifacts",
+  "value": "## USP Artifact Collection\n\n### Tagging Template\n- **USP-ID**: unique identifier  \n- **Source**: document/note/recording reference  \n- **Date**: YYYY‑MM‑DD  \n- **Format**: file type (e.g., MD, PDF, DO",
+  "source": "builder"
  }
 ]
