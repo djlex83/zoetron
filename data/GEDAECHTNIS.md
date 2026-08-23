@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1343 Fakten** · Stand 2026-08-23 22:00 UTC · aktualisiert bei jedem Herzschlag
+**1349 Fakten** · Stand 2026-08-23 22:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 562
+- **dream:** 567
 - **swarm_artifact:** 442
 - **anti_pattern:** 118
 - **strategy:** 80
-- **last_swarm_goal:** 66
+- **last_swarm_goal:** 67
 - **last_swarm_critique:** 56
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,36 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*23.08. 22:02 UTC · Quelle: system*
+
+Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
+
+### `dream:202608232201:5`
+*23.08. 22:01 UTC · Quelle: dream*
+
+Consecutive prune_run events removed 0 facts and 0 events, meaning retention thresholds are effectively inert and memory grows unchecked until a zero-prune alarm forces a criteria review.
+
+### `dream:202608232201:4`
+*23.08. 22:01 UTC · Quelle: dream*
+
+Both parked whispers burned all 3 attempts waiting on a creator decision, so re-attempting parked items wastes cycles; park once and escalate through a single batched decision request.
+
+### `dream:202608232201:3`
+*23.08. 22:01 UTC · Quelle: dream*
+
+Model latency on the identical provider swung 8.9s to 23.1s (~2.6x spread), so timeout and failover thresholds must be computed relative to a rolling median, never fixed constants.
+
+### `dream:202608232201:2`
+*23.08. 22:01 UTC · Quelle: dream*
+
+act_done recorded converged=true with score=null in reflex mode, proving success is currently stamped without measured evidence; every completion must carry a non-null score or an exit-0 test artifact before the success flag.
+
+### `dream:202608232201:1`
+*23.08. 22:01 UTC · Quelle: dream*
+
+Near-duplicate goals regenerate every cycle ('Modell weniger Fehler machen' vs 'Modellfehler vermeiden'; Konvergenz-Tor appears simultaneously as whisper_geparkt, drive_whisper, and reflex_used) because no content-hash deduplication links recurring goals to a 
 
 ### `last_swarm_goal`
 *23.08. 21:58 UTC · Quelle: system*

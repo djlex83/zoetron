@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 22:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,10 +16,10 @@
 - Add automated contract tests for the MemoryStore interface (add_fact, get_facts, etc.) to run on every CI buil *(hatte die Idee 3×)*
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
-- Replace fixed revision limit with risk-proportional budget: revisions = 3 + risk_score (capped at 10), gated b *(hatte die Idee 2×)*
 - Add MemoryStore interface validator at process start and before each hand-action batch; fail fast on missing m *(hatte die Idee 2×)*
 - Create dream-to-evolution extractor that parses finished logs for recurring error patterns and seeds them as v *(hatte die Idee 2×)*
 - Deploy a tiered model‑call wrapper with circuit breaker (3 failures → open), exponential backoff (1s,2s,4s,8s) *(hatte die Idee 2×)*
+- Build a skill lifecycle tracker logging proposal, review, instantiate, and first‑use timestamps; auto‑flag ski *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -32,15 +32,20 @@
 - Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
-- Fehler beim Modell verstehen und beheben *(wieder aufgegriffen: 2×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
-- Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger testen *(wieder aufgegriffen: 2×)*
 - Modellfehler schnell erkennen und beheben *(wieder aufgegriffen: 2×)*
+- Skill-Vorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
+- Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Consecutive prune_run events removed 0 facts and 0 events, meaning retention thresholds are effectively inert and memory grows unchecked until a zero-
+- Both parked whispers burned all 3 attempts waiting on a creator decision, so re-attempting parked items wastes cycles; park once and escalate through 
+- Model latency on the identical provider swung 8.9s to 23.1s (~2.6x spread), so timeout and failover thresholds must be computed relative to a rolling 
+- act_done recorded converged=true with score=null in reflex mode, proving success is currently stamped without measured evidence; every completion must
+- Near-duplicate goals regenerate every cycle ('Modell weniger Fehler machen' vs 'Modellfehler vermeiden'; Konvergenz-Tor appears simultaneously as whis
 - The reflex path resolved its goal in one 0.02s step while the swarm burned 2 cycles without converging, showing deterministic/simple goals should be r
 - Consecutive prune runs removed 0 facts and 0 events, meaning the prune criteria no longer match live memory content and retention policy needs recalib
 - Model latency varied 3× across calls (7.2s–23.1s), so any fixed timeout either stalls the pipeline or truncates valid work; timeouts must adapt to a r
@@ -51,11 +56,6 @@
 - Effort calibration systematically underestimated this task (predicted 3, actual 5, abs_error 2), so predictions need a rolling correction factor deriv
 - The built tool 'modell-gesundheitsregister-mit-sicherung' was rejected because it accepted no input at all (no parameters/argv/stdin/file), showing bu
 - Free-tier OpenRouter model latency is wildly unstable (same model: 1.7s to 98.0s, ~60x spread), so pipelines must gate on measured timeouts and fallba
-- Offline consolidation that merges same‑day dreams with older memories and clusters them yields actionable goal candidates; a nightly reflection job tu
-- Zero pruning events over three consecutive runs signal that the pruner’s thresholds are too lax; adaptive threshold adjustment based on prune rate pre
-- Exploring multiple variants (≥3) and selecting the highest‑scoring variant can raise performance from ~3/10 to ~9/10, making a variant‑selection loop 
-- Calibration drift (error increasing from 1 to 2) correlates with stale model scores; regular re‑calibration after each score update reduces prediction
-- High latency outliers (>30 s) often precede circuit‑breaker trips, so monitoring latency spikes enables preemptive load shedding.
 
 ---
 
