@@ -88,7 +88,7 @@ export default function App() {
         <Organs pulse={pulse} />
         <BrainStage board={board} pulse={pulse} onBrain={setBrain} />
         <Memory memory={memory} seed={seed} />
-        <Consistency board={board} brain={brain} ideas={ideas} memory={memory} beat={beat} seed={seed} />
+        <Consistency board={board} brain={brain} ideas={ideas} memory={memory} beat={beat} seed={seed} onBrain={setBrain} />
         <Ideas ideas={ideas} seed={seed} />
         <Access />
       </main>

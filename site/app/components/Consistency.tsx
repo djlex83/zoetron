@@ -1,4 +1,6 @@
+import { useEffect, useRef } from 'react'
 import { useLang } from '../lib/lang'
+import { loadBrain } from '../lib/brain'
 import { runChecks, type CheckState } from '../lib/consistency'
 import type { Brain } from '../lib/brain'
 import type { Beat, Ideas, Leaderboard, MemoryFeed, Seed } from '../lib/live'
@@ -23,20 +25,41 @@ export default function Consistency(input: {
   memory: MemoryFeed | null
   beat: Beat | null
   seed: Seed | null
+  onBrain?: (b: Brain) => void
 }) {
   const { lang, t } = useLang()
+  const host = useRef<HTMLDivElement>(null)
   const checks = runChecks(input)
+
+  // A reader can land here without ever passing the brain section, and then the
+  // neuron/synapse comparisons would silently be missing. Pull the data once
+  // this section comes into view — the module cache shares the request.
+  useEffect(() => {
+    if (input.brain || !host.current) return
+    const obs = new IntersectionObserver(
+      ([e]) => {
+        if (!e?.isIntersecting) return
+        obs.disconnect()
+        loadBrain().then((b) => input.onBrain?.(b)).catch(() => {})
+      },
+      { rootMargin: '500px 0px' },
+    )
+    obs.observe(host.current)
+    return () => obs.disconnect()
+  }, [input.brain, input.onBrain])
   const decidable = checks.filter((c) => c.state === 'ok' || c.state === 'drift')
   const agreeing = decidable.filter((c) => c.state === 'ok').length
   const allGood = decidable.length > 0 && agreeing === decidable.length
 
   return (
     <Section id="pruefung" className="border-t border-white/6">
-      <div className="grid gap-10 lg:grid-cols-[22rem_1fr] lg:gap-16">
+      <div ref={host} className="grid gap-10 lg:grid-cols-[22rem_1fr] lg:gap-16">
         <header>
-          <div data-reveal className="flex items-center gap-3">
-            <span className="h-px w-10 bg-amber/60" />
-            <span className="label text-amber/90">{lang === 'de' ? 'Datenprüfung' : 'Data check'}</span>
+          <div data-reveal className="flex">
+            <span className="eyebrow-pill">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber" />
+              {lang === 'de' ? 'Datenprüfung' : 'Data check'}
+            </span>
           </div>
           <h2 data-reveal className="display mt-5 text-ink"
             style={{ fontSize: 'max(1.8rem, calc(var(--h1-size) * 0.7))', lineHeight: 1.05 }}>
