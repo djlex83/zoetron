@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**913 Fakten** · Stand 2026-08-23 15:37 UTC · aktualisiert bei jedem Herzschlag
+**927 Fakten** · Stand 2026-08-23 15:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 363
-- **dream:** 292
-- **anti_pattern:** 92
-- **strategy:** 67
-- **last_swarm_goal:** 42
-- **last_swarm_critique:** 39
+- **swarm_artifact:** 367
+- **dream:** 297
+- **anti_pattern:** 94
+- **strategy:** 68
+- **last_swarm_goal:** 43
+- **last_swarm_critique:** 40
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fähigkeitsvorschläge_aktivieren`
+*23.08. 15:47 UTC · Quelle: evolution*
+
+Dependency injection & configuration abstraction - Variant 1 provides the highest overall impact by eliminating file I/O in tests through dependency injection, while maintaining high elegance and feasible implementation.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeitsvorschläge akt:2`
+*23.08. 15:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Test isolation with temporary filesystem & property‑based testing - Refactor the unit test to use pytest's tmp_path fixture to create a temporary YAML file, monkeypatch the configuration path to point to this temporary file, 
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeitsvorschläge akt:0`
+*23.08. 15:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Static typing & structured logging - Add comprehensive type hints to all functions and methods, replace the broad Exception catch with specific exception handling (e.g., FileNotFoundError, YAMLError), and integrate the Python
+
+### `last_swarm_critique`
+*23.08. 15:47 UTC · Quelle: critic*
+
+score=5; issues=Main script lacks type hints and uses a overly broad Exception catch; could benefit from logging instead of direct prints.; UI integration script opens the YAML file without specifying encoding and lacks error handling for missing/invalid files
+
+### `swarm_artifact:Dokumentation aktualisieren: Hinweis zu aktivierten Fähigkei`
+*23.08. 15:46 UTC · Quelle: builder*
+
+## Fähigkeitsvorschläge aktiviert
+
+### `swarm_artifact:UI-Integration: Button aktivieren, der Vorschläge anzeigt (U`
+*23.08. 15:46 UTC · Quelle: builder*
+
+```markdown ```python import yaml, os # Prüft den Feature-Flag für Fähigkeitsvorschläge und gibt aus, # ob der Button in der UI aktiviert wäre (einfaches Deutsch). path = 'src/config/feature_flags.yam
+
+### `swarm_artifact:Unit-Test für Fähigkeitsvorschläge schreiben (Write unit tes`
+*23.08. 15:46 UTC · Quelle: builder*
+
+```markdown ```python # src/skill_suggestions.py import yaml from pathlib import Path  def get_skill_suggestions():     """Return skill suggestions if the feature flag is enabled."""     flag_path = P
+
+### `swarm_artifact:Feature Flag für Fähigkeitsvorschläge prüfen und setzen (Che`
+*23.08. 15:46 UTC · Quelle: builder*
+
+```markdown ```python import sys import yaml from pathlib import Path  def main() -> None:     # Pfad zur Feature‑Flag‑Datei     flag_path = Path('src/config/feature_flags.yaml')      try:         # S
+
+### `last_swarm_goal`
+*23.08. 15:43 UTC · Quelle: system*
+
+Fähigkeitsvorschläge aktivieren
+
+### `dream:202608231542:5`
+*23.08. 15:42 UTC · Quelle: dream*
+
+Conserve metabolism state restricts task budget to 1, causing goals to stall and indicating a need to defer or batch low‑priority work during stress.
+
+### `dream:202608231542:4`
+*23.08. 15:42 UTC · Quelle: dream*
+
+Missing MemoryStore.add_fact method caused a hand-action failure, highlighting the need for interface validation before executing actions.
+
+### `dream:202608231542:3`
+*23.08. 15:42 UTC · Quelle: dream*
+
+Simulation risk counts often exceed applied revisions, leaving residual risk that can cause action failures if not fully addressed.
+
+### `dream:202608231542:2`
+*23.08. 15:42 UTC · Quelle: dream*
+
+Evolution runs produce high-scoring variants that fail in swarm execution, indicating a gap between simulated fitness and real-world performance.
+
+### `dream:202608231542:1`
+*23.08. 15:42 UTC · Quelle: dream*
+
+High latency outliers (150s+) occur during peak load and suggest need for dynamic model failover to maintain responsiveness.
 
 ### `strategy:kalibrierungsmetriken_besser_überwachen`
 *23.08. 15:36 UTC · Quelle: evolution*

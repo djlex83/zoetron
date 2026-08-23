@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 15:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 15:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,6 +26,7 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modellfehler verringern *(wieder aufgegriffen: 3×)*
 - GitHub-Fehler beheben und vermeiden *(wieder aufgegriffen: 2×)*
 - Modellfehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und verringern *(wieder aufgegriffen: 2×)*
@@ -37,10 +38,14 @@
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beheben *(wieder aufgegriffen: 2×)*
-- Fähigkeitsvorschläge häufiger testen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Conserve metabolism state restricts task budget to 1, causing goals to stall and indicating a need to defer or batch low‑priority work during stress.
+- Missing MemoryStore.add_fact method caused a hand-action failure, highlighting the need for interface validation before executing actions.
+- Simulation risk counts often exceed applied revisions, leaving residual risk that can cause action failures if not fully addressed.
+- Evolution runs produce high-scoring variants that fail in swarm execution, indicating a gap between simulated fitness and real-world performance.
+- High latency outliers (150s+) occur during peak load and suggest need for dynamic model failover to maintain responsiveness.
 - Maintaining a fixed swarm role ratio (e.g., 1 planner : 2 builders : 1 critic) at start prevents imbalance and reduces the need for later re‑balancing
 - Skill proposals that are not validated before integration risk regressions, as observed when new skills were applied without testing.
 - Zero‑prune runs reveal that memory pruning is inactive until triggered, so pruning aggressiveness must increase automatically after periods of no prun
@@ -51,11 +56,6 @@
 - Conserve-mode throttling (stress 0.811 -> max_iterations=1) launched a swarm that then failed to converge in 2 cycles, so budget cuts during high stre
 - The evolution run crowned a variant scoring 9/10 internally, yet the swarm finished at 3/10, revealing that builder/critic self-scores are systematica
 - Latency on the same model varied from 1.6s to 41.1s across calls, proving fixed timeouts are unusable on free-tier providers and per-model adaptive la
-- HTTP 200 does not mean success: the nemotron-ultra endpoint returned status 200 with zero choices and a 502 'Service temporarily overloaded' body, so 
-- Simulation flagged 5 risks but only 1 revision was applied and the swarm still failed at 3/10, indicating partial revision application leaves critical
-- Metabolism conserve mode (stress 0.877) capped iterations at 1 while the goal required multi-cycle convergence to score 8+, creating a structural conf
-- Both model failures were identical upstream 502 'Service temporarily overloaded' errors on nemotron-3-ultra, while the single manual fallback to nemot
-- Calibration was perfect (predicted 3, actual 3, abs_error 0), so the failure is corrective not predictive: the system executed a plan it accurately pr
 
 ---
 
