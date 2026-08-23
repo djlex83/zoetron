@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**632 Fakten** · Stand 2026-08-23 08:56 UTC · aktualisiert bei jedem Herzschlag
+**637 Fakten** · Stand 2026-08-23 09:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 295
-- **dream:** 165
+- **dream:** 170
 - **anti_pattern:** 60
 - **strategy:** 51
 - **last_swarm_goal:** 22
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608230911:5`
+*23.08. 09:11 UTC · Quelle: dream*
+
+Interface mismatches between MemoryStore and consumers cause silent failures that are only detected after deployment, highlighting the need for load‑time contract validation.
+
+### `dream:202608230911:4`
+*23.08. 09:11 UTC · Quelle: dream*
+
+Role‑quota violations (missing planner/critic/builders) lead to unbalanced swarm behavior and poor mission outcomes.
+
+### `dream:202608230911:3`
+*23.08. 09:11 UTC · Quelle: dream*
+
+The swarm run needed three revisions to converge, indicating missing pre‑flight checks that could catch configuration errors early.
+
+### `dream:202608230911:2`
+*23.08. 09:11 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 5 vs actual 3) reveals systematic over‑optimism in score predictions, requiring continuous bias correction.
+
+### `dream:202608230911:1`
+*23.08. 09:11 UTC · Quelle: dream*
+
+Latency spikes (e.g., 313 s) show that relying on a single model without fallback risks unacceptable delays.
 
 ### `strategy:neue_fähigkeiten_aus_träumen_lernen`
 *23.08. 08:55 UTC · Quelle: evolution*
