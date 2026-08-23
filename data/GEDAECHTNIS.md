@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1396 Fakten** · Stand 2026-08-23 22:19 UTC · aktualisiert bei jedem Herzschlag
+**1403 Fakten** · Stand 2026-08-23 22:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 587
-- **swarm_artifact:** 453
+- **dream:** 592
+- **swarm_artifact:** 454
 - **anti_pattern:** 124
 - **strategy:** 83
-- **last_swarm_goal:** 71
+- **last_swarm_goal:** 72
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*23.08. 22:20 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232220:5`
+*23.08. 22:20 UTC · Quelle: dream*
+
+Drive goals (reliable swarms, model health, dream-goal alignment) emerge reactively from failures rather than proactively shaping swarm design.
+
+### `dream:202608232220:4`
+*23.08. 22:20 UTC · Quelle: dream*
+
+Skill proposals accumulate without a selection filter, flooding the system with unimplemented ideas while critical bugs (AttributeError) block progress.
+
+### `dream:202608232220:3`
+*23.08. 22:20 UTC · Quelle: dream*
+
+Prune_run prunes zero candidates across cycles, indicating the retention threshold is miscalibrated and memory grows unbounded under load.
+
+### `dream:202608232220:2`
+*23.08. 22:20 UTC · Quelle: dream*
+
+Swarms repeatedly fail to converge (Ich-Kern-Injektor parked after 3 attempts) because simulation verdicts ignore runtime interface mismatches like missing MemoryStore.add_fact.
+
+### `dream:202608232220:1`
+*23.08. 22:20 UTC · Quelle: dream*
+
+Extreme latency spikes (108.9s) correlate with swarm initiation under high stress (0.849), suggesting model overload cascades into coordination failures.
+
+### `swarm_artifact:Implement Hermes Client Transport Layer`
+*23.08. 22:20 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Hermes Client Transport Layer Connects to Hermes agent via stdio, TCP, or Unix socket with heartbeat and auto-reconnection. """  from __future__ import annotations
 
 ### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
 *23.08. 22:18 UTC · Quelle: evolution*
