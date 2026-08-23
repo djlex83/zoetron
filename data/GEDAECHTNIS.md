@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**336 Fakten** · Stand 2026-08-23 00:39 UTC · aktualisiert bei jedem Herzschlag
+**341 Fakten** · Stand 2026-08-23 00:54 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 216
-- **dream:** 45
+- **dream:** 50
 - **strategy:** 31
 - **anti_pattern:** 24
 - **creator_teaching:** 5
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608230054:5`
+*23.08. 00:54 UTC · Quelle: dream*
+
+Logging the latency from skill proposal to activation and flagging dormancy after three cycles surfaces reusable capabilities.
+
+### `dream:202608230054:4`
+*23.08. 00:54 UTC · Quelle: dream*
+
+Limiting iterative revisions and auto‑triggering evolution on stagnant scores curtails wasteful compute while driving improvement.
+
+### `dream:202608230054:3`
+*23.08. 00:54 UTC · Quelle: dream*
+
+Guaranteeing minimum role counts (planner, critic, builder) each cycle keeps the swarm from deadlocking and ensures progress.
+
+### `dream:202608230054:2`
+*23.08. 00:54 UTC · Quelle: dream*
+
+Validating required interfaces at process start and before each action batch eliminates silent failures and speeds up debugging.
+
+### `dream:202608230054:1`
+*23.08. 00:54 UTC · Quelle: dream*
+
+Latency‑based circuit breakers with a 3‑call hysteresis prevent overload spikes and enable graceful model fallback.
 
 ### `dream:202608230038:5`
 *23.08. 00:38 UTC · Quelle: dream*
