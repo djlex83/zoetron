@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**618 Fakten** · Stand 2026-08-23 08:36 UTC · aktualisiert bei jedem Herzschlag
+**632 Fakten** · Stand 2026-08-23 08:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 291
-- **dream:** 160
-- **anti_pattern:** 58
-- **strategy:** 50
-- **last_swarm_goal:** 21
-- **last_swarm_critique:** 20
+- **swarm_artifact:** 295
+- **dream:** 165
+- **anti_pattern:** 60
+- **strategy:** 51
+- **last_swarm_goal:** 22
+- **last_swarm_critique:** 21
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:neue_fähigkeiten_aus_träumen_lernen`
+*23.08. 08:55 UTC · Quelle: evolution*
+
+Leverage a pretrained German POS‑tagging pipeline (spaCy/HuggingFace) for robust noun extraction - Variant 0 leverages a mature pretrained German POS‑tagging pipeline, offering high elegance (simple, reusable code), strong feasibility (minimal setup with spaCy
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Neue Fähigkeiten aus Trä:2`
+*23.08. 08:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Train a sequence‑labeling model (CRF/BiLSTM‑CRF) to detect noun chunks directly - Create a feature‑rich dataset from a German corpus (e.g., TigerCorpus) annotated with BIO noun‑phrase tags. Features include the token itself, 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Neue Fähigkeiten aus Trä:1`
+*23.08. 08:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Combine morphological analysis with a gazetteer and statistical compound splitte - First, tokenize using a regex that splits on whitespace and punctuation, preserving internal hyphens. For each token, run a German morphologic
+
+### `last_swarm_critique`
+*23.08. 08:55 UTC · Quelle: critic*
+
+score=4; issues=extract_nouns extracts all words, not only nouns; lacks part‑of‑speech filtering.; Stopwords list is incomplete and includes verbs that should be removed via a proper list; case‑insensitive check works but stopwords should be lowercased.; Regex
+
+### `swarm_artifact:Simulate practice outcome`
+*23.08. 08:55 UTC · Quelle: builder*
+
+```python import random  starting = 3 improvement = random.randint(0, 10) final = min(starting + improvement, 10) print(f'Starting proficiency: {starting}, Improvement: {improvement}, Final proficienc
+
+### `swarm_artifact:Generate 7-day practice schedule`
+*23.08. 08:55 UTC · Quelle: builder*
+
+```python def generate_practice_schedule(skill: str, config: dict = None) -> list[str]:     """     Generate a 7‑day practice schedule for the given skill.          Parameter     ---------     skill :
+
+### `swarm_artifact:Map nouns to skill categories`
+*23.08. 08:55 UTC · Quelle: builder*
+
+### Artefakt zu 'Map nouns to skill categories' ```python import re  def extract_nouns(text):     """     Extract skill-related nouns from a dream description.     Returns a list of nouns (strings) af
+
+### `swarm_artifact:Dream noun extraction`
+*23.08. 08:54 UTC · Quelle: builder*
+
+```python import re  def extract_nouns(text):     """     Extract skill-related nouns from a dream description.     Returns a list of nouns (strings) after removing common stopwords.     """     # Mat
+
+### `last_swarm_goal`
+*23.08. 08:52 UTC · Quelle: system*
+
+Neue Fähigkeiten aus Träumen lernen
+
+### `dream:202608230852:5`
+*23.08. 08:52 UTC · Quelle: dream*
+
+Calibration error (predicted 7 vs actual 4) and low swarm score (4/10) expose inaccurate self‑assessment, solvable via nightly model calibration updates.
+
+### `dream:202608230852:4`
+*23.08. 08:52 UTC · Quelle: dream*
+
+Missing MemoryStore.add_fact method caused an AttributeError, proving that interface contract validation at swarm start prevents runtime failures.
+
+### `dream:202608230852:3`
+*23.08. 08:52 UTC · Quelle: dream*
+
+Upstream 502 overloads reveal single‑provider risk; diversifying endpoints and health‑checking improves system resilience.
+
+### `dream:202608230852:2`
+*23.08. 08:52 UTC · Quelle: dream*
+
+Repeated 429 Too Many Requests errors show rate‑limit bottlenecks that can be mitigated with per‑model throttling and exponential backoff.
+
+### `dream:202608230852:1`
+*23.08. 08:52 UTC · Quelle: dream*
+
+High latency spikes up to 71.9 s trigger timeouts, indicating a need for adaptive latency circuit breakers to fallback to faster models.
 
 ### `strategy:mehr_skills_wirklich_nutzen`
 *23.08. 08:34 UTC · Quelle: evolution*
