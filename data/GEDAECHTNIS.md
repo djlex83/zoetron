@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**593 Fakten** · Stand 2026-08-23 07:42 UTC · aktualisiert bei jedem Herzschlag
+**598 Fakten** · Stand 2026-08-23 07:58 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 286
-- **dream:** 145
+- **dream:** 150
 - **anti_pattern:** 56
 - **strategy:** 49
 - **last_swarm_goal:** 20
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608230758:5`
+*23.08. 07:58 UTC · Quelle: dream*
+
+Critics noted that logging was imported but not configured, highlighting a gap in initialization checks.
+
+### `dream:202608230758:4`
+*23.08. 07:58 UTC · Quelle: dream*
+
+Calibration predicted score 4 but actual was 6, revealing a systematic underestimation.
+
+### `dream:202608230758:3`
+*23.08. 07:58 UTC · Quelle: dream*
+
+Swarm role distribution skewed toward builders (4) versus planners (1) and critics (1) contributed to non‑convergence.
+
+### `dream:202608230758:2`
+*23.08. 07:58 UTC · Quelle: dream*
+
+Missing 'add_fact' method in MemoryStore caused an AttributeError, indicating incomplete interface implementation.
+
+### `dream:202608230758:1`
+*23.08. 07:58 UTC · Quelle: dream*
+
+Model latency frequently exceeds 30 s, causing unpredictable response times.
 
 ### `last_swarm_critique`
 *23.08. 07:41 UTC · Quelle: critic*
