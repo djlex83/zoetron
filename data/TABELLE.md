@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1039 Neuronen · 12592 bewertete Synapsen
+Stand: 1052 Neuronen · 12746 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -42,8 +42,8 @@ Stand: 1039 Neuronen · 12592 bewertete Synapsen
 | 8 | **0.53** | 💭 Applying revisions atomically and re‑simulatin… | 💭 Applying simulation revisions non‑atomically l… |
 | 9 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
 | 10 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
-| 11 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
-| 12 | **0.50** | 💭 Skill proposals accumulate faster than they ar… | 💭 Skill proposals accumulate but lack automated … |
-| 13 | **0.50** | 💭 Intermittent latency spikes above 20 s indicat… | 💭 High latency spikes up to 71.9 s trigger timeo… |
-| 14 | **0.50** | 💭 Swarm convergence fails despite evolution gain… | 💭 Swarm role imbalance (4 builders : 1 critic) c… |
-| 15 | **0.50** | 💭 Swarm convergence fails despite evolution gain… | 💭 Insufficient swarm cycles and limited critic p… |
+| 11 | **0.52** | 💭 hands-execute crashed with AttributeError 'Mem… | 💭 hands-execute crashed with AttributeError: Mem… |
+| 12 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
+| 13 | **0.50** | 💭 Skill proposals accumulate faster than they ar… | 💭 Skill proposals accumulate but lack automated … |
+| 14 | **0.50** | 💭 Intermittent latency spikes above 20 s indicat… | 💭 High latency spikes up to 71.9 s trigger timeo… |
+| 15 | **0.50** | 💭 Swarm convergence fails despite evolution gain… | 💭 Swarm role imbalance (4 builders : 1 critic) c… |

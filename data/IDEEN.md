@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,21 +41,21 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- prune_run removed 0 facts and 0 events, meaning the pruning criteria are effectively inert and memory hygiene silently degrades unless zero-prune runs
+- hands-execute crashed with AttributeError on MemoryStore.add_fact, proving that callers drift from the store's actual API; every store method used by 
+- The 'Extern-Quote' goal failed because two full swarm cycles still ended unconverged - breaking self-loops requires injecting an external artifact (qu
+- Score mispredictions are biased, not random (rolling mean error +3, abs errors 2-3), so a rolling-bias correction must be applied to every prediction 
+- Internal evolution scores are systematically inflated relative to outcomes: the winner scored 9/10 internally but delivered 4/10 at act_done, so any i
+- The swarm ended non-converged at score 4 after hitting the 2-cycle cap with a 4:1 builder-to-critic ratio, indicating max_iterations=2 and thin critic
+- hands-execute crashed with AttributeError: MemoryStore has no attribute 'add_fact', revealing interface drift between the memory layer and its callers
+- The simulator's zero-risk 'go' verdict on Embedding-Recall carried a 2-point prediction error while its risk-flagged 'revise' verdict was exact (error
+- All three free-tier fallback models (gemma-4-31b, gemma-4-26b-a4b, glm-5.2) failed with simultaneous 429s immediately after the primary's 502, showing
+- Evolution's internal winner score (9/10) diverged from the independent act_done score (4/10) by 5 points, so intra-evolution rankings must never be tr
 - Two consecutive model_fail events on different providers (Nemotron 502, Gemma client error) show single-provider dependency is a systemic fragility.
 - Embedding-recall simulation passed with zero risks after a drive whisper identified TF-IDF semantic gaps, proving targeted architectural critiques gen
 - Zero pruning occurred despite 14+ model events, suggesting the retention policy is too conservative for high-volume operational logs.
 - Simulation verdicts calibrate perfectly (predicted=actual=4) when risks=0, but require 5 revisions when risks=5, revealing risk count as a proxy for i
 - Extreme latency outliers (123.9s, 72.0s) correlate with upstream 502 errors, indicating infrastructure instability not model slowness.
-- Prune runs consistently report 0 facts and 0 events pruned, indicating the pruning criteria never match live data and memory will grow unboundedly.
-- All three self-selected drive goals were introspective (dream-linking, skill review, error reduction), confirming the navel-gazing loop persists until
-- The simulation flagged 5 revisions but only 4 were applied, demonstrating that non-atomic partial application leaves silent residual risk while the sy
-- Model latency on nvidia/nemotron-3-super-120b-a12b:free ranged 3.3s–123.9s (a 37x spread), meaning single-model routing without a timeout/failover exp
-- Across two dream cycles ~10 skill proposals accumulated with zero evidence of implementation, revealing that proposal generation has no adoption path 
-- The fact-yield whisper correctly identifies that rate limits make additional LLM calls the wrong lever; yield must come from richer structured output 
-- Drive goals with signal=failure ('Reflexe häufiger einsetzen', 'Fehler im Denken reduzieren') persist across cycles, indicating recurring unresolved f
-- Every prune_run reports facts_pruned=0 and events_pruned=0, meaning pruning eligibility logic is effectively inert and memory will grow unboundedly.
-- Free-tier model latency varies 3x within minutes (9.4s to 29.4s on nemotron-3-super), so any fixed timeout will either stall the loop or kill healthy 
-- Skill proposals repeat verbatim across consecutive dream cycles (pre-flight validator, N=10 sample gate, convergence gate, atomic revisions all appear
 
 ---
 
