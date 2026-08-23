@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-23 01:09:41",
- "ereignisse_ausgewertet": 1930,
+ "stand": "2026-08-23 11:26:16",
+ "ereignisse_ausgewertet": 2962,
  "werkzeuge": [
   {
    "tool": "dedup_skill_proposals.py",
@@ -16,8 +16,14 @@
   },
   {
    "tool": "fehler-im-modell-vermeiden.py",
-   "laeufe": 2,
-   "erfolge": 2,
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-und-simulationen-besser-nutzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -37,19 +43,31 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-selbstständig-üben.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-träume-nach-ideen-durchsuchen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.625,
- "simulationen_angewandt": 62,
+ "haende_quote": 0.689,
+ "simulationen_angewandt": 102,
  "swarm_scores": {
-  "n": 37,
+  "n": 59,
   "best": 9.0,
-  "schnitt": 4.32
+  "schnitt": 4.2
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 34,
-   "schnitt": 4.24
+   "n": 56,
+   "schnitt": 4.14
   }
  }
 }

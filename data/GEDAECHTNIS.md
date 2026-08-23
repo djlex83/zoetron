@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**695 Fakten** · Stand 2026-08-23 11:01 UTC · aktualisiert bei jedem Herzschlag
+**711 Fakten** · Stand 2026-08-23 11:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 312
-- **dream:** 191
+- **swarm_artifact:** 317
+- **dream:** 201
 - **anti_pattern:** 68
 - **strategy:** 55
-- **last_swarm_goal:** 26
+- **last_swarm_goal:** 27
 - **last_swarm_critique:** 25
 - **creator_teaching:** 7
 - **frontier:** 3
@@ -18,6 +18,86 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231126:5`
+*23.08. 11:26 UTC · Quelle: dream*
+
+Swarm cycles rarely converge within two iterations, suggesting convergence criteria are too strict or insufficient exploration; adjusting criteria or increasing allowed cycles improves solution quality.
+
+### `dream:202608231126:4`
+*23.08. 11:26 UTC · Quelle: dream*
+
+Prediction calibration consistently overestimates outcomes (e.g., predicted 7 vs actual 5), indicating a bias that can be corrected by adjusting prediction models or adding uncertainty margins.
+
+### `dream:202608231126:3`
+*23.08. 11:26 UTC · Quelle: dream*
+
+Critic outputs are often unparseable, blocking evolution; enforcing a strict JSON schema for critic feedback enables reliable variant selection.
+
+### `dream:202608231126:2`
+*23.08. 11:26 UTC · Quelle: dream*
+
+Nvidia model requests frequently hit resource limits, causing upstream errors; implementing request throttling, exponential backoff, or fallback to alternative models improves reliability.
+
+### `dream:202608231126:1`
+*23.08. 11:26 UTC · Quelle: dream*
+
+Missing 'add_fact' method on MemoryStore causes hand-action failures; ensuring the store implements the required interface prevents execution errors.
+
+### `swarm_artifact:Synchronisation mit detailliertem Logging durchführen`
+*23.08. 11:24 UTC · Quelle: builder*
+
+```bash #!/usr/bin/env bash # git-sync-with-logging.sh — Führt git fetch, pull, push mit verbose-Output aus, fängt Fehlermeldungen ab und erstellt Diagnose-Report # Nutzung: ./git-sync-with-logging.sh
+
+### `swarm_artifact:GitHub Actions Workflows und Status-Checks validieren`
+*23.08. 11:23 UTC · Quelle: builder*
+
+```bash #!/usr/bin/env bash # validate-github-actions.sh — Validiert GitHub Actions Workflows und Status-Checks # Prüft Workflow-Syntax, erforderliche Status-Checks und ob diese den Merge blockieren #
+
+### `swarm_artifact:Merge-Konflikte und große Dateien erkennen`
+*23.08. 11:21 UTC · Quelle: builder*
+
+```bash #!/usr/bin/env bash # merge-conflict-and-large-file-detector.sh # Detects unresolved merge conflicts, files >100MB, git-lfs tracked files, # and divergent history between local and remote bran
+
+### `swarm_artifact:Remote-Repository-Status und Branch-Schutz diagnostizieren`
+*23.08. 11:21 UTC · Quelle: builder*
+
+# Remote-Repository-Status & Branch-Schutz Diagnose  ```bash #!/usr/bin/env bash # github-repo-diagnose.sh — Prüft Erreichbarkeit, Branch-Protection, Status-Checks, Force-Push-Regeln # Nutzung: ./gith
+
+### `swarm_artifact:Git-Konfiguration und Authentifizierung prüfen`
+*23.08. 11:20 UTC · Quelle: builder*
+
+# Git-Konfiguration & Authentifizierung Prüfer  ```bash #!/usr/bin/env bash # git-auth-check.sh — Prüft Git-Config, SSH-Keys, PATs und Remote-URLs # Nutzung: ./git-auth-check.sh [--fix] [--verbose]  s
+
+### `last_swarm_goal`
+*23.08. 11:17 UTC · Quelle: system*
+
+GitHub-Fehler beim Synchronisieren beheben
+
+### `dream:202608231117:5`
+*23.08. 11:17 UTC · Quelle: dream*
+
+MemoryStore lacks an 'add_fact' method causing hand-action failures, revealing an interface contract violation in the persistence layer.
+
+### `dream:202608231117:4`
+*23.08. 11:17 UTC · Quelle: dream*
+
+Skill proposals are generated but rarely consumed, creating a capability-acquisition bottleneck explicitly recognized by the drive system.
+
+### `dream:202608231117:3`
+*23.08. 11:17 UTC · Quelle: dream*
+
+Simulation detects risks (3 in second cycle) but revisions are not applied (0 applied), breaking the feedback loop between critic and builder.
+
+### `dream:202608231117:2`
+*23.08. 11:17 UTC · Quelle: dream*
+
+The calibration swarm fails to converge (score 4/10) despite evolution producing high-scoring variants (9/10), indicating a gap between evolution evaluation and swarm integration.
+
+### `dream:202608231117:1`
+*23.08. 11:17 UTC · Quelle: dream*
+
+Free-tier models exhibit high failure rates (502/429) making them unreliable for production swarms; only dots-studio/dots-3-note-preview and nvidia/nemotron-3-nano-omni-30b-a3b-reasoning show consistent availability.
 
 ### `strategy:vorgeschlagene_fähigkeiten_prüfen_und_nutzen`
 *23.08. 11:00 UTC · Quelle: evolution*
