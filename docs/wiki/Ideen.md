@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 15:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 15:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Maintaining a fixed swarm role ratio (e.g., 1 planner : 2 builders : 1 critic) at start prevents imbalance and reduces the need for later re‑balancing
+- Skill proposals that are not validated before integration risk regressions, as observed when new skills were applied without testing.
+- Zero‑prune runs reveal that memory pruning is inactive until triggered, so pruning aggressiveness must increase automatically after periods of no prun
+- Latency shows high variance (from ~7 s to >400 s) without correlation to model size, suggesting that runtime conditions, not model choice, dominate pe
+- Model overload (502) and rate‑limit (429) errors occur across multiple models, indicating a need for model‑agnostic traffic shaping and fallback mecha
 - Dream could not parse its own output - check prompt size.
 - Five new skill proposals were generated while the standing goal remains 'finally actually try the suggestions', confirming the proposal backlog grows 
 - Conserve-mode throttling (stress 0.811 -> max_iterations=1) launched a swarm that then failed to converge in 2 cycles, so budget cuts during high stre
@@ -51,11 +56,6 @@
 - Metabolism conserve mode (stress 0.877) capped iterations at 1 while the goal required multi-cycle convergence to score 8+, creating a structural conf
 - Both model failures were identical upstream 502 'Service temporarily overloaded' errors on nemotron-3-ultra, while the single manual fallback to nemot
 - Calibration was perfect (predicted 3, actual 3, abs_error 0), so the failure is corrective not predictive: the system executed a plan it accurately pr
-- The evolution winner scored 9/10 internally but only 3/10 in the actual swarm run, proving variant fitness is measured on the wrong objective and need
-- MemoryStore API mismatch ('add_fact' missing) reveals schema drift between hand execution and memory module interfaces.
-- Swarm convergence fails with 5:1:1 builder-heavy role ratio and only 2 cycles, suggesting insufficient critic/planner oversight.
-- Critic role producing unparseable output blocks evolution improvement cycles despite high variant scores (8/10).
-- Calibration drift of ±2 points on CI workflow estimates indicates missing feedback loop between predicted and actual scores.
 
 ---
 
