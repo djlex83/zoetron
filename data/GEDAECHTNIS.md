@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1062 Fakten** · Stand 2026-08-23 18:37 UTC · aktualisiert bei jedem Herzschlag
+**1067 Fakten** · Stand 2026-08-23 18:43 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 404
-- **dream:** 362
+- **dream:** 367
 - **anti_pattern:** 104
 - **strategy:** 73
 - **last_swarm_goal:** 52
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231842:5`
+*23.08. 18:42 UTC · Quelle: dream*
+
+Applying simulation revisions piecemeal leaves unresolved risks; atomic application followed by re‑simulation ensures consistency.
+
+### `dream:202608231842:4`
+*23.08. 18:42 UTC · Quelle: dream*
+
+Evolution winners chosen after only two swarm cycles lack sufficient validation; more cycles or a score‑gate improve robustness.
+
+### `dream:202608231842:3`
+*23.08. 18:42 UTC · Quelle: dream*
+
+Runtime errors arise when the MemoryStore component lacks expected methods such as add_fact, breaking downstream actions.
+
+### `dream:202608231842:2`
+*23.08. 18:42 UTC · Quelle: dream*
+
+Predictor scores are unreliable when trained on fewer than ~10 recent (predicted, actual) pairs, causing over‑optimistic estimates.
+
+### `dream:202608231842:1`
+*23.08. 18:42 UTC · Quelle: dream*
+
+High latency outliers (>30 s) often precede low scores and indicate a need for automatic model failover or retry.
 
 ### `strategy:ich_kern_injektor_bauen__ein_selbst_für_jeden_llm_`
 *23.08. 18:37 UTC · Quelle: evolution*

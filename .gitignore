@@ -17,3 +17,7 @@ tests/
 pyproject.toml
 data/hands_workspace/
 data/tools/
+
+# Doppelablage: Generator schreibt hierhin, docs/ ist die Pages-Quelle
+data/brain_view.html
+data/graph_view.html

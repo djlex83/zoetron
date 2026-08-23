@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Applying simulation revisions piecemeal leaves unresolved risks; atomic application followed by re‑simulation ensures consistency.
+- Evolution winners chosen after only two swarm cycles lack sufficient validation; more cycles or a score‑gate improve robustness.
+- Runtime errors arise when the MemoryStore component lacks expected methods such as add_fact, breaking downstream actions.
+- Predictor scores are unreliable when trained on fewer than ~10 recent (predicted, actual) pairs, causing over‑optimistic estimates.
+- High latency outliers (>30 s) often precede low scores and indicate a need for automatic model failover or retry.
 - New drive goals (reduce model errors, embed dream inspiration, absorb skill proposals) were created reactively rather than derived from systematic fai
 - Generated skill proposals (contract tests, calibration sets, reflex lookup) remain unintegrated, creating a proposal-execution gap that repeats known 
 - Model latency variance (6.9s to 208.3s) for identical model calls suggests unreliable inference infrastructure that destabilizes planning budgets.
@@ -51,11 +56,6 @@
 - Hand‑action failures due to missing MemoryStore methods demonstrate that component interfaces are not validated before execution, leading to runtime e
 - Repeated simulation verdicts to revise without applying changes cause goal scores to stall, showing a missing feedback loop from simulation to policy 
 - High latency spikes (up to 90 s) reveal occasional model overload, indicating a need for adaptive timeouts and fallback mechanisms.
-- Evolution winners should meet a convergence gate (score≥8) or undergo multiple swarm cycles to avoid accepting suboptimal candidates.
-- Applying revisions atomically and re‑simulating prevents residual risks from persisting after changes.
-- Score predictor updates are reliable only after a sufficient number of recent prediction‑actual pairs, suggesting a minimum sample threshold.
-- Intermittent 502 upstream errors reveal volatile model endpoints that require graceful degradation.
-- Latency frequently exceeds 30 seconds, indicating a need for retry/backoff and failover strategies.
 
 ---
 
