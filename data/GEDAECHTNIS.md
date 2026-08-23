@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1326 Fakten** · Stand 2026-08-23 21:50 UTC · aktualisiert bei jedem Herzschlag
+**1331 Fakten** · Stand 2026-08-23 21:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 547
+- **dream:** 552
 - **swarm_artifact:** 442
 - **anti_pattern:** 118
 - **strategy:** 80
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232151:5`
+*23.08. 21:51 UTC · Quelle: dream*
+
+Offline consolidation that merges same‑day dreams with older memories and clusters them yields actionable goal candidates; a nightly reflection job turns replay into concrete tasks.
+
+### `dream:202608232151:4`
+*23.08. 21:51 UTC · Quelle: dream*
+
+Zero pruning events over three consecutive runs signal that the pruner’s thresholds are too lax; adaptive threshold adjustment based on prune rate prevents stagnation.
+
+### `dream:202608232151:3`
+*23.08. 21:51 UTC · Quelle: dream*
+
+Exploring multiple variants (≥3) and selecting the highest‑scoring variant can raise performance from ~3/10 to ~9/10, making a variant‑selection loop a reusable improvement procedure.
+
+### `dream:202608232151:2`
+*23.08. 21:51 UTC · Quelle: dream*
+
+Calibration drift (error increasing from 1 to 2) correlates with stale model scores; regular re‑calibration after each score update reduces prediction error.
+
+### `dream:202608232151:1`
+*23.08. 21:51 UTC · Quelle: dream*
+
+High latency outliers (>30 s) often precede circuit‑breaker trips, so monitoring latency spikes enables preemptive load shedding.
 
 ### `strategy:fähigkeits_messlatte_bauen__capability_benchmark_`
 *23.08. 21:50 UTC · Quelle: evolution*

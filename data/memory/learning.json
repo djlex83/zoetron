@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-23 21:50:34",
+ "stand": "2026-08-23 21:51:34",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -103,10 +103,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.731,
- "simulationen_angewandt": 116,
+ "haende_quote": 0.734,
+ "simulationen_angewandt": 115,
  "swarm_scores": {
   "n": 67,
   "best": 8.0,

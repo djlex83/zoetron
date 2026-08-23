@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Offline consolidation that merges same‑day dreams with older memories and clusters them yields actionable goal candidates; a nightly reflection job tu
+- Zero pruning events over three consecutive runs signal that the pruner’s thresholds are too lax; adaptive threshold adjustment based on prune rate pre
+- Exploring multiple variants (≥3) and selecting the highest‑scoring variant can raise performance from ~3/10 to ~9/10, making a variant‑selection loop 
+- Calibration drift (error increasing from 1 to 2) correlates with stale model scores; regular re‑calibration after each score update reduces prediction
+- High latency outliers (>30 s) often precede circuit‑breaker trips, so monitoring latency spikes enables preemptive load shedding.
 - Promoting the highest‑scoring variant in evolution pipelines yields consistent performance gains across cycles.
 - Missing required methods on dependencies cause silent failures; pre‑invocation interface validation catches configuration errors early.
 - Successful calibration after four revisions shows that limiting revision batches to five prevents endless loops.
@@ -51,11 +56,6 @@
 - Repeated zero‑prune runs suggest pruning criteria may be too strict or data stale, warranting an automated audit trigger.
 - Missing attribute errors (e.g., MemoryStore.add_fact) reveal absent interface‑contract enforcement across components.
 - Latency shows high variance with occasional spikes >100 s, indicating a need for dynamic timeouts and fallback mechanisms.
-- Swarm composition heavily favored builders (5) over planners and critics (1 each), limiting convergent improvement.
-- Simulation flagged five risks but act_done proceeded with score 4, showing revisions are not gated before execution.
-- Three consecutive zero‑prune runs indicate pruning criteria may be too strict, allowing stale facts to accumulate.
-- Missing MemoryStore.add_fact method caused a runtime AttributeError, revealing a gap in interface contract enforcement.
-- Latency jitter (5.7‑37.7 s) shows response times are unpredictable, requiring adaptive timeout mechanisms.
 
 ---
 
