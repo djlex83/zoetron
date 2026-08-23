@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 21:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Documenting a fix or explicit waiver for every simulation‑flagged risk before act_done ensures failures are learned from and not repeated.
+- Spikes in model latency correlate with unbounded internal revision loops, showing that limiting revisions and requiring external validation stabilizes
+- Zero‑prune runs concurrent with a growing store indicate static pruning is ineffective; eligibility based on age and zero access prevents stale data a
+- Associating temporally distant or thematically related dream memories reliably generates novel knowledge, making cross‑memory combination a durable in
+- Tying each drive goal to a concrete simulation or dream‑memory artifact closes the gap between abundant ideas and few executed actions.
 - MemoryStore API drift breaks hands-execute silently; a CI contract test pinning the exact public surface would fail fast instead of producing runtime 
 - Simulations routinely emit zero-risk 'go' verdicts, letting fragile plans advance; a hard gate of ≥3 concrete risks per 'go' would force deeper analys
 - Every free-tier model shares an implicit rate limit, but callers treat them independently, causing cascading 429/502 errors that a single token-bucket
@@ -51,11 +56,6 @@
 - Drive goals explicitly state a simulation-to-execution gap and a GitHub failure pattern, yet no automated rollout or retry logic exists for either.
 - Identical skill proposals (latency guard, GitHub retry, proposal-to-issue) appear repeatedly, revealing no deduplication or tracking mechanism for pro
 - A 35.9 s model latency breach proves the 30 s SLA guard is necessary and currently missing from the hot path.
-- Latency SLA breaches trigger no automatic fallback, leaving the system stuck on slow providers despite multi-provider availability.
-- Simulation flagged risks lack a mandatory resolution gate, so act_done can fire with unresolved hazards.
-- Prune runs consistently remove zero items while store size grows, showing the current eligibility heuristic is inert and wastes cycles.
-- Proposal deduplication via content-hash ledgers appears in three separate cycles, revealing that the system re-generates identical ideas instead of pr
-- Validation guards (interface, pre-call, pre-flight, sanity-check) are proposed repeatedly across cycles, indicating a systemic trust deficit in tool/h
 
 ---
 
