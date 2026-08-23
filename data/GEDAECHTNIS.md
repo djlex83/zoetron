@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1201 Fakten** · Stand 2026-08-23 20:33 UTC · aktualisiert bei jedem Herzschlag
+**1206 Fakten** · Stand 2026-08-23 20:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 477
+- **dream:** 482
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232037:5`
+*23.08. 20:37 UTC · Quelle: dream*
+
+Calibration events are sparse while drive goals explicitly demand more frequent calibration to improve model predictions.
+
+### `dream:202608232037:4`
+*23.08. 20:37 UTC · Quelle: dream*
+
+Skill proposals accumulate without an execution pipeline; none are auto-converted to tracked issues or scheduled for review.
+
+### `dream:202608232037:3`
+*23.08. 20:37 UTC · Quelle: dream*
+
+Documentation metrics drift across README, docs, and code (heartbeat: 5 min vs 10 min vs 300 s) because no single source of truth is enforced.
+
+### `dream:202608232037:2`
+*23.08. 20:37 UTC · Quelle: dream*
+
+The pruner runs repeatedly but prunes zero events, indicating the pruning criteria or scheduler are misconfigured or ineffective.
+
+### `dream:202608232037:1`
+*23.08. 20:37 UTC · Quelle: dream*
+
+Model latency frequently exceeds 30 s (observed 35.2 s) without automatic degradation, causing unpredictable swarm start delays.
 
 ### `dream:202608232032:5`
 *23.08. 20:32 UTC · Quelle: dream*

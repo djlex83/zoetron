@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration events are sparse while drive goals explicitly demand more frequent calibration to improve model predictions.
+- Skill proposals accumulate without an execution pipeline; none are auto-converted to tracked issues or scheduled for review.
+- Documentation metrics drift across README, docs, and code (heartbeat: 5 min vs 10 min vs 300 s) because no single source of truth is enforced.
+- The pruner runs repeatedly but prunes zero events, indicating the pruning criteria or scheduler are misconfigured or ineffective.
+- Model latency frequently exceeds 30 s (observed 35.2 s) without automatic degradation, causing unpredictable swarm start delays.
 - The system fails to connect recent dreams with older memories, limiting insight generation and goal formation.
 - Applying simulation revisions incrementally leaves partially patched plans, indicating a need for atomic batch updates.
 - Model latency occasionally exceeds acceptable thresholds, risking delays without a fallback mechanism.
@@ -51,11 +56,6 @@
 - Skill proposals often stay unimplemented; a repetition‑based promotion mechanism turns idle ideas into actionable tasks.
 - Pruning runs that prune zero items while the store exceeds size threshold reveal missing eligibility criteria, risking unbounded growth.
 - Latency variability across models requires adaptive timeout guards to avoid stalls and enable reliable fallback.
-- Isolated knowledge (e.g., old dreams, biographies) fails to generate new value unless linked through explicit cross‑referencing mechanisms.
-- Ideas stay unused when there is no systematic process to prototype, evaluate, and promote promising proposals.
-- Calculation failures frequently stem from unchecked assumptions or missing sanity checks in numeric pipelines.
-- Task-transfer errors occur when interface contracts are not validated, causing data loss or corruption.
-- Incomplete group projects often result from missing explicit completion criteria and verification steps before marking tasks as done.
 
 ---
 
