@@ -8,7 +8,23 @@
 - [x] FaktWächter-Validierung: roter Ozean → geparkt
 - [x] GitHub-Vollausstattung: Pages, Issues-Selbstverwaltung, Releases, Sponsor-Button
 
+## Erreicht (2026-08-23) – Der große Sprung
+- [x] 🧬 GENOM: 5 Instinkt-Regeln in jedem Prompt + Selbsterhalt-Watchdog
+- [x] 🕸 SEMANTISCHES GEDÄCHTNIS: Bedeutung statt Wörter (TF-IDF+Synonyme), Cross-Domain-Bridging
+- [x] 🎯 WILLE: Missionen mit messbaren Zielen, Vorfahrt vor Neugier (Drossel 6 h)
+- [x] 📖 LEHRER-KANAL: Erschaffer-Wissen fließt als `creator_teaching:` in jeden Prompt
+- [x] 🧠 SELBSTLERNEN: statistische Policy aus eigenen Ereignissen – ohne LLM-Token
+- [x] 🪞 RETRO-Lehren erreichen jetzt wirklich den Planner (früher starben sie im RAM)
+- [x] 🔬 RESEARCHER als 4. Swarm-Rolle
+- [x] 3D-Gehirn (docs/brain.html): Hemisphären, Synapsen-Pulse, Alters-Farbverlauf; 2D-Graph mit Pan/Dedup
+- [x] Werkzeugkisten-Fixes: dedup löscht wirklich, Reflex ganze-Wort-Matching
+- [x] Herzschlag 15 Min mit Phasen LEHREN + SELBSTLERNEN; 20 Organe dokumentiert (EN/DE)
+
 ## Nächste Schritte
+- [ ] Memory vergrößern: Telegram-Verlauf, GitHub-Issues, Sessions einspeisen
+- [ ] Embedding/GNN-Gedächtnis als Nachfolger von semantic.py (gleiche API, Issue #30)
+- [ ] LoRA-Feintuning auf den eigenen Erfahrungen (facts.jsonl als Trainingsdaten)
+- [ ] Memory-as-a-Service-API (erst wenn Gedächtnis groß & klug ist)
 - [ ] PR-Workflow: Zoetron arbeitet in Branches, PR mit Selbst-Review
 - [ ] Skill-Vorschläge aus DREAM zu validierten Kompetenzen reifen lassen
 - [ ] EVOLUTION über ganze Pläne statt Einzelstrategien

@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**341 Fakten** · Stand 2026-08-23 00:54 UTC · aktualisiert bei jedem Herzschlag
+**354 Fakten** · Stand 2026-08-23 01:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 216
-- **dream:** 50
-- **strategy:** 31
-- **anti_pattern:** 24
-- **creator_teaching:** 5
+- **swarm_artifact:** 215
+- **dream:** 55
+- **strategy:** 34
+- **anti_pattern:** 26
+- **creator_teaching:** 7
+- **last_swarm_critique:** 3
+- **last_swarm_goal:** 3
 - **frontier:** 3
 - **artifact:** 3
-- **last_swarm_critique:** 2
-- **last_swarm_goal:** 2
 - **best_swarm_score:** 1
 - **semantic_organ:** 1
 - **tool:** 1
@@ -18,6 +18,96 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:alte_träume_nach_ideen_durchsuchen`
+*23.08. 01:13 UTC · Quelle: evolution*
+
+Functional pipeline with pure functions - The functional pipeline variant provides the greatest elegance and testability by isolating pure data transformations, eliminates duplicated I/O logic, and remains straightforward 
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Alte Träume nach Ideen d:2`
+*23.08. 01:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Configuration‑driven plugin architecture - Externalize file paths and search strategies into a config file (YAML/JSON) or environment variables. Implement a PluginBase class for different search algorithms (regex, semantic si
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Alte Träume nach Ideen d:0`
+*23.08. 01:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Object‑oriented refactor with dependency injection - Create a DreamRepository class that receives file paths via its constructor, encapsulates JSON loading and parsing, and provides a search method that returns matching ideas
+
+### `last_swarm_critique`
+*23.08. 01:12 UTC · Quelle: critic*
+
+score=5; issues=Duplicated file loading and JSON parsing logic across multiple snippets.; Functions mix I/O (printing) with core logic, reducing reusability and testability.; Hardcoded file paths ('dreams.json', 'idea_summary.txt') limit flexibility.; Missing 
+
+### `swarm_artifact:Generate idea summary report`
+*23.08. 01:12 UTC · Quelle: builder*
+
+```python import json  # Traumdaten aus JSON-Datei laden (load dream data from JSON file) try:     with open('dreams.json', 'r') as f:         dreams = json.load(f) except FileNotFoundError:     dream
+
+### `swarm_artifact:Extract ideas from dormant proposals`
+*23.08. 01:11 UTC · Quelle: builder*
+
+```python def extract_ideas_from_dormant(dreams_file: str = 'dreams.json') -> list[dict]:     """     Load dream proposals from a JSON file, filter dormant entries (cycles_dormant > 2),     and extrac
+
+### `swarm_artifact:Identify dormant skill proposals`
+*23.08. 01:11 UTC · Quelle: builder*
+
+```python import json  # Load dreams (assuming file exists) try:     with open('dreams.json', 'r') as f:         dreams = json.load(f) except FileNotFoundError:     print("Fehler: Die Datei 'dreams.js
+
+### `swarm_artifact:Load dream memories from storage`
+*23.08. 01:11 UTC · Quelle: builder*
+
+```python import json import os  # Datei-Pfad für die Traumdaten (file path for dream data) DATA_FILE = 'dreams.json'  # Beispiel-Daten, die nur beim ersten Start geschrieben werden (sample data writt
+
+### `last_swarm_goal`
+*23.08. 01:10 UTC · Quelle: system*
+
+Alte Träume nach Ideen durchsuchen
+
+### `dream:202608230109:5`
+*23.08. 01:09 UTC · Quelle: dream*
+
+Pruning is currently inactive (zero facts/events removed), showing that memory growth is unchecked without automated, frequency‑based eviction.
+
+### `dream:202608230109:4`
+*23.08. 01:09 UTC · Quelle: dream*
+
+Many skill proposals remain dormant for multiple swarm cycles, suggesting a need for activation tracking and periodic review.
+
+### `dream:202608230109:3`
+*23.08. 01:09 UTC · Quelle: dream*
+
+Simulation outputs are generated but rarely translated into action, revealing a simulation‑to‑real‑world application gap.
+
+### `dream:202608230109:2`
+*23.08. 01:09 UTC · Quelle: dream*
+
+Swarm tasks frequently stall because required role quotas (planner, critic, ≥2 builders) are not enforced before execution.
+
+### `dream:202608230109:1`
+*23.08. 01:09 UTC · Quelle: dream*
+
+Intermittent latency spikes above 20 s indicate a need for latency‑aware circuit breakers and fallback models to prevent task stalls.
+
+### `strategy:selflearn_score_basis`
+*23.08. 01:09 UTC · Quelle: selflearn*
+
+Eigene Score-Historie (37 Laeufe): Bestwert 9.0, Schnitt 4.32. Realistische Selbsteinschaetzung fuer METACOG.
+
+### `strategy:selflearn_verlaessliche_werkzeuge`
+*23.08. 01:09 UTC · Quelle: selflearn*
+
+Statistik ueber 1930 Ereignisse: Diese Werkzeuge schlugen zu mind. 80% fehl? NEIN - zu mind. 80% erfolgreich: dedup_skill_proposals, fehlermuster-aus-schwarm-träumen-nutzen, fehler-im-modell-vermeiden. Bevorzuge sie bei passenden Zielen.
+
+### `creator_teaching:9607859730`
+*23.08. 00:59 UTC · Quelle: creator*
+
+[erschaffer] Der Chat mit dem Erschaffer ist nur Arbeitsgedächtnis (RAM). Alles Zeitlose aus unseren Sessions muss über den LEHRER-Kanal in dieses Gedächtnis übergehen, damit künftige Sessions ohne erneute Erklärung weiterarbeiten können.
+
+### `creator_teaching:7898279100`
+*23.08. 00:59 UTC · Quelle: creator*
+
+[erschaffer] Projektziel ist Superintelligenz. Die Memory-API (Memory-as-a-Service) bauen wir SPAETER - erst muss das Gedächtnis größer und intelligenter werden (GNN/embedding-basierte Ähnlichkeit als Nachfolger von semantic.py).
 
 ### `dream:202608230054:5`
 *23.08. 00:54 UTC · Quelle: dream*
@@ -911,16 +1001,6 @@ Robust Session Management & Health Checks - Variant 0 directly fixes the orphane
 
 # Embedding‑Contrastive Learning Pipeline for Model Reliability    **Goal:** Increase model reliability by learning stable node embeddings from the simulation knowledge graph and training a contrastiv
 
-### `swarm_artifact:Standardize CI outputs CI pipeline with real‑simulation inte`
-*22.08. 11:18 UTC · Quelle: builder*
-
-**Artifact: CI Workflow – Standardized Manifests & Full‑Simulation Gate**   *(GitHub Actions – adaptable to other CI systems)*    ```yaml name: Model Reliability CI  # --------------------------------
-
-### `swarm_artifact:Automated orphaned swarm session detection and cleanup`
-*22.08. 11:17 UTC · Quelle: builder*
-
-# Automated Orphaned Swarm Session Detection & Cleanup Service    ## 1. Overview   A lightweight monitoring service that periodically inspects active swarm sessions, identifies those that have missed 
-
 ### `strategy:semantic_knowledge_graph_als_organ_einbauen`
 *22.08. 11:15 UTC · Quelle: evolution*
 
@@ -1020,11 +1100,6 @@ Embedding‑contrastive learning pipeline - Variant 1 provides the most elegant 
 *22.08. 09:28 UTC · Quelle: evolution*
 
 Standardize CI outputs and integrate real simulation - Variant 0 directly fixes the identified CI issues with minimal changes, offering high feasibility and strong impact while keeping the solution simple and maintainable.
-
-### `swarm_artifact:Redesign MemoryStore as Bounded Self‑Pruning Ring Buffer wit`
-*22.08. 09:28 UTC · Quelle: builder*
-
-# Redesign MemoryStore as a Bounded Self‑Pruning Ring Buffer with Weak References  ## Overview Replace the existing `MemoryStore` with a fixed‑capacity ring buffer that: * Stores skill‑proposal entrie
 
 ### `swarm_artifact:Build Simulation‑Guided Real‑World Data Curation Loop`
 *22.08. 09:27 UTC · Quelle: builder*
@@ -1306,11 +1381,6 @@ memory-first provenance pipeline - Variant 0 provides a direct, feasible, and el
 
 Thread‑safe, fault‑tolerant sense/action interfaces - Variant 1 directly tackles the most frequent failure sources—thread‑unsafe subscribers and missing data—by introducing robust, fault‑tolerant queues with watchdogs and graceful deg
 
-### `swarm_artifact:Implement Standardized Scoring and Transparent Calibration`
-*22.08. 01:07 UTC · Quelle: builder*
-
-# Implement Standardized Scoring and Transparent Calibration    ## Overview   Create a unified failure‑scoring pipeline that (1) computes a calibrated failure probability for each model inference, (2)
-
 ### `swarm_artifact:Deploy Durable Execution Platform (Temporal/Cadence)`
 *22.08. 01:06 UTC · Quelle: builder*
 
@@ -1580,11 +1650,6 @@ Gap‑First Narrative Synthesis - Variant 1 offers the strongest balance of eleg
 *21.08. 21:40 UTC · Quelle: builder*
 
 ## Market‑Gap Artifact Collection    | Gap‑ID | Description (Unmet Need / Gap) | Source (URL / Reference) | Date (ISO‑8601) | Notes | |--------|--------------------------------|-----------------------
-
-### `swarm_artifact:Gather USP artifacts`
-*21.08. 21:40 UTC · Quelle: builder*
-
-## USP Artifact Collection  ### Tagging Template - **USP-ID**: unique identifier   - **Source**: document/note/recording reference   - **Date**: YYYY‑MM‑DD   - **Format**: file type (e.g., MD, PDF, DO
 
 ### `strategy:recover_and_close_out_the_unfinished_swarm_session`
 *21.08. 21:19 UTC · Quelle: evolution*
