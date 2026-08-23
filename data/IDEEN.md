@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Many skill proposals remain unimplemented, highlighting the need for an automated pipeline that converts top proposals into testable skills.
+- Over a thousand stored facts are rarely reused, showing a lack of automatic retrieval triggers for relevant historical knowledge.
+- Recurring GitHub sync and model reliability failures stem from unchecked internal scores; independent re‑scoring is needed to deflate inflation.
+- Only a minority of generated dreams/simulations are applied, indicating a missing enforcement step that turns ideas into executable skills.
+- Free‑tier model overloads (502) reveal a shared rate‑limit bottleneck that requires coordinated backoff and fallback pooling.
 - Turning successful simulation/dream outcomes into exemplars enables fast in‑context skill transfer without additional training.
 - Unchecked event accumulation dilutes useful data; pruning when >50 events accumulate and retaining only calibration‑critical items keeps the system le
 - A revision‑to‑risk ratio above 1.0 indicates insufficient upfront validation, warranting a pre‑execution design‑review gate.
@@ -51,11 +56,6 @@
 - Repeated GitHub synchronization failures reveal a lack of retry/backoff logic and error escalation, threatening reliable code sharing.
 - The pruner consistently prunes zero items, showing that either evaluation logging is missing or criteria are too strict, obscuring opportunities for m
 - Latency spikes (>100s) from certain models cause delayed responses and risk timeouts, indicating need for per-call latency guards and automatic fallba
-- Self‑generated goals often miss external‑impact orientation, limiting real‑world effectiveness and reliability.
-- Repeated failures in task synchronization arise from applying simulation revisions without transactional rollback on residual risk.
-- Combining related memories or dreams (same‑day or older) consistently produces novel, actionable goals, showing the value of structured reflection.
-- Many skill proposals never reach execution because they lack explicit acceptance criteria and tracking, causing them to expire.
-- High latency spikes (>300s) correlate with stalled or failed tasks, revealing a need for runtime latency guards.
 
 ---
 

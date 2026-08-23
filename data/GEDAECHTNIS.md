@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1166 Fakten** · Stand 2026-08-23 20:13 UTC · aktualisiert bei jedem Herzschlag
+**1171 Fakten** · Stand 2026-08-23 20:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 442
+- **dream:** 447
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232017:5`
+*23.08. 20:17 UTC · Quelle: dream*
+
+Many skill proposals remain unimplemented, highlighting the need for an automated pipeline that converts top proposals into testable skills.
+
+### `dream:202608232017:4`
+*23.08. 20:17 UTC · Quelle: dream*
+
+Over a thousand stored facts are rarely reused, showing a lack of automatic retrieval triggers for relevant historical knowledge.
+
+### `dream:202608232017:3`
+*23.08. 20:17 UTC · Quelle: dream*
+
+Recurring GitHub sync and model reliability failures stem from unchecked internal scores; independent re‑scoring is needed to deflate inflation.
+
+### `dream:202608232017:2`
+*23.08. 20:17 UTC · Quelle: dream*
+
+Only a minority of generated dreams/simulations are applied, indicating a missing enforcement step that turns ideas into executable skills.
+
+### `dream:202608232017:1`
+*23.08. 20:17 UTC · Quelle: dream*
+
+Free‑tier model overloads (502) reveal a shared rate‑limit bottleneck that requires coordinated backoff and fallback pooling.
 
 ### `dream:202608232012:5`
 *23.08. 20:12 UTC · Quelle: dream*

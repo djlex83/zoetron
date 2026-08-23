@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-23 20:13:24",
+ "stand": "2026-08-23 20:18:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -73,10 +73,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "vorschläge-für-fähigkeiten-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.683,
- "simulationen_angewandt": 125,
+ "haende_quote": 0.686,
+ "simulationen_angewandt": 124,
  "swarm_scores": {
   "n": 72,
   "best": 8.0,
