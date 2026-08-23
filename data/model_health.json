@@ -1,5 +1,5 @@
 {
- "stand": 1787528802.7318594,
+ "stand": 1787529216.2376354,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -10,7 +10,8 @@
    "gesperrt_bis": 1787528826.2700453,
    "latenz_summe_s": 2307.6374361515045,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
-   "letzte_sperre": 1787527026.270047
+   "letzte_sperre": 1787527026.270047,
+   "kontofehler": 5
   },
   "nvidia/nemotron-3-super-120b-a12b:free": {
    "laeufe": 11,
@@ -19,7 +20,8 @@
    "gesperrt_bis": 1787528826.340915,
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
-   "letzte_sperre": 1787527026.3409166
+   "letzte_sperre": 1787527026.3409166,
+   "kontofehler": 5
   },
   "google/gemma-4-31b-it:free": {
    "laeufe": 11,
@@ -28,7 +30,8 @@
    "gesperrt_bis": 1787528826.4064167,
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
-   "letzte_sperre": 1787527026.4064176
+   "letzte_sperre": 1787527026.4064176,
+   "kontofehler": 5
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 11,
@@ -37,17 +40,18 @@
    "gesperrt_bis": 1787528826.4692194,
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
-   "letzte_sperre": 1787527026.469221
+   "letzte_sperre": 1787527026.469221,
+   "kontofehler": 5
   },
   "stealth/ox-alpha": {
-   "laeufe": 31,
+   "laeufe": 33,
    "fehler": 17,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 1691.4468312263489,
+   "latenz_summe_s": 1847.0293912887573,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527412.9466915,
-   "kontofehler": 8
+   "kontofehler": 11
   },
   "z-ai/glm-5.2:free": {
    "laeufe": 7,
@@ -56,7 +60,8 @@
    "gesperrt_bis": 1787528823.1975296,
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
-   "letzte_sperre": 1787527023.1975315
+   "letzte_sperre": 1787527023.1975315,
+   "kontofehler": 3
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -65,16 +70,17 @@
    "gesperrt_bis": 1787528823.2690918,
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
-   "letzte_sperre": 1787527023.269094
+   "letzte_sperre": 1787527023.269094,
+   "kontofehler": 3
   },
   "thinkingmachines/inkling:free": {
-   "laeufe": 7,
-   "fehler": 7,
-   "fehler_in_folge": 1,
-   "gesperrt_bis": 1787528823.3235261,
+   "laeufe": 9,
+   "fehler": 9,
+   "fehler_in_folge": 0,
+   "gesperrt_bis": 1787530898.2529976,
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT",
-   "letzte_sperre": 1787527023.3235273
+   "letzte_sperre": 1787529098.2529988
   }
  }
 }
