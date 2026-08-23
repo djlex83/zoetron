@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1191 Fakten** · Stand 2026-08-23 20:27 UTC · aktualisiert bei jedem Herzschlag
+**1196 Fakten** · Stand 2026-08-23 20:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 467
+- **dream:** 472
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232032:5`
+*23.08. 20:32 UTC · Quelle: dream*
+
+Isolated same‑day dreaming fails to leverage older memories; pairing them generates novel goal candidates and improves insight generation.
+
+### `dream:202608232032:4`
+*23.08. 20:32 UTC · Quelle: dream*
+
+Errors in GitHub‑task synchronization arise from unvalidated external‑API assumptions, necessitating pre‑flight validation and issue tracking.
+
+### `dream:202608232032:3`
+*23.08. 20:32 UTC · Quelle: dream*
+
+Skill proposals often stay unimplemented; a repetition‑based promotion mechanism turns idle ideas into actionable tasks.
+
+### `dream:202608232032:2`
+*23.08. 20:32 UTC · Quelle: dream*
+
+Pruning runs that prune zero items while the store exceeds size threshold reveal missing eligibility criteria, risking unbounded growth.
+
+### `dream:202608232032:1`
+*23.08. 20:32 UTC · Quelle: dream*
+
+Latency variability across models requires adaptive timeout guards to avoid stalls and enable reliable fallback.
 
 ### `dream:202608232027:5`
 *23.08. 20:27 UTC · Quelle: dream*
