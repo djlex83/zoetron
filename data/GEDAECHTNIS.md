@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**754 Fakten** · Stand 2026-08-23 12:10 UTC · aktualisiert bei jedem Herzschlag
+**764 Fakten** · Stand 2026-08-23 12:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 325
-- **dream:** 226
+- **swarm_artifact:** 328
+- **dream:** 231
 - **anti_pattern:** 72
 - **strategy:** 57
-- **last_swarm_goal:** 29
-- **last_swarm_critique:** 27
+- **last_swarm_goal:** 30
+- **last_swarm_critique:** 28
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*23.08. 12:20 UTC · Quelle: critic*
+
+score=3; issues=Regex-Fehler im Pattern: `r'\b((lebensbedrohlich|notfall|panic|emergency)\b'` hat eine zusätzliche Klammer, was zu einem Laufzeitfehler führt.; Testcases stimmen nicht mit der Implementierung überein: z. B. erwartet Test 1 für 'Das ist dringend
+
+### `swarm_artifact:Reflex-Leistung auswerten`
+*23.08. 12:20 UTC · Quelle: builder*
+
+  # Reflex-Leistung Auswertung  ## Übersicht Das Skript dient zur Auswertung der Leistung von Reflexen. Es liest die protokollierten Reflex‑Daten (JSON) und berechnet Kenngrößen wie Erfolgsrate, durch
+
+### `swarm_artifact:Reflex-Auslöse-Mechanismus implementieren`
+*23.08. 12:20 UTC · Quelle: builder*
+
+  # Reflex-Auslöse-Mechanismus: Kontextbewusste Implementierung  ## Übersicht Ersetzt die einfache Schlüsselwort-Suche durch ein kontextbewusstes System mit Konfidenz-Schwelle. Das System berücksichti
+
+### `swarm_artifact:Reflex-Erfassungs-Script erstellen`
+*23.08. 12:19 UTC · Quelle: builder*
+
+  # Reflex-Erfassungs-Script  ## Übersicht Das Skript (Python‑Programmiersprache) erfasst automatisch Reflexe (schnelle, unwillkürliche Antworten) und speichert sie zur späteren Analyse. Es zeichnet j
+
+### `last_swarm_goal`
+*23.08. 12:16 UTC · Quelle: system*
+
+Reflexe öfter nutzen lernen
+
+### `dream:202608231215:5`
+*23.08. 12:15 UTC · Quelle: dream*
+
+The evolution run produced a winner with mixed scores (7,5,8), highlighting the need for multi-criteria evaluation and robust aggregation.
+
+### `dream:202608231215:4`
+*23.08. 12:15 UTC · Quelle: dream*
+
+The system's repeated drive goals about dream memory linking and model calibration indicate persistent gaps that need automated triggers.
+
+### `dream:202608231215:3`
+*23.08. 12:15 UTC · Quelle: dream*
+
+The metabolism budget of 2 iterations and 5 tasks is too restrictive for missions with more than 2 risks, leading to incomplete simulations.
+
+### `dream:202608231215:2`
+*23.08. 12:15 UTC · Quelle: dream*
+
+Despite 5 revisions for 5 risks, the simulation verdict remained 'revise', indicating that the revision process may not be converging effectively.
+
+### `dream:202608231215:1`
+*23.08. 12:15 UTC · Quelle: dream*
+
+Model latency exhibits high variability, with spikes over 248 seconds, which can cause timeouts and disrupt swarm coordination.
 
 ### `dream:202608231209:5`
 *23.08. 12:09 UTC · Quelle: dream*

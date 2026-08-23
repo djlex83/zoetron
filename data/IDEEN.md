@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 12:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 12:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Reduce Model Failure Rate *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The evolution run produced a winner with mixed scores (7,5,8), highlighting the need for multi-criteria evaluation and robust aggregation.
+- The system's repeated drive goals about dream memory linking and model calibration indicate persistent gaps that need automated triggers.
+- The metabolism budget of 2 iterations and 5 tasks is too restrictive for missions with more than 2 risks, leading to incomplete simulations.
+- Despite 5 revisions for 5 risks, the simulation verdict remained 'revise', indicating that the revision process may not be converging effectively.
+- Model latency exhibits high variability, with spikes over 248 seconds, which can cause timeouts and disrupt swarm coordination.
 - Calibration drift (predicted vs. actual goal scores ~0.6 ratio) consistently skews go/no-go decisions, necessitating real-time correction factors.
 - Swarm role imbalances (critic vs. builder ratios) emerge as a recurring failure mode, requiring dynamic quota enforcement at mission startup.
 - Zero-prune runs across multiple cycles suggest memory growth is unbounded, risking performance degradation over time without adaptive pruning threshol
@@ -51,11 +56,6 @@
 - The system's predictions are consistently biased by a factor of approximately 0.6, necessitating a calibration step to correct scores before decision 
 - The critic module's output frequently fails JSON parsing, indicating a need for output validation and fallback strategies to ensure pipeline continuit
 - The Nvidia model endpoints are prone to temporary overloads, as evidenced by a 502 error, requiring a robust request handling mechanism with retries a
-- Unaddressed simulation risks (revisions required) led to a revise verdict, demonstrating that risk mitigation must be enforced before swarm continuati
-- Critic feedback limited to discovery commands caused blind spots, implying that diverse critic roles are needed to catch varied failure modes.
-- Limited iteration budget (max_iterations=2) prevented convergence, showing that insufficient search cycles lead to premature termination and low score
-- Evolution-generated high scores did not improve actual swarm outcome, suggesting the fitness function is misaligned with real‑world performance metric
-- High latency spikes (>30s) correlate with low task scores, indicating that model selection should avoid high‑latency variants for time‑sensitive swarm
 
 ---
 
