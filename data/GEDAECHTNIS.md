@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1216 Fakten** · Stand 2026-08-23 20:44 UTC · aktualisiert bei jedem Herzschlag
+**1221 Fakten** · Stand 2026-08-23 20:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 492
+- **dream:** 497
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232048:5`
+*23.08. 20:48 UTC · Quelle: dream*
+
+Meta-proposals (promote top 2, retire after 3 cycles, hard-cap revisions) show the system detecting its own process thrashing but not yet fixing it.
+
+### `dream:202608232048:4`
+*23.08. 20:48 UTC · Quelle: dream*
+
+Drive goals repeat identical themes (simulation use, error reduction, dream linking) across cycles without measurable progress signals.
+
+### `dream:202608232048:3`
+*23.08. 20:48 UTC · Quelle: dream*
+
+Model latency varies 5x (7.9s to 43.5s) on the same ':free' tier, revealing unreliable throughput that breaks timing assumptions.
+
+### `dream:202608232048:2`
+*23.08. 20:48 UTC · Quelle: dream*
+
+Prune runs report zero facts/events pruned for five consecutive cycles, indicating either ineffective criteria or memory pressure not triggering.
+
+### `dream:202608232048:1`
+*23.08. 20:48 UTC · Quelle: dream*
+
+Duplicate skill proposals (shared scorer, MemoryStore contracts) recur across dream cycles, wasting consolidation capacity.
 
 ### `dream:202608232043:5`
 *23.08. 20:43 UTC · Quelle: dream*

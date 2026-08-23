@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 20:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 2×)*
+- Fehler beim Modell verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Einheitliche Plugin-Schnittstellen schaffen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen und verbessern *(wieder aufgegriffen: 2×)*
-- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Meta-proposals (promote top 2, retire after 3 cycles, hard-cap revisions) show the system detecting its own process thrashing but not yet fixing it.
+- Drive goals repeat identical themes (simulation use, error reduction, dream linking) across cycles without measurable progress signals.
+- Model latency varies 5x (7.9s to 43.5s) on the same ':free' tier, revealing unreliable throughput that breaks timing assumptions.
+- Prune runs report zero facts/events pruned for five consecutive cycles, indicating either ineffective criteria or memory pressure not triggering.
+- Duplicate skill proposals (shared scorer, MemoryStore contracts) recur across dream cycles, wasting consolidation capacity.
 - The simulator occasionally emits 'go' verdicts with zero enumerated risks, a blind spot that multiple proposals flag by requiring a minimum risk count
 - Free-tier model latency varies 2x (9.7–19.7 s) and 502/429 errors appear, yet fallbacks treat each model independently instead of sharing a single rat
 - MemoryStore API drift causes runtime failures in hands-execute, prompting repeated proposals for both startup contract tests and CI-level static verif
@@ -51,11 +56,6 @@
 - Internal score predictors drift upward systematically; only independent re-scoring with a fixed threshold (Δ>2) catches inflation.
 - All :free-tier models share a hidden rate-limit pool, making provider diversity illusory without explicit pooling logic.
 - Model latency spikes (35s vs 19s baseline) cascade into swarm failures and demand automatic tier degradation.
-- Calibration events are sparse while drive goals explicitly demand more frequent calibration to improve model predictions.
-- Skill proposals accumulate without an execution pipeline; none are auto-converted to tracked issues or scheduled for review.
-- Documentation metrics drift across README, docs, and code (heartbeat: 5 min vs 10 min vs 300 s) because no single source of truth is enforced.
-- The pruner runs repeatedly but prunes zero events, indicating the pruning criteria or scheduler are misconfigured or ineffective.
-- Model latency frequently exceeds 30 s (observed 35.2 s) without automatic degradation, causing unpredictable swarm start delays.
 
 ---
 
