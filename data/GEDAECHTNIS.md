@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1141 Fakten** · Stand 2026-08-23 19:49 UTC · aktualisiert bei jedem Herzschlag
+**1146 Fakten** · Stand 2026-08-23 19:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 417
+- **dream:** 422
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231953:5`
+*23.08. 19:53 UTC · Quelle: dream*
+
+The reflex-mode goal converged cheaply while the builder-heavy swarm (planner:1, builder:5, critic:1) did not converge in 2 cycles, suggesting role ratios starve verification.
+
+### `dream:202608231953:4`
+*23.08. 19:53 UTC · Quelle: dream*
+
+A prune run deleting 0 facts and 0 events while the store keeps growing indicates the eligibility logic is inert, not that the data is clean.
+
+### `dream:202608231953:3`
+*23.08. 19:53 UTC · Quelle: dream*
+
+The instant 0.05s failure ('MemoryStore' object has no attribute 'add_fact') shows tools are invoked against assumed interfaces without pre-call signature validation.
+
+### `dream:202608231953:2`
+*23.08. 19:53 UTC · Quelle: dream*
+
+The simulation flagged 4 risks but only 1 revision was applied before shipping, so known defects were knowingly left in the delivered artifact.
+
+### `dream:202608231953:1`
+*23.08. 19:53 UTC · Quelle: dream*
+
+Two consecutive attempts on embedding-recall stalled at exactly 7/10 with the critic flagging 'Evaluation ist n=1', proving single-sample scoring is the concrete blocker preventing convergence.
 
 ### `dream:202608231948:5`
 *23.08. 19:48 UTC · Quelle: dream*

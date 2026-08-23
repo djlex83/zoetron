@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 19:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex-mode goal converged cheaply while the builder-heavy swarm (planner:1, builder:5, critic:1) did not converge in 2 cycles, suggesting role ra
+- A prune run deleting 0 facts and 0 events while the store keeps growing indicates the eligibility logic is inert, not that the data is clean.
+- The instant 0.05s failure ('MemoryStore' object has no attribute 'add_fact') shows tools are invoked against assumed interfaces without pre-call signa
+- The simulation flagged 4 risks but only 1 revision was applied before shipping, so known defects were knowingly left in the delivered artifact.
+- Two consecutive attempts on embedding-recall stalled at exactly 7/10 with the critic flagging 'Evaluation ist n=1', proving single-sample scoring is t
 - Two consecutive prune runs removed 0 facts and 0 events, indicating the retention policy never selects anything and memory hygiene is currently a no-o
 - The simulation enumerated 4 risks and drafted 4 revisions but only 1 was applied before building, meaning most adversarial findings are discarded at t
 - Reflex-mode completions record score=null, so fast-path successes bypass the calibration loop entirely and silently skew performance statistics.
@@ -51,11 +56,6 @@
 - The 'Extern-Quote' goal failed because two full swarm cycles still ended unconverged - breaking self-loops requires injecting an external artifact (qu
 - Score mispredictions are biased, not random (rolling mean error +3, abs errors 2-3), so a rolling-bias correction must be applied to every prediction 
 - Internal evolution scores are systematically inflated relative to outcomes: the winner scored 9/10 internally but delivered 4/10 at act_done, so any i
-- The swarm ended non-converged at score 4 after hitting the 2-cycle cap with a 4:1 builder-to-critic ratio, indicating max_iterations=2 and thin critic
-- hands-execute crashed with AttributeError: MemoryStore has no attribute 'add_fact', revealing interface drift between the memory layer and its callers
-- The simulator's zero-risk 'go' verdict on Embedding-Recall carried a 2-point prediction error while its risk-flagged 'revise' verdict was exact (error
-- All three free-tier fallback models (gemma-4-31b, gemma-4-26b-a4b, glm-5.2) failed with simultaneous 429s immediately after the primary's 502, showing
-- Evolution's internal winner score (9/10) diverged from the independent act_done score (4/10) by 5 points, so intra-evolution rankings must never be tr
 
 ---
 
