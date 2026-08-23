@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**603 Fakten** · Stand 2026-08-23 08:14 UTC · aktualisiert bei jedem Herzschlag
+**618 Fakten** · Stand 2026-08-23 08:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 286
-- **dream:** 155
-- **anti_pattern:** 56
-- **strategy:** 49
-- **last_swarm_goal:** 20
-- **last_swarm_critique:** 19
+- **swarm_artifact:** 291
+- **dream:** 160
+- **anti_pattern:** 58
+- **strategy:** 50
+- **last_swarm_goal:** 21
+- **last_swarm_critique:** 20
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:mehr_skills_wirklich_nutzen`
+*23.08. 08:34 UTC · Quelle: evolution*
+
+Skill Registry & Composition Engine - Variant 0 delivers the missing execution substrate (declarative registry, sandboxed harness, type-safe chaining pipeline, analytics) with highest feasibility and immediate skill-re
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Mehr Skills wirklich nut:2`
+*23.08. 08:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): AI-Native Skill Synthesis - Ingest all repository code, docs, and existing scripts into a code-embedding index (Tree-sitter + CodeBERT). Use an LLM agent to: (1) extract reusable capabilities as candidate skills with signatur
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Mehr Skills wirklich nut:1`
+*23.08. 08:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Event-Driven Skill Mesh - Model skills as stateless actors communicating via a message broker (NATS/Kafka). Each skill declares its event subscriptions (topics) and publications. Deploy a sidecar proxy per skill that handles 
+
+### `last_swarm_critique`
+*23.08. 08:33 UTC · Quelle: critic*
+
+score=1; issues=All five sections contain identical copy-pasted bash reconnaissance commands (ls, find) with zero actual skill implementation; No skill inventory, capability mapping, execution harness, chaining pipeline, analytics dashboard, or discovery loop 
+
+### `swarm_artifact:Autonomous Skill Discovery & Execution Loop`
+*23.08. 08:32 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "ls -la /home/user", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "find /home/user -type f -name \"*.py\" | head -30", "cwd": "/home/user"}} {"tool": "bash",
+
+### `swarm_artifact:Skill Usage Analytics Dashboard`
+*23.08. 08:32 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" | head -50", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "ls -la", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "fi
+
+### `swarm_artifact:Skill Chaining Pipeline`
+*23.08. 08:32 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" | head -50", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "ls -la", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "fi
+
+### `swarm_artifact:Automated Skill Execution Harness`
+*23.08. 08:32 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" | head -50", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "ls -la", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "fi
+
+### `swarm_artifact:Skill-Inventory & Capability Mapping`
+*23.08. 08:32 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" | head -50", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "ls -la", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "fi
+
+### `last_swarm_goal`
+*23.08. 08:30 UTC · Quelle: system*
+
+Mehr Skills wirklich nutzen
+
+### `dream:202608230829:5`
+*23.08. 08:29 UTC · Quelle: dream*
+
+Evolution improved variant scores from 6→8 but the winning variant still triggered 'revise' verdict with 5 risks, showing simulation validation catches issues evolution misses.
+
+### `dream:202608230829:4`
+*23.08. 08:29 UTC · Quelle: dream*
+
+Swarm consistently stalls at score 6/10 with convergence=false, suggesting the critic/builder ratio (1:4) lacks sufficient adversarial pressure.
+
+### `dream:202608230829:3`
+*23.08. 08:29 UTC · Quelle: dream*
+
+Missing 'add_fact' method on MemoryStore caused a runtime AttributeError that halted execution despite prior evolution cycles.
+
+### `dream:202608230829:2`
+*23.08. 08:29 UTC · Quelle: dream*
+
+Calibration drift of 50% (predicted 4 vs actual 6 simulations) indicates prediction models need online correction after each task.
+
+### `dream:202608230829:1`
+*23.08. 08:29 UTC · Quelle: dream*
+
+Model latency variance exceeds 20x (1.4s–35s) making fixed timeouts unreliable and requiring adaptive routing.
 
 ### `dream:202608230813:5`
 *23.08. 08:13 UTC · Quelle: dream*
