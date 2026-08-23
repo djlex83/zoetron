@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**497 Fakten** · Stand 2026-08-23 04:40 UTC · aktualisiert bei jedem Herzschlag
+**502 Fakten** · Stand 2026-08-23 04:56 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 258
-- **dream:** 105
+- **dream:** 110
 - **anti_pattern:** 46
 - **strategy:** 44
 - **last_swarm_critique:** 13
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608230456:5`
+*23.08. 04:56 UTC · Quelle: dream*
+
+Integrating dream‑replay insights with swarm criticism generates higher‑quality solutions for unified plugin interfaces.
+
+### `dream:202608230456:4`
+*23.08. 04:56 UTC · Quelle: dream*
+
+Skill proposals that achieve ROI > 1.2 in sandbox benchmarks consistently yield net performance gains when merged.
+
+### `dream:202608230456:3`
+*23.08. 04:56 UTC · Quelle: dream*
+
+Swarm stalls longer than 90 s occur when fewer than two planners or critics are active, degrading task throughput.
+
+### `dream:202608230456:2`
+*23.08. 04:56 UTC · Quelle: dream*
+
+Daily logging of (goal_embedding, predicted, actual) reveals calibration drift; a lightweight regressor retrained nightly reduces prediction error.
+
+### `dream:202608230456:1`
+*23.08. 04:56 UTC · Quelle: dream*
+
+Latency exceeding 60 s on the primary model indicates upstream overload and warrants an automatic fallback to a lighter model.
 
 ### `strategy:schwarm_aufgaben_zuverlässig_abschließen`
 *23.08. 04:40 UTC · Quelle: evolution*
