@@ -30,13 +30,15 @@
   "why": "Score allein reicht nicht, der Critic kann sich irren. Baue ein Konvergenz-Tor (Gate = Sperre vor dem Erfolgs-Stempel): Ein Ziel gilt nur als erledigt, wenn Critic-Score >= 8 UND ein automatischer Integrationstest des gebauten Artefakts grün ist. Fertig wenn: ein Lauf mit Score >= 8 aber rotem Test nachweisbar NICHT konvergiert und die Begründung im Log und im Issue steht.",
   "signal": "failure",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  },
  {
   "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",
   "why": "Größer und besser ist nur echt, wenn eine unbestechliche Messlatte es zeigt. Baue benchmark_organ.py mit einer festen Suite aus 25 automatisch prüfbaren Aufgaben: 10 Code-Aufgaben mit Unit-Tests (Unit-Test = automatischer Prüfcode), 10 Daten- und Parsing-Aufgaben mit bekannter Lösung, 5 Recall-Fragen gegen das eigene Gedächtnis mit bekannter Antwort. Läuft jeden Sonntag komplett, Ergebnis als Punktzahl 0-25 in data/benchmark_history.json und als Kurve im Wochenreport. Fertig wenn: 1) die Suite vollautomatisch durchläuft, 2) eine Basislinie (erste Messung) dokumentiert ist, 3) die Kurve im Wochenreport erscheint. Ab jetzt zählt nur, was diese Kurve hebt.",
   "signal": "gap",
-  "_done": false
+  "_done": false,
+  "_versuche": 1
  },
  {
   "title": "Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf",

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1307 Fakten** · Stand 2026-08-23 21:37 UTC · aktualisiert bei jedem Herzschlag
+**1312 Fakten** · Stand 2026-08-23 21:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 537
+- **dream:** 542
 - **swarm_artifact:** 438
 - **anti_pattern:** 116
 - **strategy:** 79
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232142:5`
+*23.08. 21:42 UTC · Quelle: dream*
+
+Simulation reviews flagged several risks requiring multiple revisions, showing that act_done should be blocked until all risks are addressed or waived.
+
+### `dream:202608232142:4`
+*23.08. 21:42 UTC · Quelle: dream*
+
+Multiple identical skill proposals appear across cycles, showing a lack of deduplication that wastes effort.
+
+### `dream:202608232142:3`
+*23.08. 21:42 UTC · Quelle: dream*
+
+Repeated zero‑prune runs suggest pruning criteria may be too strict or data stale, warranting an automated audit trigger.
+
+### `dream:202608232142:2`
+*23.08. 21:42 UTC · Quelle: dream*
+
+Missing attribute errors (e.g., MemoryStore.add_fact) reveal absent interface‑contract enforcement across components.
+
+### `dream:202608232142:1`
+*23.08. 21:42 UTC · Quelle: dream*
+
+Latency shows high variance with occasional spikes >100 s, indicating a need for dynamic timeouts and fallback mechanisms.
 
 ### `dream:202608232137:5`
 *23.08. 21:37 UTC · Quelle: dream*
