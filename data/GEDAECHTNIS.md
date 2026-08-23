@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1002 Fakten** · Stand 2026-08-23 17:36 UTC · aktualisiert bei jedem Herzschlag
+**1013 Fakten** · Stand 2026-08-23 17:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 386
-- **dream:** 337
+- **swarm_artifact:** 390
+- **dream:** 342
 - **anti_pattern:** 98
 - **strategy:** 70
-- **last_swarm_goal:** 48
-- **last_swarm_critique:** 44
+- **last_swarm_goal:** 49
+- **last_swarm_critique:** 45
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,61 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*23.08. 17:51 UTC · Quelle: critic*
+
+score=8; issues=Duplicate Contract class definition across multiple snippets leads to maintenance overhead.; Unit tests redefine Contract and validate_contract instead of importing from the module under test, which may not test the actual implementation.; No t
+
+### `swarm_artifact:Integrate validator into MemoryStore mock`
+*23.08. 17:50 UTC · Quelle: builder*
+
+```python from pydantic import BaseModel, Field, ValidationError from typing import List, Dict, Any  class Contract(BaseModel):     id: str = Field(..., min_length=1, example='contract-001')     versi
+
+### `swarm_artifact:Write unit tests for validator`
+*23.08. 17:49 UTC · Quelle: builder*
+
+```python import unittest  # Assuming the validate_contract function is available from the validation module # In practice, you would import it from your implementation, e.g.: # from contract_validato
+
+### `swarm_artifact:Implement validation function`
+*23.08. 17:46 UTC · Quelle: builder*
+
+```python from pydantic import BaseModel, Field, ValidationError from typing import List, Dict, Any  class Contract(BaseModel):     id: str = Field(..., min_length=1, example='contract-001')     versi
+
+### `swarm_artifact:Define contract schema`
+*23.08. 17:45 UTC · Quelle: builder*
+
+```python from pydantic import BaseModel, Field from typing import List  class Contract(BaseModel):     id: str = Field(..., min_length=1, example='contract-001')     version: str = Field(..., pattern
+
+### `last_swarm_goal`
+*23.08. 17:42 UTC · Quelle: system*
+
+MemoryStore-Vertragswächter bauen (Contract-Validator)
+
+### `dream:202608231742:5`
+*23.08. 17:42 UTC · Quelle: dream*
+
+Three consecutive prune runs that remove zero facts/events indicate retention thresholds are too lax and risk memory growth.
+
+### `dream:202608231742:4`
+*23.08. 17:42 UTC · Quelle: dream*
+
+Cross‑module calls often fail due to missing attributes, which can be prevented by pre‑flight existence checks.
+
+### `dream:202608231742:3`
+*23.08. 17:42 UTC · Quelle: dream*
+
+Simulation outcomes are frequently generated but not applied, creating a learning gap that reduces system improvement.
+
+### `dream:202608231742:2`
+*23.08. 17:42 UTC · Quelle: dream*
+
+Repeated model failures without root‑cause analysis reveal a missing systematic error‑pattern collection process.
+
+### `dream:202608231742:1`
+*23.08. 17:42 UTC · Quelle: dream*
+
+High latency outliers (>150 s) destabilize the pipeline and require per‑call timeouts with fallback mechanisms.
 
 ### `strategy:modellfehler_senken`
 *23.08. 17:36 UTC · Quelle: evolution*
