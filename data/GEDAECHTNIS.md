@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1161 Fakten** · Stand 2026-08-23 20:07 UTC · aktualisiert bei jedem Herzschlag
+**1166 Fakten** · Stand 2026-08-23 20:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 437
+- **dream:** 442
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232012:5`
+*23.08. 20:12 UTC · Quelle: dream*
+
+Turning successful simulation/dream outcomes into exemplars enables fast in‑context skill transfer without additional training.
+
+### `dream:202608232012:4`
+*23.08. 20:12 UTC · Quelle: dream*
+
+Unchecked event accumulation dilutes useful data; pruning when >50 events accumulate and retaining only calibration‑critical items keeps the system lean.
+
+### `dream:202608232012:3`
+*23.08. 20:12 UTC · Quelle: dream*
+
+A revision‑to‑risk ratio above 1.0 indicates insufficient upfront validation, warranting a pre‑execution design‑review gate.
+
+### `dream:202608232012:2`
+*23.08. 20:12 UTC · Quelle: dream*
+
+Latency outliers exceeding ~100 s markedly delay swarm starts, demonstrating the value of latency‑based automatic model degradation.
+
+### `dream:202608232012:1`
+*23.08. 20:12 UTC · Quelle: dream*
+
+Free‑tier model latency is highly variable and prone to 502 overloads, causing intermittent failures that require fallback and shared rate‑limiting.
 
 ### `dream:202608232007:5`
 *23.08. 20:07 UTC · Quelle: dream*
