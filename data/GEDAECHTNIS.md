@@ -1,11 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**326 Fakten** · Stand 2026-08-23 00:23 UTC · aktualisiert bei jedem Herzschlag
+**336 Fakten** · Stand 2026-08-23 00:39 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 216
-- **dream:** 40
+- **dream:** 45
 - **strategy:** 31
 - **anti_pattern:** 24
+- **creator_teaching:** 5
 - **frontier:** 3
 - **artifact:** 3
 - **last_swarm_critique:** 2
@@ -17,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608230038:5`
+*23.08. 00:38 UTC · Quelle: dream*
+
+Inconsistent use of simulations and plugin interfaces creates inefficiency; enforcing standardized interfaces and mandatory simulation application improves learning and reuse.
+
+### `dream:202608230038:4`
+*23.08. 00:38 UTC · Quelle: dream*
+
+Model prediction errors persist without feedback loops, highlighting the value of continuous calibration using logged (goal, predicted, actual) triples.
+
+### `dream:202608230038:3`
+*23.08. 00:38 UTC · Quelle: dream*
+
+Swarm work frequently stalls or fails to complete, showing missing progress monitoring and role‑balancing controls are critical for completion.
+
+### `dream:202608230038:2`
+*23.08. 00:38 UTC · Quelle: dream*
+
+Many skill proposals remain unimplemented, revealing a gap between ideation and execution that a sandbox‑test‑and‑promote pipeline can close.
+
+### `dream:202608230038:1`
+*23.08. 00:38 UTC · Quelle: dream*
+
+Latency spikes and variability across model calls indicate a need for adaptive circuit‑breaker fallbacks to maintain reliability.
+
+### `creator_teaching:5482755588`
+*23.08. 00:27 UTC · Quelle: creator*
+
+[erschaffer] Der Erschaffer will Ideen SELBSTSTÄNDIG weitergebaut bekommen - Issues nicht nur speichern, sondern aktiv umsetzen.
+
+### `creator_teaching:8299801043`
+*23.08. 00:27 UTC · Quelle: creator*
+
+[erschaffer] Nach jeder Repo-Struktur-Änderung: Workflows, Badges, Pages und Checks prüfen und mit anpassen. Rote CI nie unbeaufsichtigt lassen.
+
+### `creator_teaching:7156577844`
+*23.08. 00:27 UTC · Quelle: creator*
+
+[erschaffer] Kopfschutz: src/, scripts/, tests/, pyproject.toml, data/tools/, hands_workspace NIE öffentlich pushen - auch nicht nachts, auch nicht in Releases. Nur lokal.
+
+### `creator_teaching:5345701409`
+*23.08. 00:27 UTC · Quelle: creator*
+
+[erschaffer] Sprache: englische Fachbegriffe IMMER mit kurzer deutscher Erklärung dazu. Alle nutzer-sichtbaren Ausgaben auf einfachem Deutsch (Ziele, Telegram, GEDAECHTNIS, Issues).
+
+### `creator_teaching:7188719617`
+*23.08. 00:27 UTC · Quelle: creator*
+
+[erschaffer] Zugang/Lizenz: nur auf seriöse, schriftliche Anfrage (echter Name, Hintergrund, konkretes Anliegen). Vertrag+NDA erforderlich. Keine Gebühr als Hürde - wirkt unseriös. Spam und 'Preis?'-One-Liner werden ignoriert.
 
 ### `dream:202608230023:5`
 *23.08. 00:23 UTC · Quelle: dream*
