@@ -19,6 +19,15 @@ fi
 cd "$WIKI"
 git config user.name "zoetron-bot"
 git config user.email "zoetron@users.noreply.github.com"
+# Zuerst: haengende Commits von frueheren Fehlversuchen loswerden
+if ! git pull --rebase origin master >/dev/null 2>&1; then
+  git pull --rebase origin main >/dev/null 2>&1 || true
+fi
+PUSH_VORAB=0
+for BRANCH in master main; do
+  if git push origin "$BRANCH" >/dev/null 2>&1; then PUSH_VORAB=1; break; fi
+done
+[ "$PUSH_VORAB" = "1" ] && log "wiki Rueckstand nachgeholt"
 cp -f "$SRC"/*.md ./
 git add -A
 if git diff --cached --quiet; then
