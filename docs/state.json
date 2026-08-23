@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-08-23T20:55:15.015Z",
+  "generatedAt": "2026-08-23T21:11:46.475Z",
   "repo": "djlex83/zoetron",
   "memory": {
-    "facts": 1221,
-    "neurons": 1142,
-    "synapses": 14177,
-    "stand": "2026-08-23 20:48 UTC",
+    "facts": 1248,
+    "neurons": 1169,
+    "synapses": 14719,
+    "stand": "2026-08-23 21:07 UTC",
     "kinds": [
       {
         "kind": "dream",
-        "count": 497
+        "count": 512
       },
       {
         "kind": "swarm_artifact",
-        "count": 415
+        "count": 421
       },
       {
         "kind": "anti_pattern",
-        "count": 108
+        "count": 110
       },
       {
         "kind": "strategy",
-        "count": 75
+        "count": 76
       },
       {
         "kind": "last_swarm_goal",
-        "count": 57
+        "count": 59
       },
       {
         "kind": "last_swarm_critique",
-        "count": 50
+        "count": 51
       },
       {
         "kind": "creator_teaching",
@@ -68,11 +68,11 @@
   "learning": {
     "events": 4000,
     "handsRate": 0.698,
-    "simulations": 122,
+    "simulations": 119,
     "swarm": {
-      "n": 69,
+      "n": 68,
       "best": 8,
-      "schnitt": 4.16
+      "schnitt": 4.18
     },
     "tools": [
       {
@@ -158,9 +158,15 @@
         "runs": 1,
         "wins": 1,
         "rate": 1
+      },
+      {
+        "name": "modell-gesundheitsregister-mit-sicherung.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
       }
     ],
-    "stand": "2026-08-23 20:48:40"
+    "stand": "2026-08-23 21:07:33"
   },
   "missions": [
     {
@@ -212,8 +218,8 @@
     "quote": "Dream logs contain recurring error signatures (timeout, AttributeError) that are not systematically mined to seed evolution variants."
   },
   "beats": {
-    "last": "2026-08-23T22:55:14+02:00",
-    "per24h": 145,
-    "total": 249
+    "last": "2026-08-23T23:11:45+02:00",
+    "per24h": 148,
+    "total": 253
   }
 }

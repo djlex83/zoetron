@@ -80,18 +80,19 @@ export default function BrainStage({
       <div ref={root}>
         <div className="flex flex-wrap items-end justify-between gap-8">
           <SectionHead label={sections.gehirn.label} head={sections.gehirn.head} sub={sections.gehirn.sub} />
-          <div data-reveal className="flex items-center gap-2 rounded-full border border-white/10 p-1.5">
+          <div data-reveal className="flex items-center gap-2">
             {(['3d', '2d'] as View[]).map((v) => (
               <button
                 key={v}
                 onClick={() => { setView(v); setArmed(false) }}
-                className={`rounded-full px-5 py-2.5 text-[0.92rem] transition-colors duration-300 ${
-                  view === v ? 'bg-ink text-void' : 'text-ink-dim hover:text-ink'
-                }`}
+                className="pill tab"
+                data-active={view === v ? '1' : '0'}
               >
-                {v === '3d'
-                  ? (lang === 'de' ? '🧠 3D-Gehirn' : '🧠 3D brain')
-                  : (lang === 'de' ? '🕸 2D-Graph' : '🕸 2D graph')}
+                <span>
+                  {v === '3d'
+                    ? (lang === 'de' ? '🧠 3D-Gehirn' : '🧠 3D brain')
+                    : (lang === 'de' ? '🕸 2D-Graph' : '🕸 2D graph')}
+                </span>
               </button>
             ))}
           </div>
@@ -99,7 +100,7 @@ export default function BrainStage({
 
         <div
           ref={frame}
-          className={`glass relative mt-12 overflow-hidden rounded-[28px] lg:mt-16 ${
+          className={`panel relative mt-12 overflow-hidden rounded-[28px] lg:mt-16 ${
             full ? 'fixed inset-0 z-[90] mt-0 rounded-none' : ''
           }`}
           style={{ willChange: 'clip-path, transform' }}
@@ -244,7 +245,7 @@ export default function BrainStage({
               {lang === 'de' ? 'Die stärksten Synapsen gerade eben' : 'Strongest synapses right now'}
             </h3>
             {board.topSynapses.slice(0, 6).map((s) => (
-              <div key={s.rank} data-reveal className="glass rounded-2xl p-5 sm:p-6">
+              <div key={s.rank} data-reveal className="panel rounded-2xl p-5 sm:p-6">
                 <div className="flex items-center gap-3">
                   <span className="font-mono text-[0.92rem] text-synapse">{s.strength}</span>
                   <span className="h-1 flex-1 overflow-hidden rounded-full bg-white/8">

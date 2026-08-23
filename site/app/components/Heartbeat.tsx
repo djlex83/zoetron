@@ -27,8 +27,11 @@ export default function Heartbeat({ pulse }: { pulse: Pulse }) {
             🫀
           </span>
           <div>
-            <div className="label text-pulse/90">{lang === 'de' ? 'Herzschlag' : 'heartbeat'}</div>
-            <div className="display mt-1 text-[2.4rem] leading-none text-ink sm:text-[3rem]">
+            <span className="eyebrow-pill">
+              <span className="beat h-1.5 w-1.5 rounded-full bg-pulse" />
+              {lang === 'de' ? 'Herzschlag' : 'heartbeat'}
+            </span>
+            <div className="display mt-3 leading-none text-ink" style={{ fontSize: 'calc(var(--h1-size) * 0.62)' }}>
               {lang === 'de' ? 'alle 5 Min' : 'every 5 min'}
             </div>
             <div className="mt-2 font-mono text-[0.88rem] text-ink-faint">
@@ -41,7 +44,7 @@ export default function Heartbeat({ pulse }: { pulse: Pulse }) {
 
         {/* the ECG */}
         <div className="relative min-w-0 flex-1">
-          <div className="relative h-24 overflow-hidden rounded-2xl border border-white/8 bg-void/60 sm:h-28">
+          <div className="panel relative h-24 overflow-hidden bg-void/60 sm:h-28">
             <svg className="absolute inset-0 h-full w-full" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true">
               <defs>
                 <linearGradient id="ecg" x1="0" y1="0" x2="1" y2="0">
@@ -80,8 +83,11 @@ export default function Heartbeat({ pulse }: { pulse: Pulse }) {
 
         {/* what is running right now */}
         <div className="lg:w-64">
-          <div className="label">{lang === 'de' ? 'läuft gerade' : 'running now'}</div>
-          <div className="mt-2 flex items-center gap-3">
+          <span className="eyebrow-pill">
+            <span className="h-1.5 w-1.5 rounded-full bg-amber" />
+            {lang === 'de' ? 'läuft gerade' : 'running now'}
+          </span>
+          <div className="mt-4 flex items-center gap-3">
             <span className="text-3xl leading-none">{phase.icon}</span>
             <div>
               <div className="font-mono text-[1.05rem] tracking-[0.14em] text-amber">{phase.name}</div>

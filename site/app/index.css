@@ -281,6 +281,38 @@
 }
 
 @layer components {
+  /* ---------- section eyebrow: the badge language, one size down ---------- */
+  .eyebrow-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #5e5e5e 0%, #232323 52%, #0a0a0a 100%);
+    color: #ededed;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* ---------- one panel for every card on the page ---------- */
+  .panel {
+    background: linear-gradient(158deg, rgb(255 255 255 / 0.055), rgb(255 255 255 / 0.018));
+    border: 1px solid rgb(255 255 255 / 0.08);
+    border-radius: 16px;
+    backdrop-filter: blur(14px) saturate(1.25);
+    -webkit-backdrop-filter: blur(14px) saturate(1.25);
+    box-shadow: 0 24px 60px -30px rgb(0 0 0 / 0.9), inset 0 1px 0 rgb(255 255 255 / 0.07);
+    transition: border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  }
+  .panel:hover { border-color: rgb(255 255 255 / 0.16); }
+  .panel-lg { border-radius: 20px; }
+
+  /* a pill used as a tab control */
+  .tab { height: calc(var(--nav-h) - 2px); padding: 0 16px; }
+
   /* ---------- liquid-metal nav pill ---------- */
   .pill {
     position: relative;

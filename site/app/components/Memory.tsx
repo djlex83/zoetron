@@ -41,7 +41,7 @@ export default function Memory({ memory, seed }: { memory: MemoryFeed | null; se
 
         <div className="mt-14 grid gap-6 lg:mt-20 lg:grid-cols-[1fr_1.05fr]">
           {/* --- what kind of knowledge --- */}
-          <div data-reveal className="glass rounded-3xl p-6 sm:p-8">
+          <div data-reveal className="panel panel-lg rounded-[20px] p-6 sm:p-8">
             <div className="flex items-baseline justify-between">
               <h3 className="label">{lang === 'de' ? 'Woraus es besteht' : 'What it is made of'}</h3>
               <span className="font-mono text-[0.78rem] text-ink-faint">{stand ?? '—'}</span>
@@ -78,7 +78,7 @@ export default function Memory({ memory, seed }: { memory: MemoryFeed | null; se
           </div>
 
           {/* --- the live stream --- */}
-          <div data-reveal className="glass flex flex-col rounded-3xl p-6 sm:p-8">
+          <div data-reveal className="panel flex flex-col panel-lg rounded-[20px] p-6 sm:p-8">
             <div className="flex items-center justify-between">
               <h3 className="label">{lang === 'de' ? 'Zuletzt gedacht' : 'Last thoughts'}</h3>
               <LiveDot label={memory ? 'live' : '…'} />
@@ -124,7 +124,7 @@ export default function Memory({ memory, seed }: { memory: MemoryFeed | null; se
             </p>
             <ol className="mt-6 space-y-2.5">
               {(seed?.genome ?? []).map((g, i) => (
-                <li key={g.id} data-reveal className="glass flex gap-4 rounded-2xl p-4 sm:p-5">
+                <li key={g.id} data-reveal className="panel flex gap-4 rounded-2xl p-4 sm:p-5">
                   <span className="font-mono text-[0.78rem] text-amber">{String(i + 1).padStart(2, '0')}</span>
                   <div>
                     <div className="font-mono text-[0.8rem] tracking-[0.12em] text-ink">{g.id}</div>
@@ -144,7 +144,7 @@ export default function Memory({ memory, seed }: { memory: MemoryFeed | null; se
             </p>
             <div className="mt-6 space-y-2.5">
               {(seed?.missions ?? []).map((m) => (
-                <div key={m.id} data-reveal className="glass rounded-2xl p-4 sm:p-5">
+                <div key={m.id} data-reveal className="panel rounded-2xl p-4 sm:p-5">
                   <div className="flex items-start justify-between gap-4">
                     <h4 className="text-[0.92rem] font-medium text-ink">{m.title}</h4>
                     <span
@@ -162,7 +162,7 @@ export default function Memory({ memory, seed }: { memory: MemoryFeed | null; se
             </div>
 
             {seed?.learning && (
-              <div data-reveal className="glass mt-3 rounded-2xl p-4 sm:p-5">
+              <div data-reveal className="panel mt-3 rounded-2xl p-4 sm:p-5">
                 <h4 className="label">{lang === 'de' ? 'Selbst gebaute Werkzeuge' : 'Self-built tools'}</h4>
                 <div className="mt-4 space-y-2">
                   {seed.learning.tools.slice(0, 6).map((w) => (

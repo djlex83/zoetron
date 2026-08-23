@@ -340,7 +340,7 @@ export default function BrainCanvas({
       )}
 
       {mode === 'stage' && picked && (
-        <div className="glass absolute right-3 top-3 max-h-[78%] w-[min(24rem,calc(100%-1.5rem))] overflow-y-auto rounded-2xl p-4 text-left">
+        <div className="panel absolute right-3 top-3 max-h-[78%] w-[min(24rem,calc(100%-1.5rem))] overflow-y-auto rounded-2xl p-4 text-left">
           <div className="flex items-start justify-between gap-3">
             <span className={`rounded-full px-2.5 py-1 font-mono text-[0.7rem] ${picked.f ? 'bg-synapse/15 text-synapse' : 'bg-amber/15 text-amber'}`}>
               {picked.f ? (lang === 'de' ? 'Fakt' : 'fact') : (lang === 'de' ? 'Ziel / Ereignis' : 'goal / event')}

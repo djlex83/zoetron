@@ -94,13 +94,13 @@ export default function Organs({ pulse }: { pulse: Pulse }) {
                 key={o.name}
                 data-organ
                 data-reveal
-                className={`glass group relative flex w-[80vw] shrink-0 snap-center flex-col justify-between rounded-3xl p-7 transition-colors duration-500 hover:border-white/20 sm:w-[22rem] sm:p-8 lg:h-[25rem] lg:w-[24rem] ${
+                className={`panel group relative flex w-[80vw] shrink-0 snap-center flex-col justify-between panel-lg rounded-[20px] p-7 transition-colors duration-500 hover:border-white/20 sm:w-[22rem] sm:p-8 lg:h-[25rem] lg:w-[24rem] ${
                   live ? 'border-amber/45 shadow-[0_0_0_1px_rgba(245,165,36,0.25)]' : ''
                 }`}
                 style={{ transformStyle: 'preserve-3d' }}
               >
                 <div
-                  className={`pointer-events-none absolute inset-0 rounded-3xl transition-opacity duration-700 group-hover:opacity-100 ${live ? 'opacity-100' : 'opacity-0'}`}
+                  className={`pointer-events-none absolute inset-0 panel-lg rounded-[20px] transition-opacity duration-700 group-hover:opacity-100 ${live ? 'opacity-100' : 'opacity-0'}`}
                   style={{ background: `radial-gradient(70% 55% at 30% 0%, ${a.glow}, transparent 70%)` }}
                 />
                 <div className="relative">

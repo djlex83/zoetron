@@ -8,9 +8,11 @@ export function SectionHead({
   const { t } = useLang()
   return (
     <header className={align === 'center' ? 'mx-auto max-w-2xl text-center' : 'max-w-3xl'}>
-      <div data-reveal className="flex items-center gap-3" style={align === 'center' ? { justifyContent: 'center' } : undefined}>
-        <span className="h-px w-10 bg-amber/60" />
-        <span className="label text-amber/90">{t(label)}</span>
+      <div data-reveal className="flex" style={align === 'center' ? { justifyContent: 'center' } : undefined}>
+        <span className="eyebrow-pill">
+          <span className="h-1.5 w-1.5 rounded-full bg-amber" />
+          {t(label)}
+        </span>
       </div>
       <h2 data-reveal className="display mt-5 whitespace-pre-line text-ink"
         style={{ fontSize: 'max(1.9rem, calc(var(--h1-size) * 0.78))', lineHeight: 1.04 }}>
@@ -40,14 +42,14 @@ export function LiveDot({ label, tone = 'pulse' }: { label?: string; tone?: 'pul
 }
 
 export function Panel({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return <div className={`glass rounded-2xl ${className}`}>{children}</div>
+  return <div className={`panel rounded-2xl ${className}`}>{children}</div>
 }
 
 export function Section({
   id, children, className = '',
 }: { id?: string; children: ReactNode; className?: string }) {
   return (
-    <section id={id} className={`relative scroll-mt-24 px-5 py-24 sm:px-8 sm:py-28 lg:py-36 ${className}`}>
+    <section id={id} className={`relative scroll-mt-24 px-5 py-20 sm:px-8 sm:py-24 lg:py-28 ${className}`}>
       <div className="mx-auto w-full max-w-6xl">{children}</div>
     </section>
   )

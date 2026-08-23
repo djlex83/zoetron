@@ -115,9 +115,12 @@ export default function Cadence({ pulse }: { pulse: Pulse }) {
                 </p>
 
                 {cycle.known && (
-                  <div className="mt-6 rounded-2xl border border-amber/25 bg-amber/5 px-4 py-3">
-                    <div className="label text-amber/90">{lang === 'de' ? 'jetzt in Arbeit' : 'working now'}</div>
-                    <div className="mt-2 flex items-center gap-2 font-mono text-[0.95rem] text-ink">
+                  <div className="panel mt-6 px-4 py-4">
+                    <span className="eyebrow-pill">
+                      <span className="beat h-1.5 w-1.5 rounded-full bg-pulse" />
+                      {lang === 'de' ? 'jetzt in Arbeit' : 'working now'}
+                    </span>
+                    <div className="mt-3 flex items-center gap-2 font-mono text-[0.95rem] text-ink">
                       <span className="h-2 w-2 rounded-full bg-amber beat" />
                       {phases[cycle.index]!.name}
                     </div>

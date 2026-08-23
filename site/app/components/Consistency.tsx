@@ -48,7 +48,7 @@ export default function Consistency(input: {
               : 'Every number on this page comes from a file Zoetron writes itself. This page does not recompute anything — but it holds the independent sources against each other and shows when they disagree.'}
           </p>
 
-          <div data-reveal className="glass mt-8 rounded-2xl p-5">
+          <div data-reveal className="panel mt-8 rounded-2xl p-5">
             <div className="flex items-center justify-between gap-4">
               <LiveDot label={lang === 'de' ? 'bei jedem Abruf neu' : 're-run on every fetch'} tone={allGood ? 'amber' : 'pulse'} />
               <span className={`font-mono text-[0.85rem] ${allGood ? 'text-moss' : 'text-amber'}`}>
@@ -71,7 +71,7 @@ export default function Consistency(input: {
           {checks.map((c) => {
             const s = tone[c.state]
             return (
-              <li key={c.id} data-reveal className="glass rounded-2xl p-5 sm:p-6">
+              <li key={c.id} data-reveal className="panel rounded-2xl p-5 sm:p-6">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <h3 className="text-[1rem] font-medium text-ink">{t(c.label)}</h3>
                   <span className={`flex items-center gap-2 font-mono text-[0.74rem] ${s.text}`}>
@@ -81,9 +81,13 @@ export default function Consistency(input: {
                 </div>
 
                 <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[0.84rem] text-ink-dim">
-                  <span className="rounded-lg border border-white/8 bg-white/4 px-3 py-1.5">{c.a}</span>
+                  <span className="pill" style={{ height: '34px', padding: '0 12px', fontSize: '0.82rem' }}>
+                    <span>{c.a}</span>
+                  </span>
                   <span className="text-ink-faint">↔</span>
-                  <span className="rounded-lg border border-white/8 bg-white/4 px-3 py-1.5">{c.b}</span>
+                  <span className="pill" style={{ height: '34px', padding: '0 12px', fontSize: '0.82rem' }}>
+                    <span>{c.b}</span>
+                  </span>
                 </div>
 
                 <p className="mt-3 text-[0.92rem] leading-relaxed text-ink-faint">{t(c.note)}</p>
@@ -92,7 +96,7 @@ export default function Consistency(input: {
           })}
 
           {checks.length === 0 && (
-            <li className="glass animate-pulse rounded-2xl p-6">
+            <li className="panel animate-pulse rounded-2xl p-6">
               <div className="h-2 w-40 rounded bg-white/8" />
               <div className="mt-3 h-2 w-full rounded bg-white/6" />
             </li>

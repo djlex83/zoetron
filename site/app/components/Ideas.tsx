@@ -48,13 +48,10 @@ export default function Ideas({ ideas, seed }: { ideas: IdeasData | null; seed: 
             <button
               key={x.key}
               onClick={() => setTab(x.key)}
-              className={`rounded-full border px-4 py-2.5 text-[0.92rem] transition-all duration-300 ${
-                tab === x.key
-                  ? 'border-amber/60 bg-amber/12 text-amber'
-                  : 'border-white/10 text-ink-dim hover:border-white/25 hover:text-ink'
-              }`}
+              className="pill tab"
+              data-active={tab === x.key ? '1' : '0'}
             >
-              {x.label}
+              <span>{x.label}</span>
             </button>
           ))}
         </div>
@@ -67,7 +64,7 @@ export default function Ideas({ ideas, seed }: { ideas: IdeasData | null; seed: 
           {items.map((item, i) => (
             <li
               key={`${tab}-${i}`}
-              className="glass group relative overflow-hidden rounded-2xl p-5 transition-colors duration-500 hover:border-amber/35"
+              className="panel group relative overflow-hidden rounded-2xl p-5 transition-colors duration-500 hover:border-amber/35"
             >
               <div className="flex items-start gap-4">
                 <span className="font-mono text-[0.76rem] text-ink-faint">{String(i + 1).padStart(2, '0')}</span>
@@ -90,7 +87,7 @@ export default function Ideas({ ideas, seed }: { ideas: IdeasData | null; seed: 
           ))}
           {!ideas &&
             [0, 1, 2, 3, 4, 5].map((i) => (
-              <li key={i} className="glass animate-pulse rounded-2xl p-5">
+              <li key={i} className="panel animate-pulse rounded-2xl p-5">
                 <div className="h-2 w-full rounded bg-white/7" />
                 <div className="mt-3 h-2 w-2/3 rounded bg-white/6" />
               </li>
@@ -98,7 +95,7 @@ export default function Ideas({ ideas, seed }: { ideas: IdeasData | null; seed: 
         </ul>
 
         {report && (
-          <div data-reveal className="glass mt-10 overflow-hidden rounded-3xl lg:mt-14">
+          <div data-reveal className="panel mt-10 overflow-hidden panel-lg rounded-[20px] lg:mt-14">
             <div className="grid gap-px bg-white/6 sm:grid-cols-4">
               {[
                 { v: report.runs, l: lang === 'de' ? 'Schwarm-Läufe' : 'swarm runs' },
