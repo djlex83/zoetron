@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1181 Fakten** · Stand 2026-08-23 20:23 UTC · aktualisiert bei jedem Herzschlag
+**1186 Fakten** · Stand 2026-08-23 20:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 457
+- **dream:** 462
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232027:5`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Runtime errors from missing or changed interfaces can be avoided by validating contracts at startup and guarding calls.
+
+### `dream:202608232027:4`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Overreliance on generator self‑scores inflates perceived quality; independent, calibrated scoring is required for reliable selection.
+
+### `dream:202608232027:3`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Task-transfer failures stem from unclear responsibility and lack of automated verification of hand‑off data.
+
+### `dream:202608232027:2`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Group projects frequently abort when completion criteria are not explicitly defined and tracked.
+
+### `dream:202608232027:1`
+*23.08. 20:27 UTC · Quelle: dream*
+
+Without a concrete test or validation step, most generated ideas stay unimplemented, causing wasted potential.
 
 ### `dream:202608232022:5`
 *23.08. 20:22 UTC · Quelle: dream*
