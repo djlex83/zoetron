@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**454 Fakten** · Stand 2026-08-23 03:41 UTC · aktualisiert bei jedem Herzschlag
+**469 Fakten** · Stand 2026-08-23 04:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 245
-- **dream:** 90
-- **strategy:** 41
-- **anti_pattern:** 40
-- **last_swarm_critique:** 10
-- **last_swarm_goal:** 10
+- **swarm_artifact:** 250
+- **dream:** 95
+- **strategy:** 42
+- **anti_pattern:** 42
+- **last_swarm_critique:** 11
+- **last_swarm_goal:** 11
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:einheitliche_plugin_schnittstellen_schaffen`
+*23.08. 04:01 UTC · Quelle: evolution*
+
+Setuptools entry‑point based discovery - Variant 1 leverages setuptools entry points and importlib.metadata, providing a clean, standardized discovery mechanism that avoids direct sys.modules manipulation, reduces collisi
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Einheitliche Plugin-Schn:2`
+*23.08. 04:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Isolated plugin namespace with explicit cleanup - Create a dedicated package (e.g., _plugin_ns) and load each plugin into a submodule of that package using importlib.machinery.SourceFileLoader, setting the module's __package_
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Einheitliche Plugin-Schn:0`
+*23.08. 04:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Unique module names and explicit interface import - Modify load_plugins to generate a fully‑qualified module name for each plugin file (e.g., using a hash of its absolute path) and load it via importlib.util.spec_from_file_lo
+
+### `last_swarm_critique`
+*23.08. 04:00 UTC · Quelle: critic*
+
+score=4; issues=Plugin manager does not import PluginInterface, causing NameError when load_plugins is used.; load_plugins adds modules to sys.modules using only file stem, risking namespace collisions.; Unit test writes plugin code with escaped quotes that ma
+
+### `swarm_artifact:Provide usage example script`
+*23.08. 04:00 UTC · Quelle: builder*
+
+```python from plugin_manager import load_plugins  plugins = load_plugins('./plugins') for p in plugins:     result = p.execute({'name': 'Swarm'})     print(f'{p.__class__.__name__} (Klassenname): {re
+
+### `swarm_artifact:Write unit tests for plugin loading`
+*23.08. 03:59 UTC · Quelle: builder*
+
+```python import tempfile import os from plugin_manager import load_plugins from greeting_plugin import GreetingPlugin  def test_load_and_execute():     with tempfile.TemporaryDirectory() as tmp:     
+
+### `swarm_artifact:Create example plugin`
+*23.08. 03:59 UTC · Quelle: builder*
+
+```python # greeting_plugin.py from plugin_interface import PluginInterface  class GreetingPlugin(PluginInterface):     def execute(self, data):         name = data.get('name', 'World')         return
+
+### `swarm_artifact:Implement plugin manager`
+*23.08. 03:59 UTC · Quelle: builder*
+
+# Plugin Manager Implementation  This artifact implements a plugin manager that discovers and loads plugins from a specified directory. The manager identifies plugin classes that inherit from a base `
+
+### `swarm_artifact:Define unified plugin interface`
+*23.08. 03:58 UTC · Quelle: builder*
+
+**Plugin-Schnittstelle (Plugin interface)**   Datei: `plugin_interface.py`  ```python from abc import ABC, abstractmethod  class PluginInterface(ABC):     """Plugin-Schnittstelle (Plugin interface) di
+
+### `last_swarm_goal`
+*23.08. 03:56 UTC · Quelle: system*
+
+Einheitliche Plugin-Schnittstellen schaffen
+
+### `dream:202608230356:5`
+*23.08. 03:56 UTC · Quelle: dream*
+
+GitHub‑issue errors (failure signal) disrupt collaboration; integrating automated lint‑and‑test on PRs and blocking merge on failures improves reliability.
+
+### `dream:202608230356:4`
+*23.08. 03:56 UTC · Quelle: dream*
+
+Swarm tasks repeatedly need revision (5 revisions each simulation) despite heartbeats; adding a stall detector (>90 s) with automatic shard reassignment reduces rework.
+
+### `dream:202608230356:3`
+*23.08. 03:56 UTC · Quelle: dream*
+
+Many skill proposals remain unimplemented (gap signal), proving that a formal promotion pipeline measuring ROI (delta/compute cost) and requiring ROI>1.2 is essential for adoption.
+
+### `dream:202608230356:2`
+*23.08. 03:56 UTC · Quelle: dream*
+
+Calibration error of 1 point (predicted 5 vs actual 4) indicates drift; nightly retraining with a lightweight regressor and hot‑swap on >5% MAE improvement keeps predictions aligned.
+
+### `dream:202608230356:1`
+*23.08. 03:56 UTC · Quelle: dream*
+
+Latency outliers and timeouts (e.g., 22.5 s ultra model timeout) show that static model selection risks stalls, requiring adaptive fallback based on real‑time p90 breaches.
 
 ### `strategy:träume_und_simulationen_besser_nutzen`
 *23.08. 03:40 UTC · Quelle: evolution*
