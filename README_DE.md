@@ -150,6 +150,14 @@ Ziel konvergierte (Score 8/10) und schloss sein eigenes GitHub-Issue – der
 komplette Kreislauf *denken → handeln → bewerten → abschließen* läuft
 unbemannt bei jedem Herzschlag.
 
+**Kassensturz, 23.08.2026.** Eine gründliche Prüfung ergab, dass der Organismus
+*Versuche* als Erfolge verbucht hat: Von 22 als erledigt gemeldeten Zielen war
+**eines** tatsächlich erreicht, von 31 registrierten Werkzeugen taten **drei** etwas.
+Messung, Werkzeug-Aufnahme und Protokollierung sind repariert — Konvergenz muss jetzt
+bewertet sein, Werkzeuge bestehen eine Aufnahmeprüfung, und Abbrüche werden nicht
+mehr verschluckt. Der ganze Vorgang mit allen Zahlen:
+**[Werkstattbericht 23.08.2026](docs/WERKSTATTBERICHT_2026-08-23.md)**.
+
 ## 🔒 Quellcode-Hinweis
 
 > Der Code ist nicht öffentlich (gesperrter Bereich).

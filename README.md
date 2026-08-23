@@ -147,6 +147,14 @@ automatically. **Milestone:** the first fully autonomous goal converged
 (score 8/10) and closed its own GitHub issue — the complete
 think → act → assess → close loop now runs unattended on every heartbeat.
 
+**Reality check, 23 Aug 2026.** A thorough audit found the organism had been
+recording *attempts* as successes: of 22 goals reported done, **one** had actually
+been achieved, and of 31 registered tools, **three** did anything. Measurement, tool
+admission and logging are repaired — convergence must now be scored, tools must pass
+a four-rule admission check, and aborts are no longer swallowed. The full account,
+including the numbers we would rather not publish:
+**[Werkstattbericht 23.08.2026](docs/WERKSTATTBERICHT_2026-08-23.md)**.
+
 ## 🔒 Source Code Notice / Quellcode-Hinweis
 
 > **🇩🇪 Zugang zum Quellcode:** Der Code ist nicht öffentlich (gesperrter Bereich).
