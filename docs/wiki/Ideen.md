@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 18:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution winners should meet a convergence gate (score≥8) or undergo multiple swarm cycles to avoid accepting suboptimal candidates.
+- Applying revisions atomically and re‑simulating prevents residual risks from persisting after changes.
+- Score predictor updates are reliable only after a sufficient number of recent prediction‑actual pairs, suggesting a minimum sample threshold.
+- Intermittent 502 upstream errors reveal volatile model endpoints that require graceful degradation.
+- Latency frequently exceeds 30 seconds, indicating a need for retry/backoff and failover strategies.
 - GitHub synchronization failures during task transfer point to missing validation of transferred artifacts, implying that a verification step after eac
 - Simulation verdicts of 'go' often overestimate actual performance (e.g., predicted 4 vs actual 5 error), demonstrating that a rolling calibration of s
 - Swarm evolution sometimes yields a winner whose score exceeds the final swarm score by >2 points, indicating that unchecked evolution cycles waste res
@@ -51,11 +56,6 @@
 - Simulation outcomes are frequently generated but not applied, creating a learning gap that reduces system improvement.
 - Repeated model failures without root‑cause analysis reveal a missing systematic error‑pattern collection process.
 - High latency outliers (>150 s) destabilize the pipeline and require per‑call timeouts with fallback mechanisms.
-- Evolution winners should only be accepted after a minimum number of swarm cycles or a convergence score gate; otherwise they must be recycled to preve
-- Core component interfaces (e.g., MemoryStore) need automated contract tests in CI to catch missing or breaking methods early.
-- Score predictor calibration should require a minimum number of recent (predicted, actual) pairs before gating to avoid unstable updates from scarce da
-- Simulation revisions must be applied atomically and verified by re‑simulation to ensure zero residual risk before committing changes.
-- Model latency spikes and occasional 502 errors necessitate exponential‑backoff retry with automatic failover and logging to keep the system available.
 
 ---
 

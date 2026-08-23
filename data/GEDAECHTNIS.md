@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1028 Fakten** · Stand 2026-08-23 18:08 UTC · aktualisiert bei jedem Herzschlag
+**1033 Fakten** · Stand 2026-08-23 18:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **swarm_artifact:** 395
-- **dream:** 347
+- **dream:** 352
 - **anti_pattern:** 100
 - **strategy:** 71
 - **last_swarm_goal:** 50
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608231813:5`
+*23.08. 18:13 UTC · Quelle: dream*
+
+Evolution winners should meet a convergence gate (score≥8) or undergo multiple swarm cycles to avoid accepting suboptimal candidates.
+
+### `dream:202608231813:4`
+*23.08. 18:13 UTC · Quelle: dream*
+
+Applying revisions atomically and re‑simulating prevents residual risks from persisting after changes.
+
+### `dream:202608231813:3`
+*23.08. 18:13 UTC · Quelle: dream*
+
+Score predictor updates are reliable only after a sufficient number of recent prediction‑actual pairs, suggesting a minimum sample threshold.
+
+### `dream:202608231813:2`
+*23.08. 18:13 UTC · Quelle: dream*
+
+Intermittent 502 upstream errors reveal volatile model endpoints that require graceful degradation.
+
+### `dream:202608231813:1`
+*23.08. 18:13 UTC · Quelle: dream*
+
+Latency frequently exceeds 30 seconds, indicating a need for retry/backoff and failover strategies.
 
 ### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
 *23.08. 18:07 UTC · Quelle: evolution*
