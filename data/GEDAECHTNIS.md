@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1420 Fakten** · Stand 2026-08-23 22:28 UTC · aktualisiert bei jedem Herzschlag
+**1432 Fakten** · Stand 2026-08-23 22:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 602
-- **swarm_artifact:** 460
+- **dream:** 607
+- **swarm_artifact:** 465
 - **anti_pattern:** 124
 - **strategy:** 83
-- **last_swarm_goal:** 73
+- **last_swarm_goal:** 75
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Create Hermes Client Interface for This Agent`
+*23.08. 22:33 UTC · Quelle: builder*
+
+# Hermes Client Interface  **File:** `src/hermes_client/client.py`  ```python """ Hermes Client Interface — Sender Side for Forge Agent.  Provides a high-level API for enqueueing messages to the Herme
+
+### `swarm_artifact:Bridge Message Router`
+*23.08. 22:32 UTC · Quelle: builder*
+
+# Bridge Message Router  ```python # bridge_router.py """ Bridge Message Router Translates internal agent events into Hermes protocol messages and routes Hermes responses back to appropriate internal 
+
+### `swarm_artifact:Hermes Client Protocol Implementation`
+*23.08. 22:31 UTC · Quelle: builder*
+
+# Hermes Client Protocol Implementation  ```python # hermes_client.py """ Hermes Client Protocol Implementation Typed message schemas, connection management, and request/response handling for communic
+
+### `swarm_artifact:Implement Local File-Based Transport Layer`
+*23.08. 22:31 UTC · Quelle: builder*
+
+# Local File-Based Transport Layer  **File:** `src/hermes_transport/file_transport.py`  ```python """ Local File-Based Transport Layer for Hermes Bridge.  Provides reliable inter-process communication
+
+### `swarm_artifact:Define Hermes Bridge Protocol Contracts`
+*23.08. 22:29 UTC · Quelle: builder*
+
+# Hermes Bridge Protocol Contracts  **Version:** 1.0.0   **Status:** DRAFT — Protocol-First Definition   **Serialization:** JSON (primary) / MessagePack (binary fallback)   **Schema Registry:** Embedd
+
+### `last_swarm_goal`
+*23.08. 22:28 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608232228:5`
+*23.08. 22:28 UTC · Quelle: dream*
+
+Five skill proposals were generated in one cycle with no novelty/feasibility filter, flooding the queue with unvetted ideas.
+
+### `dream:202608232228:4`
+*23.08. 22:28 UTC · Quelle: dream*
+
+Prune runs consistently remove 0 facts and 0 events, meaning the forgetting mechanism is inert and memory grows unbounded.
+
+### `dream:202608232228:3`
+*23.08. 22:28 UTC · Quelle: dream*
+
+Simulations produce revisions (4 risks, 4 revisions) yet the Hermes bridge task remains unconverged (score 3), indicating simulation fixes don't translate to working code.
+
+### `dream:202608232228:2`
+*23.08. 22:28 UTC · Quelle: dream*
+
+MemoryStore lacks add_fact method but code assumes it exists, revealing interface drift between memory layer and callers.
+
+### `dream:202608232228:1`
+*23.08. 22:28 UTC · Quelle: dream*
+
+Model latency varies 66x (2.4s–160.4s) with no circuit breaker, causing unpredictable task durations and silent degradation.
+
+### `last_swarm_goal`
+*23.08. 22:28 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
 ### `swarm_artifact:Implement Hermes Server Mock & Contract Tests`
 *23.08. 22:27 UTC · Quelle: builder*

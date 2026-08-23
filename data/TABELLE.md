@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1254 Neuronen · 18451 bewertete Synapsen
+Stand: 1263 Neuronen · 18690 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,7 +10,7 @@ Stand: 1254 Neuronen · 18451 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 106 | 0.26 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 107 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 119 | 0.23 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 119 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 119 | 0.23 |
@@ -24,7 +24,7 @@ Stand: 1254 Neuronen · 18451 bewertete Synapsen
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 119 | 0.22 |
 | 13 | 🚫 | 🚫 Gescheiterter Versuch für „Ergebnisvalidierung und “ (Note 5/1… | 119 | 0.22 |
 | 14 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 119 | 0.22 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 119 | 0.22 |
+| 15 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 98 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 
