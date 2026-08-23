@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-23 20:18:07",
+ "stand": "2026-08-23 20:22:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,6 +15,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fehler-im-modell-vermeiden.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-selbstständig-üben.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -22,12 +28,6 @@
   },
   {
    "tool": "fehlermuster-aus-schwarm-träumen-nutzen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fehler-im-modell-vermeiden.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -81,7 +81,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.686,
+ "haende_quote": 0.689,
  "simulationen_angewandt": 124,
  "swarm_scores": {
   "n": 72,
@@ -90,8 +90,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 71,
-   "schnitt": 4.24
+   "n": 70,
+   "schnitt": 4.21
   },
   "bau": {
    "n": 1,

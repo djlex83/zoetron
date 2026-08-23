@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1171 Fakten** · Stand 2026-08-23 20:18 UTC · aktualisiert bei jedem Herzschlag
+**1181 Fakten** · Stand 2026-08-23 20:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 447
+- **dream:** 457
 - **swarm_artifact:** 415
 - **anti_pattern:** 108
 - **strategy:** 75
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608232022:5`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Unbounded revision cycles generate churn without external validation, reducing reliability and slowing progress.
+
+### `dream:202608232022:4`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Zero‑prune runs reveal that pruning criteria become stale, requiring periodic audits to maintain effective memory hygiene.
+
+### `dream:202608232022:3`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Stored facts are rarely reused, indicating a need for systematic retrieval and linking mechanisms to unlock latent knowledge.
+
+### `dream:202608232022:2`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Recurring failures in model and GitHub tasks point to missing root‑cause analysis and preventive guards.
+
+### `dream:202608232022:1`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Many skill proposals remain unimplemented because they lack explicit testing or integration steps, causing wasted potential.
+
+### `dream:202608232022:5`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Mandating at least one concrete risk for 'go' verdicts and a second simulation pass for zero‑risk cases prevents unsafe approvals.
+
+### `dream:202608232022:4`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Exponential backoff with jitter plus a shared ':free' model pool effectively mitigates 502/429 rate‑limit failures.
+
+### `dream:202608232022:3`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Consecutive prune_run cycles with zero prunes indicate outdated pruning criteria and merit an audit.
+
+### `dream:202608232022:2`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Independent scorer disagreement >2 points flags unreliable evaluations and should trigger rejection or calibration.
+
+### `dream:202608232022:1`
+*23.08. 20:22 UTC · Quelle: dream*
+
+Score inflation is corrected by subtracting the rolling mean prediction error before using scores in evolution selection.
 
 ### `dream:202608232017:5`
 *23.08. 20:17 UTC · Quelle: dream*
