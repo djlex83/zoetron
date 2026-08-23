@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**665 Fakten** · Stand 2026-08-23 09:55 UTC · aktualisiert bei jedem Herzschlag
+**675 Fakten** · Stand 2026-08-23 10:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 303
-- **dream:** 180
-- **anti_pattern:** 64
-- **strategy:** 53
-- **last_swarm_goal:** 24
-- **last_swarm_critique:** 23
+- **swarm_artifact:** 307
+- **dream:** 181
+- **anti_pattern:** 66
+- **strategy:** 54
+- **last_swarm_goal:** 25
+- **last_swarm_critique:** 24
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:ergebnisvalidierung_und_logging_hinzufügen`
+*23.08. 10:22 UTC · Quelle: evolution*
+
+Schema-first contract enforcement: define strict data contracts before any logic runs, so every resu - Schema-first contract enforcement directly attacks the root cause ('unparseable' critic output): by validating every function result against an explicit sche
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Ergebnisvalidierung und :2`
+*23.08. 10:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Event-driven observer pipeline: decouple validation and logging from business lo - Refactor the flow into an event bus architecture: each stage publishes typed events (StepStarted, StepFinished, StepFailed) to a bus; separate
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Ergebnisvalidierung und :1`
+*23.08. 10:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Aspect-oriented instrumentation via decorators: add validation and logging as tr - Keep the existing core code completely unchanged and instead create a @validated_logged decorator that (a) serializes arguments and return val
+
+### `last_swarm_critique`
+*23.08. 10:20 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Create CLI Validation Script`
+*23.08. 10:18 UTC · Quelle: builder*
+
+# Artefakt: CLI Validation Script (`cli_validate.py`)  ```python #!/usr/bin/env python3 # -*- coding: utf-8 -*- """ cli_validate.py – CLI-Validierungsskript  CLI (Command-Line Interface) = Befehlszeil
+
+### `swarm_artifact:Write Unit Tests`
+*23.08. 10:17 UTC · Quelle: builder*
+
+```python import unittest import logging from numbers import Real   def validate_result(result, expected, tolerance=0.01):     """Validate that result is numeric and close to expected within tolerance
+
+### `swarm_artifact:Integrate SimulationLogger`
+*23.08. 10:17 UTC · Quelle: builder*
+
+```python import logging  class SimulationLogger:     """Logger‑Klasse, die Simulationsschritte in eine Datei schreibt. (SimulationLogger)"""      def __init__(self, logfile='simulation.log'):        
+
+### `swarm_artifact:Implement Validation Function`
+*23.08. 10:16 UTC · Quelle: builder*
+
+```python import logging from numbers import Real  def validate_result(result, expected, tolerance=0.01):     """Validate that result is numeric and close to expected within tolerance."""     if not i
+
+### `last_swarm_goal`
+*23.08. 10:14 UTC · Quelle: system*
+
+Ergebnisvalidierung und Logging hinzufügen
+
+### `dream:202608231014:1`
+*23.08. 10:14 UTC · Quelle: dream*
+
+Dream could not parse its own output - check prompt size.
 
 ### `strategy:modellkalibrierung_verbessern`
 *23.08. 09:54 UTC · Quelle: evolution*
