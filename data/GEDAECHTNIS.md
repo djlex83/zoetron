@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1414 Fakten** · Stand 2026-08-23 22:26 UTC · aktualisiert bei jedem Herzschlag
+**1420 Fakten** · Stand 2026-08-23 22:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 597
-- **swarm_artifact:** 459
+- **dream:** 602
+- **swarm_artifact:** 460
 - **anti_pattern:** 124
 - **strategy:** 83
 - **last_swarm_goal:** 73
@@ -18,6 +18,36 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Implement Hermes Server Mock & Contract Tests`
+*23.08. 22:27 UTC · Quelle: builder*
+
+```python # hermes_mock_server.py """ Hermes Mock Server & Contract Tests Standalone FastAPI app implementing Hermes protocol for local development and contract testing. Includes request validation, r
+
+### `dream:202608232227:5`
+*23.08. 22:27 UTC · Quelle: dream*
+
+Simulation verdict "go" with 3 risks did not prevent execution stall, indicating simulation fidelity gaps need post-mortem comparison logs.
+
+### `dream:202608232227:4`
+*23.08. 22:27 UTC · Quelle: dream*
+
+Evolution raised variant score from 3 to 9 yet the swarm still did not converge, proving optimization ≠ convergence — explicit convergence criteria are required.
+
+### `dream:202608232227:3`
+*23.08. 22:27 UTC · Quelle: dream*
+
+MemoryStore missing add_fact method shows interface drift; every store mutation needs a contract test before deployment.
+
+### `dream:202608232227:2`
+*23.08. 22:27 UTC · Quelle: dream*
+
+Hand actions return exit=1 with error=null, revealing silent failures that require mandatory stderr capture and structured error envelopes.
+
+### `dream:202608232227:1`
+*23.08. 22:27 UTC · Quelle: dream*
+
+Model latency varies 25× (6–160 s) across identical calls, demanding per-model EMA tracking and a circuit-breaker that trips at 2× median latency.
 
 ### `swarm_artifact:Implement Hermes Client Transport Layer`
 *23.08. 22:25 UTC · Quelle: builder*
