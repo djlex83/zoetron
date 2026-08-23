@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 12:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 13:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,7 +11,6 @@
 - Limit simulation revisions to 3 and auto-trigger evolution when score delta <1 over two consecutive cycles. *(hatte die Idee 4×)*
 - Create skill activation tracker logging proposal-to-instantiation latency, flagging dormant skills after 3 swa *(hatte die Idee 4×)*
 - Deploy a nightly model calibration updater: log (goal_embedding, predicted, actual), retrain a lightweight reg *(hatte die Idee 4×)*
-- cross-dream-linker: embed vector references between dream outputs and tag unlinked distant memories for forced *(hatte die Idee 3×)*
 - model-latency-circuit-breaker: enforce p99 latency SLO per model; auto-failover to faster model when breached, *(hatte die Idee 3×)*
 - swarm-session-ledger: persist swarm_started with TTL; on timeout, auto-spawn recovery agent to harvest and tag *(hatte die Idee 3×)*
 - skill-proposal-execution-gate: require each proposal to include a minimal executable test harness; reject prop *(hatte die Idee 3×)*
@@ -20,6 +19,7 @@
 - Create skill-activation tracker: log proposal→instantiation latency, flag dormant skills after 3 swarm cycles  *(hatte die Idee 3×)*
 - Build calibration-aware reward shaper: blend simulation score with historical actuals to reduce prediction err *(hatte die Idee 3×)*
 - Wrap every model call with retry+fallback: on 502/timeout, switch to backup model (super-120b) and log latency *(hatte die Idee 3×)*
+- Enforce simulation-evolution gate: if 2 consecutive simulations verdict=revise AND swarm score<5, auto-launch  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm role ratios drift at startup, leading to insufficient criticism or planning capacity.
+- Predicted goal scores overestimate actual outcomes by ~40%, requiring calibration before critical decisions.
+- Skill proposals recur across dreams without implementation, revealing a missing execution pipeline.
+- Memory pruning triggers but removes nothing, indicating stale thresholds or ineffective criteria.
+- Model latency degrades over consecutive calls without circuit breaker, causing cascading delays.
 - Same model (nemotron-3-super) shows 8x latency variance (4.4s to 35s), making timeout-based fallbacks unreliable without percentile-based SLAs.
 - MemoryStore lacks required 'add_fact' method causing AttributeError during hand-execution, revealing missing interface contracts.
 - Swarm role imbalance (4 builders : 1 critic) correlates with non-convergence (score 6, converged false) despite evolution improving variant quality (6
@@ -51,11 +56,6 @@
 - Perfect calibration prediction (abs_error=0) but low task score (4/10) reveals a fundamental misalignment between the calibration metric and the actua
 - High model latency variance (5.6s–67.5s) destabilizes planner/critic roles that require timely responses for effective coordination.
 - Low iteration budgets (max_iterations=2) prevent swarm convergence on complex calibration goals despite evolution showing variant improvement.
-- The evolution run produced a winner with mixed scores (7,5,8), highlighting the need for multi-criteria evaluation and robust aggregation.
-- The system's repeated drive goals about dream memory linking and model calibration indicate persistent gaps that need automated triggers.
-- The metabolism budget of 2 iterations and 5 tasks is too restrictive for missions with more than 2 risks, leading to incomplete simulations.
-- Despite 5 revisions for 5 risks, the simulation verdict remained 'revise', indicating that the revision process may not be converging effectively.
-- Model latency exhibits high variability, with spikes over 248 seconds, which can cause timeouts and disrupt swarm coordination.
 
 ---
 

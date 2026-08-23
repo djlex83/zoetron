@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**790 Fakten** · Stand 2026-08-23 12:49 UTC · aktualisiert bei jedem Herzschlag
+**804 Fakten** · Stand 2026-08-23 13:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 334
-- **dream:** 241
-- **anti_pattern:** 76
-- **strategy:** 59
-- **last_swarm_goal:** 32
-- **last_swarm_critique:** 30
+- **swarm_artifact:** 338
+- **dream:** 246
+- **anti_pattern:** 78
+- **strategy:** 60
+- **last_swarm_goal:** 33
+- **last_swarm_critique:** 31
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,78 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:modellfehler_verringern`
+*23.08. 13:03 UTC · Quelle: evolution*
+
+Model Architecture & Training Robustness - Variant 2 provides the greatest potential to reduce model error through a robust ensemble architecture and advanced training techniques, while remaining feasible and elegant to imp
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler verringern
+:1`
+*23.08. 13:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Data Quality Audit & Synthetic Gap Detection Pipeline - Implement a main function with argparse that accepts input data paths, output directory, and synthetic generation parameters. Perform a comprehensive data quality audit 
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler verringern
+:0`
+*23.08. 13:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Calibration & Uncertainty Quantification Overhaul - Rewrite the calibration_curve function to compute reliability diagrams correctly, fix the bootstrap confidence interval argument order, and swap the columns used for bias CI
+
+### `last_swarm_critique`
+*23.08. 13:03 UTC · Quelle: critic*
+
+score=3; issues=Model Error Baseline Measurement & Calibration: calibration_curve function incomplete (cut off), missing code to save results to JSON, unused tqdm import, potential bug in bootstrap CI argument order, bias CI calculation uses swapped columns.; 
+
+### `swarm_artifact:Model Drift Monitoring & Alert System`
+*23.08. 13:02 UTC · Quelle: builder*
+
+**Artifact: Model Drift Monitoring & Alert System**   *Modell‑Drift‑Überwachungs‑ und Alarmssystem*    ```markdown ```python #!/usr/bin/env python3 """ Model Drift Monitoring & Alert System ----------
+
+### `swarm_artifact:Cross-Validation with Stratified Error Analysis`
+*23.08. 13:01 UTC · Quelle: builder*
+
+# Stratified Cross‑Validation with Error‑Slice Analysis   *Stratifizierte Kreuzvalidierung mit Fehler‑Slice‑Analyse*    ## Ziel (Goal)   Systematische Modellfehler erkennen, indem die Vorhersagefehler
+
+### `swarm_artifact:Data Quality Audit & Synthetic Gap Detection`
+*23.08. 12:59 UTC · Quelle: builder*
+
+# Data Quality Audit & Synthetic Gap Detection   *Data Profiler zur Analyse von Trainingsdaten, Erkennung von Covariate Shift, Identifikation unterrepräsentierter Regionen und Generierung synthetische
+
+### `swarm_artifact:Model Error Baseline Measurement & Calibration`
+*23.08. 12:58 UTC · Quelle: builder*
+
+**Artifact: Python script for model error baseline measurement & calibration**    ```markdown ```python #!/usr/bin/env python3 """ Model Error Baseline Measurement & Calibration ----------------------
+
+### `last_swarm_goal`
+*23.08. 12:55 UTC · Quelle: system*
+
+Modellfehler verringern
+
+### `dream:202608231255:5`
+*23.08. 12:55 UTC · Quelle: dream*
+
+Swarm role ratios drift at startup, leading to insufficient criticism or planning capacity.
+
+### `dream:202608231255:4`
+*23.08. 12:55 UTC · Quelle: dream*
+
+Predicted goal scores overestimate actual outcomes by ~40%, requiring calibration before critical decisions.
+
+### `dream:202608231255:3`
+*23.08. 12:55 UTC · Quelle: dream*
+
+Skill proposals recur across dreams without implementation, revealing a missing execution pipeline.
+
+### `dream:202608231255:2`
+*23.08. 12:55 UTC · Quelle: dream*
+
+Memory pruning triggers but removes nothing, indicating stale thresholds or ineffective criteria.
+
+### `dream:202608231255:1`
+*23.08. 12:55 UTC · Quelle: dream*
+
+Model latency degrades over consecutive calls without circuit breaker, causing cascading delays.
 
 ### `strategy:fehler_beim_denken_reduzieren`
 *23.08. 12:48 UTC · Quelle: evolution*
