@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**553 Fakten** · Stand 2026-08-23 06:32 UTC · aktualisiert bei jedem Herzschlag
+**567 Fakten** · Stand 2026-08-23 06:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **swarm_artifact:** 273
-- **dream:** 130
-- **anti_pattern:** 52
-- **strategy:** 47
-- **last_swarm_goal:** 17
-- **last_swarm_critique:** 16
+- **swarm_artifact:** 277
+- **dream:** 135
+- **anti_pattern:** 54
+- **strategy:** 48
+- **last_swarm_goal:** 18
+- **last_swarm_critique:** 17
 - **creator_teaching:** 7
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:mehr_simulationen_durchführen`
+*23.08. 06:50 UTC · Quelle: evolution*
+
+Adopt a chunk‑based Dask bag with fault‑tolerant persistence and reproducible random streams - Provides fault‑tolerant, scalable chunk‑based processing with reproducible random streams and proper logging, eliminating churn and ensuring simulations can continue
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Mehr Simulationen durchf:1`
+*23.08. 06:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Leverage asyncio with a semaphore‑limited task queue for I/O‑bound simulation la - Rewrite the simulation driver as an async coroutine that submits simulation tasks to a ThreadPoolExecutor (for CPU‑bound work) or directly run
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Mehr Simulationen durchf:0`
+*23.08. 06:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Configure structured logging and use reproducible seeding with ProcessPoolExecut - Set up logging.basicConfig with a format that includes timestamps and level, capture logger in each worker via initializer, and pass a determi
+
+### `last_swarm_critique`
+*23.08. 06:49 UTC · Quelle: critic*
+
+score=6; issues=Logging is imported but not configured, so error messages may not be visible.; Unused import `sys` in the multiprocessing snippet.; Using `maxtasksperchild=5` may cause excessive process churn; better to omit or set a higher value.; CSV logging
+
+### `swarm_artifact:Automatisierte Wiederholung basierend auf Zielanzahl (Zielan`
+*23.08. 06:49 UTC · Quelle: builder*
+
+# Automatisierte Wiederholung basierend auf Zielanzahl  Dieses Skript führt eine Simulationsfunktion wiederholt aus, bis eine vorgegebene Zielanzahl erreicht ist. Nach jedem Durchlauf wird ein Zähler 
+
+### `swarm_artifact:Ergebnis-Logging in CSV-Datei (Komma-getrennte Werte) implem`
+*23.08. 06:49 UTC · Quelle: builder*
+
+# Ergebnis-Logging in CSV-Datei (Komma-getrennte Werte) mit multiprocessing  Dieses Skript führt mehrere Simulationen parallel aus, sammelt alle Ergebnisse im Hauptprozess und schreibt sie anschließen
+
+### `swarm_artifact:Parallele Ausführung mit multiprocessing (Multiprozessierung`
+*23.08. 06:49 UTC · Quelle: builder*
+
+# Parallele Ausführung mit multiprocessing (Multiprozessierung)  Dieses Skript führt mehrere Simulationen gleichzeitig aus, indem es einen Prozess‑Pool nutzt.   Jeder Worker ruft die Simulationsfunkti
+
+### `swarm_artifact:Simulationsskript erweitern um Parameter Sweep (Parameterdur`
+*23.08. 06:48 UTC · Quelle: builder*
+
+```markdown # Erweiterte Simulationsskript mit Parameter Sweep  Dieses Skript führt einen Parameterdurchlauf (Parameter Sweep) über eine Liste von Eingabewerten aus.   Für jeden Parameter wird die Sim
+
+### `last_swarm_goal`
+*23.08. 06:47 UTC · Quelle: system*
+
+Mehr Simulationen durchführen
+
+### `dream:202608230647:5`
+*23.08. 06:47 UTC · Quelle: dream*
+
+Many skill proposals remain unimplemented because there is no mechanism to track adoption or measure impact.
+
+### `dream:202608230647:4`
+*23.08. 06:47 UTC · Quelle: dream*
+
+MemoryStore interface mismatches can silently corrupt data, as no contract tests are run at load time.
+
+### `dream:202608230647:3`
+*23.08. 06:47 UTC · Quelle: dream*
+
+Simulations proceeded with five identified risks because no pre‑flight validation blocked unsafe inputs.
+
+### `dream:202608230647:2`
+*23.08. 06:47 UTC · Quelle: dream*
+
+Latency varied from ~10 s to over 200 s, indicating unpredictable performance that violates service‑level expectations.
+
+### `dream:202608230647:1`
+*23.08. 06:47 UTC · Quelle: dream*
+
+Upstream model overload caused a hard failure, showing that reliance on a single model without fallback leads to downtime.
 
 ### `strategy:fähigkeitsvorschläge_häufiger_testen`
 *23.08. 06:31 UTC · Quelle: evolution*
