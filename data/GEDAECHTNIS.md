@@ -1,23 +1,101 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2178 Fakten** · Stand 2026-08-24 22:26 UTC · aktualisiert bei jedem Herzschlag
+**2150 Fakten** · Stand 2026-08-24 23:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 982
-- **swarm_artifact:** 647
-- **anti_pattern:** 178
-- **last_swarm_goal:** 151
-- **strategy:** 110
-- **last_swarm_critique:** 91
+- **dream:** 987
+- **swarm_artifact:** 613
+- **anti_pattern:** 180
+- **last_swarm_goal:** 152
+- **strategy:** 111
+- **last_swarm_critique:** 92
 - **creator_teaching:** 8
 - **frontier:** 3
-- **artifact:** 3
-- **best_swarm_score:** 1
 - **semantic_organ:** 1
 - **tool:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*24.08. 22:47 UTC · Quelle: evolution*
+
+Dixon-Coles Poisson goal model with time-decayed maximum likelihood estimation - Variant 0 directly addresses all three critic failures: it replaces the heuristic draw function with the Dixon-Coles Poisson model (explicitly cited by the critic as the principle
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
+*24.08. 22:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Bayesian hierarchical ordered probit on Elo difference with dynamic cutpoints - Treat match outcome as an ordered categorical variable (away win < draw < home win). Let the latent variable be the Elo difference plus home adva
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :1`
+*24.08. 22:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Gradient boosting on engineered match features with isotonic calibration - Construct a feature set per match: rolling 5/10-game form (points, goals for/against, shots on target), head-to-head history, rest days, league positi
+
+### `swarm_artifact:Gradient boosting on engineered features (Elo + form + sched`
+*24.08. 22:47 UTC · Quelle: builder*
+
+[score 4] # Artefakt: Gradient Boosting auf technischen Merkmalen (Elo + Form + Spielplan + Erholung)  Das Merkmal-Matrix wird kausal (spielweise, chronologisch) aufgebaut: Elo mit Tordifferenz-Ge
+
+### `swarm_artifact:Poisson/Dixon-Coles match probability model from Elo ratings`
+*24.08. 22:47 UTC · Quelle: builder*
+
+[score 4] ```python # Poisson/Dixon-Coles match probability model from calibrated Elo ratings # Converts Elo differences to expected goals, applies Dixon-Coles tau correction, # outputs proper 3-w
+
+### `swarm_artifact:Competition-specific Elo with goal-difference weighting and `
+*24.08. 22:47 UTC · Quelle: builder*
+
+[score 4] # Artefakt: Competition-Elo mit Tordifferenz-Gewichtung, Saison-Regression und Auf-/Absteiger-Handling  Das Modell schätzt K, Heimvorteil und Unentschieden-Basis pro Wettbewerb aus den T
+
+### `last_swarm_critique`
+*24.08. 22:47 UTC · Quelle: critic*
+
+score=4; issues=Artifact 1: Heuristic draw probability (pD = DRAW * exp(-(d/DRAW_SKALA)^2)) is uncalibrated and uses fixed DRAW_SKALA=260; no validation of this functional form.; Artifact 1: Prediction splits remaining mass proportionally to Elo-implied home/a
+
+### `swarm_artifact:Gradient boosting on engineered features (Elo + form + sched`
+*24.08. 22:45 UTC · Quelle: builder*
+
+# Artefakt: Gradient Boosting auf technischen Merkmalen (Elo + Form + Spielplan + Erholung)  Das Merkmal-Matrix wird kausal (spielweise, chronologisch) aufgebaut: Elo mit Tordifferenz-Gewichtung und S
+
+### `swarm_artifact:Poisson/Dixon-Coles match probability model from Elo ratings`
+*24.08. 22:42 UTC · Quelle: builder*
+
+```python # Poisson/Dixon-Coles match probability model from calibrated Elo ratings # Converts Elo differences to expected goals, applies Dixon-Coles tau correction, # outputs proper 3-way probabiliti
+
+### `swarm_artifact:Competition-specific Elo with goal-difference weighting and `
+*24.08. 22:41 UTC · Quelle: builder*
+
+# Artefakt: Competition-Elo mit Tordifferenz-Gewichtung, Saison-Regression und Auf-/Absteiger-Handling  Das Modell schätzt K, Heimvorteil und Unentschieden-Basis pro Wettbewerb aus den Trainingsdaten,
+
+### `last_swarm_goal`
+*24.08. 22:39 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260824223903:5:b6c37f`
+*24.08. 22:39 UTC · Quelle: dream*
+
+Offline calibration of predictions is essential to maintain reliability when model outputs exhibit high variance.
+
+### `dream:20260824223903:4:5ea832`
+*24.08. 22:39 UTC · Quelle: dream*
+
+Swarm role distribution (planner 1, builder 3, critic 1) with low scores suggests rebalancing agent responsibilities to improve convergence.
+
+### `dream:20260824223903:3:d2316d`
+*24.08. 22:39 UTC · Quelle: dream*
+
+Attribute errors in MemoryStore indicate skill registration must validate object capabilities before invoking methods.
+
+### `dream:20260824223903:2:736575`
+*24.08. 22:39 UTC · Quelle: dream*
+
+Simulation revisions without convergence show that test‑time compute goals lack clear stopping criteria and iterative feedback loops.
+
+### `dream:20260824223903:1:e70003`
+*24.08. 22:39 UTC · Quelle: dream*
+
+Repeated 429 Too Many Requests errors reveal insufficient per‑model rate‑limit handling and the need for circuit‑breaker logic.
 
 ### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
 *24.08. 22:22 UTC · Quelle: evolution*
@@ -1619,21 +1697,6 @@ ABGELEHNT von Evolution (Score [8, 6, 7]): Graph-Based Network Propagation - Mod
 
 score=5; issues=Critic output unparseable.
 
-### `swarm_artifact:Train and validate improved model (Gradient Boosting)`
-*24.08. 07:56 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50", "description": "Find Python files in repository"}} {"tool": "bash", "args": {"command": "ls -la", "description": "List re
-
-### `swarm_artifact:Engineer additional predictive features beyond Elo`
-*24.08. 07:56 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50", "description": "Find Python files in repository"}} {"tool": "bash", "args": {"command": "ls -la", "description": "List re
-
-### `swarm_artifact:Analyze current baseline implementation and data structure`
-*24.08. 07:56 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50", "description": "Find Python files in repository"}} {"tool": "bash", "args": {"command": "ls -la", "description": "List re
-
 ### `last_swarm_goal`
 *24.08. 07:53 UTC · Quelle: system*
 
@@ -1683,21 +1746,6 @@ ABGELEHNT von Evolution (Score 7): Interactive REPL-Driven Development with Chec
 *24.08. 07:41 UTC · Quelle: critic*
 
 score=3; issues=Tool calls only cover the first step of reading the file. Missing tool calls for creating the scaffold and running the script.; Redundant repeated reads of the same file without additional context or analysis.
-
-### `swarm_artifact:Run bewerte.py against the submission and verify it passes`
-*24.08. 07:41 UTC · Quelle: builder*
-
-{   "tool": "read",   "path": "bewerte.py" }
-
-### `swarm_artifact:Create minimal scaffold submission that matches the discover`
-*24.08. 07:41 UTC · Quelle: builder*
-
-{   "tool": "read",   "path": "bewerte.py" }
-
-### `swarm_artifact:Examine bewerte.py to understand the exact I/O contract`
-*24.08. 07:41 UTC · Quelle: builder*
-
-{   "tool": "read",   "path": "bewerte.py" }
 
 ### `last_swarm_goal`
 *24.08. 07:38 UTC · Quelle: system*
@@ -1798,11 +1846,6 @@ OpenRouter returned 429 Too Many Requests across five different models within on
 *24.08. 07:22 UTC · Quelle: critic*
 
 score=3; issues=Regel-0-Verstoß im eigenen Protokoll: EINREICHUNG_01 enthält bereits ein fertiges Skript und ein behauptetes 'Soll-Format (von Task 1 fixiert)', während BEWEISPROTOKOLL Abschnitt 3–5 als LEER markiert ist und alle 10 Checklistenpunkte ohne Zeil
-
-### `swarm_artifact:Bestehens-Loop: laufen -> ein Fehler -> ein Fix -> wiederhol`
-*24.08. 07:19 UTC · Quelle: builder*
-
-{   "action": "run_shell",   "command": "ls -la",   "description": "List files in workspace" }
 
 ### `swarm_artifact:Gerüst übernehmen, GENAU EINE Sache ändern: konstante Basisw`
 *24.08. 07:19 UTC · Quelle: builder*
@@ -2729,16 +2772,6 @@ score=1; issues=No evidence of any command execution results: all exploration st
 
 I'll explore the workspace structure and understand the evaluation criteria first.<tool_call>shell<arg_key>command</arg_key><arg_value>ls -la /workspace/fussball/</arg_value><arg_key>description</arg_
 
-### `swarm_artifact:Create minimal submission file with required functions`
-*24.08. 01:35 UTC · Quelle: builder*
-
-{"action": "run_shell", "command": "ls -la /workspace/fussball/", "description": "List fussball workspace directory structure"}{"action": "run_shell", "command": "ls -la /workspace/fussball/einreichun
-
-### `swarm_artifact:Explore workspace structure and understand bewerte.py requir`
-*24.08. 01:35 UTC · Quelle: builder*
-
-{   "action": "run_shell",   "command": "ls -la /workspace/fussball/",   "description": "List fussball workspace directory structure" } {   "action": "run_shell",   "command": "ls -la /workspace/fussb
-
 ### `last_swarm_goal`
 *24.08. 01:35 UTC · Quelle: system*
 
@@ -2898,26 +2931,6 @@ ABGELEHNT von Evolution (Score 8): Test-Driven Contract-First Development - Defi
 *24.08. 01:08 UTC · Quelle: critic*
 
 score=3; issues=src/hermes/fs.py: Missing ensure_dir function imported by status_writer.py, command_writer.py, and exported in __init__.py; tests/test_status_writer.py: Truncated/incomplete test file (cuts off mid-line); src/hermes/response_reader.py: Truncate
-
-### `swarm_artifact:Implement RESPONSE channel - read Hermes responses from data`
-*24.08. 01:07 UTC · Quelle: builder*
-
-{"action": "create_file", "path": "src/hermes/response_reader.py", "content": "\"\"\"\nRESPONSE channel reader for Hermes bridge.\n\nPolls for Hermes replies in data/hermes/out/ with correlation IDs,\
-
-### `swarm_artifact:Implement COMMAND channel - write commands for Hermes to exe`
-*24.08. 01:07 UTC · Quelle: builder*
-
-{"action": "create_file", "path": "src/hermes/command_writer.py", "content": "\"\"\"\nCOMMAND channel writer for Hermes bridge.\n\nWrites structured commands as unique atomic files for Hermes to pick 
-
-### `swarm_artifact:Implement STATUS channel writer - writes compact state to da`
-*24.08. 01:06 UTC · Quelle: builder*
-
-{"action": "create_file", "path": "src/hermes/status_writer.py", "content": "\"\"\"\nSTATUS channel writer for Hermes bridge.\n\nWrites compact state snapshots at every beat with atomic filesystem ope
-
-### `swarm_artifact:Create directory structure and atomic filesystem utilities f`
-*24.08. 01:05 UTC · Quelle: builder*
-
-{"action": "create_file", "path": "data/hermes/__init__.py", "content": ""}{"action": "create_file", "path": "data/hermes/in/.gitkeep", "content": ""}{"action": "create_file", "path": "data/hermes/out
 
 ### `last_swarm_goal`
 *24.08. 01:01 UTC · Quelle: system*
@@ -4713,26 +4726,6 @@ ABGELEHNT von Evolution (Score [6, 9, 8]): Robust gh CLI wrapper with pagination
 *23.08. 21:05 UTC · Quelle: critic*
 
 score=4; issues=fetch_job_logs function is incomplete - ends with 'return log' but 'log' is undefined (critical bug); No main entry point - script cannot be executed directly to perform audit; No pagination handling for GitHub API calls (jobs, runs) - will mis
-
-### `swarm_artifact:Validate all required status checks pass on protected branch`
-*23.08. 21:05 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "ls -la .github/workflows/ 2>/dev/null || echo 'No workflows directory'", "description": "List workflow files"}} {"tool": "bash", "args": {"command": "cat .github/
-
-### `swarm_artifact:Update repository badges to reflect current status`
-*23.08. 21:05 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "ls -la", "description": "List repository root"}} {"tool": "bash", "args": {"command": "find . -name 'README*' -o -name 'readme*' | head -10", "description": "Find
-
-### `swarm_artifact:Repair GitHub Pages deployment workflow`
-*23.08. 21:04 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -name '*.yml' -o -name '*.yaml' | grep -E '(workflow|github)' | head -20", "description": "Find GitHub workflow files"}} {"tool": "bash", "args": {"command
-
-### `swarm_artifact:Fix failing CI workflow (lint/type-check/test)`
-*23.08. 21:03 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -name '*.yml' -o -name '*.yaml' | grep -E '(workflow|github)' | head -20", "description": "Find GitHub workflow files"}} {"tool": "bash", "args": {"command
 
 ### `swarm_artifact:Audit GitHub Actions workflows for failures`
 *23.08. 21:03 UTC · Quelle: builder*
@@ -6646,21 +6639,6 @@ ABGELEHNT von Evolution (Score 7): Proposal-centric execution engine with sandbo
 
 score=3; issues=Skill test harness is incomplete - cuts off mid-exception handler (PermissionError), missing general exception handling, method completion, and result retrieval methods; No proposals were actually loaded, parsed, or tested - only directory expl
 
-### `swarm_artifact:Create automated skill test harness`
-*23.08. 13:51 UTC · Quelle: builder*
-
-{   "action": "shell",   "command": "mkdir -p src/forge/tools",   "description": "Create directory for test harness" } {   "action": "write",   "path": "src/forge/tools/skill_test_harness.py",   "cont
-
-### `swarm_artifact:Validate proposals for technical feasibility`
-*23.08. 13:50 UTC · Quelle: builder*
-
-{   "action": "shell",   "command": "find . -name '*proposal*' -o -name '*skill*' -o -name '*vorschlag*' 2>/dev/null | head -30",   "description": "Find proposal/skill files" }
-
-### `swarm_artifact:Load and parse skill proposals from source file`
-*23.08. 13:50 UTC · Quelle: builder*
-
-{   "action": "shell",   "command": "ls -la data/ 2>/dev/null || echo 'data directory not found'",   "description": "Check data directory for proposals file" }
-
 ### `last_swarm_goal`
 *23.08. 13:48 UTC · Quelle: system*
 
@@ -7048,20 +7026,10 @@ ABGELEHNT von Evolution (Score 8): Large Language Model Prompt‑Chaining with V
 
 score=3; issues=Two of three artifacts are only glob search commands with no implementation code; DreamTaskParser implementation is incomplete - all _extract_* methods declared but not implemented; _clean_text method is cut off mid-implementation; No error han
 
-### `swarm_artifact:Implement Real Swarm Success Fitness Function`
-*23.08. 12:30 UTC · Quelle: builder*
-
-{"tool": "glob", "pattern": "**/*fitness*.py", "root": "."} {"tool": "glob", "pattern": "**/*evolution*.py", "root": "."} {"tool": "glob", "pattern": "**/swarm*.py", "root": "."}
-
 ### `swarm_artifact:Build Dream-to-Task Parser with Structured Output`
 *23.08. 12:29 UTC · Quelle: builder*
 
 # Dream-to-Task Parser with Structured Output  ```python #!/usr/bin/env python3 """ Dream-to-Task Parser – wandelt natürliche Sprachbeschreibungen von Träumen in strukturierte, ausführbare Task-Objekt
-
-### `swarm_artifact:Fix MemoryStore.add_fact Critical Infrastructure Gap`
-*23.08. 12:28 UTC · Quelle: builder*
-
-{   "tool": "glob",   "pattern": "**/memory*.py",   "root": "." } {   "tool": "glob",   "pattern": "**/*store*.py",   "root": "." }
 
 ### `last_swarm_goal`
 *23.08. 12:27 UTC · Quelle: system*
@@ -7458,31 +7426,6 @@ ABGELEHNT von Evolution (Score 8): Systematic Skill Validation and Registry Prom
 
 score=2; issues=Only discovery commands executed; no skill files found or results captured; No validation of skill contracts/interfaces demonstrated; No benchmarking against baseline performed or shown; No skills promoted to active registry; No feedback loop m
 
-### `swarm_artifact:Create feedback loop for continuous skill evaluation`
-*23.08. 10:58 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "ls -la"}} {"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" -o -name \"*.json\" -o -name \"*.yaml\" -o -name \"*.yml\" 2>/dev/null | head -200"}} {"tool
-
-### `swarm_artifact:Promote top-performing skills to active registry`
-*23.08. 10:58 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "find . -type f \\( -name \"*.py\" -o -name \"*.json\" -o -name \"*.yaml\" -o -name \"*.yml\" \\) 2>/dev/null | head -200"}} {"tool": "bash", "args": {"cmd": "ls -la"}
-
-### `swarm_artifact:Benchmark skills against current baseline`
-*23.08. 10:58 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" -o -name \"*.json\" -o -name \"*.yaml\" -o -name \"*.yml\" 2>/dev/null | head -200"}} {"tool": "bash", "args": {"cmd": "ls -la"}} {"tool
-
-### `swarm_artifact:Validate skill contracts and interfaces`
-*23.08. 10:57 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" 2>/dev/null | head -50"}} {"tool": "bash", "args": {"cmd": "find . -type f -path \"*/skills/*\" 2>/dev/null"}} {"tool": "bash", "args": 
-
-### `swarm_artifact:Discover and load all proposed skills from storage`
-*23.08. 10:57 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" -o -name \"*.json\" -o -name \"*.yaml\" -o -name \"*.yml\" 2>/dev/null | head -100"}} {"tool": "bash", "args": {"cmd": "ls -la"}} {"tool
-
 ### `last_swarm_goal`
 *23.08. 10:56 UTC · Quelle: system*
 
@@ -7842,31 +7785,6 @@ ABGELEHNT von Evolution (Score 9): Event-Driven Skill Mesh - Model skills as sta
 *23.08. 08:33 UTC · Quelle: critic*
 
 score=1; issues=All five sections contain identical copy-pasted bash reconnaissance commands (ls, find) with zero actual skill implementation; No skill inventory, capability mapping, execution harness, chaining pipeline, analytics dashboard, or discovery loop 
-
-### `swarm_artifact:Autonomous Skill Discovery & Execution Loop`
-*23.08. 08:32 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "ls -la /home/user", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "find /home/user -type f -name \"*.py\" | head -30", "cwd": "/home/user"}} {"tool": "bash",
-
-### `swarm_artifact:Skill Usage Analytics Dashboard`
-*23.08. 08:32 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" | head -50", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "ls -la", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "fi
-
-### `swarm_artifact:Skill Chaining Pipeline`
-*23.08. 08:32 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" | head -50", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "ls -la", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "fi
-
-### `swarm_artifact:Automated Skill Execution Harness`
-*23.08. 08:32 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" | head -50", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "ls -la", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "fi
-
-### `swarm_artifact:Skill-Inventory & Capability Mapping`
-*23.08. 08:32 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"cmd": "find . -type f -name \"*.py\" | head -50", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "ls -la", "cwd": "/home/user"}} {"tool": "bash", "args": {"cmd": "fi
 
 ### `last_swarm_goal`
 *23.08. 08:30 UTC · Quelle: system*
@@ -9333,11 +9251,6 @@ Identical skill proposals recur across 3+ dream cycles but never reach productio
 
 Model latency varies 3x (4-13s) without failover, causing unpredictable task duration.
 
-### `best_swarm_score`
-*23.08. 00:14 UTC · Quelle: critic*
-
-3
-
 ### `semantic_organ`
 *23.08. 00:14 UTC · Quelle: semantic*
 
@@ -10350,31 +10263,6 @@ Active Real‑World Data Curation via Simulation‑Guided Exploration - Variant 
 
 Test-Driven Implementation with Mandatory Verification Gates - Variant 0 (Test-Driven Implementation with Mandatory Verification Gates) scores highest across all dimensions. It directly addresses the critic's core complaint — zero implementati
 
-### `swarm_artifact:Automate revision feedback loop from execution failures`
-*22.08. 05:15 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50"}} {"tool": "bash", "args": {"command": "ls -la"}} {"tool": "bash", "args": {"command": "find . -type f \\( -name '*.yml' -
-
-### `swarm_artifact:Deploy cryptographic provenance tracking for skill proposals`
-*22.08. 05:15 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50"}} {"tool": "bash", "args": {"command": "ls -la"}} {"tool": "bash", "args": {"command": "find . -type f \\( -name '*.yml' -
-
-### `swarm_artifact:Enforce CI gate for simulation-emitted patches`
-*22.08. 05:15 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | grep -E '(simulation|engine|ci|test)' | head -30"}} {"tool": "bash", "args": {"command": "ls -la"}} {"tool": "bash", "args": {"comma
-
-### `swarm_artifact:Build dream-memory embedding and clustering pipeline`
-*22.08. 05:15 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -30"}} {"tool": "bash", "args": {"command": "ls -la"}} {"tool": "bash", "args": {"command": "find . -type f -name '*.py' | xarg
-
-### `swarm_artifact:Implement missing `add_fact` method in simulation layer`
-*22.08. 05:15 UTC · Quelle: builder*
-
-{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | grep -E '(simulation|engine)' | head -20"}} {"tool": "bash", "args": {"command": "grep -r 'add_fact' --include='*.py' . | head -20"}
-
 ### `swarm_artifact:Create Execution Verification Harness`
 *22.08. 04:41 UTC · Quelle: builder*
 
@@ -10875,40 +10763,10 @@ Kagi added a setting for removing paywalled links from search results (https://k
 
 # Marktanalyse: KI-Produktlandschaft — Kategorien, Wettbewerber, Schmerzpunkte  **Artifact:** `market-analysis-ai-landscape.md` · **Versuch:** 1/3 · **Typ:** build **Bezug zum Gesamtziel:** Grundlage 
 
-### `swarm_artifact:Prototype: minimal artifact for Baue einen Marktluecken-Repo`
-*21.08. 15:40 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `swarm_artifact:Differentiate: what is missing for Baue einen Marktluecken-R`
-*21.08. 15:40 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `swarm_artifact:Research: state of the art for Baue einen Marktluecken-Repor`
-*21.08. 15:40 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
 ### `last_critique`
 *21.08. 15:34 UTC · Quelle: critic*
 
 score=9; issues=
-
-### `artifact:Prototype: minimal artifact for Finde die Marktluecke: ein K`
-*21.08. 15:34 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `artifact:Differentiate: what is missing for Finde die Marktluecke: ei`
-*21.08. 15:34 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `artifact:Research: state of the art for Finde die Marktluecke: ein KI`
-*21.08. 15:34 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
 
 ### `last_goal`
 *21.08. 15:34 UTC · Quelle: system*

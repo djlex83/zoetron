@@ -79,10 +79,10 @@
   "_geparkt": false,
   "_beweis": "fussball_schlaegt_basislinie",
   "_zaehler_ab": 1787595291.9821494,
-  "_beweis_wie": "bester vorsprung -0.45 pp - unter der rauschgrenze von 0.6 pp",
-  "_freiversuche": 3,
-  "_erlassrunden": 1,
-  "_bester_messwert": -0.45
+  "_beweis_wie": "bester vorsprung -0.31 pp - unter der rauschgrenze von 0.6 pp",
+  "_freiversuche": 4,
+  "_erlassrunden": 2,
+  "_bester_messwert": -0.31
  },
  {
   "title": "Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust",

@@ -29,3 +29,6 @@ data/artefakte/
 docs/brain.min.json
 docs/brain.text.json
 docs/memory.min.json
+
+# Gebahnte Verbindungen - Laufzeitzustand, kein Erschaffer-Wissen
+data/bahnen.sqlite3*
