@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2150 Fakten** · Stand 2026-08-24 21:08 UTC · aktualisiert bei jedem Herzschlag
+**2162 Fakten** · Stand 2026-08-24 21:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 972
-- **swarm_artifact:** 639
-- **anti_pattern:** 174
-- **last_swarm_goal:** 149
-- **strategy:** 108
-- **last_swarm_critique:** 89
+- **dream:** 977
+- **swarm_artifact:** 641
+- **anti_pattern:** 176
+- **last_swarm_goal:** 150
+- **strategy:** 109
+- **last_swarm_critique:** 90
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:cortex_upgrade_reflex__neue_modelle_automatisch_ad`
+*24.08. 21:43 UTC · Quelle: evolution*
+
+Declarative configuration-driven approach: define the entire adoption workflow as a YAML/DAG spec ex - The critic's dominant failure was structural incompleteness (truncated code, missing benchmark/promotion/report/scheduler stages). Variant 1 attacks this roo
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:2`
+*24.08. 21:43 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 9]): Challenger/champion shadow-deployment pattern borrowed from ML ops: never promot - Implement a champion/challenger gateway: all tool-calling requests route to the current champion, but a configurable percentage (e.g.,
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:0`
+*24.08. 21:43 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 9, 8]): Event-driven pipeline architecture: replace the monolithic script with a complet - Build the system as an event-driven pipeline using asyncio tasks orchestrated by a central controller. Stage 1 'discover': poll OpenRo
+
+### `swarm_artifact:Draft deliverable for: Cortex-Upgrade-Reflex: neue Modelle a`
+*24.08. 21:42 UTC · Quelle: builder*
+
+[score 3] ```python """ Cortex-Upgrade-Reflex: Automatische Modell-Adoption Täglicher Scan nach neuen freien tool-fähigen OpenRouter-Modellen, Mini-Benchmark (8 Tasks), Promotion bei Verbesserung.
+
+### `last_swarm_critique`
+*24.08. 21:42 UTC · Quelle: critic*
+
+score=3; issues=Deliverable is truncated: run_model_inference ends mid-statement ('async with session.post(...) as resp' without body); benchmark loop, scoring aggregation, promotion logic against current best, weekly report generation, and scheduler entrypoin
+
+### `swarm_artifact:Draft deliverable for: Cortex-Upgrade-Reflex: neue Modelle a`
+*24.08. 21:41 UTC · Quelle: builder*
+
+```python """ Cortex-Upgrade-Reflex: Automatische Modell-Adoption Täglicher Scan nach neuen freien tool-fähigen OpenRouter-Modellen, Mini-Benchmark (8 Tasks), Promotion bei Verbesserung. """  import a
+
+### `last_swarm_goal`
+*24.08. 21:38 UTC · Quelle: system*
+
+Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
+
+### `dream:202608242138:5`
+*24.08. 21:38 UTC · Quelle: dream*
+
+Simulation revision loops (5 risks/5 revisions) produce no measurable improvement in final held-out measurement (49.75% vs 50.2%).
+
+### `dream:202608242138:4`
+*24.08. 21:38 UTC · Quelle: dream*
+
+MemoryStore lacks 'add_fact' method, breaking fact persistence during hand-execution actions.
+
+### `dream:202608242138:3`
+*24.08. 21:38 UTC · Quelle: dream*
+
+Identical models show 30x latency variance (4s vs 130s), indicating queueing/cold-start effects dominate over model capability.
+
+### `dream:202608242138:2`
+*24.08. 21:38 UTC · Quelle: dream*
+
+Iterative evolution improves football prediction scores (6→8) but fails to converge on beating the 50.2% baseline without odds.
+
+### `dream:202608242138:1`
+*24.08. 21:38 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systemic 429 rate-limiting across all providers, making them unreliable for sustained workloads.
 
 ### `dream:202608242108:5`
 *24.08. 21:08 UTC · Quelle: dream*
