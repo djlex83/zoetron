@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 16:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 16:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,6 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
@@ -36,11 +35,17 @@
 - Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 2×)*
 - Träume für neue Fähigkeiten nutzen *(wieder aufgegriffen: 2×)*
 - Modellfehler vermeiden *(wieder aufgegriffen: 2×)*
+- Fehlerquellen finden und beheben *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässig abschließen *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässiger zum Abschluss bringen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three drive goals were spawned from failure/gap signals while an existing goal was parked after 3 non-convergent attempts, indicating goal creation ou
+- Two consecutive 429 rate-limit failures on openrouter.ai show there is no backoff or model-fallback strategy beyond ad-hoc retries, and free-tier mode
+- A hard crash occurred in hands-execute because MemoryStore.add_fact does not exist, meaning write-paths to memory are called without any interface con
+- Evolution found a winning variant scoring 8/10, but the pipeline discarded it and re-ran the swarm anyway, so the single largest quality gain in the r
+- The swarm failed to converge (score 4, 2 cycles) because the critic's core complaint — tautological self-referential output ('Selbst-Schleife') — was 
 - Calibration was exact this cycle (predicted 4 vs actual 4), showing the predictor is reliable at low scores and can be trusted for early-abort decisio
 - Simulation gating worked as intended: an initial 'revise' verdict with 5 risks/5 revisions preceded failure-level output, while the post-evolution 'go
 - The evolution loop recovered a failing task (4/10) to a winner variant scoring 8/10 by generating 3 variants and selecting via critic scores, validati
@@ -51,11 +56,6 @@
 - Goals that fail convergence get retried unchanged until the attempt-counter parks them at N=3, wasting cycles on deterministic failures instead of dia
 - Hand actions fail in ~0.03s with exit 1 and null error messages, indicating crashes happen before error capture, so exception handling must wrap the h
 - The swarm goal 'Fakten-Ausbeute verdreifachen' failed twice because MemoryStore lacks an add_fact method, meaning the fact-persistence API is the actu
-- High token cost with low outcome (e.g., 132s/261-token calls after a failed run) suggests repeated re-simulation from scratch because no swarm checkpo
-- Five skill proposals were generated but none were tested or adopted, revealing a proposal-to-adoption gap where skills accumulate without any executio
-- Pruning retired 0 facts and 0 events while identical drive goals regenerate across sleep cycles, indicating goal satisfaction is never linked to evide
-- The hard failure 'MemoryStore has no attribute add_fact' in hands-execute shows the fact-persistence API is broken or renamed, so every pipeline stage
-- The swarm converged=false at score 2 despite an evolution run producing a 9/10 winner (variant index 1), meaning the winning variant was never actuall
 
 ---
 

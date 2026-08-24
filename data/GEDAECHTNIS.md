@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2044 Fakten** · Stand 2026-08-24 16:00 UTC · aktualisiert bei jedem Herzschlag
+**2056 Fakten** · Stand 2026-08-24 16:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 927
-- **swarm_artifact:** 613
-- **anti_pattern:** 160
-- **last_swarm_goal:** 142
-- **strategy:** 101
-- **last_swarm_critique:** 82
+- **dream:** 932
+- **swarm_artifact:** 615
+- **anti_pattern:** 162
+- **last_swarm_goal:** 143
+- **strategy:** 102
+- **last_swarm_critique:** 83
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:hebbisches_lernen_im_graph__synapsen_qualität_stat`
+*24.08. 16:35 UTC · Quelle: evolution*
+
+Structural Plasticity with Metabolic Resource Competition - Edges as living structures - Variant 1 (Structural Plasticity with Metabolic Resource Competition) directly solves the core flaw: decay becomes proportional per-edge (size -= μ*size), unused edges shr
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Hebbisches Lernen im Gra:2`
+*24.08. 16:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Predictive Coding / Free Energy Minimization - Edges encode prediction accuracy - Each directed edge represents a prediction: pre_node predicts post_node's activity. Maintain running estimate of prediction error variance per 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Hebbisches Lernen im Gra:0`
+*24.08. 16:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): STDP (Spike-Timing-Dependent Plasticity) - Biologically realistic temporal causa - Implement precise spike-timing rules: when pre-synaptic node fires before post-synaptic (causal), potentiate (LTP); when post fires before pre
+
+### `swarm_artifact:Draft deliverable for: Hebbisches Lernen im Graph: Synapsen-`
+*24.08. 16:33 UTC · Quelle: builder*
+
+[score 4] ```python # -*- coding: utf-8 -*- """ Hebbian Learning on Knowledge Graph: Synapse Quality over Node Count. Edges have weights; used connections strengthen, unused decay daily. """ from 
+
+### `last_swarm_critique`
+*24.08. 16:33 UTC · Quelle: critic*
+
+score=4; issues=Deliverable is truncated mid-function ('def demo()' body incomplete) — the artifact does not compile/run as submitted.; Core Hebbian claim is not implemented correctly: Edge.last_used is recorded on strengthen() but apply_decay() decays ALL edg
+
+### `swarm_artifact:Draft deliverable for: Hebbisches Lernen im Graph: Synapsen-`
+*24.08. 16:33 UTC · Quelle: builder*
+
+```python # -*- coding: utf-8 -*- """ Hebbian Learning on Knowledge Graph: Synapse Quality over Node Count. Edges have weights; used connections strengthen, unused decay daily. """ from __future__ imp
+
+### `last_swarm_goal`
+*24.08. 16:30 UTC · Quelle: system*
+
+Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl
+
+### `dream:202608241629:5`
+*24.08. 16:29 UTC · Quelle: dream*
+
+Three drive goals were spawned from failure/gap signals while an existing goal was parked after 3 non-convergent attempts, indicating goal creation outpaces goal resolution and duplicates accumulate without retirement criteria.
+
+### `dream:202608241629:4`
+*24.08. 16:29 UTC · Quelle: dream*
+
+Two consecutive 429 rate-limit failures on openrouter.ai show there is no backoff or model-fallback strategy beyond ad-hoc retries, and free-tier models are unreliable for critical-path calls.
+
+### `dream:202608241629:3`
+*24.08. 16:29 UTC · Quelle: dream*
+
+A hard crash occurred in hands-execute because MemoryStore.add_fact does not exist, meaning write-paths to memory are called without any interface contract or test, and this failure silently broke issue syncing downstream.
+
+### `dream:202608241629:2`
+*24.08. 16:29 UTC · Quelle: dream*
+
+Evolution found a winning variant scoring 8/10, but the pipeline discarded it and re-ran the swarm anyway, so the single largest quality gain in the run was thrown away by missing winner-to-execution wiring.
+
+### `dream:202608241629:1`
+*24.08. 16:29 UTC · Quelle: dream*
+
+The swarm failed to converge (score 4, 2 cycles) because the critic's core complaint — tautological self-referential output ('Selbst-Schleife') — was never translated into a measurable acceptance criterion before generation started.
 
 ### `dream:202608241559:5`
 *24.08. 15:59 UTC · Quelle: dream*

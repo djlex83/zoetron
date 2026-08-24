@@ -104,7 +104,7 @@
   "why": "Intelligenz liegt in der Qualität der Verbindungen, nicht in der Anzahl der Knoten. Baue hebbian.py: jede Kante im Wissensgraph bekommt ein Gewicht. Wird eine Verbindung beim Recall genutzt, wird sie stärker (Hebb-Regel = was zusammen feuert, verdrahtet sich), ungenutzte Kanten verlieren pro Tag Gewicht und fallen unter einer Schwelle weg. Fertig wenn: Kantengewichte im Graph-Export sichtbar sind und ein Report die 10 stärksten Synapsen mit Nutzungszähler listet.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 1
+  "_versuche": 2
  },
  {
   "title": "Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)",
