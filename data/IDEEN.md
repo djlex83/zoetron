@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 10:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 10:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,7 +9,6 @@
 - Instrument prune_run with candidate_generated vs candidate_pruned metrics; auto-tune aggressiveness when prune *(hatte die Idee 5×)*
 - Add mandatory invocation smoke test in act_done: execute each new tool once with synthetic input and verify no *(hatte die Idee 4×)*
 - Build skill_proposal_filter that scores proposals by novelty, feasibility, and alignment with active drive goa *(hatte die Idee 4×)*
-- Make simulation revision application atomic: apply all flagged revisions, then re‑simulate and abort if any re *(hatte die Idee 3×)*
 - Add automated contract tests for the MemoryStore interface (add_fact, get_facts, etc.) to run on every CI buil *(hatte die Idee 3×)*
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
@@ -17,6 +16,7 @@
 - Enforce a minimum sample size (e.g., N=10) of recent (predicted, actual) pairs before allowing score predictor *(hatte die Idee 2×)*
 - Require a minimum of 3 swarm cycles or a convergence gate (score≥8) before accepting evolution winners; otherw *(hatte die Idee 2×)*
 - Implement exponential‑backoff retry with model failover for latency >30 s or 5xx errors, logging each failover *(hatte die Idee 2×)*
+- Make simulation revision application atomic: apply all flagged revisions, then re‑simulate and abort if any re *(hatte die Idee 2×)*
 - Deploy an error‑pattern logger that records each model failure with context (latency, input snippet) and trigg *(hatte die Idee 2×)*
 - Add a latency SLA guard to model_ok events: if p95 latency > 30s, route to fallback model and flag infrastruct *(hatte die Idee 2×)*
 - Make simulation revision application transactional: apply all revisions as one batch, re-simulate, and roll ba *(hatte die Idee 2×)*
