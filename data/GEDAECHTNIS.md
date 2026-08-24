@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1691 Fakten** · Stand 2026-08-24 03:14 UTC · aktualisiert bei jedem Herzschlag
+**1700 Fakten** · Stand 2026-08-24 03:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 742
-- **swarm_artifact:** 527
+- **dream:** 747
+- **swarm_artifact:** 530
 - **anti_pattern:** 138
-- **last_swarm_goal:** 107
+- **last_swarm_goal:** 108
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Baseline-Modell v0 bauen: korrekt geformte Wahrscheinlichkei`
+*24.08. 03:30 UTC · Quelle: builder*
+
+# ARTEFAKT A-003 · BASELINE-MODELL V0: KORREKT GEBILDETE WAHRSCHEINLICHKEITEN  ``` task_type  : build             attempt : 1/3 goal       : Fußball – erste eigene Einreichung, die bewerte.py besteht 
+
+### `swarm_artifact:Datengerüst kartieren: Fußball-Daten und Beispiel-Einreichun`
+*24.08. 03:27 UTC · Quelle: builder*
+
+# ARTEFAKT A-002 · DATENGERÜST KARTIEREN: Fußball-Daten & Beispiel-Einreichungen scannen  ``` task_type  : build            attempt : 1/3 goal       : Fußball – erste eigene Einreichung, die bewerte.p
+
+### `swarm_artifact:Evaluator-Kontrakt extrahieren: bewerte.py lokalisieren und `
+*24.08. 03:24 UTC · Quelle: builder*
+
+# ARTEFAKT A-001 · EVALUATOR-KONTRAKT: bewerte.py lokalisieren & Pflichtformat lesen  ``` task_type : build          attempt : 1/3 goal      : Fußball – erste eigene Einreichung, die bewerte.py besteh
+
+### `last_swarm_goal`
+*24.08. 03:16 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240315:5`
+*24.08. 03:15 UTC · Quelle: dream*
+
+The system's own drive goals name the meta-failure: recurring unexplained model errors, a growing pile of unfinished skill proposals, and too much mental rehearsal where one real submission attempt against bewerte.py would yield more durable signal.
+
+### `dream:202608240315:4`
+*24.08. 03:15 UTC · Quelle: dream*
+
+Both prune runs removed 0 facts and 0 events, meaning the pruning criteria never fire and memory hygiene is effectively disabled.
+
+### `dream:202608240315:3`
+*24.08. 03:15 UTC · Quelle: dream*
+
+Two consecutive dream runs independently re-proposed near-identical skills (per-error-class backoff registry, token-budget caps, evaluator-first/minimal-artifact building), proving proposals are not tracked to completion and the backlog only accumulates.
+
+### `dream:202608240315:2`
+*24.08. 03:15 UTC · Quelle: dream*
+
+Simulations currently change nothing: the Fußball run returned verdict 'revise' with 5 risks and 5 revisions but simulation_applied recorded 0 revisions, so simulation compute is being spent without an execution path.
+
+### `dream:202608240315:1`
+*24.08. 03:15 UTC · Quelle: dream*
+
+Output-token runaways (>8500 tokens) directly cause the worst latency stalls (~220-300s on ox-alpha calls), so uncapped generation on planning/dream calls is the single largest source of tail latency.
 
 ### `swarm_artifact:Lokale bewerte-Replik: Validierung vor Einreichung`
 *24.08. 03:11 UTC · Quelle: builder*

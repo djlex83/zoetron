@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 03:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 03:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,10 +26,10 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system's own drive goals name the meta-failure: recurring unexplained model errors, a growing pile of unfinished skill proposals, and too much men
+- Both prune runs removed 0 facts and 0 events, meaning the pruning criteria never fire and memory hygiene is effectively disabled.
+- Two consecutive dream runs independently re-proposed near-identical skills (per-error-class backoff registry, token-budget caps, evaluator-first/minim
+- Simulations currently change nothing: the Fußball run returned verdict 'revise' with 5 risks and 5 revisions but simulation_applied recorded 0 revisio
+- Output-token runaways (>8500 tokens) directly cause the worst latency stalls (~220-300s on ox-alpha calls), so uncapped generation on planning/dream c
 - Under stress=1.0/conserve metabolism (max_tasks 3, max_iterations 1), calls still ran at up to 294s latency and ~11.7k output tokens, meaning workload
 - Five skill proposals accumulated across dream cycles with none converted into tasks, so the pipeline generates insights faster than it executes them.
 - A simulation verdict of 'revise' with 5 risks was followed by simulation_applied with 0 revisions, proving the revision loop can silently no-op when n
@@ -51,11 +56,6 @@
 - Model reliability fluctuates call-to-call (stealth/ox-alpha and nemotron both alternated success and 429/overload failures), so routing decisions must
 - An HTTP 200 response does not imply success: nvidia/nemotron returned status 200 with zero choices due to upstream Nvidia overload, so responses must 
 - HTTP 429 rate-limit failures dominate across all free-tier OpenRouter models, and immediate retries of the same model within seconds fail repeatedly, 
-- 13 model failures against 100 successes are concentrated in transient provider-side rate limits, not prompt or logic errors, so failure analysis shoul
-- Dream-generated knowledge like the contract-check procedure remains inert unless explicitly converted into an executable validation step in the task p
-- Pre-execution simulation that returns 'revise' with concrete revisions caught 3 risks before the football submission was attempted, validating simulat
-- The swarm completion gap (9 started, 2 finished) coincides with metabolism entering conserve mode (stress 1.0, max_iterations 1), suggesting tasks are
-- 429 rate-limit failures cluster on stealth/ox-alpha and z-ai/glm-5.2:free while nvidia/nemotron-3-ultra-550b-a55b:free succeeded every time, so retryi
 
 ---
 
