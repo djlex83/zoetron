@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1686 Neuronen · 29015 bewertete Synapsen
+Stand: 1692 Neuronen · 29087 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -22,9 +22,9 @@ Stand: 1686 Neuronen · 29015 bewertete Synapsen
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 143 | 0.22 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 143 | 0.22 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 143 | 0.22 |
-| 13 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 143 | 0.22 |
-| 14 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 120 | 0.26 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 143 | 0.22 |
+| 13 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 120 | 0.26 |
+| 14 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 143 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 142 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

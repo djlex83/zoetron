@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 15:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 15:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,8 +11,6 @@
 - Build skill_proposal_filter that scores proposals by novelty, feasibility, and alignment with active drive goa *(hatte die Idee 4×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Make simulation revision application transactional: apply all revisions as one batch, re-simulate, and roll ba *(hatte die Idee 2×)*
-- Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 2×)*
 - Add a startup contract test asserting every MemoryStore method invoked by hands-execute (starting with add_fac *(hatte die Idee 2×)*
 - Require the simulator to enumerate a minimum number of concrete risks even for 'go' verdicts and route any zer *(hatte die Idee 2×)*
 - Add a CI contract test that pins the MemoryStore public API (add_fact, get_facts, etc.) and statically fails a *(hatte die Idee 2×)*
@@ -20,6 +18,8 @@
 - Make prune_run emit a warning and trigger a criteria audit when facts_pruned == 0 and events_pruned == 0 for t *(hatte die Idee 2×)*
 - Add a revision‑completeness gate that blocks act_done until every simulation‑flagged risk is either fixed or e *(hatte die Idee 2×)*
 - Create a proposal ledger keyed by content hash that tracks repetition count; auto‑promote any proposal seen in *(hatte die Idee 2×)*
+- Add a revision‑completeness gate that blocks act_done until every simulation‑flagged risk is fixed or explicit *(hatte die Idee 2×)*
+- Enforce per‑model latency SLA: timeout = 2× rolling median, cancel on breach, and fallback to a safer model or *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -31,16 +31,21 @@
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 2×)*
 - Träume für neue Fähigkeiten nutzen *(wieder aufgegriffen: 2×)*
 - Modellfehler vermeiden *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässig abschließen *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässiger zum Abschluss bringen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals are self-referential (fixing own model errors, own swarm hangs), confirming the extern-quote reflex is needed to break the navel-gazing lo
+- Model failures cluster as OpenRouter 429 rate-limit errors across multiple models simultaneously, so free-tier fallback chains share the same quota an
+- Goals that fail convergence get retried unchanged until the attempt-counter parks them at N=3, wasting cycles on deterministic failures instead of dia
+- Hand actions fail in ~0.03s with exit 1 and null error messages, indicating crashes happen before error capture, so exception handling must wrap the h
+- The swarm goal 'Fakten-Ausbeute verdreifachen' failed twice because MemoryStore lacks an add_fact method, meaning the fact-persistence API is the actu
 - High token cost with low outcome (e.g., 132s/261-token calls after a failed run) suggests repeated re-simulation from scratch because no swarm checkpo
 - Five skill proposals were generated but none were tested or adopted, revealing a proposal-to-adoption gap where skills accumulate without any executio
 - Pruning retired 0 facts and 0 events while identical drive goals regenerate across sleep cycles, indicating goal satisfaction is never linked to evide
@@ -51,11 +56,6 @@
 - A missing `add_fact` method on MemoryStore halted the hand layer, revealing that skill proposals are deployed without contract verification against th
 - Model latency varies 35× (2.8s–97.5s) on the same model, making fixed timeouts ineffective and causing unpredictable swarm duration.
 - Swarm evolution improved individual variant scores (3→9) but the swarm still failed to converge, indicating the aggregation/critic mechanism cannot sy
-- Metabolism state was 'full' with low stress yet max_iterations stayed at 2, suggesting budget gates are too conservative relative to actual capacity.
-- Skill proposals accumulate faster than they are implemented (multiple proposals, zero prune activity), indicating an execution bottleneck between drea
-- Rate limits make more LLM calls the wrong lever for throughput; per-call output density (more facts/tokens per call) is the effective multiplier.
-- Repeated non-convergence (3 attempts) should trigger a problem reformulation or creator decision rather than another identical retry cycle.
-- Tasks fail to converge when act_done is allowed before the swarm reports converged=true, as seen in the Fußball task scoring 4/10 across 3 attempts wi
 
 ---
 

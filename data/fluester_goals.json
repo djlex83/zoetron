@@ -96,7 +96,7 @@
   "why": "TF-IDF (Wortstatistik) findet ähnliche Wörter, aber nicht ähnliche Bedeutung, und skaliert schlecht über ~10.000 Fakten. Baue embedding_recall.py: Fakten als Embeddings (Zahlen-Fingerabdruck der Bedeutung) in SQLite speichern, Top-5-Suche per Kosinus-Ähnlichkeit. Dazu benchmark.py: 20 feste Testfragen gegen den bestehenden TF-IDF-Recall antreten lassen, Ergebnis als JSON-Report speichern. Fertig wenn: der Benchmark-Report existiert und der Embedding-Recall bei mindestens 12 von 20 Fragen gleich gut oder besser abschneidet.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 1
+  "_versuche": 2
  },
  {
   "title": "Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl",
