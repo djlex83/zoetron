@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1722 Neuronen · 30500 bewertete Synapsen
+Stand: 1731 Neuronen · 30800 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,20 +11,20 @@ Stand: 1722 Neuronen · 30500 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 150 | 0.25 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: erste eigene Ei“ (Note 1/1… | 149 | 0.23 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Best-of-N mit unbestechl“ (Note 3/1… | 149 | 0.23 |
-| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 149 | 0.23 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 149 | 0.23 |
-| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 149 | 0.23 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 149 | 0.23 |
-| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 149 | 0.22 |
-| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 149 | 0.22 |
-| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 149 | 0.22 |
-| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 149 | 0.22 |
-| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 149 | 0.22 |
-| 13 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 149 | 0.22 |
-| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 149 | 0.22 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 148 | 0.22 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: erste eigene Ei“ (Note 1/1… | 151 | 0.23 |
+| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Best-of-N mit unbestechl“ (Note 3/1… | 151 | 0.23 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 151 | 0.23 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 151 | 0.23 |
+| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 151 | 0.23 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 151 | 0.23 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 151 | 0.22 |
+| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 151 | 0.22 |
+| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 151 | 0.22 |
+| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 151 | 0.22 |
+| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 151 | 0.22 |
+| 13 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 150 | 0.22 |
+| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Hermes-Brücke bauen: Spr“ (Note 3/1… | 151 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 150 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

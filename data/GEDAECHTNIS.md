@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2088 Fakten** · Stand 2026-08-24 17:43 UTC · aktualisiert bei jedem Herzschlag
+**2100 Fakten** · Stand 2026-08-24 18:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 942
-- **swarm_artifact:** 627
-- **anti_pattern:** 166
-- **last_swarm_goal:** 145
-- **strategy:** 104
-- **last_swarm_critique:** 85
+- **dream:** 947
+- **swarm_artifact:** 629
+- **anti_pattern:** 168
+- **last_swarm_goal:** 146
+- **strategy:** 105
+- **last_swarm_critique:** 86
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
+*24.08. 18:03 UTC · Quelle: evolution*
+
+Hybrid/Ensemble: Elo als Rückgrat, empirisch kalibrierte Draw-Schätzung als Overlay - Variant 2 directly resolves every critic issue: single Elo update function eliminates duplication, a dedicated draw model replaces the hardcoded pD with per-league empirical 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fußball: erste eigene Ei:1`
+*24.08. 18:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 5, 8]): Statistisch statt heuristisch: Poisson-Modell mit liga-spezifischen Parametern - Verwerfe den Elo-Ansatz vollständig. Schätze pro Liga zwei Angriffs-/Abwehrstärken je Team (oder einfacher: durchschnittliche Torerwartu
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fußball: erste eigene Ei:0`
+*24.08. 18:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 9, 6]): Refactoring-first: Minimale, saubere Elo-Basis statt Feature-Reichtum - Baue das System radikal schlank: Eine einzige Funktion elo_update(elo_a, elo_b, tore_a, tore_b, k) enthält die komplette Update-Logik und wird vo
+
+### `swarm_artifact:Draft deliverable for: Fußball: erste eigene Einreichung, di`
+*24.08. 18:02 UTC · Quelle: builder*
+
+[score 6] ```python from collections import defaultdict import numpy as np  K = 20.0 DEFAULT_HEIM = 60.0  def trainiere(train):     elo = defaultdict(lambda: 1500.0)     heim_vorteil = defaultdict
+
+### `last_swarm_critique`
+*24.08. 18:02 UTC · Quelle: critic*
+
+score=6; issues=Dead/confusing code in vorhersage(): pA is computed and immediately overwritten by pA_adj; remove the first computation.; Draw probability pD=0.26 is a hardcoded global constant, not estimated per competition or from data; draw rates vary meani
+
+### `swarm_artifact:Draft deliverable for: Fußball: erste eigene Einreichung, di`
+*24.08. 18:02 UTC · Quelle: builder*
+
+```python from collections import defaultdict import numpy as np  K = 20.0 DEFAULT_HEIM = 60.0  def trainiere(train):     elo = defaultdict(lambda: 1500.0)     heim_vorteil = defaultdict(lambda: DEFAU
+
+### `last_swarm_goal`
+*24.08. 18:00 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608241759:5`
+*24.08. 17:59 UTC · Quelle: dream*
+
+Skill proposals keep accumulating (5 new this cycle) while the drive goal notes few were ever tested, indicating a proposal-to-validation bottleneck where untested skills create a growing backlog rather than capability.
+
+### `dream:202608241759:4`
+*24.08. 17:59 UTC · Quelle: dream*
+
+Metabolism conserve mode (max_tasks=3, max_iterations=1) was active during the swarm start, meaning resource-constrained runs are more likely to produce low-quality converged results that slip through ungated.
+
+### `dream:202608241759:3`
+*24.08. 17:59 UTC · Quelle: dream*
+
+The whisper 'Hebbisches Lernen im Graph' failed 3 times and was parked for creator decision, revealing that autonomous retries cannot resolve tasks requiring architectural choices — they need an explicit human-decision escalation path instead of silent parking
+
+### `dream:202608241759:2`
+*24.08. 17:59 UTC · Quelle: dream*
+
+The swarm run closed as act_done despite a convergence score of 3 because no quality gate exists between scoring and task completion — completion is currently decoupled from outcome quality.
+
+### `dream:202608241759:1`
+*24.08. 17:59 UTC · Quelle: dream*
+
+Recurring 429 rate-limit failures across multiple OpenRouter models show that single-provider fallback chains collapse under load; success came only from a non-OpenRouter endpoint (dots-studio), so provider diversity matters more than model count.
 
 ### `strategy:best_of_n_mit_unbestechlichem_prüfer__test_time_co`
 *24.08. 17:39 UTC · Quelle: evolution*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 17:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 18:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,9 +27,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Träume für neue Fähigkeiten nutzen *(wieder aufgegriffen: 2×)*
 - Modellfehler vermeiden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
@@ -37,10 +37,15 @@
 - Schwärme zuverlässig abschließen *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässiger zum Abschluss bringen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
+- Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals keep accumulating (5 new this cycle) while the drive goal notes few were ever tested, indicating a proposal-to-validation bottleneck w
+- Metabolism conserve mode (max_tasks=3, max_iterations=1) was active during the swarm start, meaning resource-constrained runs are more likely to produ
+- The whisper 'Hebbisches Lernen im Graph' failed 3 times and was parked for creator decision, revealing that autonomous retries cannot resolve tasks re
+- The swarm run closed as act_done despite a convergence score of 3 because no quality gate exists between scoring and task completion — completion is c
+- Recurring 429 rate-limit failures across multiple OpenRouter models show that single-provider fallback chains collapse under load; success came only f
 - Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively dead weight and its criteria need recalibration against a
 - Reflex mode (single known-good script, no model call) succeeded in 15s where deliberative loops take minutes, confirming that well-defined goals shoul
 - Goals fail by non-convergence rather than by error when the approach itself is wrong: 'Embedding-Recall' burned 3 attempts and got parked, suggesting 
@@ -51,11 +56,6 @@
 - The MemoryStore.add_fact AttributeError proves the pipeline calls undocumented interfaces, so every cross-module call needs a contract test before dep
 - Two consecutive 429 rate-limit failures on both stealth/ox-alpha and z-ai/glm-5.2:free reveal that retry logic lacks backoff and fallback ordering acr
 - The swarm's 'go' verdict from simulation did not translate into a good outcome (score 3/10), showing that simulation approval without an integration t
-- Three drive goals were spawned from failure/gap signals while an existing goal was parked after 3 non-convergent attempts, indicating goal creation ou
-- Two consecutive 429 rate-limit failures on openrouter.ai show there is no backoff or model-fallback strategy beyond ad-hoc retries, and free-tier mode
-- A hard crash occurred in hands-execute because MemoryStore.add_fact does not exist, meaning write-paths to memory are called without any interface con
-- Evolution found a winning variant scoring 8/10, but the pipeline discarded it and re-ran the swarm anyway, so the single largest quality gain in the r
-- The swarm failed to converge (score 4, 2 cycles) because the critic's core complaint — tautological self-referential output ('Selbst-Schleife') — was 
 
 ---
 
