@@ -126,7 +126,7 @@ python -m zoetron.cli status   # self-model & calibration
 
 Configured via `.env`: `OPENROUTER_API_KEY` and `ZOETRON_MODEL=auto`
 (AutoRouter = model immortality). Without an API key: deterministic mock brain,
-all **65 tests** pass fully offline. `ZOETRON_MODEL=auto` automatically discovers
+all **67 tests** pass fully offline. `ZOETRON_MODEL=auto` automatically discovers
 every free tool-capable OpenRouter model and learns from its own runs which ones
 perform well.
 

@@ -1,7 +1,7 @@
 # Roadmap
 
 ## Erreicht (2026-08-21)
-- [x] 15 Organe, 65/65 Tests, CI grün
+- [x] 21 Organe, 67/67 Tests, CI grün
 - [x] Herzschlag-Daemon in Hermes (REFLEX→…→ACT→Telegram→Push)
 - [x] Evolution an Swarm gekoppelt (Vererbung von Sieger-Strategien)
 - [x] Wochenreport + Impuls-Layer

@@ -127,7 +127,7 @@ python -m zoetron.cli status   # Selbstmodell & Kalibrierung
 
 Konfiguration über `.env`: `OPENROUTER_API_KEY` und `ZOETRON_MODEL=auto`
 (AutoRouter = modell-unsterblich). Ohne Key: deterministisches Mock-Gehirn,
-alle **65 Tests** komplett offline grün. `ZOETRON_MODEL=auto` entdeckt automatisch
+alle **67 Tests** komplett offline grün. `ZOETRON_MODEL=auto` entdeckt automatisch
 alle kostenlosen Tool-fähigen OpenRouter-Modelle und lernt aus eigenen Läufen,
 welche gut sind.
 
