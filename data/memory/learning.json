@@ -1,17 +1,17 @@
 {
- "stand": "2026-08-24 20:09:01",
+ "stand": "2026-08-24 20:48:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "fähigkeiten-selbstständig-üben.py",
+   "tool": "ci-pipeline-reparieren-und-simulation-va.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
   },
   {
-   "tool": "ci-pipeline-reparieren-und-simulation-va.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "fähigkeiten-selbstständig-üben.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -87,21 +87,21 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.793,
+ "haende_quote": 0.78,
  "simulationen_angewandt": 85,
  "swarm_scores": {
   "n": 38,
   "best": 8.0,
-  "schnitt": 3.95
+  "schnitt": 3.82
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 35,
-   "schnitt": 3.97
-  },
   "bau": {
    "n": 3,
    "schnitt": 3.67
+  },
+  "analyse": {
+   "n": 35,
+   "schnitt": 3.83
   }
  }
 }

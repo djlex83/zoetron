@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2129 Fakten** · Stand 2026-08-24 20:09 UTC · aktualisiert bei jedem Herzschlag
+**2145 Fakten** · Stand 2026-08-24 20:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 962
-- **swarm_artifact:** 633
-- **anti_pattern:** 172
-- **last_swarm_goal:** 148
-- **strategy:** 107
-- **last_swarm_critique:** 88
+- **dream:** 967
+- **swarm_artifact:** 639
+- **anti_pattern:** 174
+- **last_swarm_goal:** 149
+- **strategy:** 108
+- **last_swarm_critique:** 89
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,86 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:best_of_n_mit_unbestechlichem_prüfer__test_time_co`
+*24.08. 20:48 UTC · Quelle: evolution*
+
+Atomic Artifact Assembly — generate each file in small, independently verifiable chunks instead of o - Truncation is the root cause behind every critic issue: all three artifacts cut off mid-implementation, which cascaded into the incomplete benchmark (10/12 t
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Best-of-N mit unbestechl:2`
+*24.08. 20:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score {'elegance': 7, 'feasibility': 8, 'impact': 6}): Contract-Driven Benchmark Generation — derive tasks from an explicit completenes - Before writing any task content, freeze a machine-readable manifest: 12 entries with fields {id, 
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Best-of-N mit unbestechl:1`
+*24.08. 20:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score {'elegance': 7, 'feasibility': 8, 'impact': 8}): Security-First Judge via OS-level isolation — make incorruptibility a property o - Stop trying to make the judge safe through code discipline alone. Run every candidate inside a ha
+
+### `swarm_artifact:Best-of-3-Experiment ausführen: Einzelversuch-Quote vs. Best`
+*24.08. 20:47 UTC · Quelle: builder*
+
+[score 2] ```python #!/usr/bin/env python3 """ Best-of-3 Experiment: Einzelversuch-Quote vs. Best-of-3-Quote über alle Aufgaben. Generiert 3 Kandidaten pro Aufgabe (verschiedene Temperaturen/Seeds
+
+### `swarm_artifact:Unbestechlichen Prüfer implementieren: Test-Ausführung statt`
+*24.08. 20:47 UTC · Quelle: builder*
+
+[score 2] ```python #!/usr/bin/env python3 """ Unbestechlicher Prüfer: Test-Ausführung in isoliertem Sandbox statt Modell-Urteil. Jeder Test läuft in eigenem Subprocess mit Resource-Limits (Timeou
+
+### `swarm_artifact:Benchmark-Korpus aufbauen: 12 Code-Aufgaben mit Test-Suiten`
+*24.08. 20:47 UTC · Quelle: builder*
+
+[score 2] ```python #!/usr/bin/env python3 """Baut den Benchmark-Korpus 'bench_tasks.json': 12 deterministische Code-Aufgaben, stratifiziert nach Schwierigkeit (leicht/mittel/schwer) und Kategorie
+
+### `last_swarm_critique`
+*24.08. 20:47 UTC · Quelle: critic*
+
+score=2; issues=All three artifacts are incomplete/truncated mid-implementation (bench_tasks.json builder cuts off at bugfix_leicht_001, judge.py cuts off at TimeoutExpired handler, experiment.py cuts off at prime template); Benchmark delivers only 10/12 promi
+
+### `swarm_artifact:Best-of-3-Experiment ausführen: Einzelversuch-Quote vs. Best`
+*24.08. 20:46 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Best-of-3 Experiment: Einzelversuch-Quote vs. Best-of-3-Quote über alle Aufgaben. Generiert 3 Kandidaten pro Aufgabe (verschiedene Temperaturen/Seeds), misst Erfol
+
+### `swarm_artifact:Unbestechlichen Prüfer implementieren: Test-Ausführung statt`
+*24.08. 20:43 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Unbestechlicher Prüfer: Test-Ausführung in isoliertem Sandbox statt Modell-Urteil. Jeder Test läuft in eigenem Subprocess mit Resource-Limits (Timeout 2s, Memory 2
+
+### `swarm_artifact:Benchmark-Korpus aufbauen: 12 Code-Aufgaben mit Test-Suiten`
+*24.08. 20:42 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """Baut den Benchmark-Korpus 'bench_tasks.json': 12 deterministische Code-Aufgaben, stratifiziert nach Schwierigkeit (leicht/mittel/schwer) und Kategorie (Algo/API/Bug
+
+### `last_swarm_goal`
+*24.08. 20:39 UTC · Quelle: system*
+
+Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
+
+### `dream:202608242038:5`
+*24.08. 20:38 UTC · Quelle: dream*
+
+Long-tail latencies (200s+) on 'fast' models indicate silent degradation; latency SLOs must trigger fallback before timeout.
+
+### `dream:202608242038:4`
+*24.08. 20:38 UTC · Quelle: dream*
+
+Conserve-mode iteration caps starve test-time-compute swarms that require multiple passes to converge.
+
+### `dream:202608242038:3`
+*24.08. 20:38 UTC · Quelle: dream*
+
+MemoryStore interface drift (missing add_fact) breaks agents silently; versioned contracts or runtime checks are needed.
+
+### `dream:202608242038:2`
+*24.08. 20:38 UTC · Quelle: dream*
+
+Proposed skills accumulate but remain unimplemented because no gate forces transition from proposal to tested code.
+
+### `dream:202608242038:1`
+*24.08. 20:38 UTC · Quelle: dream*
+
+Provider rate limits (429) are temporally correlated across models, making naive rotation ineffective without backoff.
 
 ### `dream:202608242008:5`
 *24.08. 20:08 UTC · Quelle: dream*
