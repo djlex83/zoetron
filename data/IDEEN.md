@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 13:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 13:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance spans 1.8s–142.5s and output tokens hit the ~4k cap repeatedly, indicating long-form generation stages dominate runtime; chunking lar
+- Prediction calibration error of ±1 on a 50.2% baseline suggests predictions are made before the revision cycle completes; calibrate against post-revis
+- The task registry gap is the root cause of both stalled swarms and untested skills: without status tracking (open/done/failed), background work is sil
+- Skill proposals are write-only artifacts: 60 proposed vs. 2 used means the pipeline lacks an adoption/test step; proposals must be queued into the tas
+- Swarm convergence failure is systemic: 11 of 13 swarms stall because the critic loop re-enters 'revise' after revisions are applied instead of switchi
 - Swarm completion is critically low (1 finished of ~11 started) and every simulation returned verdict 'revise', pointing to goal framing or revision lo
 - prune_run removed zero facts and zero events despite heavy activity, meaning the memory store grows unboundedly and pruning criteria are too conservat
 - The same recall key 'last_swarm_goal' was fetched three times in one run, showing redundant memory reads that waste iterations under a max_iterations=
@@ -51,11 +56,6 @@
 - Prune runs repeatedly removing 0 items while metabolism stress stays high (>0.6) shows pruning thresholds are misaligned with actual memory pressure.
 - Skill proposals accumulate faster than they are tested (45 pending), so the bottleneck is the idea-to-implementation pipeline, not idea generation.
 - Nearly half of all model failures trace to unmanaged free-tier rate limits and oversized single calls (400s+ latencies), not model quality itself.
-- Prune runs remove nothing (0 facts, 0 events) while memory grows with duplicate drive goals, so the same lessons (reduce model errors, finish stalled 
-- Six of nine background tasks remain unfinished across runs, indicating tasks are started without completion tracking or a retry ledger.
-- Model failures cluster as 429 rate-limit errors on OpenRouter after long generations (15k–18k output tokens), suggesting bursty high-token calls exhau
-- Both football runs ended in a 'revise' verdict with 5 risks identified, yet only 3 and 5 revisions were applied — the simulation loop never converges 
-- The swarm repeatedly restarts the same football goal from scratch instead of resuming prior work, because 'last_swarm_goal' is recalled but no checkpo
 
 ---
 
