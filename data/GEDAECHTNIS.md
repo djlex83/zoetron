@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1700 Fakten** · Stand 2026-08-24 03:31 UTC · aktualisiert bei jedem Herzschlag
+**1708 Fakten** · Stand 2026-08-24 03:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 747
-- **swarm_artifact:** 530
+- **dream:** 752
+- **swarm_artifact:** 532
 - **anti_pattern:** 138
-- **last_swarm_goal:** 108
+- **last_swarm_goal:** 109
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,46 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Spieldaten inventarisieren: CSVs finden, Spalten und Zeilenz`
+*24.08. 03:49 UTC · Quelle: builder*
+
+# Artefakt: Spieldaten-Inventar — CSV-Fundstelle, Encoding-Leiter, Tor-/Ergebnis-Spalten  **Task:** Spieldaten inventarisieren · **Strategie:** Zero-Dependencies (gewinnend, nur stdlib) · **Attempt:**
+
+### `swarm_artifact:Evaluator-Kontrakt extrahieren: bewerte.py lesen und Ein-/Au`
+*24.08. 03:45 UTC · Quelle: builder*
+
+# Artefakt: Evaluator-Kontrakt `bewerte.py` — Extraktionsprotokoll & Fakten-Checkliste  **Task:** Evaluator-Kontrakt extrahieren · **Strategie:** systematic-exploration-first (gewinnend) · **Attempt:*
+
+### `last_swarm_goal`
+*24.08. 03:34 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240332:5`
+*24.08. 03:32 UTC · Quelle: dream*
+
+The simulate->revise->execute pipeline (verdict 'revise', 4 revisions applied before any real run) is the highest-value quality gate observed and should precede every external deliverable.
+
+### `dream:202608240332:4`
+*24.08. 03:32 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they get implemented (5 proposed, 0 implemented this cycle), reproducing the 'Liegengebliebene Ideen' failure mode the drive goals already flag.
+
+### `dream:202608240332:3`
+*24.08. 03:32 UTC · Quelle: dream*
+
+A new swarm was started while stress=1.0 and max_iterations=1 (conserve budget), which structurally guarantees unfinished work piles up instead of completing.
+
+### `dream:202608240332:2`
+*24.08. 03:32 UTC · Quelle: dream*
+
+Effort is systematically underestimated by ~2x (predicted 3 vs actual 6 iterations for the football goal), so raw predictions need a persistent correction multiplier until abs_error drops below 1.
+
+### `dream:202608240332:1`
+*24.08. 03:32 UTC · Quelle: dream*
+
+Models returning HTTP 429 are reliably bypassed by immediate fallback to the last known-good model (nemotron-3-ultra), so retrying a rate-limited model within the same cycle only wastes latency.
 
 ### `swarm_artifact:Baseline-Modell v0 bauen: korrekt geformte Wahrscheinlichkei`
 *24.08. 03:30 UTC · Quelle: builder*
