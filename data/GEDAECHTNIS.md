@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2162 Fakten** · Stand 2026-08-24 21:43 UTC · aktualisiert bei jedem Herzschlag
+**2178 Fakten** · Stand 2026-08-24 22:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 977
-- **swarm_artifact:** 641
-- **anti_pattern:** 176
-- **last_swarm_goal:** 150
-- **strategy:** 109
-- **last_swarm_critique:** 90
+- **dream:** 982
+- **swarm_artifact:** 647
+- **anti_pattern:** 178
+- **last_swarm_goal:** 151
+- **strategy:** 110
+- **last_swarm_critique:** 91
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,86 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*24.08. 22:22 UTC · Quelle: evolution*
+
+Statistisch-robustes Basismodell mit vollstaendigem, abbruchfreiem Kernpfad - Variante 0 ist die einzige, die den Kernpfad Vorhersage->Ausgabe vollstaendig und abbruchfrei garantiert und die 50,2%-Basislinie direkt operationalisiert: Trefferquote wird auf de
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
+*24.08. 22:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Ensemble-Abstimmung dreier heterogener Heuristiken mit Konfidenz-Gate - Statt eines einzelnen Modells kombiniere drei unabhaengige, einfache Signale und nutze nur Spiele mit hoher Uebereinstimmung: (1) Signal A: Tabellenplatz
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :1`
+*24.08. 22:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Online-Lernen / sequentielle Aktualisierung statt Batch-Modell - Implementiere einen Online-Ansatz, der chronologisch durch die Spieltage iteriert und nach JEDEM Spiel aktualisiert (das fehlende 'aktualisiere' aus T2 wird die
+
+### `swarm_artifact:Task 3: Gradient Boosting on Elo + schedule features`
+*24.08. 22:21 UTC · Quelle: builder*
+
+[score 4] # ARTEFAKT T3 — Gradient Boosting auf Elo/Form/Spielplan-Merkmalen mit kreuzvalidierter Platt-Kalibrierung  Merkmale werden strikt punkt-in-time erzeugt (jede Statistik steht VOR dem Spi
+
+### `swarm_artifact:Task 2: Dixon-Coles Poisson model for calibrated probabiliti`
+*24.08. 22:21 UTC · Quelle: builder*
+
+[score 4] # ARTEFAKT T2 — Dixon-Coles-Poisson mit expliziter rho-Low-Score-Korrektur & Draw-Inflation  Pro Wettbewerb wird ein zeitgewichtetes (Halbwertszeit 730 Tage) Dixon-Coles-Modell per L-BFG
+
+### `swarm_artifact:Task 1: Competition-specific Elo with goal-difference multip`
+*24.08. 22:21 UTC · Quelle: builder*
+
+[score 4] # ARTEFAKT T1 — Competition-Elo mit Tordifferenz-Multiplikator, Saison-Regression & Aufsteiger-Init  Hyperparameter (K, RHO, HEIM, Draw-Form) werden per Rolling-Origin-CV ausschließlich 
+
+### `last_swarm_critique`
+*24.08. 22:21 UTC · Quelle: critic*
+
+score=4; issues=Alle drei Artefakte sind unvollstaendig abgebrochen (T1 'vorhersage' endet im Ausdruck, T2 bricht bei 'contin' ab, T3 bricht im 'ordnung'-Dict ab): Kernpfad Vorhersage->Ausgabe ist nicht verifizierbar, Online-SGD aus T2 ('aktualisiere') fehlt k
+
+### `swarm_artifact:Task 3: Gradient Boosting on Elo + schedule features`
+*24.08. 22:20 UTC · Quelle: builder*
+
+# ARTEFAKT T3 — Gradient Boosting auf Elo/Form/Spielplan-Merkmalen mit kreuzvalidierter Platt-Kalibrierung  Merkmale werden strikt punkt-in-time erzeugt (jede Statistik steht VOR dem Spiel fest, Updat
+
+### `swarm_artifact:Task 2: Dixon-Coles Poisson model for calibrated probabiliti`
+*24.08. 22:17 UTC · Quelle: builder*
+
+# ARTEFAKT T2 — Dixon-Coles-Poisson mit expliziter rho-Low-Score-Korrektur & Draw-Inflation  Pro Wettbewerb wird ein zeitgewichtetes (Halbwertszeit 730 Tage) Dixon-Coles-Modell per L-BFGS mit analytis
+
+### `swarm_artifact:Task 1: Competition-specific Elo with goal-difference multip`
+*24.08. 22:14 UTC · Quelle: builder*
+
+# ARTEFAKT T1 — Competition-Elo mit Tordifferenz-Multiplikator, Saison-Regression & Aufsteiger-Init  Hyperparameter (K, RHO, HEIM, Draw-Form) werden per Rolling-Origin-CV ausschließlich auf train gewä
+
+### `last_swarm_goal`
+*24.08. 22:08 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608242208:5`
+*24.08. 22:08 UTC · Quelle: dream*
+
+Task parking after 3 non-convergent attempts reveals insufficient convergence criteria and no creator-escalation path.
+
+### `dream:202608242208:4`
+*24.08. 22:08 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack validation gate and forced-implementation escalation after 3 dream cycles.
+
+### `dream:202608242208:3`
+*24.08. 22:08 UTC · Quelle: dream*
+
+Conserve mode (max_iterations=1) blocks test-time-compute swarms that require multiple reasoning passes.
+
+### `dream:202608242208:2`
+*24.08. 22:08 UTC · Quelle: dream*
+
+High latency variance (2.8s–83.8s) for same model shows need for latency SLO monitoring and automatic fallback.
+
+### `dream:202608242208:1`
+*24.08. 22:08 UTC · Quelle: dream*
+
+Rate limiting (429 errors) on multiple models indicates missing unified retry/backoff policy with circuit breaker.
 
 ### `strategy:cortex_upgrade_reflex__neue_modelle_automatisch_ad`
 *24.08. 21:43 UTC · Quelle: evolution*
