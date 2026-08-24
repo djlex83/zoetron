@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 02:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 03:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Under stress=1.0/conserve metabolism (max_tasks 3, max_iterations 1), calls still ran at up to 294s latency and ~11.7k output tokens, meaning workload
+- Five skill proposals accumulated across dream cycles with none converted into tasks, so the pipeline generates insights faster than it executes them.
+- A simulation verdict of 'revise' with 5 risks was followed by simulation_applied with 0 revisions, proving the revision loop can silently no-op when n
+- The football swarm finished unconverged (score 1, 2 cycles) with a 1:3 critic:builder role ratio, indicating thin critic coverage lets builder defects
+- Two of three models died with 429 rate-limit errors while only nemotron-3-ultra:free survived, so single-model retry loops are the dominant failure ca
 - The largest quality jump (score 1 to 9) came from generating variants that addressed the critic's sole blocking issue ('No evidence'), proving that at
 - The calibration record shows systematic overconfidence on submission-style tasks (predicted 3 vs actual 1, abs_error 2), meaning self-predicted scores
 - Model reliability fluctuates call-to-call (stealth/ox-alpha and nemotron both alternated success and 429/overload failures), so routing decisions must
@@ -51,11 +56,6 @@
 - Pre-execution simulation that returns 'revise' with concrete revisions caught 3 risks before the football submission was attempted, validating simulat
 - The swarm completion gap (9 started, 2 finished) coincides with metabolism entering conserve mode (stress 1.0, max_iterations 1), suggesting tasks are
 - 429 rate-limit failures cluster on stealth/ox-alpha and z-ai/glm-5.2:free while nvidia/nemotron-3-ultra-550b-a55b:free succeeded every time, so retryi
-- The football goal advanced because its acceptance criterion (pass bewerte.py) was fixed before building and scope was minimized to one file with three
-- A swarm was launched while metabolism reported stress 1.0/conserve with max_tasks 3, proving budget fields are currently advisory rather than enforced
-- The Hermes bridge burned 3 attempts without convergence because no written interface contract existed before coding started; a spec-first approach wou
-- Latency scaled almost linearly with output size (176 tokens -> 4.5s vs 8526 tokens -> 221s), making max_tokens caps per task class the cheapest latenc
-- Five distinct free models returned 429 within the same second, indicating account/IP-level throttling rather than per-model quotas, so rotating models
 
 ---
 
