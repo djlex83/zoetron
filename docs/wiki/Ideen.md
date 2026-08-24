@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 12:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 12:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,7 +12,6 @@
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Deploy an error‑pattern logger that records each model failure with context (latency, input snippet) and trigg *(hatte die Idee 2×)*
 - Add a latency SLA guard to model_ok events: if p95 latency > 30s, route to fallback model and flag infrastruct *(hatte die Idee 2×)*
 - Make simulation revision application transactional: apply all revisions as one batch, re-simulate, and roll ba *(hatte die Idee 2×)*
 - Add a startup contract test asserting every MemoryStore method invoked by hands-execute (starting with add_fac *(hatte die Idee 2×)*
@@ -20,6 +19,7 @@
 - Add a CI contract test that pins the MemoryStore public API (add_fact, get_facts, etc.) and statically fails a *(hatte die Idee 2×)*
 - Add a periodic reflection step that pairs same‑day dreams with older memories to generate combined goal candid *(hatte die Idee 2×)*
 - Make prune_run emit a warning and trigger a criteria audit when facts_pruned == 0 and events_pruned == 0 for t *(hatte die Idee 2×)*
+- Add a revision‑completeness gate that blocks act_done until every simulation‑flagged risk is either fixed or e *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Recurring proposals across multiple dream cycles (pacing/backoff, budget gates, completion gating) indicate these are systemic gaps, not one-off fixes
+- Simulation with revision loops (5 risks/5 revisions) works well but must be budget-scaled, since conserve-mode caps of 1 iteration conflict with revis
+- Prune runs repeatedly removing 0 items while metabolism stress stays high (>0.6) shows pruning thresholds are misaligned with actual memory pressure.
+- Skill proposals accumulate faster than they are tested (45 pending), so the bottleneck is the idea-to-implementation pipeline, not idea generation.
+- Nearly half of all model failures trace to unmanaged free-tier rate limits and oversized single calls (400s+ latencies), not model quality itself.
 - Prune runs remove nothing (0 facts, 0 events) while memory grows with duplicate drive goals, so the same lessons (reduce model errors, finish stalled 
 - Six of nine background tasks remain unfinished across runs, indicating tasks are started without completion tracking or a retry ledger.
 - Model failures cluster as 429 rate-limit errors on OpenRouter after long generations (15k–18k output tokens), suggesting bursty high-token calls exhau
@@ -51,11 +56,6 @@
 - The same three fixes (circuit breaker, per-request timeout, swarm-state persistence) were proposed in this cycle and appear again as prior proposals, 
 - Model latency spans 17s to 754s (a 43x spread), meaning a single unbounded call can consume an entire conserve-mode iteration budget; every model invo
 - 429 rate-limit failures arrive in clusters across multiple providers within seconds (ox-alpha and glm-5.2 failed back-to-back), so sequential fallback
-- Five new skill_proposals were generated in one cycle while none were executed, confirming the recurring proposal-to-action gap named by drive goal 'Me
-- Two consecutive prune_runs removed 0 items, proving the current pruning criteria match nothing and require an active staleness rule instead of passive
-- Conserve-mode budget (stress 1.0, max_tasks 3, max_iterations 1) did not stop a full 5-risk/5-revision simulation from running, meaning metabolism sta
-- ox-alpha latency varied ~10x (43.8s/651 tokens out vs 448.4s/17515 tokens out), so long-generation steps stall the pipeline and should be chunked or o
-- Four models failed with 429 errors within the same second because requests were fired in parallel bursts at free-tier endpoints; serializing calls wit
 
 ---
 

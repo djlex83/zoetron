@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1950 Fakten** · Stand 2026-08-24 12:14 UTC · aktualisiert bei jedem Herzschlag
+**1962 Fakten** · Stand 2026-08-24 12:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 887
-- **swarm_artifact:** 589
-- **anti_pattern:** 148
-- **last_swarm_goal:** 136
-- **strategy:** 95
-- **last_swarm_critique:** 76
+- **dream:** 892
+- **swarm_artifact:** 591
+- **anti_pattern:** 150
+- **last_swarm_goal:** 137
+- **strategy:** 96
+- **last_swarm_critique:** 77
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fakten_ausbeute_pro_beat_verdreifachen_ohne_qualit`
+*24.08. 12:49 UTC · Quelle: evolution*
+
+Schema-getriebene Template-Synthese: Fakten werden aus strukturiertem Beat-Protokoll generiert statt - Variante 2 adressiert das Ziel strukturell statt heuristisch: Da jeder Beat zunaengst in ein striktes Schema ueberfuehrt wird und jedes Pflichtfeld determini
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fakten-Ausbeute pro Beat:1`
+*24.08. 12:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Multi-Query-Zerlegung: jeder Beat wird N-mal aus unterschiedlichen Perspektiven  - Fundamentaler Perspektivwechsel: Statt einen Extraktionslauf pro Beat wird jeder Beat parallel durch 3 spezialisierte Linsen analysiert — (1) 
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fakten-Ausbeute pro Beat:0`
+*24.08. 12:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Pipeline-Komplettierung mit deterministischem Zwei-Pass-Architekturmuster - Statt den bisherigen Fragment-Ansatz zu reparieren, wird ein vollstaendiges, in sich geschlossenes Modul gebaut: Pass 1 (Extraction) extrahiert Fakte
+
+### `swarm_artifact:Draft deliverable for: Fakten-Ausbeute pro Beat verdreifache`
+*24.08. 12:48 UTC · Quelle: builder*
+
+[score 3] # Fakten-Dichte-Tripler: Zwei-Pass-Pipeline mit Qualitäts-Gate  Das Artefakt implementiert die SIMULATION-FIX-Strategie als lauffähige Datei: Pass 1 injiziert pro Beat ≥3 verifizierbare 
+
+### `last_swarm_critique`
+*24.08. 12:48 UTC · Quelle: critic*
+
+score=3; issues=Artefakt ist unvollstaendig/abgeschnitten: inject_facts bricht mitten im Docstring ab; Pass 2 (Compression), Quality-Gate-Report und Hauptprogramm fehlen komplett — die behaupteten Akzeptanzkriterien sind im gelieferten Code nicht pruefbar.; To
+
+### `swarm_artifact:Draft deliverable for: Fakten-Ausbeute pro Beat verdreifache`
+*24.08. 12:47 UTC · Quelle: builder*
+
+# Fakten-Dichte-Tripler: Zwei-Pass-Pipeline mit Qualitäts-Gate  Das Artefakt implementiert die SIMULATION-FIX-Strategie als lauffähige Datei: Pass 1 injiziert pro Beat ≥3 verifizierbare Fakten (Zahlen
+
+### `last_swarm_goal`
+*24.08. 12:44 UTC · Quelle: system*
+
+Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust
+
+### `dream:202608241244:5`
+*24.08. 12:44 UTC · Quelle: dream*
+
+Recurring proposals across multiple dream cycles (pacing/backoff, budget gates, completion gating) indicate these are systemic gaps, not one-off fixes.
+
+### `dream:202608241244:4`
+*24.08. 12:44 UTC · Quelle: dream*
+
+Simulation with revision loops (5 risks/5 revisions) works well but must be budget-scaled, since conserve-mode caps of 1 iteration conflict with revise verdicts.
+
+### `dream:202608241244:3`
+*24.08. 12:44 UTC · Quelle: dream*
+
+Prune runs repeatedly removing 0 items while metabolism stress stays high (>0.6) shows pruning thresholds are misaligned with actual memory pressure.
+
+### `dream:202608241244:2`
+*24.08. 12:44 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are tested (45 pending), so the bottleneck is the idea-to-implementation pipeline, not idea generation.
+
+### `dream:202608241244:1`
+*24.08. 12:44 UTC · Quelle: dream*
+
+Nearly half of all model failures trace to unmanaged free-tier rate limits and oversized single calls (400s+ latencies), not model quality itself.
 
 ### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
 *24.08. 12:13 UTC · Quelle: evolution*
