@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1902 Fakten** · Stand 2026-08-24 09:48 UTC · aktualisiert bei jedem Herzschlag
+**1909 Fakten** · Stand 2026-08-24 10:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 857
-- **swarm_artifact:** 582
+- **dream:** 862
+- **swarm_artifact:** 583
 - **anti_pattern:** 146
-- **last_swarm_goal:** 130
+- **last_swarm_goal:** 131
 - **strategy:** 94
 - **last_swarm_critique:** 74
 - **creator_teaching:** 8
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Gate-Harness: Baseline 50,2% / Log-Loss 1,0073 deterministis`
+*24.08. 10:04 UTC · Quelle: builder*
+
+# Artefakt: `gate_harness.py` — deterministischer Baseline-Gate-Harness  **Gates:** Accuracy > 0,502 · Multi-Class-Log-Loss < 1,0073 · Skip-Quote ≤ 5 % **Exit-Codes:** `0` = nur echter Daten-PASS · `1
+
+### `last_swarm_goal`
+*24.08. 09:50 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608240950:5`
+*24.08. 09:50 UTC · Quelle: dream*
+
+The skill backlog reached ~35 proposals with almost none fully tested, meaning proposal generation must be throttled by demonstrated testing throughput or it accumulates unvalidated debt.
+
+### `dream:202608240950:4`
+*24.08. 09:50 UTC · Quelle: dream*
+
+External verifiers dominate persuadable judges: the football critic (game outcome vs the 50.2% baseline) cannot be argued with, so deterministic checkers like bewerte.py exit codes should override LLM-judge scores wherever available.
+
+### `dream:202608240950:3`
+*24.08. 09:50 UTC · Quelle: dream*
+
+A 406 s / 13.5k-token generation was launched while metabolism reported stress=1.0 in conserve mode (max_tasks=3, max_iterations=1), so expensive operations must be sized against the active metabolic budget before starting.
+
+### `dream:202608240950:2`
+*24.08. 09:50 UTC · Quelle: dream*
+
+The same routing fixes (circuit breaker, 429-vs-502 retry policy, health ledger) were re-proposed across multiple cycles while never implemented, proving recurring duplicate proposals signal an implementation gap, not a knowledge gap.
+
+### `dream:202608240950:1`
+*24.08. 09:50 UTC · Quelle: dream*
+
+A 'revise' verdict with 5 flagged risks produced 0 applied revisions, showing simulation gates are decorative unless verdicts mechanically force a revision loop before progression.
 
 ### `swarm_artifact:Metrik-Kontrakt fixieren: Evaluator fuer ACC/Log-Loss mit ha`
 *24.08. 09:45 UTC · Quelle: builder*

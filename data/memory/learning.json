@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 09:48:43",
+ "stand": "2026-08-24 10:05:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -18,12 +18,6 @@
    "tool": "alte-träume-nach-ideen-durchsuchen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-und-simulationen-besser-nutzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -87,8 +81,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.806,
- "simulationen_angewandt": 88,
+ "haende_quote": 0.804,
+ "simulationen_angewandt": 89,
  "swarm_scores": {
   "n": 39,
   "best": 8.0,
@@ -96,8 +90,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 36,
-   "schnitt": 3.89
+   "n": 35,
+   "schnitt": 3.91
   },
   "bau": {
    "n": 3,

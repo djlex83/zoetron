@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 09:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 10:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Auto-generate interface contract tests (or typed stubs) for core stores like MemoryStore so missing methods su *(hatte die Idee 2×)*
-- Add a reconciliation alarm that fires when the evolution winner's score exceeds the final swarm score by more  *(hatte die Idee 2×)*
-- Maintain a rolling (simulation-verdict, realized-score) calibration set and downgrade 'go' verdicts to 'needs- *(hatte die Idee 2×)*
-- Insert a pre-swarm registry lookup that prefers a proven reflex tool matching the goal keywords and only falls *(hatte die Idee 2×)*
-- Attach a lightweight automatic scorer to every act_done event regardless of mode so reflex outcomes feed the s *(hatte die Idee 2×)*
 - Enforce a minimum sample size (e.g., N=10) of recent (predicted, actual) pairs before allowing score predictor *(hatte die Idee 2×)*
+- Require a minimum of 3 swarm cycles or a convergence gate (score≥8) before accepting evolution winners; otherw *(hatte die Idee 2×)*
+- Implement exponential‑backoff retry with model failover for latency >30 s or 5xx errors, logging each failover *(hatte die Idee 2×)*
+- Deploy an error‑pattern logger that records each model failure with context (latency, input snippet) and trigg *(hatte die Idee 2×)*
+- Add a latency SLA guard to model_ok events: if p95 latency > 30s, route to fallback model and flag infrastruct *(hatte die Idee 2×)*
+- Make simulation revision application transactional: apply all revisions as one batch, re-simulate, and roll ba *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The skill backlog reached ~35 proposals with almost none fully tested, meaning proposal generation must be throttled by demonstrated testing throughpu
+- External verifiers dominate persuadable judges: the football critic (game outcome vs the 50.2% baseline) cannot be argued with, so deterministic check
+- A 406 s / 13.5k-token generation was launched while metabolism reported stress=1.0 in conserve mode (max_tasks=3, max_iterations=1), so expensive oper
+- The same routing fixes (circuit breaker, 429-vs-502 retry policy, health ledger) were re-proposed across multiple cycles while never implemented, prov
+- A 'revise' verdict with 5 flagged risks produced 0 applied revisions, showing simulation gates are decorative unless verdicts mechanically force a rev
 - Skill proposals keep accumulating (e.g., the circuit breaker was proposed again) while none were executed this cycle, making the proposal-to-execution
 - The simulate→revise loop detected 4 risks and applied 3 revisions before execution, proving pre-flight validation catches problems cheaply and should 
 - Stress level 1.0 triggered conserve mode (max_tasks=3, max_iterations=1), which throttled spend but the swarm still launched a full new goal, so budge
@@ -51,11 +56,6 @@
 - prune_run removed 0 facts and 0 events, proving the current pruning heuristic selects nothing and memory will grow unbounded without a forced-review t
 - The football swarm terminated with converged=false at score 5 after only 2 cycles yet act_done was still emitted, meaning task completion is currently
 - Free-tier models gemma-4-26b, glm-5.2, and ox-alpha all failed with HTTP 429 across five calls while nvidia/nemotron-3-ultra succeeded on all three at
-- The conserve-state budget (max_tasks=3, max_iterations=1) completed the pipeline only because the fallback model never failed; a single fallback failu
-- Multi-variant evolution (3 candidates scored [9,6,8]) lifted a 5/10 solution to 9/10, confirming that when an initial artifact scores ≤5/10, spawning 
-- Risk-count calibration showed predicted=4 vs actual=5 (abs_error=1), indicating a systematic underestimate correctable by applying a +1 offset or ×1.2
-- Latency on the working model varied 11x (5.1s–57.0s) uncorrelated with input size (2501 tokens→5.1s vs 1678 tokens→57.0s), so timeout budgets must be 
-- z-ai/glm-5.2:free returned HTTP 429 on every attempt (8+ consecutive failures across ~20s) while nvidia/nemotron-3-ultra-550b-a55b:free succeeded 100%
 
 ---
 
