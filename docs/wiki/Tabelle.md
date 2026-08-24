@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1731 Neuronen · 30800 bewertete Synapsen
+Stand: 1736 Neuronen · 31080 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,7 +10,7 @@ Stand: 1731 Neuronen · 30800 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 150 | 0.25 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 151 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: erste eigene Ei“ (Note 1/1… | 151 | 0.23 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Best-of-N mit unbestechl“ (Note 3/1… | 151 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 151 | 0.23 |
@@ -24,7 +24,7 @@ Stand: 1731 Neuronen · 30800 bewertete Synapsen
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 151 | 0.22 |
 | 13 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 150 | 0.22 |
 | 14 | 🚫 | 🚫 Gescheiterter Versuch für „Hermes-Brücke bauen: Spr“ (Note 3/1… | 151 | 0.22 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Pipeline reparieren u“ (Note 4/1… | 150 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Ich-Kern-Injektor bauen:“ (Note 2/1… | 151 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

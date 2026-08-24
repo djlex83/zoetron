@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 18:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 18:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate repeatedly across dream cycles (backoff, circuit breaker, pre-flight checks) without being implemented or tested, creating 
+- The fallback chain works but is slow and unpredictable (21s, 27s, 63s latencies), indicating latency-aware routing should be part of model selection r
+- 429 rate-limit failures are correlated across providers (stealth/ox-alpha and z-ai/glm-5.2:free fail within the same second), so immediate model rotat
+- The proposed best-of-n tool was rejected as a placeholder (generate() contained only stub code), revealing that skill proposals are being registered w
+- The Best-of-N goal failed to converge in 2 cycles partly because the swarm was throttled by 'conserve' metabolism (max_iterations=1), so test-time-com
 - Skill proposals keep accumulating (5 new this cycle) while the drive goal notes few were ever tested, indicating a proposal-to-validation bottleneck w
 - Metabolism conserve mode (max_tasks=3, max_iterations=1) was active during the swarm start, meaning resource-constrained runs are more likely to produ
 - The whisper 'Hebbisches Lernen im Graph' failed 3 times and was parked for creator decision, revealing that autonomous retries cannot resolve tasks re
@@ -51,11 +56,6 @@
 - Goals fail by non-convergence rather than by error when the approach itself is wrong: 'Embedding-Recall' burned 3 attempts and got parked, suggesting 
 - The hand_action failure was caused by a code-level API mismatch (MemoryStore has no 'add_fact' attribute), meaning tool/interface drift between module
 - 429/502 errors arrive in correlated bursts across multiple models simultaneously (stealth/ox-alpha and z-ai/glm-5.2 failed within the same second), so
-- prune_run pruning zero facts and events while the system accumulates failures indicates pruning criteria are either broken or never matched, silently 
-- hand_action failed with exit=1 but error=null, meaning error payloads are being dropped and must capture tracebacks to be diagnosable.
-- The MemoryStore.add_fact AttributeError proves the pipeline calls undocumented interfaces, so every cross-module call needs a contract test before dep
-- Two consecutive 429 rate-limit failures on both stealth/ox-alpha and z-ai/glm-5.2:free reveal that retry logic lacks backoff and fallback ordering acr
-- The swarm's 'go' verdict from simulation did not translate into a good outcome (score 3/10), showing that simulation approval without an integration t
 
 ---
 

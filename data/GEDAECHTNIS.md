@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2100 Fakten** · Stand 2026-08-24 18:04 UTC · aktualisiert bei jedem Herzschlag
+**2112 Fakten** · Stand 2026-08-24 18:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 947
-- **swarm_artifact:** 629
-- **anti_pattern:** 168
-- **last_swarm_goal:** 146
-- **strategy:** 105
-- **last_swarm_critique:** 86
+- **dream:** 952
+- **swarm_artifact:** 631
+- **anti_pattern:** 170
+- **last_swarm_goal:** 147
+- **strategy:** 106
+- **last_swarm_critique:** 87
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*24.08. 18:41 UTC · Quelle: evolution*
+
+Gradient Boosting on Rich Feature Set with Purged Walk-Forward CV - Variant 1 (Gradient Boosting) maximizes feasibility of delivering a complete, leak-proof backtest with rich features (xG, Elo, injuries, market values) and purged walk-forward CV, 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
+*24.08. 18:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Temporal Fusion Transformer on Match Event Sequences - Build a Temporal Fusion Transformer (TFT) that ingests variable-length sequences of match events (passes, shots, pressures from StatsBomb/Wyscout) aggregated to team-game
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :0`
+*24.08. 18:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Bayesian Hierarchical Poisson Modeling (Dixon-Coles Extension) - Implement a time-weighted Dixon-Coles model with hierarchical priors for team attack/defense strengths, home advantage, and correlation parameter rho. Fit via M
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*24.08. 18:39 UTC · Quelle: builder*
+
+[score 4] # ARTEFAKT: HYBRID-ELO V2 — Elo-Rückgrat + empirisch kalibrierte Zieh-Kurve  Ansatz gemäß bewährter Strategie: Elo mit Tordifferenz-Gewichtung als Rückgrat, dazu pro Wettbewerb kalibrier
+
+### `last_swarm_critique`
+*24.08. 18:39 UTC · Quelle: critic*
+
+score=4; issues=Artefakt ist unvollständig: Die Methodik bricht mitten im Satz ab ('Methodik (Simulation-'), es fehlen Simulations-/Backtest-Ergebnisse, Metriken und der Nachweis, dass die 50,2%-Basislinie tatsächlich geschlagen wird.; Kernanforderung nicht er
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*24.08. 18:39 UTC · Quelle: builder*
+
+# ARTEFAKT: HYBRID-ELO V2 — Elo-Rückgrat + empirisch kalibrierte Zieh-Kurve  Ansatz gemäß bewährter Strategie: Elo mit Tordifferenz-Gewichtung als Rückgrat, dazu pro Wettbewerb kalibrierter Heimvortei
+
+### `last_swarm_goal`
+*24.08. 18:30 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608241829:5`
+*24.08. 18:29 UTC · Quelle: dream*
+
+Skill proposals accumulate repeatedly across dream cycles (backoff, circuit breaker, pre-flight checks) without being implemented or tested, creating a proposal-to-adoption gap.
+
+### `dream:202608241829:4`
+*24.08. 18:29 UTC · Quelle: dream*
+
+The fallback chain works but is slow and unpredictable (21s, 27s, 63s latencies), indicating latency-aware routing should be part of model selection rather than an afterthought.
+
+### `dream:202608241829:3`
+*24.08. 18:29 UTC · Quelle: dream*
+
+429 rate-limit failures are correlated across providers (stealth/ox-alpha and z-ai/glm-5.2:free fail within the same second), so immediate model rotation is ineffective and backoff is required.
+
+### `dream:202608241829:2`
+*24.08. 18:29 UTC · Quelle: dream*
+
+The proposed best-of-n tool was rejected as a placeholder (generate() contained only stub code), revealing that skill proposals are being registered without implementation verification.
+
+### `dream:202608241829:1`
+*24.08. 18:29 UTC · Quelle: dream*
+
+The Best-of-N goal failed to converge in 2 cycles partly because the swarm was throttled by 'conserve' metabolism (max_iterations=1), so test-time-compute goals must be exempted from or prioritized under budget constraints.
 
 ### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
 *24.08. 18:03 UTC · Quelle: evolution*
