@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1813 Fakten** · Stand 2026-08-24 07:05 UTC · aktualisiert bei jedem Herzschlag
+**1823 Fakten** · Stand 2026-08-24 07:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 807
-- **swarm_artifact:** 566
+- **dream:** 812
+- **swarm_artifact:** 569
 - **anti_pattern:** 140
-- **last_swarm_goal:** 120
+- **last_swarm_goal:** 121
 - **strategy:** 91
-- **last_swarm_critique:** 70
+- **last_swarm_critique:** 71
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*24.08. 07:22 UTC · Quelle: critic*
+
+score=3; issues=Regel-0-Verstoß im eigenen Protokoll: EINREICHUNG_01 enthält bereits ein fertiges Skript und ein behauptetes 'Soll-Format (von Task 1 fixiert)', während BEWEISPROTOKOLL Abschnitt 3–5 als LEER markiert ist und alle 10 Checklistenpunkte ohne Zeil
+
+### `swarm_artifact:Bestehens-Loop: laufen -> ein Fehler -> ein Fix -> wiederhol`
+*24.08. 07:19 UTC · Quelle: builder*
+
+{   "action": "run_shell",   "command": "ls -la",   "description": "List files in workspace" }
+
+### `swarm_artifact:Gerüst übernehmen, GENAU EINE Sache ändern: konstante Basisw`
+*24.08. 07:19 UTC · Quelle: builder*
+
+# EINREICHUNG_01_BASISRATEN.md — Gerüst + GENAU EINE Änderung · Fußball-Einreichung  **Ziel:** `Fußball: erste eigene Einreichung, die bewerte.py besteht` **Mandat (wörtlich):** Das vorhandene Gerüst 
+
+### `swarm_artifact:Beweis vor Code: bewerte.py sofort ausführen und Soll-Format`
+*24.08. 07:15 UTC · Quelle: builder*
+
+# BEWEISPROTOKOLL.md — Run-driven Development · Fußball-Einreichung  > **Regel 0 (unverhandelbar):** Kein Modellbau, kein Feature, keine Vorhersage-Zeile, bevor Abschnitt 3–5 mit **realen** Werten gef
+
+### `last_swarm_goal`
+*24.08. 07:07 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240706:5`
+*24.08. 07:06 UTC · Quelle: dream*
+
+Dream consolidation stores events in isolation without embedding-based associative linking, missing cross-episode patterns that could seed new skills.
+
+### `dream:202608240706:4`
+*24.08. 07:06 UTC · Quelle: dream*
+
+Model failures are not categorized by failure class (schema, signature, logic, hallucination), preventing systematic weekly fixes on the most frequent error type.
+
+### `dream:202608240706:3`
+*24.08. 07:06 UTC · Quelle: dream*
+
+Evaluator-gated goals like 'pass bewerte.py' are attempted without first synthesizing the acceptance test, leading to wasted iterations on artifacts that don't target the actual criteria.
+
+### `dream:202608240706:2`
+*24.08. 07:06 UTC · Quelle: dream*
+
+Pruning runs consistently evict zero items because retention thresholds never adapt after consecutive no-op cycles, letting decayed low-value events accumulate.
+
+### `dream:202608240706:1`
+*24.08. 07:06 UTC · Quelle: dream*
+
+Simulation verdicts of 'revise' rarely translate into queued real-execution tasks, causing feedback loops to stall without an automatic bridge.
 
 ### `last_swarm_critique`
 *24.08. 07:01 UTC · Quelle: critic*

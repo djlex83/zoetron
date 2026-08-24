@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 07:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 07:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,11 +25,11 @@
 
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Aus vielen Ideen echte Taten machen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream consolidation stores events in isolation without embedding-based associative linking, missing cross-episode patterns that could seed new skills.
+- Model failures are not categorized by failure class (schema, signature, logic, hallucination), preventing systematic weekly fixes on the most frequent
+- Evaluator-gated goals like 'pass bewerte.py' are attempted without first synthesizing the acceptance test, leading to wasted iterations on artifacts t
+- Pruning runs consistently evict zero items because retention thresholds never adapt after consecutive no-op cycles, letting decayed low-value events a
+- Simulation verdicts of 'revise' rarely translate into queued real-execution tasks, causing feedback loops to stall without an automatic bridge.
 - The whisper goal 'bewerte.py besteht' is the only goal with a binary, machine-checkable done-state, while the abstract drive_goals ('Modellfehler vers
 - Skill proposals now duplicate each other (the ~2000-token cap idea appears in at least two independent proposals) while zero have been executed, showi
 - Both prune_runs removed 0 facts and 0 events, meaning the retention policy is effectively inert and memory grows unboundedly.
@@ -51,11 +56,6 @@
 - Near‑duplicate skill proposals should be silently merged or dropped after normalizing case and punctuation to avoid redundant work.
 - Unbounded proposal backlog causes stagnation; each cycle must either implement a single queued proposal or reject it with justification, and limit new
 - Repeated 429 errors on a model should trigger a temporary exclusion from the fallback chain with exponential backoff.
-- Two consecutive cycles independently proposed near-identical backlog-gating skills, showing new proposals are generated without checking the existing 
-- About one in four model attempts returned a wrong result, indicating a systematic failure mode that should be classified (format vs. signature vs. log
-- The skill pipeline is imbalanced at roughly 60 proposals to 1 trial, so generation vastly outpaces validation and the backlog consists almost entirely
-- Both recorded prune_run executions pruned 0 facts and 0 events, proving the retention rules never fire and memory grows monotonically.
-- Consolidation and planning calls regularly emit 8k-13k output tokens at 200-300 s latency, making oversized generations the single largest consumer of
 
 ---
 
