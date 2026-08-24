@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1572 Fakten** · Stand 2026-08-24 00:53 UTC · aktualisiert bei jedem Herzschlag
+**1587 Fakten** · Stand 2026-08-24 00:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 682
-- **swarm_artifact:** 496
-- **anti_pattern:** 130
-- **last_swarm_goal:** 97
-- **strategy:** 86
-- **last_swarm_critique:** 62
+- **dream:** 687
+- **swarm_artifact:** 501
+- **anti_pattern:** 132
+- **last_swarm_goal:** 98
+- **strategy:** 87
+- **last_swarm_critique:** 63
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
+*24.08. 00:59 UTC · Quelle: evolution*
+
+Filesystem-Native Protocol with Atomic Ops - Variant 1 eliminates all external dependencies (solving the jsonschema/filelock issue), enforces atomic filesystem operations (solving truncation/corruption risk), unifies channel 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:2`
+*24.08. 00:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 9, 7]): Adapter Pattern with Channel-Specific Optimizations - Define abstract ChannelAdapter base class with read/write/validate/rotate methods. Three concrete adapters: StatusAdapter (single-file atomic swap), CommandAdapter
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:0`
+*24.08. 00:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Unified Message Bus Abstraction - Implement a single MessageBus class with pluggable backends (JSON, JSONL, SQLite, Redis) behind a unified send/receive/subscribe API. All three channels (STATUS, COMMAND, EVENT) becom
+
+### `last_swarm_critique`
+*24.08. 00:58 UTC · Quelle: critic*
+
+score=4; issues=Multiple incomplete implementations: final bruecke.py cuts off mid-validation, COMMAND read_new_commands truncated, EVENT _rotate_if_needed and read/write methods missing; External dependencies (jsonschema, filelock) used without fallback or de
+
+### `swarm_artifact:Integrate all channels into bruecke.py with full beat cycle`
+*24.08. 00:58 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Hermes-Brücke: Vollständige Integration aller drei Kanäle mit Beat-Zyklus.  Beat-Ablauf (alle 5 Sekunden):   1. STATUS schreiben (data/hermes/status.json)   2. COM
+
+### `swarm_artifact:Implement EVENT channel - bidirectional event streaming`
+*24.08. 00:57 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Hermes-Brücke: EVENT Channel - Bidirektionales Event-Streaming  Einzelne Datei data/hermes/events.jsonl mit direction-Feld (out/in). Sequenznummern für strikte Ord
+
+### `swarm_artifact:Implement COMMAND channel reader - non-blocking command poll`
+*24.08. 00:56 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Hermes-Brücke: COMMAND Channel Reader  Pollt data/hermes/commands.jsonl (newline-delimited JSON) für eingehende Befehle von Hermes. Jede Zeile: {"cmd": "...", "pay
+
+### `swarm_artifact:Implement STATUS channel writer - compact state serializatio`
+*24.08. 00:55 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Hermes-Brücke: STATUS Channel Writer  Schreibt bei jedem Beat data/hermes/status.json mit atomarem Write (temp + os.replace). Druckt das geschriebene JSON auf stdo
+
+### `swarm_artifact:Create directory structure and bridge skeleton with heartbea`
+*24.08. 00:55 UTC · Quelle: builder*
+
+```markdown # Hermes-Brücke – Sprechkanal zum Boten-Agenten  ## Verzeichnisstruktur ``` project_root/ │ ├─ data/ │   └─ hermes/ │       ├─ status.json   # geschrieben von der Brücke bei jedem Beat │  
+
+### `last_swarm_goal`
+*24.08. 00:53 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608240053:5`
+*24.08. 00:53 UTC · Quelle: dream*
+
+System runs in 'conserve' mode with high stress, yet continues spawning swarms instead of degrading gracefully.
+
+### `dream:202608240053:4`
+*24.08. 00:53 UTC · Quelle: dream*
+
+Memory pruning removes zero items, so stale context accumulates and degrades future reasoning.
+
+### `dream:202608240053:3`
+*24.08. 00:53 UTC · Quelle: dream*
+
+Simulations frequently require maximum revisions (5/5), indicating upstream design gaps before execution.
+
+### `dream:202608240053:2`
+*24.08. 00:53 UTC · Quelle: dream*
+
+Rate-limit handling is fragmented across multiple proposals but not yet unified into a single resilience layer.
+
+### `dream:202608240053:1`
+*24.08. 00:53 UTC · Quelle: dream*
+
+Free-tier model latency varies wildly (6–137 s), making it unreliable for time-critical paths.
 
 ### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
 *24.08. 00:52 UTC · Quelle: evolution*
