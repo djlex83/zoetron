@@ -13,6 +13,14 @@ sleep, a world model, a self-model, and an immune system against dead models.
 heartbeat · [2D knowledge graph](https://djlex83.github.io/zoetron/graph.html)
 · [3D brain](https://djlex83.github.io/zoetron/brain.html) — every fact it
 learns becomes a neuron; age fades the glow.
+
+**📈 Watch it get better — or not:** [football learning curve](https://djlex83.github.io/zoetron/fussball.html).
+The organism predicts match outcomes from 153,000 games (2000–2024) and is
+scored by the actual results, not by a language model. Baseline to beat:
+**50.2 %** on unseen matches, without bookmaker odds; the bookmaker gets
+51.5 %. A third set of 13,143 games is **sealed and never touches the
+organism's machine** — because a test set answered a hundred times stops
+being a test.
 The page itself is a React/Vite/Tailwind/GSAP app in [`site/`](site/) that
 builds into `docs/`.
 

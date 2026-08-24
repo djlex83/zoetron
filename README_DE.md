@@ -13,6 +13,14 @@ Neugier, Schlaf, Weltmodell, Selbstmodell und ein Immunsystem gegen tote Modelle
 jedem Herzschlag neu gezeichnet · [2D-Wissensgraph](https://djlex83.github.io/zoetron/graph.html)
 · [3D-Gehirn](https://djlex83.github.io/zoetron/brain.html) – jedes gelernte
 Faktum wird zum Neuron; das Alter lässt es verblassen.
+
+**📈 Zusehen, ob er besser wird – oder nicht:** [Fußball-Lernkurve](https://djlex83.github.io/zoetron/fussball.html).
+Der Organismus sagt Spielausgänge aus 153.000 Partien (2000–2024) vorher und
+wird vom tatsächlichen Ergebnis bewertet, nicht von einem Sprachmodell. Zu
+schlagen sind **50,2 %** auf ungesehenen Spielen, ohne Buchmacherquoten; der
+Buchmacher schafft 51,5 %. Ein dritter Satz aus 13.143 Partien ist
+**versiegelt und liegt nie auf dem Rechner des Organismus** – denn ein
+Prüfsatz, den man hundertmal befragt, ist keiner mehr.
 Die Seite selbst ist eine React/Vite/Tailwind/GSAP-App in [`site/`](site/),
 die nach `docs/` baut.
 
