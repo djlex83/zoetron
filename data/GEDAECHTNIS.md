@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1986 Fakten** · Stand 2026-08-24 13:39 UTC · aktualisiert bei jedem Herzschlag
+**1991 Fakten** · Stand 2026-08-24 14:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 902
+- **dream:** 907
 - **swarm_artifact:** 595
 - **anti_pattern:** 154
 - **last_swarm_goal:** 139
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608241400:5`
+*24.08. 14:00 UTC · Quelle: dream*
+
+Metabolism state was 'full' with low stress yet max_iterations stayed at 2, suggesting budget gates are too conservative relative to actual capacity.
+
+### `dream:202608241400:4`
+*24.08. 14:00 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are implemented (multiple proposals, zero prune activity), indicating an execution bottleneck between dreaming and doing.
+
+### `dream:202608241400:3`
+*24.08. 14:00 UTC · Quelle: dream*
+
+Rate limits make more LLM calls the wrong lever for throughput; per-call output density (more facts/tokens per call) is the effective multiplier.
+
+### `dream:202608241400:2`
+*24.08. 14:00 UTC · Quelle: dream*
+
+Repeated non-convergence (3 attempts) should trigger a problem reformulation or creator decision rather than another identical retry cycle.
+
+### `dream:202608241400:1`
+*24.08. 14:00 UTC · Quelle: dream*
+
+Tasks fail to converge when act_done is allowed before the swarm reports converged=true, as seen in the Fußball task scoring 4/10 across 3 attempts without convergence.
 
 ### `strategy:fakten_ausbeute_pro_beat_verdreifachen_ohne_qualit`
 *24.08. 13:38 UTC · Quelle: evolution*

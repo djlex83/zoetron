@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 13:39:36",
+ "stand": "2026-08-24 14:01:32",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -73,9 +73,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "extern-quote-in-drive-raus-aus-der-selbs.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.784,
+ "haende_quote": 0.787,
  "simulationen_angewandt": 89,
  "swarm_scores": {
   "n": 39,
@@ -84,8 +90,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 36,
-   "schnitt": 3.83
+   "n": 35,
+   "schnitt": 3.77
   },
   "bau": {
    "n": 3,

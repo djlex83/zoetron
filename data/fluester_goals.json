@@ -80,13 +80,15 @@
   "why": "Mehr LLM-Aufrufe sind wegen Rate-Limits (Anfrage-Obergrenzen) der falsche Hebel. Drei Umbauten: 1) DREAM und RETRO liefern pro Aufruf ein JSON-Array aus 5-10 atomaren Fakten statt Fließtext. 2) HANDS schreibt nach jeder Ausführung automatisch Ground-Truth-Fakten (Ground Truth = maschinell gemessene Wahrheit: Laufzeit, Exit-Code, Output) per Code, ohne LLM. 3) Neuheitsfilter vor dem Speichern: zu ähnliche Fakten werden konsolidiert statt neu angelegt. Fertig wenn: Fakten pro Beat mindestens 3x höher, die Neuheitsquote (angenommen/erzeugt) wird gemessen, bleibt über 60 Prozent, und beides steht im Wochenreport.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  },
  {
   "title": "Extern-Quote in DRIVE: raus aus der Selbst-Schleife",
   "why": "Fast alle deine selbstgewählten Ziele drehen sich um deine eigenen Modellfehler - das ist Nabelschau. Ändere drive.py: jedes 3. selbstgewählte Ziel MUSS ein externes Deliverable haben (etwas, das ein Mensch außerhalb von dir direkt nutzen kann, z.B. ein Report, ein Werkzeug, eine Analyse) und wird im Ziel mit extern:true markiert. Fertig wenn: die Extern-Quote im Wochenreport erscheint und von den nächsten 9 Drive-Zielen mindestens 3 als extern markiert und erfüllt sind.",
   "signal": "failure",
-  "_done": false
+  "_done": false,
+  "_versuche": 1
  },
  {
   "title": "Embedding-Recall statt reinem Wortvergleich",

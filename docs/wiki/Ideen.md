@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 13:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 14:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,17 +23,17 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Wiederkehrende Fehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
+- Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 2×)*
 - Modellfehler vermeiden *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässig abschließen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism state was 'full' with low stress yet max_iterations stayed at 2, suggesting budget gates are too conservative relative to actual capacity.
+- Skill proposals accumulate faster than they are implemented (multiple proposals, zero prune activity), indicating an execution bottleneck between drea
+- Rate limits make more LLM calls the wrong lever for throughput; per-call output density (more facts/tokens per call) is the effective multiplier.
+- Repeated non-convergence (3 attempts) should trigger a problem reformulation or creator decision rather than another identical retry cycle.
+- Tasks fail to converge when act_done is allowed before the swarm reports converged=true, as seen in the Fußball task scoring 4/10 across 3 attempts wi
 - Latency variance spans 1.8s–142.5s and output tokens hit the ~4k cap repeatedly, indicating long-form generation stages dominate runtime; chunking lar
 - Prediction calibration error of ±1 on a 50.2% baseline suggests predictions are made before the revision cycle completes; calibrate against post-revis
 - The task registry gap is the root cause of both stalled swarms and untested skills: without status tracking (open/done/failed), background work is sil
@@ -51,11 +56,6 @@
 - The same recall key 'last_swarm_goal' was fetched three times in one run, showing redundant memory reads that waste iterations under a max_iterations=
 - Output token counts vary 40x between calls on similar inputs (19 to 24326 tokens), indicating unbounded generation is the primary cost and timeout ris
 - Latency is highly bimodal (2.6s to 505s for the same model), so any pipeline design must assume worst-case multi-minute stalls rather than average-cas
-- Recurring proposals across multiple dream cycles (pacing/backoff, budget gates, completion gating) indicate these are systemic gaps, not one-off fixes
-- Simulation with revision loops (5 risks/5 revisions) works well but must be budget-scaled, since conserve-mode caps of 1 iteration conflict with revis
-- Prune runs repeatedly removing 0 items while metabolism stress stays high (>0.6) shows pruning thresholds are misaligned with actual memory pressure.
-- Skill proposals accumulate faster than they are tested (45 pending), so the bottleneck is the idea-to-implementation pipeline, not idea generation.
-- Nearly half of all model failures trace to unmanaged free-tier rate limits and oversized single calls (400s+ latencies), not model quality itself.
 
 ---
 
