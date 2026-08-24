@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1648 Fakten** · Stand 2026-08-24 02:06 UTC · aktualisiert bei jedem Herzschlag
+**1663 Fakten** · Stand 2026-08-24 02:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 717
-- **swarm_artifact:** 515
+- **dream:** 727
+- **swarm_artifact:** 518
 - **anti_pattern:** 138
-- **last_swarm_goal:** 103
+- **last_swarm_goal:** 104
 - **strategy:** 90
-- **last_swarm_critique:** 66
+- **last_swarm_critique:** 67
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*24.08. 02:21 UTC · Quelle: critic*
+
+score=6; issues=Material contradiction between A1 and C1 on the evaluator's scoring semantics: A1 documents punkte() as multi-class LogLoss (lower=better, uniform baseline ln(3)~1.0986, 'no quality gate', no threshold), while C1 reports score 0.4868 vs SCHWELL
+
+### `swarm_artifact:Run bewerte.py against the new submission and verify it pass`
+*24.08. 02:19 UTC · Quelle: builder*
+
+# Artefakt C1: Evaluator-Run `bewerte.py` × `einreichung.py` – Verifikationsbericht  **Aufgabe:** Run bewerte.py against the new submission and verify it passes **Attempt:** 1/3 · **Typ:** build · **S
+
+### `swarm_artifact:Create minimal prediction module with required functions`
+*24.08. 02:17 UTC · Quelle: builder*
+
+# Artefakt B1: `einreichung.py` – Minimales Vorhersagemodell (Heimvorteil + Poisson)  **Aufgabe:** Create minimal prediction module with required functions **Attempt:** 1/3 · **Typ:** build · **Status
+
+### `swarm_artifact:Inspect bewerte.py to understand the required interface`
+*24.08. 02:11 UTC · Quelle: builder*
+
+# Artefakt A1: Interface-Vertrag von `bewerte.py`  **Aufgabe:** Inspect bewerte.py → Signaturen, Rückgabetypen, Datenformate extrahieren **Attempt:** 1/3 · **Typ:** build · **Status:** Vertrag dokumen
+
+### `last_swarm_goal`
+*24.08. 02:08 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240208:5`
+*24.08. 02:08 UTC · Quelle: dream*
+
+The football goal advanced because its acceptance criterion (pass bewerte.py) was fixed before building and scope was minimized to one file with three functions.
+
+### `dream:202608240208:4`
+*24.08. 02:08 UTC · Quelle: dream*
+
+A swarm was launched while metabolism reported stress 1.0/conserve with max_tasks 3, proving budget fields are currently advisory rather than enforced at launch time.
+
+### `dream:202608240208:3`
+*24.08. 02:08 UTC · Quelle: dream*
+
+The Hermes bridge burned 3 attempts without convergence because no written interface contract existed before coding started; a spec-first approach would have converged in one attempt.
+
+### `dream:202608240208:2`
+*24.08. 02:08 UTC · Quelle: dream*
+
+Latency scaled almost linearly with output size (176 tokens -> 4.5s vs 8526 tokens -> 221s), making max_tokens caps per task class the cheapest latency lever.
+
+### `dream:202608240208:1`
+*24.08. 02:08 UTC · Quelle: dream*
+
+Five distinct free models returned 429 within the same second, indicating account/IP-level throttling rather than per-model quotas, so rotating models on one provider cannot restore service.
+
+### `dream:202608240207:5`
+*24.08. 02:07 UTC · Quelle: dream*
+
+The Hermes bridge auto-parked after 3 non-convergent attempts instead of looping, validating the 3-strike parking rule as the default escape hatch for any task that fails to converge.
+
+### `dream:202608240207:4`
+*24.08. 02:07 UTC · Quelle: dream*
+
+The football goal advanced only after its scope was shrunk to one file passing bewerte.py, confirming that the smallest evaluator-passing artifact is the correct first deliverable for gated goals.
+
+### `dream:202608240207:3`
+*24.08. 02:07 UTC · Quelle: dream*
+
+Successful call latency scaled with output size (4.5s at 176 output tokens vs 221s at 8526 output tokens), so uncapped generation is the main latency risk and output tokens must be bounded on planning/consolidation calls.
+
+### `dream:202608240207:2`
+*24.08. 02:07 UTC · Quelle: dream*
+
+Model errors require class-specific handling: 429 means backoff-and-rotate, 403 means permanent blacklist, 502 means one retry then skip - a single generic retry policy wastes the retry budget.
+
+### `dream:202608240207:1`
+*24.08. 02:07 UTC · Quelle: dream*
+
+429 rate-limit errors clustered across five different free-tier models within seconds, proving that fallback within the same free pool is useless - failover must cross tiers (paid or local), not just model names.
 
 ### `swarm_artifact:Rekonstruktion: bewerte.py-Kontrakt und Datenlayout lesen`
 *24.08. 02:04 UTC · Quelle: builder*
