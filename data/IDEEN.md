@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 04:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 04:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,12 +25,12 @@
 
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
+- Aus vielen Ideen echte Taten machen *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals are reworded between cycles ('Modellfehler reduzieren' became 'Modellfehler beheben'), indicating goals have no stable identity and are re
+- The system issued 217s/8k-token calls while in conserve mode (stress 0.83, max_tasks 3), proving metabolic budgets are declared but never enforced at 
+- Simulations that end in a 'revise' verdict generated revisions but no queued real-execution task, so their entire compute cost converted into zero act
+- Skill proposals recur across dream cycles (the token-cap idea was re-proposed nearly verbatim) because they lack persistent IDs and status tracking, c
+- Latency spikes above 200s occur exclusively on calls emitting ~8000+ output tokens, so output length—not provider speed—is the dominant latency driver
 - The failure-driven goal 'why do models fail' was re-emitted across consecutive cycles without resolution, indicating that recurring drives signal an u
 - Model latency is strongly bimodal (20–50s vs 125–172s), so routing long-generation calls away from slow endpoints whenever rolling p95 exceeds 60s wou
 - Conserve mode (stress 1.0, max 3 tasks, 1 iteration) failed to prevent multiple >120s, 2–7k-token model calls, so budget limits must constrain call co
@@ -51,11 +56,6 @@
 - Latency spans 27s-274s and tracks output size (the 274s call emitted ~11.6k tokens), making oversized generations the main driver of slow calls and pr
 - With metabolism at stress 1.0/conserve (max 3 tasks, 1 iteration) and only 3 of 7 swarm tasks finished, starting new tasks under a constrained budget 
 - Skill proposals accumulate untested (50+ backlog) and the same model-health/fallback idea has been re-proposed at least three times, so the real bottl
-- The simulate->revise->execute pipeline (verdict 'revise', 4 revisions applied before any real run) is the highest-value quality gate observed and shou
-- Skill proposals accumulate faster than they get implemented (5 proposed, 0 implemented this cycle), reproducing the 'Liegengebliebene Ideen' failure m
-- A new swarm was started while stress=1.0 and max_iterations=1 (conserve budget), which structurally guarantees unfinished work piles up instead of com
-- Effort is systematically underestimated by ~2x (predicted 3 vs actual 6 iterations for the football goal), so raw predictions need a persistent correc
-- Models returning HTTP 429 are reliably bypassed by immediate fallback to the last known-good model (nemotron-3-ultra), so retrying a rate-limited mode
 
 ---
 

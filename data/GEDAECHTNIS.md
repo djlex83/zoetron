@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1726 Fakten** · Stand 2026-08-24 04:27 UTC · aktualisiert bei jedem Herzschlag
+**1734 Fakten** · Stand 2026-08-24 04:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 762
-- **swarm_artifact:** 538
+- **dream:** 767
+- **swarm_artifact:** 540
 - **anti_pattern:** 138
-- **last_swarm_goal:** 111
+- **last_swarm_goal:** 112
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,46 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Gerüst + Daten inspizieren: Formate der Trainings-/Testdaten`
+*24.08. 04:40 UTC · Quelle: builder*
+
+# ARTEFAKT: `scaffold_data_recon.md` — Gerüst- & Datenformat-Inspektion (Aufgabe 2)  **Zweck:** Findet Gerüst (Scaffold/Vorlage) und alle CSVs, druckt **Header + erste Zeilen** (Erfolgskriterium), pro
+
+### `swarm_artifact:Evaluator-Kontrakt extrahieren: bewerte.py systematisch lese`
+*24.08. 04:35 UTC · Quelle: builder*
+
+# ARTEFAKT: `evaluator_contract_recon.md` — Kontrakt-Extraktion aus bewerte.py (v2, beide SIMULATION-FIXES eingebaut)  **Zweck:** Der Evaluator-Code ist die einzige Wahrheitsquelle. Dieses Skript lies
+
+### `last_swarm_goal`
+*24.08. 04:28 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240428:5`
+*24.08. 04:28 UTC · Quelle: dream*
+
+Drive goals are reworded between cycles ('Modellfehler reduzieren' became 'Modellfehler beheben'), indicating goals have no stable identity and are regenerated rather than tracked to completion.
+
+### `dream:202608240428:4`
+*24.08. 04:28 UTC · Quelle: dream*
+
+The system issued 217s/8k-token calls while in conserve mode (stress 0.83, max_tasks 3), proving metabolic budgets are declared but never enforced at the individual call level.
+
+### `dream:202608240428:3`
+*24.08. 04:28 UTC · Quelle: dream*
+
+Simulations that end in a 'revise' verdict generated revisions but no queued real-execution task, so their entire compute cost converted into zero actions.
+
+### `dream:202608240428:2`
+*24.08. 04:28 UTC · Quelle: dream*
+
+Skill proposals recur across dream cycles (the token-cap idea was re-proposed nearly verbatim) because they lack persistent IDs and status tracking, contributing to only 3 of 53 proposals ever being implemented.
+
+### `dream:202608240428:1`
+*24.08. 04:28 UTC · Quelle: dream*
+
+Latency spikes above 200s occur exclusively on calls emitting ~8000+ output tokens, so output length—not provider speed—is the dominant latency driver.
 
 ### `swarm_artifact:Echten Evaluator ausfuehren (oder Fallback-Simulation)`
 *24.08. 04:26 UTC · Quelle: builder*
