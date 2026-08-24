@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1910 Fakten** · Stand 2026-08-24 10:25 UTC · aktualisiert bei jedem Herzschlag
+**1916 Fakten** · Stand 2026-08-24 10:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 862
+- **dream:** 867
 - **swarm_artifact:** 583
 - **anti_pattern:** 146
-- **last_swarm_goal:** 132
+- **last_swarm_goal:** 133
 - **strategy:** 94
 - **last_swarm_critique:** 74
 - **creator_teaching:** 8
@@ -18,6 +18,36 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*24.08. 10:27 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608241027:5`
+*24.08. 10:27 UTC · Quelle: dream*
+
+Pruning ran but removed zero facts/events despite repeated failures, indicating the pruning trigger threshold is never reached under error-heavy workloads.
+
+### `dream:202608241027:4`
+*24.08. 10:27 UTC · Quelle: dream*
+
+Conservative metabolism budget (1 iteration, 3 tasks) is incompatible with multi-model fallback chains that consume 5+ model calls per logical step.
+
+### `dream:202608241027:3`
+*24.08. 10:27 UTC · Quelle: dream*
+
+Simulation produced 5 revisions but only 3 were applied, revealing a silent drop between verdict and execution that undermines the revision loop.
+
+### `dream:202608241027:2`
+*24.08. 10:27 UTC · Quelle: dream*
+
+stealth/ox-alpha latency varies 20x (11.8s–244.9s), making fixed timeouts either wasteful or deadline-missing; adaptive p95-based timeouts are mandatory.
+
+### `dream:202608241027:1`
+*24.08. 10:27 UTC · Quelle: dream*
+
+OpenRouter rate limits are shared across all free models, causing correlated 429 failures that require provider-level circuit breaking rather than per-model handling.
 
 ### `last_swarm_goal`
 *24.08. 10:10 UTC · Quelle: system*

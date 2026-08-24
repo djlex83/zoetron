@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 10:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 10:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,26 +9,26 @@
 - Instrument prune_run with candidate_generated vs candidate_pruned metrics; auto-tune aggressiveness when prune *(hatte die Idee 5×)*
 - Add mandatory invocation smoke test in act_done: execute each new tool once with synthetic input and verify no *(hatte die Idee 4×)*
 - Build skill_proposal_filter that scores proposals by novelty, feasibility, and alignment with active drive goa *(hatte die Idee 4×)*
-- Add automated contract tests for the MemoryStore interface (add_fact, get_facts, etc.) to run on every CI buil *(hatte die Idee 3×)*
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Enforce a minimum sample size (e.g., N=10) of recent (predicted, actual) pairs before allowing score predictor *(hatte die Idee 2×)*
-- Require a minimum of 3 swarm cycles or a convergence gate (score≥8) before accepting evolution winners; otherw *(hatte die Idee 2×)*
 - Implement exponential‑backoff retry with model failover for latency >30 s or 5xx errors, logging each failover *(hatte die Idee 2×)*
 - Make simulation revision application atomic: apply all flagged revisions, then re‑simulate and abort if any re *(hatte die Idee 2×)*
+- Add automated contract tests for the MemoryStore interface (add_fact, get_facts, etc.) to run on every CI buil *(hatte die Idee 2×)*
 - Deploy an error‑pattern logger that records each model failure with context (latency, input snippet) and trigg *(hatte die Idee 2×)*
 - Add a latency SLA guard to model_ok events: if p95 latency > 30s, route to fallback model and flag infrastruct *(hatte die Idee 2×)*
 - Make simulation revision application transactional: apply all revisions as one batch, re-simulate, and roll ba *(hatte die Idee 2×)*
+- Add a startup contract test asserting every MemoryStore method invoked by hands-execute (starting with add_fac *(hatte die Idee 2×)*
+- Require the simulator to enumerate a minimum number of concrete risks even for 'go' verdicts and route any zer *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning ran but removed zero facts/events despite repeated failures, indicating the pruning trigger threshold is never reached under error-heavy workl
+- Conservative metabolism budget (1 iteration, 3 tasks) is incompatible with multi-model fallback chains that consume 5+ model calls per logical step.
+- Simulation produced 5 revisions but only 3 were applied, revealing a silent drop between verdict and execution that undermines the revision loop.
+- stealth/ox-alpha latency varies 20x (11.8s–244.9s), making fixed timeouts either wasteful or deadline-missing; adaptive p95-based timeouts are mandato
+- OpenRouter rate limits are shared across all free models, causing correlated 429 failures that require provider-level circuit breaking rather than per
 - The skill backlog reached ~35 proposals with almost none fully tested, meaning proposal generation must be throttled by demonstrated testing throughpu
 - External verifiers dominate persuadable judges: the football critic (game outcome vs the 50.2% baseline) cannot be argued with, so deterministic check
 - A 406 s / 13.5k-token generation was launched while metabolism reported stress=1.0 in conserve mode (max_tasks=3, max_iterations=1), so expensive oper
@@ -51,11 +56,6 @@
 - Stress level 1.0 triggered conserve mode (max_tasks=3, max_iterations=1), which throttled spend but the swarm still launched a full new goal, so budge
 - Model reliability is highly uneven: nvidia/nemotron-3-ultra succeeded twice (12s and 80s) while stealth/ox-alpha and z-ai/glm-5.2 failed repeatedly, m
 - OpenRouter free-tier rate limits (HTTP 429) caused the majority of model failures, clustering when several requests fire within seconds, so request pa
-- Successful free-tier calls took 12–35 s each, so 429-driven fallback chains can push single-request wall time beyond a minute unless successful respon
-- Five skill_proposals were generated in one session with zero follow-up executions, exactly reproducing the gap flagged by drive_goal 'Fertigkeiten wir
-- prune_run removed 0 facts and 0 events, proving the current pruning heuristic selects nothing and memory will grow unbounded without a forced-review t
-- The football swarm terminated with converged=false at score 5 after only 2 cycles yet act_done was still emitted, meaning task completion is currently
-- Free-tier models gemma-4-26b, glm-5.2, and ox-alpha all failed with HTTP 429 across five calls while nvidia/nemotron-3-ultra succeeded on all three at
 
 ---
 
