@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 17:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 17:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,8 +10,6 @@
 - Add mandatory invocation smoke test in act_done: execute each new tool once with synthetic input and verify no *(hatte die Idee 4×)*
 - Build skill_proposal_filter that scores proposals by novelty, feasibility, and alignment with active drive goa *(hatte die Idee 4×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Make prune_run emit a warning and trigger a criteria audit when facts_pruned == 0 and events_pruned == 0 for t *(hatte die Idee 2×)*
-- Add a revision‑completeness gate that blocks act_done until every simulation‑flagged risk is either fixed or e *(hatte die Idee 2×)*
 - Create a proposal ledger keyed by content hash that tracks repetition count; auto‑promote any proposal seen in *(hatte die Idee 2×)*
 - Add a revision‑completeness gate that blocks act_done until every simulation‑flagged risk is fixed or explicit *(hatte die Idee 2×)*
 - Enforce per‑model latency SLA: timeout = 2× rolling median, cancel on breach, and fallback to a safer model or *(hatte die Idee 2×)*
@@ -20,27 +18,34 @@
 - Build a simulation‑to‑production gate: after a successful re‑simulation, atomically apply the revision batch a *(hatte die Idee 2×)*
 - Add an interface validation layer that checks for required methods (e.g., add_fact) on dependencies before inv *(hatte die Idee 2×)*
 - Integrate a variant evaluation step in the evolution pipeline that scores all candidates and automatically pro *(hatte die Idee 2×)*
+- Deploy unified validation middleware that checks interface contracts, method signatures, and numeric bounds fo *(hatte die Idee 2×)*
+- Implement a three‑strike prune audit: after three consecutive zero‑prune runs, emit a warning and open a crite *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 2×)*
 - Träume für neue Fähigkeiten nutzen *(wieder aufgegriffen: 2×)*
 - Modellfehler vermeiden *(wieder aufgegriffen: 2×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässig abschließen *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässiger zum Abschluss bringen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively dead weight and its criteria need recalibration against a
+- Reflex mode (single known-good script, no model call) succeeded in 15s where deliberative loops take minutes, confirming that well-defined goals shoul
+- Goals fail by non-convergence rather than by error when the approach itself is wrong: 'Embedding-Recall' burned 3 attempts and got parked, suggesting 
+- The hand_action failure was caused by a code-level API mismatch (MemoryStore has no 'add_fact' attribute), meaning tool/interface drift between module
+- 429/502 errors arrive in correlated bursts across multiple models simultaneously (stealth/ox-alpha and z-ai/glm-5.2 failed within the same second), so
 - prune_run pruning zero facts and events while the system accumulates failures indicates pruning criteria are either broken or never matched, silently 
 - hand_action failed with exit=1 but error=null, meaning error payloads are being dropped and must capture tracebacks to be diagnosable.
 - The MemoryStore.add_fact AttributeError proves the pipeline calls undocumented interfaces, so every cross-module call needs a contract test before dep
@@ -51,11 +56,6 @@
 - A hard crash occurred in hands-execute because MemoryStore.add_fact does not exist, meaning write-paths to memory are called without any interface con
 - Evolution found a winning variant scoring 8/10, but the pipeline discarded it and re-ran the swarm anyway, so the single largest quality gain in the r
 - The swarm failed to converge (score 4, 2 cycles) because the critic's core complaint — tautological self-referential output ('Selbst-Schleife') — was 
-- Calibration was exact this cycle (predicted 4 vs actual 4), showing the predictor is reliable at low scores and can be trusted for early-abort decisio
-- Simulation gating worked as intended: an initial 'revise' verdict with 5 risks/5 revisions preceded failure-level output, while the post-evolution 'go
-- The evolution loop recovered a failing task (4/10) to a winner variant scoring 8/10 by generating 3 variants and selecting via critic scores, validati
-- Nemotron-3-ultra's '502 overloaded' error was transient: the same model succeeded twice shortly after, confirming that free-tier endpoints need retry-
-- 429 rate-limit errors cluster in bursts across multiple models within seconds (ts 1787581873-1787581908), indicating shared upstream throttling rather
 
 ---
 

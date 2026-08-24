@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2072 Fakten** · Stand 2026-08-24 17:08 UTC · aktualisiert bei jedem Herzschlag
+**2088 Fakten** · Stand 2026-08-24 17:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 937
-- **swarm_artifact:** 621
-- **anti_pattern:** 164
-- **last_swarm_goal:** 144
-- **strategy:** 103
-- **last_swarm_critique:** 84
+- **dream:** 942
+- **swarm_artifact:** 627
+- **anti_pattern:** 166
+- **last_swarm_goal:** 145
+- **strategy:** 104
+- **last_swarm_critique:** 85
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,86 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:best_of_n_mit_unbestechlichem_prüfer__test_time_co`
+*24.08. 17:39 UTC · Quelle: evolution*
+
+Sandboxed Adversarial Fuzzing with Property-Based Contracts - Variant 2 provides the most practical and robust solution. It uses executable contracts and adversarial fuzzing in a sandbox, which directly addresses the previous issues of trunca
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Best-of-N mit unbestechl:1`
+*24.08. 17:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Formal Specification + Theorem Prover Verification - Shift from code generation to specification generation. The generator produces: (1) a formal spec in Lean 4 / Coq / F* expressing pre/post conditions and invariants, (2) ex
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Best-of-N mit unbestechl:0`
+*24.08. 17:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Type-Safe Generation via Language Server Protocol Integration - Embed a full Language Server (pyright/ruff for Python, tsserver for TS, rust-analyzer for Rust) into the generation loop. The generator emits code tokens; after 
+
+### `swarm_artifact:Create Best-of-N orchestrator with winner selection logic`
+*24.08. 17:37 UTC · Quelle: builder*
+
+[score 3] ```python #!/usr/bin/env python3 """ Best-of-N Orchestrator with Winner Selection Logic. Wires generator + verifier: runs N candidates in parallel, feeds each to verifier, ranks by score
+
+### `swarm_artifact:Implement parallel candidate generator across model endpoint`
+*24.08. 17:37 UTC · Quelle: builder*
+
+[score 3] ```python #!/usr/bin/env python3 """ Parallel Candidate Generator for Best-of-N Test-Time-Compute. Spawns N concurrent requests to heterogeneous model endpoints (Ollama, OpenAI-compatibl
+
+### `swarm_artifact:Build deterministic verifier harness with JSON schema valida`
+*24.08. 17:37 UTC · Quelle: builder*
+
+[score 3] ```python #!/usr/bin/env python3 """ Deterministic Verifier Harness with JSON Schema Validation Loads test cases, executes candidates in isolated subprocesses, validates outputs, returns
+
+### `last_swarm_critique`
+*24.08. 17:37 UTC · Quelle: critic*
+
+score=3; issues=All three artifacts are truncated mid-code (verifier cuts off at '# User cod', generator mid-retry-logic, orchestrator mid-ScoringWeights), so none are runnable or reviewable as complete deliverables.; FlexibleOutputParser directly contradicts 
+
+### `swarm_artifact:Create Best-of-N orchestrator with winner selection logic`
+*24.08. 17:36 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Best-of-N Orchestrator with Winner Selection Logic. Wires generator + verifier: runs N candidates in parallel, feeds each to verifier, ranks by score (primary) the
+
+### `swarm_artifact:Implement parallel candidate generator across model endpoint`
+*24.08. 17:35 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Parallel Candidate Generator for Best-of-N Test-Time-Compute. Spawns N concurrent requests to heterogeneous model endpoints (Ollama, OpenAI-compatible), collects r
+
+### `swarm_artifact:Build deterministic verifier harness with JSON schema valida`
+*24.08. 17:35 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Deterministic Verifier Harness with JSON Schema Validation Loads test cases, executes candidates in isolated subprocesses, validates outputs, returns structured sc
+
+### `last_swarm_goal`
+*24.08. 17:30 UTC · Quelle: system*
+
+Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
+
+### `dream:202608241729:5`
+*24.08. 17:29 UTC · Quelle: dream*
+
+Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively dead weight and its criteria need recalibration against actual memory volume.
+
+### `dream:202608241729:4`
+*24.08. 17:29 UTC · Quelle: dream*
+
+Reflex mode (single known-good script, no model call) succeeded in 15s where deliberative loops take minutes, confirming that well-defined goals should be routed to cached reflexes first.
+
+### `dream:202608241729:3`
+*24.08. 17:29 UTC · Quelle: dream*
+
+Goals fail by non-convergence rather than by error when the approach itself is wrong: 'Embedding-Recall' burned 3 attempts and got parked, suggesting attempts should be spent on redesigning the approach, not retrying variations of it.
+
+### `dream:202608241729:2`
+*24.08. 17:29 UTC · Quelle: dream*
+
+The hand_action failure was caused by a code-level API mismatch (MemoryStore has no 'add_fact' attribute), meaning tool/interface drift between modules is a recurring failure class that needs an interface contract or schema check before execution.
+
+### `dream:202608241729:1`
+*24.08. 17:29 UTC · Quelle: dream*
+
+429/502 errors arrive in correlated bursts across multiple models simultaneously (stealth/ox-alpha and z-ai/glm-5.2 failed within the same second), so rotating to another model does not help — only waiting does.
 
 ### `strategy:best_of_n_mit_unbestechlichem_prüfer__test_time_co`
 *24.08. 17:06 UTC · Quelle: evolution*

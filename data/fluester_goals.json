@@ -112,7 +112,7 @@
   "why": "So kauft man heute real mehr Intelligenz: mehr Denkzeit pro Aufgabe statt größeres Modell (Test-Time-Compute = Rechenleistung zur Laufzeit erhöhen). Für Ziele mit automatischem Test erzeugt der Swarm 3 Lösungskandidaten parallel über verschiedene Modelle; die Tests wählen den Sieger, Verlierer werden Anti-Patterns. Fertig wenn: auf mindestens 10 Benchmark-Code-Aufgaben die Best-of-3-Erfolgsquote nachweisbar über der Einzelversuch-Quote liegt und beide Quoten im Report stehen.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 0
+  "_versuche": 1
  },
  {
   "title": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren",
