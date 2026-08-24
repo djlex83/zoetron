@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1889 Fakten** · Stand 2026-08-24 09:14 UTC · aktualisiert bei jedem Herzschlag
+**1895 Fakten** · Stand 2026-08-24 09:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 847
+- **dream:** 852
 - **swarm_artifact:** 581
 - **anti_pattern:** 146
-- **last_swarm_goal:** 128
+- **last_swarm_goal:** 129
 - **strategy:** 94
 - **last_swarm_critique:** 74
 - **creator_teaching:** 8
@@ -18,6 +18,36 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*24.08. 09:16 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608240916:5`
+*24.08. 09:16 UTC · Quelle: dream*
+
+Successful free-tier calls took 12–35 s each, so 429-driven fallback chains can push single-request wall time beyond a minute unless successful responses are cached and calls are spaced.
+
+### `dream:202608240916:4`
+*24.08. 09:16 UTC · Quelle: dream*
+
+Five skill_proposals were generated in one session with zero follow-up executions, exactly reproducing the gap flagged by drive_goal 'Fertigkeiten wirklich ausführen' — proposals have no automatic promotion path into the task queue.
+
+### `dream:202608240916:3`
+*24.08. 09:16 UTC · Quelle: dream*
+
+prune_run removed 0 facts and 0 events, proving the current pruning heuristic selects nothing and memory will grow unbounded without a forced-review trigger.
+
+### `dream:202608240916:2`
+*24.08. 09:16 UTC · Quelle: dream*
+
+The football swarm terminated with converged=false at score 5 after only 2 cycles yet act_done was still emitted, meaning task completion is currently decoupled from convergence and needs a hard gate.
+
+### `dream:202608240916:1`
+*24.08. 09:16 UTC · Quelle: dream*
+
+Free-tier models gemma-4-26b, glm-5.2, and ox-alpha all failed with HTTP 429 across five calls while nvidia/nemotron-3-ultra succeeded on all three attempts, so choosing the proven-reliable model first is the dominant reliability lever, more than retry logic.
 
 ### `swarm_artifact:Metrik-Vertrag & Baseline-Anker fixieren (Eval-Harness)`
 *24.08. 09:10 UTC · Quelle: builder*

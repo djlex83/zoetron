@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 09:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 09:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
-- Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 - Mehr Fähigkeiten in Ziele umwandeln *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 2×)*
 - Wiederkehrende Fehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
+- Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful free-tier calls took 12–35 s each, so 429-driven fallback chains can push single-request wall time beyond a minute unless successful respon
+- Five skill_proposals were generated in one session with zero follow-up executions, exactly reproducing the gap flagged by drive_goal 'Fertigkeiten wir
+- prune_run removed 0 facts and 0 events, proving the current pruning heuristic selects nothing and memory will grow unbounded without a forced-review t
+- The football swarm terminated with converged=false at score 5 after only 2 cycles yet act_done was still emitted, meaning task completion is currently
+- Free-tier models gemma-4-26b, glm-5.2, and ox-alpha all failed with HTTP 429 across five calls while nvidia/nemotron-3-ultra succeeded on all three at
 - The conserve-state budget (max_tasks=3, max_iterations=1) completed the pipeline only because the fallback model never failed; a single fallback failu
 - Multi-variant evolution (3 candidates scored [9,6,8]) lifted a 5/10 solution to 9/10, confirming that when an initial artifact scores ≤5/10, spawning 
 - Risk-count calibration showed predicted=4 vs actual=5 (abs_error=1), indicating a systematic underestimate correctable by applying a +1 offset or ×1.2
@@ -51,11 +56,6 @@
 - The critic's blocking issue ('Tool calls') is an execution/harness-format failure that text-only variant mutation cannot fix; candidates must be valid
 - Evolution produced variants scoring up to 9/10 yet the final swarm artifact still scored 3/10, meaning the winning variant was never integrated into t
 - z-ai/glm-5.2:free returned HTTP 429 on five consecutive calls while nvidia/nemotron-3-ultra succeeded every time, showing the system retries a known-d
-- Risk calibration was exact for the 'Fußball erste Einreichung' goal (predicted 3, actual 3, abs_error 0), so the current risk-scoring heuristic needs 
-- dots-studio/dots-3-note-preview:free completed every call successfully (including a 4573-token generation), making it the most reliable fallback obser
-- Error class dictates strategy: 429 means rotate to a different model or cool down, while 502 means wait briefly and retry the same model.
-- nvidia/nemotron-3-ultra failed intermittently with 502 'upstream overloaded' yet succeeded on most attempts, showing its failures are transient capaci
-- Free-tier models z-ai/glm-5.2 and google/gemma-* returned persistent 429 rate-limit errors across the whole session, so immediate retries against them
 
 ---
 
