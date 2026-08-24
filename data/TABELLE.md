@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1501 Neuronen · 24080 bewertete Synapsen
+Stand: 1509 Neuronen · 24226 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -46,4 +46,4 @@ Stand: 1501 Neuronen · 24080 bewertete Synapsen
 | 12 | **0.53** | 🛠 „Define HealthRegister data model“. Ergebnis: … | 🛠 „Define Injector Pydantic Model“. Ergebnis: ``… |
 | 13 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
 | 14 | **0.52** | 💭 hands-execute crashed with AttributeError 'Mem… | 💭 hands-execute crashed with AttributeError: Mem… |
-| 15 | **0.52** | 🛠 „Define Hermes Communication Protocol Contract… | 🛠 „Define Hermes communication protocol and mess… |
+| 15 | **0.52** | 💭 Prune runs consistently report 0 facts and 0 e… | 💭 Both prune runs removed 0 facts and 0 events d… |

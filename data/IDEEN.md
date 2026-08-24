@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 05:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 06:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive telemetry reports over a third of attempts failing while self-checks run rarely, making acceptance-test-first execution (run bewerte.py before b
+- Both prune runs removed 0 facts and 0 events despite continuous event accumulation, indicating the pruning criteria never fire and memory grows unboun
+- The 'revise' simulation produced 5 revisions but only 3 were applied and none became queued real executions, exactly reproducing the drive-detected id
+- TokenBudgetCap was independently proposed twice in one session with different thresholds, proving that unpersisted proposals get regenerated instead o
+- Output token count dominates latency: every call emitting over 4000 output tokens took 98-297s, so capping generation at ~2000 tokens would cut worst-
 - A persistent proposal-to-action gap exists: all five skill proposals from the previous dream cycle remain untested while new ones accumulate, so only 
 - Passive memory pruning is stalling: prune runs report 0 facts and 0 events removed while the event log keeps growing, so content-hash deduplication an
 - The simulation gate has a risk-count blind spot: the football swarm proceeded on verdict='go' despite risks=5 and 3 revision rounds, admitting a high-
@@ -51,11 +56,6 @@
 - The simulation returned verdict 'revise' with 5 risks yet subsequent builder/model calls still executed, proving revise verdicts need a hard Simulatio
 - One uncapped call produced 22,983 output tokens in 546 s (roughly 5-10x the median call), confirming that a default max_tokens cap near 2000 with chun
 - Parallel fan-out to two OpenRouter models triggered simultaneous 429 rate-limit failures, so outbound model calls must be serialized or jitter-stagger
-- The prune run removed 0 facts and 0 events, meaning current pruning criteria are too conservative and memory will grow unchecked.
-- Successful model calls routinely take 90-210 s and emit up to ~6000 output tokens, so uncapped generations directly threaten the tight 2-iteration / 5
-- Pre-execution simulation demonstrably paid off: it flagged 5 risks on the football-submission goal and 2 revisions were applied before spending any re
-- Skill proposals accumulate much faster than they get tested (many proposed, almost none executed), so idea generation currently produces backlog debt 
-- Rate limiting, not reasoning errors, was the dominant failure cause this cycle: two different models (stealth/ox-alpha, z-ai/glm-5.2:free) returned 42
 
 ---
 
