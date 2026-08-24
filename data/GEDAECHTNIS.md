@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1587 Fakten** · Stand 2026-08-24 00:59 UTC · aktualisiert bei jedem Herzschlag
+**1606 Fakten** · Stand 2026-08-24 01:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 687
-- **swarm_artifact:** 501
-- **anti_pattern:** 132
-- **last_swarm_goal:** 98
-- **strategy:** 87
-- **last_swarm_critique:** 63
+- **dream:** 697
+- **swarm_artifact:** 505
+- **anti_pattern:** 134
+- **last_swarm_goal:** 99
+- **strategy:** 88
+- **last_swarm_critique:** 64
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,101 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
+*24.08. 01:08 UTC · Quelle: evolution*
+
+Single-File Atomic Operations with Zero Dependencies - Variant 1 eliminates the root causes (fragmented modules, missing imports, truncation) by consolidating into a single, dependency-free file with a clear class interface, making ato
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:2`
+*24.08. 01:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Declarative Configuration + Code Generation - Describe the bridge in a YAML schema: directories, file naming patterns, message schemas, atomicity requirements. Feed this to a code generator (Jinja2 templates) that emits compl
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:0`
+*24.08. 01:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Test-Driven Contract-First Development - Define explicit interfaces (abstract base classes) for each filesystem operation (ensure_dir, atomic_write, read_response) and the Hermes bridge protocol (command/status/response schem
+
+### `last_swarm_critique`
+*24.08. 01:08 UTC · Quelle: critic*
+
+score=3; issues=src/hermes/fs.py: Missing ensure_dir function imported by status_writer.py, command_writer.py, and exported in __init__.py; tests/test_status_writer.py: Truncated/incomplete test file (cuts off mid-line); src/hermes/response_reader.py: Truncate
+
+### `swarm_artifact:Implement RESPONSE channel - read Hermes responses from data`
+*24.08. 01:07 UTC · Quelle: builder*
+
+{"action": "create_file", "path": "src/hermes/response_reader.py", "content": "\"\"\"\nRESPONSE channel reader for Hermes bridge.\n\nPolls for Hermes replies in data/hermes/out/ with correlation IDs,\
+
+### `swarm_artifact:Implement COMMAND channel - write commands for Hermes to exe`
+*24.08. 01:07 UTC · Quelle: builder*
+
+{"action": "create_file", "path": "src/hermes/command_writer.py", "content": "\"\"\"\nCOMMAND channel writer for Hermes bridge.\n\nWrites structured commands as unique atomic files for Hermes to pick 
+
+### `swarm_artifact:Implement STATUS channel writer - writes compact state to da`
+*24.08. 01:06 UTC · Quelle: builder*
+
+{"action": "create_file", "path": "src/hermes/status_writer.py", "content": "\"\"\"\nSTATUS channel writer for Hermes bridge.\n\nWrites compact state snapshots at every beat with atomic filesystem ope
+
+### `swarm_artifact:Create directory structure and atomic filesystem utilities f`
+*24.08. 01:05 UTC · Quelle: builder*
+
+{"action": "create_file", "path": "data/hermes/__init__.py", "content": ""}{"action": "create_file", "path": "data/hermes/in/.gitkeep", "content": ""}{"action": "create_file", "path": "data/hermes/out
+
+### `last_swarm_goal`
+*24.08. 01:01 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608240101:5`
+*24.08. 01:01 UTC · Quelle: dream*
+
+System stress >0.7 correlates with degraded performance, necessitating throttling of dream/swarm spawns.
+
+### `dream:202608240101:4`
+*24.08. 01:01 UTC · Quelle: dream*
+
+Ad‑hoc inter‑agent communication channels are fragile; a reliable, replayable message queue is essential.
+
+### `dream:202608240101:3`
+*24.08. 01:01 UTC · Quelle: dream*
+
+Insights from dreams/simulations remain unused unless explicitly translated into actionable procedures.
+
+### `dream:202608240101:2`
+*24.08. 01:01 UTC · Quelle: dream*
+
+Infrequent performance testing creates blind spots; regular measurement is required to detect capability gaps.
+
+### `dream:202608240101:1`
+*24.08. 01:01 UTC · Quelle: dream*
+
+Model overload (502/429 errors) produces latency spikes and failures, revealing the need for fallback and backoff mechanisms.
+
+### `dream:202608240101:5`
+*24.08. 01:01 UTC · Quelle: dream*
+
+Metabolic stress (1.0) coincides with unbounded model calls; no backpressure reduces concurrency when the system should conserve.
+
+### `dream:202608240101:4`
+*24.08. 01:01 UTC · Quelle: dream*
+
+Dream insights accumulate but lack an automatic promotion mechanism; the 'stale knowledge' drive goal confirms zero operationalization of prior consolidations.
+
+### `dream:202608240101:3`
+*24.08. 01:01 UTC · Quelle: dream*
+
+Rate-limit headers (X-RateLimit-Remaining, Retry-After) are ignored, causing surprise lockouts that could be predicted 10-20 requests in advance.
+
+### `dream:202608240101:2`
+*24.08. 01:01 UTC · Quelle: dream*
+
+The simulation-evolution pipeline reliably upgrades design scores from 4/10 to 9/9/9, proving mental rehearsal works but is only triggered manually, not systematically.
+
+### `dream:202608240101:1`
+*24.08. 01:01 UTC · Quelle: dream*
+
+Free-tier Nvidia models (nemotron-3-ultra) exhibit catastrophic 502 errors and 90s+ latency spikes under load, making single-provider reliance a critical failure mode.
 
 ### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
 *24.08. 00:59 UTC · Quelle: evolution*

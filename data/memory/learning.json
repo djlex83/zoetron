@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 00:59:42",
+ "stand": "2026-08-24 01:09:24",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "dedup_skill_proposals.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -30,12 +30,6 @@
    "tool": "träume-und-simulationen-besser-nutzen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fehlermuster-aus-schwarm-träumen-nutzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -99,12 +93,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.821,
- "simulationen_angewandt": 89,
+ "haende_quote": 0.815,
+ "simulationen_angewandt": 91,
  "swarm_scores": {
-  "n": 52,
+  "n": 53,
   "best": 8.0,
-  "schnitt": 4.08
+  "schnitt": 4.06
  },
  "score_nach_ziel_typ": {
   "analyse": {
@@ -112,8 +106,8 @@
    "schnitt": 4.08
   },
   "bau": {
-   "n": 2,
-   "schnitt": 4.0
+   "n": 3,
+   "schnitt": 3.67
   }
  }
 }
