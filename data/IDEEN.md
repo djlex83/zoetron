@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,6 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler dauerhaft reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler verringern *(wieder aufgegriffen: 2×)*
 - Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen lernen *(wieder aufgegriffen: 2×)*
@@ -38,9 +37,15 @@
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
+- Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High metabolic stress (1.0) with conservative budget correlates with model failures, suggesting resource-aware scheduling should defer non-critical re
+- Local-first file-based message queues (Hermes bridge design) provide operational continuity during model outages, unlike RPC-dependent architectures.
+- Simulation-driven development (5 revisions applied) successfully produced working code where direct hand actions failed repeatedly, proving mental reh
+- Latency variance of 2-141 seconds for the same model indicates unpredictable queueing, requiring adaptive timeouts and stall detection rather than fix
+- Free-tier model endpoints exhibit catastrophic unreliability (129 errors, 22 rate-locks, 502 upstream failures) making them unsuitable as primary reas
 - The Hermes-bridge swarm goal remains blocked because every planner invocation hits the same rate-limited model pool.
 - Pruning runs remove zero facts/events, indicating the retention policy is not clearing stale model-failure records that clutter context.
 - Repeated immediate retries of the same failing model sequence without backoff wastes the conserve-mode budget (max_tasks: 3, max_iterations: 1) and de
@@ -51,11 +56,6 @@
 - System stress hits maximum (1.0) and enters conserve mode before any successful inference completes, starving the swarm of compute.
 - The model blocklist mechanism (3 strikes → 1800s timeout) reacts too late; it treats symptoms not the shared quota root cause.
 - All free-tier models on OpenRouter share a global rate limit causing cascading 429 failures across the entire model roster.
-- Model latency variance (25s vs 104s for same model) signals unreliable infrastructure that should trigger circuit-breaking before task commitment.
-- Memory pruning ran but removed zero facts/events, indicating pruning thresholds are miscalibrated for high-stress consolidation periods.
-- Simulation approved execution despite 3 identified risks but did not account for infrastructure-level failures like API rate limits.
-- System stress at maximum (1.0) with conserve mode still permits model calls that immediately fail, wasting the single allowed iteration budget.
-- Rate limiting (429 errors) cascades across all models when they share the same OpenRouter API gateway, making fallback chains ineffective during quota
 
 ---
 

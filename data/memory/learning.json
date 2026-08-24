@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 00:39:12",
+ "stand": "2026-08-24 00:46:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -42,12 +42,6 @@
    "tool": "alte-träume-nach-ideen-durchsuchen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -105,8 +99,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.816,
- "simulationen_angewandt": 90,
+ "haende_quote": 0.815,
+ "simulationen_angewandt": 89,
  "swarm_scores": {
   "n": 53,
   "best": 8.0,

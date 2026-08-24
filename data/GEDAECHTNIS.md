@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1546 Fakten** · Stand 2026-08-24 00:39 UTC · aktualisiert bei jedem Herzschlag
+**1559 Fakten** · Stand 2026-08-24 00:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 672
-- **swarm_artifact:** 490
-- **anti_pattern:** 126
-- **last_swarm_goal:** 95
-- **strategy:** 84
-- **last_swarm_critique:** 60
+- **dream:** 677
+- **swarm_artifact:** 493
+- **anti_pattern:** 128
+- **last_swarm_goal:** 96
+- **strategy:** 85
+- **last_swarm_critique:** 61
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
+*24.08. 00:45 UTC · Quelle: evolution*
+
+Schema-First Code Generation - Schema-First Code Generation attacks the root cause (drift between schema and code) by making the JSON Schema the single source of truth. Auto-generated Python types guarantee Prio
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:2`
+*24.08. 00:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Protocol Simplification (Flat Envelope) - Redesign wire format to eliminate problematic fields. Replace Priority enum with string labels ('low','normal','high','critical') - no numeric mismatch. correlation_id becomes require
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:1`
+*24.08. 00:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Adapter/Translation Layer - Keep existing Python code unchanged. Insert a thin TranslationLayer between MessageEnvelope and JSON serialization. Layer maps Priority.CRITICAL(20) -> 10 on encode, 10 -> CRITICAL on decode. corre
+
+### `last_swarm_critique`
+*24.08. 00:45 UTC · Quelle: critic*
+
+score=4; issues=CRITICAL: Priority enum inconsistency - JSON schema max=10, Python Priority.CRITICAL=20, validation will reject valid high-priority messages; CRITICAL: correlation_id serialization bug - MessageEnvelope.to_dict() includes null correlation_id wh
+
+### `swarm_artifact:Build file-based message queue writer (outbox)`
+*24.08. 00:44 UTC · Quelle: builder*
+
+```python """ Hermes Bridge Outbox Writer  File-based message queue writer with atomic writes, file locking, retry logic, and exponential backoff for the Hermes Bridge. """  import json import os impo
+
+### `swarm_artifact:Implement message envelope serializer/deserializer`
+*24.08. 00:43 UTC · Quelle: builder*
+
+```python """ Hermes Bridge Message Envelope Serializer/Deserializer  Handles message envelope creation, serialization to JSON files, and deserialization with schema validation. """  import json impor
+
+### `swarm_artifact:Create Hermes Bridge directory structure and message schema`
+*24.08. 00:42 UTC · Quelle: builder*
+
+```json {   "$schema": "http://json-schema.org/draft-07/schema#",   "$id": "https://hermes-bridge.local/schema/message.json",   "title": "Hermes Bridge Message",   "type": "object",   "required": ["id
+
+### `last_swarm_goal`
+*24.08. 00:40 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608240039:5`
+*24.08. 00:39 UTC · Quelle: dream*
+
+High metabolic stress (1.0) with conservative budget correlates with model failures, suggesting resource-aware scheduling should defer non-critical reasoning during contention.
+
+### `dream:202608240039:4`
+*24.08. 00:39 UTC · Quelle: dream*
+
+Local-first file-based message queues (Hermes bridge design) provide operational continuity during model outages, unlike RPC-dependent architectures.
+
+### `dream:202608240039:3`
+*24.08. 00:39 UTC · Quelle: dream*
+
+Simulation-driven development (5 revisions applied) successfully produced working code where direct hand actions failed repeatedly, proving mental rehearsal reduces physical errors.
+
+### `dream:202608240039:2`
+*24.08. 00:39 UTC · Quelle: dream*
+
+Latency variance of 2-141 seconds for the same model indicates unpredictable queueing, requiring adaptive timeouts and stall detection rather than fixed limits.
+
+### `dream:202608240039:1`
+*24.08. 00:39 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit catastrophic unreliability (129 errors, 22 rate-locks, 502 upstream failures) making them unsuitable as primary reasoning infrastructure.
 
 ### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
 *24.08. 00:38 UTC · Quelle: evolution*
