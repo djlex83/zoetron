@@ -1,14 +1,14 @@
 {
- "stand": 1787556988.3835485,
+ "stand": 1787557443.130576,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 159,
-   "fehler": 18,
+   "laeufe": 166,
+   "fehler": 20,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 4427.134092330933,
+   "latenz_summe_s": 4589.20072054863,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1787527026.270047,
    "kontofehler": 6
@@ -31,7 +31,7 @@
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 21
+   "kontofehler": 23
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 0,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 21
+   "kontofehler": 23
   },
   "stealth/ox-alpha": {
    "laeufe": 158,
@@ -61,7 +61,7 @@
    "latenz_summe_s": 3.718233108520508,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527023.1975315,
-   "kontofehler": 34
+   "kontofehler": 41
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -83,9 +83,9 @@
    "letzte_sperre": 1787529098.2529988
   },
   "thinkingmachines/inkling-small:free": {
-   "laeufe": 4,
-   "fehler": 4,
-   "fehler_in_folge": 1,
+   "laeufe": 5,
+   "fehler": 5,
+   "fehler_in_folge": 2,
    "gesperrt_bis": 1787554947.7341588,
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT",
@@ -106,6 +106,15 @@
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
    "latenz_summe_s": 20.826507329940796,
+   "letzter_fehler": "",
+   "letzte_sperre": 0.0
+  },
+  "dots-studio/dots-3-note-preview:free": {
+   "laeufe": 2,
+   "fehler": 0,
+   "fehler_in_folge": 0,
+   "gesperrt_bis": 0.0,
+   "latenz_summe_s": 52.7161705493927,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   }

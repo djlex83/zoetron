@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1836 Fakten** · Stand 2026-08-24 07:36 UTC · aktualisiert bei jedem Herzschlag
+**1849 Fakten** · Stand 2026-08-24 07:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 817
-- **swarm_artifact:** 572
-- **anti_pattern:** 142
-- **last_swarm_goal:** 122
-- **strategy:** 92
-- **last_swarm_critique:** 72
+- **dream:** 822
+- **swarm_artifact:** 575
+- **anti_pattern:** 144
+- **last_swarm_goal:** 123
+- **strategy:** 93
+- **last_swarm_critique:** 73
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
+*24.08. 07:43 UTC · Quelle: evolution*
+
+End-to-End Automated Submission Generator - Variant 0 provides a fully automated end-to-end pipeline that directly addresses the critic's issues by generating the scaffold, running bewerte.py, and iteratively patching until 
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: erste eigene Ei:2`
+*24.08. 07:43 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Specification Extraction and Contract Programming - Treat bewerte.py as a black-box specification. Write a dedicated analysis script that executes bewerte.py with instrumentation (e.g., sys.settrace) to record all inputs/outp
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: erste eigene Ei:1`
+*24.08. 07:43 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Interactive REPL-Driven Development with Checkpointing - Start an interactive Python REPL session. First, import bewerte.py and inspect its public API, test functions, and any hidden validation logic using dir(), help(), and 
+
+### `last_swarm_critique`
+*24.08. 07:41 UTC · Quelle: critic*
+
+score=3; issues=Tool calls only cover the first step of reading the file. Missing tool calls for creating the scaffold and running the script.; Redundant repeated reads of the same file without additional context or analysis.
+
+### `swarm_artifact:Run bewerte.py against the submission and verify it passes`
+*24.08. 07:41 UTC · Quelle: builder*
+
+{   "tool": "read",   "path": "bewerte.py" }
+
+### `swarm_artifact:Create minimal scaffold submission that matches the discover`
+*24.08. 07:41 UTC · Quelle: builder*
+
+{   "tool": "read",   "path": "bewerte.py" }
+
+### `swarm_artifact:Examine bewerte.py to understand the exact I/O contract`
+*24.08. 07:41 UTC · Quelle: builder*
+
+{   "tool": "read",   "path": "bewerte.py" }
+
+### `last_swarm_goal`
+*24.08. 07:38 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240738:5`
+*24.08. 07:38 UTC · Quelle: dream*
+
+Metabolism stress=1.0 with 'conserve' state forces max 3 tasks/iteration, proving resource limits directly constrain throughput.
+
+### `dream:202608240738:4`
+*24.08. 07:38 UTC · Quelle: dream*
+
+60 unimplemented skill proposals reveal a bottleneck in proposal-to-execution pipelines, stalling system improvement.
+
+### `dream:202608240738:3`
+*24.08. 07:38 UTC · Quelle: dream*
+
+Calibration error of 1 (predicted 4, actual 3) suggests model confidence is misaligned with outcomes, requiring recalibration loops.
+
+### `dream:202608240738:2`
+*24.08. 07:38 UTC · Quelle: dream*
+
+The simulation gate's 'revise' verdict with risks=5 shows that high-risk tasks proceed without mandatory mitigation, leading to wasted cycles.
+
+### `dream:202608240738:1`
+*24.08. 07:38 UTC · Quelle: dream*
+
+Rate-limiting errors (429) indicate the system is exceeding API quotas, requiring backoff/retry logic to avoid cascading failures.
 
 ### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
 *24.08. 07:35 UTC · Quelle: evolution*
