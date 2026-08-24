@@ -24,3 +24,8 @@ data/graph_view.html
 data/heartbeat.pid
 data/tools_abgelehnt/
 data/artefakte/
+
+# Abgeleitete Web-Fassung des Gehirns (wird bei jedem Build neu erzeugt)
+docs/brain.min.json
+docs/brain.text.json
+docs/memory.min.json

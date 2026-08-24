@@ -103,7 +103,7 @@ export default function Hero({
     },
     {
       icon: <StatBeats />,
-      value: beat?.per24h ?? seed?.beats.per24h ?? null,
+      value: beat?.per24h || seed?.beats.per24h || null,
       label: lang === 'de' ? 'Herzschläge in 24 Stunden' : 'heartbeats in 24 hours',
       d: '1.44s',
     },

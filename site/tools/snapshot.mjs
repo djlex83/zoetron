@@ -107,6 +107,56 @@ try {
   for (const f of readdirSync(R('docs/assets'))) rmSync(R(`docs/assets/${f}`), { force: true })
 } catch { /* first build */ }
 
+// GEDAECHTNIS.md is 560 kB and grows; the page shows 14 entries, the category
+// split and the critic scores. Emit exactly that — the original stays public.
+try {
+  const mem = readText('data/GEDAECHTNIS.md')
+  const standAt = Date.parse((memStand ?? '').replace(' UTC', 'Z').replace(' ', 'T')) || Date.now()
+  const stamp = (meta) => {
+    const m = meta.match(/(\d{2})\.(\d{2})\.\s+(\d{2}):(\d{2})/)
+    if (!m) return NaN
+    const year = new Date(standAt).getUTCFullYear()
+    let t = Date.UTC(year, Number(m[2]) - 1, Number(m[1]), Number(m[3]), Number(m[4]))
+    if (t > standAt + 36e5) t = Date.UTC(year - 1, Number(m[2]) - 1, Number(m[1]), Number(m[3]), Number(m[4]))
+    return t
+  }
+  const latest = []
+  const scores = []
+  const re = /^###\s+`([^`]+)`\n\*([^*]+)\*\n\n([\s\S]*?)(?=\n### |\n---|\s*$)/gm
+  for (const m of mem.matchAll(re)) {
+    const id = m[1], meta = m[2], body = m[3].trim()
+    if (latest.length < 24) {
+      latest.push({
+        id,
+        kind: id.split(':')[0] ?? 'fakt',
+        when: meta.split('·')[0].trim(),
+        text: body.replace(/\s+/g, ' ').slice(0, 420),
+      })
+    }
+    const verdict = body.match(/^score=(\d+)(?:;\s*issues=([\s\S]*))?/)
+    if (verdict && /critic/.test(meta)) {
+      const at = stamp(meta)
+      if (!Number.isNaN(at)) {
+        scores.push({
+          at,
+          label: id.replace(/^last_swarm_critique:?/, '').trim().slice(0, 80),
+          score: Number(verdict[1]),
+          issues: (verdict[2] ?? '').replace(/\s+/g, ' ').slice(0, 180),
+        })
+      }
+    }
+  }
+  scores.sort((a, b) => a.at - b.at)
+  const slim = { facts, stand: memStand, kinds: factKinds, latest, scores, bytes: mem.length }
+  writeFileSync(R('docs/memory.min.json'), JSON.stringify(slim))
+  console.log(
+    `[snapshot] Gedächtnis ${(mem.length / 1024).toFixed(0)} kB → ` +
+    `${(JSON.stringify(slim).length / 1024).toFixed(0)} kB (${latest.length} Einträge, ${scores.length} Urteile)`,
+  )
+} catch (e) {
+  console.log('[snapshot] Gedächtnis-Ableitung übersprungen:', e.message)
+}
+
 const state = {
   generatedAt: new Date().toISOString(),
   repo: 'djlex83/zoetron',

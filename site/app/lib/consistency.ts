@@ -42,13 +42,13 @@ export function runChecks(input: {
 
   // 1) the same neuron count, written by two different organs
   if (board && brain) {
-    const same = board.neurons === brain.neurons.length
-    const diff = Math.abs(board.neurons - brain.neurons.length)
+    const same = board.neurons === brain.totals.neurons
+    const diff = Math.abs(board.neurons - brain.totals.neurons)
     checks.push({
       id: 'neurons',
       label: { de: 'Neuronen: Bestenliste ↔ Gehirn', en: 'Neurons: leaderboard ↔ brain' },
       a: `${de(board.neurons)} (wiki/Tabelle.md)`,
-      b: `${de(brain.neurons.length)} (brain.html)`,
+      b: `${de(brain.totals.neurons)} (brain.html)`,
       state: same ? 'ok' : 'drift',
       note: same
         ? { de: 'Beide Ansichten stammen aus demselben Herzschlag.', en: 'Both views come from the same heartbeat.' }
@@ -65,7 +65,7 @@ export function runChecks(input: {
       id: 'synapses',
       label: { de: 'Synapsen: Bestenliste ↔ Gehirn', en: 'Synapses: leaderboard ↔ brain' },
       a: `${de(board.synapses)} (bewertet)`,
-      b: `${de(brain.synapses.length)} (gezeichnet)`,
+      b: `${de(brain.totals.synapses)} (brain.html)`,
       state: 'info',
       note: {
         de: 'Ohne Quellcode ist nicht belegbar, ob beide Organe dasselbe zählen — deshalb stehen beide Zahlen hier nebeneinander, statt eine davon als „die“ Wahrheit auszugeben.',

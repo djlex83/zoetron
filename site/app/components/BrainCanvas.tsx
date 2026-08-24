@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import { loadBrain, type Brain, type Neuron } from '../lib/brain'
+import { loadBrain, loadBrainTexts, type Brain } from '../lib/brain'
 import { reduced } from '../lib/anim'
 import { useLang } from '../lib/lang'
 
 type Mode = 'ambient' | 'stage'
+/** '3d' = the rotating sphere · 'map' = the same shell rolled out flat */
+type Layout = '3d' | 'map'
 
 /** age buckets: fresh and loud → old and quiet */
 const FACT = ['#8fe0ff', '#71c6f0', '#59a8d8', '#4585b4', '#3b6488']
@@ -24,14 +26,16 @@ function sprite(hex: string) {
 }
 
 export default function BrainCanvas({
-  mode, className = '', onReady,
-}: { mode: Mode; className?: string; onReady?: (b: Brain) => void }) {
+  mode, layout = '3d', className = '', onReady,
+}: { mode: Mode; layout?: Layout; className?: string; onReady?: (b: Brain) => void }) {
   const { lang } = useLang()
   const host = useRef<HTMLDivElement>(null)
   const cvs = useRef<HTMLCanvasElement>(null)
   const [brain, setBrain] = useState<Brain | null>(null)
   const [failed, setFailed] = useState(false)
-  const [picked, setPicked] = useState<Neuron | null>(null)
+  /** index into brain.neurons, or -1 */
+  const [picked, setPicked] = useState(-1)
+  const [text, setText] = useState<[string, string] | null>(null)
   /** camera lives outside the render effect so a data refresh never jumps the view */
   const cam = useRef({ ry: 0.5, rx: -0.18, zoom: 1, panX: 0, panY: 0, scale: 0, auto: true })
 
@@ -42,27 +46,35 @@ export default function BrainCanvas({
         .then((b) => { if (alive) { setBrain(b); setFailed(false); onReady?.(b) } })
         .catch(() => { if (alive) setBrain((prev) => { if (!prev) setFailed(true); return prev }) })
     pull()
-    // brain.html is rewritten every heartbeat (~40 min); loadBrain() only
-    // refetches past its own cache age, so both canvases share one request
+    // the heartbeat rewrites the brain every ~40 min; loadBrain() only refetches
+    // past its own cache age, so both canvases share one request
     const id = window.setInterval(pull, 10 * 60_000)
     return () => { alive = false; clearInterval(id) }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  // the texts are a separate, bigger file — only worth loading once someone asks
+  useEffect(() => {
+    if (picked < 0) { setText(null); return }
+    let alive = true
+    loadBrainTexts().then((all) => { if (alive) setText(all[picked] ?? ['', '']) })
+    return () => { alive = false }
+  }, [picked])
 
   useEffect(() => {
     const canvas = cvs.current
     const box = host.current
     if (!canvas || !box || !brain) return
 
-    // the hero paints over a gradient, the stage owns its own black
     const opaque = mode === 'stage'
     const ctx = canvas.getContext('2d', { alpha: !opaque })!
     const still = reduced()
     const interactive = mode === 'stage'
     const narrow = window.innerWidth < 700
     const maxLinks = mode === 'stage' ? (narrow ? 1100 : 2600) : narrow ? 420 : 900
-    const links = brain.synapses.slice(0, maxLinks)
+    const links = brain.links.slice(0, maxLinks)
     const nodes = brain.neurons
+    const count = nodes.length
 
     const spritesF = FACT.map(sprite)
     const spritesG = GOAL.map(sprite)
@@ -85,31 +97,57 @@ export default function BrainCanvas({
     // measure the rotated cloud each frame and ease the scale toward a fit.
     const centre: [number, number, number] = [0, 0, 0]
     for (const n of nodes) { centre[0] += n.p[0]; centre[1] += n.p[1]; centre[2] += n.p[2] }
-    centre[0] /= nodes.length || 1; centre[1] /= nodes.length || 1; centre[2] /= nodes.length || 1
+    centre[0] /= count || 1; centre[1] /= count || 1; centre[2] /= count || 1
 
     const v = cam.current
-    if (still) v.auto = false
-    let dragging = false, moved = 0, px = 0, py = 0
-    let hover: Neuron | null = null
-    const proj = new Map<string, { x: number; y: number; d: number; z: number }>()
-    let pulses: { l: typeof links[number]; t: number; sp: number }[] = []
+    const flat = layout === 'map'
+    if (still || flat) v.auto = false
 
-    const coords = new Float64Array(nodes.length * 3)
+    // the cortex, rolled out: longitude/latitude of each neuron on its shell
+    const map = new Float64Array(count * 2)
+    if (flat) {
+      for (let i = 0; i < count; i++) {
+        const p = nodes[i]!.p
+        const dx = p[0] - centre[0], dy = p[1] - centre[1], dz = p[2] - centre[2]
+        const r = Math.hypot(dx, dy, dz) || 1e-6
+        map[i * 2] = Math.atan2(dz, dx) / Math.PI          // -1 … 1
+        map[i * 2 + 1] = Math.asin(Math.max(-1, Math.min(1, dy / r))) / (Math.PI / 2)
+      }
+    }
+
+    let dragging = false, moved = 0, px = 0, py = 0
+    let hover = -1
+    let pulses: { l: (typeof links)[number]; t: number; sp: number }[] = []
+
+    // screen positions, kept in flat arrays: x, y, depth, z
+    const sx = new Float64Array(count)
+    const sy = new Float64Array(count)
+    const sd = new Float64Array(count)
+    const sz = new Float64Array(count)
+    const order = new Int32Array(count)
+    const coords = new Float64Array(count * 3)
 
     const project = () => {
-      const cy = Math.cos(v.ry), sy = Math.sin(v.ry)
-      const cx = Math.cos(v.rx), sx = Math.sin(v.rx)
+      const cy = Math.cos(v.ry), syr = Math.sin(v.ry)
+      const cx = Math.cos(v.rx), sxr = Math.sin(v.rx)
       let maxX = 0.001, maxY = 0.001
 
-      for (let i = 0; i < nodes.length; i++) {
-        const n = nodes[i]!
-        const p0 = n.p[0] - centre[0], p1 = n.p[1] - centre[1], p2 = n.p[2] - centre[2]
-        const x = p0 * cy + p2 * sy
-        const z = -p0 * sy + p2 * cy
-        const y2 = p1 * cx - z * sx
-        const z2 = p1 * sx + z * cx
-        const d = 3.4 / (3.4 - Math.min(z2, 2.4))
-        const fx = x * d, fy = y2 * d
+      for (let i = 0; i < count; i++) {
+        let fx: number, fy: number, z2: number
+        if (flat) {
+          fx = map[i * 2]! * 1.6
+          fy = map[i * 2 + 1]!
+          z2 = 0
+        } else {
+          const p = nodes[i]!.p
+          const p0 = p[0] - centre[0], p1 = p[1] - centre[1], p2 = p[2] - centre[2]
+          const x = p0 * cy + p2 * syr
+          const z = -p0 * syr + p2 * cy
+          const y2 = p1 * cx - z * sxr
+          z2 = p1 * sxr + z * cx
+          const d = 3.4 / (3.4 - Math.min(z2, 2.4))
+          fx = x * d; fy = y2 * d
+        }
         coords[i * 3] = fx; coords[i * 3 + 1] = fy; coords[i * 3 + 2] = z2
         if (Math.abs(fx) > maxX) maxX = Math.abs(fx)
         if (Math.abs(fy) > maxY) maxY = Math.abs(fy)
@@ -118,86 +156,76 @@ export default function BrainCanvas({
       const target = v.zoom * Math.min((W * 0.44) / maxX, (H * 0.44) / maxY)
       v.scale = v.scale === 0 ? target : v.scale + (target - v.scale) * 0.07
 
-      for (let i = 0; i < nodes.length; i++) {
-        const n = nodes[i]!
+      for (let i = 0; i < count; i++) {
         const z2 = coords[i * 3 + 2]!
-        proj.set(n.id, {
-          x: W / 2 + v.panX + coords[i * 3]! * v.scale,
-          y: H / 2 + v.panY - coords[i * 3 + 1]! * v.scale,
-          d: 3.4 / (3.4 - Math.min(z2, 2.4)),
-          z: z2,
-        })
+        sx[i] = W / 2 + v.panX + coords[i * 3]! * v.scale
+        sy[i] = H / 2 + v.panY - coords[i * 3 + 1]! * v.scale
+        sd[i] = flat ? 1 : 3.4 / (3.4 - Math.min(z2, 2.4))
+        sz[i] = z2
+        order[i] = i
       }
     }
 
     const draw = () => {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
-      if (opaque) {
-        ctx.fillStyle = '#06070a'
-        ctx.fillRect(0, 0, W, H)
-      } else {
-        ctx.clearRect(0, 0, W, H)
-      }
+      if (opaque) { ctx.fillStyle = '#06070a'; ctx.fillRect(0, 0, W, H) }
+      else ctx.clearRect(0, 0, W, H)
 
       // synapses first — a faint web behind the cells
       ctx.lineWidth = 1
       for (const l of links) {
-        const A = proj.get(l.a), B = proj.get(l.b)
-        if (!A || !B) continue
-        const near = (A.d + B.d) / 2
+        if (flat && Math.abs(map[l.a * 2]! - map[l.b * 2]!) > 1) continue // wraps the seam
+        const near = (sd[l.a]! + sd[l.b]!) / 2
         ctx.strokeStyle = l.c ? '#8a5cf6' : '#3f6ea8'
-        ctx.globalAlpha = Math.min(0.42, (l.s ?? 0.2) * 0.55) * (near - 0.55)
+        ctx.globalAlpha = Math.min(0.42, l.s * 0.55) * (near - 0.55)
         ctx.beginPath()
-        ctx.moveTo(A.x, A.y)
-        ctx.lineTo(B.x, B.y)
+        ctx.moveTo(sx[l.a]!, sy[l.a]!)
+        ctx.lineTo(sx[l.b]!, sy[l.b]!)
         ctx.stroke()
       }
 
       // action potentials travelling along a synapse
       for (const p of pulses) {
-        const A = proj.get(p.l.a), B = proj.get(p.l.b)
-        if (!A || !B) continue
-        const x = A.x + (B.x - A.x) * p.t
-        const y = A.y + (B.y - A.y) * p.t
-        const r = 6 * ((A.d + B.d) / 2) * (v.scale / 200)
+        const x = sx[p.l.a]! + (sx[p.l.b]! - sx[p.l.a]!) * p.t
+        const y = sy[p.l.a]! + (sy[p.l.b]! - sy[p.l.a]!) * p.t
+        const r = 6 * ((sd[p.l.a]! + sd[p.l.b]!) / 2) * (v.scale / 200)
         ctx.globalAlpha = 0.85
         ctx.drawImage(spritePulse, x - r, y - r, r * 2, r * 2)
       }
 
       // neurons, painted back to front
-      const order = [...nodes].sort((a, b) => (proj.get(a.id)!.z - proj.get(b.id)!.z))
-      const active = hover ?? picked
-      for (const n of order) {
-        const q = proj.get(n.id)!
-        if (q.x < -40 || q.x > W + 40 || q.y < -40 || q.y > H + 40) continue
-        const bucket = Math.min(4, Math.round((n.a ?? 0) * 4))
+      const back = Array.from(order).sort((a, b) => sz[a]! - sz[b]!)
+      const active = hover >= 0 ? hover : picked
+      for (const i of back) {
+        const x = sx[i]!, y = sy[i]!
+        if (x < -40 || x > W + 40 || y < -40 || y > H + 40) continue
+        const n = nodes[i]!
+        const bucket = Math.min(4, Math.round(n.a * 4))
         const s = n.f ? spritesF[bucket]! : spritesG[bucket]!
-        const r = (0.95 + Math.min(n.d, 14) * 0.15) * Math.sqrt(q.d) * (v.scale / 200)
-        const hot = active?.id === n.id
-        ctx.globalAlpha = hot ? 1 : Math.min(0.95, 0.26 + (q.d - 0.6) * 0.8)
-        ctx.drawImage(s, q.x - r * 2.1, q.y - r * 2.1, r * 4.2, r * 4.2)
+        const r = (0.95 + Math.min(n.d, 14) * 0.15) * Math.sqrt(sd[i]!) * (v.scale / 200)
+        const hot = i === active
+        ctx.globalAlpha = hot ? 1 : Math.min(0.95, 0.26 + (sd[i]! - 0.6) * 0.8)
+        ctx.drawImage(s, x - r * 2.1, y - r * 2.1, r * 4.2, r * 4.2)
         if (hot) {
           ctx.globalAlpha = 1
           ctx.strokeStyle = '#f5a524'
           ctx.lineWidth = 1.4
           ctx.beginPath()
-          ctx.arc(q.x, q.y, Math.max(r * 1.8, 6), 0, Math.PI * 2)
+          ctx.arc(x, y, Math.max(r * 1.8, 6), 0, Math.PI * 2)
           ctx.stroke()
         }
       }
 
       // the picked neuron lights up its own synapses
-      if (active) {
+      if (active >= 0) {
         ctx.strokeStyle = '#f5a524'
         ctx.globalAlpha = 0.75
         ctx.lineWidth = 1.2
         for (const l of links) {
-          if (l.a !== active.id && l.b !== active.id) continue
-          const A = proj.get(l.a), B = proj.get(l.b)
-          if (!A || !B) continue
+          if (l.a !== active && l.b !== active) continue
           ctx.beginPath()
-          ctx.moveTo(A.x, A.y)
-          ctx.lineTo(B.x, B.y)
+          ctx.moveTo(sx[l.a]!, sy[l.a]!)
+          ctx.lineTo(sx[l.b]!, sy[l.b]!)
           ctx.stroke()
         }
       }
@@ -239,13 +267,12 @@ export default function BrainCanvas({
     ro.observe(box)
 
     // ---- pointer handling (stage only) ----
-    const pick = (cx2: number, cy2: number) => {
-      let best: Neuron | null = null
+    const pick = (cx: number, cy: number) => {
+      let best = -1
       let bd = 26
-      for (const n of nodes) {
-        const q = proj.get(n.id)!
-        const dist = Math.hypot(q.x - cx2, q.y - cy2)
-        if (dist < bd) { bd = dist; best = n }
+      for (let i = 0; i < count; i++) {
+        const dist = Math.hypot(sx[i]! - cx, sy[i]! - cy)
+        if (dist < bd) { bd = dist; best = i }
       }
       return best
     }
@@ -258,7 +285,7 @@ export default function BrainCanvas({
       if (dragging) {
         const dx = e.clientX - px, dy = e.clientY - py
         moved += Math.abs(dx) + Math.abs(dy)
-        if (e.shiftKey) { v.panX += dx; v.panY += dy }
+        if (flat || e.shiftKey) { v.panX += dx; v.panY += dy }
         else {
           v.ry += dx * 0.005
           v.rx = Math.max(-1.25, Math.min(1.25, v.rx - dy * 0.004))
@@ -268,7 +295,7 @@ export default function BrainCanvas({
         return
       }
       hover = pick(e.clientX - rect.left, e.clientY - rect.top)
-      canvas.style.cursor = hover ? 'pointer' : 'grab'
+      canvas.style.cursor = hover >= 0 ? 'pointer' : 'grab'
       if (still) draw()
     }
     const onCancel = () => { dragging = false }
@@ -287,7 +314,7 @@ export default function BrainCanvas({
     }
     const onDouble = () => {
       v.ry = 0.5; v.rx = -0.18; v.zoom = 1; v.panX = 0; v.panY = 0
-      v.auto = !still; setPicked(null)
+      v.auto = !still && !flat; setPicked(-1)
       if (still) { project(); draw() }
     }
 
@@ -315,7 +342,9 @@ export default function BrainCanvas({
         canvas.removeEventListener('dblclick', onDouble)
       }
     }
-  }, [brain, mode, picked])
+  }, [brain, mode, layout, picked])
+
+  const node = picked >= 0 ? brain?.neurons[picked] : null
 
   return (
     <div ref={host} className={`relative h-full w-full overflow-hidden ${className}`}>
@@ -339,18 +368,28 @@ export default function BrainCanvas({
         </div>
       )}
 
-      {mode === 'stage' && picked && (
-        <div className="panel absolute right-3 top-3 max-h-[78%] w-[min(24rem,calc(100%-1.5rem))] overflow-y-auto rounded-2xl p-4 text-left">
+      {mode === 'stage' && node && (
+        <div className="panel absolute right-3 top-3 max-h-[78%] w-[min(24rem,calc(100%-1.5rem))] overflow-y-auto p-4 text-left">
           <div className="flex items-start justify-between gap-3">
-            <span className={`rounded-full px-2.5 py-1 font-mono text-[0.7rem] ${picked.f ? 'bg-synapse/15 text-synapse' : 'bg-amber/15 text-amber'}`}>
-              {picked.f ? (lang === 'de' ? 'Fakt' : 'fact') : (lang === 'de' ? 'Ziel / Ereignis' : 'goal / event')}
+            <span className={`rounded-full px-2.5 py-1 font-mono text-[0.7rem] ${node.f ? 'bg-synapse/15 text-synapse' : 'bg-amber/15 text-amber'}`}>
+              {node.f ? (lang === 'de' ? 'Fakt' : 'fact') : (lang === 'de' ? 'Ziel / Ereignis' : 'goal / event')}
             </span>
-            <button onClick={() => setPicked(null)} className="text-ink-faint transition-colors hover:text-ink" aria-label="close">✕</button>
+            <button onClick={() => setPicked(-1)} className="text-ink-faint transition-colors hover:text-ink" aria-label="close">✕</button>
           </div>
-          <p className="mt-3 text-[0.96rem] leading-relaxed text-ink-dim">{picked.t}</p>
+
+          {text ? (
+            <p className="mt-3 text-[0.96rem] leading-relaxed text-ink-dim">{text[1] || text[0]}</p>
+          ) : (
+            <div className="mt-4 space-y-2">
+              {[0, 1, 2].map((i) => (
+                <div key={i} className="h-2 animate-pulse rounded bg-white/8" style={{ width: `${92 - i * 18}%` }} />
+              ))}
+            </div>
+          )}
+
           <div className="mt-4 flex gap-4 border-t border-white/8 pt-3 font-mono text-[0.73rem] text-ink-faint">
-            <span>{picked.d} {lang === 'de' ? 'Synapsen' : 'synapses'}</span>
-            <span>{lang === 'de' ? 'Frische' : 'freshness'} {Math.round((1 - (picked.a ?? 0)) * 100)} %</span>
+            <span>{node.d} {lang === 'de' ? 'Synapsen' : 'synapses'}</span>
+            <span>{lang === 'de' ? 'Frische' : 'freshness'} {Math.round((1 - node.a) * 100)} %</span>
           </div>
         </div>
       )}

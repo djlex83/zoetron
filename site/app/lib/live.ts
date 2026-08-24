@@ -153,8 +153,21 @@ export async function fetchLeaderboard(signal?: AbortSignal): Promise<Leaderboar
 
 /* ---------------------------------------------------------- live memory */
 
-/** 300 kB of raw memory — only pulled once the reader actually asks for it. */
+/**
+ * The memory feed. Primary source is docs/memory.min.json, derived at build
+ * time from data/GEDAECHTNIS.md — 28 kB instead of 555 kB, because the page
+ * shows 24 entries, the category split and the critic scores, not the whole
+ * logbook. The raw file stays the fallback and stays public.
+ */
 export async function fetchMemory(signal?: AbortSignal): Promise<MemoryFeed> {
+  try {
+    const slim = JSON.parse(await text('./memory.min.json', signal)) as MemoryFeed
+    if (slim?.latest?.length) return slim
+  } catch { /* fall through to the original */ }
+  return fetchMemoryRaw(signal)
+}
+
+async function fetchMemoryRaw(signal?: AbortSignal): Promise<MemoryFeed> {
   const md = await text(`${RAW}/data/GEDAECHTNIS.md`, signal)
   const facts = Number(md.match(/\*\*([\d.]+)\s*Fakten\*\*/)?.[1]?.replace(/\./g, '') ?? 0)
   const stand = md.match(/Stand\s+([\d-]+\s[\d:]+\s*UTC)/)?.[1] ?? null
@@ -212,9 +225,15 @@ export async function fetchMemory(signal?: AbortSignal): Promise<MemoryFeed> {
 
 /* -------------------------------------------------------------- heartbeat */
 
+/**
+ * The heartbeat, straight from GitHub — the one source on this page that does
+ * not come from the deployment itself, which is what makes the delivery check
+ * meaningful. Twenty commits are plenty: the ticker shows eight, and a full
+ * page of 100 commit objects cost 384 kB for that.
+ */
 export async function fetchBeat(signal?: AbortSignal): Promise<Beat> {
   const res = await fetch(
-    `https://api.github.com/repos/${REPO}/commits?per_page=100`,
+    `https://api.github.com/repos/${REPO}/commits?per_page=20`,
     { signal, headers: { Accept: 'application/vnd.github+json' } },
   )
   if (!res.ok) throw new Error(`github ${res.status}`)
@@ -223,9 +242,12 @@ export async function fetchBeat(signal?: AbortSignal): Promise<Beat> {
   }[]
   const dayAgo = Date.now() - 86_400_000
   const dates = commits.map((c) => c.commit.committer.date)
+  const within = dates.filter((d) => new Date(d).getTime() > dayAgo).length
   return {
     lastISO: dates[0] ?? null,
-    per24h: dates.filter((d) => new Date(d).getTime() > dayAgo).length,
+    // only a complete count: if every one of the twenty is younger than a day,
+    // there are more we did not fetch — then the build snapshot knows better
+    per24h: within < dates.length ? within : 0,
     messages: commits.slice(0, 8).map((c) => c.commit.message.split('\n')[0]!),
   }
 }

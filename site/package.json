@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node tools/snapshot.mjs && vite",
-    "build": "node tools/snapshot.mjs && tsc -b --noEmit && vite build",
+    "dev": "node tools/snapshot.mjs && node tools/slim-brain.mjs && vite",
+    "build": "node tools/snapshot.mjs && node tools/slim-brain.mjs && tsc -b --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

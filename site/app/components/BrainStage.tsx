@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { sections } from '../lib/content'
 import { useLang } from '../lib/lang'
-import { gsap, isTouch, reduced, useGsap } from '../lib/anim'
+import { gsap, reduced, useGsap } from '../lib/anim'
 import { agoDE, type Leaderboard, type Pulse } from '../lib/live'
 import type { Brain } from '../lib/brain'
 import BrainCanvas from './BrainCanvas'
@@ -19,7 +19,6 @@ export default function BrainStage({
   const [visible, setVisible] = useState(false)
   const [drawn, setDrawn] = useState<Brain | null>(null)
   const [full, setFull] = useState(false)
-  const [armed, setArmed] = useState(false)
 
   // only boot the heavy canvas once the reader is actually here
   useEffect(() => {
@@ -73,7 +72,6 @@ export default function BrainStage({
   }, root, [])
 
   const original = view === '3d' ? './brain.html' : './graph.html'
-  const touch = typeof window !== 'undefined' && isTouch()
 
   return (
     <Section id="gehirn">
@@ -84,14 +82,14 @@ export default function BrainStage({
             {(['3d', '2d'] as View[]).map((v) => (
               <button
                 key={v}
-                onClick={() => { setView(v); setArmed(false) }}
+                onClick={() => setView(v)}
                 className="pill tab"
                 data-active={view === v ? '1' : '0'}
               >
                 <span>
                   {v === '3d'
                     ? (lang === 'de' ? '🧠 3D-Gehirn' : '🧠 3D brain')
-                    : (lang === 'de' ? '🕸 2D-Graph' : '🕸 2D graph')}
+                    : (lang === 'de' ? '🗺 2D-Karte' : '🗺 2D map')}
                 </span>
               </button>
             ))}
@@ -109,9 +107,7 @@ export default function BrainStage({
             <div className="flex items-center gap-3">
               <LiveDot label="live" />
               <span className="hidden font-mono text-[0.8rem] text-ink-faint sm:inline">
-                {view === '3d'
-                ? (lang === 'de' ? 'gezeichnet aus docs/brain.html' : 'drawn from docs/brain.html')
-                : 'docs/graph.html'}
+                {lang === 'de' ? 'gezeichnet aus docs/brain.html' : 'drawn from docs/brain.html'}
               </span>
             </div>
 
@@ -119,11 +115,20 @@ export default function BrainStage({
               {(drawn || board) && (
                 <>
                   <span className="hidden md:inline">
-                    {(drawn?.neurons.length ?? board?.neurons ?? 0).toLocaleString('de-DE')}{' '}
+                    {(drawn?.totals.neurons ?? board?.neurons ?? 0).toLocaleString('de-DE')}{' '}
                     {lang === 'de' ? 'Neuronen' : 'neurons'}
                   </span>
-                  <span className="hidden md:inline">
-                    {(drawn?.synapses.length ?? board?.synapses ?? 0).toLocaleString('de-DE')}{' '}
+                  <span
+                    className="hidden md:inline"
+                    title={
+                      drawn
+                        ? lang === 'de'
+                          ? `fürs Web verdichtet: ${drawn.kept.synapses.toLocaleString('de-DE')} der stärksten Synapsen werden geladen`
+                          : `slimmed for the web: the ${drawn.kept.synapses.toLocaleString('de-DE')} strongest synapses are loaded`
+                        : undefined
+                    }
+                  >
+                    {(drawn?.totals.synapses ?? board?.synapses ?? 0).toLocaleString('de-DE')}{' '}
                     {lang === 'de' ? 'Synapsen' : 'synapses'}
                   </span>
                 </>
@@ -155,51 +160,13 @@ export default function BrainStage({
                 : 'relative aspect-[4/5] w-full sm:aspect-[16/10] lg:aspect-[16/7.5]'
             }
           >
-            {visible && view === '2d' && (
-              <iframe
-                src="./graph.html"
-                title="Zoetron knowledge graph"
-                className="absolute inset-0 h-full w-full"
-                style={{ border: 0, pointerEvents: touch && !armed ? 'none' : 'auto' }}
-                onLoad={(e) => {
-                  // graph.html opens zoomed right in — nudge it out to an
-                  // overview through its own wheel handler (same origin)
-                  const w = e.currentTarget.contentWindow as (Window & typeof globalThis) | null
-                  if (!w) return
-                  const out = (steps: number) => {
-                    try {
-                      for (let i = 0; i < steps; i++) {
-                        w.dispatchEvent(new w.WheelEvent('wheel', { deltaY: 100, cancelable: true }))
-                      }
-                    } catch { /* cross-origin or already gone */ }
-                  }
-                  // the physics layout keeps expanding for a moment
-                  window.setTimeout(() => out(13), 600)
-                  window.setTimeout(() => out(3), 2600)
-                }}
-              />
-            )}
-            {visible && touch && !armed && view === '2d' && (
-              <button
-                onClick={() => setArmed(true)}
-                className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-void/85 via-transparent to-transparent pb-16"
-              >
-                <span className="rounded-full border border-white/15 bg-void/85 px-5 py-2.5 text-[0.92rem] text-ink backdrop-blur">
-                  {lang === 'de' ? 'Tippen, um den Graphen zu bewegen' : 'Tap to move the graph'}
-                </span>
-              </button>
-            )}
-            {visible && touch && armed && view === '2d' && (
-              <button
-                onClick={() => setArmed(false)}
-                className="absolute right-4 top-4 rounded-full border border-white/15 bg-void/85 px-4 py-2 text-[0.85rem] text-ink-dim backdrop-blur"
-              >
-                {lang === 'de' ? 'Scrollen freigeben' : 'release scroll'}
-              </button>
-            )}
-            {visible && view === '3d' ? (
+            {visible ? (
               <>
-                <BrainCanvas mode="stage" onReady={(b) => { setDrawn(b); onBrain?.(b) }} />
+                <BrainCanvas
+                  mode="stage"
+                  layout={view === '3d' ? '3d' : 'map'}
+                  onReady={(b) => { setDrawn(b); onBrain?.(b) }}
+                />
                 <div className="pointer-events-none absolute bottom-3 left-4 right-4 flex flex-wrap gap-x-6 gap-y-1 font-mono text-[0.76rem] text-ink-faint">
                   <span className="flex items-center gap-2">
                     <span className="h-2 w-2 rounded-full bg-synapse" />
@@ -225,16 +192,28 @@ export default function BrainStage({
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-1 border-t border-white/8 px-4 py-3.5 text-[0.86rem] text-ink-faint sm:px-6">
             <span>{lang === 'de' ? 'ziehen: ' : 'drag: '}{view === '3d' ? (lang === 'de' ? 'drehen' : 'rotate') : (lang === 'de' ? 'verschieben' : 'pan')}</span>
+            {view === '2d' && (
+              <span className="text-ink-faint">
+                {lang === 'de' ? 'die Kugel flach ausgerollt' : 'the sphere rolled out flat'}
+              </span>
+            )}
             <span className="hidden sm:inline">{lang === 'de' ? 'scrollen: zoom' : 'scroll: zoom'}</span>
             <span>{lang === 'de' ? 'klick: Neuron öffnen' : 'click: open a neuron'}</span>
             <span className="hidden sm:inline">{lang === 'de' ? 'Doppelklick: zurücksetzen' : 'double click: reset'}</span>
+            {drawn && (
+              <span className="ml-auto text-ink-faint">
+                {lang === 'de'
+                  ? `fürs Web verdichtet — ${drawn.kept.synapses.toLocaleString('de-DE')} von ${drawn.totals.synapses.toLocaleString('de-DE')} Synapsen geladen`
+                  : `slimmed for the web — ${drawn.kept.synapses.toLocaleString('de-DE')} of ${drawn.totals.synapses.toLocaleString('de-DE')} synapses loaded`}
+              </span>
+            )}
             <a
               href={original}
               target="_blank"
               rel="noreferrer"
-              className="ml-auto text-ink-faint underline decoration-white/20 underline-offset-4 transition-colors hover:text-amber"
+              className={`text-ink-faint underline decoration-white/20 underline-offset-4 transition-colors hover:text-amber ${drawn ? '' : 'ml-auto'}`}
             >
-              {lang === 'de' ? 'Zoetrons Originalansicht ↗' : 'Zoetron’s own view ↗'}
+              {lang === 'de' ? 'Original (vollständig) ↗' : 'Original (complete) ↗'}
             </a>
           </div>
         </div>
