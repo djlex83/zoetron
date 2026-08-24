@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 00:18:54",
+ "stand": "2026-08-24 00:25:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,27 +27,21 @@
    "quote": 1.0
   },
   {
-   "tool": "fehlermuster-aus-schwarm-träumen-nutzen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "träume-und-simulationen-besser-nutzen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-nach-ideen-durchsuchen.py",
+   "tool": "fehlermuster-aus-schwarm-träumen-nutzen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "traum-erinnerungen-besser-verknüpfen-und.py",
-   "laeufe": 1,
-   "erfolge": 1,
+   "tool": "alte-träume-nach-ideen-durchsuchen.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -111,7 +105,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.82,
+ "haende_quote": 0.817,
  "simulationen_angewandt": 90,
  "swarm_scores": {
   "n": 53,

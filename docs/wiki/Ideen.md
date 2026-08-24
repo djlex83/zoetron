@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Deploy a latency-aware model router maintaining a rolling median latency per model; route only to models with  *(hatte die Idee 2×)*
-- Implement automatic calibration updates: after each prediction, compare predicted vs actual outcome and adjust *(hatte die Idee 2×)*
+- Implement an adaptive latency circuit breaker: track per-model p90 latency, trigger fallback to a faster model *(hatte die Idee 2×)*
+- Add a swarm heartbeat controller: workers report progress every 30s, orchestrator flags stalls >90s, reassigns *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency variance (25s vs 104s for same model) signals unreliable infrastructure that should trigger circuit-breaking before task commitment.
+- Memory pruning ran but removed zero facts/events, indicating pruning thresholds are miscalibrated for high-stress consolidation periods.
+- Simulation approved execution despite 3 identified risks but did not account for infrastructure-level failures like API rate limits.
+- System stress at maximum (1.0) with conserve mode still permits model calls that immediately fail, wasting the single allowed iteration budget.
+- Rate limiting (429 errors) cascades across all models when they share the same OpenRouter API gateway, making fallback chains ineffective during quota
 - The Hermes bridge task depends on external model availability, but the system lacks a local fallback or queue to decouple execution from API reliabili
 - Repeated swarm starts for the same goal without checkpointing progress indicate a missing idempotency or resume mechanism.
 - Conservative metabolism budgets (max_iterations=1) prevent recovery from transient failures, turning temporary rate limits into permanent task abandon
@@ -51,11 +56,6 @@
 - Successful calls exhibit 95-106s latency, suggesting requests queue behind rate limit windows rather than failing fast.
 - Circuit breaker locks models for 30 minutes after 3 consecutive failures, rapidly exhausting the model pool under sustained rate limiting.
 - Rate limiting (429) affects all free-tier models simultaneously, indicating a shared quota bottleneck at the OpenRouter gateway rather than per-model 
-- Many simulations were launched but only one was ever applied, revealing a recurring gap between generating plans and executing their results.
-- Local hand actions always succeeded in under 0.05s with exit 0, confirming failures are confined entirely to remote LLM API calls and never to local t
-- Successful stealth/ox-alpha calls took 145–151 seconds, so timeouts and scheduling budgets must assume multi-minute latencies instead of treating slow
-- The automatic 1800-second lockout after 3 consecutive failures worked as intended and should be retained as the standard circuit-breaker policy.
-- All 429 failures came from OpenRouter free-tier models sharing one rate-limited endpoint, so rotating among them provides no real redundancy.
 
 ---
 
