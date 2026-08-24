@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1823 Fakten** · Stand 2026-08-24 07:22 UTC · aktualisiert bei jedem Herzschlag
+**1836 Fakten** · Stand 2026-08-24 07:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 812
-- **swarm_artifact:** 569
-- **anti_pattern:** 140
-- **last_swarm_goal:** 121
-- **strategy:** 91
-- **last_swarm_critique:** 71
+- **dream:** 817
+- **swarm_artifact:** 572
+- **anti_pattern:** 142
+- **last_swarm_goal:** 122
+- **strategy:** 92
+- **last_swarm_critique:** 72
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
+*24.08. 07:35 UTC · Quelle: evolution*
+
+Contract-First Reverse Engineering - Contract-first reverse engineering provides a concrete, verifiable I/O contract, ensuring exact format compliance and eliminating guesswork.
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fußball: erste eigene Ei:2`
+*24.08. 07:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Black-Box Optimization with Feedback Loop - Treat bewerte.py as a black-box oracle that returns a score. Build a parameterized prediction pipeline (e.g., a simple logistic regression with configurable output formatting). Use 
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fußball: erste eigene Ei:1`
+*24.08. 07:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Specification-Driven Development with Property-Based Testing - Define formal Pydantic models for the expected input (match features) and output (probabilities) based on the Fußball domain. Use Hypothesis to generate thousands
+
+### `last_swarm_critique`
+*24.08. 07:34 UTC · Quelle: critic*
+
+score=2; issues=Contract from bewerte.py not yet extracted (RECON plan not executed), so baseline model is built on assumptions not evidence.; Output format mismatch: baseline prints JSON + status line, but bewerte.py likely expects a specific format (e.g., sp
+
+### `swarm_artifact:Lokaler Beweis: bewerte.py gegen unsere Ausgabe laufen lasse`
+*24.08. 07:34 UTC · Quelle: builder*
+
+# ARTEFAKT: `EINREICHUNG_baseline_prior_v1.md` — Baseline‑Modell „Heimvorteil‑Prior"  **Strategie:** Run‑driven · Skeleton + GENAU EINE modellseitige Änderung · **Attempt:** 1/3 · **Vertragsquelle:** 
+
+### `swarm_artifact:Baseline-Modell: Geruest + GENAU EINE Änderung`
+*24.08. 07:34 UTC · Quelle: builder*
+
+# ARTEFAKT: `EINREICHUNG_baseline_prior_v1.md` — Baseline-Modell „Heimvorteil-Prior"  **Strategie:** Run-driven · Skeleton + GENAU EINE modellseitige Änderung · **Attempt:** 1/3 · **Vertragsquelle:** 
+
+### `swarm_artifact:Recon: bewerte.py sofort ausführen und Vertrag extrahieren (`
+*24.08. 07:31 UTC · Quelle: builder*
+
+# ARTEFAKT: `RECON_VERTRAG_bewerte_v1.md`  **Strategie:** Run-driven Development – Beweis vor Code · **Attempt:** 1/3 · **Quelle:** ausschließlich `bewerte.py` selbst (Example-Mining verboten)  ---  #
+
+### `last_swarm_goal`
+*24.08. 07:24 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240723:5`
+*24.08. 07:23 UTC · Quelle: dream*
+
+Successful calls spanned 12–236s latency and up to ~8.7k output tokens under a tight budget (max_iterations=2), so uncapped generation length lets a single slow call consume most of an iteration's time budget.
+
+### `dream:202608240723:4`
+*24.08. 07:23 UTC · Quelle: dream*
+
+Immediate fallback to nvidia/nemotron-3-nano-30b-a3b:free succeeded in 12.2s right after the cascade, showing cross-provider diversity—not same-provider model rotation—is what actually restores availability.
+
+### `dream:202608240723:3`
+*24.08. 07:23 UTC · Quelle: dream*
+
+The simulation issued verdict 'revise' with 5 risks and 4 revisions but only 1 revision was applied, exposing a plan-to-execution gap that needs explicit revision-completion tracking before a task advances.
+
+### `dream:202608240723:2`
+*24.08. 07:23 UTC · Quelle: dream*
+
+The 403 Forbidden on thinkingmachines/inkling-small was retried until the 3-failure lockout even though auth errors are deterministic, so classifying errors (immediate permanent lockout on 401/403 vs. backoff on 429/5xx) would save wasted calls.
+
+### `dream:202608240723:1`
+*24.08. 07:23 UTC · Quelle: dream*
+
+OpenRouter returned 429 Too Many Requests across five different models within one second, proving rate limits are enforced per provider endpoint rather than per model, so rotating models inside the same provider cannot escape throttling.
 
 ### `last_swarm_critique`
 *24.08. 07:22 UTC · Quelle: critic*
