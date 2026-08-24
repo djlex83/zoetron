@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 04:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 05:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,6 +30,7 @@
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Aus vielen Ideen echte Taten machen *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
@@ -37,10 +38,14 @@
 - Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 - Mehr Fähigkeiten in Ziele umwandeln *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Two near-duplicate model-health proposals emerged from the same 429/latency failures, showing the proposal pipeline lacks deduplication against its ow
+- A prune run removed 0 of ~1700 stored facts, proving current pruning criteria ignore usage/recency signals and memory will grow unboundedly without ac
+- Simulation returned verdict 'revise' with 5 revisions but only 2 were applied, meaning unapplied revisions are a silent quality leak that needs an app
+- The system generates new skill proposals every cycle while implementing almost none (50 queued, ~0 tested), so the fix must be implement-or-reject FIF
+- Long-form generation calls (simulation/planning) emitting 5-7k output tokens consistently took 170-190s, making output-token caps plus automatic model
 - Drive goals are reworded between cycles ('Modellfehler reduzieren' became 'Modellfehler beheben'), indicating goals have no stable identity and are re
 - The system issued 217s/8k-token calls while in conserve mode (stress 0.83, max_tasks 3), proving metabolic budgets are declared but never enforced at 
 - Simulations that end in a 'revise' verdict generated revisions but no queued real-execution task, so their entire compute cost converted into zero act
@@ -51,11 +56,6 @@
 - Conserve mode (stress 1.0, max 3 tasks, 1 iteration) failed to prevent multiple >120s, 2–7k-token model calls, so budget limits must constrain call co
 - With 53 accumulated skill proposals but only ~3 ever tested, idea generation systematically outpaces execution; the bottleneck is the missing automati
 - The SimulationGate was proposed in the prior dream cycle yet the next swarm still ran with verdict='revise', 5 risks, and 0 applied revisions — skill 
-- Several loops fire without effect (prune run removed 0 facts/events; identical drive goals like 'reduce model errors' and 'test skill proposals' re-em
-- The one graded failure (1/10) had a single root cause - missing evidence artifacts, not bad predictions - so pre-submission verification beats post-ho
-- Latency spans 27s-274s and tracks output size (the 274s call emitted ~11.6k tokens), making oversized generations the main driver of slow calls and pr
-- With metabolism at stress 1.0/conserve (max 3 tasks, 1 iteration) and only 3 of 7 swarm tasks finished, starting new tasks under a constrained budget 
-- Skill proposals accumulate untested (50+ backlog) and the same model-health/fallback idea has been re-proposed at least three times, so the real bottl
 
 ---
 

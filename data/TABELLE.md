@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1473 Neuronen · 23550 bewertete Synapsen
+Stand: 1480 Neuronen · 23733 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,7 +10,7 @@ Stand: 1473 Neuronen · 23550 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 132 | 0.26 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 134 | 0.26 |
 | 2 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 113 | 0.27 |
 | 3 | 💭 | Model latency varies by 27× (13s–355s) without automatic failove… | 110 | 0.27 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 127 | 0.23 |
@@ -33,17 +33,17 @@ Stand: 1473 Neuronen · 23550 bewertete Synapsen
 | # | Stärke | Erinnerung A | Erinnerung B |
 |---|---|---|---|
 | 1 | **0.55** | 🛠 „Fix failing CI workflow (lint/type-check/test… | 🛠 „Repair GitHub Pages deployment workflow“. Erg… |
-| 2 | **0.54** | 💭 „Inventory the 26-fact knowledge base“. Ergebn… | 💭 „Consolidate redundant or conflicting facts“. … |
-| 3 | **0.54** | 💭 Model latency varies extremely (6.5s to 128s) … | 💭 Model latency varies extremely (0.7s to 143s) … |
-| 4 | **0.54** | 🛠 „Extract skill suggestions from input text“. E… | 🛠 „Create skill entries in registry“. Ergebnis: … |
-| 5 | **0.53** | 💭 Swarm role imbalance (5 builders, 1 planner, 1… | 💭 Swarm convergence fails despite evolution gain… |
-| 6 | **0.53** | 💭 Latency spikes up to 62.5 s reveal the need fo… | 💭 High latency spikes (up to 90 s) reveal occasi… |
-| 7 | **0.53** | 💭 Model latency frequently exceeds 30 s, causing… | 💭 Model latency fluctuates widely (8–185 s), cau… |
-| 8 | **0.53** | 💭 Applying revisions atomically and re‑simulatin… | 💭 Applying simulation revisions non‑atomically l… |
-| 9 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
-| 10 | **0.53** | 💭 Model latency variance (6.9s to 208.3s) for id… | 💭 High latency variance (6.7–108.9 s) for the sa… |
-| 11 | **0.53** | 🛠 „Define HealthRegister data model“. Ergebnis: … | 🛠 „Define Injector Pydantic Model“. Ergebnis: ``… |
-| 12 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
-| 13 | **0.52** | 💭 hands-execute crashed with AttributeError 'Mem… | 💭 hands-execute crashed with AttributeError: Mem… |
-| 14 | **0.52** | 🛠 „Define Hermes Communication Protocol Contract… | 🛠 „Define Hermes communication protocol and mess… |
-| 15 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
+| 2 | **0.54** | 💭 Prune runs removed 0 facts and 0 events, provi… | 💭 A prune run removed 0 of ~1700 stored facts, p… |
+| 3 | **0.54** | 💭 „Inventory the 26-fact knowledge base“. Ergebn… | 💭 „Consolidate redundant or conflicting facts“. … |
+| 4 | **0.54** | 💭 Model latency varies extremely (6.5s to 128s) … | 💭 Model latency varies extremely (0.7s to 143s) … |
+| 5 | **0.54** | 🛠 „Extract skill suggestions from input text“. E… | 🛠 „Create skill entries in registry“. Ergebnis: … |
+| 6 | **0.53** | 💭 Swarm role imbalance (5 builders, 1 planner, 1… | 💭 Swarm convergence fails despite evolution gain… |
+| 7 | **0.53** | 💭 Latency spikes up to 62.5 s reveal the need fo… | 💭 High latency spikes (up to 90 s) reveal occasi… |
+| 8 | **0.53** | 💭 Model latency frequently exceeds 30 s, causing… | 💭 Model latency fluctuates widely (8–185 s), cau… |
+| 9 | **0.53** | 💭 Applying revisions atomically and re‑simulatin… | 💭 Applying simulation revisions non‑atomically l… |
+| 10 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
+| 11 | **0.53** | 💭 Model latency variance (6.9s to 208.3s) for id… | 💭 High latency variance (6.7–108.9 s) for the sa… |
+| 12 | **0.53** | 🛠 „Define HealthRegister data model“. Ergebnis: … | 🛠 „Define Injector Pydantic Model“. Ergebnis: ``… |
+| 13 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
+| 14 | **0.52** | 💭 hands-execute crashed with AttributeError 'Mem… | 💭 hands-execute crashed with AttributeError: Mem… |
+| 15 | **0.52** | 🛠 „Define Hermes Communication Protocol Contract… | 🛠 „Define Hermes communication protocol and mess… |

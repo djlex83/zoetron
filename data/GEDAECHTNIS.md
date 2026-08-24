@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1734 Fakten** · Stand 2026-08-24 04:43 UTC · aktualisiert bei jedem Herzschlag
+**1742 Fakten** · Stand 2026-08-24 05:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 767
-- **swarm_artifact:** 540
+- **dream:** 772
+- **swarm_artifact:** 542
 - **anti_pattern:** 138
-- **last_swarm_goal:** 112
+- **last_swarm_goal:** 113
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,46 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Minimal-Baseline-Modell bauen (EINE Aenderung am Geruest)`
+*24.08. 04:56 UTC · Quelle: builder*
+
+# ARTEFAKT: Minimal-Baseline-Modell — Home-Prior + optionale Elo-Differenz-Anpassung  **Task:** Minimal-Baseline-Modell bauen (EINE Änderung am Gerüst) · **Attempt:** 1/3 · **Typ:** build · **Ziel:** 
+
+### `swarm_artifact:Evaluator-Vertrag rekonstruieren (bewerte.py lesen)`
+*24.08. 04:55 UTC · Quelle: builder*
+
+# ARTEFAKT: Evaluator-Vertrag — `systematic-exploration-first`  **Task:** Evaluator-Vertrag rekonstruieren (bewerte.py lesen) · **Attempt:** 1/3 · **Typ:** build · **Output:** ein lauffähiges Erkundun
+
+### `last_swarm_goal`
+*24.08. 04:45 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240445:5`
+*24.08. 04:45 UTC · Quelle: dream*
+
+Two near-duplicate model-health proposals emerged from the same 429/latency failures, showing the proposal pipeline lacks deduplication against its own backlog.
+
+### `dream:202608240445:4`
+*24.08. 04:45 UTC · Quelle: dream*
+
+A prune run removed 0 of ~1700 stored facts, proving current pruning criteria ignore usage/recency signals and memory will grow unboundedly without access-based decay.
+
+### `dream:202608240445:3`
+*24.08. 04:45 UTC · Quelle: dream*
+
+Simulation returned verdict 'revise' with 5 revisions but only 2 were applied, meaning unapplied revisions are a silent quality leak that needs an apply-rate metric.
+
+### `dream:202608240445:2`
+*24.08. 04:45 UTC · Quelle: dream*
+
+The system generates new skill proposals every cycle while implementing almost none (50 queued, ~0 tested), so the fix must be implement-or-reject FIFO discipline, not more generation.
+
+### `dream:202608240445:1`
+*24.08. 04:45 UTC · Quelle: dream*
+
+Long-form generation calls (simulation/planning) emitting 5-7k output tokens consistently took 170-190s, making output-token caps plus automatic model downgrade the highest-leverage latency fix.
 
 ### `swarm_artifact:Gerüst + Daten inspizieren: Formate der Trainings-/Testdaten`
 *24.08. 04:40 UTC · Quelle: builder*
