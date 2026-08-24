@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Neue Fähigkeiten aus Vorschlägen lernen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren und stabiler machen *(wieder aufgegriffen: 2×)*
 - Modellkalibrierung verbessern *(wieder aufgegriffen: 2×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
-- Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The Hermes bridge task depends on external model availability, but the system lacks a local fallback or queue to decouple execution from API reliabili
+- Repeated swarm starts for the same goal without checkpointing progress indicate a missing idempotency or resume mechanism.
+- Conservative metabolism budgets (max_iterations=1) prevent recovery from transient failures, turning temporary rate limits into permanent task abandon
+- High latency variance (25–288s) on the same model makes fixed timeouts unreliable and wastes budget on stalled calls.
+- Rate limits on shared free-tier endpoints cause cascading failures when no backoff or alternative providers exist.
 - Zero pruning during prune_run indicates memory pressure is not from fact accumulation but from active task overhead.
 - Simulation-driven revision cycles (4 risks, 3 revisions) consume disproportionate iteration budget under conserve mode (max_iterations=1).
 - Successful calls exhibit 95-106s latency, suggesting requests queue behind rate limit windows rather than failing fast.
@@ -51,11 +56,6 @@
 - Successful stealth/ox-alpha calls took 145–151 seconds, so timeouts and scheduling budgets must assume multi-minute latencies instead of treating slow
 - The automatic 1800-second lockout after 3 consecutive failures worked as intended and should be retained as the standard circuit-breaker policy.
 - All 429 failures came from OpenRouter free-tier models sharing one rate-limited endpoint, so rotating among them provides no real redundancy.
-- The Hermes bridge goal emerged independently from both dream analysis and swarm planning (a 'combination' signal), and since filesystem hand-actions r
-- Prune runs removed 0 facts and 0 events, proving current pruning thresholds never fire and memory will grow unbounded without usage- or age-based evic
-- Skill proposals systematically outpace simulation testing (confirmed by the explicit 'gap' drive goal), creating an idea graveyard unless proposals ar
-- Benchmark scoring reveals reflex (2/5) as the weakest subsystem while cortex is already maxed (5/5), so improvement effort should shift from reasoning
-- Model latency on the same endpoint is bimodal (3-14s for light tasks vs 92-164s under load), so critical-path model calls must assume worst-case laten
 
 ---
 
