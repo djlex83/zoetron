@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 05:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 05:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Add startup-time interface contract validation for all core services (MemoryStore, SkillRegistry, etc.) to fai *(hatte die Idee 2×)*
 - Implement automatic model failover: on 502/overload errors, retry the request on a ranked fallback model (e.g. *(hatte die Idee 2×)*
 - Gate evolution winners with a real-world validation run: accept a variant only if a one-cycle swarm execution  *(hatte die Idee 2×)*
 - Trigger pre-execution replanning when calibration predicts a score below the goal threshold (e.g., <8) with ab *(hatte die Idee 2×)*
 - Reserve a minimum iteration budget (>=3) for active convergence goals, or defer such goals to low-stress perio *(hatte die Idee 2×)*
 - Enforce full revision application: when simulation flags N risks, either apply all N revisions or re-simulate  *(hatte die Idee 2×)*
+- Auto-generate interface contract tests (or typed stubs) for core stores like MemoryStore so missing methods su *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Only 2 of 9 started swarm tasks completed while stress stayed low at 0.318, showing task attrition comes from missing start/resume gating rather than 
+- Four independently proposed skills this cycle (start-gate, SimulationGate, submission validator, conditional prune) all reinvent check-before-act gati
+- The simulation returned verdict 'revise' with 5 risks yet subsequent builder/model calls still executed, proving revise verdicts need a hard Simulatio
+- One uncapped call produced 22,983 output tokens in 546 s (roughly 5-10x the median call), confirming that a default max_tokens cap near 2000 with chun
+- Parallel fan-out to two OpenRouter models triggered simultaneous 429 rate-limit failures, so outbound model calls must be serialized or jitter-stagger
 - The prune run removed 0 facts and 0 events, meaning current pruning criteria are too conservative and memory will grow unchecked.
 - Successful model calls routinely take 90-210 s and emit up to ~6000 output tokens, so uncapped generations directly threaten the tight 2-iteration / 5
 - Pre-execution simulation demonstrably paid off: it flagged 5 risks on the football-submission goal and 2 revisions were applied before spending any re
@@ -51,11 +56,6 @@
 - Simulation returned verdict 'revise' with 5 revisions but only 2 were applied, meaning unapplied revisions are a silent quality leak that needs an app
 - The system generates new skill proposals every cycle while implementing almost none (50 queued, ~0 tested), so the fix must be implement-or-reject FIF
 - Long-form generation calls (simulation/planning) emitting 5-7k output tokens consistently took 170-190s, making output-token caps plus automatic model
-- Drive goals are reworded between cycles ('Modellfehler reduzieren' became 'Modellfehler beheben'), indicating goals have no stable identity and are re
-- The system issued 217s/8k-token calls while in conserve mode (stress 0.83, max_tasks 3), proving metabolic budgets are declared but never enforced at 
-- Simulations that end in a 'revise' verdict generated revisions but no queued real-execution task, so their entire compute cost converted into zero act
-- Skill proposals recur across dream cycles (the token-cap idea was re-proposed nearly verbatim) because they lack persistent IDs and status tracking, c
-- Latency spikes above 200s occur exclusively on calls emitting ~8000+ output tokens, so output length—not provider speed—is the dominant latency driver
 
 ---
 

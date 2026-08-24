@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1752 Fakten** · Stand 2026-08-24 05:18 UTC · aktualisiert bei jedem Herzschlag
+**1762 Fakten** · Stand 2026-08-24 05:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 777
-- **swarm_artifact:** 546
+- **dream:** 782
+- **swarm_artifact:** 550
 - **anti_pattern:** 138
-- **last_swarm_goal:** 114
+- **last_swarm_goal:** 115
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Haertung: Determinismus und Edge-Cases abdecken`
+*24.08. 05:37 UTC · Quelle: builder*
+
+# ARTEFAKT T4: Härtung — Determinismus & Edge-Cases  **Strategie:** Single-File Atomic Operations (Gewinnstrategie) · Checks wortgleich zum T3-Vertrag (C1–C6) **Weiterentwicklung von:** Artefakt T2 (B
+
+### `swarm_artifact:Local Gate: bewerte.py-Checks als Validator replizieren bis `
+*24.08. 05:33 UTC · Quelle: builder*
+
+# ARTEFAKT T3: Local Gate — `bewerte.py`-Checks als Validator bis PASS  **Strategie:** Protocol-First Contract-Driven (Gewinnstrategie) — der lokale Validator ist der Vertrag mit `bewerte.py`. **Statu
+
+### `swarm_artifact:Baseline-Modell: Single-File, Zero-Dependency, 3-Weg-Probas`
+*24.08. 05:31 UTC · Quelle: builder*
+
+# ARTEFAKT T2: Baseline-Modell — Single-File, Zero-Dependency, 3-Weg-Probas  **Strategie:** Single-File Atomic Operations with Zero Dependencies (Gewinnstrategie, weiterentwickelt aus Attempt-1-Draft)
+
+### `swarm_artifact:Rekon: bewerte.py lokalisieren und Akzeptanzkriterien extrah`
+*24.08. 05:30 UTC · Quelle: builder*
+
+# REKON-ARTEFAKT T1: `bewerte.py` lokalisieren & Akzeptanzkriterien extrahieren  **Strategie:** systematic-exploration-first (bewiesen, Score-führend) — KEIN blind-iterative-probing (VERBOTEN). **Stat
+
+### `last_swarm_goal`
+*24.08. 05:23 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240520:5`
+*24.08. 05:20 UTC · Quelle: dream*
+
+Only 2 of 9 started swarm tasks completed while stress stayed low at 0.318, showing task attrition comes from missing start/resume gating rather than resource pressure - block creation when unfinished >= max_tasks and resume the oldest task first.
+
+### `dream:202608240520:4`
+*24.08. 05:20 UTC · Quelle: dream*
+
+Four independently proposed skills this cycle (start-gate, SimulationGate, submission validator, conditional prune) all reinvent check-before-act gating, so a single generic precondition-gate mechanism should replace these ad-hoc rules.
+
+### `dream:202608240520:3`
+*24.08. 05:20 UTC · Quelle: dream*
+
+The simulation returned verdict 'revise' with 5 risks yet subsequent builder/model calls still executed, proving revise verdicts need a hard SimulationGate that blocks all downstream work until a re-run returns 'go' with <=2 risks.
+
+### `dream:202608240520:2`
+*24.08. 05:20 UTC · Quelle: dream*
+
+One uncapped call produced 22,983 output tokens in 546 s (roughly 5-10x the median call), confirming that a default max_tokens cap near 2000 with chunked continuation prompts is required to bound tail latency.
+
+### `dream:202608240520:1`
+*24.08. 05:20 UTC · Quelle: dream*
+
+Parallel fan-out to two OpenRouter models triggered simultaneous 429 rate-limit failures, so outbound model calls must be serialized or jitter-staggered with exponential backoff and an ordered fallback chain.
 
 ### `swarm_artifact:Local Gate: submission gegen bewerte.py antesten`
 *24.08. 05:17 UTC · Quelle: builder*
