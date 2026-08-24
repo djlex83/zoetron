@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 14:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 14:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposed skills accumulate untested (drive goal) because there is no automated trial harness that validates a proposal against a minimal replay before
+- Calibration predicted the final score exactly (3), yet the swarm continued, showing the stop criterion is decoupled from the calibration signal.
+- A missing `add_fact` method on MemoryStore halted the hand layer, revealing that skill proposals are deployed without contract verification against th
+- Model latency varies 35× (2.8s–97.5s) on the same model, making fixed timeouts ineffective and causing unpredictable swarm duration.
+- Swarm evolution improved individual variant scores (3→9) but the swarm still failed to converge, indicating the aggregation/critic mechanism cannot sy
 - Metabolism state was 'full' with low stress yet max_iterations stayed at 2, suggesting budget gates are too conservative relative to actual capacity.
 - Skill proposals accumulate faster than they are implemented (multiple proposals, zero prune activity), indicating an execution bottleneck between drea
 - Rate limits make more LLM calls the wrong lever for throughput; per-call output density (more facts/tokens per call) is the effective multiplier.
@@ -51,11 +56,6 @@
 - The task registry gap is the root cause of both stalled swarms and untested skills: without status tracking (open/done/failed), background work is sil
 - Skill proposals are write-only artifacts: 60 proposed vs. 2 used means the pipeline lacks an adoption/test step; proposals must be queued into the tas
 - Swarm convergence failure is systemic: 11 of 13 swarms stall because the critic loop re-enters 'revise' after revisions are applied instead of switchi
-- Swarm completion is critically low (1 finished of ~11 started) and every simulation returned verdict 'revise', pointing to goal framing or revision lo
-- prune_run removed zero facts and zero events despite heavy activity, meaning the memory store grows unboundedly and pruning criteria are too conservat
-- The same recall key 'last_swarm_goal' was fetched three times in one run, showing redundant memory reads that waste iterations under a max_iterations=
-- Output token counts vary 40x between calls on similar inputs (19 to 24326 tokens), indicating unbounded generation is the primary cost and timeout ris
-- Latency is highly bimodal (2.6s to 505s for the same model), so any pipeline design must assume worst-case multi-minute stalls rather than average-cas
 
 ---
 
