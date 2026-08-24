@@ -98,8 +98,8 @@ export const sections = {
   },
   lernkurve: {
     label: { de: 'Die Lernkurve', en: 'The learning curve' },
-    head: { de: 'Wird es besser?\nHier steht die Antwort.', en: 'Is it getting better?\nHere is the answer.' },
-    sub: { de: 'Jeder Lauf endet mit einer Note von 0 bis 10, vergeben von einem gegnerischen Critic. Alle Urteile, die noch im Gedächtnis liegen — ungefiltert, in der Reihenfolge, in der sie gefallen sind.', en: 'Every run ends with a 0–10 verdict from an adversarial critic. All verdicts still held in memory — unfiltered, in the order they happened.' },
+    head: { de: 'Wird es besser?\nDas Ergebnis entscheidet.', en: 'Is it getting better?\nThe result decides.' },
+    sub: { de: 'Zwei Messlatten, eine davon unbestechlich: das Spielergebnis. Zoetron sagt Fußballspiele vorher und wird an echten Ausgängen gemessen — daneben steht seine eigene Benotung durch den Critic.', en: 'Two yardsticks, one of them incorruptible: the match result. Zoetron predicts football matches and is measured against real outcomes — next to its own grading by the critic.' },
   },
   ideen: {
     label: { de: 'Ideen-Board', en: 'Ideas board' },

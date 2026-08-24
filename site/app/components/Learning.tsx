@@ -1,9 +1,10 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { sections } from '../lib/content'
 import { useLang } from '../lib/lang'
 import { gsap, reduced, useGsap } from '../lib/anim'
 import type { MemoryFeed, Seed } from '../lib/live'
 import { LiveDot, Section, SectionHead } from './ui'
+import Football from './Football'
 
 /** the scale from the organism's own scoring page */
 const band = (s: number) =>
@@ -19,6 +20,41 @@ const W = 600
 const H = 190
 
 export default function Learning({ memory, seed }: { memory: MemoryFeed | null; seed: Seed | null }) {
+  const { lang } = useLang()
+  const [view, setView] = useState<'match' | 'critic'>('match')
+
+  return (
+    <Section id="lernkurve" className="border-t border-white/6">
+      <div className="flex flex-wrap items-end justify-between gap-6">
+        <SectionHead label={sections.lernkurve.label} head={sections.lernkurve.head} sub={sections.lernkurve.sub} />
+        <div data-reveal className="flex items-center gap-2">
+          {([
+            ['match', lang === 'de' ? '⚽ Spielergebnis' : '⚽ Match result'],
+            ['critic', lang === 'de' ? '🛡 Critic-Urteil' : '🛡 Critic verdict'],
+          ] as const).map(([key, label]) => (
+            <button key={key} onClick={() => setView(key)} className="pill tab" data-active={view === key ? '1' : '0'}>
+              <span>{label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <p data-reveal className="mt-6 max-w-3xl text-[0.95rem] leading-relaxed text-ink-faint">
+        {view === 'match'
+          ? (lang === 'de'
+              ? 'Diese Kurve kann kein Sprachmodell schönreden: Zoetron sagt Fußballspiele voraus, gemessen wird an den echten Ergebnissen. Basislinie und Buchmacher stehen als Latte im Bild — ein Vorsprung unter 0,6 Prozentpunkten gilt bei dieser Stichprobengröße als Rauschen.'
+              : 'No language model can talk this curve up: Zoetron predicts football matches and is measured against the real results. Baseline and bookmaker are drawn as the bar to clear — at this sample size, an edge below 0.6 points counts as noise.')
+          : (lang === 'de'
+              ? 'Zum Vergleich die interne Sicht: Ein gegnerischer Critic benotet jeden Lauf von 0 bis 10. Ehrlich gesagt benotet sich hier ein Sprachmodell selbst — deshalb steht die Fußball-Messung daneben.'
+              : 'For comparison, the internal view: an adversarial critic grades every run from 0 to 10. Honestly, that is a language model grading itself — which is why the football measurement stands next to it.')}
+      </p>
+
+      {view === 'match' ? <Football /> : <CriticCurve memory={memory} seed={seed} />}
+    </Section>
+  )
+}
+
+function CriticCurve({ memory, seed }: { memory: MemoryFeed | null; seed: Seed | null }) {
   const { lang } = useLang()
   const root = useRef<HTMLDivElement>(null)
 
@@ -63,17 +99,13 @@ export default function Learning({ memory, seed }: { memory: MemoryFeed | null; 
     })
 
   return (
-    <Section id="lernkurve" className="border-t border-white/6">
-      <div ref={root}>
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <SectionHead label={sections.lernkurve.label} head={sections.lernkurve.head} sub={sections.lernkurve.sub} />
-          <div data-reveal className="flex items-center gap-3">
-            <LiveDot label={runs.length ? `${runs.length} ${lang === 'de' ? 'Urteile im Gedächtnis' : 'verdicts in memory'}` : 'live'} tone="amber" />
-          </div>
+    <div ref={root}>
+        <div data-reveal className="mt-4 flex items-center gap-3">
+          <LiveDot label={runs.length ? `${runs.length} ${lang === 'de' ? 'Urteile im Gedächtnis' : 'verdicts in memory'}` : 'live'} tone="amber" />
         </div>
 
         {/* --- numbers --- */}
-        <div data-reveal className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-[16px] bg-white/6 sm:grid-cols-4 lg:mt-16">
+        <div data-reveal className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-[16px] bg-white/6 sm:grid-cols-4 lg:mt-16">
           {[
             { v: total ? String(total) : '—', l: lang === 'de' ? 'bewertete Läufe' : 'scored runs' },
             { v: avg ? avg.toFixed(2).replace('.', ',') : '—', l: lang === 'de' ? 'Ø Score' : 'avg score' },
@@ -204,7 +236,6 @@ export default function Learning({ memory, seed }: { memory: MemoryFeed | null; 
               : 'The critic judges at temperature 0 and hard-caps failed tasks at 3. Below 8, evolution starts breeding variants — so the curve does not rise by lowering the bar.'}
           </p>
         </div>
-      </div>
-    </Section>
+    </div>
   )
 }
