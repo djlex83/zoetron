@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 11:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 12:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,14 +12,14 @@
 - Re-score every evolution winner with the same independent scorer used for act_done and reject the winner if th *(hatte die Idee 3×)*
 - After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 3×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Implement exponential‑backoff retry with model failover for latency >30 s or 5xx errors, logging each failover *(hatte die Idee 2×)*
-- Make simulation revision application atomic: apply all flagged revisions, then re‑simulate and abort if any re *(hatte die Idee 2×)*
-- Add automated contract tests for the MemoryStore interface (add_fact, get_facts, etc.) to run on every CI buil *(hatte die Idee 2×)*
 - Deploy an error‑pattern logger that records each model failure with context (latency, input snippet) and trigg *(hatte die Idee 2×)*
 - Add a latency SLA guard to model_ok events: if p95 latency > 30s, route to fallback model and flag infrastruct *(hatte die Idee 2×)*
 - Make simulation revision application transactional: apply all revisions as one batch, re-simulate, and roll ba *(hatte die Idee 2×)*
 - Add a startup contract test asserting every MemoryStore method invoked by hands-execute (starting with add_fac *(hatte die Idee 2×)*
 - Require the simulator to enumerate a minimum number of concrete risks even for 'go' verdicts and route any zer *(hatte die Idee 2×)*
+- Add a CI contract test that pins the MemoryStore public API (add_fact, get_facts, etc.) and statically fails a *(hatte die Idee 2×)*
+- Add a periodic reflection step that pairs same‑day dreams with older memories to generate combined goal candid *(hatte die Idee 2×)*
+- Make prune_run emit a warning and trigger a criteria audit when facts_pruned == 0 and events_pruned == 0 for t *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -32,15 +32,20 @@
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
-- Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 - Mehr Fähigkeiten in Ziele umwandeln *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 2×)*
 - Wiederkehrende Fehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 2×)*
+- Modellfehler vermeiden *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs remove nothing (0 facts, 0 events) while memory grows with duplicate drive goals, so the same lessons (reduce model errors, finish stalled 
+- Six of nine background tasks remain unfinished across runs, indicating tasks are started without completion tracking or a retry ledger.
+- Model failures cluster as 429 rate-limit errors on OpenRouter after long generations (15k–18k output tokens), suggesting bursty high-token calls exhau
+- Both football runs ended in a 'revise' verdict with 5 risks identified, yet only 3 and 5 revisions were applied — the simulation loop never converges 
+- The swarm repeatedly restarts the same football goal from scratch instead of resuming prior work, because 'last_swarm_goal' is recalled but no checkpo
 - Both prune runs removed zero facts and zero events despite stress=1.0, indicating the pruning criteria never trigger and memory grows monotonically un
 - Conserve mode capped tasks at 3 and iterations at 1, yet the system still launched a new swarm and a 754-second/32k-token generation, showing budget e
 - The same three fixes (circuit breaker, per-request timeout, swarm-state persistence) were proposed in this cycle and appear again as prior proposals, 
@@ -51,11 +56,6 @@
 - Conserve-mode budget (stress 1.0, max_tasks 3, max_iterations 1) did not stop a full 5-risk/5-revision simulation from running, meaning metabolism sta
 - ox-alpha latency varied ~10x (43.8s/651 tokens out vs 448.4s/17515 tokens out), so long-generation steps stall the pipeline and should be chunked or o
 - Four models failed with 429 errors within the same second because requests were fired in parallel bursts at free-tier endpoints; serializing calls wit
-- The football task's critic is the actual match result and odds data are banned, so any approach must rely on odds-free features and be judged solely b
-- The simulate→revise gate surfaced 5 risks and applied 5 revisions before execution, proving pre-mortem simulation reliably hardens plans and should ru
-- At stress=1.0 the metabolism gate cut the budget to 3 tasks and 1 iteration, meaning high-stress periods demand single-pass execution of only the high
-- ox-alpha latency spanned 43.8s–448.4s and tracked output volume (worst call emitted 17,515 tokens), so wall-clock blowups stem from unbounded generati
-- Concurrent fan-out to free-tier OpenRouter models caused five near-simultaneous 429/502 failures within one second, while a heterogeneous fallback (do
 
 ---
 

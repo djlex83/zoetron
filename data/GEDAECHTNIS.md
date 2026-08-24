@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1938 Fakten** · Stand 2026-08-24 11:36 UTC · aktualisiert bei jedem Herzschlag
+**1950 Fakten** · Stand 2026-08-24 12:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 882
-- **swarm_artifact:** 587
-- **anti_pattern:** 146
-- **last_swarm_goal:** 135
-- **strategy:** 94
-- **last_swarm_critique:** 75
+- **dream:** 887
+- **swarm_artifact:** 589
+- **anti_pattern:** 148
+- **last_swarm_goal:** 136
+- **strategy:** 95
+- **last_swarm_critique:** 76
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*24.08. 12:13 UTC · Quelle: evolution*
+
+Ensemble aus einfachen, robusten Merkmalen statt einzelner Elo-Metrik - Variante 0 behebt nur den Trunkierungsfehler und bleibt bei einer einzelnen Elo-Metrik – Elo erreicht in Fußball typischerweise nur ~52-54% Accuracy und liefert schlecht kalibriert
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
+*24.08. 12:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Marktunabhängige Wahrscheinlichkeitskalibrierung via Dixon-Coles-Poisson-Modell - Komplett anderer methodischer Zugang: statt Klassifikation direkt ein goals-basiertes Poisson-Modell. Angriffs-/Abwehrstärken jedes Teams werde
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :0`
+*24.08. 12:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Vollständige, lauffähige Elo-Pipeline mit Walk-Forward-Validierung - Statt abgebrochenen Code zu reparieren, wird ein komplettes, atomar ausführbares Skript erzeugt: (1) Datenaufbereitung aus einer CSV (Spalten: date, home, a
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*24.08. 12:12 UTC · Quelle: builder*
+
+[score 4] # Artefakt: Quotenfreie 1X2-Vorhersage gegen die 50,2 %-Basislinie  Das Deliverable definiert Metrik (Accuracy auf 1X2 + Log-Loss), Datenquelle (football-data.co.uk, Premier League 2017–
+
+### `last_swarm_critique`
+*24.08. 12:12 UTC · Quelle: critic*
+
+score=4; issues=Code ist unvollständig/trunkiert: elo_update bricht mitten in der Zeile ab ('gd = abs(hg -'), es fehlen die Hauptauswertungslogik, Walk-forward-Schleife, Report-Generierung und der Vergleich gegen BASELINE_ACC/BASELINE_LOGLOSS – das Artefakt is
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*24.08. 12:12 UTC · Quelle: builder*
+
+# Artefakt: Quotenfreie 1X2-Vorhersage gegen die 50,2 %-Basislinie  Das Deliverable definiert Metrik (Accuracy auf 1X2 + Log-Loss), Datenquelle (football-data.co.uk, Premier League 2017–2024; syntheti
+
+### `last_swarm_goal`
+*24.08. 12:04 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608241204:5`
+*24.08. 12:04 UTC · Quelle: dream*
+
+Prune runs remove nothing (0 facts, 0 events) while memory grows with duplicate drive goals, so the same lessons (reduce model errors, finish stalled tasks) are re-derived every cycle instead of being marked resolved.
+
+### `dream:202608241204:4`
+*24.08. 12:04 UTC · Quelle: dream*
+
+Six of nine background tasks remain unfinished across runs, indicating tasks are started without completion tracking or a retry ledger.
+
+### `dream:202608241204:3`
+*24.08. 12:04 UTC · Quelle: dream*
+
+Model failures cluster as 429 rate-limit errors on OpenRouter after long generations (15k–18k output tokens), suggesting bursty high-token calls exhaust the quota; spacing or capping large outputs would prevent them.
+
+### `dream:202608241204:2`
+*24.08. 12:04 UTC · Quelle: dream*
+
+Both football runs ended in a 'revise' verdict with 5 risks identified, yet only 3 and 5 revisions were applied — the simulation loop never converges to an execution step.
+
+### `dream:202608241204:1`
+*24.08. 12:04 UTC · Quelle: dream*
+
+The swarm repeatedly restarts the same football goal from scratch instead of resuming prior work, because 'last_swarm_goal' is recalled but no checkpoint of partial results is stored or reused.
 
 ### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
 *24.08. 11:32 UTC · Quelle: builder*

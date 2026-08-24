@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 11:36:29",
+ "stand": "2026-08-24 12:14:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "fähigkeiten-selbstständig-üben.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -81,17 +81,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.809,
- "simulationen_angewandt": 88,
+ "haende_quote": 0.807,
+ "simulationen_angewandt": 89,
  "swarm_scores": {
-  "n": 37,
+  "n": 38,
   "best": 8.0,
   "schnitt": 3.89
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 34,
-   "schnitt": 3.91
+   "schnitt": 3.97
   },
   "bau": {
    "n": 3,
