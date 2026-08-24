@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 09:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 09:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals keep accumulating (e.g., the circuit breaker was proposed again) while none were executed this cycle, making the proposal-to-execution
+- The simulate→revise loop detected 4 risks and applied 3 revisions before execution, proving pre-flight validation catches problems cheaply and should 
+- Stress level 1.0 triggered conserve mode (max_tasks=3, max_iterations=1), which throttled spend but the swarm still launched a full new goal, so budge
+- Model reliability is highly uneven: nvidia/nemotron-3-ultra succeeded twice (12s and 80s) while stealth/ox-alpha and z-ai/glm-5.2 failed repeatedly, m
+- OpenRouter free-tier rate limits (HTTP 429) caused the majority of model failures, clustering when several requests fire within seconds, so request pa
 - Successful free-tier calls took 12–35 s each, so 429-driven fallback chains can push single-request wall time beyond a minute unless successful respon
 - Five skill_proposals were generated in one session with zero follow-up executions, exactly reproducing the gap flagged by drive_goal 'Fertigkeiten wir
 - prune_run removed 0 facts and 0 events, proving the current pruning heuristic selects nothing and memory will grow unbounded without a forced-review t
@@ -51,11 +56,6 @@
 - Risk-count calibration showed predicted=4 vs actual=5 (abs_error=1), indicating a systematic underestimate correctable by applying a +1 offset or ×1.2
 - Latency on the working model varied 11x (5.1s–57.0s) uncorrelated with input size (2501 tokens→5.1s vs 1678 tokens→57.0s), so timeout budgets must be 
 - z-ai/glm-5.2:free returned HTTP 429 on every attempt (8+ consecutive failures across ~20s) while nvidia/nemotron-3-ultra-550b-a55b:free succeeded 100%
-- Skill proposals accumulate without ever being built (confirmed by the drive_goal gap signal) and prune_run removed 0 items, so the dream cycle needs a
-- Simulation issued verdict 'go' while flagging 3 unresolved risks and the run then failed at score 3, so 'go' must be gated on every high-severity risk
-- The critic's blocking issue ('Tool calls') is an execution/harness-format failure that text-only variant mutation cannot fix; candidates must be valid
-- Evolution produced variants scoring up to 9/10 yet the final swarm artifact still scored 3/10, meaning the winning variant was never integrated into t
-- z-ai/glm-5.2:free returned HTTP 429 on five consecutive calls while nvidia/nemotron-3-ultra succeeded every time, showing the system retries a known-d
 
 ---
 
