@@ -1,9 +1,10 @@
 {
- "tag": "2026-08-23",
- "zyklen_gesperrt": 1,
- "sperren_heute": 1,
- "zuerst_heute": 1787529352.4463391,
- "frei_ab": 1787529600.0,
- "grund": "7 kontofehler in folge, kein modell frei",
- "seit": 1787529352.4463391
+ "tag": "2026-08-24",
+ "zyklen_gesperrt": 0,
+ "sperren_heute": 0,
+ "zuerst_heute": 0.0,
+ "frei_ab": 0.0,
+ "grund": "probe erfolgreich (nvidia/nemotron-3-ultra-550b-a55b:free)",
+ "seit": 0.0,
+ "zuletzt_frei": 1787529861.1142402
 }

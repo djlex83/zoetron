@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1501 Fakten** · Stand 2026-08-23 23:58 UTC · aktualisiert bei jedem Herzschlag
+**1510 Fakten** · Stand 2026-08-24 00:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 647
-- **swarm_artifact:** 479
+- **dream:** 652
+- **swarm_artifact:** 482
 - **anti_pattern:** 124
-- **last_swarm_goal:** 90
+- **last_swarm_goal:** 91
 - **strategy:** 83
 - **last_swarm_critique:** 59
 - **creator_teaching:** 8
@@ -18,6 +18,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Create memory-preserving test harness`
+*24.08. 00:10 UTC · Quelle: builder*
+
+# Memory-Preserving Test Harness for Hermes Bridge  ```python """ Memory-preserving test harness for Hermes Bridge. Runs bridge tests, verifies message integrity, and appends results to a persistent l
+
+### `swarm_artifact:Implement async bidirectional bridge`
+*24.08. 00:10 UTC · Quelle: builder*
+
+# Async Bidirectional Hermes Bridge Implementation  ```python """ Async bidirectional bridge between Forge and Hermes agent. Provides queue-based communication with backpressure, heartbeats, and plugg
+
+### `swarm_artifact:Define Hermes message protocol`
+*24.08. 00:08 UTC · Quelle: builder*
+
+# Hermes Message Protocol  ## Overview A JSON-based message format for communication between the Forge and the Hermes agent.  ## Message Schema  ```json {   "version": "1.0",   "type": "ping|pong|data
+
+### `last_swarm_goal`
+*24.08. 00:05 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608240004:5`
+*24.08. 00:04 UTC · Quelle: dream*
+
+Zero pruning during prune_run indicates memory pressure is not from fact accumulation but from active task overhead.
+
+### `dream:202608240004:4`
+*24.08. 00:04 UTC · Quelle: dream*
+
+Simulation-driven revision cycles (4 risks, 3 revisions) consume disproportionate iteration budget under conserve mode (max_iterations=1).
+
+### `dream:202608240004:3`
+*24.08. 00:04 UTC · Quelle: dream*
+
+Successful calls exhibit 95-106s latency, suggesting requests queue behind rate limit windows rather than failing fast.
+
+### `dream:202608240004:2`
+*24.08. 00:04 UTC · Quelle: dream*
+
+Circuit breaker locks models for 30 minutes after 3 consecutive failures, rapidly exhausting the model pool under sustained rate limiting.
+
+### `dream:202608240004:1`
+*24.08. 00:04 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models simultaneously, indicating a shared quota bottleneck at the OpenRouter gateway rather than per-model limits.
 
 ### `last_swarm_goal`
 *23.08. 23:55 UTC · Quelle: system*

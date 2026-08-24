@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-23 23:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning during prune_run indicates memory pressure is not from fact accumulation but from active task overhead.
+- Simulation-driven revision cycles (4 risks, 3 revisions) consume disproportionate iteration budget under conserve mode (max_iterations=1).
+- Successful calls exhibit 95-106s latency, suggesting requests queue behind rate limit windows rather than failing fast.
+- Circuit breaker locks models for 30 minutes after 3 consecutive failures, rapidly exhausting the model pool under sustained rate limiting.
+- Rate limiting (429) affects all free-tier models simultaneously, indicating a shared quota bottleneck at the OpenRouter gateway rather than per-model 
 - Many simulations were launched but only one was ever applied, revealing a recurring gap between generating plans and executing their results.
 - Local hand actions always succeeded in under 0.05s with exit 0, confirming failures are confined entirely to remote LLM API calls and never to local t
 - Successful stealth/ox-alpha calls took 145–151 seconds, so timeouts and scheduling budgets must assume multi-minute latencies instead of treating slow
@@ -51,11 +56,6 @@
 - Skill proposals systematically outpace simulation testing (confirmed by the explicit 'gap' drive goal), creating an idea graveyard unless proposals ar
 - Benchmark scoring reveals reflex (2/5) as the weakest subsystem while cortex is already maxed (5/5), so improvement effort should shift from reasoning
 - Model latency on the same endpoint is bimodal (3-14s for light tasks vs 92-164s under load), so critical-path model calls must assume worst-case laten
-- Baseline benchmark scores 25/25 but without comparative runs, performance regressions or improvements cannot be detected.
-- Three drive goals expose systemic gaps: skills untested in simulation, swarms rarely complete, and no regular model benchmarking exists.
-- Identical simulation goal 'Hermes-Brücke' executed twice with same risks/revisions parameters, wasting compute on redundant verification.
-- Hand actions complete consistently in 20-50ms locally, proving local execution is orders of magnitude more dependable than remote model calls.
-- Model latency varies extremely (0.7s to 143s) with upstream 502 overload errors, making remote inference unreliable for time-critical paths.
 
 ---
 
