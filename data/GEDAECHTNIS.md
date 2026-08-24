@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2039 Fakten** · Stand 2026-08-24 15:39 UTC · aktualisiert bei jedem Herzschlag
+**2044 Fakten** · Stand 2026-08-24 16:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 922
+- **dream:** 927
 - **swarm_artifact:** 613
 - **anti_pattern:** 160
 - **last_swarm_goal:** 142
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608241559:5`
+*24.08. 15:59 UTC · Quelle: dream*
+
+Calibration was exact this cycle (predicted 4 vs actual 4), showing the predictor is reliable at low scores and can be trusted for early-abort decisions on weak drafts.
+
+### `dream:202608241559:4`
+*24.08. 15:59 UTC · Quelle: dream*
+
+Simulation gating worked as intended: an initial 'revise' verdict with 5 risks/5 revisions preceded failure-level output, while the post-evolution 'go' verdict (0 risks) preceded success — verdicts correlate with outcome quality.
+
+### `dream:202608241559:3`
+*24.08. 15:59 UTC · Quelle: dream*
+
+The evolution loop recovered a failing task (4/10) to a winner variant scoring 8/10 by generating 3 variants and selecting via critic scores, validating generate-and-select over single-shot revision.
+
+### `dream:202608241559:2`
+*24.08. 15:59 UTC · Quelle: dream*
+
+Nemotron-3-ultra's '502 overloaded' error was transient: the same model succeeded twice shortly after, confirming that free-tier endpoints need retry-with-backoff rather than blacklisting.
+
+### `dream:202608241559:1`
+*24.08. 15:59 UTC · Quelle: dream*
+
+429 rate-limit errors cluster in bursts across multiple models within seconds (ts 1787581873-1787581908), indicating shared upstream throttling rather than per-model failure, so immediate sequential retries on different models are wasted effort.
 
 ### `strategy:embedding_recall_statt_reinem_wortvergleich`
 *24.08. 15:38 UTC · Quelle: evolution*

@@ -96,13 +96,15 @@
   "why": "TF-IDF (Wortstatistik) findet ähnliche Wörter, aber nicht ähnliche Bedeutung, und skaliert schlecht über ~10.000 Fakten. Baue embedding_recall.py: Fakten als Embeddings (Zahlen-Fingerabdruck der Bedeutung) in SQLite speichern, Top-5-Suche per Kosinus-Ähnlichkeit. Dazu benchmark.py: 20 feste Testfragen gegen den bestehenden TF-IDF-Recall antreten lassen, Ergebnis als JSON-Report speichern. Fertig wenn: der Benchmark-Report existiert und der Embedding-Recall bei mindestens 12 von 20 Fragen gleich gut oder besser abschneidet.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  },
  {
   "title": "Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl",
   "why": "Intelligenz liegt in der Qualität der Verbindungen, nicht in der Anzahl der Knoten. Baue hebbian.py: jede Kante im Wissensgraph bekommt ein Gewicht. Wird eine Verbindung beim Recall genutzt, wird sie stärker (Hebb-Regel = was zusammen feuert, verdrahtet sich), ungenutzte Kanten verlieren pro Tag Gewicht und fallen unter einer Schwelle weg. Fertig wenn: Kantengewichte im Graph-Export sichtbar sind und ein Report die 10 stärksten Synapsen mit Nutzungszähler listet.",
   "signal": "gap",
-  "_done": false
+  "_done": false,
+  "_versuche": 1
  },
  {
   "title": "Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)",
