@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 12:49:44",
+ "stand": "2026-08-24 13:05:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,18 +12,6 @@
    "tool": "fähigkeiten-selbstständig-üben.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-träume-nach-ideen-durchsuchen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "gelerntes-können-anwenden.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -46,6 +34,12 @@
   },
   {
    "tool": "fehler-im-modell-vermeiden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-träume-nach-ideen-durchsuchen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -81,17 +75,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.798,
- "simulationen_angewandt": 89,
+ "haende_quote": 0.784,
+ "simulationen_angewandt": 90,
  "swarm_scores": {
-  "n": 38,
+  "n": 39,
   "best": 8.0,
-  "schnitt": 3.92
+  "schnitt": 3.87
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 35,
-   "schnitt": 3.94
+   "n": 36,
+   "schnitt": 3.89
   },
   "bau": {
    "n": 3,

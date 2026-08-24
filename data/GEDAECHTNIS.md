@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1962 Fakten** · Stand 2026-08-24 12:49 UTC · aktualisiert bei jedem Herzschlag
+**1974 Fakten** · Stand 2026-08-24 13:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 892
-- **swarm_artifact:** 591
-- **anti_pattern:** 150
-- **last_swarm_goal:** 137
-- **strategy:** 96
-- **last_swarm_critique:** 77
+- **dream:** 897
+- **swarm_artifact:** 593
+- **anti_pattern:** 152
+- **last_swarm_goal:** 138
+- **strategy:** 97
+- **last_swarm_critique:** 78
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fakten_ausbeute_pro_beat_verdreifachen_ohne_qualit`
+*24.08. 13:05 UTC · Quelle: evolution*
+
+Datenstruktur-Transformation: Beat → faktendichte Wissensblöcke - Variante 0 behebt nur den Truncation-Defekt und liefert vollständigen Code, bleibt aber bei derselben monolithischen Extraktionsstrategie – die 3-fache Ausbeute wird behauptet, nic
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:2`
+*24.08. 13:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Pipeline-Metadaten-Audit: Messung zuerst, dann gezielte Extraktion - Kehre den Arbeitsfluss um: Statt sofort Code zu produzieren, baue zuerst einen messenden Harness (vollständiges, lauffähiges Skript mit main()), der die akt
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:0`
+*24.08. 13:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Kompletter, atomarer Code-Deliverable statt Fragment - Liefere ein vollständiges, in sich geschlossenes Python-Modul (kein Snippet), das die Faktenextraktion pro Beat implementiert. Struktur: (1) Header mit klarem Scope 'Fakt
+
+### `swarm_artifact:Draft deliverable for: Fakten-Ausbeute pro Beat verdreifache`
+*24.08. 13:04 UTC · Quelle: builder*
+
+[score 2] # Deliverable: Fakten-Dichte-Tripler (Fakt-Inventur → Beat-Zuweisung → Verifikation)  ```python #!/usr/bin/env python3 """ fakten_dichte_tripler.py Verdreifacht die Fakten-Ausbeute pro B
+
+### `last_swarm_critique`
+*24.08. 13:04 UTC · Quelle: critic*
+
+score=2; issues=Deliverable is truncated mid-function: 'check_redundancy' is cut off inside its loop body; steps 3-4 (quality checklist completion, verification logic), any main()/entry point, and example usage are entirely missing, contradicting the header cl
+
+### `swarm_artifact:Draft deliverable for: Fakten-Ausbeute pro Beat verdreifache`
+*24.08. 13:04 UTC · Quelle: builder*
+
+# Deliverable: Fakten-Dichte-Tripler (Fakt-Inventur → Beat-Zuweisung → Verifikation)  ```python #!/usr/bin/env python3 """ fakten_dichte_tripler.py Verdreifacht die Fakten-Ausbeute pro Beat ohne Quali
+
+### `last_swarm_goal`
+*24.08. 13:00 UTC · Quelle: system*
+
+Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust
+
+### `dream:202608241300:5`
+*24.08. 13:00 UTC · Quelle: dream*
+
+Swarm completion is critically low (1 finished of ~11 started) and every simulation returned verdict 'revise', pointing to goal framing or revision loops as the systemic bottleneck rather than model quality.
+
+### `dream:202608241300:4`
+*24.08. 13:00 UTC · Quelle: dream*
+
+prune_run removed zero facts and zero events despite heavy activity, meaning the memory store grows unboundedly and pruning criteria are too conservative or never triggered.
+
+### `dream:202608241300:3`
+*24.08. 13:00 UTC · Quelle: dream*
+
+The same recall key 'last_swarm_goal' was fetched three times in one run, showing redundant memory reads that waste iterations under a max_iterations=2 budget.
+
+### `dream:202608241300:2`
+*24.08. 13:00 UTC · Quelle: dream*
+
+Output token counts vary 40x between calls on similar inputs (19 to 24326 tokens), indicating unbounded generation is the primary cost and timeout risk, not input size.
+
+### `dream:202608241300:1`
+*24.08. 13:00 UTC · Quelle: dream*
+
+Latency is highly bimodal (2.6s to 505s for the same model), so any pipeline design must assume worst-case multi-minute stalls rather than average-case timing.
 
 ### `strategy:fakten_ausbeute_pro_beat_verdreifachen_ohne_qualit`
 *24.08. 12:49 UTC · Quelle: evolution*
