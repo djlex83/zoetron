@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1752 Neuronen · 32082 bewertete Synapsen
+Stand: 1760 Neuronen · 32309 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,7 +10,7 @@ Stand: 1752 Neuronen · 32082 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 154 | 0.25 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 155 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: erste eigene Ei“ (Note 1/1… | 155 | 0.23 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Best-of-N mit unbestechl“ (Note 3/1… | 155 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 155 | 0.23 |

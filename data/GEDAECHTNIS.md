@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2145 Fakten** · Stand 2026-08-24 20:48 UTC · aktualisiert bei jedem Herzschlag
+**2150 Fakten** · Stand 2026-08-24 21:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 967
+- **dream:** 972
 - **swarm_artifact:** 639
 - **anti_pattern:** 174
 - **last_swarm_goal:** 149
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608242108:5`
+*24.08. 21:08 UTC · Quelle: dream*
+
+Football prediction baseline (50.2%) remains unchallenged because simulation revisions loop without external validation.
+
+### `dream:202608242108:4`
+*24.08. 21:08 UTC · Quelle: dream*
+
+System enters conserve mode under stress but lacks automated degradation policies for model routing.
+
+### `dream:202608242108:3`
+*24.08. 21:08 UTC · Quelle: dream*
+
+Proposed skills accumulate but are never validated in production, creating a proposal graveyard.
+
+### `dream:202608242108:2`
+*24.08. 21:08 UTC · Quelle: dream*
+
+Latency variance spans 30x (4s to 130s), making fixed timeouts either wasteful or premature.
+
+### `dream:202608242108:1`
+*24.08. 21:08 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across all free models simultaneously, eliminating fallback options and causing total service loss.
 
 ### `strategy:best_of_n_mit_unbestechlichem_prüfer__test_time_co`
 *24.08. 20:48 UTC · Quelle: evolution*

@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-24 20:48:46",
+ "stand": "2026-08-24 21:08:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "ci-pipeline-reparieren-und-simulation-va.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -87,21 +87,21 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.78,
- "simulationen_angewandt": 85,
+ "haende_quote": 0.783,
+ "simulationen_angewandt": 84,
  "swarm_scores": {
   "n": 38,
   "best": 8.0,
   "schnitt": 3.82
  },
  "score_nach_ziel_typ": {
-  "bau": {
-   "n": 3,
-   "schnitt": 3.67
-  },
   "analyse": {
    "n": 35,
    "schnitt": 3.83
+  },
+  "bau": {
+   "n": 2,
+   "schnitt": 3.0
   }
  }
 }
