@@ -1,17 +1,17 @@
 {
- "stand": "2026-08-24 01:09:24",
+ "stand": "2026-08-24 01:17:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "ci-pipeline-reparieren-und-simulation-va.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
    "tool": "dedup_skill_proposals.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -21,15 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "fehler-im-modell-vermeiden.py",
+   "tool": "träume-und-simulationen-besser-nutzen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
   },
   {
-   "tool": "träume-und-simulationen-besser-nutzen.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "fehler-im-modell-vermeiden.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -93,17 +93,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.815,
- "simulationen_angewandt": 91,
+ "haende_quote": 0.805,
+ "simulationen_angewandt": 92,
  "swarm_scores": {
-  "n": 53,
+  "n": 54,
   "best": 8.0,
-  "schnitt": 4.06
+  "schnitt": 4.02
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 50,
-   "schnitt": 4.08
+   "n": 51,
+   "schnitt": 4.04
   },
   "bau": {
    "n": 3,

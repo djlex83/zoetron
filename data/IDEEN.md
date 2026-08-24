@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 01:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 01:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen lernen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren und stabiler machen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple drive goals target the same reliability-execution gap (model errors, simulation-to-action, half-built queue); a single 'reliability sprint' s
+- Calibration consistently underestimates actual effort by ~33% (predicted 3 vs actual 4); planning buffers should scale with historical error magnitude
+- Simulations with risks≥5 and revisions≥2 still receive 'go' verdicts, bypassing the proposed pre-execution gate; gating must be enforced, not advisory
+- Evolution runs can improve scores from 4 to 9 but only trigger after explicit failure; proactive evolution on low-scoring models would prevent repeate
+- Model latency variance (4-77s) makes fixed timeouts unreliable; circuit breakers must use adaptive thresholds based on recent percentile latency.
 - System stress >0.7 correlates with degraded performance, necessitating throttling of dream/swarm spawns.
 - Ad‑hoc inter‑agent communication channels are fragile; a reliable, replayable message queue is essential.
 - Insights from dreams/simulations remain unused unless explicitly translated into actionable procedures.
@@ -51,11 +56,6 @@
 - Rate-limit headers (X-RateLimit-Remaining, Retry-After) are ignored, causing surprise lockouts that could be predicted 10-20 requests in advance.
 - The simulation-evolution pipeline reliably upgrades design scores from 4/10 to 9/9/9, proving mental rehearsal works but is only triggered manually, n
 - Free-tier Nvidia models (nemotron-3-ultra) exhibit catastrophic 502 errors and 90s+ latency spikes under load, making single-provider reliance a criti
-- System runs in 'conserve' mode with high stress, yet continues spawning swarms instead of degrading gracefully.
-- Memory pruning removes zero items, so stale context accumulates and degrades future reasoning.
-- Simulations frequently require maximum revisions (5/5), indicating upstream design gaps before execution.
-- Rate-limit handling is fragmented across multiple proposals but not yet unified into a single resilience layer.
-- Free-tier model latency varies wildly (6–137 s), making it unreliable for time-critical paths.
 
 ---
 

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1606 Fakten** · Stand 2026-08-24 01:09 UTC · aktualisiert bei jedem Herzschlag
+**1621 Fakten** · Stand 2026-08-24 01:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 697
-- **swarm_artifact:** 505
-- **anti_pattern:** 134
-- **last_swarm_goal:** 99
-- **strategy:** 88
-- **last_swarm_critique:** 64
+- **dream:** 702
+- **swarm_artifact:** 510
+- **anti_pattern:** 136
+- **last_swarm_goal:** 100
+- **strategy:** 89
+- **last_swarm_critique:** 65
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,81 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
+*24.08. 01:16 UTC · Quelle: evolution*
+
+Protocol-First Contract-Driven Development - Variant 0 (Protocol-First) directly eliminates the root causes of the 2/10 failure: a single authoritative spec (OpenAPI/Protobuf) prevents incompatible API redefinitions across ar
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Hermes-Brücke bauen: Spr:2`
+*24.08. 01:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 7]): Reactive Streams with Explicit Backpressure - Build the bridge as a pull-based pipeline using async generators and explicit flow control (inspired by Reactive Streams / Kotlin Flow / RxPy). Stages: source (TCP/WebSock
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Hermes-Brücke bauen: Spr:1`
+*24.08. 01:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 7]): Actor Model with Supervision Hierarchy - Model each concern as an isolated actor (using asyncio + structured concurrency or a lightweight actor library like 'act' or 'kario'). Actors: InboundListener (accepts connecti
+
+### `last_swarm_critique`
+*24.08. 01:15 UTC · Quelle: critic*
+
+score=2; issues=Multiple incompatible implementations across artifacts - each redefines classes with different APIs (StatusChannel.write_beat vs write_status vs write, different dataclass fields); All artifacts are incomplete - critical methods cut off mid-imp
+
+### `swarm_artifact:Create verification script demonstrating all three channels`
+*24.08. 01:15 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ test_bruecke.py - Verification script for Hermes-Brücke three channels Tests STATUS, INBOUND, and OUTBOUND channels with atomic filesystem operations. """  import 
+
+### `swarm_artifact:Implement OUTBOUND channel - send messages to Hermes`
+*24.08. 01:14 UTC · Quelle: builder*
+
+```python # bruecke.py # Hermes-Brücke: Drei Kanäle über atomare Dateisystem-Operationen # Keine externen Abhängigkeiten - nur Python Standardbibliothek  import json import os import time import tempf
+
+### `swarm_artifact:Implement INBOUND channel - read commands from Hermes`
+*24.08. 01:13 UTC · Quelle: builder*
+
+```python # bruecke.py # Hermes-Brücke: Drei Kanäle über atomare Dateisystem-Operationen # Keine externen Abhängigkeiten - nur Python Standardbibliothek  import json import os import time import tempf
+
+### `swarm_artifact:Implement STATUS channel - write compact state to data/herme`
+*24.08. 01:12 UTC · Quelle: builder*
+
+```python # bruecke.py # Hermes-Brücke: Drei Kanäle über atomare Dateisystem-Operationen # Keine externen Abhängigkeiten - nur Python Standardbibliothek  import json import os import time import tempf
+
+### `swarm_artifact:Create directory structure and bridge module skeleton`
+*24.08. 01:12 UTC · Quelle: builder*
+
+```python # bruecke.py # Hermes-Brücke: Drei Kanäle über atomare Dateisystem-Operationen # Keine externen Abhängigkeiten - nur Python Standardbibliothek  import json import os import time import tempf
+
+### `last_swarm_goal`
+*24.08. 01:11 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608240111:5`
+*24.08. 01:11 UTC · Quelle: dream*
+
+Multiple drive goals target the same reliability-execution gap (model errors, simulation-to-action, half-built queue); a single 'reliability sprint' skill would address all three.
+
+### `dream:202608240111:4`
+*24.08. 01:11 UTC · Quelle: dream*
+
+Calibration consistently underestimates actual effort by ~33% (predicted 3 vs actual 4); planning buffers should scale with historical error magnitude.
+
+### `dream:202608240111:3`
+*24.08. 01:11 UTC · Quelle: dream*
+
+Simulations with risks≥5 and revisions≥2 still receive 'go' verdicts, bypassing the proposed pre-execution gate; gating must be enforced, not advisory.
+
+### `dream:202608240111:2`
+*24.08. 01:11 UTC · Quelle: dream*
+
+Evolution runs can improve scores from 4 to 9 but only trigger after explicit failure; proactive evolution on low-scoring models would prevent repeated poor performance.
+
+### `dream:202608240111:1`
+*24.08. 01:11 UTC · Quelle: dream*
+
+Model latency variance (4-77s) makes fixed timeouts unreliable; circuit breakers must use adaptive thresholds based on recent percentile latency.
 
 ### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
 *24.08. 01:08 UTC · Quelle: evolution*
