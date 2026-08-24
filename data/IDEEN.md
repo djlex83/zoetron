@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 16:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 17:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,8 +10,6 @@
 - Add mandatory invocation smoke test in act_done: execute each new tool once with synthetic input and verify no *(hatte die Idee 4×)*
 - Build skill_proposal_filter that scores proposals by novelty, feasibility, and alignment with active drive goa *(hatte die Idee 4×)*
 - Create benchmark_arbitrator that detects stalled optimization (3 cycles no improvement), snapshots state, and  *(hatte die Idee 3×)*
-- Add a periodic reflection step that pairs same‑day dreams with older memories to generate combined goal candid *(hatte die Idee 2×)*
-- After each act_done, subtract the rolling mean prediction error from the score predictor's output and feed the *(hatte die Idee 2×)*
 - Make prune_run emit a warning and trigger a criteria audit when facts_pruned == 0 and events_pruned == 0 for t *(hatte die Idee 2×)*
 - Add a revision‑completeness gate that blocks act_done until every simulation‑flagged risk is either fixed or e *(hatte die Idee 2×)*
 - Create a proposal ledger keyed by content hash that tracks repetition count; auto‑promote any proposal seen in *(hatte die Idee 2×)*
@@ -20,6 +18,8 @@
 - Deploy a latency‑aware router that cancels calls exceeding a dynamic threshold (e.g., 2× rolling median), fail *(hatte die Idee 2×)*
 - Create a proposal registry that hashes each skill_proposal, rejects duplicates, and auto‑creates a labeled Git *(hatte die Idee 2×)*
 - Build a simulation‑to‑production gate: after a successful re‑simulation, atomically apply the revision batch a *(hatte die Idee 2×)*
+- Add an interface validation layer that checks for required methods (e.g., add_fact) on dependencies before inv *(hatte die Idee 2×)*
+- Integrate a variant evaluation step in the evolution pipeline that scores all candidates and automatically pro *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -31,16 +31,21 @@
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Träumen lernen *(wieder aufgegriffen: 2×)*
 - Träume für neue Fähigkeiten nutzen *(wieder aufgegriffen: 2×)*
 - Modellfehler vermeiden *(wieder aufgegriffen: 2×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässig abschließen *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässiger zum Abschluss bringen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- prune_run pruning zero facts and events while the system accumulates failures indicates pruning criteria are either broken or never matched, silently 
+- hand_action failed with exit=1 but error=null, meaning error payloads are being dropped and must capture tracebacks to be diagnosable.
+- The MemoryStore.add_fact AttributeError proves the pipeline calls undocumented interfaces, so every cross-module call needs a contract test before dep
+- Two consecutive 429 rate-limit failures on both stealth/ox-alpha and z-ai/glm-5.2:free reveal that retry logic lacks backoff and fallback ordering acr
+- The swarm's 'go' verdict from simulation did not translate into a good outcome (score 3/10), showing that simulation approval without an integration t
 - Three drive goals were spawned from failure/gap signals while an existing goal was parked after 3 non-convergent attempts, indicating goal creation ou
 - Two consecutive 429 rate-limit failures on openrouter.ai show there is no backoff or model-fallback strategy beyond ad-hoc retries, and free-tier mode
 - A hard crash occurred in hands-execute because MemoryStore.add_fact does not exist, meaning write-paths to memory are called without any interface con
@@ -51,11 +56,6 @@
 - The evolution loop recovered a failing task (4/10) to a winner variant scoring 8/10 by generating 3 variants and selecting via critic scores, validati
 - Nemotron-3-ultra's '502 overloaded' error was transient: the same model succeeded twice shortly after, confirming that free-tier endpoints need retry-
 - 429 rate-limit errors cluster in bursts across multiple models within seconds (ts 1787581873-1787581908), indicating shared upstream throttling rather
-- Drive goals are self-referential (fixing own model errors, own swarm hangs), confirming the extern-quote reflex is needed to break the navel-gazing lo
-- Model failures cluster as OpenRouter 429 rate-limit errors across multiple models simultaneously, so free-tier fallback chains share the same quota an
-- Goals that fail convergence get retried unchanged until the attempt-counter parks them at N=3, wasting cycles on deterministic failures instead of dia
-- Hand actions fail in ~0.03s with exit 1 and null error messages, indicating crashes happen before error capture, so exception handling must wrap the h
-- The swarm goal 'Fakten-Ausbeute verdreifachen' failed twice because MemoryStore lacks an add_fact method, meaning the fact-persistence API is the actu
 
 ---
 

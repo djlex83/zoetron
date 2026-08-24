@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2056 Fakten** · Stand 2026-08-24 16:35 UTC · aktualisiert bei jedem Herzschlag
+**2072 Fakten** · Stand 2026-08-24 17:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 932
-- **swarm_artifact:** 615
-- **anti_pattern:** 162
-- **last_swarm_goal:** 143
-- **strategy:** 102
-- **last_swarm_critique:** 83
+- **dream:** 937
+- **swarm_artifact:** 621
+- **anti_pattern:** 164
+- **last_swarm_goal:** 144
+- **strategy:** 103
+- **last_swarm_critique:** 84
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,86 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:best_of_n_mit_unbestechlichem_prüfer__test_time_co`
+*24.08. 17:06 UTC · Quelle: evolution*
+
+Deterministic Verifier Cascade - Variant 1 fundamentally solves both the parse-failure and corruption problems: deterministic programmatic checks are mathematically incorruptible and cost zero tokens, while the gu
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Best-of-N mit unbestechl:2`
+*24.08. 17:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Tournament with Redundant Judges - Run Best-of-N as a bracketed tournament scored by K independent judge instances with diverse prompts/temperatures. Each match produces votes; majority voting over 3-5 judges makes bribery/co
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Best-of-N mit unbestechl:0`
+*24.08. 17:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Structured Output Enforcement - Eliminate free-form critic responses entirely by forcing the judge into a constrained schema: use function-calling / JSON-mode APIs so the judge can only emit a fixed grammar ({"winner": "A|B",
+
+### `swarm_artifact:Deterministische Siegerwahl + Verlierer-Lernen`
+*24.08. 17:06 UTC · Quelle: builder*
+
+[score 5] ```python """Deterministische Siegerwahl + Verlierer-Lernen für Best-of-N.  Winner wird AUSSCHLIESSLICH nach Prüfer-Urteil gewählt (niemals Selbstbewertung). Tie-Break deterministisch: k
+
+### `swarm_artifact:Unbestechlicher Prüfer: isolierte Test-Sandbox`
+*24.08. 17:06 UTC · Quelle: builder*
+
+[score 5] ```python """Unbestechlicher Prüfer: isolierte Test-Sandbox für Best-of-N.  Jeder Kandidat läuft als eigener Subprozess gegen ein festes Test-Harness. Timeout, Exit-Code und gefangener T
+
+### `swarm_artifact:Best-of-N Kern-Engine mit Varianten-Diversitäts-Gate`
+*24.08. 17:06 UTC · Quelle: builder*
+
+[score 5] # Artefakt: Best-of-N Kern-Engine mit Varianten-Diversitäts-Gate  Einheitliches `Candidate`-Datenmodell, pluggbare Adapter (Mocks jetzt, echte Backends später) und semantische Deduplizie
+
+### `last_swarm_critique`
+*24.08. 17:06 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Deterministische Siegerwahl + Verlierer-Lernen`
+*24.08. 17:05 UTC · Quelle: builder*
+
+```python """Deterministische Siegerwahl + Verlierer-Lernen für Best-of-N.  Winner wird AUSSCHLIESSLICH nach Prüfer-Urteil gewählt (niemals Selbstbewertung). Tie-Break deterministisch: kürzester Code 
+
+### `swarm_artifact:Unbestechlicher Prüfer: isolierte Test-Sandbox`
+*24.08. 17:04 UTC · Quelle: builder*
+
+```python """Unbestechlicher Prüfer: isolierte Test-Sandbox für Best-of-N.  Jeder Kandidat läuft als eigener Subprozess gegen ein festes Test-Harness. Timeout, Exit-Code und gefangener Traceback entsc
+
+### `swarm_artifact:Best-of-N Kern-Engine mit Varianten-Diversitäts-Gate`
+*24.08. 17:04 UTC · Quelle: builder*
+
+# Artefakt: Best-of-N Kern-Engine mit Varianten-Diversitäts-Gate  Einheitliches `Candidate`-Datenmodell, pluggbare Adapter (Mocks jetzt, echte Backends später) und semantische Deduplizierung per AST-F
+
+### `last_swarm_goal`
+*24.08. 17:00 UTC · Quelle: system*
+
+Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
+
+### `dream:202608241659:5`
+*24.08. 16:59 UTC · Quelle: dream*
+
+prune_run pruning zero facts and events while the system accumulates failures indicates pruning criteria are either broken or never matched, silently wasting memory maintenance cycles.
+
+### `dream:202608241659:4`
+*24.08. 16:59 UTC · Quelle: dream*
+
+hand_action failed with exit=1 but error=null, meaning error payloads are being dropped and must capture tracebacks to be diagnosable.
+
+### `dream:202608241659:3`
+*24.08. 16:59 UTC · Quelle: dream*
+
+The MemoryStore.add_fact AttributeError proves the pipeline calls undocumented interfaces, so every cross-module call needs a contract test before deployment.
+
+### `dream:202608241659:2`
+*24.08. 16:59 UTC · Quelle: dream*
+
+Two consecutive 429 rate-limit failures on both stealth/ox-alpha and z-ai/glm-5.2:free reveal that retry logic lacks backoff and fallback ordering across providers.
+
+### `dream:202608241659:1`
+*24.08. 16:59 UTC · Quelle: dream*
+
+The swarm's 'go' verdict from simulation did not translate into a good outcome (score 3/10), showing that simulation approval without an integration test gate produces false confidence.
 
 ### `strategy:hebbisches_lernen_im_graph__synapsen_qualität_stat`
 *24.08. 16:35 UTC · Quelle: evolution*

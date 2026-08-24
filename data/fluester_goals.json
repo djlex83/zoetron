@@ -104,13 +104,15 @@
   "why": "Intelligenz liegt in der Qualität der Verbindungen, nicht in der Anzahl der Knoten. Baue hebbian.py: jede Kante im Wissensgraph bekommt ein Gewicht. Wird eine Verbindung beim Recall genutzt, wird sie stärker (Hebb-Regel = was zusammen feuert, verdrahtet sich), ungenutzte Kanten verlieren pro Tag Gewicht und fallen unter einer Schwelle weg. Fertig wenn: Kantengewichte im Graph-Export sichtbar sind und ein Report die 10 stärksten Synapsen mit Nutzungszähler listet.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  },
  {
   "title": "Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)",
   "why": "So kauft man heute real mehr Intelligenz: mehr Denkzeit pro Aufgabe statt größeres Modell (Test-Time-Compute = Rechenleistung zur Laufzeit erhöhen). Für Ziele mit automatischem Test erzeugt der Swarm 3 Lösungskandidaten parallel über verschiedene Modelle; die Tests wählen den Sieger, Verlierer werden Anti-Patterns. Fertig wenn: auf mindestens 10 Benchmark-Code-Aufgaben die Best-of-3-Erfolgsquote nachweisbar über der Einzelversuch-Quote liegt und beide Quoten im Report stehen.",
   "signal": "gap",
-  "_done": false
+  "_done": false,
+  "_versuche": 0
  },
  {
   "title": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren",
