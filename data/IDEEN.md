@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 08:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 08:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,13 +25,13 @@
 
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate without ever being built (confirmed by the drive_goal gap signal) and prune_run removed 0 items, so the dream cycle needs a
+- Simulation issued verdict 'go' while flagging 3 unresolved risks and the run then failed at score 3, so 'go' must be gated on every high-severity risk
+- The critic's blocking issue ('Tool calls') is an execution/harness-format failure that text-only variant mutation cannot fix; candidates must be valid
+- Evolution produced variants scoring up to 9/10 yet the final swarm artifact still scored 3/10, meaning the winning variant was never integrated into t
+- z-ai/glm-5.2:free returned HTTP 429 on five consecutive calls while nvidia/nemotron-3-ultra succeeded every time, showing the system retries a known-d
 - Risk calibration was exact for the 'Fußball erste Einreichung' goal (predicted 3, actual 3, abs_error 0), so the current risk-scoring heuristic needs 
 - dots-studio/dots-3-note-preview:free completed every call successfully (including a 4573-token generation), making it the most reliable fallback obser
 - Error class dictates strategy: 429 means rotate to a different model or cool down, while 502 means wait briefly and retry the same model.
@@ -51,11 +56,6 @@
 - Tasks can score well (2/2) yet fail to converge, indicating scoring metrics don't capture completion correctness.
 - Destructive operations (subprocess) require human approval, creating a hard automation bottleneck for any write/execute tasks.
 - Free-tier models consistently fail with 429/502 errors under load, making them unreliable for production workflows.
-- Model calls reached 180s latency without timeout enforcement, confirming that default max_tokens and wall-clock timeouts are not being applied at the 
-- Simulation demanded revisions (verdict='revise') but the model layer could not deliver due to cascading failures, creating a revision loop that cannot
-- Free-tier models exhibited correlated 429 rate limits, proving that per-model concurrency limits are insufficient without provider-level semaphores.
-- The system launched a complex swarm while in 'conserve' state with stress=1.0, ignoring that high stress should gate new work, not just limit existing
-- Multiple model failures (502/429) occurred simultaneously across different providers sharing OpenRouter infrastructure, revealing a single-point-of-fa
 
 ---
 

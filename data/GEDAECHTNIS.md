@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1875 Fakten** · Stand 2026-08-24 08:40 UTC · aktualisiert bei jedem Herzschlag
+**1882 Fakten** · Stand 2026-08-24 08:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 837
-- **swarm_artifact:** 579
+- **dream:** 842
+- **swarm_artifact:** 580
 - **anti_pattern:** 146
-- **last_swarm_goal:** 126
+- **last_swarm_goal:** 127
 - **strategy:** 94
 - **last_swarm_critique:** 74
 - **creator_teaching:** 8
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Data Ingestion and Cleaning`
+*24.08. 08:50 UTC · Quelle: builder*
+
+# Artefakt: Data Ingestion & Cleaning — Multi-Season-Korpus für die 50,2 %-Baseline  ## Zweck  Ersetzt den 20-Zeilen-Embedded-CSV durch einen statistisch relevanten Korpus (Ziel: **> 5.000 Matches**, 
+
+### `last_swarm_goal`
+*24.08. 08:42 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608240841:5`
+*24.08. 08:41 UTC · Quelle: dream*
+
+Skill proposals accumulate without ever being built (confirmed by the drive_goal gap signal) and prune_run removed 0 items, so the dream cycle needs a mandatory promote-one-proposal step and a retention cap on stale proposals.
+
+### `dream:202608240841:4`
+*24.08. 08:41 UTC · Quelle: dream*
+
+Simulation issued verdict 'go' while flagging 3 unresolved risks and the run then failed at score 3, so 'go' must be gated on every high-severity risk having a recorded mitigation.
+
+### `dream:202608240841:3`
+*24.08. 08:41 UTC · Quelle: dream*
+
+The critic's blocking issue ('Tool calls') is an execution/harness-format failure that text-only variant mutation cannot fix; candidates must be validated against the real checker (bewerte.py) inside the loop rather than only by LLM-judged scores.
+
+### `dream:202608240841:2`
+*24.08. 08:41 UTC · Quelle: dream*
+
+Evolution produced variants scoring up to 9/10 yet the final swarm artifact still scored 3/10, meaning the winning variant was never integrated into the deliverable — winner selection must be followed by a verified handoff into the submitted artifact.
+
+### `dream:202608240841:1`
+*24.08. 08:41 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free returned HTTP 429 on five consecutive calls while nvidia/nemotron-3-ultra succeeded every time, showing the system retries a known-dead provider instead of failing over — provider choice must be driven by recent health, not a fixed preference
 
 ### `swarm_artifact:Elo-Kern bauen: Tordifferenz-Multiplikator, eigener K je Wet`
 *24.08. 08:38 UTC · Quelle: builder*
