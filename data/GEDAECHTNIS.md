@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1708 Fakten** · Stand 2026-08-24 03:49 UTC · aktualisiert bei jedem Herzschlag
+**1716 Fakten** · Stand 2026-08-24 04:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 752
-- **swarm_artifact:** 532
+- **dream:** 757
+- **swarm_artifact:** 534
 - **anti_pattern:** 138
-- **last_swarm_goal:** 109
+- **last_swarm_goal:** 110
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,46 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Create minimal prediction model scaffold`
+*24.08. 04:07 UTC · Quelle: builder*
+
+# Artefakt: `modell.py` — Minimales Vorhersage-Scaffold  **Aufgabe:** Create minimal prediction model scaffold · **Attempt:** 1/3 · **Ziel:** Fußball: erste eigene Einreichung, die `bewerte.py` besteh
+
+### `swarm_artifact:Explore evaluation script and project structure`
+*24.08. 03:57 UTC · Quelle: builder*
+
+# Artefakt: Explorationsbericht — `bewerte.py` & Projektstruktur  **Aufgabe:** Explore evaluation script and project structure · **Attempt:** 1/3 · **Ziel:** Fußball-Einreichung, die `bewerte.py` best
+
+### `last_swarm_goal`
+*24.08. 03:53 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240351:5`
+*24.08. 03:51 UTC · Quelle: dream*
+
+Several loops fire without effect (prune run removed 0 facts/events; identical drive goals like 'reduce model errors' and 'test skill proposals' re-emitted verbatim), indicating unactioned recurring signals waste budget.
+
+### `dream:202608240351:4`
+*24.08. 03:51 UTC · Quelle: dream*
+
+The one graded failure (1/10) had a single root cause - missing evidence artifacts, not bad predictions - so pre-submission verification beats post-hoc score calibration.
+
+### `dream:202608240351:3`
+*24.08. 03:51 UTC · Quelle: dream*
+
+Latency spans 27s-274s and tracks output size (the 274s call emitted ~11.6k tokens), making oversized generations the main driver of slow calls and probable timeout-related failures.
+
+### `dream:202608240351:2`
+*24.08. 03:51 UTC · Quelle: dream*
+
+With metabolism at stress 1.0/conserve (max 3 tasks, 1 iteration) and only 3 of 7 swarm tasks finished, starting new tasks under a constrained budget structurally guarantees half-done work.
+
+### `dream:202608240351:1`
+*24.08. 03:51 UTC · Quelle: dream*
+
+Skill proposals accumulate untested (50+ backlog) and the same model-health/fallback idea has been re-proposed at least three times, so the real bottleneck is implementation, not ideation.
 
 ### `swarm_artifact:Spieldaten inventarisieren: CSVs finden, Spalten und Zeilenz`
 *24.08. 03:49 UTC · Quelle: builder*

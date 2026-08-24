@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 03:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 04:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Several loops fire without effect (prune run removed 0 facts/events; identical drive goals like 'reduce model errors' and 'test skill proposals' re-em
+- The one graded failure (1/10) had a single root cause - missing evidence artifacts, not bad predictions - so pre-submission verification beats post-ho
+- Latency spans 27s-274s and tracks output size (the 274s call emitted ~11.6k tokens), making oversized generations the main driver of slow calls and pr
+- With metabolism at stress 1.0/conserve (max 3 tasks, 1 iteration) and only 3 of 7 swarm tasks finished, starting new tasks under a constrained budget 
+- Skill proposals accumulate untested (50+ backlog) and the same model-health/fallback idea has been re-proposed at least three times, so the real bottl
 - The simulate->revise->execute pipeline (verdict 'revise', 4 revisions applied before any real run) is the highest-value quality gate observed and shou
 - Skill proposals accumulate faster than they get implemented (5 proposed, 0 implemented this cycle), reproducing the 'Liegengebliebene Ideen' failure m
 - A new swarm was started while stress=1.0 and max_iterations=1 (conserve budget), which structurally guarantees unfinished work piles up instead of com
@@ -51,11 +56,6 @@
 - Two consecutive dream runs independently re-proposed near-identical skills (per-error-class backoff registry, token-budget caps, evaluator-first/minim
 - Simulations currently change nothing: the Fußball run returned verdict 'revise' with 5 risks and 5 revisions but simulation_applied recorded 0 revisio
 - Output-token runaways (>8500 tokens) directly cause the worst latency stalls (~220-300s on ox-alpha calls), so uncapped generation on planning/dream c
-- Under stress=1.0/conserve metabolism (max_tasks 3, max_iterations 1), calls still ran at up to 294s latency and ~11.7k output tokens, meaning workload
-- Five skill proposals accumulated across dream cycles with none converted into tasks, so the pipeline generates insights faster than it executes them.
-- A simulation verdict of 'revise' with 5 risks was followed by simulation_applied with 0 revisions, proving the revision loop can silently no-op when n
-- The football swarm finished unconverged (score 1, 2 cycles) with a 1:3 critic:builder role ratio, indicating thin critic coverage lets builder defects
-- Two of three models died with 429 rate-limit errors while only nemotron-3-ultra:free survived, so single-model retry loops are the dominant failure ca
 
 ---
 
