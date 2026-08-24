@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1559 Fakten** · Stand 2026-08-24 00:46 UTC · aktualisiert bei jedem Herzschlag
+**1572 Fakten** · Stand 2026-08-24 00:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 677
-- **swarm_artifact:** 493
-- **anti_pattern:** 128
-- **last_swarm_goal:** 96
-- **strategy:** 85
-- **last_swarm_critique:** 61
+- **dream:** 682
+- **swarm_artifact:** 496
+- **anti_pattern:** 130
+- **last_swarm_goal:** 97
+- **strategy:** 86
+- **last_swarm_critique:** 62
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
+*24.08. 00:52 UTC · Quelle: evolution*
+
+Consolidated Shared Kernel - Variant 0 directly eliminates all three critic issues (duplication, generic deserialization, field inconsistency) with a single shared module using pydantic TypeAdapter. It require
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:2`
+*24.08. 00:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 5, 7]): Transport-Agnostic Message Bus - Abstract the communication layer behind a MessageBus protocol (send, subscribe, ack). Implement concrete adapters: FileSystemBus (uses atomic_write), RedisBus, InMemoryBus. Envelope an
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:1`
+*24.08. 00:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Contract-First Code Generation - Define all message schemas in a single JSON Schema / OpenAPI file (hermes_contracts.yaml). Use a code generator (datamodel-code-generator or pydantic2ts) to produce Envelope[T], Channe
+
+### `last_swarm_critique`
+*24.08. 00:51 UTC · Quelle: critic*
+
+score=3; issues=Three artifacts duplicate base infrastructure (Envelope, Channel, atomic_write) instead of sharing a single module; Envelope.from_json fails for generic payloads - passes raw dict to constructor instead of deserialized type T; StatusPayload fie
+
+### `swarm_artifact:Implement COMMAND channel for Hermes-to-Forge directives`
+*24.08. 00:51 UTC · Quelle: builder*
+
+```python """ Hermes Bridge - COMMAND Channel Implementation File watcher/polling mechanism for Hermes-to-Forge directives. Schema: directive, payload, timestamp, correlation_id """  from __future__ i
+
+### `swarm_artifact:Implement STATUS channel writer with compact state schema`
+*24.08. 00:50 UTC · Quelle: builder*
+
+```python """ Hermes Bridge - Filesystem Channel Infrastructure Base Channel class, atomic write helpers, JSON serialization, and directory structure. """  from __future__ import annotations  import j
+
+### `swarm_artifact:Create bruecke.py skeleton with filesystem channel infrastru`
+*24.08. 00:50 UTC · Quelle: builder*
+
+```python """ Hermes Bridge - Filesystem Channel Infrastructure Base Channel class, atomic write helpers, JSON serialization, and directory structure. """  from __future__ import annotations  import j
+
+### `last_swarm_goal`
+*24.08. 00:47 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608240046:5`
+*24.08. 00:46 UTC · Quelle: dream*
+
+Simulations are run (Hermes bridge verdict: go, 4 risks, 2 revisions) but their risk/revision outputs are not fed back into a mandatory pre-execution checklist, so the same risks likely reappear in live execution.
+
+### `dream:202608240046:4`
+*24.08. 00:46 UTC · Quelle: dream*
+
+Metabolism remains at maximum stress (1.0) with a 1-iteration budget, yet the system continues spawning swarms and model calls instead of entering a protected recovery mode that preserves capacity for skill-building.
+
+### `dream:202608240046:3`
+*24.08. 00:46 UTC · Quelle: dream*
+
+Five concrete resilience skills were proposed in the prior dream (circuit breaker, rate-limit-aware routing, local degraded mode, 429-specific backoff, pre-flight probe) but none were implemented, creating a proposal-execution gap that the new drive goal expli
+
+### `dream:202608240046:2`
+*24.08. 00:46 UTC · Quelle: dream*
+
+Identical drive goals and swarm goals recur across cycles (Hermes-Brücke, model-error reduction, simulation adoption), proving the system lacks a goal-completion tracker that prevents re-proposing unfinished work.
+
+### `dream:202608240046:1`
+*24.08. 00:46 UTC · Quelle: dream*
+
+Model endpoint nvidia/nemotron-3-ultra-550b-a55b:free exhibits catastrophic unreliability (502 errors, 6–125s latency spread) without any circuit-breaker or fallback, causing cascading task failures.
 
 ### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
 *24.08. 00:45 UTC · Quelle: evolution*

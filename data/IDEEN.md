@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 00:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,6 +26,7 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verringern *(wieder aufgegriffen: 2×)*
 - Vorschläge endlich wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen lernen *(wieder aufgegriffen: 2×)*
@@ -37,10 +38,14 @@
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
-- Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulations are run (Hermes bridge verdict: go, 4 risks, 2 revisions) but their risk/revision outputs are not fed back into a mandatory pre-execution 
+- Metabolism remains at maximum stress (1.0) with a 1-iteration budget, yet the system continues spawning swarms and model calls instead of entering a p
+- Five concrete resilience skills were proposed in the prior dream (circuit breaker, rate-limit-aware routing, local degraded mode, 429-specific backoff
+- Identical drive goals and swarm goals recur across cycles (Hermes-Brücke, model-error reduction, simulation adoption), proving the system lacks a goal
+- Model endpoint nvidia/nemotron-3-ultra-550b-a55b:free exhibits catastrophic unreliability (502 errors, 6–125s latency spread) without any circuit-brea
 - High metabolic stress (1.0) with conservative budget correlates with model failures, suggesting resource-aware scheduling should defer non-critical re
 - Local-first file-based message queues (Hermes bridge design) provide operational continuity during model outages, unlike RPC-dependent architectures.
 - Simulation-driven development (5 revisions applied) successfully produced working code where direct hand actions failed repeatedly, proving mental reh
@@ -51,11 +56,6 @@
 - Repeated immediate retries of the same failing model sequence without backoff wastes the conserve-mode budget (max_tasks: 3, max_iterations: 1) and de
 - The konto_gesperrt signal (7 errors, unlock at timestamp 1787529600) confirms account-wide throttling rather than per-model limits.
 - All free-tier OpenRouter models share a single account-level rate limit that triggers simultaneous 429 errors across every model when exhausted.
-- Drive goals (understand failures, execute ideas, test skills) remain declarative with no automated translation into executable procedures.
-- A single successful call (stealth/ox-alpha) takes 39s latency, making synchronous pipelines infeasible under tight iteration budgets.
-- System stress hits maximum (1.0) and enters conserve mode before any successful inference completes, starving the swarm of compute.
-- The model blocklist mechanism (3 strikes → 1800s timeout) reacts too late; it treats symptoms not the shared quota root cause.
-- All free-tier models on OpenRouter share a global rate limit causing cascading 429 failures across the entire model roster.
 
 ---
 
