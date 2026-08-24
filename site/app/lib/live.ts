@@ -25,6 +25,8 @@ export type MemoryFeed = {
   stand: string | null
   kinds: { kind: string; count: number }[]
   latest: { id: string; kind: string; when: string; text: string }[]
+  /** every critic verdict the memory still holds, oldest first */
+  scores: { at: number; label: string; score: number; issues: string }[]
 }
 
 /** the heartbeat timestamp the whole page runs on, plus how sure we are */
@@ -160,19 +162,52 @@ export async function fetchMemory(signal?: AbortSignal): Promise<MemoryFeed> {
     .map((m) => ({ kind: m[1]!, count: Number(m[2]) }))
 
   const latest: MemoryFeed['latest'] = []
+  const scores: MemoryFeed['scores'] = []
+  const standAt = stand ? Date.parse(stand.replace(' UTC', 'Z').replace(' ', 'T')) : Date.now()
+
+  /** "23.08. 22:18 UTC" — the year only lives in the file header */
+  const stamp = (meta: string): number => {
+    const m = meta.match(/(\d{2})\.(\d{2})\.\s+(\d{2}):(\d{2})/)
+    if (!m) return NaN
+    const year = new Date(standAt).getUTCFullYear()
+    let t = Date.UTC(year, Number(m[2]) - 1, Number(m[1]), Number(m[3]), Number(m[4]))
+    // a stamp in the future means the entry is from the year before
+    if (t > standAt + 36e5) t = Date.UTC(year - 1, Number(m[2]) - 1, Number(m[1]), Number(m[3]), Number(m[4]))
+    return t
+  }
+
   const re = /^###\s+`([^`]+)`\n\*([^*]+)\*\n\n([\s\S]*?)(?=\n### |\n---|\s*$)/gm
   for (const m of md.matchAll(re)) {
     const id = m[1]!
     const meta = m[2]!
-    latest.push({
-      id,
-      kind: id.split(':')[0] ?? 'fakt',
-      when: meta.split('·')[0]!.trim(),
-      text: m[3]!.trim().replace(/\s+/g, ' ').slice(0, 420),
-    })
-    if (latest.length >= 24) break
+    const body = m[3]!.trim()
+
+    if (latest.length < 24) {
+      latest.push({
+        id,
+        kind: id.split(':')[0] ?? 'fakt',
+        when: meta.split('·')[0]!.trim(),
+        text: body.replace(/\s+/g, ' ').slice(0, 420),
+      })
+    }
+
+    // the critic's verdicts are the only honest record of how well it works
+    const verdict = body.match(/^score=(\d+)(?:;\s*issues=([\s\S]*))?/)
+    if (verdict && /critic/.test(meta)) {
+      const at = stamp(meta)
+      if (!Number.isNaN(at)) {
+        scores.push({
+          at,
+          label: id.replace(/^last_swarm_critique:?/, '').trim(),
+          score: Number(verdict[1]),
+          issues: (verdict[2] ?? '').replace(/\s+/g, ' ').slice(0, 180),
+        })
+      }
+    }
   }
-  return { facts, stand, kinds, latest }
+
+  scores.sort((a, b) => a.at - b.at)
+  return { facts, stand, kinds, latest, scores }
 }
 
 /* -------------------------------------------------------------- heartbeat */

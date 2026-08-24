@@ -7,6 +7,7 @@ export const nav: { id: string; label: L }[] = [
   { id: 'organe', label: { de: 'Organe', en: 'Organs' } },
   { id: 'gehirn', label: { de: 'Gehirn', en: 'Brain' } },
   { id: 'gedaechtnis', label: { de: 'Gedächtnis', en: 'Memory' } },
+  { id: 'lernkurve', label: { de: 'Lernkurve', en: 'Learning' } },
   { id: 'pruefung', label: { de: 'Prüfung', en: 'Check' } },
   { id: 'ideen', label: { de: 'Ideen', en: 'Ideas' } },
   { id: 'wiki', label: { de: 'Wiki', en: 'Wiki' } },
@@ -94,6 +95,11 @@ export const sections = {
     label: { de: 'Das Gedächtnis', en: 'The memory' },
     head: { de: 'Was es weiß —\nund wie ehrlich es darüber ist.', en: 'What it knows —\nand how honest it is about it.' },
     sub: { de: 'Fakten, Träume, Narben. Anti-Muster sind Fehler, die es nie wieder machen darf. Direkt aus dem öffentlichen Logbuch geladen.', en: 'Facts, dreams, scars. Anti-patterns are mistakes it must never repeat. Loaded straight from the public logbook.' },
+  },
+  lernkurve: {
+    label: { de: 'Die Lernkurve', en: 'The learning curve' },
+    head: { de: 'Wird es besser?\nHier steht die Antwort.', en: 'Is it getting better?\nHere is the answer.' },
+    sub: { de: 'Jeder Lauf endet mit einer Note von 0 bis 10, vergeben von einem gegnerischen Critic. Alle Urteile, die noch im Gedächtnis liegen — ungefiltert, in der Reihenfolge, in der sie gefallen sind.', en: 'Every run ends with a 0–10 verdict from an adversarial critic. All verdicts still held in memory — unfiltered, in the order they happened.' },
   },
   ideen: {
     label: { de: 'Ideen-Board', en: 'Ideas board' },

@@ -15,6 +15,7 @@ import Cadence from './components/Cadence'
 import Organs from './components/Organs'
 import BrainStage from './components/BrainStage'
 import Memory from './components/Memory'
+import Learning from './components/Learning'
 import Consistency from './components/Consistency'
 import Ideas from './components/Ideas'
 import Wiki from './components/Wiki'
@@ -46,20 +47,24 @@ export default function App() {
   const ideas = useFeed<IdeasData>(fetchIdeas, 5 * 60_000)
   const board = useFeed<Leaderboard>(fetchLeaderboard, 5 * 60_000)
   const beat = useFeed<Beat>(fetchBeat, 90_000)
-
-  // 300 kB of raw memory — only once the reader is close to that section
   const [brain, setBrain] = useState<Brain | null>(null)
+
+  // 300 kB of raw memory — pulled once the reader is near any section that
+  // needs it (the memory stream and the learning curve both live off it)
   const [wantsMemory, setWantsMemory] = useState(false)
   useEffect(() => {
-    const el = document.getElementById('gedaechtnis')
-    if (!el) return
+    const targets = ['gedaechtnis', 'lernkurve']
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => Boolean(el))
+    if (!targets.length) return
     const obs = new IntersectionObserver(
-      ([e]) => { if (e?.isIntersecting) { setWantsMemory(true); obs.disconnect() } },
+      (entries) => { if (entries.some((e) => e.isIntersecting)) { setWantsMemory(true); obs.disconnect() } },
       { rootMargin: '900px 0px' },
     )
-    obs.observe(el)
+    targets.forEach((el) => obs.observe(el))
     return () => obs.disconnect()
   }, [seed])
+
   const memory = useFeed<MemoryFeed>(fetchMemory, 5 * 60_000, wantsMemory)
 
   // the GitHub API is rate-limited per IP, so fall back to the timestamp the
@@ -89,6 +94,7 @@ export default function App() {
         <Organs pulse={pulse} />
         <BrainStage board={board} pulse={pulse} onBrain={setBrain} />
         <Memory memory={memory} seed={seed} />
+        <Learning memory={memory} seed={seed} />
         <Consistency board={board} brain={brain} ideas={ideas} memory={memory} beat={beat} seed={seed} onBrain={setBrain} />
         <Ideas ideas={ideas} seed={seed} />
         <Wiki seed={seed} />
