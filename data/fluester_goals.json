@@ -57,6 +57,18 @@
   "_versuche": 1
  },
  {
+  "title": "Fußball: erste eigene Einreichung, die bewerte.py besteht",
+  "why": "Verschaffe dir den Fuss in der Tuer. Baue EINE Datei in /workspace/fussball/einreichungen/ mit den drei Funktionen trainiere(train), vorhersage(modell, spiele) und optional aktualisiere(modell, ergebnisse), lass sie von bewerte.py messen und schreibe das Ergebnis auf. Erreicht ist das Ziel, wenn bewerte.py eine gueltige JSON-Ausgabe mit einer Trefferquote liefert - egal wie hoch. Nimm basislinie.py als Vorlage und aendere EINE Sache daran, zum Beispiel den Heimvorteil je Wettbewerb statt eines festen Werts fuer alle 18. Alles liegt in /workspace/fussball: AUFGABE.md (lies sie ZUERST), train.csv (139.658 Spiele 2000-2022), val.csv (13.445 Spiele 2022-2024), basislinie.py als lauffaehige Vorlage. Pruefen mit: cd /workspace/fussball && /workspace/zoetron/.venv/bin/python bewerte.py einreichungen/DEINE_DATEI.py -- ohne Pipe, sonst geht der Rueckgabewert verloren. Buchmacherquoten werden vor deinen Augen entfernt; ein Modell mit Quoten hat nichts Eigenes gelernt. Ein dritter Datensatz aus zwei weiteren Saisons ist versiegelt und liegt NICHT auf diesem Rechner.",
+  "signal": "creator",
+  "_done": false
+ },
+ {
+  "title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten",
+  "why": "Das ist die eigentliche Aufgabe, und sie hat einen Kritiker, den du nicht ueberreden kannst: das Spielergebnis. Basislinie 50,2 % Treffer bei Log-Loss 1,0073; der Buchmacher steht bei 51,5 % / 0,9921. Der Abstand von 1,3 Prozentpunkten ist das Ziel. Unbearbeitet liegt: Elo mit Tordifferenz und eigenem K je Wettbewerb, Rueckkehr zum Mittelwert in der Saisonpause, Auf- und Absteiger, Poisson-/Dixon-Coles-Modelle (sagen Tore vorher statt Ausgaenge), Gradient Boosting, Spielplandichte. ACHTUNG: Ein Vorsprung unter 0,6 Prozentpunkten ist bei 13.445 Spielen Rauschen und zaehlt nicht. Und wer val.csv hundertmal befragt, passt sich ihm an statt zu lernen - genau der Fehler vom 23.08.2026 in neuer Verkleidung. Alles liegt in /workspace/fussball: AUFGABE.md (lies sie ZUERST), train.csv (139.658 Spiele 2000-2022), val.csv (13.445 Spiele 2022-2024), basislinie.py als lauffaehige Vorlage. Pruefen mit: cd /workspace/fussball && /workspace/zoetron/.venv/bin/python bewerte.py einreichungen/DEINE_DATEI.py -- ohne Pipe, sonst geht der Rueckgabewert verloren. Buchmacherquoten werden vor deinen Augen entfernt; ein Modell mit Quoten hat nichts Eigenes gelernt. Ein dritter Datensatz aus zwei weiteren Saisons ist versiegelt und liegt NICHT auf diesem Rechner.",
+  "signal": "creator",
+  "_done": false
+ },
+ {
   "title": "Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust",
   "why": "Mehr LLM-Aufrufe sind wegen Rate-Limits (Anfrage-Obergrenzen) der falsche Hebel. Drei Umbauten: 1) DREAM und RETRO liefern pro Aufruf ein JSON-Array aus 5-10 atomaren Fakten statt Fließtext. 2) HANDS schreibt nach jeder Ausführung automatisch Ground-Truth-Fakten (Ground Truth = maschinell gemessene Wahrheit: Laufzeit, Exit-Code, Output) per Code, ohne LLM. 3) Neuheitsfilter vor dem Speichern: zu ähnliche Fakten werden konsolidiert statt neu angelegt. Fertig wenn: Fakten pro Beat mindestens 3x höher, die Neuheitsquote (angenommen/erzeugt) wird gemessen, bleibt über 60 Prozent, und beides steht im Wochenreport.",
   "signal": "gap",
