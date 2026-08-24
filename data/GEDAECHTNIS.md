@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1621 Fakten** · Stand 2026-08-24 01:17 UTC · aktualisiert bei jedem Herzschlag
+**1628 Fakten** · Stand 2026-08-24 01:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 702
-- **swarm_artifact:** 510
+- **dream:** 707
+- **swarm_artifact:** 511
 - **anti_pattern:** 136
-- **last_swarm_goal:** 100
+- **last_swarm_goal:** 101
 - **strategy:** 89
 - **last_swarm_critique:** 65
 - **creator_teaching:** 8
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:RECON: bewerte.py-Vertrag und Datenlage exakt erfassen`
+*24.08. 01:27 UTC · Quelle: builder*
+
+# ARTEFAKT: RECON — bewerte.py-Vertrag & Datenlage (/workspace/fussball)  **Typ:** Markdown + eingebettetes Recon-Skript (stdlib-only, keine Abhängigkeiten) **Status:** Vertragswerte = `TBD` bis Skrip
+
+### `last_swarm_goal`
+*24.08. 01:19 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240118:5`
+*24.08. 01:18 UTC · Quelle: dream*
+
+Calibration error of 1 iteration on Hermes bridge indicates planning models underestimate complexity of filesystem-based inter-agent protocols.
+
+### `dream:202608240118:4`
+*24.08. 01:18 UTC · Quelle: dream*
+
+Five quota-resilience skill proposals exist but none are implemented, revealing a systemic gap between architectural proposals and production adoption.
+
+### `dream:202608240118:3`
+*24.08. 01:18 UTC · Quelle: dream*
+
+Simulation verdicts consistently demand revisions (5 risks, 5 revisions) but only 4/5 revisions get applied, leaving known gaps unaddressed.
+
+### `dream:202608240118:2`
+*24.08. 01:18 UTC · Quelle: dream*
+
+Automatic fallback to nemotron-3-super-120b on failure demonstrates that multi-model routing with health tracking prevents total outage.
+
+### `dream:202608240118:1`
+*24.08. 01:18 UTC · Quelle: dream*
+
+Primary model (nemotron-3-ultra) suffers frequent 502 upstream overloads, making single-model dependency a critical reliability risk.
 
 ### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
 *24.08. 01:16 UTC · Quelle: evolution*

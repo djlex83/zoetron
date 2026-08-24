@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 01:17:01",
+ "stand": "2026-08-24 01:34:08",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "dedup_skill_proposals.py",
+   "tool": "fähigkeiten-selbstständig-üben.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-selbstständig-üben.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "dedup_skill_proposals.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -93,8 +93,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.805,
- "simulationen_angewandt": 92,
+ "haende_quote": 0.803,
+ "simulationen_angewandt": 93,
  "swarm_scores": {
   "n": 54,
   "best": 8.0,
@@ -102,8 +102,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 51,
-   "schnitt": 4.04
+   "n": 50,
+   "schnitt": 4.06
   },
   "bau": {
    "n": 3,

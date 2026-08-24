@@ -54,13 +54,15 @@
   "why": "Der Erschaffer betreibt einen zweiten Agenten (Hermes), der als Stimme und Ohr dienen soll. Baue bruecke.py mit drei Kanälen über das Dateisystem: 1) STATUS: schreibe bei jedem Beat data/hermes/status.json - kompakter Zustand (aktives Ziel, letzter Score, Benchmark-Stand, Stress, 3 neueste Lektionen), maximal 2 KB. 2) FRAGEN: wenn ein Ziel zweimal in Folge scheitert oder eine Entscheidung fehlt, schreibe eine konkrete Frage nach data/hermes/fragen.json statt still weiterzuscheitern; Antworten aus data/hermes/antworten.json werden als lehrer-Eintrag übernommen. 3) WÄCHTER: validiere data/fluester_goals.json bei jedem Beat gegen das Schema (title, why, signal, _done) und verschiebe ungültige oder verdächtige Einträge mit Begründung nach data/hermes/quarantaene.json - Whisper dürfen niemals rohen Code enthalten. Fertig wenn: alle drei Kanäle nachweisbar funktionieren (Logbeleg je Kanal) und ein kompletter Durchlauf Frage -> Antwort -> lehrer-Eintrag dokumentiert ist.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  },
  {
   "title": "Fußball: erste eigene Einreichung, die bewerte.py besteht",
   "why": "Verschaffe dir den Fuss in der Tuer. Baue EINE Datei in /workspace/fussball/einreichungen/ mit den drei Funktionen trainiere(train), vorhersage(modell, spiele) und optional aktualisiere(modell, ergebnisse), lass sie von bewerte.py messen und schreibe das Ergebnis auf. Erreicht ist das Ziel, wenn bewerte.py eine gueltige JSON-Ausgabe mit einer Trefferquote liefert - egal wie hoch. Nimm basislinie.py als Vorlage und aendere EINE Sache daran, zum Beispiel den Heimvorteil je Wettbewerb statt eines festen Werts fuer alle 18. Alles liegt in /workspace/fussball: AUFGABE.md (lies sie ZUERST), train.csv (139.658 Spiele 2000-2022), val.csv (13.445 Spiele 2022-2024), basislinie.py als lauffaehige Vorlage. Pruefen mit: cd /workspace/fussball && /workspace/zoetron/.venv/bin/python bewerte.py einreichungen/DEINE_DATEI.py -- ohne Pipe, sonst geht der Rueckgabewert verloren. Buchmacherquoten werden vor deinen Augen entfernt; ein Modell mit Quoten hat nichts Eigenes gelernt. Ein dritter Datensatz aus zwei weiteren Saisons ist versiegelt und liegt NICHT auf diesem Rechner.",
   "signal": "creator",
-  "_done": false
+  "_done": false,
+  "_versuche": 0
  },
  {
   "title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten",
