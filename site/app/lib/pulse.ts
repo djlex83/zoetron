@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { phases } from './content'
 
-const CYCLE = 5 * 60 * 1000 // one heartbeat: 5 minutes
+/** one heartbeat, measured — not guessed: TAKT=2400 s since 2026-08-24 */
+const CYCLE = 40 * 60 * 1000
 
 export type Cycle = {
-  /** 0…1 through the current 5-minute cycle */
+  /** 0…1 through the current cycle */
   t: number
   /** index into `phases` — the organ that is running right now */
   index: number
@@ -18,7 +19,7 @@ export type Cycle = {
 
 /**
  * Turns the last heartbeat commit into a live clock. The daemon runs a full
- * organ cycle every 5 minutes in a fixed order, so the elapsed time tells us
+ * organ cycle every 40 minutes in a fixed order, so the elapsed time tells us
  * which organ is working at this very second.
  */
 export function useCycle(lastISO: string | null): Cycle {

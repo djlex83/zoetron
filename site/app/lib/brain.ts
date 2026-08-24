@@ -52,7 +52,7 @@ let cache: Promise<Brain> | null = null
 let cachedAt = 0
 
 export function loadBrain(force = false): Promise<Brain> {
-  const stale = Date.now() - cachedAt > 4 * 60_000
+  const stale = Date.now() - cachedAt > 9 * 60_000
   if (cache && !force && !stale) return cache
   cachedAt = Date.now()
   cache = (async () => {

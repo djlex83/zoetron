@@ -33,7 +33,7 @@ let cache: Promise<Football> | null = null
 let cachedAt = 0
 
 export function loadFootball(force = false): Promise<Football> {
-  if (cache && !force && Date.now() - cachedAt < 4 * 60_000) return cache
+  if (cache && !force && Date.now() - cachedAt < 9 * 60_000) return cache
   cachedAt = Date.now()
   cache = (async () => {
     const res = await fetch('./fussball.html?t=' + Math.floor(Date.now() / 60_000), { cache: 'no-store' })

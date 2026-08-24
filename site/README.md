@@ -13,7 +13,7 @@ npm run build   # writes ../docs/index.html + ../docs/assets/*
 
 - **`emptyOutDir` stays `false`.** `docs/` is not ours alone: Zoetron's
   heartbeat writes `docs/brain.html`, `docs/graph.html` and `docs/wiki/*.md`
-  there every ~5 minutes. A build that empties the folder would delete the
+  there on every heartbeat (~40 min). A build that empties the folder would delete the
   organism's live output.
 - **Never name a folder `src/`, `scripts/` or `tests/`** inside this repo —
   the root `.gitignore` blocks those names everywhere to keep the Python

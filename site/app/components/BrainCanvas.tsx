@@ -42,9 +42,9 @@ export default function BrainCanvas({
         .then((b) => { if (alive) { setBrain(b); setFailed(false); onReady?.(b) } })
         .catch(() => { if (alive) setBrain((prev) => { if (!prev) setFailed(true); return prev }) })
     pull()
-    // brain.html is rewritten every heartbeat; loadBrain() only refetches when
-    // its own cache is older than 4 minutes, so both canvases share one request
-    const id = window.setInterval(pull, 5 * 60_000)
+    // brain.html is rewritten every heartbeat (~40 min); loadBrain() only
+    // refetches past its own cache age, so both canvases share one request
+    const id = window.setInterval(pull, 10 * 60_000)
     return () => { alive = false; clearInterval(id) }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -332,8 +332,8 @@ export default function BrainCanvas({
         <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
           <p className="max-w-sm text-[0.96rem] text-ink-faint">
             {lang === 'de'
-              ? 'Das Gehirn ließ sich gerade nicht laden — es wird alle 5 Minuten neu geschrieben. '
-              : 'The brain could not be loaded right now — it is rewritten every 5 minutes. '}
+              ? 'Das Gehirn ließ sich gerade nicht laden — es wird bei jedem Herzschlag neu geschrieben. '
+              : 'The brain could not be loaded right now — it is rewritten on every heartbeat. '}
             <a className="text-amber underline" href="./brain.html">brain.html</a>
           </p>
         </div>

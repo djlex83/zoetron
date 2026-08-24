@@ -44,8 +44,8 @@ function useFeed<T>(load: (s: AbortSignal) => Promise<T>, everyMs = 0, enabled =
 
 export default function App() {
   const seed = useFeed<Seed>(fetchSeed)
-  const ideas = useFeed<IdeasData>(fetchIdeas, 5 * 60_000)
-  const board = useFeed<Leaderboard>(fetchLeaderboard, 5 * 60_000)
+  const ideas = useFeed<IdeasData>(fetchIdeas, 10 * 60_000)
+  const board = useFeed<Leaderboard>(fetchLeaderboard, 10 * 60_000)
   const beat = useFeed<Beat>(fetchBeat, 90_000)
   const [brain, setBrain] = useState<Brain | null>(null)
 
@@ -65,7 +65,7 @@ export default function App() {
     return () => obs.disconnect()
   }, [seed])
 
-  const memory = useFeed<MemoryFeed>(fetchMemory, 5 * 60_000, wantsMemory)
+  const memory = useFeed<MemoryFeed>(fetchMemory, 10 * 60_000, wantsMemory)
 
   // the GitHub API is rate-limited per IP, so fall back to the timestamp the
   // build froze into state.json — flagged as not-live so nothing pretends

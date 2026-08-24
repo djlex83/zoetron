@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-08-24T00:48:08.584Z",
+  "generatedAt": "2026-08-24T22:34:14.626Z",
   "repo": "djlex83/zoetron",
   "memory": {
-    "facts": 1559,
-    "neurons": 1336,
-    "synapses": 20565,
-    "stand": "2026-08-24 00:46 UTC",
+    "facts": 2178,
+    "neurons": 1774,
+    "synapses": 33215,
+    "stand": "2026-08-24 22:26 UTC",
     "kinds": [
       {
         "kind": "dream",
-        "count": 677
+        "count": 982
       },
       {
         "kind": "swarm_artifact",
-        "count": 493
+        "count": 647
       },
       {
         "kind": "anti_pattern",
-        "count": 128
+        "count": 178
       },
       {
         "kind": "last_swarm_goal",
-        "count": 96
+        "count": 151
       },
       {
         "kind": "strategy",
-        "count": 85
+        "count": 110
       },
       {
         "kind": "last_swarm_critique",
-        "count": 61
+        "count": 91
       },
       {
         "kind": "creator_teaching",
@@ -67,76 +67,46 @@
   },
   "learning": {
     "events": 4000,
-    "handsRate": 0.815,
-    "simulations": 89,
+    "handsRate": 0.767,
+    "simulations": 84,
     "swarm": {
-      "n": 53,
+      "n": 38,
       "best": 8,
-      "schnitt": 4.06
+      "schnitt": 3.76
     },
     "tools": [
       {
         "name": "ci-pipeline-reparieren-und-simulation-va.py",
-        "runs": 7,
-        "wins": 7,
-        "rate": 1
-      },
-      {
-        "name": "dedup_skill_proposals.py",
-        "runs": 6,
-        "wins": 6,
-        "rate": 1
-      },
-      {
-        "name": "fähigkeiten-selbstständig-üben.py",
         "runs": 4,
         "wins": 4,
         "rate": 1
       },
       {
-        "name": "fehler-im-modell-vermeiden.py",
-        "runs": 3,
-        "wins": 3,
-        "rate": 1
-      },
-      {
-        "name": "träume-und-simulationen-besser-nutzen.py",
-        "runs": 3,
-        "wins": 3,
-        "rate": 1
-      },
-      {
-        "name": "fehlermuster-aus-schwarm-träumen-nutzen.py",
-        "runs": 2,
-        "wins": 2,
-        "rate": 1
-      },
-      {
-        "name": "alte-träume-nach-ideen-durchsuchen.py",
-        "runs": 2,
-        "wins": 2,
-        "rate": 1
-      },
-      {
-        "name": "gelerntes-können-anwenden.py",
-        "runs": 1,
-        "wins": 1,
-        "rate": 1
-      },
-      {
-        "name": "erinnerungen-miteinander-verbinden.py",
-        "runs": 1,
-        "wins": 1,
-        "rate": 1
-      },
-      {
         "name": "synapsen-semantisch-vernetzen.py",
+        "runs": 2,
+        "wins": 2,
+        "rate": 1
+      },
+      {
+        "name": "fähigkeiten-selbstständig-üben.py",
         "runs": 1,
         "wins": 1,
         "rate": 1
       },
       {
         "name": "vorschläge-für-fähigkeiten-umsetzen.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
+      },
+      {
+        "name": "fehler-im-modell-vermeiden.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
+      },
+      {
+        "name": "alte-träume-nach-ideen-durchsuchen.py",
         "runs": 1,
         "wins": 1,
         "rate": 1
@@ -170,9 +140,21 @@
         "runs": 1,
         "wins": 1,
         "rate": 1
+      },
+      {
+        "name": "extern-quote-in-drive-raus-aus-der-selbs.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
+      },
+      {
+        "name": "fußball-die-basislinie-von-50-2-schlagen.py",
+        "runs": 1,
+        "wins": 1,
+        "rate": 1
       }
     ],
-    "stand": "2026-08-24 00:46:11"
+    "stand": "2026-08-24 22:26:22"
   },
   "missions": [
     {
@@ -224,9 +206,9 @@
     "quote": "Dream logs contain recurring error signatures (timeout, AttributeError) that are not systematically mined to seed evolution variants."
   },
   "beats": {
-    "last": "2026-08-24T02:48:08+02:00",
-    "per24h": 165,
-    "total": 302
+    "last": "2026-08-25T00:34:12+02:00",
+    "per24h": 88,
+    "total": 364
   },
   "wiki": [
     {
@@ -243,7 +225,7 @@
       "group": "wiki",
       "title": "Betrieb",
       "intro": "Der Daemon läuft als Hintergrundprozess auf dem Hermes-Host:",
-      "bytes": 1655
+      "bytes": 2054
     },
     {
       "slug": "Scoring",
@@ -306,8 +288,8 @@
       "path": "wiki/Tabelle.md",
       "group": "wiki",
       "title": "Zoetrons Bestenliste",
-      "intro": "Stand: 1336 Neuronen · 20565 bewertete Synapsen",
-      "bytes": 3734
+      "intro": "Stand: 1774 Neuronen · 33215 bewertete Synapsen",
+      "bytes": 3735
     },
     {
       "slug": "Ideen",
@@ -315,7 +297,7 @@
       "group": "wiki",
       "title": "Zoetrons Ideen-Board (AUTONOM)",
       "intro": "- Implement modelhealth.py with per-model EMA latency, 3-state circuit breaker (trip at 2× median, probe recove (hatte d",
-      "bytes": 5622
+      "bytes": 5172
     },
     {
       "slug": "2026-W34",

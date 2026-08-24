@@ -19,8 +19,8 @@ export const hero = {
   title1: { de: 'Kein Framework.', en: 'Not a framework.' },
   title2: { de: 'Ein Organismus.', en: 'An organism.' },
   sub: {
-    de: 'Zoetron hat einen Herzschlag alle 5 Minuten, sucht sich seine Ziele selbst, träumt seine Erfahrungen zu Einsichten und baut ein Gedächtnis, das Bedeutung versteht. Was du im Hintergrund siehst, ist sein echtes Gehirn — live, nicht animiert.',
-    en: 'Zoetron beats every 5 minutes, picks its own goals, dreams experience into insight and grows a memory that understands meaning. What you see behind this text is its real brain — live, not an animation.',
+    de: 'Zoetron hat einen Herzschlag alle 40 Minuten, sucht sich seine Ziele selbst, träumt seine Erfahrungen zu Einsichten und baut ein Gedächtnis, das Bedeutung versteht. Was du im Hintergrund siehst, ist sein echtes Gehirn — live, nicht animiert.',
+    en: 'Zoetron beats every 40 minutes, picks its own goals, dreams experience into insight and grows a memory that understands meaning. What you see behind this text is its real brain — live, not an animation.',
   },
   ctaBrain: { de: '3D-Gehirn öffnen', en: 'Open the 3D brain' },
   ctaCadence: { de: 'Wie es tickt', en: 'How it ticks' },
@@ -50,6 +50,22 @@ export const phases: { icon: string; name: string; head: L; body: L }[] = [
   { icon: '🎯', name: 'WILLE', head: { de: 'Präfrontaler Cortex', en: 'Prefrontal cortex' }, body: { de: 'Langfristige Missionen mit messbaren Zielen überdauern die Zyklen und schlagen die Tagesneugier.', en: 'Long-term missions with measurable targets survive cycles and outrank daily curiosity.' } },
 ]
 
+/** the measurement behind the cadence — the organism's own post-mortem */
+export const cadenceNote = {
+  label: { de: 'Warum 40 Minuten?', en: 'Why 40 minutes?' },
+  facts: [
+    { v: '26 / 29', l: { de: 'Läufe liefen in die Zeitgrenze', en: 'runs hit the time limit' } },
+    { v: '~124 s', l: { de: 'Antwortzeit des bevorzugten Modells', en: 'response time of the preferred model' } },
+    { v: '≈ 10', l: { de: 'Modellaufrufe je Schwarm-Zyklus', en: 'model calls per swarm cycle' } },
+    { v: '3', l: { de: 'bewertete Ergebnisse in acht Stunden', en: 'scored results in eight hours' } },
+  ],
+  body: {
+    de: 'Die Zahl kommt aus Messung, nicht aus Gefühl. Bei einer ACT-Zeitgrenze von 900 Sekunden brach der Lauf ab, bevor der Schwarm fertig war — in acht Stunden entstanden drei bewertete Ergebnisse statt der sonst üblichen fünfzig. Jetzt 1.800 Sekunden für ACT und 2.400 Sekunden Takt: weniger Zyklen, aber fertige. Rund 360 Modellaufrufe pro Tag liegen zudem weit unter dem freien Kontingent von 1.000.',
+    en: 'The number comes from measurement, not from a hunch. With a 900-second ACT limit the run was cut off before the swarm finished — in eight hours it produced three scored results instead of the usual fifty. Now 1,800 seconds for ACT and a 2,400-second cadence: fewer cycles, but finished ones. Around 360 model calls a day also sit far below the free quota of 1,000.',
+  },
+  since: '2026-08-24',
+}
+
 export const organs: {
   icon: string; name: string; analog: L; body: L; accent: string
   /** which phase of the 5-minute cycle wakes this organ up */
@@ -57,7 +73,7 @@ export const organs: {
   /** organs that never stop (they run inside every other phase) */
   always?: boolean
 }[] = [
-  { icon: '💓', name: 'HERZ', analog: { de: 'Herzschlag', en: 'Heartbeat' }, body: { de: '5-Minuten-Takt, ~288 Zyklen pro Tag. Fährt jede Phase, meldet den Beweis nach Telegram, pusht sich selbst nach GitHub.', en: '5-minute cadence, ~288 cycles a day. Runs every phase, reports proof to Telegram, pushes itself to GitHub.' }, accent: 'pulse' , always: true },
+  { icon: '💓', name: 'HERZ', analog: { de: 'Herzschlag', en: 'Heartbeat' }, body: { de: '40-Minuten-Takt, ~36 Zyklen pro Tag. Fährt jede Phase, meldet den Beweis nach Telegram, pusht sich selbst nach GitHub.', en: '40-minute cadence, ~36 cycles a day. Runs every phase, reports proof to Telegram, pushes itself to GitHub.' }, accent: 'pulse' , always: true },
   { icon: '🧬', name: 'GENOM', analog: { de: 'Angeborene DNA', en: 'Innate DNA' }, body: { de: 'Fünf Instinkt-Regeln in JEDEM Prompt: Gedächtnis schützen, Erschaffer zuerst, sich selbst am Leben halten, ehrlich bleiben, aus jedem Fehler lernen.', en: 'Five instinct rules in EVERY prompt: protect memory, creator first, stay alive, stay honest, learn from every failure.' }, accent: 'amber' , always: true },
   { icon: '🧠', name: 'GEDÄCHTNIS', analog: { de: 'Hippocampus', en: 'Hippocampus' }, body: { de: 'JSONL-Fakten plus Ereignisprotokoll, automatisch dedupliziert. Jede Erinnerung wird im Graphen zu einem Neuron.', en: 'JSONL facts plus an event log, auto-deduplicated. Every memory becomes a neuron in the graph.' }, accent: 'synapse' , phase: 'PRUNE' },
   { icon: '🕸', name: 'SEMANTIK', analog: { de: 'Bedeutungs-Cortex', en: 'Meaning cortex' }, body: { de: 'TF-IDF mit Synonymfeldern und Cross-Domain-Brücken. Findet verwandtes Wissen über Bedeutung — auch wenn kein Wort übereinstimmt.', en: 'TF-IDF with synonym fields and cross-domain bridges. Finds related knowledge by meaning — even when no word matches.' }, accent: 'synapse' , phase: 'GRAPH' },
@@ -78,8 +94,8 @@ export const organs: {
 export const sections = {
   takt: {
     label: { de: 'Der Takt', en: 'The cadence' },
-    head: { de: 'Alle fünf Minuten\nein vollständiger Zyklus.', en: 'Every five minutes,\na complete cycle.' },
-    sub: { de: '~288 Mal am Tag, ohne einen einzigen menschlichen Klick. Scrolle den Takt entlang — genau in dieser Reihenfolge läuft jeder Herzschlag.', en: '~288 times a day, without a single human click. Scroll along the cadence — every heartbeat runs in exactly this order.' },
+    head: { de: 'Alle vierzig Minuten\nein vollständiger Zyklus.', en: 'Every forty minutes,\na complete cycle.' },
+    sub: { de: '~36 Mal am Tag, ohne einen einzigen menschlichen Klick. Scrolle den Takt entlang — genau in dieser Reihenfolge läuft jeder Herzschlag.', en: '~36 times a day, without a single human click. Scroll along the cadence — every heartbeat runs in exactly this order.' },
   },
   organe: {
     label: { de: 'Die Organe', en: 'The organs' },

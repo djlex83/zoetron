@@ -20,7 +20,7 @@ export default function Football() {
     const pull = () => loadFootball().then((d) => { if (alive) { setData(d); setFailed(false) } })
       .catch(() => { if (alive && !data) setFailed(true) })
     pull()
-    const id = window.setInterval(pull, 5 * 60_000)
+    const id = window.setInterval(pull, 10 * 60_000)
     return () => { alive = false; clearInterval(id) }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])

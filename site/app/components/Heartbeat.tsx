@@ -32,7 +32,7 @@ export default function Heartbeat({ pulse }: { pulse: Pulse }) {
               {lang === 'de' ? 'Herzschlag' : 'heartbeat'}
             </span>
             <div className="display mt-3 leading-none text-ink" style={{ fontSize: 'calc(var(--h1-size) * 0.62)' }}>
-              {lang === 'de' ? 'alle 5 Min' : 'every 5 min'}
+              {lang === 'de' ? 'alle 40 Min' : 'every 40 min'}
             </div>
             <div className="mt-2 font-mono text-[0.88rem] text-ink-faint">
               {pulse.iso

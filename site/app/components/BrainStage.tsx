@@ -132,7 +132,7 @@ export default function BrainStage({
                 {lang === 'de' ? 'Schlag' : 'beat'} {agoDE(pulse.iso, lang)}
               </span>
               {drawn && view === '3d' && (
-                <span className="hidden lg:inline" title={lang === 'de' ? 'brain.html wird alle 5 Minuten neu geholt' : 'brain.html is refetched every 5 minutes'}>
+                <span className="hidden lg:inline" title={lang === 'de' ? 'brain.html wird alle 10 Minuten neu geholt' : 'brain.html is refetched every 10 minutes'}>
                   {lang === 'de' ? 'geholt ' : 'fetched '}
                   {agoDE(new Date(drawn.fetchedAt).toISOString(), lang)}
                 </span>

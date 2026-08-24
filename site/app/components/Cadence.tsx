@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { phases, sections } from '../lib/content'
+import { cadenceNote, phases, sections } from '../lib/content'
 import { useLang } from '../lib/lang'
 import { gsap, reduced, useGsap } from '../lib/anim'
 import { Section, SectionHead } from './ui'
@@ -77,7 +77,33 @@ export default function Cadence({ pulse }: { pulse: Pulse }) {
       <div ref={root}>
         <SectionHead label={sections.takt.label} head={sections.takt.head} sub={sections.takt.sub} />
 
-        <div className="mt-16 grid gap-12 lg:mt-24 lg:grid-cols-[20rem_1fr] lg:gap-20">
+        {/* --- why the cadence is what it is --- */}
+        <div data-reveal className="panel panel-lg mt-10 p-6 sm:p-7">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <span className="eyebrow-pill">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber" />
+              {t(cadenceNote.label)}
+            </span>
+            <span className="font-mono text-[0.72rem] text-ink-faint">
+              {lang === 'de' ? 'gemessen am' : 'measured on'} {cadenceNote.since}
+            </span>
+          </div>
+
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {cadenceNote.facts.map((f) => (
+              <div key={f.v}>
+                <div className="font-mono text-[1.5rem] leading-none text-ink tabular-nums">{f.v}</div>
+                <div className="mt-2 text-[0.86rem] leading-snug text-ink-faint">{t(f.l)}</div>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-6 max-w-4xl border-t border-white/8 pt-5 text-[0.98rem] leading-relaxed text-ink-dim">
+            {t(cadenceNote.body)}
+          </p>
+        </div>
+
+        <div className="mt-16 grid gap-12 lg:mt-20 lg:grid-cols-[20rem_1fr] lg:gap-20">
           {/* --- sticky clock --- */}
           <div className="hidden lg:block">
             <div className="sticky top-32">
@@ -110,8 +136,8 @@ export default function Cadence({ pulse }: { pulse: Pulse }) {
                 <div className="display mt-2 text-3xl text-ink">{t(now.head)}</div>
                 <p className="mt-4 max-w-[17rem] text-[0.92rem] leading-relaxed text-ink-faint">
                   {lang === 'de'
-                    ? 'Ein Herzschlag dauert 5 Minuten. Nichts davon wartet auf einen Menschen.'
-                    : 'One heartbeat lasts 5 minutes. None of it waits for a human.'}
+                    ? 'Ein Herzschlag dauert 40 Minuten. Nichts davon wartet auf einen Menschen.'
+                    : 'One heartbeat lasts 40 minutes. None of it waits for a human.'}
                 </p>
 
                 {cycle.known && (
