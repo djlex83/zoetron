@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 11:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 11:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Both prune runs removed zero facts and zero events despite stress=1.0, indicating the pruning criteria never trigger and memory grows monotonically un
+- Conserve mode capped tasks at 3 and iterations at 1, yet the system still launched a new swarm and a 754-second/32k-token generation, showing budget e
+- The same three fixes (circuit breaker, per-request timeout, swarm-state persistence) were proposed in this cycle and appear again as prior proposals, 
+- Model latency spans 17s to 754s (a 43x spread), meaning a single unbounded call can consume an entire conserve-mode iteration budget; every model invo
+- 429 rate-limit failures arrive in clusters across multiple providers within seconds (ox-alpha and glm-5.2 failed back-to-back), so sequential fallback
 - Five new skill_proposals were generated in one cycle while none were executed, confirming the recurring proposal-to-action gap named by drive goal 'Me
 - Two consecutive prune_runs removed 0 items, proving the current pruning criteria match nothing and require an active staleness rule instead of passive
 - Conserve-mode budget (stress 1.0, max_tasks 3, max_iterations 1) did not stop a full 5-risk/5-revision simulation from running, meaning metabolism sta
@@ -51,11 +56,6 @@
 - At stress=1.0 the metabolism gate cut the budget to 3 tasks and 1 iteration, meaning high-stress periods demand single-pass execution of only the high
 - ox-alpha latency spanned 43.8s–448.4s and tracked output volume (worst call emitted 17,515 tokens), so wall-clock blowups stem from unbounded generati
 - Concurrent fan-out to free-tier OpenRouter models caused five near-simultaneous 429/502 failures within one second, while a heterogeneous fallback (do
-- Pruning ran but removed zero facts/events despite repeated failures, indicating the pruning trigger threshold is never reached under error-heavy workl
-- Conservative metabolism budget (1 iteration, 3 tasks) is incompatible with multi-model fallback chains that consume 5+ model calls per logical step.
-- Simulation produced 5 revisions but only 3 were applied, revealing a silent drop between verdict and execution that undermines the revision loop.
-- stealth/ox-alpha latency varies 20x (11.8s–244.9s), making fixed timeouts either wasteful or deadline-missing; adaptive p95-based timeouts are mandato
-- OpenRouter rate limits are shared across all free models, causing correlated 429 failures that require provider-level circuit breaking rather than per
 
 ---
 

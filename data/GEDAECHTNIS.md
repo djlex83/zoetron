@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1929 Fakten** · Stand 2026-08-24 11:15 UTC · aktualisiert bei jedem Herzschlag
+**1938 Fakten** · Stand 2026-08-24 11:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 877
-- **swarm_artifact:** 585
+- **dream:** 882
+- **swarm_artifact:** 587
 - **anti_pattern:** 146
-- **last_swarm_goal:** 134
+- **last_swarm_goal:** 135
 - **strategy:** 94
-- **last_swarm_critique:** 74
+- **last_swarm_critique:** 75
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*24.08. 11:32 UTC · Quelle: builder*
+
+[score 5] # ARTEFAKT F-001 · DELIVERABLE-ENTWURF ## „Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten"  ---  ## 0 · Auftrag & Kritiker  | Größe | Wert | |---|---| | Zu schlagen (eigene Bas
+
+### `last_swarm_critique`
+*24.08. 11:32 UTC · Quelle: critic*
+
+score=5; issues=Deliverable ist unvollständig/abgeschnitten: Abschnitt 2.5 bricht mitten in der Modifikator-Tabelle ab; Kalibrierung, Evaluationsprotokoll, Backtesting, Risiken und Implementierungsplan fehlen vollständig.; Kernthese fordert ein 'kalibriertes D
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*24.08. 11:31 UTC · Quelle: builder*
+
+# ARTEFAKT F-001 · DELIVERABLE-ENTWURF ## „Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten"  ---  ## 0 · Auftrag & Kritiker  | Größe | Wert | |---|---| | Zu schlagen (eigene Basislinie) | **5
+
+### `last_swarm_goal`
+*24.08. 11:25 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608241124:5`
+*24.08. 11:24 UTC · Quelle: dream*
+
+Both prune runs removed zero facts and zero events despite stress=1.0, indicating the pruning criteria never trigger and memory grows monotonically under exactly the conditions where cleanup matters most.
+
+### `dream:202608241124:4`
+*24.08. 11:24 UTC · Quelle: dream*
+
+Conserve mode capped tasks at 3 and iterations at 1, yet the system still launched a new swarm and a 754-second/32k-token generation, showing budget enforcement does not gate the most expensive operations.
+
+### `dream:202608241124:3`
+*24.08. 11:24 UTC · Quelle: dream*
+
+The same three fixes (circuit breaker, per-request timeout, swarm-state persistence) were proposed in this cycle and appear again as prior proposals, proving the bottleneck is execution capacity, not idea generation.
+
+### `dream:202608241124:2`
+*24.08. 11:24 UTC · Quelle: dream*
+
+Model latency spans 17s to 754s (a 43x spread), meaning a single unbounded call can consume an entire conserve-mode iteration budget; every model invocation needs a hard timeout.
+
+### `dream:202608241124:1`
+*24.08. 11:24 UTC · Quelle: dream*
+
+429 rate-limit failures arrive in clusters across multiple providers within seconds (ox-alpha and glm-5.2 failed back-to-back), so sequential fallback chains collapse together unless models carry persistent cooldown state.
 
 ### `swarm_artifact:Elo mit Tordifferenz-Multiplikator und Wettbewerb-eigenem K `
 *24.08. 11:08 UTC · Quelle: builder*
