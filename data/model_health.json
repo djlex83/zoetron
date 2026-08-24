@@ -1,5 +1,5 @@
 {
- "stand": 1787554023.924328,
+ "stand": 1787555097.9286485,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -44,14 +44,14 @@
    "kontofehler": 20
   },
   "stealth/ox-alpha": {
-   "laeufe": 141,
+   "laeufe": 145,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 16805.983025074005,
+   "latenz_summe_s": 17330.517964839935,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527412.9466915,
-   "kontofehler": 46
+   "kontofehler": 47
   },
   "z-ai/glm-5.2:free": {
    "laeufe": 0,
@@ -61,7 +61,7 @@
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527023.1975315,
-   "kontofehler": 28
+   "kontofehler": 29
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,

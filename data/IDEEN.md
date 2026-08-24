@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 06:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 07:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,7 +30,7 @@
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
+- Modellfehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Aus vielen Ideen echte Taten machen *(wieder aufgegriffen: 2×)*
 - Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The whisper goal 'bewerte.py besteht' is the only goal with a binary, machine-checkable done-state, while the abstract drive_goals ('Modellfehler vers
+- Skill proposals now duplicate each other (the ~2000-token cap idea appears in at least two independent proposals) while zero have been executed, showi
+- Both prune_runs removed 0 facts and 0 events, meaning the retention policy is effectively inert and memory grows unboundedly.
+- SimulationGate returned verdict='revise' with 5 risks but builder calls continued afterward and only 2 of 4 revisions were applied, proving the gate c
+- Latency scales linearly with output tokens at roughly 30–45 tok/s across every call, so the 224s and 217s spikes were exactly the >8000-token generati
 - Capping model token usage at a default maximum (e.g., 2000) reduces latency, cost, and risk of budget overruns unless a task explicitly overrides it.
 - Early validation of submitted skills—checking signatures and running a smoke prediction—prevents costly failures later in the pipeline.
 - Near‑duplicate skill proposals should be silently merged or dropped after normalizing case and punctuation to avoid redundant work.
@@ -51,11 +56,6 @@
 - The skill pipeline is imbalanced at roughly 60 proposals to 1 trial, so generation vastly outpaces validation and the backlog consists almost entirely
 - Both recorded prune_run executions pruned 0 facts and 0 events, proving the retention rules never fire and memory grows monotonically.
 - Consolidation and planning calls regularly emit 8k-13k output tokens at 200-300 s latency, making oversized generations the single largest consumer of
-- Drive telemetry reports over a third of attempts failing while self-checks run rarely, making acceptance-test-first execution (run bewerte.py before b
-- Both prune runs removed 0 facts and 0 events despite continuous event accumulation, indicating the pruning criteria never fire and memory grows unboun
-- The 'revise' simulation produced 5 revisions but only 3 were applied and none became queued real executions, exactly reproducing the drive-detected id
-- TokenBudgetCap was independently proposed twice in one session with different thresholds, proving that unpersisted proposals get regenerated instead o
-- Output token count dominates latency: every call emitting over 4000 output tokens took 98-297s, so capping generation at ~2000 tokens would cut worst-
 
 ---
 

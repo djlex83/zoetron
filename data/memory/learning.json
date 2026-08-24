@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 06:47:55",
+ "stand": "2026-08-24 07:05:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,13 +15,13 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-und-simulationen-besser-nutzen.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "fehler-im-modell-vermeiden.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "fehler-im-modell-vermeiden.py",
+   "tool": "träume-und-simulationen-besser-nutzen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -87,12 +87,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.804,
+ "haende_quote": 0.8,
  "simulationen_angewandt": 90,
  "swarm_scores": {
-  "n": 44,
+  "n": 43,
   "best": 8.0,
-  "schnitt": 3.98
+  "schnitt": 3.91
  },
  "score_nach_ziel_typ": {
   "analyse": {

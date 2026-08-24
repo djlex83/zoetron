@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1803 Fakten** · Stand 2026-08-24 06:48 UTC · aktualisiert bei jedem Herzschlag
+**1813 Fakten** · Stand 2026-08-24 07:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 802
-- **swarm_artifact:** 563
+- **dream:** 807
+- **swarm_artifact:** 566
 - **anti_pattern:** 140
-- **last_swarm_goal:** 119
+- **last_swarm_goal:** 120
 - **strategy:** 91
-- **last_swarm_critique:** 69
+- **last_swarm_critique:** 70
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*24.08. 07:01 UTC · Quelle: critic*
+
+score=3; issues=Ziel nicht erreicht/belegt: Es gibt keinen einzigen Nachweis, dass eine Einreichung erzeugt und gegen bewerte.py ausgeführt wurde – das Kern-DoD ('besteht bewerte.py') bleibt unbelegt.; Kettenbruch im Workflow: Recon-Report ist vollständig mit 
+
+### `swarm_artifact:Minimalmodell: EIN Scaffold-Change, Form {home, draw, away},`
+*24.08. 07:00 UTC · Quelle: builder*
+
+# Minimalmodell: Poisson mit Heimvorteil (ein Scaffold-Change)  ```python import math  def poisson(lam, k):     return math.exp(-lam) * lam ** k / math.factorial(k)  def predict(lh, la, mx=10):     ph
+
+### `swarm_artifact:Erster Lauf VOR eigenem Code: bewerte.py sofort ausfuehren`
+*24.08. 06:59 UTC · Quelle: builder*
+
+# ARTIFAKT: Erster Lauf von `bewerte.py` – Beweis vor Code (Run-driven Development)  **Task:** `bewerte.py` sofort ausführen, bevor ein einziges eigenes Modell existiert. Exit-Code und Stderr sind die
+
+### `swarm_artifact:Rekon: bewerte.py, Scaffold und Daten lokaliseren (nur lesen`
+*24.08. 06:57 UTC · Quelle: builder*
+
+# RECON-REPORT: `bewerte.py` & Scaffold lokalisieren (read-only)  **Task:** Rekon – Repo ohne Pfad-Annahmen scannen, Evaluator + Gerüst finden, nichts verändern. **Strategie:** systematic-exploration-
+
+### `last_swarm_goal`
+*24.08. 06:50 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240649:5`
+*24.08. 06:49 UTC · Quelle: dream*
+
+The whisper goal 'bewerte.py besteht' is the only goal with a binary, machine-checkable done-state, while the abstract drive_goals ('Modellfehler verstehen', 'Träume zusammenbringen') have no measurable completion condition.
+
+### `dream:202608240649:4`
+*24.08. 06:49 UTC · Quelle: dream*
+
+Skill proposals now duplicate each other (the ~2000-token cap idea appears in at least two independent proposals) while zero have been executed, showing proposal generation has outrun testing and deduplication.
+
+### `dream:202608240649:3`
+*24.08. 06:49 UTC · Quelle: dream*
+
+Both prune_runs removed 0 facts and 0 events, meaning the retention policy is effectively inert and memory grows unboundedly.
+
+### `dream:202608240649:2`
+*24.08. 06:49 UTC · Quelle: dream*
+
+SimulationGate returned verdict='revise' with 5 risks but builder calls continued afterward and only 2 of 4 revisions were applied, proving the gate currently advises instead of blocks.
+
+### `dream:202608240649:1`
+*24.08. 06:49 UTC · Quelle: dream*
+
+Latency scales linearly with output tokens at roughly 30–45 tok/s across every call, so the 224s and 217s spikes were exactly the >8000-token generations and the only reliable latency lever is capping max_output_tokens.
 
 ### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
 *24.08. 06:46 UTC · Quelle: evolution*
