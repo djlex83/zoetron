@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1742 Fakten** · Stand 2026-08-24 05:00 UTC · aktualisiert bei jedem Herzschlag
+**1752 Fakten** · Stand 2026-08-24 05:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 772
-- **swarm_artifact:** 542
+- **dream:** 777
+- **swarm_artifact:** 546
 - **anti_pattern:** 138
-- **last_swarm_goal:** 113
+- **last_swarm_goal:** 114
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Local Gate: submission gegen bewerte.py antesten`
+*24.08. 05:17 UTC · Quelle: builder*
+
+# Artefakt zu 'Local Gate: submission gegen bewerte.py antesten'  ```python """Local Gate – Einreichung gegen bewerte.py antesten (Versuch 1/3).  Strategie: Single-File Atomic Operations with Zero Dep
+
+### `swarm_artifact:Minimalmodell bauen: EINE Aenderung am Geruest, korrekte For`
+*24.08. 05:15 UTC · Quelle: builder*
+
+# Artefakt zu 'Minimalmodell bauen: EINE Aenderung am Geruest, korrekte Form garantiert'  ```python """Minimalmodell – Fussball-Einreichung (Versuch 1/3).  Strategie: Single-File Atomic Operations wit
+
+### `swarm_artifact:Contract extrahieren: Was genau prueft bewerte.py`
+*24.08. 05:13 UTC · Quelle: builder*
+
+```python """Contract-Extractor: leitet den exakten Pruefvertrag des Evaluators (bewerte.py) aus dessen Quelle ab und schreibt eval_contract.json.  Maschinenlesbare Felder (SIMULATION-FIX):   columns.
+
+### `swarm_artifact:Recon: bewerte.py, Geruest und Daten lokalisieren`
+*24.08. 05:10 UTC · Quelle: builder*
+
+# Artefakt: Repo-Recon – Evaluator, Gerüst & Fußball-Daten (strukturelle Aufnahme)  ```python """Recon: bewerte.py, Geruest/Scaffold und Fussball-Datenfiles lokalisieren. Strukturelle Inventur nur - k
+
+### `last_swarm_goal`
+*24.08. 05:02 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240502:5`
+*24.08. 05:02 UTC · Quelle: dream*
+
+The prune run removed 0 facts and 0 events, meaning current pruning criteria are too conservative and memory will grow unchecked.
+
+### `dream:202608240502:4`
+*24.08. 05:02 UTC · Quelle: dream*
+
+Successful model calls routinely take 90-210 s and emit up to ~6000 output tokens, so uncapped generations directly threaten the tight 2-iteration / 5-task budget.
+
+### `dream:202608240502:3`
+*24.08. 05:02 UTC · Quelle: dream*
+
+Pre-execution simulation demonstrably paid off: it flagged 5 risks on the football-submission goal and 2 revisions were applied before spending any real compute.
+
+### `dream:202608240502:2`
+*24.08. 05:02 UTC · Quelle: dream*
+
+Skill proposals accumulate much faster than they get tested (many proposed, almost none executed), so idea generation currently produces backlog debt rather than capability.
+
+### `dream:202608240502:1`
+*24.08. 05:02 UTC · Quelle: dream*
+
+Rate limiting, not reasoning errors, was the dominant failure cause this cycle: two different models (stealth/ox-alpha, z-ai/glm-5.2:free) returned 429 within the same second, so bursts of near-parallel OpenRouter calls reliably trigger throttling.
 
 ### `swarm_artifact:Minimal-Baseline-Modell bauen (EINE Aenderung am Geruest)`
 *24.08. 04:56 UTC · Quelle: builder*
