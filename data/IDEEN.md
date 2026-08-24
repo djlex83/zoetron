@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 07:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 07:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model calls reached 180s latency without timeout enforcement, confirming that default max_tokens and wall-clock timeouts are not being applied at the 
+- Simulation demanded revisions (verdict='revise') but the model layer could not deliver due to cascading failures, creating a revision loop that cannot
+- Free-tier models exhibited correlated 429 rate limits, proving that per-model concurrency limits are insufficient without provider-level semaphores.
+- The system launched a complex swarm while in 'conserve' state with stress=1.0, ignoring that high stress should gate new work, not just limit existing
+- Multiple model failures (502/429) occurred simultaneously across different providers sharing OpenRouter infrastructure, revealing a single-point-of-fa
 - Metabolism stress=1.0 with 'conserve' state forces max 3 tasks/iteration, proving resource limits directly constrain throughput.
 - 60 unimplemented skill proposals reveal a bottleneck in proposal-to-execution pipelines, stalling system improvement.
 - Calibration error of 1 (predicted 4, actual 3) suggests model confidence is misaligned with outcomes, requiring recalibration loops.
@@ -51,11 +56,6 @@
 - The simulation issued verdict 'revise' with 5 risks and 4 revisions but only 1 revision was applied, exposing a plan-to-execution gap that needs expli
 - The 403 Forbidden on thinkingmachines/inkling-small was retried until the 3-failure lockout even though auth errors are deterministic, so classifying 
 - OpenRouter returned 429 Too Many Requests across five different models within one second, proving rate limits are enforced per provider endpoint rathe
-- Dream consolidation stores events in isolation without embedding-based associative linking, missing cross-episode patterns that could seed new skills.
-- Model failures are not categorized by failure class (schema, signature, logic, hallucination), preventing systematic weekly fixes on the most frequent
-- Evaluator-gated goals like 'pass bewerte.py' are attempted without first synthesizing the acceptance test, leading to wasted iterations on artifacts t
-- Pruning runs consistently evict zero items because retention thresholds never adapt after consecutive no-op cycles, letting decayed low-value events a
-- Simulation verdicts of 'revise' rarely translate into queued real-execution tasks, causing feedback loops to stall without an automatic bridge.
 
 ---
 

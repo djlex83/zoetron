@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1849 Fakten** · Stand 2026-08-24 07:44 UTC · aktualisiert bei jedem Herzschlag
+**1862 Fakten** · Stand 2026-08-24 07:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 822
-- **swarm_artifact:** 575
-- **anti_pattern:** 144
-- **last_swarm_goal:** 123
-- **strategy:** 93
-- **last_swarm_critique:** 73
+- **dream:** 827
+- **swarm_artifact:** 578
+- **anti_pattern:** 146
+- **last_swarm_goal:** 124
+- **strategy:** 94
+- **last_swarm_critique:** 74
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*24.08. 07:57 UTC · Quelle: evolution*
+
+Hierarchical Bayesian Contextual Modeling - Hierarchical Bayesian modeling with contextual modifiers provides the best balance of elegance, feasibility, and impact. It directly targets match outcome prediction with a princip
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :2`
+*24.08. 07:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 4, 5]): Adversarial Feature Distillation from Public Narratives - Scrape 50k+ match previews/reports from 3 languages (DE/EN/ES) via RSS/API. Fine-tune a multilingual BERT to extract implicit expert signals: phrasing like 'cr
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :0`
+*24.08. 07:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 7]): Graph-Based Network Propagation - Model the league as a dynamic weighted directed graph where nodes are teams and edges are matches with weights = goal difference * time decay. Compute eigenvector centrality (PageRank
+
+### `last_swarm_critique`
+*24.08. 07:56 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Train and validate improved model (Gradient Boosting)`
+*24.08. 07:56 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50", "description": "Find Python files in repository"}} {"tool": "bash", "args": {"command": "ls -la", "description": "List re
+
+### `swarm_artifact:Engineer additional predictive features beyond Elo`
+*24.08. 07:56 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50", "description": "Find Python files in repository"}} {"tool": "bash", "args": {"command": "ls -la", "description": "List re
+
+### `swarm_artifact:Analyze current baseline implementation and data structure`
+*24.08. 07:56 UTC · Quelle: builder*
+
+{"tool": "bash", "args": {"command": "find . -type f -name '*.py' | head -50", "description": "Find Python files in repository"}} {"tool": "bash", "args": {"command": "ls -la", "description": "List re
+
+### `last_swarm_goal`
+*24.08. 07:53 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608240753:5`
+*24.08. 07:53 UTC · Quelle: dream*
+
+Model calls reached 180s latency without timeout enforcement, confirming that default max_tokens and wall-clock timeouts are not being applied at the call site.
+
+### `dream:202608240753:4`
+*24.08. 07:53 UTC · Quelle: dream*
+
+Simulation demanded revisions (verdict='revise') but the model layer could not deliver due to cascading failures, creating a revision loop that cannot complete.
+
+### `dream:202608240753:3`
+*24.08. 07:53 UTC · Quelle: dream*
+
+Free-tier models exhibited correlated 429 rate limits, proving that per-model concurrency limits are insufficient without provider-level semaphores.
+
+### `dream:202608240753:2`
+*24.08. 07:53 UTC · Quelle: dream*
+
+The system launched a complex swarm while in 'conserve' state with stress=1.0, ignoring that high stress should gate new work, not just limit existing work.
+
+### `dream:202608240753:1`
+*24.08. 07:53 UTC · Quelle: dream*
+
+Multiple model failures (502/429) occurred simultaneously across different providers sharing OpenRouter infrastructure, revealing a single-point-of-failure in the provider layer.
 
 ### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
 *24.08. 07:43 UTC · Quelle: evolution*
