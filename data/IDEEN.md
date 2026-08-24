@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 06:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 06:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Capping model token usage at a default maximum (e.g., 2000) reduces latency, cost, and risk of budget overruns unless a task explicitly overrides it.
+- Early validation of submitted skills—checking signatures and running a smoke prediction—prevents costly failures later in the pipeline.
+- Near‑duplicate skill proposals should be silently merged or dropped after normalizing case and punctuation to avoid redundant work.
+- Unbounded proposal backlog causes stagnation; each cycle must either implement a single queued proposal or reject it with justification, and limit new
+- Repeated 429 errors on a model should trigger a temporary exclusion from the fallback chain with exponential backoff.
 - Two consecutive cycles independently proposed near-identical backlog-gating skills, showing new proposals are generated without checking the existing 
 - About one in four model attempts returned a wrong result, indicating a systematic failure mode that should be classified (format vs. signature vs. log
 - The skill pipeline is imbalanced at roughly 60 proposals to 1 trial, so generation vastly outpaces validation and the backlog consists almost entirely
@@ -51,11 +56,6 @@
 - The 'revise' simulation produced 5 revisions but only 3 were applied and none became queued real executions, exactly reproducing the drive-detected id
 - TokenBudgetCap was independently proposed twice in one session with different thresholds, proving that unpersisted proposals get regenerated instead o
 - Output token count dominates latency: every call emitting over 4000 output tokens took 98-297s, so capping generation at ~2000 tokens would cut worst-
-- A persistent proposal-to-action gap exists: all five skill proposals from the previous dream cycle remain untested while new ones accumulate, so only 
-- Passive memory pruning is stalling: prune runs report 0 facts and 0 events removed while the event log keeps growing, so content-hash deduplication an
-- The simulation gate has a risk-count blind spot: the football swarm proceeded on verdict='go' despite risks=5 and 3 revision rounds, admitting a high-
-- First-failure failover works: after two consecutive 429s (stealth/ox-alpha, then z-ai/glm-5.2:free), switching to nvidia/nemotron-3-ultra-550b-a55b:fr
-- Uncapped output length is the dominant failure driver: stealth/ox-alpha calls routinely exceed 100s (up to 546.3s) and one emitted 22,983 output token
 
 ---
 

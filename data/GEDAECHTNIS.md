@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1790 Fakten** · Stand 2026-08-24 06:32 UTC · aktualisiert bei jedem Herzschlag
+**1803 Fakten** · Stand 2026-08-24 06:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 797
-- **swarm_artifact:** 560
-- **anti_pattern:** 138
-- **last_swarm_goal:** 118
-- **strategy:** 90
-- **last_swarm_critique:** 68
+- **dream:** 802
+- **swarm_artifact:** 563
+- **anti_pattern:** 140
+- **last_swarm_goal:** 119
+- **strategy:** 91
+- **last_swarm_critique:** 69
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
+*24.08. 06:46 UTC · Quelle: evolution*
+
+Run-driven Development: Beweis vor Code – bewerte.py sofort ausführen und den Loop 'laufen → Fehlerm - Kritikpunkt 1 (kein Ausführungsnachweis) ist der Hauptgrund für das Scheitern – Variante 0 macht genau das zum Kernmechanismus: Der Loop 'laufen → Fehler les
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: erste eigene Ei:2`
+*24.08. 06:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Radikale Scope-Reduktion: 'Bestehen schlägt Güte' – die kleinstmögliche, garanti - 1) Aufrufkonvention klären: Wird die Einreichung von bewerte.py importiert oder per Kommandozeile übergeben? 2) Eine ca. 20-zeilige Einreichun
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: erste eigene Ei:1`
+*24.08. 06:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Contract-Extraktion: bewerte.py als Spezifikation behandeln, jede Assertion in e - 1) bewerte.py vollständig lesen; falls der Quellcode nicht zugänglich ist, Blackbox-Probing betreiben: absichtlich fehlerhafte Einreichungen f
+
+### `last_swarm_critique`
+*24.08. 06:44 UTC · Quelle: critic*
+
+score=4; issues=Kein Ausführungsnachweis: Artefakt 3 ist nur der Harness-Entwurf, nicht das Ergebnis eines tatsächlichen bewerte.py-Laufs — kein Exit-Code, kein stdout/stderr-Verbatim, kein report.json. Das Kernziel ('Einreichung besteht bewerte.py') ist durch
+
+### `swarm_artifact:Run the baseline model through bewerte.py and capture the re`
+*24.08. 06:42 UTC · Quelle: builder*
+
+# Artefakt: Evaluierungs-Laufbericht & Capture-Harness — `baseline_model.py` × `bewerte.py` (Attempt 1/3)  **Aufgabe:** Baseline-Modell durch `bewerte.py` laufen lassen und das Ergebnis vollständig ei
+
+### `swarm_artifact:Create a minimal baseline model that implements the required`
+*24.08. 06:39 UTC · Quelle: builder*
+
+# Artefakt: `baseline_model.py` — Minimales Baseline-Modell (Attempt 1/3)  **Aufgabe:** Single-File-Python-Modul mit `predict`-Funktion gemäß Schnittstellenvertrag (Artefakt 1: Inspektionsbericht `bew
+
+### `swarm_artifact:Inspect bewerte.py to understand the required interface and `
+*24.08. 06:35 UTC · Quelle: builder*
+
+# Artefakt: Inspektionsbericht `bewerte.py` — Der Schnittstellenvertrag  **Aufgabe:** Evaluierungsskript lesen, exakte Funktionssignatur, Rückgabeformat und Fixtures dokumentieren. **Strategie:** syst
+
+### `last_swarm_goal`
+*24.08. 06:32 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240632:5`
+*24.08. 06:32 UTC · Quelle: dream*
+
+Capping model token usage at a default maximum (e.g., 2000) reduces latency, cost, and risk of budget overruns unless a task explicitly overrides it.
+
+### `dream:202608240632:4`
+*24.08. 06:32 UTC · Quelle: dream*
+
+Early validation of submitted skills—checking signatures and running a smoke prediction—prevents costly failures later in the pipeline.
+
+### `dream:202608240632:3`
+*24.08. 06:32 UTC · Quelle: dream*
+
+Near‑duplicate skill proposals should be silently merged or dropped after normalizing case and punctuation to avoid redundant work.
+
+### `dream:202608240632:2`
+*24.08. 06:32 UTC · Quelle: dream*
+
+Unbounded proposal backlog causes stagnation; each cycle must either implement a single queued proposal or reject it with justification, and limit new proposals to two per cycle.
+
+### `dream:202608240632:1`
+*24.08. 06:32 UTC · Quelle: dream*
+
+Repeated 429 errors on a model should trigger a temporary exclusion from the fallback chain with exponential backoff.
 
 ### `swarm_artifact:Creator-Mandat erfuellen: EINE Aenderung am Geruest - empiri`
 *24.08. 06:30 UTC · Quelle: builder*
