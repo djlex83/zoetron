@@ -5,11 +5,13 @@
 Der Daemon läuft als Hintergrundprozess auf dem Hermes-Host:
 
 ```
-bash scripts/heartbeat_daemon.sh   # alle 5 Min: REFLEX→PRUNE→DREAM→DRIVE→ACT→TG→GRAPH→IDEEN→RETRO→WILLE→GENOM→LEHREN→SELBSTLERNEN→Push
+bash scripts/heartbeat_daemon.sh   # alle 15 Min: REFLEX→PRUNE→DREAM→DRIVE→ACT→TG→GRAPH→IDEEN→RETRO→WILLE→GENOM→LEHREN→SELBSTLERNEN→Push
 ```
 
-**Takt:** 5 Minuten (~288 Zyklen/Tag). Telegram-Berichte nur jeden
-3. Schlag (~15 Min) – schnelles Denken, kein Spam.
+**Takt:** 15 Minuten (~96 Zyklen/Tag). Telegram-Berichte einmal je Schlag
+(~15 Min). Gemessen am 24.08.2026: 10,3 LLM-Aufrufe je Herzschlag bei 33,5 s
+Antwortzeit – ein 5-Minuten-Takt war nie einhaltbar und sprengte mit ~2.965
+Aufrufen/Tag das freie Kontingent von 1.000 um das Dreifache.
 
 Log: `data/heartbeat.log`
 

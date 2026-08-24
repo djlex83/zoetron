@@ -6,7 +6,7 @@ hat er außerdem: **Instinkte (Genom), Bedeutungs-Gedächtnis (semantisch),
 einen eigenen Willen, einen Lehrer-Kanal für seinen Erschaffer,
 statistisches Selbstlernen ohne LLM-Token und ein öffentliches
 Ideen-Board seiner eigenen Erfindungen.** Sein Herz schlägt alle
-5 Minuten (~288×/Tag). Ziel des Projekts: die fehlenden Organe rund um
+15 Minuten (~96×/Tag). Ziel des Projekts: die fehlenden Organe rund um
 ein LLM erforschen – Schritt für Schritt, mit ehrlichem Scoring.
 
 | Seite | Inhalt |
