@@ -5,13 +5,17 @@
 Der Daemon läuft als Hintergrundprozess auf dem Hermes-Host:
 
 ```
-bash scripts/heartbeat_daemon.sh   # alle 15 Min: REFLEX→PRUNE→DREAM→DRIVE→ACT→TG→GRAPH→IDEEN→RETRO→WILLE→GENOM→LEHREN→SELBSTLERNEN→Push
+bash scripts/heartbeat_daemon.sh   # alle 40 Min: REFLEX→PRUNE→DREAM→DRIVE→ACT→TG→GRAPH→IDEEN→RETRO→WILLE→GENOM→LEHREN→SELBSTLERNEN→Push
 ```
 
-**Takt:** 15 Minuten (~96 Zyklen/Tag). Telegram-Berichte einmal je Schlag
-(~15 Min). Gemessen am 24.08.2026: 10,3 LLM-Aufrufe je Herzschlag bei 33,5 s
-Antwortzeit – ein 5-Minuten-Takt war nie einhaltbar und sprengte mit ~2.965
-Aufrufen/Tag das freie Kontingent von 1.000 um das Dreifache.
+**Takt:** 40 Minuten (~36 Zyklen/Tag), Telegram einmal je Schlag.
+
+Die Zahl kommt aus Messung, nicht aus Gefühl. Ein Schwarm-Zyklus braucht rund
+zehn Modellaufrufe; das bevorzugte Modell antwortet in ~124 s. Bei einer
+ACT-Zeitgrenze von 900 s liefen **26 von 29 Läufen in den Timeout** – in acht
+Stunden entstanden drei bewertete Ergebnisse statt der sonst üblichen fünfzig.
+Jetzt 1.800 s für ACT: weniger Zyklen, aber fertige. Rund 360 Modellaufrufe
+pro Tag liegen zudem weit unter dem freien Kontingent von 1.000.
 
 Log: `data/heartbeat.log`
 

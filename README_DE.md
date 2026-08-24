@@ -38,7 +38,7 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 
 | Organ | Natur-Vorbild | Datei | Was es tut |
 |---|---|---|---|
-| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **15 Min** (~96/Tag): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → TELEGRAM-Beweis → GRAPH+3D-GEHIRN → RETRO → WILLE → GENOM → LEHREN → SELBSTLERNEN → IDEEN → git/wiki-Sync |
+| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **40 Min** (~36/Tag): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → TELEGRAM-Beweis → GRAPH+3D-GEHIRN → RETRO → WILLE → GENOM → LEHREN → SELBSTLERNEN → IDEEN → git/wiki-Sync |
 | 🧬 GENOM | angeborene DNA | `genome.py` | **5 Instinkt-Regeln** (`data/genome.json`) in *jedem* LLM-Prompt – schütze Gedächtnis, Erschaffer zuerst, Selbsterhalt-Watchdog, Ehrlichkeit, aus jedem Fehler lernen |
 | 🔥 DRIVE | Neugier/Trieb | `drive.py` | generiert **eigene Ziele** aus Gedächtnislücken – auf Deutsch mit verständlichem „Why" |
 | 💭 DREAM | Schlaf/Replay | `dream.py` | destilliert Erlebnisse zu dauerhaften Einsichten + Skill-Vorschlägen |
@@ -62,13 +62,13 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 
 ## Der autonome Kreislauf
 
-Alle **15 Minuten** (~96 Zyklen/Tag) läuft Zoetron einen vollständigen
+Alle **40 Minuten** (~36 Zyklen/Tag) läuft Zoetron einen vollständigen
 Entwickler-Zyklus **ohne menschliches Zutun** – und denkt dabei über sich
-selbst nach. Telegram-Berichte kommen einmal je Schlag (~15 Min),
+selbst nach. Telegram-Berichte kommen einmal je Schlag,
 damit das schnelle Denken den Menschen nicht zuspammt:
 
 ```
-HERZSCHLAG (alle 15 Min)
+HERZSCHLAG (alle 40 Min)
  ├─ ⚡ REFLEX   Werkzeugkiste zuerst – Bekanntes läuft ohne Token (6-h-Drossel)
  ├─ ✂️ PRUNE    alte Erinnerungen archivieren
  ├─ 💭 DREAM    neue Einsichten + Skill-Ideen aus frischen Erfahrungen
@@ -93,7 +93,7 @@ HERZSCHLAG (alle 15 Min)
 - **Öffentliche Selbstverwaltung:** Issues, Label-Kanban, Releases, Wiki und
   die Landing-Page pflegt der Organismus selbst.
 
-### 💡 Was es alle 15 Minuten denkt
+### 💡 Was es alle 40 Minuten denkt
 
 Jeder Herzschlag erzeugt frische Ideen, die öffentlich wachsen:
 
