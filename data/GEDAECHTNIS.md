@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1533 Fakten** · Stand 2026-08-24 00:32 UTC · aktualisiert bei jedem Herzschlag
+**1546 Fakten** · Stand 2026-08-24 00:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 667
-- **swarm_artifact:** 487
-- **anti_pattern:** 124
-- **last_swarm_goal:** 94
-- **strategy:** 83
-- **last_swarm_critique:** 59
+- **dream:** 672
+- **swarm_artifact:** 490
+- **anti_pattern:** 126
+- **last_swarm_goal:** 95
+- **strategy:** 84
+- **last_swarm_critique:** 60
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,71 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:hermes_brücke_bauen__sprechkanal_zum_boten_agenten`
+*24.08. 00:38 UTC · Quelle: evolution*
+
+Contract-First Protocol Buffers + gRPC/ConnectRPC with Interceptor Chains - Variant 0 (Contract-First Protobuf + gRPC/ConnectRPC) directly and comprehensively resolves all five critic issues with industry-standard, battle-tested tooling: (1) gRPC status co
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:2`
+*24.08. 00:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Actor Model with Typed Mailboxes + Supervision Trees (Rust/Actix or Erlang/Elixi - Implement the bridge as a hierarchy of typed actors: RegistrarActor, ChannelRouterActor, MessageDispatcherActor, AuthValidatorActor, e
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:1`
+*24.08. 00:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Capability-Based Authorization (UCAN/Macaroons) + Event-Sourced Command Log - Model the bridge as an event-sourced system: agents submit Commands (signed UCAN delegations) to an append-only log (NATS JetStream / Kafka
+
+### `last_swarm_critique`
+*24.08. 00:38 UTC · Quelle: critic*
+
+score=4; issues=Spec: No standardized error code taxonomy for response.error.code; Spec: No schema validation mechanism (JSON Schema/Protobuf) defined; Spec: No message size limits or flow control/backpressure signaling; Spec: No authentication/authorization f
+
+### `swarm_artifact:Implement message router and handler registry`
+*24.08. 00:37 UTC · Quelle: builder*
+
+# Hermes Bridge Message Router and Handler Registry  ```python # src/hermes_bridge/router.py """ Hermes Bridge Message Router and Handler Registry.  Implements the routing layer that dispatches incomi
+
+### `swarm_artifact:Implement Hermes bridge client with async transport`
+*24.08. 00:36 UTC · Quelle: builder*
+
+# Hermes Bridge Client Implementation  ```python # src/hermes_bridge/client.py """ Hermes Bridge Client - Async transport layer for Hermes agent communication.  Supports stdio, HTTP, and WebSocket tra
+
+### `swarm_artifact:Define Hermes communication protocol and message schemas`
+*24.08. 00:34 UTC · Quelle: builder*
+
+# Hermes Communication Protocol Specification  **Version:** 1.0.0   **Status:** Draft   **Scope:** Contract between Forge Agent and Hermes Messenger Agent  ---  ## 1. Overview  The Hermes Bridge enabl
+
+### `last_swarm_goal`
+*24.08. 00:33 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:202608240033:5`
+*24.08. 00:33 UTC · Quelle: dream*
+
+The Hermes-bridge swarm goal remains blocked because every planner invocation hits the same rate-limited model pool.
+
+### `dream:202608240033:4`
+*24.08. 00:33 UTC · Quelle: dream*
+
+Pruning runs remove zero facts/events, indicating the retention policy is not clearing stale model-failure records that clutter context.
+
+### `dream:202608240033:3`
+*24.08. 00:33 UTC · Quelle: dream*
+
+Repeated immediate retries of the same failing model sequence without backoff wastes the conserve-mode budget (max_tasks: 3, max_iterations: 1) and deepens stress.
+
+### `dream:202608240033:2`
+*24.08. 00:33 UTC · Quelle: dream*
+
+The konto_gesperrt signal (7 errors, unlock at timestamp 1787529600) confirms account-wide throttling rather than per-model limits.
+
+### `dream:202608240033:1`
+*24.08. 00:33 UTC · Quelle: dream*
+
+All free-tier OpenRouter models share a single account-level rate limit that triggers simultaneous 429 errors across every model when exhausted.
 
 ### `swarm_artifact:Define Hermes Communication Protocol`
 *24.08. 00:27 UTC · Quelle: builder*

@@ -1,0 +1,77 @@
+<title>Zoetron · Fußball-Lernkurve</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1a1a19; --schwach:#8a8a85; --linie:#c8613a;
+        --gut:#3f8f5f; --latte:#8a8a85; --bm:#3a6ea5; --rand:#e5e4e0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#1a1a19; --fg:#eeeeec; --schwach:#8a8a85; --rand:#2f2f2d;
+  --linie:#e08a5f; --gut:#6fbf8f; --bm:#7aa8d8; } }
+:root[data-theme="dark"] { --bg:#1a1a19; --fg:#eeeeec; --schwach:#8a8a85;
+  --rand:#2f2f2d; --linie:#e08a5f; --gut:#6fbf8f; --bm:#7aa8d8; }
+* { box-sizing:border-box; }
+body { background:var(--bg); color:var(--fg); margin:0; padding:2.5rem 1.5rem;
+  font:16px/1.6 ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif; }
+main { max-width:960px; margin:0 auto; }
+h1 { font-size:1.6rem; margin:0 0 .3rem; font-weight:600; }
+.unter { color:var(--schwach); margin:0 0 2rem; }
+.karten { display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:2rem; }
+.karte { flex:1 1 170px; border:1px solid var(--rand); border-radius:10px;
+  padding:1rem 1.1rem; }
+.karte .w { font-size:1.7rem; font-weight:600; font-variant-numeric:tabular-nums; }
+.karte .l { color:var(--schwach); font-size:.82rem; text-transform:uppercase;
+  letter-spacing:.04em; }
+.bild { overflow-x:auto; border:1px solid var(--rand); border-radius:10px;
+  padding:1rem .5rem; margin-bottom:2rem; }
+svg { display:block; min-width:900px; }
+table { width:100%; border-collapse:collapse; font-size:.92rem; }
+th,td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--rand); }
+th { color:var(--schwach); font-weight:500; font-size:.8rem;
+  text-transform:uppercase; letter-spacing:.04em; }
+.z { text-align:right; font-variant-numeric:tabular-nums; }
+.k { color:var(--schwach); }
+.gut { color:var(--gut); font-weight:600; }
+footer { color:var(--schwach); font-size:.85rem; margin-top:2rem;
+  border-top:1px solid var(--rand); padding-top:1rem; }
+</style>
+<main>
+<h1>Fußball-Lernkurve</h1>
+<p class="unter">Wird Zoetron besser? Die einzige Frage, die hier zählt —
+beantwortet vom Spielergebnis, nicht von einem Sprachmodell.</p>
+
+<div class="karten">
+  <div class="karte"><div class="w">2</div><div class="l">Versuche</div></div>
+  <div class="karte"><div class="w">50.18 %</div><div class="l">bester Treffer</div></div>
+  <div class="karte"><div class="w">+1.32 pp</div><div class="l">zum Buchmacher</div></div>
+  <div class="karte"><div class="w">13.143</div><div class="l">Spiele versiegelt</div></div>
+</div>
+
+<div class="bild"><svg viewBox="0 0 900 360" width="100%" height="360"
+  xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif,system-ui,sans-serif">
+<line x1="40" y1="91.5" x2="870" y2="91.5" stroke="var(--bm)" stroke-width="1.5" stroke-dasharray="6 4"/><text x="874" y="95.5" fill="var(--bm)" font-size="12">Buchmacher 51.5 %</text>
+<line x1="40" y1="125.5" x2="870" y2="125.5" stroke="var(--latte)" stroke-width="1.5" stroke-dasharray="6 4"/><text x="874" y="129.5" fill="var(--latte)" font-size="12">Basislinie 50.2 %</text>
+<line x1="40" y1="290.3" x2="870" y2="290.3" stroke="var(--schwach)" stroke-width="1.5" stroke-dasharray="6 4"/><text x="874" y="294.3" fill="var(--schwach)" font-size="12">immer Heim 43.9 %</text>
+<polyline points="40.0,126.1 870.0,126.1" fill="none" stroke="var(--linie)" stroke-width="2.5"/>
+<circle cx="40.0" cy="126.1" r="6" fill="var(--linie)"><title>basislinie.py — 50.18 % · Log-Loss 1.0073</title></circle>
+<circle cx="870.0" cy="126.1" r="6" fill="var(--linie)"><title>basislinie.py — 50.18 % · Log-Loss 1.0073</title></circle>
+<text x="34" y="291.7" text-anchor="end" fill="var(--schwach)" font-size="11">44 %</text>
+<text x="34" y="239.4" text-anchor="end" fill="var(--schwach)" font-size="11">46 %</text>
+<text x="34" y="187.1" text-anchor="end" fill="var(--schwach)" font-size="11">48 %</text>
+<text x="34" y="134.8" text-anchor="end" fill="var(--schwach)" font-size="11">50 %</text>
+<text x="34" y="82.5" text-anchor="end" fill="var(--schwach)" font-size="11">52 %</text>
+<text x="34" y="30.2" text-anchor="end" fill="var(--schwach)" font-size="11">54 %</text>
+</svg></div>
+
+<table>
+<thead><tr><th>#</th><th>Einreichung</th><th class="z">Treffer</th>
+<th class="z">Log-Loss</th><th class="z">zur Basislinie</th><th>Notiz</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>basislinie.py</td><td class='z'>50.18 %</td><td class='z'>1.0073</td><td class='z '>-0.02 pp</td><td class='k'></td></tr>
+<tr><td>2</td><td>basislinie.py</td><td class='z'>50.18 %</td><td class='z'>1.0073</td><td class='z '>-0.02 pp</td><td class='k'></td></tr>
+</tbody></table>
+
+<footer>
+Geprüft auf 13.445 Spielen (Juli 2022 – Juni 2024), ohne Buchmacherquoten.
+Ein Vorsprung unter 0,6 Prozentpunkten liegt im Rauschen.
+Ein dritter Satz aus 13.143 Spielen (2024–2026) ist versiegelt und liegt nicht
+auf dem Rechner des Organismus.<br>Stand: 24.08.2026 00:35 UTC
+</footer>
+</main>

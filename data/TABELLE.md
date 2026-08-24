@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1319 Neuronen · 20046 bewertete Synapsen
+Stand: 1330 Neuronen · 20384 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,20 +11,20 @@ Stand: 1319 Neuronen · 20046 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 119 | 0.26 |
-| 2 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 106 | 0.27 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 119 | 0.23 |
-| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 119 | 0.23 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 119 | 0.23 |
-| 6 | 💭 | Model latency varies by 27× (13s–355s) without automatic failove… | 100 | 0.27 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 119 | 0.23 |
-| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 119 | 0.22 |
-| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 119 | 0.22 |
-| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 118 | 0.23 |
-| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 119 | 0.22 |
-| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 119 | 0.22 |
-| 13 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 119 | 0.22 |
-| 14 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 119 | 0.22 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Ergebnisvalidierung und “ (Note 5/1… | 119 | 0.22 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 121 | 0.23 |
+| 3 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 106 | 0.27 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 121 | 0.23 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 121 | 0.23 |
+| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 121 | 0.23 |
+| 7 | 💭 | Model latency varies by 27× (13s–355s) without automatic failove… | 101 | 0.27 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 121 | 0.22 |
+| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 121 | 0.22 |
+| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Modell-Gesundheitsregist“ (Note 3/1… | 120 | 0.23 |
+| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 121 | 0.22 |
+| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 121 | 0.22 |
+| 13 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 121 | 0.22 |
+| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 121 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „CI-Workflow für automati“ (Note 5/1… | 121 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 
@@ -44,6 +44,6 @@ Stand: 1319 Neuronen · 20046 bewertete Synapsen
 | 10 | **0.53** | 🛠 „Define HealthRegister data model“. Ergebnis: … | 🛠 „Define Injector Pydantic Model“. Ergebnis: ``… |
 | 11 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
 | 12 | **0.52** | 💭 hands-execute crashed with AttributeError 'Mem… | 💭 hands-execute crashed with AttributeError: Mem… |
-| 13 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
-| 14 | **0.50** | 💭 Skill proposals accumulate faster than they ar… | 💭 Skill proposals accumulate but lack automated … |
-| 15 | **0.50** | 💭 Intermittent latency spikes above 20 s indicat… | 💭 High latency spikes up to 71.9 s trigger timeo… |
+| 13 | **0.52** | 🛠 „Define Hermes Communication Protocol Contract… | 🛠 „Define Hermes communication protocol and mess… |
+| 14 | **0.50** | 🛠 „Implement Automatic Skill Adoption Trigger“. … | 🛠 „Create Execution Verification Harness“. Ergeb… |
+| 15 | **0.50** | 💭 Skill proposals accumulate faster than they ar… | 💭 Skill proposals accumulate but lack automated … |
