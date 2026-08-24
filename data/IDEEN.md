@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 08:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 08:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,6 +28,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
@@ -36,11 +37,15 @@
 - Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 - Mehr Fähigkeiten in Ziele umwandeln *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Wiederkehrende Fehler finden und beheben *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Risk calibration was exact for the 'Fußball erste Einreichung' goal (predicted 3, actual 3, abs_error 0), so the current risk-scoring heuristic needs 
+- dots-studio/dots-3-note-preview:free completed every call successfully (including a 4573-token generation), making it the most reliable fallback obser
+- Error class dictates strategy: 429 means rotate to a different model or cool down, while 502 means wait briefly and retry the same model.
+- nvidia/nemotron-3-ultra failed intermittently with 502 'upstream overloaded' yet succeeded on most attempts, showing its failures are transient capaci
+- Free-tier models z-ai/glm-5.2 and google/gemma-* returned persistent 429 rate-limit errors across the whole session, so immediate retries against them
 - Only one model (dots-studio/dots-3-note-preview) succeeds but with 24-29s latency, creating a single-point-of-failure with poor throughput.
 - Pruning runs removing zero items signal stagnation - the system accumulates but never discards obsolete knowledge.
 - Tasks can score well (2/2) yet fail to converge, indicating scoring metrics don't capture completion correctness.
@@ -51,11 +56,6 @@
 - Free-tier models exhibited correlated 429 rate limits, proving that per-model concurrency limits are insufficient without provider-level semaphores.
 - The system launched a complex swarm while in 'conserve' state with stress=1.0, ignoring that high stress should gate new work, not just limit existing
 - Multiple model failures (502/429) occurred simultaneously across different providers sharing OpenRouter infrastructure, revealing a single-point-of-fa
-- Metabolism stress=1.0 with 'conserve' state forces max 3 tasks/iteration, proving resource limits directly constrain throughput.
-- 60 unimplemented skill proposals reveal a bottleneck in proposal-to-execution pipelines, stalling system improvement.
-- Calibration error of 1 (predicted 4, actual 3) suggests model confidence is misaligned with outcomes, requiring recalibration loops.
-- The simulation gate's 'revise' verdict with risks=5 shows that high-risk tasks proceed without mandatory mitigation, leading to wasted cycles.
-- Rate-limiting errors (429) indicate the system is exceeding API quotas, requiring backoff/retry logic to avoid cascading failures.
 
 ---
 

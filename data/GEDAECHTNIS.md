@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1868 Fakten** · Stand 2026-08-24 08:23 UTC · aktualisiert bei jedem Herzschlag
+**1875 Fakten** · Stand 2026-08-24 08:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 832
-- **swarm_artifact:** 578
+- **dream:** 837
+- **swarm_artifact:** 579
 - **anti_pattern:** 146
-- **last_swarm_goal:** 125
+- **last_swarm_goal:** 126
 - **strategy:** 94
 - **last_swarm_critique:** 74
 - **creator_teaching:** 8
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Elo-Kern bauen: Tordifferenz-Multiplikator, eigener K je Wet`
+*24.08. 08:38 UTC · Quelle: builder*
+
+# Artefakt: `elo_kern.py` — Elo-Kern mit Tordifferenz-Multiplikator, Liga-K und Mittelrückkehr  **Auftrag:** Elo-Ratings mit Margin-of-Victory-Gewichtung `log(Tordifferenz+1)`, ligaspezifischem K-Fakt
+
+### `last_swarm_goal`
+*24.08. 08:25 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608240824:5`
+*24.08. 08:24 UTC · Quelle: dream*
+
+Risk calibration was exact for the 'Fußball erste Einreichung' goal (predicted 3, actual 3, abs_error 0), so the current risk-scoring heuristic needs no correction.
+
+### `dream:202608240824:4`
+*24.08. 08:24 UTC · Quelle: dream*
+
+dots-studio/dots-3-note-preview:free completed every call successfully (including a 4573-token generation), making it the most reliable fallback observed.
+
+### `dream:202608240824:3`
+*24.08. 08:24 UTC · Quelle: dream*
+
+Error class dictates strategy: 429 means rotate to a different model or cool down, while 502 means wait briefly and retry the same model.
+
+### `dream:202608240824:2`
+*24.08. 08:24 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra failed intermittently with 502 'upstream overloaded' yet succeeded on most attempts, showing its failures are transient capacity blips, not outages.
+
+### `dream:202608240824:1`
+*24.08. 08:24 UTC · Quelle: dream*
+
+Free-tier models z-ai/glm-5.2 and google/gemma-* returned persistent 429 rate-limit errors across the whole session, so immediate retries against them only waste time.
 
 ### `last_swarm_goal`
 *24.08. 08:08 UTC · Quelle: system*

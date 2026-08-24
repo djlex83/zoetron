@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 08:23:27",
+ "stand": "2026-08-24 08:40:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "fähigkeiten-selbstständig-üben.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "fehler-im-modell-vermeiden.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -57,6 +51,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fehler-im-modell-vermeiden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "fehler-in-modellen-finden.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -87,8 +87,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.812,
- "simulationen_angewandt": 87,
+ "haende_quote": 0.811,
+ "simulationen_angewandt": 88,
  "swarm_scores": {
   "n": 41,
   "best": 8.0,

@@ -1,5 +1,5 @@
 {
- "stand": 1787559061.3030806,
+ "stand": 1787560703.4563386,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -44,11 +44,11 @@
    "kontofehler": 25
   },
   "stealth/ox-alpha": {
-   "laeufe": 159,
+   "laeufe": 165,
    "fehler": 3,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 18524.45963549614,
+   "latenz_summe_s": 19383.55367708206,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787556927.5394878,
    "kontofehler": 53
