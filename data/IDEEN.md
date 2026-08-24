@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 07:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 08:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,7 +30,7 @@
 - Traum-Erinnerungen verknüpfen *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
-- Fähigkeitsvorschläge häufiger nutzen *(wieder aufgegriffen: 2×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Only one model (dots-studio/dots-3-note-preview) succeeds but with 24-29s latency, creating a single-point-of-failure with poor throughput.
+- Pruning runs removing zero items signal stagnation - the system accumulates but never discards obsolete knowledge.
+- Tasks can score well (2/2) yet fail to converge, indicating scoring metrics don't capture completion correctness.
+- Destructive operations (subprocess) require human approval, creating a hard automation bottleneck for any write/execute tasks.
+- Free-tier models consistently fail with 429/502 errors under load, making them unreliable for production workflows.
 - Model calls reached 180s latency without timeout enforcement, confirming that default max_tokens and wall-clock timeouts are not being applied at the 
 - Simulation demanded revisions (verdict='revise') but the model layer could not deliver due to cascading failures, creating a revision loop that cannot
 - Free-tier models exhibited correlated 429 rate limits, proving that per-model concurrency limits are insufficient without provider-level semaphores.
@@ -51,11 +56,6 @@
 - Calibration error of 1 (predicted 4, actual 3) suggests model confidence is misaligned with outcomes, requiring recalibration loops.
 - The simulation gate's 'revise' verdict with risks=5 shows that high-risk tasks proceed without mandatory mitigation, leading to wasted cycles.
 - Rate-limiting errors (429) indicate the system is exceeding API quotas, requiring backoff/retry logic to avoid cascading failures.
-- Successful calls spanned 12–236s latency and up to ~8.7k output tokens under a tight budget (max_iterations=2), so uncapped generation length lets a s
-- Immediate fallback to nvidia/nemotron-3-nano-30b-a3b:free succeeded in 12.2s right after the cascade, showing cross-provider diversity—not same-provid
-- The simulation issued verdict 'revise' with 5 risks and 4 revisions but only 1 revision was applied, exposing a plan-to-execution gap that needs expli
-- The 403 Forbidden on thinkingmachines/inkling-small was retried until the 3-failure lockout even though auth errors are deterministic, so classifying 
-- OpenRouter returned 429 Too Many Requests across five different models within one second, proving rate limits are enforced per provider endpoint rathe
 
 ---
 

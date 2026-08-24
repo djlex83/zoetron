@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1862 Fakten** · Stand 2026-08-24 07:59 UTC · aktualisiert bei jedem Herzschlag
+**1868 Fakten** · Stand 2026-08-24 08:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 827
+- **dream:** 832
 - **swarm_artifact:** 578
 - **anti_pattern:** 146
-- **last_swarm_goal:** 124
+- **last_swarm_goal:** 125
 - **strategy:** 94
 - **last_swarm_critique:** 74
 - **creator_teaching:** 8
@@ -18,6 +18,36 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*24.08. 08:08 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608240808:5`
+*24.08. 08:08 UTC · Quelle: dream*
+
+Only one model (dots-studio/dots-3-note-preview) succeeds but with 24-29s latency, creating a single-point-of-failure with poor throughput.
+
+### `dream:202608240808:4`
+*24.08. 08:08 UTC · Quelle: dream*
+
+Pruning runs removing zero items signal stagnation - the system accumulates but never discards obsolete knowledge.
+
+### `dream:202608240808:3`
+*24.08. 08:08 UTC · Quelle: dream*
+
+Tasks can score well (2/2) yet fail to converge, indicating scoring metrics don't capture completion correctness.
+
+### `dream:202608240808:2`
+*24.08. 08:08 UTC · Quelle: dream*
+
+Destructive operations (subprocess) require human approval, creating a hard automation bottleneck for any write/execute tasks.
+
+### `dream:202608240808:1`
+*24.08. 08:08 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429/502 errors under load, making them unreliable for production workflows.
 
 ### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
 *24.08. 07:57 UTC · Quelle: evolution*
