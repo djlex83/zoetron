@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 08:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 09:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Fehlerquellen finden und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 3×)*
-- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 - Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Fehler beim Modell reduzieren *(wieder aufgegriffen: 2×)*
 - Mehr Fähigkeiten in Ziele umwandeln *(wieder aufgegriffen: 2×)*
 - GitHub-Fehler beim Synchronisieren beheben *(wieder aufgegriffen: 2×)*
 - Wiederkehrende Fehler finden und beheben *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The conserve-state budget (max_tasks=3, max_iterations=1) completed the pipeline only because the fallback model never failed; a single fallback failu
+- Multi-variant evolution (3 candidates scored [9,6,8]) lifted a 5/10 solution to 9/10, confirming that when an initial artifact scores ≤5/10, spawning 
+- Risk-count calibration showed predicted=4 vs actual=5 (abs_error=1), indicating a systematic underestimate correctable by applying a +1 offset or ×1.2
+- Latency on the working model varied 11x (5.1s–57.0s) uncorrelated with input size (2501 tokens→5.1s vs 1678 tokens→57.0s), so timeout budgets must be 
+- z-ai/glm-5.2:free returned HTTP 429 on every attempt (8+ consecutive failures across ~20s) while nvidia/nemotron-3-ultra-550b-a55b:free succeeded 100%
 - Skill proposals accumulate without ever being built (confirmed by the drive_goal gap signal) and prune_run removed 0 items, so the dream cycle needs a
 - Simulation issued verdict 'go' while flagging 3 unresolved risks and the run then failed at score 3, so 'go' must be gated on every high-severity risk
 - The critic's blocking issue ('Tool calls') is an execution/harness-format failure that text-only variant mutation cannot fix; candidates must be valid
@@ -51,11 +56,6 @@
 - Error class dictates strategy: 429 means rotate to a different model or cool down, while 502 means wait briefly and retry the same model.
 - nvidia/nemotron-3-ultra failed intermittently with 502 'upstream overloaded' yet succeeded on most attempts, showing its failures are transient capaci
 - Free-tier models z-ai/glm-5.2 and google/gemma-* returned persistent 429 rate-limit errors across the whole session, so immediate retries against them
-- Only one model (dots-studio/dots-3-note-preview) succeeds but with 24-29s latency, creating a single-point-of-failure with poor throughput.
-- Pruning runs removing zero items signal stagnation - the system accumulates but never discards obsolete knowledge.
-- Tasks can score well (2/2) yet fail to converge, indicating scoring metrics don't capture completion correctness.
-- Destructive operations (subprocess) require human approval, creating a hard automation bottleneck for any write/execute tasks.
-- Free-tier models consistently fail with 429/502 errors under load, making them unreliable for production workflows.
 
 ---
 

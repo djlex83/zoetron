@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1882 Fakten** · Stand 2026-08-24 08:57 UTC · aktualisiert bei jedem Herzschlag
+**1889 Fakten** · Stand 2026-08-24 09:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 842
-- **swarm_artifact:** 580
+- **dream:** 847
+- **swarm_artifact:** 581
 - **anti_pattern:** 146
-- **last_swarm_goal:** 127
+- **last_swarm_goal:** 128
 - **strategy:** 94
 - **last_swarm_critique:** 74
 - **creator_teaching:** 8
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Metrik-Vertrag & Baseline-Anker fixieren (Eval-Harness)`
+*24.08. 09:10 UTC · Quelle: builder*
+
+  ```markdown # Metrik-Vertrag & Baseline-Anker (Eval-Harness)  **Vertrag** - `y`-Encoding: `0` = Heim, `1` = Remis, `2` = Auswärts - Metriken: Accuracy und Log‑Loss (mit `eps=1e-12` Clipping) - Split
+
+### `last_swarm_goal`
+*24.08. 08:59 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608240858:5`
+*24.08. 08:58 UTC · Quelle: dream*
+
+The conserve-state budget (max_tasks=3, max_iterations=1) completed the pipeline only because the fallback model never failed; a single fallback failure would have exhausted the entire iteration budget with no recovery path.
+
+### `dream:202608240858:4`
+*24.08. 08:58 UTC · Quelle: dream*
+
+Multi-variant evolution (3 candidates scored [9,6,8]) lifted a 5/10 solution to 9/10, confirming that when an initial artifact scores ≤5/10, spawning ≥3 diverse variants outperforms incremental single-path revision.
+
+### `dream:202608240858:3`
+*24.08. 08:58 UTC · Quelle: dream*
+
+Risk-count calibration showed predicted=4 vs actual=5 (abs_error=1), indicating a systematic underestimate correctable by applying a +1 offset or ×1.25 multiplier to predicted risk counts.
+
+### `dream:202608240858:2`
+*24.08. 08:58 UTC · Quelle: dream*
+
+Latency on the working model varied 11x (5.1s–57.0s) uncorrelated with input size (2501 tokens→5.1s vs 1678 tokens→57.0s), so timeout budgets must be sized to worst-case ~60s, not mean latency.
+
+### `dream:202608240858:1`
+*24.08. 08:58 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free returned HTTP 429 on every attempt (8+ consecutive failures across ~20s) while nvidia/nemotron-3-ultra-550b-a55b:free succeeded 100% of the time, revealing the router lacks a circuit breaker that demotes persistently rate-limited models.
 
 ### `swarm_artifact:Data Ingestion and Cleaning`
 *24.08. 08:50 UTC · Quelle: builder*

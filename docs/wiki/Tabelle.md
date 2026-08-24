@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1588 Neuronen · 26233 bewertete Synapsen
+Stand: 1596 Neuronen · 26382 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,14 +10,14 @@ Stand: 1588 Neuronen · 26233 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 140 | 0.26 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 141 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: erste eigene Ei“ (Note 1/1… | 135 | 0.23 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 135 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 135 | 0.23 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 135 | 0.23 |
-| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 135 | 0.23 |
-| 7 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 116 | 0.26 |
-| 8 | 💭 | Model latency varies by 27× (13s–355s) without automatic failove… | 113 | 0.27 |
+| 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 117 | 0.26 |
+| 7 | 💭 | Model latency varies by 27× (13s–355s) without automatic failove… | 114 | 0.27 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 135 | 0.23 |
 | 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 135 | 0.22 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 135 | 0.22 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 135 | 0.22 |
