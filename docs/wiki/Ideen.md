@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 06:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 06:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Two consecutive cycles independently proposed near-identical backlog-gating skills, showing new proposals are generated without checking the existing 
+- About one in four model attempts returned a wrong result, indicating a systematic failure mode that should be classified (format vs. signature vs. log
+- The skill pipeline is imbalanced at roughly 60 proposals to 1 trial, so generation vastly outpaces validation and the backlog consists almost entirely
+- Both recorded prune_run executions pruned 0 facts and 0 events, proving the retention rules never fire and memory grows monotonically.
+- Consolidation and planning calls regularly emit 8k-13k output tokens at 200-300 s latency, making oversized generations the single largest consumer of
 - Drive telemetry reports over a third of attempts failing while self-checks run rarely, making acceptance-test-first execution (run bewerte.py before b
 - Both prune runs removed 0 facts and 0 events despite continuous event accumulation, indicating the pruning criteria never fire and memory grows unboun
 - The 'revise' simulation produced 5 revisions but only 3 were applied and none became queued real executions, exactly reproducing the drive-detected id
@@ -51,11 +56,6 @@
 - The simulation gate has a risk-count blind spot: the football swarm proceeded on verdict='go' despite risks=5 and 3 revision rounds, admitting a high-
 - First-failure failover works: after two consecutive 429s (stealth/ox-alpha, then z-ai/glm-5.2:free), switching to nvidia/nemotron-3-ultra-550b-a55b:fr
 - Uncapped output length is the dominant failure driver: stealth/ox-alpha calls routinely exceed 100s (up to 546.3s) and one emitted 22,983 output token
-- Only 2 of 9 started swarm tasks completed while stress stayed low at 0.318, showing task attrition comes from missing start/resume gating rather than 
-- Four independently proposed skills this cycle (start-gate, SimulationGate, submission validator, conditional prune) all reinvent check-before-act gati
-- The simulation returned verdict 'revise' with 5 risks yet subsequent builder/model calls still executed, proving revise verdicts need a hard Simulatio
-- One uncapped call produced 22,983 output tokens in 546 s (roughly 5-10x the median call), confirming that a default max_tokens cap near 2000 with chun
-- Parallel fan-out to two OpenRouter models triggered simultaneous 429 rate-limit failures, so outbound model calls must be serialized or jitter-stagger
 
 ---
 

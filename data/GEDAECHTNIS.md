@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1780 Fakten** · Stand 2026-08-24 06:13 UTC · aktualisiert bei jedem Herzschlag
+**1790 Fakten** · Stand 2026-08-24 06:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 792
-- **swarm_artifact:** 556
+- **dream:** 797
+- **swarm_artifact:** 560
 - **anti_pattern:** 138
-- **last_swarm_goal:** 117
+- **last_swarm_goal:** 118
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Creator-Mandat erfuellen: EINE Aenderung am Geruest - empiri`
+*24.08. 06:30 UTC · Quelle: builder*
+
+# Artefakt zu 'Creator-Mandat erfuellen: EINE Aenderung am Geruest - empirische Base-Rates statt Starrwerte'  **Zweck:** Das Geruest wird genau EINMAL geaendert (Creator-Vorgabe: 'aendere EINE Sache')
+
+### `swarm_artifact:Lokale Pruefhuerde: Edge-Case-Harness imitiert die bewerte.p`
+*24.08. 06:29 UTC · Quelle: builder*
+
+# Artefakt zu 'Lokale Pruefhuerde: Edge-Case-Harness imitiert die bewerte.py-Checks'  **Zweck:** Lokale Pruefhuerde vor jeder Einreichung. Der Harness imitiert die `bewerte.py`-Checks **strenger als d
+
+### `swarm_artifact:Minimal-Baseline-Modell bauen: EIN lauffaehiger predict()-Bl`
+*24.08. 06:26 UTC · Quelle: builder*
+
+# Artefakt zu 'Minimal-Baseline-Modell bauen: EIN lauffaehiger predict()-Block in korrekter Wahrscheinlichkeitsform'  **Zweck:** Erste eigene Einreichung für `bewerte.py`: ein einziges, lauffaehiges M
+
+### `swarm_artifact:Evaluator-Contract extrahieren: bewerte.py lesen, bevor Mode`
+*24.08. 06:25 UTC · Quelle: builder*
+
+# Artefakt: Evaluator-Contract-Extraktor (`evaluator_contract.py`)  **Zweck:** Liest `bewerte.py`, bevor eine Zeile Modellcode entsteht. Extrahiert Funktions-Signaturen, pruefrelevante Keywords, **all
+
+### `last_swarm_goal`
+*24.08. 06:16 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240616:5`
+*24.08. 06:16 UTC · Quelle: dream*
+
+Two consecutive cycles independently proposed near-identical backlog-gating skills, showing new proposals are generated without checking the existing queue for duplicates.
+
+### `dream:202608240616:4`
+*24.08. 06:16 UTC · Quelle: dream*
+
+About one in four model attempts returned a wrong result, indicating a systematic failure mode that should be classified (format vs. signature vs. logic vs. hallucination) before adding capacity.
+
+### `dream:202608240616:3`
+*24.08. 06:16 UTC · Quelle: dream*
+
+The skill pipeline is imbalanced at roughly 60 proposals to 1 trial, so generation vastly outpaces validation and the backlog consists almost entirely of untested ideas.
+
+### `dream:202608240616:2`
+*24.08. 06:16 UTC · Quelle: dream*
+
+Both recorded prune_run executions pruned 0 facts and 0 events, proving the retention rules never fire and memory grows monotonically.
+
+### `dream:202608240616:1`
+*24.08. 06:16 UTC · Quelle: dream*
+
+Consolidation and planning calls regularly emit 8k-13k output tokens at 200-300 s latency, making oversized generations the single largest consumer of the 2-iteration cycle budget.
 
 ### `swarm_artifact:Baseline-Einreichung bauen: Single-File, Zero-Dependency`
 *24.08. 06:13 UTC · Quelle: builder*
