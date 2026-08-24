@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1716 Fakten** · Stand 2026-08-24 04:08 UTC · aktualisiert bei jedem Herzschlag
+**1726 Fakten** · Stand 2026-08-24 04:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 757
-- **swarm_artifact:** 534
+- **dream:** 762
+- **swarm_artifact:** 538
 - **anti_pattern:** 138
-- **last_swarm_goal:** 110
+- **last_swarm_goal:** 111
 - **strategy:** 90
 - **last_swarm_critique:** 68
 - **creator_teaching:** 8
@@ -18,6 +18,56 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Echten Evaluator ausfuehren (oder Fallback-Simulation)`
+*24.08. 04:26 UTC · Quelle: builder*
+
+# ARTEFAKT · build: „Echten Evaluator ausführen (oder Fallback-Simulation)"  **Task:** build · **Attempt:** 1/3 · **Strategie:** Exit-Code-als-harte-Wahrheit + strikt gelabelte Simulation **Ziel:** `b
+
+### `swarm_artifact:Lokaler Form-Validator als bewerte.py-Spiegel`
+*24.08. 04:23 UTC · Quelle: builder*
+
+# LOCAL FORM VALIDATOR — `validate_submission.py`  ```python #!/usr/bin/env python3 """ Lokaler Form-Validator — Spiegel von bewerte.py. Führt exakt dieselben Prüfungen durch, die der Evaluator vornim
+
+### `swarm_artifact:Single-File-Modell mit GENAU EINER Scaffold-Aenderung`
+*24.08. 04:23 UTC · Quelle: builder*
+
+# BUILD-ARTEFAKT · „Single-File-Modell mit GENAU EINER Scaffold-Aenderung"  **Task:** build · **Attempt:** 1/3 · **Strategie:** Single-File Atomic Operations, Zero Dependencies **Ziel (nordisch klar):
+
+### `swarm_artifact:Recon: bewerte.py lokalisieren und Kontrakt extrahieren`
+*24.08. 04:19 UTC · Quelle: builder*
+
+# RECON-REPORT · `bewerte.py` — Kontrakt-Extraktion  **Task:** Recon: bewerte.py lokalisieren und Kontrakt extrahieren **Attempt:** 1/3 · **Strategie:** systematic-exploration-first (bewährt, Score-ge
+
+### `last_swarm_goal`
+*24.08. 04:12 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240411:5`
+*24.08. 04:11 UTC · Quelle: dream*
+
+The failure-driven goal 'why do models fail' was re-emitted across consecutive cycles without resolution, indicating that recurring drives signal an unresolved root cause requiring a dedicated diagnostic task rather than re-emission.
+
+### `dream:202608240411:4`
+*24.08. 04:11 UTC · Quelle: dream*
+
+Model latency is strongly bimodal (20–50s vs 125–172s), so routing long-generation calls away from slow endpoints whenever rolling p95 exceeds 60s would roughly halve wall-clock time.
+
+### `dream:202608240411:3`
+*24.08. 04:11 UTC · Quelle: dream*
+
+Conserve mode (stress 1.0, max 3 tasks, 1 iteration) failed to prevent multiple >120s, 2–7k-token model calls, so budget limits must constrain call count and duration directly, not just task count.
+
+### `dream:202608240411:2`
+*24.08. 04:11 UTC · Quelle: dream*
+
+With 53 accumulated skill proposals but only ~3 ever tested, idea generation systematically outpaces execution; the bottleneck is the missing automatic conversion of dream output into scheduled tasks.
+
+### `dream:202608240411:1`
+*24.08. 04:11 UTC · Quelle: dream*
+
+The SimulationGate was proposed in the prior dream cycle yet the next swarm still ran with verdict='revise', 5 risks, and 0 applied revisions — skill proposals change behavior only when converted into enforced code.
 
 ### `swarm_artifact:Create minimal prediction model scaffold`
 *24.08. 04:07 UTC · Quelle: builder*
