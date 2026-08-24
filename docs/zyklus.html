@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Was in einem 30-Minuten-Herzschlag von Zoetron wirklich passiert: siebzehn Phasen mit gemessenen Zeiten, der Prüfer von außen, und sechs Projekte, die auf diesem Apparat stehen könnten.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%AB%80%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ein Herzschlag von Zoetron">
+<meta property="og:description" content="Siebzehn Phasen, gemessene Zeiten, und die eine Stelle, an der kein Sprachmodell urteilt.">
+<title>Ein Herzschlag von Zoetron</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+:root{
+  --grund:#F5F6F8; --flaeche:#FFFFFF; --tinte:#13171E; --leise:#69717F;
+  --gemessen:#1B4F8F; --geraten:#A2621C; --puls:#B62B45; --maschine:#8A93A2;
+  --rand:#E1E5EA; --rand-stark:#CBD2DB;
+  --gemessen-weich:#E7EEF7; --geraten-weich:#F7EEE2; --puls-weich:#FAE9EC;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --grund:#11141A; --flaeche:#171B22; --tinte:#E7EAEF; --leise:#98A1B0;
+  --gemessen:#78ACE4; --geraten:#DDA663; --puls:#E9738A; --maschine:#7C8697;
+  --rand:#262C36; --rand-stark:#39414E;
+  --gemessen-weich:#1A2836; --geraten-weich:#2E2519; --puls-weich:#331B21;
+}}
+:root[data-theme="dark"]{
+  --grund:#11141A; --flaeche:#171B22; --tinte:#E7EAEF; --leise:#98A1B0;
+  --gemessen:#78ACE4; --geraten:#DDA663; --puls:#E9738A; --maschine:#7C8697;
+  --rand:#262C36; --rand-stark:#39414E;
+  --gemessen-weich:#1A2836; --geraten-weich:#2E2519; --puls-weich:#331B21;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--grund); color:var(--tinte); margin:0;
+  font:400 17px/1.65 var(--sans);
+  -webkit-font-smoothing:antialiased;
+}
+.seite{max-width:1060px;margin:0 auto;padding:4rem 1.5rem 6rem}
+.spalte{max-width:64ch;margin-inline:auto}
+p{margin:0 0 1.1rem}
+a{color:var(--gemessen)}
+strong{font-weight:600}
+code{font:400 .88em/1 var(--mono);background:var(--gemessen-weich);color:var(--gemessen);padding:.15em .35em;border-radius:2px}
+
+/* ---- Kopf ---- */
+.kopf{border-bottom:1px solid var(--rand-stark);padding-bottom:2.5rem;margin-bottom:3rem}
+.marke{
+  font:500 11px/1 var(--mono); letter-spacing:.16em; text-transform:uppercase;
+  color:var(--puls); margin-bottom:1.4rem; display:flex; gap:.6rem; align-items:center;
+}
+.marke::after{content:"";flex:1;height:1px;background:var(--rand-stark)}
+h1{
+  font:400 clamp(2.6rem,6vw,4.2rem)/1.04 var(--serif);
+  margin:0 0 1rem; text-wrap:balance; letter-spacing:-.01em;
+}
+.vorspann{font-size:1.15rem;color:var(--leise);max-width:52ch;margin:0}
+
+/* ---- Kennzahlen ---- */
+.zahlen{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(128px,1fr));
+  gap:1px; background:var(--rand); border:1px solid var(--rand);
+  margin:2.5rem 0 0;
+}
+.zahl{background:var(--flaeche);padding:1rem 1.1rem}
+.zahl b{display:block;font:500 1.5rem/1.15 var(--mono);font-variant-numeric:tabular-nums}
+.zahl span{display:block;font-size:.78rem;color:var(--leise);margin-top:.3rem}
+
+/* ---- Abschnitte ---- */
+h2{
+  font:400 clamp(1.7rem,3.4vw,2.3rem)/1.15 var(--serif);
+  margin:4rem 0 .5rem; text-wrap:balance;
+}
+h2 .nr{
+  font:500 .72rem/1 var(--mono); color:var(--puls); letter-spacing:.14em;
+  display:block; margin-bottom:.7rem;
+}
+h3{font:600 1rem/1.4 var(--sans);margin:2.2rem 0 .5rem}
+.unterzeile{color:var(--leise);margin:-.2rem 0 1.6rem;font-size:1.02rem}
+
+/* ---- Legende ---- */
+.legende{display:flex;flex-wrap:wrap;gap:1.4rem;margin:0 0 1.4rem;padding:0;list-style:none}
+.legende li{display:flex;gap:.5rem;align-items:baseline;font-size:.85rem}
+.punkt{width:11px;height:11px;flex:none;border-radius:2px;transform:translateY(1px)}
+.p-m{background:var(--maschine)} .p-g{background:var(--geraten)} .p-x{background:var(--gemessen)}
+
+/* ---- Zeitbalken ---- */
+.band{margin:2rem 0 .8rem}
+.balken{display:flex;height:56px;border:1px solid var(--rand-stark);overflow:hidden}
+.seg{position:relative;min-width:3px;border-right:1px solid var(--grund)}
+.seg:last-child{border-right:0}
+.seg.m{background:var(--maschine)} .seg.g{background:var(--geraten)} .seg.x{background:var(--gemessen)}
+.seg span{
+  position:absolute;inset:0;display:flex;align-items:center;padding-left:.7rem;
+  font:500 .78rem/1 var(--mono);color:#fff;letter-spacing:.02em;white-space:nowrap;
+}
+.balken-fuss{display:flex;justify-content:space-between;font:400 .76rem/1 var(--mono);color:var(--leise);margin-top:.5rem}
+
+/* ---- Tabelle ---- */
+.rolle{overflow-x:auto;margin:1.5rem 0 0;border:1px solid var(--rand)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--flaeche)}
+th,td{text-align:left;padding:.62rem .8rem;border-bottom:1px solid var(--rand);vertical-align:top}
+thead th{
+  font:500 .7rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  color:var(--leise);background:var(--grund);position:sticky;top:0;
+}
+tbody tr:last-child td{border-bottom:0}
+td.z{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.n{font-family:var(--mono);font-size:.84rem;white-space:nowrap}
+.wer{
+  display:inline-block;font:500 .68rem/1 var(--mono);letter-spacing:.06em;
+  padding:.28rem .45rem;border-radius:2px;white-space:nowrap;text-transform:uppercase;
+}
+.w-m{background:var(--grund);color:var(--leise);border:1px solid var(--rand-stark)}
+.w-g{background:var(--geraten-weich);color:var(--geraten);border:1px solid var(--geraten)}
+.w-x{background:var(--gemessen-weich);color:var(--gemessen);border:1px solid var(--gemessen)}
+
+/* ---- Figuren ---- */
+figure{margin:2.2rem 0;padding:0}
+figure svg{display:block;width:100%;height:auto;color:var(--tinte)}
+/* Diagramm-Farben ueber Klassen, nicht ueber Praesentationsattribute:
+   var() ist in Attributen nicht ueberall zuverlaessig. */
+.dia .kasten{fill:none;stroke:currentColor;stroke-width:1.25}
+.dia .fluss{fill:none;stroke:currentColor;stroke-width:1.25}
+.dia .kopfform{fill:currentColor}
+.dia .titel{fill:currentColor;font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.08em}
+.dia .unter{fill:var(--leise);font-family:var(--sans);font-size:11px}
+.dia .notiz{fill:currentColor;font-family:var(--sans);font-size:11.5px}
+.dia .modell{fill:var(--geraten);font-family:var(--sans);font-size:11.5px}
+.dia .mess{fill:var(--gemessen)}
+.dia .mess-strich{fill:none;stroke:var(--gemessen);stroke-width:1.25}
+.dia .mess-text{fill:var(--gemessen);font-family:var(--sans);font-size:11.5px}
+.dia .mess-mono{fill:var(--gemessen);font-family:var(--mono);font-size:11.5px;font-weight:500}
+.rahmen{border:1px solid var(--rand);background:var(--flaeche);padding:1.5rem 1.2rem;overflow-x:auto}
+figcaption{font-size:.85rem;color:var(--leise);margin-top:.9rem;max-width:62ch}
+
+/* ---- Merksatz ---- */
+.merk{
+  border-left:2px solid var(--puls); padding:.2rem 0 .2rem 1.3rem;
+  margin:2rem 0; font:400 1.22rem/1.5 var(--serif); font-style:italic;
+}
+
+/* ---- Ergebnis-Karten ---- */
+.laeufe{display:grid;gap:1px;background:var(--rand);border:1px solid var(--rand);margin:1.6rem 0}
+.lauf{background:var(--flaeche);padding:.85rem 1rem;display:grid;grid-template-columns:1fr auto auto;gap:1rem;align-items:baseline}
+.lauf .name{font:400 .84rem/1.3 var(--mono);color:var(--leise);overflow:hidden;text-overflow:ellipsis}
+.lauf .wert{font:500 1.05rem/1 var(--mono);font-variant-numeric:tabular-nums}
+.lauf .delta{font:400 .82rem/1 var(--mono);color:var(--leise);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lauf.basis{background:var(--grund)}
+.lauf.best .wert{color:var(--gemessen)}
+
+/* ---- Ideen ---- */
+.ideen{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1px;background:var(--rand);border:1px solid var(--rand);margin:1.8rem 0}
+.idee{background:var(--flaeche);padding:1.15rem 1.2rem;display:flex;flex-direction:column;gap:.55rem}
+.idee h4{margin:0;font:600 .98rem/1.35 var(--sans)}
+.idee p{margin:0;font-size:.88rem;color:var(--leise);line-height:1.55}
+.idee .pruefer{font:400 .82rem/1.5 var(--mono);color:var(--gemessen);display:block}
+.idee .pruefer b{font-weight:500;color:var(--leise);font-family:var(--sans);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:.15rem}
+.reife{
+  margin-top:auto;padding-top:.7rem;font:500 .68rem/1 var(--mono);
+  letter-spacing:.08em;text-transform:uppercase;
+}
+.r-nah{color:var(--gemessen)} .r-mittel{color:var(--geraten)} .r-weit{color:var(--leise)}
+
+.fuss{margin-top:5rem;padding-top:1.6rem;border-top:1px solid var(--rand-stark);font-size:.83rem;color:var(--leise)}
+.fuss p{margin:0 0 .5rem}
+:focus-visible{outline:2px solid var(--gemessen);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:640px){
+  body{font-size:16px}
+  .seite{padding:2.5rem 1.1rem 4rem}
+  .lauf{grid-template-columns:1fr auto}
+  .lauf .delta{grid-column:2}
+}
+</style>
+</head>
+<body>
+
+<div class="seite">
+
+<header class="kopf">
+  <div class="marke">Zoetron · Organzyklus</div>
+  <h1>Ein Herzschlag von Zoetron</h1>
+  <p class="vorspann">Alle 30 Minuten durchläuft der Organismus siebzehn Phasen.
+  Diese Seite zeigt, was in einem Durchlauf wirklich passiert — mit gemessenen
+  Zeiten aus dreizehn vollständigen Zyklen, nicht mit geschätzten.</p>
+
+  <div class="zahlen">
+    <div class="zahl"><b>240</b><span>Zyklen gelebt</span></div>
+    <div class="zahl"><b>30 min</b><span>Takt</span></div>
+    <div class="zahl"><b>8:13</b><span>Zyklus im Schnitt</span></div>
+    <div class="zahl"><b>2.124</b><span>Neuronen</span></div>
+    <div class="zahl"><b>28.312</b><span>Synapsen</span></div>
+    <div class="zahl"><b>41</b><span>Organe</span></div>
+  </div>
+</header>
+
+<div class="spalte">
+
+<h2><span class="nr">01 — Der Takt</span>Wer entscheidet, was gilt</h2>
+<p class="unterzeile">Die wichtigste Frage an jede Phase ist nicht, was sie tut,
+sondern wer über ihr Ergebnis urteilt.</p>
+
+<p>Ein Herzschlag besteht aus siebzehn Phasen. Sie zerfallen in drei Gruppen,
+und diese Einteilung ist keine Kosmetik — sie ist die These des Projekts.
+Manche Phasen rechnen einfach: sie zählen, sortieren, schreiben Dateien und
+haben kein Urteil zu fällen. Andere fragen ein Sprachmodell, und was dabei
+herauskommt, ist eine Meinung. Und genau eine Phase lässt einen Prüfer
+<em>außerhalb</em> des Systems entscheiden.</p>
+
+<ul class="legende">
+  <li><span class="punkt p-m"></span><span><strong>Maschine</strong> — rechnet, urteilt nicht</span></li>
+  <li><span class="punkt p-g"></span><span><strong>Sprachmodell</strong> — eine Meinung</span></li>
+  <li><span class="punkt p-x"></span><span><strong>Messung</strong> — ein Prüfer von außen</span></li>
+</ul>
+
+</div>
+
+<div class="band">
+  <div class="balken" role="img" aria-label="Zeitanteile eines Zyklus: ACT 396 Sekunden, DRIVE 33, DREAM 26, GRAPH 14, alle übrigen Phasen zusammen 23 Sekunden.">
+    <div class="seg m" style="flex:0 0 0.6%"></div>
+    <div class="seg m" style="flex:0 0 0.4%"></div>
+    <div class="seg g" style="flex:0 0 5.3%"><span>DREAM</span></div>
+    <div class="seg g" style="flex:0 0 6.7%"><span>DRIVE</span></div>
+    <div class="seg g" style="flex:0 0 80.5%"><span>ACT — 396 s</span></div>
+    <div class="seg x" style="flex:0 0 0.6%"></div>
+    <div class="seg m" style="flex:0 0 0.2%"></div>
+    <div class="seg m" style="flex:0 0 0.2%"></div>
+    <div class="seg m" style="flex:0 0 1.2%"></div>
+    <div class="seg m" style="flex:0 0 0.8%"></div>
+    <div class="seg m" style="flex:0 0 2.8%"></div>
+    <div class="seg m" style="flex:0 0 0.6%"></div>
+  </div>
+  <div class="balken-fuss"><span>0 s</span><span>Zyklus 493 s im Schnitt · kürzester 98 s · längster 881 s</span></div>
+</div>
+
+<div class="spalte">
+<p><strong>Vier Fünftel des Herzschlags liegen in ACT</strong>, der Phase, in der
+ein Schwarm von Sprachmodellen etwas baut. Die einzige Phase, in der eine
+Messung von außen urteilt, ist der schmale blaue Streifen dahinter: drei
+Sekunden. Das ist der ehrliche Befund dieses Bildes.</p>
+</div>
+
+<div class="rolle">
+<table>
+<caption class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Die siebzehn Phasen eines Herzschlags mit gemessener Dauer</caption>
+<thead><tr>
+  <th style="width:2.6rem">#</th><th>Phase</th><th>Was sie tut</th>
+  <th style="width:6.5rem">Entscheidet</th><th class="z" style="width:4.4rem">Dauer</th>
+</tr></thead>
+<tbody>
+<tr><td class="n">01</td><td class="n">reflex</td><td>Sucht in der Werkzeugkiste ein Skript, das zum Ziel passt, und führt es aus — ohne ein Sprachmodell zu fragen.</td><td><span class="wer w-m">Maschine</span></td><td class="z">3 s</td></tr>
+<tr><td class="n">02</td><td class="n">prune</td><td>Räumt das Gedächtnis auf: Dubletten weg, Belangloses weg.</td><td><span class="wer w-m">Maschine</span></td><td class="z">2 s</td></tr>
+<tr><td class="n">03</td><td class="n">dream</td><td>Liest die letzten 120 Ereignisse und zieht Schlüsse daraus — was schiefging und warum.</td><td><span class="wer w-g">Modell</span></td><td class="z">26 s</td></tr>
+<tr><td class="n">04</td><td class="n">drive</td><td>Wählt das nächste Ziel. Aufträge des Erschaffers haben absolute Vorfahrt vor selbst erfundenen.</td><td><span class="wer w-g">Modell</span></td><td class="z">33 s</td></tr>
+<tr><td class="n">05</td><td class="n">act</td><td>Der Schwarm baut. Planer zerlegt, Builder schreiben, Kritiker benotet — bis zu drei Runden.</td><td><span class="wer w-g">Modell</span></td><td class="z">396 s</td></tr>
+<tr><td class="n">06</td><td class="n">fußball</td><td>Sucht im Gebauten eine gültige Einreichung und lässt sie an 13.445 echten Spielen messen.</td><td><span class="wer w-x">Messung</span></td><td class="z">3 s</td></tr>
+<tr><td class="n">07</td><td class="n">will</td><td>Schreibt die langfristigen Missionen fort und prägt das Genom neu ein.</td><td><span class="wer w-g">Modell</span></td><td class="z">1 s</td></tr>
+<tr><td class="n">08</td><td class="n">lehren</td><td>Trägt das Wissen des Erschaffers in jeden Prompt ein.</td><td><span class="wer w-m">Maschine</span></td><td class="z">&lt;1 s</td></tr>
+<tr><td class="n">09</td><td class="n">selbstlernen</td><td>Zählt aus, welche Werkzeuge sich bewährt haben — und welche nicht.</td><td><span class="wer w-m">Maschine</span></td><td class="z">&lt;1 s</td></tr>
+<tr><td class="n">10</td><td class="n">telegram</td><td>Meldet dem Erschaffer, was in diesem Schlag geschah.</td><td><span class="wer w-m">Maschine</span></td><td class="z">1 s</td></tr>
+<tr><td class="n">11</td><td class="n">ideen</td><td>Sammelt Vorschläge für neue Fähigkeiten auf ein Board.</td><td><span class="wer w-m">Maschine</span></td><td class="z">&lt;1 s</td></tr>
+<tr><td class="n">12</td><td class="n">bestenliste</td><td>Schreibt die Rangliste der stärksten Erinnerungen.</td><td><span class="wer w-m">Maschine</span></td><td class="z">6 s</td></tr>
+<tr><td class="n">13</td><td class="n">ansicht</td><td>Erzeugt die lesbare Fassung des Gedächtnisses.</td><td><span class="wer w-m">Maschine</span></td><td class="z">&lt;1 s</td></tr>
+<tr><td class="n">14</td><td class="n">git-pflege</td><td>Holt fremde Änderungen, committet, pusht. Bei Konflikt: Rebase und noch einmal.</td><td><span class="wer w-m">Maschine</span></td><td class="z">4 s</td></tr>
+<tr><td class="n">15</td><td class="n">graph</td><td>Baut aus 2.124 Erinnerungen ein Netz: 1.740 Knoten, 28.312 Kanten. Zeichnet beide Ansichten neu.</td><td><span class="wer w-m">Maschine</span></td><td class="z">14 s</td></tr>
+<tr><td class="n">16</td><td class="n">retro</td><td>Blickt über die letzten hundert Zyklen: Wie viele Läufe, welcher Durchschnitts&shy;score.</td><td><span class="wer w-m">Maschine</span></td><td class="z">&lt;1 s</td></tr>
+<tr><td class="n">17</td><td class="n">wiki-sync</td><td>Spiegelt die Dokumentation ins öffentliche Wiki.</td><td><span class="wer w-m">Maschine</span></td><td class="z">3 s</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="spalte">
+<p style="margin-top:1rem;font-size:.9rem;color:var(--leise)">Sonntags kommt eine
+achtzehnte Phase dazu: die Fähigkeits-Messlatte, die den Organismus an fünf
+festen Aufgaben prüft. Läuft das Konto ins Tageslimit, überspringt der
+Herzschlag DREAM, DRIVE und ACT und lässt nur die billigen Organe laufen —
+bis der Zeitpunkt erreicht ist, den die Schnittstelle selbst genannt hat.</p>
+
+<h2><span class="nr">02 — Der Schwarm</span>Was in den 396 Sekunden geschieht</h2>
+<p class="unterzeile">ACT ist keine einzelne Anfrage an ein Modell, sondern eine
+geschlossene Schleife aus vier Rollen.</p>
+
+<p>Jede Rolle bekommt ihren eigenen Systemprompt und ihren eigenen Kanal — nie
+die volle Historie, sondern das Genom, den Auszug aus dem Gedächtnis und die
+Assoziationen, die der Wissensgraph zum Ziel liefert. Der Auftrag des
+Erschaffers steht am Anfang <em>und</em> am Ende des Builder-Prompts; an welcher
+Stelle eine Anforderung steht, entscheidet darüber, ob sie überhaupt gilt.</p>
+</div>
+
+<figure>
+  <div class="rahmen">
+    <svg class="dia" viewBox="0 0 780 244" role="img" aria-label="Der Schwarmzyklus: ORIENT sammelt Genom, Gedächtnis und Assoziationen, PLAN zerlegt in vier bis fünf Aufgaben, EXECUTE baut je ein Artefakt, CRITIQUE benotet gegnerisch von null bis zehn. Bei einem Score unter acht beginnt die Schleife von vorn, höchstens dreimal. Ab acht gilt sie als konvergiert. Die gebauten Artefakte werden im vollen Wortlaut abgelegt.">
+      <defs>
+        <marker id="sp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path class="kopfform" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+        <marker id="sp-x" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path class="mess" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+
+      <path class="fluss" stroke-dasharray="5 4" marker-end="url(#sp)"
+            d="M595 56 L595 26 L79 26 L79 50"/>
+      <text class="notiz" x="337" y="18" text-anchor="middle">Score unter 8 — noch einmal, höchstens dreimal</text>
+
+      <rect class="kasten" x="10" y="56" width="138" height="64"/>
+      <rect class="kasten" x="182" y="56" width="138" height="64"/>
+      <rect class="kasten" x="354" y="56" width="138" height="64"/>
+      <rect class="kasten" x="526" y="56" width="138" height="64"/>
+
+      <g class="titel" text-anchor="middle">
+        <text x="79" y="82">ORIENT</text>
+        <text x="251" y="82">PLAN</text>
+        <text x="423" y="82">EXECUTE</text>
+        <text x="595" y="82">CRITIQUE</text>
+      </g>
+      <g class="unter" text-anchor="middle">
+        <text x="79" y="100">Genom · Gedächtnis</text>
+        <text x="79" y="113">· Assoziationen</text>
+        <text x="251" y="100">zerlegt in</text>
+        <text x="251" y="113">4–5 Aufgaben</text>
+        <text x="423" y="100">ein Artefakt</text>
+        <text x="423" y="113">je Aufgabe</text>
+        <text x="595" y="100">benotet 0–10,</text>
+        <text x="595" y="113">gegnerisch</text>
+      </g>
+
+      <g class="fluss" marker-end="url(#sp)">
+        <line x1="148" y1="88" x2="174" y2="88"/>
+        <line x1="320" y1="88" x2="346" y2="88"/>
+        <line x1="492" y1="88" x2="518" y2="88"/>
+      </g>
+
+      <line class="mess-strich" x1="664" y1="88" x2="696" y2="88" marker-end="url(#sp-x)"/>
+      <text class="mess-text" x="704" y="85">Score 8+</text>
+      <text class="mess-text" x="704" y="99">konvergiert</text>
+
+      <text class="modell" x="337" y="44" text-anchor="middle">je Rolle ein eigener Modellkanal · rund 7 Aufrufe im Durchlauf</text>
+
+      <line class="mess-strich" x1="423" y1="120" x2="423" y2="168" marker-end="url(#sp-x)"/>
+      <rect class="mess-strich" x="340" y="174" width="166" height="40"/>
+      <text class="mess-mono" x="423" y="199" text-anchor="middle">data/artefakte/</text>
+      <text class="mess-text" x="437" y="150">voller Wortlaut</text>
+    </svg>
+  </div>
+  <figcaption>Ein ACT-Durchlauf. Der Kritiker ist selbst ein Sprachmodell — er
+  kann also nur beurteilen, was er versteht. Deshalb führt der einzige Pfad, der
+  aus dieser Schleife herausführt, über die abgelegten Artefakte nach außen.</figcaption>
+</figure>
+
+<div class="spalte">
+<p>Damit ein Artefakt als erledigt gilt, muss der Kritiker mindestens 8 von 10
+geben <em>und</em> der enthaltene Python-Block muss laufen. Beides zusammen heißt
+Konvergenz. In der Praxis liegt der Durchschnitt bei 4 — der Schwarm baut noch
+zu oft Prosa statt Programme.</p>
+
+<div class="merk">Ein System verbessert sich nicht über das Verständnis seines
+Prüfers hinaus. Genau deshalb gibt es die sechste Phase.</div>
+
+<h2><span class="nr">03 — Der Prüfer von außen</span>Drei Sekunden, die zählen</h2>
+<p class="unterzeile">Der einzige Punkt im ganzen Zyklus, an dem etwas anderes
+als ein Sprachmodell über Erfolg entscheidet.</p>
+
+<p>Zoetron bekommt 139.658 Fußballspiele zum Lernen und soll die Ausgänge von
+13.445 weiteren vorhersagen — ohne Buchmacherquoten. Zu schlagen sind
+50,2 Prozent Treffer, die ein einfaches Elo-Modell erreicht. Über Erfolg
+entscheidet hier kein Urteil, sondern das Spielergebnis.</p>
+</div>
+
+<figure>
+  <div class="rahmen">
+    <svg class="dia" viewBox="0 0 780 202" role="img" aria-label="Die Fußball-Kette: ein Artefakt aus ACT wird eingesammelt und auf den Funktionsvertrag geprüft, dann an 13.445 Spielen Spieltag für Spieltag bewertet, ohne Buchmacherquoten. Das Ergebnis geht auf die öffentliche Lernkurve. Liegt der Vorsprung bei mindestens 0,6 Prozentpunkten, gilt das Ziel als erreicht.">
+      <defs>
+        <marker id="fb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path class="mess" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+
+      <text class="mess-text" x="364" y="20" text-anchor="middle">hier urteilt kein Modell, sondern das Spielergebnis</text>
+
+      <rect class="mess-strich" x="8" y="40" width="148" height="60"/>
+      <rect class="mess-strich" x="196" y="40" width="148" height="60"/>
+      <rect class="mess-strich" x="384" y="40" width="148" height="60"/>
+      <rect class="mess-strich" x="572" y="40" width="148" height="60"/>
+
+      <g class="mess-mono" text-anchor="middle">
+        <text x="82" y="66">Artefakt</text>
+        <text x="270" y="66">einsammeln</text>
+        <text x="458" y="66">bewerte</text>
+        <text x="646" y="66">Kurve</text>
+      </g>
+      <g class="unter" text-anchor="middle">
+        <text x="82" y="84">aus ACT</text>
+        <text x="270" y="80">sucht trainiere()</text>
+        <text x="270" y="93">und vorhersage()</text>
+        <text x="458" y="80">13.445 Spiele,</text>
+        <text x="458" y="93">Spieltag für Spieltag</text>
+        <text x="646" y="84">öffentlich</text>
+      </g>
+
+      <g class="mess-strich" marker-end="url(#fb)">
+        <line x1="156" y1="70" x2="188" y2="70"/>
+        <line x1="344" y1="70" x2="376" y2="70"/>
+        <line x1="532" y1="70" x2="564" y2="70"/>
+      </g>
+
+      <line class="mess-strich" x1="458" y1="100" x2="458" y2="138" marker-end="url(#fb)"/>
+      <rect class="mess-strich" x="328" y="144" width="260" height="42"/>
+      <text class="mess-text" x="458" y="170" text-anchor="middle">Vorsprung ab 0,6 pp — Ziel erreicht</text>
+    </svg>
+  </div>
+  <figcaption>Der Weg vom gebauten Artefakt zur gemessenen Zahl. Die 0,6
+  Prozentpunkte sind keine willkürliche Hürde: Bei 13.445 Spielen liegt alles
+  darunter im Rauschen.</figcaption>
+</figure>
+
+<div class="spalte">
+<p>Am 24. August 2026 lief diese Kette zum ersten Mal vollständig durch. Seither
+stehen drei eigene Einreichungen auf der Kurve:</p>
+</div>
+
+<div class="laeufe">
+  <div class="lauf basis">
+    <span class="name">basislinie.py — Elo, vom Erschaffer</span>
+    <span class="wert">50,18 %</span>
+    <span class="delta">Log-Loss 1,0073</span>
+  </div>
+  <div class="lauf">
+    <span class="name">zoetron_7bfd9c5e65 — erster Versuch</span>
+    <span class="wert">48,54 %</span>
+    <span class="delta">−1,66 pp</span>
+  </div>
+  <div class="lauf">
+    <span class="name">zoetron_ff1c116746 — Heimvorteil je Liga</span>
+    <span class="wert">49,65 %</span>
+    <span class="delta">−0,55 pp</span>
+  </div>
+  <div class="lauf best">
+    <span class="name">zoetron_206b571caa — kalibrierte Unentschieden-Kurve</span>
+    <span class="wert">49,75 %</span>
+    <span class="delta">−0,45 pp</span>
+  </div>
+</div>
+
+<div class="spalte">
+<p>Noch unter der Basislinie, aber die Richtung stimmt und sie ist nicht
+selbst berichtet. Interessant ist, <em>was</em> Zoetron dabei verändert hat: Das
+Gerüst rechnete mit einer festen Unentschieden-Wahrscheinlichkeit von 0,28. Der
+Organismus hat sie durch eine empirisch ausgezählte Kurve über die Elo-Differenz
+ersetzt — die bekannte Schwachstelle jeder naiven Umrechnung. Das stand nicht im
+Auftrag.</p>
+
+<h2><span class="nr">04 — Die Grenzen</span>Was der Zyklus nicht kann</h2>
+
+<p>Der Durchschnittsscore liegt bei 4 von 10. Von 34 Werkzeugen in der Kiste ist
+ein Teil nachweislich Attrappe — Skripte, die fest verdrahtete Beispieldaten
+auszählen und dabei sauber mit Rückgabewert 0 enden. Die Aufnahmeprüfung hat
+sie durchgelassen, weil ihre schärfste Regel nur bei kurzem Code greift.</p>
+
+<p>Der größere Befund ist ein wiederkehrendes Muster: Das System hat lange
+<em>Vollzug</em> gezählt statt <em>Wirkung</em>. Ein Ziel galt als erreicht,
+sobald es angefasst wurde. Ein Werkzeug galt als erfolgreich, wenn sein Prozess
+sauber endete. Der Wissensgraph wuchs auf 28.000 Kanten, ohne dass sie je
+jemand las. Jede dieser Stellen ist inzwischen umgestellt — der Prüfer von
+außen in Phase sechs ist die letzte davon.</p>
+
+<div class="merk">Eine Grenze, die man einzieht, muss man gegen das messen, was
+durch sie hindurch soll — nicht nur gegen das, was sie abwehren soll.</div>
+
+<p>Dieser Satz ist teuer bezahlt. An einem einzigen Tag haben drei stillschweigende
+Längenbegrenzungen genau das zerstört, was sie durchlassen sollten: ein
+Ausgabedeckel, der Programmcode mitten im Textliteral abschnitt; ein Reflex, der
+Werkzeugquelltext bei 4.000 Zeichen kappte; und eine Zeile, die den 3.038 Zeichen
+langen Auftrag des Erschaffers auf 300 kürzte — mitten im Wort. Alle drei haben
+lautlos versagt.</p>
+
+<h2><span class="nr">05 — Weiterverwendung</span>Was man mit diesem Apparat bauen könnte</h2>
+<p class="unterzeile">Nichts davon ist an Fußball gebunden — und das meiste ist
+nicht einmal an Zoetron gebunden.</p>
+
+<p>Von vierzig Organen haben achtzehn keinen einzigen internen Import. Sie sind
+einzelne Dateien, die man herausnehmen und woanders einsetzen kann: die
+Kontosperre samt Modellregister, der Verbrauchszähler, das Gedächtnis, die
+semantische Suche, der Schutzwall, das Konvergenztor. Verflochten sind nur die
+zwei Organe, die tatsächlich <em>Zoetron</em> sind — der Schwarm und die
+Kommandozeile.</p>
+
+<p>Was daraus entsteht, hat immer dieselbe Form: <strong>etwas läuft dauerhaft,
+etwas ist messbar, und die Frage ist, ob es besser wird.</strong> Sechs Projekte,
+die auf diesem Rohbau stehen könnten.</p>
+
+<div class="ideen">
+  <div class="idee">
+    <h4>Die Prognose-Arena</h4>
+    <p>Ein Agent, der öffentlich falsifizierbare Vorhersagen abgibt und sich vom
+    Ausgang benoten lässt. Fußball ist der Prototyp; dazu kämen Wahlergebnisse,
+    Wetter, Kinostarts, Lieferzeiten. Auf der Seite steht dann nicht, was er
+    angeblich kann, sondern seine Kalibrierungskurve über Monate — und die kann
+    niemand fälschen.</p>
+    <span class="pruefer"><b>Prüfer</b>der Ausgang selbst</span>
+    <span class="reife r-nah">Kern läuft · es fehlen Datenquellen</span>
+  </div>
+
+  <div class="idee">
+    <h4>Ein Benchmark, der nicht ausläuft</h4>
+    <p>Jede Messlatte verliert ihren Wert, sobald sie ins Training gerät. Die
+    Gegenmaßnahme ist der versiegelte Prüfsatz: Prüfsumme gebildet, auf einem
+    anderen Rechner abgelegt, für den Agenten unerreichbar. Genau diese
+    Maschinerie steht hier schon. Ein Projekt, das wöchentlich frische versiegelte
+    Aufgaben nachlegt, füllt eine echte Lücke.</p>
+    <span class="pruefer"><b>Prüfer</b>der versiegelte Satz</span>
+    <span class="reife r-nah">Versiegelung steht · es fehlt Nachschub</span>
+  </div>
+
+  <div class="idee">
+    <h4>Prompt-Handwerk, endlich gemessen</h4>
+    <p>Bei Musik, Bild und Video ist Prompt-Arbeit heute Folklore: Man probiert,
+    es klingt besser, man erzählt sich hinterher warum. Messbar wäre es sehr wohl —
+    trifft der erzeugte Track das verlangte Tempo und die Tonart, sitzt der Text
+    im Bild lesbar, passt das Ergebnis zum Auftrag. Ein Agent, der Prompt-Regeln
+    gegen einen festen Zielsatz variiert und die Trefferquote plottet, macht aus
+    Bauchgefühl eine Kurve.</p>
+    <span class="pruefer"><b>Prüfer</b>Analyse des Erzeugten gegen den Auftrag</span>
+    <span class="reife r-mittel">braucht einen Prüfer je Medium</span>
+  </div>
+
+  <div class="idee">
+    <h4>Der digitale Lehrling</h4>
+    <p>Ein enger, wiederkehrender Handgriff aus einem Betrieb: Post einsortieren,
+    Felder aus Rechnungen ziehen, Bilder verschlagworten. Der Prüfer ist der
+    Mensch, der korrigiert — und jede Korrektur wird protokolliert. Verkauft wird
+    dann nicht „macht es richtig", sondern die Kurve: wie oft musste diese Woche
+    noch jemand eingreifen. Ein System, das seine Fehlerquote zeigt, ist
+    glaubwürdiger als eines, das sie verschweigt.</p>
+    <span class="pruefer"><b>Prüfer</b>die Korrektur des Menschen</span>
+    <span class="reife r-mittel">braucht eine Oberfläche</span>
+  </div>
+
+  <div class="idee">
+    <h4>Der Wächter</h4>
+    <p>Der Herzschlag ohne den Schwarm: alle dreißig Minuten messen, was messbar
+    ist — Ladezeiten, tote Verweise, Zertifikate, Plattenplatz, Sicherungen. Nicht
+    nur melden, sondern über Wochen eine Kurve führen und selbst neue Prüfungen
+    dazubauen, wenn etwas durchgerutscht ist. Daemon, Zeitlimits,
+    Einzelinstanz-Sperre und Meldekanal sind fertig.</p>
+    <span class="pruefer"><b>Prüfer</b>die Messung selbst</span>
+    <span class="reife r-nah">am schnellsten zu haben</span>
+  </div>
+
+  <div class="idee">
+    <h4>Der Kostensenker</h4>
+    <p>Eine funktionierende Verarbeitungskette hinein, dieselbe Ausgabe heraus —
+    nur billiger oder schneller. Der Prüfer ist trivial und unbestechlich:
+    identisches Ergebnis, weniger Sekunden oder weniger Token. Der
+    Verbrauchszähler misst das bereits.</p>
+    <span class="pruefer"><b>Prüfer</b>Laufzeit und Verbrauch bei gleichem Ergebnis</span>
+    <span class="reife r-nah">Infrastruktur steht</span>
+  </div>
+</div>
+
+<h3>Und das, was sich schlecht kopieren lässt</h3>
+
+<p>Es gibt viele Agenten-Rahmenwerke und sehr wenige Agenten, die lückenlos
+protokolliert acht Tage am Stück gelaufen sind. Das Logbuch — jeder Fehlversuch,
+jede falsche Erfolgsmeldung, jede Reparatur mit Datum — ist womöglich wertvoller
+als der Code. Es zeigt, was ein autonomes System <em>tatsächlich</em> tut, wenn
+man es laufen lässt, statt was es in einer Vorführung tut. Wer damit arbeitet,
+kann die teuren Lehren überspringen, die hier bezahlt wurden.</p>
+
+<div class="merk">Nicht: was kann der Agent? Sondern: welche Frage hat eine
+Antwort, die man nachrechnen kann?</div>
+
+<p>Jedes dieser Projekte ist derselbe Handgriff — ein Auftrag mit einem Vertrag,
+ein Prüfer, der außerhalb steht, eine Kurve, die man nicht schönreden kann. Der
+Unterschied zwischen ihnen liegt nur darin, wer den Prüfer stellt: die
+Wirklichkeit, eine Prüfsumme, ein Messgerät oder ein Mensch, der korrigiert.</p>
+
+</div>
+
+<footer class="fuss spalte">
+  <p>Alle Zahlen gemessen am 24. August 2026 auf dem laufenden System: dreizehn
+  vollständige Zyklen seit dem Umbau um 12:59 UTC, 240 Zyklen insgesamt seit der
+  Geburt am 16. August.</p>
+  <p>Der Organismus läuft auf einem Synology-NAS und schreibt seine Biografie
+  selbst in dieses Repository. Der Laufzeitcode bleibt bewusst nicht öffentlich —
+  hier steht das Logbuch, nicht der Kopf.</p>
+</footer>
+
+</div>
+</body>
+</html>

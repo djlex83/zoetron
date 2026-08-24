@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2124 Fakten** · Stand 2026-08-24 19:09 UTC · aktualisiert bei jedem Herzschlag
+**2129 Fakten** · Stand 2026-08-24 20:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 957
+- **dream:** 962
 - **swarm_artifact:** 633
 - **anti_pattern:** 172
 - **last_swarm_goal:** 148
@@ -18,6 +18,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:202608242008:5`
+*24.08. 20:08 UTC · Quelle: dream*
+
+Football metric regresses (-1.66pp) despite evolution cycles, revealing misalignment between optimization objective and evaluation metric.
+
+### `dream:202608242008:4`
+*24.08. 20:08 UTC · Quelle: dream*
+
+Core interface gaps (e.g., MemoryStore.add_fact) break downstream automation like GitHub issue sync.
+
+### `dream:202608242008:3`
+*24.08. 20:08 UTC · Quelle: dream*
+
+Evolution and swarm cycles repeatedly fail to converge, suggesting insufficient selection pressure or variant diversity.
+
+### `dream:202608242008:2`
+*24.08. 20:08 UTC · Quelle: dream*
+
+Calibration consistently underestimates actual scores by ~3 points, indicating a systematic bias in difficulty prediction.
+
+### `dream:202608242008:1`
+*24.08. 20:08 UTC · Quelle: dream*
+
+Provider rate limits (429) arrive in correlated bursts, making reactive model rotation insufficient without proactive backoff.
 
 ### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
 *24.08. 19:07 UTC · Quelle: evolution*

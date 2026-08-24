@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 19:08:55",
+ "stand": "2026-08-24 20:09:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -79,9 +79,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.791,
+ "haende_quote": 0.793,
  "simulationen_angewandt": 85,
  "swarm_scores": {
   "n": 38,

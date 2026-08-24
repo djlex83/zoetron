@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 19:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 20:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Football metric regresses (-1.66pp) despite evolution cycles, revealing misalignment between optimization objective and evaluation metric.
+- Core interface gaps (e.g., MemoryStore.add_fact) break downstream automation like GitHub issue sync.
+- Evolution and swarm cycles repeatedly fail to converge, suggesting insufficient selection pressure or variant diversity.
+- Calibration consistently underestimates actual scores by ~3 points, indicating a systematic bias in difficulty prediction.
+- Provider rate limits (429) arrive in correlated bursts, making reactive model rotation insufficient without proactive backoff.
 - The evolution run demonstrates that generating multiple variants and selecting via an incorruptible critic raises scores from 3/10 to ~8/10, proving t
 - Calibration showed a prediction of 5 versus actual 3 (error = 2), indicating overconfidence; updating predictions with observed outcomes yields better
 - Latency spans from ~6 s to >90 s, showing high variance; adaptive timeouts based on recent latency statistics reduce wasted waits.
@@ -51,11 +56,6 @@
 - 429 rate-limit failures are correlated across providers (stealth/ox-alpha and z-ai/glm-5.2:free fail within the same second), so immediate model rotat
 - The proposed best-of-n tool was rejected as a placeholder (generate() contained only stub code), revealing that skill proposals are being registered w
 - The Best-of-N goal failed to converge in 2 cycles partly because the swarm was throttled by 'conserve' metabolism (max_iterations=1), so test-time-com
-- Skill proposals keep accumulating (5 new this cycle) while the drive goal notes few were ever tested, indicating a proposal-to-validation bottleneck w
-- Metabolism conserve mode (max_tasks=3, max_iterations=1) was active during the swarm start, meaning resource-constrained runs are more likely to produ
-- The whisper 'Hebbisches Lernen im Graph' failed 3 times and was parked for creator decision, revealing that autonomous retries cannot resolve tasks re
-- The swarm run closed as act_done despite a convergence score of 3 because no quality gate exists between scoring and task completion — completion is c
-- Recurring 429 rate-limit failures across multiple OpenRouter models show that single-provider fallback chains collapse under load; success came only f
 
 ---
 
