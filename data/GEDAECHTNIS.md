@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2007 Fakten** · Stand 2026-08-24 14:34 UTC · aktualisiert bei jedem Herzschlag
+**2023 Fakten** · Stand 2026-08-24 15:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 912
-- **swarm_artifact:** 601
-- **anti_pattern:** 156
-- **last_swarm_goal:** 140
-- **strategy:** 99
-- **last_swarm_critique:** 80
+- **dream:** 917
+- **swarm_artifact:** 607
+- **anti_pattern:** 158
+- **last_swarm_goal:** 141
+- **strategy:** 100
+- **last_swarm_critique:** 81
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,86 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:embedding_recall_statt_reinem_wortvergleich`
+*24.08. 15:08 UTC · Quelle: evolution*
+
+Benchmark-driven bootstrap: Let the test fixture itself populate the store - Variant 1 inverts the dependency so the benchmark itself guarantees its own preconditions via a setup fixture that seeds exactly the 11 ground-truth facts through embedding_recall'
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:2`
+*24.08. 15:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Self-healing ingestion pipeline with schema validation - Build an ingestion layer that validates coverage before scoring: embedding_recall.py loads facts from a versioned facts.json file (containing IDs 1-11), runs an ingest(
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:0`
+*24.08. 15:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Single Source of Truth: Move ground-truth facts into a shared data module - Extract the canonical facts (IDs 1-11: capital of France, Hamlet, human bones, water formula, French Revolution year, etc.) from benchmark.py into a 
+
+### `swarm_artifact:Create populate_test_data.py: Generate 10k synthetic facts f`
+*24.08. 15:07 UTC · Quelle: builder*
+
+[score 3] ```python #!/usr/bin/env python3 """ populate_test_data.py - Generate ~10,000 diverse synthetic facts for scaling validation.  Generates semantically distinct but structurally similar fa
+
+### `swarm_artifact:Create benchmark.py: 20 fixed test queries with ground truth`
+*24.08. 15:07 UTC · Quelle: builder*
+
+[score 3] ```python #!/usr/bin/env python3 """ benchmark.py - Fixed benchmark suite for the embedding_recall module.  Runs 20 fixed test queries against a pre-populated SQLite fact DB via embeddin
+
+### `swarm_artifact:Create embedding_recall.py: SQLite + sentence-transformers +`
+*24.08. 15:07 UTC · Quelle: builder*
+
+[score 3] ```python #!/usr/bin/env python3 """ embedding_recall.py - Semantic fact storage and retrieval using sentence embeddings.  Uses SQLite for persistence and sentence-transformers (all-Mini
+
+### `last_swarm_critique`
+*24.08. 15:07 UTC · Quelle: critic*
+
+score=3; issues=CRITICAL integration failure: benchmark.py ground truth references fact IDs 1-11 (capital of France, Hamlet, human bones, water formula, French Revolution year, etc.), but embedding_recall.py's only seeding path (_demo) inserts 5 completely dif
+
+### `swarm_artifact:Create populate_test_data.py: Generate 10k synthetic facts f`
+*24.08. 15:06 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ populate_test_data.py - Generate ~10,000 diverse synthetic facts for scaling validation.  Generates semantically distinct but structurally similar facts across 10 
+
+### `swarm_artifact:Create benchmark.py: 20 fixed test queries with ground truth`
+*24.08. 15:03 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ benchmark.py - Fixed benchmark suite for the embedding_recall module.  Runs 20 fixed test queries against a pre-populated SQLite fact DB via embedding_recall.searc
+
+### `swarm_artifact:Create embedding_recall.py: SQLite + sentence-transformers +`
+*24.08. 15:02 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ embedding_recall.py - Semantic fact storage and retrieval using sentence embeddings.  Uses SQLite for persistence and sentence-transformers (all-MiniLM-L6-v2) for 
+
+### `last_swarm_goal`
+*24.08. 15:00 UTC · Quelle: system*
+
+Embedding-Recall statt reinem Wortvergleich
+
+### `dream:202608241459:5`
+*24.08. 14:59 UTC · Quelle: dream*
+
+High token cost with low outcome (e.g., 132s/261-token calls after a failed run) suggests repeated re-simulation from scratch because no swarm checkpoint persists goal state, revisions, and phase between cycles.
+
+### `dream:202608241459:4`
+*24.08. 14:59 UTC · Quelle: dream*
+
+Five skill proposals were generated but none were tested or adopted, revealing a proposal-to-adoption gap where skills accumulate without any execution loop.
+
+### `dream:202608241459:3`
+*24.08. 14:59 UTC · Quelle: dream*
+
+Pruning retired 0 facts and 0 events while identical drive goals regenerate across sleep cycles, indicating goal satisfaction is never linked to evidence and stale goals are never closed.
+
+### `dream:202608241459:2`
+*24.08. 14:59 UTC · Quelle: dream*
+
+The hard failure 'MemoryStore has no attribute add_fact' in hands-execute shows the fact-persistence API is broken or renamed, so every pipeline stage that should record facts silently produces zero durable memory.
+
+### `dream:202608241459:1`
+*24.08. 14:59 UTC · Quelle: dream*
+
+The swarm converged=false at score 2 despite an evolution run producing a 9/10 winner (variant index 1), meaning the winning variant was never actually executed or its output was lost before scoring.
 
 ### `strategy:extern_quote_in_drive__raus_aus_der_selbst_schleif`
 *24.08. 14:34 UTC · Quelle: evolution*
