@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 02:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 02:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The largest quality jump (score 1 to 9) came from generating variants that addressed the critic's sole blocking issue ('No evidence'), proving that at
+- The calibration record shows systematic overconfidence on submission-style tasks (predicted 3 vs actual 1, abs_error 2), meaning self-predicted scores
+- Model reliability fluctuates call-to-call (stealth/ox-alpha and nemotron both alternated success and 429/overload failures), so routing decisions must
+- An HTTP 200 response does not imply success: nvidia/nemotron returned status 200 with zero choices due to upstream Nvidia overload, so responses must 
+- HTTP 429 rate-limit failures dominate across all free-tier OpenRouter models, and immediate retries of the same model within seconds fail repeatedly, 
 - 13 model failures against 100 successes are concentrated in transient provider-side rate limits, not prompt or logic errors, so failure analysis shoul
 - Dream-generated knowledge like the contract-check procedure remains inert unless explicitly converted into an executable validation step in the task p
 - Pre-execution simulation that returns 'revise' with concrete revisions caught 3 risks before the football submission was attempted, validating simulat
@@ -51,11 +56,6 @@
 - The Hermes bridge burned 3 attempts without convergence because no written interface contract existed before coding started; a spec-first approach wou
 - Latency scaled almost linearly with output size (176 tokens -> 4.5s vs 8526 tokens -> 221s), making max_tokens caps per task class the cheapest latenc
 - Five distinct free models returned 429 within the same second, indicating account/IP-level throttling rather than per-model quotas, so rotating models
-- The Hermes bridge auto-parked after 3 non-convergent attempts instead of looping, validating the 3-strike parking rule as the default escape hatch for
-- The football goal advanced only after its scope was shrunk to one file passing bewerte.py, confirming that the smallest evaluator-passing artifact is 
-- Successful call latency scaled with output size (4.5s at 176 output tokens vs 221s at 8526 output tokens), so uncapped generation is the main latency 
-- Model errors require class-specific handling: 429 means backoff-and-rotate, 403 means permanent blacklist, 502 means one retry then skip - a single ge
-- 429 rate-limit errors clustered across five different free-tier models within seconds, proving that fallback within the same free pool is useless - fa
 
 ---
 
