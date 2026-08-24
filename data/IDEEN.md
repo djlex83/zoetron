@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 18:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-24 19:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,6 +29,7 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Träume für neue Fähigkeiten nutzen *(wieder aufgegriffen: 2×)*
 - Modellfehler vermeiden *(wieder aufgegriffen: 2×)*
@@ -37,10 +38,14 @@
 - Schwärme zuverlässig abschließen *(wieder aufgegriffen: 2×)*
 - Schwärme zuverlässiger zum Abschluss bringen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
-- Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The evolution run demonstrates that generating multiple variants and selecting via an incorruptible critic raises scores from 3/10 to ~8/10, proving t
+- Calibration showed a prediction of 5 versus actual 3 (error = 2), indicating overconfidence; updating predictions with observed outcomes yields better
+- Latency spans from ~6 s to >90 s, showing high variance; adaptive timeouts based on recent latency statistics reduce wasted waits.
+- 502 upstream overload errors indicate occasional service instability, so a fallback model pool with health checks improves reliability.
+- Frequent 429 errors reveal that request rate exceeds API limits, necessitating built‑in throttling and exponential back‑off.
 - Skill proposals accumulate repeatedly across dream cycles (backoff, circuit breaker, pre-flight checks) without being implemented or tested, creating 
 - The fallback chain works but is slow and unpredictable (21s, 27s, 63s latencies), indicating latency-aware routing should be part of model selection r
 - 429 rate-limit failures are correlated across providers (stealth/ox-alpha and z-ai/glm-5.2:free fail within the same second), so immediate model rotat
@@ -51,11 +56,6 @@
 - The whisper 'Hebbisches Lernen im Graph' failed 3 times and was parked for creator decision, revealing that autonomous retries cannot resolve tasks re
 - The swarm run closed as act_done despite a convergence score of 3 because no quality gate exists between scoring and task completion — completion is c
 - Recurring 429 rate-limit failures across multiple OpenRouter models show that single-provider fallback chains collapse under load; success came only f
-- Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively dead weight and its criteria need recalibration against a
-- Reflex mode (single known-good script, no model call) succeeded in 15s where deliberative loops take minutes, confirming that well-defined goals shoul
-- Goals fail by non-convergence rather than by error when the approach itself is wrong: 'Embedding-Recall' burned 3 attempts and got parked, suggesting 
-- The hand_action failure was caused by a code-level API mismatch (MemoryStore has no 'add_fact' attribute), meaning tool/interface drift between module
-- 429/502 errors arrive in correlated bursts across multiple models simultaneously (stealth/ox-alpha and z-ai/glm-5.2 failed within the same second), so
 
 ---
 

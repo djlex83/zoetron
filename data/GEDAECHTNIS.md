@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2112 Fakten** · Stand 2026-08-24 18:42 UTC · aktualisiert bei jedem Herzschlag
+**2124 Fakten** · Stand 2026-08-24 19:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 952
-- **swarm_artifact:** 631
-- **anti_pattern:** 170
-- **last_swarm_goal:** 147
-- **strategy:** 106
-- **last_swarm_critique:** 87
+- **dream:** 957
+- **swarm_artifact:** 633
+- **anti_pattern:** 172
+- **last_swarm_goal:** 148
+- **strategy:** 107
+- **last_swarm_critique:** 88
 - **creator_teaching:** 8
 - **frontier:** 3
 - **artifact:** 3
@@ -18,6 +18,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*24.08. 19:07 UTC · Quelle: evolution*
+
+Gradient-boosted trees on continuous Elo-derived and schedule features — replace binning/clamping wi - Variant 0 is theoretically elegant but the nested walk-forward Bayesian optimization over a full hierarchical model is computationally expensive and fragile 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fußball: die Basislinie :2`
+*24.08. 19:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Ensemble-of-specialists with dynamic weight learning — attack uncertainty direct - Instead of one tuned model, train multiple structurally diverse base predictors: (1) an Elo-based Bradley-Terry/Davidson model with exponentia
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fußball: die Basislinie :0`
+*24.08. 19:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Nonparametric Bayesian model with full hyperparameter optimization via nested ti - Abandon hand-set hyperparameters entirely: build a hierarchical Bayesian model (e.g., bivariate Poisson / ordered logistic on goals or outcome
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*24.08. 19:06 UTC · Quelle: builder*
+
+[score 6] # ARTEFAKT · ELO + EMPIRISCHE KALIBRIERUNG (v2)  Elo-Rückgrat mit Tordifferenz-Multiplikator, Saison-Rückkehr zum Mittelwert und einer empirischen Kalibrierungstabelle, die aus den Train
+
+### `last_swarm_critique`
+*24.08. 19:06 UTC · Quelle: critic*
+
+score=6; issues=Hyperparameters (K, HEIM, RETAIN, MARGIN, BINW, NBI, PRIOR) are hardcoded without any tuning/validation procedure; no cross-validation or optimization shown.; Calibration prior is arbitrary (fixed 40 pseudo-counts with a global A/D/H distributi
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*24.08. 19:05 UTC · Quelle: builder*
+
+# ARTEFAKT · ELO + EMPIRISCHE KALIBRIERUNG (v2)  Elo-Rückgrat mit Tordifferenz-Multiplikator, Saison-Rückkehr zum Mittelwert und einer empirischen Kalibrierungstabelle, die aus den Trainingsdaten die 
+
+### `last_swarm_goal`
+*24.08. 18:59 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:202608241859:5`
+*24.08. 18:59 UTC · Quelle: dream*
+
+The evolution run demonstrates that generating multiple variants and selecting via an incorruptible critic raises scores from 3/10 to ~8/10, proving the value of Best‑of‑N evaluation.
+
+### `dream:202608241859:4`
+*24.08. 18:59 UTC · Quelle: dream*
+
+Calibration showed a prediction of 5 versus actual 3 (error = 2), indicating overconfidence; updating predictions with observed outcomes yields better estimates.
+
+### `dream:202608241859:3`
+*24.08. 18:59 UTC · Quelle: dream*
+
+Latency spans from ~6 s to >90 s, showing high variance; adaptive timeouts based on recent latency statistics reduce wasted waits.
+
+### `dream:202608241859:2`
+*24.08. 18:59 UTC · Quelle: dream*
+
+502 upstream overload errors indicate occasional service instability, so a fallback model pool with health checks improves reliability.
+
+### `dream:202608241859:1`
+*24.08. 18:59 UTC · Quelle: dream*
+
+Frequent 429 errors reveal that request rate exceeds API limits, necessitating built‑in throttling and exponential back‑off.
 
 ### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
 *24.08. 18:41 UTC · Quelle: evolution*
