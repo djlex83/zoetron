@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1384 Neuronen · 22249 bewertete Synapsen
+Stand: 1392 Neuronen · 22544 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,12 +10,12 @@ Stand: 1384 Neuronen · 22249 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 125 | 0.26 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 127 | 0.23 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 127 | 0.23 |
-| 4 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 110 | 0.27 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 127 | 0.23 |
-| 6 | 💭 | Model latency varies by 27× (13s–355s) without automatic failove… | 107 | 0.27 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 127 | 0.26 |
+| 2 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 112 | 0.27 |
+| 3 | 💭 | Model latency varies by 27× (13s–355s) without automatic failove… | 109 | 0.27 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge erf“ (Note 4/1… | 127 | 0.23 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei den GitHub-Au“ (Note 4/1… | 127 | 0.23 |
+| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Ersten Swarm-Lauf mit Sc“ (Note 3/1… | 127 | 0.23 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: erste eigene Ei“ (Note 1/1… | 127 | 0.23 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Simulationsergebnisse di“ (Note 3/1… | 127 | 0.23 |
 | 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 127 | 0.22 |

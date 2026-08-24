@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-24 01:37:01",
+ "stand": "2026-08-24 02:06:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -18,12 +18,6 @@
    "tool": "träume-und-simulationen-besser-nutzen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "dedup_skill_proposals.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -93,8 +87,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.807,
- "simulationen_angewandt": 95,
+ "haende_quote": 0.804,
+ "simulationen_angewandt": 96,
  "swarm_scores": {
   "n": 54,
   "best": 8.0,

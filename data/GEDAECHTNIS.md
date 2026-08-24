@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**1641 Fakten** · Stand 2026-08-24 01:37 UTC · aktualisiert bei jedem Herzschlag
+**1648 Fakten** · Stand 2026-08-24 02:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 712
-- **swarm_artifact:** 514
+- **dream:** 717
+- **swarm_artifact:** 515
 - **anti_pattern:** 138
-- **last_swarm_goal:** 102
+- **last_swarm_goal:** 103
 - **strategy:** 90
 - **last_swarm_critique:** 66
 - **creator_teaching:** 8
@@ -18,6 +18,41 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Rekonstruktion: bewerte.py-Kontrakt und Datenlayout lesen`
+*24.08. 02:04 UTC · Quelle: builder*
+
+# ARTEFAKT [build · recon] — `_recon_kontrakt.json`: Kontrakt & Datenlayout von `bewerte.py`  **Strategie:** systematic-exploration-first · **Versuch:** 1/3 · **Prinzip:** Der Evaluator ist die Wahrhe
+
+### `last_swarm_goal`
+*24.08. 01:51 UTC · Quelle: system*
+
+Fußball: erste eigene Einreichung, die bewerte.py besteht
+
+### `dream:202608240150:5`
+*24.08. 01:50 UTC · Quelle: dream*
+
+Free-tier rate limits (429) on backup models eliminate fallback capacity exactly when primary model degrades.
+
+### `dream:202608240150:4`
+*24.08. 01:50 UTC · Quelle: dream*
+
+MemoryStore interface drift (missing add_fact) breaks hand actions silently — no schema validation at component boundaries.
+
+### `dream:202608240150:3`
+*24.08. 01:50 UTC · Quelle: dream*
+
+Simulation 'revise' verdicts are applied but not re-verified before swarm launch, allowing known risks to persist into execution.
+
+### `dream:202608240150:2`
+*24.08. 01:50 UTC · Quelle: dream*
+
+Swarm fails to converge (score 2/10) despite evolution because critic:builder ratio (1:5) lets flawed implementations propagate unchecked.
+
+### `dream:202608240150:1`
+*24.08. 01:50 UTC · Quelle: dream*
+
+Model latency variance (7.5–52s) on the same free tier causes unpredictable swarm cycle times and timeout cascades.
 
 ### `strategy:fußball__erste_eigene_einreichung__die_bewerte_py_`
 *24.08. 01:36 UTC · Quelle: evolution*
