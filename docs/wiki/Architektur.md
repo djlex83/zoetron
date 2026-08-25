@@ -5,7 +5,7 @@ Gedächtnis (`data/memory/`), Verhalten in Organen (`src/zoetron/*.py`),
 Taktgebung im Herzschlag-Daemon.
 
 ```
-            ┌─────────────── HERZ (15 min) ──────────────┐
+            ┌─────────────── HERZ (30 min) ──────────────┐
             ▼                                            │
   REFLEX ─► PRUNE ─► DREAM ─► DRIVE ─► ACT(Swarm) ─► Telegram/Git
     │         │        │        │         │            ▼

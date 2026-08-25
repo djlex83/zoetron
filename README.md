@@ -38,7 +38,7 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 
 | Organ | Nature analog | File | What it does |
 |---|---|---|---|
-| 💓 HEART | heartbeat | `heartbeat_daemon.sh` | every **40 min** (~36/day): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HANDS) → TELEGRAM proof → GRAPH+3D-BRAIN → RETRO → WILL → GENOME → TEACH → SELF-LEARN → IDEAS → git/wiki sync |
+| 💓 HEART | heartbeat | `heartbeat_daemon.sh` | every **30 min** (48/day): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HANDS) → FOOTBALL SCORING → WILL → GENOME → TEACH → SELF-LEARN → TELEGRAM → IDEAS → LEADERBOARD → GRAPH+3D-BRAIN → SELF-DIAGNOSIS → RETRO → git/wiki sync |
 | 🧬 GENOME | innate DNA | `genome.py` | **5 instinct rules** (`data/genome.json`) injected into *every* LLM prompt — protect memory, creator first, self-preservation watchdog, honesty, learn from every failure |
 | 🔥 DRIVE | curiosity/drive | `drive.py` | generates **its own goals** from memory gaps — in plain German, with a human-readable "why" |
 | 💭 DREAM | sleep/replay | `dream.py` | distills experiences into lasting insights + skill proposals |
@@ -58,17 +58,27 @@ Goal ──► PLAN ──► SIMULATE ──► SELF-ASSESS ──► BUILD ─
 | ⚡ REFLEX PATH | spinal cord | ACT-first logic | checks the toolbelt **before** the LLM thinks — token-free runs for known work; 6 h throttle per goal+tool combo (no spam) |
 | 🛡 CRITIC | adaptive immunity | `swarm.py` | adversarial quality gate (score 0–10); demands runnable code, not prose |
 | 💬 WHISPER | human voice | `data/fluester_goals.json` | human priority goals jump the queue (logged as `drive_whisper`) |
+| 🧬 INHERITANCE | heredity | `vererbung.py` | hands the next attempt its **own best measured** submission plus the instruction *change exactly one thing* — before this, every run started from the same toy scaffold and nothing was ever inherited |
+| 🩺 SELF-DIAGNOSIS | pain receptors | `selbstdiagnose.py` | parses the heartbeat log for crashes, timeouts and tracebacks (organ, error class, file:line) and files them as memory events — a crashed phase used to be *absent* to RETRO, not *failed* |
+| 🛤 PATHWAYS | Hebbian synapses | `bahnen.py` | persistent weighted edge table with a **dopamine gate**: only runs that produced runnable code strengthen a connection; unconfirmed links decay to nothing in 4 days |
+| 😴 REPLAY | sleep consolidation | `nachspiel.py` | in DREAM, re-scores earlier traces once the *external* measurement has moved — the critic alone is never allowed to reinforce a pathway |
+| ⚖️ EXTERNAL PROOF | incorruptible judge | `externer_beweis.py` | a goal can be closed only by a measurement outside the system; if the critic says converged and the measurement disagrees, **the measurement wins** |
+| 🧯 CONTRADICTION GUARD | immune tolerance | `widerspruch.py` | archives tool-call noise and key collisions in PRUNE — archived, never deleted |
+| 🔌 ACCOUNT LOCK | hibernation | `kontosperre.py` | detects a rate-limited account (needs *all* candidates failing on account errors, 3+ pieces of evidence), sleeps until the reset time, wakes itself |
+| 🧱 SHIELD | blood-brain barrier | `schutzwall.py` | guards `os.remove`/`rmtree`/`rename` outside the sandbox for executed snippets — protection against accident, explicitly **not** a security boundary |
+| 🚦 TOOL ADMISSION | quality control | `werkzeugpruefung.py` | five rules decide what may enter the toolbox; rejects go to `data/tools_abgelehnt/`, never to the bin |
+| 🩻 AUTOROUTER | immune system | `router.py`, `model_health.py` | ranks free models by **measured** failure rate and latency, not by metadata; a model that never answers no longer holds a slot |
 | 🧠 Memory | hippocampus | `memory.py` | JSONL facts + event log + keyword recall; auto-deduplicated |
 
 ## The Autonomous Loop
 
-Every **40 minutes** (~36 cycles/day), Zoetron runs a full developer cycle
+Every **30 minutes** (48 cycles/day), Zoetron runs a full developer cycle
 **without human input** — and *thinks about itself* while doing it.
 Telegram reports arrive once per beat so the
 thinking never spams the human:
 
 ```
-HERZSCHLAG (every 40 min)
+HERZSCHLAG (every 30 min)
  ├─ ⚡ REFLEX   toolbelt first — known work runs token-free (6 h throttle)
  ├─ ✂️ PRUNE    archive stale memories
  ├─ 💭 DREAM    distill new insights + skill ideas from recent experience
@@ -78,9 +88,11 @@ HERZSCHLAG (every 40 min)
  │     score < 8: evolution breeds better strategies, losers become
  │                forbidden anti-patterns, winners are inherited
  ├─ ✋ HANDS    artifact code executed in a sandbox; successes become tools
- ├─ 📱 TELEGRAM posts the proof of execution (every 3rd beat)
+ ├─ 📱 TELEGRAM posts the proof of execution (every beat)
+ ├─ ⚽ SCORING  an external judge grades football submissions — no LLM involved
  ├─ 🕸 GRAPH    rebuilds the live knowledge graph — semantic synapses
  ├─ 💡 IDEAS    refreshes the public ideas board (its own inventions!)
+ ├─ 🩺 DIAGNOSE reads its own log for crashes and files them as events
  └─ 🪞 RETRO    reviews its own cycles: "what went well / badly?"
                findings are stored as lessons for future planners
 ```
@@ -93,7 +105,7 @@ HERZSCHLAG (every 40 min)
 - **Public self-management:** issues, label kanban, releases, wiki and the
   landing page are maintained by the organism itself.
 
-### 💡 What it thinks about every 40 minutes
+### 💡 What it thinks about every 30 minutes
 
 Every heartbeat generates fresh ideas you can watch grow in the open:
 
@@ -134,7 +146,7 @@ python -m zoetron.cli status   # self-model & calibration
 
 Configured via `.env`: `OPENROUTER_API_KEY` and `ZOETRON_MODEL=auto`
 (AutoRouter = model immortality). Without an API key: deterministic mock brain,
-all **67 tests** pass fully offline. `ZOETRON_MODEL=auto` automatically discovers
+all **168 tests** pass fully offline. `ZOETRON_MODEL=auto` automatically discovers
 every free tool-capable OpenRouter model and learns from its own runs which ones
 perform well.
 

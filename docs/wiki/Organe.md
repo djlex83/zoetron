@@ -2,7 +2,7 @@
 
 | Organ | Datei | Aufgabe |
 |---|---|---|
-| 💓 HERZ | `scripts/heartbeat_daemon.sh` | 5-Minuten-Takt (~288/Tag), fährt alle Phasen: REFLEX → PRUNE → DREAM → DRIVE → ACT → TELEGRAM → GRAPH+3D-GEHIRN → IDEEN → RETRO → WILLE → GENOM → LEHREN → SELBSTLERNEN → git/wiki |
+| 💓 HERZ | `scripts/heartbeat_daemon.sh` | **30-Minuten-Takt** (48/Tag, `TAKT=1800`), fährt alle 19 Phasen: REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → FUSSBALL-MESSUNG → WILLE → GENOM → LEHREN → SELBSTLERNEN → TELEGRAM → IDEEN → BESTENLISTE → GEDÄCHTNIS-ANSICHT → GIT → GRAPH+3D-GEHIRN → SELBSTDIAGNOSE → RETRO → WIKI |
 | 🧬 GENOM | `genome.py` | 5 angeborene Instinkt-Regeln (`data/genome.json`) in jedem LLM-Prompt + Selbsterhalt-Watchdog |
 | 📖 LEHRER | `teacher.py` | Erschaffer-Wissen (`data/lehrer.json`) wird zu `creator_teaching:`-Fakten – höchste Autorität nach dem Genom |
 | 🧠 SELBSTLERNEN | `selflearn.py` | statistisches Lernen ohne LLM: Tool-Erfolgsquoten, Score-Historie → strategy/anti_pattern-Fakten |
@@ -23,6 +23,17 @@
 | ⚖️ CRITIC | in `swarm.py` | bewertet Artefakte 0–10 |
 | 🕸 GRAPH+BRAIN | `graph.py`, `graph_view.py`, `brain_view.py` | Wissensnetz als 2D-Physik-View + 3D-Gehirn (Hemisphären, Synapsen-Pulse, Alters-Farbverlauf); **semantisches Linking**: Synapsen nach TF-IDF-Bedeutung (Kosinus ≥ 0,18) statt Wortgleichheit – ~4.800 Synapsen, deutsche Klartext-Panels mit 700-Zeichen-Texten |
 | 💡 IDEEN | `ideen.py` | sammelt seine eigenen autonomen Ideen (72 h): Fähigkeits-Wünsche ×Häufigkeit, eigene Ziele, Traum-Erkenntnisse → `data/IDEEN.md` + Wiki „Ideen" |
+| 🧬 VERERBUNG | `vererbung.py` | ersetzt das Spielzeug-Gerüst im Flüster-Auftrag durch die **eigene beste gemessene** Einreichung („ändere genau eine Sache und miss nach"). Quelle ist ausschließlich `ergebnisse.jsonl`, nie der Kritiker; passt der Bestwert nicht ins Budget, wird der nächstbeste genommen und das Überspringen **im Auftrag benannt** |
+| 🩺 SELBSTDIAGNOSE | `selbstdiagnose.py` | liest den neuen Teil von `heartbeat.log` und legt Abstürze, Zeitgrenzen und Tracebacks als Ereignis + Fakt `aktuell_organfehler` ab. Läuft vor RETRO, damit RETRO die Fehler desselben Zyklus sieht. Das Ereignis wird **auch bei null Befunden** geschrieben — sonst sähen „keine Fehler" und „lief gar nicht" gleich aus |
+| 🛤 BAHNEN | `bahnen.py` | dauerhafte gewichtete Kantentabelle (SQLite) mit **Dopamin-Tor**: nur ein Lauf mit lauffähigem Code stärkt eine Verbindung, Score 4–7 bewegt bewusst nichts. Zerfall 0,98/Schlag — eine einzeln gelegte Kante ist nach 4,0 Tagen weg |
+| 😴 NACHSPIEL | `nachspiel.py` | Replay in DREAM: belohnt frühere Spuren erst, wenn die **externe** Messung sich verbessert hat. Der erste Blick auf einen Prüfer belohnt nichts — aus fehlender Evidenz zu lernen wäre genau der Fehler, gegen den das Tor gebaut ist |
+| ⚖️ EXTERNER BEWEIS | `externer_beweis.py` | ein Flüster-Ziel mit `_beweis` wird von einem Prüfer außerhalb des Systems abgehakt. Sagt der Kritiker „konvergiert" und die Messung nein, **gewinnt die Messung** |
+| 🧯 WIDERSPRUCH | `widerspruch.py` | sortiert in PRUNE Werkzeugaufruf-Müll und Schlüsselkollisionen aus — nach `memory/aussortiert.jsonl`, nicht in den Müll |
+| 🔌 KONTOSPERRE | `kontosperre.py` | erkennt ein ausgeschöpftes Konto (nur wenn **alle** Kandidaten am Konto scheitern, ≥ 3 Belege), schläft bis zum Rücksetzzeitpunkt aus `X-RateLimit-Reset` und weckt sich selbst |
+| 🧱 SCHUTZWALL | `schutzwall.py` | bewacht `os.remove`/`rmtree`/`rename` außerhalb der Sandbox. **Ehrliche Grenze:** Schutz gegen Versehen, keine Sicherheitsgrenze — ein Unterprozess umgeht ihn |
+| 🚦 WERKZEUGPRÜFUNG | `werkzeugpruefung.py` | fünf Regeln entscheiden über die Aufnahme in die Werkzeugkiste; Regel 0 legt alles Löschende dem Erschaffer vor. Abgelehntes nach `data/tools_abgelehnt/` |
+| 🩻 AUTOROUTER | `router.py`, `model_health.py` | sortiert freie Modelle nach **gemessener** Fehlerquote und Antwortzeit; harte Vorzugsreihenfolge des Erschaffers schlägt jede Heuristik |
+| ⚽ FUSSBALL-MESSUNG | `/workspace/fussball/einsammeln.py` | der erste Kritiker, der kein Sprachmodell ist: sammelt Artefakte mit `trainiere()`/`vorhersage()` ein und lässt `bewerte.py` sie gegen 13.445 echte Spiele rechnen |
 | 🧠 Gedächtnis | `memory.py` | JSONL-Fakten + Ereignisse + Recall; auto-dedupliziert |
 
 ## Der Swarm-Zyklus

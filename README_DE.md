@@ -38,7 +38,7 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 
 | Organ | Natur-Vorbild | Datei | Was es tut |
 |---|---|---|---|
-| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **40 Min** (~36/Tag): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → TELEGRAM-Beweis → GRAPH+3D-GEHIRN → RETRO → WILLE → GENOM → LEHREN → SELBSTLERNEN → IDEEN → git/wiki-Sync |
+| 💓 HERZ | Herzschlag | `heartbeat_daemon.sh` | alle **30 Min** (48/Tag): REFLEX → PRUNE → DREAM → DRIVE → ACT (+HÄNDE) → FUSSBALL-MESSUNG → WILLE → GENOM → LEHREN → SELBSTLERNEN → TELEGRAM → IDEEN → BESTENLISTE → GRAPH+3D-GEHIRN → SELBSTDIAGNOSE → RETRO → git/wiki-Sync |
 | 🧬 GENOM | angeborene DNA | `genome.py` | **5 Instinkt-Regeln** (`data/genome.json`) in *jedem* LLM-Prompt – schütze Gedächtnis, Erschaffer zuerst, Selbsterhalt-Watchdog, Ehrlichkeit, aus jedem Fehler lernen |
 | 🔥 DRIVE | Neugier/Trieb | `drive.py` | generiert **eigene Ziele** aus Gedächtnislücken – auf Deutsch mit verständlichem „Why" |
 | 💭 DREAM | Schlaf/Replay | `dream.py` | destilliert Erlebnisse zu dauerhaften Einsichten + Skill-Vorschlägen |
@@ -58,17 +58,27 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 | ⚡ REFLEX-PFAD | Rückenmark | ACT-Logik | prüft die Werkzeugkiste **bevor** das LLM denkt – token-freie Läufe für Bekanntes; 6-h-Drossel je Ziel+Werkzeug (kein Spam) |
 | 🛡 CRITIC | Abwehr | `swarm.py` | Qualitätsgate (Score 0–10); **verlangt lauffähigen Code, keine Prosa** |
 | 💬 FLÜSTER-KANAL | Menschenstimme | `data/fluester_goals.json` | menschliche Prioritätsziele springen in der Queue nach vorn (`drive_whisper`) |
+| 🧬 VERERBUNG | Erblichkeit | `vererbung.py` | übergibt dem nächsten Anlauf die **eigene beste gemessene** Einreichung samt Auftrag *ändere genau eine Sache* — vorher startete jeder Lauf beim selben Spielzeug-Gerüst, vererbt wurde nie etwas |
+| 🩺 SELBSTDIAGNOSE | Schmerzrezeptoren | `selbstdiagnose.py` | liest das Herzschlag-Protokoll nach Abstürzen, Zeitgrenzen und Tracebacks (Organ, Fehlerklasse, Datei:Zeile) und legt sie als Ereignis ab — eine abgestürzte Phase war für RETRO bisher nicht *fehlgeschlagen*, sondern *nicht vorhanden* |
+| 🛤 BAHNEN | Hebbsche Synapsen | `bahnen.py` | dauerhafte gewichtete Kantentabelle mit **Dopamin-Tor**: nur Läufe mit lauffähigem Code stärken eine Verbindung, Unbestätigtes zerfällt in 4 Tagen auf null |
+| 😴 NACHSPIEL | Schlaf-Konsolidierung | `nachspiel.py` | bewertet in DREAM frühere Spuren nach, sobald die **externe** Messung sich bewegt hat — der Kritiker allein darf nie eine Bahn verstärken |
+| ⚖️ EXTERNER BEWEIS | unbestechlicher Prüfer | `externer_beweis.py` | ein Ziel gilt erst als erreicht, wenn eine Messung außerhalb des Systems es sagt; widerspricht sie dem Kritiker, **gewinnt die Messung** |
+| 🧯 WIDERSPRUCHS-WÄCHTER | Immuntoleranz | `widerspruch.py` | räumt in PRUNE Werkzeugaufruf-Müll und Schlüsselkollisionen aus dem Gedächtnis — archiviert, nie gelöscht |
+| 🔌 KONTOSPERRE | Winterschlaf | `kontosperre.py` | erkennt ein ausgeschöpftes Konto (nur wenn **alle** Kandidaten am Konto scheitern, mit 3+ Belegen), schläft bis zum Rücksetzzeitpunkt und weckt sich selbst |
+| 🧱 SCHUTZWALL | Blut-Hirn-Schranke | `schutzwall.py` | bewacht `os.remove`/`rmtree`/`rename` außerhalb der Sandbox — Schutz gegen Versehen, ausdrücklich **keine** Sicherheitsgrenze |
+| 🚦 WERKZEUGPRÜFUNG | Qualitätskontrolle | `werkzeugpruefung.py` | fünf Regeln entscheiden, was in die Werkzeugkiste darf; Abgelehntes geht nach `data/tools_abgelehnt/`, nicht in den Müll |
+| 🩻 AUTOROUTER | Immunsystem | `router.py`, `model_health.py` | sortiert freie Modelle nach **gemessener** Fehlerquote und Antwortzeit statt nach Metadaten; wer nie antwortet, hält keinen Platz mehr |
 | 🧠 Gedächtnis | Hippocampus | `memory.py` | JSONL-Fakten + Ereignis-Log + Keyword-Recall; automatisch dedupliziert |
 
 ## Der autonome Kreislauf
 
-Alle **40 Minuten** (~36 Zyklen/Tag) läuft Zoetron einen vollständigen
+Alle **30 Minuten** (48 Zyklen/Tag) läuft Zoetron einen vollständigen
 Entwickler-Zyklus **ohne menschliches Zutun** – und denkt dabei über sich
 selbst nach. Telegram-Berichte kommen einmal je Schlag,
 damit das schnelle Denken den Menschen nicht zuspammt:
 
 ```
-HERZSCHLAG (alle 40 Min)
+HERZSCHLAG (alle 30 Min)
  ├─ ⚡ REFLEX   Werkzeugkiste zuerst – Bekanntes läuft ohne Token (6-h-Drossel)
  ├─ ✂️ PRUNE    alte Erinnerungen archivieren
  ├─ 💭 DREAM    neue Einsichten + Skill-Ideen aus frischen Erfahrungen
@@ -78,9 +88,11 @@ HERZSCHLAG (alle 40 Min)
  │     Score < 8: Evolution züchtet Strategien, Verlierer werden
  │                Verbotsliste (Anti-Patterns), Sieger werden vererbt
  ├─ ✋ HÄNDE    Artefakt-Code in der Sandbox ausgeführt; Erfolge werden Tools
- ├─ 📱 TELEGRAM postet den Ausführungs-Beweis (jeder 3. Schlag)
+ ├─ 📱 TELEGRAM postet den Ausführungs-Beweis (jeder Schlag)
+ ├─ ⚽ MESSUNG  ein externer Prüfer benotet Fußball-Einreichungen — ohne LLM
  ├─ 🕸 GRAPH    baut den Live-Wissensgraph neu – semantische Synapsen
  ├─ 💡 IDEEN    erneuert das öffentliche Ideen-Board (seine eigenen Erfindungen!)
+ ├─ 🩺 DIAGNOSE liest das eigene Protokoll nach Abstürzen und legt sie ab
  └─ 🪞 RETRO   reviewt die eigenen Zyklen: „was lief gut / schlecht?"
                Lehren wandern ins Gedächtnis für künftige Planner
 ```
@@ -93,7 +105,7 @@ HERZSCHLAG (alle 40 Min)
 - **Öffentliche Selbstverwaltung:** Issues, Label-Kanban, Releases, Wiki und
   die Landing-Page pflegt der Organismus selbst.
 
-### 💡 Was es alle 40 Minuten denkt
+### 💡 Was es alle 30 Minuten denkt
 
 Jeder Herzschlag erzeugt frische Ideen, die öffentlich wachsen:
 
@@ -135,7 +147,7 @@ python -m zoetron.cli status   # Selbstmodell & Kalibrierung
 
 Konfiguration über `.env`: `OPENROUTER_API_KEY` und `ZOETRON_MODEL=auto`
 (AutoRouter = modell-unsterblich). Ohne Key: deterministisches Mock-Gehirn,
-alle **67 Tests** komplett offline grün. `ZOETRON_MODEL=auto` entdeckt automatisch
+alle **168 Tests** komplett offline grün. `ZOETRON_MODEL=auto` entdeckt automatisch
 alle kostenlosen Tool-fähigen OpenRouter-Modelle und lernt aus eigenen Läufen,
 welche gut sind.
 

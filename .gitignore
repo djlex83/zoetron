@@ -32,3 +32,6 @@ docs/memory.min.json
 
 # Gebahnte Verbindungen - Laufzeitzustand, kein Erschaffer-Wissen
 data/bahnen.sqlite3*
+
+# Laufzeitzustand der Selbstdiagnose (Byte-Versatz im Protokoll)
+data/selbstdiagnose.json

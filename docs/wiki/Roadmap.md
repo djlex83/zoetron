@@ -2,6 +2,7 @@
 
 ## Erreicht (2026-08-21)
 - [x] 21 Organe, 67/67 Tests, CI grün
+- [x] Stand 25.08.2026: **29 Organe, 168/168 Tests**, Takt 30 Min — neu: VERERBUNG, SELBSTDIAGNOSE, BAHNEN, NACHSPIEL, EXTERNER BEWEIS
 - [x] Herzschlag-Daemon in Hermes (REFLEX→…→ACT→Telegram→Push)
 - [x] Evolution an Swarm gekoppelt (Vererbung von Sieger-Strategien)
 - [x] Wochenreport + Impuls-Layer

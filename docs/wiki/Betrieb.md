@@ -5,10 +5,10 @@
 Der Daemon läuft als Hintergrundprozess auf dem Hermes-Host:
 
 ```
-bash scripts/heartbeat_daemon.sh   # alle 40 Min: REFLEX→PRUNE→DREAM→DRIVE→ACT→TG→GRAPH→IDEEN→RETRO→WILLE→GENOM→LEHREN→SELBSTLERNEN→Push
+bash scripts/heartbeat_daemon.sh   # alle 30 Min: REFLEX→PRUNE→DREAM→DRIVE→ACT→FUSSBALL→WILLE→GENOM→LEHREN→SELBSTLERNEN→TG→IDEEN→BESTENLISTE→GRAPH→SELBSTDIAGNOSE→RETRO→Push
 ```
 
-**Takt:** 40 Minuten (~36 Zyklen/Tag), Telegram einmal je Schlag.
+**Takt:** 30 Minuten (48 Zyklen/Tag, `TAKT=1800`), Telegram einmal je Schlag.
 
 Die Zahl kommt aus Messung, nicht aus Gefühl. Ein Schwarm-Zyklus braucht rund
 zehn Modellaufrufe; das bevorzugte Modell antwortet in ~124 s. Bei einer
@@ -25,7 +25,7 @@ Log: `data/heartbeat.log`
 |---|---|---|
 | WILLE-Missionen | 6 h zwischen Anstößen | im `will.py` |
 | REFLEX (Ziel+Werkzeug) | 6 h pro Kombination | `data/memory/reflex_last.json` |
-| TELEGRAM-Bericht | jeder 3. Herzschlag | Zähler im Daemon |
+| TELEGRAM-Bericht | jeder Herzschlag | Zähler im Daemon (Teiler 1) |
 
 ## Ideen-Board
 
