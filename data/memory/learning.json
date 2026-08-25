@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-25 20:39:15",
- "ereignisse_ausgewertet": 532,
+ "stand": "2026-08-25 21:08:39",
+ "ereignisse_ausgewertet": 571,
  "werkzeuge": [
   {
    "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
@@ -9,17 +9,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.556,
- "simulationen_angewandt": 16,
+ "haende_quote": 0.6,
+ "simulationen_angewandt": 17,
  "swarm_scores": {
-  "n": 12,
+  "n": 13,
   "best": 9.0,
-  "schnitt": 5.17
+  "schnitt": 5.0
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 12,
-   "schnitt": 5.17
+   "n": 13,
+   "schnitt": 5.0
   }
  }
 }

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 20:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 21:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,6 +26,7 @@
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
@@ -37,10 +38,14 @@
 - Vorgeschlagene Fähigkeiten wirklich nutzen
 - Simulationen in echtes Handeln überführen
 - Täglich neue Fähigkeiten üben
-- Fehler vermeiden und korrigieren
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three skill proposals were emitted in a burst with no mechanism to test any of them, confirming proposal generation currently outpaces validation capa
+- A single long model call (139.9s, ~6.8k output tokens) dominated the cycle's latency budget while short calls stayed under 3s, so cost control should 
+- The 'bahnen' step reported delta 0.0 and 0 new edges despite 7 retrievals, indicating memory consolidation produced no durable traces for a completed-
+- Calibration was exact (predicted 4 risks vs. 4 actual) yet the goal still failed to converge (score 4), proving that accurate risk prediction does not
+- The swarm's first attempt scored 4/10 but an evolution run with 3 variants lifted the winner to 9/10, showing variant generation is the highest-levera
 - Metabolic stress (0.602, conserve state) capped the swarm at max_tasks=3/max_iterations=1, which likely contributed to the low first-attempt score; bu
 - Simulation consistently flags risks (5 then 4) and demands revisions, but only 1 of 4 revisions was applied in the second pass — unapplied revisions c
 - The first attempt scored 3/10 but evolution over 3 variants produced a winner scoring 9/10, confirming that iterative variant generation beats single-
@@ -51,11 +56,6 @@
 - Model calls failed repeatedly with 429 Too Many Requests on two different providers within the same second, indicating shared upstream rate limiting r
 - The swarm failed to converge in only 2 cycles while the metabolism was in conserve state (max_iterations=1), so non-convergence is likely caused by bu
 - Both football variants (49.83% and 49.72%) landed below the 50.18% baseline with worse log-loss than baseline, confirming that unaided reasoning witho
-- The football baseline goal has a hard external critic (actual match outcomes vs. the 50.2% threshold), making per-match prediction logging the only ob
-- Skill proposals accumulate (28 pending) without a validation loop, so proposals are being generated faster than they are exercised — integration requi
-- The metabolism_check correctly throttled to conserve mode (max_tasks=3), but model retries still burned budget on doomed requests; retry logic should 
-- Rate-limit failures cluster within seconds of each other (ts 1787679154-1787679256), indicating parallel or rapid sequential calls exhaust the quota —
-- Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so every critical call needs a fallback chain with at least one 
 
 ---
 

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1959 Neuronen · 32174 bewertete Synapsen
+Stand: 1964 Neuronen · 32257 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,9 +10,9 @@ Stand: 1959 Neuronen · 32174 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 163 | 0.25 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 180 | 0.22 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 180 | 0.22 |
+| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 164 | 0.25 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 181 | 0.22 |
+| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 181 | 0.22 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 158 | 0.25 |
 | 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 130 | 0.27 |
 | 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 132 | 0.26 |
@@ -21,10 +21,10 @@ Stand: 1959 Neuronen · 32174 bewertete Synapsen
 | 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 112 | 0.27 |
 | 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 118 | 0.25 |
 | 11 | 💭 | Model latency variance (4.6–138 s) violates SLOs and destabilize… | 118 | 0.25 |
-| 12 | 💭 | Model invocation latency spikes and occasional 502 overload erro… | 120 | 0.24 |
-| 13 | 💭 | Missing interface contracts such as MemoryStore.add_fact cause s… | 92 | 0.31 |
-| 14 | 💭 | Missing interface contract validation risks AttributeError failu… | 113 | 0.25 |
-| 15 | 💭 | High latency variance (25–288s) on the same model makes fixed ti… | 115 | 0.25 |
+| 12 | 💭 | High latency variance (25–288s) on the same model makes fixed ti… | 116 | 0.25 |
+| 13 | 💭 | Model invocation latency spikes and occasional 502 overload erro… | 120 | 0.24 |
+| 14 | 💭 | Missing interface contracts such as MemoryStore.add_fact cause s… | 92 | 0.31 |
+| 15 | 💭 | Missing interface contract validation risks AttributeError failu… | 113 | 0.25 |
 
 ## Die 15 stärksten Synapsen
 

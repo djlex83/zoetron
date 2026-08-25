@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2577 Fakten** · Stand 2026-08-25 20:39 UTC · aktualisiert bei jedem Herzschlag
+**2590 Fakten** · Stand 2026-08-25 21:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1142
-- **swarm_artifact:** 709
-- **anti_pattern:** 232
-- **last_swarm_goal:** 184
-- **strategy:** 137
-- **last_swarm_critique:** 121
+- **dream:** 1147
+- **swarm_artifact:** 711
+- **anti_pattern:** 234
+- **last_swarm_goal:** 185
+- **strategy:** 138
+- **last_swarm_critique:** 122
 - **aktuell_fussball_messlatte:** 30
 - **creator_teaching:** 8
-- **tool:** 4
+- **tool:** 5
 - **hand_result:** 3
 - **frontier:** 3
 - **aktuell_organfehler:** 1
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:cortex-upgrade-reflex-neue-modelle-autom`
+*25.08. 21:08 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren'. Datei: data/tools/cortex-upgrade-reflex-neue-modelle-autom.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:cortex_upgrade_reflex__neue_modelle_automatisch_ad`
+*25.08. 21:08 UTC · Quelle: evolution*
+
+Test-first-Skelett: Signaturgerüst zuerst, dann Implementierung gegen vorgegebene Tests - Der vorherige Fehler war Trunkierung/Unvollstaendigkeit. Variante 2 adressiert dies fundamental anders: Tests werden zuerst als vollstaendige Verhaltensspezifikation fixi
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:1`
+*25.08. 21:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Event-getriebene Pipeline-Architektur mit klarer Zustandsmaschine - Statt einer linearen Datei ein ereignisbasiertes Design: Ein zentraler StateStore (state.json mit Feldern champion_id, champion_score, champion_p95, history)
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:0`
+*25.08. 21:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Monolithische Single-File-Komplettlösung mit strikter Reihenfolge - Schreibe das Artefakt als EINE vollständige Python-Datei, aber diesmal bottom-up in fester, nummerierter Struktur: (1) Imports + Konstanten (MODEL_REGISTRY, 
+
+### `swarm_artifact:Draft deliverable for: Cortex-Upgrade-Reflex: neue Modelle a`
+*25.08. 21:06 UTC · Quelle: builder*
+
+[score 3] **Cortex-Upgrade-Reflex** (englisch „Cortex“ = Großhirn/Modellkern, „Reflex“ = automatische Reaktion): Das Artefakt implementiert die vier vorgeschriebenen Schritte – Erkennung neuer Mod
+
+### `last_swarm_critique`
+*25.08. 21:06 UTC · Quelle: critic*
+
+score=3; issues=Artefakt ist unvollstaendig/trunkiert: Code bricht mitten in Schritt 2 (Mini-Messlatte) ab; Schritte 2-4 (evaluate_candidate, maybe_adopt, rollback_latest), Selftest und Wochenreport-Eintrag sind zwar im Docstring versprochen, aber nicht implem
+
+### `swarm_artifact:Draft deliverable for: Cortex-Upgrade-Reflex: neue Modelle a`
+*25.08. 21:06 UTC · Quelle: builder*
+
+**Cortex-Upgrade-Reflex** (englisch „Cortex“ = Großhirn/Modellkern, „Reflex“ = automatische Reaktion): Das Artefakt implementiert die vier vorgeschriebenen Schritte – Erkennung neuer Modelle, Bewertun
+
+### `last_swarm_goal`
+*25.08. 21:02 UTC · Quelle: system*
+
+Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
+
+### `dream:20260825210232:5:272c59`
+*25.08. 21:02 UTC · Quelle: dream*
+
+Three skill proposals were emitted in a burst with no mechanism to test any of them, confirming proposal generation currently outpaces validation capacity.
+
+### `dream:20260825210232:4:461525`
+*25.08. 21:02 UTC · Quelle: dream*
+
+A single long model call (139.9s, ~6.8k output tokens) dominated the cycle's latency budget while short calls stayed under 3s, so cost control should target the planner/builder calls specifically.
+
+### `dream:20260825210232:3:aedfad`
+*25.08. 21:02 UTC · Quelle: dream*
+
+The 'bahnen' step reported delta 0.0 and 0 new edges despite 7 retrievals, indicating memory consolidation produced no durable traces for a completed-but-unconverged goal.
+
+### `dream:20260825210232:2:8c8c23`
+*25.08. 21:02 UTC · Quelle: dream*
+
+Calibration was exact (predicted 4 risks vs. 4 actual) yet the goal still failed to converge (score 4), proving that accurate risk prediction does not equal solution quality.
+
+### `dream:20260825210232:1:326e6e`
+*25.08. 21:02 UTC · Quelle: dream*
+
+The swarm's first attempt scored 4/10 but an evolution run with 3 variants lifted the winner to 9/10, showing variant generation is the highest-leverage recovery step after a weak score.
 
 ### `aktuell_fussball_messlatte`
 *25.08. 20:39 UTC · Quelle: bewerte.py*
