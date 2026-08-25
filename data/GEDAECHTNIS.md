@@ -1,22 +1,93 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2475 Fakten** · Stand 2026-08-25 16:47 UTC · aktualisiert bei jedem Herzschlag
+**2489 Fakten** · Stand 2026-08-25 17:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1107
-- **swarm_artifact:** 689
-- **anti_pattern:** 220
-- **last_swarm_goal:** 177
-- **strategy:** 131
-- **last_swarm_critique:** 115
-- **aktuell_fussball_messlatte:** 21
+- **dream:** 1112
+- **swarm_artifact:** 691
+- **anti_pattern:** 222
+- **last_swarm_goal:** 178
+- **strategy:** 132
+- **last_swarm_critique:** 116
+- **aktuell_fussball_messlatte:** 22
 - **creator_teaching:** 8
 - **frontier:** 3
+- **hand_result:** 1
 - **semantic_organ:** 1
 - **tool:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 17:12 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.43 -2.35 -0.55 -0.43 -1.22 -0.43. Der Log-Loss ist
+
+### `hand_result:Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten`
+*25.08. 17:12 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787677928388.py\", line 94\n    p = cnt /\n             ^\nSyntaxError: invalid syntax\n"}
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 17:11 UTC · Quelle: evolution*
+
+Gradient Boosting with Temporal Feature Engineering and Threshold Optimization - Variant 0 directly addresses all three critic issues: it explicitly evaluates accuracy and log-loss against the 50.2% baseline via walk-forward validation, defines a clear decisio
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :2`
+*25.08. 17:11 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Graph Neural Network on Match Interaction Graphs - Construct a temporal graph: nodes = teams, edges = matches played (weighted by recency decay). Node features = rolling stats (xG, possession, shots); edge features = venue, d
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
+*25.08. 17:11 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Bayesian Dynamic Bradley-Terry Model with Time-Varying Strengths - Implement a hierarchical Bayesian model where each team has latent attack/defense strengths that follow a Gaussian random walk across matchweeks. Likelihood: 
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 17:10 UTC · Quelle: builder*
+
+[score 3] AENDERUNG (genau eine): Die empirische Kalibrierung erhält ein Rezenz-Gewicht (recency weighting) – alle Bin-Counts werden zu jedem Saisonwechsel multiplikativ abgeschwächt (Faktor 0,88)
+
+### `last_swarm_critique`
+*25.08. 17:10 UTC · Quelle: critic*
+
+score=3; issues=No evaluation against the 50.2% baseline; code generates probabilities but never computes accuracy, log-loss, or any metric compared to the benchmark.; Recency decay applied only to bin counts while prior remains fixed and undecayed, creating i
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 17:09 UTC · Quelle: builder*
+
+AENDERUNG (genau eine): Die empirische Kalibrierung erhält ein Rezenz-Gewicht (recency weighting) – alle Bin-Counts werden zu jedem Saisonwechsel multiplikativ abgeschwächt (Faktor 0,88), damit alte S
+
+### `last_swarm_goal`
+*25.08. 17:03 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825170256:5:dc7df0`
+*25.08. 17:02 UTC · Quelle: dream*
+
+Memory pruning removed nothing (0 facts, 0 events) while the same failing goal was retried unchanged, showing the loop lacks a mechanism to detect 'no new information' and force strategy change.
+
+### `dream:20260825170256:4:fc4ce2`
+*25.08. 17:02 UTC · Quelle: dream*
+
+Simulation verdicts ('revise', 4 risks) were generated and applied, but the swarm still did not converge, indicating simulation output is not being translated into concrete plan changes.
+
+### `dream:20260825170256:3:5548c8`
+*25.08. 17:02 UTC · Quelle: dream*
+
+Free-tier OpenRouter models are unreliable capacity-wise but viable as fallbacks (glm-5.2 succeeded on retry), so the failure rate is a routing/retry problem, not a capability problem.
+
+### `dream:20260825170256:2:d2d9b3`
+*25.08. 17:02 UTC · Quelle: dream*
+
+Rate-limit failures (429) on stealth/ox-alpha and z-ai/glm-5.2:free cluster under high load (latency 229s, stress 0.79), meaning model reliability degrades exactly when metabolism is in conserve mode and budget is tightest.
+
+### `dream:20260825170256:1:ecbca0`
+*25.08. 17:02 UTC · Quelle: dream*
+
+The football goal failed twice at score 3/10 because the swarm produced prose without an executable prediction artifact, so the unarguable critic (actual match outcome vs. 50.2% baseline) was never actually engaged.
 
 ### `aktuell_fussball_messlatte`
 *25.08. 16:47 UTC · Quelle: bewerte.py*

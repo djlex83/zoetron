@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 16:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 17:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,9 +35,17 @@
 - Modell-Fehler deutlich reduzieren
 - Vorgeschlagene Fähigkeiten wirklich nutzen
 - Simulationen in echtes Handeln überführen
+- Täglich neue Fähigkeiten üben
+- Fehler vermeiden und korrigieren
+- Neue Ideen ausprobieren
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning removed nothing (0 facts, 0 events) while the same failing goal was retried unchanged, showing the loop lacks a mechanism to detect 'no
+- Simulation verdicts ('revise', 4 risks) were generated and applied, but the swarm still did not converge, indicating simulation output is not being tr
+- Free-tier OpenRouter models are unreliable capacity-wise but viable as fallbacks (glm-5.2 succeeded on retry), so the failure rate is a routing/retry 
+- Rate-limit failures (429) on stealth/ox-alpha and z-ai/glm-5.2:free cluster under high load (latency 229s, stress 0.79), meaning model reliability deg
+- The football goal failed twice at score 3/10 because the swarm produced prose without an executable prediction artifact, so the unarguable critic (act
 - Swarm convergence stalls at score 9 despite evolution cycles, revealing a capability ceiling in the current approach.
 - Evolutionary variants failed to surpass the previous best score (9), indicating diminishing returns without architectural changes.
 - Calibration consistently underestimates difficulty (predicted 7 vs actual 9), suggesting the need for difficulty-aware estimation.
@@ -48,11 +56,6 @@
 - Calibration error of 2 points (predicted 7 vs actual 9) indicates the simulation verdict 'go' is unreliable for this task class.
 - Repeated swarm cycles on the same goal without architectural change yield diminishing returns (scores 7→8→6 in evolution).
 - High critic scores (9/10) can mask fundamental missing deliverables like executable code, creating false convergence signals.
-- The identical skill proposal ('check memory for prior artifacts before building') was emitted in two separate dream cycles without being adopted or ac
-- Prune runs removed 0 facts and 0 events twice while memory grew past 2400 entries, so the retention policy is effectively non-functional and stale fac
-- Calibration error of 2 (predicted 7 vs actual 9) on the same goal type suggests effort estimates for football-prediction tasks are systematically unde
-- The measured result (50.18% hits, log-loss 1.0073) exactly matches the baseline, meaning the swarm produced zero predictive edge despite high internal
-- Two consecutive swarm cycles on the football goal both ended at score 9 with converged=false because the artifact contained prose only and no executab
 
 ---
 
