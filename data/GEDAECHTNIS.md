@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2508 Fakten** · Stand 2026-08-25 17:39 UTC · aktualisiert bei jedem Herzschlag
+**2509 Fakten** · Stand 2026-08-25 18:02 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 1117
 - **swarm_artifact:** 697
 - **anti_pattern:** 224
-- **last_swarm_goal:** 179
+- **last_swarm_goal:** 180
 - **strategy:** 133
 - **last_swarm_critique:** 117
 - **aktuell_fussball_messlatte:** 24
@@ -18,6 +18,11 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*25.08. 18:02 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
 
 ### `aktuell_fussball_messlatte`
 *25.08. 17:39 UTC · Quelle: bewerte.py*
