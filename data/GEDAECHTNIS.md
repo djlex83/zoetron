@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2430 Fakten** · Stand 2026-08-25 15:05 UTC · aktualisiert bei jedem Herzschlag
+**2442 Fakten** · Stand 2026-08-25 15:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1092
-- **swarm_artifact:** 685
-- **anti_pattern:** 214
-- **last_swarm_goal:** 174
-- **strategy:** 128
-- **last_swarm_critique:** 112
-- **aktuell_fussball_messlatte:** 10
+- **dream:** 1097
+- **swarm_artifact:** 681
+- **anti_pattern:** 216
+- **last_swarm_goal:** 175
+- **strategy:** 129
+- **last_swarm_critique:** 113
+- **aktuell_fussball_messlatte:** 16
 - **creator_teaching:** 8
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -17,6 +17,96 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 15:48 UTC · Quelle: evolution*
+
+Statistisch-bayesianisch: Dixon-Coles-Modell mit vollständiger Kalibrierungs-Pipeline - Variante 0 behebt direkt alle Kritikpunkte: vollständiger, ausführbarer Code statt Abbruch, die versprochene Kalibrierungsfunktion 'aktualisiere' mit Online-Gradient-Update
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :2`
+*25.08. 15:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Ensemble-/Marktagnostiker: Rating-Differenz-Heuristik kombiniert mit kontrariane - Radikal einfacher, aber rigoros evaluiert: Statt komplexem Modell eine transparente Zwei-Ebenen-Regelmaschine. Ebene 1: Elo-Differenz-Modell –
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
+*25.08. 15:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Feature-basiertes Machine Learning: Gradient Boosting auf strukturierten Team-Me - Verlasse den Poisson-Ansatz komplett: Trainiere LightGBM/XGBoost als 3-Klassen-Klassifikator (H/D/A) ohne Quoten. Features pro Match: rollende
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 15:46 UTC · Quelle: builder*
+
+[score 3] Der Entwurf ersetzt das blinde Elo-Gerüst durch ein zeitgewichtetes Dixon-Coles-Poisson-Modell (Attack/Defense-Stärken per koordiniertem Maximum-Likelihood, Zeit-Halbwertszeit 500 Tage),
+
+### `last_swarm_critique`
+*25.08. 15:46 UTC · Quelle: critic*
+
+score=3; issues=Deliverable ist unvollständig: Der Code bricht mitten im Trainingsschleifen-Update ab ('mu += log(max((w * (gh + ga)).sum(), 1e-9)'), fehlende schließende Klammern/Blöcke; nicht ausführbar.; Der Prosa-Text verspricht 'Kalibrierungs-Offsets auf 
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 15:45 UTC · Quelle: builder*
+
+Der Entwurf ersetzt das blinde Elo-Gerüst durch ein zeitgewichtetes Dixon-Coles-Poisson-Modell (Attack/Defense-Stärken per koordiniertem Maximum-Likelihood, Zeit-Halbwertszeit 500 Tage), ergänzt um Ka
+
+### `aktuell_fussball_messlatte`
+*25.08. 15:36 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45 -0.31 -0.41 -0.12 -1.66. Der Log-Loss ist
+
+### `aktuell_fussball_messlatte`
+*25.08. 15:36 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45 -0.31 -0.41 -0.12. Der Log-Loss ist die e
+
+### `aktuell_fussball_messlatte`
+*25.08. 15:36 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45 -0.31 -0.41. Der Log-Loss ist die empfind
+
+### `aktuell_fussball_messlatte`
+*25.08. 15:36 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45 -0.31. Der Log-Loss ist die empfindlicher
+
+### `last_swarm_goal`
+*25.08. 15:35 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825153529:5:32443c`
+*25.08. 15:35 UTC · Quelle: dream*
+
+The identical skill proposal ('check memory for prior artifacts before building') was emitted in two separate dream cycles without being adopted or acted upon, indicating proposals are generated but never routed into execution.
+
+### `dream:20260825153529:4:a0dcc3`
+*25.08. 15:35 UTC · Quelle: dream*
+
+Prune runs removed 0 facts and 0 events twice while memory grew past 2400 entries, so the retention policy is effectively non-functional and stale facts will accumulate.
+
+### `dream:20260825153529:3:ed5573`
+*25.08. 15:35 UTC · Quelle: dream*
+
+Calibration error of 2 (predicted 7 vs actual 9) on the same goal type suggests effort estimates for football-prediction tasks are systematically underestimated and should be adjusted by prior abs_error.
+
+### `dream:20260825153529:2:e01f3c`
+*25.08. 15:35 UTC · Quelle: dream*
+
+The measured result (50.18% hits, log-loss 1.0073) exactly matches the baseline, meaning the swarm produced zero predictive edge despite high internal scores — internal critic scores do not measure real-world performance against the game outcome.
+
+### `dream:20260825153529:1:9a98be`
+*25.08. 15:35 UTC · Quelle: dream*
+
+Two consecutive swarm cycles on the football goal both ended at score 9 with converged=false because the artifact contained prose only and no executable Python block — code is a hard convergence requirement, not a stylistic preference.
+
+### `aktuell_fussball_messlatte`
+*25.08. 15:32 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19 -0.45. Der Log-Loss ist die empfindlichere Groe
+
+### `aktuell_fussball_messlatte`
+*25.08. 15:32 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0103 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.01 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.19. Der Log-Loss ist die empfindlichere Groesse: g
 
 ### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
 *25.08. 15:05 UTC · Quelle: evolution*
@@ -33,40 +123,10 @@ ABGELEHNT von Evolution (Score 6): automated - script the whole path NICHT wiede
 
 ABGELEHNT von Evolution (Score 7): minimal - smallest working step NICHT wiederholt anbieten.
 
-### `swarm_artifact:Prototype: minimal artifact for Fußball: die Basislinie von `
-*25.08. 15:05 UTC · Quelle: builder*
-
-[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
-
-### `swarm_artifact:Differentiate: what is missing for Fußball: die Basislinie v`
-*25.08. 15:05 UTC · Quelle: builder*
-
-[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
-
-### `swarm_artifact:Research: state of the art for Fußball: die Basislinie von 5`
-*25.08. 15:05 UTC · Quelle: builder*
-
-[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
-
 ### `last_swarm_critique`
 *25.08. 15:05 UTC · Quelle: critic*
 
 score=9; issues=
-
-### `swarm_artifact:Prototype: minimal artifact for Fußball: die Basislinie von `
-*25.08. 15:05 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `swarm_artifact:Differentiate: what is missing for Fußball: die Basislinie v`
-*25.08. 15:05 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `swarm_artifact:Research: state of the art for Fußball: die Basislinie von 5`
-*25.08. 15:05 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
 
 ### `last_swarm_goal`
 *25.08. 15:05 UTC · Quelle: system*
