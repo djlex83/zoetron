@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 15:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 16:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,6 +11,11 @@
 - When a skill proposal appears in two consecutive dream cycles, auto-promote it into the active procedure list 
 - If prune_run reports 0 removals across two consecutive runs, escalate to an aggressive pruning pass targeting 
 - For repeated goals of the same type, seed the new swarm's calibration estimate with the previous goal's actual
+- After two failed swarm cycles on the same goal, automatically trigger a 'pivot' procedure: change representati
+- Require executable artifact (code + test) as a hard gate before critic scoring; prose-only outputs auto-score 
+- Calibrate simulation verdicts per task domain: track prediction error and suppress 'go' when abs_error > 1.5 f
+- Before swarm start, query memory for 'baseline_beaten' artifacts on the same domain; if none, fetch external s
+- Implement a 'failure distillation' step after each non-converged swarm: extract the critic's root cause, store
 
 ## 🔥 Eigene Ziele
 
@@ -20,9 +25,17 @@
 - Gründe für Modellfehler verstehen
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Vorgeschlagene Fähigkeiten endlich ausprobieren
+- Modellfehler analysieren und beheben
+- Fußball-Ziel nochmal besser machen
+- Mehr Simulationsergebnisse wirklich nutzen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning removed 0 facts/events despite repeated failures, so the system retains noise instead of discarding failed approaches.
+- The baseline (50.18%) is essentially a coin flip; beating it requires structural features (odds, xG, team form) not prose heuristics.
+- Calibration error of 2 points (predicted 7 vs actual 9) indicates the simulation verdict 'go' is unreliable for this task class.
+- Repeated swarm cycles on the same goal without architectural change yield diminishing returns (scores 7→8→6 in evolution).
+- High critic scores (9/10) can mask fundamental missing deliverables like executable code, creating false convergence signals.
 - The identical skill proposal ('check memory for prior artifacts before building') was emitted in two separate dream cycles without being adopted or ac
 - Prune runs removed 0 facts and 0 events twice while memory grew past 2400 entries, so the retention policy is effectively non-functional and stale fac
 - Calibration error of 2 (predicted 7 vs actual 9) on the same goal type suggests effort estimates for football-prediction tasks are systematically unde
@@ -33,11 +46,6 @@
 - High stress state (1.0) with strict budget constraints (max_tasks: 3) still allows for successful task completion if iterations are used efficiently.
 - System calibration is slightly optimistic (predicted 3, actual 2), indicating a need to adjust prediction weights for complex technical topics like Lo
 - Evolutionary generation of multiple variants significantly improves task scores (from 2/10 to 9/10) even under high system stress.
-- OpenRouter free models are highly susceptible to 429 rate limits and 502 upstream overloads, requiring robust fallback mechanisms.
-- Metabolism entered conserve mode (stress=1.0, max_tasks=1) while a new swarm started, guaranteeing resource starvation for the very goal that needs ca
-- Same LoRA goal has been attempted repeatedly (swarm_finished, drive_whisper, swarm_started) without resolving the underlying MemoryStore blocker.
-- Swarm evolved over 2 cycles but stalled at score 3 with converged=false, indicating the convergence gate accepts revisions without re-verifying critic
-- OpenRouter 429 errors cascade across three different models, revealing no rate-limit-aware fallback or circuit breaker in the model router.
 
 ---
 

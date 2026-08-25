@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2442 Fakten** · Stand 2026-08-25 15:49 UTC · aktualisiert bei jedem Herzschlag
+**2455 Fakten** · Stand 2026-08-25 16:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1097
-- **swarm_artifact:** 681
-- **anti_pattern:** 216
-- **last_swarm_goal:** 175
-- **strategy:** 129
-- **last_swarm_critique:** 113
-- **aktuell_fussball_messlatte:** 16
+- **dream:** 1102
+- **swarm_artifact:** 683
+- **anti_pattern:** 218
+- **last_swarm_goal:** 176
+- **strategy:** 130
+- **last_swarm_critique:** 114
+- **aktuell_fussball_messlatte:** 17
 - **creator_teaching:** 8
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -17,6 +17,71 @@
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 16:16 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.45 -0.31 -0.41 -0.12 -1.66 -0.43. Der Log-Loss ist
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 16:14 UTC · Quelle: evolution*
+
+Poisson-Tormodell mit Konfidenzschwelle (Abstention) - Variante 0 repariert nur die kaputte Skalierung und bleibt bei einem fragilen Heuristikmodell – wenig fundamental neu, geringes Potenzial, die 50,2%-Basislinie signifikant zu übert
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :1`
+*25.08. 16:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Elo-Rating-System mit dynamischem K-Faktor - Verwerfe das punkt-/torbasierte Scoring komplett und baue ein klassisches Fußball-Elo-System: Jedes Team startet bei 1500, nach jedem Spiel Elo-Update mit K=20 (K=32 für die ersten
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :0`
+*25.08. 16:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Robuste Parameter-Kalibrierung statt kaputter Skalierung - Ersetze die Formel heim_vorteil = avg_gd * 25 mit Clip [20,100] durch eine direkte Kalibrierung des Heimvorteils auf Validierungsdaten: Suche heim_vorteil per Grid-Se
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 16:13 UTC · Quelle: builder*
+
+[score 5] # Änderung: Wettbewerbsspezifischer Heimvorteil statt festem HEIM=60  ```python # aus: s06_1787598308_draft-deliverable-for-fu-ball-die-basislinie-von-50-2-schlag.md # elo_kalib_v2 – Elo
+
+### `last_swarm_critique`
+*25.08. 16:13 UTC · Quelle: critic*
+
+score=5; issues=Kernänderung faktisch wirkungslos/broken: heim_vorteil = avg_gd * 25 mit Clip auf [20,100]. Typische durchschnittliche Tordifferenz liegt bei ~0.3–0.5, d.h. avg_gd*25 ≈ 8–13 Punkte – der Wert wird also praktisch immer auf die Untergrenze 20 gec
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 16:12 UTC · Quelle: builder*
+
+# Änderung: Wettbewerbsspezifischer Heimvorteil statt festem HEIM=60  ```python # aus: s06_1787598308_draft-deliverable-for-fu-ball-die-basislinie-von-50-2-schlag.md # elo_kalib_v2 – Elo mit Tordiffer
+
+### `last_swarm_goal`
+*25.08. 16:06 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825160550:5:dc5523`
+*25.08. 16:05 UTC · Quelle: dream*
+
+Memory pruning removed 0 facts/events despite repeated failures, so the system retains noise instead of discarding failed approaches.
+
+### `dream:20260825160550:4:b6937b`
+*25.08. 16:05 UTC · Quelle: dream*
+
+The baseline (50.18%) is essentially a coin flip; beating it requires structural features (odds, xG, team form) not prose heuristics.
+
+### `dream:20260825160550:3:916373`
+*25.08. 16:05 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 7 vs actual 9) indicates the simulation verdict 'go' is unreliable for this task class.
+
+### `dream:20260825160550:2:ff354f`
+*25.08. 16:05 UTC · Quelle: dream*
+
+Repeated swarm cycles on the same goal without architectural change yield diminishing returns (scores 7→8→6 in evolution).
+
+### `dream:20260825160550:1:1e2d48`
+*25.08. 16:05 UTC · Quelle: dream*
+
+High critic scores (9/10) can mask fundamental missing deliverables like executable code, creating false convergence signals.
 
 ### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
 *25.08. 15:48 UTC · Quelle: evolution*
