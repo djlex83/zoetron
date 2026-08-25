@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 22:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 22:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Modellfehler analysieren und beheben
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs removed zero facts and zero events, suggesting the pruning criteria are too conservative and memory is growing without pressure toward rele
+- 40+ skill proposals have accumulated but almost none were tested, so the proposal pipeline is producing knowledge that never converts into capability.
+- Reflex execution of the Cortex-Upgrade-Reflex succeeded in 0.5s and converged immediately, proving that pre-packaged reflexes outperform full swarm de
+- Selbstdiagnose found 9 ConnectError findings concentrated in the dream and drive organs, indicating transient network failures rather than logic bugs 
+- The swarm failed to converge (score 3, converged=false) because the critic kept issuing 'revise' verdicts while the 2-cycle budget expired before revi
 - The hand_action failed immediately (exit 1 in 0.04s) but was only caught later via issue_sync, so pre-flight validation of executable actions before d
 - Evolution improved variant scores from 7.5 to 8.5 internally, yet the final measured score stayed at 5, revealing a gap between self-evaluated variant
 - The swarm terminated after only 2 cycles with converged=false and score=5, indicating the cycle budget ends runs before quality gates are met when imp
@@ -51,11 +56,6 @@
 - The hand_action failed immediately (exit 1 in 0.03s) yet the pipeline continued to scoring, meaning execution failures are not gating downstream steps
 - The simulation step flagged 4 risks but only 1 revision was applied before execution, so the 'revise' verdict was effectively ignored — partial revisi
 - The football predictor remains below baseline (49.48% vs 50.18%, log-loss 1.0124 vs 1.0073) even after evolution and swarm cycles, indicating the curr
-- Skill proposals are accumulating (35+ proposed, barely tested), so the bottleneck is validation capacity, not idea generation.
-- Retrieval pulled 7 traces (bahnen) yet yielded zero new edges (kanten) and delta 0.0, showing that recall without an integration or linking step produ
-- The evolution run improved the winner from 5 to 9/10, but the swarm still reported a final score of 5, indicating the evolved artifact was not re-scor
-- A simulation verdict of 'revise' with 3 identified risks produced only 0 applied revisions on the first pass, meaning the simulation-to-revision pipel
-- The swarm terminated after 2 cycles with score 5/10 and converged=false because the iteration budget (max_iterations=2) was exhausted before the criti
 
 ---
 

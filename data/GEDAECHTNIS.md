@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2636 Fakten** · Stand 2026-08-25 22:17 UTC · aktualisiert bei jedem Herzschlag
+**2657 Fakten** · Stand 2026-08-25 22:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1162
-- **swarm_artifact:** 729
-- **anti_pattern:** 238
-- **last_swarm_goal:** 187
-- **strategy:** 140
-- **last_swarm_critique:** 124
+- **dream:** 1167
+- **swarm_artifact:** 739
+- **anti_pattern:** 240
+- **last_swarm_goal:** 188
+- **strategy:** 141
+- **last_swarm_critique:** 125
 - **aktuell_fussball_messlatte:** 30
 - **creator_teaching:** 8
-- **hand_result:** 5
+- **hand_result:** 6
 - **tool:** 5
 - **frontier:** 3
 - **aktuell_organfehler:** 2
@@ -19,6 +19,111 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)`
+*25.08. 22:37 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787697423995.py\", line 51\n    \"solution\": \"def retry(fn, n=3):\n                ^\nSyntaxError: unterminated string literal (detected at line 51)\n"}
+
+### `strategy:exemplar_bank__von_den_eigenen_besten_momenten_ler`
+*25.08. 22:36 UTC · Quelle: evolution*
+
+Selbst-Destillations-Pipeline: Offline-Kompression der Best Moments in einen synthetischen Leitfaden - Variante 1 (Selbst-Destillations-Pipeline) gewinnt: Sie adressiert beide Kernprobleme elegant – das Critic-Parsing wird durch ein strikt schema-validiertes O
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Exemplar-Bank: von den e:2`
+*25.08. 22:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Verstärkungslern-Ansatz: Score-getriebene Selektion mit Kontrastiv-Lernen - Behandle jeden Lösungsmoment als Aktion mit Belohnung (Critic-Score): Führe ein Policy-Gedächtnis, das nicht nur gute Momente speichert, sondern expl
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Exemplar-Bank: von den e:0`
+*25.08. 22:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Retrieval-basierte Architektur: Exemplar-Bank als dedizierter Vektorspeicher - Baue eine explizite Exemplar-Bank als Vektor-Datenbank auf: Jeder erfolgreiche Lösungsmoment wird beim Entstehen automatisch erfasst, per Embeddin
+
+### `swarm_artifact:report.py: End-to-End-Integrationstest + REPORT.md-Dokumenta`
+*25.08. 22:35 UTC · Quelle: builder*
+
+[score 5] report.py verkettet die vier Module zu einem Durchlauf und schreibt den Report – mit Fallbacks, falls einzelne Module im Arbeitsverzeichnis fehlen, damit der Block immer lauffähig bleibt
+
+### `swarm_artifact:ab_test.py: A/B-Vergleichsharness auf der Messlatte (MIT vs.`
+*25.08. 22:35 UTC · Quelle: builder*
+
+[score 5] ```python # ab_test.py - A/B-Vergleich: Laeufe MIT vs. OHNE Exemplare auf der Messlatte import json, os, random BENCH = [{"goal": "Retry-Logik", "base": [7, 8, 6]},          {"goal": "CS
+
+### `swarm_artifact:inject.py: Prompt-Injektion – Top-2-Exemplare in Planner- un`
+*25.08. 22:35 UTC · Quelle: builder*
+
+[score 5] ```python # inject.py - Injektion: Beispiele als Prompt-Baustein fuer Planner/Builder # Top-2-Exemplare (kosinus-basierte Aehnlichkeit) werden als '### EXEMPLARE'-Block # an Basis-Prompt
+
+### `swarm_artifact:similarity.py: semantische Ähnlichkeit und Top-2-Retrieval p`
+*25.08. 22:35 UTC · Quelle: builder*
+
+[score 5] ```python # similarity.py - Semantische Aehnlichkeit: Top-2-Beispiele pro Ziel # Token-basierte Kosinus-Aehnlichkeit (leichtgewichtig, keine externen Dependencies). # Fallback fuer spaet
+
+### `swarm_artifact:exemplar_store.py: Kernmodul für Aufnahme, Kürzung und Persi`
+*25.08. 22:35 UTC · Quelle: builder*
+
+[score 5] ```python # exemplar_store.py - Kernmodul der Exemplar-Bank (Exemplar-Bank = Sammlung der besten eigenen Loesungen) # Aufnahme-Regel: Score >= 8 UND tests_passed=True; Kuerzung auf Aufga
+
+### `last_swarm_critique`
+*25.08. 22:35 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:report.py: End-to-End-Integrationstest + REPORT.md-Dokumenta`
+*25.08. 22:35 UTC · Quelle: builder*
+
+report.py verkettet die vier Module zu einem Durchlauf und schreibt den Report – mit Fallbacks, falls einzelne Module im Arbeitsverzeichnis fehlen, damit der Block immer lauffähig bleibt.  ```python #
+
+### `swarm_artifact:ab_test.py: A/B-Vergleichsharness auf der Messlatte (MIT vs.`
+*25.08. 22:34 UTC · Quelle: builder*
+
+```python # ab_test.py - A/B-Vergleich: Laeufe MIT vs. OHNE Exemplare auf der Messlatte import json, os, random BENCH = [{"goal": "Retry-Logik", "base": [7, 8, 6]},          {"goal": "CSV-Parser", "ba
+
+### `swarm_artifact:inject.py: Prompt-Injektion – Top-2-Exemplare in Planner- un`
+*25.08. 22:34 UTC · Quelle: builder*
+
+```python # inject.py - Injektion: Beispiele als Prompt-Baustein fuer Planner/Builder # Top-2-Exemplare (kosinus-basierte Aehnlichkeit) werden als '### EXEMPLARE'-Block # an Basis-Prompts angehaengt; 
+
+### `swarm_artifact:similarity.py: semantische Ähnlichkeit und Top-2-Retrieval p`
+*25.08. 22:33 UTC · Quelle: builder*
+
+```python # similarity.py - Semantische Aehnlichkeit: Top-2-Beispiele pro Ziel # Token-basierte Kosinus-Aehnlichkeit (leichtgewichtig, keine externen Dependencies). # Fallback fuer spaetere Embeddings
+
+### `swarm_artifact:exemplar_store.py: Kernmodul für Aufnahme, Kürzung und Persi`
+*25.08. 22:33 UTC · Quelle: builder*
+
+```python # exemplar_store.py - Kernmodul der Exemplar-Bank (Exemplar-Bank = Sammlung der besten eigenen Loesungen) # Aufnahme-Regel: Score >= 8 UND tests_passed=True; Kuerzung auf Aufgabe + Loesung (
+
+### `last_swarm_goal`
+*25.08. 22:30 UTC · Quelle: system*
+
+Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
+
+### `dream:20260825223024:5:54dbdc`
+*25.08. 22:30 UTC · Quelle: dream*
+
+Prune runs removed zero facts and zero events, suggesting the pruning criteria are too conservative and memory is growing without pressure toward relevance.
+
+### `dream:20260825223024:4:40425e`
+*25.08. 22:30 UTC · Quelle: dream*
+
+40+ skill proposals have accumulated but almost none were tested, so the proposal pipeline is producing knowledge that never converts into capability.
+
+### `dream:20260825223024:3:40dd85`
+*25.08. 22:30 UTC · Quelle: dream*
+
+Reflex execution of the Cortex-Upgrade-Reflex succeeded in 0.5s and converged immediately, proving that pre-packaged reflexes outperform full swarm deliberation for well-understood goals.
+
+### `dream:20260825223024:2:4a6149`
+*25.08. 22:30 UTC · Quelle: dream*
+
+Selbstdiagnose found 9 ConnectError findings concentrated in the dream and drive organs, indicating transient network failures rather than logic bugs are the dominant failure mode.
+
+### `dream:20260825223024:1:cdadc0`
+*25.08. 22:30 UTC · Quelle: dream*
+
+The swarm failed to converge (score 3, converged=false) because the critic kept issuing 'revise' verdicts while the 2-cycle budget expired before revisions were applied.
 
 ### `hand_result:Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)`
 *25.08. 22:17 UTC · Quelle: hands*
