@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2615 Fakten** · Stand 2026-08-25 21:44 UTC · aktualisiert bei jedem Herzschlag
+**2636 Fakten** · Stand 2026-08-25 22:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1157
-- **swarm_artifact:** 719
-- **anti_pattern:** 236
-- **last_swarm_goal:** 186
-- **strategy:** 139
-- **last_swarm_critique:** 123
+- **dream:** 1162
+- **swarm_artifact:** 729
+- **anti_pattern:** 238
+- **last_swarm_goal:** 187
+- **strategy:** 140
+- **last_swarm_critique:** 124
 - **aktuell_fussball_messlatte:** 30
 - **creator_teaching:** 8
+- **hand_result:** 5
 - **tool:** 5
-- **hand_result:** 4
 - **frontier:** 3
 - **aktuell_organfehler:** 2
 - **semantic_organ:** 1
@@ -19,6 +19,111 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)`
+*25.08. 22:17 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787696236014.py\", line 30\n    m = re.search(r\"\n                  ^\nSyntaxError: unterminated string literal (detected at line 30)\n"}
+
+### `strategy:exemplar_bank__von_den_eigenen_besten_momenten_ler`
+*25.08. 22:16 UTC · Quelle: evolution*
+
+Single-File-Konsolidierung: Ein kanonisches, vollständig getestetes Modul statt drei Versionen - Kritiker-Probleme sind eindeutig Lieferungs- und Vollständigkeitsprobleme: drei widersprüchliche Versionen plus eine abgebrochene Funktion. Variante 0 adressiert b
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Exemplar-Bank: von den e:2`
+*25.08. 22:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Pipeline-integrierte Selbstkuratierung: Automatische Extraktion statt manueller  - Baue die Exemplar-Bank als automatischen Reflexions-Schritt in den Workflow selbst, nicht als separates Skript-Bündel. Ein einziger Hook extra
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Exemplar-Bank: von den e:1`
+*25.08. 22:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Daten-getriebene Variante: Exemplar-Bank als reines Datenartefakt + generischer  - Trenne strikt Logik von Daten. exemplare.json speichert die kuratierten Best-Momente als Liste von Objekten {id, score, task_type, input, outp
+
+### `swarm_artifact:Report + Integration: Ergebnis dokumentieren und Bank dauerh`
+*25.08. 22:15 UTC · Quelle: builder*
+
+[score 3] Der finale Report dokumentiert das A/B-Ergebnis ehrlich (Instinct `be_honest`), hinterlegt bei Misserfolg eine Anti-Pattern-Spur (Instinct `learn_always`, archiviert statt gelöscht gemäß
+
+### `swarm_artifact:A/B-Vergleich auf der Messlatte: Läufe MIT vs. OHNE Exemplar`
+*25.08. 22:15 UTC · Quelle: builder*
+
+[score 3] Der Harness misst beide Arme jetzt gepaart (gepaartes Design = gleiche Seeds für A und B, damit der Vergleich fair ist), protokolliert alle Rohdaten unverfälscht in `ab_ergebnis.json` un
+
+### `swarm_artifact:Prompt-Injektion: Planner- und Builder-Prompt mit Beispielen`
+*25.08. 22:15 UTC · Quelle: builder*
+
+[score 3] Die Injektion (Injektion = Einfügen in den Prompt) wird als vollständige `exemplare.py` geliefert: Sie vereint Bank, Retrieval und Few-Shot-Block und lädt bei fehlender Exemplarliste dir
+
+### `swarm_artifact:Semantische Ähnlichkeit: die 2 passendsten Beispiele pro Zie`
+*25.08. 22:15 UTC · Quelle: builder*
+
+[score 3] Retrieval (Wiederfinden nach Bedeutung) via IDF-gewichtete Token-Überlappung – deterministisch und ohne Abhängigkeiten. Die Sortierung ist stabil, sodass Gleichstand die ursprüngliche Re
+
+### `swarm_artifact:exemplare.py: Exemplar-Bank Kernmodul (Speichern + Filtern)`
+*25.08. 22:15 UTC · Quelle: builder*
+
+[score 3] ```python # exemplare.py - Exemplar-Bank: von den eigenen besten Momenten lernen import json, os, re, time, hashlib  BANK_PFAD = os.path.join(os.path.dirname(os.path.abspath(__file__)), 
+
+### `last_swarm_critique`
+*25.08. 22:15 UTC · Quelle: critic*
+
+score=3; issues=Drei widersprüchliche Versionen von exemplare.py werden als Artefakte geliefert (Kernmodul, Anhang, Injektionsversion) - es ist unklar, welche kanonisch ist; die ersten beiden sind durch die dritte obsolet und sollten nicht Teil der Lieferung s
+
+### `swarm_artifact:Report + Integration: Ergebnis dokumentieren und Bank dauerh`
+*25.08. 22:14 UTC · Quelle: builder*
+
+Der finale Report dokumentiert das A/B-Ergebnis ehrlich (Instinct `be_honest`), hinterlegt bei Misserfolg eine Anti-Pattern-Spur (Instinct `learn_always`, archiviert statt gelöscht gemäß `preserve_mem
+
+### `swarm_artifact:A/B-Vergleich auf der Messlatte: Läufe MIT vs. OHNE Exemplar`
+*25.08. 22:13 UTC · Quelle: builder*
+
+Der Harness misst beide Arme jetzt gepaart (gepaartes Design = gleiche Seeds für A und B, damit der Vergleich fair ist), protokolliert alle Rohdaten unverfälscht in `ab_ergebnis.json` und zieht das Fa
+
+### `swarm_artifact:Prompt-Injektion: Planner- und Builder-Prompt mit Beispielen`
+*25.08. 22:13 UTC · Quelle: builder*
+
+Die Injektion (Injektion = Einfügen in den Prompt) wird als vollständige `exemplare.py` geliefert: Sie vereint Bank, Retrieval und Few-Shot-Block und lädt bei fehlender Exemplarliste direkt aus der JS
+
+### `swarm_artifact:Semantische Ähnlichkeit: die 2 passendsten Beispiele pro Zie`
+*25.08. 22:09 UTC · Quelle: builder*
+
+Retrieval (Wiederfinden nach Bedeutung) via IDF-gewichtete Token-Überlappung – deterministisch und ohne Abhängigkeiten. Die Sortierung ist stabil, sodass Gleichstand die ursprüngliche Reihenfolge erhä
+
+### `swarm_artifact:exemplare.py: Exemplar-Bank Kernmodul (Speichern + Filtern)`
+*25.08. 22:05 UTC · Quelle: builder*
+
+```python # exemplare.py - Exemplar-Bank: von den eigenen besten Momenten lernen import json, os, re, time, hashlib  BANK_PFAD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "exemplar_bank
+
+### `last_swarm_goal`
+*25.08. 22:00 UTC · Quelle: system*
+
+Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
+
+### `dream:20260825220026:5:aa106c`
+*25.08. 22:00 UTC · Quelle: dream*
+
+The hand_action failed immediately (exit 1 in 0.04s) but was only caught later via issue_sync, so pre-flight validation of executable actions before dispatch would prevent wasted cycles.
+
+### `dream:20260825220026:4:63e88b`
+*25.08. 22:00 UTC · Quelle: dream*
+
+Evolution improved variant scores from 7.5 to 8.5 internally, yet the final measured score stayed at 5, revealing a gap between self-evaluated variant quality and empirically validated performance.
+
+### `dream:20260825220026:3:9c6960`
+*25.08. 22:00 UTC · Quelle: dream*
+
+The swarm terminated after only 2 cycles with converged=false and score=5, indicating the cycle budget ends runs before quality gates are met when improvement per cycle is small.
+
+### `dream:20260825220026:2:cf6796`
+*25.08. 22:00 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors on openrouter.ai across both stealth/ox-alpha and z-ai/glm-5.2:free show that bursty sequential calls without backoff or model rotation are the primary infrastructure failure mode.
+
+### `dream:20260825220026:1:7e90c1`
+*25.08. 22:00 UTC · Quelle: dream*
+
+The football predictor (zoetron_40c3426639) hit 49.48% vs the 50.18% baseline with worse log-loss (1.0124 vs 1.0073), meaning the model adds no edge over always predicting ~50% — the approach itself, not execution, is failing.
 
 ### `hand_result:Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren`
 *25.08. 21:44 UTC · Quelle: hands*
