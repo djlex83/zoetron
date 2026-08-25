@@ -1,24 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2563 Fakten** · Stand 2026-08-25 20:10 UTC · aktualisiert bei jedem Herzschlag
+**2577 Fakten** · Stand 2026-08-25 20:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1137
-- **swarm_artifact:** 707
-- **anti_pattern:** 230
-- **last_swarm_goal:** 183
-- **strategy:** 136
-- **last_swarm_critique:** 120
-- **aktuell_fussball_messlatte:** 29
+- **dream:** 1142
+- **swarm_artifact:** 709
+- **anti_pattern:** 232
+- **last_swarm_goal:** 184
+- **strategy:** 137
+- **last_swarm_critique:** 121
+- **aktuell_fussball_messlatte:** 30
 - **creator_teaching:** 8
 - **tool:** 4
+- **hand_result:** 3
 - **frontier:** 3
-- **hand_result:** 2
 - **aktuell_organfehler:** 1
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 20:39 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.64 -0.40 -0.72 -0.72 -0.72 -0.72. Der Log-Loss ist
+
+### `hand_result:Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten`
+*25.08. 20:39 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787690341641.py\", line 109\n    rows.append(dict(date=f\"2021-{i % 12 + 1:02\n                                 ^\nSyntaxError: '{' was never closed\n"}
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 20:38 UTC · Quelle: evolution*
+
+Probabilistisches hierarchical Bayesian-Modell mit Partial Pooling über Ligen - Variant 2 (hierarchical Bayesian) offers the most principled solution: partial pooling via hyperpriors structurally shares strength across competitions, international club games ar
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :1`
+*25.08. 20:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.0): Marktunabhängiges Ensemble aus strukturellen Features statt Ratings allein - Verlasse den reinen Rating-Ansatz: Trainiere ein Gradient-Boosting-/Logit-Modell ausschließlich auf nicht-quotenbasierten, empirisch validierten F
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :0`
+*25.08. 20:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.5): Echtdaten-Backtesting mit Cross-Competition-Rating-Transfer - Baue die Pipeline auf öffentlich verfügbaren echten historischen Daten auf (z.B. football-data.co.uk: 20+ Ligen über 10+ Saisons, inkl. internationaler Spiele). 
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 20:37 UTC · Quelle: builder*
+
+[score 5] Aenderung ggue. zoetron_71933bf25d.py: GENAU EINE Sache – Elo-Ratings werden am Team selbst gefuehrt statt an (Wettbewerb, Team). Damit tragen Spiele aus allen Wettbewerben zu einem geme
+
+### `last_swarm_critique`
+*25.08. 20:37 UTC · Quelle: critic*
+
+score=5; issues=Kein empirischer Nachweis des Ziels: Der Selbsttest nutzt rein synthetische Poisson-Daten mit einer einzigen Competition ('TEST') – weder die 50,2%-Basislinie noch eine Verbesserung ggü. der vorherigen (Wettbewerb, Team)-Variante wird auf echte
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 20:36 UTC · Quelle: builder*
+
+Aenderung ggue. zoetron_71933bf25d.py: GENAU EINE Sache – Elo-Ratings werden am Team selbst gefuehrt statt an (Wettbewerb, Team). Damit tragen Spiele aus allen Wettbewerben zu einem gemeinsamen Rating
+
+### `last_swarm_goal`
+*25.08. 20:32 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825203233:5:2dcd44`
+*25.08. 20:32 UTC · Quelle: dream*
+
+Metabolic stress (0.602, conserve state) capped the swarm at max_tasks=3/max_iterations=1, which likely contributed to the low first-attempt score; budget-constrained runs need cheaper pre-validation instead of full execution.
+
+### `dream:20260825203233:4:508036`
+*25.08. 20:32 UTC · Quelle: dream*
+
+Simulation consistently flags risks (5 then 4) and demands revisions, but only 1 of 4 revisions was applied in the second pass — unapplied revisions correlate with residual risk and should be applied fully before execution.
+
+### `dream:20260825203233:3:57e755`
+*25.08. 20:32 UTC · Quelle: dream*
+
+The first attempt scored 3/10 but evolution over 3 variants produced a winner scoring 9/10, confirming that iterative variant generation beats single-shot attempts on hard goals.
+
+### `dream:20260825203233:2:a051e6`
+*25.08. 20:32 UTC · Quelle: dream*
+
+Prediction calibration is systematically optimistic: predicted 5 vs actual 3 (abs_error 2), so future score predictions should be deflated by roughly the recent mean error.
+
+### `dream:20260825203233:1:d62655`
+*25.08. 20:32 UTC · Quelle: dream*
+
+Rate limits (429) cascade across models on the same provider (openrouter.ai), so fallback within one provider is not a real fallback — diversify providers or cache prior outputs.
 
 ### `aktuell_fussball_messlatte`
 *25.08. 20:10 UTC · Quelle: bewerte.py*

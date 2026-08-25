@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 20:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 20:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,6 +26,7 @@
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Vorgeschlagene Fähigkeiten endlich ausprobieren
@@ -37,10 +38,14 @@
 - Simulationen in echtes Handeln überführen
 - Täglich neue Fähigkeiten üben
 - Fehler vermeiden und korrigieren
-- Neue Ideen ausprobieren
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolic stress (0.602, conserve state) capped the swarm at max_tasks=3/max_iterations=1, which likely contributed to the low first-attempt score; bu
+- Simulation consistently flags risks (5 then 4) and demands revisions, but only 1 of 4 revisions was applied in the second pass — unapplied revisions c
+- The first attempt scored 3/10 but evolution over 3 variants produced a winner scoring 9/10, confirming that iterative variant generation beats single-
+- Prediction calibration is systematically optimistic: predicted 5 vs actual 3 (abs_error 2), so future score predictions should be deflated by roughly 
+- Rate limits (429) cascade across models on the same provider (openrouter.ai), so fallback within one provider is not a real fallback — diversify provi
 - The nachspiel metric showed zero delta (-0.2 to -0.2) across cycles, meaning repeated revision rounds without structural change produce no measurable 
 - A DNS name-resolution failure during act-create shows that network-level flakiness, not just API errors, interrupts goal execution and needs retry han
 - Model calls failed repeatedly with 429 Too Many Requests on two different providers within the same second, indicating shared upstream rate limiting r
@@ -51,11 +56,6 @@
 - The metabolism_check correctly throttled to conserve mode (max_tasks=3), but model retries still burned budget on doomed requests; retry logic should 
 - Rate-limit failures cluster within seconds of each other (ts 1787679154-1787679256), indicating parallel or rapid sequential calls exhaust the quota —
 - Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so every critical call needs a fallback chain with at least one 
-- The simulation step (verdict 'revise', 5 revisions applied) succeeded before model calls degraded, confirming pre-flight revision is cheap insurance w
-- Running under metabolism state 'conserve' (max_tasks=3, max_iterations=1) while issuing many parallel model calls contradicts the budget, suggesting r
-- Calibration showed predicted=6 vs actual=3 (abs_error 3), meaning the system systematically overestimates effort/output for this goal type and should 
-- The primary model 'stealth/ox-alpha' failed with 429 three times in one session while still completing the highest-token tasks, so it should be treate
-- Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues,
 
 ---
 
