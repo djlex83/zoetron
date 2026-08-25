@@ -1,17 +1,17 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 14:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 14:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Before building, check memory for prior artifacts on the same topic.
+- Before building, check memory for prior artifacts on the same topic. *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Explore unknown territory
-- Test a capability limit
-- Connect two distant memories
+- Explore unknown territory *(wieder aufgegriffen: 2×)*
+- Test a capability limit *(wieder aufgegriffen: 2×)*
+- Connect two distant memories *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 

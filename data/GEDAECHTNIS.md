@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2415 Fakten** · Stand 2026-08-25 14:05 UTC · aktualisiert bei jedem Herzschlag
+**2423 Fakten** · Stand 2026-08-25 14:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1088
+- **dream:** 1090
 - **swarm_artifact:** 685
-- **anti_pattern:** 210
-- **last_swarm_goal:** 172
-- **strategy:** 126
-- **last_swarm_critique:** 110
-- **aktuell_fussball_messlatte:** 9
+- **anti_pattern:** 212
+- **last_swarm_goal:** 173
+- **strategy:** 127
+- **last_swarm_critique:** 111
+- **aktuell_fussball_messlatte:** 10
 - **creator_teaching:** 8
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -17,6 +17,76 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 14:35 UTC · Quelle: evolution*
+
+structural - best feasibility/impact balance
+
+### `anti_pattern:Previous attempt scored 9/10. Goal: Fußball: die Basislinie :2`
+*25.08. 14:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): automated - script the whole path NICHT wiederholt anbieten.
+
+### `anti_pattern:Previous attempt scored 9/10. Goal: Fußball: die Basislinie :0`
+*25.08. 14:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): minimal - smallest working step NICHT wiederholt anbieten.
+
+### `swarm_artifact:Prototype: minimal artifact for Fußball: die Basislinie von `
+*25.08. 14:35 UTC · Quelle: builder*
+
+[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
+
+### `swarm_artifact:Differentiate: what is missing for Fußball: die Basislinie v`
+*25.08. 14:35 UTC · Quelle: builder*
+
+[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
+
+### `swarm_artifact:Research: state of the art for Fußball: die Basislinie von 5`
+*25.08. 14:35 UTC · Quelle: builder*
+
+[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
+
+### `last_swarm_critique`
+*25.08. 14:35 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `swarm_artifact:Prototype: minimal artifact for Fußball: die Basislinie von `
+*25.08. 14:35 UTC · Quelle: builder*
+
+# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
+
+### `swarm_artifact:Differentiate: what is missing for Fußball: die Basislinie v`
+*25.08. 14:35 UTC · Quelle: builder*
+
+# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
+
+### `swarm_artifact:Research: state of the art for Fußball: die Basislinie von 5`
+*25.08. 14:35 UTC · Quelle: builder*
+
+# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
+
+### `last_swarm_goal`
+*25.08. 14:35 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825143502:2:a4c59e`
+*25.08. 14:35 UTC · Quelle: dream*
+
+Failed tasks cluster around missing context, not wrong logic.
+
+### `dream:20260825143502:1:7a3951`
+*25.08. 14:35 UTC · Quelle: dream*
+
+Recurring theme across events: planning quality dominates outcomes.
+
+### `aktuell_fussball_messlatte`
+*25.08. 14:06 UTC · Quelle: bewerte.py*
+
+Fußball, externe Messung: noch keine eigene Einreichung von bewerte.py bewertet. Basislinie 50.18 % Treffer, Log-Loss 1.0073, ohne Quoten.
 
 ### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
 *25.08. 14:05 UTC · Quelle: evolution*
@@ -33,40 +103,10 @@ ABGELEHNT von Evolution (Score 6): automated - script the whole path NICHT wiede
 
 ABGELEHNT von Evolution (Score 7): minimal - smallest working step NICHT wiederholt anbieten.
 
-### `swarm_artifact:Prototype: minimal artifact for Fußball: die Basislinie von `
-*25.08. 14:05 UTC · Quelle: builder*
-
-[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
-
-### `swarm_artifact:Differentiate: what is missing for Fußball: die Basislinie v`
-*25.08. 14:05 UTC · Quelle: builder*
-
-[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
-
-### `swarm_artifact:Research: state of the art for Fußball: die Basislinie von 5`
-*25.08. 14:05 UTC · Quelle: builder*
-
-[score 9] # Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps -
-
 ### `last_swarm_critique`
 *25.08. 14:05 UTC · Quelle: critic*
 
 score=9; issues=
-
-### `swarm_artifact:Prototype: minimal artifact for Fußball: die Basislinie von `
-*25.08. 14:05 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `swarm_artifact:Differentiate: what is missing for Fußball: die Basislinie v`
-*25.08. 14:05 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
-
-### `swarm_artifact:Research: state of the art for Fußball: die Basislinie von 5`
-*25.08. 14:05 UTC · Quelle: builder*
-
-# Artifact: the task  ## Approach Deterministic offline draft produced by MockLLM.  ## Key decisions - Scope kept minimal and verifiable. - Interfaces documented inline.  ## Next steps - Replace mock 
 
 ### `last_swarm_goal`
 *25.08. 14:05 UTC · Quelle: system*
