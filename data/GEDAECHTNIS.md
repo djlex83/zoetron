@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2455 Fakten** · Stand 2026-08-25 16:17 UTC · aktualisiert bei jedem Herzschlag
+**2475 Fakten** · Stand 2026-08-25 16:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1102
-- **swarm_artifact:** 683
-- **anti_pattern:** 218
-- **last_swarm_goal:** 176
-- **strategy:** 130
-- **last_swarm_critique:** 114
-- **aktuell_fussball_messlatte:** 17
+- **dream:** 1107
+- **swarm_artifact:** 689
+- **anti_pattern:** 220
+- **last_swarm_goal:** 177
+- **strategy:** 131
+- **last_swarm_critique:** 115
+- **aktuell_fussball_messlatte:** 21
 - **creator_teaching:** 8
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -17,6 +17,106 @@
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 16:47 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -1.66 -0.43 -2.35 -0.55 -0.43 -1.22. Der Log-Loss ist
+
+### `aktuell_fussball_messlatte`
+*25.08. 16:47 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.12 -1.66 -0.43 -2.35 -0.55 -0.43. Der Log-Loss ist
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 16:44 UTC · Quelle: evolution*
+
+Statistisch-robust: Poisson/Dixon-Coles Torverteilungsmodell mit strenger Zeitreihen-Backtest-Pipeli - Variante 0 adressiert beide Kritikpunkte direkt und vollständig: genau EIN Artefakt (Dixon-Coles) statt drei widersprüchlicher Ansätze, und die Walk-Forward-
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
+*25.08. 16:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Marktmechanik-Ersatz ohne Quoten: Konsens-Aggregation vieler schwacher öffentlic - Da Quoten tabu sind, wird deren Information künstlich rekonstruiert: Ein Ensemble aus 10+ dekorrelierten schwachen Vorhersagern (Elo mit fixem
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :1`
+*25.08. 16:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Empirisch-direkt: Feature-freie Frequenzanalyse historischer Ergebnisse + kontra - Radikal anderes Paradigma: kein parametrisches Modell, sondern reine empirische Konditionalisierung. Für jedes Spiel werden historische Analog
+
+### `swarm_artifact:Draw-Wahrscheinlichkeit aus Elo-Differenz ableiten`
+*25.08. 16:43 UTC · Quelle: builder*
+
+[score 4] # AENDERUNG: Draw-Wahrscheinlichkeit durch logistische Regression auf |Elo-Differenz| ersetzt (statt empirischer Bins + Prior). P(D) = sigmoid(intercept + coef * |d|). P(H), P(A) daraus 
+
+### `swarm_artifact:Dynamischer K-Faktor nach Team-Erfahrung`
+*25.08. 16:43 UTC · Quelle: builder*
+
+[score 4] AENDERUNG GENAU EINE SACHE: dynamischer K-Faktor nach Team-Erfahrung – jedes Team zaehlt seine Spiele, der K-Faktor wird pro Spiel mit einem glatten, begrenzten Zerfalls-Term `1 + K_BOOS
+
+### `swarm_artifact:Team-Level Elo statt Competition+Team Elo`
+*25.08. 16:43 UTC · Quelle: builder*
+
+[score 4] # AENDERUNG: Elo-Key von (competition, team) auf nur team umgestellt (TEAM_ONLY_ELO=True), mit Flag für Ablationstests from collections import defaultdict import numpy as np import panda
+
+### `last_swarm_critique`
+*25.08. 16:43 UTC · Quelle: critic*
+
+score=4; issues=Ziel '50,2 % schlagen' wird nirgends geprüft: Kein Backtest, keine Accuracy-/LogLoss-Berechnung, kein Vergleich gegen die Baseline. Alle drei Varianten liefern nur Modellcode ohne einen einzigen Evaluationsbeweis.; Drei sich widersprechende Art
+
+### `swarm_artifact:Draw-Wahrscheinlichkeit aus Elo-Differenz ableiten`
+*25.08. 16:42 UTC · Quelle: builder*
+
+# AENDERUNG: Draw-Wahrscheinlichkeit durch logistische Regression auf |Elo-Differenz| ersetzt (statt empirischer Bins + Prior). P(D) = sigmoid(intercept + coef * |d|). P(H), P(A) daraus via Elo-Erwart
+
+### `aktuell_fussball_messlatte`
+*25.08. 16:41 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.41 -0.12 -1.66 -0.43 -2.35 -0.55. Der Log-Loss ist
+
+### `swarm_artifact:Dynamischer K-Faktor nach Team-Erfahrung`
+*25.08. 16:41 UTC · Quelle: builder*
+
+AENDERUNG GENAU EINE SACHE: dynamischer K-Faktor nach Team-Erfahrung – jedes Team zaehlt seine Spiele, der K-Faktor wird pro Spiel mit einem glatten, begrenzten Zerfalls-Term `1 + K_BOOST * exp(-spiel
+
+### `aktuell_fussball_messlatte`
+*25.08. 16:40 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.31 -0.41 -0.12 -1.66 -0.43 -2.35. Der Log-Loss ist
+
+### `swarm_artifact:Team-Level Elo statt Competition+Team Elo`
+*25.08. 16:40 UTC · Quelle: builder*
+
+# AENDERUNG: Elo-Key von (competition, team) auf nur team umgestellt (TEAM_ONLY_ELO=True), mit Flag für Ablationstests from collections import defaultdict import numpy as np import pandas as pd  K    
+
+### `last_swarm_goal`
+*25.08. 16:35 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825163537:5:9298e2`
+*25.08. 16:35 UTC · Quelle: dream*
+
+Swarm convergence stalls at score 9 despite evolution cycles, revealing a capability ceiling in the current approach.
+
+### `dream:20260825163537:4:1ca642`
+*25.08. 16:35 UTC · Quelle: dream*
+
+Evolutionary variants failed to surpass the previous best score (9), indicating diminishing returns without architectural changes.
+
+### `dream:20260825163537:3:57a00c`
+*25.08. 16:35 UTC · Quelle: dream*
+
+Calibration consistently underestimates difficulty (predicted 7 vs actual 9), suggesting the need for difficulty-aware estimation.
+
+### `dream:20260825163537:2:953ba9`
+*25.08. 16:35 UTC · Quelle: dream*
+
+Model interface errors ('str' object has no attribute 'role') across multiple providers indicate a systemic schema mismatch in role handling.
+
+### `dream:20260825163537:1:2fb19e`
+*25.08. 16:35 UTC · Quelle: dream*
+
+Prose-only artifacts prevent convergence; executable code blocks are necessary for measurable progress in prediction tasks.
 
 ### `aktuell_fussball_messlatte`
 *25.08. 16:16 UTC · Quelle: bewerte.py*

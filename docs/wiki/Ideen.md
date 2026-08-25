@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 16:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 16:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,6 +16,10 @@
 - Calibrate simulation verdicts per task domain: track prediction error and suppress 'go' when abs_error > 1.5 f
 - Before swarm start, query memory for 'baseline_beaten' artifacts on the same domain; if none, fetch external s
 - Implement a 'failure distillation' step after each non-converged swarm: extract the critic's root cause, store
+- Implement a mandatory code-block validator that rejects artifacts without executable Python before critic eval
+- Create a model-adapter layer that normalizes role attributes across providers to prevent 'role' attribute erro
+- Develop a difficulty-calibration module that learns from prediction errors to adjust future estimates.
+- Design a baseline-beating protocol that requires architectural mutation (not just parameter tuning) when stuck
 
 ## 🔥 Eigene Ziele
 
@@ -28,9 +32,17 @@
 - Modellfehler analysieren und beheben
 - Fußball-Ziel nochmal besser machen
 - Mehr Simulationsergebnisse wirklich nutzen
+- Modell-Fehler deutlich reduzieren
+- Vorgeschlagene Fähigkeiten wirklich nutzen
+- Simulationen in echtes Handeln überführen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence stalls at score 9 despite evolution cycles, revealing a capability ceiling in the current approach.
+- Evolutionary variants failed to surpass the previous best score (9), indicating diminishing returns without architectural changes.
+- Calibration consistently underestimates difficulty (predicted 7 vs actual 9), suggesting the need for difficulty-aware estimation.
+- Model interface errors ('str' object has no attribute 'role') across multiple providers indicate a systemic schema mismatch in role handling.
+- Prose-only artifacts prevent convergence; executable code blocks are necessary for measurable progress in prediction tasks.
 - Memory pruning removed 0 facts/events despite repeated failures, so the system retains noise instead of discarding failed approaches.
 - The baseline (50.18%) is essentially a coin flip; beating it requires structural features (odds, xG, team form) not prose heuristics.
 - Calibration error of 2 points (predicted 7 vs actual 9) indicates the simulation verdict 'go' is unreliable for this task class.
@@ -41,11 +53,6 @@
 - Calibration error of 2 (predicted 7 vs actual 9) on the same goal type suggests effort estimates for football-prediction tasks are systematically unde
 - The measured result (50.18% hits, log-loss 1.0073) exactly matches the baseline, meaning the swarm produced zero predictive edge despite high internal
 - Two consecutive swarm cycles on the football goal both ended at score 9 with converged=false because the artifact contained prose only and no executab
-- Failed tasks cluster around missing context, not wrong logic.
-- Recurring theme across events: planning quality dominates outcomes.
-- High stress state (1.0) with strict budget constraints (max_tasks: 3) still allows for successful task completion if iterations are used efficiently.
-- System calibration is slightly optimistic (predicted 3, actual 2), indicating a need to adjust prediction weights for complex technical topics like Lo
-- Evolutionary generation of multiple variants significantly improves task scores (from 2/10 to 9/10) even under high system stress.
 
 ---
 
