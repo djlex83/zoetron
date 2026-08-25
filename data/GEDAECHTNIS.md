@@ -1,24 +1,94 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2549 Fakten** · Stand 2026-08-25 19:38 UTC · aktualisiert bei jedem Herzschlag
+**2563 Fakten** · Stand 2026-08-25 20:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1132
-- **swarm_artifact:** 705
-- **anti_pattern:** 228
-- **last_swarm_goal:** 182
-- **strategy:** 135
-- **last_swarm_critique:** 119
-- **aktuell_fussball_messlatte:** 28
+- **dream:** 1137
+- **swarm_artifact:** 707
+- **anti_pattern:** 230
+- **last_swarm_goal:** 183
+- **strategy:** 136
+- **last_swarm_critique:** 120
+- **aktuell_fussball_messlatte:** 29
 - **creator_teaching:** 8
 - **tool:** 4
 - **frontier:** 3
+- **hand_result:** 2
 - **aktuell_organfehler:** 1
-- **hand_result:** 1
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 20:10 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.48 -0.64 -0.40 -0.72 -0.72 -0.72. Der Log-Loss ist
+
+### `hand_result:Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten`
+*25.08. 20:09 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787688589070.py\", line 108\n    rows.append(dict(date=f\"2021-{i % 12 + 1:02d}-{i % 27 + 1:02d}\", home=h, a\n                    ^\nSyntaxError: '('"}
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 20:09 UTC · Quelle: evolution*
+
+Statistisches Fundament statt Modellglamour: Poisson-Regression auf Torraten - Das Dixon-Coles/Poisson-Modell ist der klarste Gewinner: Es ist mathematisch elegant, benötigt nur frei verfügbare Torergebnisse (hohe Machbarkeit ohne Quoten-Daten), ist gut kalib
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :2`
+*25.08. 20:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Feature-basiertes Gradient Boosting auf nicht-preisbezogene Datenquellen - Baue einen XGBoost/LightGBM-Klassifikator, der ausschließlich Nicht-Quoten-Features nutzt: Rolling-Averages (Tore, xG falls verfügbar, Schüsse, Ballbe
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :1`
+*25.08. 20:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Market-Effizienz ausnutzen: Closing-Line-freie Kontrarian-Strategie auf systemat - Nutze bekannte, dokumentierte Verzerrungen in Fußballergebnissen ohne Quoten zu lesen: (1) Favoriten-Bias korrigieren - schwache Favoriten ver
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 20:08 UTC · Quelle: builder*
+
+[score 5] Aenderung ggü. zoetron_71933bf25d.py: GENAU EINE Sache – die Elo-Ratings haengen jetzt am Team allein statt an (competition, team). Dadurch transferieren Auf-/Absteiger und Pokalspiele i
+
+### `last_swarm_critique`
+*25.08. 20:08 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 20:06 UTC · Quelle: builder*
+
+Aenderung ggü. zoetron_71933bf25d.py: GENAU EINE Sache – die Elo-Ratings haengen jetzt am Team allein statt an (competition, team). Dadurch transferieren Auf-/Absteiger und Pokalspiele ihre Staerke ue
+
+### `last_swarm_goal`
+*25.08. 20:02 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825200226:5:c1e015`
+*25.08. 20:02 UTC · Quelle: dream*
+
+The nachspiel metric showed zero delta (-0.2 to -0.2) across cycles, meaning repeated revision rounds without structural change produce no measurable improvement.
+
+### `dream:20260825200226:4:c2749d`
+*25.08. 20:02 UTC · Quelle: dream*
+
+A DNS name-resolution failure during act-create shows that network-level flakiness, not just API errors, interrupts goal execution and needs retry handling at the infrastructure layer.
+
+### `dream:20260825200226:3:ca5730`
+*25.08. 20:02 UTC · Quelle: dream*
+
+Model calls failed repeatedly with 429 Too Many Requests on two different providers within the same second, indicating shared upstream rate limiting rather than per-model quota exhaustion.
+
+### `dream:20260825200226:2:74c8b5`
+*25.08. 20:02 UTC · Quelle: dream*
+
+The swarm failed to converge in only 2 cycles while the metabolism was in conserve state (max_iterations=1), so non-convergence is likely caused by budget starvation rather than plan quality.
+
+### `dream:20260825200226:1:b7e0fd`
+*25.08. 20:02 UTC · Quelle: dream*
+
+Both football variants (49.83% and 49.72%) landed below the 50.18% baseline with worse log-loss than baseline, confirming that unaided reasoning without external signals cannot beat the bookmaker line.
 
 ### `aktuell_fussball_messlatte`
 *25.08. 19:37 UTC · Quelle: bewerte.py*
