@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2657 Fakten** · Stand 2026-08-25 22:37 UTC · aktualisiert bei jedem Herzschlag
+**2688 Fakten** · Stand 2026-08-25 23:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1167
-- **swarm_artifact:** 739
-- **anti_pattern:** 240
-- **last_swarm_goal:** 188
-- **strategy:** 141
-- **last_swarm_critique:** 125
+- **dream:** 1172
+- **swarm_artifact:** 749
+- **anti_pattern:** 242
+- **last_swarm_goal:** 189
+- **strategy:** 142
+- **last_swarm_critique:** 136
 - **aktuell_fussball_messlatte:** 30
 - **creator_teaching:** 8
-- **hand_result:** 6
+- **hand_result:** 7
 - **tool:** 5
 - **frontier:** 3
 - **aktuell_organfehler:** 2
@@ -19,6 +19,161 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)`
+*25.08. 23:11 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787699492198.py\", line 26\n    loesung = loesung[:1200] + '\n                               ^\nSyntaxError: unterminated string literal (detected a"}
+
+### `strategy:exemplar_bank__von_den_eigenen_besten_momenten_ler`
+*25.08. 23:10 UTC · Quelle: evolution*
+
+Datengetrennte Architektur: Exemplare leben in JSONL-Bank statt im Quelltext - Variante 1 adressiert die Kritikpunkte an der Wurzel: Durch die Auslagerung aller mehrzeiligen Inhalte in eine JSONL-Bank wird die Fehlerklasse 'SyntaxError durch rohe Zeilenumbrüc
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Exemplar-Bank: von den e:2`
+*25.08. 23:10 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Selbstlernender Kreislauf: Online-Curator mit Feedback-Loop und Eigendestillatio - Statt einer statischen Bank implementiere einen geschlossenen Regelkreis: Nach jeder Aufgabe wird das Ergebnis (task, output, critic_score) an
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Exemplar-Bank: von den e:0`
+*25.08. 23:10 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Test-getriebene Kernbibliothek (keine Inline-Strings, alles triple-quoted + mitg - Baue eine eigenständige Python-Datei exemplar_bank.py, in der ALLE mehrzeiligen Inhalte konsequent als Triple-Quoted-Strings ('''...''') defin
+
+### `swarm_artifact:Aufgabe 5: Report + Archivierung – Ergebnis dokumentieren un`
+*25.08. 23:10 UTC · Quelle: builder*
+
+[score 4] Abschluss-Artefakt: erzeugt `REPORT_exemplar_bank.md` mit Datum, Bankgröße, beiden Mittelwerten, Delta und ehrlichem Urteil; bei Misserfolg wird die Lektion (Kuratierung überarbeiten) in
+
+### `swarm_artifact:Aufgabe 4: A/B-Vergleich auf der Messlatte – MIT vs. OHNE Ex`
+*25.08. 23:10 UTC · Quelle: builder*
+
+[score 4] A/B-Harness (Prüfgerüst) für den Vergleichslauf: Arm A ohne Exemplare gegen Arm B mit injizierten Exemplaren, je n Läufe; Mittelwerte und Delta werden ehrlich ausgewertet (Kriterium `del
+
+### `swarm_artifact:Aufgabe 3: Prompt-Injektion – Beispiele in Planner- und Buil`
+*25.08. 23:10 UTC · Quelle: builder*
+
+[score 4] Integration Point (Integrationsstelle): `baue_prompt(ziel)` nutzt das Retrieval aus Aufgabe 2 und injiziert die Top-2-Exemplare als formatierten Block "## Lernbeispiele" in den Ziel-Prom
+
+### `swarm_artifact:Aufgabe 2: Retrieval – die 2 semantisch ähnlichsten Beispiel`
+*25.08. 23:10 UTC · Quelle: builder*
+
+[score 4] Retrieval-Modul für die Exemplar-Bank: Bag-of-Words-Vektoren (Bag-of-Words = Wortvorkommen-Zählung) mit Cosine Similarity über Aufgabe + Lösung, Stopwörter gefiltert. Die Schnittstelle `
+
+### `swarm_artifact:Aufgabe 1: exemplare.py – Kuratierung der Best Moments (Scor`
+*25.08. 23:10 UTC · Quelle: builder*
+
+[score 4] ```python # exemplare.py – Kuratierung der Best Moments (Score >= 8 + Tests bestanden) # Exemplar-Bank als JSON; alte Bank wird vor dem Überschreiben versioniert archiviert. import json 
+
+### `last_swarm_critique`
+*25.08. 23:10 UTC · Quelle: critic*
+
+score=4; issues=Aufgabe 1: Der Quelltext enthält, wörtlich genommen, mehrzeilige String-Literale mit rohen Zeilenumbrüchen in einfachen Anführungszeichen (Truncation-Suffix und Demo-Loesungen) – das ist ein SyntaxError; das Artefakt ist in dieser Form nicht au
+
+### `swarm_artifact:Aufgabe 5: Report + Archivierung – Ergebnis dokumentieren un`
+*25.08. 23:09 UTC · Quelle: builder*
+
+Abschluss-Artefakt: erzeugt `REPORT_exemplar_bank.md` mit Datum, Bankgröße, beiden Mittelwerten, Delta und ehrlichem Urteil; bei Misserfolg wird die Lektion (Kuratierung überarbeiten) in `lektionen.lo
+
+### `swarm_artifact:Aufgabe 4: A/B-Vergleich auf der Messlatte – MIT vs. OHNE Ex`
+*25.08. 23:08 UTC · Quelle: builder*
+
+A/B-Harness (Prüfgerüst) für den Vergleichslauf: Arm A ohne Exemplare gegen Arm B mit injizierten Exemplaren, je n Läufe; Mittelwerte und Delta werden ehrlich ausgewertet (Kriterium `delta >= 0`), und
+
+### `swarm_artifact:Aufgabe 3: Prompt-Injektion – Beispiele in Planner- und Buil`
+*25.08. 23:08 UTC · Quelle: builder*
+
+Integration Point (Integrationsstelle): `baue_prompt(ziel)` nutzt das Retrieval aus Aufgabe 2 und injiziert die Top-2-Exemplare als formatierten Block "## Lernbeispiele" in den Ziel-Prompt – identisch
+
+### `swarm_artifact:Aufgabe 2: Retrieval – die 2 semantisch ähnlichsten Beispiel`
+*25.08. 23:08 UTC · Quelle: builder*
+
+Retrieval-Modul für die Exemplar-Bank: Bag-of-Words-Vektoren (Bag-of-Words = Wortvorkommen-Zählung) mit Cosine Similarity über Aufgabe + Lösung, Stopwörter gefiltert. Die Schnittstelle `top_k(ziel, k=
+
+### `swarm_artifact:Aufgabe 1: exemplare.py – Kuratierung der Best Moments (Scor`
+*25.08. 23:07 UTC · Quelle: builder*
+
+```python # exemplare.py – Kuratierung der Best Moments (Score >= 8 + Tests bestanden) # Exemplar-Bank als JSON; alte Bank wird vor dem Überschreiben versioniert archiviert. import json import pathlib
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:07 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:02 UTC · Quelle: critic*
+
+score=0; issues=
+
+### `last_swarm_goal`
+*25.08. 23:00 UTC · Quelle: system*
+
+Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
+
+### `dream:20260825230026:5:29dccd`
+*25.08. 23:00 UTC · Quelle: dream*
+
+The hand_action exiting with code 1 in 0.03s indicates an immediate startup failure (bad path/binary/config), which a cheap pre-flight dry-run would have caught before committing the real action.
+
+### `dream:20260825230026:4:36c967`
+*25.08. 23:00 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free network error ('Cannot assign requested address') plus a successful nemotron fallback confirms free-tier models are unreliable endpoints and failover chains are necessary, not optional.
+
+### `dream:20260825230026:3:669665`
+*25.08. 23:00 UTC · Quelle: dream*
+
+The calibration gap (predicted 6 vs actual 3) shows the system systematically overestimates its own capability on novel automation goals by roughly 2x and should deflate self-predictions for unproven reflexes.
+
+### `dream:20260825230026:2:af25e7`
+*25.08. 23:00 UTC · Quelle: dream*
+
+Evolution variant selection works: in the run with scores [6, 9, 7], the winner (index 1) was the highest-scoring variant, so the failure lies downstream in deployment/persistence, not in generation.
+
+### `dream:20260825230026:1:b42ad2`
+*25.08. 23:00 UTC · Quelle: dream*
+
+The 'Cortex-Upgrade-Reflex' goal failed twice at score 3/10 because swarm termination fired after only 2 cycles without convergence, cutting short the evolution loop that had already produced a 9/10 variant.
 
 ### `hand_result:Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)`
 *25.08. 22:37 UTC · Quelle: hands*

@@ -1,5 +1,5 @@
 {
- "stand": 1787697423.877634,
+ "stand": 1787699491.6266623,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -44,11 +44,11 @@
    "kontofehler": 36
   },
   "stealth/ox-alpha": {
-   "laeufe": 389,
+   "laeufe": 396,
    "fehler": 5,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 32437.81401205063,
+   "latenz_summe_s": 32903.98038935661,
    "letzter_fehler": "The read operation timed out",
    "letzte_sperre": 1787556927.5394878,
    "kontofehler": 117

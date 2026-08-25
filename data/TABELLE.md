@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2002 Neuronen · 32920 bewertete Synapsen
+Stand: 2013 Neuronen · 33047 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,15 +10,15 @@ Stand: 2002 Neuronen · 32920 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 164 | 0.25 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 183 | 0.22 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 183 | 0.22 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 184 | 0.23 |
+| 2 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 164 | 0.25 |
+| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 184 | 0.22 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 158 | 0.25 |
 | 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 130 | 0.27 |
 | 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 132 | 0.26 |
 | 7 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 131 | 0.25 |
 | 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 136 | 0.24 |
-| 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 114 | 0.27 |
+| 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 115 | 0.27 |
 | 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 118 | 0.25 |
 | 11 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 121 | 0.24 |
 | 12 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 115 | 0.25 |

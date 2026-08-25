@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 22:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 23:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The hand_action exiting with code 1 in 0.03s indicates an immediate startup failure (bad path/binary/config), which a cheap pre-flight dry-run would h
+- The z-ai/glm-5.2:free network error ('Cannot assign requested address') plus a successful nemotron fallback confirms free-tier models are unreliable e
+- The calibration gap (predicted 6 vs actual 3) shows the system systematically overestimates its own capability on novel automation goals by roughly 2x
+- Evolution variant selection works: in the run with scores [6, 9, 7], the winner (index 1) was the highest-scoring variant, so the failure lies downstr
+- The 'Cortex-Upgrade-Reflex' goal failed twice at score 3/10 because swarm termination fired after only 2 cycles without convergence, cutting short the
 - Prune runs removed zero facts and zero events, suggesting the pruning criteria are too conservative and memory is growing without pressure toward rele
 - 40+ skill proposals have accumulated but almost none were tested, so the proposal pipeline is producing knowledge that never converts into capability.
 - Reflex execution of the Cortex-Upgrade-Reflex succeeded in 0.5s and converged immediately, proving that pre-packaged reflexes outperform full swarm de
@@ -51,11 +56,6 @@
 - The swarm terminated after only 2 cycles with converged=false and score=5, indicating the cycle budget ends runs before quality gates are met when imp
 - Repeated 429 rate-limit errors on openrouter.ai across both stealth/ox-alpha and z-ai/glm-5.2:free show that bursty sequential calls without backoff o
 - The football predictor (zoetron_40c3426639) hit 49.48% vs the 50.18% baseline with worse log-loss (1.0124 vs 1.0073), meaning the model adds no edge o
-- 35+ skill proposals have accumulated with almost none tested, so proposal generation has become a token sink without a validation loop.
-- Calibration error of ±1 on a 5-point scale plus a post-hoc delta of -0.25 shows self-scores are systematically optimistic and uncorrelated with measur
-- The hand_action failed immediately (exit 1 in 0.03s) yet the pipeline continued to scoring, meaning execution failures are not gating downstream steps
-- The simulation step flagged 4 risks but only 1 revision was applied before execution, so the 'revise' verdict was effectively ignored — partial revisi
-- The football predictor remains below baseline (49.48% vs 50.18%, log-loss 1.0124 vs 1.0073) even after evolution and swarm cycles, indicating the curr
 
 ---
 
