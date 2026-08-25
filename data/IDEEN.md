@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 19:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 19:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The football baseline goal has a hard external critic (actual match outcomes vs. the 50.2% threshold), making per-match prediction logging the only ob
+- Skill proposals accumulate (28 pending) without a validation loop, so proposals are being generated faster than they are exercised — integration requi
+- The metabolism_check correctly throttled to conserve mode (max_tasks=3), but model retries still burned budget on doomed requests; retry logic should 
+- Rate-limit failures cluster within seconds of each other (ts 1787679154-1787679256), indicating parallel or rapid sequential calls exhaust the quota —
+- Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so every critical call needs a fallback chain with at least one 
 - The simulation step (verdict 'revise', 5 revisions applied) succeeded before model calls degraded, confirming pre-flight revision is cheap insurance w
 - Running under metabolism state 'conserve' (max_tasks=3, max_iterations=1) while issuing many parallel model calls contradicts the budget, suggesting r
 - Calibration showed predicted=6 vs actual=3 (abs_error 3), meaning the system systematically overestimates effort/output for this goal type and should 
@@ -51,11 +56,6 @@
 - Five consecutive model failures were all rate-limit or upstream-overload errors (429/502) across four different providers, showing that free-tier Open
 - The nachspiel check shows the log-loss metric unchanged (vorher -0.2, jetzt -0.2), meaning recent swarm cycles produced zero measurable improvement an
 - Both football variants (zoetron_f37812f578 at 49.77%, zoetron_432d95898b at 48.98%) underperformed the 50.18% baseline on both hit rate and log-loss, 
-- The swarm goal (beat 50.2% football baseline without odds) has an unfakeable external critic (match results), making it the ideal testbed for validati
-- Skill proposals are generated at a high rate (5 per dream cycle) but the drive_goal 'gap' signal confirms near-zero adoption, revealing that proposal 
-- Metabolism state 'conserve' (max_tasks=3, max_iterations=1) combined with slow-model latency means single-shot prompts must be self-contained, since r
-- nvidia/nemotron-3-ultra-550b-a55b:free succeeded in all three attempts but with high latency variance (9s–55s), so it is reliable yet slow and unsuita
-- The 429 failures on stealth/ox-alpha and z-ai/glm-5.2:free recur across every task cycle, indicating these endpoints are persistently rate-limited and
 
 ---
 

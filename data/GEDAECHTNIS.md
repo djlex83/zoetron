@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2535 Fakten** · Stand 2026-08-25 19:10 UTC · aktualisiert bei jedem Herzschlag
+**2549 Fakten** · Stand 2026-08-25 19:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1127
-- **swarm_artifact:** 703
-- **anti_pattern:** 226
-- **last_swarm_goal:** 181
-- **strategy:** 134
-- **last_swarm_critique:** 118
-- **aktuell_fussball_messlatte:** 27
+- **dream:** 1132
+- **swarm_artifact:** 705
+- **anti_pattern:** 228
+- **last_swarm_goal:** 182
+- **strategy:** 135
+- **last_swarm_critique:** 119
+- **aktuell_fussball_messlatte:** 28
 - **creator_teaching:** 8
-- **tool:** 3
+- **tool:** 4
 - **frontier:** 3
 - **aktuell_organfehler:** 1
 - **hand_result:** 1
@@ -19,6 +19,76 @@
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 19:37 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.37 -0.48 -0.64 -0.40 -0.72 -0.72. Der Log-Loss ist
+
+### `tool:fußball-die-basislinie-von-50-2-schlagen`
+*25.08. 19:37 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten'. Datei: data/tools/fußball-die-basislinie-von-50-2-schlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 19:37 UTC · Quelle: evolution*
+
+Evidenz-first: Echtdaten-Backtest mit Elo-Ratings als Kernmodell - Variante 0 adressiert beide Kritikpunkte direkt und minimal-invasiv: echte Daten mit echten Stärkeunterschieden statt synthetischer Poisson-Daten sowie ein expliziter, messbarer Ve
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
+*25.08. 19:37 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Ensemble aus einfachen Baseline-Schlagern + Kalibrierung (Meta-Layer) - Dritter Winkel: nicht ein besseres Einzelmodell, sondern eine Meta-Strategie, die garantiert nicht unter der Baseline liegt. (1) Mehrere triviale Prädikt
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :1`
+*25.08. 19:37 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Statistik-basiertes Regressionsmodell (xG/Tor-Differenz) statt Rating - Völlig anderer Angriffswinkel: kein spiel-für-spiel-Rating, sondern ein merkmalsbasiertes Modell. Aus denselben Realdaten werden pro Team rollierende Mer
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 19:36 UTC · Quelle: builder*
+
+[score 4] # Artefakt: zoetron_variante-c-elo-auf-team-ebene.md  Genau EINE Änderung gegenüber `zoetron_71933bf25d.py`: Die Elo-Ratings werden auf Team-Ebene (`home`/`away`) statt auf `(competition
+
+### `last_swarm_critique`
+*25.08. 19:36 UTC · Quelle: critic*
+
+score=4; issues=Ziel 'Basislinie von 50,2 % schlagen' wird nicht belegt: Es gibt keinerlei Backtest-Ergebnisse auf realen Fußballdaten, keinen Vergleich gegen die 50,2%-Baseline und keine gemessene Accuracy/Log-Loss-Zahl – das Artefakt liefert nur Code, keine 
+
+### `swarm_artifact:Draft deliverable for: Fußball: die Basislinie von 50,2 % sc`
+*25.08. 19:36 UTC · Quelle: builder*
+
+# Artefakt: zoetron_variante-c-elo-auf-team-ebene.md  Genau EINE Änderung gegenüber `zoetron_71933bf25d.py`: Die Elo-Ratings werden auf Team-Ebene (`home`/`away`) statt auf `(competition, team)` gefüh
+
+### `last_swarm_goal`
+*25.08. 19:32 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825193229:5:cbdc48`
+*25.08. 19:32 UTC · Quelle: dream*
+
+The football baseline goal has a hard external critic (actual match outcomes vs. the 50.2% threshold), making per-match prediction logging the only objective measure of progress.
+
+### `dream:20260825193229:4:a61d18`
+*25.08. 19:32 UTC · Quelle: dream*
+
+Skill proposals accumulate (28 pending) without a validation loop, so proposals are being generated faster than they are exercised — integration requires an explicit practice-and-score step per skill.
+
+### `dream:20260825193229:3:013a5e`
+*25.08. 19:32 UTC · Quelle: dream*
+
+The metabolism_check correctly throttled to conserve mode (max_tasks=3), but model retries still burned budget on doomed requests; retry logic should respect the stress state.
+
+### `dream:20260825193229:2:51844b`
+*25.08. 19:32 UTC · Quelle: dream*
+
+Rate-limit failures cluster within seconds of each other (ts 1787679154-1787679256), indicating parallel or rapid sequential calls exhaust the quota — spacing requests or caching responses would prevent most failures.
+
+### `dream:20260825193229:1:98b49e`
+*25.08. 19:32 UTC · Quelle: dream*
+
+Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so every critical call needs a fallback chain with at least one reliable model (nemotron succeeded consistently).
 
 ### `aktuell_fussball_messlatte`
 *25.08. 19:09 UTC · Quelle: bewerte.py*
