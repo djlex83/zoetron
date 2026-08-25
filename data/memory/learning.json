@@ -1,48 +1,12 @@
 {
- "stand": "2026-08-24 23:16:17",
+ "stand": "2026-08-25 12:22:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "ci-pipeline-reparieren-und-simulation-va.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "synapsen-semantisch-vernetzen.py",
+   "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
    "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorschläge-für-fähigkeiten-umsetzen.py",
-   "laeufe": 1,
    "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fehler-im-modell-vermeiden.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-träume-nach-ideen-durchsuchen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fehler-in-modellen-finden.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modell-gesundheitsregister-mit-sicherung.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
+   "quote": 0.5
   },
   {
    "tool": "konvergenz-tor-test-pflicht-vor-erfolg-c.py",
@@ -69,23 +33,29 @@
    "quote": 1.0
   },
   {
-   "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
+   "tool": "synapsen-semantisch-vernetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "ci-pipeline-reparieren-und-simulation-va.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
   }
  ],
- "haende_quote": 0.756,
- "simulationen_angewandt": 84,
+ "haende_quote": 0.644,
+ "simulationen_angewandt": 87,
  "swarm_scores": {
-  "n": 39,
-  "best": 8.0,
-  "schnitt": 3.77
+  "n": 43,
+  "best": 6.0,
+  "schnitt": 3.44
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 36,
-   "schnitt": 3.78
+   "n": 41,
+   "schnitt": 3.46
   },
   "bau": {
    "n": 2,
