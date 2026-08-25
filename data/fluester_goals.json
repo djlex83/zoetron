@@ -138,13 +138,15 @@
   "why": "Die schnellste Destillation braucht kein Training: Die besten eigenen Lösungen werden Lehrbeispiele. Baue exemplare.py: Artefakte mit Score >= 8 und bestandenem Test wandern als gekürztes Beispiel (Aufgabe + Lösung) in eine Exemplar-Bank; pro neuem Ziel werden die 2 semantisch ähnlichsten Beispiele in den Planner- und Builder-Prompt injiziert (In-Context-Learning = Lernen aus Beispielen im Prompt statt im Training). Fertig wenn: ein A/B-Vergleich auf der Messlatte zeigt, dass Läufe MIT Exemplaren mindestens gleichauf oder besser abschneiden, dokumentiert im Report.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  },
  {
   "title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial",
   "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig wenn: mindestens 200 gefilterte Paare in data/destillat/ liegen, ein Validator das Format prüft und die Statistik (Anzahl, Ablehnungsquote) im Wochenreport steht.",
   "signal": "gap",
-  "_done": false
+  "_done": false,
+  "_versuche": 0
  },
  {
   "title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)",

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 23:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 23:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals are accumulating faster than they are tested (the 'stale' drive signal confirms this), creating an unvalidated backlog that risks comp
+- Model latency is highly bimodal (3–22s typical vs. one 372s spike with 6238 output tokens), so long-generation tasks need an explicit time budget or s
+- Simulation verdicts are consistently 'revise' but only a fraction of proposed revisions get applied (5→1, 4→3), meaning the revision-application step 
+- The swarm repeatedly terminates at score 5 without converging after only 2 cycles, indicating the termination criterion rewards 'acceptable' over 'con
+- hand_action is the most fragile subsystem: two distinct failure modes occurred (exit 1 in 0.03s and a 25s timeout), so every shell invocation needs bo
 - The hand_action exiting with code 1 in 0.03s indicates an immediate startup failure (bad path/binary/config), which a cheap pre-flight dry-run would h
 - The z-ai/glm-5.2:free network error ('Cannot assign requested address') plus a successful nemotron fallback confirms free-tier models are unreliable e
 - The calibration gap (predicted 6 vs actual 3) shows the system systematically overestimates its own capability on novel automation goals by roughly 2x
@@ -51,11 +56,6 @@
 - Reflex execution of the Cortex-Upgrade-Reflex succeeded in 0.5s and converged immediately, proving that pre-packaged reflexes outperform full swarm de
 - Selbstdiagnose found 9 ConnectError findings concentrated in the dream and drive organs, indicating transient network failures rather than logic bugs 
 - The swarm failed to converge (score 3, converged=false) because the critic kept issuing 'revise' verdicts while the 2-cycle budget expired before revi
-- The hand_action failed immediately (exit 1 in 0.04s) but was only caught later via issue_sync, so pre-flight validation of executable actions before d
-- Evolution improved variant scores from 7.5 to 8.5 internally, yet the final measured score stayed at 5, revealing a gap between self-evaluated variant
-- The swarm terminated after only 2 cycles with converged=false and score=5, indicating the cycle budget ends runs before quality gates are met when imp
-- Repeated 429 rate-limit errors on openrouter.ai across both stealth/ox-alpha and z-ai/glm-5.2:free show that bursty sequential calls without backoff o
-- The football predictor (zoetron_40c3426639) hit 49.48% vs the 50.18% baseline with worse log-loss (1.0124 vs 1.0073), meaning the model adds no edge o
 
 ---
 
