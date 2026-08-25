@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1885 Neuronen · 39160 bewertete Synapsen
+Stand: 1892 Neuronen · 39402 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -20,8 +20,8 @@ Stand: 1885 Neuronen · 39160 bewertete Synapsen
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Modellkalibrierung verbe“ (Note 4/1… | 178 | 0.22 |
 | 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler beim Handeln vers“ (Note 7/1… | 178 | 0.22 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fehler bei Modellen und “ (Note 3/1… | 178 | 0.22 |
-| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 178 | 0.22 |
-| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 177 | 0.22 |
+| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Modellleistung durch reg“ (Note 4/1… | 177 | 0.22 |
+| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge häu“ (Note 3/1… | 178 | 0.22 |
 | 13 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 156 | 0.25 |
 | 14 | 🚫 | 🚫 Gescheiterter Versuch für „Ich-Kern-Injektor bauen:“ (Note 2/1… | 178 | 0.22 |
 | 15 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeitsvorschläge akt“ (Note 5/1… | 177 | 0.22 |

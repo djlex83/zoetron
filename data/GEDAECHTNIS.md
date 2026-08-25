@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2383 Fakten** · Stand 2026-08-25 12:56 UTC · aktualisiert bei jedem Herzschlag
+**2402 Fakten** · Stand 2026-08-25 13:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1082
-- **swarm_artifact:** 673
-- **anti_pattern:** 206
-- **last_swarm_goal:** 170
-- **strategy:** 124
-- **last_swarm_critique:** 108
+- **dream:** 1086
+- **swarm_artifact:** 679
+- **anti_pattern:** 208
+- **last_swarm_goal:** 171
+- **strategy:** 125
+- **last_swarm_critique:** 109
+- **aktuell_fussball_messlatte:** 9
 - **creator_teaching:** 8
-- **aktuell_fussball_messlatte:** 5
 - **frontier:** 3
 - **semantic_organ:** 1
 - **tool:** 1
@@ -17,6 +17,101 @@
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 13:21 UTC · Quelle: vorpruefung.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. ACHTUNG, zuletzt abgelehnt (zoetron_a0d6dc018c.py): VERTRAG VERLETZT: ACHSEN VERTAUSCHT: Im Mittel sagst du P
+
+### `aktuell_fussball_messlatte`
+*25.08. 13:20 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -25.95 -0.19 -0.41 -1.51 -0.69 -0.78. Der Log-Loss is
+
+### `aktuell_fussball_messlatte`
+*25.08. 13:20 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.12 -25.95 -0.19 -0.41 -1.51 -0.69. Der Log-Loss is
+
+### `aktuell_fussball_messlatte`
+*25.08. 13:19 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.31 -0.12 -25.95 -0.19 -0.41 -1.51. Der Log-Loss is
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 13:18 UTC · Quelle: evolution*
+
+Elo Rating System with Dynamic Margin Adjustment - Variant 1 (Elo mit dynamischer K-Faktor-Anpassung) ist der klare Gewinner: Es ist das einzige Design, das die harte Strukturanforderung von genau drei Funktionen ('trainiere', 'vor
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
+*25.08. 13:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Decision Tree Ensemble with Feature Engineering from Raw Text Data - Build an ensemble of decision trees (e.g. Random Forest or Gradient Boosted Trees) trained on engineered features derived from pre-match news articles, team
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :0`
+*25.08. 13:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Monte Carlo Simulation with Neural Network Calibration - Instead of relying on statistical distributions like Poisson, use a neural network to learn the probability distribution of goals directly from historical match data. T
+
+### `swarm_artifact:Optimiertes Modell mit Poisson-/Dixon-Coles-Elementen`
+*25.08. 13:17 UTC · Quelle: builder*
+
+[score 4] ## Artefakt: Poisson-/Dixon-Coles-Modell mit Elo-basierten Torerwartungen  Das Modell führt Elo-Ratings (mit Tordifferenz-Multiplikator, Saison-Regression und Aufsteiger-Shrinkage über g
+
+### `swarm_artifact:Validierungsskript mit Log-Loss und Accuracy`
+*25.08. 13:17 UTC · Quelle: builder*
+
+[score 4] ## Validierungsskript: Elo mit Tordifferenz-Multiplikator, Form, Saison-Regression und logistischer Kalibrierung  Das Modell führt während des Trainings für jedes Spiel eine ehrliche Out
+
+### `swarm_artifact:Verbessertes Elo-Modell mit Form-Tracking und Wettbewerbspar`
+*25.08. 13:17 UTC · Quelle: builder*
+
+[score 4] Let me analyze this task carefully. The goal is to improve an Elo model to beat the 50.2% baseline on football match results, without using betting odds/quotas. I have training data from
+
+### `last_swarm_critique`
+*25.08. 13:17 UTC · Quelle: critic*
+
+score=4; issues=Artefakt 3 (Poisson/Dixon-Coles) bricht mitten im Code ab ('# L'): 'trainiere' ist unvollständig, 'vorhersage' und 'aktualisiere' fehlen komplett – verletzt die harte Anforderung von genau drei definierten Funktionen und würde bei Ausführung sc
+
+### `swarm_artifact:Optimiertes Modell mit Poisson-/Dixon-Coles-Elementen`
+*25.08. 13:16 UTC · Quelle: builder*
+
+## Artefakt: Poisson-/Dixon-Coles-Modell mit Elo-basierten Torerwartungen  Das Modell führt Elo-Ratings (mit Tordifferenz-Multiplikator, Saison-Regression und Aufsteiger-Shrinkage über globale Ratings
+
+### `swarm_artifact:Validierungsskript mit Log-Loss und Accuracy`
+*25.08. 13:14 UTC · Quelle: builder*
+
+## Validierungsskript: Elo mit Tordifferenz-Multiplikator, Form, Saison-Regression und logistischer Kalibrierung  Das Modell führt während des Trainings für jedes Spiel eine ehrliche Out-of-Sample-Vor
+
+### `swarm_artifact:Verbessertes Elo-Modell mit Form-Tracking und Wettbewerbspar`
+*25.08. 13:11 UTC · Quelle: builder*
+
+Let me analyze this task carefully. The goal is to improve an Elo model to beat the 50.2% baseline on football match results, without using betting odds/quotas. I have training data from 2000-2022 and
+
+### `last_swarm_goal`
+*25.08. 13:00 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825130045:4:c26281`
+*25.08. 13:00 UTC · Quelle: dream*
+
+High stress state (1.0) with strict budget constraints (max_tasks: 3) still allows for successful task completion if iterations are used efficiently.
+
+### `dream:20260825130045:3:41f347`
+*25.08. 13:00 UTC · Quelle: dream*
+
+System calibration is slightly optimistic (predicted 3, actual 2), indicating a need to adjust prediction weights for complex technical topics like LoRA.
+
+### `dream:20260825130045:2:24b9e1`
+*25.08. 13:00 UTC · Quelle: dream*
+
+Evolutionary generation of multiple variants significantly improves task scores (from 2/10 to 9/10) even under high system stress.
+
+### `dream:20260825130045:1:afee84`
+*25.08. 13:00 UTC · Quelle: dream*
+
+OpenRouter free models are highly susceptible to 429 rate limits and 502 upstream overloads, requiring robust fallback mechanisms.
 
 ### `last_swarm_goal`
 *25.08. 12:31 UTC · Quelle: system*

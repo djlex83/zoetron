@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 12:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 13:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,31 +16,35 @@
 - Add a startup contract test that asserts MemoryStore exposes add_fact, query, and prune with correct signature *(hatte die Idee 2×)*
 - Modify the swarm controller to raise max_cycles or force a replan whenever score stays below 6 after the first *(hatte die Idee 2×)*
 - Build a skill-execution queue that dequeues the oldest untested proposal every idle cycle and runs it in a san *(hatte die Idee 2×)*
-- Implement a circuit breaker that tracks 429 errors per provider and temporarily disables failing model endpoin
-- Add rate-limit-aware model selection that queries quota headers or tracks recent 429 frequency before dispatch
-- Create a degraded-mode skill using local/quantized models for critical-path operations when all remote provide
-- Build exponential backoff with jitter and max-retry policy specifically for 429 responses, integrated into the
+- Implement a model router with exponential backoff (5s/30s/120s), per-model lockout registry (TTL 60s), and lat
+- Establish a provider-diverse model ladder: primary (paid/dedicated), secondary (free tier), tertiary (local/qu
+- Create a simulation harness that mandates ≥3 mental rehearsals before any hand action, with automatic revision
+- Build the Hermes bridge as a local-first JSONL message queue with background sync worker, enabling offline ope
 
 ## 🔥 Eigene Ziele
 
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 12×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 2×)*
 - Warum Modelle oft scheitern *(wieder aufgegriffen: 2×)*
 - Warum Modelle scheitern, herausfinden *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
+- Vorschläge endlich ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High stress state (1.0) with strict budget constraints (max_tasks: 3) still allows for successful task completion if iterations are used efficiently.
+- System calibration is slightly optimistic (predicted 3, actual 2), indicating a need to adjust prediction weights for complex technical topics like Lo
+- Evolutionary generation of multiple variants significantly improves task scores (from 2/10 to 9/10) even under high system stress.
+- OpenRouter free models are highly susceptible to 429 rate limits and 502 upstream overloads, requiring robust fallback mechanisms.
 - Metabolism entered conserve mode (stress=1.0, max_tasks=1) while a new swarm started, guaranteeing resource starvation for the very goal that needs ca
 - Same LoRA goal has been attempted repeatedly (swarm_finished, drive_whisper, swarm_started) without resolving the underlying MemoryStore blocker.
 - Swarm evolved over 2 cycles but stalled at score 3 with converged=false, indicating the convergence gate accepts revisions without re-verifying critic
@@ -52,10 +56,6 @@
 - The swarm's first attempt on the LoRA goal scored 3/10 but evolution over 3 variants raised it to 9/10, confirming that critic-driven variant generati
 - 429 rate-limit failures on openrouter.ai occur in a fixed pattern (stealth/ox-alpha then z-ai/glm-5.2:free) and are always recoverable by falling back
 - Calibration was perfect (predicted 4 vs actual 4) yet the outcome itself was poor, showing the predictor is well-calibrated but the goal pipeline need
-- The swarm finished with score 4/10 and converged=false after 2 cycles despite evolution producing variants scoring up to 9/10, meaning the winner-sele
-- A hard crash in hands-execute ('MemoryStore' object has no attribute 'add_fact') shows the memory API contract is not enforced at startup, allowing co
-- The nvidia/nemotron-3-ultra-550b-a55b:free model successfully absorbed both failover calls (latency 5.8s and 11.7s), proving it is a reliable fallback
-- 429 rate-limit failures on openrouter.ai occurred twice in quick succession across both stealth/ox-alpha and z-ai/glm-5.2:free, indicating a shared pr
 
 ---
 
