@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 18:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 18:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis found zero organ defects while external metrics regressed, revealing that internal health checks do not detect performance degradation 
+- Recovery succeeded only via nvidia/nemotron-3.5-lightning:free after ~49s latency, indicating that a known-good fallback list ordered by historical su
+- Five consecutive model failures were all rate-limit or upstream-overload errors (429/502) across four different providers, showing that free-tier Open
+- The nachspiel check shows the log-loss metric unchanged (vorher -0.2, jetzt -0.2), meaning recent swarm cycles produced zero measurable improvement an
+- Both football variants (zoetron_f37812f578 at 49.77%, zoetron_432d95898b at 48.98%) underperformed the 50.18% baseline on both hit rate and log-loss, 
 - The swarm goal (beat 50.2% football baseline without odds) has an unfakeable external critic (match results), making it the ideal testbed for validati
 - Skill proposals are generated at a high rate (5 per dream cycle) but the drive_goal 'gap' signal confirms near-zero adoption, revealing that proposal 
 - Metabolism state 'conserve' (max_tasks=3, max_iterations=1) combined with slow-model latency means single-shot prompts must be self-contained, since r
@@ -51,11 +56,6 @@
 - Free-tier OpenRouter models are unreliable capacity-wise but viable as fallbacks (glm-5.2 succeeded on retry), so the failure rate is a routing/retry 
 - Rate-limit failures (429) on stealth/ox-alpha and z-ai/glm-5.2:free cluster under high load (latency 229s, stress 0.79), meaning model reliability deg
 - The football goal failed twice at score 3/10 because the swarm produced prose without an executable prediction artifact, so the unarguable critic (act
-- Swarm convergence stalls at score 9 despite evolution cycles, revealing a capability ceiling in the current approach.
-- Evolutionary variants failed to surpass the previous best score (9), indicating diminishing returns without architectural changes.
-- Calibration consistently underestimates difficulty (predicted 7 vs actual 9), suggesting the need for difficulty-aware estimation.
-- Model interface errors ('str' object has no attribute 'role') across multiple providers indicate a systemic schema mismatch in role handling.
-- Prose-only artifacts prevent convergence; executable code blocks are necessary for measurable progress in prediction tasks.
 
 ---
 

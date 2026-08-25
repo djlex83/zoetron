@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2509 Fakten** · Stand 2026-08-25 18:02 UTC · aktualisiert bei jedem Herzschlag
+**2515 Fakten** · Stand 2026-08-25 18:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1117
+- **dream:** 1122
 - **swarm_artifact:** 697
 - **anti_pattern:** 224
 - **last_swarm_goal:** 180
@@ -12,12 +12,43 @@
 - **creator_teaching:** 8
 - **frontier:** 3
 - **tool:** 2
+- **aktuell_organfehler:** 1
 - **hand_result:** 1
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `dream:20260825183226:5:f9ae60`
+*25.08. 18:32 UTC · Quelle: dream*
+
+Self-diagnosis found zero organ defects while external metrics regressed, revealing that internal health checks do not detect performance degradation and must be paired with outcome-based critics.
+
+### `dream:20260825183226:4:231822`
+*25.08. 18:32 UTC · Quelle: dream*
+
+Recovery succeeded only via nvidia/nemotron-3.5-lightning:free after ~49s latency, indicating that a known-good fallback list ordered by historical success is more effective than retrying the failed model.
+
+### `dream:20260825183226:3:11464d`
+*25.08. 18:32 UTC · Quelle: dream*
+
+Five consecutive model failures were all rate-limit or upstream-overload errors (429/502) across four different providers, showing that free-tier OpenRouter capacity is the primary reliability bottleneck, not model quality.
+
+### `dream:20260825183226:2:f023e4`
+*25.08. 18:32 UTC · Quelle: dream*
+
+The nachspiel check shows the log-loss metric unchanged (vorher -0.2, jetzt -0.2), meaning recent swarm cycles produced zero measurable improvement and iteration without new information sources is wasted compute.
+
+### `dream:20260825183226:1:769c6b`
+*25.08. 18:32 UTC · Quelle: dream*
+
+Both football variants (zoetron_f37812f578 at 49.77%, zoetron_432d95898b at 48.98%) underperformed the 50.18% baseline on both hit rate and log-loss, confirming that prose-based prediction without structured data cannot beat the bookmaker baseline.
+
+### `aktuell_organfehler`
+*25.08. 18:03 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER im letzten Herzschlag: act -> rc. Phase endete mit rc=1 Diese Phase des Herzschlags ist abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herzschlag Phase reparieren.
 
 ### `last_swarm_goal`
 *25.08. 18:02 UTC · Quelle: system*
