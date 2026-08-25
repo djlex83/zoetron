@@ -1,65 +1,18 @@
 {
- "stand": "2026-08-25 13:21:01",
- "ereignisse_ausgewertet": 4000,
- "werkzeuge": [
-  {
-   "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
-   "laeufe": 2,
-   "erfolge": 1,
-   "quote": 0.5
-  },
-  {
-   "tool": "konvergenz-tor-test-pflicht-vor-erfolg-c.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "extern-quote-in-drive-raus-aus-der-selbs.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "synapsen-semantisch-vernetzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "ci-pipeline-reparieren-und-simulation-va.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  }
- ],
- "haende_quote": 0.632,
- "simulationen_angewandt": 88,
+ "stand": "2026-08-25 14:05:34",
+ "ereignisse_ausgewertet": 19,
+ "werkzeuge": [],
+ "haende_quote": null,
+ "simulationen_angewandt": 0,
  "swarm_scores": {
-  "n": 44,
-  "best": 6.0,
-  "schnitt": 3.45
+  "n": 1,
+  "best": 9.0,
+  "schnitt": 9.0
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 41,
-   "schnitt": 3.44
-  },
-  "bau": {
-   "n": 2,
-   "schnitt": 3.0
+   "n": 1,
+   "schnitt": 9.0
   }
  }
 }
