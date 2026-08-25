@@ -1,11 +1,11 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2377 Fakten** · Stand 2026-08-25 12:22 UTC · aktualisiert bei jedem Herzschlag
+**2383 Fakten** · Stand 2026-08-25 12:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1077
+- **dream:** 1082
 - **swarm_artifact:** 673
 - **anti_pattern:** 206
-- **last_swarm_goal:** 169
+- **last_swarm_goal:** 170
 - **strategy:** 124
 - **last_swarm_critique:** 108
 - **creator_teaching:** 8
@@ -17,6 +17,36 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_goal`
+*25.08. 12:31 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825123128:5:75bf7e`
+*25.08. 12:31 UTC · Quelle: dream*
+
+Metabolism entered conserve mode (stress=1.0, max_tasks=1) while a new swarm started, guaranteeing resource starvation for the very goal that needs capacity.
+
+### `dream:20260825123128:4:317ed5`
+*25.08. 12:31 UTC · Quelle: dream*
+
+Same LoRA goal has been attempted repeatedly (swarm_finished, drive_whisper, swarm_started) without resolving the underlying MemoryStore blocker.
+
+### `dream:20260825123128:3:4ae678`
+*25.08. 12:31 UTC · Quelle: dream*
+
+Swarm evolved over 2 cycles but stalled at score 3 with converged=false, indicating the convergence gate accepts revisions without re-verifying critic approval.
+
+### `dream:20260825123128:2:97afcd`
+*25.08. 12:31 UTC · Quelle: dream*
+
+OpenRouter 429 errors cascade across three different models, revealing no rate-limit-aware fallback or circuit breaker in the model router.
+
+### `dream:20260825123128:1:70383b`
+*25.08. 12:31 UTC · Quelle: dream*
+
+MemoryStore interface drift caused a runtime AttributeError on 'add_fact' because no startup contract validation exists for store methods.
 
 ### `dream:20260825122143:5:ddf3d4`
 *25.08. 12:21 UTC · Quelle: dream*

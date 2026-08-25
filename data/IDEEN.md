@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 12:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 12:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,18 +16,18 @@
 - Add a startup contract test that asserts MemoryStore exposes add_fact, query, and prune with correct signature *(hatte die Idee 2×)*
 - Modify the swarm controller to raise max_cycles or force a replan whenever score stays below 6 after the first *(hatte die Idee 2×)*
 - Build a skill-execution queue that dequeues the oldest untested proposal every idle cycle and runs it in a san *(hatte die Idee 2×)*
-- Implement exponential backoff with jitter (5s, 30s, 120s) and max retries before marking a model as rate-limit
-- Build a provider-diverse model ladder with at least one paid/dedicated endpoint to avoid single-point-of-failu
-- Add a per-model lockout registry with TTL that model selection consults to skip recently rate-limited models.
-- Create latency profiles per model (p50, p95) to set dynamic timeouts and detect stalls early.
+- Implement a circuit breaker that tracks 429 errors per provider and temporarily disables failing model endpoin
+- Add rate-limit-aware model selection that queries quota headers or tracks recent 429 frequency before dispatch
+- Create a degraded-mode skill using local/quantized models for critical-path operations when all remote provide
+- Build exponential backoff with jitter and max-retry policy specifically for 429 responses, integrated into the
 
 ## 🔥 Eigene Ziele
 
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism entered conserve mode (stress=1.0, max_tasks=1) while a new swarm started, guaranteeing resource starvation for the very goal that needs ca
+- Same LoRA goal has been attempted repeatedly (swarm_finished, drive_whisper, swarm_started) without resolving the underlying MemoryStore blocker.
+- Swarm evolved over 2 cycles but stalled at score 3 with converged=false, indicating the convergence gate accepts revisions without re-verifying critic
+- OpenRouter 429 errors cascade across three different models, revealing no rate-limit-aware fallback or circuit breaker in the model router.
+- MemoryStore interface drift caused a runtime AttributeError on 'add_fact' because no startup contract validation exists for store methods.
 - The hands-execute step crashed with AttributeError 'MemoryStore' object has no attribute 'add_fact', indicating an API drift between the memory module
 - Calibration error was only 1 point (predicted 4 vs actual 3), suggesting the scoring predictor is reliable enough to gate whether an evolution run is 
 - Simulation gates are working as intended: the 'revise' verdict (5 risks, 1 revision) preceded the failed attempt while the later 'go' verdict (3 revis
@@ -51,11 +56,6 @@
 - A hard crash in hands-execute ('MemoryStore' object has no attribute 'add_fact') shows the memory API contract is not enforced at startup, allowing co
 - The nvidia/nemotron-3-ultra-550b-a55b:free model successfully absorbed both failover calls (latency 5.8s and 11.7s), proving it is a reliable fallback
 - 429 rate-limit failures on openrouter.ai occurred twice in quick succession across both stealth/ox-alpha and z-ai/glm-5.2:free, indicating a shared pr
-- prune_run removed 0 facts and 0 events despite an error event and parked goals in memory, showing the pruning criteria are too conservative to reclaim
-- 35 skill proposals have accumulated untested while new ones keep being generated, indicating proposal generation outpaces validation capacity and need
-- Goals are parked only after 3 failed attempts (e.g., the Destillat-Datensatz goal), so a convergence gate or explicit waiver decision should trigger e
-- The swarm twice ended with verdict 'revise' and score 5 but converged=false, meaning revisions were applied yet the convergence criterion was never re
-- hands-execute crashed on 'MemoryStore' object has no attribute 'add_fact', revealing that store method signatures drift from call sites without a cont
 
 ---
 

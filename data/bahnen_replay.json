@@ -1,0 +1,10 @@
+{
+  "fussball_einreichung": {
+    "wert": 0.5008,
+    "ts": 1787661041.55671
+  },
+  "fussball_log_loss": {
+    "wert": -0.25,
+    "ts": 1787661041.55671
+  }
+}
