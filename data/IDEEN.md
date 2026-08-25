@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 18:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 19:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation step (verdict 'revise', 5 revisions applied) succeeded before model calls degraded, confirming pre-flight revision is cheap insurance w
+- Running under metabolism state 'conserve' (max_tasks=3, max_iterations=1) while issuing many parallel model calls contradicts the budget, suggesting r
+- Calibration showed predicted=6 vs actual=3 (abs_error 3), meaning the system systematically overestimates effort/output for this goal type and should 
+- The primary model 'stealth/ox-alpha' failed with 429 three times in one session while still completing the highest-token tasks, so it should be treate
+- Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues,
 - Self-diagnosis found zero organ defects while external metrics regressed, revealing that internal health checks do not detect performance degradation 
 - Recovery succeeded only via nvidia/nemotron-3.5-lightning:free after ~49s latency, indicating that a known-good fallback list ordered by historical su
 - Five consecutive model failures were all rate-limit or upstream-overload errors (429/502) across four different providers, showing that free-tier Open
@@ -51,11 +56,6 @@
 - Metabolism state 'conserve' (max_tasks=3, max_iterations=1) combined with slow-model latency means single-shot prompts must be self-contained, since r
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeded in all three attempts but with high latency variance (9s–55s), so it is reliable yet slow and unsuita
 - The 429 failures on stealth/ox-alpha and z-ai/glm-5.2:free recur across every task cycle, indicating these endpoints are persistently rate-limited and
-- Memory pruning removed nothing (0 facts, 0 events) while the same failing goal was retried unchanged, showing the loop lacks a mechanism to detect 'no
-- Simulation verdicts ('revise', 4 risks) were generated and applied, but the swarm still did not converge, indicating simulation output is not being tr
-- Free-tier OpenRouter models are unreliable capacity-wise but viable as fallbacks (glm-5.2 succeeded on retry), so the failure rate is a routing/retry 
-- Rate-limit failures (429) on stealth/ox-alpha and z-ai/glm-5.2:free cluster under high load (latency 229s, stress 0.79), meaning model reliability deg
-- The football goal failed twice at score 3/10 because the swarm produced prose without an executable prediction artifact, so the unarguable critic (act
 
 ---
 

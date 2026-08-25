@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2515 Fakten** · Stand 2026-08-25 18:33 UTC · aktualisiert bei jedem Herzschlag
+**2535 Fakten** · Stand 2026-08-25 19:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1122
-- **swarm_artifact:** 697
-- **anti_pattern:** 224
-- **last_swarm_goal:** 180
-- **strategy:** 133
-- **last_swarm_critique:** 117
-- **aktuell_fussball_messlatte:** 24
+- **dream:** 1127
+- **swarm_artifact:** 703
+- **anti_pattern:** 226
+- **last_swarm_goal:** 181
+- **strategy:** 134
+- **last_swarm_critique:** 118
+- **aktuell_fussball_messlatte:** 27
 - **creator_teaching:** 8
+- **tool:** 3
 - **frontier:** 3
-- **tool:** 2
 - **aktuell_organfehler:** 1
 - **hand_result:** 1
 - **semantic_organ:** 1
@@ -19,6 +19,106 @@
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 19:09 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.43 -0.37 -0.48 -0.64 -0.40 -0.72. Der Log-Loss ist
+
+### `aktuell_fussball_messlatte`
+*25.08. 19:09 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -1.22 -0.43 -0.37 -0.48 -0.64 -0.40. Der Log-Loss ist
+
+### `aktuell_fussball_messlatte`
+*25.08. 19:09 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.43 -1.22 -0.43 -0.37 -0.48 -0.64. Der Log-Loss ist
+
+### `tool:fußball-die-basislinie-von-50-2-schlagen`
+*25.08. 19:09 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten'. Datei: data/tools/fußball-die-basislinie-von-50-2-schlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 19:08 UTC · Quelle: evolution*
+
+Echt-Daten-Elo-Rating mit Walk-Forward-Backtest gegen die Baseline - Variante 0 adressiert beide Kritikpunkte direkt und mit minimalem Risiko: Sie ersetzt die bedeutungslosen synthetischen i.i.d.-Daten durch ein echtes historisches Datenset mit Team
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :2`
+*25.08. 19:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Supervised Gradient Boosting auf marktfremden Features mit purged Time-Series-CV - Völlig anderer Mechanismus: kein Rating, sondern Feature-basiertes Lernen. Baue pro Match Features aus reinen Ergebnisdaten: Rolling-Form (Pun
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
+*25.08. 19:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Hierarchisches Bayes'sches Dixon-Coles-Poisson-Modell mit Team-Heterogenität - Statt Punkteskalierung: generatives Modell der Tore selbst. Dixon-Coles-bivariate Poisson mit team-spezifischen Attack-/Defense-Parametern (hierar
+
+### `swarm_artifact:Variante C: Kombination der beiden unter-Rauschgrenze-Aender`
+*25.08. 19:07 UTC · Quelle: builder*
+
+[score 3] Variante C kombiniert die beiden unter-Rauschgrenze-Einzeländerungen: Elo wird am Team statt an `(competition, team)` geführt und die Lernrate adaptiert sich spielzahlabhängig (`K_eff = 
+
+### `swarm_artifact:Variante B: Adaptive Lernrate K (neue Teams lernen schnell, `
+*25.08. 19:07 UTC · Quelle: builder*
+
+[score 3] Variante B ersetzt die feste Lernrate K=24 durch eine spielzaehler-abhaengige effektive Lernrate K_eff = K_MIN + (K_MAX−K_MIN)/(1+n/30), gemittelt über beide Teams des Spiels. Neue Teams
+
+### `swarm_artifact:Variante A: Elo am Team statt an (Liga, Team)`
+*25.08. 19:07 UTC · Quelle: builder*
+
+[score 3] Variante A: Der Elo-Key wird von `(competition, team)` auf `team` allein umgestellt — Teams wechseln Wettbewerbe, und der team-globale Strength-Speicher nutzt alle Spiele eines Teams als
+
+### `last_swarm_critique`
+*25.08. 19:07 UTC · Quelle: critic*
+
+score=3; issues=Ziel '50,2%-Baseline schlagen' wird in keiner Variante gemessen: Die Selbsttests verwenden synthetische i.i.d.-Poisson-Daten ohne Team-Heterogenität (alle Teams identische Torraten), sodass Elo keinerlei Signal lernen kann und Log-Loss/Trefferq
+
+### `swarm_artifact:Variante C: Kombination der beiden unter-Rauschgrenze-Aender`
+*25.08. 19:06 UTC · Quelle: builder*
+
+Variante C kombiniert die beiden unter-Rauschgrenze-Einzeländerungen: Elo wird am Team statt an `(competition, team)` geführt und die Lernrate adaptiert sich spielzahlabhängig (`K_eff = K_MIN + (K_MAX
+
+### `swarm_artifact:Variante B: Adaptive Lernrate K (neue Teams lernen schnell, `
+*25.08. 19:06 UTC · Quelle: builder*
+
+Variante B ersetzt die feste Lernrate K=24 durch eine spielzaehler-abhaengige effektive Lernrate K_eff = K_MIN + (K_MAX−K_MIN)/(1+n/30), gemittelt über beide Teams des Spiels. Neue Teams lernen mit bi
+
+### `swarm_artifact:Variante A: Elo am Team statt an (Liga, Team)`
+*25.08. 19:05 UTC · Quelle: builder*
+
+Variante A: Der Elo-Key wird von `(competition, team)` auf `team` allein umgestellt — Teams wechseln Wettbewerbe, und der team-globale Strength-Speicher nutzt alle Spiele eines Teams als Information. 
+
+### `last_swarm_goal`
+*25.08. 19:02 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825190227:5:a8f8c5`
+*25.08. 19:02 UTC · Quelle: dream*
+
+The simulation step (verdict 'revise', 5 revisions applied) succeeded before model calls degraded, confirming pre-flight revision is cheap insurance worth keeping even in constrained runs.
+
+### `dream:20260825190227:4:1d6be5`
+*25.08. 19:02 UTC · Quelle: dream*
+
+Running under metabolism state 'conserve' (max_tasks=3, max_iterations=1) while issuing many parallel model calls contradicts the budget, suggesting resource checks are not enforced before fan-out.
+
+### `dream:20260825190227:3:efd11e`
+*25.08. 19:02 UTC · Quelle: dream*
+
+Calibration showed predicted=6 vs actual=3 (abs_error 3), meaning the system systematically overestimates effort/output for this goal type and should deflate predictions by roughly 50%.
+
+### `dream:20260825190227:2:62b274`
+*25.08. 19:02 UTC · Quelle: dream*
+
+The primary model 'stealth/ox-alpha' failed with 429 three times in one session while still completing the highest-token tasks, so it should be treated as intermittently available, not reliably down.
+
+### `dream:20260825190227:1:451d13`
+*25.08. 19:02 UTC · Quelle: dream*
+
+Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues, so retrying immediately after a burst is wasteful.
 
 ### `dream:20260825183226:5:f9ae60`
 *25.08. 18:32 UTC · Quelle: dream*
