@@ -130,7 +130,7 @@
   "why": "Die Intelligenz-Obergrenze des Organismus ist das beste erreichbare Modell - also muss er automatisch klüger werden, sobald die Welt bessere Cortexe veröffentlicht. Erweitere den AutoRouter: täglicher Scan nach neuen freien tool-fähigen OpenRouter-Modellen; jeder Neuling durchläuft binnen 24 Stunden eine Mini-Version der Messlatte (8 Aufgaben); schlägt er den aktuellen Favoriten, steigt er in der Routing-Tabelle auf. Fertig wenn: ein neu erschienenes Modell nachweisbar erkannt, gebenchmarkt und einsortiert wurde - mit Logbeleg und Eintrag im Wochenreport.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 1
+  "_versuche": 2
  },
  {
   "title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)",

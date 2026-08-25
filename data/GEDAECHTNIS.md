@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2596 Fakten** · Stand 2026-08-25 21:25 UTC · aktualisiert bei jedem Herzschlag
+**2615 Fakten** · Stand 2026-08-25 21:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1152
-- **swarm_artifact:** 711
-- **anti_pattern:** 234
-- **last_swarm_goal:** 185
-- **strategy:** 138
-- **last_swarm_critique:** 122
+- **dream:** 1157
+- **swarm_artifact:** 719
+- **anti_pattern:** 236
+- **last_swarm_goal:** 186
+- **strategy:** 139
+- **last_swarm_critique:** 123
 - **aktuell_fussball_messlatte:** 30
 - **creator_teaching:** 8
 - **tool:** 5
-- **hand_result:** 3
+- **hand_result:** 4
 - **frontier:** 3
 - **aktuell_organfehler:** 2
 - **semantic_organ:** 1
@@ -19,6 +19,101 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren`
+*25.08. 21:44 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787694255889.py\", line 115\n    data = json.load(f\n                    ^\nSyntaxError: '(' was never closed\n"}
+
+### `strategy:cortex_upgrade_reflex__neue_modelle_automatisch_ad`
+*25.08. 21:43 UTC · Quelle: evolution*
+
+Zero-Custom-Code: Orchestrierung über existierende Plattform-Primitives (GitHub Actions + LiteLLM Ro - Variante 1 adressiert die Kritik an der Wurzel: Statt vier eigene, fehleranfällige Module zu schreiben, wird auf erprobte Infrastruktur (GitHub Actions, Lite
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:2`
+*25.08. 21:43 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-getriebener Daemon mit State-Machine: Inkrementelle, resümierbare Pipeline - Architekturwechsel von 'Skripte, die komplett durchlaufen müssen' zu einer zustandsbasierten State-Machine (States: DISCOVER → EVALUATE → DECI
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:0`
+*25.08. 21:43 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Monolith-First: Ein einzelnes, abgeschlossenes Self-Check-Skript statt vier Arte - Statt vier getrennte Module (Scanner, Benchmark-Runner, Promotion-Engine, Router-Updater) wird ALLES in EIN einziges Python-Skript (cortex_ref
+
+### `swarm_artifact:AutoRouter Routing Table Updater`
+*25.08. 21:42 UTC · Quelle: builder*
+
+[score 3] **AutoRouter Routing Table Updater** – promoted ein neues Modell bei Bedarf zum Primary seiner Stärke-Kategorien (der bisherige Favorit wandert an den Kopf der Fallback-Liste), validiert
+
+### `swarm_artifact:Model Comparison & Promotion Engine`
+*25.08. 21:42 UTC · Quelle: builder*
+
+[score 3] **Model Comparison & Promotion Engine** – vergleicht Benchmark-Ergebnisse (SQLite aus dem Mini-Benchmark Runner) gegen den aktuellen Favoriten mit gewichteten Scores (Accuracy 40 %, Late
+
+### `swarm_artifact:Mini-Benchmark Runner (8 Tasks)`
+*25.08. 21:42 UTC · Quelle: builder*
+
+[score 3] Der Mini-Benchmark Runner führt für ein übergebenes OpenRouter-Modell genau 8 Standardaufgaben aus (Code-Generierung, Reasoning, Tool-Use, JSON-Extraktion, Zusammenfassung, Übersetzung, 
+
+### `swarm_artifact:OpenRouter Model Discovery Scanner`
+*25.08. 21:42 UTC · Quelle: builder*
+
+[score 3] Der Scanner fragt die öffentliche OpenRouter-Model-Liste ab, filtert auf kostenlose Modelle mit Tool-Support („tools" = Funktionsaufrufe, also Fähigkeit, externe Werkzeuge zu nutzen), ve
+
+### `last_swarm_critique`
+*25.08. 21:42 UTC · Quelle: critic*
+
+score=3; issues=Alle vier Artefakte sind unvollständig/abgeschnitten: Der Scanner bricht mitten in 'append_log' ab ('log_entries.appe'), der Benchmark-Runner mitten in der TASKS-Definition, die Promotion-Engine in 'append_decision_log' ('log.ap') und der Route
+
+### `swarm_artifact:AutoRouter Routing Table Updater`
+*25.08. 21:40 UTC · Quelle: builder*
+
+**AutoRouter Routing Table Updater** – promoted ein neues Modell bei Bedarf zum Primary seiner Stärke-Kategorien (der bisherige Favorit wandert an den Kopf der Fallback-Liste), validiert die neue Konf
+
+### `swarm_artifact:Model Comparison & Promotion Engine`
+*25.08. 21:39 UTC · Quelle: builder*
+
+**Model Comparison & Promotion Engine** – vergleicht Benchmark-Ergebnisse (SQLite aus dem Mini-Benchmark Runner) gegen den aktuellen Favoriten mit gewichteten Scores (Accuracy 40 %, Latency 20 %, Cost
+
+### `swarm_artifact:Mini-Benchmark Runner (8 Tasks)`
+*25.08. 21:38 UTC · Quelle: builder*
+
+Der Mini-Benchmark Runner führt für ein übergebenes OpenRouter-Modell genau 8 Standardaufgaben aus (Code-Generierung, Reasoning, Tool-Use, JSON-Extraktion, Zusammenfassung, Übersetzung, Kreatives Schr
+
+### `swarm_artifact:OpenRouter Model Discovery Scanner`
+*25.08. 21:36 UTC · Quelle: builder*
+
+Der Scanner fragt die öffentliche OpenRouter-Model-Liste ab, filtert auf kostenlose Modelle mit Tool-Support („tools" = Funktionsaufrufe, also Fähigkeit, externe Werkzeuge zu nutzen), vergleicht mit d
+
+### `last_swarm_goal`
+*25.08. 21:30 UTC · Quelle: system*
+
+Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
+
+### `dream:20260825213032:5:630f29`
+*25.08. 21:30 UTC · Quelle: dream*
+
+35+ skill proposals have accumulated with almost none tested, so proposal generation has become a token sink without a validation loop.
+
+### `dream:20260825213032:4:d09f08`
+*25.08. 21:30 UTC · Quelle: dream*
+
+Calibration error of ±1 on a 5-point scale plus a post-hoc delta of -0.25 shows self-scores are systematically optimistic and uncorrelated with measured performance.
+
+### `dream:20260825213032:3:9aae9f`
+*25.08. 21:30 UTC · Quelle: dream*
+
+The hand_action failed immediately (exit 1 in 0.03s) yet the pipeline continued to scoring, meaning execution failures are not gating downstream steps.
+
+### `dream:20260825213032:2:d62200`
+*25.08. 21:30 UTC · Quelle: dream*
+
+The simulation step flagged 4 risks but only 1 revision was applied before execution, so the 'revise' verdict was effectively ignored — partial revision is a recurring failure cause.
+
+### `dream:20260825213032:1:3179d5`
+*25.08. 21:30 UTC · Quelle: dream*
+
+The football predictor remains below baseline (49.48% vs 50.18%, log-loss 1.0124 vs 1.0073) even after evolution and swarm cycles, indicating the current feature/model family is exhausted rather than under-optimized.
 
 ### `dream:20260825212510:5:5f0edd`
 *25.08. 21:25 UTC · Quelle: dream*

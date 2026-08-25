@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1969 Neuronen · 32468 bewertete Synapsen
+Stand: 1976 Neuronen · 32578 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -20,11 +20,11 @@ Stand: 1969 Neuronen · 32468 bewertete Synapsen
 | 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 136 | 0.24 |
 | 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 112 | 0.27 |
 | 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 118 | 0.25 |
-| 11 | 💭 | Model latency variance (4.6–138 s) violates SLOs and destabilize… | 118 | 0.25 |
-| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 119 | 0.24 |
-| 13 | 💭 | High latency variance (25–288s) on the same model makes fixed ti… | 116 | 0.25 |
-| 14 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 113 | 0.25 |
-| 15 | 💭 | Model invocation latency spikes and occasional 502 overload erro… | 120 | 0.24 |
+| 11 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 120 | 0.24 |
+| 12 | 💭 | Missing interface contract validation risks AttributeError failu… | 115 | 0.25 |
+| 13 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 114 | 0.26 |
+| 14 | 💭 | Model latency variance (4.6–138 s) violates SLOs and destabilize… | 118 | 0.25 |
+| 15 | 💭 | High latency variance (25–288s) on the same model makes fixed ti… | 116 | 0.25 |
 
 ## Die 15 stärksten Synapsen
 

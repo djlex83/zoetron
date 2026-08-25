@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 21:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 21:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,10 +27,10 @@
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
-- Vorgeschlagene Fähigkeiten endlich ausprobieren
 - Modellfehler analysieren und beheben
 - Fußball-Ziel nochmal besser machen
 - Mehr Simulationsergebnisse wirklich nutzen
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 35+ skill proposals have accumulated with almost none tested, so proposal generation has become a token sink without a validation loop.
+- Calibration error of ±1 on a 5-point scale plus a post-hoc delta of -0.25 shows self-scores are systematically optimistic and uncorrelated with measur
+- The hand_action failed immediately (exit 1 in 0.03s) yet the pipeline continued to scoring, meaning execution failures are not gating downstream steps
+- The simulation step flagged 4 risks but only 1 revision was applied before execution, so the 'revise' verdict was effectively ignored — partial revisi
+- The football predictor remains below baseline (49.48% vs 50.18%, log-loss 1.0124 vs 1.0073) even after evolution and swarm cycles, indicating the curr
 - Skill proposals are accumulating (35+ proposed, barely tested), so the bottleneck is validation capacity, not idea generation.
 - Retrieval pulled 7 traces (bahnen) yet yielded zero new edges (kanten) and delta 0.0, showing that recall without an integration or linking step produ
 - The evolution run improved the winner from 5 to 9/10, but the swarm still reported a final score of 5, indicating the evolved artifact was not re-scor
@@ -51,11 +56,6 @@
 - The 'bahnen' step reported delta 0.0 and 0 new edges despite 7 retrievals, indicating memory consolidation produced no durable traces for a completed-
 - Calibration was exact (predicted 4 risks vs. 4 actual) yet the goal still failed to converge (score 4), proving that accurate risk prediction does not
 - The swarm's first attempt scored 4/10 but an evolution run with 3 variants lifted the winner to 9/10, showing variant generation is the highest-levera
-- Metabolic stress (0.602, conserve state) capped the swarm at max_tasks=3/max_iterations=1, which likely contributed to the low first-attempt score; bu
-- Simulation consistently flags risks (5 then 4) and demands revisions, but only 1 of 4 revisions was applied in the second pass — unapplied revisions c
-- The first attempt scored 3/10 but evolution over 3 variants produced a winner scoring 9/10, confirming that iterative variant generation beats single-
-- Prediction calibration is systematically optimistic: predicted 5 vs actual 3 (abs_error 2), so future score predictions should be deflated by roughly 
-- Rate limits (429) cascade across models on the same provider (openrouter.ai), so fallback within one provider is not a real fallback — diversify provi
 
 ---
 
