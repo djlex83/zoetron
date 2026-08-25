@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 21:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 21:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Vorgeschlagene Fähigkeiten endlich ausprobieren
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals are accumulating (35+ proposed, barely tested), so the bottleneck is validation capacity, not idea generation.
+- Retrieval pulled 7 traces (bahnen) yet yielded zero new edges (kanten) and delta 0.0, showing that recall without an integration or linking step produ
+- The evolution run improved the winner from 5 to 9/10, but the swarm still reported a final score of 5, indicating the evolved artifact was not re-scor
+- A simulation verdict of 'revise' with 3 identified risks produced only 0 applied revisions on the first pass, meaning the simulation-to-revision pipel
+- The swarm terminated after 2 cycles with score 5/10 and converged=false because the iteration budget (max_iterations=2) was exhausted before the criti
 - Three skill proposals were emitted in a burst with no mechanism to test any of them, confirming proposal generation currently outpaces validation capa
 - A single long model call (139.9s, ~6.8k output tokens) dominated the cycle's latency budget while short calls stayed under 3s, so cost control should 
 - The 'bahnen' step reported delta 0.0 and 0 new edges despite 7 retrievals, indicating memory consolidation produced no durable traces for a completed-
@@ -51,11 +56,6 @@
 - The first attempt scored 3/10 but evolution over 3 variants produced a winner scoring 9/10, confirming that iterative variant generation beats single-
 - Prediction calibration is systematically optimistic: predicted 5 vs actual 3 (abs_error 2), so future score predictions should be deflated by roughly 
 - Rate limits (429) cascade across models on the same provider (openrouter.ai), so fallback within one provider is not a real fallback — diversify provi
-- The nachspiel metric showed zero delta (-0.2 to -0.2) across cycles, meaning repeated revision rounds without structural change produce no measurable 
-- A DNS name-resolution failure during act-create shows that network-level flakiness, not just API errors, interrupts goal execution and needs retry han
-- Model calls failed repeatedly with 429 Too Many Requests on two different providers within the same second, indicating shared upstream rate limiting r
-- The swarm failed to converge in only 2 cycles while the metabolism was in conserve state (max_iterations=1), so non-convergence is likely caused by bu
-- Both football variants (49.83% and 49.72%) landed below the 50.18% baseline with worse log-loss than baseline, confirming that unaided reasoning witho
 
 ---
 

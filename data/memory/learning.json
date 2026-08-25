@@ -1,15 +1,21 @@
 {
- "stand": "2026-08-25 21:08:39",
- "ereignisse_ausgewertet": 571,
+ "stand": "2026-08-25 21:25:25",
+ "ereignisse_ausgewertet": 589,
  "werkzeuge": [
   {
    "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.6,
+ "haende_quote": 0.636,
  "simulationen_angewandt": 17,
  "swarm_scores": {
   "n": 13,

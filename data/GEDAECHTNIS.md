@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2590 Fakten** · Stand 2026-08-25 21:08 UTC · aktualisiert bei jedem Herzschlag
+**2596 Fakten** · Stand 2026-08-25 21:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1147
+- **dream:** 1152
 - **swarm_artifact:** 711
 - **anti_pattern:** 234
 - **last_swarm_goal:** 185
@@ -13,12 +13,42 @@
 - **tool:** 5
 - **hand_result:** 3
 - **frontier:** 3
-- **aktuell_organfehler:** 1
+- **aktuell_organfehler:** 2
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `dream:20260825212510:5:5f0edd`
+*25.08. 21:25 UTC · Quelle: dream*
+
+Skill proposals are accumulating (35+ proposed, barely tested), so the bottleneck is validation capacity, not idea generation.
+
+### `dream:20260825212510:4:aeec65`
+*25.08. 21:25 UTC · Quelle: dream*
+
+Retrieval pulled 7 traces (bahnen) yet yielded zero new edges (kanten) and delta 0.0, showing that recall without an integration or linking step produces no durable knowledge-structure change.
+
+### `dream:20260825212510:3:302c7f`
+*25.08. 21:25 UTC · Quelle: dream*
+
+The evolution run improved the winner from 5 to 9/10, but the swarm still reported a final score of 5, indicating the evolved artifact was not re-scored or propagated back into the swarm's final evaluation.
+
+### `dream:20260825212510:2:981d88`
+*25.08. 21:25 UTC · Quelle: dream*
+
+A simulation verdict of 'revise' with 3 identified risks produced only 0 applied revisions on the first pass, meaning the simulation-to-revision pipeline silently drops work when the revision step fails or is skipped.
+
+### `dream:20260825212510:1:bdff53`
+*25.08. 21:25 UTC · Quelle: dream*
+
+The swarm terminated after 2 cycles with score 5/10 and converged=false because the iteration budget (max_iterations=2) was exhausted before the critic's repeated 'revise' verdicts could be acted on, so low scores here reflect budget starvation rather than sol
+
+### `aktuell_organfehler`
+*25.08. 21:11 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-25 18:02:12-18:02:30 UTC): dream -> ConnectError in _exceptions.py:14; dream -> ConnectError in default.py:118; dream -> rc; drive -> ConnectError in _exceptions.py:14. [Errno -3] Temporary failure in name resolution | [Errno -3] Temporary
 
 ### `tool:cortex-upgrade-reflex-neue-modelle-autom`
 *25.08. 21:08 UTC · Quelle: hands*
