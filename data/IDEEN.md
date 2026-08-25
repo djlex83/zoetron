@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 17:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-25 17:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm goal (beat 50.2% football baseline without odds) has an unfakeable external critic (match results), making it the ideal testbed for validati
+- Skill proposals are generated at a high rate (5 per dream cycle) but the drive_goal 'gap' signal confirms near-zero adoption, revealing that proposal 
+- Metabolism state 'conserve' (max_tasks=3, max_iterations=1) combined with slow-model latency means single-shot prompts must be self-contained, since r
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeded in all three attempts but with high latency variance (9s–55s), so it is reliable yet slow and unsuita
+- The 429 failures on stealth/ox-alpha and z-ai/glm-5.2:free recur across every task cycle, indicating these endpoints are persistently rate-limited and
 - Memory pruning removed nothing (0 facts, 0 events) while the same failing goal was retried unchanged, showing the loop lacks a mechanism to detect 'no
 - Simulation verdicts ('revise', 4 risks) were generated and applied, but the swarm still did not converge, indicating simulation output is not being tr
 - Free-tier OpenRouter models are unreliable capacity-wise but viable as fallbacks (glm-5.2 succeeded on retry), so the failure rate is a routing/retry 
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates difficulty (predicted 7 vs actual 9), suggesting the need for difficulty-aware estimation.
 - Model interface errors ('str' object has no attribute 'role') across multiple providers indicate a systemic schema mismatch in role handling.
 - Prose-only artifacts prevent convergence; executable code blocks are necessary for measurable progress in prediction tasks.
-- Memory pruning removed 0 facts/events despite repeated failures, so the system retains noise instead of discarding failed approaches.
-- The baseline (50.18%) is essentially a coin flip; beating it requires structural features (odds, xG, team form) not prose heuristics.
-- Calibration error of 2 points (predicted 7 vs actual 9) indicates the simulation verdict 'go' is unreliable for this task class.
-- Repeated swarm cycles on the same goal without architectural change yield diminishing returns (scores 7→8→6 in evolution).
-- High critic scores (9/10) can mask fundamental missing deliverables like executable code, creating false convergence signals.
 
 ---
 

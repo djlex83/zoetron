@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 1906 Neuronen · 31202 bewertete Synapsen
+Stand: 1918 Neuronen · 31346 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,13 +13,13 @@ Stand: 1906 Neuronen · 31202 bewertete Synapsen
 | 1 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 162 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 180 | 0.22 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 180 | 0.22 |
-| 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 156 | 0.25 |
+| 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 157 | 0.25 |
 | 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 130 | 0.27 |
 | 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 131 | 0.26 |
 | 7 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 130 | 0.25 |
-| 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 133 | 0.24 |
+| 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 134 | 0.24 |
 | 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 111 | 0.27 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 116 | 0.25 |
+| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 117 | 0.25 |
 | 11 | 💭 | Model latency variance (4.6–138 s) violates SLOs and destabilize… | 118 | 0.25 |
 | 12 | 💭 | Model invocation latency spikes and occasional 502 overload erro… | 120 | 0.24 |
 | 13 | 💭 | Missing interface contracts such as MemoryStore.add_fact cause s… | 92 | 0.31 |

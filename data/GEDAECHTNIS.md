@@ -1,23 +1,118 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2489 Fakten** · Stand 2026-08-25 17:12 UTC · aktualisiert bei jedem Herzschlag
+**2508 Fakten** · Stand 2026-08-25 17:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1112
-- **swarm_artifact:** 691
-- **anti_pattern:** 222
-- **last_swarm_goal:** 178
-- **strategy:** 132
-- **last_swarm_critique:** 116
-- **aktuell_fussball_messlatte:** 22
+- **dream:** 1117
+- **swarm_artifact:** 697
+- **anti_pattern:** 224
+- **last_swarm_goal:** 179
+- **strategy:** 133
+- **last_swarm_critique:** 117
+- **aktuell_fussball_messlatte:** 24
 - **creator_teaching:** 8
 - **frontier:** 3
+- **tool:** 2
 - **hand_result:** 1
 - **semantic_organ:** 1
-- **tool:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*25.08. 17:39 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.55 -0.43 -1.22 -0.43 -0.37 -0.48. Der Log-Loss ist
+
+### `aktuell_fussball_messlatte`
+*25.08. 17:39 UTC · Quelle: bewerte.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0093 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -2.35 -0.55 -0.43 -1.22 -0.43 -0.37. Der Log-Loss ist
+
+### `tool:fußball-die-basislinie-von-50-2-schlagen`
+*25.08. 17:39 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten'. Datei: data/tools/fußball-die-basislinie-von-50-2-schlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*25.08. 17:38 UTC · Quelle: evolution*
+
+Gradient Boosting mit rigoroser Walk-Forward-Validierung und Feature-Engineering aus reinen Spielerd - Variante 0 adressiert die Kernkritik direkt: rigoroser Walk-Forward-Backtest über 5 Saisons mit expliziten Metriken (Accuracy, Log-Loss, Brier-Score) und Bas
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :2`
+*25.08. 17:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Temporal Convolutional Network (TCN) auf Sequenzen von Match-Events und Aggregie - Ansatz: Deep Learning auf Sequenzen der letzten 10 Spiele pro Team. Input pro Spiel: 20-dim Vektor (Tore, xG, Schüsse, Ballbesitz, Ecken, Kart
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: die Basislinie :1`
+*25.08. 17:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Dynamisches Elo-Rating-System mit Bayes'scher Kalibrierung und Monte-Carlo-Simul - Ansatz: Erweitertes Elo mit separaten Heim-/Auswärts-Ratings, Tor-Differenz-Gewichtung, Form-Dämpfung (letzte 3 Spiele höher gewichtet), und L
+
+### `swarm_artifact:Adjust calibration bin width (BINW) for better probability e`
+*25.08. 17:37 UTC · Quelle: builder*
+
+[score 3] # AENDERUNG: BINW von 25.0 auf 30.0 erhöht – gröbere Bins für stabilere Kalibrierungsschätzungen bei gleicher Prior-Stärke. # elo_kalib_v2 – Elo mit Tordifferenz-Multiplikator, Saison-Ru
+
+### `swarm_artifact:Optimize MARGIN parameter for goal difference multiplier`
+*25.08. 17:37 UTC · Quelle: builder*
+
+[score 3] AENDERUNG GENAU EINER SACHE: `MARGIN` von 0.35 auf **0.45** erhöht – damit liegt der Tordifferenz-Multiplikator bei einem 2-Tor-Sieg bei ~1.49 und entspricht dem etablierten Standard-Gew
+
+### `swarm_artifact:Test dynamic K-factor based on team match count`
+*25.08. 17:37 UTC · Quelle: builder*
+
+[score 3] ```python # AENDERUNG: Dynamischer K-Faktor basierend auf Team-Spielzahl (K=40 fuer neue Teams, # K=20 fuer etablierte Teams) plus hierarchischer Prior: neue Teams starten beim # Wettbew
+
+### `last_swarm_critique`
+*25.08. 17:37 UTC · Quelle: critic*
+
+score=3; issues=Kein einziger Evaluations-/Backtest-Befund vorhanden: Das Ziel 'Basislinie von 50,2 % schlagen' wird nirgends mit einer gemessenen Accuracy, Log-Loss oder Brier-Score belegt. Alle drei Varianten sind unbelegte Hypothesen.; Die drei Artefakte si
+
+### `swarm_artifact:Adjust calibration bin width (BINW) for better probability e`
+*25.08. 17:36 UTC · Quelle: builder*
+
+# AENDERUNG: BINW von 25.0 auf 30.0 erhöht – gröbere Bins für stabilere Kalibrierungsschätzungen bei gleicher Prior-Stärke. # elo_kalib_v2 – Elo mit Tordifferenz-Multiplikator, Saison-Rueckkehr zum Mi
+
+### `swarm_artifact:Optimize MARGIN parameter for goal difference multiplier`
+*25.08. 17:35 UTC · Quelle: builder*
+
+AENDERUNG GENAU EINER SACHE: `MARGIN` von 0.35 auf **0.45** erhöht – damit liegt der Tordifferenz-Multiplikator bei einem 2-Tor-Sieg bei ~1.49 und entspricht dem etablierten Standard-Gewichtungsprofil
+
+### `swarm_artifact:Test dynamic K-factor based on team match count`
+*25.08. 17:34 UTC · Quelle: builder*
+
+```python # AENDERUNG: Dynamischer K-Faktor basierend auf Team-Spielzahl (K=40 fuer neue Teams, # K=20 fuer etablierte Teams) plus hierarchischer Prior: neue Teams starten beim # Wettbewerbs-Durchschn
+
+### `last_swarm_goal`
+*25.08. 17:32 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260825173232:5:5d25d3`
+*25.08. 17:32 UTC · Quelle: dream*
+
+The swarm goal (beat 50.2% football baseline without odds) has an unfakeable external critic (match results), making it the ideal testbed for validating whether proposed skills actually improve outcomes.
+
+### `dream:20260825173232:4:26b711`
+*25.08. 17:32 UTC · Quelle: dream*
+
+Skill proposals are generated at a high rate (5 per dream cycle) but the drive_goal 'gap' signal confirms near-zero adoption, revealing that proposal generation without an execution queue produces no value.
+
+### `dream:20260825173232:3:bc0a23`
+*25.08. 17:32 UTC · Quelle: dream*
+
+Metabolism state 'conserve' (max_tasks=3, max_iterations=1) combined with slow-model latency means single-shot prompts must be self-contained, since retry loops are unaffordable.
+
+### `dream:20260825173232:2:156f4d`
+*25.08. 17:32 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeded in all three attempts but with high latency variance (9s–55s), so it is reliable yet slow and unsuitable as the sole fallback under tight iteration budgets.
+
+### `dream:20260825173232:1:4c38ef`
+*25.08. 17:32 UTC · Quelle: dream*
+
+The 429 failures on stealth/ox-alpha and z-ai/glm-5.2:free recur across every task cycle, indicating these endpoints are persistently rate-limited and should be demoted or backed off rather than retried each time.
 
 ### `aktuell_fussball_messlatte`
 *25.08. 17:12 UTC · Quelle: bewerte.py*
