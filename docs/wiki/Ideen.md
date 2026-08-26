@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 22:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 22:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 14×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 12×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 8×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 12×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
-- Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Parked Whisper-Ziele wieder aufnehmen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token throughput varies wildly: minimax processes ~13k tokens in 76s while nemotron handles ~1.2k–5.5k tokens in 22–116s, making latency-cost tradeoff
+- The simulation-revision loop (3 revisions applied for Hebbian synapse-quality goal) demonstrates that structured critique cycles converge even under m
+- Operating in 'conserve' metabolism with max_iterations=1 forces single-pass execution, eliminating retry loops that could absorb transient 429/502 err
+- minimax/minimax-m3:free and nvidia/nemotron-3-ultra-550b-a55b:free are the only models showing consistent success under load, but nemotron exhibits hi
+- Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making provider diversity insufficient without request pacing.
 - Previous benchmark failure (4/10) reflects a pattern of insufficient testing infrastructure, leading to unreliable performance evaluation and deployme
 - The system's stress state (1.0) and conserve mode indicate resource exhaustion, likely exacerbated by repeated failed model calls consuming budget wit
 - Repeated model failures correlate with unimplemented skill proposals, suggesting a gap between identified needs and actual system resilience improveme
@@ -51,11 +56,6 @@
 - Token output varies 9× across successful models (Nemotron 665–852 vs dots-3-note 7252), so verbosity is a hidden cost dimension that must factor into 
 - NVIDIA Nemotron-3-Ultra is the only model with consistent success (3/3 OK) and reasonable latency (19.9s–85.3s), making it the current de-facto reliab
 - Free-tier OpenRouter models (gemma-4-26b, laguna-s-2.1, minimax-m3, glm-5.2) hit 429 rate limits repeatedly in a single session, with glm-5.2 failing 
-- Rate-limited model (glm) intermittently recovers but remains untrustworthy for critical paths, requiring explicit circuit-breaker logic.
-- Embedding-based recall is validated as go by simulation but implementation is blocked by resource budget, creating a capability gap.
-- Swarm initiatives lack coordination mechanism, leading to parallel uncoordinated efforts and parked whispers awaiting creator decisions.
-- Metabolism-driven conservation mode severely limits parallel execution, causing skill proposals to stall despite simulation approval.
-- Free-tier models exhibit unreliable availability (429 errors) and high latency variance, necessitating a model router with health checks and fallback.
 
 ---
 

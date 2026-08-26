@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3995 Fakten** · Stand 2026-08-26 22:07 UTC · aktualisiert bei jedem Herzschlag
+**4030 Fakten** · Stand 2026-08-26 22:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1621
-- **swarm_artifact:** 987
-- **last_swarm_critique:** 487
-- **anti_pattern:** 340
-- **last_swarm_goal:** 254
-- **strategy:** 191
+- **dream:** 1626
+- **swarm_artifact:** 993
+- **last_swarm_critique:** 506
+- **anti_pattern:** 342
+- **last_swarm_goal:** 255
+- **strategy:** 192
 - **hand_result:** 35
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 19
+- **tool:** 20
 - **aktuell_organfehler:** 14
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -19,6 +19,146 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:best-of-n-mit-unbestechlichem-prüfer-tes`
+*26.08. 22:36 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)'. Datei: data/tools/best-of-n-mit-unbestechlichem-prüfer-tes.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Best-of-N mit unbestechl:2`
+*26.08. 22:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Test-Time Compute via Multi-Agent Debate & Heuristic Refinement - Instead of just generating N independent solutions, use a 'Generate-Critique-Refine' loop for test-time compute. Generate 3 initial solutions, then use a stric
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Best-of-N mit unbestechl:1`
+*26.08. 22:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Zero-Side-Effect Isolation & Deterministic Critic Sandbox - Avoid modifying existing files by generating a completely new, standalone module `best_of_n_evaluator.py`. Create an isolated sandbox using Python's `exec()` within 
+
+### `last_swarm_critique`
+*26.08. 22:33 UTC · Quelle: critic*
+
+score=6; issues=Benchmark-Messung nutzt simulierte Modelle (simulate_model_generation) statt echter LLM-Aufrufe - kann Best-of-3-Vorteil auf echten Aufgaben nicht nachweisbar demonstrieren; Resource-Limits (resource.setrlimit) nur auf Unix verfügbar, Windows-K
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:32 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:30 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_goal`
+*26.08. 22:25 UTC · Quelle: system*
+
+Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
+
+### `dream:20260826222433:5:2a25fe`
+*26.08. 22:24 UTC · Quelle: dream*
+
+Token throughput varies wildly: minimax processes ~13k tokens in 76s while nemotron handles ~1.2k–5.5k tokens in 22–116s, making latency-cost tradeoffs unpredictable.
+
+### `dream:20260826222433:4:6e76b4`
+*26.08. 22:24 UTC · Quelle: dream*
+
+The simulation-revision loop (3 revisions applied for Hebbian synapse-quality goal) demonstrates that structured critique cycles converge even under model unreliability.
+
+### `dream:20260826222433:3:61e7f6`
+*26.08. 22:24 UTC · Quelle: dream*
+
+Operating in 'conserve' metabolism with max_iterations=1 forces single-pass execution, eliminating retry loops that could absorb transient 429/502 errors.
+
+### `dream:20260826222433:2:b99e87`
+*26.08. 22:24 UTC · Quelle: dream*
+
+minimax/minimax-m3:free and nvidia/nemotron-3-ultra-550b-a55b:free are the only models showing consistent success under load, but nemotron exhibits high latency variance (22–116s) and intermittent 502 upstream errors.
+
+### `dream:20260826222433:1:dd065c`
+*26.08. 22:24 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making provider diversity insufficient without request pacing.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Best-of-N mit unbestechl:2`
 *26.08. 22:04 UTC · Quelle: evolution*
