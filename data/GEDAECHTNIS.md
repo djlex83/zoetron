@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3618 Fakten** · Stand 2026-08-26 13:27 UTC · aktualisiert bei jedem Herzschlag
+**3619 Fakten** · Stand 2026-08-26 13:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1523
+- **dream:** 1524
 - **swarm_artifact:** 901
 - **last_swarm_critique:** 372
 - **anti_pattern:** 314
@@ -19,6 +19,11 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826133010:1:d8b4ed`
+*26.08. 13:30 UTC · Quelle: dream*
+
+Dream could not parse its own output - check prompt size.
 
 ### `tool:ich-kern-injektor-bauen-ein-selbst-für-j`
 *26.08. 13:27 UTC · Quelle: hands*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 15×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 16×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
@@ -33,14 +33,15 @@
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
+- Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler untersuchen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
-- Häufige Modellfehler genauer untersuchen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream could not parse its own output - check prompt size.
 - The swarm terminated without convergence after only 2 cycles despite 'go' simulation verdicts, indicating the go/no-go gate is too permissive relative
 - Evolution rescued the run: a 3-variant evolution loop lifted scores from 2/10 baseline to 9/10 for the winner, confirming generate-and-select beats si
 - OpenRouter free-tier models repeatedly hit 429 rate limits in bursts (stealth/ox-alpha and z-ai/glm-5.2:free), while nvidia/nemotron-3-ultra served as
@@ -55,7 +56,6 @@
 - Calibration systematically underestimated effort (predicted 5 vs actual 9, abs_error 4), suggesting predictions should be inflated ~1.8x or recalibrat
 - Free-tier endpoints fail in two distinct ways that need different handling: 429 rate limits (retryable with backoff) versus upstream 502/no-choices er
 - The fallback chain is effective: when stealth/ox-alpha and z-ai/glm-5.2 failed, nvidia/nemotron-3-ultra and dots-studio/dots-3-note-preview completed 
-- 429 rate limits are the dominant failure mode (7 of 11 model_fail events), hitting multiple providers simultaneously, so bursts of parallel LLM calls 
 
 ---
 

@@ -49,7 +49,7 @@
   "why": "Das LLM ist zustandslos - ohne mitgegebenes Selbst wacht bei jedem Aufruf ein Fremder auf. Baue selbst_kontext.py: komponiert bei jedem Beat einen kompakten Ich-Block (max. 400 Tokens) aus Genome-Regeln, aktiver Mission aus will.json, Selbstmodell-Zustand (Kalibrierung, Stress) und den 3 neuesten Retro-Lektionen. Der Block wird jedem Organ-Aufruf vorangestellt: Prompt = Ich-Block + Organ-Rolle + Aufgabe. Fertig wenn: 1) alle Organe den Block nachweisbar erhalten (Log-Beleg), 2) ein Vorher/Nachher-Vergleich über 10 Beats zeigt, dass Antworten die aktive Mission und mindestens eine Lektion referenzieren, 3) das Token-Budget eingehalten wird.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 1,
+  "_versuche": 2,
   "_geparkt": false,
   "_zaehler_ab": 1787743119.1258025
  },

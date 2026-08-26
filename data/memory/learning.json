@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 13:27:14",
- "ereignisse_ausgewertet": 3326,
+ "stand": "2026-08-26 13:30:26",
+ "ereignisse_ausgewertet": 3338,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-prüfen-und-verbesse.py",
@@ -67,9 +67,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.587,
+ "haende_quote": 0.589,
  "simulationen_angewandt": 69,
  "swarm_scores": {
   "n": 64,
