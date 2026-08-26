@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3062 Fakten** · Stand 2026-08-26 04:51 UTC · aktualisiert bei jedem Herzschlag
+**3079 Fakten** · Stand 2026-08-26 05:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1278
-- **swarm_artifact:** 819
-- **anti_pattern:** 274
-- **last_swarm_critique:** 253
-- **last_swarm_goal:** 207
-- **strategy:** 158
+- **dream:** 1283
+- **swarm_artifact:** 825
+- **anti_pattern:** 276
+- **last_swarm_critique:** 254
+- **last_swarm_goal:** 208
+- **strategy:** 159
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 16
+- **hand_result:** 17
 - **tool:** 8
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,91 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Mehr Vorschläge wirklich ausprobieren`
+*26.08. 05:15 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "[ERROR] Proposals directory not found: proposals\n"}
+
+### `strategy:mehr_vorschläge_wirklich_ausprobieren`
+*26.08. 05:14 UTC · Quelle: evolution*
+
+Experiment-Pipeline mit Budget und Feedback-Schleife - Variant 1 directly addresses the goal 'mehr Vorschläge wirklich ausprobieren' by making executed experiments the core KPI, with budgets and a structured feedback loop that also fix
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Mehr Vorschläge wirklich:2`
+*26.08. 05:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Inversion: Fehlertolerantes Prototyping statt Perfektion - Drehe die Strategie um: Statt perfekte, vollständig formulierte Lösungen anzustreben, werden absichtlich viele schnelle, rohe Prototypen erzeugt ('fail fast'-Ansatz).
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Mehr Vorschläge wirklich:0`
+*26.08. 05:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Strukturerzwingung durch starre Schemata - Erzwinge maschinenlesbare Ausgaben, indem jeder Lösungsvorschlag an ein festes, vordefiniertes JSON-Schema gebunden wird (z. B. {id, hypothese, test_schritt, erwartung, ergebnis}). J
+
+### `swarm_artifact:Run trials on top-3 prioritized proposals`
+*26.08. 05:13 UTC · Quelle: builder*
+
+[score 5] ```python #!/usr/bin/env python3 """ Run trials on top-5 prioritized proposals using the trial harness. Collects results and produces a summary report with pass/fail and resource usage. 
+
+### `swarm_artifact:Build lightweight trial harness for skill proposals`
+*26.08. 05:13 UTC · Quelle: builder*
+
+[score 5] Der Harness führt jeden Skill-Proposal-Vorschlag isoliert in einem gehärteten Docker-Container aus (`--read-only`, `--network=none`, `--cap-drop=ALL`, Memory/PIDs-Limits), fängt stdout/s
+
+### `swarm_artifact:Audit proposal backlog and prioritize by impact`
+*26.08. 05:13 UTC · Quelle: builder*
+
+[score 5] This script audits skill proposals from a `proposals/` directory, enriches missing metadata via heuristics (code size → effort, dependency count → impact), and outputs a ranked CSV with 
+
+### `last_swarm_critique`
+*26.08. 05:13 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Run trials on top-3 prioritized proposals`
+*26.08. 05:13 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Run trials on top-5 prioritized proposals using the trial harness. Collects results and produces a summary report with pass/fail and resource usage. """  import cs
+
+### `swarm_artifact:Build lightweight trial harness for skill proposals`
+*26.08. 05:12 UTC · Quelle: builder*
+
+Der Harness führt jeden Skill-Proposal-Vorschlag isoliert in einem gehärteten Docker-Container aus (`--read-only`, `--network=none`, `--cap-drop=ALL`, Memory/PIDs-Limits), fängt stdout/stderr/Exit-Cod
+
+### `swarm_artifact:Audit proposal backlog and prioritize by impact`
+*26.08. 05:10 UTC · Quelle: builder*
+
+This script audits skill proposals from a `proposals/` directory, enriches missing metadata via heuristics (code size → effort, dependency count → impact), and outputs a ranked CSV with confidence fla
+
+### `last_swarm_goal`
+*26.08. 05:09 UTC · Quelle: system*
+
+Mehr Vorschläge wirklich ausprobieren
+
+### `dream:20260826050935:5:c914e0`
+*26.08. 05:09 UTC · Quelle: dream*
+
+Metabolism stress and model quota exhaustion are coupled failure modes: high swarm activity triggers rate limits, which raises latency, which increases stress.
+
+### `dream:20260826050935:4:aa55ec`
+*26.08. 05:09 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this cycle) but drive feedback indicates they aren't being trialed or retired, creating proposal debt.
+
+### `dream:20260826050935:3:701fc4`
+*26.08. 05:09 UTC · Quelle: dream*
+
+Destructive tool operations (subprocess) require human approval, creating a hard automation ceiling for any code-executing skill.
+
+### `dream:20260826050935:2:b0471f`
+*26.08. 05:09 UTC · Quelle: dream*
+
+Swarm convergence fails at score 5/10 despite a clear winning variant (9,9,9) because critic/builder roles don't exploit the best candidate across cycles.
+
+### `dream:20260826050935:1:2087c6`
+*26.08. 05:09 UTC · Quelle: dream*
+
+Primary models (stealth/ox-alpha, z-ai/glm-5.2) suffer systematic 429 rate-limiting, forcing fallback to slower nvidia/nemotron and degrading swarm latency by 2-3x.
 
 ### `hand_result:Ersten Swarm-Lauf mit Score 8+ konvergieren lassen`
 *26.08. 04:51 UTC · Quelle: hands*

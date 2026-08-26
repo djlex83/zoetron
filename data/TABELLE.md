@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2177 Neuronen · 37214 bewertete Synapsen
+Stand: 2187 Neuronen · 37560 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,16 +10,16 @@ Stand: 2177 Neuronen · 37214 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 212 | 0.23 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 212 | 0.23 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 214 | 0.23 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 214 | 0.23 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 173 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 165 | 0.25 |
-| 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 131 | 0.26 |
+| 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 133 | 0.26 |
 | 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 134 | 0.26 |
-| 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 141 | 0.24 |
-| 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 134 | 0.25 |
-| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 149 | 0.22 |
-| 10 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 119 | 0.26 |
+| 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 142 | 0.24 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 151 | 0.22 |
+| 9 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 134 | 0.25 |
+| 10 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 120 | 0.27 |
 | 11 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 124 | 0.25 |
 | 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 127 | 0.24 |
 | 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 126 | 0.24 |
