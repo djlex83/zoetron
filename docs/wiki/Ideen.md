@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively a no-op and memory growth is unchecked.
+- Reflexes are nearly unused except when explicitly tied to a goal ('alte-traeume-miteinander-verbinden.py' succeeded immediately), showing reflex adopt
+- 45 accumulated skill proposals remain almost entirely untested while new ones keep being generated, indicating a proposal-to-validation bottleneck whe
+- A hand_action failed with exit code 1 but error=null, meaning failures that carry no diagnostic payload are indistinguishable from silent crashes and 
+- The swarm run 'Modell-Fehler deutlich reduzieren' failed to converge in only 2 cycles with score 2, suggesting the iteration budget is cut off before 
 - The goal 'Modell-Fehler reduzieren' itself produced 13+ model errors across the trace, indicating recurring failure modes (sandbox exit 1, calibration
 - Token spend was highly uneven (one call: 1952 in / 7843 out at 229s latency while most calls were <1000 tokens), suggesting large generation tasks sho
 - Evolution rescued the run (winner scored 9 vs initial 2), confirming that when cycle-1 score < 5, running variant evolution immediately is more cost-e
@@ -51,11 +56,6 @@
 - Prune runs consistently report zero facts/events pruned, meaning memory consolidation is a no-op and stale events (e.g., old drive-goal entries) are a
 - Tool rejections and the 17 model errors remain unexplained because failure reasons are never captured in structured form, leaving recurring failures i
 - Skill proposals are generated every dream cycle but almost never executed (one reflex trial in the whole window), so the bottleneck is proposal-to-tri
-- Reflex-mode actions complete successfully but record score=null, so success is claimed without any quality signal to compare against future attempts.
-- LLM call latency fluctuates between roughly 10s and 17s for similar token counts, suggesting per-call variance that timeout budgets could absorb.
-- Skill proposals are generated at high volume every cycle but almost none are implemented or tested, so the proposal pipeline is a write-only sink.
-- Drive goals about understanding model errors and rejected tools recur across multiple dream cycles unchanged, showing goals persist without measurable
-- Prune runs repeatedly report zero facts and events pruned, indicating the retention policy is effectively a no-op and memory is growing without curati
 
 ---
 
