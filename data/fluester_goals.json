@@ -146,20 +146,21 @@
   "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig wenn: mindestens 200 gefilterte Paare in data/destillat/ liegen, ein Validator das Format prüft und die Statistik (Anzahl, Ablehnungsquote) im Wochenreport steht.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2,
+  "_versuche": 3,
   "_zaehler_ab": 1787704274.3783333,
   "_wieder_geoeffnet": {
    "am": "2026-08-26 00:31 UTC",
    "durch": "erschaffer",
    "grund": "letzter Lauf: Score 6 bei GRUENEM Konvergenz-Tor (238 Zeilen lauffaehiges Python) - bester Lauf im Echtbetrieb. Geparkt wurde nach der Zaehlregel _versuche >= 3, nicht nach der Messung."
-  }
+  },
+  "_geparkt": true
  },
  {
   "title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)",
   "why": "Der Meilenstein: Lernen erreicht die Gewichte. Bereite alles vor, damit der Erschaffer ein kleines Modell (0.5 bis 3 Milliarden Parameter) per LoRA (kleines Zusatz-Training statt Volltraining) auf dem Destillat trainieren kann: fertiges Trainingsskript + Konfiguration + Schritt-für-Schritt-Anleitung. Ehrlicher Hinweis im Plan: Das Training läuft auf einer Miet-GPU für wenige Euro oder über Nacht auf CPU beim Winzling - der Trainingslauf selbst ist Teamarbeit mit dem Erschaffer, vorbereiten statt simulieren. Danach Einbindung des Schülers über Ollama in den AutoRouter. Befördert wird der Schüler nur, wenn er sein untrainiertes Basismodell auf der Messlatte schlägt. Fertig wenn: 1) Trainingspaket komplett und vom Erschaffer ausführbar, 2) Schüler läuft lokal als Routing-Ziel, 3) Vergleich Schüler gegen Basis auf der Messlatte dokumentiert.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 0
+  "_versuche": 2
  },
  {
   "title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal",

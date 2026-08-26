@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2896 Fakten** · Stand 2026-08-26 01:08 UTC · aktualisiert bei jedem Herzschlag
+**2905 Fakten** · Stand 2026-08-26 01:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1212
-- **swarm_artifact:** 775
+- **dream:** 1217
+- **swarm_artifact:** 777
 - **anti_pattern:** 256
-- **last_swarm_critique:** 242
-- **last_swarm_goal:** 196
+- **last_swarm_critique:** 243
+- **last_swarm_goal:** 197
 - **strategy:** 149
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 11
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Draft deliverable for: Lokaler Schüler: das erste Mal lernt `
+*26.08. 01:19 UTC · Quelle: builder*
+
+[score 8] Das Artefakt ist ein vollständiges Trainingspaket-Werkzeug: es erzeugt Trainingsskript, Konfiguration und Anleitung für LoRA-Finetuning (Low-Rank Adaptation, kleines Zusatz-Training stat
+
+### `last_swarm_critique`
+*26.08. 01:19 UTC · Quelle: critic*
+
+score=8; issues=Mindest-Datensatzgröße von 5 Beispielen ist für echtes LoRA-Training zu gering (Doku empfiehlt 50, Code erzwingt nur 5); Vergleich (vergleich) nutzt rein visuelle Gegenüberstellung ohne automatisierte Metrik (BLEU/ROUGE/Embedding-Similarity); K
+
+### `swarm_artifact:Draft deliverable for: Lokaler Schüler: das erste Mal lernt `
+*26.08. 01:19 UTC · Quelle: builder*
+
+Das Artefakt ist ein vollständiges Trainingspaket-Werkzeug: es erzeugt Trainingsskript, Konfiguration und Anleitung für LoRA-Finetuning (Low-Rank Adaptation, kleines Zusatz-Training statt Volltraining
+
+### `last_swarm_goal`
+*26.08. 01:14 UTC · Quelle: system*
+
+Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
+
+### `dream:20260826011416:5:9876e5`
+*26.08. 01:14 UTC · Quelle: dream*
+
+Der metabolism_check setzte den Swarm in 'conserve' mit max_iterations=1, und der Swarm endete konvergiert=false mit Score 1 – Ressourcenknappheit plus fehlgeschlagene erste Ausführung führen zu vorzeitigem Abbruch ohne eine zweite Korrekturrunde.
+
+### `dream:20260826011416:4:c65a9a`
+*26.08. 01:14 UTC · Quelle: dream*
+
+Der evolution_run war die wirksamste Reparatur-Schleife: aus Score 1/10 entstanden 3 Varianten mit Scores [7,9,8] – variantengenerierung plus Kritik ist das etablierte Verfahren zum Aufholen nach Fehlschlägen und sollte früher (direkt nach dem ersten Sandbox-F
+
+### `dream:20260826011416:3:e49750`
+*26.08. 01:14 UTC · Quelle: dream*
+
+Die Simulation lieferte erst 'revise' (5 Risiken), dann nach Revision 'go' – trotzdem schlug die Ausführung fehl, d.h. die statische Simulation erkennt Logikrisiken, aber keine Syntax-/Importfehler; ein tatsächlicher Compile-Check muss vor dem 'go' stehen.
+
+### `dream:20260826011416:2:d6d20b`
+*26.08. 01:14 UTC · Quelle: dream*
+
+Die Kalibrierung lag mit predicted=5 vs. actual=1 (abs_error=4) weit daneben: die Selbstbewertung vor der Ausführung überschätzt Erfolgswahrscheinlichkeiten systematisch, wenn Code nie wirklich ausgeführt wurde.
+
+### `dream:20260826011416:1:04da42`
+*26.08. 01:14 UTC · Quelle: dream*
+
+Alle drei fehlgeschlagenen hand_actions scheiterten in unter 0.03s mit exit 1 und error=null, was auf Syntaxfehler im generierten Code vor der Laufzeit hindeutet – konkret stand 'from __future__' an Zeile 17 statt am Dateianfang.
 
 ### `tool:destillat-datensatz-gedächtnis-wird-trai`
 *26.08. 01:08 UTC · Quelle: hands*
