@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3114 Fakten** · Stand 2026-08-26 05:55 UTC · aktualisiert bei jedem Herzschlag
+**3126 Fakten** · Stand 2026-08-26 06:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1298
-- **swarm_artifact:** 835
-- **anti_pattern:** 278
-- **last_swarm_critique:** 257
-- **last_swarm_goal:** 211
-- **strategy:** 160
+- **dream:** 1303
+- **swarm_artifact:** 837
+- **anti_pattern:** 280
+- **last_swarm_critique:** 258
+- **last_swarm_goal:** 212
+- **strategy:** 161
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 18
 - **tool:** 8
@@ -19,6 +19,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:simulationen_öfter_in_echte_aktionen_umwandeln`
+*26.08. 06:07 UTC · Quelle: evolution*
+
+Feedback-Loop mit Retry- und Eskalationslogik (Closed-Loop Conversion Engine) - Variante 0 adressiert alle Kritikpunkte direkt und vollständig: Der fehlende Feedback-Loop wird durch Retry-Zyklen mit parameterbasierter Anpassung geschlossen, der Schwellwert-Gat
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen öfter in ec:2`
+*26.08. 06:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Batch-Simulation mit Portfolio-Ranking (viele Simulationen, nur die Besten werde - Drehe das Verhältnis um: Statt einzelner Simulationen läuft ein Batch-Prozess, der pro Zyklus K Kandidaten parallel simuliert (mit echter Simu
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen öfter in ec:1`
+*26.08. 06:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Schwellwert-Adaption durch Bandit-Optimierung (Threshold Tuning statt Simulation - Statt jede Simulation zu 'retten', wird der Auslöse-Schwellwert dynamisch optimiert: Ein Multi-Armed-Bandit (z. B. Thompson Sampling) balancie
+
+### `swarm_artifact:Draft deliverable for: Simulationen öfter in echte Aktionen `
+*26.08. 06:06 UTC · Quelle: builder*
+
+[score 5] This artifact implements a pilot pipeline that converts simulation outcomes into real-world action triggers. It defines automation hooks, captures execution results, and logs conversion 
+
+### `last_swarm_critique`
+*26.08. 06:06 UTC · Quelle: critic*
+
+score=5; issues=Das Ziel 'Simulationen ÖFTER in echte Aktionen umwandeln' wird nicht messbar erfüllt: Es gibt keinen Mechanismus, der die Conversion-Rate erhöht (kein Retry, kein Feedback-Loop, kein Schwellwert-basiertes Nachsteuern, kein Baseline-Vergleich).;
+
+### `swarm_artifact:Draft deliverable for: Simulationen öfter in echte Aktionen `
+*26.08. 06:05 UTC · Quelle: builder*
+
+This artifact implements a pilot pipeline that converts simulation outcomes into real-world action triggers. It defines automation hooks, captures execution results, and logs conversion metrics for re
+
+### `last_swarm_goal`
+*26.08. 06:02 UTC · Quelle: system*
+
+Simulationen öfter in echte Aktionen umwandeln
+
+### `dream:20260826060131:5:00d626`
+*26.08. 06:01 UTC · Quelle: dream*
+
+Simulations require 4 revisions before application, revealing that planning lacks concrete validation gates before execution.
+
+### `dream:20260826060131:4:db828c`
+*26.08. 06:01 UTC · Quelle: dream*
+
+Hand actions fail on first attempt (exit 1) then succeed on retry (exit 0), yet no automatic retry/backoff logic exists.
+
+### `dream:20260826060131:3:972eb1`
+*26.08. 06:01 UTC · Quelle: dream*
+
+Five skill proposals were generated in one cycle but zero were tested; the proposal→trial→promote loop is completely broken.
+
+### `dream:20260826060131:2:57c903`
+*26.08. 06:01 UTC · Quelle: dream*
+
+Swarms report high scores (5/5) but fail to converge because termination ignores whether logged risks were actually resolved.
+
+### `dream:20260826060131:1:a52fe9`
+*26.08. 06:01 UTC · Quelle: dream*
+
+Model latency varies 23x (2.9s to 67.3s) with intermittent failures, indicating no provider health tracking or adaptive failover.
 
 ### `hand_result:Vorgeschlagene Fähigkeiten endlich ausprobieren`
 *26.08. 05:54 UTC · Quelle: hands*

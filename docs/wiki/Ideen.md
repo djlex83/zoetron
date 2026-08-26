@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 05:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 06:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,13 +13,13 @@
 - proposal_trial_queue.py: maintain a FIFO of untried skill proposals, execute one per drive cycle in a time-box *(hatte die Idee 2×)*
 - whisper_escalation.py: after 2 failed convergence attempts on a whisper, generate a concrete decision request  *(hatte die Idee 2×)*
 - Extend selbstdiagnose to ingest operational events (model_fail, werkzeug_abgelehnt, converged=false) as health *(hatte die Idee 2×)*
+- Build a sandbox trial pipeline that executes each pending skill proposal, records pass/fail metrics, and auto- *(hatte die Idee 2×)*
 - Before declaring any swarm finished, verify the artifact contains an executable Python block; if not, force on
 - After every swarm, run the actual external metric (e.g., match prediction accuracy) and record it alongside th
 - When a skill proposal appears in two consecutive dream cycles, auto-promote it into the active procedure list 
 - If prune_run reports 0 removals across two consecutive runs, escalate to an aggressive pruning pass targeting 
 - For repeated goals of the same type, seed the new swarm's calibration estimate with the previous goal's actual
 - After two failed swarm cycles on the same goal, automatically trigger a 'pivot' procedure: change representati
-- Require executable artifact (code + test) as a hard gate before critic scoring; prose-only outputs auto-score 
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulations require 4 revisions before application, revealing that planning lacks concrete validation gates before execution.
+- Hand actions fail on first attempt (exit 1) then succeed on retry (exit 0), yet no automatic retry/backoff logic exists.
+- Five skill proposals were generated in one cycle but zero were tested; the proposal→trial→promote loop is completely broken.
+- Swarms report high scores (5/5) but fail to converge because termination ignores whether logged risks were actually resolved.
+- Model latency varies 23x (2.9s to 67.3s) with intermittent failures, indicating no provider health tracking or adaptive failover.
 - Simulation verdicts of 'revise' are being acted on (3/3 revisions applied), so the simulation gate is effective at improving plans before real-world e
 - The recurring gap between skill_proposals and executed actions persists even in a session that explicitly set 'Mehr Vorschläge wirklich ausprobieren' 
 - A swarm run under metabolism stress=1.0/conserve still completed its full cycle including simulation with 3 revisions applied, proving constrained bud
@@ -51,11 +56,6 @@
 - Evolution produces high-scoring variants (9,9,10) but the swarm converges to score 2, showing a disconnect between variant evaluation and integrated s
 - Generated code artifacts contain syntax errors (truncated `from __future__ import`) that prevent execution, revealing a code-completion reliability ga
 - Rate-limited models (stealth/ox-alpha, z-ai/glm-5.2) consistently fail with 429 errors while nvidia/nemotron-3-ultra succeeds, indicating provider-lev
-- Selbstdiagnose reports zero findings while operational events show model_fail and converged=false, proving health checks miss structured event signals
-- Skill proposals accumulate faster than they are validated (many proposals, few implemented), so the bottleneck is a trial/promotion pipeline rather th
-- 429 rate-limit errors cascade across models in failover order within the same second, meaning immediate sequential failover amplifies throttling inste
-- Repeated goals like 'Doku-Konsistenzwächter' get parked after 3 non-convergent attempts, indicating failure cause is goal scoping/verification criteri
-- Swarm runs repeatedly fail to converge (score 2 after 2 cycles) because termination is declared without the critic verifying closure of logged risks —
 
 ---
 
