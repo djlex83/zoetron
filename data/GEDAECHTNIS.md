@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3844 Fakten** · Stand 2026-08-26 18:46 UTC · aktualisiert bei jedem Herzschlag
+**3859 Fakten** · Stand 2026-08-26 18:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1581
+- **dream:** 1586
 - **swarm_artifact:** 948
-- **last_swarm_critique:** 444
+- **last_swarm_critique:** 453
 - **anti_pattern:** 328
 - **last_swarm_goal:** 247
 - **strategy:** 185
 - **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 18
-- **aktuell_organfehler:** 12
+- **aktuell_organfehler:** 13
 - **creator_teaching:** 8
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,81 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826185218:5:1b0a42`
+*26.08. 18:52 UTC · Quelle: dream*
+
+Latency variance for identical models (Nemotron: 14s vs 58s) exceeds 4x, proving that single-sample latency metrics are meaningless for routing decisions.
+
+### `dream:20260826185218:4:fffdeb`
+*26.08. 18:52 UTC · Quelle: dream*
+
+Hand actions fail instantly (0.03s, exit 1, zero bytes read) without error details, indicating missing pre-execution validation or environment misconfiguration.
+
+### `dream:20260826185218:3:9270f0`
+*26.08. 18:52 UTC · Quelle: dream*
+
+The simulation approved a high-risk goal (3 risks, 2 revisions) with 'go' verdict, suggesting the system accepts significant uncertainty when targeting 3x yield improvements.
+
+### `dream:20260826185218:2:ca41dd`
+*26.08. 18:52 UTC · Quelle: dream*
+
+Nvidia Nemotron models exhibit bimodal behavior: either successful with 14-58s latency or 502 upstream overload errors, indicating provider-side capacity saturation.
+
+### `dream:20260826185218:1:37257c`
+*26.08. 18:52 UTC · Quelle: dream*
+
+Free-tier models across all providers consistently hit 429 rate limits within seconds, making them unreliable for sustained workloads without request orchestration.
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 18:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `aktuell_organfehler`
+*26.08. 18:46 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 18:11:49-18:46:35 UTC): retro -> kurz; will -> kurz; genome -> kurz; lehrer -> kurz. retro meldete einen Fehler | will meldete einen Fehler | genome meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerz
 
 ### `tool:fakten-ausbeute-pro-beat-verdreifachen-o`
 *26.08. 18:46 UTC · Quelle: hands*

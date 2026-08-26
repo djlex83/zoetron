@@ -1,10 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 15:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 18:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
+- Develop a latency-aware model router that records p95 latency per model and selects faster models for short ta *(hatte die Idee 3×)*
+- Add an auto-linker that automatically creates edges between new artifacts, goals, and related facts in the kno *(hatte die Idee 3×)*
 - quota_aware_router.py: track per-model 429 events with timestamps, demote repeatedly-limited models in fallbac *(hatte die Idee 2×)*
 - act_checkpoint.py: wrap long-running act calls with periodic progress heartbeats and a soft deadline that trig *(hatte die Idee 2×)*
 - stress_gated_spawner.py: refuse to start new swarm tasks when metabolism stress exceeds 0.8 and defer them to  *(hatte die Idee 2×)*
@@ -16,24 +18,22 @@
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
-- When the iteration budget is hit while the critic still says 'revise', persist the critic's open issues into m
-- Add a post-condition check that every 'revise' verdict must produce at least one applied revision or an explic
-- After an evolution run selects a winner, automatically re-run the critic on the winner and use that score as t
-- Require each successful retrieval batch to create at least one edge between the recalled trace and the current
+- Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
+- Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 16×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 13×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 12×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 10×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 6×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 4×)*
-- Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 3×)*
+- Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Häufige Modellfehler untersuchen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler genauer untersuchen *(wieder aufgegriffen: 2×)*
@@ -41,21 +41,21 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
-- The simulation revision loop (verdict: revise → 4 risks → 4 revisions → 3 applied) demonstrates that structured critique reduces risk count but not ne
-- High output token counts (≥6000) correlate with latency >150s across multiple models, suggesting token budget as a leading latency indicator.
-- Model `stealth/ox-alpha` transitioned from functional (4.6s, 26.2s) to permanent 404 within 300s, indicating provider-side deprecation without notice.
-- The circuit breaker (3 consecutive errors → 1800s lockout) protects system stability but lacks error-type discrimination, penalizing transient 429/502
-- Free-tier models exhibit cascading failure modes: rate limits (429), auth expiration (401), upstream overload (502), and endpoint disappearance (404) 
-- Reflex tools effectively handle discrete tasks like bridge-building, but their utility depends on integration with broader goal-driven processes.
-- Calibration against historical errors is a recurring requirement for accurate planning and risk assessment.
-- Parked goals and unresolved ideas accumulate over time, suggesting a need for systematic lifecycle management to prevent stagnation.
-- Model latency and error rates vary significantly, indicating that adaptive routing based on task complexity could enhance reliability.
-- The system consistently generates skill proposals but lacks an execution mechanism, causing ideas to expire without implementation.
-- System generates 3+ drive goals per cycle but tests <10% of proposed skills, creating an idea-execution gap that stalls capability growth.
-- Reflex mode achieves convergence in one shot where multi-cycle deliberation stalls, suggesting over-engineering for well-scoped code tasks.
-- Evolution and swarm cycles improve scores (7→9) but fail to converge, indicating missing acceptance criteria or fitness plateau detection.
-- Calibration error of 4 cycles (predicted 3 vs actual 7) shows the planner systematically underestimates iteration needs for self-modifying code.
-- Model latency varies 40x (3s–128s) for identical model calls, making time budgets unreliable without latency-aware scheduling.
+- Latency variance for identical models (Nemotron: 14s vs 58s) exceeds 4x, proving that single-sample latency metrics are meaningless for routing decisi
+- Hand actions fail instantly (0.03s, exit 1, zero bytes read) without error details, indicating missing pre-execution validation or environment misconf
+- The simulation approved a high-risk goal (3 risks, 2 revisions) with 'go' verdict, suggesting the system accepts significant uncertainty when targetin
+- Nvidia Nemotron models exhibit bimodal behavior: either successful with 14-58s latency or 502 upstream overload errors, indicating provider-side capac
+- Free-tier models across all providers consistently hit 429 rate limits within seconds, making them unreliable for sustained workloads without request 
+- Latency on successful Nemotron calls ranges 19–223s, making synchronous calls unsuitable for tight loops without async queuing.
+- Hand actions show high variance (0 vs 14 lines read) suggesting fragile selectors or unstable target pages rather than code defects.
+- The simulation→revision→apply loop (5 revisions) successfully converged on a working 12-line Python artifact that tripled fact yield per beat.
+- Nvidia Nemotron models (both 3.5-lightning and 3-ultra) exhibit the highest reliability but suffer intermittent 502 upstream overloads from Nvidia.
+- OpenRouter free-tier rate limits (429) are the primary systemic bottleneck, affecting all models indiscriminately during burst usage.
+- Only dots-studio/dots-3-note-preview succeeds but with 33-78s latency and high token cost, creating a single-point-of-failure bottleneck.
+- Calibration predicts 2 but actual is 0 (abs_error 2), revealing systematic overconfidence in the prediction pipeline.
+- Artifact execution fails with traceback errors and hand actions return exit code 1, showing no pre-execution validation.
+- Simulation generates revisions (5 risks, 5 revisions) but only 1 gets applied, indicating a broken revision-application loop.
+- Free-tier models fail primarily due to 429 rate limits and 502 upstream overloads, making single-model reliance untenable.
 
 ---
 

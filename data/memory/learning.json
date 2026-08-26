@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 15:35:49",
- "ereignisse_ausgewertet": 3559,
+ "stand": "2026-08-26 18:54:41",
+ "ereignisse_ausgewertet": 3994,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-prüfen-und-verbesse.py",
@@ -16,6 +16,12 @@
   },
   {
    "tool": "alte-traumideen-mit-strategien-verbinden.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -51,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -75,21 +75,21 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.576,
- "simulationen_angewandt": 73,
+ "haende_quote": 0.562,
+ "simulationen_angewandt": 82,
  "swarm_scores": {
-  "n": 66,
+  "n": 72,
   "best": 9.0,
-  "schnitt": 4.62
+  "schnitt": 4.47
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 65,
-   "schnitt": 4.57
+   "n": 70,
+   "schnitt": 4.47
   },
   "bau": {
-   "n": 1,
-   "schnitt": 8.0
+   "n": 2,
+   "schnitt": 4.5
   }
  }
 }
