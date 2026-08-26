@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3393 Fakten** · Stand 2026-08-26 10:27 UTC · aktualisiert bei jedem Herzschlag
+**3398 Fakten** · Stand 2026-08-26 10:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1463
+- **dream:** 1468
 - **swarm_artifact:** 875
 - **anti_pattern:** 298
 - **last_swarm_critique:** 273
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826103355:5:ec406c`
+*26.08. 10:33 UTC · Quelle: dream*
+
+Successful use of nvidia/nemotron-3-ultra-550b-a55b:free alongside failing models proves that latency and budget guards must be decoupled from raw capability scoring in task dispatch.
+
+### `dream:20260826103355:4:bacfa4`
+*26.08. 10:33 UTC · Quelle: dream*
+
+The explicit drive goal connecting old dreams demonstrates that cross-referencing prior experiences automagically generates novel solutions and should be made a recurring reflex.
+
+### `dream:20260826103355:3:f322c0`
+*26.08. 10:33 UTC · Quelle: dream*
+
+Reflexive tool investigation consistently converges ok=true proving that systematic alternative enumeration is a high-reliability strategy for resolving action failures.
+
+### `dream:20260826103355:2:dcabc4`
+*26.08. 10:33 UTC · Quelle: dream*
+
+With 55 skill proposals yielding only 10 implementations the system suffers from proposal-to-execution drift and needs a gated execution pipeline to close the adoption gap.
+
+### `dream:20260826103355:1:19909f`
+*26.08. 10:33 UTC · Quelle: dream*
+
+Model-specific 429 rate limits reveal that transport-layer quotas not model capability gate task success and require routing to track per-endpoint quotas.
 
 ### `dream:20260826102710:5:f601a6`
 *26.08. 10:27 UTC · Quelle: dream*

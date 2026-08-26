@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful use of nvidia/nemotron-3-ultra-550b-a55b:free alongside failing models proves that latency and budget guards must be decoupled from raw cap
+- The explicit drive goal connecting old dreams demonstrates that cross-referencing prior experiences automagically generates novel solutions and should
+- Reflexive tool investigation consistently converges ok=true proving that systematic alternative enumeration is a high-reliability strategy for resolvi
+- With 55 skill proposals yielding only 10 implementations the system suffers from proposal-to-execution drift and needs a gated execution pipeline to c
+- Model-specific 429 rate limits reveal that transport-layer quotas not model capability gate task success and require routing to track per-endpoint quo
 - Pruning removes nothing while failure events accumulate, meaning the retention policy preserves noise over signal.
 - Skill proposals pile up untested because no conserved execution slot exists, turning the backlog into write-only memory.
 - Self-diagnosis reports zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not classified as an or
@@ -51,11 +56,6 @@
 - Reflexes successfully execute maintenance tasks with minimal overhead (0.18s), proving their utility for routine operations.
 - Latency for fallback models like nvidia/nemotron-3-ultra-550b-a55b:free can fluctuate significantly (9.4s to 20.0s), impacting real-time response goal
 - Free-tier models on OpenRouter are highly susceptible to rate limiting (429 errors), requiring robust fallback mechanisms.
-- Stress was at maximum (1.0, conserve state) while the system still ran multi-model swarms, indicating budget-aware goal selection should gate expensiv
-- The evolution loop worked as designed: after scoring 2/10, three variants were generated and the winner scored 9/10, confirming that evolve-after-fail
-- Calibration was badly off (predicted 6, actual 2), meaning the planner's confidence estimates need grounding in past execution scores rather than opti
-- The 429 rate-limit error on the primary model cascaded into a fallback to a free-tier model, showing that model failures, not task difficulty, were th
-- The swarm failed (score 2/10) primarily because generated Python artifacts contained syntax errors ('from __future__ import annotat...' truncated), so
 
 ---
 
