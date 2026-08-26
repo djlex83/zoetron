@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 05:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 05:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail repeatedly at task onset (3 consecutive exit=1), indicating missing preconditions or environment setup before code execution.
+- Calibration consistently overestimates outcomes (predicted 5 vs actual 2), suggesting the predictor lacks feedback from execution failures and rate li
+- Evolution produces high-scoring variants (9,9,10) but the swarm converges to score 2, showing a disconnect between variant evaluation and integrated s
+- Generated code artifacts contain syntax errors (truncated `from __future__ import`) that prevent execution, revealing a code-completion reliability ga
+- Rate-limited models (stealth/ox-alpha, z-ai/glm-5.2) consistently fail with 429 errors while nvidia/nemotron-3-ultra succeeds, indicating provider-lev
 - Selbstdiagnose reports zero findings while operational events show model_fail and converged=false, proving health checks miss structured event signals
 - Skill proposals accumulate faster than they are validated (many proposals, few implemented), so the bottleneck is a trial/promotion pipeline rather th
 - 429 rate-limit errors cascade across models in failover order within the same second, meaning immediate sequential failover amplifies throttling inste
@@ -51,11 +56,6 @@
 - Destructive tool operations (subprocess) require human approval, creating a hard automation ceiling for any code-executing skill.
 - Swarm convergence fails at score 5/10 despite a clear winning variant (9,9,9) because critic/builder roles don't exploit the best candidate across cyc
 - Primary models (stealth/ox-alpha, z-ai/glm-5.2) suffer systematic 429 rate-limiting, forcing fallback to slower nvidia/nemotron and degrading swarm la
-- Selbstdiagnose found zero organ defects while real failures (429s, non-converged swarm, blocked execution) occurred in the same window, showing curren
-- Skill proposals accumulate faster than they are validated (5 proposals pending, 0 tested), creating a growing backlog that wastes dream output unless 
-- Swarm convergence failed (score 6/10, converged=false after 2 cycles) even though all 3 revisions were applied, indicating the revise loop terminates 
-- The 'Doku-Konsistenzwächter' goal stalled not at generation but at execution: the swarm produced a subprocess-based artifact that was correctly blocke
-- Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in pairs within seconds, so nvidia/nemotron-3-ultra is the de fa
 
 ---
 

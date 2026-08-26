@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3092 Fakten** · Stand 2026-08-26 05:36 UTC · aktualisiert bei jedem Herzschlag
+**3101 Fakten** · Stand 2026-08-26 05:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1288
-- **swarm_artifact:** 831
+- **dream:** 1293
+- **swarm_artifact:** 833
 - **anti_pattern:** 276
-- **last_swarm_critique:** 255
-- **last_swarm_goal:** 209
+- **last_swarm_critique:** 256
+- **last_swarm_goal:** 210
 - **strategy:** 159
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 17
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Draft deliverable for: Vorgeschlagene Fähigkeiten tatsächlic`
+*26.08. 05:47 UTC · Quelle: builder*
+
+[score 8] Der Prüfstand listet drei vorgeschlagene Fähigkeiten auf, definiert je Fähigkeit minimale Testfälle (expected vs. actual), führt jeden Test isoliert in einer eigenen Subprozess-Sandbox (
+
+### `last_swarm_critique`
+*26.08. 05:47 UTC · Quelle: critic*
+
+score=8; issues=Ziel erfüllt: Drei vorgeschlagene Fähigkeiten werden mit definierten Testfällen (expected vs. actual) tatsächlich in isolierten Subprozess-Sandboxes ausgeführt; Evidenz wird als JSON-Datei mit Input, Output und Vergleich protokolliert; Sandbox-
+
+### `swarm_artifact:Draft deliverable for: Vorgeschlagene Fähigkeiten tatsächlic`
+*26.08. 05:46 UTC · Quelle: builder*
+
+Der Prüfstand listet drei vorgeschlagene Fähigkeiten auf, definiert je Fähigkeit minimale Testfälle (expected vs. actual), führt jeden Test isoliert in einer eigenen Subprozess-Sandbox (isolierter Tes
+
+### `last_swarm_goal`
+*26.08. 05:42 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten tatsächlich ausprobieren
+
+### `dream:20260826054146:5:e5db1c`
+*26.08. 05:41 UTC · Quelle: dream*
+
+Hand actions fail repeatedly at task onset (3 consecutive exit=1), indicating missing preconditions or environment setup before code execution.
+
+### `dream:20260826054146:4:60f3df`
+*26.08. 05:41 UTC · Quelle: dream*
+
+Calibration consistently overestimates outcomes (predicted 5 vs actual 2), suggesting the predictor lacks feedback from execution failures and rate limits.
+
+### `dream:20260826054146:3:d5b831`
+*26.08. 05:41 UTC · Quelle: dream*
+
+Evolution produces high-scoring variants (9,9,10) but the swarm converges to score 2, showing a disconnect between variant evaluation and integrated system performance.
+
+### `dream:20260826054146:2:35c879`
+*26.08. 05:41 UTC · Quelle: dream*
+
+Generated code artifacts contain syntax errors (truncated `from __future__ import`) that prevent execution, revealing a code-completion reliability gap in the builder role.
+
+### `dream:20260826054146:1:b5c436`
+*26.08. 05:41 UTC · Quelle: dream*
+
+Rate-limited models (stealth/ox-alpha, z-ai/glm-5.2) consistently fail with 429 errors while nvidia/nemotron-3-ultra succeeds, indicating provider-level quota exhaustion as a systemic bottleneck.
 
 ### `swarm_artifact:Ergebnis-Log mit Metriken aufbauen`
 *26.08. 05:36 UTC · Quelle: builder*
