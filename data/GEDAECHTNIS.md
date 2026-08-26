@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3213 Fakten** · Stand 2026-08-26 07:27 UTC · aktualisiert bei jedem Herzschlag
+**3218 Fakten** · Stand 2026-08-26 07:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1353
+- **dream:** 1358
 - **swarm_artifact:** 849
 - **anti_pattern:** 286
 - **last_swarm_critique:** 264
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826073113:5:f19032`
+*26.08. 07:31 UTC · Quelle: dream*
+
+Latency varies by two orders of magnitude across calls (3.6s to 149.7s) and correlates with token volume, supporting tiered timeout budgets keyed to tokens_ein rather than fixed timeouts.
+
+### `dream:20260826073113:4:0e3220`
+*26.08. 07:31 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they get tested (drive goal explicitly notes few were tried), meaning the pipeline needs an execution budget for proposals, not more proposal generation.
+
+### `dream:20260826073113:3:2b27ad`
+*26.08. 07:31 UTC · Quelle: dream*
+
+Critic output being unparsable was a direct failure cause, so structured-output constraints or a repair-and-reparse step on critic responses would remove a recurring bottleneck.
+
+### `dream:20260826073113:2:4b0c88`
+*26.08. 07:31 UTC · Quelle: dream*
+
+The swarm failed to converge (score 5, converged=false) even though evolution produced a 9/10 winner variant, indicating the gap lies in integrating evolved variants back into the swarm loop, not in generating them.
+
+### `dream:20260826073113:1:ea75ea`
+*26.08. 07:31 UTC · Quelle: dream*
+
+Score predictions are systematically overconfident (predicted 7 vs actual 5), so calibration should use the running abs_error mean as a downward correction rather than a neutral adjustment.
 
 ### `dream:20260826072650:5:6d58bc`
 *26.08. 07:26 UTC · Quelle: dream*

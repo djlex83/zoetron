@@ -1,7 +1,13 @@
 {
- "stand": "2026-08-26 07:27:04",
- "ereignisse_ausgewertet": 2236,
+ "stand": "2026-08-26 07:31:29",
+ "ereignisse_ausgewertet": 2252,
  "werkzeuge": [
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
   {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
    "laeufe": 2,
@@ -21,12 +27,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -39,7 +39,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.579,
+ "haende_quote": 0.582,
  "simulationen_angewandt": 53,
  "swarm_scores": {
   "n": 46,

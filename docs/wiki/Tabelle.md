@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2276 Neuronen · 41299 bewertete Synapsen
+Stand: 2283 Neuronen · 41565 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,19 +12,19 @@ Stand: 2276 Neuronen · 41299 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 223 | 0.24 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 223 | 0.23 |
-| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 179 | 0.25 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 180 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 169 | 0.24 |
 | 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 136 | 0.26 |
 | 6 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 160 | 0.22 |
 | 7 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 137 | 0.26 |
-| 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 144 | 0.24 |
-| 9 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 134 | 0.25 |
-| 10 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 137 | 0.25 |
-| 11 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 126 | 0.26 |
+| 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 138 | 0.25 |
+| 9 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 144 | 0.24 |
+| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 134 | 0.25 |
+| 11 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 127 | 0.26 |
 | 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 134 | 0.25 |
-| 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 134 | 0.24 |
-| 14 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 120 | 0.27 |
-| 15 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 114 | 0.28 |
+| 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 135 | 0.24 |
+| 14 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 115 | 0.28 |
+| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 120 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 

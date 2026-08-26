@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 10×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 7×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 7×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency varies by two orders of magnitude across calls (3.6s to 149.7s) and correlates with token volume, supporting tiered timeout budgets keyed to t
+- Skill proposals accumulate faster than they get tested (drive goal explicitly notes few were tried), meaning the pipeline needs an execution budget fo
+- Critic output being unparsable was a direct failure cause, so structured-output constraints or a repair-and-reparse step on critic responses would rem
+- The swarm failed to converge (score 5, converged=false) even though evolution produced a 9/10 winner variant, indicating the gap lies in integrating e
+- Score predictions are systematically overconfident (predicted 7 vs actual 5), so calibration should use the running abs_error mean as a downward corre
 - Proposed skills accumulate faster than they are exercised (the drive goal itself exists because few were tested), so each swarm run should be forced t
 - The simulation gate correctly caught 3 risks pre-execution (verdict 'revise') and after revision issued 'go', confirming that running simulation twice
 - Under conserve mode (stress 0.621, max_iterations=1) the swarm still needed 2 cycles plus evolution, indicating that budget limits set before simulati
@@ -51,11 +56,6 @@
 - Calibration error was small (abs_error 1 on a 7→8 prediction), suggesting per-goal-type calibration baselines would tighten predictions further.
 - Destructive operations are rejected at execution time despite being fully planned, wasting invested work because operation-class risk is only checked 
 - Goals that combine simulation with actual execution (hat_code: true) converge fast and score high (8), confirming the simulate→revise→apply loop as th
-- Selbstdiagnose found no internal organ failures, meaning recent failures (non-convergence, unused skill proposals) are process-level gaps, not infrast
-- Zero facts or events were pruned during consolidation while drive goals keep accumulating, suggesting memory growth is outpacing pruning and will degr
-- Calibration error was small (predicted 6 vs actual 7), so self-assessment is reliable enough to gate convergence decisions on predicted scores.
-- The simulation step flagged 'revise' with 3 risks and all 3 revisions were applied, showing the simulate-then-apply loop works and should be mandatory
-- Evolution produced a variant scoring 9/10, yet the swarm ended at 7/10 without converging in only 2 cycles, indicating premature cycle termination dis
 
 ---
 
