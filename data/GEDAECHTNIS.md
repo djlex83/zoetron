@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3079 Fakten** · Stand 2026-08-26 05:15 UTC · aktualisiert bei jedem Herzschlag
+**3092 Fakten** · Stand 2026-08-26 05:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1283
-- **swarm_artifact:** 825
+- **dream:** 1288
+- **swarm_artifact:** 831
 - **anti_pattern:** 276
-- **last_swarm_critique:** 254
-- **last_swarm_goal:** 208
+- **last_swarm_critique:** 255
+- **last_swarm_goal:** 209
 - **strategy:** 159
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 17
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Ergebnis-Log mit Metriken aufbauen`
+*26.08. 05:36 UTC · Quelle: builder*
+
+[score 8] Das Skript hängt drei Beispiel-Runs append-only (nur anhängen, nie löschen) an ein JSONL-Log an und aggregiert danach Pass-Rate (Anteil erfolgreicher Läufe) und Durchschnitts-Score pro S
+
+### `swarm_artifact:Proposal-Gate: Vorschläge syntax-prüfen bevor sie Simulation`
+*26.08. 05:36 UTC · Quelle: builder*
+
+[score 8] Die Prüfschleuse (Validation Gate) legt das proposals/-Verzeichnis selbst an, erzeugt bei Leerheit ein Beispiel und prüft jede Datei per AST-Parsing (statische Analyse ohne Code-Ausführu
+
+### `swarm_artifact:Simulation-Runner mit Verzeichnis-Fallback bauen`
+*26.08. 05:36 UTC · Quelle: builder*
+
+[score 8] Der Runner legt das simulations/-Verzeichnis automatisch an (Fallback statt Absturz), startet jede Simulation isoliert als Subprozess (eigenes Programm-Fenster) und fängt Timeouts sowie 
+
+### `last_swarm_critique`
+*26.08. 05:36 UTC · Quelle: critic*
+
+score=8; issues=Runner: Demo-Datei wird bei jedem Lauf neu angelegt falls fehlend (kein Cleanup, aber funktional ok); Proposal-Gate: Keine Deduplizierung - bei wiederholtem Lauf werden valide Proposals erneut nach simulations/ kopiert (shutil.copy2 überschreib
+
+### `swarm_artifact:Ergebnis-Log mit Metriken aufbauen`
+*26.08. 05:35 UTC · Quelle: builder*
+
+Das Skript hängt drei Beispiel-Runs append-only (nur anhängen, nie löschen) an ein JSONL-Log an und aggregiert danach Pass-Rate (Anteil erfolgreicher Läufe) und Durchschnitts-Score pro Simulation. Feh
+
+### `swarm_artifact:Proposal-Gate: Vorschläge syntax-prüfen bevor sie Simulation`
+*26.08. 05:35 UTC · Quelle: builder*
+
+Die Prüfschleuse (Validation Gate) legt das proposals/-Verzeichnis selbst an, erzeugt bei Leerheit ein Beispiel und prüft jede Datei per AST-Parsing (statische Analyse ohne Code-Ausführung). Syntaktis
+
+### `swarm_artifact:Simulation-Runner mit Verzeichnis-Fallback bauen`
+*26.08. 05:34 UTC · Quelle: builder*
+
+Der Runner legt das simulations/-Verzeichnis automatisch an (Fallback statt Absturz), startet jede Simulation isoliert als Subprozess (eigenes Programm-Fenster) und fängt Timeouts sowie Startfehler ab
+
+### `last_swarm_goal`
+*26.08. 05:32 UTC · Quelle: system*
+
+Mehr Simulationen wirklich anwenden
+
+### `dream:20260826053155:5:debcac`
+*26.08. 05:31 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero findings while operational events show model_fail and converged=false, proving health checks miss structured event signals and need event ingestion.
+
+### `dream:20260826053155:4:eb1316`
+*26.08. 05:31 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are validated (many proposals, few implemented), so the bottleneck is a trial/promotion pipeline rather than idea generation.
+
+### `dream:20260826053155:3:79a15c`
+*26.08. 05:31 UTC · Quelle: dream*
+
+429 rate-limit errors cascade across models in failover order within the same second, meaning immediate sequential failover amplifies throttling instead of avoiding it.
+
+### `dream:20260826053155:2:935ee0`
+*26.08. 05:31 UTC · Quelle: dream*
+
+Repeated goals like 'Doku-Konsistenzwächter' get parked after 3 non-convergent attempts, indicating failure cause is goal scoping/verification criteria, not lack of retries.
+
+### `dream:20260826053155:1:e02ad8`
+*26.08. 05:31 UTC · Quelle: dream*
+
+Swarm runs repeatedly fail to converge (score 2 after 2 cycles) because termination is declared without the critic verifying closure of logged risks — risk count 4 with only 2 revisions shows risks are logged but not resolved.
 
 ### `hand_result:Mehr Vorschläge wirklich ausprobieren`
 *26.08. 05:15 UTC · Quelle: hands*
