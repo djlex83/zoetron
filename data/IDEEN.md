@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 01:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 01:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 2×)*
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Modellfehler analysieren und beheben
 - Fußball-Ziel nochmal besser machen
 - Mehr Simulationsergebnisse wirklich nutzen
 - Modell-Fehler deutlich reduzieren
-- Vorgeschlagene Fähigkeiten wirklich nutzen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate faster than they are tested (many generated, few executed), confirming that a guaranteed test rate per cycle is needed rath
+- Simulation flagged 'revise' with 5 risks and 3 revisions were applied, yet the artifact still failed to run, indicating simulation checks code quality
+- Conserve-mode stress (0.967) did not prevent long blocking calls (73s and 164s), meaning the chunking rule for long generations under stress is not be
+- Calibration error (predicted 4 vs. actual 2) shows the system systematically overestimates its success on new goals, so predictions need a downward co
+- Generated code failed because 'from __future__ import' was placed after other statements (line 23), a recurring Python syntax pattern that must be val
 - Der metabolism_check setzte den Swarm in 'conserve' mit max_iterations=1, und der Swarm endete konvergiert=false mit Score 1 – Ressourcenknappheit plu
 - Der evolution_run war die wirksamste Reparatur-Schleife: aus Score 1/10 entstanden 3 Varianten mit Scores [7,9,8] – variantengenerierung plus Kritik i
 - Die Simulation lieferte erst 'revise' (5 Risiken), dann nach Revision 'go' – trotzdem schlug die Ausführung fehl, d.h. die statische Simulation erkenn
@@ -51,11 +56,6 @@
 - The evolution loop is the strongest lever on quality: variant selection raised scores from 1/10 to 9/10 within one run, so always generate at least 3 
 - Generated code artifacts repeatedly exceed the 20000-character sandbox limit; the builder must enforce a hard budget (~18k chars) or split code into m
 - OpenRouter free-tier models hit 429 Too Many Requests under burst load, so calls to stealth/ox-alpha and z-ai/glm-5.2:free need backoff/retry or a fal
-- Simulations and dreams are produced in volume but rarely linked to live tasks (e.g., the old dream matching the current organ error was never compared
-- Latency variance is extreme (3.2s to 89.3s) and correlates with output size, meaning long generations should be budgeted explicitly under conserve-mod
-- Items parked after 3 failed attempts (e.g., the Destillat-Datensatz goal) stall indefinitely because there is no escalation path to the creator for de
-- The proposal backlog grows faster than it is consumed (30+ untested proposals), so idea generation without a fixed testing rate creates dead inventory
-- Recurring model failures cluster around prediction tasks, suggesting the root cause is miscalibrated confidence rather than transient API errors.
 
 ---
 

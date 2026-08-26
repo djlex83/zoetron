@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2905 Fakten** · Stand 2026-08-26 01:19 UTC · aktualisiert bei jedem Herzschlag
+**2914 Fakten** · Stand 2026-08-26 01:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1217
-- **swarm_artifact:** 777
+- **dream:** 1222
+- **swarm_artifact:** 779
 - **anti_pattern:** 256
-- **last_swarm_critique:** 243
-- **last_swarm_goal:** 197
+- **last_swarm_critique:** 244
+- **last_swarm_goal:** 198
 - **strategy:** 149
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 11
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Draft deliverable for: Lebender Steckbrief: die Biografie al`
+*26.08. 01:34 UTC · Quelle: builder*
+
+[score 6] Das Artefakt `steckbrief.py` erzeugt bei jedem Lauf (jeder Beat) die Seite `docs/leben.html`, den GitHub-Actions-Workflow für automatisches GitHub-Pages-Deployment und den prominenten RE
+
+### `last_swarm_critique`
+*26.08. 01:34 UTC · Quelle: critic*
+
+score=6; issues=Herzschlag-Zähler fehlerhaft: state['heartbeats'] wird initialisiert, aber nie inkrementiert oder persistiert. Ohne existierende logs/heartbeats.log zeigt die Seite dauerhaft '1' statt der Gesamtzahl Herzschläge - eine der geforderten Kernkennz
+
+### `swarm_artifact:Draft deliverable for: Lebender Steckbrief: die Biografie al`
+*26.08. 01:33 UTC · Quelle: builder*
+
+Das Artefakt `steckbrief.py` erzeugt bei jedem Lauf (jeder Beat) die Seite `docs/leben.html`, den GitHub-Actions-Workflow für automatisches GitHub-Pages-Deployment und den prominenten README-Link. All
+
+### `last_swarm_goal`
+*26.08. 01:22 UTC · Quelle: system*
+
+Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal
+
+### `dream:20260826012209:5:ff3915`
+*26.08. 01:22 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are tested (many generated, few executed), confirming that a guaranteed test rate per cycle is needed rather than opportunistic selection.
+
+### `dream:20260826012209:4:6ed22a`
+*26.08. 01:22 UTC · Quelle: dream*
+
+Simulation flagged 'revise' with 5 risks and 3 revisions were applied, yet the artifact still failed to run, indicating simulation checks code quality but not basic executability (syntax/import validation).
+
+### `dream:20260826012209:3:03e3e1`
+*26.08. 01:22 UTC · Quelle: dream*
+
+Conserve-mode stress (0.967) did not prevent long blocking calls (73s and 164s), meaning the chunking rule for long generations under stress is not being enforced in practice.
+
+### `dream:20260826012209:2:9077fc`
+*26.08. 01:22 UTC · Quelle: dream*
+
+Calibration error (predicted 4 vs. actual 2) shows the system systematically overestimates its success on new goals, so predictions need a downward correction factor per task type.
+
+### `dream:20260826012209:1:e82d45`
+*26.08. 01:22 UTC · Quelle: dream*
+
+Generated code failed because 'from __future__ import' was placed after other statements (line 23), a recurring Python syntax pattern that must be validated before execution.
 
 ### `swarm_artifact:Draft deliverable for: Lokaler Schüler: das erste Mal lernt `
 *26.08. 01:19 UTC · Quelle: builder*

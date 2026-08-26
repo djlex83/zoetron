@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2082 Neuronen · 34274 bewertete Synapsen
+Stand: 2087 Neuronen · 34489 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -19,12 +19,12 @@ Stand: 2082 Neuronen · 34274 bewertete Synapsen
 | 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 137 | 0.24 |
 | 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 131 | 0.25 |
 | 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 117 | 0.27 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 118 | 0.25 |
-| 11 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 117 | 0.25 |
-| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 122 | 0.24 |
-| 13 | 💭 | Missing interface contract validation risks AttributeError failu… | 117 | 0.25 |
-| 14 | 💭 | Model invocation latency spikes and occasional 502 overload erro… | 123 | 0.24 |
-| 15 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 121 | 0.24 |
+| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 118 | 0.25 |
+| 11 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 123 | 0.24 |
+| 12 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 118 | 0.25 |
+| 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 122 | 0.24 |
+| 14 | 💭 | Missing interface contract validation risks AttributeError failu… | 117 | 0.25 |
+| 15 | 💭 | Model invocation latency spikes and occasional 502 overload erro… | 123 | 0.24 |
 
 ## Die 15 stärksten Synapsen
 
