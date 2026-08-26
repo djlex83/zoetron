@@ -183,7 +183,7 @@
   "why": "Das Ideen-Board zählt Varianten derselben Idee getrennt: 'Modellfehler reduzieren / verringern / verstehen und verringern / beheben und vermeiden / dauerhaft reduzieren' sind fünf Einträge für ein Ziel, der 'skill activation tracker' steht dreimal leicht umformuliert da. Dadurch ist die Dringlichkeitszählung ('hatte die Idee 5x') falsch: echte Häufungen zersplittern über Formulierungen und sehen harmlos aus. Der semantische Vergleich existiert bereits im Graph-Organ (TF-IDF, Kosinus >= 0.18) und greift nur dort. Baue ein ausführbares Skript, das dieselbe Ähnlichkeitsfunktion auf Ideen und DRIVE-Ziele anwendet: Varianten zu Clustern zusammenfassen, die häufigste oder klarste Formulierung als Cluster-Titel wählen, und die Zählung als Summe des Clusters ausgeben statt je Variante. Fertig wenn: 1) das neu generierte data/IDEEN.md die fünf Modellfehler-Varianten als EINEN Eintrag mit summierter Zählung zeigt, 2) ein Test mit bekannten Varianten-Paaren beweist, dass sie im selben Cluster landen und ein unverwandtes Ziel NICHT mitgezogen wird. Nur lauffähiger Code zählt, kein Design-Dokument.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 0
+  "_versuche": 1
  },
  {
   "title": "Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten",

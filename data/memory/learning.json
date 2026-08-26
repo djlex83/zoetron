@@ -1,9 +1,15 @@
 {
- "stand": "2026-08-26 02:56:58",
- "ereignisse_ausgewertet": 1459,
+ "stand": "2026-08-26 03:01:45",
+ "ereignisse_ausgewertet": 1471,
  "werkzeuge": [
   {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "lebender-steckbrief-die-biografie-als-al.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -19,15 +25,9 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "lebender-steckbrief-die-biografie-als-al.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
- "haende_quote": 0.556,
+ "haende_quote": 0.56,
  "simulationen_angewandt": 36,
  "swarm_scores": {
   "n": 30,
