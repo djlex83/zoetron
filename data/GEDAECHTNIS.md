@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3383 Fakten** · Stand 2026-08-26 10:12 UTC · aktualisiert bei jedem Herzschlag
+**3388 Fakten** · Stand 2026-08-26 10:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1453
+- **dream:** 1458
 - **swarm_artifact:** 875
 - **anti_pattern:** 298
 - **last_swarm_critique:** 273
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826102232:5:597219`
+*26.08. 10:22 UTC · Quelle: dream*
+
+Actions with null scores are being marked as converged: true, which may mask underlying execution failures.
+
+### `dream:20260826102232:4:d48785`
+*26.08. 10:22 UTC · Quelle: dream*
+
+The system's self-diagnosis and pruning mechanisms are stable but currently inactive, indicating a clean state or a need for more aggressive memory management.
+
+### `dream:20260826102232:3:d29de6`
+*26.08. 10:22 UTC · Quelle: dream*
+
+Reflexes successfully execute maintenance tasks with minimal overhead (0.18s), proving their utility for routine operations.
+
+### `dream:20260826102232:2:233b1d`
+*26.08. 10:22 UTC · Quelle: dream*
+
+Latency for fallback models like nvidia/nemotron-3-ultra-550b-a55b:free can fluctuate significantly (9.4s to 20.0s), impacting real-time response goals.
+
+### `dream:20260826102232:1:88cebe`
+*26.08. 10:22 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly susceptible to rate limiting (429 errors), requiring robust fallback mechanisms.
 
 ### `swarm_artifact:Draft deliverable for: Alte Trauminhalte mit neuen Plänen ve`
 *26.08. 10:11 UTC · Quelle: builder*

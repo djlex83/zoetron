@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 11×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 12×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Actions with null scores are being marked as converged: true, which may mask underlying execution failures.
+- The system's self-diagnosis and pruning mechanisms are stable but currently inactive, indicating a clean state or a need for more aggressive memory ma
+- Reflexes successfully execute maintenance tasks with minimal overhead (0.18s), proving their utility for routine operations.
+- Latency for fallback models like nvidia/nemotron-3-ultra-550b-a55b:free can fluctuate significantly (9.4s to 20.0s), impacting real-time response goal
+- Free-tier models on OpenRouter are highly susceptible to rate limiting (429 errors), requiring robust fallback mechanisms.
 - Stress was at maximum (1.0, conserve state) while the system still ran multi-model swarms, indicating budget-aware goal selection should gate expensiv
 - The evolution loop worked as designed: after scoring 2/10, three variants were generated and the winner scored 9/10, confirming that evolve-after-fail
 - Calibration was badly off (predicted 6, actual 2), meaning the planner's confidence estimates need grounding in past execution scores rather than opti
@@ -51,11 +56,6 @@
 - Swarm convergence in 1 cycle with score 8 masks latent risks: the subsequent simulation of the same proposals flagged 2 risks and required 2 revisions
 - Latency variance of 3–63 seconds on the same model (stealth/ox-alpha) makes time-sensitive tasks unpredictable without p95-aware routing.
 - Model rate limits (429 errors) cascade into workflow stalls because no automatic fallback routing exists between model failures and swarm execution.
-- Fixed iteration budgets starve defect-rich tasks while simple tasks waste cycles.
-- Skill proposals accumulate (5 in this session) but drive goals reveal few are implemented, creating a proposal–execution gap.
-- Calibration error of 1 persists across runs, showing risk priors do not adapt from observed outcomes.
-- Swarms converge in one cycle without evolution, indicating reflexes execute but do not improve autonomously.
-- Model latency varies by 30x (5.7–180s) causing unpredictable resource consumption and budget overruns.
 
 ---
 
