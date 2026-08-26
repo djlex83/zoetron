@@ -22,7 +22,7 @@
   "why": "4x selbst gewünscht, und deine häufigsten eigenen Ziele sind Modellfehler. Baue model_health.py: für jedes OpenRouter-Modell Fehlerrate und Antwortzeit in data/model_health.json protokollieren. Bei 3 Fehlern in Folge öffnet der Sicherungsschalter (Circuit Breaker = Modell wird vorübergehend gesperrt), das Modell wird 30 Minuten übersprungen, ein Ersatzmodell übernimmt automatisch. Fertig wenn: ein simulierter 502-Fehler im Test nachweisbar zum automatischen Modellwechsel führt und das Register nach jedem Beat aktualisiert ist.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 1,
+  "_versuche": 2,
   "_geparkt": false,
   "_zaehler_ab": 1787743119.1258025
  },

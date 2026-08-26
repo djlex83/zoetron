@@ -18,3 +18,18 @@
 {"ts": 1787744484.6716177, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.26, "gelesen": 0}}
 {"ts": 1787744484.880831, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.21, "gelesen": 0}}
 {"ts": 1787744504.2533872, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787745709.0842118, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
+{"ts": 1787745709.2992876, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.2, "gelesen": 1}}
+{"ts": 1787745709.4952254, "kind": "hand_action", "payload": {"ok": false, "exit": 2, "error": null, "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787745709.737821, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.23, "gelesen": 0}}
+{"ts": 1787745727.21884, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.22, "gelesen": 1}}
+{"ts": 1787745748.4282517, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.26, "gelesen": 1}}
+{"ts": 1787745748.7276914, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.29, "gelesen": 1}}
+{"ts": 1787745748.9694061, "kind": "hand_action", "payload": {"ok": false, "exit": 2, "error": null, "duration_s": 0.24, "gelesen": 0}}
+{"ts": 1787745749.282484, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.31, "gelesen": 2}}
+{"ts": 1787745786.3590255, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.18, "gelesen": 1}}
+{"ts": 1787745786.5451553, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.18, "gelesen": 0}}
+{"ts": 1787745828.19974, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.19, "gelesen": 1}}
+{"ts": 1787745828.4360185, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22, "gelesen": 1}}
+{"ts": 1787745828.6371639, "kind": "hand_action", "payload": {"ok": false, "exit": 2, "error": null, "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787745828.8784823, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 1}}

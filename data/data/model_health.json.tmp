@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "updated_at": 1787745872.5576253,
+  "models": {
+    "openai/gpt-4o-mini": {
+      "error_count": 0,
+      "consecutive_errors": 0,
+      "last_error_time": null,
+      "last_error_type": null,
+      "total_calls": 0,
+      "total_latency_ms": 0.0,
+      "circuit_breaker_state": "closed",
+      "lock_expiry": null
+    },
+    "anthropic/claude-3.5-haiku": {
+      "error_count": 0,
+      "consecutive_errors": 0,
+      "last_error_time": null,
+      "last_error_type": null,
+      "total_calls": 0,
+      "total_latency_ms": 0.0,
+      "circuit_breaker_state": "closed",
+      "lock_expiry": null
+    },
+    "meta-llama/llama-3.1-8b-instruct": {
+      "error_count": 0,
+      "consecutive_errors": 0,
+      "last_error_time": null,
+      "last_error_type": null,
+      "total_calls": 0,
+      "total_latency_ms": 0.0,
+      "circuit_breaker_state": "closed",
+      "lock_expiry": null
+    }
+  }
+}

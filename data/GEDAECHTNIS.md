@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3504 Fakten** · Stand 2026-08-26 11:52 UTC · aktualisiert bei jedem Herzschlag
+**3530 Fakten** · Stand 2026-08-26 12:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1488
-- **swarm_artifact:** 881
-- **last_swarm_critique:** 339
-- **anti_pattern:** 304
-- **last_swarm_goal:** 230
-- **strategy:** 173
+- **dream:** 1493
+- **swarm_artifact:** 887
+- **last_swarm_critique:** 349
+- **anti_pattern:** 306
+- **last_swarm_goal:** 231
+- **strategy:** 174
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 25
+- **hand_result:** 26
 - **tool:** 15
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,136 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)`
+*26.08. 12:04 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "Traceback (most recent call last):\n  File \"/workspace/zoetron/data/hands_workspace/action_1787745872375.py\", line 183, in <module>\n    main()\n  File \"/workspace/zoetron/data/hands_workspace/action_178"}
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:03 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
+*26.08. 12:03 UTC · Quelle: evolution*
+
+Event-Driven / Observer-Pattern - Variante 1 behebt beide Kritikpunkte strukturell statt nur symptomatisch: Die Kernlogik wird durch das Observer-Pattern garantiert seiteneffektfrei (kein verstecktes save_registry(
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:2`
+*26.08. 12:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Datenbank-agnostisch mit SQLite/WAL statt JSON-Datei - Statt handgebautem JSON-Handling (Quelle der Abstürze: parallele Writes, korrupte Datei, Encoding-Fehler) eine SQLite-Datei mit WAL-Modus verwenden: Tabelle health_events
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:0`
+*26.08. 12:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): In-Memory-First mit expliziter Persistenzgrenze - Komplett neu aufbauen als reinen In-Memory-Zustand: Die Klasse ModelHealthRegistry hält alle Daten (failure_counts, state, timestamps) ausschließlich in Attributen. save_regis
+
+### `swarm_artifact:Build model health tracker with beat updates`
+*26.08. 12:02 UTC · Quelle: builder*
+
+[score 2] Here is the complete `model_health.py` with the `ModelHealthTracker` class, atomic persistence, and a self-test demonstrating the circuit-breaker failover on a simulated 502 error.  ```p
+
+### `swarm_artifact:Implement deterministic circuit breaker state machine`
+*26.08. 12:02 UTC · Quelle: builder*
+
+[score 2] Der Kern ist eine reine, I/O-freie `CircuitBreaker`-Klasse mit deterministischer Zeitinjektion (alle Übergänge als Funktionen von Zustand + Zeitstempel). `main()` liest echte Modelle aus
+
+### `swarm_artifact:Create model health data persistence layer`
+*26.08. 12:02 UTC · Quelle: builder*
+
+[score 2] Der Circuit Breaker (Sicherungsschalter) wird als deterministische Zustandsmaschine gebaut: nach 3 Fehlern in Folge öffnet er für 30 Minuten und ein Ersatzmodell übernimmt automatisch. D
+
+### `last_swarm_critique`
+*26.08. 12:02 UTC · Quelle: critic*
+
+score=2; issues=SANDBOX-URTEIL ist LAEUFT NICHT: Tracebacks in zwei Ausfuehrungen (Zeile 183 bzw. 201). Das ist ein harter Mangel und begrenzt die Note auf 0-2, unabhaengig vom Design.; Widerspruch im ersten Artefakt: Der Selftest behauptet 'kein Schreibzugrif
+
+### `swarm_artifact:Build model health tracker with beat updates`
+*26.08. 12:01 UTC · Quelle: builder*
+
+Here is the complete `model_health.py` with the `ModelHealthTracker` class, atomic persistence, and a self-test demonstrating the circuit-breaker failover on a simulated 502 error.  ```python #!/usr/b
+
+### `swarm_artifact:Implement deterministic circuit breaker state machine`
+*26.08. 11:59 UTC · Quelle: builder*
+
+Der Kern ist eine reine, I/O-freie `CircuitBreaker`-Klasse mit deterministischer Zeitinjektion (alle Übergänge als Funktionen von Zustand + Zeitstempel). `main()` liest echte Modelle aus dem Live-Date
+
+### `swarm_artifact:Create model health data persistence layer`
+*26.08. 11:59 UTC · Quelle: builder*
+
+Der Circuit Breaker (Sicherungsschalter) wird als deterministische Zustandsmaschine gebaut: nach 3 Fehlern in Folge öffnet er für 30 Minuten und ein Ersatzmodell übernimmt automatisch. Das Register li
+
+### `last_swarm_goal`
+*26.08. 11:57 UTC · Quelle: system*
+
+Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
+
+### `dream:20260826115649:5:36da11`
+*26.08. 11:56 UTC · Quelle: dream*
+
+Successful calls on this run had high latency (149–220 s) and large output token counts, suggesting latency budgeting and streaming/timeout handling are needed for free-tier models.
+
+### `dream:20260826115649:4:3f9394`
+*26.08. 11:56 UTC · Quelle: dream*
+
+A generated tool was rejected because it accepted no input (no parameters, argv, stdin, or file), so every builder-produced artifact must be validated for an input interface before deployment.
+
+### `dream:20260826115649:3:ba9061`
+*26.08. 11:56 UTC · Quelle: dream*
+
+The swarm failed to converge (score 4, delta 0.0) despite evolution producing a winning variant scored 9, indicating a gap between variant scoring during evolution and final swarm evaluation that must be reconciled.
+
+### `dream:20260826115649:2:fa8d87`
+*26.08. 11:56 UTC · Quelle: dream*
+
+The calibration error was 4 points (predicted 8, actual 4), meaning self-predicted scores are systematically optimistic and should be discounted or grounded in critic-verified criteria.
+
+### `dream:20260826115649:1:cd9b04`
+*26.08. 11:56 UTC · Quelle: dream*
+
+429 rate-limit failures cluster across multiple free-tier models simultaneously, so the fallback chain should treat OpenRouter-wide 429s as a global backoff signal rather than retrying the next model immediately.
 
 ### `hand_result:Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)`
 *26.08. 11:51 UTC · Quelle: hands*
