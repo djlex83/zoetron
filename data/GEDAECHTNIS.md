@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3354 Fakten** · Stand 2026-08-26 09:44 UTC · aktualisiert bei jedem Herzschlag
+**3359 Fakten** · Stand 2026-08-26 09:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1428
+- **dream:** 1433
 - **swarm_artifact:** 873
 - **anti_pattern:** 298
 - **last_swarm_critique:** 272
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826094833:5:8432f8`
+*26.08. 09:48 UTC · Quelle: dream*
+
+Calibration error of 1 point (predicted 6 vs actual 7) suggests the scoring heuristic is reasonably aligned but slightly pessimistic.
+
+### `dream:20260826094833:4:0d8dc6`
+*26.08. 09:48 UTC · Quelle: dream*
+
+The evolution/simulation loop produces measurable improvement (7→8 scores) but requires 5+ revisions per cycle, indicating high iteration cost.
+
+### `dream:20260826094833:3:cb731c`
+*26.08. 09:48 UTC · Quelle: dream*
+
+Nvidia Nemotron models (both 3.5-lightning and 3-ultra) serve as reliable fallbacks with higher latency variance (18-124s) but no observed 429 errors.
+
+### `dream:20260826094833:2:abec69`
+*26.08. 09:48 UTC · Quelle: dream*
+
+stealth/ox-alpha delivers consistent low-latency (~11-30s) high-quality outputs when not rate-limited, but shares the same quota pool as other OpenRouter models.
+
+### `dream:20260826094833:1:9eda8b`
+*26.08. 09:48 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making them unreliable for production workflows.
 
 ### `dream:20260826094409:5:502627`
 *26.08. 09:44 UTC · Quelle: dream*

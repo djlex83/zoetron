@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 point (predicted 6 vs actual 7) suggests the scoring heuristic is reasonably aligned but slightly pessimistic.
+- The evolution/simulation loop produces measurable improvement (7→8 scores) but requires 5+ revisions per cycle, indicating high iteration cost.
+- Nvidia Nemotron models (both 3.5-lightning and 3-ultra) serve as reliable fallbacks with higher latency variance (18-124s) but no observed 429 errors.
+- stealth/ox-alpha delivers consistent low-latency (~11-30s) high-quality outputs when not rate-limited, but shares the same quota pool as other OpenRou
+- Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making them unreliable for production workflows.
 - Drive goals generated from failure signals ('Modell-Fehler deutlich reduzieren') directly led to actionable swarm work on rejected tools, confirming t
 - Metabolic stress at 0.874 correctly triggered 'conserve' mode limiting to 3 tasks/1 iteration, which kept the swarm productive despite degraded model 
 - Simulation verdicts of 'revise' with high risk counts (4 risks) still yield value when applied selectively — only 2 of 4 revisions were applied, sugge
@@ -51,11 +56,6 @@
 - Risk prediction is systematically miscalibrated downward (predicted 3 vs actual 5, abs_error 2), so raw model risk counts should be anchored to a roll
 - Evolution produced variants scoring 8-9/10 but the swarm's final score remained 5/10, indicating the winning variant was likely not integrated back in
 - Execution success is not quality: the artifact compiled and ran (exit 0, 154 lines) yet scored only 5/10 because the critic's re-validation defect was
-- Metabolism dropped to conserve mode (stress 1.0, budget capped at 3 tasks/1 iteration) exactly when deep debugging was needed, so resource throttling 
-- Skill proposals accumulate faster than they are tested (5 proposals, 0 trials), so the proposal channel has become a write-only queue that creates an 
-- A score of 1/10 with converged=false after 2 cycles was still followed by goal re-emission ('Abgelehnte Werkzeuge prüfen und verbessern') rather than 
-- Failures are invisible at the moment they happen: hand_action exited 1 in 0.03s with error=null and the selbstdiagnose found 'no organ defects', meani
-- The evolution loop is decorative: the winning variant (score 9) was selected but its code never reached the next swarm cycle, so the system repeats th
 
 ---
 

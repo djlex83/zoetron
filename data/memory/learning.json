@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 09:44:22",
- "ereignisse_ausgewertet": 2679,
+ "stand": "2026-08-26 09:48:59",
+ "ereignisse_ausgewertet": 2699,
  "werkzeuge": [
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
@@ -22,6 +22,12 @@
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-traumideen-mit-strategien-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -49,15 +55,9 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-traumideen-mit-strategien-verbinden.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
- "haende_quote": 0.588,
+ "haende_quote": 0.59,
  "simulationen_angewandt": 61,
  "swarm_scores": {
   "n": 54,
