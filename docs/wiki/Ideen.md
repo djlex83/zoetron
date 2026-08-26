@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
-- Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals from dreams remain unvalidated artifacts until a hash-diff verification confirms the evolved code actually replaced the deployed artif
+- The system autonomously converts failure signals (model errors, gaps, combination needs) into drive goals, but metabolism conservation (max_iterations
+- Swarm convergence in 1 cycle with score 8 masks latent risks: the subsequent simulation of the same proposals flagged 2 risks and required 2 revisions
+- Latency variance of 3–63 seconds on the same model (stealth/ox-alpha) makes time-sensitive tasks unpredictable without p95-aware routing.
+- Model rate limits (429 errors) cascade into workflow stalls because no automatic fallback routing exists between model failures and swarm execution.
 - Fixed iteration budgets starve defect-rich tasks while simple tasks waste cycles.
 - Skill proposals accumulate (5 in this session) but drive goals reveal few are implemented, creating a proposal–execution gap.
 - Calibration error of 1 persists across runs, showing risk priors do not adapt from observed outcomes.
@@ -51,11 +56,6 @@
 - 4 of 5 critic revisions were applied but nothing verified them against the working tree, so 'revise' verdicts can silently lose changes between simula
 - The swarm finished unconverged (score 7 after 2 cycles) yet act_done fired anyway, meaning completion is currently gated on score alone rather than on
 - Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits under burst load, so any multi-call cycle needs per-model backof
-- Calibration error of 1 point (predicted 6 vs actual 7) suggests the scoring heuristic is reasonably aligned but slightly pessimistic.
-- The evolution/simulation loop produces measurable improvement (7→8 scores) but requires 5+ revisions per cycle, indicating high iteration cost.
-- Nvidia Nemotron models (both 3.5-lightning and 3-ultra) serve as reliable fallbacks with higher latency variance (18-124s) but no observed 429 errors.
-- stealth/ox-alpha delivers consistent low-latency (~11-30s) high-quality outputs when not rate-limited, but shares the same quota pool as other OpenRou
-- Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making them unreliable for production workflows.
 
 ---
 

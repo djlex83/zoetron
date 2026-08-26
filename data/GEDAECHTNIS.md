@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3369 Fakten** · Stand 2026-08-26 09:59 UTC · aktualisiert bei jedem Herzschlag
+**3374 Fakten** · Stand 2026-08-26 10:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1443
+- **dream:** 1448
 - **swarm_artifact:** 873
 - **anti_pattern:** 298
 - **last_swarm_critique:** 272
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826100347:5:d1186d`
+*26.08. 10:03 UTC · Quelle: dream*
+
+Skill proposals from dreams remain unvalidated artifacts until a hash-diff verification confirms the evolved code actually replaced the deployed artifact.
+
+### `dream:20260826100347:4:fd81e3`
+*26.08. 10:03 UTC · Quelle: dream*
+
+The system autonomously converts failure signals (model errors, gaps, combination needs) into drive goals, but metabolism conservation (max_iterations=1) then throttles their exploration.
+
+### `dream:20260826100347:3:9b3c34`
+*26.08. 10:03 UTC · Quelle: dream*
+
+Swarm convergence in 1 cycle with score 8 masks latent risks: the subsequent simulation of the same proposals flagged 2 risks and required 2 revisions.
+
+### `dream:20260826100347:2:a59422`
+*26.08. 10:03 UTC · Quelle: dream*
+
+Latency variance of 3–63 seconds on the same model (stealth/ox-alpha) makes time-sensitive tasks unpredictable without p95-aware routing.
+
+### `dream:20260826100347:1:fa73d6`
+*26.08. 10:03 UTC · Quelle: dream*
+
+Model rate limits (429 errors) cascade into workflow stalls because no automatic fallback routing exists between model failures and swarm execution.
 
 ### `dream:20260826095853:5:161dc8`
 *26.08. 09:58 UTC · Quelle: dream*

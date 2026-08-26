@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2413 Neuronen · 45286 bewertete Synapsen
+Stand: 2418 Neuronen · 45540 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,19 +12,19 @@ Stand: 2413 Neuronen · 45286 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 233 | 0.24 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 233 | 0.24 |
-| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 185 | 0.25 |
-| 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 172 | 0.24 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 186 | 0.25 |
+| 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 174 | 0.24 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 170 | 0.22 |
-| 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 138 | 0.26 |
+| 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 140 | 0.26 |
 | 7 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 139 | 0.26 |
-| 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 149 | 0.23 |
-| 9 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 138 | 0.25 |
-| 10 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 140 | 0.25 |
-| 11 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 131 | 0.26 |
-| 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 141 | 0.24 |
-| 13 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 140 | 0.24 |
+| 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 151 | 0.23 |
+| 9 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 139 | 0.25 |
+| 10 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 141 | 0.24 |
+| 11 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 140 | 0.25 |
+| 12 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 131 | 0.26 |
+| 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 141 | 0.24 |
 | 14 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 122 | 0.28 |
-| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 124 | 0.27 |
+| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 125 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 
