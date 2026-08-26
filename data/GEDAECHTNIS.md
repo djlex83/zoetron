@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3388 Fakten** · Stand 2026-08-26 10:22 UTC · aktualisiert bei jedem Herzschlag
+**3393 Fakten** · Stand 2026-08-26 10:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1458
+- **dream:** 1463
 - **swarm_artifact:** 875
 - **anti_pattern:** 298
 - **last_swarm_critique:** 273
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826102710:5:f601a6`
+*26.08. 10:27 UTC · Quelle: dream*
+
+Pruning removes nothing while failure events accumulate, meaning the retention policy preserves noise over signal.
+
+### `dream:20260826102710:4:6edd5c`
+*26.08. 10:27 UTC · Quelle: dream*
+
+Skill proposals pile up untested because no conserved execution slot exists, turning the backlog into write-only memory.
+
+### `dream:20260826102710:3:744a3a`
+*26.08. 10:27 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not classified as an organ fault.
+
+### `dream:20260826102710:2:44bc87`
+*26.08. 10:27 UTC · Quelle: dream*
+
+Reflex-driven goals consistently converge while deliberate goals accumulate, suggesting the system trusts fast heuristics over slow planning.
+
+### `dream:20260826102710:1:b8b0fd`
+*26.08. 10:27 UTC · Quelle: dream*
+
+Repeated HTTP 429 errors across multiple free-tier models indicate rate-limiting is a systemic bottleneck, not an isolated incident.
 
 ### `dream:20260826102232:5:597219`
 *26.08. 10:22 UTC · Quelle: dream*

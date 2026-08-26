@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 12×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes nothing while failure events accumulate, meaning the retention policy preserves noise over signal.
+- Skill proposals pile up untested because no conserved execution slot exists, turning the backlog into write-only memory.
+- Self-diagnosis reports zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not classified as an or
+- Reflex-driven goals consistently converge while deliberate goals accumulate, suggesting the system trusts fast heuristics over slow planning.
+- Repeated HTTP 429 errors across multiple free-tier models indicate rate-limiting is a systemic bottleneck, not an isolated incident.
 - Actions with null scores are being marked as converged: true, which may mask underlying execution failures.
 - The system's self-diagnosis and pruning mechanisms are stable but currently inactive, indicating a clean state or a need for more aggressive memory ma
 - Reflexes successfully execute maintenance tasks with minimal overhead (0.18s), proving their utility for routine operations.
@@ -51,11 +56,6 @@
 - Calibration was badly off (predicted 6, actual 2), meaning the planner's confidence estimates need grounding in past execution scores rather than opti
 - The 429 rate-limit error on the primary model cascaded into a fallback to a free-tier model, showing that model failures, not task difficulty, were th
 - The swarm failed (score 2/10) primarily because generated Python artifacts contained syntax errors ('from __future__ import annotat...' truncated), so
-- Skill proposals from dreams remain unvalidated artifacts until a hash-diff verification confirms the evolved code actually replaced the deployed artif
-- The system autonomously converts failure signals (model errors, gaps, combination needs) into drive goals, but metabolism conservation (max_iterations
-- Swarm convergence in 1 cycle with score 8 masks latent risks: the subsequent simulation of the same proposals flagged 2 risks and required 2 revisions
-- Latency variance of 3–63 seconds on the same model (stealth/ox-alpha) makes time-sensitive tasks unpredictable without p95-aware routing.
-- Model rate limits (429 errors) cascade into workflow stalls because no automatic fallback routing exists between model failures and swarm execution.
 
 ---
 
