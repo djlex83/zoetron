@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4057 Fakten** · Stand 2026-08-26 23:36 UTC · aktualisiert bei jedem Herzschlag
+**4074 Fakten** · Stand 2026-08-26 23:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1641
-- **swarm_artifact:** 999
-- **last_swarm_critique:** 507
-- **anti_pattern:** 344
-- **last_swarm_goal:** 256
-- **strategy:** 193
-- **hand_result:** 35
+- **dream:** 1646
+- **swarm_artifact:** 1005
+- **last_swarm_critique:** 508
+- **anti_pattern:** 346
+- **last_swarm_goal:** 257
+- **strategy:** 194
+- **hand_result:** 36
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 21
 - **aktuell_organfehler:** 14
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:2`
+*26.08. 23:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): GitOps-Pipeline mit Pull-Request-basiertem Promotion-Flow: Model-Discovery, Benc - Erstelle ein Git-Repository `cortex-reflex-registry` mit drei Pipeline-Stages: (1) `discovery` – läuft täglich um 02:00 per CI-Schedule, scann
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:1`
+*26.08. 23:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Finite-State-Machine als Monolith: Statt verteilter Worker ein einzelnes statefu - Implementiere `CortexReflexEngine` als einzelnes Python-Modul mit einem `ReflexLoop`-Coroutine, die permanent läuft (managed via systemd als f
+
+### `last_swarm_critique`
+*26.08. 23:48 UTC · Quelle: critic*
+
+score=5; issues=Keine Orchestrierung zwischen Scanner, Benchmark und Promotion-Logic - drei getrennte Skripte ohne End-to-End-Pipeline; Wochenreport (weekly_report.json) wird definiert aber nirgendwo geschrieben, obwohl vertraglich gefordert: 'Eintrag im Woche
+
+### `last_swarm_goal`
+*26.08. 23:40 UTC · Quelle: system*
+
+Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
+
+### `dream:20260826233957:5:bbbffd`
+*26.08. 23:39 UTC · Quelle: dream*
+
+Hand actions succeed (exit 0) but lack structured result parsing, preventing reliable chaining and retry logic.
+
+### `dream:20260826233957:4:07e15e`
+*26.08. 23:39 UTC · Quelle: dream*
+
+Skill proposals accumulate (25) but remain unexecuted due to missing automated validation pipelines and resource allocation triggers.
+
+### `dream:20260826233957:3:bf8683`
+*26.08. 23:39 UTC · Quelle: dream*
+
+Simulation artifacts rarely transition to production because success criteria are implicit and not tied to measurable runtime invariants.
+
+### `dream:20260826233957:2:dd1807`
+*26.08. 23:39 UTC · Quelle: dream*
+
+Best-of-N verification loops stall at suboptimal scores (6/10) without convergence because the verifier lacks adversarial diversity and the model pool lacks latency-stable candidates.
+
+### `dream:20260826233957:1:41a1fa`
+*26.08. 23:39 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit cascading 429/502 failures under load, making single-model reliance a systemic reliability hazard.
 
 ### `dream:20260826233453:5:877c23`
 *26.08. 23:34 UTC · Quelle: dream*
