@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3403 Fakten** · Stand 2026-08-26 10:44 UTC · aktualisiert bei jedem Herzschlag
+**3415 Fakten** · Stand 2026-08-26 11:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1473
-- **swarm_artifact:** 875
-- **anti_pattern:** 298
-- **last_swarm_critique:** 273
-- **last_swarm_goal:** 227
-- **strategy:** 170
+- **dream:** 1478
+- **swarm_artifact:** 877
+- **anti_pattern:** 300
+- **last_swarm_critique:** 274
+- **last_swarm_goal:** 228
+- **strategy:** 171
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 23
 - **tool:** 15
@@ -19,6 +19,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:ersten_swarm_lauf_mit_score_8__konvergieren_lassen`
+*26.08. 11:01 UTC · Quelle: evolution*
+
+Selbstreflexion & Fehleranalyse vor Neustart (Reflexion-Loop) - Variante 2 adressiert die Ursache direkt: Statt blind weiter zu iterieren oder die Architektur komplett zu verwerfen, wird eine systematische Gap-Analyse zwischen erreichtem Score 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*26.08. 11:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Architekturwechsel: Von parallelem Swarm zu sequentieller Pipeline mit Best-of-N - Ersetze das iterative Schwarm-Verhalten durch eine zweiphasige Pipeline: Phase 1 erzeugt N=8 unabhängige Kandidatenlösungen parallel (Diversit
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:0`
+*26.08. 11:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Reward-Engineering & Fitness-Landschaft - Der Score von 1.3 deutet auf ein Belohnungsproblem hin, nicht auf einen Ausführungsfehler. Analysiere die Scoring-Funktion und baue einen dichten, gestaffelten Reward: Zwischenziele m
+
+### `swarm_artifact:Draft deliverable for: Ersten Swarm-Lauf mit Score 8+ konver`
+*26.08. 11:00 UTC · Quelle: builder*
+
+[score 4] This script simulates the first swarm convergence run aiming for Score >= 8. It implements coordination, monitoring, and refinement with convergence checkpoints. Real-time score tracking
+
+### `last_swarm_critique`
+*26.08. 11:00 UTC · Quelle: critic*
+
+score=4; issues=Skript laeuft (Sandbox-Bestätigung), erreicht aber Ziel Score >= 8 nicht; finaler Score ca. 1.3 nach 10 Iterationen, Konvergenzziel verfehlt.
+
+### `swarm_artifact:Draft deliverable for: Ersten Swarm-Lauf mit Score 8+ konver`
+*26.08. 10:56 UTC · Quelle: builder*
+
+This script simulates the first swarm convergence run aiming for Score >= 8. It implements coordination, monitoring, and refinement with convergence checkpoints. Real-time score tracking triggers earl
+
+### `last_swarm_goal`
+*26.08. 10:49 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260826104856:5:3f2377`
+*26.08. 10:48 UTC · Quelle: dream*
+
+Das Muster 'alte Trauminhalte + neue Pläne kombinieren' funktionierte nachweislich (Simulation lieferte 'revise' mit 2 umgesetzten Revisionen) und ist damit ein wiederholbarer Kreativitäts-Hebel.
+
+### `dream:20260826104856:4:65762e`
+*26.08. 10:48 UTC · Quelle: dream*
+
+Der Metabolismus-Zustand 'conserve' (Stress 1.0) hat das Budget auf 3 Tasks/1 Iteration gekürzt, was zeigt: Bei maximalem Stress müssen Ziele priorisiert statt parallel ausgeführt werden.
+
+### `dream:20260826104856:3:e16a52`
+*26.08. 10:48 UTC · Quelle: dream*
+
+Nur 5 von 9 Simulationsergebnissen wurden angewendet – die Lücke entsteht vermutlich dadurch, dass Simulations-Verdicts ohne expliziten Folge-Schritt im Plan landen.
+
+### `dream:20260826104856:2:1b44cf`
+*26.08. 10:48 UTC · Quelle: dream*
+
+Bei 'stealth/ox-alpha' korreliert hohe Latenz mit hohem Output (72s/3350 Tokens vs. 1.9s/32 Tokens), sodass Aufgaben vorab in kleine Prompts zerlegt werden sollten, um Timeouts zu vermeiden.
+
+### `dream:20260826104856:1:f6416c`
+*26.08. 10:48 UTC · Quelle: dream*
+
+Die häufigsten Modellfehler sind 429-Rate-Limits bei mehreren Modellen gleichzeitig, d.h. parallele Anfragen an OpenRouter-Free-Tiers kollidieren und brauchen exponentielles Backoff statt sofortigem Retry.
 
 ### `dream:20260826104228:5:59107c`
 *26.08. 10:42 UTC · Quelle: dream*

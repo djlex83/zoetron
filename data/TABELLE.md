@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2444 Neuronen · 46292 bewertete Synapsen
+Stand: 2451 Neuronen · 46461 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 2444 Neuronen · 46292 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 233 | 0.24 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 233 | 0.24 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 235 | 0.24 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 235 | 0.24 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 189 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 176 | 0.24 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 170 | 0.22 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 172 | 0.22 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 140 | 0.26 |
 | 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 153 | 0.23 |
 | 8 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 140 | 0.26 |
-| 9 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 139 | 0.25 |
+| 9 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 140 | 0.25 |
 | 10 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 142 | 0.25 |
-| 11 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 142 | 0.24 |
-| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 141 | 0.24 |
+| 11 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 143 | 0.24 |
+| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 142 | 0.24 |
 | 13 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 124 | 0.28 |
 | 14 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 131 | 0.26 |
-| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 126 | 0.27 |
+| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 127 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 

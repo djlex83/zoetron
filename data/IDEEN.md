@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 11:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Das Muster 'alte Trauminhalte + neue Pläne kombinieren' funktionierte nachweislich (Simulation lieferte 'revise' mit 2 umgesetzten Revisionen) und ist
+- Der Metabolismus-Zustand 'conserve' (Stress 1.0) hat das Budget auf 3 Tasks/1 Iteration gekürzt, was zeigt: Bei maximalem Stress müssen Ziele priorisi
+- Nur 5 von 9 Simulationsergebnissen wurden angewendet – die Lücke entsteht vermutlich dadurch, dass Simulations-Verdicts ohne expliziten Folge-Schritt 
+- Bei 'stealth/ox-alpha' korreliert hohe Latenz mit hohem Output (72s/3350 Tokens vs. 1.9s/32 Tokens), sodass Aufgaben vorab in kleine Prompts zerlegt w
+- Die häufigsten Modellfehler sind 429-Rate-Limits bei mehreren Modellen gleichzeitig, d.h. parallele Anfragen an OpenRouter-Free-Tiers kollidieren und 
 - Reflex-mode actions succeed cheaply (exit 0 in 0.2s) while full swarm cycles are slow, suggesting routine goals should be classified for reflex handli
 - Model reliability is heterogeneous (nemotron-3-ultra took ~60s vs ox-alpha ~8s) and failures like 429/5xx recur, so per-model health tracking must pre
 - Stored knowledge is rarely retrieved during task execution, meaning memory write volume far exceeds read utility and retrieval triggers are missing.
@@ -51,11 +56,6 @@
 - Reflexive tool investigation consistently converges ok=true proving that systematic alternative enumeration is a high-reliability strategy for resolvi
 - With 55 skill proposals yielding only 10 implementations the system suffers from proposal-to-execution drift and needs a gated execution pipeline to c
 - Model-specific 429 rate limits reveal that transport-layer quotas not model capability gate task success and require routing to track per-endpoint quo
-- Pruning removes nothing while failure events accumulate, meaning the retention policy preserves noise over signal.
-- Skill proposals pile up untested because no conserved execution slot exists, turning the backlog into write-only memory.
-- Self-diagnosis reports zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not classified as an or
-- Reflex-driven goals consistently converge while deliberate goals accumulate, suggesting the system trusts fast heuristics over slow planning.
-- Repeated HTTP 429 errors across multiple free-tier models indicate rate-limiting is a systemic bottleneck, not an isolated incident.
 
 ---
 
