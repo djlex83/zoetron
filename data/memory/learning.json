@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 13:13:32",
- "ereignisse_ausgewertet": 3269,
+ "stand": "2026-08-26 13:16:18",
+ "ereignisse_ausgewertet": 3287,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-prüfen-und-verbesse.py",
@@ -61,9 +61,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.581,
+ "haende_quote": 0.583,
  "simulationen_angewandt": 68,
  "swarm_scores": {
   "n": 63,

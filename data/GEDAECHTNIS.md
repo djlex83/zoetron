@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3600 Fakten** · Stand 2026-08-26 13:13 UTC · aktualisiert bei jedem Herzschlag
+**3605 Fakten** · Stand 2026-08-26 13:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1513
+- **dream:** 1518
 - **swarm_artifact:** 899
 - **last_swarm_critique:** 371
 - **anti_pattern:** 312
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826131552:5:fff3dd`
+*26.08. 13:15 UTC · Quelle: dream*
+
+Old dream insights are never revisited after later work completes — a post-task linkage step comparing new results against stored dream insights would close this loop.
+
+### `dream:20260826131552:4:2fe0bc`
+*26.08. 13:15 UTC · Quelle: dream*
+
+Under metabolism stress=1.0/conserve mode (max_tasks=3, max_iterations=1), long-latency calls like stealth/ox-alpha at 117–256s consume most of the iteration budget, so conserve mode should prefer fast models first.
+
+### `dream:20260826131552:3:8ce34d`
+*26.08. 13:15 UTC · Quelle: dream*
+
+Calibration is systematically overconfident: predicted risk 5 vs actual 2 (abs_error 3) suggests the simulation phase inflates risk estimates for well-scoped goals and should be recalibrated against logged outcomes.
+
+### `dream:20260826131552:2:b733e4`
+*26.08. 13:15 UTC · Quelle: dream*
+
+The convergence gate correctly rejected the benchmark artifact because prose-only output contained no executable Python block — every goal requiring code must explicitly demand a runnable Python block in its prompt template.
+
+### `dream:20260826131552:1:8eec4b`
+*26.08. 13:15 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so the fallback chain must treat 429 as a 'back off and rotate' signal rather than an immediate retry on the same model.
 
 ### `tool:fähigkeits-messlatte-bauen-capability-be`
 *26.08. 13:13 UTC · Quelle: hands*

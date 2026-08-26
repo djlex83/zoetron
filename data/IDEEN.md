@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 15×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 14×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Old dream insights are never revisited after later work completes — a post-task linkage step comparing new results against stored dream insights would
+- Under metabolism stress=1.0/conserve mode (max_tasks=3, max_iterations=1), long-latency calls like stealth/ox-alpha at 117–256s consume most of the it
+- Calibration is systematically overconfident: predicted risk 5 vs actual 2 (abs_error 3) suggests the simulation phase inflates risk estimates for well
+- The convergence gate correctly rejected the benchmark artifact because prose-only output contained no executable Python block — every goal requiring c
+- Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so the fallback chain must treat 429 as a 'back off a
 - hand_action failed twice with exit 1 before succeeding on the third attempt, indicating a retry loop for shell actions resolves transient issues cheap
 - Calibration systematically underestimated effort (predicted 5 vs actual 9, abs_error 4), suggesting predictions should be inflated ~1.8x or recalibrat
 - Free-tier endpoints fail in two distinct ways that need different handling: 429 rate limits (retryable with backoff) versus upstream 502/no-choices er
@@ -51,11 +56,6 @@
 - Simulation verdict 'go' was issued despite the artifact failing at runtime (traceback in tor log), revealing a gap between static analysis and executi
 - hand_action failures return exit=1 with error=null and gelesen=0, hiding the actual traceback and preventing automated diagnosis or retry logic.
 - Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable for production loops without exponenti
-- Hand actions consistently fail fast (exit 1, <1s) while self-diagnosis reports zero organ defects, exposing a blind spot: runtime execution failures a
-- Score calibration drifted by 1 point (predicted 3 vs actual 2) and the swarm still declared 'go', meaning threshold decisions tolerate prediction erro
-- OpenRouter 429 rate-limit errors hit two models simultaneously, showing the retry strategy cycles through sibling models instead of backing off global
-- The root failure cause is a generated script (ction_1787744990820.py) that crashes at sys.exit in run_live_beat, indicating the builder produces code 
-- The swarm's evolution phase scored a variant 9/10 but the final artifact failed at runtime (exit 1), revealing that winner selection is based on stati
 
 ---
 
