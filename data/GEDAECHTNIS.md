@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3278 Fakten** · Stand 2026-08-26 08:34 UTC · aktualisiert bei jedem Herzschlag
+**3291 Fakten** · Stand 2026-08-26 08:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1393
-- **swarm_artifact:** 859
-- **anti_pattern:** 290
-- **last_swarm_critique:** 267
-- **last_swarm_goal:** 221
-- **strategy:** 166
+- **dream:** 1398
+- **swarm_artifact:** 861
+- **anti_pattern:** 292
+- **last_swarm_critique:** 268
+- **last_swarm_goal:** 222
+- **strategy:** 167
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 21
+- **hand_result:** 22
 - **tool:** 12
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Abgelehnte Werkzeuge genauer prüfen`
+*26.08. 08:43 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787733807844.py\", line 16\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports mus"}
+
+### `strategy:abgelehnte_werkzeuge_genauer_prüfen`
+*26.08. 08:42 UTC · Quelle: evolution*
+
+Deklarativ statt imperativ: Prüflogik als Daten-/Regeltabelle statt Code - Variante 2 adressiert die Kernursache des Scheiterns am direktesten: Der ausfuehrbare Code wird auf <20 Zeilen reduziert und ist damit maximal syntax-fehlerresistent, waehrend der 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Abgelehnte Werkzeuge gen:1`
+*26.08. 08:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Testgetriebene Absicherung: Erst lauffähiges Gerüst, dann Logik schrittweise erg - Zweistufiges Vorgehen: Stufe 1 erzeugt ein absolut triviales, garantiert syntaktisch korrektes Skript (nur shebang, docstring, main()-Funktion
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Abgelehnte Werkzeuge gen:0`
+*26.08. 08:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Minimalismus & Syntax-Sicherheit: Komplett auf riskante Imports verzichten - Schreibe das Skript von Grund auf neu OHNE 'from __future__ import annotations' und ohne andere nicht-triviale Imports (nur stdlib wie json/re falls
+
+### `swarm_artifact:Draft deliverable for: Abgelehnte Werkzeuge genauer prüfen`
+*26.08. 08:41 UTC · Quelle: builder*
+
+[score 1] Das Artefakt erfasst abgelehnte Werkzeuge mit ihren ursprünglichen Ablehnungsgründen, prüft jeden Grund nach (Kriterien: Kosten, Integration, Wartung, Sicherheit) und erzeugt eine strukt
+
+### `last_swarm_critique`
+*26.08. 08:41 UTC · Quelle: critic*
+
+score=1; issues=SANDBOX-URTEIL: LAEUFT NICHT - Syntaxfehler an Zeile 16 ('from __future__ import annotations'). Das Artefakt ist nicht ausfuehrbar; dies ist ein harter Mangel und dominiert die Bewertung.; Da das Skript nicht laeuft, wurde der eingebaute Accept
+
+### `swarm_artifact:Draft deliverable for: Abgelehnte Werkzeuge genauer prüfen`
+*26.08. 08:41 UTC · Quelle: builder*
+
+Das Artefakt erfasst abgelehnte Werkzeuge mit ihren ursprünglichen Ablehnungsgründen, prüft jeden Grund nach (Kriterien: Kosten, Integration, Wartung, Sicherheit) und erzeugt eine strukturierte Neubew
+
+### `last_swarm_goal`
+*26.08. 08:38 UTC · Quelle: system*
+
+Abgelehnte Werkzeuge genauer prüfen
+
+### `dream:20260826083839:5:c2f89f`
+*26.08. 08:38 UTC · Quelle: dream*
+
+Metabolism throttles to max_tasks=4/max_iterations=2 under moderate stress (0.58) while slow-but-reliable fallback models take 50-54s per call, meaning budget planning must account for high-latency fallbacks or convergence will be cut short.
+
+### `dream:20260826083839:4:cad5f4`
+*26.08. 08:38 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero findings across all organs even while model_fail events accumulate, revealing that model/API failures are not mapped to any diagnosable 'organ' and thus escape health monitoring.
+
+### `dream:20260826083839:3:8afecc`
+*26.08. 08:38 UTC · Quelle: dream*
+
+Prune runs repeatedly report facts_pruned=0 and events_pruned=0, indicating the pruning criteria are too conservative or memory volume is below threshold, which risks unbounded memory growth without any observed benefit.
+
+### `dream:20260826083839:2:c39af7`
+*26.08. 08:38 UTC · Quelle: dream*
+
+A 50-item skill-proposal backlog exists because proposals are generated every dream cycle but only executed when a drive goal explicitly targets them; the successful reflex run ('Vorgeschlagene Fertigkeiten tatsächlich einbauen', converged in reflex mode, 0.23
+
+### `dream:20260826083839:1:6d2f51`
+*26.08. 08:38 UTC · Quelle: dream*
+
+Two of three model endpoints (stealth/ox-alpha and z-ai/glm-5.2:free) fail consistently with HTTP 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, so the retry logic should treat repeated 429s on the same model as a cooldown signal rather than an 
 
 ### `dream:20260826083405:5:84f19a`
 *26.08. 08:34 UTC · Quelle: dream*

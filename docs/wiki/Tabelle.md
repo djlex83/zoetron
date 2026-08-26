@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2333 Neuronen · 42910 bewertete Synapsen
+Stand: 2342 Neuronen · 43161 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,11 +10,11 @@ Stand: 2333 Neuronen · 42910 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 227 | 0.24 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 227 | 0.23 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 229 | 0.24 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 229 | 0.24 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 182 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 170 | 0.24 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 164 | 0.22 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 166 | 0.22 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 136 | 0.26 |
 | 7 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 137 | 0.26 |
 | 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 145 | 0.24 |
