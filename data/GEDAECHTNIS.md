@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3629 Fakten** · Stand 2026-08-26 13:39 UTC · aktualisiert bei jedem Herzschlag
+**3640 Fakten** · Stand 2026-08-26 14:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1534
-- **swarm_artifact:** 901
+- **dream:** 1539
+- **swarm_artifact:** 906
 - **last_swarm_critique:** 372
 - **anti_pattern:** 314
-- **last_swarm_goal:** 236
+- **last_swarm_goal:** 237
 - **strategy:** 178
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 28
@@ -19,6 +19,61 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:End-to-End-Nachweis: kompletter Durchlauf Frage → Antwort → `
+*26.08. 14:08 UTC · Quelle: builder*
+
+```python """bruecke.py - Hermes-Brücke: orchestriert STATUS, FRAGEN, WÄCHTER in einem Beat.  Integriert die Logik der drei Kanäle (Status-Schreiber, Fragen-Steller, Wächter-Validierer) und schreibt p
+
+### `swarm_artifact:bruecke.py: alle drei Kanäle in einem Beat orchestrieren + L`
+*26.08. 14:06 UTC · Quelle: builder*
+
+```python """bruecke.py - Hermes-Brücke: orchestriert STATUS, FRAGEN, WÄCHTER in einem Beat.  Integriert die Logik der drei Kanäle (Status-Schreiber, Fragen-Steller, Wächter-Validierer) und schreibt p
+
+### `swarm_artifact:Kanal 3 WÄCHTER: Whisper-Ziele validieren und Quarantäne fül`
+*26.08. 14:01 UTC · Quelle: builder*
+
+```python """bruecke_waechter.py - Kanal 3 WÄCHTER: validiert fluester_goals.json und füllt Quarantäne.  Liest das Live-Datenverzeichnis (argv[1] oder ZOETRON_DATA), prüft jedes Ziel gegen Schema {tit
+
+### `swarm_artifact:Kanal 2 FRAGEN: Doppel-Scheitern erkennt, Frage stellt, Antw`
+*26.08. 13:51 UTC · Quelle: builder*
+
+Kanal 2 liest Scheiter-Streaks und offene Entscheidungen live aus dem Datenverzeichnis (argv[1] bzw. ZOETRON_DATA), stellt Fragen nach `data/hermes/fragen.json` und übernimmt Antworten aus `antworten.
+
+### `swarm_artifact:Kanal 1 STATUS: status.json-Schreiber bauen (≤2 KB)`
+*26.08. 13:49 UTC · Quelle: builder*
+
+Der Status-Schreiber liest Stress, Benchmark-Stand, Score und Lektionen live aus den bestehenden Organen im Datenverzeichnis (argv[1] bzw. ZOETRON_DATA) und nutzt nur bei fehlender Quelle Fallback-Def
+
+### `last_swarm_goal`
+*26.08. 13:43 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:20260826134345:5:161d3e`
+*26.08. 13:43 UTC · Quelle: dream*
+
+Pruning removed nothing (0 facts, 0 events pruned) while retrieval pulled 11+ fragments for a single goal, implying the memory store grows unboundedly and prune criteria are too conservative.
+
+### `dream:20260826134345:4:7c55ba`
+*26.08. 13:43 UTC · Quelle: dream*
+
+Model latency varies widely (4s to 41s) independent of output size, suggesting per-request latency is dominated by provider-side queuing and should be tracked as a routing signal alongside errors.
+
+### `dream:20260826134345:3:4346c5`
+*26.08. 13:43 UTC · Quelle: dream*
+
+Skill proposals accumulate far faster than they are implemented (5 proposed in one dream, ~0 executed), so the bottleneck is a missing proposal-to-trial pipeline, not idea generation.
+
+### `dream:20260826134345:2:3dc716`
+*26.08. 13:43 UTC · Quelle: dream*
+
+The capability-benchmark goal stalled at score 7 across 3 attempts and was parked for lack of convergence, indicating the critic's blocking issue ('Recall-Dimension') needs a concrete decision or spec rather than another evolution cycle.
+
+### `dream:20260826134345:1:14c1fa`
+*26.08. 13:43 UTC · Quelle: dream*
+
+Calibration is systematically underconfident: predicted 2 vs actual 7 (abs_error 5) means the simulation/risk layer overestimates difficulty and should be re-fit from logged prediction-actual pairs.
 
 ### `dream:20260826133918:5:495e23`
 *26.08. 13:39 UTC · Quelle: dream*

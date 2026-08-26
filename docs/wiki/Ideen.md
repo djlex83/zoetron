@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 14:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,16 +16,16 @@
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
-- Implement exponential backoff with jitter on 429 errors and rotate to the next model in a priority list instea
-- Build a prediction log that records match, predicted outcome, actual result, and timestamp for every football 
-- Add a 'skill adoption' tracker that marks each proposed skill as untested/in-use/validated and blocks new prop
-- Gate swarm execution on metabolism state: skip non-essential model calls entirely when stress = 1.0 and budget
+- Implement provider-rotation with exponential backoff: skip any model returning 429 twice consecutively and fal
+- Require every football-prediction run to ingest external structured signals (odds, xG, standings) before gener
+- Add a non-convergence detector: if two consecutive cycles show no delta in the critic metric, force a represen
+- Gate domain swarms on an executable artifact (code plus test computing predicted probabilities) so critic scor
 
 ## 🔥 Eigene Ziele
 
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 16×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 14×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 17×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 15×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 11×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed nothing (0 facts, 0 events pruned) while retrieval pulled 11+ fragments for a single goal, implying the memory store grows unboundedly
+- Model latency varies widely (4s to 41s) independent of output size, suggesting per-request latency is dominated by provider-side queuing and should be
+- Skill proposals accumulate far faster than they are implemented (5 proposed in one dream, ~0 executed), so the bottleneck is a missing proposal-to-tri
+- The capability-benchmark goal stalled at score 7 across 3 attempts and was parked for lack of convergence, indicating the critic's blocking issue ('Re
+- Calibration is systematically underconfident: predicted 2 vs actual 7 (abs_error 5) means the simulation/risk layer overestimates difficulty and shoul
 - Bahnen-Graph zeigte delta 0.0 und 0 neue Kanten trotz erfolgreichem Code-Artefakt: Erfolgreiche Handlungen erzeugen keine Verknüpfungen, wodurch späte
 - Der Evolution-Lauf (3 Varianten, Kritik-Punkte wie 'Recall-Dimension' eingebaut) hob die Qualität trotz Score 7 – nicht konvergierte Swarms liefern tr
 - Conserve-Modus bei Stress 1.0 mit max_iterations=1 kollidiert mit mehrzykligen Zielen: Budgetgrenzen sollten an die geschätzte Zielkomplexität gekoppe
@@ -51,11 +56,6 @@
 - Metabolism was at stress 1.0 / conserve mode (max_tasks=3, max_iterations=1) while launching a full swarm run — resource-constrained states should dow
 - The hand_action failed instantly (exit 1, 0.03s, nothing read) with no error message, indicating that silent fast failures are the most common executi
 - The benchmark goal scored 1/10 despite a 9/10 evolution winner and a 'go' simulation verdict, showing that high variant scores and sandbox approval do
-- Dream could not parse its own output - check prompt size.
-- The swarm terminated without convergence after only 2 cycles despite 'go' simulation verdicts, indicating the go/no-go gate is too permissive relative
-- Evolution rescued the run: a 3-variant evolution loop lifted scores from 2/10 baseline to 9/10 for the winner, confirming generate-and-select beats si
-- OpenRouter free-tier models repeatedly hit 429 rate limits in bursts (stealth/ox-alpha and z-ai/glm-5.2:free), while nvidia/nemotron-3-ultra served as
-- Calibration error was 3 points (predicted 5, actual 2), showing the critic/simulation systematically overestimates quality when it never executes the 
 
 ---
 

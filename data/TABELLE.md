@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2519 Neuronen · 49344 bewertete Synapsen
+Stand: 2520 Neuronen · 49646 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -15,16 +15,16 @@ Stand: 2519 Neuronen · 49344 bewertete Synapsen
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 190 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 176 | 0.24 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 183 | 0.23 |
-| 6 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 154 | 0.24 |
-| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 140 | 0.26 |
-| 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 157 | 0.23 |
-| 9 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 131 | 0.28 |
+| 6 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 155 | 0.24 |
+| 7 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 132 | 0.28 |
+| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 140 | 0.26 |
+| 9 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 157 | 0.23 |
 | 10 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 140 | 0.26 |
 | 11 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 142 | 0.25 |
 | 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 146 | 0.24 |
 | 13 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 134 | 0.26 |
-| 14 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 142 | 0.25 |
-| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 131 | 0.26 |
+| 14 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 143 | 0.24 |
+| 15 | 💭 | Calibration consistently underestimates actual scores by ~3 poin… | 129 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 
