@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3203 Fakten** · Stand 2026-08-26 07:20 UTC · aktualisiert bei jedem Herzschlag
+**3208 Fakten** · Stand 2026-08-26 07:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1343
+- **dream:** 1348
 - **swarm_artifact:** 849
 - **anti_pattern:** 286
 - **last_swarm_critique:** 264
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826072212:5:1b30a3`
+*26.08. 07:22 UTC · Quelle: dream*
+
+Metabolism stress of 0.621 triggered conserve mode (max_tasks: 3), yet the system still ran multiple model calls — budget enforcement should gate task spawning earlier.
+
+### `dream:20260826072212:4:98ddac`
+*26.08. 07:22 UTC · Quelle: dream*
+
+Swarm convergence in 1 cycle with score ≥ 8 makes evolution unnecessary; role configuration (planner/builder/critic ×1) is a reusable template for similar goals.
+
+### `dream:20260826072212:3:661bfe`
+*26.08. 07:22 UTC · Quelle: dream*
+
+Calibration error was small (abs_error 1 on a 7→8 prediction), suggesting per-goal-type calibration baselines would tighten predictions further.
+
+### `dream:20260826072212:2:d2911d`
+*26.08. 07:22 UTC · Quelle: dream*
+
+Destructive operations are rejected at execution time despite being fully planned, wasting invested work because operation-class risk is only checked after proposal completion.
+
+### `dream:20260826072212:1:13b584`
+*26.08. 07:22 UTC · Quelle: dream*
+
+Goals that combine simulation with actual execution (hat_code: true) converge fast and score high (8), confirming the simulate→revise→apply loop as the highest-yield workflow.
 
 ### `hand_result:Modell-Fehler deutlich reduzieren`
 *26.08. 07:19 UTC · Quelle: hands*

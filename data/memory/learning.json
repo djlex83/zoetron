@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 07:19:55",
- "ereignisse_ausgewertet": 2204,
+ "stand": "2026-08-26 07:22:27",
+ "ereignisse_ausgewertet": 2220,
  "werkzeuge": [
   {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
@@ -10,6 +10,12 @@
   },
   {
    "tool": "lebender-steckbrief-die-biografie-als-al.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -27,19 +33,13 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
   }
  ],
- "haende_quote": 0.574,
+ "haende_quote": 0.577,
  "simulationen_angewandt": 53,
  "swarm_scores": {
   "n": 46,
