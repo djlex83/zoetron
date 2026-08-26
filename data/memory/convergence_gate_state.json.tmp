@@ -1,0 +1,18 @@
+{
+  "demo_goal_high_score_fail_test": {
+    "critic_score": 9,
+    "integration_test_passed": false,
+    "converged": false,
+    "timestamp": 1787746767.7634919
+  },
+  "proof_high_score_red_test": {
+    "attempts": 1,
+    "converged": false,
+    "critic_score": 9,
+    "critic_ok": true,
+    "test_passed": false,
+    "test_ok": false,
+    "reason": "REJECTED: Critic-Score 9 >= 8, aber Integrationstest ist ROT - Score allein reicht nicht, der Critic kann sich irren (Test-Pflicht vor Erfolg)",
+    "last_evaluated": "2026-08-26T12:20:36+0000"
+  }
+}

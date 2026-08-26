@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 12:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 12:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,15 +17,15 @@
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
-- After two failed swarm cycles on the same goal, automatically trigger a 'pivot' procedure: change representati
-- Require executable artifact (code + test) as a hard gate before critic scoring; prose-only outputs auto-score 
-- Calibrate simulation verdicts per task domain: track prediction error and suppress 'go' when abs_error > 1.5 f
+- Implement a mandatory code-block validator that rejects artifacts without executable Python before critic eval
+- Create a model-adapter layer that normalizes role attributes across providers to prevent 'role' attribute erro
+- Develop a difficulty-calibration module that learns from prediction errors to adjust future estimates.
 
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 14×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Free-tier OpenRouter models failed en masse with 429/502 within the same second, so bursts of parallel model calls guarantee rate-limit cascades unles
+- The evolution loop scored variants 9/8/9 yet the swarm finished at score 2 unconverged, indicating variant scoring measures code quality in isolation 
+- Calibration predicted 5 but actual was 2 (abs_error 3): self-assessed confidence systematically overestimates success when the deliverable has never b
+- hand_action failures carry error=null despite a Traceback existing in the artifact output, meaning the runner is discarding stderr/exit diagnostics an
+- Simulation verdicts are unreliable: it returned 'go' with 0 risks while the artifact immediately failed at runtime (exit 1), so 'go' must be gated on 
 - Successful calls on this run had high latency (149–220 s) and large output token counts, suggesting latency budgeting and streaming/timeout handling a
 - A generated tool was rejected because it accepted no input (no parameters, argv, stdin, or file), so every builder-produced artifact must be validated
 - The swarm failed to converge (score 4, delta 0.0) despite evolution producing a winning variant scored 9, indicating a gap between variant scoring dur
@@ -51,11 +56,6 @@
 - Bei Stress = 1.0 wurde korrekt in den 'conserve'-Modus geschaltet (max_tasks: 3, max_iterations: 1), was verhinderte, dass der Swarm-Lauf unter Ressou
 - Der einzige erfolgreiche Fallback war nvidia/nemotron-3.5-lightning:free, was zeigt, dass die Prioritätskette funktioniert, aber zu viele Modelle glei
 - Alle Modell-Ausfälle in diesem Zeitraum waren 429-Rate-Limits auf OpenRouter, die nacheinander stealth/ox-alpha, z-ai/glm-5.2:free und beide Gemma-Var
-- Prune runs removed 0 facts and 0 events while selbstdiagnose found 0 defects, suggesting memory hygiene thresholds are set too conservatively to ever 
-- A prior dream cycle already completed successfully (5 insights, 5 skills), so re-running consolidation immediately afterward produced redundant work r
-- The identical failure sequence repeating within ~150 seconds shows there is no cooldown or backoff after a 429, causing wasted retries against still-t
-- Only nvidia/nemotron-3.5-lightning:free succeeded both times, but at 94-144s latency and 3-5k output tokens, so it is reliable yet slow and should not
-- Four of five candidate models failed with 429 rate-limit errors in two consecutive rounds, indicating the fallback chain is tried too fast and in the 
 
 ---
 

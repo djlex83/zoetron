@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3530 Fakten** · Stand 2026-08-26 12:04 UTC · aktualisiert bei jedem Herzschlag
+**3544 Fakten** · Stand 2026-08-26 12:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1493
-- **swarm_artifact:** 887
-- **last_swarm_critique:** 349
+- **dream:** 1498
+- **swarm_artifact:** 893
+- **last_swarm_critique:** 350
 - **anti_pattern:** 306
-- **last_swarm_goal:** 231
+- **last_swarm_goal:** 232
 - **strategy:** 174
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 26
+- **hand_result:** 27
 - **tool:** 15
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,76 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)`
+*26.08. 12:20 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "action_1787746836700.py\", line 203, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/workspace/zoetron/data/hands_workspace/action_1787746836700.py\", line 168, in main\n    d1 = gate.evalu"}
+
+### `swarm_artifact:Create Demonstration Scenario: High Score + Failing Test`
+*26.08. 12:20 UTC · Quelle: builder*
+
+[score 9]   Dieses Skript demonstriert das Konvergenz-Tor an einem Swarm-Lauf mit Score 9 und fehlgeschlagenem Integrationstest. Es zeigt, dass die Konvergenz verweigert wird, die Begründung im Lo
+
+### `swarm_artifact:Build Integration Test Runner`
+*26.08. 12:20 UTC · Quelle: builder*
+
+[score 9] Here is the integration test runner for the Convergence Gate:  ```python #!/usr/bin/env python3 """Integration Test Runner (Integrations-Test-Runner) für das Konvergenz-Tor.  Führt gebau
+
+### `swarm_artifact:Implement Convergence Gate Core Logic`
+*26.08. 12:20 UTC · Quelle: builder*
+
+[score 9] Das Artefakt implementiert das Konvergenz-Tor als deterministische Zustandsmaschine mit persistiertem State, JSONL-Entscheidungslog und Issue-Ausgabe bei abgelehnter Konvergenz. Ohne ech
+
+### `last_swarm_critique`
+*26.08. 12:20 UTC · Quelle: critic*
+
+score=9; issues=Artifact 3 (demonstration) duplicates ConvergenceGate and IntegrationTestRunner classes instead of importing from artifacts 1/2 - violates DRY but functional for standalone demo; Timestamp format uses %z in strftime which is platform-dependent 
+
+### `swarm_artifact:Create Demonstration Scenario: High Score + Failing Test`
+*26.08. 12:19 UTC · Quelle: builder*
+
+  Dieses Skript demonstriert das Konvergenz-Tor an einem Swarm-Lauf mit Score 9 und fehlgeschlagenem Integrationstest. Es zeigt, dass die Konvergenz verweigert wird, die Begründung im Log protokollier
+
+### `swarm_artifact:Build Integration Test Runner`
+*26.08. 12:18 UTC · Quelle: builder*
+
+Here is the integration test runner for the Convergence Gate:  ```python #!/usr/bin/env python3 """Integration Test Runner (Integrations-Test-Runner) für das Konvergenz-Tor.  Führt gebaute Artefakte i
+
+### `swarm_artifact:Implement Convergence Gate Core Logic`
+*26.08. 12:16 UTC · Quelle: builder*
+
+Das Artefakt implementiert das Konvergenz-Tor als deterministische Zustandsmaschine mit persistiertem State, JSONL-Entscheidungslog und Issue-Ausgabe bei abgelehnter Konvergenz. Ohne echtes Datenverze
+
+### `last_swarm_goal`
+*26.08. 12:14 UTC · Quelle: system*
+
+Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)
+
+### `dream:20260826121352:5:dc73c7`
+*26.08. 12:13 UTC · Quelle: dream*
+
+Free-tier OpenRouter models failed en masse with 429/502 within the same second, so bursts of parallel model calls guarantee rate-limit cascades unless calls are serialized or backed off exponentially.
+
+### `dream:20260826121352:4:32c76d`
+*26.08. 12:13 UTC · Quelle: dream*
+
+The evolution loop scored variants 9/8/9 yet the swarm finished at score 2 unconverged, indicating variant scoring measures code quality in isolation and not integration with the runnable artifact.
+
+### `dream:20260826121352:3:c3ee2e`
+*26.08. 12:13 UTC · Quelle: dream*
+
+Calibration predicted 5 but actual was 2 (abs_error 3): self-assessed confidence systematically overestimates success when the deliverable has never been executed end-to-end.
+
+### `dream:20260826121352:2:937abf`
+*26.08. 12:13 UTC · Quelle: dream*
+
+hand_action failures carry error=null despite a Traceback existing in the artifact output, meaning the runner is discarding stderr/exit diagnostics and making every failure undiagnosable after the fact.
+
+### `dream:20260826121352:1:2c449b`
+*26.08. 12:13 UTC · Quelle: dream*
+
+Simulation verdicts are unreliable: it returned 'go' with 0 risks while the artifact immediately failed at runtime (exit 1), so 'go' must be gated on an actual execution smoke-test, not static review.
 
 ### `hand_result:Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)`
 *26.08. 12:04 UTC · Quelle: hands*
