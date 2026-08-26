@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 11:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 11:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 12×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs removed 0 facts and 0 events while selbstdiagnose found 0 defects, suggesting memory hygiene thresholds are set too conservatively to ever 
+- A prior dream cycle already completed successfully (5 insights, 5 skills), so re-running consolidation immediately afterward produced redundant work r
+- The identical failure sequence repeating within ~150 seconds shows there is no cooldown or backoff after a 429, causing wasted retries against still-t
+- Only nvidia/nemotron-3.5-lightning:free succeeded both times, but at 94-144s latency and 3-5k output tokens, so it is reliable yet slow and should not
+- Four of five candidate models failed with 429 rate-limit errors in two consecutive rounds, indicating the fallback chain is tried too fast and in the 
 - Das Muster 'alte Trauminhalte + neue Pläne kombinieren' funktionierte nachweislich (Simulation lieferte 'revise' mit 2 umgesetzten Revisionen) und ist
 - Der Metabolismus-Zustand 'conserve' (Stress 1.0) hat das Budget auf 3 Tasks/1 Iteration gekürzt, was zeigt: Bei maximalem Stress müssen Ziele priorisi
 - Nur 5 von 9 Simulationsergebnissen wurden angewendet – die Lücke entsteht vermutlich dadurch, dass Simulations-Verdicts ohne expliziten Folge-Schritt 
@@ -51,11 +56,6 @@
 - Stored knowledge is rarely retrieved during task execution, meaning memory write volume far exceeds read utility and retrieval triggers are missing.
 - Skill proposals are generated at a high rate but almost none are implemented or tested, so the bottleneck is proposal-to-trial conversion, not idea ge
 - Prediction failures are the dominant recurring failure signal (24 failed predictions), indicating score/risk forecasts are systematically miscalibrate
-- Successful use of nvidia/nemotron-3-ultra-550b-a55b:free alongside failing models proves that latency and budget guards must be decoupled from raw cap
-- The explicit drive goal connecting old dreams demonstrates that cross-referencing prior experiences automagically generates novel solutions and should
-- Reflexive tool investigation consistently converges ok=true proving that systematic alternative enumeration is a high-reliability strategy for resolvi
-- With 55 skill proposals yielding only 10 implementations the system suffers from proposal-to-execution drift and needs a gated execution pipeline to c
-- Model-specific 429 rate limits reveal that transport-layer quotas not model capability gate task success and require routing to track per-endpoint quo
 
 ---
 

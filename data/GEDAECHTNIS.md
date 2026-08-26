@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3415 Fakten** · Stand 2026-08-26 11:04 UTC · aktualisiert bei jedem Herzschlag
+**3455 Fakten** · Stand 2026-08-26 11:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1478
-- **swarm_artifact:** 877
-- **anti_pattern:** 300
-- **last_swarm_critique:** 274
-- **last_swarm_goal:** 228
-- **strategy:** 171
+- **dream:** 1483
+- **swarm_artifact:** 879
+- **anti_pattern:** 302
+- **last_swarm_critique:** 302
+- **last_swarm_goal:** 229
+- **strategy:** 172
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 23
+- **hand_result:** 24
 - **tool:** 15
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,206 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)`
+*26.08. 11:30 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "Traceback (most recent call last):\n  File \"/workspace/zoetron/data/hands_workspace/action_1787743857729.py\", line 233, in <module>\n    raise SystemExit(_test())\n                     ^^^^^^^\n  File \"/w"}
+
+### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
+*26.08. 11:30 UTC · Quelle: evolution*
+
+Deterministische Zustandsmaschine statt objektorientierter Magie: Der gesamte Circuit Breaker wird a - The table-driven state machine (Variant 2) provides the most elegant and transparent solution. It eliminates hidden behavior through explicit state transitio
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:1`
+*26.08. 11:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Testgetriebene Entwicklung (TDD): Die Tests werden zuerst entworfen und definier - Schritt 1: Formuliere zunaechst einen ausfuehrbaren Testplan als Python-unittest-Suite mit 8 Faellen: (1) Register speichert Modell-Status, (2
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:0`
+*26.08. 11:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Minimalismus & Verifikationsfirst: Statt komplexes Framework zuerst zu bauen, wi - Baue ein einzelnes Python-Skript (<150 Zeilen) mit nur drei Klassen: HealthRegister (dict-basiert), CircuitBreaker (Zustandsmaschine CLOSED/OP
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:29 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `swarm_artifact:Draft deliverable for: Modell-Gesundheitsregister mit Sicher`
+*26.08. 11:28 UTC · Quelle: builder*
+
+[score 2] Das Artefakt implementiert das Modell-Gesundheitsregister mit Circuit Breaker (Sicherungsschalter): Fehlerrate und Antwortzeit werden pro Modell nach jedem Beat in `data/model_health.jso
+
+### `last_swarm_critique`
+*26.08. 11:28 UTC · Quelle: critic*
+
+score=2; issues=SANDBOX-URTEIL: LAEUFT NICHT (Traceback ab Zeile 233) - harter Mangel, das Artefakt ist nicht als lauffaehig nachweisbar.; Logikfehler im Selbsttest: Der Router probiert bei einem Fehler automatisch das Ersatzmodell. In den Beats 1-3 ist _aktue
+
+### `swarm_artifact:Draft deliverable for: Modell-Gesundheitsregister mit Sicher`
+*26.08. 11:28 UTC · Quelle: builder*
+
+Das Artefakt implementiert das Modell-Gesundheitsregister mit Circuit Breaker (Sicherungsschalter): Fehlerrate und Antwortzeit werden pro Modell nach jedem Beat in `data/model_health.json` protokollie
+
+### `last_swarm_goal`
+*26.08. 11:24 UTC · Quelle: system*
+
+Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
+
+### `dream:20260826112438:5:518f58`
+*26.08. 11:24 UTC · Quelle: dream*
+
+Prune runs removed 0 facts and 0 events while selbstdiagnose found 0 defects, suggesting memory hygiene thresholds are set too conservatively to ever trigger.
+
+### `dream:20260826112438:4:ade6b6`
+*26.08. 11:24 UTC · Quelle: dream*
+
+A prior dream cycle already completed successfully (5 insights, 5 skills), so re-running consolidation immediately afterward produced redundant work rather than new learning.
+
+### `dream:20260826112438:3:710e32`
+*26.08. 11:24 UTC · Quelle: dream*
+
+The identical failure sequence repeating within ~150 seconds shows there is no cooldown or backoff after a 429, causing wasted retries against still-throttled endpoints.
+
+### `dream:20260826112438:2:4d8864`
+*26.08. 11:24 UTC · Quelle: dream*
+
+Only nvidia/nemotron-3.5-lightning:free succeeded both times, but at 94-144s latency and 3-5k output tokens, so it is reliable yet slow and should not be the default for latency-sensitive tasks.
+
+### `dream:20260826112438:1:fc18ce`
+*26.08. 11:24 UTC · Quelle: dream*
+
+Four of five candidate models failed with 429 rate-limit errors in two consecutive rounds, indicating the fallback chain is tried too fast and in the same order every time.
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:14 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:13 UTC · Quelle: critic*
+
+score=7; issues=
 
 ### `strategy:ersten_swarm_lauf_mit_score_8__konvergieren_lassen`
 *26.08. 11:01 UTC · Quelle: evolution*
