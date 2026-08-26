@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 06:59:41",
- "ereignisse_ausgewertet": 2133,
+ "stand": "2026-08-26 07:03:40",
+ "ereignisse_ausgewertet": 2149,
  "werkzeuge": [
   {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
@@ -25,9 +25,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.576,
+ "haende_quote": 0.579,
  "simulationen_angewandt": 52,
  "swarm_scores": {
   "n": 45,

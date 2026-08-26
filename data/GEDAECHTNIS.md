@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3180 Fakten** · Stand 2026-08-26 06:59 UTC · aktualisiert bei jedem Herzschlag
+**3185 Fakten** · Stand 2026-08-26 07:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1328
+- **dream:** 1333
 - **swarm_artifact:** 847
 - **anti_pattern:** 284
 - **last_swarm_critique:** 263
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826070324:5:404c15`
+*26.08. 07:03 UTC · Quelle: dream*
+
+Pruning removed 0 facts/events while memory grows, meaning prune criteria are too conservative and stale entries are accumulating unchecked.
+
+### `dream:20260826070324:4:ee347a`
+*26.08. 07:03 UTC · Quelle: dream*
+
+Conserve mode (stress 1.0) capped the system at 3 tasks/1 iteration yet the swarm still converged in 1 cycle, indicating small budgets suffice when plans are pre-validated.
+
+### `dream:20260826070324:3:233b73`
+*26.08. 07:03 UTC · Quelle: dream*
+
+Latency variance is extreme (2.1s to 84.7s on the same model), so timeouts and scheduling should be latency-aware rather than assuming uniform response times.
+
+### `dream:20260826070324:2:ddd7e7`
+*26.08. 07:03 UTC · Quelle: dream*
+
+The pre-swarm simulation gate paid off: verdict 'revise' with 2 risks led to applied revisions before execution, so simulations must remain mandatory even under conserve-mode budget cuts.
+
+### `dream:20260826070324:1:089578`
+*26.08. 07:03 UTC · Quelle: dream*
+
+Calibration systematically underestimates swarm quality: predicted 5 vs actual 8 suggests the predictor should be shifted upward or trained on past score deltas.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-ausp`
 *26.08. 06:59 UTC · Quelle: hands*
