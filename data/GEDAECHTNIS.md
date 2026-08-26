@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3892 Fakten** · Stand 2026-08-26 19:40 UTC · aktualisiert bei jedem Herzschlag
+**3908 Fakten** · Stand 2026-08-26 20:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1596
-- **swarm_artifact:** 960
-- **last_swarm_critique:** 455
-- **anti_pattern:** 332
-- **last_swarm_goal:** 249
-- **strategy:** 187
+- **dream:** 1601
+- **swarm_artifact:** 966
+- **last_swarm_critique:** 456
+- **anti_pattern:** 334
+- **last_swarm_goal:** 250
+- **strategy:** 188
 - **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 18
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Embedding-Recall statt r:2`
+*26.08. 20:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Strategy/Repository-Pattern mit austauschbarem Encoder (sentence-transformers, T - Kernidee: Saubere Trennung von Encoding (Strategy) und Persistenz (Repository). Encoder ist ein Interface mit drei Implementierungen — sente
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Embedding-Recall statt r:1`
+*26.08. 20:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.5): Schema- und Performance-zentriert: SQLite als Vektor-DB mit BLOBs, Pre-Normalisi - Kernidee: Wir behandeln SQLite als echten Vektor-Store. Embeddings werden beim Insert L2-normalisiert und als float32-BLOB kompakt gespeiche
+
+### `last_swarm_critique`
+*26.08. 20:01 UTC · Quelle: critic*
+
+score=2; issues=embedding_recall.py fehlt als separates Modul - die Embedding-Logik ist nur inline in benchmark.py, nicht als wiederverwendbares Modul mit SQLite-Persistenz; Vertrag verletzt: embedding_recall.py soll Fakten als Embeddings in SQLite speichern u
+
+### `last_swarm_goal`
+*26.08. 19:53 UTC · Quelle: system*
+
+Embedding-Recall statt reinem Wortvergleich
+
+### `dream:20260826195238:5:921458`
+*26.08. 19:52 UTC · Quelle: dream*
+
+Metabolism stress=1.0 with conserve budget (max 3 tasks) proves the system cannot execute consolidation while simultaneously serving inference, requiring architectural separation.
+
+### `dream:20260826195238:4:6fa4d6`
+*26.08. 19:52 UTC · Quelle: dream*
+
+Drive goals are 100% self-referential (model errors, skill gaps, dream loops), creating an insular optimization trap that ignores external user value signals.
+
+### `dream:20260826195238:3:a56f4b`
+*26.08. 19:52 UTC · Quelle: dream*
+
+Five skill proposals exist but zero are deployed, revealing a proposal-to-production gap caused by missing activation criteria and integration scaffolds.
+
+### `dream:20260826195238:2:dd78c6`
+*26.08. 19:52 UTC · Quelle: dream*
+
+A 9x latency variance (5.3s vs 45.7s) on the same model (nemotron-3-ultra) indicates non-deterministic queueing, not model slowness, requiring latency-aware routing.
+
+### `dream:20260826195238:1:0e6e92`
+*26.08. 19:52 UTC · Quelle: dream*
+
+Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502) failures, making single-model reliance untenable for production workloads.
 
 ### `anti_pattern:Previous attempt scored 3/10. Goal: Extern-Quote in DRIVE: r:1`
 *26.08. 19:39 UTC · Quelle: evolution*
