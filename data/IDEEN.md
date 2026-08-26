@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 00:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 01:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,8 +29,8 @@
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
+- Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
-- Gründe für Modellfehler verstehen
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Modellfehler analysieren und beheben
 - Fußball-Ziel nochmal besser machen
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- hand_action failed instantly (exit 1, 0.02s) yet the swarm still reported completion, meaning act_done/score must be gated on verifying the executed a
+- Calibration is badly off for novel goals (predicted 3 vs actual 1), indicating difficulty estimates should be anchored to prior failure counts rather 
+- The evolution loop is the strongest lever on quality: variant selection raised scores from 1/10 to 9/10 within one run, so always generate at least 3 
+- Generated code artifacts repeatedly exceed the 20000-character sandbox limit; the builder must enforce a hard budget (~18k chars) or split code into m
+- OpenRouter free-tier models hit 429 Too Many Requests under burst load, so calls to stealth/ox-alpha and z-ai/glm-5.2:free need backoff/retry or a fal
 - Simulations and dreams are produced in volume but rarely linked to live tasks (e.g., the old dream matching the current organ error was never compared
 - Latency variance is extreme (3.2s to 89.3s) and correlates with output size, meaning long generations should be budgeted explicitly under conserve-mod
 - Items parked after 3 failed attempts (e.g., the Destillat-Datensatz goal) stall indefinitely because there is no escalation path to the creator for de
@@ -51,11 +56,6 @@
 - Evolution/swarm runs plateau at 6/10 because recovery procedures apply uniform retries instead of targeting the calibration bias and latency spikes as
 - stealth/ox-alpha latency varies by an order of magnitude (3s–61s) for comparable token loads, exposing hidden resource contention that breaks predicta
 - Calibration systematically underestimates output volume by 100% (predicted 3, actual 6), revealing a persistent bias that must be modeled as a baselin
-- Whispers parked after 3 failed attempts (e.g., Exemplar-Bank) indicate retry loops without escalation, so blocked items need an explicit decision path
-- The recurring pattern across cycles is that proposals and critiques accumulate but are never executed — the bottleneck is application/testing of ideas
-- Calibration shows systematic overconfidence (predicted 4 vs actual 2), so predictions should be discounted by roughly half or anchored to past per-goa
-- The swarm cycle failed at the artifact-execution stage (hand_action exit 1), meaning generated code is never smoke-tested before the green-light check
-- Both model failures were HTTP 429 rate-limit errors from OpenRouter's free tier, so the root cause is missing exponential backoff and provider fallbac
 
 ---
 

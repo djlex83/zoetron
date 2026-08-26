@@ -146,7 +146,7 @@
   "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig wenn: mindestens 200 gefilterte Paare in data/destillat/ liegen, ein Validator das Format prüft und die Statistik (Anzahl, Ablehnungsquote) im Wochenreport steht.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 1,
+  "_versuche": 2,
   "_zaehler_ab": 1787704274.3783333,
   "_wieder_geoeffnet": {
    "am": "2026-08-26 00:31 UTC",
