@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 12:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
-- Hard-gate every football-domain swarm on an executable artifact (code + test computing predicted win probabili
-- Add automatic exponential-backoff retry with model rotation on 429 errors, preferring the last-known-good fall
-- After two non-converged cycles on the same goal, trigger a mandatory pivot: change representation, decompose t
+- Implement a provider health tracker that records consecutive 429s per model and automatically deploys failing 
+- Build a skill-adoption ledger that requires each dream-cycle skill proposal to be either scheduled into a conc
+- Create a pre-flight prompt packer for conserve mode that compresses context to fit one high-latency model call
 
 ## 🔥 Eigene Ziele
 
@@ -31,16 +31,21 @@
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 3×)*
+- Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler untersuchen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
-- Häufige Modellfehler genauer untersuchen *(wieder aufgegriffen: 2×)*
-- Mehr Skill-Vorschläge wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- hand_action failed twice with exit 1 before succeeding on the third attempt, indicating a retry loop for shell actions resolves transient issues cheap
+- Calibration systematically underestimated effort (predicted 5 vs actual 9, abs_error 4), suggesting predictions should be inflated ~1.8x or recalibrat
+- Free-tier endpoints fail in two distinct ways that need different handling: 429 rate limits (retryable with backoff) versus upstream 502/no-choices er
+- The fallback chain is effective: when stealth/ox-alpha and z-ai/glm-5.2 failed, nvidia/nemotron-3-ultra and dots-studio/dots-3-note-preview completed 
+- 429 rate limits are the dominant failure mode (7 of 11 model_fail events), hitting multiple providers simultaneously, so bursts of parallel LLM calls 
 - Calibration predicted 3 but actual was 2 (abs_error=1), and bahnen score=2 with delta=-0.5 shows the reward signal is misaligned with true artifact qu
 - Evolution runs can jump scores from 2 to 8-9 in one generation, but only when the initial artifact is executable; non-runnable seeds waste cycles.
 - Simulation verdict 'go' was issued despite the artifact failing at runtime (traceback in tor log), revealing a gap between static analysis and executi
@@ -51,11 +56,6 @@
 - OpenRouter 429 rate-limit errors hit two models simultaneously, showing the retry strategy cycles through sibling models instead of backing off global
 - The root failure cause is a generated script (ction_1787744990820.py) that crashes at sys.exit in run_live_beat, indicating the builder produces code 
 - The swarm's evolution phase scored a variant 9/10 but the final artifact failed at runtime (exit 1), revealing that winner selection is based on stati
-- Free-tier OpenRouter models failed en masse with 429/502 within the same second, so bursts of parallel model calls guarantee rate-limit cascades unles
-- The evolution loop scored variants 9/8/9 yet the swarm finished at score 2 unconverged, indicating variant scoring measures code quality in isolation 
-- Calibration predicted 5 but actual was 2 (abs_error 3): self-assessed confidence systematically overestimates success when the deliverable has never b
-- hand_action failures carry error=null despite a Traceback existing in the artifact output, meaning the runner is discarding stderr/exit diagnostics an
-- Simulation verdicts are unreliable: it returned 'go' with 0 risks while the artifact immediately failed at runtime (exit 1), so 'go' must be gated on 
 
 ---
 

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2492 Neuronen · 48123 bewertete Synapsen
+Stand: 2497 Neuronen · 48413 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,16 +10,16 @@ Stand: 2492 Neuronen · 48123 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 242 | 0.24 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 242 | 0.24 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 244 | 0.24 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 244 | 0.24 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 190 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 176 | 0.24 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 179 | 0.23 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 181 | 0.23 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 140 | 0.26 |
 | 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 155 | 0.23 |
-| 8 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 148 | 0.24 |
-| 9 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 140 | 0.26 |
-| 10 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 128 | 0.28 |
+| 8 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 149 | 0.24 |
+| 9 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 129 | 0.28 |
+| 10 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 140 | 0.26 |
 | 11 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 141 | 0.25 |
 | 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 144 | 0.24 |
 | 13 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 142 | 0.25 |

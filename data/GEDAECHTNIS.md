@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3587 Fakten** · Stand 2026-08-26 12:58 UTC · aktualisiert bei jedem Herzschlag
+**3600 Fakten** · Stand 2026-08-26 13:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1508
-- **swarm_artifact:** 897
-- **last_swarm_critique:** 370
-- **anti_pattern:** 310
-- **last_swarm_goal:** 234
-- **strategy:** 176
+- **dream:** 1513
+- **swarm_artifact:** 899
+- **last_swarm_critique:** 371
+- **anti_pattern:** 312
+- **last_swarm_goal:** 235
+- **strategy:** 177
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 28
-- **tool:** 15
+- **tool:** 16
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
 - **frontier:** 3
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeits-messlatte-bauen-capability-be`
+*26.08. 13:13 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Messlatte bauen (Capability-Benchmark)'. Datei: data/tools/fähigkeits-messlatte-bauen-capability-be.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:fähigkeits_messlatte_bauen__capability_benchmark_`
+*26.08. 13:13 UTC · Quelle: evolution*
+
+Prozedurale Generierung statt hartkodierter Antworten: Recall als Live-Abruf-Experiment - Variante 0 behebt beide Kritikpunkte direkt und mit minimalem Aufwand: Prozedural generierte Nonce-Anker eliminieren die Hartkodierung vollständig (Items existieren per D
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeits-Messlatte bau:2`
+*26.08. 13:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score {'elegance': 9, 'feasibility': 5, 'impact': 8}): Kalibriertes Kompetenz-Raster mit adversarieller Validierung: Metrik über Kontra - Statt einzelner Prüfitems baue ein psychometrisch angelehntes Raster: Für jede Dimension (Recall,
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeits-Messlatte bau:1`
+*26.08. 13:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score {'elegance': 6, 'feasibility': 6, 'impact': 9}): Verhaltensbasierte Benchmarking-Suiten: Capability-Proben statt Textprüfung - Definiere die Messlatte als Suite von ausführbaren Mini-Aufgaben (Capability Probes), die tatsächliche
+
+### `swarm_artifact:Draft deliverable for: Fähigkeits-Messlatte bauen (Capabilit`
+*26.08. 13:11 UTC · Quelle: builder*
+
+[score 7] Der Benchmark-Organ prüft drei Dimensionen (Code mit Unit-Tests, Daten/Parsing mit bekannter Lösung, Recall gegen das eigene Gedächtnis) über je eine feste Aufgabe-Tabelle und schreibt d
+
+### `last_swarm_critique`
+*26.08. 13:11 UTC · Quelle: critic*
+
+score=7; issues=Recall-Dimension misst nur Substring-Vorkommen im Dateikorpus (memory/, data/, artefakte/) - das prueft, ob Text in Dateien steht, nicht tatsaechliches Abrufvermoegen; als 'Recall gegen das eigene Gedaechnis' ist das ein schwacher Proxy.; Die b
+
+### `swarm_artifact:Draft deliverable for: Fähigkeits-Messlatte bauen (Capabilit`
+*26.08. 13:11 UTC · Quelle: builder*
+
+Der Benchmark-Organ prüft drei Dimensionen (Code mit Unit-Tests, Daten/Parsing mit bekannter Lösung, Recall gegen das eigene Gedächtnis) über je eine feste Aufgabe-Tabelle und schreibt die Punktzahl 0
+
+### `last_swarm_goal`
+*26.08. 13:05 UTC · Quelle: system*
+
+Fähigkeits-Messlatte bauen (Capability-Benchmark)
+
+### `dream:20260826130458:5:fd35b6`
+*26.08. 13:04 UTC · Quelle: dream*
+
+hand_action failed twice with exit 1 before succeeding on the third attempt, indicating a retry loop for shell actions resolves transient issues cheaply (0.19–0.32s per attempt).
+
+### `dream:20260826130458:4:fcab13`
+*26.08. 13:04 UTC · Quelle: dream*
+
+Calibration systematically underestimated effort (predicted 5 vs actual 9, abs_error 4), suggesting predictions should be inflated ~1.8x or recalibrated against recent cycle scores.
+
+### `dream:20260826130458:3:66ea8c`
+*26.08. 13:04 UTC · Quelle: dream*
+
+Free-tier endpoints fail in two distinct ways that need different handling: 429 rate limits (retryable with backoff) versus upstream 502/no-choices errors (better served by immediate failover to the next model).
+
+### `dream:20260826130458:2:8904d1`
+*26.08. 13:04 UTC · Quelle: dream*
+
+The fallback chain is effective: when stealth/ox-alpha and z-ai/glm-5.2 failed, nvidia/nemotron-3-ultra and dots-studio/dots-3-note-preview completed the task successfully, so ordering free-tier fallbacks after primary models prevents hard stalls.
+
+### `dream:20260826130458:1:314a4d`
+*26.08. 13:04 UTC · Quelle: dream*
+
+429 rate limits are the dominant failure mode (7 of 11 model_fail events), hitting multiple providers simultaneously, so bursts of parallel LLM calls exhaust shared OpenRouter quota within seconds.
 
 ### `hand_result:Fähigkeits-Messlatte bauen (Capability-Benchmark)`
 *26.08. 12:58 UTC · Quelle: hands*
