@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 03:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 03:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,13 +25,13 @@
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration was exact (predicted 1, actual 1, abs_error 0) after retrieving 5 related memory traces, suggesting recall-enriched predictions are curren
+- The hand action failed with exit code 1 and no captured error output ('error': null), so exit-code-only failures need stderr/traceback capture at the 
+- The evolution loop worked as designed: a 1/10 artifact was revised through simulation feedback into a 7/10 winner across 3 variants, confirming that c
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeded in all 6 calls including heavy ones (2828 in / 5219 out tokens, 71.7s), making it the dependable prim
+- Free-tier models 'stealth/ox-alpha' and 'z-ai/glm-5.2:free' fail repeatedly with 429 Too Many Requests at burst intervals, so requests to them must be
 - Dream could not parse its own output - check prompt size.
 - Drive goals correctly detected the failure-to-action gap (many simulations, few applied acts), confirming that signal-based goal generation is working
 - prune_run removed zero facts and events despite heavy activity, suggesting pruning criteria are too conservative relative to the memory growth rate fr
@@ -51,11 +56,6 @@
 - Repeated prune runs report 0 facts/events pruned while memory keeps growing, indicating the pruning criteria are too conservative to actually bound me
 - Reflex-mode actions converge reliably and cheaply (0.2s hand_actions, converged=true), while deliberative model calls cost 8-17s, so routing well-know
 - The system's own drive goals already identify the two core failure modes — untested proposals and unexplained model errors — meaning self-generated go
-- Skill proposals are accumulating far faster than they are being tested (5+ new proposals per cycle vs. near-zero trials), so proposal generation witho
-- Latency variance is extreme (4.7s to 160.4s on the same model) and correlates loosely with token counts, so latency alone should not drive prioritizat
-- Swarm convergence failed after 2 cycles (converged=false) yet the run was accepted at score 6, indicating a missing rule for when to iterate versus ac
-- A destructive-operation guard correctly blocked the tool 'lebender-steckbrief-die-biografie-als-al' (subprocess needs human approval), revealing that 
-- The simulation verdict 'revise' flagged 3 risks but only 2 revisions were applied, meaning simulation findings can be silently dropped without an enfo
 
 ---
 
