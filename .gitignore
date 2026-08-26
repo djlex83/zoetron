@@ -39,3 +39,5 @@ data/selbstdiagnose.json
 # Sicherungen der .env - enthalten Schluessel (26.08.2026)
 .env.bak*
 .env.*.bak
+
+data/artefakte_aussortiert/

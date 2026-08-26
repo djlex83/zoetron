@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2795 Fakten** · Stand 2026-08-26 00:25 UTC · aktualisiert bei jedem Herzschlag
+**2821 Fakten** · Stand 2026-08-26 00:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1197
-- **swarm_artifact:** 761
-- **anti_pattern:** 250
-- **last_swarm_goal:** 193
-- **last_swarm_critique:** 185
-- **strategy:** 146
+- **dream:** 1202
+- **swarm_artifact:** 767
+- **anti_pattern:** 252
+- **last_swarm_critique:** 195
+- **last_swarm_goal:** 194
+- **strategy:** 147
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 9
+- **hand_result:** 10
 - **creator_teaching:** 8
 - **tool:** 6
 - **aktuell_organfehler:** 4
@@ -19,6 +19,136 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Destillat-Datensatz: Gedächtnis wird Trainingsmaterial`
+*26.08. 00:39 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787704780532.py\", line 17\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports mus"}
+
+### `strategy:destillat_datensatz__gedächtnis_wird_trainingsmate`
+*26.08. 00:39 UTC · Quelle: evolution*
+
+Contract-First: Validator zuerst, Writer wird vom Validator abgeleitet - Variante 1 adressiert beide dokumentierten Mängel strukturell statt nur symptomatisch: Der Contract-First-Ansatz eliminiert das Schema-Mismatch, weil der Writer den Validator vor j
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Destillat-Datensatz: Ged:2`
+*26.08. 00:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Radikale Minimierung: Eine einzige Datei, null Abhängigkeiten, null Meta-Feature - Alles in eine einzige destillat.py packen: Datenmodell als plain dict, Validierung als einfache if-Ketten, Schreiben via json.dump, Lesen via 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Destillat-Datensatz: Ged:0`
+*26.08. 00:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Single Source of Truth: Ein gemeinsames Schemamodul als einzige Wahrheitsquelle - Erstelle ein drittes Modul 'schema.py', das die Feldnamen als Konstanten definiert (FELD_ZIEL='ziel', FELD_KONTEXT='kontext', FELD_LOESUNG='loe
+
+### `swarm_artifact:Statistik-Ausgabe für den Wochenreport`
+*26.08. 00:38 UTC · Quelle: builder*
+
+[score 1] Das Statistikmodul liest Destillat und Rohbestand defensiv ein (defekte Zeilen/Felder zählen als abgelehnt statt zu crashen), berechnet alle geforderten Kennzahlen und gibt genau eine JS
+
+### `swarm_artifact:Validator für das Destillat-Format`
+*26.08. 00:38 UTC · Quelle: builder*
+
+[score 1] Der Validator prüft jede Zeile der destillat.jsonl auf gültiges JSON, Pflichtfelder, Score >= 8 und Duplikate, gibt Fehler klar auf Deutsch aus und beendet sich mit Exit-Code 0 (Bestehen
+
+### `swarm_artifact:destillat.py: nächtlicher Export mit hartem Qualitäts-Gate`
+*26.08. 00:38 UTC · Quelle: builder*
+
+[score 1] Das Skript liest alle Memory-Quellen unter `data/memory/` sowie `memory.jsonl`, wendet das harte Qualitäts-Gate an (Score >= 8, Test grün, Deduplizierung über normalisierten SHA256-Hash)
+
+### `last_swarm_critique`
+*26.08. 00:38 UTC · Quelle: critic*
+
+score=1; issues=SANDBOX-URTEIL: LAEUFT NICHT – SyntaxError bei 'from __future__ import annotations' (Zeile 17) in destillat.py und validate_destillat.py. Harter Mangel, keine Punkte fuer vermutete Korrektheit.; Vertragsverletzung Schema-Mismatch: destillat.py 
+
+### `swarm_artifact:Statistik-Ausgabe für den Wochenreport`
+*26.08. 00:37 UTC · Quelle: builder*
+
+Das Statistikmodul liest Destillat und Rohbestand defensiv ein (defekte Zeilen/Felder zählen als abgelehnt statt zu crashen), berechnet alle geforderten Kennzahlen und gibt genau eine JSON-Zeile aus. 
+
+### `swarm_artifact:Validator für das Destillat-Format`
+*26.08. 00:36 UTC · Quelle: builder*
+
+Der Validator prüft jede Zeile der destillat.jsonl auf gültiges JSON, Pflichtfelder, Score >= 8 und Duplikate, gibt Fehler klar auf Deutsch aus und beendet sich mit Exit-Code 0 (Bestehen) oder 1 (Vers
+
+### `swarm_artifact:destillat.py: nächtlicher Export mit hartem Qualitäts-Gate`
+*26.08. 00:36 UTC · Quelle: builder*
+
+Das Skript liest alle Memory-Quellen unter `data/memory/` sowie `memory.jsonl`, wendet das harte Qualitäts-Gate an (Score >= 8, Test grün, Deduplizierung über normalisierten SHA256-Hash) und schreibt 
+
+### `last_swarm_goal`
+*26.08. 00:34 UTC · Quelle: system*
+
+Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
+
+### `dream:20260826003357:5:63f4a0`
+*26.08. 00:33 UTC · Quelle: dream*
+
+Hand actions succeed reliably (exit 0, <0.2s), yet “push kurz” diagnostics go unintegrated, meaning low‑level failure signals are siloed from higher‑level recovery logic.
+
+### `dream:20260826003357:4:89eb2e`
+*26.08. 00:33 UTC · Quelle: dream*
+
+The goal “Destillat-Datensatz: Gedächtnis wird Trainingsmaterial” is a stable attractor, but feedback loops between calibration, model selection, and swarm convergence are broken, preventing closure.
+
+### `dream:20260826003357:3:97d8cb`
+*26.08. 00:33 UTC · Quelle: dream*
+
+Evolution/swarm runs plateau at 6/10 because recovery procedures apply uniform retries instead of targeting the calibration bias and latency spikes as root causes.
+
+### `dream:20260826003357:2:b88458`
+*26.08. 00:33 UTC · Quelle: dream*
+
+stealth/ox-alpha latency varies by an order of magnitude (3s–61s) for comparable token loads, exposing hidden resource contention that breaks predictable inference scheduling.
+
+### `dream:20260826003357:1:a0fbff`
+*26.08. 00:33 UTC · Quelle: dream*
+
+Calibration systematically underestimates output volume by 100% (predicted 3, actual 6), revealing a persistent bias that must be modeled as a baseline offset rather than random noise.
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:27 UTC · Quelle: critic*
+
+score=7; issues=
 
 ### `strategy:lokaler_schüler__das_erste_mal_lernt_das_gehirn_se`
 *26.08. 00:24 UTC · Quelle: evolution*

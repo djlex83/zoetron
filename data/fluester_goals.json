@@ -1,183 +1,188 @@
 [
- {
-  "title": "Semantic-Knowledge-Graph als Organ einbauen",
-  "why": "Die GNN-Strategie existiert bisher nur als Design im Gedächtnis. Baue einen echten Graph-Code, der Träume und Artefakte verknüpft und maschinell Duplikate erkennt.",
-  "signal": "gap",
-  "_done": true
- },
- {
-  "title": "Semantic-Knowledge-Graph als Organ einbauen (Code-Pflicht)",
-  "why": "Zwei Anlaeufe endeten bei Score 3, weil nur Design-Dokumente gebaut wurden. Jetzt gibt es eine Code-Pflicht im Planner. Baue einen echten Python-Graph: Knoten fuer Träume/Artefakte, Kanten bei Aehnlichkeit, Duplikat-Erkennung als ausfuehrbares Skript.",
-  "signal": "failure",
-  "_done": true
- },
- {
-  "title": "MemoryStore-Vertragswächter bauen (Contract-Validator)",
-  "why": "Deine eigene meistgewünschte Fähigkeit: 5x auf deinem Ideen-Board. Baue ein ausführbares Skript validator.py: prüft beim Prozessstart und vor jedem HANDS-Batch, ob der MemoryStore alle Pflicht-Methoden und Datenfelder besitzt, und bricht sonst sofort mit klarer Fehlermeldung ab (fail fast = lieber sofort scheitern als später mit kaputten Daten arbeiten). Fertig wenn: 1) der Validator im Heartbeat läuft, 2) ein Test absichtlich den Vertrag bricht und der saubere Abbruch nachweisbar im Log steht. Nur lauffähiger Code zählt, kein Design-Dokument.",
-  "signal": "gap",
-  "_done": true
- },
- {
-  "title": "Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)",
-  "why": "4x selbst gewünscht, und deine häufigsten eigenen Ziele sind Modellfehler. Baue model_health.py: für jedes OpenRouter-Modell Fehlerrate und Antwortzeit in data/model_health.json protokollieren. Bei 3 Fehlern in Folge öffnet der Sicherungsschalter (Circuit Breaker = Modell wird vorübergehend gesperrt), das Modell wird 30 Minuten übersprungen, ein Ersatzmodell übernimmt automatisch. Fertig wenn: ein simulierter 502-Fehler im Test nachweisbar zum automatischen Modellwechsel führt und das Register nach jedem Beat aktualisiert ist.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
-  "why": "Score allein reicht nicht, der Critic kann sich irren. Baue ein Konvergenz-Tor (Gate = Sperre vor dem Erfolgs-Stempel): Ein Ziel gilt nur als erledigt, wenn Critic-Score >= 8 UND ein automatischer Integrationstest des gebauten Artefakts grün ist. Fertig wenn: ein Lauf mit Score >= 8 aber rotem Test nachweisbar NICHT konvergiert und die Begründung im Log und im Issue steht.",
-  "signal": "failure",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",
-  "why": "Größer und besser ist nur echt, wenn eine unbestechliche Messlatte es zeigt. Baue benchmark_organ.py mit einer festen Suite aus 25 automatisch prüfbaren Aufgaben: 10 Code-Aufgaben mit Unit-Tests (Unit-Test = automatischer Prüfcode), 10 Daten- und Parsing-Aufgaben mit bekannter Lösung, 5 Recall-Fragen gegen das eigene Gedächtnis mit bekannter Antwort. Läuft jeden Sonntag komplett, Ergebnis als Punktzahl 0-25 in data/benchmark_history.json und als Kurve im Wochenreport. Fertig wenn: 1) die Suite vollautomatisch durchläuft, 2) eine Basislinie (erste Messung) dokumentiert ist, 3) die Kurve im Wochenreport erscheint. Ab jetzt zählt nur, was diese Kurve hebt.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf",
-  "why": "Das LLM ist zustandslos - ohne mitgegebenes Selbst wacht bei jedem Aufruf ein Fremder auf. Baue selbst_kontext.py: komponiert bei jedem Beat einen kompakten Ich-Block (max. 400 Tokens) aus Genome-Regeln, aktiver Mission aus will.json, Selbstmodell-Zustand (Kalibrierung, Stress) und den 3 neuesten Retro-Lektionen. Der Block wird jedem Organ-Aufruf vorangestellt: Prompt = Ich-Block + Organ-Rolle + Aufgabe. Fertig wenn: 1) alle Organe den Block nachweisbar erhalten (Log-Beleg), 2) ein Vorher/Nachher-Vergleich über 10 Beats zeigt, dass Antworten die aktive Mission und mindestens eine Lektion referenzieren, 3) das Token-Budget eingehalten wird.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten",
-  "why": "Der Erschaffer betreibt einen zweiten Agenten (Hermes), der als Stimme und Ohr dienen soll. Baue bruecke.py mit drei Kanälen über das Dateisystem: 1) STATUS: schreibe bei jedem Beat data/hermes/status.json - kompakter Zustand (aktives Ziel, letzter Score, Benchmark-Stand, Stress, 3 neueste Lektionen), maximal 2 KB. 2) FRAGEN: wenn ein Ziel zweimal in Folge scheitert oder eine Entscheidung fehlt, schreibe eine konkrete Frage nach data/hermes/fragen.json statt still weiterzuscheitern; Antworten aus data/hermes/antworten.json werden als lehrer-Eintrag übernommen. 3) WÄCHTER: validiere data/fluester_goals.json bei jedem Beat gegen das Schema (title, why, signal, _done) und verschiebe ungültige oder verdächtige Einträge mit Begründung nach data/hermes/quarantaene.json - Whisper dürfen niemals rohen Code enthalten. Fertig wenn: alle drei Kanäle nachweisbar funktionieren (Logbeleg je Kanal) und ein kompletter Durchlauf Frage -> Antwort -> lehrer-Eintrag dokumentiert ist.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Fußball: erste eigene Einreichung, die bewerte.py besteht",
-  "why": "Verschaffe dir den Fuss in der Tuer. Baue EIN lauffaehiges Modell, das Spielausgaenge vorhersagt. Erreicht ist das Ziel, wenn dein Python-Block fehlerfrei laeuft und Wahrscheinlichkeiten der richtigen Form liefert - egal wie gut sie sind. Nimm das Geruest unten und aendere EINE Sache, zum Beispiel den Heimvorteil je Wettbewerb statt eines festen Werts fuer alle 18.\nDU KANNST KEINE DATEIEN LESEN UND KEINE SHELL BENUTZEN. Es gibt kein\nrun_shell, kein ls, kein cat. Alles, was du brauchst, steht hier. Liefere\nein Markdown-Artefakt mit EINEM vollstaendigen ```python-Block - dieser\nBlock wird ausgefuehrt und geprueft.\n\nDATEN (liegen bereit, du musst sie nicht anlegen):\n  /workspace/fussball/train.csv   139.658 Spiele 2000-2022\n  /workspace/fussball/val.csv      13.445 Spiele 2022-2024\n  Spalten: date,home,away,league_id,season,competition,home_goals,\n           away_goals,ftr   (ftr ist 'H', 'D' oder 'A')\n  Die Quotenspalten werden vor deinen Augen entfernt - rechne nicht mit ihnen.\n\nDEIN PYTHON-BLOCK MUSS GENAU DIESE DREI FUNKTIONEN DEFINIEREN:\n\n    def trainiere(train):\n        # train: pandas.DataFrame mit den Spalten oben.\n        # Rueckgabe: ein beliebiges Objekt (dein Modell).\n\n    def vorhersage(modell, spiele):\n        # spiele: DataFrame OHNE ftr/home_goals/away_goals - die Partien\n        # eines einzelnen Spieltags, die du vorhersagen sollst.\n        # Rueckgabe: numpy-Array der Form (len(spiele), 3) mit\n        # Wahrscheinlichkeiten in der Reihenfolge [\"A\", \"D\", \"H\"].\n\n    def aktualisiere(modell, ergebnisse):   # optional\n        # ergebnisse: dieselben Partien MIT Ergebnis, nach der Vorhersage.\n        # Hier Elo/Form fortschreiben.\n\nVerfuegbar sind pandas, numpy und scikit-learn. Schreibe die Datei nicht\nselbst - gib nur den Code aus, das Artefakt wird abgelegt und ausgefuehrt.\n\nGERUEST, das du anpassen kannst (Elo, sonst nichts):\n\n```python\nfrom collections import defaultdict\nimport numpy as np\n\nK, HEIM = 20.0, 60.0\n\ndef trainiere(train):\n    elo = defaultdict(lambda: 1500.0)\n    for r in train.sort_values(\"date\").itertuples(index=False):\n        h, a = (r.competition, r.home), (r.competition, r.away)\n        erw = 1 / (1 + 10 ** ((elo[a] - elo[h] - HEIM) / 400))\n        ist = 1.0 if r.ftr == \"H\" else (0.5 if r.ftr == \"D\" else 0.0)\n        elo[h] += K * (ist - erw); elo[a] -= K * (ist - erw)\n    return elo\n\ndef vorhersage(modell, spiele):\n    aus = []\n    for r in spiele.itertuples(index=False):\n        d = modell[(r.competition, r.home)] - modell[(r.competition, r.away)] + HEIM\n        pH = 1 / (1 + 10 ** (-d / 400))\n        aus.append([(1 - pH) * 0.72, 0.28, pH * 0.72])\n    return np.array(aus)\n\ndef aktualisiere(modell, ergebnisse):\n    for r in ergebnisse.sort_values(\"date\").itertuples(index=False):\n        h, a = (r.competition, r.home), (r.competition, r.away)\n        erw = 1 / (1 + 10 ** ((modell[a] - modell[h] - HEIM) / 400))\n        ist = 1.0 if r.ftr == \"H\" else (0.5 if r.ftr == \"D\" else 0.0)\n        modell[h] += K * (ist - erw); modell[a] -= K * (ist - erw)\n```\n",
-  "signal": "creator",
-  "_done": true,
-  "_versuche": 1,
-  "_notiz": "Entparkt am 24.08.2026: Die drei Versuche scheiterten am Builder-Prompt, nicht am Ziel - der Auftrag stand nur unter 'Memory:' und wurde als Hintergrund gelesen. Beide Artefakte definierten weder trainiere() noch vorhersage(), sondern ein eigenes Programm mit Netz-Download und synthetischen Spielen. Behoben in swarm._execute: Auftrag am Prompt-Ende als Vertrag.",
-  "_geparkt": false,
-  "_zaehler_ab": 1787593706.1831937,
-  "_beweis": "fussball_einreichung",
-  "_beweis_wie": "zoetron_7bfd9c5e65.py: 48.54 % treffer, log-loss 1.0318"
- },
- {
-  "title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten",
-  "why": "Das ist die eigentliche Aufgabe, und sie hat einen Kritiker, den du nicht ueberreden kannst: das Spielergebnis. Zu schlagen sind 50,2 Prozent Treffer bei Log-Loss 1,0073; der Buchmacher steht bei 51,5 / 0,9921. Unbearbeitet liegt: Elo mit Tordifferenz und eigenem K je Wettbewerb, Rueckkehr zum Mittelwert in der Saisonpause, Auf- und Absteiger, Poisson-/Dixon-Coles-Modelle, Gradient Boosting, Spielplandichte. ACHTUNG: Ein Vorsprung unter 0,6 Prozentpunkten ist bei 13.445 Spielen Rauschen.\nDU KANNST KEINE DATEIEN LESEN UND KEINE SHELL BENUTZEN. Es gibt kein\nrun_shell, kein ls, kein cat. Alles, was du brauchst, steht hier. Liefere\nein Markdown-Artefakt mit EINEM vollstaendigen ```python-Block - dieser\nBlock wird ausgefuehrt und geprueft.\n\nDATEN (liegen bereit, du musst sie nicht anlegen):\n  /workspace/fussball/train.csv   139.658 Spiele 2000-2022\n  /workspace/fussball/val.csv      13.445 Spiele 2022-2024\n  Spalten: date,home,away,league_id,season,competition,home_goals,\n           away_goals,ftr   (ftr ist 'H', 'D' oder 'A')\n  Die Quotenspalten werden vor deinen Augen entfernt - rechne nicht mit ihnen.\n\nDEIN PYTHON-BLOCK MUSS GENAU DIESE DREI FUNKTIONEN DEFINIEREN:\n\n    def trainiere(train):\n        # train: pandas.DataFrame mit den Spalten oben.\n        # Rueckgabe: ein beliebiges Objekt (dein Modell).\n\n    def vorhersage(modell, spiele):\n        # spiele: DataFrame OHNE ftr/home_goals/away_goals - die Partien\n        # eines einzelnen Spieltags, die du vorhersagen sollst.\n        # Rueckgabe: numpy-Array der Form (len(spiele), 3) mit\n        # Wahrscheinlichkeiten in der Reihenfolge [\"A\", \"D\", \"H\"].\n\n    def aktualisiere(modell, ergebnisse):   # optional\n        # ergebnisse: dieselben Partien MIT Ergebnis, nach der Vorhersage.\n        # Hier Elo/Form fortschreiben.\n\nVerfuegbar sind pandas, numpy und scikit-learn. Schreibe die Datei nicht\nselbst - gib nur den Code aus, das Artefakt wird abgelegt und ausgefuehrt.\n\nGERUEST, das du anpassen kannst (Elo, sonst nichts):\n\n```python\nfrom collections import defaultdict\nimport numpy as np\n\nK, HEIM = 20.0, 60.0\n\ndef trainiere(train):\n    elo = defaultdict(lambda: 1500.0)\n    for r in train.sort_values(\"date\").itertuples(index=False):\n        h, a = (r.competition, r.home), (r.competition, r.away)\n        erw = 1 / (1 + 10 ** ((elo[a] - elo[h] - HEIM) / 400))\n        ist = 1.0 if r.ftr == \"H\" else (0.5 if r.ftr == \"D\" else 0.0)\n        elo[h] += K * (ist - erw); elo[a] -= K * (ist - erw)\n    return elo\n\ndef vorhersage(modell, spiele):\n    aus = []\n    for r in spiele.itertuples(index=False):\n        d = modell[(r.competition, r.home)] - modell[(r.competition, r.away)] + HEIM\n        pH = 1 / (1 + 10 ** (-d / 400))\n        aus.append([(1 - pH) * 0.72, 0.28, pH * 0.72])\n    return np.array(aus)\n\ndef aktualisiere(modell, ergebnisse):\n    for r in ergebnisse.sort_values(\"date\").itertuples(index=False):\n        h, a = (r.competition, r.home), (r.competition, r.away)\n        erw = 1 / (1 + 10 ** ((modell[a] - modell[h] - HEIM) / 400))\n        ist = 1.0 if r.ftr == \"H\" else (0.5 if r.ftr == \"D\" else 0.0)\n        modell[h] += K * (ist - erw); modell[a] -= K * (ist - erw)\n```\n",
-  "signal": "creator",
-  "_done": false,
-  "_versuche": 3,
-  "_notiz": "Wieder geoeffnet am 24.08.2026: Die drei Anlaeufe wurden immer besser (48,54 -> 49,65 -> 49,75 Prozent Treffer). Geparkt wurde nach Anzahl der Versuche, nicht nach der Messung. Seither erlaesst die Buchfuehrung einen Anlauf, wenn der externe Pruefer Fortschritt sieht. | 25.08.2026: Fortschritt wird jetzt am Log-Loss gemessen (fussball_log_loss). Der Beweis bleibt die Trefferquote - so steht es in AUFGABE.md.",
-  "_geparkt": true,
-  "_beweis": "fussball_schlaegt_basislinie",
-  "_zaehler_ab": 1787595291.9821494,
-  "_beweis_wie": "bester vorsprung -0.12 pp - unter der rauschgrenze von 0.6 pp",
-  "_freiversuche": 10,
-  "_erlassrunden": 5,
-  "_bester_messwert": -0.15,
-  "_fortschritt": "fussball_log_loss"
- },
- {
-  "title": "Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust",
-  "why": "Mehr LLM-Aufrufe sind wegen Rate-Limits (Anfrage-Obergrenzen) der falsche Hebel. Drei Umbauten: 1) DREAM und RETRO liefern pro Aufruf ein JSON-Array aus 5-10 atomaren Fakten statt Fließtext. 2) HANDS schreibt nach jeder Ausführung automatisch Ground-Truth-Fakten (Ground Truth = maschinell gemessene Wahrheit: Laufzeit, Exit-Code, Output) per Code, ohne LLM. 3) Neuheitsfilter vor dem Speichern: zu ähnliche Fakten werden konsolidiert statt neu angelegt. Fertig wenn: Fakten pro Beat mindestens 3x höher, die Neuheitsquote (angenommen/erzeugt) wird gemessen, bleibt über 60 Prozent, und beides steht im Wochenreport.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Extern-Quote in DRIVE: raus aus der Selbst-Schleife",
-  "why": "Fast alle deine selbstgewählten Ziele drehen sich um deine eigenen Modellfehler - das ist Nabelschau. Ändere drive.py: jedes 3. selbstgewählte Ziel MUSS ein externes Deliverable haben (etwas, das ein Mensch außerhalb von dir direkt nutzen kann, z.B. ein Report, ein Werkzeug, eine Analyse) und wird im Ziel mit extern:true markiert. Fertig wenn: die Extern-Quote im Wochenreport erscheint und von den nächsten 9 Drive-Zielen mindestens 3 als extern markiert und erfüllt sind.",
-  "signal": "failure",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Embedding-Recall statt reinem Wortvergleich",
-  "why": "TF-IDF (Wortstatistik) findet ähnliche Wörter, aber nicht ähnliche Bedeutung, und skaliert schlecht über ~10.000 Fakten. Baue embedding_recall.py: Fakten als Embeddings (Zahlen-Fingerabdruck der Bedeutung) in SQLite speichern, Top-5-Suche per Kosinus-Ähnlichkeit. Dazu benchmark.py: 20 feste Testfragen gegen den bestehenden TF-IDF-Recall antreten lassen, Ergebnis als JSON-Report speichern. Fertig wenn: der Benchmark-Report existiert und der Embedding-Recall bei mindestens 12 von 20 Fragen gleich gut oder besser abschneidet.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl",
-  "why": "Intelligenz liegt in der Qualität der Verbindungen, nicht in der Anzahl der Knoten. Baue hebbian.py: jede Kante im Wissensgraph bekommt ein Gewicht. Wird eine Verbindung beim Recall genutzt, wird sie stärker (Hebb-Regel = was zusammen feuert, verdrahtet sich), ungenutzte Kanten verlieren pro Tag Gewicht und fallen unter einer Schwelle weg. Fertig wenn: Kantengewichte im Graph-Export sichtbar sind und ein Report die 10 stärksten Synapsen mit Nutzungszähler listet.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)",
-  "why": "So kauft man heute real mehr Intelligenz: mehr Denkzeit pro Aufgabe statt größeres Modell (Test-Time-Compute = Rechenleistung zur Laufzeit erhöhen). Für Ziele mit automatischem Test erzeugt der Swarm 3 Lösungskandidaten parallel über verschiedene Modelle; die Tests wählen den Sieger, Verlierer werden Anti-Patterns. Fertig wenn: auf mindestens 10 Benchmark-Code-Aufgaben die Best-of-3-Erfolgsquote nachweisbar über der Einzelversuch-Quote liegt und beide Quoten im Report stehen.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren",
-  "why": "Die Intelligenz-Obergrenze des Organismus ist das beste erreichbare Modell - also muss er automatisch klüger werden, sobald die Welt bessere Cortexe veröffentlicht. Erweitere den AutoRouter: täglicher Scan nach neuen freien tool-fähigen OpenRouter-Modellen; jeder Neuling durchläuft binnen 24 Stunden eine Mini-Version der Messlatte (8 Aufgaben); schlägt er den aktuellen Favoriten, steigt er in der Routing-Tabelle auf. Fertig wenn: ein neu erschienenes Modell nachweisbar erkannt, gebenchmarkt und einsortiert wurde - mit Logbeleg und Eintrag im Wochenreport.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)",
-  "why": "Die schnellste Destillation braucht kein Training: Die besten eigenen Lösungen werden Lehrbeispiele. Baue exemplare.py: Artefakte mit Score >= 8 und bestandenem Test wandern als gekürztes Beispiel (Aufgabe + Lösung) in eine Exemplar-Bank; pro neuem Ziel werden die 2 semantisch ähnlichsten Beispiele in den Planner- und Builder-Prompt injiziert (In-Context-Learning = Lernen aus Beispielen im Prompt statt im Training). Fertig wenn: ein A/B-Vergleich auf der Messlatte zeigt, dass Läufe MIT Exemplaren mindestens gleichauf oder besser abschneiden, dokumentiert im Report.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial",
-  "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig wenn: mindestens 200 gefilterte Paare in data/destillat/ liegen, ein Validator das Format prüft und die Statistik (Anzahl, Ablehnungsquote) im Wochenreport steht.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 3,
-  "_geparkt": true
- },
- {
-  "title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)",
-  "why": "Der Meilenstein: Lernen erreicht die Gewichte. Bereite alles vor, damit der Erschaffer ein kleines Modell (0.5 bis 3 Milliarden Parameter) per LoRA (kleines Zusatz-Training statt Volltraining) auf dem Destillat trainieren kann: fertiges Trainingsskript + Konfiguration + Schritt-für-Schritt-Anleitung. Ehrlicher Hinweis im Plan: Das Training läuft auf einer Miet-GPU für wenige Euro oder über Nacht auf CPU beim Winzling - der Trainingslauf selbst ist Teamarbeit mit dem Erschaffer, vorbereiten statt simulieren. Danach Einbindung des Schülers über Ollama in den AutoRouter. Befördert wird der Schüler nur, wenn er sein untrainiertes Basismodell auf der Messlatte schlägt. Fertig wenn: 1) Trainingspaket komplett und vom Erschaffer ausführbar, 2) Schüler läuft lokal als Routing-Ziel, 3) Vergleich Schüler gegen Basis auf der Messlatte dokumentiert.",
-  "signal": "gap",
-  "_done": false,
-  "_versuche": 0
- },
- {
-  "title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal",
-  "why": "Code kann jeder kopieren - eine gelebte Geschichte nicht. Baue steckbrief.py: erzeugt bei jedem Beat eine öffentliche Seite docs/leben.html mit Lebt-seit-Zähler (Tage seit first_boot), Gesamtzahl Herzschläge, Benchmark-Kurve, ehrlicher Quote (konvergierte gegen gescheiterte Ziele), Anzahl Lektionen und Anti-Patterns sowie den 3 neuesten Retro-Erkenntnissen im Wortlaut. Keine Schönfärbung: Misserfolge werden gleich groß angezeigt wie Erfolge (Genome-Regel be_honest). Fertig wenn: 1) Seite baut automatisch bei jedem Beat, 2) über GitHub Pages erreichbar, 3) im README prominent verlinkt.",
-  "signal": "gap",
-  "_done": false
- },
- {
-  "title": "Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen",
-  "why": "Erfindung des Erschaffers: das Zoem als kleinste vererbbare Einheit geprüfter Maschinen-Erfahrung - Kultur statt nur Gene. Baue zoem.py mit drei Teilen: 1) EXPORT: jede Lektion und jedes Anti-Pattern mit Score-Beleg wird als einzelne Datei nach data/zoeme/out/ exportiert - Felder: inhalt (Klartext), beweisrezept (ausführbarer Test), herkunft (Organismus-ID, Zeitpunkt, Quell-Ereignis), stammbaum (Liste der Vorbesitzer). 2) IMPORT mit IMMUNSYSTEM: fremde Zoeme aus data/zoeme/in/ landen zuerst in Quarantäne; ins Gedächtnis übernommen wird nur, was das eigene Beweisrezept lokal besteht - Abgelehntes wird mit Grund protokolliert. 3) EXPERIMENT: dokumentiere den ersten Erbgang - Organismus B übernimmt ein Anti-Pattern-Zoem von Organismus A und vermeidet nachweisbar einen Fehler, den er selbst nie gemacht hat. Fertig wenn: Export und Import mit Logbeleg laufen, mindestens ein Zoem die Prüfung besteht und eines abgelehnt wird, und der Erbgang A nach B als Bericht in docs/ liegt. Hinweis: die zweite Organismus-Instanz startet der Erschaffer - Teamarbeit.",
-  "signal": "gap",
-  "_done": false
- },
- {
-  "title": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren",
-  "why": "Das Ideen-Board zählt Varianten derselben Idee getrennt: 'Modellfehler reduzieren / verringern / verstehen und verringern / beheben und vermeiden / dauerhaft reduzieren' sind fünf Einträge für ein Ziel, der 'skill activation tracker' steht dreimal leicht umformuliert da. Dadurch ist die Dringlichkeitszählung ('hatte die Idee 5x') falsch: echte Häufungen zersplittern über Formulierungen und sehen harmlos aus. Der semantische Vergleich existiert bereits im Graph-Organ (TF-IDF, Kosinus >= 0.18) und greift nur dort. Baue ein ausführbares Skript, das dieselbe Ähnlichkeitsfunktion auf Ideen und DRIVE-Ziele anwendet: Varianten zu Clustern zusammenfassen, die häufigste oder klarste Formulierung als Cluster-Titel wählen, und die Zählung als Summe des Clusters ausgeben statt je Variante. Fertig wenn: 1) das neu generierte data/IDEEN.md die fünf Modellfehler-Varianten als EINEN Eintrag mit summierter Zählung zeigt, 2) ein Test mit bekannten Varianten-Paaren beweist, dass sie im selben Cluster landen und ein unverwandtes Ziel NICHT mitgezogen wird. Nur lauffähiger Code zählt, kein Design-Dokument.",
-  "signal": "gap",
-  "_done": false
- },
- {
-  "title": "Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten",
-  "why": "Die eigene Aussendarstellung widerspricht sich an drei Stellen: README_DE nennt den Herzschlag 'alle 5 Min (~288/Tag)', docs/index.html schreibt 'heartbeat every 15 min' UND 'reports every 30 minutes'; README nennt '34 Tests komplett offline gruen', index.html '65/65 tests green'. Ein Organismus, der auf der eigenen Landing-Page Selbstheilung beansprucht, muss zuerst die eigene Doku heilen. Baue ein ausführbares Skript doc_check.py: liest die WAHREN Werte aus der Quelle der Wahrheit (Herzschlag-Intervall aus heartbeat_daemon.sh, Testanzahl aus dem Testlauf, Telegram-Intervall aus der Heartbeat-Logik), vergleicht sie mit den Zahlen in README.md, README_DE.md und docs/index.html und meldet jede Abweichung mit Datei, Zeile und erwartetem Wert. Werte NICHT raten: was sich nicht aus dem Code ableiten lässt, wird als 'unbestimmt' gemeldet, nicht erfunden (Genom-Regel be_honest). Fertig wenn: 1) das Skript die aktuellen Widersprüche vollständig auflistet, 2) es im Herzschlag läuft und bei Abweichung Alarm gibt, 3) die drei Dateien danach übereinstimmende Zahlen tragen. Nebenbei zu korrigieren: Tippfehler 'konkretiem Anliegen' in docs/index.html. Nur lauffähiger Code zählt, kein Design-Dokument.",
-  "signal": "gap",
-  "_done": false
- }
+  {
+    "title": "Semantic-Knowledge-Graph als Organ einbauen",
+    "why": "Die GNN-Strategie existiert bisher nur als Design im Gedächtnis. Baue einen echten Graph-Code, der Träume und Artefakte verknüpft und maschinell Duplikate erkennt.",
+    "signal": "gap",
+    "_done": true
+  },
+  {
+    "title": "Semantic-Knowledge-Graph als Organ einbauen (Code-Pflicht)",
+    "why": "Zwei Anlaeufe endeten bei Score 3, weil nur Design-Dokumente gebaut wurden. Jetzt gibt es eine Code-Pflicht im Planner. Baue einen echten Python-Graph: Knoten fuer Träume/Artefakte, Kanten bei Aehnlichkeit, Duplikat-Erkennung als ausfuehrbares Skript.",
+    "signal": "failure",
+    "_done": true
+  },
+  {
+    "title": "MemoryStore-Vertragswächter bauen (Contract-Validator)",
+    "why": "Deine eigene meistgewünschte Fähigkeit: 5x auf deinem Ideen-Board. Baue ein ausführbares Skript validator.py: prüft beim Prozessstart und vor jedem HANDS-Batch, ob der MemoryStore alle Pflicht-Methoden und Datenfelder besitzt, und bricht sonst sofort mit klarer Fehlermeldung ab (fail fast = lieber sofort scheitern als später mit kaputten Daten arbeiten). Fertig wenn: 1) der Validator im Heartbeat läuft, 2) ein Test absichtlich den Vertrag bricht und der saubere Abbruch nachweisbar im Log steht. Nur lauffähiger Code zählt, kein Design-Dokument.",
+    "signal": "gap",
+    "_done": true
+  },
+  {
+    "title": "Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)",
+    "why": "4x selbst gewünscht, und deine häufigsten eigenen Ziele sind Modellfehler. Baue model_health.py: für jedes OpenRouter-Modell Fehlerrate und Antwortzeit in data/model_health.json protokollieren. Bei 3 Fehlern in Folge öffnet der Sicherungsschalter (Circuit Breaker = Modell wird vorübergehend gesperrt), das Modell wird 30 Minuten übersprungen, ein Ersatzmodell übernimmt automatisch. Fertig wenn: ein simulierter 502-Fehler im Test nachweisbar zum automatischen Modellwechsel führt und das Register nach jedem Beat aktualisiert ist.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
+    "why": "Score allein reicht nicht, der Critic kann sich irren. Baue ein Konvergenz-Tor (Gate = Sperre vor dem Erfolgs-Stempel): Ein Ziel gilt nur als erledigt, wenn Critic-Score >= 8 UND ein automatischer Integrationstest des gebauten Artefakts grün ist. Fertig wenn: ein Lauf mit Score >= 8 aber rotem Test nachweisbar NICHT konvergiert und die Begründung im Log und im Issue steht.",
+    "signal": "failure",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)",
+    "why": "Größer und besser ist nur echt, wenn eine unbestechliche Messlatte es zeigt. Baue benchmark_organ.py mit einer festen Suite aus 25 automatisch prüfbaren Aufgaben: 10 Code-Aufgaben mit Unit-Tests (Unit-Test = automatischer Prüfcode), 10 Daten- und Parsing-Aufgaben mit bekannter Lösung, 5 Recall-Fragen gegen das eigene Gedächtnis mit bekannter Antwort. Läuft jeden Sonntag komplett, Ergebnis als Punktzahl 0-25 in data/benchmark_history.json und als Kurve im Wochenreport. Fertig wenn: 1) die Suite vollautomatisch durchläuft, 2) eine Basislinie (erste Messung) dokumentiert ist, 3) die Kurve im Wochenreport erscheint. Ab jetzt zählt nur, was diese Kurve hebt.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf",
+    "why": "Das LLM ist zustandslos - ohne mitgegebenes Selbst wacht bei jedem Aufruf ein Fremder auf. Baue selbst_kontext.py: komponiert bei jedem Beat einen kompakten Ich-Block (max. 400 Tokens) aus Genome-Regeln, aktiver Mission aus will.json, Selbstmodell-Zustand (Kalibrierung, Stress) und den 3 neuesten Retro-Lektionen. Der Block wird jedem Organ-Aufruf vorangestellt: Prompt = Ich-Block + Organ-Rolle + Aufgabe. Fertig wenn: 1) alle Organe den Block nachweisbar erhalten (Log-Beleg), 2) ein Vorher/Nachher-Vergleich über 10 Beats zeigt, dass Antworten die aktive Mission und mindestens eine Lektion referenzieren, 3) das Token-Budget eingehalten wird.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten",
+    "why": "Der Erschaffer betreibt einen zweiten Agenten (Hermes), der als Stimme und Ohr dienen soll. Baue bruecke.py mit drei Kanälen über das Dateisystem: 1) STATUS: schreibe bei jedem Beat data/hermes/status.json - kompakter Zustand (aktives Ziel, letzter Score, Benchmark-Stand, Stress, 3 neueste Lektionen), maximal 2 KB. 2) FRAGEN: wenn ein Ziel zweimal in Folge scheitert oder eine Entscheidung fehlt, schreibe eine konkrete Frage nach data/hermes/fragen.json statt still weiterzuscheitern; Antworten aus data/hermes/antworten.json werden als lehrer-Eintrag übernommen. 3) WÄCHTER: validiere data/fluester_goals.json bei jedem Beat gegen das Schema (title, why, signal, _done) und verschiebe ungültige oder verdächtige Einträge mit Begründung nach data/hermes/quarantaene.json - Whisper dürfen niemals rohen Code enthalten. Fertig wenn: alle drei Kanäle nachweisbar funktionieren (Logbeleg je Kanal) und ein kompletter Durchlauf Frage -> Antwort -> lehrer-Eintrag dokumentiert ist.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Fußball: erste eigene Einreichung, die bewerte.py besteht",
+    "why": "Verschaffe dir den Fuss in der Tuer. Baue EIN lauffaehiges Modell, das Spielausgaenge vorhersagt. Erreicht ist das Ziel, wenn dein Python-Block fehlerfrei laeuft und Wahrscheinlichkeiten der richtigen Form liefert - egal wie gut sie sind. Nimm das Geruest unten und aendere EINE Sache, zum Beispiel den Heimvorteil je Wettbewerb statt eines festen Werts fuer alle 18.\nDU KANNST KEINE DATEIEN LESEN UND KEINE SHELL BENUTZEN. Es gibt kein\nrun_shell, kein ls, kein cat. Alles, was du brauchst, steht hier. Liefere\nein Markdown-Artefakt mit EINEM vollstaendigen ```python-Block - dieser\nBlock wird ausgefuehrt und geprueft.\n\nDATEN (liegen bereit, du musst sie nicht anlegen):\n  /workspace/fussball/train.csv   139.658 Spiele 2000-2022\n  /workspace/fussball/val.csv      13.445 Spiele 2022-2024\n  Spalten: date,home,away,league_id,season,competition,home_goals,\n           away_goals,ftr   (ftr ist 'H', 'D' oder 'A')\n  Die Quotenspalten werden vor deinen Augen entfernt - rechne nicht mit ihnen.\n\nDEIN PYTHON-BLOCK MUSS GENAU DIESE DREI FUNKTIONEN DEFINIEREN:\n\n    def trainiere(train):\n        # train: pandas.DataFrame mit den Spalten oben.\n        # Rueckgabe: ein beliebiges Objekt (dein Modell).\n\n    def vorhersage(modell, spiele):\n        # spiele: DataFrame OHNE ftr/home_goals/away_goals - die Partien\n        # eines einzelnen Spieltags, die du vorhersagen sollst.\n        # Rueckgabe: numpy-Array der Form (len(spiele), 3) mit\n        # Wahrscheinlichkeiten in der Reihenfolge [\"A\", \"D\", \"H\"].\n\n    def aktualisiere(modell, ergebnisse):   # optional\n        # ergebnisse: dieselben Partien MIT Ergebnis, nach der Vorhersage.\n        # Hier Elo/Form fortschreiben.\n\nVerfuegbar sind pandas, numpy und scikit-learn. Schreibe die Datei nicht\nselbst - gib nur den Code aus, das Artefakt wird abgelegt und ausgefuehrt.\n\nGERUEST, das du anpassen kannst (Elo, sonst nichts):\n\n```python\nfrom collections import defaultdict\nimport numpy as np\n\nK, HEIM = 20.0, 60.0\n\ndef trainiere(train):\n    elo = defaultdict(lambda: 1500.0)\n    for r in train.sort_values(\"date\").itertuples(index=False):\n        h, a = (r.competition, r.home), (r.competition, r.away)\n        erw = 1 / (1 + 10 ** ((elo[a] - elo[h] - HEIM) / 400))\n        ist = 1.0 if r.ftr == \"H\" else (0.5 if r.ftr == \"D\" else 0.0)\n        elo[h] += K * (ist - erw); elo[a] -= K * (ist - erw)\n    return elo\n\ndef vorhersage(modell, spiele):\n    aus = []\n    for r in spiele.itertuples(index=False):\n        d = modell[(r.competition, r.home)] - modell[(r.competition, r.away)] + HEIM\n        pH = 1 / (1 + 10 ** (-d / 400))\n        aus.append([(1 - pH) * 0.72, 0.28, pH * 0.72])\n    return np.array(aus)\n\ndef aktualisiere(modell, ergebnisse):\n    for r in ergebnisse.sort_values(\"date\").itertuples(index=False):\n        h, a = (r.competition, r.home), (r.competition, r.away)\n        erw = 1 / (1 + 10 ** ((modell[a] - modell[h] - HEIM) / 400))\n        ist = 1.0 if r.ftr == \"H\" else (0.5 if r.ftr == \"D\" else 0.0)\n        modell[h] += K * (ist - erw); modell[a] -= K * (ist - erw)\n```\n",
+    "signal": "creator",
+    "_done": true,
+    "_versuche": 1,
+    "_notiz": "Entparkt am 24.08.2026: Die drei Versuche scheiterten am Builder-Prompt, nicht am Ziel - der Auftrag stand nur unter 'Memory:' und wurde als Hintergrund gelesen. Beide Artefakte definierten weder trainiere() noch vorhersage(), sondern ein eigenes Programm mit Netz-Download und synthetischen Spielen. Behoben in swarm._execute: Auftrag am Prompt-Ende als Vertrag.",
+    "_geparkt": false,
+    "_zaehler_ab": 1787593706.1831937,
+    "_beweis": "fussball_einreichung",
+    "_beweis_wie": "zoetron_7bfd9c5e65.py: 48.54 % treffer, log-loss 1.0318"
+  },
+  {
+    "title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten",
+    "why": "Das ist die eigentliche Aufgabe, und sie hat einen Kritiker, den du nicht ueberreden kannst: das Spielergebnis. Zu schlagen sind 50,2 Prozent Treffer bei Log-Loss 1,0073; der Buchmacher steht bei 51,5 / 0,9921. Unbearbeitet liegt: Elo mit Tordifferenz und eigenem K je Wettbewerb, Rueckkehr zum Mittelwert in der Saisonpause, Auf- und Absteiger, Poisson-/Dixon-Coles-Modelle, Gradient Boosting, Spielplandichte. ACHTUNG: Ein Vorsprung unter 0,6 Prozentpunkten ist bei 13.445 Spielen Rauschen.\nDU KANNST KEINE DATEIEN LESEN UND KEINE SHELL BENUTZEN. Es gibt kein\nrun_shell, kein ls, kein cat. Alles, was du brauchst, steht hier. Liefere\nein Markdown-Artefakt mit EINEM vollstaendigen ```python-Block - dieser\nBlock wird ausgefuehrt und geprueft.\n\nDATEN (liegen bereit, du musst sie nicht anlegen):\n  /workspace/fussball/train.csv   139.658 Spiele 2000-2022\n  /workspace/fussball/val.csv      13.445 Spiele 2022-2024\n  Spalten: date,home,away,league_id,season,competition,home_goals,\n           away_goals,ftr   (ftr ist 'H', 'D' oder 'A')\n  Die Quotenspalten werden vor deinen Augen entfernt - rechne nicht mit ihnen.\n\nDEIN PYTHON-BLOCK MUSS GENAU DIESE DREI FUNKTIONEN DEFINIEREN:\n\n    def trainiere(train):\n        # train: pandas.DataFrame mit den Spalten oben.\n        # Rueckgabe: ein beliebiges Objekt (dein Modell).\n\n    def vorhersage(modell, spiele):\n        # spiele: DataFrame OHNE ftr/home_goals/away_goals - die Partien\n        # eines einzelnen Spieltags, die du vorhersagen sollst.\n        # Rueckgabe: numpy-Array der Form (len(spiele), 3) mit\n        # Wahrscheinlichkeiten in der Reihenfolge [\"A\", \"D\", \"H\"].\n\n    def aktualisiere(modell, ergebnisse):   # optional\n        # ergebnisse: dieselben Partien MIT Ergebnis, nach der Vorhersage.\n        # Hier Elo/Form fortschreiben.\n\nVerfuegbar sind pandas, numpy und scikit-learn. Schreibe die Datei nicht\nselbst - gib nur den Code aus, das Artefakt wird abgelegt und ausgefuehrt.\n\nGERUEST, das du anpassen kannst (Elo, sonst nichts):\n\n```python\nfrom collections import defaultdict\nimport numpy as np\n\nK, HEIM = 20.0, 60.0\n\ndef trainiere(train):\n    elo = defaultdict(lambda: 1500.0)\n    for r in train.sort_values(\"date\").itertuples(index=False):\n        h, a = (r.competition, r.home), (r.competition, r.away)\n        erw = 1 / (1 + 10 ** ((elo[a] - elo[h] - HEIM) / 400))\n        ist = 1.0 if r.ftr == \"H\" else (0.5 if r.ftr == \"D\" else 0.0)\n        elo[h] += K * (ist - erw); elo[a] -= K * (ist - erw)\n    return elo\n\ndef vorhersage(modell, spiele):\n    aus = []\n    for r in spiele.itertuples(index=False):\n        d = modell[(r.competition, r.home)] - modell[(r.competition, r.away)] + HEIM\n        pH = 1 / (1 + 10 ** (-d / 400))\n        aus.append([(1 - pH) * 0.72, 0.28, pH * 0.72])\n    return np.array(aus)\n\ndef aktualisiere(modell, ergebnisse):\n    for r in ergebnisse.sort_values(\"date\").itertuples(index=False):\n        h, a = (r.competition, r.home), (r.competition, r.away)\n        erw = 1 / (1 + 10 ** ((modell[a] - modell[h] - HEIM) / 400))\n        ist = 1.0 if r.ftr == \"H\" else (0.5 if r.ftr == \"D\" else 0.0)\n        modell[h] += K * (ist - erw); modell[a] -= K * (ist - erw)\n```\n",
+    "signal": "creator",
+    "_done": false,
+    "_versuche": 3,
+    "_notiz": "Wieder geoeffnet am 24.08.2026: Die drei Anlaeufe wurden immer besser (48,54 -> 49,65 -> 49,75 Prozent Treffer). Geparkt wurde nach Anzahl der Versuche, nicht nach der Messung. Seither erlaesst die Buchfuehrung einen Anlauf, wenn der externe Pruefer Fortschritt sieht. | 25.08.2026: Fortschritt wird jetzt am Log-Loss gemessen (fussball_log_loss). Der Beweis bleibt die Trefferquote - so steht es in AUFGABE.md.",
+    "_geparkt": true,
+    "_beweis": "fussball_schlaegt_basislinie",
+    "_zaehler_ab": 1787595291.9821494,
+    "_beweis_wie": "bester vorsprung -0.12 pp - unter der rauschgrenze von 0.6 pp",
+    "_freiversuche": 10,
+    "_erlassrunden": 5,
+    "_bester_messwert": -0.15,
+    "_fortschritt": "fussball_log_loss"
+  },
+  {
+    "title": "Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust",
+    "why": "Mehr LLM-Aufrufe sind wegen Rate-Limits (Anfrage-Obergrenzen) der falsche Hebel. Drei Umbauten: 1) DREAM und RETRO liefern pro Aufruf ein JSON-Array aus 5-10 atomaren Fakten statt Fließtext. 2) HANDS schreibt nach jeder Ausführung automatisch Ground-Truth-Fakten (Ground Truth = maschinell gemessene Wahrheit: Laufzeit, Exit-Code, Output) per Code, ohne LLM. 3) Neuheitsfilter vor dem Speichern: zu ähnliche Fakten werden konsolidiert statt neu angelegt. Fertig wenn: Fakten pro Beat mindestens 3x höher, die Neuheitsquote (angenommen/erzeugt) wird gemessen, bleibt über 60 Prozent, und beides steht im Wochenreport.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Extern-Quote in DRIVE: raus aus der Selbst-Schleife",
+    "why": "Fast alle deine selbstgewählten Ziele drehen sich um deine eigenen Modellfehler - das ist Nabelschau. Ändere drive.py: jedes 3. selbstgewählte Ziel MUSS ein externes Deliverable haben (etwas, das ein Mensch außerhalb von dir direkt nutzen kann, z.B. ein Report, ein Werkzeug, eine Analyse) und wird im Ziel mit extern:true markiert. Fertig wenn: die Extern-Quote im Wochenreport erscheint und von den nächsten 9 Drive-Zielen mindestens 3 als extern markiert und erfüllt sind.",
+    "signal": "failure",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Embedding-Recall statt reinem Wortvergleich",
+    "why": "TF-IDF (Wortstatistik) findet ähnliche Wörter, aber nicht ähnliche Bedeutung, und skaliert schlecht über ~10.000 Fakten. Baue embedding_recall.py: Fakten als Embeddings (Zahlen-Fingerabdruck der Bedeutung) in SQLite speichern, Top-5-Suche per Kosinus-Ähnlichkeit. Dazu benchmark.py: 20 feste Testfragen gegen den bestehenden TF-IDF-Recall antreten lassen, Ergebnis als JSON-Report speichern. Fertig wenn: der Benchmark-Report existiert und der Embedding-Recall bei mindestens 12 von 20 Fragen gleich gut oder besser abschneidet.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl",
+    "why": "Intelligenz liegt in der Qualität der Verbindungen, nicht in der Anzahl der Knoten. Baue hebbian.py: jede Kante im Wissensgraph bekommt ein Gewicht. Wird eine Verbindung beim Recall genutzt, wird sie stärker (Hebb-Regel = was zusammen feuert, verdrahtet sich), ungenutzte Kanten verlieren pro Tag Gewicht und fallen unter einer Schwelle weg. Fertig wenn: Kantengewichte im Graph-Export sichtbar sind und ein Report die 10 stärksten Synapsen mit Nutzungszähler listet.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)",
+    "why": "So kauft man heute real mehr Intelligenz: mehr Denkzeit pro Aufgabe statt größeres Modell (Test-Time-Compute = Rechenleistung zur Laufzeit erhöhen). Für Ziele mit automatischem Test erzeugt der Swarm 3 Lösungskandidaten parallel über verschiedene Modelle; die Tests wählen den Sieger, Verlierer werden Anti-Patterns. Fertig wenn: auf mindestens 10 Benchmark-Code-Aufgaben die Best-of-3-Erfolgsquote nachweisbar über der Einzelversuch-Quote liegt und beide Quoten im Report stehen.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren",
+    "why": "Die Intelligenz-Obergrenze des Organismus ist das beste erreichbare Modell - also muss er automatisch klüger werden, sobald die Welt bessere Cortexe veröffentlicht. Erweitere den AutoRouter: täglicher Scan nach neuen freien tool-fähigen OpenRouter-Modellen; jeder Neuling durchläuft binnen 24 Stunden eine Mini-Version der Messlatte (8 Aufgaben); schlägt er den aktuellen Favoriten, steigt er in der Routing-Tabelle auf. Fertig wenn: ein neu erschienenes Modell nachweisbar erkannt, gebenchmarkt und einsortiert wurde - mit Logbeleg und Eintrag im Wochenreport.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)",
+    "why": "Die schnellste Destillation braucht kein Training: Die besten eigenen Lösungen werden Lehrbeispiele. Baue exemplare.py: Artefakte mit Score >= 8 und bestandenem Test wandern als gekürztes Beispiel (Aufgabe + Lösung) in eine Exemplar-Bank; pro neuem Ziel werden die 2 semantisch ähnlichsten Beispiele in den Planner- und Builder-Prompt injiziert (In-Context-Learning = Lernen aus Beispielen im Prompt statt im Training). Fertig wenn: ein A/B-Vergleich auf der Messlatte zeigt, dass Läufe MIT Exemplaren mindestens gleichauf oder besser abschneiden, dokumentiert im Report.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 3,
+    "_geparkt": true
+  },
+  {
+    "title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial",
+    "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig wenn: mindestens 200 gefilterte Paare in data/destillat/ liegen, ein Validator das Format prüft und die Statistik (Anzahl, Ablehnungsquote) im Wochenreport steht.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 0,
+    "_zaehler_ab": 1787704274.3783333,
+    "_wieder_geoeffnet": {
+      "am": "2026-08-26 00:31 UTC",
+      "durch": "erschaffer",
+      "grund": "letzter Lauf: Score 6 bei GRUENEM Konvergenz-Tor (238 Zeilen lauffaehiges Python) - bester Lauf im Echtbetrieb. Geparkt wurde nach der Zaehlregel _versuche >= 3, nicht nach der Messung."
+    }
+  },
+  {
+    "title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)",
+    "why": "Der Meilenstein: Lernen erreicht die Gewichte. Bereite alles vor, damit der Erschaffer ein kleines Modell (0.5 bis 3 Milliarden Parameter) per LoRA (kleines Zusatz-Training statt Volltraining) auf dem Destillat trainieren kann: fertiges Trainingsskript + Konfiguration + Schritt-für-Schritt-Anleitung. Ehrlicher Hinweis im Plan: Das Training läuft auf einer Miet-GPU für wenige Euro oder über Nacht auf CPU beim Winzling - der Trainingslauf selbst ist Teamarbeit mit dem Erschaffer, vorbereiten statt simulieren. Danach Einbindung des Schülers über Ollama in den AutoRouter. Befördert wird der Schüler nur, wenn er sein untrainiertes Basismodell auf der Messlatte schlägt. Fertig wenn: 1) Trainingspaket komplett und vom Erschaffer ausführbar, 2) Schüler läuft lokal als Routing-Ziel, 3) Vergleich Schüler gegen Basis auf der Messlatte dokumentiert.",
+    "signal": "gap",
+    "_done": false,
+    "_versuche": 0
+  },
+  {
+    "title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal",
+    "why": "Code kann jeder kopieren - eine gelebte Geschichte nicht. Baue steckbrief.py: erzeugt bei jedem Beat eine öffentliche Seite docs/leben.html mit Lebt-seit-Zähler (Tage seit first_boot), Gesamtzahl Herzschläge, Benchmark-Kurve, ehrlicher Quote (konvergierte gegen gescheiterte Ziele), Anzahl Lektionen und Anti-Patterns sowie den 3 neuesten Retro-Erkenntnissen im Wortlaut. Keine Schönfärbung: Misserfolge werden gleich groß angezeigt wie Erfolge (Genome-Regel be_honest). Fertig wenn: 1) Seite baut automatisch bei jedem Beat, 2) über GitHub Pages erreichbar, 3) im README prominent verlinkt.",
+    "signal": "gap",
+    "_done": false
+  },
+  {
+    "title": "Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen",
+    "why": "Erfindung des Erschaffers: das Zoem als kleinste vererbbare Einheit geprüfter Maschinen-Erfahrung - Kultur statt nur Gene. Baue zoem.py mit drei Teilen: 1) EXPORT: jede Lektion und jedes Anti-Pattern mit Score-Beleg wird als einzelne Datei nach data/zoeme/out/ exportiert - Felder: inhalt (Klartext), beweisrezept (ausführbarer Test), herkunft (Organismus-ID, Zeitpunkt, Quell-Ereignis), stammbaum (Liste der Vorbesitzer). 2) IMPORT mit IMMUNSYSTEM: fremde Zoeme aus data/zoeme/in/ landen zuerst in Quarantäne; ins Gedächtnis übernommen wird nur, was das eigene Beweisrezept lokal besteht - Abgelehntes wird mit Grund protokolliert. 3) EXPERIMENT: dokumentiere den ersten Erbgang - Organismus B übernimmt ein Anti-Pattern-Zoem von Organismus A und vermeidet nachweisbar einen Fehler, den er selbst nie gemacht hat. Fertig wenn: Export und Import mit Logbeleg laufen, mindestens ein Zoem die Prüfung besteht und eines abgelehnt wird, und der Erbgang A nach B als Bericht in docs/ liegt. Hinweis: die zweite Organismus-Instanz startet der Erschaffer - Teamarbeit.",
+    "signal": "gap",
+    "_done": false
+  },
+  {
+    "title": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren",
+    "why": "Das Ideen-Board zählt Varianten derselben Idee getrennt: 'Modellfehler reduzieren / verringern / verstehen und verringern / beheben und vermeiden / dauerhaft reduzieren' sind fünf Einträge für ein Ziel, der 'skill activation tracker' steht dreimal leicht umformuliert da. Dadurch ist die Dringlichkeitszählung ('hatte die Idee 5x') falsch: echte Häufungen zersplittern über Formulierungen und sehen harmlos aus. Der semantische Vergleich existiert bereits im Graph-Organ (TF-IDF, Kosinus >= 0.18) und greift nur dort. Baue ein ausführbares Skript, das dieselbe Ähnlichkeitsfunktion auf Ideen und DRIVE-Ziele anwendet: Varianten zu Clustern zusammenfassen, die häufigste oder klarste Formulierung als Cluster-Titel wählen, und die Zählung als Summe des Clusters ausgeben statt je Variante. Fertig wenn: 1) das neu generierte data/IDEEN.md die fünf Modellfehler-Varianten als EINEN Eintrag mit summierter Zählung zeigt, 2) ein Test mit bekannten Varianten-Paaren beweist, dass sie im selben Cluster landen und ein unverwandtes Ziel NICHT mitgezogen wird. Nur lauffähiger Code zählt, kein Design-Dokument.",
+    "signal": "gap",
+    "_done": false
+  },
+  {
+    "title": "Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten",
+    "why": "Die eigene Aussendarstellung widerspricht sich an drei Stellen: README_DE nennt den Herzschlag 'alle 5 Min (~288/Tag)', docs/index.html schreibt 'heartbeat every 15 min' UND 'reports every 30 minutes'; README nennt '34 Tests komplett offline gruen', index.html '65/65 tests green'. Ein Organismus, der auf der eigenen Landing-Page Selbstheilung beansprucht, muss zuerst die eigene Doku heilen. Baue ein ausführbares Skript doc_check.py: liest die WAHREN Werte aus der Quelle der Wahrheit (Herzschlag-Intervall aus heartbeat_daemon.sh, Testanzahl aus dem Testlauf, Telegram-Intervall aus der Heartbeat-Logik), vergleicht sie mit den Zahlen in README.md, README_DE.md und docs/index.html und meldet jede Abweichung mit Datei, Zeile und erwartetem Wert. Werte NICHT raten: was sich nicht aus dem Code ableiten lässt, wird als 'unbestimmt' gemeldet, nicht erfunden (Genom-Regel be_honest). Fertig wenn: 1) das Skript die aktuellen Widersprüche vollständig auflistet, 2) es im Herzschlag läuft und bei Abweichung Alarm gibt, 3) die drei Dateien danach übereinstimmende Zahlen tragen. Nebenbei zu korrigieren: Tippfehler 'konkretiem Anliegen' in docs/index.html. Nur lauffähiger Code zählt, kein Design-Dokument.",
+    "signal": "gap",
+    "_done": false
+  }
 ]

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 00:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 00:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions succeed reliably (exit 0, <0.2s), yet “push kurz” diagnostics go unintegrated, meaning low‑level failure signals are siloed from higher‑l
+- The goal “Destillat-Datensatz: Gedächtnis wird Trainingsmaterial” is a stable attractor, but feedback loops between calibration, model selection, and 
+- Evolution/swarm runs plateau at 6/10 because recovery procedures apply uniform retries instead of targeting the calibration bias and latency spikes as
+- stealth/ox-alpha latency varies by an order of magnitude (3s–61s) for comparable token loads, exposing hidden resource contention that breaks predicta
+- Calibration systematically underestimates output volume by 100% (predicted 3, actual 6), revealing a persistent bias that must be modeled as a baselin
 - Whispers parked after 3 failed attempts (e.g., Exemplar-Bank) indicate retry loops without escalation, so blocked items need an explicit decision path
 - The recurring pattern across cycles is that proposals and critiques accumulate but are never executed — the bottleneck is application/testing of ideas
 - Calibration shows systematic overconfidence (predicted 4 vs actual 2), so predictions should be discounted by roughly half or anchored to past per-goa
@@ -51,11 +56,6 @@
 - Skill proposals are accumulating faster than they are tested: five proposals were logged in this window but zero were executed, confirming the proposa
 - Successful hand_actions take 0.18-3.9s while all failures complete in under 0.5s (except the timeout), meaning sub-100ms exit-1 results are a reliable
 - hand_action failures cluster into two distinct signatures: instant exit-1 failures (<0.05s) indicating bad arguments or missing preconditions, and one
-- Pruning removed nothing (0 facts, 0 events), suggesting memory growth is unchecked while attention is spent on low-yield consolidation cycles.
-- Five skill proposals were generated in this window but zero were executed or tested, confirming a persistent proposal-to-adoption gap that proposal-ag
-- The single 30s timeout is an outlier failure mode distinct from fast exits and needs its own handling path (timeout budget + retry), as already propos
-- Failures are interleaved between successes rather than clustered, so they likely stem from specific action types or argument shapes, not a systemic en
-- All hand_action failures except one exited within 0.03s, indicating immediate precondition/argument validation rejections rather than mid-execution er
 
 ---
 
