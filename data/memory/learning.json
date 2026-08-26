@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 10:35:36",
- "ereignisse_ausgewertet": 2857,
+ "stand": "2026-08-26 10:43:56",
+ "ereignisse_ausgewertet": 2879,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-prüfen-und-verbesse.py",
@@ -12,6 +12,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-traumideen-mit-strategien-verbinden.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -39,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-traumideen-mit-strategien-verbinden.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -63,7 +63,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.607,
+ "haende_quote": 0.609,
  "simulationen_angewandt": 62,
  "swarm_scores": {
   "n": 55,

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-mode actions succeed cheaply (exit 0 in 0.2s) while full swarm cycles are slow, suggesting routine goals should be classified for reflex handli
+- Model reliability is heterogeneous (nemotron-3-ultra took ~60s vs ox-alpha ~8s) and failures like 429/5xx recur, so per-model health tracking must pre
+- Stored knowledge is rarely retrieved during task execution, meaning memory write volume far exceeds read utility and retrieval triggers are missing.
+- Skill proposals are generated at a high rate but almost none are implemented or tested, so the bottleneck is proposal-to-trial conversion, not idea ge
+- Prediction failures are the dominant recurring failure signal (24 failed predictions), indicating score/risk forecasts are systematically miscalibrate
 - Successful use of nvidia/nemotron-3-ultra-550b-a55b:free alongside failing models proves that latency and budget guards must be decoupled from raw cap
 - The explicit drive goal connecting old dreams demonstrates that cross-referencing prior experiences automagically generates novel solutions and should
 - Reflexive tool investigation consistently converges ok=true proving that systematic alternative enumeration is a high-reliability strategy for resolvi
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors despite cascading model failures, revealing a blind spot: external API degradation is not classified as an or
 - Reflex-driven goals consistently converge while deliberate goals accumulate, suggesting the system trusts fast heuristics over slow planning.
 - Repeated HTTP 429 errors across multiple free-tier models indicate rate-limiting is a systemic bottleneck, not an isolated incident.
-- Actions with null scores are being marked as converged: true, which may mask underlying execution failures.
-- The system's self-diagnosis and pruning mechanisms are stable but currently inactive, indicating a clean state or a need for more aggressive memory ma
-- Reflexes successfully execute maintenance tasks with minimal overhead (0.18s), proving their utility for routine operations.
-- Latency for fallback models like nvidia/nemotron-3-ultra-550b-a55b:free can fluctuate significantly (9.4s to 20.0s), impacting real-time response goal
-- Free-tier models on OpenRouter are highly susceptible to rate limiting (429 errors), requiring robust fallback mechanisms.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3398 Fakten** · Stand 2026-08-26 10:35 UTC · aktualisiert bei jedem Herzschlag
+**3403 Fakten** · Stand 2026-08-26 10:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1468
+- **dream:** 1473
 - **swarm_artifact:** 875
 - **anti_pattern:** 298
 - **last_swarm_critique:** 273
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826104228:5:59107c`
+*26.08. 10:42 UTC · Quelle: dream*
+
+Reflex-mode actions succeed cheaply (exit 0 in 0.2s) while full swarm cycles are slow, suggesting routine goals should be classified for reflex handling before swarm escalation.
+
+### `dream:20260826104228:4:bb6993`
+*26.08. 10:42 UTC · Quelle: dream*
+
+Model reliability is heterogeneous (nemotron-3-ultra took ~60s vs ox-alpha ~8s) and failures like 429/5xx recur, so per-model health tracking must precede routing decisions.
+
+### `dream:20260826104228:3:f88873`
+*26.08. 10:42 UTC · Quelle: dream*
+
+Stored knowledge is rarely retrieved during task execution, meaning memory write volume far exceeds read utility and retrieval triggers are missing.
+
+### `dream:20260826104228:2:114346`
+*26.08. 10:42 UTC · Quelle: dream*
+
+Skill proposals are generated at a high rate but almost none are implemented or tested, so the bottleneck is proposal-to-trial conversion, not idea generation.
+
+### `dream:20260826104228:1:de42d2`
+*26.08. 10:42 UTC · Quelle: dream*
+
+Prediction failures are the dominant recurring failure signal (24 failed predictions), indicating score/risk forecasts are systematically miscalibrated rather than random noise.
 
 ### `dream:20260826103355:5:ec406c`
 *26.08. 10:33 UTC · Quelle: dream*
