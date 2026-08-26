@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2135 Neuronen · 36031 bewertete Synapsen
+Stand: 2148 Neuronen · 36358 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 2135 Neuronen · 36031 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 204 | 0.23 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 204 | 0.23 |
-| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 170 | 0.25 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 206 | 0.23 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 206 | 0.23 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 172 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 164 | 0.25 |
 | 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 130 | 0.27 |
-| 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 132 | 0.26 |
-| 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 139 | 0.24 |
-| 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 132 | 0.25 |
+| 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 133 | 0.26 |
+| 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 140 | 0.24 |
+| 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 133 | 0.25 |
 | 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 119 | 0.26 |
-| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 122 | 0.25 |
-| 11 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 126 | 0.24 |
-| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 125 | 0.24 |
+| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 123 | 0.25 |
+| 11 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 126 | 0.24 |
+| 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 126 | 0.24 |
 | 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 120 | 0.25 |
-| 14 | 💭 | Simulation revision loops (3 risks → 3 revisions) indicate missi… | 128 | 0.23 |
-| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 130 | 0.23 |
+| 14 | 💭 | Simulation revision loops (3 risks → 3 revisions) indicate missi… | 129 | 0.23 |
+| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 131 | 0.23 |
 
 ## Die 15 stärksten Synapsen
 

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 03:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 03:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 8×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zoem protocol simulation approved with 5 risks and 3 revisions indicates architectural complexity exceeds current verification capacity.
+- Metabolism stress at 1.0 with conserve mode limits parallelism to 3 tasks, yet long-running model calls (100s+) starve the budget and block consolidat
+- The system accumulates skill proposals (e.g., error_attribution_log.py) but lacks a mechanism to enforce trial runs, creating a proposal-execution gap
+- Hand actions fail silently with exit code 1 and no error payload, preventing automated diagnosis of execution failures.
+- Rate limiting (429 errors) on primary models causes cascading fallback latency spikes up to 233s, making provider quota management a reliability bottl
 - Calibration was exact (predicted 1, actual 1, abs_error 0) after retrieving 5 related memory traces, suggesting recall-enriched predictions are curren
 - The hand action failed with exit code 1 and no captured error output ('error': null), so exit-code-only failures need stderr/traceback capture at the 
 - The evolution loop worked as designed: a 1/10 artifact was revised through simulation feedback into a 7/10 winner across 3 variants, confirming that c
@@ -51,11 +56,6 @@
 - prune_run removed zero facts and events despite heavy activity, suggesting pruning criteria are too conservative relative to the memory growth rate fr
 - hand_action failed instantly (exit=1, duration_s=0.03s) with no error message, a signature of transient/environmental failure rather than logic error,
 - The swarm completed with score 1 but converged=false after only 2 cycles, showing that 'go' verdicts with zero risks can still terminate without conve
-- 429 rate-limit errors cluster on the same free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) at nearly identical timestamps, indicating shared quo
-- Score fields are frequently null on completed acts, making it impossible to evaluate whether goals genuinely succeeded versus merely terminated.
-- Repeated prune runs report 0 facts/events pruned while memory keeps growing, indicating the pruning criteria are too conservative to actually bound me
-- Reflex-mode actions converge reliably and cheaply (0.2s hand_actions, converged=true), while deliberative model calls cost 8-17s, so routing well-know
-- The system's own drive goals already identify the two core failure modes — untested proposals and unexplained model errors — meaning self-generated go
 
 ---
 

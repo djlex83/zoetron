@@ -1,24 +1,109 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2999 Fakten** · Stand 2026-08-26 03:31 UTC · aktualisiert bei jedem Herzschlag
+**3016 Fakten** · Stand 2026-08-26 03:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1258
-- **swarm_artifact:** 799
-- **anti_pattern:** 266
-- **last_swarm_critique:** 249
-- **last_swarm_goal:** 203
-- **strategy:** 154
+- **dream:** 1263
+- **swarm_artifact:** 805
+- **anti_pattern:** 268
+- **last_swarm_critique:** 250
+- **last_swarm_goal:** 204
+- **strategy:** 155
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 14
 - **tool:** 8
 - **creator_teaching:** 8
-- **aktuell_organfehler:** 4
+- **aktuell_organfehler:** 5
 - **frontier:** 3
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:doku_konsistenzwächter_bauen__eigene_kennzahlen_au`
+*26.08. 03:40 UTC · Quelle: evolution*
+
+AST-basierte Single-Pass-Analyse mit einheitlichem Regel-Engine - Variant 0 directly resolves the critic's core complaints: it enforces a single canonical script (doc_guard.py), replaces fragile regex patterns with a robust AST-based semantic ana
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Doku-Konsistenzwächter b:2`
+*26.08. 03:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Single-Source-of-Truth Code-Generierung (Model-Driven) - Zentrale Definition (config/spec.yaml) enthält alle konfigurierbaren Werte (Heartbeat=900s, Retry=3, Timeout=30s) samt menschenlesbaren Beschreibungen. Ein Generator (g
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Doku-Konsistenzwächter b:1`
+*26.08. 03:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Vertragsbasierte Laufzeit-Validierung (Design-by-Contract) - Dokumentation wird als ausführbare Verträge (JSON-Schema + Hypothesis-Strategien) formuliert. Ein einziger Test-Runner (doc_contract.py) startet die Applikation im 
+
+### `swarm_artifact:Fix documentation files to match true source values`
+*26.08. 03:39 UTC · Quelle: builder*
+
+[score 6] Das Skript leitet die wahren Werte aus `heartbeat_daemon.sh` bzw. einem Pytest-Collect-Lauf ab und schreibt sie nur dann in die Doku, wenn sie wirklich ableitbar sind (be_honest: sonst b
+
+### `swarm_artifact:Run doc_check.py to list all current discrepancies`
+*26.08. 03:39 UTC · Quelle: builder*
+
+[score 6] Kurze Diagnose vor dem Block: Das Skript leitet die wahren Werte aus `heartbeat_daemon.sh` und einem Pytest-Collect-Lauf ab, scannt alle drei Doku-Dateien zeilengenau und meldet jede Abw
+
+### `swarm_artifact:Create doc_check.py - extract true values from source code a`
+*26.08. 03:39 UTC · Quelle: builder*
+
+[score 6] ```python #!/usr/bin/env python3 """ doc_check.py - Doku-Konsistenzwächter Extrahiert wahre Werte aus Quellcode und vergleicht mit Dokumentation. """  import re import subprocess import 
+
+### `last_swarm_critique`
+*26.08. 03:39 UTC · Quelle: critic*
+
+score=6; issues=Zwei divergierende Implementierungen von doc_check.py werden eingereicht; unklar, welche kanonisch ist - der Auftrag verlangt EIN Skript; CLAIM_PATTERNS der zweiten (lauffähigen) Version verfehlen den dokumentierten Widerspruch 'heartbeat every
+
+### `swarm_artifact:Fix documentation files to match true source values`
+*26.08. 03:38 UTC · Quelle: builder*
+
+Das Skript leitet die wahren Werte aus `heartbeat_daemon.sh` bzw. einem Pytest-Collect-Lauf ab und schreibt sie nur dann in die Doku, wenn sie wirklich ableitbar sind (be_honest: sonst bleibt der Befu
+
+### `swarm_artifact:Run doc_check.py to list all current discrepancies`
+*26.08. 03:37 UTC · Quelle: builder*
+
+Kurze Diagnose vor dem Block: Das Skript leitet die wahren Werte aus `heartbeat_daemon.sh` und einem Pytest-Collect-Lauf ab, scannt alle drei Doku-Dateien zeilengenau und meldet jede Abweichung; fehlt
+
+### `swarm_artifact:Create doc_check.py - extract true values from source code a`
+*26.08. 03:35 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ doc_check.py - Doku-Konsistenzwächter Extrahiert wahre Werte aus Quellcode und vergleicht mit Dokumentation. """  import re import subprocess import sys from pathl
+
+### `last_swarm_goal`
+*26.08. 03:33 UTC · Quelle: system*
+
+Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten
+
+### `dream:20260826033304:5:6ac921`
+*26.08. 03:33 UTC · Quelle: dream*
+
+Zoem protocol simulation approved with 5 risks and 3 revisions indicates architectural complexity exceeds current verification capacity.
+
+### `dream:20260826033304:4:356681`
+*26.08. 03:33 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 with conserve mode limits parallelism to 3 tasks, yet long-running model calls (100s+) starve the budget and block consolidation.
+
+### `dream:20260826033304:3:a585d9`
+*26.08. 03:33 UTC · Quelle: dream*
+
+The system accumulates skill proposals (e.g., error_attribution_log.py) but lacks a mechanism to enforce trial runs, creating a proposal-execution gap.
+
+### `dream:20260826033304:2:e61d11`
+*26.08. 03:33 UTC · Quelle: dream*
+
+Hand actions fail silently with exit code 1 and no error payload, preventing automated diagnosis of execution failures.
+
+### `dream:20260826033304:1:82718f`
+*26.08. 03:33 UTC · Quelle: dream*
+
+Rate limiting (429 errors) on primary models causes cascading fallback latency spikes up to 233s, making provider quota management a reliability bottleneck.
+
+### `aktuell_organfehler`
+*26.08. 03:31 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 03:30:52 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
 
 ### `strategy:semantisches_dedup_für_ideen_board_und_drive_ziele`
 *26.08. 03:30 UTC · Quelle: evolution*
