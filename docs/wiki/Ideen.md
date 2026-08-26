@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
-- Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fast convergence via reflex mode (cycle 1, score >=8) occurs but isn't leveraged to create reusable templates, wasting proven role configurations.
+- Skill proposals accumulate faster than validation (45-50 pending) because no automatic injection mechanism exists; the backlog consumer proposal addre
+- Calibration errors appear in multiple independent skill proposals (calibration_discount, calibration corrector), revealing a systemic miscalibration i
+- Reflex tools created for specific sub-tasks (connecting dreams, testing skills) succeed where planner-driven approaches stall, suggesting decompositio
+- Recurring drive goals for identical issues (model errors, untested skill backlog) indicate that root causes persist despite repeated attention cycles.
 - Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively a no-op and memory growth is unchecked.
 - Reflexes are nearly unused except when explicitly tied to a goal ('alte-traeume-miteinander-verbinden.py' succeeded immediately), showing reflex adopt
 - 45 accumulated skill proposals remain almost entirely untested while new ones keep being generated, indicating a proposal-to-validation bottleneck whe
@@ -51,11 +56,6 @@
 - Evolution rescued the run (winner scored 9 vs initial 2), confirming that when cycle-1 score < 5, running variant evolution immediately is more cost-e
 - Calibration missed by 3 points (predicted 5, actual 2) because predictions are made before execution risk is known; prediction quality is bounded by h
 - Hand actions failed twice with exit code 1 and no captured stderr, so the sandbox verdict 'Artefakt laeuft nicht' was based on an unobservable failure
-- Reflex execution succeeded instantly (0.22s, exit 0) on its single use, showing fast-path reuse of proven skills is reliable and underutilized for rep
-- Drive goals about understanding model errors repeat across cycles without progress, indicating goals are being re-emitted rather than driven to resolu
-- Prune runs consistently report zero facts/events pruned, meaning memory consolidation is a no-op and stale events (e.g., old drive-goal entries) are a
-- Tool rejections and the 17 model errors remain unexplained because failure reasons are never captured in structured form, leaving recurring failures i
-- Skill proposals are generated every dream cycle but almost never executed (one reflex trial in the whole window), so the bottleneck is proposal-to-tri
 
 ---
 

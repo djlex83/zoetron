@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3243 Fakten** · Stand 2026-08-26 07:51 UTC · aktualisiert bei jedem Herzschlag
+**3260 Fakten** · Stand 2026-08-26 08:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1378
-- **swarm_artifact:** 851
-- **anti_pattern:** 286
-- **last_swarm_critique:** 265
-- **last_swarm_goal:** 219
-- **strategy:** 164
+- **dream:** 1383
+- **swarm_artifact:** 857
+- **anti_pattern:** 288
+- **last_swarm_critique:** 266
+- **last_swarm_goal:** 220
+- **strategy:** 165
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 19
+- **hand_result:** 20
 - **tool:** 12
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,91 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Modell-Fehler reduzieren durch bessere Skills`
+*26.08. 08:05 UTC · Quelle: hands*
+
+{"ok": false, "stderr": ""}
+
+### `strategy:modell_fehler_reduzieren_durch_bessere_skills`
+*26.08. 08:05 UTC · Quelle: evolution*
+
+Adversarial Skill Stress-Testing & Targeted Remediation - Given the previous failure was an unparseable Critic output, the priority is a strategy that is robust to noisy feedback and directly reduces real error mass. Variant 1's closed lo
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Fehler reduzieren:2`
+*26.08. 08:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Differentiable Skill Verification Layer - Attach a lightweight, trainable verification head per skill that predicts execution correctness from model activations and outputs. Train verifiers on (input, model_output, ground_tru
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Fehler reduzieren:0`
+*26.08. 08:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Skill Atomic Decomposition & Modular Training - Decompose each target skill into minimal, independently verifiable atomic sub-skills (e.g., 'retrieve relevant fact' → 'identify entity', 'query knowledge base', 'extract answer
+
+### `swarm_artifact:Implement Model Error Categorization and Tracking`
+*26.08. 08:04 UTC · Quelle: builder*
+
+[score 5] This tool parses swarm execution traces, categorizes model errors into 13+ types using pattern matching, and generates a frequency report for targeted skill development.  ```python #!/us
+
+### `swarm_artifact:Extract Reflex Mode Templates from High-Score Runs`
+*26.08. 08:04 UTC · Quelle: builder*
+
+[score 5] Das Skript durchsucht Run-Archive nach Reflex-Mode-Läufen (cycle 1, Score >= 8), extrahiert die erfolgreichen Rollen-Konfigurationen und speichert sie als wiederverwendbare Templates. Es
+
+### `swarm_artifact:Build Skill Validation Pipeline with Automated Injection`
+*26.08. 08:04 UTC · Quelle: builder*
+
+[score 5] Here's a complete Skill Validation Pipeline with Automated Injection that scans proposals, validates against tests, and injects passing skills into the registry.  ```python #!/usr/bin/en
+
+### `last_swarm_critique`
+*26.08. 08:04 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Implement Model Error Categorization and Tracking`
+*26.08. 08:03 UTC · Quelle: builder*
+
+This tool parses swarm execution traces, categorizes model errors into 13+ types using pattern matching, and generates a frequency report for targeted skill development.  ```python #!/usr/bin/env pyth
+
+### `swarm_artifact:Extract Reflex Mode Templates from High-Score Runs`
+*26.08. 08:00 UTC · Quelle: builder*
+
+Das Skript durchsucht Run-Archive nach Reflex-Mode-Läufen (cycle 1, Score >= 8), extrahiert die erfolgreichen Rollen-Konfigurationen und speichert sie als wiederverwendbare Templates. Es läuft eigenst
+
+### `swarm_artifact:Build Skill Validation Pipeline with Automated Injection`
+*26.08. 07:59 UTC · Quelle: builder*
+
+Here's a complete Skill Validation Pipeline with Automated Injection that scans proposals, validates against tests, and injects passing skills into the registry.  ```python #!/usr/bin/env python3 """ 
+
+### `last_swarm_goal`
+*26.08. 07:57 UTC · Quelle: system*
+
+Modell-Fehler reduzieren durch bessere Skills
+
+### `dream:20260826075612:5:2dee34`
+*26.08. 07:56 UTC · Quelle: dream*
+
+Fast convergence via reflex mode (cycle 1, score >=8) occurs but isn't leveraged to create reusable templates, wasting proven role configurations.
+
+### `dream:20260826075612:4:b5b201`
+*26.08. 07:56 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than validation (45-50 pending) because no automatic injection mechanism exists; the backlog consumer proposal addresses this but remains untested.
+
+### `dream:20260826075612:3:5b6ce0`
+*26.08. 07:56 UTC · Quelle: dream*
+
+Calibration errors appear in multiple independent skill proposals (calibration_discount, calibration corrector), revealing a systemic miscalibration in score gating that distorts evolution decisions.
+
+### `dream:20260826075612:2:b73fd3`
+*26.08. 07:56 UTC · Quelle: dream*
+
+Reflex tools created for specific sub-tasks (connecting dreams, testing skills) succeed where planner-driven approaches stall, suggesting decomposition into dedicated scripts unlocks progress.
+
+### `dream:20260826075612:1:bdc76c`
+*26.08. 07:56 UTC · Quelle: dream*
+
+Recurring drive goals for identical issues (model errors, untested skill backlog) indicate that root causes persist despite repeated attention cycles.
 
 ### `dream:20260826075106:5:b9353d`
 *26.08. 07:51 UTC · Quelle: dream*

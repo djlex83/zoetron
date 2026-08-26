@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2305 Neuronen · 42219 bewertete Synapsen
+Stand: 2316 Neuronen · 42487 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,12 +10,12 @@ Stand: 2305 Neuronen · 42219 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 223 | 0.24 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 223 | 0.23 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 225 | 0.24 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 225 | 0.23 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 182 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 170 | 0.24 |
-| 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 136 | 0.26 |
-| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 160 | 0.22 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 162 | 0.22 |
+| 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 136 | 0.26 |
 | 7 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 137 | 0.26 |
 | 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 138 | 0.25 |
 | 9 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 144 | 0.24 |
@@ -23,7 +23,7 @@ Stand: 2305 Neuronen · 42219 bewertete Synapsen
 | 11 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 128 | 0.26 |
 | 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 136 | 0.24 |
 | 13 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 134 | 0.25 |
-| 14 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 116 | 0.28 |
+| 14 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 117 | 0.28 |
 | 15 | 💭 | Swarm role imbalance (4 builders : 1 critic) correlates with non… | 126 | 0.26 |
 
 ## Die 15 stärksten Synapsen
