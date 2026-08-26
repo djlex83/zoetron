@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 02:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 02:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,10 +25,10 @@
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals correctly detected the failure-to-action gap (many simulations, few applied acts), confirming that signal-based goal generation is working
+- prune_run removed zero facts and events despite heavy activity, suggesting pruning criteria are too conservative relative to the memory growth rate fr
+- hand_action failed instantly (exit=1, duration_s=0.03s) with no error message, a signature of transient/environmental failure rather than logic error,
+- The swarm completed with score 1 but converged=false after only 2 cycles, showing that 'go' verdicts with zero risks can still terminate without conve
+- 429 rate-limit errors cluster on the same free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) at nearly identical timestamps, indicating shared quo
 - Score fields are frequently null on completed acts, making it impossible to evaluate whether goals genuinely succeeded versus merely terminated.
 - Repeated prune runs report 0 facts/events pruned while memory keeps growing, indicating the pruning criteria are too conservative to actually bound me
 - Reflex-mode actions converge reliably and cheaply (0.2s hand_actions, converged=true), while deliberative model calls cost 8-17s, so routing well-know
@@ -51,11 +56,6 @@
 - A destructive-operation guard correctly blocked the tool 'lebender-steckbrief-die-biografie-als-al' (subprocess needs human approval), revealing that 
 - The simulation verdict 'revise' flagged 3 risks but only 2 revisions were applied, meaning simulation findings can be silently dropped without an enfo
 - Calibration is systematically off: predicted score 4 vs actual 6 (abs_error 2) shows predictions are consistently too pessimistic for creative/identit
-- The self-diagnosis found zero organ defects while model calls still failed externally, proving failures concentrate in the API boundary layer rather t
-- Conserve-mode stress (0.814) coincided with the longest call (150.6s, 6332 output tokens), indicating large generations are the main budget violator a
-- Calibration error was 4 points on a predicted 4 vs. actual 8, showing this system systematically under-predicts goal outcomes by roughly 2x and should
-- Rate-limit failures (429) hit two models back-to-back on the same provider (openrouter.ai), so provider-level throttling—not model choice—was the root
-- The swarm converged in a single cycle (score 8) when simulation-driven revisions were applied before execution, confirming that pre-flight simulation 
 
 ---
 
