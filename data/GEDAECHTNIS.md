@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3876 Fakten** · Stand 2026-08-26 19:05 UTC · aktualisiert bei jedem Herzschlag
+**3892 Fakten** · Stand 2026-08-26 19:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1591
-- **swarm_artifact:** 954
-- **last_swarm_critique:** 454
-- **anti_pattern:** 330
-- **last_swarm_goal:** 248
-- **strategy:** 186
+- **dream:** 1596
+- **swarm_artifact:** 960
+- **last_swarm_critique:** 455
+- **anti_pattern:** 332
+- **last_swarm_goal:** 249
+- **strategy:** 187
 - **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 18
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Extern-Quote in DRIVE: r:1`
+*26.08. 19:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Configuration-driven feature toggle - Introduce a YAML/JSON config file (e.g., `drive_config.yaml`) that defines `extern_frequency: 3` and `include_extern_quote: true`. Modify drive.py to read this config at startup and apply
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Extern-Quote in DRIVE: r:0`
+*26.08. 19:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Direct AST-driven source rewriting - Write a single Python script that parses drive.py and telegrambericht.py with the ast module, locates the target selection logic and the weekly report generation, and injects the required 
+
+### `last_swarm_critique`
+*26.08. 19:37 UTC · Quelle: critic*
+
+score=3; issues=Die ersten beiden Artefakte ('Analyze drive.py' und 'Extend telegrambericht.py') sind reine File-Reader, die den Inhalt nur ausgeben - sie modifizieren weder drive.py noch telegrambericht.py tatsaechlich; Keine Aenderung an drive.py, die das ex
+
+### `last_swarm_goal`
+*26.08. 19:31 UTC · Quelle: system*
+
+Extern-Quote in DRIVE: raus aus der Selbst-Schleife
+
+### `dream:20260826193053:5:7b4d59`
+*26.08. 19:30 UTC · Quelle: dream*
+
+The critic flag "RETRO-Or" reveals retrieval/organization of source material as the cross-cutting failure mode.
+
+### `dream:20260826193053:4:48c093`
+*26.08. 19:30 UTC · Quelle: dream*
+
+Calibration is accurate (predicted=actual=2) but the baseline is too low, indicating the initial strategy not the estimator is the bottleneck.
+
+### `dream:20260826193053:3:dbc159`
+*26.08. 19:30 UTC · Quelle: dream*
+
+Evolutionary iteration with critic feedback lifted scores from 2/10 to 9–10/10, proving iterative refinement is the primary quality lever.
+
+### `dream:20260826193053:2:bfb6c0`
+*26.08. 19:30 UTC · Quelle: dream*
+
+Nvidia Nemotron models provide the only consistent successes but with high latency variance (16–136 s).
+
+### `dream:20260826193053:1:bae185`
+*26.08. 19:30 UTC · Quelle: dream*
+
+Free-tier models suffer pervasive 429 rate limits making them unreliable for production workloads.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:2`
 *26.08. 19:04 UTC · Quelle: evolution*

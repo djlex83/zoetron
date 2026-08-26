@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 19:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 19:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,6 +30,7 @@
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 6×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
@@ -37,10 +38,14 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Mehr Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler genauer untersuchen *(wieder aufgegriffen: 2×)*
-- Mehr Skill-Vorschläge wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The critic flag "RETRO-Or" reveals retrieval/organization of source material as the cross-cutting failure mode.
+- Calibration is accurate (predicted=actual=2) but the baseline is too low, indicating the initial strategy not the estimator is the bottleneck.
+- Evolutionary iteration with critic feedback lifted scores from 2/10 to 9–10/10, proving iterative refinement is the primary quality lever.
+- Nvidia Nemotron models provide the only consistent successes but with high latency variance (16–136 s).
+- Free-tier models suffer pervasive 429 rate limits making them unreliable for production workloads.
 - Evolution runs score 1/10 when artifacts are broken, confirming that artifact executability is a prerequisite for any quality gain.
 - The recalled "swarm_artifact" pattern (JSON array of atomic facts) remains unimplemented in the failing artifact, suggesting a gap between knowledge r
 - Calibration consistently overestimates fact-yield improvement (predicted 3× vs. actual 1×), revealing a systematic optimism bias in the predictor.
@@ -51,11 +56,6 @@
 - The simulation approved a high-risk goal (3 risks, 2 revisions) with 'go' verdict, suggesting the system accepts significant uncertainty when targetin
 - Nvidia Nemotron models exhibit bimodal behavior: either successful with 14-58s latency or 502 upstream overload errors, indicating provider-side capac
 - Free-tier models across all providers consistently hit 429 rate limits within seconds, making them unreliable for sustained workloads without request 
-- Latency on successful Nemotron calls ranges 19–223s, making synchronous calls unsuitable for tight loops without async queuing.
-- Hand actions show high variance (0 vs 14 lines read) suggesting fragile selectors or unstable target pages rather than code defects.
-- The simulation→revision→apply loop (5 revisions) successfully converged on a working 12-line Python artifact that tripled fact yield per beat.
-- Nvidia Nemotron models (both 3.5-lightning and 3-ultra) exhibit the highest reliability but suffer intermittent 502 upstream overloads from Nvidia.
-- OpenRouter free-tier rate limits (429) are the primary systemic bottleneck, affecting all models indiscriminately during burst usage.
 
 ---
 
