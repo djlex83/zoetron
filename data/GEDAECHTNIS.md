@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3208 Fakten** · Stand 2026-08-26 07:22 UTC · aktualisiert bei jedem Herzschlag
+**3213 Fakten** · Stand 2026-08-26 07:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1348
+- **dream:** 1353
 - **swarm_artifact:** 849
 - **anti_pattern:** 286
 - **last_swarm_critique:** 264
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826072650:5:6d58bc`
+*26.08. 07:26 UTC · Quelle: dream*
+
+Proposed skills accumulate faster than they are exercised (the drive goal itself exists because few were tested), so each swarm run should be forced to consume at least one pending skill proposal to prevent proposal backlog.
+
+### `dream:20260826072650:4:12be92`
+*26.08. 07:26 UTC · Quelle: dream*
+
+The simulation gate correctly caught 3 risks pre-execution (verdict 'revise') and after revision issued 'go', confirming that running simulation twice (revise → re-simulate) is a reliable pattern worth keeping.
+
+### `dream:20260826072650:3:7e9077`
+*26.08. 07:26 UTC · Quelle: dream*
+
+Under conserve mode (stress 0.621, max_iterations=1) the swarm still needed 2 cycles plus evolution, indicating that budget limits set before simulation verdicts are known systematically underestimate required iterations for 'test proposed skills' type goals.
+
+### `dream:20260826072650:2:bb40c8`
+*26.08. 07:26 UTC · Quelle: dream*
+
+Evolution was triggered not by a weak solution but by an unparsable critic output, meaning output-format failures in the critic role waste a full evolution cycle; enforcing a strict JSON schema on critic responses would have saved ~150s and tokens.
+
+### `dream:20260826072650:1:b26828`
+*26.08. 07:26 UTC · Quelle: dream*
+
+The model consistently overpredicts its own performance (calibration error of +2: predicted 7 vs actual 5), so predicted scores should be discounted by roughly 2 points before using them for planning decisions.
 
 ### `dream:20260826072212:5:1b30a3`
 *26.08. 07:22 UTC · Quelle: dream*

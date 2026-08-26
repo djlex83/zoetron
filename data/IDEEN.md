@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,24 +15,24 @@
 - Extend selbstdiagnose to ingest operational events (model_fail, werkzeug_abgelehnt, converged=false) as health *(hatte die Idee 2×)*
 - Build a sandbox trial pipeline that executes each pending skill proposal, records pass/fail metrics, and auto- *(hatte die Idee 2×)*
 - model_router.py: wrap all LLM calls with exponential backoff on 429s plus automatic failover to the next healt *(hatte die Idee 2×)*
+- Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - Before declaring any swarm finished, verify the artifact contains an executable Python block; if not, force on
 - After every swarm, run the actual external metric (e.g., match prediction accuracy) and record it alongside th
 - When a skill proposal appears in two consecutive dream cycles, auto-promote it into the active procedure list 
 - If prune_run reports 0 removals across two consecutive runs, escalate to an aggressive pruning pass targeting 
-- For repeated goals of the same type, seed the new swarm's calibration estimate with the previous goal's actual
 
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 9×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 6×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposed skills accumulate faster than they are exercised (the drive goal itself exists because few were tested), so each swarm run should be forced t
+- The simulation gate correctly caught 3 risks pre-execution (verdict 'revise') and after revision issued 'go', confirming that running simulation twice
+- Under conserve mode (stress 0.621, max_iterations=1) the swarm still needed 2 cycles plus evolution, indicating that budget limits set before simulati
+- Evolution was triggered not by a weak solution but by an unparsable critic output, meaning output-format failures in the critic role waste a full evol
+- The model consistently overpredicts its own performance (calibration error of +2: predicted 7 vs actual 5), so predicted scores should be discounted b
 - Metabolism stress of 0.621 triggered conserve mode (max_tasks: 3), yet the system still ran multiple model calls — budget enforcement should gate task
 - Swarm convergence in 1 cycle with score ≥ 8 makes evolution unnecessary; role configuration (planner/builder/critic ×1) is a reusable template for sim
 - Calibration error was small (abs_error 1 on a 7→8 prediction), suggesting per-goal-type calibration baselines would tighten predictions further.
@@ -51,11 +56,6 @@
 - Calibration error was small (predicted 6 vs actual 7), so self-assessment is reliable enough to gate convergence decisions on predicted scores.
 - The simulation step flagged 'revise' with 3 risks and all 3 revisions were applied, showing the simulate-then-apply loop works and should be mandatory
 - Evolution produced a variant scoring 9/10, yet the swarm ended at 7/10 without converging in only 2 cycles, indicating premature cycle termination dis
-- Recurring failure themes from prior dreams (33 model errors, 4 unexplained tool rejections) remain unresolved open goals; they should be prioritized o
-- Convergence failed after 2 cycles despite a good score, suggesting the convergence threshold or cycle budget—not solution quality—is the bottleneck wh
-- Calibration error was small (predicted 6 vs actual 7), so score predictions are trustworthy enough to gate convergence decisions without extra verific
-- Evolution over a scored baseline is the most effective improvement lever: a single evolution_run lifted the goal score from 7 to 9 by selecting varian
-- Simulate→revise→apply cycles reliably convert plans into working artifacts: both simulation passes produced revisions (2 and 3) that were applied and 
 
 ---
 
