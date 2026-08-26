@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 06:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 06:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
+- Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
-- Modellfehler analysieren und beheben
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zwei drive_goals ('Fähigkeiten testen' und 'alte Träume kombinieren') wurden zwar erinnert und in ein Swarm-Ziel überführt, aber ohne Mindest-Qualität
+- Der Evolution-Run (3 Varianten, Sieger-Scores 9/10/9 nach Kritik 'Harter Mangel') zeigt, dass die Critic-gesteuerte Variante den anfänglichen Score-2-
+- OpenRouter-429-Ratenlimits trafen sowohl stealth/ox-alpha als auch z-ai/glm-5.2:free gleichzeitig – ein Fallback-Kette mit exponentiellem Backoff stat
+- Die Kalibrierung lag mit predicted 7 vs. actual 2 (abs_error 5) massiv daneben: Selbstbewertungen vor der Ausführung sind systematisch zu optimistisch
+- Der häufigste Ausfallmodus ist ein hartes hand_action-Fehlschlagen (exit 1, ~0.35s), das den TOR-Check 'Artefakt laeuft nicht' auslöst und den ganzen 
 - Latency is highly variable (3s to 150s per model call) while all calls succeeded, so retry storms are not yet a problem but per-model backoff should b
 - The tool 'vorgeschlagene-fähigkeiten-tatsächlich-a' was rejected solely because it uses os.system/subprocess; destructive-operation rejection is the r
 - Calibration error was small (predicted 6 vs actual 8, abs_error 2) and the score matched the trace weight (delta 1.0, 28 edges), indicating prediction
@@ -51,11 +56,6 @@
 - Five skill proposals were generated in one cycle but zero were tested; the proposal→trial→promote loop is completely broken.
 - Swarms report high scores (5/5) but fail to converge because termination ignores whether logged risks were actually resolved.
 - Model latency varies 23x (2.9s to 67.3s) with intermittent failures, indicating no provider health tracking or adaptive failover.
-- Simulation verdicts of 'revise' are being acted on (3/3 revisions applied), so the simulation gate is effective at improving plans before real-world e
-- The recurring gap between skill_proposals and executed actions persists even in a session that explicitly set 'Mehr Vorschläge wirklich ausprobieren' 
-- A swarm run under metabolism stress=1.0/conserve still completed its full cycle including simulation with 3 revisions applied, proving constrained bud
-- The nemotron-3-ultra model succeeds consistently (4/4 calls, 6-17s latency), making it the de facto reliable backbone while ox-alpha only intermittent
-- Model failures are dominated by 429 rate-limit errors on 'stealth/ox-alpha' and 'z-ai/glm-5.2:free', meaning the fallback chain works but retries hit 
 
 ---
 

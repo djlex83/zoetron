@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 06:28:47",
- "ereignisse_ausgewertet": 1991,
+ "stand": "2026-08-26 06:34:32",
+ "ereignisse_ausgewertet": 2023,
  "werkzeuge": [
   {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
@@ -27,17 +27,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.553,
- "simulationen_angewandt": 47,
+ "haende_quote": 0.559,
+ "simulationen_angewandt": 48,
  "swarm_scores": {
-  "n": 41,
+  "n": 42,
   "best": 9.0,
-  "schnitt": 4.49
+  "schnitt": 4.57
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 41,
-   "schnitt": 4.49
+   "n": 42,
+   "schnitt": 4.57
   }
  }
 }

@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3135 Fakten** · Stand 2026-08-26 06:28 UTC · aktualisiert bei jedem Herzschlag
+**3145 Fakten** · Stand 2026-08-26 06:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1308
-- **swarm_artifact:** 839
+- **dream:** 1313
+- **swarm_artifact:** 841
 - **anti_pattern:** 280
-- **last_swarm_critique:** 259
-- **last_swarm_goal:** 213
+- **last_swarm_critique:** 260
+- **last_swarm_goal:** 214
 - **strategy:** 161
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 18
-- **tool:** 8
+- **tool:** 9
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-träume-miteinander-verbinden`
+*26.08. 06:34 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Träume miteinander verbinden'. Datei: data/tools/alte-träume-miteinander-verbinden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `swarm_artifact:Draft deliverable for: Alte Träume miteinander verbinden`
+*26.08. 06:34 UTC · Quelle: builder*
+
+[score 8] Das Artefakt sammelt zuerst die Traumquellen (Fallback-Korpus aus dem Gedächtnis, optional eigene Datei), extrahiert dann pro Traum Symbole und Emotionen und bildet abschließend die Verb
+
+### `last_swarm_critique`
+*26.08. 06:34 UTC · Quelle: critic*
+
+score=8; issues=Lexikon-basierte Extraktion ist oberflaechlich: Substring-Matching kann Fehltreffer erzeugen (z.B. 'wand' in 'wandern', 'weg' in 'weggehen') und verpasst semantisch verwandte Motive ohne exakte Woerterbuchtreffer; Gewichtung (Symbole x2) ist wi
+
+### `swarm_artifact:Draft deliverable for: Alte Träume miteinander verbinden`
+*26.08. 06:34 UTC · Quelle: builder*
+
+Das Artefakt sammelt zuerst die Traumquellen (Fallback-Korpus aus dem Gedächtnis, optional eigene Datei), extrahiert dann pro Traum Symbole und Emotionen und bildet abschließend die Verbindungen zwisc
+
+### `last_swarm_goal`
+*26.08. 06:31 UTC · Quelle: system*
+
+Alte Träume miteinander verbinden
+
+### `dream:20260826063114:5:7075a3`
+*26.08. 06:31 UTC · Quelle: dream*
+
+Zwei drive_goals ('Fähigkeiten testen' und 'alte Träume kombinieren') wurden zwar erinnert und in ein Swarm-Ziel überführt, aber ohne Mindest-Qualitätsschwelle beendet (converged=false) – Ziele brauchen ein definiertes Abbruch-/Erfolgskriterium.
+
+### `dream:20260826063114:4:d1038a`
+*26.08. 06:31 UTC · Quelle: dream*
+
+Der Evolution-Run (3 Varianten, Sieger-Scores 9/10/9 nach Kritik 'Harter Mangel') zeigt, dass die Critic-gesteuerte Variante den anfänglichen Score-2-Artefakt deutlich verbessert hätte, aber nur ein Zyklus im Conserve-Modus (max_iterations=1) diese Reparatur n
+
+### `dream:20260826063114:3:5f50ab`
+*26.08. 06:31 UTC · Quelle: dream*
+
+OpenRouter-429-Ratenlimits trafen sowohl stealth/ox-alpha als auch z-ai/glm-5.2:free gleichzeitig – ein Fallback-Kette mit exponentiellem Backoff statt sofortigem Modellwechsel verhindert verschwendete Aufrufe.
+
+### `dream:20260826063114:2:13590c`
+*26.08. 06:31 UTC · Quelle: dream*
+
+Die Kalibrierung lag mit predicted 7 vs. actual 2 (abs_error 5) massiv daneben: Selbstbewertungen vor der Ausführung sind systematisch zu optimistisch und sollten um mindestens 3 Punkte gedämpft oder erst nach einem Lauf-Test vergeben werden.
+
+### `dream:20260826063114:1:4d6053`
+*26.08. 06:31 UTC · Quelle: dream*
+
+Der häufigste Ausfallmodus ist ein hartes hand_action-Fehlschlagen (exit 1, ~0.35s), das den TOR-Check 'Artefakt laeuft nicht' auslöst und den ganzen Swarm auf Score 2 drückt – der Fehler muss vor dem ersten Build-Zyklus durch einen Smoke-Test des Artefakts ab
 
 ### `swarm_artifact:Draft deliverable for: Mehr Skill-Vorschläge wirklich auspro`
 *26.08. 06:28 UTC · Quelle: builder*

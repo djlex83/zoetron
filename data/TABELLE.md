@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2224 Neuronen · 38814 bewertete Synapsen
+Stand: 2229 Neuronen · 38845 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -46,4 +46,4 @@ Stand: 2224 Neuronen · 38814 bewertete Synapsen
 | 12 | **0.53** | 💭 MemoryStore API drift (missing add_fact) break… | 💭 MemoryStore interface drift (missing add_fact)… |
 | 13 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
 | 14 | **0.53** | 💭 Model latency variance (6.9s to 208.3s) for id… | 💭 High latency variance (6.7–108.9 s) for the sa… |
-| 15 | **0.53** | 🔧 🔧 Werkzeug „fußball-die-basislinie-von-50-2-sc… | 🔧 🔧 Werkzeug „destillat-datensatz-gedächtnis-wir… |
+| 15 | **0.53** | 🛠 „Define HealthRegister data model“. Ergebnis: … | 🛠 „Define Injector Pydantic Model“. Ergebnis: ``… |
