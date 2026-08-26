@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3260 Fakten** · Stand 2026-08-26 08:05 UTC · aktualisiert bei jedem Herzschlag
+**3273 Fakten** · Stand 2026-08-26 08:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1383
-- **swarm_artifact:** 857
-- **anti_pattern:** 288
-- **last_swarm_critique:** 266
-- **last_swarm_goal:** 220
-- **strategy:** 165
+- **dream:** 1388
+- **swarm_artifact:** 859
+- **anti_pattern:** 290
+- **last_swarm_critique:** 267
+- **last_swarm_goal:** 221
+- **strategy:** 166
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 20
+- **hand_result:** 21
 - **tool:** 12
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Abgelehnte Werkzeuge besser prüfen`
+*26.08. 08:26 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787732768012.py\", line 21\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports mus"}
+
+### `strategy:abgelehnte_werkzeuge_besser_prüfen`
+*26.08. 08:25 UTC · Quelle: evolution*
+
+Robust file-based JSONL logger with atomic writes and schema validation - Variant 0 directly fixes the SyntaxError by avoiding __future__ imports, uses atomic writes (temp+rename) for crash-safe JSONL persistence, validates each entry via JSON schema, an
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Abgelehnte Werkzeuge bes:2`
+*26.08. 08:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Structured logging via stdlib logging.handlers with JSON formatter and external  - Leverage Python's built-in logging module: configure a RotatingFileHandler with a custom JSONFormatter that outputs each LogRecord as a single
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Abgelehnte Werkzeuge bes:1`
+*26.08. 08:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): In-memory ring buffer with async flush and crash-safe persistence - Build a thread-safe ring buffer (collections.deque with maxlen) that accumulates rejection events in memory. A background worker thread flushes batches to di
+
+### `swarm_artifact:Draft deliverable for: Abgelehnte Werkzeuge besser prüfen`
+*26.08. 08:23 UTC · Quelle: builder*
+
+[score 2] Das Artefakt ist ein **Structured Rejection Logger** (strukturierter Ablehnungs-Logger): Jede Werkzeug-Ablehnung wird im Moment des Auftretens mit Ursache, Kontext und Eingaben als JSON-
+
+### `last_swarm_critique`
+*26.08. 08:23 UTC · Quelle: critic*
+
+score=2; issues=HARTER MANGEL laut Sandbox-Urteil: Artefakt laeuft nicht - SyntaxError bei 'from __future__ import annotations' (Zeile 21). Das ist ein belegter Laufzeit-/Parse-Fehler und dominiert alle anderen Bewertungen.; Da das Artefakt nicht ausgefuehrt w
+
+### `swarm_artifact:Draft deliverable for: Abgelehnte Werkzeuge besser prüfen`
+*26.08. 08:23 UTC · Quelle: builder*
+
+Das Artefakt ist ein **Structured Rejection Logger** (strukturierter Ablehnungs-Logger): Jede Werkzeug-Ablehnung wird im Moment des Auftretens mit Ursache, Kontext und Eingaben als JSON-Zeile festgeha
+
+### `last_swarm_goal`
+*26.08. 08:20 UTC · Quelle: system*
+
+Abgelehnte Werkzeuge besser prüfen
+
+### `dream:20260826082032:5:a3cec3`
+*26.08. 08:20 UTC · Quelle: dream*
+
+Two tool rejections occurred without any structured failure reason being logged, making the root cause unrecoverable after the fact; failures must be captured at the point of occurrence.
+
+### `dream:20260826082032:4:e541ea`
+*26.08. 08:20 UTC · Quelle: dream*
+
+Calibration error was small (predicted 6 vs actual 8, abs_error 2), indicating effort estimates for memory-combination goals are reliable enough to plan multi-goal cycles around.
+
+### `dream:20260826082032:3:0b4ae1`
+*26.08. 08:20 UTC · Quelle: dream*
+
+The swarm goal 'Alte Traumideen mit Strategien verbinden' succeeded (score 8, converged in 1 cycle) because it combined two previously unconnected dream memories, showing cross-memory synthesis is the highest-yield activity per cycle.
+
+### `dream:20260826082032:2:f75450`
+*26.08. 08:20 UTC · Quelle: dream*
+
+The prune_run pruned 0 facts and 0 events again, confirming that manual prune triggers are ineffective and pruning must be driven by age/recall-hit thresholds instead.
+
+### `dream:20260826082032:1:22ab7c`
+*26.08. 08:20 UTC · Quelle: dream*
+
+Skill proposals are accumulating faster than they are tested: five proposals were emitted this cycle while zero received a trial run, so proposal generation without an execution budget produces no capability gain.
 
 ### `hand_result:Modell-Fehler reduzieren durch bessere Skills`
 *26.08. 08:05 UTC · Quelle: hands*

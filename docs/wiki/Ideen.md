@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 10×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 9×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 8×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Two tool rejections occurred without any structured failure reason being logged, making the root cause unrecoverable after the fact; failures must be 
+- Calibration error was small (predicted 6 vs actual 8, abs_error 2), indicating effort estimates for memory-combination goals are reliable enough to pl
+- The swarm goal 'Alte Traumideen mit Strategien verbinden' succeeded (score 8, converged in 1 cycle) because it combined two previously unconnected dre
+- The prune_run pruned 0 facts and 0 events again, confirming that manual prune triggers are ineffective and pruning must be driven by age/recall-hit th
+- Skill proposals are accumulating faster than they are tested: five proposals were emitted this cycle while zero received a trial run, so proposal gene
 - Fast convergence via reflex mode (cycle 1, score >=8) occurs but isn't leveraged to create reusable templates, wasting proven role configurations.
 - Skill proposals accumulate faster than validation (45-50 pending) because no automatic injection mechanism exists; the backlog consumer proposal addre
 - Calibration errors appear in multiple independent skill proposals (calibration_discount, calibration corrector), revealing a systemic miscalibration i
@@ -51,11 +56,6 @@
 - 45 accumulated skill proposals remain almost entirely untested while new ones keep being generated, indicating a proposal-to-validation bottleneck whe
 - A hand_action failed with exit code 1 but error=null, meaning failures that carry no diagnostic payload are indistinguishable from silent crashes and 
 - The swarm run 'Modell-Fehler deutlich reduzieren' failed to converge in only 2 cycles with score 2, suggesting the iteration budget is cut off before 
-- The goal 'Modell-Fehler reduzieren' itself produced 13+ model errors across the trace, indicating recurring failure modes (sandbox exit 1, calibration
-- Token spend was highly uneven (one call: 1952 in / 7843 out at 229s latency while most calls were <1000 tokens), suggesting large generation tasks sho
-- Evolution rescued the run (winner scored 9 vs initial 2), confirming that when cycle-1 score < 5, running variant evolution immediately is more cost-e
-- Calibration missed by 3 points (predicted 5, actual 2) because predictions are made before execution risk is known; prediction quality is bounded by h
-- Hand actions failed twice with exit code 1 and no captured stderr, so the sandbox verdict 'Artefakt laeuft nicht' was based on an unobservable failure
 
 ---
 
