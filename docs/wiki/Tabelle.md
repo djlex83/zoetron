@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2595 Neuronen · 53469 bewertete Synapsen
+Stand: 2604 Neuronen · 53870 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,20 +10,20 @@ Stand: 2595 Neuronen · 53469 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 258 | 0.25 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 258 | 0.24 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 259 | 0.25 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 259 | 0.25 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 195 | 0.25 |
-| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 195 | 0.23 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 196 | 0.23 |
 | 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 182 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 167 | 0.23 |
-| 7 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 160 | 0.24 |
-| 8 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 136 | 0.28 |
-| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 165 | 0.23 |
+| 6 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 161 | 0.24 |
+| 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 167 | 0.23 |
+| 8 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 137 | 0.28 |
+| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 167 | 0.23 |
 | 10 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 152 | 0.24 |
-| 11 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 142 | 0.26 |
-| 12 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 147 | 0.25 |
+| 11 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 147 | 0.25 |
+| 12 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 142 | 0.26 |
 | 13 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 146 | 0.25 |
-| 14 | 💭 | Calibration consistently underestimates actual scores by ~3 poin… | 133 | 0.27 |
+| 14 | 💭 | Calibration consistently underestimates actual scores by ~3 poin… | 134 | 0.27 |
 | 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 136 | 0.26 |
 
 ## Die 15 stärksten Synapsen

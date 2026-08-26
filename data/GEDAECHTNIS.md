@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3859 Fakten** · Stand 2026-08-26 18:54 UTC · aktualisiert bei jedem Herzschlag
+**3876 Fakten** · Stand 2026-08-26 19:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1586
-- **swarm_artifact:** 948
-- **last_swarm_critique:** 453
-- **anti_pattern:** 328
-- **last_swarm_goal:** 247
-- **strategy:** 185
+- **dream:** 1591
+- **swarm_artifact:** 954
+- **last_swarm_critique:** 454
+- **anti_pattern:** 330
+- **last_swarm_goal:** 248
+- **strategy:** 186
 - **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 18
-- **aktuell_organfehler:** 13
+- **aktuell_organfehler:** 14
 - **creator_teaching:** 8
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:2`
+*26.08. 19:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Scoring Reformulation: Make extern quote a mathematical prerequisite for non-zer - Redefine the goal scoring function to return `-inf` (or 0 with a hard filter) when `extern_quote` is absent. The selector already picks `max(s
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:0`
+*26.08. 19:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Schema/Validation-First: Make extern quote a mandatory field at the data layer - Modify the goal schema (Pydantic/SQLModel) to require `extern_quote: str` as a non-optional field with validation. Add a database-level NOT NULL
+
+### `last_swarm_critique`
+*26.08. 19:03 UTC · Quelle: critic*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_goal`
+*26.08. 18:58 UTC · Quelle: system*
+
+Extern-Quote in DRIVE: raus aus der Selbst-Schleife
+
+### `dream:20260826185756:5:df857b`
+*26.08. 18:57 UTC · Quelle: dream*
+
+Evolution runs score 1/10 when artifacts are broken, confirming that artifact executability is a prerequisite for any quality gain.
+
+### `dream:20260826185756:4:7c3138`
+*26.08. 18:57 UTC · Quelle: dream*
+
+The recalled "swarm_artifact" pattern (JSON array of atomic facts) remains unimplemented in the failing artifact, suggesting a gap between knowledge retrieval and application.
+
+### `dream:20260826185756:3:dc3df8`
+*26.08. 18:57 UTC · Quelle: dream*
+
+Calibration consistently overestimates fact-yield improvement (predicted 3× vs. actual 1×), revealing a systematic optimism bias in the predictor.
+
+### `dream:20260826185756:2:7e1d78`
+*26.08. 18:57 UTC · Quelle: dream*
+
+Artifact execution fails at runtime due to uncaught syntax errors (e.g., line 66), indicating insufficient pre-execution validation.
+
+### `dream:20260826185756:1:d3b41d`
+*26.08. 18:57 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit pervasive rate-limiting (429) and upstream overloads (502), making them unreliable for time-sensitive artifact generation.
+
+### `aktuell_organfehler`
+*26.08. 18:55 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 18:46:36 UTC): retro -> kurz. retro meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ He
 
 ### `dream:20260826185218:5:1b0a42`
 *26.08. 18:52 UTC · Quelle: dream*
