@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 11×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 10×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals generated from failure signals ('Modell-Fehler deutlich reduzieren') directly led to actionable swarm work on rejected tools, confirming t
+- Metabolic stress at 0.874 correctly triggered 'conserve' mode limiting to 3 tasks/1 iteration, which kept the swarm productive despite degraded model 
+- Simulation verdicts of 'revise' with high risk counts (4 risks) still yield value when applied selectively — only 2 of 4 revisions were applied, sugge
+- Free-tier models (z-ai, google/gemma, nvidia) are unreliable under load; ox-alpha succeeded 4/5 times while free models failed repeatedly, so critical
+- Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues,
 - Model latency varied 14x (4.0s to 56.4s) at comparable token volumes, implying latency-based routing or timeouts are needed instead of assuming unifor
 - Two cycles were insufficient for convergence even after an evolution run, suggesting cycle budgets for revise-verdict tasks should scale with the numb
 - Risk prediction is systematically miscalibrated downward (predicted 3 vs actual 5, abs_error 2), so raw model risk counts should be anchored to a roll
@@ -51,11 +56,6 @@
 - A score of 1/10 with converged=false after 2 cycles was still followed by goal re-emission ('Abgelehnte Werkzeuge prüfen und verbessern') rather than 
 - Failures are invisible at the moment they happen: hand_action exited 1 in 0.03s with error=null and the selbstdiagnose found 'no organ defects', meani
 - The evolution loop is decorative: the winning variant (score 9) was selected but its code never reached the next swarm cycle, so the system repeats th
-- Drive goals are correctly converting abstract drives into concrete actions (e.g., connecting old rejected plans via a specific tool), showing the driv
-- Prune runs repeatedly remove 0 facts/events while self-diagnosis finds 0 organ errors — either memory pressure is genuinely low or prune criteria no l
-- Skill proposal emission is outpacing testing: multiple new proposals (rate_limit_backoff, zero_prune_alert, dream_integration_step) duplicate or exten
-- The swarm's non-convergence pattern (score 2, verdict 'revise', 3 revisions applied but still not converged) suggests revision loops alone don't fix w
-- Reflex-first execution succeeded where LLM swarm deliberation failed: the reflex 'alte-traumideen-mit-strategien-verbinden.py' converged (exit 0) on t
 
 ---
 
