@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3359 Fakten** · Stand 2026-08-26 09:49 UTC · aktualisiert bei jedem Herzschlag
+**3364 Fakten** · Stand 2026-08-26 09:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1433
+- **dream:** 1438
 - **swarm_artifact:** 873
 - **anti_pattern:** 298
 - **last_swarm_critique:** 272
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826095404:5:880d22`
+*26.08. 09:54 UTC · Quelle: dream*
+
+Conserve mode caps tasks at 3 while stress is at 1.0 and the last goal ended unconverged, so budget policy is suppressing exactly the debugging work the failure signal demands.
+
+### `dream:20260826095404:4:0bd9a3`
+*26.08. 09:54 UTC · Quelle: dream*
+
+Skill proposals are accumulating faster than they are tested (5 new proposals this cycle, 0 executed), creating an untested backlog that wastes the system's own improvement capacity.
+
+### `dream:20260826095404:3:cb629d`
+*26.08. 09:54 UTC · Quelle: dream*
+
+4 of 5 critic revisions were applied but nothing verified them against the working tree, so 'revise' verdicts can silently lose changes between simulation and completion.
+
+### `dream:20260826095404:2:212dca`
+*26.08. 09:54 UTC · Quelle: dream*
+
+The swarm finished unconverged (score 7 after 2 cycles) yet act_done fired anyway, meaning completion is currently gated on score alone rather than on convergence or revision application.
+
+### `dream:20260826095404:1:f8528b`
+*26.08. 09:54 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits under burst load, so any multi-call cycle needs per-model backoff and a fallback chain instead of failing the whole task.
 
 ### `dream:20260826094833:5:8432f8`
 *26.08. 09:48 UTC · Quelle: dream*

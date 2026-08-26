@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,10 +16,10 @@
 - Build a sandbox trial pipeline that executes each pending skill proposal, records pass/fail metrics, and auto- *(hatte die Idee 2×)*
 - model_router.py: wrap all LLM calls with exponential backoff on 429s plus automatic failover to the next healt *(hatte die Idee 2×)*
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
+- failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Before declaring any swarm finished, verify the artifact contains an executable Python block; if not, force on
 - After every swarm, run the actual external metric (e.g., match prediction accuracy) and record it alongside th
 - When a skill proposal appears in two consecutive dream cycles, auto-promote it into the active procedure list 
-- If prune_run reports 0 removals across two consecutive runs, escalate to an aggressive pruning pass targeting 
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Conserve mode caps tasks at 3 while stress is at 1.0 and the last goal ended unconverged, so budget policy is suppressing exactly the debugging work t
+- Skill proposals are accumulating faster than they are tested (5 new proposals this cycle, 0 executed), creating an untested backlog that wastes the sy
+- 4 of 5 critic revisions were applied but nothing verified them against the working tree, so 'revise' verdicts can silently lose changes between simula
+- The swarm finished unconverged (score 7 after 2 cycles) yet act_done fired anyway, meaning completion is currently gated on score alone rather than on
+- Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits under burst load, so any multi-call cycle needs per-model backof
 - Calibration error of 1 point (predicted 6 vs actual 7) suggests the scoring heuristic is reasonably aligned but slightly pessimistic.
 - The evolution/simulation loop produces measurable improvement (7→8 scores) but requires 5+ revisions per cycle, indicating high iteration cost.
 - Nvidia Nemotron models (both 3.5-lightning and 3-ultra) serve as reliable fallbacks with higher latency variance (18-124s) but no observed 429 errors.
@@ -51,11 +56,6 @@
 - Simulation verdicts of 'revise' with high risk counts (4 risks) still yield value when applied selectively — only 2 of 4 revisions were applied, sugge
 - Free-tier models (z-ai, google/gemma, nvidia) are unreliable under load; ox-alpha succeeded 4/5 times while free models failed repeatedly, so critical
 - Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues,
-- Model latency varied 14x (4.0s to 56.4s) at comparable token volumes, implying latency-based routing or timeouts are needed instead of assuming unifor
-- Two cycles were insufficient for convergence even after an evolution run, suggesting cycle budgets for revise-verdict tasks should scale with the numb
-- Risk prediction is systematically miscalibrated downward (predicted 3 vs actual 5, abs_error 2), so raw model risk counts should be anchored to a roll
-- Evolution produced variants scoring 8-9/10 but the swarm's final score remained 5/10, indicating the winning variant was likely not integrated back in
-- Execution success is not quality: the artifact compiled and ran (exit 0, 154 lines) yet scored only 5/10 because the critic's re-validation defect was
 
 ---
 
