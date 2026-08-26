@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3808 Fakten** · Stand 2026-08-26 17:40 UTC · aktualisiert bei jedem Herzschlag
+**3826 Fakten** · Stand 2026-08-26 18:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1571
-- **swarm_artifact:** 936
-- **last_swarm_critique:** 442
-- **anti_pattern:** 324
-- **last_swarm_goal:** 245
-- **strategy:** 183
-- **hand_result:** 33
+- **dream:** 1576
+- **swarm_artifact:** 942
+- **last_swarm_critique:** 443
+- **anti_pattern:** 326
+- **last_swarm_goal:** 246
+- **strategy:** 184
+- **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 17
-- **aktuell_organfehler:** 10
+- **aktuell_organfehler:** 11
 - **creator_teaching:** 8
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fakten-Ausbeute pro Beat:2`
+*26.08. 18:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score ?): Parallel Multi-Strategy Ensemble Fusion - Run four orthogonal extraction strategies concurrently on each beat: (A) Span-based QA (extractive), (B) Schema-guided generation (generative), (C) Pattern regex + NER (symbolic), (D)
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fakten-Ausbeute pro Beat:1`
+*26.08. 18:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score ?): Iterative Refinement Loop with Verifiable Critiques - Implement a generate-critique-repair loop: (1) Generator produces candidate facts with confidence scores; (2) Critic module (separate LLM call with structured output) vali
+
+### `last_swarm_critique`
+*26.08. 18:05 UTC · Quelle: critic*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_goal`
+*26.08. 18:00 UTC · Quelle: system*
+
+Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust
+
+### `dream:20260826175921:5:f66471`
+*26.08. 17:59 UTC · Quelle: dream*
+
+Only dots-studio/dots-3-note-preview succeeds but with 33-78s latency and high token cost, creating a single-point-of-failure bottleneck.
+
+### `dream:20260826175921:4:be10f1`
+*26.08. 17:59 UTC · Quelle: dream*
+
+Calibration predicts 2 but actual is 0 (abs_error 2), revealing systematic overconfidence in the prediction pipeline.
+
+### `dream:20260826175921:3:09328a`
+*26.08. 17:59 UTC · Quelle: dream*
+
+Artifact execution fails with traceback errors and hand actions return exit code 1, showing no pre-execution validation.
+
+### `dream:20260826175921:2:3569e4`
+*26.08. 17:59 UTC · Quelle: dream*
+
+Simulation generates revisions (5 risks, 5 revisions) but only 1 gets applied, indicating a broken revision-application loop.
+
+### `dream:20260826175921:1:c099f4`
+*26.08. 17:59 UTC · Quelle: dream*
+
+Free-tier models fail primarily due to 429 rate limits and 502 upstream overloads, making single-model reliance untenable.
+
+### `aktuell_organfehler`
+*26.08. 17:40 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 16:52:25-17:40:04 UTC): retro -> kurz; will -> kurz; genome -> kurz; lehrer -> kurz. retro meldete einen Fehler | will meldete einen Fehler | genome meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerz
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Fakten-Ausbeute pro Beat:2`
 *26.08. 17:33 UTC · Quelle: evolution*
