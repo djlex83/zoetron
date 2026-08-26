@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
-- Implement a provider health tracker that records consecutive 429s per model and automatically deploys failing 
-- Build a skill-adoption ledger that requires each dream-cycle skill proposal to be either scheduled into a conc
-- Create a pre-flight prompt packer for conserve mode that compresses context to fit one high-latency model call
+- Implement a provider-rotation policy with exponential backoff that skips any model returning 429 twice in a ro
+- Require every football-prediction swarm to ingest external structured signals (odds, xG, standings) before gen
+- Add an automatic non-convergence detector: if two consecutive cycles show no delta in the critic metric, force
 
 ## 🔥 Eigene Ziele
 
@@ -27,20 +27,25 @@
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler untersuchen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
+- Häufige Modellfehler genauer untersuchen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm terminated without convergence after only 2 cycles despite 'go' simulation verdicts, indicating the go/no-go gate is too permissive relative
+- Evolution rescued the run: a 3-variant evolution loop lifted scores from 2/10 baseline to 9/10 for the winner, confirming generate-and-select beats si
+- OpenRouter free-tier models repeatedly hit 429 rate limits in bursts (stealth/ox-alpha and z-ai/glm-5.2:free), while nvidia/nemotron-3-ultra served as
+- Calibration error was 3 points (predicted 5, actual 2), showing the critic/simulation systematically overestimates quality when it never executes the 
+- The benchmark task failed (2/10) primarily because the artifact contained prose instead of an executable Python block, so convergence requires artifac
 - Old dream insights are never revisited after later work completes — a post-task linkage step comparing new results against stored dream insights would
 - Under metabolism stress=1.0/conserve mode (max_tasks=3, max_iterations=1), long-latency calls like stealth/ox-alpha at 117–256s consume most of the it
 - Calibration is systematically overconfident: predicted risk 5 vs actual 2 (abs_error 3) suggests the simulation phase inflates risk estimates for well
@@ -51,11 +56,6 @@
 - Free-tier endpoints fail in two distinct ways that need different handling: 429 rate limits (retryable with backoff) versus upstream 502/no-choices er
 - The fallback chain is effective: when stealth/ox-alpha and z-ai/glm-5.2 failed, nvidia/nemotron-3-ultra and dots-studio/dots-3-note-preview completed 
 - 429 rate limits are the dominant failure mode (7 of 11 model_fail events), hitting multiple providers simultaneously, so bursts of parallel LLM calls 
-- Calibration predicted 3 but actual was 2 (abs_error=1), and bahnen score=2 with delta=-0.5 shows the reward signal is misaligned with true artifact qu
-- Evolution runs can jump scores from 2 to 8-9 in one generation, but only when the initial artifact is executable; non-runnable seeds waste cycles.
-- Simulation verdict 'go' was issued despite the artifact failing at runtime (traceback in tor log), revealing a gap between static analysis and executi
-- hand_action failures return exit=1 with error=null and gelesen=0, hiding the actual traceback and preventing automated diagnosis or retry logic.
-- Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable for production loops without exponenti
 
 ---
 
