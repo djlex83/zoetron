@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 10×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism dropped to conserve mode (stress 1.0, budget capped at 3 tasks/1 iteration) exactly when deep debugging was needed, so resource throttling 
+- Skill proposals accumulate faster than they are tested (5 proposals, 0 trials), so the proposal channel has become a write-only queue that creates an 
+- A score of 1/10 with converged=false after 2 cycles was still followed by goal re-emission ('Abgelehnte Werkzeuge prüfen und verbessern') rather than 
+- Failures are invisible at the moment they happen: hand_action exited 1 in 0.03s with error=null and the selbstdiagnose found 'no organ defects', meani
+- The evolution loop is decorative: the winning variant (score 9) was selected but its code never reached the next swarm cycle, so the system repeats th
 - Drive goals are correctly converting abstract drives into concrete actions (e.g., connecting old rejected plans via a specific tool), showing the driv
 - Prune runs repeatedly remove 0 facts/events while self-diagnosis finds 0 organ errors — either memory pressure is genuinely low or prune criteria no l
 - Skill proposal emission is outpacing testing: multiple new proposals (rate_limit_backoff, zero_prune_alert, dream_integration_step) duplicate or exten
@@ -51,11 +56,6 @@
 - Calibration is systematically overconfident: predicted risk 4 vs actual 2 with abs_error 2, meaning the predictor should be re-anchored on recent obse
 - OpenRouter free-tier models hit 429 rate limits in bursts; the swarm should treat 429 as a routing signal and immediately fail over to the next model 
 - The recurring failure mode is artifacts that fail at import time (exit 1 in ~0.03s), so every generated Python artifact must be syntax/import-checked 
-- Prune runs removed zero facts/events while the bahnen graph shows 12 retrievals over the same goal edges, indicating memory growth is outpacing prunin
-- A hand_action failed with exit code 1 in 0.37s with no error message captured, showing that tool failures are being logged without structured failure 
-- Calibration is systematically optimistic: predicted score 4 vs actual 5 was close here, but the simulation verdict 'revise' (5 risks, 3 revisions) pre
-- The swarm run on 'Modell-Fehler reduzieren durch bessere Skills' scored 5/10 and did not converge after 2 cycles despite evolution selecting a 9/10 va
-- 429 Too Many Requests errors on stealth/ox-alpha and z-ai/glm-5.2:free cluster in bursts (ts 1787731465-1787731539), indicating rate-limit exhaustion 
 
 ---
 

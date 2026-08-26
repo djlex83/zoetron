@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2374 Neuronen · 43951 bewertete Synapsen
+Stand: 2379 Neuronen · 44115 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -24,7 +24,7 @@ Stand: 2374 Neuronen · 43951 bewertete Synapsen
 | 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 139 | 0.24 |
 | 13 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 120 | 0.28 |
 | 14 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 136 | 0.24 |
-| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 122 | 0.27 |
+| 15 | 💭 | Swarm role imbalance (4 builders : 1 critic) correlates with non… | 128 | 0.25 |
 
 ## Die 15 stärksten Synapsen
 

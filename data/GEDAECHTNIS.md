@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3326 Fakten** · Stand 2026-08-26 09:10 UTC · aktualisiert bei jedem Herzschlag
+**3336 Fakten** · Stand 2026-08-26 09:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1413
-- **swarm_artifact:** 869
+- **dream:** 1418
+- **swarm_artifact:** 871
 - **anti_pattern:** 296
-- **last_swarm_critique:** 270
-- **last_swarm_goal:** 224
+- **last_swarm_critique:** 271
+- **last_swarm_goal:** 225
 - **strategy:** 169
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 22
-- **tool:** 14
+- **tool:** 15
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:reflexe-öfter-automatisch-einsetzen`
+*26.08. 09:29 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Reflexe öfter automatisch einsetzen'. Datei: data/tools/reflexe-öfter-automatisch-einsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `swarm_artifact:Draft deliverable for: Reflexe öfter automatisch einsetzen`
+*26.08. 09:29 UTC · Quelle: builder*
+
+[score 8] Das Artefakt ist ein deklarativer Reflex-Motor (Regeltabelle statt Code), der bei passenden Signalen automatisch feuert – ohne Umweg über Deliberation – und seine Reflex-Quote misst. Coo
+
+### `last_swarm_critique`
+*26.08. 09:29 UTC · Quelle: critic*
+
+score=8; issues=Reflex-Quote wird nur gegen die Anzahl der Demo-Ereignisse gemessen; ein persistenter oder kontinuierlicher Zähler über die Laufzeit fehlt (_stats und _last_fired sind nur im Speicher); reflex_recall_memory liefert eine hartkodierte Ziel-Zeiche
+
+### `swarm_artifact:Draft deliverable for: Reflexe öfter automatisch einsetzen`
+*26.08. 09:28 UTC · Quelle: builder*
+
+Das Artefakt ist ein deklarativer Reflex-Motor (Regeltabelle statt Code), der bei passenden Signalen automatisch feuert – ohne Umweg über Deliberation – und seine Reflex-Quote misst. Cooldowns verhind
+
+### `last_swarm_goal`
+*26.08. 09:24 UTC · Quelle: system*
+
+Reflexe öfter automatisch einsetzen
+
+### `dream:20260826092419:5:ae6a68`
+*26.08. 09:24 UTC · Quelle: dream*
+
+Metabolism dropped to conserve mode (stress 1.0, budget capped at 3 tasks/1 iteration) exactly when deep debugging was needed, so resource throttling and failure recovery are currently anti-correlated.
+
+### `dream:20260826092419:4:013ffc`
+*26.08. 09:24 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are tested (5 proposals, 0 trials), so the proposal channel has become a write-only queue that creates an illusion of learning without behavioral change.
+
+### `dream:20260826092419:3:5046da`
+*26.08. 09:24 UTC · Quelle: dream*
+
+A score of 1/10 with converged=false after 2 cycles was still followed by goal re-emission ('Abgelehnte Werkzeuge prüfen und verbessern') rather than root-cause investigation, showing stagnation is recycled instead of escalated.
+
+### `dream:20260826092419:2:bb0ffe`
+*26.08. 09:24 UTC · Quelle: dream*
+
+Failures are invisible at the moment they happen: hand_action exited 1 in 0.03s with error=null and the selbstdiagnose found 'no organ defects', meaning the diagnostic layer only sees what the event stream records, not what actually broke.
+
+### `dream:20260826092419:1:41489e`
+*26.08. 09:24 UTC · Quelle: dream*
+
+The evolution loop is decorative: the winning variant (score 9) was selected but its code never reached the next swarm cycle, so the system repeats the same failure instead of compounding its best ideas.
 
 ### `tool:abgelehnte-werkzeuge-verstehen-und-verbe`
 *26.08. 09:10 UTC · Quelle: hands*
