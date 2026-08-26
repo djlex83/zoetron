@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2629 Neuronen · 55445 bewertete Synapsen
+Stand: 2633 Neuronen · 55750 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,18 +12,18 @@ Stand: 2629 Neuronen · 55445 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 265 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 265 | 0.25 |
-| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 196 | 0.24 |
-| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 202 | 0.23 |
-| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 185 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 171 | 0.24 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 173 | 0.23 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 197 | 0.24 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 203 | 0.23 |
+| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 186 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 172 | 0.24 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 174 | 0.23 |
 | 8 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 162 | 0.24 |
 | 9 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 138 | 0.28 |
-| 10 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 146 | 0.26 |
-| 11 | 💭 | Calibration consistently underestimates actual scores by ~3 poin… | 136 | 0.27 |
-| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 152 | 0.24 |
-| 13 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 147 | 0.25 |
-| 14 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 147 | 0.25 |
+| 10 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 147 | 0.26 |
+| 11 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 148 | 0.25 |
+| 12 | 💭 | Calibration consistently underestimates actual scores by ~3 poin… | 136 | 0.27 |
+| 13 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 152 | 0.24 |
+| 14 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 147 | 0.25 |
 | 15 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 162 | 0.22 |
 
 ## Die 15 stärksten Synapsen

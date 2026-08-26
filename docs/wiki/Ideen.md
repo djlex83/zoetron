@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 20:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 21:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 15×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 12×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 6×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 8×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Mehr Skill-Vorschläge wirklich ausprobieren *(wieder aufgegriffen: 2×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Rate-limited model (glm) intermittently recovers but remains untrustworthy for critical paths, requiring explicit circuit-breaker logic.
+- Embedding-based recall is validated as go by simulation but implementation is blocked by resource budget, creating a capability gap.
+- Swarm initiatives lack coordination mechanism, leading to parallel uncoordinated efforts and parked whispers awaiting creator decisions.
+- Metabolism-driven conservation mode severely limits parallel execution, causing skill proposals to stall despite simulation approval.
+- Free-tier models exhibit unreliable availability (429 errors) and high latency variance, necessitating a model router with health checks and fallback.
 - Memory pruning yielded zero facts and events, suggesting the pruning criteria are too strict or the memory is already minimal; the pruning mechanism s
 - Skill proposals are generated but rarely implemented, creating a bottleneck between idea and execution; a dedicated proposal-to-skill pipeline with au
 - The system's goal-generation mechanism is self-referential, leading to repetitive internal focus; injecting external goals periodically is essential t
@@ -51,11 +56,6 @@
 - Five skill proposals exist but zero are deployed, revealing a proposal-to-production gap caused by missing activation criteria and integration scaffol
 - A 9x latency variance (5.3s vs 45.7s) on the same model (nemotron-3-ultra) indicates non-deterministic queueing, not model slowness, requiring latency
 - Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502) failures, making single-model reliance untenable for production work
-- The critic flag "RETRO-Or" reveals retrieval/organization of source material as the cross-cutting failure mode.
-- Calibration is accurate (predicted=actual=2) but the baseline is too low, indicating the initial strategy not the estimator is the bottleneck.
-- Evolutionary iteration with critic feedback lifted scores from 2/10 to 9–10/10, proving iterative refinement is the primary quality lever.
-- Nvidia Nemotron models provide the only consistent successes but with high latency variance (16–136 s).
-- Free-tier models suffer pervasive 429 rate limits making them unreliable for production workloads.
 
 ---
 

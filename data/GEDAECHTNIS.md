@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3924 Fakten** · Stand 2026-08-26 20:34 UTC · aktualisiert bei jedem Herzschlag
+**3936 Fakten** · Stand 2026-08-26 21:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1606
-- **swarm_artifact:** 972
-- **last_swarm_critique:** 457
-- **anti_pattern:** 336
-- **last_swarm_goal:** 251
-- **strategy:** 189
+- **dream:** 1611
+- **swarm_artifact:** 974
+- **last_swarm_critique:** 458
+- **anti_pattern:** 338
+- **last_swarm_goal:** 252
+- **strategy:** 190
 - **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 18
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:2`
+*26.08. 21:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Lightweight Pre-trained Word2Vec Averaging - Use the `gensim` library with a small, pre-trained Word2Vec model (or download a lightweight one if network is available, otherwise fallback to a mock dictionary) to average word v
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:0`
+*26.08. 21:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): API-based Semantic Embedding with Strict Length Control - Use the OpenAI API (or similar) to generate embeddings for the article and queries. Hard-truncate the article text to 18,000 characters before processing to strictly s
+
+### `last_swarm_critique`
+*26.08. 20:59 UTC · Quelle: critic*
+
+score=3; issues=Code wurde nicht ausgeführt (Sandbox: NICHT AUSGEFÜHRT) - Lauffähigkeit unbekannt; Artikel ist 24208 Zeichen lang, überschreitet die 20000 Zeichen Grenze des Prüfstands - muss gekürzt werden; Benchmark-Report-Pfad und -Erzeugung nicht erkennbar
+
+### `last_swarm_goal`
+*26.08. 20:54 UTC · Quelle: system*
+
+Embedding-Recall statt reinem Wortvergleich
+
+### `dream:20260826205406:5:3f4e17`
+*26.08. 20:54 UTC · Quelle: dream*
+
+Rate-limited model (glm) intermittently recovers but remains untrustworthy for critical paths, requiring explicit circuit-breaker logic.
+
+### `dream:20260826205406:4:c5d55b`
+*26.08. 20:54 UTC · Quelle: dream*
+
+Embedding-based recall is validated as go by simulation but implementation is blocked by resource budget, creating a capability gap.
+
+### `dream:20260826205406:3:ef6f3f`
+*26.08. 20:54 UTC · Quelle: dream*
+
+Swarm initiatives lack coordination mechanism, leading to parallel uncoordinated efforts and parked whispers awaiting creator decisions.
+
+### `dream:20260826205406:2:263b29`
+*26.08. 20:54 UTC · Quelle: dream*
+
+Metabolism-driven conservation mode severely limits parallel execution, causing skill proposals to stall despite simulation approval.
+
+### `dream:20260826205406:1:b72309`
+*26.08. 20:54 UTC · Quelle: dream*
+
+Free-tier models exhibit unreliable availability (429 errors) and high latency variance, necessitating a model router with health checks and fallback.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Embedding-Recall statt r:2`
 *26.08. 20:33 UTC · Quelle: evolution*
