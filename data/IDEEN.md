@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 11×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs removed zero facts/events while the bahnen graph shows 12 retrievals over the same goal edges, indicating memory growth is outpacing prunin
+- A hand_action failed with exit code 1 in 0.37s with no error message captured, showing that tool failures are being logged without structured failure 
+- Calibration is systematically optimistic: predicted score 4 vs actual 5 was close here, but the simulation verdict 'revise' (5 risks, 3 revisions) pre
+- The swarm run on 'Modell-Fehler reduzieren durch bessere Skills' scored 5/10 and did not converge after 2 cycles despite evolution selecting a 9/10 va
+- 429 Too Many Requests errors on stealth/ox-alpha and z-ai/glm-5.2:free cluster in bursts (ts 1787731465-1787731539), indicating rate-limit exhaustion 
 - Metabolism throttles to max_tasks=4/max_iterations=2 under moderate stress (0.58) while slow-but-reliable fallback models take 50-54s per call, meanin
 - Selbstdiagnose reports zero findings across all organs even while model_fail events accumulate, revealing that model/API failures are not mapped to an
 - Prune runs repeatedly report facts_pruned=0 and events_pruned=0, indicating the pruning criteria are too conservative or memory volume is below thresh
@@ -51,11 +56,6 @@
 - Two consecutive 429 Too Many Requests failures on openrouter.ai models were recovered by failover to a third provider, confirming that multi-provider 
 - The dominant recurring failure pattern is proposal backlog growth: skill_proposals are generated every cycle while only a fraction get trial runs, so 
 - Reflex-mode actions (pre-bound tool scripts like 'vorgeschlagene-fähigkeiten-wirklich-ausp.py') consistently succeed in ~0.25s, so goals that match an
-- Two tool rejections occurred without any structured failure reason being logged, making the root cause unrecoverable after the fact; failures must be 
-- Calibration error was small (predicted 6 vs actual 8, abs_error 2), indicating effort estimates for memory-combination goals are reliable enough to pl
-- The swarm goal 'Alte Traumideen mit Strategien verbinden' succeeded (score 8, converged in 1 cycle) because it combined two previously unconnected dre
-- The prune_run pruned 0 facts and 0 events again, confirming that manual prune triggers are ineffective and pruning must be driven by age/recall-hit th
-- Skill proposals are accumulating faster than they are tested: five proposals were emitted this cycle while zero received a trial run, so proposal gene
 
 ---
 

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2342 Neuronen · 43161 bewertete Synapsen
+Stand: 2354 Neuronen · 43552 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 2342 Neuronen · 43161 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 229 | 0.24 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 229 | 0.24 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 231 | 0.24 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 231 | 0.24 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 182 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 170 | 0.24 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 166 | 0.22 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 168 | 0.22 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 136 | 0.26 |
 | 7 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 137 | 0.26 |
 | 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 145 | 0.24 |
-| 9 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 138 | 0.25 |
-| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 134 | 0.25 |
-| 11 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 128 | 0.26 |
-| 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 137 | 0.24 |
-| 13 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 118 | 0.28 |
-| 14 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 134 | 0.25 |
-| 15 | 💭 | Swarm role imbalance (4 builders : 1 critic) correlates with non… | 126 | 0.26 |
+| 9 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 135 | 0.25 |
+| 10 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 129 | 0.26 |
+| 11 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 138 | 0.25 |
+| 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 138 | 0.24 |
+| 13 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 119 | 0.28 |
+| 14 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 135 | 0.25 |
+| 15 | 💭 | Swarm role imbalance (4 builders : 1 critic) correlates with non… | 127 | 0.26 |
 
 ## Die 15 stärksten Synapsen
 

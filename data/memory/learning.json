@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 08:43:30",
- "ereignisse_ausgewertet": 2485,
+ "stand": "2026-08-26 08:52:48",
+ "ereignisse_ausgewertet": 2523,
  "werkzeuge": [
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
@@ -51,17 +51,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.576,
- "simulationen_angewandt": 57,
+ "haende_quote": 0.581,
+ "simulationen_angewandt": 58,
  "swarm_scores": {
-  "n": 50,
+  "n": 51,
   "best": 9.0,
-  "schnitt": 4.6
+  "schnitt": 4.61
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 49,
-   "schnitt": 4.53
+   "n": 50,
+   "schnitt": 4.54
   },
   "bau": {
    "n": 1,
