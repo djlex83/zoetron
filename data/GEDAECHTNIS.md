@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2951 Fakten** · Stand 2026-08-26 02:03 UTC · aktualisiert bei jedem Herzschlag
+**2964 Fakten** · Stand 2026-08-26 02:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1237
-- **swarm_artifact:** 789
-- **anti_pattern:** 260
-- **last_swarm_critique:** 246
-- **last_swarm_goal:** 200
-- **strategy:** 151
+- **dream:** 1242
+- **swarm_artifact:** 791
+- **anti_pattern:** 262
+- **last_swarm_critique:** 247
+- **last_swarm_goal:** 201
+- **strategy:** 152
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 12
+- **hand_result:** 13
 - **tool:** 8
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 4
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen`
+*26.08. 02:19 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "Traceback (most recent call last):\n  File \"/workspace/zoetron/data/hands_workspace/action_1787710798689.py\", line 461, in <module>\n    main()\n  File \"/workspace/zoetron/data/hands_workspace/action_178"}
+
+### `strategy:zoem_protokoll__vererbbares__geprüftes_wissen_zwis`
+*26.08. 02:19 UTC · Quelle: evolution*
+
+Genetic Blockchain with Proof-of-Knowledge Consensus - Kritikpunkt war hartes Scheitern der Sandbox - Laufbarkeit ist das dominante Kriterium. Variante 0 laesst sich als vereinfachtes Blockchain-Modell (Hash-Verkettung, UTXO-artige Gen
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:2`
+*26.08. 02:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 3): Category-Theoretic Knowledge Sheaves with Grothendieck Topology - Model knowledge as a sheaf on a site of organisms: each organism U has stalk K(U) = verified knowledge sections. Restriction maps = knowledge projection to sub
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:1`
+*26.08. 02:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Neural-Symbolic Actor Swarm with Capability Tokens - Each organism = Akka-style actor with local neural knowledge base (ONNX model) + symbolic rule engine (Datalog). Knowledge transfer = capability token (macaroon) granting r
+
+### `swarm_artifact:Draft deliverable for: Zoem-Protokoll: vererbbares, geprüfte`
+*26.08. 02:17 UTC · Quelle: builder*
+
+[score 1] ```python #!/usr/bin/env python3 """ Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen Kleinste vererbbare Einheit geprüfter Maschinen-Erfahrung - Kultur statt nur Gene. 
+
+### `last_swarm_critique`
+*26.08. 02:17 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: Artefakt läuft nicht (Traceback Zeile 461) - harter Mangel laut Notenskala 0-2; Code im Prompt abgeschnitten (Zeile 461 nicht sichtbar), aber Sandbox-Verdikt ist bindend: LAEUFT NICHT; Vertrag verlangt lauffähigen Python-Block -
+
+### `swarm_artifact:Draft deliverable for: Zoem-Protokoll: vererbbares, geprüfte`
+*26.08. 02:17 UTC · Quelle: builder*
+
+```python #!/usr/bin/env python3 """ Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen Kleinste vererbbare Einheit geprüfter Maschinen-Erfahrung - Kultur statt nur Gene. """  import js
+
+### `last_swarm_goal`
+*26.08. 02:11 UTC · Quelle: system*
+
+Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen
+
+### `dream:20260826021134:5:f12149`
+*26.08. 02:11 UTC · Quelle: dream*
+
+Latency variance is extreme (4.7s to 160.4s on the same model) and correlates loosely with token counts, so latency alone should not drive prioritization decisions.
+
+### `dream:20260826021134:4:7532c8`
+*26.08. 02:11 UTC · Quelle: dream*
+
+Swarm convergence failed after 2 cycles (converged=false) yet the run was accepted at score 6, indicating a missing rule for when to iterate versus accept below-converged results.
+
+### `dream:20260826021134:3:59b568`
+*26.08. 02:11 UTC · Quelle: dream*
+
+A destructive-operation guard correctly blocked the tool 'lebender-steckbrief-die-biografie-als-al' (subprocess needs human approval), revealing that goal-to-tool naming must anticipate approval requirements before execution.
+
+### `dream:20260826021134:2:c03192`
+*26.08. 02:11 UTC · Quelle: dream*
+
+The simulation verdict 'revise' flagged 3 risks but only 2 revisions were applied, meaning simulation findings can be silently dropped without an enforcement gate.
+
+### `dream:20260826021134:1:644257`
+*26.08. 02:11 UTC · Quelle: dream*
+
+Calibration is systematically off: predicted score 4 vs actual 6 (abs_error 2) shows predictions are consistently too pessimistic for creative/identity goals like 'Lebender Steckbrief'.
 
 ### `hand_result:Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen`
 *26.08. 02:03 UTC · Quelle: hands*

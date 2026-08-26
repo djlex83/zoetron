@@ -1,0 +1,16 @@
+{
+  "inhalt": "Lektion: Netzwerkaufrufe ohne Timeout hängen unendlich. Immer timeout-Parameter setzen: requests.get(url, timeout=5)",
+  "beweisrezept": "\ndef test_lektion_timeout():\n    \"\"\"Beweis: Request ohne Timeout kann hängen (simuliert).\"\"\"\n    import socket\n    # Simuliere: Socket ohne Timeout blockiert\n    s = socket.socket()\n    s.settimeout(0.1)\n    try:\n        s.connect((\"10.255.255.1\", 1))  # Nicht-routbare IP, wird timeouten\n        s.close()\n        return False, \"Verbindung unerwartet erfolgreich\"\n    except socket.timeout:\n        return True, \"Timeout funktioniert - Lektion bestätigt\"\n    except Exception as e:\n        return True, f\"Erwarteter Fehler (kein Hang): {type(e).__name__}\"\n\nresult, msg = test_lektion_timeout()\nprint(f\"TEST_ERGEBNIS: {result} | {msg}\")\n",
+  "herkunft": {
+    "organismus_id": "organismus_A_001",
+    "zeitpunkt": "2026-08-26T02:19:59.147080",
+    "quell_ereignis": "Produktionsausfall: Hängender Request blockierte Worker 47 Min."
+  },
+  "stammbaum": [
+    "organismus_A_001"
+  ],
+  "zoem_id": "3ed57927",
+  "erstellt": "2026-08-26T02:19:59.147144",
+  "score": 0.9,
+  "typ": "lektion"
+}

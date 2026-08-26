@@ -1,0 +1,16 @@
+{
+  "inhalt": "Anti-Pattern: Zugriff auf Index 0 einer Liste ohne Prüfen ob leer. Führt zu IndexError. Immer zuerst prüfen: if liste: ...",
+  "beweisrezept": "\ndef test_anti_pattern_leere_liste():\n    \"\"\"Beweis: Zugriff auf leere Liste wirft IndexError.\"\"\"\n    leere = []\n    try:\n        _ = leere[0]\n        return False, \"Kein Fehler geworfen - Anti-Pattern nicht erkannt\"\n    except IndexError:\n        return True, \"IndexError korrekt erkannt - Anti-Pattern bestätigt\"\n\nresult, msg = test_anti_pattern_leere_liste()\nprint(f\"TEST_ERGEBNIS: {result} | {msg}\")\n",
+  "herkunft": {
+    "organismus_id": "organismus_A_001",
+    "zeitpunkt": "2026-08-26T02:19:59.147080",
+    "quell_ereignis": "Laufzeitfehler in Datenverarbeitungspipeline: IndexError auf leerer Liste"
+  },
+  "stammbaum": [
+    "organismus_A_001"
+  ],
+  "zoem_id": "e3f51603",
+  "erstellt": "2026-08-26T02:19:59.147123",
+  "score": 0.95,
+  "typ": "anti_pattern"
+}

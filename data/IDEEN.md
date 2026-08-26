@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 02:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 02:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Modellfehler analysieren und beheben
 - Fußball-Ziel nochmal besser machen
-- Mehr Simulationsergebnisse wirklich nutzen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance is extreme (4.7s to 160.4s on the same model) and correlates loosely with token counts, so latency alone should not drive prioritizat
+- Swarm convergence failed after 2 cycles (converged=false) yet the run was accepted at score 6, indicating a missing rule for when to iterate versus ac
+- A destructive-operation guard correctly blocked the tool 'lebender-steckbrief-die-biografie-als-al' (subprocess needs human approval), revealing that 
+- The simulation verdict 'revise' flagged 3 risks but only 2 revisions were applied, meaning simulation findings can be silently dropped without an enfo
+- Calibration is systematically off: predicted score 4 vs actual 6 (abs_error 2) shows predictions are consistently too pessimistic for creative/identit
 - The self-diagnosis found zero organ defects while model calls still failed externally, proving failures concentrate in the API boundary layer rather t
 - Conserve-mode stress (0.814) coincided with the longest call (150.6s, 6332 output tokens), indicating large generations are the main budget violator a
 - Calibration error was 4 points on a predicted 4 vs. actual 8, showing this system systematically under-predicts goal outcomes by roughly 2x and should
@@ -51,11 +56,6 @@
 - Metabolic conserve-mode (stress 0.814, max 1 iteration) conflicts with goals that need multiple correction loops, causing Score-1 results to go untrea
 - The 'whisper_geparkt' pattern shows tasks fail by stalling after 3 attempts without convergence rather than by explicit rejection, indicating a missin
 - Skill proposals accumulate faster than they are tested (multiple untested proposals per cycle), so the bottleneck is validation capacity, not idea gen
-- The swarm pipeline (recall -> simulate -> build -> verify -> calibrate) produced a runnable 109-line artifact on cycle 1, confirming that the verify-b
-- Under conserve state (stress 0.772) the budget cap of max_tasks=3/max_iterations=1 still allowed goal completion in one cycle, proving tight budgets s
-- Simulation verdicts of 'revise' with 5 identified risks collapse to only 1 applied revision, showing a gap between risk detection and revision impleme
-- First hand_action attempts fail (exit 1) roughly half the time while an immediate retry succeeds (exit 0 in ~0.2s), indicating transient failures rath
-- Predicted goal scores are systematically under-calibrated (predicted 3 vs actual 7), so the system's self-assessment bias is pessimistic and correctab
 
 ---
 

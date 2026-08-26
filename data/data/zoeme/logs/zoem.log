@@ -1,0 +1,26 @@
+2026-08-26 02:17:45,208 [INFO] ============================================================
+2026-08-26 02:17:45,208 [INFO] ZOEM-PROTOKOLL: START VOLLSTÄNDIGER ZYKLUS
+2026-08-26 02:17:45,208 [INFO] ============================================================
+2026-08-26 02:17:45,208 [INFO] 
+--- SCHRITT 1: Export durch organismus_A_001 ---
+2026-08-26 02:17:45,209 [INFO] EXPORT: Zoem 08aaf5b1 (anti_pattern) geschrieben nach /workspace/zoetron/data/data/zoeme/out/08aaf5b1_anti_pattern_1787710665.json
+2026-08-26 02:17:45,209 [INFO] EXPORT: Zoem 7cf8eae4 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/7cf8eae4_lektion_1787710665.json
+2026-08-26 02:17:45,210 [INFO] EXPORT: Zoem f9ece254 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/f9ece254_lektion_1787710665.json
+2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: 08aaf5b1_anti_pattern_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/08aaf5b1_anti_pattern_1787710665.json
+2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: 7cf8eae4_lektion_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/7cf8eae4_lektion_1787710665.json
+2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: f9ece254_lektion_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/f9ece254_lektion_1787710665.json
+2026-08-26 02:17:45,211 [INFO] 
+--- SCHRITT 2: Import durch organismus_B_002 mit Immunsystem ---
+2026-08-26 02:19:59,146 [INFO] ============================================================
+2026-08-26 02:19:59,146 [INFO] ZOEM-PROTOKOLL: START VOLLSTÄNDIGER ZYKLUS
+2026-08-26 02:19:59,146 [INFO] ============================================================
+2026-08-26 02:19:59,147 [INFO] 
+--- SCHRITT 1: Export durch organismus_A_001 ---
+2026-08-26 02:19:59,147 [INFO] EXPORT: Zoem e3f51603 (anti_pattern) geschrieben nach /workspace/zoetron/data/data/zoeme/out/e3f51603_anti_pattern_1787710799.json
+2026-08-26 02:19:59,147 [INFO] EXPORT: Zoem 3ed57927 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/3ed57927_lektion_1787710799.json
+2026-08-26 02:19:59,148 [INFO] EXPORT: Zoem f389bb55 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/f389bb55_lektion_1787710799.json
+2026-08-26 02:19:59,148 [INFO] ÜBERTRAGUNG: e3f51603_anti_pattern_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/e3f51603_anti_pattern_1787710799.json
+2026-08-26 02:19:59,149 [INFO] ÜBERTRAGUNG: 3ed57927_lektion_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/3ed57927_lektion_1787710799.json
+2026-08-26 02:19:59,149 [INFO] ÜBERTRAGUNG: f389bb55_lektion_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/f389bb55_lektion_1787710799.json
+2026-08-26 02:19:59,149 [INFO] 
+--- SCHRITT 2: Import durch organismus_B_002 mit Immunsystem ---
