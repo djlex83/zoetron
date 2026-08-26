@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2933 Fakten** · Stand 2026-08-26 01:46 UTC · aktualisiert bei jedem Herzschlag
+**2938 Fakten** · Stand 2026-08-26 01:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1227
+- **dream:** 1232
 - **swarm_artifact:** 787
 - **anti_pattern:** 258
 - **last_swarm_critique:** 245
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826015151:5:efece3`
+*26.08. 01:51 UTC · Quelle: dream*
+
+API-level failures (429 Too Many Requests) are an external resource constraint not covered by any retry/backoff rule yet, unlike internal code errors which now have wrappers proposed.
+
+### `dream:20260826015151:4:0da2c8`
+*26.08. 01:51 UTC · Quelle: dream*
+
+The simulation 'revise' step with 2 applied revisions preceded a green tor on cycle 1, confirming pre-flight adversarial review converts failures into cheap text edits instead of expensive runtime failures.
+
+### `dream:20260826015151:3:9685d7`
+*26.08. 01:51 UTC · Quelle: dream*
+
+Metabolic conserve-mode (stress 0.814, max 1 iteration) conflicts with goals that need multiple correction loops, causing Score-1 results to go untreated.
+
+### `dream:20260826015151:2:7c81ce`
+*26.08. 01:51 UTC · Quelle: dream*
+
+The 'whisper_geparkt' pattern shows tasks fail by stalling after 3 attempts without convergence rather than by explicit rejection, indicating a missing escalation/decision path to the creator.
+
+### `dream:20260826015151:1:eb386d`
+*26.08. 01:51 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are tested (multiple untested proposals per cycle), so the bottleneck is validation capacity, not idea generation.
 
 ### `tool:lebender-steckbrief-die-biografie-als-al`
 *26.08. 01:46 UTC · Quelle: hands*

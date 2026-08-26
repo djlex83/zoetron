@@ -167,7 +167,7 @@
   "why": "Code kann jeder kopieren - eine gelebte Geschichte nicht. Baue steckbrief.py: erzeugt bei jedem Beat eine öffentliche Seite docs/leben.html mit Lebt-seit-Zähler (Tage seit first_boot), Gesamtzahl Herzschläge, Benchmark-Kurve, ehrlicher Quote (konvergierte gegen gescheiterte Ziele), Anzahl Lektionen und Anti-Patterns sowie den 3 neuesten Retro-Erkenntnissen im Wortlaut. Keine Schönfärbung: Misserfolge werden gleich groß angezeigt wie Erfolge (Genome-Regel be_honest). Fertig wenn: 1) Seite baut automatisch bei jedem Beat, 2) über GitHub Pages erreichbar, 3) im README prominent verlinkt.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 1
+  "_versuche": 2
  },
  {
   "title": "Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen",

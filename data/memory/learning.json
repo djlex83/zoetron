@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 01:46:32",
- "ereignisse_ausgewertet": 1270,
+ "stand": "2026-08-26 01:52:05",
+ "ereignisse_ausgewertet": 1287,
  "werkzeuge": [
   {
    "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
@@ -19,9 +19,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "lebender-steckbrief-die-biografie-als-al.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.583,
+ "haende_quote": 0.586,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 27,

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2097 Neuronen · 34761 bewertete Synapsen
+Stand: 2102 Neuronen · 34908 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -19,7 +19,7 @@ Stand: 2097 Neuronen · 34761 bewertete Synapsen
 | 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 137 | 0.24 |
 | 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 131 | 0.25 |
 | 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 117 | 0.27 |
-| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 119 | 0.25 |
+| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 120 | 0.25 |
 | 11 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 124 | 0.24 |
 | 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 123 | 0.24 |
 | 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 118 | 0.25 |

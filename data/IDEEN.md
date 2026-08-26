@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 01:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 01:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 2×)*
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- API-level failures (429 Too Many Requests) are an external resource constraint not covered by any retry/backoff rule yet, unlike internal code errors 
+- The simulation 'revise' step with 2 applied revisions preceded a green tor on cycle 1, confirming pre-flight adversarial review converts failures into
+- Metabolic conserve-mode (stress 0.814, max 1 iteration) conflicts with goals that need multiple correction loops, causing Score-1 results to go untrea
+- The 'whisper_geparkt' pattern shows tasks fail by stalling after 3 attempts without convergence rather than by explicit rejection, indicating a missin
+- Skill proposals accumulate faster than they are tested (multiple untested proposals per cycle), so the bottleneck is validation capacity, not idea gen
 - The swarm pipeline (recall -> simulate -> build -> verify -> calibrate) produced a runnable 109-line artifact on cycle 1, confirming that the verify-b
 - Under conserve state (stress 0.772) the budget cap of max_tasks=3/max_iterations=1 still allowed goal completion in one cycle, proving tight budgets s
 - Simulation verdicts of 'revise' with 5 identified risks collapse to only 1 applied revision, showing a gap between risk detection and revision impleme
@@ -51,11 +56,6 @@
 - Conserve-mode stress (0.967) did not prevent long blocking calls (73s and 164s), meaning the chunking rule for long generations under stress is not be
 - Calibration error (predicted 4 vs. actual 2) shows the system systematically overestimates its success on new goals, so predictions need a downward co
 - Generated code failed because 'from __future__ import' was placed after other statements (line 23), a recurring Python syntax pattern that must be val
-- Der metabolism_check setzte den Swarm in 'conserve' mit max_iterations=1, und der Swarm endete konvergiert=false mit Score 1 – Ressourcenknappheit plu
-- Der evolution_run war die wirksamste Reparatur-Schleife: aus Score 1/10 entstanden 3 Varianten mit Scores [7,9,8] – variantengenerierung plus Kritik i
-- Die Simulation lieferte erst 'revise' (5 Risiken), dann nach Revision 'go' – trotzdem schlug die Ausführung fehl, d.h. die statische Simulation erkenn
-- Die Kalibrierung lag mit predicted=5 vs. actual=1 (abs_error=4) weit daneben: die Selbstbewertung vor der Ausführung überschätzt Erfolgswahrscheinlich
-- Alle drei fehlgeschlagenen hand_actions scheiterten in unter 0.03s mit exit 1 und error=null, was auf Syntaxfehler im generierten Code vor der Laufzei
 
 ---
 
