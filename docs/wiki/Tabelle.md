@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2354 Neuronen · 43552 bewertete Synapsen
+Stand: 2360 Neuronen · 43706 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -17,12 +17,12 @@ Stand: 2354 Neuronen · 43552 bewertete Synapsen
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 168 | 0.22 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 136 | 0.26 |
 | 7 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 137 | 0.26 |
-| 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 145 | 0.24 |
+| 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 146 | 0.24 |
 | 9 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 135 | 0.25 |
 | 10 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 129 | 0.26 |
 | 11 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 138 | 0.25 |
-| 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 138 | 0.24 |
-| 13 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 119 | 0.28 |
+| 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 139 | 0.24 |
+| 13 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 120 | 0.28 |
 | 14 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 135 | 0.25 |
 | 15 | 💭 | Swarm role imbalance (4 builders : 1 critic) correlates with non… | 127 | 0.26 |
 

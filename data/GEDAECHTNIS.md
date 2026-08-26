@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3304 Fakten** · Stand 2026-08-26 08:53 UTC · aktualisiert bei jedem Herzschlag
+**3309 Fakten** · Stand 2026-08-26 08:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1403
+- **dream:** 1408
 - **swarm_artifact:** 863
 - **anti_pattern:** 294
 - **last_swarm_critique:** 269
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826085856:5:2f3428`
+*26.08. 08:58 UTC · Quelle: dream*
+
+A goal can finish 'not converged' at score 2 while its issue (#135) stays open; convergence must be gated on sandbox-verified execution success, not just cycle count.
+
+### `dream:20260826085856:4:34fdd6`
+*26.08. 08:58 UTC · Quelle: dream*
+
+Evolution rescued a low-scoring run (2/10 → winner variant scored 9/10), confirming that spawning 3 variants with critic feedback is an effective recovery procedure for failed goals.
+
+### `dream:20260826085856:3:34d6aa`
+*26.08. 08:58 UTC · Quelle: dream*
+
+Calibration is systematically overconfident: predicted risk 4 vs actual 2 with abs_error 2, meaning the predictor should be re-anchored on recent observed scores rather than prior expectations.
+
+### `dream:20260826085856:2:7ed683`
+*26.08. 08:58 UTC · Quelle: dream*
+
+OpenRouter free-tier models hit 429 rate limits in bursts; the swarm should treat 429 as a routing signal and immediately fail over to the next model instead of retrying the same endpoint.
+
+### `dream:20260826085856:1:350a51`
+*26.08. 08:58 UTC · Quelle: dream*
+
+The recurring failure mode is artifacts that fail at import time (exit 1 in ~0.03s), so every generated Python artifact must be syntax/import-checked (e.g., py_compile or a dry import) before being handed to the sandbox.
 
 ### `tool:abgelehnte-werkzeuge-prüfen-und-verbesse`
 *26.08. 08:52 UTC · Quelle: hands*

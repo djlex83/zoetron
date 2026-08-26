@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A goal can finish 'not converged' at score 2 while its issue (#135) stays open; convergence must be gated on sandbox-verified execution success, not j
+- Evolution rescued a low-scoring run (2/10 → winner variant scored 9/10), confirming that spawning 3 variants with critic feedback is an effective reco
+- Calibration is systematically overconfident: predicted risk 4 vs actual 2 with abs_error 2, meaning the predictor should be re-anchored on recent obse
+- OpenRouter free-tier models hit 429 rate limits in bursts; the swarm should treat 429 as a routing signal and immediately fail over to the next model 
+- The recurring failure mode is artifacts that fail at import time (exit 1 in ~0.03s), so every generated Python artifact must be syntax/import-checked 
 - Prune runs removed zero facts/events while the bahnen graph shows 12 retrievals over the same goal edges, indicating memory growth is outpacing prunin
 - A hand_action failed with exit code 1 in 0.37s with no error message captured, showing that tool failures are being logged without structured failure 
 - Calibration is systematically optimistic: predicted score 4 vs actual 5 was close here, but the simulation verdict 'revise' (5 risks, 3 revisions) pre
@@ -51,11 +56,6 @@
 - Prune runs repeatedly report facts_pruned=0 and events_pruned=0, indicating the pruning criteria are too conservative or memory volume is below thresh
 - A 50-item skill-proposal backlog exists because proposals are generated every dream cycle but only executed when a drive goal explicitly targets them;
 - Two of three model endpoints (stealth/ox-alpha and z-ai/glm-5.2:free) fail consistently with HTTP 429 rate-limit errors while nvidia/nemotron-3-ultra 
-- Recurring drive goals about connecting old dream content with new plans keep reappearing without completion, suggesting these integration goals lack a
-- Prune runs removing 0 facts and 0 events across consecutive cycles indicate the pruning criteria are misaligned with actual memory content and are sil
-- Two consecutive 429 Too Many Requests failures on openrouter.ai models were recovered by failover to a third provider, confirming that multi-provider 
-- The dominant recurring failure pattern is proposal backlog growth: skill_proposals are generated every cycle while only a fraction get trial runs, so 
-- Reflex-mode actions (pre-bound tool scripts like 'vorgeschlagene-fähigkeiten-wirklich-ausp.py') consistently succeed in ~0.25s, so goals that match an
 
 ---
 
