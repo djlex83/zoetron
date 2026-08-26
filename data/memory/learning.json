@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-25 23:35:35",
- "ereignisse_ausgewertet": 878,
+ "stand": "2026-08-26 00:13:30",
+ "ereignisse_ausgewertet": 941,
  "werkzeuge": [
   {
    "tool": "fußball-die-basislinie-von-50-2-schlagen.py",
@@ -13,19 +13,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.594,
+ "haende_quote": 0.606,
  "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 18,
+  "n": 19,
   "best": 9.0,
-  "schnitt": 4.56
+  "schnitt": 4.63
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 18,
-   "schnitt": 4.56
+   "n": 19,
+   "schnitt": 4.63
   }
  }
 }

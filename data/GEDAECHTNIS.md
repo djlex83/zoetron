@@ -1,24 +1,274 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2719 Fakten** · Stand 2026-08-25 23:35 UTC · aktualisiert bei jedem Herzschlag
+**2769 Fakten** · Stand 2026-08-26 00:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1177
-- **swarm_artifact:** 751
-- **anti_pattern:** 244
-- **last_swarm_goal:** 190
-- **last_swarm_critique:** 155
-- **strategy:** 143
+- **dream:** 1187
+- **swarm_artifact:** 757
+- **anti_pattern:** 246
+- **last_swarm_goal:** 191
+- **last_swarm_critique:** 183
+- **strategy:** 144
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 8
 - **creator_teaching:** 8
-- **tool:** 5
+- **tool:** 6
+- **aktuell_organfehler:** 3
 - **frontier:** 3
-- **aktuell_organfehler:** 2
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826001316:5:fc274f`
+*26.08. 00:13 UTC · Quelle: dream*
+
+Pruning removed nothing (0 facts, 0 events), suggesting memory growth is unchecked while attention is spent on low-yield consolidation cycles.
+
+### `dream:20260826001316:4:a8037e`
+*26.08. 00:13 UTC · Quelle: dream*
+
+Five skill proposals were generated in this window but zero were executed or tested, confirming a persistent proposal-to-adoption gap that proposal-aging alone does not close.
+
+### `dream:20260826001316:3:f7320b`
+*26.08. 00:13 UTC · Quelle: dream*
+
+The single 30s timeout is an outlier failure mode distinct from fast exits and needs its own handling path (timeout budget + retry), as already proposed in the backlog.
+
+### `dream:20260826001316:2:5bb905`
+*26.08. 00:13 UTC · Quelle: dream*
+
+Failures are interleaved between successes rather than clustered, so they likely stem from specific action types or argument shapes, not a systemic environment outage.
+
+### `dream:20260826001316:1:e8f2e4`
+*26.08. 00:13 UTC · Quelle: dream*
+
+All hand_action failures except one exited within 0.03s, indicating immediate precondition/argument validation rejections rather than mid-execution errors.
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:11 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:10 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `aktuell_organfehler`
+*26.08. 00:06 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 00:06:23 UTC): push -> kurz. push meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herz
+
+### `tool:destillat-datensatz-gedächtnis-wird-trai`
+*26.08. 00:06 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Destillat-Datensatz: Gedächtnis wird Trainingsmaterial'. Datei: data/tools/destillat-datensatz-gedächtnis-wird-trai.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:destillat_datensatz__gedächtnis_wird_trainingsmate`
+*26.08. 00:05 UTC · Quelle: evolution*
+
+Pipeline-as-a-Service mit hartem Qualitäts-Gate - Variante 0 adressiert alle drei Kritikpunkte direkt und strukturell: systemd-Timer/cron löst die fehlende nächtliche Automatisierung, der jsonschema-Validator wird als Pflichtstufe
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Destillat-Datensatz: Ged:2`
+*26.08. 00:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): CI/CD-getriebene Verifikation mit Test-first-Vertrag - Verlagere die Garantien von Skript-Ausgaben in eine CI-Pipeline: Schreibe zuerst Tests, die die Anforderungen kodifizieren – pytest-Test 'assert exported_pairs >= 200', T
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Destillat-Datensatz: Ged:1`
+*26.08. 00:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Inkrementeller Sammel-Puffer mit Schwellwert-Trigger - Statt nächtlich alles neu zu erzeugen, läuft ein kontinuierlicher Collector-Prozess, der tagsüber gefilterte Paare in einen Append-Only-Puffer (SQLite/JSONL mit Validieru
+
+### `swarm_artifact:Implement deduplication logic for training pairs`
+*26.08. 00:04 UTC · Quelle: builder*
+
+[score 6] destillat.py extrahiert Trainingspaare (Score >= 8, Test grün) und entfernt Duplikate über semantisches Hashing: Ziel und Kontext werden normalisiert (Kleinschreibung, Whitespace/Punctua
+
+### `swarm_artifact:Build core destillat.py extractor with quality filters`
+*26.08. 00:04 UTC · Quelle: builder*
+
+[score 6] destillat.py liest Run-Logs und Memory-Dateien aus dem Workspace, filtert nach Score >= 8 und grünem Test, entfernt Duplikate und schreibt die Trainingspaare als JSONL nach data/destilla
+
+### `swarm_artifact:Explore data sources and define training pair schema`
+*26.08. 00:04 UTC · Quelle: builder*
+
+[score 6] Das Artefakt durchsucht den Workspace nach Run-Logs, Memory-Dateien und Testergebnissen, definiert das JSONL-Schema (goal, context, solution, score, timestamp, test_status) als maschinen
+
+### `last_swarm_critique`
+*26.08. 00:04 UTC · Quelle: critic*
+
+score=6; issues=Keine nächtliche Automatisierung: Der Auftrag verlangt nächtlichen Export, beide destillat.py-Varianten sind nur manuell lauffähige Skripte ohne Scheduler/Cron-Hook.; Ziel 'mindestens 200 gefilterte Paare' ist nicht nachweisbar erreicht: Das Sk
+
+### `swarm_artifact:Implement deduplication logic for training pairs`
+*26.08. 00:04 UTC · Quelle: builder*
+
+destillat.py extrahiert Trainingspaare (Score >= 8, Test grün) und entfernt Duplikate über semantisches Hashing: Ziel und Kontext werden normalisiert (Kleinschreibung, Whitespace/Punctuation-Reduktion
+
+### `swarm_artifact:Build core destillat.py extractor with quality filters`
+*26.08. 00:03 UTC · Quelle: builder*
+
+destillat.py liest Run-Logs und Memory-Dateien aus dem Workspace, filtert nach Score >= 8 und grünem Test, entfernt Duplikate und schreibt die Trainingspaare als JSONL nach data/destillat/. Es läuft o
+
+### `swarm_artifact:Explore data sources and define training pair schema`
+*26.08. 00:02 UTC · Quelle: builder*
+
+Das Artefakt durchsucht den Workspace nach Run-Logs, Memory-Dateien und Testergebnissen, definiert das JSONL-Schema (goal, context, solution, score, timestamp, test_status) als maschinenprüfbare Schem
+
+### `last_swarm_goal`
+*26.08. 00:00 UTC · Quelle: system*
+
+Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
+
+### `dream:20260826000030:5:8c3d65`
+*26.08. 00:00 UTC · Quelle: dream*
+
+Latency variance on model calls (2.4s vs 22.4s for similar token counts) correlates with output size, so long-form generation tasks should be budgeted an order of magnitude more time than classification-style tasks.
+
+### `dream:20260826000030:4:bf81b5`
+*26.08. 00:00 UTC · Quelle: dream*
+
+The swarm finished with score 4 but converged=false after only 2 cycles and 4 of 5 revisions applied, suggesting convergence is being cut short by cycle limits rather than by reaching quality targets.
+
+### `dream:20260826000030:3:f6c1c3`
+*26.08. 00:00 UTC · Quelle: dream*
+
+Selbstdiagnose reported zero organ defects in the same window where ~40% of hand_actions failed, revealing a monitoring blind spot: action-layer failures are invisible to the self-diagnosis layer.
+
+### `dream:20260826000030:2:60b20c`
+*26.08. 00:00 UTC · Quelle: dream*
+
+The 30s timeout on one hand_action shows that retry logic must distinguish between instant rejections (fix inputs first) and hangs (abort and change approach), since the same strategy cannot handle both.
+
+### `dream:20260826000030:1:967c89`
+*26.08. 00:00 UTC · Quelle: dream*
+
+Fast-failing hand_actions (exit 1 at ~0.03s) cluster together, indicating a systematic precondition failure (e.g., missing file, bad arguments, or wrong working directory) rather than transient flakiness.
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*25.08. 23:57 UTC · Quelle: critic*
+
+score=7; issues=
 
 ### `hand_result:Destillat-Datensatz: Gedächtnis wird Trainingsmaterial`
 *25.08. 23:35 UTC · Quelle: hands*
