@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4035 Fakten** · Stand 2026-08-26 22:56 UTC · aktualisiert bei jedem Herzschlag
+**4052 Fakten** · Stand 2026-08-26 23:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1631
-- **swarm_artifact:** 993
-- **last_swarm_critique:** 506
-- **anti_pattern:** 342
-- **last_swarm_goal:** 255
-- **strategy:** 192
+- **dream:** 1636
+- **swarm_artifact:** 999
+- **last_swarm_critique:** 507
+- **anti_pattern:** 344
+- **last_swarm_goal:** 256
+- **strategy:** 193
 - **hand_result:** 35
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 20
+- **tool:** 21
 - **aktuell_organfehler:** 14
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:cortex-upgrade-reflex-neue-modelle-autom`
+*26.08. 23:19 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren'. Datei: data/tools/cortex-upgrade-reflex-neue-modelle-autom.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:1`
+*26.08. 23:17 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 9, 7]): CI/CD Pipeline with Automated Validation Gates - Treat model adoption as a software deployment pipeline. On new model artifact push to the model store, a CI/CD pipeline (GitHub Actions, GitLab CI, Argo CD) runs automa
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:0`
+*26.08. 23:17 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 9, 8]): Event-Driven Model Registry Integration - Implement a model registry (e.g., MLflow, Weights & Biases, or custom) that emits events (via Kafka, NATS, or webhook) whenever a new model version is registered. The Cortex s
+
+### `last_swarm_critique`
+*26.08. 23:15 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*26.08. 23:03 UTC · Quelle: system*
+
+Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
+
+### `dream:20260826230202:5:21f4e8`
+*26.08. 23:02 UTC · Quelle: dream*
+
+Small, fast models like poolside/laguna-s-2.1 can handle lightweight tasks efficiently when latency is critical
+
+### `dream:20260826230202:4:7dee56`
+*26.08. 23:02 UTC · Quelle: dream*
+
+Calibration predictions are consistently off by 2x, suggesting the need for better confidence estimation mechanisms
+
+### `dream:20260826230202:3:78bdeb`
+*26.08. 23:02 UTC · Quelle: dream*
+
+Model selection should prioritize reliable endpoints over free-tier models that frequently return 429 errors
+
+### `dream:20260826230202:2:f69c28`
+*26.08. 23:02 UTC · Quelle: dream*
+
+Best-of-N evaluation with impartial judges consistently improves artifact quality from 2/10 to 9/10 scores
+
+### `dream:20260826230202:1:9e3dec`
+*26.08. 23:02 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or retry logic
 
 ### `dream:20260826225552:5:de4b24`
 *26.08. 22:55 UTC · Quelle: dream*
