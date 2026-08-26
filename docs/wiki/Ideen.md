@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 22:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 22:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 12×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 7×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 5×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Best-of-N with verifier converts test-time compute into quality but multiplies API calls, amplifying rate-limit exposure proportionally to N.
+- Hand actions failed twice before succeeding, revealing missing idempotency and success-criteria validation in tool execution.
+- Model latency variance is extreme (5s to 107s) demanding per-model timeout budgets and async orchestration instead of global timeouts.
+- Simulation-driven revision (4 risks caught, 3 revisions proposed, 2 applied) prevented deployment of flawed artifacts and is a high-leverage quality g
+- Free-tier models on OpenRouter suffer systematic 429 rate limits requiring aggressive retry-with-fallback strategies rather than single-model reliance
 - Token throughput varies wildly: minimax processes ~13k tokens in 76s while nemotron handles ~1.2k–5.5k tokens in 22–116s, making latency-cost tradeoff
 - The simulation-revision loop (3 revisions applied for Hebbian synapse-quality goal) demonstrates that structured critique cycles converge even under m
 - Operating in 'conserve' metabolism with max_iterations=1 forces single-pass execution, eliminating retry loops that could absorb transient 429/502 err
@@ -51,11 +56,6 @@
 - Repeated model failures correlate with unimplemented skill proposals, suggesting a gap between identified needs and actual system resilience improveme
 - Model reliability varies significantly under load, with some models consistently failing while others (e.g., minimax/minimax-m3) succeed at the cost o
 - Rate limiting (429) and upstream overload (502) errors are systemic across multiple free-tier models, indicating infrastructure fragility rather than 
-- Drive goals generated from this experience (reduce model errors, embedding recall) are correctly identified as failure-signal driven, but the metaboli
-- The existing skill_proposal for model routing was never operationalized — dream_finished marked 5 proposals but the next swarm immediately re-encounte
-- Token output varies 9× across successful models (Nemotron 665–852 vs dots-3-note 7252), so verbosity is a hidden cost dimension that must factor into 
-- NVIDIA Nemotron-3-Ultra is the only model with consistent success (3/3 OK) and reasonable latency (19.9s–85.3s), making it the current de-facto reliab
-- Free-tier OpenRouter models (gemma-4-26b, laguna-s-2.1, minimax-m3, glm-5.2) hit 429 rate limits repeatedly in a single session, with glm-5.2 failing 
 
 ---
 

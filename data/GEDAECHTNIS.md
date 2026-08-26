@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4030 Fakten** · Stand 2026-08-26 22:36 UTC · aktualisiert bei jedem Herzschlag
+**4035 Fakten** · Stand 2026-08-26 22:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1626
+- **dream:** 1631
 - **swarm_artifact:** 993
 - **last_swarm_critique:** 506
 - **anti_pattern:** 342
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826225552:5:de4b24`
+*26.08. 22:55 UTC · Quelle: dream*
+
+Best-of-N with verifier converts test-time compute into quality but multiplies API calls, amplifying rate-limit exposure proportionally to N.
+
+### `dream:20260826225552:4:c44dac`
+*26.08. 22:55 UTC · Quelle: dream*
+
+Hand actions failed twice before succeeding, revealing missing idempotency and success-criteria validation in tool execution.
+
+### `dream:20260826225552:3:7207b4`
+*26.08. 22:55 UTC · Quelle: dream*
+
+Model latency variance is extreme (5s to 107s) demanding per-model timeout budgets and async orchestration instead of global timeouts.
+
+### `dream:20260826225552:2:f426a1`
+*26.08. 22:55 UTC · Quelle: dream*
+
+Simulation-driven revision (4 risks caught, 3 revisions proposed, 2 applied) prevented deployment of flawed artifacts and is a high-leverage quality gate.
+
+### `dream:20260826225552:1:71d26a`
+*26.08. 22:55 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systematic 429 rate limits requiring aggressive retry-with-fallback strategies rather than single-model reliance.
 
 ### `tool:best-of-n-mit-unbestechlichem-prüfer-tes`
 *26.08. 22:36 UTC · Quelle: hands*
