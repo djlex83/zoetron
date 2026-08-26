@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
+- Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
-- Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Selbstdiagnose found no internal organ failures, meaning recent failures (non-convergence, unused skill proposals) are process-level gaps, not infrast
+- Zero facts or events were pruned during consolidation while drive goals keep accumulating, suggesting memory growth is outpacing pruning and will degr
+- Calibration error was small (predicted 6 vs actual 7), so self-assessment is reliable enough to gate convergence decisions on predicted scores.
+- The simulation step flagged 'revise' with 3 risks and all 3 revisions were applied, showing the simulate-then-apply loop works and should be mandatory
+- Evolution produced a variant scoring 9/10, yet the swarm ended at 7/10 without converging in only 2 cycles, indicating premature cycle termination dis
 - Recurring failure themes from prior dreams (33 model errors, 4 unexplained tool rejections) remain unresolved open goals; they should be prioritized o
 - Convergence failed after 2 cycles despite a good score, suggesting the convergence threshold or cycle budget—not solution quality—is the bottleneck wh
 - Calibration error was small (predicted 6 vs actual 7), so score predictions are trustworthy enough to gate convergence decisions without extra verific
@@ -51,11 +56,6 @@
 - Latency variance is extreme (2.1s to 84.7s on the same model), so timeouts and scheduling should be latency-aware rather than assuming uniform respons
 - The pre-swarm simulation gate paid off: verdict 'revise' with 2 risks led to applied revisions before execution, so simulations must remain mandatory 
 - Calibration systematically underestimates swarm quality: predicted 5 vs actual 8 suggests the predictor should be shifted upward or trained on past sc
-- Self-diagnosis found zero organ failures while pruning removed nothing, suggesting memory pressure is not yet a bottleneck and diagnostic effort can s
-- Single-cycle convergence with 3 roles (planner/builder/critic) achieved score 8 without evolution, indicating that pre-validated revisions reduce the 
-- Tool rejection was caused by policy (destructive subprocess requiring human approval), not by tool design — proposals must be tagged with their risk c
-- Calibration error of 2 (predicted 6 vs actual 8) shows predictions systematically undershoot for goals involving skill experimentation; per-goal-type 
-- Simulation-to-action conversion works: all 3 revisions from simulation were applied and produced a 339-line runnable artifact that passed TOR on cycle
 
 ---
 
