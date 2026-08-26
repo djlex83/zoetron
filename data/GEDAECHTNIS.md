@@ -1,24 +1,99 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3640 Fakten** · Stand 2026-08-26 14:09 UTC · aktualisiert bei jedem Herzschlag
+**3655 Fakten** · Stand 2026-08-26 14:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1539
-- **swarm_artifact:** 906
-- **last_swarm_critique:** 372
+- **dream:** 1544
+- **swarm_artifact:** 912
+- **last_swarm_critique:** 373
 - **anti_pattern:** 314
-- **last_swarm_goal:** 237
+- **last_swarm_goal:** 238
 - **strategy:** 178
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 28
+- **hand_result:** 29
 - **tool:** 17
 - **creator_teaching:** 8
-- **aktuell_organfehler:** 5
+- **aktuell_organfehler:** 6
 - **frontier:** 3
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten`
+*26.08. 14:34 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787754843437.py\", line 197\n    if \"\n       ^\nSyntaxError: unterminated string literal (detected at line 197)\n"}
+
+### `swarm_artifact:Implement FRAGEN channel - failure detection and question em`
+*26.08. 14:33 UTC · Quelle: builder*
+
+[score 8] ```python import json import os import sys import time import logging from datetime import datetime, timezone from typing import Any, Dict, List, Optional  # --- Logging setup ----------
+
+### `swarm_artifact:Implement STATUS channel - compact state snapshot`
+*26.08. 14:33 UTC · Quelle: builder*
+
+[score 8] ```python import json import os import sys import time import logging from datetime import datetime, timezone from typing import Any, Dict, List, Optional  # --- Logging setup ----------
+
+### `swarm_artifact:Create bruecke.py with three-channel filesystem bridge`
+*26.08. 14:33 UTC · Quelle: builder*
+
+[score 8]   ```python import json import os import sys import time from datetime import datetime, timezone from typing import Any, Dict, List, Optional  # --- Resolve data root -------------------
+
+### `last_swarm_critique`
+*26.08. 14:33 UTC · Quelle: critic*
+
+score=8; issues=Self-test does not demonstrate complete Question->Answer->Lehrer cycle with test data (no test antworten.json created); Third artifact truncated in display (though noted not to penalize); STATUS channel in artifact 3 requires caller to pass sta
+
+### `swarm_artifact:Implement FRAGEN channel - failure detection and question em`
+*26.08. 14:28 UTC · Quelle: builder*
+
+```python import json import os import sys import time import logging from datetime import datetime, timezone from typing import Any, Dict, List, Optional  # --- Logging setup ------------------------
+
+### `swarm_artifact:Implement STATUS channel - compact state snapshot`
+*26.08. 14:23 UTC · Quelle: builder*
+
+```python import json import os import sys import time import logging from datetime import datetime, timezone from typing import Any, Dict, List, Optional  # --- Logging setup ------------------------
+
+### `swarm_artifact:Create bruecke.py with three-channel filesystem bridge`
+*26.08. 14:21 UTC · Quelle: builder*
+
+  ```python import json import os import sys import time from datetime import datetime, timezone from typing import Any, Dict, List, Optional  # --- Resolve data root ---------------------------------
+
+### `last_swarm_goal`
+*26.08. 14:15 UTC · Quelle: system*
+
+Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
+
+### `dream:20260826141300:5:c3d028`
+*26.08. 14:13 UTC · Quelle: dream*
+
+System generates 3+ drive goals per cycle but tests <10% of proposed skills, creating an idea-execution gap that stalls capability growth.
+
+### `dream:20260826141300:4:0f5a24`
+*26.08. 14:13 UTC · Quelle: dream*
+
+Reflex mode achieves convergence in one shot where multi-cycle deliberation stalls, suggesting over-engineering for well-scoped code tasks.
+
+### `dream:20260826141300:3:8bb691`
+*26.08. 14:13 UTC · Quelle: dream*
+
+Evolution and swarm cycles improve scores (7→9) but fail to converge, indicating missing acceptance criteria or fitness plateau detection.
+
+### `dream:20260826141300:2:5e63aa`
+*26.08. 14:13 UTC · Quelle: dream*
+
+Calibration error of 4 cycles (predicted 3 vs actual 7) shows the planner systematically underestimates iteration needs for self-modifying code.
+
+### `dream:20260826141300:1:c5bb74`
+*26.08. 14:13 UTC · Quelle: dream*
+
+Model latency varies 40x (3s–128s) for identical model calls, making time budgets unreliable without latency-aware scheduling.
+
+### `aktuell_organfehler`
+*26.08. 14:09 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 14:08:55 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
 
 ### `swarm_artifact:End-to-End-Nachweis: kompletter Durchlauf Frage → Antwort → `
 *26.08. 14:08 UTC · Quelle: builder*
