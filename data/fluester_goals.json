@@ -191,6 +191,7 @@
   "why": "Die eigene Aussendarstellung widerspricht sich an drei Stellen: README_DE nennt den Herzschlag 'alle 5 Min (~288/Tag)', docs/index.html schreibt 'heartbeat every 15 min' UND 'reports every 30 minutes'; README nennt '34 Tests komplett offline gruen', index.html '65/65 tests green'. Ein Organismus, der auf der eigenen Landing-Page Selbstheilung beansprucht, muss zuerst die eigene Doku heilen. Baue ein ausführbares Skript doc_check.py: liest die WAHREN Werte aus der Quelle der Wahrheit (Herzschlag-Intervall aus heartbeat_daemon.sh, Testanzahl aus dem Testlauf, Telegram-Intervall aus der Heartbeat-Logik), vergleicht sie mit den Zahlen in README.md, README_DE.md und docs/index.html und meldet jede Abweichung mit Datei, Zeile und erwartetem Wert. Werte NICHT raten: was sich nicht aus dem Code ableiten lässt, wird als 'unbestimmt' gemeldet, nicht erfunden (Genom-Regel be_honest). Fertig wenn: 1) das Skript die aktuellen Widersprüche vollständig auflistet, 2) es im Herzschlag läuft und bei Abweichung Alarm gibt, 3) die drei Dateien danach übereinstimmende Zahlen tragen. Nebenbei zu korrigieren: Tippfehler 'konkretiem Anliegen' in docs/index.html. Nur lauffähiger Code zählt, kein Design-Dokument.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 2
+  "_versuche": 3,
+  "_geparkt": true
  }
 ]

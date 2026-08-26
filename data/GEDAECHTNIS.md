@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3045 Fakten** · Stand 2026-08-26 04:40 UTC · aktualisiert bei jedem Herzschlag
+**3062 Fakten** · Stand 2026-08-26 04:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1273
-- **swarm_artifact:** 813
-- **anti_pattern:** 272
-- **last_swarm_critique:** 252
-- **last_swarm_goal:** 206
-- **strategy:** 157
+- **dream:** 1278
+- **swarm_artifact:** 819
+- **anti_pattern:** 274
+- **last_swarm_critique:** 253
+- **last_swarm_goal:** 207
+- **strategy:** 158
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 15
+- **hand_result:** 16
 - **tool:** 8
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,91 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Ersten Swarm-Lauf mit Score 8+ konvergieren lassen`
+*26.08. 04:51 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787719870829.py\", line 17\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports mus"}
+
+### `strategy:ersten_swarm_lauf_mit_score_8__konvergieren_lassen`
+*26.08. 04:50 UTC · Quelle: evolution*
+
+Elimination Strategy: Drop Future Import & Use Native Typing - Variant 1 eliminates the root cause by targeting Python 3.11+ where PEP 563 behavior is default, removing the fragile import ordering constraint entirely. It reduces boilerplate, i
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*26.08. 04:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 6, 8]): Architectural Change: Verified Template Pipeline with Syntax Gate - Replace ad-hoc code generation with a Jinja2 template pipeline where each artifact template is pre-validated. Templates include a fixed header block 
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Ersten Swarm-Lauf mit Sc:0`
+*26.08. 04:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 7]): Direct Fix: Enforce Import Ordering in Code Generation - Modify the artifact generator to emit 'from __future__ import annotations' as the absolute first non-docstring statement. Inject a template preprocessor that so
+
+### `swarm_artifact:Couple calibration prediction with stop criterion`
+*26.08. 04:50 UTC · Quelle: builder*
+
+[score 2] Here's the calibration-stop coupling module that aligns stop conditions with calibration predictions and observed convergence:  ```python """calibration_stop_coupling.py Kopplung der Kal
+
+### `swarm_artifact:Implement convergence gate requiring score ≥ 8 before accept`
+*26.08. 04:50 UTC · Quelle: builder*
+
+[score 2] Here's the convergence gate implementation with sustained score tracking and max-cycle escape hatch:  ```python """convergence_gate.py Konvergenz-Tor fuer den Swarm: Erfordert Score >= 8
+
+### `swarm_artifact:Fix metabolism conserve mode - increase max_iterations for c`
+*26.08. 04:50 UTC · Quelle: builder*
+
+[score 2] Der Fix implementiert einen begrenzten Override (bounded override): Bei Kalibrierungs-Zielen skaliert der Metabolism-Check `max_iterations` auf 3–5 Zyklen, prüft pro Zyklus Budget (Token
+
+### `last_swarm_critique`
+*26.08. 04:50 UTC · Quelle: critic*
+
+score=2; issues=Harter Mangel laut Sandbox-Urteil: Artefakt laeuft nicht - Syntax-/Importfehler an 'from __future__ import annotations' (action_1787719794917.py Zeile 17, action_1787719794943.py Zeile 10). Dieses Urteil ist Tatsache und wiegt schwerer als alle
+
+### `swarm_artifact:Couple calibration prediction with stop criterion`
+*26.08. 04:49 UTC · Quelle: builder*
+
+Here's the calibration-stop coupling module that aligns stop conditions with calibration predictions and observed convergence:  ```python """calibration_stop_coupling.py Kopplung der Kalibrierungs-Vor
+
+### `swarm_artifact:Implement convergence gate requiring score ≥ 8 before accept`
+*26.08. 04:48 UTC · Quelle: builder*
+
+Here's the convergence gate implementation with sustained score tracking and max-cycle escape hatch:  ```python """convergence_gate.py Konvergenz-Tor fuer den Swarm: Erfordert Score >= 8 ueber 2 aufei
+
+### `swarm_artifact:Fix metabolism conserve mode - increase max_iterations for c`
+*26.08. 04:47 UTC · Quelle: builder*
+
+Der Fix implementiert einen begrenzten Override (bounded override): Bei Kalibrierungs-Zielen skaliert der Metabolism-Check `max_iterations` auf 3–5 Zyklen, prüft pro Zyklus Budget (Tokens/Zeit) und br
+
+### `last_swarm_goal`
+*26.08. 04:45 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260826044529:5:6ae192`
+*26.08. 04:45 UTC · Quelle: dream*
+
+Selbstdiagnose found zero organ defects while real failures (429s, non-converged swarm, blocked execution) occurred in the same window, showing current health checks monitor internals but miss external/behavioral failure signals.
+
+### `dream:20260826044529:4:be9c14`
+*26.08. 04:45 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are validated (5 proposals pending, 0 tested), creating a growing backlog that wastes dream output unless a sandbox trial-and-promotion loop exists.
+
+### `dream:20260826044529:3:5cadc1`
+*26.08. 04:45 UTC · Quelle: dream*
+
+Swarm convergence failed (score 6/10, converged=false after 2 cycles) even though all 3 revisions were applied, indicating the revise loop terminates on cycle budget rather than on risk closure — verdicts should gate on open risks, not remaining cycles.
+
+### `dream:20260826044529:2:97e733`
+*26.08. 04:45 UTC · Quelle: dream*
+
+The 'Doku-Konsistenzwächter' goal stalled not at generation but at execution: the swarm produced a subprocess-based artifact that was correctly blocked by the destructive-operation guard, meaning tool safety classification must be part of goal planning, not di
+
+### `dream:20260826044529:1:7a019a`
+*26.08. 04:45 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in pairs within seconds, so nvidia/nemotron-3-ultra is the de facto reliable fallback and should be treated as primary until cooldowns are tracked.
 
 ### `hand_result:Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten`
 *26.08. 04:40 UTC · Quelle: hands*
