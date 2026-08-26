@@ -1,24 +1,164 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3663 Fakten** · Stand 2026-08-26 15:04 UTC · aktualisiert bei jedem Herzschlag
+**3691 Fakten** · Stand 2026-08-26 15:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1549
-- **swarm_artifact:** 914
-- **last_swarm_critique:** 373
-- **anti_pattern:** 314
-- **last_swarm_goal:** 239
-- **strategy:** 178
-- **aktuell_fussball_messlatte:** 30
-- **hand_result:** 29
+- **dream:** 1554
+- **swarm_artifact:** 920
+- **last_swarm_critique:** 383
+- **anti_pattern:** 316
+- **last_swarm_goal:** 240
+- **strategy:** 179
+- **aktuell_fussball_messlatte:** 31
+- **hand_result:** 30
 - **tool:** 17
 - **creator_teaching:** 8
-- **aktuell_organfehler:** 6
+- **aktuell_organfehler:** 7
 - **frontier:** 3
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `aktuell_fussball_messlatte`
+*26.08. 15:33 UTC · Quelle: vorpruefung.py*
+
+Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0088 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. ACHTUNG, zuletzt abgelehnt (zoetron_f15fbd279b.py): IndentationError: unindent does not match any outer inden
+
+### `hand_result:Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten`
+*26.08. 15:33 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787758392738.py\", line 68\n    games = defaultdict(int)\n                            ^\nIndentationError: unindent does not match any outer indenta"}
+
+### `strategy:fußball__die_basislinie_von_50_2___schlagen__ohne_`
+*26.08. 15:29 UTC · Quelle: evolution*
+
+Elo Rating Monte Carlo Simulation - Elo Monte Carlo offers a robust, well-understood framework that is simpler to implement correctly than the other two, avoiding the feature engineering complexity of Gradient Boosti
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fußball: die Basislinie :2`
+*26.08. 15:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 8]): Gradient Boosting on Engineered Match Features - Construct a feature set per match: rolling averages (last 5/10 games) of goals scored/conceded, shots on target, corners, cards, rest days, head-to-head history, league
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fußball: die Basislinie :0`
+*26.08. 15:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 7, 7]): Poisson Regression with Time-Decay Weighting - Model each team's attack/defense strength via Poisson regression (or Dixon-Coles) using only match results. Weight each historical match by exp(-λ * days_ago) so recent f
+
+### `swarm_artifact:Test adaptive bin width based on data density`
+*26.08. 15:26 UTC · Quelle: builder*
+
+[score 1] # AENDERUNG: Adaptive Bin-Breiten via Quantile der Elo-Differenzen (Trainingsdaten). Zwei Durchlaeufe: 1. Elo-Diffs sammeln, 2. Quantil-Bins berechnen und Kalibrierung auffuellen. Bin-Ka
+
+### `swarm_artifact:Add draw-specific calibration handling`
+*26.08. 15:26 UTC · Quelle: builder*
+
+[score 1] # AENDERUNG: Draw-spezifische Kalibrierung – per Bin wird ein Draw-Multiplikator (beobachtete Draw-Rate / vorhergesagte Draw-Rate) mit Bayes-Prior (Shrinkage zu 1) gelernt und nur bei >2
+
+### `swarm_artifact:Implement neighbor-bin calibration smoothing`
+*26.08. 15:26 UTC · Quelle: builder*
+
+[score 1]   ```python # AENDERUNG: Kalibrierungsglaettung ueber Nachbar-Bins – bei der Akkumulation # wird jedes Ergebnis mit einem Gauß-Kernel (Sigma=1 Bin, ±2 Bins) auf # Nachbarbinsen verteilt.
+
+### `last_swarm_critique`
+*26.08. 15:26 UTC · Quelle: critic*
+
+score=1; issues=SyntaxError: Zeile 68 hat fehlerhafte Einrückung ('   games = defaultdict(int)' statt korrekter Einrückung), wodurch der Code nicht parsebar ist; NameError: In _k_eff wird 'Spiele_a' (Großbuchstabe) verwendet, aber Parameter heißt 'spiele_a' – 
+
+### `swarm_artifact:Test adaptive bin width based on data density`
+*26.08. 15:25 UTC · Quelle: builder*
+
+# AENDERUNG: Adaptive Bin-Breiten via Quantile der Elo-Differenzen (Trainingsdaten). Zwei Durchlaeufe: 1. Elo-Diffs sammeln, 2. Quantil-Bins berechnen und Kalibrierung auffuellen. Bin-Kanten werden im
+
+### `swarm_artifact:Add draw-specific calibration handling`
+*26.08. 15:20 UTC · Quelle: builder*
+
+# AENDERUNG: Draw-spezifische Kalibrierung – per Bin wird ein Draw-Multiplikator (beobachtete Draw-Rate / vorhergesagte Draw-Rate) mit Bayes-Prior (Shrinkage zu 1) gelernt und nur bei >200 Spielen ang
+
+### `swarm_artifact:Implement neighbor-bin calibration smoothing`
+*26.08. 15:17 UTC · Quelle: builder*
+
+  ```python # AENDERUNG: Kalibrierungsglaettung ueber Nachbar-Bins – bei der Akkumulation # wird jedes Ergebnis mit einem Gauß-Kernel (Sigma=1 Bin, ±2 Bins) auf # Nachbarbinsen verteilt. Die Abfrage i
+
+### `last_swarm_goal`
+*26.08. 15:10 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 15:09 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `dream:20260826150800:5:903b33`
+*26.08. 15:08 UTC · Quelle: dream*
+
+The simulation revision loop (verdict: revise → 4 risks → 4 revisions → 3 applied) demonstrates that structured critique reduces risk count but not necessarily revision count.
+
+### `dream:20260826150800:4:2f49b6`
+*26.08. 15:08 UTC · Quelle: dream*
+
+High output token counts (≥6000) correlate with latency >150s across multiple models, suggesting token budget as a leading latency indicator.
+
+### `dream:20260826150800:3:f7278d`
+*26.08. 15:08 UTC · Quelle: dream*
+
+Model `stealth/ox-alpha` transitioned from functional (4.6s, 26.2s) to permanent 404 within 300s, indicating provider-side deprecation without notice.
+
+### `dream:20260826150800:2:06094d`
+*26.08. 15:08 UTC · Quelle: dream*
+
+The circuit breaker (3 consecutive errors → 1800s lockout) protects system stability but lacks error-type discrimination, penalizing transient 429/502 equally with permanent 404/401.
+
+### `dream:20260826150800:1:a36ca5`
+*26.08. 15:08 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading failure modes: rate limits (429), auth expiration (401), upstream overload (502), and endpoint disappearance (404) often cluster in time.
+
+### `aktuell_organfehler`
+*26.08. 15:04 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 15:04:03 UTC): act -> timeout. Phase nach 1500 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Orga
 
 ### `swarm_artifact:Evaluate smoothed calibration on validation set (val.csv)`
 *26.08. 15:00 UTC · Quelle: builder*

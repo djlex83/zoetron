@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 15:04:04",
- "ereignisse_ausgewertet": 3509,
+ "stand": "2026-08-26 15:33:22",
+ "ereignisse_ausgewertet": 3559,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-prüfen-und-verbesse.py",
@@ -75,17 +75,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.581,
- "simulationen_angewandt": 71,
+ "haende_quote": 0.576,
+ "simulationen_angewandt": 73,
  "swarm_scores": {
-  "n": 65,
+  "n": 66,
   "best": 9.0,
-  "schnitt": 4.68
+  "schnitt": 4.62
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 64,
-   "schnitt": 4.62
+   "n": 65,
+   "schnitt": 4.57
   },
   "bau": {
    "n": 1,
