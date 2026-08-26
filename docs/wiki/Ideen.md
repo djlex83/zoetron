@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 11×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fixed iteration budgets starve defect-rich tasks while simple tasks waste cycles.
+- Skill proposals accumulate (5 in this session) but drive goals reveal few are implemented, creating a proposal–execution gap.
+- Calibration error of 1 persists across runs, showing risk priors do not adapt from observed outcomes.
+- Swarms converge in one cycle without evolution, indicating reflexes execute but do not improve autonomously.
+- Model latency varies by 30x (5.7–180s) causing unpredictable resource consumption and budget overruns.
 - Conserve mode caps tasks at 3 while stress is at 1.0 and the last goal ended unconverged, so budget policy is suppressing exactly the debugging work t
 - Skill proposals are accumulating faster than they are tested (5 new proposals this cycle, 0 executed), creating an untested backlog that wastes the sy
 - 4 of 5 critic revisions were applied but nothing verified them against the working tree, so 'revise' verdicts can silently lose changes between simula
@@ -51,11 +56,6 @@
 - Nvidia Nemotron models (both 3.5-lightning and 3-ultra) serve as reliable fallbacks with higher latency variance (18-124s) but no observed 429 errors.
 - stealth/ox-alpha delivers consistent low-latency (~11-30s) high-quality outputs when not rate-limited, but shares the same quota pool as other OpenRou
 - Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making them unreliable for production workflows.
-- Drive goals generated from failure signals ('Modell-Fehler deutlich reduzieren') directly led to actionable swarm work on rejected tools, confirming t
-- Metabolic stress at 0.874 correctly triggered 'conserve' mode limiting to 3 tasks/1 iteration, which kept the swarm productive despite degraded model 
-- Simulation verdicts of 'revise' with high risk counts (4 risks) still yield value when applied selectively — only 2 of 4 revisions were applied, sugge
-- Free-tier models (z-ai, google/gemma, nvidia) are unreliable under load; ox-alpha succeeded 4/5 times while free models failed repeatedly, so critical
-- Rate-limit failures (429) cluster in bursts across multiple models simultaneously, indicating shared upstream throttling rather than per-model issues,
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3364 Fakten** · Stand 2026-08-26 09:54 UTC · aktualisiert bei jedem Herzschlag
+**3369 Fakten** · Stand 2026-08-26 09:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1438
+- **dream:** 1443
 - **swarm_artifact:** 873
 - **anti_pattern:** 298
 - **last_swarm_critique:** 272
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826095853:5:161dc8`
+*26.08. 09:58 UTC · Quelle: dream*
+
+Fixed iteration budgets starve defect-rich tasks while simple tasks waste cycles.
+
+### `dream:20260826095853:4:f1a6b7`
+*26.08. 09:58 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this session) but drive goals reveal few are implemented, creating a proposal–execution gap.
+
+### `dream:20260826095853:3:997a8b`
+*26.08. 09:58 UTC · Quelle: dream*
+
+Calibration error of 1 persists across runs, showing risk priors do not adapt from observed outcomes.
+
+### `dream:20260826095853:2:0bb0ea`
+*26.08. 09:58 UTC · Quelle: dream*
+
+Swarms converge in one cycle without evolution, indicating reflexes execute but do not improve autonomously.
+
+### `dream:20260826095853:1:851a06`
+*26.08. 09:58 UTC · Quelle: dream*
+
+Model latency varies by 30x (5.7–180s) causing unpredictable resource consumption and budget overruns.
 
 ### `dream:20260826095404:5:880d22`
 *26.08. 09:54 UTC · Quelle: dream*
