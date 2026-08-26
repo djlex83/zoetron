@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3950 Fakten** · Stand 2026-08-26 21:31 UTC · aktualisiert bei jedem Herzschlag
+**3995 Fakten** · Stand 2026-08-26 22:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1616
-- **swarm_artifact:** 980
-- **last_swarm_critique:** 459
-- **anti_pattern:** 338
-- **last_swarm_goal:** 253
-- **strategy:** 190
-- **hand_result:** 34
+- **dream:** 1621
+- **swarm_artifact:** 987
+- **last_swarm_critique:** 487
+- **anti_pattern:** 340
+- **last_swarm_goal:** 254
+- **strategy:** 191
+- **hand_result:** 35
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 19
 - **aktuell_organfehler:** 14
@@ -19,6 +19,186 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Best-of-N mit unbestechl:2`
+*26.08. 22:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 8]): Automated Contract Testing and Schema Validation - Implement a test suite that uses `pytest` and `hypothesis` to generate test cases. Define JSON schemas for the data exchanged. Each artifact must pass contract tests 
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Best-of-N mit unbestechl:1`
+*26.08. 22:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 7, 7]): Pipeline Orchestration with Explicit Adapters - Introduce a pipeline orchestrator (e.g., a main script) that mediates between artifacts. Each artifact is wrapped in an adapter that translates its input/output to a can
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:02 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:01 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 22:00 UTC · Quelle: critic*
+
+score=2; issues=Artefakt 1 (best_of_n.py) definiert nicht die geforderte Funktion best_of_three(), die Artefakte 2 und 3 aus zoetron.best_of_n importieren – Vertragsverletzung: fehlender Funktionsname; Datenstruktur-Inkompatibilität: Artefakt 2 speichert Ergeb
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 21:56 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_goal`
+*26.08. 21:50 UTC · Quelle: system*
+
+Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
+
+### `dream:20260826214954:5:88de2f`
+*26.08. 21:49 UTC · Quelle: dream*
+
+Previous benchmark failure (4/10) reflects a pattern of insufficient testing infrastructure, leading to unreliable performance evaluation and deployment decisions
+
+### `dream:20260826214954:4:70629d`
+*26.08. 21:49 UTC · Quelle: dream*
+
+The system's stress state (1.0) and conserve mode indicate resource exhaustion, likely exacerbated by repeated failed model calls consuming budget without productive output
+
+### `dream:20260826214954:3:150f12`
+*26.08. 21:49 UTC · Quelle: dream*
+
+Repeated model failures correlate with unimplemented skill proposals, suggesting a gap between identified needs and actual system resilience improvements
+
+### `dream:20260826214954:2:72ee3e`
+*26.08. 21:49 UTC · Quelle: dream*
+
+Model reliability varies significantly under load, with some models consistently failing while others (e.g., minimax/minimax-m3) succeed at the cost of higher latency
+
+### `dream:20260826214954:1:bcbc31`
+*26.08. 21:49 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) errors are systemic across multiple free-tier models, indicating infrastructure fragility rather than isolated failures
 
 ### `tool:hebbisches-lernen-im-graph-synapsen-qual`
 *26.08. 21:30 UTC · Quelle: hands*

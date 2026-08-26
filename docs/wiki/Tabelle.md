@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2642 Neuronen · 55961 bewertete Synapsen
+Stand: 2655 Neuronen · 56373 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,18 +13,18 @@ Stand: 2642 Neuronen · 55961 bewertete Synapsen
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 265 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 265 | 0.25 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 198 | 0.24 |
-| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 203 | 0.23 |
-| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 188 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 173 | 0.24 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 174 | 0.23 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 204 | 0.23 |
+| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 189 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 174 | 0.24 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 175 | 0.23 |
 | 8 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 162 | 0.24 |
 | 9 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 138 | 0.28 |
-| 10 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 149 | 0.26 |
+| 10 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 150 | 0.26 |
 | 11 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 148 | 0.25 |
 | 12 | 💭 | Calibration consistently underestimates actual scores by ~3 poin… | 136 | 0.27 |
 | 13 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 152 | 0.24 |
 | 14 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 147 | 0.25 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 162 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 164 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 
