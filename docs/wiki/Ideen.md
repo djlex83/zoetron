@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 06:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 06:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 9×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 6×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
@@ -36,11 +36,16 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
+- Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
-- Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis found zero organ failures while pruning removed nothing, suggesting memory pressure is not yet a bottleneck and diagnostic effort can s
+- Single-cycle convergence with 3 roles (planner/builder/critic) achieved score 8 without evolution, indicating that pre-validated revisions reduce the 
+- Tool rejection was caused by policy (destructive subprocess requiring human approval), not by tool design — proposals must be tagged with their risk c
+- Calibration error of 2 (predicted 6 vs actual 8) shows predictions systematically undershoot for goals involving skill experimentation; per-goal-type 
+- Simulation-to-action conversion works: all 3 revisions from simulation were applied and produced a 339-line runnable artifact that passed TOR on cycle
 - Selbstdiagnose reported zero organ defects immediately after multiple model failures and a rejected action, indicating the diagnostic layer only check
 - Skill proposals accumulate faster than they are tested (many proposed, ~zero executed), so the proposal queue grows without producing validated capabi
 - Destructive tools containing subprocess calls are silently rejected and parked instead of being routed to a human-approval issue, losing viable capabi
@@ -51,11 +56,6 @@
 - Latency varies up to ~5x between successful calls on the same model (13.8s vs 65.3s), so timeout thresholds must tolerate slow-but-valid responses rat
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeded in every observed window (13.8s, 65.3s, 24.1s), making it the reliable failover target when other pro
 - 429 rate-limit failures cluster on the same free-tier models (z-ai/glm-5.2:free and stealth/ox-alpha) within seconds of each other, meaning immediate 
-- Zwei drive_goals ('Fähigkeiten testen' und 'alte Träume kombinieren') wurden zwar erinnert und in ein Swarm-Ziel überführt, aber ohne Mindest-Qualität
-- Der Evolution-Run (3 Varianten, Sieger-Scores 9/10/9 nach Kritik 'Harter Mangel') zeigt, dass die Critic-gesteuerte Variante den anfänglichen Score-2-
-- OpenRouter-429-Ratenlimits trafen sowohl stealth/ox-alpha als auch z-ai/glm-5.2:free gleichzeitig – ein Fallback-Kette mit exponentiellem Backoff stat
-- Die Kalibrierung lag mit predicted 7 vs. actual 2 (abs_error 5) massiv daneben: Selbstbewertungen vor der Ausführung sind systematisch zu optimistisch
-- Der häufigste Ausfallmodus ist ein hartes hand_action-Fehlschlagen (exit 1, ~0.35s), das den TOR-Check 'Artefakt laeuft nicht' auslöst und den ganzen 
 
 ---
 

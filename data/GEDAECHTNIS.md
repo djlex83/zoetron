@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3167 Fakten** · Stand 2026-08-26 06:51 UTC · aktualisiert bei jedem Herzschlag
+**3180 Fakten** · Stand 2026-08-26 06:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1323
-- **swarm_artifact:** 845
-- **anti_pattern:** 282
-- **last_swarm_critique:** 262
-- **last_swarm_goal:** 216
-- **strategy:** 162
+- **dream:** 1328
+- **swarm_artifact:** 847
+- **anti_pattern:** 284
+- **last_swarm_critique:** 263
+- **last_swarm_goal:** 217
+- **strategy:** 163
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 18
-- **tool:** 10
+- **tool:** 11
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
 - **frontier:** 3
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-ausp`
+*26.08. 06:59 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich ausprobieren'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-ausp.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:vorgeschlagene_fähigkeiten_wirklich_ausprobieren`
+*26.08. 06:59 UTC · Quelle: evolution*
+
+Empirischer Beweis durch Artefakte - Variant 2 directly addresses both the goal (capabilities truly tried out) and the critic issue (unparseable output) by demanding concrete artifacts that are immediately verified. I
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*26.08. 06:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Capability-Checkliste als State Machine - Modelliere die auszuprobierenden Fähigkeiten als explizite Zustandsmaschine mit Zuständen: PROPOSED → ATTEMPTED → VERIFIED / FAILED. Für jede Fähigkeit wird zwingend mindestens ein re
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:0`
+*26.08. 06:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Sandbox-First Execution - Baue zuerst eine isolierte Testumgebung (Sandbox), in der jede vorgeschlagene Fähigkeit in einem kontrollierten Mini-Experiment ausgeführt wird. Jede Fähigkeit erhält ein eigenes Skript mit definiert
+
+### `swarm_artifact:Draft deliverable for: Vorgeschlagene Fähigkeiten wirklich a`
+*26.08. 06:58 UTC · Quelle: builder*
+
+[score 5] Das Artefakt führt die vorgeschlagenen Fähigkeiten als echte Mini-Tests aus: Erwartung vs. tatsächliches Ergebnis, messbare Erfolgskriterien und ein JSONL-Log, damit auch Fehlversuche al
+
+### `last_swarm_critique`
+*26.08. 06:58 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Draft deliverable for: Vorgeschlagene Fähigkeiten wirklich a`
+*26.08. 06:56 UTC · Quelle: builder*
+
+Das Artefakt führt die vorgeschlagenen Fähigkeiten als echte Mini-Tests aus: Erwartung vs. tatsächliches Ergebnis, messbare Erfolgskriterien und ein JSONL-Log, damit auch Fehlversuche als Beweis für k
+
+### `last_swarm_goal`
+*26.08. 06:53 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich ausprobieren
+
+### `dream:20260826065333:5:3697c7`
+*26.08. 06:53 UTC · Quelle: dream*
+
+Self-diagnosis found zero organ failures while pruning removed nothing, suggesting memory pressure is not yet a bottleneck and diagnostic effort can stay lightweight.
+
+### `dream:20260826065333:4:f332a5`
+*26.08. 06:53 UTC · Quelle: dream*
+
+Single-cycle convergence with 3 roles (planner/builder/critic) achieved score 8 without evolution, indicating that pre-validated revisions reduce the need for evolutionary repair loops.
+
+### `dream:20260826065333:3:6061c2`
+*26.08. 06:53 UTC · Quelle: dream*
+
+Tool rejection was caused by policy (destructive subprocess requiring human approval), not by tool design — proposals must be tagged with their risk class upfront to avoid wasted cycles.
+
+### `dream:20260826065333:2:5fcaf3`
+*26.08. 06:53 UTC · Quelle: dream*
+
+Calibration error of 2 (predicted 6 vs actual 8) shows predictions systematically undershoot for goals involving skill experimentation; per-goal-type calibration history is needed.
+
+### `dream:20260826065333:1:21f525`
+*26.08. 06:53 UTC · Quelle: dream*
+
+Simulation-to-action conversion works: all 3 revisions from simulation were applied and produced a 339-line runnable artifact that passed TOR on cycle 1, so simulating before building is a reliable quality gate.
 
 ### `swarm_artifact:Draft deliverable for: Vorschläge wirklich ausprobieren stat`
 *26.08. 06:50 UTC · Quelle: builder*
