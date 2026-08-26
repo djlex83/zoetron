@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 09:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency varied 14x (4.0s to 56.4s) at comparable token volumes, implying latency-based routing or timeouts are needed instead of assuming unifor
+- Two cycles were insufficient for convergence even after an evolution run, suggesting cycle budgets for revise-verdict tasks should scale with the numb
+- Risk prediction is systematically miscalibrated downward (predicted 3 vs actual 5, abs_error 2), so raw model risk counts should be anchored to a roll
+- Evolution produced variants scoring 8-9/10 but the swarm's final score remained 5/10, indicating the winning variant was likely not integrated back in
+- Execution success is not quality: the artifact compiled and ran (exit 0, 154 lines) yet scored only 5/10 because the critic's re-validation defect was
 - Metabolism dropped to conserve mode (stress 1.0, budget capped at 3 tasks/1 iteration) exactly when deep debugging was needed, so resource throttling 
 - Skill proposals accumulate faster than they are tested (5 proposals, 0 trials), so the proposal channel has become a write-only queue that creates an 
 - A score of 1/10 with converged=false after 2 cycles was still followed by goal re-emission ('Abgelehnte Werkzeuge prüfen und verbessern') rather than 
@@ -51,11 +56,6 @@
 - Skill proposal emission is outpacing testing: multiple new proposals (rate_limit_backoff, zero_prune_alert, dream_integration_step) duplicate or exten
 - The swarm's non-convergence pattern (score 2, verdict 'revise', 3 revisions applied but still not converged) suggests revision loops alone don't fix w
 - Reflex-first execution succeeded where LLM swarm deliberation failed: the reflex 'alte-traumideen-mit-strategien-verbinden.py' converged (exit 0) on t
-- A goal can finish 'not converged' at score 2 while its issue (#135) stays open; convergence must be gated on sandbox-verified execution success, not j
-- Evolution rescued a low-scoring run (2/10 → winner variant scored 9/10), confirming that spawning 3 variants with critic feedback is an effective reco
-- Calibration is systematically overconfident: predicted risk 4 vs actual 2 with abs_error 2, meaning the predictor should be re-anchored on recent obse
-- OpenRouter free-tier models hit 429 rate limits in bursts; the swarm should treat 429 as a routing signal and immediately fail over to the next model 
-- The recurring failure mode is artifacts that fail at import time (exit 1 in ~0.03s), so every generated Python artifact must be syntax/import-checked 
 
 ---
 

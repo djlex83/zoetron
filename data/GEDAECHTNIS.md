@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3336 Fakten** · Stand 2026-08-26 09:29 UTC · aktualisiert bei jedem Herzschlag
+**3349 Fakten** · Stand 2026-08-26 09:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1418
-- **swarm_artifact:** 871
-- **anti_pattern:** 296
-- **last_swarm_critique:** 271
-- **last_swarm_goal:** 225
-- **strategy:** 169
+- **dream:** 1423
+- **swarm_artifact:** 873
+- **anti_pattern:** 298
+- **last_swarm_critique:** 272
+- **last_swarm_goal:** 226
+- **strategy:** 170
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 22
+- **hand_result:** 23
 - **tool:** 15
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Vorgeschlagene Fähigkeiten ausprobieren`
+*26.08. 09:36 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787736995193.py\", line 19\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports mus"}
+
+### `strategy:vorgeschlagene_fähigkeiten_ausprobieren`
+*26.08. 09:36 UTC · Quelle: evolution*
+
+Interaktiv-demonstrative Strategie (Fähigkeiten-Menü) - Variante 1 kombiniert garantierte Lauffähigkeit (kein __future__-Import, try/except-Schutz) mit vollständiger Demonstration aller vorgeschlagenen Fähigkeiten im automatischen Selbs
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeit:2`
+*26.08. 09:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Testgetriebene Strategie (Assertion-Suite statt Feature-Umfang) - Drehe den Ansatz um: Statt zuerst Features zu bauen, wird eine ausführbare Selbstvalidierungs-Suite geschrieben, die jede vorgeschlagene Fähigkeit über assert-
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeit:0`
+*26.08. 09:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Minimalismus / Zero-Dependency-Strategie - Baue das Artefakt als kleinstmögliches, garantiert lauffähiges Python-Skript: keine Imports außer der Standardbibliothek, insbesondere KEIN 'from __future__ import annotations' und k
+
+### `swarm_artifact:Draft deliverable for: Vorgeschlagene Fähigkeiten ausprobier`
+*26.08. 09:35 UTC · Quelle: builder*
+
+[score 2] Das Artefakt ist ein ausführbares Testwerkzeug, das die vier geforderten Teilschritte (1) Fähigkeiten auflisten, (2) Minimaltest definieren, (3) Tests ausführen und (4) Ergebnisse dokume
+
+### `last_swarm_critique`
+*26.08. 09:35 UTC · Quelle: critic*
+
+score=2; issues=Artefakt läuft nicht laut Sandbox-Urteil (from __future__ import annotations verursacht Fehler); Keine lauffähige Ausführung bedeutet harter Mangel – Akzeptanzkriterien können nicht validiert werden
+
+### `swarm_artifact:Draft deliverable for: Vorgeschlagene Fähigkeiten ausprobier`
+*26.08. 09:35 UTC · Quelle: builder*
+
+Das Artefakt ist ein ausführbares Testwerkzeug, das die vier geforderten Teilschritte (1) Fähigkeiten auflisten, (2) Minimaltest definieren, (3) Tests ausführen und (4) Ergebnisse dokumentieren in ein
+
+### `last_swarm_goal`
+*26.08. 09:32 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten ausprobieren
+
+### `dream:20260826093145:5:b4de52`
+*26.08. 09:31 UTC · Quelle: dream*
+
+Model latency varied 14x (4.0s to 56.4s) at comparable token volumes, implying latency-based routing or timeouts are needed instead of assuming uniform provider performance.
+
+### `dream:20260826093145:4:0ad267`
+*26.08. 09:31 UTC · Quelle: dream*
+
+Two cycles were insufficient for convergence even after an evolution run, suggesting cycle budgets for revise-verdict tasks should scale with the number of open critic defects rather than being fixed at 2.
+
+### `dream:20260826093145:3:dc6fc5`
+*26.08. 09:31 UTC · Quelle: dream*
+
+Risk prediction is systematically miscalibrated downward (predicted 3 vs actual 5, abs_error 2), so raw model risk counts should be anchored to a rolling mean of observed actuals rather than trusted directly.
+
+### `dream:20260826093145:2:e7eb06`
+*26.08. 09:31 UTC · Quelle: dream*
+
+Evolution produced variants scoring 8-9/10 but the swarm's final score remained 5/10, indicating the winning variant was likely not integrated back into the deliverable or the scoring pipeline did not propagate the improved candidate.
+
+### `dream:20260826093145:1:eb7273`
+*26.08. 09:31 UTC · Quelle: dream*
+
+Execution success is not quality: the artifact compiled and ran (exit 0, 154 lines) yet scored only 5/10 because the critic's re-validation defect was never addressed, so 'it runs' must be treated as a necessary but insufficient gate.
 
 ### `tool:reflexe-öfter-automatisch-einsetzen`
 *26.08. 09:29 UTC · Quelle: hands*
