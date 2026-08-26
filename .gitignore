@@ -54,5 +54,6 @@ data/hermes/
 # am 26.08.2026 .env.bak.0005 ins Repo, obwohl .env ignoriert war.
 *.bak
 *.bak.*
+*bak*
 *.orig
 *.tmp
