@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 05:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 05:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 8×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation verdicts of 'revise' are being acted on (3/3 revisions applied), so the simulation gate is effective at improving plans before real-world e
+- The recurring gap between skill_proposals and executed actions persists even in a session that explicitly set 'Mehr Vorschläge wirklich ausprobieren' 
+- A swarm run under metabolism stress=1.0/conserve still completed its full cycle including simulation with 3 revisions applied, proving constrained bud
+- The nemotron-3-ultra model succeeds consistently (4/4 calls, 6-17s latency), making it the de facto reliable backbone while ox-alpha only intermittent
+- Model failures are dominated by 429 rate-limit errors on 'stealth/ox-alpha' and 'z-ai/glm-5.2:free', meaning the fallback chain works but retries hit 
 - Hand actions fail repeatedly at task onset (3 consecutive exit=1), indicating missing preconditions or environment setup before code execution.
 - Calibration consistently overestimates outcomes (predicted 5 vs actual 2), suggesting the predictor lacks feedback from execution failures and rate li
 - Evolution produces high-scoring variants (9,9,10) but the swarm converges to score 2, showing a disconnect between variant evaluation and integrated s
@@ -51,11 +56,6 @@
 - 429 rate-limit errors cascade across models in failover order within the same second, meaning immediate sequential failover amplifies throttling inste
 - Repeated goals like 'Doku-Konsistenzwächter' get parked after 3 non-convergent attempts, indicating failure cause is goal scoping/verification criteri
 - Swarm runs repeatedly fail to converge (score 2 after 2 cycles) because termination is declared without the critic verifying closure of logged risks —
-- Metabolism stress and model quota exhaustion are coupled failure modes: high swarm activity triggers rate limits, which raises latency, which increase
-- Skill proposals accumulate (5 in this cycle) but drive feedback indicates they aren't being trialed or retired, creating proposal debt.
-- Destructive tool operations (subprocess) require human approval, creating a hard automation ceiling for any code-executing skill.
-- Swarm convergence fails at score 5/10 despite a clear winning variant (9,9,9) because critic/builder roles don't exploit the best candidate across cyc
-- Primary models (stealth/ox-alpha, z-ai/glm-5.2) suffer systematic 429 rate-limiting, forcing fallback to slower nvidia/nemotron and degrading swarm la
 
 ---
 
