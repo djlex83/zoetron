@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3309 Fakten** · Stand 2026-08-26 08:59 UTC · aktualisiert bei jedem Herzschlag
+**3326 Fakten** · Stand 2026-08-26 09:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1408
-- **swarm_artifact:** 863
-- **anti_pattern:** 294
-- **last_swarm_critique:** 269
-- **last_swarm_goal:** 223
-- **strategy:** 168
+- **dream:** 1413
+- **swarm_artifact:** 869
+- **anti_pattern:** 296
+- **last_swarm_critique:** 270
+- **last_swarm_goal:** 224
+- **strategy:** 169
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 22
-- **tool:** 13
+- **tool:** 14
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
 - **frontier:** 3
@@ -19,6 +19,91 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:abgelehnte-werkzeuge-verstehen-und-verbe`
+*26.08. 09:10 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Abgelehnte Werkzeuge verstehen und verbessern'. Datei: data/tools/abgelehnte-werkzeuge-verstehen-und-verbe.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:abgelehnte_werkzeuge_verstehen_und_verbessern`
+*26.08. 09:08 UTC · Quelle: evolution*
+
+Interactive Human-in-the-Loop Co-Design Loop - Variant 1 directly closes the critic's gap: it converts 'verstehen' into structured human annotations AND 'verbessern' into ranked hypotheses plus auto-generated PRs with post-depl
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Abgelehnte Werkzeuge ver:2`
+*26.08. 09:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 6]): Continuous Policy Learning via Rejection-as-Negative-Reward - Treat every tool rejection as a negative reward signal in a contextual bandit / RLHF framework. Log full context (user goal, conversation history, tool sch
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Abgelehnte Werkzeuge ver:0`
+*26.08. 09:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 4, 9]): Causal Root-Cause Analysis with Automated Remediation Synthesis - Build a causal inference engine that maps rejection patterns to root causes via counterfactual reasoning. Instead of keyword matching, use semantic emb
+
+### `swarm_artifact:Live-Revalidierung: Existierende Werkzeuge echt parsen/pruef`
+*26.08. 09:07 UTC · Quelle: builder*
+
+[score 7] Live-Revalidierung: Das Skript parst jede Python-Datei in `data/tools/` per `ast.parse` (Syntax-Prüfung ohne Ausführung) und meldet Fehler mit Zeile und Offset konkret. Pro Datei wird `v
+
+### `swarm_artifact:Ablehnungsgruende klassifizieren (Muster statt Einzel faelle`
+*26.08. 09:07 UTC · Quelle: builder*
+
+[score 7] This script reads rejection entries from JSONL files, classifies reasons using a declarative keyword table, and outputs total counts and frequencies. It gracefully handles missing data f
+
+### `swarm_artifact:Inventur: Alle abgelehnten/existierenden Werkzeuge sichtbar `
+*26.08. 09:07 UTC · Quelle: builder*
+
+[score 7] Das Skript inventarisiert `data/tools/` vollständig: jede Datei mit Name, Größe und Lesbarkeits-Status, plus Gesamtanzahl als verifizierbares JSON. Fehlt das Verzeichnis, liefert es trot
+
+### `last_swarm_critique`
+*26.08. 09:07 UTC · Quelle: critic*
+
+score=7; issues=Ziel nur zur Haelfte erfuellt: 'verstehen' ist abgedeckt (Inventur, Klassifikation, Revalidierung), aber 'verbessern' fehlt vollstaendig - kein Artefakt leitet aus den Befunden eine Verbesserung oder einen Verbesserungsvorschlag ab.; Klassifika
+
+### `swarm_artifact:Live-Revalidierung: Existierende Werkzeuge echt parsen/pruef`
+*26.08. 09:07 UTC · Quelle: builder*
+
+Live-Revalidierung: Das Skript parst jede Python-Datei in `data/tools/` per `ast.parse` (Syntax-Prüfung ohne Ausführung) und meldet Fehler mit Zeile und Offset konkret. Pro Datei wird `valid: True/Fal
+
+### `swarm_artifact:Ablehnungsgruende klassifizieren (Muster statt Einzel faelle`
+*26.08. 09:06 UTC · Quelle: builder*
+
+This script reads rejection entries from JSONL files, classifies reasons using a declarative keyword table, and outputs total counts and frequencies. It gracefully handles missing data files with an e
+
+### `swarm_artifact:Inventur: Alle abgelehnten/existierenden Werkzeuge sichtbar `
+*26.08. 09:04 UTC · Quelle: builder*
+
+Das Skript inventarisiert `data/tools/` vollständig: jede Datei mit Name, Größe und Lesbarkeits-Status, plus Gesamtanzahl als verifizierbares JSON. Fehlt das Verzeichnis, liefert es trotzdem gültiges 
+
+### `last_swarm_goal`
+*26.08. 09:03 UTC · Quelle: system*
+
+Abgelehnte Werkzeuge verstehen und verbessern
+
+### `dream:20260826090250:5:687296`
+*26.08. 09:02 UTC · Quelle: dream*
+
+Drive goals are correctly converting abstract drives into concrete actions (e.g., connecting old rejected plans via a specific tool), showing the drive→reflex pipeline works and should be the default path for recurring drive themes.
+
+### `dream:20260826090250:4:57960e`
+*26.08. 09:02 UTC · Quelle: dream*
+
+Prune runs repeatedly remove 0 facts/events while self-diagnosis finds 0 organ errors — either memory pressure is genuinely low or prune criteria no longer match the current fact/event schema; this needs one diagnostic check to disambiguate.
+
+### `dream:20260826090250:3:cba7d5`
+*26.08. 09:02 UTC · Quelle: dream*
+
+Skill proposal emission is outpacing testing: multiple new proposals (rate_limit_backoff, zero_prune_alert, dream_integration_step) duplicate or extend earlier untested ones, confirming a >5:1 untested-to-tested ratio that wastes generation capacity.
+
+### `dream:20260826090250:2:3258c8`
+*26.08. 09:02 UTC · Quelle: dream*
+
+The swarm's non-convergence pattern (score 2, verdict 'revise', 3 revisions applied but still not converged) suggests revision loops alone don't fix weak goals — goal quality at creation is the bottleneck, supporting keyword-match routing before deliberation.
+
+### `dream:20260826090250:1:c2db34`
+*26.08. 09:02 UTC · Quelle: dream*
+
+Reflex-first execution succeeded where LLM swarm deliberation failed: the reflex 'alte-traumideen-mit-strategien-verbinden.py' converged (exit 0) on the same goal family ('Abgelehnte Werkzeuge prüfen') that the 3-role swarm could not converge on in 2 cycles (s
 
 ### `dream:20260826085856:5:2f3428`
 *26.08. 08:58 UTC · Quelle: dream*

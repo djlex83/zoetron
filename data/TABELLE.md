@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2360 Neuronen · 43706 bewertete Synapsen
+Stand: 2374 Neuronen · 43951 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,11 +10,11 @@ Stand: 2360 Neuronen · 43706 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 231 | 0.24 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 231 | 0.24 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 233 | 0.24 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 233 | 0.24 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 182 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 170 | 0.24 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 168 | 0.22 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 170 | 0.22 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 136 | 0.26 |
 | 7 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 137 | 0.26 |
 | 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 146 | 0.24 |
@@ -23,8 +23,8 @@ Stand: 2360 Neuronen · 43706 bewertete Synapsen
 | 11 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 138 | 0.25 |
 | 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 139 | 0.24 |
 | 13 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 120 | 0.28 |
-| 14 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 135 | 0.25 |
-| 15 | 💭 | Swarm role imbalance (4 builders : 1 critic) correlates with non… | 127 | 0.26 |
+| 14 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 136 | 0.24 |
+| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 122 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 
