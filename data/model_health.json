@@ -1,14 +1,14 @@
 {
- "stand": 1787715660.7565107,
+ "stand": 1787717110.1324809,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 260,
+   "laeufe": 266,
    "fehler": 35,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 6970.072089910507,
+   "latenz_summe_s": 7061.082190036774,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1787527026.270047,
    "kontofehler": 6
@@ -44,14 +44,14 @@
    "kontofehler": 37
   },
   "stealth/ox-alpha": {
-   "laeufe": 483,
+   "laeufe": 484,
    "fehler": 5,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 36013.847867012024,
+   "latenz_summe_s": 36016.5554022789,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787556927.5394878,
-   "kontofehler": 138
+   "kontofehler": 144
   },
   "z-ai/glm-5.2:free": {
    "laeufe": 7,
@@ -61,7 +61,7 @@
    "latenz_summe_s": 15.93748950958252,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527023.1975315,
-   "kontofehler": 133
+   "kontofehler": 139
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
