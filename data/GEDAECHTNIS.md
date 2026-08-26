@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3936 Fakten** · Stand 2026-08-26 21:01 UTC · aktualisiert bei jedem Herzschlag
+**3950 Fakten** · Stand 2026-08-26 21:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1611
-- **swarm_artifact:** 974
-- **last_swarm_critique:** 458
+- **dream:** 1616
+- **swarm_artifact:** 980
+- **last_swarm_critique:** 459
 - **anti_pattern:** 338
-- **last_swarm_goal:** 252
+- **last_swarm_goal:** 253
 - **strategy:** 190
 - **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 18
+- **tool:** 19
 - **aktuell_organfehler:** 14
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:hebbisches-lernen-im-graph-synapsen-qual`
+*26.08. 21:30 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenza'. Datei: data/tools/hebbisches-lernen-im-graph-synapsen-qual.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*26.08. 21:30 UTC · Quelle: critic*
+
+score=8; issues=hebbian.py nutzt lokalen Cache (_kanten_cache) statt echte bahnen-Persistenz für Demo; Produktionscode muss voll auf bahnen/graph delegieren; synapsen_report.py Zeile 156: Tippfehler 'kanten_erwidert' statt 'kanten_erweitert' (NameError falls t
+
+### `last_swarm_goal`
+*26.08. 21:21 UTC · Quelle: system*
+
+Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl
+
+### `dream:20260826212114:5:15fdab`
+*26.08. 21:21 UTC · Quelle: dream*
+
+Drive goals generated from this experience (reduce model errors, embedding recall) are correctly identified as failure-signal driven, but the metabolism_check stress=1.0 'conserve' state limits concurrent repair work to max 3 tasks / 1 iteration.
+
+### `dream:20260826212114:4:10d7f7`
+*26.08. 21:21 UTC · Quelle: dream*
+
+The existing skill_proposal for model routing was never operationalized — dream_finished marked 5 proposals but the next swarm immediately re-encountered the same 429 failures, indicating a gap between proposal generation and execution.
+
+### `dream:20260826212114:3:edb1aa`
+*26.08. 21:21 UTC · Quelle: dream*
+
+Token output varies 9× across successful models (Nemotron 665–852 vs dots-3-note 7252), so verbosity is a hidden cost dimension that must factor into model selection, not just latency.
+
+### `dream:20260826212114:2:01930e`
+*26.08. 21:21 UTC · Quelle: dream*
+
+NVIDIA Nemotron-3-Ultra is the only model with consistent success (3/3 OK) and reasonable latency (19.9s–85.3s), making it the current de-facto reliable backbone.
+
+### `dream:20260826212114:1:6515fc`
+*26.08. 21:21 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (gemma-4-26b, laguna-s-2.1, minimax-m3, glm-5.2) hit 429 rate limits repeatedly in a single session, with glm-5.2 failing 4+ times and should be considered broken for now.
 
 ### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:2`
 *26.08. 21:00 UTC · Quelle: evolution*

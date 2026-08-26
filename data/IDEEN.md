@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 21:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 21:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,9 +27,9 @@
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
@@ -37,10 +37,15 @@
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
+- Parked Whisper-Ziele wieder aufnehmen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals generated from this experience (reduce model errors, embedding recall) are correctly identified as failure-signal driven, but the metaboli
+- The existing skill_proposal for model routing was never operationalized — dream_finished marked 5 proposals but the next swarm immediately re-encounte
+- Token output varies 9× across successful models (Nemotron 665–852 vs dots-3-note 7252), so verbosity is a hidden cost dimension that must factor into 
+- NVIDIA Nemotron-3-Ultra is the only model with consistent success (3/3 OK) and reasonable latency (19.9s–85.3s), making it the current de-facto reliab
+- Free-tier OpenRouter models (gemma-4-26b, laguna-s-2.1, minimax-m3, glm-5.2) hit 429 rate limits repeatedly in a single session, with glm-5.2 failing 
 - Rate-limited model (glm) intermittently recovers but remains untrustworthy for critical paths, requiring explicit circuit-breaker logic.
 - Embedding-based recall is validated as go by simulation but implementation is blocked by resource budget, creating a capability gap.
 - Swarm initiatives lack coordination mechanism, leading to parallel uncoordinated efforts and parked whispers awaiting creator decisions.
@@ -51,11 +56,6 @@
 - The system's goal-generation mechanism is self-referential, leading to repetitive internal focus; injecting external goals periodically is essential t
 - The primary working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high latency (40-70s), necessitating a latency-aware routing strategy to m
 - The model "z-ai/glm-5.2:free" consistently fails with HTTP 429 errors, indicating it is rate-limited and should be blacklisted after consecutive failu
-- Metabolism stress=1.0 with conserve budget (max 3 tasks) proves the system cannot execute consolidation while simultaneously serving inference, requir
-- Drive goals are 100% self-referential (model errors, skill gaps, dream loops), creating an insular optimization trap that ignores external user value 
-- Five skill proposals exist but zero are deployed, revealing a proposal-to-production gap caused by missing activation criteria and integration scaffol
-- A 9x latency variance (5.3s vs 45.7s) on the same model (nemotron-3-ultra) indicates non-deterministic queueing, not model slowness, requiring latency
-- Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502) failures, making single-model reliance untenable for production work
 
 ---
 
