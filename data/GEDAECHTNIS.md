@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3556 Fakten** · Stand 2026-08-26 12:41 UTC · aktualisiert bei jedem Herzschlag
+**3587 Fakten** · Stand 2026-08-26 12:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1503
-- **swarm_artifact:** 895
-- **last_swarm_critique:** 351
-- **anti_pattern:** 308
-- **last_swarm_goal:** 233
-- **strategy:** 175
+- **dream:** 1508
+- **swarm_artifact:** 897
+- **last_swarm_critique:** 370
+- **anti_pattern:** 310
+- **last_swarm_goal:** 234
+- **strategy:** 176
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 27
+- **hand_result:** 28
 - **tool:** 15
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,161 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Fähigkeits-Messlatte bauen (Capability-Benchmark)`
+*26.08. 12:58 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787749115629.py\", line 307\n    lines += [\"\", \"## Kurve (Score je Woche)\", \"\", \"\n                                                   ^\nSyntaxError"}
+
+### `strategy:fähigkeits_messlatte_bauen__capability_benchmark_`
+*26.08. 12:58 UTC · Quelle: evolution*
+
+Declarative Benchmark Specification - Variant 1 (Declarative Benchmark Specification) wins because it maximizes feasibility while retaining elegance and impact. The previous failure was a hard syntax error that prevent
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeits-Messlatte bau:2`
+*26.08. 12:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): CI/CD Integrated Baseline & Trend Dashboard - Embed benchmark execution into the CI/CD pipeline (GitHub Actions, GitLab CI, Jenkins). On each merge, the pipeline runs the full suite, stores raw results and computed scores in 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeits-Messlatte bau:0`
+*26.08. 12:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Modular Plugin Architecture - Create a lightweight core runner that discovers and loads capability plugins via entry points (e.g., setuptools entry_points or importlib.metadata). Each plugin encapsulates its own test suite, m
+
+### `swarm_artifact:Draft deliverable for: Fähigkeits-Messlatte bauen (Capabilit`
+*26.08. 12:57 UTC · Quelle: builder*
+
+[score 1] Messlatte als direkt ausführbarer Organ: feste Suite aus 25 Aufgaben (10 Code + 10 Parsing + 5 Recall), Lösungen werden aus `artefakte/benchmark_solutions.py` geladen, fehlt sie, wird ei
+
+### `last_swarm_critique`
+*26.08. 12:57 UTC · Quelle: critic*
+
+score=1; issues=SANDBOX-URTEIL: LAEUFT NICHT - Syntaxfehler in Zeile 307: unvollstaendiges String-Literal `lines += ["", "## Kurve (Score je` - die Zeichenkette ist nicht abgeschlossen, das Modul laesst sich nicht parsen und damit nicht ausfuehren.; Da das Art
+
+### `swarm_artifact:Draft deliverable for: Fähigkeits-Messlatte bauen (Capabilit`
+*26.08. 12:56 UTC · Quelle: builder*
+
+Messlatte als direkt ausführbarer Organ: feste Suite aus 25 Aufgaben (10 Code + 10 Parsing + 5 Recall), Lösungen werden aus `artefakte/benchmark_solutions.py` geladen, fehlt sie, wird eine Stub-Vorlag
+
+### `last_swarm_goal`
+*26.08. 12:50 UTC · Quelle: system*
+
+Fähigkeits-Messlatte bauen (Capability-Benchmark)
+
+### `dream:20260826125042:5:950471`
+*26.08. 12:50 UTC · Quelle: dream*
+
+Calibration predicted 3 but actual was 2 (abs_error=1), and bahnen score=2 with delta=-0.5 shows the reward signal is misaligned with true artifact quality.
+
+### `dream:20260826125042:4:6f3604`
+*26.08. 12:50 UTC · Quelle: dream*
+
+Evolution runs can jump scores from 2 to 8-9 in one generation, but only when the initial artifact is executable; non-runnable seeds waste cycles.
+
+### `dream:20260826125042:3:c91fb0`
+*26.08. 12:50 UTC · Quelle: dream*
+
+Simulation verdict 'go' was issued despite the artifact failing at runtime (traceback in tor log), revealing a gap between static analysis and execution validation.
+
+### `dream:20260826125042:2:1a68e2`
+*26.08. 12:50 UTC · Quelle: dream*
+
+hand_action failures return exit=1 with error=null and gelesen=0, hiding the actual traceback and preventing automated diagnosis or retry logic.
+
+### `dream:20260826125042:1:7d0600`
+*26.08. 12:50 UTC · Quelle: dream*
+
+Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable for production loops without exponential backoff and model fallback chains.
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 12:49 UTC · Quelle: critic*
+
+score=7; issues=
 
 ### `strategy:fähigkeits_messlatte_bauen__capability_benchmark_`
 *26.08. 12:40 UTC · Quelle: evolution*

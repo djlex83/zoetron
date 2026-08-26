@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 12:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 12:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 14×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 13×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen und vermeiden *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler untersuchen und beheben *(wieder aufgegriffen: 2×)*
+- Mehr Simulationen wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler genauer untersuchen *(wieder aufgegriffen: 2×)*
 - Mehr Skill-Vorschläge wirklich ausprobieren *(wieder aufgegriffen: 2×)*
-- Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predicted 3 but actual was 2 (abs_error=1), and bahnen score=2 with delta=-0.5 shows the reward signal is misaligned with true artifact qu
+- Evolution runs can jump scores from 2 to 8-9 in one generation, but only when the initial artifact is executable; non-runnable seeds waste cycles.
+- Simulation verdict 'go' was issued despite the artifact failing at runtime (traceback in tor log), revealing a gap between static analysis and executi
+- hand_action failures return exit=1 with error=null and gelesen=0, hiding the actual traceback and preventing automated diagnosis or retry logic.
+- Free-tier models (stealth/ox-alpha, z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable for production loops without exponenti
 - Hand actions consistently fail fast (exit 1, <1s) while self-diagnosis reports zero organ defects, exposing a blind spot: runtime execution failures a
 - Score calibration drifted by 1 point (predicted 3 vs actual 2) and the swarm still declared 'go', meaning threshold decisions tolerate prediction erro
 - OpenRouter 429 rate-limit errors hit two models simultaneously, showing the retry strategy cycles through sibling models instead of backing off global
@@ -51,11 +56,6 @@
 - Calibration predicted 5 but actual was 2 (abs_error 3): self-assessed confidence systematically overestimates success when the deliverable has never b
 - hand_action failures carry error=null despite a Traceback existing in the artifact output, meaning the runner is discarding stderr/exit diagnostics an
 - Simulation verdicts are unreliable: it returned 'go' with 0 risks while the artifact immediately failed at runtime (exit 1), so 'go' must be gated on 
-- Successful calls on this run had high latency (149–220 s) and large output token counts, suggesting latency budgeting and streaming/timeout handling a
-- A generated tool was rejected because it accepted no input (no parameters, argv, stdin, or file), so every builder-produced artifact must be validated
-- The swarm failed to converge (score 4, delta 0.0) despite evolution producing a winning variant scored 9, indicating a gap between variant scoring dur
-- The calibration error was 4 points (predicted 8, actual 4), meaning self-predicted scores are systematically optimistic and should be discounted or gr
-- 429 rate-limit failures cluster across multiple free-tier models simultaneously, so the fallback chain should treat OpenRouter-wide 429s as a global b
 
 ---
 
