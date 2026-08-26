@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3032 Fakten** · Stand 2026-08-26 04:05 UTC · aktualisiert bei jedem Herzschlag
+**3045 Fakten** · Stand 2026-08-26 04:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1268
-- **swarm_artifact:** 811
-- **anti_pattern:** 270
-- **last_swarm_critique:** 251
-- **last_swarm_goal:** 205
-- **strategy:** 156
+- **dream:** 1273
+- **swarm_artifact:** 813
+- **anti_pattern:** 272
+- **last_swarm_critique:** 252
+- **last_swarm_goal:** 206
+- **strategy:** 157
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 14
+- **hand_result:** 15
 - **tool:** 8
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten`
+*26.08. 04:40 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787719224870.py\", line 10\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports mus"}
+
+### `strategy:doku_konsistenzwächter_bauen__eigene_kennzahlen_au`
+*26.08. 04:40 UTC · Quelle: evolution*
+
+ast_static_analysis - AST static analysis (v0) is the only approach that guarantees sandbox survival: zero code execution, zero dynamic imports, pure stdlib, and syntax-compatible with any Python 3.6+. 
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Doku-Konsistenzwächter b:2`
+*26.08. 04:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 17): tokenize_heuristic - import tokenize import sys import os from io import BytesIO from typing import Dict, List, Tuple  def extract_docstrings_and_signatures(source: bytes) -> Tuple[List[Dict], List[Dict], bool]:     """Re NI
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Doku-Konsistenzwächter b:1`
+*26.08. 04:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 18): runtime_introspection - import sys import importlib.util import inspect import os from typing import Dict, List, Any  def load_module_from_path(module_name: str, file_path: str):     spec = importlib.util.spec_from_file_loca
+
+### `swarm_artifact:Draft deliverable for: Doku-Konsistenzwächter bauen: eigene `
+*26.08. 04:37 UTC · Quelle: builder*
+
+[score 2] Das Skript `doc_check.py` leitet die wahren Kennzahlen aus der Quelle der Wahrheit ab (Herzschlag-Intervall und Telegram-Intervall aus `heartbeat_daemon.sh` bzw. Heartbeat-Logik, Testanz
+
+### `last_swarm_critique`
+*26.08. 04:37 UTC · Quelle: critic*
+
+score=2; issues=Sandbox-Urteil LAEUFT NICHT (harter Mangel): SyntaxError in Zeile 10 ('from __future__ import annotations') - das Artefakt ist in dieser Form nicht ausfuehrbar und damit laut Auftrag wertlos, unabhaengig vom logischen Inhalt.; Vertrag verletzt:
+
+### `swarm_artifact:Draft deliverable for: Doku-Konsistenzwächter bauen: eigene `
+*26.08. 04:37 UTC · Quelle: builder*
+
+Das Skript `doc_check.py` leitet die wahren Kennzahlen aus der Quelle der Wahrheit ab (Herzschlag-Intervall und Telegram-Intervall aus `heartbeat_daemon.sh` bzw. Heartbeat-Logik, Testanzahl per pytest
+
+### `last_swarm_goal`
+*26.08. 04:26 UTC · Quelle: system*
+
+Doku-Konsistenzwächter bauen: eigene Kennzahlen aus dem Code ableiten
+
+### `dream:20260826042638:5:a79dee`
+*26.08. 04:26 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are tested (many proposed, almost none executed), so the proposal-to-trial loop is the current bottleneck in capability growth.
+
+### `dream:20260826042638:4:270058`
+*26.08. 04:26 UTC · Quelle: dream*
+
+The whisper 'Semantisches Dedup' stalled after 3 non-converging attempts, confirming that ambiguous design decisions need explicit creator-decision escalation paths instead of silent parking.
+
+### `dream:20260826042638:3:08b26e`
+*26.08. 04:26 UTC · Quelle: dream*
+
+Metabolic stress reached 1.0 (conserve mode) while swarms were still being launched, showing resource-state checks must gate task spawning, not just limit it after the fact.
+
+### `dream:20260826042638:2:3be4f2`
+*26.08. 04:26 UTC · Quelle: dream*
+
+The 'act' organ timed out at 1500s, indicating long-running actions lack internal checkpoints or early-abort heuristics rather than just needing a bigger timeout.
+
+### `dream:20260826042638:1:ebf6b7`
+*26.08. 04:26 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, while nvidia/nemotron-3-ultra-550b-a55b:free consistently succeeded — the fallback chain should put proven-available models first during quota exhaustion.
 
 ### `strategy:doku_konsistenzwächter_bauen__eigene_kennzahlen_au`
 *26.08. 04:04 UTC · Quelle: evolution*

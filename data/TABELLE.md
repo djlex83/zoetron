@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2156 Neuronen · 36560 bewertete Synapsen
+Stand: 2164 Neuronen · 36944 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 2156 Neuronen · 36560 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 208 | 0.23 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 208 | 0.23 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 210 | 0.23 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 210 | 0.23 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 173 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 165 | 0.25 |
 | 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 131 | 0.26 |
 | 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 134 | 0.26 |
 | 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 141 | 0.24 |
 | 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 134 | 0.25 |
-| 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 119 | 0.26 |
-| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 123 | 0.25 |
-| 11 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 126 | 0.24 |
-| 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 126 | 0.24 |
-| 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 120 | 0.25 |
-| 14 | 💭 | Simulation revision loops (3 risks → 3 revisions) indicate missi… | 129 | 0.23 |
-| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 132 | 0.23 |
+| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 147 | 0.22 |
+| 10 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 119 | 0.26 |
+| 11 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 123 | 0.25 |
+| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 126 | 0.24 |
+| 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 126 | 0.24 |
+| 14 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 120 | 0.25 |
+| 15 | 💭 | Simulation revision loops (3 risks → 3 revisions) indicate missi… | 129 | 0.23 |
 
 ## Die 15 stärksten Synapsen
 
@@ -42,8 +42,8 @@ Stand: 2156 Neuronen · 36560 bewertete Synapsen
 | 8 | **0.53** | 💭 Latency spikes up to 62.5 s reveal the need fo… | 💭 High latency spikes (up to 90 s) reveal occasi… |
 | 9 | **0.53** | 💭 Model latency frequently exceeds 30 s, causing… | 💭 Model latency fluctuates widely (8–185 s), cau… |
 | 10 | **0.53** | 💭 Applying revisions atomically and re‑simulatin… | 💭 Applying simulation revisions non‑atomically l… |
-| 11 | **0.53** | 💭 MemoryStore API drift (missing add_fact) break… | 💭 MemoryStore interface drift (missing add_fact)… |
-| 12 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
-| 13 | **0.53** | 💭 Model latency variance (6.9s to 208.3s) for id… | 💭 High latency variance (6.7–108.9 s) for the sa… |
-| 14 | **0.53** | 🔧 🔧 Werkzeug „fußball-die-basislinie-von-50-2-sc… | 🔧 🔧 Werkzeug „destillat-datensatz-gedächtnis-wir… |
-| 15 | **0.53** | 🔧 🔧 Werkzeug „fußball-die-basislinie-von-50-2-sc… | 🔧 🔧 Werkzeug „lebender-steckbrief-die-biografie-… |
+| 11 | **0.53** | 💭 Free-tier models (stealth/ox-alpha, z-ai/glm-5… | 💭 Free-tier OpenRouter models (stealth/ox-alpha,… |
+| 12 | **0.53** | 💭 MemoryStore API drift (missing add_fact) break… | 💭 MemoryStore interface drift (missing add_fact)… |
+| 13 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
+| 14 | **0.53** | 💭 Model latency variance (6.9s to 208.3s) for id… | 💭 High latency variance (6.7–108.9 s) for the sa… |
+| 15 | **0.53** | 🔧 🔧 Werkzeug „fußball-die-basislinie-von-50-2-sc… | 🔧 🔧 Werkzeug „destillat-datensatz-gedächtnis-wir… |

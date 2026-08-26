@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 04:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 04:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate faster than they are tested (many proposed, almost none executed), so the proposal-to-trial loop is the current bottleneck 
+- The whisper 'Semantisches Dedup' stalled after 3 non-converging attempts, confirming that ambiguous design decisions need explicit creator-decision es
+- Metabolic stress reached 1.0 (conserve mode) while swarms were still being launched, showing resource-state checks must gate task spawning, not just l
+- The 'act' organ timed out at 1500s, indicating long-running actions lack internal checkpoints or early-abort heuristics rather than just needing a big
+- Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, while nvidia/nemotron-3-ultra-550b-a55b:free consiste
 - Reflex tools (destillat-datensatz..., lebender-steckbrief...) successfully automated dedup, proving that targeted micro-tools can close maintenance lo
 - Semantic duplication across idea board and DRIVE goals inflates perceived novelty and wastes consolidation cycles; reflex-based dedup resolves this.
 - Parked whispers (e.g., Zoem-Protokoll) stall indefinitely without a scheduled revisit mechanism or creator escalation path.
@@ -51,11 +56,6 @@
 - The system accumulates skill proposals (e.g., error_attribution_log.py) but lacks a mechanism to enforce trial runs, creating a proposal-execution gap
 - Hand actions fail silently with exit code 1 and no error payload, preventing automated diagnosis of execution failures.
 - Rate limiting (429 errors) on primary models causes cascading fallback latency spikes up to 233s, making provider quota management a reliability bottl
-- Calibration was exact (predicted 1, actual 1, abs_error 0) after retrieving 5 related memory traces, suggesting recall-enriched predictions are curren
-- The hand action failed with exit code 1 and no captured error output ('error': null), so exit-code-only failures need stderr/traceback capture at the 
-- The evolution loop worked as designed: a 1/10 artifact was revised through simulation feedback into a 7/10 winner across 3 variants, confirming that c
-- nvidia/nemotron-3-ultra-550b-a55b:free succeeded in all 6 calls including heavy ones (2828 in / 5219 out tokens, 71.7s), making it the dependable prim
-- Free-tier models 'stealth/ox-alpha' and 'z-ai/glm-5.2:free' fail repeatedly with 429 Too Many Requests at burst intervals, so requests to them must be
 
 ---
 
