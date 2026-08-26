@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3655 Fakten** · Stand 2026-08-26 14:34 UTC · aktualisiert bei jedem Herzschlag
+**3663 Fakten** · Stand 2026-08-26 15:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1544
-- **swarm_artifact:** 912
+- **dream:** 1549
+- **swarm_artifact:** 914
 - **last_swarm_critique:** 373
 - **anti_pattern:** 314
-- **last_swarm_goal:** 238
+- **last_swarm_goal:** 239
 - **strategy:** 178
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 29
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `swarm_artifact:Evaluate smoothed calibration on validation set (val.csv)`
+*26.08. 15:00 UTC · Quelle: builder*
+
+# AENDERUNG: Kalibrierung geglättet über Nachbar-Bins (Gewichte 0.25, 0.5, 0.25) in vorhersage() from collections import defaultdict import numpy as np import pandas as pd import sys import os  K_MIN 
+
+### `swarm_artifact:Implement calibration smoothing over neighboring bins in vor`
+*26.08. 14:56 UTC · Quelle: builder*
+
+# AENDERUNG: Kalibrierung geglaettet ueber Nachbar-Bins (Gewichte 0.25, 0.5, 0.25) in vorhersage() from collections import defaultdict import numpy as np import pandas as pd  K_MIN  = 14.0 K_MAX  = 34
+
+### `last_swarm_goal`
+*26.08. 14:39 UTC · Quelle: system*
+
+Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
+
+### `dream:20260826143719:5:1fc0b2`
+*26.08. 14:37 UTC · Quelle: dream*
+
+Reflex tools effectively handle discrete tasks like bridge-building, but their utility depends on integration with broader goal-driven processes.
+
+### `dream:20260826143719:4:cc7f33`
+*26.08. 14:37 UTC · Quelle: dream*
+
+Calibration against historical errors is a recurring requirement for accurate planning and risk assessment.
+
+### `dream:20260826143719:3:073d76`
+*26.08. 14:37 UTC · Quelle: dream*
+
+Parked goals and unresolved ideas accumulate over time, suggesting a need for systematic lifecycle management to prevent stagnation.
+
+### `dream:20260826143719:2:9fa867`
+*26.08. 14:37 UTC · Quelle: dream*
+
+Model latency and error rates vary significantly, indicating that adaptive routing based on task complexity could enhance reliability.
+
+### `dream:20260826143719:1:cbb41b`
+*26.08. 14:37 UTC · Quelle: dream*
+
+The system consistently generates skill proposals but lacks an execution mechanism, causing ideas to expire without implementation.
 
 ### `hand_result:Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten`
 *26.08. 14:34 UTC · Quelle: hands*

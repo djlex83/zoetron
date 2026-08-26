@@ -1,14 +1,14 @@
 {
- "stand": 1787754832.479853,
+ "stand": 1787756444.603604,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 331,
-   "fehler": 46,
+   "laeufe": 338,
+   "fehler": 47,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 10045.360983133316,
+   "latenz_summe_s": 11310.456416606903,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1787740950.8380942,
    "kontofehler": 6
@@ -31,7 +31,7 @@
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 51
+   "kontofehler": 52
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 1,
@@ -54,14 +54,14 @@
    "kontofehler": 200
   },
   "z-ai/glm-5.2:free": {
-   "laeufe": 9,
-   "fehler": 2,
+   "laeufe": 12,
+   "fehler": 5,
    "fehler_in_folge": 0,
-   "gesperrt_bis": 0.0,
+   "gesperrt_bis": 1787758037.5754995,
    "latenz_summe_s": 21.804681062698364,
-   "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
-   "letzte_sperre": 1787527023.1975315,
-   "kontofehler": 208
+   "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'error code: 504\\n', 'code': 504}",
+   "letzte_sperre": 1787756237.575501,
+   "kontofehler": 212
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -111,11 +111,11 @@
    "letzte_sperre": 0.0
   },
   "dots-studio/dots-3-note-preview:free": {
-   "laeufe": 17,
+   "laeufe": 18,
    "fehler": 3,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 1217.1434185504913,
+   "latenz_summe_s": 1245.201408147812,
    "letzter_fehler": "Client error '401 Unauthorized' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web",
    "letzte_sperre": 0.0
   },
