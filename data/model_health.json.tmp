@@ -1,0 +1,22 @@
+{
+  "models": {
+    "ume/Artefakte": {
+      "avg_latency_ms": 72.8,
+      "breaker": {
+        "opened_at": null,
+        "reopen_at": null,
+        "state": "CLOSED"
+      },
+      "consecutive_failures": 1,
+      "error_rate": 1.0,
+      "errors": 1,
+      "last_seen": 1787745105.1033454,
+      "last_status": 400,
+      "latencies_ms": [
+        72.8
+      ],
+      "total": 1
+    }
+  },
+  "updated_at": 1787745105.1033769
+}

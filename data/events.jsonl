@@ -1,2 +1,20 @@
 {"ts": 1787743725.55582, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22}}
 {"ts": 1787743795.9882853, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.29}}
+{"ts": 1787744097.9626334, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.21}}
+{"ts": 1787744334.654973, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.21, "gelesen": 1}}
+{"ts": 1787744334.8566687, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
+{"ts": 1787744335.0634627, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.21, "gelesen": 1}}
+{"ts": 1787744335.2528758, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.19, "gelesen": 1}}
+{"ts": 1787744335.4413419, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787744335.636864, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787744335.916538, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.28, "gelesen": 0}}
+{"ts": 1787744336.105495, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787744336.2990458, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787744336.483301, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.18, "gelesen": 0}}
+{"ts": 1787744336.6720352, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787744336.870549, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.2, "gelesen": 0}}
+{"ts": 1787744484.2172296, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787744484.4073517, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.19, "gelesen": 0}}
+{"ts": 1787744484.6716177, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.26, "gelesen": 0}}
+{"ts": 1787744484.880831, "kind": "hand_action", "payload": {"ok": false, "exit": 0, "error": "nichts gelesen - der Lauf endete mit 0, hat aber keine Datei und kein Verzeichnis unter dem echten Datenpfad angefasst. Eingabe steht in sys.argv[1] und ZOETRON_DATA; relative Pfade zeigen in den leeren Sandkasten.", "duration_s": 0.21, "gelesen": 0}}
+{"ts": 1787744504.2533872, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.19, "gelesen": 0}}

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3455 Fakten** · Stand 2026-08-26 11:31 UTC · aktualisiert bei jedem Herzschlag
+**3504 Fakten** · Stand 2026-08-26 11:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1483
-- **swarm_artifact:** 879
-- **anti_pattern:** 302
-- **last_swarm_critique:** 302
-- **last_swarm_goal:** 229
-- **strategy:** 172
+- **dream:** 1488
+- **swarm_artifact:** 881
+- **last_swarm_critique:** 339
+- **anti_pattern:** 304
+- **last_swarm_goal:** 230
+- **strategy:** 173
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 24
+- **hand_result:** 25
 - **tool:** 15
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
@@ -19,6 +19,251 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)`
+*26.08. 11:51 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "ction_1787745104633.py\", line 315, in main\n    sys.exit(0 if run_live_beat(registry, pool, OpenRouterClient(api_key)) else 1)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+
+### `strategy:modell_gesundheitsregister_mit_sicherungsschalter_`
+*26.08. 11:51 UTC · Quelle: evolution*
+
+Simulation-First / Zero-Network-Kern: Baue das gesamte System so, dass es OHNE echte API lauffaehig  - Variant 0 addresses the root cause directly: the previous artifact crashed because it depended on a real API client and network path. By making the entire co
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:2`
+*26.08. 11:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Event-getriebener Zustandsautomat mit Watchdog-Thread: Verlasse das prozedurale  - 1) EventBus (queue-basiert). 2) ModelHealthRegistry als FSM pro Modell: CLOSED -(3x FAILURE)-> OPEN -(Cooldown)-> HALF_OPEN -(SUCCESS)-> CLOSE
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modell-Gesundheitsregist:1`
+*26.08. 11:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Defensiver Bootstrap / Crash-sichere Orchestrierung: Der Kernfehler war ein hart - 1) 'safe_step(fn)'-Wrapper: fängt jede Exception, loggt sie, gibt (ok=False, error) zurueck. 2) main(): Stufe 1 liest API-Key via os.getenv mi
+
+### `swarm_artifact:Draft deliverable for: Modell-Gesundheitsregister mit Sicher`
+*26.08. 11:50 UTC · Quelle: builder*
+
+[score 2] Der Sicherungsschalter (Circuit Breaker = Schutzschalter, der nach wiederholten Fehlern ein Modell sperrt) wird als deterministische Zustandsmaschine mit Persistenz nach jedem Beat umges
+
+### `last_swarm_critique`
+*26.08. 11:50 UTC · Quelle: critic*
+
+score=2; issues=SANDBOX-URTEIL: LAEUFT NICHT - harter Mangel. Traceback endet in main() bei sys.exit(0 if run_live_beat(registry, pool, OpenRouterClient(api_key)) ...); das Artefakt ist damit nicht ausfuehrbar und kann den geforderten Nachweis (simulierter 502
+
+### `swarm_artifact:Draft deliverable for: Modell-Gesundheitsregister mit Sicher`
+*26.08. 11:49 UTC · Quelle: builder*
+
+Der Sicherungsschalter (Circuit Breaker = Schutzschalter, der nach wiederholten Fehlern ein Modell sperrt) wird als deterministische Zustandsmaschine mit Persistenz nach jedem Beat umgesetzt. Das Regi
+
+### `last_swarm_goal`
+*26.08. 11:43 UTC · Quelle: system*
+
+Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
+
+### `dream:20260826114334:5:8175cf`
+*26.08. 11:43 UTC · Quelle: dream*
+
+Die fünf Skill-Proposals aus dem letzten Dream-Zyklus adressieren genau die beobachteten Fehlerursachen (Retry/Backoff, Revision-Bindung, Recall-Injektion, Stress-Gating, Prozedur-Kapselung) und sollten priorisiert implementiert werden.
+
+### `dream:20260826114334:4:0c8e27`
+*26.08. 11:43 UTC · Quelle: dream*
+
+Der Prune-Lauf entfernte 0 Fakten und 0 Events, d.h. die Aufräumlogik ist entweder zu konservativ oder es fehlen Alterungs-/Relevanzkriterien für das Gedächtnis.
+
+### `dream:20260826114334:3:1e8b9e`
+*26.08. 11:43 UTC · Quelle: dream*
+
+Bei Stress = 1.0 wurde korrekt in den 'conserve'-Modus geschaltet (max_tasks: 3, max_iterations: 1), was verhinderte, dass der Swarm-Lauf unter Ressourcenmangel eskaliert.
+
+### `dream:20260826114334:2:3a66f2`
+*26.08. 11:43 UTC · Quelle: dream*
+
+Der einzige erfolgreiche Fallback war nvidia/nemotron-3.5-lightning:free, was zeigt, dass die Prioritätskette funktioniert, aber zu viele Modelle gleichzeitig dasselbe Rate-Limit teilen.
+
+### `dream:20260826114334:1:318609`
+*26.08. 11:43 UTC · Quelle: dream*
+
+Alle Modell-Ausfälle in diesem Zeitraum waren 429-Rate-Limits auf OpenRouter, die nacheinander stealth/ox-alpha, z-ai/glm-5.2:free und beide Gemma-Varianten trafen – ein koordiniertes Fallback-Muster fehlt noch.
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:42 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:41 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:39 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 11:34 UTC · Quelle: critic*
+
+score=7; issues=
 
 ### `hand_result:Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)`
 *26.08. 11:30 UTC · Quelle: hands*
