@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 08:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Recurring drive goals about connecting old dream content with new plans keep reappearing without completion, suggesting these integration goals lack a
+- Prune runs removing 0 facts and 0 events across consecutive cycles indicate the pruning criteria are misaligned with actual memory content and are sil
+- Two consecutive 429 Too Many Requests failures on openrouter.ai models were recovered by failover to a third provider, confirming that multi-provider 
+- The dominant recurring failure pattern is proposal backlog growth: skill_proposals are generated every cycle while only a fraction get trial runs, so 
+- Reflex-mode actions (pre-bound tool scripts like 'vorgeschlagene-fähigkeiten-wirklich-ausp.py') consistently succeed in ~0.25s, so goals that match an
 - Two tool rejections occurred without any structured failure reason being logged, making the root cause unrecoverable after the fact; failures must be 
 - Calibration error was small (predicted 6 vs actual 8, abs_error 2), indicating effort estimates for memory-combination goals are reliable enough to pl
 - The swarm goal 'Alte Traumideen mit Strategien verbinden' succeeded (score 8, converged in 1 cycle) because it combined two previously unconnected dre
@@ -51,11 +56,6 @@
 - Calibration errors appear in multiple independent skill proposals (calibration_discount, calibration corrector), revealing a systemic miscalibration i
 - Reflex tools created for specific sub-tasks (connecting dreams, testing skills) succeed where planner-driven approaches stall, suggesting decompositio
 - Recurring drive goals for identical issues (model errors, untested skill backlog) indicate that root causes persist despite repeated attention cycles.
-- Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively a no-op and memory growth is unchecked.
-- Reflexes are nearly unused except when explicitly tied to a goal ('alte-traeume-miteinander-verbinden.py' succeeded immediately), showing reflex adopt
-- 45 accumulated skill proposals remain almost entirely untested while new ones keep being generated, indicating a proposal-to-validation bottleneck whe
-- A hand_action failed with exit code 1 but error=null, meaning failures that carry no diagnostic payload are indistinguishable from silent crashes and 
-- The swarm run 'Modell-Fehler deutlich reduzieren' failed to converge in only 2 cycles with score 2, suggesting the iteration budget is cut off before 
 
 ---
 

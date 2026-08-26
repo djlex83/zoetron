@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3273 Fakten** · Stand 2026-08-26 08:26 UTC · aktualisiert bei jedem Herzschlag
+**3278 Fakten** · Stand 2026-08-26 08:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1388
+- **dream:** 1393
 - **swarm_artifact:** 859
 - **anti_pattern:** 290
 - **last_swarm_critique:** 267
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826083405:5:84f19a`
+*26.08. 08:34 UTC · Quelle: dream*
+
+Recurring drive goals about connecting old dream content with new plans keep reappearing without completion, suggesting these integration goals lack a concrete action step and get perpetually deferred.
+
+### `dream:20260826083405:4:4d5559`
+*26.08. 08:34 UTC · Quelle: dream*
+
+Prune runs removing 0 facts and 0 events across consecutive cycles indicate the pruning criteria are misaligned with actual memory content and are silently wasting cycles.
+
+### `dream:20260826083405:3:5270f1`
+*26.08. 08:34 UTC · Quelle: dream*
+
+Two consecutive 429 Too Many Requests failures on openrouter.ai models were recovered by failover to a third provider, confirming that multi-provider fallback is already effective but adds up to ~54s latency on the fallback path.
+
+### `dream:20260826083405:2:5570b7`
+*26.08. 08:34 UTC · Quelle: dream*
+
+The dominant recurring failure pattern is proposal backlog growth: skill_proposals are generated every cycle while only a fraction get trial runs, so generation rate must be coupled to testing rate.
+
+### `dream:20260826083405:1:aa53c1`
+*26.08. 08:34 UTC · Quelle: dream*
+
+Reflex-mode actions (pre-bound tool scripts like 'vorgeschlagene-fähigkeiten-wirklich-ausp.py') consistently succeed in ~0.25s, so goals that match an existing reflex should never enter the slow deliberation path.
 
 ### `hand_result:Abgelehnte Werkzeuge besser prüfen`
 *26.08. 08:26 UTC · Quelle: hands*

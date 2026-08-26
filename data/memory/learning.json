@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 08:26:11",
- "ereignisse_ausgewertet": 2430,
+ "stand": "2026-08-26 08:34:19",
+ "ereignisse_ausgewertet": 2446,
  "werkzeuge": [
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
@@ -43,9 +43,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-traumideen-mit-strategien-verbinden.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.58,
+ "haende_quote": 0.583,
  "simulationen_angewandt": 56,
  "swarm_scores": {
   "n": 49,
