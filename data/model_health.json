@@ -1,14 +1,14 @@
 {
- "stand": 1787763131.483782,
+ "stand": 1787765048.5806096,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 361,
-   "fehler": 53,
-   "fehler_in_folge": 0,
+   "laeufe": 365,
+   "fehler": 54,
+   "fehler_in_folge": 1,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 12599.813119411469,
+   "latenz_summe_s": 12734.842287063599,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1787740950.8380942,
    "kontofehler": 6
@@ -31,7 +31,7 @@
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 58
+   "kontofehler": 59
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 1,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 0.0,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 53
+   "kontofehler": 54
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -61,7 +61,7 @@
    "latenz_summe_s": 22.704177379608154,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 234
+   "kontofehler": 239
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -99,7 +99,7 @@
    "latenz_summe_s": 200.9541051387787,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
-   "kontofehler": 7
+   "kontofehler": 8
   },
   "nvidia/nemotron-3-nano-30b-a3b:free": {
    "laeufe": 3,
@@ -129,11 +129,11 @@
    "letzte_sperre": 0.0
   },
   "nvidia/nemotron-3.5-lightning:free": {
-   "laeufe": 11,
+   "laeufe": 12,
    "fehler": 1,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 1093.3511636257172,
+   "latenz_summe_s": 1316.1447563171387,
    "letzter_fehler": "'str' object has no attribute 'role'",
    "letzte_sperre": 0.0
   }

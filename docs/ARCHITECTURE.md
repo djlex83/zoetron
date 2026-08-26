@@ -43,7 +43,7 @@ Zwei Obergrenzen, die im Design stecken und durch keine Zusatz-Organe verschwind
 ## Pfad zu echtem Multi-Agent (Phase 2 des Projekts)
 
 - Planner/Builder/Critic als **getrennte LLM-Instanzen** mit eigenen Systemprompts
-  (Rollen siehe `agents/ROLES.md`), gekoppelt über das JSONL-Gedächtnis.
+  (die Rollen-Systemprompts liegen im nicht-öffentlichen Kopf), gekoppelt über das JSONL-Gedächtnis.
 - Später: heterogene Modelle (ox alpha plant, billiges Modell execuiert, teures Modell kritisiert).
 
 ## Warum das noch nicht gibt

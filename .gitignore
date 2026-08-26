@@ -41,3 +41,18 @@ data/selbstdiagnose.json
 .env.*.bak
 
 data/artefakte_aussortiert/
+
+# --- 26.08.2026, Entscheidung des Erschaffers -----------------------
+# Kopf-Inhalte, die versehentlich oeffentlich lagen:
+agents/ROLES.md
+data/fluester_goals.json
+# Streu: Schattenbaum und Temp-Dateien, nie Logbuch gewesen
+data/data/
+data/hermes/
+# Sicherungen tragen denselben Inhalt wie das Original - eine Datei
+# enttracken und ihre .bak stehen lassen ist kein Schutz. Genau so kam
+# am 26.08.2026 .env.bak.0005 ins Repo, obwohl .env ignoriert war.
+*.bak
+*.bak.*
+*.orig
+*.tmp

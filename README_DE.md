@@ -45,7 +45,7 @@ Ziel ──► PLAN ──► SIMULIEREN ──► SELBSTEINSCHÄTZUNG ──►
 | 🪞 METACOG | Selbstgefühl | `metacog.py` | sagt eigenen Score voraus, misst Kalibrierung |
 | 🌍 SIMULATE | Weltmodell | `simulate.py` | trocken üben vor dem Handeln, Risiken vorab |
 | 👁 SINNE | Augen/Ohren | `senses.py` | beobachtet HN-Frontier + Websuche; frische Signale speisen DRIVE |
-| 🔬 RESEARCHER | Kundschafter | Swarm-Rolle 4 | frische Web-Fakten vor jeder Planung (Phase 2 aus ROLES.md) |
+| 🔬 RESEARCHER | Kundschafter | Swarm-Rolle 4 | frische Web-Fakten vor jeder Planung |
 | 🕸 SEMANTISCH | Bedeutungsrinde | `semantic.py` | TF-IDF + Synonym-Felder + **Cross-Domain-Bridging**: findet verwandtes Wissen *nach Bedeutung*, nicht nach Wortlaut – in jedem Plan |
 | ✋ HÄNDE | Motorik | `hands.py` | führt Artefakt-Code in der Sandbox aus; **Erfolge werden wiederverwendbare Werkzeuge** (`data/tools/`) |
 | 🧬 EVOLUTION | Fortpflanzung | `evolution.py` | N Varianten → Critic wählt den Fitnessten; Sieger vererben sich, **Verlierer werden Verbots-Liste (Anti-Patterns)** |
