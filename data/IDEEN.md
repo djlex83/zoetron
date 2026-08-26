@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 20:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 20:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 15×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 12×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 6×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Häufige Modellfehler genauer untersuchen *(wieder aufgegriffen: 2×)*
+- Mehr Skill-Vorschläge wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning yielded zero facts and events, suggesting the pruning criteria are too strict or the memory is already minimal; the pruning mechanism s
+- Skill proposals are generated but rarely implemented, creating a bottleneck between idea and execution; a dedicated proposal-to-skill pipeline with au
+- The system's goal-generation mechanism is self-referential, leading to repetitive internal focus; injecting external goals periodically is essential t
+- The primary working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high latency (40-70s), necessitating a latency-aware routing strategy to m
+- The model "z-ai/glm-5.2:free" consistently fails with HTTP 429 errors, indicating it is rate-limited and should be blacklisted after consecutive failu
 - Metabolism stress=1.0 with conserve budget (max 3 tasks) proves the system cannot execute consolidation while simultaneously serving inference, requir
 - Drive goals are 100% self-referential (model errors, skill gaps, dream loops), creating an insular optimization trap that ignores external user value 
 - Five skill proposals exist but zero are deployed, revealing a proposal-to-production gap caused by missing activation criteria and integration scaffol
@@ -51,11 +56,6 @@
 - Evolutionary iteration with critic feedback lifted scores from 2/10 to 9–10/10, proving iterative refinement is the primary quality lever.
 - Nvidia Nemotron models provide the only consistent successes but with high latency variance (16–136 s).
 - Free-tier models suffer pervasive 429 rate limits making them unreliable for production workloads.
-- Evolution runs score 1/10 when artifacts are broken, confirming that artifact executability is a prerequisite for any quality gain.
-- The recalled "swarm_artifact" pattern (JSON array of atomic facts) remains unimplemented in the failing artifact, suggesting a gap between knowledge r
-- Calibration consistently overestimates fact-yield improvement (predicted 3× vs. actual 1×), revealing a systematic optimism bias in the predictor.
-- Artifact execution fails at runtime due to uncaught syntax errors (e.g., line 66), indicating insufficient pre-execution validation.
-- Free-tier model endpoints exhibit pervasive rate-limiting (429) and upstream overloads (502), making them unreliable for time-sensitive artifact gener
 
 ---
 

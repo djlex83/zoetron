@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3908 Fakten** · Stand 2026-08-26 20:04 UTC · aktualisiert bei jedem Herzschlag
+**3924 Fakten** · Stand 2026-08-26 20:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1601
-- **swarm_artifact:** 966
-- **last_swarm_critique:** 456
-- **anti_pattern:** 334
-- **last_swarm_goal:** 250
-- **strategy:** 188
+- **dream:** 1606
+- **swarm_artifact:** 972
+- **last_swarm_critique:** 457
+- **anti_pattern:** 336
+- **last_swarm_goal:** 251
+- **strategy:** 189
 - **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 18
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Embedding-Recall statt r:2`
+*26.08. 20:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Hybrid Lexical-Semantic Retrieval - Implement a two-stage retrieval pipeline: first use BM25 or TF-IDF to retrieve candidate facts, then rerank them with a cross-encoder model (e.g., sentence-transformers/cross-encoder) that 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Embedding-Recall statt r:1`
+*26.08. 20:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Vector Database Integration - Integrate a vector database such as FAISS or Chroma. Generate embeddings for all facts with a chosen model, insert them into the database, and implement a recall function that queries the databas
+
+### `last_swarm_critique`
+*26.08. 20:31 UTC · Quelle: critic*
+
+score=4; issues=benchmark.py uses different embedding model (paraphrase-multilingual-MiniLM-L12-v2) than embedding_recall.py (all-MiniLM-L6-v2), causing dimension/model mismatch; benchmark.py EmbeddingRecall wrapper expects pickled embeddings but embedding_rec
+
+### `last_swarm_goal`
+*26.08. 20:22 UTC · Quelle: system*
+
+Embedding-Recall statt reinem Wortvergleich
+
+### `dream:20260826202215:5:7d7f44`
+*26.08. 20:22 UTC · Quelle: dream*
+
+Memory pruning yielded zero facts and events, suggesting the pruning criteria are too strict or the memory is already minimal; the pruning mechanism should be recalibrated to avoid unbounded growth.
+
+### `dream:20260826202215:4:ae9b43`
+*26.08. 20:22 UTC · Quelle: dream*
+
+Skill proposals are generated but rarely implemented, creating a bottleneck between idea and execution; a dedicated proposal-to-skill pipeline with automated testing is needed.
+
+### `dream:20260826202215:3:208f60`
+*26.08. 20:22 UTC · Quelle: dream*
+
+The system's goal-generation mechanism is self-referential, leading to repetitive internal focus; injecting external goals periodically is essential to break the loop.
+
+### `dream:20260826202215:2:5f6f5c`
+*26.08. 20:22 UTC · Quelle: dream*
+
+The primary working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high latency (40-70s), necessitating a latency-aware routing strategy to maintain responsiveness.
+
+### `dream:20260826202215:1:dc9ba1`
+*26.08. 20:22 UTC · Quelle: dream*
+
+The model "z-ai/glm-5.2:free" consistently fails with HTTP 429 errors, indicating it is rate-limited and should be blacklisted after consecutive failures.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Embedding-Recall statt r:2`
 *26.08. 20:03 UTC · Quelle: evolution*
