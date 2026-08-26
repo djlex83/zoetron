@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 01:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 01:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
@@ -31,16 +31,21 @@
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 2×)*
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Modellfehler analysieren und beheben
 - Fußball-Ziel nochmal besser machen
 - Mehr Simulationsergebnisse wirklich nutzen
-- Modell-Fehler deutlich reduzieren
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm pipeline (recall -> simulate -> build -> verify -> calibrate) produced a runnable 109-line artifact on cycle 1, confirming that the verify-b
+- Under conserve state (stress 0.772) the budget cap of max_tasks=3/max_iterations=1 still allowed goal completion in one cycle, proving tight budgets s
+- Simulation verdicts of 'revise' with 5 identified risks collapse to only 1 applied revision, showing a gap between risk detection and revision impleme
+- First hand_action attempts fail (exit 1) roughly half the time while an immediate retry succeeds (exit 0 in ~0.2s), indicating transient failures rath
+- Predicted goal scores are systematically under-calibrated (predicted 3 vs actual 7), so the system's self-assessment bias is pessimistic and correctab
 - Skill proposals accumulate faster than they are tested (many generated, few executed), confirming that a guaranteed test rate per cycle is needed rath
 - Simulation flagged 'revise' with 5 risks and 3 revisions were applied, yet the artifact still failed to run, indicating simulation checks code quality
 - Conserve-mode stress (0.967) did not prevent long blocking calls (73s and 164s), meaning the chunking rule for long generations under stress is not be
@@ -51,11 +56,6 @@
 - Die Simulation lieferte erst 'revise' (5 Risiken), dann nach Revision 'go' – trotzdem schlug die Ausführung fehl, d.h. die statische Simulation erkenn
 - Die Kalibrierung lag mit predicted=5 vs. actual=1 (abs_error=4) weit daneben: die Selbstbewertung vor der Ausführung überschätzt Erfolgswahrscheinlich
 - Alle drei fehlgeschlagenen hand_actions scheiterten in unter 0.03s mit exit 1 und error=null, was auf Syntaxfehler im generierten Code vor der Laufzei
-- hand_action failed instantly (exit 1, 0.02s) yet the swarm still reported completion, meaning act_done/score must be gated on verifying the executed a
-- Calibration is badly off for novel goals (predicted 3 vs actual 1), indicating difficulty estimates should be anchored to prior failure counts rather 
-- The evolution loop is the strongest lever on quality: variant selection raised scores from 1/10 to 9/10 within one run, so always generate at least 3 
-- Generated code artifacts repeatedly exceed the 20000-character sandbox limit; the builder must enforce a hard budget (~18k chars) or split code into m
-- OpenRouter free-tier models hit 429 Too Many Requests under burst load, so calls to stealth/ox-alpha and z-ai/glm-5.2:free need backoff/retry or a fal
 
 ---
 

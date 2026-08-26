@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2914 Fakten** · Stand 2026-08-26 01:37 UTC · aktualisiert bei jedem Herzschlag
+**2933 Fakten** · Stand 2026-08-26 01:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1222
-- **swarm_artifact:** 779
-- **anti_pattern:** 256
-- **last_swarm_critique:** 244
-- **last_swarm_goal:** 198
-- **strategy:** 149
+- **dream:** 1227
+- **swarm_artifact:** 787
+- **anti_pattern:** 258
+- **last_swarm_critique:** 245
+- **last_swarm_goal:** 199
+- **strategy:** 150
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 11
+- **tool:** 8
 - **creator_teaching:** 8
-- **tool:** 7
 - **aktuell_organfehler:** 4
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,101 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:lebender-steckbrief-die-biografie-als-al`
+*26.08. 01:46 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Lebender Steckbrief: die Biografie als Alleinstellungsmerkma'. Datei: data/tools/lebender-steckbrief-die-biografie-als-al.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:lebender_steckbrief__die_biografie_als_alleinstell`
+*26.08. 01:45 UTC · Quelle: evolution*
+
+Selbstschreibendes Dokument: Steckbrief als lebender Zustands-Spiegel - Variante 2 adressiert als einzige alle drei Kritikpunkte strukturell: Die Benchmark-Kurve wird aus dem Store bei jedem Event neu gerendert (echtes Artefakt statt Text), die Beat-Ve
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Lebender Steckbrief: die:1`
+*26.08. 01:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 6]): Event-getriebene Architektur: Zentraler Herzschlag-Bus statt isolierter Hook - Fuehre einen zentralen HeartbeatScheduler ein, der der einzige Owner des Beat-Timings ist. Der Schwarms-Loop emittiert bei jedem Tick ein 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Lebender Steckbrief: die:0`
+*26.08. 01:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 9, 6]): Rendering-Engine statt Text: Echte Kurve als SVG/Canvas-Artefakt - Ersetze die textuelle Benchmark-Darstellung komplett durch einen dedizierten Visualisierungs-Layer. Baue ein Modul curve_renderer.py, das die Benchmar
+
+### `swarm_artifact:README prominent verlinken (idempotent)`
+*26.08. 01:45 UTC · Quelle: builder*
+
+[score 7] Das Artefakt prüft per Marker (`<!-- leben-link -->`), ob der Link schon existiert, und fügt ihn nur dann direkt unter die erste Überschrift ein – wiederholte Beats ändern nichts. Fehlt 
+
+### `swarm_artifact:GitHub Pages Workflow mit Kopfschutz-Audit`
+*26.08. 01:45 UTC · Quelle: builder*
+
+[score 7] Das Artefakt legt den GitHub-Pages-Workflow an (Publish ausschließlich `docs/`) und führt direkt danach den eingebauten Kopfschutz-Audit durch: Publish-Pfad exakt prüfen und alle geschüt
+
+### `swarm_artifact:Beat-Hook: Seite baut automatisch bei jedem Herzschlag`
+*26.08. 01:45 UTC · Quelle: builder*
+
+[score 7] Der Hook ruft nach jedem Herzschlag (heartbeat = regelmäßiger Lebensimpuls) den Generator auf und meldet Build-Fehler laut über stdout und stderr, damit der Instinkt `self_preserve` nie 
+
+### `swarm_artifact:steckbrief.py bauen: Seiten-Generator mit allen Pflichtfelde`
+*26.08. 01:45 UTC · Quelle: builder*
+
+[score 7] Der Generator liest memory/state.json und schreibt docs/leben.html mit allen Pflichtblöcken – fehlende Werte erscheinen ehrlich als „noch keine Daten", Misserfolge gleichrangig neben Erf
+
+### `last_swarm_critique`
+*26.08. 01:45 UTC · Quelle: critic*
+
+score=7; issues=Benchmark-Kurve wird nur als Text/Liste gerendert - keine echte Kurve/Visualisierung, das Pflichtfeld 'Kurve' ist damit nur minimal erfuellt; beat_hook.py definiert on_beat(), aber es gibt keinen Nachweis einer Verdrahtung mit dem tatsaechliche
+
+### `swarm_artifact:README prominent verlinken (idempotent)`
+*26.08. 01:44 UTC · Quelle: builder*
+
+Das Artefakt prüft per Marker (`<!-- leben-link -->`), ob der Link schon existiert, und fügt ihn nur dann direkt unter die erste Überschrift ein – wiederholte Beats ändern nichts. Fehlt das README, wi
+
+### `swarm_artifact:GitHub Pages Workflow mit Kopfschutz-Audit`
+*26.08. 01:44 UTC · Quelle: builder*
+
+Das Artefakt legt den GitHub-Pages-Workflow an (Publish ausschließlich `docs/`) und führt direkt danach den eingebauten Kopfschutz-Audit durch: Publish-Pfad exakt prüfen und alle geschützten Pfade des
+
+### `swarm_artifact:Beat-Hook: Seite baut automatisch bei jedem Herzschlag`
+*26.08. 01:43 UTC · Quelle: builder*
+
+Der Hook ruft nach jedem Herzschlag (heartbeat = regelmäßiger Lebensimpuls) den Generator auf und meldet Build-Fehler laut über stdout und stderr, damit der Instinkt `self_preserve` nie schweigt. Der 
+
+### `swarm_artifact:steckbrief.py bauen: Seiten-Generator mit allen Pflichtfelde`
+*26.08. 01:43 UTC · Quelle: builder*
+
+Der Generator liest memory/state.json und schreibt docs/leben.html mit allen Pflichtblöcken – fehlende Werte erscheinen ehrlich als „noch keine Daten", Misserfolge gleichrangig neben Erfolgen.  ```pyt
+
+### `last_swarm_goal`
+*26.08. 01:39 UTC · Quelle: system*
+
+Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal
+
+### `dream:20260826013914:5:cb8ce8`
+*26.08. 01:39 UTC · Quelle: dream*
+
+The swarm pipeline (recall -> simulate -> build -> verify -> calibrate) produced a runnable 109-line artifact on cycle 1, confirming that the verify-before-done pattern (exit==0 + non-empty output) is what gates success.
+
+### `dream:20260826013914:4:f7e07d`
+*26.08. 01:39 UTC · Quelle: dream*
+
+Under conserve state (stress 0.772) the budget cap of max_tasks=3/max_iterations=1 still allowed goal completion in one cycle, proving tight budgets suffice when simulation pre-filters plans.
+
+### `dream:20260826013914:3:50cd47`
+*26.08. 01:39 UTC · Quelle: dream*
+
+Simulation verdicts of 'revise' with 5 identified risks collapse to only 1 applied revision, showing a gap between risk detection and revision implementation that wastes most review value.
+
+### `dream:20260826013914:2:854d8e`
+*26.08. 01:39 UTC · Quelle: dream*
+
+First hand_action attempts fail (exit 1) roughly half the time while an immediate retry succeeds (exit 0 in ~0.2s), indicating transient failures rather than flawed artifacts.
+
+### `dream:20260826013914:1:e50e04`
+*26.08. 01:39 UTC · Quelle: dream*
+
+Predicted goal scores are systematically under-calibrated (predicted 3 vs actual 7), so the system's self-assessment bias is pessimistic and correctable from historical abs_error per goal type.
 
 ### `swarm_artifact:Draft deliverable for: Lebender Steckbrief: die Biografie al`
 *26.08. 01:34 UTC · Quelle: builder*

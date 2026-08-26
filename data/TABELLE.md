@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2087 Neuronen · 34489 bewertete Synapsen
+Stand: 2097 Neuronen · 34761 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,8 +10,8 @@ Stand: 2087 Neuronen · 34489 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 197 | 0.23 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 197 | 0.23 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 199 | 0.23 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 199 | 0.23 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 168 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 161 | 0.25 |
 | 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 130 | 0.27 |
@@ -19,10 +19,10 @@ Stand: 2087 Neuronen · 34489 bewertete Synapsen
 | 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 137 | 0.24 |
 | 8 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 131 | 0.25 |
 | 9 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 117 | 0.27 |
-| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 118 | 0.25 |
-| 11 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 123 | 0.24 |
-| 12 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 118 | 0.25 |
-| 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 122 | 0.24 |
+| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 119 | 0.25 |
+| 11 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 124 | 0.24 |
+| 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 123 | 0.24 |
+| 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 118 | 0.25 |
 | 14 | 💭 | Missing interface contract validation risks AttributeError failu… | 117 | 0.25 |
 | 15 | 💭 | Model invocation latency spikes and occasional 502 overload erro… | 123 | 0.24 |
 
@@ -45,5 +45,5 @@ Stand: 2087 Neuronen · 34489 bewertete Synapsen
 | 11 | **0.53** | 💭 High latency spikes up to 71.9 s trigger timeo… | 💭 Latency spikes (e.g., 80.9 s) exceed mission t… |
 | 12 | **0.53** | 💭 Model latency variance (6.9s to 208.3s) for id… | 💭 High latency variance (6.7–108.9 s) for the sa… |
 | 13 | **0.53** | 🔧 🔧 Werkzeug „fußball-die-basislinie-von-50-2-sc… | 🔧 🔧 Werkzeug „destillat-datensatz-gedächtnis-wir… |
-| 14 | **0.53** | 🛠 „Define HealthRegister data model“. Ergebnis: … | 🛠 „Define Injector Pydantic Model“. Ergebnis: ``… |
-| 15 | **0.52** | 💭 Calibration error of 1 point (predicted 5 vs a… | 💭 Daily logging of (goal_embedding, predicted, a… |
+| 14 | **0.53** | 🔧 🔧 Werkzeug „fußball-die-basislinie-von-50-2-sc… | 🔧 🔧 Werkzeug „lebender-steckbrief-die-biografie-… |
+| 15 | **0.53** | 🔧 🔧 Werkzeug „destillat-datensatz-gedächtnis-wir… | 🔧 🔧 Werkzeug „lebender-steckbrief-die-biografie-… |
