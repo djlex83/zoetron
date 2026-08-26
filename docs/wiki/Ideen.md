@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 06:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 06:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 9×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism entered conserve state (stress 1.0, max_tasks 3) while swarms still ran, indicating resource budgeting should gate swarm starts, not just t
+- The system accumulates skill proposals faster than it validates them (5 proposals pending, drive goal explicitly notes they are 'kaum ausprobiert'), s
+- Latency varies up to ~5x between successful calls on the same model (13.8s vs 65.3s), so timeout thresholds must tolerate slow-but-valid responses rat
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeded in every observed window (13.8s, 65.3s, 24.1s), making it the reliable failover target when other pro
+- 429 rate-limit failures cluster on the same free-tier models (z-ai/glm-5.2:free and stealth/ox-alpha) within seconds of each other, meaning immediate 
 - Zwei drive_goals ('Fähigkeiten testen' und 'alte Träume kombinieren') wurden zwar erinnert und in ein Swarm-Ziel überführt, aber ohne Mindest-Qualität
 - Der Evolution-Run (3 Varianten, Sieger-Scores 9/10/9 nach Kritik 'Harter Mangel') zeigt, dass die Critic-gesteuerte Variante den anfänglichen Score-2-
 - OpenRouter-429-Ratenlimits trafen sowohl stealth/ox-alpha als auch z-ai/glm-5.2:free gleichzeitig – ein Fallback-Kette mit exponentiellem Backoff stat
@@ -51,11 +56,6 @@
 - Calibration error was small (predicted 6 vs actual 8, abs_error 2) and the score matched the trace weight (delta 1.0, 28 edges), indicating prediction
 - The simulation step's 'revise' verdict with 3 applied revisions directly preceded first-run success (exit 0), so pre-execution revision is the highest
 - The swarm successfully converted a stale backlog goal ('actually test proposed skills') into a converged artifact in 1 cycle with score 8, proving tha
-- Simulations require 4 revisions before application, revealing that planning lacks concrete validation gates before execution.
-- Hand actions fail on first attempt (exit 1) then succeed on retry (exit 0), yet no automatic retry/backoff logic exists.
-- Five skill proposals were generated in one cycle but zero were tested; the proposal→trial→promote loop is completely broken.
-- Swarms report high scores (5/5) but fail to converge because termination ignores whether logged risks were actually resolved.
-- Model latency varies 23x (2.9s to 67.3s) with intermittent failures, indicating no provider health tracking or adaptive failover.
 
 ---
 

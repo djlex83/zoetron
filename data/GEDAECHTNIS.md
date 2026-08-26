@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3145 Fakten** · Stand 2026-08-26 06:34 UTC · aktualisiert bei jedem Herzschlag
+**3158 Fakten** · Stand 2026-08-26 06:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1313
-- **swarm_artifact:** 841
-- **anti_pattern:** 280
-- **last_swarm_critique:** 260
-- **last_swarm_goal:** 214
-- **strategy:** 161
+- **dream:** 1318
+- **swarm_artifact:** 843
+- **anti_pattern:** 282
+- **last_swarm_critique:** 261
+- **last_swarm_goal:** 215
+- **strategy:** 162
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 18
-- **tool:** 9
+- **tool:** 10
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
 - **frontier:** 3
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:simulationen-häufiger-in-handlungen-umse`
+*26.08. 06:41 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen häufiger in Handlungen umsetzen'. Datei: data/tools/simulationen-häufiger-in-handlungen-umse.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `strategy:simulationen_häufiger_in_handlungen_umsetzen`
+*26.08. 06:41 UTC · Quelle: evolution*
+
+Commitment-Gate umdrehen: Simulation als Filter, nicht als Haupthandlungsblock - Variante 0 fixiert nur die Metrik, aendert aber nichts am Verhalten - die Umsetzungsquote wuerde korrekt gemessen, jedoch nicht steigen. Variante 1 verbessert die Simulation quali
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen häufiger in:1`
+*26.08. 06:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Echte Probelauf-Ausfuehrung: Simulate als Sandbox-Dry-Run statt statischer Risik - Ersetze das statische WORLD-MODEL-Simulate durch einen echten Dry-Run: Jeder Plan wird vor der Ausfuehrung in einer isolierten Sandbox (gleich
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen häufiger in:0`
+*26.08. 06:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Metrik-Korrektheit zuerst: Einheiten angleichen und Quote auf Plan-Ebene definie - Fuehre ein einheitliches Zaehlmodell ein: Ein Plan gilt als 'executed' nur dann, wenn ALLE seine Schritte tatsaechlich ausgefuehrt wurden (boo
+
+### `swarm_artifact:Draft deliverable for: Simulationen häufiger in Handlungen u`
+*26.08. 06:40 UTC · Quelle: builder*
+
+[score 7] Das Artefakt setzt die feste Regel um: Vor jeder Planumsetzung eines mehrschrittigen Plans läuft zwingend ein WORLD-MODEL-Simulate (Simulation = Probelauf im Modell vor der echten Handlu
+
+### `last_swarm_critique`
+*26.08. 06:40 UTC · Quelle: critic*
+
+score=7; issues=Die Umsetzungsquote ist methodisch fehlerhaft: 'executed' zaehlt einzelne Schritte, nicht Plaene, waehrend 'simulations' pro Plan zaehlt - der Quotient mischt Einheiten und wird nur durch min(1.0, ...) kappiert; ein mehrschrittiger Plan kann so
+
+### `swarm_artifact:Draft deliverable for: Simulationen häufiger in Handlungen u`
+*26.08. 06:40 UTC · Quelle: builder*
+
+Das Artefakt setzt die feste Regel um: Vor jeder Planumsetzung eines mehrschrittigen Plans läuft zwingend ein WORLD-MODEL-Simulate (Simulation = Probelauf im Modell vor der echten Handlung), mit defin
+
+### `last_swarm_goal`
+*26.08. 06:37 UTC · Quelle: system*
+
+Simulationen häufiger in Handlungen umsetzen
+
+### `dream:20260826063721:5:2f84ce`
+*26.08. 06:37 UTC · Quelle: dream*
+
+Metabolism entered conserve state (stress 1.0, max_tasks 3) while swarms still ran, indicating resource budgeting should gate swarm starts, not just task counts.
+
+### `dream:20260826063721:4:32afb7`
+*26.08. 06:37 UTC · Quelle: dream*
+
+The system accumulates skill proposals faster than it validates them (5 proposals pending, drive goal explicitly notes they are 'kaum ausprobiert'), so proposal generation without a trial loop creates dead inventory.
+
+### `dream:20260826063721:3:c326b7`
+*26.08. 06:37 UTC · Quelle: dream*
+
+Latency varies up to ~5x between successful calls on the same model (13.8s vs 65.3s), so timeout thresholds must tolerate slow-but-valid responses rather than treating latency as failure.
+
+### `dream:20260826063721:2:539eab`
+*26.08. 06:37 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeded in every observed window (13.8s, 65.3s, 24.1s), making it the reliable failover target when other providers are throttled.
+
+### `dream:20260826063721:1:e12c01`
+*26.08. 06:37 UTC · Quelle: dream*
+
+429 rate-limit failures cluster on the same free-tier models (z-ai/glm-5.2:free and stealth/ox-alpha) within seconds of each other, meaning immediate retries against a throttled provider are wasted calls.
 
 ### `tool:alte-träume-miteinander-verbinden`
 *26.08. 06:34 UTC · Quelle: hands*
