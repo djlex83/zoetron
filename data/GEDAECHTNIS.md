@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2821 Fakten** · Stand 2026-08-26 00:39 UTC · aktualisiert bei jedem Herzschlag
+**2879 Fakten** · Stand 2026-08-26 00:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1202
-- **swarm_artifact:** 767
-- **anti_pattern:** 252
-- **last_swarm_critique:** 195
-- **last_swarm_goal:** 194
-- **strategy:** 147
+- **dream:** 1207
+- **swarm_artifact:** 769
+- **anti_pattern:** 254
+- **last_swarm_critique:** 241
+- **last_swarm_goal:** 195
+- **strategy:** 148
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 10
+- **hand_result:** 11
 - **creator_teaching:** 8
 - **tool:** 6
 - **aktuell_organfehler:** 4
@@ -19,6 +19,296 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Destillat-Datensatz: Gedächtnis wird Trainingsmaterial`
+*26.08. 00:55 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787705719552.py\", line 23\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports mus"}
+
+### `strategy:destillat_datensatz__gedächtnis_wird_trainingsmate`
+*26.08. 00:54 UTC · Quelle: evolution*
+
+Datengetriebener Ansatz ohne eigenes Programm: Konfiguration + Standardwerkzeuge - Variante 2 eliminiert die Fehlerklasse strukturell statt sie zu behandeln: Der kritische Abbruchpunkt (Python-Import/Syntax um Zeile 23) existiert in einem jq/Shell-Artefakt nic
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Destillat-Datensatz: Ged:1`
+*26.08. 00:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Selbstverifizierende Pipeline mit Test-first-Artefakt - Drehe den Prozess um: Schreibe zuerst eine Testdatei (pytest oder simples assert-Skript), die definiert, was 'läuft' heißt: 1) python -m py_compile artifact.py muss Exit
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Destillat-Datensatz: Ged:0`
+*26.08. 00:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Minimalismus & Robustheit statt Feature-Reichtum - Baue das Artefakt komplett neu auf, aber radikal abgespeckt und defensiv: Kein 'from __future__ import annotations', keine Typ-Hints mit |, keine f-Strings in kritischen Pfad
+
+### `swarm_artifact:Draft deliverable for: Destillat-Datensatz: Gedächtnis wird `
+*26.08. 00:53 UTC · Quelle: builder*
+
+[score 2] Der Fallback wird als vollständige Pipeline umgesetzt: Quellenscan → Extraktion/Normalisierung → Qualitätsfilter (Score ≥ 8, Test grün) → PII-Filterung → Deduplizierung → Validierung → J
+
+### `last_swarm_critique`
+*26.08. 00:53 UTC · Quelle: critic*
+
+score=2; issues=HARTER MANGEL: Sandbox-Urteil 'LAEUFT NICHT' - das Artefakt bricht bereits bei Zeile 23 ('from __future__ import annotations') ab. Laut Notenskala ist das ein Wertebereich von 0-2, unabhaengig vom Design.; Der Abbruchpunkt deutet auf eine struk
+
+### `swarm_artifact:Draft deliverable for: Destillat-Datensatz: Gedächtnis wird `
+*26.08. 00:53 UTC · Quelle: builder*
+
+Der Fallback wird als vollständige Pipeline umgesetzt: Quellenscan → Extraktion/Normalisierung → Qualitätsfilter (Score ≥ 8, Test grün) → PII-Filterung → Deduplizierung → Validierung → JSONL-Ausgabe m
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:51 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:50 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:49 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_goal`
+*26.08. 00:48 UTC · Quelle: system*
+
+Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
+
+### `dream:20260826004842:5:fd8fe9`
+*26.08. 00:48 UTC · Quelle: dream*
+
+Simulations and dreams are produced in volume but rarely linked to live tasks (e.g., the old dream matching the current organ error was never compared), so cross-referencing stored dreams against new failure signals is an untapped reliability gain.
+
+### `dream:20260826004842:4:d0dd3b`
+*26.08. 00:48 UTC · Quelle: dream*
+
+Latency variance is extreme (3.2s to 89.3s) and correlates with output size, meaning long generations should be budgeted explicitly under conserve-mode constraints (max 3 tasks, 1 iteration).
+
+### `dream:20260826004842:3:165e2f`
+*26.08. 00:48 UTC · Quelle: dream*
+
+Items parked after 3 failed attempts (e.g., the Destillat-Datensatz goal) stall indefinitely because there is no escalation path to the creator for decisions the system cannot make alone.
+
+### `dream:20260826004842:2:9c4bf0`
+*26.08. 00:48 UTC · Quelle: dream*
+
+The proposal backlog grows faster than it is consumed (30+ untested proposals), so idea generation without a fixed testing rate creates dead inventory.
+
+### `dream:20260826004842:1:0d1f58`
+*26.08. 00:48 UTC · Quelle: dream*
+
+Recurring model failures cluster around prediction tasks, suggesting the root cause is miscalibrated confidence rather than transient API errors.
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:45 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 00:44 UTC · Quelle: critic*
+
+score=7; issues=
 
 ### `hand_result:Destillat-Datensatz: Gedächtnis wird Trainingsmaterial`
 *26.08. 00:39 UTC · Quelle: hands*
