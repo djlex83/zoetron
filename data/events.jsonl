@@ -33,3 +33,4 @@
 {"ts": 1787745828.4360185, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22, "gelesen": 1}}
 {"ts": 1787745828.6371639, "kind": "hand_action", "payload": {"ok": false, "exit": 2, "error": null, "duration_s": 0.19, "gelesen": 0}}
 {"ts": 1787745828.8784823, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 1}}
+{"ts": 1787747973.8357692, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.3, "gelesen": 0}}

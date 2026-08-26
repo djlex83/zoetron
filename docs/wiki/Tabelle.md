@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2483 Neuronen · 47342 bewertete Synapsen
+Stand: 2492 Neuronen · 47697 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,17 +10,17 @@ Stand: 2483 Neuronen · 47342 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 238 | 0.24 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 238 | 0.24 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 240 | 0.24 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 240 | 0.24 |
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 190 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 176 | 0.24 |
-| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 175 | 0.22 |
+| 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 177 | 0.22 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 140 | 0.26 |
 | 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 154 | 0.23 |
 | 8 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 140 | 0.26 |
-| 9 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 141 | 0.25 |
-| 10 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 146 | 0.24 |
-| 11 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 126 | 0.28 |
+| 9 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 147 | 0.24 |
+| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 141 | 0.25 |
+| 11 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 127 | 0.28 |
 | 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 143 | 0.24 |
 | 13 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 142 | 0.25 |
 | 14 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 132 | 0.26 |

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 12:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 12:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
-- Implement a mandatory code-block validator that rejects artifacts without executable Python before critic eval
-- Create a model-adapter layer that normalizes role attributes across providers to prevent 'role' attribute erro
-- Develop a difficulty-calibration module that learns from prediction errors to adjust future estimates.
+- Hard-gate every football-domain swarm on an executable artifact (code + test computing predicted win probabili
+- Add automatic exponential-backoff retry with model rotation on 429 errors, preferring the last-known-good fall
+- After two non-converged cycles on the same goal, trigger a mandatory pivot: change representation, decompose t
 
 ## 🔥 Eigene Ziele
 
@@ -30,7 +30,6 @@
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
@@ -38,9 +37,15 @@
 - Häufige Modellfehler untersuchen und beheben *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler genauer untersuchen *(wieder aufgegriffen: 2×)*
 - Mehr Skill-Vorschläge wirklich ausprobieren *(wieder aufgegriffen: 2×)*
+- Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions consistently fail fast (exit 1, <1s) while self-diagnosis reports zero organ defects, exposing a blind spot: runtime execution failures a
+- Score calibration drifted by 1 point (predicted 3 vs actual 2) and the swarm still declared 'go', meaning threshold decisions tolerate prediction erro
+- OpenRouter 429 rate-limit errors hit two models simultaneously, showing the retry strategy cycles through sibling models instead of backing off global
+- The root failure cause is a generated script (ction_1787744990820.py) that crashes at sys.exit in run_live_beat, indicating the builder produces code 
+- The swarm's evolution phase scored a variant 9/10 but the final artifact failed at runtime (exit 1), revealing that winner selection is based on stati
 - Free-tier OpenRouter models failed en masse with 429/502 within the same second, so bursts of parallel model calls guarantee rate-limit cascades unles
 - The evolution loop scored variants 9/8/9 yet the swarm finished at score 2 unconverged, indicating variant scoring measures code quality in isolation 
 - Calibration predicted 5 but actual was 2 (abs_error 3): self-assessed confidence systematically overestimates success when the deliverable has never b
@@ -51,11 +56,6 @@
 - The swarm failed to converge (score 4, delta 0.0) despite evolution producing a winning variant scored 9, indicating a gap between variant scoring dur
 - The calibration error was 4 points (predicted 8, actual 4), meaning self-predicted scores are systematically optimistic and should be discounted or gr
 - 429 rate-limit failures cluster across multiple free-tier models simultaneously, so the fallback chain should treat OpenRouter-wide 429s as a global b
-- Die fünf Skill-Proposals aus dem letzten Dream-Zyklus adressieren genau die beobachteten Fehlerursachen (Retry/Backoff, Revision-Bindung, Recall-Injek
-- Der Prune-Lauf entfernte 0 Fakten und 0 Events, d.h. die Aufräumlogik ist entweder zu konservativ oder es fehlen Alterungs-/Relevanzkriterien für das 
-- Bei Stress = 1.0 wurde korrekt in den 'conserve'-Modus geschaltet (max_tasks: 3, max_iterations: 1), was verhinderte, dass der Swarm-Lauf unter Ressou
-- Der einzige erfolgreiche Fallback war nvidia/nemotron-3.5-lightning:free, was zeigt, dass die Prioritätskette funktioniert, aber zu viele Modelle glei
-- Alle Modell-Ausfälle in diesem Zeitraum waren 429-Rate-Limits auf OpenRouter, die nacheinander stealth/ox-alpha, z-ai/glm-5.2:free und beide Gemma-Var
 
 ---
 

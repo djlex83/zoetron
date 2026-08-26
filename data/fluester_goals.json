@@ -30,8 +30,8 @@
   "title": "Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)",
   "why": "Score allein reicht nicht, der Critic kann sich irren. Baue ein Konvergenz-Tor (Gate = Sperre vor dem Erfolgs-Stempel): Ein Ziel gilt nur als erledigt, wenn Critic-Score >= 8 UND ein automatischer Integrationstest des gebauten Artefakts grün ist. Fertig wenn: ein Lauf mit Score >= 8 aber rotem Test nachweisbar NICHT konvergiert und die Begründung im Log und im Issue steht.",
   "signal": "failure",
-  "_done": false,
-  "_versuche": 0,
+  "_done": true,
+  "_versuche": 1,
   "_geparkt": false,
   "_zaehler_ab": 1787743119.1258025
  },

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3544 Fakten** · Stand 2026-08-26 12:20 UTC · aktualisiert bei jedem Herzschlag
+**3556 Fakten** · Stand 2026-08-26 12:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1498
-- **swarm_artifact:** 893
-- **last_swarm_critique:** 350
-- **anti_pattern:** 306
-- **last_swarm_goal:** 232
-- **strategy:** 174
+- **dream:** 1503
+- **swarm_artifact:** 895
+- **last_swarm_critique:** 351
+- **anti_pattern:** 308
+- **last_swarm_goal:** 233
+- **strategy:** 175
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 27
 - **tool:** 15
@@ -19,6 +19,66 @@
 - **last_goal:** 1
 
 ---
+
+### `strategy:fähigkeits_messlatte_bauen__capability_benchmark_`
+*26.08. 12:40 UTC · Quelle: evolution*
+
+Declarative YAML-driven Benchmark Suite - Variant 1 (YAML-declarative) directly fixes the binding sandbox verdict: the entire suite C01-C10/P01-P10/R01-R05 lives in one manifest plus one small runner, so a complete, execut
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fähigkeits-Messlatte bau:2`
+*26.08. 12:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Async Event-sourced Benchmark Engine - Build an asyncio-based engine where each benchmark is an async coroutine emitting domain events (BenchmarkStarted, BenchmarkPassed, BenchmarkFailed, MetricRecorded). Use an event store (
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fähigkeits-Messlatte bau:0`
+*26.08. 12:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Plugin-based Micro-benchmark Architecture - Implement a plugin system where each benchmark (C01-C10, P01-P10, R01-R05) is a self-contained module implementing a BenchmarkPlugin interface. Use entry_points (setuptools) or a si
+
+### `swarm_artifact:Draft deliverable for: Fähigkeits-Messlatte bauen (Capabilit`
+*26.08. 12:40 UTC · Quelle: builder*
+
+[score 2] Der Deliverable setzt die sechs Zerlegungsschritte direkt um: feste Taxonomie (C01–C10 Code, P01–P10 Daten/Parsing, R01–R05 Recall), eingebaute Test-Specs mit bekannter Lösung, Live-Date
+
+### `last_swarm_critique`
+*26.08. 12:40 UTC · Quelle: critic*
+
+score=2; issues=SANDBOX-URTEIL 'LAEUFT NICHT' ist bindend: Der Python-Block ist unvollstaendig/abgebrochen (bricht mitten in _c05_palindrome ab), kein ausfuehrbares Gesamtartefakt.; Vertragspunkte fehlen nachweisbar im Artefakt: Keine vollstaendige Suite C01-C
+
+### `swarm_artifact:Draft deliverable for: Fähigkeits-Messlatte bauen (Capabilit`
+*26.08. 12:40 UTC · Quelle: builder*
+
+Der Deliverable setzt die sechs Zerlegungsschritte direkt um: feste Taxonomie (C01–C10 Code, P01–P10 Daten/Parsing, R01–R05 Recall), eingebaute Test-Specs mit bekannter Lösung, Live-Daten aus dem Date
+
+### `last_swarm_goal`
+*26.08. 12:32 UTC · Quelle: system*
+
+Fähigkeits-Messlatte bauen (Capability-Benchmark)
+
+### `dream:20260826123236:5:0661e2`
+*26.08. 12:32 UTC · Quelle: dream*
+
+Hand actions consistently fail fast (exit 1, <1s) while self-diagnosis reports zero organ defects, exposing a blind spot: runtime execution failures are not fed back into the diagnostic layer.
+
+### `dream:20260826123236:4:59b5fd`
+*26.08. 12:32 UTC · Quelle: dream*
+
+Score calibration drifted by 1 point (predicted 3 vs actual 2) and the swarm still declared 'go', meaning threshold decisions tolerate prediction error without a correction mechanism.
+
+### `dream:20260826123236:3:df605f`
+*26.08. 12:32 UTC · Quelle: dream*
+
+OpenRouter 429 rate-limit errors hit two models simultaneously, showing the retry strategy cycles through sibling models instead of backing off globally when the shared endpoint is throttled.
+
+### `dream:20260826123236:2:d37221`
+*26.08. 12:32 UTC · Quelle: dream*
+
+The root failure cause is a generated script (ction_1787744990820.py) that crashes at sys.exit in run_live_beat, indicating the builder produces code paths never exercised by the simulation gate.
+
+### `dream:20260826123236:1:17a51f`
+*26.08. 12:32 UTC · Quelle: dream*
+
+The swarm's evolution phase scored a variant 9/10 but the final artifact failed at runtime (exit 1), revealing that winner selection is based on static review rather than executed behavior.
 
 ### `hand_result:Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)`
 *26.08. 12:20 UTC · Quelle: hands*
