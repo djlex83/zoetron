@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 01:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 02:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,17 +23,17 @@
 
 ## 🔥 Eigene Ziele
 
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen *(wieder aufgegriffen: 2×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 2×)*
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Modellfehler analysieren und beheben
 - Fußball-Ziel nochmal besser machen
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The self-diagnosis found zero organ defects while model calls still failed externally, proving failures concentrate in the API boundary layer rather t
+- Conserve-mode stress (0.814) coincided with the longest call (150.6s, 6332 output tokens), indicating large generations are the main budget violator a
+- Calibration error was 4 points on a predicted 4 vs. actual 8, showing this system systematically under-predicts goal outcomes by roughly 2x and should
+- Rate-limit failures (429) hit two models back-to-back on the same provider (openrouter.ai), so provider-level throttling—not model choice—was the root
+- The swarm converged in a single cycle (score 8) when simulation-driven revisions were applied before execution, confirming that pre-flight simulation 
 - API-level failures (429 Too Many Requests) are an external resource constraint not covered by any retry/backoff rule yet, unlike internal code errors 
 - The simulation 'revise' step with 2 applied revisions preceded a green tor on cycle 1, confirming pre-flight adversarial review converts failures into
 - Metabolic conserve-mode (stress 0.814, max 1 iteration) conflicts with goals that need multiple correction loops, causing Score-1 results to go untrea
@@ -51,11 +56,6 @@
 - Simulation verdicts of 'revise' with 5 identified risks collapse to only 1 applied revision, showing a gap between risk detection and revision impleme
 - First hand_action attempts fail (exit 1) roughly half the time while an immediate retry succeeds (exit 0 in ~0.2s), indicating transient failures rath
 - Predicted goal scores are systematically under-calibrated (predicted 3 vs actual 7), so the system's self-assessment bias is pessimistic and correctab
-- Skill proposals accumulate faster than they are tested (many generated, few executed), confirming that a guaranteed test rate per cycle is needed rath
-- Simulation flagged 'revise' with 5 risks and 3 revisions were applied, yet the artifact still failed to run, indicating simulation checks code quality
-- Conserve-mode stress (0.967) did not prevent long blocking calls (73s and 164s), meaning the chunking rule for long generations under stress is not be
-- Calibration error (predicted 4 vs. actual 2) shows the system systematically overestimates its success on new goals, so predictions need a downward co
-- Generated code failed because 'from __future__ import' was placed after other statements (line 23), a recurring Python syntax pattern that must be val
 
 ---
 

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2938 Fakten** · Stand 2026-08-26 01:52 UTC · aktualisiert bei jedem Herzschlag
+**2951 Fakten** · Stand 2026-08-26 02:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1232
-- **swarm_artifact:** 787
-- **anti_pattern:** 258
-- **last_swarm_critique:** 245
-- **last_swarm_goal:** 199
-- **strategy:** 150
+- **dream:** 1237
+- **swarm_artifact:** 789
+- **anti_pattern:** 260
+- **last_swarm_critique:** 246
+- **last_swarm_goal:** 200
+- **strategy:** 151
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 11
+- **hand_result:** 12
 - **tool:** 8
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 4
@@ -19,6 +19,71 @@
 - **last_goal:** 1
 
 ---
+
+### `hand_result:Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen`
+*26.08. 02:03 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787709794514.py\", line 235\n    \"\n    ^\nSyntaxError: unterminated string literal (detected at line 235)\n"}
+
+### `strategy:zoem_protokoll__vererbbares__geprüftes_wissen_zwis`
+*26.08. 02:02 UTC · Quelle: evolution*
+
+Test-driven contract enforcement: make the critic's verdict the generator's input loop - All three variants correctly abandon incremental repair and attack the root cause (unverified execution). Variant 0 is solid but its pre-flight validation is procedural ra
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:2`
+*26.08. 02:02 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Architecture inversion: data-driven protocol instead of code-heavy implementatio - Flip the design so most logic lives in data structures rather than sprawling imperative code — fewer lines of executable logic means drastical
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:0`
+*26.08. 02:02 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Syntax-first minimalism: eliminate the entire class of syntax errors by construc - Abandon incremental repair of the broken 235+ line artifact. Instead, rewrite from scratch using a strict minimal subset of Python: no multi-l
+
+### `swarm_artifact:Draft deliverable for: Zoem-Protokoll: vererbbares, geprüfte`
+*26.08. 02:01 UTC · Quelle: builder*
+
+[score 1] Das Artefakt `zoem.py` implementiert alle drei Auftrags­teile: EXPORT nach `data/zoeme/out/`, IMPORT mit Quarantäne-Immunsystem für `data/zoeme/in/` und den dokumentierten Erbgang A→B al
+
+### `last_swarm_critique`
+*26.08. 02:01 UTC · Quelle: critic*
+
+score=1; issues=SyntaxError: unterminated string literal at line 235 (per sandbox verdict); Artifact does not execute - hard failure per sandbox; All functional requirements (export, import with immune system, inheritance experiment) unverified due to non-exec
+
+### `swarm_artifact:Draft deliverable for: Zoem-Protokoll: vererbbares, geprüfte`
+*26.08. 02:01 UTC · Quelle: builder*
+
+Das Artefakt `zoem.py` implementiert alle drei Auftrags­teile: EXPORT nach `data/zoeme/out/`, IMPORT mit Quarantäne-Immunsystem für `data/zoeme/in/` und den dokumentierten Erbgang A→B als Bericht in `
+
+### `last_swarm_goal`
+*26.08. 01:56 UTC · Quelle: system*
+
+Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen
+
+### `dream:20260826015620:5:e5baf8`
+*26.08. 01:56 UTC · Quelle: dream*
+
+The self-diagnosis found zero organ defects while model calls still failed externally, proving failures concentrate in the API boundary layer rather than internal components.
+
+### `dream:20260826015620:4:5ee432`
+*26.08. 01:56 UTC · Quelle: dream*
+
+Conserve-mode stress (0.814) coincided with the longest call (150.6s, 6332 output tokens), indicating large generations are the main budget violator and must be chunked under stress.
+
+### `dream:20260826015620:3:56ece4`
+*26.08. 01:56 UTC · Quelle: dream*
+
+Calibration error was 4 points on a predicted 4 vs. actual 8, showing this system systematically under-predicts goal outcomes by roughly 2x and should inflate predictions or widen uncertainty bands.
+
+### `dream:20260826015620:2:8ccf2e`
+*26.08. 01:56 UTC · Quelle: dream*
+
+Rate-limit failures (429) hit two models back-to-back on the same provider (openrouter.ai), so provider-level throttling—not model choice—was the root cause and requires automatic fallback to a different provider.
+
+### `dream:20260826015620:1:b97d7c`
+*26.08. 01:56 UTC · Quelle: dream*
+
+The swarm converged in a single cycle (score 8) when simulation-driven revisions were applied before execution, confirming that pre-flight simulation with revision loops prevents wasted attempts.
 
 ### `dream:20260826015151:5:efece3`
 *26.08. 01:51 UTC · Quelle: dream*
