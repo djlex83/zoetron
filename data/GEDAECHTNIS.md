@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3624 Fakten** · Stand 2026-08-26 13:35 UTC · aktualisiert bei jedem Herzschlag
+**3629 Fakten** · Stand 2026-08-26 13:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1529
+- **dream:** 1534
 - **swarm_artifact:** 901
 - **last_swarm_critique:** 372
 - **anti_pattern:** 314
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826133918:5:495e23`
+*26.08. 13:39 UTC · Quelle: dream*
+
+Bahnen-Graph zeigte delta 0.0 und 0 neue Kanten trotz erfolgreichem Code-Artefakt: Erfolgreiche Handlungen erzeugen keine Verknüpfungen, wodurch spätere Recall-Fragen das Wissen nicht finden.
+
+### `dream:20260826133918:4:4a6bcd`
+*26.08. 13:39 UTC · Quelle: dream*
+
+Der Evolution-Lauf (3 Varianten, Kritik-Punkte wie 'Recall-Dimension' eingebaut) hob die Qualität trotz Score 7 – nicht konvergierte Swarms liefern trotzdem verwertbare Verbesserungen und sollten als 'Iteration nötig' statt 'Fehlschlag' gewertet werden.
+
+### `dream:20260826133918:3:104c16`
+*26.08. 13:39 UTC · Quelle: dream*
+
+Conserve-Modus bei Stress 1.0 mit max_iterations=1 kollidiert mit mehrzykligen Zielen: Budgetgrenzen sollten an die geschätzte Zielkomplexität gekoppelt werden, nicht nur an den Stresswert.
+
+### `dream:20260826133918:2:9ab5d6`
+*26.08. 13:39 UTC · Quelle: dream*
+
+Die Simulationsprüfung mit 'revise'-Verdict und 3 angewandten Revisionen hat den Durchlauf gerettet – Simulationen vor Ausführung sind der wirksamste Fehlerfilter im Pipeline.
+
+### `dream:20260826133918:1:cf8e55`
+*26.08. 13:39 UTC · Quelle: dream*
+
+Aufwandsschätzungen vor Swarm-Starts sind systematisch zu optimistisch (vorhergesagt: 2, tatsächlich: 7 Iterationen), daher sollte die Kalibrierung einen Mindestpuffer von 2–3 Zyklen einplanen.
 
 ### `dream:20260826133443:5:0d9cb4`
 *26.08. 13:34 UTC · Quelle: dream*
