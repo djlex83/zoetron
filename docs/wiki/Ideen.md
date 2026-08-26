@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 10×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The goal 'Modell-Fehler reduzieren' itself produced 13+ model errors across the trace, indicating recurring failure modes (sandbox exit 1, calibration
+- Token spend was highly uneven (one call: 1952 in / 7843 out at 229s latency while most calls were <1000 tokens), suggesting large generation tasks sho
+- Evolution rescued the run (winner scored 9 vs initial 2), confirming that when cycle-1 score < 5, running variant evolution immediately is more cost-e
+- Calibration missed by 3 points (predicted 5, actual 2) because predictions are made before execution risk is known; prediction quality is bounded by h
+- Hand actions failed twice with exit code 1 and no captured stderr, so the sandbox verdict 'Artefakt laeuft nicht' was based on an unobservable failure
 - Reflex execution succeeded instantly (0.22s, exit 0) on its single use, showing fast-path reuse of proven skills is reliable and underutilized for rep
 - Drive goals about understanding model errors repeat across cycles without progress, indicating goals are being re-emitted rather than driven to resolu
 - Prune runs consistently report zero facts/events pruned, meaning memory consolidation is a no-op and stale events (e.g., old drive-goal entries) are a
@@ -51,11 +56,6 @@
 - Skill proposals are generated at high volume every cycle but almost none are implemented or tested, so the proposal pipeline is a write-only sink.
 - Drive goals about understanding model errors and rejected tools recur across multiple dream cycles unchanged, showing goals persist without measurable
 - Prune runs repeatedly report zero facts and events pruned, indicating the retention policy is effectively a no-op and memory is growing without curati
-- Latency varies by two orders of magnitude across calls (3.6s to 149.7s) and correlates with token volume, supporting tiered timeout budgets keyed to t
-- Skill proposals accumulate faster than they get tested (drive goal explicitly notes few were tried), meaning the pipeline needs an execution budget fo
-- Critic output being unparsable was a direct failure cause, so structured-output constraints or a repair-and-reparse step on critic responses would rem
-- The swarm failed to converge (score 5, converged=false) even though evolution produced a 9/10 winner variant, indicating the gap lies in integrating e
-- Score predictions are systematically overconfident (predicted 7 vs actual 5), so calibration should use the running abs_error mean as a downward corre
 
 ---
 

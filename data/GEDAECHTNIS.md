@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3233 Fakten** · Stand 2026-08-26 07:43 UTC · aktualisiert bei jedem Herzschlag
+**3238 Fakten** · Stand 2026-08-26 07:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1368
+- **dream:** 1373
 - **swarm_artifact:** 851
 - **anti_pattern:** 286
 - **last_swarm_critique:** 265
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826074637:5:caf55c`
+*26.08. 07:46 UTC · Quelle: dream*
+
+The goal 'Modell-Fehler reduzieren' itself produced 13+ model errors across the trace, indicating recurring failure modes (sandbox exit 1, calibration drift, budget misapplication) should be tracked as first-class facts, not just per-run events.
+
+### `dream:20260826074637:4:ec6243`
+*26.08. 07:46 UTC · Quelle: dream*
+
+Token spend was highly uneven (one call: 1952 in / 7843 out at 229s latency while most calls were <1000 tokens), suggesting large generation tasks should be split or streamed to avoid single-call timeout risk.
+
+### `dream:20260826074637:3:c868b9`
+*26.08. 07:46 UTC · Quelle: dream*
+
+Evolution rescued the run (winner scored 9 vs initial 2), confirming that when cycle-1 score < 5, running variant evolution immediately is more cost-effective than another critic-revise loop on the same artifact.
+
+### `dream:20260826074637:2:302acd`
+*26.08. 07:46 UTC · Quelle: dream*
+
+Calibration missed by 3 points (predicted 5, actual 2) because predictions are made before execution risk is known; prediction quality is bounded by how late in the pipeline it happens.
+
+### `dream:20260826074637:1:0dee5c`
+*26.08. 07:46 UTC · Quelle: dream*
+
+Hand actions failed twice with exit code 1 and no captured stderr, so the sandbox verdict 'Artefakt laeuft nicht' was based on an unobservable failure; always capture stdout/stderr from hand_action before diagnosing.
 
 ### `tool:alte-traumideen-mit-strategien-verbinden`
 *26.08. 07:43 UTC · Quelle: hands*
