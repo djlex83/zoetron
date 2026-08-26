@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3223 Fakten** · Stand 2026-08-26 07:36 UTC · aktualisiert bei jedem Herzschlag
+**3233 Fakten** · Stand 2026-08-26 07:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1363
-- **swarm_artifact:** 849
+- **dream:** 1368
+- **swarm_artifact:** 851
 - **anti_pattern:** 286
-- **last_swarm_critique:** 264
-- **last_swarm_goal:** 218
+- **last_swarm_critique:** 265
+- **last_swarm_goal:** 219
 - **strategy:** 164
 - **aktuell_fussball_messlatte:** 30
 - **hand_result:** 19
-- **tool:** 11
+- **tool:** 12
 - **creator_teaching:** 8
 - **aktuell_organfehler:** 5
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-traumideen-mit-strategien-verbinden`
+*26.08. 07:43 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Traumideen mit Strategien verbinden'. Datei: data/tools/alte-traumideen-mit-strategien-verbinden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `swarm_artifact:Draft deliverable for: Alte Traumideen mit Strategien verbin`
+*26.08. 07:43 UTC · Quelle: builder*
+
+[score 8] Das Artefakt inventarisiert alte Traumideen aus dem Gedächtnis, ordnet jeder eine konkrete, zeitgebundene Strategie zu und prüft die Erfolgskriterien automatisch. Die Ausgabe erfolgt als
+
+### `last_swarm_critique`
+*26.08. 07:43 UTC · Quelle: critic*
+
+score=8; issues=Daten sind hartkodiert statt dynamisch aus Memory/Wissensgraph geladen - die 'Inventur' ist eine statische Liste mit Herkunftsangaben als Text; Validierung prueft nur interne Konsistenz der eigenen Datenstrukturen (Selbstbezug), nicht ob die St
+
+### `swarm_artifact:Draft deliverable for: Alte Traumideen mit Strategien verbin`
+*26.08. 07:43 UTC · Quelle: builder*
+
+Das Artefakt inventarisiert alte Traumideen aus dem Gedächtnis, ordnet jeder eine konkrete, zeitgebundene Strategie zu und prüft die Erfolgskriterien automatisch. Die Ausgabe erfolgt als Tabelle (Idee
+
+### `last_swarm_goal`
+*26.08. 07:40 UTC · Quelle: system*
+
+Alte Traumideen mit Strategien verbinden
+
+### `dream:20260826074016:5:9db048`
+*26.08. 07:40 UTC · Quelle: dream*
+
+Reflex execution succeeded instantly (0.22s, exit 0) on its single use, showing fast-path reuse of proven skills is reliable and underutilized for repeated task types.
+
+### `dream:20260826074016:4:b16f8e`
+*26.08. 07:40 UTC · Quelle: dream*
+
+Drive goals about understanding model errors repeat across cycles without progress, indicating goals are being re-emitted rather than driven to resolution with evidence.
+
+### `dream:20260826074016:3:691f2e`
+*26.08. 07:40 UTC · Quelle: dream*
+
+Prune runs consistently report zero facts/events pruned, meaning memory consolidation is a no-op and stale events (e.g., old drive-goal entries) are accumulating unchecked.
+
+### `dream:20260826074016:2:424976`
+*26.08. 07:40 UTC · Quelle: dream*
+
+Tool rejections and the 17 model errors remain unexplained because failure reasons are never captured in structured form, leaving recurring failures invisible to later cycles.
+
+### `dream:20260826074016:1:57406a`
+*26.08. 07:40 UTC · Quelle: dream*
+
+Skill proposals are generated every dream cycle but almost never executed (one reflex trial in the whole window), so the bottleneck is proposal-to-trial conversion, not idea generation.
 
 ### `dream:20260826073551:5:77bb2a`
 *26.08. 07:35 UTC · Quelle: dream*

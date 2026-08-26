@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 10×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 8×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex execution succeeded instantly (0.22s, exit 0) on its single use, showing fast-path reuse of proven skills is reliable and underutilized for rep
+- Drive goals about understanding model errors repeat across cycles without progress, indicating goals are being re-emitted rather than driven to resolu
+- Prune runs consistently report zero facts/events pruned, meaning memory consolidation is a no-op and stale events (e.g., old drive-goal entries) are a
+- Tool rejections and the 17 model errors remain unexplained because failure reasons are never captured in structured form, leaving recurring failures i
+- Skill proposals are generated every dream cycle but almost never executed (one reflex trial in the whole window), so the bottleneck is proposal-to-tri
 - Reflex-mode actions complete successfully but record score=null, so success is claimed without any quality signal to compare against future attempts.
 - LLM call latency fluctuates between roughly 10s and 17s for similar token counts, suggesting per-call variance that timeout budgets could absorb.
 - Skill proposals are generated at high volume every cycle but almost none are implemented or tested, so the proposal pipeline is a write-only sink.
@@ -51,11 +56,6 @@
 - Critic output being unparsable was a direct failure cause, so structured-output constraints or a repair-and-reparse step on critic responses would rem
 - The swarm failed to converge (score 5, converged=false) even though evolution produced a 9/10 winner variant, indicating the gap lies in integrating e
 - Score predictions are systematically overconfident (predicted 7 vs actual 5), so calibration should use the running abs_error mean as a downward corre
-- Proposed skills accumulate faster than they are exercised (the drive goal itself exists because few were tested), so each swarm run should be forced t
-- The simulation gate correctly caught 3 risks pre-execution (verdict 'revise') and after revision issued 'go', confirming that running simulation twice
-- Under conserve mode (stress 0.621, max_iterations=1) the swarm still needed 2 cycles plus evolution, indicating that budget limits set before simulati
-- Evolution was triggered not by a weak solution but by an unparsable critic output, meaning output-format failures in the critic role waste a full evol
-- The model consistently overpredicts its own performance (calibration error of +2: predicted 7 vs actual 5), so predicted scores should be discounted b
 
 ---
 
