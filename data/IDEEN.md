@@ -1,11 +1,10 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 13:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Before starting any retried goal, query memory for stored negative patterns from prior failure distillations a *(hatte die Idee 2×)*
 - quota_aware_router.py: track per-model 429 events with timestamps, demote repeatedly-limited models in fallbac *(hatte die Idee 2×)*
 - act_checkpoint.py: wrap long-running act calls with periodic progress heartbeats and a soft deadline that trig *(hatte die Idee 2×)*
 - stress_gated_spawner.py: refuse to start new swarm tasks when metabolism stress exceeds 0.8 and defer them to  *(hatte die Idee 2×)*
@@ -17,9 +16,10 @@
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
-- Implement a provider-rotation policy with exponential backoff that skips any model returning 429 twice in a ro
-- Require every football-prediction swarm to ingest external structured signals (odds, xG, standings) before gen
-- Add an automatic non-convergence detector: if two consecutive cycles show no delta in the critic metric, force
+- Implement exponential backoff with jitter on 429 errors instead of immediate sequential retries through the fa
+- Add a circuit-breaker rule: if two or more models return 429 within a short window, pause all outbound calls f
+- Apply a calibration correction factor to prediction scores for recurring goal types using historical abs_error
+- Gate model fan-out behind the metabolism_check budget so conserve-mode limits actually cap concurrent requests
 
 ## 🔥 Eigene Ziele
 
@@ -28,7 +28,7 @@
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
 - Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The recurring pattern across cycles is prediction error: effort calibration is off by ~1.8x and outcome predictions miss real failures, meaning self-m
+- Drive goals are generated faster than they are executed (three drive_goals queued plus a whisper while one swarm is still failing), so the pipeline ac
+- Metabolism was at stress 1.0 / conserve mode (max_tasks=3, max_iterations=1) while launching a full swarm run — resource-constrained states should dow
+- The hand_action failed instantly (exit 1, 0.03s, nothing read) with no error message, indicating that silent fast failures are the most common executi
+- The benchmark goal scored 1/10 despite a 9/10 evolution winner and a 'go' simulation verdict, showing that high variant scores and sandbox approval do
 - Dream could not parse its own output - check prompt size.
 - The swarm terminated without convergence after only 2 cycles despite 'go' simulation verdicts, indicating the go/no-go gate is too permissive relative
 - Evolution rescued the run: a 3-variant evolution loop lifted scores from 2/10 baseline to 9/10 for the winner, confirming generate-and-select beats si
@@ -51,11 +56,6 @@
 - Under metabolism stress=1.0/conserve mode (max_tasks=3, max_iterations=1), long-latency calls like stealth/ox-alpha at 117–256s consume most of the it
 - Calibration is systematically overconfident: predicted risk 5 vs actual 2 (abs_error 3) suggests the simulation phase inflates risk estimates for well
 - The convergence gate correctly rejected the benchmark artifact because prose-only output contained no executable Python block — every goal requiring c
-- Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits in bursts, so the fallback chain must treat 429 as a 'back off a
-- hand_action failed twice with exit 1 before succeeding on the third attempt, indicating a retry loop for shell actions resolves transient issues cheap
-- Calibration systematically underestimated effort (predicted 5 vs actual 9, abs_error 4), suggesting predictions should be inflated ~1.8x or recalibrat
-- Free-tier endpoints fail in two distinct ways that need different handling: 429 rate limits (retryable with backoff) versus upstream 502/no-choices er
-- The fallback chain is effective: when stealth/ox-alpha and z-ai/glm-5.2 failed, nvidia/nemotron-3-ultra and dots-studio/dots-3-note-preview completed 
 
 ---
 

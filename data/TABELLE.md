@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2508 Neuronen · 49116 bewertete Synapsen
+Stand: 2513 Neuronen · 49269 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -15,7 +15,7 @@ Stand: 2508 Neuronen · 49116 bewertete Synapsen
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 190 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 176 | 0.24 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 183 | 0.23 |
-| 6 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 152 | 0.24 |
+| 6 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 153 | 0.24 |
 | 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 140 | 0.26 |
 | 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 157 | 0.23 |
 | 9 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 131 | 0.28 |

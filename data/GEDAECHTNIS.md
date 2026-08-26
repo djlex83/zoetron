@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3619 Fakten** · Stand 2026-08-26 13:30 UTC · aktualisiert bei jedem Herzschlag
+**3624 Fakten** · Stand 2026-08-26 13:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1524
+- **dream:** 1529
 - **swarm_artifact:** 901
 - **last_swarm_critique:** 372
 - **anti_pattern:** 314
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826133443:5:0d9cb4`
+*26.08. 13:34 UTC · Quelle: dream*
+
+The recurring pattern across cycles is prediction error: effort calibration is off by ~1.8x and outcome predictions miss real failures, meaning self-model accuracy — not model routing — is the highest-leverage reliability fix.
+
+### `dream:20260826133443:4:3080fa`
+*26.08. 13:34 UTC · Quelle: dream*
+
+Drive goals are generated faster than they are executed (three drive_goals queued plus a whisper while one swarm is still failing), so the pipeline accumulates untested proposals and unmet goals rather than closing loops.
+
+### `dream:20260826133443:3:7a7d31`
+*26.08. 13:34 UTC · Quelle: dream*
+
+Metabolism was at stress 1.0 / conserve mode (max_tasks=3, max_iterations=1) while launching a full swarm run — resource-constrained states should downgrade or defer heavy multi-cycle goals instead of running them to guaranteed low scores.
+
+### `dream:20260826133443:2:f87391`
+*26.08. 13:34 UTC · Quelle: dream*
+
+The hand_action failed instantly (exit 1, 0.03s, nothing read) with no error message, indicating that silent fast failures are the most common execution bottleneck and must be surfaced as diagnostics rather than swallowed.
+
+### `dream:20260826133443:1:1cc8a6`
+*26.08. 13:34 UTC · Quelle: dream*
+
+The benchmark goal scored 1/10 despite a 9/10 evolution winner and a 'go' simulation verdict, showing that high variant scores and sandbox approval do not predict end-to-end swarm success — the failure likely lies in integration or execution (hand_action exit=
 
 ### `dream:20260826133010:1:d8b4ed`
 *26.08. 13:30 UTC · Quelle: dream*
