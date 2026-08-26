@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 10:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,19 +17,19 @@
 - model_router.py: wrap all LLM calls with exponential backoff on 429s plus automatic failover to the next healt *(hatte die Idee 2×)*
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
 - failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
+- Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
 - Before declaring any swarm finished, verify the artifact contains an executable Python block; if not, force on
 - After every swarm, run the actual external metric (e.g., match prediction accuracy) and record it alongside th
-- When a skill proposal appears in two consecutive dream cycles, auto-promote it into the active procedure list 
 
 ## 🔥 Eigene Ziele
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 12×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 11×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 10×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 8×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 4×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress was at maximum (1.0, conserve state) while the system still ran multi-model swarms, indicating budget-aware goal selection should gate expensiv
+- The evolution loop worked as designed: after scoring 2/10, three variants were generated and the winner scored 9/10, confirming that evolve-after-fail
+- Calibration was badly off (predicted 6, actual 2), meaning the planner's confidence estimates need grounding in past execution scores rather than opti
+- The 429 rate-limit error on the primary model cascaded into a fallback to a free-tier model, showing that model failures, not task difficulty, were th
+- The swarm failed (score 2/10) primarily because generated Python artifacts contained syntax errors ('from __future__ import annotat...' truncated), so
 - Skill proposals from dreams remain unvalidated artifacts until a hash-diff verification confirms the evolved code actually replaced the deployed artif
 - The system autonomously converts failure signals (model errors, gaps, combination needs) into drive goals, but metabolism conservation (max_iterations
 - Swarm convergence in 1 cycle with score 8 masks latent risks: the subsequent simulation of the same proposals flagged 2 risks and required 2 revisions
@@ -51,11 +56,6 @@
 - Calibration error of 1 persists across runs, showing risk priors do not adapt from observed outcomes.
 - Swarms converge in one cycle without evolution, indicating reflexes execute but do not improve autonomously.
 - Model latency varies by 30x (5.7–180s) causing unpredictable resource consumption and budget overruns.
-- Conserve mode caps tasks at 3 while stress is at 1.0 and the last goal ended unconverged, so budget policy is suppressing exactly the debugging work t
-- Skill proposals are accumulating faster than they are tested (5 new proposals this cycle, 0 executed), creating an untested backlog that wastes the sy
-- 4 of 5 critic revisions were applied but nothing verified them against the working tree, so 'revise' verdicts can silently lose changes between simula
-- The swarm finished unconverged (score 7 after 2 cycles) yet act_done fired anyway, meaning completion is currently gated on score alone rather than on
-- Free-tier OpenRouter models (stealth/ox-alpha, z-ai/glm-5.2:free) hit 429 rate limits under burst load, so any multi-call cycle needs per-model backof
 
 ---
 
