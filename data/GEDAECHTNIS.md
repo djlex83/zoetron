@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3185 Fakten** · Stand 2026-08-26 07:03 UTC · aktualisiert bei jedem Herzschlag
+**3190 Fakten** · Stand 2026-08-26 07:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1333
+- **dream:** 1338
 - **swarm_artifact:** 847
 - **anti_pattern:** 284
 - **last_swarm_critique:** 263
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826070755:5:fdc4c8`
+*26.08. 07:07 UTC · Quelle: dream*
+
+Recurring failure themes from prior dreams (33 model errors, 4 unexplained tool rejections) remain unresolved open goals; they should be prioritized over generating new goals since no organ faults were found in self-diagnosis.
+
+### `dream:20260826070755:4:b7e4c7`
+*26.08. 07:07 UTC · Quelle: dream*
+
+Convergence failed after 2 cycles despite a good score, suggesting the convergence threshold or cycle budget—not solution quality—is the bottleneck when stress=1.0 forces max_iterations=1 budgets.
+
+### `dream:20260826070755:3:c7124d`
+*26.08. 07:07 UTC · Quelle: dream*
+
+Calibration error was small (predicted 6 vs actual 7), so score predictions are trustworthy enough to gate convergence decisions without extra verification cycles.
+
+### `dream:20260826070755:2:8f3606`
+*26.08. 07:07 UTC · Quelle: dream*
+
+Evolution over a scored baseline is the most effective improvement lever: a single evolution_run lifted the goal score from 7 to 9 by selecting variant 3 of 3.
+
+### `dream:20260826070755:1:1ffd83`
+*26.08. 07:07 UTC · Quelle: dream*
+
+Simulate→revise→apply cycles reliably convert plans into working artifacts: both simulation passes produced revisions (2 and 3) that were applied and led to a running 228-line Python artifact on the first hand_action.
 
 ### `dream:20260826070324:5:404c15`
 *26.08. 07:03 UTC · Quelle: dream*

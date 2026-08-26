@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2254 Neuronen · 40180 bewertete Synapsen
+Stand: 2260 Neuronen · 40416 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -19,12 +19,12 @@ Stand: 2254 Neuronen · 40180 bewertete Synapsen
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 158 | 0.22 |
 | 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 144 | 0.24 |
 | 9 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 137 | 0.25 |
-| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 131 | 0.25 |
-| 11 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 123 | 0.26 |
+| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 132 | 0.25 |
+| 11 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 124 | 0.26 |
 | 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 131 | 0.25 |
-| 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 130 | 0.24 |
+| 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 131 | 0.24 |
 | 14 | 💭 | Simulation revision loops (3 risks → 3 revisions) indicate missi… | 134 | 0.23 |
-| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 116 | 0.27 |
+| 15 | 💭 | Both football runs ended in a 'revise' verdict with 5 risks iden… | 117 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 

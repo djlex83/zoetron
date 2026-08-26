@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - whisper_escalation.py: after 2 failed convergence attempts on a whisper, generate a concrete decision request  *(hatte die Idee 2×)*
 - Extend selbstdiagnose to ingest operational events (model_fail, werkzeug_abgelehnt, converged=false) as health *(hatte die Idee 2×)*
 - Build a sandbox trial pipeline that executes each pending skill proposal, records pass/fail metrics, and auto- *(hatte die Idee 2×)*
+- model_router.py: wrap all LLM calls with exponential backoff on 429s plus automatic failover to the next healt *(hatte die Idee 2×)*
 - Before declaring any swarm finished, verify the artifact contains an executable Python block; if not, force on
 - After every swarm, run the actual external metric (e.g., match prediction accuracy) and record it alongside th
 - When a skill proposal appears in two consecutive dream cycles, auto-promote it into the active procedure list 
 - If prune_run reports 0 removals across two consecutive runs, escalate to an aggressive pruning pass targeting 
 - For repeated goals of the same type, seed the new swarm's calibration estimate with the previous goal's actual
-- After two failed swarm cycles on the same goal, automatically trigger a 'pivot' procedure: change representati
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Recurring failure themes from prior dreams (33 model errors, 4 unexplained tool rejections) remain unresolved open goals; they should be prioritized o
+- Convergence failed after 2 cycles despite a good score, suggesting the convergence threshold or cycle budget—not solution quality—is the bottleneck wh
+- Calibration error was small (predicted 6 vs actual 7), so score predictions are trustworthy enough to gate convergence decisions without extra verific
+- Evolution over a scored baseline is the most effective improvement lever: a single evolution_run lifted the goal score from 7 to 9 by selecting varian
+- Simulate→revise→apply cycles reliably convert plans into working artifacts: both simulation passes produced revisions (2 and 3) that were applied and 
 - Pruning removed 0 facts/events while memory grows, meaning prune criteria are too conservative and stale entries are accumulating unchecked.
 - Conserve mode (stress 1.0) capped the system at 3 tasks/1 iteration yet the swarm still converged in 1 cycle, indicating small budgets suffice when pl
 - Latency variance is extreme (2.1s to 84.7s on the same model), so timeouts and scheduling should be latency-aware rather than assuming uniform respons
@@ -51,11 +56,6 @@
 - Tool rejection was caused by policy (destructive subprocess requiring human approval), not by tool design — proposals must be tagged with their risk c
 - Calibration error of 2 (predicted 6 vs actual 8) shows predictions systematically undershoot for goals involving skill experimentation; per-goal-type 
 - Simulation-to-action conversion works: all 3 revisions from simulation were applied and produced a 339-line runnable artifact that passed TOR on cycle
-- Selbstdiagnose reported zero organ defects immediately after multiple model failures and a rejected action, indicating the diagnostic layer only check
-- Skill proposals accumulate faster than they are tested (many proposed, ~zero executed), so the proposal queue grows without producing validated capabi
-- Destructive tools containing subprocess calls are silently rejected and parked instead of being routed to a human-approval issue, losing viable capabi
-- The simulate->revise->execute pipeline leaks at the last step: 5 revisions were generated but only 1 was applied, meaning conversion of simulations in
-- Nearly half of model calls failed with 429 rate-limit errors on OpenRouter, and the system had no backoff or fallback routing, so single-provider satu
 
 ---
 
