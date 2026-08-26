@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3826 Fakten** · Stand 2026-08-26 18:11 UTC · aktualisiert bei jedem Herzschlag
+**3844 Fakten** · Stand 2026-08-26 18:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1576
-- **swarm_artifact:** 942
-- **last_swarm_critique:** 443
-- **anti_pattern:** 326
-- **last_swarm_goal:** 246
-- **strategy:** 184
+- **dream:** 1581
+- **swarm_artifact:** 948
+- **last_swarm_critique:** 444
+- **anti_pattern:** 328
+- **last_swarm_goal:** 247
+- **strategy:** 185
 - **hand_result:** 34
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 17
-- **aktuell_organfehler:** 11
+- **tool:** 18
+- **aktuell_organfehler:** 12
 - **creator_teaching:** 8
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,61 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fakten-ausbeute-pro-beat-verdreifachen-o`
+*26.08. 18:46 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust'. Datei: data/tools/fakten-ausbeute-pro-beat-verdreifachen-o.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:2`
+*26.08. 18:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 7, 4]): Automated Monitoring Loop & Reporting-First Iteration - Deploy HANDS ground-truth automation as a continuous feedback loop; implement novelty rate detection and facts-per-beat measurement as side-channel metrics; gene
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:1`
+*26.08. 18:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 5]): Algorithmic Extraction Density & Quality Gating - Redesign the beat-processing engine to triple facts-per-beat via multi-pass semantic extraction, cross-beat deduplication, and quality-preserving filters; integrate on
+
+### `last_swarm_critique`
+*26.08. 18:37 UTC · Quelle: critic*
+
+score=2; issues=RETRO-Organ-Umbau auf JSON-Array fehlt komplett (nur Verzeichnis-Exploration gezeigt); HANDS Ground-Truth-Automatisierung fehlt komplett (nur Verzeichnis-Exploration gezeigt); Keine Messung von 'Fakten pro Beat' (3x-Ziel) implementiert; Keine N
+
+### `last_swarm_goal`
+*26.08. 18:32 UTC · Quelle: system*
+
+Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust
+
+### `dream:20260826183237:5:c8089a`
+*26.08. 18:32 UTC · Quelle: dream*
+
+Latency on successful Nemotron calls ranges 19–223s, making synchronous calls unsuitable for tight loops without async queuing.
+
+### `dream:20260826183237:4:a5bcf7`
+*26.08. 18:32 UTC · Quelle: dream*
+
+Hand actions show high variance (0 vs 14 lines read) suggesting fragile selectors or unstable target pages rather than code defects.
+
+### `dream:20260826183237:3:aa4cd2`
+*26.08. 18:32 UTC · Quelle: dream*
+
+The simulation→revision→apply loop (5 revisions) successfully converged on a working 12-line Python artifact that tripled fact yield per beat.
+
+### `dream:20260826183237:2:1f4f9b`
+*26.08. 18:32 UTC · Quelle: dream*
+
+Nvidia Nemotron models (both 3.5-lightning and 3-ultra) exhibit the highest reliability but suffer intermittent 502 upstream overloads from Nvidia.
+
+### `dream:20260826183237:1:bebcb6`
+*26.08. 18:32 UTC · Quelle: dream*
+
+OpenRouter free-tier rate limits (429) are the primary systemic bottleneck, affecting all models indiscriminately during burst usage.
+
+### `aktuell_organfehler`
+*26.08. 18:11 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 17:40:05-18:11:48 UTC): retro -> kurz; will -> kurz; genome -> kurz; lehrer -> kurz. retro meldete einen Fehler | will meldete einen Fehler | genome meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerz
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Fakten-Ausbeute pro Beat:2`
 *26.08. 18:08 UTC · Quelle: evolution*
