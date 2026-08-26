@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-26 23:19:55",
+ "stand": "2026-08-26 23:35:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -73,9 +73,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.577,
+ "haende_quote": 0.579,
  "simulationen_angewandt": 79,
  "swarm_scores": {
   "n": 68,
@@ -84,8 +90,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 65,
-   "schnitt": 4.34
+   "n": 64,
+   "schnitt": 4.36
   },
   "bau": {
    "n": 3,

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4052 Fakten** · Stand 2026-08-26 23:20 UTC · aktualisiert bei jedem Herzschlag
+**4057 Fakten** · Stand 2026-08-26 23:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1636
+- **dream:** 1641
 - **swarm_artifact:** 999
 - **last_swarm_critique:** 507
 - **anti_pattern:** 344
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260826233453:5:877c23`
+*26.08. 23:34 UTC · Quelle: dream*
+
+Swarm execution with 3 builders + 1 critic + 1 planner failed to converge in 2 cycles, suggesting insufficient critic signal or cycle budget.
+
+### `dream:20260826233453:4:bcecb6`
+*26.08. 23:34 UTC · Quelle: dream*
+
+Calibration error of 4 points (predicted 2 vs actual 6) indicates systematic underestimation of artifact quality by the predictor.
+
+### `dream:20260826233453:3:a4ae7d`
+*26.08. 23:34 UTC · Quelle: dream*
+
+Evolutionary search improved artifact score from 6 to 9 in one generation, confirming critic-guided mutation outperforms single-pass generation.
+
+### `dream:20260826233453:2:fc20be`
+*26.08. 23:34 UTC · Quelle: dream*
+
+Nemotron-3-Ultra succeeds reliably but with extreme latency variance (36-108s), making it unsuitable for time-critical paths without async handling.
+
+### `dream:20260826233453:1:38e920`
+*26.08. 23:34 UTC · Quelle: dream*
+
+Rate limiting (429 errors) affects multiple free-tier models simultaneously, requiring provider diversity and request pacing.
 
 ### `tool:cortex-upgrade-reflex-neue-modelle-autom`
 *26.08. 23:19 UTC · Quelle: hands*

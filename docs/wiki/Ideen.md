@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 23:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 23:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm execution with 3 builders + 1 critic + 1 planner failed to converge in 2 cycles, suggesting insufficient critic signal or cycle budget.
+- Calibration error of 4 points (predicted 2 vs actual 6) indicates systematic underestimation of artifact quality by the predictor.
+- Evolutionary search improved artifact score from 6 to 9 in one generation, confirming critic-guided mutation outperforms single-pass generation.
+- Nemotron-3-Ultra succeeds reliably but with extreme latency variance (36-108s), making it unsuitable for time-critical paths without async handling.
+- Rate limiting (429 errors) affects multiple free-tier models simultaneously, requiring provider diversity and request pacing.
 - Small, fast models like poolside/laguna-s-2.1 can handle lightweight tasks efficiently when latency is critical
 - Calibration predictions are consistently off by 2x, suggesting the need for better confidence estimation mechanisms
 - Model selection should prioritize reliable endpoints over free-tier models that frequently return 429 errors
@@ -51,11 +56,6 @@
 - Model latency variance is extreme (5s to 107s) demanding per-model timeout budgets and async orchestration instead of global timeouts.
 - Simulation-driven revision (4 risks caught, 3 revisions proposed, 2 applied) prevented deployment of flawed artifacts and is a high-leverage quality g
 - Free-tier models on OpenRouter suffer systematic 429 rate limits requiring aggressive retry-with-fallback strategies rather than single-model reliance
-- Token throughput varies wildly: minimax processes ~13k tokens in 76s while nemotron handles ~1.2k–5.5k tokens in 22–116s, making latency-cost tradeoff
-- The simulation-revision loop (3 revisions applied for Hebbian synapse-quality goal) demonstrates that structured critique cycles converge even under m
-- Operating in 'conserve' metabolism with max_iterations=1 forces single-pass execution, eliminating retry loops that could absorb transient 429/502 err
-- minimax/minimax-m3:free and nvidia/nemotron-3-ultra-550b-a55b:free are the only models showing consistent success under load, but nemotron exhibits hi
-- Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making provider diversity insufficient without request pacing.
 
 ---
 
