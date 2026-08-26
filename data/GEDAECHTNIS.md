@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**3788 Fakten** · Stand 2026-08-26 17:20 UTC · aktualisiert bei jedem Herzschlag
+**3808 Fakten** · Stand 2026-08-26 17:40 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 1571
-- **swarm_artifact:** 930
-- **last_swarm_critique:** 432
-- **anti_pattern:** 322
+- **swarm_artifact:** 936
+- **last_swarm_critique:** 442
+- **anti_pattern:** 324
 - **last_swarm_goal:** 245
-- **strategy:** 182
+- **strategy:** 183
+- **hand_result:** 33
 - **aktuell_fussball_messlatte:** 33
-- **hand_result:** 32
 - **tool:** 17
 - **aktuell_organfehler:** 10
 - **creator_teaching:** 8
@@ -19,6 +19,66 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fakten-Ausbeute pro Beat:2`
+*26.08. 17:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Adaptive Multi-Strategy Fact Tripling Loop - Design an adaptive loop per beat: attempt 1 uses optimized LLM prompt for 5-10 JSON facts; if measurement shows < 3x aggregate, loop switches to HANDS symbolic extraction; if still
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fakten-Ausbeute pro Beat:1`
+*26.08. 17:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Symbolic Atomic Fact Enumeration & Consolidation - Replace RETRO's directory loading with a deterministic fact-extraction engine that outputs exactly 5-10 atomic JSON facts per beat using ontology-guided phrase extraction. In
+
+### `last_swarm_critique`
+*26.08. 17:30 UTC · Quelle: critic*
+
+score=4; issues=DREAM-Organ implementiert keinen Neuheitsfilter zur Konsolidierung ähnlicher Fakten vor dem Speichern wie in Anforderung 3 verlangt, RETRO-Organ lädt Datenverzeichnisse statt JSON-Arrays mit 5-10 atomaren Fakten pro Aufruf zu liefern, HANDS-Ext
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*26.08. 17:22 UTC · Quelle: critic*
+
+score=7; issues=
 
 ### `last_swarm_goal`
 *26.08. 17:19 UTC · Quelle: system*
