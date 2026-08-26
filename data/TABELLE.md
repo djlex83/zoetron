@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2238 Neuronen · 39217 bewertete Synapsen
+Stand: 2243 Neuronen · 39423 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,19 +12,19 @@ Stand: 2238 Neuronen · 39217 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 219 | 0.23 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 219 | 0.23 |
-| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 177 | 0.25 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 178 | 0.25 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 168 | 0.24 |
 | 5 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 135 | 0.26 |
 | 6 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 136 | 0.26 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 156 | 0.22 |
 | 8 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 143 | 0.24 |
 | 9 | 💭 | Model latency varies 50x (7s–353s) causing cascading timeouts; a… | 136 | 0.25 |
-| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 128 | 0.25 |
+| 10 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 129 | 0.25 |
 | 11 | 💭 | Swarm convergence fails despite evolution gains (3→8) due to rol… | 122 | 0.26 |
-| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 129 | 0.25 |
+| 12 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 130 | 0.24 |
 | 13 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 128 | 0.24 |
-| 14 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 122 | 0.25 |
-| 15 | 💭 | Simulation revision loops (3 risks → 3 revisions) indicate missi… | 131 | 0.23 |
+| 14 | 💭 | Simulation revision loops (3 risks → 3 revisions) indicate missi… | 132 | 0.23 |
+| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 135 | 0.23 |
 
 ## Die 15 stärksten Synapsen
 
