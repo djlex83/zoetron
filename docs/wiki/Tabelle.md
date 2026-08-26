@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2119 Neuronen · 35513 bewertete Synapsen
+Stand: 2124 Neuronen · 35659 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -24,7 +24,7 @@ Stand: 2119 Neuronen · 35513 bewertete Synapsen
 | 12 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 125 | 0.24 |
 | 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 119 | 0.25 |
 | 14 | 💭 | Simulation revision loops (3 risks → 3 revisions) indicate missi… | 128 | 0.23 |
-| 15 | 💭 | Missing interface contract validation risks AttributeError failu… | 117 | 0.25 |
+| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 130 | 0.23 |
 
 ## Die 15 stärksten Synapsen
 

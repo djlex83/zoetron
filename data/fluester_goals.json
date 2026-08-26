@@ -175,7 +175,7 @@
   "why": "Erfindung des Erschaffers: das Zoem als kleinste vererbbare Einheit geprüfter Maschinen-Erfahrung - Kultur statt nur Gene. Baue zoem.py mit drei Teilen: 1) EXPORT: jede Lektion und jedes Anti-Pattern mit Score-Beleg wird als einzelne Datei nach data/zoeme/out/ exportiert - Felder: inhalt (Klartext), beweisrezept (ausführbarer Test), herkunft (Organismus-ID, Zeitpunkt, Quell-Ereignis), stammbaum (Liste der Vorbesitzer). 2) IMPORT mit IMMUNSYSTEM: fremde Zoeme aus data/zoeme/in/ landen zuerst in Quarantäne; ins Gedächtnis übernommen wird nur, was das eigene Beweisrezept lokal besteht - Abgelehntes wird mit Grund protokolliert. 3) EXPERIMENT: dokumentiere den ersten Erbgang - Organismus B übernimmt ein Anti-Pattern-Zoem von Organismus A und vermeidet nachweisbar einen Fehler, den er selbst nie gemacht hat. Fertig wenn: Export und Import mit Logbeleg laufen, mindestens ein Zoem die Prüfung besteht und eines abgelehnt wird, und der Erbgang A nach B als Bericht in docs/ liegt. Hinweis: die zweite Organismus-Instanz startet der Erschaffer - Teamarbeit.",
   "signal": "gap",
   "_done": false,
-  "_versuche": 1
+  "_versuche": 2
  },
  {
   "title": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren",

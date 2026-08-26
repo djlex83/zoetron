@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 02:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 02:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Score fields are frequently null on completed acts, making it impossible to evaluate whether goals genuinely succeeded versus merely terminated.
+- Repeated prune runs report 0 facts/events pruned while memory keeps growing, indicating the pruning criteria are too conservative to actually bound me
+- Reflex-mode actions converge reliably and cheaply (0.2s hand_actions, converged=true), while deliberative model calls cost 8-17s, so routing well-know
+- The system's own drive goals already identify the two core failure modes — untested proposals and unexplained model errors — meaning self-generated go
+- Skill proposals are accumulating far faster than they are being tested (5+ new proposals per cycle vs. near-zero trials), so proposal generation witho
 - Latency variance is extreme (4.7s to 160.4s on the same model) and correlates loosely with token counts, so latency alone should not drive prioritizat
 - Swarm convergence failed after 2 cycles (converged=false) yet the run was accepted at score 6, indicating a missing rule for when to iterate versus ac
 - A destructive-operation guard correctly blocked the tool 'lebender-steckbrief-die-biografie-als-al' (subprocess needs human approval), revealing that 
@@ -51,11 +56,6 @@
 - Calibration error was 4 points on a predicted 4 vs. actual 8, showing this system systematically under-predicts goal outcomes by roughly 2x and should
 - Rate-limit failures (429) hit two models back-to-back on the same provider (openrouter.ai), so provider-level throttling—not model choice—was the root
 - The swarm converged in a single cycle (score 8) when simulation-driven revisions were applied before execution, confirming that pre-flight simulation 
-- API-level failures (429 Too Many Requests) are an external resource constraint not covered by any retry/backoff rule yet, unlike internal code errors 
-- The simulation 'revise' step with 2 applied revisions preceded a green tor on cycle 1, confirming pre-flight adversarial review converts failures into
-- Metabolic conserve-mode (stress 0.814, max 1 iteration) conflicts with goals that need multiple correction loops, causing Score-1 results to go untrea
-- The 'whisper_geparkt' pattern shows tasks fail by stalling after 3 attempts without convergence rather than by explicit rejection, indicating a missin
-- Skill proposals accumulate faster than they are tested (multiple untested proposals per cycle), so the bottleneck is validation capacity, not idea gen
 
 ---
 
