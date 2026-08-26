@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 07:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 10×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 8×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 7×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 7×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-mode actions complete successfully but record score=null, so success is claimed without any quality signal to compare against future attempts.
+- LLM call latency fluctuates between roughly 10s and 17s for similar token counts, suggesting per-call variance that timeout budgets could absorb.
+- Skill proposals are generated at high volume every cycle but almost none are implemented or tested, so the proposal pipeline is a write-only sink.
+- Drive goals about understanding model errors and rejected tools recur across multiple dream cycles unchanged, showing goals persist without measurable
+- Prune runs repeatedly report zero facts and events pruned, indicating the retention policy is effectively a no-op and memory is growing without curati
 - Latency varies by two orders of magnitude across calls (3.6s to 149.7s) and correlates with token volume, supporting tiered timeout budgets keyed to t
 - Skill proposals accumulate faster than they get tested (drive goal explicitly notes few were tried), meaning the pipeline needs an execution budget fo
 - Critic output being unparsable was a direct failure cause, so structured-output constraints or a repair-and-reparse step on critic responses would rem
@@ -51,11 +56,6 @@
 - Under conserve mode (stress 0.621, max_iterations=1) the swarm still needed 2 cycles plus evolution, indicating that budget limits set before simulati
 - Evolution was triggered not by a weak solution but by an unparsable critic output, meaning output-format failures in the critic role waste a full evol
 - The model consistently overpredicts its own performance (calibration error of +2: predicted 7 vs actual 5), so predicted scores should be discounted b
-- Metabolism stress of 0.621 triggered conserve mode (max_tasks: 3), yet the system still ran multiple model calls — budget enforcement should gate task
-- Swarm convergence in 1 cycle with score ≥ 8 makes evolution unnecessary; role configuration (planner/builder/critic ×1) is a reusable template for sim
-- Calibration error was small (abs_error 1 on a 7→8 prediction), suggesting per-goal-type calibration baselines would tighten predictions further.
-- Destructive operations are rejected at execution time despite being fully planned, wasting invested work because operation-class risk is only checked 
-- Goals that combine simulation with actual execution (hat_code: true) converge fast and score high (8), confirming the simulate→revise→apply loop as th
 
 ---
 

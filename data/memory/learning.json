@@ -1,6 +1,6 @@
 {
- "stand": "2026-08-26 07:31:29",
- "ereignisse_ausgewertet": 2252,
+ "stand": "2026-08-26 07:36:04",
+ "ereignisse_ausgewertet": 2268,
  "werkzeuge": [
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
@@ -37,9 +37,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "simulationen-häufiger-in-handlungen-umse.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.582,
+ "haende_quote": 0.584,
  "simulationen_angewandt": 53,
  "swarm_scores": {
   "n": 46,
