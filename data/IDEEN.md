@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 00:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 00:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,10 @@
 - Explore unknown territory *(wieder aufgegriffen: 3×)*
 - Test a capability limit *(wieder aufgegriffen: 3×)*
 - Connect two distant memories *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 2×)*
+- Mehr gute Ideen wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen
 - Alte Fußball-Erfahrung mit Schwarmzielen verbinden
 - Modellfehler analysieren und beheben
@@ -37,25 +38,24 @@
 - Modell-Fehler deutlich reduzieren
 - Vorgeschlagene Fähigkeiten wirklich nutzen
 - Simulationen in echtes Handeln überführen
-- Täglich neue Fähigkeiten üben
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Whispers parked after 3 failed attempts (e.g., Exemplar-Bank) indicate retry loops without escalation, so blocked items need an explicit decision path
+- The recurring pattern across cycles is that proposals and critiques accumulate but are never executed — the bottleneck is application/testing of ideas
+- Calibration shows systematic overconfidence (predicted 4 vs actual 2), so predictions should be discounted by roughly half or anchored to past per-goa
+- The swarm cycle failed at the artifact-execution stage (hand_action exit 1), meaning generated code is never smoke-tested before the green-light check
+- Both model failures were HTTP 429 rate-limit errors from OpenRouter's free tier, so the root cause is missing exponential backoff and provider fallbac
+- The parked whisper 'Exemplar-Bank' has exhausted 3 attempts without convergence, making it a blocking decision point for the creator rather than somet
+- The drive_goal 'Gründe für die zwei Modellfehler finden' targets model calls that show no error field at all, so the failure cause must be inferred fr
+- Skill proposals are accumulating faster than they are tested: five proposals were logged in this window but zero were executed, confirming the proposa
+- Successful hand_actions take 0.18-3.9s while all failures complete in under 0.5s (except the timeout), meaning sub-100ms exit-1 results are a reliable
+- hand_action failures cluster into two distinct signatures: instant exit-1 failures (<0.05s) indicating bad arguments or missing preconditions, and one
 - Pruning removed nothing (0 facts, 0 events), suggesting memory growth is unchecked while attention is spent on low-yield consolidation cycles.
 - Five skill proposals were generated in this window but zero were executed or tested, confirming a persistent proposal-to-adoption gap that proposal-ag
 - The single 30s timeout is an outlier failure mode distinct from fast exits and needs its own handling path (timeout budget + retry), as already propos
 - Failures are interleaved between successes rather than clustered, so they likely stem from specific action types or argument shapes, not a systemic en
 - All hand_action failures except one exited within 0.03s, indicating immediate precondition/argument validation rejections rather than mid-execution er
-- Latency variance on model calls (2.4s vs 22.4s for similar token counts) correlates with output size, so long-form generation tasks should be budgeted
-- The swarm finished with score 4 but converged=false after only 2 cycles and 4 of 5 revisions applied, suggesting convergence is being cut short by cyc
-- Selbstdiagnose reported zero organ defects in the same window where ~40% of hand_actions failed, revealing a monitoring blind spot: action-layer failu
-- The 30s timeout on one hand_action shows that retry logic must distinguish between instant rejections (fix inputs first) and hangs (abort and change a
-- Fast-failing hand_actions (exit 1 at ~0.03s) cluster together, indicating a systematic precondition failure (e.g., missing file, bad arguments, or wro
-- Skill proposals are accumulating faster than they are tested (the 'stale' drive signal confirms this), creating an unvalidated backlog that risks comp
-- Model latency is highly bimodal (3–22s typical vs. one 372s spike with 6238 output tokens), so long-generation tasks need an explicit time budget or s
-- Simulation verdicts are consistently 'revise' but only a fraction of proposed revisions get applied (5→1, 4→3), meaning the revision-application step 
-- The swarm repeatedly terminates at score 5 without converging after only 2 cycles, indicating the termination criterion rewards 'acceptable' over 'con
-- hand_action is the most fragile subsystem: two distinct failure modes occurred (exit 1 in 0.03s and a 25s timeout), so every shell invocation needs bo
 
 ---
 

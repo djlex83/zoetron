@@ -1,24 +1,154 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**2769 Fakten** · Stand 2026-08-26 00:13 UTC · aktualisiert bei jedem Herzschlag
+**2795 Fakten** · Stand 2026-08-26 00:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1187
-- **swarm_artifact:** 757
-- **anti_pattern:** 246
-- **last_swarm_goal:** 191
-- **last_swarm_critique:** 183
-- **strategy:** 144
+- **dream:** 1197
+- **swarm_artifact:** 761
+- **anti_pattern:** 250
+- **last_swarm_goal:** 193
+- **last_swarm_critique:** 185
+- **strategy:** 146
 - **aktuell_fussball_messlatte:** 30
-- **hand_result:** 8
+- **hand_result:** 9
 - **creator_teaching:** 8
 - **tool:** 6
-- **aktuell_organfehler:** 3
+- **aktuell_organfehler:** 4
 - **frontier:** 3
 - **semantic_organ:** 1
 - **last_critique:** 1
 - **last_goal:** 1
 
 ---
+
+### `strategy:lokaler_schüler__das_erste_mal_lernt_das_gehirn_se`
+*26.08. 00:24 UTC · Quelle: evolution*
+
+Umgekehrter Aufbau: Test-first / Executability-driven Development - das Urteil der Sandbox ist der e - Der kritische Vertragsbruch war doppelgipflig: Zeichenlimit ueberschritten UND nicht ausgefuehrt. Variante 2 adressiert beide Wurzeln prozessual statt nur sy
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Lokaler Schüler: das ers:1`
+*26.08. 00:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Modularisierung: Duenn orchestriertes Hauptskript + externe Ressourcen statt mon - Verlasse das Prinzip 'alles im einen Artefakt'. Das Artefakt selbst bleibt bewusst duenn (<10000 Zeichen): es enthaelt ausschliesslich den Ein
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Lokaler Schüler: das ers:0`
+*26.08. 00:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Minimalismus zuerst: Hartes Zeichenbudget-Management als Designprinzip statt Nac - Baue das Artefakt von Grund auf mit einem strikten Budget von maximal 15000 Zeichen (25% Sicherheitspuffer unter dem 20000er-Limit). Strategie
+
+### `hand_result:Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)`
+*26.08. 00:24 UTC · Quelle: hands*
+
+{"ok": false, "stderr": "  File \"/workspace/zoetron/data/hands_workspace/action_1787703884071.py\", line 357\n    ANLEITUNG_MD = \"\"\"\\\n                   ^\nSyntaxError: unterminated triple-quoted string literal (detected at line"}
+
+### `strategy:lokaler_schüler__das_erste_mal_lernt_das_gehirn_se`
+*26.08. 00:24 UTC · Quelle: evolution*
+
+Analogy-Driven Mental Model (Bottom-Up, Concept First) - For a first-time learner, Variant 1's analogy (frozen encyclopedia + sticky-note adapters) maps 1:1 to LoRA mechanics — frozen W, low-rank BA, alpha scaling, target modules — givin
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Lokaler Schüler: das ers:2`
+*26.08. 00:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Experiment-Driven Discovery Lab (Empirical, Hypothesis Loop) - Frame the session as a series of falsifiable mini-experiments the student designs themselves: 'Hypothesis: rank 4 vs rank 32 changes output quality' → run both on
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Lokaler Schüler: das ers:0`
+*26.08. 00:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Guided Notebook Walkthrough (Top-Down, Copy-Paste First) - Instead of explaining LoRA theory first, deliver a single ready-to-run Jupyter/Colab notebook that the student executes line by line. Each cell is annotated in plain 
+
+### `swarm_artifact:Draft deliverable for: Lokaler Schüler: das erste Mal lernt `
+*26.08. 00:23 UTC · Quelle: builder*
+
+[score 1] Das Artefakt ist ein vollständiges Trainingspaket als ein einziges lauffähiges Skript (`schueler_lora.py`) mit fünf Unterkommandos: `anleitung`, `check`, `prepare`, `train`, `test` – all
+
+### `last_swarm_critique`
+*26.08. 00:23 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil ist bindend: LAEUFT NICHT - Artefakt ist mit 20045 Zeichen ueber dem Limit von 20000 und wurde NICHT ausgefuehrt; das ist ein harter Vertragsbruch.; Die Kernkommandos 'train' und 'test' liegen im nicht-ausgefuehrten Teil - die ze
+
+### `swarm_artifact:Draft deliverable for: Lokaler Schüler: das erste Mal lernt `
+*26.08. 00:23 UTC · Quelle: builder*
+
+Das Artefakt ist ein vollständiges Trainingspaket als ein einziges lauffähiges Skript (`schueler_lora.py`) mit fünf Unterkommandos: `anleitung`, `check`, `prepare`, `train`, `test` – alles ohne Netz-Z
+
+### `swarm_artifact:Draft deliverable for: Lokaler Schüler: das erste Mal lernt `
+*26.08. 00:22 UTC · Quelle: builder*
+
+[score 5] Das Artefakt erzeugt das komplette LoRA-Trainingspaket (Trainingsskript, Merge-Skript, Konfiguration, Benchmark, Ollama-Modelfile, Schritt-für-Schritt-Anleitung) als ausführbare Dateien 
+
+### `last_swarm_critique`
+*26.08. 00:22 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `swarm_artifact:Draft deliverable for: Lokaler Schüler: das erste Mal lernt `
+*26.08. 00:21 UTC · Quelle: builder*
+
+Das Artefakt erzeugt das komplette LoRA-Trainingspaket (Trainingsskript, Merge-Skript, Konfiguration, Benchmark, Ollama-Modelfile, Schritt-für-Schritt-Anleitung) als ausführbare Dateien im Ordner `lor
+
+### `last_swarm_goal`
+*26.08. 00:19 UTC · Quelle: system*
+
+Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
+
+### `dream:20260826001938:5:b17a4f`
+*26.08. 00:19 UTC · Quelle: dream*
+
+Whispers parked after 3 failed attempts (e.g., Exemplar-Bank) indicate retry loops without escalation, so blocked items need an explicit decision path instead of silent parking.
+
+### `dream:20260826001938:4:9a0d1c`
+*26.08. 00:19 UTC · Quelle: dream*
+
+The recurring pattern across cycles is that proposals and critiques accumulate but are never executed — the bottleneck is application/testing of ideas, not idea generation.
+
+### `dream:20260826001938:3:2b4b15`
+*26.08. 00:19 UTC · Quelle: dream*
+
+Calibration shows systematic overconfidence (predicted 4 vs actual 2), so predictions should be discounted by roughly half or anchored to past per-goal-type accuracy.
+
+### `dream:20260826001938:2:eb6a50`
+*26.08. 00:19 UTC · Quelle: dream*
+
+The swarm cycle failed at the artifact-execution stage (hand_action exit 1), meaning generated code is never smoke-tested before the green-light check, wasting a full expensive cycle.
+
+### `dream:20260826001938:1:429ea5`
+*26.08. 00:19 UTC · Quelle: dream*
+
+Both model failures were HTTP 429 rate-limit errors from OpenRouter's free tier, so the root cause is missing exponential backoff and provider fallback, not model quality.
+
+### `last_swarm_goal`
+*26.08. 00:17 UTC · Quelle: system*
+
+Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)
+
+### `dream:20260826001747:5:c71820`
+*26.08. 00:17 UTC · Quelle: dream*
+
+The parked whisper 'Exemplar-Bank' has exhausted 3 attempts without convergence, making it a blocking decision point for the creator rather than something further autonomous retries will resolve.
+
+### `dream:20260826001747:4:31ed0b`
+*26.08. 00:17 UTC · Quelle: dream*
+
+The drive_goal 'Gründe für die zwei Modellfehler finden' targets model calls that show no error field at all, so the failure cause must be inferred from latency/token anomalies (e.g., the 102.1s / 4338-token call) rather than explicit error messages.
+
+### `dream:20260826001747:3:0fc445`
+*26.08. 00:17 UTC · Quelle: dream*
+
+Skill proposals are accumulating faster than they are tested: five proposals were logged in this window but zero were executed, confirming the proposal-aging problem is already active.
+
+### `dream:20260826001747:2:ea052d`
+*26.08. 00:17 UTC · Quelle: dream*
+
+Successful hand_actions take 0.18-3.9s while all failures complete in under 0.5s (except the timeout), meaning sub-100ms exit-1 results are a reliable early signal to abort and re-plan rather than retry blindly.
+
+### `dream:20260826001747:1:7a3127`
+*26.08. 00:17 UTC · Quelle: dream*
+
+hand_action failures cluster into two distinct signatures: instant exit-1 failures (<0.05s) indicating bad arguments or missing preconditions, and one 30s timeout indicating a hung subprocess, so retry logic must treat them differently.
+
+### `aktuell_organfehler`
+*26.08. 00:14 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-26 00:13:47 UTC): push -> kurz. push meldete einen Fehler Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Organ Herz
 
 ### `dream:20260826001316:5:fc274f`
 *26.08. 00:13 UTC · Quelle: dream*
