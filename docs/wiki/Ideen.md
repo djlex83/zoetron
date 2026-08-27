@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 22:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 22:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,9 +28,9 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation→hand_action→tor cycle lacks artifact validation, risking promotion of unverified or broken skills into production.
+- Rolling p95 latency and error-rate monitoring enables early detection of model degradation before it impacts task completion.
+- Exponential backoff with jitter and circuit-breaking must be applied uniformly across all model calls to prevent cascading failures.
+- nvidia/nemotron-3-ultra-550b consistently succeeds with acceptable latency (23-39s), making it a reliable primary model.
+- 429 errors on z-ai/glm-5.2:free are recurring and predictable, indicating a need for proactive rate-limit handling rather than reactive retries.
 - Tool-refusal reflexes work in isolation but do not generalize across similar failure modes without explicit learning.
 - Dream-cycle insights are not consistently translated into actionable model-selection heuristics or routing policies.
 - Skill proposals are generated frequently but rarely validated or deployed, creating a gap between ideation and execution.
@@ -51,11 +56,6 @@
 - Five separate skill proposals redundantly address model routing, revealing a proposal-to-deployment gap where ideas accumulate but never ship.
 - The only working model (nvidia/nemotron-3-ultra) exhibits 15-23s latency, which stalls swarm cycles and violates sub-10s planning budgets.
 - Free-tier model z-ai/glm-5.2:free fails 100% of the time with 429 rate-limit errors, making it unusable without automated failover.
-- The reflex-driven skill-training tool successfully synthesized proposals but lacks a promotion pipeline to production.
-- Self-diagnosis capability has atrophied from disuse while model reliability degrades.
-- Existing skill proposals (router, backoff, monitoring, bootstrap, health dashboard) remain unexecuted despite clear need.
-- Absence of implemented circuit-breakers and backoff turns transient overloads into cascading total outages.
-- Free-tier models share a common OpenRouter quota bucket causing simultaneous 429 failures across all providers.
 
 ---
 

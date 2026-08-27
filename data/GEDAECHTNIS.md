@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4798 Fakten** · Stand 2026-08-27 22:16 UTC · aktualisiert bei jedem Herzschlag
+**4803 Fakten** · Stand 2026-08-27 22:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1987
+- **dream:** 1992
 - **swarm_artifact:** 1201
 - **last_swarm_critique:** 544
 - **anti_pattern:** 399
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827222126:5:56a9f6`
+*27.08. 22:21 UTC · Quelle: dream*
+
+The simulation→hand_action→tor cycle lacks artifact validation, risking promotion of unverified or broken skills into production.
+
+### `dream:20260827222126:4:32644b`
+*27.08. 22:21 UTC · Quelle: dream*
+
+Rolling p95 latency and error-rate monitoring enables early detection of model degradation before it impacts task completion.
+
+### `dream:20260827222126:3:098fde`
+*27.08. 22:21 UTC · Quelle: dream*
+
+Exponential backoff with jitter and circuit-breaking must be applied uniformly across all model calls to prevent cascading failures.
+
+### `dream:20260827222126:2:551ffd`
+*27.08. 22:21 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b consistently succeeds with acceptable latency (23-39s), making it a reliable primary model.
+
+### `dream:20260827222126:1:97984b`
+*27.08. 22:21 UTC · Quelle: dream*
+
+429 errors on z-ai/glm-5.2:free are recurring and predictable, indicating a need for proactive rate-limit handling rather than reactive retries.
 
 ### `dream:20260827221514:5:72b6ba`
 *27.08. 22:15 UTC · Quelle: dream*
