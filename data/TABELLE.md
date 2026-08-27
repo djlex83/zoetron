@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2832 Neuronen · 64789 bewertete Synapsen
+Stand: 2837 Neuronen · 65028 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,17 +12,17 @@ Stand: 2832 Neuronen · 64789 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 281 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 281 | 0.25 |
-| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 217 | 0.24 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 218 | 0.24 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 220 | 0.23 |
-| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 210 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 201 | 0.24 |
+| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 212 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 202 | 0.24 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 191 | 0.23 |
-| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 171 | 0.26 |
+| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 172 | 0.26 |
 | 9 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 168 | 0.24 |
 | 10 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 144 | 0.28 |
-| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 180 | 0.23 |
-| 12 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 164 | 0.25 |
-| 13 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 162 | 0.25 |
+| 11 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 166 | 0.25 |
+| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 180 | 0.23 |
+| 13 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 163 | 0.25 |
 | 14 | 💭 | Calibration error of 4 points (predicted 2 vs actual 6) indicate… | 143 | 0.28 |
 | 15 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 155 | 0.25 |
 

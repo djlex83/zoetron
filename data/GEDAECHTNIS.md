@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4298 Fakten** · Stand 2026-08-27 06:18 UTC · aktualisiert bei jedem Herzschlag
+**4308 Fakten** · Stand 2026-08-27 06:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1740
-- **swarm_artifact:** 1069
-- **last_swarm_critique:** 520
+- **dream:** 1745
+- **swarm_artifact:** 1071
+- **last_swarm_critique:** 521
 - **anti_pattern:** 367
-- **last_swarm_goal:** 269
+- **last_swarm_goal:** 270
 - **strategy:** 204
 - **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 24
+- **tool:** 25
 - **aktuell_organfehler:** 14
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeitsvorschläge-in-echte-skills-umw`
+*27.08. 06:31 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeitsvorschläge in echte Skills umwandeln'. Datei: data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*27.08. 06:31 UTC · Quelle: critic*
+
+score=8; issues=
+
+### `last_swarm_goal`
+*27.08. 06:28 UTC · Quelle: system*
+
+Fähigkeitsvorschläge in echte Skills umwandeln
+
+### `dream:20260827062518:5:64bb11`
+*27.08. 06:25 UTC · Quelle: dream*
+
+Memory pruning removed zero items, suggesting current retention policies are appropriate but also that stale low-signal entries may persist indefinitely.
+
+### `dream:20260827062518:4:7a09e2`
+*27.08. 06:25 UTC · Quelle: dream*
+
+Drive goals accumulate but lack automatic scheduling or convergence tracking, causing high-value objectives (model fixing, skill activation) to stall.
+
+### `dream:20260827062518:3:c7ce68`
+*27.08. 06:25 UTC · Quelle: dream*
+
+Documentation drift was detected and auto-corrected via a reflex action, proving that code-derived metrics can enforce consistency without LLM calls.
+
+### `dream:20260827062518:2:dbd0f3`
+*27.08. 06:25 UTC · Quelle: dream*
+
+The poolside/laguna-s-2.1:free model consistently succeeds with ~8s latency, making it a reliable primary candidate for critical paths.
+
+### `dream:20260827062518:1:48b56e`
+*27.08. 06:25 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) errors dominate model failures, indicating reliance on free-tier endpoints without backoff or fallback logic.
 
 ### `tool:entfernte-erinnerungen-verknüpfen`
 *27.08. 06:18 UTC · Quelle: hands*

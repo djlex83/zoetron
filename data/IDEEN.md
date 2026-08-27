@@ -1,13 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 06:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 06:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Develop a latency-aware model router that records p95 latency per model and selects faster models for short ta *(hatte die Idee 3×)*
 - Add an auto-linker that automatically creates edges between new artifacts, goals, and related facts in the kno *(hatte die Idee 3×)*
-- failure_context_capture.py: on any non-zero exit or model error, immediately persist exit code, stderr tail, c *(hatte die Idee 2×)*
 - Skill 'rate_limit_backoff': when any model returns 429, pause all model calls for an exponential backoff windo *(hatte die Idee 2×)*
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
@@ -20,11 +19,12 @@
 - Develop a skill lifecycle tracker that monitors proposed skills and automatically promotes validated ones into *(hatte die Idee 2×)*
 - Build a strict pre-execution artifact validator that checks code size, imports, and entrypoints against platfo *(hatte die Idee 2×)*
 - Design a metabolism-aware task scheduler that automatically scales down task complexity and iteration limits w *(hatte die Idee 2×)*
+- Implement a model router that tags each model with (reliability, latency_p95, rate_limit_rps) and selects via  *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning removed zero items, suggesting current retention policies are appropriate but also that stale low-signal entries may persist indefinite
+- Drive goals accumulate but lack automatic scheduling or convergence tracking, causing high-value objectives (model fixing, skill activation) to stall.
+- Documentation drift was detected and auto-corrected via a reflex action, proving that code-derived metrics can enforce consistency without LLM calls.
+- The poolside/laguna-s-2.1:free model consistently succeeds with ~8s latency, making it a reliable primary candidate for critical paths.
+- Rate limiting (429) and upstream overload (502) errors dominate model failures, indicating reliance on free-tier endpoints without backoff or fallback
 - Metabolic stress signals (high load, rate limits) are detected but not yet wired to automatic complexity downscaling.
 - Skill proposals accumulate without a lifecycle gate: validation, promotion, and retirement remain manual, stalling capability growth.
 - Reflex-driven tool use succeeds on concrete, bounded tasks (doc consistency) where LLM planning adds latency and failure risk.
@@ -51,11 +56,6 @@
 - Semantic deduplication is necessary for idea boards and DRIVE goals to prevent redundant processing of conceptually identical tasks.
 - The 'Zoem-Protokoll' simulation failed to converge after three attempts, suggesting the underlying algorithm or parameter space needs refinement befor
 - Repeated 429 errors across multiple free-tier models indicate rate-limiting is systemic, not model-specific, requiring request throttling or fallback 
-- Self-diagnosis reports zero organ errors while model failures cascade, revealing a monitoring blind spot: external dependency health is not tracked as
-- Destructive tool operations (subprocess) are hard-gated by human approval, creating a mandatory handoff boundary that planners must anticipate.
-- Swarm simulations converge slowly (score 7, not converged after 2 cycles) because revision loops lack persistent checkpoints, wasting iterations on re
-- Latency variance for identical models (11s vs 73s) indicates upstream queue saturation, not model slowness, requiring queue-aware routing.
-- Free-tier API endpoints exhibit systemic 429 rate-limiting that correlates across providers, making single-model reliance a reliability anti-pattern.
 
 ---
 
