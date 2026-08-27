@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4529 Fakten** · Stand 2026-08-27 13:54 UTC · aktualisiert bei jedem Herzschlag
+**4535 Fakten** · Stand 2026-08-27 13:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1848
+- **dream:** 1853
 - **swarm_artifact:** 1137
 - **last_swarm_critique:** 532
 - **anti_pattern:** 379
@@ -11,7 +11,7 @@
 - **hand_result:** 46
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 31
-- **aktuell_organfehler:** 17
+- **aktuell_organfehler:** 18
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827135727:5:a26e11`
+*27.08. 13:57 UTC · Quelle: dream*
+
+Simulation verdict=revise with 2 risks indicates task prioritization logic needs refinement before execution
+
+### `dream:20260827135727:4:203555`
+*27.08. 13:57 UTC · Quelle: dream*
+
+Metabolism stress=1.0 with max_tasks=3 forces prioritization of reliable models over experimental ones
+
+### `dream:20260827135727:3:5b1e49`
+*27.08. 13:57 UTC · Quelle: dream*
+
+Endpoint returning 200 with no choices (Nvidia 502) reveals silent failure mode requiring explicit response validation
+
+### `dream:20260827135727:2:466e18`
+*27.08. 13:57 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b shows high latency variance (15s-229s) suggesting load balancing issues under stress
+
+### `dream:20260827135727:1:9b04a0`
+*27.08. 13:57 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting that requires exponential backoff or model rotation
+
+### `aktuell_organfehler`
+*27.08. 13:54 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-27 13:52:14 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `tool:effizienter-werden`
 *27.08. 13:31 UTC · Quelle: hands*

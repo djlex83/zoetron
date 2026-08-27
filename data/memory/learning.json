@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 13:53:41",
+ "stand": "2026-08-27 13:59:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -24,6 +24,12 @@
    "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
    "laeufe": 4,
    "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -52,12 +58,6 @@
   },
   {
    "tool": "alte-traumideen-mit-strategien-verbinden.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -100,16 +100,16 @@
   }
  ],
  "haende_quote": 0.59,
- "simulationen_angewandt": 69,
+ "simulationen_angewandt": 68,
  "swarm_scores": {
-  "n": 55,
+  "n": 54,
   "best": 9.0,
-  "schnitt": 4.53
+  "schnitt": 4.48
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 52,
-   "schnitt": 4.58
+   "n": 51,
+   "schnitt": 4.51
   },
   "bau": {
    "n": 2,

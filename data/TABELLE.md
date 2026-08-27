@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2980 Neuronen · 73103 bewertete Synapsen
+Stand: 2986 Neuronen · 73446 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,18 +12,18 @@ Stand: 2980 Neuronen · 73103 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 293 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 293 | 0.25 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 232 | 0.24 |
-| 4 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 227 | 0.24 |
-| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 228 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 219 | 0.23 |
-| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 195 | 0.26 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 228 | 0.24 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 232 | 0.24 |
+| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 229 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 220 | 0.23 |
+| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 196 | 0.26 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 203 | 0.23 |
-| 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 182 | 0.25 |
+| 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 183 | 0.25 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 192 | 0.23 |
-| 11 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 174 | 0.25 |
+| 11 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 175 | 0.25 |
 | 12 | 💭 | Calibration predicted score 5 but actual was 8, revealing system… | 185 | 0.23 |
 | 13 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 172 | 0.25 |
-| 14 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 173 | 0.24 |
+| 14 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 174 | 0.24 |
 | 15 | 💭 | Calibration error of 4 points (predicted 2 vs actual 6) indicate… | 150 | 0.27 |
 
 ## Die 15 stärksten Synapsen
