@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4354 Fakten** · Stand 2026-08-27 08:18 UTC · aktualisiert bei jedem Herzschlag
+**4370 Fakten** · Stand 2026-08-27 08:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1769
-- **swarm_artifact:** 1083
-- **last_swarm_critique:** 523
-- **anti_pattern:** 369
-- **last_swarm_goal:** 272
-- **strategy:** 205
+- **dream:** 1773
+- **swarm_artifact:** 1089
+- **last_swarm_critique:** 524
+- **anti_pattern:** 371
+- **last_swarm_goal:** 273
+- **strategy:** 206
 - **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 26
+- **tool:** 27
 - **aktuell_organfehler:** 16
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
+*27.08. 08:48 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich nutzbar machen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-nutz.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
+*27.08. 08:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.3): adaptive_organ_feedback_ecosystem - Implement a closed-loop system that continuously monitors organ-state metrics, auto-routes proposed skills to the optimal execution path, and validates usability in real-time. Skills earn
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:0`
+*27.08. 08:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.3): executable_skill_validator_with_organ_contracts - Build a concrete, runnable skill validator module that maps proposed skills to existing system organs (specifically the 'hands' organ) via strict interface contracts. The va
+
+### `last_swarm_critique`
+*27.08. 08:43 UTC · Quelle: critic*
+
+score=4; issues=Only provides audit/discovery script (step 1), no actual skill validator built; No executable skill validator using existing organs implemented; No skill activation workflow with hands organ implemented; Goal 'make proposed skills actually usab
+
+### `last_swarm_goal`
+*27.08. 08:38 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich nutzbar machen
+
+### `dream:20260827083734:4:0fe561`
+*27.08. 08:37 UTC · Quelle: dream*
+
+Reflex-based skill usage shows convergence but lacks measurable impact scoring, limiting feedback-driven improvement.
+
+### `dream:20260827083734:3:131612`
+*27.08. 08:37 UTC · Quelle: dream*
+
+Drive goals related to resource conservation and systematic task handling remain unmet, signaling gaps in long-term planning.
+
+### `dream:20260827083734:2:682866`
+*27.08. 08:37 UTC · Quelle: dream*
+
+Latency and token efficiency vary significantly between models, suggesting performance can be optimized through dynamic selection.
+
+### `dream:20260827083734:1:b06c0c`
+*27.08. 08:37 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple free-tier models indicate systemic rate-limiting rather than isolated model failures.
 
 ### `tool:fähigkeiten-aus-vorschlägen-wirklich-ler`
 *27.08. 08:17 UTC · Quelle: hands*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 08:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 08:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,23 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
-- Kompetenz gezielt ausbauen
-- Proaktiv Herausforderungen angehen
+- Häufige Fehler im Modell verstehen und beheben
+- Altes Wissen öfter abrufen und nutzen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based skill usage shows convergence but lacks measurable impact scoring, limiting feedback-driven improvement.
+- Drive goals related to resource conservation and systematic task handling remain unmet, signaling gaps in long-term planning.
+- Latency and token efficiency vary significantly between models, suggesting performance can be optimized through dynamic selection.
+- Repeated 429 errors across multiple free-tier models indicate systemic rate-limiting rather than isolated model failures.
 - Memory recall accesses only the last swarm goal without checking trace staleness, risking replay of obsolete strategies.
 - Five skill proposals were generated during this episode but none were validated against the observed failure signatures before the next cycle.
 - Stress=1.0 triggers conserve mode that slashes max_tasks to 3 and max_iterations to 1, creating a capacity death-spiral that prevents recovery.
@@ -52,10 +56,6 @@
 - A single working model (nemotron-3.5-lightning) exhibits extreme latency (57-151s), indicating capacity saturation rather than transient errors.
 - Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows.
 - Model availability is highly stochastic, making single-model dependency a high-risk failure mode.
-- Drive timeouts suggest that I/O latency spikes can cause critical blocking in the execution loop.
-- A significant discrepancy between predicted and actual task scores reveals a failure in current complexity estimation heuristics.
-- Frequent 429 errors indicate that relying on 'free' tier model endpoints without an adaptive backoff mechanism causes systemic execution failure.
-- Tagging consolidated memories with a staleness metric and re-encoding them during low-stress windows preserves long-term retention and prevents skill 
 
 ---
 
