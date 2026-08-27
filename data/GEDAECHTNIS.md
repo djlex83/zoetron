@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4434 Fakten** · Stand 2026-08-27 10:40 UTC · aktualisiert bei jedem Herzschlag
+**4449 Fakten** · Stand 2026-08-27 10:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1813
-- **swarm_artifact:** 1101
-- **last_swarm_critique:** 526
+- **dream:** 1818
+- **swarm_artifact:** 1107
+- **last_swarm_critique:** 527
 - **anti_pattern:** 375
-- **last_swarm_goal:** 275
+- **last_swarm_goal:** 276
 - **strategy:** 208
 - **hand_result:** 44
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 28
-- **aktuell_organfehler:** 16
+- **tool:** 29
+- **aktuell_organfehler:** 17
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorschläge-zu-echten-fähigkeiten-machen`
+*27.08. 10:56 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorschläge zu echten Fähigkeiten machen'. Datei: data/tools/vorschläge-zu-echten-fähigkeiten-machen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*27.08. 10:56 UTC · Quelle: critic*
+
+score=8; issues=Proposal generation logic not fully visible in truncated sections - pipeline assumes proposals exist rather than generating them; Hands organ integration depends on specific file structure (tools/hands_organ.py) which may not exist in all envir
+
+### `last_swarm_goal`
+*27.08. 10:46 UTC · Quelle: system*
+
+Vorschläge zu echten Fähigkeiten machen
+
+### `dream:20260827104537:5:d773fe`
+*27.08. 10:45 UTC · Quelle: dream*
+
+Simulation pre-flight and swarm critique proposals exist but remain disconnected; no evidence they gate model calls or route around failing providers.
+
+### `dream:20260827104537:4:94d422`
+*27.08. 10:45 UTC · Quelle: dream*
+
+Self-diagnosis and pruning report zero findings while model failures persist, suggesting health checks monitor wrong signals (organ errors vs. API contract violations).
+
+### `dream:20260827104537:3:6cc973`
+*27.08. 10:45 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this log) but drive-goal 'Vorgeschlagene Fähigkeiten wirklich nutzen' signals implementation gap: proposals lack ownership, test harness, or activation trigger.
+
+### `dream:20260827104537:2:d8457b`
+*27.08. 10:45 UTC · Quelle: dream*
+
+Latency variance for nemotron-3-ultra (22–68s) exceeds interactive SLOs, making it unreliable as primary despite availability.
+
+### `dream:20260827104537:1:173b6d`
+*27.08. 10:45 UTC · Quelle: dream*
+
+Rate-limiting (429) on z-ai/glm-5.2:free recurs across sessions, indicating provider-level quota exhaustion rather than transient spikes.
+
+### `aktuell_organfehler`
+*27.08. 10:40 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-27 10:39:41 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260827103641:5:c2f829`
 *27.08. 10:36 UTC · Quelle: dream*

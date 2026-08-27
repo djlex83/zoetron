@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,13 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
@@ -38,9 +37,15 @@
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten ausprobieren
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation pre-flight and swarm critique proposals exist but remain disconnected; no evidence they gate model calls or route around failing providers.
+- Self-diagnosis and pruning report zero findings while model failures persist, suggesting health checks monitor wrong signals (organ errors vs. API con
+- Skill proposals accumulate (10+ in this log) but drive-goal 'Vorgeschlagene Fähigkeiten wirklich nutzen' signals implementation gap: proposals lack ow
+- Latency variance for nemotron-3-ultra (22–68s) exceeds interactive SLOs, making it unreliable as primary despite availability.
+- Rate-limiting (429) on z-ai/glm-5.2:free recurs across sessions, indicating provider-level quota exhaustion rather than transient spikes.
 - Model performance is bimodal: lightweight models (laguna-s-2.1) succeed at low latency, while heavy models (nemotron-3-ultra) fail or succeed only wit
 - Sandbox execution failures ('Artefakt laeuft nicht') dominate critic feedback, showing that artifact runtime compatibility is unvalidated before deplo
 - The goal 'IMPORT und EXPORT fertigstellen' repeatedly fails to converge (converged: false) despite 3 simulation revisions and 2 swarm cycles, signalin
@@ -51,11 +56,6 @@
 - Hand/tool actions fail silently with exit code 1 and no error message, indicating missing preconditions or environment setup.
 - Nvidia Nemotron models (both ultra and lightning) are the only ones returning successful responses but with highly variable latency (52-448s).
 - Free tier models across all providers consistently hit 429 rate limits, making them unreliable for sequential task execution.
-- High numbers of simulation risks suggest that initial proposals require stricter validation before entering the simulation phase.
-- The gap between proposed skills and their actual application highlights the need for an automated skill deployment pipeline.
-- High system stress combined with frequent model failures indicates the system should reduce concurrent task loads and rely on more reliable models dur
-- Highly variable latency in nvidia/nemotron-3-ultra-550b-a55b:free (33s to 222s) necessitates adaptive, per-model timeout configurations.
-- The z-ai/glm-5.2:free model is chronically rate-limited and should be temporarily blacklisted to prevent repeated 429 failures.
 
 ---
 

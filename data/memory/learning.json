@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 10:39:48",
+ "stand": "2026-08-27 10:56:56",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -24,12 +24,6 @@
    "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -75,6 +69,18 @@
    "quote": 0.0
   },
   {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -93,29 +99,23 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
   }
  ],
- "haende_quote": 0.592,
+ "haende_quote": 0.598,
  "simulationen_angewandt": 69,
  "swarm_scores": {
   "n": 55,
   "best": 9.0,
-  "schnitt": 4.18
+  "schnitt": 4.29
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 53,
-   "schnitt": 4.26
+   "schnitt": 4.38
   },
   "bau": {
    "n": 2,
