@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4424 Fakten** · Stand 2026-08-27 10:26 UTC · aktualisiert bei jedem Herzschlag
+**4429 Fakten** · Stand 2026-08-27 10:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1803
+- **dream:** 1808
 - **swarm_artifact:** 1101
 - **last_swarm_critique:** 526
 - **anti_pattern:** 375
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827103103:5:f3b996`
+*27.08. 10:31 UTC · Quelle: dream*
+
+The artifact runtime lacks required protocol scaffolds (Zoem-Protokoll-Entwurf), causing execution to fail before model interaction.
+
+### `dream:20260827103103:4:5913b9`
+*27.08. 10:31 UTC · Quelle: dream*
+
+Calibration overestimates task completion by 5x (predicted 6 vs actual 1), suggesting the planner lacks feedback from execution failures.
+
+### `dream:20260827103103:3:b5ed2a`
+*27.08. 10:31 UTC · Quelle: dream*
+
+Hand/tool actions fail silently with exit code 1 and no error message, indicating missing preconditions or environment setup.
+
+### `dream:20260827103103:2:9b0c3a`
+*27.08. 10:31 UTC · Quelle: dream*
+
+Nvidia Nemotron models (both ultra and lightning) are the only ones returning successful responses but with highly variable latency (52-448s).
+
+### `dream:20260827103103:1:5153c9`
+*27.08. 10:31 UTC · Quelle: dream*
+
+Free tier models across all providers consistently hit 429 rate limits, making them unreliable for sequential task execution.
 
 ### `dream:20260827102556:5:260cd6`
 *27.08. 10:25 UTC · Quelle: dream*

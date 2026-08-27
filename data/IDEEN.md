@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The artifact runtime lacks required protocol scaffolds (Zoem-Protokoll-Entwurf), causing execution to fail before model interaction.
+- Calibration overestimates task completion by 5x (predicted 6 vs actual 1), suggesting the planner lacks feedback from execution failures.
+- Hand/tool actions fail silently with exit code 1 and no error message, indicating missing preconditions or environment setup.
+- Nvidia Nemotron models (both ultra and lightning) are the only ones returning successful responses but with highly variable latency (52-448s).
+- Free tier models across all providers consistently hit 429 rate limits, making them unreliable for sequential task execution.
 - High numbers of simulation risks suggest that initial proposals require stricter validation before entering the simulation phase.
 - The gap between proposed skills and their actual application highlights the need for an automated skill deployment pipeline.
 - High system stress combined with frequent model failures indicates the system should reduce concurrent task loads and rely on more reliable models dur
@@ -51,11 +56,6 @@
 - Latency variance exceeds 100x (0.5s to 109s) across models, making fixed timeouts either too aggressive or too permissive.
 - Critic outputs remain unparseable despite evolution, indicating missing structured-output enforcement in the prompt chain.
 - Free-tier models consistently hit 429 rate limits under load, causing cascade failures that halt learning loops.
-- Swarm convergence is not guaranteed within 2 cycles for complex goals like closing a simulation learning loop.
-- Evolution runs can improve scores (5 to 8) even when critic output is unparseable, indicating the builder variants are robust.
-- Model latency varies wildly (4s to 126s), so timeout settings must be generous or dynamically adjusted.
-- Upstream provider overload (502 errors) can occur even on successful endpoints, necessitating handling of empty choices in 200 responses.
-- Free models on OpenRouter are highly rate-limited (429 errors) and require robust fallback or retry mechanisms.
 
 ---
 

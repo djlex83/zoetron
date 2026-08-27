@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 10:26:19",
+ "stand": "2026-08-27 10:31:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,15 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
+   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -97,9 +97,15 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.595,
+ "haende_quote": 0.592,
  "simulationen_angewandt": 69,
  "swarm_scores": {
   "n": 55,
