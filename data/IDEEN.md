@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 04:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zoem-Protokoll development cycles through simulation→revision→application loops (5 revisions applied), showing iterative refinement works but consumes
+- 29 skill proposals exist but remain unused, revealing a gap between skill generation and skill deployment/execution pipelines.
+- The system operates under maximum stress (1.0) with severely constrained compute budget (3 tasks, 1 iteration), forcing conservative operation that st
+- Nvidia Nemotron models show higher success rates but extreme latency variance (15-353s), indicating unpredictable queue times on the provider side.
+- Rate limiting (HTTP 429) across multiple free-tier models is the primary failure mode, making free-tier reliance unreliable for production workloads.
 - Drive goals consistently identify the same gaps (reduce errors, use skills, close loops), revealing that systemic budget and validation mechanisms, no
 - Simulation revisions run 5 times with 5 risks yet rarely transfer, signaling that missing contract validation before handoff causes deployable artifac
 - The metabolism budget (max_iterations=1, max_tasks=3) is fundamentally mismatched with fallback-driven revision loops, requiring depth-proportional he
@@ -51,11 +56,6 @@
 - The system enters conserve mode (max_tasks=3, max_iterations=1) yet continues issuing model calls beyond budget, revealing a budget enforcement gap.
 - Nvidia Nemotron-3-Ultra is the only model returning successes but with extreme latency variance (15–69s), making it unreliable for time-bounded tasks.
 - Rate limiting (429) affects all free models simultaneously, indicating shared quota exhaustion rather than per-model limits.
-- Simulation verdicts ('go', risks=0) diverge from execution reality when static analysis misses runtime constraints like output size limits.
-- Conservative metabolism budgets (max 1 iteration) conflict with multi-model fallback chains, guaranteeing abandonment before recovery can occur.
-- Code generation exceeding hard character limits (20k) silently prevents execution without truncation logic, turning valid output into total task failu
-- Latency variance of 2-154 seconds for identical models reveals non-deterministic queue positioning, making timeout-based fallbacks unreliable without 
-- Free-tier model endpoints exhibit cascading failure modes: rate limits (429) dominate across providers, while upstream overloads (502) indicate shared
 
 ---
 

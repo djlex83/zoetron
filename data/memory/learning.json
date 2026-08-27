@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 04:43:27",
+ "stand": "2026-08-27 05:03:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,15 +51,15 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 1,
-   "erfolge": 1,
+   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -93,8 +93,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.555,
- "simulationen_angewandt": 78,
+ "haende_quote": 0.56,
+ "simulationen_angewandt": 77,
  "swarm_scores": {
   "n": 64,
   "best": 9.0,
