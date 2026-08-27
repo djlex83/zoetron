@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 16:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 17:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Local hand-action verification (0.22s) is orders of magnitude faster and more reliable than any external model call.
+- Latency variance across successful calls spans 10x (11.8s to 117.3s), requiring adaptive timeouts rather than fixed thresholds.
+- Simulation-driven revision (3 risks → 3 revisions → green TOR) successfully produced a working 164-line Python artifact in one cycle.
+- Generic fallback endpoints (openrouter/free) remain available when specific models are rate-limited, providing a stable last resort.
+- Free-tier model endpoints systematically hit 429 rate limits under sustained load, making specific model selection unreliable.
 - Zero pruning across consecutive cycles indicates thresholds are too loose or nothing is actually stale, wasting consolidation compute.
 - The core execution gap is generating skill proposals without a closure mechanism to convert them into deployed, working reflex tools.
 - Simulation outputs that produce no return value or written artifact are rejected by the tool system, making output-only approaches ineffective.
@@ -51,11 +56,6 @@
 - Self-diagnosis reliably detects drive timeouts but misses subtle degradation like repeated model retries before failure.
 - Fallback model latency of 37.8 seconds makes synchronous operations unreliable without async patterns or semantic caching.
 - Rate limiting across multiple free model providers creates cascading failures that require robust fallback chains with health-aware routing.
-- Pruning runs are consistently yielding zero pruned facts and events, suggesting the current pruning thresholds are too conservative for the current me
-- Latency varies wildly between available free models (60.8s vs 5.7s), making latency-aware routing essential for maintaining system responsiveness.
-- Reflex actions and self-diagnosis run reliably even when the primary cognitive model is failing, indicating robustness in the autonomous loop.
-- Free-tier models on OpenRouter are highly susceptible to rate limits (429) and upstream overloads (502), causing cascading cognitive failures.
-- Drive goals accumulate but rarely convert to executed goals, wasting proposed capability improvements.
 
 ---
 

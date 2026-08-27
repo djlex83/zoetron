@@ -1,0 +1,4 @@
+{"skill_name": "addition_test", "success": true, "runtime_s": 0.0002, "output": "Resultat: 4\n", "error": "", "timeout": false, "timestamp": "2026-08-27T17:07:26Z"}
+{"skill_name": "division_by_zero", "success": false, "runtime_s": 0.0001, "output": "", "error": "ZeroDivisionError: division by zero", "timeout": false, "timestamp": "2026-08-27T17:07:26Z"}
+{"skill_name": "timeout_test", "success": false, "runtime_s": 0.0001, "output": "", "error": "ImportError: __import__ not found", "timeout": false, "timestamp": "2026-08-27T17:07:26Z"}
+{"skill_name": "forbidden_os", "success": false, "runtime_s": 0.0001, "output": "", "error": "ImportError: __import__ not found", "timeout": false, "timestamp": "2026-08-27T17:07:26Z"}

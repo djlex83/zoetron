@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4609 Fakten** · Stand 2026-08-27 16:48 UTC · aktualisiert bei jedem Herzschlag
+**4626 Fakten** · Stand 2026-08-27 17:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1887
-- **swarm_artifact:** 1157
-- **last_swarm_critique:** 536
-- **anti_pattern:** 385
-- **last_swarm_goal:** 285
-- **strategy:** 213
-- **hand_result:** 46
+- **dream:** 1892
+- **swarm_artifact:** 1163
+- **last_swarm_critique:** 537
+- **anti_pattern:** 387
+- **last_swarm_goal:** 286
+- **strategy:** 214
+- **hand_result:** 47
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 32
 - **aktuell_organfehler:** 20
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten echt testen :2`
+*27.08. 17:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): in-process-interpreter-with-effect-tracking - Embed a real Python interpreter (via `Py_RunString`/`PyEval_EvalCode` through `ctypes` or `cffi` to libpython) or use `PyPy`'s sandboxing, but simpler: use `exec` with a custom `s
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten echt testen :1`
+*27.08. 17:08 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): docker-container-isolation - Execute skills inside ephemeral Docker containers for true isolation. Convergence gate uses `docker` Python SDK or CLI (`docker run --rm --network=none --cpus=0.5 --memory=128m --pids-limit=64 -v 
+
+### `last_swarm_critique`
+*27.08. 17:07 UTC · Quelle: critic*
+
+score=6; issues=Konvergenz-Tor verwendet `io.StringIO()` in `run_restricted_skill()`, aber `io` wird nicht importiert - Laufzeitfehler bei Fallback-Ausfuehrung; Konvergenz-Tor `score_code_block` ist ueberwiegend heuristisch (Pattern-Matching), nicht echte Ausf
+
+### `last_swarm_goal`
+*27.08. 17:00 UTC · Quelle: system*
+
+Fähigkeiten echt testen nicht nur vorschlagen
+
+### `dream:20260827165952:5:1f1483`
+*27.08. 16:59 UTC · Quelle: dream*
+
+Local hand-action verification (0.22s) is orders of magnitude faster and more reliable than any external model call.
+
+### `dream:20260827165952:4:d8f833`
+*27.08. 16:59 UTC · Quelle: dream*
+
+Latency variance across successful calls spans 10x (11.8s to 117.3s), requiring adaptive timeouts rather than fixed thresholds.
+
+### `dream:20260827165952:3:407fb2`
+*27.08. 16:59 UTC · Quelle: dream*
+
+Simulation-driven revision (3 risks → 3 revisions → green TOR) successfully produced a working 164-line Python artifact in one cycle.
+
+### `dream:20260827165952:2:91f683`
+*27.08. 16:59 UTC · Quelle: dream*
+
+Generic fallback endpoints (openrouter/free) remain available when specific models are rate-limited, providing a stable last resort.
+
+### `dream:20260827165952:1:1a4ed5`
+*27.08. 16:59 UTC · Quelle: dream*
+
+Free-tier model endpoints systematically hit 429 rate limits under sustained load, making specific model selection unreliable.
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Weniger menschliche Hilf:1`
 *27.08. 16:45 UTC · Quelle: evolution*
