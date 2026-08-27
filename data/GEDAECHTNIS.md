@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4130 Fakten** · Stand 2026-08-27 01:08 UTC · aktualisiert bei jedem Herzschlag
+**4148 Fakten** · Stand 2026-08-27 01:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1666
-- **swarm_artifact:** 1023
-- **last_swarm_critique:** 511
-- **anti_pattern:** 352
-- **last_swarm_goal:** 260
-- **strategy:** 197
-- **hand_result:** 37
+- **dream:** 1671
+- **swarm_artifact:** 1029
+- **last_swarm_critique:** 512
+- **anti_pattern:** 355
+- **last_swarm_goal:** 261
+- **strategy:** 198
+- **hand_result:** 38
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 23
 - **aktuell_organfehler:** 14
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:selflearn_unzuverlaessige_werkzeuge`
+*27.08. 01:50 UTC · Quelle: selflearn*
+
+Diese Werkzeuge scheiterten haeufig (<34% Erfolg): destillat-datensatz-gedächtnis-wird-trai. Erst Ursache pruefen, dann erneut einsetzen.
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Destillat-Datensatz: Ged:2`
+*27.08. 01:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 4, 10]): Teacher-Student Active Distillation - Instead of passively extracting existing memories, use a teacher LLM to actively synthesize training pairs from memory snippets. destillat.py samples diverse memory chunks, promp
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Destillat-Datensatz: Ged:0`
+*27.08. 01:49 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 8, 6]): Monolithic Extraction & Validation Script - Create a single self-contained destillat.py that directly connects to the memory backend (e.g., SQLite, vector store, or API), extracts all memory entries, applies quality f
+
+### `last_swarm_critique`
+*27.08. 01:48 UTC · Quelle: critic*
+
+score=1; issues=No destillat.py artifact was provided - only an audit script and shell exploration commands exist; Sandbox verdict confirms the artifact does not run (LAEUFT NICHT); The required functionality (JSONL export with quality filters, 200+ pairs, val
+
+### `last_swarm_goal`
+*27.08. 01:44 UTC · Quelle: system*
+
+Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
+
+### `dream:20260827014404:5:3f3728`
+*27.08. 01:44 UTC · Quelle: dream*
+
+Self-diagnosis and pruning report zero issues while external model failures persist, indicating observability gaps at the integration layer.
+
+### `dream:20260827014404:4:0c1468`
+*27.08. 01:44 UTC · Quelle: dream*
+
+High latency variance (9–40 s) on the same model signals upstream instability needing circuit-breaker guards.
+
+### `dream:20260827014404:3:5fdd93`
+*27.08. 01:44 UTC · Quelle: dream*
+
+Evolution cycles improve variant quality (4→9) but swarm convergence fails when critic-to-builder ratio is too low (1:3).
+
+### `dream:20260827014404:2:7a1b54`
+*27.08. 01:44 UTC · Quelle: dream*
+
+Model fallback chains must be pre-validated and ranked by reliability metrics, not discovered during task execution.
+
+### `dream:20260827014404:1:8c4cf0`
+*27.08. 01:44 UTC · Quelle: dream*
+
+Rate limits (429 errors) across multiple providers constitute a systemic bottleneck requiring proactive health tracking rather than reactive retries.
 
 ### `tool:destillat-datensatz-gedächtnis-wird-trai`
 *27.08. 01:08 UTC · Quelle: hands*

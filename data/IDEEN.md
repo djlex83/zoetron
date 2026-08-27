@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 01:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 01:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,18 +14,18 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- Implement per-model 429/5xx cooldown tracking with exponential backoff and reorder failover to skip recently-t
-- Modify swarm termination: 'done' requires critic-verified closure of every logged risk, independent of cycle c
-- Build a sandbox trial pipeline that executes each pending skill proposal, records pass/fail metrics, and auto-
-- Add automatic retry with backoff to hand_action executor, surfacing persistent failures as health events for s
-- Insert a pre-simulation validation gate that runs static checks and dry-runs against a test fixture, blocking 
 - skill_trial_scheduler.py: after each dream cycle, pick the single top-rated skill_proposal and execute exactly
+- destructive_op_gate.py: when a proposed tool contains os.system/subprocess calls, automatically open a human-a
+- conserve_mode_planner.py: at stress=1.0, pre-plan the minimal 3-task sequence prioritizing simulate->revise->e
+- model_health_tracker.py: maintain a rolling success/latency score per model and route requests to the best-sco
+- calibration_logger.py: record predicted vs actual task scores each cycle and flag any goal type whose abs_erro
+- Skill 'artifact_smoke_test': Vor jedem TOR-Grün-Check das gebaute Artefakt in einer Sandbox ausführen und bei 
 
 ## 🔥 Eigene Ziele
 
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning report zero issues while external model failures persist, indicating observability gaps at the integration layer.
+- High latency variance (9–40 s) on the same model signals upstream instability needing circuit-breaker guards.
+- Evolution cycles improve variant quality (4→9) but swarm convergence fails when critic-to-builder ratio is too low (1:3).
+- Model fallback chains must be pre-validated and ranked by reliability metrics, not discovered during task execution.
+- Rate limits (429 errors) across multiple providers constitute a systemic bottleneck requiring proactive health tracking rather than reactive retries.
 - Hand actions fail on first attempt (exit 1) then succeed on retry, indicating transient environment/permission issues.
 - The Exemplar-Bank pipeline (simulation→tor→calibration→bahnen) runs end-to-end but calibration drift (pred 3 vs actual 2) signals reward-model misalig
 - minimax/minimax-m3:free delivers high output throughput (9.6k tokens) at moderate latency, making it the current best free option.
@@ -51,11 +56,6 @@
 - Whisper messages are frequently lost due to lack of delivery confirmation or retry mechanisms, creating a critical communication gap in goal propagati
 - Successful model calls (nvidia/nemotron-3-ultra-550b-a55b:free) show stable latency and token efficiency across varying input sizes, suggesting reliab
 - Free-tier models from certain providers (e.g., z-ai/glm-5.2:free) consistently fail with 429 errors under concurrent load, indicating rate-limit exhau
-- Conservation metabolism (stress=1.0) starves exploration needed to escape repeated failure traps.
-- Intermittent model availability (glm works 2/6 attempts) demands probabilistic routing, not binary failover.
-- Proposed skills accumulate without validation loops, creating illusion of progress without capability gain.
-- Latency variance across models exceeds 30x (2.7s vs 69s), requiring dynamic routing not static fallback.
-- Rate limits (429) on z-ai/glm-5.2:free are the dominant failure mode, not model quality.
 
 ---
 
