@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4250 Fakten** · Stand 2026-08-27 05:10 UTC · aktualisiert bei jedem Herzschlag
+**4255 Fakten** · Stand 2026-08-27 05:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1710
+- **dream:** 1715
 - **swarm_artifact:** 1057
 - **last_swarm_critique:** 518
 - **anti_pattern:** 367
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827051637:5:9a2b09`
+*27.08. 05:16 UTC · Quelle: dream*
+
+The system generates valuable skill proposals but fails to implement them, indicating a critical gap between the planning and execution phases.
+
+### `dream:20260827051637:4:c7d6a7`
+*27.08. 05:16 UTC · Quelle: dream*
+
+Hand actions failing with non-zero exit codes but no explicit error messages point to a lack of robust stderr capturing in the execution environment.
+
+### `dream:20260827051637:3:a47377`
+*27.08. 05:16 UTC · Quelle: dream*
+
+Swarm simulations failing to converge on complex protocol designs suggests that current iteration limits or role coordination strategies are inadequate.
+
+### `dream:20260827051637:2:fee343`
+*27.08. 05:16 UTC · Quelle: dream*
+
+High latency variance on successful model calls indicates that static timeouts are insufficient and risk prematurely terminating valid long-running requests.
+
+### `dream:20260827051637:1:998467`
+*27.08. 05:16 UTC · Quelle: dream*
+
+Free-tier LLM endpoints are highly unstable, frequently returning 429 rate limits and 502 upstream errors, necessitating aggressive and dynamic fallback strategies.
 
 ### `dream:20260827050222:5:bfea19`
 *27.08. 05:02 UTC · Quelle: dream*

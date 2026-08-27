@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
@@ -37,10 +38,14 @@
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system generates valuable skill proposals but fails to implement them, indicating a critical gap between the planning and execution phases.
+- Hand actions failing with non-zero exit codes but no explicit error messages point to a lack of robust stderr capturing in the execution environment.
+- Swarm simulations failing to converge on complex protocol designs suggests that current iteration limits or role coordination strategies are inadequat
+- High latency variance on successful model calls indicates that static timeouts are insufficient and risk prematurely terminating valid long-running re
+- Free-tier LLM endpoints are highly unstable, frequently returning 429 rate limits and 502 upstream errors, necessitating aggressive and dynamic fallba
 - Zoem-Protokoll development cycles through simulation→revision→application loops (5 revisions applied), showing iterative refinement works but consumes
 - 29 skill proposals exist but remain unused, revealing a gap between skill generation and skill deployment/execution pipelines.
 - The system operates under maximum stress (1.0) with severely constrained compute budget (3 tasks, 1 iteration), forcing conservative operation that st
@@ -51,11 +56,6 @@
 - The metabolism budget (max_iterations=1, max_tasks=3) is fundamentally mismatched with fallback-driven revision loops, requiring depth-proportional he
 - Latency variance in successful models (12.6s to 91.7s) correlates with token volume, indicating that adaptive timeouts must be token-aware, not just t
 - Free-tier model 429 errors reveal that rate limiting, not model capability, is the primary failure cause when fallback chains exhaust iteration budget
-- Hand actions fail repeatedly (exit=1, gelesen=0) after one success, likely because the missing genome file breaks downstream tooling.
-- Simulation produced 5 revisions but the artifact still fails at runtime due to a missing genome file (/workspace/zoetron/data/memory), showing revisio
-- The system enters conserve mode (max_tasks=3, max_iterations=1) yet continues issuing model calls beyond budget, revealing a budget enforcement gap.
-- Nvidia Nemotron-3-Ultra is the only model returning successes but with extreme latency variance (15–69s), making it unreliable for time-bounded tasks.
-- Rate limiting (429) affects all free models simultaneously, indicating shared quota exhaustion rather than per-model limits.
 
 ---
 

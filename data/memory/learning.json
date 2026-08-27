@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 05:10:30",
+ "stand": "2026-08-27 05:17:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,16 +63,16 @@
    "quote": 1.0
   },
   {
+   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
@@ -93,7 +93,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.565,
+ "haende_quote": 0.574,
  "simulationen_angewandt": 76,
  "swarm_scores": {
   "n": 63,
