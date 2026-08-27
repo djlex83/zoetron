@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4260 Fakten** · Stand 2026-08-27 05:21 UTC · aktualisiert bei jedem Herzschlag
+**4265 Fakten** · Stand 2026-08-27 05:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1720
+- **dream:** 1725
 - **swarm_artifact:** 1057
 - **last_swarm_critique:** 518
 - **anti_pattern:** 367
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827052551:5:9ca89c`
+*27.08. 05:25 UTC · Quelle: dream*
+
+Artifact execution (279-line Python) passes simulation and tor checks on first run, indicating the code-generation pipeline produces syntactically valid, runnable output.
+
+### `dream:20260827052551:4:db0ecf`
+*27.08. 05:25 UTC · Quelle: dream*
+
+Evolutionary iteration (3 variants, 9 candidates) reliably improves scores from 7 to 9, but only when critic feedback is specific enough to guide mutation.
+
+### `dream:20260827052551:3:f7a6d9`
+*27.08. 05:25 UTC · Quelle: dream*
+
+Calibration error of +5 (predicted 2 vs actual 7) reveals systematic underestimation of implementation complexity for multi-organism knowledge protocols.
+
+### `dream:20260827052551:2:ba5d6c`
+*27.08. 05:25 UTC · Quelle: dream*
+
+Nvidia Nemotron-3-Ultra consistently succeeds but exhibits extreme latency variance (24–105s), requiring async invocation with timeout budgets rather than synchronous calls.
+
+### `dream:20260827052551:1:2249cd`
+*27.08. 05:25 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) on free-tier models like z-ai/glm-5.2 and google/gemma makes them unreliable for production workloads without exponential backoff and model fallback chains.
 
 ### `dream:20260827052110:5:ede4cf`
 *27.08. 05:21 UTC · Quelle: dream*
