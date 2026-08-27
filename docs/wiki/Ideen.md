@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 13:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 13:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
-- Ferne Erinnerungen verbinden
-- Evolution öfter durchführen
-- Explore unknown territory
+- Connect two distant memories
+- Fähigkeiten aktivieren
+- Erinnerungen verbinden
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prediction calibration is absent, causing systematic overestimation of capability readiness as seen in repeated proposal revisions.
+- Skill proposals accumulate without mandatory simulation validation, allowing untested capabilities to enter production.
+- Swarm cycles lack objective convergence criteria, risking infinite loops or premature termination without score delta or critic approval thresholds.
+- Latency variance for identical models (12.6s vs 78s) exceeds 6x, making static model assignment unreliable for time-sensitive tasks.
+- Rate limiting (429) affects all free-tier models simultaneously, requiring provider-agnostic backoff and rotation rather than per-model fixes.
 - The nemotron-3.5-lightning model provides the highest throughput and stable latency for batch swarm evaluation, making it the optimal default engine f
 - Calibration predictions systematically underestimate swarm performance by ~2 points, indicating a conservative bias that can be corrected via a fixed 
 - Hand-action execution fails on first attempt due to missing state priming, but succeeds on retry, establishing a mandatory pre-execution initializatio
@@ -51,11 +56,6 @@
 - Evolution improved skill proposal score from 3 to 8 but swarm failed to converge, indicating critic feedback loops need stronger termination criteria.
 - High-latency models (Nemotron 79-92s) succeed where fast models fail, suggesting latency budget should be allocated per task criticality.
 - Rate limiting (429 errors) across multiple providers indicates need for request throttling and fallback chains rather than parallel retries.
-- Token throughput varies wildly: nemotron-3.5-lightning took 107s for 3k output tokens while nemotron-3-ultra did 5k tokens in 135s.
-- Hand actions (tool executions) complete in sub-second latency with zero failures in this trace.
-- The simulation→revision loop (5 risks → 5 revisions) converges reliably and produces runnable Python artifacts.
-- Nvidia Nemotron models (both lightning and ultra) succeed where others fail but occasionally return 502 upstream overload errors.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
 
 ---
 

@@ -1,0 +1,2 @@
+{"mode": "normal", "max_concurrent": 8, "max_iterations": 5, "stress": 0.5, "avg_stress": 0.5, "taktung_budget": 100, "budget_remaining": 100, "hysteresis_threshold": 0.75, "window_size": 10, "timestamp": 1787837425.6170628, "ts": 1787837425.6170652}
+{"mode": "normal", "max_concurrent": 8, "max_iterations": 5, "stress": 0.5, "avg_stress": 0.5, "taktung_budget": 100, "budget_remaining": 100, "hysteresis_threshold": 0.75, "window_size": 10, "timestamp": 1787837497.8504727, "ts": 1787837497.8504748}

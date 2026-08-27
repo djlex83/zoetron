@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4515 Fakten** · Stand 2026-08-27 13:14 UTC · aktualisiert bei jedem Herzschlag
+**4529 Fakten** · Stand 2026-08-27 13:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1843
-- **swarm_artifact:** 1131
-- **last_swarm_critique:** 531
+- **dream:** 1848
+- **swarm_artifact:** 1137
+- **last_swarm_critique:** 532
 - **anti_pattern:** 379
-- **last_swarm_goal:** 280
+- **last_swarm_goal:** 281
 - **strategy:** 210
 - **hand_result:** 46
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 30
+- **tool:** 31
 - **aktuell_organfehler:** 17
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:effizienter-werden`
+*27.08. 13:31 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Effizienter werden'. Datei: data/tools/effizienter-werden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*27.08. 13:31 UTC · Quelle: critic*
+
+score=8; issues=Artifact 2: FAISS index is not updated after removing entries, so subsequent searches may return already-removed duplicates as nearest neighbors, potentially missing true duplicates in later iterations; Artifact 3: Fallback flag file (router_fa
+
+### `last_swarm_goal`
+*27.08. 13:21 UTC · Quelle: system*
+
+Effizienter werden
+
+### `dream:20260827131854:5:4cf526`
+*27.08. 13:18 UTC · Quelle: dream*
+
+Prediction calibration is absent, causing systematic overestimation of capability readiness as seen in repeated proposal revisions.
+
+### `dream:20260827131854:4:81eef5`
+*27.08. 13:18 UTC · Quelle: dream*
+
+Skill proposals accumulate without mandatory simulation validation, allowing untested capabilities to enter production.
+
+### `dream:20260827131854:3:8d9fa9`
+*27.08. 13:18 UTC · Quelle: dream*
+
+Swarm cycles lack objective convergence criteria, risking infinite loops or premature termination without score delta or critic approval thresholds.
+
+### `dream:20260827131854:2:a96a03`
+*27.08. 13:18 UTC · Quelle: dream*
+
+Latency variance for identical models (12.6s vs 78s) exceeds 6x, making static model assignment unreliable for time-sensitive tasks.
+
+### `dream:20260827131854:1:5c2abd`
+*27.08. 13:18 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models simultaneously, requiring provider-agnostic backoff and rotation rather than per-model fixes.
 
 ### `last_swarm_critique`
 *27.08. 13:13 UTC · Quelle: critic*
