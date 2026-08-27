@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4449 Fakten** · Stand 2026-08-27 10:57 UTC · aktualisiert bei jedem Herzschlag
+**4466 Fakten** · Stand 2026-08-27 11:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1818
-- **swarm_artifact:** 1107
-- **last_swarm_critique:** 527
-- **anti_pattern:** 375
-- **last_swarm_goal:** 276
-- **strategy:** 208
+- **dream:** 1823
+- **swarm_artifact:** 1113
+- **last_swarm_critique:** 528
+- **anti_pattern:** 377
+- **last_swarm_goal:** 277
+- **strategy:** 209
 - **hand_result:** 44
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 29
+- **tool:** 30
 - **aktuell_organfehler:** 17
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:neue-fähigkeiten-aktiv-vorschlagen`
+*27.08. 11:22 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Neue Fähigkeiten aktiv vorschlagen'. Datei: data/tools/neue-fähigkeiten-aktiv-vorschlagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Neue Fähigkeiten aktiv v:2`
+*27.08. 11:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Competitive Capability Benchmarking - Create an automated benchmarking suite that: (1) defines a standardized capability taxonomy across domains, (2) scrapes documentation/API specs of 10+ competitor systems, (3) runs compara
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Neue Fähigkeiten aktiv v:1`
+*27.08. 11:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): User Interaction Gap Analysis - Deploy an instrumentation layer that captures all user requests, failed commands, clarification cycles, and fallback behaviors in production. Cluster these interactions using embeddings to disc
+
+### `last_swarm_critique`
+*27.08. 11:17 UTC · Quelle: critic*
+
+score=3; issues=Sandbox execution failed: artifacts are truncated and cannot run as-is; Missing closing code for MemoryLogger.log_result and TestProposalRanking.test_schema_validation; No measurable output or validation results produced; Artifacts do not fulfi
+
+### `last_swarm_goal`
+*27.08. 11:06 UTC · Quelle: system*
+
+Neue Fähigkeiten aktiv vorschlagen
+
+### `dream:20260827110638:5:ce64e7`
+*27.08. 11:06 UTC · Quelle: dream*
+
+Inactive pruning alongside repeated model failures demonstrates that fact/event pruning must be conditioned on model health and skill utilization metrics to avoid consolidating stale or error-prone pathways.
+
+### `dream:20260827110638:4:f1cafe`
+*27.08. 11:06 UTC · Quelle: dream*
+
+The three recurring drive goals—model reliability, skill utilization, and simulation-action integration—form the system's cross-cutting consolidation axes, and progress on one amplifies the others.
+
+### `dream:20260827110638:3:39d162`
+*27.08. 11:06 UTC · Quelle: dream*
+
+Skill proposals are generated at high volume and quality yet systematically underutilized, revealing that deployment gatekeeping and success-rate validation are the bottleneck, not idea scarcity.
+
+### `dream:20260827110638:2:9abeed`
+*27.08. 11:06 UTC · Quelle: dream*
+
+Simulations and dreams achieve reflex convergence but fail to transfer actionable patterns to hand execution, indicating a persistent disconnect between internal learning states and external action pathways.
+
+### `dream:20260827110638:1:9efd0b`
+*27.08. 11:06 UTC · Quelle: dream*
+
+A single model's repeated 429 errors without automatic blacklisting destabilizes the entire routing pool, proving that runtime failure resilience must be embedded in model selection, not reactive.
 
 ### `tool:vorschläge-zu-echten-fähigkeiten-machen`
 *27.08. 10:56 UTC · Quelle: hands*

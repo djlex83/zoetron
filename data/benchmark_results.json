@@ -1,0 +1,40 @@
+{
+  "capabilities": {
+    "pattern_recognition": {
+      "score": 0.72,
+      "target": 0.9,
+      "runs": 45
+    },
+    "logical_reasoning": {
+      "score": 0.58,
+      "target": 0.85,
+      "runs": 32
+    },
+    "memory_consolidation": {
+      "score": 0.65,
+      "target": 0.88,
+      "runs": 28
+    },
+    "cross_domain_transfer": {
+      "score": 0.41,
+      "target": 0.8,
+      "runs": 19
+    },
+    "self_modification_safety": {
+      "score": 0.33,
+      "target": 0.95,
+      "runs": 12
+    },
+    "language_understanding": {
+      "score": 0.79,
+      "target": 0.9,
+      "runs": 51
+    },
+    "tool_use_planning": {
+      "score": 0.47,
+      "target": 0.82,
+      "runs": 23
+    }
+  },
+  "last_updated": "2026-08-27T11:17:07.536454"
+}

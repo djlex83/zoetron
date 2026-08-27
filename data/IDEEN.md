@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 11:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten ausprobieren
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
+- Warum schlagen so viele Modellversuche fehl?
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Inactive pruning alongside repeated model failures demonstrates that fact/event pruning must be conditioned on model health and skill utilization metr
+- The three recurring drive goals—model reliability, skill utilization, and simulation-action integration—form the system's cross-cutting consolidation 
+- Skill proposals are generated at high volume and quality yet systematically underutilized, revealing that deployment gatekeeping and success-rate vali
+- Simulations and dreams achieve reflex convergence but fail to transfer actionable patterns to hand execution, indicating a persistent disconnect betwe
+- A single model's repeated 429 errors without automatic blacklisting destabilizes the entire routing pool, proving that runtime failure resilience must
 - Simulation pre-flight and swarm critique proposals exist but remain disconnected; no evidence they gate model calls or route around failing providers.
 - Self-diagnosis and pruning report zero findings while model failures persist, suggesting health checks monitor wrong signals (organ errors vs. API con
 - Skill proposals accumulate (10+ in this log) but drive-goal 'Vorgeschlagene Fähigkeiten wirklich nutzen' signals implementation gap: proposals lack ow
@@ -51,11 +56,6 @@
 - The goal 'IMPORT und EXPORT fertigstellen' repeatedly fails to converge (converged: false) despite 3 simulation revisions and 2 swarm cycles, signalin
 - Nvidia upstream 502 errors correlate with high-latency runs of the 550B model, revealing that service overload occurs when latency exceeds 100s withou
 - All 429 Too Many Requests errors cluster around unthrottled sequential calls to rate-limited external APIs, indicating a missing backpressure mechanis
-- The artifact runtime lacks required protocol scaffolds (Zoem-Protokoll-Entwurf), causing execution to fail before model interaction.
-- Calibration overestimates task completion by 5x (predicted 6 vs actual 1), suggesting the planner lacks feedback from execution failures.
-- Hand/tool actions fail silently with exit code 1 and no error message, indicating missing preconditions or environment setup.
-- Nvidia Nemotron models (both ultra and lightning) are the only ones returning successful responses but with highly variable latency (52-448s).
-- Free tier models across all providers consistently hit 429 rate limits, making them unreliable for sequential task execution.
 
 ---
 

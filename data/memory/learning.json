@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 10:56:56",
+ "stand": "2026-08-27 11:22:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "abgelehnte-werkzeuge-prüfen-und-verbesse.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -45,7 +39,13 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-häufiger-in-handlungen-umse.py",
+   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -75,10 +75,10 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
+   "tool": "simulationen-häufiger-in-handlungen-umse.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
@@ -105,17 +105,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.598,
- "simulationen_angewandt": 69,
+ "haende_quote": 0.59,
+ "simulationen_angewandt": 70,
  "swarm_scores": {
-  "n": 55,
+  "n": 56,
   "best": 9.0,
-  "schnitt": 4.29
+  "schnitt": 4.27
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 53,
-   "schnitt": 4.38
+   "schnitt": 4.28
   },
   "bau": {
    "n": 2,
