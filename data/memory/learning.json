@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 07:23:20",
+ "stand": "2026-08-27 07:47:42",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,6 +12,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -28,12 +34,6 @@
   },
   {
    "tool": "alte-traumideen-mit-strategien-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -93,8 +93,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.601,
- "simulationen_angewandt": 74,
+ "haende_quote": 0.603,
+ "simulationen_angewandt": 73,
  "swarm_scores": {
   "n": 61,
   "best": 9.0,
@@ -102,8 +102,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 58,
-   "schnitt": 4.59
+   "n": 57,
+   "schnitt": 4.58
   },
   "bau": {
    "n": 3,

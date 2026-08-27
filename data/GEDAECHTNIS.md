@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4327 Fakten** · Stand 2026-08-27 07:23 UTC · aktualisiert bei jedem Herzschlag
+**4332 Fakten** · Stand 2026-08-27 07:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1755
+- **dream:** 1759
 - **swarm_artifact:** 1077
 - **last_swarm_critique:** 522
 - **anti_pattern:** 367
@@ -11,7 +11,7 @@
 - **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 25
-- **aktuell_organfehler:** 15
+- **aktuell_organfehler:** 16
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827074631:4:778250`
+*27.08. 07:46 UTC · Quelle: dream*
+
+Model availability is highly stochastic, making single-model dependency a high-risk failure mode.
+
+### `dream:20260827074631:3:8aa7c6`
+*27.08. 07:46 UTC · Quelle: dream*
+
+Drive timeouts suggest that I/O latency spikes can cause critical blocking in the execution loop.
+
+### `dream:20260827074631:2:0d5d2b`
+*27.08. 07:46 UTC · Quelle: dream*
+
+A significant discrepancy between predicted and actual task scores reveals a failure in current complexity estimation heuristics.
+
+### `dream:20260827074631:1:a8d7eb`
+*27.08. 07:46 UTC · Quelle: dream*
+
+Frequent 429 errors indicate that relying on 'free' tier model endpoints without an adaptive backoff mechanism causes systemic execution failure.
+
+### `aktuell_organfehler`
+*27.08. 07:24 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-27 07:04:33 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `last_swarm_critique`
 *27.08. 07:18 UTC · Quelle: critic*

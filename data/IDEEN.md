@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 07:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 07:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,19 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
+- Alte Träume miteinander verbinden
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model availability is highly stochastic, making single-model dependency a high-risk failure mode.
+- Drive timeouts suggest that I/O latency spikes can cause critical blocking in the execution loop.
+- A significant discrepancy between predicted and actual task scores reveals a failure in current complexity estimation heuristics.
+- Frequent 429 errors indicate that relying on 'free' tier model endpoints without an adaptive backoff mechanism causes systemic execution failure.
 - Tagging consolidated memories with a staleness metric and re-encoding them during low-stress windows preserves long-term retention and prevents skill 
 - Promoting skills from critic-identified failures via automatic code-edit loops creates a closed-loop where each failure directly engineers the next ca
 - A 5-revision simulation-revision cycle with risk-aware pruning reliably integrates distant memories without catastrophic interference, establishing a 
@@ -52,10 +56,6 @@
 - Nvidia's nemotron-3-ultra-550b:free returns 502 upstream errors intermittently, suggesting backend instability rather than client-side issues.
 - Rate-limited models (429 errors) consistently fail under concurrent load, indicating OpenRouter's free tier throttles aggressively during swarm bursts
 - Memory pruning removed zero items, suggesting current retention policies are appropriate but also that stale low-signal entries may persist indefinite
-- Drive goals accumulate but lack automatic scheduling or convergence tracking, causing high-value objectives (model fixing, skill activation) to stall.
-- Documentation drift was detected and auto-corrected via a reflex action, proving that code-derived metrics can enforce consistency without LLM calls.
-- The poolside/laguna-s-2.1:free model consistently succeeds with ~8s latency, making it a reliable primary candidate for critical paths.
-- Rate limiting (429) and upstream overload (502) errors dominate model failures, indicating reliance on free-tier endpoints without backoff or fallback
 
 ---
 
