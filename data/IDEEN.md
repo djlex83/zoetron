@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 19:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 19:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
-- Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream-generated skill proposals skew toward infrastructure robustness (rate limits, caching, backoff) rather than novel task capabilities.
+- Self-diagnosis and pruning consistently report zero issues, suggesting the system's internal health checks are functioning but may lack sensitivity.
+- Reflex mode reliably converges for both collaboration-improvement and skill-proposal goals, confirming it as a robust execution mode.
+- Nemotron-3-ultra is the only consistent success model but exhibits high latency variance (12.7s to 80.2s), requiring timeout-aware callers.
+- GLM-5.2 free tier fails systematically with 429 rate limits across three consecutive calls, making it an unreliable provider.
 - Successful calls (nemotron, ling, laguna) share no obvious pattern (different providers, sizes, latencies), suggesting selection is stochastic rather 
 - Drive goals identify reliability, skill adoption, and sim-to-real transfer as separate issues, but the logs reveal they are symptoms of a single root 
 - Simulation approval ('go' verdict) with 3 risks but 0 revisions indicates risk assessment without mitigation planning, leaving execution vulnerable to
@@ -51,11 +56,6 @@
 - Hand actions fail silently (exit 1, zero bytes read) indicating tool execution environment misconfiguration.
 - Swarm convergence stalls at score 1 because the critic rejects builder output without actionable feedback loops.
 - Free-tier models (GLM, Gemma, Poolside) consistently hit 429 rate limits, making them unreliable for production workflows.
-- Simulation vetoed the plan (verdict=revise, 5 risks) and 2/4 revisions were applied, showing pre-execution critique catches critical flaws.
-- Evolutionary search with 3 variants lifted score from 1/10 to 8-10/10 in one generation, proving iterative refinement outperforms one-shot generation.
-- Memory retrieval succeeds (4 items fetched) but graph construction fails (kanten=0, delta=-0.5), indicating a broken linking mechanism, not a retrieva
-- Calibration error of 4 points (predicted 5 vs actual 1) reveals the planner fundamentally misjudges connection-building difficulty.
-- Free-tier model endpoints fail catastrophically under load (429/502 errors), making single-model reliance a systemic fragility.
 
 ---
 

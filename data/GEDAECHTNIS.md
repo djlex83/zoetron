@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4692 Fakten** · Stand 2026-08-27 19:04 UTC · aktualisiert bei jedem Herzschlag
+**4709 Fakten** · Stand 2026-08-27 19:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1922
-- **swarm_artifact:** 1181
-- **last_swarm_critique:** 540
-- **anti_pattern:** 393
-- **last_swarm_goal:** 289
-- **strategy:** 217
+- **dream:** 1927
+- **swarm_artifact:** 1187
+- **last_swarm_critique:** 541
+- **anti_pattern:** 395
+- **last_swarm_goal:** 290
+- **strategy:** 218
 - **hand_result:** 49
-- **tool:** 33
+- **tool:** 34
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
 - **creator_teaching:** 9
@@ -19,6 +19,58 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:aufgaben-priorisieren`
+*27.08. 19:49 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Aufgaben priorisieren'. Datei: data/tools/aufgaben-priorisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Aufgaben priorisieren
+Cr:2`
+*27.08. 19:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Rule-based engine with plugin architecture and real-time integration - Implement a rule engine where each prioritization criterion (urgency, importance, dependencies, business value) is a separate plugin implementing a common
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Aufgaben priorisieren
+Cr:1`
+*27.08. 19:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Machine learning-based prioritization with feedback loop - Replace the hardcoded weighted formula with a learn-to-rank model (e.g., LambdaMART, XGBoost Ranker) trained on historical expert prioritization decisions extracted f
+
+### `last_swarm_critique`
+*27.08. 19:45 UTC · Quelle: critic*
+
+score=7; issues=Nur 1 von 3 Artefakten durch Sandbox als lauffähig bestätigt (186 Zeilen), die anderen beiden ungetestet; Gewichte (will_weight=0.7, drive_weight=0.3) hardcoded, nicht über Config/CLI steuerbar; Benchmark nutzt ausschließlich synthetische Test-
+
+### `last_swarm_goal`
+*27.08. 19:33 UTC · Quelle: system*
+
+Aufgaben priorisieren
+
+### `dream:20260827193252:5:3ae8a4`
+*27.08. 19:32 UTC · Quelle: dream*
+
+Dream-generated skill proposals skew toward infrastructure robustness (rate limits, caching, backoff) rather than novel task capabilities.
+
+### `dream:20260827193252:4:fe3816`
+*27.08. 19:32 UTC · Quelle: dream*
+
+Self-diagnosis and pruning consistently report zero issues, suggesting the system's internal health checks are functioning but may lack sensitivity.
+
+### `dream:20260827193252:3:8ea24c`
+*27.08. 19:32 UTC · Quelle: dream*
+
+Reflex mode reliably converges for both collaboration-improvement and skill-proposal goals, confirming it as a robust execution mode.
+
+### `dream:20260827193252:2:e6ac3b`
+*27.08. 19:32 UTC · Quelle: dream*
+
+Nemotron-3-ultra is the only consistent success model but exhibits high latency variance (12.7s to 80.2s), requiring timeout-aware callers.
+
+### `dream:20260827193252:1:03a85f`
+*27.08. 19:32 UTC · Quelle: dream*
+
+GLM-5.2 free tier fails systematically with 429 rate limits across three consecutive calls, making it an unreliable provider.
 
 ### `tool:fähigkeiten-gezielt-trainieren`
 *27.08. 19:03 UTC · Quelle: hands*
