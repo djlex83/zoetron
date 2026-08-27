@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4308 Fakten** · Stand 2026-08-27 06:32 UTC · aktualisiert bei jedem Herzschlag
+**4314 Fakten** · Stand 2026-08-27 06:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1745
+- **dream:** 1750
 - **swarm_artifact:** 1071
 - **last_swarm_critique:** 521
 - **anti_pattern:** 367
@@ -11,7 +11,7 @@
 - **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 25
-- **aktuell_organfehler:** 14
+- **aktuell_organfehler:** 15
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827065107:5:c37ec2`
+*27.08. 06:51 UTC · Quelle: dream*
+
+Hand actions with exit code 0 succeeded (10 lines read), while exit code 1 failed despite similar duration, indicating silent failures require explicit error capture.
+
+### `dream:20260827065107:4:172dce`
+*27.08. 06:51 UTC · Quelle: dream*
+
+Calibration predicted score 5 but actual was 8, revealing systematic underestimation of swarm convergence speed in early cycles.
+
+### `dream:20260827065107:3:786926`
+*27.08. 06:51 UTC · Quelle: dream*
+
+Successful model calls (nvidia/nemotron-3.5-lightning:free) show high latency (101s) but stable output, implying reliability correlates with lower concurrency.
+
+### `dream:20260827065107:2:9d0b5e`
+*27.08. 06:51 UTC · Quelle: dream*
+
+Nvidia's nemotron-3-ultra-550b:free returns 502 upstream errors intermittently, suggesting backend instability rather than client-side issues.
+
+### `dream:20260827065107:1:30a77e`
+*27.08. 06:51 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) consistently fail under concurrent load, indicating OpenRouter's free tier throttles aggressively during swarm bursts.
+
+### `aktuell_organfehler`
+*27.08. 06:33 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-27 06:28:18 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `tool:fähigkeitsvorschläge-in-echte-skills-umw`
 *27.08. 06:31 UTC · Quelle: hands*
