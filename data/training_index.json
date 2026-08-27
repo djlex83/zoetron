@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T19:03:47.132727",
+  "generated_at": "2026-08-27T21:13:31.107029",
   "data_root": "/workspace/zoetron/data",
   "organs": {
     "benchmark_organ": null,
@@ -10,6 +10,7 @@
   "training_files": [
     "artefakte/demo_goal_high_score_fail_test_issue.json",
     "artefakte/evolution_roadmap.json",
+    "artefakte/model_health_check_20260827_210417.json",
     "artefakte/skills.json",
     "artefakte/swarm_run_1_20260827_054653.json",
     "artefakte/swarm_run_1_20260827_054759.json",
@@ -85,6 +86,7 @@
     "openrouter_cache.json",
     "scheduler_config.json",
     "selbstdiagnose.json",
+    "skills/learned_skills.json",
     "staleness_tracker.json",
     "swarm_execution_trace.json",
     "taktung.json",
@@ -127,6 +129,7 @@
     "memory/integration_test_log.jsonl",
     "scheduler_history.jsonl",
     "skill_test_results.jsonl",
+    "skills/learning_log.jsonl",
     "zoeme/logs/20260827.jsonl"
   ],
   "proposed_skills": [],

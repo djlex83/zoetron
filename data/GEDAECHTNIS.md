@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4745 Fakten** · Stand 2026-08-27 21:05 UTC · aktualisiert bei jedem Herzschlag
+**4750 Fakten** · Stand 2026-08-27 21:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1942
+- **dream:** 1947
 - **swarm_artifact:** 1199
 - **last_swarm_critique:** 543
 - **anti_pattern:** 397
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827211313:5:07c4ab`
+*27.08. 21:13 UTC · Quelle: dream*
+
+The learning loop (simulation→hand_action→tor) completed a full cycle with a 340-line Python artifact, proving end-to-end skill acquisition works.
+
+### `dream:20260827211313:4:1da834`
+*27.08. 21:13 UTC · Quelle: dream*
+
+Poolside Laguna-S-2.1 is the only model with zero 5xx errors and consistent 20-60s latency, making it the current reliability anchor.
+
+### `dream:20260827211313:3:b40bdf`
+*27.08. 21:13 UTC · Quelle: dream*
+
+InclusionAI Ling-3.0-Flash-Fin delivers 10x lower latency (4.7s) than alternatives but remains unvalidated at scale with only one success sample.
+
+### `dream:20260827211313:2:c32d1f`
+*27.08. 21:13 UTC · Quelle: dream*
+
+Nvidia Nemotron-3-Ultra exhibits cascading degradation: 502 upstream errors under load and latency tripling from 55s to 192s across three successful calls.
+
+### `dream:20260827211313:1:05d4c4`
+*27.08. 21:13 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across 4/6 model providers, making free-tier endpoints unreliable for sustained workloads.
 
 ### `last_swarm_critique`
 *27.08. 21:04 UTC · Quelle: critic*

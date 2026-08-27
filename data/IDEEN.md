@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The learning loop (simulation→hand_action→tor) completed a full cycle with a 340-line Python artifact, proving end-to-end skill acquisition works.
+- Poolside Laguna-S-2.1 is the only model with zero 5xx errors and consistent 20-60s latency, making it the current reliability anchor.
+- InclusionAI Ling-3.0-Flash-Fin delivers 10x lower latency (4.7s) than alternatives but remains unvalidated at scale with only one success sample.
+- Nvidia Nemotron-3-Ultra exhibits cascading degradation: 502 upstream errors under load and latency tripling from 55s to 192s across three successful c
+- Rate limiting (HTTP 429) is the dominant failure mode across 4/6 model providers, making free-tier endpoints unreliable for sustained workloads.
 - Anti-pattern recall successfully retrieved prior failure modes, but simulation still detected 5 risks post-evolution, indicating memory retrieval need
 - Latency variance among working models (2.3s to 84s) makes timeout-aware model selection critical for interactive loops.
 - Evolutionary variant selection improved score from 7 to 9, but swarm convergence failed after 2 cycles, suggesting critic/builder ratio (1:4) lacks su
@@ -51,11 +56,6 @@
 - The system's multi-model fallback strategy (Nemotron → GLM → Gemma → Poolside) successfully achieved task completion despite 10+ consecutive rate-limi
 - Nemotron-3-Ultra exhibits high latency variance (33–155 s) and occasional 502 upstream errors, indicating unstable capacity allocation behind the free
 - Free-tier models on OpenRouter suffer pervasive 429 rate limiting, making them unreliable for production workloads without aggressive backoff and fall
-- Simulation-based revision loops (verdict: revise, 3 risks → 3 revisions) converge but lack success-rate telemetry.
-- Latency spans 2–42s on successes, demanding adaptive timeouts tied to per-model rolling percentiles.
-- Poolside/laguna-s-2.1:free shows highest reliability and lowest latency variance, making it the primary fallback candidate.
-- Consecutive failure tracking (3 errors → 1800s block) effectively prevents cascade overload but needs per-model circuit breakers.
-- Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring request pacing rather than model switching.
 
 ---
 
