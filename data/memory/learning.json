@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 05:17:01",
+ "stand": "2026-08-27 05:21:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,6 +69,12 @@
    "quote": 1.0
   },
   {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -85,20 +91,14 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
- "haende_quote": 0.574,
- "simulationen_angewandt": 76,
+ "haende_quote": 0.576,
+ "simulationen_angewandt": 75,
  "swarm_scores": {
-  "n": 63,
+  "n": 62,
   "best": 9.0,
-  "schnitt": 4.27
+  "schnitt": 4.32
  },
  "score_nach_ziel_typ": {
   "analyse": {

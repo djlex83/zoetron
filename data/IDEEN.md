@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,14 +12,14 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- Skill 'reflex_first_routing': at goal creation, keyword-match against the reflex registry and auto-execute the
-- Skill 'proposal_backlog_gate': pause new skill_proposal emission whenever untested proposals exceed tested pro
-- Skill 'rate_limit_backoff': on HTTP 429, apply exponential backoff per provider and record which providers are
-- Skill 'zero_prune_alert': after 3 consecutive prune_runs with 0 removals, automatically log a diagnostic compa
-- Skill 'dream_integration_step': convert recurring 'connect old dreams with new plans' drive goals into a concr
 - Implement per-model exponential backoff with a shared cooldown table: after two consecutive 429s on a model, s
 - Build a model-health router that ranks endpoints by recent success rate and latency, automatically demoting mo
 - Create a scheduled backlog-drainer task that pops and implements the oldest pending skill proposal each swarm 
+- Add a monitor that maps model_fail events into the selbstdiagnose organ taxonomy (e.g., 'kommunikation' organ)
+- Instrument the pruner to log why candidates were rejected (below threshold vs. none evaluated) so zero-prune r
+- rate_limit_backoff.py: on HTTP 429 from OpenRouter, apply exponential backoff with jitter and automatically fa
+- evolution_winner_enforcer.py: guarantee that the highest-scoring evolved variant's code changes are actually a
+- structured_failure_logger.py: capture exit codes, stderr, and error class for every failed hand_action/model c
 
 ## 🔥 Eigene Ziele
 
@@ -30,6 +30,7 @@
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 2×)*
@@ -37,10 +38,14 @@
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
-- Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pre-execution validation of artifacts (size, imports, token limits) is critical to prevent wasting scarce, unreliable model calls on doomed executions
+- Inheritable knowledge protocols ("Zoem") are essential for preserving proven strategies across system generations to avoid relearning.
+- A significant gap exists between skill proposal generation and actual skill integration, wasting potential system improvements.
+- High system stress (1.0) combined with unreliable model availability necessitates aggressive task reduction and conservative execution strategies.
+- Free-tier LLM endpoints suffer from severe rate limiting (429) and upstream overload (502), causing cascading failures during high-stress periods.
 - The system generates valuable skill proposals but fails to implement them, indicating a critical gap between the planning and execution phases.
 - Hand actions failing with non-zero exit codes but no explicit error messages point to a lack of robust stderr capturing in the execution environment.
 - Swarm simulations failing to converge on complex protocol designs suggests that current iteration limits or role coordination strategies are inadequat
@@ -51,11 +56,6 @@
 - The system operates under maximum stress (1.0) with severely constrained compute budget (3 tasks, 1 iteration), forcing conservative operation that st
 - Nvidia Nemotron models show higher success rates but extreme latency variance (15-353s), indicating unpredictable queue times on the provider side.
 - Rate limiting (HTTP 429) across multiple free-tier models is the primary failure mode, making free-tier reliance unreliable for production workloads.
-- Drive goals consistently identify the same gaps (reduce errors, use skills, close loops), revealing that systemic budget and validation mechanisms, no
-- Simulation revisions run 5 times with 5 risks yet rarely transfer, signaling that missing contract validation before handoff causes deployable artifac
-- The metabolism budget (max_iterations=1, max_tasks=3) is fundamentally mismatched with fallback-driven revision loops, requiring depth-proportional he
-- Latency variance in successful models (12.6s to 91.7s) correlates with token volume, indicating that adaptive timeouts must be token-aware, not just t
-- Free-tier model 429 errors reveal that rate limiting, not model capability, is the primary failure cause when fallback chains exhaust iteration budget
 
 ---
 

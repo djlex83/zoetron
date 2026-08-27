@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2794 Neuronen · 63622 bewertete Synapsen
+Stand: 2802 Neuronen · 63774 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -17,7 +17,7 @@ Stand: 2794 Neuronen · 63622 bewertete Synapsen
 | 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 207 | 0.24 |
 | 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 197 | 0.24 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 191 | 0.23 |
-| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 167 | 0.26 |
+| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 168 | 0.26 |
 | 9 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 180 | 0.23 |
 | 10 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 167 | 0.24 |
 | 11 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 143 | 0.28 |
