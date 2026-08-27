@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4775 Fakten** · Stand 2026-08-27 21:39 UTC · aktualisiert bei jedem Herzschlag
+**4788 Fakten** · Stand 2026-08-27 21:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1972
-- **swarm_artifact:** 1199
-- **last_swarm_critique:** 543
-- **anti_pattern:** 397
-- **last_swarm_goal:** 292
-- **strategy:** 219
-- **hand_result:** 50
+- **dream:** 1977
+- **swarm_artifact:** 1201
+- **last_swarm_critique:** 544
+- **anti_pattern:** 399
+- **last_swarm_goal:** 293
+- **strategy:** 220
+- **hand_result:** 51
 - **tool:** 35
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:2`
+*27.08. 21:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Contract-Based Validation Framework - Build a runtime contract system that validates invariants at every function boundary. Before any variable is accessed, check its existence through a proxy/wrapper layer. Implement post-co
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:0`
+*27.08. 21:48 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Self-Contained Execution Model - Rewrite the entire script as a single self-contained module with strict variable naming consistency checks. Use defensive programming with try/except blocks around all variable references. Imp
+
+### `last_swarm_critique`
+*27.08. 21:47 UTC · Quelle: critic*
+
+score=1; issues=NameError: undefined variable 'artefakte_out' (typo: defined as 'artefacts_out' but used as 'artefakte_out' in execute_skill), causing immediate crash; Script is truncated/incomplete - ends mid-sentence at '[SUM', missing main() return and if _
+
+### `last_swarm_goal`
+*27.08. 21:43 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten echt ausprobieren
+
+### `dream:20260827214302:5:48b79e`
+*27.08. 21:43 UTC · Quelle: dream*
+
+The reflex-driven skill-training tool successfully synthesized proposals but lacks a promotion pipeline to production.
+
+### `dream:20260827214302:4:0f8668`
+*27.08. 21:43 UTC · Quelle: dream*
+
+Self-diagnosis capability has atrophied from disuse while model reliability degrades.
+
+### `dream:20260827214302:3:aa9a5e`
+*27.08. 21:43 UTC · Quelle: dream*
+
+Existing skill proposals (router, backoff, monitoring, bootstrap, health dashboard) remain unexecuted despite clear need.
+
+### `dream:20260827214302:2:9c5db1`
+*27.08. 21:43 UTC · Quelle: dream*
+
+Absence of implemented circuit-breakers and backoff turns transient overloads into cascading total outages.
+
+### `dream:20260827214302:1:73664a`
+*27.08. 21:43 UTC · Quelle: dream*
+
+Free-tier models share a common OpenRouter quota bucket causing simultaneous 429 failures across all providers.
 
 ### `dream:20260827213830:5:fc922e`
 *27.08. 21:38 UTC · Quelle: dream*
