@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4750 Fakten** · Stand 2026-08-27 21:13 UTC · aktualisiert bei jedem Herzschlag
+**4755 Fakten** · Stand 2026-08-27 21:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1947
+- **dream:** 1952
 - **swarm_artifact:** 1199
 - **last_swarm_critique:** 543
 - **anti_pattern:** 397
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827212031:5:8d278b`
+*27.08. 21:20 UTC · Quelle: dream*
+
+Swarm evolution improves scores (7→9) but fails to converge in 2 cycles, indicating insufficient critic signal or premature termination.
+
+### `dream:20260827212031:4:6766a7`
+*27.08. 21:20 UTC · Quelle: dream*
+
+Model latency variance (5s–51s) for successful calls exceeds acceptable thresholds for interactive workflows, requiring timeout-aware routing.
+
+### `dream:20260827212031:3:fe8835`
+*27.08. 21:20 UTC · Quelle: dream*
+
+Calibration consistently underestimates actual performance by ~3 points (predicted 4 vs actual 7), suggesting pessimistic prior on capability.
+
+### `dream:20260827212031:2:491221`
+*27.08. 21:20 UTC · Quelle: dream*
+
+String-append integration pattern flagged by critic creates brittle compositions that hinder evolution convergence beyond score 7.
+
+### `dream:20260827212031:1:42337b`
+*27.08. 21:20 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ### `dream:20260827211313:5:07c4ab`
 *27.08. 21:13 UTC · Quelle: dream*

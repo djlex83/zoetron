@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3124 Neuronen · 82438 bewertete Synapsen
+Stand: 3128 Neuronen · 82928 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,18 +13,18 @@ Stand: 3124 Neuronen · 82438 bewertete Synapsen
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 308 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 308 | 0.25 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 247 | 0.24 |
-| 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 242 | 0.24 |
-| 5 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 240 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 238 | 0.23 |
-| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 218 | 0.25 |
+| 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 243 | 0.24 |
+| 5 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 241 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 240 | 0.23 |
+| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 219 | 0.25 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 218 | 0.24 |
-| 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 199 | 0.25 |
+| 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 200 | 0.25 |
 | 10 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 192 | 0.25 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 207 | 0.23 |
-| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeiten echt testen “ (Note 6/1… | 202 | 0.23 |
-| 13 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 186 | 0.25 |
+| 12 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 187 | 0.25 |
+| 13 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeiten echt testen “ (Note 6/1… | 202 | 0.23 |
 | 14 | 🚫 | 🚫 Gescheiterter Versuch für „Exemplar-Bank: von den e“ (Note 2/1… | 195 | 0.23 |
-| 15 | 💭 | Calibration predicted score 5 but actual was 8, revealing system… | 191 | 0.23 |
+| 15 | 💭 | Calibration predicted score 5 but actual was 8, revealing system… | 193 | 0.23 |
 
 ## Die 15 stärksten Synapsen
 

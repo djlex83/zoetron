@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm evolution improves scores (7→9) but fails to converge in 2 cycles, indicating insufficient critic signal or premature termination.
+- Model latency variance (5s–51s) for successful calls exceeds acceptable thresholds for interactive workflows, requiring timeout-aware routing.
+- Calibration consistently underestimates actual performance by ~3 points (predicted 4 vs actual 7), suggesting pessimistic prior on capability.
+- String-append integration pattern flagged by critic creates brittle compositions that hinder evolution convergence beyond score 7.
+- Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 - The learning loop (simulation→hand_action→tor) completed a full cycle with a 340-line Python artifact, proving end-to-end skill acquisition works.
 - Poolside Laguna-S-2.1 is the only model with zero 5xx errors and consistent 20-60s latency, making it the current reliability anchor.
 - InclusionAI Ling-3.0-Flash-Fin delivers 10x lower latency (4.7s) than alternatives but remains unvalidated at scale with only one success sample.
@@ -51,11 +56,6 @@
 - Evolutionary variant selection improved score from 7 to 9, but swarm convergence failed after 2 cycles, suggesting critic/builder ratio (1:4) lacks su
 - Sandbox validation revealed only 33% artifact runnability initially, indicating code generation must include executable verification before swarm comm
 - Rate limiting (429) across multiple free-tier models causes cascading failures; a model router with exponential backoff and provider diversity is esse
-- Hand-action execution (0.33 s, exit 0) confirms the generated code artifact is syntactically valid and runnable without immediate errors.
-- Calibration loop (simulation → tor → calibration → bahnen) produced accurate effort prediction (predicted=actual=7) and verified artifact generation (
-- The system's multi-model fallback strategy (Nemotron → GLM → Gemma → Poolside) successfully achieved task completion despite 10+ consecutive rate-limi
-- Nemotron-3-Ultra exhibits high latency variance (33–155 s) and occasional 502 upstream errors, indicating unstable capacity allocation behind the free
-- Free-tier models on OpenRouter suffer pervasive 429 rate limiting, making them unreliable for production workloads without aggressive backoff and fall
 
 ---
 
