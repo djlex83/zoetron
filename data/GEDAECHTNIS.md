@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4808 Fakten** · Stand 2026-08-27 22:28 UTC · aktualisiert bei jedem Herzschlag
+**4821 Fakten** · Stand 2026-08-27 22:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1997
-- **swarm_artifact:** 1201
-- **last_swarm_critique:** 544
-- **anti_pattern:** 399
-- **last_swarm_goal:** 293
-- **strategy:** 220
-- **hand_result:** 51
+- **dream:** 1998
+- **swarm_artifact:** 1207
+- **last_swarm_critique:** 545
+- **anti_pattern:** 401
+- **last_swarm_goal:** 294
+- **strategy:** 221
+- **hand_result:** 52
 - **tool:** 35
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Häufige Fehlermuster unt:1`
+*27.08. 22:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Testgetrieben: Fehlerzähl-Maschine zuerst bauen - Einen separaten Testrunner schreiben, der absichtlich fehlerhafte Eingaben generiert und prüft, ob _fehler_zusammenfassen sie korrekt erkennt. Diesen Testrunner als erstes aus
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Häufige Fehlermuster unt:0`
+*27.08. 22:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Defensiv-Iterativ: Schritt-für-Schritt-Validierung - Jede Funktion in isolierten Code-Blocks implementieren und sofort nach Schreiben ausführen, um Syntax- und Laufzeitfehler früh zu erkennen. Jeden Block mit try/except siche
+
+### `last_swarm_critique`
+*27.08. 22:38 UTC · Quelle: critic*
+
+score=0; issues=LAEUFT NICHT: Artefakt laeuft nicht: timeout after 30.0s; Kein lauffaehiger Python-Block: Code ist unvollstaendig (Datei endet abrupt mit 'gruppiert[schluessel]' in _fehler_zusammenfassen), SyntaxError; Vertrag verletzt: Artefakt ist nicht voll
+
+### `last_swarm_goal`
+*27.08. 22:34 UTC · Quelle: system*
+
+Häufige Fehlermuster untersuchen und beheben
+
+### `dream:20260827223357:1:d8b4ed`
+*27.08. 22:33 UTC · Quelle: dream*
+
+Dream could not parse its own output - check prompt size.
 
 ### `dream:20260827222803:5:6746b8`
 *27.08. 22:28 UTC · Quelle: dream*
