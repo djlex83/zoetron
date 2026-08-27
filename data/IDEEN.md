@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 14:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 15:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,6 @@
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
@@ -38,9 +37,15 @@
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
+- Modell-Fehler deutlich verringern
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals accumulate but rarely convert to executed goals, wasting proposed capability improvements.
+- Reflex-based skill testing with an incorruptible verifier converges successfully and produces no organ errors.
+- The system experiences ~3x more model failures than successes, directly undermining decision quality.
+- NVIDIA Nemotron models succeed but exhibit 80+ second latency, creating a reliability-speed tradeoff.
+- Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production use.
 - Successful reflex execution (fähigkeits-messlatte-bauen) proves automated skill-building works when triggered, but scheduling is inconsistent.
 - Recurring drive goals for same issues (model errors, capability gaps) show reactive fixes aren't addressing root causes; systematic capability buildin
 - Dream module timeout (180s) reveals consolidation itself can exceed limits, requiring incremental or streaming consolidation.
@@ -51,11 +56,6 @@
 - Calibration error of 3 (predicted 5 vs actual 8) on 'Effizienter werden' shows systematic underestimation of task complexity by 60%.
 - Nemotron-3-ultra received a 30-minute hard block after exactly 3 consecutive errors, revealing a strict circuit-breaker policy that penalizes retry st
 - All free-tier models simultaneously hit 429 rate limits, indicating a shared infrastructure bottleneck rather than individual model failures.
-- A running Python artifact (132 lines) serves as a concrete, verifiable success metric that closes the loop between simulation and reality.
-- Hand actions (local code execution) succeed in 0.24s with zero failures, outperforming all model calls on reliability and speed.
-- The simulation-revision loop (3 risks → 3 revisions applied) demonstrates that automated critique cycles produce measurable artifact improvements.
-- Latency variance across successful calls spans 5.7s to 220.4s, requiring adaptive timeouts rather than fixed thresholds.
-- Free-tier models fail predominantly due to rate limits (429) and upstream overloads (502), making them unreliable as primary dependencies.
 
 ---
 

@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4556 Fakten** · Stand 2026-08-27 14:43 UTC · aktualisiert bei jedem Herzschlag
+**4573 Fakten** · Stand 2026-08-27 15:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1868
-- **swarm_artifact:** 1139
-- **last_swarm_critique:** 533
-- **anti_pattern:** 379
-- **last_swarm_goal:** 282
-- **strategy:** 210
+- **dream:** 1873
+- **swarm_artifact:** 1145
+- **last_swarm_critique:** 534
+- **anti_pattern:** 381
+- **last_swarm_goal:** 283
+- **strategy:** 211
 - **hand_result:** 46
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 32
-- **aktuell_organfehler:** 19
+- **aktuell_organfehler:** 20
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Simulation und Träume be:2`
+*27.08. 15:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5.5): Neuro-Symbolic Dream Compilation to Verified Simulation Specs - Implement a neuro-symbolic compiler: a seq2seq transformer (fine-tuned on dream-simulation pairs) translates dream text into an intermediate representation (IR
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Simulation und Träume be:1`
+*27.08. 15:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Causal Intervention Framework with Counterfactual Dreams - Model the simulation as a structural causal model (SCM) where each organ is a causal mechanism. Dreams are treated as counterfactual interventions: a dream narrativ
+
+### `last_swarm_critique`
+*27.08. 15:08 UTC · Quelle: critic*
+
+score=2; issues=Third artifact is not valid Python (garbled with logos, incomplete code), violating the runnable artifact contract.; Dream-guided simulation seeding not implemented, leaving a critical gap in connecting dreams back to simulation.; Bridge module
+
+### `last_swarm_goal`
+*27.08. 14:47 UTC · Quelle: system*
+
+Simulation und Träume besser verbinden
+
+### `dream:20260827144622:5:7dd471`
+*27.08. 14:46 UTC · Quelle: dream*
+
+Drive goals accumulate but rarely convert to executed goals, wasting proposed capability improvements.
+
+### `dream:20260827144622:4:ec1f70`
+*27.08. 14:46 UTC · Quelle: dream*
+
+Reflex-based skill testing with an incorruptible verifier converges successfully and produces no organ errors.
+
+### `dream:20260827144622:3:913670`
+*27.08. 14:46 UTC · Quelle: dream*
+
+The system experiences ~3x more model failures than successes, directly undermining decision quality.
+
+### `dream:20260827144622:2:37b6ae`
+*27.08. 14:46 UTC · Quelle: dream*
+
+NVIDIA Nemotron models succeed but exhibit 80+ second latency, creating a reliability-speed tradeoff.
+
+### `dream:20260827144622:1:b6ee36`
+*27.08. 14:46 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production use.
+
+### `aktuell_organfehler`
+*27.08. 14:44 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-27 14:43:11 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260827144011:5:0384ea`
 *27.08. 14:40 UTC · Quelle: dream*
