@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 11:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 11:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,6 @@
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
@@ -37,10 +36,16 @@
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
-- Warum schlagen so viele Modellversuche fehl?
+- Häufige Modellfehler verstehen und beheben
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation pre-flight checks are bypassed under stress, leading to degraded model selection and wasted compute.
+- Provider fallback chains are not resilient when all models hit rate limits simultaneously.
+- Skills proposed without execution paths or test harnesses fail to materialize into reliable behaviors.
+- Latency SLO violations (e.g., 180s) directly correlate with task abandonment and must be enforced before invocation.
+- Rate limiting (429) is the dominant failure mode across multiple providers, indicating systemic overload rather than isolated model issues.
 - Inactive pruning alongside repeated model failures demonstrates that fact/event pruning must be conditioned on model health and skill utilization metr
 - The three recurring drive goals—model reliability, skill utilization, and simulation-action integration—form the system's cross-cutting consolidation 
 - Skill proposals are generated at high volume and quality yet systematically underutilized, revealing that deployment gatekeeping and success-rate vali
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (10+ in this log) but drive-goal 'Vorgeschlagene Fähigkeiten wirklich nutzen' signals implementation gap: proposals lack ow
 - Latency variance for nemotron-3-ultra (22–68s) exceeds interactive SLOs, making it unreliable as primary despite availability.
 - Rate-limiting (429) on z-ai/glm-5.2:free recurs across sessions, indicating provider-level quota exhaustion rather than transient spikes.
-- Model performance is bimodal: lightweight models (laguna-s-2.1) succeed at low latency, while heavy models (nemotron-3-ultra) fail or succeed only wit
-- Sandbox execution failures ('Artefakt laeuft nicht') dominate critic feedback, showing that artifact runtime compatibility is unvalidated before deplo
-- The goal 'IMPORT und EXPORT fertigstellen' repeatedly fails to converge (converged: false) despite 3 simulation revisions and 2 swarm cycles, signalin
-- Nvidia upstream 502 errors correlate with high-latency runs of the 550B model, revealing that service overload occurs when latency exceeds 100s withou
-- All 429 Too Many Requests errors cluster around unthrottled sequential calls to rate-limited external APIs, indicating a missing backpressure mechanis
 
 ---
 

@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4466 Fakten** · Stand 2026-08-27 11:22 UTC · aktualisiert bei jedem Herzschlag
+**4483 Fakten** · Stand 2026-08-27 12:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1823
-- **swarm_artifact:** 1113
-- **last_swarm_critique:** 528
-- **anti_pattern:** 377
-- **last_swarm_goal:** 277
-- **strategy:** 209
-- **hand_result:** 44
+- **dream:** 1828
+- **swarm_artifact:** 1119
+- **last_swarm_critique:** 529
+- **anti_pattern:** 379
+- **last_swarm_goal:** 278
+- **strategy:** 210
+- **hand_result:** 45
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 30
 - **aktuell_organfehler:** 17
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*27.08. 11:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Simplification & Modularization - Critic-as-Tool - Decompose the critic into discrete, single-responsibility tools (SyntaxChecker, LogicValidator, StyleAnalyzer, ScoreAssessor) each returning tiny, rigidly-typed resul
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*27.08. 11:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 7, 7]): Validation-First Pipeline - Parse-Don't-Trust - Invert the flow: before any evolution step, run a dedicated parsing agent that takes raw critic output, attempts structured extraction with multiple strategies (regex, J
+
+### `last_swarm_critique`
+*27.08. 11:53 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*27.08. 11:44 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260827114329:5:7d066b`
+*27.08. 11:43 UTC · Quelle: dream*
+
+Simulation pre-flight checks are bypassed under stress, leading to degraded model selection and wasted compute.
+
+### `dream:20260827114329:4:fdaf22`
+*27.08. 11:43 UTC · Quelle: dream*
+
+Provider fallback chains are not resilient when all models hit rate limits simultaneously.
+
+### `dream:20260827114329:3:fc38e9`
+*27.08. 11:43 UTC · Quelle: dream*
+
+Skills proposed without execution paths or test harnesses fail to materialize into reliable behaviors.
+
+### `dream:20260827114329:2:06c9dd`
+*27.08. 11:43 UTC · Quelle: dream*
+
+Latency SLO violations (e.g., 180s) directly correlate with task abandonment and must be enforced before invocation.
+
+### `dream:20260827114329:1:e54789`
+*27.08. 11:43 UTC · Quelle: dream*
+
+Rate limiting (429) is the dominant failure mode across multiple providers, indicating systemic overload rather than isolated model issues.
 
 ### `tool:neue-fähigkeiten-aktiv-vorschlagen`
 *27.08. 11:22 UTC · Quelle: hands*

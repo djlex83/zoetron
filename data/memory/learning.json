@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 11:22:12",
+ "stand": "2026-08-27 11:59:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -43,12 +43,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
@@ -105,12 +99,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.59,
- "simulationen_angewandt": 70,
+ "haende_quote": 0.579,
+ "simulationen_angewandt": 71,
  "swarm_scores": {
   "n": 56,
   "best": 9.0,
-  "schnitt": 4.27
+  "schnitt": 4.21
  },
  "score_nach_ziel_typ": {
   "analyse": {
