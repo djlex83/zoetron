@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4337 Fakten** · Stand 2026-08-27 07:55 UTC · aktualisiert bei jedem Herzschlag
+**4354 Fakten** · Stand 2026-08-27 08:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1764
-- **swarm_artifact:** 1077
-- **last_swarm_critique:** 522
-- **anti_pattern:** 367
-- **last_swarm_goal:** 271
-- **strategy:** 204
+- **dream:** 1769
+- **swarm_artifact:** 1083
+- **last_swarm_critique:** 523
+- **anti_pattern:** 369
+- **last_swarm_goal:** 272
+- **strategy:** 205
 - **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 25
+- **tool:** 26
 - **aktuell_organfehler:** 16
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeiten-aus-vorschlägen-wirklich-ler`
+*27.08. 08:17 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten aus Vorschlägen wirklich lernen'. Datei: data/tools/fähigkeiten-aus-vorschlägen-wirklich-ler.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten aus Vorschlä:2`
+*27.08. 08:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Causal Mechanism Distillation into Composable Modules - Parse proposals to extract causal graphs (variables, interventions, outcomes) using LLMs + causal discovery. Distill each into a Structural Causal Model (SCM) module wit
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten aus Vorschlä:0`
+*27.08. 08:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Neuro-Symbolic Program Synthesis with Iterative Verification - Treat each proposal as a specification for an executable skill. Use an LLM to generate candidate Python implementations (skill code + tests), then run them in a s
+
+### `last_swarm_critique`
+*27.08. 08:13 UTC · Quelle: critic*
+
+score=6; issues=The artifact is a collection of three Python scripts that form a pipeline for loading, validating, and building skill proposals, but it does not actually implement the core goal of 'Fähigkeiten aus Vorschlägen wirklich lernen' (truly learning s
+
+### `last_swarm_goal`
+*27.08. 08:02 UTC · Quelle: system*
+
+Fähigkeiten aus Vorschlägen wirklich lernen
+
+### `dream:20260827080152:5:c04025`
+*27.08. 08:01 UTC · Quelle: dream*
+
+Memory recall accesses only the last swarm goal without checking trace staleness, risking replay of obsolete strategies.
+
+### `dream:20260827080152:4:5031bd`
+*27.08. 08:01 UTC · Quelle: dream*
+
+Five skill proposals were generated during this episode but none were validated against the observed failure signatures before the next cycle.
+
+### `dream:20260827080152:3:6da605`
+*27.08. 08:01 UTC · Quelle: dream*
+
+Stress=1.0 triggers conserve mode that slashes max_tasks to 3 and max_iterations to 1, creating a capacity death-spiral that prevents recovery.
+
+### `dream:20260827080152:2:4430d6`
+*27.08. 08:01 UTC · Quelle: dream*
+
+The sole reliable model (nemotron-3.5-lightning) exhibits 150-250s latency under stress, making it a bottleneck for any multi-step swarm execution.
+
+### `dream:20260827080152:1:4ffbbd`
+*27.08. 08:01 UTC · Quelle: dream*
+
+Simultaneous 429 errors across five distinct models reveal that provider diversity on OpenRouter fails to provide resilience when the gateway itself rate-limits.
 
 ### `dream:20260827075324:5:3b025d`
 *27.08. 07:53 UTC · Quelle: dream*

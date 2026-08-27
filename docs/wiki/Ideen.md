@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 07:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 08:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
-- Häufige Fehlversuche genauer untersuchen
+- Kompetenz gezielt ausbauen
+- Proaktiv Herausforderungen angehen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory recall accesses only the last swarm goal without checking trace staleness, risking replay of obsolete strategies.
+- Five skill proposals were generated during this episode but none were validated against the observed failure signatures before the next cycle.
+- Stress=1.0 triggers conserve mode that slashes max_tasks to 3 and max_iterations to 1, creating a capacity death-spiral that prevents recovery.
+- The sole reliable model (nemotron-3.5-lightning) exhibits 150-250s latency under stress, making it a bottleneck for any multi-step swarm execution.
+- Simultaneous 429 errors across five distinct models reveal that provider diversity on OpenRouter fails to provide resilience when the gateway itself r
 - Self-diagnosis reports zero organ errors despite repeated model failures, revealing a monitoring blind spot for external API dependencies.
 - Memory blind-spot detection activates but lacks automated exploration policies, leaving gaps unaddressed across cycles.
 - Proposed skills directly mirror observed failure modes (rate limiting, artifact validation, metabolic scheduling), suggesting the system self-diagnose
@@ -51,11 +56,6 @@
 - A significant discrepancy between predicted and actual task scores reveals a failure in current complexity estimation heuristics.
 - Frequent 429 errors indicate that relying on 'free' tier model endpoints without an adaptive backoff mechanism causes systemic execution failure.
 - Tagging consolidated memories with a staleness metric and re-encoding them during low-stress windows preserves long-term retention and prevents skill 
-- Promoting skills from critic-identified failures via automatic code-edit loops creates a closed-loop where each failure directly engineers the next ca
-- A 5-revision simulation-revision cycle with risk-aware pruning reliably integrates distant memories without catastrophic interference, establishing a 
-- Repeated 429 throttling on rate-limited models under high load reveals that stress-aware adaptive retries with exponential backoff tied to internal bu
-- When internal stress crosses 0.8, the system auto-conserves by capping tasks at 3 and iterations at 1, preventing failure cascades but requiring expli
-- Hand actions with exit code 0 succeeded (10 lines read), while exit code 1 failed despite similar duration, indicating silent failures require explici
 
 ---
 
