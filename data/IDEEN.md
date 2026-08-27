@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 00:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 01:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,19 +14,19 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- Implement model fallback chain with health checks: probe models for 429/latency before dispatch, prefer nemotr
-- Add syntax validation gate after code generation: run `python -m py_compile` on artifacts before execution, au
-- Introduce integration test harness for evolved variants: run full swarm simulation on top-k variants before co
-- Calibrate predictor with execution-aware features: include recent 429 rate, hand_action failure rate, and synt
-- Create bootstrap procedure: verify environment, install dependencies, run smoke test hand_action before main t
-- rate_limit_backoff.py: on a 429 error, skip the failing model for N minutes (exponential backoff per-model) in
+- Implement per-model 429/5xx cooldown tracking with exponential backoff and reorder failover to skip recently-t
+- Modify swarm termination: 'done' requires critic-verified closure of every logged risk, independent of cycle c
+- Build a sandbox trial pipeline that executes each pending skill proposal, records pass/fail metrics, and auto-
+- Add automatic retry with backoff to hand_action executor, surfacing persistent failures as health events for s
+- Insert a pre-simulation validation gate that runs static checks and dry-runs against a test fixture, blocking 
+- skill_trial_scheduler.py: after each dream cycle, pick the single top-rated skill_proposal and execute exactly
 
 ## 🔥 Eigene Ziele
 
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail on first attempt (exit 1) then succeed on retry, indicating transient environment/permission issues.
+- The Exemplar-Bank pipeline (simulation→tor→calibration→bahnen) runs end-to-end but calibration drift (pred 3 vs actual 2) signals reward-model misalig
+- minimax/minimax-m3:free delivers high output throughput (9.6k tokens) at moderate latency, making it the current best free option.
+- nvidia/nemotron-3-ultra exhibits extreme latency variance (31–111s) rendering it unsuitable for latency-sensitive steps.
+- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable for production workflows.
 - The Cortex-Upgrade-Reflex failed to converge after three attempts, highlighting the need for explicit creator intervention when automated promotion la
 - Proposed skills remain unused because they are not integrated into active reflex loops or triggered by real-time failure signals, resulting in wasted 
 - Whisper messages are frequently lost due to lack of delivery confirmation or retry mechanisms, creating a critical communication gap in goal propagati
@@ -51,11 +56,6 @@
 - Proposed skills accumulate without validation loops, creating illusion of progress without capability gain.
 - Latency variance across models exceeds 30x (2.7s vs 69s), requiring dynamic routing not static fallback.
 - Rate limits (429) on z-ai/glm-5.2:free are the dominant failure mode, not model quality.
-- Repeated retries of known-failing models (z-ai/glm-5.2, Gemma variants) waste cycles without backoff or circuit-breaking.
-- The Cortex-Upgrade-Reflex simulation gate correctly approved a 161-line Python artifact after risk/revision analysis.
-- Poolside Laguna exhibits extreme latency variance (10s vs 190s) suggesting queueing or cold-start effects.
-- Nvidia Nemotron shows bimodal reliability: fast successes but recurring 502 upstream overload errors.
-- Free-tier models suffer pervasive 429 rate-limiting making them unreliable for production workloads.
 
 ---
 

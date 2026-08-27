@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 00:55:49",
+ "stand": "2026-08-27 01:08:31",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,9 +16,9 @@
   },
   {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
-   "laeufe": 3,
+   "laeufe": 4,
    "erfolge": 2,
-   "quote": 0.667
+   "quote": 0.5
   },
   {
    "tool": "alte-traumideen-mit-strategien-verbinden.py",
@@ -93,7 +93,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.558,
+ "haende_quote": 0.568,
  "simulationen_angewandt": 75,
  "swarm_scores": {
   "n": 67,
@@ -102,8 +102,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 64,
-   "schnitt": 4.34
+   "n": 63,
+   "schnitt": 4.32
   },
   "bau": {
    "n": 3,
