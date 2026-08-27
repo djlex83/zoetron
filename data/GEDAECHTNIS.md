@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4665 Fakten** · Stand 2026-08-27 18:41 UTC · aktualisiert bei jedem Herzschlag
+**4670 Fakten** · Stand 2026-08-27 18:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1907
+- **dream:** 1912
 - **swarm_artifact:** 1175
 - **last_swarm_critique:** 539
 - **anti_pattern:** 391
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827184542:5:2b188f`
+*27.08. 18:45 UTC · Quelle: dream*
+
+Simulation vetoed the plan (verdict=revise, 5 risks) and 2/4 revisions were applied, showing pre-execution critique catches critical flaws.
+
+### `dream:20260827184542:4:1995b5`
+*27.08. 18:45 UTC · Quelle: dream*
+
+Evolutionary search with 3 variants lifted score from 1/10 to 8-10/10 in one generation, proving iterative refinement outperforms one-shot generation.
+
+### `dream:20260827184542:3:bd08bc`
+*27.08. 18:45 UTC · Quelle: dream*
+
+Memory retrieval succeeds (4 items fetched) but graph construction fails (kanten=0, delta=-0.5), indicating a broken linking mechanism, not a retrieval problem.
+
+### `dream:20260827184542:2:08b55b`
+*27.08. 18:45 UTC · Quelle: dream*
+
+Calibration error of 4 points (predicted 5 vs actual 1) reveals the planner fundamentally misjudges connection-building difficulty.
+
+### `dream:20260827184542:1:c7edfd`
+*27.08. 18:45 UTC · Quelle: dream*
+
+Free-tier model endpoints fail catastrophically under load (429/502 errors), making single-model reliance a systemic fragility.
 
 ### `dream:20260827184033:5:38a978`
 *27.08. 18:40 UTC · Quelle: dream*

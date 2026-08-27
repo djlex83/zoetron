@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 18:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 18:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -37,10 +37,15 @@
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
-- Erinnerung durch Einbettungen verbessern
+- Modell-Fehler reduzieren für zuverlässigere Arbeit
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation vetoed the plan (verdict=revise, 5 risks) and 2/4 revisions were applied, showing pre-execution critique catches critical flaws.
+- Evolutionary search with 3 variants lifted score from 1/10 to 8-10/10 in one generation, proving iterative refinement outperforms one-shot generation.
+- Memory retrieval succeeds (4 items fetched) but graph construction fails (kanten=0, delta=-0.5), indicating a broken linking mechanism, not a retrieva
+- Calibration error of 4 points (predicted 5 vs actual 1) reveals the planner fundamentally misjudges connection-building difficulty.
+- Free-tier model endpoints fail catastrophically under load (429/502 errors), making single-model reliance a systemic fragility.
 - Simulation flags high risk (5/5) and recommends 3 revisions but only 1 is applied, suggesting a gap between risk assessment and mitigation execution.
 - Calibration predictions deviate by 4 points (predicted 5 vs actual 1), showing the reward estimator is uncalibrated for this task domain.
 - Hand actions repeatedly exit with code 1 and zero bytes read, indicating a systematic I/O or permission failure in the file-reading subsystem.
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success with sub-40s latency under load.
 - Nvidia Nemotron exhibits both rate limits and upstream 502 errors, indicating dual failure modes.
 - Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for autonomous operation.
-- Simulation verdict 'revise' with 5 risks indicates policy instability; each revision cycle consumes budget without converging.
-- Metabolism stress=1.0 triggers conserve mode that limits parallel recovery attempts, turning transient failures into sustained outages.
-- Five skill proposals exist but none are instantiated as executable tools, creating a proposal-execution gap that stalls capability growth.
-- Latency variance from 7.9s to 143s violates reflex budgets; slow models must be excluded from time-critical paths.
-- Repeated 429 errors on z-ai/glm-5.2:free show that static model routing hammers rate-limited providers instead of backing off.
 
 ---
 
