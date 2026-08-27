@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 22:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 23:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
-- Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnose runs but only checks organ errors, missing model-router health metrics (latency, error rate, fallback depth) and skill-pipeline stalls.
+- Relative path references in hand_actions cause silent failures when working directory shifts, requiring a centralized path resolver anchored to ZOETRO
+- Skill proposals accumulate without a mandatory validation gate (artifact existence, checksum, non-zero), allowing broken skills to reach production.
+- Absence of a health-aware model router forces manual fallback selection, increasing latency variance (4.8s–35.3s) and leaving high-priority goals unse
+- Free-tier OpenRouter models exhaust quota buckets rapidly under load, causing cascading 429 failures that propagate as task failures.
 - Dream could not parse its own output - check prompt size.
 - Simulation verdicts (revise, risks=3) are generated but not enforced; hand_action errors prevent the revised plan from ever being applied.
 - Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), yet the system still launches multi-step swarms that exceed budget and stall
@@ -51,11 +56,6 @@
 - Rolling p95 latency and error-rate monitoring enables early detection of model degradation before it impacts task completion.
 - Exponential backoff with jitter and circuit-breaking must be applied uniformly across all model calls to prevent cascading failures.
 - nvidia/nemotron-3-ultra-550b consistently succeeds with acceptable latency (23-39s), making it a reliable primary model.
-- 429 errors on z-ai/glm-5.2:free are recurring and predictable, indicating a need for proactive rate-limit handling rather than reactive retries.
-- Tool-refusal reflexes work in isolation but do not generalize across similar failure modes without explicit learning.
-- Dream-cycle insights are not consistently translated into actionable model-selection heuristics or routing policies.
-- Skill proposals are generated frequently but rarely validated or deployed, creating a gap between ideation and execution.
-- nvidia/nemotron-3-ultra-550b:free consistently succeeds but with variable latency (9.2s–21.9s), suggesting it is a reliable fallback.
 
 ---
 

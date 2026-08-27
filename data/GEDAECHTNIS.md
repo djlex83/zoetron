@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4821 Fakten** · Stand 2026-08-27 22:40 UTC · aktualisiert bei jedem Herzschlag
+**4826 Fakten** · Stand 2026-08-27 23:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1998
+- **dream:** 2003
 - **swarm_artifact:** 1207
 - **last_swarm_critique:** 545
 - **anti_pattern:** 401
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827232612:5:3f625f`
+*27.08. 23:26 UTC · Quelle: dream*
+
+Self-diagnose runs but only checks organ errors, missing model-router health metrics (latency, error rate, fallback depth) and skill-pipeline stalls.
+
+### `dream:20260827232612:4:0ea2bc`
+*27.08. 23:26 UTC · Quelle: dream*
+
+Relative path references in hand_actions cause silent failures when working directory shifts, requiring a centralized path resolver anchored to ZOETRON_DATA.
+
+### `dream:20260827232612:3:ccda56`
+*27.08. 23:26 UTC · Quelle: dream*
+
+Skill proposals accumulate without a mandatory validation gate (artifact existence, checksum, non-zero), allowing broken skills to reach production.
+
+### `dream:20260827232612:2:e55f56`
+*27.08. 23:26 UTC · Quelle: dream*
+
+Absence of a health-aware model router forces manual fallback selection, increasing latency variance (4.8s–35.3s) and leaving high-priority goals unserved during quota exhaustion.
+
+### `dream:20260827232612:1:d6c4e6`
+*27.08. 23:26 UTC · Quelle: dream*
+
+Free-tier OpenRouter models exhaust quota buckets rapidly under load, causing cascading 429 failures that propagate as task failures.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Häufige Fehlermuster unt:1`
 *27.08. 22:38 UTC · Quelle: evolution*
