@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4831 Fakten** · Stand 2026-08-27 23:31 UTC · aktualisiert bei jedem Herzschlag
+**4836 Fakten** · Stand 2026-08-27 23:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2008
+- **dream:** 2013
 - **swarm_artifact:** 1207
 - **last_swarm_critique:** 545
 - **anti_pattern:** 401
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827233456:5:dd1ad2`
+*27.08. 23:34 UTC · Quelle: dream*
+
+Pruning removed zero facts/events despite repeated failures, suggesting the pruning criteria miss failure-pattern evidence.
+
+### `dream:20260827233456:4:4acf19`
+*27.08. 23:34 UTC · Quelle: dream*
+
+System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which limits recovery capacity exactly when more retries are needed.
+
+### `dream:20260827233456:3:9c8606`
+*27.08. 23:34 UTC · Quelle: dream*
+
+Only poolside/laguna-s-2.1:free succeeded repeatedly, indicating provider-specific reliability differences that should be tracked.
+
+### `dream:20260827233456:2:510494`
+*27.08. 23:34 UTC · Quelle: dream*
+
+Automatic model blocking after 3 consecutive failures (1800s) prevents cascade failures but reduces available capacity during outages.
+
+### `dream:20260827233456:1:70ed09`
+*27.08. 23:34 UTC · Quelle: dream*
+
+Free-tier models consistently fail under rate limits (429) and upstream overload (502), making them unreliable for production tasks.
 
 ### `dream:20260827233031:5:bd9531`
 *27.08. 23:30 UTC · Quelle: dream*

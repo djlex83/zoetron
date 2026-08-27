@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 23:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 23:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
@@ -36,11 +36,16 @@
 - Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
-- Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed zero facts/events despite repeated failures, suggesting the pruning criteria miss failure-pattern evidence.
+- System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which limits recovery capacity exactly when more retries are needed.
+- Only poolside/laguna-s-2.1:free succeeded repeatedly, indicating provider-specific reliability differences that should be tracked.
+- Automatic model blocking after 3 consecutive failures (1800s) prevents cascade failures but reduces available capacity during outages.
+- Free-tier models consistently fail under rate limits (429) and upstream overload (502), making them unreliable for production tasks.
 - Drive goals reveal meta-cognitive gaps: error classification, skill prioritization, and memory linking remain unstructured.
 - Skill proposals accumulate but lack promotion gates; artifact validation and metabolism checks are proposed but not enforced.
 - Self-diagnose reports zero organ errors while model-router failures persist, indicating health checks omit external dependency metrics.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without a mandatory validation gate (artifact existence, checksum, non-zero), allowing broken skills to reach production.
 - Absence of a health-aware model router forces manual fallback selection, increasing latency variance (4.8s–35.3s) and leaving high-priority goals unse
 - Free-tier OpenRouter models exhaust quota buckets rapidly under load, causing cascading 429 failures that propagate as task failures.
-- Dream could not parse its own output - check prompt size.
-- Simulation verdicts (revise, risks=3) are generated but not enforced; hand_action errors prevent the revised plan from ever being applied.
-- Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), yet the system still launches multi-step swarms that exceed budget and stall
-- Skill proposals accumulate but never reach production because the promotion pipeline lacks mandatory artifact validation and the reflex executor canno
-- Hand actions fail because they resolve relative paths instead of the mandated absolute data root (ZOETRON_DATA + sys.argv[1]), breaking every file ope
 
 ---
 
