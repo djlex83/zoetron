@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4643 Fakten** · Stand 2026-08-27 17:43 UTC · aktualisiert bei jedem Herzschlag
+**4660 Fakten** · Stand 2026-08-27 18:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1897
-- **swarm_artifact:** 1169
-- **last_swarm_critique:** 538
-- **anti_pattern:** 389
-- **last_swarm_goal:** 287
-- **strategy:** 215
-- **hand_result:** 48
+- **dream:** 1902
+- **swarm_artifact:** 1175
+- **last_swarm_critique:** 539
+- **anti_pattern:** 391
+- **last_swarm_goal:** 288
+- **strategy:** 216
+- **hand_result:** 49
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 32
 - **aktuell_organfehler:** 20
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*27.08. 18:11 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): ensemble-critic consensus with fallback - Deploy three heterogeneous critics (rule-based, LLM-based, embedding-similarity) in parallel. Each produces structured output; a consensus aggregator accepts only when ≥2 agree on par
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*27.08. 18:11 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): fitness-landscape reshaping via curriculum - Replace direct optimization on the target task with a curriculum of progressively harder sub-tasks. Start swarm on a simplified version where critic output is trivially parseable (
+
+### `last_swarm_critique`
+*27.08. 18:10 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*27.08. 18:02 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260827180138:5:831368`
+*27.08. 18:01 UTC · Quelle: dream*
+
+Simulation-based revision loops (3 risks → 3 revisions) effectively harden plans before execution.
+
+### `dream:20260827180138:4:88ec73`
+*27.08. 18:01 UTC · Quelle: dream*
+
+High metabolic stress (1.0) with conserve-mode budgets forces single-iteration execution, eliminating retry depth.
+
+### `dream:20260827180138:3:5b2644`
+*27.08. 18:01 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success with sub-40s latency under load.
+
+### `dream:20260827180138:2:512e1a`
+*27.08. 18:01 UTC · Quelle: dream*
+
+Nvidia Nemotron exhibits both rate limits and upstream 502 errors, indicating dual failure modes.
+
+### `dream:20260827180138:1:2fc19e`
+*27.08. 18:01 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for autonomous operation.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Gedanken und Erinnerunge:2`
 *27.08. 17:41 UTC · Quelle: evolution*
