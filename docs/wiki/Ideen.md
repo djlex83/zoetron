@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 23:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 23:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals reveal meta-cognitive gaps: error classification, skill prioritization, and memory linking remain unstructured.
+- Skill proposals accumulate but lack promotion gates; artifact validation and metabolism checks are proposed but not enforced.
+- Self-diagnose reports zero organ errors while model-router failures persist, indicating health checks omit external dependency metrics.
+- Latency variance (6.8s vs 35.3s) across free models exceeds 5x, violating latency SLAs for interactive tasks.
+- Free-tier models exhibit cascading 429/502 failures under load, making single-model reliance a systemic fragility.
 - Self-diagnose runs but only checks organ errors, missing model-router health metrics (latency, error rate, fallback depth) and skill-pipeline stalls.
 - Relative path references in hand_actions cause silent failures when working directory shifts, requiring a centralized path resolver anchored to ZOETRO
 - Skill proposals accumulate without a mandatory validation gate (artifact existence, checksum, non-zero), allowing broken skills to reach production.
@@ -51,11 +56,6 @@
 - Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), yet the system still launches multi-step swarms that exceed budget and stall
 - Skill proposals accumulate but never reach production because the promotion pipeline lacks mandatory artifact validation and the reflex executor canno
 - Hand actions fail because they resolve relative paths instead of the mandated absolute data root (ZOETRON_DATA + sys.argv[1]), breaking every file ope
-- Free-tier models consistently hit 429 rate limits and 502 upstream errors, requiring a routed fallback chain with circuit breakers and paid-model esca
-- The simulation→hand_action→tor cycle lacks artifact validation, risking promotion of unverified or broken skills into production.
-- Rolling p95 latency and error-rate monitoring enables early detection of model degradation before it impacts task completion.
-- Exponential backoff with jitter and circuit-breaking must be applied uniformly across all model calls to prevent cascading failures.
-- nvidia/nemotron-3-ultra-550b consistently succeeds with acceptable latency (23-39s), making it a reliable primary model.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4826 Fakten** · Stand 2026-08-27 23:26 UTC · aktualisiert bei jedem Herzschlag
+**4831 Fakten** · Stand 2026-08-27 23:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2003
+- **dream:** 2008
 - **swarm_artifact:** 1207
 - **last_swarm_critique:** 545
 - **anti_pattern:** 401
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827233031:5:bd9531`
+*27.08. 23:30 UTC · Quelle: dream*
+
+Drive goals reveal meta-cognitive gaps: error classification, skill prioritization, and memory linking remain unstructured.
+
+### `dream:20260827233031:4:f27c5f`
+*27.08. 23:30 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack promotion gates; artifact validation and metabolism checks are proposed but not enforced.
+
+### `dream:20260827233031:3:17371f`
+*27.08. 23:30 UTC · Quelle: dream*
+
+Self-diagnose reports zero organ errors while model-router failures persist, indicating health checks omit external dependency metrics.
+
+### `dream:20260827233031:2:d7b0e4`
+*27.08. 23:30 UTC · Quelle: dream*
+
+Latency variance (6.8s vs 35.3s) across free models exceeds 5x, violating latency SLAs for interactive tasks.
+
+### `dream:20260827233031:1:55382b`
+*27.08. 23:30 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading 429/502 failures under load, making single-model reliance a systemic fragility.
 
 ### `dream:20260827232612:5:3f625f`
 *27.08. 23:26 UTC · Quelle: dream*
