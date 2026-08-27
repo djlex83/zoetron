@@ -1,0 +1,11 @@
+{
+  "inhalt": "Lektion: Immer Timeout bei HTTP-Requests setzen, sonst hängt der Prozess unendlich",
+  "beweisrezept": "\nimport socket\nsocket.setdefaulttimeout(5)\nassert socket.getdefaulttimeout() == 5, \"Timeout gesetzt\"\n",
+  "herkunft": {
+    "organism_id": "organism_A",
+    "zeitpunkt": "2026-08-27T04:43:21.384042",
+    "quell_ereignis": "production_incident_2026_07"
+  },
+  "stammbaum": [],
+  "zoem_id": "11284cb9"
+}

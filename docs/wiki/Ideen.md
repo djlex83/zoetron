@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 04:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 04:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,14 +12,14 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- Skill 'stderr_capture': wrap every hand_action so exit code, stdout, and stderr are persisted as structured fa
-- Skill 'late_calibration': defer score prediction until after simulation verdicts exist, or predict twice (pre/
-- Skill 'evolve_on_low_score': automatically trigger an evolution_run with ≥3 variants whenever a swarm cycle en
-- Skill 'long_call_splitter': detect predicted output > ~4000 tokens and decompose into chunked sub-calls to cap
-- Skill 'recurring_failure_ledger': aggregate repeated failure signatures (e.g., exit 1, calibration miss > 2) i
-- Skill 'error_payload_guard': on any non-zero exit with error=null, automatically re-run the action with verbos
-- Skill 'proposal_trial_quota': enforce a ratio cap (e.g., max 5 open proposals per 1 tested) that pauses new sk
-- Skill 'min_cycle_floor': set a minimum of 3-4 swarm cycles before declaring non-convergence when score is low 
+- skill_trial_scheduler.py: guarantee at least one pending skill_proposal gets an executed trial with recorded p
+- failure_reason_logger.py: write structured rejection/error reasons (tool denial, model failure, goal abort) in
+- goal_resolution_tracker.py: mark drive_goals as blocked or duplicate when no new evidence has arrived since th
+- memory_pruner.py: run prune passes automatically on event-age and recall-hit thresholds rather than waiting fo
+- reflex_matcher.py: before planning any recurring task type, check the reflex registry and directly execute a p
+- Skill 'reflex_first_routing': at goal creation, keyword-match against the reflex registry and auto-execute the
+- Skill 'proposal_backlog_gate': pause new skill_proposal emission whenever untested proposals exceed tested pro
+- Skill 'rate_limit_backoff': on HTTP 429, apply exponential backoff per provider and record which providers are
 
 ## 🔥 Eigene Ziele
 
@@ -27,20 +27,25 @@
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
-- Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 2×)*
-- Simulationen öfter anwenden *(wieder aufgegriffen: 2×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 2×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
+- Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
+- Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals consistently identify the same gaps (reduce errors, use skills, close loops), revealing that systemic budget and validation mechanisms, no
+- Simulation revisions run 5 times with 5 risks yet rarely transfer, signaling that missing contract validation before handoff causes deployable artifac
+- The metabolism budget (max_iterations=1, max_tasks=3) is fundamentally mismatched with fallback-driven revision loops, requiring depth-proportional he
+- Latency variance in successful models (12.6s to 91.7s) correlates with token volume, indicating that adaptive timeouts must be token-aware, not just t
+- Free-tier model 429 errors reveal that rate limiting, not model capability, is the primary failure cause when fallback chains exhaust iteration budget
 - Hand actions fail repeatedly (exit=1, gelesen=0) after one success, likely because the missing genome file breaks downstream tooling.
 - Simulation produced 5 revisions but the artifact still fails at runtime due to a missing genome file (/workspace/zoetron/data/memory), showing revisio
 - The system enters conserve mode (max_tasks=3, max_iterations=1) yet continues issuing model calls beyond budget, revealing a budget enforcement gap.
@@ -51,11 +56,6 @@
 - Code generation exceeding hard character limits (20k) silently prevents execution without truncation logic, turning valid output into total task failu
 - Latency variance of 2-154 seconds for identical models reveals non-deterministic queue positioning, making timeout-based fallbacks unreliable without 
 - Free-tier model endpoints exhibit cascading failure modes: rate limits (429) dominate across providers, while upstream overloads (502) indicate shared
-- Hand actions fail silently (exit 1, no error text), so every shell command must capture stderr/stdout and surface structured error payloads.
-- Simulation-driven revision (5 risks → 5 revisions) produced a running 272-line artifact, confirming that structured critique loops convert vague goals
-- Calibration predicted 1 cycle but actual was 7 (600% error), revealing that cycle estimation ignores revision-loop overhead and model latency variance
-- Nemotron-3-ultra succeeds on every call but exhibits extreme latency variance (12–134 s) correlated with input token count, requiring token-aware adap
-- Free-tier models (glm-5.2) consistently fail with 429 rate-limit errors, making them unreliable for production paths without exponential backoff and c
 
 ---
 

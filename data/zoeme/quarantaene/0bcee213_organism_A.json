@@ -1,0 +1,11 @@
+{
+  "inhalt": "Anti-Pattern: Nie 'except:' ohne Exception-Typ verwenden - fängt KeyboardInterrupt und SystemExit ab",
+  "beweisrezept": "\ntry:\n    except:\n        pass\nexcept SyntaxError:\n    pass  # Erwartet: SyntaxError weil 'except:' ohne try ungültig\nassert True, \"Test: bare except wird erkannt\"\n",
+  "herkunft": {
+    "organism_id": "organism_A",
+    "zeitpunkt": "2026-08-27T04:39:52.634639",
+    "quell_ereignis": "code_review_2026_08"
+  },
+  "stammbaum": [],
+  "zoem_id": "0bcee213"
+}

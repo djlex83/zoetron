@@ -1,0 +1,17 @@
+{"zeitpunkt": "2026-08-27T04:39:52.635020", "organism_id": "organism_A", "event": "export", "details": {"zoem_id": "0bcee213", "file": "/workspace/zoetron/data/zoeme/out/0bcee213_organism_A.json"}}
+{"zeitpunkt": "2026-08-27T04:39:52.635619", "organism_id": "organism_A", "event": "export", "details": {"zoem_id": "a4dbb664", "file": "/workspace/zoetron/data/zoeme/out/a4dbb664_organism_A.json"}}
+{"zeitpunkt": "2026-08-27T04:39:52.636003", "organism_id": "organism_A", "event": "export", "details": {"zoem_id": "1485df39", "file": "/workspace/zoetron/data/zoeme/out/1485df39_organism_A.json"}}
+{"zeitpunkt": "2026-08-27T04:39:52.638672", "organism_id": "organism_B", "event": "import_abgelehnt", "details": {"zoem_id": "0bcee213", "grund": "Fehler: SyntaxError: invalid syntax (<string>, line 3)"}}
+{"zeitpunkt": "2026-08-27T04:39:52.639417", "organism_id": "organism_B", "event": "import_abgelehnt", "details": {"zoem_id": "a4dbb664", "grund": "Fehler: ImportError: __import__ not found"}}
+{"zeitpunkt": "2026-08-27T04:39:52.640692", "organism_id": "organism_B", "event": "import_uebernommen", "details": {"zoem_id": "1485df39", "stammbaum": ["organism_B"]}}
+{"zeitpunkt": "2026-08-27T04:39:52.642499", "organism_id": "organism_B", "event": "erbgang_dokumentiert", "details": {"report": "/workspace/zoetron/data/docs/erbgang_1485df39_organism_B.json", "zoem_id": "1485df39"}}
+{"zeitpunkt": "2026-08-27T04:43:21.383306", "organism_id": "organism_A", "event": "export", "details": {"zoem_id": "35c021e9", "file": "/workspace/zoetron/data/zoeme/out/35c021e9_organism_A.json"}}
+{"zeitpunkt": "2026-08-27T04:43:21.384509", "organism_id": "organism_A", "event": "export", "details": {"zoem_id": "11284cb9", "file": "/workspace/zoetron/data/zoeme/out/11284cb9_organism_A.json"}}
+{"zeitpunkt": "2026-08-27T04:43:21.385052", "organism_id": "organism_A", "event": "export", "details": {"zoem_id": "518e3055", "file": "/workspace/zoetron/data/zoeme/out/518e3055_organism_A.json"}}
+{"zeitpunkt": "2026-08-27T04:43:21.387721", "organism_id": "organism_B", "event": "import_abgelehnt", "details": {"zoem_id": "0bcee213", "grund": "Fehler: SyntaxError: invalid syntax (<string>, line 3)"}}
+{"zeitpunkt": "2026-08-27T04:43:21.388302", "organism_id": "organism_B", "event": "import_abgelehnt", "details": {"zoem_id": "a4dbb664", "grund": "Fehler: ImportError: __import__ not found"}}
+{"zeitpunkt": "2026-08-27T04:43:21.389193", "organism_id": "organism_B", "event": "import_uebernommen", "details": {"zoem_id": "1485df39", "stammbaum": ["organism_B"]}}
+{"zeitpunkt": "2026-08-27T04:43:21.389720", "organism_id": "organism_B", "event": "import_abgelehnt", "details": {"zoem_id": "35c021e9", "grund": "Fehler: SyntaxError: invalid syntax (<string>, line 3)"}}
+{"zeitpunkt": "2026-08-27T04:43:21.390210", "organism_id": "organism_B", "event": "import_abgelehnt", "details": {"zoem_id": "11284cb9", "grund": "Fehler: ImportError: __import__ not found"}}
+{"zeitpunkt": "2026-08-27T04:43:21.391085", "organism_id": "organism_B", "event": "import_uebernommen", "details": {"zoem_id": "518e3055", "stammbaum": ["organism_B"]}}
+{"zeitpunkt": "2026-08-27T04:43:21.391881", "organism_id": "organism_B", "event": "erbgang_dokumentiert", "details": {"report": "/workspace/zoetron/data/docs/erbgang_1485df39_organism_B.json", "zoem_id": "1485df39"}}

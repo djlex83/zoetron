@@ -1,0 +1,11 @@
+{
+  "inhalt": "Anti-Pattern: Mutable Default Arguments in Funktionen (Liste/Dict) - wird geteilt!",
+  "beweisrezept": "\ndef schlechte_funktion(liste=[]):\n    liste.append(1)\n    return liste\n\ndef gute_funktion(liste=None):\n    if liste is None:\n        liste = []\n    liste.append(1)\n    return liste\n\n# Test: schlechte_funktion teilt State\na = schlechte_funktion()\nb = schlechte_funktion()\nassert a is b, \"Mutable default teilt State - Anti-Pattern bestätigt\"\n# Test: gute_funktion isoliert State\nc = gute_funktion()\nd = gute_funktion()\nassert c is not d, \"Gute Funktion isoliert State\"\n",
+  "herkunft": {
+    "organism_id": "organism_A",
+    "zeitpunkt": "2026-08-27T04:43:21.384722",
+    "quell_ereignis": "bug_report_2026_06"
+  },
+  "stammbaum": [],
+  "zoem_id": "518e3055"
+}
