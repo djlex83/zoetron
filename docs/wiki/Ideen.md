@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 6×)*
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
@@ -37,10 +37,15 @@
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
-- Mehr Vorschläge wirklich in Taten umsetzen
+- Häufige Fehler beim Denken verstehen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation revisions (4 applied) fail to close the learning loop, implying revisions address symptoms not root causes.
+- Swarm convergence stalls at 5/10 after 2 cycles with evolved=true, suggesting the critic quality gate is insufficient.
+- Latency variance exceeds 100x (0.5s to 109s) across models, making fixed timeouts either too aggressive or too permissive.
+- Critic outputs remain unparseable despite evolution, indicating missing structured-output enforcement in the prompt chain.
+- Free-tier models consistently hit 429 rate limits under load, causing cascade failures that halt learning loops.
 - Swarm convergence is not guaranteed within 2 cycles for complex goals like closing a simulation learning loop.
 - Evolution runs can improve scores (5 to 8) even when critic output is unparseable, indicating the builder variants are robust.
 - Model latency varies wildly (4s to 126s), so timeout settings must be generous or dynamically adjusted.
@@ -51,11 +56,6 @@
 - The system operates at maximum stress (1.0) in conserve mode with severely constrained budgets, causing task starvation and preventing evolutionary cy
 - Nvidia Nemotron models show higher reliability but extreme latency variance (8-177s), making them unsuitable for time-bounded tasks without fallback.
 - Rate limiting (HTTP 429) across multiple free-tier models is the primary systemic failure mode, not model capability.
-- The goal 'make proposed skills usable' repeats across swarm, reflex, and simulation, confirming skill usability as a non-negotiable cross-cutting cons
-- Silent path-resolution failures occur when absolute data-path enforcement is absent, even with input available in sys.argv and ZOETRON_DATA.
-- System conserves tasks (max_tasks=3, stress=1.0) when model reliability drops, encoding a volume-reliability trade-off.
-- Nemotron-3-ultra-550b free-model latency spans 25–81s, making fixed timeouts unreliable and adaptive wait strategies essential.
-- Free-tier models under sequential requests hit 429 rate limits predictably, requiring throttling or tier-promotion fallbacks.
 
 ---
 

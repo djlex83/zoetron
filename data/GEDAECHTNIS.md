@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4414 Fakten** · Stand 2026-08-27 10:18 UTC · aktualisiert bei jedem Herzschlag
+**4419 Fakten** · Stand 2026-08-27 10:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1793
+- **dream:** 1798
 - **swarm_artifact:** 1101
 - **last_swarm_critique:** 526
 - **anti_pattern:** 375
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827102211:5:01bb68`
+*27.08. 10:22 UTC · Quelle: dream*
+
+Simulation revisions (4 applied) fail to close the learning loop, implying revisions address symptoms not root causes.
+
+### `dream:20260827102211:4:3aaa32`
+*27.08. 10:22 UTC · Quelle: dream*
+
+Swarm convergence stalls at 5/10 after 2 cycles with evolved=true, suggesting the critic quality gate is insufficient.
+
+### `dream:20260827102211:3:4f6cef`
+*27.08. 10:22 UTC · Quelle: dream*
+
+Latency variance exceeds 100x (0.5s to 109s) across models, making fixed timeouts either too aggressive or too permissive.
+
+### `dream:20260827102211:2:656ed7`
+*27.08. 10:22 UTC · Quelle: dream*
+
+Critic outputs remain unparseable despite evolution, indicating missing structured-output enforcement in the prompt chain.
+
+### `dream:20260827102211:1:0c1dc6`
+*27.08. 10:22 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, causing cascade failures that halt learning loops.
 
 ### `dream:20260827101657:5:18dd89`
 *27.08. 10:16 UTC · Quelle: dream*
