@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4593 Fakten** · Stand 2026-08-27 15:42 UTC · aktualisiert bei jedem Herzschlag
+**4609 Fakten** · Stand 2026-08-27 16:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1882
-- **swarm_artifact:** 1151
-- **last_swarm_critique:** 535
-- **anti_pattern:** 383
-- **last_swarm_goal:** 284
-- **strategy:** 212
+- **dream:** 1887
+- **swarm_artifact:** 1157
+- **last_swarm_critique:** 536
+- **anti_pattern:** 385
+- **last_swarm_goal:** 285
+- **strategy:** 213
 - **hand_result:** 46
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 32
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Weniger menschliche Hilf:1`
+*27.08. 16:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 7]): Event-Driven Autonomous Agent Swarm - Model skills as autonomous agents communicating via message bus (Redis Streams). Each agent subscribes to intent topics, publishes capability advertisements, and negotiates tasks 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Weniger menschliche Hilf:0`
+*27.08. 16:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 9, 8]): Modular Microservice Architecture with Async Pipeline Execution - Split monolith into independent modules: skill registry (SQLite + FAISS for semantic dedup), pipeline executor (async DAG runner with checkpointing), a
+
+### `last_swarm_critique`
+*27.08. 16:43 UTC · Quelle: critic*
+
+score=6; issues=Skill-Pipeline nur Skelett (Dataclasses), keine Pipeline-Logik, keine Ausführung - Ziel 'weniger menschliche Hilfe' nicht belegt; Alle drei Artefakte übersteigen Sandbox-Limit (>20k Zeichen) - Modularisierung in separate Dateien/Module erforder
+
+### `last_swarm_goal`
+*27.08. 16:30 UTC · Quelle: system*
+
+Weniger menschliche Hilfe nötig
+
+### `dream:20260827162925:5:f5bbb8`
+*27.08. 16:29 UTC · Quelle: dream*
+
+Zero pruning across consecutive cycles indicates thresholds are too loose or nothing is actually stale, wasting consolidation compute.
+
+### `dream:20260827162925:4:84a101`
+*27.08. 16:29 UTC · Quelle: dream*
+
+The core execution gap is generating skill proposals without a closure mechanism to convert them into deployed, working reflex tools.
+
+### `dream:20260827162925:3:d7922d`
+*27.08. 16:29 UTC · Quelle: dream*
+
+Simulation outputs that produce no return value or written artifact are rejected by the tool system, making output-only approaches ineffective.
+
+### `dream:20260827162925:2:ba1e79`
+*27.08. 16:29 UTC · Quelle: dream*
+
+Primary model rate-limiting (429) is the dominant failure mode, and high-latency fallbacks (19-40s) create secondary time-budget violations.
+
+### `dream:20260827162925:1:9cdcd1`
+*27.08. 16:29 UTC · Quelle: dream*
+
+Reflex-based execution converges reliably, while pure proposal generation without implementation leaves the same problems recurring across cycles.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
 *27.08. 15:40 UTC · Quelle: evolution*

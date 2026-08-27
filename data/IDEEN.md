@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 15:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 16:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning across consecutive cycles indicates thresholds are too loose or nothing is actually stale, wasting consolidation compute.
+- The core execution gap is generating skill proposals without a closure mechanism to convert them into deployed, working reflex tools.
+- Simulation outputs that produce no return value or written artifact are rejected by the tool system, making output-only approaches ineffective.
+- Primary model rate-limiting (429) is the dominant failure mode, and high-latency fallbacks (19-40s) create secondary time-budget violations.
+- Reflex-based execution converges reliably, while pure proposal generation without implementation leaves the same problems recurring across cycles.
 - Automatic skill proposal generation from observed failures creates a self-improving loop that compounds over cycles.
 - Reflex-driven skill acquisition successfully converts concrete failure patterns into validated, reusable capabilities.
 - Self-diagnosis reliably detects drive timeouts but misses subtle degradation like repeated model retries before failure.
@@ -51,11 +56,6 @@
 - Reflex actions and self-diagnosis run reliably even when the primary cognitive model is failing, indicating robustness in the autonomous loop.
 - Free-tier models on OpenRouter are highly susceptible to rate limits (429) and upstream overloads (502), causing cascading cognitive failures.
 - Drive goals accumulate but rarely convert to executed goals, wasting proposed capability improvements.
-- Reflex-based skill testing with an incorruptible verifier converges successfully and produces no organ errors.
-- The system experiences ~3x more model failures than successes, directly undermining decision quality.
-- NVIDIA Nemotron models succeed but exhibit 80+ second latency, creating a reliability-speed tradeoff.
-- Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production use.
-- Successful reflex execution (fähigkeits-messlatte-bauen) proves automated skill-building works when triggered, but scheduling is inconsistent.
 
 ---
 
