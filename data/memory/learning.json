@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 17:11:16",
+ "stand": "2026-08-27 17:42:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -79,19 +79,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "entfernte-erinnerungen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
  "haende_quote": 0.584,
- "simulationen_angewandt": 71,
+ "simulationen_angewandt": 73,
  "swarm_scores": {
-  "n": 54,
+  "n": 53,
   "best": 9.0,
-  "schnitt": 4.54
+  "schnitt": 4.57
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 51,
-   "schnitt": 4.69
+   "schnitt": 4.67
   },
   "bau": {
    "n": 2,

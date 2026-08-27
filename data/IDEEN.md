@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 17:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 17:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation verdict 'revise' with 5 risks indicates policy instability; each revision cycle consumes budget without converging.
+- Metabolism stress=1.0 triggers conserve mode that limits parallel recovery attempts, turning transient failures into sustained outages.
+- Five skill proposals exist but none are instantiated as executable tools, creating a proposal-execution gap that stalls capability growth.
+- Latency variance from 7.9s to 143s violates reflex budgets; slow models must be excluded from time-critical paths.
+- Repeated 429 errors on z-ai/glm-5.2:free show that static model routing hammers rate-limited providers instead of backing off.
 - Local hand-action verification (0.22s) is orders of magnitude faster and more reliable than any external model call.
 - Latency variance across successful calls spans 10x (11.8s to 117.3s), requiring adaptive timeouts rather than fixed thresholds.
 - Simulation-driven revision (3 risks → 3 revisions → green TOR) successfully produced a working 164-line Python artifact in one cycle.
@@ -51,11 +56,6 @@
 - Simulation outputs that produce no return value or written artifact are rejected by the tool system, making output-only approaches ineffective.
 - Primary model rate-limiting (429) is the dominant failure mode, and high-latency fallbacks (19-40s) create secondary time-budget violations.
 - Reflex-based execution converges reliably, while pure proposal generation without implementation leaves the same problems recurring across cycles.
-- Automatic skill proposal generation from observed failures creates a self-improving loop that compounds over cycles.
-- Reflex-driven skill acquisition successfully converts concrete failure patterns into validated, reusable capabilities.
-- Self-diagnosis reliably detects drive timeouts but misses subtle degradation like repeated model retries before failure.
-- Fallback model latency of 37.8 seconds makes synchronous operations unreliable without async patterns or semantic caching.
-- Rate limiting across multiple free model providers creates cascading failures that require robust fallback chains with health-aware routing.
 
 ---
 

@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4626 Fakten** · Stand 2026-08-27 17:11 UTC · aktualisiert bei jedem Herzschlag
+**4643 Fakten** · Stand 2026-08-27 17:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1892
-- **swarm_artifact:** 1163
-- **last_swarm_critique:** 537
-- **anti_pattern:** 387
-- **last_swarm_goal:** 286
-- **strategy:** 214
-- **hand_result:** 47
+- **dream:** 1897
+- **swarm_artifact:** 1169
+- **last_swarm_critique:** 538
+- **anti_pattern:** 389
+- **last_swarm_goal:** 287
+- **strategy:** 215
+- **hand_result:** 48
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 32
 - **aktuell_organfehler:** 20
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Gedanken und Erinnerunge:2`
+*27.08. 17:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [4, 7, 4]): Agentenbasierte Interaktion über Standard-IN/OUT - Ersetze alle internen Module durch einen einfachen Agenten, der über Standard-Eingabe/Ausgabe kommuniziert. Der Agent liest Prompts von stdin, verarbeitet sie mit ein
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Gedanken und Erinnerunge:1`
+*27.08. 17:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 9, 6]): Dateibasierte Persistenz statt komplexer Module - Verwende das lokale Dateisystem als primäre Speicher- und Verbindungsstruktur. Speichere jeden Gedanken und jede Erinnerung als JSON-Zeile in einer Textdatei. Verknüpf
+
+### `last_swarm_critique`
+*27.08. 17:40 UTC · Quelle: critic*
+
+score=1; issues=Alle drei Artefakte scheitern beim Import: Modul 'bahnen' nicht gefunden, Modul 'graph' nicht gefunden, Modul 'semantic' nicht gefunden; Sandbox-Urteil ist eindeutig: 'LAEUFT NICHT' - die Artefakte sind nicht ausfuehrbar; Keines der Module (bru
+
+### `last_swarm_goal`
+*27.08. 17:29 UTC · Quelle: system*
+
+Gedanken und Erinnerungen besser verbinden
+
+### `dream:20260827172900:5:46165c`
+*27.08. 17:29 UTC · Quelle: dream*
+
+Simulation verdict 'revise' with 5 risks indicates policy instability; each revision cycle consumes budget without converging.
+
+### `dream:20260827172900:4:4ef5fa`
+*27.08. 17:29 UTC · Quelle: dream*
+
+Metabolism stress=1.0 triggers conserve mode that limits parallel recovery attempts, turning transient failures into sustained outages.
+
+### `dream:20260827172900:3:ec4f04`
+*27.08. 17:29 UTC · Quelle: dream*
+
+Five skill proposals exist but none are instantiated as executable tools, creating a proposal-execution gap that stalls capability growth.
+
+### `dream:20260827172900:2:b6369f`
+*27.08. 17:29 UTC · Quelle: dream*
+
+Latency variance from 7.9s to 143s violates reflex budgets; slow models must be excluded from time-critical paths.
+
+### `dream:20260827172900:1:ec8793`
+*27.08. 17:29 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free show that static model routing hammers rate-limited providers instead of backing off.
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten echt testen :2`
 *27.08. 17:08 UTC · Quelle: evolution*
