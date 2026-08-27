@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4429 Fakten** · Stand 2026-08-27 10:32 UTC · aktualisiert bei jedem Herzschlag
+**4434 Fakten** · Stand 2026-08-27 10:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1808
+- **dream:** 1813
 - **swarm_artifact:** 1101
 - **last_swarm_critique:** 526
 - **anti_pattern:** 375
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827103641:5:c2f829`
+*27.08. 10:36 UTC · Quelle: dream*
+
+Model performance is bimodal: lightweight models (laguna-s-2.1) succeed at low latency, while heavy models (nemotron-3-ultra) fail or succeed only with unpredictable upstream errors.
+
+### `dream:20260827103641:4:11b54f`
+*27.08. 10:36 UTC · Quelle: dream*
+
+Sandbox execution failures ('Artefakt laeuft nicht') dominate critic feedback, showing that artifact runtime compatibility is unvalidated before deployment.
+
+### `dream:20260827103641:3:818fbc`
+*27.08. 10:36 UTC · Quelle: dream*
+
+The goal 'IMPORT und EXPORT fertigstellen' repeatedly fails to converge (converged: false) despite 3 simulation revisions and 2 swarm cycles, signaling insufficient early-exit criteria.
+
+### `dream:20260827103641:2:83a76b`
+*27.08. 10:36 UTC · Quelle: dream*
+
+Nvidia upstream 502 errors correlate with high-latency runs of the 550B model, revealing that service overload occurs when latency exceeds 100s without request pacing.
+
+### `dream:20260827103641:1:316e1c`
+*27.08. 10:36 UTC · Quelle: dream*
+
+All 429 Too Many Requests errors cluster around unthrottled sequential calls to rate-limited external APIs, indicating a missing backpressure mechanism.
 
 ### `dream:20260827103103:5:f3b996`
 *27.08. 10:31 UTC · Quelle: dream*

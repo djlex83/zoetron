@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model performance is bimodal: lightweight models (laguna-s-2.1) succeed at low latency, while heavy models (nemotron-3-ultra) fail or succeed only wit
+- Sandbox execution failures ('Artefakt laeuft nicht') dominate critic feedback, showing that artifact runtime compatibility is unvalidated before deplo
+- The goal 'IMPORT und EXPORT fertigstellen' repeatedly fails to converge (converged: false) despite 3 simulation revisions and 2 swarm cycles, signalin
+- Nvidia upstream 502 errors correlate with high-latency runs of the 550B model, revealing that service overload occurs when latency exceeds 100s withou
+- All 429 Too Many Requests errors cluster around unthrottled sequential calls to rate-limited external APIs, indicating a missing backpressure mechanis
 - The artifact runtime lacks required protocol scaffolds (Zoem-Protokoll-Entwurf), causing execution to fail before model interaction.
 - Calibration overestimates task completion by 5x (predicted 6 vs actual 1), suggesting the planner lacks feedback from execution failures.
 - Hand/tool actions fail silently with exit code 1 and no error message, indicating missing preconditions or environment setup.
@@ -51,11 +56,6 @@
 - High system stress combined with frequent model failures indicates the system should reduce concurrent task loads and rely on more reliable models dur
 - Highly variable latency in nvidia/nemotron-3-ultra-550b-a55b:free (33s to 222s) necessitates adaptive, per-model timeout configurations.
 - The z-ai/glm-5.2:free model is chronically rate-limited and should be temporarily blacklisted to prevent repeated 429 failures.
-- Simulation revisions (4 applied) fail to close the learning loop, implying revisions address symptoms not root causes.
-- Swarm convergence stalls at 5/10 after 2 cycles with evolved=true, suggesting the critic quality gate is insufficient.
-- Latency variance exceeds 100x (0.5s to 109s) across models, making fixed timeouts either too aggressive or too permissive.
-- Critic outputs remain unparseable despite evolution, indicating missing structured-output enforcement in the prompt chain.
-- Free-tier models consistently hit 429 rate limits under load, causing cascade failures that halt learning loops.
 
 ---
 
