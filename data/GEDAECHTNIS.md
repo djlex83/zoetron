@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4755 Fakten** · Stand 2026-08-27 21:21 UTC · aktualisiert bei jedem Herzschlag
+**4760 Fakten** · Stand 2026-08-27 21:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1952
+- **dream:** 1957
 - **swarm_artifact:** 1199
 - **last_swarm_critique:** 543
 - **anti_pattern:** 397
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827212451:5:7ad274`
+*27.08. 21:24 UTC · Quelle: dream*
+
+No facts or events were pruned despite high error volume, meaning the memory retention policy preserves noise over signal.
+
+### `dream:20260827212451:4:230fc8`
+*27.08. 21:24 UTC · Quelle: dream*
+
+Reflex-driven goal conversion succeeds where deliberative planning stalls, showing lightweight procedural knowledge outperforms heavy simulation for routine tasks.
+
+### `dream:20260827212451:3:bdc589`
+*27.08. 21:24 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don't capture external dependency degradation.
+
+### `dream:20260827212451:2:e9228f`
+*27.08. 21:24 UTC · Quelle: dream*
+
+The swarm process evolves solutions but fails to converge within 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
+
+### `dream:20260827212451:1:9d0943`
+*27.08. 21:24 UTC · Quelle: dream*
+
+Free-tier API endpoints consistently fail under load with 429/502 errors, making them unreliable as primary inference providers.
 
 ### `dream:20260827212031:5:8d278b`
 *27.08. 21:20 UTC · Quelle: dream*

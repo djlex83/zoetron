@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 21:20:59",
+ "stand": "2026-08-27 21:25:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,6 +45,12 @@
    "quote": 1.0
   },
   {
+   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -58,12 +64,6 @@
   },
   {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -99,17 +99,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.61,
- "simulationen_angewandt": 69,
+ "haende_quote": 0.616,
+ "simulationen_angewandt": 68,
  "swarm_scores": {
-  "n": 52,
+  "n": 51,
   "best": 9.0,
-  "schnitt": 4.63
+  "schnitt": 4.71
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 49,
-   "schnitt": 4.82
+   "n": 48,
+   "schnitt": 4.73
   },
   "bau": {
    "n": 2,
