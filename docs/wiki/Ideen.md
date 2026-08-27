@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 23:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 23:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
+- Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance in the working model (2.1s → 50s) signals queue-depth effects; latency spikes predict imminent 429 cascades.
+- Simulation-driven revision cycle (3 risks → 3 revisions applied) successfully adapted behavior mid-episode, proving closed-loop correction works.
+- High stress (1.0) with minimal budget (max_tasks=3, max_iterations=1) leaves zero margin for retry/backoff strategies during rate limit storms.
+- Only poolside/laguna-s-2.1:free succeeded consistently, creating a single point of failure when it eventually throttles or fails.
+- Rate limiting (HTTP 429) affects all free-tier models on OpenRouter simultaneously, indicating shared infrastructure quotas rather than per-model limi
 - Pruning removed zero facts/events despite repeated failures, suggesting the pruning criteria miss failure-pattern evidence.
 - System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which limits recovery capacity exactly when more retries are needed.
 - Only poolside/laguna-s-2.1:free succeeded repeatedly, indicating provider-specific reliability differences that should be tracked.
@@ -51,11 +56,6 @@
 - Self-diagnose reports zero organ errors while model-router failures persist, indicating health checks omit external dependency metrics.
 - Latency variance (6.8s vs 35.3s) across free models exceeds 5x, violating latency SLAs for interactive tasks.
 - Free-tier models exhibit cascading 429/502 failures under load, making single-model reliance a systemic fragility.
-- Self-diagnose runs but only checks organ errors, missing model-router health metrics (latency, error rate, fallback depth) and skill-pipeline stalls.
-- Relative path references in hand_actions cause silent failures when working directory shifts, requiring a centralized path resolver anchored to ZOETRO
-- Skill proposals accumulate without a mandatory validation gate (artifact existence, checksum, non-zero), allowing broken skills to reach production.
-- Absence of a health-aware model router forces manual fallback selection, increasing latency variance (4.8s–35.3s) and leaving high-priority goals unse
-- Free-tier OpenRouter models exhaust quota buckets rapidly under load, causing cascading 429 failures that propagate as task failures.
 
 ---
 

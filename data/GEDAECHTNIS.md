@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4836 Fakten** · Stand 2026-08-27 23:36 UTC · aktualisiert bei jedem Herzschlag
+**4853 Fakten** · Stand 2026-08-27 23:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2013
-- **swarm_artifact:** 1207
-- **last_swarm_critique:** 545
-- **anti_pattern:** 401
-- **last_swarm_goal:** 294
-- **strategy:** 221
+- **dream:** 2018
+- **swarm_artifact:** 1213
+- **last_swarm_critique:** 546
+- **anti_pattern:** 403
+- **last_swarm_goal:** 295
+- **strategy:** 222
 - **hand_result:** 52
-- **tool:** 35
+- **tool:** 36
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fertigkeiten-wirklich-ausprobieren-nicht`
+*27.08. 23:47 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fertigkeiten wirklich ausprobieren nicht nur planen'. Datei: data/tools/fertigkeiten-wirklich-ausprobieren-nicht.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fertigkeiten wirklich au:2`
+*27.08. 23:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Evidence-First: Jede Fertigkeit muss einen kryptografisch verifizierbaren Beweis - Paradigmenwechsel: Statt zu planen und zu prüfen, muss jede Fertigkeit einen SHA-256-Hash ihres realen Outputs in eine zentrale evidence.json 
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fertigkeiten wirklich au:1`
+*27.08. 23:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Bottom-Up Modulerstellung: Fehlende Integrationspunkte selbst implementieren sta - Anstatt bestehende (nicht-existierende) Module zu importieren, werden zoetron.hands.Hands und zoetron.benchmark_organ als minimale, aber funkt
+
+### `last_swarm_critique`
+*27.08. 23:43 UTC · Quelle: critic*
+
+score=5; issues=Artefakte laufen laut Sandbox, aber erfuellen das Ziel 'wirklich ausprobieren' nur unvollstandig: Die kritischen Integrationspunkte (zoetron.hands.Hands, zoetron.benchmark_organ) existieren nicht - die Skripte fallen auf Filesystem-Scans und ma
+
+### `last_swarm_goal`
+*27.08. 23:39 UTC · Quelle: system*
+
+Fertigkeiten wirklich ausprobieren nicht nur planen
+
+### `dream:20260827233924:5:002696`
+*27.08. 23:39 UTC · Quelle: dream*
+
+Latency variance in the working model (2.1s → 50s) signals queue-depth effects; latency spikes predict imminent 429 cascades.
+
+### `dream:20260827233924:4:dfc631`
+*27.08. 23:39 UTC · Quelle: dream*
+
+Simulation-driven revision cycle (3 risks → 3 revisions applied) successfully adapted behavior mid-episode, proving closed-loop correction works.
+
+### `dream:20260827233924:3:0bc9d8`
+*27.08. 23:39 UTC · Quelle: dream*
+
+High stress (1.0) with minimal budget (max_tasks=3, max_iterations=1) leaves zero margin for retry/backoff strategies during rate limit storms.
+
+### `dream:20260827233924:2:ee5c01`
+*27.08. 23:39 UTC · Quelle: dream*
+
+Only poolside/laguna-s-2.1:free succeeded consistently, creating a single point of failure when it eventually throttles or fails.
+
+### `dream:20260827233924:1:b84e59`
+*27.08. 23:39 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) affects all free-tier models on OpenRouter simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ### `dream:20260827233456:5:dd1ad2`
 *27.08. 23:34 UTC · Quelle: dream*
