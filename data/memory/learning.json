@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 20:48:08",
+ "stand": "2026-08-27 21:05:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -102,8 +102,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 49,
-   "schnitt": 4.67
+   "n": 50,
+   "schnitt": 4.74
   },
   "bau": {
    "n": 2,

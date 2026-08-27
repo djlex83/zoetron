@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 20:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Anti-pattern recall successfully retrieved prior failure modes, but simulation still detected 5 risks post-evolution, indicating memory retrieval need
+- Latency variance among working models (2.3s to 84s) makes timeout-aware model selection critical for interactive loops.
+- Evolutionary variant selection improved score from 7 to 9, but swarm convergence failed after 2 cycles, suggesting critic/builder ratio (1:4) lacks su
+- Sandbox validation revealed only 33% artifact runnability initially, indicating code generation must include executable verification before swarm comm
+- Rate limiting (429) across multiple free-tier models causes cascading failures; a model router with exponential backoff and provider diversity is esse
 - Hand-action execution (0.33 s, exit 0) confirms the generated code artifact is syntactically valid and runnable without immediate errors.
 - Calibration loop (simulation → tor → calibration → bahnen) produced accurate effort prediction (predicted=actual=7) and verified artifact generation (
 - The system's multi-model fallback strategy (Nemotron → GLM → Gemma → Poolside) successfully achieved task completion despite 10+ consecutive rate-limi
@@ -51,11 +56,6 @@
 - Poolside/laguna-s-2.1:free shows highest reliability and lowest latency variance, making it the primary fallback candidate.
 - Consecutive failure tracking (3 errors → 1800s block) effectively prevents cascade overload but needs per-model circuit breakers.
 - Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring request pacing rather than model switching.
-- Dream-generated skill proposals skew toward infrastructure robustness (rate limits, caching, backoff) rather than novel task capabilities.
-- Self-diagnosis and pruning consistently report zero issues, suggesting the system's internal health checks are functioning but may lack sensitivity.
-- Reflex mode reliably converges for both collaboration-improvement and skill-proposal goals, confirming it as a robust execution mode.
-- Nemotron-3-ultra is the only consistent success model but exhibits high latency variance (12.7s to 80.2s), requiring timeout-aware callers.
-- GLM-5.2 free tier fails systematically with 429 rate limits across three consecutive calls, making it an unreliable provider.
 
 ---
 
