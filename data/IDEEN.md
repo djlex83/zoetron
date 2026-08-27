@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 18:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 18:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation flags high risk (5/5) and recommends 3 revisions but only 1 is applied, suggesting a gap between risk assessment and mitigation execution.
+- Calibration predictions deviate by 4 points (predicted 5 vs actual 1), showing the reward estimator is uncalibrated for this task domain.
+- Hand actions repeatedly exit with code 1 and zero bytes read, indicating a systematic I/O or permission failure in the file-reading subsystem.
+- The 'bahnen' module import failure halts artifact execution, revealing a missing dependency installation step in the deployment pipeline.
+- Free-tier LLM endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
 - Simulation-based revision loops (3 risks → 3 revisions) effectively harden plans before execution.
 - High metabolic stress (1.0) with conserve-mode budgets forces single-iteration execution, eliminating retry depth.
 - inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success with sub-40s latency under load.
@@ -51,11 +56,6 @@
 - Five skill proposals exist but none are instantiated as executable tools, creating a proposal-execution gap that stalls capability growth.
 - Latency variance from 7.9s to 143s violates reflex budgets; slow models must be excluded from time-critical paths.
 - Repeated 429 errors on z-ai/glm-5.2:free show that static model routing hammers rate-limited providers instead of backing off.
-- Local hand-action verification (0.22s) is orders of magnitude faster and more reliable than any external model call.
-- Latency variance across successful calls spans 10x (11.8s to 117.3s), requiring adaptive timeouts rather than fixed thresholds.
-- Simulation-driven revision (3 risks → 3 revisions → green TOR) successfully produced a working 164-line Python artifact in one cycle.
-- Generic fallback endpoints (openrouter/free) remain available when specific models are rate-limited, providing a stable last resort.
-- Free-tier model endpoints systematically hit 429 rate limits under sustained load, making specific model selection unreliable.
 
 ---
 

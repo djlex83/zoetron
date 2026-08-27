@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4660 Fakten** · Stand 2026-08-27 18:14 UTC · aktualisiert bei jedem Herzschlag
+**4665 Fakten** · Stand 2026-08-27 18:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1902
+- **dream:** 1907
 - **swarm_artifact:** 1175
 - **last_swarm_critique:** 539
 - **anti_pattern:** 391
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827184033:5:38a978`
+*27.08. 18:40 UTC · Quelle: dream*
+
+Simulation flags high risk (5/5) and recommends 3 revisions but only 1 is applied, suggesting a gap between risk assessment and mitigation execution.
+
+### `dream:20260827184033:4:f62fb7`
+*27.08. 18:40 UTC · Quelle: dream*
+
+Calibration predictions deviate by 4 points (predicted 5 vs actual 1), showing the reward estimator is uncalibrated for this task domain.
+
+### `dream:20260827184033:3:29fa84`
+*27.08. 18:40 UTC · Quelle: dream*
+
+Hand actions repeatedly exit with code 1 and zero bytes read, indicating a systematic I/O or permission failure in the file-reading subsystem.
+
+### `dream:20260827184033:2:b43431`
+*27.08. 18:40 UTC · Quelle: dream*
+
+The 'bahnen' module import failure halts artifact execution, revealing a missing dependency installation step in the deployment pipeline.
+
+### `dream:20260827184033:1:97f871`
+*27.08. 18:40 UTC · Quelle: dream*
+
+Free-tier LLM endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:2`
 *27.08. 18:11 UTC · Quelle: evolution*
