@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4284 Fakten** · Stand 2026-08-27 05:48 UTC · aktualisiert bei jedem Herzschlag
+**4298 Fakten** · Stand 2026-08-27 06:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1735
-- **swarm_artifact:** 1063
-- **last_swarm_critique:** 519
+- **dream:** 1740
+- **swarm_artifact:** 1069
+- **last_swarm_critique:** 520
 - **anti_pattern:** 367
-- **last_swarm_goal:** 268
+- **last_swarm_goal:** 269
 - **strategy:** 204
 - **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 23
+- **tool:** 24
 - **aktuell_organfehler:** 14
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:entfernte-erinnerungen-verknüpfen`
+*27.08. 06:18 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Entfernte Erinnerungen verknüpfen'. Datei: data/tools/entfernte-erinnerungen-verknüpfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*27.08. 06:18 UTC · Quelle: critic*
+
+score=9; issues=Keine Unit-Tests für die Kernlogik (Time-Decay, ANN-Suche, 2-Stufen-Filter) vorhanden; LLM-Integration ist nur als Stub implementiert (call_llm_for_verification gibt immer True zurück); Fehlerbehandlung bei korrupten Embedding-Dateien könnte ro
+
+### `last_swarm_goal`
+*27.08. 06:06 UTC · Quelle: system*
+
+Entfernte Erinnerungen verknüpfen
+
+### `dream:20260827060601:5:12fa72`
+*27.08. 06:06 UTC · Quelle: dream*
+
+Metabolic stress signals (high load, rate limits) are detected but not yet wired to automatic complexity downscaling.
+
+### `dream:20260827060601:4:0e1b0a`
+*27.08. 06:06 UTC · Quelle: dream*
+
+Skill proposals accumulate without a lifecycle gate: validation, promotion, and retirement remain manual, stalling capability growth.
+
+### `dream:20260827060601:3:569ced`
+*27.08. 06:06 UTC · Quelle: dream*
+
+Reflex-driven tool use succeeds on concrete, bounded tasks (doc consistency) where LLM planning adds latency and failure risk.
+
+### `dream:20260827060601:2:00f64a`
+*27.08. 06:06 UTC · Quelle: dream*
+
+Serialization protocols for knowledge transfer (Zoem) recur across proposals, signaling a core architectural need for heritable, versioned strategy packages.
+
+### `dream:20260827060601:1:5459e1`
+*27.08. 06:06 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) silently degrade system reliability unless routed around with observable fallbacks.
 
 ### `last_swarm_critique`
 *27.08. 05:47 UTC · Quelle: critic*
