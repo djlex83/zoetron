@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4404 Fakten** · Stand 2026-08-27 10:03 UTC · aktualisiert bei jedem Herzschlag
+**4409 Fakten** · Stand 2026-08-27 10:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1783
+- **dream:** 1788
 - **swarm_artifact:** 1101
 - **last_swarm_critique:** 526
 - **anti_pattern:** 375
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827101333:5:a87182`
+*27.08. 10:13 UTC · Quelle: dream*
+
+Drive goals for reliability, evolution, and dream consolidation remain unaddressed because the execution layer fails at the model-inference prerequisite.
+
+### `dream:20260827101333:4:884f7c`
+*27.08. 10:13 UTC · Quelle: dream*
+
+Simulation learning loops proceed despite known risks (3) and revisions (2), indicating insufficient validation gates before commitment.
+
+### `dream:20260827101333:3:fbf362`
+*27.08. 10:13 UTC · Quelle: dream*
+
+The system operates at maximum stress (1.0) in conserve mode with severely constrained budgets, causing task starvation and preventing evolutionary cycles.
+
+### `dream:20260827101333:2:0abf0f`
+*27.08. 10:13 UTC · Quelle: dream*
+
+Nvidia Nemotron models show higher reliability but extreme latency variance (8-177s), making them unsuitable for time-bounded tasks without fallback.
+
+### `dream:20260827101333:1:9f86d2`
+*27.08. 10:13 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) across multiple free-tier models is the primary systemic failure mode, not model capability.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: IMPORT und EXPORT fertig:2`
 *27.08. 09:58 UTC · Quelle: evolution*

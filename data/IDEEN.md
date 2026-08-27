@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals for reliability, evolution, and dream consolidation remain unaddressed because the execution layer fails at the model-inference prerequisi
+- Simulation learning loops proceed despite known risks (3) and revisions (2), indicating insufficient validation gates before commitment.
+- The system operates at maximum stress (1.0) in conserve mode with severely constrained budgets, causing task starvation and preventing evolutionary cy
+- Nvidia Nemotron models show higher reliability but extreme latency variance (8-177s), making them unsuitable for time-bounded tasks without fallback.
+- Rate limiting (HTTP 429) across multiple free-tier models is the primary systemic failure mode, not model capability.
 - The goal 'make proposed skills usable' repeats across swarm, reflex, and simulation, confirming skill usability as a non-negotiable cross-cutting cons
 - Silent path-resolution failures occur when absolute data-path enforcement is absent, even with input available in sys.argv and ZOETRON_DATA.
 - System conserves tasks (max_tasks=3, stress=1.0) when model reliability drops, encoding a volume-reliability trade-off.
@@ -51,11 +56,6 @@
 - Poolside Laguna works but at 183s latency, making it a slow fallback only.
 - Nvidia Nemotron succeeds most often but exhibits high latency variance (29-152s) and intermittent 502 upstream overloads.
 - Free-tier models consistently fail with 429 rate limits, making them unreliable as primary providers.
-- Reflex-based skill usage shows convergence but lacks measurable impact scoring, limiting feedback-driven improvement.
-- Drive goals related to resource conservation and systematic task handling remain unmet, signaling gaps in long-term planning.
-- Latency and token efficiency vary significantly between models, suggesting performance can be optimized through dynamic selection.
-- Repeated 429 errors across multiple free-tier models indicate systemic rate-limiting rather than isolated model failures.
-- Memory recall accesses only the last swarm goal without checking trace staleness, risking replay of obsolete strategies.
 
 ---
 
