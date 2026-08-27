@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 05:26:46",
+ "stand": "2026-08-27 05:31:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,6 +12,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -30,18 +36,6 @@
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "lebender-steckbrief-die-biografie-als-al.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -91,6 +85,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "lebender-steckbrief-die-biografie-als-al.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.579,

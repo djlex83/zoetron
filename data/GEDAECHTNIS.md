@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4265 Fakten** · Stand 2026-08-27 05:27 UTC · aktualisiert bei jedem Herzschlag
+**4270 Fakten** · Stand 2026-08-27 05:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1725
+- **dream:** 1730
 - **swarm_artifact:** 1057
 - **last_swarm_critique:** 518
 - **anti_pattern:** 367
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827053056:5:970d6e`
+*27.08. 05:30 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures cascade, revealing a monitoring blind spot: external dependency health is not tracked as an organ.
+
+### `dream:20260827053056:4:a02498`
+*27.08. 05:30 UTC · Quelle: dream*
+
+Destructive tool operations (subprocess) are hard-gated by human approval, creating a mandatory handoff boundary that planners must anticipate.
+
+### `dream:20260827053056:3:8cd8c1`
+*27.08. 05:30 UTC · Quelle: dream*
+
+Swarm simulations converge slowly (score 7, not converged after 2 cycles) because revision loops lack persistent checkpoints, wasting iterations on re-simulation.
+
+### `dream:20260827053056:2:5b4849`
+*27.08. 05:30 UTC · Quelle: dream*
+
+Latency variance for identical models (11s vs 73s) indicates upstream queue saturation, not model slowness, requiring queue-aware routing.
+
+### `dream:20260827053056:1:befc5e`
+*27.08. 05:30 UTC · Quelle: dream*
+
+Free-tier API endpoints exhibit systemic 429 rate-limiting that correlates across providers, making single-model reliance a reliability anti-pattern.
 
 ### `dream:20260827052551:5:9ca89c`
 *27.08. 05:25 UTC · Quelle: dream*
