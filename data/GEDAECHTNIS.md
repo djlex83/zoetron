@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4387 Fakten** · Stand 2026-08-27 09:24 UTC · aktualisiert bei jedem Herzschlag
+**4404 Fakten** · Stand 2026-08-27 10:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1778
-- **swarm_artifact:** 1095
-- **last_swarm_critique:** 525
-- **anti_pattern:** 373
-- **last_swarm_goal:** 274
-- **strategy:** 207
-- **hand_result:** 43
+- **dream:** 1783
+- **swarm_artifact:** 1101
+- **last_swarm_critique:** 526
+- **anti_pattern:** 375
+- **last_swarm_goal:** 275
+- **strategy:** 208
+- **hand_result:** 44
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 28
 - **aktuell_organfehler:** 16
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: IMPORT und EXPORT fertig:2`
+*27.08. 09:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.7): Zweiphasiger Diff-Export mit Delta-Kompression - Export-Skript erzeugt zuerst einen vollständigen Snapshot, danach nur Deltas als Patch-Datei. Verwende ein Schema-basiertes Format (z.B. JSON-Schema), das zur Laufzeit alle V
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: IMPORT und EXPORT fertig:1`
+*27.08. 09:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.3): Event-Sourcing mit Replay - Statt State zu exportieren, exportiere eine chronologische Liste aller Mutationen (Events) als JSON-Array. Jedes Event enthält Operationstyp, Zeitstempel, Schlüssel und Wert. Beim Import werden d
+
+### `last_swarm_critique`
+*27.08. 09:56 UTC · Quelle: critic*
+
+score=1; issues=Artefakt laeuft nicht (Sandbox: LAEUFT NICHT) - Export-Skript bricht ab bei json.dumps(export_obj) mit Undefined-Variable; Export-Skript ist unvollstaendig (abgebrochen bei 15456 Zeichen), kritische Funktionen fehlen; Import-Skript ist unvollst
+
+### `last_swarm_goal`
+*27.08. 09:39 UTC · Quelle: system*
+
+IMPORT und EXPORT fertigstellen
+
+### `dream:20260827093831:5:98e921`
+*27.08. 09:38 UTC · Quelle: dream*
+
+The goal 'make proposed skills usable' repeats across swarm, reflex, and simulation, confirming skill usability as a non-negotiable cross-cutting constraint.
+
+### `dream:20260827093831:4:3c6f5a`
+*27.08. 09:38 UTC · Quelle: dream*
+
+Silent path-resolution failures occur when absolute data-path enforcement is absent, even with input available in sys.argv and ZOETRON_DATA.
+
+### `dream:20260827093831:3:018a46`
+*27.08. 09:38 UTC · Quelle: dream*
+
+System conserves tasks (max_tasks=3, stress=1.0) when model reliability drops, encoding a volume-reliability trade-off.
+
+### `dream:20260827093831:2:350e57`
+*27.08. 09:38 UTC · Quelle: dream*
+
+Nemotron-3-ultra-550b free-model latency spans 25–81s, making fixed timeouts unreliable and adaptive wait strategies essential.
+
+### `dream:20260827093831:1:4e45fb`
+*27.08. 09:38 UTC · Quelle: dream*
+
+Free-tier models under sequential requests hit 429 rate limits predictably, requiring throttling or tier-promotion fallbacks.
 
 ### `tool:simulations-lernschleife-schließen`
 *27.08. 09:23 UTC · Quelle: hands*

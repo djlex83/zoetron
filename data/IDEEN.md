@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 09:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
-- Häufige Modellfehler untersuchen und beheben
-- Alte Schwarm-Rückmeldungen auffrischen
+- Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
+- Mehr Vorschläge wirklich in Taten umsetzen
+- Ergebnisse aus Träumen besser nutzen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The goal 'make proposed skills usable' repeats across swarm, reflex, and simulation, confirming skill usability as a non-negotiable cross-cutting cons
+- Silent path-resolution failures occur when absolute data-path enforcement is absent, even with input available in sys.argv and ZOETRON_DATA.
+- System conserves tasks (max_tasks=3, stress=1.0) when model reliability drops, encoding a volume-reliability trade-off.
+- Nemotron-3-ultra-550b free-model latency spans 25–81s, making fixed timeouts unreliable and adaptive wait strategies essential.
+- Free-tier models under sequential requests hit 429 rate limits predictably, requiring throttling or tier-promotion fallbacks.
 - Hand actions complete in <1s but returned zero bytes read, suggesting a parsing or targeting issue.
 - The simulation-revision loop (3 revisions) successfully produced a verified 210-line Python artifact that executes.
 - Poolside Laguna works but at 183s latency, making it a slow fallback only.
@@ -51,11 +56,6 @@
 - Latency and token efficiency vary significantly between models, suggesting performance can be optimized through dynamic selection.
 - Repeated 429 errors across multiple free-tier models indicate systemic rate-limiting rather than isolated model failures.
 - Memory recall accesses only the last swarm goal without checking trace staleness, risking replay of obsolete strategies.
-- Five skill proposals were generated during this episode but none were validated against the observed failure signatures before the next cycle.
-- Stress=1.0 triggers conserve mode that slashes max_tasks to 3 and max_iterations to 1, creating a capacity death-spiral that prevents recovery.
-- The sole reliable model (nemotron-3.5-lightning) exhibits 150-250s latency under stress, making it a bottleneck for any multi-step swarm execution.
-- Simultaneous 429 errors across five distinct models reveal that provider diversity on OpenRouter fails to provide resilience when the gateway itself r
-- Self-diagnosis reports zero organ errors despite repeated model failures, revealing a monitoring blind spot for external API dependencies.
 
 ---
 
