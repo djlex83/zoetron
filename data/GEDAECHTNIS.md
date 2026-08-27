@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4793 Fakten** · Stand 2026-08-27 22:12 UTC · aktualisiert bei jedem Herzschlag
+**4798 Fakten** · Stand 2026-08-27 22:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1982
+- **dream:** 1987
 - **swarm_artifact:** 1201
 - **last_swarm_critique:** 544
 - **anti_pattern:** 399
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827221514:5:72b6ba`
+*27.08. 22:15 UTC · Quelle: dream*
+
+Tool-refusal reflexes work in isolation but do not generalize across similar failure modes without explicit learning.
+
+### `dream:20260827221514:4:c55dc9`
+*27.08. 22:15 UTC · Quelle: dream*
+
+Dream-cycle insights are not consistently translated into actionable model-selection heuristics or routing policies.
+
+### `dream:20260827221514:3:8ab374`
+*27.08. 22:15 UTC · Quelle: dream*
+
+Skill proposals are generated frequently but rarely validated or deployed, creating a gap between ideation and execution.
+
+### `dream:20260827221514:2:37c42e`
+*27.08. 22:15 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b:free consistently succeeds but with variable latency (9.2s–21.9s), suggesting it is a reliable fallback.
+
+### `dream:20260827221514:1:4f72f9`
+*27.08. 22:15 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate systemic rate-limiting that causes cascading task failures.
 
 ### `dream:20260827221109:5:bd142a`
 *27.08. 22:11 UTC · Quelle: dream*
