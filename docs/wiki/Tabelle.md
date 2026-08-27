@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2701 Neuronen · 58744 bewertete Synapsen
+Stand: 2709 Neuronen · 59187 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,9 +13,9 @@ Stand: 2701 Neuronen · 58744 bewertete Synapsen
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 272 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 272 | 0.25 |
 | 3 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 211 | 0.23 |
-| 4 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 199 | 0.24 |
-| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 193 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 180 | 0.24 |
+| 4 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 201 | 0.24 |
+| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 195 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 182 | 0.24 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 182 | 0.23 |
 | 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 155 | 0.26 |
 | 9 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 164 | 0.24 |
@@ -23,7 +23,7 @@ Stand: 2701 Neuronen · 58744 bewertete Synapsen
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 171 | 0.23 |
 | 12 | 💭 | Calibration error of 4 points (predicted 2 vs actual 6) indicate… | 139 | 0.28 |
 | 13 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 151 | 0.25 |
-| 14 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 149 | 0.25 |
+| 14 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 150 | 0.25 |
 | 15 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 154 | 0.24 |
 
 ## Die 15 stärksten Synapsen

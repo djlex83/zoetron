@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 00:14:05",
+ "stand": "2026-08-27 00:37:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -79,10 +79,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.569,
- "simulationen_angewandt": 77,
+ "haende_quote": 0.578,
+ "simulationen_angewandt": 75,
  "swarm_scores": {
   "n": 67,
   "best": 9.0,

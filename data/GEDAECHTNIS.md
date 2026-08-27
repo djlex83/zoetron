@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4091 Fakten** · Stand 2026-08-27 00:14 UTC · aktualisiert bei jedem Herzschlag
+**4108 Fakten** · Stand 2026-08-27 00:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1651
-- **swarm_artifact:** 1011
-- **last_swarm_critique:** 509
-- **anti_pattern:** 348
-- **last_swarm_goal:** 258
-- **strategy:** 195
+- **dream:** 1656
+- **swarm_artifact:** 1017
+- **last_swarm_critique:** 510
+- **anti_pattern:** 350
+- **last_swarm_goal:** 259
+- **strategy:** 196
 - **hand_result:** 37
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 21
+- **tool:** 22
 - **aktuell_organfehler:** 14
 - **creator_teaching:** 8
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:exemplar-bank-von-den-eigenen-besten-mom`
+*27.08. 00:37 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Exemplar-Bank: von den eigenen besten Momenten lernen (In-Co'. Datei: data/tools/exemplar-bank-von-den-eigenen-besten-mom.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Exemplar-Bank: von den e:2`
+*27.08. 00:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Continuous Shadow-Mode with Canary Rollout - Deploy exemplar logic as a feature-flagged shadow path: 100% of requests execute both paths (with/without exemplars) but only control path returns to user. Sidecar collector stream
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Exemplar-Bank: von den e:1`
+*27.08. 00:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Offline Evaluation-First Architecture with Golden Set - Separate the problem into two phases: Phase 1 (offline) curates a frozen 'golden set' of 200 representative tasks with ground-truth scores. Phase 2 (online) runs a singl
+
+### `last_swarm_critique`
+*27.08. 00:36 UTC · Quelle: critic*
+
+score=4; issues=Fehlender A/B-Vergleich: Der Ersteller forderte explizit 'Fertig wenn: ein A/B-Vergleich auf der Messlatte zeigt, dass Läufe MIT Exemplaren mindestens gleichauf oder besser abschneiden, dokumentiert im Report.' - Dies ist nicht implementiert.; 
+
+### `last_swarm_goal`
+*27.08. 00:31 UTC · Quelle: system*
+
+Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
+
+### `dream:20260827003102:5:e6a373`
+*27.08. 00:31 UTC · Quelle: dream*
+
+Conservation metabolism (stress=1.0) starves exploration needed to escape repeated failure traps.
+
+### `dream:20260827003102:4:1e9797`
+*27.08. 00:31 UTC · Quelle: dream*
+
+Intermittent model availability (glm works 2/6 attempts) demands probabilistic routing, not binary failover.
+
+### `dream:20260827003102:3:984fba`
+*27.08. 00:31 UTC · Quelle: dream*
+
+Proposed skills accumulate without validation loops, creating illusion of progress without capability gain.
+
+### `dream:20260827003102:2:f4bbac`
+*27.08. 00:31 UTC · Quelle: dream*
+
+Latency variance across models exceeds 30x (2.7s vs 69s), requiring dynamic routing not static fallback.
+
+### `dream:20260827003102:1:925099`
+*27.08. 00:31 UTC · Quelle: dream*
+
+Rate limits (429) on z-ai/glm-5.2:free are the dominant failure mode, not model quality.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Exemplar-Bank: von den e:2`
 *27.08. 00:13 UTC · Quelle: evolution*

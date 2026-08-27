@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 00:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 00:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,32 +15,37 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- quota_aware_router.py: track per-model 429 events with timestamps, demote repeatedly-limited models in fallbac
-- act_checkpoint.py: wrap long-running act calls with periodic progress heartbeats and a soft deadline that trig
-- stress_gated_spawner.py: refuse to start new swarm tasks when metabolism stress exceeds 0.8 and defer them to 
-- proposal_trial_queue.py: maintain a FIFO of untried skill proposals, execute one per drive cycle in a time-box
-- whisper_escalation.py: after 2 failed convergence attempts on a whisper, generate a concrete decision request 
+- Modify swarm termination so 'done' requires critic-verified closure of every logged risk, independent of cycle
+- Extend selbstdiagnose to ingest operational events (model_fail, werkzeug_abgelehnt, converged=false) as health
+- Add a pre-execution classifier flagging artifacts using subprocess/network/file-deletion so approval-required 
+- Implement model fallback chain with health checks: probe models for 429/latency before dispatch, prefer nemotr
+- Add syntax validation gate after code generation: run `python -m py_compile` on artifacts before execution, au
 
 ## 🔥 Eigene Ziele
 
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Abgelehnte Werkzeuge prüfen und verbessern *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Conservation metabolism (stress=1.0) starves exploration needed to escape repeated failure traps.
+- Intermittent model availability (glm works 2/6 attempts) demands probabilistic routing, not binary failover.
+- Proposed skills accumulate without validation loops, creating illusion of progress without capability gain.
+- Latency variance across models exceeds 30x (2.7s vs 69s), requiring dynamic routing not static fallback.
+- Rate limits (429) on z-ai/glm-5.2:free are the dominant failure mode, not model quality.
 - Repeated retries of known-failing models (z-ai/glm-5.2, Gemma variants) waste cycles without backoff or circuit-breaking.
 - The Cortex-Upgrade-Reflex simulation gate correctly approved a 161-line Python artifact after risk/revision analysis.
 - Poolside Laguna exhibits extreme latency variance (10s vs 190s) suggesting queueing or cold-start effects.
@@ -51,11 +56,6 @@
 - Simulation artifacts rarely transition to production because success criteria are implicit and not tied to measurable runtime invariants.
 - Best-of-N verification loops stall at suboptimal scores (6/10) without convergence because the verifier lacks adversarial diversity and the model pool
 - Free-tier model endpoints exhibit cascading 429/502 failures under load, making single-model reliance a systemic reliability hazard.
-- Swarm execution with 3 builders + 1 critic + 1 planner failed to converge in 2 cycles, suggesting insufficient critic signal or cycle budget.
-- Calibration error of 4 points (predicted 2 vs actual 6) indicates systematic underestimation of artifact quality by the predictor.
-- Evolutionary search improved artifact score from 6 to 9 in one generation, confirming critic-guided mutation outperforms single-pass generation.
-- Nemotron-3-Ultra succeeds reliably but with extreme latency variance (36-108s), making it unsuitable for time-critical paths without async handling.
-- Rate limiting (429 errors) affects multiple free-tier models simultaneously, requiring provider diversity and request pacing.
 
 ---
 
