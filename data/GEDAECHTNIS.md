@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4765 Fakten** · Stand 2026-08-27 21:30 UTC · aktualisiert bei jedem Herzschlag
+**4770 Fakten** · Stand 2026-08-27 21:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1962
+- **dream:** 1967
 - **swarm_artifact:** 1199
 - **last_swarm_critique:** 543
 - **anti_pattern:** 397
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827213354:5:46f91a`
+*27.08. 21:33 UTC · Quelle: dream*
+
+Drive goals reveal persistent execution gap: repair intentions and skill proposals accumulate but rarely transition to deployed fixes.
+
+### `dream:20260827213354:4:90f11d`
+*27.08. 21:33 UTC · Quelle: dream*
+
+Simulations approve risky operations (5 risks, 5 revisions) without reducing actual failure rates, suggesting simulation fidelity gaps.
+
+### `dream:20260827213354:3:2aa741`
+*27.08. 21:33 UTC · Quelle: dream*
+
+The system operates at maximum stress (1.0) with conservative budget, causing task queuing that compounds model timeout failures.
+
+### `dream:20260827213354:2:b0db00`
+*27.08. 21:33 UTC · Quelle: dream*
+
+Nemotron-3-Ultra is the only consistently available model but exhibits extreme latency variance (7-123s), indicating upstream queueing or cold-start issues.
+
+### `dream:20260827213354:1:0c0f0b`
+*27.08. 21:33 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the systemic failure mode across all free-tier models, making them unreliable for production workloads.
 
 ### `dream:20260827212932:5:d9c021`
 *27.08. 21:29 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals reveal persistent execution gap: repair intentions and skill proposals accumulate but rarely transition to deployed fixes.
+- Simulations approve risky operations (5 risks, 5 revisions) without reducing actual failure rates, suggesting simulation fidelity gaps.
+- The system operates at maximum stress (1.0) with conservative budget, causing task queuing that compounds model timeout failures.
+- Nemotron-3-Ultra is the only consistently available model but exhibits extreme latency variance (7-123s), indicating upstream queueing or cold-start i
+- Rate limiting (HTTP 429) is the systemic failure mode across all free-tier models, making them unreliable for production workloads.
 - Swarm termination currently relies on implicit convergence without measurable score-delta or critic-veto thresholds, risking premature or stalled cycl
 - Reflex-based goal conversion works for simple tooling tasks but lacks a sandbox gate to catch runtime errors before swarm consumption.
 - The system generates skill proposals faster than it validates or deploys them, creating an execution gap that self-diagnosis does not close.
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don't capture external dependency degradation.
 - The swarm process evolves solutions but fails to converge within 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
 - Free-tier API endpoints consistently fail under load with 429/502 errors, making them unreliable as primary inference providers.
-- Swarm evolution improves scores (7→9) but fails to converge in 2 cycles, indicating insufficient critic signal or premature termination.
-- Model latency variance (5s–51s) for successful calls exceeds acceptable thresholds for interactive workflows, requiring timeout-aware routing.
-- Calibration consistently underestimates actual performance by ~3 points (predicted 4 vs actual 7), suggesting pessimistic prior on capability.
-- String-append integration pattern flagged by critic creates brittle compositions that hinder evolution convergence beyond score 7.
-- Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ---
 
