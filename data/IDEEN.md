@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 14:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 14:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
-- Ideen in echte Ziele verwandeln
+- Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A running Python artifact (132 lines) serves as a concrete, verifiable success metric that closes the loop between simulation and reality.
+- Hand actions (local code execution) succeed in 0.24s with zero failures, outperforming all model calls on reliability and speed.
+- The simulation-revision loop (3 risks → 3 revisions applied) demonstrates that automated critique cycles produce measurable artifact improvements.
+- Latency variance across successful calls spans 5.7s to 220.4s, requiring adaptive timeouts rather than fixed thresholds.
+- Free-tier models fail predominantly due to rate limits (429) and upstream overloads (502), making them unreliable as primary dependencies.
 - Simulation verdict=revise with 2 risks indicates task prioritization logic needs refinement before execution
 - Metabolism stress=1.0 with max_tasks=3 forces prioritization of reliable models over experimental ones
 - Endpoint returning 200 with no choices (Nvidia 502) reveals silent failure mode requiring explicit response validation
@@ -51,11 +56,6 @@
 - Swarm cycles lack objective convergence criteria, risking infinite loops or premature termination without score delta or critic approval thresholds.
 - Latency variance for identical models (12.6s vs 78s) exceeds 6x, making static model assignment unreliable for time-sensitive tasks.
 - Rate limiting (429) affects all free-tier models simultaneously, requiring provider-agnostic backoff and rotation rather than per-model fixes.
-- The nemotron-3.5-lightning model provides the highest throughput and stable latency for batch swarm evaluation, making it the optimal default engine f
-- Calibration predictions systematically underestimate swarm performance by ~2 points, indicating a conservative bias that can be corrected via a fixed 
-- Hand-action execution fails on first attempt due to missing state priming, but succeeds on retry, establishing a mandatory pre-execution initializatio
-- Swarm code variants that increase agent diversity consistently achieve score ≥8, demonstrating that parameter mutation over model scaling is the prima
-- Free-tier LLM endpoints enforce hard rate limits (429/502), making exponential backoff with jitter a non-negotiable prerequisite for uninterrupted swa
 
 ---
 

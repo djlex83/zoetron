@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4540 Fakten** · Stand 2026-08-27 14:23 UTC · aktualisiert bei jedem Herzschlag
+**4546 Fakten** · Stand 2026-08-27 14:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1853
+- **dream:** 1858
 - **swarm_artifact:** 1139
 - **last_swarm_critique:** 533
 - **anti_pattern:** 379
@@ -11,7 +11,7 @@
 - **hand_result:** 46
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 32
-- **aktuell_organfehler:** 18
+- **aktuell_organfehler:** 19
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827142641:5:413093`
+*27.08. 14:26 UTC · Quelle: dream*
+
+A running Python artifact (132 lines) serves as a concrete, verifiable success metric that closes the loop between simulation and reality.
+
+### `dream:20260827142641:4:8f6216`
+*27.08. 14:26 UTC · Quelle: dream*
+
+Hand actions (local code execution) succeed in 0.24s with zero failures, outperforming all model calls on reliability and speed.
+
+### `dream:20260827142641:3:ae72d9`
+*27.08. 14:26 UTC · Quelle: dream*
+
+The simulation-revision loop (3 risks → 3 revisions applied) demonstrates that automated critique cycles produce measurable artifact improvements.
+
+### `dream:20260827142641:2:5b6ef8`
+*27.08. 14:26 UTC · Quelle: dream*
+
+Latency variance across successful calls spans 5.7s to 220.4s, requiring adaptive timeouts rather than fixed thresholds.
+
+### `dream:20260827142641:1:c9294d`
+*27.08. 14:26 UTC · Quelle: dream*
+
+Free-tier models fail predominantly due to rate limits (429) and upstream overloads (502), making them unreliable as primary dependencies.
+
+### `aktuell_organfehler`
+*27.08. 14:24 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-27 14:08:22 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `tool:mehr-evolution-starten`
 *27.08. 14:23 UTC · Quelle: hands*
