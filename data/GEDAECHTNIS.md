@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4803 Fakten** · Stand 2026-08-27 22:22 UTC · aktualisiert bei jedem Herzschlag
+**4808 Fakten** · Stand 2026-08-27 22:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1992
+- **dream:** 1997
 - **swarm_artifact:** 1201
 - **last_swarm_critique:** 544
 - **anti_pattern:** 399
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827222803:5:6746b8`
+*27.08. 22:28 UTC · Quelle: dream*
+
+Simulation verdicts (revise, risks=3) are generated but not enforced; hand_action errors prevent the revised plan from ever being applied.
+
+### `dream:20260827222803:4:5ea0a8`
+*27.08. 22:28 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), yet the system still launches multi-step swarms that exceed budget and stall.
+
+### `dream:20260827222803:3:1753ba`
+*27.08. 22:28 UTC · Quelle: dream*
+
+Skill proposals accumulate but never reach production because the promotion pipeline lacks mandatory artifact validation and the reflex executor cannot locate input files.
+
+### `dream:20260827222803:2:ca8a65`
+*27.08. 22:28 UTC · Quelle: dream*
+
+Hand actions fail because they resolve relative paths instead of the mandated absolute data root (ZOETRON_DATA + sys.argv[1]), breaking every file operation.
+
+### `dream:20260827222803:1:ffb5e8`
+*27.08. 22:28 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits and 502 upstream errors, requiring a routed fallback chain with circuit breakers and paid-model escalation for critical paths.
 
 ### `dream:20260827222126:5:56a9f6`
 *27.08. 22:21 UTC · Quelle: dream*
