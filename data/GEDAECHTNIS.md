@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4675 Fakten** · Stand 2026-08-27 18:51 UTC · aktualisiert bei jedem Herzschlag
+**4692 Fakten** · Stand 2026-08-27 19:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1917
-- **swarm_artifact:** 1175
-- **last_swarm_critique:** 539
-- **anti_pattern:** 391
-- **last_swarm_goal:** 288
-- **strategy:** 216
+- **dream:** 1922
+- **swarm_artifact:** 1181
+- **last_swarm_critique:** 540
+- **anti_pattern:** 393
+- **last_swarm_goal:** 289
+- **strategy:** 217
 - **hand_result:** 49
+- **tool:** 33
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 32
 - **aktuell_organfehler:** 20
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeiten-gezielt-trainieren`
+*27.08. 19:03 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten gezielt trainieren'. Datei: data/tools/fähigkeiten-gezielt-trainieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten gezielt trai:2`
+*27.08. 19:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.7): Outcome-Driven Curriculum Bandit - Treat skill training as a contextual multi-armed bandit: each exercise is an arm, context is the learner's current embedding vector. After each real execution (Angle 1), update the reward 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten gezielt trai:0`
+*27.08. 19:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.7): Real Execution & Measurement Infrastructure - Replace stochastic simulation with a sandboxed execution engine (e.g., Docker/gVisor + resource limits) that runs generated code against curated test suites. Integrate benchmark
+
+### `last_swarm_critique`
+*27.08. 18:58 UTC · Quelle: critic*
+
+score=6; issues=Trainings-Executor nutzt rein stochastische Simulation (random.success) statt tatsächlicher Code-Ausführung oder benchmark_organ.prüfe_code-Aufruf – die 'Genauigkeit' ist nicht messbar echt.; Gap Analysis in Audit-Skript basiert auf Filename-St
+
+### `last_swarm_goal`
+*27.08. 18:54 UTC · Quelle: system*
+
+Fähigkeiten gezielt trainieren
+
+### `dream:20260827185353:5:4e3f52`
+*27.08. 18:53 UTC · Quelle: dream*
+
+Successful calls (nemotron, ling, laguna) share no obvious pattern (different providers, sizes, latencies), suggesting selection is stochastic rather than evidence-based.
+
+### `dream:20260827185353:4:1f2e88`
+*27.08. 18:53 UTC · Quelle: dream*
+
+Drive goals identify reliability, skill adoption, and sim-to-real transfer as separate issues, but the logs reveal they are symptoms of a single root cause: no validated model routing policy.
+
+### `dream:20260827185353:3:61e4ab`
+*27.08. 18:53 UTC · Quelle: dream*
+
+Simulation approval ('go' verdict) with 3 risks but 0 revisions indicates risk assessment without mitigation planning, leaving execution vulnerable to known failure modes.
+
+### `dream:20260827185353:2:a16897`
+*27.08. 18:53 UTC · Quelle: dream*
+
+The system enters conserve mode (stress=1.0) precisely when model reliability is lowest, creating a death spiral where limited retries hit exhausted endpoints.
+
+### `dream:20260827185353:1:402056`
+*27.08. 18:53 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading failure modes (429 rate limits, 502 upstream overload) that cluster in time, making sequential fallback strategies ineffective under load.
 
 ### `dream:20260827185003:5:5590db`
 *27.08. 18:50 UTC · Quelle: dream*

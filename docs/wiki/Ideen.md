@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 18:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 19:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful calls (nemotron, ling, laguna) share no obvious pattern (different providers, sizes, latencies), suggesting selection is stochastic rather 
+- Drive goals identify reliability, skill adoption, and sim-to-real transfer as separate issues, but the logs reveal they are symptoms of a single root 
+- Simulation approval ('go' verdict) with 3 risks but 0 revisions indicates risk assessment without mitigation planning, leaving execution vulnerable to
+- The system enters conserve mode (stress=1.0) precisely when model reliability is lowest, creating a death spiral where limited retries hit exhausted e
+- Free-tier models exhibit cascading failure modes (429 rate limits, 502 upstream overload) that cluster in time, making sequential fallback strategies 
 - Proposed skills accumulate but remain unused because no automatic skill-activation mechanism exists.
 - Metabolism conserve mode (stress 1.0) caps iterations at 1, preventing multi-step refinement needed for swarm convergence.
 - Hand actions fail silently (exit 1, zero bytes read) indicating tool execution environment misconfiguration.
@@ -51,11 +56,6 @@
 - Memory retrieval succeeds (4 items fetched) but graph construction fails (kanten=0, delta=-0.5), indicating a broken linking mechanism, not a retrieva
 - Calibration error of 4 points (predicted 5 vs actual 1) reveals the planner fundamentally misjudges connection-building difficulty.
 - Free-tier model endpoints fail catastrophically under load (429/502 errors), making single-model reliance a systemic fragility.
-- Simulation flags high risk (5/5) and recommends 3 revisions but only 1 is applied, suggesting a gap between risk assessment and mitigation execution.
-- Calibration predictions deviate by 4 points (predicted 5 vs actual 1), showing the reward estimator is uncalibrated for this task domain.
-- Hand actions repeatedly exit with code 1 and zero bytes read, indicating a systematic I/O or permission failure in the file-reading subsystem.
-- The 'bahnen' module import failure halts artifact execution, revealing a missing dependency installation step in the deployment pipeline.
-- Free-tier LLM endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
 
 ---
 
