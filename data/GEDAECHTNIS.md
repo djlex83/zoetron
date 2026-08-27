@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4332 Fakten** · Stand 2026-08-27 07:48 UTC · aktualisiert bei jedem Herzschlag
+**4337 Fakten** · Stand 2026-08-27 07:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1759
+- **dream:** 1764
 - **swarm_artifact:** 1077
 - **last_swarm_critique:** 522
 - **anti_pattern:** 367
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827075324:5:3b025d`
+*27.08. 07:53 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, revealing a monitoring blind spot for external API dependencies.
+
+### `dream:20260827075324:4:04eba9`
+*27.08. 07:53 UTC · Quelle: dream*
+
+Memory blind-spot detection activates but lacks automated exploration policies, leaving gaps unaddressed across cycles.
+
+### `dream:20260827075324:3:7724d8`
+*27.08. 07:53 UTC · Quelle: dream*
+
+Proposed skills directly mirror observed failure modes (rate limiting, artifact validation, metabolic scheduling), suggesting the system self-diagnoses accurately.
+
+### `dream:20260827075324:2:48e0b1`
+*27.08. 07:53 UTC · Quelle: dream*
+
+A single working model (nemotron-3.5-lightning) exhibits extreme latency (57-151s), indicating capacity saturation rather than transient errors.
+
+### `dream:20260827075324:1:f1bb4d`
+*27.08. 07:53 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
 ### `dream:20260827074631:4:778250`
 *27.08. 07:46 UTC · Quelle: dream*

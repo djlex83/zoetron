@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 07:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 07:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
-- Alte Träume miteinander verbinden
+- Häufige Fehlversuche genauer untersuchen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite repeated model failures, revealing a monitoring blind spot for external API dependencies.
+- Memory blind-spot detection activates but lacks automated exploration policies, leaving gaps unaddressed across cycles.
+- Proposed skills directly mirror observed failure modes (rate limiting, artifact validation, metabolic scheduling), suggesting the system self-diagnose
+- A single working model (nemotron-3.5-lightning) exhibits extreme latency (57-151s), indicating capacity saturation rather than transient errors.
+- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows.
 - Model availability is highly stochastic, making single-model dependency a high-risk failure mode.
 - Drive timeouts suggest that I/O latency spikes can cause critical blocking in the execution loop.
 - A significant discrepancy between predicted and actual task scores reveals a failure in current complexity estimation heuristics.
@@ -51,11 +56,6 @@
 - Repeated 429 throttling on rate-limited models under high load reveals that stress-aware adaptive retries with exponential backoff tied to internal bu
 - When internal stress crosses 0.8, the system auto-conserves by capping tasks at 3 and iterations at 1, preventing failure cascades but requiring expli
 - Hand actions with exit code 0 succeeded (10 lines read), while exit code 1 failed despite similar duration, indicating silent failures require explici
-- Calibration predicted score 5 but actual was 8, revealing systematic underestimation of swarm convergence speed in early cycles.
-- Successful model calls (nvidia/nemotron-3.5-lightning:free) show high latency (101s) but stable output, implying reliability correlates with lower con
-- Nvidia's nemotron-3-ultra-550b:free returns 502 upstream errors intermittently, suggesting backend instability rather than client-side issues.
-- Rate-limited models (429 errors) consistently fail under concurrent load, indicating OpenRouter's free tier throttles aggressively during swarm bursts
-- Memory pruning removed zero items, suggesting current retention policies are appropriate but also that stale low-signal entries may persist indefinite
 
 ---
 
