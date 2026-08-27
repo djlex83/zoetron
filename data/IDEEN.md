@@ -1,13 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-26 23:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 00:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Develop a latency-aware model router that records p95 latency per model and selects faster models for short ta *(hatte die Idee 3×)*
 - Add an auto-linker that automatically creates edges between new artifacts, goals, and related facts in the kno *(hatte die Idee 3×)*
-- Extend selbstdiagnose to ingest operational events (model_fail, werkzeug_abgelehnt, converged=false) as health *(hatte die Idee 2×)*
 - Build a sandbox trial pipeline that executes each pending skill proposal, records pass/fail metrics, and auto- *(hatte die Idee 2×)*
 - model_router.py: wrap all LLM calls with exponential backoff on 429s plus automatic failover to the next healt *(hatte die Idee 2×)*
 - Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and  *(hatte die Idee 2×)*
@@ -16,10 +15,11 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- Implement per-model 429 cooldown tracking with exponential backoff and automatic failover ordering: stealth/ox
-- Add a pre-execution classifier that flags generated artifacts using subprocess/network/file-deletion so goals 
-- Change swarm termination logic to require critic-verified closure of all logged risks before declaring done, r
-- Build a skill trial pipeline that runs each pending proposal in a sandbox, records pass/fail metrics, and auto
+- quota_aware_router.py: track per-model 429 events with timestamps, demote repeatedly-limited models in fallbac
+- act_checkpoint.py: wrap long-running act calls with periodic progress heartbeats and a soft deadline that trig
+- stress_gated_spawner.py: refuse to start new swarm tasks when metabolism stress exceeds 0.8 and defer them to 
+- proposal_trial_queue.py: maintain a FIFO of untried skill proposals, execute one per drive cycle in a time-box
+- whisper_escalation.py: after 2 failed convergence attempts on a whisper, generate a concrete decision request 
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated retries of known-failing models (z-ai/glm-5.2, Gemma variants) waste cycles without backoff or circuit-breaking.
+- The Cortex-Upgrade-Reflex simulation gate correctly approved a 161-line Python artifact after risk/revision analysis.
+- Poolside Laguna exhibits extreme latency variance (10s vs 190s) suggesting queueing or cold-start effects.
+- Nvidia Nemotron shows bimodal reliability: fast successes but recurring 502 upstream overload errors.
+- Free-tier models suffer pervasive 429 rate-limiting making them unreliable for production workloads.
 - Hand actions succeed (exit 0) but lack structured result parsing, preventing reliable chaining and retry logic.
 - Skill proposals accumulate (25) but remain unexecuted due to missing automated validation pipelines and resource allocation triggers.
 - Simulation artifacts rarely transition to production because success criteria are implicit and not tied to measurable runtime invariants.
@@ -51,11 +56,6 @@
 - Evolutionary search improved artifact score from 6 to 9 in one generation, confirming critic-guided mutation outperforms single-pass generation.
 - Nemotron-3-Ultra succeeds reliably but with extreme latency variance (36-108s), making it unsuitable for time-critical paths without async handling.
 - Rate limiting (429 errors) affects multiple free-tier models simultaneously, requiring provider diversity and request pacing.
-- Small, fast models like poolside/laguna-s-2.1 can handle lightweight tasks efficiently when latency is critical
-- Calibration predictions are consistently off by 2x, suggesting the need for better confidence estimation mechanisms
-- Model selection should prioritize reliable endpoints over free-tier models that frequently return 429 errors
-- Best-of-N evaluation with impartial judges consistently improves artifact quality from 2/10 to 9/10 scores
-- Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or retry logic
 
 ---
 

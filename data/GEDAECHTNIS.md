@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4074 Fakten** · Stand 2026-08-26 23:51 UTC · aktualisiert bei jedem Herzschlag
+**4091 Fakten** · Stand 2026-08-27 00:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1646
-- **swarm_artifact:** 1005
-- **last_swarm_critique:** 508
-- **anti_pattern:** 346
-- **last_swarm_goal:** 257
-- **strategy:** 194
-- **hand_result:** 36
+- **dream:** 1651
+- **swarm_artifact:** 1011
+- **last_swarm_critique:** 509
+- **anti_pattern:** 348
+- **last_swarm_goal:** 258
+- **strategy:** 195
+- **hand_result:** 37
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 21
 - **aktuell_organfehler:** 14
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Exemplar-Bank: von den e:2`
+*27.08. 00:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Event-Sourced Exemplar Store with CQRS - Implement ExemplarBank as an event-sourced aggregate: commands (StoreExemplar, RateExemplar) emit events persisted to an event log. Read model (ExemplarQueryView) projects events into 
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Exemplar-Bank: von den e:1`
+*27.08. 00:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Real Swarm Execution Engine for A/B Testing - Replace the simulated A/B framework with a SwarmExecutionEngine that spawns actual subprocesses running the full swarm pipeline (planner → coder → tester → critic) for each varian
+
+### `last_swarm_critique`
+*27.08. 00:11 UTC · Quelle: critic*
+
+score=2; issues=Function signature mismatch: swarm_agents.py calls get_similar_exemplars(query=task, bank=..., top_k=2, min_score=8.0) but exemplare.py defines get_similar_exemplars(goal: str, k: int=2, data_dir: Path=None) - causes TypeError at runtime; A/B t
+
+### `last_swarm_goal`
+*27.08. 00:04 UTC · Quelle: system*
+
+Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
+
+### `dream:20260827000338:5:bfb225`
+*27.08. 00:03 UTC · Quelle: dream*
+
+Repeated retries of known-failing models (z-ai/glm-5.2, Gemma variants) waste cycles without backoff or circuit-breaking.
+
+### `dream:20260827000338:4:0e5a11`
+*27.08. 00:03 UTC · Quelle: dream*
+
+The Cortex-Upgrade-Reflex simulation gate correctly approved a 161-line Python artifact after risk/revision analysis.
+
+### `dream:20260827000338:3:52efad`
+*27.08. 00:03 UTC · Quelle: dream*
+
+Poolside Laguna exhibits extreme latency variance (10s vs 190s) suggesting queueing or cold-start effects.
+
+### `dream:20260827000338:2:9c2c3b`
+*27.08. 00:03 UTC · Quelle: dream*
+
+Nvidia Nemotron shows bimodal reliability: fast successes but recurring 502 upstream overload errors.
+
+### `dream:20260827000338:1:e5bbf7`
+*27.08. 00:03 UTC · Quelle: dream*
+
+Free-tier models suffer pervasive 429 rate-limiting making them unreliable for production workloads.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Cortex-Upgrade-Reflex: n:2`
 *26.08. 23:49 UTC · Quelle: evolution*

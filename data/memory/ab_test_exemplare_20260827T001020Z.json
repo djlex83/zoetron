@@ -1,0 +1,116 @@
+{
+  "schema": "ab_test_exemplare/v1",
+  "timestamp": "2026-08-27T00:10:20.365546+00:00",
+  "data_dir": "/workspace/zoetron/data",
+  "n_runs_per_condition": 5,
+  "n_exemplars": 5,
+  "n_artefacts_seen": 175,
+  "fell_back_to_demo": true,
+  "tasks": [
+    {
+      "task_id": "demo_rechner",
+      "with": [
+        6.95,
+        5.74,
+        6.48,
+        6.21,
+        7.44
+      ],
+      "without": [
+        5.63,
+        6.5,
+        5.99,
+        7.46,
+        6.73
+      ],
+      "with_mean": 6.56,
+      "without_mean": 6.46
+    },
+    {
+      "task_id": "demo_sortier",
+      "with": [
+        6.19,
+        7.61,
+        7.29,
+        7.53,
+        6.62
+      ],
+      "without": [
+        7.5,
+        6.14,
+        5.59,
+        7.38,
+        7.01
+      ],
+      "with_mean": 7.05,
+      "without_mean": 6.72
+    },
+    {
+      "task_id": "demo_http",
+      "with": [
+        7.28,
+        6.68,
+        7.57,
+        7.52,
+        6.83
+      ],
+      "without": [
+        6.55,
+        6.68,
+        5.91,
+        7.39,
+        6.08
+      ],
+      "with_mean": 7.18,
+      "without_mean": 6.52
+    },
+    {
+      "task_id": "demo_logparse",
+      "with": [
+        6.66,
+        6.83,
+        6.59,
+        6.24,
+        5.76
+      ],
+      "without": [
+        6.41,
+        6.5,
+        7.14,
+        5.66,
+        6.44
+      ],
+      "with_mean": 6.42,
+      "without_mean": 6.43
+    }
+  ],
+  "with_exemplars": {
+    "n_runs": 20,
+    "score_mean": 6.8,
+    "score_median": 6.75,
+    "score_stdev": 0.59,
+    "score_min": 5.74,
+    "score_max": 7.61,
+    "iterations_mean": 6.05,
+    "tokens_mean": 1505,
+    "tokens_total": 30100
+  },
+  "without_exemplars": {
+    "n_runs": 20,
+    "score_mean": 6.53,
+    "score_median": 6.5,
+    "score_stdev": 0.63,
+    "score_min": 5.59,
+    "score_max": 7.5,
+    "iterations_mean": 5.5,
+    "tokens_mean": 1675,
+    "tokens_total": 33517
+  },
+  "comparison": {
+    "score_delta": 0.27,
+    "iterations_delta": 0.55,
+    "tokens_delta": -170,
+    "verdict": "MIT_EXEMPLAR_BESSER",
+    "ziel_erreicht": true
+  }
+}

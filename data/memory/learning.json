@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-26 23:50:44",
+ "stand": "2026-08-27 00:14:05",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,6 +15,12 @@
    "quote": 1.0
   },
   {
+   "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
+   "laeufe": 3,
+   "erfolge": 2,
+   "quote": 0.667
+  },
+  {
    "tool": "alte-traumideen-mit-strategien-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -24,12 +30,6 @@
    "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -81,17 +81,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.578,
- "simulationen_angewandt": 80,
+ "haende_quote": 0.569,
+ "simulationen_angewandt": 77,
  "swarm_scores": {
-  "n": 68,
+  "n": 67,
   "best": 9.0,
-  "schnitt": 4.35
+  "schnitt": 4.33
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 64,
-   "schnitt": 4.39
+   "schnitt": 4.34
   },
   "bau": {
    "n": 3,
