@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 15:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 15:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -37,10 +37,15 @@
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
-- Modell-Fehler deutlich verringern
+- Vorgeschlagene Fähigkeiten testen und nutzen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automatic skill proposal generation from observed failures creates a self-improving loop that compounds over cycles.
+- Reflex-driven skill acquisition successfully converts concrete failure patterns into validated, reusable capabilities.
+- Self-diagnosis reliably detects drive timeouts but misses subtle degradation like repeated model retries before failure.
+- Fallback model latency of 37.8 seconds makes synchronous operations unreliable without async patterns or semantic caching.
+- Rate limiting across multiple free model providers creates cascading failures that require robust fallback chains with health-aware routing.
 - Pruning runs are consistently yielding zero pruned facts and events, suggesting the current pruning thresholds are too conservative for the current me
 - Latency varies wildly between available free models (60.8s vs 5.7s), making latency-aware routing essential for maintaining system responsiveness.
 - Reflex actions and self-diagnosis run reliably even when the primary cognitive model is failing, indicating robustness in the autonomous loop.
@@ -51,11 +56,6 @@
 - NVIDIA Nemotron models succeed but exhibit 80+ second latency, creating a reliability-speed tradeoff.
 - Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production use.
 - Successful reflex execution (fähigkeits-messlatte-bauen) proves automated skill-building works when triggered, but scheduling is inconsistent.
-- Recurring drive goals for same issues (model errors, capability gaps) show reactive fixes aren't addressing root causes; systematic capability buildin
-- Dream module timeout (180s) reveals consolidation itself can exceed limits, requiring incremental or streaming consolidation.
-- High latency variance (4.5s vs 80s) makes fixed timeouts unreliable; adaptive timeouts based on model history are essential.
-- Rate limiting (429 errors) across multiple providers indicates need for request throttling and provider rotation rather than sequential retries.
-- No facts or events were pruned during consolidation, meaning the memory system accumulates indefinitely without forgetting low-value entries.
 
 ---
 

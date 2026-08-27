@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4577 Fakten** · Stand 2026-08-27 15:28 UTC · aktualisiert bei jedem Herzschlag
+**4593 Fakten** · Stand 2026-08-27 15:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1877
-- **swarm_artifact:** 1145
-- **last_swarm_critique:** 534
-- **anti_pattern:** 381
-- **last_swarm_goal:** 283
-- **strategy:** 211
+- **dream:** 1882
+- **swarm_artifact:** 1151
+- **last_swarm_critique:** 535
+- **anti_pattern:** 383
+- **last_swarm_goal:** 284
+- **strategy:** 212
 - **hand_result:** 46
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 32
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*27.08. 15:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Retrieval‑augmented skill library composition - Maintain a curated repository of verified skill modules indexed by semantic descriptors. For a new proposal, retrieve the nearest‑matching modules via embedding similarity, then
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*27.08. 15:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Formal specification‑guided program synthesis - Translate each proposal into a precise formal specification (e.g., pre‑/post‑conditions, invariants) using a lightweight DSL. Feed the specification to a program‑synthesis engin
+
+### `last_swarm_critique`
+*27.08. 15:40 UTC · Quelle: critic*
+
+score=5; issues=The artifact generates Python skill modules from proposals, but the modules contain only the proposal text as code, not actual implementations of the proposed capabilities.; Sandbox validation confirms the code runs but does not measure or veri
+
+### `last_swarm_goal`
+*27.08. 15:32 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich umsetzen
+
+### `dream:20260827153151:5:6e8db1`
+*27.08. 15:31 UTC · Quelle: dream*
+
+Automatic skill proposal generation from observed failures creates a self-improving loop that compounds over cycles.
+
+### `dream:20260827153151:4:37ae25`
+*27.08. 15:31 UTC · Quelle: dream*
+
+Reflex-driven skill acquisition successfully converts concrete failure patterns into validated, reusable capabilities.
+
+### `dream:20260827153151:3:9a7fc4`
+*27.08. 15:31 UTC · Quelle: dream*
+
+Self-diagnosis reliably detects drive timeouts but misses subtle degradation like repeated model retries before failure.
+
+### `dream:20260827153151:2:586319`
+*27.08. 15:31 UTC · Quelle: dream*
+
+Fallback model latency of 37.8 seconds makes synchronous operations unreliable without async patterns or semantic caching.
+
+### `dream:20260827153151:1:0fc9b2`
+*27.08. 15:31 UTC · Quelle: dream*
+
+Rate limiting across multiple free model providers creates cascading failures that require robust fallback chains with health-aware routing.
 
 ### `dream:20260827152709:4:5e69aa`
 *27.08. 15:27 UTC · Quelle: dream*
