@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4270 Fakten** · Stand 2026-08-27 05:31 UTC · aktualisiert bei jedem Herzschlag
+**4284 Fakten** · Stand 2026-08-27 05:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1730
-- **swarm_artifact:** 1057
-- **last_swarm_critique:** 518
+- **dream:** 1735
+- **swarm_artifact:** 1063
+- **last_swarm_critique:** 519
 - **anti_pattern:** 367
-- **last_swarm_goal:** 267
+- **last_swarm_goal:** 268
 - **strategy:** 204
-- **hand_result:** 42
+- **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 23
 - **aktuell_organfehler:** 14
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*27.08. 05:47 UTC · Quelle: critic*
+
+score=8; issues=Drei separate Artefakte nicht zu einem integrierten System verdrahtet (Orchestrator, Reflex-Reparatur-Loop, Ausführungsskript laufen unabhängig); Erstes Artefakt nutzt simulierte Scores mit Zufallskomponente statt deterministischer Swarm-Arbeit
+
+### `last_swarm_goal`
+*27.08. 05:37 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260827053632:5:0b90ce`
+*27.08. 05:36 UTC · Quelle: dream*
+
+Successful model calls (e.g., nvidia/nemotron-3.5-lightning) had significantly lower token output, suggesting simpler prompts or models are more reliable under load.
+
+### `dream:20260827053632:4:73e654`
+*27.08. 05:36 UTC · Quelle: dream*
+
+Model failures occurred in rapid succession, indicating a lack of resilient retry logic or model diversity fallback during high-load periods.
+
+### `dream:20260827053632:3:6702d5`
+*27.08. 05:36 UTC · Quelle: dream*
+
+Semantic deduplication is necessary for idea boards and DRIVE goals to prevent redundant processing of conceptually identical tasks.
+
+### `dream:20260827053632:2:a484f6`
+*27.08. 05:36 UTC · Quelle: dream*
+
+The 'Zoem-Protokoll' simulation failed to converge after three attempts, suggesting the underlying algorithm or parameter space needs refinement before further iteration.
+
+### `dream:20260827053632:1:d6ca16`
+*27.08. 05:36 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple free-tier models indicate rate-limiting is systemic, not model-specific, requiring request throttling or fallback strategies.
 
 ### `dream:20260827053056:5:970d6e`
 *27.08. 05:30 UTC · Quelle: dream*

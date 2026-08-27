@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,16 +17,16 @@
 - Build a lightweight local model cache (e.g., quantized Llama-3.2-3B) for fallback inference when all remote en *(hatte die Idee 2×)*
 - Add a 'budget-aware planner' that decomposes high-level goals (IMPORT/EXPORT, Zoem) into micro-tasks fitting t *(hatte die Idee 2×)*
 - Design a 'swarm checkpoint' mechanism that serializes Zoem-Protokoll simulation state after each revision, ena *(hatte die Idee 2×)*
-- rate_limit_backoff.py: on HTTP 429 from OpenRouter, apply exponential backoff with jitter and automatically fa
-- evolution_winner_enforcer.py: guarantee that the highest-scoring evolved variant's code changes are actually a
-- structured_failure_logger.py: capture exit codes, stderr, and error class for every failed hand_action/model c
+- Skill 'proposal_dedupe_and_test': before emitting a new skill_proposal, hash its core mechanism against open p
+- Skill 'swarm_escalation_rule': if a swarm fails to converge within 2 cycles, automatically check the reflex re
+- Skill 'prune_schema_audit': when 3 consecutive prune_runs report 0 removals, dump 10 sample facts/events along
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful model calls (e.g., nvidia/nemotron-3.5-lightning) had significantly lower token output, suggesting simpler prompts or models are more relia
+- Model failures occurred in rapid succession, indicating a lack of resilient retry logic or model diversity fallback during high-load periods.
+- Semantic deduplication is necessary for idea boards and DRIVE goals to prevent redundant processing of conceptually identical tasks.
+- The 'Zoem-Protokoll' simulation failed to converge after three attempts, suggesting the underlying algorithm or parameter space needs refinement befor
+- Repeated 429 errors across multiple free-tier models indicate rate-limiting is systemic, not model-specific, requiring request throttling or fallback 
 - Self-diagnosis reports zero organ errors while model failures cascade, revealing a monitoring blind spot: external dependency health is not tracked as
 - Destructive tool operations (subprocess) are hard-gated by human approval, creating a mandatory handoff boundary that planners must anticipate.
 - Swarm simulations converge slowly (score 7, not converged after 2 cycles) because revision loops lack persistent checkpoints, wasting iterations on re
@@ -51,11 +56,6 @@
 - Calibration error of +5 (predicted 2 vs actual 7) reveals systematic underestimation of implementation complexity for multi-organism knowledge protoco
 - Nvidia Nemotron-3-Ultra consistently succeeds but exhibits extreme latency variance (24–105s), requiring async invocation with timeout budgets rather 
 - Rate limiting (HTTP 429) on free-tier models like z-ai/glm-5.2 and google/gemma makes them unreliable for production workloads without exponential bac
-- Pre-execution validation of artifacts (size, imports, token limits) is critical to prevent wasting scarce, unreliable model calls on doomed executions
-- Inheritable knowledge protocols ("Zoem") are essential for preserving proven strategies across system generations to avoid relearning.
-- A significant gap exists between skill proposal generation and actual skill integration, wasting potential system improvements.
-- High system stress (1.0) combined with unreliable model availability necessitates aggressive task reduction and conservative execution strategies.
-- Free-tier LLM endpoints suffer from severe rate limiting (429) and upstream overload (502), causing cascading failures during high-stress periods.
 
 ---
 
