@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-27T02:20:28.129670Z",
+  "total_records": 15,
+  "kept": 0,
+  "rejected": 15,
+  "rejection_rate_pct": 100.0,
+  "breakdown": {
+    "score_below_8": 0,
+    "test_not_passed": 0,
+    "duplicates": 0,
+    "missing_fields": 15
+  }
+}

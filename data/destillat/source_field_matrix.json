@@ -1,0 +1,31 @@
+{
+  "hands_ab_ergebnis": {},
+  "hands_exemplar_report": {},
+  "hands_swarm_config": {
+    "context": "prompt_dekoration"
+  },
+  "hands_ab_result": {
+    "goal": "per_goal_ok"
+  },
+  "hands_exemplar_bank": {
+    "goal": "goal",
+    "solution": "solution",
+    "score": "score"
+  },
+  "hands_forge_evidence_20260826_054630": {
+    "goal": "goal"
+  },
+  "hands_forge_evidence_20260826_054712": {
+    "goal": "goal"
+  },
+  "hands_skill_trial_report": {
+    "goal": "goal",
+    "solution": "results"
+  },
+  "hands_simulation_results": {},
+  "hands_traum_synthese": {},
+  "hands_test_journal": {
+    "solution": "result"
+  },
+  "hands_proposals": {}
+}

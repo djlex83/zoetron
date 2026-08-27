@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 01:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 02:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,26 +14,26 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- skill_trial_scheduler.py: after each dream cycle, pick the single top-rated skill_proposal and execute exactly
-- destructive_op_gate.py: when a proposed tool contains os.system/subprocess calls, automatically open a human-a
-- conserve_mode_planner.py: at stress=1.0, pre-plan the minimal 3-task sequence prioritizing simulate->revise->e
-- model_health_tracker.py: maintain a rolling success/latency score per model and route requests to the best-sco
-- calibration_logger.py: record predicted vs actual task scores each cycle and flag any goal type whose abs_erro
-- Skill 'artifact_smoke_test': Vor jedem TOR-Grün-Check das gebaute Artefakt in einer Sandbox ausführen und bei 
+- Maintain a per-model cooldown registry that records each 429 timestamp and blocks re-selection of that model f
+- Implement ordered failover: on 429/5xx, immediately retry with nvidia/nemotron-3-ultra-550b-a55b:free before a
+- Build a sandbox trial runner that executes one pending skill proposal per conserve-cycle, records pass/fail pl
+- Add a pre-swarm validation gate that dry-runs the swarm plan against a test fixture and blocks start until sta
+- Emit a health event to selbstdiagnose whenever a single model exceeds 3 consecutive 429s within 10 minutes, fl
+- action_executor.py: after each simulation cycle, automatically convert the top-scoring revision into a queued 
 
 ## 🔥 Eigene Ziele
 
-- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 10×)*
+- Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,10 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation phase acts as a reliable gatekeeper, allowing progression ('go') despite external API instability, provided risks and revisions are tracked
+- Fallback models like 'poolside/laguna-s-2.1:free' and 'nvidia/nemotron-3-ultra-550b-a55b:free' can recover from temporary 502 errors if retried, unlik
+- High stress metabolism state ('conserve') successfully limits task execution budget, preventing runaway loops when external APIs are failing.
+- Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overloads (502) during high-stress or high-frequency swarm o
 - Self-diagnosis and pruning report zero issues while external model failures persist, indicating observability gaps at the integration layer.
 - High latency variance (9–40 s) on the same model signals upstream instability needing circuit-breaker guards.
 - Evolution cycles improve variant quality (4→9) but swarm convergence fails when critic-to-builder ratio is too low (1:3).
@@ -52,10 +56,6 @@
 - nvidia/nemotron-3-ultra exhibits extreme latency variance (31–111s) rendering it unsuitable for latency-sensitive steps.
 - Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable for production workflows.
 - The Cortex-Upgrade-Reflex failed to converge after three attempts, highlighting the need for explicit creator intervention when automated promotion la
-- Proposed skills remain unused because they are not integrated into active reflex loops or triggered by real-time failure signals, resulting in wasted 
-- Whisper messages are frequently lost due to lack of delivery confirmation or retry mechanisms, creating a critical communication gap in goal propagati
-- Successful model calls (nvidia/nemotron-3-ultra-550b-a55b:free) show stable latency and token efficiency across varying input sizes, suggesting reliab
-- Free-tier models from certain providers (e.g., z-ai/glm-5.2:free) consistently fail with 429 errors under concurrent load, indicating rate-limit exhau
 
 ---
 

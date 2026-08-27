@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4148 Fakten** · Stand 2026-08-27 01:51 UTC · aktualisiert bei jedem Herzschlag
+**4164 Fakten** · Stand 2026-08-27 02:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1671
-- **swarm_artifact:** 1029
-- **last_swarm_critique:** 512
-- **anti_pattern:** 355
-- **last_swarm_goal:** 261
-- **strategy:** 198
-- **hand_result:** 38
+- **dream:** 1675
+- **swarm_artifact:** 1035
+- **last_swarm_critique:** 513
+- **anti_pattern:** 357
+- **last_swarm_goal:** 262
+- **strategy:** 199
+- **hand_result:** 39
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 23
 - **aktuell_organfehler:** 14
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Destillat-Datensatz: Ged:2`
+*27.08. 02:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Event-Sourced Append-Only Log mit Projectionen - Rohdaten als unveränderliche Events in einem Append-Only Log speichern (SQLite-Tabelle, DuckDB, oder Kafka-Topic). Jedes Event: {id, timestamp, source, payload, schema_version}
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Destillat-Datensatz: Ged:1`
+*27.08. 02:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Deklarative Pipeline-Engine (Config-Driven, Runtime-Interpreted) - Gesamte Logik in eine YAML/JSON-Konfiguration verlagern: sources (Globs, Parser), validators (JSON-Schema-Referenzen, custom rules als Expr), transformers (Fe
+
+### `last_swarm_critique`
+*27.08. 02:18 UTC · Quelle: critic*
+
+score=7; issues=Heuristische Feldzuordnung (Keyword-Matching auf 'score', 'test', 'goal', etc.) ist fragil und bricht bei abweichenden Schemata stillschweigend - keine strikte Validierung der Quelldaten; Validator (validate_destillat.py) ist separates Skript, 
+
+### `last_swarm_goal`
+*27.08. 02:09 UTC · Quelle: system*
+
+Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
+
+### `dream:20260827020854:4:a29b89`
+*27.08. 02:08 UTC · Quelle: dream*
+
+Simulation phase acts as a reliable gatekeeper, allowing progression ('go') despite external API instability, provided risks and revisions are tracked.
+
+### `dream:20260827020854:3:5b03cb`
+*27.08. 02:08 UTC · Quelle: dream*
+
+Fallback models like 'poolside/laguna-s-2.1:free' and 'nvidia/nemotron-3-ultra-550b-a55b:free' can recover from temporary 502 errors if retried, unlike persistent 429s on 'z-ai/glm-5.2:free'.
+
+### `dream:20260827020854:2:c20437`
+*27.08. 02:08 UTC · Quelle: dream*
+
+High stress metabolism state ('conserve') successfully limits task execution budget, preventing runaway loops when external APIs are failing.
+
+### `dream:20260827020854:1:21baa4`
+*27.08. 02:08 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overloads (502) during high-stress or high-frequency swarm operations.
 
 ### `anti_pattern:selflearn_unzuverlaessige_werkzeuge`
 *27.08. 01:50 UTC · Quelle: selflearn*
