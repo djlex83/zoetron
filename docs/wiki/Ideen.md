@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 08:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 09:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
-- Häufige Fehler im Modell verstehen und beheben
-- Altes Wissen öfter abrufen und nutzen
+- Häufige Modellfehler untersuchen und beheben
+- Alte Schwarm-Rückmeldungen auffrischen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions complete in <1s but returned zero bytes read, suggesting a parsing or targeting issue.
+- The simulation-revision loop (3 revisions) successfully produced a verified 210-line Python artifact that executes.
+- Poolside Laguna works but at 183s latency, making it a slow fallback only.
+- Nvidia Nemotron succeeds most often but exhibits high latency variance (29-152s) and intermittent 502 upstream overloads.
+- Free-tier models consistently fail with 429 rate limits, making them unreliable as primary providers.
 - Reflex-based skill usage shows convergence but lacks measurable impact scoring, limiting feedback-driven improvement.
 - Drive goals related to resource conservation and systematic task handling remain unmet, signaling gaps in long-term planning.
 - Latency and token efficiency vary significantly between models, suggesting performance can be optimized through dynamic selection.
@@ -51,11 +56,6 @@
 - The sole reliable model (nemotron-3.5-lightning) exhibits 150-250s latency under stress, making it a bottleneck for any multi-step swarm execution.
 - Simultaneous 429 errors across five distinct models reveal that provider diversity on OpenRouter fails to provide resilience when the gateway itself r
 - Self-diagnosis reports zero organ errors despite repeated model failures, revealing a monitoring blind spot for external API dependencies.
-- Memory blind-spot detection activates but lacks automated exploration policies, leaving gaps unaddressed across cycles.
-- Proposed skills directly mirror observed failure modes (rate limiting, artifact validation, metabolic scheduling), suggesting the system self-diagnose
-- A single working model (nemotron-3.5-lightning) exhibits extreme latency (57-151s), indicating capacity saturation rather than transient errors.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows.
-- Model availability is highly stochastic, making single-model dependency a high-risk failure mode.
 
 ---
 

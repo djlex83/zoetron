@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4370 Fakten** · Stand 2026-08-27 08:48 UTC · aktualisiert bei jedem Herzschlag
+**4387 Fakten** · Stand 2026-08-27 09:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1773
-- **swarm_artifact:** 1089
-- **last_swarm_critique:** 524
-- **anti_pattern:** 371
-- **last_swarm_goal:** 273
-- **strategy:** 206
+- **dream:** 1778
+- **swarm_artifact:** 1095
+- **last_swarm_critique:** 525
+- **anti_pattern:** 373
+- **last_swarm_goal:** 274
+- **strategy:** 207
 - **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
-- **tool:** 27
+- **tool:** 28
 - **aktuell_organfehler:** 16
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:simulations-lernschleife-schließen`
+*27.08. 09:23 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulations-Lernschleife schließen'. Datei: data/tools/simulations-lernschleife-schließen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Simulations-Lernschleife:2`
+*27.08. 09:23 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Differenzierbare Simulation & End-to-End Gradienten - Implementieren Sie die Simulationsumgebung (oder einen Surrogat-Modell-Zwilling) in einem autodiff-fähigen Framework (JAX, PyTorch, DiffTaichi). Statt RL (Policy Gradient)
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Simulations-Lernschleife:0`
+*27.08. 09:23 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Architektur-Wechsel: Event-Sourcing & CQRS - Ersetzen Sie den monolithischen Simulations-Runner durch eine ereignisgesteuerte Architektur. Die Simulation schreibt unveränderliche Events (StateChanged, ActionExecuted, RewardCa
+
+### `last_swarm_critique`
+*27.08. 09:22 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*27.08. 09:11 UTC · Quelle: system*
+
+Simulations-Lernschleife schließen
+
+### `dream:20260827091044:5:deaa09`
+*27.08. 09:10 UTC · Quelle: dream*
+
+Hand actions complete in <1s but returned zero bytes read, suggesting a parsing or targeting issue.
+
+### `dream:20260827091044:4:1b2dbf`
+*27.08. 09:10 UTC · Quelle: dream*
+
+The simulation-revision loop (3 revisions) successfully produced a verified 210-line Python artifact that executes.
+
+### `dream:20260827091044:3:6627e1`
+*27.08. 09:10 UTC · Quelle: dream*
+
+Poolside Laguna works but at 183s latency, making it a slow fallback only.
+
+### `dream:20260827091044:2:d63ae1`
+*27.08. 09:10 UTC · Quelle: dream*
+
+Nvidia Nemotron succeeds most often but exhibits high latency variance (29-152s) and intermittent 502 upstream overloads.
+
+### `dream:20260827091044:1:c93642`
+*27.08. 09:10 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits, making them unreliable as primary providers.
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-nutz`
 *27.08. 08:48 UTC · Quelle: hands*
