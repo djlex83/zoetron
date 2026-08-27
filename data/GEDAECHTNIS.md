@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4726 Fakten** · Stand 2026-08-27 20:24 UTC · aktualisiert bei jedem Herzschlag
+**4731 Fakten** · Stand 2026-08-27 20:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1932
+- **dream:** 1937
 - **swarm_artifact:** 1193
 - **last_swarm_critique:** 542
 - **anti_pattern:** 397
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827204751:5:5d266b`
+*27.08. 20:47 UTC · Quelle: dream*
+
+Hand-action execution (0.33 s, exit 0) confirms the generated code artifact is syntactically valid and runnable without immediate errors.
+
+### `dream:20260827204751:4:50804d`
+*27.08. 20:47 UTC · Quelle: dream*
+
+Calibration loop (simulation → tor → calibration → bahnen) produced accurate effort prediction (predicted=actual=7) and verified artifact generation (186-line Python file).
+
+### `dream:20260827204751:3:98fa92`
+*27.08. 20:47 UTC · Quelle: dream*
+
+The system's multi-model fallback strategy (Nemotron → GLM → Gemma → Poolside) successfully achieved task completion despite 10+ consecutive rate-limit failures.
+
+### `dream:20260827204751:2:720fd9`
+*27.08. 20:47 UTC · Quelle: dream*
+
+Nemotron-3-Ultra exhibits high latency variance (33–155 s) and occasional 502 upstream errors, indicating unstable capacity allocation behind the free endpoint.
+
+### `dream:20260827204751:1:0ac5a8`
+*27.08. 20:47 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate limiting, making them unreliable for production workloads without aggressive backoff and fallback chains.
 
 ### `tool:neue-fähigkeiten-erlernen`
 *27.08. 20:24 UTC · Quelle: hands*
