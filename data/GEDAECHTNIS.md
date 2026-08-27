@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4670 Fakten** · Stand 2026-08-27 18:46 UTC · aktualisiert bei jedem Herzschlag
+**4675 Fakten** · Stand 2026-08-27 18:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1912
+- **dream:** 1917
 - **swarm_artifact:** 1175
 - **last_swarm_critique:** 539
 - **anti_pattern:** 391
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827185003:5:5590db`
+*27.08. 18:50 UTC · Quelle: dream*
+
+Proposed skills accumulate but remain unused because no automatic skill-activation mechanism exists.
+
+### `dream:20260827185003:4:291bb1`
+*27.08. 18:50 UTC · Quelle: dream*
+
+Metabolism conserve mode (stress 1.0) caps iterations at 1, preventing multi-step refinement needed for swarm convergence.
+
+### `dream:20260827185003:3:06960c`
+*27.08. 18:50 UTC · Quelle: dream*
+
+Hand actions fail silently (exit 1, zero bytes read) indicating tool execution environment misconfiguration.
+
+### `dream:20260827185003:2:6227c2`
+*27.08. 18:50 UTC · Quelle: dream*
+
+Swarm convergence stalls at score 1 because the critic rejects builder output without actionable feedback loops.
+
+### `dream:20260827185003:1:956fb9`
+*27.08. 18:50 UTC · Quelle: dream*
+
+Free-tier models (GLM, Gemma, Poolside) consistently hit 429 rate limits, making them unreliable for production workflows.
 
 ### `dream:20260827184542:5:2b188f`
 *27.08. 18:45 UTC · Quelle: dream*

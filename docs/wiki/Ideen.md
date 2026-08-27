@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 18:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 18:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 10×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
-- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
+- Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
-- Modell-Fehler reduzieren für zuverlässigere Arbeit
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposed skills accumulate but remain unused because no automatic skill-activation mechanism exists.
+- Metabolism conserve mode (stress 1.0) caps iterations at 1, preventing multi-step refinement needed for swarm convergence.
+- Hand actions fail silently (exit 1, zero bytes read) indicating tool execution environment misconfiguration.
+- Swarm convergence stalls at score 1 because the critic rejects builder output without actionable feedback loops.
+- Free-tier models (GLM, Gemma, Poolside) consistently hit 429 rate limits, making them unreliable for production workflows.
 - Simulation vetoed the plan (verdict=revise, 5 risks) and 2/4 revisions were applied, showing pre-execution critique catches critical flaws.
 - Evolutionary search with 3 variants lifted score from 1/10 to 8-10/10 in one generation, proving iterative refinement outperforms one-shot generation.
 - Memory retrieval succeeds (4 items fetched) but graph construction fails (kanten=0, delta=-0.5), indicating a broken linking mechanism, not a retrieva
@@ -51,11 +56,6 @@
 - Hand actions repeatedly exit with code 1 and zero bytes read, indicating a systematic I/O or permission failure in the file-reading subsystem.
 - The 'bahnen' module import failure halts artifact execution, revealing a missing dependency installation step in the deployment pipeline.
 - Free-tier LLM endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
-- Simulation-based revision loops (3 risks → 3 revisions) effectively harden plans before execution.
-- High metabolic stress (1.0) with conserve-mode budgets forces single-iteration execution, eliminating retry depth.
-- inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success with sub-40s latency under load.
-- Nvidia Nemotron exhibits both rate limits and upstream 502 errors, indicating dual failure modes.
-- Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for autonomous operation.
 
 ---
 
