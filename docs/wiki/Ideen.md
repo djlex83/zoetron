@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 05:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,20 +12,20 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- skill_trial_scheduler.py: guarantee at least one pending skill_proposal gets an executed trial with recorded p
-- failure_reason_logger.py: write structured rejection/error reasons (tool denial, model failure, goal abort) in
-- goal_resolution_tracker.py: mark drive_goals as blocked or duplicate when no new evidence has arrived since th
-- memory_pruner.py: run prune passes automatically on event-age and recall-hit thresholds rather than waiting fo
-- reflex_matcher.py: before planning any recurring task type, check the reflex registry and directly execute a p
 - Skill 'reflex_first_routing': at goal creation, keyword-match against the reflex registry and auto-execute the
 - Skill 'proposal_backlog_gate': pause new skill_proposal emission whenever untested proposals exceed tested pro
 - Skill 'rate_limit_backoff': on HTTP 429, apply exponential backoff per provider and record which providers are
+- Skill 'zero_prune_alert': after 3 consecutive prune_runs with 0 removals, automatically log a diagnostic compa
+- Skill 'dream_integration_step': convert recurring 'connect old dreams with new plans' drive goals into a concr
+- Implement per-model exponential backoff with a shared cooldown table: after two consecutive 429s on a model, s
+- Build a model-health router that ranks endpoints by recent success rate and latency, automatically demoting mo
+- Create a scheduled backlog-drainer task that pops and implements the oldest pending skill proposal each swarm 
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*

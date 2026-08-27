@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 05:03:07",
+ "stand": "2026-08-27 05:10:30",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,6 +21,12 @@
    "quote": 0.333
   },
   {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-traumideen-mit-strategien-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -34,12 +40,6 @@
   },
   {
    "tool": "lebender-steckbrief-die-biografie-als-al.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -93,17 +93,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.56,
- "simulationen_angewandt": 77,
+ "haende_quote": 0.565,
+ "simulationen_angewandt": 76,
  "swarm_scores": {
-  "n": 64,
+  "n": 63,
   "best": 9.0,
-  "schnitt": 4.22
+  "schnitt": 4.27
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 60,
-   "schnitt": 4.28
+   "n": 59,
+   "schnitt": 4.34
   },
   "bau": {
    "n": 3,
