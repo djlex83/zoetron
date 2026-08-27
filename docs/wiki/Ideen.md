@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
@@ -35,12 +35,17 @@
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
-- Häufige Fehler beim Denken verstehen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High numbers of simulation risks suggest that initial proposals require stricter validation before entering the simulation phase.
+- The gap between proposed skills and their actual application highlights the need for an automated skill deployment pipeline.
+- High system stress combined with frequent model failures indicates the system should reduce concurrent task loads and rely on more reliable models dur
+- Highly variable latency in nvidia/nemotron-3-ultra-550b-a55b:free (33s to 222s) necessitates adaptive, per-model timeout configurations.
+- The z-ai/glm-5.2:free model is chronically rate-limited and should be temporarily blacklisted to prevent repeated 429 failures.
 - Simulation revisions (4 applied) fail to close the learning loop, implying revisions address symptoms not root causes.
 - Swarm convergence stalls at 5/10 after 2 cycles with evolved=true, suggesting the critic quality gate is insufficient.
 - Latency variance exceeds 100x (0.5s to 109s) across models, making fixed timeouts either too aggressive or too permissive.
@@ -51,11 +56,6 @@
 - Model latency varies wildly (4s to 126s), so timeout settings must be generous or dynamically adjusted.
 - Upstream provider overload (502 errors) can occur even on successful endpoints, necessitating handling of empty choices in 200 responses.
 - Free models on OpenRouter are highly rate-limited (429 errors) and require robust fallback or retry mechanisms.
-- Drive goals for reliability, evolution, and dream consolidation remain unaddressed because the execution layer fails at the model-inference prerequisi
-- Simulation learning loops proceed despite known risks (3) and revisions (2), indicating insufficient validation gates before commitment.
-- The system operates at maximum stress (1.0) in conserve mode with severely constrained budgets, causing task starvation and preventing evolutionary cy
-- Nvidia Nemotron models show higher reliability but extreme latency variance (8-177s), making them unsuitable for time-bounded tasks without fallback.
-- Rate limiting (HTTP 429) across multiple free-tier models is the primary systemic failure mode, not model capability.
 
 ---
 

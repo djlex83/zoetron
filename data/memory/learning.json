@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 10:22:36",
+ "stand": "2026-08-27 10:26:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,15 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
+   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -100,11 +100,11 @@
   }
  ],
  "haende_quote": 0.595,
- "simulationen_angewandt": 70,
+ "simulationen_angewandt": 69,
  "swarm_scores": {
-  "n": 56,
+  "n": 55,
   "best": 9.0,
-  "schnitt": 4.2
+  "schnitt": 4.18
  },
  "score_nach_ziel_typ": {
   "analyse": {

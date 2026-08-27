@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4419 Fakten** · Stand 2026-08-27 10:22 UTC · aktualisiert bei jedem Herzschlag
+**4424 Fakten** · Stand 2026-08-27 10:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1798
+- **dream:** 1803
 - **swarm_artifact:** 1101
 - **last_swarm_critique:** 526
 - **anti_pattern:** 375
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827102556:5:260cd6`
+*27.08. 10:25 UTC · Quelle: dream*
+
+High numbers of simulation risks suggest that initial proposals require stricter validation before entering the simulation phase.
+
+### `dream:20260827102556:4:1d0def`
+*27.08. 10:25 UTC · Quelle: dream*
+
+The gap between proposed skills and their actual application highlights the need for an automated skill deployment pipeline.
+
+### `dream:20260827102556:3:1c9f82`
+*27.08. 10:25 UTC · Quelle: dream*
+
+High system stress combined with frequent model failures indicates the system should reduce concurrent task loads and rely on more reliable models during conserve mode.
+
+### `dream:20260827102556:2:75052e`
+*27.08. 10:25 UTC · Quelle: dream*
+
+Highly variable latency in nvidia/nemotron-3-ultra-550b-a55b:free (33s to 222s) necessitates adaptive, per-model timeout configurations.
+
+### `dream:20260827102556:1:d5fbcd`
+*27.08. 10:25 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is chronically rate-limited and should be temporarily blacklisted to prevent repeated 429 failures.
 
 ### `dream:20260827102211:5:01bb68`
 *27.08. 10:22 UTC · Quelle: dream*
