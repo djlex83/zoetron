@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 10:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
@@ -36,11 +36,16 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
+- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
 - Mehr Vorschläge wirklich in Taten umsetzen
-- Ergebnisse aus Träumen besser nutzen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence is not guaranteed within 2 cycles for complex goals like closing a simulation learning loop.
+- Evolution runs can improve scores (5 to 8) even when critic output is unparseable, indicating the builder variants are robust.
+- Model latency varies wildly (4s to 126s), so timeout settings must be generous or dynamically adjusted.
+- Upstream provider overload (502 errors) can occur even on successful endpoints, necessitating handling of empty choices in 200 responses.
+- Free models on OpenRouter are highly rate-limited (429 errors) and require robust fallback or retry mechanisms.
 - Drive goals for reliability, evolution, and dream consolidation remain unaddressed because the execution layer fails at the model-inference prerequisi
 - Simulation learning loops proceed despite known risks (3) and revisions (2), indicating insufficient validation gates before commitment.
 - The system operates at maximum stress (1.0) in conserve mode with severely constrained budgets, causing task starvation and preventing evolutionary cy
@@ -51,11 +56,6 @@
 - System conserves tasks (max_tasks=3, stress=1.0) when model reliability drops, encoding a volume-reliability trade-off.
 - Nemotron-3-ultra-550b free-model latency spans 25–81s, making fixed timeouts unreliable and adaptive wait strategies essential.
 - Free-tier models under sequential requests hit 429 rate limits predictably, requiring throttling or tier-promotion fallbacks.
-- Hand actions complete in <1s but returned zero bytes read, suggesting a parsing or targeting issue.
-- The simulation-revision loop (3 revisions) successfully produced a verified 210-line Python artifact that executes.
-- Poolside Laguna works but at 183s latency, making it a slow fallback only.
-- Nvidia Nemotron succeeds most often but exhibits high latency variance (29-152s) and intermittent 502 upstream overloads.
-- Free-tier models consistently fail with 429 rate limits, making them unreliable as primary providers.
 
 ---
 

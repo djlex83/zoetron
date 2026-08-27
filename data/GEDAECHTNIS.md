@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4409 Fakten** · Stand 2026-08-27 10:14 UTC · aktualisiert bei jedem Herzschlag
+**4414 Fakten** · Stand 2026-08-27 10:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1788
+- **dream:** 1793
 - **swarm_artifact:** 1101
 - **last_swarm_critique:** 526
 - **anti_pattern:** 375
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827101657:5:18dd89`
+*27.08. 10:16 UTC · Quelle: dream*
+
+Swarm convergence is not guaranteed within 2 cycles for complex goals like closing a simulation learning loop.
+
+### `dream:20260827101657:4:d83968`
+*27.08. 10:16 UTC · Quelle: dream*
+
+Evolution runs can improve scores (5 to 8) even when critic output is unparseable, indicating the builder variants are robust.
+
+### `dream:20260827101657:3:c47b41`
+*27.08. 10:16 UTC · Quelle: dream*
+
+Model latency varies wildly (4s to 126s), so timeout settings must be generous or dynamically adjusted.
+
+### `dream:20260827101657:2:1458fc`
+*27.08. 10:16 UTC · Quelle: dream*
+
+Upstream provider overload (502 errors) can occur even on successful endpoints, necessitating handling of empty choices in 200 responses.
+
+### `dream:20260827101657:1:7568cc`
+*27.08. 10:16 UTC · Quelle: dream*
+
+Free models on OpenRouter are highly rate-limited (429 errors) and require robust fallback or retry mechanisms.
 
 ### `dream:20260827101333:5:a87182`
 *27.08. 10:13 UTC · Quelle: dream*

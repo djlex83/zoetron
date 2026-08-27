@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 10:14:05",
+ "stand": "2026-08-27 10:18:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -99,12 +99,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.595,
- "simulationen_angewandt": 71,
+ "haende_quote": 0.592,
+ "simulationen_angewandt": 70,
  "swarm_scores": {
-  "n": 57,
+  "n": 56,
   "best": 9.0,
-  "schnitt": 4.26
+  "schnitt": 4.2
  },
  "score_nach_ziel_typ": {
   "analyse": {
