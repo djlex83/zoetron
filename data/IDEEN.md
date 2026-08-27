@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 19:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 20:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,7 +28,7 @@
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-based revision loops (verdict: revise, 3 risks → 3 revisions) converge but lack success-rate telemetry.
+- Latency spans 2–42s on successes, demanding adaptive timeouts tied to per-model rolling percentiles.
+- Poolside/laguna-s-2.1:free shows highest reliability and lowest latency variance, making it the primary fallback candidate.
+- Consecutive failure tracking (3 errors → 1800s block) effectively prevents cascade overload but needs per-model circuit breakers.
+- Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring request pacing rather than model switching.
 - Dream-generated skill proposals skew toward infrastructure robustness (rate limits, caching, backoff) rather than novel task capabilities.
 - Self-diagnosis and pruning consistently report zero issues, suggesting the system's internal health checks are functioning but may lack sensitivity.
 - Reflex mode reliably converges for both collaboration-improvement and skill-proposal goals, confirming it as a robust execution mode.
@@ -51,11 +56,6 @@
 - Simulation approval ('go' verdict) with 3 risks but 0 revisions indicates risk assessment without mitigation planning, leaving execution vulnerable to
 - The system enters conserve mode (stress=1.0) precisely when model reliability is lowest, creating a death spiral where limited retries hit exhausted e
 - Free-tier models exhibit cascading failure modes (429 rate limits, 502 upstream overload) that cluster in time, making sequential fallback strategies 
-- Proposed skills accumulate but remain unused because no automatic skill-activation mechanism exists.
-- Metabolism conserve mode (stress 1.0) caps iterations at 1, preventing multi-step refinement needed for swarm convergence.
-- Hand actions fail silently (exit 1, zero bytes read) indicating tool execution environment misconfiguration.
-- Swarm convergence stalls at score 1 because the critic rejects builder output without actionable feedback loops.
-- Free-tier models (GLM, Gemma, Poolside) consistently hit 429 rate limits, making them unreliable for production workflows.
 
 ---
 
