@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4164 Fakten** · Stand 2026-08-27 02:20 UTC · aktualisiert bei jedem Herzschlag
+**4169 Fakten** · Stand 2026-08-27 02:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1675
+- **dream:** 1680
 - **swarm_artifact:** 1035
 - **last_swarm_critique:** 513
 - **anti_pattern:** 357
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827023134:5:ef1f47`
+*27.08. 02:31 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external API failures dominate, proving internal health checks miss dependency-level pathologies.
+
+### `dream:20260827023134:4:8c5463`
+*27.08. 02:31 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 (conserve state) correlates with model failures and non-converging tasks, indicating load shedding is reactive not predictive.
+
+### `dream:20260827023134:3:9d96c9`
+*27.08. 02:31 UTC · Quelle: dream*
+
+Five dream-generated skill proposals exist but none are implemented, exposing a systemic idea-to-execution gap in the consolidation loop.
+
+### `dream:20260827023134:2:5d5e50`
+*27.08. 02:31 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra shows 3x latency variance (25-84s), making it unreliable for time-bounded tasks without SLA monitoring.
+
+### `dream:20260827023134:1:50c18e`
+*27.08. 02:31 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal that free-tier rate limits cause cascading failures when routing lacks health-aware fallbacks.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Destillat-Datensatz: Ged:2`
 *27.08. 02:19 UTC · Quelle: evolution*
