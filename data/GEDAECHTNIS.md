@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4169 Fakten** · Stand 2026-08-27 02:32 UTC · aktualisiert bei jedem Herzschlag
+**4181 Fakten** · Stand 2026-08-27 02:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1680
-- **swarm_artifact:** 1035
-- **last_swarm_critique:** 513
-- **anti_pattern:** 357
-- **last_swarm_goal:** 262
-- **strategy:** 199
+- **dream:** 1685
+- **swarm_artifact:** 1037
+- **last_swarm_critique:** 514
+- **anti_pattern:** 359
+- **last_swarm_goal:** 263
+- **strategy:** 200
 - **hand_result:** 39
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 23
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Lebender Steckbrief: die:2`
+*27.08. 02:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 7]): CLI-First Application with Config-Driven Data - Build a proper CLI tool using `argparse`/`click`: `lebender-steckbrief build --config bio.yaml --template templates/profile.html --output docs/leben.html`. Biography dat
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Lebender Steckbrief: die:0`
+*27.08. 02:46 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*27.08. 02:45 UTC · Quelle: critic*
+
+score=2; issues=Kein Hauptprogramm / Entry-Point: Das Skript definiert nur Funktionen, führt aber nichts aus (fehlendes if __name__ == '__main__': Block), daher erzeugt es keine docs/leben.html.; HTML-Template unvollständig: Der f-String bricht mitten im CSS a
+
+### `last_swarm_goal`
+*27.08. 02:39 UTC · Quelle: system*
+
+Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal
+
+### `dream:20260827023812:5:8d4e5f`
+*27.08. 02:38 UTC · Quelle: dream*
+
+Bahnen delta of -0.5 despite score 1 suggests the graph traversal retrieves nodes but fails to synthesize improving edits.
+
+### `dream:20260827023812:4:e37c07`
+*27.08. 02:38 UTC · Quelle: dream*
+
+Calibration error of 100% (predicted 2 vs actual 1) indicates the reward model or difficulty estimator is misaligned with actual task hardness.
+
+### `dream:20260827023812:3:707f01`
+*27.08. 02:38 UTC · Quelle: dream*
+
+The distillation pipeline fails at multiple stages: simulation demands revision, hand action exits with code 1, and training (tor) crashes with filesystem errors.
+
+### `dream:20260827023812:2:cfedd4`
+*27.08. 02:38 UTC · Quelle: dream*
+
+Nemotron-3-Ultra shows high latency variance (19-39s) and occasional 502 upstream overloads despite being the most reliable free model.
+
+### `dream:20260827023812:1:f512bb`
+*27.08. 02:38 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production pipelines.
 
 ### `dream:20260827023134:5:ef1f47`
 *27.08. 02:31 UTC · Quelle: dream*

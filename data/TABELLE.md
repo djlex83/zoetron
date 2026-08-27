@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2746 Neuronen · 60667 bewertete Synapsen
+Stand: 2753 Neuronen · 61268 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 2746 Neuronen · 60667 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 273 | 0.25 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 273 | 0.25 |
-| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 206 | 0.24 |
-| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 212 | 0.23 |
-| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 199 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 188 | 0.24 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 183 | 0.23 |
-| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 161 | 0.26 |
-| 9 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 165 | 0.24 |
-| 10 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 141 | 0.28 |
-| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 172 | 0.23 |
-| 12 | 💭 | Calibration error of 4 points (predicted 2 vs actual 6) indicate… | 140 | 0.27 |
-| 13 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 153 | 0.25 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 275 | 0.25 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 275 | 0.25 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 207 | 0.24 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 214 | 0.23 |
+| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 200 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 189 | 0.23 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 185 | 0.23 |
+| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 163 | 0.26 |
+| 9 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 166 | 0.24 |
+| 10 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 142 | 0.28 |
+| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 174 | 0.23 |
+| 12 | 💭 | Calibration error of 4 points (predicted 2 vs actual 6) indicate… | 141 | 0.28 |
+| 13 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 154 | 0.25 |
 | 14 | 💭 | Simulation verdicts='go' with 5 risks/5 revisions rarely transla… | 152 | 0.25 |
-| 15 | 💭 | Despite 5 revisions for 5 risks, the simulation verdict remained… | 155 | 0.24 |
+| 15 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 153 | 0.25 |
 
 ## Die 15 stärksten Synapsen
 
@@ -46,4 +46,4 @@ Stand: 2746 Neuronen · 60667 bewertete Synapsen
 | 12 | **0.53** | 💭 Latency spikes up to 62.5 s reveal the need fo… | 💭 High latency spikes (up to 90 s) reveal occasi… |
 | 13 | **0.53** | 💭 Model latency frequently exceeds 30 s, causing… | 💭 Model latency fluctuates widely (8–185 s), cau… |
 | 14 | **0.53** | 💭 Applying revisions atomically and re‑simulatin… | 💭 Applying simulation revisions non‑atomically l… |
-| 15 | **0.53** | 💭 Free-tier models (stealth/ox-alpha, z-ai/glm-5… | 💭 Free-tier OpenRouter models (stealth/ox-alpha,… |
+| 15 | **0.53** | 💭 Free-tier models consistently fail with 429/50… | 💭 Free-tier models on OpenRouter consistently hi… |
