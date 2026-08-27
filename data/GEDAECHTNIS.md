@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4573 Fakten** · Stand 2026-08-27 15:11 UTC · aktualisiert bei jedem Herzschlag
+**4577 Fakten** · Stand 2026-08-27 15:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1873
+- **dream:** 1877
 - **swarm_artifact:** 1145
 - **last_swarm_critique:** 534
 - **anti_pattern:** 381
@@ -19,6 +19,26 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827152709:4:5e69aa`
+*27.08. 15:27 UTC · Quelle: dream*
+
+Pruning runs are consistently yielding zero pruned facts and events, suggesting the current pruning thresholds are too conservative for the current memory size.
+
+### `dream:20260827152709:3:c700ce`
+*27.08. 15:27 UTC · Quelle: dream*
+
+Latency varies wildly between available free models (60.8s vs 5.7s), making latency-aware routing essential for maintaining system responsiveness.
+
+### `dream:20260827152709:2:6f59dd`
+*27.08. 15:27 UTC · Quelle: dream*
+
+Reflex actions and self-diagnosis run reliably even when the primary cognitive model is failing, indicating robustness in the autonomous loop.
+
+### `dream:20260827152709:1:0653a7`
+*27.08. 15:27 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly susceptible to rate limits (429) and upstream overloads (502), causing cascading cognitive failures.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Simulation und Träume be:2`
 *27.08. 15:09 UTC · Quelle: evolution*
