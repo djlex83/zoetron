@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 22:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No sandbox validation exists for generated code or skills, allowing untested artifacts to enter the swarm and risk cascading failures.
+- Dream cycles produce insights (e.g., convergence criteria, risk injection) that remain unconnected to live swarm parameters or model-selection heurist
+- Five separate skill proposals redundantly address model routing, revealing a proposal-to-deployment gap where ideas accumulate but never ship.
+- The only working model (nvidia/nemotron-3-ultra) exhibits 15-23s latency, which stalls swarm cycles and violates sub-10s planning budgets.
+- Free-tier model z-ai/glm-5.2:free fails 100% of the time with 429 rate-limit errors, making it unusable without automated failover.
 - The reflex-driven skill-training tool successfully synthesized proposals but lacks a promotion pipeline to production.
 - Self-diagnosis capability has atrophied from disuse while model reliability degrades.
 - Existing skill proposals (router, backoff, monitoring, bootstrap, health dashboard) remain unexecuted despite clear need.
@@ -51,11 +56,6 @@
 - Poolside Laguna succeeds consistently but at high latency (~185 s), suitable only for non-urgent, quality-critical workloads.
 - Nvidia Nemotron shows high latency variance (17–88 s) and occasional 502 errors, rendering it unpredictable for time-sensitive tasks.
 - Rate limiting (429) on free-tier models (Z.ai GLM, Google Gemma) is the dominant failure mode, making them unreliable under sustained load.
-- Drive goals reveal persistent execution gap: repair intentions and skill proposals accumulate but rarely transition to deployed fixes.
-- Simulations approve risky operations (5 risks, 5 revisions) without reducing actual failure rates, suggesting simulation fidelity gaps.
-- The system operates at maximum stress (1.0) with conservative budget, causing task queuing that compounds model timeout failures.
-- Nemotron-3-Ultra is the only consistently available model but exhibits extreme latency variance (7-123s), indicating upstream queueing or cold-start i
-- Rate limiting (HTTP 429) is the systemic failure mode across all free-tier models, making them unreliable for production workloads.
 
 ---
 

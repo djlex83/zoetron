@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4788 Fakten** · Stand 2026-08-27 21:49 UTC · aktualisiert bei jedem Herzschlag
+**4793 Fakten** · Stand 2026-08-27 22:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1977
+- **dream:** 1982
 - **swarm_artifact:** 1201
 - **last_swarm_critique:** 544
 - **anti_pattern:** 399
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827221109:5:bd142a`
+*27.08. 22:11 UTC · Quelle: dream*
+
+No sandbox validation exists for generated code or skills, allowing untested artifacts to enter the swarm and risk cascading failures.
+
+### `dream:20260827221109:4:324d38`
+*27.08. 22:11 UTC · Quelle: dream*
+
+Dream cycles produce insights (e.g., convergence criteria, risk injection) that remain unconnected to live swarm parameters or model-selection heuristics.
+
+### `dream:20260827221109:3:b8b990`
+*27.08. 22:11 UTC · Quelle: dream*
+
+Five separate skill proposals redundantly address model routing, revealing a proposal-to-deployment gap where ideas accumulate but never ship.
+
+### `dream:20260827221109:2:3183c1`
+*27.08. 22:11 UTC · Quelle: dream*
+
+The only working model (nvidia/nemotron-3-ultra) exhibits 15-23s latency, which stalls swarm cycles and violates sub-10s planning budgets.
+
+### `dream:20260827221109:1:f0e3de`
+*27.08. 22:11 UTC · Quelle: dream*
+
+Free-tier model z-ai/glm-5.2:free fails 100% of the time with 429 rate-limit errors, making it unusable without automated failover.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:2`
 *27.08. 21:48 UTC · Quelle: evolution*
