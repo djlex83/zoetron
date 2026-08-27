@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4501 Fakten** · Stand 2026-08-27 12:49 UTC · aktualisiert bei jedem Herzschlag
+**4515 Fakten** · Stand 2026-08-27 13:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1838
-- **swarm_artifact:** 1125
-- **last_swarm_critique:** 530
+- **dream:** 1843
+- **swarm_artifact:** 1131
+- **last_swarm_critique:** 531
 - **anti_pattern:** 379
-- **last_swarm_goal:** 279
+- **last_swarm_goal:** 280
 - **strategy:** 210
-- **hand_result:** 45
+- **hand_result:** 46
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 30
 - **aktuell_organfehler:** 17
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*27.08. 13:13 UTC · Quelle: critic*
+
+score=9; issues=Die drei Artefakte funktionieren einzeln, aber die Integration zwischen Inventur, Priorisierung und Orchestrator ist nicht explizit verbunden (kein gemeinsamer Entry-Point oder Pipeline-Skript); Harte Pfad-Annahmen über Verzeichnisstruktur (dat
+
+### `last_swarm_goal`
+*27.08. 12:57 UTC · Quelle: system*
+
+Wichtige Aufgaben systematisch bearbeiten
+
+### `dream:20260827125715:5:0aa0ee`
+*27.08. 12:57 UTC · Quelle: dream*
+
+The nemotron-3.5-lightning model provides the highest throughput and stable latency for batch swarm evaluation, making it the optimal default engine for convergence-driven runs.
+
+### `dream:20260827125715:4:98e7fd`
+*27.08. 12:57 UTC · Quelle: dream*
+
+Calibration predictions systematically underestimate swarm performance by ~2 points, indicating a conservative bias that can be corrected via a fixed offset adjustment in future tracking.
+
+### `dream:20260827125715:3:ecfcd0`
+*27.08. 12:57 UTC · Quelle: dream*
+
+Hand-action execution fails on first attempt due to missing state priming, but succeeds on retry, establishing a mandatory pre-execution initialization procedure.
+
+### `dream:20260827125715:2:0057de`
+*27.08. 12:57 UTC · Quelle: dream*
+
+Swarm code variants that increase agent diversity consistently achieve score ≥8, demonstrating that parameter mutation over model scaling is the primary convergence lever.
+
+### `dream:20260827125715:1:b1c219`
+*27.08. 12:57 UTC · Quelle: dream*
+
+Free-tier LLM endpoints enforce hard rate limits (429/502), making exponential backoff with jitter a non-negotiable prerequisite for uninterrupted swarm optimization.
 
 ### `last_swarm_critique`
 *27.08. 12:48 UTC · Quelle: critic*
