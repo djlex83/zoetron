@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4483 Fakten** · Stand 2026-08-27 12:00 UTC · aktualisiert bei jedem Herzschlag
+**4488 Fakten** · Stand 2026-08-27 12:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1828
+- **dream:** 1833
 - **swarm_artifact:** 1119
 - **last_swarm_critique:** 529
 - **anti_pattern:** 379
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827122324:5:4ac580`
+*27.08. 12:23 UTC · Quelle: dream*
+
+Token throughput varies wildly: nemotron-3.5-lightning took 107s for 3k output tokens while nemotron-3-ultra did 5k tokens in 135s.
+
+### `dream:20260827122324:4:5dff69`
+*27.08. 12:23 UTC · Quelle: dream*
+
+Hand actions (tool executions) complete in sub-second latency with zero failures in this trace.
+
+### `dream:20260827122324:3:ce61fc`
+*27.08. 12:23 UTC · Quelle: dream*
+
+The simulation→revision loop (5 risks → 5 revisions) converges reliably and produces runnable Python artifacts.
+
+### `dream:20260827122324:2:c40fe6`
+*27.08. 12:23 UTC · Quelle: dream*
+
+Nvidia Nemotron models (both lightning and ultra) succeed where others fail but occasionally return 502 upstream overload errors.
+
+### `dream:20260827122324:1:74f50c`
+*27.08. 12:23 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Ersten Swarm-Lauf mit Sc:2`
 *27.08. 11:54 UTC · Quelle: evolution*

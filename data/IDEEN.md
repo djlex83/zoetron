@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 11:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 12:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
-- Häufige Modellfehler verstehen und beheben
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren
+- Simulationen öfter anwenden
+- Evolution häufiger starten
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token throughput varies wildly: nemotron-3.5-lightning took 107s for 3k output tokens while nemotron-3-ultra did 5k tokens in 135s.
+- Hand actions (tool executions) complete in sub-second latency with zero failures in this trace.
+- The simulation→revision loop (5 risks → 5 revisions) converges reliably and produces runnable Python artifacts.
+- Nvidia Nemotron models (both lightning and ultra) succeed where others fail but occasionally return 502 upstream overload errors.
+- Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
 - Simulation pre-flight checks are bypassed under stress, leading to degraded model selection and wasted compute.
 - Provider fallback chains are not resilient when all models hit rate limits simultaneously.
 - Skills proposed without execution paths or test harnesses fail to materialize into reliable behaviors.
@@ -51,11 +56,6 @@
 - Skill proposals are generated at high volume and quality yet systematically underutilized, revealing that deployment gatekeeping and success-rate vali
 - Simulations and dreams achieve reflex convergence but fail to transfer actionable patterns to hand execution, indicating a persistent disconnect betwe
 - A single model's repeated 429 errors without automatic blacklisting destabilizes the entire routing pool, proving that runtime failure resilience must
-- Simulation pre-flight and swarm critique proposals exist but remain disconnected; no evidence they gate model calls or route around failing providers.
-- Self-diagnosis and pruning report zero findings while model failures persist, suggesting health checks monitor wrong signals (organ errors vs. API con
-- Skill proposals accumulate (10+ in this log) but drive-goal 'Vorgeschlagene Fähigkeiten wirklich nutzen' signals implementation gap: proposals lack ow
-- Latency variance for nemotron-3-ultra (22–68s) exceeds interactive SLOs, making it unreliable as primary despite availability.
-- Rate-limiting (429) on z-ai/glm-5.2:free recurs across sessions, indicating provider-level quota exhaustion rather than transient spikes.
 
 ---
 
