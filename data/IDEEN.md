@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 03:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 03:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,35 +12,40 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- swarm_runner.py: extend swarm cycles until either convergence is reached or the best-evolved variant's score i
-- skill_trial_scheduler.py: enforce that at least one pending skill_proposal per dream cycle receives a concrete
-- action_executor.py: automatically convert the top-scoring simulation revision into a queued real action within
-- memory_pruner.py: trigger a prune pass whenever consolidated events exceed a threshold relative to pruned coun
-- calibration_tracker.py: log predicted-vs-actual scores per goal over time and flag systematic underprediction 
-- Skill 'risk_class_tagger': annotate every proposed artifact/tool with its operation class (read-only, sandboxe
-- Skill 'approval_queue': buffer rejected destructive operations in a human-approval queue instead of dropping t
-- Skill 'fast_path_convergence': when a swarm converges on cycle 1 with score ≥ 8, skip evolution and record the
+- Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and 
+- Implement a calibration corrector that subtracts the rolling mean abs_error from predicted scores before using
+- Add a critic-output repair stage: if critic output fails to parse, retry once with an explicit schema prompt b
+- Create a 'proposal executor' reflex that picks the oldest untested skill proposal each cycle and runs it again
+- Build latency-tiered routing that assigns timeout budgets per model tier based on rolling average latency and 
+- Persist simulation 'revise' verdicts as structured risk patterns so future plans matching known risk signature
+- Implement an execution queue that caps pending skill proposals at N and forces the oldest untested proposal in
+- Add a goal-lifecycle tracker that marks a drive goal 'stalled' after K cycles without signal change and auto-g
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 8×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Alte Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 3×)*
 - Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 3×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Gründe für Modellfehler finden und beheben *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation verdicts ('go', risks=0) diverge from execution reality when static analysis misses runtime constraints like output size limits.
+- Conservative metabolism budgets (max 1 iteration) conflict with multi-model fallback chains, guaranteeing abandonment before recovery can occur.
+- Code generation exceeding hard character limits (20k) silently prevents execution without truncation logic, turning valid output into total task failu
+- Latency variance of 2-154 seconds for identical models reveals non-deterministic queue positioning, making timeout-based fallbacks unreliable without 
+- Free-tier model endpoints exhibit cascading failure modes: rate limits (429) dominate across providers, while upstream overloads (502) indicate shared
 - Hand actions fail silently (exit 1, no error text), so every shell command must capture stderr/stdout and surface structured error payloads.
 - Simulation-driven revision (5 risks → 5 revisions) produced a running 272-line artifact, confirming that structured critique loops convert vague goals
 - Calibration predicted 1 cycle but actual was 7 (600% error), revealing that cycle estimation ignores revision-loop overhead and model latency variance
@@ -51,11 +56,6 @@
 - The distillation pipeline fails at multiple stages: simulation demands revision, hand action exits with code 1, and training (tor) crashes with filesy
 - Nemotron-3-Ultra shows high latency variance (19-39s) and occasional 502 upstream overloads despite being the most reliable free model.
 - Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production pipelines.
-- Self-diagnosis reports zero organ errors while external API failures dominate, proving internal health checks miss dependency-level pathologies.
-- Metabolism stress at 1.0 (conserve state) correlates with model failures and non-converging tasks, indicating load shedding is reactive not predictive
-- Five dream-generated skill proposals exist but none are implemented, exposing a systemic idea-to-execution gap in the consolidation loop.
-- Fallback model nvidia/nemotron-3-ultra shows 3x latency variance (25-84s), making it unreliable for time-bounded tasks without SLA monitoring.
-- Repeated 429 errors on z-ai/glm-5.2:free reveal that free-tier rate limits cause cascading failures when routing lacks health-aware fallbacks.
 
 ---
 
