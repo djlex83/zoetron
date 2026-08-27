@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4314 Fakten** · Stand 2026-08-27 06:52 UTC · aktualisiert bei jedem Herzschlag
+**4327 Fakten** · Stand 2026-08-27 07:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1750
-- **swarm_artifact:** 1071
-- **last_swarm_critique:** 521
+- **dream:** 1755
+- **swarm_artifact:** 1077
+- **last_swarm_critique:** 522
 - **anti_pattern:** 367
-- **last_swarm_goal:** 270
+- **last_swarm_goal:** 271
 - **strategy:** 204
 - **hand_result:** 43
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*27.08. 07:18 UTC · Quelle: critic*
+
+score=5; issues=Alle drei Bloecke haben ausgiebige Fallback-Pfade bei ImportError - wenn zoetron-Module nicht verfuegbar sind, wird das Ziel 'konsequent anwenden' untergraben statt durchgesetzt; Keine echte Simulation-Logik enthalten - nur Duennwrapper um exte
+
+### `last_swarm_goal`
+*27.08. 07:04 UTC · Quelle: system*
+
+Simulationen konsequent anwenden
+
+### `dream:20260827070133:5:d0da00`
+*27.08. 07:01 UTC · Quelle: dream*
+
+Tagging consolidated memories with a staleness metric and re-encoding them during low-stress windows preserves long-term retention and prevents skill decay.
+
+### `dream:20260827070133:4:434192`
+*27.08. 07:01 UTC · Quelle: dream*
+
+Promoting skills from critic-identified failures via automatic code-edit loops creates a closed-loop where each failure directly engineers the next capable iteration.
+
+### `dream:20260827070133:3:4b385b`
+*27.08. 07:01 UTC · Quelle: dream*
+
+A 5-revision simulation-revision cycle with risk-aware pruning reliably integrates distant memories without catastrophic interference, establishing a durable consolidation threshold.
+
+### `dream:20260827070133:2:e49306`
+*27.08. 07:01 UTC · Quelle: dream*
+
+Repeated 429 throttling on rate-limited models under high load reveals that stress-aware adaptive retries with exponential backoff tied to internal budget state are essential for uninterrupted operation.
+
+### `dream:20260827070133:1:0a4098`
+*27.08. 07:01 UTC · Quelle: dream*
+
+When internal stress crosses 0.8, the system auto-conserves by capping tasks at 3 and iterations at 1, preventing failure cascades but requiring explicit wake-up signals to resume full capacity.
 
 ### `dream:20260827065107:5:c37ec2`
 *27.08. 06:51 UTC · Quelle: dream*
