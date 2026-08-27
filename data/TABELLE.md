@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2709 Neuronen · 59187 bewertete Synapsen
+Stand: 2715 Neuronen · 59335 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,12 +12,12 @@ Stand: 2709 Neuronen · 59187 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 272 | 0.25 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 272 | 0.25 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 211 | 0.23 |
-| 4 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 201 | 0.24 |
+| 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 202 | 0.24 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 211 | 0.23 |
 | 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 195 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 182 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 183 | 0.24 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 182 | 0.23 |
-| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 155 | 0.26 |
+| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 156 | 0.26 |
 | 9 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 164 | 0.24 |
 | 10 | 💭 | Calibration predicted score 4 but actual was 6, revealing a syst… | 140 | 0.28 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 171 | 0.23 |
