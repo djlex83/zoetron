@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4551 Fakten** · Stand 2026-08-27 14:34 UTC · aktualisiert bei jedem Herzschlag
+**4556 Fakten** · Stand 2026-08-27 14:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1863
+- **dream:** 1868
 - **swarm_artifact:** 1139
 - **last_swarm_critique:** 533
 - **anti_pattern:** 379
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827144011:5:0384ea`
+*27.08. 14:40 UTC · Quelle: dream*
+
+Successful reflex execution (fähigkeits-messlatte-bauen) proves automated skill-building works when triggered, but scheduling is inconsistent.
+
+### `dream:20260827144011:4:ef5b7b`
+*27.08. 14:40 UTC · Quelle: dream*
+
+Recurring drive goals for same issues (model errors, capability gaps) show reactive fixes aren't addressing root causes; systematic capability building needed.
+
+### `dream:20260827144011:3:ad33d0`
+*27.08. 14:40 UTC · Quelle: dream*
+
+Dream module timeout (180s) reveals consolidation itself can exceed limits, requiring incremental or streaming consolidation.
+
+### `dream:20260827144011:2:133865`
+*27.08. 14:40 UTC · Quelle: dream*
+
+High latency variance (4.5s vs 80s) makes fixed timeouts unreliable; adaptive timeouts based on model history are essential.
+
+### `dream:20260827144011:1:2eb7f5`
+*27.08. 14:40 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple providers indicates need for request throttling and provider rotation rather than sequential retries.
 
 ### `dream:20260827143417:5:12e643`
 *27.08. 14:34 UTC · Quelle: dream*

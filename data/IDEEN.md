@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 14:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 14:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful reflex execution (fähigkeits-messlatte-bauen) proves automated skill-building works when triggered, but scheduling is inconsistent.
+- Recurring drive goals for same issues (model errors, capability gaps) show reactive fixes aren't addressing root causes; systematic capability buildin
+- Dream module timeout (180s) reveals consolidation itself can exceed limits, requiring incremental or streaming consolidation.
+- High latency variance (4.5s vs 80s) makes fixed timeouts unreliable; adaptive timeouts based on model history are essential.
+- Rate limiting (429 errors) across multiple providers indicates need for request throttling and provider rotation rather than sequential retries.
 - No facts or events were pruned during consolidation, meaning the memory system accumulates indefinitely without forgetting low-value entries.
 - Swarm converged in a single cycle with 5 agents but zero evolution, suggesting the convergence threshold is too low or the task lacked genuine ambigui
 - Calibration error of 3 (predicted 5 vs actual 8) on 'Effizienter werden' shows systematic underestimation of task complexity by 60%.
@@ -51,11 +56,6 @@
 - The simulation-revision loop (3 risks → 3 revisions applied) demonstrates that automated critique cycles produce measurable artifact improvements.
 - Latency variance across successful calls spans 5.7s to 220.4s, requiring adaptive timeouts rather than fixed thresholds.
 - Free-tier models fail predominantly due to rate limits (429) and upstream overloads (502), making them unreliable as primary dependencies.
-- Simulation verdict=revise with 2 risks indicates task prioritization logic needs refinement before execution
-- Metabolism stress=1.0 with max_tasks=3 forces prioritization of reliable models over experimental ones
-- Endpoint returning 200 with no choices (Nvidia 502) reveals silent failure mode requiring explicit response validation
-- nvidia/nemotron-3-ultra-550b shows high latency variance (15s-229s) suggesting load balancing issues under stress
-- Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting that requires exponential backoff or model rotation
 
 ---
 
