@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 12:25:00",
+ "stand": "2026-08-27 12:49:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,16 +21,16 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-traumideen-mit-strategien-verbinden.py",
+   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
   },
   {
-   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
+   "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
    "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
@@ -51,16 +51,16 @@
    "quote": 0.0
   },
   {
-   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
+   "tool": "alte-traumideen-mit-strategien-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
   },
   {
-   "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
+   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
@@ -99,17 +99,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.585,
+ "haende_quote": 0.59,
  "simulationen_angewandt": 70,
  "swarm_scores": {
   "n": 55,
   "best": 9.0,
-  "schnitt": 4.2
+  "schnitt": 4.33
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 53,
-   "schnitt": 4.28
+   "schnitt": 4.42
   },
   "bau": {
    "n": 2,

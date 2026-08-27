@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 12:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 12:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Simulationen auch wirklich anwenden *(wieder aufgegriffen: 2×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Simulationen konsequent anwenden *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
-- Simulationen öfter anwenden
-- Evolution häufiger starten
+- Vorhersagefehler deutlich reduzieren
+- Hermes-Brücke zum Boten bauen
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation caught 5 risks and triggered 5 revisions before deployment, proving pre-flight simulation prevents production failures.
+- Calibration error of 3 (predicted 6 vs actual 3 proposals) shows proposal generator overestimates feasible output under constraints.
+- Evolution improved skill proposal score from 3 to 8 but swarm failed to converge, indicating critic feedback loops need stronger termination criteria.
+- High-latency models (Nemotron 79-92s) succeed where fast models fail, suggesting latency budget should be allocated per task criticality.
+- Rate limiting (429 errors) across multiple providers indicates need for request throttling and fallback chains rather than parallel retries.
 - Token throughput varies wildly: nemotron-3.5-lightning took 107s for 3k output tokens while nemotron-3-ultra did 5k tokens in 135s.
 - Hand actions (tool executions) complete in sub-second latency with zero failures in this trace.
 - The simulation→revision loop (5 risks → 5 revisions) converges reliably and produces runnable Python artifacts.
@@ -51,11 +56,6 @@
 - Skills proposed without execution paths or test harnesses fail to materialize into reliable behaviors.
 - Latency SLO violations (e.g., 180s) directly correlate with task abandonment and must be enforced before invocation.
 - Rate limiting (429) is the dominant failure mode across multiple providers, indicating systemic overload rather than isolated model issues.
-- Inactive pruning alongside repeated model failures demonstrates that fact/event pruning must be conditioned on model health and skill utilization metr
-- The three recurring drive goals—model reliability, skill utilization, and simulation-action integration—form the system's cross-cutting consolidation 
-- Skill proposals are generated at high volume and quality yet systematically underutilized, revealing that deployment gatekeeping and success-rate vali
-- Simulations and dreams achieve reflex convergence but fail to transfer actionable patterns to hand execution, indicating a persistent disconnect betwe
-- A single model's repeated 429 errors without automatic blacklisting destabilizes the entire routing pool, proving that runtime failure resilience must
 
 ---
 

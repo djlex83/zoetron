@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4488 Fakten** · Stand 2026-08-27 12:25 UTC · aktualisiert bei jedem Herzschlag
+**4501 Fakten** · Stand 2026-08-27 12:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1833
-- **swarm_artifact:** 1119
-- **last_swarm_critique:** 529
+- **dream:** 1838
+- **swarm_artifact:** 1125
+- **last_swarm_critique:** 530
 - **anti_pattern:** 379
-- **last_swarm_goal:** 278
+- **last_swarm_goal:** 279
 - **strategy:** 210
 - **hand_result:** 45
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*27.08. 12:48 UTC · Quelle: critic*
+
+score=9; issues=Coverage analysis uses keyword matching as proxy for structural coverage - may yield false positives/negatives; Extension script patches modules at runtime rather than modifying source - not persistent across restarts; Validation depends on Wid
+
+### `last_swarm_goal`
+*27.08. 12:31 UTC · Quelle: system*
+
+Blinden Fleck #2 im Gedächtnis erforschen
+
+### `dream:20260827122952:5:e38025`
+*27.08. 12:29 UTC · Quelle: dream*
+
+Simulation caught 5 risks and triggered 5 revisions before deployment, proving pre-flight simulation prevents production failures.
+
+### `dream:20260827122952:4:77e848`
+*27.08. 12:29 UTC · Quelle: dream*
+
+Calibration error of 3 (predicted 6 vs actual 3 proposals) shows proposal generator overestimates feasible output under constraints.
+
+### `dream:20260827122952:3:e405dc`
+*27.08. 12:29 UTC · Quelle: dream*
+
+Evolution improved skill proposal score from 3 to 8 but swarm failed to converge, indicating critic feedback loops need stronger termination criteria.
+
+### `dream:20260827122952:2:9f5220`
+*27.08. 12:29 UTC · Quelle: dream*
+
+High-latency models (Nemotron 79-92s) succeed where fast models fail, suggesting latency budget should be allocated per task criticality.
+
+### `dream:20260827122952:1:6ec54d`
+*27.08. 12:29 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple providers indicates need for request throttling and fallback chains rather than parallel retries.
 
 ### `dream:20260827122324:5:4ac580`
 *27.08. 12:23 UTC · Quelle: dream*
