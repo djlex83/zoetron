@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 2993 Neuronen · 73767 bewertete Synapsen
+Stand: 2998 Neuronen · 74128 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -15,16 +15,16 @@ Stand: 2993 Neuronen · 73767 bewertete Synapsen
 | 3 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 231 | 0.24 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 230 | 0.24 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 232 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 220 | 0.23 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 221 | 0.23 |
 | 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 199 | 0.26 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 203 | 0.23 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 184 | 0.25 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 192 | 0.23 |
 | 11 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 176 | 0.25 |
-| 12 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 173 | 0.25 |
-| 13 | 💭 | Calibration predicted score 5 but actual was 8, revealing system… | 185 | 0.23 |
-| 14 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 174 | 0.24 |
-| 15 | 💭 | Calibration error of 4 points (predicted 2 vs actual 6) indicate… | 150 | 0.27 |
+| 12 | 💭 | Calibration predicted score 5 but actual was 8, revealing system… | 186 | 0.23 |
+| 13 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 173 | 0.25 |
+| 14 | 💭 | Calibration error of 2 points (predicted 7 vs actual 9) indicate… | 175 | 0.24 |
+| 15 | 💭 | Calibration error of 4 points (predicted 2 vs actual 6) indicate… | 151 | 0.28 |
 
 ## Die 15 stärksten Synapsen
 

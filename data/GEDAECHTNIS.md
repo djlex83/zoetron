@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4546 Fakten** · Stand 2026-08-27 14:28 UTC · aktualisiert bei jedem Herzschlag
+**4551 Fakten** · Stand 2026-08-27 14:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1858
+- **dream:** 1863
 - **swarm_artifact:** 1139
 - **last_swarm_critique:** 533
 - **anti_pattern:** 379
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827143417:5:12e643`
+*27.08. 14:34 UTC · Quelle: dream*
+
+No facts or events were pruned during consolidation, meaning the memory system accumulates indefinitely without forgetting low-value entries.
+
+### `dream:20260827143417:4:c92fd5`
+*27.08. 14:34 UTC · Quelle: dream*
+
+Swarm converged in a single cycle with 5 agents but zero evolution, suggesting the convergence threshold is too low or the task lacked genuine ambiguity.
+
+### `dream:20260827143417:3:0e9ae1`
+*27.08. 14:34 UTC · Quelle: dream*
+
+Calibration error of 3 (predicted 5 vs actual 8) on 'Effizienter werden' shows systematic underestimation of task complexity by 60%.
+
+### `dream:20260827143417:2:e13735`
+*27.08. 14:34 UTC · Quelle: dream*
+
+Nemotron-3-ultra received a 30-minute hard block after exactly 3 consecutive errors, revealing a strict circuit-breaker policy that penalizes retry storms.
+
+### `dream:20260827143417:1:3051b7`
+*27.08. 14:34 UTC · Quelle: dream*
+
+All free-tier models simultaneously hit 429 rate limits, indicating a shared infrastructure bottleneck rather than individual model failures.
 
 ### `dream:20260827142641:5:413093`
 *27.08. 14:26 UTC · Quelle: dream*

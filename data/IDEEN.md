@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 14:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 14:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No facts or events were pruned during consolidation, meaning the memory system accumulates indefinitely without forgetting low-value entries.
+- Swarm converged in a single cycle with 5 agents but zero evolution, suggesting the convergence threshold is too low or the task lacked genuine ambigui
+- Calibration error of 3 (predicted 5 vs actual 8) on 'Effizienter werden' shows systematic underestimation of task complexity by 60%.
+- Nemotron-3-ultra received a 30-minute hard block after exactly 3 consecutive errors, revealing a strict circuit-breaker policy that penalizes retry st
+- All free-tier models simultaneously hit 429 rate limits, indicating a shared infrastructure bottleneck rather than individual model failures.
 - A running Python artifact (132 lines) serves as a concrete, verifiable success metric that closes the loop between simulation and reality.
 - Hand actions (local code execution) succeed in 0.24s with zero failures, outperforming all model calls on reliability and speed.
 - The simulation-revision loop (3 risks → 3 revisions applied) demonstrates that automated critique cycles produce measurable artifact improvements.
@@ -51,11 +56,6 @@
 - Endpoint returning 200 with no choices (Nvidia 502) reveals silent failure mode requiring explicit response validation
 - nvidia/nemotron-3-ultra-550b shows high latency variance (15s-229s) suggesting load balancing issues under stress
 - Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting that requires exponential backoff or model rotation
-- Prediction calibration is absent, causing systematic overestimation of capability readiness as seen in repeated proposal revisions.
-- Skill proposals accumulate without mandatory simulation validation, allowing untested capabilities to enter production.
-- Swarm cycles lack objective convergence criteria, risking infinite loops or premature termination without score delta or critic approval thresholds.
-- Latency variance for identical models (12.6s vs 78s) exceeds 6x, making static model assignment unreliable for time-sensitive tasks.
-- Rate limiting (429) affects all free-tier models simultaneously, requiring provider-agnostic backoff and rotation rather than per-model fixes.
 
 ---
 
