@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-27 03:50:48",
+ "stand": "2026-08-27 04:20:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "lebender-steckbrief-die-biografie-als-al.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -36,6 +30,12 @@
    "tool": "ich-kern-injektor-bauen-ein-selbst-für-j.py",
    "laeufe": 3,
    "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "lebender-steckbrief-die-biografie-als-al.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -93,17 +93,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.555,
+ "haende_quote": 0.545,
  "simulationen_angewandt": 77,
  "swarm_scores": {
   "n": 64,
   "best": 9.0,
-  "schnitt": 4.16
+  "schnitt": 4.12
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 61,
-   "schnitt": 4.16
+   "schnitt": 4.13
   },
   "bau": {
    "n": 3,

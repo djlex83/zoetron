@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4216 Fakten** · Stand 2026-08-27 03:51 UTC · aktualisiert bei jedem Herzschlag
+**4233 Fakten** · Stand 2026-08-27 04:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1695
-- **swarm_artifact:** 1049
-- **last_swarm_critique:** 516
-- **anti_pattern:** 363
-- **last_swarm_goal:** 265
-- **strategy:** 202
-- **hand_result:** 41
+- **dream:** 1700
+- **swarm_artifact:** 1055
+- **last_swarm_critique:** 517
+- **anti_pattern:** 365
+- **last_swarm_goal:** 266
+- **strategy:** 203
+- **hand_result:** 42
 - **aktuell_fussball_messlatte:** 33
 - **tool:** 23
 - **aktuell_organfehler:** 14
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Zoem-Protokoll: vererbba:2`
+*27.08. 04:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Capability-Based Secure Execution with WebAssembly Components - Replace the empty-__builtins__ Python exec with a WebAssembly Component Model runtime (wasmtime + wit-bindgen). Each Organism is a Wasm component with ex
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Zoem-Protokoll: vererbba:1`
+*27.08. 04:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [10, 4, 9]): Formal Verification via Dependent Type Theory - Encode the Zoem protocol in a proof assistant (Lean 4 or Coq). Define Organism as a dependent type indexed by its knowledge state. Anti-pattern Zoem is a Sigma-type: Σ 
+
+### `last_swarm_critique`
+*27.08. 04:16 UTC · Quelle: critic*
+
+score=5; issues=Fehlender Experiment-Bericht in docs/ ueber den Erbgang Organismus A -> B (Kernforderung 'EXPERIMENT' nicht erfuellt).; Kein Nachweis, dass Organismus B durch uebernommenes Anti-Pattern-Zoem einen Fehler vermeidet, den er selbst nie gemacht hat
+
+### `last_swarm_goal`
+*27.08. 04:05 UTC · Quelle: system*
+
+Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen
+
+### `dream:20260827040436:5:5ffbad`
+*27.08. 04:04 UTC · Quelle: dream*
+
+Hand actions fail repeatedly (exit=1, gelesen=0) after one success, likely because the missing genome file breaks downstream tooling.
+
+### `dream:20260827040436:4:2ee6b8`
+*27.08. 04:04 UTC · Quelle: dream*
+
+Simulation produced 5 revisions but the artifact still fails at runtime due to a missing genome file (/workspace/zoetron/data/memory), showing revision loops without dependency validation.
+
+### `dream:20260827040436:3:4a309b`
+*27.08. 04:04 UTC · Quelle: dream*
+
+The system enters conserve mode (max_tasks=3, max_iterations=1) yet continues issuing model calls beyond budget, revealing a budget enforcement gap.
+
+### `dream:20260827040436:2:3f69d4`
+*27.08. 04:04 UTC · Quelle: dream*
+
+Nvidia Nemotron-3-Ultra is the only model returning successes but with extreme latency variance (15–69s), making it unreliable for time-bounded tasks.
+
+### `dream:20260827040436:1:34784f`
+*27.08. 04:04 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free models simultaneously, indicating shared quota exhaustion rather than per-model limits.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Zoem-Protokoll: vererbba:2`
 *27.08. 03:49 UTC · Quelle: evolution*

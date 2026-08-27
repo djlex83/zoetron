@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 03:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 04:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,35 +12,40 @@
 - Implement a proposal-execution queue that automatically schedules top-scored skill_proposals as drive goals to *(hatte die Idee 2×)*
 - Create a calibration updater that fits predicted-vs-actual errors from logs and multiplicatively adjusts simul *(hatte die Idee 2×)*
 - Build a robust model fallback mechanism that immediately switches to an alternative provider upon encountering *(hatte die Idee 2×)*
-- Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and 
-- Implement a calibration corrector that subtracts the rolling mean abs_error from predicted scores before using
-- Add a critic-output repair stage: if critic output fails to parse, retry once with an explicit schema prompt b
-- Create a 'proposal executor' reflex that picks the oldest untested skill proposal each cycle and runs it again
-- Build latency-tiered routing that assigns timeout budgets per model tier based on rolling average latency and 
-- Persist simulation 'revise' verdicts as structured risk patterns so future plans matching known risk signature
-- Implement an execution queue that caps pending skill proposals at N and forces the oldest untested proposal in
-- Add a goal-lifecycle tracker that marks a drive goal 'stalled' after K cycles without signal change and auto-g
+- Skill 'stderr_capture': wrap every hand_action so exit code, stdout, and stderr are persisted as structured fa
+- Skill 'late_calibration': defer score prediction until after simulation verdicts exist, or predict twice (pre/
+- Skill 'evolve_on_low_score': automatically trigger an evolution_run with ≥3 variants whenever a swarm cycle en
+- Skill 'long_call_splitter': detect predicted output > ~4000 tokens and decompose into chunked sub-calls to cap
+- Skill 'recurring_failure_ledger': aggregate repeated failure signatures (e.g., exit 1, calibration miss > 2) i
+- Skill 'error_payload_guard': on any non-zero exit with error=null, automatically re-run the action with verbos
+- Skill 'proposal_trial_quota': enforce a ratio cap (e.g., max 5 open proposals per 1 tested) that pauses new sk
+- Skill 'min_cycle_floor': set a minimum of 3-4 swarm cycles before declaring non-convergence when score is low 
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Häufige Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
-- Alte Träume miteinander verbinden *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten endlich ausprobieren *(wieder aufgegriffen: 2×)*
 - Simulationen öfter anwenden *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten tatsächlich ausprobieren *(wieder aufgegriffen: 2×)*
+- Alte Träume miteinander verbinden *(wieder aufgegriffen: 2×)*
+- Gründe für Modellfehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten ausprobieren *(wieder aufgegriffen: 2×)*
 - Häufige Modellfehler besser verstehen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail repeatedly (exit=1, gelesen=0) after one success, likely because the missing genome file breaks downstream tooling.
+- Simulation produced 5 revisions but the artifact still fails at runtime due to a missing genome file (/workspace/zoetron/data/memory), showing revisio
+- The system enters conserve mode (max_tasks=3, max_iterations=1) yet continues issuing model calls beyond budget, revealing a budget enforcement gap.
+- Nvidia Nemotron-3-Ultra is the only model returning successes but with extreme latency variance (15–69s), making it unreliable for time-bounded tasks.
+- Rate limiting (429) affects all free models simultaneously, indicating shared quota exhaustion rather than per-model limits.
 - Simulation verdicts ('go', risks=0) diverge from execution reality when static analysis misses runtime constraints like output size limits.
 - Conservative metabolism budgets (max 1 iteration) conflict with multi-model fallback chains, guaranteeing abandonment before recovery can occur.
 - Code generation exceeding hard character limits (20k) silently prevents execution without truncation logic, turning valid output into total task failu
@@ -51,11 +56,6 @@
 - Calibration predicted 1 cycle but actual was 7 (600% error), revealing that cycle estimation ignores revision-loop overhead and model latency variance
 - Nemotron-3-ultra succeeds on every call but exhibits extreme latency variance (12–134 s) correlated with input token count, requiring token-aware adap
 - Free-tier models (glm-5.2) consistently fail with 429 rate-limit errors, making them unreliable for production paths without exponential backoff and c
-- Bahnen delta of -0.5 despite score 1 suggests the graph traversal retrieves nodes but fails to synthesize improving edits.
-- Calibration error of 100% (predicted 2 vs actual 1) indicates the reward model or difficulty estimator is misaligned with actual task hardness.
-- The distillation pipeline fails at multiple stages: simulation demands revision, hand action exits with code 1, and training (tor) crashes with filesy
-- Nemotron-3-Ultra shows high latency variance (19-39s) and occasional 502 upstream overloads despite being the most reliable free model.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production pipelines.
 
 ---
 

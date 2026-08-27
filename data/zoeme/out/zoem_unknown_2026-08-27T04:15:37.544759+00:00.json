@@ -1,0 +1,10 @@
+{
+  "inhalt": "Lektion aus der Umgebung validiert.",
+  "beweisrezept": "def test_validiert(): pass",
+  "herkunft": {
+    "organism_id": "unknown",
+    "timestamp": "2026-08-27T04:15:37.544759+00:00",
+    "source_event": "import"
+  },
+  "stammbaum": []
+}
