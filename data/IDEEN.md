@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-27 21:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration systematically underestimates actual cycles (predicted 6 vs actual 8), revealing a persistent optimism bias in planning.
+- Hand actions fail intermittently (exit 1) yet succeed on immediate retry, indicating transient environment or resource contention.
+- Poolside Laguna succeeds consistently but at high latency (~185 s), suitable only for non-urgent, quality-critical workloads.
+- Nvidia Nemotron shows high latency variance (17–88 s) and occasional 502 errors, rendering it unpredictable for time-sensitive tasks.
+- Rate limiting (429) on free-tier models (Z.ai GLM, Google Gemma) is the dominant failure mode, making them unreliable under sustained load.
 - Drive goals reveal persistent execution gap: repair intentions and skill proposals accumulate but rarely transition to deployed fixes.
 - Simulations approve risky operations (5 risks, 5 revisions) without reducing actual failure rates, suggesting simulation fidelity gaps.
 - The system operates at maximum stress (1.0) with conservative budget, causing task queuing that compounds model timeout failures.
@@ -51,11 +56,6 @@
 - The system generates skill proposals faster than it validates or deploys them, creating an execution gap that self-diagnosis does not close.
 - Latency variance across working models spans 6–80 seconds, causing unpredictable swarm cycle times unless roles are latency-matched.
 - Free-tier model endpoints consistently fail with 429 rate-limit errors under load, making naive round-robin selection unreliable.
-- No facts or events were pruned despite high error volume, meaning the memory retention policy preserves noise over signal.
-- Reflex-driven goal conversion succeeds where deliberative planning stalls, showing lightweight procedural knowledge outperforms heavy simulation for r
-- Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don't capture external dependency degradation.
-- The swarm process evolves solutions but fails to converge within 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
-- Free-tier API endpoints consistently fail under load with 429/502 errors, making them unreliable as primary inference providers.
 
 ---
 

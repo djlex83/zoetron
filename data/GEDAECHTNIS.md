@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4770 Fakten** · Stand 2026-08-27 21:34 UTC · aktualisiert bei jedem Herzschlag
+**4775 Fakten** · Stand 2026-08-27 21:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 1967
+- **dream:** 1972
 - **swarm_artifact:** 1199
 - **last_swarm_critique:** 543
 - **anti_pattern:** 397
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260827213830:5:fc922e`
+*27.08. 21:38 UTC · Quelle: dream*
+
+Calibration systematically underestimates actual cycles (predicted 6 vs actual 8), revealing a persistent optimism bias in planning.
+
+### `dream:20260827213830:4:22cf8f`
+*27.08. 21:38 UTC · Quelle: dream*
+
+Hand actions fail intermittently (exit 1) yet succeed on immediate retry, indicating transient environment or resource contention.
+
+### `dream:20260827213830:3:b5259f`
+*27.08. 21:38 UTC · Quelle: dream*
+
+Poolside Laguna succeeds consistently but at high latency (~185 s), suitable only for non-urgent, quality-critical workloads.
+
+### `dream:20260827213830:2:7a476e`
+*27.08. 21:38 UTC · Quelle: dream*
+
+Nvidia Nemotron shows high latency variance (17–88 s) and occasional 502 errors, rendering it unpredictable for time-sensitive tasks.
+
+### `dream:20260827213830:1:942011`
+*27.08. 21:38 UTC · Quelle: dream*
+
+Rate limiting (429) on free-tier models (Z.ai GLM, Google Gemma) is the dominant failure mode, making them unreliable under sustained load.
 
 ### `dream:20260827213354:5:46f91a`
 *27.08. 21:33 UTC · Quelle: dream*
