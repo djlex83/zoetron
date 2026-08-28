@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3294 Neuronen · 94527 bewertete Synapsen
+Stand: 3303 Neuronen · 95242 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 3294 Neuronen · 94527 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 321 | 0.26 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 321 | 0.25 |
-| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 267 | 0.24 |
-| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 260 | 0.24 |
-| 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 272 | 0.23 |
-| 6 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 257 | 0.24 |
-| 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 262 | 0.23 |
-| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 240 | 0.25 |
-| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 231 | 0.24 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 219 | 0.24 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 323 | 0.26 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 323 | 0.25 |
+| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 268 | 0.24 |
+| 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 262 | 0.24 |
+| 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 273 | 0.23 |
+| 6 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 258 | 0.24 |
+| 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 263 | 0.23 |
+| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 241 | 0.25 |
+| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 233 | 0.24 |
+| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 220 | 0.24 |
 | 11 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 211 | 0.25 |
-| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 220 | 0.23 |
-| 13 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeiten echt testen “ (Note 6/1… | 215 | 0.23 |
-| 14 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 207 | 0.24 |
-| 15 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 196 | 0.24 |
+| 12 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 222 | 0.23 |
+| 13 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeiten echt testen “ (Note 6/1… | 217 | 0.23 |
+| 14 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 208 | 0.24 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Exemplar-Bank: von den e“ (Note 2/1… | 210 | 0.23 |
 
 ## Die 15 stärksten Synapsen
 

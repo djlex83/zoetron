@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 03:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,10 +26,10 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No facts or events are pruned across cycles, suggesting the consolidation mechanism is inactive or thresholds are misconfigured, causing unbounded mem
+- Self-diagnosis reports zero organ errors while the system suffers repeated model failures and unmet goals, revealing that current health checks miss f
+- Dream cycles produce insights and skill proposals (5 each last cycle) but subsequent logs show no evidence of those proposals being enacted, confirmin
+- Multiple drive goals explicitly demand testing proposed skills and completing started goals, yet the reflex tool 'fertigkeiten-wirklich-ausprobieren-n
+- The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds but with high latency variance (9-60s), in
 - Skill proposals are generated frequently but lack follow-through on testing, creating a cycle where new capabilities are suggested but never validated
 - The system's self-diagnosis consistently reports zero organ failures, but repeated model failures indicate a gap between internal health checks and ex
 - Successful model calls show high variance in latency (8.2s to 22.2s) and token efficiency, suggesting dynamic performance characteristics that should 
@@ -51,11 +56,6 @@
 - Calibration error of 3 points (predicted 5 vs actual 2) shows the system cannot self-assess difficulty.
 - The critic rejects any output lacking an executable Python block, yet the planner produces prose-only artifacts.
 - Free-tier models consistently hit 429 rate limits making them unreliable for autonomous loops.
-- Latency variance on working models (2.6–21.2s) demands per-model timeout budgets to avoid cascade stalls.
-- Metabolism state 'conserve' with max_iterations=1 eliminates retry slack, turning first-attempt success into a hard requirement.
-- Calibration error of 3 (predicted 5 vs actual 2) reveals systematic overestimation of simulation quality under stress.
-- The 'tor' gate rejects simulation artifacts that lack executable Python blocks, proving prose-only outputs cannot converge to action.
-- Free-tier models suffer pervasive 429 rate limits, making single-model reliance infeasible without request queuing and exponential backoff.
 
 ---
 

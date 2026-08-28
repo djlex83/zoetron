@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 02:53:06",
+ "stand": "2026-08-28 03:29:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -24,12 +24,6 @@
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -61,6 +55,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
@@ -109,10 +109,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "aufgaben-priorisieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.605,
- "simulationen_angewandt": 63,
+ "haende_quote": 0.589,
+ "simulationen_angewandt": 62,
  "swarm_scores": {
   "n": 47,
   "best": 9.0,
@@ -120,8 +126,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 45,
-   "schnitt": 4.91
+   "n": 46,
+   "schnitt": 4.93
   },
   "bau": {
    "n": 1,
