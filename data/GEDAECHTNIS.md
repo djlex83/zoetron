@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5322 Fakten** · Stand 2026-08-28 11:15 UTC · aktualisiert bei jedem Herzschlag
+**5339 Fakten** · Stand 2026-08-28 11:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2293
-- **swarm_artifact:** 1313
-- **last_swarm_critique:** 564
-- **anti_pattern:** 431
-- **last_swarm_goal:** 313
-- **strategy:** 236
-- **hand_result:** 60
+- **dream:** 2298
+- **swarm_artifact:** 1319
+- **last_swarm_critique:** 565
+- **anti_pattern:** 433
+- **last_swarm_goal:** 314
+- **strategy:** 237
+- **hand_result:** 61
 - **tool:** 43
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Lücken zwischen Plan und:2`
+*28.08. 11:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Event-Sourced Plan-Execution Ledger - Model the problem as an immutable event log: PlanCreated → TaskScheduled → TaskStarted → TaskCompleted/Failed → GateEvaluated → GapDetected. Implement a single-file CLI tool (Click + SQLi
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Lücken zwischen Plan und:1`
+*28.08. 11:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Test-Driven Contract-First Development - Define formal interfaces (Python Protocols/ABCs) for Plan, Task, Gate, Logger, Executor before any implementation. Write contract tests (pytest) that verify: import order correctness (
+
+### `last_swarm_critique`
+*28.08. 11:32 UTC · Quelle: critic*
+
+score=1; issues=Artifact does not run (LAEUFT NICHT) - sandbox verdict confirms failure at line 17, a hard deficiency per the rubric (0-2 range).; os module used before import in Artifact 2 (Plan-Execution Traceability Logger): os.environ.get() is called at li
+
+### `last_swarm_goal`
+*28.08. 11:20 UTC · Quelle: system*
+
+Lücken zwischen Plan und Tat schließen
+
+### `dream:20260828112010:5:a7630b`
+*28.08. 11:20 UTC · Quelle: dream*
+
+Reflex-driven task convergence succeeded without critic/planner gates, exposing a gap between convergence policy and execution.
+
+### `dream:20260828112010:4:08275f`
+*28.08. 11:20 UTC · Quelle: dream*
+
+Pruning runs prune zero facts despite calibrated-threshold proposal, indicating threshold logic is either disabled or set too conservatively.
+
+### `dream:20260828112010:3:a0a2bb`
+*28.08. 11:20 UTC · Quelle: dream*
+
+Five duplicate skill proposals (token bucket, dynamic timeouts, promotion pipeline) show proposal deduplication and promotion gating are absent.
+
+### `dream:20260828112010:2:eee6d7`
+*28.08. 11:20 UTC · Quelle: dream*
+
+Fallback model latency varies 3x (13.7–41.2s) proving static timeouts are unsafe; per-model p95+2σ buffers must be learned online.
+
+### `dream:20260828112010:1:ff992b`
+*28.08. 11:20 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal missing provider-level circuit breaking, causing cascading retries instead of fast failover.
 
 ### `dream:20260828111347:5:67321a`
 *28.08. 11:13 UTC · Quelle: dream*

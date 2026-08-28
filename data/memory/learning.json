@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 11:14:40",
+ "stand": "2026-08-28 11:38:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,12 +69,6 @@
    "quote": 0.0
   },
   {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -123,17 +117,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.643,
+ "haende_quote": 0.629,
  "simulationen_angewandt": 60,
  "swarm_scores": {
   "n": 42,
   "best": 9.0,
-  "schnitt": 4.95
+  "schnitt": 4.83
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 40,
-   "schnitt": 5.03
+   "n": 41,
+   "schnitt": 4.93
   },
   "bau": {
    "n": 1,

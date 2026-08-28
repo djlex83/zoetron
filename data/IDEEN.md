@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 18×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 17×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven task convergence succeeded without critic/planner gates, exposing a gap between convergence policy and execution.
+- Pruning runs prune zero facts despite calibrated-threshold proposal, indicating threshold logic is either disabled or set too conservatively.
+- Five duplicate skill proposals (token bucket, dynamic timeouts, promotion pipeline) show proposal deduplication and promotion gating are absent.
+- Fallback model latency varies 3x (13.7–41.2s) proving static timeouts are unsafe; per-model p95+2σ buffers must be learned online.
+- Repeated 429 errors on z-ai/glm-5.2:free reveal missing provider-level circuit breaking, causing cascading retries instead of fast failover.
 - Dream consolidation recurs without extracting executable fixes, turning pattern recognition into idle repetition.
 - Missing organ dependency validation before variant generation caps evolution scores at 6/10, a predictable failure mode.
 - The system repeatedly proposes the same fallback/retry skills without implementing them, creating a proposal-implementation gap that wastes cycles.
@@ -51,11 +56,6 @@
 - Destructive operations (subprocess) are blocked by human-approval gates, stalling autonomous execution.
 - Evolution can generate high-scoring variants (9/10) but swarm convergence fails when model calls intermittently fail.
 - Free-tier models on OpenRouter suffer systemic 429 rate-limiting making them unreliable for sustained workloads.
-- Calibration predictions tend to overestimate actual performance, indicating the calibration model needs a downward adjustment.
-- Evolutionary runs effectively improve artifact quality, as evidenced by the score increasing from 4 to 9 by addressing specific critic issues.
-- The model 'poolside/laguna-s-2.1:free' offers significantly lower latency (6.7s) compared to 'nvidia/nemotron-3-ultra-550b-a55b:free' (47-187s) and is
-- Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), necessitating a robust multi-model fallback 
-- The model 'z-ai/glm-5.2:free' is chronically unreliable due to persistent 429 rate limits and should be temporarily blacklisted.
 
 ---
 
