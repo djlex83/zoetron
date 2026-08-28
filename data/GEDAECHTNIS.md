@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5271 Fakten** · Stand 2026-08-28 10:10 UTC · aktualisiert bei jedem Herzschlag
+**5287 Fakten** · Stand 2026-08-28 10:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2253
-- **swarm_artifact:** 1307
-- **last_swarm_critique:** 563
-- **anti_pattern:** 429
-- **last_swarm_goal:** 312
-- **strategy:** 235
+- **dream:** 2258
+- **swarm_artifact:** 1313
+- **last_swarm_critique:** 564
+- **anti_pattern:** 431
+- **last_swarm_goal:** 313
+- **strategy:** 236
 - **hand_result:** 60
 - **tool:** 43
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler stark reduz:2`
+*28.08. 10:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Provider-Level Failover and Redundancy Router - Route model requests through a dynamic provider mesh (e.g., multiple LLMs or versions) with built-in validation checkpoints. If the primary model fails quality checks, automatic
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler stark reduz:1`
+*28.08. 10:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Adaptive Prompt Rewriting Engine - Deploy a meta-prompt engine that modifies the input prompt structure and constraints in real-time upon detecting hallucination or invalid output patterns. Use lightweight LLM or regex-based 
+
+### `last_swarm_critique`
+*28.08. 10:25 UTC · Quelle: critic*
+
+score=4; issues=Die drei Artefakte sind Analyse- und Diagnose-Tools, keine Fehlerreduktions-Tools: sie kategorisieren Fehler, diagnostizieren Fehlschläge und schlagen Router-Regeln vor, führen aber keine aktive Reduktion durch (kein Retry-Loop, kein automatisc
+
+### `last_swarm_goal`
+*28.08. 10:16 UTC · Quelle: system*
+
+Modellfehler stark reduzieren
+
+### `dream:20260828101536:5:46f25b`
+*28.08. 10:15 UTC · Quelle: dream*
+
+Zero pruning occurred despite repeated failures, suggesting memory retention policies don't yet weight operational relevance.
+
+### `dream:20260828101536:4:cdb691`
+*28.08. 10:15 UTC · Quelle: dream*
+
+The system already converts failure patterns into concrete skill proposals (retry logic, health scoring, cooldown registry), demonstrating a working failure-to-learning loop.
+
+### `dream:20260828101536:3:9cb7b3`
+*28.08. 10:15 UTC · Quelle: dream*
+
+Latency variance (3.5s vs 11.1s) on the same model indicates queue-depth or cold-start effects that static timeouts cannot handle.
+
+### `dream:20260828101536:2:bb8d00`
+*28.08. 10:15 UTC · Quelle: dream*
+
+Dynamic model health varies drastically — poolside/laguna-s-2.1 succeeded while four other models failed simultaneously — requiring real-time routing decisions.
+
+### `dream:20260828101536:1:404701`
+*28.08. 10:15 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) are the dominant failure modes, making single-model reliance fundamentally fragile.
 
 ### `dream:20260828100934:5:74e279`
 *28.08. 10:09 UTC · Quelle: dream*

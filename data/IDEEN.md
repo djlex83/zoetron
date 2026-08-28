@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 17×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -35,12 +35,17 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
-- Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
+- Modell-Fehler stark verringern *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten echt ausprobieren *(wieder aufgegriffen: 2×)*
 - Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning occurred despite repeated failures, suggesting memory retention policies don't yet weight operational relevance.
+- The system already converts failure patterns into concrete skill proposals (retry logic, health scoring, cooldown registry), demonstrating a working f
+- Latency variance (3.5s vs 11.1s) on the same model indicates queue-depth or cold-start effects that static timeouts cannot handle.
+- Dynamic model health varies drastically — poolside/laguna-s-2.1 succeeded while four other models failed simultaneously — requiring real-time routing 
+- Rate limiting (429) and upstream overload (502) are the dominant failure modes, making single-model reliance fundamentally fragile.
 - Model latency variance is extreme (3.5s vs 91.7s for same model family), making static timeouts unreliable for routing decisions.
 - Memory pruning removes zero facts/events despite continuous operation, implying retention thresholds are miscalibrated for the event volume.
 - Self-generated skill proposals from prior failures (backoff, health scoreboard, fallback chain) remain unimplemented, creating a proposal-execution ga
@@ -51,11 +56,6 @@
 - The evolution runner caps at 6/10 due to a missing 'hands organ dependency' — a structural gap that prevents score improvement regardless of variant m
 - nvidia/nemotron-3-ultra-550b-a55b:free is the only model that completes reliably but suffers variable latency (37–281s) and occasional 502 upstream ov
 - Free-tier models on OpenRouter (glm-5.2, gemma variants, poolside) consistently fail with 429 rate limits under load, making them unreliable for any s
-- Sequential model trial wastes 100+ seconds; parallel health probes would cut fallback latency by an order of magnitude.
-- Under maximum stress (1.0) the system correctly enters conserve mode with strict task/iteration budgets, preventing overload.
-- Simulation-revision loops (5 risks → 5 revisions applied) effectively de-risk execution before hand-off to hand_action.
-- Nemotron-3-ultra exhibits extreme latency variance (11–280s) on the same endpoint, rendering it unreliable for time-bounded tasks.
-- Free-tier API rate limits cause cascading 429 failures across multiple models simultaneously, making sequential fallback strategies brittle.
 
 ---
 
