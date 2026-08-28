@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5064 Fakten** · Stand 2026-08-28 04:53 UTC · aktualisiert bei jedem Herzschlag
+**5069 Fakten** · Stand 2026-08-28 05:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2123
+- **dream:** 2128
 - **swarm_artifact:** 1269
 - **last_swarm_critique:** 556
 - **anti_pattern:** 417
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828050256:5:915087`
+*28.08. 05:02 UTC · Quelle: dream*
+
+429 errors follow burst patterns; exponential backoff with jitter and request spreading prevents thundering herd on fallback.
+
+### `dream:20260828050256:4:49e6e2`
+*28.08. 05:02 UTC · Quelle: dream*
+
+Token budgets enforced post-hoc allow overflow; streaming generation needs hard token counters with mid-stream truncation.
+
+### `dream:20260828050256:3:08f175`
+*28.08. 05:02 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution; a micro-test harness must validate each proposal within 30 seconds of creation.
+
+### `dream:20260828050256:2:b88e0b`
+*28.08. 05:02 UTC · Quelle: dream*
+
+Relative path resolution fails under conserve mode; all file operations must anchor to ZOETRON_DATA absolute root.
+
+### `dream:20260828050256:1:41dc1c`
+*28.08. 05:02 UTC · Quelle: dream*
+
+Rate-limited primary models cause cascading latency when fallbacks are slow; routing must predict latency not just availability.
 
 ### `last_swarm_critique`
 *28.08. 04:52 UTC · Quelle: critic*

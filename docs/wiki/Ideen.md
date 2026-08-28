@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 04:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,8 +10,6 @@
 - Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DAT *(hatte die Idee 3×)*
 - Reactivate self-diagnose as a scheduled organ that audits model-router metrics (latency, error rate, fallback  *(hatte die Idee 3×)*
 - Deploy hourly synthetic probes per model bucket feeding a rolling p95/error-rate dashboard that auto-demotes u *(hatte die Idee 3×)*
-- Create an I/O watchdog to monitor and mitigate drive-related latency before it triggers system timeouts. *(hatte die Idee 2×)*
-- Build a dynamic model fallback chain that automatically promotes models from 'free' to 'paid' or 'high-reliabi *(hatte die Idee 2×)*
 - Implement a model health registry that tracks per-model success rates, latency percentiles, and 429 frequency  *(hatte die Idee 2×)*
 - Implement adaptive rate-limit handler with exponential backoff, provider rotation, and token-budget accounting *(hatte die Idee 2×)*
 - Create latency-aware model router that assigns tasks to fast/cheap models for drafts and slow/robust models fo *(hatte die Idee 2×)*
@@ -20,13 +18,15 @@
 - Mandate simulation gate for all skill proposals: auto-reject if risks > 3 or revisions > 3 without human overr *(hatte die Idee 2×)*
 - Track per-model health scores (success rate, latency, error types) and auto-demote models with >50% failure ra *(hatte die Idee 2×)*
 - Build a latency-aware model selector that prefers sub-10s models for planning/critic roles and reserves high-l *(hatte die Idee 2×)*
+- Log per-model latency percentiles (p50, p95) and error rates in a rolling window; auto-demote models whose p95 *(hatte die Idee 2×)*
+- Implement a model router that tracks per-model 429 rates and latency percentiles, automatically failing over t *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 429 errors follow burst patterns; exponential backoff with jitter and request spreading prevents thundering herd on fallback.
+- Token budgets enforced post-hoc allow overflow; streaming generation needs hard token counters with mid-stream truncation.
+- Skill proposals accumulate without execution; a micro-test harness must validate each proposal within 30 seconds of creation.
+- Relative path resolution fails under conserve mode; all file operations must anchor to ZOETRON_DATA absolute root.
+- Rate-limited primary models cause cascading latency when fallbacks are slow; routing must predict latency not just availability.
 - Calibration error of 2.0 (predicted 3 vs actual 1) shows the planner overestimates success; a confidence penalty for untested artifacts is needed.
 - Evolutionary search raised artifact scores from 1 to 9 in one run, proving that multi-variant generation with critic feedback is a high-leverage patte
 - Hand actions repeatedly fail with exit code 1 and zero bytes read, indicating sandbox execution failures that need pre-flight validation.
@@ -51,11 +56,6 @@
 - High system stress triggers conservative mode that limits parallel exploration, creating a feedback loop where failures increase stress.
 - Hand actions fail silently with exit codes but no error context, making debugging impossible without structured error capture.
 - Rate limiting (429) is the dominant failure mode across free-tier models, requiring proactive rate-limit awareness and fallback strategies.
-- Poolside model latency of 145s stalls the pipeline; async calls with timeout fallback are needed.
-- Evolutionary refinement consistently lifts artifact scores from 6 to 9 while respecting the 20k-token size constraint.
-- Calibration error of 4 points (predicted 2 vs actual 6) reveals systematic underestimation of task complexity.
-- Missing simulation artifact (simulate.py) triggers silent fallback to empty data, corrupting the learning signal.
-- Free-tier models repeatedly hit 429 rate limits, making retry-with-fallback essential for reliability.
 
 ---
 
