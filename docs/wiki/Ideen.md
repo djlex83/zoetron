@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,21 +14,21 @@
 - Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DAT *(hatte die Idee 3×)*
 - Reactivate self-diagnose as a scheduled organ that audits model-router metrics (latency, error rate, fallback  *(hatte die Idee 3×)*
 - Deploy hourly synthetic probes per model bucket feeding a rolling p95/error-rate dashboard that auto-demotes u *(hatte die Idee 3×)*
-- Implement a model router with circuit-breaker logic that tracks per-model 429 rates and latency percentiles, a *(hatte die Idee 2×)*
-- Create a 'skill activation' daemon that periodically scans unused skill proposals, scores them against current *(hatte die Idee 2×)*
-- Build a lightweight local model cache (e.g., quantized Llama-3.2-3B) for fallback inference when all remote en *(hatte die Idee 2×)*
-- Add a 'budget-aware planner' that decomposes high-level goals (IMPORT/EXPORT, Zoem) into micro-tasks fitting t *(hatte die Idee 2×)*
-- Design a 'swarm checkpoint' mechanism that serializes Zoem-Protokoll simulation state after each revision, ena *(hatte die Idee 2×)*
 - Create a 'critic-to-mutator' compiler that transforms natural-language critic issues into targeted code-edit o *(hatte die Idee 2×)*
+- Develop a Bayesian complexity estimator that adjusts task difficulty predictions based on historical calibrati *(hatte die Idee 2×)*
+- Create an I/O watchdog to monitor and mitigate drive-related latency before it triggers system timeouts. *(hatte die Idee 2×)*
+- Build a dynamic model fallback chain that automatically promotes models from 'free' to 'paid' or 'high-reliabi *(hatte die Idee 2×)*
+- Implement a model health registry that tracks per-model success rates, latency percentiles, and 429 frequency  *(hatte die Idee 2×)*
+- Implement adaptive rate-limit handler with exponential backoff, provider rotation, and token-budget accounting *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex 'alte-träume-miteinander-verbinden.py' succeeded for 'Simulationen besser nutzen', suggesting dream-linking works but its output isn't fed 
+- Five skill proposals exist for model routing, calibration, swarm cycles, pre-flight checks, and canary deployments, but none appear implemented or tes
+- System stress is at maximum (1.0) with budget capped at 3 tasks/1 iteration, yet the swarm continues spawning new goals instead of entering true conse
+- Simulation cycles produce revisions (5 risks, 5 revisions) but there is no evidence those revisions are validated in production, creating a simulation
+- The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 errors, yet the system continues routing requests to it instead of permanently deprio
 - Conserve mode lacks automatic triggers; stress≥0.9 should enforce single-iteration, fallback, and path pre-check.
 - Calibration gap persists: predicted vs actual complexity never logged, so budget allocation drifts.
 - Simulation-revision loops are proposed but never executed, leaving risk collection theoretical.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate but never reach production because no mandatory validation gate (simulation→hand_action→critic≥7) exists.
 - Hand actions fail when relative paths are used instead of absolute paths rooted at ZOETRON_DATA.
 - Free-tier models consistently hit 429 quota errors because no routing logic distributes load across distinct quota buckets.
-- Forbidden patterns in generated code (e.g., shutdown commands) trigger early termination and must be filtered before execution.
-- Swarm orchestration converges slowly (2 cycles, not converged) and produces low-quality artifacts (score 1/10), indicating weak variant selection or e
-- Calibration predictions are highly inaccurate (predicted 4, actual 1), suggesting poor confidence estimation in the planning module.
-- Hand actions consistently fail with exit code 1 and no error message, indicating a silent failure in the action execution layer.
-- Rate limiting (HTTP 429) on z-ai/glm-5.2:free causes repeated model failures and must be handled with exponential backoff or model fallback.
 
 ---
 

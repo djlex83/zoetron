@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 02:28:06",
+ "stand": "2026-08-28 02:32:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,6 +81,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "lebender-steckbrief-die-biografie-als-al.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -103,20 +109,14 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
- "haende_quote": 0.609,
+ "haende_quote": 0.614,
  "simulationen_angewandt": 64,
  "swarm_scores": {
-  "n": 48,
+  "n": 47,
   "best": 9.0,
-  "schnitt": 4.94
+  "schnitt": 4.87
  },
  "score_nach_ziel_typ": {
   "analyse": {
