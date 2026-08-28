@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 17:55:47",
+ "stand": "2026-08-28 18:15:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "entfernte-erinnerungen-verknüpfen.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -48,6 +42,12 @@
    "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
    "laeufe": 4,
    "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -70,6 +70,12 @@
   },
   {
    "tool": "aufgaben-priorisieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -109,25 +115,19 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   }
  ],
- "haende_quote": 0.63,
- "simulationen_angewandt": 54,
+ "haende_quote": 0.609,
+ "simulationen_angewandt": 56,
  "swarm_scores": {
-  "n": 38,
+  "n": 39,
   "best": 9.0,
-  "schnitt": 4.34
+  "schnitt": 4.26
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 37,
-   "schnitt": 4.43
+   "schnitt": 4.41
   },
   "bau": {
    "n": 1,

@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5521 Fakten** · Stand 2026-08-28 17:56 UTC · aktualisiert bei jedem Herzschlag
+**5538 Fakten** · Stand 2026-08-28 18:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2412
-- **swarm_artifact:** 1351
-- **last_swarm_critique:** 571
-- **anti_pattern:** 445
-- **last_swarm_goal:** 320
-- **strategy:** 243
-- **hand_result:** 64
+- **dream:** 2417
+- **swarm_artifact:** 1357
+- **last_swarm_critique:** 572
+- **anti_pattern:** 447
+- **last_swarm_goal:** 321
+- **strategy:** 244
+- **hand_result:** 65
 - **tool:** 46
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fertigkeiten durch Träum:2`
+*28.08. 18:13 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fertigkeiten durch Träum:1`
+*28.08. 18:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Multiprocessing with pool.imap_unordered and natural process exit - Use multiprocessing.Pool with imap_unordered for dream evaluation. Worker processes exit naturally when iterator exhausts. Pool uses context manager (with Po
+
+### `last_swarm_critique`
+*28.08. 18:12 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - verbotenes Muster 'shutdown' erkannt; Erstes Artefakt verwendet ThreadPoolExecutor.shutdown() in AsyncBenchmarkRunner.shutdown() (Zeile ~67); DreamWithBenchmark.shutdown() ruft forbidden pattern auf (Zeile ~180); 
+
+### `last_swarm_goal`
+*28.08. 18:03 UTC · Quelle: system*
+
+Fertigkeiten durch Träume prüfen und festigen
+
+### `dream:20260828180226:5:15c7aa`
+*28.08. 18:02 UTC · Quelle: dream*
+
+High stress (1.0) triggers conserve mode that caps tasks/iterations, making any single failure catastrophic for progress.
+
+### `dream:20260828180226:4:f96789`
+*28.08. 18:02 UTC · Quelle: dream*
+
+Memory staleness causes misdirected reflexes (e.g., 'alte-erinnerungen-auf-wert-prüfen.py' failed) and wasted cycles.
+
+### `dream:20260828180226:3:9f20dd`
+*28.08. 18:02 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution because no automatic hand-action spawning mechanism exists.
+
+### `dream:20260828180226:2:257d98`
+*28.08. 18:02 UTC · Quelle: dream*
+
+Hand actions fail silently when data paths are invalid, wasting the entire iteration budget under conserve mode.
+
+### `dream:20260828180226:1:7bdca8`
+*28.08. 18:02 UTC · Quelle: dream*
+
+Rate limiting (429 errors) affects all free-tier models simultaneously, indicating a shared quota pool rather than per-model limits.
 
 ### `dream:20260828175523:5:7e6108`
 *28.08. 17:55 UTC · Quelle: dream*

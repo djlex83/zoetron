@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3706 Neuronen · 129241 bewertete Synapsen
+Stand: 3713 Neuronen · 130144 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,19 +10,19 @@ Stand: 3706 Neuronen · 129241 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 353 | 0.26 |
-| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 353 | 0.26 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 355 | 0.26 |
+| 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 355 | 0.26 |
 | 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 333 | 0.24 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 327 | 0.23 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 328 | 0.23 |
 | 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 336 | 0.23 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 294 | 0.25 |
 | 7 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 308 | 0.24 |
-| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 292 | 0.24 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 294 | 0.24 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 275 | 0.25 |
 | 10 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 265 | 0.24 |
-| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 263 | 0.24 |
+| 11 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 265 | 0.24 |
 | 12 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 256 | 0.24 |
-| 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 248 | 0.25 |
+| 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 249 | 0.25 |
 | 14 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 273 | 0.22 |
 | 15 | 💭 | The z-ai/glm-5.2 model consistently fails with 429 rate-limit er… | 262 | 0.23 |
 
