@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4870 Fakten** · Stand 2026-08-28 00:12 UTC · aktualisiert bei jedem Herzschlag
+**4884 Fakten** · Stand 2026-08-28 00:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2023
-- **swarm_artifact:** 1219
-- **last_swarm_critique:** 547
+- **dream:** 2028
+- **swarm_artifact:** 1225
+- **last_swarm_critique:** 548
 - **anti_pattern:** 405
-- **last_swarm_goal:** 296
+- **last_swarm_goal:** 297
 - **strategy:** 223
 - **hand_result:** 53
-- **tool:** 36
+- **tool:** 37
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:traumerkenntnisse-mit-wissen-verknüpfen`
+*28.08. 00:46 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Traumerkenntnisse mit Wissen verknüpfen'. Datei: data/tools/traumerkenntnisse-mit-wissen-verknüpfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*28.08. 00:46 UTC · Quelle: critic*
+
+score=8; issues=Rule-based classification uses simple regex heuristics with arbitrary weights (0.4/0.35/0.3) - may yield low precision/recall on real dream data; Keyword extraction in artifact 2 is basic frequency-based with hardcoded stopwords - no semantic u
+
+### `last_swarm_goal`
+*28.08. 00:40 UTC · Quelle: system*
+
+Traumerkenntnisse mit Wissen verknüpfen
+
+### `dream:20260828003946:5:a74a3f`
+*28.08. 00:39 UTC · Quelle: dream*
+
+The gap between proposing skills and using them is closed by actively running reflexes and swarms focused on execution rather than planning.
+
+### `dream:20260828003946:4:6ee2fc`
+*28.08. 00:39 UTC · Quelle: dream*
+
+High stress (1.0) triggers a 'conserve' state, but focused single-iteration execution still allows successful completion of critical goals.
+
+### `dream:20260828003946:3:de3475`
+*28.08. 00:39 UTC · Quelle: dream*
+
+Simulations and applied revisions are effective for turning plans into actionable skills, as seen by the successful execution of the 'try skills' goal.
+
+### `dream:20260828003946:2:3ddeff`
+*28.08. 00:39 UTC · Quelle: dream*
+
+Hand actions fail when paths are not explicitly resolved relative to 'ZOETRON_DATA' or 'sys.argv[1]' before execution.
+
+### `dream:20260828003946:1:d2aa3e`
+*28.08. 00:39 UTC · Quelle: dream*
+
+The model 'z-ai/glm-5.2:free' is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of 'nvidia/nemotron-3-ultra-550b-a55b:free'.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:2`
 *28.08. 00:10 UTC · Quelle: evolution*

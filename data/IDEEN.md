@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 00:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 00:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The gap between proposing skills and using them is closed by actively running reflexes and swarms focused on execution rather than planning.
+- High stress (1.0) triggers a 'conserve' state, but focused single-iteration execution still allows successful completion of critical goals.
+- Simulations and applied revisions are effective for turning plans into actionable skills, as seen by the successful execution of the 'try skills' goal
+- Hand actions fail when paths are not explicitly resolved relative to 'ZOETRON_DATA' or 'sys.argv[1]' before execution.
+- The model 'z-ai/glm-5.2:free' is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of 'nvidia/nemotron-3-ul
 - Skill proposals accumulate but lack a validation gate; the reflex that connected old dreams succeeded because it reused validated artifacts.
 - Fallback model latency varies 5x (7–38s) revealing unstable performance that synthetic probes could detect before production tasks.
 - Hand-action timeouts (20s) with zero bytes read indicate execution-environment stalls that self-diagnose misses because it only audits organs not runt
@@ -51,11 +56,6 @@
 - High stress (1.0) with minimal budget (max_tasks=3, max_iterations=1) leaves zero margin for retry/backoff strategies during rate limit storms.
 - Only poolside/laguna-s-2.1:free succeeded consistently, creating a single point of failure when it eventually throttles or fails.
 - Rate limiting (HTTP 429) affects all free-tier models on OpenRouter simultaneously, indicating shared infrastructure quotas rather than per-model limi
-- Pruning removed zero facts/events despite repeated failures, suggesting the pruning criteria miss failure-pattern evidence.
-- System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which limits recovery capacity exactly when more retries are needed.
-- Only poolside/laguna-s-2.1:free succeeded repeatedly, indicating provider-specific reliability differences that should be tracked.
-- Automatic model blocking after 3 consecutive failures (1800s) prevents cascade failures but reduces available capacity during outages.
-- Free-tier models consistently fail under rate limits (429) and upstream overload (502), making them unreliable for production tasks.
 
 ---
 

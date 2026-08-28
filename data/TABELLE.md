@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3225 Neuronen · 88573 bewertete Synapsen
+Stand: 3228 Neuronen · 88839 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -16,13 +16,13 @@ Stand: 3225 Neuronen · 88573 bewertete Synapsen
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 254 | 0.24 |
 | 5 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 250 | 0.24 |
 | 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 253 | 0.23 |
-| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 230 | 0.25 |
+| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 231 | 0.25 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 225 | 0.24 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 211 | 0.24 |
 | 10 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 205 | 0.24 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 214 | 0.23 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeiten echt testen “ (Note 6/1… | 209 | 0.23 |
-| 13 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 199 | 0.24 |
+| 13 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 200 | 0.24 |
 | 14 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 192 | 0.24 |
 | 15 | 🚫 | 🚫 Gescheiterter Versuch für „Exemplar-Bank: von den e“ (Note 2/1… | 202 | 0.23 |
 
