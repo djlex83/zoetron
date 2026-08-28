@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 07:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 07:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,6 +12,7 @@
 - Deploy hourly synthetic probes per model bucket feeding a rolling p95/error-rate dashboard that auto-demotes u *(hatte die Idee 3×)*
 - Implement a model health monitor that auto-excludes endpoints after 3 consecutive 429 responses with exponenti *(hatte die Idee 3×)*
 - Build a latency-aware router with per-model timeout budgets (e.g., 30s p95) and automatic fallback to fastest  *(hatte die Idee 3×)*
+- Build a model router that tracks per-endpoint 429 rates, latency percentiles, and success rates, then dynamica *(hatte die Idee 3×)*
 - Implement adaptive rate-limit handler with exponential backoff, provider rotation, and token-budget accounting *(hatte die Idee 2×)*
 - Create latency-aware model router that assigns tasks to fast/cheap models for drafts and slow/robust models fo *(hatte die Idee 2×)*
 - Add convergence detector to swarm: stop cycles when score delta < 1 for two consecutive cycles or critic appro *(hatte die Idee 2×)*
@@ -19,13 +20,12 @@
 - Mandate simulation gate for all skill proposals: auto-reject if risks > 3 or revisions > 3 without human overr *(hatte die Idee 2×)*
 - Track per-model health scores (success rate, latency, error types) and auto-demote models with >50% failure ra *(hatte die Idee 2×)*
 - Build a latency-aware model selector that prefers sub-10s models for planning/critic roles and reserves high-l *(hatte die Idee 2×)*
-- Log per-model latency percentiles (p50, p95) and error rates in a rolling window; auto-demote models whose p95 *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Silent read failures in hand_action show that success signals do not always reflect actual data quality or completeness.
+- High latency variance in the fallback model (26–69s) still degrades learning throughput even when the model succeeds.
+- Old dreams and memories contain reusable knowledge that only surfaces when actively retrieved and cross-linked, not when passively stored.
+- A persistent gap between skill proposal generation and actual implementation reveals that proposals lack execution triggers or enforcement mechanisms.
+- Recurring 429 errors from the same model endpoint indicate a systematic reliability gap that demands automatic fallback, not manual retry.
 - Skill proposals already address model routing, swarm convergence, and simulation loops, but none have been enacted, showing a proposal-adoption gap.
 - The fallback model's latency varies widely (30-96s), making timeout budgets essential for predictable performance.
 - Multiple drive goals request more simulation/swarm usage but no simulation or swarm actions appear in the log, indicating a planning-execution gap.
@@ -51,11 +56,6 @@
 - A persistent gap exists between generating skill proposals and actually implementing them, indicating a conversion bottleneck.
 - Fallback to nvidia/nemotron-3-ultra-550b-a55b:free works but introduces high latency variance (34s to 66s), revealing the need for latency-aware routi
 - Free-tier model endpoints consistently hit rate limits (429), making them unreliable for critical task execution.
-- Simulation-driven revisions (5 applied) cannot compensate for missing organs and broken file reads; the environment must be validated before swarm lau
-- Hand actions consistently fail with exit=1 and gelesen=0, indicating path resolution or file access issues that block all downstream artifact operatio
-- Calibration predictions (predicted 4 vs actual 1) become meaningless when systemic toolchain failures dominate outcome variance.
-- Evolution produces high-scoring variants (7-9) but swarm convergence fails when the execution layer has missing organs (swarm.py) and failing hand act
-- Rate-limited models (429 errors) must be automatically deprioritized via a health-aware router that tracks per-endpoint success rates and latency perc
 
 ---
 

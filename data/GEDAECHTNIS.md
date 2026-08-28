@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5180 Fakten** · Stand 2026-08-28 07:31 UTC · aktualisiert bei jedem Herzschlag
+**5185 Fakten** · Stand 2026-08-28 07:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2198
+- **dream:** 2203
 - **swarm_artifact:** 1289
 - **last_swarm_critique:** 560
 - **anti_pattern:** 423
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828073352:5:b07d8c`
+*28.08. 07:33 UTC · Quelle: dream*
+
+Silent read failures in hand_action show that success signals do not always reflect actual data quality or completeness.
+
+### `dream:20260828073352:4:528de9`
+*28.08. 07:33 UTC · Quelle: dream*
+
+High latency variance in the fallback model (26–69s) still degrades learning throughput even when the model succeeds.
+
+### `dream:20260828073352:3:10149b`
+*28.08. 07:33 UTC · Quelle: dream*
+
+Old dreams and memories contain reusable knowledge that only surfaces when actively retrieved and cross-linked, not when passively stored.
+
+### `dream:20260828073352:2:2fd743`
+*28.08. 07:33 UTC · Quelle: dream*
+
+A persistent gap between skill proposal generation and actual implementation reveals that proposals lack execution triggers or enforcement mechanisms.
+
+### `dream:20260828073352:1:b8beb3`
+*28.08. 07:33 UTC · Quelle: dream*
+
+Recurring 429 errors from the same model endpoint indicate a systematic reliability gap that demands automatic fallback, not manual retry.
 
 ### `dream:20260828073007:5:03081d`
 *28.08. 07:30 UTC · Quelle: dream*
