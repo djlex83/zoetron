@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5317 Fakten** · Stand 2026-08-28 11:10 UTC · aktualisiert bei jedem Herzschlag
+**5322 Fakten** · Stand 2026-08-28 11:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2288
+- **dream:** 2293
 - **swarm_artifact:** 1313
 - **last_swarm_critique:** 564
 - **anti_pattern:** 431
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828111347:5:67321a`
+*28.08. 11:13 UTC · Quelle: dream*
+
+Dream consolidation recurs without extracting executable fixes, turning pattern recognition into idle repetition.
+
+### `dream:20260828111347:4:10f42a`
+*28.08. 11:13 UTC · Quelle: dream*
+
+Missing organ dependency validation before variant generation caps evolution scores at 6/10, a predictable failure mode.
+
+### `dream:20260828111347:3:d40663`
+*28.08. 11:13 UTC · Quelle: dream*
+
+The system repeatedly proposes the same fallback/retry skills without implementing them, creating a proposal-implementation gap that wastes cycles.
+
+### `dream:20260828111347:2:c50637`
+*28.08. 11:13 UTC · Quelle: dream*
+
+Nemotron-3-ultra succeeds where others fail but exhibits high latency (18-30s) and intermittent 502 upstream errors, indicating it's a fragile backbone.
+
+### `dream:20260828111347:1:3022b1`
+*28.08. 11:13 UTC · Quelle: dream*
+
+Free-tier models on shared providers (OpenRouter) consistently hit 429 rate limits under sequential workloads, making them unreliable for production chains.
 
 ### `dream:20260828110934:5:a6404c`
 *28.08. 11:09 UTC · Quelle: dream*

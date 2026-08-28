@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 18×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 17×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 18×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt ausprobieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream consolidation recurs without extracting executable fixes, turning pattern recognition into idle repetition.
+- Missing organ dependency validation before variant generation caps evolution scores at 6/10, a predictable failure mode.
+- The system repeatedly proposes the same fallback/retry skills without implementing them, creating a proposal-implementation gap that wastes cycles.
+- Nemotron-3-ultra succeeds where others fail but exhibits high latency (18-30s) and intermittent 502 upstream errors, indicating it's a fragile backbon
+- Free-tier models on shared providers (OpenRouter) consistently hit 429 rate limits under sequential workloads, making them unreliable for production c
 - Self-diagnosis reports no organ errors while model-inference errors persist, indicating monitoring blind spots.
 - Simulation-recommended revisions (4) are only partially applied (2), leaving known risks unmitigated.
 - Destructive operations (subprocess) are blocked by human-approval gates, stalling autonomous execution.
@@ -51,11 +56,6 @@
 - The model 'poolside/laguna-s-2.1:free' offers significantly lower latency (6.7s) compared to 'nvidia/nemotron-3-ultra-550b-a55b:free' (47-187s) and is
 - Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), necessitating a robust multi-model fallback 
 - The model 'z-ai/glm-5.2:free' is chronically unreliable due to persistent 429 rate limits and should be temporarily blacklisted.
-- Simulation-based revision loops (verdict=revise, 2 revisions) add latency but catch risks before production promotion.
-- Metabolism conservation mode (stress=1.0) caps task budget, preventing simultaneous failure mitigation and skill deployment.
-- Hand actions fail because relative paths ignore the ZOETRON_DATA environment variable, causing silent zero-byte reads.
-- Previously proposed skills (scoreboard router, failure-to-skill pipeline, semantic cache) directly address the observed failure modes but remain unimp
-- Rate limiting on the primary model (z-ai/glm-5.2) triggers cascading fallback to a slower, high-variance model (nvidia/nemotron), making latency unpre
 
 ---
 

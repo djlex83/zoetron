@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 11:10:11",
+ "stand": "2026-08-28 11:14:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,9 +21,9 @@
    "quote": 1.0
   },
   {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -39,13 +39,13 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -132,8 +132,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 41,
-   "schnitt": 5.05
+   "n": 40,
+   "schnitt": 5.03
   },
   "bau": {
    "n": 1,
