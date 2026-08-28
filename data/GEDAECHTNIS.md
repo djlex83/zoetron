@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5623 Fakten** · Stand 2026-08-28 20:33 UTC · aktualisiert bei jedem Herzschlag
+**5628 Fakten** · Stand 2026-08-28 20:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2457
+- **dream:** 2462
 - **swarm_artifact:** 1381
 - **last_swarm_critique:** 576
 - **anti_pattern:** 453
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828204237:5:5c171b`
+*28.08. 20:42 UTC · Quelle: dream*
+
+Skill proposals generated under failure pressure tend to address immediate symptoms; durable procedures require cross-cutting abstraction patterns (e.g., circuit breaker) over task-specific fixes.
+
+### `dream:20260828204237:4:7579a3`
+*28.08. 20:42 UTC · Quelle: dream*
+
+Internal self-diagnostics (selbstdiagnose, reflex, prune) pass cleanly while external model dependencies fail — creating a blind spot where the system appears healthy but is functionally blocked.
+
+### `dream:20260828204237:3:e61b1b`
+*28.08. 20:42 UTC · Quelle: dream*
+
+The swarm's 2-cycle non-convergence at score=1 reveals that revision-based refinement loops lack sufficient signal to escape low-quality local optima without a stronger convergence threshold.
+
+### `dream:20260828204237:2:e96c72`
+*28.08. 20:42 UTC · Quelle: dream*
+
+Even 'successful' model calls exhibit severe latency variance (12.9s → 58.8s), meaning availability metrics alone are insufficient for reliability assessment; percentile latency tracking is required.
+
+### `dream:20260828204237:1:9b8014`
+*28.08. 20:42 UTC · Quelle: dream*
+
+API rate limiting (429) is a systemic, provider-side failure mode that simultaneously affects all models on the same endpoint — it is not a model-selection problem but an external dependency bottleneck.
 
 ### `last_swarm_critique`
 *28.08. 20:32 UTC · Quelle: critic*
