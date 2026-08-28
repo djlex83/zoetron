@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 04:29:18",
+ "stand": "2026-08-28 04:39:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -25,12 +25,6 @@
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
-  },
-  {
-   "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
@@ -46,6 +40,12 @@
   },
   {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -117,7 +117,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.583,
+ "haende_quote": 0.588,
  "simulationen_angewandt": 61,
  "swarm_scores": {
   "n": 47,
@@ -126,8 +126,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 46,
-   "schnitt": 4.83
+   "n": 45,
+   "schnitt": 4.89
   },
   "bau": {
    "n": 1,
