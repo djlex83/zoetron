@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-28 06:36:38",
+ "stand": "2026-08-28 06:40:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 21,
-   "erfolge": 21,
+   "laeufe": 22,
+   "erfolge": 22,
    "quote": 1.0
   },
   {
@@ -72,12 +72,6 @@
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "lebender-steckbrief-die-biografie-als-al.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {

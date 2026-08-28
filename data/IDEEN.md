@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 9×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
-- Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 'nvidia/nemotron-3-ultra-550b-a55b:free' exhibits high latency variance (4.8s to 79.4s) and occasional 502 upstream errors under load.
+- The calibration for the goal 'Mehr Experimente für neue Lösungen wagen' significantly underestimated the outcome (predicted 3, actual 7).
+- 'inclusionai/ling-3.0-flash-fin:free' provides a reliable, low-latency alternative (5.7s) when primary models are overloaded.
+- Free models on OpenRouter are highly susceptible to cascading 429 errors during rapid sequential or concurrent requests.
+- The model 'z-ai/glm-5.2:free' is persistently rate-limited (429 errors) and should be temporarily blacklisted to avoid wasting cycles.
 - The simulation gate rejected the first experiment plan (risk=4) and required three revisions, proving that uncalibrated risk estimates waste cycles.
 - System stress hit 1.0 and forced 'conserve' mode (max 3 tasks, 1 iteration), which directly blocks the swarm goal of 'more experiments'.
 - Five concrete skill proposals exist but none have entered the validation pipeline, revealing a missing 'proposal → production' automation loop.
@@ -51,11 +56,6 @@
 - Evolution cycles boost scores (1→9) but swarm fails to converge, indicating missing convergence criteria (score plateau + risk threshold).
 - Fallback model latency variance (15–105s) demands per-model timeout budgets and latency-aware routing to prevent stalls.
 - Rate-limited models (429 errors) cascade into repeated failures unless automatically excluded after N consecutive occurrences.
-- Predictor accuracy drifts without continuous calibration from logged (predicted, actual) pairs per task type.
-- Simulation gates that only check risk count without requiring minimum revisions and risk delta thresholds allow premature deployment.
-- Accumulation of skill proposals without a validation-to-deployment pipeline creates a "proposal graveyard" that wastes generation effort.
-- High latency variance (13-22s) in fallback models necessitates adaptive timeout mechanisms based on recent percentile performance.
-- Free-tier models with strict rate limits (429 errors) require automatic circuit-breaking and fallback to reliable alternatives to maintain system avai
 
 ---
 
