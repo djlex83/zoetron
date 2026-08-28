@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5711 Fakten** · Stand 2026-08-28 22:33 UTC · aktualisiert bei jedem Herzschlag
+**5716 Fakten** · Stand 2026-08-28 22:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2512
+- **dream:** 2517
 - **swarm_artifact:** 1399
 - **last_swarm_critique:** 579
 - **anti_pattern:** 457
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828223742:5:22cc30`
+*28.08. 22:37 UTC · Quelle: dream*
+
+Stale drive goals (market analysis, regular self-checks) persist across cycles without automatic expiry or forced re-evaluation, clogging the goal queue.
+
+### `dream:20260828223742:4:fdb907`
+*28.08. 22:37 UTC · Quelle: dream*
+
+Convergence is declared with score=null and no quantitative improvement threshold, allowing premature termination of iterative improvement loops.
+
+### `dream:20260828223742:3:f42646`
+*28.08. 22:37 UTC · Quelle: dream*
+
+Multiple redundant skill proposals (model router, latency-budget allocator, fast-path) emerge independently for the same routing problem, indicating no deduplication or synthesis mechanism for skill proposals.
+
+### `dream:20260828223742:2:e2fcf2`
+*28.08. 22:37 UTC · Quelle: dream*
+
+Self-diagnosis reports 'zero organ errors' while concurrent model_fail events prove external reliability signals are ignored, creating a blind-spot between internal health checks and actual failure streams.
+
+### `dream:20260828223742:1:18c9aa`
+*28.08. 22:37 UTC · Quelle: dream*
+
+A single failing model endpoint (z-ai/glm-5.2:free) repeatedly triggers 429 errors, yet the system lacks automatic circuit-breaking and continues retrying instead of permanent exclusion.
 
 ### `dream:20260828223308:5:f73ecb`
 *28.08. 22:33 UTC · Quelle: dream*

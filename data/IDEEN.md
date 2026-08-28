@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Schwarm-Lernen und Simulationen ausbauen *(wieder aufgegriffen: 2×)*
 - Menschliche Eingriffe überflüssig machen *(wieder aufgegriffen: 2×)*
 - Simulationen in echtes Handeln übersetzen *(wieder aufgegriffen: 2×)*
+- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale drive goals (market analysis, regular self-checks) persist across cycles without automatic expiry or forced re-evaluation, clogging the goal que
+- Convergence is declared with score=null and no quantitative improvement threshold, allowing premature termination of iterative improvement loops.
+- Multiple redundant skill proposals (model router, latency-budget allocator, fast-path) emerge independently for the same routing problem, indicating n
+- Self-diagnosis reports 'zero organ errors' while concurrent model_fail events prove external reliability signals are ignored, creating a blind-spot be
+- A single failing model endpoint (z-ai/glm-5.2:free) repeatedly triggers 429 errors, yet the system lacks automatic circuit-breaking and continues retr
 - No automatic demotion or health-tracking exists for flaky models, causing repeated 429 retries that waste latency budget.
 - Reflex execution succeeds (ok:true) but lacks a certification pipeline to prevent regression under load or model churn.
 - Drive goals repeatedly surface the same three signals (failure, stale, gap) indicating systemic loops rather than one-off issues.
@@ -51,11 +56,6 @@
 - Automatic skill-proposal generation fired 5 proposals in one cycle, but none were validated or deployed, creating a proposal-execution gap.
 - Calibration error of +5 cycles on a one-cycle task reveals the planner systematically underestimates iteration needs when external API latency dominat
 - The GLM endpoint fails deterministically under rate limits (429) while Nemotron succeeds with high latency variance (12–114 s), indicating routing mus
-- Self-diagnosis reporting zero organ errors while the system fails to converge indicates diagnostic blind spots in goal-alignment metrics.
-- Swarm with 3 builders but only 1 critic may lack sufficient adversarial pressure for convergence.
-- Evolutionary improvement (scores 7→9) without convergence suggests the fitness function or stopping criteria need tightening.
-- nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (16–140s), requiring latency-aware routing with fallback thresholds.
-- The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating it should be deprioritized or wrapped with a circuit breaker.
 
 ---
 
