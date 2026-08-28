@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5420 Fakten** · Stand 2026-08-28 14:32 UTC · aktualisiert bei jedem Herzschlag
+**5425 Fakten** · Stand 2026-08-28 14:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2347
+- **dream:** 2352
 - **swarm_artifact:** 1333
 - **last_swarm_critique:** 568
 - **anti_pattern:** 439
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828143725:5:57656e`
+*28.08. 14:37 UTC · Quelle: dream*
+
+Self-diagnosis reports zero internal organ errors, confirming that failures are external (infrastructure/API) rather than logic defects.
+
+### `dream:20260828143725:4:02b170`
+*28.08. 14:37 UTC · Quelle: dream*
+
+Convergence predictions systematically underestimate actual iterations needed, indicating a calibration bias that compounds over swarm runs.
+
+### `dream:20260828143725:3:21bcc7`
+*28.08. 14:37 UTC · Quelle: dream*
+
+Model latency varies by over 12x (6.4s to 80.8s), making fixed global timeouts unreliable and causing premature failures on slow endpoints.
+
+### `dream:20260828143725:2:570862`
+*28.08. 14:37 UTC · Quelle: dream*
+
+The system exhibits a persistent execution gap: proposals are generated but only a fraction are converted into reflex actions within a bounded cycle count.
+
+### `dream:20260828143725:1:ca8d1e`
+*28.08. 14:37 UTC · Quelle: dream*
+
+API rate limiting (429) is the dominant systemic failure mode, affecting the majority of recent model calls across multiple providers simultaneously.
 
 ### `dream:20260828142859:5:44d371`
 *28.08. 14:28 UTC · Quelle: dream*
