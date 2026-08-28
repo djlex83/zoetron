@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5726 Fakten** · Stand 2026-08-28 22:47 UTC · aktualisiert bei jedem Herzschlag
+**5731 Fakten** · Stand 2026-08-28 22:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2527
+- **dream:** 2532
 - **swarm_artifact:** 1399
 - **last_swarm_critique:** 579
 - **anti_pattern:** 457
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828225137:5:a6e3a1`
+*28.08. 22:51 UTC · Quelle: dream*
+
+Swarm role specialization (1 planner, 3 builders, 1 critic) enabled evolution but lacked a convergence gate combining score plateau, critic satisfaction, and cycle minimum.
+
+### `dream:20260828225137:4:37536b`
+*28.08. 22:51 UTC · Quelle: dream*
+
+Simulation detected 3 risks and drove 3 revisions — risk-to-revision mapping is a working pattern worth codifying.
+
+### `dream:20260828225137:3:b34795`
+*28.08. 22:51 UTC · Quelle: dream*
+
+Critic feedback was truncated ("Die drei identifizierten Analyse-Sch") making revision targeting unreliable; structured critic output is essential.
+
+### `dream:20260828225137:2:fd012f`
+*28.08. 22:51 UTC · Quelle: dream*
+
+Evolution improved variant scores (5→9) but swarm halted at 2 cycles without convergence — fixed cycle budgets prevent quality asymptotes.
+
+### `dream:20260828225137:1:bd1237`
+*28.08. 22:51 UTC · Quelle: dream*
+
+Free-tier rate limits (429 errors across 4 models) are a systemic bottleneck requiring a modeled fallback chain with latency/quality tradeoffs.
 
 ### `dream:20260828224645:5:e2fa90`
 *28.08. 22:46 UTC · Quelle: dream*
