@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 07:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 9×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -35,12 +35,17 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
+- Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-driven revisions (5 applied) cannot compensate for missing organs and broken file reads; the environment must be validated before swarm lau
+- Hand actions consistently fail with exit=1 and gelesen=0, indicating path resolution or file access issues that block all downstream artifact operatio
+- Calibration predictions (predicted 4 vs actual 1) become meaningless when systemic toolchain failures dominate outcome variance.
+- Evolution produces high-scoring variants (7-9) but swarm convergence fails when the execution layer has missing organs (swarm.py) and failing hand act
+- Rate-limited models (429 errors) must be automatically deprioritized via a health-aware router that tracks per-endpoint success rates and latency perc
 - Nemotron-3-ultra works but exhibits high latency variance (11-128s), creating unpredictable iteration costs under tight metabolism budgets.
 - Three consecutive hand_action failures with exit=1 and gelesen=0 indicate a persistent file-reading or path-resolution bug.
 - Calibration predicted score 4 but actual was 1 (error=3), revealing systematic overconfidence in swarm convergence estimates.
@@ -51,11 +56,6 @@
 - Proposed reliability skills (health monitor, latency router, convergence criteria) remain unimplemented despite repeated model failures blocking progr
 - The system lacks a circuit-breaker mechanism: failing models are retried indefinitely instead of being temporarily excluded after consecutive failures
 - Free-tier models consistently hit 429 rate limits across multiple providers, making them unreliable as primary endpoints without automatic fallback.
-- Hardcoded stress thresholds surfaced as a critic issue, showing that embedded constants reduce adaptability across contexts.
-- Evolution and swarm loops stall at score 7 without convergence detection, burning cycles on plateaued performance.
-- Calibration consistently underestimates experiment throughput (predicted 3 vs actual 7), revealing a systematic prediction bias for exploratory goals.
-- Nemotron-3-ultra latency varies 6x (15–95s), making fixed timeouts unreliable and requiring per-model p95 budgets with fallback.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate a persistent rate-limit bottleneck that wastes cycles without automatic circuit-breaking.
 
 ---
 

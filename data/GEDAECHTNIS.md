@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5156 Fakten** · Stand 2026-08-28 06:56 UTC · aktualisiert bei jedem Herzschlag
+**5170 Fakten** · Stand 2026-08-28 07:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2183
-- **swarm_artifact:** 1283
-- **last_swarm_critique:** 559
+- **dream:** 2188
+- **swarm_artifact:** 1289
+- **last_swarm_critique:** 560
 - **anti_pattern:** 423
-- **last_swarm_goal:** 308
+- **last_swarm_goal:** 309
 - **strategy:** 232
 - **hand_result:** 60
-- **tool:** 39
+- **tool:** 40
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:wiederkehrenden-organfehler-endgültig-kl`
+*28.08. 07:07 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Wiederkehrenden Organfehler endgültig klären'. Datei: data/tools/wiederkehrenden-organfehler-endgültig-kl.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*28.08. 07:07 UTC · Quelle: critic*
+
+score=9; issues=Zweites Artefakt im Prompt gekappt (Hinweis: nicht als Mangel werten); Smoke-Test entry-point-Erkennung auf feste Namen beschränkt (main/run/diagnose/execute/selbstdiagnose/check) - könnte Organe mit anderen Einstiegspunkten übersehen; Zirkulär
+
+### `last_swarm_goal`
+*28.08. 07:01 UTC · Quelle: system*
+
+Wiederkehrenden Organfehler endgültig klären
+
+### `dream:20260828070039:5:79d1c9`
+*28.08. 07:00 UTC · Quelle: dream*
+
+Simulation-driven revisions (5 applied) cannot compensate for missing organs and broken file reads; the environment must be validated before swarm launch.
+
+### `dream:20260828070039:4:1a0258`
+*28.08. 07:00 UTC · Quelle: dream*
+
+Hand actions consistently fail with exit=1 and gelesen=0, indicating path resolution or file access issues that block all downstream artifact operations.
+
+### `dream:20260828070039:3:eb08a1`
+*28.08. 07:00 UTC · Quelle: dream*
+
+Calibration predictions (predicted 4 vs actual 1) become meaningless when systemic toolchain failures dominate outcome variance.
+
+### `dream:20260828070039:2:351b8d`
+*28.08. 07:00 UTC · Quelle: dream*
+
+Evolution produces high-scoring variants (7-9) but swarm convergence fails when the execution layer has missing organs (swarm.py) and failing hand actions (gelesen:0).
+
+### `dream:20260828070039:1:a042c2`
+*28.08. 07:00 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) must be automatically deprioritized via a health-aware router that tracks per-endpoint success rates and latency percentiles.
 
 ### `dream:20260828065528:5:550062`
 *28.08. 06:55 UTC · Quelle: dream*
