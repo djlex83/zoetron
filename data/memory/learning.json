@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 02:23:50",
+ "stand": "2026-08-28 02:28:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -103,10 +103,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.607,
- "simulationen_angewandt": 65,
+ "haende_quote": 0.609,
+ "simulationen_angewandt": 64,
  "swarm_scores": {
   "n": 48,
   "best": 9.0,

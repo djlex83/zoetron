@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4951 Fakten** · Stand 2026-08-28 02:24 UTC · aktualisiert bei jedem Herzschlag
+**4956 Fakten** · Stand 2026-08-28 02:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2063
+- **dream:** 2068
 - **swarm_artifact:** 1243
 - **last_swarm_critique:** 551
 - **anti_pattern:** 409
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828022742:5:4e2813`
+*28.08. 02:27 UTC · Quelle: dream*
+
+Conserve mode lacks automatic triggers; stress≥0.9 should enforce single-iteration, fallback, and path pre-check.
+
+### `dream:20260828022742:4:b58580`
+*28.08. 02:27 UTC · Quelle: dream*
+
+Calibration gap persists: predicted vs actual complexity never logged, so budget allocation drifts.
+
+### `dream:20260828022742:3:8d9077`
+*28.08. 02:27 UTC · Quelle: dream*
+
+Simulation-revision loops are proposed but never executed, leaving risk collection theoretical.
+
+### `dream:20260828022742:2:0151a0`
+*28.08. 02:27 UTC · Quelle: dream*
+
+Path resolution failures recur because relative paths aren't expanded against ZOETRON_DATA and argv[1] before hand_action.
+
+### `dream:20260828022742:1:43f70a`
+*28.08. 02:27 UTC · Quelle: dream*
+
+Model 429 errors cascade into fallback with 2-3x latency variance, making budget prediction unreliable.
 
 ### `dream:20260828022248:5:eebab5`
 *28.08. 02:22 UTC · Quelle: dream*
