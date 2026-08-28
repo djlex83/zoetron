@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5023 Fakten** · Stand 2026-08-28 04:01 UTC · aktualisiert bei jedem Herzschlag
+**5029 Fakten** · Stand 2026-08-28 04:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2103
+- **dream:** 2108
 - **swarm_artifact:** 1257
 - **last_swarm_critique:** 554
 - **anti_pattern:** 415
@@ -11,7 +11,7 @@
 - **hand_result:** 58
 - **tool:** 37
 - **aktuell_fussball_messlatte:** 33
-- **aktuell_organfehler:** 20
+- **aktuell_organfehler:** 21
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828041230:5:4e96f0`
+*28.08. 04:12 UTC · Quelle: dream*
+
+Reflex-to-tool binding (aufgaben-priorisieren.py) fails silently under resource pressure, breaking the closed loop between drive goals and executable skills.
+
+### `dream:20260828041230:4:deb396`
+*28.08. 04:12 UTC · Quelle: dream*
+
+Metabolism enters 'conserve' at stress=1.0 with only 3 tasks/1 iteration, starving the very simulations and skill executions needed to reduce failure rates.
+
+### `dream:20260828041230:3:1c343b`
+*28.08. 04:12 UTC · Quelle: dream*
+
+File-system actions fail because relative paths ignore the mandatory ZOETRON_DATA environment variable and sys.argv[1] input contract, causing silent zero-byte reads.
+
+### `dream:20260828041230:2:66e3ca`
+*28.08. 04:12 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra model succeeds where others fail but exhibits 6x latency variance (8.7s–51.1s), requiring timeout budgets and async handling to prevent cascade stalls.
+
+### `dream:20260828041230:1:d836b9`
+*28.08. 04:12 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the primary failure mode across all free-tier models, making them unreliable for production use without request throttling and fallback chains.
+
+### `aktuell_organfehler`
+*28.08. 04:02 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-28 03:55:42 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Fehler in Modellen schne:1`
 *28.08. 03:59 UTC · Quelle: evolution*

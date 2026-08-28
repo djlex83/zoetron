@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 04:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 04:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten echt ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-to-tool binding (aufgaben-priorisieren.py) fails silently under resource pressure, breaking the closed loop between drive goals and executable 
+- Metabolism enters 'conserve' at stress=1.0 with only 3 tasks/1 iteration, starving the very simulations and skill executions needed to reduce failure 
+- File-system actions fail because relative paths ignore the mandatory ZOETRON_DATA environment variable and sys.argv[1] input contract, causing silent 
+- The nvidia/nemotron-3-ultra model succeeds where others fail but exhibits 6x latency variance (8.7s–51.1s), requiring timeout budgets and async handli
+- Rate limiting (HTTP 429) is the primary failure mode across all free-tier models, making them unreliable for production use without request throttling
 - Calibration overestimates success by 2x (predicted 3 vs actual 1), revealing systematic optimism in task-difficulty estimation.
 - Model latency variance spans 6–80s for the same model (nemotron), making fixed timeouts unsafe; latency-aware routing with per-call budgets is needed.
 - Hand actions exit 1 within ~1s with zero bytes read and no error payload, pointing to missing binary, permission denial, or stdin/stdout wiring failur
@@ -51,11 +56,6 @@
 - File system operations fail due to unresolved relative paths and missing environment variable expansion; all paths must be canonicalized against ZOETR
 - Proposed skills remain unused because the deployment pipeline lacks automated validation, testing, and integration steps; a skill lifecycle manager is
 - Free-tier model APIs exhibit cascading rate-limit failures (429 errors across 5 models) under load, requiring a model registry with real-time health t
-- No facts or events are pruned across cycles, suggesting the consolidation mechanism is inactive or thresholds are misconfigured, causing unbounded mem
-- Self-diagnosis reports zero organ errors while the system suffers repeated model failures and unmet goals, revealing that current health checks miss f
-- Dream cycles produce insights and skill proposals (5 each last cycle) but subsequent logs show no evidence of those proposals being enacted, confirmin
-- Multiple drive goals explicitly demand testing proposed skills and completing started goals, yet the reflex tool 'fertigkeiten-wirklich-ausprobieren-n
-- The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds but with high latency variance (9-60s), in
 
 ---
 
