@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt ausprobieren *(wieder aufgegriffen: 2×)*
 - Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis shows organ health but doesn't capture model-layer degradation, leaving a blind spot in system monitoring.
+- Skill proposals accumulate but lack automatic implementation verification, creating a gap between ideation and capability.
+- Reflex tools that convert proposals into skills and link dream insights to knowledge are functioning and should be standardized.
+- Model latency varies 3x between fastest and slowest working models, making latency-aware routing essential for responsiveness.
+- Rate limiting (429) is the dominant failure mode across free-tier models, requiring systematic fallback and backoff strategies.
 - Reflex-driven task convergence succeeded without critic/planner gates, exposing a gap between convergence policy and execution.
 - Pruning runs prune zero facts despite calibrated-threshold proposal, indicating threshold logic is either disabled or set too conservatively.
 - Five duplicate skill proposals (token bucket, dynamic timeouts, promotion pipeline) show proposal deduplication and promotion gating are absent.
@@ -51,11 +56,6 @@
 - The system repeatedly proposes the same fallback/retry skills without implementing them, creating a proposal-implementation gap that wastes cycles.
 - Nemotron-3-ultra succeeds where others fail but exhibits high latency (18-30s) and intermittent 502 upstream errors, indicating it's a fragile backbon
 - Free-tier models on shared providers (OpenRouter) consistently hit 429 rate limits under sequential workloads, making them unreliable for production c
-- Self-diagnosis reports no organ errors while model-inference errors persist, indicating monitoring blind spots.
-- Simulation-recommended revisions (4) are only partially applied (2), leaving known risks unmitigated.
-- Destructive operations (subprocess) are blocked by human-approval gates, stalling autonomous execution.
-- Evolution can generate high-scoring variants (9/10) but swarm convergence fails when model calls intermittently fail.
-- Free-tier models on OpenRouter suffer systemic 429 rate-limiting making them unreliable for sustained workloads.
 
 ---
 

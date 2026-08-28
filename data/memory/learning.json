@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 11:38:47",
+ "stand": "2026-08-28 11:57:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,9 +10,9 @@
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 18,
+   "laeufe": 17,
    "erfolge": 4,
-   "quote": 0.222
+   "quote": 0.235
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -24,6 +24,12 @@
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -40,12 +46,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -117,8 +117,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.629,
- "simulationen_angewandt": 60,
+ "haende_quote": 0.634,
+ "simulationen_angewandt": 59,
  "swarm_scores": {
   "n": 42,
   "best": 9.0,
@@ -126,8 +126,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 41,
-   "schnitt": 4.93
+   "n": 40,
+   "schnitt": 4.95
   },
   "bau": {
    "n": 1,
