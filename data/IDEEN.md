@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No automatic demotion or health-tracking exists for flaky models, causing repeated 429 retries that waste latency budget.
+- Reflex execution succeeds (ok:true) but lacks a certification pipeline to prevent regression under load or model churn.
+- Drive goals repeatedly surface the same three signals (failure, stale, gap) indicating systemic loops rather than one-off issues.
+- Multiple redundant skill proposals address the same model-reliability gap (router, circuit-breaker, fast-path) but none have been instantiated or test
+- Primary model (z-ai/glm-5.2) consistently fails with 429 rate-limit errors while fallback (Nemotron) succeeds but with high latency variance (12-25s).
 - Drive goals spawned from failure signals (model errors, stale analyses, skill gap) but lack concrete acceptance criteria, risking perpetual re-plannin
 - Self-diagnosis and pruning reported zero anomalies despite repeated model failures, showing health checks do not cover routing-layer degradation.
 - Automatic skill-proposal generation fired 5 proposals in one cycle, but none were validated or deployed, creating a proposal-execution gap.
@@ -51,11 +56,6 @@
 - Evolutionary improvement (scores 7→9) without convergence suggests the fitness function or stopping criteria need tightening.
 - nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (16–140s), requiring latency-aware routing with fallback thresholds.
 - The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating it should be deprioritized or wrapped with a circuit breaker.
-- Calibration error of 5 (predicted 2 vs actual 7) shows the predictor severely underestimates task difficulty.
-- The revision loop (simulation → 5 revisions → evolution) lifted scores from 7 to 9, proving iterative critique works.
-- Poolside Laguna-S-2.1 delivers low latency (12 s) when available, suggesting a fast fallback tier.
-- Nvidia Nemotron succeeds reliably but with high latency variance (40–185 s), requiring timeout budgets >200 s.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for primary workflows.
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 22:29:00",
+ "stand": "2026-08-28 22:33:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -127,9 +127,15 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "marktanalyse-endlich-abschließen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.613,
+ "haende_quote": 0.615,
  "simulationen_angewandt": 51,
  "swarm_scores": {
   "n": 38,

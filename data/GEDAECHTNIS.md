@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5706 Fakten** · Stand 2026-08-28 22:29 UTC · aktualisiert bei jedem Herzschlag
+**5711 Fakten** · Stand 2026-08-28 22:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2507
+- **dream:** 2512
 - **swarm_artifact:** 1399
 - **last_swarm_critique:** 579
 - **anti_pattern:** 457
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828223308:5:f73ecb`
+*28.08. 22:33 UTC · Quelle: dream*
+
+No automatic demotion or health-tracking exists for flaky models, causing repeated 429 retries that waste latency budget.
+
+### `dream:20260828223308:4:af0eff`
+*28.08. 22:33 UTC · Quelle: dream*
+
+Reflex execution succeeds (ok:true) but lacks a certification pipeline to prevent regression under load or model churn.
+
+### `dream:20260828223308:3:74fce3`
+*28.08. 22:33 UTC · Quelle: dream*
+
+Drive goals repeatedly surface the same three signals (failure, stale, gap) indicating systemic loops rather than one-off issues.
+
+### `dream:20260828223308:2:705ef4`
+*28.08. 22:33 UTC · Quelle: dream*
+
+Multiple redundant skill proposals address the same model-reliability gap (router, circuit-breaker, fast-path) but none have been instantiated or tested.
+
+### `dream:20260828223308:1:4b4b85`
+*28.08. 22:33 UTC · Quelle: dream*
+
+Primary model (z-ai/glm-5.2) consistently fails with 429 rate-limit errors while fallback (Nemotron) succeeds but with high latency variance (12-25s).
 
 ### `dream:20260828222842:5:2fca68`
 *28.08. 22:28 UTC · Quelle: dream*
