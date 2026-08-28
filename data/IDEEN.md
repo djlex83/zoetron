@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Sequential model trial wastes 100+ seconds; parallel health probes would cut fallback latency by an order of magnitude.
+- Under maximum stress (1.0) the system correctly enters conserve mode with strict task/iteration budgets, preventing overload.
+- Simulation-revision loops (5 risks → 5 revisions applied) effectively de-risk execution before hand-off to hand_action.
+- Nemotron-3-ultra exhibits extreme latency variance (11–280s) on the same endpoint, rendering it unreliable for time-bounded tasks.
+- Free-tier API rate limits cause cascading 429 failures across multiple models simultaneously, making sequential fallback strategies brittle.
 - Resource constraints (conserve mode, max 3 tasks, max 1 iteration) limit the system's ability to self-correct, making efficient model selection critic
 - Swarm convergence failed at score 6 over 2 cycles, indicating that the current evolution strategy needs more iterations or a different selection press
 - Fallback model availability (nemotron-3-ultra, laguna-s-2.1) is the primary resilience mechanism when primary models fail, but it is currently unstruc
@@ -51,11 +56,6 @@
 - The poolside/laguna-s-2.1 model consistently succeeded with low latency and high token efficiency, suggesting it is more reliable under current load c
 - The nemotron model was automatically blocked after 3 consecutive failures, showing that repeated upstream errors trigger protective circuit-breaking m
 - Rate limiting (429 errors) and upstream overload (502 errors) are the dominant failure modes across multiple models, indicating systemic API throttlin
-- Simulation-driven revision cycles (3 revisions applied) successfully produced a running 211-line artifact, validating the self-improvement loop.
-- InclusionAI Ling-3.0-Flash-Fin delivers consistent low latency (~9s) and should be preferred for fast-path requests.
-- NVIDIA Nemotron-3-Ultra succeeds but exhibits extreme latency variance (75-190s), unsuitable for time-sensitive tasks.
-- Google Gemma and Z.ai GLM model families consistently return 429 errors and should be deprioritized in routing.
-- Free-tier models on OpenRouter suffer severe rate limiting (429 errors) making them unreliable for production workloads.
 
 ---
 

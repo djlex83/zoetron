@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5256 Fakten** · Stand 2026-08-28 09:51 UTC · aktualisiert bei jedem Herzschlag
+**5261 Fakten** · Stand 2026-08-28 09:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2238
+- **dream:** 2243
 - **swarm_artifact:** 1307
 - **last_swarm_critique:** 563
 - **anti_pattern:** 429
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828095810:5:4d58ed`
+*28.08. 09:58 UTC · Quelle: dream*
+
+Sequential model trial wastes 100+ seconds; parallel health probes would cut fallback latency by an order of magnitude.
+
+### `dream:20260828095810:4:854fc4`
+*28.08. 09:58 UTC · Quelle: dream*
+
+Under maximum stress (1.0) the system correctly enters conserve mode with strict task/iteration budgets, preventing overload.
+
+### `dream:20260828095810:3:8b02ce`
+*28.08. 09:58 UTC · Quelle: dream*
+
+Simulation-revision loops (5 risks → 5 revisions applied) effectively de-risk execution before hand-off to hand_action.
+
+### `dream:20260828095810:2:c2d325`
+*28.08. 09:58 UTC · Quelle: dream*
+
+Nemotron-3-ultra exhibits extreme latency variance (11–280s) on the same endpoint, rendering it unreliable for time-bounded tasks.
+
+### `dream:20260828095810:1:0ef891`
+*28.08. 09:58 UTC · Quelle: dream*
+
+Free-tier API rate limits cause cascading 429 failures across multiple models simultaneously, making sequential fallback strategies brittle.
 
 ### `dream:20260828095020:5:060b3a`
 *28.08. 09:50 UTC · Quelle: dream*
