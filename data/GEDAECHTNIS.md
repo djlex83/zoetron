@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5114 Fakten** · Stand 2026-08-28 05:54 UTC · aktualisiert bei jedem Herzschlag
+**5131 Fakten** · Stand 2026-08-28 06:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2153
-- **swarm_artifact:** 1277
-- **last_swarm_critique:** 558
-- **anti_pattern:** 421
-- **last_swarm_goal:** 307
-- **strategy:** 231
-- **hand_result:** 59
+- **dream:** 2158
+- **swarm_artifact:** 1283
+- **last_swarm_critique:** 559
+- **anti_pattern:** 423
+- **last_swarm_goal:** 308
+- **strategy:** 232
+- **hand_result:** 60
 - **tool:** 39
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*28.08. 06:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [5, 4, 6]): Dynamic Path Resolution + Import Hook: Redirect wherever organs ARE to where the - Install a sys.meta_path import hook (PEP 302 finder) at the very top of the entry script that intercepts any import of organ modules a
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*28.08. 06:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 9]): In-Memory Virtual Filesystem: Eliminate disk dependency entirely - Replace all file-based organ loading with an in-memory registry. Define a dict ORGANS = {'swarm.py': '...', 'konvergenztor.py': '...', ...} containing
+
+### `last_swarm_critique`
+*28.08. 06:19 UTC · Quelle: critic*
+
+score=1; issues=Alle drei Artefakte scheitern sofort beim Start: Organe (swarm.py, konvergenztor.py, benchmark_organ.py, reflex.py, memory.py, telegrambericht.py) nicht in /workspace/zoetron/data/tools/ gefunden; Sandbox-Urteil: LAEUFT NICHT - harter Laufzeitf
+
+### `last_swarm_goal`
+*28.08. 06:11 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260828061054:5:37db3d`
+*28.08. 06:10 UTC · Quelle: dream*
+
+Hand actions fail silently (exit 1, no error output), requiring explicit validation gates before tool execution.
+
+### `dream:20260828061054:4:f70d6e`
+*28.08. 06:10 UTC · Quelle: dream*
+
+Simulation revisions (5 risks → 5 revisions) work but need a hard risk-count threshold to bound iteration loops.
+
+### `dream:20260828061054:3:7168f4`
+*28.08. 06:10 UTC · Quelle: dream*
+
+Evolution cycles boost scores (1→9) but swarm fails to converge, indicating missing convergence criteria (score plateau + risk threshold).
+
+### `dream:20260828061054:2:01b30a`
+*28.08. 06:10 UTC · Quelle: dream*
+
+Fallback model latency variance (15–105s) demands per-model timeout budgets and latency-aware routing to prevent stalls.
+
+### `dream:20260828061054:1:1f3a8f`
+*28.08. 06:10 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) cascade into repeated failures unless automatically excluded after N consecutive occurrences.
 
 ### `tool:mehr-experimente-für-neue-lösungen-wagen`
 *28.08. 05:53 UTC · Quelle: hands*

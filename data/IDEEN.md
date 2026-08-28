@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail silently (exit 1, no error output), requiring explicit validation gates before tool execution.
+- Simulation revisions (5 risks → 5 revisions) work but need a hard risk-count threshold to bound iteration loops.
+- Evolution cycles boost scores (1→9) but swarm fails to converge, indicating missing convergence criteria (score plateau + risk threshold).
+- Fallback model latency variance (15–105s) demands per-model timeout budgets and latency-aware routing to prevent stalls.
+- Rate-limited models (429 errors) cascade into repeated failures unless automatically excluded after N consecutive occurrences.
 - Predictor accuracy drifts without continuous calibration from logged (predicted, actual) pairs per task type.
 - Simulation gates that only check risk count without requiring minimum revisions and risk delta thresholds allow premature deployment.
 - Accumulation of skill proposals without a validation-to-deployment pipeline creates a "proposal graveyard" that wastes generation effort.
@@ -51,11 +56,6 @@
 - Human intervention required 15 times indicates autonomy gaps in error recovery and skill validation.
 - 40 skill proposals exist but tool rejection shows placeholder implementations (list_ideas() only pass) prevent actual use.
 - Primary model (z-ai/glm-5.2:free) fails consistently with 429 rate-limit errors while fallback (nvidia/nemotron-3-ultra) succeeds but with high latenc
-- Tool registration was rejected because list_ideas() contained only a placeholder pass statement.
-- Calibration predicted 2 cycles but actual was 8 (error 6), revealing systematic underestimation for skill-conversion tasks.
-- Three simulation revisions for five risks successfully de-risked the skill-conversion goal, yielding convergence at score 8.
-- nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but with high latency variance (8–122s), requiring timeout budgets and fallback chains.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate limiting that makes it unreliable for production use.
 
 ---
 
