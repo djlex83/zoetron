@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5185 Fakten** · Stand 2026-08-28 07:34 UTC · aktualisiert bei jedem Herzschlag
+**5190 Fakten** · Stand 2026-08-28 07:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2203
+- **dream:** 2208
 - **swarm_artifact:** 1289
 - **last_swarm_critique:** 560
 - **anti_pattern:** 423
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828074059:5:a36f9d`
+*28.08. 07:40 UTC · Quelle: dream*
+
+High-latency successful responses (e.g., 69s) suggest that speed and reliability are inversely correlated, requiring adaptive timeout strategies.
+
+### `dream:20260828074059:4:039a94`
+*28.08. 07:40 UTC · Quelle: dream*
+
+Transient file access issues and missing tools cause silent failures that could be caught with pre-flight checks.
+
+### `dream:20260828074059:3:b92f59`
+*28.08. 07:40 UTC · Quelle: dream*
+
+Proposed skills remain unused because there's no mechanism to validate or integrate them into active workflows.
+
+### `dream:20260828074059:2:8e8fbe`
+*28.08. 07:40 UTC · Quelle: dream*
+
+Model failures cascade into swarm stagnation when convergence isn't monitored against actual execution outcomes.
+
+### `dream:20260828074059:1:90514f`
+*28.08. 07:40 UTC · Quelle: dream*
+
+Repeated 429 errors from specific endpoints indicate a need for dynamic rate-limit-aware routing rather than static fallback chains.
 
 ### `dream:20260828073352:5:b07d8c`
 *28.08. 07:33 UTC · Quelle: dream*
