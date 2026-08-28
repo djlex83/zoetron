@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5781 Fakten** · Stand 2026-08-28 23:54 UTC · aktualisiert bei jedem Herzschlag
+**5786 Fakten** · Stand 2026-08-28 23:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2561
+- **dream:** 2566
 - **swarm_artifact:** 1411
 - **last_swarm_critique:** 581
 - **anti_pattern:** 459
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828235811:5:6a0c39`
+*28.08. 23:58 UTC · Quelle: dream*
+
+Stale analysis artifacts persist because cleanup is not triggered by age or quality thresholds.
+
+### `dream:20260828235811:4:51f4a7`
+*28.08. 23:58 UTC · Quelle: dream*
+
+Latency variance (8.8–34.6 s) for the same model indicates missing request-level timeouts and tier-based routing.
+
+### `dream:20260828235811:3:2f3f0d`
+*28.08. 23:58 UTC · Quelle: dream*
+
+Fifty-four skill proposals accumulate without validation; the proposal-to-skill pipeline lacks automated testing and promotion gates.
+
+### `dream:20260828235811:2:ba0e32`
+*28.08. 23:58 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated external model failures, revealing a blind spot between internal health checks and actual service reliability.
+
+### `dream:20260828235811:1:9aa4dc`
+*28.08. 23:58 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2) consistently fail with 429 rate-limit errors while paid-tier fallback (nvidia/nemotron) succeeds but exceeds 30 s synthesis SLA.
 
 ### `dream:20260828235342:5:077776`
 *28.08. 23:53 UTC · Quelle: dream*

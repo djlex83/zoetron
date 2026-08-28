@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale analysis artifacts persist because cleanup is not triggered by age or quality thresholds.
+- Latency variance (8.8–34.6 s) for the same model indicates missing request-level timeouts and tier-based routing.
+- Fifty-four skill proposals accumulate without validation; the proposal-to-skill pipeline lacks automated testing and promotion gates.
+- Self-diagnosis reports zero organ errors despite repeated external model failures, revealing a blind spot between internal health checks and actual se
+- Free-tier models (z-ai/glm-5.2) consistently fail with 429 rate-limit errors while paid-tier fallback (nvidia/nemotron) succeeds but exceeds 30 s synt
 - Fifty-four skill proposals accumulate without a validation pipeline, leaving high-value proposals (router, backoff, gap analyzer) unimplemented and un
 - Latency on fallback model nvidia/nemotron-3-ultra varies 11.9–44.5 s, violating implicit SLAs and risking timeout cascades without latency-budget guar
 - Evolutionary swarm cycles (2 cycles, score 5/10) and simulation revisions (5 revisions) fail to converge because convergence criteria are absent and m
@@ -51,11 +56,6 @@
 - Reflex tools show binary reliability: 'marktanalyse-endlich-abschließen.py' converges, while 'träume-in-taten-umsetzen.py' fails silently, indicating 
 - Hand actions fail when tools use relative paths that don't resolve against the actual ZOETRON_DATA mount point, revealing a path-abstraction leak.
 - Repeated 429 errors on the primary model without a circuit breaker cause cascading fallback to a high-latency secondary model, wasting 30+ seconds per
-- Convergence criteria (score ≥ 8, critic converged, cycles ≥ 3, plateau < 0.5) are defined but not enforced automatically, leaving completion to ad-hoc
-- Five skill proposals were generated in one cycle but none validated in production, creating a proposal–validation gap that inflates technical debt.
-- Self-diagnosis and pruning organs report zero findings despite known issues (rate limits, stale data), indicating detection thresholds are too high or
-- Reflex-based tools reliably converge stale goals (market analyses) without planner involvement, suggesting reflexes are underused for maintenance task
-- Primary model (z-ai/glm-5.2) repeatedly hits 429 rate limits, causing fallback to secondary model with highly variable latency (6–36 s).
 
 ---
 

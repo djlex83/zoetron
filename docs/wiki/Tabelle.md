@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3871 Neuronen · 145600 bewertete Synapsen
+Stand: 3875 Neuronen · 146300 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,19 +12,19 @@ Stand: 3871 Neuronen · 145600 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 366 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 366 | 0.26 |
-| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 364 | 0.24 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 358 | 0.24 |
-| 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 364 | 0.23 |
-| 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 316 | 0.25 |
-| 7 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 334 | 0.24 |
-| 8 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 301 | 0.25 |
-| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 305 | 0.24 |
-| 10 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 313 | 0.23 |
-| 11 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 283 | 0.24 |
-| 12 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 299 | 0.22 |
-| 13 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 279 | 0.24 |
-| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 276 | 0.24 |
-| 15 | 💭 | Nvidia Nemotron models provide the only consistent successes but… | 282 | 0.23 |
+| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 365 | 0.24 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 359 | 0.24 |
+| 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 365 | 0.23 |
+| 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 317 | 0.25 |
+| 7 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 335 | 0.24 |
+| 8 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 302 | 0.25 |
+| 9 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 315 | 0.23 |
+| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 305 | 0.24 |
+| 11 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 284 | 0.24 |
+| 12 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 300 | 0.22 |
+| 13 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 280 | 0.24 |
+| 14 | 💭 | Nvidia Nemotron models provide the only consistent successes but… | 284 | 0.23 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 276 | 0.24 |
 
 ## Die 15 stärksten Synapsen
 
