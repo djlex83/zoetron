@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5776 Fakten** · Stand 2026-08-28 23:41 UTC · aktualisiert bei jedem Herzschlag
+**5781 Fakten** · Stand 2026-08-28 23:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2556
+- **dream:** 2561
 - **swarm_artifact:** 1411
 - **last_swarm_critique:** 581
 - **anti_pattern:** 459
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828235342:5:077776`
+*28.08. 23:53 UTC · Quelle: dream*
+
+Fifty-four skill proposals accumulate without a validation pipeline, leaving high-value proposals (router, backoff, gap analyzer) unimplemented and unverified.
+
+### `dream:20260828235342:4:633a3e`
+*28.08. 23:53 UTC · Quelle: dream*
+
+Latency on fallback model nvidia/nemotron-3-ultra varies 11.9–44.5 s, violating implicit SLAs and risking timeout cascades without latency-budget guards.
+
+### `dream:20260828235342:3:b7b89d`
+*28.08. 23:53 UTC · Quelle: dream*
+
+Evolutionary swarm cycles (2 cycles, score 5/10) and simulation revisions (5 revisions) fail to converge because convergence criteria are absent and mock senses remain in pipeline artifacts.
+
+### `dream:20260828235342:2:58f229`
+*28.08. 23:53 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external metrics show 57% model failure rate, exposing a blind spot where internal health checks don't validate external dependency reliability.
+
+### `dream:20260828235342:1:d50283`
+*28.08. 23:53 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-provider circuit breakers, causing 60 failures versus 45 successes and forcing fallback to higher-latency models.
 
 ### `tool:marktanalyse-abschließen-und-lücken-schl`
 *28.08. 23:40 UTC · Quelle: hands*
