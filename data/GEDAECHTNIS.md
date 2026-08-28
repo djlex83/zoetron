@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4853 Fakten** · Stand 2026-08-27 23:47 UTC · aktualisiert bei jedem Herzschlag
+**4870 Fakten** · Stand 2026-08-28 00:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2018
-- **swarm_artifact:** 1213
-- **last_swarm_critique:** 546
-- **anti_pattern:** 403
-- **last_swarm_goal:** 295
-- **strategy:** 222
-- **hand_result:** 52
+- **dream:** 2023
+- **swarm_artifact:** 1219
+- **last_swarm_critique:** 547
+- **anti_pattern:** 405
+- **last_swarm_goal:** 296
+- **strategy:** 223
+- **hand_result:** 53
 - **tool:** 36
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*28.08. 00:10 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Runtime Code Generation (Metaprogramming) - Write a 200-line generator that emits the swarm loop as a single optimized function at startup. Uses string templates / ast to inline agent logic, unroll loops, eliminate abstractio
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*28.08. 00:10 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Declarative Spec + Tiny Interpreter - Separate logic from control flow. Spec = compact JSON/YAML (~500 chars) defining agents, transitions, scoring. Interpreter = 150-line generic runner that loads spec, executes steps, track
+
+### `last_swarm_critique`
+*28.08. 00:10 UTC · Quelle: critic*
+
+score=4; issues=Code zu lang: 20990 bzw. 22684 Zeichen ueberschreitet die 20000-Zeichen-Grenze des Pruefstands - NICHT AUSGEFUEHRT, kein Lauffaehigkeitsnachweis moeglich; Artefakt ist an mehreren Stellen abgebrochen/gekappt: erste Datei endet bei 'test_result'
+
+### `last_swarm_goal`
+*28.08. 00:02 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260828000226:5:f78dcb`
+*28.08. 00:02 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a validation gate; the reflex that connected old dreams succeeded because it reused validated artifacts.
+
+### `dream:20260828000226:4:a32b41`
+*28.08. 00:02 UTC · Quelle: dream*
+
+Fallback model latency varies 5x (7–38s) revealing unstable performance that synthetic probes could detect before production tasks.
+
+### `dream:20260828000226:3:e2e4cf`
+*28.08. 00:02 UTC · Quelle: dream*
+
+Hand-action timeouts (20s) with zero bytes read indicate execution-environment stalls that self-diagnose misses because it only audits organs not runtime.
+
+### `dream:20260828000226:2:6cb689`
+*28.08. 00:02 UTC · Quelle: dream*
+
+Swarm-based error investigation failed (score 0) despite role specialization, suggesting diagnostic tasks need deterministic procedures not collaborative exploration.
+
+### `dream:20260828000226:1:4c3d9b`
+*28.08. 00:02 UTC · Quelle: dream*
+
+Free-tier model rate limits (429 errors) cascade into task failures because no quota-aware router exists to distribute load across buckets.
 
 ### `tool:fertigkeiten-wirklich-ausprobieren-nicht`
 *27.08. 23:47 UTC · Quelle: hands*
