@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Simulations-Lernschleife schließen *(wieder aufgegriffen: 2×)*
 - Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
+- Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predictions matched actual outcomes exactly (predicted=4, actual=4), validating the scoring mechanism for future planning.
+- Swarm convergence requires iterative refinement; the first run scored 4/10, but evolution_run improved the winner to 9/10 through variant selection.
+- Model performance varies significantly by provider: inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b reliably succeed, while z-ai/glm-5
+- Code length directly correlates with critic rejection; the 2099-token solution was flagged as too long, while shorter variants scored higher.
+- Free-tier models consistently fail with 429 errors under concurrent load, indicating rate limits are the primary bottleneck for swarm scalability.
 - Self-diagnosis must become a scheduled, metrics-driven organ auditing model-router health and skill-pipeline integrity, not a one-off check.
 - Metabolism stress at 1.0 (conserve mode) demands that all new procedures include budget-aware gating to prevent resource exhaustion.
 - Relative path usage in hand_actions creates environment-dependent failures that a centralized path-resolver rooted at ZOETRON_DATA would eliminate.
@@ -51,11 +56,6 @@
 - Simulations and applied revisions are effective for turning plans into actionable skills, as seen by the successful execution of the 'try skills' goal
 - Hand actions fail when paths are not explicitly resolved relative to 'ZOETRON_DATA' or 'sys.argv[1]' before execution.
 - The model 'z-ai/glm-5.2:free' is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of 'nvidia/nemotron-3-ul
-- Skill proposals accumulate but lack a validation gate; the reflex that connected old dreams succeeded because it reused validated artifacts.
-- Fallback model latency varies 5x (7–38s) revealing unstable performance that synthetic probes could detect before production tasks.
-- Hand-action timeouts (20s) with zero bytes read indicate execution-environment stalls that self-diagnose misses because it only audits organs not runt
-- Swarm-based error investigation failed (score 0) despite role specialization, suggesting diagnostic tasks need deterministic procedures not collaborat
-- Free-tier model rate limits (429 errors) cascade into task failures because no quota-aware router exists to distribute load across buckets.
 
 ---
 

@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4898 Fakten** · Stand 2026-08-28 01:07 UTC · aktualisiert bei jedem Herzschlag
+**4915 Fakten** · Stand 2026-08-28 01:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2033
-- **swarm_artifact:** 1231
-- **last_swarm_critique:** 549
-- **anti_pattern:** 405
-- **last_swarm_goal:** 298
-- **strategy:** 223
-- **hand_result:** 54
+- **dream:** 2038
+- **swarm_artifact:** 1237
+- **last_swarm_critique:** 550
+- **anti_pattern:** 407
+- **last_swarm_goal:** 299
+- **strategy:** 224
+- **hand_result:** 55
 - **tool:** 37
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten schneller in:2`
+*28.08. 01:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.0): Static Analysis + Lightweight Simulation - Instead of running code, perform static analysis to validate skill structure and simulate execution. Parse the skill module with AST to check for required functions, type annotatio
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten schneller in:0`
+*28.08. 01:22 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.3): Container-based Isolation - Use Docker containers to run each skill test in a fully isolated environment. Define a minimal base image with all required dependencies (including psutil) pre-installed. The test runner launches
+
+### `last_swarm_critique`
+*28.08. 01:20 UTC · Quelle: critic*
+
+score=1; issues=Sandbox verdict: LAEUFT NICHT - artifact fails at runtime; NameError in _run_skill_isolated: stdout_bytes referenced before assignment in _read_stream_limited call (line ~120); _read_stream_limited expects file-like stream but receives dynamica
+
+### `last_swarm_goal`
+*28.08. 01:11 UTC · Quelle: system*
+
+Fähigkeiten schneller in Praxis testen
+
+### `dream:20260828011116:5:3ee55c`
+*28.08. 01:11 UTC · Quelle: dream*
+
+Calibration predictions matched actual outcomes exactly (predicted=4, actual=4), validating the scoring mechanism for future planning.
+
+### `dream:20260828011116:4:d3f0d5`
+*28.08. 01:11 UTC · Quelle: dream*
+
+Swarm convergence requires iterative refinement; the first run scored 4/10, but evolution_run improved the winner to 9/10 through variant selection.
+
+### `dream:20260828011116:3:9c941a`
+*28.08. 01:11 UTC · Quelle: dream*
+
+Model performance varies significantly by provider: inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b reliably succeed, while z-ai/glm-5.2 and google/gemma-4 frequently fail.
+
+### `dream:20260828011116:2:bff2ab`
+*28.08. 01:11 UTC · Quelle: dream*
+
+Code length directly correlates with critic rejection; the 2099-token solution was flagged as too long, while shorter variants scored higher.
+
+### `dream:20260828011116:1:995ac5`
+*28.08. 01:11 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 errors under concurrent load, indicating rate limits are the primary bottleneck for swarm scalability.
 
 ### `last_swarm_critique`
 *28.08. 01:06 UTC · Quelle: critic*
