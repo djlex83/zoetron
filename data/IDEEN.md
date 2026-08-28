@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation gate rejected the first experiment plan (risk=4) and required three revisions, proving that uncalibrated risk estimates waste cycles.
+- System stress hit 1.0 and forced 'conserve' mode (max 3 tasks, 1 iteration), which directly blocks the swarm goal of 'more experiments'.
+- Five concrete skill proposals exist but none have entered the validation pipeline, revealing a missing 'proposal → production' automation loop.
+- The fallback model 'nvidia/nemotron-3-ultra' shows extreme latency variance (11.8 s – 90.2 s), so static timeouts either kill valid requests or stall 
+- The model 'z-ai/glm-5.2:free' fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without a request-spacing or quota-aware rout
 - Hand actions fail silently (exit 1, no error output), requiring explicit validation gates before tool execution.
 - Simulation revisions (5 risks → 5 revisions) work but need a hard risk-count threshold to bound iteration loops.
 - Evolution cycles boost scores (1→9) but swarm fails to converge, indicating missing convergence criteria (score plateau + risk threshold).
@@ -51,11 +56,6 @@
 - Accumulation of skill proposals without a validation-to-deployment pipeline creates a "proposal graveyard" that wastes generation effort.
 - High latency variance (13-22s) in fallback models necessitates adaptive timeout mechanisms based on recent percentile performance.
 - Free-tier models with strict rate limits (429 errors) require automatic circuit-breaking and fallback to reliable alternatives to maintain system avai
-- Self-diagnosis reports zero organ errors while drive goals reveal systemic reliability and adoption failures.
-- Reflex mechanism successfully tested and improved a rejected tool, proving automated skill repair works.
-- Human intervention required 15 times indicates autonomy gaps in error recovery and skill validation.
-- 40 skill proposals exist but tool rejection shows placeholder implementations (list_ideas() only pass) prevent actual use.
-- Primary model (z-ai/glm-5.2:free) fails consistently with 429 rate-limit errors while fallback (nvidia/nemotron-3-ultra) succeeds but with high latenc
 
 ---
 

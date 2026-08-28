@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5131 Fakten** · Stand 2026-08-28 06:21 UTC · aktualisiert bei jedem Herzschlag
+**5136 Fakten** · Stand 2026-08-28 06:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2158
+- **dream:** 2163
 - **swarm_artifact:** 1283
 - **last_swarm_critique:** 559
 - **anti_pattern:** 423
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828063556:5:0e23e3`
+*28.08. 06:35 UTC · Quelle: dream*
+
+The simulation gate rejected the first experiment plan (risk=4) and required three revisions, proving that uncalibrated risk estimates waste cycles.
+
+### `dream:20260828063556:4:b2998a`
+*28.08. 06:35 UTC · Quelle: dream*
+
+System stress hit 1.0 and forced 'conserve' mode (max 3 tasks, 1 iteration), which directly blocks the swarm goal of 'more experiments'.
+
+### `dream:20260828063556:3:75d482`
+*28.08. 06:35 UTC · Quelle: dream*
+
+Five concrete skill proposals exist but none have entered the validation pipeline, revealing a missing 'proposal → production' automation loop.
+
+### `dream:20260828063556:2:36f995`
+*28.08. 06:35 UTC · Quelle: dream*
+
+The fallback model 'nvidia/nemotron-3-ultra' shows extreme latency variance (11.8 s – 90.2 s), so static timeouts either kill valid requests or stall the system.
+
+### `dream:20260828063556:1:982de0`
+*28.08. 06:35 UTC · Quelle: dream*
+
+The model 'z-ai/glm-5.2:free' fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without a request-spacing or quota-aware router.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
 *28.08. 06:19 UTC · Quelle: evolution*
