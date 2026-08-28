@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -35,12 +35,17 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
-- Modellfehler minimieren *(wieder aufgegriffen: 2×)*
-- Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten echt ausprobieren *(wieder aufgegriffen: 2×)*
+- Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Resource constraints (conserve mode, max 3 tasks, max 1 iteration) limit the system's ability to self-correct, making efficient model selection critic
+- Swarm convergence failed at score 6 over 2 cycles, indicating that the current evolution strategy needs more iterations or a different selection press
+- Fallback model availability (nemotron-3-ultra, laguna-s-2.1) is the primary resilience mechanism when primary models fail, but it is currently unstruc
+- A persistent proposal-to-application gap exists: skills are generated but rarely wired into active workflows, leaving the system in a loop of suggesti
+- 429 rate-limit errors are systematic and recurring across multiple free models, requiring architectural handling rather than ad-hoc retries.
 - Calibration tasks with high absolute error (e.g., predicted 4 vs actual 6) indicate systematic underprediction, pointing to a need for better error mo
 - Evolution runs show significant score improvements (from 6 to 9) when variant selection is guided by critic feedback, highlighting the value of iterat
 - The poolside/laguna-s-2.1 model consistently succeeded with low latency and high token efficiency, suggesting it is more reliable under current load c
@@ -51,11 +56,6 @@
 - NVIDIA Nemotron-3-Ultra succeeds but exhibits extreme latency variance (75-190s), unsuitable for time-sensitive tasks.
 - Google Gemma and Z.ai GLM model families consistently return 429 errors and should be deprioritized in routing.
 - Free-tier models on OpenRouter suffer severe rate limiting (429 errors) making them unreliable for production workloads.
-- Hand actions (0.33s) and code execution succeed consistently while LLM calls are the primary bottleneck.
-- Evolution with 3 variants reliably produces high-scoring candidates (8/10) even when base attempt scored only 5/10.
-- Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of task difficulty.
-- Smaller fast models (ling-3.0-flash-fin ~8-19s) succeed more reliably than larger models that hit rate limits repeatedly.
-- Rate limiting (HTTP 429) is the dominant failure mode across all model providers, not an isolated model issue.
 
 ---
 

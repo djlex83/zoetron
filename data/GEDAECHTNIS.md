@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5251 Fakten** · Stand 2026-08-28 09:45 UTC · aktualisiert bei jedem Herzschlag
+**5256 Fakten** · Stand 2026-08-28 09:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2233
+- **dream:** 2238
 - **swarm_artifact:** 1307
 - **last_swarm_critique:** 563
 - **anti_pattern:** 429
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828095020:5:060b3a`
+*28.08. 09:50 UTC · Quelle: dream*
+
+Resource constraints (conserve mode, max 3 tasks, max 1 iteration) limit the system's ability to self-correct, making efficient model selection critical.
+
+### `dream:20260828095020:4:824080`
+*28.08. 09:50 UTC · Quelle: dream*
+
+Swarm convergence failed at score 6 over 2 cycles, indicating that the current evolution strategy needs more iterations or a different selection pressure to reach acceptable quality.
+
+### `dream:20260828095020:3:1089d7`
+*28.08. 09:50 UTC · Quelle: dream*
+
+Fallback model availability (nemotron-3-ultra, laguna-s-2.1) is the primary resilience mechanism when primary models fail, but it is currently unstructured.
+
+### `dream:20260828095020:2:902236`
+*28.08. 09:50 UTC · Quelle: dream*
+
+A persistent proposal-to-application gap exists: skills are generated but rarely wired into active workflows, leaving the system in a loop of suggesting without executing.
+
+### `dream:20260828095020:1:7e92cb`
+*28.08. 09:50 UTC · Quelle: dream*
+
+429 rate-limit errors are systematic and recurring across multiple free models, requiring architectural handling rather than ad-hoc retries.
 
 ### `dream:20260828094401:5:a0316a`
 *28.08. 09:44 UTC · Quelle: dream*
