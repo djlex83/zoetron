@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Nvidia Nemotron works but at 16-57s latency; Poolside Laguna-S-2.1 delivers usable output at 4.4s, making it the preferred default for speed-critical 
+- Calibration predicted 2 but actual was 1, showing the predictor overestimates success when artifact execution fails.
+- Evolutionary iteration dramatically improved scores from 1 to 9 in one generation, proving the critic-sandbox-evolution loop works when artifacts exec
+- Hand actions fail silently (exit=1, gelesen=0) without error details, indicating missing stdout/stderr capture in the sandbox executor.
+- Rate limiting (429 errors) affects multiple free models simultaneously, requiring a tiered fallback strategy with latency-aware routing.
 - Swarm convergence stalls because simulation reports 'go' with 3 risks and 2 revisions but no automated validation loop exists to iterate until the cri
 - Metabolism shows maximum stress (1.0) forcing conserve mode with a 1-iteration budget, yet the system still attempts multiple model calls and hand act
 - Reflex tool execution fails silently (exit 1, no error output) suggesting the script either lacks execute permissions, misses dependencies, or cannot 
@@ -51,11 +56,6 @@
 - File path handling in Python scripts is failing because relative paths are not being resolved against the ZOETRON_DATA environment variable.
 - High latency (30-80s) on nvidia/nemotron-3-ultra-550b-a55b:free indicates that time-sensitive tasks should avoid this model or implement asynchronous 
 - Free models on OpenRouter (especially z-ai/glm-5.2 and google/gemma) are highly rate-limited (429) and require a robust, automated fallback chain.
-- Calibration error of zero on a binary outcome suggests the predictor is overconfident or the metric is too coarse.
-- Evolutionary search with critic feedback jumps task scores from 1 to 9 in one generation, proving iterative repair works.
-- Hand actions reject code containing 'shutdown' pattern, indicating a static safety filter that blocks legitimate admin logic.
-- Nvidia Nemotron-3-Ultra succeeds where others fail but exhibits high latency variance (26–110s), requiring timeout budgets.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
 ---
 

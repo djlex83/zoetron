@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5599 Fakten** · Stand 2026-08-28 20:08 UTC · aktualisiert bei jedem Herzschlag
+**5604 Fakten** · Stand 2026-08-28 20:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2442
+- **dream:** 2447
 - **swarm_artifact:** 1375
 - **last_swarm_critique:** 575
 - **anti_pattern:** 453
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828201219:5:0268da`
+*28.08. 20:12 UTC · Quelle: dream*
+
+Nvidia Nemotron works but at 16-57s latency; Poolside Laguna-S-2.1 delivers usable output at 4.4s, making it the preferred default for speed-critical paths.
+
+### `dream:20260828201219:4:84b3da`
+*28.08. 20:12 UTC · Quelle: dream*
+
+Calibration predicted 2 but actual was 1, showing the predictor overestimates success when artifact execution fails.
+
+### `dream:20260828201219:3:1e2a00`
+*28.08. 20:12 UTC · Quelle: dream*
+
+Evolutionary iteration dramatically improved scores from 1 to 9 in one generation, proving the critic-sandbox-evolution loop works when artifacts execute.
+
+### `dream:20260828201219:2:588a4a`
+*28.08. 20:12 UTC · Quelle: dream*
+
+Hand actions fail silently (exit=1, gelesen=0) without error details, indicating missing stdout/stderr capture in the sandbox executor.
+
+### `dream:20260828201219:1:e8a4e2`
+*28.08. 20:12 UTC · Quelle: dream*
+
+Rate limiting (429 errors) affects multiple free models simultaneously, requiring a tiered fallback strategy with latency-aware routing.
 
 ### `dream:20260828200644:5:67b259`
 *28.08. 20:06 UTC · Quelle: dream*
