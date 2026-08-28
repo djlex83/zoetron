@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 14:22:36",
+ "stand": "2026-08-28 14:31:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "fähigkeiten-gezielt-trainieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {

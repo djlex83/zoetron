@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5415 Fakten** · Stand 2026-08-28 14:23 UTC · aktualisiert bei jedem Herzschlag
+**5420 Fakten** · Stand 2026-08-28 14:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2342
+- **dream:** 2347
 - **swarm_artifact:** 1333
 - **last_swarm_critique:** 568
 - **anti_pattern:** 439
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828142859:5:44d371`
+*28.08. 14:28 UTC · Quelle: dream*
+
+Hand actions failing with exit 1 without a specific error message suggests a need for better error capturing in execution environments.
+
+### `dream:20260828142859:4:6e5bd4`
+*28.08. 14:28 UTC · Quelle: dream*
+
+The gap between simulated learning and real-world action is a recurring systemic issue that needs to be bridged by actively testing reflex skills.
+
+### `dream:20260828142859:3:ecafa5`
+*28.08. 14:28 UTC · Quelle: dream*
+
+Swarm tasks that do not converge indicate a need for better pre-execution validation or goal alignment before launch.
+
+### `dream:20260828142859:2:2c84b0`
+*28.08. 14:28 UTC · Quelle: dream*
+
+High latency on successful model calls (e.g., 80.8s) indicates that response time must be factored into model selection.
+
+### `dream:20260828142859:1:9b7ecd`
+*28.08. 14:28 UTC · Quelle: dream*
+
+Free-tier LLM endpoints are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 
 ### `dream:20260828142028:5:5c92b7`
 *28.08. 14:20 UTC · Quelle: dream*

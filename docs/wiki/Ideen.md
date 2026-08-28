@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 14:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 14:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
-- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
+- Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions failing with exit 1 without a specific error message suggests a need for better error capturing in execution environments.
+- The gap between simulated learning and real-world action is a recurring systemic issue that needs to be bridged by actively testing reflex skills.
+- Swarm tasks that do not converge indicate a need for better pre-execution validation or goal alignment before launch.
+- High latency on successful model calls (e.g., 80.8s) indicates that response time must be factored into model selection.
+- Free-tier LLM endpoints are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 - Poor calibration (predicted 3 vs actual 1) indicates unreliable self-assessment of task difficulty before execution.
 - Model reliability varies significantly — nemotron-3-ultra succeeded where multiple others failed, suggesting model-specific resilience patterns worth 
 - Evolutionary refinement can improve scores from 1/10 to 9/10, demonstrating the power of iterative variant generation as a recovery mechanism.
@@ -51,11 +56,6 @@
 - Models like `z-ai/glm-5.2:free` and `google/gemma-4-*` consistently hit 429 errors and should be deprioritized or removed from the active routing pool
 - Free-tier models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads, requiring aggressive fallback and ret
 - Metabolism stress at 1.0 with max_tasks=3 forces conservation, yet retry loops burn budget on doomed requests.
-- Self-diagnosis reports zero organ errors while model failure rate exceeds 80%, indicating monitoring blind spots for external dependencies.
-- Skill proposals accumulate (5+ this cycle) but none execute, creating a proposal-execution gap that stalls capability growth.
-- Working models exhibit 77-106s latency, exceeding swarm iteration budgets and preventing convergence.
-- Rate limits (429) cascade across providers simultaneously, making sequential fallback ineffective without coordinated backoff.
-- Latency ranges from 8s to 128s across free-tier models, making timeout thresholds unpredictable without per-model profiling.
 
 ---
 
