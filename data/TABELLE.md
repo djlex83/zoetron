@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3526 Neuronen · 113662 bewertete Synapsen
+Stand: 3533 Neuronen · 114041 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,19 +12,19 @@ Stand: 3526 Neuronen · 113662 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 341 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 341 | 0.26 |
-| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 304 | 0.24 |
-| 4 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 311 | 0.23 |
-| 5 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 299 | 0.23 |
-| 6 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 284 | 0.24 |
-| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 268 | 0.25 |
+| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 305 | 0.24 |
+| 4 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 312 | 0.23 |
+| 5 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 300 | 0.23 |
+| 6 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 285 | 0.24 |
+| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 269 | 0.25 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 280 | 0.24 |
-| 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 251 | 0.25 |
+| 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 252 | 0.25 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 251 | 0.24 |
-| 11 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 238 | 0.24 |
+| 11 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 239 | 0.24 |
 | 12 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 234 | 0.24 |
-| 13 | 💭 | The z-ai/glm-5.2 model consistently fails with 429 rate-limit er… | 243 | 0.23 |
-| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 240 | 0.23 |
-| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 245 | 0.22 |
+| 13 | 💭 | The z-ai/glm-5.2 model consistently fails with 429 rate-limit er… | 244 | 0.23 |
+| 14 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 247 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 240 | 0.23 |
 
 ## Die 15 stärksten Synapsen
 

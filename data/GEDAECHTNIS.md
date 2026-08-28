@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5292 Fakten** · Stand 2026-08-28 10:44 UTC · aktualisiert bei jedem Herzschlag
+**5297 Fakten** · Stand 2026-08-28 10:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2263
+- **dream:** 2268
 - **swarm_artifact:** 1313
 - **last_swarm_critique:** 564
 - **anti_pattern:** 431
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828104939:5:582726`
+*28.08. 10:49 UTC · Quelle: dream*
+
+Pruning operates blindly without access-frequency telemetry, risking removal of latent knowledge that later drives reflex connections.
+
+### `dream:20260828104939:4:687644`
+*28.08. 10:49 UTC · Quelle: dream*
+
+Convergence decisions lack multi-party gates (critic + planner + score threshold), causing premature convergence on unreliable outputs.
+
+### `dream:20260828104939:3:03043e`
+*28.08. 10:49 UTC · Quelle: dream*
+
+Model fallback succeeds but incurs 23-83s latency spikes, indicating missing per-model p95 latency budgets and dynamic timeout calibration.
+
+### `dream:20260828104939:2:63e85e`
+*28.08. 10:49 UTC · Quelle: dream*
+
+Skill proposals accumulate (12+ in this log) but adoption remains near zero because no mechanism promotes proposals to implemented status after validation.
+
+### `dream:20260828104939:1:cd4e2a`
+*28.08. 10:49 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal a provider-level quota exhaustion pattern that static fallbacks cannot resolve without shared-quota awareness.
 
 ### `dream:20260828104306:5:5d4932`
 *28.08. 10:43 UTC · Quelle: dream*
