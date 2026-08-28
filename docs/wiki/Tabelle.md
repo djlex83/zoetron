@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3345 Neuronen · 98034 bewertete Synapsen
+Stand: 3354 Neuronen · 98637 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,19 +12,19 @@ Stand: 3345 Neuronen · 98034 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 327 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 327 | 0.25 |
-| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 273 | 0.24 |
-| 4 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 280 | 0.23 |
+| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 274 | 0.24 |
+| 4 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 281 | 0.23 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 266 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 269 | 0.23 |
-| 7 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 261 | 0.24 |
-| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 244 | 0.25 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 270 | 0.23 |
+| 7 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 262 | 0.24 |
+| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 245 | 0.25 |
 | 9 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 237 | 0.24 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 225 | 0.24 |
+| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 226 | 0.25 |
 | 11 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 215 | 0.24 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 226 | 0.23 |
 | 13 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeiten echt testen “ (Note 6/1… | 221 | 0.23 |
-| 14 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 211 | 0.24 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Exemplar-Bank: von den e“ (Note 2/1… | 214 | 0.23 |
+| 14 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 212 | 0.24 |
+| 15 | 💭 | Rate limiting (429) and upstream overload (502) errors are syste… | 203 | 0.24 |
 
 ## Die 15 stärksten Synapsen
 

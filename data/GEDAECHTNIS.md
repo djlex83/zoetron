@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5051 Fakten** · Stand 2026-08-28 04:40 UTC · aktualisiert bei jedem Herzschlag
+**5064 Fakten** · Stand 2026-08-28 04:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2118
-- **swarm_artifact:** 1263
-- **last_swarm_critique:** 555
+- **dream:** 2123
+- **swarm_artifact:** 1269
+- **last_swarm_critique:** 556
 - **anti_pattern:** 417
-- **last_swarm_goal:** 304
+- **last_swarm_goal:** 305
 - **strategy:** 229
 - **hand_result:** 58
 - **tool:** 38
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*28.08. 04:52 UTC · Quelle: critic*
+
+score=8; issues=Feasibility analysis uses simple keyword heuristics instead of semantic analysis; Generated skeleton organs are non-functional templates requiring manual implementation; Circular reference detection doesn't properly handle transitive dependency
+
+### `last_swarm_goal`
+*28.08. 04:44 UTC · Quelle: system*
+
+Vorschläge in echte Fähigkeiten umwandeln
+
+### `dream:20260828044407:5:d13a30`
+*28.08. 04:44 UTC · Quelle: dream*
+
+Calibration error of 2.0 (predicted 3 vs actual 1) shows the planner overestimates success; a confidence penalty for untested artifacts is needed.
+
+### `dream:20260828044407:4:18f3a7`
+*28.08. 04:44 UTC · Quelle: dream*
+
+Evolutionary search raised artifact scores from 1 to 9 in one run, proving that multi-variant generation with critic feedback is a high-leverage pattern.
+
+### `dream:20260828044407:3:6c1b24`
+*28.08. 04:44 UTC · Quelle: dream*
+
+Hand actions repeatedly fail with exit code 1 and zero bytes read, indicating sandbox execution failures that need pre-flight validation.
+
+### `dream:20260828044407:2:166ab1`
+*28.08. 04:44 UTC · Quelle: dream*
+
+"nvidia/nemotron-3-ultra-550b-a55b:free" succeeds but exhibits high latency variance (12–86 s), requiring adaptive timeouts and fallback triggers.
+
+### `dream:20260828044407:1:42ba11`
+*28.08. 04:44 UTC · Quelle: dream*
+
+The model "z-ai/glm-5.2:free" consistently returns 429 rate-limit errors and should be excluded from the routing pool or wrapped with exponential backoff.
 
 ### `dream:20260828043936:5:ca10f7`
 *28.08. 04:39 UTC · Quelle: dream*
