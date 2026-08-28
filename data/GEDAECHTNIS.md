@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5660 Fakten** · Stand 2026-08-28 21:25 UTC · aktualisiert bei jedem Herzschlag
+**5674 Fakten** · Stand 2026-08-28 21:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2482
-- **swarm_artifact:** 1387
-- **last_swarm_critique:** 577
+- **dream:** 2487
+- **swarm_artifact:** 1393
+- **last_swarm_critique:** 578
 - **anti_pattern:** 455
-- **last_swarm_goal:** 326
+- **last_swarm_goal:** 327
 - **strategy:** 248
 - **hand_result:** 68
-- **tool:** 48
+- **tool:** 49
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-erinnerungen-aktualisieren`
+*28.08. 21:37 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Erinnerungen aktualisieren'. Datei: data/tools/alte-erinnerungen-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*28.08. 21:37 UTC · Quelle: critic*
+
+score=8; issues=Einfache Keyword-basierte Ähnlichkeit (Jaccard) statt semantischer Embeddings - limitiert Konsolidierungsqualität; Unvollständige Persistenz: Nur facts.jsonl und Knowledge Graph werden zurückgeschrieben, events.jsonl und dreams.jsonl bleiben un
+
+### `last_swarm_goal`
+*28.08. 21:29 UTC · Quelle: system*
+
+Alte Erinnerungen aktualisieren
+
+### `dream:20260828212935:5:c49dac`
+*28.08. 21:29 UTC · Quelle: dream*
+
+Pruning remains inactive (0 facts/events pruned) despite cycle progression, showing adaptive pruning thresholds are either misconfigured or absent.
+
+### `dream:20260828212935:4:d8b8d5`
+*28.08. 21:29 UTC · Quelle: dream*
+
+Drive goals (failure, stale, gap) persist across cycles without escalation, indicating absent strategic goal tracking with time-bound escalation triggers.
+
+### `dream:20260828212935:3:f30936`
+*28.08. 21:29 UTC · Quelle: dream*
+
+Multiple skill proposals accumulate without deployment, exposing a systemic proposal-to-production gap requiring automated validation and regression testing.
+
+### `dream:20260828212935:2:5c3159`
+*28.08. 21:29 UTC · Quelle: dream*
+
+Nemotron's latency variance (8–32s) reveals the need for latency-aware routing with SLA thresholds to prevent unpredictable delays in critical paths.
+
+### `dream:20260828212935:1:0abd04`
+*28.08. 21:29 UTC · Quelle: dream*
+
+The GLM model's persistent 429 errors indicate a missing model health quarantine mechanism that should automatically isolate failing models after repeated rate-limit failures.
 
 ### `dream:20260828212415:5:2a94fd`
 *28.08. 21:24 UTC · Quelle: dream*

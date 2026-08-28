@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 21:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 21:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,8 +11,6 @@
 - Implement pre-flight organ existence checks before swarm launch to fail fast on missing tools like swarm.py. *(hatte die Idee 3×)*
 - Build a real-time model health dashboard tracking 429/502 rates, p95 latency, and consecutive errors to drive  *(hatte die Idee 3×)*
 - Create an automatic skill promotion pipeline: proposal → simulation verdict → merge when risk_count < 2 and la *(hatte die Idee 3×)*
-- Wrap hand_action in simulation-revision loop: simulate → collect risks → apply revisions → execute, repeat unt *(hatte die Idee 2×)*
-- Define conserve-mode protocol: when stress≥0.9, auto-limit to single iteration, enforce model fallback, and re *(hatte die Idee 2×)*
 - Add pre-execution static analysis to detect and block forbidden patterns (e.g., shutdown, kill) in generated s *(hatte die Idee 2×)*
 - Create a simulation-driven revision loop that iterates until risk count falls below a configurable threshold ( *(hatte die Idee 2×)*
 - Enforce a 'no-placeholder' gate: reject any tool registration whose core functions contain only 'pass' or 'rai *(hatte die Idee 2×)*
@@ -20,12 +18,14 @@
 - Create a calibration adjuster that learns per-goal-type prediction bias and corrects future estimates automati *(hatte die Idee 2×)*
 - Replace hardcoded thresholds with a configurable parameter registry loaded at task start. *(hatte die Idee 2×)*
 - Wrap hand_action in retry-with-backoff and path-validation logic to eliminate silent read failures. *(hatte die Idee 2×)*
+- Add hand-action retry with exponential backoff and path validation for file reads to handle transient access i *(hatte die Idee 2×)*
+- Create a calibration guard that discounts predictions when recent execution success rate falls below a configu *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning remains inactive (0 facts/events pruned) despite cycle progression, showing adaptive pruning thresholds are either misconfigured or absent.
+- Drive goals (failure, stale, gap) persist across cycles without escalation, indicating absent strategic goal tracking with time-bound escalation trigg
+- Multiple skill proposals accumulate without deployment, exposing a systemic proposal-to-production gap requiring automated validation and regression t
+- Nemotron's latency variance (8–32s) reveals the need for latency-aware routing with SLA thresholds to prevent unpredictable delays in critical paths.
+- The GLM model's persistent 429 errors indicate a missing model health quarantine mechanism that should automatically isolate failing models after repe
 - Script execution lacks pre-flight guards: missing shebang, permission, or parse errors surface only at runtime, wasting cycles.
 - Stress state ('conserve') is detected but not acted upon; non-critical work continues consuming the single available iteration.
 - Proposed skills accumulate without a validation loop; the system proposes but never executes a 'try → measure → adopt' cycle.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across cycles but lack an implementation pipeline, creating a persistent gap between idea and deployable capability.
 - Fallback model latency varies 4× (9 s vs 33 s), revealing that health-aware routing must monitor latency SLOs, not just availability.
 - Repeated 429 errors on the same model indicate that reactive fallback is insufficient without proactive quota tracking and predictive throttling.
-- Zero pruning activity despite repeated cycles suggests memory accumulation without consolidation, risking context overflow.
-- Five skill proposals exist (failover, path resolution, budget executor, dream bridge, backoff handler) but the 'make skills usable' drive persists, re
-- Reflex-mode actions converge quickly but only address tactical symptoms; strategic drive goals remain in 'failure', 'stale', 'gap' states for multiple
-- Three strategic goals (model reliability, market analysis, skill implementation) recur across cycles without convergence, indicating a planning-execut
-- Primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, forcing fallback to high-latency (32-45s) nemotron model that slows iteration cy
 
 ---
 
