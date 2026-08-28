@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5151 Fakten** · Stand 2026-08-28 06:52 UTC · aktualisiert bei jedem Herzschlag
+**5156 Fakten** · Stand 2026-08-28 06:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2178
+- **dream:** 2183
 - **swarm_artifact:** 1283
 - **last_swarm_critique:** 559
 - **anti_pattern:** 423
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828065528:5:550062`
+*28.08. 06:55 UTC · Quelle: dream*
+
+Nemotron-3-ultra works but exhibits high latency variance (11-128s), creating unpredictable iteration costs under tight metabolism budgets.
+
+### `dream:20260828065528:4:f36fb9`
+*28.08. 06:55 UTC · Quelle: dream*
+
+Three consecutive hand_action failures with exit=1 and gelesen=0 indicate a persistent file-reading or path-resolution bug.
+
+### `dream:20260828065528:3:dc72d0`
+*28.08. 06:55 UTC · Quelle: dream*
+
+Calibration predicted score 4 but actual was 1 (error=3), revealing systematic overconfidence in swarm convergence estimates.
+
+### `dream:20260828065528:2:56b2d8`
+*28.08. 06:55 UTC · Quelle: dream*
+
+The critical swarm.py organ is missing from /workspace/zoetron/data/tools/, causing immediate artifact execution failure.
+
+### `dream:20260828065528:1:53c7b5`
+*28.08. 06:55 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate-limiting errors, making it unreliable for production swarm runs.
 
 ### `dream:20260828065115:5:17db9c`
 *28.08. 06:51 UTC · Quelle: dream*
