@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5716 Fakten** · Stand 2026-08-28 22:38 UTC · aktualisiert bei jedem Herzschlag
+**5721 Fakten** · Stand 2026-08-28 22:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2517
+- **dream:** 2522
 - **swarm_artifact:** 1399
 - **last_swarm_critique:** 579
 - **anti_pattern:** 457
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828224215:5:a6e209`
+*28.08. 22:42 UTC · Quelle: dream*
+
+High stress state (1.0) triggers conserve mode but the system still spawns multiple concurrent model calls, violating its own budget constraints.
+
+### `dream:20260828224215:4:938f2d`
+*28.08. 22:42 UTC · Quelle: dream*
+
+Self-diagnosis reports "zero errors" while external convergence metrics show >80% failure rate, confirming a critical blind spot in monitoring.
+
+### `dream:20260828224215:3:3aaedd`
+*28.08. 22:42 UTC · Quelle: dream*
+
+Latency variance for successful calls (6s–70s) exceeds any reasonable budget, yet no timeout or preemptive routing logic is observed.
+
+### `dream:20260828224215:2:eccaba`
+*28.08. 22:42 UTC · Quelle: dream*
+
+Single-model dependency creates systemic fragility: when z-ai/glm-5.2 fails repeatedly, the system retries the same failing endpoint instead of switching providers.
+
+### `dream:20260828224215:1:4b3181`
+*28.08. 22:42 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple providers is the dominant failure mode, indicating reliance on free-tier quotas without fallback orchestration.
 
 ### `dream:20260828223742:5:22cc30`
 *28.08. 22:37 UTC · Quelle: dream*

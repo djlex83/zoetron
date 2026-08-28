@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High stress state (1.0) triggers conserve mode but the system still spawns multiple concurrent model calls, violating its own budget constraints.
+- Self-diagnosis reports "zero errors" while external convergence metrics show >80% failure rate, confirming a critical blind spot in monitoring.
+- Latency variance for successful calls (6s–70s) exceeds any reasonable budget, yet no timeout or preemptive routing logic is observed.
+- Single-model dependency creates systemic fragility: when z-ai/glm-5.2 fails repeatedly, the system retries the same failing endpoint instead of switch
+- Rate limiting (429 errors) across multiple providers is the dominant failure mode, indicating reliance on free-tier quotas without fallback orchestrat
 - Stale drive goals (market analysis, regular self-checks) persist across cycles without automatic expiry or forced re-evaluation, clogging the goal que
 - Convergence is declared with score=null and no quantitative improvement threshold, allowing premature termination of iterative improvement loops.
 - Multiple redundant skill proposals (model router, latency-budget allocator, fast-path) emerge independently for the same routing problem, indicating n
@@ -51,11 +56,6 @@
 - Drive goals repeatedly surface the same three signals (failure, stale, gap) indicating systemic loops rather than one-off issues.
 - Multiple redundant skill proposals address the same model-reliability gap (router, circuit-breaker, fast-path) but none have been instantiated or test
 - Primary model (z-ai/glm-5.2) consistently fails with 429 rate-limit errors while fallback (Nemotron) succeeds but with high latency variance (12-25s).
-- Drive goals spawned from failure signals (model errors, stale analyses, skill gap) but lack concrete acceptance criteria, risking perpetual re-plannin
-- Self-diagnosis and pruning reported zero anomalies despite repeated model failures, showing health checks do not cover routing-layer degradation.
-- Automatic skill-proposal generation fired 5 proposals in one cycle, but none were validated or deployed, creating a proposal-execution gap.
-- Calibration error of +5 cycles on a one-cycle task reveals the planner systematically underestimates iteration needs when external API latency dominat
-- The GLM endpoint fails deterministically under rate limits (429) while Nemotron succeeds with high latency variance (12–114 s), indicating routing mus
 
 ---
 
