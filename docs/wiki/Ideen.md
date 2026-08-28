@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 18×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 17×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predictions tend to overestimate actual performance, indicating the calibration model needs a downward adjustment.
+- Evolutionary runs effectively improve artifact quality, as evidenced by the score increasing from 4 to 9 by addressing specific critic issues.
+- The model 'poolside/laguna-s-2.1:free' offers significantly lower latency (6.7s) compared to 'nvidia/nemotron-3-ultra-550b-a55b:free' (47-187s) and is
+- Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), necessitating a robust multi-model fallback 
+- The model 'z-ai/glm-5.2:free' is chronically unreliable due to persistent 429 rate limits and should be temporarily blacklisted.
 - Simulation-based revision loops (verdict=revise, 2 revisions) add latency but catch risks before production promotion.
 - Metabolism conservation mode (stress=1.0) caps task budget, preventing simultaneous failure mitigation and skill deployment.
 - Hand actions fail because relative paths ignore the ZOETRON_DATA environment variable, causing silent zero-byte reads.
@@ -51,11 +56,6 @@
 - Multiple skill proposals for model reliability exist but none are implemented, revealing a promotion gap between proposal and production.
 - High latency variance (34-73s) on nemotron-3-ultra shows static timeouts cause unnecessary failures or wasted waits.
 - Recurring 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and rate-limit handling for external model endpoints.
-- Pruning operates blindly without access-frequency telemetry, risking removal of latent knowledge that later drives reflex connections.
-- Convergence decisions lack multi-party gates (critic + planner + score threshold), causing premature convergence on unreliable outputs.
-- Model fallback succeeds but incurs 23-83s latency spikes, indicating missing per-model p95 latency budgets and dynamic timeout calibration.
-- Skill proposals accumulate (12+ in this log) but adoption remains near zero because no mechanism promotes proposals to implemented status after valida
-- Repeated 429 errors on z-ai/glm-5.2:free reveal a provider-level quota exhaustion pattern that static fallbacks cannot resolve without shared-quota aw
 
 ---
 
