@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5005 Fakten** · Stand 2026-08-28 03:29 UTC · aktualisiert bei jedem Herzschlag
+**5010 Fakten** · Stand 2026-08-28 03:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2093
+- **dream:** 2098
 - **swarm_artifact:** 1255
 - **last_swarm_critique:** 553
 - **anti_pattern:** 413
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828034700:5:7aef05`
+*28.08. 03:47 UTC · Quelle: dream*
+
+Simulation-based revision (verdict: revise, 5 risks identified, 4 revisions generated, 2 applied) effectively catches errors before deployment; make simulation a mandatory gate for all skill deployments.
+
+### `dream:20260828034700:4:27f21b`
+*28.08. 03:47 UTC · Quelle: dream*
+
+The system enters conserve mode at stress 1.0, throttling capability to 3 tasks; workload must be shed or deferred proactively before stress hits critical thresholds.
+
+### `dream:20260828034700:3:f215dd`
+*28.08. 03:47 UTC · Quelle: dream*
+
+File system operations fail due to unresolved relative paths and missing environment variable expansion; all paths must be canonicalized against ZOETRON_DATA at task start before any hand action executes.
+
+### `dream:20260828034700:2:c9cc3d`
+*28.08. 03:47 UTC · Quelle: dream*
+
+Proposed skills remain unused because the deployment pipeline lacks automated validation, testing, and integration steps; a skill lifecycle manager is needed to bridge proposal to production.
+
+### `dream:20260828034700:1:aa9b92`
+*28.08. 03:47 UTC · Quelle: dream*
+
+Free-tier model APIs exhibit cascading rate-limit failures (429 errors across 5 models) under load, requiring a model registry with real-time health tracking and automatic fallback to local or paid models.
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Simulationen besser nutz:2`
 *28.08. 03:27 UTC · Quelle: evolution*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 03:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 03:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,16 +10,16 @@
 - Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DAT *(hatte die Idee 3×)*
 - Reactivate self-diagnose as a scheduled organ that audits model-router metrics (latency, error rate, fallback  *(hatte die Idee 3×)*
 - Deploy hourly synthetic probes per model bucket feeding a rolling p95/error-rate dashboard that auto-demotes u *(hatte die Idee 3×)*
-- Implement a model router that tags each model with (reliability, latency_p95, rate_limit_rps) and selects via  *(hatte die Idee 2×)*
-- Build a strict pre-execution artifact validator that checks code size, imports, and entrypoints against platfo *(hatte die Idee 2×)*
-- Develop a skill lifecycle tracker that monitors proposed skills and automatically promotes validated ones into *(hatte die Idee 2×)*
-- Design a metabolism-aware task scheduler that automatically scales down task complexity and iteration limits w *(hatte die Idee 2×)*
 - Develop a Bayesian complexity estimator that adjusts task difficulty predictions based on historical calibrati *(hatte die Idee 2×)*
 - Create an I/O watchdog to monitor and mitigate drive-related latency before it triggers system timeouts. *(hatte die Idee 2×)*
 - Build a dynamic model fallback chain that automatically promotes models from 'free' to 'paid' or 'high-reliabi *(hatte die Idee 2×)*
 - Implement a model health registry that tracks per-model success rates, latency percentiles, and 429 frequency  *(hatte die Idee 2×)*
 - Implement adaptive rate-limit handler with exponential backoff, provider rotation, and token-budget accounting *(hatte die Idee 2×)*
 - Create latency-aware model router that assigns tasks to fast/cheap models for drafts and slow/robust models fo *(hatte die Idee 2×)*
+- Add convergence detector to swarm: stop cycles when score delta < 1 for two consecutive cycles or critic appro *(hatte die Idee 2×)*
+- Calibrate proposal generator with historical actuals: feed back (predicted, actual) pairs to adjust next predi *(hatte die Idee 2×)*
+- Mandate simulation gate for all skill proposals: auto-reject if risks > 3 or revisions > 3 without human overr *(hatte die Idee 2×)*
+- Track per-model health scores (success rate, latency, error types) and auto-demote models with >50% failure ra *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -31,16 +31,21 @@
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten echt ausprobieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-based revision (verdict: revise, 5 risks identified, 4 revisions generated, 2 applied) effectively catches errors before deployment; make s
+- The system enters conserve mode at stress 1.0, throttling capability to 3 tasks; workload must be shed or deferred proactively before stress hits crit
+- File system operations fail due to unresolved relative paths and missing environment variable expansion; all paths must be canonicalized against ZOETR
+- Proposed skills remain unused because the deployment pipeline lacks automated validation, testing, and integration steps; a skill lifecycle manager is
+- Free-tier model APIs exhibit cascading rate-limit failures (429 errors across 5 models) under load, requiring a model registry with real-time health t
 - No facts or events are pruned across cycles, suggesting the consolidation mechanism is inactive or thresholds are misconfigured, causing unbounded mem
 - Self-diagnosis reports zero organ errors while the system suffers repeated model failures and unmet goals, revealing that current health checks miss f
 - Dream cycles produce insights and skill proposals (5 each last cycle) but subsequent logs show no evidence of those proposals being enacted, confirmin
@@ -51,11 +56,6 @@
 - Successful model calls show high variance in latency (8.2s to 22.2s) and token efficiency, suggesting dynamic performance characteristics that should 
 - Models returning 200 status codes with empty choices (e.g., Nvidia 502 upstream errors) require explicit response validation before treating results a
 - HTTP 429 rate-limit errors from OpenRouter affect multiple models simultaneously, indicating a shared upstream bottleneck rather than isolated model f
-- Sequential model fallback fails because all free endpoints saturate simultaneously; no circuit breaker exists.
-- Evolution boosts variant scores from 2 to 8.3 but the swarm still converges at 2, indicating evolution results aren't fed back.
-- Calibration error of 3 points (predicted 5 vs actual 2) shows the system cannot self-assess difficulty.
-- The critic rejects any output lacking an executable Python block, yet the planner produces prose-only artifacts.
-- Free-tier models consistently hit 429 rate limits making them unreliable for autonomous loops.
 
 ---
 
