@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5516 Fakten** · Stand 2026-08-28 16:54 UTC · aktualisiert bei jedem Herzschlag
+**5521 Fakten** · Stand 2026-08-28 17:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2407
+- **dream:** 2412
 - **swarm_artifact:** 1351
 - **last_swarm_critique:** 571
 - **anti_pattern:** 445
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828175523:5:7e6108`
+*28.08. 17:55 UTC · Quelle: dream*
+
+Model heterogeneity (different latencies, error patterns, rate limits) demands continuous per-model scoring for intelligent routing and fallback decisions.
+
+### `dream:20260828175523:4:14a1ff`
+*28.08. 17:55 UTC · Quelle: dream*
+
+Dream-to-action conversion remains incomplete: approved skill proposals do not automatically spawn hand actions, causing proposal stagnation.
+
+### `dream:20260828175523:3:e9fb21`
+*28.08. 17:55 UTC · Quelle: dream*
+
+Pre-flight verification of model availability and rate-limit headroom prevents cascade failures in swarm executions, as evidenced by the existing skill proposal.
+
+### `dream:20260828175523:2:7bdd96`
+*28.08. 17:55 UTC · Quelle: dream*
+
+Dependence on a single working model (poolside/laguna-s-2.1:free) creates a critical single point of failure for all LLM-dependent tasks.
+
+### `dream:20260828175523:1:f72357`
+*28.08. 17:55 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple free-tier models is a systemic bottleneck requiring proactive health management, not just reactive retries.
 
 ### `tool:vorgeschlagene-fähigkeiten-testen-und-nu`
 *28.08. 16:54 UTC · Quelle: hands*

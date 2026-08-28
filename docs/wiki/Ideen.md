@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 16:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 17:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model heterogeneity (different latencies, error patterns, rate limits) demands continuous per-model scoring for intelligent routing and fallback decis
+- Dream-to-action conversion remains incomplete: approved skill proposals do not automatically spawn hand actions, causing proposal stagnation.
+- Pre-flight verification of model availability and rate-limit headroom prevents cascade failures in swarm executions, as evidenced by the existing skil
+- Dependence on a single working model (poolside/laguna-s-2.1:free) creates a critical single point of failure for all LLM-dependent tasks.
+- Rate limiting (429 errors) across multiple free-tier models is a systemic bottleneck requiring proactive health management, not just reactive retries.
 - Swarm goals referencing stale knowledge (e.g., market analysis) produce low-value outcomes when not refreshed before launch.
 - Hand-action tasks fail silently when prerequisite skills are unimplemented, creating execution gaps without explicit error propagation.
 - Latency varies significantly between model versions (42.3s vs 85.1s for similar tasks), suggesting version-specific performance profiles.
@@ -51,11 +56,6 @@
 - Skill proposals consistently outpace implementation — the system generates proposals but lacks an enforced pipeline to convert them into executed acti
 - The fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but at 85-98 second latency, making it unsuitable for time-sensitive operations.
 - 429 rate-limit errors from z-ai/glm-5.2:free recur every ~30 seconds, indicating a systemic capacity constraint rather than a transient glitch.
-- The system already self-diagnoses and sets drive goals effectively, but lacks automated calibration tracking to prevent repeating the same model-task 
-- Silent exit-1 failures in hand actions provide zero diagnostic signal, so structured exception capture with stdout/stderr logging is essential for mai
-- Without pre-flight health checks or circuit breakers, the system wastes cycles on doomed model calls and compounds rate-limit errors across sequential
-- A single low-latency reliable model (poolside/laguna-s-2.1:free at 7.5s) can serve as the primary backbone, while other models should only be used aft
-- External model API failures (429 rate limits and 502 upstream errors) are the dominant failure mode, not internal logic defects, and must be treated a
 
 ---
 
