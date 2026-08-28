@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4925 Fakten** · Stand 2026-08-28 01:47 UTC · aktualisiert bei jedem Herzschlag
+**4941 Fakten** · Stand 2026-08-28 01:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2048
-- **swarm_artifact:** 1237
-- **last_swarm_critique:** 550
-- **anti_pattern:** 407
-- **last_swarm_goal:** 299
-- **strategy:** 224
+- **dream:** 2053
+- **swarm_artifact:** 1243
+- **last_swarm_critique:** 551
+- **anti_pattern:** 409
+- **last_swarm_goal:** 300
+- **strategy:** 225
 - **hand_result:** 55
 - **tool:** 37
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Simulationen in echtes H:2`
+*28.08. 01:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.7): Declarative Policy Engine - Define simulation-to-action mappings as versioned YAML policies: triggers (simulation state queries, temporal conditions, logical expressions), actions (parameterized command templates for target
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Simulationen in echtes H:1`
+*28.08. 01:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.3): Reactive Control Loop (Digital Twin) - Build a continuous control loop running at fixed frequency (e.g., 10 Hz) that: (1) reads current simulation state from shared memory / gRPC / Redis, (2) computes control actions via a 
+
+### `last_swarm_critique`
+*28.08. 01:53 UTC · Quelle: critic*
+
+score=2; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Shell-Kommandos und Prosa; Vertrag verletzt: Ziel war ein Simulation-to-Action-Executor, geliefert wurden nur find/ls-Explorationsbefehle; Keine messbare Ergebniserzeugung, kein Bridge-Modul imp
+
+### `last_swarm_goal`
+*28.08. 01:52 UTC · Quelle: system*
+
+Simulationen in echtes Handeln umsetzen
+
+### `dream:20260828015138:5:f38735`
+*28.08. 01:51 UTC · Quelle: dream*
+
+Nemotron-3-ultra shows high latency variance (100s vs 6s) while poolside/laguna-s-2.1 delivers consistent sub-10s latency, making the latter preferable for time-sensitive tasks.
+
+### `dream:20260828015138:4:9b894c`
+*28.08. 01:51 UTC · Quelle: dream*
+
+Hand-action failures with zero duration and zero reads point to silent pre-condition failures rather than execution errors.
+
+### `dream:20260828015138:3:48e1da`
+*28.08. 01:51 UTC · Quelle: dream*
+
+Swarm convergence in a single cycle without evolution (evolved=false) indicates insufficient exploration, risking local optima.
+
+### `dream:20260828015138:2:b5eb26`
+*28.08. 01:51 UTC · Quelle: dream*
+
+Calibration error of +6 actions (predicted 3 vs actual 9) reveals a consistent underestimation bias that inflates planning confidence.
+
+### `dream:20260828015138:1:8d3db0`
+*28.08. 01:51 UTC · Quelle: dream*
+
+Free-tier models exhibit systemic rate-limiting (429) and overload (502) failures, making static model assignment unreliable for production swarms.
 
 ### `dream:20260828014643:5:e82528`
 *28.08. 01:46 UTC · Quelle: dream*

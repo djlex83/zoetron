@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Nemotron-3-ultra shows high latency variance (100s vs 6s) while poolside/laguna-s-2.1 delivers consistent sub-10s latency, making the latter preferabl
+- Hand-action failures with zero duration and zero reads point to silent pre-condition failures rather than execution errors.
+- Swarm convergence in a single cycle without evolution (evolved=false) indicates insufficient exploration, risking local optima.
+- Calibration error of +6 actions (predicted 3 vs actual 9) reveals a consistent underestimation bias that inflates planning confidence.
+- Free-tier models exhibit systemic rate-limiting (429) and overload (502) failures, making static model assignment unreliable for production swarms.
 - System operates at stress=1.0 with max_tasks=3, max_iterations=1; all successful outcomes occur within this tight envelope after model fallback and pa
 - Calibration error of 6 (predicted 3 vs actual 9) indicates complexity estimation is unreliable under conserve-mode budget constraints.
 - Simulation step consistently detects risks (3) and triggers revisions (3) that convert failing hand actions into successful artifact generation.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (5+ logged) but conversion to deployed skills is near zero due to missing validation pipeline.
 - Hand actions fail when using relative paths instead of absolute paths rooted at ZOETRON_DATA/sys.argv[1].
 - Free model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production tasks.
-- Calibration predictions matched actual outcomes exactly (predicted=4, actual=4), validating the scoring mechanism for future planning.
-- Swarm convergence requires iterative refinement; the first run scored 4/10, but evolution_run improved the winner to 9/10 through variant selection.
-- Model performance varies significantly by provider: inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b reliably succeed, while z-ai/glm-5
-- Code length directly correlates with critic rejection; the 2099-token solution was flagged as too long, while shorter variants scored higher.
-- Free-tier models consistently fail with 429 errors under concurrent load, indicating rate limits are the primary bottleneck for swarm scalability.
 
 ---
 
