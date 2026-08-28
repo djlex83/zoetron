@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Menschliche Eingriffe überflüssig machen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,10 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated skill proposals for circuit breakers and model health tracking highlight a systemic gap in current model failure handling.
+- High latency on fallback models (e.g., 7-9 seconds for nvidia/nemotron) indicates a need for latency-aware routing.
+- Reflexes can successfully complete stale goals like 'Marktanalyse' when standard action loops fail to converge.
+- The z-ai/glm-5.2:free model is consistently rate-limited with 429 errors and should be temporarily removed from the active routing pool.
 - Swarm role specialization (1 planner, 3 builders, 1 critic) enabled evolution but lacked a convergence gate combining score plateau, critic satisfacti
 - Simulation detected 3 risks and drove 3 revisions — risk-to-revision mapping is a working pattern worth codifying.
 - Critic feedback was truncated ("Die drei identifizierten Analyse-Sch") making revision targeting unreliable; structured critic output is essential.
@@ -52,10 +56,6 @@
 - Local hand_actions (code execution) complete reliably in ~1.6s while remote LLM calls vary 4-147s and frequently fail.
 - Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
 - High stress state (1.0) triggers conserve mode but the system still spawns multiple concurrent model calls, violating its own budget constraints.
-- Self-diagnosis reports "zero errors" while external convergence metrics show >80% failure rate, confirming a critical blind spot in monitoring.
-- Latency variance for successful calls (6s–70s) exceeds any reasonable budget, yet no timeout or preemptive routing logic is observed.
-- Single-model dependency creates systemic fragility: when z-ai/glm-5.2 fails repeatedly, the system retries the same failing endpoint instead of switch
-- Rate limiting (429 errors) across multiple providers is the dominant failure mode, indicating reliance on free-tier quotas without fallback orchestrat
 
 ---
 

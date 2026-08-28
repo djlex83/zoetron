@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5731 Fakten** · Stand 2026-08-28 22:52 UTC · aktualisiert bei jedem Herzschlag
+**5747 Fakten** · Stand 2026-08-28 23:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2532
-- **swarm_artifact:** 1399
-- **last_swarm_critique:** 579
-- **anti_pattern:** 457
-- **last_swarm_goal:** 328
-- **strategy:** 249
+- **dream:** 2536
+- **swarm_artifact:** 1405
+- **last_swarm_critique:** 580
+- **anti_pattern:** 459
+- **last_swarm_goal:** 329
+- **strategy:** 250
 - **hand_result:** 68
-- **tool:** 50
+- **tool:** 51
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktanalyse-endlich-umsetzen`
+*28.08. 23:05 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse endlich umsetzen'. Datei: data/tools/marktanalyse-endlich-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich ums:2`
+*28.08. 23:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.7): Event-Driven Stream Processing Architecture - Redesign as async event pipeline: Artifact 1 API clients become event producers publishing MarketDataEvent to a message bus (Redis Streams/Kafka/in-memory). Artifact 2 pipeline 
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich ums:0`
+*28.08. 23:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.0): Direct API Integration with Dependency Injection - Replace all mock senses in Artifact 2 with concrete implementations that directly wrap Artifact 1's financial API clients (AlphaVantage, TwelveData, Finnhub, Polygon). Crea
+
+### `last_swarm_critique`
+*28.08. 23:02 UTC · Quelle: critic*
+
+score=5; issues=Artifact 2 (pipeline) uses mock senses (WebSearchSense, RSSFeedSense, APISense) returning hardcoded fake data instead of integrating the real financial API senses from Artifact 1 (AlphaVantage, TwelveData, Finnhub, Polygon.io); LLMRouter in Art
+
+### `last_swarm_goal`
+*28.08. 22:55 UTC · Quelle: system*
+
+Marktanalyse endlich umsetzen
+
+### `dream:20260828225534:4:f4bda5`
+*28.08. 22:55 UTC · Quelle: dream*
+
+Repeated skill proposals for circuit breakers and model health tracking highlight a systemic gap in current model failure handling.
+
+### `dream:20260828225534:3:9d7147`
+*28.08. 22:55 UTC · Quelle: dream*
+
+High latency on fallback models (e.g., 7-9 seconds for nvidia/nemotron) indicates a need for latency-aware routing.
+
+### `dream:20260828225534:2:f130b2`
+*28.08. 22:55 UTC · Quelle: dream*
+
+Reflexes can successfully complete stale goals like 'Marktanalyse' when standard action loops fail to converge.
+
+### `dream:20260828225534:1:693506`
+*28.08. 22:55 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is consistently rate-limited with 429 errors and should be temporarily removed from the active routing pool.
 
 ### `dream:20260828225137:5:a6e3a1`
 *28.08. 22:51 UTC · Quelle: dream*
