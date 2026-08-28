@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5467 Fakten** · Stand 2026-08-28 15:45 UTC · aktualisiert bei jedem Herzschlag
+**5472 Fakten** · Stand 2026-08-28 15:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2382
+- **dream:** 2387
 - **swarm_artifact:** 1339
 - **last_swarm_critique:** 569
 - **anti_pattern:** 441
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828154756:5:a9ff66`
+*28.08. 15:47 UTC · Quelle: dream*
+
+Hand actions are failing silently (exit 1, no error message), indicating a need for better error capture in the execution environment.
+
+### `dream:20260828154756:4:e3ec38`
+*28.08. 15:47 UTC · Quelle: dream*
+
+The system generates valuable skill proposals but lacks an automated mechanism to implement and utilize them effectively.
+
+### `dream:20260828154756:3:8ee628`
+*28.08. 15:47 UTC · Quelle: dream*
+
+Swarm tasks fail to converge when underlying model calls fail, resulting in low scores and wasted execution cycles.
+
+### `dream:20260828154756:2:2f42e8`
+*28.08. 15:47 UTC · Quelle: dream*
+
+High latency models (e.g., >100s) can successfully complete tasks but severely bottleneck the overall system throughput.
+
+### `dream:20260828154756:1:ff9fed`
+*28.08. 15:47 UTC · Quelle: dream*
+
+Free models on OpenRouter are highly susceptible to rate limits (429 errors), causing cascading failures in dependent tasks.
 
 ### `dream:20260828154255:5:0be632`
 *28.08. 15:42 UTC · Quelle: dream*

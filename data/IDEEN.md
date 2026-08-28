@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions are failing silently (exit 1, no error message), indicating a need for better error capture in the execution environment.
+- The system generates valuable skill proposals but lacks an automated mechanism to implement and utilize them effectively.
+- Swarm tasks fail to converge when underlying model calls fail, resulting in low scores and wasted execution cycles.
+- High latency models (e.g., >100s) can successfully complete tasks but severely bottleneck the overall system throughput.
+- Free models on OpenRouter are highly susceptible to rate limits (429 errors), causing cascading failures in dependent tasks.
 - Calibration overestimates success probability (predicted 2 vs actual 1), revealing a systematic optimism bias in task difficulty estimation.
 - Hand actions fail with exit code 1 and no error message, indicating silent crashes in the execution sandbox.
 - Poolside/laguna-s-2.1:free is the only model showing consistent low-latency success (7.9s) under current load.
@@ -51,11 +56,6 @@
 - File operations fail because relative paths are used instead of resolving against ZOETRON_DATA, breaking data access in all hand actions.
 - Only poolside/laguna-s-2.1:free succeeded consistently, indicating a single reliable fallback model rather than a diverse pool.
 - Rate limiting (HTTP 429) is the dominant failure mode across all major model providers, making naive round-robin selection ineffective.
-- Simulation-to-skill conversion remains unproven; reflex-based skill building shows convergence but lacks measurable real-world impact.
-- Token usage spikes correlate with longer latencies, suggesting input complexity directly impacts endpoint reliability.
-- Model failures cascade when fallback logic is absent, as seen when nvidia/nemotron failed after z-ai/glm already hit 429.
-- Latency variance is extreme (5.9s to 143.1s), making single-model reliance risky and justifying dynamic dispatch.
-- 429 errors are the dominant failure mode across multiple providers, indicating systemic rate-limiting rather than isolated model issues.
 
 ---
 

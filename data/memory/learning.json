@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-28 15:44:45",
+ "stand": "2026-08-28 15:49:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 24,
-   "erfolge": 24,
+   "laeufe": 25,
+   "erfolge": 25,
    "quote": 1.0
   },
   {
@@ -120,9 +120,9 @@
  "haende_quote": 0.636,
  "simulationen_angewandt": 54,
  "swarm_scores": {
-  "n": 40,
+  "n": 39,
   "best": 9.0,
-  "schnitt": 4.75
+  "schnitt": 4.64
  },
  "score_nach_ziel_typ": {
   "analyse": {
