@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5391 Fakten** · Stand 2026-08-28 13:38 UTC · aktualisiert bei jedem Herzschlag
+**5396 Fakten** · Stand 2026-08-28 13:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2318
+- **dream:** 2323
 - **swarm_artifact:** 1333
 - **last_swarm_critique:** 568
 - **anti_pattern:** 439
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828135316:5:ccd811`
+*28.08. 13:53 UTC · Quelle: dream*
+
+Calibration and simulation phases both returned 'go' verdicts, indicating consistent readiness assessment across planning and execution layers.
+
+### `dream:20260828135316:4:ae6114`
+*28.08. 13:53 UTC · Quelle: dream*
+
+Hand action execution was successful with minimal duration, confirming reliable low-level control integration within the swarm loop.
+
+### `dream:20260828135316:3:829915`
+*28.08. 13:53 UTC · Quelle: dream*
+
+Latency and token usage vary significantly across models, suggesting dynamic model selection based on input complexity and urgency could optimize performance.
+
+### `dream:20260828135316:2:37ac34`
+*28.08. 13:53 UTC · Quelle: dream*
+
+The swarm goal was successfully converged with a score of 8+, validating the integration of learning mechanisms and tooling under stress conditions.
+
+### `dream:20260828135316:1:81b1a6`
+*28.08. 13:53 UTC · Quelle: dream*
+
+Model failures cluster around rate limits (429) and upstream overload (502), indicating a need for robust fallback chains and retry logic with exponential backoff.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Traumlernen ausweiten
 Cr:2`

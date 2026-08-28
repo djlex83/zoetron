@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 13:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 13:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 17×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 17×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 16×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration and simulation phases both returned 'go' verdicts, indicating consistent readiness assessment across planning and execution layers.
+- Hand action execution was successful with minimal duration, confirming reliable low-level control integration within the swarm loop.
+- Latency and token usage vary significantly across models, suggesting dynamic model selection based on input complexity and urgency could optimize perf
+- The swarm goal was successfully converged with a score of 8+, validating the integration of learning mechanisms and tooling under stress conditions.
+- Model failures cluster around rate limits (429) and upstream overload (502), indicating a need for robust fallback chains and retry logic with exponen
 - Simulation-driven revision (5 risks → 3 applied) reduces memory-consolidation risk before irreversible commitment.
 - Successful call latency varies 3x (7–23 s) even for the same model, requiring adaptive timeouts rather than fixed thresholds.
 - inclusionai/ling-3.0-flash-fin:free remains available when all other free models are rate-limited, making it a critical backbone.
@@ -51,11 +56,6 @@
 - Calibration overestimated capability (predicted 3 vs actual 1, abs_error 2), indicating the system's self-assessment is unreliable without historical 
 - Simulation revisions and evolution runs improved scores from 1/10 to 9/7/6, but the swarm never converged and the final hand action failed with exit c
 - Free-tier models on OpenRouter are systematically unreliable due to 429 rate limiting, making nvidia/nemotron-3-ultra-550b-a55b:free the only viable m
-- The nemotron-3-ultra model shows high latency variance (16.8s–42.2s) with no timeout or circuit-breaker, risking stalled pipelines.
-- Dream insights (5 this cycle) are not automatically converted into code changes or config updates within the next wake cycle, wasting consolidation ef
-- Skill proposals accumulate in dreams (5 this cycle) but lack a registry tracking proposal→implementation→test status, causing duplicate proposals and 
-- No automatic fallback occurs when a model returns 429; the system retries the same exhausted provider instead of switching to healthy alternatives lik
-- The z-ai/glm-5.2:free model fails 100% of the time due to provider-level rate limiting (429 errors), making it unusable without per-provider quota man
 
 ---
 
