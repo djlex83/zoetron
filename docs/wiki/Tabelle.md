@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3713 Neuronen · 130144 bewertete Synapsen
+Stand: 3717 Neuronen · 130467 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -21,8 +21,8 @@ Stand: 3713 Neuronen · 130144 bewertete Synapsen
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 275 | 0.25 |
 | 10 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 265 | 0.24 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 265 | 0.24 |
-| 12 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 256 | 0.24 |
-| 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 249 | 0.25 |
+| 12 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 250 | 0.25 |
+| 13 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 256 | 0.24 |
 | 14 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 273 | 0.22 |
 | 15 | 💭 | The z-ai/glm-5.2 model consistently fails with 429 rate-limit er… | 262 | 0.23 |
 
