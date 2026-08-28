@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- inclusionai/ling-3.0-flash-fin:free completes in 7.4s with low token counts, proving fast lightweight models can handle simple fallback tasks when hea
+- Anti-patterns recur on the same goal ('Träume in Taten umsetzen') when retries lack structural intervention, as shown by the recalled 6/10 failure rep
+- The evolution runner caps at 6/10 due to a missing 'hands organ dependency' — a structural gap that prevents score improvement regardless of variant m
+- nvidia/nemotron-3-ultra-550b-a55b:free is the only model that completes reliably but suffers variable latency (37–281s) and occasional 502 upstream ov
+- Free-tier models on OpenRouter (glm-5.2, gemma variants, poolside) consistently fail with 429 rate limits under load, making them unreliable for any s
 - Sequential model trial wastes 100+ seconds; parallel health probes would cut fallback latency by an order of magnitude.
 - Under maximum stress (1.0) the system correctly enters conserve mode with strict task/iteration budgets, preventing overload.
 - Simulation-revision loops (5 risks → 5 revisions applied) effectively de-risk execution before hand-off to hand_action.
@@ -51,11 +56,6 @@
 - Fallback model availability (nemotron-3-ultra, laguna-s-2.1) is the primary resilience mechanism when primary models fail, but it is currently unstruc
 - A persistent proposal-to-application gap exists: skills are generated but rarely wired into active workflows, leaving the system in a loop of suggesti
 - 429 rate-limit errors are systematic and recurring across multiple free models, requiring architectural handling rather than ad-hoc retries.
-- Calibration tasks with high absolute error (e.g., predicted 4 vs actual 6) indicate systematic underprediction, pointing to a need for better error mo
-- Evolution runs show significant score improvements (from 6 to 9) when variant selection is guided by critic feedback, highlighting the value of iterat
-- The poolside/laguna-s-2.1 model consistently succeeded with low latency and high token efficiency, suggesting it is more reliable under current load c
-- The nemotron model was automatically blocked after 3 consecutive failures, showing that repeated upstream errors trigger protective circuit-breaking m
-- Rate limiting (429 errors) and upstream overload (502 errors) are the dominant failure modes across multiple models, indicating systemic API throttlin
 
 ---
 

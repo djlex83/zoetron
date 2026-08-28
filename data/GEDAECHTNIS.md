@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5261 Fakten** · Stand 2026-08-28 09:59 UTC · aktualisiert bei jedem Herzschlag
+**5266 Fakten** · Stand 2026-08-28 10:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2243
+- **dream:** 2248
 - **swarm_artifact:** 1307
 - **last_swarm_critique:** 563
 - **anti_pattern:** 429
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828100206:5:1cf480`
+*28.08. 10:02 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free completes in 7.4s with low token counts, proving fast lightweight models can handle simple fallback tasks when heavy models are rate-limited.
+
+### `dream:20260828100206:4:62b261`
+*28.08. 10:02 UTC · Quelle: dream*
+
+Anti-patterns recur on the same goal ('Träume in Taten umsetzen') when retries lack structural intervention, as shown by the recalled 6/10 failure repeating across attempts.
+
+### `dream:20260828100206:3:c6f52e`
+*28.08. 10:02 UTC · Quelle: dream*
+
+The evolution runner caps at 6/10 due to a missing 'hands organ dependency' — a structural gap that prevents score improvement regardless of variant mutations.
+
+### `dream:20260828100206:2:6e5fee`
+*28.08. 10:02 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free is the only model that completes reliably but suffers variable latency (37–281s) and occasional 502 upstream overloads.
+
+### `dream:20260828100206:1:0d01e5`
+*28.08. 10:02 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter (glm-5.2, gemma variants, poolside) consistently fail with 429 rate limits under load, making them unreliable for any sequential workflow.
 
 ### `dream:20260828095810:5:4d58ed`
 *28.08. 09:58 UTC · Quelle: dream*
