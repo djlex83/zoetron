@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5312 Fakten** · Stand 2026-08-28 11:03 UTC · aktualisiert bei jedem Herzschlag
+**5317 Fakten** · Stand 2026-08-28 11:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2283
+- **dream:** 2288
 - **swarm_artifact:** 1313
 - **last_swarm_critique:** 564
 - **anti_pattern:** 431
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828110934:5:a6404c`
+*28.08. 11:09 UTC · Quelle: dream*
+
+Self-diagnosis reports no organ errors while model-inference errors persist, indicating monitoring blind spots.
+
+### `dream:20260828110934:4:e5baf2`
+*28.08. 11:09 UTC · Quelle: dream*
+
+Simulation-recommended revisions (4) are only partially applied (2), leaving known risks unmitigated.
+
+### `dream:20260828110934:3:248408`
+*28.08. 11:09 UTC · Quelle: dream*
+
+Destructive operations (subprocess) are blocked by human-approval gates, stalling autonomous execution.
+
+### `dream:20260828110934:2:d41107`
+*28.08. 11:09 UTC · Quelle: dream*
+
+Evolution can generate high-scoring variants (9/10) but swarm convergence fails when model calls intermittently fail.
+
+### `dream:20260828110934:1:f0bcd1`
+*28.08. 11:09 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systemic 429 rate-limiting making them unreliable for sustained workloads.
 
 ### `dream:20260828110242:5:6e02b4`
 *28.08. 11:02 UTC · Quelle: dream*

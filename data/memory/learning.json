@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 11:03:09",
+ "stand": "2026-08-28 11:10:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,9 +10,9 @@
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 17,
-   "erfolge": 3,
-   "quote": 0.176
+   "laeufe": 18,
+   "erfolge": 4,
+   "quote": 0.222
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -123,7 +123,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.641,
+ "haende_quote": 0.643,
  "simulationen_angewandt": 60,
  "swarm_scores": {
   "n": 42,

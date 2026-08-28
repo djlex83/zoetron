@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports no organ errors while model-inference errors persist, indicating monitoring blind spots.
+- Simulation-recommended revisions (4) are only partially applied (2), leaving known risks unmitigated.
+- Destructive operations (subprocess) are blocked by human-approval gates, stalling autonomous execution.
+- Evolution can generate high-scoring variants (9/10) but swarm convergence fails when model calls intermittently fail.
+- Free-tier models on OpenRouter suffer systemic 429 rate-limiting making them unreliable for sustained workloads.
 - Calibration predictions tend to overestimate actual performance, indicating the calibration model needs a downward adjustment.
 - Evolutionary runs effectively improve artifact quality, as evidenced by the score increasing from 4 to 9 by addressing specific critic issues.
 - The model 'poolside/laguna-s-2.1:free' offers significantly lower latency (6.7s) compared to 'nvidia/nemotron-3-ultra-550b-a55b:free' (47-187s) and is
@@ -51,11 +56,6 @@
 - Hand actions fail because relative paths ignore the ZOETRON_DATA environment variable, causing silent zero-byte reads.
 - Previously proposed skills (scoreboard router, failure-to-skill pipeline, semantic cache) directly address the observed failure modes but remain unimp
 - Rate limiting on the primary model (z-ai/glm-5.2) triggers cascading fallback to a slower, high-variance model (nvidia/nemotron), making latency unpre
-- Reflex successfully used a tool to understand rejected tools, proving meta-cognitive skills can unblock capability adoption.
-- Pruning ran but removed zero facts/events, suggesting thresholds are miscalibrated or access-frequency tracking is broken.
-- Multiple skill proposals for model reliability exist but none are implemented, revealing a promotion gap between proposal and production.
-- High latency variance (34-73s) on nemotron-3-ultra shows static timeouts cause unnecessary failures or wasted waits.
-- Recurring 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and rate-limit handling for external model endpoints.
 
 ---
 
