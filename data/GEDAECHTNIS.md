@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5472 Fakten** · Stand 2026-08-28 15:50 UTC · aktualisiert bei jedem Herzschlag
+**5489 Fakten** · Stand 2026-08-28 16:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2387
-- **swarm_artifact:** 1339
-- **last_swarm_critique:** 569
-- **anti_pattern:** 441
-- **last_swarm_goal:** 318
-- **strategy:** 241
+- **dream:** 2392
+- **swarm_artifact:** 1345
+- **last_swarm_critique:** 570
+- **anti_pattern:** 443
+- **last_swarm_goal:** 319
+- **strategy:** 242
 - **hand_result:** 64
-- **tool:** 44
+- **tool:** 45
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-erinnerungen-auf-wert-prüfen`
+*28.08. 16:16 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Erinnerungen auf Wert prüfen'. Datei: data/tools/alte-erinnerungen-auf-wert-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Alte Erinnerungen auf We:2`
+*28.08. 16:15 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Integration-Test-getriebene Entwicklung: Pipeline zuerst als Ende-zu-Ende-Test m - Der Ansatz dreht die Reihenfolge um: Zuerst wird ein Ende-zu-Ende-Test (pytest) geschrieben, der mit bekannten Fixture-Daten die komplette Pip
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Alte Erinnerungen auf We:1`
+*28.08. 16:15 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Contract-First: Ein gemeinsames Datenmodell (Pydantic-Schema) als verbindliche S - Zuerst wird ein gemeinsames schema.py mit Pydantic-Modellen definiert: MemoryInventory (mit Pflichtfeld 'memories' als Liste), MemoryScore (fl
+
+### `last_swarm_critique`
+*28.08. 16:14 UTC · Quelle: critic*
+
+score=3; issues=Script 1 (Alters-Inventur) schreibt keine 'inventur_alt.json', die Script 2 (Wert-Schätzung) als Input erwartet - Pipeline bricht hier ab; Script 3 (Archivierung) nutzt SCORE_THRESHOLD=2.0, aber Script 2 normalisiert Scores auf 0-1 - Schwellenw
+
+### `last_swarm_goal`
+*28.08. 15:55 UTC · Quelle: system*
+
+Alte Erinnerungen auf Wert prüfen
+
+### `dream:20260828155416:5:1b6c83`
+*28.08. 15:54 UTC · Quelle: dream*
+
+Convergence criteria lack safety margins: calibration outputs systematically underestimate required iterations, and no 2× buffer exists, causing premature convergence declarations that mask incomplete learning.
+
+### `dream:20260828155416:4:671cf4`
+*28.08. 15:54 UTC · Quelle: dream*
+
+Latency variance is extreme and unmanaged: successful calls take 116s+ with no timeout budgets, fallback routing, or latency-aware dispatch, turning transient overloads into systemic stalls.
+
+### `dream:20260828155416:3:925b63`
+*28.08. 15:54 UTC · Quelle: dream*
+
+No pre-flight validation exists for model endpoints: swarm launches proceed without checking rate-limit headroom, endpoint health, or skill prerequisites, causing predictable 429/502 cascades that waste cycles.
+
+### `dream:20260828155416:2:7d77ab`
+*28.08. 15:54 UTC · Quelle: dream*
+
+Skill proposals accumulate but never execute: multiple dream cycles generate implementation-ready proposals (circuit-breaker, scorecard, dispatcher) yet zero hand-action tasks spawn from them, confirming a broken dream-to-action pipeline.
+
+### `dream:20260828155416:1:7caaec`
+*28.08. 15:54 UTC · Quelle: dream*
+
+Model reliability is the primary bottleneck: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds but with 116s latency and occasional 502s, making single-model dependence untenable.
 
 ### `dream:20260828154756:5:a9ff66`
 *28.08. 15:47 UTC · Quelle: dream*

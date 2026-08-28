@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 16:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,10 +16,10 @@
 - Implement pre-flight organ existence checks before swarm launch to fail fast on missing tools like swarm.py. *(hatte die Idee 3×)*
 - Build a real-time model health dashboard tracking 429/502 rates, p95 latency, and consecutive errors to drive  *(hatte die Idee 3×)*
 - Create an automatic skill promotion pipeline: proposal → simulation verdict → merge when risk_count < 2 and la *(hatte die Idee 3×)*
-- Build a latency-aware model selector that prefers sub-10s models for planning/critic roles and reserves high-l *(hatte die Idee 2×)*
 - Log per-model latency percentiles (p50, p95) and error rates in a rolling window; auto-demote models whose p95 *(hatte die Idee 2×)*
 - Implement a model router that tracks per-model 429 rates and latency percentiles, automatically failing over t *(hatte die Idee 2×)*
 - Add exponential backoff with jitter and circuit-breaker logic around all model calls to absorb rate-limit burs *(hatte die Idee 2×)*
+- Create a 'shadow evaluation' pipeline that runs candidate fixes against recorded failure traces before promoti *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -29,18 +29,23 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
-- Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 2×)*
+- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence criteria lack safety margins: calibration outputs systematically underestimate required iterations, and no 2× buffer exists, causing prema
+- Latency variance is extreme and unmanaged: successful calls take 116s+ with no timeout budgets, fallback routing, or latency-aware dispatch, turning t
+- No pre-flight validation exists for model endpoints: swarm launches proceed without checking rate-limit headroom, endpoint health, or skill prerequisi
+- Skill proposals accumulate but never execute: multiple dream cycles generate implementation-ready proposals (circuit-breaker, scorecard, dispatcher) y
+- Model reliability is the primary bottleneck: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds b
 - Hand actions are failing silently (exit 1, no error message), indicating a need for better error capture in the execution environment.
 - The system generates valuable skill proposals but lacks an automated mechanism to implement and utilize them effectively.
 - Swarm tasks fail to converge when underlying model calls fail, resulting in low scores and wasted execution cycles.
@@ -51,11 +56,6 @@
 - Poolside/laguna-s-2.1:free is the only model showing consistent low-latency success (7.9s) under current load.
 - Nemotron-3-ultra succeeds but with 90-200s latency, rendering it unusable for interactive loops.
 - Free-tier models on OpenRouter suffer systematic 429 rate-limiting and 502 upstream overloads, making them unreliable for production workloads.
-- Simulation-based revision loops execute (3 revisions applied) but produce plans with 5 risks, showing revision without risk filtering is unsafe.
-- Metabolism stress at 1.0 forces conserve mode with a 1-iteration budget, rendering any multi-step plan infeasible without explicit prioritization.
-- File operations fail because relative paths are used instead of resolving against ZOETRON_DATA, breaking data access in all hand actions.
-- Only poolside/laguna-s-2.1:free succeeded consistently, indicating a single reliable fallback model rather than a diverse pool.
-- Rate limiting (HTTP 429) is the dominant failure mode across all major model providers, making naive round-robin selection ineffective.
 
 ---
 
