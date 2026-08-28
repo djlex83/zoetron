@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5655 Fakten** · Stand 2026-08-28 21:13 UTC · aktualisiert bei jedem Herzschlag
+**5660 Fakten** · Stand 2026-08-28 21:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2477
+- **dream:** 2482
 - **swarm_artifact:** 1387
 - **last_swarm_critique:** 577
 - **anti_pattern:** 455
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828212415:5:2a94fd`
+*28.08. 21:24 UTC · Quelle: dream*
+
+Script execution lacks pre-flight guards: missing shebang, permission, or parse errors surface only at runtime, wasting cycles.
+
+### `dream:20260828212415:4:e4e329`
+*28.08. 21:24 UTC · Quelle: dream*
+
+Stress state ('conserve') is detected but not acted upon; non-critical work continues consuming the single available iteration.
+
+### `dream:20260828212415:3:bfe2b8`
+*28.08. 21:24 UTC · Quelle: dream*
+
+Proposed skills accumulate without a validation loop; the system proposes but never executes a 'try → measure → adopt' cycle.
+
+### `dream:20260828212415:2:a842b3`
+*28.08. 21:24 UTC · Quelle: dream*
+
+Model failures are silent (status 200 with empty choices) or noisy (429), but both leave the pipeline without a fallback, causing task stalls.
+
+### `dream:20260828212415:1:0f9301`
+*28.08. 21:24 UTC · Quelle: dream*
+
+Rate-limit errors (429) cascade across multiple free-tier providers simultaneously, indicating shared quota pools or correlated traffic spikes.
 
 ### `tool:kritiken-und-ziele-regelmäßig-prüfen`
 *28.08. 21:13 UTC · Quelle: hands*
