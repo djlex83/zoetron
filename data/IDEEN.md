@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-driven revision cycles (3 revisions applied) successfully produced a running 211-line artifact, validating the self-improvement loop.
+- InclusionAI Ling-3.0-Flash-Fin delivers consistent low latency (~9s) and should be preferred for fast-path requests.
+- NVIDIA Nemotron-3-Ultra succeeds but exhibits extreme latency variance (75-190s), unsuitable for time-sensitive tasks.
+- Google Gemma and Z.ai GLM model families consistently return 429 errors and should be deprioritized in routing.
+- Free-tier models on OpenRouter suffer severe rate limiting (429 errors) making them unreliable for production workloads.
 - Hand actions (0.33s) and code execution succeed consistently while LLM calls are the primary bottleneck.
 - Evolution with 3 variants reliably produces high-scoring candidates (8/10) even when base attempt scored only 5/10.
 - Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of task difficulty.
@@ -51,11 +56,6 @@
 - Even the sole successful model (poolside/laguna-s-2.1) exhibited 3x latency variance between calls (6.1s vs 18.0s), meaning a single working endpoint 
 - The gap between generated skill proposals and their actual implementation is itself a systemic failure mode — five proposals were produced but none we
 - Cascading 429 and 502 errors across four different models simultaneously reveals the absence of any model-level fallback or health-tracking mechanism,
-- The simulation initially flagged 5 risks requiring revision, but the final artifact (187 lines Python) passed validation, suggesting early risk assess
-- The task converged to score 9 in a single cycle despite >70% model call failure rate, proving that redundant model fallback strategies can absorb rate
-- Calibration predicted 3 revisions but actual was 9, a 3x underestimation indicating that initial effort estimates must account for retry overhead and 
-- Nvidia/nemotron-3-ultra-550b-a55b was the only consistently reliable model, succeeding despite latencies up to 115s and occasional 502 upstream errors
-- Rate limiting (429 errors) was the dominant failure mode across nearly all free-tier models, not model capability or endpoint availability.
 
 ---
 

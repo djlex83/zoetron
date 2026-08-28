@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5241 Fakten** · Stand 2026-08-28 09:27 UTC · aktualisiert bei jedem Herzschlag
+**5246 Fakten** · Stand 2026-08-28 09:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2223
+- **dream:** 2228
 - **swarm_artifact:** 1307
 - **last_swarm_critique:** 563
 - **anti_pattern:** 429
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828093754:5:4e90d3`
+*28.08. 09:37 UTC · Quelle: dream*
+
+Simulation-driven revision cycles (3 revisions applied) successfully produced a running 211-line artifact, validating the self-improvement loop.
+
+### `dream:20260828093754:4:19b9a8`
+*28.08. 09:37 UTC · Quelle: dream*
+
+InclusionAI Ling-3.0-Flash-Fin delivers consistent low latency (~9s) and should be preferred for fast-path requests.
+
+### `dream:20260828093754:3:be3c2b`
+*28.08. 09:37 UTC · Quelle: dream*
+
+NVIDIA Nemotron-3-Ultra succeeds but exhibits extreme latency variance (75-190s), unsuitable for time-sensitive tasks.
+
+### `dream:20260828093754:2:3bdbe1`
+*28.08. 09:37 UTC · Quelle: dream*
+
+Google Gemma and Z.ai GLM model families consistently return 429 errors and should be deprioritized in routing.
+
+### `dream:20260828093754:1:29eb73`
+*28.08. 09:37 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer severe rate limiting (429 errors) making them unreliable for production workloads.
 
 ### `tool:träume-in-taten-umsetzen`
 *28.08. 09:26 UTC · Quelle: hands*
