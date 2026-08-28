@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnose organ is inactive; critical system metrics (model latency, error rates, skill promotion health) go unaudited.
+- No automated model health monitoring exists; failures are only detected reactively during task execution.
+- Skill proposals accumulate (5+ logged) but conversion to deployed skills is near zero due to missing validation pipeline.
+- Hand actions fail when using relative paths instead of absolute paths rooted at ZOETRON_DATA/sys.argv[1].
+- Free model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production tasks.
 - Calibration predictions matched actual outcomes exactly (predicted=4, actual=4), validating the scoring mechanism for future planning.
 - Swarm convergence requires iterative refinement; the first run scored 4/10, but evolution_run improved the winner to 9/10 through variant selection.
 - Model performance varies significantly by provider: inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b reliably succeed, while z-ai/glm-5
@@ -51,11 +56,6 @@
 - Relative path usage in hand_actions creates environment-dependent failures that a centralized path-resolver rooted at ZOETRON_DATA would eliminate.
 - Skill promotion without mandatory artifact validation (existence, size, checksum) allows broken skills into production, evidenced by consistent 5-poin
 - Free-tier models on OpenRouter share a global rate-limit bucket causing cascading 429 failures across all providers simultaneously.
-- The gap between proposing skills and using them is closed by actively running reflexes and swarms focused on execution rather than planning.
-- High stress (1.0) triggers a 'conserve' state, but focused single-iteration execution still allows successful completion of critical goals.
-- Simulations and applied revisions are effective for turning plans into actionable skills, as seen by the successful execution of the 'try skills' goal
-- Hand actions fail when paths are not explicitly resolved relative to 'ZOETRON_DATA' or 'sys.argv[1]' before execution.
-- The model 'z-ai/glm-5.2:free' is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of 'nvidia/nemotron-3-ul
 
 ---
 

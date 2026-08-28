@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 01:23:43",
+ "stand": "2026-08-28 01:42:30",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -106,7 +106,7 @@
   }
  ],
  "haende_quote": 0.6,
- "simulationen_angewandt": 66,
+ "simulationen_angewandt": 65,
  "swarm_scores": {
   "n": 49,
   "best": 9.0,

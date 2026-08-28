@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4915 Fakten** · Stand 2026-08-28 01:24 UTC · aktualisiert bei jedem Herzschlag
+**4920 Fakten** · Stand 2026-08-28 01:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2038
+- **dream:** 2043
 - **swarm_artifact:** 1237
 - **last_swarm_critique:** 550
 - **anti_pattern:** 407
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828014213:5:9d01a1`
+*28.08. 01:42 UTC · Quelle: dream*
+
+Self-diagnose organ is inactive; critical system metrics (model latency, error rates, skill promotion health) go unaudited.
+
+### `dream:20260828014213:4:611472`
+*28.08. 01:42 UTC · Quelle: dream*
+
+No automated model health monitoring exists; failures are only detected reactively during task execution.
+
+### `dream:20260828014213:3:ebcf05`
+*28.08. 01:42 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ logged) but conversion to deployed skills is near zero due to missing validation pipeline.
+
+### `dream:20260828014213:2:9c1c87`
+*28.08. 01:42 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of absolute paths rooted at ZOETRON_DATA/sys.argv[1].
+
+### `dream:20260828014213:1:76b55c`
+*28.08. 01:42 UTC · Quelle: dream*
+
+Free model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production tasks.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten schneller in:2`
 *28.08. 01:22 UTC · Quelle: evolution*
