@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5092 Fakten** · Stand 2026-08-28 05:34 UTC · aktualisiert bei jedem Herzschlag
+**5097 Fakten** · Stand 2026-08-28 05:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2143
+- **dream:** 2148
 - **swarm_artifact:** 1271
 - **last_swarm_critique:** 557
 - **anti_pattern:** 419
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828053744:5:da95f8`
+*28.08. 05:37 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while drive goals reveal systemic reliability and adoption failures.
+
+### `dream:20260828053744:4:7aa1e5`
+*28.08. 05:37 UTC · Quelle: dream*
+
+Reflex mechanism successfully tested and improved a rejected tool, proving automated skill repair works.
+
+### `dream:20260828053744:3:2fd836`
+*28.08. 05:37 UTC · Quelle: dream*
+
+Human intervention required 15 times indicates autonomy gaps in error recovery and skill validation.
+
+### `dream:20260828053744:2:805e34`
+*28.08. 05:37 UTC · Quelle: dream*
+
+40 skill proposals exist but tool rejection shows placeholder implementations (list_ideas() only pass) prevent actual use.
+
+### `dream:20260828053744:1:210ded`
+*28.08. 05:37 UTC · Quelle: dream*
+
+Primary model (z-ai/glm-5.2:free) fails consistently with 429 rate-limit errors while fallback (nvidia/nemotron-3-ultra) succeeds but with high latency variance (11-26s).
 
 ### `dream:20260828053314:5:f88d15`
 *28.08. 05:33 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while drive goals reveal systemic reliability and adoption failures.
+- Reflex mechanism successfully tested and improved a rejected tool, proving automated skill repair works.
+- Human intervention required 15 times indicates autonomy gaps in error recovery and skill validation.
+- 40 skill proposals exist but tool rejection shows placeholder implementations (list_ideas() only pass) prevent actual use.
+- Primary model (z-ai/glm-5.2:free) fails consistently with 429 rate-limit errors while fallback (nvidia/nemotron-3-ultra) succeeds but with high latenc
 - Tool registration was rejected because list_ideas() contained only a placeholder pass statement.
 - Calibration predicted 2 cycles but actual was 8 (error 6), revealing systematic underestimation for skill-conversion tasks.
 - Three simulation revisions for five risks successfully de-risked the skill-conversion goal, yielding convergence at score 8.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that inflate perceived system competence.
 - Evolution runs improve scores significantly (4→9) but swarm convergence fails, suggesting critic/planner ratio or stopping criteria need tuning.
 - Repeated 429 errors on specific models indicate unreliable endpoints require automatic fallback with exponential backoff.
-- Calibration underestimated actual score by 2 points (predicted 2 vs actual 4), indicating systematic pessimism in self-assessment.
-- Simulation verdict shifted from 'revise' (3 risks) to 'go' (4 risks) only after 3 revisions, showing risk count alone is misleading without revision d
-- Evolution runs with 3 variants boosted artifact score from 4 to 9 (winner), proving iterative refinement outperforms single-pass generation.
-- Nemotron-3-ultra succeeds 100% of the time but latency varies 12x (12s–150s), requiring timeout budgets not fixed limits.
-- Free-tier models (glm-5.2) consistently hit 429 rate limits under load, making them unreliable for production pipelines.
 
 ---
 
