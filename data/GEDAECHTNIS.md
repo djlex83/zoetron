@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5577 Fakten** · Stand 2026-08-28 19:18 UTC · aktualisiert bei jedem Herzschlag
+**5594 Fakten** · Stand 2026-08-28 19:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2432
-- **swarm_artifact:** 1369
-- **last_swarm_critique:** 574
-- **anti_pattern:** 451
-- **last_swarm_goal:** 323
-- **strategy:** 246
-- **hand_result:** 66
+- **dream:** 2437
+- **swarm_artifact:** 1375
+- **last_swarm_critique:** 575
+- **anti_pattern:** 453
+- **last_swarm_goal:** 324
+- **strategy:** 247
+- **hand_result:** 67
 - **tool:** 47
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Prüfen, warum Modelle sc:2`
+*28.08. 19:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Observability-Driven Failure Diagnosis Harness - Build a diagnostic harness that treats the failure analysis as a data pipeline with full observability: (1) Create a structured logging framework (structlog + OpenTelemetry) th
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Prüfen, warum Modelle sc:1`
+*28.08. 19:42 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*28.08. 19:41 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - beide getestete Artefakte werfen Laufzeitfehler (Tracebacks in action_1787946000790.py:227 und action_1787946001926.py:148); sys.argv[1] Zugriff ohne Laengenpruefung: IndexError bei Aufruf ohne Argument; Import-Fa
+
+### `last_swarm_goal`
+*28.08. 19:35 UTC · Quelle: system*
+
+Prüfen, warum Modelle scheitern
+
+### `dream:20260828193429:5:f4bf41`
+*28.08. 19:34 UTC · Quelle: dream*
+
+Repeated failures in converting dreams to skills suggest that the current simulation/reflex loop is not effectively translating abstract goals into concrete actions.
+
+### `dream:20260828193429:4:56b884`
+*28.08. 19:34 UTC · Quelle: dream*
+
+The system is in a 'conserve' state with high stress (1.0), meaning only 1 iteration is allowed per task, which prevents complex multi-step problem solving.
+
+### `dream:20260828193429:3:467bc2`
+*28.08. 19:34 UTC · Quelle: dream*
+
+File path handling in Python scripts is failing because relative paths are not being resolved against the ZOETRON_DATA environment variable.
+
+### `dream:20260828193429:2:31a4c5`
+*28.08. 19:34 UTC · Quelle: dream*
+
+High latency (30-80s) on nvidia/nemotron-3-ultra-550b-a55b:free indicates that time-sensitive tasks should avoid this model or implement asynchronous waiting.
+
+### `dream:20260828193429:1:ddd307`
+*28.08. 19:34 UTC · Quelle: dream*
+
+Free models on OpenRouter (especially z-ai/glm-5.2 and google/gemma) are highly rate-limited (429) and require a robust, automated fallback chain.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
 *28.08. 19:16 UTC · Quelle: evolution*
