@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance on working models (2.6–21.2s) demands per-model timeout budgets to avoid cascade stalls.
+- Metabolism state 'conserve' with max_iterations=1 eliminates retry slack, turning first-attempt success into a hard requirement.
+- Calibration error of 3 (predicted 5 vs actual 2) reveals systematic overestimation of simulation quality under stress.
+- The 'tor' gate rejects simulation artifacts that lack executable Python blocks, proving prose-only outputs cannot converge to action.
+- Free-tier models suffer pervasive 429 rate limits, making single-model reliance infeasible without request queuing and exponential backoff.
 - The reflex 'alte-träume-miteinander-verbinden.py' succeeded for 'Simulationen besser nutzen', suggesting dream-linking works but its output isn't fed 
 - Five skill proposals exist for model routing, calibration, swarm cycles, pre-flight checks, and canary deployments, but none appear implemented or tes
 - System stress is at maximum (1.0) with budget capped at 3 tasks/1 iteration, yet the swarm continues spawning new goals instead of entering true conse
@@ -51,11 +56,6 @@
 - Simulation-revision loops are proposed but never executed, leaving risk collection theoretical.
 - Path resolution failures recur because relative paths aren't expanded against ZOETRON_DATA and argv[1] before hand_action.
 - Model 429 errors cascade into fallback with 2-3x latency variance, making budget prediction unreliable.
-- Model fallback is reactive and slow; no synthetic probes exist to preemptively demote unhealthy models before user-facing requests fail.
-- Self-diagnose runs only ad-hoc; without scheduled audits, model-router degradation and skill-pipeline stalls go undetected.
-- Proposed skills accumulate but never reach production because no mandatory validation gate (simulation→hand_action→critic≥7) exists.
-- Hand actions fail when relative paths are used instead of absolute paths rooted at ZOETRON_DATA.
-- Free-tier models consistently hit 429 quota errors because no routing logic distributes load across distinct quota buckets.
 
 ---
 

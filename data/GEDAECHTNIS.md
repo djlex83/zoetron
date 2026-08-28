@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4961 Fakten** · Stand 2026-08-28 02:32 UTC · aktualisiert bei jedem Herzschlag
+**4966 Fakten** · Stand 2026-08-28 02:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2073
+- **dream:** 2078
 - **swarm_artifact:** 1243
 - **last_swarm_critique:** 551
 - **anti_pattern:** 409
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828023656:5:d53f24`
+*28.08. 02:36 UTC · Quelle: dream*
+
+Latency variance on working models (2.6–21.2s) demands per-model timeout budgets to avoid cascade stalls.
+
+### `dream:20260828023656:4:4b3cc6`
+*28.08. 02:36 UTC · Quelle: dream*
+
+Metabolism state 'conserve' with max_iterations=1 eliminates retry slack, turning first-attempt success into a hard requirement.
+
+### `dream:20260828023656:3:a404ad`
+*28.08. 02:36 UTC · Quelle: dream*
+
+Calibration error of 3 (predicted 5 vs actual 2) reveals systematic overestimation of simulation quality under stress.
+
+### `dream:20260828023656:2:3bf254`
+*28.08. 02:36 UTC · Quelle: dream*
+
+The 'tor' gate rejects simulation artifacts that lack executable Python blocks, proving prose-only outputs cannot converge to action.
+
+### `dream:20260828023656:1:ef0333`
+*28.08. 02:36 UTC · Quelle: dream*
+
+Free-tier models suffer pervasive 429 rate limits, making single-model reliance infeasible without request queuing and exponential backoff.
 
 ### `dream:20260828023205:5:4bc9c1`
 *28.08. 02:32 UTC · Quelle: dream*
