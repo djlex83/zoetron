@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 13:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 14:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency ranges from 8s to 128s across free-tier models, making timeout thresholds unpredictable without per-model profiling.
+- The evolution mechanism successfully produced a variant scoring 9/10 from a baseline of 4/10, proving iterative variant scoring is an effective conver
+- Calibration underestimated convergence iterations by 3x (predicted 1, actual 4), revealing a systematic optimism bias in iteration-count predictions.
+- Upstream 502 overloads from Nvidia endpoints show that even successful models are unreliable under concurrent load on free tiers.
+- Rate-limit errors (429) are the dominant failure mode across all free-tier models, indicating systemic API throttling rather than model-specific issue
 - Calibration and simulation phases both returned 'go' verdicts, indicating consistent readiness assessment across planning and execution layers.
 - Hand action execution was successful with minimal duration, confirming reliable low-level control integration within the swarm loop.
 - Latency and token usage vary significantly across models, suggesting dynamic model selection based on input complexity and urgency could optimize perf
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free remains available when all other free models are rate-limited, making it a critical backbone.
 - Three consecutive errors trigger a 1800-second model ban, turning transient rate limits into extended outages.
 - Free-tier models on OpenRouter exhibit correlated 429 rate-limit failures that cascade across providers simultaneously.
-- Issue 188 remains open despite multiple revision cycles, suggesting that non-convergence after simulation_applied signals a structural execution-block
-- Upstream service overload (Nvidia 502) compounds rate-limiting failures, creating a cascading single-point-of-failure when only one model remains avai
-- Calibration overestimated capability (predicted 3 vs actual 1, abs_error 2), indicating the system's self-assessment is unreliable without historical 
-- Simulation revisions and evolution runs improved scores from 1/10 to 9/7/6, but the swarm never converged and the final hand action failed with exit c
-- Free-tier models on OpenRouter are systematically unreliable due to 429 rate limiting, making nvidia/nemotron-3-ultra-550b-a55b:free the only viable m
 
 ---
 

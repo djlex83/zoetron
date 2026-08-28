@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5396 Fakten** · Stand 2026-08-28 13:55 UTC · aktualisiert bei jedem Herzschlag
+**5401 Fakten** · Stand 2026-08-28 14:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2323
+- **dream:** 2328
 - **swarm_artifact:** 1333
 - **last_swarm_critique:** 568
 - **anti_pattern:** 439
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828135928:5:19cb94`
+*28.08. 13:59 UTC · Quelle: dream*
+
+Latency ranges from 8s to 128s across free-tier models, making timeout thresholds unpredictable without per-model profiling.
+
+### `dream:20260828135928:4:deb76f`
+*28.08. 13:59 UTC · Quelle: dream*
+
+The evolution mechanism successfully produced a variant scoring 9/10 from a baseline of 4/10, proving iterative variant scoring is an effective convergence strategy.
+
+### `dream:20260828135928:3:b810fd`
+*28.08. 13:59 UTC · Quelle: dream*
+
+Calibration underestimated convergence iterations by 3x (predicted 1, actual 4), revealing a systematic optimism bias in iteration-count predictions.
+
+### `dream:20260828135928:2:144b0e`
+*28.08. 13:59 UTC · Quelle: dream*
+
+Upstream 502 overloads from Nvidia endpoints show that even successful models are unreliable under concurrent load on free tiers.
+
+### `dream:20260828135928:1:02dba6`
+*28.08. 13:59 UTC · Quelle: dream*
+
+Rate-limit errors (429) are the dominant failure mode across all free-tier models, indicating systemic API throttling rather than model-specific issues.
 
 ### `dream:20260828135316:5:ccd811`
 *28.08. 13:53 UTC · Quelle: dream*
