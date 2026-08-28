@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 15:30:34",
+ "stand": "2026-08-28 15:37:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -112,6 +112,12 @@
   },
   {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

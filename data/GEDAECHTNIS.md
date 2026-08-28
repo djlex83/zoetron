@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5457 Fakten** · Stand 2026-08-28 15:31 UTC · aktualisiert bei jedem Herzschlag
+**5462 Fakten** · Stand 2026-08-28 15:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2372
+- **dream:** 2377
 - **swarm_artifact:** 1339
 - **last_swarm_critique:** 569
 - **anti_pattern:** 441
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828153558:5:3c7b0b`
+*28.08. 15:35 UTC · Quelle: dream*
+
+Simulation-based revision loops execute (3 revisions applied) but produce plans with 5 risks, showing revision without risk filtering is unsafe.
+
+### `dream:20260828153558:4:e2e295`
+*28.08. 15:35 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode with a 1-iteration budget, rendering any multi-step plan infeasible without explicit prioritization.
+
+### `dream:20260828153558:3:654c60`
+*28.08. 15:35 UTC · Quelle: dream*
+
+File operations fail because relative paths are used instead of resolving against ZOETRON_DATA, breaking data access in all hand actions.
+
+### `dream:20260828153558:2:66d53c`
+*28.08. 15:35 UTC · Quelle: dream*
+
+Only poolside/laguna-s-2.1:free succeeded consistently, indicating a single reliable fallback model rather than a diverse pool.
+
+### `dream:20260828153558:1:0b3181`
+*28.08. 15:35 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all major model providers, making naive round-robin selection ineffective.
 
 ### `dream:20260828152854:5:2ab57c`
 *28.08. 15:28 UTC · Quelle: dream*

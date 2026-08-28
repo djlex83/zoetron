@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-based revision loops execute (3 revisions applied) but produce plans with 5 risks, showing revision without risk filtering is unsafe.
+- Metabolism stress at 1.0 forces conserve mode with a 1-iteration budget, rendering any multi-step plan infeasible without explicit prioritization.
+- File operations fail because relative paths are used instead of resolving against ZOETRON_DATA, breaking data access in all hand actions.
+- Only poolside/laguna-s-2.1:free succeeded consistently, indicating a single reliable fallback model rather than a diverse pool.
+- Rate limiting (HTTP 429) is the dominant failure mode across all major model providers, making naive round-robin selection ineffective.
 - Simulation-to-skill conversion remains unproven; reflex-based skill building shows convergence but lacks measurable real-world impact.
 - Token usage spikes correlate with longer latencies, suggesting input complexity directly impacts endpoint reliability.
 - Model failures cascade when fallback logic is absent, as seen when nvidia/nemotron failed after z-ai/glm already hit 429.
@@ -51,11 +56,6 @@
 - Successful hand actions (exit 0) demonstrate that local tool execution is reliable, unlike external model APIs.
 - Skill proposals accumulate without execution because no mandatory conversion mechanism bridges dream-phase ideas to waking-phase actions.
 - Free tier models consistently fail under load with 429/502 errors, making reliability the primary bottleneck for autonomous operation.
-- Hand actions succeed silently (exit 0) but capture no environmental context, preventing post-hoc diagnosis of latent failures.
-- Dream consolidation runs regularly but produces no measurable improvement in model selection or error handling, indicating a missing feedback loop fro
-- Proposed skills accumulate but are not automatically queued for implementation, creating a persistent capability gap between insight and action.
-- Model latency varies by two orders of magnitude (2.9s vs 148s) without correlation to success, so latency must be a routing criterion not just a metri
-- Rate limits (429) and upstream overloads (502) affect all free-tier models indiscriminately, making single-model reliance a systemic reliability hazar
 
 ---
 
