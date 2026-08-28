@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 17×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model reliability varies significantly under load; some free models consistently fail while others remain stable, but no dynamic routing exists.
+- Upstream errors (502/429) are not handled gracefully, resulting in unproductive retries and missed fallback opportunities.
+- Repeated 6/10 scores on the same goal indicate structural stagnation, not parameter drift—requiring forced architectural changes.
+- Missing organ dependencies (e.g., hands) silently cap performance at 6/10 without pre-validation, leading to repeated low-quality outcomes.
+- Sequential model calls to free-tier endpoints trigger cascading 429 rate-limit failures, causing pipeline stalls and wasted compute.
 - Zero pruning occurred despite repeated failures, suggesting memory retention policies don't yet weight operational relevance.
 - The system already converts failure patterns into concrete skill proposals (retry logic, health scoring, cooldown registry), demonstrating a working f
 - Latency variance (3.5s vs 11.1s) on the same model indicates queue-depth or cold-start effects that static timeouts cannot handle.
@@ -51,11 +56,6 @@
 - Self-generated skill proposals from prior failures (backoff, health scoreboard, fallback chain) remain unimplemented, creating a proposal-execution ga
 - Swarm evolution produces revisions but fails to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptan
 - Rate limiting (429) cascades across multiple model families simultaneously, indicating shared upstream quotas rather than per-model limits.
-- inclusionai/ling-3.0-flash-fin:free completes in 7.4s with low token counts, proving fast lightweight models can handle simple fallback tasks when hea
-- Anti-patterns recur on the same goal ('Träume in Taten umsetzen') when retries lack structural intervention, as shown by the recalled 6/10 failure rep
-- The evolution runner caps at 6/10 due to a missing 'hands organ dependency' — a structural gap that prevents score improvement regardless of variant m
-- nvidia/nemotron-3-ultra-550b-a55b:free is the only model that completes reliably but suffers variable latency (37–281s) and occasional 502 upstream ov
-- Free-tier models on OpenRouter (glm-5.2, gemma variants, poolside) consistently fail with 429 rate limits under load, making them unreliable for any s
 
 ---
 

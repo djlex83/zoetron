@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5287 Fakten** · Stand 2026-08-28 10:28 UTC · aktualisiert bei jedem Herzschlag
+**5292 Fakten** · Stand 2026-08-28 10:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2258
+- **dream:** 2263
 - **swarm_artifact:** 1313
 - **last_swarm_critique:** 564
 - **anti_pattern:** 431
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828104306:5:5d4932`
+*28.08. 10:43 UTC · Quelle: dream*
+
+Model reliability varies significantly under load; some free models consistently fail while others remain stable, but no dynamic routing exists.
+
+### `dream:20260828104306:4:abd5bf`
+*28.08. 10:43 UTC · Quelle: dream*
+
+Upstream errors (502/429) are not handled gracefully, resulting in unproductive retries and missed fallback opportunities.
+
+### `dream:20260828104306:3:0f47d8`
+*28.08. 10:43 UTC · Quelle: dream*
+
+Repeated 6/10 scores on the same goal indicate structural stagnation, not parameter drift—requiring forced architectural changes.
+
+### `dream:20260828104306:2:bfec46`
+*28.08. 10:43 UTC · Quelle: dream*
+
+Missing organ dependencies (e.g., hands) silently cap performance at 6/10 without pre-validation, leading to repeated low-quality outcomes.
+
+### `dream:20260828104306:1:874a98`
+*28.08. 10:43 UTC · Quelle: dream*
+
+Sequential model calls to free-tier endpoints trigger cascading 429 rate-limit failures, causing pipeline stalls and wasted compute.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler stark reduz:2`
 *28.08. 10:26 UTC · Quelle: evolution*
