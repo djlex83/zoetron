@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning cycles run cleanly but produce no signal, indicating monitoring lacks sensitivity to model-failure patterns.
+- Reflex-driven script execution (fähigkeiten-gezielt-trainieren.py) can close the proposal-to-implementation gap when triggered.
+- Successful hand actions (exit 0) demonstrate that local tool execution is reliable, unlike external model APIs.
+- Skill proposals accumulate without execution because no mandatory conversion mechanism bridges dream-phase ideas to waking-phase actions.
+- Free tier models consistently fail under load with 429/502 errors, making reliability the primary bottleneck for autonomous operation.
 - Hand actions succeed silently (exit 0) but capture no environmental context, preventing post-hoc diagnosis of latent failures.
 - Dream consolidation runs regularly but produces no measurable improvement in model selection or error handling, indicating a missing feedback loop fro
 - Proposed skills accumulate but are not automatically queued for implementation, creating a persistent capability gap between insight and action.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (30+) but lack automated validation; a proposal→simulation→merge pipeline with risk_count<2 and latency_p95<30s gates would
 - Latency variance between models is extreme (10s vs 141s for success), so model selection must weight p95 latency and success probability, not just cap
 - Free-tier models across all providers consistently hit 429 rate limits, making provider-aware token-bucket rate limiting with 429-triggered exponentia
-- Self-diagnosis reports zero internal organ errors, confirming that failures are external (infrastructure/API) rather than logic defects.
-- Convergence predictions systematically underestimate actual iterations needed, indicating a calibration bias that compounds over swarm runs.
-- Model latency varies by over 12x (6.4s to 80.8s), making fixed global timeouts unreliable and causing premature failures on slow endpoints.
-- The system exhibits a persistent execution gap: proposals are generated but only a fraction are converted into reflex actions within a bounded cycle c
-- API rate limiting (429) is the dominant systemic failure mode, affecting the majority of recent model calls across multiple providers simultaneously.
 
 ---
 
