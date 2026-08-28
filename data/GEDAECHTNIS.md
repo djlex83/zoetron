@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5674 Fakten** · Stand 2026-08-28 21:38 UTC · aktualisiert bei jedem Herzschlag
+**5679 Fakten** · Stand 2026-08-28 21:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2487
+- **dream:** 2492
 - **swarm_artifact:** 1393
 - **last_swarm_critique:** 578
 - **anti_pattern:** 455
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828214505:5:ffa9c2`
+*28.08. 21:45 UTC · Quelle: dream*
+
+Latency variance on the fallback model (14s–76s) makes timeout budgets unpredictable and causes cascading deadline misses.
+
+### `dream:20260828214505:4:2ecc54`
+*28.08. 21:45 UTC · Quelle: dream*
+
+Simulation consistently surfaces 5+ risks per goal but revisions are applied without verifying they reduce actual failure rates.
+
+### `dream:20260828214505:3:aec638`
+*28.08. 21:45 UTC · Quelle: dream*
+
+Reflex tools (alte-erinnerungen-auf-wert-prüfen.py) fail silently without surfacing error context, breaking the trust loop for instant replay.
+
+### `dream:20260828214505:2:be2777`
+*28.08. 21:45 UTC · Quelle: dream*
+
+High system stress (1.0) triggers conserve mode that caps iterations to 1, causing incomplete executions like the hand action that touched no files.
+
+### `dream:20260828214505:1:ec811e`
+*28.08. 21:45 UTC · Quelle: dream*
+
+The primary model (z-ai/glm-5.2:free) fails 100% of the time due to rate limiting, making fallback routing a hard requirement not an optimization.
 
 ### `tool:alte-erinnerungen-aktualisieren`
 *28.08. 21:37 UTC · Quelle: hands*

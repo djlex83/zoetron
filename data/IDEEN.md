@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 21:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 21:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance on the fallback model (14s–76s) makes timeout budgets unpredictable and causes cascading deadline misses.
+- Simulation consistently surfaces 5+ risks per goal but revisions are applied without verifying they reduce actual failure rates.
+- Reflex tools (alte-erinnerungen-auf-wert-prüfen.py) fail silently without surfacing error context, breaking the trust loop for instant replay.
+- High system stress (1.0) triggers conserve mode that caps iterations to 1, causing incomplete executions like the hand action that touched no files.
+- The primary model (z-ai/glm-5.2:free) fails 100% of the time due to rate limiting, making fallback routing a hard requirement not an optimization.
 - Pruning remains inactive (0 facts/events pruned) despite cycle progression, showing adaptive pruning thresholds are either misconfigured or absent.
 - Drive goals (failure, stale, gap) persist across cycles without escalation, indicating absent strategic goal tracking with time-bound escalation trigg
 - Multiple skill proposals accumulate without deployment, exposing a systemic proposal-to-production gap requiring automated validation and regression t
@@ -51,11 +56,6 @@
 - Proposed skills accumulate without a validation loop; the system proposes but never executes a 'try → measure → adopt' cycle.
 - Model failures are silent (status 200 with empty choices) or noisy (429), but both leave the pipeline without a fallback, causing task stalls.
 - Rate-limit errors (429) cascade across multiple free-tier providers simultaneously, indicating shared quota pools or correlated traffic spikes.
-- Reflexes successfully bypass deliberation for known-good actions (e.g., "Simulationen wirklich anwenden"), suggesting a catalog of verified patterns w
-- Stress-driven budget cuts (max_iterations=1) starve low-urgency but high-value work like market analysis, causing chronic staleness.
-- Skill proposals accumulate across cycles but lack an implementation pipeline, creating a persistent gap between idea and deployable capability.
-- Fallback model latency varies 4× (9 s vs 33 s), revealing that health-aware routing must monitor latency SLOs, not just availability.
-- Repeated 429 errors on the same model indicate that reactive fallback is insufficient without proactive quota tracking and predictive throttling.
 
 ---
 

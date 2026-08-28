@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 21:37:35",
+ "stand": "2026-08-28 21:45:30",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -121,6 +121,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.608,
