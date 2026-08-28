@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5499 Fakten** · Stand 2026-08-28 16:36 UTC · aktualisiert bei jedem Herzschlag
+**5516 Fakten** · Stand 2026-08-28 16:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2402
-- **swarm_artifact:** 1345
-- **last_swarm_critique:** 570
-- **anti_pattern:** 443
-- **last_swarm_goal:** 319
-- **strategy:** 242
+- **dream:** 2407
+- **swarm_artifact:** 1351
+- **last_swarm_critique:** 571
+- **anti_pattern:** 445
+- **last_swarm_goal:** 320
+- **strategy:** 243
 - **hand_result:** 64
-- **tool:** 45
+- **tool:** 46
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-testen-und-nu`
+*28.08. 16:54 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten testen und nutzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-testen-und-nu.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
+*28.08. 16:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Ereignisgesteuerte Reaktionsprüfung ohne Reflex-Benchmark - Statt eines zentralen Benchmark-Systems mit reflex_ok-Logik wird ein ereignisgesteuertes Testing-Framework verwendet. Fähigkeiten werden als Event-Handler registrier
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:0`
+*28.08. 16:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Vertrauenswürdige Serialisierung mit introspektivem Plugin-Scanning - Ersetze eval() vollständig durch json.loads() mit strikter Schema-Validierung via jsonschema. Anstatt auf externe Dateien (archiv.py, Synapse) zu angewiese
+
+### `last_swarm_critique`
+*28.08. 16:52 UTC · Quelle: critic*
+
+score=6; issues=Verwendung von eval() zum Parsen von JSON-Inhalten stellt ein Sicherheitsrisiko dar und sollte durch json.loads() ersetzt werden; Hohe Abhängigkeit von externen Datenstrukturen (archiv.py, Synapse-Dateien, Organe-Module), die nicht immer vorhan
+
+### `last_swarm_goal`
+*28.08. 16:44 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten testen und nutzen
+
+### `dream:20260828164404:5:69cb23`
+*28.08. 16:44 UTC · Quelle: dream*
+
+Swarm goals referencing stale knowledge (e.g., market analysis) produce low-value outcomes when not refreshed before launch.
+
+### `dream:20260828164404:4:bfa10f`
+*28.08. 16:44 UTC · Quelle: dream*
+
+Hand-action tasks fail silently when prerequisite skills are unimplemented, creating execution gaps without explicit error propagation.
+
+### `dream:20260828164404:3:369978`
+*28.08. 16:44 UTC · Quelle: dream*
+
+Latency varies significantly between model versions (42.3s vs 85.1s for similar tasks), suggesting version-specific performance profiles.
+
+### `dream:20260828164404:2:153567`
+*28.08. 16:44 UTC · Quelle: dream*
+
+Consecutive failures on the same provider (e.g., Nvidia 502 after 429s) indicate upstream service degradation rather than isolated model issues.
+
+### `dream:20260828164404:1:be0011`
+*28.08. 16:44 UTC · Quelle: dream*
+
+Models with identical endpoint URLs share rate-limit state, so 429 errors cascade across seemingly different model names.
 
 ### `dream:20260828163558:5:6e6dc9`
 *28.08. 16:35 UTC · Quelle: dream*

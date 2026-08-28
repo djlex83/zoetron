@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 16:36:20",
+ "stand": "2026-08-28 16:54:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,19 +51,13 @@
    "quote": 1.0
   },
   {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
   },
   {
-   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -81,12 +75,6 @@
    "quote": 0.0
   },
   {
-   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "neue-fähigkeiten-erlernen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -94,6 +82,12 @@
   },
   {
    "tool": "mehr-evolution-starten.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -115,19 +109,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.639,
+ "haende_quote": 0.63,
  "simulationen_angewandt": 54,
  "swarm_scores": {
   "n": 38,
   "best": 9.0,
-  "schnitt": 4.39
+  "schnitt": 4.34
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 37,
-   "schnitt": 4.49
+   "schnitt": 4.43
   },
   "bau": {
    "n": 1,
