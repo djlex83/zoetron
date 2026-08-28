@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3755 Neuronen · 134809 bewertete Synapsen
+Stand: 3763 Neuronen · 135043 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,7 +12,7 @@ Stand: 3755 Neuronen · 134809 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 360 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 360 | 0.26 |
-| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 340 | 0.24 |
+| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 342 | 0.24 |
 | 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 334 | 0.23 |
 | 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 341 | 0.23 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 300 | 0.25 |
@@ -22,9 +22,9 @@ Stand: 3755 Neuronen · 134809 bewertete Synapsen
 | 10 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 270 | 0.24 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 270 | 0.24 |
 | 12 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 263 | 0.24 |
-| 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 253 | 0.25 |
-| 14 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 269 | 0.23 |
-| 15 | 💭 | Nvidia Nemotron models provide the only consistent successes but… | 267 | 0.23 |
+| 13 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 255 | 0.25 |
+| 14 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 270 | 0.23 |
+| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 278 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5628 Fakten** · Stand 2026-08-28 20:43 UTC · aktualisiert bei jedem Herzschlag
+**5633 Fakten** · Stand 2026-08-28 20:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2462
+- **dream:** 2467
 - **swarm_artifact:** 1381
 - **last_swarm_critique:** 576
 - **anti_pattern:** 453
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828204927:5:cebe9f`
+*28.08. 20:49 UTC · Quelle: dream*
+
+Reflex tools execute reliably but only trigger on explicit goals, missing autonomous error-pattern detection.
+
+### `dream:20260828204927:4:778f9f`
+*28.08. 20:49 UTC · Quelle: dream*
+
+Self-diagnosis reports healthy organs while model-layer failures continue, indicating monitoring blind spots at the inference layer.
+
+### `dream:20260828204927:3:a66865`
+*28.08. 20:49 UTC · Quelle: dream*
+
+Stale goals and insights persist across cycles without forced refresh, risking decisions on outdated assumptions.
+
+### `dream:20260828204927:2:0841a3`
+*28.08. 20:49 UTC · Quelle: dream*
+
+Proposed skills accumulate but remain unimplemented, creating a proposal-execution gap that stalls capability growth.
+
+### `dream:20260828204927:1:d23bd1`
+*28.08. 20:49 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) persist without automatic quarantine, causing repeated failed attempts before fallback succeeds.
 
 ### `dream:20260828204237:5:5c171b`
 *28.08. 20:42 UTC · Quelle: dream*

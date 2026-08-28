@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex tools execute reliably but only trigger on explicit goals, missing autonomous error-pattern detection.
+- Self-diagnosis reports healthy organs while model-layer failures continue, indicating monitoring blind spots at the inference layer.
+- Stale goals and insights persist across cycles without forced refresh, risking decisions on outdated assumptions.
+- Proposed skills accumulate but remain unimplemented, creating a proposal-execution gap that stalls capability growth.
+- Rate-limited models (429 errors) persist without automatic quarantine, causing repeated failed attempts before fallback succeeds.
 - Skill proposals generated under failure pressure tend to address immediate symptoms; durable procedures require cross-cutting abstraction patterns (e.
 - Internal self-diagnostics (selbstdiagnose, reflex, prune) pass cleanly while external model dependencies fail — creating a blind spot where the system
 - The swarm's 2-cycle non-convergence at score=1 reveals that revision-based refinement loops lack sufficient signal to escape low-quality local optima 
@@ -51,11 +56,6 @@
 - The hand_action tool fails because it resolves relative paths against the working directory instead of the canonical ZOETRON_DATA root.
 - NVIDIA Nemotron-3-Ultra shows partial reliability: it succeeds under load but emits 502 upstream errors when NVIDIA's inference fleet is saturated.
 - Rate limiting (HTTP 429) across multiple providers indicates systemic quota exhaustion, not isolated model failures.
-- System enters conserve mode (stress=1.0) limiting to 3 tasks, requiring atomic task decomposition for progress.
-- Fallback models (Nemotron) succeed but with 16-50s latency, making them unsuitable for time-critical paths without async handling.
-- All file operations fail when paths aren't strictly resolved against ZOETRON_DATA environment variable.
-- Swarm simulations produce revisions that don't translate to convergence, indicating a simulation-reality gap in evaluation criteria.
-- Free tier models consistently hit 429 rate limits requiring automatic failover with exponential backoff before switching.
 
 ---
 
