@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goal completion succeeds despite model failures because the system falls back to executing local Python artifacts.
+- poolside/laguna-s-2.1:free delivers fast (4s) responses but exhausts quota after 1-2 calls.
+- nvidia/nemotron-3-ultra shows high latency variance (70-147s) and upstream 502 errors, indicating unstable capacity.
+- Local hand_actions (code execution) complete reliably in ~1.6s while remote LLM calls vary 4-147s and frequently fail.
+- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
 - High stress state (1.0) triggers conserve mode but the system still spawns multiple concurrent model calls, violating its own budget constraints.
 - Self-diagnosis reports "zero errors" while external convergence metrics show >80% failure rate, confirming a critical blind spot in monitoring.
 - Latency variance for successful calls (6s–70s) exceeds any reasonable budget, yet no timeout or preemptive routing logic is observed.
@@ -51,11 +56,6 @@
 - Multiple redundant skill proposals (model router, latency-budget allocator, fast-path) emerge independently for the same routing problem, indicating n
 - Self-diagnosis reports 'zero organ errors' while concurrent model_fail events prove external reliability signals are ignored, creating a blind-spot be
 - A single failing model endpoint (z-ai/glm-5.2:free) repeatedly triggers 429 errors, yet the system lacks automatic circuit-breaking and continues retr
-- No automatic demotion or health-tracking exists for flaky models, causing repeated 429 retries that waste latency budget.
-- Reflex execution succeeds (ok:true) but lacks a certification pipeline to prevent regression under load or model churn.
-- Drive goals repeatedly surface the same three signals (failure, stale, gap) indicating systemic loops rather than one-off issues.
-- Multiple redundant skill proposals address the same model-reliability gap (router, circuit-breaker, fast-path) but none have been instantiated or test
-- Primary model (z-ai/glm-5.2) consistently fails with 429 rate-limit errors while fallback (Nemotron) succeeds but with high latency variance (12-25s).
 
 ---
 

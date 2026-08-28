@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5721 Fakten** · Stand 2026-08-28 22:43 UTC · aktualisiert bei jedem Herzschlag
+**5726 Fakten** · Stand 2026-08-28 22:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2522
+- **dream:** 2527
 - **swarm_artifact:** 1399
 - **last_swarm_critique:** 579
 - **anti_pattern:** 457
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828224645:5:e2fa90`
+*28.08. 22:46 UTC · Quelle: dream*
+
+Goal completion succeeds despite model failures because the system falls back to executing local Python artifacts.
+
+### `dream:20260828224645:4:02681b`
+*28.08. 22:46 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1:free delivers fast (4s) responses but exhausts quota after 1-2 calls.
+
+### `dream:20260828224645:3:23f5f7`
+*28.08. 22:46 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra shows high latency variance (70-147s) and upstream 502 errors, indicating unstable capacity.
+
+### `dream:20260828224645:2:f731b5`
+*28.08. 22:46 UTC · Quelle: dream*
+
+Local hand_actions (code execution) complete reliably in ~1.6s while remote LLM calls vary 4-147s and frequently fail.
+
+### `dream:20260828224645:1:2bd382`
+*28.08. 22:46 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
 
 ### `dream:20260828224215:5:a6e209`
 *28.08. 22:42 UTC · Quelle: dream*
