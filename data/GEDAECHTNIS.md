@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5207 Fakten** · Stand 2026-08-28 07:55 UTC · aktualisiert bei jedem Herzschlag
+**5224 Fakten** · Stand 2026-08-28 08:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2213
-- **swarm_artifact:** 1295
-- **last_swarm_critique:** 561
-- **anti_pattern:** 425
-- **last_swarm_goal:** 310
-- **strategy:** 233
+- **dream:** 2218
+- **swarm_artifact:** 1301
+- **last_swarm_critique:** 562
+- **anti_pattern:** 427
+- **last_swarm_goal:** 311
+- **strategy:** 234
 - **hand_result:** 60
-- **tool:** 41
+- **tool:** 42
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-deutlich-reduzieren`
+*28.08. 08:28 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler deutlich reduzieren'. Datei: data/tools/modellfehler-deutlich-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler deutlich re:2`
+*28.08. 08:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Feedback-Driven Self-Verification - Design a closed-loop validation agent that autonomously detects when the sandbox flags any artifact as truncated or unverified, automatically re-invokes only that incomplete module, patches
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler deutlich re:1`
+*28.08. 08:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Error Attribution Pipeline - Construct a traceability layer that links every recorded prediction error back to its originating input feature set, routing decision path, and reflex recovery action. Aggregate these links into a
+
+### `last_swarm_critique`
+*28.08. 08:27 UTC · Quelle: critic*
+
+score=6; issues=Nur das erste Artefakt (ModelHealthRegister) ist vollständig und vom Sandbox als lauffähig bestätigt (211 Zeilen). Die beiden anderen Artefakte (Router, ReflexRecovery) sind im Prompt abgeschnitten - ihre Lauffähigkeit ist nicht verifiziert.; K
+
+### `last_swarm_goal`
+*28.08. 08:18 UTC · Quelle: system*
+
+Modellfehler deutlich reduzieren
+
+### `dream:20260828081758:5:ac385e`
+*28.08. 08:17 UTC · Quelle: dream*
+
+The reflex-based goal 'Mehr Träume zum Lernen nutzen' converged successfully, suggesting that reflex-mode execution is more resilient than model-dependent inference when providers are degraded.
+
+### `dream:20260828081758:4:8f808b`
+*28.08. 08:17 UTC · Quelle: dream*
+
+Self-diagnosis reported zero organ errors while model failures persisted, confirming that the failures are external infrastructure-level events that internal health checks cannot detect or prevent.
+
+### `dream:20260828081758:3:3caf25`
+*28.08. 08:17 UTC · Quelle: dream*
+
+Even the sole successful model (poolside/laguna-s-2.1) exhibited 3x latency variance between calls (6.1s vs 18.0s), meaning a single working endpoint is insufficient for reliable operation.
+
+### `dream:20260828081758:2:242ffc`
+*28.08. 08:17 UTC · Quelle: dream*
+
+The gap between generated skill proposals and their actual implementation is itself a systemic failure mode — five proposals were produced but none were yet converted into running capabilities.
+
+### `dream:20260828081758:1:535a69`
+*28.08. 08:17 UTC · Quelle: dream*
+
+Cascading 429 and 502 errors across four different models simultaneously reveals the absence of any model-level fallback or health-tracking mechanism, making the system entirely dependent on whatever single endpoint happens to be alive.
 
 ### `tool:simulationen-in-echtes-handeln-übersetze`
 *28.08. 07:54 UTC · Quelle: hands*

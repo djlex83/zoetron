@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 07:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 08:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Implement a model health monitor that auto-excludes endpoints after 3 consecutive 429 responses with exponenti *(hatte die Idee 3×)*
 - Build a latency-aware router with per-model timeout budgets (e.g., 30s p95) and automatic fallback to fastest  *(hatte die Idee 3×)*
 - Implement pre-flight organ existence checks before swarm launch to fail fast on missing tools like swarm.py. *(hatte die Idee 3×)*
-- Implement adaptive rate-limit handler with exponential backoff, provider rotation, and token-budget accounting *(hatte die Idee 2×)*
-- Create latency-aware model router that assigns tasks to fast/cheap models for drafts and slow/robust models fo *(hatte die Idee 2×)*
-- Add convergence detector to swarm: stop cycles when score delta < 1 for two consecutive cycles or critic appro *(hatte die Idee 2×)*
-- Calibrate proposal generator with historical actuals: feed back (predicted, actual) pairs to adjust next predi *(hatte die Idee 2×)*
-- Mandate simulation gate for all skill proposals: auto-reject if risks > 3 or revisions > 3 without human overr *(hatte die Idee 2×)*
 - Track per-model health scores (success rate, latency, error types) and auto-demote models with >50% failure ra *(hatte die Idee 2×)*
+- Build a latency-aware model selector that prefers sub-10s models for planning/critic roles and reserves high-l *(hatte die Idee 2×)*
+- Log per-model latency percentiles (p50, p95) and error rates in a rolling window; auto-demote models whose p95 *(hatte die Idee 2×)*
+- Implement a model router that tracks per-model 429 rates and latency percentiles, automatically failing over t *(hatte die Idee 2×)*
+- Add exponential backoff with jitter and circuit-breaker logic around all model calls to absorb rate-limit burs *(hatte die Idee 2×)*
+- Create a 'shadow evaluation' pipeline that runs candidate fixes against recorded failure traces before promoti *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex-based goal 'Mehr Träume zum Lernen nutzen' converged successfully, suggesting that reflex-mode execution is more resilient than model-depen
+- Self-diagnosis reported zero organ errors while model failures persisted, confirming that the failures are external infrastructure-level events that i
+- Even the sole successful model (poolside/laguna-s-2.1) exhibited 3x latency variance between calls (6.1s vs 18.0s), meaning a single working endpoint 
+- The gap between generated skill proposals and their actual implementation is itself a systemic failure mode — five proposals were produced but none we
+- Cascading 429 and 502 errors across four different models simultaneously reveals the absence of any model-level fallback or health-tracking mechanism,
 - The simulation initially flagged 5 risks requiring revision, but the final artifact (187 lines Python) passed validation, suggesting early risk assess
 - The task converged to score 9 in a single cycle despite >70% model call failure rate, proving that redundant model fallback strategies can absorb rate
 - Calibration predicted 3 revisions but actual was 9, a 3x underestimation indicating that initial effort estimates must account for retry overhead and 
@@ -51,11 +56,6 @@
 - Proposed skills remain unused because there's no mechanism to validate or integrate them into active workflows.
 - Model failures cascade into swarm stagnation when convergence isn't monitored against actual execution outcomes.
 - Repeated 429 errors from specific endpoints indicate a need for dynamic rate-limit-aware routing rather than static fallback chains.
-- Silent read failures in hand_action show that success signals do not always reflect actual data quality or completeness.
-- High latency variance in the fallback model (26–69s) still degrades learning throughput even when the model succeeds.
-- Old dreams and memories contain reusable knowledge that only surfaces when actively retrieved and cross-linked, not when passively stored.
-- A persistent gap between skill proposal generation and actual implementation reveals that proposals lack execution triggers or enforcement mechanisms.
-- Recurring 429 errors from the same model endpoint indicate a systematic reliability gap that demands automatic fallback, not manual retry.
 
 ---
 
