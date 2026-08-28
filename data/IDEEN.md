@@ -1,39 +1,39 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Develop a skill lifecycle tracker that monitors proposed skills and automatically promotes validated ones into *(hatte die Idee 3×)*
-- Build a strict pre-execution artifact validator that checks code size, imports, and entrypoints against platfo *(hatte die Idee 3×)*
-- Design a metabolism-aware task scheduler that automatically scales down task complexity and iteration limits w *(hatte die Idee 3×)*
-- Implement a model router that tags each model with (reliability, latency_p95, rate_limit_rps) and selects via  *(hatte die Idee 3×)*
 - Wrap the simulation→hand_action→tor cycle into a reusable 'skill_bootstrap' procedure that validates artifact  *(hatte die Idee 3×)*
 - Wrap the simulation→hand_action→tor cycle into a 'skill_bootstrap' procedure that requires artifact validation *(hatte die Idee 3×)*
 - Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DAT *(hatte die Idee 3×)*
 - Reactivate self-diagnose as a scheduled organ that audits model-router metrics (latency, error rate, fallback  *(hatte die Idee 3×)*
 - Deploy hourly synthetic probes per model bucket feeding a rolling p95/error-rate dashboard that auto-demotes u *(hatte die Idee 3×)*
-- Create a 'critic-to-mutator' compiler that transforms natural-language critic issues into targeted code-edit o *(hatte die Idee 2×)*
+- Implement a model router that tags each model with (reliability, latency_p95, rate_limit_rps) and selects via  *(hatte die Idee 2×)*
+- Build a strict pre-execution artifact validator that checks code size, imports, and entrypoints against platfo *(hatte die Idee 2×)*
+- Develop a skill lifecycle tracker that monitors proposed skills and automatically promotes validated ones into *(hatte die Idee 2×)*
+- Design a metabolism-aware task scheduler that automatically scales down task complexity and iteration limits w *(hatte die Idee 2×)*
 - Develop a Bayesian complexity estimator that adjusts task difficulty predictions based on historical calibrati *(hatte die Idee 2×)*
 - Create an I/O watchdog to monitor and mitigate drive-related latency before it triggers system timeouts. *(hatte die Idee 2×)*
 - Build a dynamic model fallback chain that automatically promotes models from 'free' to 'paid' or 'high-reliabi *(hatte die Idee 2×)*
 - Implement a model health registry that tracks per-model success rates, latency percentiles, and 429 frequency  *(hatte die Idee 2×)*
 - Implement adaptive rate-limit handler with exponential backoff, provider rotation, and token-budget accounting *(hatte die Idee 2×)*
+- Create latency-aware model router that assigns tasks to fast/cheap models for drafts and slow/robust models fo *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
-- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
+- Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals are generated frequently but lack follow-through on testing, creating a cycle where new capabilities are suggested but never validated
+- The system's self-diagnosis consistently reports zero organ failures, but repeated model failures indicate a gap between internal health checks and ex
+- Successful model calls show high variance in latency (8.2s to 22.2s) and token efficiency, suggesting dynamic performance characteristics that should 
+- Models returning 200 status codes with empty choices (e.g., Nvidia 502 upstream errors) require explicit response validation before treating results a
+- HTTP 429 rate-limit errors from OpenRouter affect multiple models simultaneously, indicating a shared upstream bottleneck rather than isolated model f
 - Sequential model fallback fails because all free endpoints saturate simultaneously; no circuit breaker exists.
 - Evolution boosts variant scores from 2 to 8.3 but the swarm still converges at 2, indicating evolution results aren't fed back.
 - Calibration error of 3 points (predicted 5 vs actual 2) shows the system cannot self-assess difficulty.
@@ -51,11 +56,6 @@
 - Calibration error of 3 (predicted 5 vs actual 2) reveals systematic overestimation of simulation quality under stress.
 - The 'tor' gate rejects simulation artifacts that lack executable Python blocks, proving prose-only outputs cannot converge to action.
 - Free-tier models suffer pervasive 429 rate limits, making single-model reliance infeasible without request queuing and exponential backoff.
-- The reflex 'alte-träume-miteinander-verbinden.py' succeeded for 'Simulationen besser nutzen', suggesting dream-linking works but its output isn't fed 
-- Five skill proposals exist for model routing, calibration, swarm cycles, pre-flight checks, and canary deployments, but none appear implemented or tes
-- System stress is at maximum (1.0) with budget capped at 3 tasks/1 iteration, yet the swarm continues spawning new goals instead of entering true conse
-- Simulation cycles produce revisions (5 risks, 5 revisions) but there is no evidence those revisions are validated in production, creating a simulation
-- The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 errors, yet the system continues routing requests to it instead of permanently deprio
 
 ---
 
