@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
+- Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Sequential model fallback fails because all free endpoints saturate simultaneously; no circuit breaker exists.
+- Evolution boosts variant scores from 2 to 8.3 but the swarm still converges at 2, indicating evolution results aren't fed back.
+- Calibration error of 3 points (predicted 5 vs actual 2) shows the system cannot self-assess difficulty.
+- The critic rejects any output lacking an executable Python block, yet the planner produces prose-only artifacts.
+- Free-tier models consistently hit 429 rate limits making them unreliable for autonomous loops.
 - Latency variance on working models (2.6–21.2s) demands per-model timeout budgets to avoid cascade stalls.
 - Metabolism state 'conserve' with max_iterations=1 eliminates retry slack, turning first-attempt success into a hard requirement.
 - Calibration error of 3 (predicted 5 vs actual 2) reveals systematic overestimation of simulation quality under stress.
@@ -51,11 +56,6 @@
 - System stress is at maximum (1.0) with budget capped at 3 tasks/1 iteration, yet the swarm continues spawning new goals instead of entering true conse
 - Simulation cycles produce revisions (5 risks, 5 revisions) but there is no evidence those revisions are validated in production, creating a simulation
 - The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 errors, yet the system continues routing requests to it instead of permanently deprio
-- Conserve mode lacks automatic triggers; stress≥0.9 should enforce single-iteration, fallback, and path pre-check.
-- Calibration gap persists: predicted vs actual complexity never logged, so budget allocation drifts.
-- Simulation-revision loops are proposed but never executed, leaving risk collection theoretical.
-- Path resolution failures recur because relative paths aren't expanded against ZOETRON_DATA and argv[1] before hand_action.
-- Model 429 errors cascade into fallback with 2-3x latency variance, making budget prediction unreliable.
 
 ---
 

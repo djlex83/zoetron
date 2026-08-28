@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4966 Fakten** · Stand 2026-08-28 02:37 UTC · aktualisiert bei jedem Herzschlag
+**4971 Fakten** · Stand 2026-08-28 02:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2078
+- **dream:** 2083
 - **swarm_artifact:** 1243
 - **last_swarm_critique:** 551
 - **anti_pattern:** 409
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828024047:5:88e7c0`
+*28.08. 02:40 UTC · Quelle: dream*
+
+Sequential model fallback fails because all free endpoints saturate simultaneously; no circuit breaker exists.
+
+### `dream:20260828024047:4:0197e5`
+*28.08. 02:40 UTC · Quelle: dream*
+
+Evolution boosts variant scores from 2 to 8.3 but the swarm still converges at 2, indicating evolution results aren't fed back.
+
+### `dream:20260828024047:3:5f23a4`
+*28.08. 02:40 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 5 vs actual 2) shows the system cannot self-assess difficulty.
+
+### `dream:20260828024047:2:d7d4f1`
+*28.08. 02:40 UTC · Quelle: dream*
+
+The critic rejects any output lacking an executable Python block, yet the planner produces prose-only artifacts.
+
+### `dream:20260828024047:1:dcc8f3`
+*28.08. 02:40 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits making them unreliable for autonomous loops.
 
 ### `dream:20260828023656:5:d53f24`
 *28.08. 02:36 UTC · Quelle: dream*
