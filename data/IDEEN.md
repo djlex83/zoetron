@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,12 +28,12 @@
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Menschliche Eingriffe überflüssig machen *(wieder aufgegriffen: 2×)*
 - Simulationen in echtes Handeln übersetzen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex mode completes routine goals (market update, skill discovery) reliably, but drive goals (reduce errors, use analyses, apply dreams) remain unac
+- Skill proposals accumulate (router, backoff, quota scheduler, gap analyzer, plateau detector) but none are implemented, showing a broken proposal-to-p
+- Self-diagnosis reports zero organ errors while external model failures persist, revealing a blind spot where upstream API health is not treated as an 
+- Fallback to nvidia/nemotron-3-ultra succeeds but exhibits 9–15 s latency, violating any sub-10 s SLA for interactive tasks.
+- The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, indicating a hard quota ceiling that makes it unreliable as a primary endpoint
 - Repeated skill proposals for circuit breakers and model health tracking highlight a systemic gap in current model failure handling.
 - High latency on fallback models (e.g., 7-9 seconds for nvidia/nemotron) indicates a need for latency-aware routing.
 - Reflexes can successfully complete stale goals like 'Marktanalyse' when standard action loops fail to converge.
@@ -51,11 +56,6 @@
 - Evolution improved variant scores (5→9) but swarm halted at 2 cycles without convergence — fixed cycle budgets prevent quality asymptotes.
 - Free-tier rate limits (429 errors across 4 models) are a systemic bottleneck requiring a modeled fallback chain with latency/quality tradeoffs.
 - Goal completion succeeds despite model failures because the system falls back to executing local Python artifacts.
-- poolside/laguna-s-2.1:free delivers fast (4s) responses but exhausts quota after 1-2 calls.
-- nvidia/nemotron-3-ultra shows high latency variance (70-147s) and upstream 502 errors, indicating unstable capacity.
-- Local hand_actions (code execution) complete reliably in ~1.6s while remote LLM calls vary 4-147s and frequently fail.
-- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
-- High stress state (1.0) triggers conserve mode but the system still spawns multiple concurrent model calls, violating its own budget constraints.
 
 ---
 

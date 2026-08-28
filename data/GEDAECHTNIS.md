@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5747 Fakten** · Stand 2026-08-28 23:06 UTC · aktualisiert bei jedem Herzschlag
+**5752 Fakten** · Stand 2026-08-28 23:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2536
+- **dream:** 2541
 - **swarm_artifact:** 1405
 - **last_swarm_critique:** 580
 - **anti_pattern:** 459
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828232049:5:923035`
+*28.08. 23:20 UTC · Quelle: dream*
+
+Reflex mode completes routine goals (market update, skill discovery) reliably, but drive goals (reduce errors, use analyses, apply dreams) remain unactuated, indicating a gap between intent and execution.
+
+### `dream:20260828232049:4:9d65cb`
+*28.08. 23:20 UTC · Quelle: dream*
+
+Skill proposals accumulate (router, backoff, quota scheduler, gap analyzer, plateau detector) but none are implemented, showing a broken proposal-to-production pipeline.
+
+### `dream:20260828232049:3:b6e1d3`
+*28.08. 23:20 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external model failures persist, revealing a blind spot where upstream API health is not treated as an internal organ.
+
+### `dream:20260828232049:2:7a52f6`
+*28.08. 23:20 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra succeeds but exhibits 9–15 s latency, violating any sub-10 s SLA for interactive tasks.
+
+### `dream:20260828232049:1:a20e0b`
+*28.08. 23:20 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, indicating a hard quota ceiling that makes it unreliable as a primary endpoint.
 
 ### `tool:marktanalyse-endlich-umsetzen`
 *28.08. 23:05 UTC · Quelle: hands*
