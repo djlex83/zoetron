@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5401 Fakten** · Stand 2026-08-28 14:01 UTC · aktualisiert bei jedem Herzschlag
+**5406 Fakten** · Stand 2026-08-28 14:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2328
+- **dream:** 2333
 - **swarm_artifact:** 1333
 - **last_swarm_critique:** 568
 - **anti_pattern:** 439
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828140742:5:eab9e3`
+*28.08. 14:07 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 with max_tasks=3 forces conservation, yet retry loops burn budget on doomed requests.
+
+### `dream:20260828140742:4:f6bb54`
+*28.08. 14:07 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failure rate exceeds 80%, indicating monitoring blind spots for external dependencies.
+
+### `dream:20260828140742:3:ca2c8d`
+*28.08. 14:07 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ this cycle) but none execute, creating a proposal-execution gap that stalls capability growth.
+
+### `dream:20260828140742:2:31180d`
+*28.08. 14:07 UTC · Quelle: dream*
+
+Working models exhibit 77-106s latency, exceeding swarm iteration budgets and preventing convergence.
+
+### `dream:20260828140742:1:bcf7be`
+*28.08. 14:07 UTC · Quelle: dream*
+
+Rate limits (429) cascade across providers simultaneously, making sequential fallback ineffective without coordinated backoff.
 
 ### `dream:20260828135928:5:19cb94`
 *28.08. 13:59 UTC · Quelle: dream*
