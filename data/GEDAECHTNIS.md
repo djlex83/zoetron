@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5170 Fakten** · Stand 2026-08-28 07:08 UTC · aktualisiert bei jedem Herzschlag
+**5175 Fakten** · Stand 2026-08-28 07:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2188
+- **dream:** 2193
 - **swarm_artifact:** 1289
 - **last_swarm_critique:** 560
 - **anti_pattern:** 423
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828072201:5:14108d`
+*28.08. 07:22 UTC · Quelle: dream*
+
+Reflex-based goal execution converges reliably when triggered, demonstrating that reactive mechanisms are more dependable than proactive planning.
+
+### `dream:20260828072201:4:f0fc81`
+*28.08. 07:22 UTC · Quelle: dream*
+
+Self-diagnosis detects no internal organ errors but cannot catch external API failures, revealing a monitoring blind spot.
+
+### `dream:20260828072201:3:631639`
+*28.08. 07:22 UTC · Quelle: dream*
+
+A persistent gap exists between generating skill proposals and actually implementing them, indicating a conversion bottleneck.
+
+### `dream:20260828072201:2:c919e5`
+*28.08. 07:22 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra-550b-a55b:free works but introduces high latency variance (34s to 66s), revealing the need for latency-aware routing.
+
+### `dream:20260828072201:1:5415dc`
+*28.08. 07:22 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently hit rate limits (429), making them unreliable for critical task execution.
 
 ### `tool:wiederkehrenden-organfehler-endgültig-kl`
 *28.08. 07:07 UTC · Quelle: hands*
