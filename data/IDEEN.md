@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 03:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 04:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration overestimates success by 2x (predicted 3 vs actual 1), revealing systematic optimism in task-difficulty estimation.
+- Model latency variance spans 6–80s for the same model (nemotron), making fixed timeouts unsafe; latency-aware routing with per-call budgets is needed.
+- Hand actions exit 1 within ~1s with zero bytes read and no error payload, pointing to missing binary, permission denial, or stdin/stdout wiring failur
+- Simulation artifact fails at runtime with fallback demo data and traceback, indicating missing test data or broken scenario loader in the execution en
+- OpenRouter gateway rate-limits (429) cascade across all free models simultaneously, requiring request-level queuing rather than model-level fallback.
 - Simulation-based revision (verdict: revise, 5 risks identified, 4 revisions generated, 2 applied) effectively catches errors before deployment; make s
 - The system enters conserve mode at stress 1.0, throttling capability to 3 tasks; workload must be shed or deferred proactively before stress hits crit
 - File system operations fail due to unresolved relative paths and missing environment variable expansion; all paths must be canonicalized against ZOETR
@@ -51,11 +56,6 @@
 - Dream cycles produce insights and skill proposals (5 each last cycle) but subsequent logs show no evidence of those proposals being enacted, confirmin
 - Multiple drive goals explicitly demand testing proposed skills and completing started goals, yet the reflex tool 'fertigkeiten-wirklich-ausprobieren-n
 - The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds but with high latency variance (9-60s), in
-- Skill proposals are generated frequently but lack follow-through on testing, creating a cycle where new capabilities are suggested but never validated
-- The system's self-diagnosis consistently reports zero organ failures, but repeated model failures indicate a gap between internal health checks and ex
-- Successful model calls show high variance in latency (8.2s to 22.2s) and token efficiency, suggesting dynamic performance characteristics that should 
-- Models returning 200 status codes with empty choices (e.g., Nvidia 502 upstream errors) require explicit response validation before treating results a
-- HTTP 429 rate-limit errors from OpenRouter affect multiple models simultaneously, indicating a shared upstream bottleneck rather than isolated model f
 
 ---
 

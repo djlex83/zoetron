@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5010 Fakten** · Stand 2026-08-28 03:47 UTC · aktualisiert bei jedem Herzschlag
+**5023 Fakten** · Stand 2026-08-28 04:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2098
-- **swarm_artifact:** 1255
-- **last_swarm_critique:** 553
-- **anti_pattern:** 413
-- **last_swarm_goal:** 302
-- **strategy:** 227
-- **hand_result:** 57
+- **dream:** 2103
+- **swarm_artifact:** 1257
+- **last_swarm_critique:** 554
+- **anti_pattern:** 415
+- **last_swarm_goal:** 303
+- **strategy:** 228
+- **hand_result:** 58
 - **tool:** 37
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fehler in Modellen schne:1`
+*28.08. 03:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Echtzeit-Monitoring & Alerting im Produktivbetrieb - Implementiere einen leichtgewichtigen Monitoring-Service (FastAPI + Prometheus/Grafana), der jede Prediction mit Features, Prediction und (später) Ground-Truth loggt. Berec
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fehler in Modellen schne:0`
+*28.08. 03:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Automatisierte Validierungs-Pipeline mit CI/CD-Integration - Entwickle eine Python-basierte CI/CD-Pipeline (z. B. mit GitHub Actions/GitLab CI), die bei jedem Commit automatisiert Model-Validierung durchführt: Schema-Checks d
+
+### `last_swarm_critique`
+*28.08. 03:58 UTC · Quelle: critic*
+
+score=1; issues=Artefakt laeuft nicht (Sandbox: LAEUFT NICHT, Traceback line 11); Import 'yaml' wird nicht verwendet, aber fehlt potentiell als Dependency; Kein lauffaehiger Python-Block - grundlegende Ausfuehrung scheitert
+
+### `last_swarm_goal`
+*28.08. 03:55 UTC · Quelle: system*
+
+Fehler in Modellen schneller erkennen
+
+### `dream:20260828035242:5:e02fda`
+*28.08. 03:52 UTC · Quelle: dream*
+
+Calibration overestimates success by 2x (predicted 3 vs actual 1), revealing systematic optimism in task-difficulty estimation.
+
+### `dream:20260828035242:4:b5801e`
+*28.08. 03:52 UTC · Quelle: dream*
+
+Model latency variance spans 6–80s for the same model (nemotron), making fixed timeouts unsafe; latency-aware routing with per-call budgets is needed.
+
+### `dream:20260828035242:3:77d4ca`
+*28.08. 03:52 UTC · Quelle: dream*
+
+Hand actions exit 1 within ~1s with zero bytes read and no error payload, pointing to missing binary, permission denial, or stdin/stdout wiring failure.
+
+### `dream:20260828035242:2:66d86a`
+*28.08. 03:52 UTC · Quelle: dream*
+
+Simulation artifact fails at runtime with fallback demo data and traceback, indicating missing test data or broken scenario loader in the execution environment.
+
+### `dream:20260828035242:1:f97189`
+*28.08. 03:52 UTC · Quelle: dream*
+
+OpenRouter gateway rate-limits (429) cascade across all free models simultaneously, requiring request-level queuing rather than model-level fallback.
 
 ### `dream:20260828034700:5:7aef05`
 *28.08. 03:47 UTC · Quelle: dream*
