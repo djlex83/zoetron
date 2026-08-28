@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5489 Fakten** · Stand 2026-08-28 16:17 UTC · aktualisiert bei jedem Herzschlag
+**5494 Fakten** · Stand 2026-08-28 16:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2392
+- **dream:** 2397
 - **swarm_artifact:** 1345
 - **last_swarm_critique:** 570
 - **anti_pattern:** 443
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828162605:5:2903fc`
+*28.08. 16:26 UTC · Quelle: dream*
+
+The system already self-diagnoses and sets drive goals effectively, but lacks automated calibration tracking to prevent repeating the same model-task mismatches.
+
+### `dream:20260828162605:4:3692f9`
+*28.08. 16:26 UTC · Quelle: dream*
+
+Silent exit-1 failures in hand actions provide zero diagnostic signal, so structured exception capture with stdout/stderr logging is essential for maintainability.
+
+### `dream:20260828162605:3:a7ebbd`
+*28.08. 16:26 UTC · Quelle: dream*
+
+Without pre-flight health checks or circuit breakers, the system wastes cycles on doomed model calls and compounds rate-limit errors across sequential retries.
+
+### `dream:20260828162605:2:551b57`
+*28.08. 16:26 UTC · Quelle: dream*
+
+A single low-latency reliable model (poolside/laguna-s-2.1:free at 7.5s) can serve as the primary backbone, while other models should only be used after passing a health probe.
+
+### `dream:20260828162605:1:3c5cc7`
+*28.08. 16:26 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `tool:alte-erinnerungen-auf-wert-prüfen`
 *28.08. 16:16 UTC · Quelle: hands*

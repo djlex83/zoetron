@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 16:16:44",
+ "stand": "2026-08-28 16:26:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -75,6 +75,12 @@
    "quote": 0.0
   },
   {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -109,16 +115,10 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
- "haende_quote": 0.639,
- "simulationen_angewandt": 55,
+ "haende_quote": 0.641,
+ "simulationen_angewandt": 54,
  "swarm_scores": {
   "n": 39,
   "best": 9.0,
@@ -126,8 +126,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 38,
-   "schnitt": 4.58
+   "n": 37,
+   "schnitt": 4.49
   },
   "bau": {
    "n": 1,
