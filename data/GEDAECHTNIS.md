@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5378 Fakten** · Stand 2026-08-28 13:06 UTC · aktualisiert bei jedem Herzschlag
+**5391 Fakten** · Stand 2026-08-28 13:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2313
-- **swarm_artifact:** 1331
-- **last_swarm_critique:** 567
-- **anti_pattern:** 437
-- **last_swarm_goal:** 316
-- **strategy:** 239
-- **hand_result:** 62
+- **dream:** 2318
+- **swarm_artifact:** 1333
+- **last_swarm_critique:** 568
+- **anti_pattern:** 439
+- **last_swarm_goal:** 317
+- **strategy:** 240
+- **hand_result:** 63
 - **tool:** 44
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,53 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Traumlernen ausweiten
+Cr:2`
+*28.08. 13:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Template engine with placeholder substitution - Use Python's string.Template or similar lightweight templating with $$ placeholders instead of f-strings or embedded formatting. Keep all markdown structure in external template
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Traumlernen ausweiten
+Cr:0`
+*28.08. 13:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): String delimiter isolation via base64 encoding - Wrap all markdown content containing triple backticks and special characters in base64 encoding before writing to file. Decode only at runtime when outputting, avoiding any dir
+
+### `last_swarm_critique`
+*28.08. 13:32 UTC · Quelle: critic*
+
+score=1; issues=SyntaxError: unterminated string at line 115 - artifact does not execute at all; The triple-backtick code fences inside the markdown string likely cause premature string termination depending on file encoding/writing; Cannot validate any runtim
+
+### `last_swarm_goal`
+*28.08. 13:19 UTC · Quelle: system*
+
+Traumlernen ausweiten
+
+### `dream:20260828131801:5:94ec00`
+*28.08. 13:18 UTC · Quelle: dream*
+
+Simulation-driven revision (5 risks → 3 applied) reduces memory-consolidation risk before irreversible commitment.
+
+### `dream:20260828131801:4:58c384`
+*28.08. 13:18 UTC · Quelle: dream*
+
+Successful call latency varies 3x (7–23 s) even for the same model, requiring adaptive timeouts rather than fixed thresholds.
+
+### `dream:20260828131801:3:2fed0c`
+*28.08. 13:18 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free remains available when all other free models are rate-limited, making it a critical backbone.
+
+### `dream:20260828131801:2:3cc362`
+*28.08. 13:18 UTC · Quelle: dream*
+
+Three consecutive errors trigger a 1800-second model ban, turning transient rate limits into extended outages.
+
+### `dream:20260828131801:1:258b00`
+*28.08. 13:18 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit correlated 429 rate-limit failures that cascade across providers simultaneously.
 
 ### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
 *28.08. 13:05 UTC · Quelle: hands*
