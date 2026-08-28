@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5097 Fakten** · Stand 2026-08-28 05:38 UTC · aktualisiert bei jedem Herzschlag
+**5114 Fakten** · Stand 2026-08-28 05:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2148
-- **swarm_artifact:** 1271
-- **last_swarm_critique:** 557
-- **anti_pattern:** 419
-- **last_swarm_goal:** 306
-- **strategy:** 230
+- **dream:** 2153
+- **swarm_artifact:** 1277
+- **last_swarm_critique:** 558
+- **anti_pattern:** 421
+- **last_swarm_goal:** 307
+- **strategy:** 231
 - **hand_result:** 59
-- **tool:** 38
+- **tool:** 39
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:mehr-experimente-für-neue-lösungen-wagen`
+*28.08. 05:53 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Mehr Experimente für neue Lösungen wagen'. Datei: data/tools/mehr-experimente-für-neue-lösungen-wagen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Mehr Experimente für neu:1`
+*28.08. 05:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Self-Healing Component Mesh - Replace implicit imports with an explicit component registry: ExperimentTracker, SafeExperimentRunner, MetabolismAdapter each register themselves via entrypoints or a manifest.json. On boot, the 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Mehr Experimente für neu:0`
+*28.08. 05:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Configuration-First Architecture - Externalize all stress thresholds (STRESS_CONSERVE, STRESS_BALANCED_MAX, etc.) into a typed config schema (YAML/JSON/TOML) with environment-variable overrides. Make Metabolism adapter a requ
+
+### `last_swarm_critique`
+*28.08. 05:49 UTC · Quelle: critic*
+
+score=7; issues=Hardcoded stress thresholds (STRESS_CONSERVE=1.0, STRESS_BALANCED_MAX=0.5) without configuration option; Fallback stress=0.5 masks missing Metabolism integration - no warning/error when adapter fails to load real metabolism; Experiment Tracker 
+
+### `last_swarm_goal`
+*28.08. 05:44 UTC · Quelle: system*
+
+Mehr Experimente für neue Lösungen wagen
+
+### `dream:20260828054418:5:3154d3`
+*28.08. 05:44 UTC · Quelle: dream*
+
+Predictor accuracy drifts without continuous calibration from logged (predicted, actual) pairs per task type.
+
+### `dream:20260828054418:4:8996bd`
+*28.08. 05:44 UTC · Quelle: dream*
+
+Simulation gates that only check risk count without requiring minimum revisions and risk delta thresholds allow premature deployment.
+
+### `dream:20260828054418:3:66bad5`
+*28.08. 05:44 UTC · Quelle: dream*
+
+Accumulation of skill proposals without a validation-to-deployment pipeline creates a "proposal graveyard" that wastes generation effort.
+
+### `dream:20260828054418:2:c130fc`
+*28.08. 05:44 UTC · Quelle: dream*
+
+High latency variance (13-22s) in fallback models necessitates adaptive timeout mechanisms based on recent percentile performance.
+
+### `dream:20260828054418:1:4d9846`
+*28.08. 05:44 UTC · Quelle: dream*
+
+Free-tier models with strict rate limits (429 errors) require automatic circuit-breaking and fallback to reliable alternatives to maintain system availability.
 
 ### `dream:20260828053744:5:da95f8`
 *28.08. 05:37 UTC · Quelle: dream*

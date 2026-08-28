@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 9×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Predictor accuracy drifts without continuous calibration from logged (predicted, actual) pairs per task type.
+- Simulation gates that only check risk count without requiring minimum revisions and risk delta thresholds allow premature deployment.
+- Accumulation of skill proposals without a validation-to-deployment pipeline creates a "proposal graveyard" that wastes generation effort.
+- High latency variance (13-22s) in fallback models necessitates adaptive timeout mechanisms based on recent percentile performance.
+- Free-tier models with strict rate limits (429 errors) require automatic circuit-breaking and fallback to reliable alternatives to maintain system avai
 - Self-diagnosis reports zero organ errors while drive goals reveal systemic reliability and adoption failures.
 - Reflex mechanism successfully tested and improved a rejected tool, proving automated skill repair works.
 - Human intervention required 15 times indicates autonomy gaps in error recovery and skill validation.
@@ -51,11 +56,6 @@
 - Three simulation revisions for five risks successfully de-risked the skill-conversion goal, yielding convergence at score 8.
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but with high latency variance (8–122s), requiring timeout budgets and fallback chains.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate limiting that makes it unreliable for production use.
-- Reflexes and hand actions succeed in isolation but fail to chain into completed workflows, indicating missing orchestration layer.
-- Variable latency on fallback model (9-36s) makes time-budgeted operations unpredictable, requiring latency-aware routing.
-- Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that inflate perceived system competence.
-- Evolution runs improve scores significantly (4→9) but swarm convergence fails, suggesting critic/planner ratio or stopping criteria need tuning.
-- Repeated 429 errors on specific models indicate unreliable endpoints require automatic fallback with exponential backoff.
 
 ---
 
