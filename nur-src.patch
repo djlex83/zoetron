@@ -1,0 +1,503 @@
+diff --git a/src/zoetron/brain_view.py b/src/zoetron/brain_view.py
+index f1edaf8..fec3007 100644
+--- a/src/zoetron/brain_view.py
++++ b/src/zoetron/brain_view.py
+@@ -11,11 +11,15 @@ from __future__ import annotations
+ import json
+ import math
+ import random
+-import sys
+ from pathlib import Path
+ 
+-sys.path.insert(0, str(Path(__file__).parent))
+-from graph import KnowledgeGraph  # noqa: E402
++# 28.08.2026: war 'sys.path.insert(...); from graph import KnowledgeGraph'.
++# Das trug nur, solange der Herzschlag die Datei als PFAD startete;
++# seit dem Umstieg auf "-m zoetron.X" gilt der Paketkontext (so steht
++# es seit dem 26.08. in selflearn.py). Schlimmer als der tote Trick war
++# die Vorbildwirkung: der Builder hat den nackten Import abgeschrieben
++# und bekam "Modul 'graph' nicht gefunden" (27.08. 17:40).
++from .graph import KnowledgeGraph
+ from .oeffentlich import sichtbar as _sichtbar
+ 
+ 
+diff --git a/src/zoetron/core.py b/src/zoetron/core.py
+index f99df98..48b0bb6 100755
+--- a/src/zoetron/core.py
++++ b/src/zoetron/core.py
+@@ -17,6 +17,14 @@ from .config import Config
+ from .llm import LLM, Message, make_llm
+ from .memory import MemoryStore
+ 
++# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag bis
++# 23.08.2026 achtmal kopiert im Kern. Steht seit dem 28.08. HIER OBEN
++# und nicht mehr am Dateiende: dort war sie zwar gueltig (der Name
++# wird erst beim Aufruf gebraucht), aber sie war das Vorbild fuer
++# 'os.environ.get() in Zeile 17, import os am Ende' - ein Artefakt,
++# das am 28.08. um 11:32 genau daran starb.
++from .jsonschnitt import first_json as _first_json
++
+ 
+ @dataclass
+ class Task:
+@@ -187,8 +195,3 @@ PLANNER_SYSTEM = ("You are a ruthless planner: few, concrete, verifiable tasks.
+                   "Output raw JSON only.")
+ CRITIC_SYSTEM = ("You are an adversarial quality critic. Be strict. "
+                  "Output raw JSON only.")
+-
+-
+-# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag
+-# bis 23.08.2026 achtmal kopiert im Kern.
+-from .jsonschnitt import first_json as _first_json
+diff --git a/src/zoetron/dream.py b/src/zoetron/dream.py
+index 89d9089..83a7ba6 100755
+--- a/src/zoetron/dream.py
++++ b/src/zoetron/dream.py
+@@ -22,6 +22,14 @@ from .llm import LLM, Message, make_llm
+ from .memory import MemoryStore
+ import hashlib
+ 
++# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag bis
++# 23.08.2026 achtmal kopiert im Kern. Steht seit dem 28.08. HIER OBEN
++# und nicht mehr am Dateiende: dort war sie zwar gueltig (der Name
++# wird erst beim Aufruf gebraucht), aber sie war das Vorbild fuer
++# 'os.environ.get() in Zeile 17, import os am Ende' - ein Artefakt,
++# das am 28.08. um 11:32 genau daran starb.
++from .jsonschnitt import first_json as _first_json
++
+ 
+ def _kuerzel(text: str, breite: int = 3) -> str:
+     """Kurzes, deterministisches Inhalts-Kuerzel fuer Traum-Schluessel.
+@@ -92,8 +100,3 @@ class Dream:
+                 continue  # don't feed old dreams back into the new dream
+             lines.append(f"[fact:{f['key'][:50]}] {str(f['value'])[:150]}")
+         return "\n".join(lines)
+-
+-
+-# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag
+-# bis 23.08.2026 achtmal kopiert im Kern.
+-from .jsonschnitt import first_json as _first_json
+diff --git a/src/zoetron/drive.py b/src/zoetron/drive.py
+index bffbc01..70282b7 100644
+--- a/src/zoetron/drive.py
++++ b/src/zoetron/drive.py
+@@ -21,6 +21,14 @@ from .config import Config
+ from .llm import LLM, Message, make_llm
+ from .memory import MemoryStore
+ 
++# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag bis
++# 23.08.2026 achtmal kopiert im Kern. Steht seit dem 28.08. HIER OBEN
++# und nicht mehr am Dateiende: dort war sie zwar gueltig (der Name
++# wird erst beim Aufruf gebraucht), aber sie war das Vorbild fuer
++# 'os.environ.get() in Zeile 17, import os am Ende' - ein Artefakt,
++# das am 28.08. um 11:32 genau daran starb.
++from .jsonschnitt import first_json as _first_json
++
+ 
+ MAX_VERSUCHE = 3
+ 
+@@ -366,8 +374,3 @@ class Drive:
+                                "Zoetron Erfahrung.",
+                         "signal": "gap"})
+         return out[:n]
+-
+-
+-# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag
+-# bis 23.08.2026 achtmal kopiert im Kern.
+-from .jsonschnitt import first_json as _first_json
+diff --git a/src/zoetron/evolution.py b/src/zoetron/evolution.py
+index f37a8c8..408eb36 100755
+--- a/src/zoetron/evolution.py
++++ b/src/zoetron/evolution.py
+@@ -19,6 +19,14 @@ from .config import Config
+ from .llm import LLM, Message, make_llm
+ from .memory import MemoryStore
+ 
++# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag bis
++# 23.08.2026 achtmal kopiert im Kern. Steht seit dem 28.08. HIER OBEN
++# und nicht mehr am Dateiende: dort war sie zwar gueltig (der Name
++# wird erst beim Aufruf gebraucht), aber sie war das Vorbild fuer
++# 'os.environ.get() in Zeile 17, import os am Ende' - ein Artefakt,
++# das am 28.08. um 11:32 genau daran starb.
++from .jsonschnitt import first_json as _first_json
++
+ 
+ class Evolution:
+     def __init__(self, cfg: Config, llm: LLM | None = None,
+@@ -117,8 +125,3 @@ class Evolution:
+         except Exception as exc:  # noqa: BLE001 - evolution must not crash host
+             result["error"] = str(exc)[:160]
+         return result
+-
+-
+-# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag
+-# bis 23.08.2026 achtmal kopiert im Kern.
+-from .jsonschnitt import first_json as _first_json
+diff --git a/src/zoetron/graph.py b/src/zoetron/graph.py
+index 0d89f15..f2b82c6 100644
+--- a/src/zoetron/graph.py
++++ b/src/zoetron/graph.py
+@@ -160,10 +160,12 @@ class KnowledgeGraph:
+         if len(ids) < 3:
+             return 0
+         try:
+-            try:
+-                from .semantic import _expand, _terms
+-            except ImportError:            # Direkt-Ausfuehrung als Skript
+-                from semantic import _expand, _terms  # type: ignore
++            # Kein nackter Rueckfall mehr (28.08.2026): "Direkt-
++            # Ausfuehrung als Skript" gibt es nicht mehr, der Herzschlag
++            # ruft ausschliesslich "-m zoetron.graph". Der Zweig war tot
++            # und lehrte den Builder trotzdem den Import, der im
++            # Sandkasten scheitert.
++            from .semantic import _expand, _terms
+             from collections import Counter as _C
+ 
+             def bag(nid: str) -> Counter:
+diff --git a/src/zoetron/graph_view.py b/src/zoetron/graph_view.py
+index 65c599f..45c74e4 100644
+--- a/src/zoetron/graph_view.py
++++ b/src/zoetron/graph_view.py
+@@ -10,12 +10,16 @@ from __future__ import annotations
+ import json
+ import math
+ import random
+-import sys
+ import time
+ from pathlib import Path
+ 
+-sys.path.insert(0, str(Path(__file__).parent))
+-from graph import KnowledgeGraph  # noqa: E402
++# 28.08.2026: war 'sys.path.insert(...); from graph import KnowledgeGraph'.
++# Das trug nur, solange der Herzschlag die Datei als PFAD startete;
++# seit dem Umstieg auf "-m zoetron.X" gilt der Paketkontext (so steht
++# es seit dem 26.08. in selflearn.py). Schlimmer als der tote Trick war
++# die Vorbildwirkung: der Builder hat den nackten Import abgeschrieben
++# und bekam "Modul 'graph' nicht gefunden" (27.08. 17:40).
++from .graph import KnowledgeGraph
+ from .oeffentlich import sichtbar as _sichtbar
+ 
+ 
+diff --git a/src/zoetron/hands.py b/src/zoetron/hands.py
+index 24d37f6..c80f56b 100755
+--- a/src/zoetron/hands.py
++++ b/src/zoetron/hands.py
+@@ -15,6 +15,7 @@ from __future__ import annotations
+ 
+ import json
+ import os
++import re
+ import subprocess
+ import sys
+ import tempfile
+@@ -28,6 +29,14 @@ from .memory import MemoryStore
+ from .lesezaehler import gelesen as _gelesen, zaehler_vorspann
+ from .schutzwall import praeambel
+ 
++# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag bis
++# 23.08.2026 achtmal kopiert im Kern. Steht seit dem 28.08. HIER OBEN
++# und nicht mehr am Dateiende: dort war sie zwar gueltig (der Name
++# wird erst beim Aufruf gebraucht), aber sie war das Vorbild fuer
++# 'os.environ.get() in Zeile 17, import os am Ende' - ein Artefakt,
++# das am 28.08. um 11:32 genau daran starb.
++from .jsonschnitt import first_json as _first_json
++
+ # ACHTUNG: das sind SHELL-Muster, ausgefuehrt wird aber PYTHON. Sie
+ # fangen daher fast nichts - 'import shutil; shutil.rmtree(...)'
+ # enthaelt keines davon. Sie bleiben als billige Zusatzpruefung
+@@ -39,6 +48,47 @@ FORBIDDEN = ("rm -rf /", ":(){", "mkfs", "dd if=", "> /dev/sd",
+ STDOUT_CAP = 2000
+ 
+ 
++def verbotenes_muster(code: str) -> str:
++    """Erstes Shell-Muster, das im Code als KOMMANDO steht - sonst "".
++
++    Der reine Teilstring-Test hat am 28.08.2026 um 18:12 einen Lauf mit
++    Note 1 versenkt: "LAEUFT NICHT - verbotenes Muster 'shutdown'
++    erkannt". Im Artefakt stand ThreadPoolExecutor.shutdown(wait=True) -
++    sauberer nebenlaeufiger Code. Ein Attributzugriff ist kein
++    Shell-Kommando.
++
++    Das ist derselbe Fallstrick wie bei MAX_CODE und MAX_ZEICHEN, nur in
++    einer Wortliste: eine Grenze, die zerstoert, was durch sie hindurch
++    soll. Und sie war hier besonders schief, weil sie zugleich
++    durchlaesst, was wirklich loescht:
++
++        BLOCKIERT     ThreadPoolExecutor(...).shutdown(wait=True)
++        durchgelassen import shutil; shutil.rmtree("/")
++
++    Also: Wortmuster nur, wenn kein Punkt davorsteht (Attribut), keine
++    Klammer dahinter (Aufruf) und links wie rechts eine Wortgrenze ist.
++    'shutdown -h now' in einem os.system()-String faellt weiter durch.
++
++    Am Anspruch aendert das nichts - der Kommentar oben gilt unveraendert:
++    diese Liste fangt fast nichts, die Arbeit macht der Schutzwall.
++    """
++    for pat in FORBIDDEN:
++        wortartig = pat[0].isalpha()
++        for treffer in re.finditer(re.escape(pat), code):
++            i, j = treffer.start(), treffer.end()
++            if wortartig:
++                davor = code[i - 1] if i else ""
++                danach = code[j] if j < len(code) else ""
++                if davor == "." or danach == "(":
++                    continue                      # .shutdown() - Python
++                if davor.isalnum() or davor == "_":
++                    continue                      # mitten im Bezeichner
++                if danach.isalnum() or danach == "_":
++                    continue                      # shutdown_hook
++            return pat
++    return ""
++
++
+ class Hands:
+     def __init__(self, cfg: Config, llm: LLM | None = None,
+                  memory: MemoryStore | None = None,
+@@ -56,13 +106,13 @@ class Hands:
+                 argv: list[str] | None = None,
+                 verlangt_eingabe: bool = False) -> dict[str, Any]:
+         """Run a Python snippet in the sandbox. Never raises."""
+-        for pat in FORBIDDEN:
+-            if pat in code:
+-                result: dict[str, Any] = {
+-                    "ok": False, "error": f"forbidden pattern: {pat}"}
+-                self.memory.add_event("hand_action", {**result, "preview":
+-                                                      code[:80]})
+-                return result
++        pat = verbotenes_muster(code)
++        if pat:
++            result: dict[str, Any] = {
++                "ok": False, "error": f"forbidden pattern: {pat}"}
++            self.memory.add_event("hand_action", {**result, "preview":
++                                                  code[:80]})
++            return result
+         # Schutzwall als eigene Datei plus EINE Zeile Vorspann: so
+         # verschieben sich die Zeilennummern im Traceback nur um 1
+         # und DREAM kann Fehler weiter der richtigen Stelle zuordnen.
+@@ -169,8 +219,3 @@ class Hands:
+             "exit": run.get("exit"), "error": run.get("error"),
+         })
+         return outcome
+-
+-
+-# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag
+-# bis 23.08.2026 achtmal kopiert im Kern.
+-from .jsonschnitt import first_json as _first_json
+diff --git a/src/zoetron/konvergenztor.py b/src/zoetron/konvergenztor.py
+index f0d14dc..50abbef 100644
+--- a/src/zoetron/konvergenztor.py
++++ b/src/zoetron/konvergenztor.py
+@@ -45,7 +45,19 @@ def code_bloecke(text: str, mindestzeilen: int = 3) -> list[str]:
+ # tagelang "Artefakte sind oft nicht lauffaehig" - sie waren es, sie
+ # wurden nur vorher zerschnitten. Vierte Grenze in diesem Projekt, die
+ # zerstoert, was durch sie hindurch soll (Fallstrick 19).
+-MAX_CODE = 20_000        # deckt das gemessene Maximum (17.694) mit Reserve
++# NACHGEMESSEN am 28.08.2026: die Artefakte sind gewachsen. In den
++# 24 h davor lagen VIER ueber der 20.000er-Grenze - 20.990, 22.684,
++# ~21.000 und ~29.000 Zeichen. Zwei Laeufe endeten deshalb mit
++# "NICHT AUSGEFUEHRT, kein Lauffaehigkeitsnachweis moeglich"
++# (00:10 und 03:26). Das ist derselbe Fallstrick 19 wie am 26.08.,
++# nur eine Groessenordnung hoeher: eine Grenze, die zerstoert, was
++# durch sie hindurch soll. Also folgt sie wieder dem Bestand -
++# 40.000 deckt das gemessene Maximum (29.000) mit Reserve.
++#
++# Der dritte Zustand bleibt der wichtige Teil: zu lang heisst NICHT
++# GEPRUEFT, nicht "laeuft nicht". Diese Grenze darf nie wieder ein
++# Urteil ueber Code faellen, den sie nie gesehen hat.
++MAX_CODE = 40_000
+ 
+ # Marke fuer den DRITTEN Zustand des Tores.
+ #
+diff --git a/src/zoetron/metacog.py b/src/zoetron/metacog.py
+index c6c3019..b460667 100755
+--- a/src/zoetron/metacog.py
++++ b/src/zoetron/metacog.py
+@@ -16,6 +16,14 @@ from .config import Config
+ from .llm import LLM, Message, make_llm
+ from .memory import MemoryStore
+ 
++# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag bis
++# 23.08.2026 achtmal kopiert im Kern. Steht seit dem 28.08. HIER OBEN
++# und nicht mehr am Dateiende: dort war sie zwar gueltig (der Name
++# wird erst beim Aufruf gebraucht), aber sie war das Vorbild fuer
++# 'os.environ.get() in Zeile 17, import os am Ende' - ein Artefakt,
++# das am 28.08. um 11:32 genau daran starb.
++from .jsonschnitt import first_json as _first_json
++
+ 
+ class MetaCog:
+     def __init__(self, cfg: Config, llm: LLM | None = None,
+@@ -100,8 +108,3 @@ class MetaCog:
+             lines.append(f"trend: {model['trend']}, "
+                          f"recent MAE: {model['recent_mean_abs_error']}")
+         return "\n".join(lines)
+-
+-
+-# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag
+-# bis 23.08.2026 achtmal kopiert im Kern.
+-from .jsonschnitt import first_json as _first_json
+diff --git a/src/zoetron/organe.py b/src/zoetron/organe.py
+index 9789931..391a89f 100755
+--- a/src/zoetron/organe.py
++++ b/src/zoetron/organe.py
+@@ -35,7 +35,12 @@ from pathlib import Path
+ # Also: die Grenze folgt dem Bestand, nicht umgekehrt. 3.600 laesst Platz
+ # fuer rund 12 weitere Organe, bevor ueberhaupt gekuerzt wird - und wenn,
+ # dann sichtbar.
+-MAX_ZEICHEN = 7000
++# 28.08.2026: mit dem Import-Pfad je Zeile waechst die Liste von 4.430
++# auf rund 5.900 Zeichen. 7.000 haetten den Organ-Block (80 % = 5.600)
++# angeschnitten - und zwar am Ende, wo "will" und "widerspruch" stehen.
++# Fuenfte Grenze in diesem Projekt, die zerstoert haette, was durch sie
++# hindurch soll. Also wieder: die Grenze folgt dem Bestand.
++MAX_ZEICHEN = 10000
+ MAX_ZEILE = 100
+ MAX_NAME = 34
+ MAX_ZWECK = 40
+@@ -101,9 +106,24 @@ def _einstiege(baum: ast.AST) -> list[str]:
+     return raus[:MAX_EINSTIEGE]
+ 
+ 
++def _paketname(ordner: Path) -> str:
++    """Paketname, wenn der Ordner ein importierbares PAKET ist - sonst "".
++
++    Ein Ordner mit __init__.py ist ein Paket; seine Module heissen von
++    aussen "paket.modul". data/tools/ hat keins - dort liegen freie
++    Skripte, die niemand importiert. Deshalb entscheidet die Datei, nicht
++    der Ordnername.
++    """
++    try:
++        return ordner.name if (ordner / "__init__.py").is_file() else ""
++    except OSError:
++        return ""
++
++
+ def _sammeln(ordner: Path, ueberspringen: set[str]) -> list[tuple[str, str]]:
+     if not ordner.is_dir():
+         return []
++    paket = _paketname(ordner)
+     raus = []
+     for p in sorted(ordner.glob("*.py")):
+         if p.stem in ueberspringen:
+@@ -115,7 +135,32 @@ def _sammeln(ordner: Path, ueberspringen: set[str]) -> list[tuple[str, str]]:
+         except (OSError, SyntaxError):
+             ein = []
+         if ein:
+-            zweck = (zweck[:MAX_ZWECK] + " | " if zweck else "") + ", ".join(ein)
++            # DER IMPORT-PFAD, nicht nur der Name (28.08.2026). Vorher
++            # stand hier "selflearn: ... | main(), learn()" - und der
++            # Builder musste zwischen "import selflearn", "from
++            # zoetron.selflearn import ..." und "from src.zoetron..."
++            # RATEN. Gemessen an den 24 h davor war das die haeufigste
++            # Ursache nicht lauffaehiger Artefakte:
++            #   "Modul 'bahnen'/'graph'/'semantic' nicht gefunden"  17:40
++            #   "cannot import name 'SelfLearn' from ..."           02:50
++            #   "No module named 'benchmark_organ'"      benchmark_fallback
++            #
++            # Der zweite Fall zeigt, dass der NAME allein sogar in die
++            # falsche FORM fuehrt: 12 der 48 Organe heissen als Einstieg
++            # exakt wie ihr Modul in CamelCase (dream -> Dream, hands ->
++            # Hands, prune -> Prune ...). Bei "selflearn" vervollstaendigt
++            # das Modell dieses Muster zu "SelfLearn" - eine Klasse, die
++            # es nie gab. Die echte Importzeile nimmt beide Rateschritte
++            # weg: Pfad UND Form stehen da.
++            #
++            # Kopfschutz unveraendert: Namen ja, Signaturen/Rumpf nein.
++            if paket:
++                namen = ", ".join(e[:-2] if e.endswith("()") else e
++                                  for e in ein)
++                zugang = f"from {paket}.{p.stem} import {namen}"
++            else:
++                zugang = ", ".join(ein)
++            zweck = (zweck[:MAX_ZWECK] + " | " if zweck else "") + zugang
+         raus.append((p.stem[:MAX_NAME], zweck))
+     return raus
+ 
+@@ -143,7 +188,10 @@ def organliste(src_dir=None, tools_dir=None, max_zeichen: int = MAX_ZEICHEN) ->
+         return ""
+ 
+     teile = ["EXISTIERT BEREITS - nicht neu bauen, sondern importieren "
+-             "oder erweitern:"]
++             "oder erweitern.",
++             "Die Importzeile steht dabei - nimm sie WOERTLICH. Ein "
++             "nackter \"import <modul>\" findet im Sandkasten nichts, "
++             "und eine erfundene Klasse gibt es nicht."]
+     weggelassen = 0
+ 
+     def block(titel, eintraege, budget):
+diff --git a/src/zoetron/simulate.py b/src/zoetron/simulate.py
+index 25c473e..bdb4459 100755
+--- a/src/zoetron/simulate.py
++++ b/src/zoetron/simulate.py
+@@ -15,6 +15,14 @@ from .config import Config
+ from .llm import LLM, Message, make_llm
+ from .memory import MemoryStore
+ 
++# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag bis
++# 23.08.2026 achtmal kopiert im Kern. Steht seit dem 28.08. HIER OBEN
++# und nicht mehr am Dateiende: dort war sie zwar gueltig (der Name
++# wird erst beim Aufruf gebraucht), aber sie war das Vorbild fuer
++# 'os.environ.get() in Zeile 17, import os am Ende' - ein Artefakt,
++# das am 28.08. um 11:32 genau daran starb.
++from .jsonschnitt import first_json as _first_json
++
+ 
+ class Simulate:
+     def __init__(self, cfg: Config, llm: LLM | None = None,
+@@ -83,8 +91,3 @@ def apply_revisions(tasks: list[Any], revisions: list[dict[str, str]]) -> int:
+                 applied += 1
+                 break
+     return applied
+-
+-
+-# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag
+-# bis 23.08.2026 achtmal kopiert im Kern.
+-from .jsonschnitt import first_json as _first_json
+diff --git a/src/zoetron/swarm.py b/src/zoetron/swarm.py
+index 32c24cf..b3683ca 100644
+--- a/src/zoetron/swarm.py
++++ b/src/zoetron/swarm.py
+@@ -20,6 +20,14 @@ from .memory import MemoryStore
+ from . import rueckmeldung as _rueckmeldung
+ from .konvergenztor import pruefe as _tor_pruefen
+ 
++# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag bis
++# 23.08.2026 achtmal kopiert im Kern. Steht seit dem 28.08. HIER OBEN
++# und nicht mehr am Dateiende: dort war sie zwar gueltig (der Name
++# wird erst beim Aufruf gebraucht), aber sie war das Vorbild fuer
++# 'os.environ.get() in Zeile 17, import os am Ende' - ein Artefakt,
++# das am 28.08. um 11:32 genau daran starb.
++from .jsonschnitt import first_json as _first_json
++
+ ROLE_PROMPTS: dict[str, str] = {
+     "planner": (
+         "You are PLANNER of an autonomous forge swarm. Ruthless strategist: "
+@@ -693,8 +701,3 @@ class SwarmOrchestrator:
+                                   f"score={score}; issues={'; '.join(issues)[:300]}",
+                                   source="critic")
+         return score, issues
+-
+-
+-# Gemeinsame Fassung, siehe jsonschnitt.py - diese Funktion lag
+-# bis 23.08.2026 achtmal kopiert im Kern.
+-from .jsonschnitt import first_json as _first_json
+diff --git a/src/zoetron/teacher.py b/src/zoetron/teacher.py
+index 7046ee8..ec3e90c 100644
+--- a/src/zoetron/teacher.py
++++ b/src/zoetron/teacher.py
+@@ -11,7 +11,6 @@ Der Lehrer-Kanal hat hoechste Autoritaet nach dem Genom.
+ from __future__ import annotations
+ 
+ import json
+-import sys
+ import time
+ from pathlib import Path
+ import hashlib
+@@ -29,7 +28,6 @@ def _arbeitswurzel():
+     from .config import _REPO_ROOT
+     return _REPO_ROOT
+ 
+-sys.path.insert(0, str(Path(__file__).parent))
+ 
+ 
+ def _stabile_id(text: str, breite: int = 6) -> str:

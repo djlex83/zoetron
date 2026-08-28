@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5762 Fakten** · Stand 2026-08-28 23:31 UTC · aktualisiert bei jedem Herzschlag
+**5776 Fakten** · Stand 2026-08-28 23:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2551
-- **swarm_artifact:** 1405
-- **last_swarm_critique:** 580
+- **dream:** 2556
+- **swarm_artifact:** 1411
+- **last_swarm_critique:** 581
 - **anti_pattern:** 459
-- **last_swarm_goal:** 329
+- **last_swarm_goal:** 330
 - **strategy:** 250
 - **hand_result:** 68
-- **tool:** 51
+- **tool:** 52
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktanalyse-abschließen-und-lücken-schl`
+*28.08. 23:40 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse abschließen und Lücken schließen'. Datei: data/tools/marktanalyse-abschließen-und-lücken-schl.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*28.08. 23:40 UTC · Quelle: critic*
+
+score=8; issues=Lückenanalyse-Artikel ist unvollständig (17959 Zeichen gekappt, Rest fehlt) - aber laut Sandbox läuft das Artefakt mit 204 Zeilen Python; Finaler Report ist unvollständig (26953 Zeichen gekappt, Rest fehlt) - aber laut Sandbox läuft das Artefak
+
+### `last_swarm_goal`
+*28.08. 23:35 UTC · Quelle: system*
+
+Marktanalyse abschließen und Lücken schließen
+
+### `dream:20260828233457:5:030bea`
+*28.08. 23:34 UTC · Quelle: dream*
+
+Simulations produce 'go' verdicts with risks/revisions but no automatic mechanism injects those revisions into the next execution plan.
+
+### `dream:20260828233457:4:5b9855`
+*28.08. 23:34 UTC · Quelle: dream*
+
+Stress=1.0 triggers conserve mode (max_tasks=3), which starves the very retries needed to recover from model failures, creating a negative feedback loop.
+
+### `dream:20260828233457:3:b16e94`
+*28.08. 23:34 UTC · Quelle: dream*
+
+Reflex tools show binary reliability: 'marktanalyse-endlich-abschließen.py' converges, while 'träume-in-taten-umsetzen.py' fails silently, indicating missing pre-flight validation.
+
+### `dream:20260828233457:2:8ee97f`
+*28.08. 23:34 UTC · Quelle: dream*
+
+Hand actions fail when tools use relative paths that don't resolve against the actual ZOETRON_DATA mount point, revealing a path-abstraction leak.
+
+### `dream:20260828233457:1:b187d5`
+*28.08. 23:34 UTC · Quelle: dream*
+
+Repeated 429 errors on the primary model without a circuit breaker cause cascading fallback to a high-latency secondary model, wasting 30+ seconds per cycle.
 
 ### `dream:20260828232947:5:fc8655`
 *28.08. 23:29 UTC · Quelle: dream*
