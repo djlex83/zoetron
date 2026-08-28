@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5302 Fakten** · Stand 2026-08-28 10:55 UTC · aktualisiert bei jedem Herzschlag
+**5307 Fakten** · Stand 2026-08-28 10:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2273
+- **dream:** 2278
 - **swarm_artifact:** 1313
 - **last_swarm_critique:** 564
 - **anti_pattern:** 431
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828105835:5:cf44a2`
+*28.08. 10:58 UTC · Quelle: dream*
+
+Simulation-based revision loops (verdict=revise, 2 revisions) add latency but catch risks before production promotion.
+
+### `dream:20260828105835:4:2d8edf`
+*28.08. 10:58 UTC · Quelle: dream*
+
+Metabolism conservation mode (stress=1.0) caps task budget, preventing simultaneous failure mitigation and skill deployment.
+
+### `dream:20260828105835:3:6cc274`
+*28.08. 10:58 UTC · Quelle: dream*
+
+Hand actions fail because relative paths ignore the ZOETRON_DATA environment variable, causing silent zero-byte reads.
+
+### `dream:20260828105835:2:ed2212`
+*28.08. 10:58 UTC · Quelle: dream*
+
+Previously proposed skills (scoreboard router, failure-to-skill pipeline, semantic cache) directly address the observed failure modes but remain unimplemented due to missing promotion gates.
+
+### `dream:20260828105835:1:1b8ed5`
+*28.08. 10:58 UTC · Quelle: dream*
+
+Rate limiting on the primary model (z-ai/glm-5.2) triggers cascading fallback to a slower, high-variance model (nvidia/nemotron), making latency unpredictable.
 
 ### `dream:20260828105358:5:1f9d8b`
 *28.08. 10:53 UTC · Quelle: dream*

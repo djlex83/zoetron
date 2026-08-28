@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 17×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 18×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -35,12 +35,17 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler stark verringern *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten echt ausprobieren *(wieder aufgegriffen: 2×)*
 - Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-based revision loops (verdict=revise, 2 revisions) add latency but catch risks before production promotion.
+- Metabolism conservation mode (stress=1.0) caps task budget, preventing simultaneous failure mitigation and skill deployment.
+- Hand actions fail because relative paths ignore the ZOETRON_DATA environment variable, causing silent zero-byte reads.
+- Previously proposed skills (scoreboard router, failure-to-skill pipeline, semantic cache) directly address the observed failure modes but remain unimp
+- Rate limiting on the primary model (z-ai/glm-5.2) triggers cascading fallback to a slower, high-variance model (nvidia/nemotron), making latency unpre
 - Reflex successfully used a tool to understand rejected tools, proving meta-cognitive skills can unblock capability adoption.
 - Pruning ran but removed zero facts/events, suggesting thresholds are miscalibrated or access-frequency tracking is broken.
 - Multiple skill proposals for model reliability exist but none are implemented, revealing a promotion gap between proposal and production.
@@ -51,11 +56,6 @@
 - Model fallback succeeds but incurs 23-83s latency spikes, indicating missing per-model p95 latency budgets and dynamic timeout calibration.
 - Skill proposals accumulate (12+ in this log) but adoption remains near zero because no mechanism promotes proposals to implemented status after valida
 - Repeated 429 errors on z-ai/glm-5.2:free reveal a provider-level quota exhaustion pattern that static fallbacks cannot resolve without shared-quota aw
-- Model reliability varies significantly under load; some free models consistently fail while others remain stable, but no dynamic routing exists.
-- Upstream errors (502/429) are not handled gracefully, resulting in unproductive retries and missed fallback opportunities.
-- Repeated 6/10 scores on the same goal indicate structural stagnation, not parameter drift—requiring forced architectural changes.
-- Missing organ dependencies (e.g., hands) silently cap performance at 6/10 without pre-validation, leading to repeated low-quality outcomes.
-- Sequential model calls to free-tier endpoints trigger cascading 429 rate-limit failures, causing pipeline stalls and wasted compute.
 
 ---
 
