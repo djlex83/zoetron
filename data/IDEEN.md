@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals spawned from failure signals (model errors, stale analyses, skill gap) but lack concrete acceptance criteria, risking perpetual re-plannin
+- Self-diagnosis and pruning reported zero anomalies despite repeated model failures, showing health checks do not cover routing-layer degradation.
+- Automatic skill-proposal generation fired 5 proposals in one cycle, but none were validated or deployed, creating a proposal-execution gap.
+- Calibration error of +5 cycles on a one-cycle task reveals the planner systematically underestimates iteration needs when external API latency dominat
+- The GLM endpoint fails deterministically under rate limits (429) while Nemotron succeeds with high latency variance (12–114 s), indicating routing mus
 - Self-diagnosis reporting zero organ errors while the system fails to converge indicates diagnostic blind spots in goal-alignment metrics.
 - Swarm with 3 builders but only 1 critic may lack sufficient adversarial pressure for convergence.
 - Evolutionary improvement (scores 7→9) without convergence suggests the fitness function or stopping criteria need tightening.
@@ -51,11 +56,6 @@
 - Poolside Laguna-S-2.1 delivers low latency (12 s) when available, suggesting a fast fallback tier.
 - Nvidia Nemotron succeeds reliably but with high latency variance (40–185 s), requiring timeout budgets >200 s.
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable for primary workflows.
-- Latency variance on the fallback model (14s–76s) makes timeout budgets unpredictable and causes cascading deadline misses.
-- Simulation consistently surfaces 5+ risks per goal but revisions are applied without verifying they reduce actual failure rates.
-- Reflex tools (alte-erinnerungen-auf-wert-prüfen.py) fail silently without surfacing error context, breaking the trust loop for instant replay.
-- High system stress (1.0) triggers conserve mode that caps iterations to 1, causing incomplete executions like the hand action that touched no files.
-- The primary model (z-ai/glm-5.2:free) fails 100% of the time due to rate limiting, making fallback routing a hard requirement not an optimization.
 
 ---
 

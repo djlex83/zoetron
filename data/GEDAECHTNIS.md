@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5701 Fakten** · Stand 2026-08-28 22:03 UTC · aktualisiert bei jedem Herzschlag
+**5706 Fakten** · Stand 2026-08-28 22:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2502
+- **dream:** 2507
 - **swarm_artifact:** 1399
 - **last_swarm_critique:** 579
 - **anti_pattern:** 457
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828222842:5:2fca68`
+*28.08. 22:28 UTC · Quelle: dream*
+
+Drive goals spawned from failure signals (model errors, stale analyses, skill gap) but lack concrete acceptance criteria, risking perpetual re-planning.
+
+### `dream:20260828222842:4:347583`
+*28.08. 22:28 UTC · Quelle: dream*
+
+Self-diagnosis and pruning reported zero anomalies despite repeated model failures, showing health checks do not cover routing-layer degradation.
+
+### `dream:20260828222842:3:3c4653`
+*28.08. 22:28 UTC · Quelle: dream*
+
+Automatic skill-proposal generation fired 5 proposals in one cycle, but none were validated or deployed, creating a proposal-execution gap.
+
+### `dream:20260828222842:2:62a95e`
+*28.08. 22:28 UTC · Quelle: dream*
+
+Calibration error of +5 cycles on a one-cycle task reveals the planner systematically underestimates iteration needs when external API latency dominates.
+
+### `dream:20260828222842:1:13aacf`
+*28.08. 22:28 UTC · Quelle: dream*
+
+The GLM endpoint fails deterministically under rate limits (429) while Nemotron succeeds with high latency variance (12–114 s), indicating routing must weight reliability over raw availability.
 
 ### `tool:marktanalyse-endlich-abschließen`
 *28.08. 22:03 UTC · Quelle: hands*
