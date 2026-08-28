@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5410 Fakten** · Stand 2026-08-28 14:15 UTC · aktualisiert bei jedem Herzschlag
+**5415 Fakten** · Stand 2026-08-28 14:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2337
+- **dream:** 2342
 - **swarm_artifact:** 1333
 - **last_swarm_critique:** 568
 - **anti_pattern:** 439
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828142028:5:5c92b7`
+*28.08. 14:20 UTC · Quelle: dream*
+
+Poor calibration (predicted 3 vs actual 1) indicates unreliable self-assessment of task difficulty before execution.
+
+### `dream:20260828142028:4:a69d3f`
+*28.08. 14:20 UTC · Quelle: dream*
+
+Model reliability varies significantly — nemotron-3-ultra succeeded where multiple others failed, suggesting model-specific resilience patterns worth tracking.
+
+### `dream:20260828142028:3:802dd3`
+*28.08. 14:20 UTC · Quelle: dream*
+
+Evolutionary refinement can improve scores from 1/10 to 9/10, demonstrating the power of iterative variant generation as a recovery mechanism.
+
+### `dream:20260828142028:2:18ff30`
+*28.08. 14:20 UTC · Quelle: dream*
+
+Code generation without pre-execution syntax validation produces unterminated strings that block entire execution pipelines.
+
+### `dream:20260828142028:1:b2b6b0`
+*28.08. 14:20 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), requiring fallback strategies.
 
 ### `dream:20260828141257:4:925f93`
 *28.08. 14:12 UTC · Quelle: dream*

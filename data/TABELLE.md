@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3611 Neuronen · 121667 bewertete Synapsen
+Stand: 3614 Neuronen · 122108 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,9 +13,9 @@ Stand: 3611 Neuronen · 121667 bewertete Synapsen
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 347 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 347 | 0.26 |
 | 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 319 | 0.24 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 316 | 0.23 |
-| 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 324 | 0.23 |
-| 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 284 | 0.25 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 317 | 0.23 |
+| 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 325 | 0.23 |
+| 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 285 | 0.25 |
 | 7 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 295 | 0.24 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 286 | 0.24 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 265 | 0.25 |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T09:58:26.146981",
+  "generated_at": "2026-08-28T14:22:15.895829",
   "data_root": "/workspace/zoetron/data",
   "organs": {
     "benchmark_organ": null,
@@ -19,9 +19,12 @@
     "artefakte/model_health_check_20260827_210417.json",
     "artefakte/model_health_register.json",
     "artefakte/selbstdiagnose_bericht.json",
+    "artefakte/semantic_relevance_check.json",
     "artefakte/skills.json",
     "artefakte/swarm_run_1_20260827_054653.json",
     "artefakte/swarm_run_1_20260827_054759.json",
+    "artefakte/swarm_task_lru_cache_definition.json",
+    "artefakte/swarm_task_lru_cache_ergebnis.json",
     "artefakte/whisper_goals_priorisiert.json",
     "bahnen_replay.json",
     "benchmark_history.json",

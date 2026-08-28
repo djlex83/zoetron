@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 14:14:46",
+ "stand": "2026-08-28 14:22:36",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,6 +21,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-gezielt-trainieren.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -34,12 +40,6 @@
   },
   {
    "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-gezielt-trainieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -118,11 +118,11 @@
   }
  ],
  "haende_quote": 0.628,
- "simulationen_angewandt": 58,
+ "simulationen_angewandt": 57,
  "swarm_scores": {
-  "n": 42,
+  "n": 41,
   "best": 9.0,
-  "schnitt": 4.88
+  "schnitt": 4.8
  },
  "score_nach_ziel_typ": {
   "analyse": {

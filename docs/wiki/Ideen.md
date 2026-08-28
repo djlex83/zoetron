@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 14:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 14:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 15×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Poor calibration (predicted 3 vs actual 1) indicates unreliable self-assessment of task difficulty before execution.
+- Model reliability varies significantly — nemotron-3-ultra succeeded where multiple others failed, suggesting model-specific resilience patterns worth 
+- Evolutionary refinement can improve scores from 1/10 to 9/10, demonstrating the power of iterative variant generation as a recovery mechanism.
+- Code generation without pre-execution syntax validation produces unterminated strings that block entire execution pipelines.
+- Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), requiring fallback strategies.
 - Latency for successful model calls varies wildly (7.4s to 234.1s), suggesting that timeout limits must be generous or dynamically adjusted based on mo
 - Generated Python code occasionally contains unterminated string literals, indicating a need for stricter syntax validation before execution.
 - Models like `z-ai/glm-5.2:free` and `google/gemma-4-*` consistently hit 429 errors and should be deprioritized or removed from the active routing pool
@@ -51,11 +56,6 @@
 - Working models exhibit 77-106s latency, exceeding swarm iteration budgets and preventing convergence.
 - Rate limits (429) cascade across providers simultaneously, making sequential fallback ineffective without coordinated backoff.
 - Latency ranges from 8s to 128s across free-tier models, making timeout thresholds unpredictable without per-model profiling.
-- The evolution mechanism successfully produced a variant scoring 9/10 from a baseline of 4/10, proving iterative variant scoring is an effective conver
-- Calibration underestimated convergence iterations by 3x (predicted 1, actual 4), revealing a systematic optimism bias in iteration-count predictions.
-- Upstream 502 overloads from Nvidia endpoints show that even successful models are unreliable under concurrent load on free tiers.
-- Rate-limit errors (429) are the dominant failure mode across all free-tier models, indicating systemic API throttling rather than model-specific issue
-- Calibration and simulation phases both returned 'go' verdicts, indicating consistent readiness assessment across planning and execution layers.
 
 ---
 
