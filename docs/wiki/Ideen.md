@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Menschliche Eingriffe überflüssig machen *(wieder aufgegriffen: 2×)*
 - Simulationen in echtes Handeln übersetzen *(wieder aufgegriffen: 2×)*
-- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence criteria (score ≥ 8, critic converged, cycles ≥ 3, plateau < 0.5) are defined but not enforced automatically, leaving completion to ad-hoc
+- Five skill proposals were generated in one cycle but none validated in production, creating a proposal–validation gap that inflates technical debt.
+- Self-diagnosis and pruning organs report zero findings despite known issues (rate limits, stale data), indicating detection thresholds are too high or
+- Reflex-based tools reliably converge stale goals (market analyses) without planner involvement, suggesting reflexes are underused for maintenance task
+- Primary model (z-ai/glm-5.2) repeatedly hits 429 rate limits, causing fallback to secondary model with highly variable latency (6–36 s).
 - Self-diagnosis reports zero organ errors while model failures persist, showing that health monitoring focuses on internal state but ignores external d
 - Model latency varies widely (6–36 s) even for the same fallback model, making latency-sensitive planning unreliable without percentile-based budgets.
 - Reflex-driven execution succeeds for well-scoped tasks but lacks a mechanism to promote successful reflexes into durable skills.
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors while external model failures persist, revealing a blind spot where upstream API health is not treated as an 
 - Fallback to nvidia/nemotron-3-ultra succeeds but exhibits 9–15 s latency, violating any sub-10 s SLA for interactive tasks.
 - The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, indicating a hard quota ceiling that makes it unreliable as a primary endpoint
-- Repeated skill proposals for circuit breakers and model health tracking highlight a systemic gap in current model failure handling.
-- High latency on fallback models (e.g., 7-9 seconds for nvidia/nemotron) indicates a need for latency-aware routing.
-- Reflexes can successfully complete stale goals like 'Marktanalyse' when standard action loops fail to converge.
-- The z-ai/glm-5.2:free model is consistently rate-limited with 429 errors and should be temporarily removed from the active routing pool.
-- Swarm role specialization (1 planner, 3 builders, 1 critic) enabled evolution but lacked a convergence gate combining score plateau, critic satisfacti
 
 ---
 

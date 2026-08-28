@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5757 Fakten** · Stand 2026-08-28 23:26 UTC · aktualisiert bei jedem Herzschlag
+**5762 Fakten** · Stand 2026-08-28 23:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2546
+- **dream:** 2551
 - **swarm_artifact:** 1405
 - **last_swarm_critique:** 580
 - **anti_pattern:** 459
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828232947:5:fc8655`
+*28.08. 23:29 UTC · Quelle: dream*
+
+Convergence criteria (score ≥ 8, critic converged, cycles ≥ 3, plateau < 0.5) are defined but not enforced automatically, leaving completion to ad-hoc reflexes.
+
+### `dream:20260828232947:4:2b8830`
+*28.08. 23:29 UTC · Quelle: dream*
+
+Five skill proposals were generated in one cycle but none validated in production, creating a proposal–validation gap that inflates technical debt.
+
+### `dream:20260828232947:3:6fafe6`
+*28.08. 23:29 UTC · Quelle: dream*
+
+Self-diagnosis and pruning organs report zero findings despite known issues (rate limits, stale data), indicating detection thresholds are too high or scopes too narrow.
+
+### `dream:20260828232947:2:9afc57`
+*28.08. 23:29 UTC · Quelle: dream*
+
+Reflex-based tools reliably converge stale goals (market analyses) without planner involvement, suggesting reflexes are underused for maintenance tasks.
+
+### `dream:20260828232947:1:81e072`
+*28.08. 23:29 UTC · Quelle: dream*
+
+Primary model (z-ai/glm-5.2) repeatedly hits 429 rate limits, causing fallback to secondary model with highly variable latency (6–36 s).
 
 ### `dream:20260828232544:5:bd92b5`
 *28.08. 23:25 UTC · Quelle: dream*

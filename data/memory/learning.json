@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-28 23:26:03",
+ "stand": "2026-08-28 23:31:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 30,
-   "erfolge": 30,
+   "laeufe": 31,
+   "erfolge": 31,
    "quote": 1.0
   },
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
