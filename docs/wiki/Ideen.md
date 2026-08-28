@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 04:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 04:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Poolside model latency of 145s stalls the pipeline; async calls with timeout fallback are needed.
+- Evolutionary refinement consistently lifts artifact scores from 6 to 9 while respecting the 20k-token size constraint.
+- Calibration error of 4 points (predicted 2 vs actual 6) reveals systematic underestimation of task complexity.
+- Missing simulation artifact (simulate.py) triggers silent fallback to empty data, corrupting the learning signal.
+- Free-tier models repeatedly hit 429 rate limits, making retry-with-fallback essential for reliability.
 - Reflex-to-tool binding (aufgaben-priorisieren.py) fails silently under resource pressure, breaking the closed loop between drive goals and executable 
 - Metabolism enters 'conserve' at stress=1.0 with only 3 tasks/1 iteration, starving the very simulations and skill executions needed to reduce failure 
 - File-system actions fail because relative paths ignore the mandatory ZOETRON_DATA environment variable and sys.argv[1] input contract, causing silent 
@@ -51,11 +56,6 @@
 - Hand actions exit 1 within ~1s with zero bytes read and no error payload, pointing to missing binary, permission denial, or stdin/stdout wiring failur
 - Simulation artifact fails at runtime with fallback demo data and traceback, indicating missing test data or broken scenario loader in the execution en
 - OpenRouter gateway rate-limits (429) cascade across all free models simultaneously, requiring request-level queuing rather than model-level fallback.
-- Simulation-based revision (verdict: revise, 5 risks identified, 4 revisions generated, 2 applied) effectively catches errors before deployment; make s
-- The system enters conserve mode at stress 1.0, throttling capability to 3 tasks; workload must be shed or deferred proactively before stress hits crit
-- File system operations fail due to unresolved relative paths and missing environment variable expansion; all paths must be canonicalized against ZOETR
-- Proposed skills remain unused because the deployment pipeline lacks automated validation, testing, and integration steps; a skill lifecycle manager is
-- Free-tier model APIs exhibit cascading rate-limit failures (429 errors across 5 models) under load, requiring a model registry with real-time health t
 
 ---
 

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5029 Fakten** · Stand 2026-08-28 04:13 UTC · aktualisiert bei jedem Herzschlag
+**5046 Fakten** · Stand 2026-08-28 04:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2108
-- **swarm_artifact:** 1257
-- **last_swarm_critique:** 554
-- **anti_pattern:** 415
-- **last_swarm_goal:** 303
-- **strategy:** 228
+- **dream:** 2113
+- **swarm_artifact:** 1263
+- **last_swarm_critique:** 555
+- **anti_pattern:** 417
+- **last_swarm_goal:** 304
+- **strategy:** 229
 - **hand_result:** 58
-- **tool:** 37
+- **tool:** 38
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-skills-wirklich-testen`
+*28.08. 04:29 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Skills wirklich testen'. Datei: data/tools/vorgeschlagene-skills-wirklich-testen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Skills wi:2`
+*28.08. 04:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Pytest-Driven Test Generation and Execution - Generate a pytest test file per skill that parametrizes the proposal's test cases. Each test case becomes a parametrized test function that calls the skill and asserts against exp
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Skills wi:0`
+*28.08. 04:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Sandboxed Subprocess Execution with Proposal-Defined Test Cases - For each skill proposal, write a temporary Python script that imports the skill code (written to a temp module) and executes the exact test cases defined in th
+
+### `last_swarm_critique`
+*28.08. 04:26 UTC · Quelle: critic*
+
+score=4; issues=Artifact 1 (benchmark_organ extension) mocks skill execution via build_skill_function - returns simulated results instead of actually running skill code, violating 'wirklich testen'; Artifact 1 generates synthetic test cases (happy_path, partia
+
+### `last_swarm_goal`
+*28.08. 04:18 UTC · Quelle: system*
+
+Vorgeschlagene Skills wirklich testen
+
+### `dream:20260828041654:5:f783a4`
+*28.08. 04:16 UTC · Quelle: dream*
+
+Poolside model latency of 145s stalls the pipeline; async calls with timeout fallback are needed.
+
+### `dream:20260828041654:4:dc8e33`
+*28.08. 04:16 UTC · Quelle: dream*
+
+Evolutionary refinement consistently lifts artifact scores from 6 to 9 while respecting the 20k-token size constraint.
+
+### `dream:20260828041654:3:3a56ec`
+*28.08. 04:16 UTC · Quelle: dream*
+
+Calibration error of 4 points (predicted 2 vs actual 6) reveals systematic underestimation of task complexity.
+
+### `dream:20260828041654:2:c0f19c`
+*28.08. 04:16 UTC · Quelle: dream*
+
+Missing simulation artifact (simulate.py) triggers silent fallback to empty data, corrupting the learning signal.
+
+### `dream:20260828041654:1:073ebf`
+*28.08. 04:16 UTC · Quelle: dream*
+
+Free-tier models repeatedly hit 429 rate limits, making retry-with-fallback essential for reliability.
 
 ### `dream:20260828041230:5:4e96f0`
 *28.08. 04:12 UTC · Quelle: dream*
