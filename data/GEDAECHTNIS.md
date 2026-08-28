@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5190 Fakten** · Stand 2026-08-28 07:41 UTC · aktualisiert bei jedem Herzschlag
+**5207 Fakten** · Stand 2026-08-28 07:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2208
-- **swarm_artifact:** 1289
-- **last_swarm_critique:** 560
-- **anti_pattern:** 423
-- **last_swarm_goal:** 309
-- **strategy:** 232
+- **dream:** 2213
+- **swarm_artifact:** 1295
+- **last_swarm_critique:** 561
+- **anti_pattern:** 425
+- **last_swarm_goal:** 310
+- **strategy:** 233
 - **hand_result:** 60
-- **tool:** 40
+- **tool:** 41
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:simulationen-in-echtes-handeln-übersetze`
+*28.08. 07:54 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen in echtes Handeln übersetzen'. Datei: data/tools/simulationen-in-echtes-handeln-übersetze.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen in echtes H:1`
+*28.08. 07:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Behavioral Cloning via Execution Feedback Loop - Einführen eines Lernalgorithmus, der aus echten Ausführungsversuchen lernt: Der Bot versucht eine Aktion basierend auf einer Simulationsvorlage, die Ausführung wird über Sensor
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen in echtes H:0`
+*28.08. 07:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Hardware-First Embodiment Pipeline - Statt Code-Strukturen zu generieren und zu validieren, entwickle eine direkte Übersetzung von Simulationsebenen in physische Aktionsabläufe. Definiere eine feste Middleware-Schnittstelle (
+
+### `last_swarm_critique`
+*28.08. 07:53 UTC · Quelle: critic*
+
+score=5; issues=Die im Bridge-Modul generierte Code-Struktur (_generate_code) wird nie kompiliert oder ausgefuehrt – es bleibt bei statischer Syntax-Validierung und Text-Artefakten, nicht bei echtem ausgefuehrtem Handeln.; ActionExecutor ist fuer die tatsaechl
+
+### `last_swarm_goal`
+*28.08. 07:50 UTC · Quelle: system*
+
+Simulationen in echtes Handeln übersetzen
+
+### `dream:20260828075000:5:76b794`
+*28.08. 07:50 UTC · Quelle: dream*
+
+The simulation initially flagged 5 risks requiring revision, but the final artifact (187 lines Python) passed validation, suggesting early risk assessments overstate actual blockers.
+
+### `dream:20260828075000:4:18bed3`
+*28.08. 07:50 UTC · Quelle: dream*
+
+The task converged to score 9 in a single cycle despite >70% model call failure rate, proving that redundant model fallback strategies can absorb rate-limiting noise.
+
+### `dream:20260828075000:3:f501c5`
+*28.08. 07:50 UTC · Quelle: dream*
+
+Calibration predicted 3 revisions but actual was 9, a 3x underestimation indicating that initial effort estimates must account for retry overhead and failure-induced rework.
+
+### `dream:20260828075000:2:b12e5d`
+*28.08. 07:50 UTC · Quelle: dream*
+
+Nvidia/nemotron-3-ultra-550b-a55b was the only consistently reliable model, succeeding despite latencies up to 115s and occasional 502 upstream errors, and achieving the highest score of 9.
+
+### `dream:20260828075000:1:30ca5a`
+*28.08. 07:50 UTC · Quelle: dream*
+
+Rate limiting (429 errors) was the dominant failure mode across nearly all free-tier models, not model capability or endpoint availability.
 
 ### `dream:20260828074059:5:a36f9d`
 *28.08. 07:40 UTC · Quelle: dream*

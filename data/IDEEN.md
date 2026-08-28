@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 07:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 07:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
-- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
+- Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation initially flagged 5 risks requiring revision, but the final artifact (187 lines Python) passed validation, suggesting early risk assess
+- The task converged to score 9 in a single cycle despite >70% model call failure rate, proving that redundant model fallback strategies can absorb rate
+- Calibration predicted 3 revisions but actual was 9, a 3x underestimation indicating that initial effort estimates must account for retry overhead and 
+- Nvidia/nemotron-3-ultra-550b-a55b was the only consistently reliable model, succeeding despite latencies up to 115s and occasional 502 upstream errors
+- Rate limiting (429 errors) was the dominant failure mode across nearly all free-tier models, not model capability or endpoint availability.
 - High-latency successful responses (e.g., 69s) suggest that speed and reliability are inversely correlated, requiring adaptive timeout strategies.
 - Transient file access issues and missing tools cause silent failures that could be caught with pre-flight checks.
 - Proposed skills remain unused because there's no mechanism to validate or integrate them into active workflows.
@@ -51,11 +56,6 @@
 - Old dreams and memories contain reusable knowledge that only surfaces when actively retrieved and cross-linked, not when passively stored.
 - A persistent gap between skill proposal generation and actual implementation reveals that proposals lack execution triggers or enforcement mechanisms.
 - Recurring 429 errors from the same model endpoint indicate a systematic reliability gap that demands automatic fallback, not manual retry.
-- Skill proposals already address model routing, swarm convergence, and simulation loops, but none have been enacted, showing a proposal-adoption gap.
-- The fallback model's latency varies widely (30-96s), making timeout budgets essential for predictable performance.
-- Multiple drive goals request more simulation/swarm usage but no simulation or swarm actions appear in the log, indicating a planning-execution gap.
-- Reflex-driven goals converge in one step without iteration, suggesting the convergence criteria are either too loose or the tasks are trivial.
-- The system repeatedly fails over from z-ai/glm-5.2:free (429 rate limits) to nvidia/nemotron-3-ultra, revealing a single-point-of-failure in model rou
 
 ---
 
