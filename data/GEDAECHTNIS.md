@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5175 Fakten** · Stand 2026-08-28 07:23 UTC · aktualisiert bei jedem Herzschlag
+**5180 Fakten** · Stand 2026-08-28 07:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2193
+- **dream:** 2198
 - **swarm_artifact:** 1289
 - **last_swarm_critique:** 560
 - **anti_pattern:** 423
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828073007:5:03081d`
+*28.08. 07:30 UTC · Quelle: dream*
+
+Skill proposals already address model routing, swarm convergence, and simulation loops, but none have been enacted, showing a proposal-adoption gap.
+
+### `dream:20260828073007:4:873eab`
+*28.08. 07:30 UTC · Quelle: dream*
+
+The fallback model's latency varies widely (30-96s), making timeout budgets essential for predictable performance.
+
+### `dream:20260828073007:3:55617a`
+*28.08. 07:30 UTC · Quelle: dream*
+
+Multiple drive goals request more simulation/swarm usage but no simulation or swarm actions appear in the log, indicating a planning-execution gap.
+
+### `dream:20260828073007:2:4bdce1`
+*28.08. 07:30 UTC · Quelle: dream*
+
+Reflex-driven goals converge in one step without iteration, suggesting the convergence criteria are either too loose or the tasks are trivial.
+
+### `dream:20260828073007:1:cff830`
+*28.08. 07:30 UTC · Quelle: dream*
+
+The system repeatedly fails over from z-ai/glm-5.2:free (429 rate limits) to nvidia/nemotron-3-ultra, revealing a single-point-of-failure in model routing that lacks proactive health tracking.
 
 ### `dream:20260828072201:5:14108d`
 *28.08. 07:22 UTC · Quelle: dream*
