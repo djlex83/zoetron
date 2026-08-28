@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3257 Neuronen · 91884 bewertete Synapsen
+Stand: 3262 Neuronen · 92035 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,10 +12,10 @@ Stand: 3257 Neuronen · 91884 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 319 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 319 | 0.25 |
-| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 261 | 0.24 |
+| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 262 | 0.24 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 258 | 0.24 |
-| 5 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 252 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 256 | 0.23 |
+| 5 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 253 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 257 | 0.23 |
 | 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 236 | 0.25 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 229 | 0.24 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 215 | 0.24 |

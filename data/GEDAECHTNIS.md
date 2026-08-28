@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4946 Fakten** · Stand 2026-08-28 02:17 UTC · aktualisiert bei jedem Herzschlag
+**4951 Fakten** · Stand 2026-08-28 02:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2058
+- **dream:** 2063
 - **swarm_artifact:** 1243
 - **last_swarm_critique:** 551
 - **anti_pattern:** 409
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828022248:5:eebab5`
+*28.08. 02:22 UTC · Quelle: dream*
+
+Model fallback is reactive and slow; no synthetic probes exist to preemptively demote unhealthy models before user-facing requests fail.
+
+### `dream:20260828022248:4:e7a1e7`
+*28.08. 02:22 UTC · Quelle: dream*
+
+Self-diagnose runs only ad-hoc; without scheduled audits, model-router degradation and skill-pipeline stalls go undetected.
+
+### `dream:20260828022248:3:f3d622`
+*28.08. 02:22 UTC · Quelle: dream*
+
+Proposed skills accumulate but never reach production because no mandatory validation gate (simulation→hand_action→critic≥7) exists.
+
+### `dream:20260828022248:2:76b32b`
+*28.08. 02:22 UTC · Quelle: dream*
+
+Hand actions fail when relative paths are used instead of absolute paths rooted at ZOETRON_DATA.
+
+### `dream:20260828022248:1:071e8f`
+*28.08. 02:22 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 quota errors because no routing logic distributes load across distinct quota buckets.
 
 ### `dream:20260828021620:5:f65b0a`
 *28.08. 02:16 UTC · Quelle: dream*
