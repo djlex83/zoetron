@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5604 Fakten** · Stand 2026-08-28 20:13 UTC · aktualisiert bei jedem Herzschlag
+**5609 Fakten** · Stand 2026-08-28 20:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2447
+- **dream:** 2452
 - **swarm_artifact:** 1375
 - **last_swarm_critique:** 575
 - **anti_pattern:** 453
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828201705:5:1d5719`
+*28.08. 20:17 UTC · Quelle: dream*
+
+System enters conserve mode (stress=1.0) limiting to 3 tasks, requiring atomic task decomposition for progress.
+
+### `dream:20260828201705:4:ba854c`
+*28.08. 20:17 UTC · Quelle: dream*
+
+Fallback models (Nemotron) succeed but with 16-50s latency, making them unsuitable for time-critical paths without async handling.
+
+### `dream:20260828201705:3:28aadb`
+*28.08. 20:17 UTC · Quelle: dream*
+
+All file operations fail when paths aren't strictly resolved against ZOETRON_DATA environment variable.
+
+### `dream:20260828201705:2:d16889`
+*28.08. 20:17 UTC · Quelle: dream*
+
+Swarm simulations produce revisions that don't translate to convergence, indicating a simulation-reality gap in evaluation criteria.
+
+### `dream:20260828201705:1:70bd8a`
+*28.08. 20:17 UTC · Quelle: dream*
+
+Free tier models consistently hit 429 rate limits requiring automatic failover with exponential backoff before switching.
 
 ### `dream:20260828201219:5:0268da`
 *28.08. 20:12 UTC · Quelle: dream*
