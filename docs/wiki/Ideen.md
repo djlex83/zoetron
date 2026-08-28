@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 14:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -34,13 +34,18 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 2×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A single fast reliable model (ling-3.0-flash-fin at 10s) outperforms slower 'premium' models on reliability, proving that operational consistency beat
+- Dreams and simulations run in isolation; feeding dream-generated hypotheses into simulation verdicts and simulation failures into dream consolidation 
+- Skill proposals accumulate (30+) but lack automated validation; a proposal→simulation→merge pipeline with risk_count<2 and latency_p95<30s gates would
+- Latency variance between models is extreme (10s vs 141s for success), so model selection must weight p95 latency and success probability, not just cap
+- Free-tier models across all providers consistently hit 429 rate limits, making provider-aware token-bucket rate limiting with 429-triggered exponentia
 - Self-diagnosis reports zero internal organ errors, confirming that failures are external (infrastructure/API) rather than logic defects.
 - Convergence predictions systematically underestimate actual iterations needed, indicating a calibration bias that compounds over swarm runs.
 - Model latency varies by over 12x (6.4s to 80.8s), making fixed global timeouts unreliable and causing premature failures on slow endpoints.
@@ -51,11 +56,6 @@
 - Swarm tasks that do not converge indicate a need for better pre-execution validation or goal alignment before launch.
 - High latency on successful model calls (e.g., 80.8s) indicates that response time must be factored into model selection.
 - Free-tier LLM endpoints are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
-- Poor calibration (predicted 3 vs actual 1) indicates unreliable self-assessment of task difficulty before execution.
-- Model reliability varies significantly — nemotron-3-ultra succeeded where multiple others failed, suggesting model-specific resilience patterns worth 
-- Evolutionary refinement can improve scores from 1/10 to 9/10, demonstrating the power of iterative variant generation as a recovery mechanism.
-- Code generation without pre-execution syntax validation produces unterminated strings that block entire execution pipelines.
-- Free-tier models on OpenRouter are highly susceptible to rate limiting (429) and upstream overload (502), requiring fallback strategies.
 
 ---
 

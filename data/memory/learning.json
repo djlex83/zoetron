@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 14:39:36",
+ "stand": "2026-08-28 15:07:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,6 +69,12 @@
    "quote": 1.0
   },
   {
+   "tool": "aufgaben-priorisieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -93,12 +99,6 @@
    "quote": 1.0
   },
   {
-   "tool": "aufgaben-priorisieren.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -117,17 +117,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.634,
- "simulationen_angewandt": 57,
+ "haende_quote": 0.616,
+ "simulationen_angewandt": 56,
  "swarm_scores": {
   "n": 41,
   "best": 9.0,
-  "schnitt": 4.8
+  "schnitt": 4.76
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 39,
-   "schnitt": 4.95
+   "schnitt": 4.85
   },
   "bau": {
    "n": 1,

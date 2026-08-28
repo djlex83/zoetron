@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5425 Fakten** · Stand 2026-08-28 14:40 UTC · aktualisiert bei jedem Herzschlag
+**5442 Fakten** · Stand 2026-08-28 15:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2352
-- **swarm_artifact:** 1333
-- **last_swarm_critique:** 568
-- **anti_pattern:** 439
-- **last_swarm_goal:** 317
-- **strategy:** 240
-- **hand_result:** 63
+- **dream:** 2357
+- **swarm_artifact:** 1339
+- **last_swarm_critique:** 569
+- **anti_pattern:** 441
+- **last_swarm_goal:** 318
+- **strategy:** 241
+- **hand_result:** 64
 - **tool:** 44
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen für echte A:2`
+*28.08. 15:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Property-Based Contract Testing with Hypothesis + Schema Validation - Define the simulation's input/output contract as JSON Schemas (or Pydantic models). Use Hypothesis to generate thousands of valid input payloads from the i
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen für echte A:1`
+*28.08. 15:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Pure-Python In-Process Sandbox with Capability Restriction - Execute simulations in the same process but inside a restricted execution context using Python's built-in sandboxing primitives: create a custom sys.meta_path impor
+
+### `last_swarm_critique`
+*28.08. 14:58 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - beide Artefakte werfen Tracebacks (Zeile 254 und 278), damit ist der Vertrag verletzt (kein lauffaehiger Python-Block); Erstes Skript: MemoryStore-Import-Fallback unvollstaendig, Pfad-Logik fehlerhaft (data_dir ka
+
+### `last_swarm_goal`
+*28.08. 14:46 UTC · Quelle: system*
+
+Simulationen für echte Aufgaben testen
+
+### `dream:20260828144509:5:6ad114`
+*28.08. 14:45 UTC · Quelle: dream*
+
+A single fast reliable model (ling-3.0-flash-fin at 10s) outperforms slower 'premium' models on reliability, proving that operational consistency beats theoretical quality under rate limits.
+
+### `dream:20260828144509:4:3029dd`
+*28.08. 14:45 UTC · Quelle: dream*
+
+Dreams and simulations run in isolation; feeding dream-generated hypotheses into simulation verdicts and simulation failures into dream consolidation would close the learning loop.
+
+### `dream:20260828144509:3:bf9f3f`
+*28.08. 14:45 UTC · Quelle: dream*
+
+Skill proposals accumulate (30+) but lack automated validation; a proposal→simulation→merge pipeline with risk_count<2 and latency_p95<30s gates would convert ideas into capabilities.
+
+### `dream:20260828144509:2:4d4e05`
+*28.08. 14:45 UTC · Quelle: dream*
+
+Latency variance between models is extreme (10s vs 141s for success), so model selection must weight p95 latency and success probability, not just capability.
+
+### `dream:20260828144509:1:023037`
+*28.08. 14:45 UTC · Quelle: dream*
+
+Free-tier models across all providers consistently hit 429 rate limits, making provider-aware token-bucket rate limiting with 429-triggered exponential backoff a survival requirement.
 
 ### `dream:20260828143725:5:57656e`
 *28.08. 14:37 UTC · Quelle: dream*
