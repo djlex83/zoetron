@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 08:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 - Fähigkeiten gezielt trainieren *(wieder aufgegriffen: 2×)*
+- Neue Fähigkeiten erlernen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions (0.33s) and code execution succeed consistently while LLM calls are the primary bottleneck.
+- Evolution with 3 variants reliably produces high-scoring candidates (8/10) even when base attempt scored only 5/10.
+- Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of task difficulty.
+- Smaller fast models (ling-3.0-flash-fin ~8-19s) succeed more reliably than larger models that hit rate limits repeatedly.
+- Rate limiting (HTTP 429) is the dominant failure mode across all model providers, not an isolated model issue.
 - The reflex-based goal 'Mehr Träume zum Lernen nutzen' converged successfully, suggesting that reflex-mode execution is more resilient than model-depen
 - Self-diagnosis reported zero organ errors while model failures persisted, confirming that the failures are external infrastructure-level events that i
 - Even the sole successful model (poolside/laguna-s-2.1) exhibited 3x latency variance between calls (6.1s vs 18.0s), meaning a single working endpoint 
@@ -51,11 +56,6 @@
 - Calibration predicted 3 revisions but actual was 9, a 3x underestimation indicating that initial effort estimates must account for retry overhead and 
 - Nvidia/nemotron-3-ultra-550b-a55b was the only consistently reliable model, succeeding despite latencies up to 115s and occasional 502 upstream errors
 - Rate limiting (429 errors) was the dominant failure mode across nearly all free-tier models, not model capability or endpoint availability.
-- High-latency successful responses (e.g., 69s) suggest that speed and reliability are inversely correlated, requiring adaptive timeout strategies.
-- Transient file access issues and missing tools cause silent failures that could be caught with pre-flight checks.
-- Proposed skills remain unused because there's no mechanism to validate or integrate them into active workflows.
-- Model failures cascade into swarm stagnation when convergence isn't monitored against actual execution outcomes.
-- Repeated 429 errors from specific endpoints indicate a need for dynamic rate-limit-aware routing rather than static fallback chains.
 
 ---
 

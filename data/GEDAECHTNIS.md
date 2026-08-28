@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5224 Fakten** · Stand 2026-08-28 08:29 UTC · aktualisiert bei jedem Herzschlag
+**5241 Fakten** · Stand 2026-08-28 09:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2218
-- **swarm_artifact:** 1301
-- **last_swarm_critique:** 562
-- **anti_pattern:** 427
-- **last_swarm_goal:** 311
-- **strategy:** 234
+- **dream:** 2223
+- **swarm_artifact:** 1307
+- **last_swarm_critique:** 563
+- **anti_pattern:** 429
+- **last_swarm_goal:** 312
+- **strategy:** 235
 - **hand_result:** 60
-- **tool:** 42
+- **tool:** 43
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:träume-in-taten-umsetzen`
+*28.08. 09:26 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume in Taten umsetzen'. Datei: data/tools/träume-in-taten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Träume in Taten umsetzen:1`
+*28.08. 09:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Semantic-to-Experiment Compiler - Replace template-based benchmark generation with a compiler that translates hypothesis semantics directly into executable experiment specifications. Each hypothesis carries its own verificati
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Träume in Taten umsetzen:0`
+*28.08. 09:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Self-Contained Executor Architecture - Eliminate the 'hands' organ dependency entirely by embedding a sandboxed execution engine directly in the runner. The system becomes its own executor: hypotheses compile to WASM modules 
+
+### `last_swarm_critique`
+*28.08. 09:24 UTC · Quelle: critic*
+
+score=6; issues=Missing hands organ dependency - the runner assumes a 'hands' executable that reads JSON input and produces JSON output, but this organ is not provided in the artifacts; Synthetic benchmark generation: the compiler creates template-based Python
+
+### `last_swarm_goal`
+*28.08. 09:08 UTC · Quelle: system*
+
+Träume in Taten umsetzen
+
+### `dream:20260828090703:5:c87811`
+*28.08. 09:07 UTC · Quelle: dream*
+
+Hand actions (0.33s) and code execution succeed consistently while LLM calls are the primary bottleneck.
+
+### `dream:20260828090703:4:2586dc`
+*28.08. 09:07 UTC · Quelle: dream*
+
+Evolution with 3 variants reliably produces high-scoring candidates (8/10) even when base attempt scored only 5/10.
+
+### `dream:20260828090703:3:0ada4e`
+*28.08. 09:07 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of task difficulty.
+
+### `dream:20260828090703:2:12dbeb`
+*28.08. 09:07 UTC · Quelle: dream*
+
+Smaller fast models (ling-3.0-flash-fin ~8-19s) succeed more reliably than larger models that hit rate limits repeatedly.
+
+### `dream:20260828090703:1:069b02`
+*28.08. 09:07 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all model providers, not an isolated model issue.
 
 ### `tool:modellfehler-deutlich-reduzieren`
 *28.08. 08:28 UTC · Quelle: hands*
