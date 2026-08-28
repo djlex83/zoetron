@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-28 15:37:55",
+ "stand": "2026-08-28 15:44:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 23,
-   "erfolge": 23,
+   "laeufe": 24,
+   "erfolge": 24,
    "quote": 1.0
   },
   {
@@ -75,12 +75,6 @@
    "quote": 0.0
   },
   {
-   "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -123,8 +117,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.63,
- "simulationen_angewandt": 55,
+ "haende_quote": 0.636,
+ "simulationen_angewandt": 54,
  "swarm_scores": {
   "n": 40,
   "best": 9.0,
@@ -132,8 +126,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 39,
-   "schnitt": 4.85
+   "n": 38,
+   "schnitt": 4.74
   },
   "bau": {
    "n": 1,

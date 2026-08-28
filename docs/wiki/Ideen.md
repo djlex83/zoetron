@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration overestimates success probability (predicted 2 vs actual 1), revealing a systematic optimism bias in task difficulty estimation.
+- Hand actions fail with exit code 1 and no error message, indicating silent crashes in the execution sandbox.
+- Poolside/laguna-s-2.1:free is the only model showing consistent low-latency success (7.9s) under current load.
+- Nemotron-3-ultra succeeds but with 90-200s latency, rendering it unusable for interactive loops.
+- Free-tier models on OpenRouter suffer systematic 429 rate-limiting and 502 upstream overloads, making them unreliable for production workloads.
 - Simulation-based revision loops execute (3 revisions applied) but produce plans with 5 risks, showing revision without risk filtering is unsafe.
 - Metabolism stress at 1.0 forces conserve mode with a 1-iteration budget, rendering any multi-step plan infeasible without explicit prioritization.
 - File operations fail because relative paths are used instead of resolving against ZOETRON_DATA, breaking data access in all hand actions.
@@ -51,11 +56,6 @@
 - Model failures cascade when fallback logic is absent, as seen when nvidia/nemotron failed after z-ai/glm already hit 429.
 - Latency variance is extreme (5.9s to 143.1s), making single-model reliance risky and justifying dynamic dispatch.
 - 429 errors are the dominant failure mode across multiple providers, indicating systemic rate-limiting rather than isolated model issues.
-- Self-diagnosis and pruning cycles run cleanly but produce no signal, indicating monitoring lacks sensitivity to model-failure patterns.
-- Reflex-driven script execution (fähigkeiten-gezielt-trainieren.py) can close the proposal-to-implementation gap when triggered.
-- Successful hand actions (exit 0) demonstrate that local tool execution is reliable, unlike external model APIs.
-- Skill proposals accumulate without execution because no mandatory conversion mechanism bridges dream-phase ideas to waking-phase actions.
-- Free tier models consistently fail under load with 429/502 errors, making reliability the primary bottleneck for autonomous operation.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5462 Fakten** · Stand 2026-08-28 15:38 UTC · aktualisiert bei jedem Herzschlag
+**5467 Fakten** · Stand 2026-08-28 15:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2377
+- **dream:** 2382
 - **swarm_artifact:** 1339
 - **last_swarm_critique:** 569
 - **anti_pattern:** 441
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828154255:5:0be632`
+*28.08. 15:42 UTC · Quelle: dream*
+
+Calibration overestimates success probability (predicted 2 vs actual 1), revealing a systematic optimism bias in task difficulty estimation.
+
+### `dream:20260828154255:4:71c221`
+*28.08. 15:42 UTC · Quelle: dream*
+
+Hand actions fail with exit code 1 and no error message, indicating silent crashes in the execution sandbox.
+
+### `dream:20260828154255:3:562072`
+*28.08. 15:42 UTC · Quelle: dream*
+
+Poolside/laguna-s-2.1:free is the only model showing consistent low-latency success (7.9s) under current load.
+
+### `dream:20260828154255:2:b17f97`
+*28.08. 15:42 UTC · Quelle: dream*
+
+Nemotron-3-ultra succeeds but with 90-200s latency, rendering it unusable for interactive loops.
+
+### `dream:20260828154255:1:f1adc8`
+*28.08. 15:42 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systematic 429 rate-limiting and 502 upstream overloads, making them unreliable for production workloads.
 
 ### `dream:20260828153558:5:3c7b0b`
 *28.08. 15:35 UTC · Quelle: dream*
