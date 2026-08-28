@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, showing that health monitoring focuses on internal state but ignores external d
+- Model latency varies widely (6–36 s) even for the same fallback model, making latency-sensitive planning unreliable without percentile-based budgets.
+- Reflex-driven execution succeeds for well-scoped tasks but lacks a mechanism to promote successful reflexes into durable skills.
+- Skill proposals accumulate but are not automatically enacted, creating a proposal-implementation gap that stalls capability growth.
+- The system repeatedly fails over to a high-latency fallback model because the primary free model is persistently rate-limited, indicating a missing ci
 - Reflex mode completes routine goals (market update, skill discovery) reliably, but drive goals (reduce errors, use analyses, apply dreams) remain unac
 - Skill proposals accumulate (router, backoff, quota scheduler, gap analyzer, plateau detector) but none are implemented, showing a broken proposal-to-p
 - Self-diagnosis reports zero organ errors while external model failures persist, revealing a blind spot where upstream API health is not treated as an 
@@ -51,11 +56,6 @@
 - Reflexes can successfully complete stale goals like 'Marktanalyse' when standard action loops fail to converge.
 - The z-ai/glm-5.2:free model is consistently rate-limited with 429 errors and should be temporarily removed from the active routing pool.
 - Swarm role specialization (1 planner, 3 builders, 1 critic) enabled evolution but lacked a convergence gate combining score plateau, critic satisfacti
-- Simulation detected 3 risks and drove 3 revisions — risk-to-revision mapping is a working pattern worth codifying.
-- Critic feedback was truncated ("Die drei identifizierten Analyse-Sch") making revision targeting unreliable; structured critic output is essential.
-- Evolution improved variant scores (5→9) but swarm halted at 2 cycles without convergence — fixed cycle budgets prevent quality asymptotes.
-- Free-tier rate limits (429 errors across 4 models) are a systemic bottleneck requiring a modeled fallback chain with latency/quality tradeoffs.
-- Goal completion succeeds despite model failures because the system falls back to executing local Python artifacts.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5752 Fakten** · Stand 2026-08-28 23:21 UTC · aktualisiert bei jedem Herzschlag
+**5757 Fakten** · Stand 2026-08-28 23:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2541
+- **dream:** 2546
 - **swarm_artifact:** 1405
 - **last_swarm_critique:** 580
 - **anti_pattern:** 459
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828232544:5:bd92b5`
+*28.08. 23:25 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, showing that health monitoring focuses on internal state but ignores external dependency reliability.
+
+### `dream:20260828232544:4:c59996`
+*28.08. 23:25 UTC · Quelle: dream*
+
+Model latency varies widely (6–36 s) even for the same fallback model, making latency-sensitive planning unreliable without percentile-based budgets.
+
+### `dream:20260828232544:3:590c02`
+*28.08. 23:25 UTC · Quelle: dream*
+
+Reflex-driven execution succeeds for well-scoped tasks but lacks a mechanism to promote successful reflexes into durable skills.
+
+### `dream:20260828232544:2:a1733c`
+*28.08. 23:25 UTC · Quelle: dream*
+
+Skill proposals accumulate but are not automatically enacted, creating a proposal-implementation gap that stalls capability growth.
+
+### `dream:20260828232544:1:c660e6`
+*28.08. 23:25 UTC · Quelle: dream*
+
+The system repeatedly fails over to a high-latency fallback model because the primary free model is persistently rate-limited, indicating a missing circuit-breaker and health-aware routing layer.
 
 ### `dream:20260828232049:5:923035`
 *28.08. 23:20 UTC · Quelle: dream*
