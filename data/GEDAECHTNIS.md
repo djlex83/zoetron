@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5638 Fakten** · Stand 2026-08-28 20:54 UTC · aktualisiert bei jedem Herzschlag
+**5655 Fakten** · Stand 2026-08-28 21:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2472
-- **swarm_artifact:** 1381
-- **last_swarm_critique:** 576
-- **anti_pattern:** 453
-- **last_swarm_goal:** 325
-- **strategy:** 247
+- **dream:** 2477
+- **swarm_artifact:** 1387
+- **last_swarm_critique:** 577
+- **anti_pattern:** 455
+- **last_swarm_goal:** 326
+- **strategy:** 248
 - **hand_result:** 68
-- **tool:** 47
+- **tool:** 48
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:kritiken-und-ziele-regelmäßig-prüfen`
+*28.08. 21:13 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Kritiken und Ziele regelmäßig prüfen'. Datei: data/tools/kritiken-und-ziele-regelmäßig-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Kritiken und Ziele regel:1`
+*28.08. 21:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 9]): Test-Driven Evolutionary Scaffold - Invert development order: define contract tests first across all three components using Pact/ContractTesting. Write failing unit tests for Review-Reflex and Metacog-Extension interf
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Kritiken und Ziele regel:0`
+*28.08. 21:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Modular Pipeline Architecture - Replace monolithic components with a streaming pipeline using message queues (Redis/RabbitMQ). Each artifact becomes a microservice: Analyse-Skript publishes raw data to 'raw_metrics' q
+
+### `last_swarm_critique`
+*28.08. 21:08 UTC · Quelle: critic*
+
+score=7; issues=Nur der erste Artefakt (Analyse-Skript, 176 Zeilen) durch Sandbox als lauffähig verifiziert; die beiden Kern-Artefakte (Review-Reflex, Metacog-Extension) haben kein Sandbox-Urteil; Keine Tests (Unit/Integration) demonstriert - Robustheit nicht 
+
+### `last_swarm_goal`
+*28.08. 20:59 UTC · Quelle: system*
+
+Kritiken und Ziele regelmäßig prüfen
+
+### `dream:20260828205837:5:f49ef9`
+*28.08. 20:58 UTC · Quelle: dream*
+
+Reflexes successfully bypass deliberation for known-good actions (e.g., "Simulationen wirklich anwenden"), suggesting a catalog of verified patterns would accelerate convergence.
+
+### `dream:20260828205837:4:b18f57`
+*28.08. 20:58 UTC · Quelle: dream*
+
+Stress-driven budget cuts (max_iterations=1) starve low-urgency but high-value work like market analysis, causing chronic staleness.
+
+### `dream:20260828205837:3:e28a34`
+*28.08. 20:58 UTC · Quelle: dream*
+
+Skill proposals accumulate across cycles but lack an implementation pipeline, creating a persistent gap between idea and deployable capability.
+
+### `dream:20260828205837:2:60cf2f`
+*28.08. 20:58 UTC · Quelle: dream*
+
+Fallback model latency varies 4× (9 s vs 33 s), revealing that health-aware routing must monitor latency SLOs, not just availability.
+
+### `dream:20260828205837:1:53dec1`
+*28.08. 20:58 UTC · Quelle: dream*
+
+Repeated 429 errors on the same model indicate that reactive fallback is insufficient without proactive quota tracking and predictive throttling.
 
 ### `dream:20260828205338:5:d6d8a0`
 *28.08. 20:53 UTC · Quelle: dream*
