@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4884 Fakten** · Stand 2026-08-28 00:47 UTC · aktualisiert bei jedem Herzschlag
+**4898 Fakten** · Stand 2026-08-28 01:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2028
-- **swarm_artifact:** 1225
-- **last_swarm_critique:** 548
+- **dream:** 2033
+- **swarm_artifact:** 1231
+- **last_swarm_critique:** 549
 - **anti_pattern:** 405
-- **last_swarm_goal:** 297
+- **last_swarm_goal:** 298
 - **strategy:** 223
-- **hand_result:** 53
+- **hand_result:** 54
 - **tool:** 37
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 20
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*28.08. 01:06 UTC · Quelle: critic*
+
+score=9; issues=First artifact's fixed tool generation code appears truncated in prompt display (cut off at `spec['source_file'] = proposal['sour`]), though sandbox confirms full artifact runs; Budget system uses arbitrary units without calibration to real sys
+
+### `last_swarm_goal`
+*28.08. 00:56 UTC · Quelle: system*
+
+Mehr Vorschläge in Handlungen umsetzen
+
+### `dream:20260828005522:5:2083ec`
+*28.08. 00:55 UTC · Quelle: dream*
+
+Self-diagnosis must become a scheduled, metrics-driven organ auditing model-router health and skill-pipeline integrity, not a one-off check.
+
+### `dream:20260828005522:4:720857`
+*28.08. 00:55 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 (conserve mode) demands that all new procedures include budget-aware gating to prevent resource exhaustion.
+
+### `dream:20260828005522:3:14cb4f`
+*28.08. 00:55 UTC · Quelle: dream*
+
+Relative path usage in hand_actions creates environment-dependent failures that a centralized path-resolver rooted at ZOETRON_DATA would eliminate.
+
+### `dream:20260828005522:2:ec1913`
+*28.08. 00:55 UTC · Quelle: dream*
+
+Skill promotion without mandatory artifact validation (existence, size, checksum) allows broken skills into production, evidenced by consistent 5-point critic scores.
+
+### `dream:20260828005522:1:58a842`
+*28.08. 00:55 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter share a global rate-limit bucket causing cascading 429 failures across all providers simultaneously.
 
 ### `tool:traumerkenntnisse-mit-wissen-verknüpfen`
 *28.08. 00:46 UTC · Quelle: hands*

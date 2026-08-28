@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 00:46:42",
+ "stand": "2026-08-28 01:06:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,7 +10,7 @@
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 9,
+   "laeufe": 10,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -105,17 +105,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.632,
- "simulationen_angewandt": 66,
+ "haende_quote": 0.62,
+ "simulationen_angewandt": 65,
  "swarm_scores": {
   "n": 49,
   "best": 9.0,
-  "schnitt": 4.84
+  "schnitt": 4.96
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 47,
-   "schnitt": 4.91
+   "schnitt": 5.06
   },
   "bau": {
    "n": 1,
