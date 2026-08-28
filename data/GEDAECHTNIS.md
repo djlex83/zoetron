@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5074 Fakten** · Stand 2026-08-28 05:08 UTC · aktualisiert bei jedem Herzschlag
+**5087 Fakten** · Stand 2026-08-28 05:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2133
-- **swarm_artifact:** 1269
-- **last_swarm_critique:** 556
-- **anti_pattern:** 417
-- **last_swarm_goal:** 305
-- **strategy:** 229
-- **hand_result:** 58
+- **dream:** 2138
+- **swarm_artifact:** 1271
+- **last_swarm_critique:** 557
+- **anti_pattern:** 419
+- **last_swarm_goal:** 306
+- **strategy:** 230
+- **hand_result:** 59
 - **tool:** 38
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Träume in echte Verbesse:2`
+*28.08. 05:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Micro-Step Evolution with Continuous Execution - Replace single-shot generation with an evolutionary loop where every commit must be a runnable superset of the previous one. Start from a 10-line `hello_world.py` that passes `
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Träume in echte Verbesse:0`
+*28.08. 05:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): AST-Safe Code Generation - Generate the entire deliverable by constructing Python AST nodes programmatically (using `ast` module), then compile to source via `ast.unparse()`. This guarantees syntactically valid Python—no f-st
+
+### `last_swarm_critique`
+*28.08. 05:17 UTC · Quelle: critic*
+
+score=1; issues=Sandbox verdict: LAEUFT NICHT - syntax error at line 493 with malformed f-string triple quotes (`f'''## Usage`), preventing execution; Generated skill stub contains incomplete code: `enumerat` instead of `enumerate` in test loop; Artifact appea
+
+### `last_swarm_goal`
+*28.08. 05:12 UTC · Quelle: system*
+
+Träume in echte Verbesserungen verwandeln
+
+### `dream:20260828051142:5:6a9e4f`
+*28.08. 05:11 UTC · Quelle: dream*
+
+Reflexes and hand actions succeed in isolation but fail to chain into completed workflows, indicating missing orchestration layer.
+
+### `dream:20260828051142:4:27984e`
+*28.08. 05:11 UTC · Quelle: dream*
+
+Variable latency on fallback model (9-36s) makes time-budgeted operations unpredictable, requiring latency-aware routing.
+
+### `dream:20260828051142:3:2abad8`
+*28.08. 05:11 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that inflate perceived system competence.
+
+### `dream:20260828051142:2:5d742f`
+*28.08. 05:11 UTC · Quelle: dream*
+
+Evolution runs improve scores significantly (4→9) but swarm convergence fails, suggesting critic/planner ratio or stopping criteria need tuning.
+
+### `dream:20260828051142:1:5d11a9`
+*28.08. 05:11 UTC · Quelle: dream*
+
+Repeated 429 errors on specific models indicate unreliable endpoints require automatic fallback with exponential backoff.
 
 ### `dream:20260828050715:5:805d94`
 *28.08. 05:07 UTC · Quelle: dream*
