@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System operates at stress=1.0 with max_tasks=3, max_iterations=1; all successful outcomes occur within this tight envelope after model fallback and pa
+- Calibration error of 6 (predicted 3 vs actual 9) indicates complexity estimation is unreliable under conserve-mode budget constraints.
+- Simulation step consistently detects risks (3) and triggers revisions (3) that convert failing hand actions into successful artifact generation.
+- Hand actions fail when using relative paths; success requires resolving inputs via sys.argv[1] and ZOETRON_DATA environment variable before filesystem
+- Primary model (glm-5.2) fails deterministically with 429 rate-limit errors; fallback model (nemotron) succeeds but exhibits 10x latency variance (15–1
 - Self-diagnose organ is inactive; critical system metrics (model latency, error rates, skill promotion health) go unaudited.
 - No automated model health monitoring exists; failures are only detected reactively during task execution.
 - Skill proposals accumulate (5+ logged) but conversion to deployed skills is near zero due to missing validation pipeline.
@@ -51,11 +56,6 @@
 - Model performance varies significantly by provider: inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b reliably succeed, while z-ai/glm-5
 - Code length directly correlates with critic rejection; the 2099-token solution was flagged as too long, while shorter variants scored higher.
 - Free-tier models consistently fail with 429 errors under concurrent load, indicating rate limits are the primary bottleneck for swarm scalability.
-- Self-diagnosis must become a scheduled, metrics-driven organ auditing model-router health and skill-pipeline integrity, not a one-off check.
-- Metabolism stress at 1.0 (conserve mode) demands that all new procedures include budget-aware gating to prevent resource exhaustion.
-- Relative path usage in hand_actions creates environment-dependent failures that a centralized path-resolver rooted at ZOETRON_DATA would eliminate.
-- Skill promotion without mandatory artifact validation (existence, size, checksum) allows broken skills into production, evidenced by consistent 5-poin
-- Free-tier models on OpenRouter share a global rate-limit bucket causing cascading 429 failures across all providers simultaneously.
 
 ---
 

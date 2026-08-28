@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4920 Fakten** · Stand 2026-08-28 01:42 UTC · aktualisiert bei jedem Herzschlag
+**4925 Fakten** · Stand 2026-08-28 01:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2043
+- **dream:** 2048
 - **swarm_artifact:** 1237
 - **last_swarm_critique:** 550
 - **anti_pattern:** 407
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828014643:5:e82528`
+*28.08. 01:46 UTC · Quelle: dream*
+
+System operates at stress=1.0 with max_tasks=3, max_iterations=1; all successful outcomes occur within this tight envelope after model fallback and path correction.
+
+### `dream:20260828014643:4:f12438`
+*28.08. 01:46 UTC · Quelle: dream*
+
+Calibration error of 6 (predicted 3 vs actual 9) indicates complexity estimation is unreliable under conserve-mode budget constraints.
+
+### `dream:20260828014643:3:b223cb`
+*28.08. 01:46 UTC · Quelle: dream*
+
+Simulation step consistently detects risks (3) and triggers revisions (3) that convert failing hand actions into successful artifact generation.
+
+### `dream:20260828014643:2:45a17e`
+*28.08. 01:46 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths; success requires resolving inputs via sys.argv[1] and ZOETRON_DATA environment variable before filesystem access.
+
+### `dream:20260828014643:1:cfe8b1`
+*28.08. 01:46 UTC · Quelle: dream*
+
+Primary model (glm-5.2) fails deterministically with 429 rate-limit errors; fallback model (nemotron) succeeds but exhibits 10x latency variance (15–185s).
 
 ### `dream:20260828014213:5:9d01a1`
 *28.08. 01:42 UTC · Quelle: dream*
