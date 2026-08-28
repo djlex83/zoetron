@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions succeed silently (exit 0) but capture no environmental context, preventing post-hoc diagnosis of latent failures.
+- Dream consolidation runs regularly but produces no measurable improvement in model selection or error handling, indicating a missing feedback loop fro
+- Proposed skills accumulate but are not automatically queued for implementation, creating a persistent capability gap between insight and action.
+- Model latency varies by two orders of magnitude (2.9s vs 148s) without correlation to success, so latency must be a routing criterion not just a metri
+- Rate limits (429) and upstream overloads (502) affect all free-tier models indiscriminately, making single-model reliance a systemic reliability hazar
 - A single fast reliable model (ling-3.0-flash-fin at 10s) outperforms slower 'premium' models on reliability, proving that operational consistency beat
 - Dreams and simulations run in isolation; feeding dream-generated hypotheses into simulation verdicts and simulation failures into dream consolidation 
 - Skill proposals accumulate (30+) but lack automated validation; a proposal→simulation→merge pipeline with risk_count<2 and latency_p95<30s gates would
@@ -51,11 +56,6 @@
 - Model latency varies by over 12x (6.4s to 80.8s), making fixed global timeouts unreliable and causing premature failures on slow endpoints.
 - The system exhibits a persistent execution gap: proposals are generated but only a fraction are converted into reflex actions within a bounded cycle c
 - API rate limiting (429) is the dominant systemic failure mode, affecting the majority of recent model calls across multiple providers simultaneously.
-- Hand actions failing with exit 1 without a specific error message suggests a need for better error capturing in execution environments.
-- The gap between simulated learning and real-world action is a recurring systemic issue that needs to be bridged by actively testing reflex skills.
-- Swarm tasks that do not converge indicate a need for better pre-execution validation or goal alignment before launch.
-- High latency on successful model calls (e.g., 80.8s) indicates that response time must be factored into model selection.
-- Free-tier LLM endpoints are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 
 ---
 

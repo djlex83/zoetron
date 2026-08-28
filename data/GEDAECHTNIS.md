@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5442 Fakten** · Stand 2026-08-28 15:08 UTC · aktualisiert bei jedem Herzschlag
+**5447 Fakten** · Stand 2026-08-28 15:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2357
+- **dream:** 2362
 - **swarm_artifact:** 1339
 - **last_swarm_critique:** 569
 - **anti_pattern:** 441
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828151451:5:8b8a0a`
+*28.08. 15:14 UTC · Quelle: dream*
+
+Hand actions succeed silently (exit 0) but capture no environmental context, preventing post-hoc diagnosis of latent failures.
+
+### `dream:20260828151451:4:a7f31e`
+*28.08. 15:14 UTC · Quelle: dream*
+
+Dream consolidation runs regularly but produces no measurable improvement in model selection or error handling, indicating a missing feedback loop from insights to runtime behavior.
+
+### `dream:20260828151451:3:2d97de`
+*28.08. 15:14 UTC · Quelle: dream*
+
+Proposed skills accumulate but are not automatically queued for implementation, creating a persistent capability gap between insight and action.
+
+### `dream:20260828151451:2:750cf0`
+*28.08. 15:14 UTC · Quelle: dream*
+
+Model latency varies by two orders of magnitude (2.9s vs 148s) without correlation to success, so latency must be a routing criterion not just a metric.
+
+### `dream:20260828151451:1:452238`
+*28.08. 15:14 UTC · Quelle: dream*
+
+Rate limits (429) and upstream overloads (502) affect all free-tier models indiscriminately, making single-model reliance a systemic reliability hazard.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen für echte A:2`
 *28.08. 15:03 UTC · Quelle: evolution*
