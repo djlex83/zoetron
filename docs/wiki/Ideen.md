@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 12:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 13:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 17×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Issue 188 remains open despite multiple revision cycles, suggesting that non-convergence after simulation_applied signals a structural execution-block
+- Upstream service overload (Nvidia 502) compounds rate-limiting failures, creating a cascading single-point-of-failure when only one model remains avai
+- Calibration overestimated capability (predicted 3 vs actual 1, abs_error 2), indicating the system's self-assessment is unreliable without historical 
+- Simulation revisions and evolution runs improved scores from 1/10 to 9/7/6, but the swarm never converged and the final hand action failed with exit c
+- Free-tier models on OpenRouter are systematically unreliable due to 429 rate limiting, making nvidia/nemotron-3-ultra-550b-a55b:free the only viable m
 - The nemotron-3-ultra model shows high latency variance (16.8s–42.2s) with no timeout or circuit-breaker, risking stalled pipelines.
 - Dream insights (5 this cycle) are not automatically converted into code changes or config updates within the next wake cycle, wasting consolidation ef
 - Skill proposals accumulate in dreams (5 this cycle) but lack a registry tracking proposal→implementation→test status, causing duplicate proposals and 
@@ -51,11 +56,6 @@
 - Reflex tools that convert proposals into skills and link dream insights to knowledge are functioning and should be standardized.
 - Model latency varies 3x between fastest and slowest working models, making latency-aware routing essential for responsiveness.
 - Rate limiting (429) is the dominant failure mode across free-tier models, requiring systematic fallback and backoff strategies.
-- Reflex-driven task convergence succeeded without critic/planner gates, exposing a gap between convergence policy and execution.
-- Pruning runs prune zero facts despite calibrated-threshold proposal, indicating threshold logic is either disabled or set too conservatively.
-- Five duplicate skill proposals (token bucket, dynamic timeouts, promotion pipeline) show proposal deduplication and promotion gating are absent.
-- Fallback model latency varies 3x (13.7–41.2s) proving static timeouts are unsafe; per-model p95+2σ buffers must be learned online.
-- Repeated 429 errors on z-ai/glm-5.2:free reveal missing provider-level circuit breaking, causing cascading retries instead of fast failover.
 
 ---
 

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5361 Fakten** · Stand 2026-08-28 12:19 UTC · aktualisiert bei jedem Herzschlag
+**5378 Fakten** · Stand 2026-08-28 13:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2308
-- **swarm_artifact:** 1325
-- **last_swarm_critique:** 566
-- **anti_pattern:** 435
-- **last_swarm_goal:** 315
-- **strategy:** 238
+- **dream:** 2313
+- **swarm_artifact:** 1331
+- **last_swarm_critique:** 567
+- **anti_pattern:** 437
+- **last_swarm_goal:** 316
+- **strategy:** 239
 - **hand_result:** 62
-- **tool:** 43
+- **tool:** 44
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
+*28.08. 13:05 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Ersten Swarm-Lauf mit Score 8+ konvergieren lassen'. Datei: data/tools/ersten-swarm-lauf-mit-score-8-konvergier.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*28.08. 13:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Adversarial Swarm Co-Evolution with Critic Emulation - Create two competing swarms running in parallel: one generates solutions trying to achieve 8+/10, the other evolves critics that attempt to correctly score solutions with
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*28.08. 13:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Swarm Memory Propagation with Cross-Pollination Repair - Replace individual agent revisions with a collective memory system where each failed convergence attempt writes its diff to a shared 'mutation log'. Subsequent swarm ag
+
+### `last_swarm_critique`
+*28.08. 12:58 UTC · Quelle: critic*
+
+score=4; issues=Simulated LLM/Critic hardcoded to return score 7, making convergence to 8+ impossible by design; Reference implementation in Task 1 (which would score 10) is never used by the Orchestrator in Task 2; Fallback convergence gate returns hardcoded 
+
+### `last_swarm_goal`
+*28.08. 12:43 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260828124142:5:1e6ff0`
+*28.08. 12:41 UTC · Quelle: dream*
+
+Issue 188 remains open despite multiple revision cycles, suggesting that non-convergence after simulation_applied signals a structural execution-blocker rather than a reasoning deficit.
+
+### `dream:20260828124142:4:a86384`
+*28.08. 12:41 UTC · Quelle: dream*
+
+Upstream service overload (Nvidia 502) compounds rate-limiting failures, creating a cascading single-point-of-failure when only one model remains available.
+
+### `dream:20260828124142:3:3c6342`
+*28.08. 12:41 UTC · Quelle: dream*
+
+Calibration overestimated capability (predicted 3 vs actual 1, abs_error 2), indicating the system's self-assessment is unreliable without historical error correction.
+
+### `dream:20260828124142:2:3f4d68`
+*28.08. 12:41 UTC · Quelle: dream*
+
+Simulation revisions and evolution runs improved scores from 1/10 to 9/7/6, but the swarm never converged and the final hand action failed with exit code 1, revealing a persistent plan-act gap.
+
+### `dream:20260828124142:1:150fbe`
+*28.08. 12:41 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are systematically unreliable due to 429 rate limiting, making nvidia/nemotron-3-ultra-550b-a55b:free the only viable model in this session.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Gebrauchswert alter Erin:2`
 *28.08. 12:15 UTC · Quelle: evolution*
