@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5406 Fakten** · Stand 2026-08-28 14:10 UTC · aktualisiert bei jedem Herzschlag
+**5410 Fakten** · Stand 2026-08-28 14:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2333
+- **dream:** 2337
 - **swarm_artifact:** 1333
 - **last_swarm_critique:** 568
 - **anti_pattern:** 439
@@ -19,6 +19,26 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828141257:4:925f93`
+*28.08. 14:12 UTC · Quelle: dream*
+
+Latency for successful model calls varies wildly (7.4s to 234.1s), suggesting that timeout limits must be generous or dynamically adjusted based on model performance.
+
+### `dream:20260828141257:3:05c890`
+*28.08. 14:12 UTC · Quelle: dream*
+
+Generated Python code occasionally contains unterminated string literals, indicating a need for stricter syntax validation before execution.
+
+### `dream:20260828141257:2:8dc271`
+*28.08. 14:12 UTC · Quelle: dream*
+
+Models like `z-ai/glm-5.2:free` and `google/gemma-4-*` consistently hit 429 errors and should be deprioritized or removed from the active routing pool.
+
+### `dream:20260828141257:1:2a950e`
+*28.08. 14:12 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads, requiring aggressive fallback and retry mechanisms.
 
 ### `dream:20260828140742:5:eab9e3`
 *28.08. 14:07 UTC · Quelle: dream*

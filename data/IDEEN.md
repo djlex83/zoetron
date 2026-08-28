@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 14:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 14:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 15×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,10 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency for successful model calls varies wildly (7.4s to 234.1s), suggesting that timeout limits must be generous or dynamically adjusted based on mo
+- Generated Python code occasionally contains unterminated string literals, indicating a need for stricter syntax validation before execution.
+- Models like `z-ai/glm-5.2:free` and `google/gemma-4-*` consistently hit 429 errors and should be deprioritized or removed from the active routing pool
+- Free-tier models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads, requiring aggressive fallback and ret
 - Metabolism stress at 1.0 with max_tasks=3 forces conservation, yet retry loops burn budget on doomed requests.
 - Self-diagnosis reports zero organ errors while model failure rate exceeds 80%, indicating monitoring blind spots for external dependencies.
 - Skill proposals accumulate (5+ this cycle) but none execute, creating a proposal-execution gap that stalls capability growth.
@@ -52,10 +56,6 @@
 - Upstream 502 overloads from Nvidia endpoints show that even successful models are unreliable under concurrent load on free tiers.
 - Rate-limit errors (429) are the dominant failure mode across all free-tier models, indicating systemic API throttling rather than model-specific issue
 - Calibration and simulation phases both returned 'go' verdicts, indicating consistent readiness assessment across planning and execution layers.
-- Hand action execution was successful with minimal duration, confirming reliable low-level control integration within the swarm loop.
-- Latency and token usage vary significantly across models, suggesting dynamic model selection based on input complexity and urgency could optimize perf
-- The swarm goal was successfully converged with a score of 8+, validating the integration of learning mechanisms and tooling under stress conditions.
-- Model failures cluster around rate limits (429) and upstream overload (502), indicating a need for robust fallback chains and retry logic with exponen
 
 ---
 
