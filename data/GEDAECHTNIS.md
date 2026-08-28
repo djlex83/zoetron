@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5679 Fakten** · Stand 2026-08-28 21:46 UTC · aktualisiert bei jedem Herzschlag
+**5684 Fakten** · Stand 2026-08-28 21:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2492
+- **dream:** 2497
 - **swarm_artifact:** 1393
 - **last_swarm_critique:** 578
 - **anti_pattern:** 455
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828214934:5:bf6127`
+*28.08. 21:49 UTC · Quelle: dream*
+
+Calibration error of 5 (predicted 2 vs actual 7) shows the predictor severely underestimates task difficulty.
+
+### `dream:20260828214934:4:66246b`
+*28.08. 21:49 UTC · Quelle: dream*
+
+The revision loop (simulation → 5 revisions → evolution) lifted scores from 7 to 9, proving iterative critique works.
+
+### `dream:20260828214934:3:5eb1ea`
+*28.08. 21:49 UTC · Quelle: dream*
+
+Poolside Laguna-S-2.1 delivers low latency (12 s) when available, suggesting a fast fallback tier.
+
+### `dream:20260828214934:2:9dd541`
+*28.08. 21:49 UTC · Quelle: dream*
+
+Nvidia Nemotron succeeds reliably but with high latency variance (40–185 s), requiring timeout budgets >200 s.
+
+### `dream:20260828214934:1:9bf3f6`
+*28.08. 21:49 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for primary workflows.
 
 ### `dream:20260828214505:5:ffa9c2`
 *28.08. 21:45 UTC · Quelle: dream*
