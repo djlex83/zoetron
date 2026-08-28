@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 11:57:29",
+ "stand": "2026-08-28 12:19:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,6 +51,12 @@
    "quote": 1.0
   },
   {
+   "tool": "entfernte-erinnerungen-verknüpfen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -61,12 +67,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "entfernte-erinnerungen-verknüpfen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "destillat-datensatz-gedächtnis-wird-trai.py",
@@ -117,17 +117,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.634,
+ "haende_quote": 0.62,
  "simulationen_angewandt": 59,
  "swarm_scores": {
   "n": 42,
   "best": 9.0,
-  "schnitt": 4.83
+  "schnitt": 4.9
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 40,
-   "schnitt": 4.95
+   "schnitt": 5.0
   },
   "bau": {
    "n": 1,

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 11:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 12:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 17×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 3×)*
 - Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt ausprobieren *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Modelle reparieren die oft scheitern *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The nemotron-3-ultra model shows high latency variance (16.8s–42.2s) with no timeout or circuit-breaker, risking stalled pipelines.
+- Dream insights (5 this cycle) are not automatically converted into code changes or config updates within the next wake cycle, wasting consolidation ef
+- Skill proposals accumulate in dreams (5 this cycle) but lack a registry tracking proposal→implementation→test status, causing duplicate proposals and 
+- No automatic fallback occurs when a model returns 429; the system retries the same exhausted provider instead of switching to healthy alternatives lik
+- The z-ai/glm-5.2:free model fails 100% of the time due to provider-level rate limiting (429 errors), making it unusable without per-provider quota man
 - Self-diagnosis shows organ health but doesn't capture model-layer degradation, leaving a blind spot in system monitoring.
 - Skill proposals accumulate but lack automatic implementation verification, creating a gap between ideation and capability.
 - Reflex tools that convert proposals into skills and link dream insights to knowledge are functioning and should be standardized.
@@ -51,11 +56,6 @@
 - Five duplicate skill proposals (token bucket, dynamic timeouts, promotion pipeline) show proposal deduplication and promotion gating are absent.
 - Fallback model latency varies 3x (13.7–41.2s) proving static timeouts are unsafe; per-model p95+2σ buffers must be learned online.
 - Repeated 429 errors on z-ai/glm-5.2:free reveal missing provider-level circuit breaking, causing cascading retries instead of fast failover.
-- Dream consolidation recurs without extracting executable fixes, turning pattern recognition into idle repetition.
-- Missing organ dependency validation before variant generation caps evolution scores at 6/10, a predictable failure mode.
-- The system repeatedly proposes the same fallback/retry skills without implementing them, creating a proposal-implementation gap that wastes cycles.
-- Nemotron-3-ultra succeeds where others fail but exhibits high latency (18-30s) and intermittent 502 upstream errors, indicating it's a fragile backbon
-- Free-tier models on shared providers (OpenRouter) consistently hit 429 rate limits under sequential workloads, making them unreliable for production c
 
 ---
 
