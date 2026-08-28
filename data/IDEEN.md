@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 01:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 02:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,13 +26,13 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modelle verlässlicher machen *(wieder aufgegriffen: 2×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Fehler in Modellen besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Forbidden patterns in generated code (e.g., shutdown commands) trigger early termination and must be filtered before execution.
+- Swarm orchestration converges slowly (2 cycles, not converged) and produces low-quality artifacts (score 1/10), indicating weak variant selection or e
+- Calibration predictions are highly inaccurate (predicted 4, actual 1), suggesting poor confidence estimation in the planning module.
+- Hand actions consistently fail with exit code 1 and no error message, indicating a silent failure in the action execution layer.
+- Rate limiting (HTTP 429) on z-ai/glm-5.2:free causes repeated model failures and must be handled with exponential backoff or model fallback.
 - Nemotron-3-ultra shows high latency variance (100s vs 6s) while poolside/laguna-s-2.1 delivers consistent sub-10s latency, making the latter preferabl
 - Hand-action failures with zero duration and zero reads point to silent pre-condition failures rather than execution errors.
 - Swarm convergence in a single cycle without evolution (evolved=false) indicates insufficient exploration, risking local optima.
@@ -51,11 +56,6 @@
 - Simulation step consistently detects risks (3) and triggers revisions (3) that convert failing hand actions into successful artifact generation.
 - Hand actions fail when using relative paths; success requires resolving inputs via sys.argv[1] and ZOETRON_DATA environment variable before filesystem
 - Primary model (glm-5.2) fails deterministically with 429 rate-limit errors; fallback model (nemotron) succeeds but exhibits 10x latency variance (15–1
-- Self-diagnose organ is inactive; critical system metrics (model latency, error rates, skill promotion health) go unaudited.
-- No automated model health monitoring exists; failures are only detected reactively during task execution.
-- Skill proposals accumulate (5+ logged) but conversion to deployed skills is near zero due to missing validation pipeline.
-- Hand actions fail when using relative paths instead of absolute paths rooted at ZOETRON_DATA/sys.argv[1].
-- Free model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production tasks.
 
 ---
 

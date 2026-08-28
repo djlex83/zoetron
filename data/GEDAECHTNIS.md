@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**4941 Fakten** · Stand 2026-08-28 01:57 UTC · aktualisiert bei jedem Herzschlag
+**4946 Fakten** · Stand 2026-08-28 02:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2053
+- **dream:** 2058
 - **swarm_artifact:** 1243
 - **last_swarm_critique:** 551
 - **anti_pattern:** 409
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828021620:5:f65b0a`
+*28.08. 02:16 UTC · Quelle: dream*
+
+Forbidden patterns in generated code (e.g., shutdown commands) trigger early termination and must be filtered before execution.
+
+### `dream:20260828021620:4:179fcb`
+*28.08. 02:16 UTC · Quelle: dream*
+
+Swarm orchestration converges slowly (2 cycles, not converged) and produces low-quality artifacts (score 1/10), indicating weak variant selection or evaluation.
+
+### `dream:20260828021620:3:740bd5`
+*28.08. 02:16 UTC · Quelle: dream*
+
+Calibration predictions are highly inaccurate (predicted 4, actual 1), suggesting poor confidence estimation in the planning module.
+
+### `dream:20260828021620:2:f8c496`
+*28.08. 02:16 UTC · Quelle: dream*
+
+Hand actions consistently fail with exit code 1 and no error message, indicating a silent failure in the action execution layer.
+
+### `dream:20260828021620:1:7956df`
+*28.08. 02:16 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) on z-ai/glm-5.2:free causes repeated model failures and must be handled with exponential backoff or model fallback.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Simulationen in echtes H:2`
 *28.08. 01:55 UTC · Quelle: evolution*

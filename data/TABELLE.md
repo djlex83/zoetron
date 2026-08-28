@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3253 Neuronen · 91408 bewertete Synapsen
+Stand: 3257 Neuronen · 91884 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,10 +12,10 @@ Stand: 3253 Neuronen · 91408 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 319 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 319 | 0.25 |
-| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 260 | 0.24 |
+| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 261 | 0.24 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 258 | 0.24 |
-| 5 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 251 | 0.24 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 255 | 0.23 |
+| 5 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 252 | 0.24 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 256 | 0.23 |
 | 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 236 | 0.25 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 229 | 0.24 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 215 | 0.24 |
@@ -23,7 +23,7 @@ Stand: 3253 Neuronen · 91408 bewertete Synapsen
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Embedding-Recall statt r“ (Note 4/1… | 218 | 0.23 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fähigkeiten echt testen “ (Note 6/1… | 213 | 0.23 |
 | 13 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 205 | 0.24 |
-| 14 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 193 | 0.24 |
+| 14 | 💭 | High latency spikes (up to 90 s) reveal occasional model overloa… | 194 | 0.24 |
 | 15 | 🚫 | 🚫 Gescheiterter Versuch für „Exemplar-Bank: von den e“ (Note 2/1… | 206 | 0.23 |
 
 ## Die 15 stärksten Synapsen
