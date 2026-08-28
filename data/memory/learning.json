@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 06:46:53",
+ "stand": "2026-08-28 06:52:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -117,7 +117,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.598,
+ "haende_quote": 0.6,
  "simulationen_angewandt": 62,
  "swarm_scores": {
   "n": 46,

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
@@ -33,14 +33,19 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
+- Simulationen besser nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
-- Modellfehler minimieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence requires predictable model availability; current architecture has no SLA-aware routing or health-based model selection.
+- High metabolic stress (1.0) and conserve mode amplify the cost of each failed request, turning transient errors into mission-critical blockers.
+- Proposed reliability skills (health monitor, latency router, convergence criteria) remain unimplemented despite repeated model failures blocking progr
+- The system lacks a circuit-breaker mechanism: failing models are retried indefinitely instead of being temporarily excluded after consecutive failures
+- Free-tier models consistently hit 429 rate limits across multiple providers, making them unreliable as primary endpoints without automatic fallback.
 - Hardcoded stress thresholds surfaced as a critic issue, showing that embedded constants reduce adaptability across contexts.
 - Evolution and swarm loops stall at score 7 without convergence detection, burning cycles on plateaued performance.
 - Calibration consistently underestimates experiment throughput (predicted 3 vs actual 7), revealing a systematic prediction bias for exploratory goals.
@@ -51,11 +56,6 @@
 - 'inclusionai/ling-3.0-flash-fin:free' provides a reliable, low-latency alternative (5.7s) when primary models are overloaded.
 - Free models on OpenRouter are highly susceptible to cascading 429 errors during rapid sequential or concurrent requests.
 - The model 'z-ai/glm-5.2:free' is persistently rate-limited (429 errors) and should be temporarily blacklisted to avoid wasting cycles.
-- The simulation gate rejected the first experiment plan (risk=4) and required three revisions, proving that uncalibrated risk estimates waste cycles.
-- System stress hit 1.0 and forced 'conserve' mode (max 3 tasks, 1 iteration), which directly blocks the swarm goal of 'more experiments'.
-- Five concrete skill proposals exist but none have entered the validation pipeline, revealing a missing 'proposal → production' automation loop.
-- The fallback model 'nvidia/nemotron-3-ultra' shows extreme latency variance (11.8 s – 90.2 s), so static timeouts either kill valid requests or stall 
-- The model 'z-ai/glm-5.2:free' fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without a request-spacing or quota-aware rout
 
 ---
 

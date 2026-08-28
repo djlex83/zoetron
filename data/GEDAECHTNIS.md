@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5146 Fakten** · Stand 2026-08-28 06:47 UTC · aktualisiert bei jedem Herzschlag
+**5151 Fakten** · Stand 2026-08-28 06:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2173
+- **dream:** 2178
 - **swarm_artifact:** 1283
 - **last_swarm_critique:** 559
 - **anti_pattern:** 423
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828065115:5:17db9c`
+*28.08. 06:51 UTC · Quelle: dream*
+
+Swarm convergence requires predictable model availability; current architecture has no SLA-aware routing or health-based model selection.
+
+### `dream:20260828065115:4:a46f04`
+*28.08. 06:51 UTC · Quelle: dream*
+
+High metabolic stress (1.0) and conserve mode amplify the cost of each failed request, turning transient errors into mission-critical blockers.
+
+### `dream:20260828065115:3:3b4d03`
+*28.08. 06:51 UTC · Quelle: dream*
+
+Proposed reliability skills (health monitor, latency router, convergence criteria) remain unimplemented despite repeated model failures blocking progress.
+
+### `dream:20260828065115:2:1ff405`
+*28.08. 06:51 UTC · Quelle: dream*
+
+The system lacks a circuit-breaker mechanism: failing models are retried indefinitely instead of being temporarily excluded after consecutive failures.
+
+### `dream:20260828065115:1:9e05bd`
+*28.08. 06:51 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits across multiple providers, making them unreliable as primary endpoints without automatic fallback.
 
 ### `dream:20260828064548:5:e76f89`
 *28.08. 06:45 UTC · Quelle: dream*
