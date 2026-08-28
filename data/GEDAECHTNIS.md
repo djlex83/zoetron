@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5069 Fakten** · Stand 2026-08-28 05:03 UTC · aktualisiert bei jedem Herzschlag
+**5074 Fakten** · Stand 2026-08-28 05:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2128
+- **dream:** 2133
 - **swarm_artifact:** 1269
 - **last_swarm_critique:** 556
 - **anti_pattern:** 417
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828050715:5:805d94`
+*28.08. 05:07 UTC · Quelle: dream*
+
+Calibration underestimated actual score by 2 points (predicted 2 vs actual 4), indicating systematic pessimism in self-assessment.
+
+### `dream:20260828050715:4:8e0ee6`
+*28.08. 05:07 UTC · Quelle: dream*
+
+Simulation verdict shifted from 'revise' (3 risks) to 'go' (4 risks) only after 3 revisions, showing risk count alone is misleading without revision depth.
+
+### `dream:20260828050715:3:5af024`
+*28.08. 05:07 UTC · Quelle: dream*
+
+Evolution runs with 3 variants boosted artifact score from 4 to 9 (winner), proving iterative refinement outperforms single-pass generation.
+
+### `dream:20260828050715:2:f21d33`
+*28.08. 05:07 UTC · Quelle: dream*
+
+Nemotron-3-ultra succeeds 100% of the time but latency varies 12x (12s–150s), requiring timeout budgets not fixed limits.
+
+### `dream:20260828050715:1:3e21b4`
+*28.08. 05:07 UTC · Quelle: dream*
+
+Free-tier models (glm-5.2) consistently hit 429 rate limits under load, making them unreliable for production pipelines.
 
 ### `dream:20260828050256:5:915087`
 *28.08. 05:02 UTC · Quelle: dream*

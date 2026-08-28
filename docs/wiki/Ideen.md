@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,7 +10,6 @@
 - Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DAT *(hatte die Idee 3×)*
 - Reactivate self-diagnose as a scheduled organ that audits model-router metrics (latency, error rate, fallback  *(hatte die Idee 3×)*
 - Deploy hourly synthetic probes per model bucket feeding a rolling p95/error-rate dashboard that auto-demotes u *(hatte die Idee 3×)*
-- Implement a model health registry that tracks per-model success rates, latency percentiles, and 429 frequency  *(hatte die Idee 2×)*
 - Implement adaptive rate-limit handler with exponential backoff, provider rotation, and token-budget accounting *(hatte die Idee 2×)*
 - Create latency-aware model router that assigns tasks to fast/cheap models for drafts and slow/robust models fo *(hatte die Idee 2×)*
 - Add convergence detector to swarm: stop cycles when score delta < 1 for two consecutive cycles or critic appro *(hatte die Idee 2×)*
@@ -20,12 +19,13 @@
 - Build a latency-aware model selector that prefers sub-10s models for planning/critic roles and reserves high-l *(hatte die Idee 2×)*
 - Log per-model latency percentiles (p50, p95) and error rates in a rolling window; auto-demote models whose p95 *(hatte die Idee 2×)*
 - Implement a model router that tracks per-model 429 rates and latency percentiles, automatically failing over t *(hatte die Idee 2×)*
+- Add exponential backoff with jitter and circuit-breaker logic around all model calls to absorb rate-limit burs *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration underestimated actual score by 2 points (predicted 2 vs actual 4), indicating systematic pessimism in self-assessment.
+- Simulation verdict shifted from 'revise' (3 risks) to 'go' (4 risks) only after 3 revisions, showing risk count alone is misleading without revision d
+- Evolution runs with 3 variants boosted artifact score from 4 to 9 (winner), proving iterative refinement outperforms single-pass generation.
+- Nemotron-3-ultra succeeds 100% of the time but latency varies 12x (12s–150s), requiring timeout budgets not fixed limits.
+- Free-tier models (glm-5.2) consistently hit 429 rate limits under load, making them unreliable for production pipelines.
 - 429 errors follow burst patterns; exponential backoff with jitter and request spreading prevents thundering herd on fallback.
 - Token budgets enforced post-hoc allow overflow; streaming generation needs hard token counters with mid-stream truncation.
 - Skill proposals accumulate without execution; a micro-test harness must validate each proposal within 30 seconds of creation.
@@ -51,11 +56,6 @@
 - Hand actions repeatedly fail with exit code 1 and zero bytes read, indicating sandbox execution failures that need pre-flight validation.
 - "nvidia/nemotron-3-ultra-550b-a55b:free" succeeds but exhibits high latency variance (12–86 s), requiring adaptive timeouts and fallback triggers.
 - The model "z-ai/glm-5.2:free" consistently returns 429 rate-limit errors and should be excluded from the routing pool or wrapped with exponential back
-- Calibration tracking exists but produces incomplete records, preventing bias correction from closing the loop on estimation accuracy.
-- Simulation-based validation catches errors before deployment but requires multiple revision cycles, indicating incomplete pre-flight checks.
-- High system stress triggers conservative mode that limits parallel exploration, creating a feedback loop where failures increase stress.
-- Hand actions fail silently with exit codes but no error context, making debugging impossible without structured error capture.
-- Rate limiting (429) is the dominant failure mode across free-tier models, requiring proactive rate-limit awareness and fallback strategies.
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:20:53.166566",
+  "generated_at": "2026-08-28T05:07:42.171876",
   "data_root": "/workspace/zoetron/data",
   "organs": {
     "benchmark_organ": null,
@@ -8,6 +8,10 @@
     "semantic": null
   },
   "training_files": [
+    "artefakte/benchmark_runs/benchmark_summary_20260828_042547.json",
+    "artefakte/benchmark_runs/benchmark_summary_20260828_042911.json",
+    "artefakte/benchmark_summary_20260828_001009.json",
+    "artefakte/benchmark_summary_20260828_001149.json",
     "artefakte/demo_goal_high_score_fail_test_issue.json",
     "artefakte/evolution_roadmap.json",
     "artefakte/model_health_check_20260827_210417.json",
@@ -79,6 +83,9 @@
     "memory/proposals/inbox/proposal_CAP-0010.json",
     "memory/proposals/inbox/proposal_CAP-0011.json",
     "memory/proposals/inbox/proposal_CAP-0012.json",
+    "memory/proposals/inbox/proposal_CAP-0013.json",
+    "memory/proposals/inbox/proposal_CAP-0014.json",
+    "memory/proposals/inbox/proposal_CAP-0015.json",
     "memory/reflex_last.json",
     "model_health.json",
     "model_registry.json",
@@ -91,6 +98,7 @@
     "swarm_execution_trace.json",
     "taktung.json",
     "telegram_stand.json",
+    "tools/skills_registry.json",
     "training_index.json",
     "will.json",
     "zoeme/gedachtnis/1485df39_organism_A.json",
@@ -114,6 +122,8 @@
     "zoeme/quarantaene/35c021e9_organism_A.json",
     "zoeme/quarantaene/518e3055_organism_A.json",
     "zoeme/quarantaene/a4dbb664_organism_A.json",
+    "artefakte/benchmark_runs/benchmark_results_20260828_042547.jsonl",
+    "artefakte/benchmark_runs/benchmark_results_20260828_042911.jsonl",
     "artefakte/exemplars.jsonl",
     "artefakte/ich_kern_injektion.jsonl",
     "destillat/destillat.jsonl",
