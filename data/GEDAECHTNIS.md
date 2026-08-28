@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5452 Fakten** · Stand 2026-08-28 15:24 UTC · aktualisiert bei jedem Herzschlag
+**5457 Fakten** · Stand 2026-08-28 15:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2367
+- **dream:** 2372
 - **swarm_artifact:** 1339
 - **last_swarm_critique:** 569
 - **anti_pattern:** 441
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828152854:5:2ab57c`
+*28.08. 15:28 UTC · Quelle: dream*
+
+Simulation-to-skill conversion remains unproven; reflex-based skill building shows convergence but lacks measurable real-world impact.
+
+### `dream:20260828152854:4:bbb218`
+*28.08. 15:28 UTC · Quelle: dream*
+
+Token usage spikes correlate with longer latencies, suggesting input complexity directly impacts endpoint reliability.
+
+### `dream:20260828152854:3:48c553`
+*28.08. 15:28 UTC · Quelle: dream*
+
+Model failures cascade when fallback logic is absent, as seen when nvidia/nemotron failed after z-ai/glm already hit 429.
+
+### `dream:20260828152854:2:0814c7`
+*28.08. 15:28 UTC · Quelle: dream*
+
+Latency variance is extreme (5.9s to 143.1s), making single-model reliance risky and justifying dynamic dispatch.
+
+### `dream:20260828152854:1:cba352`
+*28.08. 15:28 UTC · Quelle: dream*
+
+429 errors are the dominant failure mode across multiple providers, indicating systemic rate-limiting rather than isolated model issues.
 
 ### `dream:20260828152223:5:d296fa`
 *28.08. 15:22 UTC · Quelle: dream*

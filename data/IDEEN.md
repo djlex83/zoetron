@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 15:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,16 +14,16 @@
 - Implement a model health monitor that auto-excludes endpoints after 3 consecutive 429 responses with exponenti *(hatte die Idee 3×)*
 - Build a latency-aware router with per-model timeout budgets (e.g., 30s p95) and automatic fallback to fastest  *(hatte die Idee 3×)*
 - Implement pre-flight organ existence checks before swarm launch to fail fast on missing tools like swarm.py. *(hatte die Idee 3×)*
+- Build a real-time model health dashboard tracking 429/502 rates, p95 latency, and consecutive errors to drive  *(hatte die Idee 3×)*
+- Create an automatic skill promotion pipeline: proposal → simulation verdict → merge when risk_count < 2 and la *(hatte die Idee 3×)*
 - Build a latency-aware model selector that prefers sub-10s models for planning/critic roles and reserves high-l *(hatte die Idee 2×)*
 - Log per-model latency percentiles (p50, p95) and error rates in a rolling window; auto-demote models whose p95 *(hatte die Idee 2×)*
 - Implement a model router that tracks per-model 429 rates and latency percentiles, automatically failing over t *(hatte die Idee 2×)*
 - Add exponential backoff with jitter and circuit-breaker logic around all model calls to absorb rate-limit burs *(hatte die Idee 2×)*
-- Create a 'shadow evaluation' pipeline that runs candidate fixes against recorded failure traces before promoti *(hatte die Idee 2×)*
-- Schedule daily dream-cycle distillation that converts simulation verdicts and failure logs into concrete model *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 18×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-to-skill conversion remains unproven; reflex-based skill building shows convergence but lacks measurable real-world impact.
+- Token usage spikes correlate with longer latencies, suggesting input complexity directly impacts endpoint reliability.
+- Model failures cascade when fallback logic is absent, as seen when nvidia/nemotron failed after z-ai/glm already hit 429.
+- Latency variance is extreme (5.9s to 143.1s), making single-model reliance risky and justifying dynamic dispatch.
+- 429 errors are the dominant failure mode across multiple providers, indicating systemic rate-limiting rather than isolated model issues.
 - Self-diagnosis and pruning cycles run cleanly but produce no signal, indicating monitoring lacks sensitivity to model-failure patterns.
 - Reflex-driven script execution (fähigkeiten-gezielt-trainieren.py) can close the proposal-to-implementation gap when triggered.
 - Successful hand actions (exit 0) demonstrate that local tool execution is reliable, unlike external model APIs.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate but are not automatically queued for implementation, creating a persistent capability gap between insight and action.
 - Model latency varies by two orders of magnitude (2.9s vs 148s) without correlation to success, so latency must be a routing criterion not just a metri
 - Rate limits (429) and upstream overloads (502) affect all free-tier models indiscriminately, making single-model reliance a systemic reliability hazar
-- A single fast reliable model (ling-3.0-flash-fin at 10s) outperforms slower 'premium' models on reliability, proving that operational consistency beat
-- Dreams and simulations run in isolation; feeding dream-generated hypotheses into simulation verdicts and simulation failures into dream consolidation 
-- Skill proposals accumulate (30+) but lack automated validation; a proposal→simulation→merge pipeline with risk_count<2 and latency_p95<30s gates would
-- Latency variance between models is extreme (10s vs 141s for success), so model selection must weight p95 latency and success probability, not just cap
-- Free-tier models across all providers consistently hit 429 rate limits, making provider-aware token-bucket rate limiting with 429-triggered exponentia
 
 ---
 
