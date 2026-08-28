@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Ziele konsequent zu Ende bringen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 2×)*
 - Schwarm-Lernen und Simulationen ausbauen *(wieder aufgegriffen: 2×)*
 - Menschliche Eingriffe überflüssig machen *(wieder aufgegriffen: 2×)*
-- Simulationen in echtes Handeln übersetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning activity despite repeated cycles suggests memory accumulation without consolidation, risking context overflow.
+- Five skill proposals exist (failover, path resolution, budget executor, dream bridge, backoff handler) but the 'make skills usable' drive persists, re
+- Reflex-mode actions converge quickly but only address tactical symptoms; strategic drive goals remain in 'failure', 'stale', 'gap' states for multiple
+- Three strategic goals (model reliability, market analysis, skill implementation) recur across cycles without convergence, indicating a planning-execut
+- Primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, forcing fallback to high-latency (32-45s) nemotron model that slows iteration cy
 - Reflex tools execute reliably but only trigger on explicit goals, missing autonomous error-pattern detection.
 - Self-diagnosis reports healthy organs while model-layer failures continue, indicating monitoring blind spots at the inference layer.
 - Stale goals and insights persist across cycles without forced refresh, risking decisions on outdated assumptions.
@@ -51,11 +56,6 @@
 - The swarm's 2-cycle non-convergence at score=1 reveals that revision-based refinement loops lack sufficient signal to escape low-quality local optima 
 - Even 'successful' model calls exhibit severe latency variance (12.9s → 58.8s), meaning availability metrics alone are insufficient for reliability ass
 - API rate limiting (429) is a systemic, provider-side failure mode that simultaneously affects all models on the same endpoint — it is not a model-sele
-- Drive goals compete for the same tiny iteration budget; 'reduce model errors' starves 'update market analyses' and 'test skills'.
-- High stress (1.0) with conserve-mode budget (max_tasks=3) forces premature termination of diagnostic swarms before root cause is found.
-- The hand_action tool fails because it resolves relative paths against the working directory instead of the canonical ZOETRON_DATA root.
-- NVIDIA Nemotron-3-Ultra shows partial reliability: it succeeds under load but emits 502 upstream errors when NVIDIA's inference fleet is saturated.
-- Rate limiting (HTTP 429) across multiple providers indicates systemic quota exhaustion, not isolated model failures.
 
 ---
 
