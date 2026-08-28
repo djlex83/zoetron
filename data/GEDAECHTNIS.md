@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5246 Fakten** · Stand 2026-08-28 09:38 UTC · aktualisiert bei jedem Herzschlag
+**5251 Fakten** · Stand 2026-08-28 09:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2228
+- **dream:** 2233
 - **swarm_artifact:** 1307
 - **last_swarm_critique:** 563
 - **anti_pattern:** 429
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828094401:5:a0316a`
+*28.08. 09:44 UTC · Quelle: dream*
+
+Calibration tasks with high absolute error (e.g., predicted 4 vs actual 6) indicate systematic underprediction, pointing to a need for better error modeling in planning.
+
+### `dream:20260828094401:4:7c0e89`
+*28.08. 09:44 UTC · Quelle: dream*
+
+Evolution runs show significant score improvements (from 6 to 9) when variant selection is guided by critic feedback, highlighting the value of iterative refinement.
+
+### `dream:20260828094401:3:fce9c0`
+*28.08. 09:44 UTC · Quelle: dream*
+
+The poolside/laguna-s-2.1 model consistently succeeded with low latency and high token efficiency, suggesting it is more reliable under current load conditions.
+
+### `dream:20260828094401:2:405436`
+*28.08. 09:44 UTC · Quelle: dream*
+
+The nemotron model was automatically blocked after 3 consecutive failures, showing that repeated upstream errors trigger protective circuit-breaking mechanisms.
+
+### `dream:20260828094401:1:174f90`
+*28.08. 09:44 UTC · Quelle: dream*
+
+Rate limiting (429 errors) and upstream overload (502 errors) are the dominant failure modes across multiple models, indicating systemic API throttling rather than model-specific issues.
 
 ### `dream:20260828093754:5:4e90d3`
 *28.08. 09:37 UTC · Quelle: dream*

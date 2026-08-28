@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 09:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 15×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 16×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration tasks with high absolute error (e.g., predicted 4 vs actual 6) indicate systematic underprediction, pointing to a need for better error mo
+- Evolution runs show significant score improvements (from 6 to 9) when variant selection is guided by critic feedback, highlighting the value of iterat
+- The poolside/laguna-s-2.1 model consistently succeeded with low latency and high token efficiency, suggesting it is more reliable under current load c
+- The nemotron model was automatically blocked after 3 consecutive failures, showing that repeated upstream errors trigger protective circuit-breaking m
+- Rate limiting (429 errors) and upstream overload (502 errors) are the dominant failure modes across multiple models, indicating systemic API throttlin
 - Simulation-driven revision cycles (3 revisions applied) successfully produced a running 211-line artifact, validating the self-improvement loop.
 - InclusionAI Ling-3.0-Flash-Fin delivers consistent low latency (~9s) and should be preferred for fast-path requests.
 - NVIDIA Nemotron-3-Ultra succeeds but exhibits extreme latency variance (75-190s), unsuitable for time-sensitive tasks.
@@ -51,11 +56,6 @@
 - Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of task difficulty.
 - Smaller fast models (ling-3.0-flash-fin ~8-19s) succeed more reliably than larger models that hit rate limits repeatedly.
 - Rate limiting (HTTP 429) is the dominant failure mode across all model providers, not an isolated model issue.
-- The reflex-based goal 'Mehr Träume zum Lernen nutzen' converged successfully, suggesting that reflex-mode execution is more resilient than model-depen
-- Self-diagnosis reported zero organ errors while model failures persisted, confirming that the failures are external infrastructure-level events that i
-- Even the sole successful model (poolside/laguna-s-2.1) exhibited 3x latency variance between calls (6.1s vs 18.0s), meaning a single working endpoint 
-- The gap between generated skill proposals and their actual implementation is itself a systemic failure mode — five proposals were produced but none we
-- Cascading 429 and 502 errors across four different models simultaneously reveals the absence of any model-level fallback or health-tracking mechanism,
 
 ---
 
