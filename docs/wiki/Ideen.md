@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 21:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 22:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 2×)*
 - Schwarm-Lernen und Simulationen ausbauen *(wieder aufgegriffen: 2×)*
 - Menschliche Eingriffe überflüssig machen *(wieder aufgegriffen: 2×)*
+- Simulationen in echtes Handeln übersetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reporting zero organ errors while the system fails to converge indicates diagnostic blind spots in goal-alignment metrics.
+- Swarm with 3 builders but only 1 critic may lack sufficient adversarial pressure for convergence.
+- Evolutionary improvement (scores 7→9) without convergence suggests the fitness function or stopping criteria need tightening.
+- nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (16–140s), requiring latency-aware routing with fallback thresholds.
+- The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating it should be deprioritized or wrapped with a circuit breaker.
 - Calibration error of 5 (predicted 2 vs actual 7) shows the predictor severely underestimates task difficulty.
 - The revision loop (simulation → 5 revisions → evolution) lifted scores from 7 to 9, proving iterative critique works.
 - Poolside Laguna-S-2.1 delivers low latency (12 s) when available, suggesting a fast fallback tier.
@@ -51,11 +56,6 @@
 - Reflex tools (alte-erinnerungen-auf-wert-prüfen.py) fail silently without surfacing error context, breaking the trust loop for instant replay.
 - High system stress (1.0) triggers conserve mode that caps iterations to 1, causing incomplete executions like the hand action that touched no files.
 - The primary model (z-ai/glm-5.2:free) fails 100% of the time due to rate limiting, making fallback routing a hard requirement not an optimization.
-- Pruning remains inactive (0 facts/events pruned) despite cycle progression, showing adaptive pruning thresholds are either misconfigured or absent.
-- Drive goals (failure, stale, gap) persist across cycles without escalation, indicating absent strategic goal tracking with time-bound escalation trigg
-- Multiple skill proposals accumulate without deployment, exposing a systemic proposal-to-production gap requiring automated validation and regression t
-- Nemotron's latency variance (8–32s) reveals the need for latency-aware routing with SLA thresholds to prevent unpredictable delays in critical paths.
-- The GLM model's persistent 429 errors indicate a missing model health quarantine mechanism that should automatically isolate failing models after repe
 
 ---
 

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5684 Fakten** · Stand 2026-08-28 21:50 UTC · aktualisiert bei jedem Herzschlag
+**5701 Fakten** · Stand 2026-08-28 22:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2497
-- **swarm_artifact:** 1393
-- **last_swarm_critique:** 578
-- **anti_pattern:** 455
-- **last_swarm_goal:** 327
-- **strategy:** 248
+- **dream:** 2502
+- **swarm_artifact:** 1399
+- **last_swarm_critique:** 579
+- **anti_pattern:** 457
+- **last_swarm_goal:** 328
+- **strategy:** 249
 - **hand_result:** 68
-- **tool:** 49
+- **tool:** 50
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktanalyse-endlich-abschließen`
+*28.08. 22:03 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse endlich abschließen'. Datei: data/tools/marktanalyse-endlich-abschließen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich abs:1`
+*28.08. 22:02 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Human-in-the-Loop Structured Workflow - Convert the three 'brachliegend' steps into a gated, role-based workflow in Notion/Linear/GitHub Issues: (1) Define Definition of Done per step: Competitive Analysis = 10 competitors pr
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich abs:0`
+*28.08. 22:02 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Data-Driven Automation Pipeline - Replace the diagnostic function with an executable ETL pipeline: (1) Connect live data sources (Crunchbase API, LinkedIn Sales Navigator, Statistica, Google Trends, SEMrush) via authenticated
+
+### `last_swarm_critique`
+*28.08. 22:00 UTC · Quelle: critic*
+
+score=5; issues=Die drei identifizierten Analyse-Schritte (Wettbewerbsanalyse, Zielgruppen-Validierung, Marktgrößen-Analyse) werden als 'brachliegend' diagnostiziert, aber nicht tatsächlich durchgeführt – das Artefakt bleibt auf der Diagnoseebene stehen.; Die 
+
+### `last_swarm_goal`
+*28.08. 21:54 UTC · Quelle: system*
+
+Marktanalyse endlich abschließen
+
+### `dream:20260828215415:5:148af8`
+*28.08. 21:54 UTC · Quelle: dream*
+
+Self-diagnosis reporting zero organ errors while the system fails to converge indicates diagnostic blind spots in goal-alignment metrics.
+
+### `dream:20260828215415:4:441381`
+*28.08. 21:54 UTC · Quelle: dream*
+
+Swarm with 3 builders but only 1 critic may lack sufficient adversarial pressure for convergence.
+
+### `dream:20260828215415:3:849dbd`
+*28.08. 21:54 UTC · Quelle: dream*
+
+Evolutionary improvement (scores 7→9) without convergence suggests the fitness function or stopping criteria need tightening.
+
+### `dream:20260828215415:2:ea8748`
+*28.08. 21:54 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (16–140s), requiring latency-aware routing with fallback thresholds.
+
+### `dream:20260828215415:1:e55019`
+*28.08. 21:54 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating it should be deprioritized or wrapped with a circuit breaker.
 
 ### `dream:20260828214934:5:bf6127`
 *28.08. 21:49 UTC · Quelle: dream*
