@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5594 Fakten** · Stand 2026-08-28 19:44 UTC · aktualisiert bei jedem Herzschlag
+**5599 Fakten** · Stand 2026-08-28 20:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2437
+- **dream:** 2442
 - **swarm_artifact:** 1375
 - **last_swarm_critique:** 575
 - **anti_pattern:** 453
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828200644:5:67b259`
+*28.08. 20:06 UTC · Quelle: dream*
+
+Swarm convergence stalls because simulation reports 'go' with 3 risks and 2 revisions but no automated validation loop exists to iterate until the critic score reaches 8+.
+
+### `dream:20260828200644:4:dd57b3`
+*28.08. 20:06 UTC · Quelle: dream*
+
+Metabolism shows maximum stress (1.0) forcing conserve mode with a 1-iteration budget, yet the system still attempts multiple model calls and hand actions instead of dropping to the single critical path.
+
+### `dream:20260828200644:3:11a054`
+*28.08. 20:06 UTC · Quelle: dream*
+
+Reflex tool execution fails silently (exit 1, no error output) suggesting the script either lacks execute permissions, misses dependencies, or cannot read stdin as expected.
+
+### `dream:20260828200644:2:b70c7b`
+*28.08. 20:06 UTC · Quelle: dream*
+
+Hand actions repeatedly fail because they ignore the mandatory data path sources (sys.argv[1] and ZOETRON_DATA env var), using relative paths that resolve to nothing under the real data directory.
+
+### `dream:20260828200644:1:6a1ef5`
+*28.08. 20:06 UTC · Quelle: dream*
+
+The primary model (glm-5.2) fails consistently with 429 rate limits while the fallback (nemotron) succeeds but with high latency variance (7-64s), indicating missing automatic fallback logic and health-aware routing.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Prüfen, warum Modelle sc:2`
 *28.08. 19:42 UTC · Quelle: evolution*

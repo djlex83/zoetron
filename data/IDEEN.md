@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 19:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence stalls because simulation reports 'go' with 3 risks and 2 revisions but no automated validation loop exists to iterate until the cri
+- Metabolism shows maximum stress (1.0) forcing conserve mode with a 1-iteration budget, yet the system still attempts multiple model calls and hand act
+- Reflex tool execution fails silently (exit 1, no error output) suggesting the script either lacks execute permissions, misses dependencies, or cannot 
+- Hand actions repeatedly fail because they ignore the mandatory data path sources (sys.argv[1] and ZOETRON_DATA env var), using relative paths that res
+- The primary model (glm-5.2) fails consistently with 429 rate limits while the fallback (nemotron) succeeds but with high latency variance (7-64s), ind
 - Repeated failures in converting dreams to skills suggest that the current simulation/reflex loop is not effectively translating abstract goals into co
 - The system is in a 'conserve' state with high stress (1.0), meaning only 1 iteration is allowed per task, which prevents complex multi-step problem so
 - File path handling in Python scripts is failing because relative paths are not being resolved against the ZOETRON_DATA environment variable.
@@ -51,11 +56,6 @@
 - Hand actions reject code containing 'shutdown' pattern, indicating a static safety filter that blocks legitimate admin logic.
 - Nvidia Nemotron-3-Ultra succeeds where others fail but exhibits high latency variance (26–110s), requiring timeout budgets.
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
-- Rate-limit headers (Retry-After, X-RateLimit-Remaining) are emitted but ignored, causing reactive 429 storms instead of proactive throttling.
-- Proposed resilience skills (circuit-breaker, pre-flight, dispatcher) remain unimplemented because no "dream-to-action" enforcement exists.
-- Swarm evolved but failed to converge (score 6, cycles 2), indicating revision loops lack a hard acceptance gate.
-- Successful calls (inclusionai/ling, nvidia/nemotron-3-ultra) share low latency and stable headers, suggesting health signals are predictable from firs
-- Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained swarm workloads.
 
 ---
 

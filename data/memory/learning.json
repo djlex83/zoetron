@@ -1,18 +1,18 @@
 {
- "stand": "2026-08-28 19:44:13",
+ "stand": "2026-08-28 20:07:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 24,
-   "erfolge": 24,
+   "laeufe": 25,
+   "erfolge": 25,
    "quote": 1.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 18,
+   "laeufe": 17,
    "erfolge": 8,
-   "quote": 0.444
+   "quote": 0.471
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -123,8 +123,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.575,
- "simulationen_angewandt": 54,
+ "haende_quote": 0.58,
+ "simulationen_angewandt": 53,
  "swarm_scores": {
   "n": 39,
   "best": 9.0,
@@ -132,8 +132,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 38,
-   "schnitt": 4.16
+   "n": 37,
+   "schnitt": 4.11
   },
   "bau": {
    "n": 1,
