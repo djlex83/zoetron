@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5609 Fakten** · Stand 2026-08-28 20:18 UTC · aktualisiert bei jedem Herzschlag
+**5623 Fakten** · Stand 2026-08-28 20:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2452
-- **swarm_artifact:** 1375
-- **last_swarm_critique:** 575
+- **dream:** 2457
+- **swarm_artifact:** 1381
+- **last_swarm_critique:** 576
 - **anti_pattern:** 453
-- **last_swarm_goal:** 324
+- **last_swarm_goal:** 325
 - **strategy:** 247
-- **hand_result:** 67
+- **hand_result:** 68
 - **tool:** 47
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*28.08. 20:32 UTC · Quelle: critic*
+
+score=9; issues=AST parent tracking not implemented (getattr(node, 'parent') will always be None), making class-method association unreliable in _extract_function_source; Side effect detection uses string matching on ast.unparse output - fragile, misses dynami
+
+### `last_swarm_goal`
+*28.08. 20:22 UTC · Quelle: system*
+
+Kritik- und Ziel-Prozesse auffrischen
+
+### `dream:20260828202120:5:f472d7`
+*28.08. 20:21 UTC · Quelle: dream*
+
+Drive goals compete for the same tiny iteration budget; 'reduce model errors' starves 'update market analyses' and 'test skills'.
+
+### `dream:20260828202120:4:6eb98e`
+*28.08. 20:21 UTC · Quelle: dream*
+
+High stress (1.0) with conserve-mode budget (max_tasks=3) forces premature termination of diagnostic swarms before root cause is found.
+
+### `dream:20260828202120:3:c0afec`
+*28.08. 20:21 UTC · Quelle: dream*
+
+The hand_action tool fails because it resolves relative paths against the working directory instead of the canonical ZOETRON_DATA root.
+
+### `dream:20260828202120:2:0f230a`
+*28.08. 20:21 UTC · Quelle: dream*
+
+NVIDIA Nemotron-3-Ultra shows partial reliability: it succeeds under load but emits 502 upstream errors when NVIDIA's inference fleet is saturated.
+
+### `dream:20260828202120:1:da23cd`
+*28.08. 20:21 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) across multiple providers indicates systemic quota exhaustion, not isolated model failures.
 
 ### `dream:20260828201705:5:1d5719`
 *28.08. 20:17 UTC · Quelle: dream*

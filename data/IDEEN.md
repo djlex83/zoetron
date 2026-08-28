@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 20:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 17×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 14×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Ziele konsequent zu Ende bringen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 2×)*
 - Schwarm-Lernen und Simulationen ausbauen *(wieder aufgegriffen: 2×)*
 - Menschliche Eingriffe überflüssig machen *(wieder aufgegriffen: 2×)*
 - Simulationen in echtes Handeln übersetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals compete for the same tiny iteration budget; 'reduce model errors' starves 'update market analyses' and 'test skills'.
+- High stress (1.0) with conserve-mode budget (max_tasks=3) forces premature termination of diagnostic swarms before root cause is found.
+- The hand_action tool fails because it resolves relative paths against the working directory instead of the canonical ZOETRON_DATA root.
+- NVIDIA Nemotron-3-Ultra shows partial reliability: it succeeds under load but emits 502 upstream errors when NVIDIA's inference fleet is saturated.
+- Rate limiting (HTTP 429) across multiple providers indicates systemic quota exhaustion, not isolated model failures.
 - System enters conserve mode (stress=1.0) limiting to 3 tasks, requiring atomic task decomposition for progress.
 - Fallback models (Nemotron) succeed but with 16-50s latency, making them unsuitable for time-critical paths without async handling.
 - All file operations fail when paths aren't strictly resolved against ZOETRON_DATA environment variable.
@@ -51,11 +56,6 @@
 - Evolutionary iteration dramatically improved scores from 1 to 9 in one generation, proving the critic-sandbox-evolution loop works when artifacts exec
 - Hand actions fail silently (exit=1, gelesen=0) without error details, indicating missing stdout/stderr capture in the sandbox executor.
 - Rate limiting (429 errors) affects multiple free models simultaneously, requiring a tiered fallback strategy with latency-aware routing.
-- Swarm convergence stalls because simulation reports 'go' with 3 risks and 2 revisions but no automated validation loop exists to iterate until the cri
-- Metabolism shows maximum stress (1.0) forcing conserve mode with a 1-iteration budget, yet the system still attempts multiple model calls and hand act
-- Reflex tool execution fails silently (exit 1, no error output) suggesting the script either lacks execute permissions, misses dependencies, or cannot 
-- Hand actions repeatedly fail because they ignore the mandatory data path sources (sys.argv[1] and ZOETRON_DATA env var), using relative paths that res
-- The primary model (glm-5.2) fails consistently with 429 rate limits while the fallback (nemotron) succeeds but with high latency variance (7-64s), ind
 
 ---
 
