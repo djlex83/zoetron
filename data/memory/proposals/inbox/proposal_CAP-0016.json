@@ -1,0 +1,25 @@
+{
+  "id": "CAP-0016",
+  "capability_name": "self_modification_safety",
+  "gap": {
+    "capability_name": "self_modification_safety",
+    "current_score": 0.33,
+    "target_score": 0.95,
+    "gap_severity": 0.6526315789473683,
+    "evidence": {
+      "current_score": 0.33,
+      "target_score": 0.95,
+      "gap_size": 0.6199999999999999,
+      "benchmark_runs": 12,
+      "last_updated": "2026-08-27T11:17:07.536454"
+    },
+    "suggested_actions": [
+      "Deploy sandboxed modification validator",
+      "Add rollback mechanism with state snapshots",
+      "Implement capability gain/loss tracking"
+    ]
+  },
+  "priority": 66,
+  "created_at": "2026-08-28T05:33:34.588913",
+  "status": "pending"
+}

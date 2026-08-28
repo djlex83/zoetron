@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 05:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,8 +30,8 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich testen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Tool registration was rejected because list_ideas() contained only a placeholder pass statement.
+- Calibration predicted 2 cycles but actual was 8 (error 6), revealing systematic underestimation for skill-conversion tasks.
+- Three simulation revisions for five risks successfully de-risked the skill-conversion goal, yielding convergence at score 8.
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but with high latency variance (8–122s), requiring timeout budgets and fallback chains.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate limiting that makes it unreliable for production use.
 - Reflexes and hand actions succeed in isolation but fail to chain into completed workflows, indicating missing orchestration layer.
 - Variable latency on fallback model (9-36s) makes time-budgeted operations unpredictable, requiring latency-aware routing.
 - Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that inflate perceived system competence.
@@ -51,11 +56,6 @@
 - Evolution runs with 3 variants boosted artifact score from 4 to 9 (winner), proving iterative refinement outperforms single-pass generation.
 - Nemotron-3-ultra succeeds 100% of the time but latency varies 12x (12s–150s), requiring timeout budgets not fixed limits.
 - Free-tier models (glm-5.2) consistently hit 429 rate limits under load, making them unreliable for production pipelines.
-- 429 errors follow burst patterns; exponential backoff with jitter and request spreading prevents thundering herd on fallback.
-- Token budgets enforced post-hoc allow overflow; streaming generation needs hard token counters with mid-stream truncation.
-- Skill proposals accumulate without execution; a micro-test harness must validate each proposal within 30 seconds of creation.
-- Relative path resolution fails under conserve mode; all file operations must anchor to ZOETRON_DATA absolute root.
-- Rate-limited primary models cause cascading latency when fallbacks are slow; routing must predict latency not just availability.
 
 ---
 

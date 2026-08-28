@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 05:21:48",
+ "stand": "2026-08-28 05:33:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,13 +27,13 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
+   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0

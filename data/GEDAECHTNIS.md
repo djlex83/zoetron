@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5087 Fakten** · Stand 2026-08-28 05:22 UTC · aktualisiert bei jedem Herzschlag
+**5092 Fakten** · Stand 2026-08-28 05:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2138
+- **dream:** 2143
 - **swarm_artifact:** 1271
 - **last_swarm_critique:** 557
 - **anti_pattern:** 419
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828053314:5:f88d15`
+*28.08. 05:33 UTC · Quelle: dream*
+
+Tool registration was rejected because list_ideas() contained only a placeholder pass statement.
+
+### `dream:20260828053314:4:9ae0c6`
+*28.08. 05:33 UTC · Quelle: dream*
+
+Calibration predicted 2 cycles but actual was 8 (error 6), revealing systematic underestimation for skill-conversion tasks.
+
+### `dream:20260828053314:3:cf57dd`
+*28.08. 05:33 UTC · Quelle: dream*
+
+Three simulation revisions for five risks successfully de-risked the skill-conversion goal, yielding convergence at score 8.
+
+### `dream:20260828053314:2:194a90`
+*28.08. 05:33 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but with high latency variance (8–122s), requiring timeout budgets and fallback chains.
+
+### `dream:20260828053314:1:d9dfcb`
+*28.08. 05:33 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate limiting that makes it unreliable for production use.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Träume in echte Verbesse:2`
 *28.08. 05:20 UTC · Quelle: evolution*
