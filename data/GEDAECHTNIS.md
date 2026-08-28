@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5560 Fakten** · Stand 2026-08-28 18:47 UTC · aktualisiert bei jedem Herzschlag
+**5577 Fakten** · Stand 2026-08-28 19:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2427
-- **swarm_artifact:** 1363
-- **last_swarm_critique:** 573
-- **anti_pattern:** 449
-- **last_swarm_goal:** 322
-- **strategy:** 245
-- **hand_result:** 65
+- **dream:** 2432
+- **swarm_artifact:** 1369
+- **last_swarm_critique:** 574
+- **anti_pattern:** 451
+- **last_swarm_goal:** 323
+- **strategy:** 246
+- **hand_result:** 66
 - **tool:** 47
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*28.08. 19:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Minimal Viable Swarm - Single-File Stateful Loop - Collapse entire swarm into one 200-line Python file with zero dependencies beyond stdlib. One `while` loop: propose -> evaluate -> select -> mutate -> repeat. All agents are 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:0`
+*28.08. 19:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Architectural Rewrite - Event-Driven Actor Model - Replace the current fragile class-based swarm with a pure event-driven actor system. Each agent is an independent process communicating only via typed message queues (multipr
+
+### `last_swarm_critique`
+*28.08. 19:14 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - Artefakte laufen nicht (Tracebacks in action_1787944421069.py:387 und action_1787944421285.py:76); Kein lauffaehiger Swarm-Lauf erreicht - Ziel 'Score 8+ konvergieren' nicht erfuellt; Laufzeitfehler verhindern jed
+
+### `last_swarm_goal`
+*28.08. 19:10 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260828190938:5:92ba8e`
+*28.08. 19:09 UTC · Quelle: dream*
+
+Calibration error of zero on a binary outcome suggests the predictor is overconfident or the metric is too coarse.
+
+### `dream:20260828190938:4:a6ea1f`
+*28.08. 19:09 UTC · Quelle: dream*
+
+Evolutionary search with critic feedback jumps task scores from 1 to 9 in one generation, proving iterative repair works.
+
+### `dream:20260828190938:3:158913`
+*28.08. 19:09 UTC · Quelle: dream*
+
+Hand actions reject code containing 'shutdown' pattern, indicating a static safety filter that blocks legitimate admin logic.
+
+### `dream:20260828190938:2:7128a8`
+*28.08. 19:09 UTC · Quelle: dream*
+
+Nvidia Nemotron-3-Ultra succeeds where others fail but exhibits high latency variance (26–110s), requiring timeout budgets.
+
+### `dream:20260828190938:1:0a6733`
+*28.08. 19:09 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
 ### `tool:träume-besser-zum-lernen-nutzen`
 *28.08. 18:46 UTC · Quelle: hands*
