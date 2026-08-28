@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5266 Fakten** · Stand 2026-08-28 10:04 UTC · aktualisiert bei jedem Herzschlag
+**5271 Fakten** · Stand 2026-08-28 10:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2248
+- **dream:** 2253
 - **swarm_artifact:** 1307
 - **last_swarm_critique:** 563
 - **anti_pattern:** 429
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828100934:5:74e279`
+*28.08. 10:09 UTC · Quelle: dream*
+
+Model latency variance is extreme (3.5s vs 91.7s for same model family), making static timeouts unreliable for routing decisions.
+
+### `dream:20260828100934:4:025b5d`
+*28.08. 10:09 UTC · Quelle: dream*
+
+Memory pruning removes zero facts/events despite continuous operation, implying retention thresholds are miscalibrated for the event volume.
+
+### `dream:20260828100934:3:4183d7`
+*28.08. 10:09 UTC · Quelle: dream*
+
+Self-generated skill proposals from prior failures (backoff, health scoreboard, fallback chain) remain unimplemented, creating a proposal-execution gap.
+
+### `dream:20260828100934:2:751e69`
+*28.08. 10:09 UTC · Quelle: dream*
+
+Swarm evolution produces revisions but fails to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptance threshold.
+
+### `dream:20260828100934:1:1e1638`
+*28.08. 10:09 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across multiple model families simultaneously, indicating shared upstream quotas rather than per-model limits.
 
 ### `dream:20260828100206:5:1cf480`
 *28.08. 10:02 UTC · Quelle: dream*
