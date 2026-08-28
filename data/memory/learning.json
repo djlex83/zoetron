@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-28 06:40:58",
+ "stand": "2026-08-28 06:46:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -117,7 +117,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.596,
+ "haende_quote": 0.598,
  "simulationen_angewandt": 62,
  "swarm_scores": {
   "n": 46,
@@ -126,8 +126,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 45,
-   "schnitt": 4.96
+   "n": 44,
+   "schnitt": 5.02
   },
   "bau": {
    "n": 1,

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 06:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Aus Träumen und Simulationen lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hardcoded stress thresholds surfaced as a critic issue, showing that embedded constants reduce adaptability across contexts.
+- Evolution and swarm loops stall at score 7 without convergence detection, burning cycles on plateaued performance.
+- Calibration consistently underestimates experiment throughput (predicted 3 vs actual 7), revealing a systematic prediction bias for exploratory goals.
+- Nemotron-3-ultra latency varies 6x (15–95s), making fixed timeouts unreliable and requiring per-model p95 budgets with fallback.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate a persistent rate-limit bottleneck that wastes cycles without automatic circuit-breaking.
 - 'nvidia/nemotron-3-ultra-550b-a55b:free' exhibits high latency variance (4.8s to 79.4s) and occasional 502 upstream errors under load.
 - The calibration for the goal 'Mehr Experimente für neue Lösungen wagen' significantly underestimated the outcome (predicted 3, actual 7).
 - 'inclusionai/ling-3.0-flash-fin:free' provides a reliable, low-latency alternative (5.7s) when primary models are overloaded.
@@ -51,11 +56,6 @@
 - Five concrete skill proposals exist but none have entered the validation pipeline, revealing a missing 'proposal → production' automation loop.
 - The fallback model 'nvidia/nemotron-3-ultra' shows extreme latency variance (11.8 s – 90.2 s), so static timeouts either kill valid requests or stall 
 - The model 'z-ai/glm-5.2:free' fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without a request-spacing or quota-aware rout
-- Hand actions fail silently (exit 1, no error output), requiring explicit validation gates before tool execution.
-- Simulation revisions (5 risks → 5 revisions) work but need a hard risk-count threshold to bound iteration loops.
-- Evolution cycles boost scores (1→9) but swarm fails to converge, indicating missing convergence criteria (score plateau + risk threshold).
-- Fallback model latency variance (15–105s) demands per-model timeout budgets and latency-aware routing to prevent stalls.
-- Rate-limited models (429 errors) cascade into repeated failures unless automatically excluded after N consecutive occurrences.
 
 ---
 
