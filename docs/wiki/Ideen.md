@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 10:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 17×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 15×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 16×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex successfully used a tool to understand rejected tools, proving meta-cognitive skills can unblock capability adoption.
+- Pruning ran but removed zero facts/events, suggesting thresholds are miscalibrated or access-frequency tracking is broken.
+- Multiple skill proposals for model reliability exist but none are implemented, revealing a promotion gap between proposal and production.
+- High latency variance (34-73s) on nemotron-3-ultra shows static timeouts cause unnecessary failures or wasted waits.
+- Recurring 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and rate-limit handling for external model endpoints.
 - Pruning operates blindly without access-frequency telemetry, risking removal of latent knowledge that later drives reflex connections.
 - Convergence decisions lack multi-party gates (critic + planner + score threshold), causing premature convergence on unreliable outputs.
 - Model fallback succeeds but incurs 23-83s latency spikes, indicating missing per-model p95 latency budgets and dynamic timeout calibration.
@@ -51,11 +56,6 @@
 - Repeated 6/10 scores on the same goal indicate structural stagnation, not parameter drift—requiring forced architectural changes.
 - Missing organ dependencies (e.g., hands) silently cap performance at 6/10 without pre-validation, leading to repeated low-quality outcomes.
 - Sequential model calls to free-tier endpoints trigger cascading 429 rate-limit failures, causing pipeline stalls and wasted compute.
-- Zero pruning occurred despite repeated failures, suggesting memory retention policies don't yet weight operational relevance.
-- The system already converts failure patterns into concrete skill proposals (retry logic, health scoring, cooldown registry), demonstrating a working f
-- Latency variance (3.5s vs 11.1s) on the same model indicates queue-depth or cold-start effects that static timeouts cannot handle.
-- Dynamic model health varies drastically — poolside/laguna-s-2.1 succeeded while four other models failed simultaneously — requiring real-time routing 
-- Rate limiting (429) and upstream overload (502) are the dominant failure modes, making single-model reliance fundamentally fragile.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5297 Fakten** · Stand 2026-08-28 10:50 UTC · aktualisiert bei jedem Herzschlag
+**5302 Fakten** · Stand 2026-08-28 10:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2268
+- **dream:** 2273
 - **swarm_artifact:** 1313
 - **last_swarm_critique:** 564
 - **anti_pattern:** 431
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260828105358:5:1f9d8b`
+*28.08. 10:53 UTC · Quelle: dream*
+
+Reflex successfully used a tool to understand rejected tools, proving meta-cognitive skills can unblock capability adoption.
+
+### `dream:20260828105358:4:b7d006`
+*28.08. 10:53 UTC · Quelle: dream*
+
+Pruning ran but removed zero facts/events, suggesting thresholds are miscalibrated or access-frequency tracking is broken.
+
+### `dream:20260828105358:3:5d68b7`
+*28.08. 10:53 UTC · Quelle: dream*
+
+Multiple skill proposals for model reliability exist but none are implemented, revealing a promotion gap between proposal and production.
+
+### `dream:20260828105358:2:d7ff14`
+*28.08. 10:53 UTC · Quelle: dream*
+
+High latency variance (34-73s) on nemotron-3-ultra shows static timeouts cause unnecessary failures or wasted waits.
+
+### `dream:20260828105358:1:d21706`
+*28.08. 10:53 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and rate-limit handling for external model endpoints.
 
 ### `dream:20260828104939:5:582726`
 *28.08. 10:49 UTC · Quelle: dream*
