@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6406 Fakten** · Stand 2026-08-29 15:30 UTC · aktualisiert bei jedem Herzschlag
+**6411 Fakten** · Stand 2026-08-29 15:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2916
+- **dream:** 2921
 - **swarm_artifact:** 1557
 - **last_swarm_critique:** 606
 - **anti_pattern:** 493
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829153401:5:c1daed`
+*29.08. 15:34 UTC · Quelle: dream*
+
+Simulation approved the market-analysis update with 3 risks and 3 revisions, suggesting the validation loop catches issues but adds latency; automated risk mitigation could accelerate approval.
+
+### `dream:20260829153401:4:6c54a0`
+*29.08. 15:34 UTC · Quelle: dream*
+
+Multiple skill proposals (router, rate-limit handling, stress scheduler) already exist but remain unimplemented, creating a proposal-to-execution gap that blocks resilience improvements.
+
+### `dream:20260829153401:3:d8e8ef`
+*29.08. 15:34 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 (conserve mode) coincides with continued model failures, showing the stress-aware scheduler is not yet reducing load or switching models effectively.
+
+### `dream:20260829153401:2:2c33a2`
+*29.08. 15:34 UTC · Quelle: dream*
+
+Nemotron-3-ultra latency varies 10x (6.5s to 80.6s) despite similar token counts, indicating unpredictable queueing or cold-start effects that require timeout budgets per call.
+
+### `dream:20260829153401:1:5db529`
+*29.08. 15:34 UTC · Quelle: dream*
+
+Rate limiting on z-ai/glm-5.2:free is persistent and predictable (429 errors every ~4-8 seconds), making it unreliable for production workloads without proactive quota management.
 
 ### `dream:20260829152856:5:5f1024`
 *29.08. 15:28 UTC · Quelle: dream*

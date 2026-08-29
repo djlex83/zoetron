@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 15:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 15:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation approved the market-analysis update with 3 risks and 3 revisions, suggesting the validation loop catches issues but adds latency; automated
+- Multiple skill proposals (router, rate-limit handling, stress scheduler) already exist but remain unimplemented, creating a proposal-to-execution gap 
+- Metabolism stress at 1.0 (conserve mode) coincides with continued model failures, showing the stress-aware scheduler is not yet reducing load or switc
+- Nemotron-3-ultra latency varies 10x (6.5s to 80.6s) despite similar token counts, indicating unpredictable queueing or cold-start effects that require
+- Rate limiting on z-ai/glm-5.2:free is persistent and predictable (429 errors every ~4-8 seconds), making it unreliable for production workloads withou
 - Hand action exits with code 1 but zero error details, making debugging impossible; all external calls must emit structured error payloads.
 - Calibration error of +1 (predicted 5 vs actual 6) suggests consistent underestimation; prediction models need bias correction.
 - Evolution/swarm cycles improve scores (6→8–9) but stall at non-convergence, revealing missing termination criteria for 'good enough' results.
@@ -51,11 +56,6 @@
 - Hand-action failures are transient; immediate retry succeeds in <0.2s, pointing to resource contention rather than logic errors.
 - The inclusionai/ling-3.0-flash-fin:free model succeeds consistently but shows high latency variance (6.5–10.6s), indicating queue-dependent performanc
 - Free-tier models on OpenRouter (z-ai/glm-5.2, google/gemma variants) consistently hit 429 rate limits, making them unreliable for production workloads
-- Skill proposals accumulate without implementation; a dedicated proposal-to-skill pipeline with acceptance criteria is needed.
-- Simulation recommends revisions but zero are applied, indicating a broken apply loop; every simulation verdict must trigger an automatic patch-apply-v
-- Under high stress (1.0) with conserve metabolism, the system cannot execute multi-step plans; skills must be atomic and idempotent.
-- Free OpenRouter models exhibit high failure rates (429/404); maintain a health score per model and auto-fallback to working models like inclusionai/li
-- File operations must use absolute paths from sys.argv[1] and ZOETRON_DATA environment variable, not relative paths.
 
 ---
 
