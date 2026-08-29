@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 19:31:38",
+ "stand": "2026-08-29 19:36:32",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -22,7 +22,7 @@
   },
   {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 7,
+   "laeufe": 6,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -195,8 +195,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.676,
- "simulationen_angewandt": 32,
+ "haende_quote": 0.681,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 39,
   "best": 9.0,
@@ -204,8 +204,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 36,
-   "schnitt": 5.5
+   "n": 35,
+   "schnitt": 5.54
   },
   "bau": {
    "n": 3,

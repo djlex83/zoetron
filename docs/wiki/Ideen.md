@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 19:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 19:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,10 +29,10 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful reflex execution (fertigkeiten-wirklich-ausprobieren-nicht.py) proves skill deployment works when file access is validated, but this patter
+- Stress-aware scheduling is proposed but not implemented: conserve mode triggers (>0.7) and hysteresis resume (<0.5) remain theoretical without a sched
+- Path-related failures persist despite resolver proposals because sys.argv[1] and ZOETRON_DATA normalization is not enforced at the hand-action entry p
+- Skill proposals accumulate but lack a validation gate: multiple pipeline/path/scheduler proposals exist yet no evidence of pre-deployment testing or s
+- Repeated 429 errors from primary model (z-ai/glm-5.2:free) cause cascading latency spikes (40-50s) when falling back to secondary model without automa
 - Pre-execution simulation gates with dry-run mode for destructive operations catch path, permission, and dependency errors before they hit production.
 - Stress-aware scheduling with hysteresis (conserve >0.7, resume <0.5) prevents cascade failures during high-load periods when model APIs are most likel
 - Path resolution failures recur across skills; normalizing sys.argv[1] and ZOETRON_DATA to absolute paths before any filesystem touch eliminates a whol
@@ -51,11 +56,6 @@
 - Multiple skill proposals address the same root cause (rate limiting, model routing) but remain unimplemented, revealing an execution gap between propo
 - Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (14-28s), suggesting no latency-aware routing exists.
 - The z-ai/glm-5.2:free model consistently returns 429 errors, indicating a hard rate limit that makes it unreliable as a primary model.
-- Drive goals signaling strategic priorities (model reliability, stale work, skill consolidation) should auto-spawn corresponding skill development.
-- Reflex tools reliably convert proposals into registered skills when triggered by drive goals.
-- Skill proposals accumulate faster than manual implementation; an automated proposal-to-skill pipeline is essential.
-- High-latency fallback models (13-28s) degrade responsiveness and need latency budgets with enforced timeouts.
-- Rate-limited models (429 errors) require automatic circuit-breaking and fallback routing to maintain system availability.
 
 ---
 
