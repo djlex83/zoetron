@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6486 Fakten** · Stand 2026-08-29 17:19 UTC · aktualisiert bei jedem Herzschlag
+**6491 Fakten** · Stand 2026-08-29 17:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2976
+- **dream:** 2981
 - **swarm_artifact:** 1569
 - **last_swarm_critique:** 608
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829172801:5:582be3`
+*29.08. 17:28 UTC · Quelle: dream*
+
+Structured error logging captures status codes and latency but lacks correlation IDs to trace failures across model hops.
+
+### `dream:20260829172801:4:9f4207`
+*29.08. 17:28 UTC · Quelle: dream*
+
+Drive goals (error reduction, market analysis, skill testing) remain stale because no scheduler converts them into executable work items.
+
+### `dream:20260829172801:3:d09c53`
+*29.08. 17:28 UTC · Quelle: dream*
+
+Model routing succeeds only when a fallback pool exists and retry logic respects Retry-After headers, as shown by the single successful inclusionai call.
+
+### `dream:20260829172801:2:40c392`
+*29.08. 17:28 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a deployment pipeline; the same circuit-breaker and backoff ideas repeat without implementation.
+
+### `dream:20260829172801:1:3b9ed3`
+*29.08. 17:28 UTC · Quelle: dream*
+
+Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
 
 ### `dream:20260829171858:5:056439`
 *29.08. 17:18 UTC · Quelle: dream*

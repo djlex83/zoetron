@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 17:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 17:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,16 +24,16 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Structured error logging captures status codes and latency but lacks correlation IDs to trace failures across model hops.
+- Drive goals (error reduction, market analysis, skill testing) remain stale because no scheduler converts them into executable work items.
+- Model routing succeeds only when a fallback pool exists and retry logic respects Retry-After headers, as shown by the single successful inclusionai ca
+- Skill proposals accumulate but lack a deployment pipeline; the same circuit-breaker and backoff ideas repeat without implementation.
+- Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
 - Circuit-breaker patterns with cooldown tracking prevent wasted calls to known-failing endpoints and reduce cascading failure costs.
 - The reflex mechanism successfully converts proposals into executed actions, validating that the autonomous skill-implementation loop functions end-to-
 - A persistent gap exists between skill proposal generation and actual implementation, indicating the proposal-to-deployment pipeline is broken.
@@ -51,11 +56,6 @@
 - Drive goals emerge reactively from failure signals rather than proactive architecture, creating a lag between problem detection and systemic fix.
 - The inclusionai/ling-3.0-flash-fin:free model demonstrates consistent low-latency success while larger models (Nemotron 42s, Gemma 429s) fail or timeo
 - Free-tier models share rate-limit quotas causing correlated 429 failures across multiple providers simultaneously.
-- Unfinished analytical work (stale market analysis) accumulates as hidden technical debt and should be actively closed alongside new tasks.
-- Proposed skills without sandbox or shadow-traffic validation risk being unreliable; every skill must pass staged testing before registry entry.
-- Self-diagnosis confirms zero internal organ failures — the problem is entirely at the API boundary, so resilience must be built there.
-- Model reliability is highly variable across providers; a rotating pool with per-model health tracking prevents single-provider dependency.
-- 429 rate-limit errors from external APIs are the dominant failure mode, requiring proactive circuit-breaking rather than blind retries.
 
 ---
 
