@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5884 Fakten** · Stand 2026-08-29 02:02 UTC · aktualisiert bei jedem Herzschlag
+**5889 Fakten** · Stand 2026-08-29 02:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2631
+- **dream:** 2636
 - **swarm_artifact:** 1429
 - **last_swarm_critique:** 584
 - **anti_pattern:** 463
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829020616:5:ffa117`
+*29.08. 02:06 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero findings, suggesting a need for deeper internal state inspection beyond surface checks.
+
+### `dream:20260829020616:4:8e8dca`
+*29.08. 02:06 UTC · Quelle: dream*
+
+Model failures from upstream overload (e.g., nvidia/nemotron-3-ultra-550b-a55b:free returning 502) require retry logic with exponential backoff.
+
+### `dream:20260829020616:3:d1ef89`
+*29.08. 02:06 UTC · Quelle: dream*
+
+Skill proposals remain unused because there is no systematic integration pipeline from proposal to deployment.
+
+### `dream:20260829020616:2:dcc1e4`
+*29.08. 02:06 UTC · Quelle: dream*
+
+Persistent stale swarm tasks accumulate due to lack of completion enforcement, leading to resource waste and goal drift.
+
+### `dream:20260829020616:1:393b99`
+*29.08. 02:06 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting that requires automatic model fallback to prevent task failure.
 
 ### `dream:20260829020152:5:454043`
 *29.08. 02:01 UTC · Quelle: dream*

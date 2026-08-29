@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 02:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 02:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
 - Modelle besser verstehen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis consistently reports zero findings, suggesting a need for deeper internal state inspection beyond surface checks.
+- Model failures from upstream overload (e.g., nvidia/nemotron-3-ultra-550b-a55b:free returning 502) require retry logic with exponential backoff.
+- Skill proposals remain unused because there is no systematic integration pipeline from proposal to deployment.
+- Persistent stale swarm tasks accumulate due to lack of completion enforcement, leading to resource waste and goal drift.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting that requires automatic model fallback to prevent task failure.
 - Hand actions fail with exit code 1 and no error detail, indicating opaque execution environment failures that evade self-diagnosis.
 - Swarm role distribution (1 planner, 3 builders, 1 critic) is static and may not match task demands, evidenced by non-convergence after 2 cycles.
 - Calibration predicted 2 but actual was 1, showing systematic overconfidence in capability estimation.
@@ -51,11 +56,6 @@
 - Hand actions repeatedly exit with code 1 in <1 s, indicating a systemic environment or permission issue rather than task-specific bugs.
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (6–77 s), requiring adaptive timeouts and speculative parallel c
 - The model z-ai/glm-5.2:free is consistently unavailable due to 429 rate limits and should be removed from the primary routing pool.
-- System stress is maxed (1.0) and metabolism forces conserve mode, yet the swarm goal demands a high-score run that needs more resources.
-- File-path handling breaks on every hand action: scripts assume relative paths while the runtime requires ZOETRON_DATA absolute paths.
-- Skill proposals accumulate but none graduate to tested code because the proposal-to-skill pipeline does not exist.
-- Nemotron latency varies 10x (6s–76s), so fixed timeouts will either kill healthy requests or stall the pipeline.
-- The z-ai/glm-5.2 model fails 100% of the time with 429 errors, making it effectively unusable without circuit-breaking.
 
 ---
 
