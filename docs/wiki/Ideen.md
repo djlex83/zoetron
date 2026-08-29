@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 06:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 06:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation repeatedly flags high critical risks (5 risks, 3 revisions) suggesting pre-execution risk gates are absent.
+- Skill proposals accumulate (5 proposed, 0 implemented) creating a capability gap that blocks systemic improvement.
+- Swarm executions consistently stall at low convergence (score 1, converged=false) despite evolution cycles, indicating missing convergence criteria.
+- Latency variance of 8x (8.7s vs 68.1s) for the same model breaks interactive SLAs and requires budget-aware routing.
+- Model provider rate limits (429 errors) and upstream failures cause cascading reliability degradation without automated failover.
 - Simulation detected 5 risks and proposed 3 revisions but only 2 were applied, leaving known gaps.
 - Evolutionary variant selection improved score from 1 to 8, but swarm failed to converge in 2 cycles.
 - Calibration is severely misaligned (predicted 8 vs actual 1), indicating optimism bias in success estimation.
@@ -51,11 +56,6 @@
 - Nvidia Nemotron shows intermittent success with highly variable latency (18-103s), suggesting unstable upstream capacity rather than hard quota exhaus
 - Only poolside/laguna-s-2.1:free consistently succeeds but with extreme latency (176-190s), indicating capacity saturation on that endpoint.
 - Free-tier models on OpenRouter suffer pervasive rate limiting (429) and upstream overload (502), making them unreliable for production workloads.
-- Calibration predictions undershoot actual scores by approximately 2 units, indicating a systematic bias that requires a safety margin in goal-scoring 
-- Hand actions exhibit a ~75% failure rate but carry negligible downstream impact, suggesting they are non-critical operations that tolerate repeated at
-- The swarm architecture (planner/builder/critic roles) reliably converges to a score-9 solution in a single cycle for well-defined simulation goals.
-- nvidia/nemotron-3-ultra-550b-a55b:free is the stable workhorse model, with latency scaling predictably from ~25s to ~124s as token volume increases.
-- The z-ai/glm-5.2 model is persistently rate-limited (429 errors) and cannot be relied upon as a primary inference source without backoff and failover 
 
 ---
 

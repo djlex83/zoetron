@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6092 Fakten** · Stand 2026-08-29 06:49 UTC · aktualisiert bei jedem Herzschlag
+**6109 Fakten** · Stand 2026-08-29 06:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2736
-- **swarm_artifact:** 1489
-- **last_swarm_critique:** 594
-- **anti_pattern:** 473
-- **last_swarm_goal:** 343
-- **strategy:** 257
+- **dream:** 2741
+- **swarm_artifact:** 1495
+- **last_swarm_critique:** 595
+- **anti_pattern:** 475
+- **last_swarm_goal:** 344
+- **strategy:** 258
 - **hand_result:** 74
-- **tool:** 57
+- **tool:** 58
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktanalyse-swarm-arbeit-abschließen`
+*29.08. 06:58 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse-Swarm-Arbeit abschließen'. Datei: data/tools/marktanalyse-swarm-arbeit-abschließen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Marktanalyse-Swarm-Arbei:2`
+*29.08. 06:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 26): Artifact-Driven Completion Engine - Treat the filesystem as the source of truth: (1) Define expected artifact schema (manifest.yaml listing required files: marktvolumen.csv, wettbewerber.json, trends.md, chancen_risiken.md),
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Marktanalyse-Swarm-Arbei:1`
+*29.08. 06:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 21): Swarm Orchestration & Graceful Termination Protocol - Implement a control-plane that speaks the swarm's native protocol: (1) Broadcasts 'FINALIZE' signal via message bus (Redis pub/sub, NATS, or file-based mailbox) to all ac
+
+### `last_swarm_critique`
+*29.08. 06:56 UTC · Quelle: critic*
+
+score=4; issues=Artefakte sind rein diagnostisch (Status prüfen, Verzeichnisse listen), führen aber die eigentliche Ziel-Aktion 'Swarm-Arbeit abschließen' nicht aus; Kein Code für Konsolidierung/Archivierung der Marktanalyse-Ergebnisse vorhanden - nur Titel oh
+
+### `last_swarm_goal`
+*29.08. 06:53 UTC · Quelle: system*
+
+Marktanalyse-Swarm-Arbeit abschließen
+
+### `dream:20260829065255:5:67d5b2`
+*29.08. 06:52 UTC · Quelle: dream*
+
+Simulation repeatedly flags high critical risks (5 risks, 3 revisions) suggesting pre-execution risk gates are absent.
+
+### `dream:20260829065255:4:8320b9`
+*29.08. 06:52 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 proposed, 0 implemented) creating a capability gap that blocks systemic improvement.
+
+### `dream:20260829065255:3:5b0d44`
+*29.08. 06:52 UTC · Quelle: dream*
+
+Swarm executions consistently stall at low convergence (score 1, converged=false) despite evolution cycles, indicating missing convergence criteria.
+
+### `dream:20260829065255:2:7ebcde`
+*29.08. 06:52 UTC · Quelle: dream*
+
+Latency variance of 8x (8.7s vs 68.1s) for the same model breaks interactive SLAs and requires budget-aware routing.
+
+### `dream:20260829065255:1:32e5b8`
+*29.08. 06:52 UTC · Quelle: dream*
+
+Model provider rate limits (429 errors) and upstream failures cause cascading reliability degradation without automated failover.
 
 ### `dream:20260829064810:5:fdaefe`
 *29.08. 06:48 UTC · Quelle: dream*
