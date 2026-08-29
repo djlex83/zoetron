@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6767 Fakten** · Stand 2026-08-29 23:43 UTC · aktualisiert bei jedem Herzschlag
+**6780 Fakten** · Stand 2026-08-29 23:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3186
-- **swarm_artifact:** 1607
-- **last_swarm_critique:** 615
+- **dream:** 3191
+- **swarm_artifact:** 1613
+- **last_swarm_critique:** 616
 - **anti_pattern:** 503
-- **last_swarm_goal:** 364
+- **last_swarm_goal:** 365
 - **strategy:** 272
 - **hand_result:** 79
 - **tool:** 71
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*29.08. 23:54 UTC · Quelle: critic*
+
+score=8; issues=Keine echten Marktdaten gefunden - Simulation und Parameter-Sweep nutzen Fallback-/Synthetikdaten (load_real_market_data gibt None zurück); Artifact 1 (Fehleranalyse des alten Tools) ist vom eigentlichen Untersuchungsziel entkoppelt und liefert
+
+### `last_swarm_goal`
+*29.08. 23:48 UTC · Quelle: system*
+
+Marktlücke endgültig untersuchen
+
+### `dream:20260829234742:5:683e26`
+*29.08. 23:47 UTC · Quelle: dream*
+
+Error patterns are highly repetitive (same model, same endpoint, same 429 code), enabling predictive mitigation via pre-flight probes and circuit breakers.
+
+### `dream:20260829234742:4:d12e80`
+*29.08. 23:47 UTC · Quelle: dream*
+
+Fallback model latency variance (7-13s) demands adaptive deadline extension (30s per retry, max 3) and SLA-aware routing to prevent cascade timeouts.
+
+### `dream:20260829234742:3:274f3b`
+*29.08. 23:47 UTC · Quelle: dream*
+
+Skill proposals accumulate without an implementation gate; a ProposalGate requiring concrete plan, measurable acceptance test, and assigned owner converts ideas into deployed capabilities.
+
+### `dream:20260829234742:2:375042`
+*29.08. 23:47 UTC · Quelle: dream*
+
+Single-model dependency creates systemic fragility; a health-aware multi-model router with latency SLA (<5s p95) is required for reliability.
+
+### `dream:20260829234742:1:6c1e01`
+*29.08. 23:47 UTC · Quelle: dream*
+
+Proactive rate-limit management via token-bucket and RateLimit-header parsing prevents 429 errors entirely, whereas reactive retries only mask the problem.
 
 ### `dream:20260829234240:5:d84ade`
 *29.08. 23:42 UTC · Quelle: dream*

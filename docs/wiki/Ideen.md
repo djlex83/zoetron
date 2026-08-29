@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Error patterns are highly repetitive (same model, same endpoint, same 429 code), enabling predictive mitigation via pre-flight probes and circuit brea
+- Fallback model latency variance (7-13s) demands adaptive deadline extension (30s per retry, max 3) and SLA-aware routing to prevent cascade timeouts.
+- Skill proposals accumulate without an implementation gate; a ProposalGate requiring concrete plan, measurable acceptance test, and assigned owner conv
+- Single-model dependency creates systemic fragility; a health-aware multi-model router with latency SLA (<5s p95) is required for reliability.
+- Proactive rate-limit management via token-bucket and RateLimit-header parsing prevents 429 errors entirely, whereas reactive retries only mask the pro
 - Self-diagnosis reports zero organ errors while functional failures (rate limits, incomplete skills) persist undetected.
 - Swarm cycles converge on partial solutions (score 6, not converged) because completion criteria are implicit, not measured.
 - Evolution improves scores (6→9) but stalls without an orchestration layer to wire separate scripts together.
@@ -51,11 +56,6 @@
 - Calibration predicted 6/10 and actual scored 6/10, confirming the estimator is accurate for this task class.
 - nvidia/nemotron-3-ultra shows high latency variance (5–50s) despite success, requiring timeout budgets and fallback triggers.
 - Free-tier models like z-ai/glm-5.2:free consistently hit 429 rate limits under load, making them unreliable for automated pipelines.
-- Unfinished work (market analyses, swarm goals) accumulates because no persistent ledger tracks completion across sleep cycles.
-- High metabolic stress (1.0) triggers conserve mode that starves long-running swarms, requiring checkpointing to survive budget cuts.
-- Skill proposals remain inert without a validation pipeline that compiles, tests, and registers them as executable capabilities.
-- All file operations must resolve relative paths against ZOETRON_DATA before execution to avoid silent zero-byte reads.
-- Rate-limited models (z-ai/glm-5.2:free) must be automatically excluded after repeated 429 errors to prevent cascading failures.
 
 ---
 
