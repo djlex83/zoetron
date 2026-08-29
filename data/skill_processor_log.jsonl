@@ -1,0 +1,1 @@
+{"timestamp": "2026-08-29T17:37:47.299291+00:00", "data_dir": "/workspace/zoetron/data", "batch_size": 10, "circuit_breaker_threshold": 5, "dlq_threshold": 3, "result": {"processed": 3, "promoted": 0, "failed": 0, "dead_lettered": 0, "circuit_breaker_tripped": false, "details": []}}

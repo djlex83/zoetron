@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6491 Fakten** · Stand 2026-08-29 17:29 UTC · aktualisiert bei jedem Herzschlag
+**6505 Fakten** · Stand 2026-08-29 17:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2981
-- **swarm_artifact:** 1569
-- **last_swarm_critique:** 608
+- **dream:** 2986
+- **swarm_artifact:** 1575
+- **last_swarm_critique:** 609
 - **anti_pattern:** 495
-- **last_swarm_goal:** 357
+- **last_swarm_goal:** 358
 - **strategy:** 268
-- **hand_result:** 77
+- **hand_result:** 78
 - **tool:** 67
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*29.08. 17:37 UTC · Quelle: critic*
+
+score=9; issues=Minor: Some contract tests in artifact 1 may fail if organs don't exist yet (expected during development); Minor: Processor uses simulated sandbox/shadow tests rather than actual organ invocations - but this is noted as simulation in code comme
+
+### `last_swarm_goal`
+*29.08. 17:33 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten öfter umsetzen
+
+### `dream:20260829173256:5:26668d`
+*29.08. 17:32 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a gated lifecycle (sandbox → shadow → registry), risking half-baked integrations that increase surface area for failures.
+
+### `dream:20260829173256:4:85b0db`
+*29.08. 17:32 UTC · Quelle: dream*
+
+System metabolism stress correlates with cascade failures; halving parallelism and doubling timeouts when stress > 0.8 prevents thundering-herd retries that worsen provider overload.
+
+### `dream:20260829173256:3:f14322`
+*29.08. 17:32 UTC · Quelle: dream*
+
+Upstream 502 errors (Nvidia) and 429 errors (Google, Z.ai) share the same root cause: provider-side capacity exhaustion, which is predictable and can be mitigated with circuit breakers.
+
+### `dream:20260829173256:2:d8ef8d`
+*29.08. 17:32 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin) sustained throughput while all others failed, proving that a primary/fallback hierarchy outperforms naive round-robin.
+
+### `dream:20260829173256:1:16b5ff`
+*29.08. 17:32 UTC · Quelle: dream*
+
+Free-tier models consistently fail under load with 429 rate limits, making them unreliable without a robust routing layer that tracks per-model error rates and respects Retry-After headers.
 
 ### `dream:20260829172801:5:582be3`
 *29.08. 17:28 UTC · Quelle: dream*

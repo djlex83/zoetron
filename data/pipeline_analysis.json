@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-08-29T17:37:55.131649",
+  "data_dir": "/workspace/zoetron/data",
+  "organs_analyzed": [
+    "ideen",
+    "werkzeugpruefung",
+    "konvergenztor"
+  ],
+  "inspections": {
+    "ideen": {
+      "error": "Organ not found: /workspace/zoetron/data/organs/ideen.py"
+    },
+    "werkzeugpruefung": {
+      "error": "Organ not found: /workspace/zoetron/data/organs/werkzeugpruefung.py"
+    },
+    "konvergenztor": {
+      "error": "Organ not found: /workspace/zoetron/data/organs/konvergenztor.py"
+    }
+  },
+  "contract_tests": {
+    "ideen": null,
+    "werkzeugpruefung": null,
+    "konvergenztor": null
+  },
+  "gaps": [
+    "ideen: missing lifecycle state tracking",
+    "werkzeugpruefung: missing lifecycle state tracking",
+    "konvergenztor: missing lifecycle state tracking",
+    "ideen: missing persistence for lifecycle",
+    "werkzeugpruefung: missing persistence for lifecycle",
+    "konvergenztor: missing persistence for lifecycle",
+    "ideen: missing gated lifecycle concepts",
+    "werkzeugpruefung: missing gated lifecycle concepts",
+    "konvergenztor: missing gated lifecycle concepts",
+    "ideen: no integration with other pipeline organs",
+    "werkzeugpruefung: no integration with other pipeline organs",
+    "konvergenztor: no integration with other pipeline organs"
+  ],
+  "recommendations": [
+    "Implement state machine with explicit phases: sandbox \u2192 shadow \u2192 registry",
+    "Add persistent storage for proposal state across organ invocations",
+    "Define clear JSON schemas for inter-organ contracts",
+    "Add error handling and retry logic for each gate transition",
+    "Create integration tests for full pipeline flow"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "last_run": "2026-08-29T17:37:47.298769+00:00",
+  "total_proposals": 3,
+  "proposals": {
+    "fd65b6ebd3c2117d": {
+      "name": "self_modification_safety",
+      "description": "Lücke 0.33 -> 0.95 (Schwere 0.653)",
+      "stage": "pending",
+      "fail_count": 0,
+      "last_tested": null,
+      "metadata": {
+        "skill_id": "skill_585807c2fe",
+        "quelle_id": "CAP-0022",
+        "prioritaet": 66,
+        "activation_steps": [
+          "Deploy sandboxed modification validator",
+          "Add rollback mechanism with state snapshots",
+          "Implement capability gain/loss tracking"
+        ],
+        "messwerte": {
+          "ist": 0.33,
+          "soll": 0.95,
+          "laeufe": 12
+        },
+        "source": "Fähigkeitsvorschlag"
+      },
+      "history": []
+    },
+    "65ea0a6f9a11870a": {
+      "name": "cross_domain_transfer",
+      "description": "Lücke 0.41 -> 0.8 (Schwere 0.488)",
+      "stage": "pending",
+      "fail_count": 0,
+      "last_tested": null,
+      "metadata": {
+        "skill_id": "skill_5e30f02d5f",
+        "quelle_id": "CAP-0023",
+        "prioritaet": 49,
+        "activation_steps": [
+          "Build shared representation encoder",
+          "Add domain-adversarial training objective",
+          "Implement meta-learning for rapid adaptation"
+        ],
+        "messwerte": {
+          "ist": 0.41,
+          "soll": 0.8,
+          "laeufe": 19
+        },
+        "source": "Fähigkeitsvorschlag"
+      },
+      "history": []
+    },
+    "37d41b108fe44738": {
+      "name": "tool_use_planning",
+      "description": "Lücke 0.47 -> 0.82 (Schwere 0.427)",
+      "stage": "pending",
+      "fail_count": 0,
+      "last_tested": null,
+      "metadata": {
+        "skill_id": "skill_a22d1fc44f",
+        "quelle_id": "CAP-0024",
+        "prioritaet": 43,
+        "activation_steps": [
+          "Add tool composition planning module",
+          "Implement failure recovery strategies",
+          "Build tool capability discovery system"
+        ],
+        "messwerte": {
+          "ist": 0.47,
+          "soll": 0.82,
+          "laeufe": 23
+        },
+        "source": "Fähigkeitsvorschlag"
+      },
+      "history": []
+    }
+  }
+}
