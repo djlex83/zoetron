@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 18:40:42",
+ "stand": "2026-08-29 18:45:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -172,6 +172,12 @@
   },
   {
    "tool": "neue-fähigkeiten-erlernen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

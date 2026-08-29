@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration systematically overestimates task feasibility (predicted 3 vs actual 2), revealing a persistent optimism bias in the planner.
+- Swarm execution fails to converge (converged=false) after only 2 cycles, suggesting critic feedback loops are broken or insufficient.
+- The market-analysis task repeatedly scores 2/10 despite evolution cycles, indicating a fundamental planning or decomposition failure rather than model
+- Nemotron-3-Ultra is the only model returning successful completions but exhibits high latency variance (7.7–40.7s) and occasional 502 upstream overloa
+- Multiple free-tier models (GLM, Gemma) consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
 - Under high stress (1.0) and conserve mode, the system must prioritize models with proven reliability over latency.
 - Score capping mechanism penalizes missing code artifacts heavily (5→2), making code generation a hard requirement.
 - High latency variance (8-222s) in working models demands timeout and retry policies calibrated to observed distributions.
@@ -51,11 +56,6 @@
 - System stress hits maximum (1.0) triggering conserve mode that caps tasks at 3 and iterations at 1, starving recovery work.
 - The inclusionai/ling-3.0-flash-fin model is the only consistently available free model with acceptable latency (~11s).
 - Free-tier models on OpenRouter suffer chronic 429 rate limits making them unreliable as primary workers.
-- Hand action execution showed intermittent failures (2 of 3 attempts returned exit 1 with zero gelesen), suggesting a timing or state-read issue in act
-- Calibration significantly underestimated actual output (predicted 5 vs actual 9), indicating the scoring model needs recalibration for this task type.
-- The system's self-diagnosis, reflex, and skill-proposal mechanisms functioned correctly, closing issue 227 and generating actionable proposals from fa
-- The nvidia/nemotron-3-ultra-550b-a55b:free model served as the most reliable fallback, succeeding after glm-5.2 failures despite its own intermittent 
-- 429 rate-limiting failures are systemic across all free-tier models on OpenRouter, not isolated to a single provider, making fallback chains essential
 
 ---
 

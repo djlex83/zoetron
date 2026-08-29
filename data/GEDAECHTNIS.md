@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6542 Fakten** · Stand 2026-08-29 18:41 UTC · aktualisiert bei jedem Herzschlag
+**6547 Fakten** · Stand 2026-08-29 18:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3016
+- **dream:** 3021
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829184446:5:ab970b`
+*29.08. 18:44 UTC · Quelle: dream*
+
+Calibration systematically overestimates task feasibility (predicted 3 vs actual 2), revealing a persistent optimism bias in the planner.
+
+### `dream:20260829184446:4:75063c`
+*29.08. 18:44 UTC · Quelle: dream*
+
+Swarm execution fails to converge (converged=false) after only 2 cycles, suggesting critic feedback loops are broken or insufficient.
+
+### `dream:20260829184446:3:f1256e`
+*29.08. 18:44 UTC · Quelle: dream*
+
+The market-analysis task repeatedly scores 2/10 despite evolution cycles, indicating a fundamental planning or decomposition failure rather than model quality.
+
+### `dream:20260829184446:2:e72548`
+*29.08. 18:44 UTC · Quelle: dream*
+
+Nemotron-3-Ultra is the only model returning successful completions but exhibits high latency variance (7.7–40.7s) and occasional 502 upstream overloads.
+
+### `dream:20260829184446:1:c5f751`
+*29.08. 18:44 UTC · Quelle: dream*
+
+Multiple free-tier models (GLM, Gemma) consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
 
 ### `dream:20260829184013:5:04dc36`
 *29.08. 18:40 UTC · Quelle: dream*
