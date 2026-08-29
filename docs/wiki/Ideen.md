@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 03:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 03:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model health scoring must be real-time and per-provider; static model selection fails under load variability.
+- Stale work (market analysis) blocks downstream decisions even when reflexes can complete sub-tasks.
+- Skill proposals accumulate without a deployment pipeline; ideas don't become capabilities without validation gates.
+- Reflex-driven execution converges faster than deliberative planning for well-defined operational goals like model-error reduction.
+- Provider-specific rate limits (429 errors on z-ai/glm-5.2:free) require automatic fallback mechanisms, not just retry logic.
 - Evolutionary optimization lifted the capability score from 6 to 9 by replacing fallback-dummy modules with functional implementations in the winning v
 - Calibration error of 3 (predicted 3 vs actual 6) indicates the effort estimator systematically underestimates integration complexity for new capabilit
 - Simulation-driven revision (5 risks → 5 revisions) successfully hardened the artifact before execution, evidenced by TOR green on first run.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without being learned (drive_goal 'gap' signal), indicating the system generates more proposals than it can absorb - propos
 - A single successful model call (poolside/laguna-s-2.1:free, 6.7s) after multiple failures shows that fallback rotation works, but it must be automatic
 - Free-tier models on Openrouter fail frequently with 429 rate limits, and z-ai/glm-5.2:free is the most persistent offender - repeated retries against 
-- Simulation results and market analysis gaps persist because insights aren't automatically fed into model selection and task planning.
-- Reflex-based error handling succeeds locally but lacks cross-episode learning to prevent recurring model failures.
-- Accumulated skill proposals (fallback, smoke tests, calibration) remain unimplemented while drive goals repeat same failure signals.
-- Latency variance for identical models (5-17s) indicates unstable infrastructure requiring health-aware routing.
-- Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) making single-model reliance unreliable.
 
 ---
 
