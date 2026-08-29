@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,15 +24,15 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Unfinished work (market analyses, swarm goals) accumulates because no persistent ledger tracks completion across sleep cycles.
+- High metabolic stress (1.0) triggers conserve mode that starves long-running swarms, requiring checkpointing to survive budget cuts.
+- Skill proposals remain inert without a validation pipeline that compiles, tests, and registers them as executable capabilities.
+- All file operations must resolve relative paths against ZOETRON_DATA before execution to avoid silent zero-byte reads.
+- Rate-limited models (z-ai/glm-5.2:free) must be automatically excluded after repeated 429 errors to prevent cascading failures.
 - The system generates proposals faster than it implements them, creating a persistent gap between identified solutions and deployed resilience.
 - Self-diagnosis reports zero organ errors, confirming the failure is external (API rate limiting) rather than internal system corruption.
 - Repeated skill proposals on the same problem domain (model routing, circuit breakers, health scores) signal that the solution space is well-understood
@@ -51,11 +56,6 @@
 - Five skill proposals already address routing, circuit breakers, health scorecards, and quota persistence but none have entered a promotion pipeline, s
 - Fallback model latency varies 4x (9.5–41.1s) with no p50/p95 tracking, so deadline-aware routing cannot exist.
 - Repeated 429 errors on z-ai/glm-5.2:free reveal absent rate-limit header parsing and token-bucket enforcement, causing reactive fallbacks instead of p
-- Five skill proposals accumulated without validation gates, creating a backlog of untested ideas; a proposal-to-skill gate with measurable acceptance t
-- Reflex execution of "Simulationen konsequent anwenden" converged in one shot, proving that compiled simulation-to-action scripts outperform open-ended
-- Swarm task "Doppelte Arbeit vermeiden" scored 7/10 yet failed to converge in 2 cycles despite role evolution, revealing that critic count (1) is insuf
-- Fallback model nvidia/nemotron-3-ultra succeeds but exhibits 6x latency variance (6.5–41 s), causing drive timeouts that the adaptive deadline extende
-- The model z-ai/glm-5.2:free fails deterministically with HTTP 429 on every call, indicating a hard quota exhaustion that requires permanent quarantine
 
 ---
 
