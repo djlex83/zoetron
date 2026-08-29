@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 04:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 05:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning across cycles indicates memory growth unbounded; retention policies must be enforced.
+- Fallback model latency varies 5x (9-47s) making timeout budgets unreliable without adaptive scaling.
+- Completed market analyses remain unused because no reflex triggers conversion of stale insights into executable tasks.
+- Skill proposals accumulate without implementation because no automated pipeline converts drive_goal "gap" signals into deployed code.
+- Persistent 429 errors on z-ai/glm-5.2:free require automatic failover with exponential backoff rather than repeated retries.
 - Fallback model nvidia/nemotron-3-ultra works but exhibits high latency variance (7s–60s), causing unpredictable task durations.
 - Reflex tool 'kritiken-und-ziele-regelmäßig-prüfen.py' failed initially but succeeded after swarm simulation and iterative revision (risks=5, revisions
 - High stress (1.0) triggers conserve mode that severely limits parallelism (max_tasks=3, max_iterations=1), slowing recovery.
@@ -51,11 +56,6 @@
 - Evolutionary search produces score variance (4-9) but the swarm stops at 2 cycles without convergence, indicating insufficient iteration budget or wea
 - Destructive tool calls (subprocess) are hard-blocked by an approval gate, causing whole-goal stalls even when the artifact already exists and passes t
 - The fallback model (z-ai/glm-5.2) fails deterministically with HTTP 429 under load, making it unusable as a reliable backup without rate-limit handlin
-- Calibration error of 1 (predicted 8 vs actual 7) on a 223-line artifact indicates systematic overconfidence in simulation verdicts.
-- Skill proposals accumulate in drive goals but lack an implementation pipeline; zero proposed skills became runnable code this cycle.
-- Stress level 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, severely throttling throughput.
-- File operations fail when using relative paths; all paths must resolve absolutely via ZOETRON_DATA env var and sys.argv[1] input.
-- Five skill proposals exist but none are deployed; the gap between proposal and activation is the primary bottleneck to capability growth.
 
 ---
 
