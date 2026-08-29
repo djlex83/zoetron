@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6207 Fakten** · Stand 2026-08-29 10:11 UTC · aktualisiert bei jedem Herzschlag
+**6212 Fakten** · Stand 2026-08-29 10:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2791
+- **dream:** 2796
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829101448:5:6760d3`
+*29.08. 10:14 UTC · Quelle: dream*
+
+Fast, low-token models (laguna-s-2.1: 9.4s, 259 input tokens) can handle simple tasks effectively when complex reasoning isn't required.
+
+### `dream:20260829101448:4:ff251d`
+*29.08. 10:14 UTC · Quelle: dream*
+
+Knowledge graph repair tasks benefit from iterative refinement: evolution runs improved scores from 6/10 to 8/10 through variant testing.
+
+### `dream:20260829101448:3:4a5e95`
+*29.08. 10:14 UTC · Quelle: dream*
+
+Calibration consistently underestimates actual work required (predicted 3 vs actual 6), suggesting systematic optimism in task complexity assessment.
+
+### `dream:20260829101448:2:77b565`
+*29.08. 10:14 UTC · Quelle: dream*
+
+Model performance varies significantly under load: nemotron-3-ultra succeeds with high latency (136-159s) but fails with 502 errors during peak demand periods.
+
+### `dream:20260829101448:1:2c8867`
+*29.08. 10:14 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
 
 ### `dream:20260829101017:5:d1a89c`
 *29.08. 10:10 UTC · Quelle: dream*
