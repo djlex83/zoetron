@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 01:06:36",
+ "stand": "2026-08-29 01:15:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,14 +10,14 @@
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 15,
+   "laeufe": 14,
    "erfolge": 9,
-   "quote": 0.6
+   "quote": 0.643
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -87,10 +87,10 @@
    "quote": 1.0
   },
   {
-   "tool": "neue-fähigkeiten-erlernen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "mehr-evolution-starten.py",
@@ -135,12 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "träume-in-taten-umsetzen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -153,17 +147,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.623,
+ "haende_quote": 0.607,
  "simulationen_angewandt": 50,
  "swarm_scores": {
-  "n": 38,
+  "n": 39,
   "best": 9.0,
-  "schnitt": 4.47
+  "schnitt": 4.38
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 35,
-   "schnitt": 4.34
+   "schnitt": 4.23
   },
   "bau": {
    "n": 3,

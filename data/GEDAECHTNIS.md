@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5837 Fakten** · Stand 2026-08-29 01:07 UTC · aktualisiert bei jedem Herzschlag
+**5854 Fakten** · Stand 2026-08-29 01:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2596
-- **swarm_artifact:** 1423
-- **last_swarm_critique:** 583
-- **anti_pattern:** 461
-- **last_swarm_goal:** 332
-- **strategy:** 251
-- **hand_result:** 69
+- **dream:** 2601
+- **swarm_artifact:** 1429
+- **last_swarm_critique:** 584
+- **anti_pattern:** 463
+- **last_swarm_goal:** 333
+- **strategy:** 252
+- **hand_result:** 70
 - **tool:** 53
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*29.08. 01:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.0): Evolutionary strategy optimization where agents co-evolve convergence behaviors - Treat swarm convergence as a black-box optimization problem. Each agent has a parameterized update rule (e.g., weights for self/neighbors/ine
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*29.08. 01:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.7): Async actor-model message-passing swarm with real concurrency - Build a true actor-based swarm using asyncio.Queue for mailboxes. Each agent is an independent async task that receives messages, updates local state, sends me
+
+### `last_swarm_critique`
+*29.08. 01:14 UTC · Quelle: critic*
+
+score=1; issues=Sandbox verdict confirms artifacts do not run: tracebacks in action_1787966030604.py line 249 and action_1787966030898.py line 24; All three artifacts fail to import required swarm organs (swarm.orchestrator, swarm.roles, swarm.konvergenztor, s
+
+### `last_swarm_goal`
+*29.08. 01:10 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260829011037:5:6ea8b5`
+*29.08. 01:10 UTC · Quelle: dream*
+
+Swarm convergence succeeds but generates resilience proposals that remain unimplemented, creating a proposal-to-production gap.
+
+### `dream:20260829011037:4:4f86ea`
+*29.08. 01:10 UTC · Quelle: dream*
+
+Self-diagnosis reporting zero organ errors while external model failures persist demonstrates a critical blind spot in internal monitoring.
+
+### `dream:20260829011037:3:da0c02`
+*29.08. 01:10 UTC · Quelle: dream*
+
+Calibration error (predicted 6 vs actual 8) reveals that confidence estimates drift without continuous outcome-based updating.
+
+### `dream:20260829011037:2:8a5c5e`
+*29.08. 01:10 UTC · Quelle: dream*
+
+High latency variance (27–76 s) without timeout guards causes unpredictable delays and blocks downstream processes.
+
+### `dream:20260829011037:1:672007`
+*29.08. 01:10 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream errors (502) across multiple providers indicate systemic lack of resilience mechanisms in model routing.
 
 ### `dream:20260829010604:5:5cc87b`
 *29.08. 01:06 UTC · Quelle: dream*
