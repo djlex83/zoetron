@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 00:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 01:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -32,15 +32,20 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 2×)*
 - Vorschläge in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automated self-check scheduler artifact successfully deployed and running after one full swarm-simulation-revision cycle.
+- Two distinct knowledge gaps identified: stale market research analyses and large backlog of untested simulation ideas.
+- System operates in conserve mode (stress=1.0) with strict budget (max 3 tasks, 1 iteration), yet completed automated scheduler deployment.
+- Simulation-driven development pipeline works: swarm goal → simulation (revise) → 3 revisions applied → TOR confirms 274-line Python scheduler running.
+- Primary model (z-ai/glm-5.2) fails consistently with 429 rate limits, forcing fallback to slower nvidia/nemotron model (57-122s latency).
 - Zero pruning activity despite accumulating proposals suggests the system lacks a garbage-collection policy for superseded or low-confidence skill cand
 - Reflex-driven stale-goal sweep succeeded without human intervention, demonstrating that automated convergence checks can close abandoned work loops.
 - Successful fallback to nvidia/nemotron-3-ultra at ~32 s latency proves a tiered router with latency budgets would automatically prefer reliable models
@@ -51,11 +56,6 @@
 - Duplicate skill proposals across cycles reveal convergent evolution toward router/backoff/pipeline patterns that should be canonicalized into a single
 - Latency variance in fallback models (7.9–33.3 s) violates tier-specific SLA budgets, mandating latency guards that cancel and reroute requests exceedi
 - Rate limiting (429) on specific free-tier models is a systemic reliability failure requiring automated per-provider circuit breakers with automatic tr
-- Proposed skills remain unimplemented because there is no mechanism to promote proposals to built capabilities.
-- Simulation revisions accumulate without automated application, creating a gap between analysis and improvement.
-- Hand actions fail due to unresolved relative paths, indicating a need for canonical path resolution before execution.
-- Stress reaching 1.0 triggers a conserve mode that starves critical tasks, requiring proactive load shedding before saturation.
-- Rate-limited models should be automatically deprioritized after repeated 429 errors to prevent cascade latency.
 
 ---
 

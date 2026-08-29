@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5832 Fakten** · Stand 2026-08-29 00:50 UTC · aktualisiert bei jedem Herzschlag
+**5837 Fakten** · Stand 2026-08-29 01:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2591
+- **dream:** 2596
 - **swarm_artifact:** 1423
 - **last_swarm_critique:** 583
 - **anti_pattern:** 461
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829010604:5:5cc87b`
+*29.08. 01:06 UTC · Quelle: dream*
+
+Automated self-check scheduler artifact successfully deployed and running after one full swarm-simulation-revision cycle.
+
+### `dream:20260829010604:4:c90d96`
+*29.08. 01:06 UTC · Quelle: dream*
+
+Two distinct knowledge gaps identified: stale market research analyses and large backlog of untested simulation ideas.
+
+### `dream:20260829010604:3:57ba81`
+*29.08. 01:06 UTC · Quelle: dream*
+
+System operates in conserve mode (stress=1.0) with strict budget (max 3 tasks, 1 iteration), yet completed automated scheduler deployment.
+
+### `dream:20260829010604:2:4c2b58`
+*29.08. 01:06 UTC · Quelle: dream*
+
+Simulation-driven development pipeline works: swarm goal → simulation (revise) → 3 revisions applied → TOR confirms 274-line Python scheduler running.
+
+### `dream:20260829010604:1:865e91`
+*29.08. 01:06 UTC · Quelle: dream*
+
+Primary model (z-ai/glm-5.2) fails consistently with 429 rate limits, forcing fallback to slower nvidia/nemotron model (57-122s latency).
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Marktanalyse endlich nut:2`
 *29.08. 00:48 UTC · Quelle: evolution*
