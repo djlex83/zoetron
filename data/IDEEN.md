@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnose reports zero organ errors while model failure rate is ~60% (81 fails vs 54 successes), meaning health checks don't cover external API re
+- Stale market analyses (3 unused) show completed work isn't linked to planning triggers; artifacts need explicit "ready-for-use" tags and downstream su
+- 37 skill proposals vs 15 executions reveals a broken promotion pipeline: proposals lack automated sandbox→integration→registry gating.
+- Model latency variance (36-66s) on nemotron-3-ultra suggests need for latency-aware routing with p95 thresholds, not just success/failure tracking.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate missing proactive rate-limit handling (Retry-After parsing, exponential backoff) before requests are
 - Drive goals indicate awareness of error analysis, knowledge freshness, and skill testing gaps, yet no automated loop exists to close them.
 - Reflex tools execute successfully for narrow subtasks (tool understanding, skill conversion) but do not address the upstream model availability root c
 - Skill proposals cluster around model routing (5/8 proposals), revealing a systemic infrastructure gap rather than isolated tool failures.
@@ -51,11 +56,6 @@
 - Effort estimation consistently overshoots actual work (predicted 6 vs actual 3 cycles), indicating a need for calibration against historical deltas.
 - `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits high latency variance (6–122 s) requiring timeout budgets and fallback triggers rather than fixed de
 - The free tier model `z-ai/glm-5.2:free` is unreliable due to persistent 429 rate-limit errors and should be deprioritized or wrapped with aggressive b
-- Simulation approved the market-analysis update with 3 risks and 3 revisions, suggesting the validation loop catches issues but adds latency; automated
-- Multiple skill proposals (router, rate-limit handling, stress scheduler) already exist but remain unimplemented, creating a proposal-to-execution gap 
-- Metabolism stress at 1.0 (conserve mode) coincides with continued model failures, showing the stress-aware scheduler is not yet reducing load or switc
-- Nemotron-3-ultra latency varies 10x (6.5s to 80.6s) despite similar token counts, indicating unpredictable queueing or cold-start effects that require
-- Rate limiting on z-ai/glm-5.2:free is persistent and predictable (429 errors every ~4-8 seconds), making it unreliable for production workloads withou
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6432 Fakten** · Stand 2026-08-29 16:08 UTC · aktualisiert bei jedem Herzschlag
+**6437 Fakten** · Stand 2026-08-29 16:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2931
+- **dream:** 2936
 - **swarm_artifact:** 1563
 - **last_swarm_critique:** 607
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829161134:5:0c46bb`
+*29.08. 16:11 UTC · Quelle: dream*
+
+Self-diagnose reports zero organ errors while model failure rate is ~60% (81 fails vs 54 successes), meaning health checks don't cover external API reliability.
+
+### `dream:20260829161134:4:41dd92`
+*29.08. 16:11 UTC · Quelle: dream*
+
+Stale market analyses (3 unused) show completed work isn't linked to planning triggers; artifacts need explicit "ready-for-use" tags and downstream subscriptions.
+
+### `dream:20260829161134:3:d3a63c`
+*29.08. 16:11 UTC · Quelle: dream*
+
+37 skill proposals vs 15 executions reveals a broken promotion pipeline: proposals lack automated sandbox→integration→registry gating.
+
+### `dream:20260829161134:2:bd3420`
+*29.08. 16:11 UTC · Quelle: dream*
+
+Model latency variance (36-66s) on nemotron-3-ultra suggests need for latency-aware routing with p95 thresholds, not just success/failure tracking.
+
+### `dream:20260829161134:1:498abd`
+*29.08. 16:11 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate missing proactive rate-limit handling (Retry-After parsing, exponential backoff) before requests are sent.
 
 ### `dream:20260829160705:5:9a0019`
 *29.08. 16:07 UTC · Quelle: dream*
