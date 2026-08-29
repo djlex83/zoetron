@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 20:32:45",
+ "stand": "2026-08-29 20:39:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -99,6 +99,12 @@
    "quote": 0.0
   },
   {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -133,12 +139,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
@@ -195,7 +195,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.702,
+ "haende_quote": 0.714,
  "simulationen_angewandt": 29,
  "swarm_scores": {
   "n": 38,
