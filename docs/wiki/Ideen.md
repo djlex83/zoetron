@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 04:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 04:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,14 +24,14 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The 'bahnen' graph shows zero delta and zero edges despite code existing, meaning the knowledge-graph linker is not extracting dependencies from the g
+- Calibration consistently over-predicts by 1 point (predicted 8 vs actual 7), suggesting the critic's scoring heuristic is misaligned with the final ev
+- Evolutionary search produces score variance (4-9) but the swarm stops at 2 cycles without convergence, indicating insufficient iteration budget or wea
+- Destructive tool calls (subprocess) are hard-blocked by an approval gate, causing whole-goal stalls even when the artifact already exists and passes t
+- The fallback model (z-ai/glm-5.2) fails deterministically with HTTP 429 under load, making it unusable as a reliable backup without rate-limit handlin
 - Calibration error of 1 (predicted 8 vs actual 7) on a 223-line artifact indicates systematic overconfidence in simulation verdicts.
 - Skill proposals accumulate in drive goals but lack an implementation pipeline; zero proposed skills became runnable code this cycle.
 - Stress level 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, severely throttling throughput.
@@ -51,11 +56,6 @@
 - Three simulation-identified risks automatically produced three revisions, proving the simulation-to-revision pipeline works end-to-end.
 - Nemotron-3-ultra latency varies 12× (3.6–44.2 s), making fixed timeouts ineffective; deadlines must adapt to rolling 95th-percentile latency per model
 - Persistent 429 errors from z-ai/glm-5.2:free indicate a hard rate limit that requires permanent provider blacklisting after N consecutive failures.
-- Hand actions (file reads) complete reliably in ~0.24 s, establishing them as low-latency primitives for tool-use loops.
-- The swarm architecture with three parallel builders converged in a single cycle, suggesting builder parallelism accelerates code-task convergence.
-- Effort estimation is severely miscalibrated (predicted 3 cycles vs. actual 8), indicating a need for category-specific correction factors.
-- The nvidia/nemotron-3-ultra model succeeds consistently but exhibits high latency variance (11.7–71 s), requiring adaptive timeout strategies.
-- The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limiting errors, making it unreliable for production use.
 
 ---
 

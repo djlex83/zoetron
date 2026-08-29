@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5987 Fakten** · Stand 2026-08-29 04:16 UTC · aktualisiert bei jedem Herzschlag
+**6004 Fakten** · Stand 2026-08-29 04:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2681
-- **swarm_artifact:** 1459
-- **last_swarm_critique:** 589
-- **anti_pattern:** 469
-- **last_swarm_goal:** 338
-- **strategy:** 255
+- **dream:** 2686
+- **swarm_artifact:** 1465
+- **last_swarm_critique:** 590
+- **anti_pattern:** 471
+- **last_swarm_goal:** 339
+- **strategy:** 256
 - **hand_result:** 71
-- **tool:** 56
+- **tool:** 57
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-schwarm-arbeiten-zu-ende-bringen`
+*29.08. 04:27 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Schwarm-Arbeiten zu Ende bringen'. Datei: data/tools/alte-schwarm-arbeiten-zu-ende-bringen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Arbeiten zu:2`
+*29.08. 04:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 8, 7]): Resilient error handling with structured observability - Rewrite all error handling to use a typed exception hierarchy (SwarmError, TimeoutError, OrchestratorUnavailableError, DeltaLinkError) with context preservation
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Arbeiten zu:1`
+*29.08. 04:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 7, 8]): Graph-theoretic delta linker with formal verification - Implement the zero-edges/delta linker as a proper graph algorithm: build a directed acyclic graph of task dependencies, compute transitive closure for delta dete
+
+### `last_swarm_critique`
+*29.08. 04:26 UTC · Quelle: critic*
+
+score=7; issues=Artifact 2 uses signal.SIGALRM for timeout which is Unix-only (fails on Windows); Artifact 2 fallback simulates completion when SwarmOrchestrator not found - marks tasks completed without actual work; Artifact 3 is diagnostic only, does not act
+
+### `last_swarm_goal`
+*29.08. 04:20 UTC · Quelle: system*
+
+Alte Schwarm-Arbeiten zu Ende bringen
+
+### `dream:20260829041946:5:16e2bd`
+*29.08. 04:19 UTC · Quelle: dream*
+
+The 'bahnen' graph shows zero delta and zero edges despite code existing, meaning the knowledge-graph linker is not extracting dependencies from the generated artifact.
+
+### `dream:20260829041946:4:f2ebe4`
+*29.08. 04:19 UTC · Quelle: dream*
+
+Calibration consistently over-predicts by 1 point (predicted 8 vs actual 7), suggesting the critic's scoring heuristic is misaligned with the final evaluator.
+
+### `dream:20260829041946:3:b0bced`
+*29.08. 04:19 UTC · Quelle: dream*
+
+Evolutionary search produces score variance (4-9) but the swarm stops at 2 cycles without convergence, indicating insufficient iteration budget or weak selection pressure.
+
+### `dream:20260829041946:2:a3e134`
+*29.08. 04:19 UTC · Quelle: dream*
+
+Destructive tool calls (subprocess) are hard-blocked by an approval gate, causing whole-goal stalls even when the artifact already exists and passes tests.
+
+### `dream:20260829041946:1:a1c8a9`
+*29.08. 04:19 UTC · Quelle: dream*
+
+The fallback model (z-ai/glm-5.2) fails deterministically with HTTP 429 under load, making it unusable as a reliable backup without rate-limit handling.
 
 ### `dream:20260829041522:5:2a28d8`
 *29.08. 04:15 UTC · Quelle: dream*
