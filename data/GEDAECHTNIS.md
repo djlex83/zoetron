@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6427 Fakten** · Stand 2026-08-29 15:43 UTC · aktualisiert bei jedem Herzschlag
+**6432 Fakten** · Stand 2026-08-29 16:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2926
+- **dream:** 2931
 - **swarm_artifact:** 1563
 - **last_swarm_critique:** 607
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829160705:5:9a0019`
+*29.08. 16:07 UTC · Quelle: dream*
+
+Drive goals indicate awareness of error analysis, knowledge freshness, and skill testing gaps, yet no automated loop exists to close them.
+
+### `dream:20260829160705:4:0bc1e5`
+*29.08. 16:07 UTC · Quelle: dream*
+
+Reflex tools execute successfully for narrow subtasks (tool understanding, skill conversion) but do not address the upstream model availability root cause.
+
+### `dream:20260829160705:3:f89380`
+*29.08. 16:07 UTC · Quelle: dream*
+
+Skill proposals cluster around model routing (5/8 proposals), revealing a systemic infrastructure gap rather than isolated tool failures.
+
+### `dream:20260829160705:2:135eff`
+*29.08. 16:07 UTC · Quelle: dream*
+
+Fallback to nemotron-3-ultra succeeds but adds 50-66s latency, creating a reliability-vs-speed tradeoff that degrades interactive performance.
+
+### `dream:20260829160705:1:081668`
+*29.08. 16:07 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary providers without circuit-breaker logic.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Schwarm-Arbeiten ab:2`
 *29.08. 15:42 UTC · Quelle: evolution*
