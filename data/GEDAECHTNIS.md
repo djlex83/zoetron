@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6527 Fakten** · Stand 2026-08-29 18:25 UTC · aktualisiert bei jedem Herzschlag
+**6532 Fakten** · Stand 2026-08-29 18:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3001
+- **dream:** 3006
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829182856:5:67ef35`
+*29.08. 18:28 UTC · Quelle: dream*
+
+Hand action execution showed intermittent failures (2 of 3 attempts returned exit 1 with zero gelesen), suggesting a timing or state-read issue in action dispatch.
+
+### `dream:20260829182856:4:2fc35a`
+*29.08. 18:28 UTC · Quelle: dream*
+
+Calibration significantly underestimated actual output (predicted 5 vs actual 9), indicating the scoring model needs recalibration for this task type.
+
+### `dream:20260829182856:3:c9be20`
+*29.08. 18:28 UTC · Quelle: dream*
+
+The system's self-diagnosis, reflex, and skill-proposal mechanisms functioned correctly, closing issue 227 and generating actionable proposals from failures.
+
+### `dream:20260829182856:2:c071bc`
+*29.08. 18:28 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model served as the most reliable fallback, succeeding after glm-5.2 failures despite its own intermittent 502 upstream error.
+
+### `dream:20260829182856:1:c84299`
+*29.08. 18:28 UTC · Quelle: dream*
+
+429 rate-limiting failures are systemic across all free-tier models on OpenRouter, not isolated to a single provider, making fallback chains essential.
 
 ### `dream:20260829182434:5:40d593`
 *29.08. 18:24 UTC · Quelle: dream*

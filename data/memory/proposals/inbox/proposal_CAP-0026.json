@@ -1,0 +1,25 @@
+{
+  "id": "CAP-0026",
+  "capability_name": "cross_domain_transfer",
+  "gap": {
+    "capability_name": "cross_domain_transfer",
+    "current_score": 0.41,
+    "target_score": 0.8,
+    "gap_severity": 0.48750000000000004,
+    "evidence": {
+      "current_score": 0.41,
+      "target_score": 0.8,
+      "gap_size": 0.39000000000000007,
+      "benchmark_runs": 19,
+      "last_updated": "2026-08-27T11:17:07.536454"
+    },
+    "suggested_actions": [
+      "Build shared representation encoder",
+      "Add domain-adversarial training objective",
+      "Implement meta-learning for rapid adaptation"
+    ]
+  },
+  "priority": 49,
+  "created_at": "2026-08-29T18:29:18.107924",
+  "status": "pending"
+}

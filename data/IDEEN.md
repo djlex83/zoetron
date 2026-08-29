@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Calibrate pruning thresholds by tracking fact/event half-life: only prune entities untouched >30 days with acc *(hatte die Idee 3×)*
 - Add a convergence gate to simulation-swarm loops: continue cycles until score >=8 or max 5 cycles, logging div *(hatte die Idee 3×)*
 - Implement a model router with circuit-breaker that tracks per-model 429 rates, latency p95, and Retry-After he *(hatte die Idee 3×)*
-- Implement a model router that tracks per-model success rate, latency p95, and error taxonomy, and automaticall *(hatte die Idee 2×)*
-- Add exponential backoff with jitter (base 2 s, max 60 s) and quota-aware scheduling before retrying any rate-l *(hatte die Idee 2×)*
+- Create skill validation pipeline: each proposal gets a minimal integration test, a canary run on low-risk goal *(hatte die Idee 2×)*
+- Deploy a proposal-to-skill pipeline that auto-promotes high-confidence proposals (router, backoff, guard) into *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,12 +27,12 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 5×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand action execution showed intermittent failures (2 of 3 attempts returned exit 1 with zero gelesen), suggesting a timing or state-read issue in act
+- Calibration significantly underestimated actual output (predicted 5 vs actual 9), indicating the scoring model needs recalibration for this task type.
+- The system's self-diagnosis, reflex, and skill-proposal mechanisms functioned correctly, closing issue 227 and generating actionable proposals from fa
+- The nvidia/nemotron-3-ultra-550b-a55b:free model served as the most reliable fallback, succeeding after glm-5.2 failures despite its own intermittent 
+- 429 rate-limiting failures are systemic across all free-tier models on OpenRouter, not isolated to a single provider, making fallback chains essential
 - Proposed skills accumulate but never deploy because the reflex/tool chain breaks at file access, not at logic — the gap is operational, not conceptual
 - Simulation-based revision loops work (3 risks → 3 revisions applied) but only activate after execution failures, not as a preventive gate.
 - High system stress (1.0) triggers conserve mode, capping tasks at 3 and iterations at 1, which starves long-running goals like market analyses and ski
@@ -51,11 +56,6 @@
 - Hand actions fail due to relative-path assumptions (sys.argv[1], ZOETRON_DATA) instead of absolute, validated paths, making reflexes brittle.
 - Persistent drive goals (reduce model errors, finish market analyses, deploy skills) recur across cycles but lack forced-completion mechanisms, causing
 - Rate-limited models (z-ai/glm-5.2) repeatedly cause 429 errors without automatic fallback, wasting cycles and blocking progress.
-- The planner/builder/critic role distribution (1/3/1) converged the swarm-orchestration task in a single cycle with score 9, demonstrating an effective
-- Calibration was severely off (predicted 3 vs actual 9, error of 6), revealing that initial effort/complexity estimates for swarm-orchestration tasks a
-- The nemotron-3-ultra-550b model is slow (88-173s latency) but produces high-quality results (score 9), making it a reliable but expensive fallback.
-- Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b-a55b) succeeded reliably; all others (glm-5.2, gemma-4 variants) cons
-- 429 rate-limiting from OpenRouter is the dominant systemic failure mode, affecting nearly all models simultaneously and indicating an API-level bottle
 
 ---
 

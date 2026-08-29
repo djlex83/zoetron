@@ -1,0 +1,25 @@
+{
+  "id": "CAP-0027",
+  "capability_name": "tool_use_planning",
+  "gap": {
+    "capability_name": "tool_use_planning",
+    "current_score": 0.47,
+    "target_score": 0.82,
+    "gap_severity": 0.4268292682926829,
+    "evidence": {
+      "current_score": 0.47,
+      "target_score": 0.82,
+      "gap_size": 0.35,
+      "benchmark_runs": 23,
+      "last_updated": "2026-08-27T11:17:07.536454"
+    },
+    "suggested_actions": [
+      "Add tool composition planning module",
+      "Implement failure recovery strategies",
+      "Build tool capability discovery system"
+    ]
+  },
+  "priority": 43,
+  "created_at": "2026-08-29T18:29:18.108282",
+  "status": "pending"
+}
