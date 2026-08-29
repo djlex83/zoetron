@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 16:37:26",
+ "stand": "2026-08-29 16:43:44",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,6 +39,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -46,12 +52,6 @@
   },
   {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -85,12 +85,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "aufgaben-priorisieren.py",
-   "laeufe": 2,
-   "erfolge": 1,
-   "quote": 0.5
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
@@ -129,6 +123,12 @@
    "quote": 0.0
   },
   {
+   "tool": "aufgaben-priorisieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -165,8 +165,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.657,
- "simulationen_angewandt": 36,
+ "haende_quote": 0.659,
+ "simulationen_angewandt": 35,
  "swarm_scores": {
   "n": 39,
   "best": 9.0,

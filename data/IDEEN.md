@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,11 +15,11 @@
 - Calibrate pruning thresholds by tracking fact/event half-life: only prune entities untouched >30 days with acc *(hatte die Idee 3×)*
 - Add a convergence gate to simulation-swarm loops: continue cycles until score >=8 or max 5 cycles, logging div *(hatte die Idee 3×)*
 - Add exponential backoff with jitter (base 2s, max 60s) and rotating model pool for 429 responses; parse Retry- *(hatte die Idee 3×)*
-- Encapsulate the simulate-revise-evolve loop into a reusable 'critique_improve' skill with configurable revisio *(hatte die Idee 2×)*
 - Deploy a proposal-to-skill pipeline that auto-promotes high-confidence proposals (e.g., router, backoff) into  *(hatte die Idee 2×)*
 - Implement a model router that tracks per-model success rate, latency p95, and error taxonomy, and automaticall *(hatte die Idee 2×)*
 - Add exponential backoff with jitter (base 2 s, max 60 s) and quota-aware scheduling before retrying any rate-l *(hatte die Idee 2×)*
 - Enforce local-first computation for critical-path tasks; escalate to remote LLMs only when local artifacts are *(hatte die Idee 2×)*
+- Maintain a rolling reliability scoreboard per model tier (speed, throughput, latency) and prefer models by tie *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -33,14 +33,19 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Structured error capture is essential for diagnosing transient infrastructure issues versus persistent logic errors.
+- Stale tasks indicate a need for better prioritization or automated resumption of long-dormant goals.
+- Skill proposals are accumulating but lack a structured lifecycle process to transition from idea to tested, available skill.
+- Relying on a small unmanaged pool of free models leads to cascading failures and stalled execution.
+- Free models are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 - Five skill proposals were generated but remain unimplemented, revealing a persistent gap between problem identification and solution execution.
 - Self-diagnosis found zero internal organ errors, confirming that failures originate from external model dependencies rather than internal system fault
 - Swarm execution scored 2/10 without convergence, with critic feedback citing missing executable Python blocks, pointing to quality control gaps in bui
@@ -51,11 +56,6 @@
 - Calibration error of 1 cycle indicates the difficulty predictor systematically overestimates progress when code artifacts are absent.
 - The task failed because the model returned explanatory prose instead of an executable Python block, revealing a missing output-format constraint in th
 - Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream errors, making them unreliable as primary workers without aggressive 
-- A calibration layer adjusting predictions by rolling mean absolute error is essential when model latency and availability are unstable.
-- Stale goals and unimplemented skill proposals accumulate as invisible debt that drains capacity without producing value.
-- Rising latency on fallback models is a predictable early-warning signal that precedes complete upstream failure.
-- Silent failures where processes exit with code 0 but perform no work bypass all error detection and are more dangerous than explicit errors.
-- Consecutive 429 errors from a single model endpoint signal saturation and require immediate blacklisting rather than repeated retries.
 
 ---
 
