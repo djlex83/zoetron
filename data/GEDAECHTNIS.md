@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6068 Fakten** · Stand 2026-08-29 06:17 UTC · aktualisiert bei jedem Herzschlag
+**6082 Fakten** · Stand 2026-08-29 06:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2721
-- **swarm_artifact:** 1483
-- **last_swarm_critique:** 593
+- **dream:** 2726
+- **swarm_artifact:** 1489
+- **last_swarm_critique:** 594
 - **anti_pattern:** 473
-- **last_swarm_goal:** 342
+- **last_swarm_goal:** 343
 - **strategy:** 257
-- **hand_result:** 73
+- **hand_result:** 74
 - **tool:** 57
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*29.08. 06:29 UTC · Quelle: critic*
+
+score=8; issues=Artefakte im Prompt abgeschnitten (kein vollständiger main()-Flow, Integration zwischen den 3 Skripten nicht vollständig einsehbar); NLP-Entitätsextraktion nur regex-basiert (kein spaCy/Transformer), limitierte Erkennungsgüte; Demo-Fallback-Que
+
+### `last_swarm_goal`
+*29.08. 06:20 UTC · Quelle: system*
+
+Marktwissen aktualisieren und nutzen
+
+### `dream:20260829062021:5:a21db8`
+*29.08. 06:20 UTC · Quelle: dream*
+
+Calibration predictions undershoot actual scores by approximately 2 units, indicating a systematic bias that requires a safety margin in goal-scoring thresholds.
+
+### `dream:20260829062021:4:a12739`
+*29.08. 06:20 UTC · Quelle: dream*
+
+Hand actions exhibit a ~75% failure rate but carry negligible downstream impact, suggesting they are non-critical operations that tolerate repeated attempts.
+
+### `dream:20260829062021:3:7a4e62`
+*29.08. 06:20 UTC · Quelle: dream*
+
+The swarm architecture (planner/builder/critic roles) reliably converges to a score-9 solution in a single cycle for well-defined simulation goals.
+
+### `dream:20260829062021:2:332132`
+*29.08. 06:20 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free is the stable workhorse model, with latency scaling predictably from ~25s to ~124s as token volume increases.
+
+### `dream:20260829062021:1:0e5466`
+*29.08. 06:20 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model is persistently rate-limited (429 errors) and cannot be relied upon as a primary inference source without backoff and failover mechanisms.
 
 ### `dream:20260829061634:5:cd05d7`
 *29.08. 06:16 UTC · Quelle: dream*

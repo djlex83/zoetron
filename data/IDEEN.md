@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 06:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 06:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,14 +26,14 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predictions undershoot actual scores by approximately 2 units, indicating a systematic bias that requires a safety margin in goal-scoring 
+- Hand actions exhibit a ~75% failure rate but carry negligible downstream impact, suggesting they are non-critical operations that tolerate repeated at
+- The swarm architecture (planner/builder/critic roles) reliably converges to a score-9 solution in a single cycle for well-defined simulation goals.
+- nvidia/nemotron-3-ultra-550b-a55b:free is the stable workhorse model, with latency scaling predictably from ~25s to ~124s as token volume increases.
+- The z-ai/glm-5.2 model is persistently rate-limited (429 errors) and cannot be relied upon as a primary inference source without backoff and failover 
 - Unfinished analysis steps and 40+ untested skill proposals indicate a chronic 'idea-to-execution' gap that stalls capability growth.
 - System stress at 1.0 with conserve-mode budget (max 3 tasks, 1 iteration) forces prioritization: only high-leverage, low-risk actions survive.
 - The simulation-revision loop (5 risks → 5 revisions → applied) demonstrates that structured critique cycles convert vague goals into executable change
@@ -51,11 +56,6 @@
 - Swarm converges in one cycle with specialized roles (planner, builder×3, critic) for well-scoped analysis goals, validating the role allocation strate
 - Human approval requirement for subprocess calls blocks autonomous completion of market analysis tasks, indicating need for a pre-approval policy for r
 - Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate limits, while nvidia/nemotron-3-ultra-550b-a55b:free succeeds with 11–22s latency, 
-- Self-diagnosis and pruning report zero anomalies despite repeated model failures, exposing a monitoring blind spot for external dependency health.
-- Simulation gates allow execution with 5 risks and 'revise' verdict, revealing risk thresholds are misaligned with production safety.
-- Swarm evolution stalls at score 7 with high revision counts (5) and non-convergence, indicating critic feedback lacks actionable specificity.
-- Fallback model (nemotron) latency varies 5x (7-37s), requiring per-task timeout calibration to prevent cascade delays.
-- The primary model (glm-5.2) fails consistently with 429 rate-limiting, making automatic fallback a reliability requirement.
 
 ---
 

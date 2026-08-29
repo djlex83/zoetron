@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-29 06:16:52",
+ "stand": "2026-08-29 06:29:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 29,
-   "erfolge": 29,
+   "laeufe": 28,
+   "erfolge": 28,
    "quote": 1.0
   },
   {
@@ -15,16 +15,16 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 9,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 9,
    "erfolge": 9,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 8,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -141,7 +141,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.655,
+ "haende_quote": 0.642,
  "simulationen_angewandt": 46,
  "swarm_scores": {
   "n": 38,
@@ -150,8 +150,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 35,
-   "schnitt": 4.77
+   "n": 36,
+   "schnitt": 4.86
   },
   "bau": {
    "n": 2,
