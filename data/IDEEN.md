@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 13:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 13:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,6 +12,7 @@
 - Add exponential backoff with jitter (base 2s, max 60s) and quota-aware scheduling before retrying rate-limited *(hatte die Idee 3×)*
 - Enforce structured critic output (JSON schema: issues[{severity,location,suggestion}], overall_score, converge *(hatte die Idee 3×)*
 - Add a latency-aware timeout calculator that sets per-request deadlines at 1.5× the rolling 95th-percentile lat *(hatte die Idee 3×)*
+- Add a convergence gate to simulation-swarm loops: continue cycles until score >=8 or max 5 cycles, logging div *(hatte die Idee 3×)*
 - Implement model router with health tracking: prioritize Poolside Laguna-S-2.1, fallback to Nemotron, quarantin *(hatte die Idee 2×)*
 - Wrap hand_action executor to capture stdout/stderr/traceback and return structured error objects instead of si *(hatte die Idee 2×)*
 - Add pre-flight artifact validation (syntax check, import test) before sandbox execution to catch tracebacks ea *(hatte die Idee 2×)*
@@ -19,7 +20,6 @@
 - Create 'fast-path' skill: for simple code-gen tasks, use Poolside Laguna-S-2.1 with 10s timeout, only escalate *(hatte die Idee 2×)*
 - Add a pre-flight path validator for hand actions that resolves ZOETRON_DATA and sys.argv[1] before execution t *(hatte die Idee 2×)*
 - Create a reflex certification pipeline that re-runs stored patterns nightly and demotes any that return ok: fa *(hatte die Idee 2×)*
-- Build a stress-aware scheduler that expands max_iterations only when simulation risk count drops below a thres *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -29,18 +29,23 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (rate-limit scheduler, failure taxonomy, model router, backoff retry, input validation, pruning calibration, convergence ga
+- The system already has working reflexes for error reduction (modell-fehler-deutlich-reduzieren.py converged) and self-diagnosis, but lacks proactive m
+- No model health scoring, routing, or retry logic exists - each call naively targets a single model without fallback or backoff.
+- The nvidia/nemotron model succeeds but exhibits extreme latency variance (37-82s) and eventually fails with 502 upstream errors, indicating unstable c
+- Free-tier model endpoints systematically fail with 429 quota errors across multiple providers (z-ai, google), making them unreliable as primary depend
 - Calibration error of 1 on small sample (pred 5 vs actual 4) signals need for rolling error tracking per model tier.
 - Simulation gate allowed completion despite 3 risks and 3 revisions, showing verification threshold is too permissive.
 - Swarm cycles stall at score 4 with converged=false, revealing undefined convergence criteria and no auto-termination on plateau.
@@ -51,11 +56,6 @@
 - Poolside Laguna succeeds consistently but with 2-3 minute latency, suitable only for batch/async workloads.
 - Nvidia Nemotron exhibits intermittent 502 upstream overload errors despite returning HTTP 200, requiring response-body validation.
 - Free-tier models on OpenRouter suffer systematic rate-limiting (429) making them unreliable for production pipelines.
-- Simulation approved a swarm despite 3 known risks and zero revisions, indicating risk thresholds are decoupled from actual failure rates.
-- Metabolism stress at 1.0 forces conserve mode (max 1 iteration), which prevents retries that would recover from transient 429/502 errors.
-- Reflex tools crash before validation when the underlying script has import errors or missing dependencies, bypassing the 'unbestechlicher Prüfer'.
-- Hand actions fail silently when given relative paths instead of absolute paths rooted in ZOETRON_DATA, causing zero-byte reads.
-- Rate limiting (HTTP 429) affects all free-tier models simultaneously, making model diversity ineffective without request pacing or paid fallbacks.
 
 ---
 

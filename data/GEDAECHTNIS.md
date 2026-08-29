@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6316 Fakten** · Stand 2026-08-29 13:04 UTC · aktualisiert bei jedem Herzschlag
+**6321 Fakten** · Stand 2026-08-29 13:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2871
+- **dream:** 2876
 - **swarm_artifact:** 1533
 - **last_swarm_critique:** 602
 - **anti_pattern:** 487
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829131747:5:7564cd`
+*29.08. 13:17 UTC · Quelle: dream*
+
+Skill proposals accumulate (rate-limit scheduler, failure taxonomy, model router, backoff retry, input validation, pruning calibration, convergence gates) but none are implemented yet.
+
+### `dream:20260829131747:4:7ddc83`
+*29.08. 13:17 UTC · Quelle: dream*
+
+The system already has working reflexes for error reduction (modell-fehler-deutlich-reduzieren.py converged) and self-diagnosis, but lacks proactive model management.
+
+### `dream:20260829131747:3:6b1e8e`
+*29.08. 13:17 UTC · Quelle: dream*
+
+No model health scoring, routing, or retry logic exists - each call naively targets a single model without fallback or backoff.
+
+### `dream:20260829131747:2:69f02f`
+*29.08. 13:17 UTC · Quelle: dream*
+
+The nvidia/nemotron model succeeds but exhibits extreme latency variance (37-82s) and eventually fails with 502 upstream errors, indicating unstable capacity.
+
+### `dream:20260829131747:1:3e72b0`
+*29.08. 13:17 UTC · Quelle: dream*
+
+Free-tier model endpoints systematically fail with 429 quota errors across multiple providers (z-ai, google), making them unreliable as primary dependencies.
 
 ### `tool:fehlerquellen-systematisch-beheben`
 *29.08. 13:03 UTC · Quelle: hands*
