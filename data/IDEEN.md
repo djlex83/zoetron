@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 22:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt nutzbar machen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five skill proposals accumulated without validation gates, creating a backlog of untested ideas; a proposal-to-skill gate with measurable acceptance t
+- Reflex execution of "Simulationen konsequent anwenden" converged in one shot, proving that compiled simulation-to-action scripts outperform open-ended
+- Swarm task "Doppelte Arbeit vermeiden" scored 7/10 yet failed to converge in 2 cycles despite role evolution, revealing that critic count (1) is insuf
+- Fallback model nvidia/nemotron-3-ultra succeeds but exhibits 6x latency variance (6.5–41 s), causing drive timeouts that the adaptive deadline extende
+- The model z-ai/glm-5.2:free fails deterministically with HTTP 429 on every call, indicating a hard quota exhaustion that requires permanent quarantine
 - Duplicate work avoidance recurs as a goal but lacks a persistent registry of completed work across sessions.
 - High stress (1.0) triggers conserve mode that severely limits throughput (max_tasks: 3, max_iterations: 1), creating a bottleneck.
 - Simulation pre-checks (verdict: go, risks: 3) effectively gate risky actions but are not yet integrated with model selection logic.
@@ -51,11 +56,6 @@
 - Upstream 502 errors (e.g., Nvidia Nemotron) reveal provider-side capacity failures that retry logic alone cannot resolve without model diversity.
 - The inclusionai/ling-3.0-flash-fin model demonstrates consistent 200 OK responses with sub-30s latency, identifying it as a high-reliability anchor fo
 - Free-tier API models fail predominantly via 429 rate-limit errors under sustained autonomous workloads, rendering single-model reliance non-viable.
-- Repeated 429 errors on identical models across cycles indicate no persistent quota tracking or cooldown memory between episodes.
-- Fallback model latency varies 2.6x (9.7s vs 25.7s), making latency-aware routing essential for predictable performance.
-- Skill proposals accumulate but never graduate to tested, reusable capabilities without a formal promotion pipeline.
-- Self-diagnosis blind spots: internal organ checks pass while external API dependencies silently fail with quota exhaustion.
-- Rate limit errors cascade because the system lacks header-aware backoff and automatic failover before 429 occurs.
 
 ---
 

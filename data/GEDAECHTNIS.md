@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6737 Fakten** · Stand 2026-08-29 22:57 UTC · aktualisiert bei jedem Herzschlag
+**6742 Fakten** · Stand 2026-08-29 23:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3156
+- **dream:** 3161
 - **swarm_artifact:** 1607
 - **last_swarm_critique:** 615
 - **anti_pattern:** 503
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829231534:5:3b93da`
+*29.08. 23:15 UTC · Quelle: dream*
+
+Five skill proposals accumulated without validation gates, creating a backlog of untested ideas; a proposal-to-skill gate with measurable acceptance tests is now a bottleneck.
+
+### `dream:20260829231534:4:72e741`
+*29.08. 23:15 UTC · Quelle: dream*
+
+Reflex execution of "Simulationen konsequent anwenden" converged in one shot, proving that compiled simulation-to-action scripts outperform open-ended swarm cycles for known patterns.
+
+### `dream:20260829231534:3:1672c3`
+*29.08. 23:15 UTC · Quelle: dream*
+
+Swarm task "Doppelte Arbeit vermeiden" scored 7/10 yet failed to converge in 2 cycles despite role evolution, revealing that critic count (1) is insufficient to halt duplicate-work loops.
+
+### `dream:20260829231534:2:c6f37d`
+*29.08. 23:15 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra succeeds but exhibits 6x latency variance (6.5–41 s), causing drive timeouts that the adaptive deadline extender must absorb.
+
+### `dream:20260829231534:1:ffe9e6`
+*29.08. 23:15 UTC · Quelle: dream*
+
+The model z-ai/glm-5.2:free fails deterministically with HTTP 429 on every call, indicating a hard quota exhaustion that requires permanent quarantine or header-based rate-limit parsing.
 
 ### `tool:fertigkeiten-wirklich-zu-ende-bringen`
 *29.08. 22:56 UTC · Quelle: hands*

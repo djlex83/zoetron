@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 22:57:03",
+ "stand": "2026-08-29 23:15:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -28,8 +28,8 @@
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -208,6 +208,12 @@
   },
   {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
