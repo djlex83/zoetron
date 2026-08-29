@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6292 Fakten** · Stand 2026-08-29 12:43 UTC · aktualisiert bei jedem Herzschlag
+**6297 Fakten** · Stand 2026-08-29 12:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2856
+- **dream:** 2861
 - **swarm_artifact:** 1527
 - **last_swarm_critique:** 601
 - **anti_pattern:** 487
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829124922:5:b0911d`
+*29.08. 12:49 UTC · Quelle: dream*
+
+Simulation approved a swarm despite 3 known risks and zero revisions, indicating risk thresholds are decoupled from actual failure rates.
+
+### `dream:20260829124922:4:a1f31c`
+*29.08. 12:49 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode (max 1 iteration), which prevents retries that would recover from transient 429/502 errors.
+
+### `dream:20260829124922:3:f51926`
+*29.08. 12:49 UTC · Quelle: dream*
+
+Reflex tools crash before validation when the underlying script has import errors or missing dependencies, bypassing the 'unbestechlicher Prüfer'.
+
+### `dream:20260829124922:2:716ae8`
+*29.08. 12:49 UTC · Quelle: dream*
+
+Hand actions fail silently when given relative paths instead of absolute paths rooted in ZOETRON_DATA, causing zero-byte reads.
+
+### `dream:20260829124922:1:0a06c2`
+*29.08. 12:49 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) affects all free-tier models simultaneously, making model diversity ineffective without request pacing or paid fallbacks.
 
 ### `dream:20260829124248:5:b644a7`
 *29.08. 12:42 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation approved a swarm despite 3 known risks and zero revisions, indicating risk thresholds are decoupled from actual failure rates.
+- Metabolism stress at 1.0 forces conserve mode (max 1 iteration), which prevents retries that would recover from transient 429/502 errors.
+- Reflex tools crash before validation when the underlying script has import errors or missing dependencies, bypassing the 'unbestechlicher Prüfer'.
+- Hand actions fail silently when given relative paths instead of absolute paths rooted in ZOETRON_DATA, causing zero-byte reads.
+- Rate limiting (HTTP 429) affects all free-tier models simultaneously, making model diversity ineffective without request pacing or paid fallbacks.
 - Iterative simulation loops without explicit convergence thresholds waste compute cycles on divergent trajectories.
 - Pruning policies that ignore access frequency and recency retain stale facts while discarding active knowledge.
 - Hand-action scripts fail silently when sys.argv paths diverge from actual data locations, requiring pre-execution validation.
@@ -51,11 +56,6 @@
 - Three completed market analyses remain unused (stale drive goals), indicating a broken handoff from analysis production to decision consumption.
 - The fallback model nvidia/nemotron-3-ultra succeeds but introduces 43-56s latency, making it unsuitable for interactive loops without caching or sched
 - Rate limiting (429 errors) on the primary model z-ai/glm-5.2:free is the dominant systemic failure mode, occurring repeatedly across cycles without au
-- Reflex-driven tool introspection succeeds where proactive planning fails, showing reactive repair > proactive design.
-- Token consumption varies 6x (223-1307 input) for similar tasks, indicating no complexity-aware routing exists.
-- Swarm processes evolve but fail to converge, suggesting missing convergence criteria or premature termination.
-- Simulations generate revision plans (5 revisions) but zero are applied, revealing a planning-execution gap.
-- Rate limiting (429 errors) is the systemic bottleneck across all free-tier models, not an isolated model failure.
 
 ---
 
