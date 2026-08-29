@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5791 Fakten** · Stand 2026-08-29 00:04 UTC · aktualisiert bei jedem Herzschlag
+**5796 Fakten** · Stand 2026-08-29 00:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2571
+- **dream:** 2576
 - **swarm_artifact:** 1411
 - **last_swarm_critique:** 581
 - **anti_pattern:** 459
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829000725:5:8b427a`
+*29.08. 00:07 UTC · Quelle: dream*
+
+Logical path handling is fragile: hand actions assume mounted paths without a runtime PathResolver abstraction.
+
+### `dream:20260829000725:4:27ec19`
+*29.08. 00:07 UTC · Quelle: dream*
+
+Reflex tools lack runtime health metrics (success rate, p95 latency), preventing automatic degradation or alerting.
+
+### `dream:20260829000725:3:22d219`
+*29.08. 00:07 UTC · Quelle: dream*
+
+Multiple duplicate circuit-breaker proposals show ideas are generated but not deduplicated or promoted to implementation.
+
+### `dream:20260829000725:2:4a6991`
+*29.08. 00:07 UTC · Quelle: dream*
+
+Fallback model latency varies 4x (16.8s–74.3s), revealing no latency SLO or timeout budget for model calls.
+
+### `dream:20260829000725:1:55442e`
+*29.08. 00:07 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free indicate missing rate-limit handling and circuit-breaking at the router level.
 
 ### `dream:20260829000302:5:18e4a3`
 *29.08. 00:03 UTC · Quelle: dream*

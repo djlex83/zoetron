@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 00:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 00:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Logical path handling is fragile: hand actions assume mounted paths without a runtime PathResolver abstraction.
+- Reflex tools lack runtime health metrics (success rate, p95 latency), preventing automatic degradation or alerting.
+- Multiple duplicate circuit-breaker proposals show ideas are generated but not deduplicated or promoted to implementation.
+- Fallback model latency varies 4x (16.8s–74.3s), revealing no latency SLO or timeout budget for model calls.
+- Recurring 429 errors on z-ai/glm-5.2:free indicate missing rate-limit handling and circuit-breaking at the router level.
 - Self-diagnosis reports zero organ errors while model-layer failures repeat, revealing a monitoring blind spot at the inference-provider level.
 - Skill proposals accumulate (router, scoreboard, calibration, circuit breaker, validation pipeline) but lack a gated validation pipeline, risking untes
 - Stale drive goals (market analysis, model-error diagnosis) persist across cycles despite reflex tools, indicating missing TTL-based auto-escalation or
@@ -51,11 +56,6 @@
 - Fifty-four skill proposals accumulate without validation; the proposal-to-skill pipeline lacks automated testing and promotion gates.
 - Self-diagnosis reports zero organ errors despite repeated external model failures, revealing a blind spot between internal health checks and actual se
 - Free-tier models (z-ai/glm-5.2) consistently fail with 429 rate-limit errors while paid-tier fallback (nvidia/nemotron) succeeds but exceeds 30 s synt
-- Fifty-four skill proposals accumulate without a validation pipeline, leaving high-value proposals (router, backoff, gap analyzer) unimplemented and un
-- Latency on fallback model nvidia/nemotron-3-ultra varies 11.9–44.5 s, violating implicit SLAs and risking timeout cascades without latency-budget guar
-- Evolutionary swarm cycles (2 cycles, score 5/10) and simulation revisions (5 revisions) fail to converge because convergence criteria are absent and m
-- Self-diagnosis reports zero organ errors while external metrics show 57% model failure rate, exposing a blind spot where internal health checks don't 
-- Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-provider circuit breakers, causing 60 failures versus 45 successes and forcing fallback to
 
 ---
 
