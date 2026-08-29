@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token efficiency varies significantly between models, with successful runs using fewer input tokens, suggesting lightweight models may be underutilize
+- Systematic error reduction requires not just identifying failures but implementing resilient routing and recovery mechanisms.
+- Repeated model failures without successful fallback attempts indicate a gap in automated retry and model-switching logic.
+- The model poolside/laguna-s-2.1:free consistently succeeds where others fail, suggesting certain lightweight models are more resilient under load.
+- Rate limiting (429) and upstream overload (502) are recurring failure modes across multiple model endpoints, indicating systemic API reliability issue
 - Simulation-revision loops and artifact validation pipelines are critical for converting theoretical proposals into verified, reusable skills.
 - The system's failure rate is nearly double its success rate, driven primarily by model reliability issues rather than task complexity.
 - Stale market analyses and unused skill proposals indicate a systemic gap between completion and operationalization of artifacts.
@@ -51,11 +56,6 @@
 - Swarm convergence should be measured by sustained score improvement across cycles, not arbitrary iteration counts, to avoid premature termination.
 - Execution verification via hand_action ok=true is critical for reliable goal completion, as simulation scores alone do not guarantee real-world succes
 - Model failures are dominated by rate-limiting (429) and upstream overload (502), indicating systemic availability issues rather than isolated errors.
-- Without per-model health tracking, the system repeatedly routes to degraded endpoints, compounding latency and failure rates.
-- Fixed-cycle convergence criteria produce false positives; sustained improvement over multiple cycles is a more reliable signal.
-- Model confidence becomes miscalibrated when predicted outcomes diverge from actual results without automatic correction.
-- Simulation scores do not predict execution success; hand_action verification must gate goal completion.
-- Rate limiting (429) and upstream errors (502) are the dominant failure modes across all free-tier models, requiring systematic fallback and backoff st
 
 ---
 

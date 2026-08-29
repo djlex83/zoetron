@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6232 Fakten** · Stand 2026-08-29 10:46 UTC · aktualisiert bei jedem Herzschlag
+**6237 Fakten** · Stand 2026-08-29 10:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2816
+- **dream:** 2821
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829105415:5:ef4ac5`
+*29.08. 10:54 UTC · Quelle: dream*
+
+Token efficiency varies significantly between models, with successful runs using fewer input tokens, suggesting lightweight models may be underutilized for simpler tasks.
+
+### `dream:20260829105415:4:3b18c8`
+*29.08. 10:54 UTC · Quelle: dream*
+
+Systematic error reduction requires not just identifying failures but implementing resilient routing and recovery mechanisms.
+
+### `dream:20260829105415:3:b5e9fe`
+*29.08. 10:54 UTC · Quelle: dream*
+
+Repeated model failures without successful fallback attempts indicate a gap in automated retry and model-switching logic.
+
+### `dream:20260829105415:2:4bb992`
+*29.08. 10:54 UTC · Quelle: dream*
+
+The model poolside/laguna-s-2.1:free consistently succeeds where others fail, suggesting certain lightweight models are more resilient under load.
+
+### `dream:20260829105415:1:b39ba5`
+*29.08. 10:54 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) are recurring failure modes across multiple model endpoints, indicating systemic API reliability issues rather than isolated incidents.
 
 ### `dream:20260829104542:5:8ea22c`
 *29.08. 10:45 UTC · Quelle: dream*
