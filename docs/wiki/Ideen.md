@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 22:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 22:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,15 +15,15 @@
 - Create a path resolver utility that normalizes sys.argv[1] and ZOETRON_DATA into absolute paths before any fil *(hatte die Idee 3×)*
 - Build a model fallback chain that pre-orders free-tier models by historical success rate and auto-rotates on 4 *(hatte die Idee 3×)*
 - Create a proposal-to-skill conversion gate requiring each proposal to have a defined implementation step, vali *(hatte die Idee 3×)*
-- Add a latency-aware timeout calculator that sets per-request deadlines at 1.5× the rolling 95th-percentile lat *(hatte die Idee 2×)*
+- Implement a model health scorecard tracking success rate, latency p95, and consecutive failures to drive dynam *(hatte die Idee 3×)*
+- Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 3×)*
 - Build skill_factory.py that consumes drive_goal 'gap' signals, generates tested skill skeletons with CI pipeli *(hatte die Idee 2×)*
 - Deploy skill_deployment_orchestrator.py that automatically integrates approved skill proposals, runs integrati *(hatte die Idee 2×)*
 - Implement model-router with real-time health scoring, automatic fallback, and per-model latency percentiles. *(hatte die Idee 2×)*
-- Add adaptive timeout/circuit-breaker that scales with model's recent p95 latency. *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) succeed reliably, proving that deterministic tool use outperforms model-dependent op
+- The system generates robust architectural proposals (circuit breakers, health scores, warm pools) but lacks an execution loop to promote proposals int
+- Upstream 502 errors (e.g., Nvidia Nemotron) reveal provider-side capacity failures that retry logic alone cannot resolve without model diversity.
+- The inclusionai/ling-3.0-flash-fin model demonstrates consistent 200 OK responses with sub-30s latency, identifying it as a high-reliability anchor fo
+- Free-tier API models fail predominantly via 429 rate-limit errors under sustained autonomous workloads, rendering single-model reliance non-viable.
 - Repeated 429 errors on identical models across cycles indicate no persistent quota tracking or cooldown memory between episodes.
 - Fallback model latency varies 2.6x (9.7s vs 25.7s), making latency-aware routing essential for predictable performance.
 - Skill proposals accumulate but never graduate to tested, reusable capabilities without a formal promotion pipeline.
@@ -51,11 +56,6 @@
 - The system generated five relevant skill proposals during the failure burst but none were instantiated, revealing a gap between proposal generation an
 - A single model (inclusionai/ling-3.0-flash-fin:free) succeeded repeatedly while three others failed, indicating that historical success rate is a stro
 - Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary workers without a fallback strategy.
-- Prompt volume directly correlates with 429 exposure; compression or batching reduces failure rate.
-- No proactive load shedding or model rotation occurs before rate limits are hit.
-- Error handling lacks classification: 429, 5xx, and empty-success responses receive identical retry logic.
-- A single reliable model (ling-3.0-flash-fin) becomes a bottleneck and single point of failure under load.
-- Free-tier models fail predominantly due to rate limits (429) and upstream overload (502), not model quality.
 
 ---
 
