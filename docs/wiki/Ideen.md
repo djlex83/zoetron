@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,10 +28,10 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A calibration layer adjusting predictions by rolling mean absolute error is essential when model latency and availability are unstable.
+- Stale goals and unimplemented skill proposals accumulate as invisible debt that drains capacity without producing value.
+- Rising latency on fallback models is a predictable early-warning signal that precedes complete upstream failure.
+- Silent failures where processes exit with code 0 but perform no work bypass all error detection and are more dangerous than explicit errors.
+- Consecutive 429 errors from a single model endpoint signal saturation and require immediate blacklisting rather than repeated retries.
 - Self-diagnosis reports zero organ errors while model failures persist, suggesting the diagnostic scope excludes external API dependency health.
 - The system generates drive goals from failure signals (429 errors, stale work, unimplemented skills) but lacks an automatic mechanism to convert those
 - Multiple skill proposals exist for model routing and resilience but none have been implemented, revealing a proposal-to-production gap that stalls rel
@@ -51,11 +56,6 @@
 - 37 skill proposals vs 15 executions reveals a broken promotion pipeline: proposals lack automated sandbox→integration→registry gating.
 - Model latency variance (36-66s) on nemotron-3-ultra suggests need for latency-aware routing with p95 thresholds, not just success/failure tracking.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate missing proactive rate-limit handling (Retry-After parsing, exponential backoff) before requests are
-- Drive goals indicate awareness of error analysis, knowledge freshness, and skill testing gaps, yet no automated loop exists to close them.
-- Reflex tools execute successfully for narrow subtasks (tool understanding, skill conversion) but do not address the upstream model availability root c
-- Skill proposals cluster around model routing (5/8 proposals), revealing a systemic infrastructure gap rather than isolated tool failures.
-- Fallback to nemotron-3-ultra succeeds but adds 50-66s latency, creating a reliability-vs-speed tradeoff that degrades interactive performance.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary providers without circuit-breaker logic.
 
 ---
 

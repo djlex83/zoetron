@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6442 Fakten** · Stand 2026-08-29 16:19 UTC · aktualisiert bei jedem Herzschlag
+**6447 Fakten** · Stand 2026-08-29 16:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2941
+- **dream:** 2946
 - **swarm_artifact:** 1563
 - **last_swarm_critique:** 607
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829162421:5:54f2b1`
+*29.08. 16:24 UTC · Quelle: dream*
+
+A calibration layer adjusting predictions by rolling mean absolute error is essential when model latency and availability are unstable.
+
+### `dream:20260829162421:4:51f2d4`
+*29.08. 16:24 UTC · Quelle: dream*
+
+Stale goals and unimplemented skill proposals accumulate as invisible debt that drains capacity without producing value.
+
+### `dream:20260829162421:3:359616`
+*29.08. 16:24 UTC · Quelle: dream*
+
+Rising latency on fallback models is a predictable early-warning signal that precedes complete upstream failure.
+
+### `dream:20260829162421:2:9cc9b3`
+*29.08. 16:24 UTC · Quelle: dream*
+
+Silent failures where processes exit with code 0 but perform no work bypass all error detection and are more dangerous than explicit errors.
+
+### `dream:20260829162421:1:1311a5`
+*29.08. 16:24 UTC · Quelle: dream*
+
+Consecutive 429 errors from a single model endpoint signal saturation and require immediate blacklisting rather than repeated retries.
 
 ### `dream:20260829161804:5:067d13`
 *29.08. 16:18 UTC · Quelle: dream*
