@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 4432 Neuronen · 211134 bewertete Synapsen
+Stand: 4434 Neuronen · 211479 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,17 +12,17 @@ Stand: 4432 Neuronen · 211134 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 461 | 0.24 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 402 | 0.26 |
-| 3 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 455 | 0.23 |
+| 3 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 456 | 0.23 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 402 | 0.26 |
-| 5 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 437 | 0.24 |
+| 5 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 438 | 0.24 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 392 | 0.25 |
 | 7 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 411 | 0.24 |
-| 8 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 413 | 0.23 |
+| 8 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 414 | 0.23 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 383 | 0.25 |
 | 10 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 400 | 0.24 |
 | 11 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 370 | 0.24 |
-| 12 | 💭 | Fallback model latency varies 4x (16.8s–74.3s), revealing no lat… | 371 | 0.24 |
-| 13 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 396 | 0.22 |
+| 12 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 397 | 0.22 |
+| 13 | 💭 | Fallback model latency varies 4x (16.8s–74.3s), revealing no lat… | 371 | 0.24 |
 | 14 | 💭 | Free-tier model endpoints (z-ai/glm-5.2) consistently fail with … | 396 | 0.22 |
 | 15 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 330 | 0.26 |
 

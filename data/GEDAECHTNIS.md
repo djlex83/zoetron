@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6557 Fakten** · Stand 2026-08-29 18:56 UTC · aktualisiert bei jedem Herzschlag
+**6562 Fakten** · Stand 2026-08-29 19:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3031
+- **dream:** 3036
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829190036:5:4c53d2`
+*29.08. 19:00 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures cascade, revealing that health checks monitor structure not external dependency reliability.
+
+### `dream:20260829190036:4:7f1002`
+*29.08. 19:00 UTC · Quelle: dream*
+
+The reliability ledger concept recurs across proposals but remains unimplemented, indicating a missing persistent telemetry substrate.
+
+### `dream:20260829190036:3:6fed24`
+*29.08. 19:00 UTC · Quelle: dream*
+
+Hand-action retries succeed only when they re-read target state first, proving that stale context causes most non-zero exits.
+
+### `dream:20260829190036:2:e2bbef`
+*29.08. 19:00 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than implementation because the system lacks a 'proposal-to-production' pipeline with automated validation gates.
+
+### `dream:20260829190036:1:493ec3`
+*29.08. 19:00 UTC · Quelle: dream*
+
+Free-tier models exhibit correlated failure bursts (429/502) that overwhelm naive round-robin fallback, requiring predictive cooldown tracking.
 
 ### `dream:20260829185541:5:553e89`
 *29.08. 18:55 UTC · Quelle: dream*

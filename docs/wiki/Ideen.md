@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 19:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Calibrate pruning thresholds by tracking fact/event half-life: only prune entities untouched >30 days with acc *(hatte die Idee 3×)*
 - Add a convergence gate to simulation-swarm loops: continue cycles until score >=8 or max 5 cycles, logging div *(hatte die Idee 3×)*
 - Implement a model router with circuit-breaker that tracks per-model 429 rates, latency p95, and Retry-After he *(hatte die Idee 3×)*
-- Enforce structured critic output (JSON schema: issues[{severity,location,suggestion}], overall_score, converge *(hatte die Idee 2×)*
 - Add exponential backoff with jitter (base 2 s, max 60 s) and quota-aware scheduling before retrying rate-limit *(hatte die Idee 2×)*
 - Create a latency-budget guard that cancels requests exceeding tier-specific SLA (10 s analysis, 30 s synthesis *(hatte die Idee 2×)*
 - Build a diagnostic gap analyzer that cross-references internal "zero errors" claims with external success-rate *(hatte die Idee 2×)*
 - Deploy a proposal-to-skill pipeline that auto-promotes high-confidence proposals (router, backoff, guard) into *(hatte die Idee 2×)*
 - Implement automatic fallback mechanism to switch from failing models (like z-ai/glm-5.2:free) to reliable alte *(hatte die Idee 2×)*
+- Create a path resolution and directory creation utility that ensures required workspace directories exist befo *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,7 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
-- Self-diagnosis reports zero organ errors while model failure rate exceeds 80%, indicating monitoring blind spots for external dependency degradation.
+- Self-diagnosis reports zero organ errors while model failures cascade, revealing that health checks monitor structure not external dependency reliabil
+- The reliability ledger concept recurs across proposals but remains unimplemented, indicating a missing persistent telemetry substrate.
+- Hand-action retries succeed only when they re-read target state first, proving that stale context causes most non-zero exits.
+- Skill proposals accumulate faster than implementation because the system lacks a 'proposal-to-production' pipeline with automated validation gates.
+- Free-tier models exhibit correlated failure bursts (429/502) that overwhelm naive round-robin fallback, requiring predictive cooldown tracking.
 - Reflex execution succeeds when triggered (fähigkeits-messlatte-bauen-capability-be.py), but the reflex library doesn't yet contain the proposed resili
 - Successful model calls (inclusionai/ling-3.0-flash-fin:free at 6.4s) show latency an order of magnitude lower than failing nemotron calls (45s), sugge
 - The system generates high-value architectural skill proposals (router, pipeline, scheduler) but lacks an automated deployment mechanism to promote the
@@ -52,10 +56,6 @@
 - Fallback model nvidia/nemotron-3-ultra shows high latency variance (19–45 s), requiring latency-aware selection under load.
 - The z-ai/glm-5.2:free model consistently returns 429 errors, making it unreliable without rate-limit-aware routing.
 - Calibration systematically overestimates task feasibility (predicted 3 vs actual 2), revealing a persistent optimism bias in the planner.
-- Swarm execution fails to converge (converged=false) after only 2 cycles, suggesting critic feedback loops are broken or insufficient.
-- The market-analysis task repeatedly scores 2/10 despite evolution cycles, indicating a fundamental planning or decomposition failure rather than model
-- Nemotron-3-Ultra is the only model returning successful completions but exhibits high latency variance (7.7–40.7s) and occasional 502 upstream overloa
-- Multiple free-tier models (GLM, Gemma) consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
 
 ---
 
