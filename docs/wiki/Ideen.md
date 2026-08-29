@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,11 +26,11 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The absence of demonstrated automatic failover means a single model's rate-limit error blocks the entire workflow without any recovery mechanism.
+- Working models show latency doubling (11.8s to 26.7s) over successive calls, suggesting resource contention that degrades performance before outright 
+- Fifty-five skill proposals have accumulated without any being implemented, exposing a broken ideation-to-execution pipeline where generation consisten
+- Self-diagnosis reports zero organ errors while the system experiences repeated model failures and latency degradation, revealing a diagnostic blind sp
+- The z-ai/glm-5.2 model fails repeatedly with 429 errors across consecutive calls, indicating a structural rate-limit ceiling on free tiers rather than
 - Self-diagnosis ignores external API health metrics, leaving the system blind to upstream degradation.
 - Reactive error handling dominates; no proactive circuit-breaking or exponential backoff protects external I/O.
 - Numerous skill proposals exist but remain unimplemented, revealing a gap between diagnosis and execution.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (5 in this cycle) but lack a mandatory conversion gate (implementation step, validation, owner), causing a proposal-to-prod
 - The system repeatedly retries failed models without backoff or rotation, turning transient API quotas into persistent task failures.
 - Free-tier model failures are dominated by rate-limiting (429) and upstream overload (502) errors, not inference quality, making reliability a routing 
-- Drive goals explicitly target reducing model errors and finishing skills, yet the system lacks automatic mechanisms to translate these goals into depl
-- Model latency varied wildly (8s to 16.2s) with no budget enforcement, allowing high-latency responses to degrade performance silently.
-- Five skill proposals were generated reactively to model failures but none were implemented, revealing a gap between proposal generation and execution 
-- The swarm execution for market analysis did not converge after two cycles with a score of 6, indicating insufficient critic feedback or planner-builde
-- Four of five models failed consecutively with 429/502 errors, leaving only inclusionai/ling-3.0-flash-fin:free as a single point of success and creati
 
 ---
 

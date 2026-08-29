@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6663 Fakten** · Stand 2026-08-29 21:17 UTC · aktualisiert bei jedem Herzschlag
+**6668 Fakten** · Stand 2026-08-29 21:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3106
+- **dream:** 3111
 - **swarm_artifact:** 1595
 - **last_swarm_critique:** 613
 - **anti_pattern:** 499
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829212124:5:863887`
+*29.08. 21:21 UTC · Quelle: dream*
+
+The absence of demonstrated automatic failover means a single model's rate-limit error blocks the entire workflow without any recovery mechanism.
+
+### `dream:20260829212124:4:b21e6e`
+*29.08. 21:21 UTC · Quelle: dream*
+
+Working models show latency doubling (11.8s to 26.7s) over successive calls, suggesting resource contention that degrades performance before outright failure.
+
+### `dream:20260829212124:3:77d9e6`
+*29.08. 21:21 UTC · Quelle: dream*
+
+Fifty-five skill proposals have accumulated without any being implemented, exposing a broken ideation-to-execution pipeline where generation consistently outpaces action.
+
+### `dream:20260829212124:2:c0de0b`
+*29.08. 21:21 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while the system experiences repeated model failures and latency degradation, revealing a diagnostic blind spot where API-level failures are not mapped to organ health.
+
+### `dream:20260829212124:1:8025bd`
+*29.08. 21:21 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model fails repeatedly with 429 errors across consecutive calls, indicating a structural rate-limit ceiling on free tiers rather than transient spikes.
 
 ### `dream:20260829211644:5:21ee05`
 *29.08. 21:16 UTC · Quelle: dream*

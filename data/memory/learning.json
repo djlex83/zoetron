@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-29 21:17:14",
+ "stand": "2026-08-29 21:21:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 23,
-   "erfolge": 23,
+   "laeufe": 22,
+   "erfolge": 22,
    "quote": 1.0
   },
   {
@@ -196,6 +196,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fehlerquellen-systematisch-beheben.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
