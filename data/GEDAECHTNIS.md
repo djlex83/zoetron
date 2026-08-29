@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6467 Fakten** · Stand 2026-08-29 16:49 UTC · aktualisiert bei jedem Herzschlag
+**6481 Fakten** · Stand 2026-08-29 17:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2966
-- **swarm_artifact:** 1563
-- **last_swarm_critique:** 607
+- **dream:** 2971
+- **swarm_artifact:** 1569
+- **last_swarm_critique:** 608
 - **anti_pattern:** 495
-- **last_swarm_goal:** 356
+- **last_swarm_goal:** 357
 - **strategy:** 268
 - **hand_result:** 77
-- **tool:** 66
+- **tool:** 67
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:schwarm-orchestrierung-vollständig-aufba`
+*29.08. 17:09 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Schwarm-Orchestrierung vollständig aufbauen'. Datei: data/tools/schwarm-orchestrierung-vollständig-aufba.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*29.08. 17:09 UTC · Quelle: critic*
+
+score=9; issues=Drei separate Artefakte mit jeweils eigener SwarmOrchestrator/MemoryStore-Implementierung statt einheitlicher Bibliothek; Integration erfordert manuelles Zusammenfuehren; TelegramReporter ist nur simuliert (Datei-Logging), keine echte Bot-API-I
+
+### `last_swarm_goal`
+*29.08. 16:58 UTC · Quelle: system*
+
+Schwarm-Orchestrierung vollständig aufbauen
+
+### `dream:20260829165744:5:f135ee`
+*29.08. 16:57 UTC · Quelle: dream*
+
+Hand actions use exit codes that conflate transient I/O failures with logic errors, preventing precise retry policies.
+
+### `dream:20260829165744:4:8a2e68`
+*29.08. 16:57 UTC · Quelle: dream*
+
+The system already generates concrete skill proposals from failures but lacks an automated deployment pipeline to close the loop without manual reflex invocation.
+
+### `dream:20260829165744:3:56dccf`
+*29.08. 16:57 UTC · Quelle: dream*
+
+Drive goals emerge reactively from failure signals rather than proactive architecture, creating a lag between problem detection and systemic fix.
+
+### `dream:20260829165744:2:deae2d`
+*29.08. 16:57 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model demonstrates consistent low-latency success while larger models (Nemotron 42s, Gemma 429s) fail or timeout.
+
+### `dream:20260829165744:1:708454`
+*29.08. 16:57 UTC · Quelle: dream*
+
+Free-tier models share rate-limit quotas causing correlated 429 failures across multiple providers simultaneously.
 
 ### `dream:20260829164825:5:8f6746`
 *29.08. 16:48 UTC · Quelle: dream*

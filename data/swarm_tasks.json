@@ -1,0 +1,122 @@
+{
+  "a17f8ad0": {
+    "task_id": "a17f8ad0",
+    "name": "Research Requirements",
+    "description": "Analyse der Anforderungen für neues Feature",
+    "required_role": "researcher",
+    "payload": {
+      "feature": "event-driven-swarm"
+    },
+    "status": "completed",
+    "assigned_agent": "agent-001",
+    "result": {
+      "processed_by": "agent-001",
+      "role": "researcher",
+      "output": "Task 'Research Requirements' abgeschlossen von researcher-Agent"
+    },
+    "error": null,
+    "created_at": 1788023249.6144464,
+    "started_at": null,
+    "completed_at": 1788023250.1196976
+  },
+  "6d4edf6f": {
+    "task_id": "6d4edf6f",
+    "name": "Implement Core",
+    "description": "Implementierung der Kernlogik",
+    "required_role": "developer",
+    "payload": {
+      "module": "orchestrator"
+    },
+    "status": "completed",
+    "assigned_agent": "agent-002",
+    "result": {
+      "processed_by": "agent-002",
+      "role": "developer",
+      "output": "Task 'Implement Core' abgeschlossen von developer-Agent"
+    },
+    "error": null,
+    "created_at": 1788023249.614913,
+    "started_at": null,
+    "completed_at": 1788023250.623445
+  },
+  "c61c7d0e": {
+    "task_id": "c61c7d0e",
+    "name": "Code Review",
+    "description": "Review der Implementierung",
+    "required_role": "reviewer",
+    "payload": {
+      "target": "orchestrator.py"
+    },
+    "status": "completed",
+    "assigned_agent": "agent-003",
+    "result": {
+      "processed_by": "agent-003",
+      "role": "reviewer",
+      "output": "Task 'Code Review' abgeschlossen von reviewer-Agent"
+    },
+    "error": null,
+    "created_at": 1788023249.615264,
+    "started_at": null,
+    "completed_at": 1788023251.1248333
+  },
+  "f106ea40": {
+    "task_id": "f106ea40",
+    "name": "Research Requirements",
+    "description": "Analyse der Anforderungen für neues Feature",
+    "required_role": "researcher",
+    "payload": {
+      "feature": "event-driven-swarm"
+    },
+    "status": "completed",
+    "assigned_agent": "agent-001",
+    "result": {
+      "processed_by": "agent-001",
+      "role": "researcher",
+      "output": "Task 'Research Requirements' abgeschlossen von researcher-Agent"
+    },
+    "error": null,
+    "created_at": 1788023346.9291704,
+    "started_at": null,
+    "completed_at": 1788023347.4328184
+  },
+  "8800d148": {
+    "task_id": "8800d148",
+    "name": "Implement Core",
+    "description": "Implementierung der Kernlogik",
+    "required_role": "developer",
+    "payload": {
+      "module": "orchestrator"
+    },
+    "status": "completed",
+    "assigned_agent": "agent-002",
+    "result": {
+      "processed_by": "agent-002",
+      "role": "developer",
+      "output": "Task 'Implement Core' abgeschlossen von developer-Agent"
+    },
+    "error": null,
+    "created_at": 1788023346.929838,
+    "started_at": null,
+    "completed_at": 1788023347.937356
+  },
+  "b62ea726": {
+    "task_id": "b62ea726",
+    "name": "Code Review",
+    "description": "Review der Implementierung",
+    "required_role": "reviewer",
+    "payload": {
+      "target": "orchestrator.py"
+    },
+    "status": "completed",
+    "assigned_agent": "agent-003",
+    "result": {
+      "processed_by": "agent-003",
+      "role": "reviewer",
+      "output": "Task 'Code Review' abgeschlossen von reviewer-Agent"
+    },
+    "error": null,
+    "created_at": 1788023346.9303563,
+    "started_at": null,
+    "completed_at": 1788023348.4415007
+  }
+}

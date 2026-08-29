@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 17:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions use exit codes that conflate transient I/O failures with logic errors, preventing precise retry policies.
+- The system already generates concrete skill proposals from failures but lacks an automated deployment pipeline to close the loop without manual reflex
+- Drive goals emerge reactively from failure signals rather than proactive architecture, creating a lag between problem detection and systemic fix.
+- The inclusionai/ling-3.0-flash-fin:free model demonstrates consistent low-latency success while larger models (Nemotron 42s, Gemma 429s) fail or timeo
+- Free-tier models share rate-limit quotas causing correlated 429 failures across multiple providers simultaneously.
 - Unfinished analytical work (stale market analysis) accumulates as hidden technical debt and should be actively closed alongside new tasks.
 - Proposed skills without sandbox or shadow-traffic validation risk being unreliable; every skill must pass staged testing before registry entry.
 - Self-diagnosis confirms zero internal organ failures — the problem is entirely at the API boundary, so resilience must be built there.
@@ -51,11 +56,6 @@
 - Skill proposals are accumulating but lack a structured lifecycle process to transition from idea to tested, available skill.
 - Relying on a small unmanaged pool of free models leads to cascading failures and stalled execution.
 - Free models are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
-- Five skill proposals were generated but remain unimplemented, revealing a persistent gap between problem identification and solution execution.
-- Self-diagnosis found zero internal organ errors, confirming that failures originate from external model dependencies rather than internal system fault
-- Swarm execution scored 2/10 without convergence, with critic feedback citing missing executable Python blocks, pointing to quality control gaps in bui
-- The nemotron-3-ultra-550b model succeeds consistently but with high and variable latency (12-49s), revealing a speed-reliability tradeoff in model sel
-- Repeated 429 rate-limit errors on z-ai/glm-5.2 indicate a systemic dependency on an unreliable model that cascades into failed swarm convergence.
 
 ---
 

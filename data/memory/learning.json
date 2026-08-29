@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-29 16:49:15",
+ "stand": "2026-08-29 17:09:17",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 28,
-   "erfolge": 28,
+   "laeufe": 26,
+   "erfolge": 26,
    "quote": 1.0
   },
   {
@@ -51,6 +51,12 @@
    "quote": 0.0
   },
   {
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 4,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -73,12 +79,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
@@ -174,14 +174,14 @@
  "haende_quote": 0.667,
  "simulationen_angewandt": 35,
  "swarm_scores": {
-  "n": 38,
+  "n": 39,
   "best": 9.0,
-  "schnitt": 5.42
+  "schnitt": 5.51
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 35,
-   "schnitt": 5.14
+   "n": 36,
+   "schnitt": 5.25
   },
   "bau": {
    "n": 3,
