@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6629 Fakten** · Stand 2026-08-29 20:39 UTC · aktualisiert bei jedem Herzschlag
+**6634 Fakten** · Stand 2026-08-29 20:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3081
+- **dream:** 3086
 - **swarm_artifact:** 1589
 - **last_swarm_critique:** 612
 - **anti_pattern:** 499
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829204458:5:bb2f4f`
+*29.08. 20:44 UTC · Quelle: dream*
+
+Path resolution for hand actions is brittle — relative paths and missing data directories cause silent failures with no fallback.
+
+### `dream:20260829204458:4:b20ef3`
+*29.08. 20:44 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation tracking, creating a persistent gap between identified solutions and deployed fixes.
+
+### `dream:20260829204458:3:b102e5`
+*29.08. 20:44 UTC · Quelle: dream*
+
+The system enters conserve mode only after stress reaches 1.0, meaning load reduction is reactive rather than proactive.
+
+### `dream:20260829204458:2:fa69c0`
+*29.08. 20:44 UTC · Quelle: dream*
+
+External I/O operations (API calls, file access, drive reads) lack circuit-breaking, so individual failures propagate instead of degrading gracefully.
+
+### `dream:20260829204458:1:1bc016`
+*29.08. 20:44 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free endpoint is a persistent single point of failure — repeated 429 errors without automatic failover cascade into task delays and stalled workflows.
 
 ### `dream:20260829203843:5:a38b46`
 *29.08. 20:38 UTC · Quelle: dream*
