@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 4356 Neuronen · 201735 bewertete Synapsen
+Stand: 4363 Neuronen · 201985 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -22,7 +22,7 @@ Stand: 4356 Neuronen · 201735 bewertete Synapsen
 | 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 372 | 0.25 |
 | 11 | 💭 | Fallback model latency varies 4x (16.8s–74.3s), revealing no lat… | 362 | 0.24 |
 | 12 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 357 | 0.24 |
-| 13 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 383 | 0.22 |
+| 13 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 384 | 0.22 |
 | 14 | 💭 | Free-tier model endpoints (z-ai/glm-5.2) consistently fail with … | 384 | 0.22 |
 | 15 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 322 | 0.26 |
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6462 Fakten** · Stand 2026-08-29 16:44 UTC · aktualisiert bei jedem Herzschlag
+**6467 Fakten** · Stand 2026-08-29 16:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2961
+- **dream:** 2966
 - **swarm_artifact:** 1563
 - **last_swarm_critique:** 607
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829164825:5:8f6746`
+*29.08. 16:48 UTC · Quelle: dream*
+
+Unfinished analytical work (stale market analysis) accumulates as hidden technical debt and should be actively closed alongside new tasks.
+
+### `dream:20260829164825:4:166225`
+*29.08. 16:48 UTC · Quelle: dream*
+
+Proposed skills without sandbox or shadow-traffic validation risk being unreliable; every skill must pass staged testing before registry entry.
+
+### `dream:20260829164825:3:d079d5`
+*29.08. 16:48 UTC · Quelle: dream*
+
+Self-diagnosis confirms zero internal organ failures — the problem is entirely at the API boundary, so resilience must be built there.
+
+### `dream:20260829164825:2:948d2a`
+*29.08. 16:48 UTC · Quelle: dream*
+
+Model reliability is highly variable across providers; a rotating pool with per-model health tracking prevents single-provider dependency.
+
+### `dream:20260829164825:1:0490c4`
+*29.08. 16:48 UTC · Quelle: dream*
+
+429 rate-limit errors from external APIs are the dominant failure mode, requiring proactive circuit-breaking rather than blind retries.
 
 ### `dream:20260829164317:5:b40c17`
 *29.08. 16:43 UTC · Quelle: dream*
