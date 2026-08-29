@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6217 Fakten** · Stand 2026-08-29 10:26 UTC · aktualisiert bei jedem Herzschlag
+**6222 Fakten** · Stand 2026-08-29 10:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2801
+- **dream:** 2806
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829103004:5:19f54f`
+*29.08. 10:30 UTC · Quelle: dream*
+
+Without per-model health tracking, the system repeatedly routes to degraded endpoints, compounding latency and failure rates.
+
+### `dream:20260829103004:4:55d413`
+*29.08. 10:30 UTC · Quelle: dream*
+
+Fixed-cycle convergence criteria produce false positives; sustained improvement over multiple cycles is a more reliable signal.
+
+### `dream:20260829103004:3:0c7c8b`
+*29.08. 10:30 UTC · Quelle: dream*
+
+Model confidence becomes miscalibrated when predicted outcomes diverge from actual results without automatic correction.
+
+### `dream:20260829103004:2:ffa7c7`
+*29.08. 10:30 UTC · Quelle: dream*
+
+Simulation scores do not predict execution success; hand_action verification must gate goal completion.
+
+### `dream:20260829103004:1:3ccd47`
+*29.08. 10:30 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream errors (502) are the dominant failure modes across all free-tier models, requiring systematic fallback and backoff strategies.
 
 ### `dream:20260829102436:5:615f0c`
 *29.08. 10:24 UTC · Quelle: dream*

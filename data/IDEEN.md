@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Without per-model health tracking, the system repeatedly routes to degraded endpoints, compounding latency and failure rates.
+- Fixed-cycle convergence criteria produce false positives; sustained improvement over multiple cycles is a more reliable signal.
+- Model confidence becomes miscalibrated when predicted outcomes diverge from actual results without automatic correction.
+- Simulation scores do not predict execution success; hand_action verification must gate goal completion.
+- Rate limiting (429) and upstream errors (502) are the dominant failure modes across all free-tier models, requiring systematic fallback and backoff st
 - Pruning runs remove zero facts/events despite ongoing knowledge graph repairs, suggesting pruning thresholds are misaligned with actual churn.
 - System self-diagnosis reports zero organ errors while external API failure rate exceeds 50%, revealing a critical observability blind spot.
 - Simulation-revision-swarm loops improve solutions (evolved=true) but consistently fail to converge within default cycle limits (score 6, converged=fal
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates actual work required (predicted 3 vs actual 6), suggesting systematic optimism in task complexity assessment.
 - Model performance varies significantly under load: nemotron-3-ultra succeeds with high latency (136-159s) but fails with 502 errors during peak demand
 - A single fast success from inclusionai/ling-3.0-flash-fin (9.7 s) suggests smaller optimized models may offer better reliability/latency trade-offs.
-- Under maximum stress (conserve mode, 1 iteration budget) the system still completed a complex graph-repair task successfully.
-- Simulation-driven revision (3 cycles) before execution produced a working 289-line Python artifact on first real run.
-- nvidia/nemotron-3-ultra succeeds but with extreme latency variance (40–160 s), requiring adaptive timeouts and circuit-breakers.
-- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable as primary providers.
-- Drive goals reveal a systemic gap: analyses and simulations accumulate but rarely convert to measurable action items with assigned ownership.
 
 ---
 
