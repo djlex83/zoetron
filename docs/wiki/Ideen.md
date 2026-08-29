@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 01:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 01:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reporting zero organ errors while the system scores 2/10 reveals that organ health metrics do not capture task-level failure modes; dia
+- Hand actions failing with exit code 1 and zero bytes read indicate missing pre-flight checks (file existence, permissions) that should be automated.
+- Simulation-revision loops generate revisions without verifying that each revision reduces the highest-risk item; risk-weighted revision acceptance is 
+- Swarm evolution improves variant quality (2→8) but fails to converge because the critic role lacks authority to halt cycles; convergence criteria must
+- Free-tier model endpoints exhibit correlated rate-limit failures; a single health-aware router with exponential backoff and fallback priority prevents
 - The evolution_run demonstrates successful improvement from 2/10 to 8/10 score through variant testing, showing that iterative refinement with multiple
 - Calibration shows a consistent overprediction pattern (predicted 5 vs actual 2), indicating the system's confidence scoring is misaligned with actual 
 - Hand actions repeatedly fail with exit code 1 and zero bytes read, suggesting a fundamental issue with file system access or permission handling in th
@@ -51,11 +56,6 @@
 - Calibration error (predicted 6 vs actual 8) reveals that confidence estimates drift without continuous outcome-based updating.
 - High latency variance (27–76 s) without timeout guards causes unpredictable delays and blocks downstream processes.
 - Rate limiting (429) and upstream errors (502) across multiple providers indicate systemic lack of resilience mechanisms in model routing.
-- Automated self-check scheduler artifact successfully deployed and running after one full swarm-simulation-revision cycle.
-- Two distinct knowledge gaps identified: stale market research analyses and large backlog of untested simulation ideas.
-- System operates in conserve mode (stress=1.0) with strict budget (max 3 tasks, 1 iteration), yet completed automated scheduler deployment.
-- Simulation-driven development pipeline works: swarm goal → simulation (revise) → 3 revisions applied → TOR confirms 274-line Python scheduler running.
-- Primary model (z-ai/glm-5.2) fails consistently with 429 rate limits, forcing fallback to slower nvidia/nemotron model (57-122s latency).
 
 ---
 

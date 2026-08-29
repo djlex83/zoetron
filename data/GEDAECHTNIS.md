@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5859 Fakten** · Stand 2026-08-29 01:37 UTC · aktualisiert bei jedem Herzschlag
+**5864 Fakten** · Stand 2026-08-29 01:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2606
+- **dream:** 2611
 - **swarm_artifact:** 1429
 - **last_swarm_critique:** 584
 - **anti_pattern:** 463
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829014342:5:c26417`
+*29.08. 01:43 UTC · Quelle: dream*
+
+Self-diagnosis reporting zero organ errors while the system scores 2/10 reveals that organ health metrics do not capture task-level failure modes; diagnostics must include outcome-based checks.
+
+### `dream:20260829014342:4:3b6187`
+*29.08. 01:43 UTC · Quelle: dream*
+
+Hand actions failing with exit code 1 and zero bytes read indicate missing pre-flight checks (file existence, permissions) that should be automated.
+
+### `dream:20260829014342:3:543563`
+*29.08. 01:43 UTC · Quelle: dream*
+
+Simulation-revision loops generate revisions without verifying that each revision reduces the highest-risk item; risk-weighted revision acceptance is needed.
+
+### `dream:20260829014342:2:79ba01`
+*29.08. 01:43 UTC · Quelle: dream*
+
+Swarm evolution improves variant quality (2→8) but fails to converge because the critic role lacks authority to halt cycles; convergence criteria must be explicit and enforced.
+
+### `dream:20260829014342:1:61d6bf`
+*29.08. 01:43 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit correlated rate-limit failures; a single health-aware router with exponential backoff and fallback priority prevents cascade outages.
 
 ### `dream:20260829013704:5:c137f8`
 *29.08. 01:37 UTC · Quelle: dream*
