@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 01:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 01:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 9×)*
@@ -36,11 +36,16 @@
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
-- Vorschläge in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 2×)*
 - Modell-Fehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
+- Modelle besser verstehen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration overestimates outcomes by 100% (predicted 2 vs actual 1), suggesting the estimator ignores execution failures.
+- Swarm convergence stalls at score 1 with negative delta (-0.5) despite simulation approval, revealing a sim-to-real gap in the scoring heuristic.
+- Hand actions repeatedly exit with code 1 in <1 s, indicating a systemic environment or permission issue rather than task-specific bugs.
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (6–77 s), requiring adaptive timeouts and speculative parallel c
+- The model z-ai/glm-5.2:free is consistently unavailable due to 429 rate limits and should be removed from the primary routing pool.
 - System stress is maxed (1.0) and metabolism forces conserve mode, yet the swarm goal demands a high-score run that needs more resources.
 - File-path handling breaks on every hand action: scripts assume relative paths while the runtime requires ZOETRON_DATA absolute paths.
 - Skill proposals accumulate but none graduate to tested code because the proposal-to-skill pipeline does not exist.
@@ -51,11 +56,6 @@
 - Stale tasks accumulate when internal drive goals are not actively executed, indicating a need for automated stale-task detection and prioritization.
 - High variance in latency for working models (9s to 19s) necessitates strict latency budgets to prevent stalling.
 - Free-tier models like z-ai/glm-5.2:free are highly prone to rate-limiting (429 errors), causing cascading failures in the pipeline.
-- Self-diagnosis reporting zero organ errors while the system scores 2/10 reveals that organ health metrics do not capture task-level failure modes; dia
-- Hand actions failing with exit code 1 and zero bytes read indicate missing pre-flight checks (file existence, permissions) that should be automated.
-- Simulation-revision loops generate revisions without verifying that each revision reduces the highest-risk item; risk-weighted revision acceptance is 
-- Swarm evolution improves variant quality (2→8) but fails to converge because the critic role lacks authority to halt cycles; convergence criteria must
-- Free-tier model endpoints exhibit correlated rate-limit failures; a single health-aware router with exponential backoff and fallback priority prevents
 
 ---
 

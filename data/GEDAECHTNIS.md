@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5874 Fakten** · Stand 2026-08-29 01:53 UTC · aktualisiert bei jedem Herzschlag
+**5879 Fakten** · Stand 2026-08-29 01:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2621
+- **dream:** 2626
 - **swarm_artifact:** 1429
 - **last_swarm_critique:** 584
 - **anti_pattern:** 463
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829015709:5:b5abf5`
+*29.08. 01:57 UTC · Quelle: dream*
+
+Calibration overestimates outcomes by 100% (predicted 2 vs actual 1), suggesting the estimator ignores execution failures.
+
+### `dream:20260829015709:4:08d4e6`
+*29.08. 01:57 UTC · Quelle: dream*
+
+Swarm convergence stalls at score 1 with negative delta (-0.5) despite simulation approval, revealing a sim-to-real gap in the scoring heuristic.
+
+### `dream:20260829015709:3:c2ead0`
+*29.08. 01:57 UTC · Quelle: dream*
+
+Hand actions repeatedly exit with code 1 in <1 s, indicating a systemic environment or permission issue rather than task-specific bugs.
+
+### `dream:20260829015709:2:916b8a`
+*29.08. 01:57 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (6–77 s), requiring adaptive timeouts and speculative parallel calls.
+
+### `dream:20260829015709:1:fbae1c`
+*29.08. 01:57 UTC · Quelle: dream*
+
+The model z-ai/glm-5.2:free is consistently unavailable due to 429 rate limits and should be removed from the primary routing pool.
 
 ### `dream:20260829015237:5:11a745`
 *29.08. 01:52 UTC · Quelle: dream*
