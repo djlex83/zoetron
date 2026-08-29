@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6537 Fakten** · Stand 2026-08-29 18:36 UTC · aktualisiert bei jedem Herzschlag
+**6542 Fakten** · Stand 2026-08-29 18:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3011
+- **dream:** 3016
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829184013:5:04dc36`
+*29.08. 18:40 UTC · Quelle: dream*
+
+Under high stress (1.0) and conserve mode, the system must prioritize models with proven reliability over latency.
+
+### `dream:20260829184013:4:ef65b3`
+*29.08. 18:40 UTC · Quelle: dream*
+
+Score capping mechanism penalizes missing code artifacts heavily (5→2), making code generation a hard requirement.
+
+### `dream:20260829184013:3:2e5626`
+*29.08. 18:40 UTC · Quelle: dream*
+
+High latency variance (8-222s) in working models demands timeout and retry policies calibrated to observed distributions.
+
+### `dream:20260829184013:2:4f7c18`
+*29.08. 18:40 UTC · Quelle: dream*
+
+Task success requires executable code artifacts, not just prose, as the Tor gate enforces executable convergence.
+
+### `dream:20260829184013:1:c25dcd`
+*29.08. 18:40 UTC · Quelle: dream*
+
+Free tier models exhibit unreliable availability due to rate limiting (429) and upstream errors (502), requiring robust fallback chains.
 
 ### `dream:20260829183534:5:95b13c`
 *29.08. 18:35 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 5×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Under high stress (1.0) and conserve mode, the system must prioritize models with proven reliability over latency.
+- Score capping mechanism penalizes missing code artifacts heavily (5→2), making code generation a hard requirement.
+- High latency variance (8-222s) in working models demands timeout and retry policies calibrated to observed distributions.
+- Task success requires executable code artifacts, not just prose, as the Tor gate enforces executable convergence.
+- Free tier models exhibit unreliable availability due to rate limiting (429) and upstream errors (502), requiring robust fallback chains.
 - Market analysis work remains incomplete across multiple cycles because reflex tools fail on path resolution errors.
 - Skill proposals accumulate (55) but conversion to executable skills stalls due to missing implementation pipeline.
 - System stress hits maximum (1.0) triggering conserve mode that caps tasks at 3 and iterations at 1, starving recovery work.
@@ -51,11 +56,6 @@
 - The system's self-diagnosis, reflex, and skill-proposal mechanisms functioned correctly, closing issue 227 and generating actionable proposals from fa
 - The nvidia/nemotron-3-ultra-550b-a55b:free model served as the most reliable fallback, succeeding after glm-5.2 failures despite its own intermittent 
 - 429 rate-limiting failures are systemic across all free-tier models on OpenRouter, not isolated to a single provider, making fallback chains essential
-- Proposed skills accumulate but never deploy because the reflex/tool chain breaks at file access, not at logic — the gap is operational, not conceptual
-- Simulation-based revision loops work (3 risks → 3 revisions applied) but only activate after execution failures, not as a preventive gate.
-- High system stress (1.0) triggers conserve mode, capping tasks at 3 and iterations at 1, which starves long-running goals like market analyses and ski
-- Hand actions fail due to incorrect path resolution — inputs arrive via sys.argv[1] and ZOETRON_DATA but code uses relative paths that don't map to the
-- Free-tier model endpoints consistently fail under load with 429 rate limits and 502 errors, making them unreliable for production workflows.
 
 ---
 
