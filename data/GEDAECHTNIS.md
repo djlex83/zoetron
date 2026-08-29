@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6148 Fakten** · Stand 2026-08-29 08:34 UTC · aktualisiert bei jedem Herzschlag
+**6153 Fakten** · Stand 2026-08-29 08:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2756
+- **dream:** 2761
 - **swarm_artifact:** 1507
 - **last_swarm_critique:** 597
 - **anti_pattern:** 479
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829083813:5:1de8d3`
+*29.08. 08:38 UTC · Quelle: dream*
+
+Swarm orchestration was explicitly flagged by the critic as a weakness, yet the evolution run produced a winner on the first variant, indicating the mutation operator may be too conservative.
+
+### `dream:20260829083813:4:5f896f`
+*29.08. 08:38 UTC · Quelle: dream*
+
+The fastest successful model (inclusionai/ling-3.0-flash-fin:free at 9.9s) is an order of magnitude quicker than alternatives, suggesting latency-based routing can dramatically improve throughput.
+
+### `dream:20260829083813:3:ae621b`
+*29.08. 08:38 UTC · Quelle: dream*
+
+Calibration predicted a score of 2 but actual was 6, revealing a systematic underestimation bias that will misguide resource allocation if uncorrected.
+
+### `dream:20260829083813:2:9c4e8d`
+*29.08. 08:38 UTC · Quelle: dream*
+
+Nvidia Nemotron models exhibit intermittent 502 upstream overload errors even when the HTTP status is 200, requiring response-body validation before treating a call as successful.
+
+### `dream:20260829083813:1:e446e4`
+*29.08. 08:38 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary workers without aggressive backoff and fallback chains.
 
 ### `dream:20260829083345:5:7e88be`
 *29.08. 08:33 UTC · Quelle: dream*

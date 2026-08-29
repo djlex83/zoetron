@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 08:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 08:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm orchestration was explicitly flagged by the critic as a weakness, yet the evolution run produced a winner on the first variant, indicating the m
+- The fastest successful model (inclusionai/ling-3.0-flash-fin:free at 9.9s) is an order of magnitude quicker than alternatives, suggesting latency-base
+- Calibration predicted a score of 2 but actual was 6, revealing a systematic underestimation bias that will misguide resource allocation if uncorrected
+- Nvidia Nemotron models exhibit intermittent 502 upstream overload errors even when the HTTP status is 200, requiring response-body validation before t
+- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary workers without aggressive backoff and fallback c
 - Three completed market analyses and 35 skill proposals remain unused because no pipeline converts analysis to action or validates skills.
 - Metabolism stress at 1.0 forces conserve mode with max_tasks=3 and max_iterations=1, preventing iterative recovery from failures.
 - Swarm execution tool fails to resolve real data paths: it ignores sys.argv[1] and ZOETRON_DATA, using relative paths that touch nothing.
@@ -51,11 +56,6 @@
 - Model overload errors (502) from upstream providers indicate need for automatic retry logic with exponential backoff.
 - Path resolution failures occur when sys.argv or ZOETRON_DATA are not properly validated before file operations.
 - Rate limiting (429 errors) from OpenRouter consistently blocks model access, requiring fallback strategies or local model prioritization.
-- The swarm converged in a single cycle producing a working 512-line artifact with distributed roles, proving the multi-role architecture is effective w
-- Calibration underestimated the actual swarm score by 3 points (predicted 5 vs actual 8), indicating the system's self-assessment of output quality is 
-- Hand action failures are silent — null error field, 0.04s duration, exit code 1 — revealing a missing structured error-capture layer in the execution 
-- The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds reliably across widely varying latencies (13s–146s), but no automated mechanism exists to se
-- The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors across multiple consecutive calls, making it effectively unusable without autom
 
 ---
 
