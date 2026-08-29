@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 02:39:37",
+ "stand": "2026-08-29 02:44:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,6 +57,12 @@
    "quote": 1.0
   },
   {
+   "tool": "aufgaben-priorisieren.py",
+   "laeufe": 3,
+   "erfolge": 1,
+   "quote": 0.333
+  },
+  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -67,12 +73,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "aufgaben-priorisieren.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
@@ -147,8 +147,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.635,
- "simulationen_angewandt": 46,
+ "haende_quote": 0.637,
+ "simulationen_angewandt": 45,
  "swarm_scores": {
   "n": 36,
   "best": 9.0,

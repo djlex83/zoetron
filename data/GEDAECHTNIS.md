@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5911 Fakten** · Stand 2026-08-29 02:40 UTC · aktualisiert bei jedem Herzschlag
+**5916 Fakten** · Stand 2026-08-29 02:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2646
+- **dream:** 2651
 - **swarm_artifact:** 1435
 - **last_swarm_critique:** 585
 - **anti_pattern:** 465
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829024347:5:4fa8c9`
+*29.08. 02:43 UTC · Quelle: dream*
+
+Simulation results and market analysis gaps persist because insights aren't automatically fed into model selection and task planning.
+
+### `dream:20260829024347:4:bd654c`
+*29.08. 02:43 UTC · Quelle: dream*
+
+Reflex-based error handling succeeds locally but lacks cross-episode learning to prevent recurring model failures.
+
+### `dream:20260829024347:3:f695ce`
+*29.08. 02:43 UTC · Quelle: dream*
+
+Accumulated skill proposals (fallback, smoke tests, calibration) remain unimplemented while drive goals repeat same failure signals.
+
+### `dream:20260829024347:2:357d10`
+*29.08. 02:43 UTC · Quelle: dream*
+
+Latency variance for identical models (5-17s) indicates unstable infrastructure requiring health-aware routing.
+
+### `dream:20260829024347:1:a76ac8`
+*29.08. 02:43 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) making single-model reliance unreliable.
 
 ### `dream:20260829023918:5:4c93bc`
 *29.08. 02:39 UTC · Quelle: dream*
