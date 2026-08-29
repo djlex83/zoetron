@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 05:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 05:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism stress at maximum with conservative budget indicates systemic overload; task admission control must reject new work before saturation.
+- Stale swarm artifacts accumulate because no automated ingestion pipeline validates and merges them into active memory.
+- Simulation revisions without application loops waste compute; every simulation must gate a concrete action or be discarded.
+- High latency variance in fallback models degrades system predictability; latency SLAs should trigger model switching.
+- Rate-limited models should be automatically deprioritized after N consecutive 429s, not retried indefinitely.
 - Zero pruning across cycles indicates memory growth unbounded; retention policies must be enforced.
 - Fallback model latency varies 5x (9-47s) making timeout budgets unreliable without adaptive scaling.
 - Completed market analyses remain unused because no reflex triggers conversion of stale insights into executable tasks.
@@ -51,11 +56,6 @@
 - High stress (1.0) triggers conserve mode that severely limits parallelism (max_tasks=3, max_iterations=1), slowing recovery.
 - File operations fail when using relative paths instead of resolving via ZOETRON_DATA and sys.argv[1] environment inputs.
 - Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
-- The 'bahnen' graph shows zero delta and zero edges despite code existing, meaning the knowledge-graph linker is not extracting dependencies from the g
-- Calibration consistently over-predicts by 1 point (predicted 8 vs actual 7), suggesting the critic's scoring heuristic is misaligned with the final ev
-- Evolutionary search produces score variance (4-9) but the swarm stops at 2 cycles without convergence, indicating insufficient iteration budget or wea
-- Destructive tool calls (subprocess) are hard-blocked by an approval gate, causing whole-goal stalls even when the artifact already exists and passes t
-- The fallback model (z-ai/glm-5.2) fails deterministically with HTTP 429 under load, making it unusable as a reliable backup without rate-limit handlin
 
 ---
 

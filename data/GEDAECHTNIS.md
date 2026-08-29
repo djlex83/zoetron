@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6022 Fakten** · Stand 2026-08-29 05:00 UTC · aktualisiert bei jedem Herzschlag
+**6027 Fakten** · Stand 2026-08-29 05:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2696
+- **dream:** 2701
 - **swarm_artifact:** 1471
 - **last_swarm_critique:** 591
 - **anti_pattern:** 471
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829050433:5:fe666d`
+*29.08. 05:04 UTC · Quelle: dream*
+
+Metabolism stress at maximum with conservative budget indicates systemic overload; task admission control must reject new work before saturation.
+
+### `dream:20260829050433:4:aa412d`
+*29.08. 05:04 UTC · Quelle: dream*
+
+Stale swarm artifacts accumulate because no automated ingestion pipeline validates and merges them into active memory.
+
+### `dream:20260829050433:3:9c6d9e`
+*29.08. 05:04 UTC · Quelle: dream*
+
+Simulation revisions without application loops waste compute; every simulation must gate a concrete action or be discarded.
+
+### `dream:20260829050433:2:a847dc`
+*29.08. 05:04 UTC · Quelle: dream*
+
+High latency variance in fallback models degrades system predictability; latency SLAs should trigger model switching.
+
+### `dream:20260829050433:1:05eddc`
+*29.08. 05:04 UTC · Quelle: dream*
+
+Rate-limited models should be automatically deprioritized after N consecutive 429s, not retried indefinitely.
 
 ### `dream:20260829045956:5:0d94d7`
 *29.08. 04:59 UTC · Quelle: dream*
