@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 08:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 08:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three completed market analyses and 35 skill proposals remain unused because no pipeline converts analysis to action or validates skills.
+- Metabolism stress at 1.0 forces conserve mode with max_tasks=3 and max_iterations=1, preventing iterative recovery from failures.
+- Swarm execution tool fails to resolve real data paths: it ignores sys.argv[1] and ZOETRON_DATA, using relative paths that touch nothing.
+- Backup model nvidia/nemotron-3-ultra succeeds but with extreme latency variance (11-80s) and occasional 502 upstream errors.
+- Primary model z-ai/glm-5.2:free fails 100% of the time with 429 rate limits, making it unusable as a default.
 - Lightweight local models (e.g., poolside/laguna-s-2.1) provide fast fallback when cloud models are rate-limited or overloaded.
 - Swarm task execution fails when initial path validation is skipped, leading to zero-byte or empty file processing.
 - Model overload errors (502) from upstream providers indicate need for automatic retry logic with exponential backoff.
@@ -51,11 +56,6 @@
 - Hand action failures are silent — null error field, 0.04s duration, exit code 1 — revealing a missing structured error-capture layer in the execution 
 - The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds reliably across widely varying latencies (13s–146s), but no automated mechanism exists to se
 - The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors across multiple consecutive calls, making it effectively unusable without autom
-- Simulation repeatedly flags high critical risks (5 risks, 3 revisions) suggesting pre-execution risk gates are absent.
-- Skill proposals accumulate (5 proposed, 0 implemented) creating a capability gap that blocks systemic improvement.
-- Swarm executions consistently stall at low convergence (score 1, converged=false) despite evolution cycles, indicating missing convergence criteria.
-- Latency variance of 8x (8.7s vs 68.1s) for the same model breaks interactive SLAs and requires budget-aware routing.
-- Model provider rate limits (429 errors) and upstream failures cause cascading reliability degradation without automated failover.
 
 ---
 

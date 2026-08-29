@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6143 Fakten** · Stand 2026-08-29 08:13 UTC · aktualisiert bei jedem Herzschlag
+**6148 Fakten** · Stand 2026-08-29 08:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2751
+- **dream:** 2756
 - **swarm_artifact:** 1507
 - **last_swarm_critique:** 597
 - **anti_pattern:** 479
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829083345:5:7e88be`
+*29.08. 08:33 UTC · Quelle: dream*
+
+Three completed market analyses and 35 skill proposals remain unused because no pipeline converts analysis to action or validates skills.
+
+### `dream:20260829083345:4:454b1e`
+*29.08. 08:33 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode with max_tasks=3 and max_iterations=1, preventing iterative recovery from failures.
+
+### `dream:20260829083345:3:fde2ca`
+*29.08. 08:33 UTC · Quelle: dream*
+
+Swarm execution tool fails to resolve real data paths: it ignores sys.argv[1] and ZOETRON_DATA, using relative paths that touch nothing.
+
+### `dream:20260829083345:2:86c59b`
+*29.08. 08:33 UTC · Quelle: dream*
+
+Backup model nvidia/nemotron-3-ultra succeeds but with extreme latency variance (11-80s) and occasional 502 upstream errors.
+
+### `dream:20260829083345:1:7623c2`
+*29.08. 08:33 UTC · Quelle: dream*
+
+Primary model z-ai/glm-5.2:free fails 100% of the time with 429 rate limits, making it unusable as a default.
 
 ### `tool:alte-schwarm-ergebnisse-aufräumen`
 *29.08. 08:12 UTC · Quelle: hands*

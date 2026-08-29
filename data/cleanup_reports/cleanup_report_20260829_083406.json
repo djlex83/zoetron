@@ -1,0 +1,34 @@
+{
+  "scan_time": "2026-08-29T08:34:06.628583",
+  "total_files": 437,
+  "total_size_bytes": 8437894,
+  "total_size_mb": 8.05,
+  "by_action": {
+    "keep": 375,
+    "delete": 1,
+    "review": 61
+  },
+  "by_category": {
+    "memory": 38,
+    "temp": 1,
+    "unknown": 61,
+    "result": 23,
+    "artifact": 314
+  },
+  "archive_size_mb": 0.0,
+  "delete_size_mb": 0.0,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 2.8,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": []
+}
