@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 03:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 03:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions (file reads) complete reliably in ~0.24 s, establishing them as low-latency primitives for tool-use loops.
+- The swarm architecture with three parallel builders converged in a single cycle, suggesting builder parallelism accelerates code-task convergence.
+- Effort estimation is severely miscalibrated (predicted 3 cycles vs. actual 8), indicating a need for category-specific correction factors.
+- The nvidia/nemotron-3-ultra model succeeds consistently but exhibits high latency variance (11.7–71 s), requiring adaptive timeout strategies.
+- The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limiting errors, making it unreliable for production use.
 - Model health scoring must be real-time and per-provider; static model selection fails under load variability.
 - Stale work (market analysis) blocks downstream decisions even when reflexes can complete sub-tasks.
 - Skill proposals accumulate without a deployment pipeline; ideas don't become capabilities without validation gates.
@@ -51,11 +56,6 @@
 - Simulation-driven revision (5 risks → 5 revisions) successfully hardened the artifact before execution, evidenced by TOR green on first run.
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (6.8–79.4s), requiring timeout and retry policies tuned to the 95th
 - The z-ai/glm-5.2:free model is consistently unavailable due to rate limiting (429 errors), making it unreliable as a primary or fallback provider.
-- Reflex-mode actions complete quickly (0.19s, exit 0) and reliably compared to model-driven actions, suggesting known-good reflexes should be preferred
-- Stale tasks like the unused market analysis persist across dream cycles without being archived or acted on, so pruning (facts_pruned: 0, events_pruned
-- Skill proposals accumulate without being learned (drive_goal 'gap' signal), indicating the system generates more proposals than it can absorb - propos
-- A single successful model call (poolside/laguna-s-2.1:free, 6.7s) after multiple failures shows that fallback rotation works, but it must be automatic
-- Free-tier models on Openrouter fail frequently with 429 rate limits, and z-ai/glm-5.2:free is the most persistent offender - repeated retries against 
 
 ---
 

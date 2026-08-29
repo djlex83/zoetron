@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5960 Fakten** · Stand 2026-08-29 03:29 UTC · aktualisiert bei jedem Herzschlag
+**5965 Fakten** · Stand 2026-08-29 03:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2666
+- **dream:** 2671
 - **swarm_artifact:** 1453
 - **last_swarm_critique:** 588
 - **anti_pattern:** 467
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829034644:5:4173c6`
+*29.08. 03:46 UTC · Quelle: dream*
+
+Hand actions (file reads) complete reliably in ~0.24 s, establishing them as low-latency primitives for tool-use loops.
+
+### `dream:20260829034644:4:533a60`
+*29.08. 03:46 UTC · Quelle: dream*
+
+The swarm architecture with three parallel builders converged in a single cycle, suggesting builder parallelism accelerates code-task convergence.
+
+### `dream:20260829034644:3:afcbff`
+*29.08. 03:46 UTC · Quelle: dream*
+
+Effort estimation is severely miscalibrated (predicted 3 cycles vs. actual 8), indicating a need for category-specific correction factors.
+
+### `dream:20260829034644:2:3f24c6`
+*29.08. 03:46 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra model succeeds consistently but exhibits high latency variance (11.7–71 s), requiring adaptive timeout strategies.
+
+### `dream:20260829034644:1:81339c`
+*29.08. 03:46 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limiting errors, making it unreliable for production use.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Letzte Kritik und Ziel n:2`
 *29.08. 03:28 UTC · Quelle: evolution*

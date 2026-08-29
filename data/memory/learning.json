@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-29 03:29:15",
+ "stand": "2026-08-29 03:46:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 29,
-   "erfolge": 29,
+   "laeufe": 30,
+   "erfolge": 30,
    "quote": 1.0
   },
   {
@@ -103,12 +103,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "mehr-evolution-starten.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
