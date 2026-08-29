@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6757 Fakten** · Stand 2026-08-29 23:34 UTC · aktualisiert bei jedem Herzschlag
+**6762 Fakten** · Stand 2026-08-29 23:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3176
+- **dream:** 3181
 - **swarm_artifact:** 1607
 - **last_swarm_critique:** 615
 - **anti_pattern:** 503
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829233754:5:fc954c`
+*29.08. 23:37 UTC · Quelle: dream*
+
+Evolution loop triggered after 6/10 score indicates a hard threshold for automatic improvement cycles.
+
+### `dream:20260829233754:4:a34b82`
+*29.08. 23:37 UTC · Quelle: dream*
+
+A 160-line Python artifact executed cleanly (exit 0, 0.29s), proving generated code can be production-ready without manual fixes.
+
+### `dream:20260829233754:3:43946b`
+*29.08. 23:37 UTC · Quelle: dream*
+
+Calibration predicted 6/10 and actual scored 6/10, confirming the estimator is accurate for this task class.
+
+### `dream:20260829233754:2:fc0b1b`
+*29.08. 23:37 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra shows high latency variance (5–50s) despite success, requiring timeout budgets and fallback triggers.
+
+### `dream:20260829233754:1:2f9795`
+*29.08. 23:37 UTC · Quelle: dream*
+
+Free-tier models like z-ai/glm-5.2:free consistently hit 429 rate limits under load, making them unreliable for automated pipelines.
 
 ### `dream:20260829233251:5:383b7e`
 *29.08. 23:32 UTC · Quelle: dream*

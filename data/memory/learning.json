@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-29 23:33:49",
+ "stand": "2026-08-29 23:38:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 19,
-   "erfolge": 19,
+   "laeufe": 20,
+   "erfolge": 20,
    "quote": 1.0
   },
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-endlich-umsetzen.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -55,6 +49,12 @@
    "laeufe": 4,
    "erfolge": 1,
    "quote": 0.25
+  },
+  {
+   "tool": "marktanalyse-endlich-abschließen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
