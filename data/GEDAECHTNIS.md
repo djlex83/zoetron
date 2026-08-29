@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6596 Fakten** · Stand 2026-08-29 19:41 UTC · aktualisiert bei jedem Herzschlag
+**6601 Fakten** · Stand 2026-08-29 19:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3061
+- **dream:** 3066
 - **swarm_artifact:** 1583
 - **last_swarm_critique:** 611
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829194650:5:8f33b6`
+*29.08. 19:46 UTC · Quelle: dream*
+
+When a reflex fails, the system correctly escalates to swarm_started, but the fallback chain lacks a defined recovery path back to the original goal.
+
+### `dream:20260829194650:4:8fca3f`
+*29.08. 19:46 UTC · Quelle: dream*
+
+Hand actions can hard-timeout (20s) with zero bytes read and no retry or graceful degradation, blocking downstream reflexes.
+
+### `dream:20260829194650:3:a92319`
+*29.08. 19:46 UTC · Quelle: dream*
+
+Stale goals like 'Marktanalyse' reappear across cycles without triggering decisive action, creating a pattern of intention without execution.
+
+### `dream:20260829194650:2:4db369`
+*29.08. 19:46 UTC · Quelle: dream*
+
+Self-diagnosis (selbstdiagnose) reports zero organ failures while the system clearly suffers from external API rate limits and timeouts, revealing a blind spot in health checking.
+
+### `dream:20260829194650:1:912ad1`
+*29.08. 19:46 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails repeatedly with 429 errors across multiple attempts, indicating a persistent single-point-of-failure with no automatic fallback.
 
 ### `dream:20260829194040:5:92b47c`
 *29.08. 19:40 UTC · Quelle: dream*
