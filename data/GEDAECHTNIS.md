@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6153 Fakten** · Stand 2026-08-29 08:39 UTC · aktualisiert bei jedem Herzschlag
+**6170 Fakten** · Stand 2026-08-29 08:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2761
-- **swarm_artifact:** 1507
-- **last_swarm_critique:** 597
-- **anti_pattern:** 479
-- **last_swarm_goal:** 346
-- **strategy:** 260
-- **hand_result:** 74
+- **dream:** 2766
+- **swarm_artifact:** 1513
+- **last_swarm_critique:** 598
+- **anti_pattern:** 481
+- **last_swarm_goal:** 347
+- **strategy:** 261
+- **hand_result:** 75
 - **tool:** 60
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen konsequent :2`
+*29.08. 08:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Simulation-to-Action DSL - Create a minimal domain-specific language (DSL) where simulations are written in a simple format (e.g., YAML/JSON), parsed by a small interpreter, and converted into action objects. This separates s
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen konsequent :1`
+*29.08. 08:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Template-Based Action Generation - Use string templates or dictionaries to define how each simulation maps to concrete actions. This avoids complex logic chains and reduces risk of syntax errors. Simulations are matched to pr
+
+### `last_swarm_critique`
+*29.08. 08:46 UTC · Quelle: critic*
+
+score=1; issues=Sandbox verdict: LAEUFT NICHT - artifact fails with syntax error 'total_simulations = len(simulation' (incomplete line); Code cannot execute due to syntax error, violating the requirement for a runnable Python block; Goal 'Simulationen konseque
+
+### `last_swarm_goal`
+*29.08. 08:43 UTC · Quelle: system*
+
+Simulationen konsequent in Handlungen umsetzen
+
+### `dream:20260829084247:5:2cacfa`
+*29.08. 08:42 UTC · Quelle: dream*
+
+Self-diagnosis and pruning reported zero issues while swarm failed, indicating monitoring blind spots in task-level outcome tracking.
+
+### `dream:20260829084247:4:69da34`
+*29.08. 08:42 UTC · Quelle: dream*
+
+Fast local model (poolside/laguna-s-2.1: 4.5s) outperformed cloud models on latency and reliability, validating local-first fallback strategy.
+
+### `dream:20260829084247:3:f9c7e4`
+*29.08. 08:42 UTC · Quelle: dream*
+
+Swarm role imbalance (3 builders, 1 critic) likely caused insufficient critique pressure to drive convergence past score 6.
+
+### `dream:20260829084247:2:f52681`
+*29.08. 08:42 UTC · Quelle: dream*
+
+Evolution produced a high-scoring variant (8.7) but swarm execution failed to converge, revealing a gap between static evaluation and dynamic orchestration.
+
+### `dream:20260829084247:1:5dce5c`
+*29.08. 08:42 UTC · Quelle: dream*
+
+Rate limiting (429) across multiple cloud models indicates systemic dependency on unreliable free-tier endpoints rather than isolated failures.
 
 ### `dream:20260829083813:5:1de8d3`
 *29.08. 08:38 UTC · Quelle: dream*

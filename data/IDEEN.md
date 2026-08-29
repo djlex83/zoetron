@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 08:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 08:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning reported zero issues while swarm failed, indicating monitoring blind spots in task-level outcome tracking.
+- Fast local model (poolside/laguna-s-2.1: 4.5s) outperformed cloud models on latency and reliability, validating local-first fallback strategy.
+- Swarm role imbalance (3 builders, 1 critic) likely caused insufficient critique pressure to drive convergence past score 6.
+- Evolution produced a high-scoring variant (8.7) but swarm execution failed to converge, revealing a gap between static evaluation and dynamic orchestr
+- Rate limiting (429) across multiple cloud models indicates systemic dependency on unreliable free-tier endpoints rather than isolated failures.
 - Swarm orchestration was explicitly flagged by the critic as a weakness, yet the evolution run produced a winner on the first variant, indicating the m
 - The fastest successful model (inclusionai/ling-3.0-flash-fin:free at 9.9s) is an order of magnitude quicker than alternatives, suggesting latency-base
 - Calibration predicted a score of 2 but actual was 6, revealing a systematic underestimation bias that will misguide resource allocation if uncorrected
@@ -51,11 +56,6 @@
 - Swarm execution tool fails to resolve real data paths: it ignores sys.argv[1] and ZOETRON_DATA, using relative paths that touch nothing.
 - Backup model nvidia/nemotron-3-ultra succeeds but with extreme latency variance (11-80s) and occasional 502 upstream errors.
 - Primary model z-ai/glm-5.2:free fails 100% of the time with 429 rate limits, making it unusable as a default.
-- Lightweight local models (e.g., poolside/laguna-s-2.1) provide fast fallback when cloud models are rate-limited or overloaded.
-- Swarm task execution fails when initial path validation is skipped, leading to zero-byte or empty file processing.
-- Model overload errors (502) from upstream providers indicate need for automatic retry logic with exponential backoff.
-- Path resolution failures occur when sys.argv or ZOETRON_DATA are not properly validated before file operations.
-- Rate limiting (429 errors) from OpenRouter consistently blocks model access, requiring fallback strategies or local model prioritization.
 
 ---
 
