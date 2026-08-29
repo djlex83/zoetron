@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 15:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 15:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
@@ -31,16 +31,21 @@
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of ±1 cycle (predicted 5 vs actual 6) shows the planner's effort estimator is well-calibrated for this task class.
+- Task completion with a working 103-line Python artifact validates the generate-then-verify loop for market-analysis goals.
+- Hand-action failures are transient; immediate retry succeeds in <0.2s, pointing to resource contention rather than logic errors.
+- The inclusionai/ling-3.0-flash-fin:free model succeeds consistently but shows high latency variance (6.5–10.6s), indicating queue-dependent performanc
+- Free-tier models on OpenRouter (z-ai/glm-5.2, google/gemma variants) consistently hit 429 rate limits, making them unreliable for production workloads
 - Skill proposals accumulate without implementation; a dedicated proposal-to-skill pipeline with acceptance criteria is needed.
 - Simulation recommends revisions but zero are applied, indicating a broken apply loop; every simulation verdict must trigger an automatic patch-apply-v
 - Under high stress (1.0) with conserve metabolism, the system cannot execute multi-step plans; skills must be atomic and idempotent.
@@ -51,11 +56,6 @@
 - High latency variance (8s vs 187s) among working models makes latency-aware routing essential for meeting iteration budgets under stress.
 - The system lacks automatic fallback routing when primary models hit rate limits, causing cascading failures instead of graceful degradation.
 - Rate limiting (HTTP 429) from OpenRouter is the primary failure mode across multiple model providers, indicating a systemic dependency bottleneck rath
-- Self-diagnosis reports zero organ errors while model failures and unimplemented skills accumulate, suggesting monitoring blind spots in external depen
-- Drive goals for model reliability, market analysis execution, and skill activation persist across cycles without convergence, indicating missing feedb
-- Successful 200-status responses from fallback models (Nemotron) occasionally contain upstream error payloads (502-in-200) that propagate as valid outp
-- Multiple skill proposals address identical failure modes (model routing, stress scheduling, response validation) but remain unimplemented, revealing a
-- Free-tier model endpoints (z-ai/glm-5.2) consistently fail with 429 rate limits, causing cascading retries and latency spikes up to 38s on fallback mo
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6396 Fakten** · Stand 2026-08-29 15:18 UTC · aktualisiert bei jedem Herzschlag
+**6401 Fakten** · Stand 2026-08-29 15:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2906
+- **dream:** 2911
 - **swarm_artifact:** 1557
 - **last_swarm_critique:** 606
 - **anti_pattern:** 493
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829152359:5:6cdeff`
+*29.08. 15:23 UTC · Quelle: dream*
+
+Calibration error of ±1 cycle (predicted 5 vs actual 6) shows the planner's effort estimator is well-calibrated for this task class.
+
+### `dream:20260829152359:4:df755a`
+*29.08. 15:23 UTC · Quelle: dream*
+
+Task completion with a working 103-line Python artifact validates the generate-then-verify loop for market-analysis goals.
+
+### `dream:20260829152359:3:2f11c1`
+*29.08. 15:23 UTC · Quelle: dream*
+
+Hand-action failures are transient; immediate retry succeeds in <0.2s, pointing to resource contention rather than logic errors.
+
+### `dream:20260829152359:2:7ef371`
+*29.08. 15:23 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model succeeds consistently but shows high latency variance (6.5–10.6s), indicating queue-dependent performance.
+
+### `dream:20260829152359:1:f69e71`
+*29.08. 15:23 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter (z-ai/glm-5.2, google/gemma variants) consistently hit 429 rate limits, making them unreliable for production workloads.
 
 ### `dream:20260829151720:5:1a6f15`
 *29.08. 15:17 UTC · Quelle: dream*

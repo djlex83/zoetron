@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 15:17:42",
+ "stand": "2026-08-29 15:24:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -163,6 +163,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.649,
@@ -174,8 +180,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 36,
-   "schnitt": 5.0
+   "n": 35,
+   "schnitt": 5.11
   },
   "bau": {
    "n": 3,
