@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6227 Fakten** · Stand 2026-08-29 10:37 UTC · aktualisiert bei jedem Herzschlag
+**6232 Fakten** · Stand 2026-08-29 10:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2811
+- **dream:** 2816
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829104542:5:8ea22c`
+*29.08. 10:45 UTC · Quelle: dream*
+
+Simulation-revision loops and artifact validation pipelines are critical for converting theoretical proposals into verified, reusable skills.
+
+### `dream:20260829104542:4:907df6`
+*29.08. 10:45 UTC · Quelle: dream*
+
+The system's failure rate is nearly double its success rate, driven primarily by model reliability issues rather than task complexity.
+
+### `dream:20260829104542:3:64113b`
+*29.08. 10:45 UTC · Quelle: dream*
+
+Stale market analyses and unused skill proposals indicate a systemic gap between completion and operationalization of artifacts.
+
+### `dream:20260829104542:2:728e6a`
+*29.08. 10:45 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b:free consistently succeeds with acceptable latency (8-25s), making it the reliable default model.
+
+### `dream:20260829104542:1:6be3ca`
+*29.08. 10:45 UTC · Quelle: dream*
+
+Rate limiting (429 errors) on z-ai/glm-5.2:free is a recurring failure mode that must be handled with automatic fallback rather than retry.
 
 ### `dream:20260829103540:5:b5e394`
 *29.08. 10:35 UTC · Quelle: dream*

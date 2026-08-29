@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-revision loops and artifact validation pipelines are critical for converting theoretical proposals into verified, reusable skills.
+- The system's failure rate is nearly double its success rate, driven primarily by model reliability issues rather than task complexity.
+- Stale market analyses and unused skill proposals indicate a systemic gap between completion and operationalization of artifacts.
+- nvidia/nemotron-3-ultra-550b:free consistently succeeds with acceptable latency (8-25s), making it the reliable default model.
+- Rate limiting (429 errors) on z-ai/glm-5.2:free is a recurring failure mode that must be handled with automatic fallback rather than retry.
 - Analysis-to-action gaps exist where market analysis data remains stale and unexecuted, indicating a breakdown in translating insights into goals.
 - Revision effectiveness tracking is needed to distinguish impactful simulation changes from noise that degrades performance.
 - Swarm convergence should be measured by sustained score improvement across cycles, not arbitrary iteration counts, to avoid premature termination.
@@ -51,11 +56,6 @@
 - Model confidence becomes miscalibrated when predicted outcomes diverge from actual results without automatic correction.
 - Simulation scores do not predict execution success; hand_action verification must gate goal completion.
 - Rate limiting (429) and upstream errors (502) are the dominant failure modes across all free-tier models, requiring systematic fallback and backoff st
-- Pruning runs remove zero facts/events despite ongoing knowledge graph repairs, suggesting pruning thresholds are misaligned with actual churn.
-- System self-diagnosis reports zero organ errors while external API failure rate exceeds 50%, revealing a critical observability blind spot.
-- Simulation-revision-swarm loops improve solutions (evolved=true) but consistently fail to converge within default cycle limits (score 6, converged=fal
-- Model latency varies by 10x for the same model (nemotron: 75.7s vs 7.0s), indicating cold-start or load variability that breaks latency budgets.
-- Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, causing cascading fallback latency spikes.
 
 ---
 
