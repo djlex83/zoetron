@@ -1,17 +1,17 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6601 Fakten** · Stand 2026-08-29 19:50 UTC · aktualisiert bei jedem Herzschlag
+**6619 Fakten** · Stand 2026-08-29 19:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3066
-- **swarm_artifact:** 1583
-- **last_swarm_critique:** 611
-- **anti_pattern:** 497
-- **last_swarm_goal:** 360
-- **strategy:** 269
+- **dream:** 3071
+- **swarm_artifact:** 1589
+- **last_swarm_critique:** 612
+- **anti_pattern:** 499
+- **last_swarm_goal:** 361
+- **strategy:** 270
 - **hand_result:** 78
-- **tool:** 68
+- **tool:** 69
 - **aktuell_fussball_messlatte:** 33
-- **aktuell_organfehler:** 21
+- **aktuell_organfehler:** 22
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,61 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:offene-marktanalyse-arbeiten-endlich-abs`
+*29.08. 19:59 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Offene Marktanalyse-Arbeiten endlich abschließen'. Datei: data/tools/offene-marktanalyse-arbeiten-endlich-abs.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Offene Marktanalyse-Arbe:2`
+*29.08. 19:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Event-Sourced Pipeline with Idempotent Steps - Redesign the workflow as an event-sourced pipeline: each analysis step emits an event (FactFetched, TasksListed, GraphQueried) stored in an append-only log. A single orchestrator
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Offene Marktanalyse-Arbe:1`
+*29.08. 19:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Configuration-Driven Adapter Layer - Define a YAML/JSON schema mapping generic operations (e.g., 'fetch_facts', 'get_tasks', 'run_query') to concrete API calls per backend. Build an AdapterFactory that reads config at startup
+
+### `last_swarm_critique`
+*29.08. 19:57 UTC · Quelle: critic*
+
+score=6; issues=Drei separate Skripte mit inkonsistenten API-Annahmen (memory.search vs memory.list_facts, drive.list_tasks vs drive.list_goals, graph.query vs graph.list_nodes) – keine einheitliche Abstraktionsschicht; data_dir kann leerer String sein; os.pat
+
+### `last_swarm_goal`
+*29.08. 19:54 UTC · Quelle: system*
+
+Offene Marktanalyse-Arbeiten endlich abschließen
+
+### `dream:20260829195411:5:1044b6`
+*29.08. 19:54 UTC · Quelle: dream*
+
+Simulation approved 'go' despite 3 risks and 3 revisions, showing risk tolerance favors forward progress over reliability under pressure.
+
+### `dream:20260829195411:4:83109b`
+*29.08. 19:54 UTC · Quelle: dream*
+
+Reflex tools fail silently (ok:false) without diagnostic context, undermining autonomous recovery; health-check endpoints and structured error payloads are missing.
+
+### `dream:20260829195411:3:553490`
+*29.08. 19:54 UTC · Quelle: dream*
+
+Hand-action timeouts (20s, 0 bytes read) reveal unbounded external dependencies that need circuit-breaker wrappers to prevent stall propagation.
+
+### `dream:20260829195411:2:41cb17`
+*29.08. 19:54 UTC · Quelle: dream*
+
+System-wide stress level 1.0 correlates with simultaneous failures across model inference, tool execution, and I/O operations, indicating cascading resource exhaustion.
+
+### `dream:20260829195411:1:982b0a`
+*29.08. 19:54 UTC · Quelle: dream*
+
+Free-tier model endpoints fail predominantly due to rate limiting (429) and upstream overload (502), requiring explicit fallback chains with rate-limit awareness.
+
+### `aktuell_organfehler`
+*29.08. 19:52 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-29 19:49:50 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260829194650:5:8f33b6`
 *29.08. 19:46 UTC · Quelle: dream*

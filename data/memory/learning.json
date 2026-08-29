@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 19:50:01",
+ "stand": "2026-08-29 19:59:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,22 +33,16 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 5,
-   "erfolge": 1,
-   "quote": 0.2
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 6,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 5,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -61,6 +55,12 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 4,
+   "erfolge": 1,
+   "quote": 0.25
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
@@ -195,17 +195,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.681,
- "simulationen_angewandt": 30,
+ "haende_quote": 0.697,
+ "simulationen_angewandt": 29,
  "swarm_scores": {
   "n": 38,
   "best": 9.0,
-  "schnitt": 5.79
+  "schnitt": 5.92
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 35,
-   "schnitt": 5.54
+   "schnitt": 5.69
   },
   "bau": {
    "n": 3,
