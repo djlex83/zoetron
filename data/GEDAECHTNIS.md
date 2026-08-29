@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6648 Fakten** · Stand 2026-08-29 20:57 UTC · aktualisiert bei jedem Herzschlag
+**6653 Fakten** · Stand 2026-08-29 21:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3091
+- **dream:** 3096
 - **swarm_artifact:** 1595
 - **last_swarm_critique:** 613
 - **anti_pattern:** 499
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829210724:5:d2205b`
+*29.08. 21:07 UTC · Quelle: dream*
+
+Drive goals explicitly target reducing model errors and finishing skills, yet the system lacks automatic mechanisms to translate these goals into deployed capabilities.
+
+### `dream:20260829210724:4:e561ca`
+*29.08. 21:07 UTC · Quelle: dream*
+
+Model latency varied wildly (8s to 16.2s) with no budget enforcement, allowing high-latency responses to degrade performance silently.
+
+### `dream:20260829210724:3:3a0e49`
+*29.08. 21:07 UTC · Quelle: dream*
+
+Five skill proposals were generated reactively to model failures but none were implemented, revealing a gap between proposal generation and execution closure.
+
+### `dream:20260829210724:2:7b66f4`
+*29.08. 21:07 UTC · Quelle: dream*
+
+The swarm execution for market analysis did not converge after two cycles with a score of 6, indicating insufficient critic feedback or planner-builder alignment.
+
+### `dream:20260829210724:1:64b370`
+*29.08. 21:07 UTC · Quelle: dream*
+
+Four of five models failed consecutively with 429/502 errors, leaving only inclusionai/ling-3.0-flash-fin:free as a single point of success and creating systemic fragility.
 
 ### `tool:vorgeschlagene-fähigkeiten-prüfen-und-ba`
 *29.08. 20:56 UTC · Quelle: hands*

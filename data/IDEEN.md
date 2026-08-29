@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 20:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals explicitly target reducing model errors and finishing skills, yet the system lacks automatic mechanisms to translate these goals into depl
+- Model latency varied wildly (8s to 16.2s) with no budget enforcement, allowing high-latency responses to degrade performance silently.
+- Five skill proposals were generated reactively to model failures but none were implemented, revealing a gap between proposal generation and execution 
+- The swarm execution for market analysis did not converge after two cycles with a score of 6, indicating insufficient critic feedback or planner-builde
+- Four of five models failed consecutively with 429/502 errors, leaving only inclusionai/ling-3.0-flash-fin:free as a single point of success and creati
 - Error-type discrimination (429 vs 502 vs 200-empty) is essential because each demands a distinct retry/backoff/fallback policy.
 - inclusionai/ling-3.0-flash-fin:free demonstrates consistent low-latency success, making it the only viable default for free-tier routing.
 - Nvidia-hosted models exhibit upstream 502 overload errors after initial success, indicating provider-side capacity saturation.
@@ -51,11 +56,6 @@
 - The system enters conserve mode only after stress reaches 1.0, meaning load reduction is reactive rather than proactive.
 - External I/O operations (API calls, file access, drive reads) lack circuit-breaking, so individual failures propagate instead of degrading gracefully.
 - The z-ai/glm-5.2:free endpoint is a persistent single point of failure — repeated 429 errors without automatic failover cascade into task delays and s
-- Reflex-mode execution converges reliably even when the model-selection layer fails repeatedly, demonstrating that the reflex-to-action pipeline is fun
-- The system correctly diagnoses root causes and generates targeted skill proposals, but the persistent gap between proposal and implementation is the l
-- Drive timeouts of 180s coincide with external API failures, meaning internal deadlines must adapt to external dependency reliability rather than runni
-- A single working model (ling-3.0-flash-fin) sufficed to complete the task despite four consecutive failures, proving that a fallback chain prevents to
-- 429 rate-limit errors are the dominant failure mode across providers, indicating free-tier API quotas — not model capability — are the binding constra
 
 ---
 
