@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6705 Fakten** · Stand 2026-08-29 22:09 UTC · aktualisiert bei jedem Herzschlag
+**6710 Fakten** · Stand 2026-08-29 22:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3136
+- **dream:** 3141
 - **swarm_artifact:** 1601
 - **last_swarm_critique:** 614
 - **anti_pattern:** 501
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829223744:5:cc4a7f`
+*29.08. 22:37 UTC · Quelle: dream*
+
+Self-diagnosis and pruning reported zero issues despite repeated model failures, showing that current health checks do not capture external API degradation as an organ fault.
+
+### `dream:20260829223744:4:99e563`
+*29.08. 22:37 UTC · Quelle: dream*
+
+Reflex-driven cleanup of stale market data completed successfully in 0.39s, proving that targeted, single-purpose scripts can resolve 'stale data' drive goals without full planning cycles.
+
+### `dream:20260829223744:3:c26a41`
+*29.08. 22:37 UTC · Quelle: dream*
+
+The system generated five relevant skill proposals during the failure burst but none were instantiated, revealing a gap between proposal generation and skill deployment.
+
+### `dream:20260829223744:2:51eaae`
+*29.08. 22:37 UTC · Quelle: dream*
+
+A single model (inclusionai/ling-3.0-flash-fin:free) succeeded repeatedly while three others failed, indicating that historical success rate is a strong predictor of near-term availability.
+
+### `dream:20260829223744:1:977738`
+*29.08. 22:37 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary workers without a fallback strategy.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Doppelte Arbeit vermeide:1`
 *29.08. 22:07 UTC · Quelle: evolution*

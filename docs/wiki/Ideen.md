@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 22:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 22:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt nutzbar machen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning reported zero issues despite repeated model failures, showing that current health checks do not capture external API degrad
+- Reflex-driven cleanup of stale market data completed successfully in 0.39s, proving that targeted, single-purpose scripts can resolve 'stale data' dri
+- The system generated five relevant skill proposals during the failure burst but none were instantiated, revealing a gap between proposal generation an
+- A single model (inclusionai/ling-3.0-flash-fin:free) succeeded repeatedly while three others failed, indicating that historical success rate is a stro
+- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary workers without a fallback strategy.
 - Prompt volume directly correlates with 429 exposure; compression or batching reduces failure rate.
 - No proactive load shedding or model rotation occurs before rate limits are hit.
 - Error handling lacks classification: 429, 5xx, and empty-success responses receive identical retry logic.
@@ -51,11 +56,6 @@
 - Intermittent model availability means no single model can be trusted as a primary — a routing and fallback strategy is essential for continuous operat
 - The system's internal health (selbstdiagnose) remains clean while external dependencies fail, meaning reliability engineering must focus on I/O bounda
 - External API failures (429 rate limits, 502 upstream overloads) are systemic across all free-tier models, not isolated incidents, requiring architectu
-- Having at least one reliable alternative model that completes tasks when the primary fails demonstrates that redundancy is essential for task resilien
-- Unfinished analytical work decays into waste when there is no mechanism to convert it into concrete next steps.
-- Reflex-driven consolidation successfully converts experience into action, proving that autonomous replay mechanisms work for skill internalization.
-- Proposed skills accumulate as dead weight without a conversion gate that requires implementation steps, validation criteria, and ownership.
-- External API rate limits (429) are a recurring failure mode that blocks the task pipeline when no fallback model is available.
 
 ---
 

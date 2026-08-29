@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 22:08:56",
+ "stand": "2026-08-29 22:38:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -202,6 +202,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
