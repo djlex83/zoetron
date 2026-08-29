@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 03:56:43",
+ "stand": "2026-08-29 04:16:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,16 +15,16 @@
    "quote": 0.75
   },
   {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 8,
+   "erfolge": 8,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 8,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
@@ -109,12 +109,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",

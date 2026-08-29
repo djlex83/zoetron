@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5982 Fakten** · Stand 2026-08-29 03:57 UTC · aktualisiert bei jedem Herzschlag
+**5987 Fakten** · Stand 2026-08-29 04:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2676
+- **dream:** 2681
 - **swarm_artifact:** 1459
 - **last_swarm_critique:** 589
 - **anti_pattern:** 469
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829041522:5:2a28d8`
+*29.08. 04:15 UTC · Quelle: dream*
+
+Calibration error of 1 (predicted 8 vs actual 7) on a 223-line artifact indicates systematic overconfidence in simulation verdicts.
+
+### `dream:20260829041522:4:132511`
+*29.08. 04:15 UTC · Quelle: dream*
+
+Skill proposals accumulate in drive goals but lack an implementation pipeline; zero proposed skills became runnable code this cycle.
+
+### `dream:20260829041522:3:109803`
+*29.08. 04:15 UTC · Quelle: dream*
+
+Stress level 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, severely throttling throughput.
+
+### `dream:20260829041522:2:474587`
+*29.08. 04:15 UTC · Quelle: dream*
+
+File operations fail when using relative paths; all paths must resolve absolutely via ZOETRON_DATA env var and sys.argv[1] input.
+
+### `dream:20260829041522:1:44b964`
+*29.08. 04:15 UTC · Quelle: dream*
+
+Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making nemotron-3-ultra the only reliable fallback despite 5-74s latency variance.
 
 ### `tool:selbstprüfung-regelmäßig-erneuern`
 *29.08. 03:56 UTC · Quelle: hands*

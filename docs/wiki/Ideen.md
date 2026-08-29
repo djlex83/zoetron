@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 03:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 04:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
-- Mehr Simulationen zum Lernen nutzen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 (predicted 8 vs actual 7) on a 223-line artifact indicates systematic overconfidence in simulation verdicts.
+- Skill proposals accumulate in drive goals but lack an implementation pipeline; zero proposed skills became runnable code this cycle.
+- Stress level 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, severely throttling throughput.
+- File operations fail when using relative paths; all paths must resolve absolutely via ZOETRON_DATA env var and sys.argv[1] input.
+- Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making nemotron-3-ultra the only reliable fallback despite 5-74s latenc
 - Five skill proposals exist but none are deployed; the gap between proposal and activation is the primary bottleneck to capability growth.
 - System entered conserve mode (stress=1.0) with max_tasks=3, yet drive goals remain stale—resource pressure is starving strategic work.
 - Three simulation-identified risks automatically produced three revisions, proving the simulation-to-revision pipeline works end-to-end.
@@ -51,11 +56,6 @@
 - Effort estimation is severely miscalibrated (predicted 3 cycles vs. actual 8), indicating a need for category-specific correction factors.
 - The nvidia/nemotron-3-ultra model succeeds consistently but exhibits high latency variance (11.7–71 s), requiring adaptive timeout strategies.
 - The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limiting errors, making it unreliable for production use.
-- Model health scoring must be real-time and per-provider; static model selection fails under load variability.
-- Stale work (market analysis) blocks downstream decisions even when reflexes can complete sub-tasks.
-- Skill proposals accumulate without a deployment pipeline; ideas don't become capabilities without validation gates.
-- Reflex-driven execution converges faster than deliberative planning for well-defined operational goals like model-error reduction.
-- Provider-specific rate limits (429 errors on z-ai/glm-5.2:free) require automatic fallback mechanisms, not just retry logic.
 
 ---
 
