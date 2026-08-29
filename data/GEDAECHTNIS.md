@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6170 Fakten** · Stand 2026-08-29 08:48 UTC · aktualisiert bei jedem Herzschlag
+**6187 Fakten** · Stand 2026-08-29 09:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2766
-- **swarm_artifact:** 1513
-- **last_swarm_critique:** 598
-- **anti_pattern:** 481
-- **last_swarm_goal:** 347
-- **strategy:** 261
+- **dream:** 2771
+- **swarm_artifact:** 1519
+- **last_swarm_critique:** 599
+- **anti_pattern:** 483
+- **last_swarm_goal:** 348
+- **strategy:** 262
 - **hand_result:** 75
-- **tool:** 60
+- **tool:** 61
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:wissensgraph-verknüpfungen-reparieren`
+*29.08. 09:31 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Wissensgraph-Verknüpfungen reparieren'. Datei: data/tools/wissensgraph-verknüpfungen-reparieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Wissensgraph-Verknüpfung:2`
+*29.08. 09:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Temporal consistency verification - Model the knowledge graph evolution as a time-series of topological invariants. Instead of validating single edges, validate entire edit sequences by checking that graph spectra (eigenvalue
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Wissensgraph-Verknüpfung:1`
+*29.08. 09:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Probabilistic constraint propagation - Replace the binary plausibility threshold with a soft Bayesian update model. Use belief propagation over the graph edges to compute posterior plausibility scores, then validate_new_edges
+
+### `last_swarm_critique`
+*29.08. 09:26 UTC · Quelle: critic*
+
+score=6; issues=Die `nachbarn`-Mock-Implementierung hat einen BFS-Bug: `visited.update(next_frontier)` wird aufgerufen, bevor `frontier = next_frontier - visited`, wodurch bereits besuchte Knoten erneut in die Frontier aufgenommen werden koennen.; Die `validat
+
+### `last_swarm_goal`
+*29.08. 09:16 UTC · Quelle: system*
+
+Wissensgraph-Verknüpfungen reparieren
+
+### `dream:20260829091511:5:ca51f3`
+*29.08. 09:15 UTC · Quelle: dream*
+
+Drive goals are created from failure signals (model errors, unused analyses) but lack automatic decomposition into executable steps with verification.
+
+### `dream:20260829091511:4:caee1d`
+*29.08. 09:15 UTC · Quelle: dream*
+
+Five skill proposals were generated in one burst but none validated; proposal generation without smoke-testing creates technical debt.
+
+### `dream:20260829091511:3:45524d`
+*29.08. 09:15 UTC · Quelle: dream*
+
+The swarm cleaned up old results but did not converge (score 3, converged=false), suggesting cleanup tasks need explicit acceptance criteria, not just iteration counts.
+
+### `dream:20260829091511:2:bbbe0a`
+*29.08. 09:15 UTC · Quelle: dream*
+
+Model latency varies by 5x+ for the same model (nemotron: 86s vs 15s), indicating queue-depth dependence that single health checks cannot capture.
+
+### `dream:20260829091511:1:2c30b5`
+*29.08. 09:15 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making naive round-robin selection ineffective.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen konsequent :2`
 *29.08. 08:47 UTC · Quelle: evolution*
