@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6634 Fakten** · Stand 2026-08-29 20:46 UTC · aktualisiert bei jedem Herzschlag
+**6648 Fakten** · Stand 2026-08-29 20:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3086
-- **swarm_artifact:** 1589
-- **last_swarm_critique:** 612
+- **dream:** 3091
+- **swarm_artifact:** 1595
+- **last_swarm_critique:** 613
 - **anti_pattern:** 499
-- **last_swarm_goal:** 361
+- **last_swarm_goal:** 362
 - **strategy:** 270
 - **hand_result:** 78
-- **tool:** 69
+- **tool:** 70
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-prüfen-und-ba`
+*29.08. 20:56 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten prüfen und bauen'. Datei: data/tools/vorgeschlagene-fähigkeiten-prüfen-und-ba.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*29.08. 20:56 UTC · Quelle: critic*
+
+score=8; issues=Artifact 1: Schema-Validierung nur minimal (name, description) - keine Prüfung auf Pflichtfelder wie 'category', 'priority', 'dependencies'; Artifact 2: Mock-Modus nutzt deterministischen Hash-Score statt echter Messung - Benchmark-Ergebnisse i
+
+### `last_swarm_goal`
+*29.08. 20:52 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten prüfen und bauen
+
+### `dream:20260829205137:5:97a174`
+*29.08. 20:51 UTC · Quelle: dream*
+
+Error-type discrimination (429 vs 502 vs 200-empty) is essential because each demands a distinct retry/backoff/fallback policy.
+
+### `dream:20260829205137:4:f20ea5`
+*29.08. 20:51 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free demonstrates consistent low-latency success, making it the only viable default for free-tier routing.
+
+### `dream:20260829205137:3:a66f76`
+*29.08. 20:51 UTC · Quelle: dream*
+
+Nvidia-hosted models exhibit upstream 502 overload errors after initial success, indicating provider-side capacity saturation.
+
+### `dream:20260829205137:2:784a04`
+*29.08. 20:51 UTC · Quelle: dream*
+
+Consecutive failures trigger aggressive 30-minute model lockouts, turning transient errors into extended outages.
+
+### `dream:20260829205137:1:04ab72`
+*29.08. 20:51 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate-limiting that makes them unreliable as primary workers.
 
 ### `dream:20260829204458:5:bb2f4f`
 *29.08. 20:44 UTC · Quelle: dream*
