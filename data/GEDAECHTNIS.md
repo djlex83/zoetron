@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6255 Fakten** · Stand 2026-08-29 11:47 UTC · aktualisiert bei jedem Herzschlag
+**6260 Fakten** · Stand 2026-08-29 11:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2831
+- **dream:** 2836
 - **swarm_artifact:** 1521
 - **last_swarm_critique:** 600
 - **anti_pattern:** 485
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829115057:5:9318d1`
+*29.08. 11:50 UTC · Quelle: dream*
+
+Pruning removed zero facts/events despite repeated failures, suggesting the consolidation trigger threshold is too high for acute error patterns.
+
+### `dream:20260829115057:4:899efd`
+*29.08. 11:50 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while the system experiences total LLM unavailability, showing health checks miss external dependency failures.
+
+### `dream:20260829115057:3:864112`
+*29.08. 11:50 UTC · Quelle: dream*
+
+Rate limit errors cascade across all model tiers within minutes, indicating shared quota pools that invalidate fallback chains relying on multiple free models.
+
+### `dream:20260829115057:2:09e569`
+*29.08. 11:50 UTC · Quelle: dream*
+
+The only successful task completion used a deterministic Python script (marktanalyse-endlich-abschließen.py) instead of LLM calls, proving tool-based reflexes bypass rate limits entirely.
+
+### `dream:20260829115057:1:c431a7`
+*29.08. 11:50 UTC · Quelle: dream*
+
+All free models fail simultaneously via OpenRouter 429 errors, revealing the API gateway as a single point of failure rather than model-specific issues.
 
 ### `dream:20260829114532:5:545ac5`
 *29.08. 11:45 UTC · Quelle: dream*

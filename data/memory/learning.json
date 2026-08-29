@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 11:46:27",
+ "stand": "2026-08-29 11:51:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -87,6 +87,12 @@
    "quote": 1.0
   },
   {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "entfernte-erinnerungen-verknüpfen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -115,12 +121,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "träume-in-taten-umsetzen.py",

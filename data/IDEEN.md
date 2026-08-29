@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 11:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 11:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed zero facts/events despite repeated failures, suggesting the consolidation trigger threshold is too high for acute error patterns.
+- Self-diagnosis reports zero organ errors while the system experiences total LLM unavailability, showing health checks miss external dependency failure
+- Rate limit errors cascade across all model tiers within minutes, indicating shared quota pools that invalidate fallback chains relying on multiple fre
+- The only successful task completion used a deterministic Python script (marktanalyse-endlich-abschließen.py) instead of LLM calls, proving tool-based 
+- All free models fail simultaneously via OpenRouter 429 errors, revealing the API gateway as a single point of failure rather than model-specific issue
 - Self-diagnosis and pruning cycles maintain zero organ errors, but only when model failures don't cascade into diagnostic blind spots.
 - Artifact validation pipelines (dry-run → TOR green-light → knowledge graph promotion) prevent corrupted promotions from unverified actions.
 - Working models exhibit 7-10s latency, requiring conserve-mode protocols that skip simulation when budgets drop below 5s.
@@ -51,11 +56,6 @@
 - Stale tasks (e.g., Marktanalyse) accumulate when no convergence gate or time-based escalation forces completion.
 - Skill proposals are generated in large numbers (50+) but almost never executed, revealing a systemic proposal-to-implementation gap.
 - 429 rate-limit errors on a single model (z-ai/glm-5.2:free) are the dominant recurring failure, causing cascading task interruptions every few seconds
-- Token efficiency varies significantly between models, with successful runs using fewer input tokens, suggesting lightweight models may be underutilize
-- Systematic error reduction requires not just identifying failures but implementing resilient routing and recovery mechanisms.
-- Repeated model failures without successful fallback attempts indicate a gap in automated retry and model-switching logic.
-- The model poolside/laguna-s-2.1:free consistently succeeds where others fail, suggesting certain lightweight models are more resilient under load.
-- Rate limiting (429) and upstream overload (502) are recurring failure modes across multiple model endpoints, indicating systemic API reliability issue
 
 ---
 
