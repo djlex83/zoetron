@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 17:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 17:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The planner/builder/critic role distribution (1/3/1) converged the swarm-orchestration task in a single cycle with score 9, demonstrating an effective
+- Calibration was severely off (predicted 3 vs actual 9, error of 6), revealing that initial effort/complexity estimates for swarm-orchestration tasks a
+- The nemotron-3-ultra-550b model is slow (88-173s latency) but produces high-quality results (score 9), making it a reliable but expensive fallback.
+- Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b-a55b) succeeded reliably; all others (glm-5.2, gemma-4 variants) cons
+- 429 rate-limiting from OpenRouter is the dominant systemic failure mode, affecting nearly all models simultaneously and indicating an API-level bottle
 - Skill proposals accumulate but lack a gated lifecycle (sandbox → shadow → registry), risking half-baked integrations that increase surface area for fa
 - System metabolism stress correlates with cascade failures; halving parallelism and doubling timeouts when stress > 0.8 prevents thundering-herd retrie
 - Upstream 502 errors (Nvidia) and 429 errors (Google, Z.ai) share the same root cause: provider-side capacity exhaustion, which is predictable and can 
@@ -51,11 +56,6 @@
 - Model routing succeeds only when a fallback pool exists and retry logic respects Retry-After headers, as shown by the single successful inclusionai ca
 - Skill proposals accumulate but lack a deployment pipeline; the same circuit-breaker and backoff ideas repeat without implementation.
 - Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
-- Circuit-breaker patterns with cooldown tracking prevent wasted calls to known-failing endpoints and reduce cascading failure costs.
-- The reflex mechanism successfully converts proposals into executed actions, validating that the autonomous skill-implementation loop functions end-to-
-- A persistent gap exists between skill proposal generation and actual implementation, indicating the proposal-to-deployment pipeline is broken.
-- No single model endpoint is reliable enough to complete a task uninterrupted; a multi-model fallback chain is essential for task resilience.
-- Rate-limit errors (429) are the dominant failure mode across all providers, requiring proactive throttling instead of reactive retry loops.
 
 ---
 

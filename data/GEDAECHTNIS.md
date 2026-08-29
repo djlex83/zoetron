@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6505 Fakten** · Stand 2026-08-29 17:38 UTC · aktualisiert bei jedem Herzschlag
+**6517 Fakten** · Stand 2026-08-29 17:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2986
-- **swarm_artifact:** 1575
-- **last_swarm_critique:** 609
-- **anti_pattern:** 495
-- **last_swarm_goal:** 358
-- **strategy:** 268
+- **dream:** 2991
+- **swarm_artifact:** 1577
+- **last_swarm_critique:** 610
+- **anti_pattern:** 497
+- **last_swarm_goal:** 359
+- **strategy:** 269
 - **hand_result:** 78
 - **tool:** 67
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Marktanalyse auf de:1`
+*29.08. 17:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 4, 7]): Qualitative Primärforschung & Experten-Delphi-Methode - Statt Sekundärdaten zu aggregieren, wird ein strukturierter Primärforschungsprozess aufgesetzt: (1) Identifikation von 30-50 Key-Informants (Entscheider bei Kund
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Marktanalyse auf de:0`
+*29.08. 17:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 8]): Automatisierte KI-gestützte Datenerhebung & Echtzeit-Analyse - Einsatz von KI-Tools (z. B. GPT-Researcher, Perplexity, spezialisierte Market-Intelligence-Plattformen wie CB Insights, Crunchbase, SimilarWeb) für automa
+
+### `last_swarm_critique`
+*29.08. 17:57 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*29.08. 17:51 UTC · Quelle: system*
+
+Alte Marktanalyse auf den neuesten Stand bringen
+
+### `dream:20260829175054:5:90e8e0`
+*29.08. 17:50 UTC · Quelle: dream*
+
+The planner/builder/critic role distribution (1/3/1) converged the swarm-orchestration task in a single cycle with score 9, demonstrating an effective minimal role topology for code-generation swarms.
+
+### `dream:20260829175054:4:cd387a`
+*29.08. 17:50 UTC · Quelle: dream*
+
+Calibration was severely off (predicted 3 vs actual 9, error of 6), revealing that initial effort/complexity estimates for swarm-orchestration tasks are unreliable.
+
+### `dream:20260829175054:3:d9cf1b`
+*29.08. 17:50 UTC · Quelle: dream*
+
+The nemotron-3-ultra-550b model is slow (88-173s latency) but produces high-quality results (score 9), making it a reliable but expensive fallback.
+
+### `dream:20260829175054:2:26784d`
+*29.08. 17:50 UTC · Quelle: dream*
+
+Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra-550b-a55b) succeeded reliably; all others (glm-5.2, gemma-4 variants) consistently hit rate limits.
+
+### `dream:20260829175054:1:4fbdb4`
+*29.08. 17:50 UTC · Quelle: dream*
+
+429 rate-limiting from OpenRouter is the dominant systemic failure mode, affecting nearly all models simultaneously and indicating an API-level bottleneck rather than model-specific issues.
 
 ### `last_swarm_critique`
 *29.08. 17:37 UTC · Quelle: critic*
