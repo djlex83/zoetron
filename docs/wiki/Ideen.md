@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 09:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 09:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- JSON parsing errors (Expecting value at line 373) occur alongside rate limits, suggesting malformed responses under load.
+- Calibration predictions show large absolute errors (predicted 4, actual 1), revealing unreliable confidence estimation in task planning.
+- Hand actions fail with exit code 1 and zero gelesen values, indicating a systematic execution or environment configuration problem.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model consistently succeeds while z-ai/glm-5.2:free fails repeatedly, suggesting model selection directly i
+- Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
 - Drive goals are created from failure signals (model errors, unused analyses) but lack automatic decomposition into executable steps with verification.
 - Five skill proposals were generated in one burst but none validated; proposal generation without smoke-testing creates technical debt.
 - The swarm cleaned up old results but did not converge (score 3, converged=false), suggesting cleanup tasks need explicit acceptance criteria, not just
@@ -51,11 +56,6 @@
 - Swarm role imbalance (3 builders, 1 critic) likely caused insufficient critique pressure to drive convergence past score 6.
 - Evolution produced a high-scoring variant (8.7) but swarm execution failed to converge, revealing a gap between static evaluation and dynamic orchestr
 - Rate limiting (429) across multiple cloud models indicates systemic dependency on unreliable free-tier endpoints rather than isolated failures.
-- Swarm orchestration was explicitly flagged by the critic as a weakness, yet the evolution run produced a winner on the first variant, indicating the m
-- The fastest successful model (inclusionai/ling-3.0-flash-fin:free at 9.9s) is an order of magnitude quicker than alternatives, suggesting latency-base
-- Calibration predicted a score of 2 but actual was 6, revealing a systematic underestimation bias that will misguide resource allocation if uncorrected
-- Nvidia Nemotron models exhibit intermittent 502 upstream overload errors even when the HTTP status is 200, requiring response-body validation before t
-- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary workers without aggressive backoff and fallback c
 
 ---
 

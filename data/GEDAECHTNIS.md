@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6187 Fakten** · Stand 2026-08-29 09:32 UTC · aktualisiert bei jedem Herzschlag
+**6192 Fakten** · Stand 2026-08-29 09:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2771
+- **dream:** 2776
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829095236:5:1b2052`
+*29.08. 09:52 UTC · Quelle: dream*
+
+JSON parsing errors (Expecting value at line 373) occur alongside rate limits, suggesting malformed responses under load.
+
+### `dream:20260829095236:4:324f46`
+*29.08. 09:52 UTC · Quelle: dream*
+
+Calibration predictions show large absolute errors (predicted 4, actual 1), revealing unreliable confidence estimation in task planning.
+
+### `dream:20260829095236:3:44fad0`
+*29.08. 09:52 UTC · Quelle: dream*
+
+Hand actions fail with exit code 1 and zero gelesen values, indicating a systematic execution or environment configuration problem.
+
+### `dream:20260829095236:2:6a9b00`
+*29.08. 09:52 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model consistently succeeds while z-ai/glm-5.2:free fails repeatedly, suggesting model selection directly impacts reliability.
+
+### `dream:20260829095236:1:2c8867`
+*29.08. 09:52 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
 
 ### `tool:wissensgraph-verknüpfungen-reparieren`
 *29.08. 09:31 UTC · Quelle: hands*
