@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 02:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 02:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,8 +31,8 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite repeated model failures, revealing a blind spot in external dependency monitoring.
+- Reflex-driven dream connection successfully converges goals, suggesting associative memory consolidation works for knowledge integration.
+- Skill proposals accumulate without implementation, indicating a gap between proposal generation and skill acquisition.
+- Nemotron-3-Ultra serves as a viable fallback but exhibits high latency variance (5–17s), requiring timeout budgets and latency-aware routing.
+- Free-tier models like GLM-5.2 consistently fail under load with 429 errors, making them unreliable for production workflows.
 - Latency variance on fallback model (2.9s to 24.1s) shows no latency budget or timeout guard, risking stalled cycles under load.
 - Skill proposals accumulate (10+ in this log) but no execution pipeline exists, creating an idea-to-implementation gap that drive goals explicitly flag
 - Reflex-mode goals converge without deliberation, yet stale market-analysis goals persist across cycles, indicating reflex handles cleanup but not mult
@@ -51,11 +56,6 @@
 - Skill proposals remain unused because there is no systematic integration pipeline from proposal to deployment.
 - Persistent stale swarm tasks accumulate due to lack of completion enforcement, leading to resource waste and goal drift.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting that requires automatic model fallback to prevent task failure.
-- Hand actions fail with exit code 1 and no error detail, indicating opaque execution environment failures that evade self-diagnosis.
-- Swarm role distribution (1 planner, 3 builders, 1 critic) is static and may not match task demands, evidenced by non-convergence after 2 cycles.
-- Calibration predicted 2 but actual was 1, showing systematic overconfidence in capability estimation.
-- Evolution produced a 9.3-scoring variant but swarm execution still scored 1, revealing a deployment-validation gap between evolution and runtime.
-- Rate limiting (429 errors) across multiple models indicates missing proactive model health monitoring and fallback routing.
 
 ---
 
