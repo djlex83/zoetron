@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5796 Fakten** · Stand 2026-08-29 00:08 UTC · aktualisiert bei jedem Herzschlag
+**5810 Fakten** · Stand 2026-08-29 00:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2576
-- **swarm_artifact:** 1411
-- **last_swarm_critique:** 581
+- **dream:** 2581
+- **swarm_artifact:** 1417
+- **last_swarm_critique:** 582
 - **anti_pattern:** 459
-- **last_swarm_goal:** 330
+- **last_swarm_goal:** 331
 - **strategy:** 250
 - **hand_result:** 68
-- **tool:** 52
+- **tool:** 53
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:regelmäßige-selbstprüfung-etablieren`
+*29.08. 00:23 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Regelmäßige Selbstprüfung etablieren'. Datei: data/tools/regelmäßige-selbstprüfung-etablieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*29.08. 00:23 UTC · Quelle: critic*
+
+score=8; issues=Runner and scheduler code truncated in display but sandbox confirms LAEUFT; Wrapper templates generated as not_implemented placeholders rather than functional checks; Uses deprecated datetime.utcnow() in Python 3.12+; Scheduler relies on subpro
+
+### `last_swarm_goal`
+*29.08. 00:13 UTC · Quelle: system*
+
+Regelmäßige Selbstprüfung etablieren
+
+### `dream:20260829001252:5:5799b2`
+*29.08. 00:12 UTC · Quelle: dream*
+
+Proposed skills remain unimplemented because there is no mechanism to promote proposals to built capabilities.
+
+### `dream:20260829001252:4:bfe8e7`
+*29.08. 00:12 UTC · Quelle: dream*
+
+Simulation revisions accumulate without automated application, creating a gap between analysis and improvement.
+
+### `dream:20260829001252:3:10115b`
+*29.08. 00:12 UTC · Quelle: dream*
+
+Hand actions fail due to unresolved relative paths, indicating a need for canonical path resolution before execution.
+
+### `dream:20260829001252:2:1b7f64`
+*29.08. 00:12 UTC · Quelle: dream*
+
+Stress reaching 1.0 triggers a conserve mode that starves critical tasks, requiring proactive load shedding before saturation.
+
+### `dream:20260829001252:1:28bc56`
+*29.08. 00:12 UTC · Quelle: dream*
+
+Rate-limited models should be automatically deprioritized after repeated 429 errors to prevent cascade latency.
 
 ### `dream:20260829000725:5:8b427a`
 *29.08. 00:07 UTC · Quelle: dream*

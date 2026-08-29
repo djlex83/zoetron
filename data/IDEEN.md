@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 00:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 00:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
@@ -32,15 +32,20 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Menschliche Eingriffe überflüssig machen *(wieder aufgegriffen: 2×)*
 - Simulationen in echtes Handeln übersetzen *(wieder aufgegriffen: 2×)*
+- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposed skills remain unimplemented because there is no mechanism to promote proposals to built capabilities.
+- Simulation revisions accumulate without automated application, creating a gap between analysis and improvement.
+- Hand actions fail due to unresolved relative paths, indicating a need for canonical path resolution before execution.
+- Stress reaching 1.0 triggers a conserve mode that starves critical tasks, requiring proactive load shedding before saturation.
+- Rate-limited models should be automatically deprioritized after repeated 429 errors to prevent cascade latency.
 - Logical path handling is fragile: hand actions assume mounted paths without a runtime PathResolver abstraction.
 - Reflex tools lack runtime health metrics (success rate, p95 latency), preventing automatic degradation or alerting.
 - Multiple duplicate circuit-breaker proposals show ideas are generated but not deduplicated or promoted to implementation.
@@ -51,11 +56,6 @@
 - Stale drive goals (market analysis, model-error diagnosis) persist across cycles despite reflex tools, indicating missing TTL-based auto-escalation or
 - Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (8.8–74.3 s), requiring p95 latency budgets and tier
 - Free-tier model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for any production path without enforced cooldown and circuit-
-- Stale analysis artifacts persist because cleanup is not triggered by age or quality thresholds.
-- Latency variance (8.8–34.6 s) for the same model indicates missing request-level timeouts and tier-based routing.
-- Fifty-four skill proposals accumulate without validation; the proposal-to-skill pipeline lacks automated testing and promotion gates.
-- Self-diagnosis reports zero organ errors despite repeated external model failures, revealing a blind spot between internal health checks and actual se
-- Free-tier models (z-ai/glm-5.2) consistently fail with 429 rate-limit errors while paid-tier fallback (nvidia/nemotron) succeeds but exceeds 30 s synt
 
 ---
 
