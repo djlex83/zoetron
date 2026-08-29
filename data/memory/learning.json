@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 03:46:58",
+ "stand": "2026-08-29 03:56:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,19 +15,13 @@
    "quote": 0.75
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 8,
-   "erfolge": 8,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 8,
    "erfolge": 0,
    "quote": 0.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
@@ -36,6 +30,12 @@
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 7,
    "erfolge": 7,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -105,6 +105,12 @@
    "quote": 0.0
   },
   {
+   "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -139,20 +145,14 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   }
  ],
- "haende_quote": 0.64,
- "simulationen_angewandt": 43,
+ "haende_quote": 0.635,
+ "simulationen_angewandt": 44,
  "swarm_scores": {
-  "n": 37,
+  "n": 38,
   "best": 9.0,
-  "schnitt": 4.65
+  "schnitt": 4.71
  },
  "score_nach_ziel_typ": {
   "bau": {
@@ -160,8 +160,8 @@
    "schnitt": 6.0
   },
   "analyse": {
-   "n": 34,
-   "schnitt": 4.53
+   "n": 35,
+   "schnitt": 4.6
   }
  }
 }

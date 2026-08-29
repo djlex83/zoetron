@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5965 Fakten** · Stand 2026-08-29 03:47 UTC · aktualisiert bei jedem Herzschlag
+**5982 Fakten** · Stand 2026-08-29 03:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2671
-- **swarm_artifact:** 1453
-- **last_swarm_critique:** 588
-- **anti_pattern:** 467
-- **last_swarm_goal:** 337
-- **strategy:** 254
+- **dream:** 2676
+- **swarm_artifact:** 1459
+- **last_swarm_critique:** 589
+- **anti_pattern:** 469
+- **last_swarm_goal:** 338
+- **strategy:** 255
 - **hand_result:** 71
-- **tool:** 55
+- **tool:** 56
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:selbstprüfung-regelmäßig-erneuern`
+*29.08. 03:56 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Selbstprüfung regelmäßig erneuern'. Datei: data/tools/selbstprüfung-regelmäßig-erneuern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Selbstprüfung regelmäßig:2`
+*29.08. 03:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 6, 7]): self-healing-entrypoint - Rewrite each tool's entrypoint into a self-healing shim: the original executable is renamed to *.bin, and a new wrapper script takes its place. On every invocation the wrapper (1) verifies a 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Selbstprüfung regelmäßig:1`
+*29.08. 03:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): event-triggered-hooks - Replace scheduled polling with filesystem/inotify/event-driven triggers: install a lightweight inotifywait-based wrapper (or cross-platform watchdog library) that watches the actual tool binari
+
+### `last_swarm_critique`
+*29.08. 03:54 UTC · Quelle: critic*
+
+score=7; issues=Artifact 1 creates a separate _fixed.py but doesn't replace the broken original tool - the fix is not persisted; Artifact 2 assumes heartbeat scheduler exists and will call the hook, but provides no verification of actual scheduler integration;
+
+### `last_swarm_goal`
+*29.08. 03:51 UTC · Quelle: system*
+
+Selbstprüfung regelmäßig erneuern
+
+### `dream:20260829035113:5:ea83e4`
+*29.08. 03:51 UTC · Quelle: dream*
+
+Five skill proposals exist but none are deployed; the gap between proposal and activation is the primary bottleneck to capability growth.
+
+### `dream:20260829035113:4:bdf5b2`
+*29.08. 03:51 UTC · Quelle: dream*
+
+System entered conserve mode (stress=1.0) with max_tasks=3, yet drive goals remain stale—resource pressure is starving strategic work.
+
+### `dream:20260829035113:3:b7a9dd`
+*29.08. 03:51 UTC · Quelle: dream*
+
+Three simulation-identified risks automatically produced three revisions, proving the simulation-to-revision pipeline works end-to-end.
+
+### `dream:20260829035113:2:31e12b`
+*29.08. 03:51 UTC · Quelle: dream*
+
+Nemotron-3-ultra latency varies 12× (3.6–44.2 s), making fixed timeouts ineffective; deadlines must adapt to rolling 95th-percentile latency per model.
+
+### `dream:20260829035113:1:c42431`
+*29.08. 03:51 UTC · Quelle: dream*
+
+Persistent 429 errors from z-ai/glm-5.2:free indicate a hard rate limit that requires permanent provider blacklisting after N consecutive failures.
 
 ### `dream:20260829034644:5:4173c6`
 *29.08. 03:46 UTC · Quelle: dream*
