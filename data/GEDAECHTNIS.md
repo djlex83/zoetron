@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6046 Fakten** · Stand 2026-08-29 05:22 UTC · aktualisiert bei jedem Herzschlag
+**6063 Fakten** · Stand 2026-08-29 05:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2711
-- **swarm_artifact:** 1477
-- **last_swarm_critique:** 592
-- **anti_pattern:** 471
-- **last_swarm_goal:** 341
-- **strategy:** 256
-- **hand_result:** 72
+- **dream:** 2716
+- **swarm_artifact:** 1483
+- **last_swarm_critique:** 593
+- **anti_pattern:** 473
+- **last_swarm_goal:** 342
+- **strategy:** 257
+- **hand_result:** 73
 - **tool:** 57
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler reduzieren:2`
+*29.08. 05:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Property-Based Contract Testing with Hypothesis - Shift from imperative error-fixing to declarative contracts. Define formal specifications for each module's input/output behavior using Hypothesis strategies. Generate thousan
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler reduzieren:1`
+*29.08. 05:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Isolated Micro-Sandbox per Component - Decompose the monolithic script into independent micro-tasks each running in its own subprocess with strict resource limits (time, memory, syscalls). Each component (health check, router
+
+### `last_swarm_critique`
+*29.08. 05:46 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - zwei Tracebacks belegen Laufzeitfehler in action_1787982377020.py:377 und action_1787982378161.py:264; Drittes Artefakt (ErrorPruner) ist im validate_after_pruning-Mittendrin abgebrochen - unvollstaendiger Code; A
+
+### `last_swarm_goal`
+*29.08. 05:34 UTC · Quelle: system*
+
+Modell-Fehler reduzieren und Zuverlässigkeit steigern
+
+### `dream:20260829053254:5:e3c5e8`
+*29.08. 05:32 UTC · Quelle: dream*
+
+Five skill proposals (router, factory, activator, governor, pruner) remain unimplemented, exposing a deployment gap between proposal and production.
+
+### `dream:20260829053254:4:a06ced`
+*29.08. 05:32 UTC · Quelle: dream*
+
+Cycle prediction error of ±1 (predicted 7, actual 8) shows decent calibration but ignores model latency variance, suggesting latency-aware planning.
+
+### `dream:20260829053254:3:a02378`
+*29.08. 05:32 UTC · Quelle: dream*
+
+Swarm converges in one cycle with specialized roles (planner, builder×3, critic) for well-scoped analysis goals, validating the role allocation strategy.
+
+### `dream:20260829053254:2:296d1f`
+*29.08. 05:32 UTC · Quelle: dream*
+
+Human approval requirement for subprocess calls blocks autonomous completion of market analysis tasks, indicating need for a pre-approval policy for read-only operations.
+
+### `dream:20260829053254:1:688e55`
+*29.08. 05:32 UTC · Quelle: dream*
+
+Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate limits, while nvidia/nemotron-3-ultra-550b-a55b:free succeeds with 11–22s latency, making automated failover essential.
 
 ### `last_swarm_critique`
 *29.08. 05:21 UTC · Quelle: critic*

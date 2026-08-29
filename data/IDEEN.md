@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 05:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 05:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five skill proposals (router, factory, activator, governor, pruner) remain unimplemented, exposing a deployment gap between proposal and production.
+- Cycle prediction error of ±1 (predicted 7, actual 8) shows decent calibration but ignores model latency variance, suggesting latency-aware planning.
+- Swarm converges in one cycle with specialized roles (planner, builder×3, critic) for well-scoped analysis goals, validating the role allocation strate
+- Human approval requirement for subprocess calls blocks autonomous completion of market analysis tasks, indicating need for a pre-approval policy for r
+- Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate limits, while nvidia/nemotron-3-ultra-550b-a55b:free succeeds with 11–22s latency, 
 - Self-diagnosis and pruning report zero anomalies despite repeated model failures, exposing a monitoring blind spot for external dependency health.
 - Simulation gates allow execution with 5 risks and 'revise' verdict, revealing risk thresholds are misaligned with production safety.
 - Swarm evolution stalls at score 7 with high revision counts (5) and non-convergence, indicating critic feedback lacks actionable specificity.
@@ -50,12 +55,7 @@
 - Evolutionary refinement (3 variants) improved artifact score from 7 to 8/9/9 by addressing critic-flagged use of Unix-specific signal.SIGALRM.
 - Simulation-based pre-execution review detected 3 risks and mandated 3 revisions, which were successfully applied before artifact execution.
 - Nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (15.5–89.3s), requiring timeout-aware orchestration.
-- Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 - Metabolism stress at maximum with conservative budget indicates systemic overload; task admission control must reject new work before saturation.
-- Stale swarm artifacts accumulate because no automated ingestion pipeline validates and merges them into active memory.
-- Simulation revisions without application loops waste compute; every simulation must gate a concrete action or be discarded.
-- High latency variance in fallback models degrades system predictability; latency SLAs should trigger model switching.
-- Rate-limited models should be automatically deprioritized after N consecutive 429s, not retried indefinitely.
 
 ---
 
