@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Iterative simulation loops without explicit convergence thresholds waste compute cycles on divergent trajectories.
+- Pruning policies that ignore access frequency and recency retain stale facts while discarding active knowledge.
+- Hand-action scripts fail silently when sys.argv paths diverge from actual data locations, requiring pre-execution validation.
+- Absence of automatic retry-with-backoff for transient HTTP 429 errors wastes available quota and causes unnecessary fallbacks.
+- Free-tier LLM endpoints exhibit high failure rates (429/502) making single-model reliance unsafe for production workflows.
 - Skill proposals accumulate (5 in this cycle alone) but completion rate stays low, revealing a proposal-to-execution gap in the capability pipeline.
 - Reflex tools for learning from errors are invoked but have not yet prevented recurring 429 failures, showing learning without structural change.
 - Three completed market analyses remain unused (stale drive goals), indicating a broken handoff from analysis production to decision consumption.
@@ -51,11 +56,6 @@
 - Swarm processes evolve but fail to converge, suggesting missing convergence criteria or premature termination.
 - Simulations generate revision plans (5 revisions) but zero are applied, revealing a planning-execution gap.
 - Rate limiting (429 errors) is the systemic bottleneck across all free-tier models, not an isolated model failure.
-- Multiple concurrent drive goals (failure analysis, stale insight refresh, dream combination) indicate the system generates more intent than it can exe
-- Hand actions fail due to path resolution errors (sys.argv vs real data path), revealing a systemic environment/configuration mismatch.
-- Pruning thresholds are miscalibrated: zero facts/events pruned suggests retention criteria are too aggressive or access tracking is broken.
-- The single working model (ling-3.0-flash-fin) exhibits high latency (7-9s), indicating fallback success trades off against response time.
-- Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without robust fallback.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6287 Fakten** · Stand 2026-08-29 12:39 UTC · aktualisiert bei jedem Herzschlag
+**6292 Fakten** · Stand 2026-08-29 12:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2851
+- **dream:** 2856
 - **swarm_artifact:** 1527
 - **last_swarm_critique:** 601
 - **anti_pattern:** 487
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829124248:5:b644a7`
+*29.08. 12:42 UTC · Quelle: dream*
+
+Iterative simulation loops without explicit convergence thresholds waste compute cycles on divergent trajectories.
+
+### `dream:20260829124248:4:6f9478`
+*29.08. 12:42 UTC · Quelle: dream*
+
+Pruning policies that ignore access frequency and recency retain stale facts while discarding active knowledge.
+
+### `dream:20260829124248:3:61626e`
+*29.08. 12:42 UTC · Quelle: dream*
+
+Hand-action scripts fail silently when sys.argv paths diverge from actual data locations, requiring pre-execution validation.
+
+### `dream:20260829124248:2:8434f1`
+*29.08. 12:42 UTC · Quelle: dream*
+
+Absence of automatic retry-with-backoff for transient HTTP 429 errors wastes available quota and causes unnecessary fallbacks.
+
+### `dream:20260829124248:1:1366f9`
+*29.08. 12:42 UTC · Quelle: dream*
+
+Free-tier LLM endpoints exhibit high failure rates (429/502) making single-model reliance unsafe for production workflows.
 
 ### `dream:20260829123702:5:88a9cd`
 *29.08. 12:37 UTC · Quelle: dream*
