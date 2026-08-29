@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6202 Fakten** · Stand 2026-08-29 10:07 UTC · aktualisiert bei jedem Herzschlag
+**6207 Fakten** · Stand 2026-08-29 10:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2786
+- **dream:** 2791
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829101017:5:d1a89c`
+*29.08. 10:10 UTC · Quelle: dream*
+
+A single fast success from inclusionai/ling-3.0-flash-fin (9.7 s) suggests smaller optimized models may offer better reliability/latency trade-offs.
+
+### `dream:20260829101017:4:f258b1`
+*29.08. 10:10 UTC · Quelle: dream*
+
+Under maximum stress (conserve mode, 1 iteration budget) the system still completed a complex graph-repair task successfully.
+
+### `dream:20260829101017:3:350f38`
+*29.08. 10:10 UTC · Quelle: dream*
+
+Simulation-driven revision (3 cycles) before execution produced a working 289-line Python artifact on first real run.
+
+### `dream:20260829101017:2:0f9482`
+*29.08. 10:10 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra succeeds but with extreme latency variance (40–160 s), requiring adaptive timeouts and circuit-breakers.
+
+### `dream:20260829101017:1:a34060`
+*29.08. 10:10 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable as primary providers.
 
 ### `dream:20260829100601:5:024333`
 *29.08. 10:06 UTC · Quelle: dream*

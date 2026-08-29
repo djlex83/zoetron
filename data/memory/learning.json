@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 10:06:39",
+ "stand": "2026-08-29 10:10:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,6 +63,12 @@
    "quote": 0.0
   },
   {
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -85,12 +91,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "aufgaben-priorisieren.py",
@@ -135,7 +135,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.64,
+ "haende_quote": 0.642,
  "simulationen_angewandt": 43,
  "swarm_scores": {
   "n": 39,
@@ -144,7 +144,7 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 37,
+   "n": 36,
    "schnitt": 4.78
   },
   "bau": {
