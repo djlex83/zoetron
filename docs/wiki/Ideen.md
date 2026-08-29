@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5 in this cycle alone) but completion rate stays low, revealing a proposal-to-execution gap in the capability pipeline.
+- Reflex tools for learning from errors are invoked but have not yet prevented recurring 429 failures, showing learning without structural change.
+- Three completed market analyses remain unused (stale drive goals), indicating a broken handoff from analysis production to decision consumption.
+- The fallback model nvidia/nemotron-3-ultra succeeds but introduces 43-56s latency, making it unsuitable for interactive loops without caching or sched
+- Rate limiting (429 errors) on the primary model z-ai/glm-5.2:free is the dominant systemic failure mode, occurring repeatedly across cycles without au
 - Reflex-driven tool introspection succeeds where proactive planning fails, showing reactive repair > proactive design.
 - Token consumption varies 6x (223-1307 input) for similar tasks, indicating no complexity-aware routing exists.
 - Swarm processes evolve but fail to converge, suggesting missing convergence criteria or premature termination.
@@ -51,11 +56,6 @@
 - Pruning thresholds are miscalibrated: zero facts/events pruned suggests retention criteria are too aggressive or access tracking is broken.
 - The single working model (ling-3.0-flash-fin) exhibits high latency (7-9s), indicating fallback success trades off against response time.
 - Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without robust fallback.
-- Pruning removed zero facts/events despite repeated failures, suggesting the consolidation trigger threshold is too high for acute error patterns.
-- Self-diagnosis reports zero organ errors while the system experiences total LLM unavailability, showing health checks miss external dependency failure
-- Rate limit errors cascade across all model tiers within minutes, indicating shared quota pools that invalidate fallback chains relying on multiple fre
-- The only successful task completion used a deterministic Python script (marktanalyse-endlich-abschließen.py) instead of LLM calls, proving tool-based 
-- All free models fail simultaneously via OpenRouter 429 errors, revealing the API gateway as a single point of failure rather than model-specific issue
 
 ---
 

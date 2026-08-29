@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6282 Fakten** · Stand 2026-08-29 12:33 UTC · aktualisiert bei jedem Herzschlag
+**6287 Fakten** · Stand 2026-08-29 12:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2846
+- **dream:** 2851
 - **swarm_artifact:** 1527
 - **last_swarm_critique:** 601
 - **anti_pattern:** 487
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829123702:5:88a9cd`
+*29.08. 12:37 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this cycle alone) but completion rate stays low, revealing a proposal-to-execution gap in the capability pipeline.
+
+### `dream:20260829123702:4:ca9b7d`
+*29.08. 12:37 UTC · Quelle: dream*
+
+Reflex tools for learning from errors are invoked but have not yet prevented recurring 429 failures, showing learning without structural change.
+
+### `dream:20260829123702:3:dcb4aa`
+*29.08. 12:37 UTC · Quelle: dream*
+
+Three completed market analyses remain unused (stale drive goals), indicating a broken handoff from analysis production to decision consumption.
+
+### `dream:20260829123702:2:026f00`
+*29.08. 12:37 UTC · Quelle: dream*
+
+The fallback model nvidia/nemotron-3-ultra succeeds but introduces 43-56s latency, making it unsuitable for interactive loops without caching or scheduling.
+
+### `dream:20260829123702:1:15050c`
+*29.08. 12:37 UTC · Quelle: dream*
+
+Rate limiting (429 errors) on the primary model z-ai/glm-5.2:free is the dominant systemic failure mode, occurring repeatedly across cycles without automated mitigation.
 
 ### `dream:20260829123233:5:d495a5`
 *29.08. 12:32 UTC · Quelle: dream*
