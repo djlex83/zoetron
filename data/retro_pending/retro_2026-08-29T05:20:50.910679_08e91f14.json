@@ -1,0 +1,103 @@
+{
+  "simulation_id": "sim_20260829_052050",
+  "delta": {
+    "latency_p50": 0.0,
+    "throughput": 0.0,
+    "error_rate": 0.0,
+    "memory_usage": 0.0
+  },
+  "pre_measurements": [
+    {
+      "point_name": "latency_p50",
+      "phase": "MeasurementPhase.PRE_APPLICATION",
+      "value": 0.0,
+      "timestamp": "2026-08-29T05:20:50.881248",
+      "status": "error",
+      "metadata": {
+        "error": "lauf() got an unexpected keyword argument 'metric'"
+      }
+    },
+    {
+      "point_name": "throughput",
+      "phase": "MeasurementPhase.PRE_APPLICATION",
+      "value": 0.0,
+      "timestamp": "2026-08-29T05:20:50.881328",
+      "status": "error",
+      "metadata": {
+        "error": "lauf() got an unexpected keyword argument 'metric'"
+      }
+    },
+    {
+      "point_name": "error_rate",
+      "phase": "MeasurementPhase.PRE_APPLICATION",
+      "value": 0.0,
+      "timestamp": "2026-08-29T05:20:50.881391",
+      "status": "error",
+      "metadata": {
+        "error": "lauf() got an unexpected keyword argument 'metric'"
+      }
+    },
+    {
+      "point_name": "memory_usage",
+      "phase": "MeasurementPhase.PRE_APPLICATION",
+      "value": 0.0,
+      "timestamp": "2026-08-29T05:20:50.881452",
+      "status": "error",
+      "metadata": {
+        "error": "lauf() got an unexpected keyword argument 'metric'"
+      }
+    }
+  ],
+  "post_measurements": [
+    {
+      "point_name": "latency_p50",
+      "phase": "MeasurementPhase.POST_APPLICATION",
+      "value": 0.0,
+      "timestamp": "2026-08-29T05:20:50.881594",
+      "status": "error",
+      "metadata": {
+        "error": "lauf() got an unexpected keyword argument 'metric'"
+      }
+    },
+    {
+      "point_name": "throughput",
+      "phase": "MeasurementPhase.POST_APPLICATION",
+      "value": 0.0,
+      "timestamp": "2026-08-29T05:20:50.881652",
+      "status": "error",
+      "metadata": {
+        "error": "lauf() got an unexpected keyword argument 'metric'"
+      }
+    },
+    {
+      "point_name": "error_rate",
+      "phase": "MeasurementPhase.POST_APPLICATION",
+      "value": 0.0,
+      "timestamp": "2026-08-29T05:20:50.881701",
+      "status": "error",
+      "metadata": {
+        "error": "lauf() got an unexpected keyword argument 'metric'"
+      }
+    },
+    {
+      "point_name": "memory_usage",
+      "phase": "MeasurementPhase.POST_APPLICATION",
+      "value": 0.0,
+      "timestamp": "2026-08-29T05:20:50.881748",
+      "status": "error",
+      "metadata": {
+        "error": "lauf() got an unexpected keyword argument 'metric'"
+      }
+    }
+  ],
+  "applied_changes": {
+    "parameters_updated": {
+      "learning_rate": 0.01,
+      "batch_size": 32,
+      "exploration_rate": 0.1
+    },
+    "config_version": "1.0",
+    "applied_at": "2026-08-29T05:20:50.881465"
+  },
+  "timestamp": "2026-08-29T05:20:50.881797"
+}

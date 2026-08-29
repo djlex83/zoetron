@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6032 Fakten** · Stand 2026-08-29 05:10 UTC · aktualisiert bei jedem Herzschlag
+**6046 Fakten** · Stand 2026-08-29 05:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2706
-- **swarm_artifact:** 1471
-- **last_swarm_critique:** 591
+- **dream:** 2711
+- **swarm_artifact:** 1477
+- **last_swarm_critique:** 592
 - **anti_pattern:** 471
-- **last_swarm_goal:** 340
+- **last_swarm_goal:** 341
 - **strategy:** 256
-- **hand_result:** 71
+- **hand_result:** 72
 - **tool:** 57
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*29.08. 05:21 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*29.08. 05:14 UTC · Quelle: system*
+
+Simulationsergebnisse konsequent anwenden
+
+### `dream:20260829051341:5:b5011c`
+*29.08. 05:13 UTC · Quelle: dream*
+
+Self-diagnosis and pruning report zero anomalies despite repeated model failures, exposing a monitoring blind spot for external dependency health.
+
+### `dream:20260829051341:4:e80067`
+*29.08. 05:13 UTC · Quelle: dream*
+
+Simulation gates allow execution with 5 risks and 'revise' verdict, revealing risk thresholds are misaligned with production safety.
+
+### `dream:20260829051341:3:d61e87`
+*29.08. 05:13 UTC · Quelle: dream*
+
+Swarm evolution stalls at score 7 with high revision counts (5) and non-convergence, indicating critic feedback lacks actionable specificity.
+
+### `dream:20260829051341:2:99068f`
+*29.08. 05:13 UTC · Quelle: dream*
+
+Fallback model (nemotron) latency varies 5x (7-37s), requiring per-task timeout calibration to prevent cascade delays.
+
+### `dream:20260829051341:1:284d72`
+*29.08. 05:13 UTC · Quelle: dream*
+
+The primary model (glm-5.2) fails consistently with 429 rate-limiting, making automatic fallback a reliability requirement.
 
 ### `dream:20260829050910:5:346c5f`
 *29.08. 05:09 UTC · Quelle: dream*
