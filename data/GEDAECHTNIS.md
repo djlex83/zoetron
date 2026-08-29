@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6688 Fakten** · Stand 2026-08-29 21:54 UTC · aktualisiert bei jedem Herzschlag
+**6705 Fakten** · Stand 2026-08-29 22:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3131
-- **swarm_artifact:** 1595
-- **last_swarm_critique:** 613
-- **anti_pattern:** 499
-- **last_swarm_goal:** 362
-- **strategy:** 270
-- **hand_result:** 78
+- **dream:** 3136
+- **swarm_artifact:** 1601
+- **last_swarm_critique:** 614
+- **anti_pattern:** 501
+- **last_swarm_goal:** 363
+- **strategy:** 271
+- **hand_result:** 79
 - **tool:** 70
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Doppelte Arbeit vermeide:1`
+*29.08. 22:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 4, 9]): Architektonischer Ersatz durch Vektor-Embedding-basiertes Deduplizieren - Ersetze die gesamte semantic_similarity()-Funktion und den bestehenden Dedup-Mechanismus durch eine auf Vektor-Embeddings basierende Architektu
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Doppelte Arbeit vermeide:0`
+*29.08. 22:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 10, 6]): Direkte Bugbehebung + API-Migration (Inkrementelle Korrektur) - Behebe die identifizierten Bugs direkt im bestehenden Code, ohne die Architektur zu verändern. In dedup_check.py: (1) Korrigiere den SequenceMatcher-Auf
+
+### `last_swarm_critique`
+*29.08. 22:06 UTC · Quelle: critic*
+
+score=7; issues=semantic_similarity() in dedup_check.py hat einen Bug: SequenceMatcher(None, normalize(a), normalize(b).split()) vergleicht einen String mit einer Liste – seq_match liefert damit keinen sinnvollen Wert. Die token_overlap-Berechnung funktioniert
+
+### `last_swarm_goal`
+*29.08. 22:02 UTC · Quelle: system*
+
+Doppelte Arbeit vermeiden
+
+### `dream:20260829220149:5:752a5b`
+*29.08. 22:01 UTC · Quelle: dream*
+
+Prompt volume directly correlates with 429 exposure; compression or batching reduces failure rate.
+
+### `dream:20260829220149:4:63d10e`
+*29.08. 22:01 UTC · Quelle: dream*
+
+No proactive load shedding or model rotation occurs before rate limits are hit.
+
+### `dream:20260829220149:3:d6158c`
+*29.08. 22:01 UTC · Quelle: dream*
+
+Error handling lacks classification: 429, 5xx, and empty-success responses receive identical retry logic.
+
+### `dream:20260829220149:2:7a22c3`
+*29.08. 22:01 UTC · Quelle: dream*
+
+A single reliable model (ling-3.0-flash-fin) becomes a bottleneck and single point of failure under load.
+
+### `dream:20260829220149:1:a05438`
+*29.08. 22:01 UTC · Quelle: dream*
+
+Free-tier models fail predominantly due to rate limits (429) and upstream overload (502), not model quality.
 
 ### `dream:20260829215309:5:093d6a`
 *29.08. 21:53 UTC · Quelle: dream*
