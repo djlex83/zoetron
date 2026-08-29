@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6321 Fakten** · Stand 2026-08-29 13:18 UTC · aktualisiert bei jedem Herzschlag
+**6326 Fakten** · Stand 2026-08-29 13:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2876
+- **dream:** 2881
 - **swarm_artifact:** 1533
 - **last_swarm_critique:** 602
 - **anti_pattern:** 487
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829132215:5:f4169c`
+*29.08. 13:22 UTC · Quelle: dream*
+
+Simulation-swarm loops lack convergence criteria, causing unbounded cycles that waste tokens on divergent trajectories.
+
+### `dream:20260829132215:4:2f37af`
+*29.08. 13:22 UTC · Quelle: dream*
+
+Multiple concurrent drive goals (reliability, market analysis, memory recombination) compete for limited model throughput without priority arbitration.
+
+### `dream:20260829132215:3:e3ed54`
+*29.08. 13:22 UTC · Quelle: dream*
+
+Reflex scripts execute successfully but lack pre-deployment validation, creating silent failure risk when dependencies shift.
+
+### `dream:20260829132215:2:9ddab4`
+*29.08. 13:22 UTC · Quelle: dream*
+
+Pruning thresholds remain static despite zero pruning events, indicating half-life calibration must be data-driven not heuristic.
+
+### `dream:20260829132215:1:bb75a3`
+*29.08. 13:22 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently fail under load with 429/502 errors, making automatic failover and rate limiting essential for reliability.
 
 ### `dream:20260829131747:5:7564cd`
 *29.08. 13:17 UTC · Quelle: dream*

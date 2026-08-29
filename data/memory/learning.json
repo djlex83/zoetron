@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-29 13:18:09",
+ "stand": "2026-08-29 13:23:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 25,
-   "erfolge": 25,
+   "laeufe": 26,
+   "erfolge": 26,
    "quote": 1.0
   },
   {
@@ -69,12 +69,6 @@
    "quote": 0.0
   },
   {
-   "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -121,6 +115,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "träume-in-taten-umsetzen.py",
