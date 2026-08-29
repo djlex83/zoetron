@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6562 Fakten** · Stand 2026-08-29 19:02 UTC · aktualisiert bei jedem Herzschlag
+**6567 Fakten** · Stand 2026-08-29 19:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3036
+- **dream:** 3041
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829190657:5:117207`
+*29.08. 19:06 UTC · Quelle: dream*
+
+Drive goals signaling strategic priorities (model reliability, stale work, skill consolidation) should auto-spawn corresponding skill development.
+
+### `dream:20260829190657:4:730452`
+*29.08. 19:06 UTC · Quelle: dream*
+
+Reflex tools reliably convert proposals into registered skills when triggered by drive goals.
+
+### `dream:20260829190657:3:752197`
+*29.08. 19:06 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than manual implementation; an automated proposal-to-skill pipeline is essential.
+
+### `dream:20260829190657:2:842392`
+*29.08. 19:06 UTC · Quelle: dream*
+
+High-latency fallback models (13-28s) degrade responsiveness and need latency budgets with enforced timeouts.
+
+### `dream:20260829190657:1:486268`
+*29.08. 19:06 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) require automatic circuit-breaking and fallback routing to maintain system availability.
 
 ### `dream:20260829190036:5:4c53d2`
 *29.08. 19:00 UTC · Quelle: dream*

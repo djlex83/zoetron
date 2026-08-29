@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 19:01:37",
+ "stand": "2026-08-29 19:08:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,16 +15,16 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 8,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 7,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
@@ -99,6 +99,12 @@
    "quote": 0.0
   },
   {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -139,12 +145,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "wissensgraph-verknüpfungen-reparieren.py",
@@ -189,8 +189,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.659,
- "simulationen_angewandt": 34,
+ "haende_quote": 0.664,
+ "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 39,
   "best": 9.0,
@@ -198,8 +198,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 36,
-   "schnitt": 5.31
+   "n": 35,
+   "schnitt": 5.43
   },
   "bau": {
    "n": 3,
