@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 15:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 15:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,11 +26,11 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful artifact execution (164-line Python script) correlates with `hat_code: true` and positive TOR verdict, making code presence a leading indic
+- Evolutionary refinement (3 variants, winner score 9 vs prior 3) reliably repairs pipeline integration failures when critic feedback is specific.
+- Effort estimation consistently overshoots actual work (predicted 6 vs actual 3 cycles), indicating a need for calibration against historical deltas.
+- `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits high latency variance (6–122 s) requiring timeout budgets and fallback triggers rather than fixed de
+- The free tier model `z-ai/glm-5.2:free` is unreliable due to persistent 429 rate-limit errors and should be deprioritized or wrapped with aggressive b
 - Simulation approved the market-analysis update with 3 risks and 3 revisions, suggesting the validation loop catches issues but adds latency; automated
 - Multiple skill proposals (router, rate-limit handling, stress scheduler) already exist but remain unimplemented, creating a proposal-to-execution gap 
 - Metabolism stress at 1.0 (conserve mode) coincides with continued model failures, showing the stress-aware scheduler is not yet reducing load or switc
@@ -51,11 +56,6 @@
 - Evolution/swarm cycles improve scores (6→8–9) but stall at non-convergence, revealing missing termination criteria for 'good enough' results.
 - Latency variance of 12–200s on nvidia/nemotron-3-ultra shows that single-model reliance risks unpredictable delays; a latency-aware router is required
 - Repeated 429 errors on z-ai/glm-5.2:free indicate that models without automatic rate-limit backoff cause systemic failures and must be circuit-broken.
-- Calibration error of ±1 cycle (predicted 5 vs actual 6) shows the planner's effort estimator is well-calibrated for this task class.
-- Task completion with a working 103-line Python artifact validates the generate-then-verify loop for market-analysis goals.
-- Hand-action failures are transient; immediate retry succeeds in <0.2s, pointing to resource contention rather than logic errors.
-- The inclusionai/ling-3.0-flash-fin:free model succeeds consistently but shows high latency variance (6.5–10.6s), indicating queue-dependent performanc
-- Free-tier models on OpenRouter (z-ai/glm-5.2, google/gemma variants) consistently hit 429 rate limits, making them unreliable for production workloads
 
 ---
 

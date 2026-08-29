@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6411 Fakten** · Stand 2026-08-29 15:35 UTC · aktualisiert bei jedem Herzschlag
+**6427 Fakten** · Stand 2026-08-29 15:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2921
-- **swarm_artifact:** 1557
-- **last_swarm_critique:** 606
-- **anti_pattern:** 493
-- **last_swarm_goal:** 355
-- **strategy:** 267
+- **dream:** 2926
+- **swarm_artifact:** 1563
+- **last_swarm_critique:** 607
+- **anti_pattern:** 495
+- **last_swarm_goal:** 356
+- **strategy:** 268
 - **hand_result:** 77
 - **tool:** 66
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Schwarm-Arbeiten ab:2`
+*29.08. 15:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 7]): Event-getriebenes Abschluss-Pipeline mit Validierungskreis - Eine Python-Pipeline, die alte Schwarm-Aufgaben als Event-Stream behandelt: Jede Aufgabe wird als Event-Objekt mit Trigger-, Aktions- und Verifikationsphase
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Schwarm-Arbeiten ab:1`
+*29.08. 15:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 9, 8]): Datengetriebene Batch-Verarbeitung mit State-Tracking und Verifikation - Ein Python-Skript, das als Batch-Processor fungiert: Es liest alle ausstehenden Schwarm-Aufgaben aus einem strukturierten Datenformat (JSON/CSV)
+
+### `last_swarm_critique`
+*29.08. 15:41 UTC · Quelle: critic*
+
+score=2; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Bash-Kommandoen zur Exploration; Sandbox-Urteil: LAEUFT NICHT - harter Mangel; Ziel 'Alte Schwarm-Arbeiten abschließen' wird nicht erfuellt - es wird nur erkundet, nicht abgeschlossen; Keine mes
+
+### `last_swarm_goal`
+*29.08. 15:39 UTC · Quelle: system*
+
+Alte Schwarm-Arbeiten abschließen
+
+### `dream:20260829153840:5:2599ee`
+*29.08. 15:38 UTC · Quelle: dream*
+
+Successful artifact execution (164-line Python script) correlates with `hat_code: true` and positive TOR verdict, making code presence a leading indicator of goal achievability.
+
+### `dream:20260829153840:4:94e69a`
+*29.08. 15:38 UTC · Quelle: dream*
+
+Evolutionary refinement (3 variants, winner score 9 vs prior 3) reliably repairs pipeline integration failures when critic feedback is specific.
+
+### `dream:20260829153840:3:9b5fe2`
+*29.08. 15:38 UTC · Quelle: dream*
+
+Effort estimation consistently overshoots actual work (predicted 6 vs actual 3 cycles), indicating a need for calibration against historical deltas.
+
+### `dream:20260829153840:2:db7d04`
+*29.08. 15:38 UTC · Quelle: dream*
+
+`nvidia/nemotron-3-ultra-550b-a55b:free` exhibits high latency variance (6–122 s) requiring timeout budgets and fallback triggers rather than fixed deadlines.
+
+### `dream:20260829153840:1:f76d92`
+*29.08. 15:38 UTC · Quelle: dream*
+
+The free tier model `z-ai/glm-5.2:free` is unreliable due to persistent 429 rate-limit errors and should be deprioritized or wrapped with aggressive backoff.
 
 ### `dream:20260829153401:5:c1daed`
 *29.08. 15:34 UTC · Quelle: dream*
