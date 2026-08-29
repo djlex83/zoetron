@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 11:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 11:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning cycles maintain zero organ errors, but only when model failures don't cascade into diagnostic blind spots.
+- Artifact validation pipelines (dry-run → TOR green-light → knowledge graph promotion) prevent corrupted promotions from unverified actions.
+- Working models exhibit 7-10s latency, requiring conserve-mode protocols that skip simulation when budgets drop below 5s.
+- Model reliability is bimodal: inclusionai/ling-3.0-flash-fin:free and poolside/laguna-s-2.1:free succeed consistently while others fail systematically
+- Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making fallback chains essential for reliability.
 - Pruning runs produce zero deletions, indicating thresholds are misaligned with the actual data lifecycle and access patterns.
 - The fallback model (nvidia/nemotron-3-ultra-550b-a55b:free) succeeds reliably but at ~50s latency, which compounds delays under sustained load.
 - Stale tasks (e.g., Marktanalyse) accumulate when no convergence gate or time-based escalation forces completion.
@@ -51,11 +56,6 @@
 - Repeated model failures without successful fallback attempts indicate a gap in automated retry and model-switching logic.
 - The model poolside/laguna-s-2.1:free consistently succeeds where others fail, suggesting certain lightweight models are more resilient under load.
 - Rate limiting (429) and upstream overload (502) are recurring failure modes across multiple model endpoints, indicating systemic API reliability issue
-- Simulation-revision loops and artifact validation pipelines are critical for converting theoretical proposals into verified, reusable skills.
-- The system's failure rate is nearly double its success rate, driven primarily by model reliability issues rather than task complexity.
-- Stale market analyses and unused skill proposals indicate a systemic gap between completion and operationalization of artifacts.
-- nvidia/nemotron-3-ultra-550b:free consistently succeeds with acceptable latency (8-25s), making it the reliable default model.
-- Rate limiting (429 errors) on z-ai/glm-5.2:free is a recurring failure mode that must be handled with automatic fallback rather than retry.
 
 ---
 

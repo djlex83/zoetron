@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6250 Fakten** · Stand 2026-08-29 11:05 UTC · aktualisiert bei jedem Herzschlag
+**6255 Fakten** · Stand 2026-08-29 11:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2826
+- **dream:** 2831
 - **swarm_artifact:** 1521
 - **last_swarm_critique:** 600
 - **anti_pattern:** 485
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829114532:5:545ac5`
+*29.08. 11:45 UTC · Quelle: dream*
+
+Self-diagnosis and pruning cycles maintain zero organ errors, but only when model failures don't cascade into diagnostic blind spots.
+
+### `dream:20260829114532:4:25b518`
+*29.08. 11:45 UTC · Quelle: dream*
+
+Artifact validation pipelines (dry-run → TOR green-light → knowledge graph promotion) prevent corrupted promotions from unverified actions.
+
+### `dream:20260829114532:3:2a2956`
+*29.08. 11:45 UTC · Quelle: dream*
+
+Working models exhibit 7-10s latency, requiring conserve-mode protocols that skip simulation when budgets drop below 5s.
+
+### `dream:20260829114532:2:6c196e`
+*29.08. 11:45 UTC · Quelle: dream*
+
+Model reliability is bimodal: inclusionai/ling-3.0-flash-fin:free and poolside/laguna-s-2.1:free succeed consistently while others fail systematically.
+
+### `dream:20260829114532:1:f1f89b`
+*29.08. 11:45 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making fallback chains essential for reliability.
 
 ### `tool:modell-fehler-deutlich-reduzieren`
 *29.08. 11:05 UTC · Quelle: hands*
