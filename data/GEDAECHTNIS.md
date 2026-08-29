@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6237 Fakten** · Stand 2026-08-29 10:55 UTC · aktualisiert bei jedem Herzschlag
+**6250 Fakten** · Stand 2026-08-29 11:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2821
-- **swarm_artifact:** 1519
-- **last_swarm_critique:** 599
-- **anti_pattern:** 483
-- **last_swarm_goal:** 348
-- **strategy:** 262
+- **dream:** 2826
+- **swarm_artifact:** 1521
+- **last_swarm_critique:** 600
+- **anti_pattern:** 485
+- **last_swarm_goal:** 349
+- **strategy:** 263
 - **hand_result:** 75
-- **tool:** 61
+- **tool:** 62
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modell-fehler-deutlich-reduzieren`
+*29.08. 11:05 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler deutlich reduzieren'. Datei: data/tools/modell-fehler-deutlich-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler deutlich r:1`
+*29.08. 11:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Semantic-Context-Aware Error Classification - Ersetze die keyword-basierte Kategorisierung durch ein kontextsensitives Klassifizierungssystem, das AST-Parsing (Abstract Syntax Tree) und Code-Embeddings nutzt, um Fehler korrek
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler deutlich r:0`
+*29.08. 11:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Quantitative-Metric-Automated Execution - Definiere einen exakten Baseline-Wert der aktuellen Modellfehler-Rate (z.B. 12,3 % auf dem Validierungsdatensatz) und setze ein konkrete, messbares Reduktionsziel (z.B. 'Reduktion auf
+
+### `last_swarm_critique`
+*29.08. 11:03 UTC · Quelle: critic*
+
+score=7; issues='expected_error_reduction' ist vage ('Signifikant') statt mit konkreten Zahlen messbar; Ausgabe erfolgt nur auf stdout, nicht als persistierte Datei (JSON/Report); Keyword-basierte Kategorisierung kann Fehler falsch einordnen (z.B. 'null' in ni
+
+### `last_swarm_goal`
+*29.08. 11:01 UTC · Quelle: system*
+
+Modell-Fehler deutlich reduzieren
+
+### `dream:20260829110130:5:d23262`
+*29.08. 11:01 UTC · Quelle: dream*
+
+Pruning runs produce zero deletions, indicating thresholds are misaligned with the actual data lifecycle and access patterns.
+
+### `dream:20260829110130:4:826403`
+*29.08. 11:01 UTC · Quelle: dream*
+
+The fallback model (nvidia/nemotron-3-ultra-550b-a55b:free) succeeds reliably but at ~50s latency, which compounds delays under sustained load.
+
+### `dream:20260829110130:3:de5c55`
+*29.08. 11:01 UTC · Quelle: dream*
+
+Stale tasks (e.g., Marktanalyse) accumulate when no convergence gate or time-based escalation forces completion.
+
+### `dream:20260829110130:2:754ab5`
+*29.08. 11:01 UTC · Quelle: dream*
+
+Skill proposals are generated in large numbers (50+) but almost never executed, revealing a systemic proposal-to-implementation gap.
+
+### `dream:20260829110130:1:e02587`
+*29.08. 11:01 UTC · Quelle: dream*
+
+429 rate-limit errors on a single model (z-ai/glm-5.2:free) are the dominant recurring failure, causing cascading task interruptions every few seconds.
 
 ### `dream:20260829105415:5:ef4ac5`
 *29.08. 10:54 UTC · Quelle: dream*
