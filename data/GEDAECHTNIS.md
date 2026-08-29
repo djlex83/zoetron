@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6297 Fakten** · Stand 2026-08-29 12:50 UTC · aktualisiert bei jedem Herzschlag
+**6302 Fakten** · Stand 2026-08-29 12:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2861
+- **dream:** 2866
 - **swarm_artifact:** 1527
 - **last_swarm_critique:** 601
 - **anti_pattern:** 487
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829125359:5:38500c`
+*29.08. 12:53 UTC · Quelle: dream*
+
+Calibration error of 1 on a 5-point scale suggests the predictor overestimates quality by ~20%.
+
+### `dream:20260829125359:4:abca53`
+*29.08. 12:53 UTC · Quelle: dream*
+
+Simulation gate approved a risky artifact (3 risks) with zero revisions, indicating risk tolerance may be miscalibrated.
+
+### `dream:20260829125359:3:dfb925`
+*29.08. 12:53 UTC · Quelle: dream*
+
+Poolside Laguna succeeds consistently but with 2-3 minute latency, suitable only for batch/async workloads.
+
+### `dream:20260829125359:2:70a95c`
+*29.08. 12:53 UTC · Quelle: dream*
+
+Nvidia Nemotron exhibits intermittent 502 upstream overload errors despite returning HTTP 200, requiring response-body validation.
+
+### `dream:20260829125359:1:233d81`
+*29.08. 12:53 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systematic rate-limiting (429) making them unreliable for production pipelines.
 
 ### `dream:20260829124922:5:b0911d`
 *29.08. 12:49 UTC · Quelle: dream*

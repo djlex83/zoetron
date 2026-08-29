@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 12:50:05",
+ "stand": "2026-08-29 12:54:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,21 +27,15 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
+   "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -52,6 +46,12 @@
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0

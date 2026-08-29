@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,20 +12,20 @@
 - Add exponential backoff with jitter (base 2s, max 60s) and quota-aware scheduling before retrying rate-limited *(hatte die Idee 3×)*
 - Enforce structured critic output (JSON schema: issues[{severity,location,suggestion}], overall_score, converge *(hatte die Idee 3×)*
 - Add a latency-aware timeout calculator that sets per-request deadlines at 1.5× the rolling 95th-percentile lat *(hatte die Idee 3×)*
-- Create a pre-flight check skill that verifies model endpoint availability, rate-limit headers, and required sk *(hatte die Idee 2×)*
-- Build a latency-aware dispatcher that routes requests to the fastest healthy endpoint using a rolling scorecar *(hatte die Idee 2×)*
-- Enforce a "dream-to-action" rule: every approved skill proposal must spawn a hand action (file write, script e *(hatte die Idee 2×)*
-- Add per-model rate-limit headroom tracking using response headers (Retry-After, X-RateLimit-Remaining) to pred *(hatte die Idee 2×)*
 - Implement model router with health tracking: prioritize Poolside Laguna-S-2.1, fallback to Nemotron, quarantin *(hatte die Idee 2×)*
 - Wrap hand_action executor to capture stdout/stderr/traceback and return structured error objects instead of si *(hatte die Idee 2×)*
 - Add pre-flight artifact validation (syntax check, import test) before sandbox execution to catch tracebacks ea *(hatte die Idee 2×)*
 - Calibrate predictor on execution-outcome tuples (success/fail) not just scores, using recent 20-run rolling wi *(hatte die Idee 2×)*
+- Create 'fast-path' skill: for simple code-gen tasks, use Poolside Laguna-S-2.1 with 10s timeout, only escalate *(hatte die Idee 2×)*
+- Add a pre-flight path validator for hand actions that resolves ZOETRON_DATA and sys.argv[1] before execution t *(hatte die Idee 2×)*
+- Create a reflex certification pipeline that re-runs stored patterns nightly and demotes any that return ok: fa *(hatte die Idee 2×)*
+- Build a stress-aware scheduler that expands max_iterations only when simulation risk count drops below a thres *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 on a 5-point scale suggests the predictor overestimates quality by ~20%.
+- Simulation gate approved a risky artifact (3 risks) with zero revisions, indicating risk tolerance may be miscalibrated.
+- Poolside Laguna succeeds consistently but with 2-3 minute latency, suitable only for batch/async workloads.
+- Nvidia Nemotron exhibits intermittent 502 upstream overload errors despite returning HTTP 200, requiring response-body validation.
+- Free-tier models on OpenRouter suffer systematic rate-limiting (429) making them unreliable for production pipelines.
 - Simulation approved a swarm despite 3 known risks and zero revisions, indicating risk thresholds are decoupled from actual failure rates.
 - Metabolism stress at 1.0 forces conserve mode (max 1 iteration), which prevents retries that would recover from transient 429/502 errors.
 - Reflex tools crash before validation when the underlying script has import errors or missing dependencies, bypassing the 'unbestechlicher Prüfer'.
@@ -51,11 +56,6 @@
 - Hand-action scripts fail silently when sys.argv paths diverge from actual data locations, requiring pre-execution validation.
 - Absence of automatic retry-with-backoff for transient HTTP 429 errors wastes available quota and causes unnecessary fallbacks.
 - Free-tier LLM endpoints exhibit high failure rates (429/502) making single-model reliance unsafe for production workflows.
-- Skill proposals accumulate (5 in this cycle alone) but completion rate stays low, revealing a proposal-to-execution gap in the capability pipeline.
-- Reflex tools for learning from errors are invoked but have not yet prevented recurring 429 failures, showing learning without structural change.
-- Three completed market analyses remain unused (stale drive goals), indicating a broken handoff from analysis production to decision consumption.
-- The fallback model nvidia/nemotron-3-ultra succeeds but introduces 43-56s latency, making it unsuitable for interactive loops without caching or sched
-- Rate limiting (429 errors) on the primary model z-ai/glm-5.2:free is the dominant systemic failure mode, occurring repeatedly across cycles without au
 
 ---
 
