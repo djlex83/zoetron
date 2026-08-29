@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6678 Fakten** · Stand 2026-08-29 21:39 UTC · aktualisiert bei jedem Herzschlag
+**6683 Fakten** · Stand 2026-08-29 21:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3121
+- **dream:** 3126
 - **swarm_artifact:** 1595
 - **last_swarm_critique:** 613
 - **anti_pattern:** 499
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829214551:5:0e5164`
+*29.08. 21:45 UTC · Quelle: dream*
+
+Having at least one reliable alternative model that completes tasks when the primary fails demonstrates that redundancy is essential for task resilience.
+
+### `dream:20260829214551:4:0bfe26`
+*29.08. 21:45 UTC · Quelle: dream*
+
+Unfinished analytical work decays into waste when there is no mechanism to convert it into concrete next steps.
+
+### `dream:20260829214551:3:1d00f1`
+*29.08. 21:45 UTC · Quelle: dream*
+
+Reflex-driven consolidation successfully converts experience into action, proving that autonomous replay mechanisms work for skill internalization.
+
+### `dream:20260829214551:2:e07c67`
+*29.08. 21:45 UTC · Quelle: dream*
+
+Proposed skills accumulate as dead weight without a conversion gate that requires implementation steps, validation criteria, and ownership.
+
+### `dream:20260829214551:1:daca94`
+*29.08. 21:45 UTC · Quelle: dream*
+
+External API rate limits (429) are a recurring failure mode that blocks the task pipeline when no fallback model is available.
 
 ### `dream:20260829213835:5:93717d`
 *29.08. 21:38 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,17 +14,17 @@
 - Add a convergence gate to simulation-swarm loops: continue cycles until score >=8 or max 5 cycles, logging div *(hatte die Idee 3×)*
 - Implement a model router with circuit-breaker that tracks per-model 429 rates, latency p95, and Retry-After he *(hatte die Idee 3×)*
 - Create a path resolver utility that normalizes sys.argv[1] and ZOETRON_DATA into absolute paths before any fil *(hatte die Idee 3×)*
+- Build a model fallback chain that pre-orders free-tier models by historical success rate and auto-rotates on 4 *(hatte die Idee 3×)*
+- Create a proposal-to-skill conversion gate requiring each proposal to have a defined implementation step, vali *(hatte die Idee 3×)*
 - Create a simulation-to-revision pipeline that auto-generates patch tasks from each identified risk and blocks  *(hatte die Idee 2×)*
 - Calibrate the effort estimator by logging predicted vs actual cycles per capability type and applying a learne *(hatte die Idee 2×)*
 - Encode the evolution loop as a reusable skill: generate 3+ variants, score with critic, promote winner, and ar *(hatte die Idee 2×)*
 - Build skill_factory.py that consumes drive_goal 'gap' signals, generates tested skill skeletons with CI pipeli *(hatte die Idee 2×)*
-- Deploy skill_deployment_orchestrator.py that automatically integrates approved skill proposals, runs integrati *(hatte die Idee 2×)*
-- Implement model-router with real-time health scoring, automatic fallback, and per-model latency percentiles. *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Having at least one reliable alternative model that completes tasks when the primary fails demonstrates that redundancy is essential for task resilien
+- Unfinished analytical work decays into waste when there is no mechanism to convert it into concrete next steps.
+- Reflex-driven consolidation successfully converts experience into action, proving that autonomous replay mechanisms work for skill internalization.
+- Proposed skills accumulate as dead weight without a conversion gate that requires implementation steps, validation criteria, and ownership.
+- External API rate limits (429) are a recurring failure mode that blocks the task pipeline when no fallback model is available.
 - Calibration predicted 7 vs actual 8 (abs_error 1), showing the scoring model is well-calibrated but could tighten bounds to reduce systematic under-es
 - A persistent proposal-to-implementation gap exists: five concrete skill proposals were generated but none were auto-promoted to staging, indicating no
 - Fallback model latency reached 41.7s — nearly triple a reasonable budget — because no per-model latency SLO or p95 enforcement exists on fallback path
@@ -51,11 +56,6 @@
 - Tool scripts depending on sys.argv[1] or ZOETRON_DATA fail silently when relative paths are not resolved against the actual data root directory.
 - The simulation-revision loop (detect risks → revise → re-validate) is a proven procedure that consistently converts failing artifacts into working one
 - The free model z-ai/glm-5.2:free is completely unreliable due to persistent 429 rate-limit errors and must be excluded from any critical execution pat
-- The absence of demonstrated automatic failover means a single model's rate-limit error blocks the entire workflow without any recovery mechanism.
-- Working models show latency doubling (11.8s to 26.7s) over successive calls, suggesting resource contention that degrades performance before outright 
-- Fifty-five skill proposals have accumulated without any being implemented, exposing a broken ideation-to-execution pipeline where generation consisten
-- Self-diagnosis reports zero organ errors while the system experiences repeated model failures and latency degradation, revealing a diagnostic blind sp
-- The z-ai/glm-5.2 model fails repeatedly with 429 errors across consecutive calls, indicating a structural rate-limit ceiling on free tiers rather than
 
 ---
 
