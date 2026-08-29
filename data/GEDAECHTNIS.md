@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6192 Fakten** · Stand 2026-08-29 09:53 UTC · aktualisiert bei jedem Herzschlag
+**6197 Fakten** · Stand 2026-08-29 09:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2776
+- **dream:** 2781
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829095823:5:f67767`
+*29.08. 09:58 UTC · Quelle: dream*
+
+Swarm terminated after only 2 cycles with score 1 and converged=false, suggesting convergence criteria are decoupled from actual task success.
+
+### `dream:20260829095823:4:a0723a`
+*29.08. 09:58 UTC · Quelle: dream*
+
+Five simulation revisions were applied yet hand_action still failed with exit code 1, showing revisions addressed wrong failure modes.
+
+### `dream:20260829095823:3:99c82e`
+*29.08. 09:58 UTC · Quelle: dream*
+
+Evolution produced high-scoring variants (6-8) but final swarm score remained 1, indicating a disconnect between offline optimization and online execution.
+
+### `dream:20260829095823:2:9b4bf7`
+*29.08. 09:58 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overconfidence in simulation-to-execution translation.
+
+### `dream:20260829095823:1:c11638`
+*29.08. 09:58 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading failures (429/502) under load, making single-model reliance fatal for production tasks.
 
 ### `dream:20260829095236:5:1b2052`
 *29.08. 09:52 UTC · Quelle: dream*

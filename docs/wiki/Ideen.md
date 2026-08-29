@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 09:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 09:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm terminated after only 2 cycles with score 1 and converged=false, suggesting convergence criteria are decoupled from actual task success.
+- Five simulation revisions were applied yet hand_action still failed with exit code 1, showing revisions addressed wrong failure modes.
+- Evolution produced high-scoring variants (6-8) but final swarm score remained 1, indicating a disconnect between offline optimization and online execu
+- Calibration error of 3 points (predicted 4 vs actual 1) reveals systematic overconfidence in simulation-to-execution translation.
+- Free-tier models exhibit cascading failures (429/502) under load, making single-model reliance fatal for production tasks.
 - JSON parsing errors (Expecting value at line 373) occur alongside rate limits, suggesting malformed responses under load.
 - Calibration predictions show large absolute errors (predicted 4, actual 1), revealing unreliable confidence estimation in task planning.
 - Hand actions fail with exit code 1 and zero gelesen values, indicating a systematic execution or environment configuration problem.
@@ -51,11 +56,6 @@
 - The swarm cleaned up old results but did not converge (score 3, converged=false), suggesting cleanup tasks need explicit acceptance criteria, not just
 - Model latency varies by 5x+ for the same model (nemotron: 86s vs 15s), indicating queue-depth dependence that single health checks cannot capture.
 - Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making naive round-robin selection ineffective.
-- Self-diagnosis and pruning reported zero issues while swarm failed, indicating monitoring blind spots in task-level outcome tracking.
-- Fast local model (poolside/laguna-s-2.1: 4.5s) outperformed cloud models on latency and reliability, validating local-first fallback strategy.
-- Swarm role imbalance (3 builders, 1 critic) likely caused insufficient critique pressure to drive convergence past score 6.
-- Evolution produced a high-scoring variant (8.7) but swarm execution failed to converge, revealing a gap between static evaluation and dynamic orchestr
-- Rate limiting (429) across multiple cloud models indicates systemic dependency on unreliable free-tier endpoints rather than isolated failures.
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 09:52:55",
+ "stand": "2026-08-29 09:58:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,16 +9,16 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 10,
+   "erfolge": 10,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 9,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 9,
-   "erfolge": 9,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -27,15 +27,15 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
