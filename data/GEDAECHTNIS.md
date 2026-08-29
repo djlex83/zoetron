@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5889 Fakten** · Stand 2026-08-29 02:07 UTC · aktualisiert bei jedem Herzschlag
+**5906 Fakten** · Stand 2026-08-29 02:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2636
-- **swarm_artifact:** 1429
-- **last_swarm_critique:** 584
-- **anti_pattern:** 463
-- **last_swarm_goal:** 333
-- **strategy:** 252
+- **dream:** 2641
+- **swarm_artifact:** 1435
+- **last_swarm_critique:** 585
+- **anti_pattern:** 465
+- **last_swarm_goal:** 334
+- **strategy:** 253
 - **hand_result:** 70
-- **tool:** 53
+- **tool:** 54
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:neue-fähigkeiten-prüfen-und-integrieren`
+*29.08. 02:19 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Neue Fähigkeiten prüfen und integrieren'. Datei: data/tools/neue-fähigkeiten-prüfen-und-integrieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Neue Fähigkeiten prüfen :2`
+*29.08. 02:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Test-Driven Skill Certification (TDSC) - Invert the flow: every new skill must first provide a certification test suite (property-based tests, contract tests, benchmark thresholds) written against the real organ inter
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Neue Fähigkeiten prüfen :1`
+*29.08. 02:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Capability Graph with Dependency Injection - Model skills as nodes in a directed capability graph where edges express tool/benchmark/convergence dependencies. Use a DI container to wire real organ implementations (ben
+
+### `last_swarm_critique`
+*29.08. 02:17 UTC · Quelle: critic*
+
+score=6; issues=Fallback-Dummy-Module in skill_validator umgehen echte werkzeugpruefung/benchmark_organ - Validierung wird de facto deaktiviert; konvergenztor.pruefe wird in skill_integrator nur simuliert (Syntax-Check + Heuristik), nicht als echtes Organ impo
+
+### `last_swarm_goal`
+*29.08. 02:13 UTC · Quelle: system*
+
+Neue Fähigkeiten prüfen und integrieren
+
+### `dream:20260829021259:5:15a3c8`
+*29.08. 02:12 UTC · Quelle: dream*
+
+Latency variance on fallback model (2.9s to 24.1s) shows no latency budget or timeout guard, risking stalled cycles under load.
+
+### `dream:20260829021259:4:b76fe7`
+*29.08. 02:12 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this log) but no execution pipeline exists, creating an idea-to-implementation gap that drive goals explicitly flag.
+
+### `dream:20260829021259:3:46026a`
+*29.08. 02:12 UTC · Quelle: dream*
+
+Reflex-mode goals converge without deliberation, yet stale market-analysis goals persist across cycles, indicating reflex handles cleanup but not multi-step synthesis.
+
+### `dream:20260829021259:2:310e9b`
+*29.08. 02:12 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite 429 errors occurring, revealing a blind spot where internal health checks don't validate external API success rates.
+
+### `dream:20260829021259:1:9813a3`
+*29.08. 02:12 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model repeatedly hits 429 rate limits while nvidia/nemotron-3-ultra succeeds, proving single-provider reliance causes cascading failures.
 
 ### `dream:20260829020616:5:ffa117`
 *29.08. 02:06 UTC · Quelle: dream*
