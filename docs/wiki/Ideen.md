@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 01:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 01:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,11 +9,11 @@
 - Add exponential backoff with jitter (base 2 s, max 60 s) and quota-aware scheduling before retrying rate-limit *(hatte die Idee 4×)*
 - Create a latency-budget guard that cancels requests exceeding tier-specific SLA (10 s analysis, 30 s synthesis *(hatte die Idee 4×)*
 - Build a diagnostic gap analyzer that cross-references internal "zero errors" claims with external success-rate *(hatte die Idee 4×)*
+- Implement a model router with per-provider circuit breakers that trip on 429/502 rates >10% and automatically  *(hatte die Idee 4×)*
 - Implement pre-flight organ existence checks before swarm launch to fail fast on missing tools like swarm.py. *(hatte die Idee 3×)*
 - Build a real-time model health dashboard tracking 429/502 rates, p95 latency, and consecutive errors to drive  *(hatte die Idee 3×)*
 - Create an automatic skill promotion pipeline: proposal → simulation verdict → merge when risk_count < 2 and la *(hatte die Idee 3×)*
 - Enforce structured critic output (JSON schema: issues[{severity,location,suggestion}], overall_score, converge *(hatte die Idee 3×)*
-- Implement a model router with per-provider circuit breakers that trip on 429/502 rates >10% and automatically  *(hatte die Idee 3×)*
 - Implement a model health monitor that auto-excludes endpoints after 3 consecutive 429 responses with exponenti *(hatte die Idee 2×)*
 - Build a latency-aware router with per-model timeout budgets (e.g., 30s p95) and automatic fallback to fastest  *(hatte die Idee 2×)*
 - Add convergence criteria to evolution/swarm loops: stop when top-score plateaus for 2 cycles AND score varianc *(hatte die Idee 2×)*
@@ -28,9 +28,9 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflexive execution successfully completes specific tasks like market analysis, proving that pre-defined action scripts are effective for routine oper
+- Internal self-diagnoses reporting zero errors may mask underlying systemic issues if not cross-referenced with external success-rate metrics.
+- Stale tasks accumulate when internal drive goals are not actively executed, indicating a need for automated stale-task detection and prioritization.
+- High variance in latency for working models (9s to 19s) necessitates strict latency budgets to prevent stalling.
+- Free-tier models like z-ai/glm-5.2:free are highly prone to rate-limiting (429 errors), causing cascading failures in the pipeline.
 - Self-diagnosis reporting zero organ errors while the system scores 2/10 reveals that organ health metrics do not capture task-level failure modes; dia
 - Hand actions failing with exit code 1 and zero bytes read indicate missing pre-flight checks (file existence, permissions) that should be automated.
 - Simulation-revision loops generate revisions without verifying that each revision reduces the highest-risk item; risk-weighted revision acceptance is 
@@ -51,11 +56,6 @@
 - Hand actions repeatedly fail with exit code 1 and zero bytes read, suggesting a fundamental issue with file system access or permission handling in th
 - The 'senses-Organ nicht gefunden' error in the tor entry reveals a critical path resolution failure where the system cannot locate the required /works
 - The z-ai/glm-5.2:free model consistently fails with 429 Too Many Requests errors, indicating a rate-limiting or availability issue with that specific 
-- Swarm convergence succeeds but generates resilience proposals that remain unimplemented, creating a proposal-to-production gap.
-- Self-diagnosis reporting zero organ errors while external model failures persist demonstrates a critical blind spot in internal monitoring.
-- Calibration error (predicted 6 vs actual 8) reveals that confidence estimates drift without continuous outcome-based updating.
-- High latency variance (27–76 s) without timeout guards causes unpredictable delays and blocks downstream processes.
-- Rate limiting (429) and upstream errors (502) across multiple providers indicate systemic lack of resilience mechanisms in model routing.
 
 ---
 

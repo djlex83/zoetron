@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 3936 Neuronen · 150828 bewertete Synapsen
+Stand: 3941 Neuronen · 151155 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,18 +12,18 @@ Stand: 3936 Neuronen · 150828 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 368 | 0.26 |
 | 2 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 368 | 0.26 |
-| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 374 | 0.24 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 365 | 0.24 |
-| 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 371 | 0.23 |
+| 3 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 375 | 0.24 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 366 | 0.24 |
+| 5 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 372 | 0.23 |
 | 6 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 340 | 0.24 |
 | 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 321 | 0.25 |
 | 8 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 308 | 0.25 |
 | 9 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 322 | 0.23 |
 | 10 | 💭 | Fallback model latency varies 4x (16.8s–74.3s), revealing no lat… | 314 | 0.24 |
 | 11 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 307 | 0.24 |
-| 12 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 288 | 0.24 |
+| 12 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 289 | 0.24 |
 | 13 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 312 | 0.22 |
-| 14 | 💭 | Nvidia Nemotron models provide the only consistent successes but… | 291 | 0.23 |
+| 14 | 💭 | Nvidia Nemotron models provide the only consistent successes but… | 292 | 0.23 |
 | 15 | 💭 | The nemotron-3-ultra model exhibits unpredictable high latency (… | 284 | 0.24 |
 
 ## Die 15 stärksten Synapsen
