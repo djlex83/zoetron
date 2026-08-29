@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 17:58:09",
+ "stand": "2026-08-29 18:20:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,6 +33,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -43,12 +49,6 @@
    "laeufe": 5,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
@@ -87,12 +87,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -103,6 +97,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",

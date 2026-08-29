@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6517 Fakten** · Stand 2026-08-29 17:58 UTC · aktualisiert bei jedem Herzschlag
+**6522 Fakten** · Stand 2026-08-29 18:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2991
+- **dream:** 2996
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829181934:5:0f7a69`
+*29.08. 18:19 UTC · Quelle: dream*
+
+Metabolism stress signals exist but are not yet wired to throttle parallelism, switch models, or extend timeouts automatically.
+
+### `dream:20260829181934:4:d4c1d8`
+*29.08. 18:19 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ in this log) but no lifecycle promotes them to production; the gap between proposal and deployment is structural.
+
+### `dream:20260829181934:3:8e042a`
+*29.08. 18:19 UTC · Quelle: dream*
+
+Hand actions fail due to relative-path assumptions (sys.argv[1], ZOETRON_DATA) instead of absolute, validated paths, making reflexes brittle.
+
+### `dream:20260829181934:2:1aa00a`
+*29.08. 18:19 UTC · Quelle: dream*
+
+Persistent drive goals (reduce model errors, finish market analyses, deploy skills) recur across cycles but lack forced-completion mechanisms, causing stagnation.
+
+### `dream:20260829181934:1:0f3c91`
+*29.08. 18:19 UTC · Quelle: dream*
+
+Rate-limited models (z-ai/glm-5.2) repeatedly cause 429 errors without automatic fallback, wasting cycles and blocking progress.
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Alte Marktanalyse auf de:1`
 *29.08. 17:57 UTC · Quelle: evolution*
