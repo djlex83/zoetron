@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6481 Fakten** · Stand 2026-08-29 17:09 UTC · aktualisiert bei jedem Herzschlag
+**6486 Fakten** · Stand 2026-08-29 17:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2971
+- **dream:** 2976
 - **swarm_artifact:** 1569
 - **last_swarm_critique:** 608
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829171858:5:056439`
+*29.08. 17:18 UTC · Quelle: dream*
+
+Circuit-breaker patterns with cooldown tracking prevent wasted calls to known-failing endpoints and reduce cascading failure costs.
+
+### `dream:20260829171858:4:44974f`
+*29.08. 17:18 UTC · Quelle: dream*
+
+The reflex mechanism successfully converts proposals into executed actions, validating that the autonomous skill-implementation loop functions end-to-end.
+
+### `dream:20260829171858:3:60fd63`
+*29.08. 17:18 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposal generation and actual implementation, indicating the proposal-to-deployment pipeline is broken.
+
+### `dream:20260829171858:2:048037`
+*29.08. 17:18 UTC · Quelle: dream*
+
+No single model endpoint is reliable enough to complete a task uninterrupted; a multi-model fallback chain is essential for task resilience.
+
+### `dream:20260829171858:1:090af8`
+*29.08. 17:18 UTC · Quelle: dream*
+
+Rate-limit errors (429) are the dominant failure mode across all providers, requiring proactive throttling instead of reactive retry loops.
 
 ### `tool:schwarm-orchestrierung-vollständig-aufba`
 *29.08. 17:09 UTC · Quelle: hands*

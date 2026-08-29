@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 17:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 17:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit-breaker patterns with cooldown tracking prevent wasted calls to known-failing endpoints and reduce cascading failure costs.
+- The reflex mechanism successfully converts proposals into executed actions, validating that the autonomous skill-implementation loop functions end-to-
+- A persistent gap exists between skill proposal generation and actual implementation, indicating the proposal-to-deployment pipeline is broken.
+- No single model endpoint is reliable enough to complete a task uninterrupted; a multi-model fallback chain is essential for task resilience.
+- Rate-limit errors (429) are the dominant failure mode across all providers, requiring proactive throttling instead of reactive retry loops.
 - Hand actions use exit codes that conflate transient I/O failures with logic errors, preventing precise retry policies.
 - The system already generates concrete skill proposals from failures but lacks an automated deployment pipeline to close the loop without manual reflex
 - Drive goals emerge reactively from failure signals rather than proactive architecture, creating a lag between problem detection and systemic fix.
@@ -51,11 +56,6 @@
 - Self-diagnosis confirms zero internal organ failures — the problem is entirely at the API boundary, so resilience must be built there.
 - Model reliability is highly variable across providers; a rotating pool with per-model health tracking prevents single-provider dependency.
 - 429 rate-limit errors from external APIs are the dominant failure mode, requiring proactive circuit-breaking rather than blind retries.
-- Structured error capture is essential for diagnosing transient infrastructure issues versus persistent logic errors.
-- Stale tasks indicate a need for better prioritization or automated resumption of long-dormant goals.
-- Skill proposals are accumulating but lack a structured lifecycle process to transition from idea to tested, available skill.
-- Relying on a small unmanaged pool of free models leads to cascading failures and stalled execution.
-- Free models are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 
 ---
 
