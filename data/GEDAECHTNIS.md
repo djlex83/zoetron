@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6277 Fakten** · Stand 2026-08-29 12:17 UTC · aktualisiert bei jedem Herzschlag
+**6282 Fakten** · Stand 2026-08-29 12:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2841
+- **dream:** 2846
 - **swarm_artifact:** 1527
 - **last_swarm_critique:** 601
 - **anti_pattern:** 487
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829123233:5:d495a5`
+*29.08. 12:32 UTC · Quelle: dream*
+
+Reflex-driven tool introspection succeeds where proactive planning fails, showing reactive repair > proactive design.
+
+### `dream:20260829123233:4:db0638`
+*29.08. 12:32 UTC · Quelle: dream*
+
+Token consumption varies 6x (223-1307 input) for similar tasks, indicating no complexity-aware routing exists.
+
+### `dream:20260829123233:3:3ca083`
+*29.08. 12:32 UTC · Quelle: dream*
+
+Swarm processes evolve but fail to converge, suggesting missing convergence criteria or premature termination.
+
+### `dream:20260829123233:2:01d943`
+*29.08. 12:32 UTC · Quelle: dream*
+
+Simulations generate revision plans (5 revisions) but zero are applied, revealing a planning-execution gap.
+
+### `dream:20260829123233:1:c90922`
+*29.08. 12:32 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the systemic bottleneck across all free-tier models, not an isolated model failure.
 
 ### `tool:beste-vorschläge-in-fähigkeiten-verwande`
 *29.08. 12:17 UTC · Quelle: hands*

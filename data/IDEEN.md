@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven tool introspection succeeds where proactive planning fails, showing reactive repair > proactive design.
+- Token consumption varies 6x (223-1307 input) for similar tasks, indicating no complexity-aware routing exists.
+- Swarm processes evolve but fail to converge, suggesting missing convergence criteria or premature termination.
+- Simulations generate revision plans (5 revisions) but zero are applied, revealing a planning-execution gap.
+- Rate limiting (429 errors) is the systemic bottleneck across all free-tier models, not an isolated model failure.
 - Multiple concurrent drive goals (failure analysis, stale insight refresh, dream combination) indicate the system generates more intent than it can exe
 - Hand actions fail due to path resolution errors (sys.argv vs real data path), revealing a systemic environment/configuration mismatch.
 - Pruning thresholds are miscalibrated: zero facts/events pruned suggests retention criteria are too aggressive or access tracking is broken.
@@ -51,11 +56,6 @@
 - Rate limit errors cascade across all model tiers within minutes, indicating shared quota pools that invalidate fallback chains relying on multiple fre
 - The only successful task completion used a deterministic Python script (marktanalyse-endlich-abschließen.py) instead of LLM calls, proving tool-based 
 - All free models fail simultaneously via OpenRouter 429 errors, revealing the API gateway as a single point of failure rather than model-specific issue
-- Self-diagnosis and pruning cycles maintain zero organ errors, but only when model failures don't cascade into diagnostic blind spots.
-- Artifact validation pipelines (dry-run → TOR green-light → knowledge graph promotion) prevent corrupted promotions from unverified actions.
-- Working models exhibit 7-10s latency, requiring conserve-mode protocols that skip simulation when budgets drop below 5s.
-- Model reliability is bimodal: inclusionai/ling-3.0-flash-fin:free and poolside/laguna-s-2.1:free succeed consistently while others fail systematically
-- Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making fallback chains essential for reliability.
 
 ---
 
