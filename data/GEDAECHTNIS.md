@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6401 Fakten** · Stand 2026-08-29 15:24 UTC · aktualisiert bei jedem Herzschlag
+**6406 Fakten** · Stand 2026-08-29 15:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2911
+- **dream:** 2916
 - **swarm_artifact:** 1557
 - **last_swarm_critique:** 606
 - **anti_pattern:** 493
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829152856:5:5f1024`
+*29.08. 15:28 UTC · Quelle: dream*
+
+Hand action exits with code 1 but zero error details, making debugging impossible; all external calls must emit structured error payloads.
+
+### `dream:20260829152856:4:214a48`
+*29.08. 15:28 UTC · Quelle: dream*
+
+Calibration error of +1 (predicted 5 vs actual 6) suggests consistent underestimation; prediction models need bias correction.
+
+### `dream:20260829152856:3:9266e1`
+*29.08. 15:28 UTC · Quelle: dream*
+
+Evolution/swarm cycles improve scores (6→8–9) but stall at non-convergence, revealing missing termination criteria for 'good enough' results.
+
+### `dream:20260829152856:2:d85215`
+*29.08. 15:28 UTC · Quelle: dream*
+
+Latency variance of 12–200s on nvidia/nemotron-3-ultra shows that single-model reliance risks unpredictable delays; a latency-aware router is required.
+
+### `dream:20260829152856:1:df8fd0`
+*29.08. 15:28 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate that models without automatic rate-limit backoff cause systemic failures and must be circuit-broken.
 
 ### `dream:20260829152359:5:6cdeff`
 *29.08. 15:23 UTC · Quelle: dream*
