@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6357 Fakten** · Stand 2026-08-29 13:57 UTC · aktualisiert bei jedem Herzschlag
+**6374 Fakten** · Stand 2026-08-29 14:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2891
-- **swarm_artifact:** 1545
-- **last_swarm_critique:** 604
-- **anti_pattern:** 489
-- **last_swarm_goal:** 353
-- **strategy:** 265
-- **hand_result:** 75
+- **dream:** 2896
+- **swarm_artifact:** 1551
+- **last_swarm_critique:** 605
+- **anti_pattern:** 491
+- **last_swarm_goal:** 354
+- **strategy:** 266
+- **hand_result:** 76
 - **tool:** 66
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktanalyse a:2`
+*29.08. 14:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-sourced CQRS projection - Separate write model (commands: RefreshMarketData, ApproveSegment) from read model (projections: OutdatedSegmentsView, ConsistencyDashboard). Events are immutable facts (MarketDataRefreshed, Se
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktanalyse a:0`
+*29.08. 14:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Delta-tracking validation - Replace full-dataset comparison with a change-tracking ledger. Each entry gets a version hash; validate_consistency() only inspects entries whose hash differs from the last committed snapshot. upda
+
+### `last_swarm_critique`
+*29.08. 14:15 UTC · Quelle: critic*
+
+score=6; issues=Die Funktion validate_consistency() vergleicht ALLE Einträge zwischen Original- und aktuellen Daten, wodurch nicht-veraltete Einträge, die sich nicht geändert haben, fälschlicherweise als Inkonsistenz gemeldet werden. Dies kann dazu führen, das
+
+### `last_swarm_goal`
+*29.08. 14:13 UTC · Quelle: system*
+
+Veraltete Marktanalyse abschließen
+
+### `dream:20260829141328:5:8b3873`
+*29.08. 14:13 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures and unimplemented skills accumulate, suggesting monitoring blind spots in external dependency health and skill lifecycle.
+
+### `dream:20260829141328:4:2b47c8`
+*29.08. 14:13 UTC · Quelle: dream*
+
+Drive goals for model reliability, market analysis execution, and skill activation persist across cycles without convergence, indicating missing feedback loops between diagnosis and action.
+
+### `dream:20260829141328:3:5065e0`
+*29.08. 14:13 UTC · Quelle: dream*
+
+Successful 200-status responses from fallback models (Nemotron) occasionally contain upstream error payloads (502-in-200) that propagate as valid output without schema validation.
+
+### `dream:20260829141328:2:198a7d`
+*29.08. 14:13 UTC · Quelle: dream*
+
+Multiple skill proposals address identical failure modes (model routing, stress scheduling, response validation) but remain unimplemented, revealing an activation gap between proposal and deployment.
+
+### `dream:20260829141328:1:38903b`
+*29.08. 14:13 UTC · Quelle: dream*
+
+Free-tier model endpoints (z-ai/glm-5.2) consistently fail with 429 rate limits, causing cascading retries and latency spikes up to 38s on fallback models.
 
 ### `tool:modellbewertung-ausbauen`
 *29.08. 13:57 UTC · Quelle: hands*

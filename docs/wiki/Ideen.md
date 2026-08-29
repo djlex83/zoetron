@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 13:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 14:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures and unimplemented skills accumulate, suggesting monitoring blind spots in external depen
+- Drive goals for model reliability, market analysis execution, and skill activation persist across cycles without convergence, indicating missing feedb
+- Successful 200-status responses from fallback models (Nemotron) occasionally contain upstream error payloads (502-in-200) that propagate as valid outp
+- Multiple skill proposals address identical failure modes (model routing, stress scheduling, response validation) but remain unimplemented, revealing a
+- Free-tier model endpoints (z-ai/glm-5.2) consistently fail with 429 rate limits, causing cascading retries and latency spikes up to 38s on fallback mo
 - Stale goals (market analysis, dream-to-skill conversion) persist despite active error-fixing swarms, indicating a prioritization gap between maintenan
 - The swarm→simulation→hand_action→TOR pipeline successfully produced a running 216-line Python artifact in one cycle under conserve mode.
 - The inclusionai/ling-3.0-flash-fin:free model succeeded with low latency (3.4s), suggesting a viable fast-path alternative.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate but rarely get implemented; a gated promotion pipeline (proposal → sandbox dry-run → stress-test → swarm commit) would clos
 - High latency (20-30s) on fallback models creates cascading timeouts; async batch queues with timeout budgets and progress callbacks are needed for non
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without token-bucket throttling and automati
-- Simulation-swarm loops lack convergence criteria, causing unbounded cycles that waste tokens on divergent trajectories.
-- Multiple concurrent drive goals (reliability, market analysis, memory recombination) compete for limited model throughput without priority arbitration
-- Reflex scripts execute successfully but lack pre-deployment validation, creating silent failure risk when dependencies shift.
-- Pruning thresholds remain static despite zero pruning events, indicating half-life calibration must be data-driven not heuristic.
-- Free-tier model endpoints consistently fail under load with 429/502 errors, making automatic failover and rate limiting essential for reliability.
 
 ---
 

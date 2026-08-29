@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 13:57:11",
+ "stand": "2026-08-29 14:20:36",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,14 +69,8 @@
    "quote": 1.0
   },
   {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "entfernte-erinnerungen-verknüpfen.py",
-   "laeufe": 2,
+   "tool": "marktanalyse-endlich-umsetzen.py",
+   "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -93,12 +87,6 @@
    "quote": 0.5
   },
   {
-   "tool": "marktanalyse-endlich-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -113,6 +101,12 @@
   {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "entfernte-erinnerungen-verknüpfen.py",
+   "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -147,6 +141,12 @@
    "quote": 0.0
   },
   {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -165,17 +165,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.655,
+ "haende_quote": 0.65,
  "simulationen_angewandt": 37,
  "swarm_scores": {
-  "n": 39,
+  "n": 40,
   "best": 9.0,
-  "schnitt": 5.33
+  "schnitt": 5.35
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 36,
-   "schnitt": 5.06
+   "schnitt": 5.03
   },
   "bau": {
    "n": 3,

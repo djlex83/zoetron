@@ -1,0 +1,24 @@
+{
+  "eintraege": [
+    {
+      "id": "preis_wettbewerber_2023",
+      "wert": 53.61,
+      "updated": "2026-08-29T14:15:34.375372",
+      "meta": "veraltet",
+      "status": "aktualisiert"
+    },
+    {
+      "id": "marktanteil_segment_x",
+      "wert": 16.07,
+      "updated": "2026-08-29T14:15:34.375212",
+      "meta": "alt",
+      "status": "aktualisiert"
+    },
+    {
+      "id": "umsatz_q1",
+      "wert": 1200.0,
+      "updated": "2026-08-29T14:15:34.375046",
+      "meta": "aktuell"
+    }
+  ]
+}
