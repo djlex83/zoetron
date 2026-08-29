@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 02:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 03:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
-- Modelle besser verstehen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten testen *(wieder aufgegriffen: 2×)*
+- Mehr Simulationen zum Lernen nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary optimization lifted the capability score from 6 to 9 by replacing fallback-dummy modules with functional implementations in the winning v
+- Calibration error of 3 (predicted 3 vs actual 6) indicates the effort estimator systematically underestimates integration complexity for new capabilit
+- Simulation-driven revision (5 risks → 5 revisions) successfully hardened the artifact before execution, evidenced by TOR green on first run.
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (6.8–79.4s), requiring timeout and retry policies tuned to the 95th
+- The z-ai/glm-5.2:free model is consistently unavailable due to rate limiting (429 errors), making it unreliable as a primary or fallback provider.
 - Reflex-mode actions complete quickly (0.19s, exit 0) and reliably compared to model-driven actions, suggesting known-good reflexes should be preferred
 - Stale tasks like the unused market analysis persist across dream cycles without being archived or acted on, so pruning (facts_pruned: 0, events_pruned
 - Skill proposals accumulate without being learned (drive_goal 'gap' signal), indicating the system generates more proposals than it can absorb - propos
@@ -51,11 +56,6 @@
 - Accumulated skill proposals (fallback, smoke tests, calibration) remain unimplemented while drive goals repeat same failure signals.
 - Latency variance for identical models (5-17s) indicates unstable infrastructure requiring health-aware routing.
 - Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) making single-model reliance unreliable.
-- Self-diagnosis reports zero organ errors despite repeated model failures, revealing a blind spot in external dependency monitoring.
-- Reflex-driven dream connection successfully converges goals, suggesting associative memory consolidation works for knowledge integration.
-- Skill proposals accumulate without implementation, indicating a gap between proposal generation and skill acquisition.
-- Nemotron-3-Ultra serves as a viable fallback but exhibits high latency variance (5–17s), requiring timeout budgets and latency-aware routing.
-- Free-tier models like GLM-5.2 consistently fail under load with 429 errors, making them unreliable for production workflows.
 
 ---
 

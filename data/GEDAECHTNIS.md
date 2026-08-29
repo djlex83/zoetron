@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5930 Fakten** · Stand 2026-08-29 02:52 UTC · aktualisiert bei jedem Herzschlag
+**5944 Fakten** · Stand 2026-08-29 03:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2656
-- **swarm_artifact:** 1441
-- **last_swarm_critique:** 586
+- **dream:** 2661
+- **swarm_artifact:** 1447
+- **last_swarm_critique:** 587
 - **anti_pattern:** 465
-- **last_swarm_goal:** 335
+- **last_swarm_goal:** 336
 - **strategy:** 253
-- **hand_result:** 70
+- **hand_result:** 71
 - **tool:** 55
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*29.08. 03:12 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*29.08. 03:06 UTC · Quelle: system*
+
+Alte Marktforschungsergebnisse aktualisieren
+
+### `dream:20260829030633:5:b76ebd`
+*29.08. 03:06 UTC · Quelle: dream*
+
+Evolutionary optimization lifted the capability score from 6 to 9 by replacing fallback-dummy modules with functional implementations in the winning variant.
+
+### `dream:20260829030633:4:810f86`
+*29.08. 03:06 UTC · Quelle: dream*
+
+Calibration error of 3 (predicted 3 vs actual 6) indicates the effort estimator systematically underestimates integration complexity for new capabilities.
+
+### `dream:20260829030633:3:e2ad6f`
+*29.08. 03:06 UTC · Quelle: dream*
+
+Simulation-driven revision (5 risks → 5 revisions) successfully hardened the artifact before execution, evidenced by TOR green on first run.
+
+### `dream:20260829030633:2:d8b705`
+*29.08. 03:06 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (6.8–79.4s), requiring timeout and retry policies tuned to the 95th percentile.
+
+### `dream:20260829030633:1:b0428e`
+*29.08. 03:06 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is consistently unavailable due to rate limiting (429 errors), making it unreliable as a primary or fallback provider.
 
 ### `tool:modellfehler-verstehen-und-verringern`
 *29.08. 02:51 UTC · Quelle: hands*
