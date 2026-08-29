@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5854 Fakten** · Stand 2026-08-29 01:15 UTC · aktualisiert bei jedem Herzschlag
+**5859 Fakten** · Stand 2026-08-29 01:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2601
+- **dream:** 2606
 - **swarm_artifact:** 1429
 - **last_swarm_critique:** 584
 - **anti_pattern:** 463
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829013704:5:c137f8`
+*29.08. 01:37 UTC · Quelle: dream*
+
+The evolution_run demonstrates successful improvement from 2/10 to 8/10 score through variant testing, showing that iterative refinement with multiple approaches can overcome initial failures.
+
+### `dream:20260829013704:4:37343b`
+*29.08. 01:37 UTC · Quelle: dream*
+
+Calibration shows a consistent overprediction pattern (predicted 5 vs actual 2), indicating the system's confidence scoring is misaligned with actual performance outcomes.
+
+### `dream:20260829013704:3:5e3636`
+*29.08. 01:37 UTC · Quelle: dream*
+
+Hand actions repeatedly fail with exit code 1 and zero bytes read, suggesting a fundamental issue with file system access or permission handling in the execution environment.
+
+### `dream:20260829013704:2:1c9bcd`
+*29.08. 01:37 UTC · Quelle: dream*
+
+The 'senses-Organ nicht gefunden' error in the tor entry reveals a critical path resolution failure where the system cannot locate the required /workspace/zoetron/data directory.
+
+### `dream:20260829013704:1:02c176`
+*29.08. 01:37 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 Too Many Requests errors, indicating a rate-limiting or availability issue with that specific model endpoint.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Sc:2`
 *29.08. 01:14 UTC · Quelle: evolution*
