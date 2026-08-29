@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6658 Fakten** · Stand 2026-08-29 21:13 UTC · aktualisiert bei jedem Herzschlag
+**6663 Fakten** · Stand 2026-08-29 21:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3101
+- **dream:** 3106
 - **swarm_artifact:** 1595
 - **last_swarm_critique:** 613
 - **anti_pattern:** 499
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829211644:5:21ee05`
+*29.08. 21:16 UTC · Quelle: dream*
+
+Self-diagnosis ignores external API health metrics, leaving the system blind to upstream degradation.
+
+### `dream:20260829211644:4:e49a9a`
+*29.08. 21:16 UTC · Quelle: dream*
+
+Reactive error handling dominates; no proactive circuit-breaking or exponential backoff protects external I/O.
+
+### `dream:20260829211644:3:92757f`
+*29.08. 21:16 UTC · Quelle: dream*
+
+Numerous skill proposals exist but remain unimplemented, revealing a gap between diagnosis and execution.
+
+### `dream:20260829211644:2:318545`
+*29.08. 21:16 UTC · Quelle: dream*
+
+Model endpoints exhibit inconsistent availability (404, 429) requiring pre-flight health checks before dispatch.
+
+### `dream:20260829211644:1:3f547c`
+*29.08. 21:16 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple models indicates systemic lack of rate-limit awareness and automatic failover.
 
 ### `dream:20260829211211:5:534364`
 *29.08. 21:12 UTC · Quelle: dream*

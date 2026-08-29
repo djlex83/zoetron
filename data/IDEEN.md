@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse abschließen und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis ignores external API health metrics, leaving the system blind to upstream degradation.
+- Reactive error handling dominates; no proactive circuit-breaking or exponential backoff protects external I/O.
+- Numerous skill proposals exist but remain unimplemented, revealing a gap between diagnosis and execution.
+- Model endpoints exhibit inconsistent availability (404, 429) requiring pre-flight health checks before dispatch.
+- Rate limiting (429 errors) across multiple models indicates systemic lack of rate-limit awareness and automatic failover.
 - The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) proves automated model remediation works but remains isolated from the main infere
 - Drive deadlines expire prematurely because external API errors aren't distinguished from internal logic errors, preventing adaptive deadline extension
 - Skill proposals accumulate (5 in this cycle) but lack a mandatory conversion gate (implementation step, validation, owner), causing a proposal-to-prod
@@ -51,11 +56,6 @@
 - Five skill proposals were generated reactively to model failures but none were implemented, revealing a gap between proposal generation and execution 
 - The swarm execution for market analysis did not converge after two cycles with a score of 6, indicating insufficient critic feedback or planner-builde
 - Four of five models failed consecutively with 429/502 errors, leaving only inclusionai/ling-3.0-flash-fin:free as a single point of success and creati
-- Error-type discrimination (429 vs 502 vs 200-empty) is essential because each demands a distinct retry/backoff/fallback policy.
-- inclusionai/ling-3.0-flash-fin:free demonstrates consistent low-latency success, making it the only viable default for free-tier routing.
-- Nvidia-hosted models exhibit upstream 502 overload errors after initial success, indicating provider-side capacity saturation.
-- Consecutive failures trigger aggressive 30-minute model lockouts, turning transient errors into extended outages.
-- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting that makes them unreliable as primary workers.
 
 ---
 
