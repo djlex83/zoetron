@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Analysis-to-action gaps exist where market analysis data remains stale and unexecuted, indicating a breakdown in translating insights into goals.
+- Revision effectiveness tracking is needed to distinguish impactful simulation changes from noise that degrades performance.
+- Swarm convergence should be measured by sustained score improvement across cycles, not arbitrary iteration counts, to avoid premature termination.
+- Execution verification via hand_action ok=true is critical for reliable goal completion, as simulation scores alone do not guarantee real-world succes
+- Model failures are dominated by rate-limiting (429) and upstream overload (502), indicating systemic availability issues rather than isolated errors.
 - Without per-model health tracking, the system repeatedly routes to degraded endpoints, compounding latency and failure rates.
 - Fixed-cycle convergence criteria produce false positives; sustained improvement over multiple cycles is a more reliable signal.
 - Model confidence becomes miscalibrated when predicted outcomes diverge from actual results without automatic correction.
@@ -51,11 +56,6 @@
 - Simulation-revision-swarm loops improve solutions (evolved=true) but consistently fail to converge within default cycle limits (score 6, converged=fal
 - Model latency varies by 10x for the same model (nemotron: 75.7s vs 7.0s), indicating cold-start or load variability that breaks latency budgets.
 - Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, causing cascading fallback latency spikes.
-- Fast, low-token models (laguna-s-2.1: 9.4s, 259 input tokens) can handle simple tasks effectively when complex reasoning isn't required.
-- Knowledge graph repair tasks benefit from iterative refinement: evolution runs improved scores from 6/10 to 8/10 through variant testing.
-- Calibration consistently underestimates actual work required (predicted 3 vs actual 6), suggesting systematic optimism in task complexity assessment.
-- Model performance varies significantly under load: nemotron-3-ultra succeeds with high latency (136-159s) but fails with 502 errors during peak demand
-- A single fast success from inclusionai/ling-3.0-flash-fin (9.7 s) suggests smaller optimized models may offer better reliability/latency trade-offs.
 
 ---
 

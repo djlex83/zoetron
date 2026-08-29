@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 4180 Neuronen · 180489 bewertete Synapsen
+Stand: 4188 Neuronen · 180866 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -19,12 +19,12 @@ Stand: 4180 Neuronen · 180489 bewertete Synapsen
 | 7 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 369 | 0.24 |
 | 8 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 370 | 0.24 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 347 | 0.25 |
-| 10 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 370 | 0.23 |
+| 10 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 371 | 0.23 |
 | 11 | 💭 | Fallback model latency varies 4x (16.8s–74.3s), revealing no lat… | 342 | 0.24 |
 | 12 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 330 | 0.24 |
 | 13 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 327 | 0.24 |
 | 14 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 300 | 0.26 |
-| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 348 | 0.22 |
+| 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 349 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

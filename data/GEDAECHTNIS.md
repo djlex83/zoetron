@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6222 Fakten** · Stand 2026-08-29 10:32 UTC · aktualisiert bei jedem Herzschlag
+**6227 Fakten** · Stand 2026-08-29 10:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2806
+- **dream:** 2811
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829103540:5:b5e394`
+*29.08. 10:35 UTC · Quelle: dream*
+
+Analysis-to-action gaps exist where market analysis data remains stale and unexecuted, indicating a breakdown in translating insights into goals.
+
+### `dream:20260829103540:4:b86802`
+*29.08. 10:35 UTC · Quelle: dream*
+
+Revision effectiveness tracking is needed to distinguish impactful simulation changes from noise that degrades performance.
+
+### `dream:20260829103540:3:cc7d20`
+*29.08. 10:35 UTC · Quelle: dream*
+
+Swarm convergence should be measured by sustained score improvement across cycles, not arbitrary iteration counts, to avoid premature termination.
+
+### `dream:20260829103540:2:54fd8f`
+*29.08. 10:35 UTC · Quelle: dream*
+
+Execution verification via hand_action ok=true is critical for reliable goal completion, as simulation scores alone do not guarantee real-world success.
+
+### `dream:20260829103540:1:3879f1`
+*29.08. 10:35 UTC · Quelle: dream*
+
+Model failures are dominated by rate-limiting (429) and upstream overload (502), indicating systemic availability issues rather than isolated errors.
 
 ### `dream:20260829103004:5:19f54f`
 *29.08. 10:30 UTC · Quelle: dream*

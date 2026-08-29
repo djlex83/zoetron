@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 10:31:26",
+ "stand": "2026-08-29 10:36:42",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -133,9 +133,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.644,
+ "haende_quote": 0.646,
  "simulationen_angewandt": 41,
  "swarm_scores": {
   "n": 38,
@@ -144,8 +150,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 36,
-   "schnitt": 4.78
+   "n": 35,
+   "schnitt": 4.74
   },
   "bau": {
    "n": 2,
