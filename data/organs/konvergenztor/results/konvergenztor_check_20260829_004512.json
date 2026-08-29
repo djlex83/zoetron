@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-29T00:45:12.769732",
+  "gate": "konvergenztor",
+  "checks": {
+    "market_analysis": {
+      "ready": false,
+      "missing": [
+        "Marktanalyse nicht geladen: senses-Organ nicht gefunden"
+      ],
+      "details": {
+        "status": "missing",
+        "reason": "senses-Organ nicht gefunden"
+      }
+    }
+  },
+  "overall_ready": false,
+  "blocking_issues": [
+    "Marktanalyse: Marktanalyse nicht geladen: senses-Organ nicht gefunden"
+  ]
+}

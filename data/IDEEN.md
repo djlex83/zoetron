@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 00:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 00:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,16 +14,16 @@
 - Add exponential backoff with jitter (base 2 s, max 60 s) and quota-aware scheduling before retrying rate-limit *(hatte die Idee 3×)*
 - Create a latency-budget guard that cancels requests exceeding tier-specific SLA (10 s analysis, 30 s synthesis *(hatte die Idee 3×)*
 - Build a diagnostic gap analyzer that cross-references internal "zero errors" claims with external success-rate *(hatte die Idee 3×)*
+- Enforce structured critic output (JSON schema: issues[{severity,location,suggestion}], overall_score, converge *(hatte die Idee 3×)*
 - Create a simulation-driven revision loop that iterates until risk count falls below a configurable threshold ( *(hatte die Idee 2×)*
 - Enforce a 'no-placeholder' gate: reject any tool registration whose core functions contain only 'pass' or 'rai *(hatte die Idee 2×)*
 - Add convergence criteria to evolution/swarm loops: stop when top-score plateaus for 2 cycles AND score varianc *(hatte die Idee 2×)*
 - Create a calibration adjuster that learns per-goal-type prediction bias and corrects future estimates automati *(hatte die Idee 2×)*
 - Replace hardcoded thresholds with a configurable parameter registry loaded at task start. *(hatte die Idee 2×)*
-- Wrap hand_action in retry-with-backoff and path-validation logic to eliminate silent read failures. *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 12×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 9×)*
@@ -35,12 +35,17 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Simulationen besser nutzen *(wieder aufgegriffen: 2×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich nutzen *(wieder aufgegriffen: 2×)*
 - Vorschläge in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning activity despite accumulating proposals suggests the system lacks a garbage-collection policy for superseded or low-confidence skill cand
+- Reflex-driven stale-goal sweep succeeded without human intervention, demonstrating that automated convergence checks can close abandoned work loops.
+- Successful fallback to nvidia/nemotron-3-ultra at ~32 s latency proves a tiered router with latency budgets would automatically prefer reliable models
+- Multiple overlapping proposals (router, backoff, scoreboard, pipeline) indicate a missing consolidation mechanism that promotes high-confidence design
+- Repeated 429 errors on z-ai/glm-5.2:free show that absent per-model cooldown and circuit-breaking turns transient rate limits into persistent task fai
 - Manual skill adoption is too slow; high-confidence proposals (router, backoff, pipeline) must auto-promote into tested modules within one sleep cycle.
 - Internal self-diagnosis reports "zero errors" while external APIs return 429s, exposing a blind spot that requires cross-referenced diagnostic gap ana
 - Duplicate skill proposals across cycles reveal convergent evolution toward router/backoff/pipeline patterns that should be canonicalized into a single
@@ -51,11 +56,6 @@
 - Hand actions fail due to unresolved relative paths, indicating a need for canonical path resolution before execution.
 - Stress reaching 1.0 triggers a conserve mode that starves critical tasks, requiring proactive load shedding before saturation.
 - Rate-limited models should be automatically deprioritized after repeated 429 errors to prevent cascade latency.
-- Logical path handling is fragile: hand actions assume mounted paths without a runtime PathResolver abstraction.
-- Reflex tools lack runtime health metrics (success rate, p95 latency), preventing automatic degradation or alerting.
-- Multiple duplicate circuit-breaker proposals show ideas are generated but not deduplicated or promoted to implementation.
-- Fallback model latency varies 4x (16.8s–74.3s), revealing no latency SLO or timeout budget for model calls.
-- Recurring 429 errors on z-ai/glm-5.2:free indicate missing rate-limit handling and circuit-breaking at the router level.
 
 ---
 
