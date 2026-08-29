@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6747 Fakten** · Stand 2026-08-29 23:21 UTC · aktualisiert bei jedem Herzschlag
+**6752 Fakten** · Stand 2026-08-29 23:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3166
+- **dream:** 3171
 - **swarm_artifact:** 1607
 - **last_swarm_critique:** 615
 - **anti_pattern:** 503
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829232630:5:955dff`
+*29.08. 23:26 UTC · Quelle: dream*
+
+The system generates proposals faster than it implements them, creating a persistent gap between identified solutions and deployed resilience.
+
+### `dream:20260829232630:4:88a091`
+*29.08. 23:26 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors, confirming the failure is external (API rate limiting) rather than internal system corruption.
+
+### `dream:20260829232630:3:5223fd`
+*29.08. 23:26 UTC · Quelle: dream*
+
+Repeated skill proposals on the same problem domain (model routing, circuit breakers, health scores) signal that the solution space is well-understood but no implementation has been deployed yet.
+
+### `dream:20260829232630:2:006d5f`
+*29.08. 23:26 UTC · Quelle: dream*
+
+The fallback model (nemotron-3-ultra) succeeds but exhibits 4x latency variance (4.4s to 18.6s), indicating shared infrastructure pressure on the fallback as well.
+
+### `dream:20260829232630:1:1e3cf2`
+*29.08. 23:26 UTC · Quelle: dream*
+
+Free-tier API models consistently hit rate limits (429), making them unreliable as primary inference endpoints without architectural safeguards.
 
 ### `dream:20260829232005:5:18d449`
 *29.08. 23:20 UTC · Quelle: dream*

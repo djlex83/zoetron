@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system generates proposals faster than it implements them, creating a persistent gap between identified solutions and deployed resilience.
+- Self-diagnosis reports zero organ errors, confirming the failure is external (API rate limiting) rather than internal system corruption.
+- Repeated skill proposals on the same problem domain (model routing, circuit breakers, health scores) signal that the solution space is well-understood
+- The fallback model (nemotron-3-ultra) succeeds but exhibits 4x latency variance (4.4s to 18.6s), indicating shared infrastructure pressure on the fall
+- Free-tier API models consistently hit rate limits (429), making them unreliable as primary inference endpoints without architectural safeguards.
 - Prune runs remove nothing despite accumulating failed-model events, wasting context on known-bad endpoints.
 - Selbstdiagnose reports zero organ errors while external-API health (error rate, quota, latency) remains invisible, preventing conserve-state triggers 
 - Five skill proposals already address routing, circuit breakers, health scorecards, and quota persistence but none have entered a promotion pipeline, s
@@ -51,11 +56,6 @@
 - Swarm task "Doppelte Arbeit vermeiden" scored 7/10 yet failed to converge in 2 cycles despite role evolution, revealing that critic count (1) is insuf
 - Fallback model nvidia/nemotron-3-ultra succeeds but exhibits 6x latency variance (6.5–41 s), causing drive timeouts that the adaptive deadline extende
 - The model z-ai/glm-5.2:free fails deterministically with HTTP 429 on every call, indicating a hard quota exhaustion that requires permanent quarantine
-- Duplicate work avoidance recurs as a goal but lacks a persistent registry of completed work across sessions.
-- High stress (1.0) triggers conserve mode that severely limits throughput (max_tasks: 3, max_iterations: 1), creating a bottleneck.
-- Simulation pre-checks (verdict: go, risks: 3) effectively gate risky actions but are not yet integrated with model selection logic.
-- Relative path resolution fails in containerized environments; all file operations must use absolute paths expanded from ZOETRON_DATA.
-- Free tier models exhibit high failure rates (429 rate limits, 502 upstream overload) requiring robust fallback chains and rate-limit handling.
 
 ---
 
