@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency successes, suggesting it should be the default backbone with others as specu
+- Negative trajectory delta (-0.5) with zero edges and no code confirms that non-code responses degrade the solution graph rather than advance it.
+- Calibration error of 1 cycle indicates the difficulty predictor systematically overestimates progress when code artifacts are absent.
+- The task failed because the model returned explanatory prose instead of an executable Python block, revealing a missing output-format constraint in th
+- Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream errors, making them unreliable as primary workers without aggressive 
 - A calibration layer adjusting predictions by rolling mean absolute error is essential when model latency and availability are unstable.
 - Stale goals and unimplemented skill proposals accumulate as invisible debt that drains capacity without producing value.
 - Rising latency on fallback models is a predictable early-warning signal that precedes complete upstream failure.
@@ -51,11 +56,6 @@
 - Multiple skill proposals exist for model routing and resilience but none have been implemented, revealing a proposal-to-production gap that stalls rel
 - Nemotron-3-ultra shows high latency variance (7.6s–37.9s), making it unreliable for time-sensitive tasks without timeout guards and fallback routing.
 - The z-ai/glm-5.2:free model consistently returns 429 errors, indicating it should be permanently deprioritized or removed from the routing pool until 
-- Self-diagnose reports zero organ errors while model failure rate is ~60% (81 fails vs 54 successes), meaning health checks don't cover external API re
-- Stale market analyses (3 unused) show completed work isn't linked to planning triggers; artifacts need explicit "ready-for-use" tags and downstream su
-- 37 skill proposals vs 15 executions reveals a broken promotion pipeline: proposals lack automated sandbox→integration→registry gating.
-- Model latency variance (36-66s) on nemotron-3-ultra suggests need for latency-aware routing with p95 thresholds, not just success/failure tracking.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate missing proactive rate-limit handling (Retry-After parsing, exponential backoff) before requests are
 
 ---
 

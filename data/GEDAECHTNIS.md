@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6447 Fakten** · Stand 2026-08-29 16:25 UTC · aktualisiert bei jedem Herzschlag
+**6452 Fakten** · Stand 2026-08-29 16:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2946
+- **dream:** 2951
 - **swarm_artifact:** 1563
 - **last_swarm_critique:** 607
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829163134:5:6a2b5c`
+*29.08. 16:31 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency successes, suggesting it should be the default backbone with others as speculative retries.
+
+### `dream:20260829163134:4:6d8742`
+*29.08. 16:31 UTC · Quelle: dream*
+
+Negative trajectory delta (-0.5) with zero edges and no code confirms that non-code responses degrade the solution graph rather than advance it.
+
+### `dream:20260829163134:3:4dab82`
+*29.08. 16:31 UTC · Quelle: dream*
+
+Calibration error of 1 cycle indicates the difficulty predictor systematically overestimates progress when code artifacts are absent.
+
+### `dream:20260829163134:2:1dc964`
+*29.08. 16:31 UTC · Quelle: dream*
+
+The task failed because the model returned explanatory prose instead of an executable Python block, revealing a missing output-format constraint in the prompt.
+
+### `dream:20260829163134:1:c15e02`
+*29.08. 16:31 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream errors, making them unreliable as primary workers without aggressive fallback logic.
 
 ### `dream:20260829162421:5:54f2b1`
 *29.08. 16:24 UTC · Quelle: dream*

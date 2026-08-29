@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 16:25:18",
+ "stand": "2026-08-29 16:32:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
