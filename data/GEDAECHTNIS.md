@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6197 Fakten** · Stand 2026-08-29 09:59 UTC · aktualisiert bei jedem Herzschlag
+**6202 Fakten** · Stand 2026-08-29 10:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2781
+- **dream:** 2786
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829100601:5:024333`
+*29.08. 10:06 UTC · Quelle: dream*
+
+Drive goals reveal a systemic gap: analyses and simulations accumulate but rarely convert to measurable action items with assigned ownership.
+
+### `dream:20260829100601:4:3aeb14`
+*29.08. 10:06 UTC · Quelle: dream*
+
+Five skill proposals exist but lack automated validation, risking deployment of untested or dependency-broken capabilities.
+
+### `dream:20260829100601:3:efde1d`
+*29.08. 10:06 UTC · Quelle: dream*
+
+System stress at 1.0 triggers conservation mode that caps parallelism to 3 tasks and 1 iteration, severely throttling throughput during high load.
+
+### `dream:20260829100601:2:289905`
+*29.08. 10:06 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra succeeds but adds 40-60s latency per call, creating unacceptable delays for interactive workflows.
+
+### `dream:20260829100601:1:012cc6`
+*29.08. 10:06 UTC · Quelle: dream*
+
+Primary model z-ai/glm-5.2:free fails persistently with 429 rate limits, making it unreliable for production without automated fallback.
 
 ### `dream:20260829095823:5:f67767`
 *29.08. 09:58 UTC · Quelle: dream*

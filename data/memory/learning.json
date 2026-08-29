@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 09:58:47",
+ "stand": "2026-08-29 10:06:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -115,12 +115,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 09:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,13 +27,13 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals reveal a systemic gap: analyses and simulations accumulate but rarely convert to measurable action items with assigned ownership.
+- Five skill proposals exist but lack automated validation, risking deployment of untested or dependency-broken capabilities.
+- System stress at 1.0 triggers conservation mode that caps parallelism to 3 tasks and 1 iteration, severely throttling throughput during high load.
+- Fallback model nvidia/nemotron-3-ultra succeeds but adds 40-60s latency per call, creating unacceptable delays for interactive workflows.
+- Primary model z-ai/glm-5.2:free fails persistently with 429 rate limits, making it unreliable for production without automated fallback.
 - Swarm terminated after only 2 cycles with score 1 and converged=false, suggesting convergence criteria are decoupled from actual task success.
 - Five simulation revisions were applied yet hand_action still failed with exit code 1, showing revisions addressed wrong failure modes.
 - Evolution produced high-scoring variants (6-8) but final swarm score remained 1, indicating a disconnect between offline optimization and online execu
@@ -51,11 +56,6 @@
 - Hand actions fail with exit code 1 and zero gelesen values, indicating a systematic execution or environment configuration problem.
 - The nvidia/nemotron-3-ultra-550b-a55b:free model consistently succeeds while z-ai/glm-5.2:free fails repeatedly, suggesting model selection directly i
 - Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
-- Drive goals are created from failure signals (model errors, unused analyses) but lack automatic decomposition into executable steps with verification.
-- Five skill proposals were generated in one burst but none validated; proposal generation without smoke-testing creates technical debt.
-- The swarm cleaned up old results but did not converge (score 3, converged=false), suggesting cleanup tasks need explicit acceptance criteria, not just
-- Model latency varies by 5x+ for the same model (nemotron: 86s vs 15s), indicating queue-depth dependence that single health checks cannot capture.
-- Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making naive round-robin selection ineffective.
 
 ---
 
