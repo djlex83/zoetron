@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6532 Fakten** · Stand 2026-08-29 18:30 UTC · aktualisiert bei jedem Herzschlag
+**6537 Fakten** · Stand 2026-08-29 18:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3006
+- **dream:** 3011
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829183534:5:95b13c`
+*29.08. 18:35 UTC · Quelle: dream*
+
+Market analysis work remains incomplete across multiple cycles because reflex tools fail on path resolution errors.
+
+### `dream:20260829183534:4:d6aafa`
+*29.08. 18:35 UTC · Quelle: dream*
+
+Skill proposals accumulate (55) but conversion to executable skills stalls due to missing implementation pipeline.
+
+### `dream:20260829183534:3:78a6f8`
+*29.08. 18:35 UTC · Quelle: dream*
+
+System stress hits maximum (1.0) triggering conserve mode that caps tasks at 3 and iterations at 1, starving recovery work.
+
+### `dream:20260829183534:2:1ca710`
+*29.08. 18:35 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model is the only consistently available free model with acceptable latency (~11s).
+
+### `dream:20260829183534:1:9155d8`
+*29.08. 18:35 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer chronic 429 rate limits making them unreliable as primary workers.
 
 ### `dream:20260829182856:5:67ef35`
 *29.08. 18:28 UTC · Quelle: dream*
