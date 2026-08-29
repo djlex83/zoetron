@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 10:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
@@ -41,21 +41,21 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs remove zero facts/events despite ongoing knowledge graph repairs, suggesting pruning thresholds are misaligned with actual churn.
+- System self-diagnosis reports zero organ errors while external API failure rate exceeds 50%, revealing a critical observability blind spot.
+- Simulation-revision-swarm loops improve solutions (evolved=true) but consistently fail to converge within default cycle limits (score 6, converged=fal
+- Model latency varies by 10x for the same model (nemotron: 75.7s vs 7.0s), indicating cold-start or load variability that breaks latency budgets.
+- Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, causing cascading fallback latency spikes.
 - Fast, low-token models (laguna-s-2.1: 9.4s, 259 input tokens) can handle simple tasks effectively when complex reasoning isn't required.
 - Knowledge graph repair tasks benefit from iterative refinement: evolution runs improved scores from 6/10 to 8/10 through variant testing.
 - Calibration consistently underestimates actual work required (predicted 3 vs actual 6), suggesting systematic optimism in task complexity assessment.
 - Model performance varies significantly under load: nemotron-3-ultra succeeds with high latency (136-159s) but fails with 502 errors during peak demand
-- Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
 - A single fast success from inclusionai/ling-3.0-flash-fin (9.7 s) suggests smaller optimized models may offer better reliability/latency trade-offs.
 - Under maximum stress (conserve mode, 1 iteration budget) the system still completed a complex graph-repair task successfully.
 - Simulation-driven revision (3 cycles) before execution produced a working 289-line Python artifact on first real run.
 - nvidia/nemotron-3-ultra succeeds but with extreme latency variance (40–160 s), requiring adaptive timeouts and circuit-breakers.
 - Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable as primary providers.
 - Drive goals reveal a systemic gap: analyses and simulations accumulate but rarely convert to measurable action items with assigned ownership.
-- Five skill proposals exist but lack automated validation, risking deployment of untested or dependency-broken capabilities.
-- System stress at 1.0 triggers conservation mode that caps parallelism to 3 tasks and 1 iteration, severely throttling throughput during high load.
-- Fallback model nvidia/nemotron-3-ultra succeeds but adds 40-60s latency per call, creating unacceptable delays for interactive workflows.
-- Primary model z-ai/glm-5.2:free fails persistently with 429 rate limits, making it unreliable for production without automated fallback.
 
 ---
 

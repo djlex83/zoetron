@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6212 Fakten** · Stand 2026-08-29 10:15 UTC · aktualisiert bei jedem Herzschlag
+**6217 Fakten** · Stand 2026-08-29 10:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2796
+- **dream:** 2801
 - **swarm_artifact:** 1519
 - **last_swarm_critique:** 599
 - **anti_pattern:** 483
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829102436:5:615f0c`
+*29.08. 10:24 UTC · Quelle: dream*
+
+Pruning runs remove zero facts/events despite ongoing knowledge graph repairs, suggesting pruning thresholds are misaligned with actual churn.
+
+### `dream:20260829102436:4:3d2226`
+*29.08. 10:24 UTC · Quelle: dream*
+
+System self-diagnosis reports zero organ errors while external API failure rate exceeds 50%, revealing a critical observability blind spot.
+
+### `dream:20260829102436:3:f7c99f`
+*29.08. 10:24 UTC · Quelle: dream*
+
+Simulation-revision-swarm loops improve solutions (evolved=true) but consistently fail to converge within default cycle limits (score 6, converged=false).
+
+### `dream:20260829102436:2:2582e3`
+*29.08. 10:24 UTC · Quelle: dream*
+
+Model latency varies by 10x for the same model (nemotron: 75.7s vs 7.0s), indicating cold-start or load variability that breaks latency budgets.
+
+### `dream:20260829102436:1:5ef75d`
+*29.08. 10:24 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, causing cascading fallback latency spikes.
 
 ### `dream:20260829101448:5:6760d3`
 *29.08. 10:14 UTC · Quelle: dream*
