@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6391 Fakten** · Stand 2026-08-29 15:02 UTC · aktualisiert bei jedem Herzschlag
+**6396 Fakten** · Stand 2026-08-29 15:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2901
+- **dream:** 2906
 - **swarm_artifact:** 1557
 - **last_swarm_critique:** 606
 - **anti_pattern:** 493
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829151720:5:1a6f15`
+*29.08. 15:17 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation; a dedicated proposal-to-skill pipeline with acceptance criteria is needed.
+
+### `dream:20260829151720:4:4e0023`
+*29.08. 15:17 UTC · Quelle: dream*
+
+Simulation recommends revisions but zero are applied, indicating a broken apply loop; every simulation verdict must trigger an automatic patch-apply-verify cycle.
+
+### `dream:20260829151720:3:cb71e7`
+*29.08. 15:17 UTC · Quelle: dream*
+
+Under high stress (1.0) with conserve metabolism, the system cannot execute multi-step plans; skills must be atomic and idempotent.
+
+### `dream:20260829151720:2:083f67`
+*29.08. 15:17 UTC · Quelle: dream*
+
+Free OpenRouter models exhibit high failure rates (429/404); maintain a health score per model and auto-fallback to working models like inclusionai/ling-3.0-flash-fin.
+
+### `dream:20260829151720:1:a2b0d5`
+*29.08. 15:17 UTC · Quelle: dream*
+
+File operations must use absolute paths from sys.argv[1] and ZOETRON_DATA environment variable, not relative paths.
 
 ### `anti_pattern:Previous attempt scored 3/10. Goal: Veraltete Marktanalysen :2`
 *29.08. 15:00 UTC · Quelle: evolution*

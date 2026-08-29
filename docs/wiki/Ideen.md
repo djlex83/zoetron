@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 15:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 15:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate without implementation; a dedicated proposal-to-skill pipeline with acceptance criteria is needed.
+- Simulation recommends revisions but zero are applied, indicating a broken apply loop; every simulation verdict must trigger an automatic patch-apply-v
+- Under high stress (1.0) with conserve metabolism, the system cannot execute multi-step plans; skills must be atomic and idempotent.
+- Free OpenRouter models exhibit high failure rates (429/404); maintain a health score per model and auto-fallback to working models like inclusionai/li
+- File operations must use absolute paths from sys.argv[1] and ZOETRON_DATA environment variable, not relative paths.
 - Skill proposals accumulate without implementation because the system lacks a "skill promotion" pipeline that validates, wraps, and registers new capab
 - Swarm orchestration remains incomplete despite being a stated goal, creating a capability gap where distributed evaluation cannot offload work from th
 - High latency variance (8s vs 187s) among working models makes latency-aware routing essential for meeting iteration budgets under stress.
@@ -51,11 +56,6 @@
 - Successful 200-status responses from fallback models (Nemotron) occasionally contain upstream error payloads (502-in-200) that propagate as valid outp
 - Multiple skill proposals address identical failure modes (model routing, stress scheduling, response validation) but remain unimplemented, revealing a
 - Free-tier model endpoints (z-ai/glm-5.2) consistently fail with 429 rate limits, causing cascading retries and latency spikes up to 38s on fallback mo
-- Stale goals (market analysis, dream-to-skill conversion) persist despite active error-fixing swarms, indicating a prioritization gap between maintenan
-- The swarm→simulation→hand_action→TOR pipeline successfully produced a running 216-line Python artifact in one cycle under conserve mode.
-- The inclusionai/ling-3.0-flash-fin:free model succeeded with low latency (3.4s), suggesting a viable fast-path alternative.
-- The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a functional but high-latency fallback (19-96s), creating a throughput bottleneck.
-- The z-ai/glm-5.2:free model consistently fails with 429 rate limits, making it unreliable as a primary model.
 
 ---
 
