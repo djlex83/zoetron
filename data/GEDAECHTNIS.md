@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6302 Fakten** · Stand 2026-08-29 12:55 UTC · aktualisiert bei jedem Herzschlag
+**6316 Fakten** · Stand 2026-08-29 13:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2866
-- **swarm_artifact:** 1527
-- **last_swarm_critique:** 601
+- **dream:** 2871
+- **swarm_artifact:** 1533
+- **last_swarm_critique:** 602
 - **anti_pattern:** 487
-- **last_swarm_goal:** 350
+- **last_swarm_goal:** 351
 - **strategy:** 264
 - **hand_result:** 75
-- **tool:** 63
+- **tool:** 64
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fehlerquellen-systematisch-beheben`
+*29.08. 13:03 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fehlerquellen systematisch beheben'. Datei: data/tools/fehlerquellen-systematisch-beheben.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*29.08. 13:03 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*29.08. 12:59 UTC · Quelle: system*
+
+Fehlerquellen systematisch beheben
+
+### `dream:20260829125858:5:66665f`
+*29.08. 12:58 UTC · Quelle: dream*
+
+Calibration error of 1 on small sample (pred 5 vs actual 4) signals need for rolling error tracking per model tier.
+
+### `dream:20260829125858:4:ffc159`
+*29.08. 12:58 UTC · Quelle: dream*
+
+Simulation gate allowed completion despite 3 risks and 3 revisions, showing verification threshold is too permissive.
+
+### `dream:20260829125858:3:ab4307`
+*29.08. 12:58 UTC · Quelle: dream*
+
+Swarm cycles stall at score 4 with converged=false, revealing undefined convergence criteria and no auto-termination on plateau.
+
+### `dream:20260829125858:2:9a8119`
+*29.08. 12:58 UTC · Quelle: dream*
+
+Nemotron-3-ultra latency varies 22–169s for similar token loads, suggesting queueing or cold-start effects that degrade throughput predictability.
+
+### `dream:20260829125858:1:d802cb`
+*29.08. 12:58 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and fallback logic causing cascading failures.
 
 ### `dream:20260829125359:5:38500c`
 *29.08. 12:53 UTC · Quelle: dream*

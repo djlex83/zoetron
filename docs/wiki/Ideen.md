@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 13:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 on small sample (pred 5 vs actual 4) signals need for rolling error tracking per model tier.
+- Simulation gate allowed completion despite 3 risks and 3 revisions, showing verification threshold is too permissive.
+- Swarm cycles stall at score 4 with converged=false, revealing undefined convergence criteria and no auto-termination on plateau.
+- Nemotron-3-ultra latency varies 22–169s for similar token loads, suggesting queueing or cold-start effects that degrade throughput predictability.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and fallback logic causing cascading failures.
 - Calibration error of 1 on a 5-point scale suggests the predictor overestimates quality by ~20%.
 - Simulation gate approved a risky artifact (3 risks) with zero revisions, indicating risk tolerance may be miscalibrated.
 - Poolside Laguna succeeds consistently but with 2-3 minute latency, suitable only for batch/async workloads.
@@ -51,11 +56,6 @@
 - Reflex tools crash before validation when the underlying script has import errors or missing dependencies, bypassing the 'unbestechlicher Prüfer'.
 - Hand actions fail silently when given relative paths instead of absolute paths rooted in ZOETRON_DATA, causing zero-byte reads.
 - Rate limiting (HTTP 429) affects all free-tier models simultaneously, making model diversity ineffective without request pacing or paid fallbacks.
-- Iterative simulation loops without explicit convergence thresholds waste compute cycles on divergent trajectories.
-- Pruning policies that ignore access frequency and recency retain stale facts while discarding active knowledge.
-- Hand-action scripts fail silently when sys.argv paths diverge from actual data locations, requiring pre-execution validation.
-- Absence of automatic retry-with-backoff for transient HTTP 429 errors wastes available quota and causes unnecessary fallbacks.
-- Free-tier LLM endpoints exhibit high failure rates (429/502) making single-model reliance unsafe for production workflows.
 
 ---
 
