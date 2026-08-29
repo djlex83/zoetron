@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- There is a persistent gap between abstract skill proposals and concrete actionable goals, requiring an explicit translation step.
+- Under high stress (stress=1.0), the system correctly enters conserve mode with severely limited budget, preventing cascading failures.
+- Tool scripts depending on sys.argv[1] or ZOETRON_DATA fail silently when relative paths are not resolved against the actual data root directory.
+- The simulation-revision loop (detect risks → revise → re-validate) is a proven procedure that consistently converts failing artifacts into working one
+- The free model z-ai/glm-5.2:free is completely unreliable due to persistent 429 rate-limit errors and must be excluded from any critical execution pat
 - The absence of demonstrated automatic failover means a single model's rate-limit error blocks the entire workflow without any recovery mechanism.
 - Working models show latency doubling (11.8s to 26.7s) over successive calls, suggesting resource contention that degrades performance before outright 
 - Fifty-five skill proposals have accumulated without any being implemented, exposing a broken ideation-to-execution pipeline where generation consisten
@@ -51,11 +56,6 @@
 - Numerous skill proposals exist but remain unimplemented, revealing a gap between diagnosis and execution.
 - Model endpoints exhibit inconsistent availability (404, 429) requiring pre-flight health checks before dispatch.
 - Rate limiting (429 errors) across multiple models indicates systemic lack of rate-limit awareness and automatic failover.
-- The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) proves automated model remediation works but remains isolated from the main infere
-- Drive deadlines expire prematurely because external API errors aren't distinguished from internal logic errors, preventing adaptive deadline extension
-- Skill proposals accumulate (5 in this cycle) but lack a mandatory conversion gate (implementation step, validation, owner), causing a proposal-to-prod
-- The system repeatedly retries failed models without backoff or rotation, turning transient API quotas into persistent task failures.
-- Free-tier model failures are dominated by rate-limiting (429) and upstream overload (502) errors, not inference quality, making reliability a routing 
 
 ---
 

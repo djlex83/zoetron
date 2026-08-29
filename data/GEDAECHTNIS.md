@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6668 Fakten** · Stand 2026-08-29 21:22 UTC · aktualisiert bei jedem Herzschlag
+**6673 Fakten** · Stand 2026-08-29 21:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3111
+- **dream:** 3116
 - **swarm_artifact:** 1595
 - **last_swarm_critique:** 613
 - **anti_pattern:** 499
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829213025:5:8e237c`
+*29.08. 21:30 UTC · Quelle: dream*
+
+There is a persistent gap between abstract skill proposals and concrete actionable goals, requiring an explicit translation step.
+
+### `dream:20260829213025:4:211098`
+*29.08. 21:30 UTC · Quelle: dream*
+
+Under high stress (stress=1.0), the system correctly enters conserve mode with severely limited budget, preventing cascading failures.
+
+### `dream:20260829213025:3:e7f94a`
+*29.08. 21:30 UTC · Quelle: dream*
+
+Tool scripts depending on sys.argv[1] or ZOETRON_DATA fail silently when relative paths are not resolved against the actual data root directory.
+
+### `dream:20260829213025:2:98facc`
+*29.08. 21:30 UTC · Quelle: dream*
+
+The simulation-revision loop (detect risks → revise → re-validate) is a proven procedure that consistently converts failing artifacts into working ones.
+
+### `dream:20260829213025:1:57c3b4`
+*29.08. 21:30 UTC · Quelle: dream*
+
+The free model z-ai/glm-5.2:free is completely unreliable due to persistent 429 rate-limit errors and must be excluded from any critical execution path.
 
 ### `dream:20260829212124:5:863887`
 *29.08. 21:21 UTC · Quelle: dream*
