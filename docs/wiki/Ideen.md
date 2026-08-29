@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 13:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 13:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals (market analysis, dream-to-skill conversion) persist despite active error-fixing swarms, indicating a prioritization gap between maintenan
+- The swarm→simulation→hand_action→TOR pipeline successfully produced a running 216-line Python artifact in one cycle under conserve mode.
+- The inclusionai/ling-3.0-flash-fin:free model succeeded with low latency (3.4s), suggesting a viable fast-path alternative.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a functional but high-latency fallback (19-96s), creating a throughput bottleneck.
+- The z-ai/glm-5.2:free model consistently fails with 429 rate limits, making it unreliable as a primary model.
 - Relative paths in hand actions cause silent failures; a mandatory path resolver that expands all inputs to absolute ZOETRON_DATA paths before executio
 - Simulation risk thresholds drift from actual outcomes; an online calibration loop that logs predicted vs. actual scores per model/task and adjusts con
 - Proposed skills accumulate but rarely get implemented; a gated promotion pipeline (proposal → sandbox dry-run → stress-test → swarm commit) would clos
@@ -51,11 +56,6 @@
 - Reflex scripts execute successfully but lack pre-deployment validation, creating silent failure risk when dependencies shift.
 - Pruning thresholds remain static despite zero pruning events, indicating half-life calibration must be data-driven not heuristic.
 - Free-tier model endpoints consistently fail under load with 429/502 errors, making automatic failover and rate limiting essential for reliability.
-- Skill proposals accumulate (rate-limit scheduler, failure taxonomy, model router, backoff retry, input validation, pruning calibration, convergence ga
-- The system already has working reflexes for error reduction (modell-fehler-deutlich-reduzieren.py converged) and self-diagnosis, but lacks proactive m
-- No model health scoring, routing, or retry logic exists - each call naively targets a single model without fallback or backoff.
-- The nvidia/nemotron model succeeds but exhibits extreme latency variance (37-82s) and eventually fails with 502 upstream errors, indicating unstable c
-- Free-tier model endpoints systematically fail with 429 quota errors across multiple providers (z-ai, google), making them unreliable as primary depend
 
 ---
 

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6340 Fakten** · Stand 2026-08-29 13:38 UTC · aktualisiert bei jedem Herzschlag
+**6357 Fakten** · Stand 2026-08-29 13:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2886
-- **swarm_artifact:** 1539
-- **last_swarm_critique:** 603
-- **anti_pattern:** 487
-- **last_swarm_goal:** 352
-- **strategy:** 264
+- **dream:** 2891
+- **swarm_artifact:** 1545
+- **last_swarm_critique:** 604
+- **anti_pattern:** 489
+- **last_swarm_goal:** 353
+- **strategy:** 265
 - **hand_result:** 75
-- **tool:** 65
+- **tool:** 66
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellbewertung-ausbauen`
+*29.08. 13:57 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellbewertung ausbauen'. Datei: data/tools/modellbewertung-ausbauen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modellbewertung ausbauen:2`
+*29.08. 13:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 6, 8]): Functional Pipeline with Immutable State - Model evaluation as a pure function pipeline: EvaluationResult = pipeline(config, model, data). No classes, no mutable state, no inheritance. Boilerplate becomes reusable hig
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modellbewertung ausbauen:1`
+*29.08. 13:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 5, 9]): Plugin-Based Extension Architecture - Redesign as a plugin system where each evaluation artifact is an independent plugin implementing a standardized EvaluationPlugin protocol. A PluginManager discovers plugins via en
+
+### `last_swarm_critique`
+*29.08. 13:53 UTC · Quelle: critic*
+
+score=7; issues=Duplicate boilerplate across all three artifacts (directory setup, fallback logic, import handling) violates DRY and increases maintenance burden; Hardcoded normalization reference values in EvaluationPipeline (100ms, 500ms, 50 steps) without c
+
+### `last_swarm_goal`
+*29.08. 13:44 UTC · Quelle: system*
+
+Modellbewertung ausbauen
+
+### `dream:20260829134408:5:1883a2`
+*29.08. 13:44 UTC · Quelle: dream*
+
+Stale goals (market analysis, dream-to-skill conversion) persist despite active error-fixing swarms, indicating a prioritization gap between maintenance and strategic work.
+
+### `dream:20260829134408:4:59de94`
+*29.08. 13:44 UTC · Quelle: dream*
+
+The swarm→simulation→hand_action→TOR pipeline successfully produced a running 216-line Python artifact in one cycle under conserve mode.
+
+### `dream:20260829134408:3:be3c5c`
+*29.08. 13:44 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model succeeded with low latency (3.4s), suggesting a viable fast-path alternative.
+
+### `dream:20260829134408:2:627e79`
+*29.08. 13:44 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a functional but high-latency fallback (19-96s), creating a throughput bottleneck.
+
+### `dream:20260829134408:1:22783d`
+*29.08. 13:44 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate limits, making it unreliable as a primary model.
 
 ### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
 *29.08. 13:38 UTC · Quelle: hands*
