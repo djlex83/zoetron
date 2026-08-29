@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6374 Fakten** · Stand 2026-08-29 14:21 UTC · aktualisiert bei jedem Herzschlag
+**6391 Fakten** · Stand 2026-08-29 15:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2896
-- **swarm_artifact:** 1551
-- **last_swarm_critique:** 605
-- **anti_pattern:** 491
-- **last_swarm_goal:** 354
-- **strategy:** 266
-- **hand_result:** 76
+- **dream:** 2901
+- **swarm_artifact:** 1557
+- **last_swarm_critique:** 606
+- **anti_pattern:** 493
+- **last_swarm_goal:** 355
+- **strategy:** 267
+- **hand_result:** 77
 - **tool:** 66
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Veraltete Marktanalysen :2`
+*29.08. 15:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Database-backed pipeline with transactional guarantees - Use an embedded SQLite database as the central data store. Create tables for each stage: 'outdated_analyses', 'flagged_analyses', 'fresh_market_data', 'updated_analyses
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Veraltete Marktanalysen :1`
+*29.08. 15:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Standardized file-based pipeline with schema contracts - Adopt a strict contract-driven approach: define a shared schema (JSON Schema) for each intermediate artifact. Use a single root directory (e.g., 'data/pipeline/') with 
+
+### `last_swarm_critique`
+*29.08. 14:59 UTC · Quelle: critic*
+
+score=3; issues=Pipeline integration broken: file paths and formats don't match between steps; Step 1 writes JSON to memory/outdated_market_analyses.json but step 2 expects JSONL at artefacts/flagged_analyses.jsonl or memory/flagged_analyses.jsonl; Step 2 writ
+
+### `last_swarm_goal`
+*29.08. 14:51 UTC · Quelle: system*
+
+Veraltete Marktanalysen aktualisieren
+
+### `dream:20260829145048:5:63e30a`
+*29.08. 14:50 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation because the system lacks a "skill promotion" pipeline that validates, wraps, and registers new capabilities autonomously.
+
+### `dream:20260829145048:4:e70371`
+*29.08. 14:50 UTC · Quelle: dream*
+
+Swarm orchestration remains incomplete despite being a stated goal, creating a capability gap where distributed evaluation cannot offload work from the overloaded primary loop.
+
+### `dream:20260829145048:3:175d74`
+*29.08. 14:50 UTC · Quelle: dream*
+
+High latency variance (8s vs 187s) among working models makes latency-aware routing essential for meeting iteration budgets under stress.
+
+### `dream:20260829145048:2:8d2db9`
+*29.08. 14:50 UTC · Quelle: dream*
+
+The system lacks automatic fallback routing when primary models hit rate limits, causing cascading failures instead of graceful degradation.
+
+### `dream:20260829145048:1:0eea45`
+*29.08. 14:50 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) from OpenRouter is the primary failure mode across multiple model providers, indicating a systemic dependency bottleneck rather than model-specific issues.
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktanalyse a:2`
 *29.08. 14:16 UTC · Quelle: evolution*
