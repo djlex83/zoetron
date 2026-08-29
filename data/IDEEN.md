@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 07:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 08:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Lightweight local models (e.g., poolside/laguna-s-2.1) provide fast fallback when cloud models are rate-limited or overloaded.
+- Swarm task execution fails when initial path validation is skipped, leading to zero-byte or empty file processing.
+- Model overload errors (502) from upstream providers indicate need for automatic retry logic with exponential backoff.
+- Path resolution failures occur when sys.argv or ZOETRON_DATA are not properly validated before file operations.
+- Rate limiting (429 errors) from OpenRouter consistently blocks model access, requiring fallback strategies or local model prioritization.
 - The swarm converged in a single cycle producing a working 512-line artifact with distributed roles, proving the multi-role architecture is effective w
 - Calibration underestimated the actual swarm score by 3 points (predicted 5 vs actual 8), indicating the system's self-assessment of output quality is 
 - Hand action failures are silent — null error field, 0.04s duration, exit code 1 — revealing a missing structured error-capture layer in the execution 
@@ -51,11 +56,6 @@
 - Swarm executions consistently stall at low convergence (score 1, converged=false) despite evolution cycles, indicating missing convergence criteria.
 - Latency variance of 8x (8.7s vs 68.1s) for the same model breaks interactive SLAs and requires budget-aware routing.
 - Model provider rate limits (429 errors) and upstream failures cause cascading reliability degradation without automated failover.
-- Simulation detected 5 risks and proposed 3 revisions but only 2 were applied, leaving known gaps.
-- Evolutionary variant selection improved score from 1 to 8, but swarm failed to converge in 2 cycles.
-- Calibration is severely misaligned (predicted 8 vs actual 1), indicating optimism bias in success estimation.
-- Nvidia Nemotron shows mixed reliability: successes at 6-20s latency but suffers 502 upstream overload errors.
-- Free-tier models consistently fail with 429 rate-limit errors under load, making them unreliable as primary workers.
 
 ---
 

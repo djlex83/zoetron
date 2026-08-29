@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6126 Fakten** · Stand 2026-08-29 07:32 UTC · aktualisiert bei jedem Herzschlag
+**6143 Fakten** · Stand 2026-08-29 08:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2746
-- **swarm_artifact:** 1501
-- **last_swarm_critique:** 596
-- **anti_pattern:** 477
-- **last_swarm_goal:** 345
-- **strategy:** 259
+- **dream:** 2751
+- **swarm_artifact:** 1507
+- **last_swarm_critique:** 597
+- **anti_pattern:** 479
+- **last_swarm_goal:** 346
+- **strategy:** 260
 - **hand_result:** 74
-- **tool:** 59
+- **tool:** 60
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-schwarm-ergebnisse-aufräumen`
+*29.08. 08:12 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Schwarm-Ergebnisse aufräumen'. Datei: data/tools/alte-schwarm-ergebnisse-aufräumen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Alte Schwarm-Ergebnisse :2`
+*29.08. 08:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Redis Streams consumer-group pipeline with TTL-based eviction - Treat swarm runs as event streams. Producer writes raw results to Redis Stream 'swarm:raw' with MAXLEN ~ 10000. Three consumer groups: (1) 'deduper' - computes m
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Alte Schwarm-Ergebnisse :1`
+*29.08. 08:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Content-addressable storage (CAS) with Merkle DAG semantics - Model swarm results as immutable objects in a CAS (like Git/IPFS but local). Each result gets a SHA-256 content address. Build a Merkle DAG where leaf nodes are ra
+
+### `last_swarm_critique`
+*29.08. 08:08 UTC · Quelle: critic*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_goal`
+*29.08. 08:00 UTC · Quelle: system*
+
+Alte Schwarm-Ergebnisse aufräumen
+
+### `dream:20260829075920:5:bfbbc8`
+*29.08. 07:59 UTC · Quelle: dream*
+
+Lightweight local models (e.g., poolside/laguna-s-2.1) provide fast fallback when cloud models are rate-limited or overloaded.
+
+### `dream:20260829075920:4:6a959e`
+*29.08. 07:59 UTC · Quelle: dream*
+
+Swarm task execution fails when initial path validation is skipped, leading to zero-byte or empty file processing.
+
+### `dream:20260829075920:3:9e439b`
+*29.08. 07:59 UTC · Quelle: dream*
+
+Model overload errors (502) from upstream providers indicate need for automatic retry logic with exponential backoff.
+
+### `dream:20260829075920:2:84257c`
+*29.08. 07:59 UTC · Quelle: dream*
+
+Path resolution failures occur when sys.argv or ZOETRON_DATA are not properly validated before file operations.
+
+### `dream:20260829075920:1:d968d7`
+*29.08. 07:59 UTC · Quelle: dream*
+
+Rate limiting (429 errors) from OpenRouter consistently blocks model access, requiring fallback strategies or local model prioritization.
 
 ### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
 *29.08. 07:31 UTC · Quelle: hands*

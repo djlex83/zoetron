@@ -1,14 +1,14 @@
 {
- "stand": 1787988700.6318996,
+ "stand": 1787991148.8618379,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 1312,
-   "fehler": 246,
-   "fehler_in_folge": 0,
+   "laeufe": 1318,
+   "fehler": 248,
+   "fehler_in_folge": 1,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 46952.14972257614,
+   "latenz_summe_s": 47189.15499854088,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1787934357.051394,
    "kontofehler": 6
@@ -31,7 +31,7 @@
    "latenz_summe_s": 56.85517334938049,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 293
+   "kontofehler": 295
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 4,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 96.1152229309082,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 281
+   "kontofehler": 283
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -54,14 +54,14 @@
    "kontofehler": 200
   },
   "z-ai/glm-5.2:free": {
-   "laeufe": 49,
+   "laeufe": 50,
    "fehler": 5,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 144.32606482505798,
+   "latenz_summe_s": 148.5958173274994,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 1229
+   "kontofehler": 1235
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -92,11 +92,11 @@
    "letzte_sperre": 1787553147.7341604
   },
   "poolside/laguna-s-2.1:free": {
-   "laeufe": 119,
+   "laeufe": 121,
    "fehler": 1,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 1893.4524042606354,
+   "latenz_summe_s": 1900.2035632133484,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
    "kontofehler": 120
