@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 06:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 07:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,11 +28,11 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm converged in a single cycle producing a working 512-line artifact with distributed roles, proving the multi-role architecture is effective w
+- Calibration underestimated the actual swarm score by 3 points (predicted 5 vs actual 8), indicating the system's self-assessment of output quality is 
+- Hand action failures are silent — null error field, 0.04s duration, exit code 1 — revealing a missing structured error-capture layer in the execution 
+- The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds reliably across widely varying latencies (13s–146s), but no automated mechanism exists to se
+- The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors across multiple consecutive calls, making it effectively unusable without autom
 - Simulation repeatedly flags high critical risks (5 risks, 3 revisions) suggesting pre-execution risk gates are absent.
 - Skill proposals accumulate (5 proposed, 0 implemented) creating a capability gap that blocks systemic improvement.
 - Swarm executions consistently stall at low convergence (score 1, converged=false) despite evolution cycles, indicating missing convergence criteria.
@@ -51,11 +56,6 @@
 - Calibration is severely misaligned (predicted 8 vs actual 1), indicating optimism bias in success estimation.
 - Nvidia Nemotron shows mixed reliability: successes at 6-20s latency but suffers 502 upstream overload errors.
 - Free-tier models consistently fail with 429 rate-limit errors under load, making them unreliable as primary workers.
-- The consolidation goal itself fails because the artifact crashes with a traceback, revealing that meta-level tooling is also fragile.
-- Hand actions fail repeatedly with exit code 1 and zero bytes read, pointing to a systemic execution environment or permission issue.
-- Nvidia Nemotron shows intermittent success with highly variable latency (18-103s), suggesting unstable upstream capacity rather than hard quota exhaus
-- Only poolside/laguna-s-2.1:free consistently succeeds but with extreme latency (176-190s), indicating capacity saturation on that endpoint.
-- Free-tier models on OpenRouter suffer pervasive rate limiting (429) and upstream overload (502), making them unreliable for production workloads.
 
 ---
 

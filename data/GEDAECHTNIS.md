@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6109 Fakten** · Stand 2026-08-29 06:58 UTC · aktualisiert bei jedem Herzschlag
+**6126 Fakten** · Stand 2026-08-29 07:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2741
-- **swarm_artifact:** 1495
-- **last_swarm_critique:** 595
-- **anti_pattern:** 475
-- **last_swarm_goal:** 344
-- **strategy:** 258
+- **dream:** 2746
+- **swarm_artifact:** 1501
+- **last_swarm_critique:** 596
+- **anti_pattern:** 477
+- **last_swarm_goal:** 345
+- **strategy:** 259
 - **hand_result:** 74
-- **tool:** 58
+- **tool:** 59
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
+*29.08. 07:31 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Ersten Swarm-Lauf mit Score 8+ konvergieren lassen'. Datei: data/tools/ersten-swarm-lauf-mit-score-8-konvergier.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Ersten Swarm-Lauf mit Sc:2`
+*29.08. 07:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5.7): Populationsbasierte evolutionäre Schwarm-Optimierung - Verwende einen genetischen Algorithmus-Ansatz statt einer einzelnen Iterationsschleife: Erzeuge eine Population von P=5 kandidaten Swarm-Konfigurationen, die jeweils un
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Ersten Swarm-Lauf mit Sc:1`
+*29.08. 07:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.3): Akzeptanzkriterien-rückwärts gerichtete Verifizierungs-Pipeline - Drehe die Entwicklungsrichtung um: Definiere zuerst die Prüfungen für AC-01 bis AC-06 als automatisierte Verifizierungsfunktionen (verify_ac01() bis verify_a
+
+### `last_swarm_critique`
+*29.08. 07:30 UTC · Quelle: critic*
+
+score=6; issues=Swarm-Orchestrierung implementiert keine echten verteilten Rollen (Planner/Builder/Critic) - generate_artifact() erzeugt monolithisches Skript statt Multi-Agenten-Loop; Akzeptanzkriterien AC-01 bis AC-06 aus Task-Definition werden nicht systema
+
+### `last_swarm_goal`
+*29.08. 07:25 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260829072524:5:543104`
+*29.08. 07:25 UTC · Quelle: dream*
+
+The swarm converged in a single cycle producing a working 512-line artifact with distributed roles, proving the multi-role architecture is effective when upstream model selection does not block it.
+
+### `dream:20260829072524:4:d2b135`
+*29.08. 07:25 UTC · Quelle: dream*
+
+Calibration underestimated the actual swarm score by 3 points (predicted 5 vs actual 8), indicating the system's self-assessment of output quality is unreliable.
+
+### `dream:20260829072524:3:57e1a3`
+*29.08. 07:25 UTC · Quelle: dream*
+
+Hand action failures are silent — null error field, 0.04s duration, exit code 1 — revealing a missing structured error-capture layer in the execution pipeline.
+
+### `dream:20260829072524:2:aaeb45`
+*29.08. 07:25 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds reliably across widely varying latencies (13s–146s), but no automated mechanism exists to select it when glm fails.
+
+### `dream:20260829072524:1:717bb3`
+*29.08. 07:25 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors across multiple consecutive calls, making it effectively unusable without automated backoff or failover.
 
 ### `tool:marktanalyse-swarm-arbeit-abschließen`
 *29.08. 06:58 UTC · Quelle: hands*
