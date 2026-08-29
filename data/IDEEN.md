@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) proves automated model remediation works but remains isolated from the main infere
+- Drive deadlines expire prematurely because external API errors aren't distinguished from internal logic errors, preventing adaptive deadline extension
+- Skill proposals accumulate (5 in this cycle) but lack a mandatory conversion gate (implementation step, validation, owner), causing a proposal-to-prod
+- The system repeatedly retries failed models without backoff or rotation, turning transient API quotas into persistent task failures.
+- Free-tier model failures are dominated by rate-limiting (429) and upstream overload (502) errors, not inference quality, making reliability a routing 
 - Drive goals explicitly target reducing model errors and finishing skills, yet the system lacks automatic mechanisms to translate these goals into depl
 - Model latency varied wildly (8s to 16.2s) with no budget enforcement, allowing high-latency responses to degrade performance silently.
 - Five skill proposals were generated reactively to model failures but none were implemented, revealing a gap between proposal generation and execution 
@@ -51,11 +56,6 @@
 - Nvidia-hosted models exhibit upstream 502 overload errors after initial success, indicating provider-side capacity saturation.
 - Consecutive failures trigger aggressive 30-minute model lockouts, turning transient errors into extended outages.
 - Free-tier models on OpenRouter suffer pervasive 429 rate-limiting that makes them unreliable as primary workers.
-- Path resolution for hand actions is brittle — relative paths and missing data directories cause silent failures with no fallback.
-- Skill proposals accumulate without implementation tracking, creating a persistent gap between identified solutions and deployed fixes.
-- The system enters conserve mode only after stress reaches 1.0, meaning load reduction is reactive rather than proactive.
-- External I/O operations (API calls, file access, drive reads) lack circuit-breaking, so individual failures propagate instead of degrading gracefully.
-- The z-ai/glm-5.2:free endpoint is a persistent single point of failure — repeated 429 errors without automatic failover cascade into task delays and s
 
 ---
 
