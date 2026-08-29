@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 05:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 05:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Add exponential backoff with jitter (base 2s, max 60s) and quota-aware scheduling before retrying rate-limited *(hatte die Idee 3×)*
 - Enforce structured critic output (JSON schema: issues[{severity,location,suggestion}], overall_score, converge *(hatte die Idee 3×)*
 - Add a latency-aware timeout calculator that sets per-request deadlines at 1.5× the rolling 95th-percentile lat *(hatte die Idee 3×)*
-- Build a model fallback chain that prioritizes nemotron-3-ultra for complex tasks, routes to ling-3.0-flash-fin *(hatte die Idee 2×)*
-- Add pre-evolution dependency validation that checks for missing organ dependencies (e.g., 'hands') before laun *(hatte die Idee 2×)*
-- Implement anti-pattern detection that forces structural changes (not just parameter mutations) when the same g *(hatte die Idee 2×)*
 - Wrap all model calls with upstream-error detection (502/429) and exponential-backoff retry, falling back to th *(hatte die Idee 2×)*
 - Track per-model reliability metrics (success rate, latency, error type) and auto-disqualify models that exceed *(hatte die Idee 2×)*
 - Implement a provider-aware token bucket that enforces per-provider rate limits and automatically skips models  *(hatte die Idee 2×)*
+- Build a pre-flight dependency checker that validates required organs (e.g., hands) exist before launching evol *(hatte die Idee 2×)*
+- Create a skill registry that tracks proposal→implementation→test status, blocking duplicate proposals until pr *(hatte die Idee 2×)*
+- Wrap every model call with a unified retry policy: exponential backoff on 429/502, max 2 retries, then immedia *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration prediction matched actual outcome exactly (7/7), indicating reliable self-assessment for this task class.
+- Evolutionary refinement (3 variants) improved artifact score from 7 to 8/9/9 by addressing critic-flagged use of Unix-specific signal.SIGALRM.
+- Simulation-based pre-execution review detected 3 risks and mandated 3 revisions, which were successfully applied before artifact execution.
+- Nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (15.5–89.3s), requiring timeout-aware orchestration.
+- Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 - Metabolism stress at maximum with conservative budget indicates systemic overload; task admission control must reject new work before saturation.
 - Stale swarm artifacts accumulate because no automated ingestion pipeline validates and merges them into active memory.
 - Simulation revisions without application loops waste compute; every simulation must gate a concrete action or be discarded.
@@ -51,11 +56,6 @@
 - Completed market analyses remain unused because no reflex triggers conversion of stale insights into executable tasks.
 - Skill proposals accumulate without implementation because no automated pipeline converts drive_goal "gap" signals into deployed code.
 - Persistent 429 errors on z-ai/glm-5.2:free require automatic failover with exponential backoff rather than repeated retries.
-- Fallback model nvidia/nemotron-3-ultra works but exhibits high latency variance (7s–60s), causing unpredictable task durations.
-- Reflex tool 'kritiken-und-ziele-regelmäßig-prüfen.py' failed initially but succeeded after swarm simulation and iterative revision (risks=5, revisions
-- High stress (1.0) triggers conserve mode that severely limits parallelism (max_tasks=3, max_iterations=1), slowing recovery.
-- File operations fail when using relative paths instead of resolving via ZOETRON_DATA and sys.argv[1] environment inputs.
-- Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 
 ---
 

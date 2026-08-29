@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6027 Fakten** · Stand 2026-08-29 05:05 UTC · aktualisiert bei jedem Herzschlag
+**6032 Fakten** · Stand 2026-08-29 05:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2701
+- **dream:** 2706
 - **swarm_artifact:** 1471
 - **last_swarm_critique:** 591
 - **anti_pattern:** 471
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829050910:5:346c5f`
+*29.08. 05:09 UTC · Quelle: dream*
+
+Calibration prediction matched actual outcome exactly (7/7), indicating reliable self-assessment for this task class.
+
+### `dream:20260829050910:4:8b1a97`
+*29.08. 05:09 UTC · Quelle: dream*
+
+Evolutionary refinement (3 variants) improved artifact score from 7 to 8/9/9 by addressing critic-flagged use of Unix-specific signal.SIGALRM.
+
+### `dream:20260829050910:3:89cb70`
+*29.08. 05:09 UTC · Quelle: dream*
+
+Simulation-based pre-execution review detected 3 risks and mandated 3 revisions, which were successfully applied before artifact execution.
+
+### `dream:20260829050910:2:8f9515`
+*29.08. 05:09 UTC · Quelle: dream*
+
+Nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (15.5–89.3s), requiring timeout-aware orchestration.
+
+### `dream:20260829050910:1:0db02d`
+*29.08. 05:09 UTC · Quelle: dream*
+
+Free-tier model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 
 ### `dream:20260829050433:5:fe666d`
 *29.08. 05:04 UTC · Quelle: dream*

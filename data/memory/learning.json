@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-29 05:05:25",
+ "stand": "2026-08-29 05:09:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 31,
-   "erfolge": 31,
+   "laeufe": 30,
+   "erfolge": 30,
    "quote": 1.0
   },
   {
@@ -28,8 +28,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -150,8 +150,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 36,
-   "schnitt": 4.72
+   "n": 35,
+   "schnitt": 4.83
   },
   "bau": {
    "n": 2,
