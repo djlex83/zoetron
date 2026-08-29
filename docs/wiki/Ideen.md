@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 06:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 06:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Add exponential backoff with jitter (base 2s, max 60s) and quota-aware scheduling before retrying rate-limited *(hatte die Idee 3×)*
 - Enforce structured critic output (JSON schema: issues[{severity,location,suggestion}], overall_score, converge *(hatte die Idee 3×)*
 - Add a latency-aware timeout calculator that sets per-request deadlines at 1.5× the rolling 95th-percentile lat *(hatte die Idee 3×)*
-- Create a skill registry that tracks proposal→implementation→test status, blocking duplicate proposals until pr *(hatte die Idee 2×)*
-- Wrap every model call with a unified retry policy: exponential backoff on 429/502, max 2 retries, then immedia *(hatte die Idee 2×)*
-- Deploy a dream-to-action pipeline that converts each consolidated insight into a concrete code change or confi *(hatte die Idee 2×)*
 - Implement a token-bucket rate limiter per provider with shared global budget, 429-aware exponential backoff wi *(hatte die Idee 2×)*
 - Add a request deduplication cache keyed by prompt hash to eliminate redundant calls during swarm iterations an *(hatte die Idee 2×)*
 - Design swarm convergence criteria that weight model latency variance and success probability alongside score,  *(hatte die Idee 2×)*
+- Wrap hand actions in structured exception capture with stdout/stderr logging to diagnose silent exit-1 failure *(hatte die Idee 2×)*
+- Introduce a calibration tracker that records predicted vs actual outcomes per task type and adjusts future est *(hatte die Idee 2×)*
+- Implement a circuit-breaker that excludes models after 3 consecutive 429/502 errors within a 60s sliding windo *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -28,19 +28,24 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation detected 5 risks and proposed 3 revisions but only 2 were applied, leaving known gaps.
+- Evolutionary variant selection improved score from 1 to 8, but swarm failed to converge in 2 cycles.
+- Calibration is severely misaligned (predicted 8 vs actual 1), indicating optimism bias in success estimation.
+- Nvidia Nemotron shows mixed reliability: successes at 6-20s latency but suffers 502 upstream overload errors.
+- Free-tier models consistently fail with 429 rate-limit errors under load, making them unreliable as primary workers.
 - The consolidation goal itself fails because the artifact crashes with a traceback, revealing that meta-level tooling is also fragile.
 - Hand actions fail repeatedly with exit code 1 and zero bytes read, pointing to a systemic execution environment or permission issue.
 - Nvidia Nemotron shows intermittent success with highly variable latency (18-103s), suggesting unstable upstream capacity rather than hard quota exhaus
@@ -51,11 +56,6 @@
 - The swarm architecture (planner/builder/critic roles) reliably converges to a score-9 solution in a single cycle for well-defined simulation goals.
 - nvidia/nemotron-3-ultra-550b-a55b:free is the stable workhorse model, with latency scaling predictably from ~25s to ~124s as token volume increases.
 - The z-ai/glm-5.2 model is persistently rate-limited (429 errors) and cannot be relied upon as a primary inference source without backoff and failover 
-- Unfinished analysis steps and 40+ untested skill proposals indicate a chronic 'idea-to-execution' gap that stalls capability growth.
-- System stress at 1.0 with conserve-mode budget (max 3 tasks, 1 iteration) forces prioritization: only high-leverage, low-risk actions survive.
-- The simulation-revision loop (5 risks → 5 revisions → applied) demonstrates that structured critique cycles convert vague goals into executable change
-- Nemotron-3-Ultra succeeds consistently but with high latency variance (35–124 s), so time-budgeted tasks must assume worst-case latency.
-- Rate limiting (HTTP 429) across multiple free-tier models is the dominant failure mode, making provider diversity essential for reliability.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6087 Fakten** · Stand 2026-08-29 06:45 UTC · aktualisiert bei jedem Herzschlag
+**6092 Fakten** · Stand 2026-08-29 06:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2731
+- **dream:** 2736
 - **swarm_artifact:** 1489
 - **last_swarm_critique:** 594
 - **anti_pattern:** 473
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829064810:5:fdaefe`
+*29.08. 06:48 UTC · Quelle: dream*
+
+Simulation detected 5 risks and proposed 3 revisions but only 2 were applied, leaving known gaps.
+
+### `dream:20260829064810:4:e8bad5`
+*29.08. 06:48 UTC · Quelle: dream*
+
+Evolutionary variant selection improved score from 1 to 8, but swarm failed to converge in 2 cycles.
+
+### `dream:20260829064810:3:451e0a`
+*29.08. 06:48 UTC · Quelle: dream*
+
+Calibration is severely misaligned (predicted 8 vs actual 1), indicating optimism bias in success estimation.
+
+### `dream:20260829064810:2:b424c8`
+*29.08. 06:48 UTC · Quelle: dream*
+
+Nvidia Nemotron shows mixed reliability: successes at 6-20s latency but suffers 502 upstream overload errors.
+
+### `dream:20260829064810:1:9eb5a0`
+*29.08. 06:48 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate-limit errors under load, making them unreliable as primary workers.
 
 ### `dream:20260829064312:5:fb1121`
 *29.08. 06:43 UTC · Quelle: dream*
