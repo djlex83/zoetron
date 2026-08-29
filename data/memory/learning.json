@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 04:27:16",
+ "stand": "2026-08-29 04:50:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,12 +51,6 @@
    "quote": 1.0
   },
   {
-   "tool": "aufgaben-priorisieren.py",
-   "laeufe": 3,
-   "erfolge": 1,
-   "quote": 0.333
-  },
-  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -97,6 +91,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "aufgaben-priorisieren.py",
+   "laeufe": 2,
+   "erfolge": 1,
+   "quote": 0.5
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
@@ -141,17 +141,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.652,
+ "haende_quote": 0.662,
  "simulationen_angewandt": 45,
  "swarm_scores": {
   "n": 39,
   "best": 9.0,
-  "schnitt": 4.77
+  "schnitt": 4.95
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 36,
-   "schnitt": 4.67
+   "schnitt": 4.72
   },
   "bau": {
    "n": 2,

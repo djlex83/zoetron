@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6004 Fakten** · Stand 2026-08-29 04:27 UTC · aktualisiert bei jedem Herzschlag
+**6017 Fakten** · Stand 2026-08-29 04:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2686
-- **swarm_artifact:** 1465
-- **last_swarm_critique:** 590
+- **dream:** 2691
+- **swarm_artifact:** 1471
+- **last_swarm_critique:** 591
 - **anti_pattern:** 471
-- **last_swarm_goal:** 339
+- **last_swarm_goal:** 340
 - **strategy:** 256
 - **hand_result:** 71
 - **tool:** 57
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*29.08. 04:50 UTC · Quelle: critic*
+
+score=8; issues=Kein gemeinsamer Orchestrator/Entry-Point sichtbar, der alle drei Artefakte (Laden, Validieren, Ausführen) zu einem End-to-End-Lauf verknüpft; Abhängigkeit von externem Datenverzeichnis (ZOETRON_DATA/argv[1]) ohne eingebettete Testdaten für iso
+
+### `last_swarm_goal`
+*29.08. 04:44 UTC · Quelle: system*
+
+Liegende Marktanalyse abschließen
+
+### `dream:20260829044340:5:8228f0`
+*29.08. 04:43 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra works but exhibits high latency variance (7s–60s), causing unpredictable task durations.
+
+### `dream:20260829044340:4:e1d21a`
+*29.08. 04:43 UTC · Quelle: dream*
+
+Reflex tool 'kritiken-und-ziele-regelmäßig-prüfen.py' failed initially but succeeded after swarm simulation and iterative revision (risks=5, revisions=2).
+
+### `dream:20260829044340:3:dde670`
+*29.08. 04:43 UTC · Quelle: dream*
+
+High stress (1.0) triggers conserve mode that severely limits parallelism (max_tasks=3, max_iterations=1), slowing recovery.
+
+### `dream:20260829044340:2:ba76da`
+*29.08. 04:43 UTC · Quelle: dream*
+
+File operations fail when using relative paths instead of resolving via ZOETRON_DATA and sys.argv[1] environment inputs.
+
+### `dream:20260829044340:1:f9ff60`
+*29.08. 04:43 UTC · Quelle: dream*
+
+Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 
 ### `tool:alte-schwarm-arbeiten-zu-ende-bringen`
 *29.08. 04:27 UTC · Quelle: hands*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 04:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 04:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,13 +26,13 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fallback model nvidia/nemotron-3-ultra works but exhibits high latency variance (7s–60s), causing unpredictable task durations.
+- Reflex tool 'kritiken-und-ziele-regelmäßig-prüfen.py' failed initially but succeeded after swarm simulation and iterative revision (risks=5, revisions
+- High stress (1.0) triggers conserve mode that severely limits parallelism (max_tasks=3, max_iterations=1), slowing recovery.
+- File operations fail when using relative paths instead of resolving via ZOETRON_DATA and sys.argv[1] environment inputs.
+- Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable for production use.
 - The 'bahnen' graph shows zero delta and zero edges despite code existing, meaning the knowledge-graph linker is not extracting dependencies from the g
 - Calibration consistently over-predicts by 1 point (predicted 8 vs actual 7), suggesting the critic's scoring heuristic is misaligned with the final ev
 - Evolutionary search produces score variance (4-9) but the swarm stops at 2 cycles without convergence, indicating insufficient iteration budget or wea
@@ -50,12 +55,7 @@
 - Skill proposals accumulate in drive goals but lack an implementation pipeline; zero proposed skills became runnable code this cycle.
 - Stress level 1.0 triggers conserve mode that caps tasks at 3 and iterations at 1, severely throttling throughput.
 - File operations fail when using relative paths; all paths must resolve absolutely via ZOETRON_DATA env var and sys.argv[1] input.
-- Primary model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making nemotron-3-ultra the only reliable fallback despite 5-74s latenc
 - Five skill proposals exist but none are deployed; the gap between proposal and activation is the primary bottleneck to capability growth.
-- System entered conserve mode (stress=1.0) with max_tasks=3, yet drive goals remain stale—resource pressure is starving strategic work.
-- Three simulation-identified risks automatically produced three revisions, proving the simulation-to-revision pipeline works end-to-end.
-- Nemotron-3-ultra latency varies 12× (3.6–44.2 s), making fixed timeouts ineffective; deadlines must adapt to rolling 95th-percentile latency per model
-- Persistent 429 errors from z-ai/glm-5.2:free indicate a hard rate limit that requires permanent provider blacklisting after N consecutive failures.
 
 ---
 
