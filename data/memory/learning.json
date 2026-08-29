@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 23:15:53",
+ "stand": "2026-08-29 23:20:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 12,
+   "erfolge": 12,
    "quote": 1.0
   },
   {
@@ -34,8 +34,8 @@
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6742 Fakten** · Stand 2026-08-29 23:16 UTC · aktualisiert bei jedem Herzschlag
+**6747 Fakten** · Stand 2026-08-29 23:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3161
+- **dream:** 3166
 - **swarm_artifact:** 1607
 - **last_swarm_critique:** 615
 - **anti_pattern:** 503
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829232005:5:18d449`
+*29.08. 23:20 UTC · Quelle: dream*
+
+Prune runs remove nothing despite accumulating failed-model events, wasting context on known-bad endpoints.
+
+### `dream:20260829232005:4:ed59b6`
+*29.08. 23:20 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while external-API health (error rate, quota, latency) remains invisible, preventing conserve-state triggers before cascade failure.
+
+### `dream:20260829232005:3:755090`
+*29.08. 23:20 UTC · Quelle: dream*
+
+Five skill proposals already address routing, circuit breakers, health scorecards, and quota persistence but none have entered a promotion pipeline, stalling capability growth.
+
+### `dream:20260829232005:2:8f8222`
+*29.08. 23:20 UTC · Quelle: dream*
+
+Fallback model latency varies 4x (9.5–41.1s) with no p50/p95 tracking, so deadline-aware routing cannot exist.
+
+### `dream:20260829232005:1:dd6330`
+*29.08. 23:20 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal absent rate-limit header parsing and token-bucket enforcement, causing reactive fallbacks instead of proactive quota management.
 
 ### `dream:20260829231534:5:3b93da`
 *29.08. 23:15 UTC · Quelle: dream*
