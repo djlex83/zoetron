@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt nutzbar machen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while functional failures (rate limits, incomplete skills) persist undetected.
+- Swarm cycles converge on partial solutions (score 6, not converged) because completion criteria are implicit, not measured.
+- Evolution improves scores (6→9) but stalls without an orchestration layer to wire separate scripts together.
+- Fallback model latency varies 10x (5–48 s), making fixed deadlines unreliable for drive execution.
+- Free-tier models hit 429 rate limits predictably under load, requiring proactive routing instead of reactive fallback.
 - Evolution loop triggered after 6/10 score indicates a hard threshold for automatic improvement cycles.
 - A 160-line Python artifact executed cleanly (exit 0, 0.29s), proving generated code can be production-ready without manual fixes.
 - Calibration predicted 6/10 and actual scored 6/10, confirming the estimator is accurate for this task class.
@@ -51,11 +56,6 @@
 - Skill proposals remain inert without a validation pipeline that compiles, tests, and registers them as executable capabilities.
 - All file operations must resolve relative paths against ZOETRON_DATA before execution to avoid silent zero-byte reads.
 - Rate-limited models (z-ai/glm-5.2:free) must be automatically excluded after repeated 429 errors to prevent cascading failures.
-- The system generates proposals faster than it implements them, creating a persistent gap between identified solutions and deployed resilience.
-- Self-diagnosis reports zero organ errors, confirming the failure is external (API rate limiting) rather than internal system corruption.
-- Repeated skill proposals on the same problem domain (model routing, circuit breakers, health scores) signal that the solution space is well-understood
-- The fallback model (nemotron-3-ultra) succeeds but exhibits 4x latency variance (4.4s to 18.6s), indicating shared infrastructure pressure on the fall
-- Free-tier API models consistently hit rate limits (429), making them unreliable as primary inference endpoints without architectural safeguards.
 
 ---
 

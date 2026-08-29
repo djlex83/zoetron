@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 23:38:20",
+ "stand": "2026-08-29 23:42:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -28,8 +28,8 @@
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -115,12 +115,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "träume-in-taten-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "aufgaben-priorisieren.py",
@@ -219,7 +213,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.717,
+ "haende_quote": 0.722,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 36,
@@ -227,13 +221,13 @@
   "schnitt": 6.0
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 34,
-   "schnitt": 5.85
-  },
   "bau": {
    "n": 2,
    "schnitt": 8.5
+  },
+  "analyse": {
+   "n": 33,
+   "schnitt": 5.88
   }
  }
 }
