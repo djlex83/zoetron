@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Rate-limit errors cluster in time across multiple models simultaneously, suggesting concurrent requests exhaust shared quotas, demanding request sched
+- Reflex mode successfully completes tasks when execution is possible, proving the agent's decision-making is sound but its external I/O pipeline is the
+- Intermittent model availability means no single model can be trusted as a primary — a routing and fallback strategy is essential for continuous operat
+- The system's internal health (selbstdiagnose) remains clean while external dependencies fail, meaning reliability engineering must focus on I/O bounda
+- External API failures (429 rate limits, 502 upstream overloads) are systemic across all free-tier models, not isolated incidents, requiring architectu
 - Having at least one reliable alternative model that completes tasks when the primary fails demonstrates that redundancy is essential for task resilien
 - Unfinished analytical work decays into waste when there is no mechanism to convert it into concrete next steps.
 - Reflex-driven consolidation successfully converts experience into action, proving that autonomous replay mechanisms work for skill internalization.
@@ -51,11 +56,6 @@
 - Fallback model latency reached 41.7s — nearly triple a reasonable budget — because no per-model latency SLO or p95 enforcement exists on fallback path
 - The swarm architecture (planner/builder/critic) converged reliably in a single cycle and produced a high-quality artifact (score 8) when the model lay
 - Repeated 429 rate-limit errors from z-ai/glm-5.2:free without any circuit breaker caused cascading disruptions, revealing that the system lacks automa
-- There is a persistent gap between abstract skill proposals and concrete actionable goals, requiring an explicit translation step.
-- Under high stress (stress=1.0), the system correctly enters conserve mode with severely limited budget, preventing cascading failures.
-- Tool scripts depending on sys.argv[1] or ZOETRON_DATA fail silently when relative paths are not resolved against the actual data root directory.
-- The simulation-revision loop (detect risks → revise → re-validate) is a proven procedure that consistently converts failing artifacts into working one
-- The free model z-ai/glm-5.2:free is completely unreliable due to persistent 429 rate-limit errors and must be excluded from any critical execution pat
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6683 Fakten** · Stand 2026-08-29 21:46 UTC · aktualisiert bei jedem Herzschlag
+**6688 Fakten** · Stand 2026-08-29 21:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3126
+- **dream:** 3131
 - **swarm_artifact:** 1595
 - **last_swarm_critique:** 613
 - **anti_pattern:** 499
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829215309:5:093d6a`
+*29.08. 21:53 UTC · Quelle: dream*
+
+Rate-limit errors cluster in time across multiple models simultaneously, suggesting concurrent requests exhaust shared quotas, demanding request scheduling and throttling.
+
+### `dream:20260829215309:4:2d222d`
+*29.08. 21:53 UTC · Quelle: dream*
+
+Reflex mode successfully completes tasks when execution is possible, proving the agent's decision-making is sound but its external I/O pipeline is the bottleneck.
+
+### `dream:20260829215309:3:c45e8f`
+*29.08. 21:53 UTC · Quelle: dream*
+
+Intermittent model availability means no single model can be trusted as a primary — a routing and fallback strategy is essential for continuous operation.
+
+### `dream:20260829215309:2:e892ca`
+*29.08. 21:53 UTC · Quelle: dream*
+
+The system's internal health (selbstdiagnose) remains clean while external dependencies fail, meaning reliability engineering must focus on I/O boundary protection, not internal process correction.
+
+### `dream:20260829215309:1:cd8391`
+*29.08. 21:53 UTC · Quelle: dream*
+
+External API failures (429 rate limits, 502 upstream overloads) are systemic across all free-tier models, not isolated incidents, requiring architectural resilience rather than model-specific workarounds.
 
 ### `dream:20260829214551:5:0e5164`
 *29.08. 21:45 UTC · Quelle: dream*
