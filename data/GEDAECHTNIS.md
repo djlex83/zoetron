@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6326 Fakten** · Stand 2026-08-29 13:23 UTC · aktualisiert bei jedem Herzschlag
+**6340 Fakten** · Stand 2026-08-29 13:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2881
-- **swarm_artifact:** 1533
-- **last_swarm_critique:** 602
+- **dream:** 2886
+- **swarm_artifact:** 1539
+- **last_swarm_critique:** 603
 - **anti_pattern:** 487
-- **last_swarm_goal:** 351
+- **last_swarm_goal:** 352
 - **strategy:** 264
 - **hand_result:** 75
-- **tool:** 64
+- **tool:** 65
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:ersten-swarm-lauf-mit-score-8-konvergier`
+*29.08. 13:38 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Ersten Swarm-Lauf mit Score 8+ konvergieren lassen'. Datei: data/tools/ersten-swarm-lauf-mit-score-8-konvergier.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*29.08. 13:38 UTC · Quelle: critic*
+
+score=9; issues=Fallback konvergenztor_pruefe only checks score threshold without actual convergence logic - depends on discovered modules for real gate; Module discovery uses heuristic name matching which may miss modules in non-standard locations; Default ro
+
+### `last_swarm_goal`
+*29.08. 13:27 UTC · Quelle: system*
+
+Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
+
+### `dream:20260829132648:5:0e57d1`
+*29.08. 13:26 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260829132648:4:dd7db3`
+*29.08. 13:26 UTC · Quelle: dream*
+
+Simulation risk thresholds drift from actual outcomes; an online calibration loop that logs predicted vs. actual scores per model/task and adjusts confidence intervals daily prevents silent degradation.
+
+### `dream:20260829132648:3:f64ec0`
+*29.08. 13:26 UTC · Quelle: dream*
+
+Proposed skills accumulate but rarely get implemented; a gated promotion pipeline (proposal → sandbox dry-run → stress-test → swarm commit) would close the proposal-to-production gap.
+
+### `dream:20260829132648:2:ac68e0`
+*29.08. 13:26 UTC · Quelle: dream*
+
+High latency (20-30s) on fallback models creates cascading timeouts; async batch queues with timeout budgets and progress callbacks are needed for non-critical paths.
+
+### `dream:20260829132648:1:6bcfc0`
+*29.08. 13:26 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without token-bucket throttling and automatic paid-model failover.
 
 ### `dream:20260829132215:5:f4169c`
 *29.08. 13:22 UTC · Quelle: dream*

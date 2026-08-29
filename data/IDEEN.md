@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 13:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 13:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative paths in hand actions cause silent failures; a mandatory path resolver that expands all inputs to absolute ZOETRON_DATA paths before executio
+- Simulation risk thresholds drift from actual outcomes; an online calibration loop that logs predicted vs. actual scores per model/task and adjusts con
+- Proposed skills accumulate but rarely get implemented; a gated promotion pipeline (proposal → sandbox dry-run → stress-test → swarm commit) would clos
+- High latency (20-30s) on fallback models creates cascading timeouts; async batch queues with timeout budgets and progress callbacks are needed for non
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without token-bucket throttling and automati
 - Simulation-swarm loops lack convergence criteria, causing unbounded cycles that waste tokens on divergent trajectories.
 - Multiple concurrent drive goals (reliability, market analysis, memory recombination) compete for limited model throughput without priority arbitration
 - Reflex scripts execute successfully but lack pre-deployment validation, creating silent failure risk when dependencies shift.
@@ -51,11 +56,6 @@
 - No model health scoring, routing, or retry logic exists - each call naively targets a single model without fallback or backoff.
 - The nvidia/nemotron model succeeds but exhibits extreme latency variance (37-82s) and eventually fails with 502 upstream errors, indicating unstable c
 - Free-tier model endpoints systematically fail with 429 quota errors across multiple providers (z-ai, google), making them unreliable as primary depend
-- Calibration error of 1 on small sample (pred 5 vs actual 4) signals need for rolling error tracking per model tier.
-- Simulation gate allowed completion despite 3 risks and 3 revisions, showing verification threshold is too permissive.
-- Swarm cycles stall at score 4 with converged=false, revealing undefined convergence criteria and no auto-termination on plateau.
-- Nemotron-3-ultra latency varies 22–169s for similar token loads, suggesting queueing or cold-start effects that degrade throughput predictability.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate missing circuit-breaker and fallback logic causing cascading failures.
 
 ---
 
