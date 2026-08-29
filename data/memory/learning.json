@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 18:20:06",
+ "stand": "2026-08-29 18:25:05",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -99,12 +99,6 @@
    "quote": 0.0
   },
   {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -160,6 +154,12 @@
   },
   {
    "tool": "fähigkeiten-gezielt-trainieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

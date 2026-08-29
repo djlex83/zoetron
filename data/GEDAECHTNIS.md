@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6522 Fakten** · Stand 2026-08-29 18:20 UTC · aktualisiert bei jedem Herzschlag
+**6527 Fakten** · Stand 2026-08-29 18:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2996
+- **dream:** 3001
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829182434:5:40d593`
+*29.08. 18:24 UTC · Quelle: dream*
+
+Proposed skills accumulate but never deploy because the reflex/tool chain breaks at file access, not at logic — the gap is operational, not conceptual.
+
+### `dream:20260829182434:4:d9cf20`
+*29.08. 18:24 UTC · Quelle: dream*
+
+Simulation-based revision loops work (3 risks → 3 revisions applied) but only activate after execution failures, not as a preventive gate.
+
+### `dream:20260829182434:3:341385`
+*29.08. 18:24 UTC · Quelle: dream*
+
+High system stress (1.0) triggers conserve mode, capping tasks at 3 and iterations at 1, which starves long-running goals like market analyses and skill implementation.
+
+### `dream:20260829182434:2:47c652`
+*29.08. 18:24 UTC · Quelle: dream*
+
+Hand actions fail due to incorrect path resolution — inputs arrive via sys.argv[1] and ZOETRON_DATA but code uses relative paths that don't map to the real data directory.
+
+### `dream:20260829182434:1:e6392b`
+*29.08. 18:24 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently fail under load with 429 rate limits and 502 errors, making them unreliable for production workflows.
 
 ### `dream:20260829181934:5:0f7a69`
 *29.08. 18:19 UTC · Quelle: dream*
