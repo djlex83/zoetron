@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5786 Fakten** · Stand 2026-08-28 23:59 UTC · aktualisiert bei jedem Herzschlag
+**5791 Fakten** · Stand 2026-08-29 00:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2566
+- **dream:** 2571
 - **swarm_artifact:** 1411
 - **last_swarm_critique:** 581
 - **anti_pattern:** 459
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829000302:5:18e4a3`
+*29.08. 00:03 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model-layer failures repeat, revealing a monitoring blind spot at the inference-provider level.
+
+### `dream:20260829000302:4:f8c709`
+*29.08. 00:03 UTC · Quelle: dream*
+
+Skill proposals accumulate (router, scoreboard, calibration, circuit breaker, validation pipeline) but lack a gated validation pipeline, risking untested deployments.
+
+### `dream:20260829000302:3:ade099`
+*29.08. 00:03 UTC · Quelle: dream*
+
+Stale drive goals (market analysis, model-error diagnosis) persist across cycles despite reflex tools, indicating missing TTL-based auto-escalation or convergence forcing.
+
+### `dream:20260829000302:2:4ec40d`
+*29.08. 00:03 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (8.8–74.3 s), requiring p95 latency budgets and tiered routing to prevent deadline misses.
+
+### `dream:20260829000302:1:c84703`
+*29.08. 00:03 UTC · Quelle: dream*
+
+Free-tier model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for any production path without enforced cooldown and circuit-breaker logic.
 
 ### `dream:20260828235811:5:6a0c39`
 *28.08. 23:58 UTC · Quelle: dream*

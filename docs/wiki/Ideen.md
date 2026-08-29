@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-28 23:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 00:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 14×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model-layer failures repeat, revealing a monitoring blind spot at the inference-provider level.
+- Skill proposals accumulate (router, scoreboard, calibration, circuit breaker, validation pipeline) but lack a gated validation pipeline, risking untes
+- Stale drive goals (market analysis, model-error diagnosis) persist across cycles despite reflex tools, indicating missing TTL-based auto-escalation or
+- Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (8.8–74.3 s), requiring p95 latency budgets and tier
+- Free-tier model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for any production path without enforced cooldown and circuit-
 - Stale analysis artifacts persist because cleanup is not triggered by age or quality thresholds.
 - Latency variance (8.8–34.6 s) for the same model indicates missing request-level timeouts and tier-based routing.
 - Fifty-four skill proposals accumulate without validation; the proposal-to-skill pipeline lacks automated testing and promotion gates.
@@ -51,11 +56,6 @@
 - Evolutionary swarm cycles (2 cycles, score 5/10) and simulation revisions (5 revisions) fail to converge because convergence criteria are absent and m
 - Self-diagnosis reports zero organ errors while external metrics show 57% model failure rate, exposing a blind spot where internal health checks don't 
 - Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-provider circuit breakers, causing 60 failures versus 45 successes and forcing fallback to
-- Simulations produce 'go' verdicts with risks/revisions but no automatic mechanism injects those revisions into the next execution plan.
-- Stress=1.0 triggers conserve mode (max_tasks=3), which starves the very retries needed to recover from model failures, creating a negative feedback lo
-- Reflex tools show binary reliability: 'marktanalyse-endlich-abschließen.py' converges, while 'träume-in-taten-umsetzen.py' fails silently, indicating 
-- Hand actions fail when tools use relative paths that don't resolve against the actual ZOETRON_DATA mount point, revealing a path-abstraction leak.
-- Repeated 429 errors on the primary model without a circuit breaker cause cascading fallback to a high-latency secondary model, wasting 30+ seconds per
 
 ---
 
