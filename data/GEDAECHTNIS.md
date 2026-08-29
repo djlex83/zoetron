@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6082 Fakten** · Stand 2026-08-29 06:30 UTC · aktualisiert bei jedem Herzschlag
+**6087 Fakten** · Stand 2026-08-29 06:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2726
+- **dream:** 2731
 - **swarm_artifact:** 1489
 - **last_swarm_critique:** 594
 - **anti_pattern:** 473
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829064312:5:fb1121`
+*29.08. 06:43 UTC · Quelle: dream*
+
+The consolidation goal itself fails because the artifact crashes with a traceback, revealing that meta-level tooling is also fragile.
+
+### `dream:20260829064312:4:fdd0e2`
+*29.08. 06:43 UTC · Quelle: dream*
+
+Hand actions fail repeatedly with exit code 1 and zero bytes read, pointing to a systemic execution environment or permission issue.
+
+### `dream:20260829064312:3:de3223`
+*29.08. 06:43 UTC · Quelle: dream*
+
+Nvidia Nemotron shows intermittent success with highly variable latency (18-103s), suggesting unstable upstream capacity rather than hard quota exhaustion.
+
+### `dream:20260829064312:2:c16de0`
+*29.08. 06:43 UTC · Quelle: dream*
+
+Only poolside/laguna-s-2.1:free consistently succeeds but with extreme latency (176-190s), indicating capacity saturation on that endpoint.
+
+### `dream:20260829064312:1:d4b751`
+*29.08. 06:43 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive rate limiting (429) and upstream overload (502), making them unreliable for production workloads.
 
 ### `last_swarm_critique`
 *29.08. 06:29 UTC · Quelle: critic*
