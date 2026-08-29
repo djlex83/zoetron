@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6710 Fakten** · Stand 2026-08-29 22:38 UTC · aktualisiert bei jedem Herzschlag
+**6715 Fakten** · Stand 2026-08-29 22:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3141
+- **dream:** 3146
 - **swarm_artifact:** 1601
 - **last_swarm_critique:** 614
 - **anti_pattern:** 501
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829224252:5:8c68bd`
+*29.08. 22:42 UTC · Quelle: dream*
+
+Repeated 429 errors on identical models across cycles indicate no persistent quota tracking or cooldown memory between episodes.
+
+### `dream:20260829224252:4:e80eec`
+*29.08. 22:42 UTC · Quelle: dream*
+
+Fallback model latency varies 2.6x (9.7s vs 25.7s), making latency-aware routing essential for predictable performance.
+
+### `dream:20260829224252:3:81b721`
+*29.08. 22:42 UTC · Quelle: dream*
+
+Skill proposals accumulate but never graduate to tested, reusable capabilities without a formal promotion pipeline.
+
+### `dream:20260829224252:2:f17989`
+*29.08. 22:42 UTC · Quelle: dream*
+
+Self-diagnosis blind spots: internal organ checks pass while external API dependencies silently fail with quota exhaustion.
+
+### `dream:20260829224252:1:8cfe51`
+*29.08. 22:42 UTC · Quelle: dream*
+
+Rate limit errors cascade because the system lacks header-aware backoff and automatic failover before 429 occurs.
 
 ### `dream:20260829223744:5:cc4a7f`
 *29.08. 22:37 UTC · Quelle: dream*

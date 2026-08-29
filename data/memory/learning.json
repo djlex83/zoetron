@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 22:38:03",
+ "stand": "2026-08-29 22:43:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -31,6 +31,12 @@
    "laeufe": 7,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -55,12 +61,6 @@
    "laeufe": 4,
    "erfolge": 1,
    "quote": 0.25
-  },
-  {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",

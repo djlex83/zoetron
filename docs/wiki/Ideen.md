@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 22:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 22:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated 429 errors on identical models across cycles indicate no persistent quota tracking or cooldown memory between episodes.
+- Fallback model latency varies 2.6x (9.7s vs 25.7s), making latency-aware routing essential for predictable performance.
+- Skill proposals accumulate but never graduate to tested, reusable capabilities without a formal promotion pipeline.
+- Self-diagnosis blind spots: internal organ checks pass while external API dependencies silently fail with quota exhaustion.
+- Rate limit errors cascade because the system lacks header-aware backoff and automatic failover before 429 occurs.
 - Self-diagnosis and pruning reported zero issues despite repeated model failures, showing that current health checks do not capture external API degrad
 - Reflex-driven cleanup of stale market data completed successfully in 0.39s, proving that targeted, single-purpose scripts can resolve 'stale data' dri
 - The system generated five relevant skill proposals during the failure burst but none were instantiated, revealing a gap between proposal generation an
@@ -51,11 +56,6 @@
 - Error handling lacks classification: 429, 5xx, and empty-success responses receive identical retry logic.
 - A single reliable model (ling-3.0-flash-fin) becomes a bottleneck and single point of failure under load.
 - Free-tier models fail predominantly due to rate limits (429) and upstream overload (502), not model quality.
-- Rate-limit errors cluster in time across multiple models simultaneously, suggesting concurrent requests exhaust shared quotas, demanding request sched
-- Reflex mode successfully completes tasks when execution is possible, proving the agent's decision-making is sound but its external I/O pipeline is the
-- Intermittent model availability means no single model can be trusted as a primary — a routing and fallback strategy is essential for continuous operat
-- The system's internal health (selbstdiagnose) remains clean while external dependencies fail, meaning reliability engineering must focus on I/O bounda
-- External API failures (429 rate limits, 502 upstream overloads) are systemic across all free-tier models, not isolated incidents, requiring architectu
 
 ---
 
