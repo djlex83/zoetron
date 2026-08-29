@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6673 Fakten** · Stand 2026-08-29 21:31 UTC · aktualisiert bei jedem Herzschlag
+**6678 Fakten** · Stand 2026-08-29 21:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3116
+- **dream:** 3121
 - **swarm_artifact:** 1595
 - **last_swarm_critique:** 613
 - **anti_pattern:** 499
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829213835:5:93717d`
+*29.08. 21:38 UTC · Quelle: dream*
+
+Calibration predicted 7 vs actual 8 (abs_error 1), showing the scoring model is well-calibrated but could tighten bounds to reduce systematic under-estimation.
+
+### `dream:20260829213835:4:1a3d70`
+*29.08. 21:38 UTC · Quelle: dream*
+
+A persistent proposal-to-implementation gap exists: five concrete skill proposals were generated but none were auto-promoted to staging, indicating no compiler bridges goals to deployed skills.
+
+### `dream:20260829213835:3:dde318`
+*29.08. 21:38 UTC · Quelle: dream*
+
+Fallback model latency reached 41.7s — nearly triple a reasonable budget — because no per-model latency SLO or p95 enforcement exists on fallback paths.
+
+### `dream:20260829213835:2:0d8b80`
+*29.08. 21:38 UTC · Quelle: dream*
+
+The swarm architecture (planner/builder/critic) converged reliably in a single cycle and produced a high-quality artifact (score 8) when the model layer was healthy.
+
+### `dream:20260829213835:1:f37e3e`
+*29.08. 21:38 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors from z-ai/glm-5.2:free without any circuit breaker caused cascading disruptions, revealing that the system lacks automatic quarantine and failover for unhealthy models.
 
 ### `dream:20260829213025:5:8e237c`
 *29.08. 21:30 UTC · Quelle: dream*

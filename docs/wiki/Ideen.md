@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 21:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse abschließen und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten echt nutzbar machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predicted 7 vs actual 8 (abs_error 1), showing the scoring model is well-calibrated but could tighten bounds to reduce systematic under-es
+- A persistent proposal-to-implementation gap exists: five concrete skill proposals were generated but none were auto-promoted to staging, indicating no
+- Fallback model latency reached 41.7s — nearly triple a reasonable budget — because no per-model latency SLO or p95 enforcement exists on fallback path
+- The swarm architecture (planner/builder/critic) converged reliably in a single cycle and produced a high-quality artifact (score 8) when the model lay
+- Repeated 429 rate-limit errors from z-ai/glm-5.2:free without any circuit breaker caused cascading disruptions, revealing that the system lacks automa
 - There is a persistent gap between abstract skill proposals and concrete actionable goals, requiring an explicit translation step.
 - Under high stress (stress=1.0), the system correctly enters conserve mode with severely limited budget, preventing cascading failures.
 - Tool scripts depending on sys.argv[1] or ZOETRON_DATA fail silently when relative paths are not resolved against the actual data root directory.
@@ -51,11 +56,6 @@
 - Fifty-five skill proposals have accumulated without any being implemented, exposing a broken ideation-to-execution pipeline where generation consisten
 - Self-diagnosis reports zero organ errors while the system experiences repeated model failures and latency degradation, revealing a diagnostic blind sp
 - The z-ai/glm-5.2 model fails repeatedly with 429 errors across consecutive calls, indicating a structural rate-limit ceiling on free tiers rather than
-- Self-diagnosis ignores external API health metrics, leaving the system blind to upstream degradation.
-- Reactive error handling dominates; no proactive circuit-breaking or exponential backoff protects external I/O.
-- Numerous skill proposals exist but remain unimplemented, revealing a gap between diagnosis and execution.
-- Model endpoints exhibit inconsistent availability (404, 429) requiring pre-flight health checks before dispatch.
-- Rate limiting (429 errors) across multiple models indicates systemic lack of rate-limit awareness and automatic failover.
 
 ---
 
