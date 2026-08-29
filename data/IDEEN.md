@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 05:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 06:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Unfinished analysis steps and 40+ untested skill proposals indicate a chronic 'idea-to-execution' gap that stalls capability growth.
+- System stress at 1.0 with conserve-mode budget (max 3 tasks, 1 iteration) forces prioritization: only high-leverage, low-risk actions survive.
+- The simulation-revision loop (5 risks → 5 revisions → applied) demonstrates that structured critique cycles convert vague goals into executable change
+- Nemotron-3-Ultra succeeds consistently but with high latency variance (35–124 s), so time-budgeted tasks must assume worst-case latency.
+- Rate limiting (HTTP 429) across multiple free-tier models is the dominant failure mode, making provider diversity essential for reliability.
 - Five skill proposals (router, factory, activator, governor, pruner) remain unimplemented, exposing a deployment gap between proposal and production.
 - Cycle prediction error of ±1 (predicted 7, actual 8) shows decent calibration but ignores model latency variance, suggesting latency-aware planning.
 - Swarm converges in one cycle with specialized roles (planner, builder×3, critic) for well-scoped analysis goals, validating the role allocation strate
@@ -51,11 +56,6 @@
 - Swarm evolution stalls at score 7 with high revision counts (5) and non-convergence, indicating critic feedback lacks actionable specificity.
 - Fallback model (nemotron) latency varies 5x (7-37s), requiring per-task timeout calibration to prevent cascade delays.
 - The primary model (glm-5.2) fails consistently with 429 rate-limiting, making automatic fallback a reliability requirement.
-- Calibration prediction matched actual outcome exactly (7/7), indicating reliable self-assessment for this task class.
-- Evolutionary refinement (3 variants) improved artifact score from 7 to 8/9/9 by addressing critic-flagged use of Unix-specific signal.SIGALRM.
-- Simulation-based pre-execution review detected 3 risks and mandated 3 revisions, which were successfully applied before artifact execution.
-- Nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (15.5–89.3s), requiring timeout-aware orchestration.
-- Metabolism stress at maximum with conservative budget indicates systemic overload; task admission control must reject new work before saturation.
 
 ---
 
