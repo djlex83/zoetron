@@ -4,14 +4,14 @@
     "model_name": "Demo Classifier",
     "version": "1.0.0",
     "status": "critical",
-    "last_check": "2026-08-29T13:57:04.625688",
+    "last_check": "2026-08-29T19:14:00.295756",
     "metrics": {
       "accuracy": 0.0,
       "latency_ms": 0.0,
       "error_rate": 1.0,
       "throughput_rps": 0.0,
       "memory_mb": 0.0,
-      "timestamp": "2026-08-29T13:57:04.625677",
+      "timestamp": "2026-08-29T19:14:00.295743",
       "benchmark_source": "default_fallback"
     },
     "metadata": {

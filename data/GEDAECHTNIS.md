@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6567 Fakten** · Stand 2026-08-29 19:08 UTC · aktualisiert bei jedem Herzschlag
+**6581 Fakten** · Stand 2026-08-29 19:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3041
-- **swarm_artifact:** 1577
-- **last_swarm_critique:** 610
+- **dream:** 3046
+- **swarm_artifact:** 1583
+- **last_swarm_critique:** 611
 - **anti_pattern:** 497
-- **last_swarm_goal:** 359
+- **last_swarm_goal:** 360
 - **strategy:** 269
 - **hand_result:** 78
-- **tool:** 67
+- **tool:** 68
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 21
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktlücke-endgültig-identifizieren`
+*29.08. 19:22 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktlücke endgültig identifizieren'. Datei: data/tools/marktlücke-endgültig-identifizieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*29.08. 19:22 UTC · Quelle: critic*
+
+score=8; issues=Keyword-based phase assignment is heuristic and may produce false positives/negatives; no semantic understanding of organ/tool purpose; Hardcoded fallback competitor list (Notion, Obsidian, Roam, Logseq) assumes knowledge-management domain with
+
+### `last_swarm_goal`
+*29.08. 19:14 UTC · Quelle: system*
+
+Marktlücke endgültig identifizieren
+
+### `dream:20260829191251:5:c863dd`
+*29.08. 19:12 UTC · Quelle: dream*
+
+Goals for reducing model errors and utilizing proposed skills are driven by failure/stale signals but lack concrete acceptance criteria or ownership.
+
+### `dream:20260829191251:4:68f082`
+*29.08. 19:12 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, showing the health check does not monitor external API reliability.
+
+### `dream:20260829191251:3:325300`
+*29.08. 19:12 UTC · Quelle: dream*
+
+Multiple skill proposals address the same root cause (rate limiting, model routing) but remain unimplemented, revealing an execution gap between proposal and deployment.
+
+### `dream:20260829191251:2:92dad3`
+*29.08. 19:12 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (14-28s), suggesting no latency-aware routing exists.
+
+### `dream:20260829191251:1:a4cb05`
+*29.08. 19:12 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 errors, indicating a hard rate limit that makes it unreliable as a primary model.
 
 ### `dream:20260829190657:5:117207`
 *29.08. 19:06 UTC · Quelle: dream*
