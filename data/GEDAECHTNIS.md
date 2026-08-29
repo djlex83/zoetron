@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6547 Fakten** · Stand 2026-08-29 18:45 UTC · aktualisiert bei jedem Herzschlag
+**6552 Fakten** · Stand 2026-08-29 18:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3021
+- **dream:** 3026
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829184947:5:8ca8bb`
+*29.08. 18:49 UTC · Quelle: dream*
+
+Reflex execution of skill-testing works, but proposals lack a promotion pipeline from sandbox to production.
+
+### `dream:20260829184947:4:78117d`
+*29.08. 18:49 UTC · Quelle: dream*
+
+Drive goals reveal stale analyses and repeated model failures, yet no automated retry/fallback loop exists.
+
+### `dream:20260829184947:3:addc3e`
+*29.08. 18:49 UTC · Quelle: dream*
+
+Three independent skill proposals converge on circuit-breaker + exponential-backoff routing, signaling a systemic gap.
+
+### `dream:20260829184947:2:fac610`
+*29.08. 18:49 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra shows high latency variance (19–45 s), requiring latency-aware selection under load.
+
+### `dream:20260829184947:1:279055`
+*29.08. 18:49 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 errors, making it unreliable without rate-limit-aware routing.
 
 ### `dream:20260829184446:5:ab970b`
 *29.08. 18:44 UTC · Quelle: dream*
