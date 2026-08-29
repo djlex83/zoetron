@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 11:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 12:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple concurrent drive goals (failure analysis, stale insight refresh, dream combination) indicate the system generates more intent than it can exe
+- Hand actions fail due to path resolution errors (sys.argv vs real data path), revealing a systemic environment/configuration mismatch.
+- Pruning thresholds are miscalibrated: zero facts/events pruned suggests retention criteria are too aggressive or access tracking is broken.
+- The single working model (ling-3.0-flash-fin) exhibits high latency (7-9s), indicating fallback success trades off against response time.
+- Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without robust fallback.
 - Pruning removed zero facts/events despite repeated failures, suggesting the consolidation trigger threshold is too high for acute error patterns.
 - Self-diagnosis reports zero organ errors while the system experiences total LLM unavailability, showing health checks miss external dependency failure
 - Rate limit errors cascade across all model tiers within minutes, indicating shared quota pools that invalidate fallback chains relying on multiple fre
@@ -51,11 +56,6 @@
 - Working models exhibit 7-10s latency, requiring conserve-mode protocols that skip simulation when budgets drop below 5s.
 - Model reliability is bimodal: inclusionai/ling-3.0-flash-fin:free and poolside/laguna-s-2.1:free succeed consistently while others fail systematically
 - Rate limiting (429 errors) is the dominant failure mode across multiple free-tier models, making fallback chains essential for reliability.
-- Pruning runs produce zero deletions, indicating thresholds are misaligned with the actual data lifecycle and access patterns.
-- The fallback model (nvidia/nemotron-3-ultra-550b-a55b:free) succeeds reliably but at ~50s latency, which compounds delays under sustained load.
-- Stale tasks (e.g., Marktanalyse) accumulate when no convergence gate or time-based escalation forces completion.
-- Skill proposals are generated in large numbers (50+) but almost never executed, revealing a systemic proposal-to-implementation gap.
-- 429 rate-limit errors on a single model (z-ai/glm-5.2:free) are the dominant recurring failure, causing cascading task interruptions every few seconds
 
 ---
 

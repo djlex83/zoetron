@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 4218 Neuronen · 184096 bewertete Synapsen
+Stand: 4228 Neuronen · 185265 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,21 +10,21 @@ Stand: 4218 Neuronen · 184096 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 390 | 0.26 |
-| 2 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 425 | 0.24 |
-| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 390 | 0.26 |
-| 4 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 418 | 0.23 |
-| 5 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 403 | 0.24 |
+| 1 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 392 | 0.26 |
+| 2 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 426 | 0.24 |
+| 3 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 392 | 0.26 |
+| 4 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 420 | 0.23 |
+| 5 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 404 | 0.24 |
 | 6 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 362 | 0.25 |
-| 7 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 375 | 0.24 |
-| 8 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 373 | 0.24 |
-| 9 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 379 | 0.23 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 350 | 0.25 |
-| 11 | 💭 | Fallback model latency varies 4x (16.8s–74.3s), revealing no lat… | 345 | 0.24 |
-| 12 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 333 | 0.24 |
-| 13 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 305 | 0.26 |
-| 14 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 358 | 0.22 |
-| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 329 | 0.24 |
+| 7 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 376 | 0.24 |
+| 8 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 374 | 0.24 |
+| 9 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 380 | 0.23 |
+| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 352 | 0.25 |
+| 11 | 💭 | Fallback model latency varies 4x (16.8s–74.3s), revealing no lat… | 346 | 0.24 |
+| 12 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 335 | 0.24 |
+| 13 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 306 | 0.26 |
+| 14 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 359 | 0.22 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Doku-Konsistenzwächter b“ (Note 2/1… | 331 | 0.24 |
 
 ## Die 15 stärksten Synapsen
 
