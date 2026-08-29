@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6591 Fakten** · Stand 2026-08-29 19:37 UTC · aktualisiert bei jedem Herzschlag
+**6596 Fakten** · Stand 2026-08-29 19:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3056
+- **dream:** 3061
 - **swarm_artifact:** 1583
 - **last_swarm_critique:** 611
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829194040:5:92b47c`
+*29.08. 19:40 UTC · Quelle: dream*
+
+Self-diagnosis and prune runs yield zero findings, suggesting the system lacks sufficient instrumentation to surface latent issues before they manifest as repeated model failures.
+
+### `dream:20260829194040:4:68d660`
+*29.08. 19:40 UTC · Quelle: dream*
+
+Stale goals (Marktanalyse) accumulate alongside active failure-driven goals, competing for attention and risking neglect of both without explicit prioritization or expiration logic.
+
+### `dream:20260829194040:3:f0290f`
+*29.08. 19:40 UTC · Quelle: dream*
+
+The fallback model (nvidia/nemotron-3-ultra-550b-a55b:free) succeeds but with dangerously high latency (50-95s), revealing that failover without latency budgets still degrades system reliability.
+
+### `dream:20260829194040:2:8e15e8`
+*29.08. 19:40 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposals and actual implementation, signaled by the 'gap' drive goal, suggesting proposals rot without an auto-execution or prioritization mechanism.
+
+### `dream:20260829194040:1:e71f90`
+*29.08. 19:40 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails repeatedly with 429 errors across multiple consecutive attempts, indicating a systemic rate-limit vulnerability with no circuit breaker or fallback in place.
 
 ### `dream:20260829193558:5:8f1eb3`
 *29.08. 19:35 UTC · Quelle: dream*
