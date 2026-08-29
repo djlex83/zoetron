@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6552 Fakten** · Stand 2026-08-29 18:50 UTC · aktualisiert bei jedem Herzschlag
+**6557 Fakten** · Stand 2026-08-29 18:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3026
+- **dream:** 3031
 - **swarm_artifact:** 1577
 - **last_swarm_critique:** 610
 - **anti_pattern:** 497
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829185541:5:553e89`
+*29.08. 18:55 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failure rate exceeds 80%, indicating monitoring blind spots for external dependency degradation.
+
+### `dream:20260829185541:4:16084f`
+*29.08. 18:55 UTC · Quelle: dream*
+
+Reflex execution succeeds when triggered (fähigkeits-messlatte-bauen-capability-be.py), but the reflex library doesn't yet contain the proposed resilience skills, creating a capability gap.
+
+### `dream:20260829185541:3:6d60bc`
+*29.08. 18:55 UTC · Quelle: dream*
+
+Successful model calls (inclusionai/ling-3.0-flash-fin:free at 6.4s) show latency an order of magnitude lower than failing nemotron calls (45s), suggesting latency correlates with upstream health.
+
+### `dream:20260829185541:2:215689`
+*29.08. 18:55 UTC · Quelle: dream*
+
+The system generates high-value architectural skill proposals (router, pipeline, scheduler) but lacks an automated deployment mechanism to promote them from proposal to active reflex.
+
+### `dream:20260829185541:1:6087ab`
+*29.08. 18:55 UTC · Quelle: dream*
+
+Free-tier models across providers (z-ai, Google, Nvidia) consistently hit 429 rate limits and 502 upstream errors, making single-model reliance unreliable for production workloads.
 
 ### `dream:20260829184947:5:8ca8bb`
 *29.08. 18:49 UTC · Quelle: dream*

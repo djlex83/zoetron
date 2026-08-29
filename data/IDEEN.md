@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 18:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failure rate exceeds 80%, indicating monitoring blind spots for external dependency degradation.
+- Reflex execution succeeds when triggered (fähigkeits-messlatte-bauen-capability-be.py), but the reflex library doesn't yet contain the proposed resili
+- Successful model calls (inclusionai/ling-3.0-flash-fin:free at 6.4s) show latency an order of magnitude lower than failing nemotron calls (45s), sugge
+- The system generates high-value architectural skill proposals (router, pipeline, scheduler) but lacks an automated deployment mechanism to promote the
+- Free-tier models across providers (z-ai, Google, Nvidia) consistently hit 429 rate limits and 502 upstream errors, making single-model reliance unreli
 - Reflex execution of skill-testing works, but proposals lack a promotion pipeline from sandbox to production.
 - Drive goals reveal stale analyses and repeated model failures, yet no automated retry/fallback loop exists.
 - Three independent skill proposals converge on circuit-breaker + exponential-backoff routing, signaling a systemic gap.
@@ -51,11 +56,6 @@
 - The market-analysis task repeatedly scores 2/10 despite evolution cycles, indicating a fundamental planning or decomposition failure rather than model
 - Nemotron-3-Ultra is the only model returning successful completions but exhibits high latency variance (7.7–40.7s) and occasional 502 upstream overloa
 - Multiple free-tier models (GLM, Gemma) consistently fail with 429 rate-limit errors, making them unreliable for production workflows.
-- Under high stress (1.0) and conserve mode, the system must prioritize models with proven reliability over latency.
-- Score capping mechanism penalizes missing code artifacts heavily (5→2), making code generation a hard requirement.
-- High latency variance (8-222s) in working models demands timeout and retry policies calibrated to observed distributions.
-- Task success requires executable code artifacts, not just prose, as the Tor gate enforces executable convergence.
-- Free tier models exhibit unreliable availability due to rate limiting (429) and upstream errors (502), requiring robust fallback chains.
 
 ---
 
