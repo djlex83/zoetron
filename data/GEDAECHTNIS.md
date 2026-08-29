@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6452 Fakten** · Stand 2026-08-29 16:32 UTC · aktualisiert bei jedem Herzschlag
+**6457 Fakten** · Stand 2026-08-29 16:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2951
+- **dream:** 2956
 - **swarm_artifact:** 1563
 - **last_swarm_critique:** 607
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829163707:5:761072`
+*29.08. 16:37 UTC · Quelle: dream*
+
+Five skill proposals were generated but remain unimplemented, revealing a persistent gap between problem identification and solution execution.
+
+### `dream:20260829163707:4:4339aa`
+*29.08. 16:37 UTC · Quelle: dream*
+
+Self-diagnosis found zero internal organ errors, confirming that failures originate from external model dependencies rather than internal system faults.
+
+### `dream:20260829163707:3:dda8cc`
+*29.08. 16:37 UTC · Quelle: dream*
+
+Swarm execution scored 2/10 without convergence, with critic feedback citing missing executable Python blocks, pointing to quality control gaps in builder roles.
+
+### `dream:20260829163707:2:25052e`
+*29.08. 16:37 UTC · Quelle: dream*
+
+The nemotron-3-ultra-550b model succeeds consistently but with high and variable latency (12-49s), revealing a speed-reliability tradeoff in model selection.
+
+### `dream:20260829163707:1:d61506`
+*29.08. 16:37 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors on z-ai/glm-5.2 indicate a systemic dependency on an unreliable model that cascades into failed swarm convergence.
 
 ### `dream:20260829163134:5:6a2b5c`
 *29.08. 16:31 UTC · Quelle: dream*

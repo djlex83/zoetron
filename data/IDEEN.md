@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,11 +15,11 @@
 - Calibrate pruning thresholds by tracking fact/event half-life: only prune entities untouched >30 days with acc *(hatte die Idee 3×)*
 - Add a convergence gate to simulation-swarm loops: continue cycles until score >=8 or max 5 cycles, logging div *(hatte die Idee 3×)*
 - Add exponential backoff with jitter (base 2s, max 60s) and rotating model pool for 429 responses; parse Retry- *(hatte die Idee 3×)*
-- Add a pre-flight path validator for hand actions that resolves ZOETRON_DATA and sys.argv[1] before execution t *(hatte die Idee 2×)*
-- Create a reflex certification pipeline that re-runs stored patterns nightly and demotes any that return ok: fa *(hatte die Idee 2×)*
-- Build a stress-aware scheduler that expands max_iterations only when simulation risk count drops below a thres *(hatte die Idee 2×)*
-- Instrument fallback model calls with per-request latency percentiles (p50/p95) and auto-switch to a tertiary e *(hatte die Idee 2×)*
 - Encapsulate the simulate-revise-evolve loop into a reusable 'critique_improve' skill with configurable revisio *(hatte die Idee 2×)*
+- Deploy a proposal-to-skill pipeline that auto-promotes high-confidence proposals (e.g., router, backoff) into  *(hatte die Idee 2×)*
+- Implement a model router that tracks per-model success rate, latency p95, and error taxonomy, and automaticall *(hatte die Idee 2×)*
+- Add exponential backoff with jitter (base 2 s, max 60 s) and quota-aware scheduling before retrying any rate-l *(hatte die Idee 2×)*
+- Enforce local-first computation for critical-path tasks; escalate to remote LLMs only when local artifacts are *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,13 +27,13 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five skill proposals were generated but remain unimplemented, revealing a persistent gap between problem identification and solution execution.
+- Self-diagnosis found zero internal organ errors, confirming that failures originate from external model dependencies rather than internal system fault
+- Swarm execution scored 2/10 without convergence, with critic feedback citing missing executable Python blocks, pointing to quality control gaps in bui
+- The nemotron-3-ultra-550b model succeeds consistently but with high and variable latency (12-49s), revealing a speed-reliability tradeoff in model sel
+- Repeated 429 rate-limit errors on z-ai/glm-5.2 indicate a systemic dependency on an unreliable model that cascades into failed swarm convergence.
 - Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency successes, suggesting it should be the default backbone with others as specu
 - Negative trajectory delta (-0.5) with zero edges and no code confirms that non-code responses degrade the solution graph rather than advance it.
 - Calibration error of 1 cycle indicates the difficulty predictor systematically overestimates progress when code artifacts are absent.
@@ -51,11 +56,6 @@
 - Rising latency on fallback models is a predictable early-warning signal that precedes complete upstream failure.
 - Silent failures where processes exit with code 0 but perform no work bypass all error detection and are more dangerous than explicit errors.
 - Consecutive 429 errors from a single model endpoint signal saturation and require immediate blacklisting rather than repeated retries.
-- Self-diagnosis reports zero organ errors while model failures persist, suggesting the diagnostic scope excludes external API dependency health.
-- The system generates drive goals from failure signals (429 errors, stale work, unimplemented skills) but lacks an automatic mechanism to convert those
-- Multiple skill proposals exist for model routing and resilience but none have been implemented, revealing a proposal-to-production gap that stalls rel
-- Nemotron-3-ultra shows high latency variance (7.6s–37.9s), making it unreliable for time-sensitive tasks without timeout guards and fallback routing.
-- The z-ai/glm-5.2:free model consistently returns 429 errors, indicating it should be permanently deprioritized or removed from the routing pool until 
 
 ---
 
