@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 16:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Add a latency-aware timeout calculator that sets per-request deadlines at 1.5× the rolling 95th-percentile lat *(hatte die Idee 3×)*
 - Calibrate pruning thresholds by tracking fact/event half-life: only prune entities untouched >30 days with acc *(hatte die Idee 3×)*
 - Add a convergence gate to simulation-swarm loops: continue cycles until score >=8 or max 5 cycles, logging div *(hatte die Idee 3×)*
+- Add exponential backoff with jitter (base 2s, max 60s) and rotating model pool for 429 responses; parse Retry- *(hatte die Idee 3×)*
 - Add a pre-flight path validator for hand actions that resolves ZOETRON_DATA and sys.argv[1] before execution t *(hatte die Idee 2×)*
 - Create a reflex certification pipeline that re-runs stored patterns nightly and demotes any that return ok: fa *(hatte die Idee 2×)*
 - Build a stress-aware scheduler that expands max_iterations only when simulation risk count drops below a thres *(hatte die Idee 2×)*
 - Instrument fallback model calls with per-request latency percentiles (p50/p95) and auto-switch to a tertiary e *(hatte die Idee 2×)*
 - Encapsulate the simulate-revise-evolve loop into a reusable 'critique_improve' skill with configurable revisio *(hatte die Idee 2×)*
-- Deploy a proposal-to-skill pipeline that auto-promotes high-confidence proposals (e.g., router, backoff) into  *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -35,12 +35,17 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 4×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, suggesting the diagnostic scope excludes external API dependency health.
+- The system generates drive goals from failure signals (429 errors, stale work, unimplemented skills) but lacks an automatic mechanism to convert those
+- Multiple skill proposals exist for model routing and resilience but none have been implemented, revealing a proposal-to-production gap that stalls rel
+- Nemotron-3-ultra shows high latency variance (7.6s–37.9s), making it unreliable for time-sensitive tasks without timeout guards and fallback routing.
+- The z-ai/glm-5.2:free model consistently returns 429 errors, indicating it should be permanently deprioritized or removed from the routing pool until 
 - Self-diagnose reports zero organ errors while model failure rate is ~60% (81 fails vs 54 successes), meaning health checks don't cover external API re
 - Stale market analyses (3 unused) show completed work isn't linked to planning triggers; artifacts need explicit "ready-for-use" tags and downstream su
 - 37 skill proposals vs 15 executions reveals a broken promotion pipeline: proposals lack automated sandbox→integration→registry gating.
@@ -51,11 +56,6 @@
 - Skill proposals cluster around model routing (5/8 proposals), revealing a systemic infrastructure gap rather than isolated tool failures.
 - Fallback to nemotron-3-ultra succeeds but adds 50-66s latency, creating a reliability-vs-speed tradeoff that degrades interactive performance.
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary providers without circuit-breaker logic.
-- Successful artifact execution (164-line Python script) correlates with `hat_code: true` and positive TOR verdict, making code presence a leading indic
-- Evolutionary refinement (3 variants, winner score 9 vs prior 3) reliably repairs pipeline integration failures when critic feedback is specific.
-- Effort estimation consistently overshoots actual work (predicted 6 vs actual 3 cycles), indicating a need for calibration against historical deltas.
-- `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits high latency variance (6–122 s) requiring timeout budgets and fallback triggers rather than fixed de
-- The free tier model `z-ai/glm-5.2:free` is unreliable due to persistent 429 rate-limit errors and should be deprioritized or wrapped with aggressive b
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-29 16:12:05",
+ "stand": "2026-08-29 16:18:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,6 +81,12 @@
    "quote": 0.0
   },
   {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-gezielt-trainieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -103,12 +109,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "entfernte-erinnerungen-verknüpfen.py",
@@ -171,7 +171,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.652,
+ "haende_quote": 0.654,
  "simulationen_angewandt": 36,
  "swarm_scores": {
   "n": 39,

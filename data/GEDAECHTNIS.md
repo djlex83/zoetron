@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6437 Fakten** · Stand 2026-08-29 16:12 UTC · aktualisiert bei jedem Herzschlag
+**6442 Fakten** · Stand 2026-08-29 16:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2936
+- **dream:** 2941
 - **swarm_artifact:** 1563
 - **last_swarm_critique:** 607
 - **anti_pattern:** 495
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829161804:5:067d13`
+*29.08. 16:18 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, suggesting the diagnostic scope excludes external API dependency health.
+
+### `dream:20260829161804:4:513e75`
+*29.08. 16:18 UTC · Quelle: dream*
+
+The system generates drive goals from failure signals (429 errors, stale work, unimplemented skills) but lacks an automatic mechanism to convert those goals into executed skills.
+
+### `dream:20260829161804:3:b55604`
+*29.08. 16:18 UTC · Quelle: dream*
+
+Multiple skill proposals exist for model routing and resilience but none have been implemented, revealing a proposal-to-production gap that stalls reliability gains.
+
+### `dream:20260829161804:2:80c73a`
+*29.08. 16:18 UTC · Quelle: dream*
+
+Nemotron-3-ultra shows high latency variance (7.6s–37.9s), making it unreliable for time-sensitive tasks without timeout guards and fallback routing.
+
+### `dream:20260829161804:1:860feb`
+*29.08. 16:18 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 errors, indicating it should be permanently deprioritized or removed from the routing pool until quota increases.
 
 ### `dream:20260829161134:5:0c46bb`
 *29.08. 16:11 UTC · Quelle: dream*
