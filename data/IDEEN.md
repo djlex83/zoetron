@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 02:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 02:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,23 +13,23 @@
 - Create an automatic skill promotion pipeline: proposal → simulation verdict → merge when risk_count < 2 and la *(hatte die Idee 3×)*
 - Add exponential backoff with jitter (base 2s, max 60s) and quota-aware scheduling before retrying rate-limited *(hatte die Idee 3×)*
 - Enforce structured critic output (JSON schema: issues[{severity,location,suggestion}], overall_score, converge *(hatte die Idee 3×)*
-- Build a model router that tracks per-endpoint 429 rates, latency percentiles, and success rates, then dynamica *(hatte die Idee 2×)*
-- Implement pre-flight organ existence checks before swarm launch to fail fast on missing tools like swarm.py. *(hatte die Idee 2×)*
 - Build a model fallback chain that prioritizes nemotron-3-ultra for complex tasks, routes to ling-3.0-flash-fin *(hatte die Idee 2×)*
 - Add pre-evolution dependency validation that checks for missing organ dependencies (e.g., 'hands') before laun *(hatte die Idee 2×)*
 - Implement anti-pattern detection that forces structural changes (not just parameter mutations) when the same g *(hatte die Idee 2×)*
 - Wrap all model calls with upstream-error detection (502/429) and exponential-backoff retry, falling back to th *(hatte die Idee 2×)*
 - Track per-model reliability metrics (success rate, latency, error type) and auto-disqualify models that exceed *(hatte die Idee 2×)*
+- Implement a provider-aware token bucket that enforces per-provider rate limits and automatically skips models  *(hatte die Idee 2×)*
+- Build a pre-flight dependency checker that validates required organs (e.g., hands) exist before launching evol *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-mode actions complete quickly (0.19s, exit 0) and reliably compared to model-driven actions, suggesting known-good reflexes should be preferred
+- Stale tasks like the unused market analysis persist across dream cycles without being archived or acted on, so pruning (facts_pruned: 0, events_pruned
+- Skill proposals accumulate without being learned (drive_goal 'gap' signal), indicating the system generates more proposals than it can absorb - propos
+- A single successful model call (poolside/laguna-s-2.1:free, 6.7s) after multiple failures shows that fallback rotation works, but it must be automatic
+- Free-tier models on Openrouter fail frequently with 429 rate limits, and z-ai/glm-5.2:free is the most persistent offender - repeated retries against 
 - Simulation results and market analysis gaps persist because insights aren't automatically fed into model selection and task planning.
 - Reflex-based error handling succeeds locally but lacks cross-episode learning to prevent recurring model failures.
 - Accumulated skill proposals (fallback, smoke tests, calibration) remain unimplemented while drive goals repeat same failure signals.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without implementation, indicating a gap between proposal generation and skill acquisition.
 - Nemotron-3-Ultra serves as a viable fallback but exhibits high latency variance (5–17s), requiring timeout budgets and latency-aware routing.
 - Free-tier models like GLM-5.2 consistently fail under load with 429 errors, making them unreliable for production workflows.
-- Latency variance on fallback model (2.9s to 24.1s) shows no latency budget or timeout guard, risking stalled cycles under load.
-- Skill proposals accumulate (10+ in this log) but no execution pipeline exists, creating an idea-to-implementation gap that drive goals explicitly flag
-- Reflex-mode goals converge without deliberation, yet stale market-analysis goals persist across cycles, indicating reflex handles cleanup but not mult
-- Self-diagnosis reports zero organ errors despite 429 errors occurring, revealing a blind spot where internal health checks don't validate external API
-- The z-ai/glm-5.2:free model repeatedly hits 429 rate limits while nvidia/nemotron-3-ultra succeeds, proving single-provider reliance causes cascading 
 
 ---
 
