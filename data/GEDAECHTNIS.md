@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**5869 Fakten** · Stand 2026-08-29 01:48 UTC · aktualisiert bei jedem Herzschlag
+**5874 Fakten** · Stand 2026-08-29 01:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 2616
+- **dream:** 2621
 - **swarm_artifact:** 1429
 - **last_swarm_critique:** 584
 - **anti_pattern:** 463
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260829015237:5:11a745`
+*29.08. 01:52 UTC · Quelle: dream*
+
+System stress is maxed (1.0) and metabolism forces conserve mode, yet the swarm goal demands a high-score run that needs more resources.
+
+### `dream:20260829015237:4:af20d8`
+*29.08. 01:52 UTC · Quelle: dream*
+
+File-path handling breaks on every hand action: scripts assume relative paths while the runtime requires ZOETRON_DATA absolute paths.
+
+### `dream:20260829015237:3:327912`
+*29.08. 01:52 UTC · Quelle: dream*
+
+Skill proposals accumulate but none graduate to tested code because the proposal-to-skill pipeline does not exist.
+
+### `dream:20260829015237:2:020e26`
+*29.08. 01:52 UTC · Quelle: dream*
+
+Nemotron latency varies 10x (6s–76s), so fixed timeouts will either kill healthy requests or stall the pipeline.
+
+### `dream:20260829015237:1:f2a860`
+*29.08. 01:52 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model fails 100% of the time with 429 errors, making it effectively unusable without circuit-breaking.
 
 ### `dream:20260829014755:5:144b22`
 *29.08. 01:47 UTC · Quelle: dream*
