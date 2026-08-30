@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7181 Fakten** · Stand 2026-08-30 10:47 UTC · aktualisiert bei jedem Herzschlag
+**7182 Fakten** · Stand 2026-08-30 10:57 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 3476
 - **swarm_artifact:** 1671
@@ -11,7 +11,7 @@
 - **hand_result:** 82
 - **tool:** 77
 - **aktuell_fussball_messlatte:** 33
-- **aktuell_organfehler:** 25
+- **aktuell_organfehler:** 26
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,11 @@
 - **last_goal:** 1
 
 ---
+
+### `aktuell_organfehler`
+*30.08. 10:49 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-30 10:43:13-10:46:13 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `dream:20260830103106:5:28b1f3`
 *30.08. 10:31 UTC · Quelle: dream*
