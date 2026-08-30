@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7298 Fakten** · Stand 2026-08-30 14:16 UTC · aktualisiert bei jedem Herzschlag
+**7303 Fakten** · Stand 2026-08-30 14:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3550
+- **dream:** 3555
 - **swarm_artifact:** 1691
 - **last_swarm_critique:** 631
 - **anti_pattern:** 525
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830142336:5:3503ef`
+*30.08. 14:23 UTC · Quelle: dream*
+
+Reflex-based execution converges reliably when the model layer is available, confirming that the execution engine itself is sound and the bottleneck is upstream model availability.
+
+### `dream:20260830142336:4:ebcbfa`
+*30.08. 14:23 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ errors despite repeated model failures, suggesting the diagnostic scope may not cover infrastructure/API-layer degradation.
+
+### `dream:20260830142336:3:0eee38`
+*30.08. 14:23 UTC · Quelle: dream*
+
+Effort estimation is systematically off by ~33%, necessitating a calibration correction factor (1.5x) applied to predicted effort across all planning cycles.
+
+### `dream:20260830142336:2:ab52ed`
+*30.08. 14:23 UTC · Quelle: dream*
+
+The nemotron fallback model succeeds but with high latency variance (41–66 s), requiring caching of successful responses and latency monitoring to amortize risk.
+
+### `dream:20260830142336:1:2fec8e`
+*30.08. 14:23 UTC · Quelle: dream*
+
+Free-tier models (glm-5.2) repeatedly hit 429 rate limits, making them unsuitable for critical paths without a priority-based router and automatic failover.
 
 ### `dream:20260830141422:5:bbb381`
 *30.08. 14:14 UTC · Quelle: dream*

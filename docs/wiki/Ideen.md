@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 14:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 14:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based execution converges reliably when the model layer is available, confirming that the execution engine itself is sound and the bottleneck i
+- Self-diagnosis consistently reports zero organ errors despite repeated model failures, suggesting the diagnostic scope may not cover infrastructure/AP
+- Effort estimation is systematically off by ~33%, necessitating a calibration correction factor (1.5x) applied to predicted effort across all planning 
+- The nemotron fallback model succeeds but with high latency variance (41–66 s), requiring caching of successful responses and latency monitoring to amo
+- Free-tier models (glm-5.2) repeatedly hit 429 rate limits, making them unsuitable for critical paths without a priority-based router and automatic fai
 - The nemotron model succeeds where glm fails, but its ~55s latency means model selection must balance availability against speed, not just uptime.
 - Self-diagnosis consistently reports no organ errors, indicating structural health but masking the real problem: missing procedural bridges between dre
 - Stale market analyses lose their decision value over time, proving that reflex-driven completion outperforms perfectionist waiting for ideal condition
@@ -51,11 +56,6 @@
 - Reflex actions succeed consistently where deliberate planning fails, suggesting the system should default to reflex-driven recovery for stale or block
 - Analysis-to-execution conversion is the system's weakest link: market analysis goals cycle through 'abschließen,' 'nutzen,' and 'fertigstellen' withou
 - Repeated 429 rate-limit failures on a single model indicate the absence of a pre-flight health check, making model availability the system's primary s
-- Calibration error of 2 points (predicted 4 vs actual 6) indicates systematic underestimation of task complexity.
-- Evolutionary refinement (3 variants) boosted solution score from 6 to 9, but swarm convergence still failed after 2 cycles.
-- InclusionAI Ling 3.0 Flash Fin shows consistent success with low latency (~12-16s) and no rate-limit failures in this window.
-- NVIDIA Nemotron exhibits bimodal reliability: successful completions but also 502 upstream overload errors under load.
-- Rate limiting (429) affects all free-tier models indiscriminately, making them unreliable for time-critical paths.
 
 ---
 
