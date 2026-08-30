@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6916 Fakten** · Stand 2026-08-30 03:22 UTC · aktualisiert bei jedem Herzschlag
+**6921 Fakten** · Stand 2026-08-30 03:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3286
+- **dream:** 3291
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830033433:5:e57ede`
+*30.08. 03:34 UTC · Quelle: dream*
+
+No circuit breaker or model health tracking exists, causing repeated hammering of a rate-limited endpoint instead of graceful degradation.
+
+### `dream:20260830033433:4:7c5744`
+*30.08. 03:34 UTC · Quelle: dream*
+
+Skill proposals accumulate (7+ in this session) but only one reflex tool was actually invoked, revealing a proposal-to-implementation gap that stalls capability growth.
+
+### `dream:20260830033433:3:028dec`
+*30.08. 03:34 UTC · Quelle: dream*
+
+Local-first reflex execution (hand_action) completes in 0.25s with zero errors, proving deterministic tools outperform probabilistic model calls for known operations.
+
+### `dream:20260830033433:2:fc8f8e`
+*30.08. 03:34 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (15-45s), making it unreliable for time-sensitive operations without timeout guards.
+
+### `dream:20260830033433:1:0429ff`
+*30.08. 03:34 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 errors (rate limiting) across multiple attempts, indicating it should be permanently deprioritized or removed from the free model pool.
 
 ### `tool:modellfehler-stark-reduzieren`
 *30.08. 03:21 UTC · Quelle: hands*

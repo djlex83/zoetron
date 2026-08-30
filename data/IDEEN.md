@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No circuit breaker or model health tracking exists, causing repeated hammering of a rate-limited endpoint instead of graceful degradation.
+- Skill proposals accumulate (7+ in this session) but only one reflex tool was actually invoked, revealing a proposal-to-implementation gap that stalls 
+- Local-first reflex execution (hand_action) completes in 0.25s with zero errors, proving deterministic tools outperform probabilistic model calls for k
+- Fallback to nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (15-45s), making it unreliable for time-sensitive operations without t
+- The z-ai/glm-5.2:free model consistently returns 429 errors (rate limiting) across multiple attempts, indicating it should be permanently deprioritize
 - Zero facts/events pruned suggests retention policies are misconfigured or pruning criteria are never met.
 - Stale market analyses persist because no automated freshness monitor triggers refresh pipelines based on age and access patterns.
 - Skill proposals accumulate without a validation gate requiring concrete milestones and measurable acceptance tests.
@@ -51,11 +56,6 @@
 - Convergence detection works in reflex mode (act_done.converged=true) but is absent from swarm loops, burning compute on plateaued optimization.
 - Skill proposals accumulate but never graduate to registered, executable capabilities because registration lacks enforcement of verifiable outputs.
 - Repeated 429 errors on z-ai/glm-5.2:free show that reactive fallback wastes 60+ seconds per failure before switching models.
-- Self-diagnosis reports zero organ errors while the model organ suffers repeated 429 failures, revealing a monitoring blind spot: health checks ignore 
-- Drive goals repeat identically across cycles (stale analyses, simulation gaps, error diagnosis, skill adoption) indicating no closure mechanism conver
-- Five prior skill proposals addressing model routing, backoff, circuit-breakers, local-first policy, and error-type calibration remain unimplemented, c
-- Reflex tools (hand actions) achieve 100% success with sub-second latency for market-analysis tasks, proving local code execution outperforms remote in
-- The z-ai/glm-5.2:free model consistently fails with 429 errors while nvidia/nemotron-3-ultra succeeds but at 20-60s latency, making remote models unre
 
 ---
 
