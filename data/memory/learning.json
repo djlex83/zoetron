@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 10:16:26",
+ "stand": "2026-08-30 10:26:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,13 +15,13 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 10,
    "erfolge": 10,
    "quote": 1.0
@@ -219,7 +219,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.798,
+ "haende_quote": 0.799,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 28,
