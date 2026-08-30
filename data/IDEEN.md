@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predictions can be highly accurate, as demonstrated by the exact match between predicted and actual scores.
+- Smaller or less popular free models like inclusionai/ling-3.0-flash-fin:free provide faster and more reliable responses than heavily loaded alternativ
+- Evolution runs effectively improve artifact quality, successfully elevating a baseline score of 6 to a winning score of 9.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model suffers from high latency and occasional 502 upstream overload errors.
+- Free models on OpenRouter frequently hit 429 rate limits, necessitating robust fallback mechanisms.
 - Free-tier model portfolio lacks a fast, reliable fallback; all successes come from a single model with unpredictable latency.
 - Market knowledge update fails at every layer: reflex tool fails, hand action fails, simulation demands 5 revisions, yet swarm persists without success
 - High stress (1.0) with conserve metabolism state creates a death spiral: failures increase stress, stress reduces budget, reduced budget prevents reco
@@ -51,11 +56,6 @@
 - Proposed skills (fallback chain, health monitor, path resolver) are generated but not automatically instantiated or wired into the execution loop.
 - Model health varies dramatically: nemotron works but at 17-20s latency, ling-3.0-flash-fin succeeds at ~10s, others consistently fail.
 - Free-tier models on OpenRouter suffer pervasive 429 rate limits, making single-model reliance unreliable.
-- Swarm convergence failure after only 2 cycles with a low score (3) suggests role coordination and evaluation criteria need refinement for skill-implem
-- Hand actions that only print output without returning values or writing files are rejected as non-functional — every action must produce a durable sid
-- Prune runs consistently returning zero results indicate the current strategy cannot identify time-decayed or duplicate facts, making retention unbound
-- The 180-second dream timeout hard limit causes pipeline blockage when consolidation exceeds the threshold, requiring either chunked processing or a re
-- Rate limiting (HTTP 429) from multiple providers simultaneously indicates a systemic API quota bottleneck, not isolated failures — a single reliable m
 
 ---
 

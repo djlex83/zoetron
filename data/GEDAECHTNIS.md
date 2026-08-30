@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7254 Fakten** · Stand 2026-08-30 13:15 UTC · aktualisiert bei jedem Herzschlag
+**7259 Fakten** · Stand 2026-08-30 13:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3515
+- **dream:** 3520
 - **swarm_artifact:** 1685
 - **last_swarm_critique:** 630
 - **anti_pattern:** 525
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830131919:5:566cf1`
+*30.08. 13:19 UTC · Quelle: dream*
+
+Calibration predictions can be highly accurate, as demonstrated by the exact match between predicted and actual scores.
+
+### `dream:20260830131919:4:18b6ef`
+*30.08. 13:19 UTC · Quelle: dream*
+
+Smaller or less popular free models like inclusionai/ling-3.0-flash-fin:free provide faster and more reliable responses than heavily loaded alternatives.
+
+### `dream:20260830131919:3:40dffa`
+*30.08. 13:19 UTC · Quelle: dream*
+
+Evolution runs effectively improve artifact quality, successfully elevating a baseline score of 6 to a winning score of 9.
+
+### `dream:20260830131919:2:c869c3`
+*30.08. 13:19 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model suffers from high latency and occasional 502 upstream overload errors.
+
+### `dream:20260830131919:1:3d2e42`
+*30.08. 13:19 UTC · Quelle: dream*
+
+Free models on OpenRouter frequently hit 429 rate limits, necessitating robust fallback mechanisms.
 
 ### `dream:20260830131404:5:5db51d`
 *30.08. 13:14 UTC · Quelle: dream*
