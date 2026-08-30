@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit breaking must operate at the gateway level (detecting global 429 saturation) rather than per-model, since all models share the same rate-limit
+- 65 skill proposals accumulate but few execute because the proposal-to-reflex-tool pipeline produces tools that fail silently without health feedback.
+- The system entered conserve mode (stress=1.0) yet continued making expensive model calls, creating a self-reinforcing failure loop of rate-limit exhau
+- The reflex tool for 'Modellfehler stark verringern' failed with exit code 1 and no error output, meaning the local-first fallback chain is broken at t
+- 429 errors hit every model simultaneously, proving the bottleneck is the OpenRouter gateway — rotating models alone cannot solve systemic rate limitin
 - Skill proposals accumulated during execution but lacked automatic deduplication and promotion pipeline, causing redundant proposals across sleep cycle
 - Self-diagnosis reported zero organ errors while model subsystem generated 7 failures in 15 minutes, revealing monitoring blind spots for external API 
 - Swarm convergence failed despite 5 revisions because critic/planner ratio (1:1) was insufficient to overcome builder majority (3) without explicit con
@@ -51,11 +56,6 @@
 - Evolutionary refinement boosted contradiction-resolution score from 4/10 to 9/9/8 once critic identified missing contradiction-detection capability.
 - Nemotron-3-ultra succeeds consistently but with high latency variance (14-81s), requiring timeout-aware orchestration.
 - Free-tier models (glm-5.2) consistently hit 429 rate limits making them unreliable for automated pipelines.
-- Score estimation has no feedback loop; predicted vs actual scores never compared, so estimator drift goes undetected.
-- Model outputs lack validation: hand_action results can be empty, schema-invalid, or missing fields, causing silent downstream failures.
-- Stale work and stale market data persist without automated detection, wasting context and compute on obsolete artifacts.
-- Skill proposals accumulate but remain unimplemented due to high system stress (stress=1.0, conserve mode) and zero execution budget, creating a propos
-- Model reliability is critically degraded: 4/5 models fail consistently with 429 rate limits or 502 upstream errors, making fallback chains essential f
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7035 Fakten** · Stand 2026-08-30 06:04 UTC · aktualisiert bei jedem Herzschlag
+**7040 Fakten** · Stand 2026-08-30 06:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3381
+- **dream:** 3386
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 622
 - **anti_pattern:** 511
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830060753:5:cbcda4`
+*30.08. 06:07 UTC · Quelle: dream*
+
+Circuit breaking must operate at the gateway level (detecting global 429 saturation) rather than per-model, since all models share the same rate-limit ceiling.
+
+### `dream:20260830060753:4:9c7da2`
+*30.08. 06:07 UTC · Quelle: dream*
+
+65 skill proposals accumulate but few execute because the proposal-to-reflex-tool pipeline produces tools that fail silently without health feedback.
+
+### `dream:20260830060753:3:3a4e8a`
+*30.08. 06:07 UTC · Quelle: dream*
+
+The system entered conserve mode (stress=1.0) yet continued making expensive model calls, creating a self-reinforcing failure loop of rate-limit exhaustion.
+
+### `dream:20260830060753:2:452191`
+*30.08. 06:07 UTC · Quelle: dream*
+
+The reflex tool for 'Modellfehler stark verringern' failed with exit code 1 and no error output, meaning the local-first fallback chain is broken at the execution layer.
+
+### `dream:20260830060753:1:7f9d46`
+*30.08. 06:07 UTC · Quelle: dream*
+
+429 errors hit every model simultaneously, proving the bottleneck is the OpenRouter gateway — rotating models alone cannot solve systemic rate limiting.
 
 ### `dream:20260830060210:5:4ed22f`
 *30.08. 06:02 UTC · Quelle: dream*
