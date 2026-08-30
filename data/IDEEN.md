@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 16:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 16:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning report zero issues while model failures persist, indicating monitoring blind spots in the inference layer.
+- Proposed resilience skills (fallback chain, backoff, scorecard) remain unimplemented despite recurring model_fail events.
+- Latency variance from 7s to 123s for similar token loads shows unpredictable queueing delays in free-tier endpoints.
+- Upstream 502 errors from Nvidia reveal provider-side capacity saturation that cannot be resolved by client-side retries alone.
+- Repeated 429 errors across multiple providers indicate systemic rate-limit exhaustion rather than isolated model failures.
 - Successful model calls sometimes return only 8 output tokens for 575 input tokens, signaling silent truncation or refusal.
 - Hand actions fail with exit code 1 and zero bytes read, indicating environment permission or path issues.
 - Model latency varies from 3s to 90s (nemotron) breaking fixed timeouts and causing cascading delays.
@@ -51,11 +56,6 @@
 - Calibration error of 4 (predicted 5 vs actual 1) reveals the predictor is uncalibrated for this task class and needs retraining.
 - Hand actions consistently exit with code 1 and zero bytes read, indicating a systemic input/environment mismatch rather than transient errors.
 - Rate limits (429) on multiple free models cause systematic inference failures, requiring a resilient fallback chain with exponential backoff.
-- Rate-limit failures occur in tight bursts across all three failing models simultaneously, indicating shared quota.
-- Simulation flagged high risk (5) and required revisions (5) for skill merging, but zero revisions were applied.
-- Latency for the working model scales superlinearly with input tokens (4.2s→16.2s for 525→3123 tokens_in).
-- inclusionai/ling-3.0-flash-fin:free is the only model showing reliable success across varying token volumes.
-- Free-tier models from major providers (Google, Z.ai) consistently fail with 429 rate-limit errors under load.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7362 Fakten** · Stand 2026-08-30 16:22 UTC · aktualisiert bei jedem Herzschlag
+**7367 Fakten** · Stand 2026-08-30 16:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3590
+- **dream:** 3595
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830164015:5:9a680e`
+*30.08. 16:40 UTC · Quelle: dream*
+
+Self-diagnosis and pruning report zero issues while model failures persist, indicating monitoring blind spots in the inference layer.
+
+### `dream:20260830164015:4:1756e9`
+*30.08. 16:40 UTC · Quelle: dream*
+
+Proposed resilience skills (fallback chain, backoff, scorecard) remain unimplemented despite recurring model_fail events.
+
+### `dream:20260830164015:3:cd832d`
+*30.08. 16:40 UTC · Quelle: dream*
+
+Latency variance from 7s to 123s for similar token loads shows unpredictable queueing delays in free-tier endpoints.
+
+### `dream:20260830164015:2:d3556e`
+*30.08. 16:40 UTC · Quelle: dream*
+
+Upstream 502 errors from Nvidia reveal provider-side capacity saturation that cannot be resolved by client-side retries alone.
+
+### `dream:20260830164015:1:19bf9f`
+*30.08. 16:40 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple providers indicate systemic rate-limit exhaustion rather than isolated model failures.
 
 ### `tool:simulationen-in-die-praxis-umsetzen`
 *30.08. 16:21 UTC · Quelle: hands*
