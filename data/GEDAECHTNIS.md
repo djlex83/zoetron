@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7408 Fakten** · Stand 2026-08-30 17:43 UTC · aktualisiert bei jedem Herzschlag
+**7413 Fakten** · Stand 2026-08-30 17:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3635
+- **dream:** 3640
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830175229:5:3708ab`
+*30.08. 17:52 UTC · Quelle: dream*
+
+Reflex-driven skill extraction from dreams and ideas works reliably and should be the default path for converting raw insights into reusable abilities.
+
+### `dream:20260830175229:4:9c31eb`
+*30.08. 17:52 UTC · Quelle: dream*
+
+Model latency varies enormously (10s vs 167s), so naive round-robin routing wastes time and increases failure risk on slow or overloaded endpoints.
+
+### `dream:20260830175229:3:8c4853`
+*30.08. 17:52 UTC · Quelle: dream*
+
+Stale artifacts (old market analyses, unused results) accumulate silently because no mechanism flags or refreshes them, leaving valuable knowledge dormant.
+
+### `dream:20260830175229:2:78f1a4`
+*30.08. 17:52 UTC · Quelle: dream*
+
+Simulation-to-practice goals exhibit a consistent ~3x effort underestimation bias, meaning planned work must be scaled up by at least 100% to match reality.
+
+### `dream:20260830175229:1:3865ee`
+*30.08. 17:52 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors from z-ai/glm-5.2 reveal that API calls lack any backoff or circuit-breaker, causing cascading failures when a single model is overwhelmed.
 
 ### `dream:20260830174215:5:1fe763`
 *30.08. 17:42 UTC · Quelle: dream*

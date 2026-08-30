@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,7 +10,6 @@
 - Enforce local-first policy: for any goal matching a registered reflex tool, execute hand_action before any mod *(hatte die Idee 6×)*
 - Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, and 429 counts; au *(hatte die Idee 4×)*
 - Enforce local-first policy: for any goal matching a registered reflex tool (e.g., marktanalyse-endlich-abschli *(hatte die Idee 4×)*
-- Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 3×)*
 - Implement ModelRouter with per-model token-bucket quota tracking, health scoring (success rate, latency p50/p9 *(hatte die Idee 3×)*
 - Build CircuitBreaker decorator that trips after 3 consecutive 429/502/503 responses, quarantines model for 60s *(hatte die Idee 3×)*
 - Create PreFlightProbe that sends 1-token completion to candidate models before dispatch, filters out models re *(hatte die Idee 3×)*
@@ -20,6 +19,7 @@
 - Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, 429_count; auto-se *(hatte die Idee 3×)*
 - Add proposal deduplication: hash proposal text; reject duplicates within 7 days unless new failure evidence in *(hatte die Idee 3×)*
 - Deploy OutputValidator middleware: reject hand_action results that are empty, fail JSON schema, or lack requir *(hatte die Idee 3×)*
+- Add reflex tool health tracking: record hand_action exit codes and durations; if a reflex tool fails 3 consecu *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven skill extraction from dreams and ideas works reliably and should be the default path for converting raw insights into reusable abilities
+- Model latency varies enormously (10s vs 167s), so naive round-robin routing wastes time and increases failure risk on slow or overloaded endpoints.
+- Stale artifacts (old market analyses, unused results) accumulate silently because no mechanism flags or refreshes them, leaving valuable knowledge dor
+- Simulation-to-practice goals exhibit a consistent ~3x effort underestimation bias, meaning planned work must be scaled up by at least 100% to match re
+- Repeated 429 rate-limit errors from z-ai/glm-5.2 reveal that API calls lack any backoff or circuit-breaker, causing cascading failures when a single m
 - Missing pre-flight validation of paths, inputs, and skill composition allows broken operations to propagate, making boundary checks essential at every
 - System stress exceeding 0.8 causes wasted cycles and cascading failures, mandating automatic load shedding and conserve-mode activation before exhaust
 - Truncated or invalid model outputs silently corrupt downstream processing, so output-token validation against input-token ratios is a necessary guardr
@@ -51,11 +56,6 @@
 - Latency spans from 7s to 77s across successful calls, but no latency-budget guard exists to route slow calls to async mode and protect responsiveness.
 - The fallback chain retries failed providers immediately without cooldown, amplifying rate-limit exhaustion instead of allowing recovery windows.
 - All model failures trace to a shared OpenRouter API gateway, so provider diversity alone cannot prevent cascading 429/502 errors when the gateway is r
-- Pruning runs remove zero items, indicating either scoring thresholds are too aggressive or relevance signals are missing.
-- Reflex actions converge reliably (market analysis cleanup completed), suggesting reflex-to-skill promotion is a viable path.
-- 45 skill proposals exist but only 3 implemented, revealing a broken promotion pipeline from proposal to production.
-- Fallback to nvidia/nemotron-3-ultra succeeds but violates latency SLAs at 50-65s, making synchronous use impractical.
-- The z-ai/glm-5.2:free model fails deterministically with 429 errors, indicating absent rate-limit awareness before dispatch.
 
 ---
 
