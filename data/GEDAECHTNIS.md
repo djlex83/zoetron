@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6780 Fakten** · Stand 2026-08-29 23:55 UTC · aktualisiert bei jedem Herzschlag
+**6785 Fakten** · Stand 2026-08-30 00:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3191
+- **dream:** 3196
 - **swarm_artifact:** 1613
 - **last_swarm_critique:** 616
 - **anti_pattern:** 503
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830000335:5:6bbf2f`
+*30.08. 00:03 UTC · Quelle: dream*
+
+Drive goals highlight an execution gap: many proposals are generated but few are acted upon, and completed analyses (market) remain unused.
+
+### `dream:20260830000335:4:9b6066`
+*30.08. 00:03 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, revealing a monitoring blind spot for external API degradation.
+
+### `dream:20260830000335:3:ab3de6`
+*30.08. 00:03 UTC · Quelle: dream*
+
+Skill proposals repeat across dream cycles (health scorecard, backoff retry, latency predictor, work ledger, model router) because no persistent ledger tracks implementation status.
+
+### `dream:20260830000335:2:375382`
+*30.08. 00:03 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (6.5–46.2 s), indicating need for latency-aware selection.
+
+### `dream:20260830000335:1:b81134`
+*30.08. 00:03 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, making it unreliable as a primary endpoint without health-aware routing.
 
 ### `last_swarm_critique`
 *29.08. 23:54 UTC · Quelle: critic*

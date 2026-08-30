@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-29 23:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 00:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich zu Ende bringen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten echt nutzbar machen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals highlight an execution gap: many proposals are generated but few are acted upon, and completed analyses (market) remain unused.
+- Self-diagnosis reports zero organ errors while model failures persist, revealing a monitoring blind spot for external API degradation.
+- Skill proposals repeat across dream cycles (health scorecard, backoff retry, latency predictor, work ledger, model router) because no persistent ledge
+- Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (6.5–46.2 s), indicating need for latency-aware sele
+- The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, making it unreliable as a primary endpoint without health-aware routing.
 - Error patterns are highly repetitive (same model, same endpoint, same 429 code), enabling predictive mitigation via pre-flight probes and circuit brea
 - Fallback model latency variance (7-13s) demands adaptive deadline extension (30s per retry, max 3) and SLA-aware routing to prevent cascade timeouts.
 - Skill proposals accumulate without an implementation gate; a ProposalGate requiring concrete plan, measurable acceptance test, and assigned owner conv
@@ -51,11 +56,6 @@
 - Evolution improves scores (6→9) but stalls without an orchestration layer to wire separate scripts together.
 - Fallback model latency varies 10x (5–48 s), making fixed deadlines unreliable for drive execution.
 - Free-tier models hit 429 rate limits predictably under load, requiring proactive routing instead of reactive fallback.
-- Evolution loop triggered after 6/10 score indicates a hard threshold for automatic improvement cycles.
-- A 160-line Python artifact executed cleanly (exit 0, 0.29s), proving generated code can be production-ready without manual fixes.
-- Calibration predicted 6/10 and actual scored 6/10, confirming the estimator is accurate for this task class.
-- nvidia/nemotron-3-ultra shows high latency variance (5–50s) despite success, requiring timeout budgets and fallback triggers.
-- Free-tier models like z-ai/glm-5.2:free consistently hit 429 rate limits under load, making them unreliable for automated pipelines.
 
 ---
 
