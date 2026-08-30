@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 15:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 15:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- All proposed skills react to observed failures rather than preventing them, showing a missing proactive resilience layer.
+- Token-in/token-out ratios diverge wildly (526→1577 vs 1458→1130), indicating inconsistent truncation or padding behavior across calls.
+- Only inclusionai/ling-3.0-flash-fin:free remained available under load, exposing provider capacity as a hidden system dependency.
+- Swarm convergence reported success with a null score, revealing that convergence criteria lack mandatory score validation.
+- Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, making single-model reliance unreliable.
 - Hand-action latency (0.2s) is healthy but unmonitored; no p95 threshold exists to detect environment degradation early.
 - Reflex-driven execution ("abgelehnte-werkzeuge-verstehen-und-verbe.py") achieved goal convergence without planner involvement, proving reflexes can ha
 - Only inclusionai/ling-3.0-flash-fin:free delivered a successful response, creating a single-point-of-failure for the entire model pool.
@@ -51,11 +56,6 @@
 - Resource-conserve mode (stress=1.0, budget=1 iteration) forces the system into single-attempt execution, making any exploratory or multi-model strateg
 - The system proposes calibration corrections and quality gates but cannot execute them because the same infrastructure failures block every model from 
 - 429 rate-limit and 502 upstream-overload errors are the dominant failure mode across four different model providers, indicating a systemic request-thr
-- Reflex-based execution converges reliably when the model layer is available, confirming that the execution engine itself is sound and the bottleneck i
-- Self-diagnosis consistently reports zero organ errors despite repeated model failures, suggesting the diagnostic scope may not cover infrastructure/AP
-- Effort estimation is systematically off by ~33%, necessitating a calibration correction factor (1.5x) applied to predicted effort across all planning 
-- The nemotron fallback model succeeds but with high latency variance (41–66 s), requiring caching of successful responses and latency monitoring to amo
-- Free-tier models (glm-5.2) repeatedly hit 429 rate limits, making them unsuitable for critical paths without a priority-based router and automatic fai
 
 ---
 

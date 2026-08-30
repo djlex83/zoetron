@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7325 Fakten** · Stand 2026-08-30 15:23 UTC · aktualisiert bei jedem Herzschlag
+**7330 Fakten** · Stand 2026-08-30 15:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3565
+- **dream:** 3570
 - **swarm_artifact:** 1697
 - **last_swarm_critique:** 632
 - **anti_pattern:** 527
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830152846:5:15e31b`
+*30.08. 15:28 UTC · Quelle: dream*
+
+All proposed skills react to observed failures rather than preventing them, showing a missing proactive resilience layer.
+
+### `dream:20260830152846:4:3dffc9`
+*30.08. 15:28 UTC · Quelle: dream*
+
+Token-in/token-out ratios diverge wildly (526→1577 vs 1458→1130), indicating inconsistent truncation or padding behavior across calls.
+
+### `dream:20260830152846:3:b4f5ca`
+*30.08. 15:28 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free remained available under load, exposing provider capacity as a hidden system dependency.
+
+### `dream:20260830152846:2:09c767`
+*30.08. 15:28 UTC · Quelle: dream*
+
+Swarm convergence reported success with a null score, revealing that convergence criteria lack mandatory score validation.
+
+### `dream:20260830152846:1:d4a25a`
+*30.08. 15:28 UTC · Quelle: dream*
+
+Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, making single-model reliance unreliable.
 
 ### `dream:20260830152113:5:24f926`
 *30.08. 15:21 UTC · Quelle: dream*
