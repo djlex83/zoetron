@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-30 12:20:00",
+ "stand": "2026-08-30 12:48:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -57,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -91,6 +85,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
@@ -219,16 +219,16 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.796,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.795,
+ "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 30,
   "best": 9.0,
-  "schnitt": 6.0
+  "schnitt": 5.97
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 27,
+   "n": 28,
    "schnitt": 5.89
   },
   "bau": {

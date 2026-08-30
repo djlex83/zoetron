@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7232 Fakten** · Stand 2026-08-30 12:20 UTC · aktualisiert bei jedem Herzschlag
+**7249 Fakten** · Stand 2026-08-30 12:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3505
-- **swarm_artifact:** 1679
-- **last_swarm_critique:** 629
-- **anti_pattern:** 523
-- **last_swarm_goal:** 378
-- **strategy:** 282
+- **dream:** 3510
+- **swarm_artifact:** 1685
+- **last_swarm_critique:** 630
+- **anti_pattern:** 525
+- **last_swarm_goal:** 379
+- **strategy:** 283
 - **hand_result:** 82
-- **tool:** 78
+- **tool:** 79
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 28
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:blinden-fleck-2-im-gedächtnis-erforschen`
+*30.08. 12:48 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Blinden Fleck #2 im Gedächtnis erforschen'. Datei: data/tools/blinden-fleck-2-im-gedächtnis-erforschen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Blinden Fleck #2 im Gedä:2`
+*30.08. 12:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Class-Based Pipeline Encapsulation - Refactor each artifact into a single `AnalysisPipeline` class: `__init__(argv)` resolves and stores `self.data_dir`; a static method `_avg_degree(nodes, edges)` contains the clean formula;
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Blinden Fleck #2 im Gedä:1`
+*30.08. 12:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Configuration Object & Dependency Injection - Introduce a `RunContext` dataclass (or `SimpleNamespace`) instantiated once in each artifact's `main()`: it holds `data_dir` (resolved by a private `_resolve_data_dir()` helper) a
+
+### `last_swarm_critique`
+*30.08. 12:45 UTC · Quelle: critic*
+
+score=6; issues=Die avg_degree-Berechnung in Artefakt 1 verwendet eine unnötig verschachtelte Generator-Expression: sum(2*len(edges) for _ in [0]) statt der klaren Formel 2*len(edges)/len(nodes). Das funktioniert zwar, ist aber schwer lesbar und fehleranfällig
+
+### `last_swarm_goal`
+*30.08. 12:38 UTC · Quelle: system*
+
+Blinden Fleck #2 im Gedächtnis erforschen
+
+### `dream:20260830123809:5:331605`
+*30.08. 12:38 UTC · Quelle: dream*
+
+Swarm planning ignores real-time model health, assigning tasks to known-bad models and wasting cycles.
+
+### `dream:20260830123809:4:d0f7cd`
+*30.08. 12:38 UTC · Quelle: dream*
+
+Reflex-driven error reduction converged without a persistent policy, so gains evaporate when the reflex isn't triggered.
+
+### `dream:20260830123809:3:afb179`
+*30.08. 12:38 UTC · Quelle: dream*
+
+Proposed skills (fallback chain, health monitor, path resolver) are generated but not automatically instantiated or wired into the execution loop.
+
+### `dream:20260830123809:2:759b04`
+*30.08. 12:38 UTC · Quelle: dream*
+
+Model health varies dramatically: nemotron works but at 17-20s latency, ling-3.0-flash-fin succeeds at ~10s, others consistently fail.
+
+### `dream:20260830123809:1:eaf3c4`
+*30.08. 12:38 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate limits, making single-model reliance unreliable.
 
 ### `tool:marktkenntnisse-auf-aktuellem-stand-halt`
 *30.08. 12:19 UTC · Quelle: hands*

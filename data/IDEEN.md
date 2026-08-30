@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 12:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 12:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,6 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -37,10 +36,16 @@
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm planning ignores real-time model health, assigning tasks to known-bad models and wasting cycles.
+- Reflex-driven error reduction converged without a persistent policy, so gains evaporate when the reflex isn't triggered.
+- Proposed skills (fallback chain, health monitor, path resolver) are generated but not automatically instantiated or wired into the execution loop.
+- Model health varies dramatically: nemotron works but at 17-20s latency, ling-3.0-flash-fin succeeds at ~10s, others consistently fail.
+- Free-tier models on OpenRouter suffer pervasive 429 rate limits, making single-model reliance unreliable.
 - Swarm convergence failure after only 2 cycles with a low score (3) suggests role coordination and evaluation criteria need refinement for skill-implem
 - Hand actions that only print output without returning values or writing files are rejected as non-functional — every action must produce a durable sid
 - Prune runs consistently returning zero results indicate the current strategy cannot identify time-decayed or duplicate facts, making retention unbound
@@ -51,11 +56,6 @@
 - Calibration predicted 5 but actual was 3, revealing a systematic overconfidence in task feasibility that must be corrected.
 - inclusionai/ling-3.0-flash-fin is the only model that succeeds every call, though latency degrades from 5.5s to 10.5s as load increases.
 - Free-tier OpenRouter models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently hit 429 rate limits, making them unreliable under any concurrent load.
-- Models failing three times consecutively are auto-banned for 1800s, making proactive health checks more efficient than reactive retries.
-- The simulation-revision loop (verdict: revise → apply revisions → re-test) successfully converted a failing skill implementation into a working 33-lin
-- High stress (1.0) triggers conservation mode that caps tasks at 3 and iterations at 1, forcing minimal viable progress per cycle.
-- Relative path references fail in hand actions; all file operations must resolve absolute paths via ZOETRON_DATA and sys.argv[1] before execution.
-- Free-tier models consistently hit 429 rate limits, requiring a pre-validated fallback chain with health tracking to maintain throughput.
 
 ---
 
