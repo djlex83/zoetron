@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 00:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 00:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -37,10 +37,15 @@
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution loops lack a convergence detector, so mutations continue past diminishing returns without emitting a failure signal.
+- No component tracks per-model quota headers or reset windows, so rate-limit collisions repeat instead of being predicted.
+- Five skill-proposal cycles produced 10+ proposals but zero promotions, revealing a missing validation-to-deployment pipeline.
+- Nemotron-3-ultra latency varies 2x (9.4s to 20.4s) for similar token volumes, violating any fixed SLO and requiring dynamic fallback.
+- The z-ai/glm-5.2:free model consistently returns 429 errors across multiple timestamps, indicating a hard rate limit that makes it unreliable as a pri
 - Drive goals highlight an execution gap: many proposals are generated but few are acted upon, and completed analyses (market) remain unused.
 - Self-diagnosis reports zero organ errors while model failures persist, revealing a monitoring blind spot for external API degradation.
 - Skill proposals repeat across dream cycles (health scorecard, backoff retry, latency predictor, work ledger, model router) because no persistent ledge
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without an implementation gate; a ProposalGate requiring concrete plan, measurable acceptance test, and assigned owner conv
 - Single-model dependency creates systemic fragility; a health-aware multi-model router with latency SLA (<5s p95) is required for reliability.
 - Proactive rate-limit management via token-bucket and RateLimit-header parsing prevents 429 errors entirely, whereas reactive retries only mask the pro
-- Self-diagnosis reports zero organ errors while functional failures (rate limits, incomplete skills) persist undetected.
-- Swarm cycles converge on partial solutions (score 6, not converged) because completion criteria are implicit, not measured.
-- Evolution improves scores (6→9) but stalls without an orchestration layer to wire separate scripts together.
-- Fallback model latency varies 10x (5–48 s), making fixed deadlines unreliable for drive execution.
-- Free-tier models hit 429 rate limits predictably under load, requiring proactive routing instead of reactive fallback.
 
 ---
 

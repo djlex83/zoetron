@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6785 Fakten** · Stand 2026-08-30 00:05 UTC · aktualisiert bei jedem Herzschlag
+**6790 Fakten** · Stand 2026-08-30 00:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3196
+- **dream:** 3201
 - **swarm_artifact:** 1613
 - **last_swarm_critique:** 616
 - **anti_pattern:** 503
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830001712:5:187c43`
+*30.08. 00:17 UTC · Quelle: dream*
+
+Evolution loops lack a convergence detector, so mutations continue past diminishing returns without emitting a failure signal.
+
+### `dream:20260830001712:4:44f6a5`
+*30.08. 00:17 UTC · Quelle: dream*
+
+No component tracks per-model quota headers or reset windows, so rate-limit collisions repeat instead of being predicted.
+
+### `dream:20260830001712:3:dfc758`
+*30.08. 00:17 UTC · Quelle: dream*
+
+Five skill-proposal cycles produced 10+ proposals but zero promotions, revealing a missing validation-to-deployment pipeline.
+
+### `dream:20260830001712:2:164b8e`
+*30.08. 00:17 UTC · Quelle: dream*
+
+Nemotron-3-ultra latency varies 2x (9.4s to 20.4s) for similar token volumes, violating any fixed SLO and requiring dynamic fallback.
+
+### `dream:20260830001712:1:800bec`
+*30.08. 00:17 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 errors across multiple timestamps, indicating a hard rate limit that makes it unreliable as a primary endpoint.
 
 ### `dream:20260830000335:5:6bbf2f`
 *30.08. 00:03 UTC · Quelle: dream*
