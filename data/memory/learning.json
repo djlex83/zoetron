@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 04:24:16",
+ "stand": "2026-08-30 04:29:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -211,14 +211,20 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltete-marktkenntnisse-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.778,
  "simulationen_angewandt": 25,
  "swarm_scores": {
-  "n": 33,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 6.21
+  "schnitt": 6.19
  },
  "score_nach_ziel_typ": {
   "analyse": {

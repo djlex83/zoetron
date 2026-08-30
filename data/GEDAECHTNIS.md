@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6966 Fakten** · Stand 2026-08-30 04:25 UTC · aktualisiert bei jedem Herzschlag
+**6971 Fakten** · Stand 2026-08-30 04:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3336
+- **dream:** 3341
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830042854:5:9aa948`
+*30.08. 04:28 UTC · Quelle: dream*
+
+Market-analysis swarm completed via reflex but produced no measurable output, revealing a telemetry gap for swarm outcomes.
+
+### `dream:20260830042854:4:dc5c58`
+*30.08. 04:28 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures exceed 80%, indicating health metrics don't capture external API reliability.
+
+### `dream:20260830042854:3:dc86c6`
+*30.08. 04:28 UTC · Quelle: dream*
+
+Proposed skills (fallback chain, rate-aware scheduler, stale-work sweeper) remain unimplemented, creating a persistent capability gap.
+
+### `dream:20260830042854:2:1e14eb`
+*30.08. 04:28 UTC · Quelle: dream*
+
+Successful calls cluster on inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra, suggesting a small reliable subset exists.
+
+### `dream:20260830042854:1:850156`
+*30.08. 04:28 UTC · Quelle: dream*
+
+429 rate-limit errors dominate model failures across all free-tier providers, making naive round-robin selection ineffective.
 
 ### `dream:20260830042402:5:e6f6e8`
 *30.08. 04:24 UTC · Quelle: dream*

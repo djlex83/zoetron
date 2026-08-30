@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Market-analysis swarm completed via reflex but produced no measurable output, revealing a telemetry gap for swarm outcomes.
+- Self-diagnosis reports zero organ errors while model failures exceed 80%, indicating health metrics don't capture external API reliability.
+- Proposed skills (fallback chain, rate-aware scheduler, stale-work sweeper) remain unimplemented, creating a persistent capability gap.
+- Successful calls cluster on inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra, suggesting a small reliable subset exists.
+- 429 rate-limit errors dominate model failures across all free-tier providers, making naive round-robin selection ineffective.
 - Exit code 0 with empty output occurred silently; output validation must be mandatory, not optional.
 - Reflex-driven completion of stale market analyses proves the StaleWorkReaper concept works when triggered.
 - Latency variance (8.9–29 s) makes fixed timeouts unsafe; percentile-based SLOs are needed for each model.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but rarely graduate to implemented capabilities, creating a proposal–implementation gap.
 - Latency variance (7–31 s) on the fallback model shows no latency budget or timeout enforcement.
 - Persistent 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness and automatic failover.
-- No calibration data exists per (task_type, model, context_size), so model selection remains naive and unreproducible.
-- Self-diagnosis consistently reports zero findings, suggesting the diagnostic depth is insufficient to catch real systemic issues.
-- Skill proposals accumulate across cycles but are never verified as implemented, creating a persistent gap between suggestion and capability.
-- The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits extreme latency variance (14s to 48s), indicating no latency budget enfor
-- The z-ai/glm-5.2:free model repeatedly hits 429 rate limits without any automatic recovery, making it an unreliable primary choice.
 
 ---
 
