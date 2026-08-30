@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 13:27:25",
+ "stand": "2026-08-30 13:33:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7264 Fakten** · Stand 2026-08-30 13:28 UTC · aktualisiert bei jedem Herzschlag
+**7269 Fakten** · Stand 2026-08-30 13:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3525
+- **dream:** 3530
 - **swarm_artifact:** 1685
 - **last_swarm_critique:** 630
 - **anti_pattern:** 525
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830133241:5:b3d111`
+*30.08. 13:32 UTC · Quelle: dream*
+
+Single-model success (ling-3.0-flash-fin) creates silent fragility; diversity must be maintained via continuous background probing.
+
+### `dream:20260830133241:4:192272`
+*30.08. 13:32 UTC · Quelle: dream*
+
+Simulation insights decay without automated revision loops that close simulate→revise→apply→verify cycles.
+
+### `dream:20260830133241:3:7f3276`
+*30.08. 13:32 UTC · Quelle: dream*
+
+Metabolism stress=1.0 forces conservative budgets that starve exploration, demanding stress-aware goal scoping.
+
+### `dream:20260830133241:2:7e8491`
+*30.08. 13:32 UTC · Quelle: dream*
+
+Skill proposals remain inert without automatic wiring (stub generation, registry registration, reflex binding) causing propose-use gap.
+
+### `dream:20260830133241:1:1e6d87`
+*30.08. 13:32 UTC · Quelle: dream*
+
+Free-tier models exhibit correlated failure bursts (429/502) requiring proactive health registries and fallback chains before task dispatch.
 
 ### `dream:20260830132600:5:304ed7`
 *30.08. 13:26 UTC · Quelle: dream*

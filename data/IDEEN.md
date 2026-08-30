@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Single-model success (ling-3.0-flash-fin) creates silent fragility; diversity must be maintained via continuous background probing.
+- Simulation insights decay without automated revision loops that close simulate→revise→apply→verify cycles.
+- Metabolism stress=1.0 forces conservative budgets that starve exploration, demanding stress-aware goal scoping.
+- Skill proposals remain inert without automatic wiring (stub generation, registry registration, reflex binding) causing propose-use gap.
+- Free-tier models exhibit correlated failure bursts (429/502) requiring proactive health registries and fallback chains before task dispatch.
 - Reactive model switching wastes cycles; proactive health registry must gate task assignment before swarm launch.
 - Simulation detects 5 risks and demands 5 revisions, yet applied revisions still yield non-convergent swarm (score 6).
 - Evolution improves variant scores (6→9) but swarm fails to converge when critic integration gaps persist.
@@ -51,11 +56,6 @@
 - Evolution runs effectively improve artifact quality, successfully elevating a baseline score of 6 to a winning score of 9.
 - The nvidia/nemotron-3-ultra-550b-a55b:free model suffers from high latency and occasional 502 upstream overload errors.
 - Free models on OpenRouter frequently hit 429 rate limits, necessitating robust fallback mechanisms.
-- Free-tier model portfolio lacks a fast, reliable fallback; all successes come from a single model with unpredictable latency.
-- Market knowledge update fails at every layer: reflex tool fails, hand action fails, simulation demands 5 revisions, yet swarm persists without success
-- High stress (1.0) with conserve metabolism state creates a death spiral: failures increase stress, stress reduces budget, reduced budget prevents reco
-- nvidia/nemotron-3-ultra-550b-a55b:free shows highest reliability but latency variance (25-107s) makes it unsuitable for time-critical paths.
-- Rate limiting (429) across multiple free-tier models indicates systemic provider throttling, not isolated model failures.
 
 ---
 
