@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7438 Fakten** · Stand 2026-08-30 18:32 UTC · aktualisiert bei jedem Herzschlag
+**7454 Fakten** · Stand 2026-08-30 18:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3665
-- **swarm_artifact:** 1703
-- **last_swarm_critique:** 633
-- **anti_pattern:** 529
-- **last_swarm_goal:** 382
-- **strategy:** 285
+- **dream:** 3670
+- **swarm_artifact:** 1709
+- **last_swarm_critique:** 634
+- **anti_pattern:** 531
+- **last_swarm_goal:** 383
+- **strategy:** 286
 - **hand_result:** 83
 - **tool:** 81
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Marktanalyse endlich abs:2`
+*30.08. 18:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): API-Driven Market Insight Engine - Build a modular Python application using Flask or FastAPI that serves market analysis endpoints—fetching real-time data from multiple financial APIs, processing with scikit-learn models, sco
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Marktanalyse endlich abs:1`
+*30.08. 18:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Jupyter Notebook Integration - Produce an executable .ipynb notebook with embedded Python cells for data ingestion, transformation, exploratory analysis, clustering (e.g., K-means on market segments), model evaluation, and in
+
+### `last_swarm_critique`
+*30.08. 18:41 UTC · Quelle: critic*
+
+score=0; issues=Kein ausfuehrbarer Python-Block im Artefakt vorhanden - nur Shell-Befehle und Prosa; Sandbox-Urteil bestaetigt: LAEUFT NICHT, da kein Python-Code ausgefuehrt werden kann; Vertrag verletzt: Aufgabe erfordert Python-Ausfuehrbarkeit, Artefakt lief
+
+### `last_swarm_goal`
+*30.08. 18:40 UTC · Quelle: system*
+
+Marktanalyse endlich abschließen und nutzen
+
+### `dream:20260830184001:5:f728db`
+*30.08. 18:40 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports no organ failures, indicating stable internal system health despite external API throttling.
+
+### `dream:20260830184001:4:e5af1f`
+*30.08. 18:40 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple models in the same timeframe suggest a need for coordinated rate-limit management rather than individual model retries.
+
+### `dream:20260830184001:3:cc4781`
+*30.08. 18:40 UTC · Quelle: dream*
+
+Reflex actions can successfully converge on goals like 'Vergessene Analyseergebnisse nutzen' with minimal duration (0.18s) and exit code 0.
+
+### `dream:20260830184001:2:9f9ab3`
+*30.08. 18:40 UTC · Quelle: dream*
+
+Model performance varies significantly: poolside/laguna-s-2.1:free achieved 7.7s latency with 1443 input tokens, while inclusionai/ling-3.0-flash-fin:free took 17.0s but produced 2238 output tokens.
+
+### `dream:20260830184001:1:6772d1`
+*30.08. 18:40 UTC · Quelle: dream*
+
+All model failures were HTTP 429 rate-limit errors from OpenRouter, indicating systemic throttling rather than model-specific issues.
 
 ### `dream:20260830183137:5:e3a8e4`
 *30.08. 18:31 UTC · Quelle: dream*
