@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7423 Fakten** · Stand 2026-08-30 18:10 UTC · aktualisiert bei jedem Herzschlag
+**7428 Fakten** · Stand 2026-08-30 18:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3650
+- **dream:** 3655
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830181657:5:fdb598`
+*30.08. 18:16 UTC · Quelle: dream*
+
+Context pruning ran but removed zero facts, suggesting the minimum threshold is set too high or scoring weights are miscalibrated.
+
+### `dream:20260830181657:4:d942a9`
+*30.08. 18:16 UTC · Quelle: dream*
+
+Multiple skill proposals for routing, latency budgets, and promotion pipelines exist but remain unimplemented due to missing execution trigger.
+
+### `dream:20260830181657:3:8c5d05`
+*30.08. 18:16 UTC · Quelle: dream*
+
+Successful model latencies (7.8-9.1s) exceed typical interactive thresholds, necessitating async fallback for time-sensitive tasks.
+
+### `dream:20260830181657:2:e65c23`
+*30.08. 18:16 UTC · Quelle: dream*
+
+Upstream service errors (HTTP 502 from NVIDIA) reveal dependency on provider infrastructure health beyond rate limits.
+
+### `dream:20260830181657:1:d474ba`
+*30.08. 18:16 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models on OpenRouter, indicating systemic quota exhaustion rather than isolated provider issues.
 
 ### `dream:20260830180925:5:60d1f0`
 *30.08. 18:09 UTC · Quelle: dream*
