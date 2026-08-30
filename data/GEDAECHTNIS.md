@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7175 Fakten** · Stand 2026-08-30 10:27 UTC · aktualisiert bei jedem Herzschlag
+**7181 Fakten** · Stand 2026-08-30 10:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3471
+- **dream:** 3476
 - **swarm_artifact:** 1671
 - **last_swarm_critique:** 627
 - **anti_pattern:** 519
@@ -11,7 +11,7 @@
 - **hand_result:** 82
 - **tool:** 77
 - **aktuell_fussball_messlatte:** 33
-- **aktuell_organfehler:** 24
+- **aktuell_organfehler:** 25
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830103106:5:28b1f3`
+*30.08. 10:31 UTC · Quelle: dream*
+
+The adaptive rate limiter and unified model executor proposed earlier remain unimplemented, and their absence is the root cause of the ongoing 429 spiral and unstructured error handling.
+
+### `dream:20260830103106:4:9c4d69`
+*30.08. 10:31 UTC · Quelle: dream*
+
+A failure cascade is active: repeated 429s cause swarm tools to fail, which raises stress to 1.0, which triggers conserve mode, which blocks retries and lets goals go stale.
+
+### `dream:20260830103106:3:2b9553`
+*30.08. 10:31 UTC · Quelle: dream*
+
+Conserve mode with max_iterations=1 creates a bottleneck where each failed model call consumes the entire iteration budget, preventing any recovery or retry within the same cycle.
+
+### `dream:20260830103106:2:14e382`
+*30.08. 10:31 UTC · Quelle: dream*
+
+Silent path-resolution failures (exit 0, no file touched) mask real errors when relative paths aren't resolved against ZOETRON_DATA, causing hand actions to appear successful while producing no output.
+
+### `dream:20260830103106:1:1b4710`
+*30.08. 10:31 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails with 429 on every call (~8s intervals), creating a persistent failure source that should be deprioritized or placed on cooldown rather than retried blindly.
+
+### `aktuell_organfehler`
+*30.08. 10:29 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-30 10:23:35-10:26:35 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `aktuell_organfehler`
 *30.08. 10:19 UTC · Quelle: selbstdiagnose.py*
