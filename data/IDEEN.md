@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while the model organ suffers repeated 429 failures, revealing a monitoring blind spot: health checks ignore 
+- Drive goals repeat identically across cycles (stale analyses, simulation gaps, error diagnosis, skill adoption) indicating no closure mechanism conver
+- Five prior skill proposals addressing model routing, backoff, circuit-breakers, local-first policy, and error-type calibration remain unimplemented, c
+- Reflex tools (hand actions) achieve 100% success with sub-second latency for market-analysis tasks, proving local code execution outperforms remote in
+- The z-ai/glm-5.2:free model consistently fails with 429 errors while nvidia/nemotron-3-ultra succeeds but at 20-60s latency, making remote models unre
 - High latency (16-30s) on the only working model makes synchronous calls impractical for interactive loops, requiring async or cached patterns.
 - Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health monitor misses external dependency degradation.
 - Skill proposals accumulate faster than implementation (5 proposals generated in one session), creating a meta-backlog that mirrors the original work s
@@ -51,11 +56,6 @@
 - Reflexes are effectively resolving stale drive goals like market analysis cleanup, but the core analytical task remains unfinished.
 - Fallback to nvidia/nemotron-3-ultra-550b-a55b:free is successful but incurs high latency (up to 39 seconds), indicating a need for faster backup model
 - The z-ai/glm-5.2:free model is chronically rate-limited with 429 errors and should be temporarily disabled or heavily throttled.
-- Three drive goals activated simultaneously (reduce model errors, implement skills, finish stale market analysis) but no concrete execution traces foll
-- Prune runs consistently remove 0 facts and 0 events, suggesting either the pruning criteria are too strict or the system accumulates no removable debr
-- Reflex tools (swarm convergence, market cleanup) achieve 100% convergence in this session while model-dependent planning fails, indicating reflexes ar
-- Five skill proposals exist (ModelRouter, CircuitBreaker, PreFlightProbe, ProposalGate, DataFreshnessMonitor) but zero have been implemented, revealing
-- Model z-ai/glm-5.2:free fails 100% of the time with 429 errors while nvidia/nemotron-3-ultra succeeds but with 20-44s latency variance, proving single
 
 ---
 
