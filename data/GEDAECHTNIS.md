@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6853 Fakten** · Stand 2026-08-30 02:18 UTC · aktualisiert bei jedem Herzschlag
+**6858 Fakten** · Stand 2026-08-30 02:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3241
+- **dream:** 3246
 - **swarm_artifact:** 1625
 - **last_swarm_critique:** 618
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830022146:5:7a2daf`
+*30.08. 02:21 UTC · Quelle: dream*
+
+Hand actions (local code execution) complete in ~0.2s with zero failures, making them preferable for deterministic tasks over unreliable model calls.
+
+### `dream:20260830022146:4:5fcc55`
+*30.08. 02:21 UTC · Quelle: dream*
+
+The automatic 1800-second block after 3 consecutive errors effectively prevents cascade failures but may be too aggressive for transient 429 errors.
+
+### `dream:20260830022146:3:a8d7ee`
+*30.08. 02:21 UTC · Quelle: dream*
+
+Models returning 404 (not found) should be immediately deprecated rather than retried, as seen with nvidia/nemotron-3-ultra-550b-a55b:free.
+
+### `dream:20260830022146:2:8f10ed`
+*30.08. 02:21 UTC · Quelle: dream*
+
+The model inclusionai/ling-3.0-flash-fin:free shows consistent availability but highly variable latency (4–33s), suggesting it should be the primary fallback with timeout handling.
+
+### `dream:20260830022146:1:395bd7`
+*30.08. 02:21 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the primary failure mode across multiple free-tier models, indicating the need for request throttling or fallback chains.
 
 ### `dream:20260830021700:5:f9bc6f`
 *30.08. 02:17 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions (local code execution) complete in ~0.2s with zero failures, making them preferable for deterministic tasks over unreliable model calls.
+- The automatic 1800-second block after 3 consecutive errors effectively prevents cascade failures but may be too aggressive for transient 429 errors.
+- Models returning 404 (not found) should be immediately deprecated rather than retried, as seen with nvidia/nemotron-3-ultra-550b-a55b:free.
+- The model inclusionai/ling-3.0-flash-fin:free shows consistent availability but highly variable latency (4–33s), suggesting it should be the primary f
+- Rate limiting (HTTP 429) is the primary failure mode across multiple free-tier models, indicating the need for request throttling or fallback chains.
 - The system retries failing models immediately without backoff, amplifying rate-limit collisions and accelerating circuit-breaker trips.
 - 404 errors on nvidia/nemotron-3-ultra-550b-a55b:free indicate model endpoint removal, not rate limiting, requiring different handling.
 - Three consecutive failures trigger a 30-minute hard block (model_gesperrt), turning transient rate limits into prolonged outages.
@@ -51,11 +56,6 @@
 - File/path resolution is broken in hand actions: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero-byte reads.
 - The system lacks automatic fallback logic - it retries failed models instead of switching to the one proven working model.
 - Model reliability is the primary system bottleneck: 4/5 models fail consistently with 429 rate limits or 404 errors, only inclusionai/ling-3.0-flash-f
-- Skill proposals lack concrete acceptance criteria (e.g., '429 rate = 0% over 100 calls'), preventing objective validation.
-- Stale market analyses persist despite refresh drive goals, indicating missing automated freshness enforcement.
-- Multiple skill proposals address model routing (router, circuit breaker, pre-flight probe) but none have been implemented, revealing an execution gap.
-- Fallback model (nvidia/nemotron-3-ultra) succeeds but at 12-52s latency, making it unsuitable for interactive loops.
-- Primary model (z-ai/glm-5.2:free) consistently fails with 429 rate limits, forcing fallback to high-latency alternatives.
 
 ---
 
