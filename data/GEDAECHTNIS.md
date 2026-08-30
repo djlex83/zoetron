@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7093 Fakten** · Stand 2026-08-30 07:40 UTC · aktualisiert bei jedem Herzschlag
+**7098 Fakten** · Stand 2026-08-30 07:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3431
+- **dream:** 3436
 - **swarm_artifact:** 1651
 - **last_swarm_critique:** 623
 - **anti_pattern:** 513
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830074700:5:f2eb45`
+*30.08. 07:47 UTC · Quelle: dream*
+
+Signal-driven goals (failure/stale/gap) need a prioritization queue that prevents competing goals from consuming the same scarce retry budget simultaneously.
+
+### `dream:20260830074700:4:8e060e`
+*30.08. 07:47 UTC · Quelle: dream*
+
+Rate-limit errors (429) dominate the failure mode, requiring built-in exponential backoff and request throttling before any retry logic is invoked.
+
+### `dream:20260830074700:3:a63b5e`
+*30.08. 07:47 UTC · Quelle: dream*
+
+Silent tool failures (exit: 1 with null error) indicate missing error capture and diagnostic instrumentation in execution wrappers, making failures un-diagnosable.
+
+### `dream:20260830074700:2:8cb3ca`
+*30.08. 07:47 UTC · Quelle: dream*
+
+Under resource stress (stress=1.0, conserve mode) the system must enforce strict single-task execution with guaranteed success paths rather than parallel retries that exhaust the tiny budget.
+
+### `dream:20260830074700:1:4137b1`
+*30.08. 07:47 UTC · Quelle: dream*
+
+Cascading API failures through a single provider (OpenRouter) mean retry chains without provider diversity will fail together — diversify fallback endpoints across independent providers.
 
 ### `dream:20260830073932:5:95d605`
 *30.08. 07:39 UTC · Quelle: dream*

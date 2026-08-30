@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 07:39:56",
+ "stand": "2026-08-30 07:48:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -117,6 +117,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -184,12 +190,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

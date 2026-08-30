@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 4856 Neuronen · 245770 bewertete Synapsen
+Stand: 4858 Neuronen · 245900 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 

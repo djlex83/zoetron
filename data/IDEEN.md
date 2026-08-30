@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 07:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 07:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Signal-driven goals (failure/stale/gap) need a prioritization queue that prevents competing goals from consuming the same scarce retry budget simultan
+- Rate-limit errors (429) dominate the failure mode, requiring built-in exponential backoff and request throttling before any retry logic is invoked.
+- Silent tool failures (exit: 1 with null error) indicate missing error capture and diagnostic instrumentation in execution wrappers, making failures un
+- Under resource stress (stress=1.0, conserve mode) the system must enforce strict single-task execution with guaranteed success paths rather than paral
+- Cascading API failures through a single provider (OpenRouter) mean retry chains without provider diversity will fail together — diversify fallback end
 - Rate-limit (429) and server-overload (502) errors demand fundamentally different retry strategies, and ignoring this distinction wastes recovery time.
 - Code generation paths must include pre-execution syntax validation to eliminate an entire class of runtime errors before sandbox invocation.
 - Output results from external model calls require structural validation before downstream consumption to prevent cascading task failures.
@@ -51,11 +56,6 @@
 - Skill proposals decay when no automated pipeline converts failure-validated proposals into registered reflex tools within a bounded timeframe.
 - Reflex-based tool execution consistently converges and outperforms model-dependent execution, yet 55 skill proposals remain unimplemented due to missi
 - External model APIs fail predictably with 429 rate limits, and working fallback models exist but lack automated circuit-breaking to prevent cascading 
-- Proposal-to-skill conversion is stalled: 10+ proposals exist but none have been promoted to executable, tested skills.
-- Self-diagnosis shows zero organ errors, yet model failures persist – indicating the monitoring layer misses external API degradation.
-- Stale drive goals (market analysis) block new decisions until explicitly closed or completed via reflex actions.
-- Multiple independent proposals converge on model routing, output validation, and pre-execution checks as critical missing infrastructure.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without automated fallback.
 
 ---
 
