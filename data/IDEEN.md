@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,8 +29,8 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution runs improved a 5/10 score to 9/10 in one generation, but the swarm still failed to converge after two cycles, indicating that fitness thres
+- The skill 'vorgeschlagene-fähigkeiten-prüfen-und-nu' was rejected because it produced only stdout with no return value or persisted artifacts, reveali
+- inclusionai/ling-3.0-flash-fin:free succeeded on every call with 9–11s latency, identifying it as the current stable default for free-tier routing.
+- A single model (nemotron) accumulated three consecutive errors and was blocked for 30 minutes, showing that error streaks trigger hard bans.
+- Free-tier models frequently hit 429 rate limits under load, making them unreliable for production workflows without fallback chains.
 - Hand actions (local code execution) complete in ~0.2s with zero failures, making them preferable for deterministic tasks over unreliable model calls.
 - The automatic 1800-second block after 3 consecutive errors effectively prevents cascade failures but may be too aggressive for transient 429 errors.
 - Models returning 404 (not found) should be immediately deprecated rather than retried, as seen with nvidia/nemotron-3-ultra-550b-a55b:free.
@@ -51,11 +56,6 @@
 - Three consecutive failures trigger a 30-minute hard block (model_gesperrt), turning transient rate limits into prolonged outages.
 - A single model (inclusionai/ling-3.0-flash-fin:free) absorbed all successful traffic while 4 other models failed repeatedly, revealing extreme reliabi
 - Free-tier models on OpenRouter consistently hit 429 rate limits within seconds of each other, making them unreliable for sustained workloads.
-- Swarm/reflex execution fails silently - the tool 'alte-schwarm-arbeiten-zu-ende-bringen.py' returns ok:false with no error detail, blocking skill-buil
-- Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), preventing recovery actions from executing.
-- File/path resolution is broken in hand actions: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero-byte reads.
-- The system lacks automatic fallback logic - it retries failed models instead of switching to the one proven working model.
-- Model reliability is the primary system bottleneck: 4/5 models fail consistently with 429 rate limits or 404 errors, only inclusionai/ling-3.0-flash-f
 
 ---
 
