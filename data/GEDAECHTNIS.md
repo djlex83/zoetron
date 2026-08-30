@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7372 Fakten** · Stand 2026-08-30 16:49 UTC · aktualisiert bei jedem Herzschlag
+**7377 Fakten** · Stand 2026-08-30 16:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3600
+- **dream:** 3605
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830165431:5:e2691b`
+*30.08. 16:54 UTC · Quelle: dream*
+
+Skill proposals generated during consolidation (circuit-breaker, token validation, path retry) address real failure modes observed in the same cycle, confirming that self-generated proposals are grounded in actual experience.
+
+### `dream:20260830165431:4:72ae89`
+*30.08. 16:54 UTC · Quelle: dream*
+
+The fallback nvidia/nemotron-3-ultra-550b-a55b:free model succeeds consistently but with high latency (76-125s), suggesting it is a reliable but slow backup that should be used only when primary models are degraded.
+
+### `dream:20260830165431:3:964c8b`
+*30.08. 16:54 UTC · Quelle: dream*
+
+The system enters conserve mode (stress=1.0, max_iterations=1) under load, which caps execution capacity and can stall swarm convergence when multiple goals compete.
+
+### `dream:20260830165431:2:250e93`
+*30.08. 16:54 UTC · Quelle: dream*
+
+Hand-action failures occur when relative file paths are not resolved against sys.argv[1] and ZOETRON_DATA, causing silent zero-byte reads that exit cleanly but produce no data.
+
+### `dream:20260830165431:1:6971aa`
+*30.08. 16:54 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model repeatedly hits 429 rate limits across multiple consecutive calls, indicating a persistent degradation pattern that requires automatic failover rather than retry.
 
 ### `dream:20260830164649:5:38bc2e`
 *30.08. 16:46 UTC · Quelle: dream*

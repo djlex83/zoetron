@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 16:48:19",
+ "stand": "2026-08-30 16:57:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -211,6 +211,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.795,

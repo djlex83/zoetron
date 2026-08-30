@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 16:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 16:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals generated during consolidation (circuit-breaker, token validation, path retry) address real failure modes observed in the same cycle, 
+- The fallback nvidia/nemotron-3-ultra-550b-a55b:free model succeeds consistently but with high latency (76-125s), suggesting it is a reliable but slow 
+- The system enters conserve mode (stress=1.0, max_iterations=1) under load, which caps execution capacity and can stall swarm convergence when multiple
+- Hand-action failures occur when relative file paths are not resolved against sys.argv[1] and ZOETRON_DATA, causing silent zero-byte reads that exit cl
+- The z-ai/glm-5.2:free model repeatedly hits 429 rate limits across multiple consecutive calls, indicating a persistent degradation pattern that requir
 - Drive goals persist (market analysis, model reliability) without measurable progress signals, indicating missing success criteria and checkpointing.
 - Zero pruned facts/events across cycles suggests the retention policy is too conservative, bloating context without improving recall.
 - Reflex-mode convergence on skill-implementation goals shows the system can execute procedural knowledge but lacks a mechanism to promote successful re
@@ -51,11 +56,6 @@
 - Latency variance from 7s to 123s for similar token loads shows unpredictable queueing delays in free-tier endpoints.
 - Upstream 502 errors from Nvidia reveal provider-side capacity saturation that cannot be resolved by client-side retries alone.
 - Repeated 429 errors across multiple providers indicate systemic rate-limit exhaustion rather than isolated model failures.
-- Successful model calls sometimes return only 8 output tokens for 575 input tokens, signaling silent truncation or refusal.
-- Hand actions fail with exit code 1 and zero bytes read, indicating environment permission or path issues.
-- Model latency varies from 3s to 90s (nemotron) breaking fixed timeouts and causing cascading delays.
-- Evolution produces high-scoring variants (9/10) but the merged result still scores 1/10, revealing a synthesis/integration failure mode.
-- Free-tier models (glm, gemma) consistently hit 429 rate limits making them unreliable for sustained workloads.
 
 ---
 
