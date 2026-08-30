@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 19:51:48",
+ "stand": "2026-08-30 20:25:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,12 +27,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 6,
    "erfolge": 0,
@@ -42,6 +36,12 @@
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 6,
    "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -111,6 +111,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltete-marktkenntnisse-aktualisieren.py",
+   "laeufe": 3,
+   "erfolge": 1,
+   "quote": 0.333
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -123,28 +129,10 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktkenntnisse-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 1,
-   "quote": 0.5
-  },
-  {
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "neue-fähigkeiten-erlernen.py",
@@ -219,17 +207,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.816,
+ "haende_quote": 0.811,
  "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 26,
   "best": 9.0,
-  "schnitt": 5.42
+  "schnitt": 5.65
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 24,
-   "schnitt": 5.58
+   "n": 25,
+   "schnitt": 5.68
   },
   "bau": {
    "n": 1,

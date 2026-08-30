@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 19:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 20:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
-- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 2×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 2×)*
 - Marktanalyse in Handeln umsetzen *(wieder aufgegriffen: 2×)*
+- Liegende Marktanalysen abschließen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Models that fail with 429 errors create cascading failures in dependent tasks, amplifying the impact of rate limiting beyond individual requests.
+- The critic's specific feedback about missing executable Python code directly correlates with the score improvement, highlighting the importance of con
+- Task completion improved from 0/10 to 7/10 after evolution, showing that iterative refinement with critic feedback is effective for overcoming initial
+- The inclusionai/ling-3.0-flash-fin:free model consistently succeeds while others fail, suggesting it has better rate-limit tolerance or priority acces
+- Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
 - Pruning removed zero facts/events, suggesting the current retention window is too short to capture cross-session patterns like recurring 429 spikes.
 - No organ errors appeared in self-diagnosis despite repeated model failures, showing the failure boundary is correctly isolated to the model-calling or
 - The reflex that converts converged goals into skill artifacts worked twice in one cycle, proving the promotion pipeline concept is already viable.
@@ -51,11 +56,6 @@
 - Simulation-to-practice effort estimates are systematically underestimated by ~2x, causing repeated timeline overruns.
 - Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) consistently converge goals without LLM calls, proving local heuristics can replace 
 - 429 rate-limit errors cascade across all non-Poolside models, making single-model reliance a systemic fragility.
-- Self-diagnosis consistently reports no organ failures, indicating stable internal system health despite external API throttling.
-- Repeated 429 errors across multiple models in the same timeframe suggest a need for coordinated rate-limit management rather than individual model ret
-- Reflex actions can successfully converge on goals like 'Vergessene Analyseergebnisse nutzen' with minimal duration (0.18s) and exit code 0.
-- Model performance varies significantly: poolside/laguna-s-2.1:free achieved 7.7s latency with 1443 input tokens, while inclusionai/ling-3.0-flash-fin:
-- All model failures were HTTP 429 rate-limit errors from OpenRouter, indicating systemic throttling rather than model-specific issues.
 
 ---
 
