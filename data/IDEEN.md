@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 00:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 00:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,12 +26,12 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation verdicts returning 'revise' with multiple risks signal that pre-execution validation must precede full resource commitment.
+- Silent failures (e.g., file operations resolving relative paths to nothing) propagate undetected unless explicit side-effect validation gates are enfo
+- Analysis results and dream-derived insights decay into wasted knowledge when no concrete action bridge connects them to execution steps.
+- The nvidia/nemotron-3-ultra-550b-a55b:free fallback succeeds but exhibits extreme latency variance (6.8s–82.4s), requiring p95-aware routing instead o
+- The z-ai/glm-5.2:free model fails repeatedly with 429 errors, indicating a systemic capacity limit that demands automatic quarantine rather than retry
 - The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) demonstrates that automated, goal-driven self-correction outperforms manual skill 
 - Reactive error handling fails because the system calls a rate-limited model repeatedly before detecting the pattern; proactive rate-limit header parsi
 - Even the working nvidia/nemotron-3-ultra-550b-a55b:free model exhibits extreme latency variance (5s to 45.6s), so single-point latency thresholds are 
@@ -51,11 +56,6 @@
 - Five skill-proposal cycles produced 10+ proposals but zero promotions, revealing a missing validation-to-deployment pipeline.
 - Nemotron-3-ultra latency varies 2x (9.4s to 20.4s) for similar token volumes, violating any fixed SLO and requiring dynamic fallback.
 - The z-ai/glm-5.2:free model consistently returns 429 errors across multiple timestamps, indicating a hard rate limit that makes it unreliable as a pri
-- Drive goals highlight an execution gap: many proposals are generated but few are acted upon, and completed analyses (market) remain unused.
-- Self-diagnosis reports zero organ errors while model failures persist, revealing a monitoring blind spot for external API degradation.
-- Skill proposals repeat across dream cycles (health scorecard, backoff retry, latency predictor, work ledger, model router) because no persistent ledge
-- Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (6.5–46.2 s), indicating need for latency-aware sele
-- The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, making it unreliable as a primary endpoint without health-aware routing.
 
 ---
 

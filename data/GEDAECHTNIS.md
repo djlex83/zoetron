@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6795 Fakten** · Stand 2026-08-30 00:22 UTC · aktualisiert bei jedem Herzschlag
+**6812 Fakten** · Stand 2026-08-30 00:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3206
-- **swarm_artifact:** 1613
-- **last_swarm_critique:** 616
-- **anti_pattern:** 503
-- **last_swarm_goal:** 365
-- **strategy:** 272
+- **dream:** 3211
+- **swarm_artifact:** 1619
+- **last_swarm_critique:** 617
+- **anti_pattern:** 505
+- **last_swarm_goal:** 366
+- **strategy:** 273
 - **hand_result:** 79
-- **tool:** 71
+- **tool:** 72
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:veraltete-marktkenntnisse-aktualisieren`
+*30.08. 00:40 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Marktkenntnisse aktualisieren'. Datei: data/tools/veraltete-marktkenntnisse-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktkenntniss:2`
+*30.08. 00:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.0): Human-in-the-Loop Active Learning with Confidence Calibration - Frame market-knowledge refresh as a continuous active-learning loop. Start with a small seed of high-confidence structured records (from SEC filings, statistic
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Veraltete Marktkenntniss:1`
+*30.08. 00:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.3): Semantic Knowledge Graph with Contextual Entailment - Replace keyword matching with a bilingual (DE/EN) domain-adapted sentence transformer (e.g., fine-tuned MiniLM on 50k German financial texts) to embed every claim as a 3
+
+### `last_swarm_critique`
+*30.08. 00:36 UTC · Quelle: critic*
+
+score=6; issues=Script 2: _score_breakdown recalculates compute_source_score redundantly with incorrect recency formula (multiplies by 0 then adds complex expression), wasting CPU and producing wrong breakdown values; Script 3: Contradiction detection uses nai
+
+### `last_swarm_goal`
+*30.08. 00:28 UTC · Quelle: system*
+
+Veraltete Marktkenntnisse aktualisieren
+
+### `dream:20260830002824:5:a7f3f0`
+*30.08. 00:28 UTC · Quelle: dream*
+
+Simulation verdicts returning 'revise' with multiple risks signal that pre-execution validation must precede full resource commitment.
+
+### `dream:20260830002824:4:c29695`
+*30.08. 00:28 UTC · Quelle: dream*
+
+Silent failures (e.g., file operations resolving relative paths to nothing) propagate undetected unless explicit side-effect validation gates are enforced.
+
+### `dream:20260830002824:3:b81059`
+*30.08. 00:28 UTC · Quelle: dream*
+
+Analysis results and dream-derived insights decay into wasted knowledge when no concrete action bridge connects them to execution steps.
+
+### `dream:20260830002824:2:f6a487`
+*30.08. 00:28 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free fallback succeeds but exhibits extreme latency variance (6.8s–82.4s), requiring p95-aware routing instead of binary success/fail decisions.
+
+### `dream:20260830002824:1:e15f6b`
+*30.08. 00:28 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails repeatedly with 429 errors, indicating a systemic capacity limit that demands automatic quarantine rather than retry.
 
 ### `dream:20260830002136:5:a7fd85`
 *30.08. 00:21 UTC · Quelle: dream*
