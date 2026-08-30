@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7540 Fakten** · Stand 2026-08-30 22:01 UTC · aktualisiert bei jedem Herzschlag
+**7545 Fakten** · Stand 2026-08-30 22:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3715
+- **dream:** 3720
 - **swarm_artifact:** 1733
 - **last_swarm_critique:** 638
 - **anti_pattern:** 535
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830220637:5:5c56dc`
+*30.08. 22:06 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1:free succeeds repeatedly at ~8s latency and high token throughput, marking it as the only stable free model.
+
+### `dream:20260830220637:4:9717b2`
+*30.08. 22:06 UTC · Quelle: dream*
+
+Swarm execution stalls at 2 cycles with fixed 1-planner/3-builder/1-critic ratio and no convergence, suggesting insufficient iteration depth.
+
+### `dream:20260830220637:3:4a82d2`
+*30.08. 22:06 UTC · Quelle: dream*
+
+Calibration consistently underestimates effort by ~33% (predicted 4 vs actual 6), indicating a systematic planning bias.
+
+### `dream:20260830220637:2:fd14a2`
+*30.08. 22:06 UTC · Quelle: dream*
+
+Evolutionary repair jumps scores from 6 to 9 when the critic pinpoints "no measurable output" – concrete validation gates enable large gains.
+
+### `dream:20260830220637:1:c90b5c`
+*30.08. 22:06 UTC · Quelle: dream*
+
+Free-tier models (GLM, Gemma, Nemotron) fail predominantly via 429 rate limits and 502 upstream overloads, making them unreliable as primary workers.
 
 ### `dream:20260830215933:5:3edb9a`
 *30.08. 21:59 UTC · Quelle: dream*
