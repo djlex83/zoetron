@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 10:06:06",
+ "stand": "2026-08-30 10:16:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,16 +27,16 @@
    "quote": 1.0
   },
   {
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 8,
+   "erfolge": 8,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 8,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
   },
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 10:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 10:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,10 +28,10 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
