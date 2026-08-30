@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 21:53:40",
+ "stand": "2026-08-30 22:00:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,6 +51,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -61,12 +67,6 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
@@ -192,9 +192,9 @@
  "haende_quote": 0.81,
  "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 28,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 5.75
+  "schnitt": 5.67
  },
  "score_nach_ziel_typ": {
   "analyse": {

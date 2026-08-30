@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 21:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token output spikes (e.g., 4337 tokens) on successful nemotron calls suggest the model is compensating for upstream failures by generating more verbos
+- Model failures correlate with high stress state (stress=1.0, conserve mode), indicating that system resource constraints directly impact model reliabi
+- The swarm goal 'Alte Marktanalysen verwerten' succeeded with a 248-line Python artifact, demonstrating that focused, bounded tasks yield reliable resu
+- nvidia/nemotron-3-ultra-550b-a55b:free shows increasing latency (53s to 171s) under sustained load, suggesting resource exhaustion without proper thro
+- Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limiting issues that cause cascading failures and should trigger automatic model fallback
 - Circuit-breaker logic with health tracking can prevent cascading failures from degraded models.
 - Critical-path tasks require reserved capacity to avoid blocking on rate-limited or failing models.
 - Token efficiency varies significantly across models, justifying dynamic model selection based on input/output cost patterns.
@@ -51,11 +56,6 @@
 - The swarm system successfully converged on goal 'Veraltete Infos auffrischen' with score 8 in a single cycle, demonstrating effective parallel executi
 - Model latency varies dramatically (8s to 175s) even for the same model across calls, suggesting API-side throttling or queuing effects.
 - All model failures are exclusively 429 Too Many Requests errors from OpenRouter, indicating rate-limiting rather than model-specific issues.
-- Zero facts pruned despite repeated failures indicates the pruning policy does not capture operational error patterns.
-- Successful model latency varies 2x (5.1s vs 10.6s) even on the same tier, making static model selection unreliable.
-- Swarm convergence fails when critic-to-builder ratio falls below 1:2 (1 critic vs 3 builders), allowing low-quality proposals to persist.
-- Automatic model blocking after three consecutive failures (nemotron-3-ultra blocked 1800s) prevents error cascades but reduces available capacity.
-- Rate limiting (429) affects all free-tier models indiscriminately, making it a systemic infrastructure constraint rather than a model-specific issue.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7535 Fakten** · Stand 2026-08-30 21:54 UTC · aktualisiert bei jedem Herzschlag
+**7540 Fakten** · Stand 2026-08-30 22:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3710
+- **dream:** 3715
 - **swarm_artifact:** 1733
 - **last_swarm_critique:** 638
 - **anti_pattern:** 535
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830215933:5:3edb9a`
+*30.08. 21:59 UTC · Quelle: dream*
+
+Token output spikes (e.g., 4337 tokens) on successful nemotron calls suggest the model is compensating for upstream failures by generating more verbose responses
+
+### `dream:20260830215933:4:13b444`
+*30.08. 21:59 UTC · Quelle: dream*
+
+Model failures correlate with high stress state (stress=1.0, conserve mode), indicating that system resource constraints directly impact model reliability
+
+### `dream:20260830215933:3:300797`
+*30.08. 21:59 UTC · Quelle: dream*
+
+The swarm goal 'Alte Marktanalysen verwerten' succeeded with a 248-line Python artifact, demonstrating that focused, bounded tasks yield reliable results
+
+### `dream:20260830215933:2:371889`
+*30.08. 21:59 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free shows increasing latency (53s to 171s) under sustained load, suggesting resource exhaustion without proper throttling
+
+### `dream:20260830215933:1:c067ee`
+*30.08. 21:59 UTC · Quelle: dream*
+
+Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limiting issues that cause cascading failures and should trigger automatic model fallback
 
 ### `dream:20260830215254:5:075004`
 *30.08. 21:52 UTC · Quelle: dream*
