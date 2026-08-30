@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 14:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 14:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
+- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The nemotron model succeeds where glm fails, but its ~55s latency means model selection must balance availability against speed, not just uptime.
+- Self-diagnosis consistently reports no organ errors, indicating structural health but masking the real problem: missing procedural bridges between dre
+- Stale market analyses lose their decision value over time, proving that reflex-driven completion outperforms perfectionist waiting for ideal condition
+- The gap between dream proposals and implemented skills is the system's largest waste vector — ideas die without auto-wiring into reflex triggers and t
+- Repeated 429 rate-limit errors from a single free model reveal that dependency without an automatic fallback turns transient limits into systemic pred
 - Skill proposal generation without a concurrent deployment mechanism creates a growing debt between designed and actual capabilities.
 - Self-diagnosis that excludes external API dependencies will repeatedly miss the root cause of cascading failures.
 - Reflex actions succeed consistently where deliberate planning fails, suggesting the system should default to reflex-driven recovery for stale or block
@@ -51,11 +56,6 @@
 - InclusionAI Ling 3.0 Flash Fin shows consistent success with low latency (~12-16s) and no rate-limit failures in this window.
 - NVIDIA Nemotron exhibits bimodal reliability: successful completions but also 502 upstream overload errors under load.
 - Rate limiting (429) affects all free-tier models indiscriminately, making them unreliable for time-critical paths.
-- Hand-action tooling completes in <1 s with clean exit codes, confirming local execution reliability.
-- Simulation-gated exploration ("Blinden Fleck #2") passed risk/revision checks and TOR confirmed artifact execution (257-line Python script).
-- inclusionai/ling-3.0-flash-fin:free is the only model with 100% success rate and consistent sub-30 s latency in this sample.
-- Nvidia Nemotron-3-Ultra exhibits intermittent 502 upstream overloads yet succeeds ~70% of calls with highly variable latency (43–101 s).
-- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting (z-ai/glm-5.2:free failed 6×, Gemma models 4×), making them unsuitable for latency-c
 
 ---
 
