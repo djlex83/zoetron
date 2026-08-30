@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 20:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 20:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
@@ -33,14 +33,19 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 2×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 2×)*
 - Marktanalyse in Handeln umsetzen *(wieder aufgegriffen: 2×)*
 - Liegende Marktanalysen abschließen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goal "Marktanalyse in Handlung umsetzen" persists across swarm start, simulation, reflex failure, and multiple model failures — goal stack survives in
+- Metabolism enters conserve mode (stress=1.0) with severe budget cuts (max_tasks=3, max_iterations=1) precisely when model failures cascade, starving r
+- First hand_action failed due to relative path resolution ignoring ZOETRON_DATA and sys.argv[1]; second attempt succeeded after explicit path handling.
+- Fallback models (nvidia/nemotron-3-ultra, poolside/laguna) succeed but exhibit extreme latency variance (23s–225s), causing unpredictable task duratio
+- Primary model z-ai/glm-5.2:free consistently fails with 429 rate limits, making it unreliable as a default choice.
 - Models that fail with 429 errors create cascading failures in dependent tasks, amplifying the impact of rate limiting beyond individual requests.
 - The critic's specific feedback about missing executable Python code directly correlates with the score improvement, highlighting the importance of con
 - Task completion improved from 0/10 to 7/10 after evolution, showing that iterative refinement with critic feedback is effective for overcoming initial
@@ -51,11 +56,6 @@
 - The reflex that converts converged goals into skill artifacts worked twice in one cycle, proving the promotion pipeline concept is already viable.
 - Latency variance between successful calls (7.9s vs 12.2s) exceeds 50%, indicating queue-depth differences that a health-check probe can detect before 
 - Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for production workloads without a routing laye
-- Self-diagnosis reports zero organ errors despite repeated 429 failures, revealing a blind spot in health monitoring for external API degradation.
-- Pruning runs remove zero facts/events, indicating either stale-data detection is too conservative or consolidation isn't producing prunable artifacts.
-- Simulation-to-practice effort estimates are systematically underestimated by ~2x, causing repeated timeline overruns.
-- Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) consistently converge goals without LLM calls, proving local heuristics can replace 
-- 429 rate-limit errors cascade across all non-Poolside models, making single-model reliance a systemic fragility.
 
 ---
 

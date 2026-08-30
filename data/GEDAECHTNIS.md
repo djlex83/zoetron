@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7490 Fakten** · Stand 2026-08-30 20:26 UTC · aktualisiert bei jedem Herzschlag
+**7495 Fakten** · Stand 2026-08-30 20:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3685
+- **dream:** 3690
 - **swarm_artifact:** 1721
 - **last_swarm_critique:** 636
 - **anti_pattern:** 533
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830205236:5:d21ee1`
+*30.08. 20:52 UTC · Quelle: dream*
+
+Goal "Marktanalyse in Handlung umsetzen" persists across swarm start, simulation, reflex failure, and multiple model failures — goal stack survives infrastructure instability.
+
+### `dream:20260830205236:4:d5efba`
+*30.08. 20:52 UTC · Quelle: dream*
+
+Metabolism enters conserve mode (stress=1.0) with severe budget cuts (max_tasks=3, max_iterations=1) precisely when model failures cascade, starving recovery attempts.
+
+### `dream:20260830205236:3:cba011`
+*30.08. 20:52 UTC · Quelle: dream*
+
+First hand_action failed due to relative path resolution ignoring ZOETRON_DATA and sys.argv[1]; second attempt succeeded after explicit path handling.
+
+### `dream:20260830205236:2:2e2398`
+*30.08. 20:52 UTC · Quelle: dream*
+
+Fallback models (nvidia/nemotron-3-ultra, poolside/laguna) succeed but exhibit extreme latency variance (23s–225s), causing unpredictable task duration.
+
+### `dream:20260830205236:1:87155a`
+*30.08. 20:52 UTC · Quelle: dream*
+
+Primary model z-ai/glm-5.2:free consistently fails with 429 rate limits, making it unreliable as a default choice.
 
 ### `tool:veraltete-infos-auffrischen`
 *30.08. 20:25 UTC · Quelle: hands*
