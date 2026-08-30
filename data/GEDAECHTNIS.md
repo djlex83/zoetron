@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7025 Fakten** · Stand 2026-08-30 05:50 UTC · aktualisiert bei jedem Herzschlag
+**7030 Fakten** · Stand 2026-08-30 05:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3371
+- **dream:** 3376
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 622
 - **anti_pattern:** 511
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830055549:5:b6dc73`
+*30.08. 05:55 UTC · Quelle: dream*
+
+Artifact generation (98-line Python) + TOR validation (grün=true) + calibration (error=1) forms a working verify-execute loop.
+
+### `dream:20260830055549:4:a6197b`
+*30.08. 05:55 UTC · Quelle: dream*
+
+Contradiction detection and contradiction resolution are distinct capabilities; the system initially lacked the former.
+
+### `dream:20260830055549:3:43be42`
+*30.08. 05:55 UTC · Quelle: dream*
+
+Evolutionary refinement boosted contradiction-resolution score from 4/10 to 9/9/8 once critic identified missing contradiction-detection capability.
+
+### `dream:20260830055549:2:8b9ced`
+*30.08. 05:55 UTC · Quelle: dream*
+
+Nemotron-3-ultra succeeds consistently but with high latency variance (14-81s), requiring timeout-aware orchestration.
+
+### `dream:20260830055549:1:aacd59`
+*30.08. 05:55 UTC · Quelle: dream*
+
+Free-tier models (glm-5.2) consistently hit 429 rate limits making them unreliable for automated pipelines.
 
 ### `dream:20260830054928:5:5ca463`
 *30.08. 05:49 UTC · Quelle: dream*

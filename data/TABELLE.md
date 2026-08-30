@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 4795 Neuronen · 241734 bewertete Synapsen
+Stand: 4800 Neuronen · 242034 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,18 +12,18 @@ Stand: 4795 Neuronen · 241734 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 497 | 0.24 |
 | 2 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 496 | 0.23 |
-| 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 479 | 0.24 |
-| 4 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 459 | 0.24 |
+| 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 480 | 0.24 |
+| 4 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 460 | 0.24 |
 | 5 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 414 | 0.26 |
 | 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 414 | 0.26 |
-| 7 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 465 | 0.23 |
-| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 424 | 0.25 |
-| 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 413 | 0.25 |
+| 7 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 425 | 0.25 |
+| 8 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 465 | 0.23 |
+| 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 414 | 0.25 |
 | 10 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 430 | 0.24 |
 | 11 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 442 | 0.22 |
-| 12 | 💭 | Fallback to nvidia/nemotron-3-ultra-550b-a55b:free works but int… | 369 | 0.26 |
-| 13 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 374 | 0.26 |
-| 14 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 359 | 0.27 |
+| 12 | 💭 | Fallback to nvidia/nemotron-3-ultra-550b-a55b:free works but int… | 370 | 0.26 |
+| 13 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 360 | 0.27 |
+| 14 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 375 | 0.26 |
 | 15 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 398 | 0.24 |
 
 ## Die 15 stärksten Synapsen

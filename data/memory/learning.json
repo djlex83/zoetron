@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 05:50:03",
+ "stand": "2026-08-30 05:56:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,13 +51,13 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-abschließen.py",
+   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
+   "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
