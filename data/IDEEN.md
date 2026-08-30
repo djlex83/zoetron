@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 12:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The core artifact (33-line Python) runs but the critic flags incomplete implementation, indicating that 'running code' does not equal 'complete implem
+- Evolution search produced a dramatic jump from 3/10 to 8/10 across 3 variants, proving variant mutation is the highest-leverage improvement mechanism.
+- Calibration predicted 5 but actual was 3, revealing a systematic overconfidence in task feasibility that must be corrected.
+- inclusionai/ling-3.0-flash-fin is the only model that succeeds every call, though latency degrades from 5.5s to 10.5s as load increases.
+- Free-tier OpenRouter models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently hit 429 rate limits, making them unreliable under any concurrent load.
 - Models failing three times consecutively are auto-banned for 1800s, making proactive health checks more efficient than reactive retries.
 - The simulation-revision loop (verdict: revise → apply revisions → re-test) successfully converted a failing skill implementation into a working 33-lin
 - High stress (1.0) triggers conservation mode that caps tasks at 3 and iterations at 1, forcing minimal viable progress per cycle.
@@ -51,11 +56,6 @@
 - Hand actions fail when relative paths don't resolve under ZOETRON_DATA, revealing a path-resolution contract violation.
 - Dream and drive modules consistently hit 180s timeouts, suggesting their work exceeds allocated windows or they deadlock.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate hard rate limits that cascade into model blocks when fallbacks also time out.
-- Reflexive error-handling tools are effective for diagnosis but cannot mitigate external API exhaustion.
-- System resilience is directly tied to the ability to pivot immediately to a known-stable provider when others fail.
-- The occurrence of 404 errors demonstrates that model endpoint availability is volatile and requires proactive validation.
-- Frequent 429 errors across multiple providers indicate that free-tier rate limits are a systemic bottleneck rather than isolated failures.
-- Prune runs consistently yield zero pruned facts or events, suggesting stale data accumulation without effective cleanup.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7210 Fakten** · Stand 2026-08-30 11:54 UTC · aktualisiert bei jedem Herzschlag
+**7215 Fakten** · Stand 2026-08-30 12:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3495
+- **dream:** 3500
 - **swarm_artifact:** 1673
 - **last_swarm_critique:** 628
 - **anti_pattern:** 521
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830115939:5:579f59`
+*30.08. 11:59 UTC · Quelle: dream*
+
+The core artifact (33-line Python) runs but the critic flags incomplete implementation, indicating that 'running code' does not equal 'complete implementation'.
+
+### `dream:20260830115939:4:b1361f`
+*30.08. 11:59 UTC · Quelle: dream*
+
+Evolution search produced a dramatic jump from 3/10 to 8/10 across 3 variants, proving variant mutation is the highest-leverage improvement mechanism.
+
+### `dream:20260830115939:3:67e3a9`
+*30.08. 11:59 UTC · Quelle: dream*
+
+Calibration predicted 5 but actual was 3, revealing a systematic overconfidence in task feasibility that must be corrected.
+
+### `dream:20260830115939:2:ce5afd`
+*30.08. 11:59 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin is the only model that succeeds every call, though latency degrades from 5.5s to 10.5s as load increases.
+
+### `dream:20260830115939:1:352639`
+*30.08. 11:59 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently hit 429 rate limits, making them unreliable under any concurrent load.
 
 ### `dream:20260830115314:5:61783b`
 *30.08. 11:53 UTC · Quelle: dream*
