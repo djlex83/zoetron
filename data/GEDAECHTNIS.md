@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6843 Fakten** · Stand 2026-08-30 02:08 UTC · aktualisiert bei jedem Herzschlag
+**6848 Fakten** · Stand 2026-08-30 02:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3231
+- **dream:** 3236
 - **swarm_artifact:** 1625
 - **last_swarm_critique:** 618
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830021214:5:cfd64b`
+*30.08. 02:12 UTC · Quelle: dream*
+
+Swarm/reflex execution fails silently - the tool 'alte-schwarm-arbeiten-zu-ende-bringen.py' returns ok:false with no error detail, blocking skill-building goal.
+
+### `dream:20260830021214:4:f99123`
+*30.08. 02:12 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), preventing recovery actions from executing.
+
+### `dream:20260830021214:3:b6c0df`
+*30.08. 02:12 UTC · Quelle: dream*
+
+File/path resolution is broken in hand actions: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero-byte reads.
+
+### `dream:20260830021214:2:a3e294`
+*30.08. 02:12 UTC · Quelle: dream*
+
+The system lacks automatic fallback logic - it retries failed models instead of switching to the one proven working model.
+
+### `dream:20260830021214:1:fef0ba`
+*30.08. 02:12 UTC · Quelle: dream*
+
+Model reliability is the primary system bottleneck: 4/5 models fail consistently with 429 rate limits or 404 errors, only inclusionai/ling-3.0-flash-fin:free succeeds repeatedly.
 
 ### `dream:20260830020641:5:73b62c`
 *30.08. 02:06 UTC · Quelle: dream*
