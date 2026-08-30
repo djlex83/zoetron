@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 15:30:06",
+ "stand": "2026-08-30 15:37:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,6 +69,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -97,12 +103,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
@@ -213,7 +213,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.778,
+ "haende_quote": 0.782,
  "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 28,
@@ -222,8 +222,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 27,
-   "schnitt": 5.74
+   "n": 26,
+   "schnitt": 5.73
   },
   "bau": {
    "n": 1,

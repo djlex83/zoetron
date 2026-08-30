@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 15:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 15:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multi-model consensus requirement (2-of-3) cannot be met when only 1 model responds, causing silent stalls instead of explicit degradation.
+- System enters conserve mode (stress=1.0) with max_tasks=3, but no automatic model-fallback or circuit-breaker logic exists to reduce load.
+- Token-in/out ratios on the sole working model show 1.6x expansion (3612→5921), validating the truncation-risk guardrail proposal.
+- The skill-consolidation tool fails due to path resolution issues (relative paths vs. ZOETRON_DATA/env vars), breaking the meta-learning loop.
+- Free-tier models simultaneously hit rate limits (429 errors), creating a single-point-of-failure where 75% of the model pool becomes unavailable at on
 - All proposed skills react to observed failures rather than preventing them, showing a missing proactive resilience layer.
 - Token-in/token-out ratios diverge wildly (526→1577 vs 1458→1130), indicating inconsistent truncation or padding behavior across calls.
 - Only inclusionai/ling-3.0-flash-fin:free remained available under load, exposing provider capacity as a hidden system dependency.
@@ -51,11 +56,6 @@
 - Only inclusionai/ling-3.0-flash-fin:free delivered a successful response, creating a single-point-of-failure for the entire model pool.
 - The circuit breaker (3 strikes → 1800s block) prevents cascade failures but reacts too late to save the current goal attempt.
 - Free-tier models (glm, nemotron, gemma) consistently fail under load with 429/502 errors, making them unreliable as primary workers.
-- The fallback reflex to historical swarm-work tools also failed, showing that legacy knowledge repositories lack a reliable activation path when primar
-- Data-path resolution failures (hand_action reading nothing) silently halt all downstream analysis, revealing that path-validation is missing before an
-- Resource-conserve mode (stress=1.0, budget=1 iteration) forces the system into single-attempt execution, making any exploratory or multi-model strateg
-- The system proposes calibration corrections and quality gates but cannot execute them because the same infrastructure failures block every model from 
-- 429 rate-limit and 502 upstream-overload errors are the dominant failure mode across four different model providers, indicating a systemic request-thr
 
 ---
 

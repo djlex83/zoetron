@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7330 Fakten** · Stand 2026-08-30 15:30 UTC · aktualisiert bei jedem Herzschlag
+**7335 Fakten** · Stand 2026-08-30 15:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3570
+- **dream:** 3575
 - **swarm_artifact:** 1697
 - **last_swarm_critique:** 632
 - **anti_pattern:** 527
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830153609:5:4c2225`
+*30.08. 15:36 UTC · Quelle: dream*
+
+Multi-model consensus requirement (2-of-3) cannot be met when only 1 model responds, causing silent stalls instead of explicit degradation.
+
+### `dream:20260830153609:4:28e93e`
+*30.08. 15:36 UTC · Quelle: dream*
+
+System enters conserve mode (stress=1.0) with max_tasks=3, but no automatic model-fallback or circuit-breaker logic exists to reduce load.
+
+### `dream:20260830153609:3:266bcf`
+*30.08. 15:36 UTC · Quelle: dream*
+
+Token-in/out ratios on the sole working model show 1.6x expansion (3612→5921), validating the truncation-risk guardrail proposal.
+
+### `dream:20260830153609:2:e28926`
+*30.08. 15:36 UTC · Quelle: dream*
+
+The skill-consolidation tool fails due to path resolution issues (relative paths vs. ZOETRON_DATA/env vars), breaking the meta-learning loop.
+
+### `dream:20260830153609:1:d44d5a`
+*30.08. 15:36 UTC · Quelle: dream*
+
+Free-tier models simultaneously hit rate limits (429 errors), creating a single-point-of-failure where 75% of the model pool becomes unavailable at once.
 
 ### `dream:20260830152846:5:15e31b`
 *30.08. 15:28 UTC · Quelle: dream*
