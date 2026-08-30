@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,11 +29,11 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Liegende Marktanalysen abschließen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No goal-stack checkpointing exists, so any hard crash during a multi-cycle swarm loses all intermediate progress and requires full restart.
+- Thirty-five skill proposals accumulate unimplemented because no metabolic pressure forces promotion from idea to tested tool; the system dreams but do
+- Swarm executions evolve but stall at sub-threshold scores (6/10) because convergence criteria lack a minimum-quality gate, leaving goals perpetually '
+- Filesystem actions silently fail when inputs aren't normalized against ZOETRON_DATA and sys.argv[1], turning relative paths into zero-byte reads.
+- Free-tier model APIs exhibit correlated 429/502 failures that cascade into task abandonment unless a router tracks per-model health and auto-demotes f
 - poolside/laguna-s-2.1:free succeeds repeatedly at ~8s latency and high token throughput, marking it as the only stable free model.
 - Swarm execution stalls at 2 cycles with fixed 1-planner/3-builder/1-critic ratio and no convergence, suggesting insufficient iteration depth.
 - Calibration consistently underestimates effort by ~33% (predicted 4 vs actual 6), indicating a systematic planning bias.
@@ -51,11 +56,6 @@
 - The swarm goal 'Alte Marktanalysen verwerten' succeeded with a 248-line Python artifact, demonstrating that focused, bounded tasks yield reliable resu
 - nvidia/nemotron-3-ultra-550b-a55b:free shows increasing latency (53s to 171s) under sustained load, suggesting resource exhaustion without proper thro
 - Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limiting issues that cause cascading failures and should trigger automatic model fallback
-- Circuit-breaker logic with health tracking can prevent cascading failures from degraded models.
-- Critical-path tasks require reserved capacity to avoid blocking on rate-limited or failing models.
-- Token efficiency varies significantly across models, justifying dynamic model selection based on input/output cost patterns.
-- nvidia/nemotron-3-ultra-550b-a55b:free consistently succeeds with acceptable latency, making it a reliable fallback.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting as a systemic failure point requiring proactive routing.
 
 ---
 

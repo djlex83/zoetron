@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7545 Fakten** · Stand 2026-08-30 22:08 UTC · aktualisiert bei jedem Herzschlag
+**7550 Fakten** · Stand 2026-08-30 22:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3720
+- **dream:** 3725
 - **swarm_artifact:** 1733
 - **last_swarm_critique:** 638
 - **anti_pattern:** 535
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830221304:5:4a7b3a`
+*30.08. 22:13 UTC · Quelle: dream*
+
+No goal-stack checkpointing exists, so any hard crash during a multi-cycle swarm loses all intermediate progress and requires full restart.
+
+### `dream:20260830221304:4:8c8c7f`
+*30.08. 22:13 UTC · Quelle: dream*
+
+Thirty-five skill proposals accumulate unimplemented because no metabolic pressure forces promotion from idea to tested tool; the system dreams but doesn't build.
+
+### `dream:20260830221304:3:727ddd`
+*30.08. 22:13 UTC · Quelle: dream*
+
+Swarm executions evolve but stall at sub-threshold scores (6/10) because convergence criteria lack a minimum-quality gate, leaving goals perpetually 'in progress'.
+
+### `dream:20260830221304:2:6c2415`
+*30.08. 22:13 UTC · Quelle: dream*
+
+Filesystem actions silently fail when inputs aren't normalized against ZOETRON_DATA and sys.argv[1], turning relative paths into zero-byte reads.
+
+### `dream:20260830221304:1:d6a802`
+*30.08. 22:13 UTC · Quelle: dream*
+
+Free-tier model APIs exhibit correlated 429/502 failures that cascade into task abandonment unless a router tracks per-model health and auto-demotes flaky endpoints.
 
 ### `dream:20260830220637:5:5c56dc`
 *30.08. 22:06 UTC · Quelle: dream*
