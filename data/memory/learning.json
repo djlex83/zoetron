@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 07:56:57",
+ "stand": "2026-08-30 08:17:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -75,6 +75,12 @@
    "quote": 0.0
   },
   {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 4,
+   "erfolge": 3,
+   "quote": 0.75
+  },
+  {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -85,12 +91,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 3,
-   "erfolge": 2,
-   "quote": 0.667
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -222,7 +222,7 @@
  "haende_quote": 0.809,
  "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 29,
+  "n": 28,
   "best": 9.0,
   "schnitt": 5.93
  },

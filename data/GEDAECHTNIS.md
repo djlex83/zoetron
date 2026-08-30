@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7111 Fakten** · Stand 2026-08-30 07:57 UTC · aktualisiert bei jedem Herzschlag
+**7116 Fakten** · Stand 2026-08-30 08:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3441
+- **dream:** 3446
 - **swarm_artifact:** 1653
 - **last_swarm_critique:** 624
 - **anti_pattern:** 515
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830081606:5:8a7ce9`
+*30.08. 08:16 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ failures despite external API degradation, indicating that internal system health remains stable under external stress.
+
+### `dream:20260830081606:4:1dc009`
+*30.08. 08:16 UTC · Quelle: dream*
+
+Reflex-based execution successfully handles routine maintenance tasks like goal updates without consuming full deliberation cycles, confirming the reflex architecture's efficiency.
+
+### `dream:20260830081606:3:996b9d`
+*30.08. 08:16 UTC · Quelle: dream*
+
+Memory gaps ('Blinden Fleck') are actively flagged when insufficient domain experience exists, signaling where targeted exploration drives should be spawned.
+
+### `dream:20260830081606:2:e67475`
+*30.08. 08:16 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin serves as a reliable anchor model with consistent ~10.8s latency, making it the natural fallback target in any resilient call chain.
+
+### `dream:20260830081606:1:d17ee6`
+*30.08. 08:16 UTC · Quelle: dream*
+
+429 rate limiting is a systemic failure mode hitting multiple free-tier models simultaneously, requiring architectural resilience rather than model-specific workarounds.
 
 ### `tool:fähigkeitsvorschläge-in-echte-skills-ums`
 *30.08. 07:56 UTC · Quelle: hands*

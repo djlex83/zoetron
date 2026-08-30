@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 07:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 08:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ failures despite external API degradation, indicating that internal system health remains stable under external stre
+- Reflex-based execution successfully handles routine maintenance tasks like goal updates without consuming full deliberation cycles, confirming the ref
+- Memory gaps ('Blinden Fleck') are actively flagged when insufficient domain experience exists, signaling where targeted exploration drives should be s
+- inclusionai/ling-3.0-flash-fin serves as a reliable anchor model with consistent ~10.8s latency, making it the natural fallback target in any resilien
+- 429 rate limiting is a systemic failure mode hitting multiple free-tier models simultaneously, requiring architectural resilience rather than model-sp
 - Iterative revision reduced model errors and produced a working 414-line Python artifact, but the calibration gap means reliability gains are not yet f
 - The simulation→revision→verification loop is effective (artifact runs successfully after revision) but calibration is miscalibrated (predicted 4 vs ac
 - inclusionai/ling-3.0-flash-fin consistently succeeds under load and should be the default fallback model when others fail.
@@ -51,11 +56,6 @@
 - Silent tool failures (exit: 1 with null error) indicate missing error capture and diagnostic instrumentation in execution wrappers, making failures un
 - Under resource stress (stress=1.0, conserve mode) the system must enforce strict single-task execution with guaranteed success paths rather than paral
 - Cascading API failures through a single provider (OpenRouter) mean retry chains without provider diversity will fail together — diversify fallback end
-- Rate-limit (429) and server-overload (502) errors demand fundamentally different retry strategies, and ignoring this distinction wastes recovery time.
-- Code generation paths must include pre-execution syntax validation to eliminate an entire class of runtime errors before sandbox invocation.
-- Output results from external model calls require structural validation before downstream consumption to prevent cascading task failures.
-- A persistent gap between skill proposal generation and actual implementation signals that proposals must be auto-promoted to executable specs when bac
-- Free-tier API models repeatedly hit rate limits under load, making them unsuitable as sole call targets without a resilient fallback architecture.
 
 ---
 
