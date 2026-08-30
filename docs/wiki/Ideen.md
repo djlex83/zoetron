@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No calibration data exists per (task_type, model, context_size), so model selection remains naive and unreproducible.
+- Self-diagnosis consistently reports zero findings, suggesting the diagnostic depth is insufficient to catch real systemic issues.
+- Skill proposals accumulate across cycles but are never verified as implemented, creating a persistent gap between suggestion and capability.
+- The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits extreme latency variance (14s to 48s), indicating no latency budget enfor
+- The z-ai/glm-5.2:free model repeatedly hits 429 rate limits without any automatic recovery, making it an unreliable primary choice.
 - Drive goals explicitly target the observed failure patterns (model errors, unimplemented proposals, routing-benchmark disconnect) but remain as signal
 - No pruning occurs (0 facts/events pruned across cycles), suggesting memory growth is unchecked and may degrade performance over time.
 - Self-diagnosis reports zero organ errors while model failures persist, indicating the diagnostic scope excludes external API health and routing logic.
@@ -51,11 +56,6 @@
 - Local-first execution of registered reflex tools eliminates unnecessary model calls and reduces failure surface.
 - High latency variance (9-150s) in working models requires adaptive timeouts rather than fixed thresholds.
 - Rate-limited models (429 errors) must be quarantined immediately to prevent cascade failures across dependent tasks.
-- The system enters 'conserve' mode under stress with severely limited parallelism, so resource-aware task scheduling is critical for reliability.
-- Scripts can execute without actually operating on real data (path validation failures), so effect verification is mandatory after any tool run.
-- Knowledge base contradictions lead to incorrect conclusions and must be actively detected and resolved before they propagate.
-- Stale swarm work items accumulate and block new insights — regular cleanup cycles are required to prevent knowledge debt.
-- API rate limiting (429) is the dominant systemic failure mode across nearly all models, making a ranked fallback chain with rate-aware scheduling esse
 
 ---
 

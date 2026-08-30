@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6951 Fakten** · Stand 2026-08-30 04:08 UTC · aktualisiert bei jedem Herzschlag
+**6956 Fakten** · Stand 2026-08-30 04:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3321
+- **dream:** 3326
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830041219:5:91d9be`
+*30.08. 04:12 UTC · Quelle: dream*
+
+No calibration data exists per (task_type, model, context_size), so model selection remains naive and unreproducible.
+
+### `dream:20260830041219:4:9bd745`
+*30.08. 04:12 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero findings, suggesting the diagnostic depth is insufficient to catch real systemic issues.
+
+### `dream:20260830041219:3:d0e913`
+*30.08. 04:12 UTC · Quelle: dream*
+
+Skill proposals accumulate across cycles but are never verified as implemented, creating a persistent gap between suggestion and capability.
+
+### `dream:20260830041219:2:97d67a`
+*30.08. 04:12 UTC · Quelle: dream*
+
+The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits extreme latency variance (14s to 48s), indicating no latency budget enforcement.
+
+### `dream:20260830041219:1:dc9c9f`
+*30.08. 04:12 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model repeatedly hits 429 rate limits without any automatic recovery, making it an unreliable primary choice.
 
 ### `dream:20260830040746:5:b9454a`
 *30.08. 04:07 UTC · Quelle: dream*
