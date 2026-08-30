@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit-breaker logic is missing: after 3 consecutive 429s the model should be quarantined for a cooldown period instead of immediate retry.
+- Model health state (latency, error rates, ban status) evaporates each session because no persistent store survives restarts.
+- Convergence detection works in reflex mode (act_done.converged=true) but is absent from swarm loops, burning compute on plateaued optimization.
+- Skill proposals accumulate but never graduate to registered, executable capabilities because registration lacks enforcement of verifiable outputs.
+- Repeated 429 errors on z-ai/glm-5.2:free show that reactive fallback wastes 60+ seconds per failure before switching models.
 - Self-diagnosis reports zero organ errors while the model organ suffers repeated 429 failures, revealing a monitoring blind spot: health checks ignore 
 - Drive goals repeat identically across cycles (stale analyses, simulation gaps, error diagnosis, skill adoption) indicating no closure mechanism conver
 - Five prior skill proposals addressing model routing, backoff, circuit-breakers, local-first policy, and error-type calibration remain unimplemented, c
@@ -51,11 +56,6 @@
 - Skill proposals accumulate faster than implementation (5 proposals generated in one session), creating a meta-backlog that mirrors the original work s
 - Reflex tools consistently converge stale goals (market analysis, skill activation) where deliberative planning stalls, showing that targeted micro-scr
 - A single unreliable model (z-ai/glm-5.2:free) repeatedly fails with 429 errors while a slower fallback succeeds, proving that model diversity without 
-- Memory pruning is currently inactive with zero facts and events pruned, suggesting a need to adjust pruning thresholds or retention policies.
-- There is a persistent gap between generating skill proposals and actually implementing them, requiring a dedicated build pipeline.
-- Reflexes are effectively resolving stale drive goals like market analysis cleanup, but the core analytical task remains unfinished.
-- Fallback to nvidia/nemotron-3-ultra-550b-a55b:free is successful but incurs high latency (up to 39 seconds), indicating a need for faster backup model
-- The z-ai/glm-5.2:free model is chronically rate-limited with 429 errors and should be temporarily disabled or heavily throttled.
 
 ---
 

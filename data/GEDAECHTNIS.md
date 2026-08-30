@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6888 Fakten** · Stand 2026-08-30 02:51 UTC · aktualisiert bei jedem Herzschlag
+**6902 Fakten** · Stand 2026-08-30 03:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3276
-- **swarm_artifact:** 1625
-- **last_swarm_critique:** 618
+- **dream:** 3281
+- **swarm_artifact:** 1631
+- **last_swarm_critique:** 619
 - **anti_pattern:** 507
-- **last_swarm_goal:** 367
+- **last_swarm_goal:** 368
 - **strategy:** 274
 - **hand_result:** 79
-- **tool:** 72
+- **tool:** 73
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:veraltetes-wissen-auffrischen-und-prüfen`
+*30.08. 03:00 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltetes Wissen auffrischen und prüfen'. Datei: data/tools/veraltetes-wissen-auffrischen-und-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*30.08. 03:00 UTC · Quelle: critic*
+
+score=9; issues=Artifact 1 docstring claims to use zoetron.memory/zoetron.graph but implements direct file I/O instead; Artifact 3 uses fcntl.flock for locking which is Unix-only (not Windows compatible); Artifact 2 heuristic fallback uses dateutil.parser with
+
+### `last_swarm_goal`
+*30.08. 02:56 UTC · Quelle: system*
+
+Veraltetes Wissen auffrischen und prüfen
+
+### `dream:20260830025549:5:655760`
+*30.08. 02:55 UTC · Quelle: dream*
+
+Circuit-breaker logic is missing: after 3 consecutive 429s the model should be quarantined for a cooldown period instead of immediate retry.
+
+### `dream:20260830025549:4:aa0a4f`
+*30.08. 02:55 UTC · Quelle: dream*
+
+Model health state (latency, error rates, ban status) evaporates each session because no persistent store survives restarts.
+
+### `dream:20260830025549:3:0d6ec3`
+*30.08. 02:55 UTC · Quelle: dream*
+
+Convergence detection works in reflex mode (act_done.converged=true) but is absent from swarm loops, burning compute on plateaued optimization.
+
+### `dream:20260830025549:2:55135b`
+*30.08. 02:55 UTC · Quelle: dream*
+
+Skill proposals accumulate but never graduate to registered, executable capabilities because registration lacks enforcement of verifiable outputs.
+
+### `dream:20260830025549:1:095927`
+*30.08. 02:55 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free show that reactive fallback wastes 60+ seconds per failure before switching models.
 
 ### `dream:20260830025036:5:bfde83`
 *30.08. 02:50 UTC · Quelle: dream*
