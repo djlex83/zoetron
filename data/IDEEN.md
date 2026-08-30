@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 18:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System self-diagnosis reports no organ failures, confirming internal stability despite external model errors.
+- Market analysis outputs are stale and unused, pointing to a failure in downstream integration or value extraction.
+- Skill proposals remain unimplemented despite repeated collection, suggesting a gap between idea generation and actionable deployment.
+- Reflex-based goal completion (e.g., Träume in echte Fähigkeiten verwandeln) consistently converges when tools execute successfully, indicating reliabl
+- Model failures (429/502) on z-ai/glm-5.2:free are recurring and degrade system performance, requiring automatic fallback to healthy models.
 - Reflex-driven skill extraction from dreams and ideas works reliably and should be the default path for converting raw insights into reusable abilities
 - Model latency varies enormously (10s vs 167s), so naive round-robin routing wastes time and increases failure risk on slow or overloaded endpoints.
 - Stale artifacts (old market analyses, unused results) accumulate silently because no mechanism flags or refreshes them, leaving valuable knowledge dor
@@ -51,11 +56,6 @@
 - Truncated or invalid model outputs silently corrupt downstream processing, so output-token validation against input-token ratios is a necessary guardr
 - Rate-limit and service-overload errors recur across multiple providers simultaneously, indicating that no single free model can be trusted as a primar
 - Free-tier API models are systematically unreliable due to rate limits (429) and upstream overload (502), requiring defensive per-model circuit-breakin
-- The reflex system converges reliably when a model is available, proving the internal logic is sound — the bottleneck is entirely external infrastructu
-- Proposed skills (model-router, promotion pipeline, pruning scheduler) are well-targeted but remain unvalidated artifacts; they must be smoke-tested be
-- Latency spans from 7s to 77s across successful calls, but no latency-budget guard exists to route slow calls to async mode and protect responsiveness.
-- The fallback chain retries failed providers immediately without cooldown, amplifying rate-limit exhaustion instead of allowing recovery windows.
-- All model failures trace to a shared OpenRouter API gateway, so provider diversity alone cannot prevent cascading 429/502 errors when the gateway is r
 
 ---
 

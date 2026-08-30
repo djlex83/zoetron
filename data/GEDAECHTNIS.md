@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7413 Fakten** · Stand 2026-08-30 17:53 UTC · aktualisiert bei jedem Herzschlag
+**7418 Fakten** · Stand 2026-08-30 18:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3640
+- **dream:** 3645
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830180053:5:edd8fd`
+*30.08. 18:00 UTC · Quelle: dream*
+
+System self-diagnosis reports no organ failures, confirming internal stability despite external model errors.
+
+### `dream:20260830180053:4:18769b`
+*30.08. 18:00 UTC · Quelle: dream*
+
+Market analysis outputs are stale and unused, pointing to a failure in downstream integration or value extraction.
+
+### `dream:20260830180053:3:f96c9c`
+*30.08. 18:00 UTC · Quelle: dream*
+
+Skill proposals remain unimplemented despite repeated collection, suggesting a gap between idea generation and actionable deployment.
+
+### `dream:20260830180053:2:905e90`
+*30.08. 18:00 UTC · Quelle: dream*
+
+Reflex-based goal completion (e.g., Träume in echte Fähigkeiten verwandeln) consistently converges when tools execute successfully, indicating reliable self-improvement loops.
+
+### `dream:20260830180053:1:b64e15`
+*30.08. 18:00 UTC · Quelle: dream*
+
+Model failures (429/502) on z-ai/glm-5.2:free are recurring and degrade system performance, requiring automatic fallback to healthy models.
 
 ### `dream:20260830175229:5:3708ab`
 *30.08. 17:52 UTC · Quelle: dream*
