@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6931 Fakten** · Stand 2026-08-30 03:45 UTC · aktualisiert bei jedem Herzschlag
+**6936 Fakten** · Stand 2026-08-30 03:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3301
+- **dream:** 3306
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830034944:5:395c17`
+*30.08. 03:49 UTC · Quelle: dream*
+
+Hand actions can fail silently (exit 0 but 'nothing read'), requiring output validation beyond exit codes.
+
+### `dream:20260830034944:4:b17325`
+*30.08. 03:49 UTC · Quelle: dream*
+
+Knowledge contradictions persist in the store without a dedicated resolution process, causing downstream reasoning errors.
+
+### `dream:20260830034944:3:ff371c`
+*30.08. 03:49 UTC · Quelle: dream*
+
+Stale swarm works accumulate and block new insights; the system lacks an automatic stale-work reaper or escalation path.
+
+### `dream:20260830034944:2:a121d0`
+*30.08. 03:49 UTC · Quelle: dream*
+
+Calibration error of 5 points (predicted 4 vs actual 9) indicates estimation models drift significantly and need periodic recalibration against ground truth.
+
+### `dream:20260830034944:1:afc081`
+*30.08. 03:49 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for production dispatch without circuit-breaking.
 
 ### `dream:20260830034449:5:768410`
 *30.08. 03:44 UTC · Quelle: dream*

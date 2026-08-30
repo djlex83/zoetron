@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions can fail silently (exit 0 but 'nothing read'), requiring output validation beyond exit codes.
+- Knowledge contradictions persist in the store without a dedicated resolution process, causing downstream reasoning errors.
+- Stale swarm works accumulate and block new insights; the system lacks an automatic stale-work reaper or escalation path.
+- Calibration error of 5 points (predicted 4 vs actual 9) indicates estimation models drift significantly and need periodic recalibration against ground
+- Model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for production dispatch without circuit-breaking.
 - Knowledge-refresh tasks needed 3 revision cycles and carried 5 risks, proving that iterative validation loops are mandatory for data-curation work.
 - Task duration calibration error of 125% (predicted 4 vs actual 9) reveals broken estimation, requiring empirical baseline tracking.
 - High stress (1.0) and conserve-mode budgets correlate with cascading model failures, indicating need for load-shedding before saturation.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate but lack verification gates; no mechanism confirms a skill was actually learned and registered.
 - Relative path resolution breaks hand actions when ZOETRON_DATA and sys.argv[1] diverge; absolute canonical paths are required.
 - Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
-- No circuit breaker or model health tracking exists, causing repeated hammering of a rate-limited endpoint instead of graceful degradation.
-- Skill proposals accumulate (7+ in this session) but only one reflex tool was actually invoked, revealing a proposal-to-implementation gap that stalls 
-- Local-first reflex execution (hand_action) completes in 0.25s with zero errors, proving deterministic tools outperform probabilistic model calls for k
-- Fallback to nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (15-45s), making it unreliable for time-sensitive operations without t
-- The z-ai/glm-5.2:free model consistently returns 429 errors (rate limiting) across multiple attempts, indicating it should be permanently deprioritize
 
 ---
 
