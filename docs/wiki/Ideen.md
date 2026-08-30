@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 18:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 18:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals must be validated through dry-run integration tests before deployment to avoid introducing broken or incompatible skill chains.
+- Stress-aware scheduling must degrade gracefully by dropping low-priority goals and limiting iterations when system stress exceeds a threshold.
+- Token output validation is critical because rate-limited models often return truncated or empty responses that appear successful but are unusable.
+- Models that fail consecutively should be temporarily blacklisted with exponential backoff to prevent cascading failures and wasted retries.
+- Repeated 429 and 502 errors across multiple models indicate systemic rate-limiting and upstream overload, not isolated model failures.
 - Context pruning ran but removed zero facts, suggesting the minimum threshold is set too high or scoring weights are miscalibrated.
 - Multiple skill proposals for routing, latency budgets, and promotion pipelines exist but remain unimplemented due to missing execution trigger.
 - Successful model latencies (7.8-9.1s) exceed typical interactive thresholds, necessitating async fallback for time-sensitive tasks.
@@ -51,11 +56,6 @@
 - Models with lower token output (e.g., 492) still succeed under load, implying input-heavy tasks are more resilient.
 - 502 upstream errors from Nvidia occur independently of 429s, suggesting provider-side overload requiring fallback.
 - 429 errors cluster at peak load timestamps, indicating rate-limit exhaustion rather than model failure.
-- System self-diagnosis reports no organ failures, confirming internal stability despite external model errors.
-- Market analysis outputs are stale and unused, pointing to a failure in downstream integration or value extraction.
-- Skill proposals remain unimplemented despite repeated collection, suggesting a gap between idea generation and actionable deployment.
-- Reflex-based goal completion (e.g., Träume in echte Fähigkeiten verwandeln) consistently converges when tools execute successfully, indicating reliabl
-- Model failures (429/502) on z-ai/glm-5.2:free are recurring and degrade system performance, requiring automatic fallback to healthy models.
 
 ---
 

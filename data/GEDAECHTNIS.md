@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7428 Fakten** · Stand 2026-08-30 18:18 UTC · aktualisiert bei jedem Herzschlag
+**7433 Fakten** · Stand 2026-08-30 18:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3655
+- **dream:** 3660
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830182215:5:602103`
+*30.08. 18:22 UTC · Quelle: dream*
+
+Skill proposals must be validated through dry-run integration tests before deployment to avoid introducing broken or incompatible skill chains.
+
+### `dream:20260830182215:4:8c3f0d`
+*30.08. 18:22 UTC · Quelle: dream*
+
+Stress-aware scheduling must degrade gracefully by dropping low-priority goals and limiting iterations when system stress exceeds a threshold.
+
+### `dream:20260830182215:3:499776`
+*30.08. 18:22 UTC · Quelle: dream*
+
+Token output validation is critical because rate-limited models often return truncated or empty responses that appear successful but are unusable.
+
+### `dream:20260830182215:2:bda3c3`
+*30.08. 18:22 UTC · Quelle: dream*
+
+Models that fail consecutively should be temporarily blacklisted with exponential backoff to prevent cascading failures and wasted retries.
+
+### `dream:20260830182215:1:f3a11a`
+*30.08. 18:22 UTC · Quelle: dream*
+
+Repeated 429 and 502 errors across multiple models indicate systemic rate-limiting and upstream overload, not isolated model failures.
 
 ### `dream:20260830181657:5:fdb598`
 *30.08. 18:16 UTC · Quelle: dream*

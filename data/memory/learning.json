@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 18:17:41",
+ "stand": "2026-08-30 18:22:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -111,12 +111,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-gezielt-trainieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-endlich-umsetzen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -205,6 +199,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeiten-gezielt-trainieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
