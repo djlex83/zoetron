@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7205 Fakten** · Stand 2026-08-30 11:49 UTC · aktualisiert bei jedem Herzschlag
+**7210 Fakten** · Stand 2026-08-30 11:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3490
+- **dream:** 3495
 - **swarm_artifact:** 1673
 - **last_swarm_critique:** 628
 - **anti_pattern:** 521
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830115314:5:61783b`
+*30.08. 11:53 UTC · Quelle: dream*
+
+Models failing three times consecutively are auto-banned for 1800s, making proactive health checks more efficient than reactive retries.
+
+### `dream:20260830115314:4:c73953`
+*30.08. 11:53 UTC · Quelle: dream*
+
+The simulation-revision loop (verdict: revise → apply revisions → re-test) successfully converted a failing skill implementation into a working 33-line Python artifact.
+
+### `dream:20260830115314:3:cac2e6`
+*30.08. 11:53 UTC · Quelle: dream*
+
+High stress (1.0) triggers conservation mode that caps tasks at 3 and iterations at 1, forcing minimal viable progress per cycle.
+
+### `dream:20260830115314:2:2bfb7c`
+*30.08. 11:53 UTC · Quelle: dream*
+
+Relative path references fail in hand actions; all file operations must resolve absolute paths via ZOETRON_DATA and sys.argv[1] before execution.
+
+### `dream:20260830115314:1:acbf48`
+*30.08. 11:53 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits, requiring a pre-validated fallback chain with health tracking to maintain throughput.
 
 ### `dream:20260830114804:5:325743`
 *30.08. 11:48 UTC · Quelle: dream*

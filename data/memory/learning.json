@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-30 11:48:39",
+ "stand": "2026-08-30 11:53:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "laeufe": 12,
+   "erfolge": 12,
    "quote": 1.0
   },
   {

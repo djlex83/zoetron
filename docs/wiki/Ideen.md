@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Models failing three times consecutively are auto-banned for 1800s, making proactive health checks more efficient than reactive retries.
+- The simulation-revision loop (verdict: revise → apply revisions → re-test) successfully converted a failing skill implementation into a working 33-lin
+- High stress (1.0) triggers conservation mode that caps tasks at 3 and iterations at 1, forcing minimal viable progress per cycle.
+- Relative path references fail in hand actions; all file operations must resolve absolute paths via ZOETRON_DATA and sys.argv[1] before execution.
+- Free-tier models consistently hit 429 rate limits, requiring a pre-validated fallback chain with health tracking to maintain throughput.
 - Prune runs remove zero facts/events, meaning retention policy is ineffective or data is already minimal.
 - Metabolism stress=1.0 triggers conserve mode (max_tasks=3), starving the swarm started for skill implementation.
 - Hand actions fail when relative paths don't resolve under ZOETRON_DATA, revealing a path-resolution contract violation.
@@ -51,11 +56,6 @@
 - The occurrence of 404 errors demonstrates that model endpoint availability is volatile and requires proactive validation.
 - Frequent 429 errors across multiple providers indicate that free-tier rate limits are a systemic bottleneck rather than isolated failures.
 - Prune runs consistently yield zero pruned facts or events, suggesting stale data accumulation without effective cleanup.
-- The system generates high-quality skill proposals from failures but has not yet closed the loop by implementing them as permanent capabilities.
-- Reflex-based recovery mechanisms effectively converge on solutions but are purely reactive, lacking preventive guards to avoid failures in the first p
-- Model provider failures (429 rate limits and 404s) are systemic rather than isolated, with multiple providers failing simultaneously and only one fall
-- Dream module consistently times out at exactly 180 seconds across three consecutive cycles, indicating a structural bottleneck that blocks the entire 
-- The adaptive rate limiter and unified model executor proposed earlier remain unimplemented, and their absence is the root cause of the ongoing 429 spi
 
 ---
 
