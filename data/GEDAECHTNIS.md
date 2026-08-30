@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7367 Fakten** · Stand 2026-08-30 16:42 UTC · aktualisiert bei jedem Herzschlag
+**7372 Fakten** · Stand 2026-08-30 16:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3595
+- **dream:** 3600
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830164649:5:38bc2e`
+*30.08. 16:46 UTC · Quelle: dream*
+
+Drive goals persist (market analysis, model reliability) without measurable progress signals, indicating missing success criteria and checkpointing.
+
+### `dream:20260830164649:4:7e233f`
+*30.08. 16:46 UTC · Quelle: dream*
+
+Zero pruned facts/events across cycles suggests the retention policy is too conservative, bloating context without improving recall.
+
+### `dream:20260830164649:3:01bd83`
+*30.08. 16:46 UTC · Quelle: dream*
+
+Reflex-mode convergence on skill-implementation goals shows the system can execute procedural knowledge but lacks a mechanism to promote successful reflexes into permanent skills.
+
+### `dream:20260830164649:2:74c86c`
+*30.08. 16:46 UTC · Quelle: dream*
+
+Fallback model latency (46-81s) exceeds acceptable thresholds for interactive loops, making async queuing or cached responses necessary.
+
+### `dream:20260830164649:1:91c949`
+*30.08. 16:46 UTC · Quelle: dream*
+
+Recurring 429 errors from a single provider indicate rate-limit saturation, not transient faults, requiring architectural routing changes rather than retries.
 
 ### `dream:20260830164015:5:9a680e`
 *30.08. 16:40 UTC · Quelle: dream*
