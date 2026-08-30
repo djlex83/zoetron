@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 18:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 19:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
-- Modell-Fehler systematisch reduzieren und verstehen *(wieder aufgegriffen: 2×)*
+- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite repeated 429 failures, revealing a blind spot in health monitoring for external API degradation.
+- Pruning runs remove zero facts/events, indicating either stale-data detection is too conservative or consolidation isn't producing prunable artifacts.
+- Simulation-to-practice effort estimates are systematically underestimated by ~2x, causing repeated timeline overruns.
+- Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) consistently converge goals without LLM calls, proving local heuristics can replace 
+- 429 rate-limit errors cascade across all non-Poolside models, making single-model reliance a systemic fragility.
 - Self-diagnosis consistently reports no organ failures, indicating stable internal system health despite external API throttling.
 - Repeated 429 errors across multiple models in the same timeframe suggest a need for coordinated rate-limit management rather than individual model ret
 - Reflex actions can successfully converge on goals like 'Vergessene Analyseergebnisse nutzen' with minimal duration (0.18s) and exit code 0.
@@ -51,11 +56,6 @@
 - Working artifacts must be snapshotted before evolution cycles to prevent irreversible regressions during iterative improvement.
 - Simulation-to-practice effort estimation consistently underestimates by ~100%, revealing a structural bias in planning heuristics.
 - Rate-limited model failures (429 errors) are systemic across multiple providers, indicating a need for resilient routing rather than individual model 
-- Skill proposals must be validated through dry-run integration tests before deployment to avoid introducing broken or incompatible skill chains.
-- Stress-aware scheduling must degrade gracefully by dropping low-priority goals and limiting iterations when system stress exceeds a threshold.
-- Token output validation is critical because rate-limited models often return truncated or empty responses that appear successful but are unusable.
-- Models that fail consecutively should be temporarily blacklisted with exponential backoff to prevent cascading failures and wasted retries.
-- Repeated 429 and 502 errors across multiple models indicate systemic rate-limiting and upstream overload, not isolated model failures.
 
 ---
 

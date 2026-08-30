@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7454 Fakten** · Stand 2026-08-30 18:42 UTC · aktualisiert bei jedem Herzschlag
+**7459 Fakten** · Stand 2026-08-30 19:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3670
+- **dream:** 3675
 - **swarm_artifact:** 1709
 - **last_swarm_critique:** 634
 - **anti_pattern:** 531
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830193321:5:30c093`
+*30.08. 19:33 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated 429 failures, revealing a blind spot in health monitoring for external API degradation.
+
+### `dream:20260830193321:4:ea6ab1`
+*30.08. 19:33 UTC · Quelle: dream*
+
+Pruning runs remove zero facts/events, indicating either stale-data detection is too conservative or consolidation isn't producing prunable artifacts.
+
+### `dream:20260830193321:3:34824b`
+*30.08. 19:33 UTC · Quelle: dream*
+
+Simulation-to-practice effort estimates are systematically underestimated by ~2x, causing repeated timeline overruns.
+
+### `dream:20260830193321:2:5bdff1`
+*30.08. 19:33 UTC · Quelle: dream*
+
+Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) consistently converge goals without LLM calls, proving local heuristics can replace fragile API dependencies.
+
+### `dream:20260830193321:1:0491f3`
+*30.08. 19:33 UTC · Quelle: dream*
+
+429 rate-limit errors cascade across all non-Poolside models, making single-model reliance a systemic fragility.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Marktanalyse endlich abs:2`
 *30.08. 18:41 UTC · Quelle: evolution*
