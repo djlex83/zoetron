@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7196 Fakten** · Stand 2026-08-30 11:35 UTC · aktualisiert bei jedem Herzschlag
+**7200 Fakten** · Stand 2026-08-30 11:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3481
+- **dream:** 3485
 - **swarm_artifact:** 1673
 - **last_swarm_critique:** 628
 - **anti_pattern:** 521
@@ -19,6 +19,26 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830114237:4:bead9a`
+*30.08. 11:42 UTC · Quelle: dream*
+
+Reflexive error-handling tools are effective for diagnosis but cannot mitigate external API exhaustion.
+
+### `dream:20260830114237:3:892f6d`
+*30.08. 11:42 UTC · Quelle: dream*
+
+System resilience is directly tied to the ability to pivot immediately to a known-stable provider when others fail.
+
+### `dream:20260830114237:2:a97b7a`
+*30.08. 11:42 UTC · Quelle: dream*
+
+The occurrence of 404 errors demonstrates that model endpoint availability is volatile and requires proactive validation.
+
+### `dream:20260830114237:1:5a1212`
+*30.08. 11:42 UTC · Quelle: dream*
+
+Frequent 429 errors across multiple providers indicate that free-tier rate limits are a systemic bottleneck rather than isolated failures.
 
 ### `dream:20260830113438:5:d32fe1`
 *30.08. 11:34 UTC · Quelle: dream*

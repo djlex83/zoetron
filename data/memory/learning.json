@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 11:35:05",
+ "stand": "2026-08-30 11:43:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,15 +15,15 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 11,
    "erfolge": 11,
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -63,6 +63,12 @@
    "quote": 1.0
   },
   {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 4,
    "erfolge": 3,
@@ -72,12 +78,6 @@
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {

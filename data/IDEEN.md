@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,10 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflexive error-handling tools are effective for diagnosis but cannot mitigate external API exhaustion.
+- System resilience is directly tied to the ability to pivot immediately to a known-stable provider when others fail.
+- The occurrence of 404 errors demonstrates that model endpoint availability is volatile and requires proactive validation.
+- Frequent 429 errors across multiple providers indicate that free-tier rate limits are a systemic bottleneck rather than isolated failures.
 - Prune runs consistently yield zero pruned facts or events, suggesting stale data accumulation without effective cleanup.
 - The system generates high-quality skill proposals from failures but has not yet closed the loop by implementing them as permanent capabilities.
 - Reflex-based recovery mechanisms effectively converge on solutions but are purely reactive, lacking preventive guards to avoid failures in the first p
@@ -52,10 +56,6 @@
 - Silent path-resolution failures (exit 0, no file touched) mask real errors when relative paths aren't resolved against ZOETRON_DATA, causing hand acti
 - The z-ai/glm-5.2:free model fails with 429 on every call (~8s intervals), creating a persistent failure source that should be deprioritized or placed 
 - Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), so planners must throttle ambition to match budget.
-- The reflex tool "alte-erinnerungen-auf-wert-prüfen.py" failed to validate market-analysis memories, indicating a broken retrieval contract.
-- Hand actions fail when using relative paths; all file operations must resolve against ZOETRON_DATA or sys.argv[1].
-- The working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high latency (54–176 s) requiring timeout guards and fallback budgets.
-- Model "z-ai/glm-5.2:free" consistently returns 429 rate-limit errors and should be excluded from the routing pool.
 
 ---
 
