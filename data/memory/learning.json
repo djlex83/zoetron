@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 13:40:15",
+ "stand": "2026-08-30 13:54:15",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,13 +22,13 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 8,
+   "laeufe": 9,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -57,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 4,
    "erfolge": 3,
@@ -85,6 +79,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
@@ -133,12 +133,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "wissensgraph-verknüpfungen-reparieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
@@ -213,17 +207,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.801,
+ "haende_quote": 0.796,
  "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 29,
+  "n": 30,
   "best": 9.0,
-  "schnitt": 6.03
+  "schnitt": 6.13
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 27,
-   "schnitt": 5.96
+   "n": 28,
+   "schnitt": 6.07
   },
   "bau": {
    "n": 2,

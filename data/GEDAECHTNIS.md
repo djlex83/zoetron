@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7274 Fakten** · Stand 2026-08-30 13:41 UTC · aktualisiert bei jedem Herzschlag
+**7288 Fakten** · Stand 2026-08-30 13:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3535
-- **swarm_artifact:** 1685
-- **last_swarm_critique:** 630
+- **dream:** 3540
+- **swarm_artifact:** 1691
+- **last_swarm_critique:** 631
 - **anti_pattern:** 525
-- **last_swarm_goal:** 379
+- **last_swarm_goal:** 380
 - **strategy:** 283
 - **hand_result:** 82
-- **tool:** 79
+- **tool:** 80
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 28
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:erkenntnisse-aus-schwarm-arbeit-ziehen`
+*30.08. 13:54 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Erkenntnisse aus Schwarm-Arbeit ziehen'. Datei: data/tools/erkenntnisse-aus-schwarm-arbeit-ziehen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*30.08. 13:54 UTC · Quelle: critic*
+
+score=9; issues=Sandbox-Verdict nur für erstes Skript (142 Zeilen), die beiden anderen Artefakte wurden nicht explizit verifiziert (wirken aber lauffähig); Dateinamen-Pattern-Matching in load_analysis_results() etwas brüchig (hängt von spezifischen Benennungen
+
+### `last_swarm_goal`
+*30.08. 13:46 UTC · Quelle: system*
+
+Erkenntnisse aus Schwarm-Arbeit ziehen
+
+### `dream:20260830134514:5:9fee4e`
+*30.08. 13:45 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 4 vs actual 6) indicates systematic underestimation of task complexity.
+
+### `dream:20260830134514:4:12fbb8`
+*30.08. 13:45 UTC · Quelle: dream*
+
+Evolutionary refinement (3 variants) boosted solution score from 6 to 9, but swarm convergence still failed after 2 cycles.
+
+### `dream:20260830134514:3:708180`
+*30.08. 13:45 UTC · Quelle: dream*
+
+InclusionAI Ling 3.0 Flash Fin shows consistent success with low latency (~12-16s) and no rate-limit failures in this window.
+
+### `dream:20260830134514:2:83837c`
+*30.08. 13:45 UTC · Quelle: dream*
+
+NVIDIA Nemotron exhibits bimodal reliability: successful completions but also 502 upstream overload errors under load.
+
+### `dream:20260830134514:1:249b77`
+*30.08. 13:45 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models indiscriminately, making them unreliable for time-critical paths.
 
 ### `dream:20260830133859:5:f19f6f`
 *30.08. 13:38 UTC · Quelle: dream*
