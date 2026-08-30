@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7215 Fakten** · Stand 2026-08-30 12:01 UTC · aktualisiert bei jedem Herzschlag
+**7232 Fakten** · Stand 2026-08-30 12:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3500
-- **swarm_artifact:** 1673
-- **last_swarm_critique:** 628
-- **anti_pattern:** 521
-- **last_swarm_goal:** 377
-- **strategy:** 281
+- **dream:** 3505
+- **swarm_artifact:** 1679
+- **last_swarm_critique:** 629
+- **anti_pattern:** 523
+- **last_swarm_goal:** 378
+- **strategy:** 282
 - **hand_result:** 82
-- **tool:** 77
+- **tool:** 78
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 28
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktkenntnisse-auf-aktuellem-stand-halt`
+*30.08. 12:19 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktkenntnisse auf aktuellem Stand halten'. Datei: data/tools/marktkenntnisse-auf-aktuellem-stand-halt.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Marktkenntnisse auf aktu:2`
+*30.08. 12:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Human-in-the-Loop-Wissensaggregation mit KI-Validierung - Drehe das Paradigma um: Statt rein automatische Datenflüsse zu bauen, positioniere das System als hybrides KI-gestütztes Marktintelligenz-Tool, bei dem menschliche Exp
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Marktkenntnisse auf aktu:1`
+*30.08. 12:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Föderiertes Wissensgraphen-Netzwerk statt linearer Pipeline - Verwerfe die lineare Pipeline komplett und ersetze sie durch einen dezentralen Wissensgraphen (z.B. Neo4j oder LangGraph mit GraphState). Jede der drei Komponenten
+
+### `last_swarm_critique`
+*30.08. 12:18 UTC · Quelle: critic*
+
+score=6; issues=Keine Integration zwischen den drei Komponenten (Drift-Check, Gap-Analyse, Goal-Alignment) - sie laufen isoliert statt als Pipeline; build_current_context() nutzt harte Platzhalter-Texte statt Live-Datenfeeds (News, APIs, Scraper); Externe API-
+
+### `last_swarm_goal`
+*30.08. 12:07 UTC · Quelle: system*
+
+Marktkenntnisse auf aktuellem Stand halten
+
+### `dream:20260830120620:5:fdd5d4`
+*30.08. 12:06 UTC · Quelle: dream*
+
+Swarm convergence failure after only 2 cycles with a low score (3) suggests role coordination and evaluation criteria need refinement for skill-implementation tasks.
+
+### `dream:20260830120620:4:b208f8`
+*30.08. 12:06 UTC · Quelle: dream*
+
+Hand actions that only print output without returning values or writing files are rejected as non-functional — every action must produce a durable side effect to be considered valid.
+
+### `dream:20260830120620:3:cce462`
+*30.08. 12:06 UTC · Quelle: dream*
+
+Prune runs consistently returning zero results indicate the current strategy cannot identify time-decayed or duplicate facts, making retention unbounded and cleanup ineffective.
+
+### `dream:20260830120620:2:5cc5d7`
+*30.08. 12:06 UTC · Quelle: dream*
+
+The 180-second dream timeout hard limit causes pipeline blockage when consolidation exceeds the threshold, requiring either chunked processing or a reduced timeout to prevent downstream stalls.
+
+### `dream:20260830120620:1:ea3f5f`
+*30.08. 12:06 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) from multiple providers simultaneously indicates a systemic API quota bottleneck, not isolated failures — a single reliable model (ling-3.0-flash-fin) exists but lacks automatic failover routing.
 
 ### `dream:20260830115939:5:579f59`
 *30.08. 11:59 UTC · Quelle: dream*
