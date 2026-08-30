@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7320 Fakten** · Stand 2026-08-30 14:35 UTC · aktualisiert bei jedem Herzschlag
+**7325 Fakten** · Stand 2026-08-30 15:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3560
+- **dream:** 3565
 - **swarm_artifact:** 1697
 - **last_swarm_critique:** 632
 - **anti_pattern:** 527
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830152113:5:24f926`
+*30.08. 15:21 UTC · Quelle: dream*
+
+Hand-action latency (0.2s) is healthy but unmonitored; no p95 threshold exists to detect environment degradation early.
+
+### `dream:20260830152113:4:7aa0a2`
+*30.08. 15:21 UTC · Quelle: dream*
+
+Reflex-driven execution ("abgelehnte-werkzeuge-verstehen-und-verbe.py") achieved goal convergence without planner involvement, proving reflexes can handle known patterns autonomously.
+
+### `dream:20260830152113:3:51a8ca`
+*30.08. 15:21 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free delivered a successful response, creating a single-point-of-failure for the entire model pool.
+
+### `dream:20260830152113:2:76069e`
+*30.08. 15:21 UTC · Quelle: dream*
+
+The circuit breaker (3 strikes → 1800s block) prevents cascade failures but reacts too late to save the current goal attempt.
+
+### `dream:20260830152113:1:1f8d11`
+*30.08. 15:21 UTC · Quelle: dream*
+
+Free-tier models (glm, nemotron, gemma) consistently fail under load with 429/502 errors, making them unreliable as primary workers.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fahigkeit:2`
 *30.08. 14:34 UTC · Quelle: evolution*
