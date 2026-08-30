@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7030 Fakten** · Stand 2026-08-30 05:57 UTC · aktualisiert bei jedem Herzschlag
+**7035 Fakten** · Stand 2026-08-30 06:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3376
+- **dream:** 3381
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 622
 - **anti_pattern:** 511
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830060210:5:4ed22f`
+*30.08. 06:02 UTC · Quelle: dream*
+
+Skill proposals accumulated during execution but lacked automatic deduplication and promotion pipeline, causing redundant proposals across sleep cycles.
+
+### `dream:20260830060210:4:60f809`
+*30.08. 06:02 UTC · Quelle: dream*
+
+Self-diagnosis reported zero organ errors while model subsystem generated 7 failures in 15 minutes, revealing monitoring blind spots for external API dependencies.
+
+### `dream:20260830060210:3:87c83d`
+*30.08. 06:02 UTC · Quelle: dream*
+
+Swarm convergence failed despite 5 revisions because critic/planner ratio (1:1) was insufficient to overcome builder majority (3) without explicit convergence criteria.
+
+### `dream:20260830060210:2:0f1107`
+*30.08. 06:02 UTC · Quelle: dream*
+
+Latency variance of 16x (6.4s vs 105.6s) on the same model (nemotron-3-ultra) indicates unstable upstream capacity, not model quality.
+
+### `dream:20260830060210:1:d58645`
+*30.08. 06:02 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic 429 rate-limiting and 502 upstream failures making them unreliable for production workflows.
 
 ### `dream:20260830055549:5:b6dc73`
 *30.08. 05:55 UTC · Quelle: dream*

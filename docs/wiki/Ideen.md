@@ -1,14 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 05:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
+- Build skill_proposal_pipeline: auto-convert proposals with ≥2 supporting failure events into reflex tools with *(hatte die Idee 7×)*
 - Create skill lifecycle manager: proposal → sandbox test (simulation) → integration test (shadow traffic) → reg *(hatte die Idee 6×)*
-- Build skill_proposal_pipeline: auto-convert proposals with ≥2 supporting failure events into reflex tools with *(hatte die Idee 6×)*
+- Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 6×)*
 - Build swarm dispatcher with heartbeat monitoring: partition evaluation tasks across workers, aggregate results *(hatte die Idee 5×)*
-- Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 5×)*
 - Add exponential backoff with jitter (base 2s, max 60s) and rotating model pool for 429 responses; parse Retry- *(hatte die Idee 4×)*
 - Deploy stress-aware scheduler that, when metabolism stress > 0.8, halves max_parallelism, doubles timeouts, an *(hatte die Idee 4×)*
 - Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 4×)*
@@ -28,8 +28,8 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulated during execution but lacked automatic deduplication and promotion pipeline, causing redundant proposals across sleep cycle
+- Self-diagnosis reported zero organ errors while model subsystem generated 7 failures in 15 minutes, revealing monitoring blind spots for external API 
+- Swarm convergence failed despite 5 revisions because critic/planner ratio (1:1) was insufficient to overcome builder majority (3) without explicit con
+- Latency variance of 16x (6.4s vs 105.6s) on the same model (nemotron-3-ultra) indicates unstable upstream capacity, not model quality.
+- Free-tier models exhibit systematic 429 rate-limiting and 502 upstream failures making them unreliable for production workflows.
 - Artifact generation (98-line Python) + TOR validation (grün=true) + calibration (error=1) forms a working verify-execute loop.
 - Contradiction detection and contradiction resolution are distinct capabilities; the system initially lacked the former.
 - Evolutionary refinement boosted contradiction-resolution score from 4/10 to 9/9/8 once critic identified missing contradiction-detection capability.
@@ -51,11 +56,6 @@
 - Stale work and stale market data persist without automated detection, wasting context and compute on obsolete artifacts.
 - Skill proposals accumulate but remain unimplemented due to high system stress (stress=1.0, conserve mode) and zero execution budget, creating a propos
 - Model reliability is critically degraded: 4/5 models fail consistently with 429 rate limits or 502 upstream errors, making fallback chains essential f
-- Drive goal 'Marktanalyse in Taten umsetzen' remains stale despite completed analyses, revealing execution gap.
-- Model health signals (latency, 429, 502) are observed but not persisted or used for routing decisions.
-- Duplicate skill proposals (local-first, pipeline, circuit breaker) appear 2-3× each, showing proposal deduplication is missing.
-- Reflex tool 'beste-vorschläge-in-fähigkeiten-verwande.py' succeeded where model calls failed, validating local-first execution.
-- Repeated 429 errors across multiple models indicate systemic rate-limiting, not isolated model failure.
 
 ---
 
