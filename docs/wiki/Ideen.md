@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 18:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 18:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency increases correlate with token count, but successful models maintain <35s even at higher token volumes.
+- Repeated failures on the same model within 30s indicate a need for immediate blacklisting, not just retry.
+- Models with lower token output (e.g., 492) still succeed under load, implying input-heavy tasks are more resilient.
+- 502 upstream errors from Nvidia occur independently of 429s, suggesting provider-side overload requiring fallback.
+- 429 errors cluster at peak load timestamps, indicating rate-limit exhaustion rather than model failure.
 - System self-diagnosis reports no organ failures, confirming internal stability despite external model errors.
 - Market analysis outputs are stale and unused, pointing to a failure in downstream integration or value extraction.
 - Skill proposals remain unimplemented despite repeated collection, suggesting a gap between idea generation and actionable deployment.
@@ -51,11 +56,6 @@
 - Stale artifacts (old market analyses, unused results) accumulate silently because no mechanism flags or refreshes them, leaving valuable knowledge dor
 - Simulation-to-practice goals exhibit a consistent ~3x effort underestimation bias, meaning planned work must be scaled up by at least 100% to match re
 - Repeated 429 rate-limit errors from z-ai/glm-5.2 reveal that API calls lack any backoff or circuit-breaker, causing cascading failures when a single m
-- Missing pre-flight validation of paths, inputs, and skill composition allows broken operations to propagate, making boundary checks essential at every
-- System stress exceeding 0.8 causes wasted cycles and cascading failures, mandating automatic load shedding and conserve-mode activation before exhaust
-- Truncated or invalid model outputs silently corrupt downstream processing, so output-token validation against input-token ratios is a necessary guardr
-- Rate-limit and service-overload errors recur across multiple providers simultaneously, indicating that no single free model can be trusted as a primar
-- Free-tier API models are systematically unreliable due to rate limits (429) and upstream overload (502), requiring defensive per-model circuit-breakin
 
 ---
 

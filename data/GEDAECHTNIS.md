@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7418 Fakten** · Stand 2026-08-30 18:02 UTC · aktualisiert bei jedem Herzschlag
+**7423 Fakten** · Stand 2026-08-30 18:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3645
+- **dream:** 3650
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830180925:5:60d1f0`
+*30.08. 18:09 UTC · Quelle: dream*
+
+Latency increases correlate with token count, but successful models maintain <35s even at higher token volumes.
+
+### `dream:20260830180925:4:df5d70`
+*30.08. 18:09 UTC · Quelle: dream*
+
+Repeated failures on the same model within 30s indicate a need for immediate blacklisting, not just retry.
+
+### `dream:20260830180925:3:bd003c`
+*30.08. 18:09 UTC · Quelle: dream*
+
+Models with lower token output (e.g., 492) still succeed under load, implying input-heavy tasks are more resilient.
+
+### `dream:20260830180925:2:e7eb65`
+*30.08. 18:09 UTC · Quelle: dream*
+
+502 upstream errors from Nvidia occur independently of 429s, suggesting provider-side overload requiring fallback.
+
+### `dream:20260830180925:1:eb4fa2`
+*30.08. 18:09 UTC · Quelle: dream*
+
+429 errors cluster at peak load timestamps, indicating rate-limit exhaustion rather than model failure.
 
 ### `dream:20260830180053:5:edd8fd`
 *30.08. 18:00 UTC · Quelle: dream*
