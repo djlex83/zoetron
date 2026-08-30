@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 08:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 08:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,10 +25,10 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Structured error capture is absent from model_fail events (only raw HTTP text), preventing automated classification and retry logic.
+- Competing drive_goals (failure reduction, stale analysis, skill stabilization) run in parallel without serialization, diluting progress on any single 
+- Existing skill proposals for fallback, throttling, and health-checks remain unimplemented while the same 429 errors recur.
+- Successful calls only occur on less-popular free models (e.g., inclusionai/ling-3.0-flash-fin), indicating capacity scarcity drives reliability.
+- Rate limiting (HTTP 429) across multiple free-tier providers is the dominant failure mode, making single-provider reliance untenable.
 - Self-diagnosis reports zero organ failures despite external API degradation, indicating that internal system health remains stable under external stre
 - Reflex-based execution successfully handles routine maintenance tasks like goal updates without consuming full deliberation cycles, confirming the ref
 - Memory gaps ('Blinden Fleck') are actively flagged when insufficient domain experience exists, signaling where targeted exploration drives should be s
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin consistently succeeds under load and should be the default fallback model when others fail.
 - Model endpoint availability on OpenRouter is unstable — models succeeding once (e.g., nemotron-3-ultra-55b) can return 404 on subsequent calls, necess
 - HTTP 429 rate-limiting is the dominant failure mode across multiple OpenRouter models, requiring exponential backoff and retry logic instead of immedi
-- Signal-driven goals (failure/stale/gap) need a prioritization queue that prevents competing goals from consuming the same scarce retry budget simultan
-- Rate-limit errors (429) dominate the failure mode, requiring built-in exponential backoff and request throttling before any retry logic is invoked.
-- Silent tool failures (exit: 1 with null error) indicate missing error capture and diagnostic instrumentation in execution wrappers, making failures un
-- Under resource stress (stress=1.0, conserve mode) the system must enforce strict single-task execution with guaranteed success paths rather than paral
-- Cascading API failures through a single provider (OpenRouter) mean retry chains without provider diversity will fail together — diversify fallback end
 
 ---
 
