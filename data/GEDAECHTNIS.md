@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7190 Fakten** · Stand 2026-08-30 11:14 UTC · aktualisiert bei jedem Herzschlag
+**7196 Fakten** · Stand 2026-08-30 11:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3476
+- **dream:** 3481
 - **swarm_artifact:** 1673
 - **last_swarm_critique:** 628
 - **anti_pattern:** 521
@@ -11,7 +11,7 @@
 - **hand_result:** 82
 - **tool:** 77
 - **aktuell_fussball_messlatte:** 33
-- **aktuell_organfehler:** 27
+- **aktuell_organfehler:** 28
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830113438:5:d32fe1`
+*30.08. 11:34 UTC · Quelle: dream*
+
+Prune runs consistently yield zero pruned facts or events, suggesting stale data accumulation without effective cleanup.
+
+### `dream:20260830113438:4:32b79d`
+*30.08. 11:34 UTC · Quelle: dream*
+
+The system generates high-quality skill proposals from failures but has not yet closed the loop by implementing them as permanent capabilities.
+
+### `dream:20260830113438:3:d0621e`
+*30.08. 11:34 UTC · Quelle: dream*
+
+Reflex-based recovery mechanisms effectively converge on solutions but are purely reactive, lacking preventive guards to avoid failures in the first place.
+
+### `dream:20260830113438:2:469c36`
+*30.08. 11:34 UTC · Quelle: dream*
+
+Model provider failures (429 rate limits and 404s) are systemic rather than isolated, with multiple providers failing simultaneously and only one fallback model succeeding.
+
+### `dream:20260830113438:1:4b5eb2`
+*30.08. 11:34 UTC · Quelle: dream*
+
+Dream module consistently times out at exactly 180 seconds across three consecutive cycles, indicating a structural bottleneck that blocks the entire consolidation pipeline.
+
+### `aktuell_organfehler`
+*30.08. 11:16 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-30 11:03:54-11:06:54 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `anti_pattern:Previous attempt scored 3/10. Goal: Viele Skill-Ideen konkre:2`
 *30.08. 11:13 UTC · Quelle: evolution*

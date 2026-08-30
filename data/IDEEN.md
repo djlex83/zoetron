@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -8,11 +8,10 @@
 - Build skill_proposal_pipeline: auto-convert proposals with ≥2 supporting failure events into reflex tools with *(hatte die Idee 10×)*
 - Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 7×)*
 - Enforce local-first policy: for any goal matching a registered reflex tool, execute hand_action before any mod *(hatte die Idee 6×)*
-- Create skill lifecycle manager: proposal → sandbox test (simulation) → integration test (shadow traffic) → reg *(hatte die Idee 4×)*
 - Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 4×)*
 - Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, and 429 counts; au *(hatte die Idee 4×)*
 - Enforce local-first policy: for any goal matching a registered reflex tool (e.g., marktanalyse-endlich-abschli *(hatte die Idee 4×)*
-- Build swarm dispatcher with heartbeat monitoring: partition evaluation tasks across workers, aggregate results *(hatte die Idee 3×)*
+- Create skill lifecycle manager: proposal → sandbox test (simulation) → integration test (shadow traffic) → reg *(hatte die Idee 3×)*
 - Create a path resolver utility that normalizes sys.argv[1] and ZOETRON_DATA into absolute paths before any fil *(hatte die Idee 3×)*
 - Build a model fallback chain that pre-orders free-tier models by historical success rate and auto-rotates on 4 *(hatte die Idee 3×)*
 - Create a proposal-to-skill conversion gate requiring each proposal to have a defined implementation step, vali *(hatte die Idee 3×)*
@@ -20,6 +19,7 @@
 - Implement ModelRouter with per-model token-bucket quota tracking, health scoring (success rate, latency p50/p9 *(hatte die Idee 3×)*
 - Build CircuitBreaker decorator that trips after 3 consecutive 429/502/503 responses, quarantines model for 60s *(hatte die Idee 3×)*
 - Create PreFlightProbe that sends 1-token completion to candidate models before dispatch, filters out models re *(hatte die Idee 3×)*
+- Establish ProposalGate requiring every skill proposal to include (1) concrete implementation plan with milesto *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs consistently yield zero pruned facts or events, suggesting stale data accumulation without effective cleanup.
+- The system generates high-quality skill proposals from failures but has not yet closed the loop by implementing them as permanent capabilities.
+- Reflex-based recovery mechanisms effectively converge on solutions but are purely reactive, lacking preventive guards to avoid failures in the first p
+- Model provider failures (429 rate limits and 404s) are systemic rather than isolated, with multiple providers failing simultaneously and only one fall
+- Dream module consistently times out at exactly 180 seconds across three consecutive cycles, indicating a structural bottleneck that blocks the entire 
 - The adaptive rate limiter and unified model executor proposed earlier remain unimplemented, and their absence is the root cause of the ongoing 429 spi
 - A failure cascade is active: repeated 429s cause swarm tools to fail, which raises stress to 1.0, which triggers conserve mode, which blocks retries a
 - Conserve mode with max_iterations=1 creates a bottleneck where each failed model call consumes the entire iteration budget, preventing any recovery or
@@ -51,11 +56,6 @@
 - Hand actions fail when using relative paths; all file operations must resolve against ZOETRON_DATA or sys.argv[1].
 - The working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high latency (54–176 s) requiring timeout guards and fallback budgets.
 - Model "z-ai/glm-5.2:free" consistently returns 429 rate-limit errors and should be excluded from the routing pool.
-- High model latency (50-75s) makes iterative loops impractical; need async/pipelined execution or faster models.
-- Proposed skills accumulate without verification loop; need skill adoption tracker with execution proof.
-- Hand actions fail due to path resolution issues (relative vs absolute paths, missing data directory handling).
-- Swarm convergence fails when critic capacity is too low relative to builders (1:3 ratio) and no explicit convergence gate exists.
-- Rate-limited models (glm-5.2) must be excluded from primary rotation; fallback chains with health checks are essential for reliability.
 
 ---
 
