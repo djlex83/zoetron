@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7383 Fakten** · Stand 2026-08-30 17:07 UTC · aktualisiert bei jedem Herzschlag
+**7388 Fakten** · Stand 2026-08-30 17:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3610
+- **dream:** 3615
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830171308:5:2a36ac`
+*30.08. 17:13 UTC · Quelle: dream*
+
+Evolutionary variant selection (3 variants, winner score 8 vs baseline 6) reliably improves artifact quality when critic feedback targets concrete code-pattern issues like template variable misuse.
+
+### `dream:20260830171308:4:28b14c`
+*30.08. 17:13 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 3 vs actual 6) indicates the planner consistently underestimates implementation complexity for simulation-to-practice tasks.
+
+### `dream:20260830171308:3:30b46d`
+*30.08. 17:13 UTC · Quelle: dream*
+
+Poolside Laguna-S-2.1 delivers the best latency-to-success ratio (9.5s) when not rate-limited, making it the preferred fallback.
+
+### `dream:20260830171308:2:75d7ea`
+*30.08. 17:13 UTC · Quelle: dream*
+
+Nvidia Nemotron exhibits high latency (85-146s) and intermittent 502 upstream overload errors despite returning valid responses when healthy.
+
+### `dream:20260830171308:1:ccba0b`
+*30.08. 17:13 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for production workflows.
 
 ### `dream:20260830170418:5:2a429e`
 *30.08. 17:04 UTC · Quelle: dream*

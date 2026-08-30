@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 17:06:25",
+ "stand": "2026-08-30 17:16:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -28,7 +28,7 @@
   },
   {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 9,
+   "laeufe": 8,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -123,6 +123,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 1,
@@ -195,12 +201,6 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -219,7 +219,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.795,
+ "haende_quote": 0.8,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 27,
@@ -228,8 +228,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
-   "schnitt": 5.85
+   "n": 25,
+   "schnitt": 6.0
   },
   "bau": {
    "n": 1,

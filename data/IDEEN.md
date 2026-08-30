@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -8,9 +8,9 @@
 - Build skill_proposal_pipeline: auto-convert proposals with ≥2 supporting failure events into reflex tools with *(hatte die Idee 10×)*
 - Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 7×)*
 - Enforce local-first policy: for any goal matching a registered reflex tool, execute hand_action before any mod *(hatte die Idee 6×)*
-- Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 4×)*
 - Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, and 429 counts; au *(hatte die Idee 4×)*
 - Enforce local-first policy: for any goal matching a registered reflex tool (e.g., marktanalyse-endlich-abschli *(hatte die Idee 4×)*
+- Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 3×)*
 - Implement ModelRouter with per-model token-bucket quota tracking, health scoring (success rate, latency p50/p9 *(hatte die Idee 3×)*
 - Build CircuitBreaker decorator that trips after 3 consecutive 429/502/503 responses, quarantines model for 60s *(hatte die Idee 3×)*
 - Create PreFlightProbe that sends 1-token completion to candidate models before dispatch, filters out models re *(hatte die Idee 3×)*
@@ -26,14 +26,14 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary variant selection (3 variants, winner score 8 vs baseline 6) reliably improves artifact quality when critic feedback targets concrete cod
+- Calibration error of 3 points (predicted 3 vs actual 6) indicates the planner consistently underestimates implementation complexity for simulation-to-
+- Poolside Laguna-S-2.1 delivers the best latency-to-success ratio (9.5s) when not rate-limited, making it the preferred fallback.
+- Nvidia Nemotron exhibits high latency (85-146s) and intermittent 502 upstream overload errors despite returning valid responses when healthy.
+- Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for production workflows.
 - Skill-materialization reflex fails silently; proposals need a dry-run validation step before committing to the skill store.
 - Simulation revision loops (3 risks → 3 revisions) consume 6+ model calls per cycle, exhausting the conserve-mode budget (max 3 tasks).
 - File operations fail when using relative paths; all data access must resolve through ZOETRON_DATA and sys.argv[1] to absolute paths before I/O.
@@ -51,11 +56,6 @@
 - The system enters conserve mode (stress=1.0, max_iterations=1) under load, which caps execution capacity and can stall swarm convergence when multiple
 - Hand-action failures occur when relative file paths are not resolved against sys.argv[1] and ZOETRON_DATA, causing silent zero-byte reads that exit cl
 - The z-ai/glm-5.2:free model repeatedly hits 429 rate limits across multiple consecutive calls, indicating a persistent degradation pattern that requir
-- Drive goals persist (market analysis, model reliability) without measurable progress signals, indicating missing success criteria and checkpointing.
-- Zero pruned facts/events across cycles suggests the retention policy is too conservative, bloating context without improving recall.
-- Reflex-mode convergence on skill-implementation goals shows the system can execute procedural knowledge but lacks a mechanism to promote successful re
-- Fallback model latency (46-81s) exceeds acceptable thresholds for interactive loops, making async queuing or cached responses necessary.
-- Recurring 429 errors from a single provider indicate rate-limit saturation, not transient faults, requiring architectural routing changes rather than 
 
 ---
 
