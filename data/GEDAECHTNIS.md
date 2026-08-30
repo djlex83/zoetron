@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7398 Fakten** · Stand 2026-08-30 17:28 UTC · aktualisiert bei jedem Herzschlag
+**7403 Fakten** · Stand 2026-08-30 17:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3625
+- **dream:** 3630
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830173159:5:f70363`
+*30.08. 17:31 UTC · Quelle: dream*
+
+The reflex system converges reliably when a model is available, proving the internal logic is sound — the bottleneck is entirely external infrastructure availability.
+
+### `dream:20260830173159:4:7d2cde`
+*30.08. 17:31 UTC · Quelle: dream*
+
+Proposed skills (model-router, promotion pipeline, pruning scheduler) are well-targeted but remain unvalidated artifacts; they must be smoke-tested before registration.
+
+### `dream:20260830173159:3:6504aa`
+*30.08. 17:31 UTC · Quelle: dream*
+
+Latency spans from 7s to 77s across successful calls, but no latency-budget guard exists to route slow calls to async mode and protect responsiveness.
+
+### `dream:20260830173159:2:ebb07e`
+*30.08. 17:31 UTC · Quelle: dream*
+
+The fallback chain retries failed providers immediately without cooldown, amplifying rate-limit exhaustion instead of allowing recovery windows.
+
+### `dream:20260830173159:1:31fc70`
+*30.08. 17:31 UTC · Quelle: dream*
+
+All model failures trace to a shared OpenRouter API gateway, so provider diversity alone cannot prevent cascading 429/502 errors when the gateway is rate-limited or overloaded.
 
 ### `dream:20260830172641:5:5d3470`
 *30.08. 17:26 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex system converges reliably when a model is available, proving the internal logic is sound — the bottleneck is entirely external infrastructu
+- Proposed skills (model-router, promotion pipeline, pruning scheduler) are well-targeted but remain unvalidated artifacts; they must be smoke-tested be
+- Latency spans from 7s to 77s across successful calls, but no latency-budget guard exists to route slow calls to async mode and protect responsiveness.
+- The fallback chain retries failed providers immediately without cooldown, amplifying rate-limit exhaustion instead of allowing recovery windows.
+- All model failures trace to a shared OpenRouter API gateway, so provider diversity alone cannot prevent cascading 429/502 errors when the gateway is r
 - Pruning runs remove zero items, indicating either scoring thresholds are too aggressive or relevance signals are missing.
 - Reflex actions converge reliably (market analysis cleanup completed), suggesting reflex-to-skill promotion is a viable path.
 - 45 skill proposals exist but only 3 implemented, revealing a broken promotion pipeline from proposal to production.
@@ -51,11 +56,6 @@
 - Template variable interpolation failures (e.g., {{skill}}) in skill generation reveal a contract mismatch between planner output and builder execution
 - The evolution/swarm pipeline consistently stalls at score 6/10 with non-convergence, indicating insufficient critic feedback or builder capability.
 - Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502), making them unreliable for production workflows without aggressive 
-- Evolutionary variant selection (3 variants, winner score 8 vs baseline 6) reliably improves artifact quality when critic feedback targets concrete cod
-- Calibration error of 3 points (predicted 3 vs actual 6) indicates the planner consistently underestimates implementation complexity for simulation-to-
-- Poolside Laguna-S-2.1 delivers the best latency-to-success ratio (9.5s) when not rate-limited, making it the preferred fallback.
-- Nvidia Nemotron exhibits high latency (85-146s) and intermittent 502 upstream overload errors despite returning valid responses when healthy.
-- Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for production workflows.
 
 ---
 
