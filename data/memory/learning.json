@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 12:48:18",
+ "stand": "2026-08-30 13:14:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -135,12 +135,6 @@
    "quote": 0.0
   },
   {
-   "tool": "best-of-n-mit-unbestechlichem-prüfer-tes.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "wissensgraph-verknüpfungen-reparieren.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -219,7 +213,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.795,
+ "haende_quote": 0.8,
  "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 30,
@@ -228,8 +222,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 5.89
+   "n": 27,
+   "schnitt": 5.96
   },
   "bau": {
    "n": 2,

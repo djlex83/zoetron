@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7249 Fakten** · Stand 2026-08-30 12:49 UTC · aktualisiert bei jedem Herzschlag
+**7254 Fakten** · Stand 2026-08-30 13:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3510
+- **dream:** 3515
 - **swarm_artifact:** 1685
 - **last_swarm_critique:** 630
 - **anti_pattern:** 525
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830131404:5:5db51d`
+*30.08. 13:14 UTC · Quelle: dream*
+
+Free-tier model portfolio lacks a fast, reliable fallback; all successes come from a single model with unpredictable latency.
+
+### `dream:20260830131404:4:e93bb7`
+*30.08. 13:14 UTC · Quelle: dream*
+
+Market knowledge update fails at every layer: reflex tool fails, hand action fails, simulation demands 5 revisions, yet swarm persists without success criteria.
+
+### `dream:20260830131404:3:fb240f`
+*30.08. 13:14 UTC · Quelle: dream*
+
+High stress (1.0) with conserve metabolism state creates a death spiral: failures increase stress, stress reduces budget, reduced budget prevents recovery actions.
+
+### `dream:20260830131404:2:0b5adc`
+*30.08. 13:14 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free shows highest reliability but latency variance (25-107s) makes it unsuitable for time-critical paths.
+
+### `dream:20260830131404:1:baac59`
+*30.08. 13:14 UTC · Quelle: dream*
+
+Rate limiting (429) across multiple free-tier models indicates systemic provider throttling, not isolated model failures.
 
 ### `tool:blinden-fleck-2-im-gedächtnis-erforschen`
 *30.08. 12:48 UTC · Quelle: hands*

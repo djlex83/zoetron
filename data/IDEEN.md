@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 12:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,7 +11,6 @@
 - Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 4×)*
 - Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, and 429 counts; au *(hatte die Idee 4×)*
 - Enforce local-first policy: for any goal matching a registered reflex tool (e.g., marktanalyse-endlich-abschli *(hatte die Idee 4×)*
-- Create a path resolver utility that normalizes sys.argv[1] and ZOETRON_DATA into absolute paths before any fil *(hatte die Idee 3×)*
 - Build a model fallback chain that pre-orders free-tier models by historical success rate and auto-rotates on 4 *(hatte die Idee 3×)*
 - Create a proposal-to-skill conversion gate requiring each proposal to have a defined implementation step, vali *(hatte die Idee 3×)*
 - Implement a model health scorecard tracking success rate, latency p95, and consecutive failures to drive dynam *(hatte die Idee 3×)*
@@ -20,6 +19,7 @@
 - Create PreFlightProbe that sends 1-token completion to candidate models before dispatch, filters out models re *(hatte die Idee 3×)*
 - Establish ProposalGate requiring every skill proposal to include (1) concrete implementation plan with milesto *(hatte die Idee 3×)*
 - Develop DataFreshnessMonitor that tracks asset age, access frequency, and staleness thresholds, then auto-trig *(hatte die Idee 3×)*
+- Calibrate error-threshold blocks: 30s for 429, 5min for 404, 10min for 500/502; auto-deprecate models with >50 *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Free-tier model portfolio lacks a fast, reliable fallback; all successes come from a single model with unpredictable latency.
+- Market knowledge update fails at every layer: reflex tool fails, hand action fails, simulation demands 5 revisions, yet swarm persists without success
+- High stress (1.0) with conserve metabolism state creates a death spiral: failures increase stress, stress reduces budget, reduced budget prevents reco
+- nvidia/nemotron-3-ultra-550b-a55b:free shows highest reliability but latency variance (25-107s) makes it unsuitable for time-critical paths.
+- Rate limiting (429) across multiple free-tier models indicates systemic provider throttling, not isolated model failures.
 - Swarm planning ignores real-time model health, assigning tasks to known-bad models and wasting cycles.
 - Reflex-driven error reduction converged without a persistent policy, so gains evaporate when the reflex isn't triggered.
 - Proposed skills (fallback chain, health monitor, path resolver) are generated but not automatically instantiated or wired into the execution loop.
@@ -51,11 +56,6 @@
 - Prune runs consistently returning zero results indicate the current strategy cannot identify time-decayed or duplicate facts, making retention unbound
 - The 180-second dream timeout hard limit causes pipeline blockage when consolidation exceeds the threshold, requiring either chunked processing or a re
 - Rate limiting (HTTP 429) from multiple providers simultaneously indicates a systemic API quota bottleneck, not isolated failures — a single reliable m
-- The core artifact (33-line Python) runs but the critic flags incomplete implementation, indicating that 'running code' does not equal 'complete implem
-- Evolution search produced a dramatic jump from 3/10 to 8/10 across 3 variants, proving variant mutation is the highest-leverage improvement mechanism.
-- Calibration predicted 5 but actual was 3, revealing a systematic overconfidence in task feasibility that must be corrected.
-- inclusionai/ling-3.0-flash-fin is the only model that succeeds every call, though latency degrades from 5.5s to 10.5s as load increases.
-- Free-tier OpenRouter models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently hit 429 rate limits, making them unreliable under any concurrent load.
 
 ---
 
