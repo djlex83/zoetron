@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- When a reflex is actually deployed (fähigkeitsvorschläge-in-echte-skills-umw.py), it converges successfully — proving execution, not generation, is th
+- Stale work accumulates silently across multiple analysis steps without auto-detection or remediation, eroding decision quality over time.
+- Fallback model latency is unpredictable (22s to 95s), meaning even successful failovers can violate downstream SLAs without explicit latency guards.
+- The system generates skill proposals far faster than it executes them — 55 proposals exist with no confirmed deployment, indicating a proposal-to-exec
+- Free-tier models (z-ai/glm-5.2) fail systematically under load with 429 errors, making them unreliable as primary callers without enforced fallback.
 - Hand action failures with exit code 1 but no error output indicate silent execution failures needing structured validation.
 - Swarm convergence failure at score 1 suggests critic/planner feedback loop isn't driving measurable improvement.
 - Evolution cycles producing syntax errors indicate generator lacks pre-sandbox syntax validation.
@@ -51,11 +56,6 @@
 - Sandbox execution failures are predominantly syntax errors (asyncio.run misuse, pipe operators) rather than logic flaws, indicating a need for pre-exe
 - Nemotron-3-ultra succeeds consistently but exhibits extreme latency variance (7–179s), requiring adaptive timeout strategies.
 - Free-tier models (glm-5.2:free) systematically fail with 429 rate-limit errors, making them unreliable for production workflows.
-- Circuit breaking must operate at the gateway level (detecting global 429 saturation) rather than per-model, since all models share the same rate-limit
-- 65 skill proposals accumulate but few execute because the proposal-to-reflex-tool pipeline produces tools that fail silently without health feedback.
-- The system entered conserve mode (stress=1.0) yet continued making expensive model calls, creating a self-reinforcing failure loop of rate-limit exhau
-- The reflex tool for 'Modellfehler stark verringern' failed with exit code 1 and no error output, meaning the local-first fallback chain is broken at t
-- 429 errors hit every model simultaneously, proving the bottleneck is the OpenRouter gateway — rotating models alone cannot solve systemic rate limitin
 
 ---
 
