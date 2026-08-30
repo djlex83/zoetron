@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6986 Fakten** · Stand 2026-08-30 04:46 UTC · aktualisiert bei jedem Herzschlag
+**7003 Fakten** · Stand 2026-08-30 05:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3356
-- **swarm_artifact:** 1637
-- **last_swarm_critique:** 620
-- **anti_pattern:** 507
-- **last_swarm_goal:** 369
-- **strategy:** 274
+- **dream:** 3361
+- **swarm_artifact:** 1643
+- **last_swarm_critique:** 621
+- **anti_pattern:** 509
+- **last_swarm_goal:** 370
+- **strategy:** 275
 - **hand_result:** 79
-- **tool:** 74
+- **tool:** 75
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:wissenswidersprüche-auflösen`
+*30.08. 05:00 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Wissenswidersprüche auflösen'. Datei: data/tools/wissenswidersprüche-auflösen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Wissenswidersprüche aufl:1`
+*30.08. 04:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 7]): Semantic Embedding Space with Density-Based Conflict Isolation - Represent each knowledge unit as a normalized embedding vector (sentence-transformers or TF-IDF + SVD, all local). Contradiction detection: build k-NN g
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Wissenswidersprüche aufl:0`
+*30.08. 04:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): In-Process Symbolic Reasoning Engine - Implement a self-contained contradiction resolver using a lightweight rule engine (e.g., python-rule-engine or custom forward-chaining) operating directly on structured knowledge
+
+### `last_swarm_critique`
+*30.08. 04:58 UTC · Quelle: critic*
+
+score=4; issues=Keine eigentliche Widerspruchserkennung/-auflösungslogik in den Artefakten - sie sind nur Wrapper um externe 'Organ'-Module, die nicht mitgeliefert werden und deren Existenz/Funktionssignaturen nicht garantiert sind; Fragile Subprocess-Kette zw
+
+### `last_swarm_goal`
+*30.08. 04:52 UTC · Quelle: system*
+
+Wissenswidersprüche auflösen
+
+### `dream:20260830045215:5:c5db7b`
+*30.08. 04:52 UTC · Quelle: dream*
+
+No output validation exists: hand_action succeeds (exit 0) but could return empty or schema-invalid results silently.
+
+### `dream:20260830045215:4:7db9cf`
+*30.08. 04:52 UTC · Quelle: dream*
+
+Stale work (e.g., market analysis) persists without automatic detection or escalation, wasting planning capacity.
+
+### `dream:20260830045215:3:21aaf3`
+*30.08. 04:52 UTC · Quelle: dream*
+
+Skill proposals accumulate but implementation relies on ad-hoc reflexes; a systematic proposal-to-production pipeline is missing.
+
+### `dream:20260830045215:2:7d3234`
+*30.08. 04:52 UTC · Quelle: dream*
+
+Backup model nvidia/nemotron-3-ultra shows high latency variance (10.8-36.5s), necessitating latency budgets and kill-switches to prevent task stalls.
+
+### `dream:20260830045215:1:a7b412`
+*30.08. 04:52 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free consistently returns 429 errors, indicating hard rate limits that require proactive exclusion from routing.
 
 ### `dream:20260830044532:5:06ca25`
 *30.08. 04:45 UTC · Quelle: dream*

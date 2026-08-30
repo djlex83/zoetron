@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 05:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No output validation exists: hand_action succeeds (exit 0) but could return empty or schema-invalid results silently.
+- Stale work (e.g., market analysis) persists without automatic detection or escalation, wasting planning capacity.
+- Skill proposals accumulate but implementation relies on ad-hoc reflexes; a systematic proposal-to-production pipeline is missing.
+- Backup model nvidia/nemotron-3-ultra shows high latency variance (10.8-36.5s), necessitating latency budgets and kill-switches to prevent task stalls.
+- Model z-ai/glm-5.2:free consistently returns 429 errors, indicating hard rate limits that require proactive exclusion from routing.
 - Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) succeed silently while model-critical paths lack equivalent automated recovery.
 - Existing skill proposals (ModelRouter, CircuitBreaker, calibration table) remain unimplemented despite repeated failure signals, revealing a proposal-
 - Latency variance (6–29 s) across successful calls dwarfs token-count differences, implying queueing delays dominate over inference time.
@@ -51,11 +56,6 @@
 - The system has 5 concrete skill proposals for model resilience but zero implementations, exposing a proposal-to-execution gap that perpetuates failure
 - Model endpoints return 404 unexpectedly (nemotron), revealing that "free" model availability is volatile and requires runtime validation.
 - Rate limiting (429) cascades across all free models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
-- Drive goals (model reliability, skill adoption, stale analysis) persist without automatic binding to concrete actions, creating intent-action decoupli
-- Prune runs remove zero facts/events despite accumulating stale drive goals, indicating the retention policy lacks triggers for actual cleanup.
-- Reflex tool 'alte-schwarm-ergebnisse-aufräumen.py' succeeds instantly (0.45s) when invoked, demonstrating local-first execution outperforms model call
-- Five skill proposals repeat across cycles but none are implemented, revealing a proposal-to-execution gap that stalls capability growth.
-- Model z-ai/glm-5.2:free fails 100% with 429 errors while nvidia/nemotron-3-ultra succeeds but with high latency (31-84s), proving single-model depende
 
 ---
 
