@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,6 +10,9 @@
 - Add exponential backoff with jitter (base 2s, max 60s) and rotating model pool for 429 responses; parse Retry- *(hatte die Idee 4×)*
 - Deploy stress-aware scheduler that, when metabolism stress > 0.8, halves max_parallelism, doubles timeouts, an *(hatte die Idee 4×)*
 - Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 4×)*
+- Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, and 429 counts; au *(hatte die Idee 4×)*
+- Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 4×)*
+- Build skill_proposal_pipeline: auto-convert proposals with ≥2 supporting failure events into reflex tools with *(hatte die Idee 4×)*
 - Calibrate pruning thresholds by tracking fact/event half-life: only prune entities untouched >30 days with acc *(hatte die Idee 3×)*
 - Add a convergence gate to simulation-swarm loops: continue cycles until score >=8 or max 5 cycles, logging div *(hatte die Idee 3×)*
 - Implement a model router with circuit-breaker that tracks per-model 429 rates, latency p95, and Retry-After he *(hatte die Idee 3×)*
@@ -17,14 +20,11 @@
 - Build a model fallback chain that pre-orders free-tier models by historical success rate and auto-rotates on 4 *(hatte die Idee 3×)*
 - Create a proposal-to-skill conversion gate requiring each proposal to have a defined implementation step, vali *(hatte die Idee 3×)*
 - Implement a model health scorecard tracking success rate, latency p95, and consecutive failures to drive dynam *(hatte die Idee 3×)*
-- Implement ModelRouter with per-model token-bucket quota tracking, health scoring (success rate, latency p50/p9 *(hatte die Idee 3×)*
-- Build CircuitBreaker decorator that trips after 3 consecutive 429/502/503 responses, quarantines model for 60s *(hatte die Idee 3×)*
-- Create PreFlightProbe that sends 1-token completion to candidate models before dispatch, filters out models re *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals (model reliability, skill adoption, stale analysis) persist without automatic binding to concrete actions, creating intent-action decoupli
+- Prune runs remove zero facts/events despite accumulating stale drive goals, indicating the retention policy lacks triggers for actual cleanup.
+- Reflex tool 'alte-schwarm-ergebnisse-aufräumen.py' succeeds instantly (0.45s) when invoked, demonstrating local-first execution outperforms model call
+- Five skill proposals repeat across cycles but none are implemented, revealing a proposal-to-execution gap that stalls capability growth.
+- Model z-ai/glm-5.2:free fails 100% with 429 errors while nvidia/nemotron-3-ultra succeeds but with high latency (31-84s), proving single-model depende
 - Market-analysis swarm completed via reflex but produced no measurable output, revealing a telemetry gap for swarm outcomes.
 - Self-diagnosis reports zero organ errors while model failures exceed 80%, indicating health metrics don't capture external API reliability.
 - Proposed skills (fallback chain, rate-aware scheduler, stale-work sweeper) remain unimplemented, creating a persistent capability gap.
@@ -51,11 +56,6 @@
 - Latency variance (8.9–29 s) makes fixed timeouts unsafe; percentile-based SLOs are needed for each model.
 - Upstream 502 errors from Nvidia show provider instability beyond rate limiting, requiring circuit-breaker logic per provider.
 - 429 rate limits affect every free model simultaneously, indicating shared OpenRouter quota rather than per-model limits.
-- No systematic validation of hand_action outputs allows empty or schema-violating results to pass silently.
-- Stale work items (market analyses) persist for days without automatic reaping or escalation.
-- Skill proposals accumulate but rarely graduate to implemented capabilities, creating a proposal–implementation gap.
-- Latency variance (7–31 s) on the fallback model shows no latency budget or timeout enforcement.
-- Persistent 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness and automatic failover.
 
 ---
 
