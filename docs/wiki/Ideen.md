@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 18:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 18:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -37,10 +36,16 @@
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Combining old and new skills requires explicit integration mechanisms, as disconnected proposals fail to leverage existing knowledge structures.
+- Template-variable contamination in generated artifacts causes silent correctness failures that require rubric-based variant scoring to detect.
+- Working artifacts must be snapshotted before evolution cycles to prevent irreversible regressions during iterative improvement.
+- Simulation-to-practice effort estimation consistently underestimates by ~100%, revealing a structural bias in planning heuristics.
+- Rate-limited model failures (429 errors) are systemic across multiple providers, indicating a need for resilient routing rather than individual model 
 - Skill proposals must be validated through dry-run integration tests before deployment to avoid introducing broken or incompatible skill chains.
 - Stress-aware scheduling must degrade gracefully by dropping low-priority goals and limiting iterations when system stress exceeds a threshold.
 - Token output validation is critical because rate-limited models often return truncated or empty responses that appear successful but are unusable.
@@ -51,11 +56,6 @@
 - Successful model latencies (7.8-9.1s) exceed typical interactive thresholds, necessitating async fallback for time-sensitive tasks.
 - Upstream service errors (HTTP 502 from NVIDIA) reveal dependency on provider infrastructure health beyond rate limits.
 - Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models on OpenRouter, indicating systemic quota exhaustion rather than isol
-- Latency increases correlate with token count, but successful models maintain <35s even at higher token volumes.
-- Repeated failures on the same model within 30s indicate a need for immediate blacklisting, not just retry.
-- Models with lower token output (e.g., 492) still succeed under load, implying input-heavy tasks are more resilient.
-- 502 upstream errors from Nvidia occur independently of 429s, suggesting provider-side overload requiring fallback.
-- 429 errors cluster at peak load timestamps, indicating rate-limit exhaustion rather than model failure.
 
 ---
 

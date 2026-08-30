@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7433 Fakten** · Stand 2026-08-30 18:23 UTC · aktualisiert bei jedem Herzschlag
+**7438 Fakten** · Stand 2026-08-30 18:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3660
+- **dream:** 3665
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830183137:5:e3a8e4`
+*30.08. 18:31 UTC · Quelle: dream*
+
+Combining old and new skills requires explicit integration mechanisms, as disconnected proposals fail to leverage existing knowledge structures.
+
+### `dream:20260830183137:4:eb91a7`
+*30.08. 18:31 UTC · Quelle: dream*
+
+Template-variable contamination in generated artifacts causes silent correctness failures that require rubric-based variant scoring to detect.
+
+### `dream:20260830183137:3:489cb6`
+*30.08. 18:31 UTC · Quelle: dream*
+
+Working artifacts must be snapshotted before evolution cycles to prevent irreversible regressions during iterative improvement.
+
+### `dream:20260830183137:2:f57450`
+*30.08. 18:31 UTC · Quelle: dream*
+
+Simulation-to-practice effort estimation consistently underestimates by ~100%, revealing a structural bias in planning heuristics.
+
+### `dream:20260830183137:1:10cf7a`
+*30.08. 18:31 UTC · Quelle: dream*
+
+Rate-limited model failures (429 errors) are systemic across multiple providers, indicating a need for resilient routing rather than individual model reliability.
 
 ### `dream:20260830182215:5:602103`
 *30.08. 18:22 UTC · Quelle: dream*
