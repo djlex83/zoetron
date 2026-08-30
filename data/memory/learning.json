@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 07:48:01",
+ "stand": "2026-08-30 07:56:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,14 +69,8 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 4,
-   "erfolge": 2,
-   "quote": 0.5
-  },
-  {
    "tool": "marktanalyse-endlich-umsetzen.py",
-   "laeufe": 3,
+   "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -91,6 +85,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 3,
+   "erfolge": 2,
+   "quote": 0.667
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -220,16 +220,16 @@
   }
  ],
  "haende_quote": 0.809,
- "simulationen_angewandt": 22,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 29,
   "best": 9.0,
-  "schnitt": 5.83
+  "schnitt": 5.93
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 26,
-   "schnitt": 5.81
+   "schnitt": 5.85
   },
   "bau": {
    "n": 2,

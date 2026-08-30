@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 07:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 07:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Iterative revision reduced model errors and produced a working 414-line Python artifact, but the calibration gap means reliability gains are not yet f
+- The simulation→revision→verification loop is effective (artifact runs successfully after revision) but calibration is miscalibrated (predicted 4 vs ac
+- inclusionai/ling-3.0-flash-fin consistently succeeds under load and should be the default fallback model when others fail.
+- Model endpoint availability on OpenRouter is unstable — models succeeding once (e.g., nemotron-3-ultra-55b) can return 404 on subsequent calls, necess
+- HTTP 429 rate-limiting is the dominant failure mode across multiple OpenRouter models, requiring exponential backoff and retry logic instead of immedi
 - Signal-driven goals (failure/stale/gap) need a prioritization queue that prevents competing goals from consuming the same scarce retry budget simultan
 - Rate-limit errors (429) dominate the failure mode, requiring built-in exponential backoff and request throttling before any retry logic is invoked.
 - Silent tool failures (exit: 1 with null error) indicate missing error capture and diagnostic instrumentation in execution wrappers, making failures un
@@ -51,11 +56,6 @@
 - Output results from external model calls require structural validation before downstream consumption to prevent cascading task failures.
 - A persistent gap between skill proposal generation and actual implementation signals that proposals must be auto-promoted to executable specs when bac
 - Free-tier API models repeatedly hit rate limits under load, making them unsuitable as sole call targets without a resilient fallback architecture.
-- The local-first execution policy — preferring hand_action over model calls — is empirically validated but not yet enforced as a system-wide rule.
-- Stale goals accumulate when no expiration or renewal mechanism forces reassessment of long-running abandoned work items.
-- Skill proposals decay when no automated pipeline converts failure-validated proposals into registered reflex tools within a bounded timeframe.
-- Reflex-based tool execution consistently converges and outperforms model-dependent execution, yet 55 skill proposals remain unimplemented due to missi
-- External model APIs fail predictably with 429 rate limits, and working fallback models exist but lack automated circuit-breaking to prevent cascading 
 
 ---
 
