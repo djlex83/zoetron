@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6936 Fakten** · Stand 2026-08-30 03:50 UTC · aktualisiert bei jedem Herzschlag
+**6941 Fakten** · Stand 2026-08-30 03:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3306
+- **dream:** 3311
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830035422:5:d84eaf`
+*30.08. 03:54 UTC · Quelle: dream*
+
+The system enters 'conserve' mode under stress with severely limited parallelism, so resource-aware task scheduling is critical for reliability.
+
+### `dream:20260830035422:4:fcc54f`
+*30.08. 03:54 UTC · Quelle: dream*
+
+Scripts can execute without actually operating on real data (path validation failures), so effect verification is mandatory after any tool run.
+
+### `dream:20260830035422:3:6acf1e`
+*30.08. 03:54 UTC · Quelle: dream*
+
+Knowledge base contradictions lead to incorrect conclusions and must be actively detected and resolved before they propagate.
+
+### `dream:20260830035422:2:87c7b9`
+*30.08. 03:54 UTC · Quelle: dream*
+
+Stale swarm work items accumulate and block new insights — regular cleanup cycles are required to prevent knowledge debt.
+
+### `dream:20260830035422:1:30c6ae`
+*30.08. 03:54 UTC · Quelle: dream*
+
+API rate limiting (429) is the dominant systemic failure mode across nearly all models, making a ranked fallback chain with rate-aware scheduling essential.
 
 ### `dream:20260830034944:5:395c17`
 *30.08. 03:49 UTC · Quelle: dream*
