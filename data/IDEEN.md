@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No systematic validation of hand_action outputs allows empty or schema-violating results to pass silently.
+- Stale work items (market analyses) persist for days without automatic reaping or escalation.
+- Skill proposals accumulate but rarely graduate to implemented capabilities, creating a proposal–implementation gap.
+- Latency variance (7–31 s) on the fallback model shows no latency budget or timeout enforcement.
+- Persistent 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness and automatic failover.
 - No calibration data exists per (task_type, model, context_size), so model selection remains naive and unreproducible.
 - Self-diagnosis consistently reports zero findings, suggesting the diagnostic depth is insufficient to catch real systemic issues.
 - Skill proposals accumulate across cycles but are never verified as implemented, creating a persistent gap between suggestion and capability.
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors while model failures persist, indicating the diagnostic scope excludes external API health and routing logic.
 - Multiple nearly identical skill proposals for ModelRouter and CircuitBreaker accumulate without implementation, revealing a proposal-to-execution gap 
 - The model z-ai/glm-5.2:free consistently fails with 429 errors across multiple cycles while nvidia/nemotron-3-ultra succeeds at 14-18s latency, provin
-- Skill proposals generated during failure recovery should auto-convert to registered tools within one cycle to close the learning loop.
-- Self-diagnosis showing zero organ errors while model failures persist indicates monitoring blind spots in external API health.
-- Local-first execution of registered reflex tools eliminates unnecessary model calls and reduces failure surface.
-- High latency variance (9-150s) in working models requires adaptive timeouts rather than fixed thresholds.
-- Rate-limited models (429 errors) must be quarantined immediately to prevent cascade failures across dependent tasks.
 
 ---
 

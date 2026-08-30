@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6956 Fakten** · Stand 2026-08-30 04:13 UTC · aktualisiert bei jedem Herzschlag
+**6961 Fakten** · Stand 2026-08-30 04:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3326
+- **dream:** 3331
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830041859:5:d559bc`
+*30.08. 04:18 UTC · Quelle: dream*
+
+No systematic validation of hand_action outputs allows empty or schema-violating results to pass silently.
+
+### `dream:20260830041859:4:4af95e`
+*30.08. 04:18 UTC · Quelle: dream*
+
+Stale work items (market analyses) persist for days without automatic reaping or escalation.
+
+### `dream:20260830041859:3:470634`
+*30.08. 04:18 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely graduate to implemented capabilities, creating a proposal–implementation gap.
+
+### `dream:20260830041859:2:fbb404`
+*30.08. 04:18 UTC · Quelle: dream*
+
+Latency variance (7–31 s) on the fallback model shows no latency budget or timeout enforcement.
+
+### `dream:20260830041859:1:b30ea3`
+*30.08. 04:18 UTC · Quelle: dream*
+
+Persistent 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness and automatic failover.
 
 ### `dream:20260830041219:5:91d9be`
 *30.08. 04:12 UTC · Quelle: dream*
