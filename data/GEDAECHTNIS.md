@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7269 Fakten** · Stand 2026-08-30 13:34 UTC · aktualisiert bei jedem Herzschlag
+**7274 Fakten** · Stand 2026-08-30 13:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3530
+- **dream:** 3535
 - **swarm_artifact:** 1685
 - **last_swarm_critique:** 630
 - **anti_pattern:** 525
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830133859:5:f19f6f`
+*30.08. 13:38 UTC · Quelle: dream*
+
+Hand-action tooling completes in <1 s with clean exit codes, confirming local execution reliability.
+
+### `dream:20260830133859:4:8906fb`
+*30.08. 13:38 UTC · Quelle: dream*
+
+Simulation-gated exploration ("Blinden Fleck #2") passed risk/revision checks and TOR confirmed artifact execution (257-line Python script).
+
+### `dream:20260830133859:3:29976c`
+*30.08. 13:38 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model with 100% success rate and consistent sub-30 s latency in this sample.
+
+### `dream:20260830133859:2:b4fce6`
+*30.08. 13:38 UTC · Quelle: dream*
+
+Nvidia Nemotron-3-Ultra exhibits intermittent 502 upstream overloads yet succeeds ~70% of calls with highly variable latency (43–101 s).
+
+### `dream:20260830133859:1:1ad982`
+*30.08. 13:38 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate-limiting (z-ai/glm-5.2:free failed 6×, Gemma models 4×), making them unsuitable for latency-critical paths.
 
 ### `dream:20260830133241:5:b3d111`
 *30.08. 13:32 UTC · Quelle: dream*

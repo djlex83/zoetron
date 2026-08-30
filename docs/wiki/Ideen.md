@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand-action tooling completes in <1 s with clean exit codes, confirming local execution reliability.
+- Simulation-gated exploration ("Blinden Fleck #2") passed risk/revision checks and TOR confirmed artifact execution (257-line Python script).
+- inclusionai/ling-3.0-flash-fin:free is the only model with 100% success rate and consistent sub-30 s latency in this sample.
+- Nvidia Nemotron-3-Ultra exhibits intermittent 502 upstream overloads yet succeeds ~70% of calls with highly variable latency (43–101 s).
+- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting (z-ai/glm-5.2:free failed 6×, Gemma models 4×), making them unsuitable for latency-c
 - Single-model success (ling-3.0-flash-fin) creates silent fragility; diversity must be maintained via continuous background probing.
 - Simulation insights decay without automated revision loops that close simulate→revise→apply→verify cycles.
 - Metabolism stress=1.0 forces conservative budgets that starve exploration, demanding stress-aware goal scoping.
@@ -51,11 +56,6 @@
 - Evolution improves variant scores (6→9) but swarm fails to converge when critic integration gaps persist.
 - High-latency fallback models (30s+) exceed swarm cycle budgets, stalling convergence despite successful responses.
 - Free-tier models simultaneously hit 429 rate limits, causing cascading fallback failures across the entire model pool.
-- Calibration predictions can be highly accurate, as demonstrated by the exact match between predicted and actual scores.
-- Smaller or less popular free models like inclusionai/ling-3.0-flash-fin:free provide faster and more reliable responses than heavily loaded alternativ
-- Evolution runs effectively improve artifact quality, successfully elevating a baseline score of 6 to a winning score of 9.
-- The nvidia/nemotron-3-ultra-550b-a55b:free model suffers from high latency and occasional 502 upstream overload errors.
-- Free models on OpenRouter frequently hit 429 rate limits, necessitating robust fallback mechanisms.
 
 ---
 
