@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,13 +17,13 @@
 - Build a model fallback chain that pre-orders free-tier models by historical success rate and auto-rotates on 4 *(hatte die Idee 3×)*
 - Create a proposal-to-skill conversion gate requiring each proposal to have a defined implementation step, vali *(hatte die Idee 3×)*
 - Implement a model health scorecard tracking success rate, latency p95, and consecutive failures to drive dynam *(hatte die Idee 3×)*
-- Implement model-router with real-time health scoring, automatic fallback, and per-model latency percentiles. *(hatte die Idee 2×)*
-- Add adaptive timeout/circuit-breaker that scales with model's recent p95 latency. *(hatte die Idee 2×)*
-- Standardize simulation-revision loop (min 3 revisions, risk threshold) as pre-execution gate for all code-gene *(hatte die Idee 2×)*
+- Implement ModelRouter with per-model token-bucket quota tracking, health scoring (success rate, latency p50/p9 *(hatte die Idee 3×)*
+- Build CircuitBreaker decorator that trips after 3 consecutive 429/502/503 responses, quarantines model for 60s *(hatte die Idee 3×)*
+- Create PreFlightProbe that sends 1-token completion to candidate models before dispatch, filters out models re *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three drive goals activated simultaneously (reduce model errors, implement skills, finish stale market analysis) but no concrete execution traces foll
+- Prune runs consistently remove 0 facts and 0 events, suggesting either the pruning criteria are too strict or the system accumulates no removable debr
+- Reflex tools (swarm convergence, market cleanup) achieve 100% convergence in this session while model-dependent planning fails, indicating reflexes ar
+- Five skill proposals exist (ModelRouter, CircuitBreaker, PreFlightProbe, ProposalGate, DataFreshnessMonitor) but zero have been implemented, revealing
+- Model z-ai/glm-5.2:free fails 100% of the time with 429 errors while nvidia/nemotron-3-ultra succeeds but with 20-44s latency variance, proving single
 - Swarm convergence occurred without a measurable score, making it impossible to verify if the 8+ quality threshold was actually met.
 - Five concrete skill proposals exist but remain unimplemented, creating a gap between diagnosed problems and deployed solutions.
 - Only one model (inclusionai/ling-3.0-flash-fin) succeeded but with high latency (9.7s), suggesting capacity constraints on working models.
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free succeeded on every call with 9–11s latency, identifying it as the current stable default for free-tier routing.
 - A single model (nemotron) accumulated three consecutive errors and was blocked for 30 minutes, showing that error streaks trigger hard bans.
 - Free-tier models frequently hit 429 rate limits under load, making them unreliable for production workflows without fallback chains.
-- Hand actions (local code execution) complete in ~0.2s with zero failures, making them preferable for deterministic tasks over unreliable model calls.
-- The automatic 1800-second block after 3 consecutive errors effectively prevents cascade failures but may be too aggressive for transient 429 errors.
-- Models returning 404 (not found) should be immediately deprecated rather than retried, as seen with nvidia/nemotron-3-ultra-550b-a55b:free.
-- The model inclusionai/ling-3.0-flash-fin:free shows consistent availability but highly variable latency (4–33s), suggesting it should be the primary f
-- Rate limiting (HTTP 429) is the primary failure mode across multiple free-tier models, indicating the need for request throttling or fallback chains.
 
 ---
 
