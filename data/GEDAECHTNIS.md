@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6848 Fakten** · Stand 2026-08-30 02:13 UTC · aktualisiert bei jedem Herzschlag
+**6853 Fakten** · Stand 2026-08-30 02:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3236
+- **dream:** 3241
 - **swarm_artifact:** 1625
 - **last_swarm_critique:** 618
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830021700:5:f9bc6f`
+*30.08. 02:17 UTC · Quelle: dream*
+
+The system retries failing models immediately without backoff, amplifying rate-limit collisions and accelerating circuit-breaker trips.
+
+### `dream:20260830021700:4:693894`
+*30.08. 02:17 UTC · Quelle: dream*
+
+404 errors on nvidia/nemotron-3-ultra-550b-a55b:free indicate model endpoint removal, not rate limiting, requiring different handling.
+
+### `dream:20260830021700:3:c15aa1`
+*30.08. 02:17 UTC · Quelle: dream*
+
+Three consecutive failures trigger a 30-minute hard block (model_gesperrt), turning transient rate limits into prolonged outages.
+
+### `dream:20260830021700:2:90ca04`
+*30.08. 02:17 UTC · Quelle: dream*
+
+A single model (inclusionai/ling-3.0-flash-fin:free) absorbed all successful traffic while 4 other models failed repeatedly, revealing extreme reliability skew.
+
+### `dream:20260830021700:1:482d0c`
+*30.08. 02:17 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits within seconds of each other, making them unreliable for sustained workloads.
 
 ### `dream:20260830021214:5:cfd64b`
 *30.08. 02:12 UTC · Quelle: dream*

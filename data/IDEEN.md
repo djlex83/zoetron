@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system retries failing models immediately without backoff, amplifying rate-limit collisions and accelerating circuit-breaker trips.
+- 404 errors on nvidia/nemotron-3-ultra-550b-a55b:free indicate model endpoint removal, not rate limiting, requiring different handling.
+- Three consecutive failures trigger a 30-minute hard block (model_gesperrt), turning transient rate limits into prolonged outages.
+- A single model (inclusionai/ling-3.0-flash-fin:free) absorbed all successful traffic while 4 other models failed repeatedly, revealing extreme reliabi
+- Free-tier models on OpenRouter consistently hit 429 rate limits within seconds of each other, making them unreliable for sustained workloads.
 - Swarm/reflex execution fails silently - the tool 'alte-schwarm-arbeiten-zu-ende-bringen.py' returns ok:false with no error detail, blocking skill-buil
 - Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), preventing recovery actions from executing.
 - File/path resolution is broken in hand actions: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero-byte reads.
@@ -51,11 +56,6 @@
 - Multiple skill proposals address model routing (router, circuit breaker, pre-flight probe) but none have been implemented, revealing an execution gap.
 - Fallback model (nvidia/nemotron-3-ultra) succeeds but at 12-52s latency, making it unsuitable for interactive loops.
 - Primary model (z-ai/glm-5.2:free) consistently fails with 429 rate limits, forcing fallback to high-latency alternatives.
-- A new improvement drive ('Fehler bei Vorhersagen reduzieren') was auto-triggered by failure signals, confirming the system correctly correlates error 
-- Self-diagnosis and pruning found zero actionable issues, indicating reactive health checks function but lack proactive failure prevention before tasks
-- Swarm execution failed to converge in 2 cycles, yet evolution produced an 8.7-scoring variant, proving that non-convergence should trigger evolution r
-- The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but exhibits high latency variance (33–92s), requiring enforced timeouts and fallback mec
-- The z-ai/glm-5.2:free model is persistently rate-limited (repeated 429 errors) and must be quarantined from routing until its API quota resets.
 
 ---
 
