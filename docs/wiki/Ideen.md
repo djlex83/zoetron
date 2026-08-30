@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 09:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 09:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High model latency (50-75s) makes iterative loops impractical; need async/pipelined execution or faster models.
+- Proposed skills accumulate without verification loop; need skill adoption tracker with execution proof.
+- Hand actions fail due to path resolution issues (relative vs absolute paths, missing data directory handling).
+- Swarm convergence fails when critic capacity is too low relative to builders (1:3 ratio) and no explicit convergence gate exists.
+- Rate-limited models (glm-5.2) must be excluded from primary rotation; fallback chains with health checks are essential for reliability.
 - Successful convergence on the first swarm run (reflex mode, score 8+) shows the architecture works when model calls succeed.
 - Structured error capture (HTTP status, latency, tokens) is absent, so failure patterns remain invisible to automated analysis.
 - Conserve mode's strict iteration budget (max_iterations=1) prevents retry logic from activating even when fallback providers exist.
@@ -51,11 +56,6 @@
 - Simulation flagged 2 risks and 2 revisions yet zero revisions were applied, indicating a simulation-to-execution gap.
 - Evolutionary variant selection improved score from 7 to 9, but swarm halted at 2 cycles without convergence.
 - Only inclusionai/ling-3.0-flash-fin:free reliably serves requests; all other free models hit 429 rate limits within minutes.
-- Structured error capture is absent from model_fail events (only raw HTTP text), preventing automated classification and retry logic.
-- Competing drive_goals (failure reduction, stale analysis, skill stabilization) run in parallel without serialization, diluting progress on any single 
-- Existing skill proposals for fallback, throttling, and health-checks remain unimplemented while the same 429 errors recur.
-- Successful calls only occur on less-popular free models (e.g., inclusionai/ling-3.0-flash-fin), indicating capacity scarcity drives reliability.
-- Rate limiting (HTTP 429) across multiple free-tier providers is the dominant failure mode, making single-provider reliance untenable.
 
 ---
 
