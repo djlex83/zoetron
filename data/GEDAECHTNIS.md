@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7020 Fakten** · Stand 2026-08-30 05:36 UTC · aktualisiert bei jedem Herzschlag
+**7025 Fakten** · Stand 2026-08-30 05:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3366
+- **dream:** 3371
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 622
 - **anti_pattern:** 511
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830054928:5:5ca463`
+*30.08. 05:49 UTC · Quelle: dream*
+
+Score estimation has no feedback loop; predicted vs actual scores never compared, so estimator drift goes undetected.
+
+### `dream:20260830054928:4:4750ef`
+*30.08. 05:49 UTC · Quelle: dream*
+
+Model outputs lack validation: hand_action results can be empty, schema-invalid, or missing fields, causing silent downstream failures.
+
+### `dream:20260830054928:3:2ec8e3`
+*30.08. 05:49 UTC · Quelle: dream*
+
+Stale work and stale market data persist without automated detection, wasting context and compute on obsolete artifacts.
+
+### `dream:20260830054928:2:563e14`
+*30.08. 05:49 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain unimplemented due to high system stress (stress=1.0, conserve mode) and zero execution budget, creating a proposal-execution gap.
+
+### `dream:20260830054928:1:2f23d1`
+*30.08. 05:49 UTC · Quelle: dream*
+
+Model reliability is critically degraded: 4/5 models fail consistently with 429 rate limits or 502 upstream errors, making fallback chains essential for any production task.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modellfehler stark verri:2`
 *30.08. 05:33 UTC · Quelle: evolution*
