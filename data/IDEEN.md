@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 13:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reactive model switching wastes cycles; proactive health registry must gate task assignment before swarm launch.
+- Simulation detects 5 risks and demands 5 revisions, yet applied revisions still yield non-convergent swarm (score 6).
+- Evolution improves variant scores (6→9) but swarm fails to converge when critic integration gaps persist.
+- High-latency fallback models (30s+) exceed swarm cycle budgets, stalling convergence despite successful responses.
+- Free-tier models simultaneously hit 429 rate limits, causing cascading fallback failures across the entire model pool.
 - Calibration predictions can be highly accurate, as demonstrated by the exact match between predicted and actual scores.
 - Smaller or less popular free models like inclusionai/ling-3.0-flash-fin:free provide faster and more reliable responses than heavily loaded alternativ
 - Evolution runs effectively improve artifact quality, successfully elevating a baseline score of 6 to a winning score of 9.
@@ -51,11 +56,6 @@
 - High stress (1.0) with conserve metabolism state creates a death spiral: failures increase stress, stress reduces budget, reduced budget prevents reco
 - nvidia/nemotron-3-ultra-550b-a55b:free shows highest reliability but latency variance (25-107s) makes it unsuitable for time-critical paths.
 - Rate limiting (429) across multiple free-tier models indicates systemic provider throttling, not isolated model failures.
-- Swarm planning ignores real-time model health, assigning tasks to known-bad models and wasting cycles.
-- Reflex-driven error reduction converged without a persistent policy, so gains evaporate when the reflex isn't triggered.
-- Proposed skills (fallback chain, health monitor, path resolver) are generated but not automatically instantiated or wired into the execution loop.
-- Model health varies dramatically: nemotron works but at 17-20s latency, ling-3.0-flash-fin succeeds at ~10s, others consistently fail.
-- Free-tier models on OpenRouter suffer pervasive 429 rate limits, making single-model reliance unreliable.
 
 ---
 

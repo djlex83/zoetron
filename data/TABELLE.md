@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 4974 Neuronen · 254282 bewertete Synapsen
+Stand: 4981 Neuronen · 254750 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,11 +12,11 @@ Stand: 4974 Neuronen · 254282 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 507 | 0.24 |
 | 2 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 506 | 0.23 |
-| 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 486 | 0.24 |
+| 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 487 | 0.24 |
 | 4 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 428 | 0.26 |
 | 5 | 💭 | The primary model (glm-5.2) fails consistently with 429 rate lim… | 471 | 0.24 |
 | 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 428 | 0.26 |
-| 7 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 474 | 0.23 |
+| 7 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 475 | 0.23 |
 | 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 434 | 0.25 |
 | 9 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 423 | 0.25 |
 | 10 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 434 | 0.24 |
@@ -24,7 +24,7 @@ Stand: 4974 Neuronen · 254282 bewertete Synapsen
 | 12 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 386 | 0.25 |
 | 13 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 366 | 0.27 |
 | 14 | 💭 | Fallback to nvidia/nemotron-3-ultra-550b-a55b:free works but int… | 375 | 0.26 |
-| 15 | 💭 | Model latency varies extremely (6.5s to 128s) on the same model,… | 403 | 0.24 |
+| 15 | 💭 | Free-tier model endpoints (z-ai/glm-5.2) consistently fail with … | 435 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7259 Fakten** · Stand 2026-08-30 13:20 UTC · aktualisiert bei jedem Herzschlag
+**7264 Fakten** · Stand 2026-08-30 13:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3520
+- **dream:** 3525
 - **swarm_artifact:** 1685
 - **last_swarm_critique:** 630
 - **anti_pattern:** 525
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830132600:5:304ed7`
+*30.08. 13:26 UTC · Quelle: dream*
+
+Reactive model switching wastes cycles; proactive health registry must gate task assignment before swarm launch.
+
+### `dream:20260830132600:4:bfb9cc`
+*30.08. 13:26 UTC · Quelle: dream*
+
+Simulation detects 5 risks and demands 5 revisions, yet applied revisions still yield non-convergent swarm (score 6).
+
+### `dream:20260830132600:3:79771d`
+*30.08. 13:26 UTC · Quelle: dream*
+
+Evolution improves variant scores (6→9) but swarm fails to converge when critic integration gaps persist.
+
+### `dream:20260830132600:2:10bd06`
+*30.08. 13:26 UTC · Quelle: dream*
+
+High-latency fallback models (30s+) exceed swarm cycle budgets, stalling convergence despite successful responses.
+
+### `dream:20260830132600:1:495dcc`
+*30.08. 13:26 UTC · Quelle: dream*
+
+Free-tier models simultaneously hit 429 rate limits, causing cascading fallback failures across the entire model pool.
 
 ### `dream:20260830131919:5:566cf1`
 *30.08. 13:19 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 13:20:07",
+ "stand": "2026-08-30 13:27:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,15 +45,15 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -214,11 +214,11 @@
   }
  ],
  "haende_quote": 0.801,
- "simulationen_angewandt": 25,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 30,
+  "n": 29,
   "best": 9.0,
-  "schnitt": 5.97
+  "schnitt": 6.03
  },
  "score_nach_ziel_typ": {
   "analyse": {
