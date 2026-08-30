@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7517 Fakten** · Stand 2026-08-30 21:21 UTC · aktualisiert bei jedem Herzschlag
+**7530 Fakten** · Stand 2026-08-30 21:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3700
-- **swarm_artifact:** 1727
-- **last_swarm_critique:** 637
+- **dream:** 3705
+- **swarm_artifact:** 1733
+- **last_swarm_critique:** 638
 - **anti_pattern:** 535
-- **last_swarm_goal:** 386
+- **last_swarm_goal:** 387
 - **strategy:** 288
 - **tool:** 84
 - **hand_result:** 83
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*30.08. 21:41 UTC · Quelle: critic*
+
+score=8; issues=Diagnostic script is a separate utility not integrated into the main refresh pipeline; Statistical analysis is basic (linear regression trend, simple volatility) - could use more robust methods; No data quality validation beyond checking for 'C
+
+### `last_swarm_goal`
+*30.08. 21:34 UTC · Quelle: system*
+
+Veraltete Marktwissen auffrischen
+
+### `dream:20260830213338:5:639bb2`
+*30.08. 21:33 UTC · Quelle: dream*
+
+Hand actions execute reliably with near-zero duration (0.24-0.33s) and no errors, showing robust low-level filesystem operations.
+
+### `dream:20260830213338:4:801c4e`
+*30.08. 21:33 UTC · Quelle: dream*
+
+Calibration consistently under-predicts actual resource needs (predicted 4 vs actual 8), indicating a systematic bias in resource estimation.
+
+### `dream:20260830213338:3:fb5ee2`
+*30.08. 21:33 UTC · Quelle: dream*
+
+The swarm system successfully converged on goal 'Veraltete Infos auffrischen' with score 8 in a single cycle, demonstrating effective parallel execution.
+
+### `dream:20260830213338:2:48aef2`
+*30.08. 21:33 UTC · Quelle: dream*
+
+Model latency varies dramatically (8s to 175s) even for the same model across calls, suggesting API-side throttling or queuing effects.
+
+### `dream:20260830213338:1:ab453b`
+*30.08. 21:33 UTC · Quelle: dream*
+
+All model failures are exclusively 429 Too Many Requests errors from OpenRouter, indicating rate-limiting rather than model-specific issues.
 
 ### `tool:alte-marktanalysen-verwerten`
 *30.08. 21:20 UTC · Quelle: hands*
