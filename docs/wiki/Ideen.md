@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 01:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
@@ -37,10 +37,15 @@
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A new improvement drive ('Fehler bei Vorhersagen reduzieren') was auto-triggered by failure signals, confirming the system correctly correlates error 
+- Self-diagnosis and pruning found zero actionable issues, indicating reactive health checks function but lack proactive failure prevention before tasks
+- Swarm execution failed to converge in 2 cycles, yet evolution produced an 8.7-scoring variant, proving that non-convergence should trigger evolution r
+- The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but exhibits high latency variance (33–92s), requiring enforced timeouts and fallback mec
+- The z-ai/glm-5.2:free model is persistently rate-limited (repeated 429 errors) and must be quarantined from routing until its API quota resets.
 - Reactive proposal generation after each failure incident creates technical debt; proactive reliability patterns must be codified as reusable skills.
 - Stale analytical assets (market analyses) lose decision value rapidly; automated freshness monitoring with refresh triggers is essential.
 - Skill proposals accumulate reactively after failures but lack implementation plans, creating a proposal-execution gap that delays reliability gains.
@@ -51,11 +56,6 @@
 - The system generates high-quality architectural skill proposals (ModelRouter, LatencySLOGuard, etc.) but lacks any automated pipeline to implement, te
 - Nemotron-3-Ultra exhibits extreme latency variance (4.8–45.4 s) on similar token loads, indicating unpredictable queueing or cold-start behavior that 
 - The free-tier model z-ai/glm-5.2:free suffers 100% 429 rate-limit failures across 5 consecutive calls, making it effectively unusable for production r
-- Simulation verdicts returning 'revise' with multiple risks signal that pre-execution validation must precede full resource commitment.
-- Silent failures (e.g., file operations resolving relative paths to nothing) propagate undetected unless explicit side-effect validation gates are enfo
-- Analysis results and dream-derived insights decay into wasted knowledge when no concrete action bridge connects them to execution steps.
-- The nvidia/nemotron-3-ultra-550b-a55b:free fallback succeeds but exhibits extreme latency variance (6.8s–82.4s), requiring p95-aware routing instead o
-- The z-ai/glm-5.2:free model fails repeatedly with 429 errors, indicating a systemic capacity limit that demands automatic quarantine rather than retry
 
 ---
 

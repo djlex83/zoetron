@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6833 Fakten** · Stand 2026-08-30 01:13 UTC · aktualisiert bei jedem Herzschlag
+**6838 Fakten** · Stand 2026-08-30 02:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3221
+- **dream:** 3226
 - **swarm_artifact:** 1625
 - **last_swarm_critique:** 618
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830015957:5:ce21cc`
+*30.08. 01:59 UTC · Quelle: dream*
+
+A new improvement drive ('Fehler bei Vorhersagen reduzieren') was auto-triggered by failure signals, confirming the system correctly correlates error patterns with fresh goals.
+
+### `dream:20260830015957:4:2ccabf`
+*30.08. 01:59 UTC · Quelle: dream*
+
+Self-diagnosis and pruning found zero actionable issues, indicating reactive health checks function but lack proactive failure prevention before tasks degrade.
+
+### `dream:20260830015957:3:b71e07`
+*30.08. 01:59 UTC · Quelle: dream*
+
+Swarm execution failed to converge in 2 cycles, yet evolution produced an 8.7-scoring variant, proving that non-convergence should trigger evolution rather than abandonment.
+
+### `dream:20260830015957:2:91faa4`
+*30.08. 01:59 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but exhibits high latency variance (33–92s), requiring enforced timeouts and fallback mechanisms.
+
+### `dream:20260830015957:1:aaf921`
+*30.08. 01:59 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is persistently rate-limited (repeated 429 errors) and must be quarantined from routing until its API quota resets.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
 *30.08. 01:12 UTC · Quelle: evolution*
