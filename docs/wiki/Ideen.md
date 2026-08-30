@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary iteration (3 variants, selection) lifted scores from 1/10 to 8/6/8, proving that generate-critique-revise loops outperform single-shot ge
+- Calibration is severely misaligned (predicted 6 vs actual 1), revealing that internal confidence estimates do not reflect true success probability.
+- Sandbox execution failures are predominantly syntax errors (asyncio.run misuse, pipe operators) rather than logic flaws, indicating a need for pre-exe
+- Nemotron-3-ultra succeeds consistently but exhibits extreme latency variance (7–179s), requiring adaptive timeout strategies.
+- Free-tier models (glm-5.2:free) systematically fail with 429 rate-limit errors, making them unreliable for production workflows.
 - Circuit breaking must operate at the gateway level (detecting global 429 saturation) rather than per-model, since all models share the same rate-limit
 - 65 skill proposals accumulate but few execute because the proposal-to-reflex-tool pipeline produces tools that fail silently without health feedback.
 - The system entered conserve mode (stress=1.0) yet continued making expensive model calls, creating a self-reinforcing failure loop of rate-limit exhau
@@ -51,11 +56,6 @@
 - Swarm convergence failed despite 5 revisions because critic/planner ratio (1:1) was insufficient to overcome builder majority (3) without explicit con
 - Latency variance of 16x (6.4s vs 105.6s) on the same model (nemotron-3-ultra) indicates unstable upstream capacity, not model quality.
 - Free-tier models exhibit systematic 429 rate-limiting and 502 upstream failures making them unreliable for production workflows.
-- Artifact generation (98-line Python) + TOR validation (grün=true) + calibration (error=1) forms a working verify-execute loop.
-- Contradiction detection and contradiction resolution are distinct capabilities; the system initially lacked the former.
-- Evolutionary refinement boosted contradiction-resolution score from 4/10 to 9/9/8 once critic identified missing contradiction-detection capability.
-- Nemotron-3-ultra succeeds consistently but with high latency variance (14-81s), requiring timeout-aware orchestration.
-- Free-tier models (glm-5.2) consistently hit 429 rate limits making them unreliable for automated pipelines.
 
 ---
 

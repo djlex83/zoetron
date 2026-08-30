@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7040 Fakten** · Stand 2026-08-30 06:09 UTC · aktualisiert bei jedem Herzschlag
+**7045 Fakten** · Stand 2026-08-30 06:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3386
+- **dream:** 3391
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 622
 - **anti_pattern:** 511
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830061429:5:9bf9a5`
+*30.08. 06:14 UTC · Quelle: dream*
+
+Evolutionary iteration (3 variants, selection) lifted scores from 1/10 to 8/6/8, proving that generate-critique-revise loops outperform single-shot generation.
+
+### `dream:20260830061429:4:5e2bc7`
+*30.08. 06:14 UTC · Quelle: dream*
+
+Calibration is severely misaligned (predicted 6 vs actual 1), revealing that internal confidence estimates do not reflect true success probability.
+
+### `dream:20260830061429:3:f5ae5f`
+*30.08. 06:14 UTC · Quelle: dream*
+
+Sandbox execution failures are predominantly syntax errors (asyncio.run misuse, pipe operators) rather than logic flaws, indicating a need for pre-execution validation.
+
+### `dream:20260830061429:2:e483c8`
+*30.08. 06:14 UTC · Quelle: dream*
+
+Nemotron-3-ultra succeeds consistently but exhibits extreme latency variance (7–179s), requiring adaptive timeout strategies.
+
+### `dream:20260830061429:1:b9a74e`
+*30.08. 06:14 UTC · Quelle: dream*
+
+Free-tier models (glm-5.2:free) systematically fail with 429 rate-limit errors, making them unreliable for production workflows.
 
 ### `dream:20260830060753:5:cbcda4`
 *30.08. 06:07 UTC · Quelle: dream*
