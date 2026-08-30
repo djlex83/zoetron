@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 04:02:19",
+ "stand": "2026-08-30 04:08:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -123,6 +123,12 @@
    "quote": 1.0
   },
   {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-verstehen-und-verringern.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -195,12 +201,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -213,8 +213,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.765,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.766,
+ "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 34,
   "best": 9.0,
@@ -222,8 +222,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 32,
-   "schnitt": 6.25
+   "n": 31,
+   "schnitt": 6.16
   },
   "bau": {
    "n": 2,

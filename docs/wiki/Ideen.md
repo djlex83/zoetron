@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
@@ -34,13 +34,18 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals explicitly target the observed failure patterns (model errors, unimplemented proposals, routing-benchmark disconnect) but remain as signal
+- No pruning occurs (0 facts/events pruned across cycles), suggesting memory growth is unchecked and may degrade performance over time.
+- Self-diagnosis reports zero organ errors while model failures persist, indicating the diagnostic scope excludes external API health and routing logic.
+- Multiple nearly identical skill proposals for ModelRouter and CircuitBreaker accumulate without implementation, revealing a proposal-to-execution gap 
+- The model z-ai/glm-5.2:free consistently fails with 429 errors across multiple cycles while nvidia/nemotron-3-ultra succeeds at 14-18s latency, provin
 - Skill proposals generated during failure recovery should auto-convert to registered tools within one cycle to close the learning loop.
 - Self-diagnosis showing zero organ errors while model failures persist indicates monitoring blind spots in external API health.
 - Local-first execution of registered reflex tools eliminates unnecessary model calls and reduces failure surface.
@@ -51,11 +56,6 @@
 - Knowledge base contradictions lead to incorrect conclusions and must be actively detected and resolved before they propagate.
 - Stale swarm work items accumulate and block new insights — regular cleanup cycles are required to prevent knowledge debt.
 - API rate limiting (429) is the dominant systemic failure mode across nearly all models, making a ranked fallback chain with rate-aware scheduling esse
-- Hand actions can fail silently (exit 0 but 'nothing read'), requiring output validation beyond exit codes.
-- Knowledge contradictions persist in the store without a dedicated resolution process, causing downstream reasoning errors.
-- Stale swarm works accumulate and block new insights; the system lacks an automatic stale-work reaper or escalation path.
-- Calibration error of 5 points (predicted 4 vs actual 9) indicates estimation models drift significantly and need periodic recalibration against ground
-- Model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for production dispatch without circuit-breaking.
 
 ---
 
