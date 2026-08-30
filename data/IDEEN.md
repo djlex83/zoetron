@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex tools (e.g., alte-erinnerungen-auf-wert-prüfen.py) fail silently without structured error artifacts, blocking automated repair.
+- System stress hits maximum (1.0) triggering conserve mode that caps tasks to 3 and iterations to 1, starving recovery work.
+- Proposed skills accumulate but lack verification gates; no mechanism confirms a skill was actually learned and registered.
+- Relative path resolution breaks hand actions when ZOETRON_DATA and sys.argv[1] diverge; absolute canonical paths are required.
+- Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
 - No circuit breaker or model health tracking exists, causing repeated hammering of a rate-limited endpoint instead of graceful degradation.
 - Skill proposals accumulate (7+ in this session) but only one reflex tool was actually invoked, revealing a proposal-to-implementation gap that stalls 
 - Local-first reflex execution (hand_action) completes in 0.25s with zero errors, proving deterministic tools outperform probabilistic model calls for k
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without a validation gate requiring concrete milestones and measurable acceptance tests.
 - High latency (6.9-7.9s) on nvidia/nemotron-3-ultra makes it unsuitable for time-sensitive tasks without latency-aware routing.
 - Recurring 429 errors on z-ai/glm-5.2:free indicate missing pre-flight health checks and circuit-breaker logic for rate-limited models.
-- Circuit-breaker logic is missing: after 3 consecutive 429s the model should be quarantined for a cooldown period instead of immediate retry.
-- Model health state (latency, error rates, ban status) evaporates each session because no persistent store survives restarts.
-- Convergence detection works in reflex mode (act_done.converged=true) but is absent from swarm loops, burning compute on plateaued optimization.
-- Skill proposals accumulate but never graduate to registered, executable capabilities because registration lacks enforcement of verifiable outputs.
-- Repeated 429 errors on z-ai/glm-5.2:free show that reactive fallback wastes 60+ seconds per failure before switching models.
 
 ---
 

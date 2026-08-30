@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6921 Fakten** · Stand 2026-08-30 03:35 UTC · aktualisiert bei jedem Herzschlag
+**6926 Fakten** · Stand 2026-08-30 03:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3291
+- **dream:** 3296
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830033918:5:8b590e`
+*30.08. 03:39 UTC · Quelle: dream*
+
+Reflex tools (e.g., alte-erinnerungen-auf-wert-prüfen.py) fail silently without structured error artifacts, blocking automated repair.
+
+### `dream:20260830033918:4:7e2f4e`
+*30.08. 03:39 UTC · Quelle: dream*
+
+System stress hits maximum (1.0) triggering conserve mode that caps tasks to 3 and iterations to 1, starving recovery work.
+
+### `dream:20260830033918:3:a81860`
+*30.08. 03:39 UTC · Quelle: dream*
+
+Proposed skills accumulate but lack verification gates; no mechanism confirms a skill was actually learned and registered.
+
+### `dream:20260830033918:2:7f65db`
+*30.08. 03:39 UTC · Quelle: dream*
+
+Relative path resolution breaks hand actions when ZOETRON_DATA and sys.argv[1] diverge; absolute canonical paths are required.
+
+### `dream:20260830033918:1:3b9ed3`
+*30.08. 03:39 UTC · Quelle: dream*
+
+Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
 
 ### `dream:20260830033433:5:e57ede`
 *30.08. 03:34 UTC · Quelle: dream*
