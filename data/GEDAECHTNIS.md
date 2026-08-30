@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7550 Fakten** · Stand 2026-08-30 22:14 UTC · aktualisiert bei jedem Herzschlag
+**7555 Fakten** · Stand 2026-08-30 22:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3725
+- **dream:** 3730
 - **swarm_artifact:** 1733
 - **last_swarm_critique:** 638
 - **anti_pattern:** 535
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830221947:5:dc4a71`
+*30.08. 22:19 UTC · Quelle: dream*
+
+Stale goals (market analysis) persist without automatic resurfacing; implement a staleness detector that re-prioritizes dormant work.
+
+### `dream:20260830221947:4:93aeee`
+*30.08. 22:19 UTC · Quelle: dream*
+
+35 skill proposals remain unimplemented due to missing triage-to-execution pipeline; need a staged funnel: propose → evaluate → prototype → integrate.
+
+### `dream:20260830221947:3:9d6c99`
+*30.08. 22:19 UTC · Quelle: dream*
+
+High stress (1.0) triggers conserve mode limiting to 3 tasks and 1 iteration, starving parallel work; task scheduler must adapt concurrency to stress level.
+
+### `dream:20260830221947:2:00cecc`
+*30.08. 22:19 UTC · Quelle: dream*
+
+Relative path usage ignores ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files; all file operations must resolve absolute data paths.
+
+### `dream:20260830221947:1:8328cf`
+*30.08. 22:19 UTC · Quelle: dream*
+
+Rate limiting on primary model (z-ai/glm-5.2:free) causes repeated 429 errors; need automatic fallback with exponential backoff.
 
 ### `dream:20260830221304:5:4a7b3a`
 *30.08. 22:13 UTC · Quelle: dream*

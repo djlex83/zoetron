@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -35,12 +35,17 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Liegende Marktanalysen abschließen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
 - Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 2×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 2×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals (market analysis) persist without automatic resurfacing; implement a staleness detector that re-prioritizes dormant work.
+- 35 skill proposals remain unimplemented due to missing triage-to-execution pipeline; need a staged funnel: propose → evaluate → prototype → integrate.
+- High stress (1.0) triggers conserve mode limiting to 3 tasks and 1 iteration, starving parallel work; task scheduler must adapt concurrency to stress 
+- Relative path usage ignores ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files; all file operations must resolve absolute data path
+- Rate limiting on primary model (z-ai/glm-5.2:free) causes repeated 429 errors; need automatic fallback with exponential backoff.
 - No goal-stack checkpointing exists, so any hard crash during a multi-cycle swarm loses all intermediate progress and requires full restart.
 - Thirty-five skill proposals accumulate unimplemented because no metabolic pressure forces promotion from idea to tested tool; the system dreams but do
 - Swarm executions evolve but stall at sub-threshold scores (6/10) because convergence criteria lack a minimum-quality gate, leaving goals perpetually '
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates effort by ~33% (predicted 4 vs actual 6), indicating a systematic planning bias.
 - Evolutionary repair jumps scores from 6 to 9 when the critic pinpoints "no measurable output" – concrete validation gates enable large gains.
 - Free-tier models (GLM, Gemma, Nemotron) fail predominantly via 429 rate limits and 502 upstream overloads, making them unreliable as primary workers.
-- Token output spikes (e.g., 4337 tokens) on successful nemotron calls suggest the model is compensating for upstream failures by generating more verbos
-- Model failures correlate with high stress state (stress=1.0, conserve mode), indicating that system resource constraints directly impact model reliabi
-- The swarm goal 'Alte Marktanalysen verwerten' succeeded with a 248-line Python artifact, demonstrating that focused, bounded tasks yield reliable resu
-- nvidia/nemotron-3-ultra-550b-a55b:free shows increasing latency (53s to 171s) under sustained load, suggesting resource exhaustion without proper thro
-- Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limiting issues that cause cascading failures and should trigger automatic model fallback
 
 ---
 
