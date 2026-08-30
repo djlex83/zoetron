@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7500 Fakten** · Stand 2026-08-30 21:00 UTC · aktualisiert bei jedem Herzschlag
+**7517 Fakten** · Stand 2026-08-30 21:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3695
-- **swarm_artifact:** 1721
-- **last_swarm_critique:** 636
-- **anti_pattern:** 533
-- **last_swarm_goal:** 385
-- **strategy:** 287
-- **tool:** 83
+- **dream:** 3700
+- **swarm_artifact:** 1727
+- **last_swarm_critique:** 637
+- **anti_pattern:** 535
+- **last_swarm_goal:** 386
+- **strategy:** 288
+- **tool:** 84
 - **hand_result:** 83
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 29
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-marktanalysen-verwerten`
+*30.08. 21:20 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Marktanalysen verwerten'. Datei: data/tools/alte-marktanalysen-verwerten.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Marktanalysen verwe:2`
+*30.08. 21:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Driven Insight Extraction Engine - Replace procedural scripts with an event-driven engine where each legacy data source emits standardized internal events (e.g., 'fact_extracted', 'node_linked', 'semantic_matched'). A c
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Marktanalysen verwe:1`
+*30.08. 21:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Schema-Driven Plugin Architecture - Define a strict JSON schema for market analysis results (including fields like 'insight_id', 'relevance_score', 'source_refs', and 'timestamp'). Build modular analysis plugins that each adh
+
+### `last_swarm_critique`
+*30.08. 21:17 UTC · Quelle: critic*
+
+score=6; issues=Kein messbares Ergebnis: Die Skripte drucken zwar Ausgaben, aber es gibt keine strukturierte, maschinenlesbare Ergebnisdatei (z.B. JSON), die die verwerteten Insights oder Bewertungen enthält; Inkonsistente Datenmodell-Referenzen: Das erste Skr
+
+### `last_swarm_goal`
+*30.08. 21:06 UTC · Quelle: system*
+
+Alte Marktanalysen verwerten
+
+### `dream:20260830210526:5:8f67b8`
+*30.08. 21:05 UTC · Quelle: dream*
+
+Zero facts pruned despite repeated failures indicates the pruning policy does not capture operational error patterns.
+
+### `dream:20260830210526:4:01fd38`
+*30.08. 21:05 UTC · Quelle: dream*
+
+Successful model latency varies 2x (5.1s vs 10.6s) even on the same tier, making static model selection unreliable.
+
+### `dream:20260830210526:3:240c39`
+*30.08. 21:05 UTC · Quelle: dream*
+
+Swarm convergence fails when critic-to-builder ratio falls below 1:2 (1 critic vs 3 builders), allowing low-quality proposals to persist.
+
+### `dream:20260830210526:2:f8e253`
+*30.08. 21:05 UTC · Quelle: dream*
+
+Automatic model blocking after three consecutive failures (nemotron-3-ultra blocked 1800s) prevents error cascades but reduces available capacity.
+
+### `dream:20260830210526:1:39e976`
+*30.08. 21:05 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models indiscriminately, making it a systemic infrastructure constraint rather than a model-specific issue.
 
 ### `dream:20260830205738:5:5b478f`
 *30.08. 20:57 UTC · Quelle: dream*

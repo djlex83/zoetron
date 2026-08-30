@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 20:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 21:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 2×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 2×)*
 - Marktanalyse in Handeln umsetzen *(wieder aufgegriffen: 2×)*
 - Liegende Marktanalysen abschließen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero facts pruned despite repeated failures indicates the pruning policy does not capture operational error patterns.
+- Successful model latency varies 2x (5.1s vs 10.6s) even on the same tier, making static model selection unreliable.
+- Swarm convergence fails when critic-to-builder ratio falls below 1:2 (1 critic vs 3 builders), allowing low-quality proposals to persist.
+- Automatic model blocking after three consecutive failures (nemotron-3-ultra blocked 1800s) prevents error cascades but reduces available capacity.
+- Rate limiting (429) affects all free-tier models indiscriminately, making it a systemic infrastructure constraint rather than a model-specific issue.
 - Token efficiency differs dramatically between models: nemotron used 2400 input tokens for a 225s response vs 253 input tokens for a 10.5s response fro
 - Model performance varies significantly by task: nemotron achieved 4/10 on first attempt but improved to 8-10/10 in evolved variants, showing iterative
 - poolside/laguna-s-2.1:free is the most reliable free model with zero failures across all attempts, making it a robust fallback option.
@@ -51,11 +56,6 @@
 - First hand_action failed due to relative path resolution ignoring ZOETRON_DATA and sys.argv[1]; second attempt succeeded after explicit path handling.
 - Fallback models (nvidia/nemotron-3-ultra, poolside/laguna) succeed but exhibit extreme latency variance (23s–225s), causing unpredictable task duratio
 - Primary model z-ai/glm-5.2:free consistently fails with 429 rate limits, making it unreliable as a default choice.
-- Models that fail with 429 errors create cascading failures in dependent tasks, amplifying the impact of rate limiting beyond individual requests.
-- The critic's specific feedback about missing executable Python code directly correlates with the score improvement, highlighting the importance of con
-- Task completion improved from 0/10 to 7/10 after evolution, showing that iterative refinement with critic feedback is effective for overcoming initial
-- The inclusionai/ling-3.0-flash-fin:free model consistently succeeds while others fail, suggesting it has better rate-limit tolerance or priority acces
-- Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
 
 ---
 

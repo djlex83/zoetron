@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 20:59:13",
+ "stand": "2026-08-30 21:20:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -76,6 +70,12 @@
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -135,18 +135,6 @@
    "quote": 0.0
   },
   {
-   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-prüfen-und-integrieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "wiederkehrenden-organfehler-endgültig-kl.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -201,17 +189,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.811,
+ "haende_quote": 0.81,
  "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 26,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 5.65
+  "schnitt": 5.67
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 25,
-   "schnitt": 5.68
+   "n": 26,
+   "schnitt": 5.69
   },
   "bau": {
    "n": 1,
