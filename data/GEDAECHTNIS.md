@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7288 Fakten** · Stand 2026-08-30 13:55 UTC · aktualisiert bei jedem Herzschlag
+**7293 Fakten** · Stand 2026-08-30 14:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3540
+- **dream:** 3545
 - **swarm_artifact:** 1691
 - **last_swarm_critique:** 631
 - **anti_pattern:** 525
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830140749:5:95449e`
+*30.08. 14:07 UTC · Quelle: dream*
+
+Skill proposal generation without a concurrent deployment mechanism creates a growing debt between designed and actual capabilities.
+
+### `dream:20260830140749:4:e79ad0`
+*30.08. 14:07 UTC · Quelle: dream*
+
+Self-diagnosis that excludes external API dependencies will repeatedly miss the root cause of cascading failures.
+
+### `dream:20260830140749:3:80a1d6`
+*30.08. 14:07 UTC · Quelle: dream*
+
+Reflex actions succeed consistently where deliberate planning fails, suggesting the system should default to reflex-driven recovery for stale or blocked goals.
+
+### `dream:20260830140749:2:d533f2`
+*30.08. 14:07 UTC · Quelle: dream*
+
+Analysis-to-execution conversion is the system's weakest link: market analysis goals cycle through 'abschließen,' 'nutzen,' and 'fertigstellen' without ever reaching implementation.
+
+### `dream:20260830140749:1:5b2c6f`
+*30.08. 14:07 UTC · Quelle: dream*
+
+Repeated 429 rate-limit failures on a single model indicate the absence of a pre-flight health check, making model availability the system's primary single point of failure.
 
 ### `tool:erkenntnisse-aus-schwarm-arbeit-ziehen`
 *30.08. 13:54 UTC · Quelle: hands*
