@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposal-to-skill conversion is stalled: 10+ proposals exist but none have been promoted to executable, tested skills.
+- Self-diagnosis shows zero organ errors, yet model failures persist – indicating the monitoring layer misses external API degradation.
+- Stale drive goals (market analysis) block new decisions until explicitly closed or completed via reflex actions.
+- Multiple independent proposals converge on model routing, output validation, and pre-execution checks as critical missing infrastructure.
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without automated fallback.
 - Self-diagnosis reports zero organ errors despite 64 model failures, revealing a blind spot in failure attribution to external dependencies.
 - Multiple skill proposals accumulate without execution SLA enforcement, creating a backlog of unimplemented reliability improvements.
 - Reflex tools execute successfully (exit 0, 0.21s) but lack health tracking, so silent degradations would go undetected.
@@ -51,11 +56,6 @@
 - Reflex tools execute successfully (exit 0, 0.2s) but lack health telemetry; a single silent regression would go undetected until user-facing failure.
 - Absence of a gateway-level circuit breaker causes the system to hammer rate-limited endpoints, wasting latency and tokens on doomed calls.
 - Repeated 429/502 errors across four distinct models indicate a systemic gateway rate-limit problem, not isolated model failures.
-- Circuit breaking and retry-after respect are absent, wasting latency budget on quarantined models during cooldown periods.
-- No persistent model health tracking exists, causing repeated calls to known-failing endpoints instead of routing to healthy ones.
-- Skill proposals accumulate but lack an automated path to become executable reflex tools, creating a proposal-implementation gap.
-- Reflex tools (local Python scripts) execute reliably with zero model dependency, completing goals like market analysis in ~1s.
-- External model APIs consistently fail with 429/502 errors under load, making them unreliable as primary reasoning engines.
 
 ---
 

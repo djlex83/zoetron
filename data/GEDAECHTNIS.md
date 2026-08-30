@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7070 Fakten** · Stand 2026-08-30 06:47 UTC · aktualisiert bei jedem Herzschlag
+**7083 Fakten** · Stand 2026-08-30 06:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3416
-- **swarm_artifact:** 1649
-- **last_swarm_critique:** 622
-- **anti_pattern:** 511
-- **last_swarm_goal:** 371
-- **strategy:** 276
+- **dream:** 3421
+- **swarm_artifact:** 1651
+- **last_swarm_critique:** 623
+- **anti_pattern:** 513
+- **last_swarm_goal:** 372
+- **strategy:** 277
 - **hand_result:** 80
-- **tool:** 75
+- **tool:** 76
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-reduzieren-fuer-zuverlaessi`
+*30.08. 06:56 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler reduzieren fuer Zuverlaessigkeit'. Datei: data/tools/modellfehler-reduzieren-fuer-zuverlaessi.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler reduzieren :2`
+*30.08. 06:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 4, 7]): Event-Driven Monitoring mit Entkoppelten Datenqualitaets-Gates - Zerlege das monolithische Validierungs- und Drift-System in entkoppelte Microservice-artige Gates: (1) Ein DataQualityGate-Service prüft每 Feld einzeln v
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler reduzieren :0`
+*30.08. 06:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 9, 8]): Schema-First Validierung mit Feld-Level-Mustern - Ersetze die globale required_fields-Prüfung durch eine feldspezifische Schema-Validierung pro Zeile: Für jedes Feld eines separaten Feld-Schemas prüfe einzeln, ob der 
+
+### `last_swarm_critique`
+*30.08. 06:55 UTC · Quelle: critic*
+
+score=6; issues=Datenqualitaetsprüfung prüft nur, ob ALLE required_fields fehlen, nicht ob einzelne Felder fehlen: any(row.get(f) for f in required_fields) erkennt Zeilen mit teilweise fehlenden Werten nicht; Vereinfachte Drift-Erkennung verwendet p * (p / q) 
+
+### `last_swarm_goal`
+*30.08. 06:52 UTC · Quelle: system*
+
+Modellfehler reduzieren fuer Zuverlaessigkeit
+
+### `dream:20260830065119:5:e3d77e`
+*30.08. 06:51 UTC · Quelle: dream*
+
+Proposal-to-skill conversion is stalled: 10+ proposals exist but none have been promoted to executable, tested skills.
+
+### `dream:20260830065119:4:4d1a8f`
+*30.08. 06:51 UTC · Quelle: dream*
+
+Self-diagnosis shows zero organ errors, yet model failures persist – indicating the monitoring layer misses external API degradation.
+
+### `dream:20260830065119:3:1bed76`
+*30.08. 06:51 UTC · Quelle: dream*
+
+Stale drive goals (market analysis) block new decisions until explicitly closed or completed via reflex actions.
+
+### `dream:20260830065119:2:61b91e`
+*30.08. 06:51 UTC · Quelle: dream*
+
+Multiple independent proposals converge on model routing, output validation, and pre-execution checks as critical missing infrastructure.
+
+### `dream:20260830065119:1:a78318`
+*30.08. 06:51 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without automated fallback.
 
 ### `dream:20260830064600:5:c15e4b`
 *30.08. 06:46 UTC · Quelle: dream*
