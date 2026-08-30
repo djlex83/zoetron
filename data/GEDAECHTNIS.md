@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7200 Fakten** · Stand 2026-08-30 11:43 UTC · aktualisiert bei jedem Herzschlag
+**7205 Fakten** · Stand 2026-08-30 11:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3485
+- **dream:** 3490
 - **swarm_artifact:** 1673
 - **last_swarm_critique:** 628
 - **anti_pattern:** 521
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830114804:5:325743`
+*30.08. 11:48 UTC · Quelle: dream*
+
+Prune runs remove zero facts/events, meaning retention policy is ineffective or data is already minimal.
+
+### `dream:20260830114804:4:b5b008`
+*30.08. 11:48 UTC · Quelle: dream*
+
+Metabolism stress=1.0 triggers conserve mode (max_tasks=3), starving the swarm started for skill implementation.
+
+### `dream:20260830114804:3:9481a0`
+*30.08. 11:48 UTC · Quelle: dream*
+
+Hand actions fail when relative paths don't resolve under ZOETRON_DATA, revealing a path-resolution contract violation.
+
+### `dream:20260830114804:2:01494a`
+*30.08. 11:48 UTC · Quelle: dream*
+
+Dream and drive modules consistently hit 180s timeouts, suggesting their work exceeds allocated windows or they deadlock.
+
+### `dream:20260830114804:1:c54603`
+*30.08. 11:48 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate hard rate limits that cascade into model blocks when fallbacks also time out.
 
 ### `dream:20260830114237:4:bead9a`
 *30.08. 11:42 UTC · Quelle: dream*

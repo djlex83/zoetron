@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 11:43:02",
+ "stand": "2026-08-30 11:48:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,13 +57,13 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -81,9 +81,9 @@
    "quote": 1.0
   },
   {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 3,
-   "erfolge": 3,
+   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {

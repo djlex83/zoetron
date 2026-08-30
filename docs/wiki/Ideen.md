@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 11:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs remove zero facts/events, meaning retention policy is ineffective or data is already minimal.
+- Metabolism stress=1.0 triggers conserve mode (max_tasks=3), starving the swarm started for skill implementation.
+- Hand actions fail when relative paths don't resolve under ZOETRON_DATA, revealing a path-resolution contract violation.
+- Dream and drive modules consistently hit 180s timeouts, suggesting their work exceeds allocated windows or they deadlock.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate hard rate limits that cascade into model blocks when fallbacks also time out.
 - Reflexive error-handling tools are effective for diagnosis but cannot mitigate external API exhaustion.
 - System resilience is directly tied to the ability to pivot immediately to a known-stable provider when others fail.
 - The occurrence of 404 errors demonstrates that model endpoint availability is volatile and requires proactive validation.
@@ -51,11 +56,6 @@
 - Model provider failures (429 rate limits and 404s) are systemic rather than isolated, with multiple providers failing simultaneously and only one fall
 - Dream module consistently times out at exactly 180 seconds across three consecutive cycles, indicating a structural bottleneck that blocks the entire 
 - The adaptive rate limiter and unified model executor proposed earlier remain unimplemented, and their absence is the root cause of the ongoing 429 spi
-- A failure cascade is active: repeated 429s cause swarm tools to fail, which raises stress to 1.0, which triggers conserve mode, which blocks retries a
-- Conserve mode with max_iterations=1 creates a bottleneck where each failed model call consumes the entire iteration budget, preventing any recovery or
-- Silent path-resolution failures (exit 0, no file touched) mask real errors when relative paths aren't resolved against ZOETRON_DATA, causing hand acti
-- The z-ai/glm-5.2:free model fails with 429 on every call (~8s intervals), creating a persistent failure source that should be deprioritized or placed 
-- Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), so planners must throttle ambition to match budget.
 
 ---
 
