@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence occurred without a measurable score, making it impossible to verify if the 8+ quality threshold was actually met.
+- Five concrete skill proposals exist but remain unimplemented, creating a gap between diagnosed problems and deployed solutions.
+- Only one model (inclusionai/ling-3.0-flash-fin) succeeded but with high latency (9.7s), suggesting capacity constraints on working models.
+- Upstream provider overload (502 from Nvidia) reveals dependency on external service stability beyond local control.
+- Rate limiting (429) affects multiple free-tier models simultaneously, indicating shared quota exhaustion rather than isolated failures.
 - Evolution runs improved a 5/10 score to 9/10 in one generation, but the swarm still failed to converge after two cycles, indicating that fitness thres
 - The skill 'vorgeschlagene-fähigkeiten-prüfen-und-nu' was rejected because it produced only stdout with no return value or persisted artifacts, reveali
 - inclusionai/ling-3.0-flash-fin:free succeeded on every call with 9–11s latency, identifying it as the current stable default for free-tier routing.
@@ -51,11 +56,6 @@
 - Models returning 404 (not found) should be immediately deprecated rather than retried, as seen with nvidia/nemotron-3-ultra-550b-a55b:free.
 - The model inclusionai/ling-3.0-flash-fin:free shows consistent availability but highly variable latency (4–33s), suggesting it should be the primary f
 - Rate limiting (HTTP 429) is the primary failure mode across multiple free-tier models, indicating the need for request throttling or fallback chains.
-- The system retries failing models immediately without backoff, amplifying rate-limit collisions and accelerating circuit-breaker trips.
-- 404 errors on nvidia/nemotron-3-ultra-550b-a55b:free indicate model endpoint removal, not rate limiting, requiring different handling.
-- Three consecutive failures trigger a 30-minute hard block (model_gesperrt), turning transient rate limits into prolonged outages.
-- A single model (inclusionai/ling-3.0-flash-fin:free) absorbed all successful traffic while 4 other models failed repeatedly, revealing extreme reliabi
-- Free-tier models on OpenRouter consistently hit 429 rate limits within seconds of each other, making them unreliable for sustained workloads.
 
 ---
 

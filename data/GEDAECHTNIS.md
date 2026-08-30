@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6863 Fakten** · Stand 2026-08-30 02:28 UTC · aktualisiert bei jedem Herzschlag
+**6868 Fakten** · Stand 2026-08-30 02:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3251
+- **dream:** 3256
 - **swarm_artifact:** 1625
 - **last_swarm_critique:** 618
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830023147:5:03e465`
+*30.08. 02:31 UTC · Quelle: dream*
+
+Swarm convergence occurred without a measurable score, making it impossible to verify if the 8+ quality threshold was actually met.
+
+### `dream:20260830023147:4:fe2c0a`
+*30.08. 02:31 UTC · Quelle: dream*
+
+Five concrete skill proposals exist but remain unimplemented, creating a gap between diagnosed problems and deployed solutions.
+
+### `dream:20260830023147:3:ee5076`
+*30.08. 02:31 UTC · Quelle: dream*
+
+Only one model (inclusionai/ling-3.0-flash-fin) succeeded but with high latency (9.7s), suggesting capacity constraints on working models.
+
+### `dream:20260830023147:2:b95221`
+*30.08. 02:31 UTC · Quelle: dream*
+
+Upstream provider overload (502 from Nvidia) reveals dependency on external service stability beyond local control.
+
+### `dream:20260830023147:1:fad228`
+*30.08. 02:31 UTC · Quelle: dream*
+
+Rate limiting (429) affects multiple free-tier models simultaneously, indicating shared quota exhaustion rather than isolated failures.
 
 ### `dream:20260830022711:5:1e3d0e`
 *30.08. 02:27 UTC · Quelle: dream*
