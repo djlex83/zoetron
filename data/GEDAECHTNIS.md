@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7003 Fakten** · Stand 2026-08-30 05:01 UTC · aktualisiert bei jedem Herzschlag
+**7020 Fakten** · Stand 2026-08-30 05:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3361
-- **swarm_artifact:** 1643
-- **last_swarm_critique:** 621
-- **anti_pattern:** 509
-- **last_swarm_goal:** 370
-- **strategy:** 275
-- **hand_result:** 79
+- **dream:** 3366
+- **swarm_artifact:** 1649
+- **last_swarm_critique:** 622
+- **anti_pattern:** 511
+- **last_swarm_goal:** 371
+- **strategy:** 276
+- **hand_result:** 80
 - **tool:** 75
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modellfehler stark verri:2`
+*30.08. 05:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 6]): Training-Centric Curriculum Learning with Dynamic Regularization - import torch import torch.nn as nn import torch.optim as optim from torch.utils.data import DataLoader, TensorDataset import numpy as np import loggin
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modellfehler stark verri:0`
+*30.08. 05:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 7]): Data-Centric Quality Pipeline with Automated Validation - import pandas as pd import numpy as np from sklearn.model_selection import train_test_split from sklearn.ensemble import RandomForestRegressor from sklearn.met
+
+### `last_swarm_critique`
+*30.08. 05:31 UTC · Quelle: critic*
+
+score=1; issues=Sandbox verdict: LAEUFT NICHT - syntax error at line 196: 'asyncio.run(demo() | timeout after 30.0s)' is invalid Python (bitwise OR with string); First artifact (ModelHealthPersister) fails to execute due to syntax error in main block; Second a
+
+### `last_swarm_goal`
+*30.08. 05:22 UTC · Quelle: system*
+
+Modellfehler stark verringern
+
+### `dream:20260830052220:5:3a08da`
+*30.08. 05:22 UTC · Quelle: dream*
+
+Drive goal 'Marktanalyse in Taten umsetzen' remains stale despite completed analyses, revealing execution gap.
+
+### `dream:20260830052220:4:00e332`
+*30.08. 05:22 UTC · Quelle: dream*
+
+Model health signals (latency, 429, 502) are observed but not persisted or used for routing decisions.
+
+### `dream:20260830052220:3:712a1d`
+*30.08. 05:22 UTC · Quelle: dream*
+
+Duplicate skill proposals (local-first, pipeline, circuit breaker) appear 2-3× each, showing proposal deduplication is missing.
+
+### `dream:20260830052220:2:ba28a8`
+*30.08. 05:22 UTC · Quelle: dream*
+
+Reflex tool 'beste-vorschläge-in-fähigkeiten-verwande.py' succeeded where model calls failed, validating local-first execution.
+
+### `dream:20260830052220:1:274e12`
+*30.08. 05:22 UTC · Quelle: dream*
+
+Repeated 429 errors across multiple models indicate systemic rate-limiting, not isolated model failure.
 
 ### `tool:wissenswidersprüche-auflösen`
 *30.08. 05:00 UTC · Quelle: hands*
