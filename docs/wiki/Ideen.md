@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 00:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 01:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,11 +29,11 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three completed market analyses remain unread (gelesen: 0 then 33), showing stale artifacts accumulate without freshness enforcement or scheduled cons
+- Benchmark scores 23/25 despite repeated model failures, revealing the evaluation does not penalize model unavailability or fallback latency.
+- The system generates high-quality architectural skill proposals (ModelRouter, LatencySLOGuard, etc.) but lacks any automated pipeline to implement, te
+- Nemotron-3-Ultra exhibits extreme latency variance (4.8–45.4 s) on similar token loads, indicating unpredictable queueing or cold-start behavior that 
+- The free-tier model z-ai/glm-5.2:free suffers 100% 429 rate-limit failures across 5 consecutive calls, making it effectively unusable for production r
 - Simulation verdicts returning 'revise' with multiple risks signal that pre-execution validation must precede full resource commitment.
 - Silent failures (e.g., file operations resolving relative paths to nothing) propagate undetected unless explicit side-effect validation gates are enfo
 - Analysis results and dream-derived insights decay into wasted knowledge when no concrete action bridge connects them to execution steps.
@@ -51,11 +56,6 @@
 - Even the working nvidia/nemotron-3-ultra-550b-a55b:free model exhibits extreme latency variance (5s to 45.6s), so single-point latency thresholds are 
 - The persistent gap between skill proposals and actual implementation indicates that proposals lacking a measurable acceptance test and an implementati
 - 429 rate-limit errors from z-ai/glm-5.2:free recur across every call window, making it an unreliable default model that must never be dispatched witho
-- Evolution loops lack a convergence detector, so mutations continue past diminishing returns without emitting a failure signal.
-- No component tracks per-model quota headers or reset windows, so rate-limit collisions repeat instead of being predicted.
-- Five skill-proposal cycles produced 10+ proposals but zero promotions, revealing a missing validation-to-deployment pipeline.
-- Nemotron-3-ultra latency varies 2x (9.4s to 20.4s) for similar token volumes, violating any fixed SLO and requiring dynamic fallback.
-- The z-ai/glm-5.2:free model consistently returns 429 errors across multiple timestamps, indicating a hard rate limit that makes it unreliable as a pri
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6812 Fakten** · Stand 2026-08-30 00:41 UTC · aktualisiert bei jedem Herzschlag
+**6817 Fakten** · Stand 2026-08-30 01:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3211
+- **dream:** 3216
 - **swarm_artifact:** 1619
 - **last_swarm_critique:** 617
 - **anti_pattern:** 505
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830010453:5:11e8fb`
+*30.08. 01:04 UTC · Quelle: dream*
+
+Three completed market analyses remain unread (gelesen: 0 then 33), showing stale artifacts accumulate without freshness enforcement or scheduled consumption.
+
+### `dream:20260830010453:4:a88437`
+*30.08. 01:04 UTC · Quelle: dream*
+
+Benchmark scores 23/25 despite repeated model failures, revealing the evaluation does not penalize model unavailability or fallback latency.
+
+### `dream:20260830010453:3:63ce8c`
+*30.08. 01:04 UTC · Quelle: dream*
+
+The system generates high-quality architectural skill proposals (ModelRouter, LatencySLOGuard, etc.) but lacks any automated pipeline to implement, test, and register them.
+
+### `dream:20260830010453:2:d86c7d`
+*30.08. 01:04 UTC · Quelle: dream*
+
+Nemotron-3-Ultra exhibits extreme latency variance (4.8–45.4 s) on similar token loads, indicating unpredictable queueing or cold-start behavior that breaks latency SLAs.
+
+### `dream:20260830010453:1:5a2115`
+*30.08. 01:04 UTC · Quelle: dream*
+
+The free-tier model z-ai/glm-5.2:free suffers 100% 429 rate-limit failures across 5 consecutive calls, making it effectively unusable for production routing.
 
 ### `tool:veraltete-marktkenntnisse-aktualisieren`
 *30.08. 00:40 UTC · Quelle: hands*
