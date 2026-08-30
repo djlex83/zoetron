@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 21:41:57",
+ "stand": "2026-08-30 21:53:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 13,
    "erfolge": 13,
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -135,12 +135,6 @@
    "quote": 0.0
   },
   {
-   "tool": "wiederkehrenden-organfehler-endgültig-kl.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -195,7 +189,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.806,
+ "haende_quote": 0.81,
  "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 28,
@@ -204,8 +198,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
-   "schnitt": 5.69
+   "n": 25,
+   "schnitt": 5.6
   },
   "bau": {
    "n": 2,

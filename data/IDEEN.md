@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 21:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 21:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Liegende Marktanalysen abschließen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 2×)*
 - Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 2×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit-breaker logic with health tracking can prevent cascading failures from degraded models.
+- Critical-path tasks require reserved capacity to avoid blocking on rate-limited or failing models.
+- Token efficiency varies significantly across models, justifying dynamic model selection based on input/output cost patterns.
+- nvidia/nemotron-3-ultra-550b-a55b:free consistently succeeds with acceptable latency, making it a reliable fallback.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting as a systemic failure point requiring proactive routing.
 - Hand actions execute reliably with near-zero duration (0.24-0.33s) and no errors, showing robust low-level filesystem operations.
 - Calibration consistently under-predicts actual resource needs (predicted 4 vs actual 8), indicating a systematic bias in resource estimation.
 - The swarm system successfully converged on goal 'Veraltete Infos auffrischen' with score 8 in a single cycle, demonstrating effective parallel executi
@@ -51,11 +56,6 @@
 - Swarm convergence fails when critic-to-builder ratio falls below 1:2 (1 critic vs 3 builders), allowing low-quality proposals to persist.
 - Automatic model blocking after three consecutive failures (nemotron-3-ultra blocked 1800s) prevents error cascades but reduces available capacity.
 - Rate limiting (429) affects all free-tier models indiscriminately, making it a systemic infrastructure constraint rather than a model-specific issue.
-- Token efficiency differs dramatically between models: nemotron used 2400 input tokens for a 225s response vs 253 input tokens for a 10.5s response fro
-- Model performance varies significantly by task: nemotron achieved 4/10 on first attempt but improved to 8-10/10 in evolved variants, showing iterative
-- poolside/laguna-s-2.1:free is the most reliable free model with zero failures across all attempts, making it a robust fallback option.
-- nvidia/nemotron-3-ultra-550b-a55b:free intermittently returns 502 'Service temporarily overloaded' errors even when not rate-limited, suggesting upstr
-- Free-tier model endpoints (z-ai/glm-5.2, google/gemma) consistently return 429 errors under concurrent load, indicating rate limits are the primary fa
 
 ---
 

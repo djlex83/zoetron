@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7530 Fakten** · Stand 2026-08-30 21:42 UTC · aktualisiert bei jedem Herzschlag
+**7535 Fakten** · Stand 2026-08-30 21:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3705
+- **dream:** 3710
 - **swarm_artifact:** 1733
 - **last_swarm_critique:** 638
 - **anti_pattern:** 535
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830215254:5:075004`
+*30.08. 21:52 UTC · Quelle: dream*
+
+Circuit-breaker logic with health tracking can prevent cascading failures from degraded models.
+
+### `dream:20260830215254:4:510bc1`
+*30.08. 21:52 UTC · Quelle: dream*
+
+Critical-path tasks require reserved capacity to avoid blocking on rate-limited or failing models.
+
+### `dream:20260830215254:3:5ccc77`
+*30.08. 21:52 UTC · Quelle: dream*
+
+Token efficiency varies significantly across models, justifying dynamic model selection based on input/output cost patterns.
+
+### `dream:20260830215254:2:c6920d`
+*30.08. 21:52 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free consistently succeeds with acceptable latency, making it a reliable fallback.
+
+### `dream:20260830215254:1:a495d9`
+*30.08. 21:52 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limiting as a systemic failure point requiring proactive routing.
 
 ### `last_swarm_critique`
 *30.08. 21:41 UTC · Quelle: critic*
