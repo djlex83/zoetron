@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,9 +27,9 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero facts/events pruned suggests retention policies are misconfigured or pruning criteria are never met.
+- Stale market analyses persist because no automated freshness monitor triggers refresh pipelines based on age and access patterns.
+- Skill proposals accumulate without a validation gate requiring concrete milestones and measurable acceptance tests.
+- High latency (6.9-7.9s) on nvidia/nemotron-3-ultra makes it unsuitable for time-sensitive tasks without latency-aware routing.
+- Recurring 429 errors on z-ai/glm-5.2:free indicate missing pre-flight health checks and circuit-breaker logic for rate-limited models.
 - Circuit-breaker logic is missing: after 3 consecutive 429s the model should be quarantined for a cooldown period instead of immediate retry.
 - Model health state (latency, error rates, ban status) evaporates each session because no persistent store survives restarts.
 - Convergence detection works in reflex mode (act_done.converged=true) but is absent from swarm loops, burning compute on plateaued optimization.
@@ -51,11 +56,6 @@
 - Five prior skill proposals addressing model routing, backoff, circuit-breakers, local-first policy, and error-type calibration remain unimplemented, c
 - Reflex tools (hand actions) achieve 100% success with sub-second latency for market-analysis tasks, proving local code execution outperforms remote in
 - The z-ai/glm-5.2:free model consistently fails with 429 errors while nvidia/nemotron-3-ultra succeeds but at 20-60s latency, making remote models unre
-- High latency (16-30s) on the only working model makes synchronous calls impractical for interactive loops, requiring async or cached patterns.
-- Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health monitor misses external dependency degradation.
-- Skill proposals accumulate faster than implementation (5 proposals generated in one session), creating a meta-backlog that mirrors the original work s
-- Reflex tools consistently converge stale goals (market analysis, skill activation) where deliberative planning stalls, showing that targeted micro-scr
-- A single unreliable model (z-ai/glm-5.2:free) repeatedly fails with 429 errors while a slower fallback succeeds, proving that model diversity without 
 
 ---
 

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6902 Fakten** · Stand 2026-08-30 03:01 UTC · aktualisiert bei jedem Herzschlag
+**6916 Fakten** · Stand 2026-08-30 03:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3281
-- **swarm_artifact:** 1631
-- **last_swarm_critique:** 619
+- **dream:** 3286
+- **swarm_artifact:** 1637
+- **last_swarm_critique:** 620
 - **anti_pattern:** 507
-- **last_swarm_goal:** 368
+- **last_swarm_goal:** 369
 - **strategy:** 274
 - **hand_result:** 79
-- **tool:** 73
+- **tool:** 74
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-stark-reduzieren`
+*30.08. 03:21 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler stark reduzieren'. Datei: data/tools/modellfehler-stark-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*30.08. 03:21 UTC · Quelle: critic*
+
+score=8; issues=
+
+### `last_swarm_goal`
+*30.08. 03:15 UTC · Quelle: system*
+
+Modellfehler stark reduzieren
+
+### `dream:20260830031449:5:cdb5b1`
+*30.08. 03:14 UTC · Quelle: dream*
+
+Zero facts/events pruned suggests retention policies are misconfigured or pruning criteria are never met.
+
+### `dream:20260830031449:4:29c066`
+*30.08. 03:14 UTC · Quelle: dream*
+
+Stale market analyses persist because no automated freshness monitor triggers refresh pipelines based on age and access patterns.
+
+### `dream:20260830031449:3:375a30`
+*30.08. 03:14 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation gate requiring concrete milestones and measurable acceptance tests.
+
+### `dream:20260830031449:2:9e0495`
+*30.08. 03:14 UTC · Quelle: dream*
+
+High latency (6.9-7.9s) on nvidia/nemotron-3-ultra makes it unsuitable for time-sensitive tasks without latency-aware routing.
+
+### `dream:20260830031449:1:8be3e3`
+*30.08. 03:14 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free indicate missing pre-flight health checks and circuit-breaker logic for rate-limited models.
 
 ### `tool:veraltetes-wissen-auffrischen-und-prüfen`
 *30.08. 03:00 UTC · Quelle: hands*
