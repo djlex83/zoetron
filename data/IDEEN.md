@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 20:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 20:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,10 +25,10 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token efficiency differs dramatically between models: nemotron used 2400 input tokens for a 225s response vs 253 input tokens for a 10.5s response fro
+- Model performance varies significantly by task: nemotron achieved 4/10 on first attempt but improved to 8-10/10 in evolved variants, showing iterative
+- poolside/laguna-s-2.1:free is the most reliable free model with zero failures across all attempts, making it a robust fallback option.
+- nvidia/nemotron-3-ultra-550b-a55b:free intermittently returns 502 'Service temporarily overloaded' errors even when not rate-limited, suggesting upstr
+- Free-tier model endpoints (z-ai/glm-5.2, google/gemma) consistently return 429 errors under concurrent load, indicating rate limits are the primary fa
 - Goal "Marktanalyse in Handlung umsetzen" persists across swarm start, simulation, reflex failure, and multiple model failures — goal stack survives in
 - Metabolism enters conserve mode (stress=1.0) with severe budget cuts (max_tasks=3, max_iterations=1) precisely when model failures cascade, starving r
 - First hand_action failed due to relative path resolution ignoring ZOETRON_DATA and sys.argv[1]; second attempt succeeded after explicit path handling.
@@ -51,11 +56,6 @@
 - Task completion improved from 0/10 to 7/10 after evolution, showing that iterative refinement with critic feedback is effective for overcoming initial
 - The inclusionai/ling-3.0-flash-fin:free model consistently succeeds while others fail, suggesting it has better rate-limit tolerance or priority acces
 - Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating systemic API throttling rather than model-specific issues.
-- Pruning removed zero facts/events, suggesting the current retention window is too short to capture cross-session patterns like recurring 429 spikes.
-- No organ errors appeared in self-diagnosis despite repeated model failures, showing the failure boundary is correctly isolated to the model-calling or
-- The reflex that converts converged goals into skill artifacts worked twice in one cycle, proving the promotion pipeline concept is already viable.
-- Latency variance between successful calls (7.9s vs 12.2s) exceeds 50%, indicating queue-depth differences that a health-check probe can detect before 
-- Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for production workloads without a routing laye
 
 ---
 
