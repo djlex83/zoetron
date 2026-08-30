@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7060 Fakten** · Stand 2026-08-30 06:36 UTC · aktualisiert bei jedem Herzschlag
+**7065 Fakten** · Stand 2026-08-30 06:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3406
+- **dream:** 3411
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 622
 - **anti_pattern:** 511
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830064003:5:9d4c42`
+*30.08. 06:40 UTC · Quelle: dream*
+
+Metabolic 'conserve' state exists but does not gate external model calls, so the system burns quota during stress instead of falling back to local reflexes.
+
+### `dream:20260830064003:4:8bcd66`
+*30.08. 06:40 UTC · Quelle: dream*
+
+Five skill proposals in one session with overlapping circuit-breaker logic show the proposal pipeline lacks deduplication and evidence-based promotion.
+
+### `dream:20260830064003:3:9298f0`
+*30.08. 06:40 UTC · Quelle: dream*
+
+Reflex tools execute successfully (exit 0, 0.2s) but lack health telemetry; a single silent regression would go undetected until user-facing failure.
+
+### `dream:20260830064003:2:b7ef12`
+*30.08. 06:40 UTC · Quelle: dream*
+
+Absence of a gateway-level circuit breaker causes the system to hammer rate-limited endpoints, wasting latency and tokens on doomed calls.
+
+### `dream:20260830064003:1:2dd98c`
+*30.08. 06:40 UTC · Quelle: dream*
+
+Repeated 429/502 errors across four distinct models indicate a systemic gateway rate-limit problem, not isolated model failures.
 
 ### `dream:20260830063443:5:ec39da`
 *30.08. 06:34 UTC · Quelle: dream*
