@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7577 Fakten** · Stand 2026-08-30 22:41 UTC · aktualisiert bei jedem Herzschlag
+**7590 Fakten** · Stand 2026-08-30 23:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3740
-- **swarm_artifact:** 1739
-- **last_swarm_critique:** 639
+- **dream:** 3745
+- **swarm_artifact:** 1745
+- **last_swarm_critique:** 640
 - **anti_pattern:** 537
-- **last_swarm_goal:** 388
+- **last_swarm_goal:** 389
 - **strategy:** 289
 - **hand_result:** 84
 - **tool:** 84
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*30.08. 23:30 UTC · Quelle: critic*
+
+score=8; issues=Only the first artifact (analyzer, 153 lines) was verified by sandbox; the core fetch/normalize artifacts (2 & 3) were not executed in sandbox though they appear structurally sound; Three separate scripts instead of an integrated pipeline - req
+
+### `last_swarm_goal`
+*30.08. 23:24 UTC · Quelle: system*
+
+Alte Marktdaten auffrischen
+
+### `dream:20260830232426:5:d696c1`
+*30.08. 23:24 UTC · Quelle: dream*
+
+Drive goals repeatedly target old/new knowledge synthesis but the system lacks a mechanism to retrieve prior dream insights and cross-reference them against current failure patterns.
+
+### `dream:20260830232426:4:8a8c12`
+*30.08. 23:24 UTC · Quelle: dream*
+
+Pruning removes zero facts/events despite active consolidation drives, suggesting either insufficient memory accumulation or overly conservative retention thresholds.
+
+### `dream:20260830232426:3:97844b`
+*30.08. 23:24 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures cascade, revealing that diagnostic scope excludes external dependency health.
+
+### `dream:20260830232426:2:491a93`
+*30.08. 23:24 UTC · Quelle: dream*
+
+The skill proposal reflex converges reliably but its own resilience proposals (circuit breaker, exponential backoff, fallback) remain unimplemented after multiple cycles, creating a meta-learning/operations gap.
+
+### `dream:20260830232426:1:2c10fe`
+*30.08. 23:24 UTC · Quelle: dream*
+
+Free-tier model providers simultaneously exhaust rate limits (429 errors across 4+ models within seconds), making naive round-robin selection ineffective without persistent health tracking.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten entwick:1`
 *30.08. 22:40 UTC · Quelle: evolution*
