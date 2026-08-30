@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7403 Fakten** · Stand 2026-08-30 17:33 UTC · aktualisiert bei jedem Herzschlag
+**7408 Fakten** · Stand 2026-08-30 17:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3630
+- **dream:** 3635
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830174215:5:1fe763`
+*30.08. 17:42 UTC · Quelle: dream*
+
+Missing pre-flight validation of paths, inputs, and skill composition allows broken operations to propagate, making boundary checks essential at every integration point.
+
+### `dream:20260830174215:4:29077d`
+*30.08. 17:42 UTC · Quelle: dream*
+
+System stress exceeding 0.8 causes wasted cycles and cascading failures, mandating automatic load shedding and conserve-mode activation before exhaustion.
+
+### `dream:20260830174215:3:a025ea`
+*30.08. 17:42 UTC · Quelle: dream*
+
+Truncated or invalid model outputs silently corrupt downstream processing, so output-token validation against input-token ratios is a necessary guardrail.
+
+### `dream:20260830174215:2:4d9b5a`
+*30.08. 17:42 UTC · Quelle: dream*
+
+Rate-limit and service-overload errors recur across multiple providers simultaneously, indicating that no single free model can be trusted as a primary source without redundancy.
+
+### `dream:20260830174215:1:710da0`
+*30.08. 17:42 UTC · Quelle: dream*
+
+Free-tier API models are systematically unreliable due to rate limits (429) and upstream overload (502), requiring defensive per-model circuit-breaking and automatic failover.
 
 ### `dream:20260830173159:5:f70363`
 *30.08. 17:31 UTC · Quelle: dream*

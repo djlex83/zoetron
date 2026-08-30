@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Missing pre-flight validation of paths, inputs, and skill composition allows broken operations to propagate, making boundary checks essential at every
+- System stress exceeding 0.8 causes wasted cycles and cascading failures, mandating automatic load shedding and conserve-mode activation before exhaust
+- Truncated or invalid model outputs silently corrupt downstream processing, so output-token validation against input-token ratios is a necessary guardr
+- Rate-limit and service-overload errors recur across multiple providers simultaneously, indicating that no single free model can be trusted as a primar
+- Free-tier API models are systematically unreliable due to rate limits (429) and upstream overload (502), requiring defensive per-model circuit-breakin
 - The reflex system converges reliably when a model is available, proving the internal logic is sound — the bottleneck is entirely external infrastructu
 - Proposed skills (model-router, promotion pipeline, pruning scheduler) are well-targeted but remain unvalidated artifacts; they must be smoke-tested be
 - Latency spans from 7s to 77s across successful calls, but no latency-budget guard exists to route slow calls to async mode and protect responsiveness.
@@ -51,11 +56,6 @@
 - 45 skill proposals exist but only 3 implemented, revealing a broken promotion pipeline from proposal to production.
 - Fallback to nvidia/nemotron-3-ultra succeeds but violates latency SLAs at 50-65s, making synchronous use impractical.
 - The z-ai/glm-5.2:free model fails deterministically with 429 errors, indicating absent rate-limit awareness before dispatch.
-- High latency variance (6s vs 64s) on the same model suggests queueing or cold-start effects that degrade swarm cycle times.
-- A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure.
-- Template variable interpolation failures (e.g., {{skill}}) in skill generation reveal a contract mismatch between planner output and builder execution
-- The evolution/swarm pipeline consistently stalls at score 6/10 with non-convergence, indicating insufficient critic feedback or builder capability.
-- Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502), making them unreliable for production workflows without aggressive 
 
 ---
 
