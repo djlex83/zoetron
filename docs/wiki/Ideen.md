@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite 64 model failures, revealing a blind spot in failure attribution to external dependencies.
+- Multiple skill proposals accumulate without execution SLA enforcement, creating a backlog of unimplemented reliability improvements.
+- Reflex tools execute successfully (exit 0, 0.21s) but lack health tracking, so silent degradations would go undetected.
+- Circuit-breaker and consume-gate proposals exist but are not yet implemented, leaving the system vulnerable to repeated rate-limit cascades.
+- Free-tier models consistently fail with 429 errors while paid-tier models succeed, indicating rate-limit exhaustion is the primary failure mode.
 - Metabolic 'conserve' state exists but does not gate external model calls, so the system burns quota during stress instead of falling back to local ref
 - Five skill proposals in one session with overlapping circuit-breaker logic show the proposal pipeline lacks deduplication and evidence-based promotion
 - Reflex tools execute successfully (exit 0, 0.2s) but lack health telemetry; a single silent regression would go undetected until user-facing failure.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but lack an automated path to become executable reflex tools, creating a proposal-implementation gap.
 - Reflex tools (local Python scripts) execute reliably with zero model dependency, completing goals like market analysis in ~1s.
 - External model APIs consistently fail with 429/502 errors under load, making them unreliable as primary reasoning engines.
-- When a reflex is actually deployed (fähigkeitsvorschläge-in-echte-skills-umw.py), it converges successfully — proving execution, not generation, is th
-- Stale work accumulates silently across multiple analysis steps without auto-detection or remediation, eroding decision quality over time.
-- Fallback model latency is unpredictable (22s to 95s), meaning even successful failovers can violate downstream SLAs without explicit latency guards.
-- The system generates skill proposals far faster than it executes them — 55 proposals exist with no confirmed deployment, indicating a proposal-to-exec
-- Free-tier models (z-ai/glm-5.2) fail systematically under load with 429 errors, making them unreliable as primary callers without enforced fallback.
 
 ---
 

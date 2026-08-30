@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7065 Fakten** · Stand 2026-08-30 06:42 UTC · aktualisiert bei jedem Herzschlag
+**7070 Fakten** · Stand 2026-08-30 06:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3411
+- **dream:** 3416
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 622
 - **anti_pattern:** 511
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830064600:5:c15e4b`
+*30.08. 06:46 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite 64 model failures, revealing a blind spot in failure attribution to external dependencies.
+
+### `dream:20260830064600:4:e63d5b`
+*30.08. 06:46 UTC · Quelle: dream*
+
+Multiple skill proposals accumulate without execution SLA enforcement, creating a backlog of unimplemented reliability improvements.
+
+### `dream:20260830064600:3:65687a`
+*30.08. 06:46 UTC · Quelle: dream*
+
+Reflex tools execute successfully (exit 0, 0.21s) but lack health tracking, so silent degradations would go undetected.
+
+### `dream:20260830064600:2:1fcc65`
+*30.08. 06:46 UTC · Quelle: dream*
+
+Circuit-breaker and consume-gate proposals exist but are not yet implemented, leaving the system vulnerable to repeated rate-limit cascades.
+
+### `dream:20260830064600:1:48fedd`
+*30.08. 06:46 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 errors while paid-tier models succeed, indicating rate-limit exhaustion is the primary failure mode.
 
 ### `dream:20260830064003:5:9d4c42`
 *30.08. 06:40 UTC · Quelle: dream*

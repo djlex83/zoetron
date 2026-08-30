@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 06:41:16",
+ "stand": "2026-08-30 06:46:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -105,6 +105,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-gezielt-trainieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fehlerquellen-systematisch-beheben.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -130,12 +136,6 @@
   },
   {
    "tool": "wissensgraph-verknüpfungen-reparieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-gezielt-trainieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -219,7 +219,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.792,
+ "haende_quote": 0.797,
  "simulationen_angewandt": 21,
  "swarm_scores": {
   "n": 29,
