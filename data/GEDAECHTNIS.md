@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7377 Fakten** · Stand 2026-08-30 16:58 UTC · aktualisiert bei jedem Herzschlag
+**7383 Fakten** · Stand 2026-08-30 17:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3605
+- **dream:** 3610
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -11,7 +11,7 @@
 - **hand_result:** 83
 - **tool:** 81
 - **aktuell_fussball_messlatte:** 33
-- **aktuell_organfehler:** 28
+- **aktuell_organfehler:** 29
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830170418:5:2a429e`
+*30.08. 17:04 UTC · Quelle: dream*
+
+Skill-materialization reflex fails silently; proposals need a dry-run validation step before committing to the skill store.
+
+### `dream:20260830170418:4:278485`
+*30.08. 17:04 UTC · Quelle: dream*
+
+Simulation revision loops (3 risks → 3 revisions) consume 6+ model calls per cycle, exhausting the conserve-mode budget (max 3 tasks).
+
+### `dream:20260830170418:3:22f654`
+*30.08. 17:04 UTC · Quelle: dream*
+
+File operations fail when using relative paths; all data access must resolve through ZOETRON_DATA and sys.argv[1] to absolute paths before I/O.
+
+### `dream:20260830170418:2:e4efc4`
+*30.08. 17:04 UTC · Quelle: dream*
+
+Fallback models exhibit cascading failures: nvidia/nemotron returns 502 upstream errors under load, google/gemma hits 429, only poolside/laguna succeeds but at 200s latency.
+
+### `dream:20260830170418:1:e0f1df`
+*30.08. 17:04 UTC · Quelle: dream*
+
+Primary model (z-ai/glm-5.2) is permanently rate-limited (429), making it unusable without a request queue and exponential backoff.
+
+### `aktuell_organfehler`
+*30.08. 17:00 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-30 16:57:31 UTC): drive -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `dream:20260830165431:5:e2691b`
 *30.08. 16:54 UTC · Quelle: dream*

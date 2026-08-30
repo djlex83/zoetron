@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 16:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill-materialization reflex fails silently; proposals need a dry-run validation step before committing to the skill store.
+- Simulation revision loops (3 risks → 3 revisions) consume 6+ model calls per cycle, exhausting the conserve-mode budget (max 3 tasks).
+- File operations fail when using relative paths; all data access must resolve through ZOETRON_DATA and sys.argv[1] to absolute paths before I/O.
+- Fallback models exhibit cascading failures: nvidia/nemotron returns 502 upstream errors under load, google/gemma hits 429, only poolside/laguna succee
+- Primary model (z-ai/glm-5.2) is permanently rate-limited (429), making it unusable without a request queue and exponential backoff.
 - Skill proposals generated during consolidation (circuit-breaker, token validation, path retry) address real failure modes observed in the same cycle, 
 - The fallback nvidia/nemotron-3-ultra-550b-a55b:free model succeeds consistently but with high latency (76-125s), suggesting it is a reliable but slow 
 - The system enters conserve mode (stress=1.0, max_iterations=1) under load, which caps execution capacity and can stall swarm convergence when multiple
@@ -51,11 +56,6 @@
 - Reflex-mode convergence on skill-implementation goals shows the system can execute procedural knowledge but lacks a mechanism to promote successful re
 - Fallback model latency (46-81s) exceeds acceptable thresholds for interactive loops, making async queuing or cached responses necessary.
 - Recurring 429 errors from a single provider indicate rate-limit saturation, not transient faults, requiring architectural routing changes rather than 
-- Self-diagnosis and pruning report zero issues while model failures persist, indicating monitoring blind spots in the inference layer.
-- Proposed resilience skills (fallback chain, backoff, scorecard) remain unimplemented despite recurring model_fail events.
-- Latency variance from 7s to 123s for similar token loads shows unpredictable queueing delays in free-tier endpoints.
-- Upstream 502 errors from Nvidia reveal provider-side capacity saturation that cannot be resolved by client-side retries alone.
-- Repeated 429 errors across multiple providers indicate systemic rate-limit exhaustion rather than isolated model failures.
 
 ---
 
