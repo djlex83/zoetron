@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs remove zero items, indicating either scoring thresholds are too aggressive or relevance signals are missing.
+- Reflex actions converge reliably (market analysis cleanup completed), suggesting reflex-to-skill promotion is a viable path.
+- 45 skill proposals exist but only 3 implemented, revealing a broken promotion pipeline from proposal to production.
+- Fallback to nvidia/nemotron-3-ultra succeeds but violates latency SLAs at 50-65s, making synchronous use impractical.
+- The z-ai/glm-5.2:free model fails deterministically with 429 errors, indicating absent rate-limit awareness before dispatch.
 - High latency variance (6s vs 64s) on the same model suggests queueing or cold-start effects that degrade swarm cycle times.
 - A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure.
 - Template variable interpolation failures (e.g., {{skill}}) in skill generation reveal a contract mismatch between planner output and builder execution
@@ -51,11 +56,6 @@
 - Poolside Laguna-S-2.1 delivers the best latency-to-success ratio (9.5s) when not rate-limited, making it the preferred fallback.
 - Nvidia Nemotron exhibits high latency (85-146s) and intermittent 502 upstream overload errors despite returning valid responses when healthy.
 - Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for production workflows.
-- Skill-materialization reflex fails silently; proposals need a dry-run validation step before committing to the skill store.
-- Simulation revision loops (3 risks → 3 revisions) consume 6+ model calls per cycle, exhausting the conserve-mode budget (max 3 tasks).
-- File operations fail when using relative paths; all data access must resolve through ZOETRON_DATA and sys.argv[1] to absolute paths before I/O.
-- Fallback models exhibit cascading failures: nvidia/nemotron returns 502 upstream errors under load, google/gemma hits 429, only poolside/laguna succee
-- Primary model (z-ai/glm-5.2) is permanently rate-limited (429), making it unusable without a request queue and exponential backoff.
 
 ---
 

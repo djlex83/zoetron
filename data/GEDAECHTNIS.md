@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7393 Fakten** · Stand 2026-08-30 17:22 UTC · aktualisiert bei jedem Herzschlag
+**7398 Fakten** · Stand 2026-08-30 17:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3620
+- **dream:** 3625
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830172641:5:5d3470`
+*30.08. 17:26 UTC · Quelle: dream*
+
+Pruning runs remove zero items, indicating either scoring thresholds are too aggressive or relevance signals are missing.
+
+### `dream:20260830172641:4:032d20`
+*30.08. 17:26 UTC · Quelle: dream*
+
+Reflex actions converge reliably (market analysis cleanup completed), suggesting reflex-to-skill promotion is a viable path.
+
+### `dream:20260830172641:3:7fb986`
+*30.08. 17:26 UTC · Quelle: dream*
+
+45 skill proposals exist but only 3 implemented, revealing a broken promotion pipeline from proposal to production.
+
+### `dream:20260830172641:2:983aa8`
+*30.08. 17:26 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra succeeds but violates latency SLAs at 50-65s, making synchronous use impractical.
+
+### `dream:20260830172641:1:b693d1`
+*30.08. 17:26 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails deterministically with 429 errors, indicating absent rate-limit awareness before dispatch.
 
 ### `dream:20260830172111:5:051fd2`
 *30.08. 17:21 UTC · Quelle: dream*
