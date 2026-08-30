@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 01:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 01:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reactive proposal generation after each failure incident creates technical debt; proactive reliability patterns must be codified as reusable skills.
+- Stale analytical assets (market analyses) lose decision value rapidly; automated freshness monitoring with refresh triggers is essential.
+- Skill proposals accumulate reactively after failures but lack implementation plans, creating a proposal-execution gap that delays reliability gains.
+- Simultaneous multi-model failures (429/502) cascade into total service unavailability unless circuit-breaking and health-based routing exist.
+- Free-tier models consistently fail with 429 rate limits under load, making them unsuitable for production without systematic quota management.
 - Three completed market analyses remain unread (gelesen: 0 then 33), showing stale artifacts accumulate without freshness enforcement or scheduled cons
 - Benchmark scores 23/25 despite repeated model failures, revealing the evaluation does not penalize model unavailability or fallback latency.
 - The system generates high-quality architectural skill proposals (ModelRouter, LatencySLOGuard, etc.) but lacks any automated pipeline to implement, te
@@ -51,11 +56,6 @@
 - Analysis results and dream-derived insights decay into wasted knowledge when no concrete action bridge connects them to execution steps.
 - The nvidia/nemotron-3-ultra-550b-a55b:free fallback succeeds but exhibits extreme latency variance (6.8s–82.4s), requiring p95-aware routing instead o
 - The z-ai/glm-5.2:free model fails repeatedly with 429 errors, indicating a systemic capacity limit that demands automatic quarantine rather than retry
-- The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) demonstrates that automated, goal-driven self-correction outperforms manual skill 
-- Reactive error handling fails because the system calls a rate-limited model repeatedly before detecting the pattern; proactive rate-limit header parsi
-- Even the working nvidia/nemotron-3-ultra-550b-a55b:free model exhibits extreme latency variance (5s to 45.6s), so single-point latency thresholds are 
-- The persistent gap between skill proposals and actual implementation indicates that proposals lacking a measurable acceptance test and an implementati
-- 429 rate-limit errors from z-ai/glm-5.2:free recur across every call window, making it an unreliable default model that must never be dispatched witho
 
 ---
 

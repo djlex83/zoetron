@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6817 Fakten** · Stand 2026-08-30 01:05 UTC · aktualisiert bei jedem Herzschlag
+**6833 Fakten** · Stand 2026-08-30 01:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3216
-- **swarm_artifact:** 1619
-- **last_swarm_critique:** 617
-- **anti_pattern:** 505
-- **last_swarm_goal:** 366
-- **strategy:** 273
+- **dream:** 3221
+- **swarm_artifact:** 1625
+- **last_swarm_critique:** 618
+- **anti_pattern:** 507
+- **last_swarm_goal:** 367
+- **strategy:** 274
 - **hand_result:** 79
 - **tool:** 72
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*30.08. 01:12 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Capability Dependency Graph with Topological Validation and Pipeline Transformat - Model capabilities as nodes in a directed acyclic graph (DAG) where edges represent dependency/output-feeding relationships. Each node carries
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*30.08. 01:12 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Runtime Capability Probing with Dynamic Benchmarking - Treat each proposed capability as a testable probe: dynamically import or simulate a tool adapter, execute a micro-benchmark (measure latency and throughput on a syntheti
+
+### `last_swarm_critique`
+*30.08. 01:11 UTC · Quelle: critic*
+
+score=5; issues=Alle drei Code-Blöcke sind im Wesentlichen identisch – es fehlt eine echte Critique-Struktur (Prüfen → Messen → Umwandeln); Es gibt keine tatsächliche Capability-Prüfung gegen eine Werkzeugkiste; der Code ist nur ein Directory-Walker mit Datei-
+
+### `last_swarm_goal`
+*30.08. 01:10 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten prüfen und nutzen
+
+### `dream:20260830010959:5:5ddf4c`
+*30.08. 01:09 UTC · Quelle: dream*
+
+Reactive proposal generation after each failure incident creates technical debt; proactive reliability patterns must be codified as reusable skills.
+
+### `dream:20260830010959:4:177c2d`
+*30.08. 01:09 UTC · Quelle: dream*
+
+Stale analytical assets (market analyses) lose decision value rapidly; automated freshness monitoring with refresh triggers is essential.
+
+### `dream:20260830010959:3:a5aef5`
+*30.08. 01:09 UTC · Quelle: dream*
+
+Skill proposals accumulate reactively after failures but lack implementation plans, creating a proposal-execution gap that delays reliability gains.
+
+### `dream:20260830010959:2:55aea8`
+*30.08. 01:09 UTC · Quelle: dream*
+
+Simultaneous multi-model failures (429/502) cascade into total service unavailability unless circuit-breaking and health-based routing exist.
+
+### `dream:20260830010959:1:55a9d6`
+*30.08. 01:09 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits under load, making them unsuitable for production without systematic quota management.
 
 ### `dream:20260830010453:5:11e8fb`
 *30.08. 01:04 UTC · Quelle: dream*
