@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7045 Fakten** · Stand 2026-08-30 06:16 UTC · aktualisiert bei jedem Herzschlag
+**7050 Fakten** · Stand 2026-08-30 06:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3391
+- **dream:** 3396
 - **swarm_artifact:** 1649
 - **last_swarm_critique:** 622
 - **anti_pattern:** 511
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830062026:5:83a2c6`
+*30.08. 06:20 UTC · Quelle: dream*
+
+Hand action failures with exit code 1 but no error output indicate silent execution failures needing structured validation.
+
+### `dream:20260830062026:4:434d66`
+*30.08. 06:20 UTC · Quelle: dream*
+
+Swarm convergence failure at score 1 suggests critic/planner feedback loop isn't driving measurable improvement.
+
+### `dream:20260830062026:3:ba8a32`
+*30.08. 06:20 UTC · Quelle: dream*
+
+Evolution cycles producing syntax errors indicate generator lacks pre-sandbox syntax validation.
+
+### `dream:20260830062026:2:ac28ca`
+*30.08. 06:20 UTC · Quelle: dream*
+
+High latency variance (23–120s) on fallback models makes timeout budgets unreliable for planning.
+
+### `dream:20260830062026:1:e685f1`
+*30.08. 06:20 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) silently stall pipelines unless explicit fallback chains with exponential backoff are enforced.
 
 ### `dream:20260830061429:5:9bf9a5`
 *30.08. 06:14 UTC · Quelle: dream*

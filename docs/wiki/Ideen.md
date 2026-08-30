@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 06:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand action failures with exit code 1 but no error output indicate silent execution failures needing structured validation.
+- Swarm convergence failure at score 1 suggests critic/planner feedback loop isn't driving measurable improvement.
+- Evolution cycles producing syntax errors indicate generator lacks pre-sandbox syntax validation.
+- High latency variance (23–120s) on fallback models makes timeout budgets unreliable for planning.
+- Rate-limited models (429 errors) silently stall pipelines unless explicit fallback chains with exponential backoff are enforced.
 - Evolutionary iteration (3 variants, selection) lifted scores from 1/10 to 8/6/8, proving that generate-critique-revise loops outperform single-shot ge
 - Calibration is severely misaligned (predicted 6 vs actual 1), revealing that internal confidence estimates do not reflect true success probability.
 - Sandbox execution failures are predominantly syntax errors (asyncio.run misuse, pipe operators) rather than logic flaws, indicating a need for pre-exe
@@ -51,11 +56,6 @@
 - The system entered conserve mode (stress=1.0) yet continued making expensive model calls, creating a self-reinforcing failure loop of rate-limit exhau
 - The reflex tool for 'Modellfehler stark verringern' failed with exit code 1 and no error output, meaning the local-first fallback chain is broken at t
 - 429 errors hit every model simultaneously, proving the bottleneck is the OpenRouter gateway — rotating models alone cannot solve systemic rate limitin
-- Skill proposals accumulated during execution but lacked automatic deduplication and promotion pipeline, causing redundant proposals across sleep cycle
-- Self-diagnosis reported zero organ errors while model subsystem generated 7 failures in 15 minutes, revealing monitoring blind spots for external API 
-- Swarm convergence failed despite 5 revisions because critic/planner ratio (1:1) was insufficient to overcome builder majority (3) without explicit con
-- Latency variance of 16x (6.4s vs 105.6s) on the same model (nemotron-3-ultra) indicates unstable upstream capacity, not model quality.
-- Free-tier models exhibit systematic 429 rate-limiting and 502 upstream failures making them unreliable for production workflows.
 
 ---
 
