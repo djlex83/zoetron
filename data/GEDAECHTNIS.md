@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7555 Fakten** · Stand 2026-08-30 22:20 UTC · aktualisiert bei jedem Herzschlag
+**7560 Fakten** · Stand 2026-08-30 22:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3730
+- **dream:** 3735
 - **swarm_artifact:** 1733
 - **last_swarm_critique:** 638
 - **anti_pattern:** 535
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830222524:5:163d39`
+*30.08. 22:25 UTC · Quelle: dream*
+
+Latency variance (6.6s to 91.7s) across models makes fixed timeouts dangerous for critical-path operations.
+
+### `dream:20260830222524:4:a95640`
+*30.08. 22:25 UTC · Quelle: dream*
+
+Swarm convergence in one cycle with only one critic for three builders suggests insufficient adversarial review before commit.
+
+### `dream:20260830222524:3:50f5e0`
+*30.08. 22:25 UTC · Quelle: dream*
+
+Calibration error of 3 points on an 8-point scale indicates systematic overconfidence in task difficulty estimation.
+
+### `dream:20260830222524:2:8aa5b4`
+*30.08. 22:25 UTC · Quelle: dream*
+
+Tools that only produce stdout without return values or filesystem effects are rejected as non-functional by the validator.
+
+### `dream:20260830222524:1:dabe48`
+*30.08. 22:25 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading failure modes (429 rate limits → 502 upstream errors) making single-model reliance unreliable.
 
 ### `dream:20260830221947:5:dc4a71`
 *30.08. 22:19 UTC · Quelle: dream*

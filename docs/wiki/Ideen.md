@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance (6.6s to 91.7s) across models makes fixed timeouts dangerous for critical-path operations.
+- Swarm convergence in one cycle with only one critic for three builders suggests insufficient adversarial review before commit.
+- Calibration error of 3 points on an 8-point scale indicates systematic overconfidence in task difficulty estimation.
+- Tools that only produce stdout without return values or filesystem effects are rejected as non-functional by the validator.
+- Free-tier models exhibit cascading failure modes (429 rate limits → 502 upstream errors) making single-model reliance unreliable.
 - Stale goals (market analysis) persist without automatic resurfacing; implement a staleness detector that re-prioritizes dormant work.
 - 35 skill proposals remain unimplemented due to missing triage-to-execution pipeline; need a staged funnel: propose → evaluate → prototype → integrate.
 - High stress (1.0) triggers conserve mode limiting to 3 tasks and 1 iteration, starving parallel work; task scheduler must adapt concurrency to stress 
@@ -51,11 +56,6 @@
 - Swarm executions evolve but stall at sub-threshold scores (6/10) because convergence criteria lack a minimum-quality gate, leaving goals perpetually '
 - Filesystem actions silently fail when inputs aren't normalized against ZOETRON_DATA and sys.argv[1], turning relative paths into zero-byte reads.
 - Free-tier model APIs exhibit correlated 429/502 failures that cascade into task abandonment unless a router tracks per-model health and auto-demotes f
-- poolside/laguna-s-2.1:free succeeds repeatedly at ~8s latency and high token throughput, marking it as the only stable free model.
-- Swarm execution stalls at 2 cycles with fixed 1-planner/3-builder/1-critic ratio and no convergence, suggesting insufficient iteration depth.
-- Calibration consistently underestimates effort by ~33% (predicted 4 vs actual 6), indicating a systematic planning bias.
-- Evolutionary repair jumps scores from 6 to 9 when the critic pinpoints "no measurable output" – concrete validation gates enable large gains.
-- Free-tier models (GLM, Gemma, Nemotron) fail predominantly via 429 rate limits and 502 upstream overloads, making them unreliable as primary workers.
 
 ---
 
