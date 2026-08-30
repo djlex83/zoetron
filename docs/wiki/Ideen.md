@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 09:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 10:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,13 +13,13 @@
 - Deploy per-model circuit breakers that open after N consecutive errors, enforce exponential backoff, and probe *(hatte die Idee 4×)*
 - Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, and 429 counts; au *(hatte die Idee 4×)*
 - Enforce local-first policy: for any goal matching a registered reflex tool (e.g., marktanalyse-endlich-abschli *(hatte die Idee 4×)*
-- Add exponential backoff with jitter (base 2s, max 60s) and rotating model pool for 429 responses; parse Retry- *(hatte die Idee 3×)*
 - Deploy stress-aware scheduler that, when metabolism stress > 0.8, halves max_parallelism, doubles timeouts, an *(hatte die Idee 3×)*
 - Create a path resolver utility that normalizes sys.argv[1] and ZOETRON_DATA into absolute paths before any fil *(hatte die Idee 3×)*
 - Build a model fallback chain that pre-orders free-tier models by historical success rate and auto-rotates on 4 *(hatte die Idee 3×)*
 - Create a proposal-to-skill conversion gate requiring each proposal to have a defined implementation step, vali *(hatte die Idee 3×)*
 - Implement a model health scorecard tracking success rate, latency p95, and consecutive failures to drive dynam *(hatte die Idee 3×)*
 - Implement ModelRouter with per-model token-bucket quota tracking, health scoring (success rate, latency p50/p9 *(hatte die Idee 3×)*
+- Build CircuitBreaker decorator that trips after 3 consecutive 429/502/503 responses, quarantines model for 60s *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
