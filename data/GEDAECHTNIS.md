@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7595 Fakten** · Stand 2026-08-30 23:44 UTC · aktualisiert bei jedem Herzschlag
+**7609 Fakten** · Stand 2026-08-30 23:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3750
-- **swarm_artifact:** 1745
-- **last_swarm_critique:** 640
+- **dream:** 3755
+- **swarm_artifact:** 1751
+- **last_swarm_critique:** 641
 - **anti_pattern:** 537
-- **last_swarm_goal:** 389
+- **last_swarm_goal:** 390
 - **strategy:** 289
+- **tool:** 85
 - **hand_result:** 84
-- **tool:** 84
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 29
 - **creator_teaching:** 9
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:langsame-fortschritte-beschleunigen`
+*30.08. 23:56 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Langsame Fortschritte beschleunigen'. Datei: data/tools/langsame-fortschritte-beschleunigen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*30.08. 23:56 UTC · Quelle: critic*
+
+score=8; issues=Benchmark fallbacks measure trivial operations (sum(range), list comprehensions) instead of actual organ latency; Metabolismus-Analyse synthesizes data when real organ unavailable, limiting real-world validity; All three artifacts assume fixed 
+
+### `last_swarm_goal`
+*30.08. 23:49 UTC · Quelle: system*
+
+Langsame Fortschritte beschleunigen
+
+### `dream:20260830234842:5:104ca7`
+*30.08. 23:48 UTC · Quelle: dream*
+
+Latency for successful models ranged from 41.5s to 109.0s, indicating variable performance under load.
+
+### `dream:20260830234842:4:c69d8d`
+*30.08. 23:48 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin and poolside/laguna-s-2.1 succeeded, suggesting model reliability varies significantly.
+
+### `dream:20260830234842:3:bd3fdd`
+*30.08. 23:48 UTC · Quelle: dream*
+
+The tor goal failed due to a syntax error in a generated Python file, indicating unreliable code generation.
+
+### `dream:20260830234842:2:1f3f7b`
+*30.08. 23:48 UTC · Quelle: dream*
+
+Three hand_action failures with exit code 1 and zero gelesen suggest a consistent execution or environment issue.
+
+### `dream:20260830234842:1:81d116`
+*30.08. 23:48 UTC · Quelle: dream*
+
+Repeated 429 Too Many Requests errors across multiple models indicate systemic rate-limiting rather than isolated failures.
 
 ### `dream:20260830234333:5:905e5a`
 *30.08. 23:43 UTC · Quelle: dream*
