@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-30 02:41:17",
+ "stand": "2026-08-30 02:46:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 18,
-   "erfolge": 18,
+   "laeufe": 17,
+   "erfolge": 17,
    "quote": 1.0
   },
   {
@@ -99,6 +99,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -109,12 +115,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "fehlerquellen-systematisch-beheben.py",

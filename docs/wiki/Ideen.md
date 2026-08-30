@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,8 +28,8 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High latency (16-30s) on the only working model makes synchronous calls impractical for interactive loops, requiring async or cached patterns.
+- Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health monitor misses external dependency degradation.
+- Skill proposals accumulate faster than implementation (5 proposals generated in one session), creating a meta-backlog that mirrors the original work s
+- Reflex tools consistently converge stale goals (market analysis, skill activation) where deliberative planning stalls, showing that targeted micro-scr
+- A single unreliable model (z-ai/glm-5.2:free) repeatedly fails with 429 errors while a slower fallback succeeds, proving that model diversity without 
 - Memory pruning is currently inactive with zero facts and events pruned, suggesting a need to adjust pruning thresholds or retention policies.
 - There is a persistent gap between generating skill proposals and actually implementing them, requiring a dedicated build pipeline.
 - Reflexes are effectively resolving stale drive goals like market analysis cleanup, but the core analytical task remains unfinished.
@@ -51,11 +56,6 @@
 - Reflex tools (swarm convergence, market cleanup) achieve 100% convergence in this session while model-dependent planning fails, indicating reflexes ar
 - Five skill proposals exist (ModelRouter, CircuitBreaker, PreFlightProbe, ProposalGate, DataFreshnessMonitor) but zero have been implemented, revealing
 - Model z-ai/glm-5.2:free fails 100% of the time with 429 errors while nvidia/nemotron-3-ultra succeeds but with 20-44s latency variance, proving single
-- Swarm convergence occurred without a measurable score, making it impossible to verify if the 8+ quality threshold was actually met.
-- Five concrete skill proposals exist but remain unimplemented, creating a gap between diagnosed problems and deployed solutions.
-- Only one model (inclusionai/ling-3.0-flash-fin) succeeded but with high latency (9.7s), suggesting capacity constraints on working models.
-- Upstream provider overload (502 from Nvidia) reveals dependency on external service stability beyond local control.
-- Rate limiting (429) affects multiple free-tier models simultaneously, indicating shared quota exhaustion rather than isolated failures.
 
 ---
 

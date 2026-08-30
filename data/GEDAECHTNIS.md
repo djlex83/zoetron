@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6878 Fakten** · Stand 2026-08-30 02:41 UTC · aktualisiert bei jedem Herzschlag
+**6883 Fakten** · Stand 2026-08-30 02:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3266
+- **dream:** 3271
 - **swarm_artifact:** 1625
 - **last_swarm_critique:** 618
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830024551:5:14de2f`
+*30.08. 02:45 UTC · Quelle: dream*
+
+High latency (16-30s) on the only working model makes synchronous calls impractical for interactive loops, requiring async or cached patterns.
+
+### `dream:20260830024551:4:b8955f`
+*30.08. 02:45 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, indicating the health monitor misses external dependency degradation.
+
+### `dream:20260830024551:3:65f428`
+*30.08. 02:45 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than implementation (5 proposals generated in one session), creating a meta-backlog that mirrors the original work staleness.
+
+### `dream:20260830024551:2:5c6cff`
+*30.08. 02:45 UTC · Quelle: dream*
+
+Reflex tools consistently converge stale goals (market analysis, skill activation) where deliberative planning stalls, showing that targeted micro-scripts outperform open-ended reasoning for bounded tasks.
+
+### `dream:20260830024551:1:f7a4f2`
+*30.08. 02:45 UTC · Quelle: dream*
+
+A single unreliable model (z-ai/glm-5.2:free) repeatedly fails with 429 errors while a slower fallback succeeds, proving that model diversity without automated routing wastes cycles.
 
 ### `dream:20260830024100:5:d5831f`
 *30.08. 02:41 UTC · Quelle: dream*
