@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7335 Fakten** · Stand 2026-08-30 15:38 UTC · aktualisiert bei jedem Herzschlag
+**7340 Fakten** · Stand 2026-08-30 15:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3575
+- **dream:** 3580
 - **swarm_artifact:** 1697
 - **last_swarm_critique:** 632
 - **anti_pattern:** 527
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830154356:5:8d6759`
+*30.08. 15:43 UTC · Quelle: dream*
+
+Rate-limit failures occur in tight bursts across all three failing models simultaneously, indicating shared quota.
+
+### `dream:20260830154356:4:62122e`
+*30.08. 15:43 UTC · Quelle: dream*
+
+Simulation flagged high risk (5) and required revisions (5) for skill merging, but zero revisions were applied.
+
+### `dream:20260830154356:3:1f10d5`
+*30.08. 15:43 UTC · Quelle: dream*
+
+Latency for the working model scales superlinearly with input tokens (4.2s→16.2s for 525→3123 tokens_in).
+
+### `dream:20260830154356:2:846c18`
+*30.08. 15:43 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model showing reliable success across varying token volumes.
+
+### `dream:20260830154356:1:6c32a1`
+*30.08. 15:43 UTC · Quelle: dream*
+
+Free-tier models from major providers (Google, Z.ai) consistently fail with 429 rate-limit errors under load.
 
 ### `dream:20260830153609:5:4c2225`
 *30.08. 15:36 UTC · Quelle: dream*

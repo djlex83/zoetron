@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 15:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 15:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Rate-limit failures occur in tight bursts across all three failing models simultaneously, indicating shared quota.
+- Simulation flagged high risk (5) and required revisions (5) for skill merging, but zero revisions were applied.
+- Latency for the working model scales superlinearly with input tokens (4.2s→16.2s for 525→3123 tokens_in).
+- inclusionai/ling-3.0-flash-fin:free is the only model showing reliable success across varying token volumes.
+- Free-tier models from major providers (Google, Z.ai) consistently fail with 429 rate-limit errors under load.
 - Multi-model consensus requirement (2-of-3) cannot be met when only 1 model responds, causing silent stalls instead of explicit degradation.
 - System enters conserve mode (stress=1.0) with max_tasks=3, but no automatic model-fallback or circuit-breaker logic exists to reduce load.
 - Token-in/out ratios on the sole working model show 1.6x expansion (3612→5921), validating the truncation-risk guardrail proposal.
@@ -51,11 +56,6 @@
 - Only inclusionai/ling-3.0-flash-fin:free remained available under load, exposing provider capacity as a hidden system dependency.
 - Swarm convergence reported success with a null score, revealing that convergence criteria lack mandatory score validation.
 - Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, making single-model reliance unreliable.
-- Hand-action latency (0.2s) is healthy but unmonitored; no p95 threshold exists to detect environment degradation early.
-- Reflex-driven execution ("abgelehnte-werkzeuge-verstehen-und-verbe.py") achieved goal convergence without planner involvement, proving reflexes can ha
-- Only inclusionai/ling-3.0-flash-fin:free delivered a successful response, creating a single-point-of-failure for the entire model pool.
-- The circuit breaker (3 strikes → 1800s block) prevents cascade failures but reacts too late to save the current goal attempt.
-- Free-tier models (glm, nemotron, gemma) consistently fail under load with 429/502 errors, making them unreliable as primary workers.
 
 ---
 

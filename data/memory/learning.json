@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-30 15:37:29",
+ "stand": "2026-08-30 15:45:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "laeufe": 18,
+   "erfolge": 18,
    "quote": 1.0
   },
   {
@@ -81,12 +81,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-umsetzen.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -115,6 +109,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-endlich-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
@@ -213,8 +213,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.782,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.783,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 28,
   "best": 9.0,
