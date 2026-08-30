@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 17:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High latency variance (6s vs 64s) on the same model suggests queueing or cold-start effects that degrade swarm cycle times.
+- A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure.
+- Template variable interpolation failures (e.g., {{skill}}) in skill generation reveal a contract mismatch between planner output and builder execution
+- The evolution/swarm pipeline consistently stalls at score 6/10 with non-convergence, indicating insufficient critic feedback or builder capability.
+- Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502), making them unreliable for production workflows without aggressive 
 - Evolutionary variant selection (3 variants, winner score 8 vs baseline 6) reliably improves artifact quality when critic feedback targets concrete cod
 - Calibration error of 3 points (predicted 3 vs actual 6) indicates the planner consistently underestimates implementation complexity for simulation-to-
 - Poolside Laguna-S-2.1 delivers the best latency-to-success ratio (9.5s) when not rate-limited, making it the preferred fallback.
@@ -51,11 +56,6 @@
 - File operations fail when using relative paths; all data access must resolve through ZOETRON_DATA and sys.argv[1] to absolute paths before I/O.
 - Fallback models exhibit cascading failures: nvidia/nemotron returns 502 upstream errors under load, google/gemma hits 429, only poolside/laguna succee
 - Primary model (z-ai/glm-5.2) is permanently rate-limited (429), making it unusable without a request queue and exponential backoff.
-- Skill proposals generated during consolidation (circuit-breaker, token validation, path retry) address real failure modes observed in the same cycle, 
-- The fallback nvidia/nemotron-3-ultra-550b-a55b:free model succeeds consistently but with high latency (76-125s), suggesting it is a reliable but slow 
-- The system enters conserve mode (stress=1.0, max_iterations=1) under load, which caps execution capacity and can stall swarm convergence when multiple
-- Hand-action failures occur when relative file paths are not resolved against sys.argv[1] and ZOETRON_DATA, causing silent zero-byte reads that exit cl
-- The z-ai/glm-5.2:free model repeatedly hits 429 rate limits across multiple consecutive calls, indicating a persistent degradation pattern that requir
 
 ---
 

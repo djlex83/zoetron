@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7388 Fakten** · Stand 2026-08-30 17:16 UTC · aktualisiert bei jedem Herzschlag
+**7393 Fakten** · Stand 2026-08-30 17:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3615
+- **dream:** 3620
 - **swarm_artifact:** 1703
 - **last_swarm_critique:** 633
 - **anti_pattern:** 529
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830172111:5:051fd2`
+*30.08. 17:21 UTC · Quelle: dream*
+
+High latency variance (6s vs 64s) on the same model suggests queueing or cold-start effects that degrade swarm cycle times.
+
+### `dream:20260830172111:4:6acf3d`
+*30.08. 17:21 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure.
+
+### `dream:20260830172111:3:ee7364`
+*30.08. 17:21 UTC · Quelle: dream*
+
+Template variable interpolation failures (e.g., {{skill}}) in skill generation reveal a contract mismatch between planner output and builder execution.
+
+### `dream:20260830172111:2:b37087`
+*30.08. 17:21 UTC · Quelle: dream*
+
+The evolution/swarm pipeline consistently stalls at score 6/10 with non-convergence, indicating insufficient critic feedback or builder capability.
+
+### `dream:20260830172111:1:04ed47`
+*30.08. 17:21 UTC · Quelle: dream*
+
+Free-tier models exhibit systemic rate-limiting (429) and upstream overload (502), making them unreliable for production workflows without aggressive fallback.
 
 ### `dream:20260830171308:5:2a36ac`
 *30.08. 17:13 UTC · Quelle: dream*
