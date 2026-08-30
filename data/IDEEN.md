@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 04:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) succeed silently while model-critical paths lack equivalent automated recovery.
+- Existing skill proposals (ModelRouter, CircuitBreaker, calibration table) remain unimplemented despite repeated failure signals, revealing a proposal-
+- Latency variance (6–29 s) across successful calls dwarfs token-count differences, implying queueing delays dominate over inference time.
+- A single 404 error on nemotron-3-ultra indicates model endpoint deprecation or routing misconfiguration that persists until the registry is refreshed.
+- Free-tier models on OpenRouter exhibit pervasive 429 rate-limiting that correlates with time-of-day and concurrent usage spikes, making them unreliabl
 - No automatic fallback sequencing exists - models fail sequentially without health-aware routing, causing total LLM unavailability during quota exhaust
 - Local reflex tools (hand_action, simulation translation) succeed with 0.35s latency while model calls fail or take 10-84s, proving local-first executi
 - The system has 5 concrete skill proposals for model resilience but zero implementations, exposing a proposal-to-execution gap that perpetuates failure
@@ -51,11 +56,6 @@
 - Reflex tool 'alte-schwarm-ergebnisse-aufräumen.py' succeeds instantly (0.45s) when invoked, demonstrating local-first execution outperforms model call
 - Five skill proposals repeat across cycles but none are implemented, revealing a proposal-to-execution gap that stalls capability growth.
 - Model z-ai/glm-5.2:free fails 100% with 429 errors while nvidia/nemotron-3-ultra succeeds but with high latency (31-84s), proving single-model depende
-- Market-analysis swarm completed via reflex but produced no measurable output, revealing a telemetry gap for swarm outcomes.
-- Self-diagnosis reports zero organ errors while model failures exceed 80%, indicating health metrics don't capture external API reliability.
-- Proposed skills (fallback chain, rate-aware scheduler, stale-work sweeper) remain unimplemented, creating a persistent capability gap.
-- Successful calls cluster on inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra, suggesting a small reliable subset exists.
-- 429 rate-limit errors dominate model failures across all free-tier providers, making naive round-robin selection ineffective.
 
 ---
 

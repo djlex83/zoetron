@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6981 Fakten** · Stand 2026-08-30 04:40 UTC · aktualisiert bei jedem Herzschlag
+**6986 Fakten** · Stand 2026-08-30 04:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3351
+- **dream:** 3356
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830044532:5:06ca25`
+*30.08. 04:45 UTC · Quelle: dream*
+
+Reflex-driven memory updates (alte-erinnerungen-aktualisieren.py) succeed silently while model-critical paths lack equivalent automated recovery.
+
+### `dream:20260830044532:4:dbe7de`
+*30.08. 04:45 UTC · Quelle: dream*
+
+Existing skill proposals (ModelRouter, CircuitBreaker, calibration table) remain unimplemented despite repeated failure signals, revealing a proposal-to-execution gap.
+
+### `dream:20260830044532:3:e74dec`
+*30.08. 04:45 UTC · Quelle: dream*
+
+Latency variance (6–29 s) across successful calls dwarfs token-count differences, implying queueing delays dominate over inference time.
+
+### `dream:20260830044532:2:bd3396`
+*30.08. 04:45 UTC · Quelle: dream*
+
+A single 404 error on nemotron-3-ultra indicates model endpoint deprecation or routing misconfiguration that persists until the registry is refreshed.
+
+### `dream:20260830044532:1:159e61`
+*30.08. 04:45 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit pervasive 429 rate-limiting that correlates with time-of-day and concurrent usage spikes, making them unreliable for latency-sensitive tasks.
 
 ### `dream:20260830043907:5:5e0e7c`
 *30.08. 04:39 UTC · Quelle: dream*
