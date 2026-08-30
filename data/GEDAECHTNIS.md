@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7560 Fakten** · Stand 2026-08-30 22:26 UTC · aktualisiert bei jedem Herzschlag
+**7577 Fakten** · Stand 2026-08-30 22:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3735
-- **swarm_artifact:** 1733
-- **last_swarm_critique:** 638
-- **anti_pattern:** 535
-- **last_swarm_goal:** 387
-- **strategy:** 288
+- **dream:** 3740
+- **swarm_artifact:** 1739
+- **last_swarm_critique:** 639
+- **anti_pattern:** 537
+- **last_swarm_goal:** 388
+- **strategy:** 289
+- **hand_result:** 84
 - **tool:** 84
-- **hand_result:** 83
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 29
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten entwick:1`
+*30.08. 22:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Embodied skill emergence through environmental constraint manipulation - Abandon direct instruction entirely and instead engineer physical environments with specific constraint fields that force the emergence of target abilit
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten entwick:0`
+*30.08. 22:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Cognitive scaffolding through interleaved skill layers - Structure learning as overlapping cognitive layers where each layer is a distinct neurocognitive skill (working memory, inhibitory control, attention shifting). Rather 
+
+### `last_swarm_critique`
+*30.08. 22:40 UTC · Quelle: critic*
+
+score=5; issues=Critic output unparseable.
+
+### `last_swarm_goal`
+*30.08. 22:31 UTC · Quelle: system*
+
+Neue Fähigkeiten entwickeln
+
+### `dream:20260830223141:5:0af8ac`
+*30.08. 22:31 UTC · Quelle: dream*
+
+Dynamic throttling based on latency trends and stress-state awareness prevents resource exhaustion and improves overall system stability during high-load periods.
+
+### `dream:20260830223141:4:6fa3ce`
+*30.08. 22:31 UTC · Quelle: dream*
+
+Pre-execution validation gates (syntax check, type verification, dry-run) prevent downstream failures caused by malformed or unsafe generated code.
+
+### `dream:20260830223141:3:aa74b2`
+*30.08. 22:31 UTC · Quelle: dream*
+
+Critical-path tasks require reserved capacity in priority queues to bypass rate-limited models and maintain system responsiveness under stress.
+
+### `dream:20260830223141:2:abd42b`
+*30.08. 22:31 UTC · Quelle: dream*
+
+Exponential backoff with jitter and automatic fallback to healthy models significantly reduces task failure rates when primary models are rate-limited or overloaded.
+
+### `dream:20260830223141:1:171c39`
+*30.08. 22:31 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) are the dominant failure modes across multiple model providers, indicating systemic capacity constraints rather than isolated errors.
 
 ### `dream:20260830222524:5:163d39`
 *30.08. 22:25 UTC · Quelle: dream*

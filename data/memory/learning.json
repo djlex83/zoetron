@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 22:25:46",
+ "stand": "2026-08-30 22:40:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,16 +27,10 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 6,
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 5,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
@@ -57,16 +51,22 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 5,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
@@ -195,17 +195,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.81,
- "simulationen_angewandt": 23,
+ "haende_quote": 0.791,
+ "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 27,
   "best": 9.0,
-  "schnitt": 5.67
+  "schnitt": 5.63
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 25,
-   "schnitt": 5.6
+   "schnitt": 5.56
   },
   "bau": {
    "n": 2,

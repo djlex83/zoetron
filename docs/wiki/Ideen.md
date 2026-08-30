@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 22:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 2×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 2×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 2×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dynamic throttling based on latency trends and stress-state awareness prevents resource exhaustion and improves overall system stability during high-l
+- Pre-execution validation gates (syntax check, type verification, dry-run) prevent downstream failures caused by malformed or unsafe generated code.
+- Critical-path tasks require reserved capacity in priority queues to bypass rate-limited models and maintain system responsiveness under stress.
+- Exponential backoff with jitter and automatic fallback to healthy models significantly reduces task failure rates when primary models are rate-limited
+- Rate limiting (429) and upstream overload (502) are the dominant failure modes across multiple model providers, indicating systemic capacity constrain
 - Latency variance (6.6s to 91.7s) across models makes fixed timeouts dangerous for critical-path operations.
 - Swarm convergence in one cycle with only one critic for three builders suggests insufficient adversarial review before commit.
 - Calibration error of 3 points on an 8-point scale indicates systematic overconfidence in task difficulty estimation.
@@ -51,11 +56,6 @@
 - High stress (1.0) triggers conserve mode limiting to 3 tasks and 1 iteration, starving parallel work; task scheduler must adapt concurrency to stress 
 - Relative path usage ignores ZOETRON_DATA and sys.argv[1], causing hand actions to read zero files; all file operations must resolve absolute data path
 - Rate limiting on primary model (z-ai/glm-5.2:free) causes repeated 429 errors; need automatic fallback with exponential backoff.
-- No goal-stack checkpointing exists, so any hard crash during a multi-cycle swarm loses all intermediate progress and requires full restart.
-- Thirty-five skill proposals accumulate unimplemented because no metabolic pressure forces promotion from idea to tested tool; the system dreams but do
-- Swarm executions evolve but stall at sub-threshold scores (6/10) because convergence criteria lack a minimum-quality gate, leaving goals perpetually '
-- Filesystem actions silently fail when inputs aren't normalized against ZOETRON_DATA and sys.argv[1], turning relative paths into zero-byte reads.
-- Free-tier model APIs exhibit correlated 429/502 failures that cascade into task abandonment unless a router tracks per-model health and auto-demotes f
 
 ---
 
