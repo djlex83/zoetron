@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 14:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 14:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
-- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The fallback reflex to historical swarm-work tools also failed, showing that legacy knowledge repositories lack a reliable activation path when primar
+- Data-path resolution failures (hand_action reading nothing) silently halt all downstream analysis, revealing that path-validation is missing before an
+- Resource-conserve mode (stress=1.0, budget=1 iteration) forces the system into single-attempt execution, making any exploratory or multi-model strateg
+- The system proposes calibration corrections and quality gates but cannot execute them because the same infrastructure failures block every model from 
+- 429 rate-limit and 502 upstream-overload errors are the dominant failure mode across four different model providers, indicating a systemic request-thr
 - Reflex-based execution converges reliably when the model layer is available, confirming that the execution engine itself is sound and the bottleneck i
 - Self-diagnosis consistently reports zero organ errors despite repeated model failures, suggesting the diagnostic scope may not cover infrastructure/AP
 - Effort estimation is systematically off by ~33%, necessitating a calibration correction factor (1.5x) applied to predicted effort across all planning 
@@ -51,11 +56,6 @@
 - Stale market analyses lose their decision value over time, proving that reflex-driven completion outperforms perfectionist waiting for ideal condition
 - The gap between dream proposals and implemented skills is the system's largest waste vector — ideas die without auto-wiring into reflex triggers and t
 - Repeated 429 rate-limit errors from a single free model reveal that dependency without an automatic fallback turns transient limits into systemic pred
-- Skill proposal generation without a concurrent deployment mechanism creates a growing debt between designed and actual capabilities.
-- Self-diagnosis that excludes external API dependencies will repeatedly miss the root cause of cascading failures.
-- Reflex actions succeed consistently where deliberate planning fails, suggesting the system should default to reflex-driven recovery for stale or block
-- Analysis-to-execution conversion is the system's weakest link: market analysis goals cycle through 'abschließen,' 'nutzen,' and 'fertigstellen' withou
-- Repeated 429 rate-limit failures on a single model indicate the absence of a pre-flight health check, making model availability the system's primary s
 
 ---
 

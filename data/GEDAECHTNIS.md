@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7303 Fakten** · Stand 2026-08-30 14:24 UTC · aktualisiert bei jedem Herzschlag
+**7320 Fakten** · Stand 2026-08-30 14:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3555
-- **swarm_artifact:** 1691
-- **last_swarm_critique:** 631
-- **anti_pattern:** 525
-- **last_swarm_goal:** 380
-- **strategy:** 283
-- **hand_result:** 82
+- **dream:** 3560
+- **swarm_artifact:** 1697
+- **last_swarm_critique:** 632
+- **anti_pattern:** 527
+- **last_swarm_goal:** 381
+- **strategy:** 284
+- **hand_result:** 83
 - **tool:** 80
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 28
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fahigkeit:2`
+*30.08. 14:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Template-basierte textuelle Faehigkeits-Kombination - Behandle Fuehigkeiten als textuelle Templates statt als modulare Code-Bausteine. Definiere die Fuehigkeiten als mehrzeilige Strings (Triple-Quoted Strings) und kombiniere 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fahigkeit:0`
+*30.08. 14:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Direkte Inline-Synthese ohne externe Abhaengigkeiten - Vermeide alle Importe von nicht-verifizierten Modulen wie 'zoetron.shared_utility.extract_common_utils' und 'zoetron.konvergenztor'. Schreibe eine einzelne, selbstständig
+
+### `last_swarm_critique`
+*30.08. 14:33 UTC · Quelle: critic*
+
+score=1; issues=LAEUFT NICHT: Traceback in action_1788100411878.py (Zeile 97) und action_1788100412999.py (Zeile 9) - Artefakt fuehrt nicht aus; Import-Fehler: 'zoetron.shared_utility.extract_common_utils' und 'zoetron.konvergenztor' sind nicht verifiziert vor
+
+### `last_swarm_goal`
+*30.08. 14:31 UTC · Quelle: system*
+
+Vorgeschlagene Fahigkeiten zusammenfuhren
+
+### `dream:20260830143123:5:1553e7`
+*30.08. 14:31 UTC · Quelle: dream*
+
+The fallback reflex to historical swarm-work tools also failed, showing that legacy knowledge repositories lack a reliable activation path when primary methods break down.
+
+### `dream:20260830143123:4:5805c4`
+*30.08. 14:31 UTC · Quelle: dream*
+
+Data-path resolution failures (hand_action reading nothing) silently halt all downstream analysis, revealing that path-validation is missing before any file-access operation.
+
+### `dream:20260830143123:3:3baba2`
+*30.08. 14:31 UTC · Quelle: dream*
+
+Resource-conserve mode (stress=1.0, budget=1 iteration) forces the system into single-attempt execution, making any exploratory or multi-model strategy inherently fragile.
+
+### `dream:20260830143123:2:85ecb8`
+*30.08. 14:31 UTC · Quelle: dream*
+
+The system proposes calibration corrections and quality gates but cannot execute them because the same infrastructure failures block every model from reliably producing output.
+
+### `dream:20260830143123:1:bd7276`
+*30.08. 14:31 UTC · Quelle: dream*
+
+429 rate-limit and 502 upstream-overload errors are the dominant failure mode across four different model providers, indicating a systemic request-throttling problem rather than any single model's inadequacy.
 
 ### `dream:20260830142336:5:3503ef`
 *30.08. 14:23 UTC · Quelle: dream*
