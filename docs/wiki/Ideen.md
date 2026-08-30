@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 07:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 07:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Rate-limit (429) and server-overload (502) errors demand fundamentally different retry strategies, and ignoring this distinction wastes recovery time.
+- Code generation paths must include pre-execution syntax validation to eliminate an entire class of runtime errors before sandbox invocation.
+- Output results from external model calls require structural validation before downstream consumption to prevent cascading task failures.
+- A persistent gap between skill proposal generation and actual implementation signals that proposals must be auto-promoted to executable specs when bac
+- Free-tier API models repeatedly hit rate limits under load, making them unsuitable as sole call targets without a resilient fallback architecture.
 - The local-first execution policy — preferring hand_action over model calls — is empirically validated but not yet enforced as a system-wide rule.
 - Stale goals accumulate when no expiration or renewal mechanism forces reassessment of long-running abandoned work items.
 - Skill proposals decay when no automated pipeline converts failure-validated proposals into registered reflex tools within a bounded timeframe.
@@ -51,11 +56,6 @@
 - Stale drive goals (market analysis) block new decisions until explicitly closed or completed via reflex actions.
 - Multiple independent proposals converge on model routing, output validation, and pre-execution checks as critical missing infrastructure.
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without automated fallback.
-- Self-diagnosis reports zero organ errors despite 64 model failures, revealing a blind spot in failure attribution to external dependencies.
-- Multiple skill proposals accumulate without execution SLA enforcement, creating a backlog of unimplemented reliability improvements.
-- Reflex tools execute successfully (exit 0, 0.21s) but lack health tracking, so silent degradations would go undetected.
-- Circuit-breaker and consume-gate proposals exist but are not yet implemented, leaving the system vulnerable to repeated rate-limit cascades.
-- Free-tier models consistently fail with 429 errors while paid-tier models succeed, indicating rate-limit exhaustion is the primary failure mode.
 
 ---
 

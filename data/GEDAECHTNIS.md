@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7088 Fakten** · Stand 2026-08-30 07:32 UTC · aktualisiert bei jedem Herzschlag
+**7093 Fakten** · Stand 2026-08-30 07:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3426
+- **dream:** 3431
 - **swarm_artifact:** 1651
 - **last_swarm_critique:** 623
 - **anti_pattern:** 513
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830073932:5:95d605`
+*30.08. 07:39 UTC · Quelle: dream*
+
+Rate-limit (429) and server-overload (502) errors demand fundamentally different retry strategies, and ignoring this distinction wastes recovery time.
+
+### `dream:20260830073932:4:1af54e`
+*30.08. 07:39 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260830073932:3:1f746e`
+*30.08. 07:39 UTC · Quelle: dream*
+
+Output results from external model calls require structural validation before downstream consumption to prevent cascading task failures.
+
+### `dream:20260830073932:2:d23bf3`
+*30.08. 07:39 UTC · Quelle: dream*
+
+A persistent gap between skill proposal generation and actual implementation signals that proposals must be auto-promoted to executable specs when backed by multiple failure, gap, or stale signals.
+
+### `dream:20260830073932:1:184015`
+*30.08. 07:39 UTC · Quelle: dream*
+
+Free-tier API models repeatedly hit rate limits under load, making them unsuitable as sole call targets without a resilient fallback architecture.
 
 ### `dream:20260830073106:5:bfcf20`
 *30.08. 07:31 UTC · Quelle: dream*
