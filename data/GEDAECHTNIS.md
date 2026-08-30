@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6961 Fakten** · Stand 2026-08-30 04:20 UTC · aktualisiert bei jedem Herzschlag
+**6966 Fakten** · Stand 2026-08-30 04:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3331
+- **dream:** 3336
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830042402:5:e6f6e8`
+*30.08. 04:24 UTC · Quelle: dream*
+
+Exit code 0 with empty output occurred silently; output validation must be mandatory, not optional.
+
+### `dream:20260830042402:4:611f3e`
+*30.08. 04:24 UTC · Quelle: dream*
+
+Reflex-driven completion of stale market analyses proves the StaleWorkReaper concept works when triggered.
+
+### `dream:20260830042402:3:4f08d0`
+*30.08. 04:24 UTC · Quelle: dream*
+
+Latency variance (8.9–29 s) makes fixed timeouts unsafe; percentile-based SLOs are needed for each model.
+
+### `dream:20260830042402:2:ef46c5`
+*30.08. 04:24 UTC · Quelle: dream*
+
+Upstream 502 errors from Nvidia show provider instability beyond rate limiting, requiring circuit-breaker logic per provider.
+
+### `dream:20260830042402:1:0c3cf1`
+*30.08. 04:24 UTC · Quelle: dream*
+
+429 rate limits affect every free model simultaneously, indicating shared OpenRouter quota rather than per-model limits.
 
 ### `dream:20260830041859:5:d559bc`
 *30.08. 04:18 UTC · Quelle: dream*
