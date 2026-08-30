@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 02:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -37,10 +37,15 @@
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning is currently inactive with zero facts and events pruned, suggesting a need to adjust pruning thresholds or retention policies.
+- There is a persistent gap between generating skill proposals and actually implementing them, requiring a dedicated build pipeline.
+- Reflexes are effectively resolving stale drive goals like market analysis cleanup, but the core analytical task remains unfinished.
+- Fallback to nvidia/nemotron-3-ultra-550b-a55b:free is successful but incurs high latency (up to 39 seconds), indicating a need for faster backup model
+- The z-ai/glm-5.2:free model is chronically rate-limited with 429 errors and should be temporarily disabled or heavily throttled.
 - Three drive goals activated simultaneously (reduce model errors, implement skills, finish stale market analysis) but no concrete execution traces foll
 - Prune runs consistently remove 0 facts and 0 events, suggesting either the pruning criteria are too strict or the system accumulates no removable debr
 - Reflex tools (swarm convergence, market cleanup) achieve 100% convergence in this session while model-dependent planning fails, indicating reflexes ar
@@ -51,11 +56,6 @@
 - Only one model (inclusionai/ling-3.0-flash-fin) succeeded but with high latency (9.7s), suggesting capacity constraints on working models.
 - Upstream provider overload (502 from Nvidia) reveals dependency on external service stability beyond local control.
 - Rate limiting (429) affects multiple free-tier models simultaneously, indicating shared quota exhaustion rather than isolated failures.
-- Evolution runs improved a 5/10 score to 9/10 in one generation, but the swarm still failed to converge after two cycles, indicating that fitness thres
-- The skill 'vorgeschlagene-fähigkeiten-prüfen-und-nu' was rejected because it produced only stdout with no return value or persisted artifacts, reveali
-- inclusionai/ling-3.0-flash-fin:free succeeded on every call with 9–11s latency, identifying it as the current stable default for free-tier routing.
-- A single model (nemotron) accumulated three consecutive errors and was blocked for 30 minutes, showing that error streaks trigger hard bans.
-- Free-tier models frequently hit 429 rate limits under load, making them unreliable for production workflows without fallback chains.
 
 ---
 

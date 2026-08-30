@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6873 Fakten** · Stand 2026-08-30 02:37 UTC · aktualisiert bei jedem Herzschlag
+**6878 Fakten** · Stand 2026-08-30 02:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3261
+- **dream:** 3266
 - **swarm_artifact:** 1625
 - **last_swarm_critique:** 618
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830024100:5:d5831f`
+*30.08. 02:41 UTC · Quelle: dream*
+
+Memory pruning is currently inactive with zero facts and events pruned, suggesting a need to adjust pruning thresholds or retention policies.
+
+### `dream:20260830024100:4:bec46b`
+*30.08. 02:41 UTC · Quelle: dream*
+
+There is a persistent gap between generating skill proposals and actually implementing them, requiring a dedicated build pipeline.
+
+### `dream:20260830024100:3:63a9da`
+*30.08. 02:41 UTC · Quelle: dream*
+
+Reflexes are effectively resolving stale drive goals like market analysis cleanup, but the core analytical task remains unfinished.
+
+### `dream:20260830024100:2:01287c`
+*30.08. 02:41 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra-550b-a55b:free is successful but incurs high latency (up to 39 seconds), indicating a need for faster backup models.
+
+### `dream:20260830024100:1:b41f8f`
+*30.08. 02:41 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is chronically rate-limited with 429 errors and should be temporarily disabled or heavily throttled.
 
 ### `dream:20260830023627:5:e3625b`
 *30.08. 02:36 UTC · Quelle: dream*
