@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7147 Fakten** · Stand 2026-08-30 09:13 UTC · aktualisiert bei jedem Herzschlag
+**7163 Fakten** · Stand 2026-08-30 09:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3456
-- **swarm_artifact:** 1665
-- **last_swarm_critique:** 626
-- **anti_pattern:** 517
-- **last_swarm_goal:** 375
-- **strategy:** 279
+- **dream:** 3461
+- **swarm_artifact:** 1671
+- **last_swarm_critique:** 627
+- **anti_pattern:** 519
+- **last_swarm_goal:** 376
+- **strategy:** 280
 - **hand_result:** 82
 - **tool:** 77
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Schwarm-Arbeiten zu:2`
+*30.08. 09:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Metadaten-gestützte Lifecycle-Governance-Policy - Anstatt Ad-hoc-Bereinigung wird ein Lebenszyklus-Management-System für KI-Markt-Artefakte eingeführt. Jedes Artefakt in tools/artefakte/memory erhält automatisch Metadaten-Tag
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Schwarm-Arbeiten zu:0`
+*30.08. 09:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Content-Intelligence-basierte KI-Markt-Filterung - Statt datumsgestützter Löschung (Fehler im vorherigen Ansatz) wird ein Content-Analysis-Modul eingesetzt, das jeden Artefakt-Inhalt auf KI-Markt-Relevanz prüft. Ein lokaler K
+
+### `last_swarm_critique`
+*30.08. 09:29 UTC · Quelle: critic*
+
+score=6; issues=Artefakt 3 (Archivierung) bereinigt ALLE Dateien >30 Tage in tools/artefakte/memory, nicht spezifisch KI-Markt-Arbeiten - Zielverfehlung; Artefakte 1 & 2 sind nur Diagnose-Tools, keine Aufräum-Aktionen; sie rufen externe Tools auf, die nicht ex
+
+### `last_swarm_goal`
+*30.08. 09:19 UTC · Quelle: system*
+
+Alte Schwarm-Arbeiten zu KI-Markt aufräumen
+
+### `dream:20260830091829:5:472320`
+*30.08. 09:18 UTC · Quelle: dream*
+
+Successful convergence on the first swarm run (reflex mode, score 8+) shows the architecture works when model calls succeed.
+
+### `dream:20260830091829:4:739bc5`
+*30.08. 09:18 UTC · Quelle: dream*
+
+Structured error capture (HTTP status, latency, tokens) is absent, so failure patterns remain invisible to automated analysis.
+
+### `dream:20260830091829:3:e2eb28`
+*30.08. 09:18 UTC · Quelle: dream*
+
+Conserve mode's strict iteration budget (max_iterations=1) prevents retry logic from activating even when fallback providers exist.
+
+### `dream:20260830091829:2:feeac7`
+*30.08. 09:18 UTC · Quelle: dream*
+
+The system accumulates unimplemented skill proposals (router, quota check, executor, limiter, scheduler) while repeatedly suffering the same model failures they would prevent.
+
+### `dream:20260830091829:1:a675cb`
+*30.08. 09:18 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently fail under load via 429 rate limits and 502 upstream errors, making single-provider reliance untenable.
 
 ### `last_swarm_critique`
 *30.08. 09:12 UTC · Quelle: critic*

@@ -1,0 +1,13 @@
+{
+  "data_root": "/workspace/zoetron/data",
+  "tool_used": "/workspace/zoetron/data/tools/alte-schwarm-ergebnisse-aufräumen.py",
+  "found_items": [
+    {
+      "path": "/workspace/zoetron/data/memory/ki_markt_bestandaufnahme.json",
+      "type": "file",
+      "name": "ki_markt_bestandaufnahme.json",
+      "size": 165
+    }
+  ],
+  "count": 1
+}

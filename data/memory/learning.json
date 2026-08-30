@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 09:12:45",
+ "stand": "2026-08-30 09:34:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -28,7 +28,7 @@
   },
   {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 7,
+   "laeufe": 8,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -219,12 +219,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.786,
- "simulationen_angewandt": 27,
+ "haende_quote": 0.796,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 29,
   "best": 9.0,
-  "schnitt": 5.93
+  "schnitt": 6.1
  },
  "score_nach_ziel_typ": {
   "analyse": {
