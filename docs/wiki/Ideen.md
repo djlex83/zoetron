@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 23:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 23:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -33,14 +33,19 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 2×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fallback model cascades work but only when at least one provider has available quota; no local fallback exists.
+- Simulation-based revision loops (3 risks → 3 revisions) successfully improve proposals when compute budget allows.
+- High stress (1.0) triggers conserve mode that caps iterations, causing premature termination of multi-step skill synthesis.
+- Relative path resolution fails because the working directory diverges from ZOETRON_DATA; absolute paths anchored to the environment variable are requi
+- Rate limiting (429 errors) across multiple free models indicates systemic API quota exhaustion, not individual model failure.
 - Drive goals repeatedly target old/new knowledge synthesis but the system lacks a mechanism to retrieve prior dream insights and cross-reference them a
 - Pruning removes zero facts/events despite active consolidation drives, suggesting either insufficient memory accumulation or overly conservative reten
 - Self-diagnosis reports zero organ errors while model failures cascade, revealing that diagnostic scope excludes external dependency health.
@@ -51,11 +56,6 @@
 - Critical-path tasks require reserved capacity in priority queues to bypass rate-limited models and maintain system responsiveness under stress.
 - Exponential backoff with jitter and automatic fallback to healthy models significantly reduces task failure rates when primary models are rate-limited
 - Rate limiting (429) and upstream overload (502) are the dominant failure modes across multiple model providers, indicating systemic capacity constrain
-- Latency variance (6.6s to 91.7s) across models makes fixed timeouts dangerous for critical-path operations.
-- Swarm convergence in one cycle with only one critic for three builders suggests insufficient adversarial review before commit.
-- Calibration error of 3 points on an 8-point scale indicates systematic overconfidence in task difficulty estimation.
-- Tools that only produce stdout without return values or filesystem effects are rejected as non-functional by the validator.
-- Free-tier models exhibit cascading failure modes (429 rate limits → 502 upstream errors) making single-model reliance unreliable.
 
 ---
 

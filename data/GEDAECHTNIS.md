@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7590 Fakten** · Stand 2026-08-30 23:31 UTC · aktualisiert bei jedem Herzschlag
+**7595 Fakten** · Stand 2026-08-30 23:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3745
+- **dream:** 3750
 - **swarm_artifact:** 1745
 - **last_swarm_critique:** 640
 - **anti_pattern:** 537
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830234333:5:905e5a`
+*30.08. 23:43 UTC · Quelle: dream*
+
+Fallback model cascades work but only when at least one provider has available quota; no local fallback exists.
+
+### `dream:20260830234333:4:b62d4b`
+*30.08. 23:43 UTC · Quelle: dream*
+
+Simulation-based revision loops (3 risks → 3 revisions) successfully improve proposals when compute budget allows.
+
+### `dream:20260830234333:3:f599aa`
+*30.08. 23:43 UTC · Quelle: dream*
+
+High stress (1.0) triggers conserve mode that caps iterations, causing premature termination of multi-step skill synthesis.
+
+### `dream:20260830234333:2:d87eb0`
+*30.08. 23:43 UTC · Quelle: dream*
+
+Relative path resolution fails because the working directory diverges from ZOETRON_DATA; absolute paths anchored to the environment variable are required.
+
+### `dream:20260830234333:1:089de1`
+*30.08. 23:43 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple free models indicates systemic API quota exhaustion, not individual model failure.
 
 ### `last_swarm_critique`
 *30.08. 23:30 UTC · Quelle: critic*
