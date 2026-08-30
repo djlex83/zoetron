@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-30 08:39:07",
+ "stand": "2026-08-30 09:12:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 18,
-   "erfolge": 18,
+   "laeufe": 17,
+   "erfolge": 17,
    "quote": 1.0
   },
   {
@@ -27,16 +27,16 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 8,
-   "erfolge": 8,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 7,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 7,
+   "erfolge": 7,
+   "quote": 1.0
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
@@ -69,12 +69,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-umsetzen.py",
-   "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 4,
    "erfolge": 3,
@@ -93,6 +87,18 @@
    "quote": 1.0
   },
   {
+   "tool": "marktanalyse-endlich-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -103,12 +109,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fehlerquellen-systematisch-beheben.py",
@@ -219,17 +219,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.794,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.786,
+ "simulationen_angewandt": 27,
  "swarm_scores": {
-  "n": 28,
+  "n": 29,
   "best": 9.0,
-  "schnitt": 5.86
+  "schnitt": 5.93
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 26,
-   "schnitt": 5.77
+   "schnitt": 6.04
   },
   "bau": {
    "n": 2,

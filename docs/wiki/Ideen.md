@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 08:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 09:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 suggests prediction model is well-tuned for this task class.
+- Critic feedback on 'woche' field structure (1,2) was specific enough to drive evolutionary improvement.
+- Simulation flagged 2 risks and 2 revisions yet zero revisions were applied, indicating a simulation-to-execution gap.
+- Evolutionary variant selection improved score from 7 to 9, but swarm halted at 2 cycles without convergence.
+- Only inclusionai/ling-3.0-flash-fin:free reliably serves requests; all other free models hit 429 rate limits within minutes.
 - Structured error capture is absent from model_fail events (only raw HTTP text), preventing automated classification and retry logic.
 - Competing drive_goals (failure reduction, stale analysis, skill stabilization) run in parallel without serialization, diluting progress on any single 
 - Existing skill proposals for fallback, throttling, and health-checks remain unimplemented while the same 429 errors recur.
@@ -51,11 +56,6 @@
 - Memory gaps ('Blinden Fleck') are actively flagged when insufficient domain experience exists, signaling where targeted exploration drives should be s
 - inclusionai/ling-3.0-flash-fin serves as a reliable anchor model with consistent ~10.8s latency, making it the natural fallback target in any resilien
 - 429 rate limiting is a systemic failure mode hitting multiple free-tier models simultaneously, requiring architectural resilience rather than model-sp
-- Iterative revision reduced model errors and produced a working 414-line Python artifact, but the calibration gap means reliability gains are not yet f
-- The simulation→revision→verification loop is effective (artifact runs successfully after revision) but calibration is miscalibrated (predicted 4 vs ac
-- inclusionai/ling-3.0-flash-fin consistently succeeds under load and should be the default fallback model when others fail.
-- Model endpoint availability on OpenRouter is unstable — models succeeding once (e.g., nemotron-3-ultra-55b) can return 404 on subsequent calls, necess
-- HTTP 429 rate-limiting is the dominant failure mode across multiple OpenRouter models, requiring exponential backoff and retry logic instead of immedi
 
 ---
 

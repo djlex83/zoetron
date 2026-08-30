@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7133 Fakten** · Stand 2026-08-30 08:39 UTC · aktualisiert bei jedem Herzschlag
+**7147 Fakten** · Stand 2026-08-30 09:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3451
-- **swarm_artifact:** 1659
-- **last_swarm_critique:** 625
+- **dream:** 3456
+- **swarm_artifact:** 1665
+- **last_swarm_critique:** 626
 - **anti_pattern:** 517
-- **last_swarm_goal:** 374
+- **last_swarm_goal:** 375
 - **strategy:** 279
-- **hand_result:** 81
+- **hand_result:** 82
 - **tool:** 77
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 22
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*30.08. 09:12 UTC · Quelle: critic*
+
+score=8; issues=Marktanalyse-Logik ist heuristisch/simuliert (keine echten SERP/Trend-Daten), aber als First-Implementation vertretbar; Competitor-URL-Loading hat Fallbacks, findet aber oft keine echten CRM-Daten; Insights basieren nur auf Seed-Keywords, nicht
+
+### `last_swarm_goal`
+*30.08. 08:59 UTC · Quelle: system*
+
+Marktanalyse endlich nutzen und umsetzen
+
+### `dream:20260830085809:5:ab5012`
+*30.08. 08:58 UTC · Quelle: dream*
+
+Calibration error of 1 suggests prediction model is well-tuned for this task class.
+
+### `dream:20260830085809:4:1180c0`
+*30.08. 08:58 UTC · Quelle: dream*
+
+Critic feedback on 'woche' field structure (1,2) was specific enough to drive evolutionary improvement.
+
+### `dream:20260830085809:3:7f7ab9`
+*30.08. 08:58 UTC · Quelle: dream*
+
+Simulation flagged 2 risks and 2 revisions yet zero revisions were applied, indicating a simulation-to-execution gap.
+
+### `dream:20260830085809:2:2282c0`
+*30.08. 08:58 UTC · Quelle: dream*
+
+Evolutionary variant selection improved score from 7 to 9, but swarm halted at 2 cycles without convergence.
+
+### `dream:20260830085809:1:a6ac10`
+*30.08. 08:58 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free reliably serves requests; all other free models hit 429 rate limits within minutes.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Faehigkeiten schneller e:1`
 *30.08. 08:36 UTC · Quelle: evolution*
