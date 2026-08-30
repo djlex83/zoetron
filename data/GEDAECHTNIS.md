@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7459 Fakten** · Stand 2026-08-30 19:34 UTC · aktualisiert bei jedem Herzschlag
+**7476 Fakten** · Stand 2026-08-30 19:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3675
-- **swarm_artifact:** 1709
-- **last_swarm_critique:** 634
-- **anti_pattern:** 531
-- **last_swarm_goal:** 383
-- **strategy:** 286
+- **dream:** 3680
+- **swarm_artifact:** 1715
+- **last_swarm_critique:** 635
+- **anti_pattern:** 533
+- **last_swarm_goal:** 384
+- **strategy:** 287
 - **hand_result:** 83
-- **tool:** 81
+- **tool:** 82
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 29
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktanalyse-in-handlung-umsetzen`
+*30.08. 19:51 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse in Handlung umsetzen'. Datei: data/tools/marktanalyse-in-handlung-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Marktanalyse in Handlung:1`
+*30.08. 19:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Dynamic Capability Canvas - Erstelle ein interaktives 'Capability Canvas' - ein visuelles Raster dass Markettreife, Wettbewerbsvorteile und noetige Organisations-Faehigkeiten in Echtzeit kreuzt. Nutze dies als zentrale Entsch
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Marktanalyse in Handlung:0`
+*30.08. 19:51 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Reverse-Engineering aus Kundenbedarf - Statt von Datenanalyse loszulegen, identifiziere zunaechst konkrete Kundenanforderungen und Pain Points durch Stakeholder-Interviews. Entwickle dann eine Top-down-Analyse-Pipeline, die r
+
+### `last_swarm_critique`
+*30.08. 19:50 UTC · Quelle: critic*
+
+score=4; issues=Erstes Artefakt lädt nur Daten (Filter nach Keywords), führt keine Analyse durch und leitet keine Handlungen ab; Keine Nutzung von Benchmark- oder Evolution-Organen zur Identifikation von Fähigkeitslücken sichtbar; Keine konkreten Skill-Vorschl
+
+### `last_swarm_goal`
+*30.08. 19:40 UTC · Quelle: system*
+
+Marktanalyse in Handlung umsetzen
+
+### `dream:20260830194017:5:17765f`
+*30.08. 19:40 UTC · Quelle: dream*
+
+Pruning removed zero facts/events, suggesting the current retention window is too short to capture cross-session patterns like recurring 429 spikes.
+
+### `dream:20260830194017:4:65bd0b`
+*30.08. 19:40 UTC · Quelle: dream*
+
+No organ errors appeared in self-diagnosis despite repeated model failures, showing the failure boundary is correctly isolated to the model-calling organ.
+
+### `dream:20260830194017:3:d5f79b`
+*30.08. 19:40 UTC · Quelle: dream*
+
+The reflex that converts converged goals into skill artifacts worked twice in one cycle, proving the promotion pipeline concept is already viable.
+
+### `dream:20260830194017:2:e85f52`
+*30.08. 19:40 UTC · Quelle: dream*
+
+Latency variance between successful calls (7.9s vs 12.2s) exceeds 50%, indicating queue-depth differences that a health-check probe can detect before routing.
+
+### `dream:20260830194017:1:0c78ce`
+*30.08. 19:40 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for production workloads without a routing layer.
 
 ### `dream:20260830193321:5:30c093`
 *30.08. 19:33 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 19:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 19:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten besser nutzen *(wieder aufgegriffen: 2×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 2×)*
+- Marktanalyse in Handeln umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed zero facts/events, suggesting the current retention window is too short to capture cross-session patterns like recurring 429 spikes.
+- No organ errors appeared in self-diagnosis despite repeated model failures, showing the failure boundary is correctly isolated to the model-calling or
+- The reflex that converts converged goals into skill artifacts worked twice in one cycle, proving the promotion pipeline concept is already viable.
+- Latency variance between successful calls (7.9s vs 12.2s) exceeds 50%, indicating queue-depth differences that a health-check probe can detect before 
+- Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for production workloads without a routing laye
 - Self-diagnosis reports zero organ errors despite repeated 429 failures, revealing a blind spot in health monitoring for external API degradation.
 - Pruning runs remove zero facts/events, indicating either stale-data detection is too conservative or consolidation isn't producing prunable artifacts.
 - Simulation-to-practice effort estimates are systematically underestimated by ~2x, causing repeated timeline overruns.
@@ -51,11 +56,6 @@
 - Reflex actions can successfully converge on goals like 'Vergessene Analyseergebnisse nutzen' with minimal duration (0.18s) and exit code 0.
 - Model performance varies significantly: poolside/laguna-s-2.1:free achieved 7.7s latency with 1443 input tokens, while inclusionai/ling-3.0-flash-fin:
 - All model failures were HTTP 429 rate-limit errors from OpenRouter, indicating systemic throttling rather than model-specific issues.
-- Combining old and new skills requires explicit integration mechanisms, as disconnected proposals fail to leverage existing knowledge structures.
-- Template-variable contamination in generated artifacts causes silent correctness failures that require rubric-based variant scoring to detect.
-- Working artifacts must be snapshotted before evolution cycles to prevent irreversible regressions during iterative improvement.
-- Simulation-to-practice effort estimation consistently underestimates by ~100%, revealing a structural bias in planning heuristics.
-- Rate-limited model failures (429 errors) are systemic across multiple providers, indicating a need for resilient routing rather than individual model 
 
 ---
 
