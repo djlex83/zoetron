@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 09:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 09:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), so planners must throttle ambition to match budget.
+- The reflex tool "alte-erinnerungen-auf-wert-prüfen.py" failed to validate market-analysis memories, indicating a broken retrieval contract.
+- Hand actions fail when using relative paths; all file operations must resolve against ZOETRON_DATA or sys.argv[1].
+- The working model "nvidia/nemotron-3-ultra-550b-a55b:free" exhibits high latency (54–176 s) requiring timeout guards and fallback budgets.
+- Model "z-ai/glm-5.2:free" consistently returns 429 rate-limit errors and should be excluded from the routing pool.
 - High model latency (50-75s) makes iterative loops impractical; need async/pipelined execution or faster models.
 - Proposed skills accumulate without verification loop; need skill adoption tracker with execution proof.
 - Hand actions fail due to path resolution issues (relative vs absolute paths, missing data directory handling).
@@ -51,11 +56,6 @@
 - Conserve mode's strict iteration budget (max_iterations=1) prevents retry logic from activating even when fallback providers exist.
 - The system accumulates unimplemented skill proposals (router, quota check, executor, limiter, scheduler) while repeatedly suffering the same model fai
 - Free-tier model endpoints consistently fail under load via 429 rate limits and 502 upstream errors, making single-provider reliance untenable.
-- Calibration error of 1 suggests prediction model is well-tuned for this task class.
-- Critic feedback on 'woche' field structure (1,2) was specific enough to drive evolutionary improvement.
-- Simulation flagged 2 risks and 2 revisions yet zero revisions were applied, indicating a simulation-to-execution gap.
-- Evolutionary variant selection improved score from 7 to 9, but swarm halted at 2 cycles without convergence.
-- Only inclusionai/ling-3.0-flash-fin:free reliably serves requests; all other free models hit 429 rate limits within minutes.
 
 ---
 

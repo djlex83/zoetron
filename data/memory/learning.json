@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 09:48:35",
+ "stand": "2026-08-30 09:55:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,15 +33,15 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -219,7 +219,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.796,
+ "haende_quote": 0.797,
  "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 29,
