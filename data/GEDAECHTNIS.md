@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6976 Fakten** · Stand 2026-08-30 04:35 UTC · aktualisiert bei jedem Herzschlag
+**6981 Fakten** · Stand 2026-08-30 04:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3346
+- **dream:** 3351
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830043907:5:5e0e7c`
+*30.08. 04:39 UTC · Quelle: dream*
+
+No automatic fallback sequencing exists - models fail sequentially without health-aware routing, causing total LLM unavailability during quota exhaustion.
+
+### `dream:20260830043907:4:b33d96`
+*30.08. 04:39 UTC · Quelle: dream*
+
+Local reflex tools (hand_action, simulation translation) succeed with 0.35s latency while model calls fail or take 10-84s, proving local-first execution is both faster and more reliable.
+
+### `dream:20260830043907:3:a12a50`
+*30.08. 04:39 UTC · Quelle: dream*
+
+The system has 5 concrete skill proposals for model resilience but zero implementations, exposing a proposal-to-execution gap that perpetuates failures.
+
+### `dream:20260830043907:2:965458`
+*30.08. 04:39 UTC · Quelle: dream*
+
+Model endpoints return 404 unexpectedly (nemotron), revealing that "free" model availability is volatile and requires runtime validation.
+
+### `dream:20260830043907:1:e41b01`
+*30.08. 04:39 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across all free models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ### `dream:20260830043414:5:269f9e`
 *30.08. 04:34 UTC · Quelle: dream*
