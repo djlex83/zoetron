@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6926 Fakten** · Stand 2026-08-30 03:40 UTC · aktualisiert bei jedem Herzschlag
+**6931 Fakten** · Stand 2026-08-30 03:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3296
+- **dream:** 3301
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830034449:5:768410`
+*30.08. 03:44 UTC · Quelle: dream*
+
+Knowledge-refresh tasks needed 3 revision cycles and carried 5 risks, proving that iterative validation loops are mandatory for data-curation work.
+
+### `dream:20260830034449:4:7d7bb6`
+*30.08. 03:44 UTC · Quelle: dream*
+
+Task duration calibration error of 125% (predicted 4 vs actual 9) reveals broken estimation, requiring empirical baseline tracking.
+
+### `dream:20260830034449:3:79204e`
+*30.08. 03:44 UTC · Quelle: dream*
+
+High stress (1.0) and conserve-mode budgets correlate with cascading model failures, indicating need for load-shedding before saturation.
+
+### `dream:20260830034449:2:6434f1`
+*30.08. 03:44 UTC · Quelle: dream*
+
+The sole reliable model (nvidia/nemotron-3-ultra) exhibits extreme latency variance (3–121s), demanding adaptive timeouts and circuit breakers.
+
+### `dream:20260830034449:1:32af32`
+*30.08. 03:44 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits under load, requiring request spacing and fallback chains.
 
 ### `dream:20260830033918:5:8b590e`
 *30.08. 03:39 UTC · Quelle: dream*

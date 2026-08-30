@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 03:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Knowledge-refresh tasks needed 3 revision cycles and carried 5 risks, proving that iterative validation loops are mandatory for data-curation work.
+- Task duration calibration error of 125% (predicted 4 vs actual 9) reveals broken estimation, requiring empirical baseline tracking.
+- High stress (1.0) and conserve-mode budgets correlate with cascading model failures, indicating need for load-shedding before saturation.
+- The sole reliable model (nvidia/nemotron-3-ultra) exhibits extreme latency variance (3–121s), demanding adaptive timeouts and circuit breakers.
+- Free-tier models consistently fail with 429 rate limits under load, requiring request spacing and fallback chains.
 - Reflex tools (e.g., alte-erinnerungen-auf-wert-prüfen.py) fail silently without structured error artifacts, blocking automated repair.
 - System stress hits maximum (1.0) triggering conserve mode that caps tasks to 3 and iterations to 1, starving recovery work.
 - Proposed skills accumulate but lack verification gates; no mechanism confirms a skill was actually learned and registered.
@@ -51,11 +56,6 @@
 - Local-first reflex execution (hand_action) completes in 0.25s with zero errors, proving deterministic tools outperform probabilistic model calls for k
 - Fallback to nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (15-45s), making it unreliable for time-sensitive operations without t
 - The z-ai/glm-5.2:free model consistently returns 429 errors (rate limiting) across multiple attempts, indicating it should be permanently deprioritize
-- Zero facts/events pruned suggests retention policies are misconfigured or pruning criteria are never met.
-- Stale market analyses persist because no automated freshness monitor triggers refresh pipelines based on age and access patterns.
-- Skill proposals accumulate without a validation gate requiring concrete milestones and measurable acceptance tests.
-- High latency (6.9-7.9s) on nvidia/nemotron-3-ultra makes it unsuitable for time-sensitive tasks without latency-aware routing.
-- Recurring 429 errors on z-ai/glm-5.2:free indicate missing pre-flight health checks and circuit-breaker logic for rate-limited models.
 
 ---
 
