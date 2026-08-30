@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 06:56:40",
+ "stand": "2026-08-30 07:31:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 10,
    "erfolge": 10,
    "quote": 1.0
@@ -63,16 +63,16 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 4,
    "erfolge": 2,
    "quote": 0.5
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "marktanalyse-endlich-umsetzen.py",

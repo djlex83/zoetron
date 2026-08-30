@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7083 Fakten** · Stand 2026-08-30 06:57 UTC · aktualisiert bei jedem Herzschlag
+**7088 Fakten** · Stand 2026-08-30 07:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3421
+- **dream:** 3426
 - **swarm_artifact:** 1651
 - **last_swarm_critique:** 623
 - **anti_pattern:** 513
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830073106:5:bfcf20`
+*30.08. 07:31 UTC · Quelle: dream*
+
+The local-first execution policy — preferring hand_action over model calls — is empirically validated but not yet enforced as a system-wide rule.
+
+### `dream:20260830073106:4:768f3a`
+*30.08. 07:31 UTC · Quelle: dream*
+
+Stale goals accumulate when no expiration or renewal mechanism forces reassessment of long-running abandoned work items.
+
+### `dream:20260830073106:3:5173d2`
+*30.08. 07:31 UTC · Quelle: dream*
+
+Skill proposals decay when no automated pipeline converts failure-validated proposals into registered reflex tools within a bounded timeframe.
+
+### `dream:20260830073106:2:6c2c08`
+*30.08. 07:31 UTC · Quelle: dream*
+
+Reflex-based tool execution consistently converges and outperforms model-dependent execution, yet 55 skill proposals remain unimplemented due to missing automation.
+
+### `dream:20260830073106:1:02ce36`
+*30.08. 07:31 UTC · Quelle: dream*
+
+External model APIs fail predictably with 429 rate limits, and working fallback models exist but lack automated circuit-breaking to prevent cascading failures.
 
 ### `tool:modellfehler-reduzieren-fuer-zuverlaessi`
 *30.08. 06:56 UTC · Quelle: hands*
