@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-30 15:51:55",
+ "stand": "2026-08-30 16:21:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -135,6 +135,12 @@
    "quote": 0.0
   },
   {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -201,29 +207,23 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
   }
  ],
- "haende_quote": 0.786,
+ "haende_quote": 0.795,
  "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 28,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 5.71
+  "schnitt": 5.81
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 26,
-   "schnitt": 5.73
+   "schnitt": 5.85
   },
   "bau": {
    "n": 1,

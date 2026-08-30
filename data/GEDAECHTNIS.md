@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7345 Fakten** · Stand 2026-08-30 15:52 UTC · aktualisiert bei jedem Herzschlag
+**7362 Fakten** · Stand 2026-08-30 16:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3585
-- **swarm_artifact:** 1697
-- **last_swarm_critique:** 632
-- **anti_pattern:** 527
-- **last_swarm_goal:** 381
-- **strategy:** 284
+- **dream:** 3590
+- **swarm_artifact:** 1703
+- **last_swarm_critique:** 633
+- **anti_pattern:** 529
+- **last_swarm_goal:** 382
+- **strategy:** 285
 - **hand_result:** 83
-- **tool:** 80
+- **tool:** 81
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 28
 - **creator_teaching:** 9
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:simulationen-in-die-praxis-umsetzen`
+*30.08. 16:21 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen in die Praxis umsetzen'. Datei: data/tools/simulationen-in-die-praxis-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Simulationen in die Prax:1`
+*30.08. 16:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Pipeline-konsistente Datenstruktur mit explizitem Code-Feld-Management - Führe ein einheitliches Datenmodell ein, in dem jeder Block explizit definierte Felder erzeugt. Block 1 erzeugt nicht nur Simulationsbeschreibungen, son
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Simulationen in die Prax:0`
+*30.08. 16:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Template-basierte Codegenerierung mit statischer Variablenauflösung - Ersetze dynamische f-String-Interpolation durch statische Template-Engine (z.B. Jinja2). Definiere Skill-Code als Template-Datei mit Platzhaltern wie {{ sk
+
+### `last_swarm_critique`
+*30.08. 16:16 UTC · Quelle: critic*
+
+score=6; issues=generate_skill_file nutzt {{skill_name}} in einem f-String, was im generierten Code zu einem nicht aufgelösten {skill_name}-Verweis führt (NameError beim Ausführen des generierten Skills).; Block 1 erzeugt keine 'code'-Felder im Simulation-Outp
+
+### `last_swarm_goal`
+*30.08. 15:59 UTC · Quelle: system*
+
+Simulationen in die Praxis umsetzen
+
+### `dream:20260830155740:5:8f09e0`
+*30.08. 15:57 UTC · Quelle: dream*
+
+Successful model calls sometimes return only 8 output tokens for 575 input tokens, signaling silent truncation or refusal.
+
+### `dream:20260830155740:4:e50d41`
+*30.08. 15:57 UTC · Quelle: dream*
+
+Hand actions fail with exit code 1 and zero bytes read, indicating environment permission or path issues.
+
+### `dream:20260830155740:3:ebb3cd`
+*30.08. 15:57 UTC · Quelle: dream*
+
+Model latency varies from 3s to 90s (nemotron) breaking fixed timeouts and causing cascading delays.
+
+### `dream:20260830155740:2:c049bb`
+*30.08. 15:57 UTC · Quelle: dream*
+
+Evolution produces high-scoring variants (9/10) but the merged result still scores 1/10, revealing a synthesis/integration failure mode.
+
+### `dream:20260830155740:1:bacc02`
+*30.08. 15:57 UTC · Quelle: dream*
+
+Free-tier models (glm, gemma) consistently hit 429 rate limits making them unreliable for sustained workloads.
 
 ### `dream:20260830155056:5:75c498`
 *30.08. 15:50 UTC · Quelle: dream*
