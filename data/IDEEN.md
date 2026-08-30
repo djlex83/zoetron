@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 15:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 15:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Artifact tracebacks during 'tor' execution show that synthesized code is not smoke-tested before deployment, causing runtime crashes.
+- Evolutionary refinement lifted a skill score from 1 to 9 in one generation, proving the mutate-evaluate-select loop is high-leverage.
+- Calibration error of 4 (predicted 5 vs actual 1) reveals the predictor is uncalibrated for this task class and needs retraining.
+- Hand actions consistently exit with code 1 and zero bytes read, indicating a systemic input/environment mismatch rather than transient errors.
+- Rate limits (429) on multiple free models cause systematic inference failures, requiring a resilient fallback chain with exponential backoff.
 - Rate-limit failures occur in tight bursts across all three failing models simultaneously, indicating shared quota.
 - Simulation flagged high risk (5) and required revisions (5) for skill merging, but zero revisions were applied.
 - Latency for the working model scales superlinearly with input tokens (4.2s→16.2s for 525→3123 tokens_in).
@@ -51,11 +56,6 @@
 - Token-in/out ratios on the sole working model show 1.6x expansion (3612→5921), validating the truncation-risk guardrail proposal.
 - The skill-consolidation tool fails due to path resolution issues (relative paths vs. ZOETRON_DATA/env vars), breaking the meta-learning loop.
 - Free-tier models simultaneously hit rate limits (429 errors), creating a single-point-of-failure where 75% of the model pool becomes unavailable at on
-- All proposed skills react to observed failures rather than preventing them, showing a missing proactive resilience layer.
-- Token-in/token-out ratios diverge wildly (526→1577 vs 1458→1130), indicating inconsistent truncation or padding behavior across calls.
-- Only inclusionai/ling-3.0-flash-fin:free remained available under load, exposing provider capacity as a hidden system dependency.
-- Swarm convergence reported success with a null score, revealing that convergence criteria lack mandatory score validation.
-- Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, making single-model reliance unreliable.
 
 ---
 
