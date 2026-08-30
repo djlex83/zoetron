@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6941 Fakten** · Stand 2026-08-30 03:55 UTC · aktualisiert bei jedem Herzschlag
+**6946 Fakten** · Stand 2026-08-30 04:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3311
+- **dream:** 3316
 - **swarm_artifact:** 1637
 - **last_swarm_critique:** 620
 - **anti_pattern:** 507
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830040137:5:a1b1fe`
+*30.08. 04:01 UTC · Quelle: dream*
+
+Skill proposals generated during failure recovery should auto-convert to registered tools within one cycle to close the learning loop.
+
+### `dream:20260830040137:4:97a4b3`
+*30.08. 04:01 UTC · Quelle: dream*
+
+Self-diagnosis showing zero organ errors while model failures persist indicates monitoring blind spots in external API health.
+
+### `dream:20260830040137:3:4285e0`
+*30.08. 04:01 UTC · Quelle: dream*
+
+Local-first execution of registered reflex tools eliminates unnecessary model calls and reduces failure surface.
+
+### `dream:20260830040137:2:449eb9`
+*30.08. 04:01 UTC · Quelle: dream*
+
+High latency variance (9-150s) in working models requires adaptive timeouts rather than fixed thresholds.
+
+### `dream:20260830040137:1:3df548`
+*30.08. 04:01 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) must be quarantined immediately to prevent cascade failures across dependent tasks.
 
 ### `dream:20260830035422:5:d84eaf`
 *30.08. 03:54 UTC · Quelle: dream*
