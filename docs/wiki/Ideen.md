@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 00:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 00:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,14 +17,14 @@
 - Build a model fallback chain that pre-orders free-tier models by historical success rate and auto-rotates on 4 *(hatte die Idee 3×)*
 - Create a proposal-to-skill conversion gate requiring each proposal to have a defined implementation step, vali *(hatte die Idee 3×)*
 - Implement a model health scorecard tracking success rate, latency p95, and consecutive failures to drive dynam *(hatte die Idee 3×)*
-- Build skill_factory.py that consumes drive_goal 'gap' signals, generates tested skill skeletons with CI pipeli *(hatte die Idee 2×)*
-- Deploy skill_deployment_orchestrator.py that automatically integrates approved skill proposals, runs integrati *(hatte die Idee 2×)*
 - Implement model-router with real-time health scoring, automatic fallback, and per-model latency percentiles. *(hatte die Idee 2×)*
+- Add adaptive timeout/circuit-breaker that scales with model's recent p95 latency. *(hatte die Idee 2×)*
+- Standardize simulation-revision loop (min 3 revisions, risk threshold) as pre-execution gate for all code-gene *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) demonstrates that automated, goal-driven self-correction outperforms manual skill 
+- Reactive error handling fails because the system calls a rate-limited model repeatedly before detecting the pattern; proactive rate-limit header parsi
+- Even the working nvidia/nemotron-3-ultra-550b-a55b:free model exhibits extreme latency variance (5s to 45.6s), so single-point latency thresholds are 
+- The persistent gap between skill proposals and actual implementation indicates that proposals lacking a measurable acceptance test and an implementati
+- 429 rate-limit errors from z-ai/glm-5.2:free recur across every call window, making it an unreliable default model that must never be dispatched witho
 - Evolution loops lack a convergence detector, so mutations continue past diminishing returns without emitting a failure signal.
 - No component tracks per-model quota headers or reset windows, so rate-limit collisions repeat instead of being predicted.
 - Five skill-proposal cycles produced 10+ proposals but zero promotions, revealing a missing validation-to-deployment pipeline.
@@ -51,11 +56,6 @@
 - Skill proposals repeat across dream cycles (health scorecard, backoff retry, latency predictor, work ledger, model router) because no persistent ledge
 - Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (6.5–46.2 s), indicating need for latency-aware sele
 - The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, making it unreliable as a primary endpoint without health-aware routing.
-- Error patterns are highly repetitive (same model, same endpoint, same 429 code), enabling predictive mitigation via pre-flight probes and circuit brea
-- Fallback model latency variance (7-13s) demands adaptive deadline extension (30s per retry, max 3) and SLA-aware routing to prevent cascade timeouts.
-- Skill proposals accumulate without an implementation gate; a ProposalGate requiring concrete plan, measurable acceptance test, and assigned owner conv
-- Single-model dependency creates systemic fragility; a health-aware multi-model router with latency SLA (<5s p95) is required for reliability.
-- Proactive rate-limit management via token-bucket and RateLimit-header parsing prevents 429 errors entirely, whereas reactive retries only mask the pro
 
 ---
 

@@ -1,14 +1,14 @@
 {
- "stand": 1788049039.9137266,
+ "stand": 1788049324.4855802,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 1588,
-   "fehler": 300,
+   "laeufe": 1590,
+   "fehler": 301,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 55488.08686208725,
+   "latenz_summe_s": 55513.94758439064,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1788039016.5669122,
    "kontofehler": 6
@@ -31,7 +31,7 @@
    "latenz_summe_s": 120.9182026386261,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 362
+   "kontofehler": 363
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 5,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 138.34829926490784,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 349
+   "kontofehler": 350
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -61,7 +61,7 @@
    "latenz_summe_s": 186.66079950332642,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 1523
+   "kontofehler": 1525
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -148,11 +148,11 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 102,
+   "laeufe": 103,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 1206.3775584697723,
+   "latenz_summe_s": 1214.946683883667,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   },

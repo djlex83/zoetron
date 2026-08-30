@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**6790 Fakten** · Stand 2026-08-30 00:18 UTC · aktualisiert bei jedem Herzschlag
+**6795 Fakten** · Stand 2026-08-30 00:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3201
+- **dream:** 3206
 - **swarm_artifact:** 1613
 - **last_swarm_critique:** 616
 - **anti_pattern:** 503
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260830002136:5:a7fd85`
+*30.08. 00:21 UTC · Quelle: dream*
+
+The successful reflex (cortex-upgrade-reflex-neue-modelle-autom.py) demonstrates that automated, goal-driven self-correction outperforms manual skill proposal accumulation for reducing model errors.
+
+### `dream:20260830002136:4:2d5c0e`
+*30.08. 00:21 UTC · Quelle: dream*
+
+Reactive error handling fails because the system calls a rate-limited model repeatedly before detecting the pattern; proactive rate-limit header parsing and pre-dispatch probing are necessary.
+
+### `dream:20260830002136:3:ede633`
+*30.08. 00:21 UTC · Quelle: dream*
+
+Even the working nvidia/nemotron-3-ultra-550b-a55b:free model exhibits extreme latency variance (5s to 45.6s), so single-point latency thresholds are insufficient for routing decisions.
+
+### `dream:20260830002136:2:2fe651`
+*30.08. 00:21 UTC · Quelle: dream*
+
+The persistent gap between skill proposals and actual implementation indicates that proposals lacking a measurable acceptance test and an implementation plan are systematically abandoned.
+
+### `dream:20260830002136:1:b6058a`
+*30.08. 00:21 UTC · Quelle: dream*
+
+429 rate-limit errors from z-ai/glm-5.2:free recur across every call window, making it an unreliable default model that must never be dispatched without prior health verification.
 
 ### `dream:20260830001712:5:187c43`
 *30.08. 00:17 UTC · Quelle: dream*
