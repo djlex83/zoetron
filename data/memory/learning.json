@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 11:34:35",
+ "stand": "2026-08-31 11:40:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -123,12 +123,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -172,6 +166,12 @@
   },
   {
    "tool": "fähigkeiten-gezielt-trainieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Failure-driven goal generation produces multiple concurrent goals each cycle without prioritization, risking goal proliferation and diluted focus.
+- Self-diagnosis checking only internal state misses external API degradation; health probes must extend to provider latency, error rate, and quota.
+- Failover to nemotron-3-ultra-550b-a55b resolves availability but introduces latency variance (14–36s) that can cascade into downstream timeouts if unm
+- Skill proposals improve in specificity across iterations but remain unverified without an automated fast-feedback test harness to convert ideas into p
+- External API rate-limiting (429) on z-ai/glm-5.2:free is a persistent failure mode, not transient, requiring architectural resilience beyond simple re
 - Multiple skill proposals exist but drive goal 'Vorgeschlagene Fähigkeiten in echte Handlungen umsetzen' reveals systematic proposal-to-implementation 
 - Zero pruning events across cycles suggests pruning thresholds are misconfigured or memory pressure is absent.
 - Reflex mode successfully completed market analysis using local Python script, validating local-first execution over model calls.
@@ -51,11 +56,6 @@
 - Self-diagnosis and reflex systems operate correctly but model failures prevent higher-level reasoning tasks from executing.
 - Successful requests only occur on poolside/laguna-s-2.1:free, suggesting it has separate quota or higher priority.
 - Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
-- Successful reflex use (market analysis) shows existing tools can close gaps if automatically triggered by staleness.
-- Relative paths at the hand-action boundary cause silent I/O failures that only absolute-path contracts prevent.
-- Stale goals (>48h) persist undecomposed, blocking progress until a reflex or manual intervention occurs.
-- Proposed skills accumulate without execution because no lifecycle manager promotes, assigns, or enforces SLAs.
-- Free-tier models consistently hit 429 rate limits under load, requiring automated routing with health-aware fallback.
 
 ---
 

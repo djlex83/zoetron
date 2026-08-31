@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 5572 Neuronen · 300375 bewertete Synapsen
+Stand: 5578 Neuronen · 300608 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -18,11 +18,11 @@ Stand: 5572 Neuronen · 300375 bewertete Synapsen
 | 6 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 462 | 0.26 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 444 | 0.26 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 444 | 0.26 |
-| 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 463 | 0.25 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 447 | 0.25 |
+| 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 464 | 0.25 |
+| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 448 | 0.25 |
 | 11 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 420 | 0.26 |
-| 12 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 398 | 0.27 |
-| 13 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 407 | 0.26 |
+| 12 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 399 | 0.27 |
+| 13 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 408 | 0.26 |
 | 14 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 451 | 0.23 |
 | 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 469 | 0.22 |
 

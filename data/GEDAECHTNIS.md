@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8003 Fakten** · Stand 2026-08-31 11:35 UTC · aktualisiert bei jedem Herzschlag
+**8008 Fakten** · Stand 2026-08-31 11:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4085
+- **dream:** 4090
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831113945:5:197a8f`
+*31.08. 11:39 UTC · Quelle: dream*
+
+Failure-driven goal generation produces multiple concurrent goals each cycle without prioritization, risking goal proliferation and diluted focus.
+
+### `dream:20260831113945:4:37ab8f`
+*31.08. 11:39 UTC · Quelle: dream*
+
+Self-diagnosis checking only internal state misses external API degradation; health probes must extend to provider latency, error rate, and quota.
+
+### `dream:20260831113945:3:b5faf6`
+*31.08. 11:39 UTC · Quelle: dream*
+
+Failover to nemotron-3-ultra-550b-a55b resolves availability but introduces latency variance (14–36s) that can cascade into downstream timeouts if unmonitored.
+
+### `dream:20260831113945:2:39f5a9`
+*31.08. 11:39 UTC · Quelle: dream*
+
+Skill proposals improve in specificity across iterations but remain unverified without an automated fast-feedback test harness to convert ideas into proven skills.
+
+### `dream:20260831113945:1:fd1dfe`
+*31.08. 11:39 UTC · Quelle: dream*
+
+External API rate-limiting (429) on z-ai/glm-5.2:free is a persistent failure mode, not transient, requiring architectural resilience beyond simple retries.
 
 ### `dream:20260831113348:5:ae356d`
 *31.08. 11:33 UTC · Quelle: dream*
