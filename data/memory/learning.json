@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 02:14:20",
+ "stand": "2026-08-31 02:24:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -42,12 +42,6 @@
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -97,6 +91,12 @@
    "laeufe": 3,
    "erfolge": 1,
    "quote": 0.333
+  },
+  {
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
@@ -183,7 +183,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.805,
+ "haende_quote": 0.804,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 27,
