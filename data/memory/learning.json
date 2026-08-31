@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 23:50:12",
+ "stand": "2026-08-31 23:56:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -111,6 +111,12 @@
    "quote": 1.0
   },
   {
+   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -141,12 +147,6 @@
    "quote": 1.0
   },
   {
-   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -168,9 +168,9 @@
  "haende_quote": 0.827,
  "simulationen_angewandt": 16,
  "swarm_scores": {
-  "n": 24,
+  "n": 23,
   "best": 8.0,
-  "schnitt": 5.92
+  "schnitt": 6.0
  },
  "score_nach_ziel_typ": {
   "analyse": {

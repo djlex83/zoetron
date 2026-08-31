@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 23:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 23:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,33 +14,38 @@
 - Add a calibration monitor that logs prediction vs. actual per task type and triggers retraining when MAE excee *(hatte die Idee 4×)*
 - Create ExecutionGapTracker that maps drive goals (stale, failure, gap) to concrete skill proposals and alerts  *(hatte die Idee 4×)*
 - Enforce PathContract at skill registration: require I/O skills to declare path parameters, auto-wrap with reso *(hatte die Idee 4×)*
-- Implement ModelRegistry with per-model success-rate, p95 latency, and consecutive-error counters; auto-quarant *(hatte die Idee 3×)*
-- Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 3×)*
-- Add ProposalTracker persisting skill_proposals with a state machine (proposed→implemented|deferred:reason|reje *(hatte die Idee 3×)*
-- Create ModelFallbackChain routing requests through a prioritized model list, skipping quarantined models, with *(hatte die Idee 3×)*
-- Integrate MetabolismGate checking system stress/state before non-critical tasks; defer swarm calls and heavy m *(hatte die Idee 3×)*
 - Develop a local-first execution policy that attempts hand actions (file ops, scripts) before any model invocat *(hatte die Idee 3×)*
+- Implement a model router with per-provider exponential backoff, circuit-breaker state, and automatic fallback  *(hatte die Idee 3×)*
+- Create SkillLifecycleManager: auto-promote proposals with ≥2 drive signals to 'committed', assign owner via ca *(hatte die Idee 3×)*
+- Add Calibration Monitor: log predicted vs actual latency/tokens per task type, trigger router retraining when  *(hatte die Idee 3×)*
+- Create Proposal Execution Tracker: persist proposal ID, test result, merge status, and deployment timestamp to *(hatte die Idee 3×)*
+- Create SkillProposalHarness that spins up minimal test case for each proposal and reports pass/fail within 5 m *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 11×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative path resolution in hand_action breaks under varying working directories; all file ops must anchor to ZOETRON_DATA.
+- Swarm convergence fails when evaluation criteria are implicit; explicit success metrics and max-cycle bounds are required.
+- Skill proposals accumulate but lack automated validation loop; proposals need sandbox A/B testing before production promotion.
+- Extreme latency variance (8s vs 44s) for same model class makes static timeouts harmful; routing must use rolling p95 latency per model.
+- Correlated 429/502 failures across multiple providers indicate shared rate-limit infrastructure, requiring provider-diverse fallback routing.
 - Swarm convergence failed in two cycles despite evolution, suggesting the critic/planner ratio (1:1) is too weak to drive consensus; builder dominance 
 - Calibration error of +2 (predicted 5 vs actual 3) reveals systematic overconfidence in skill proposals; scoring rubrics need grounding in execution tr
 - Evolutionary repair boosted a 3/10 artifact to 9/10 in one generation, proving that targeted mutation with critic feedback outperforms single-pass gen
@@ -51,11 +56,6 @@
 - Poolside Laguna-S-2.1 delivers consistent low latency (~15s) suggesting smaller specialized models outperform large general ones on free tiers.
 - Nvidia Nemotron shows high latency variance (38-109s) and intermittent 502 upstream overloads, indicating provider-side capacity issues.
 - Free-tier models across all providers suffer pervasive rate limiting (429 errors) making them unreliable for sustained workloads.
-- Cycle estimation accuracy can be improved by tracking rolling mean absolute error between predicted and actual cycles per goal type.
-- Parallel multi-model dispatch with first-success-wins effectively bypasses correlated rate limits and improves overall success rate.
-- Skill proposals that reduce 429 rates or improve latency by measurable thresholds (e.g., >50% or >20%) over 100 calls should be auto-promoted to produ
-- Latency varies significantly between models (2.9s to 8.3s), making dynamic routing based on output token count and historical p95 latency essential fo
-- Rate limiting (429) and upstream overload (502) are the dominant failure modes across all model tiers, requiring systematic retry and fallback logic.
 
 ---
 

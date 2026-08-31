@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8437 Fakten** · Stand 2026-08-31 23:51 UTC · aktualisiert bei jedem Herzschlag
+**8442 Fakten** · Stand 2026-08-31 23:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4385
+- **dream:** 4390
 - **swarm_artifact:** 1849
 - **last_swarm_critique:** 660
 - **anti_pattern:** 559
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831235546:5:563a24`
+*31.08. 23:55 UTC · Quelle: dream*
+
+Relative path resolution in hand_action breaks under varying working directories; all file ops must anchor to ZOETRON_DATA.
+
+### `dream:20260831235546:4:be34d3`
+*31.08. 23:55 UTC · Quelle: dream*
+
+Swarm convergence fails when evaluation criteria are implicit; explicit success metrics and max-cycle bounds are required.
+
+### `dream:20260831235546:3:2b3d57`
+*31.08. 23:55 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack automated validation loop; proposals need sandbox A/B testing before production promotion.
+
+### `dream:20260831235546:2:ee459f`
+*31.08. 23:55 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260831235546:1:fc1451`
+*31.08. 23:55 UTC · Quelle: dream*
+
+Correlated 429/502 failures across multiple providers indicate shared rate-limit infrastructure, requiring provider-diverse fallback routing.
 
 ### `dream:20260831234952:5:e02682`
 *31.08. 23:49 UTC · Quelle: dream*
