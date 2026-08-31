@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7806 Fakten** · Stand 2026-08-31 05:01 UTC · aktualisiert bei jedem Herzschlag
+**7811 Fakten** · Stand 2026-08-31 05:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3920
+- **dream:** 3925
 - **swarm_artifact:** 1767
 - **last_swarm_critique:** 644
 - **anti_pattern:** 541
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831050609:5:3107d3`
+*31.08. 05:06 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model layer is fully degraded, revealing a monitoring blind spot between infrastructure health and service availability.
+
+### `dream:20260831050609:4:bf89fa`
+*31.08. 05:06 UTC · Quelle: dream*
+
+Failure logs lack request-level context (prompt size, priority, retry count), preventing root-cause distinction between burst traffic vs. sustained quota drain.
+
+### `dream:20260831050609:3:d915f6`
+*31.08. 05:06 UTC · Quelle: dream*
+
+All five proposed skills (QuotaPool, ModelHealthTracker, ErrorClassifier, LatencySLA, ProposalTracker) form an interdependent resilience stack; implementing them piecemeal leaves gaps.
+
+### `dream:20260831050609:2:419d56`
+*31.08. 05:06 UTC · Quelle: dream*
+
+Latency exceeding 10s (observed on inclusionai/ling-3.0-flash-fin) precedes cascade failures, making latency a leading indicator of quota collapse.
+
+### `dream:20260831050609:1:221b0b`
+*31.08. 05:06 UTC · Quelle: dream*
+
+Account-level 429 exhaustion simultaneously kills all OpenRouter models, proving quota is shared across the entire account not per-model.
 
 ### `dream:20260831050013:5:6cbe35`
 *31.08. 05:00 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 05:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 05:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model layer is fully degraded, revealing a monitoring blind spot between infrastructure health and serv
+- Failure logs lack request-level context (prompt size, priority, retry count), preventing root-cause distinction between burst traffic vs. sustained qu
+- All five proposed skills (QuotaPool, ModelHealthTracker, ErrorClassifier, LatencySLA, ProposalTracker) form an interdependent resilience stack; implem
+- Latency exceeding 10s (observed on inclusionai/ling-3.0-flash-fin) precedes cascade failures, making latency a leading indicator of quota collapse.
+- Account-level 429 exhaustion simultaneously kills all OpenRouter models, proving quota is shared across the entire account not per-model.
 - No automated model health scoring or quota-aware routing exists, leading to repeated failed attempts.
 - Reflex-driven completion succeeds for well-scoped tasks like market analysis but lacks generalization.
 - Multiple redundant skill proposals (ErrorClassifier, LatencySLA, QuotaPool) indicate missing proposal tracking and deduplication.
@@ -51,11 +56,6 @@
 - The system's drive to understand model failures is directly supported by implementing error classification and smart routing.
 - Alternating between models like `inclusionai/ling-3.0-flash-fin:free` and `poolside/laguna-s-2.1:free` successfully bypasses temporary rate limits.
 - Free models on OpenRouter experience frequent 429 Too Many Requests errors, necessitating a multi-model fallback strategy.
-- Previously proposed skills (ModelRegistry, ErrorClassifier, FallbackChain) directly address observed failure patterns but remain unimplemented.
-- Pruning removed zero items despite accumulated failures, suggesting pruning criteria are misaligned with actual garbage.
-- Dream consolidation exceeded 180s timeout, indicating experience volume exceeds processing capacity during high-failure periods.
-- Circuit breaker correctly quarantined nvidia/nemotron after 3 consecutive 404s, but 1800s quarantine may be excessive for transient errors.
-- Rate limiting from OpenRouter affects multiple models simultaneously, requiring provider-level fallback not just model-level.
 
 ---
 

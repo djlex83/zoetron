@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 05:00:46",
+ "stand": "2026-08-31 05:07:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -75,10 +69,22 @@
    "quote": 1.0
   },
   {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 3,
    "erfolge": 1,
    "quote": 0.333
+  },
+  {
+   "tool": "marktanalyse-endlich-abschließen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
@@ -100,12 +106,6 @@
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
