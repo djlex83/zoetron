@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7908 Fakten** · Stand 2026-08-31 09:29 UTC · aktualisiert bei jedem Herzschlag
+**7913 Fakten** · Stand 2026-08-31 09:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3990
+- **dream:** 3995
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831093540:5:d60ad1`
+*31.08. 09:35 UTC · Quelle: dream*
+
+Hand actions succeed on absolute paths but skill proposals reveal latent relative-path fragility in ZOETRON_DATA resolution.
+
+### `dream:20260831093540:4:229953`
+*31.08. 09:35 UTC · Quelle: dream*
+
+Swarm converges in single cycle with 5 agents but never evolves, suggesting premature convergence or insufficient search depth.
+
+### `dream:20260831093540:3:f47c3b`
+*31.08. 09:35 UTC · Quelle: dream*
+
+Calibration consistently underestimates cycle count by ~25% (predicted 6 vs actual 8) indicating systematic planning bias.
+
+### `dream:20260831093540:2:7477c5`
+*31.08. 09:35 UTC · Quelle: dream*
+
+Nemotron-3-Ultra latency (136-142s) exceeds practical interactive thresholds despite quality scores.
+
+### `dream:20260831093540:1:0146c7`
+*31.08. 09:35 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit cascading 429/404 failures making single-model reliance untenable.
 
 ### `dream:20260831092752:5:9596f9`
 *31.08. 09:27 UTC · Quelle: dream*

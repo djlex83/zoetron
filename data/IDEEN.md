@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 2×)*
 - Träume mit Wissen verbinden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions succeed on absolute paths but skill proposals reveal latent relative-path fragility in ZOETRON_DATA resolution.
+- Swarm converges in single cycle with 5 agents but never evolves, suggesting premature convergence or insufficient search depth.
+- Calibration consistently underestimates cycle count by ~25% (predicted 6 vs actual 8) indicating systematic planning bias.
+- Nemotron-3-Ultra latency (136-142s) exceeds practical interactive thresholds despite quality scores.
+- Free-tier model endpoints exhibit cascading 429/404 failures making single-model reliance untenable.
 - The conserve state with max 1 iteration budget forced sequential model attempts, amplifying the impact of rate limits across the entire call chain.
 - Nvidia nemotron-3-ultra-550b-a55b was the most reliable model, succeeding 4 times with high token throughput despite variable latency (60-211s).
 - The simulation-revision loop (3 revisions applied) was the mechanism that converted repeated model failures into a successful outcome.
@@ -51,11 +56,6 @@
 - Swarm tasks fail to converge when model outages interrupt the iterative feedback loop between planner and critic.
 - Script execution failures due to pathing and argument mismatches suggest a disconnect between the environment's file structure and tool expectations.
 - High-frequency 429 and 502 errors indicate that free-tier model availability is too volatile for reliable swarm convergence.
-- Calibration remains accurate (predicted=actual=6) yet the goal stays unconverged, revealing that scoring does not reflect task completion.
-- Swarm execution evolves roles but fails to converge after 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
-- Simulation recommends revisions (3 risks, 3 revisions) but zero are applied, indicating a broken feedback loop between critique and execution.
-- The inclusionai/ling-3.0-flash-fin:free model succeeds where others fail but incurs 19s latency, making it a reliable but slow fallback.
-- Rate limiting (429 errors) across multiple free-tier models is the primary systemic bottleneck, not model capability.
 
 ---
 
