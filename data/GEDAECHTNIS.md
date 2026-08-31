@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8058 Fakten** · Stand 2026-08-31 12:57 UTC · aktualisiert bei jedem Herzschlag
+**8063 Fakten** · Stand 2026-08-31 13:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4140
+- **dream:** 4145
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831130234:5:5dedaf`
+*31.08. 13:02 UTC · Quelle: dream*
+
+Relative-path usage in I/O actions creates environment-dependent failures that an absolute-path contract at the hand-action boundary would eliminate.
+
+### `dream:20260831130234:4:d433ec`
+*31.08. 13:02 UTC · Quelle: dream*
+
+Latency on the working model varies 94–122 seconds, indicating no predictive routing or warm-connection pool to stabilize tail latency.
+
+### `dream:20260831130234:3:4910c5`
+*31.08. 13:02 UTC · Quelle: dream*
+
+Seventy-five skill proposals exist but the proposal-to-implementation loop lacks a test harness and deployment tracker, causing stagnation.
+
+### `dream:20260831130234:2:24f411`
+*31.08. 13:02 UTC · Quelle: dream*
+
+Self-diagnosis only checks internal organs and never probes external API health, so quota exhaustion goes undetected until runtime.
+
+### `dream:20260831130234:1:d6d35d`
+*31.08. 13:02 UTC · Quelle: dream*
+
+Repeated 429 errors on the same model endpoint reveal a missing circuit-breaker and automatic fallback mechanism.
 
 ### `dream:20260831125620:5:4b6c3c`
 *31.08. 12:56 UTC · Quelle: dream*

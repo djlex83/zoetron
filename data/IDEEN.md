@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 13:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative-path usage in I/O actions creates environment-dependent failures that an absolute-path contract at the hand-action boundary would eliminate.
+- Latency on the working model varies 94–122 seconds, indicating no predictive routing or warm-connection pool to stabilize tail latency.
+- Seventy-five skill proposals exist but the proposal-to-implementation loop lacks a test harness and deployment tracker, causing stagnation.
+- Self-diagnosis only checks internal organs and never probes external API health, so quota exhaustion goes undetected until runtime.
+- Repeated 429 errors on the same model endpoint reveal a missing circuit-breaker and automatic fallback mechanism.
 - Pre-flight validation of tool paths/dependencies is absent; hand_action succeeds but only because scripts happen to exist, not because they were verif
 - Latency telemetry is collected per call but never feeds back into model selection, wasting signal that could prevent 100s delays.
 - Reflex-driven goals converge quickly (exit 0, converged true) but only address symptoms (market analysis, model errors) not root causes (no model rout
@@ -51,11 +56,6 @@
 - The reflex system successfully auto-upgrades models but lacks a health-aware selection policy to avoid picking another rate-limited model.
 - Latency variance between working models exceeds 5x (10s vs 53s), making latency-aware routing essential for user-facing tasks.
 - Free-tier models on OpenRouter share rate-limit buckets, causing cascading 429 failures across multiple models simultaneously.
-- Relative path handling at the hand-action boundary causes recurring I/O failures; an absolute-path contract with existence checks eliminates this clas
-- Skill proposals accumulate without automated promotion; a lifecycle manager with drive-signal thresholds and capability-based ownership closes the ide
-- Latency variance across models (12.7s–79.2s) demands real-time health scoring with warm connection pools to maintain SLA compliance.
-- Silent degradation manifests as HTTP 200 with empty choices, requiring mandatory pre-flight probes and response validation before routing user request
-- Free-tier models on OpenRouter exhibit systemic 429 rate-limiting and 502 upstream errors, making single-model reliance infeasible for production traf
 
 ---
 
