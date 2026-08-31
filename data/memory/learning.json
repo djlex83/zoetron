@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 14:36:58",
+ "stand": "2026-08-31 14:46:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -163,14 +163,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.847,
  "simulationen_angewandt": 14,
  "swarm_scores": {
-  "n": 20,
+  "n": 19,
   "best": 9.0,
-  "schnitt": 5.4
+  "schnitt": 5.53
  },
  "score_nach_ziel_typ": {
   "analyse": {

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8116 Fakten** · Stand 2026-08-31 14:37 UTC · aktualisiert bei jedem Herzschlag
+**8121 Fakten** · Stand 2026-08-31 14:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4190
+- **dream:** 4195
 - **swarm_artifact:** 1783
 - **last_swarm_critique:** 648
 - **anti_pattern:** 545
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831144553:5:e76b1d`
+*31.08. 14:45 UTC · Quelle: dream*
+
+Skill proposals are generated but not deduplicated or prioritized by novelty or impact, leading to redundant or low-value suggestions being surfaced.
+
+### `dream:20260831144553:4:56ba72`
+*31.08. 14:45 UTC · Quelle: dream*
+
+Drive goals related to error reduction, artifact cleanup, and skill activation remain unlinked to concrete skill implementations, creating execution gaps.
+
+### `dream:20260831144553:3:46a82b`
+*31.08. 14:45 UTC · Quelle: dream*
+
+Latency and token efficiency vary significantly between successful model calls, suggesting that lightweight tasks should route to faster, cheaper models.
+
+### `dream:20260831144553:2:26cd0c`
+*31.08. 14:45 UTC · Quelle: dream*
+
+Model failures cascade when fallback chains are not enforced, causing repeated attempts on already-failing endpoints within short time windows.
+
+### `dream:20260831144553:1:f98fe7`
+*31.08. 14:45 UTC · Quelle: dream*
+
+Rate limiting (429) is the dominant failure mode across multiple model endpoints, indicating systemic overload rather than isolated model issues.
 
 ### `dream:20260831143631:5:701f40`
 *31.08. 14:36 UTC · Quelle: dream*

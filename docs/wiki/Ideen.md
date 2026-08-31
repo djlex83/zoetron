@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals are generated but not deduplicated or prioritized by novelty or impact, leading to redundant or low-value suggestions being surfaced.
+- Drive goals related to error reduction, artifact cleanup, and skill activation remain unlinked to concrete skill implementations, creating execution g
+- Latency and token efficiency vary significantly between successful model calls, suggesting that lightweight tasks should route to faster, cheaper mode
+- Model failures cascade when fallback chains are not enforced, causing repeated attempts on already-failing endpoints within short time windows.
+- Rate limiting (429) is the dominant failure mode across multiple model endpoints, indicating systemic overload rather than isolated model issues.
 - High-latency models (nemotron-3-ultra, 27-96s per call) were used repeatedly for tasks that the fast flash model (21.5s) already handled successfully,
 - Evolution runs showed a massive gap between the base score (1/10) and variant scores (7-8), yet the swarm did not converge in 2 cycles, suggesting var
 - Calibration predicted a score of 6 against an actual score of 1 (6x overestimate), revealing a dangerous confidence inflation that could misguide futu
@@ -51,11 +56,6 @@
 - The hand_action step failed silently (exit 1, 0 bytes read, no error message), revealing that execution-layer tools lack proper error reporting and re
 - The simulation's 'revise' verdict with 5 identified risks prevented a flawed execution, proving that pre-execution validation gates save wasted resour
 - Free-tier API models on OpenRouter consistently hit 429 rate limits and 502 upstream errors, making a known-working model whitelist with exponential b
-- Latency and token prediction drift degrades routing decisions, so continuous calibration against actual task outcomes is required for reliable model s
-- Pre-flight validation of paths, executables, shebangs, and import dependencies prevents wasted model calls on malformed or broken configurations.
-- A persistent gap between 75 skill proposals and near-zero implementations reveals missing validation and tracking infrastructure as the root cause, no
-- Reflex-based execution paths converge reliably when full model inference is unavailable, making reflex the resilient fallback for well-defined tasks.
-- API rate limiting (429) and service overload (502) are systemic failure modes across multiple providers, requiring circuit breakers and exponential ba
 
 ---
 
