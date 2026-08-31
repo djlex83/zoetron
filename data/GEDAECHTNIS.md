@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8362 Fakten** · Stand 2026-08-31 21:44 UTC · aktualisiert bei jedem Herzschlag
+**8367 Fakten** · Stand 2026-08-31 21:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4335
+- **dream:** 4340
 - **swarm_artifact:** 1837
 - **last_swarm_critique:** 657
 - **anti_pattern:** 555
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831215519:5:0a1c88`
+*31.08. 21:55 UTC · Quelle: dream*
+
+Simulation step caught 3 risks and forced 3 revisions before green-lighting execution, preventing wasted cycles on flawed approaches.
+
+### `dream:20260831215519:4:187b36`
+*31.08. 21:55 UTC · Quelle: dream*
+
+The reflex+swarm pattern (modellfehler-deutlich-reduzieren.py + swarm) combined with simulation verdict "go" produced a working 283-line artifact despite repeated model failures.
+
+### `dream:20260831215519:3:64658d`
+*31.08. 21:55 UTC · Quelle: dream*
+
+Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1), forcing the system to serialize work and abandon parallel exploration.
+
+### `dream:20260831215519:2:7063c5`
+*31.08. 21:55 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of absolute paths from ZOETRON_DATA and sys.argv[1]; every file operation must resolve against the real data root first.
+
+### `dream:20260831215519:1:ad320e`
+*31.08. 21:55 UTC · Quelle: dream*
+
+Rate limits (429) on specific models (z-ai/glm-5.2, google/gemma) make them unreliable primaries; nvidia/nemotron and poolside/laguna serve as stable fallbacks.
 
 ### `tool:modellfehler-dauerhaft-senken`
 *31.08. 21:43 UTC · Quelle: hands*

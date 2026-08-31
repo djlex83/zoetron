@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 21:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 21:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation step caught 3 risks and forced 3 revisions before green-lighting execution, preventing wasted cycles on flawed approaches.
+- The reflex+swarm pattern (modellfehler-deutlich-reduzieren.py + swarm) combined with simulation verdict "go" produced a working 283-line artifact desp
+- Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1), forcing the system to serialize work and abandon parallel exploration.
+- Hand actions fail when using relative paths instead of absolute paths from ZOETRON_DATA and sys.argv[1]; every file operation must resolve against the
+- Rate limits (429) on specific models (z-ai/glm-5.2, google/gemma) make them unreliable primaries; nvidia/nemotron and poolside/laguna serve as stable 
 - Lightweight models (poolside/laguna-s-2.1, inclusionai/ling-3.0-flash-fin) succeed with sub-second latency when heavy models fail.
 - Calibration consistently overestimates cycle count (predicted 6 vs actual 4), suggesting the planner underestimates tool efficiency.
 - Evolutionary refinement with critic feedback can recover severely flawed artifacts (score 4→9) in a single generation.
@@ -51,11 +56,6 @@
 - poolside/laguna-s-2.1:free latency scales linearly with output tokens (0.8s for 8 tokens vs 197s for 10k tokens), revealing per-token processing bottl
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeds where others fail but exhibits 6x latency variance (8-48s), indicating queue-dependent upstream capaci
 - Free-tier models consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads without aggressive request spacing.
-- Swarm convergence lacks enforcement: goals start but reflex tools fail silently without critic/planner validation loops.
-- Multiple skill proposals exist for resilience (router, telemetry, scheduler) but none have been graduated through an A/B pipeline into production.
-- System stress reaches maximum (1.0) triggering conserve mode, but no automatic workload shedding or timeout scaling occurs.
-- File operations fail because tools use relative paths instead of the canonical ZOETRON_DATA environment variable, breaking data access.
-- Free-tier model providers consistently fail under load (429/502), requiring a router with local fallback and quota-aware scheduling.
 
 ---
 
