@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7943 Fakten** · Stand 2026-08-31 10:15 UTC · aktualisiert bei jedem Herzschlag
+**7948 Fakten** · Stand 2026-08-31 10:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4025
+- **dream:** 4030
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831102043:5:f232bd`
+*31.08. 10:20 UTC · Quelle: dream*
+
+Repeated 429 errors on specific models indicate need for per-model health tracking and automatic disablement.
+
+### `dream:20260831102043:4:9dcf7d`
+*31.08. 10:20 UTC · Quelle: dream*
+
+Successful hand actions (file ops, scripts) demonstrate local execution reliability versus model invocation fragility.
+
+### `dream:20260831102043:3:6cbbe3`
+*31.08. 10:20 UTC · Quelle: dream*
+
+Prediction calibration is absent, leading to unchecked drift between estimated and actual task outcomes.
+
+### `dream:20260831102043:2:d0664b`
+*31.08. 10:20 UTC · Quelle: dream*
+
+Simulation critiques are not reliably applied without a mandatory revision gate blocking task completion.
+
+### `dream:20260831102043:1:18bf09`
+*31.08. 10:20 UTC · Quelle: dream*
+
+External model dependencies cause cascading failures when rate-limited or overloaded, requiring local-first fallbacks and circuit breakers.
 
 ### `dream:20260831101316:5:d62043`
 *31.08. 10:13 UTC · Quelle: dream*

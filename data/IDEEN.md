@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated 429 errors on specific models indicate need for per-model health tracking and automatic disablement.
+- Successful hand actions (file ops, scripts) demonstrate local execution reliability versus model invocation fragility.
+- Prediction calibration is absent, leading to unchecked drift between estimated and actual task outcomes.
+- Simulation critiques are not reliably applied without a mandatory revision gate blocking task completion.
+- External model dependencies cause cascading failures when rate-limited or overloaded, requiring local-first fallbacks and circuit breakers.
 - Local-first execution of deterministic hand actions reduces unnecessary model calls and improves system reliability.
 - Model selection lacks real-time performance feedback, leading to repeated failures on overloaded or rate-limited endpoints.
 - Stale market analyses persist because there is no automated pipeline converting insights into executable actions.
@@ -51,11 +56,6 @@
 - Relative path resolution in hand actions fails silently when ZOETRON_DATA context shifts.
 - Working model (nemotron-3-ultra) exhibits high latency variance (18-50s) making time-bounded planning unreliable.
 - Free-tier model endpoints repeatedly hit 429 rate limits causing cascading failures across tasks.
-- Simulation revisions applied one-at-a-time cause redundant re-attempts; batching all revisions before retry improves convergence efficiency.
-- Stale market analysis data remains unused because there is no automated pipeline to convert it into actionable execution steps.
-- Model performance varies significantly under load — nemotron-3-ultra-550b-a55b showed acceptable latency (8.2s) while others failed with 429 or 502 er
-- Relative path usage in scripts causes silent failures; absolute paths derived from a central configuration prevent data resolution errors.
-- Repeated 429 errors across multiple models indicate systemic rate-limiting that requires exponential backoff with jitter and model cooldown windows.
 
 ---
 

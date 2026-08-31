@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 10:14:43",
+ "stand": "2026-08-31 10:21:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,12 +69,6 @@
    "quote": 0.0
   },
   {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -84,6 +78,12 @@
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 3,
    "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-endlich-abschließen.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -121,6 +121,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-gezielt-trainieren.py",
@@ -166,12 +172,6 @@
   },
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
