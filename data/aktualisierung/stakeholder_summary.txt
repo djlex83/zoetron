@@ -1,7 +1,7 @@
 MARKTANALYSE – AKTUALISIERUNG ZUSAMMENFASSUNG
 ================================================
 
-Stand: 2026-08-31T07:59:11.115184
+Stand: 2026-08-31T09:04:52.274806
 Veraltete Analyse: Nein
 Neue Datensaetze: 0
 Abweichungen zur alten Analyse: 0

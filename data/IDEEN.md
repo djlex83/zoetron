@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 08:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration offsets (+2) for 'Marktanalyse in Handeln umsetzen' address symptom (underestimation) not root cause (model bias or prompt framing).
+- The 'hands-Organ' swarm artifact pattern remains untested; its value depends on whether decomposition reduces total API calls or merely redistributes 
+- High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing multi-step recovery from transient failures.
+- Hand actions fail when relative paths diverge from the canonical ZOETRON_DATA root, causing silent zero-byte reads.
+- Rate-limit errors (429) cascade across multiple free-tier models simultaneously, making model diversity alone insufficient without request pacing.
 - Skill-conversion scripts lack structured error contracts, forcing manual debugging instead of automated retry.
 - Reflex-driven goal renewal succeeded without LLM calls, proving deterministic fallbacks can unblock the system during model outages.
 - First-request latency on cold models is high (14s) but drops sharply on warm reuse (5.3s), confirming cold-start penalty.
@@ -51,11 +56,6 @@
 - The critic-driven evolution loop successfully identified a concrete code smell (eval()/exec() in execute_task()) and produced variants that improved s
 - poolside/laguna-s-2.1:free exhibits a resilience pattern: initial 429 failures followed by successful responses with rapidly decreasing latency (14.7s
 - 429 rate-limit errors are systemic across all providers simultaneously, indicating a shared API gateway bottleneck rather than model-specific failures
-- Token input size remains constant at 2171 tokens across most requests, indicating standardized prompt formatting.
-- Rate limiting occurs in bursts, suggesting OpenRouter enforces per-model quotas that reset periodically.
-- Latency scales predictably with token output volume, with 10000-token responses taking ~207s versus 1105-token responses at ~24.7s.
-- The poolside/laguna-s-2.1:free model is the only reliable endpoint, handling all successful requests across varying token loads.
-- All non-poolside models consistently fail with HTTP 429 errors, indicating a systemic rate-limiting issue rather than isolated model failures.
 
 ---
 

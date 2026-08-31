@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7883 Fakten** · Stand 2026-08-31 08:57 UTC · aktualisiert bei jedem Herzschlag
+**7888 Fakten** · Stand 2026-08-31 09:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3965
+- **dream:** 3970
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831090418:5:494bb3`
+*31.08. 09:04 UTC · Quelle: dream*
+
+Calibration offsets (+2) for 'Marktanalyse in Handeln umsetzen' address symptom (underestimation) not root cause (model bias or prompt framing).
+
+### `dream:20260831090418:4:e1716a`
+*31.08. 09:04 UTC · Quelle: dream*
+
+The 'hands-Organ' swarm artifact pattern remains untested; its value depends on whether decomposition reduces total API calls or merely redistributes them.
+
+### `dream:20260831090418:3:808a90`
+*31.08. 09:04 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing multi-step recovery from transient failures.
+
+### `dream:20260831090418:2:9e40fe`
+*31.08. 09:04 UTC · Quelle: dream*
+
+Hand actions fail when relative paths diverge from the canonical ZOETRON_DATA root, causing silent zero-byte reads.
+
+### `dream:20260831090418:1:0d8743`
+*31.08. 09:04 UTC · Quelle: dream*
+
+Rate-limit errors (429) cascade across multiple free-tier models simultaneously, making model diversity alone insufficient without request pacing.
 
 ### `tool:schwarm-ergebnisse-mit-bestandsaufnahme-`
 *31.08. 08:56 UTC · Quelle: hands*
