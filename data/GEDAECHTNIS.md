@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8033 Fakten** · Stand 2026-08-31 12:19 UTC · aktualisiert bei jedem Herzschlag
+**8038 Fakten** · Stand 2026-08-31 12:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4115
+- **dream:** 4120
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831122516:5:77f89c`
+*31.08. 12:25 UTC · Quelle: dream*
+
+Absolute-path contract violations at hand-action boundaries force runtime resolution failures, suggesting path canonicalization must be enforced at the tool-entry gate.
+
+### `dream:20260831122516:4:7adefb`
+*31.08. 12:25 UTC · Quelle: dream*
+
+Reflex-based insight consolidation converges but does not trigger skill learning, leaving the system aware of problems without acquiring new capabilities.
+
+### `dream:20260831122516:3:606307`
+*31.08. 12:25 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external API degradation (429s, high latency) persists, showing health monitoring excludes provider-level signals.
+
+### `dream:20260831122516:2:79ae1f`
+*31.08. 12:25 UTC · Quelle: dream*
+
+Duplicate skill proposals across cycles (checkpoint logger, skill harness, path resolver, model pool) indicate a proposal-to-implementation gap where ideas are generated but not validated or promoted.
+
+### `dream:20260831122516:1:419576`
+*31.08. 12:25 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-endpoint circuit breakers and fallback chains, causing cascading failures when a single provider rate-limits.
 
 ### `dream:20260831121625:5:7e6fb7`
 *31.08. 12:16 UTC · Quelle: dream*

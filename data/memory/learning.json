@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 12:18:12",
+ "stand": "2026-08-31 12:26:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,13 +33,13 @@
    "quote": 1.0
   },
   {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "tool": "fehlerquellen-systematisch-beheben.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
@@ -166,11 +166,11 @@
   }
  ],
  "haende_quote": 0.821,
- "simulationen_angewandt": 18,
+ "simulationen_angewandt": 17,
  "swarm_scores": {
-  "n": 23,
+  "n": 22,
   "best": 9.0,
-  "schnitt": 5.61
+  "schnitt": 5.55
  },
  "score_nach_ziel_typ": {
   "analyse": {
