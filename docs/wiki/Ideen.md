@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 23:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 23:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence failed in two cycles despite evolution, suggesting the critic/planner ratio (1:1) is too weak to drive consensus; builder dominance 
+- Calibration error of +2 (predicted 5 vs actual 3) reveals systematic overconfidence in skill proposals; scoring rubrics need grounding in execution tr
+- Evolutionary repair boosted a 3/10 artifact to 9/10 in one generation, proving that targeted mutation with critic feedback outperforms single-pass gen
+- Nemotron-3-ultra succeeds only after extreme latency (44–105 s), indicating cold-start or queueing penalties that violate interactive deadlines.
+- Free-tier models exhibit cascading failures: rate limits (429) and upstream overloads (502) make them unreliable for critical paths without automatic 
 - Hand-action execution (code runs) shows non-deterministic success (exit 1 vs 0) requiring idempotent retry logic.
 - Simulation-based verification with risk scoring (3 risks → 3 revisions) successfully prevented deployment of flawed artifacts.
 - Poolside Laguna-S-2.1 delivers consistent low latency (~15s) suggesting smaller specialized models outperform large general ones on free tiers.
@@ -51,11 +56,6 @@
 - Skill proposals that reduce 429 rates or improve latency by measurable thresholds (e.g., >50% or >20%) over 100 calls should be auto-promoted to produ
 - Latency varies significantly between models (2.9s to 8.3s), making dynamic routing based on output token count and historical p95 latency essential fo
 - Rate limiting (429) and upstream overload (502) are the dominant failure modes across all model tiers, requiring systematic retry and fallback logic.
-- Task complexity classification (token count, reasoning depth) enables cost-optimal model routing while maintaining quality thresholds.
-- Circuit-breaker pattern with exponential backoff is essential for external API dependencies to prevent cascade failures during provider outages.
-- Skill proposals accumulate without implementation - a proposal-to-deployment pipeline is missing to convert ideas into executable capabilities.
-- Fallback latency variance (18-60s) indicates need for SLA-aware routing that selects models based on current performance, not just availability.
-- Rate-limited models (429 errors) require automatic fallback with persistent health tracking to avoid repeated hammering of exhausted endpoints.
 
 ---
 
