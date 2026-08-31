@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 15:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 15:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5 this session) but no evidence of deployment or testing, creating a proposal-to-production gap.
+- Self-diagnosis reports zero organ errors while model failure rate exceeds 60%, revealing a monitoring blind spot for external dependency health.
+- Drive goals (reliability, market analysis, simulation) remain unlinked to deployed skills despite multiple skill proposals generated in this session.
+- Only 2 of 6 tested models (ling-3.0-flash-fin, poolside/laguna-s-2.1) returned successfully, indicating a ~33% availability rate for free endpoints.
+- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production paths without a resilience layer.
 - Zero pruning events despite repeated failures indicates error events aren't being converted to learnable memory traces.
 - Successful fallback model (ling-3.0-flash-fin) has distinct architecture from failed models, suggesting provider diversity matters more than model cou
 - The system generates skill proposals faster than it validates them, creating a proposal-validation gap that wastes generation effort.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate in memory but lack a validation pipeline to test them in production, creating a proposal-deployment gap.
 - Reflex-mode execution succeeds for analysis goals without invoking unreliable model endpoints, proving local logic can bypass external dependencies.
 - Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making provider diversity without prioritization ineffective
-- Persisting proposal lifecycle in SQLite with unique indexes closes the feedback loop from idea to deployed skill and enables rollback.
-- Pre-flight validation of tool paths, permissions, and syntax eliminates a class of silent failures before they reach execution.
-- Observed latency and token variance across models (e.g., 19-20s, 500-1400 input tokens) demands continuous calibration to keep routing weights accurat
-- The reflex-action loop (detect failure → analyze → propose skill → test → deploy) converges reliably when each step is instrumented and sandboxed.
-- Free-tier model rate limits (429) are a systemic bottleneck requiring provider-agnostic fallback routing with exponential backoff and circuit breakers
 
 ---
 

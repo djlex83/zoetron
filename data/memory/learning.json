@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 15:22:06",
+ "stand": "2026-08-31 15:28:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,6 +39,12 @@
    "quote": 1.0
   },
   {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 6,
    "erfolge": 0,
@@ -48,12 +54,6 @@
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -73,12 +73,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
@@ -142,6 +136,12 @@
   },
   {
    "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
