@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7771 Fakten** · Stand 2026-08-31 04:11 UTC · aktualisiert bei jedem Herzschlag
+**7776 Fakten** · Stand 2026-08-31 04:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3885
+- **dream:** 3890
 - **swarm_artifact:** 1767
 - **last_swarm_critique:** 644
 - **anti_pattern:** 541
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831042025:5:b55167`
+*31.08. 04:20 UTC · Quelle: dream*
+
+Latency variance (8.4s to 54.9s) on the same model indicates unstable performance under load, requiring SLA-based circuit breaking.
+
+### `dream:20260831042025:4:68b144`
+*31.08. 04:20 UTC · Quelle: dream*
+
+Drive goals with 'failure' and 'stale' signals persist across cycles, revealing systemic gaps in error recovery and task completion pipelines.
+
+### `dream:20260831042025:3:07cf5f`
+*31.08. 04:20 UTC · Quelle: dream*
+
+Reflex-mode execution consistently converges when tools are pre-validated, suggesting automation reliability depends on upstream error handling.
+
+### `dream:20260831042025:2:5b32fb`
+*31.08. 04:20 UTC · Quelle: dream*
+
+Successful convergence correlates with fallback to nvidia/nemotron-3-ultra-550b-a55b:free, which handles 3x more tokens with acceptable latency.
+
+### `dream:20260831042025:1:7a7069`
+*31.08. 04:20 UTC · Quelle: dream*
+
+Model failures cluster on specific endpoints (z-ai/glm-5.2:free) with 429 errors, indicating rate-limit exhaustion rather than capability gaps.
 
 ### `dream:20260831041004:5:b544fd`
 *31.08. 04:10 UTC · Quelle: dream*
