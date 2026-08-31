@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7726 Fakten** · Stand 2026-08-31 02:43 UTC · aktualisiert bei jedem Herzschlag
+**7743 Fakten** · Stand 2026-08-31 03:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3860
-- **swarm_artifact:** 1757
-- **last_swarm_critique:** 642
-- **anti_pattern:** 539
-- **last_swarm_goal:** 391
-- **strategy:** 290
+- **dream:** 3865
+- **swarm_artifact:** 1763
+- **last_swarm_critique:** 643
+- **anti_pattern:** 541
+- **last_swarm_goal:** 392
+- **strategy:** 291
 - **tool:** 86
-- **hand_result:** 84
+- **hand_result:** 85
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 29
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
+*31.08. 02:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 18): Event-Driven Skill Bus Integration - Deploy a central SkillEventBus that organs publish to and skills subscribe from. CircuitBreaker listens for failure events and manages state transitions. HealthTracker aggregates heartbea
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:0`
+*31.08. 02:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 23): Architectural Refactoring with Dependency Injection - Restructure the organ architecture to accept skills as injectable dependencies. Create a SkillRegistry that loads CircuitBreaker, HealthTracker, and ErrorClassifier as pl
+
+### `last_swarm_critique`
+*31.08. 02:57 UTC · Quelle: critic*
+
+score=4; issues=Drittes Artefakt ist keine Skill-Implementierung, sondern nur Shell-Explorationsbefehle - Ziel 'einbauen' nicht erfüllt; Keine echte Integration der Skills (CircuitBreaker, HealthTracker, ErrorClassifier) in die Organ-Architektur; Evaluation-Sc
+
+### `last_swarm_goal`
+*31.08. 02:50 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten prüfen und einbauen
+
+### `dream:20260831025007:5:ff9c1c`
+*31.08. 02:50 UTC · Quelle: dream*
+
+Reflex-driven skill adoption (beste-vorschläge-in-fähigkeiten-verwande.py) works but operates too slowly to prevent repeated failures.
+
+### `dream:20260831025007:4:5fd027`
+*31.08. 02:50 UTC · Quelle: dream*
+
+Skill proposals for resilience (CircuitBreaker, HealthTracker, ErrorClassifier) exist but remain unimplemented, creating a proposal-implementation gap.
+
+### `dream:20260831025007:3:0d66e2`
+*31.08. 02:50 UTC · Quelle: dream*
+
+Latency variance spans 17x (5.6s vs 93s) making fixed timeouts ineffective; percentile-based SLAs required.
+
+### `dream:20260831025007:2:32bdd0`
+*31.08. 02:50 UTC · Quelle: dream*
+
+Upstream provider errors (502) cascade into silent failures with 200 status but empty choices, breaking assumption that HTTP 200 means success.
+
+### `dream:20260831025007:1:4b0c89`
+*31.08. 02:50 UTC · Quelle: dream*
+
+Rate limiting (429) is the dominant cross-model failure mode, affecting 4/5 models simultaneously indicating shared quota exhaustion.
 
 ### `dream:20260831024203:5:f4e098`
 *31.08. 02:42 UTC · Quelle: dream*

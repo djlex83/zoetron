@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 02:42:36",
+ "stand": "2026-08-31 03:00:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
@@ -27,6 +27,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 6,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -37,12 +43,6 @@
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 5,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -72,12 +72,6 @@
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -135,6 +129,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -177,12 +177,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.808,
- "simulationen_angewandt": 23,
+ "haende_quote": 0.79,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 26,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 5.5
+  "schnitt": 5.44
  },
  "score_nach_ziel_typ": {
   "analyse": {
@@ -190,8 +190,8 @@
    "schnitt": 5.42
   },
   "bau": {
-   "n": 2,
-   "schnitt": 6.5
+   "n": 3,
+   "schnitt": 5.67
   }
  }
 }
