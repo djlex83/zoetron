@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,6 +10,9 @@
 - Add exponential backoff with jitter (base 1s, max 30s) and token-bucket rate limiting per model before any ret *(hatte die Idee 4×)*
 - Build a rolling reliability scorecard (success rate, p95 latency, error-type histogram) updated per request to *(hatte die Idee 4×)*
 - Create a promotion pipeline: when a reflex converges twice on the same goal, auto-generate skill artifact, run *(hatte die Idee 4×)*
+- Add ProposalTracker persisting skill_proposals with state machine: proposed→implemented|deferred:reason|reject *(hatte die Idee 4×)*
+- Integrate MetabolismGate checking stress/state before non-critical tasks; defer swarms/model-calls when state= *(hatte die Idee 4×)*
+- Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 4×)*
 - Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, 429_count; auto-se *(hatte die Idee 3×)*
 - Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 3×)*
 - Add proposal deduplication: hash proposal text; reject duplicates within 7 days unless new failure evidence in *(hatte die Idee 3×)*
@@ -17,9 +20,6 @@
 - Add reflex tool health tracking: record hand_action exit codes and durations; if a reflex tool fails 3 consecu *(hatte die Idee 3×)*
 - Implement provider failover with cooldown: after N consecutive 429s from a model, remove it from the active ro *(hatte die Idee 3×)*
 - stress_aware_planner: reads metabolism_check and model_health_registry to scope swarm goals to viable models a *(hatte die Idee 3×)*
-- simulation_revision_loop: automates simulate→revise→apply→verify for new skills, closing the propose-use gap. *(hatte die Idee 3×)*
-- Define explicit acceptance criteria and milestone checkpoints for each drive goal; log progress deltas to enab *(hatte die Idee 3×)*
-- Deploy a model router with per-provider rate-limit counters, 429/502-triggered fallback <2s, and health-check  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No metabolic gate exists to defer non-critical LLM calls when system stress or error rates exceed thresholds.
+- Swarm cycles lack a hard iteration budget, risking open-ended runs that never converge or escalate.
+- Skill proposals accumulate without lifecycle tracking, causing stale ideas to persist while new ones duplicate effort.
+- Fallback to nvidia/nemotron-3-ultra succeeds but shows high latency variance (9–27 s), requiring p95-aware routing and circuit-breakers.
+- Free-tier models (z-ai/glm-5.2) repeatedly hit 429 rate limits, making them unreliable for production paths without automated quarantine.
 - Convergence detection without a diagnostic fallback means the system can halt improvement while the underlying problem (unreliable models, stale data)
 - Under shared API rate limits, simultaneous parallel requests amplify contention rather than improve throughput; a staggered retry or queuing strategy 
 - The gap between skill proposals and actual implementation is itself a failure mode — proposals without build-status tracking and deadlines decay into 
@@ -51,11 +56,6 @@
 - Multiple skill proposals (rate-limit detector, async framework, budget allocator, convergence detector) address the same root cause: unreliable model 
 - High latency (10-27s) on the working model nvidia/nemotron-3-ultra creates bottlenecks for iterative loops requiring multiple calls.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limiting that halts progress unless fallback models are pre-configured.
-- Destructive operations like os.system calls are being executed without safeguards, posing a risk that requires dry-run wrapping and human confirmation
-- Convergence in swarm cycles occurs within a single cycle, making additional cycles unnecessary and wasteful of compute resources.
-- Skill proposals are frequently generated but lack validation mechanisms, leading to a gap between proposal and actual usability.
-- Nemotron models exhibit high latency variability (8.8s to 24.6s), suggesting they are unreliable for latency-sensitive tasks without a failover mechan
-- The model z-ai/glm-5.2:free consistently fails with 429 Too Many Requests errors, indicating it is rate-limited and should be deprioritized or quarant
 
 ---
 

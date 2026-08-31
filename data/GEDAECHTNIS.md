@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7691 Fakten** · Stand 2026-08-31 01:47 UTC · aktualisiert bei jedem Herzschlag
+**7696 Fakten** · Stand 2026-08-31 01:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3825
+- **dream:** 3830
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831015345:5:edc7e9`
+*31.08. 01:53 UTC · Quelle: dream*
+
+No metabolic gate exists to defer non-critical LLM calls when system stress or error rates exceed thresholds.
+
+### `dream:20260831015345:4:6daf2d`
+*31.08. 01:53 UTC · Quelle: dream*
+
+Swarm cycles lack a hard iteration budget, risking open-ended runs that never converge or escalate.
+
+### `dream:20260831015345:3:5abf72`
+*31.08. 01:53 UTC · Quelle: dream*
+
+Skill proposals accumulate without lifecycle tracking, causing stale ideas to persist while new ones duplicate effort.
+
+### `dream:20260831015345:2:5c709a`
+*31.08. 01:53 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra succeeds but shows high latency variance (9–27 s), requiring p95-aware routing and circuit-breakers.
+
+### `dream:20260831015345:1:5e37ae`
+*31.08. 01:53 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2) repeatedly hit 429 rate limits, making them unreliable for production paths without automated quarantine.
 
 ### `dream:20260831014534:5:757306`
 *31.08. 01:45 UTC · Quelle: dream*
