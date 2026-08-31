@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7844 Fakten** · Stand 2026-08-31 07:30 UTC · aktualisiert bei jedem Herzschlag
+**7849 Fakten** · Stand 2026-08-31 07:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3940
+- **dream:** 3945
 - **swarm_artifact:** 1773
 - **last_swarm_critique:** 645
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831073509:5:9c9a87`
+*31.08. 07:35 UTC · Quelle: dream*
+
+Existing skill proposals target the observed failure modes but lack an execution tracker to prevent proposal staleness.
+
+### `dream:20260831073509:4:1f7e4e`
+*31.08. 07:35 UTC · Quelle: dream*
+
+Zero pruning activity despite repeated failures suggests the memory retention policy is decoupled from error signals.
+
+### `dream:20260831073509:3:3b43f6`
+*31.08. 07:35 UTC · Quelle: dream*
+
+Latency spread of 10.8 s vs 20.5 s on successful calls shows SLA variance large enough to break downstream timeouts.
+
+### `dream:20260831073509:2:4191ad`
+*31.08. 07:35 UTC · Quelle: dream*
+
+The single 404 on nemotron-3-ultra reveals endpoint volatility that requires proactive health probes before routing traffic.
+
+### `dream:20260831073509:1:830340`
+*31.08. 07:35 UTC · Quelle: dream*
+
+Simultaneous 429 errors across four distinct free models indicate a shared account-level quota pool rather than per-model limits.
 
 ### `dream:20260831072933:5:d35e17`
 *31.08. 07:29 UTC · Quelle: dream*
