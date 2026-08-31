@@ -1,14 +1,14 @@
 {
- "stand": 1788151778.4962475,
+ "stand": 1788152089.4626606,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 1949,
+   "laeufe": 1950,
    "fehler": 392,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 68550.9174759388,
+   "latenz_summe_s": 68560.38017106056,
    "letzter_fehler": "Client error '404 Not Found' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT",
    "letzte_sperre": 1788149406.961065,
    "kontofehler": 6
@@ -54,14 +54,14 @@
    "kontofehler": 200
   },
   "z-ai/glm-5.2:free": {
-   "laeufe": 63,
+   "laeufe": 64,
    "fehler": 5,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 212.11051893234253,
+   "latenz_summe_s": 215.23886609077454,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 1968
+   "kontofehler": 1969
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
