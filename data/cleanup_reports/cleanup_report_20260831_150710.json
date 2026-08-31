@@ -1,0 +1,46 @@
+{
+  "scan_time": "2026-08-31T15:07:10.328484",
+  "total_files": 520,
+  "total_size_bytes": 12397729,
+  "total_size_mb": 11.82,
+  "by_action": {
+    "keep": 426,
+    "delete": 2,
+    "review": 92
+  },
+  "by_category": {
+    "memory": 58,
+    "temp": 1,
+    "unknown": 92,
+    "result": 29,
+    "backup": 1,
+    "artifact": 339
+  },
+  "archive_size_mb": 0.0,
+  "delete_size_mb": 0.0,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "rel_path": "tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "size_bytes": 2681,
+      "modified": 1787812317.2147682,
+      "modified_iso": "2026-08-27T06:31:57.214768",
+      "age_days": 4.4,
+      "category": "backup",
+      "action": "delete",
+      "reason": "Old backup - superseded"
+    },
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 5.1,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": []
+}

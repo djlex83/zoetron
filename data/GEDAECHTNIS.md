@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8126 Fakten** · Stand 2026-08-31 14:56 UTC · aktualisiert bei jedem Herzschlag
+**8131 Fakten** · Stand 2026-08-31 15:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4200
+- **dream:** 4205
 - **swarm_artifact:** 1783
 - **last_swarm_critique:** 648
 - **anti_pattern:** 545
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831150603:5:803eaf`
+*31.08. 15:06 UTC · Quelle: dream*
+
+Persisting proposal lifecycle in SQLite with unique indexes closes the feedback loop from idea to deployed skill and enables rollback.
+
+### `dream:20260831150603:4:76e6f2`
+*31.08. 15:06 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260831150603:3:58b109`
+*31.08. 15:06 UTC · Quelle: dream*
+
+Observed latency and token variance across models (e.g., 19-20s, 500-1400 input tokens) demands continuous calibration to keep routing weights accurate.
+
+### `dream:20260831150603:2:b08bb7`
+*31.08. 15:06 UTC · Quelle: dream*
+
+The reflex-action loop (detect failure → analyze → propose skill → test → deploy) converges reliably when each step is instrumented and sandboxed.
+
+### `dream:20260831150603:1:272210`
+*31.08. 15:06 UTC · Quelle: dream*
+
+Free-tier model rate limits (429) are a systemic bottleneck requiring provider-agnostic fallback routing with exponential backoff and circuit breakers.
 
 ### `dream:20260831145434:5:0be140`
 *31.08. 14:54 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 15:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 5×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Persisting proposal lifecycle in SQLite with unique indexes closes the feedback loop from idea to deployed skill and enables rollback.
+- Pre-flight validation of tool paths, permissions, and syntax eliminates a class of silent failures before they reach execution.
+- Observed latency and token variance across models (e.g., 19-20s, 500-1400 input tokens) demands continuous calibration to keep routing weights accurat
+- The reflex-action loop (detect failure → analyze → propose skill → test → deploy) converges reliably when each step is instrumented and sandboxed.
+- Free-tier model rate limits (429) are a systemic bottleneck requiring provider-agnostic fallback routing with exponential backoff and circuit breakers
 - Repeated failures on the same model within seconds indicate lack of effective circuit breaking or failover mechanisms.
 - Free-tier models consistently fail under load, implying resource contention or aggressive rate limiting on shared endpoints.
 - Latency spikes (8.3s to 11.3s) on successful calls correlate with degraded model performance, suggesting throttling before outright failure.
@@ -51,11 +56,6 @@
 - Latency and token efficiency vary significantly between successful model calls, suggesting that lightweight tasks should route to faster, cheaper mode
 - Model failures cascade when fallback chains are not enforced, causing repeated attempts on already-failing endpoints within short time windows.
 - Rate limiting (429) is the dominant failure mode across multiple model endpoints, indicating systemic overload rather than isolated model issues.
-- High-latency models (nemotron-3-ultra, 27-96s per call) were used repeatedly for tasks that the fast flash model (21.5s) already handled successfully,
-- Evolution runs showed a massive gap between the base score (1/10) and variant scores (7-8), yet the swarm did not converge in 2 cycles, suggesting var
-- Calibration predicted a score of 6 against an actual score of 1 (6x overestimate), revealing a dangerous confidence inflation that could misguide futu
-- Artifacts consistently fail to execute in the sandbox (hand_action exit 1, gelesen=0, traceback at line 102), meaning generated code is not validated 
-- Rate-limited models (glm-5.2 returning 429) failed repeatedly without fallback, indicating the absence of a circuit-breaker that switches providers af
 
 ---
 
