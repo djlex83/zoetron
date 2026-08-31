@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8282 Fakten** · Stand 2026-08-31 19:48 UTC · aktualisiert bei jedem Herzschlag
+**8287 Fakten** · Stand 2026-08-31 19:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4285
+- **dream:** 4290
 - **swarm_artifact:** 1819
 - **last_swarm_critique:** 654
 - **anti_pattern:** 553
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831195322:5:b457a9`
+*31.08. 19:53 UTC · Quelle: dream*
+
+Latency variability in working models (43s to 55s) makes interactive loops unpredictable, requiring latency-aware model selection for consistent user experience.
+
+### `dream:20260831195322:4:7ef735`
+*31.08. 19:53 UTC · Quelle: dream*
+
+The reflex consolidation mechanism converges reliably, but its effectiveness is bottlenecked by the underlying model call layer, which is the single point of failure.
+
+### `dream:20260831195322:3:725de6`
+*31.08. 19:53 UTC · Quelle: dream*
+
+Stale data (unfinished goals, outdated analyses, unpruned facts) accumulates over time because there is no time-based expiration or forced review cycle.
+
+### `dream:20260831195322:2:7c9629`
+*31.08. 19:53 UTC · Quelle: dream*
+
+The system generates many skill proposals and goals but lacks a prioritization-and-execution mechanism, causing accumulation of unfinished work and unused ideas.
+
+### `dream:20260831195322:1:90daa3`
+*31.08. 19:53 UTC · Quelle: dream*
+
+429 rate-limit errors from external models are a recurring systemic failure that cascades into unreliable system behavior and must be handled automatically rather than retried naively.
 
 ### `dream:20260831194654:5:15fb06`
 *31.08. 19:46 UTC · Quelle: dream*

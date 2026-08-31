@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,7 +28,7 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variability in working models (43s to 55s) makes interactive loops unpredictable, requiring latency-aware model selection for consistent user 
+- The reflex consolidation mechanism converges reliably, but its effectiveness is bottlenecked by the underlying model call layer, which is the single p
+- Stale data (unfinished goals, outdated analyses, unpruned facts) accumulates over time because there is no time-based expiration or forced review cycl
+- The system generates many skill proposals and goals but lacks a prioritization-and-execution mechanism, causing accumulation of unfinished work and un
+- 429 rate-limit errors from external models are a recurring systemic failure that cascades into unreliable system behavior and must be handled automati
 - System stress signals (metabolism.stress > 0.8) correlate with cascade model failures, yet no scheduler currently backs off concurrency or expands tim
 - Thirty-five skill proposals exist but adoption is near zero, revealing a missing 'skill graduation' gate that validates utility before registry insert
 - Swarm evolution cycles consistently fail to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptance t
@@ -51,11 +56,6 @@
 - Only inclusionai/ling-3.0-flash-fin:free succeeded consistently (2/2 attempts) with reasonable latency (10-24s).
 - Nvidia nemotron fails with upstream 502 errors, indicating provider-side instability beyond rate limits.
 - Rate limiting (HTTP 429) is the dominant failure mode across 5/6 free models, making them unreliable for production use.
-- Duplicate skill proposals waste cycles; a ProposalDeduplicator using semantic hashing (embedding + keyword signature) surfaces only novel or improved 
-- File-access skills repeatedly fail on path resolution because they don't declare I/O contracts; enforcing PathContract at registration with auto-wrapp
-- Drive goals accumulate without execution linkage; an ExecutionGapTracker mapping each goal to concrete skill proposals with age alerts (>24h) closes t
-- Model fallback cascades fail because no real-time health signals exist; synthetic probes every 60s per model are needed to populate a ModelHealthRegis
-- Rate limiting (429) across five distinct models reveals systemic quota exhaustion, not isolated failures, requiring quota-aware routing with circuit b
 
 ---
 
