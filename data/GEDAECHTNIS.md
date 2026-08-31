@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8392 Fakten** · Stand 2026-08-31 22:29 UTC · aktualisiert bei jedem Herzschlag
+**8409 Fakten** · Stand 2026-08-31 22:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4365
-- **swarm_artifact:** 1837
-- **last_swarm_critique:** 657
-- **anti_pattern:** 555
-- **last_swarm_goal:** 406
-- **strategy:** 298
+- **dream:** 4370
+- **swarm_artifact:** 1843
+- **last_swarm_critique:** 658
+- **anti_pattern:** 557
+- **last_swarm_goal:** 407
+- **strategy:** 299
 - **tool:** 96
-- **hand_result:** 88
+- **hand_result:** 89
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:2`
+*31.08. 22:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Deterministic WASM Micro-Sandbox - Compile skill implementations to WASM (via wasmtime/pyodide/Rust). Each skill: single WASM module with wit interface (exports: validate, execute, metadata). Sandbox: (1) Fuel metering (instr
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:1`
+*31.08. 22:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Contract-Driven Abstract Interpretation - Skills are Python classes implementing a Protocol (typing.Protocol) with @contract decorators (icontract/deal) specifying pre/post/invariants. Validation: (1) Static analysis via mypy
+
+### `last_swarm_critique`
+*31.08. 22:41 UTC · Quelle: critic*
+
+score=3; issues=Sandbox verdict LAEUGT nicht bestätigt: Artefakt ist zu lang (14968 + 18290 Zeichen) und beide Dateien sind unvollständig (truncate-Marker '... hier gekappt' sichtbar), was Syntaxfehler bei Ausführung zur Folge hat; es gibt keine gültige, lauff
+
+### `last_swarm_goal`
+*31.08. 22:35 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten besser prüfen
+
+### `dream:20260831223507:5:feee69`
+*31.08. 22:35 UTC · Quelle: dream*
+
+Task complexity classification (token count, reasoning depth) enables cost-optimal model routing while maintaining quality thresholds.
+
+### `dream:20260831223507:4:19c611`
+*31.08. 22:35 UTC · Quelle: dream*
+
+Circuit-breaker pattern with exponential backoff is essential for external API dependencies to prevent cascade failures during provider outages.
+
+### `dream:20260831223507:3:422ce0`
+*31.08. 22:35 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation - a proposal-to-deployment pipeline is missing to convert ideas into executable capabilities.
+
+### `dream:20260831223507:2:23ecc6`
+*31.08. 22:35 UTC · Quelle: dream*
+
+Fallback latency variance (18-60s) indicates need for SLA-aware routing that selects models based on current performance, not just availability.
+
+### `dream:20260831223507:1:1d7e2d`
+*31.08. 22:35 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) require automatic fallback with persistent health tracking to avoid repeated hammering of exhausted endpoints.
 
 ### `dream:20260831222819:5:5cef08`
 *31.08. 22:28 UTC · Quelle: dream*
