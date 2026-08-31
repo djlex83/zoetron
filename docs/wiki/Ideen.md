@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 2×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Local-first execution of deterministic hand actions reduces unnecessary model calls and improves system reliability.
+- Model selection lacks real-time performance feedback, leading to repeated failures on overloaded or rate-limited endpoints.
+- Stale market analyses persist because there is no automated pipeline converting insights into executable actions.
+- High-latency models like nvidia/nemotron-3-ultra-550b benefit from micro-step decomposition with checkpointing to maintain progress under timeouts.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limit fragility requiring adaptive routing and backoff strategies.
 - Batch application of simulation revisions reduces total API calls versus iterative single-revision cycles.
 - Skill proposals accumulate faster than implementation, creating a capability gap despite known solutions.
 - Relative path resolution in hand actions fails silently when ZOETRON_DATA context shifts.
@@ -51,11 +56,6 @@
 - Model performance varies significantly under load — nemotron-3-ultra-550b-a55b showed acceptable latency (8.2s) while others failed with 429 or 502 er
 - Relative path usage in scripts causes silent failures; absolute paths derived from a central configuration prevent data resolution errors.
 - Repeated 429 errors across multiple models indicate systemic rate-limiting that requires exponential backoff with jitter and model cooldown windows.
-- No checkpointing exists for long-running swarms, so any model interruption discards all intermediate progress.
-- Relative script paths and missing pre-flight checks cause silent environment mismatches that masquerade as model failures.
-- Swarm cycles lack a hard convergence gate, allowing infinite iteration without quality improvement.
-- Skill proposals accumulate but remain untested because the system lacks an automated 'proposal-to-validation' pipeline.
-- Model provider rate limits (429) and upstream overloads (502) are the dominant failure mode, making single-model reliance untenable.
 
 ---
 

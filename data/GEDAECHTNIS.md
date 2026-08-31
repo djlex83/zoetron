@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7938 Fakten** · Stand 2026-08-31 10:09 UTC · aktualisiert bei jedem Herzschlag
+**7943 Fakten** · Stand 2026-08-31 10:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4020
+- **dream:** 4025
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831101316:5:d62043`
+*31.08. 10:13 UTC · Quelle: dream*
+
+Local-first execution of deterministic hand actions reduces unnecessary model calls and improves system reliability.
+
+### `dream:20260831101316:4:e2f8e1`
+*31.08. 10:13 UTC · Quelle: dream*
+
+Model selection lacks real-time performance feedback, leading to repeated failures on overloaded or rate-limited endpoints.
+
+### `dream:20260831101316:3:024973`
+*31.08. 10:13 UTC · Quelle: dream*
+
+Stale market analyses persist because there is no automated pipeline converting insights into executable actions.
+
+### `dream:20260831101316:2:e9a773`
+*31.08. 10:13 UTC · Quelle: dream*
+
+High-latency models like nvidia/nemotron-3-ultra-550b benefit from micro-step decomposition with checkpointing to maintain progress under timeouts.
+
+### `dream:20260831101316:1:fc7e27`
+*31.08. 10:13 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limit fragility requiring adaptive routing and backoff strategies.
 
 ### `dream:20260831100747:5:9881ea`
 *31.08. 10:07 UTC · Quelle: dream*

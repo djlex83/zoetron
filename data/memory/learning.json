@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-31 10:08:12",
+ "stand": "2026-08-31 10:14:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 29,
-   "erfolge": 29,
+   "laeufe": 30,
+   "erfolge": 30,
    "quote": 1.0
   },
   {
@@ -87,12 +87,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -139,6 +133,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
