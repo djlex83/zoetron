@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7641 Fakten** · Stand 2026-08-31 00:44 UTC · aktualisiert bei jedem Herzschlag
+**7646 Fakten** · Stand 2026-08-31 00:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3775
+- **dream:** 3780
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831005001:5:4bb18f`
+*31.08. 00:50 UTC · Quelle: dream*
+
+Reflex-driven memory maintenance (alte-erinnerungen-aktualisieren.py) executes reliably with zero errors across cycles.
+
+### `dream:20260831005001:4:4f6d58`
+*31.08. 00:50 UTC · Quelle: dream*
+
+Five infrastructure skill proposals (ModelRegistry, PathResolver, ErrorClassifier, ProposalTracker, MetabolismGate) exist but remain unimplemented, creating a capability gap.
+
+### `dream:20260831005001:3:49f684`
+*31.08. 00:50 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1:free succeeded with low latency (8.1s), suggesting smaller models may have better availability.
+
+### `dream:20260831005001:2:b84068`
+*31.08. 00:50 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra model succeeded once (77.4s) but later failed with 502, indicating intermittent upstream instability.
+
+### `dream:20260831005001:1:a27285`
+*31.08. 00:50 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
 
 ### `dream:20260831004214:5:9d31de`
 *31.08. 00:42 UTC · Quelle: dream*

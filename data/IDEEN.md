@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 00:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 00:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven memory maintenance (alte-erinnerungen-aktualisieren.py) executes reliably with zero errors across cycles.
+- Five infrastructure skill proposals (ModelRegistry, PathResolver, ErrorClassifier, ProposalTracker, MetabolismGate) exist but remain unimplemented, cr
+- poolside/laguna-s-2.1:free succeeded with low latency (8.1s), suggesting smaller models may have better availability.
+- The nvidia/nemotron-3-ultra model succeeded once (77.4s) but later failed with 502, indicating intermittent upstream instability.
+- Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
 - Calibration error of 1 on an 8-point scale indicates reliable self-assessment for planning.
 - Hand-tool actions are two orders of magnitude faster than model calls, favor them for I/O.
 - Swarm convergence in a single cycle suggests task decomposition is well-calibrated for current goals.
@@ -51,11 +56,6 @@
 - Goals lack decomposition: 'Modell-Fehler stark reduzieren' has no measurable target, retry policy, or fallback chain, making progress unverifiable.
 - Conservation metabolism (max_iterations: 1) prevents retry/backoff logic, turning transient 502/429 errors into permanent task failures.
 - Free-tier rate limits (429 errors) across multiple providers indicate OpenRouter quota exhaustion, not model-specific failures, requiring request sche
-- Single-cycle swarm convergence with score 8 indicates planner-builder-critic role allocation is well-calibrated for this task class.
-- Automated tool rejection for destructive operations (os.system/subprocess) correctly enforces human-in-the-loop safety.
-- Poolside Laguna consistently delivers low-latency (1.2s) successful completions, making it the only viable free fallback.
-- Nvidia Nemotron succeeds but exhibits extreme latency variance (29-95s) that violates real-time constraints.
-- Free-tier models on OpenRouter suffer systematic rate-limiting (429) making them unreliable for production workflows.
 
 ---
 
