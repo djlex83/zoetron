@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7839 Fakten** · Stand 2026-08-31 06:35 UTC · aktualisiert bei jedem Herzschlag
+**7844 Fakten** · Stand 2026-08-31 07:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3935
+- **dream:** 3940
 - **swarm_artifact:** 1773
 - **last_swarm_critique:** 645
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831072933:5:d35e17`
+*31.08. 07:29 UTC · Quelle: dream*
+
+Pruning runs remove zero facts/events repeatedly, suggesting retention thresholds are misconfigured or data volume is below trigger levels.
+
+### `dream:20260831072933:4:0b41fa`
+*31.08. 07:29 UTC · Quelle: dream*
+
+Model fallback to inclusionai/ling-3.0-flash-fin:free succeeded with 10.8s latency, proving automated failover works when triggered.
+
+### `dream:20260831072933:3:2a7b0a`
+*31.08. 07:29 UTC · Quelle: dream*
+
+Reflex-mode tool execution successfully converts skill proposals and upgrades models without human intervention.
+
+### `dream:20260831072933:2:482fca`
+*31.08. 07:29 UTC · Quelle: dream*
+
+Dream and drive modules consistently hit 180-second timeouts, indicating a systemic processing bottleneck rather than isolated delays.
+
+### `dream:20260831072933:1:570968`
+*31.08. 07:29 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier OpenRouter models simultaneously, making single-model reliance unreliable.
 
 ### `tool:marktanalyse-in-handeln-umsetzen`
 *31.08. 06:34 UTC · Quelle: hands*

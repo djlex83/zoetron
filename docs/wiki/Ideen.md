@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 06:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 07:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs remove zero facts/events repeatedly, suggesting retention thresholds are misconfigured or data volume is below trigger levels.
+- Model fallback to inclusionai/ling-3.0-flash-fin:free succeeded with 10.8s latency, proving automated failover works when triggered.
+- Reflex-mode tool execution successfully converts skill proposals and upgrades models without human intervention.
+- Dream and drive modules consistently hit 180-second timeouts, indicating a systemic processing bottleneck rather than isolated delays.
+- Rate limiting (429) affects all free-tier OpenRouter models simultaneously, making single-model reliance unreliable.
 - Error type classification (quota vs. structural vs. retryable) is a prerequisite for any intelligent fallback chain, yet no middleware currently tags 
 - The working model nvidia/nemotron-3-ultra-550b-a55b:free exhibits dangerous latency variance (9.5s–29.6s), threatening the 10s SLA even when it does n
 - Stale goals (e.g., market analysis) accumulate across cycles without automated enforcement, indicating that staleness detection alone is insufficient 
@@ -51,11 +56,6 @@
 - Local reflex operations (artifact cleanup, memory update) succeed independently while all external model calls fail, confirming architectural separati
 - Only poolside/laguna-s-2.1:free remains operational, indicating provider-specific quota exhaustion rather than universal outage.
 - Rate limiting (HTTP 429) cascades across multiple free-tier models simultaneously, making external LLM dependency a systemic single point of failure.
-- Self-diagnosis reports zero organ errors while model layer is fully degraded, revealing a monitoring blind spot between infrastructure health and serv
-- Failure logs lack request-level context (prompt size, priority, retry count), preventing root-cause distinction between burst traffic vs. sustained qu
-- All five proposed skills (QuotaPool, ModelHealthTracker, ErrorClassifier, LatencySLA, ProposalTracker) form an interdependent resilience stack; implem
-- Latency exceeding 10s (observed on inclusionai/ling-3.0-flash-fin) precedes cascade failures, making latency a leading indicator of quota collapse.
-- Account-level 429 exhaustion simultaneously kills all OpenRouter models, proving quota is shared across the entire account not per-model.
 
 ---
 
