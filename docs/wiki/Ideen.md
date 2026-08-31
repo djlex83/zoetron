@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 03:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 03:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 5×)*
+- Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 6×)*
 - Add exponential backoff with jitter (base 1s, max 30s) and token-bucket rate limiting per model before any ret *(hatte die Idee 4×)*
 - Build a rolling reliability scorecard (success rate, p95 latency, error-type histogram) updated per request to *(hatte die Idee 4×)*
 - Create a promotion pipeline: when a reflex converges twice on the same goal, auto-generate skill artifact, run *(hatte die Idee 4×)*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning reported zero issues, indicating the failure domain is external (upstream rate limits) not internal corruption.
+- Five skill proposals were emitted in one cycle but no persistence or tracking mechanism exists, so they likely vanish without implementation.
+- Reflex tool 'abgelehnte-werkzeuge-verstehen-und-verbe.py' completed the market-analysis goal autonomously, proving reflexes can substitute for failed 
+- Only inclusionai/ling-3.0-flash-fin:free remained available, creating a single point of failure for all LLM-dependent tasks.
+- Multiple free-tier models simultaneously hit 429 rate limits, revealing that routing without per-model quota awareness causes cascading failures.
 - Reflex-driven skill adoption (beste-vorschläge-in-fähigkeiten-verwande.py) works but operates too slowly to prevent repeated failures.
 - Skill proposals for resilience (CircuitBreaker, HealthTracker, ErrorClassifier) exist but remain unimplemented, creating a proposal-implementation gap
 - Latency variance spans 17x (5.6s vs 93s) making fixed timeouts ineffective; percentile-based SLAs required.
@@ -51,11 +56,6 @@
 - Multiple skill proposals remain unimplemented across cycles, indicating a systemic gap between proposal generation and execution.
 - Latency for nvidia/nemotron-3-ultra-550b-a55b:free increased from 46.7s to 93.1s across runs, signaling performance degradation under load.
 - Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limit exhaustion requiring per-model circuit breakers and fallback routing.
-- Self-diagnosis reports no internal organ failures, yet external dependency failures persist — internal health checks alone are insufficient to guarant
-- Stale goals (unfinished analyses, unused results) block new insights and must be explicitly resolved rather than waiting for spontaneous attention.
-- Reflex-mode execution reliably converges on well-scoped goals, suggesting that triggering goals as reflexes rather than open-ended drives increases co
-- Skill proposals and analytical work products accumulate without lifecycle management — no state machine tracks whether they are implemented, deferred,
-- External model API failures (429 rate limits) are the dominant failure mode, and without automatic quarantine or fallback the same model is retried re
 
 ---
 

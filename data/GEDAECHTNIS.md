@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7743 Fakten** · Stand 2026-08-31 03:01 UTC · aktualisiert bei jedem Herzschlag
+**7748 Fakten** · Stand 2026-08-31 03:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3865
+- **dream:** 3870
 - **swarm_artifact:** 1763
 - **last_swarm_critique:** 643
 - **anti_pattern:** 541
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831031934:5:6e6818`
+*31.08. 03:19 UTC · Quelle: dream*
+
+Self-diagnosis and pruning reported zero issues, indicating the failure domain is external (upstream rate limits) not internal corruption.
+
+### `dream:20260831031934:4:861785`
+*31.08. 03:19 UTC · Quelle: dream*
+
+Five skill proposals were emitted in one cycle but no persistence or tracking mechanism exists, so they likely vanish without implementation.
+
+### `dream:20260831031934:3:1ee5a2`
+*31.08. 03:19 UTC · Quelle: dream*
+
+Reflex tool 'abgelehnte-werkzeuge-verstehen-und-verbe.py' completed the market-analysis goal autonomously, proving reflexes can substitute for failed model calls.
+
+### `dream:20260831031934:2:38fcd1`
+*31.08. 03:19 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free remained available, creating a single point of failure for all LLM-dependent tasks.
+
+### `dream:20260831031934:1:bb35cc`
+*31.08. 03:19 UTC · Quelle: dream*
+
+Multiple free-tier models simultaneously hit 429 rate limits, revealing that routing without per-model quota awareness causes cascading failures.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
 *31.08. 02:58 UTC · Quelle: evolution*
