@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Checkpoint logging is proposed but absent; without durable cycle state, every restart loses swarm context and forces full re-convergence.
+- Self-diagnosis reports zero organ errors while the model layer repeatedly fails, revealing a monitoring blind spot for external API dependencies.
+- Reflex actions succeed when the tool path is pre-validated, but ad-hoc model calls fail silently without a pre-flight environment check.
+- Skill proposals accumulate but remain unimplemented because no automated pipeline validates, tests, and merges them into the agent's toolset.
+- Rate-limiting (429) and upstream overload (502) across multiple free-tier providers indicate that single-provider reliance is a systemic reliability b
 - Market analysis insights and proposed skills accumulate stale without conversion to executable tasks or implemented capabilities.
 - No circuit breaker, exponential backoff, or latency-aware fallback ordering exists despite repeated 429 failures across sessions.
 - Local hand actions (file ops, scripts) consistently succeed in <0.3s, yet model invocations are still attempted first for applicable tasks.
@@ -51,11 +56,6 @@
 - Standardizing path resolution prevents I/O errors and ensures consistent data access across hand actions.
 - Latency prediction using EWMA and 2σ inflation improves budget accuracy and enables proactive conserve-mode.
 - Model failures cluster around rate-limiting (429) and upstream overload (502), indicating need for dynamic routing and backoff strategies.
-- Stale drive goals (market analysis) persist for days because the planner lacks a staleness-triggered escalation or decomposition mechanism.
-- Skill proposals accumulate without promotion criteria or ownership, creating a backlog where valuable ideas (e.g., automated validation harness) never
-- Path-resolution failures recur across hand actions because relative paths are resolved against inconsistent working directories instead of a canonical
-- Multiple independent proposals converge on circuit-breaker patterns, latency-aware routing, and health scorecards — indicating the architecture lacks 
-- Rate-limited model endpoints (z-ai/glm-5.2:free) consistently fail under load while fallback models (nvidia/nemotron-3-ultra) succeed, proving single-
 
 ---
 
