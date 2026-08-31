@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 23:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 23:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand-action execution (code runs) shows non-deterministic success (exit 1 vs 0) requiring idempotent retry logic.
+- Simulation-based verification with risk scoring (3 risks → 3 revisions) successfully prevented deployment of flawed artifacts.
+- Poolside Laguna-S-2.1 delivers consistent low latency (~15s) suggesting smaller specialized models outperform large general ones on free tiers.
+- Nvidia Nemotron shows high latency variance (38-109s) and intermittent 502 upstream overloads, indicating provider-side capacity issues.
+- Free-tier models across all providers suffer pervasive rate limiting (429 errors) making them unreliable for sustained workloads.
 - Cycle estimation accuracy can be improved by tracking rolling mean absolute error between predicted and actual cycles per goal type.
 - Parallel multi-model dispatch with first-success-wins effectively bypasses correlated rate limits and improves overall success rate.
 - Skill proposals that reduce 429 rates or improve latency by measurable thresholds (e.g., >50% or >20%) over 100 calls should be auto-promoted to produ
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without implementation - a proposal-to-deployment pipeline is missing to convert ideas into executable capabilities.
 - Fallback latency variance (18-60s) indicates need for SLA-aware routing that selects models based on current performance, not just availability.
 - Rate-limited models (429 errors) require automatic fallback with persistent health tracking to avoid repeated hammering of exhausted endpoints.
-- Self-diagnosis reports zero organ errors while model failures persist, revealing a blind spot: external API health is not modeled as an organ.
-- Calibration error of 1 (predicted 7 vs actual 8) indicates the predictor is well-calibrated for this task class and can gate autonomous retries.
-- A single-cycle swarm with explicit planner/builder/critic roles converged at score 8, confirming that role specialization + critic feedback accelerate
-- Backup model (Nemotron) exhibits extreme latency variance (8.6–107s) correlated with input token volume, requiring latency-aware routing or token budg
-- Free-tier models (GLM-5.2) fail systematically under rate limits (429), making them unreliable as primaries without a validated fallback chain.
 
 ---
 
