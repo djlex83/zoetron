@@ -1,25 +1,25 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 02:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 02:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Enforce local-first policy: for any goal matching a registered reflex tool, execute hand_action before any mod *(hatte die Idee 5×)*
 - Build skill_proposal_pipeline: auto-convert proposals with ≥2 supporting failure events into reflex tools with *(hatte die Idee 5×)*
+- Enforce local-first policy: for any goal matching a registered reflex tool, execute hand_action before any mod *(hatte die Idee 4×)*
 - Add exponential backoff with jitter (base 1s, max 30s) and token-bucket rate limiting per model before any ret *(hatte die Idee 4×)*
 - Build a rolling reliability scorecard (success rate, p95 latency, error-type histogram) updated per request to *(hatte die Idee 4×)*
 - Create a promotion pipeline: when a reflex converges twice on the same goal, auto-generate skill artifact, run *(hatte die Idee 4×)*
 - Add ProposalTracker persisting skill_proposals with state machine: proposed→implemented|deferred:reason|reject *(hatte die Idee 4×)*
 - Integrate MetabolismGate checking stress/state before non-critical tasks; defer swarms/model-calls when state= *(hatte die Idee 4×)*
 - Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 4×)*
-- Implement ModelRouter with persistent model_health.json tracking success_rate, latency_p50, 429_count; auto-se *(hatte die Idee 3×)*
-- Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 3×)*
 - Add proposal deduplication: hash proposal text; reject duplicates within 7 days unless new failure evidence in *(hatte die Idee 3×)*
 - Deploy OutputValidator middleware: reject hand_action results that are empty, fail JSON schema, or lack requir *(hatte die Idee 3×)*
 - Add reflex tool health tracking: record hand_action exit codes and durations; if a reflex tool fails 3 consecu *(hatte die Idee 3×)*
 - Implement provider failover with cooldown: after N consecutive 429s from a model, remove it from the active ro *(hatte die Idee 3×)*
 - stress_aware_planner: reads metabolism_check and model_health_registry to scope swarm goals to viable models a *(hatte die Idee 3×)*
+- simulation_revision_loop: automates simulate→revise→apply→verify for new skills, closing the propose-use gap. *(hatte die Idee 3×)*
+- Define explicit acceptance criteria and milestone checkpoints for each drive goal; log progress deltas to enab *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance (6.9s vs 10.9s) on the only working model violates the proposed 10s SLA without triggering abort or failover.
+- Model errors are unclassified (429 vs 502 vs timeout), preventing smart routing decisions between retryable, structural, and quota-exhausted failures.
+- Skill proposals accumulate (ProposalTracker, ErrorClassifier, LatencySLA) but lack lifecycle tracking, causing stale ideas to never reach implementati
+- Only poolside/laguna-s-2.1:free succeeds consistently, revealing a critical single-point-of-failure with no automatic failover to healthy alternatives
+- Rate limiting (429) is the dominant failure mode across 3/4 models, indicating missing proactive rate-limit awareness and backoff logic.
 - Stale drive goals (3 unfinished market analyses) persist because completion criteria are implicit, not tracked in a state machine.
 - No metabolic gating exists: non-critical model calls continue despite sustained failure rate >80%, wasting cycles and deepening quota debt.
 - Reflex actions succeed (market analysis completed) while model-dependent swarms stall, showing reflexes are more reliable than LLM calls under quota p
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without lifecycle tracking, causing stale ideas to persist while new ones duplicate effort.
 - Fallback to nvidia/nemotron-3-ultra succeeds but shows high latency variance (9–27 s), requiring p95-aware routing and circuit-breakers.
 - Free-tier models (z-ai/glm-5.2) repeatedly hit 429 rate limits, making them unreliable for production paths without automated quarantine.
-- Convergence detection without a diagnostic fallback means the system can halt improvement while the underlying problem (unreliable models, stale data)
-- Under shared API rate limits, simultaneous parallel requests amplify contention rather than improve throughput; a staggered retry or queuing strategy 
-- The gap between skill proposals and actual implementation is itself a failure mode — proposals without build-status tracking and deadlines decay into 
-- Error types (429 rate-limit, 502 upstream overload, empty response) are predictable and classifiable; treating them as generic failures wastes the inf
-- When 6 out of 7 model calls fail simultaneously, the absence of automatic quarantine and fallback turns transient API errors into systemic paralysis —
 
 ---
 

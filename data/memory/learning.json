@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 02:01:43",
+ "stand": "2026-08-31 02:09:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,14 +16,14 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 13,
-   "erfolge": 13,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
