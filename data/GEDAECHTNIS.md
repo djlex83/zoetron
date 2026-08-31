@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7963 Fakten** · Stand 2026-08-31 10:41 UTC · aktualisiert bei jedem Herzschlag
+**7968 Fakten** · Stand 2026-08-31 10:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4045
+- **dream:** 4050
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831104550:5:b860eb`
+*31.08. 10:45 UTC · Quelle: dream*
+
+Drive signals like 'failure', 'stale', and 'gap' effectively prioritize skill proposals and system improvements.
+
+### `dream:20260831104550:4:91c4b4`
+*31.08. 10:45 UTC · Quelle: dream*
+
+Automated skill validation with regression testing prevents performance degradation from new skill integration.
+
+### `dream:20260831104550:3:31c933`
+*31.08. 10:45 UTC · Quelle: dream*
+
+Standardizing path resolution prevents I/O errors and ensures consistent data access across hand actions.
+
+### `dream:20260831104550:2:c5483b`
+*31.08. 10:45 UTC · Quelle: dream*
+
+Latency prediction using EWMA and 2σ inflation improves budget accuracy and enables proactive conserve-mode.
+
+### `dream:20260831104550:1:cc7981`
+*31.08. 10:45 UTC · Quelle: dream*
+
+Model failures cluster around rate-limiting (429) and upstream overload (502), indicating need for dynamic routing and backoff strategies.
 
 ### `dream:20260831103949:5:16123e`
 *31.08. 10:39 UTC · Quelle: dream*

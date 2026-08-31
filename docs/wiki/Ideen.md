@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,14 +12,14 @@
 - Add ProposalTracker persisting skill_proposals with state machine: proposed→implemented|deferred:reason|reject *(hatte die Idee 4×)*
 - Integrate MetabolismGate checking stress/state before non-critical tasks; defer swarms/model-calls when state= *(hatte die Idee 4×)*
 - Enforce LatencySLA middleware: hard 10s timeout, immediate failover on breach, and SLA breach logging for mode *(hatte die Idee 4×)*
+- Build a model router that tracks per-model 429 rates and latency percentiles, defaulting to inclusionai/ling-3 *(hatte die Idee 4×)*
+- Implement exponential backoff with jitter and a circuit breaker that disables a model after three consecutive  *(hatte die Idee 4×)*
+- Create a simulation-revision skill that iteratively applies fixes until risk count falls below a configurable  *(hatte die Idee 4×)*
+- Add a calibration monitor that logs prediction vs. actual per task type and triggers retraining when MAE excee *(hatte die Idee 4×)*
 - Define explicit acceptance criteria and milestone checkpoints for each drive goal; log progress deltas to enab *(hatte die Idee 3×)*
 - Deploy a model router with per-provider rate-limit counters, 429/502-triggered fallback <2s, and health-check  *(hatte die Idee 3×)*
 - Build a calibration-correction loop that automatically adjusts effort estimates by +100% for simulation-to-pra *(hatte die Idee 3×)*
 - Create a critic-driven evolution harness that generates 3 variants of any artifact, scores them against a rubr *(hatte die Idee 3×)*
-- Design a consolidation checkpoint that snapshots working artifacts (e.g., the 134-line Python simulation) befo *(hatte die Idee 3×)*
-- Implement a circuit-breaker router that tracks per-model health (success rate, latency, error streak) and rout *(hatte die Idee 3×)*
-- Add exponential backoff with jitter (base 2s, max 60s) and automatic fallback to next-healthiest model on 429/ *(hatte die Idee 3×)*
-- Enforce minimum 1:2 critic-to-builder ratio in swarm configs and require critic sign-off before builder propos *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive signals like 'failure', 'stale', and 'gap' effectively prioritize skill proposals and system improvements.
+- Automated skill validation with regression testing prevents performance degradation from new skill integration.
+- Standardizing path resolution prevents I/O errors and ensures consistent data access across hand actions.
+- Latency prediction using EWMA and 2σ inflation improves budget accuracy and enables proactive conserve-mode.
+- Model failures cluster around rate-limiting (429) and upstream overload (502), indicating need for dynamic routing and backoff strategies.
 - Stale drive goals (market analysis) persist for days because the planner lacks a staleness-triggered escalation or decomposition mechanism.
 - Skill proposals accumulate without promotion criteria or ownership, creating a backlog where valuable ideas (e.g., automated validation harness) never
 - Path-resolution failures recur across hand actions because relative paths are resolved against inconsistent working directories instead of a canonical
@@ -51,11 +56,6 @@
 - The reflex-driven model upgrade (cortex-upgrade-reflex-neue-modelle-autom.py) converged successfully, proving that automated model substitution can se
 - Upstream provider overload (HTTP 502 from Nvidia) indicates that model routing must treat provider health as a first-class scheduling constraint, not 
 - Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making aggressive retry logic without backoff a systemic reliabilit
-- Five skill proposals were generated in one cycle but none were converted to executable skills, confirming a structural bottleneck in proposal-to-imple
-- Simulation-applied delta logging was proposed but never implemented, leaving critique-execution gaps invisible and unmeasured in real time.
-- Local-first execution proposals were logged but never validated against actual tool-call patterns, revealing a gap between policy intent and runtime e
-- The 'Marktanalyse' goal was marked stale and converged via reflex without a score, suggesting completion criteria are too loosely defined or unenforce
-- Repeated 429 errors on z-ai/glm-5.2:free and 502 on nvidia/nemotron-3-ultra-550b-a55b:free indicate systemic provider-side rate limiting and overload,
 
 ---
 
