@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7646 Fakten** · Stand 2026-08-31 00:52 UTC · aktualisiert bei jedem Herzschlag
+**7651 Fakten** · Stand 2026-08-31 00:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3780
+- **dream:** 3785
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831005608:5:fe30be`
+*31.08. 00:56 UTC · Quelle: dream*
+
+Market analysis results remain unused due to missing integration between swarm output and decision-making workflows.
+
+### `dream:20260831005608:4:f7209b`
+*31.08. 00:56 UTC · Quelle: dream*
+
+Swarm convergence in 1 cycle suggests max_cycles=2 is sufficient to bound compute cost without sacrificing quality.
+
+### `dream:20260831005608:3:90ddcd`
+*31.08. 00:56 UTC · Quelle: dream*
+
+Destructive operations (os.system/subprocess) lack sandboxing, leading to silent failures when paths are unresolved.
+
+### `dream:20260831005608:2:80a9a7`
+*31.08. 00:56 UTC · Quelle: dream*
+
+Nemotron latency spikes (77-125s) exceed acceptable SLA thresholds and cause pipeline stalls, necessitating timeout-based failover.
+
+### `dream:20260831005608:1:f0f64e`
+*31.08. 00:56 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limit exhaustion requiring model quarantine after 3 consecutive failures.
 
 ### `dream:20260831005001:5:4bb18f`
 *31.08. 00:50 UTC · Quelle: dream*
