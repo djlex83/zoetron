@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Batch application of simulation revisions reduces total API calls versus iterative single-revision cycles.
+- Skill proposals accumulate faster than implementation, creating a capability gap despite known solutions.
+- Relative path resolution in hand actions fails silently when ZOETRON_DATA context shifts.
+- Working model (nemotron-3-ultra) exhibits high latency variance (18-50s) making time-bounded planning unreliable.
+- Free-tier model endpoints repeatedly hit 429 rate limits causing cascading failures across tasks.
 - Simulation revisions applied one-at-a-time cause redundant re-attempts; batching all revisions before retry improves convergence efficiency.
 - Stale market analysis data remains unused because there is no automated pipeline to convert it into actionable execution steps.
 - Model performance varies significantly under load — nemotron-3-ultra-550b-a55b showed acceptable latency (8.2s) while others failed with 429 or 502 er
@@ -51,11 +56,6 @@
 - Swarm cycles lack a hard convergence gate, allowing infinite iteration without quality improvement.
 - Skill proposals accumulate but remain untested because the system lacks an automated 'proposal-to-validation' pipeline.
 - Model provider rate limits (429) and upstream overloads (502) are the dominant failure mode, making single-model reliance untenable.
-- Simulation-revision loops are proposed with risk thresholds but lack a gate to enforce application before task completion.
-- Stale work (market analysis) persists for days while new skills accumulate unused, indicating a prioritization and closure deficit.
-- Multiple skill proposals for retry logic, circuit breaking, and model rotation exist but remain unimplemented, revealing a proposal-execution gap.
-- High latency of fallback models (18-27s) creates a reliability-speed tradeoff that current routing doesn't optimize.
-- Rate limiting (429 errors) on specific models is the dominant failure mode, causing repeated fallback to slower but reliable models.
 
 ---
 

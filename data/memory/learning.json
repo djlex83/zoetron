@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 10:01:37",
+ "stand": "2026-08-31 10:08:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -75,6 +75,12 @@
    "quote": 1.0
   },
   {
+   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -82,12 +88,6 @@
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -183,12 +183,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.805,
+ "haende_quote": 0.81,
  "simulationen_angewandt": 21,
  "swarm_scores": {
-  "n": 25,
+  "n": 24,
   "best": 9.0,
-  "schnitt": 5.44
+  "schnitt": 5.62
  },
  "score_nach_ziel_typ": {
   "analyse": {

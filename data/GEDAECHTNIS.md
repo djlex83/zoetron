@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7933 Fakten** · Stand 2026-08-31 10:02 UTC · aktualisiert bei jedem Herzschlag
+**7938 Fakten** · Stand 2026-08-31 10:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4015
+- **dream:** 4020
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831100747:5:9881ea`
+*31.08. 10:07 UTC · Quelle: dream*
+
+Batch application of simulation revisions reduces total API calls versus iterative single-revision cycles.
+
+### `dream:20260831100747:4:550feb`
+*31.08. 10:07 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than implementation, creating a capability gap despite known solutions.
+
+### `dream:20260831100747:3:f51d0d`
+*31.08. 10:07 UTC · Quelle: dream*
+
+Relative path resolution in hand actions fails silently when ZOETRON_DATA context shifts.
+
+### `dream:20260831100747:2:6a7977`
+*31.08. 10:07 UTC · Quelle: dream*
+
+Working model (nemotron-3-ultra) exhibits high latency variance (18-50s) making time-bounded planning unreliable.
+
+### `dream:20260831100747:1:b65bcb`
+*31.08. 10:07 UTC · Quelle: dream*
+
+Free-tier model endpoints repeatedly hit 429 rate limits causing cascading failures across tasks.
 
 ### `dream:20260831100102:5:82283e`
 *31.08. 10:01 UTC · Quelle: dream*
