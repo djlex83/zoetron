@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8287 Fakten** · Stand 2026-08-31 19:54 UTC · aktualisiert bei jedem Herzschlag
+**8292 Fakten** · Stand 2026-08-31 20:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4290
+- **dream:** 4295
 - **swarm_artifact:** 1819
 - **last_swarm_critique:** 654
 - **anti_pattern:** 553
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831200125:5:f8bb98`
+*31.08. 20:01 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers conserve mode that starves validation loops, letting path and model errors propagate unchecked.
+
+### `dream:20260831200125:4:abacff`
+*31.08. 20:01 UTC · Quelle: dream*
+
+Model fallback chains collapse when all providers hit rate limits simultaneously, revealing missing quota-aware routing.
+
+### `dream:20260831200125:3:89ba8a`
+*31.08. 20:01 UTC · Quelle: dream*
+
+Skill proposals accumulate without a deployment pipeline, creating a proposal-to-practice gap that wastes design effort.
+
+### `dream:20260831200125:2:dcee0c`
+*31.08. 20:01 UTC · Quelle: dream*
+
+Path resolution fails when skills use relative paths instead of ZOETRON_DATA-rooted absolute paths, causing silent zero-result executions.
+
+### `dream:20260831200125:1:07f1e7`
+*31.08. 20:01 UTC · Quelle: dream*
+
+Free-tier model APIs fail catastrophically under concurrent load due to shared rate limits across all consumers.
 
 ### `dream:20260831195322:5:b457a9`
 *31.08. 19:53 UTC · Quelle: dream*

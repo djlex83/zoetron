@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 20:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High metabolic stress (1.0) triggers conserve mode that starves validation loops, letting path and model errors propagate unchecked.
+- Model fallback chains collapse when all providers hit rate limits simultaneously, revealing missing quota-aware routing.
+- Skill proposals accumulate without a deployment pipeline, creating a proposal-to-practice gap that wastes design effort.
+- Path resolution fails when skills use relative paths instead of ZOETRON_DATA-rooted absolute paths, causing silent zero-result executions.
+- Free-tier model APIs fail catastrophically under concurrent load due to shared rate limits across all consumers.
 - Latency variability in working models (43s to 55s) makes interactive loops unpredictable, requiring latency-aware model selection for consistent user 
 - The reflex consolidation mechanism converges reliably, but its effectiveness is bottlenecked by the underlying model call layer, which is the single p
 - Stale data (unfinished goals, outdated analyses, unpruned facts) accumulates over time because there is no time-based expiration or forced review cycl
@@ -51,11 +56,6 @@
 - Swarm evolution cycles consistently fail to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptance t
 - The nvidia/nemotron-3-ultra fallback exhibits high latency variance (7.4–16.6 s) and token inefficiency (output often < input), indicating it is a poo
 - The z-ai/glm-5.2:free model fails deterministically with 429 rate-limit errors, making it unusable as a primary provider without aggressive request sp
-- Calibration prediction matched actual score exactly (6/10), suggesting the scoring heuristic is well-calibrated for this task type.
-- Evolutionary iteration improved artifact score from 6 to 9 by addressing critic-identified security risks in validation code.
-- Only inclusionai/ling-3.0-flash-fin:free succeeded consistently (2/2 attempts) with reasonable latency (10-24s).
-- Nvidia nemotron fails with upstream 502 errors, indicating provider-side instability beyond rate limits.
-- Rate limiting (HTTP 429) is the dominant failure mode across 5/6 free models, making them unreliable for production use.
 
 ---
 
