@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8231 Fakten** · Stand 2026-08-31 18:15 UTC · aktualisiert bei jedem Herzschlag
+**8248 Fakten** · Stand 2026-08-31 18:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4255
-- **swarm_artifact:** 1807
-- **last_swarm_critique:** 652
-- **anti_pattern:** 551
-- **last_swarm_goal:** 401
-- **strategy:** 296
-- **tool:** 92
+- **dream:** 4260
+- **swarm_artifact:** 1813
+- **last_swarm_critique:** 653
+- **anti_pattern:** 553
+- **last_swarm_goal:** 402
+- **strategy:** 297
+- **tool:** 93
 - **hand_result:** 87
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-verstehen-und-vermeiden`
+*31.08. 18:33 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler verstehen und vermeiden'. Datei: data/tools/modellfehler-verstehen-und-vermeiden.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler verstehen u:2`
+*31.08. 18:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [5, 4, 7]): Capability-basiertes Sandboxing mit Bytecode-Interpretation - Falls Code-Ausführung unvermeidbar ist, implementiere einen eigenen eingeschränkten Bytecode-Interpreter statt exec(). Parse den Code in CPython-Bytecode, 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler verstehen u:1`
+*31.08. 18:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Semantische Fehlerklassifikation mit Embeddings (ML-basierter Ansatz) - Ersetze die naive Keyword-basierte classify_error() durch ein Sentence-Transformer-Embedding-Modell. Trainiere oder lade ein vortrainiertes Model
+
+### `last_swarm_critique`
+*31.08. 18:32 UTC · Quelle: critic*
+
+score=6; issues=Sicherheitsrisiko: _validate_python_imports fuehrt beliebigen Model-Output via exec() aus, was Code-Injection-Exploitation ermoeglicht; Naive Keyword-basierte Klassifikation in classify_error() mit hoher False-Positive-/False-Negative-Rate - ke
+
+### `last_swarm_goal`
+*31.08. 18:24 UTC · Quelle: system*
+
+Modellfehler verstehen und vermeiden
+
+### `dream:20260831182351:5:998b90`
+*31.08. 18:23 UTC · Quelle: dream*
+
+Duplicate skill proposals waste cycles; semantic hashing (embedding + keyword signature) can deduplicate at ingestion.
+
+### `dream:20260831182351:4:18a196`
+*31.08. 18:23 UTC · Quelle: dream*
+
+Path resolution failures in skills stem from missing PathContract enforcement at registration time.
+
+### `dream:20260831182351:3:6ea56b`
+*31.08. 18:23 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than deployment; an ExecutionGapTracker with age alerts would close the proposal-to-production loop.
+
+### `dream:20260831182351:2:637184`
+*31.08. 18:23 UTC · Quelle: dream*
+
+Fallback to nemotron-3-ultra succeeds but adds 20-30s latency per call, making parallel batching essential for multi-step pipelines.
+
+### `dream:20260831182351:1:95d9d8`
+*31.08. 18:23 UTC · Quelle: dream*
+
+Recurring 429 errors on glm-5.2:free indicate hard quota limits that require proactive circuit-breaking rather than reactive fallback.
 
 ### `tool:verbundene-traeume-nach-neuen-fuehigkeit`
 *31.08. 18:14 UTC · Quelle: hands*
