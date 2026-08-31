@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8101 Fakten** · Stand 2026-08-31 14:11 UTC · aktualisiert bei jedem Herzschlag
+**8106 Fakten** · Stand 2026-08-31 14:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4175
+- **dream:** 4180
 - **swarm_artifact:** 1783
 - **last_swarm_critique:** 648
 - **anti_pattern:** 545
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831142055:5:f3b20a`
+*31.08. 14:20 UTC · Quelle: dream*
+
+Latency and token prediction drift degrades routing decisions, so continuous calibration against actual task outcomes is required for reliable model selection.
+
+### `dream:20260831142055:4:08c76a`
+*31.08. 14:20 UTC · Quelle: dream*
+
+Pre-flight validation of paths, executables, shebangs, and import dependencies prevents wasted model calls on malformed or broken configurations.
+
+### `dream:20260831142055:3:01c4f5`
+*31.08. 14:20 UTC · Quelle: dream*
+
+A persistent gap between 75 skill proposals and near-zero implementations reveals missing validation and tracking infrastructure as the root cause, not lack of ideas.
+
+### `dream:20260831142055:2:9a8604`
+*31.08. 14:20 UTC · Quelle: dream*
+
+Reflex-based execution paths converge reliably when full model inference is unavailable, making reflex the resilient fallback for well-defined tasks.
+
+### `dream:20260831142055:1:387354`
+*31.08. 14:20 UTC · Quelle: dream*
+
+API rate limiting (429) and service overload (502) are systemic failure modes across multiple providers, requiring circuit breakers and exponential backoff instead of naive retries.
 
 ### `dream:20260831140928:5:32926c`
 *31.08. 14:09 UTC · Quelle: dream*
