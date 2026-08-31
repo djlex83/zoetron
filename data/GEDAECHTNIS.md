@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7953 Fakten** · Stand 2026-08-31 10:27 UTC · aktualisiert bei jedem Herzschlag
+**7958 Fakten** · Stand 2026-08-31 10:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4035
+- **dream:** 4040
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831103328:5:3ab7bc`
+*31.08. 10:33 UTC · Quelle: dream*
+
+Model latency variance (7-9s for successful calls) combined with frequent 429s means throughput depends on concurrent model pooling with per-model cooldown state, not sequential fallback.
+
+### `dream:20260831103328:4:0628bf`
+*31.08. 10:33 UTC · Quelle: dream*
+
+Relative path failures in script interfaces recur because ZOETRON_DATA is not enforced as the single source of truth for filesystem roots.
+
+### `dream:20260831103328:3:29a86b`
+*31.08. 10:33 UTC · Quelle: dream*
+
+The reflex-driven model upgrade (cortex-upgrade-reflex-neue-modelle-autom.py) converged successfully, proving that automated model substitution can self-heal routing failures when triggered by failure signals.
+
+### `dream:20260831103328:2:5953ea`
+*31.08. 10:33 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260831103328:1:416a1d`
+*31.08. 10:33 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making aggressive retry logic without backoff a systemic reliability risk.
 
 ### `dream:20260831102625:5:292618`
 *31.08. 10:26 UTC · Quelle: dream*

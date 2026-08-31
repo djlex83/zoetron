@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency variance (7-9s for successful calls) combined with frequent 429s means throughput depends on concurrent model pooling with per-model coo
+- Relative path failures in script interfaces recur because ZOETRON_DATA is not enforced as the single source of truth for filesystem roots.
+- The reflex-driven model upgrade (cortex-upgrade-reflex-neue-modelle-autom.py) converged successfully, proving that automated model substitution can se
+- Upstream provider overload (HTTP 502 from Nvidia) indicates that model routing must treat provider health as a first-class scheduling constraint, not 
+- Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making aggressive retry logic without backoff a systemic reliabilit
 - Five skill proposals were generated in one cycle but none were converted to executable skills, confirming a structural bottleneck in proposal-to-imple
 - Simulation-applied delta logging was proposed but never implemented, leaving critique-execution gaps invisible and unmeasured in real time.
 - Local-first execution proposals were logged but never validated against actual tool-call patterns, revealing a gap between policy intent and runtime e
@@ -51,11 +56,6 @@
 - Prediction calibration is absent, leading to unchecked drift between estimated and actual task outcomes.
 - Simulation critiques are not reliably applied without a mandatory revision gate blocking task completion.
 - External model dependencies cause cascading failures when rate-limited or overloaded, requiring local-first fallbacks and circuit breakers.
-- Local-first execution of deterministic hand actions reduces unnecessary model calls and improves system reliability.
-- Model selection lacks real-time performance feedback, leading to repeated failures on overloaded or rate-limited endpoints.
-- Stale market analyses persist because there is no automated pipeline converting insights into executable actions.
-- High-latency models like nvidia/nemotron-3-ultra-550b benefit from micro-step decomposition with checkpointing to maintain progress under timeouts.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limit fragility requiring adaptive routing and backoff strategies.
 
 ---
 
