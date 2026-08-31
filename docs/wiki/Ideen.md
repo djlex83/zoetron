@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,14 +16,14 @@
 - Implement exponential backoff with jitter and a circuit breaker that disables a model after three consecutive  *(hatte die Idee 4×)*
 - Create a simulation-revision skill that iteratively applies fixes until risk count falls below a configurable  *(hatte die Idee 4×)*
 - Add a calibration monitor that logs prediction vs. actual per task type and triggers retraining when MAE excee *(hatte die Idee 4×)*
+- Enforce absolute-path contract: all I/O actions must call resolve_path(rel, ZOETRON_DATA) -> abs_path with exi *(hatte die Idee 4×)*
 - Define explicit acceptance criteria and milestone checkpoints for each drive goal; log progress deltas to enab *(hatte die Idee 3×)*
 - Deploy a model router with per-provider rate-limit counters, 429/502-triggered fallback <2s, and health-check  *(hatte die Idee 3×)*
 - Build a calibration-correction loop that automatically adjusts effort estimates by +100% for simulation-to-pra *(hatte die Idee 3×)*
-- Create a critic-driven evolution harness that generates 3 variants of any artifact, scores them against a rubr *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals lack automated promotion-to-commitment pipeline causing implementation drift despite reflex execution capability.
+- Multiple independent skill proposals converge on identical resilience primitives (circuit breaker, EWMA, fallback chain) confirming architectural nece
+- Silent degradation manifests as 200-status empty responses necessitating pre-flight probe validation before production traffic.
+- Latency variance across models spans 10x (6s–60s) demanding real-time health-score routing over static priority.
+- Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) failures requiring circuit-breaker isolation.
 - SwarmCheckpointLogger and ConvergenceGate proposals expose missing durability: no resume-from-checkpoint, no objective completion criteria.
 - ZOETRON_DATA path singleton and absolute-path contract proposals indicate recurring I/O failures from relative paths crossing tool boundaries.
 - Multiple skill proposals (ModelRouter, ModelResilienceLayer, concurrent pool) address identical resilience gaps but remain unimplemented, showing prop
@@ -51,11 +56,6 @@
 - Failover to nemotron-3-ultra-550b-a55b resolves availability but introduces latency variance (14–36s) that can cascade into downstream timeouts if unm
 - Skill proposals improve in specificity across iterations but remain unverified without an automated fast-feedback test harness to convert ideas into p
 - External API rate-limiting (429) on z-ai/glm-5.2:free is a persistent failure mode, not transient, requiring architectural resilience beyond simple re
-- Multiple skill proposals exist but drive goal 'Vorgeschlagene Fähigkeiten in echte Handlungen umsetzen' reveals systematic proposal-to-implementation 
-- Zero pruning events across cycles suggests pruning thresholds are misconfigured or memory pressure is absent.
-- Reflex mode successfully completed market analysis using local Python script, validating local-first execution over model calls.
-- Fallback model nvidia/nemotron-3-ultra shows high latency variance (21-62s) requiring latency-aware routing and timeout budgets.
-- Recurring 429 errors on z-ai/glm-5.2:free indicate missing exponential backoff and circuit-breaker logic for rate-limited providers.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8013 Fakten** · Stand 2026-08-31 11:49 UTC · aktualisiert bei jedem Herzschlag
+**8018 Fakten** · Stand 2026-08-31 11:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4095
+- **dream:** 4100
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831115454:5:f545cd`
+*31.08. 11:54 UTC · Quelle: dream*
+
+Skill proposals lack automated promotion-to-commitment pipeline causing implementation drift despite reflex execution capability.
+
+### `dream:20260831115454:4:b31183`
+*31.08. 11:54 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on identical resilience primitives (circuit breaker, EWMA, fallback chain) confirming architectural necessity.
+
+### `dream:20260831115454:3:0dc629`
+*31.08. 11:54 UTC · Quelle: dream*
+
+Silent degradation manifests as 200-status empty responses necessitating pre-flight probe validation before production traffic.
+
+### `dream:20260831115454:2:65ba61`
+*31.08. 11:54 UTC · Quelle: dream*
+
+Latency variance across models spans 10x (6s–60s) demanding real-time health-score routing over static priority.
+
+### `dream:20260831115454:1:403629`
+*31.08. 11:54 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) failures requiring circuit-breaker isolation.
 
 ### `dream:20260831114735:5:ff0dd1`
 *31.08. 11:47 UTC · Quelle: dream*
