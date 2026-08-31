@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8217 Fakten** · Stand 2026-08-31 17:48 UTC · aktualisiert bei jedem Herzschlag
+**8231 Fakten** · Stand 2026-08-31 18:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4250
-- **swarm_artifact:** 1801
-- **last_swarm_critique:** 651
+- **dream:** 4255
+- **swarm_artifact:** 1807
+- **last_swarm_critique:** 652
 - **anti_pattern:** 551
-- **last_swarm_goal:** 400
+- **last_swarm_goal:** 401
 - **strategy:** 296
-- **tool:** 91
+- **tool:** 92
 - **hand_result:** 87
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:verbundene-traeume-nach-neuen-fuehigkeit`
+*31.08. 18:14 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Verbundene Traeume nach neuen Fuehigkeiten durchsuchen'. Datei: data/tools/verbundene-traeume-nach-neuen-fuehigkeit.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*31.08. 18:14 UTC · Quelle: critic*
+
+score=8; issues=Starke Abhaengigkeit von Fallback-Mechanismen: Kernfunktionalitaet setzt zoetron-Module voraus, die möglicherweise nicht verfuegbar sind; Heuristische Entitaet-/Themen-Extraktion statt echtem NER; Few-Shot-Prompt-Klassifikation fuer Skill-Typ r
+
+### `last_swarm_goal`
+*31.08. 18:03 UTC · Quelle: system*
+
+Verbundene Traeume nach neuen Fuehigkeiten durchsuchen
+
+### `dream:20260831180258:5:b98a42`
+*31.08. 18:02 UTC · Quelle: dream*
+
+Simulation and hand-action tools (tor, hand_action) succeeded deterministically, confirming non-LLM subsystems remain reliable under LLM quota pressure.
+
+### `dream:20260831180258:4:20e44d`
+*31.08. 18:02 UTC · Quelle: dream*
+
+The fallback cascade (Nemotron → GLM → Gemma → Poolside → Ling) burns ~30s per failed model before reaching a working one, making sequential retry costly.
+
+### `dream:20260831180258:3:47f1bc`
+*31.08. 18:02 UTC · Quelle: dream*
+
+InclusionAI Ling 3.0 Flash Fin succeeded on first attempt with high token throughput (4875 out), suggesting it operates on a separate quota pool or higher priority tier.
+
+### `dream:20260831180258:2:1a6a3f`
+*31.08. 18:02 UTC · Quelle: dream*
+
+Nvidia Nemotron shows bimodal reliability: successful calls complete in 35-106s, but upstream 502 errors ('Service temporarily overloaded') indicate provider-side capacity saturation.
+
+### `dream:20260831180258:1:80076b`
+*31.08. 18:02 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) from OpenRouter is the dominant failure mode across all free-tier models, indicating shared quota exhaustion rather than model-specific issues.
 
 ### `tool:marktwissen-auf-den-neuesten-stand-bring`
 *31.08. 17:47 UTC · Quelle: hands*
