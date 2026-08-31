@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated failures on the same model within seconds indicate lack of effective circuit breaking or failover mechanisms.
+- Free-tier models consistently fail under load, implying resource contention or aggressive rate limiting on shared endpoints.
+- Latency spikes (8.3s to 11.3s) on successful calls correlate with degraded model performance, suggesting throttling before outright failure.
+- Models returning 200 with empty choices (e.g., Nvidia upstream overload) reveal silent failure modes that bypass standard error handling.
+- 429 errors dominate across multiple providers, indicating systemic rate-limit exhaustion rather than isolated model issues.
 - Skill proposals are generated but not deduplicated or prioritized by novelty or impact, leading to redundant or low-value suggestions being surfaced.
 - Drive goals related to error reduction, artifact cleanup, and skill activation remain unlinked to concrete skill implementations, creating execution g
 - Latency and token efficiency vary significantly between successful model calls, suggesting that lightweight tasks should route to faster, cheaper mode
@@ -51,11 +56,6 @@
 - Calibration predicted a score of 6 against an actual score of 1 (6x overestimate), revealing a dangerous confidence inflation that could misguide futu
 - Artifacts consistently fail to execute in the sandbox (hand_action exit 1, gelesen=0, traceback at line 102), meaning generated code is not validated 
 - Rate-limited models (glm-5.2 returning 429) failed repeatedly without fallback, indicating the absence of a circuit-breaker that switches providers af
-- Metabolism signaled conserve mode with a budget of max 3 tasks and 1 iteration, yet the system continued attempting multiple model calls, suggesting b
-- The artifact itself does not run (Traceback in TOR check), indicating that artifacts must be validated for executability before being queued for deplo
-- The hand_action step failed silently (exit 1, 0 bytes read, no error message), revealing that execution-layer tools lack proper error reporting and re
-- The simulation's 'revise' verdict with 5 identified risks prevented a flawed execution, proving that pre-execution validation gates save wasted resour
-- Free-tier API models on OpenRouter consistently hit 429 rate limits and 502 upstream errors, making a known-working model whitelist with exponential b
 
 ---
 

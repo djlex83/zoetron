@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8121 Fakten** · Stand 2026-08-31 14:47 UTC · aktualisiert bei jedem Herzschlag
+**8126 Fakten** · Stand 2026-08-31 14:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4195
+- **dream:** 4200
 - **swarm_artifact:** 1783
 - **last_swarm_critique:** 648
 - **anti_pattern:** 545
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831145434:5:0be140`
+*31.08. 14:54 UTC · Quelle: dream*
+
+Repeated failures on the same model within seconds indicate lack of effective circuit breaking or failover mechanisms.
+
+### `dream:20260831145434:4:a4af2b`
+*31.08. 14:54 UTC · Quelle: dream*
+
+Free-tier models consistently fail under load, implying resource contention or aggressive rate limiting on shared endpoints.
+
+### `dream:20260831145434:3:b0d12f`
+*31.08. 14:54 UTC · Quelle: dream*
+
+Latency spikes (8.3s to 11.3s) on successful calls correlate with degraded model performance, suggesting throttling before outright failure.
+
+### `dream:20260831145434:2:985ac8`
+*31.08. 14:54 UTC · Quelle: dream*
+
+Models returning 200 with empty choices (e.g., Nvidia upstream overload) reveal silent failure modes that bypass standard error handling.
+
+### `dream:20260831145434:1:a4ea32`
+*31.08. 14:54 UTC · Quelle: dream*
+
+429 errors dominate across multiple providers, indicating systemic rate-limit exhaustion rather than isolated model issues.
 
 ### `dream:20260831144553:5:e76b1d`
 *31.08. 14:45 UTC · Quelle: dream*
