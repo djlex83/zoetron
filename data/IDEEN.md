@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 13:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 13:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failure rate approaches 50%, showing monitoring blind spots for external dependencies.
+- Multiple skill proposals target model reliability (router, health tracker, fallback chain, scheduler, circuit breaker) but remain undeployed proposals
+- Five drive goals identify stale data, high failure rate, and untested skills, yet no autonomous validation loop exists to close the gap.
+- Latency variance (25-68s) on nvidia/nemotron-3-ultra indicates absent SLA-aware routing, letting degraded instances serve production traffic.
+- Recurring 429 errors on z-ai/glm-5.2:free reveal single-model dependency without quota-aware rotation, causing predictable cascade failures.
 - Model latency variance (47s vs 147s) on the same endpoint suggests silent degradation or queueing effects that passive monitoring misses, requiring ac
 - Absolute path contract violations recur across proposals because path resolution is enforced only at hand-action boundary, not at skill composition ti
 - Drive goals persistently signal execution gaps (stale market analysis, untested skill proposals) while self-diagnosis reports zero internal errors, ex
@@ -51,11 +56,6 @@
 - The fallback model (nemotron-3-ultra) works reliably but at 86–147s latency, exposing a quality-vs-speed tradeoff that has no automated resolution str
 - Skill proposals accumulate without being tested or promoted to real skills, creating a growing backlog of unvalidated ideas that never improve system 
 - External LLM API rate limits (429) are a recurring, undetected failure mode that self-diagnosis misses because it only checks internal organ errors, n
-- Relative-path usage in I/O actions creates environment-dependent failures that an absolute-path contract at the hand-action boundary would eliminate.
-- Latency on the working model varies 94–122 seconds, indicating no predictive routing or warm-connection pool to stabilize tail latency.
-- Seventy-five skill proposals exist but the proposal-to-implementation loop lacks a test harness and deployment tracker, causing stagnation.
-- Self-diagnosis only checks internal organs and never probes external API health, so quota exhaustion goes undetected until runtime.
-- Repeated 429 errors on the same model endpoint reveal a missing circuit-breaker and automatic fallback mechanism.
 
 ---
 
