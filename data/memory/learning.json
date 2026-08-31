@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 19:28:42",
+ "stand": "2026-08-31 19:41:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 7,
    "erfolge": 0,
@@ -57,9 +51,21 @@
    "quote": 1.0
   },
   {
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -73,12 +79,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",

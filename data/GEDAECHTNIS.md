@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8272 Fakten** · Stand 2026-08-31 19:29 UTC · aktualisiert bei jedem Herzschlag
+**8277 Fakten** · Stand 2026-08-31 19:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4275
+- **dream:** 4280
 - **swarm_artifact:** 1819
 - **last_swarm_critique:** 654
 - **anti_pattern:** 553
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831194021:5:eb6c5b`
+*31.08. 19:40 UTC · Quelle: dream*
+
+Calibration prediction matched actual score exactly (6/10), suggesting the scoring heuristic is well-calibrated for this task type.
+
+### `dream:20260831194021:4:615a84`
+*31.08. 19:40 UTC · Quelle: dream*
+
+Evolutionary iteration improved artifact score from 6 to 9 by addressing critic-identified security risks in validation code.
+
+### `dream:20260831194021:3:4b83f5`
+*31.08. 19:40 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free succeeded consistently (2/2 attempts) with reasonable latency (10-24s).
+
+### `dream:20260831194021:2:2dd90c`
+*31.08. 19:40 UTC · Quelle: dream*
+
+Nvidia nemotron fails with upstream 502 errors, indicating provider-side instability beyond rate limits.
+
+### `dream:20260831194021:1:88aefa`
+*31.08. 19:40 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across 5/6 free models, making them unreliable for production use.
 
 ### `last_swarm_critique`
 *31.08. 19:28 UTC · Quelle: critic*
