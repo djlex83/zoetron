@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 15:49:44",
+ "stand": "2026-08-31 16:01:14",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -75,6 +75,12 @@
    "quote": 0.0
   },
   {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -106,12 +112,6 @@
   },
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -171,7 +171,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.853,
+ "haende_quote": 0.854,
  "simulationen_angewandt": 14,
  "swarm_scores": {
   "n": 19,
