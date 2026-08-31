@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7968 Fakten** · Stand 2026-08-31 10:47 UTC · aktualisiert bei jedem Herzschlag
+**7973 Fakten** · Stand 2026-08-31 10:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4050
+- **dream:** 4055
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831105608:5:b095b6`
+*31.08. 10:56 UTC · Quelle: dream*
+
+Market analysis insights and proposed skills accumulate stale without conversion to executable tasks or implemented capabilities.
+
+### `dream:20260831105608:4:a01b0b`
+*31.08. 10:56 UTC · Quelle: dream*
+
+No circuit breaker, exponential backoff, or latency-aware fallback ordering exists despite repeated 429 failures across sessions.
+
+### `dream:20260831105608:3:f05f57`
+*31.08. 10:56 UTC · Quelle: dream*
+
+Local hand actions (file ops, scripts) consistently succeed in <0.3s, yet model invocations are still attempted first for applicable tasks.
+
+### `dream:20260831105608:2:af74e4`
+*31.08. 10:56 UTC · Quelle: dream*
+
+Multiple skill proposals for model routing, local-first execution, and revision gates exist but remain unimplemented, creating a proposal-execution gap.
+
+### `dream:20260831105608:1:cb73a8`
+*31.08. 10:56 UTC · Quelle: dream*
+
+Rate-limited primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while fallback (Nemotron) succeeds but with high latency variance (24-75s).
 
 ### `dream:20260831104550:5:b860eb`
 *31.08. 10:45 UTC · Quelle: dream*

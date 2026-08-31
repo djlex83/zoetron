@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Market analysis insights and proposed skills accumulate stale without conversion to executable tasks or implemented capabilities.
+- No circuit breaker, exponential backoff, or latency-aware fallback ordering exists despite repeated 429 failures across sessions.
+- Local hand actions (file ops, scripts) consistently succeed in <0.3s, yet model invocations are still attempted first for applicable tasks.
+- Multiple skill proposals for model routing, local-first execution, and revision gates exist but remain unimplemented, creating a proposal-execution ga
+- Rate-limited primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while fallback (Nemotron) succeeds but with high latency variance (24-75s).
 - Drive signals like 'failure', 'stale', and 'gap' effectively prioritize skill proposals and system improvements.
 - Automated skill validation with regression testing prevents performance degradation from new skill integration.
 - Standardizing path resolution prevents I/O errors and ensures consistent data access across hand actions.
@@ -51,11 +56,6 @@
 - Path-resolution failures recur across hand actions because relative paths are resolved against inconsistent working directories instead of a canonical
 - Multiple independent proposals converge on circuit-breaker patterns, latency-aware routing, and health scorecards — indicating the architecture lacks 
 - Rate-limited model endpoints (z-ai/glm-5.2:free) consistently fail under load while fallback models (nvidia/nemotron-3-ultra) succeed, proving single-
-- Model latency variance (7-9s for successful calls) combined with frequent 429s means throughput depends on concurrent model pooling with per-model coo
-- Relative path failures in script interfaces recur because ZOETRON_DATA is not enforced as the single source of truth for filesystem roots.
-- The reflex-driven model upgrade (cortex-upgrade-reflex-neue-modelle-autom.py) converged successfully, proving that automated model substitution can se
-- Upstream provider overload (HTTP 502 from Nvidia) indicates that model routing must treat provider health as a first-class scheduling constraint, not 
-- Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making aggressive retry logic without backoff a systemic reliabilit
 
 ---
 
