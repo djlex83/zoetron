@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7893 Fakten** · Stand 2026-08-31 09:12 UTC · aktualisiert bei jedem Herzschlag
+**7898 Fakten** · Stand 2026-08-31 09:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3975
+- **dream:** 3980
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831091634:5:074348`
+*31.08. 09:16 UTC · Quelle: dream*
+
+Calibration remains accurate (predicted=actual=6) yet the goal stays unconverged, revealing that scoring does not reflect task completion.
+
+### `dream:20260831091634:4:661dbc`
+*31.08. 09:16 UTC · Quelle: dream*
+
+Swarm execution evolves roles but fails to converge after 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
+
+### `dream:20260831091634:3:ff6fcd`
+*31.08. 09:16 UTC · Quelle: dream*
+
+Simulation recommends revisions (3 risks, 3 revisions) but zero are applied, indicating a broken feedback loop between critique and execution.
+
+### `dream:20260831091634:2:9222bb`
+*31.08. 09:16 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model succeeds where others fail but incurs 19s latency, making it a reliable but slow fallback.
+
+### `dream:20260831091634:1:d83ea8`
+*31.08. 09:16 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple free-tier models is the primary systemic bottleneck, not model capability.
 
 ### `dream:20260831091039:5:31ce5c`
 *31.08. 09:10 UTC · Quelle: dream*

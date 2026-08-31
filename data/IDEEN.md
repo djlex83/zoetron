@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
@@ -35,12 +35,17 @@
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Marktanalyse sauber zu Ende bringen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Skills testen und nutzen *(wieder aufgegriffen: 2×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 2×)*
+- Träume mit Wissen verbinden *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration remains accurate (predicted=actual=6) yet the goal stays unconverged, revealing that scoring does not reflect task completion.
+- Swarm execution evolves roles but fails to converge after 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
+- Simulation recommends revisions (3 risks, 3 revisions) but zero are applied, indicating a broken feedback loop between critique and execution.
+- The inclusionai/ling-3.0-flash-fin:free model succeeds where others fail but incurs 19s latency, making it a reliable but slow fallback.
+- Rate limiting (429 errors) across multiple free-tier models is the primary systemic bottleneck, not model capability.
 - Local hand actions (0.19s, zero errors) are orders of magnitude faster and more reliable than any model call.
 - Calibration remains accurate (predicted=actual=6), indicating the estimator is well-tuned for this task class.
 - Simulation-driven revision loops effectively reduce risk: initial 5 risks dropped to 2 applied revisions, yielding a working 274-line Python artifact.
@@ -51,11 +56,6 @@
 - High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing multi-step recovery from transient failures.
 - Hand actions fail when relative paths diverge from the canonical ZOETRON_DATA root, causing silent zero-byte reads.
 - Rate-limit errors (429) cascade across multiple free-tier models simultaneously, making model diversity alone insufficient without request pacing.
-- Skill-conversion scripts lack structured error contracts, forcing manual debugging instead of automated retry.
-- Reflex-driven goal renewal succeeded without LLM calls, proving deterministic fallbacks can unblock the system during model outages.
-- First-request latency on cold models is high (14s) but drops sharply on warm reuse (5.3s), confirming cold-start penalty.
-- poolside/laguna-s-2.1:free is the only model that reliably succeeds, making it the de facto backbone for free-tier operation.
-- Multiple free-tier models (GLM, Nemotron, Gemma) consistently fail with 429 rate limits and 502 overload errors under load.
 
 ---
 
