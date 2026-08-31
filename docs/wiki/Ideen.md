@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 15:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 15:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning events despite repeated failures indicates error events aren't being converted to learnable memory traces.
+- Successful fallback model (ling-3.0-flash-fin) has distinct architecture from failed models, suggesting provider diversity matters more than model cou
+- The system generates skill proposals faster than it validates them, creating a proposal-validation gap that wastes generation effort.
+- Reflex-mode execution using local tools succeeds when all LLM providers are rate-limited, proving architectural value of non-LLM fallback paths.
+- Free tier models from different providers fail simultaneously on 429 errors, indicating shared rate-limiting infrastructure rather than independent qu
 - Successful model responses (e.g., inclusionai/ling-3.0-flash-fin) are not cached, causing redundant API calls that worsen rate-limit storms.
 - Selbstdiagnose reports zero organ errors despite repeated model failures, indicating diagnostic blind spots for external API degradation.
 - Skill proposals accumulate in memory but lack a validation pipeline to test them in production, creating a proposal-deployment gap.
@@ -51,11 +56,6 @@
 - Observed latency and token variance across models (e.g., 19-20s, 500-1400 input tokens) demands continuous calibration to keep routing weights accurat
 - The reflex-action loop (detect failure → analyze → propose skill → test → deploy) converges reliably when each step is instrumented and sandboxed.
 - Free-tier model rate limits (429) are a systemic bottleneck requiring provider-agnostic fallback routing with exponential backoff and circuit breakers
-- Repeated failures on the same model within seconds indicate lack of effective circuit breaking or failover mechanisms.
-- Free-tier models consistently fail under load, implying resource contention or aggressive rate limiting on shared endpoints.
-- Latency spikes (8.3s to 11.3s) on successful calls correlate with degraded model performance, suggesting throttling before outright failure.
-- Models returning 200 with empty choices (e.g., Nvidia upstream overload) reveal silent failure modes that bypass standard error handling.
-- 429 errors dominate across multiple providers, indicating systemic rate-limit exhaustion rather than isolated model issues.
 
 ---
 

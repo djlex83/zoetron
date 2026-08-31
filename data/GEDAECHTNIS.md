@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8136 Fakten** · Stand 2026-08-31 15:14 UTC · aktualisiert bei jedem Herzschlag
+**8141 Fakten** · Stand 2026-08-31 15:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4210
+- **dream:** 4215
 - **swarm_artifact:** 1783
 - **last_swarm_critique:** 648
 - **anti_pattern:** 545
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831152038:5:77c2d4`
+*31.08. 15:20 UTC · Quelle: dream*
+
+Zero pruning events despite repeated failures indicates error events aren't being converted to learnable memory traces.
+
+### `dream:20260831152038:4:44d69f`
+*31.08. 15:20 UTC · Quelle: dream*
+
+Successful fallback model (ling-3.0-flash-fin) has distinct architecture from failed models, suggesting provider diversity matters more than model count.
+
+### `dream:20260831152038:3:9f807e`
+*31.08. 15:20 UTC · Quelle: dream*
+
+The system generates skill proposals faster than it validates them, creating a proposal-validation gap that wastes generation effort.
+
+### `dream:20260831152038:2:b915b0`
+*31.08. 15:20 UTC · Quelle: dream*
+
+Reflex-mode execution using local tools succeeds when all LLM providers are rate-limited, proving architectural value of non-LLM fallback paths.
+
+### `dream:20260831152038:1:ca6eaa`
+*31.08. 15:20 UTC · Quelle: dream*
+
+Free tier models from different providers fail simultaneously on 429 errors, indicating shared rate-limiting infrastructure rather than independent quotas.
 
 ### `dream:20260831151257:5:cdf896`
 *31.08. 15:12 UTC · Quelle: dream*
