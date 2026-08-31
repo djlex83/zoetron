@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8248 Fakten** · Stand 2026-08-31 18:34 UTC · aktualisiert bei jedem Herzschlag
+**8253 Fakten** · Stand 2026-08-31 19:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4260
+- **dream:** 4265
 - **swarm_artifact:** 1813
 - **last_swarm_critique:** 653
 - **anti_pattern:** 553
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831190606:5:9147c3`
+*31.08. 19:06 UTC · Quelle: dream*
+
+The system proposes skills faster than it validates them; the gap between proposal and test is the primary bottleneck to reliability improvement.
+
+### `dream:20260831190606:4:c18a16`
+*31.08. 19:06 UTC · Quelle: dream*
+
+Nvidia Nemotron shows high latency variance (19s to 110s) and upstream 502 errors, indicating it cannot be trusted as a sole fallback without health checks.
+
+### `dream:20260831190606:3:528a39`
+*31.08. 19:06 UTC · Quelle: dream*
+
+High stress state (1.0) with conserve metabolism severely restricts execution capacity, creating a death spiral where failures increase stress which reduces capacity to fix failures.
+
+### `dream:20260831190606:2:ca96b9`
+*31.08. 19:06 UTC · Quelle: dream*
+
+The previously proposed resilience patterns (parallel probes, response caching, circuit breaker, telemetry-driven demotion) directly match the observed failure modes but remain unimplemented.
+
+### `dream:20260831190606:1:9252ef`
+*31.08. 19:06 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 quota limits under sustained load, making them unreliable as primary providers without a resilience layer.
 
 ### `tool:modellfehler-verstehen-und-vermeiden`
 *31.08. 18:33 UTC · Quelle: hands*

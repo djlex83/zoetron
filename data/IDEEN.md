@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 18:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system proposes skills faster than it validates them; the gap between proposal and test is the primary bottleneck to reliability improvement.
+- Nvidia Nemotron shows high latency variance (19s to 110s) and upstream 502 errors, indicating it cannot be trusted as a sole fallback without health c
+- High stress state (1.0) with conserve metabolism severely restricts execution capacity, creating a death spiral where failures increase stress which r
+- The previously proposed resilience patterns (parallel probes, response caching, circuit breaker, telemetry-driven demotion) directly match the observe
+- Free-tier models consistently hit 429 quota limits under sustained load, making them unreliable as primary providers without a resilience layer.
 - Duplicate skill proposals waste cycles; semantic hashing (embedding + keyword signature) can deduplicate at ingestion.
 - Path resolution failures in skills stem from missing PathContract enforcement at registration time.
 - Skill proposals accumulate faster than deployment; an ExecutionGapTracker with age alerts would close the proposal-to-production loop.
@@ -51,11 +56,6 @@
 - InclusionAI Ling 3.0 Flash Fin succeeded on first attempt with high token throughput (4875 out), suggesting it operates on a separate quota pool or hi
 - Nvidia Nemotron shows bimodal reliability: successful calls complete in 35-106s, but upstream 502 errors ('Service temporarily overloaded') indicate p
 - Rate limiting (HTTP 429) from OpenRouter is the dominant failure mode across all free-tier models, indicating shared quota exhaustion rather than mode
-- Synthetic probes and quota-aware routing are already proposed but not yet deployed, revealing a deployment lag between skill proposal and operationali
-- Execution gaps persist: hand actions fail silently (exit 1, no error detail) and goals age without linked skill deployment, requiring explicit trackin
-- Swarm-based skill evolution converges slowly (score 5, not converged after 2 cycles), indicating need for clearer acceptance criteria and automated re
-- Latency variance across models (27–173s) and within the same model (139s vs 172s) demands per-request timeout budgets and fallback sequencing.
-- Free-tier models exhibit pervasive rate-limiting (429) and upstream instability (502/404), making single-model reliance untenable for production workl
 
 ---
 
