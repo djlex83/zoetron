@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-30 23:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 00:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten echt testen *(wieder aufgegriffen: 2×)*
+- Neue Fähigkeiten aus Vorschlägen entwickeln *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System operates at stress=1.0 in conserve mode but still spawns swarms and model calls, violating its own metabolic budget.
+- Previous dream proposals (registry, probes, classifier, retriever, lifecycle) remain unimplemented, creating an idea-execution gap.
+- Nemotron's latency varies 4x (18-73s) and now returns empty choices, showing even 'healthy' models degrade without circuit-breaking.
+- Hand actions fail because relative paths ignore ZOETRON_DATA, revealing a systemic path-resolution fragility across tools.
+- z-ai/glm-5.2:free consistently returns 429 errors yet remains in rotation, proving no automatic quarantine exists for rate-limited models.
 - Latency for successful models ranged from 41.5s to 109.0s, indicating variable performance under load.
 - Only inclusionai/ling-3.0-flash-fin and poolside/laguna-s-2.1 succeeded, suggesting model reliability varies significantly.
 - The tor goal failed due to a syntax error in a generated Python file, indicating unreliable code generation.
@@ -51,11 +56,6 @@
 - High stress (1.0) triggers conserve mode that caps iterations, causing premature termination of multi-step skill synthesis.
 - Relative path resolution fails because the working directory diverges from ZOETRON_DATA; absolute paths anchored to the environment variable are requi
 - Rate limiting (429 errors) across multiple free models indicates systemic API quota exhaustion, not individual model failure.
-- Drive goals repeatedly target old/new knowledge synthesis but the system lacks a mechanism to retrieve prior dream insights and cross-reference them a
-- Pruning removes zero facts/events despite active consolidation drives, suggesting either insufficient memory accumulation or overly conservative reten
-- Self-diagnosis reports zero organ errors while model failures cascade, revealing that diagnostic scope excludes external dependency health.
-- The skill proposal reflex converges reliably but its own resilience proposals (circuit breaker, exponential backoff, fallback) remain unimplemented af
-- Free-tier model providers simultaneously exhaust rate limits (429 errors across 4+ models within seconds), making naive round-robin selection ineffect
 
 ---
 

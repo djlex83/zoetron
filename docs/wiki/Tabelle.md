@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 5242 Neuronen · 273820 bewertete Synapsen
+Stand: 5250 Neuronen · 274035 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -22,8 +22,8 @@ Stand: 5242 Neuronen · 273820 bewertete Synapsen
 | 10 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 428 | 0.24 |
 | 11 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 437 | 0.24 |
 | 12 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 399 | 0.26 |
-| 13 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 377 | 0.27 |
-| 14 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 456 | 0.22 |
+| 13 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 457 | 0.22 |
+| 14 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 377 | 0.27 |
 | 15 | 💭 | Fallback to nvidia/nemotron-3-ultra-550b-a55b:free works but int… | 385 | 0.26 |
 
 ## Die 15 stärksten Synapsen

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7609 Fakten** · Stand 2026-08-30 23:57 UTC · aktualisiert bei jedem Herzschlag
+**7614 Fakten** · Stand 2026-08-31 00:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3755
+- **dream:** 3760
 - **swarm_artifact:** 1751
 - **last_swarm_critique:** 641
 - **anti_pattern:** 537
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831000243:5:1eb522`
+*31.08. 00:02 UTC · Quelle: dream*
+
+System operates at stress=1.0 in conserve mode but still spawns swarms and model calls, violating its own metabolic budget.
+
+### `dream:20260831000243:4:4661dd`
+*31.08. 00:02 UTC · Quelle: dream*
+
+Previous dream proposals (registry, probes, classifier, retriever, lifecycle) remain unimplemented, creating an idea-execution gap.
+
+### `dream:20260831000243:3:8e24eb`
+*31.08. 00:02 UTC · Quelle: dream*
+
+Nemotron's latency varies 4x (18-73s) and now returns empty choices, showing even 'healthy' models degrade without circuit-breaking.
+
+### `dream:20260831000243:2:f73865`
+*31.08. 00:02 UTC · Quelle: dream*
+
+Hand actions fail because relative paths ignore ZOETRON_DATA, revealing a systemic path-resolution fragility across tools.
+
+### `dream:20260831000243:1:665d20`
+*31.08. 00:02 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free consistently returns 429 errors yet remains in rotation, proving no automatic quarantine exists for rate-limited models.
 
 ### `tool:langsame-fortschritte-beschleunigen`
 *30.08. 23:56 UTC · Quelle: hands*
