@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm execution with planner/builder/critic roles converges reliably in one cycle when the artifact is already functional.
+- Calibration consistently underestimates outcome scores (predicted 5 vs actual 8), indicating a systematic pessimistic bias in the predictor.
+- Model inclusionai/ling-3.0-flash-fin:free delivers acceptable latency (~10 s) and should be preferred for free-tier routing.
+- Model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (22–177 s), making it unreliable for time-sensitive tasks.
+- Model z-ai/glm-5.2:free is unusable due to persistent 429 rate-limit errors across all attempts.
 - The system proposes skills faster than it validates them; the gap between proposal and test is the primary bottleneck to reliability improvement.
 - Nvidia Nemotron shows high latency variance (19s to 110s) and upstream 502 errors, indicating it cannot be trusted as a sole fallback without health c
 - High stress state (1.0) with conserve metabolism severely restricts execution capacity, creating a death spiral where failures increase stress which r
@@ -51,11 +56,6 @@
 - Skill proposals accumulate faster than deployment; an ExecutionGapTracker with age alerts would close the proposal-to-production loop.
 - Fallback to nemotron-3-ultra succeeds but adds 20-30s latency per call, making parallel batching essential for multi-step pipelines.
 - Recurring 429 errors on glm-5.2:free indicate hard quota limits that require proactive circuit-breaking rather than reactive fallback.
-- Simulation and hand-action tools (tor, hand_action) succeeded deterministically, confirming non-LLM subsystems remain reliable under LLM quota pressur
-- The fallback cascade (Nemotron → GLM → Gemma → Poolside → Ling) burns ~30s per failed model before reaching a working one, making sequential retry cos
-- InclusionAI Ling 3.0 Flash Fin succeeded on first attempt with high token throughput (4875 out), suggesting it operates on a separate quota pool or hi
-- Nvidia Nemotron shows bimodal reliability: successful calls complete in 35-106s, but upstream 502 errors ('Service temporarily overloaded') indicate p
-- Rate limiting (HTTP 429) from OpenRouter is the dominant failure mode across all free-tier models, indicating shared quota exhaustion rather than mode
 
 ---
 

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 5755 Neuronen · 319167 bewertete Synapsen
+Stand: 5754 Neuronen · 320051 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,19 +10,19 @@ Stand: 5755 Neuronen · 319167 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 539 | 0.24 |
-| 2 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 527 | 0.24 |
-| 3 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 546 | 0.23 |
-| 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 539 | 0.23 |
-| 5 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 520 | 0.24 |
-| 6 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 477 | 0.26 |
+| 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 540 | 0.24 |
+| 2 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 529 | 0.24 |
+| 3 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 547 | 0.23 |
+| 4 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 522 | 0.24 |
+| 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 539 | 0.23 |
+| 6 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 478 | 0.26 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 454 | 0.26 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 454 | 0.26 |
-| 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 472 | 0.25 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 459 | 0.24 |
-| 11 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 432 | 0.25 |
-| 12 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 422 | 0.26 |
-| 13 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 410 | 0.27 |
+| 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 473 | 0.25 |
+| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 460 | 0.24 |
+| 11 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 434 | 0.25 |
+| 12 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 423 | 0.26 |
+| 13 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 411 | 0.27 |
 | 14 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 458 | 0.23 |
 | 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 487 | 0.22 |
 
@@ -39,11 +39,11 @@ Stand: 5755 Neuronen · 319167 bewertete Synapsen
 | 5 | **0.55** | 💭 Nvidia Nemotron-3-Ultra is the only model retu… | 💭 Nemotron-3-ultra shows high latency variance (… |
 | 6 | **0.55** | 💭 The swarm process evolves solutions but fails … | 💭 Swarm execution evolves roles but fails to con… |
 | 7 | **0.55** | 💬 Träume in echte Verbesserungen verwandeln — {"… | 💬 Fakten-Ausbeute pro Beat verdreifachen ohne Qu… |
-| 8 | **0.54** | 💭 Swarm consistently stalls at score 6/10 with c… | 💭 Evolutionary variant selection improved score … |
-| 9 | **0.54** | 💭 The calibration swarm fails to converge (score… | 💭 The swarm failed to converge (score 4, delta 0… |
-| 10 | **0.54** | 💭 Prune runs removed 0 facts and 0 events, provi… | 💭 A prune run removed 0 of ~1700 stored facts, p… |
-| 11 | **0.54** | 💭 Automatic model blocking after 3 consecutive f… | 💭 Automatic model blocking after three consecuti… |
-| 12 | **0.54** | 💭 „Inventory the 26-fact knowledge base“. Ergebn… | 💭 „Consolidate redundant or conflicting facts“. … |
-| 13 | **0.54** | 🛠 „Create skill entries in registry“. Ergebnis: … | 🛠 „Extract skill suggestions from input text“. E… |
-| 14 | **0.54** | 💭 Evolution produced variants scoring up to 9/10… | 💭 The evolution run produced a winning variant s… |
-| 15 | **0.53** | 💭 Swarm role imbalance (5 builders, 1 planner, 1… | 💭 Swarm convergence fails despite evolution gain… |
+| 8 | **0.55** | 💭 Fallback to nvidia/nemotron-3-ultra succeeds b… | 💭 Model nvidia/nemotron-3-ultra-550b-a55b:free s… |
+| 9 | **0.54** | 💭 Swarm consistently stalls at score 6/10 with c… | 💭 Evolutionary variant selection improved score … |
+| 10 | **0.54** | 💭 The calibration swarm fails to converge (score… | 💭 The swarm failed to converge (score 4, delta 0… |
+| 11 | **0.54** | 💭 Prune runs removed 0 facts and 0 events, provi… | 💭 A prune run removed 0 of ~1700 stored facts, p… |
+| 12 | **0.54** | 💭 Automatic model blocking after 3 consecutive f… | 💭 Automatic model blocking after three consecuti… |
+| 13 | **0.54** | 💭 „Inventory the 26-fact knowledge base“. Ergebn… | 💭 „Consolidate redundant or conflicting facts“. … |
+| 14 | **0.54** | 🛠 „Create skill entries in registry“. Ergebnis: … | 🛠 „Extract skill suggestions from input text“. E… |
+| 15 | **0.54** | 💭 Evolution produced variants scoring up to 9/10… | 💭 The evolution run produced a winning variant s… |
