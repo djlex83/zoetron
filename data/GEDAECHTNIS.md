@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7753 Fakten** · Stand 2026-08-31 03:26 UTC · aktualisiert bei jedem Herzschlag
+**7764 Fakten** · Stand 2026-08-31 03:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3875
-- **swarm_artifact:** 1763
-- **last_swarm_critique:** 643
+- **dream:** 3880
+- **swarm_artifact:** 1767
+- **last_swarm_critique:** 644
 - **anti_pattern:** 541
-- **last_swarm_goal:** 392
+- **last_swarm_goal:** 393
 - **strategy:** 291
 - **tool:** 86
 - **hand_result:** 85
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*31.08. 03:52 UTC · Quelle: critic*
+
+score=3; issues=main() ist unvollständig (Dateipfad '/data' hartcodiert, kein CLI-Argument für data_root), was zu Laufzeitfehler führt wenn ZOETRON_DATA nicht gesetzt ist; Keine Ausgabe/Reporting-Funktion: Klassifizierungsergebnisse werden nicht gespeichert od
+
+### `last_swarm_goal`
+*31.08. 03:31 UTC · Quelle: system*
+
+Alte Schwarm-Ergebnisse aufräumen
+
+### `dream:20260831033100:5:216a96`
+*31.08. 03:31 UTC · Quelle: dream*
+
+No systematic model health scoring exists to proactively deprioritize rate-limited models before they fail, causing repeated 429 errors.
+
+### `dream:20260831033100:4:3fdd18`
+*31.08. 03:31 UTC · Quelle: dream*
+
+Reflex-driven skill combination operates without validating whether proposed skills already exist or are implemented, wasting cycles on duplicate development.
+
+### `dream:20260831033100:3:d412ef`
+*31.08. 03:31 UTC · Quelle: dream*
+
+The system generates redundant skill proposals for identical resilience patterns (circuit breaker, health tracking, error classification, SLA enforcement, proposal tracking), revealing a lack of proposal deduplication and implementation tracking.
+
+### `dream:20260831033100:2:17b8ff`
+*31.08. 03:31 UTC · Quelle: dream*
+
+Successful fallback calls exhibit high latency (21-43s), suggesting that quota recovery or cold-start penalties degrade performance even after failover.
+
+### `dream:20260831033100:1:282a5a`
+*31.08. 03:31 UTC · Quelle: dream*
+
+Rate limiting (429) is the primary failure mode affecting all free-tier models simultaneously, indicating shared quota exhaustion rather than individual model issues.
 
 ### `dream:20260831032502:5:af21cd`
 *31.08. 03:25 UTC · Quelle: dream*
