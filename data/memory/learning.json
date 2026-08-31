@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 22:21:17",
+ "stand": "2026-08-31 22:28:49",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
