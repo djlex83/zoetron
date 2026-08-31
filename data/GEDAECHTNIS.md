@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8008 Fakten** · Stand 2026-08-31 11:41 UTC · aktualisiert bei jedem Herzschlag
+**8013 Fakten** · Stand 2026-08-31 11:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4090
+- **dream:** 4095
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831114735:5:ff0dd1`
+*31.08. 11:47 UTC · Quelle: dream*
+
+SwarmCheckpointLogger and ConvergenceGate proposals expose missing durability: no resume-from-checkpoint, no objective completion criteria.
+
+### `dream:20260831114735:4:20c711`
+*31.08. 11:47 UTC · Quelle: dream*
+
+ZOETRON_DATA path singleton and absolute-path contract proposals indicate recurring I/O failures from relative paths crossing tool boundaries.
+
+### `dream:20260831114735:3:caf78b`
+*31.08. 11:47 UTC · Quelle: dream*
+
+Multiple skill proposals (ModelRouter, ModelResilienceLayer, concurrent pool) address identical resilience gaps but remain unimplemented, showing proposal-to-execution disconnect.
+
+### `dream:20260831114735:2:c91969`
+*31.08. 11:47 UTC · Quelle: dream*
+
+Latency variance (14-38s) on nvidia/nemotron-3-ultra indicates no health-aware load balancing or warm connection pooling across available models.
+
+### `dream:20260831114735:1:8d68aa`
+*31.08. 11:47 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal single-model dependency without circuit breaker or exponential backoff, causing cascade failures under rate limits.
 
 ### `dream:20260831113945:5:197a8f`
 *31.08. 11:39 UTC · Quelle: dream*

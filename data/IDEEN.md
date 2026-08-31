@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- SwarmCheckpointLogger and ConvergenceGate proposals expose missing durability: no resume-from-checkpoint, no objective completion criteria.
+- ZOETRON_DATA path singleton and absolute-path contract proposals indicate recurring I/O failures from relative paths crossing tool boundaries.
+- Multiple skill proposals (ModelRouter, ModelResilienceLayer, concurrent pool) address identical resilience gaps but remain unimplemented, showing prop
+- Latency variance (14-38s) on nvidia/nemotron-3-ultra indicates no health-aware load balancing or warm connection pooling across available models.
+- Repeated 429 errors on z-ai/glm-5.2:free reveal single-model dependency without circuit breaker or exponential backoff, causing cascade failures under
 - Failure-driven goal generation produces multiple concurrent goals each cycle without prioritization, risking goal proliferation and diluted focus.
 - Self-diagnosis checking only internal state misses external API degradation; health probes must extend to provider latency, error rate, and quota.
 - Failover to nemotron-3-ultra-550b-a55b resolves availability but introduces latency variance (14–36s) that can cascade into downstream timeouts if unm
@@ -51,11 +56,6 @@
 - Reflex mode successfully completed market analysis using local Python script, validating local-first execution over model calls.
 - Fallback model nvidia/nemotron-3-ultra shows high latency variance (21-62s) requiring latency-aware routing and timeout budgets.
 - Recurring 429 errors on z-ai/glm-5.2:free indicate missing exponential backoff and circuit-breaker logic for rate-limited providers.
-- Pruning finds no stale data, meaning the experience buffer is dominated by recent repeated failures rather than diverse learning.
-- Drive goals reveal a meta-need: the system must autonomously acquire skills to handle its own model-selection failures.
-- Self-diagnosis and reflex systems operate correctly but model failures prevent higher-level reasoning tasks from executing.
-- Successful requests only occur on poolside/laguna-s-2.1:free, suggesting it has separate quota or higher priority.
-- Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ---
 
