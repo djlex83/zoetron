@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7898 Fakten** · Stand 2026-08-31 09:18 UTC · aktualisiert bei jedem Herzschlag
+**7903 Fakten** · Stand 2026-08-31 09:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3980
+- **dream:** 3985
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831092226:5:72aace`
+*31.08. 09:22 UTC · Quelle: dream*
+
+Reliance on single-provider endpoints creates a single point of failure for complex, multi-step reasoning tasks.
+
+### `dream:20260831092226:4:b08f2b`
+*31.08. 09:22 UTC · Quelle: dream*
+
+The inability to recover from script errors via reflex indicates a need for more granular error classification in tool outputs.
+
+### `dream:20260831092226:3:7ffe62`
+*31.08. 09:22 UTC · Quelle: dream*
+
+Swarm tasks fail to converge when model outages interrupt the iterative feedback loop between planner and critic.
+
+### `dream:20260831092226:2:918a89`
+*31.08. 09:22 UTC · Quelle: dream*
+
+Script execution failures due to pathing and argument mismatches suggest a disconnect between the environment's file structure and tool expectations.
+
+### `dream:20260831092226:1:4dd2d6`
+*31.08. 09:22 UTC · Quelle: dream*
+
+High-frequency 429 and 502 errors indicate that free-tier model availability is too volatile for reliable swarm convergence.
 
 ### `dream:20260831091634:5:074348`
 *31.08. 09:16 UTC · Quelle: dream*

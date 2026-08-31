@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills testen und nutzen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reliance on single-provider endpoints creates a single point of failure for complex, multi-step reasoning tasks.
+- The inability to recover from script errors via reflex indicates a need for more granular error classification in tool outputs.
+- Swarm tasks fail to converge when model outages interrupt the iterative feedback loop between planner and critic.
+- Script execution failures due to pathing and argument mismatches suggest a disconnect between the environment's file structure and tool expectations.
+- High-frequency 429 and 502 errors indicate that free-tier model availability is too volatile for reliable swarm convergence.
 - Calibration remains accurate (predicted=actual=6) yet the goal stays unconverged, revealing that scoring does not reflect task completion.
 - Swarm execution evolves roles but fails to converge after 2 cycles, suggesting insufficient iteration budget or missing convergence criteria.
 - Simulation recommends revisions (3 risks, 3 revisions) but zero are applied, indicating a broken feedback loop between critique and execution.
@@ -51,11 +56,6 @@
 - Simulation-driven revision loops effectively reduce risk: initial 5 risks dropped to 2 applied revisions, yielding a working 274-line Python artifact.
 - Only inclusionai/ling-3.0-flash-fin:free succeeds consistently but exhibits high latency variance (6.6–36.7s), requiring adaptive timeouts.
 - Free-tier models on OpenRouter consistently fail with 429 rate-limit errors, making them unreliable for production use.
-- Calibration offsets (+2) for 'Marktanalyse in Handeln umsetzen' address symptom (underestimation) not root cause (model bias or prompt framing).
-- The 'hands-Organ' swarm artifact pattern remains untested; its value depends on whether decomposition reduces total API calls or merely redistributes 
-- High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing multi-step recovery from transient failures.
-- Hand actions fail when relative paths diverge from the canonical ZOETRON_DATA root, causing silent zero-byte reads.
-- Rate-limit errors (429) cascade across multiple free-tier models simultaneously, making model diversity alone insufficient without request pacing.
 
 ---
 
