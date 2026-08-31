@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 22:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 22:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Path-resolution failures (implied by dedicated utility proposal) indicate that implicit working-directory assumptions break tool reliability across co
+- Stress-aware scheduling and adaptive concurrency control appear in multiple proposals, suggesting metabolic pressure should directly govern resource a
+- The gap between abundant skill proposals and minimal testing (only one reflex execution) shows that proposal generation without graduation pipelines w
+- Multiple independent skill proposals converge on model health monitoring, automatic failover, and rate limiting, indicating consensus on core resilien
+- Recurring 429 errors from z-ai/glm-5.2:free reveal that single-provider dependency without quota-aware routing causes systemic fragility.
 - Five concrete resilience proposals were already generated in-session, demonstrating the system can self-prescribe architectural fixes when given failu
 - Calibration error of 1 (predicted 7 vs actual 8) shows the internal predictor is well-tuned for model-error tasks.
 - A single-cycle swarm (planner + 3 builders + critic) converged on the error-reduction goal with score 8, proving the role-based workflow is effective 
@@ -51,11 +56,6 @@
 - Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1), forcing the system to serialize work and abandon parallel exploration.
 - Hand actions fail when using relative paths instead of absolute paths from ZOETRON_DATA and sys.argv[1]; every file operation must resolve against the
 - Rate limits (429) on specific models (z-ai/glm-5.2, google/gemma) make them unreliable primaries; nvidia/nemotron and poolside/laguna serve as stable 
-- Lightweight models (poolside/laguna-s-2.1, inclusionai/ling-3.0-flash-fin) succeed with sub-second latency when heavy models fail.
-- Calibration consistently overestimates cycle count (predicted 6 vs actual 4), suggesting the planner underestimates tool efficiency.
-- Evolutionary refinement with critic feedback can recover severely flawed artifacts (score 4→9) in a single generation.
-- Nvidia Nemotron-3-Ultra exhibits bimodal latency (15s vs 60s+) and intermittent 502 upstream errors, indicating unreliable capacity.
-- Rate limiting (429) affects all free-tier models simultaneously, making sequential fallback ineffective during high load.
 
 ---
 
