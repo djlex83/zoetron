@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 02:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale drive goals (3 unfinished market analyses) persist because completion criteria are implicit, not tracked in a state machine.
+- No metabolic gating exists: non-critical model calls continue despite sustained failure rate >80%, wasting cycles and deepening quota debt.
+- Reflex actions succeed (market analysis completed) while model-dependent swarms stall, showing reflexes are more reliable than LLM calls under quota p
+- Identical skill proposals (ProposalTracker, ModelFallbackChain, MetabolismGate) recur across cycles without implementation, revealing a proposal-to-ex
+- Repeated 429/502 errors across all free models indicate systemic quota exhaustion, not isolated model failure.
 - No metabolic gate exists to defer non-critical LLM calls when system stress or error rates exceed thresholds.
 - Swarm cycles lack a hard iteration budget, risking open-ended runs that never converge or escalate.
 - Skill proposals accumulate without lifecycle tracking, causing stale ideas to persist while new ones duplicate effort.
@@ -51,11 +56,6 @@
 - The gap between skill proposals and actual implementation is itself a failure mode — proposals without build-status tracking and deadlines decay into 
 - Error types (429 rate-limit, 502 upstream overload, empty response) are predictable and classifiable; treating them as generic failures wastes the inf
 - When 6 out of 7 model calls fail simultaneously, the absence of automatic quarantine and fallback turns transient API errors into systemic paralysis —
-- Artifact validation is missing: goals marked complete without verifying exit codes or output quality, allowing silent failures.
-- Stale drive goals (market analysis, skill adoption) persist because no convergence detector or budget allocator forces completion or re-prioritization
-- Multiple skill proposals (rate-limit detector, async framework, budget allocator, convergence detector) address the same root cause: unreliable model 
-- High latency (10-27s) on the working model nvidia/nemotron-3-ultra creates bottlenecks for iterative loops requiring multiple calls.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limiting that halts progress unless fallback models are pre-configured.
 
 ---
 
