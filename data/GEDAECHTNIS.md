@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8023 Fakten** · Stand 2026-08-31 12:02 UTC · aktualisiert bei jedem Herzschlag
+**8028 Fakten** · Stand 2026-08-31 12:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4105
+- **dream:** 4110
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831120830:5:a8cde0`
+*31.08. 12:08 UTC · Quelle: dream*
+
+Reflex execution succeeded for concrete scripted tasks (market-analysis update) while model-dependent planning fails, highlighting a trust boundary between deterministic tools and stochastic LLMs.
+
+### `dream:20260831120830:4:f75871`
+*31.08. 12:08 UTC · Quelle: dream*
+
+Drive goals for model reliability, market-analysis utilization, and skill usability recur across cycles, showing no closed-loop tracking from goal to deployed solution.
+
+### `dream:20260831120830:3:2235a6`
+*31.08. 12:08 UTC · Quelle: dream*
+
+Five skill proposals were generated in one cycle but none have validation harnesses, so proposals accumulate without becoming executable capabilities.
+
+### `dream:20260831120830:2:6acf55`
+*31.08. 12:08 UTC · Quelle: dream*
+
+Fallback model nemotron-3-ultra shows 17–77s latency variance, revealing no latency-aware routing or calibration to predict cost.
+
+### `dream:20260831120830:1:b6ad05`
+*31.08. 12:08 UTC · Quelle: dream*
+
+Repeated 429 errors on glm-5.2:free indicate missing per-provider rate-limit handling and circuit-breaking, causing cascading fallbacks to high-latency alternatives.
 
 ### `dream:20260831120118:5:05cde4`
 *31.08. 12:01 UTC · Quelle: dream*
