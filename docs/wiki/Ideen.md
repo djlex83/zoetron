@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 20:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 20:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System auto-generates relevant skill proposals (routing, retry, dashboard) directly from observed failure patterns.
+- Intermittent hand action failures (exit 1, no error output) reveal silent infrastructure instability.
+- Calibration error of 1 indicates well-tuned prediction for this task class.
+- Swarm execution with dedicated critic role achieves single-cycle convergence for simulation-heavy goals.
+- Rate limiting on z-ai/glm-5.2:free causes cascading failures without automatic fallback to healthy providers.
 - Transient hand-action failures (exit 1 followed by exit 0) resolve with immediate retry, suggesting idempotent operations benefit from automatic re-ex
 - Under conserve mode (stress=1.0, max_iterations=1), procedures must succeed in a single pass or degrade gracefully without retries.
 - Simulation-driven revision loops (verdict→revise→apply→verify) caught 5 risks and produced a passing artifact in one cycle.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without a deployment pipeline, creating a proposal-to-practice gap that wastes design effort.
 - Path resolution fails when skills use relative paths instead of ZOETRON_DATA-rooted absolute paths, causing silent zero-result executions.
 - Free-tier model APIs fail catastrophically under concurrent load due to shared rate limits across all consumers.
-- Latency variability in working models (43s to 55s) makes interactive loops unpredictable, requiring latency-aware model selection for consistent user 
-- The reflex consolidation mechanism converges reliably, but its effectiveness is bottlenecked by the underlying model call layer, which is the single p
-- Stale data (unfinished goals, outdated analyses, unpruned facts) accumulates over time because there is no time-based expiration or forced review cycl
-- The system generates many skill proposals and goals but lacks a prioritization-and-execution mechanism, causing accumulation of unfinished work and un
-- 429 rate-limit errors from external models are a recurring systemic failure that cascades into unreliable system behavior and must be handled automati
 
 ---
 

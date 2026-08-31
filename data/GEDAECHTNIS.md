@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8297 Fakten** · Stand 2026-08-31 20:10 UTC · aktualisiert bei jedem Herzschlag
+**8302 Fakten** · Stand 2026-08-31 20:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4300
+- **dream:** 4305
 - **swarm_artifact:** 1819
 - **last_swarm_critique:** 654
 - **anti_pattern:** 553
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831201441:5:be754b`
+*31.08. 20:14 UTC · Quelle: dream*
+
+System auto-generates relevant skill proposals (routing, retry, dashboard) directly from observed failure patterns.
+
+### `dream:20260831201441:4:9af26b`
+*31.08. 20:14 UTC · Quelle: dream*
+
+Intermittent hand action failures (exit 1, no error output) reveal silent infrastructure instability.
+
+### `dream:20260831201441:3:efce6e`
+*31.08. 20:14 UTC · Quelle: dream*
+
+Calibration error of 1 indicates well-tuned prediction for this task class.
+
+### `dream:20260831201441:2:9a2ac8`
+*31.08. 20:14 UTC · Quelle: dream*
+
+Swarm execution with dedicated critic role achieves single-cycle convergence for simulation-heavy goals.
+
+### `dream:20260831201441:1:b3df99`
+*31.08. 20:14 UTC · Quelle: dream*
+
+Rate limiting on z-ai/glm-5.2:free causes cascading failures without automatic fallback to healthy providers.
 
 ### `dream:20260831200834:5:aa860d`
 *31.08. 20:08 UTC · Quelle: dream*
