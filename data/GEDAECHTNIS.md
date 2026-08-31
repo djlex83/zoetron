@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7671 Fakten** · Stand 2026-08-31 01:22 UTC · aktualisiert bei jedem Herzschlag
+**7676 Fakten** · Stand 2026-08-31 01:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3805
+- **dream:** 3810
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831012733:5:1d44af`
+*31.08. 01:27 UTC · Quelle: dream*
+
+Successful model (poolside/laguna-s-2.1:free) shows 5-9s latency; no latency SLA or timeout policy exists to prevent hanging calls.
+
+### `dream:20260831012733:4:72f49b`
+*31.08. 01:27 UTC · Quelle: dream*
+
+Error patterns are not automatically classified into retryable (rate-limit) vs structural (404/502), so fallback logic cannot discriminate.
+
+### `dream:20260831012733:3:e4e5e1`
+*31.08. 01:27 UTC · Quelle: dream*
+
+No metabolic gating exists: the system continues spawning swarms/model-calls despite repeated failures, wasting cycles and increasing latency.
+
+### `dream:20260831012733:2:4da99a`
+*31.08. 01:27 UTC · Quelle: dream*
+
+Skill proposals accumulate without tracking or execution, causing repeated re-proposals of the same capabilities (fallback chain, metabolism gate, proposal tracker).
+
+### `dream:20260831012733:1:d3e656`
+*31.08. 01:27 UTC · Quelle: dream*
+
+Rate limits (429) and upstream errors (502/404) cascade across multiple free-tier models simultaneously, leaving only poolside/laguna-s-2.1:free as reliable.
 
 ### `dream:20260831012122:5:ec09a1`
 *31.08. 01:21 UTC · Quelle: dream*

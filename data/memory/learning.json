@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-31 01:22:01",
+ "stand": "2026-08-31 01:27:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 20,
-   "erfolge": 20,
+   "laeufe": 21,
+   "erfolge": 21,
    "quote": 1.0
   },
   {
@@ -28,8 +28,8 @@
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -43,12 +43,6 @@
    "laeufe": 5,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
@@ -84,6 +78,12 @@
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 4,
    "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -189,7 +189,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.801,
+ "haende_quote": 0.8,
  "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 28,
