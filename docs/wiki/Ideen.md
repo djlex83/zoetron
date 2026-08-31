@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 05:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 05:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Selbstdiagnose and prune cycles report zero issues despite total external inference failure, showing monitoring blind spots for dependency health.
+- Five concrete skill proposals for resilience exist in memory but remain unimplemented, revealing a gap between meta-cognitive generation and operation
+- Local reflex operations (artifact cleanup, memory update) succeed independently while all external model calls fail, confirming architectural separati
+- Only poolside/laguna-s-2.1:free remains operational, indicating provider-specific quota exhaustion rather than universal outage.
+- Rate limiting (HTTP 429) cascades across multiple free-tier models simultaneously, making external LLM dependency a systemic single point of failure.
 - Self-diagnosis reports zero organ errors while model layer is fully degraded, revealing a monitoring blind spot between infrastructure health and serv
 - Failure logs lack request-level context (prompt size, priority, retry count), preventing root-cause distinction between burst traffic vs. sustained qu
 - All five proposed skills (QuotaPool, ModelHealthTracker, ErrorClassifier, LatencySLA, ProposalTracker) form an interdependent resilience stack; implem
@@ -51,11 +56,6 @@
 - Multiple redundant skill proposals (ErrorClassifier, LatencySLA, QuotaPool) indicate missing proposal tracking and deduplication.
 - Fallback model poolside/laguna-s-2.1:free exhibits high latency (7.5-22.3s) violating interactive SLAs.
 - Free-tier models simultaneously exhaust shared OpenRouter quota causing cascading 429 failures across all free models.
-- Previous proposals for circuit breakers and latency SLAs remain unimplemented but are critical for mitigating the ongoing 429 failures.
-- System reflexes and self-diagnoses are functioning correctly, isolating the primary failure cause to external API rate limiting.
-- The system's drive to understand model failures is directly supported by implementing error classification and smart routing.
-- Alternating between models like `inclusionai/ling-3.0-flash-fin:free` and `poolside/laguna-s-2.1:free` successfully bypasses temporary rate limits.
-- Free models on OpenRouter experience frequent 429 Too Many Requests errors, necessitating a multi-model fallback strategy.
 
 ---
 

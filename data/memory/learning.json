@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 05:07:11",
+ "stand": "2026-08-31 05:13:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "laeufe": 18,
+   "erfolge": 18,
    "quote": 1.0
   },
   {
@@ -54,12 +54,6 @@
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -106,6 +100,12 @@
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
