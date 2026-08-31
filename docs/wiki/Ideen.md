@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Rate limits are key-pair specific, so circuit breakers and rotation must operate per API key, not just per model identifier.
+- Stale drive goals (e.g., unused Marktanalyse) are resolvable via reflex automation, but gap goals (unlearned skills) remain stalled without execution 
+- Skill proposals accumulate within the same problem domain (model reliability) without effective deduplication, despite a ProposalDeduplicator being pr
+- nvidia/nemotron-3-ultra-550b-a55b:free shows latency doubling (32.5s → 71.8s) between probes, indicating silent degradation that static health scores 
+- 429 rate-limit errors on z-ai/glm-5.2:free are the dominant recurring failure mode and require per-key quota management rather than naive retry.
 - Drive goals age without linked skills because no tracker maps goal signals (failure, stale, gap) to proposal coverage.
 - Skill proposals accumulate duplicates (circuit breaker, probe, path contract) needing semantic deduplication before lifecycle entry.
 - Path-related I/O failures are eliminated by enforcing absolute-path contracts at skill registration with mandatory resolve_path wrapping.
@@ -51,11 +56,6 @@
 - A persistent gap exists between skill proposals and actual implementation — proposals accumulate without validation, testing, or deployment tracking, 
 - Latency for the same working model (nvidia/nemotron-3-ultra-550b-a55b:free) varies 7x (10s to 74s), revealing that static model selection without late
 - 429 rate-limiting on z-ai/glm-5.2 is a recurring, unmitigated failure mode across multiple cycles, indicating that reactive retries without quota-awar
-- Self-diagnosis reports zero organ errors while model failure rate approaches 50%, showing monitoring blind spots for external dependencies.
-- Multiple skill proposals target model reliability (router, health tracker, fallback chain, scheduler, circuit breaker) but remain undeployed proposals
-- Five drive goals identify stale data, high failure rate, and untested skills, yet no autonomous validation loop exists to close the gap.
-- Latency variance (25-68s) on nvidia/nemotron-3-ultra indicates absent SLA-aware routing, letting degraded instances serve production traffic.
-- Recurring 429 errors on z-ai/glm-5.2:free reveal single-model dependency without quota-aware rotation, causing predictable cascade failures.
 
 ---
 

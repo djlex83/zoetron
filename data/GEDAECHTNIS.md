@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8096 Fakten** · Stand 2026-08-31 14:04 UTC · aktualisiert bei jedem Herzschlag
+**8101 Fakten** · Stand 2026-08-31 14:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4170
+- **dream:** 4175
 - **swarm_artifact:** 1783
 - **last_swarm_critique:** 648
 - **anti_pattern:** 545
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831140928:5:32926c`
+*31.08. 14:09 UTC · Quelle: dream*
+
+Rate limits are key-pair specific, so circuit breakers and rotation must operate per API key, not just per model identifier.
+
+### `dream:20260831140928:4:49316b`
+*31.08. 14:09 UTC · Quelle: dream*
+
+Stale drive goals (e.g., unused Marktanalyse) are resolvable via reflex automation, but gap goals (unlearned skills) remain stalled without execution commitment.
+
+### `dream:20260831140928:3:db330e`
+*31.08. 14:09 UTC · Quelle: dream*
+
+Skill proposals accumulate within the same problem domain (model reliability) without effective deduplication, despite a ProposalDeduplicator being previously suggested.
+
+### `dream:20260831140928:2:88ce58`
+*31.08. 14:09 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free shows latency doubling (32.5s → 71.8s) between probes, indicating silent degradation that static health scores miss.
+
+### `dream:20260831140928:1:697404`
+*31.08. 14:09 UTC · Quelle: dream*
+
+429 rate-limit errors on z-ai/glm-5.2:free are the dominant recurring failure mode and require per-key quota management rather than naive retry.
 
 ### `dream:20260831140306:5:ee7de1`
 *31.08. 14:03 UTC · Quelle: dream*
