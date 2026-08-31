@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8028 Fakten** · Stand 2026-08-31 12:10 UTC · aktualisiert bei jedem Herzschlag
+**8033 Fakten** · Stand 2026-08-31 12:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4110
+- **dream:** 4115
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831121625:5:7e6fb7`
+*31.08. 12:16 UTC · Quelle: dream*
+
+Self-diagnosis only checks internal organs: external dependency failures (model APIs) are invisible to current health probes.
+
+### `dream:20260831121625:4:1872f1`
+*31.08. 12:16 UTC · Quelle: dream*
+
+Reflex tools succeed when scoped narrowly: 'alte-marktanalysen-verwerten.py' completed in 0.74s with zero errors.
+
+### `dream:20260831121625:3:c252d5`
+*31.08. 12:16 UTC · Quelle: dream*
+
+Latency prediction is uncalibrated: actual latencies (9-34s) vary wildly with no monitoring to trigger router retraining.
+
+### `dream:20260831121625:2:2c618d`
+*31.08. 12:16 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution tracking: 75 proposals exist but no visible pipeline validates, merges, or deploys them.
+
+### `dream:20260831121625:1:c3f05b`
+*31.08. 12:16 UTC · Quelle: dream*
+
+Model routing lacks resilience: 5 consecutive model failures (429/502) across 4 providers blocked progress until a fallback succeeded.
 
 ### `dream:20260831120830:5:a8cde0`
 *31.08. 12:08 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis only checks internal organs: external dependency failures (model APIs) are invisible to current health probes.
+- Reflex tools succeed when scoped narrowly: 'alte-marktanalysen-verwerten.py' completed in 0.74s with zero errors.
+- Latency prediction is uncalibrated: actual latencies (9-34s) vary wildly with no monitoring to trigger router retraining.
+- Skill proposals accumulate without execution tracking: 75 proposals exist but no visible pipeline validates, merges, or deploys them.
+- Model routing lacks resilience: 5 consecutive model failures (429/502) across 4 providers blocked progress until a fallback succeeded.
 - Reflex execution succeeded for concrete scripted tasks (market-analysis update) while model-dependent planning fails, highlighting a trust boundary be
 - Drive goals for model reliability, market-analysis utilization, and skill usability recur across cycles, showing no closed-loop tracking from goal to 
 - Five skill proposals were generated in one cycle but none have validation harnesses, so proposals accumulate without becoming executable capabilities.
@@ -51,11 +56,6 @@
 - Multiple independent skill proposals converge on the same solution pattern: model health tracking, circuit breaking, and prioritized fallback chains.
 - Fallback models succeed but exhibit high latency variance (13-60s), making timeout budgets and latency-aware routing essential for reliable task compl
 - Rate limiting (429) on specific models is a persistent, predictable failure mode that requires proactive routing rather than reactive retries.
-- Skill proposals lack automated promotion-to-commitment pipeline causing implementation drift despite reflex execution capability.
-- Multiple independent skill proposals converge on identical resilience primitives (circuit breaker, EWMA, fallback chain) confirming architectural nece
-- Silent degradation manifests as 200-status empty responses necessitating pre-flight probe validation before production traffic.
-- Latency variance across models spans 10x (6s–60s) demanding real-time health-score routing over static priority.
-- Free-tier model endpoints exhibit systemic rate-limiting (429) and upstream overload (502) failures requiring circuit-breaker isolation.
 
 ---
 
