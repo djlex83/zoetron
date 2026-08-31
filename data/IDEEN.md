@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,8 +30,8 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Duplicate skill proposals waste cycles; a ProposalDeduplicator using semantic hashing (embedding + keyword signature) surfaces only novel or improved 
+- File-access skills repeatedly fail on path resolution because they don't declare I/O contracts; enforcing PathContract at registration with auto-wrapp
+- Drive goals accumulate without execution linkage; an ExecutionGapTracker mapping each goal to concrete skill proposals with age alerts (>24h) closes t
+- Model fallback cascades fail because no real-time health signals exist; synthetic probes every 60s per model are needed to populate a ModelHealthRegis
+- Rate limiting (429) across five distinct models reveals systemic quota exhaustion, not isolated failures, requiring quota-aware routing with circuit b
 - Swarm execution with planner/builder/critic roles converges reliably in one cycle when the artifact is already functional.
 - Calibration consistently underestimates outcome scores (predicted 5 vs actual 8), indicating a systematic pessimistic bias in the predictor.
 - Model inclusionai/ling-3.0-flash-fin:free delivers acceptable latency (~10 s) and should be preferred for free-tier routing.
@@ -51,11 +56,6 @@
 - High stress state (1.0) with conserve metabolism severely restricts execution capacity, creating a death spiral where failures increase stress which r
 - The previously proposed resilience patterns (parallel probes, response caching, circuit breaker, telemetry-driven demotion) directly match the observe
 - Free-tier models consistently hit 429 quota limits under sustained load, making them unreliable as primary providers without a resilience layer.
-- Duplicate skill proposals waste cycles; semantic hashing (embedding + keyword signature) can deduplicate at ingestion.
-- Path resolution failures in skills stem from missing PathContract enforcement at registration time.
-- Skill proposals accumulate faster than deployment; an ExecutionGapTracker with age alerts would close the proposal-to-production loop.
-- Fallback to nemotron-3-ultra succeeds but adds 20-30s latency per call, making parallel batching essential for multi-step pipelines.
-- Recurring 429 errors on glm-5.2:free indicate hard quota limits that require proactive circuit-breaking rather than reactive fallback.
 
 ---
 
