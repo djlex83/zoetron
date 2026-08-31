@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8131 Fakten** · Stand 2026-08-31 15:08 UTC · aktualisiert bei jedem Herzschlag
+**8136 Fakten** · Stand 2026-08-31 15:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4205
+- **dream:** 4210
 - **swarm_artifact:** 1783
 - **last_swarm_critique:** 648
 - **anti_pattern:** 545
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831151257:5:cdf896`
+*31.08. 15:12 UTC · Quelle: dream*
+
+Successful model responses (e.g., inclusionai/ling-3.0-flash-fin) are not cached, causing redundant API calls that worsen rate-limit storms.
+
+### `dream:20260831151257:4:9bb066`
+*31.08. 15:12 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors despite repeated model failures, indicating diagnostic blind spots for external API degradation.
+
+### `dream:20260831151257:3:f10822`
+*31.08. 15:12 UTC · Quelle: dream*
+
+Skill proposals accumulate in memory but lack a validation pipeline to test them in production, creating a proposal-deployment gap.
+
+### `dream:20260831151257:2:c1c055`
+*31.08. 15:12 UTC · Quelle: dream*
+
+Reflex-mode execution succeeds for analysis goals without invoking unreliable model endpoints, proving local logic can bypass external dependencies.
+
+### `dream:20260831151257:1:545a12`
+*31.08. 15:12 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making provider diversity without prioritization ineffective.
 
 ### `dream:20260831150603:5:803eaf`
 *31.08. 15:06 UTC · Quelle: dream*

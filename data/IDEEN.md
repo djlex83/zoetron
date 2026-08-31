@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 15:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 15:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful model responses (e.g., inclusionai/ling-3.0-flash-fin) are not cached, causing redundant API calls that worsen rate-limit storms.
+- Selbstdiagnose reports zero organ errors despite repeated model failures, indicating diagnostic blind spots for external API degradation.
+- Skill proposals accumulate in memory but lack a validation pipeline to test them in production, creating a proposal-deployment gap.
+- Reflex-mode execution succeeds for analysis goals without invoking unreliable model endpoints, proving local logic can bypass external dependencies.
+- Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making provider diversity without prioritization ineffective
 - Persisting proposal lifecycle in SQLite with unique indexes closes the feedback loop from idea to deployed skill and enables rollback.
 - Pre-flight validation of tool paths, permissions, and syntax eliminates a class of silent failures before they reach execution.
 - Observed latency and token variance across models (e.g., 19-20s, 500-1400 input tokens) demands continuous calibration to keep routing weights accurat
@@ -51,11 +56,6 @@
 - Latency spikes (8.3s to 11.3s) on successful calls correlate with degraded model performance, suggesting throttling before outright failure.
 - Models returning 200 with empty choices (e.g., Nvidia upstream overload) reveal silent failure modes that bypass standard error handling.
 - 429 errors dominate across multiple providers, indicating systemic rate-limit exhaustion rather than isolated model issues.
-- Skill proposals are generated but not deduplicated or prioritized by novelty or impact, leading to redundant or low-value suggestions being surfaced.
-- Drive goals related to error reduction, artifact cleanup, and skill activation remain unlinked to concrete skill implementations, creating execution g
-- Latency and token efficiency vary significantly between successful model calls, suggesting that lightweight tasks should route to faster, cheaper mode
-- Model failures cascade when fallback chains are not enforced, causing repeated attempts on already-failing endpoints within short time windows.
-- Rate limiting (429) is the dominant failure mode across multiple model endpoints, indicating systemic overload rather than isolated model issues.
 
 ---
 
