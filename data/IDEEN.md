@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation revisions applied one-at-a-time cause redundant re-attempts; batching all revisions before retry improves convergence efficiency.
+- Stale market analysis data remains unused because there is no automated pipeline to convert it into actionable execution steps.
+- Model performance varies significantly under load — nemotron-3-ultra-550b-a55b showed acceptable latency (8.2s) while others failed with 429 or 502 er
+- Relative path usage in scripts causes silent failures; absolute paths derived from a central configuration prevent data resolution errors.
+- Repeated 429 errors across multiple models indicate systemic rate-limiting that requires exponential backoff with jitter and model cooldown windows.
 - No checkpointing exists for long-running swarms, so any model interruption discards all intermediate progress.
 - Relative script paths and missing pre-flight checks cause silent environment mismatches that masquerade as model failures.
 - Swarm cycles lack a hard convergence gate, allowing infinite iteration without quality improvement.
@@ -51,11 +56,6 @@
 - Multiple skill proposals for retry logic, circuit breaking, and model rotation exist but remain unimplemented, revealing a proposal-execution gap.
 - High latency of fallback models (18-27s) creates a reliability-speed tradeoff that current routing doesn't optimize.
 - Rate limiting (429 errors) on specific models is the dominant failure mode, causing repeated fallback to slower but reliable models.
-- Reflexes reliably handle routine maintenance (fact updates, pruning) without model involvement, reducing failure surface.
-- Swarm decomposition decisions lack evidence; a benchmark harness measuring API calls, latency, and error rate before/after decomposition is missing.
-- Fixed calibration offsets drift; online bias estimators updated per task family from prediction residuals maintain accuracy.
-- Local hand actions (file ops, scripts) succeed deterministically where model calls fail stochastically.
-- Free-tier models consistently fail with 429 rate limits, making them unreliable as primary workers without a routing layer.
 
 ---
 
