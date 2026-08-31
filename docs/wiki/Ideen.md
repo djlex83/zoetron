@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 02:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 02:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten nutzbar machen *(wieder aufgegriffen: 2×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals targeting model reliability and skill implementation show persistent signals of failure and gap, reflecting unresolved systemic issues.
+- Model failures cluster around specific error types (429, timeout), suggesting classification-based routing can reduce overall failure rate.
+- Multiple skill proposals remain unimplemented across cycles, indicating a systemic gap between proposal generation and execution.
+- Latency for nvidia/nemotron-3-ultra-550b-a55b:free increased from 46.7s to 93.1s across runs, signaling performance degradation under load.
+- Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limit exhaustion requiring per-model circuit breakers and fallback routing.
 - Self-diagnosis reports no internal organ failures, yet external dependency failures persist — internal health checks alone are insufficient to guarant
 - Stale goals (unfinished analyses, unused results) block new insights and must be explicitly resolved rather than waiting for spontaneous attention.
 - Reflex-mode execution reliably converges on well-scoped goals, suggesting that triggering goals as reflexes rather than open-ended drives increases co
@@ -51,11 +56,6 @@
 - A persistent gap exists between skill proposal generation and skill implementation—proposals accumulate without testing, creating 'proposal debt' that
 - The absence of per-model health tracking forces repeated hammering of failing endpoints, wasting cycles and compounding rate-limit exhaustion.
 - Cascading 429/502 errors across five distinct models reveal a systemic API-rate-limit and upstream-overload pattern that blind retries cannot resolve.
-- Compute budgets are wasted on stagnant goals because there is no convergence detection or dynamic reallocation mechanism to redirect effort toward imp
-- Proposed skills remain unused because there is no systematic pipeline to test, integrate, and retire skill proposals based on real-world performance.
-- Goal completion is being falsely marked as converged when artifact execution results (exit codes, output schemas) are not validated before status upda
-- High-latency model calls (e.g., nvidia/nemotron-3-ultra-550b-a55b:free at 18.4s) require async handling with timeouts and progress tracking to avoid b
-- Rate-limit errors (429) on specific models like z-ai/glm-5.2:free are a recurring failure mode that degrades overall system reliability and must be de
 
 ---
 

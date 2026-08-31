@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 02:34:38",
+ "stand": "2026-08-31 02:42:36",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -177,12 +177,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.809,
- "simulationen_angewandt": 24,
+ "haende_quote": 0.808,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 27,
+  "n": 26,
   "best": 9.0,
-  "schnitt": 5.59
+  "schnitt": 5.5
  },
  "score_nach_ziel_typ": {
   "analyse": {
