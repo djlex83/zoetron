@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 11:03:02",
+ "stand": "2026-08-31 11:09:00",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -123,12 +123,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeiten-gezielt-trainieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -178,6 +172,12 @@
   },
   {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-gezielt-trainieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

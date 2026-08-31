@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence criteria are implicit; making them explicit (score≥8, zero critical risks, no new revisions) prevents premature termination.
+- Swarm iterations lack a durable checkpoint/resume mechanism, forcing full restarts after any crash or rate-limit stall.
+- Relative-path drift breaks script execution across contexts; a single config singleton for absolute paths eliminates this class of error.
+- Skill proposals accumulate (70+) without a lightweight validation harness, so most never get tested or adopted.
+- Rate limits (429) on free-tier models cause cascading failures unless exponential backoff, per-model cooldown, and multi-model warm pools are enforced
 - Checkpoint logging is proposed but absent; without durable cycle state, every restart loses swarm context and forces full re-convergence.
 - Self-diagnosis reports zero organ errors while the model layer repeatedly fails, revealing a monitoring blind spot for external API dependencies.
 - Reflex actions succeed when the tool path is pre-validated, but ad-hoc model calls fail silently without a pre-flight environment check.
@@ -51,11 +56,6 @@
 - Local hand actions (file ops, scripts) consistently succeed in <0.3s, yet model invocations are still attempted first for applicable tasks.
 - Multiple skill proposals for model routing, local-first execution, and revision gates exist but remain unimplemented, creating a proposal-execution ga
 - Rate-limited primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while fallback (Nemotron) succeeds but with high latency variance (24-75s).
-- Drive signals like 'failure', 'stale', and 'gap' effectively prioritize skill proposals and system improvements.
-- Automated skill validation with regression testing prevents performance degradation from new skill integration.
-- Standardizing path resolution prevents I/O errors and ensures consistent data access across hand actions.
-- Latency prediction using EWMA and 2σ inflation improves budget accuracy and enables proactive conserve-mode.
-- Model failures cluster around rate-limiting (429) and upstream overload (502), indicating need for dynamic routing and backoff strategies.
 
 ---
 
