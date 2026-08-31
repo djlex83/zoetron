@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 03:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 03:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Internal health checks (Selbstdiagnose) report zero errors while external API failures dominate, creating a false sense of system health.
+- Skill proposals pile up untracked, leading to duplicate efforts and no accountability for implementation.
+- Reflex-based error investigation resolves symptoms but lacks preventive circuit-breaking, causing repeated 429 cascades.
+- The only functional model (poolside/laguna-s-2.1:free) violates latency SLAs (>10s) in 50% of calls, requiring hard timeouts and failover.
+- Free-tier model endpoints share correlated rate-limit failures (429), making single-model reliance fragile.
 - Self-diagnosis and pruning reported zero issues, indicating the failure domain is external (upstream rate limits) not internal corruption.
 - Five skill proposals were emitted in one cycle but no persistence or tracking mechanism exists, so they likely vanish without implementation.
 - Reflex tool 'abgelehnte-werkzeuge-verstehen-und-verbe.py' completed the market-analysis goal autonomously, proving reflexes can substitute for failed 
@@ -51,11 +56,6 @@
 - Latency variance spans 17x (5.6s vs 93s) making fixed timeouts ineffective; percentile-based SLAs required.
 - Upstream provider errors (502) cascade into silent failures with 200 status but empty choices, breaking assumption that HTTP 200 means success.
 - Rate limiting (429) is the dominant cross-model failure mode, affecting 4/5 models simultaneously indicating shared quota exhaustion.
-- Drive goals targeting model reliability and skill implementation show persistent signals of failure and gap, reflecting unresolved systemic issues.
-- Model failures cluster around specific error types (429, timeout), suggesting classification-based routing can reduce overall failure rate.
-- Multiple skill proposals remain unimplemented across cycles, indicating a systemic gap between proposal generation and execution.
-- Latency for nvidia/nemotron-3-ultra-550b-a55b:free increased from 46.7s to 93.1s across runs, signaling performance degradation under load.
-- Repeated 429 errors from z-ai/glm-5.2:free indicate rate-limit exhaustion requiring per-model circuit breakers and fallback routing.
 
 ---
 

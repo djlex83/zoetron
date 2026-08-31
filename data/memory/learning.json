@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 03:19:57",
+ "stand": "2026-08-31 03:25:23",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,16 +33,16 @@
    "quote": 1.0
   },
   {
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 6,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -177,7 +177,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.79,
+ "haende_quote": 0.791,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 27,
@@ -185,13 +185,13 @@
   "schnitt": 5.44
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 24,
-   "schnitt": 5.42
-  },
   "bau": {
    "n": 3,
    "schnitt": 5.67
+  },
+  "analyse": {
+   "n": 23,
+   "schnitt": 5.39
   }
  }
 }
