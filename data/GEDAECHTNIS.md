@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8348 Fakten** · Stand 2026-08-31 21:33 UTC · aktualisiert bei jedem Herzschlag
+**8362 Fakten** · Stand 2026-08-31 21:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4330
-- **swarm_artifact:** 1831
-- **last_swarm_critique:** 656
+- **dream:** 4335
+- **swarm_artifact:** 1837
+- **last_swarm_critique:** 657
 - **anti_pattern:** 555
-- **last_swarm_goal:** 405
+- **last_swarm_goal:** 406
 - **strategy:** 298
-- **tool:** 95
+- **tool:** 96
 - **hand_result:** 88
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-dauerhaft-senken`
+*31.08. 21:43 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler dauerhaft senken'. Datei: data/tools/modellfehler-dauerhaft-senken.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*31.08. 21:43 UTC · Quelle: critic*
+
+score=8; issues=Artefakt 2 im Prompt gekappt (nicht Artefakt-Fehler), aber Fallback-Ketten unvollständig sichtbar; Keine automatisierte Pipeline: Analyse (Artefakt 1) speist nicht direkt Router-Konfiguration (Artefakt 2) – manueller Schritt nötig; Doppelte Feh
+
+### `last_swarm_goal`
+*31.08. 21:38 UTC · Quelle: system*
+
+Modellfehler dauerhaft senken
+
+### `dream:20260831213815:5:0efd45`
+*31.08. 21:38 UTC · Quelle: dream*
+
+Lightweight models (poolside/laguna-s-2.1, inclusionai/ling-3.0-flash-fin) succeed with sub-second latency when heavy models fail.
+
+### `dream:20260831213815:4:24c495`
+*31.08. 21:38 UTC · Quelle: dream*
+
+Calibration consistently overestimates cycle count (predicted 6 vs actual 4), suggesting the planner underestimates tool efficiency.
+
+### `dream:20260831213815:3:ccbc92`
+*31.08. 21:38 UTC · Quelle: dream*
+
+Evolutionary refinement with critic feedback can recover severely flawed artifacts (score 4→9) in a single generation.
+
+### `dream:20260831213815:2:494e29`
+*31.08. 21:38 UTC · Quelle: dream*
+
+Nvidia Nemotron-3-Ultra exhibits bimodal latency (15s vs 60s+) and intermittent 502 upstream errors, indicating unreliable capacity.
+
+### `dream:20260831213815:1:4badae`
+*31.08. 21:38 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models simultaneously, making sequential fallback ineffective during high load.
 
 ### `dream:20260831213141:5:c4f3bd`
 *31.08. 21:31 UTC · Quelle: dream*
