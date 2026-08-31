@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7776 Fakten** · Stand 2026-08-31 04:21 UTC · aktualisiert bei jedem Herzschlag
+**7781 Fakten** · Stand 2026-08-31 04:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3890
+- **dream:** 3895
 - **swarm_artifact:** 1767
 - **last_swarm_critique:** 644
 - **anti_pattern:** 541
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831042755:5:753c6d`
+*31.08. 04:27 UTC · Quelle: dream*
+
+The swarm cleanup reflex failed due to the same path resolution issue, creating a cascading failure pattern where cleanup tasks cannot execute.
+
+### `dream:20260831042755:4:f0a140`
+*31.08. 04:27 UTC · Quelle: dream*
+
+Three drive goals show stale signals (market analysis unused, skill proposals untested, model error rate high), indicating a systemic failure to convert analysis into action.
+
+### `dream:20260831042755:3:dea27a`
+*31.08. 04:27 UTC · Quelle: dream*
+
+The hand_action failure with 'nichts gelesen' reveals a critical path resolution bug where relative paths and sys.argv[1] are not properly resolved against ZOETRON_DATA.
+
+### `dream:20260831042755:2:346d52`
+*31.08. 04:27 UTC · Quelle: dream*
+
+Model failover to nvidia/nemotron-3-ultra-550b consistently succeeds but with high latency (44-80s), suggesting it should be deprioritized for time-sensitive tasks.
+
+### `dream:20260831042755:1:b9ee14`
+*31.08. 04:27 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate account-level rate limit exhaustion rather than model-specific issues, requiring shared quota management across all models.
 
 ### `dream:20260831042025:5:b55167`
 *31.08. 04:20 UTC · Quelle: dream*

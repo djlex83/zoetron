@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm cleanup reflex failed due to the same path resolution issue, creating a cascading failure pattern where cleanup tasks cannot execute.
+- Three drive goals show stale signals (market analysis unused, skill proposals untested, model error rate high), indicating a systemic failure to conve
+- The hand_action failure with 'nichts gelesen' reveals a critical path resolution bug where relative paths and sys.argv[1] are not properly resolved ag
+- Model failover to nvidia/nemotron-3-ultra-550b consistently succeeds but with high latency (44-80s), suggesting it should be deprioritized for time-se
+- Repeated 429 errors on z-ai/glm-5.2:free indicate account-level rate limit exhaustion rather than model-specific issues, requiring shared quota manage
 - Latency variance (8.4s to 54.9s) on the same model indicates unstable performance under load, requiring SLA-based circuit breaking.
 - Drive goals with 'failure' and 'stale' signals persist across cycles, revealing systemic gaps in error recovery and task completion pipelines.
 - Reflex-mode execution consistently converges when tools are pre-validated, suggesting automation reliability depends on upstream error handling.
@@ -51,11 +56,6 @@
 - Model latency and token usage vary significantly (9.4s to 39.4s), indicating inconsistent performance that should inform dynamic model selection.
 - The swarm failed to converge in 2 cycles with a score of 4/10, suggesting insufficient iteration depth or poor variant quality in the builder role.
 - Repeated 429 errors from z-ai/glm-5.2:free indicate a systemic rate-limiting issue that requires model-level quarantine and fallback routing.
-- No systematic model health scoring exists to proactively deprioritize rate-limited models before they fail, causing repeated 429 errors.
-- Reflex-driven skill combination operates without validating whether proposed skills already exist or are implemented, wasting cycles on duplicate deve
-- The system generates redundant skill proposals for identical resilience patterns (circuit breaker, health tracking, error classification, SLA enforcem
-- Successful fallback calls exhibit high latency (21-43s), suggesting that quota recovery or cold-start penalties degrade performance even after failove
-- Rate limiting (429) is the primary failure mode affecting all free-tier models simultaneously, indicating shared quota exhaustion rather than individu
 
 ---
 
