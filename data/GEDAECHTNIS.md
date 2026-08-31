@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8367 Fakten** · Stand 2026-08-31 21:56 UTC · aktualisiert bei jedem Herzschlag
+**8372 Fakten** · Stand 2026-08-31 22:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4340
+- **dream:** 4345
 - **swarm_artifact:** 1837
 - **last_swarm_critique:** 657
 - **anti_pattern:** 555
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831220210:5:e7ae95`
+*31.08. 22:02 UTC · Quelle: dream*
+
+Five concrete resilience proposals were already generated in-session, demonstrating the system can self-prescribe architectural fixes when given failure telemetry.
+
+### `dream:20260831220210:4:630ce8`
+*31.08. 22:02 UTC · Quelle: dream*
+
+Calibration error of 1 (predicted 7 vs actual 8) shows the internal predictor is well-tuned for model-error tasks.
+
+### `dream:20260831220210:3:8affdc`
+*31.08. 22:02 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260831220210:2:ad920d`
+*31.08. 22:02 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (7.6–210.8 s), indicating unreliable SLOs for production use.
+
+### `dream:20260831220210:1:141ebf`
+*31.08. 22:02 UTC · Quelle: dream*
+
+Provider z-ai/glm-5.2:free fails deterministically with 429 rate-limit errors, making it unusable without quota management or fallback.
 
 ### `dream:20260831215519:5:0a1c88`
 *31.08. 21:55 UTC · Quelle: dream*
