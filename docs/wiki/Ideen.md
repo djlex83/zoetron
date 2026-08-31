@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five skill proposals were generated in one cycle but none were converted to executable skills, confirming a structural bottleneck in proposal-to-imple
+- Simulation-applied delta logging was proposed but never implemented, leaving critique-execution gaps invisible and unmeasured in real time.
+- Local-first execution proposals were logged but never validated against actual tool-call patterns, revealing a gap between policy intent and runtime e
+- The 'Marktanalyse' goal was marked stale and converged via reflex without a score, suggesting completion criteria are too loosely defined or unenforce
+- Repeated 429 errors on z-ai/glm-5.2:free and 502 on nvidia/nemotron-3-ultra-550b-a55b:free indicate systemic provider-side rate limiting and overload,
 - Repeated 429 errors on specific models indicate need for per-model health tracking and automatic disablement.
 - Successful hand actions (file ops, scripts) demonstrate local execution reliability versus model invocation fragility.
 - Prediction calibration is absent, leading to unchecked drift between estimated and actual task outcomes.
@@ -51,11 +56,6 @@
 - Stale market analyses persist because there is no automated pipeline converting insights into executable actions.
 - High-latency models like nvidia/nemotron-3-ultra-550b benefit from micro-step decomposition with checkpointing to maintain progress under timeouts.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate rate-limit fragility requiring adaptive routing and backoff strategies.
-- Batch application of simulation revisions reduces total API calls versus iterative single-revision cycles.
-- Skill proposals accumulate faster than implementation, creating a capability gap despite known solutions.
-- Relative path resolution in hand actions fails silently when ZOETRON_DATA context shifts.
-- Working model (nemotron-3-ultra) exhibits high latency variance (18-50s) making time-bounded planning unreliable.
-- Free-tier model endpoints repeatedly hit 429 rate limits causing cascading failures across tasks.
 
 ---
 

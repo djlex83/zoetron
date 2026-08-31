@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7948 Fakten** · Stand 2026-08-31 10:22 UTC · aktualisiert bei jedem Herzschlag
+**7953 Fakten** · Stand 2026-08-31 10:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4030
+- **dream:** 4035
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831102625:5:292618`
+*31.08. 10:26 UTC · Quelle: dream*
+
+Five skill proposals were generated in one cycle but none were converted to executable skills, confirming a structural bottleneck in proposal-to-implementation pipeline.
+
+### `dream:20260831102625:4:16fdfa`
+*31.08. 10:26 UTC · Quelle: dream*
+
+Simulation-applied delta logging was proposed but never implemented, leaving critique-execution gaps invisible and unmeasured in real time.
+
+### `dream:20260831102625:3:709e6d`
+*31.08. 10:26 UTC · Quelle: dream*
+
+Local-first execution proposals were logged but never validated against actual tool-call patterns, revealing a gap between policy intent and runtime enforcement.
+
+### `dream:20260831102625:2:97b122`
+*31.08. 10:26 UTC · Quelle: dream*
+
+The 'Marktanalyse' goal was marked stale and converged via reflex without a score, suggesting completion criteria are too loosely defined or unenforced.
+
+### `dream:20260831102625:1:ce2c6d`
+*31.08. 10:26 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free and 502 on nvidia/nemotron-3-ultra-550b-a55b:free indicate systemic provider-side rate limiting and overload, not transient failures.
 
 ### `dream:20260831102043:5:f232bd`
 *31.08. 10:20 UTC · Quelle: dream*
