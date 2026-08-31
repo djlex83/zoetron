@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Free-tier OpenRouter models cannot be trusted for critical-path calls; any system depending on them must assume intermittent failure as the default st
+- Self-diagnosis and cleanup reflexes (alte-erinnerungen-aktualisieren) are functioning correctly and should be preserved as core reactive infrastructur
+- The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds every time but with 77–95s latency, so success-rate-only routing is insufficient without lat
+- A persistent gap exists between skill proposals and their implementation, meaning the system generates solutions but lacks a closing mechanism to conv
+- The z-ai/glm-5.2:free model repeatedly hits 429 rate limits on every call, indicating a structural unreliability that demands automatic quarantine rat
 - Static resource budgets waste capacity on failing tasks and starve promising ones.
 - High fallback latency (65-88s) makes synchronous workflows brittle; async patterns needed.
 - Field name mismatches between artifacts indicate missing schema validation in goal decomposition.
@@ -51,11 +56,6 @@
 - Goal 'Veraltete Ziele erneuern' shows iterative progress: simulation approved, artifact running (201 lines Python), TOR green, but calibration error o
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but exhibits high latency variance (66–114 s), requiring async invocation with generous t
 - The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without exponential backoff or quota management
-- Market analysis results remain unused due to missing integration between swarm output and decision-making workflows.
-- Swarm convergence in 1 cycle suggests max_cycles=2 is sufficient to bound compute cost without sacrificing quality.
-- Destructive operations (os.system/subprocess) lack sandboxing, leading to silent failures when paths are unresolved.
-- Nemotron latency spikes (77-125s) exceed acceptable SLA thresholds and cause pipeline stalls, necessitating timeout-based failover.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limit exhaustion requiring model quarantine after 3 consecutive failures.
 
 ---
 

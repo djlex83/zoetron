@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7661 Fakten** · Stand 2026-08-31 01:09 UTC · aktualisiert bei jedem Herzschlag
+**7666 Fakten** · Stand 2026-08-31 01:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3795
+- **dream:** 3800
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831011352:5:1d04f8`
+*31.08. 01:13 UTC · Quelle: dream*
+
+Free-tier OpenRouter models cannot be trusted for critical-path calls; any system depending on them must assume intermittent failure as the default state.
+
+### `dream:20260831011352:4:6f0b26`
+*31.08. 01:13 UTC · Quelle: dream*
+
+Self-diagnosis and cleanup reflexes (alte-erinnerungen-aktualisieren) are functioning correctly and should be preserved as core reactive infrastructure.
+
+### `dream:20260831011352:3:12f4a7`
+*31.08. 01:13 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds every time but with 77–95s latency, so success-rate-only routing is insufficient without latency-aware fallback.
+
+### `dream:20260831011352:2:f2bf59`
+*31.08. 01:13 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposals and their implementation, meaning the system generates solutions but lacks a closing mechanism to convert proposals into working code.
+
+### `dream:20260831011352:1:0509c8`
+*31.08. 01:13 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model repeatedly hits 429 rate limits on every call, indicating a structural unreliability that demands automatic quarantine rather than retry.
 
 ### `dream:20260831010820:5:8eb888`
 *31.08. 01:08 UTC · Quelle: dream*
