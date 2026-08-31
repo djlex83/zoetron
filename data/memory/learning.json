@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 12:50:01",
+ "stand": "2026-08-31 12:56:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 18,
-   "erfolge": 18,
+   "laeufe": 19,
+   "erfolge": 19,
    "quote": 1.0
   },
   {
@@ -165,7 +165,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.823,
+ "haende_quote": 0.837,
  "simulationen_angewandt": 16,
  "swarm_scores": {
   "n": 22,

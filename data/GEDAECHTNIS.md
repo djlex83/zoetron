@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8053 Fakten** · Stand 2026-08-31 12:50 UTC · aktualisiert bei jedem Herzschlag
+**8058 Fakten** · Stand 2026-08-31 12:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4135
+- **dream:** 4140
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831125620:5:4b6c3c`
+*31.08. 12:56 UTC · Quelle: dream*
+
+Pre-flight validation of tool paths/dependencies is absent; hand_action succeeds but only because scripts happen to exist, not because they were verified.
+
+### `dream:20260831125620:4:0e1d48`
+*31.08. 12:56 UTC · Quelle: dream*
+
+Latency telemetry is collected per call but never feeds back into model selection, wasting signal that could prevent 100s delays.
+
+### `dream:20260831125620:3:54841d`
+*31.08. 12:56 UTC · Quelle: dream*
+
+Reflex-driven goals converge quickly (exit 0, converged true) but only address symptoms (market analysis, model errors) not root causes (no model router, no proposal harness).
+
+### `dream:20260831125620:2:30c855`
+*31.08. 12:56 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ in this session) but none are auto-tested or deployed, revealing a broken proposal→implementation loop despite existing reflex infrastructure.
+
+### `dream:20260831125620:1:531a9d`
+*31.08. 12:56 UTC · Quelle: dream*
+
+A single model provider (z-ai/glm-5.2) fails deterministically with 429 errors while the fallback (nvidia/nemotron-3-ultra) succeeds but exhibits 3× latency variance (34–101s), indicating missing health-aware routing.
 
 ### `dream:20260831124938:5:e585d5`
 *31.08. 12:49 UTC · Quelle: dream*
