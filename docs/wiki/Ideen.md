@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 00:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 00:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten echt testen *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen entwickeln *(wieder aufgegriffen: 2×)*
 - Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 2×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 on an 8-point scale indicates reliable self-assessment for planning.
+- Hand-tool actions are two orders of magnitude faster than model calls, favor them for I/O.
+- Swarm convergence in a single cycle suggests task decomposition is well-calibrated for current goals.
+- Nvidia Nemotron shows best reliability/latency trade-off after initial warm-up failures.
+- Free-tier models suffer pervasive rate-limiting (429) making them unreliable as primary workers.
 - Only poolside/laguna-s-2.1:free succeeded (11s latency), suggesting smaller/faster models may have higher free-tier quota availability.
 - Swarm simulation revised 3 times but never validated against actual rate-limit constraints, producing plans that fail identically in execution.
 - Goals lack decomposition: 'Modell-Fehler stark reduzieren' has no measurable target, retry policy, or fallback chain, making progress unverifiable.
@@ -51,11 +56,6 @@
 - Poolside Laguna consistently delivers low-latency (1.2s) successful completions, making it the only viable free fallback.
 - Nvidia Nemotron succeeds but exhibits extreme latency variance (29-95s) that violates real-time constraints.
 - Free-tier models on OpenRouter suffer systematic rate-limiting (429) making them unreliable for production workflows.
-- System operates at stress=1.0 in conserve mode but still spawns swarms and model calls, violating its own metabolic budget.
-- Previous dream proposals (registry, probes, classifier, retriever, lifecycle) remain unimplemented, creating an idea-execution gap.
-- Nemotron's latency varies 4x (18-73s) and now returns empty choices, showing even 'healthy' models degrade without circuit-breaking.
-- Hand actions fail because relative paths ignore ZOETRON_DATA, revealing a systemic path-resolution fragility across tools.
-- z-ai/glm-5.2:free consistently returns 429 errors yet remains in rotation, proving no automatic quarantine exists for rate-limited models.
 
 ---
 

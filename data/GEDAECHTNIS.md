@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7636 Fakten** · Stand 2026-08-31 00:36 UTC · aktualisiert bei jedem Herzschlag
+**7641 Fakten** · Stand 2026-08-31 00:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3770
+- **dream:** 3775
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831004214:5:9d31de`
+*31.08. 00:42 UTC · Quelle: dream*
+
+Calibration error of 1 on an 8-point scale indicates reliable self-assessment for planning.
+
+### `dream:20260831004214:4:0c56be`
+*31.08. 00:42 UTC · Quelle: dream*
+
+Hand-tool actions are two orders of magnitude faster than model calls, favor them for I/O.
+
+### `dream:20260831004214:3:1d902d`
+*31.08. 00:42 UTC · Quelle: dream*
+
+Swarm convergence in a single cycle suggests task decomposition is well-calibrated for current goals.
+
+### `dream:20260831004214:2:a96c4d`
+*31.08. 00:42 UTC · Quelle: dream*
+
+Nvidia Nemotron shows best reliability/latency trade-off after initial warm-up failures.
+
+### `dream:20260831004214:1:9489c6`
+*31.08. 00:42 UTC · Quelle: dream*
+
+Free-tier models suffer pervasive rate-limiting (429) making them unreliable as primary workers.
 
 ### `dream:20260831003421:5:9a5736`
 *31.08. 00:34 UTC · Quelle: dream*
