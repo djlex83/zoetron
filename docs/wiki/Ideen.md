@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,14 +12,14 @@
 - Add ProposalTracker persisting skill_proposals with state machine: proposed→implemented|deferred:reason|reject *(hatte die Idee 4×)*
 - Integrate MetabolismGate checking stress/state before non-critical tasks; defer swarms/model-calls when state= *(hatte die Idee 4×)*
 - Enforce LatencySLA middleware: hard 10s timeout, immediate failover on breach, and SLA breach logging for mode *(hatte die Idee 4×)*
-- stress_aware_planner: reads metabolism_check and model_health_registry to scope swarm goals to viable models a *(hatte die Idee 3×)*
-- simulation_revision_loop: automates simulate→revise→apply→verify for new skills, closing the propose-use gap. *(hatte die Idee 3×)*
 - Define explicit acceptance criteria and milestone checkpoints for each drive goal; log progress deltas to enab *(hatte die Idee 3×)*
 - Deploy a model router with per-provider rate-limit counters, 429/502-triggered fallback <2s, and health-check  *(hatte die Idee 3×)*
 - Build a calibration-correction loop that automatically adjusts effort estimates by +100% for simulation-to-pra *(hatte die Idee 3×)*
 - Create a critic-driven evolution harness that generates 3 variants of any artifact, scores them against a rubr *(hatte die Idee 3×)*
 - Design a consolidation checkpoint that snapshots working artifacts (e.g., the 134-line Python simulation) befo *(hatte die Idee 3×)*
 - Implement a circuit-breaker router that tracks per-model health (success rate, latency, error streak) and rout *(hatte die Idee 3×)*
+- Add exponential backoff with jitter (base 2s, max 60s) and automatic fallback to next-healthiest model on 429/ *(hatte die Idee 3×)*
+- Enforce minimum 1:2 critic-to-builder ratio in swarm configs and require critic sign-off before builder propos *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -35,12 +35,17 @@
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 2×)*
-- Träume mit Wissen verbinden *(wieder aufgegriffen: 2×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No checkpointing exists for long-running swarms, so any model interruption discards all intermediate progress.
+- Relative script paths and missing pre-flight checks cause silent environment mismatches that masquerade as model failures.
+- Swarm cycles lack a hard convergence gate, allowing infinite iteration without quality improvement.
+- Skill proposals accumulate but remain untested because the system lacks an automated 'proposal-to-validation' pipeline.
+- Model provider rate limits (429) and upstream overloads (502) are the dominant failure mode, making single-model reliance untenable.
 - Simulation-revision loops are proposed with risk thresholds but lack a gate to enforce application before task completion.
 - Stale work (market analysis) persists for days while new skills accumulate unused, indicating a prioritization and closure deficit.
 - Multiple skill proposals for retry logic, circuit breaking, and model rotation exist but remain unimplemented, revealing a proposal-execution gap.
@@ -51,11 +56,6 @@
 - Fixed calibration offsets drift; online bias estimators updated per task family from prediction residuals maintain accuracy.
 - Local hand actions (file ops, scripts) succeed deterministically where model calls fail stochastically.
 - Free-tier models consistently fail with 429 rate limits, making them unreliable as primary workers without a routing layer.
-- Hand actions succeed on absolute paths but skill proposals reveal latent relative-path fragility in ZOETRON_DATA resolution.
-- Swarm converges in single cycle with 5 agents but never evolves, suggesting premature convergence or insufficient search depth.
-- Calibration consistently underestimates cycle count by ~25% (predicted 6 vs actual 8) indicating systematic planning bias.
-- Nemotron-3-Ultra latency (136-142s) exceeds practical interactive thresholds despite quality scores.
-- Free-tier model endpoints exhibit cascading 429/404 failures making single-model reliance untenable.
 
 ---
 

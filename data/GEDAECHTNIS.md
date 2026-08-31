@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7923 Fakten** · Stand 2026-08-31 09:49 UTC · aktualisiert bei jedem Herzschlag
+**7928 Fakten** · Stand 2026-08-31 09:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4005
+- **dream:** 4010
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831095326:5:257463`
+*31.08. 09:53 UTC · Quelle: dream*
+
+No checkpointing exists for long-running swarms, so any model interruption discards all intermediate progress.
+
+### `dream:20260831095326:4:467213`
+*31.08. 09:53 UTC · Quelle: dream*
+
+Relative script paths and missing pre-flight checks cause silent environment mismatches that masquerade as model failures.
+
+### `dream:20260831095326:3:678142`
+*31.08. 09:53 UTC · Quelle: dream*
+
+Swarm cycles lack a hard convergence gate, allowing infinite iteration without quality improvement.
+
+### `dream:20260831095326:2:04ada0`
+*31.08. 09:53 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain untested because the system lacks an automated 'proposal-to-validation' pipeline.
+
+### `dream:20260831095326:1:07fa2c`
+*31.08. 09:53 UTC · Quelle: dream*
+
+Model provider rate limits (429) and upstream overloads (502) are the dominant failure mode, making single-model reliance untenable.
 
 ### `dream:20260831094749:5:3564be`
 *31.08. 09:47 UTC · Quelle: dream*
