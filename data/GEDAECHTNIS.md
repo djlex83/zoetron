@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7676 Fakten** · Stand 2026-08-31 01:28 UTC · aktualisiert bei jedem Herzschlag
+**7681 Fakten** · Stand 2026-08-31 01:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3810
+- **dream:** 3815
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831013324:5:8b8984`
+*31.08. 01:33 UTC · Quelle: dream*
+
+Destructive operations like os.system calls are being executed without safeguards, posing a risk that requires dry-run wrapping and human confirmation.
+
+### `dream:20260831013324:4:4219c2`
+*31.08. 01:33 UTC · Quelle: dream*
+
+Convergence in swarm cycles occurs within a single cycle, making additional cycles unnecessary and wasteful of compute resources.
+
+### `dream:20260831013324:3:c0b8fe`
+*31.08. 01:33 UTC · Quelle: dream*
+
+Skill proposals are frequently generated but lack validation mechanisms, leading to a gap between proposal and actual usability.
+
+### `dream:20260831013324:2:75502c`
+*31.08. 01:33 UTC · Quelle: dream*
+
+Nemotron models exhibit high latency variability (8.8s to 24.6s), suggesting they are unreliable for latency-sensitive tasks without a failover mechanism.
+
+### `dream:20260831013324:1:e22c22`
+*31.08. 01:33 UTC · Quelle: dream*
+
+The model z-ai/glm-5.2:free consistently fails with 429 Too Many Requests errors, indicating it is rate-limited and should be deprioritized or quarantined.
 
 ### `dream:20260831012733:5:1d44af`
 *31.08. 01:27 UTC · Quelle: dream*
