@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 21:15:44",
+ "stand": "2026-08-31 21:26:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,12 +69,6 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -88,6 +82,12 @@
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -111,16 +111,16 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8338 Fakten** · Stand 2026-08-31 21:16 UTC · aktualisiert bei jedem Herzschlag
+**8343 Fakten** · Stand 2026-08-31 21:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4320
+- **dream:** 4325
 - **swarm_artifact:** 1831
 - **last_swarm_critique:** 656
 - **anti_pattern:** 555
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831212543:5:d4db9b`
+*31.08. 21:25 UTC · Quelle: dream*
+
+Swarm convergence lacks enforcement: goals start but reflex tools fail silently without critic/planner validation loops.
+
+### `dream:20260831212543:4:15483a`
+*31.08. 21:25 UTC · Quelle: dream*
+
+Multiple skill proposals exist for resilience (router, telemetry, scheduler) but none have been graduated through an A/B pipeline into production.
+
+### `dream:20260831212543:3:8f20d0`
+*31.08. 21:25 UTC · Quelle: dream*
+
+System stress reaches maximum (1.0) triggering conserve mode, but no automatic workload shedding or timeout scaling occurs.
+
+### `dream:20260831212543:2:d6a7f5`
+*31.08. 21:25 UTC · Quelle: dream*
+
+File operations fail because tools use relative paths instead of the canonical ZOETRON_DATA environment variable, breaking data access.
+
+### `dream:20260831212543:1:9beedd`
+*31.08. 21:25 UTC · Quelle: dream*
+
+Free-tier model providers consistently fail under load (429/502), requiring a router with local fallback and quota-aware scheduling.
 
 ### `tool:modellfehler-deutlich-reduzieren`
 *31.08. 21:15 UTC · Quelle: hands*

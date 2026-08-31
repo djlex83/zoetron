@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 21:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 21:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,10 +29,10 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence lacks enforcement: goals start but reflex tools fail silently without critic/planner validation loops.
+- Multiple skill proposals exist for resilience (router, telemetry, scheduler) but none have been graduated through an A/B pipeline into production.
+- System stress reaches maximum (1.0) triggering conserve mode, but no automatic workload shedding or timeout scaling occurs.
+- File operations fail because tools use relative paths instead of the canonical ZOETRON_DATA environment variable, breaking data access.
+- Free-tier model providers consistently fail under load (429/502), requiring a router with local fallback and quota-aware scheduling.
 - Pruning removes zero facts/events despite ongoing experience, suggesting pruning thresholds are misconfigured or memory grows unbounded.
 - Skill proposals accumulate (5 in logs) but drive goal "implement skills" persists, revealing a proposal-to-implementation gap.
 - Drive goals repeat across cycles (reduce errors, update market data, implement skills) without convergence, showing goal management lacks progress tra
@@ -51,11 +56,6 @@
 - Reflex-driven maintenance (e.g., pruning stale analyses) succeeds reliably when scoped to single, well-defined tools.
 - The system lacks real-time per-model health telemetry, causing repeated attempts to failing endpoints instead of immediate quarantine.
 - Free-tier LLM providers consistently return 429 rate-limit errors and 502 upstream overloads, making them unreliable for production workloads without 
-- Self-diagnosis reports zero organ errors despite repeated 429 failures, indicating health checks monitor internal state but not provider SLA complianc
-- Reflex-driven dream connection succeeded (act_done converged) while model calls failed, showing internal coordination works but external API boundary 
-- Drive goals reveal three orthogonal stressors (model failures, stale analyses, missing simulation tests) that compound: unreliable models block analys
-- Five independent skill proposals converge on model routing, health telemetry, circuit breaking, and pre-flight probes — convergent evolution signals a
-- Provider z-ai/glm-5.2:free fails deterministically with 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds at 18-46s latency, proving re
 
 ---
 
