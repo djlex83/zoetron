@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple skill proposals exist but drive goal 'Vorgeschlagene Fähigkeiten in echte Handlungen umsetzen' reveals systematic proposal-to-implementation 
+- Zero pruning events across cycles suggests pruning thresholds are misconfigured or memory pressure is absent.
+- Reflex mode successfully completed market analysis using local Python script, validating local-first execution over model calls.
+- Fallback model nvidia/nemotron-3-ultra shows high latency variance (21-62s) requiring latency-aware routing and timeout budgets.
+- Recurring 429 errors on z-ai/glm-5.2:free indicate missing exponential backoff and circuit-breaker logic for rate-limited providers.
 - Pruning finds no stale data, meaning the experience buffer is dominated by recent repeated failures rather than diverse learning.
 - Drive goals reveal a meta-need: the system must autonomously acquire skills to handle its own model-selection failures.
 - Self-diagnosis and reflex systems operate correctly but model failures prevent higher-level reasoning tasks from executing.
@@ -51,11 +56,6 @@
 - Stale goals (>48h) persist undecomposed, blocking progress until a reflex or manual intervention occurs.
 - Proposed skills accumulate without execution because no lifecycle manager promotes, assigns, or enforces SLAs.
 - Free-tier models consistently hit 429 rate limits under load, requiring automated routing with health-aware fallback.
-- Concurrent warm-connection pools with real-time health scoring (EWMA latency + error rate) outperform sequential fallback by reducing tail latency and
-- Skill proposals accumulate without a promotion mechanism; auto-committing proposals with ≥2 drive signals and assigning owners via capability match en
-- Silent degradation (latency spikes, empty choices) goes undetected without pre-flight probes; a lightweight completion check before routing production
-- Relative-path drift in script entry points causes non-deterministic I/O failures; a singleton config (ZOETRON_DATA) with mandatory absolute-path resol
-- Rate limiting (429) and upstream overload (502) are the dominant failure modes across free-tier model endpoints, requiring proactive circuit-breaking 
 
 ---
 
