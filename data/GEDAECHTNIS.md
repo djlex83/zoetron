@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7716 Fakten** · Stand 2026-08-31 02:25 UTC · aktualisiert bei jedem Herzschlag
+**7721 Fakten** · Stand 2026-08-31 02:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3850
+- **dream:** 3855
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831023404:5:b998ed`
+*31.08. 02:34 UTC · Quelle: dream*
+
+Self-diagnosis reports no internal organ failures, yet external dependency failures persist — internal health checks alone are insufficient to guarantee system reliability.
+
+### `dream:20260831023404:4:af65be`
+*31.08. 02:34 UTC · Quelle: dream*
+
+Stale goals (unfinished analyses, unused results) block new insights and must be explicitly resolved rather than waiting for spontaneous attention.
+
+### `dream:20260831023404:3:15d5e1`
+*31.08. 02:34 UTC · Quelle: dream*
+
+Reflex-mode execution reliably converges on well-scoped goals, suggesting that triggering goals as reflexes rather than open-ended drives increases completion rates.
+
+### `dream:20260831023404:2:b09572`
+*31.08. 02:34 UTC · Quelle: dream*
+
+Skill proposals and analytical work products accumulate without lifecycle management — no state machine tracks whether they are implemented, deferred, or rejected, causing indefinite pile-up.
+
+### `dream:20260831023404:1:b637e0`
+*31.08. 02:34 UTC · Quelle: dream*
+
+External model API failures (429 rate limits) are the dominant failure mode, and without automatic quarantine or fallback the same model is retried repeatedly, wasting cycles.
 
 ### `dream:20260831022416:5:01dc3f`
 *31.08. 02:24 UTC · Quelle: dream*
