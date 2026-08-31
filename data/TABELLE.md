@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 5715 Neuronen · 313500 bewertete Synapsen
+Stand: 5726 Neuronen · 314834 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -15,14 +15,14 @@ Stand: 5715 Neuronen · 313500 bewertete Synapsen
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 525 | 0.24 |
 | 4 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 543 | 0.23 |
 | 5 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 476 | 0.26 |
-| 6 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 515 | 0.24 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 448 | 0.26 |
-| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 448 | 0.26 |
-| 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 469 | 0.25 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 455 | 0.24 |
-| 11 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 429 | 0.25 |
-| 12 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 406 | 0.27 |
-| 13 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 417 | 0.26 |
+| 6 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 516 | 0.24 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 450 | 0.26 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 450 | 0.26 |
+| 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 470 | 0.25 |
+| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 456 | 0.24 |
+| 11 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 430 | 0.25 |
+| 12 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 407 | 0.27 |
+| 13 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 418 | 0.26 |
 | 14 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 457 | 0.23 |
 | 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 483 | 0.22 |
 

@@ -1,17 +1,17 @@
 {
- "stand": "2026-08-31 16:53:08",
+ "stand": "2026-08-31 17:08:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 34,
-   "erfolge": 34,
+   "laeufe": 33,
+   "erfolge": 33,
    "quote": 1.0
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 20,
-   "erfolge": 20,
+   "laeufe": 19,
+   "erfolge": 19,
    "quote": 1.0
   },
   {
@@ -64,7 +64,7 @@
   },
   {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 3,
+   "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -117,12 +117,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -171,17 +165,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.841,
+ "haende_quote": 0.835,
  "simulationen_angewandt": 13,
  "swarm_scores": {
   "n": 19,
   "best": 9.0,
-  "schnitt": 5.47
+  "schnitt": 5.42
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 15,
-   "schnitt": 5.67
+   "n": 16,
+   "schnitt": 5.62
   },
   "bau": {
    "n": 3,

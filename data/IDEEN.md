@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 16:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 17:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs remove zero facts/events, indicating retention policies may be too aggressive or data not yet eligible.
+- Skill proposals accumulate without deduplication or lifecycle tracking, risking redundant implementations and untracked effectiveness.
+- Successful model nvidia/nemotron-3-ultra-550b-a55b:free exhibits high latency (35-80s), making it unsuitable for time-sensitive paths without async ha
+- Drive and dream modules repeatedly hit 180-second timeouts, suggesting the timeout threshold is too low for current workloads or tasks are blocking.
+- The z-ai/glm-5.2:free model consistently fails with rate limits (429) and server errors (500/502), indicating it should be deprioritized or circuit-br
 - Reflex-mode convergence on the swarm mission proves that pre-wired tool chains bypass planner latency; future missions should ship reflex scripts for 
 - Drive goals accumulate (stale/failure/gap) but no automatic linker creates skill proposals; an ExecutionGapTracker that alerts on goal age > threshold
 - Three duplicate proposals (ProposalDeduplicator, CircuitBreaker, PathContract) show the proposal generator lacks semantic deduplication; hashing by in
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors despite persistent model failures, suggesting diagnostic blind spots for external dependency health.
 - Reflex-based cleanup tasks converge reliably but skill proposals accumulate without implementation, creating a proposal-execution gap.
 - The model router lacks health-aware routing, causing repeated 429 errors on z-ai/glm-5.2:free while fallback latencies vary 3x (31-94s) indicating no 
-- Reflex-based skill installation succeeds (neue-fähigkeiten-aktiv-vorschlagen.py) but lacks post-deployment validation of skill effectiveness.
-- Drive goals (model failure understanding, dream linking, self-assessment) age without automatic linkage to concrete skill proposals in testing or depl
-- Skill proposals accumulate without semantic deduplication, risking redundant implementations of circuit breaker, quota routing, and gap tracking.
-- Successful model calls (inclusionai/ling-3.0-flash-fin:free, poolside/laguna-s-2.1:free) show 6.9-19.3s latency, establishing a baseline for healthy m
-- Free-tier model endpoints consistently fail with 429 rate limits, making them unreliable without circuit breaking and quota-aware routing.
 
 ---
 
