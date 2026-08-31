@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based tool reuse (e.g., 'abgelehnte-werkzeuge-verstehen-und-verbe.py') successfully unblocks stalled goals, suggesting reflexes should be first
+- Drive goals reveal a meta-learning loop: the system recognizes its own failure patterns and generates improvement proposals, but lacks automated promo
+- Multiple independent skill proposals converge on the same solution pattern: model health tracking, circuit breaking, and prioritized fallback chains.
+- Fallback models succeed but exhibit high latency variance (13-60s), making timeout budgets and latency-aware routing essential for reliable task compl
+- Rate limiting (429) on specific models is a persistent, predictable failure mode that requires proactive routing rather than reactive retries.
 - Skill proposals lack automated promotion-to-commitment pipeline causing implementation drift despite reflex execution capability.
 - Multiple independent skill proposals converge on identical resilience primitives (circuit breaker, EWMA, fallback chain) confirming architectural nece
 - Silent degradation manifests as 200-status empty responses necessitating pre-flight probe validation before production traffic.
@@ -51,11 +56,6 @@
 - Multiple skill proposals (ModelRouter, ModelResilienceLayer, concurrent pool) address identical resilience gaps but remain unimplemented, showing prop
 - Latency variance (14-38s) on nvidia/nemotron-3-ultra indicates no health-aware load balancing or warm connection pooling across available models.
 - Repeated 429 errors on z-ai/glm-5.2:free reveal single-model dependency without circuit breaker or exponential backoff, causing cascade failures under
-- Failure-driven goal generation produces multiple concurrent goals each cycle without prioritization, risking goal proliferation and diluted focus.
-- Self-diagnosis checking only internal state misses external API degradation; health probes must extend to provider latency, error rate, and quota.
-- Failover to nemotron-3-ultra-550b-a55b resolves availability but introduces latency variance (14–36s) that can cascade into downstream timeouts if unm
-- Skill proposals improve in specificity across iterations but remain unverified without an automated fast-feedback test harness to convert ideas into p
-- External API rate-limiting (429) on z-ai/glm-5.2:free is a persistent failure mode, not transient, requiring architectural resilience beyond simple re
 
 ---
 
