@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7988 Fakten** · Stand 2026-08-31 11:15 UTC · aktualisiert bei jedem Herzschlag
+**7993 Fakten** · Stand 2026-08-31 11:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4070
+- **dream:** 4075
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831112137:5:ce4206`
+*31.08. 11:21 UTC · Quelle: dream*
+
+Successful reflex use (market analysis) shows existing tools can close gaps if automatically triggered by staleness.
+
+### `dream:20260831112137:4:866e90`
+*31.08. 11:21 UTC · Quelle: dream*
+
+Relative paths at the hand-action boundary cause silent I/O failures that only absolute-path contracts prevent.
+
+### `dream:20260831112137:3:b54867`
+*31.08. 11:21 UTC · Quelle: dream*
+
+Stale goals (>48h) persist undecomposed, blocking progress until a reflex or manual intervention occurs.
+
+### `dream:20260831112137:2:dc83d3`
+*31.08. 11:21 UTC · Quelle: dream*
+
+Proposed skills accumulate without execution because no lifecycle manager promotes, assigns, or enforces SLAs.
+
+### `dream:20260831112137:1:e195af`
+*31.08. 11:21 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, requiring automated routing with health-aware fallback.
 
 ### `dream:20260831111441:5:8cb4de`
 *31.08. 11:14 UTC · Quelle: dream*
