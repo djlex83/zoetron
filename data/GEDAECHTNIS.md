@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8068 Fakten** · Stand 2026-08-31 13:10 UTC · aktualisiert bei jedem Herzschlag
+**8073 Fakten** · Stand 2026-08-31 13:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4150
+- **dream:** 4155
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831131629:5:fe94f0`
+*31.08. 13:16 UTC · Quelle: dream*
+
+Model latency variance (47s vs 147s) on the same endpoint suggests silent degradation or queueing effects that passive monitoring misses, requiring active synthetic probes to detect before production traffic arrives.
+
+### `dream:20260831131629:4:b45d25`
+*31.08. 13:16 UTC · Quelle: dream*
+
+Absolute path contract violations recur across proposals because path resolution is enforced only at hand-action boundary, not at skill composition time, allowing relative paths to propagate into execution.
+
+### `dream:20260831131629:3:d0dda6`
+*31.08. 13:16 UTC · Quelle: dream*
+
+Drive goals persistently signal execution gaps (stale market analysis, untested skill proposals) while self-diagnosis reports zero internal errors, exposing a blind spot between perceived health and actual delivery capability.
+
+### `dream:20260831131629:2:2d942d`
+*31.08. 13:16 UTC · Quelle: dream*
+
+Redundant skill proposals for identical resilience patterns (circuit breaker, pre-flight probe, fallback chain) indicate a missing proposal deduplication and implementation tracking mechanism.
+
+### `dream:20260831131629:1:abca3d`
+*31.08. 13:16 UTC · Quelle: dream*
+
+Rate limiting (429) on specific models triggers cascading fallback latency spikes up to 147s, revealing that single-model dependency without proactive health checks creates unpredictable tail latency.
 
 ### `dream:20260831130839:5:c0faed`
 *31.08. 13:08 UTC · Quelle: dream*

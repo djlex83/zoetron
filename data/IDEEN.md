@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 13:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 13:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,11 +27,11 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 5×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency variance (47s vs 147s) on the same endpoint suggests silent degradation or queueing effects that passive monitoring misses, requiring ac
+- Absolute path contract violations recur across proposals because path resolution is enforced only at hand-action boundary, not at skill composition ti
+- Drive goals persistently signal execution gaps (stale market analysis, untested skill proposals) while self-diagnosis reports zero internal errors, ex
+- Redundant skill proposals for identical resilience patterns (circuit breaker, pre-flight probe, fallback chain) indicate a missing proposal deduplicat
+- Rate limiting (429) on specific models triggers cascading fallback latency spikes up to 147s, revealing that single-model dependency without proactive
 - Prune runs consistently remove zero facts or events, indicating either stale-data detection is too lenient or the system never accumulates truly expen
 - Reflex-based execution completes tasks successfully and quickly (0.22s), suggesting that pre-built reflexes are more dependable than model-driven plan
 - The fallback model (nemotron-3-ultra) works reliably but at 86–147s latency, exposing a quality-vs-speed tradeoff that has no automated resolution str
@@ -51,11 +56,6 @@
 - Seventy-five skill proposals exist but the proposal-to-implementation loop lacks a test harness and deployment tracker, causing stagnation.
 - Self-diagnosis only checks internal organs and never probes external API health, so quota exhaustion goes undetected until runtime.
 - Repeated 429 errors on the same model endpoint reveal a missing circuit-breaker and automatic fallback mechanism.
-- Pre-flight validation of tool paths/dependencies is absent; hand_action succeeds but only because scripts happen to exist, not because they were verif
-- Latency telemetry is collected per call but never feeds back into model selection, wasting signal that could prevent 100s delays.
-- Reflex-driven goals converge quickly (exit 0, converged true) but only address symptoms (market analysis, model errors) not root causes (no model rout
-- Skill proposals accumulate (5+ in this session) but none are auto-tested or deployed, revealing a broken proposal→implementation loop despite existing
-- A single model provider (z-ai/glm-5.2) fails deterministically with 429 errors while the fallback (nvidia/nemotron-3-ultra) succeeds but exhibits 3× l
 
 ---
 
