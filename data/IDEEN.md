@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 05:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No automated model health scoring or quota-aware routing exists, leading to repeated failed attempts.
+- Reflex-driven completion succeeds for well-scoped tasks like market analysis but lacks generalization.
+- Multiple redundant skill proposals (ErrorClassifier, LatencySLA, QuotaPool) indicate missing proposal tracking and deduplication.
+- Fallback model poolside/laguna-s-2.1:free exhibits high latency (7.5-22.3s) violating interactive SLAs.
+- Free-tier models simultaneously exhaust shared OpenRouter quota causing cascading 429 failures across all free models.
 - Previous proposals for circuit breakers and latency SLAs remain unimplemented but are critical for mitigating the ongoing 429 failures.
 - System reflexes and self-diagnoses are functioning correctly, isolating the primary failure cause to external API rate limiting.
 - The system's drive to understand model failures is directly supported by implementing error classification and smart routing.
@@ -51,11 +56,6 @@
 - Dream consolidation exceeded 180s timeout, indicating experience volume exceeds processing capacity during high-failure periods.
 - Circuit breaker correctly quarantined nvidia/nemotron after 3 consecutive 404s, but 1800s quarantine may be excessive for transient errors.
 - Rate limiting from OpenRouter affects multiple models simultaneously, requiring provider-level fallback not just model-level.
-- Reflex-based execution succeeded where model-based planning failed, showing that deterministic scripts outperform flaky LLM calls for well-defined cle
-- The dream module itself timed out at 180 seconds during consolidation, revealing recursive resource contention when processing failure-heavy logs.
-- Calibration overestimated effort by 100% (predicted 6 vs actual 3), suggesting the estimator lacks historical baseline data for reflex tasks.
-- The act module timed out after 1500 seconds on a cleanup task, indicating missing timeout guards or infinite loops in reflex execution.
-- Multiple free-tier models fail consistently with 429 rate limits and 404 errors, making them unreliable for production tasks.
 
 ---
 

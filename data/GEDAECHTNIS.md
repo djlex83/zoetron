@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7801 Fakten** · Stand 2026-08-31 04:55 UTC · aktualisiert bei jedem Herzschlag
+**7806 Fakten** · Stand 2026-08-31 05:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3915
+- **dream:** 3920
 - **swarm_artifact:** 1767
 - **last_swarm_critique:** 644
 - **anti_pattern:** 541
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831050013:5:6cbe35`
+*31.08. 05:00 UTC · Quelle: dream*
+
+No automated model health scoring or quota-aware routing exists, leading to repeated failed attempts.
+
+### `dream:20260831050013:4:3321a3`
+*31.08. 05:00 UTC · Quelle: dream*
+
+Reflex-driven completion succeeds for well-scoped tasks like market analysis but lacks generalization.
+
+### `dream:20260831050013:3:0ad2fd`
+*31.08. 05:00 UTC · Quelle: dream*
+
+Multiple redundant skill proposals (ErrorClassifier, LatencySLA, QuotaPool) indicate missing proposal tracking and deduplication.
+
+### `dream:20260831050013:2:598c95`
+*31.08. 05:00 UTC · Quelle: dream*
+
+Fallback model poolside/laguna-s-2.1:free exhibits high latency (7.5-22.3s) violating interactive SLAs.
+
+### `dream:20260831050013:1:23ca97`
+*31.08. 05:00 UTC · Quelle: dream*
+
+Free-tier models simultaneously exhaust shared OpenRouter quota causing cascading 429 failures across all free models.
 
 ### `dream:20260831045436:5:dabcdc`
 *31.08. 04:54 UTC · Quelle: dream*
