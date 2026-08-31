@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7854 Fakten** · Stand 2026-08-31 07:42 UTC · aktualisiert bei jedem Herzschlag
+**7859 Fakten** · Stand 2026-08-31 07:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3950
+- **dream:** 3955
 - **swarm_artifact:** 1773
 - **last_swarm_critique:** 645
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831074658:5:ba758f`
+*31.08. 07:46 UTC · Quelle: dream*
+
+Token input size remains constant at 2171 tokens across most requests, indicating standardized prompt formatting.
+
+### `dream:20260831074658:4:ff693b`
+*31.08. 07:46 UTC · Quelle: dream*
+
+Rate limiting occurs in bursts, suggesting OpenRouter enforces per-model quotas that reset periodically.
+
+### `dream:20260831074658:3:65e33c`
+*31.08. 07:46 UTC · Quelle: dream*
+
+Latency scales predictably with token output volume, with 10000-token responses taking ~207s versus 1105-token responses at ~24.7s.
+
+### `dream:20260831074658:2:39f44b`
+*31.08. 07:46 UTC · Quelle: dream*
+
+The poolside/laguna-s-2.1:free model is the only reliable endpoint, handling all successful requests across varying token loads.
+
+### `dream:20260831074658:1:fca221`
+*31.08. 07:46 UTC · Quelle: dream*
+
+All non-poolside models consistently fail with HTTP 429 errors, indicating a systemic rate-limiting issue rather than isolated model failures.
 
 ### `dream:20260831074041:5:56b25e`
 *31.08. 07:40 UTC · Quelle: dream*
