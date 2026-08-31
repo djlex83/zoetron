@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 21:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 21:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -36,11 +36,16 @@
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No circuit-breaker or model-health tracking exists: failed models are retried identically to healthy ones, causing cascading delays.
+- The system retries rate-limited models (z-ai/glm-5.2:free) immediately with zero backoff, wasting cycles and accelerating quota exhaustion.
+- poolside/laguna-s-2.1:free latency scales linearly with output tokens (0.8s for 8 tokens vs 197s for 10k tokens), revealing per-token processing bottl
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeds where others fail but exhibits 6x latency variance (8-48s), indicating queue-dependent upstream capaci
+- Free-tier models consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads without aggressive request spacing.
 - Swarm convergence lacks enforcement: goals start but reflex tools fail silently without critic/planner validation loops.
 - Multiple skill proposals exist for resilience (router, telemetry, scheduler) but none have been graduated through an A/B pipeline into production.
 - System stress reaches maximum (1.0) triggering conserve mode, but no automatic workload shedding or timeout scaling occurs.
@@ -51,11 +56,6 @@
 - Drive goals repeat across cycles (reduce errors, update market data, implement skills) without convergence, showing goal management lacks progress tra
 - Fallback model (nvidia/nemotron) exhibits high latency (9-21s) with no task-type routing, causing unpredictable response times.
 - The primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, indicating missing retry/backoff logic and over-reliance on a single provide
-- Stress signals (high error rates, latency spikes) are not yet linked to automatic concurrency throttling or timeout scaling.
-- Skill proposals accumulate without validation gates, risking registry pollution from untested or harmful capabilities.
-- Reflex-driven maintenance (e.g., pruning stale analyses) succeeds reliably when scoped to single, well-defined tools.
-- The system lacks real-time per-model health telemetry, causing repeated attempts to failing endpoints instead of immediate quarantine.
-- Free-tier LLM providers consistently return 429 rate-limit errors and 502 upstream overloads, making them unreliable for production workloads without 
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8343 Fakten** · Stand 2026-08-31 21:27 UTC · aktualisiert bei jedem Herzschlag
+**8348 Fakten** · Stand 2026-08-31 21:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4325
+- **dream:** 4330
 - **swarm_artifact:** 1831
 - **last_swarm_critique:** 656
 - **anti_pattern:** 555
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831213141:5:c4f3bd`
+*31.08. 21:31 UTC · Quelle: dream*
+
+No circuit-breaker or model-health tracking exists: failed models are retried identically to healthy ones, causing cascading delays.
+
+### `dream:20260831213141:4:64d2cc`
+*31.08. 21:31 UTC · Quelle: dream*
+
+The system retries rate-limited models (z-ai/glm-5.2:free) immediately with zero backoff, wasting cycles and accelerating quota exhaustion.
+
+### `dream:20260831213141:3:347a4e`
+*31.08. 21:31 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1:free latency scales linearly with output tokens (0.8s for 8 tokens vs 197s for 10k tokens), revealing per-token processing bottleneck.
+
+### `dream:20260831213141:2:1d54a0`
+*31.08. 21:31 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeds where others fail but exhibits 6x latency variance (8-48s), indicating queue-dependent upstream capacity.
+
+### `dream:20260831213141:1:184052`
+*31.08. 21:31 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads without aggressive request spacing.
 
 ### `dream:20260831212543:5:d4db9b`
 *31.08. 21:25 UTC · Quelle: dream*
