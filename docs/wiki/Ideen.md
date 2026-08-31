@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 20:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 21:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
@@ -33,14 +33,19 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes zero facts/events despite ongoing experience, suggesting pruning thresholds are misconfigured or memory grows unbounded.
+- Skill proposals accumulate (5 in logs) but drive goal "implement skills" persists, revealing a proposal-to-implementation gap.
+- Drive goals repeat across cycles (reduce errors, update market data, implement skills) without convergence, showing goal management lacks progress tra
+- Fallback model (nvidia/nemotron) exhibits high latency (9-21s) with no task-type routing, causing unpredictable response times.
+- The primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, indicating missing retry/backoff logic and over-reliance on a single provide
 - Stress signals (high error rates, latency spikes) are not yet linked to automatic concurrency throttling or timeout scaling.
 - Skill proposals accumulate without validation gates, risking registry pollution from untested or harmful capabilities.
 - Reflex-driven maintenance (e.g., pruning stale analyses) succeeds reliably when scoped to single, well-defined tools.
@@ -51,11 +56,6 @@
 - Drive goals reveal three orthogonal stressors (model failures, stale analyses, missing simulation tests) that compound: unreliable models block analys
 - Five independent skill proposals converge on model routing, health telemetry, circuit breaking, and pre-flight probes — convergent evolution signals a
 - Provider z-ai/glm-5.2:free fails deterministically with 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds at 18-46s latency, proving re
-- System auto-generates relevant skill proposals (routing, retry, dashboard) directly from observed failure patterns.
-- Intermittent hand action failures (exit 1, no error output) reveal silent infrastructure instability.
-- Calibration error of 1 indicates well-tuned prediction for this task class.
-- Swarm execution with dedicated critic role achieves single-cycle convergence for simulation-heavy goals.
-- Rate limiting on z-ai/glm-5.2:free causes cascading failures without automatic fallback to healthy providers.
 
 ---
 

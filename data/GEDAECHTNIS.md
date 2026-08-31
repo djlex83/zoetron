@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8324 Fakten** · Stand 2026-08-31 20:37 UTC · aktualisiert bei jedem Herzschlag
+**8338 Fakten** · Stand 2026-08-31 21:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4315
-- **swarm_artifact:** 1825
-- **last_swarm_critique:** 655
+- **dream:** 4320
+- **swarm_artifact:** 1831
+- **last_swarm_critique:** 656
 - **anti_pattern:** 555
-- **last_swarm_goal:** 404
+- **last_swarm_goal:** 405
 - **strategy:** 298
-- **tool:** 94
+- **tool:** 95
 - **hand_result:** 88
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-deutlich-reduzieren`
+*31.08. 21:15 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler deutlich reduzieren'. Datei: data/tools/modellfehler-deutlich-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*31.08. 21:15 UTC · Quelle: critic*
+
+score=8; issues=Fallback-Implementierungen (HealthRegister, ExperienceBoost) sind als Minimal-Stubs ausgeführt und ersetzen keine echten Persistenz-/Lern-Backends; Telegram-Alerting ist optional und ohne Config funktionslos - keine alternative Alert-Route (z. 
+
+### `last_swarm_goal`
+*31.08. 21:06 UTC · Quelle: system*
+
+Modellfehler deutlich reduzieren
+
+### `dream:20260831210611:5:eea350`
+*31.08. 21:06 UTC · Quelle: dream*
+
+Pruning removes zero facts/events despite ongoing experience, suggesting pruning thresholds are misconfigured or memory grows unbounded.
+
+### `dream:20260831210611:4:09a45d`
+*31.08. 21:06 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in logs) but drive goal "implement skills" persists, revealing a proposal-to-implementation gap.
+
+### `dream:20260831210611:3:7521a9`
+*31.08. 21:06 UTC · Quelle: dream*
+
+Drive goals repeat across cycles (reduce errors, update market data, implement skills) without convergence, showing goal management lacks progress tracking.
+
+### `dream:20260831210611:2:19813b`
+*31.08. 21:06 UTC · Quelle: dream*
+
+Fallback model (nvidia/nemotron) exhibits high latency (9-21s) with no task-type routing, causing unpredictable response times.
+
+### `dream:20260831210611:1:7cc91d`
+*31.08. 21:06 UTC · Quelle: dream*
+
+The primary model (z-ai/glm-5.2) consistently fails with 429 rate limits, indicating missing retry/backoff logic and over-reliance on a single provider.
 
 ### `tool:veraltete-analyseergebnisse-mit-neuen-da`
 *31.08. 20:35 UTC · Quelle: hands*
