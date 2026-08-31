@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative path handling at the hand-action boundary causes recurring I/O failures; an absolute-path contract with existence checks eliminates this clas
+- Skill proposals accumulate without automated promotion; a lifecycle manager with drive-signal thresholds and capability-based ownership closes the ide
+- Latency variance across models (12.7s–79.2s) demands real-time health scoring with warm connection pools to maintain SLA compliance.
+- Silent degradation manifests as HTTP 200 with empty choices, requiring mandatory pre-flight probes and response validation before routing user request
+- Free-tier models on OpenRouter exhibit systemic 429 rate-limiting and 502 upstream errors, making single-model reliance infeasible for production traf
 - Model selection ignores real-time health signals: routing uses static priority instead of success rate, latency EWMA, and error-class weighting, causi
 - Skill proposals lack automated validation and promotion: 10+ proposals exist but no harness tests them, no lifecycle manager promotes them, and no che
 - Path resolution failures recur because relative paths cross the hand-action boundary unchecked; absolute-path contract with existence verification is 
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors while external API degradation (429s, high latency) persists, showing health monitoring excludes provider-lev
 - Duplicate skill proposals across cycles (checkpoint logger, skill harness, path resolver, model pool) indicate a proposal-to-implementation gap where 
 - Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-endpoint circuit breakers and fallback chains, causing cascading failures when a single pr
-- Self-diagnosis only checks internal organs: external dependency failures (model APIs) are invisible to current health probes.
-- Reflex tools succeed when scoped narrowly: 'alte-marktanalysen-verwerten.py' completed in 0.74s with zero errors.
-- Latency prediction is uncalibrated: actual latencies (9-34s) vary wildly with no monitoring to trigger router retraining.
-- Skill proposals accumulate without execution tracking: 75 proposals exist but no visible pipeline validates, merges, or deploys them.
-- Model routing lacks resilience: 5 consecutive model failures (429/502) across 4 providers blocked progress until a fallback succeeded.
 
 ---
 
