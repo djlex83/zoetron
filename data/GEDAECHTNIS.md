@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8063 Fakten** · Stand 2026-08-31 13:04 UTC · aktualisiert bei jedem Herzschlag
+**8068 Fakten** · Stand 2026-08-31 13:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4145
+- **dream:** 4150
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831130839:5:c0faed`
+*31.08. 13:08 UTC · Quelle: dream*
+
+Prune runs consistently remove zero facts or events, indicating either stale-data detection is too lenient or the system never accumulates truly expendable experience.
+
+### `dream:20260831130839:4:ba9b5f`
+*31.08. 13:08 UTC · Quelle: dream*
+
+Reflex-based execution completes tasks successfully and quickly (0.22s), suggesting that pre-built reflexes are more dependable than model-driven planning for known task types.
+
+### `dream:20260831130839:3:a90cae`
+*31.08. 13:08 UTC · Quelle: dream*
+
+The fallback model (nemotron-3-ultra) works reliably but at 86–147s latency, exposing a quality-vs-speed tradeoff that has no automated resolution strategy.
+
+### `dream:20260831130839:2:11276c`
+*31.08. 13:08 UTC · Quelle: dream*
+
+Skill proposals accumulate without being tested or promoted to real skills, creating a growing backlog of unvalidated ideas that never improve system resilience.
+
+### `dream:20260831130839:1:10d2ce`
+*31.08. 13:08 UTC · Quelle: dream*
+
+External LLM API rate limits (429) are a recurring, undetected failure mode that self-diagnosis misses because it only checks internal organ errors, not external dependency health.
 
 ### `dream:20260831130234:5:5dedaf`
 *31.08. 13:02 UTC · Quelle: dream*

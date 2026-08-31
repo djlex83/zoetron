@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 13:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 13:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Implement exponential backoff with jitter and a circuit breaker that disables a model after three consecutive  *(hatte die Idee 4×)*
 - Create a simulation-revision skill that iteratively applies fixes until risk count falls below a configurable  *(hatte die Idee 4×)*
 - Add a calibration monitor that logs prediction vs. actual per task type and triggers retraining when MAE excee *(hatte die Idee 4×)*
-- Define explicit acceptance criteria and milestone checkpoints for each drive goal; log progress deltas to enab *(hatte die Idee 3×)*
 - Deploy a model router with per-provider rate-limit counters, 429/502-triggered fallback <2s, and health-check  *(hatte die Idee 3×)*
+- Build a calibration-correction loop that automatically adjusts effort estimates by +100% for simulation-to-pra *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -33,14 +33,19 @@
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune runs consistently remove zero facts or events, indicating either stale-data detection is too lenient or the system never accumulates truly expen
+- Reflex-based execution completes tasks successfully and quickly (0.22s), suggesting that pre-built reflexes are more dependable than model-driven plan
+- The fallback model (nemotron-3-ultra) works reliably but at 86–147s latency, exposing a quality-vs-speed tradeoff that has no automated resolution str
+- Skill proposals accumulate without being tested or promoted to real skills, creating a growing backlog of unvalidated ideas that never improve system 
+- External LLM API rate limits (429) are a recurring, undetected failure mode that self-diagnosis misses because it only checks internal organ errors, n
 - Relative-path usage in I/O actions creates environment-dependent failures that an absolute-path contract at the hand-action boundary would eliminate.
 - Latency on the working model varies 94–122 seconds, indicating no predictive routing or warm-connection pool to stabilize tail latency.
 - Seventy-five skill proposals exist but the proposal-to-implementation loop lacks a test harness and deployment tracker, causing stagnation.
@@ -51,11 +56,6 @@
 - Reflex-driven goals converge quickly (exit 0, converged true) but only address symptoms (market analysis, model errors) not root causes (no model rout
 - Skill proposals accumulate (5+ in this session) but none are auto-tested or deployed, revealing a broken proposal→implementation loop despite existing
 - A single model provider (z-ai/glm-5.2) fails deterministically with 429 errors while the fallback (nvidia/nemotron-3-ultra) succeeds but exhibits 3× l
-- Model failures cluster in time (multiple 429s within seconds), indicating burst traffic exceeds free-tier quotas rather than sustained load.
-- Existing skill proposals (ModelRouter, CircuitBreaker, quota-aware routing) directly address observed failure patterns but remain undeployed.
-- The reflex system successfully auto-upgrades models but lacks a health-aware selection policy to avoid picking another rate-limited model.
-- Latency variance between working models exceeds 5x (10s vs 53s), making latency-aware routing essential for user-facing tasks.
-- Free-tier models on OpenRouter share rate-limit buckets, causing cascading 429 failures across multiple models simultaneously.
 
 ---
 

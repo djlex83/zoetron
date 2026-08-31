@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 5631 Neuronen · 305054 bewertete Synapsen
+Stand: 5637 Neuronen · 305425 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,19 +10,19 @@ Stand: 5631 Neuronen · 305054 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 535 | 0.24 |
+| 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 536 | 0.24 |
 | 2 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 542 | 0.23 |
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 521 | 0.24 |
 | 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 531 | 0.23 |
-| 5 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 512 | 0.24 |
+| 5 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 513 | 0.24 |
 | 6 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 467 | 0.26 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 444 | 0.26 |
-| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 444 | 0.26 |
-| 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 466 | 0.25 |
-| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 451 | 0.25 |
-| 11 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 424 | 0.26 |
-| 12 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 403 | 0.27 |
-| 13 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 412 | 0.26 |
+| 8 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 467 | 0.25 |
+| 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 444 | 0.26 |
+| 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 452 | 0.25 |
+| 11 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 425 | 0.26 |
+| 12 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 404 | 0.27 |
+| 13 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 413 | 0.26 |
 | 14 | 💭 | Latency spikes up to 62.5 s reveal the need for timeout, fallbac… | 453 | 0.23 |
 | 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 476 | 0.22 |
 
