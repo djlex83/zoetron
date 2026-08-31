@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8111 Fakten** · Stand 2026-08-31 14:31 UTC · aktualisiert bei jedem Herzschlag
+**8116 Fakten** · Stand 2026-08-31 14:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4185
+- **dream:** 4190
 - **swarm_artifact:** 1783
 - **last_swarm_critique:** 648
 - **anti_pattern:** 545
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831143631:5:701f40`
+*31.08. 14:36 UTC · Quelle: dream*
+
+High-latency models (nemotron-3-ultra, 27-96s per call) were used repeatedly for tasks that the fast flash model (21.5s) already handled successfully, wasting cycle time on unnecessary compute.
+
+### `dream:20260831143631:4:33bc04`
+*31.08. 14:36 UTC · Quelle: dream*
+
+Evolution runs showed a massive gap between the base score (1/10) and variant scores (7-8), yet the swarm did not converge in 2 cycles, suggesting variants are too incremental rather than radically re-exploring the solution space.
+
+### `dream:20260831143631:3:5f2523`
+*31.08. 14:36 UTC · Quelle: dream*
+
+Calibration predicted a score of 6 against an actual score of 1 (6x overestimate), revealing a dangerous confidence inflation that could misguide future resource allocation.
+
+### `dream:20260831143631:2:b20fa8`
+*31.08. 14:36 UTC · Quelle: dream*
+
+Artifacts consistently fail to execute in the sandbox (hand_action exit 1, gelesen=0, traceback at line 102), meaning generated code is not validated before being marked as a deliverable.
+
+### `dream:20260831143631:1:ec4bac`
+*31.08. 14:36 UTC · Quelle: dream*
+
+Rate-limited models (glm-5.2 returning 429) failed repeatedly without fallback, indicating the absence of a circuit-breaker that switches providers after consecutive throttling errors.
 
 ### `dream:20260831143043:5:a33398`
 *31.08. 14:30 UTC · Quelle: dream*

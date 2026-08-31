@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,7 +27,7 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High-latency models (nemotron-3-ultra, 27-96s per call) were used repeatedly for tasks that the fast flash model (21.5s) already handled successfully,
+- Evolution runs showed a massive gap between the base score (1/10) and variant scores (7-8), yet the swarm did not converge in 2 cycles, suggesting var
+- Calibration predicted a score of 6 against an actual score of 1 (6x overestimate), revealing a dangerous confidence inflation that could misguide futu
+- Artifacts consistently fail to execute in the sandbox (hand_action exit 1, gelesen=0, traceback at line 102), meaning generated code is not validated 
+- Rate-limited models (glm-5.2 returning 429) failed repeatedly without fallback, indicating the absence of a circuit-breaker that switches providers af
 - Metabolism signaled conserve mode with a budget of max 3 tasks and 1 iteration, yet the system continued attempting multiple model calls, suggesting b
 - The artifact itself does not run (Traceback in TOR check), indicating that artifacts must be validated for executability before being queued for deplo
 - The hand_action step failed silently (exit 1, 0 bytes read, no error message), revealing that execution-layer tools lack proper error reporting and re
@@ -51,11 +56,6 @@
 - A persistent gap between 75 skill proposals and near-zero implementations reveals missing validation and tracking infrastructure as the root cause, no
 - Reflex-based execution paths converge reliably when full model inference is unavailable, making reflex the resilient fallback for well-defined tasks.
 - API rate limiting (429) and service overload (502) are systemic failure modes across multiple providers, requiring circuit breakers and exponential ba
-- Rate limits are key-pair specific, so circuit breakers and rotation must operate per API key, not just per model identifier.
-- Stale drive goals (e.g., unused Marktanalyse) are resolvable via reflex automation, but gap goals (unlearned skills) remain stalled without execution 
-- Skill proposals accumulate within the same problem domain (model reliability) without effective deduplication, despite a ProposalDeduplicator being pr
-- nvidia/nemotron-3-ultra-550b-a55b:free shows latency doubling (32.5s → 71.8s) between probes, indicating silent degradation that static health scores 
-- 429 rate-limit errors on z-ai/glm-5.2:free are the dominant recurring failure mode and require per-key quota management rather than naive retry.
 
 ---
 
