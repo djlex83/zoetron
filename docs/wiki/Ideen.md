@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 10:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
-- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale drive goals (market analysis) persist for days because the planner lacks a staleness-triggered escalation or decomposition mechanism.
+- Skill proposals accumulate without promotion criteria or ownership, creating a backlog where valuable ideas (e.g., automated validation harness) never
+- Path-resolution failures recur across hand actions because relative paths are resolved against inconsistent working directories instead of a canonical
+- Multiple independent proposals converge on circuit-breaker patterns, latency-aware routing, and health scorecards — indicating the architecture lacks 
+- Rate-limited model endpoints (z-ai/glm-5.2:free) consistently fail under load while fallback models (nvidia/nemotron-3-ultra) succeed, proving single-
 - Model latency variance (7-9s for successful calls) combined with frequent 429s means throughput depends on concurrent model pooling with per-model coo
 - Relative path failures in script interfaces recur because ZOETRON_DATA is not enforced as the single source of truth for filesystem roots.
 - The reflex-driven model upgrade (cortex-upgrade-reflex-neue-modelle-autom.py) converged successfully, proving that automated model substitution can se
@@ -51,11 +56,6 @@
 - Local-first execution proposals were logged but never validated against actual tool-call patterns, revealing a gap between policy intent and runtime e
 - The 'Marktanalyse' goal was marked stale and converged via reflex without a score, suggesting completion criteria are too loosely defined or unenforce
 - Repeated 429 errors on z-ai/glm-5.2:free and 502 on nvidia/nemotron-3-ultra-550b-a55b:free indicate systemic provider-side rate limiting and overload,
-- Repeated 429 errors on specific models indicate need for per-model health tracking and automatic disablement.
-- Successful hand actions (file ops, scripts) demonstrate local execution reliability versus model invocation fragility.
-- Prediction calibration is absent, leading to unchecked drift between estimated and actual task outcomes.
-- Simulation critiques are not reliably applied without a mandatory revision gate blocking task completion.
-- External model dependencies cause cascading failures when rate-limited or overloaded, requiring local-first fallbacks and circuit breakers.
 
 ---
 
