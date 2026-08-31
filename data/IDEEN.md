@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 6×)*
+- Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 7×)*
 - Add exponential backoff with jitter (base 1s, max 30s) and token-bucket rate limiting per model before any ret *(hatte die Idee 4×)*
 - Build a rolling reliability scorecard (success rate, p95 latency, error-type histogram) updated per request to *(hatte die Idee 4×)*
 - Create a promotion pipeline: when a reflex converges twice on the same goal, auto-generate skill artifact, run *(hatte die Idee 4×)*
@@ -36,11 +36,16 @@
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
+- Marktanalyse sauber zu Ende bringen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals are being generated but not tracked or implemented, leading to repeated proposals and unresolved system weaknesses.
+- The timeout after 20.0s with 0 bytes read points to a network or API hang that needs circuit-breaker protection and retry logic.
+- Model latency and token usage vary significantly (9.4s to 39.4s), indicating inconsistent performance that should inform dynamic model selection.
+- The swarm failed to converge in 2 cycles with a score of 4/10, suggesting insufficient iteration depth or poor variant quality in the builder role.
+- Repeated 429 errors from z-ai/glm-5.2:free indicate a systemic rate-limiting issue that requires model-level quarantine and fallback routing.
 - No systematic model health scoring exists to proactively deprioritize rate-limited models before they fail, causing repeated 429 errors.
 - Reflex-driven skill combination operates without validating whether proposed skills already exist or are implemented, wasting cycles on duplicate deve
 - The system generates redundant skill proposals for identical resilience patterns (circuit breaker, health tracking, error classification, SLA enforcem
@@ -51,11 +56,6 @@
 - Reflex-based error investigation resolves symptoms but lacks preventive circuit-breaking, causing repeated 429 cascades.
 - The only functional model (poolside/laguna-s-2.1:free) violates latency SLAs (>10s) in 50% of calls, requiring hard timeouts and failover.
 - Free-tier model endpoints share correlated rate-limit failures (429), making single-model reliance fragile.
-- Self-diagnosis and pruning reported zero issues, indicating the failure domain is external (upstream rate limits) not internal corruption.
-- Five skill proposals were emitted in one cycle but no persistence or tracking mechanism exists, so they likely vanish without implementation.
-- Reflex tool 'abgelehnte-werkzeuge-verstehen-und-verbe.py' completed the market-analysis goal autonomously, proving reflexes can substitute for failed 
-- Only inclusionai/ling-3.0-flash-fin:free remained available, creating a single point of failure for all LLM-dependent tasks.
-- Multiple free-tier models simultaneously hit 429 rate limits, revealing that routing without per-model quota awareness causes cascading failures.
 
 ---
 

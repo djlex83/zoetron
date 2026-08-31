@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 04:05:09",
+ "stand": "2026-08-31 04:10:23",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 16,
    "erfolge": 16,
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
@@ -57,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -85,6 +79,12 @@
    "laeufe": 3,
    "erfolge": 1,
    "quote": 0.333
+  },
+  {
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
@@ -177,7 +177,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.786,
+ "haende_quote": 0.791,
  "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 26,
@@ -185,13 +185,13 @@
   "schnitt": 5.42
  },
  "score_nach_ziel_typ": {
-  "bau": {
-   "n": 3,
-   "schnitt": 5.67
-  },
   "analyse": {
    "n": 23,
    "schnitt": 5.39
+  },
+  "bau": {
+   "n": 2,
+   "schnitt": 6.0
   }
  }
 }

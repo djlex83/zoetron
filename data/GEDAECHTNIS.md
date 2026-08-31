@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7765 Fakten** · Stand 2026-08-31 04:06 UTC · aktualisiert bei jedem Herzschlag
+**7771 Fakten** · Stand 2026-08-31 04:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3880
+- **dream:** 3885
 - **swarm_artifact:** 1767
 - **last_swarm_critique:** 644
 - **anti_pattern:** 541
@@ -11,7 +11,7 @@
 - **tool:** 86
 - **hand_result:** 85
 - **aktuell_fussball_messlatte:** 33
-- **aktuell_organfehler:** 30
+- **aktuell_organfehler:** 31
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831041004:5:b544fd`
+*31.08. 04:10 UTC · Quelle: dream*
+
+Skill proposals are being generated but not tracked or implemented, leading to repeated proposals and unresolved system weaknesses.
+
+### `dream:20260831041004:4:41062a`
+*31.08. 04:10 UTC · Quelle: dream*
+
+The timeout after 20.0s with 0 bytes read points to a network or API hang that needs circuit-breaker protection and retry logic.
+
+### `dream:20260831041004:3:fdcaef`
+*31.08. 04:10 UTC · Quelle: dream*
+
+Model latency and token usage vary significantly (9.4s to 39.4s), indicating inconsistent performance that should inform dynamic model selection.
+
+### `dream:20260831041004:2:88cf83`
+*31.08. 04:10 UTC · Quelle: dream*
+
+The swarm failed to converge in 2 cycles with a score of 4/10, suggesting insufficient iteration depth or poor variant quality in the builder role.
+
+### `dream:20260831041004:1:266f6a`
+*31.08. 04:10 UTC · Quelle: dream*
+
+Repeated 429 errors from z-ai/glm-5.2:free indicate a systemic rate-limiting issue that requires model-level quarantine and fallback routing.
+
+### `aktuell_organfehler`
+*31.08. 04:08 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-31 04:04:36 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `aktuell_organfehler`
 *31.08. 04:00 UTC · Quelle: selbstdiagnose.py*
