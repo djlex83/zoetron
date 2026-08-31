@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 07:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 07:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill conversion reflex (fähigkeitsvorschläge-in-echte-skills-ums.py) fails without error details, breaking the plan-to-act pipeline.
+- Metabolism conserve mode (stress=1.0) caps iterations to 1, preventing retry loops that could recover from transient failures.
+- A single working model (inclusionai/ling-3.0-flash-fin:free) exhibits high cold-start latency (25s) then stabilizes (5.6s), suggesting connection pool
+- Free tier models cascade into 429 rate limits within seconds, making sequential fallback unreliable under load.
+- Relative path resolution fails silently when ZOETRON_DATA environment variable exists but sys.argv[1] points elsewhere, causing zero-byte reads.
 - Existing skill proposals target the observed failure modes but lack an execution tracker to prevent proposal staleness.
 - Zero pruning activity despite repeated failures suggests the memory retention policy is decoupled from error signals.
 - Latency spread of 10.8 s vs 20.5 s on successful calls shows SLA variance large enough to break downstream timeouts.
@@ -51,11 +56,6 @@
 - Reflex-mode tool execution successfully converts skill proposals and upgrades models without human intervention.
 - Dream and drive modules consistently hit 180-second timeouts, indicating a systemic processing bottleneck rather than isolated delays.
 - Rate limiting (429) affects all free-tier OpenRouter models simultaneously, making single-model reliance unreliable.
-- Error type classification (quota vs. structural vs. retryable) is a prerequisite for any intelligent fallback chain, yet no middleware currently tags 
-- The working model nvidia/nemotron-3-ultra-550b-a55b:free exhibits dangerous latency variance (9.5s–29.6s), threatening the 10s SLA even when it does n
-- Stale goals (e.g., market analysis) accumulate across cycles without automated enforcement, indicating that staleness detection alone is insufficient 
-- A persistent proposal-to-implementation gap exists: skills are repeatedly suggested but rarely executed, making the gap itself the primary reliability
-- 429 rate-limit errors recur every few seconds on z-ai/glm-5.2:free, proving that reactive retries without quota awareness guarantee repeated exhaustio
 
 ---
 

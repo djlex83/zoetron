@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7849 Fakten** · Stand 2026-08-31 07:36 UTC · aktualisiert bei jedem Herzschlag
+**7854 Fakten** · Stand 2026-08-31 07:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3945
+- **dream:** 3950
 - **swarm_artifact:** 1773
 - **last_swarm_critique:** 645
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831074041:5:56b25e`
+*31.08. 07:40 UTC · Quelle: dream*
+
+Skill conversion reflex (fähigkeitsvorschläge-in-echte-skills-ums.py) fails without error details, breaking the plan-to-act pipeline.
+
+### `dream:20260831074041:4:f7a7e3`
+*31.08. 07:40 UTC · Quelle: dream*
+
+Metabolism conserve mode (stress=1.0) caps iterations to 1, preventing retry loops that could recover from transient failures.
+
+### `dream:20260831074041:3:75d6c2`
+*31.08. 07:40 UTC · Quelle: dream*
+
+A single working model (inclusionai/ling-3.0-flash-fin:free) exhibits high cold-start latency (25s) then stabilizes (5.6s), suggesting connection pooling or warm-up effects.
+
+### `dream:20260831074041:2:9c9abc`
+*31.08. 07:40 UTC · Quelle: dream*
+
+Free tier models cascade into 429 rate limits within seconds, making sequential fallback unreliable under load.
+
+### `dream:20260831074041:1:05da10`
+*31.08. 07:40 UTC · Quelle: dream*
+
+Relative path resolution fails silently when ZOETRON_DATA environment variable exists but sys.argv[1] points elsewhere, causing zero-byte reads.
 
 ### `dream:20260831073509:5:9c9a87`
 *31.08. 07:35 UTC · Quelle: dream*
