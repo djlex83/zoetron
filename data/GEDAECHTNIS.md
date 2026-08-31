@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8409 Fakten** · Stand 2026-08-31 22:47 UTC · aktualisiert bei jedem Herzschlag
+**8426 Fakten** · Stand 2026-08-31 23:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4370
-- **swarm_artifact:** 1843
-- **last_swarm_critique:** 658
-- **anti_pattern:** 557
-- **last_swarm_goal:** 407
-- **strategy:** 299
-- **tool:** 96
+- **dream:** 4375
+- **swarm_artifact:** 1849
+- **last_swarm_critique:** 659
+- **anti_pattern:** 559
+- **last_swarm_goal:** 408
+- **strategy:** 300
+- **tool:** 97
 - **hand_result:** 89
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeiten-durch-simulationen-und-evolu`
+*31.08. 23:17 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten durch Simulationen und Evolution prüfen'. Datei: data/tools/fähigkeiten-durch-simulationen-und-evolu.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten durch Simula:2`
+*31.08. 23:17 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeiten durch Simula:1`
+*31.08. 23:17 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*31.08. 23:12 UTC · Quelle: critic*
+
+score=6; issues=The artifact is a collection of three separate scripts (simulation framework, evolution cycle, benchmark) rather than a single cohesive Python block, which does not align with the expected format of a single executable artifact; The evolution s
+
+### `last_swarm_goal`
+*31.08. 23:05 UTC · Quelle: system*
+
+Fähigkeiten durch Simulationen und Evolution prüfen
+
+### `dream:20260831230502:5:8b0cbb`
+*31.08. 23:05 UTC · Quelle: dream*
+
+Cycle estimation accuracy can be improved by tracking rolling mean absolute error between predicted and actual cycles per goal type.
+
+### `dream:20260831230502:4:0a7099`
+*31.08. 23:05 UTC · Quelle: dream*
+
+Parallel multi-model dispatch with first-success-wins effectively bypasses correlated rate limits and improves overall success rate.
+
+### `dream:20260831230502:3:e1c352`
+*31.08. 23:05 UTC · Quelle: dream*
+
+Skill proposals that reduce 429 rates or improve latency by measurable thresholds (e.g., >50% or >20%) over 100 calls should be auto-promoted to production.
+
+### `dream:20260831230502:2:c55171`
+*31.08. 23:05 UTC · Quelle: dream*
+
+Latency varies significantly between models (2.9s to 8.3s), making dynamic routing based on output token count and historical p95 latency essential for efficiency.
+
+### `dream:20260831230502:1:de8cb9`
+*31.08. 23:05 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) are the dominant failure modes across all model tiers, requiring systematic retry and fallback logic.
 
 ### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:2`
 *31.08. 22:44 UTC · Quelle: evolution*
