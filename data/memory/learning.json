@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 20:21:52",
+ "stand": "2026-08-31 20:36:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,12 +51,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -69,8 +63,20 @@
    "quote": 1.0
   },
   {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 4,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "veraltete-infos-auffrischen.py",
+   "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -87,19 +93,7 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -123,7 +117,7 @@
    "quote": 1.0
   },
   {
-   "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -171,17 +165,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.846,
- "simulationen_angewandt": 12,
+ "haende_quote": 0.841,
+ "simulationen_angewandt": 13,
  "swarm_scores": {
-  "n": 20,
+  "n": 21,
   "best": 8.0,
-  "schnitt": 5.65
+  "schnitt": 5.57
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 16,
-   "schnitt": 6.0
+   "n": 17,
+   "schnitt": 5.88
   },
   "bau": {
    "n": 4,

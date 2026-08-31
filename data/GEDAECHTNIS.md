@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8307 Fakten** · Stand 2026-08-31 20:22 UTC · aktualisiert bei jedem Herzschlag
+**8324 Fakten** · Stand 2026-08-31 20:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4310
-- **swarm_artifact:** 1819
-- **last_swarm_critique:** 654
-- **anti_pattern:** 553
-- **last_swarm_goal:** 403
-- **strategy:** 297
-- **tool:** 93
+- **dream:** 4315
+- **swarm_artifact:** 1825
+- **last_swarm_critique:** 655
+- **anti_pattern:** 555
+- **last_swarm_goal:** 404
+- **strategy:** 298
+- **tool:** 94
 - **hand_result:** 88
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:veraltete-analyseergebnisse-mit-neuen-da`
+*31.08. 20:35 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Analyseergebnisse mit neuen Daten ergänzen'. Datei: data/tools/veraltete-analyseergebnisse-mit-neuen-da.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Analyseergebni:1`
+*31.08. 20:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Driven Incremental Update Pipeline - Adopt an event-driven architecture: new data ingestion publishes events to a message broker (e.g., Kafka). A stream processing service consumes these events and incrementally updates
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Analyseergebni:0`
+*31.08. 20:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Unified Versioned Data Store with Automated Re-analysis - Implement a single versioned data store (e.g., a database with temporal tables or a versioned file system like DVC) that holds both raw data and analysis results. When
+
+### `last_swarm_critique`
+*31.08. 20:34 UTC · Quelle: critic*
+
+score=4; issues=Keine echte Integration: Der 'Merge' hängt neue Daten nur als separates Feld an (new_data_points), aktualisiert aber nicht die eigentlichen Analyse-Inhalte (Schlussfolgerungen, Metriken, Findings).; Pipeline getrennt: Skript 1 schreibt nach art
+
+### `last_swarm_goal`
+*31.08. 20:28 UTC · Quelle: system*
+
+Veraltete Analyseergebnisse mit neuen Daten ergänzen
+
+### `dream:20260831202739:5:404eb8`
+*31.08. 20:27 UTC · Quelle: dream*
+
+Stress signals (high error rates, latency spikes) are not yet linked to automatic concurrency throttling or timeout scaling.
+
+### `dream:20260831202739:4:cd9834`
+*31.08. 20:27 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates, risking registry pollution from untested or harmful capabilities.
+
+### `dream:20260831202739:3:f32a3d`
+*31.08. 20:27 UTC · Quelle: dream*
+
+Reflex-driven maintenance (e.g., pruning stale analyses) succeeds reliably when scoped to single, well-defined tools.
+
+### `dream:20260831202739:2:5bcf5e`
+*31.08. 20:27 UTC · Quelle: dream*
+
+The system lacks real-time per-model health telemetry, causing repeated attempts to failing endpoints instead of immediate quarantine.
+
+### `dream:20260831202739:1:a789e0`
+*31.08. 20:27 UTC · Quelle: dream*
+
+Free-tier LLM providers consistently return 429 rate-limit errors and 502 upstream overloads, making them unreliable for production workloads without automatic failover.
 
 ### `dream:20260831202058:5:a3d8db`
 *31.08. 20:20 UTC · Quelle: dream*
