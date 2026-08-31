@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,13 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
@@ -37,10 +38,14 @@
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 2×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen entwickeln *(wieder aufgegriffen: 2×)*
-- Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence detection without a diagnostic fallback means the system can halt improvement while the underlying problem (unreliable models, stale data)
+- Under shared API rate limits, simultaneous parallel requests amplify contention rather than improve throughput; a staggered retry or queuing strategy 
+- The gap between skill proposals and actual implementation is itself a failure mode — proposals without build-status tracking and deadlines decay into 
+- Error types (429 rate-limit, 502 upstream overload, empty response) are predictable and classifiable; treating them as generic failures wastes the inf
+- When 6 out of 7 model calls fail simultaneously, the absence of automatic quarantine and fallback turns transient API errors into systemic paralysis —
 - Artifact validation is missing: goals marked complete without verifying exit codes or output quality, allowing silent failures.
 - Stale drive goals (market analysis, skill adoption) persist because no convergence detector or budget allocator forces completion or re-prioritization
 - Multiple skill proposals (rate-limit detector, async framework, budget allocator, convergence detector) address the same root cause: unreliable model 
@@ -51,11 +56,6 @@
 - Skill proposals are frequently generated but lack validation mechanisms, leading to a gap between proposal and actual usability.
 - Nemotron models exhibit high latency variability (8.8s to 24.6s), suggesting they are unreliable for latency-sensitive tasks without a failover mechan
 - The model z-ai/glm-5.2:free consistently fails with 429 Too Many Requests errors, indicating it is rate-limited and should be deprioritized or quarant
-- Successful model (poolside/laguna-s-2.1:free) shows 5-9s latency; no latency SLA or timeout policy exists to prevent hanging calls.
-- Error patterns are not automatically classified into retryable (rate-limit) vs structural (404/502), so fallback logic cannot discriminate.
-- No metabolic gating exists: the system continues spawning swarms/model-calls despite repeated failures, wasting cycles and increasing latency.
-- Skill proposals accumulate without tracking or execution, causing repeated re-proposals of the same capabilities (fallback chain, metabolism gate, pro
-- Rate limits (429) and upstream errors (502/404) cascade across multiple free-tier models simultaneously, leaving only poolside/laguna-s-2.1:free as re
 
 ---
 

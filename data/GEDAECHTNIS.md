@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7686 Fakten** · Stand 2026-08-31 01:41 UTC · aktualisiert bei jedem Herzschlag
+**7691 Fakten** · Stand 2026-08-31 01:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3820
+- **dream:** 3825
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831014534:5:757306`
+*31.08. 01:45 UTC · Quelle: dream*
+
+Convergence detection without a diagnostic fallback means the system can halt improvement while the underlying problem (unreliable models, stale data) remains unsolved.
+
+### `dream:20260831014534:4:3169ff`
+*31.08. 01:45 UTC · Quelle: dream*
+
+Under shared API rate limits, simultaneous parallel requests amplify contention rather than improve throughput; a staggered retry or queuing strategy is required instead of blind concurrency.
+
+### `dream:20260831014534:3:9c2421`
+*31.08. 01:45 UTC · Quelle: dream*
+
+The gap between skill proposals and actual implementation is itself a failure mode — proposals without build-status tracking and deadlines decay into dead weight that never improves the system.
+
+### `dream:20260831014534:2:e959e0`
+*31.08. 01:45 UTC · Quelle: dream*
+
+Error types (429 rate-limit, 502 upstream overload, empty response) are predictable and classifiable; treating them as generic failures wastes the information needed for automated routing decisions.
+
+### `dream:20260831014534:1:543481`
+*31.08. 01:45 UTC · Quelle: dream*
+
+When 6 out of 7 model calls fail simultaneously, the absence of automatic quarantine and fallback turns transient API errors into systemic paralysis — reliability must be engineered, not hoped for.
 
 ### `dream:20260831013957:5:809c97`
 *31.08. 01:39 UTC · Quelle: dream*
