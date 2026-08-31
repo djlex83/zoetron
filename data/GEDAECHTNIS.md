@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7821 Fakten** · Stand 2026-08-31 06:20 UTC · aktualisiert bei jedem Herzschlag
+**7839 Fakten** · Stand 2026-08-31 06:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3930
-- **swarm_artifact:** 1767
-- **last_swarm_critique:** 644
-- **anti_pattern:** 541
-- **last_swarm_goal:** 393
-- **strategy:** 291
-- **tool:** 86
+- **dream:** 3935
+- **swarm_artifact:** 1773
+- **last_swarm_critique:** 645
+- **anti_pattern:** 543
+- **last_swarm_goal:** 394
+- **strategy:** 292
+- **tool:** 87
 - **hand_result:** 85
-- **aktuell_organfehler:** 36
+- **aktuell_organfehler:** 37
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,61 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktanalyse-in-handeln-umsetzen`
+*31.08. 06:34 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse in Handeln umsetzen'. Datei: data/tools/marktanalyse-in-handeln-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse in Handeln :2`
+*31.08. 06:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Driven State Machine mit Deterministic Replay - Modelliere das gesamte Handelsworkflow als deterministische State Machine, die auf marktgenerierte Events reagiert. Jeder State Transition wird als strukturierte Nachricht
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse in Handeln :1`
+*31.08. 06:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Service-Orchestrierung mit Contract-First Design - Implementiere jeden Organismus (Datenfindung, Analyse, Handel) als eigenständigen Microservice mit klar definierten API-Verträgen (z.B. gRPC/REST mit Protobuf). Der Haupt-Orc
+
+### `last_swarm_critique`
+*31.08. 06:34 UTC · Quelle: critic*
+
+score=7; issues=execute_task() nutzt eval()/exec() als Fallback - Sicherheits- und Robustheitsrisiko; Hands-Organ hat ein Dummy-Fallback, das keinen echten Handel ausführt, sondern nur den Code als String zurückgibt; find_data_dir() fällt auf Path('.').resolve
+
+### `last_swarm_goal`
+*31.08. 06:24 UTC · Quelle: system*
+
+Marktanalyse in Handeln umsetzen
+
+### `dream:20260831062412:5:36874b`
+*31.08. 06:24 UTC · Quelle: dream*
+
+Error type classification (quota vs. structural vs. retryable) is a prerequisite for any intelligent fallback chain, yet no middleware currently tags failures at request time.
+
+### `dream:20260831062412:4:18dd9f`
+*31.08. 06:24 UTC · Quelle: dream*
+
+The working model nvidia/nemotron-3-ultra-550b-a55b:free exhibits dangerous latency variance (9.5s–29.6s), threatening the 10s SLA even when it does not return 429 errors.
+
+### `dream:20260831062412:3:cdf35a`
+*31.08. 06:24 UTC · Quelle: dream*
+
+Stale goals (e.g., market analysis) accumulate across cycles without automated enforcement, indicating that staleness detection alone is insufficient without auto-escalation.
+
+### `dream:20260831062412:2:0a0934`
+*31.08. 06:24 UTC · Quelle: dream*
+
+A persistent proposal-to-implementation gap exists: skills are repeatedly suggested but rarely executed, making the gap itself the primary reliability bottleneck.
+
+### `dream:20260831062412:1:58d323`
+*31.08. 06:24 UTC · Quelle: dream*
+
+429 rate-limit errors recur every few seconds on z-ai/glm-5.2:free, proving that reactive retries without quota awareness guarantee repeated exhaustion.
+
+### `aktuell_organfehler`
+*31.08. 06:22 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-31 06:16:04-06:19:04 UTC): dream -> timeout; drive -> timeout. Phase nach 180 s abgebrochen | Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler,
 
 ### `aktuell_organfehler`
 *31.08. 06:11 UTC · Quelle: selbstdiagnose.py*
