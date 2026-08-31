@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt testen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative-path handling remains a recurring tool-entry failure mode despite prior PathResolver proposal.
+- Swarm cycles execute without a hard budget guard, risking unbounded cost/latency when models degrade.
+- Skill proposals accumulate (10+ in this log) but lack a tracking mechanism to move them from proposed→implemented|deferred|rejected.
+- Successful model calls exhibit 88-92s p95 latency, exceeding the 60s threshold for interactive use and causing cascade timeouts.
+- Free-tier models consistently fail with 429 rate-limits and 404/empty-choice errors, making them unreliable for production workflows.
 - Free-tier OpenRouter models cannot be trusted for critical-path calls; any system depending on them must assume intermittent failure as the default st
 - Self-diagnosis and cleanup reflexes (alte-erinnerungen-aktualisieren) are functioning correctly and should be preserved as core reactive infrastructur
 - The nvidia/nemotron-3-ultra-550b-a55b:free model succeeds every time but with 77–95s latency, so success-rate-only routing is insufficient without lat
@@ -51,11 +56,6 @@
 - Field name mismatches between artifacts indicate missing schema validation in goal decomposition.
 - Evolutionary improvement can rescue low-scoring tasks but convergence remains unreliable without explicit convergence criteria.
 - Free-tier model rate limits cause cascading failures requiring robust fallback orchestration.
-- Repeated 429 errors on the same model within 60 s indicate no client-side retry/backoff logic is active.
-- Hand actions complete in <0.5 s with zero errors, confirming local tooling is reliable for fast feedback loops.
-- Goal 'Veraltete Ziele erneuern' shows iterative progress: simulation approved, artifact running (201 lines Python), TOR green, but calibration error o
-- nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but exhibits high latency variance (66–114 s), requiring async invocation with generous t
-- The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without exponential backoff or quota management
 
 ---
 

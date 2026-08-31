@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7666 Fakten** · Stand 2026-08-31 01:15 UTC · aktualisiert bei jedem Herzschlag
+**7671 Fakten** · Stand 2026-08-31 01:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3800
+- **dream:** 3805
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831012122:5:ec09a1`
+*31.08. 01:21 UTC · Quelle: dream*
+
+Relative-path handling remains a recurring tool-entry failure mode despite prior PathResolver proposal.
+
+### `dream:20260831012122:4:cfe194`
+*31.08. 01:21 UTC · Quelle: dream*
+
+Swarm cycles execute without a hard budget guard, risking unbounded cost/latency when models degrade.
+
+### `dream:20260831012122:3:3d34f1`
+*31.08. 01:21 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this log) but lack a tracking mechanism to move them from proposed→implemented|deferred|rejected.
+
+### `dream:20260831012122:2:784158`
+*31.08. 01:21 UTC · Quelle: dream*
+
+Successful model calls exhibit 88-92s p95 latency, exceeding the 60s threshold for interactive use and causing cascade timeouts.
+
+### `dream:20260831012122:1:286d9b`
+*31.08. 01:21 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate-limits and 404/empty-choice errors, making them unreliable for production workflows.
 
 ### `dream:20260831011352:5:1d04f8`
 *31.08. 01:13 UTC · Quelle: dream*

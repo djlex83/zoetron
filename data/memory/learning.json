@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 01:14:21",
+ "stand": "2026-08-31 01:22:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -87,12 +87,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -111,7 +105,19 @@
    "quote": 0.0
   },
   {
+   "tool": "alte-marktanalysen-verwerten.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -133,12 +139,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
