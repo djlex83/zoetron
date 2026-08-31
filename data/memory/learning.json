@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 13:38:29",
+ "stand": "2026-08-31 14:03:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,9 +27,9 @@
    "quote": 1.0
   },
   {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "alte-marktanalysen-verwerten.py",
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -39,9 +39,9 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {

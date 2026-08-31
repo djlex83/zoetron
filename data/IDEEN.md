@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 13:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals age without linked skills because no tracker maps goal signals (failure, stale, gap) to proposal coverage.
+- Skill proposals accumulate duplicates (circuit breaker, probe, path contract) needing semantic deduplication before lifecycle entry.
+- Path-related I/O failures are eliminated by enforcing absolute-path contracts at skill registration with mandatory resolve_path wrapping.
+- Multiple independent proposals converge on EWMA latency + error-class weighting as the core health metric for model routing.
+- Rate-limited models (429 errors) require automatic circuit-breaking with timed half-open probes to prevent cascade failures.
 - Configuration errors (bad paths, missing shebangs, unresolved imports) can cascade into silent failures, making pre-flight validation a critical gate 
 - Circuit breakers and exponential backoff are necessary but insufficient in isolation; they must be combined with warm fallback pools and latency-based
 - A persistent gap exists between skill proposals and actual implementation — proposals accumulate without validation, testing, or deployment tracking, 
@@ -51,11 +56,6 @@
 - Five drive goals identify stale data, high failure rate, and untested skills, yet no autonomous validation loop exists to close the gap.
 - Latency variance (25-68s) on nvidia/nemotron-3-ultra indicates absent SLA-aware routing, letting degraded instances serve production traffic.
 - Recurring 429 errors on z-ai/glm-5.2:free reveal single-model dependency without quota-aware rotation, causing predictable cascade failures.
-- Model latency variance (47s vs 147s) on the same endpoint suggests silent degradation or queueing effects that passive monitoring misses, requiring ac
-- Absolute path contract violations recur across proposals because path resolution is enforced only at hand-action boundary, not at skill composition ti
-- Drive goals persistently signal execution gaps (stale market analysis, untested skill proposals) while self-diagnosis reports zero internal errors, ex
-- Redundant skill proposals for identical resilience patterns (circuit breaker, pre-flight probe, fallback chain) indicate a missing proposal deduplicat
-- Rate limiting (429) on specific models triggers cascading fallback latency spikes up to 147s, revealing that single-model dependency without proactive
 
 ---
 
