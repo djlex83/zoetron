@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 00:28:29",
+ "stand": "2026-08-31 00:36:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {

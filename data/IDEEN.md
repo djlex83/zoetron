@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 00:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 00:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 2×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten echt testen *(wieder aufgegriffen: 2×)*
+- Neue Fähigkeiten aus Vorschlägen entwickeln *(wieder aufgegriffen: 2×)*
+- Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Only poolside/laguna-s-2.1:free succeeded (11s latency), suggesting smaller/faster models may have higher free-tier quota availability.
+- Swarm simulation revised 3 times but never validated against actual rate-limit constraints, producing plans that fail identically in execution.
+- Goals lack decomposition: 'Modell-Fehler stark reduzieren' has no measurable target, retry policy, or fallback chain, making progress unverifiable.
+- Conservation metabolism (max_iterations: 1) prevents retry/backoff logic, turning transient 502/429 errors into permanent task failures.
+- Free-tier rate limits (429 errors) across multiple providers indicate OpenRouter quota exhaustion, not model-specific failures, requiring request sche
 - Single-cycle swarm convergence with score 8 indicates planner-builder-critic role allocation is well-calibrated for this task class.
 - Automated tool rejection for destructive operations (os.system/subprocess) correctly enforces human-in-the-loop safety.
 - Poolside Laguna consistently delivers low-latency (1.2s) successful completions, making it the only viable free fallback.
@@ -51,11 +56,6 @@
 - Nemotron's latency varies 4x (18-73s) and now returns empty choices, showing even 'healthy' models degrade without circuit-breaking.
 - Hand actions fail because relative paths ignore ZOETRON_DATA, revealing a systemic path-resolution fragility across tools.
 - z-ai/glm-5.2:free consistently returns 429 errors yet remains in rotation, proving no automatic quarantine exists for rate-limited models.
-- Latency for successful models ranged from 41.5s to 109.0s, indicating variable performance under load.
-- Only inclusionai/ling-3.0-flash-fin and poolside/laguna-s-2.1 succeeded, suggesting model reliability varies significantly.
-- The tor goal failed due to a syntax error in a generated Python file, indicating unreliable code generation.
-- Three hand_action failures with exit code 1 and zero gelesen suggest a consistent execution or environment issue.
-- Repeated 429 Too Many Requests errors across multiple models indicate systemic rate-limiting rather than isolated failures.
 
 ---
 
