@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-31 01:33:53",
+ "stand": "2026-08-31 01:40:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 22,
-   "erfolge": 22,
+   "laeufe": 23,
+   "erfolge": 23,
    "quote": 1.0
   },
   {

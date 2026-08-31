@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7681 Fakten** · Stand 2026-08-31 01:34 UTC · aktualisiert bei jedem Herzschlag
+**7686 Fakten** · Stand 2026-08-31 01:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3815
+- **dream:** 3820
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831013957:5:809c97`
+*31.08. 01:39 UTC · Quelle: dream*
+
+Artifact validation is missing: goals marked complete without verifying exit codes or output quality, allowing silent failures.
+
+### `dream:20260831013957:4:9713c6`
+*31.08. 01:39 UTC · Quelle: dream*
+
+Stale drive goals (market analysis, skill adoption) persist because no convergence detector or budget allocator forces completion or re-prioritization.
+
+### `dream:20260831013957:3:4e8858`
+*31.08. 01:39 UTC · Quelle: dream*
+
+Multiple skill proposals (rate-limit detector, async framework, budget allocator, convergence detector) address the same root cause: unreliable model orchestration.
+
+### `dream:20260831013957:2:7ed0f2`
+*31.08. 01:39 UTC · Quelle: dream*
+
+High latency (10-27s) on the working model nvidia/nemotron-3-ultra creates bottlenecks for iterative loops requiring multiple calls.
+
+### `dream:20260831013957:1:115f18`
+*31.08. 01:39 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limiting that halts progress unless fallback models are pre-configured.
 
 ### `dream:20260831013324:5:8b8984`
 *31.08. 01:33 UTC · Quelle: dream*

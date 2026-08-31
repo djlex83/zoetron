@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
@@ -35,12 +35,17 @@
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Skills wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 2×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 - Neue Fähigkeiten aus Vorschlägen entwickeln *(wieder aufgegriffen: 2×)*
 - Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten nutzbar machen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Artifact validation is missing: goals marked complete without verifying exit codes or output quality, allowing silent failures.
+- Stale drive goals (market analysis, skill adoption) persist because no convergence detector or budget allocator forces completion or re-prioritization
+- Multiple skill proposals (rate-limit detector, async framework, budget allocator, convergence detector) address the same root cause: unreliable model 
+- High latency (10-27s) on the working model nvidia/nemotron-3-ultra creates bottlenecks for iterative loops requiring multiple calls.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limiting that halts progress unless fallback models are pre-configured.
 - Destructive operations like os.system calls are being executed without safeguards, posing a risk that requires dry-run wrapping and human confirmation
 - Convergence in swarm cycles occurs within a single cycle, making additional cycles unnecessary and wasteful of compute resources.
 - Skill proposals are frequently generated but lack validation mechanisms, leading to a gap between proposal and actual usability.
@@ -51,11 +56,6 @@
 - No metabolic gating exists: the system continues spawning swarms/model-calls despite repeated failures, wasting cycles and increasing latency.
 - Skill proposals accumulate without tracking or execution, causing repeated re-proposals of the same capabilities (fallback chain, metabolism gate, pro
 - Rate limits (429) and upstream errors (502/404) cascade across multiple free-tier models simultaneously, leaving only poolside/laguna-s-2.1:free as re
-- Relative-path handling remains a recurring tool-entry failure mode despite prior PathResolver proposal.
-- Swarm cycles execute without a hard budget guard, risking unbounded cost/latency when models degrade.
-- Skill proposals accumulate (10+ in this log) but lack a tracking mechanism to move them from proposed→implemented|deferred|rejected.
-- Successful model calls exhibit 88-92s p95 latency, exceeding the 60s threshold for interactive use and causing cascade timeouts.
-- Free-tier models consistently fail with 429 rate-limits and 404/empty-choice errors, making them unreliable for production workflows.
 
 ---
 
