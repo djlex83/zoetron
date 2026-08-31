@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 07:47:18",
+ "stand": "2026-08-31 07:59:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,10 +21,10 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 6,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
@@ -51,10 +51,10 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 5,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 5,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -67,18 +67,6 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
@@ -105,6 +93,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -124,6 +118,12 @@
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -171,17 +171,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.796,
- "simulationen_angewandt": 21,
+ "haende_quote": 0.79,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 24,
+  "n": 25,
   "best": 9.0,
-  "schnitt": 5.25
+  "schnitt": 5.28
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 5.18
+   "n": 23,
+   "schnitt": 5.22
   },
   "bau": {
    "n": 2,
