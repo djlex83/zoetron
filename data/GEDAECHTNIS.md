@@ -1,16 +1,16 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8154 Fakten** · Stand 2026-08-31 16:11 UTC · aktualisiert bei jedem Herzschlag
+**8172 Fakten** · Stand 2026-08-31 16:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4225
-- **swarm_artifact:** 1783
-- **last_swarm_critique:** 648
-- **anti_pattern:** 545
-- **last_swarm_goal:** 397
-- **strategy:** 293
+- **dream:** 4230
+- **swarm_artifact:** 1789
+- **last_swarm_critique:** 649
+- **anti_pattern:** 547
+- **last_swarm_goal:** 398
+- **strategy:** 294
 - **tool:** 89
-- **hand_result:** 86
-- **aktuell_organfehler:** 40
+- **hand_result:** 87
+- **aktuell_organfehler:** 41
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Trä:2`
+*31.08. 16:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Evolutionary Dream-Driven Genetic Programming with Niche Preservation - Treat each dream as a fitness landscape generator: an LLM converts dream narratives into executable fitness functions (property-based, simulation-based, 
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Trä:1`
+*31.08. 16:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Latent Skill Manifold Crystallization via Diffusion Code Generation - Train a dream encoder (Transformer + contrastive learning) mapping dream reports to a latent skill manifold. Condition a code diffusion model (fine-tuned C
+
+### `last_swarm_critique`
+*31.08. 16:32 UTC · Quelle: critic*
+
+score=5; issues=Traum-Extraktion ist naive Wort-Haeufigkeitsanalyse ohne semantisches Verstaendnis; Extrahierte 'Skills' sind nur Metadaten-Labels, keine ausfuehrbaren Faehigkeiten; Entkopplung: Extractor produziert keinen Code, Validator erwartet aber Code; V
+
+### `last_swarm_goal`
+*31.08. 16:17 UTC · Quelle: system*
+
+Neue Fähigkeiten aus Träumen entwickeln
+
+### `dream:20260831161646:5:a6faa6`
+*31.08. 16:16 UTC · Quelle: dream*
+
+Drive goals recognize stale self-assessment and unused market analyses but lack automated triggers to convert insights into actions.
+
+### `dream:20260831161646:4:cd0621`
+*31.08. 16:16 UTC · Quelle: dream*
+
+Token input variance (526-1332 tokens) without budget enforcement risks context overflow on smaller-window models.
+
+### `dream:20260831161646:3:44b729`
+*31.08. 16:16 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite persistent model failures, suggesting diagnostic blind spots for external dependency health.
+
+### `dream:20260831161646:2:321064`
+*31.08. 16:16 UTC · Quelle: dream*
+
+Reflex-based cleanup tasks converge reliably but skill proposals accumulate without implementation, creating a proposal-execution gap.
+
+### `dream:20260831161646:1:f38111`
+*31.08. 16:16 UTC · Quelle: dream*
+
+The model router lacks health-aware routing, causing repeated 429 errors on z-ai/glm-5.2:free while fallback latencies vary 3x (31-94s) indicating no load balancing.
+
+### `aktuell_organfehler`
+*31.08. 16:14 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-08-31 16:09:23 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `aktuell_organfehler`
 *31.08. 16:05 UTC · Quelle: selbstdiagnose.py*

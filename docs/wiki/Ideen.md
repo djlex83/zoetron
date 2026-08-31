@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 16:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 16:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals recognize stale self-assessment and unused market analyses but lack automated triggers to convert insights into actions.
+- Token input variance (526-1332 tokens) without budget enforcement risks context overflow on smaller-window models.
+- Self-diagnosis reports zero organ errors despite persistent model failures, suggesting diagnostic blind spots for external dependency health.
+- Reflex-based cleanup tasks converge reliably but skill proposals accumulate without implementation, creating a proposal-execution gap.
+- The model router lacks health-aware routing, causing repeated 429 errors on z-ai/glm-5.2:free while fallback latencies vary 3x (31-94s) indicating no 
 - Reflex-based skill installation succeeds (neue-fähigkeiten-aktiv-vorschlagen.py) but lacks post-deployment validation of skill effectiveness.
 - Drive goals (model failure understanding, dream linking, self-assessment) age without automatic linkage to concrete skill proposals in testing or depl
 - Skill proposals accumulate without semantic deduplication, risking redundant implementations of circuit breaker, quota routing, and gap tracking.
@@ -51,11 +56,6 @@
 - Drive goals (reliability, market analysis, simulation) remain unlinked to deployed skills despite multiple skill proposals generated in this session.
 - Only 2 of 6 tested models (ling-3.0-flash-fin, poolside/laguna-s-2.1) returned successfully, indicating a ~33% availability rate for free endpoints.
 - Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production paths without a resilience layer.
-- Zero pruning events despite repeated failures indicates error events aren't being converted to learnable memory traces.
-- Successful fallback model (ling-3.0-flash-fin) has distinct architecture from failed models, suggesting provider diversity matters more than model cou
-- The system generates skill proposals faster than it validates them, creating a proposal-validation gap that wastes generation effort.
-- Reflex-mode execution using local tools succeeds when all LLM providers are rate-limited, proving architectural value of non-LLM fallback paths.
-- Free tier models from different providers fail simultaneously on 429 errors, indicating shared rate-limiting infrastructure rather than independent qu
 
 ---
 
