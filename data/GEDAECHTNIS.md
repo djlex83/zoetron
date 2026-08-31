@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7791 Fakten** · Stand 2026-08-31 04:45 UTC · aktualisiert bei jedem Herzschlag
+**7796 Fakten** · Stand 2026-08-31 04:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3905
+- **dream:** 3910
 - **swarm_artifact:** 1767
 - **last_swarm_critique:** 644
 - **anti_pattern:** 541
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831044926:5:ea1ece`
+*31.08. 04:49 UTC · Quelle: dream*
+
+Previously proposed skills (ModelRegistry, ErrorClassifier, FallbackChain) directly address observed failure patterns but remain unimplemented.
+
+### `dream:20260831044926:4:2ceaff`
+*31.08. 04:49 UTC · Quelle: dream*
+
+Pruning removed zero items despite accumulated failures, suggesting pruning criteria are misaligned with actual garbage.
+
+### `dream:20260831044926:3:eb62c9`
+*31.08. 04:49 UTC · Quelle: dream*
+
+Dream consolidation exceeded 180s timeout, indicating experience volume exceeds processing capacity during high-failure periods.
+
+### `dream:20260831044926:2:3a3e31`
+*31.08. 04:49 UTC · Quelle: dream*
+
+Circuit breaker correctly quarantined nvidia/nemotron after 3 consecutive 404s, but 1800s quarantine may be excessive for transient errors.
+
+### `dream:20260831044926:1:74138b`
+*31.08. 04:49 UTC · Quelle: dream*
+
+Rate limiting from OpenRouter affects multiple models simultaneously, requiring provider-level fallback not just model-level.
 
 ### `dream:20260831044352:5:77c1ec`
 *31.08. 04:43 UTC · Quelle: dream*

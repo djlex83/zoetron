@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 - Marktanalyse sauber zu Ende bringen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Previously proposed skills (ModelRegistry, ErrorClassifier, FallbackChain) directly address observed failure patterns but remain unimplemented.
+- Pruning removed zero items despite accumulated failures, suggesting pruning criteria are misaligned with actual garbage.
+- Dream consolidation exceeded 180s timeout, indicating experience volume exceeds processing capacity during high-failure periods.
+- Circuit breaker correctly quarantined nvidia/nemotron after 3 consecutive 404s, but 1800s quarantine may be excessive for transient errors.
+- Rate limiting from OpenRouter affects multiple models simultaneously, requiring provider-level fallback not just model-level.
 - Reflex-based execution succeeded where model-based planning failed, showing that deterministic scripts outperform flaky LLM calls for well-defined cle
 - The dream module itself timed out at 180 seconds during consolidation, revealing recursive resource contention when processing failure-heavy logs.
 - Calibration overestimated effort by 100% (predicted 6 vs actual 3), suggesting the estimator lacks historical baseline data for reflex tasks.
@@ -51,11 +56,6 @@
 - Latency for successful NVIDIA Nemotron calls varies dramatically (38.5s to 100.3s) with token output, suggesting upstream congestion directly impacts 
 - NVIDIA Nemotron models exhibit cascading failures (502 upstream overload, 504 timeouts) after 3 consecutive errors, triggering automatic lockout for 1
 - Free-tier model endpoints consistently return 429 errors under concurrent load, indicating rate limits are the primary failure mode rather than model 
-- The swarm cleanup reflex failed due to the same path resolution issue, creating a cascading failure pattern where cleanup tasks cannot execute.
-- Three drive goals show stale signals (market analysis unused, skill proposals untested, model error rate high), indicating a systemic failure to conve
-- The hand_action failure with 'nichts gelesen' reveals a critical path resolution bug where relative paths and sys.argv[1] are not properly resolved ag
-- Model failover to nvidia/nemotron-3-ultra-550b consistently succeeds but with high latency (44-80s), suggesting it should be deprioritized for time-se
-- Repeated 429 errors on z-ai/glm-5.2:free indicate account-level rate limit exhaustion rather than model-specific issues, requiring shared quota manage
 
 ---
 

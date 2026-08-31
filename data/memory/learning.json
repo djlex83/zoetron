@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 04:44:11",
+ "stand": "2026-08-31 04:49:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "laeufe": 18,
+   "erfolge": 18,
    "quote": 1.0
   },
   {
@@ -39,12 +39,6 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -64,6 +58,12 @@
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
