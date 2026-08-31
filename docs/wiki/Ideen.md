@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Concurrent warm-connection pools with real-time health scoring (EWMA latency + error rate) outperform sequential fallback by reducing tail latency and
+- Skill proposals accumulate without a promotion mechanism; auto-committing proposals with ≥2 drive signals and assigning owners via capability match en
+- Silent degradation (latency spikes, empty choices) goes undetected without pre-flight probes; a lightweight completion check before routing production
+- Relative-path drift in script entry points causes non-deterministic I/O failures; a singleton config (ZOETRON_DATA) with mandatory absolute-path resol
+- Rate limiting (429) and upstream overload (502) are the dominant failure modes across free-tier model endpoints, requiring proactive circuit-breaking 
 - Convergence criteria are implicit; making them explicit (score≥8, zero critical risks, no new revisions) prevents premature termination.
 - Swarm iterations lack a durable checkpoint/resume mechanism, forcing full restarts after any crash or rate-limit stall.
 - Relative-path drift breaks script execution across contexts; a single config singleton for absolute paths eliminates this class of error.
@@ -51,11 +56,6 @@
 - Reflex actions succeed when the tool path is pre-validated, but ad-hoc model calls fail silently without a pre-flight environment check.
 - Skill proposals accumulate but remain unimplemented because no automated pipeline validates, tests, and merges them into the agent's toolset.
 - Rate-limiting (429) and upstream overload (502) across multiple free-tier providers indicate that single-provider reliance is a systemic reliability b
-- Market analysis insights and proposed skills accumulate stale without conversion to executable tasks or implemented capabilities.
-- No circuit breaker, exponential backoff, or latency-aware fallback ordering exists despite repeated 429 failures across sessions.
-- Local hand actions (file ops, scripts) consistently succeed in <0.3s, yet model invocations are still attempted first for applicable tasks.
-- Multiple skill proposals for model routing, local-first execution, and revision gates exist but remain unimplemented, creating a proposal-execution ga
-- Rate-limited primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while fallback (Nemotron) succeeds but with high latency variance (24-75s).
 
 ---
 
