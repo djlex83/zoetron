@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 09:22:47",
+ "stand": "2026-08-31 09:28:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,12 +81,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -121,6 +115,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -159,13 +159,13 @@
    "quote": 0.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
   },
   {
-   "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

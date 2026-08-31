@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7903 Fakten** · Stand 2026-08-31 09:23 UTC · aktualisiert bei jedem Herzschlag
+**7908 Fakten** · Stand 2026-08-31 09:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3985
+- **dream:** 3990
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831092752:5:9596f9`
+*31.08. 09:27 UTC · Quelle: dream*
+
+The conserve state with max 1 iteration budget forced sequential model attempts, amplifying the impact of rate limits across the entire call chain.
+
+### `dream:20260831092752:4:d72f73`
+*31.08. 09:27 UTC · Quelle: dream*
+
+Nvidia nemotron-3-ultra-550b-a55b was the most reliable model, succeeding 4 times with high token throughput despite variable latency (60-211s).
+
+### `dream:20260831092752:3:705505`
+*31.08. 09:27 UTC · Quelle: dream*
+
+The simulation-revision loop (3 revisions applied) was the mechanism that converted repeated model failures into a successful outcome.
+
+### `dream:20260831092752:2:9bfeaa`
+*31.08. 09:27 UTC · Quelle: dream*
+
+Hand actions exiting with 0 but reading nothing indicate a path resolution bug where relative paths fail to map under the real ZOETRON_DATA directory.
+
+### `dream:20260831092752:1:c53f5c`
+*31.08. 09:27 UTC · Quelle: dream*
+
+OpenRouter free models consistently hit 429 rate limits, making them unreliable for sequential calls without backoff or cooldown windows.
 
 ### `dream:20260831092226:5:72aace`
 *31.08. 09:22 UTC · Quelle: dream*

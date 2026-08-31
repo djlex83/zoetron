@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
@@ -35,12 +35,17 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Skills testen und nutzen *(wieder aufgegriffen: 2×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 2×)*
 - Träume mit Wissen verbinden *(wieder aufgegriffen: 2×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The conserve state with max 1 iteration budget forced sequential model attempts, amplifying the impact of rate limits across the entire call chain.
+- Nvidia nemotron-3-ultra-550b-a55b was the most reliable model, succeeding 4 times with high token throughput despite variable latency (60-211s).
+- The simulation-revision loop (3 revisions applied) was the mechanism that converted repeated model failures into a successful outcome.
+- Hand actions exiting with 0 but reading nothing indicate a path resolution bug where relative paths fail to map under the real ZOETRON_DATA directory.
+- OpenRouter free models consistently hit 429 rate limits, making them unreliable for sequential calls without backoff or cooldown windows.
 - Reliance on single-provider endpoints creates a single point of failure for complex, multi-step reasoning tasks.
 - The inability to recover from script errors via reflex indicates a need for more granular error classification in tool outputs.
 - Swarm tasks fail to converge when model outages interrupt the iterative feedback loop between planner and critic.
@@ -51,11 +56,6 @@
 - Simulation recommends revisions (3 risks, 3 revisions) but zero are applied, indicating a broken feedback loop between critique and execution.
 - The inclusionai/ling-3.0-flash-fin:free model succeeds where others fail but incurs 19s latency, making it a reliable but slow fallback.
 - Rate limiting (429 errors) across multiple free-tier models is the primary systemic bottleneck, not model capability.
-- Local hand actions (0.19s, zero errors) are orders of magnitude faster and more reliable than any model call.
-- Calibration remains accurate (predicted=actual=6), indicating the estimator is well-tuned for this task class.
-- Simulation-driven revision loops effectively reduce risk: initial 5 risks dropped to 2 applied revisions, yielding a working 274-line Python artifact.
-- Only inclusionai/ling-3.0-flash-fin:free succeeds consistently but exhibits high latency variance (6.6–36.7s), requiring adaptive timeouts.
-- Free-tier models on OpenRouter consistently fail with 429 rate-limit errors, making them unreliable for production use.
 
 ---
 
