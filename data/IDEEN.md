@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 11:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
@@ -35,12 +35,17 @@
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning finds no stale data, meaning the experience buffer is dominated by recent repeated failures rather than diverse learning.
+- Drive goals reveal a meta-need: the system must autonomously acquire skills to handle its own model-selection failures.
+- Self-diagnosis and reflex systems operate correctly but model failures prevent higher-level reasoning tasks from executing.
+- Successful requests only occur on poolside/laguna-s-2.1:free, suggesting it has separate quota or higher priority.
+- Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 - Successful reflex use (market analysis) shows existing tools can close gaps if automatically triggered by staleness.
 - Relative paths at the hand-action boundary cause silent I/O failures that only absolute-path contracts prevent.
 - Stale goals (>48h) persist undecomposed, blocking progress until a reflex or manual intervention occurs.
@@ -51,11 +56,6 @@
 - Silent degradation (latency spikes, empty choices) goes undetected without pre-flight probes; a lightweight completion check before routing production
 - Relative-path drift in script entry points causes non-deterministic I/O failures; a singleton config (ZOETRON_DATA) with mandatory absolute-path resol
 - Rate limiting (429) and upstream overload (502) are the dominant failure modes across free-tier model endpoints, requiring proactive circuit-breaking 
-- Convergence criteria are implicit; making them explicit (score≥8, zero critical risks, no new revisions) prevents premature termination.
-- Swarm iterations lack a durable checkpoint/resume mechanism, forcing full restarts after any crash or rate-limit stall.
-- Relative-path drift breaks script execution across contexts; a single config singleton for absolute paths eliminates this class of error.
-- Skill proposals accumulate (70+) without a lightweight validation harness, so most never get tested or adopted.
-- Rate limits (429) on free-tier models cause cascading failures unless exponential backoff, per-model cooldown, and multi-model warm pools are enforced
 
 ---
 

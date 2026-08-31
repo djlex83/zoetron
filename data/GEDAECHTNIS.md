@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7993 Fakten** · Stand 2026-08-31 11:22 UTC · aktualisiert bei jedem Herzschlag
+**7998 Fakten** · Stand 2026-08-31 11:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4075
+- **dream:** 4080
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831112704:5:fcbc3f`
+*31.08. 11:27 UTC · Quelle: dream*
+
+Pruning finds no stale data, meaning the experience buffer is dominated by recent repeated failures rather than diverse learning.
+
+### `dream:20260831112704:4:3ee1c6`
+*31.08. 11:27 UTC · Quelle: dream*
+
+Drive goals reveal a meta-need: the system must autonomously acquire skills to handle its own model-selection failures.
+
+### `dream:20260831112704:3:6ae3e2`
+*31.08. 11:27 UTC · Quelle: dream*
+
+Self-diagnosis and reflex systems operate correctly but model failures prevent higher-level reasoning tasks from executing.
+
+### `dream:20260831112704:2:5536b6`
+*31.08. 11:27 UTC · Quelle: dream*
+
+Successful requests only occur on poolside/laguna-s-2.1:free, suggesting it has separate quota or higher priority.
+
+### `dream:20260831112704:1:42337b`
+*31.08. 11:27 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ### `dream:20260831112137:5:ce4206`
 *31.08. 11:21 UTC · Quelle: dream*

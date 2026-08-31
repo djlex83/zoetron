@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 11:21:51",
+ "stand": "2026-08-31 11:28:32",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,6 +63,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -73,12 +79,6 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
