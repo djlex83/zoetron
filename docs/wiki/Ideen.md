@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 20:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 20:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite repeated 429 failures, indicating health checks monitor internal state but not provider SLA complianc
+- Reflex-driven dream connection succeeded (act_done converged) while model calls failed, showing internal coordination works but external API boundary 
+- Drive goals reveal three orthogonal stressors (model failures, stale analyses, missing simulation tests) that compound: unreliable models block analys
+- Five independent skill proposals converge on model routing, health telemetry, circuit breaking, and pre-flight probes — convergent evolution signals a
+- Provider z-ai/glm-5.2:free fails deterministically with 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds at 18-46s latency, proving re
 - System auto-generates relevant skill proposals (routing, retry, dashboard) directly from observed failure patterns.
 - Intermittent hand action failures (exit 1, no error output) reveal silent infrastructure instability.
 - Calibration error of 1 indicates well-tuned prediction for this task class.
@@ -51,11 +56,6 @@
 - Simulation-driven revision loops (verdict→revise→apply→verify) caught 5 risks and produced a passing artifact in one cycle.
 - The working model (nemotron-3-ultra) exhibits extreme latency variance (26–180s), requiring adaptive timeouts rather than fixed limits.
 - Free-tier models fail predominantly due to 429 rate limits, not capability gaps, making a tracked fallback chain essential for reliability.
-- High metabolic stress (1.0) triggers conserve mode that starves validation loops, letting path and model errors propagate unchecked.
-- Model fallback chains collapse when all providers hit rate limits simultaneously, revealing missing quota-aware routing.
-- Skill proposals accumulate without a deployment pipeline, creating a proposal-to-practice gap that wastes design effort.
-- Path resolution fails when skills use relative paths instead of ZOETRON_DATA-rooted absolute paths, causing silent zero-result executions.
-- Free-tier model APIs fail catastrophically under concurrent load due to shared rate limits across all consumers.
 
 ---
 

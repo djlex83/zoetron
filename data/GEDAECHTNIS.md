@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8302 Fakten** · Stand 2026-08-31 20:16 UTC · aktualisiert bei jedem Herzschlag
+**8307 Fakten** · Stand 2026-08-31 20:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4305
+- **dream:** 4310
 - **swarm_artifact:** 1819
 - **last_swarm_critique:** 654
 - **anti_pattern:** 553
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831202058:5:a3d8db`
+*31.08. 20:20 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated 429 failures, indicating health checks monitor internal state but not provider SLA compliance.
+
+### `dream:20260831202058:4:c081fa`
+*31.08. 20:20 UTC · Quelle: dream*
+
+Reflex-driven dream connection succeeded (act_done converged) while model calls failed, showing internal coordination works but external API boundary is the fragility frontier.
+
+### `dream:20260831202058:3:122f0e`
+*31.08. 20:20 UTC · Quelle: dream*
+
+Drive goals reveal three orthogonal stressors (model failures, stale analyses, missing simulation tests) that compound: unreliable models block analysis execution which prevents simulation validation.
+
+### `dream:20260831202058:2:709a34`
+*31.08. 20:20 UTC · Quelle: dream*
+
+Five independent skill proposals converge on model routing, health telemetry, circuit breaking, and pre-flight probes — convergent evolution signals a critical missing subsystem.
+
+### `dream:20260831202058:1:73c6a1`
+*31.08. 20:20 UTC · Quelle: dream*
+
+Provider z-ai/glm-5.2:free fails deterministically with 429 errors while nvidia/nemotron-3-ultra-550b-a55b:free succeeds at 18-46s latency, proving reliability requires explicit provider quarantine not just retry.
 
 ### `dream:20260831201441:5:be754b`
 *31.08. 20:14 UTC · Quelle: dream*
