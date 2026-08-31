@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 07:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 08:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,11 +28,11 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
-- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse sauber zu Ende bringen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill-conversion scripts lack structured error contracts, forcing manual debugging instead of automated retry.
+- Reflex-driven goal renewal succeeded without LLM calls, proving deterministic fallbacks can unblock the system during model outages.
+- First-request latency on cold models is high (14s) but drops sharply on warm reuse (5.3s), confirming cold-start penalty.
+- poolside/laguna-s-2.1:free is the only model that reliably succeeds, making it the de facto backbone for free-tier operation.
+- Multiple free-tier models (GLM, Nemotron, Gemma) consistently fail with 429 rate limits and 502 overload errors under load.
 - The recall of 'swarm_artifact:Tasks ueber das hands-Organ ausfuehren' indicates an active knowledge structure for task decomposition that, if leverage
 - Calibration consistently underestimates outcomes (predicted 5 vs actual 7, abs_error 2), revealing a conservative bias that requires a systematic upwa
 - The critic-driven evolution loop successfully identified a concrete code smell (eval()/exec() in execute_task()) and produced variants that improved s
@@ -51,11 +56,6 @@
 - Latency scales predictably with token output volume, with 10000-token responses taking ~207s versus 1105-token responses at ~24.7s.
 - The poolside/laguna-s-2.1:free model is the only reliable endpoint, handling all successful requests across varying token loads.
 - All non-poolside models consistently fail with HTTP 429 errors, indicating a systemic rate-limiting issue rather than isolated model failures.
-- Skill conversion reflex (fähigkeitsvorschläge-in-echte-skills-ums.py) fails without error details, breaking the plan-to-act pipeline.
-- Metabolism conserve mode (stress=1.0) caps iterations to 1, preventing retry loops that could recover from transient failures.
-- A single working model (inclusionai/ling-3.0-flash-fin:free) exhibits high cold-start latency (25s) then stabilizes (5.6s), suggesting connection pool
-- Free tier models cascade into 429 rate limits within seconds, making sequential fallback unreliable under load.
-- Relative path resolution fails silently when ZOETRON_DATA environment variable exists but sys.argv[1] points elsewhere, causing zero-byte reads.
 
 ---
 

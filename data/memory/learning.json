@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 07:59:18",
+ "stand": "2026-08-31 08:56:44",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 17,
    "erfolge": 17,
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 17,
-   "erfolge": 17,
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
@@ -57,10 +57,10 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
@@ -81,10 +81,10 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
@@ -171,17 +171,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.79,
- "simulationen_angewandt": 23,
+ "haende_quote": 0.786,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 25,
+  "n": 26,
   "best": 9.0,
-  "schnitt": 5.28
+  "schnitt": 5.38
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 23,
-   "schnitt": 5.22
+   "n": 24,
+   "schnitt": 5.33
   },
   "bau": {
    "n": 2,
