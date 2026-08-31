@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8277 Fakten** · Stand 2026-08-31 19:42 UTC · aktualisiert bei jedem Herzschlag
+**8282 Fakten** · Stand 2026-08-31 19:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4280
+- **dream:** 4285
 - **swarm_artifact:** 1819
 - **last_swarm_critique:** 654
 - **anti_pattern:** 553
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831194654:5:15fb06`
+*31.08. 19:46 UTC · Quelle: dream*
+
+System stress signals (metabolism.stress > 0.8) correlate with cascade model failures, yet no scheduler currently backs off concurrency or expands timeouts automatically.
+
+### `dream:20260831194654:4:39dda3`
+*31.08. 19:46 UTC · Quelle: dream*
+
+Thirty-five skill proposals exist but adoption is near zero, revealing a missing 'skill graduation' gate that validates utility before registry insertion.
+
+### `dream:20260831194654:3:5e6284`
+*31.08. 19:46 UTC · Quelle: dream*
+
+Swarm evolution cycles consistently fail to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptance threshold or the search space is too broad.
+
+### `dream:20260831194654:2:339f9f`
+*31.08. 19:46 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra fallback exhibits high latency variance (7.4–16.6 s) and token inefficiency (output often < input), indicating it is a poor quality/latency trade-off for production use.
+
+### `dream:20260831194654:1:552c3b`
+*31.08. 19:46 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails deterministically with 429 rate-limit errors, making it unusable as a primary provider without aggressive request spacing or quota negotiation.
 
 ### `dream:20260831194021:5:eb6c5b`
 *31.08. 19:40 UTC · Quelle: dream*

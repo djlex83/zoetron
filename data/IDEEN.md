@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 19:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System stress signals (metabolism.stress > 0.8) correlate with cascade model failures, yet no scheduler currently backs off concurrency or expands tim
+- Thirty-five skill proposals exist but adoption is near zero, revealing a missing 'skill graduation' gate that validates utility before registry insert
+- Swarm evolution cycles consistently fail to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptance t
+- The nvidia/nemotron-3-ultra fallback exhibits high latency variance (7.4–16.6 s) and token inefficiency (output often < input), indicating it is a poo
+- The z-ai/glm-5.2:free model fails deterministically with 429 rate-limit errors, making it unusable as a primary provider without aggressive request sp
 - Calibration prediction matched actual score exactly (6/10), suggesting the scoring heuristic is well-calibrated for this task type.
 - Evolutionary iteration improved artifact score from 6 to 9 by addressing critic-identified security risks in validation code.
 - Only inclusionai/ling-3.0-flash-fin:free succeeded consistently (2/2 attempts) with reasonable latency (10-24s).
@@ -51,11 +56,6 @@
 - Drive goals accumulate without execution linkage; an ExecutionGapTracker mapping each goal to concrete skill proposals with age alerts (>24h) closes t
 - Model fallback cascades fail because no real-time health signals exist; synthetic probes every 60s per model are needed to populate a ModelHealthRegis
 - Rate limiting (429) across five distinct models reveals systemic quota exhaustion, not isolated failures, requiring quota-aware routing with circuit b
-- Swarm execution with planner/builder/critic roles converges reliably in one cycle when the artifact is already functional.
-- Calibration consistently underestimates outcome scores (predicted 5 vs actual 8), indicating a systematic pessimistic bias in the predictor.
-- Model inclusionai/ling-3.0-flash-fin:free delivers acceptable latency (~10 s) and should be preferred for free-tier routing.
-- Model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (22–177 s), making it unreliable for time-sensitive tasks.
-- Model z-ai/glm-5.2:free is unusable due to persistent 429 rate-limit errors across all attempts.
 
 ---
 
