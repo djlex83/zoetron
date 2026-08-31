@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8048 Fakten** · Stand 2026-08-31 12:45 UTC · aktualisiert bei jedem Herzschlag
+**8053 Fakten** · Stand 2026-08-31 12:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4130
+- **dream:** 4135
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831124938:5:e585d5`
+*31.08. 12:49 UTC · Quelle: dream*
+
+Model failures cluster in time (multiple 429s within seconds), indicating burst traffic exceeds free-tier quotas rather than sustained load.
+
+### `dream:20260831124938:4:b5e213`
+*31.08. 12:49 UTC · Quelle: dream*
+
+Existing skill proposals (ModelRouter, CircuitBreaker, quota-aware routing) directly address observed failure patterns but remain undeployed.
+
+### `dream:20260831124938:3:38bb56`
+*31.08. 12:49 UTC · Quelle: dream*
+
+The reflex system successfully auto-upgrades models but lacks a health-aware selection policy to avoid picking another rate-limited model.
+
+### `dream:20260831124938:2:d70dc9`
+*31.08. 12:49 UTC · Quelle: dream*
+
+Latency variance between working models exceeds 5x (10s vs 53s), making latency-aware routing essential for user-facing tasks.
+
+### `dream:20260831124938:1:74cd08`
+*31.08. 12:49 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter share rate-limit buckets, causing cascading 429 failures across multiple models simultaneously.
 
 ### `dream:20260831124248:5:81542f`
 *31.08. 12:42 UTC · Quelle: dream*

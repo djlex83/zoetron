@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model failures cluster in time (multiple 429s within seconds), indicating burst traffic exceeds free-tier quotas rather than sustained load.
+- Existing skill proposals (ModelRouter, CircuitBreaker, quota-aware routing) directly address observed failure patterns but remain undeployed.
+- The reflex system successfully auto-upgrades models but lacks a health-aware selection policy to avoid picking another rate-limited model.
+- Latency variance between working models exceeds 5x (10s vs 53s), making latency-aware routing essential for user-facing tasks.
+- Free-tier models on OpenRouter share rate-limit buckets, causing cascading 429 failures across multiple models simultaneously.
 - Relative path handling at the hand-action boundary causes recurring I/O failures; an absolute-path contract with existence checks eliminates this clas
 - Skill proposals accumulate without automated promotion; a lifecycle manager with drive-signal thresholds and capability-based ownership closes the ide
 - Latency variance across models (12.7s–79.2s) demands real-time health scoring with warm connection pools to maintain SLA compliance.
@@ -51,11 +56,6 @@
 - Path resolution failures recur because relative paths cross the hand-action boundary unchecked; absolute-path contract with existence verification is 
 - Resilience patterns are repeatedly reinvented instead of consolidated: circuit breakers, health scoring, fallback chains, and pre-flight probes appear
 - Single-model dependency creates systemic fragility: nemotron works but with high/variable latency (29-79s), while glm-5.2 fails 100% with 429 errors, 
-- Absolute-path contract violations at hand-action boundaries force runtime resolution failures, suggesting path canonicalization must be enforced at th
-- Reflex-based insight consolidation converges but does not trigger skill learning, leaving the system aware of problems without acquiring new capabilit
-- Self-diagnosis reports zero organ errors while external API degradation (429s, high latency) persists, showing health monitoring excludes provider-lev
-- Duplicate skill proposals across cycles (checkpoint logger, skill harness, path resolver, model pool) indicate a proposal-to-implementation gap where 
-- Repeated 429 errors on z-ai/glm-5.2:free reveal missing per-endpoint circuit breakers and fallback chains, causing cascading failures when a single pr
 
 ---
 
