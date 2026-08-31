@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 14:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,11 +15,11 @@
 - Implement exponential backoff with jitter and a circuit breaker that disables a model after three consecutive  *(hatte die Idee 4×)*
 - Create a simulation-revision skill that iteratively applies fixes until risk count falls below a configurable  *(hatte die Idee 4×)*
 - Add a calibration monitor that logs prediction vs. actual per task type and triggers retraining when MAE excee *(hatte die Idee 4×)*
-- Add exponential backoff with jitter (base 1s, max 30s) and token-bucket rate limiting per model before any ret *(hatte die Idee 3×)*
-- Build a rolling reliability scorecard (success rate, p95 latency, error-type histogram) updated per request to *(hatte die Idee 3×)*
-- Create a promotion pipeline: when a reflex converges twice on the same goal, auto-generate skill artifact, run *(hatte die Idee 3×)*
 - Implement a circuit-breaker router that tracks per-model health (success rate, latency, error streak) and rout *(hatte die Idee 3×)*
 - Add exponential backoff with jitter (base 2s, max 60s) and automatic fallback to next-healthiest model on 429/ *(hatte die Idee 3×)*
+- Enforce minimum 1:2 critic-to-builder ratio in swarm configs and require critic sign-off before builder propos *(hatte die Idee 3×)*
+- Insert a pre-execution validation gate that runs syntax check, type hint verification, and dry-run simulation  *(hatte die Idee 3×)*
+- Create a priority request queue with dedicated capacity reservation for critical-path tasks to bypass rate-lim *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism signaled conserve mode with a budget of max 3 tasks and 1 iteration, yet the system continued attempting multiple model calls, suggesting b
+- The artifact itself does not run (Traceback in TOR check), indicating that artifacts must be validated for executability before being queued for deplo
+- The hand_action step failed silently (exit 1, 0 bytes read, no error message), revealing that execution-layer tools lack proper error reporting and re
+- The simulation's 'revise' verdict with 5 identified risks prevented a flawed execution, proving that pre-execution validation gates save wasted resour
+- Free-tier API models on OpenRouter consistently hit 429 rate limits and 502 upstream errors, making a known-working model whitelist with exponential b
 - Latency and token prediction drift degrades routing decisions, so continuous calibration against actual task outcomes is required for reliable model s
 - Pre-flight validation of paths, executables, shebangs, and import dependencies prevents wasted model calls on malformed or broken configurations.
 - A persistent gap between 75 skill proposals and near-zero implementations reveals missing validation and tracking infrastructure as the root cause, no
@@ -51,11 +56,6 @@
 - Skill proposals accumulate within the same problem domain (model reliability) without effective deduplication, despite a ProposalDeduplicator being pr
 - nvidia/nemotron-3-ultra-550b-a55b:free shows latency doubling (32.5s → 71.8s) between probes, indicating silent degradation that static health scores 
 - 429 rate-limit errors on z-ai/glm-5.2:free are the dominant recurring failure mode and require per-key quota management rather than naive retry.
-- Drive goals age without linked skills because no tracker maps goal signals (failure, stale, gap) to proposal coverage.
-- Skill proposals accumulate duplicates (circuit breaker, probe, path contract) needing semantic deduplication before lifecycle entry.
-- Path-related I/O failures are eliminated by enforcing absolute-path contracts at skill registration with mandatory resolve_path wrapping.
-- Multiple independent proposals converge on EWMA latency + error-class weighting as the core health metric for model routing.
-- Rate-limited models (429 errors) require automatic circuit-breaking with timed half-open probes to prevent cascade failures.
 
 ---
 
