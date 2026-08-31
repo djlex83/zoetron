@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7888 Fakten** · Stand 2026-08-31 09:05 UTC · aktualisiert bei jedem Herzschlag
+**7893 Fakten** · Stand 2026-08-31 09:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3970
+- **dream:** 3975
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831091039:5:31ce5c`
+*31.08. 09:10 UTC · Quelle: dream*
+
+Local hand actions (0.19s, zero errors) are orders of magnitude faster and more reliable than any model call.
+
+### `dream:20260831091039:4:6ac5b8`
+*31.08. 09:10 UTC · Quelle: dream*
+
+Calibration remains accurate (predicted=actual=6), indicating the estimator is well-tuned for this task class.
+
+### `dream:20260831091039:3:015e27`
+*31.08. 09:10 UTC · Quelle: dream*
+
+Simulation-driven revision loops effectively reduce risk: initial 5 risks dropped to 2 applied revisions, yielding a working 274-line Python artifact.
+
+### `dream:20260831091039:2:7807fc`
+*31.08. 09:10 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free succeeds consistently but exhibits high latency variance (6.6–36.7s), requiring adaptive timeouts.
+
+### `dream:20260831091039:1:bdfed0`
+*31.08. 09:10 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently fail with 429 rate-limit errors, making them unreliable for production use.
 
 ### `dream:20260831090418:5:494bb3`
 *31.08. 09:04 UTC · Quelle: dream*

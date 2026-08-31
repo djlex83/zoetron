@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 09:04:57",
+ "stand": "2026-08-31 09:11:08",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 17,
+   "erfolge": 17,
    "quote": 1.0
   },
   {
@@ -67,12 +67,6 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "veraltete-marktkenntnisse-aktualisieren.py",
-   "laeufe": 3,
-   "erfolge": 1,
-   "quote": 0.333
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
@@ -127,6 +121,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktkenntnisse-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",

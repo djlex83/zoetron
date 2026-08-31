@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Local hand actions (0.19s, zero errors) are orders of magnitude faster and more reliable than any model call.
+- Calibration remains accurate (predicted=actual=6), indicating the estimator is well-tuned for this task class.
+- Simulation-driven revision loops effectively reduce risk: initial 5 risks dropped to 2 applied revisions, yielding a working 274-line Python artifact.
+- Only inclusionai/ling-3.0-flash-fin:free succeeds consistently but exhibits high latency variance (6.6–36.7s), requiring adaptive timeouts.
+- Free-tier models on OpenRouter consistently fail with 429 rate-limit errors, making them unreliable for production use.
 - Calibration offsets (+2) for 'Marktanalyse in Handeln umsetzen' address symptom (underestimation) not root cause (model bias or prompt framing).
 - The 'hands-Organ' swarm artifact pattern remains untested; its value depends on whether decomposition reduces total API calls or merely redistributes 
 - High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, preventing multi-step recovery from transient failures.
@@ -51,11 +56,6 @@
 - First-request latency on cold models is high (14s) but drops sharply on warm reuse (5.3s), confirming cold-start penalty.
 - poolside/laguna-s-2.1:free is the only model that reliably succeeds, making it the de facto backbone for free-tier operation.
 - Multiple free-tier models (GLM, Nemotron, Gemma) consistently fail with 429 rate limits and 502 overload errors under load.
-- The recall of 'swarm_artifact:Tasks ueber das hands-Organ ausfuehren' indicates an active knowledge structure for task decomposition that, if leverage
-- Calibration consistently underestimates outcomes (predicted 5 vs actual 7, abs_error 2), revealing a conservative bias that requires a systematic upwa
-- The critic-driven evolution loop successfully identified a concrete code smell (eval()/exec() in execute_task()) and produced variants that improved s
-- poolside/laguna-s-2.1:free exhibits a resilience pattern: initial 429 failures followed by successful responses with rapidly decreasing latency (14.7s
-- 429 rate-limit errors are systemic across all providers simultaneously, indicating a shared API gateway bottleneck rather than model-specific failures
 
 ---
 
