@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 00:03:51",
+ "stand": "2026-08-31 00:28:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,12 +27,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -57,6 +51,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 5,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-umw.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -75,10 +75,10 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "tool": "fehlerquellen-systematisch-beheben.py",
    "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 4,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
@@ -109,12 +109,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",
@@ -159,6 +153,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "marktanalyse-endlich-umsetzen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -189,17 +189,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.79,
+ "haende_quote": 0.786,
  "simulationen_angewandt": 25,
  "swarm_scores": {
-  "n": 28,
+  "n": 29,
   "best": 9.0,
-  "schnitt": 5.71
+  "schnitt": 5.66
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
-   "schnitt": 5.65
+   "n": 27,
+   "schnitt": 5.59
   },
   "bau": {
    "n": 2,

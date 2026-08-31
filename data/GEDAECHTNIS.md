@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7614 Fakten** · Stand 2026-08-31 00:04 UTC · aktualisiert bei jedem Herzschlag
+**7631 Fakten** · Stand 2026-08-31 00:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3760
-- **swarm_artifact:** 1751
-- **last_swarm_critique:** 641
-- **anti_pattern:** 537
-- **last_swarm_goal:** 390
-- **strategy:** 289
-- **tool:** 85
+- **dream:** 3765
+- **swarm_artifact:** 1757
+- **last_swarm_critique:** 642
+- **anti_pattern:** 539
+- **last_swarm_goal:** 391
+- **strategy:** 290
+- **tool:** 86
 - **hand_result:** 84
 - **aktuell_fussball_messlatte:** 33
 - **aktuell_organfehler:** 29
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:veraltete-ziele-erneuern`
+*31.08. 00:28 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Ziele erneuern'. Datei: data/tools/veraltete-ziele-erneuern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Ziele erneuern:1`
+*31.08. 00:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Unified Content-Addressed Artifact Store - Replace file-path-based artifact passing with a content-addressed artifact store (e.g., SQLite + hash-based keys). Each artifact writes once with semantic key (e.g., 'outdated_goal
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Ziele erneuern:0`
+*31.08. 00:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.0): Schema-First Contract-Driven Pipeline - Define explicit JSON Schema contracts for each artifact interface (outdated_goals_report, renewal_candidates, final_priorities). Implement a contract registry that validates outputs b
+
+### `last_swarm_critique`
+*31.08. 00:23 UTC · Quelle: critic*
+
+score=4; issues=Field name mismatch between artifacts: Artifact 2 outputs 'renewal_score' and 'priority' (HIGH/MEDIUM/LOW), but Artifact 3 expects 'priority_score' (float >= 0.7) - pipeline contract violated; Output path mismatch: Artifact 1 writes to 'artefak
+
+### `last_swarm_goal`
+*31.08. 00:11 UTC · Quelle: system*
+
+Veraltete Ziele erneuern
+
+### `dream:20260831000947:5:cd1963`
+*31.08. 00:09 UTC · Quelle: dream*
+
+Single-cycle swarm convergence with score 8 indicates planner-builder-critic role allocation is well-calibrated for this task class.
+
+### `dream:20260831000947:4:83e7d4`
+*31.08. 00:09 UTC · Quelle: dream*
+
+Automated tool rejection for destructive operations (os.system/subprocess) correctly enforces human-in-the-loop safety.
+
+### `dream:20260831000947:3:3a7d12`
+*31.08. 00:09 UTC · Quelle: dream*
+
+Poolside Laguna consistently delivers low-latency (1.2s) successful completions, making it the only viable free fallback.
+
+### `dream:20260831000947:2:f5ca2e`
+*31.08. 00:09 UTC · Quelle: dream*
+
+Nvidia Nemotron succeeds but exhibits extreme latency variance (29-95s) that violates real-time constraints.
+
+### `dream:20260831000947:1:22d8f2`
+*31.08. 00:09 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systematic rate-limiting (429) making them unreliable for production workflows.
 
 ### `dream:20260831000243:5:1eb522`
 *31.08. 00:02 UTC · Quelle: dream*
