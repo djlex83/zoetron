@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8078 Fakten** · Stand 2026-08-31 13:25 UTC · aktualisiert bei jedem Herzschlag
+**8091 Fakten** · Stand 2026-08-31 13:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4160
-- **swarm_artifact:** 1781
-- **last_swarm_critique:** 647
-- **anti_pattern:** 543
-- **last_swarm_goal:** 396
-- **strategy:** 292
+- **dream:** 4165
+- **swarm_artifact:** 1783
+- **last_swarm_critique:** 648
+- **anti_pattern:** 545
+- **last_swarm_goal:** 397
+- **strategy:** 293
 - **tool:** 89
-- **hand_result:** 85
+- **hand_result:** 86
 - **aktuell_organfehler:** 37
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Marktanalyse-Artefakte e:2`
+*31.08. 13:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Declarative Configuration-Driven Execution Engine - Replace imperative code with a declarative specification (YAML/JSON) that defines data sources, transformation steps, insight extraction rules, and decision logic. Build a g
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Marktanalyse-Artefakte e:0`
+*31.08. 13:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Robust Data Pipeline with Validation and Fallbacks - Implement a resilient data processing pipeline that validates all inputs before use. Add explicit checks for empty/missing data sources, guard clauses for list lengths befo
+
+### `last_swarm_critique`
+*31.08. 13:34 UTC · Quelle: critic*
+
+score=1; issues=Artefakt laeuft nicht (SandBox: LAEUFT NICHT, Traceback line 102); IndexError-Risiko: strategische Entscheidungen greifen blind auf top_insights[0..2] zu ohne Laengenpruefung; Keine Fehlerbehandlung bei fehlenden/leeren Datenquellen; Vertrag ve
+
+### `last_swarm_goal`
+*31.08. 13:30 UTC · Quelle: system*
+
+Marktanalyse-Artefakte endlich nutzen
+
+### `dream:20260831133019:5:76cd68`
+*31.08. 13:30 UTC · Quelle: dream*
+
+Configuration errors (bad paths, missing shebangs, unresolved imports) can cascade into silent failures, making pre-flight validation a critical gate before any tool or model invocation.
+
+### `dream:20260831133019:4:800ff7`
+*31.08. 13:30 UTC · Quelle: dream*
+
+Circuit breakers and exponential backoff are necessary but insufficient in isolation; they must be combined with warm fallback pools and latency-based weight adaptation to provide end-to-end resilience.
+
+### `dream:20260831133019:3:0f81f3`
+*31.08. 13:30 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposals and actual implementation — proposals accumulate without validation, testing, or deployment tracking, keeping the system theoretical rather than operational.
+
+### `dream:20260831133019:2:28b247`
+*31.08. 13:30 UTC · Quelle: dream*
+
+Latency for the same working model (nvidia/nemotron-3-ultra-550b-a55b:free) varies 7x (10s to 74s), revealing that static model selection without latency-weighted routing causes unpredictable response times.
+
+### `dream:20260831133019:1:85bd78`
+*31.08. 13:30 UTC · Quelle: dream*
+
+429 rate-limiting on z-ai/glm-5.2 is a recurring, unmitigated failure mode across multiple cycles, indicating that reactive retries without quota-aware key rotation and backoff are insufficient.
 
 ### `dream:20260831132332:5:b29219`
 *31.08. 13:23 UTC · Quelle: dream*
