@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8172 Fakten** · Stand 2026-08-31 16:42 UTC · aktualisiert bei jedem Herzschlag
+**8177 Fakten** · Stand 2026-08-31 16:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4230
+- **dream:** 4235
 - **swarm_artifact:** 1789
 - **last_swarm_critique:** 649
 - **anti_pattern:** 547
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831164959:5:871235`
+*31.08. 16:49 UTC · Quelle: dream*
+
+Reflex-mode convergence on the swarm mission proves that pre-wired tool chains bypass planner latency; future missions should ship reflex scripts for known high-value targets.
+
+### `dream:20260831164959:4:8967e5`
+*31.08. 16:49 UTC · Quelle: dream*
+
+Drive goals accumulate (stale/failure/gap) but no automatic linker creates skill proposals; an ExecutionGapTracker that alerts on goal age > threshold without linked skill in testing/deployed state closes the loop.
+
+### `dream:20260831164959:3:cfcd32`
+*31.08. 16:49 UTC · Quelle: dream*
+
+Three duplicate proposals (ProposalDeduplicator, CircuitBreaker, PathContract) show the proposal generator lacks semantic deduplication; hashing by intent must run before SkillLifecycleManager ingestion.
+
+### `dream:20260831164959:2:bfd8d5`
+*31.08. 16:49 UTC · Quelle: dream*
+
+Nemotron latency variance (25–80s) indicates cold-start or queueing effects; synthetic probes every 60s must measure p95 not mean to trigger fallbacks correctly.
+
+### `dream:20260831164959:1:595f08`
+*31.08. 16:49 UTC · Quelle: dream*
+
+Repeated 429 errors on glm-5.2 reveal that single-key-per-model routing fails under quota pressure; rotating key pools with per-key circuit breakers are necessary.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Trä:2`
 *31.08. 16:36 UTC · Quelle: evolution*

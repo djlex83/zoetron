@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 16:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 16:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-mode convergence on the swarm mission proves that pre-wired tool chains bypass planner latency; future missions should ship reflex scripts for 
+- Drive goals accumulate (stale/failure/gap) but no automatic linker creates skill proposals; an ExecutionGapTracker that alerts on goal age > threshold
+- Three duplicate proposals (ProposalDeduplicator, CircuitBreaker, PathContract) show the proposal generator lacks semantic deduplication; hashing by in
+- Nemotron latency variance (25–80s) indicates cold-start or queueing effects; synthetic probes every 60s must measure p95 not mean to trigger fallbacks
+- Repeated 429 errors on glm-5.2 reveal that single-key-per-model routing fails under quota pressure; rotating key pools with per-key circuit breakers a
 - Drive goals recognize stale self-assessment and unused market analyses but lack automated triggers to convert insights into actions.
 - Token input variance (526-1332 tokens) without budget enforcement risks context overflow on smaller-window models.
 - Self-diagnosis reports zero organ errors despite persistent model failures, suggesting diagnostic blind spots for external dependency health.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without semantic deduplication, risking redundant implementations of circuit breaker, quota routing, and gap tracking.
 - Successful model calls (inclusionai/ling-3.0-flash-fin:free, poolside/laguna-s-2.1:free) show 6.9-19.3s latency, establishing a baseline for healthy m
 - Free-tier model endpoints consistently fail with 429 rate limits, making them unreliable without circuit breaking and quota-aware routing.
-- Skill proposals accumulate (5 this session) but no evidence of deployment or testing, creating a proposal-to-production gap.
-- Self-diagnosis reports zero organ errors while model failure rate exceeds 60%, revealing a monitoring blind spot for external dependency health.
-- Drive goals (reliability, market analysis, simulation) remain unlinked to deployed skills despite multiple skill proposals generated in this session.
-- Only 2 of 6 tested models (ling-3.0-flash-fin, poolside/laguna-s-2.1) returned successfully, indicating a ~33% availability rate for free endpoints.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production paths without a resilience layer.
 
 ---
 
