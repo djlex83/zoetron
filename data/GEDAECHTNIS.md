@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7781 Fakten** · Stand 2026-08-31 04:29 UTC · aktualisiert bei jedem Herzschlag
+**7786 Fakten** · Stand 2026-08-31 04:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3895
+- **dream:** 3900
 - **swarm_artifact:** 1767
 - **last_swarm_critique:** 644
 - **anti_pattern:** 541
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831043620:5:e82178`
+*31.08. 04:36 UTC · Quelle: dream*
+
+Successful hand_action and tor entries show that local artifact cleanup tasks (439 lines Python) complete reliably when not dependent on external model APIs.
+
+### `dream:20260831043620:4:01a664`
+*31.08. 04:36 UTC · Quelle: dream*
+
+Non-NVIDIA free models (z-ai/glm-5.2, google/gemma-4) fail exclusively with 429 errors, showing they are rate-limited before reaching actual inference capacity.
+
+### `dream:20260831043620:3:8cb2c6`
+*31.08. 04:36 UTC · Quelle: dream*
+
+Latency for successful NVIDIA Nemotron calls varies dramatically (38.5s to 100.3s) with token output, suggesting upstream congestion directly impacts response time unpredictably.
+
+### `dream:20260831043620:2:163681`
+*31.08. 04:36 UTC · Quelle: dream*
+
+NVIDIA Nemotron models exhibit cascading failures (502 upstream overload, 504 timeouts) after 3 consecutive errors, triggering automatic lockout for 1800 seconds.
+
+### `dream:20260831043620:1:f75973`
+*31.08. 04:36 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently return 429 errors under concurrent load, indicating rate limits are the primary failure mode rather than model capability issues.
 
 ### `dream:20260831042755:5:753c6d`
 *31.08. 04:27 UTC · Quelle: dream*
