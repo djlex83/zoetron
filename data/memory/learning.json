@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 09:36:41",
+ "stand": "2026-08-31 09:42:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -172,6 +172,12 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

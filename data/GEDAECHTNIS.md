@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7913 Fakten** · Stand 2026-08-31 09:37 UTC · aktualisiert bei jedem Herzschlag
+**7918 Fakten** · Stand 2026-08-31 09:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3995
+- **dream:** 4000
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831094156:5:61514c`
+*31.08. 09:41 UTC · Quelle: dream*
+
+Reflexes reliably handle routine maintenance (fact updates, pruning) without model involvement, reducing failure surface.
+
+### `dream:20260831094156:4:45c2b2`
+*31.08. 09:41 UTC · Quelle: dream*
+
+Swarm decomposition decisions lack evidence; a benchmark harness measuring API calls, latency, and error rate before/after decomposition is missing.
+
+### `dream:20260831094156:3:57bd91`
+*31.08. 09:41 UTC · Quelle: dream*
+
+Fixed calibration offsets drift; online bias estimators updated per task family from prediction residuals maintain accuracy.
+
+### `dream:20260831094156:2:05b065`
+*31.08. 09:41 UTC · Quelle: dream*
+
+Local hand actions (file ops, scripts) succeed deterministically where model calls fail stochastically.
+
+### `dream:20260831094156:1:7a92c1`
+*31.08. 09:41 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits, making them unreliable as primary workers without a routing layer.
 
 ### `dream:20260831093540:5:d60ad1`
 *31.08. 09:35 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 2×)*
 - Träume mit Wissen verbinden *(wieder aufgegriffen: 2×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 2×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflexes reliably handle routine maintenance (fact updates, pruning) without model involvement, reducing failure surface.
+- Swarm decomposition decisions lack evidence; a benchmark harness measuring API calls, latency, and error rate before/after decomposition is missing.
+- Fixed calibration offsets drift; online bias estimators updated per task family from prediction residuals maintain accuracy.
+- Local hand actions (file ops, scripts) succeed deterministically where model calls fail stochastically.
+- Free-tier models consistently fail with 429 rate limits, making them unreliable as primary workers without a routing layer.
 - Hand actions succeed on absolute paths but skill proposals reveal latent relative-path fragility in ZOETRON_DATA resolution.
 - Swarm converges in single cycle with 5 agents but never evolves, suggesting premature convergence or insufficient search depth.
 - Calibration consistently underestimates cycle count by ~25% (predicted 6 vs actual 8) indicating systematic planning bias.
@@ -51,11 +56,6 @@
 - The simulation-revision loop (3 revisions applied) was the mechanism that converted repeated model failures into a successful outcome.
 - Hand actions exiting with 0 but reading nothing indicate a path resolution bug where relative paths fail to map under the real ZOETRON_DATA directory.
 - OpenRouter free models consistently hit 429 rate limits, making them unreliable for sequential calls without backoff or cooldown windows.
-- Reliance on single-provider endpoints creates a single point of failure for complex, multi-step reasoning tasks.
-- The inability to recover from script errors via reflex indicates a need for more granular error classification in tool outputs.
-- Swarm tasks fail to converge when model outages interrupt the iterative feedback loop between planner and critic.
-- Script execution failures due to pathing and argument mismatches suggest a disconnect between the environment's file structure and tool expectations.
-- High-frequency 429 and 502 errors indicate that free-tier model availability is too volatile for reliable swarm convergence.
 
 ---
 
