@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7918 Fakten** · Stand 2026-08-31 09:43 UTC · aktualisiert bei jedem Herzschlag
+**7923 Fakten** · Stand 2026-08-31 09:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4000
+- **dream:** 4005
 - **swarm_artifact:** 1781
 - **last_swarm_critique:** 647
 - **anti_pattern:** 543
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831094749:5:3564be`
+*31.08. 09:47 UTC · Quelle: dream*
+
+Simulation-revision loops are proposed with risk thresholds but lack a gate to enforce application before task completion.
+
+### `dream:20260831094749:4:153275`
+*31.08. 09:47 UTC · Quelle: dream*
+
+Stale work (market analysis) persists for days while new skills accumulate unused, indicating a prioritization and closure deficit.
+
+### `dream:20260831094749:3:8d35c4`
+*31.08. 09:47 UTC · Quelle: dream*
+
+Multiple skill proposals for retry logic, circuit breaking, and model rotation exist but remain unimplemented, revealing a proposal-execution gap.
+
+### `dream:20260831094749:2:0e1950`
+*31.08. 09:47 UTC · Quelle: dream*
+
+High latency of fallback models (18-27s) creates a reliability-speed tradeoff that current routing doesn't optimize.
+
+### `dream:20260831094749:1:7021bc`
+*31.08. 09:47 UTC · Quelle: dream*
+
+Rate limiting (429 errors) on specific models is the dominant failure mode, causing repeated fallback to slower but reliable models.
 
 ### `dream:20260831094156:5:61514c`
 *31.08. 09:41 UTC · Quelle: dream*

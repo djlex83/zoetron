@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 09:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-revision loops are proposed with risk thresholds but lack a gate to enforce application before task completion.
+- Stale work (market analysis) persists for days while new skills accumulate unused, indicating a prioritization and closure deficit.
+- Multiple skill proposals for retry logic, circuit breaking, and model rotation exist but remain unimplemented, revealing a proposal-execution gap.
+- High latency of fallback models (18-27s) creates a reliability-speed tradeoff that current routing doesn't optimize.
+- Rate limiting (429 errors) on specific models is the dominant failure mode, causing repeated fallback to slower but reliable models.
 - Reflexes reliably handle routine maintenance (fact updates, pruning) without model involvement, reducing failure surface.
 - Swarm decomposition decisions lack evidence; a benchmark harness measuring API calls, latency, and error rate before/after decomposition is missing.
 - Fixed calibration offsets drift; online bias estimators updated per task family from prediction residuals maintain accuracy.
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates cycle count by ~25% (predicted 6 vs actual 8) indicating systematic planning bias.
 - Nemotron-3-Ultra latency (136-142s) exceeds practical interactive thresholds despite quality scores.
 - Free-tier model endpoints exhibit cascading 429/404 failures making single-model reliance untenable.
-- The conserve state with max 1 iteration budget forced sequential model attempts, amplifying the impact of rate limits across the entire call chain.
-- Nvidia nemotron-3-ultra-550b-a55b was the most reliable model, succeeding 4 times with high token throughput despite variable latency (60-211s).
-- The simulation-revision loop (3 revisions applied) was the mechanism that converted repeated model failures into a successful outcome.
-- Hand actions exiting with 0 but reading nothing indicate a path resolution bug where relative paths fail to map under the real ZOETRON_DATA directory.
-- OpenRouter free models consistently hit 429 rate limits, making them unreliable for sequential calls without backoff or cooldown windows.
 
 ---
 
