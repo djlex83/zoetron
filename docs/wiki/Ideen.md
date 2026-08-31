@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 22:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 22:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 6×)*
 - Enforce absolute-path contract: all I/O actions must call resolve_path(rel, ZOETRON_DATA) -> abs_path with exi *(hatte die Idee 6×)*
+- Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 5×)*
 - Build concurrent model pool scheduler maintaining warm connections to 3+ models, load-balancing by real-time h *(hatte die Idee 5×)*
 - Enforce LatencySLA middleware: hard 10s timeout, immediate failover on breach, and SLA breach logging for mode *(hatte die Idee 4×)*
 - Build a model router that tracks per-model 429 rates and latency percentiles, defaulting to inclusionai/ling-3 *(hatte die Idee 4×)*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm-based goal pursuit under stress state (conserve) with max_tasks=3 leads to premature termination without achieving meaningful convergence.
+- Drive goals with signals like 'stale' and 'gap' remain unaddressed, indicating a prioritization failure between reactive tasks and strategic objective
+- The 'Modell-Fehler deutlich reduzieren' goal failed due to a path resolution issue, revealing a systemic gap in input validation and environment-aware
+- High variance in latency (8.6s to 54.1s) for nvidia/nemotron-3-ultra-550b:free suggests inconsistent performance requiring adaptive timeout handling.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate a need for rate-limit-aware model selection and fallback strategies.
 - Skill proposals accumulate but remain unimplemented (gap drive), indicating a missing 'proposal-to-production' validation pipeline.
 - Reflex-driven execution achieved swarm convergence (score 8+) where deliberate planning had stalled, proving reflexes as a reliable execution primitiv
 - Five independent proposals converge on a tiered model registry with health scoring, proactive probing, and automatic failover — this is the consensus 
@@ -51,11 +56,6 @@
 - The gap between abundant skill proposals and minimal testing (only one reflex execution) shows that proposal generation without graduation pipelines w
 - Multiple independent skill proposals converge on model health monitoring, automatic failover, and rate limiting, indicating consensus on core resilien
 - Recurring 429 errors from z-ai/glm-5.2:free reveal that single-provider dependency without quota-aware routing causes systemic fragility.
-- Five concrete resilience proposals were already generated in-session, demonstrating the system can self-prescribe architectural fixes when given failu
-- Calibration error of 1 (predicted 7 vs actual 8) shows the internal predictor is well-tuned for model-error tasks.
-- A single-cycle swarm (planner + 3 builders + critic) converged on the error-reduction goal with score 8, proving the role-based workflow is effective 
-- nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits extreme latency variance (7.6–210.8 s), indicating unreliable SLOs for production use.
-- Provider z-ai/glm-5.2:free fails deterministically with 429 rate-limit errors, making it unusable without quota management or fallback.
 
 ---
 

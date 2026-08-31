@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8382 Fakten** · Stand 2026-08-31 22:16 UTC · aktualisiert bei jedem Herzschlag
+**8387 Fakten** · Stand 2026-08-31 22:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4355
+- **dream:** 4360
 - **swarm_artifact:** 1837
 - **last_swarm_critique:** 657
 - **anti_pattern:** 555
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831222052:5:aae09e`
+*31.08. 22:20 UTC · Quelle: dream*
+
+Swarm-based goal pursuit under stress state (conserve) with max_tasks=3 leads to premature termination without achieving meaningful convergence.
+
+### `dream:20260831222052:4:4da30d`
+*31.08. 22:20 UTC · Quelle: dream*
+
+Drive goals with signals like 'stale' and 'gap' remain unaddressed, indicating a prioritization failure between reactive tasks and strategic objectives.
+
+### `dream:20260831222052:3:33a5e5`
+*31.08. 22:20 UTC · Quelle: dream*
+
+The 'Modell-Fehler deutlich reduzieren' goal failed due to a path resolution issue, revealing a systemic gap in input validation and environment-aware execution.
+
+### `dream:20260831222052:2:b3a6f3`
+*31.08. 22:20 UTC · Quelle: dream*
+
+High variance in latency (8.6s to 54.1s) for nvidia/nemotron-3-ultra-550b:free suggests inconsistent performance requiring adaptive timeout handling.
+
+### `dream:20260831222052:1:c05c96`
+*31.08. 22:20 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate a need for rate-limit-aware model selection and fallback strategies.
 
 ### `dream:20260831221507:5:07b411`
 *31.08. 22:15 UTC · Quelle: dream*
