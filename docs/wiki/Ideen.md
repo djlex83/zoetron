@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 17:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 17:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,31 +16,36 @@
 - Create a simulation-revision skill that iteratively applies fixes until risk count falls below a configurable  *(hatte die Idee 4×)*
 - Add a calibration monitor that logs prediction vs. actual per task type and triggers retraining when MAE excee *(hatte die Idee 4×)*
 - Create ExecutionGapTracker that maps drive goals (stale, failure, gap) to concrete skill proposals and alerts  *(hatte die Idee 4×)*
-- Implement a circuit-breaker router that tracks per-model health (success rate, latency, error streak) and rout *(hatte die Idee 3×)*
-- Add exponential backoff with jitter (base 2s, max 60s) and automatic fallback to next-healthiest model on 429/ *(hatte die Idee 3×)*
-- Enforce minimum 1:2 critic-to-builder ratio in swarm configs and require critic sign-off before builder propos *(hatte die Idee 3×)*
-- Insert a pre-execution validation gate that runs syntax check, type hint verification, and dry-run simulation  *(hatte die Idee 3×)*
+- Build ErrorClassifier parsing error strings into {rate_limit, upstream_overload, auth, timeout, empty_response *(hatte die Idee 3×)*
+- Implement ModelRegistry with per-model success-rate, p95 latency, and consecutive-error counters; auto-quarant *(hatte die Idee 3×)*
+- Add ProposalTracker persisting skill_proposals with a state machine (proposed→implemented|deferred:reason|reje *(hatte die Idee 3×)*
+- Create ModelFallbackChain routing requests through a prioritized model list, skipping quarantined models, with *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Synthetic probes and quota-aware routing are already proposed but not yet deployed, revealing a deployment lag between skill proposal and operationali
+- Execution gaps persist: hand actions fail silently (exit 1, no error detail) and goals age without linked skill deployment, requiring explicit trackin
+- Swarm-based skill evolution converges slowly (score 5, not converged after 2 cycles), indicating need for clearer acceptance criteria and automated re
+- Latency variance across models (27–173s) and within the same model (139s vs 172s) demands per-request timeout budgets and fallback sequencing.
+- Free-tier models exhibit pervasive rate-limiting (429) and upstream instability (502/404), making single-model reliance untenable for production workl
 - Code-artifact generation (222-line Python) consistently passes gate verification (tor green), making it the most reliable output format for this task.
 - Calibration systematically underestimates actual scores by ~2 points (predicted 3 vs actual 5), indicating a persistent bias that needs correction.
 - Dream extraction (Traum-Extraktion) is the weakest pipeline component — naive implementations cap evolution scores at 5/10, while structured variants 
@@ -51,11 +56,6 @@
 - Successful model nvidia/nemotron-3-ultra-550b-a55b:free exhibits high latency (35-80s), making it unsuitable for time-sensitive paths without async ha
 - Drive and dream modules repeatedly hit 180-second timeouts, suggesting the timeout threshold is too low for current workloads or tasks are blocking.
 - The z-ai/glm-5.2:free model consistently fails with rate limits (429) and server errors (500/502), indicating it should be deprioritized or circuit-br
-- Reflex-mode convergence on the swarm mission proves that pre-wired tool chains bypass planner latency; future missions should ship reflex scripts for 
-- Drive goals accumulate (stale/failure/gap) but no automatic linker creates skill proposals; an ExecutionGapTracker that alerts on goal age > threshold
-- Three duplicate proposals (ProposalDeduplicator, CircuitBreaker, PathContract) show the proposal generator lacks semantic deduplication; hashing by in
-- Nemotron latency variance (25–80s) indicates cold-start or queueing effects; synthetic probes every 60s must measure p95 not mean to trigger fallbacks
-- Repeated 429 errors on glm-5.2 reveal that single-key-per-model routing fails under quota pressure; rotating key pools with per-key circuit breakers a
 
 ---
 

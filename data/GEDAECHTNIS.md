@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8200 Fakten** · Stand 2026-08-31 17:32 UTC · aktualisiert bei jedem Herzschlag
+**8217 Fakten** · Stand 2026-08-31 17:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4245
-- **swarm_artifact:** 1795
-- **last_swarm_critique:** 650
-- **anti_pattern:** 549
-- **last_swarm_goal:** 399
-- **strategy:** 295
-- **tool:** 90
+- **dream:** 4250
+- **swarm_artifact:** 1801
+- **last_swarm_critique:** 651
+- **anti_pattern:** 551
+- **last_swarm_goal:** 400
+- **strategy:** 296
+- **tool:** 91
 - **hand_result:** 87
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktwissen-auf-den-neuesten-stand-bring`
+*31.08. 17:47 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktwissen auf den neuesten Stand bringen'. Datei: data/tools/marktwissen-auf-den-neuesten-stand-bring.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Marktwissen auf den neue:2`
+*31.08. 17:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Declarative ETL with dbt + DuckDB - Shift from imperative scripts to declarative SQL transformations. 1) Python fetcher (script 1) writes raw JSON to S3/local partitioned by date (raw/market_data/date=2024-01-15/*.json). 2) D
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Marktwissen auf den neue:1`
+*31.08. 17:46 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Event-Sourced Architecture with Projections - Append-only event log (JSONL file or Kafka) as single source of truth. Events: MarketDataFetched, MarketDataValidated, KnowledgeGraphUpdated. Three independent projection workers 
+
+### `last_swarm_critique`
+*31.08. 17:45 UTC · Quelle: critic*
+
+score=4; issues=Script 3 (KnowledgeGraph-Updater) ist abgeschnitten/unvollständig - endet mitten im Code bei 'old_by_symbol = {p.symbol: p for p in exist', kann nicht läufen; Datenformat-Inkompatibilität: Script 2 speichert Felder wie 'last_price', 'change_pct
+
+### `last_swarm_goal`
+*31.08. 17:39 UTC · Quelle: system*
+
+Marktwissen auf den neuesten Stand bringen
+
+### `dream:20260831173913:5:a774ef`
+*31.08. 17:39 UTC · Quelle: dream*
+
+Synthetic probes and quota-aware routing are already proposed but not yet deployed, revealing a deployment lag between skill proposal and operationalization.
+
+### `dream:20260831173913:4:fbcfc2`
+*31.08. 17:39 UTC · Quelle: dream*
+
+Execution gaps persist: hand actions fail silently (exit 1, no error detail) and goals age without linked skill deployment, requiring explicit tracking and alerting.
+
+### `dream:20260831173913:3:b9a30a`
+*31.08. 17:39 UTC · Quelle: dream*
+
+Swarm-based skill evolution converges slowly (score 5, not converged after 2 cycles), indicating need for clearer acceptance criteria and automated regression gates.
+
+### `dream:20260831173913:2:1b2e1b`
+*31.08. 17:39 UTC · Quelle: dream*
+
+Latency variance across models (27–173s) and within the same model (139s vs 172s) demands per-request timeout budgets and fallback sequencing.
+
+### `dream:20260831173913:1:41e708`
+*31.08. 17:39 UTC · Quelle: dream*
+
+Free-tier models exhibit pervasive rate-limiting (429) and upstream instability (502/404), making single-model reliance untenable for production workloads.
 
 ### `dream:20260831173123:5:11530c`
 *31.08. 17:31 UTC · Quelle: dream*
