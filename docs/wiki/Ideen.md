@@ -1,12 +1,13 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 12:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Build ErrorClassifier that parses error strings into {rate_limit, upstream_overload, auth, timeout, empty_resp *(hatte die Idee 7×)*
-- Enforce absolute-path contract: all I/O actions must call resolve_path(rel, ZOETRON_DATA) -> abs_path with exi *(hatte die Idee 5×)*
+- Enforce absolute-path contract: all I/O actions must call resolve_path(rel, ZOETRON_DATA) -> abs_path with exi *(hatte die Idee 6×)*
+- Build concurrent model pool scheduler maintaining warm connections to 3+ models, load-balancing by real-time h *(hatte die Idee 5×)*
 - Add exponential backoff with jitter (base 1s, max 30s) and token-bucket rate limiting per model before any ret *(hatte die Idee 4×)*
 - Build a rolling reliability scorecard (success rate, p95 latency, error-type histogram) updated per request to *(hatte die Idee 4×)*
 - Create a promotion pipeline: when a reflex converges twice on the same goal, auto-generate skill artifact, run *(hatte die Idee 4×)*
@@ -17,7 +18,6 @@
 - Implement exponential backoff with jitter and a circuit breaker that disables a model after three consecutive  *(hatte die Idee 4×)*
 - Create a simulation-revision skill that iteratively applies fixes until risk count falls below a configurable  *(hatte die Idee 4×)*
 - Add a calibration monitor that logs prediction vs. actual per task type and triggers retraining when MAE excee *(hatte die Idee 4×)*
-- Build concurrent model pool scheduler maintaining warm connections to 3+ models, load-balancing by real-time h *(hatte die Idee 4×)*
 - Define explicit acceptance criteria and milestone checkpoints for each drive goal; log progress deltas to enab *(hatte die Idee 3×)*
 - Deploy a model router with per-provider rate-limit counters, 429/502-triggered fallback <2s, and health-check  *(hatte die Idee 3×)*
 
@@ -29,18 +29,23 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten entwickeln *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model selection ignores real-time health signals: routing uses static priority instead of success rate, latency EWMA, and error-class weighting, causi
+- Skill proposals lack automated validation and promotion: 10+ proposals exist but no harness tests them, no lifecycle manager promotes them, and no che
+- Path resolution failures recur because relative paths cross the hand-action boundary unchecked; absolute-path contract with existence verification is 
+- Resilience patterns are repeatedly reinvented instead of consolidated: circuit breakers, health scoring, fallback chains, and pre-flight probes appear
+- Single-model dependency creates systemic fragility: nemotron works but with high/variable latency (29-79s), while glm-5.2 fails 100% with 429 errors, 
 - Absolute-path contract violations at hand-action boundaries force runtime resolution failures, suggesting path canonicalization must be enforced at th
 - Reflex-based insight consolidation converges but does not trigger skill learning, leaving the system aware of problems without acquiring new capabilit
 - Self-diagnosis reports zero organ errors while external API degradation (429s, high latency) persists, showing health monitoring excludes provider-lev
@@ -51,11 +56,6 @@
 - Latency prediction is uncalibrated: actual latencies (9-34s) vary wildly with no monitoring to trigger router retraining.
 - Skill proposals accumulate without execution tracking: 75 proposals exist but no visible pipeline validates, merges, or deploys them.
 - Model routing lacks resilience: 5 consecutive model failures (429/502) across 4 providers blocked progress until a fallback succeeded.
-- Reflex execution succeeded for concrete scripted tasks (market-analysis update) while model-dependent planning fails, highlighting a trust boundary be
-- Drive goals for model reliability, market-analysis utilization, and skill usability recur across cycles, showing no closed-loop tracking from goal to 
-- Five skill proposals were generated in one cycle but none have validation harnesses, so proposals accumulate without becoming executable capabilities.
-- Fallback model nemotron-3-ultra shows 17–77s latency variance, revealing no latency-aware routing or calibration to predict cost.
-- Repeated 429 errors on glm-5.2:free indicate missing per-provider rate-limit handling and circuit-breaking, causing cascading fallbacks to high-latenc
 
 ---
 
