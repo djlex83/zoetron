@@ -1,13 +1,13 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 00:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Build skill_proposal_pipeline: auto-convert proposals with ≥2 supporting failure events into reflex tools with *(hatte die Idee 8×)*
+- Build skill_proposal_pipeline: auto-convert proposals with ≥2 supporting failure events into reflex tools with *(hatte die Idee 7×)*
 - Enforce local-first policy: for any goal matching a registered reflex tool, execute hand_action before any mod *(hatte die Idee 6×)*
-- Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 5×)*
+- Add CircuitBreaker decorator: quarantine model after 3 consecutive 429/502 errors for 10-minute cooldown, resp *(hatte die Idee 4×)*
 - Add exponential backoff with jitter (base 1s, max 30s) and token-bucket rate limiting per model before any ret *(hatte die Idee 4×)*
 - Build a rolling reliability scorecard (success rate, p95 latency, error-type histogram) updated per request to *(hatte die Idee 4×)*
 - Create a promotion pipeline: when a reflex converges twice on the same goal, auto-generate skill artifact, run *(hatte die Idee 4×)*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated 429 errors on the same model within 60 s indicate no client-side retry/backoff logic is active.
+- Hand actions complete in <0.5 s with zero errors, confirming local tooling is reliable for fast feedback loops.
+- Goal 'Veraltete Ziele erneuern' shows iterative progress: simulation approved, artifact running (201 lines Python), TOR green, but calibration error o
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but exhibits high latency variance (66–114 s), requiring async invocation with generous t
+- The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without exponential backoff or quota management
 - Market analysis results remain unused due to missing integration between swarm output and decision-making workflows.
 - Swarm convergence in 1 cycle suggests max_cycles=2 is sufficient to bound compute cost without sacrificing quality.
 - Destructive operations (os.system/subprocess) lack sandboxing, leading to silent failures when paths are unresolved.
@@ -51,11 +56,6 @@
 - poolside/laguna-s-2.1:free succeeded with low latency (8.1s), suggesting smaller models may have better availability.
 - The nvidia/nemotron-3-ultra model succeeded once (77.4s) but later failed with 502, indicating intermittent upstream instability.
 - Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
-- Calibration error of 1 on an 8-point scale indicates reliable self-assessment for planning.
-- Hand-tool actions are two orders of magnitude faster than model calls, favor them for I/O.
-- Swarm convergence in a single cycle suggests task decomposition is well-calibrated for current goals.
-- Nvidia Nemotron shows best reliability/latency trade-off after initial warm-up failures.
-- Free-tier models suffer pervasive rate-limiting (429) making them unreliable as primary workers.
 
 ---
 

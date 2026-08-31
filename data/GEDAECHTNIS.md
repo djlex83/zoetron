@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7651 Fakten** · Stand 2026-08-31 00:57 UTC · aktualisiert bei jedem Herzschlag
+**7656 Fakten** · Stand 2026-08-31 01:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3785
+- **dream:** 3790
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831010258:5:4bc877`
+*31.08. 01:02 UTC · Quelle: dream*
+
+Repeated 429 errors on the same model within 60 s indicate no client-side retry/backoff logic is active.
+
+### `dream:20260831010258:4:c2a6b8`
+*31.08. 01:02 UTC · Quelle: dream*
+
+Hand actions complete in <0.5 s with zero errors, confirming local tooling is reliable for fast feedback loops.
+
+### `dream:20260831010258:3:d0dfab`
+*31.08. 01:02 UTC · Quelle: dream*
+
+Goal 'Veraltete Ziele erneuern' shows iterative progress: simulation approved, artifact running (201 lines Python), TOR green, but calibration error of +1 and evolution score only 4/10 indicate incomplete convergence.
+
+### `dream:20260831010258:2:1120a1`
+*31.08. 01:02 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeds consistently but exhibits high latency variance (66–114 s), requiring async invocation with generous timeouts.
+
+### `dream:20260831010258:1:e35b1f`
+*31.08. 01:02 UTC · Quelle: dream*
+
+The model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, making it unusable without exponential backoff or quota management.
 
 ### `dream:20260831005608:5:fe30be`
 *31.08. 00:56 UTC · Quelle: dream*
