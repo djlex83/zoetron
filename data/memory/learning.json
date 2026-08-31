@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 04:36:38",
+ "stand": "2026-08-31 04:44:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,27 +9,21 @@
    "quote": 1.0
   },
   {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 17,
+   "erfolge": 17,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 17,
    "erfolge": 17,
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 16,
-   "erfolge": 16,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 6,
-   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -52,6 +46,12 @@
   },
   {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0

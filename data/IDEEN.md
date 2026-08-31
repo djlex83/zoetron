@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 04:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,12 +27,12 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based execution succeeded where model-based planning failed, showing that deterministic scripts outperform flaky LLM calls for well-defined cle
+- The dream module itself timed out at 180 seconds during consolidation, revealing recursive resource contention when processing failure-heavy logs.
+- Calibration overestimated effort by 100% (predicted 6 vs actual 3), suggesting the estimator lacks historical baseline data for reflex tasks.
+- The act module timed out after 1500 seconds on a cleanup task, indicating missing timeout guards or infinite loops in reflex execution.
+- Multiple free-tier models fail consistently with 429 rate limits and 404 errors, making them unreliable for production tasks.
 - Successful hand_action and tor entries show that local artifact cleanup tasks (439 lines Python) complete reliably when not dependent on external mode
 - Non-NVIDIA free models (z-ai/glm-5.2, google/gemma-4) fail exclusively with 429 errors, showing they are rate-limited before reaching actual inference
 - Latency for successful NVIDIA Nemotron calls varies dramatically (38.5s to 100.3s) with token output, suggesting upstream congestion directly impacts 
@@ -51,11 +56,6 @@
 - The hand_action failure with 'nichts gelesen' reveals a critical path resolution bug where relative paths and sys.argv[1] are not properly resolved ag
 - Model failover to nvidia/nemotron-3-ultra-550b consistently succeeds but with high latency (44-80s), suggesting it should be deprioritized for time-se
 - Repeated 429 errors on z-ai/glm-5.2:free indicate account-level rate limit exhaustion rather than model-specific issues, requiring shared quota manage
-- Latency variance (8.4s to 54.9s) on the same model indicates unstable performance under load, requiring SLA-based circuit breaking.
-- Drive goals with 'failure' and 'stale' signals persist across cycles, revealing systemic gaps in error recovery and task completion pipelines.
-- Reflex-mode execution consistently converges when tools are pre-validated, suggesting automation reliability depends on upstream error handling.
-- Successful convergence correlates with fallback to nvidia/nemotron-3-ultra-550b-a55b:free, which handles 3x more tokens with acceptable latency.
-- Model failures cluster on specific endpoints (z-ai/glm-5.2:free) with 429 errors, indicating rate-limit exhaustion rather than capability gaps.
 
 ---
 
