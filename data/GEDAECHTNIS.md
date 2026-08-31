@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8292 Fakten** · Stand 2026-08-31 20:03 UTC · aktualisiert bei jedem Herzschlag
+**8297 Fakten** · Stand 2026-08-31 20:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4295
+- **dream:** 4300
 - **swarm_artifact:** 1819
 - **last_swarm_critique:** 654
 - **anti_pattern:** 553
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831200834:5:aa860d`
+*31.08. 20:08 UTC · Quelle: dream*
+
+Transient hand-action failures (exit 1 followed by exit 0) resolve with immediate retry, suggesting idempotent operations benefit from automatic re-execution.
+
+### `dream:20260831200834:4:2c22b0`
+*31.08. 20:08 UTC · Quelle: dream*
+
+Under conserve mode (stress=1.0, max_iterations=1), procedures must succeed in a single pass or degrade gracefully without retries.
+
+### `dream:20260831200834:3:6dec8b`
+*31.08. 20:08 UTC · Quelle: dream*
+
+Simulation-driven revision loops (verdict→revise→apply→verify) caught 5 risks and produced a passing artifact in one cycle.
+
+### `dream:20260831200834:2:e1312b`
+*31.08. 20:08 UTC · Quelle: dream*
+
+The working model (nemotron-3-ultra) exhibits extreme latency variance (26–180s), requiring adaptive timeouts rather than fixed limits.
+
+### `dream:20260831200834:1:9628df`
+*31.08. 20:08 UTC · Quelle: dream*
+
+Free-tier models fail predominantly due to 429 rate limits, not capability gaps, making a tracked fallback chain essential for reliability.
 
 ### `dream:20260831200125:5:f8bb98`
 *31.08. 20:01 UTC · Quelle: dream*

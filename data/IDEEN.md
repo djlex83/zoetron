@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 20:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 20:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Transient hand-action failures (exit 1 followed by exit 0) resolve with immediate retry, suggesting idempotent operations benefit from automatic re-ex
+- Under conserve mode (stress=1.0, max_iterations=1), procedures must succeed in a single pass or degrade gracefully without retries.
+- Simulation-driven revision loops (verdict→revise→apply→verify) caught 5 risks and produced a passing artifact in one cycle.
+- The working model (nemotron-3-ultra) exhibits extreme latency variance (26–180s), requiring adaptive timeouts rather than fixed limits.
+- Free-tier models fail predominantly due to 429 rate limits, not capability gaps, making a tracked fallback chain essential for reliability.
 - High metabolic stress (1.0) triggers conserve mode that starves validation loops, letting path and model errors propagate unchecked.
 - Model fallback chains collapse when all providers hit rate limits simultaneously, revealing missing quota-aware routing.
 - Skill proposals accumulate without a deployment pipeline, creating a proposal-to-practice gap that wastes design effort.
@@ -51,11 +56,6 @@
 - Stale data (unfinished goals, outdated analyses, unpruned facts) accumulates over time because there is no time-based expiration or forced review cycl
 - The system generates many skill proposals and goals but lacks a prioritization-and-execution mechanism, causing accumulation of unfinished work and un
 - 429 rate-limit errors from external models are a recurring systemic failure that cascades into unreliable system behavior and must be handled automati
-- System stress signals (metabolism.stress > 0.8) correlate with cascade model failures, yet no scheduler currently backs off concurrency or expands tim
-- Thirty-five skill proposals exist but adoption is near zero, revealing a missing 'skill graduation' gate that validates utility before registry insert
-- Swarm evolution cycles consistently fail to converge (score 6, converged=false), suggesting the critic/planner feedback loop lacks a hard acceptance t
-- The nvidia/nemotron-3-ultra fallback exhibits high latency variance (7.4–16.6 s) and token inefficiency (output often < input), indicating it is a poo
-- The z-ai/glm-5.2:free model fails deterministically with 429 rate-limit errors, making it unusable as a primary provider without aggressive request sp
 
 ---
 
