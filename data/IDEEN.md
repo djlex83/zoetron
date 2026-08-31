@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 01:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Static resource budgets waste capacity on failing tasks and starve promising ones.
+- High fallback latency (65-88s) makes synchronous workflows brittle; async patterns needed.
+- Field name mismatches between artifacts indicate missing schema validation in goal decomposition.
+- Evolutionary improvement can rescue low-scoring tasks but convergence remains unreliable without explicit convergence criteria.
+- Free-tier model rate limits cause cascading failures requiring robust fallback orchestration.
 - Repeated 429 errors on the same model within 60 s indicate no client-side retry/backoff logic is active.
 - Hand actions complete in <0.5 s with zero errors, confirming local tooling is reliable for fast feedback loops.
 - Goal 'Veraltete Ziele erneuern' shows iterative progress: simulation approved, artifact running (201 lines Python), TOR green, but calibration error o
@@ -51,11 +56,6 @@
 - Destructive operations (os.system/subprocess) lack sandboxing, leading to silent failures when paths are unresolved.
 - Nemotron latency spikes (77-125s) exceed acceptable SLA thresholds and cause pipeline stalls, necessitating timeout-based failover.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate systematic rate-limit exhaustion requiring model quarantine after 3 consecutive failures.
-- Reflex-driven memory maintenance (alte-erinnerungen-aktualisieren.py) executes reliably with zero errors across cycles.
-- Five infrastructure skill proposals (ModelRegistry, PathResolver, ErrorClassifier, ProposalTracker, MetabolismGate) exist but remain unimplemented, cr
-- poolside/laguna-s-2.1:free succeeded with low latency (8.1s), suggesting smaller models may have better availability.
-- The nvidia/nemotron-3-ultra model succeeded once (77.4s) but later failed with 502, indicating intermittent upstream instability.
-- Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
 
 ---
 

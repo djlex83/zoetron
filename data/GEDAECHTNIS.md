@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**7656 Fakten** · Stand 2026-08-31 01:04 UTC · aktualisiert bei jedem Herzschlag
+**7661 Fakten** · Stand 2026-08-31 01:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 3790
+- **dream:** 3795
 - **swarm_artifact:** 1757
 - **last_swarm_critique:** 642
 - **anti_pattern:** 539
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260831010820:5:8eb888`
+*31.08. 01:08 UTC · Quelle: dream*
+
+Static resource budgets waste capacity on failing tasks and starve promising ones.
+
+### `dream:20260831010820:4:fa750a`
+*31.08. 01:08 UTC · Quelle: dream*
+
+High fallback latency (65-88s) makes synchronous workflows brittle; async patterns needed.
+
+### `dream:20260831010820:3:e00e3a`
+*31.08. 01:08 UTC · Quelle: dream*
+
+Field name mismatches between artifacts indicate missing schema validation in goal decomposition.
+
+### `dream:20260831010820:2:ddc8c2`
+*31.08. 01:08 UTC · Quelle: dream*
+
+Evolutionary improvement can rescue low-scoring tasks but convergence remains unreliable without explicit convergence criteria.
+
+### `dream:20260831010820:1:06e348`
+*31.08. 01:08 UTC · Quelle: dream*
+
+Free-tier model rate limits cause cascading failures requiring robust fallback orchestration.
 
 ### `dream:20260831010258:5:4bc877`
 *31.08. 01:02 UTC · Quelle: dream*
