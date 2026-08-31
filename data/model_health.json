@@ -1,5 +1,5 @@
 {
- "stand": 1788156312.5816085,
+ "stand": 1788156968.2004163,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -61,7 +61,7 @@
    "latenz_summe_s": 215.23886609077454,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 1985
+   "kontofehler": 1987
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,

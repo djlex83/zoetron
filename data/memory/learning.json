@@ -1,5 +1,5 @@
 {
- "stand": "2026-08-31 06:08:19",
+ "stand": "2026-08-31 06:19:14",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,15 +51,15 @@
    "quote": 1.0
   },
   {
-   "tool": "fehlerquellen-systematisch-beheben.py",
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -177,7 +177,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.794,
+ "haende_quote": 0.795,
  "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 25,
