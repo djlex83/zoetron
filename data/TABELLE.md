@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 6248 Neuronen · 370106 bewertete Synapsen
+Stand: 6258 Neuronen · 370975 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,8 +13,8 @@ Stand: 6248 Neuronen · 370106 bewertete Synapsen
 | 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 570 | 0.24 |
 | 2 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 568 | 0.24 |
 | 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 560 | 0.24 |
-| 4 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 506 | 0.26 |
-| 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 568 | 0.23 |
+| 4 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 507 | 0.26 |
+| 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 569 | 0.23 |
 | 6 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 569 | 0.23 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 477 | 0.27 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 477 | 0.26 |

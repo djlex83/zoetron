@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 14:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The inclusionai/ling-3.0-flash-fin:free model delivered fast, successful results (22.4s) when all other free models failed, proving that a sufficientl
+- In conserve mode with a budget of max 3 tasks and 1 iteration, each failed model call wastes irreplaceable budget, so artifact verification should pre
+- The z-ai/glm-5.2:free model has a near-100% failure rate in this session and should be deprioritized or removed from the active fallback pool.
+- Latency on successful calls degrades progressively under sustained load (42s → 213s), so early success does not guarantee continued availability withi
+- 429 rate-limit errors are systemic across nearly all free-tier OpenRouter models, not isolated to a single provider, making model diversity the primar
 - Simulation-based revision (5 risks → 3 patches) catches defects before deployment; simulation should be a mandatory gate for all artifact changes.
 - Evolutionary search (3 variants, 2 cycles) lifted scores from 4 to 7–9, proving iterative variant generation with critic feedback is a high-leverage p
 - Calibration error of 4 (predicted 8 vs actual 4) reveals systematic overestimation of task complexity; historical actuals must feed future predictions
@@ -51,11 +56,6 @@
 - z-ai/glm-5.2:free offers low latency (~4.5s) when requests succeed but fails with 429 errors >80% of the time.
 - inclusionai/ling-3.0-flash-fin:free is the only model with consistent availability (100% success in logs) albeit at 16-18s latency.
 - Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream overloads, making them unreliable as primary endpoints.
-- Swarm convergence in one cycle with high score masks the underlying model instability that preceded it.
-- Proposed skills accumulate (45+) but require manual tool invocation to test and activate, creating a deployment gap.
-- Calibration consistently underestimates actual effort (predicted 6 vs actual 9), causing under-resourced planning cycles.
-- Self-diagnosis treats API failures as transient rather than organ-level degradation, so health signals never trigger fallback logic.
-- Rate-limited endpoints (429 errors) repeatedly block primary model calls while fallback models succeed with high latency, revealing no automatic quota
 
 ---
 
