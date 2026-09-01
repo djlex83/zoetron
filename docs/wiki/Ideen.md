@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 22:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 23:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The 'Kein lauffaehiger Python' critique shows that code generation without execution validation leads to non-functional artifacts despite appearing co
+- Models like poolside/laguna-s-2.1 and inclusionai/ling-3.0-flash-fin succeeded where others failed, suggesting certain free-tier models are more relia
+- Evolution runs with variant scoring (8, 9, 7) show that iterative refinement with critique feedback significantly improves output quality from 0/10 to
+- Calibration predicted 6 successful abilities but achieved 0, revealing a severe overconfidence bias in planning versus execution reality.
+- Repeated 429 Too Many Requests errors across multiple models indicate rate limiting is a systemic bottleneck when hitting OpenRouter's free endpoints 
 - Free-tier models share a common rate-limit pool, so diversifying across many free models does not increase throughput and instead amplifies rate-limit
 - Sequential calls to the same OpenRouter endpoint without delay cause cascading 429 errors, suggesting that request batching or throttling is essential
 - The simulation-revision loop (revise verdict with 3 risks and 3 applied revisions) demonstrates that iterative refinement works effectively even under
@@ -51,11 +56,6 @@
 - Metabolic stress hits 1.0 before any defensive shedding occurs, indicating the scheduler reacts too late.
 - Path resolution fails because code trusts relative paths instead of canonicalizing sys.argv[1] and ZOETRON_DATA at startup.
 - Rate limiting (HTTP 429) cascades across multiple free-tier models simultaneously, making single-model fallback unreliable.
-- Reflex actions succeed for narrow, well-defined tasks (market analysis reuse) but are not generalized into reusable skills.
-- Tool outputs lack a uniform Result<T,E> schema with error codes and retry hints, forcing ad-hoc error handling downstream.
-- Goals have no TTL or auto-renewal, leading to stale context (e.g., outdated market analysis) that degrades decision quality.
-- Skill proposals accumulate but lack a validation pipeline (sandbox → benchmark → promote), causing good ideas to stall untested.
-- 429 rate limiting is the dominant failure mode across all model providers, indicating missing circuit breakers and health-aware routing.
 
 ---
 
