@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8740 Fakten** · Stand 2026-09-01 08:43 UTC · aktualisiert bei jedem Herzschlag
+**8745 Fakten** · Stand 2026-09-01 08:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4595
+- **dream:** 4600
 - **swarm_artifact:** 1897
 - **last_swarm_critique:** 668
 - **anti_pattern:** 573
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901084927:5:732d78`
+*01.09. 08:49 UTC · Quelle: dream*
+
+Transient failures (429, network) need automatic retry-with-backoff to improve robustness of external calls.
+
+### `dream:20260901084927:4:5b6fb7`
+*01.09. 08:49 UTC · Quelle: dream*
+
+Self-diagnosis and pruning report healthy system but lack proactive degradation detection for model performance.
+
+### `dream:20260901084927:3:c3a182`
+*01.09. 08:49 UTC · Quelle: dream*
+
+Multiple skill proposals accumulate without an implementation gate, causing idea hoarding instead of execution.
+
+### `dream:20260901084927:2:d252ab`
+*01.09. 08:49 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra exhibits high latency (56–106s), requiring latency-aware routing for interactive vs batch tasks.
+
+### `dream:20260901084927:1:72228b`
+*01.09. 08:49 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 errors, making it unreliable for production use without rate-limit handling.
 
 ### `dream:20260901084103:5:30aed8`
 *01.09. 08:41 UTC · Quelle: dream*

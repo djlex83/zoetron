@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 08:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 08:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Transient failures (429, network) need automatic retry-with-backoff to improve robustness of external calls.
+- Self-diagnosis and pruning report healthy system but lack proactive degradation detection for model performance.
+- Multiple skill proposals accumulate without an implementation gate, causing idea hoarding instead of execution.
+- Fallback model nvidia/nemotron-3-ultra exhibits high latency (56–106s), requiring latency-aware routing for interactive vs batch tasks.
+- The z-ai/glm-5.2:free model consistently returns 429 errors, making it unreliable for production use without rate-limit handling.
 - Skill proposals accumulate without execution pipeline; drive goal explicitly notes 'few become usable'.
 - Reflex-based task completion succeeds despite model instability, showing procedural knowledge compensates for LLM unreliability.
 - Multiple independent skill proposals converge on same fixes: retry/fallback wrapper, absolute-path resolution, stale-work reaper.
@@ -51,11 +56,6 @@
 - Multiple identical skill proposals for rate limiting and backoff indicate missing proposal deduplication.
 - Fallback models consistently exhibit high latency (28-35s) without latency-based traffic shedding.
 - Rate limiting (429 errors) on specific models recurs predictably but routing lacks proactive quota awareness.
-- Calibration error of 1 cycle on an 8-cycle prediction shows the effort estimator is accurate enough for scheduling.
-- Swarm convergence in a single cycle with high score (8) indicates the planner-builder-critic loop is well-calibrated for implementation tasks.
-- Hand actions fail intermittently (exit 1) without error details, suggesting transient environment issues rather than code defects.
-- Latency variance between models spans 30x (5s vs 150s), so model selection must weigh speed against availability.
-- Rate limiting (429) is the dominant failure mode across multiple free-tier models, making automatic fallback essential for reliability.
 
 ---
 
