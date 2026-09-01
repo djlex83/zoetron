@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-08-31 23:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-revision loop (3 revisions applied) proves effective for capability validation but consumes limited iteration budget.
+- High stress state (1.0) triggers conserve mode that severely limits parallelism (max_tasks:3, max_iterations:1) - need stress reduction mechanisms.
+- Relative path resolution fails under ZOETRON_DATA - all file operations must use absolute paths from environment variable.
+- Model endpoint volatility (404 on nemotron) demands continuous availability probing before task assignment to avoid wasted cycles.
+- Rate limiting (429) across multiple free models indicates systemic quota exhaustion requiring fallback chains with local model backup.
 - Relative path resolution in hand_action breaks under varying working directories; all file ops must anchor to ZOETRON_DATA.
 - Swarm convergence fails when evaluation criteria are implicit; explicit success metrics and max-cycle bounds are required.
 - Skill proposals accumulate but lack automated validation loop; proposals need sandbox A/B testing before production promotion.
@@ -51,11 +56,6 @@
 - Evolutionary repair boosted a 3/10 artifact to 9/10 in one generation, proving that targeted mutation with critic feedback outperforms single-pass gen
 - Nemotron-3-ultra succeeds only after extreme latency (44–105 s), indicating cold-start or queueing penalties that violate interactive deadlines.
 - Free-tier models exhibit cascading failures: rate limits (429) and upstream overloads (502) make them unreliable for critical paths without automatic 
-- Hand-action execution (code runs) shows non-deterministic success (exit 1 vs 0) requiring idempotent retry logic.
-- Simulation-based verification with risk scoring (3 risks → 3 revisions) successfully prevented deployment of flawed artifacts.
-- Poolside Laguna-S-2.1 delivers consistent low latency (~15s) suggesting smaller specialized models outperform large general ones on free tiers.
-- Nvidia Nemotron shows high latency variance (38-109s) and intermittent 502 upstream overloads, indicating provider-side capacity issues.
-- Free-tier models across all providers suffer pervasive rate limiting (429 errors) making them unreliable for sustained workloads.
 
 ---
 

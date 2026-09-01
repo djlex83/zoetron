@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8442 Fakten** · Stand 2026-08-31 23:57 UTC · aktualisiert bei jedem Herzschlag
+**8447 Fakten** · Stand 2026-09-01 00:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4390
+- **dream:** 4395
 - **swarm_artifact:** 1849
 - **last_swarm_critique:** 660
 - **anti_pattern:** 559
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901000226:5:db7b51`
+*01.09. 00:02 UTC · Quelle: dream*
+
+Simulation-revision loop (3 revisions applied) proves effective for capability validation but consumes limited iteration budget.
+
+### `dream:20260901000226:4:44c2e7`
+*01.09. 00:02 UTC · Quelle: dream*
+
+High stress state (1.0) triggers conserve mode that severely limits parallelism (max_tasks:3, max_iterations:1) - need stress reduction mechanisms.
+
+### `dream:20260901000226:3:77710d`
+*01.09. 00:02 UTC · Quelle: dream*
+
+Relative path resolution fails under ZOETRON_DATA - all file operations must use absolute paths from environment variable.
+
+### `dream:20260901000226:2:46d1cb`
+*01.09. 00:02 UTC · Quelle: dream*
+
+Model endpoint volatility (404 on nemotron) demands continuous availability probing before task assignment to avoid wasted cycles.
+
+### `dream:20260901000226:1:2268c4`
+*01.09. 00:02 UTC · Quelle: dream*
+
+Rate limiting (429) across multiple free models indicates systemic quota exhaustion requiring fallback chains with local model backup.
 
 ### `dream:20260831235546:5:563a24`
 *31.08. 23:55 UTC · Quelle: dream*

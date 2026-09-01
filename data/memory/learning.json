@@ -1,11 +1,11 @@
 {
- "stand": "2026-08-31 23:56:12",
+ "stand": "2026-09-01 00:03:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 27,
-   "erfolge": 27,
+   "laeufe": 28,
+   "erfolge": 28,
    "quote": 1.0
   },
   {
@@ -123,12 +123,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktkenntnisse-aktualisieren.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "simulationen-in-echtes-handeln-übersetze.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -165,7 +159,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.827,
+ "haende_quote": 0.832,
  "simulationen_angewandt": 16,
  "swarm_scores": {
   "n": 23,
@@ -174,8 +168,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 17,
-   "schnitt": 6.59
+   "n": 16,
+   "schnitt": 6.5
   },
   "bau": {
    "n": 6,
