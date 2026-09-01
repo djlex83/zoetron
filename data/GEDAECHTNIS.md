@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8708 Fakten** · Stand 2026-09-01 07:55 UTC · aktualisiert bei jedem Herzschlag
+**8713 Fakten** · Stand 2026-09-01 08:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4575
+- **dream:** 4580
 - **swarm_artifact:** 1891
 - **last_swarm_critique:** 667
 - **anti_pattern:** 571
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901080105:5:7ea1b5`
+*01.09. 08:01 UTC · Quelle: dream*
+
+Three completed swarm analyses and 35 skill proposals remain unprocessed for days, creating stale work backlog that blocks new capacity.
+
+### `dream:20260901080105:4:c70240`
+*01.09. 08:01 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 with conserve state and single-iteration budget shows resource exhaustion cascades from model latency spikes (up to 110s).
+
+### `dream:20260901080105:3:91c604`
+*01.09. 08:01 UTC · Quelle: dream*
+
+Simulation verdicts repeatedly demand revisions (5 risks, 3 revisions) before approval, indicating skill proposals are under-specified before simulation.
+
+### `dream:20260901080105:2:c46622`
+*01.09. 08:01 UTC · Quelle: dream*
+
+Hand actions fail when relative paths ignore sys.argv[1] and ZOETRON_DATA environment variables, preventing access to actual data directories.
+
+### `dream:20260901080105:1:f8b349`
+*01.09. 08:01 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
 
 ### `dream:20260901075341:5:c2a27f`
 *01.09. 07:53 UTC · Quelle: dream*

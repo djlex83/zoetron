@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 07:54:23",
+ "stand": "2026-09-01 08:03:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -51,12 +51,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -67,6 +61,12 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",

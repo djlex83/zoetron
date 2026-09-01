@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 07:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 08:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three completed swarm analyses and 35 skill proposals remain unprocessed for days, creating stale work backlog that blocks new capacity.
+- Metabolism stress at 1.0 with conserve state and single-iteration budget shows resource exhaustion cascades from model latency spikes (up to 110s).
+- Simulation verdicts repeatedly demand revisions (5 risks, 3 revisions) before approval, indicating skill proposals are under-specified before simulati
+- Hand actions fail when relative paths ignore sys.argv[1] and ZOETRON_DATA environment variables, preventing access to actual data directories.
+- Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
 - Previous dream's exponential-backoff proposal remains unimplemented, revealing a meta-failure: consolidation without deployment.
 - Swarm-to-practice reflex fails because simulation artifacts don't validate against real data paths before execution.
 - Skill proposals accumulate (35+) but lack an automated trial loop, turning innovation into inventory instead of capability.
@@ -51,11 +56,6 @@
 - Simulation gate catches 4 risks and forces 2 revisions before 'go' verdict, proving its value as a pre-execution quality filter.
 - Evolutionary swarm cycles improve solution scores (6→8-9) but fail to converge, indicating missing convergence criteria or insufficient critic diversi
 - Rate limiting (HTTP 429) across multiple model providers is the dominant failure mode, requiring systematic request throttling and fallback chaining.
-- Goal achievement (269-line Python artifact running) validates that the planner→executor→verifier loop works when model calls succeed.
-- Hand actions (file reads) complete in <0.3s with zero failures, confirming local tooling is more reliable than remote inference.
-- poolside/laguna-s-2.1:free exhibits extreme latency variance (72s vs 191s) when it succeeds, suggesting queue-depth-dependent scheduling.
-- inclusionai/ling-3.0-flash-fin:free is the only consistently available model with acceptable latency (23-36s), making it the de facto primary backend.
-- Rate limiting (HTTP 429) is the systemic failure mode across 4 of 5 models, indicating provider-level quota exhaustion rather than model defects.
 
 ---
 
