@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 02:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 02:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 10×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm-based error investigation recurs without preventing new 429 failures, suggesting reactive analysis lacks proactive routing enforcement.
+- Maximum stress (1.0) triggers conserve mode limiting to 3 tasks, creating a capacity trap where root-cause fixes cannot be executed.
+- The system generates effective skill proposals (router, latency scheduling, revision budgets) but recurring swarm goals indicate they are not deployed
+- A single free model (inclusionai/ling-3.0-flash-fin) succeeded twice with stable ~9s latency, proving viable fallback exists if routed to exclusively.
+- Free-tier models consistently fail with 429 rate limits across four different providers, making them unreliable for production workloads.
 - Self-diagnosis and pruning report clean internal health, so the entire failure surface is external API throttling rather than internal system decay.
 - Skill proposals accumulate across cycles without being implemented, creating a persistent proposal-to-execution gap that blocks system improvement.
 - Availability and latency are independent dimensions: a 4.3s success and a 12.5s success both work, but only one meets a tight performance budget.
@@ -51,11 +56,6 @@
 - The sole successful model (poolside/laguna-s-2.1 at 8.4s) confirms that low-latency pools are consistently more available than high-latency free-tier 
 - Reflex execution mode reliably converges on well-defined cleanup and decision tasks without any model dependency, outperforming model-driven approache
 - Free-tier model endpoints cluster-fail under load (429/502 errors within seconds), making them unreliable as primary inference routes without circuit-
-- Self-diagnosis consistently reports zero organ failures, indicating stable internal system health monitoring.
-- Stale market analyses persist because there is no automated process to convert insights into actionable tasks.
-- Unimplemented skill proposals represent a gap between planning and execution that undermines system reliability.
-- Consistent success with nvidia/nemotron-3-ultra-550b-a55b:free suggests it should be prioritized as a reliable default model.
-- Repeated 429 errors from z-ai/glm-5.2:free indicate a need for rate-limit-aware model routing and automatic failover.
 
 ---
 

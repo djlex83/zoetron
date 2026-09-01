@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8499 Fakten** · Stand 2026-09-01 02:06 UTC · aktualisiert bei jedem Herzschlag
+**8516 Fakten** · Stand 2026-09-01 02:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4435
-- **swarm_artifact:** 1855
-- **last_swarm_critique:** 661
-- **anti_pattern:** 561
-- **last_swarm_goal:** 409
-- **strategy:** 301
+- **dream:** 4440
+- **swarm_artifact:** 1861
+- **last_swarm_critique:** 662
+- **anti_pattern:** 563
+- **last_swarm_goal:** 410
+- **strategy:** 302
 - **tool:** 97
-- **hand_result:** 90
+- **hand_result:** 91
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Marktanalyse abschließen:1`
+*01.09. 02:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 4, 7]): LLM-augmentierte Research-Synthese mit Human-in-the-Loop - Verzicht auf eigene Crawler/Scraper. Stattdessen: Kuratierte Datenquellen (Statista, Crunchbase, G2, Google Trends API) per strukturierten Prompts an LLM (RAG
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Marktanalyse abschließen:0`
+*01.09. 02:20 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 3, 8]): Modular Data Pipeline mit Validierungsschichten - Statt monolithischer Skripte: Aufbau einer fehlertoleranten Pipeline aus separaten, testbaren Modulen (Datensammlung → Bereinigung → Analyse → Reporting). Jedes Modul 
+
+### `last_swarm_critique`
+*01.09. 02:19 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - Artefakt ist nicht lauffähig (harter Mangel laut Notenskala 0-2); Traceback in action_1788229122250.py Zeile 67; Traceback in action_1788229123302.py Zeile 46; Drittes Artefakt (Strategie) zwar nur gekappt in der 
+
+### `last_swarm_goal`
+*01.09. 02:12 UTC · Quelle: system*
+
+Marktanalyse abschließen und Lücke nutzen
+
+### `dream:20260901021127:5:79e210`
+*01.09. 02:11 UTC · Quelle: dream*
+
+Swarm-based error investigation recurs without preventing new 429 failures, suggesting reactive analysis lacks proactive routing enforcement.
+
+### `dream:20260901021127:4:026ba3`
+*01.09. 02:11 UTC · Quelle: dream*
+
+Maximum stress (1.0) triggers conserve mode limiting to 3 tasks, creating a capacity trap where root-cause fixes cannot be executed.
+
+### `dream:20260901021127:3:a59695`
+*01.09. 02:11 UTC · Quelle: dream*
+
+The system generates effective skill proposals (router, latency scheduling, revision budgets) but recurring swarm goals indicate they are not deployed fast enough.
+
+### `dream:20260901021127:2:a2a3dd`
+*01.09. 02:11 UTC · Quelle: dream*
+
+A single free model (inclusionai/ling-3.0-flash-fin) succeeded twice with stable ~9s latency, proving viable fallback exists if routed to exclusively.
+
+### `dream:20260901021127:1:4b76e1`
+*01.09. 02:11 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits across four different providers, making them unreliable for production workloads.
 
 ### `dream:20260901020352:5:5d65a6`
 *01.09. 02:03 UTC · Quelle: dream*
