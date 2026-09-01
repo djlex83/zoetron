@@ -606,3 +606,10 @@
 {"ts": 1787693450.8297453, "kind": "metabolism_check", "payload": {"stress": 0.179, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
 {"ts": 1787693525.8801823, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "The read operation timed out", "ts": 1787693525.8801787, "schalter_geoeffnet": false}}
 {"ts": 1787693619.9945004, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "[Errno 99] Cannot assign requested address", "ts": 1787693619.9944975, "schalter_geoeffnet": false}}
+{"ts": 1787693707.4363115, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 86.6, "tokens_ein": 1796, "tokens_aus": 773}}
+{"ts": 1787693713.343433, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 5.8, "tokens_ein": 560, "tokens_aus": 56}}
+{"ts": 1787693740.4424663, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 27.0, "tokens_ein": 555, "tokens_aus": 765}}
+{"ts": 1787693740.4427528, "kind": "simulation", "payload": {"goal": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren", "verdict": "go", "risks": 5, "revisions": 5}}
+{"ts": 1787693788.42205, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 41.8, "tokens_ein": 2258, "tokens_aus": 1996}}
+{"ts": 1787693897.41085, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 108.3, "tokens_ein": 2649, "tokens_aus": 5241}}
+{"ts": 1787693962.7734516, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 65.4, "tokens_ein": 3040, "tokens_aus": 3577}}
