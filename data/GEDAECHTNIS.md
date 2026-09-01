@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8541 Fakten** · Stand 2026-09-01 03:05 UTC · aktualisiert bei jedem Herzschlag
+**8546 Fakten** · Stand 2026-09-01 03:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4465
+- **dream:** 4470
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901031023:5:fca00a`
+*01.09. 03:10 UTC · Quelle: dream*
+
+hand_action returned exit=1 with gelesen=0, meaning the generated artifact was either empty, unwritten, or pointed to a wrong path—execution is losing the high-quality output that evolution produced.
+
+### `dream:20260901031023:4:ccf75f`
+*01.09. 03:10 UTC · Quelle: dream*
+
+The swarm failed to converge (score 1, converged=false) despite a winning evolution variant scoring 9-10, suggesting the integration step between evolution winner and final artifact is broken.
+
+### `dream:20260901031023:3:ce560c`
+*01.09. 03:10 UTC · Quelle: dream*
+
+3-variant evolution with critic scoring is highly effective: it lifted a 1/10 baseline to [9, 10, 9] in a single run, confirming that competitive variant generation is the system's strongest quality lever.
+
+### `dream:20260901031023:2:fa3ab2`
+*01.09. 03:10 UTC · Quelle: dream*
+
+Calibration is severely overconfident (predicted 6, actual 1, abs_error 5), indicating the predictor systematically overestimates output quality for complex multi-step goals.
+
+### `dream:20260901031023:1:d16e9a`
+*01.09. 03:10 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free is chronically rate-limited (5 consecutive 429 errors) and should be removed from the active routing pool or given a 60-second cooldown after any 429.
 
 ### `dream:20260901030430:5:322a1b`
 *01.09. 03:04 UTC · Quelle: dream*

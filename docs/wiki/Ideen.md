@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,7 +31,7 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- hand_action returned exit=1 with gelesen=0, meaning the generated artifact was either empty, unwritten, or pointed to a wrong path—execution is losing
+- The swarm failed to converge (score 1, converged=false) despite a winning evolution variant scoring 9-10, suggesting the integration step between evol
+- 3-variant evolution with critic scoring is highly effective: it lifted a 1/10 baseline to [9, 10, 9] in a single run, confirming that competitive vari
+- Calibration is severely overconfident (predicted 6, actual 1, abs_error 5), indicating the predictor systematically overestimates output quality for c
+- z-ai/glm-5.2:free is chronically rate-limited (5 consecutive 429 errors) and should be removed from the active routing pool or given a 60-second coold
 - The goal 'Marktanalyse abschließen und Lücke nutzen' failed because the generated artifact contained a runtime error (Traceback), highlighting the nee
 - The calibration error of 5 (predicted 6, actual 1) reveals a significant overestimation of task success probability for complex goals like 'Marktanaly
 - Repeated `hand_action` failures with `exit: 1` and `gelesen: 0` suggest the generated Python code is failing immediately on execution, likely due to s
@@ -51,11 +56,6 @@
 - Fifty-five skill proposals exist but remain unimplemented due to missing deployment tracking and accountability mechanisms.
 - The system operates at maximum stress (1.0) with severely constrained budgets, causing cascading failures in hand actions and reflexes.
 - Free-tier models consistently fail with 429 rate limits after minimal usage, making them unreliable for production workloads.
-- No systematic model health registry exists, so routing decisions remain reactive instead of predictive.
-- Reflex-based skill evaluation works but operates in isolation from the model routing layer that needs those skills.
-- Skill proposals accumulate (55+) but lack a mandatory prototype gate, causing proposal inflation without execution.
-- Latency variance across successful models spans 9.9s to 71.7s, violating any reasonable SLO without active routing.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary endpoints.
 
 ---
 
