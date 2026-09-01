@@ -1,14 +1,14 @@
 {
- "stand": 1788275020.5514205,
+ "stand": 1788276137.4414322,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 2414,
-   "fehler": 485,
-   "fehler_in_folge": 1,
+   "laeufe": 2416,
+   "fehler": 486,
+   "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 87000.55151772499,
+   "latenz_summe_s": 87037.39579463005,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1788223537.1366277,
    "kontofehler": 6
@@ -31,7 +31,7 @@
    "latenz_summe_s": 231.03127098083496,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 634
+   "kontofehler": 635
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 9,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 277.40880942344666,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 617
+   "kontofehler": 618
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -61,7 +61,7 @@
    "latenz_summe_s": 264.98432755470276,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 2469
+   "kontofehler": 2471
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -99,7 +99,7 @@
    "latenz_summe_s": 3803.5678980350494,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
-   "kontofehler": 214
+   "kontofehler": 215
   },
   "nvidia/nemotron-3-nano-30b-a3b:free": {
    "laeufe": 3,
@@ -148,11 +148,11 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 258,
+   "laeufe": 259,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 3236.3742978572845,
+   "latenz_summe_s": 3248.490134239197,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   },

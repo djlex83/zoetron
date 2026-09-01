@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Only 2 out of ~7 attempted model calls succeeded, yielding a <30% success rate — free-tier models are unsuitable for critical or time-sensitive tasks 
+- Proposed safeguards (health-aware routing, async timeouts) remain unimplemented, allowing the same failures to recur — proposals must be executed befo
+- System stress at maximum (1.0) with conserve mode and a budget of 1 iteration means the system cannot absorb repeated external failures — external cal
+- The 502 'service temporarily overloaded' from Nvidia shows that even HTTP-200 responses can carry upstream failures, requiring response-payload valida
+- OpenRouter's free-tier models share a common rate-limit pool, so 429 errors cascade across all models simultaneously — diversification across provider
 - The inclusionai/ling-3.0-flash-fin:free model delivered fast, successful results (22.4s) when all other free models failed, proving that a sufficientl
 - In conserve mode with a budget of max 3 tasks and 1 iteration, each failed model call wastes irreplaceable budget, so artifact verification should pre
 - The z-ai/glm-5.2:free model has a near-100% failure rate in this session and should be deprioritized or removed from the active fallback pool.
@@ -51,11 +56,6 @@
 - Calibration error of 4 (predicted 8 vs actual 4) reveals systematic overestimation of task complexity; historical actuals must feed future predictions
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeds reliably but shows high latency variance (48–137 s), requiring async invocation with configurable time
 - The model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limiting errors, making it unreliable without exponential backoff and automatic fall
-- The simulation-driven revision loop (verdict=revise, risks=3, revisions=3) indicates skill proposals require multi-pass validation before consolidatio
-- nvidia/nemotron-3-ultra-550b-a55b:free exhibits high latency variance (76-158s) and intermittent 502 upstream errors.
-- z-ai/glm-5.2:free offers low latency (~4.5s) when requests succeed but fails with 429 errors >80% of the time.
-- inclusionai/ling-3.0-flash-fin:free is the only model with consistent availability (100% success in logs) albeit at 16-18s latency.
-- Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream overloads, making them unreliable as primary endpoints.
 
 ---
 

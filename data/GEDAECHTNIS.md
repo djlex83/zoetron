@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8950 Fakten** · Stand 2026-09-01 15:04 UTC · aktualisiert bei jedem Herzschlag
+**8955 Fakten** · Stand 2026-09-01 15:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4710
+- **dream:** 4715
 - **swarm_artifact:** 1951
 - **last_swarm_critique:** 677
 - **anti_pattern:** 581
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901152138:5:94d1c6`
+*01.09. 15:21 UTC · Quelle: dream*
+
+Only 2 out of ~7 attempted model calls succeeded, yielding a <30% success rate — free-tier models are unsuitable for critical or time-sensitive tasks without robust fallback chains.
+
+### `dream:20260901152138:4:66126e`
+*01.09. 15:21 UTC · Quelle: dream*
+
+Proposed safeguards (health-aware routing, async timeouts) remain unimplemented, allowing the same failures to recur — proposals must be executed before they can prevent failures.
+
+### `dream:20260901152138:3:1d3e75`
+*01.09. 15:21 UTC · Quelle: dream*
+
+System stress at maximum (1.0) with conserve mode and a budget of 1 iteration means the system cannot absorb repeated external failures — external calls must be gated by internal resource availability.
+
+### `dream:20260901152138:2:4ff989`
+*01.09. 15:21 UTC · Quelle: dream*
+
+The 502 'service temporarily overloaded' from Nvidia shows that even HTTP-200 responses can carry upstream failures, requiring response-payload validation beyond status-code checks.
+
+### `dream:20260901152138:1:452992`
+*01.09. 15:21 UTC · Quelle: dream*
+
+OpenRouter's free-tier models share a common rate-limit pool, so 429 errors cascade across all models simultaneously — diversification across providers is essential, not just across models.
 
 ### `tool:fähigkeiten-durch-simulation-prüfen`
 *01.09. 15:03 UTC · Quelle: hands*
