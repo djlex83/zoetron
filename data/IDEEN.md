@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,8 +30,8 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Conserve mode budget (max_iterations=1) conflicts with multi-step fallback strategies, requiring single-call success or pre-verified artifacts.
+- Reflex/simulation tools fail silently without error details, preventing diagnostic feedback loops for capability validation.
+- Hand actions fail due to path resolution errors (relative vs absolute paths), not command logic, revealing environment configuration drift.
+- Latency variance between models (10.7s vs 47.4s) exceeds 4x, making latency-aware routing critical under tight iteration budgets.
+- Rate limiting (429) affects all free-tier models simultaneously, indicating shared quota exhaustion rather than individual model failure.
 - Hand actions can fail with exit code 1 without a specific error message, indicating a need for better error capture in execution environments.
 - Evolution runs effectively improve task scores, as seen by a variant scoring 9 out of 10 after an initial score of 7.
 - The inclusionai/ling-3.0-flash-fin:free model provides a good balance of reliability and low latency (~10s) compared to other free models.
@@ -51,11 +56,6 @@
 - The simulation-revision-apply loop successfully detected stale analysis data, executed 3 revisions, and produced a verified 296-line Python artifact.
 - Nemotron-3-Ultra exhibits a bimodal failure pattern: 502 upstream overload errors followed by eventual success at 64-100s latency, indicating severe q
 - Free-tier models across providers (Google, Z.ai, Poolside) consistently hit 429 rate limits, making them unreliable for sustained workloads.
-- Only 2 out of ~7 attempted model calls succeeded, yielding a <30% success rate — free-tier models are unsuitable for critical or time-sensitive tasks 
-- Proposed safeguards (health-aware routing, async timeouts) remain unimplemented, allowing the same failures to recur — proposals must be executed befo
-- System stress at maximum (1.0) with conserve mode and a budget of 1 iteration means the system cannot absorb repeated external failures — external cal
-- The 502 'service temporarily overloaded' from Nvidia shows that even HTTP-200 responses can carry upstream failures, requiring response-payload valida
-- OpenRouter's free-tier models share a common rate-limit pool, so 429 errors cascade across all models simultaneously — diversification across provider
 
 ---
 

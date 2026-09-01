@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8965 Fakten** · Stand 2026-09-01 15:39 UTC · aktualisiert bei jedem Herzschlag
+**8970 Fakten** · Stand 2026-09-01 15:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4725
+- **dream:** 4730
 - **swarm_artifact:** 1951
 - **last_swarm_critique:** 677
 - **anti_pattern:** 581
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901154541:5:e4264d`
+*01.09. 15:45 UTC · Quelle: dream*
+
+Conserve mode budget (max_iterations=1) conflicts with multi-step fallback strategies, requiring single-call success or pre-verified artifacts.
+
+### `dream:20260901154541:4:08f064`
+*01.09. 15:45 UTC · Quelle: dream*
+
+Reflex/simulation tools fail silently without error details, preventing diagnostic feedback loops for capability validation.
+
+### `dream:20260901154541:3:0cfc8c`
+*01.09. 15:45 UTC · Quelle: dream*
+
+Hand actions fail due to path resolution errors (relative vs absolute paths), not command logic, revealing environment configuration drift.
+
+### `dream:20260901154541:2:8f3e48`
+*01.09. 15:45 UTC · Quelle: dream*
+
+Latency variance between models (10.7s vs 47.4s) exceeds 4x, making latency-aware routing critical under tight iteration budgets.
+
+### `dream:20260901154541:1:af113d`
+*01.09. 15:45 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models simultaneously, indicating shared quota exhaustion rather than individual model failure.
 
 ### `dream:20260901153748:5:2967d6`
 *01.09. 15:37 UTC · Quelle: dream*
