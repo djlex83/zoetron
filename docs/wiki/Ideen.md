@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 04:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 04:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, indicating health checks miss external API degradation.
+- Reflex actions succeed when concrete tools exist (alte-erinnerungen-aktualisieren.py, ersten-swarm-lauf-mit-score-8-konvergier.py), showing tool-media
+- System generates skill proposals (5+ this session) but drive_goal 'Vorgeschlagene Fähigkeiten wirklich lernen' reveals a persistent proposal-to-implem
+- Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (9.9–20.7s), indicating unstable capacity on free ti
+- Free-tier model z-ai/glm-5.2:free consistently returns 429 errors under load, making it unreliable for production use without circuit-breaking.
 - Self-diagnosis and reflex actions operate in isolation without feeding back into model routing or skill deployment decisions.
 - Latency variance across models (5.9s–17.6s) and frequent failures indicate no circuit-breaker or fallback logic is active.
 - Model selection is reactive without health-based routing, causing repeated calls to known-failing endpoints.
@@ -51,11 +56,6 @@
 - Skill proposals duplicate across cycles (model-health registry, fallback router) because no promotion gate validates and graduates prototypes to produ
 - Nemotron-3-ultra succeeds but exhibits high latency variance (17–42 s), indicating cold-start or queueing effects that degrade user-facing SLAs.
 - Free-tier model endpoints (glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota management.
-- Swarm-generated skill proposals converge on a common pattern: health-aware routing with timeout, retry budget, and circuit-breaker semantics.
-- Structured telemetry (model, status, latency, tokens) is absent from current calls, preventing data-driven router decisions.
-- The system repeatedly generates similar routing/fallback proposals but lacks an automated mechanism to promote them into active policy.
-- Latency variance on nemotron-3-ultra (13–42 s) exceeds acceptable bounds for interactive tasks, requiring timeout guards.
-- Free-tier models on OpenRouter consistently return 429 errors under load, making them unreliable for production workflows.
 
 ---
 
