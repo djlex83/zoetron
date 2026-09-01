@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8859 Fakten** · Stand 2026-09-01 12:40 UTC · aktualisiert bei jedem Herzschlag
+**8873 Fakten** · Stand 2026-09-01 12:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4670
-- **swarm_artifact:** 1921
-- **last_swarm_critique:** 672
+- **dream:** 4675
+- **swarm_artifact:** 1927
+- **last_swarm_critique:** 673
 - **anti_pattern:** 577
-- **last_swarm_goal:** 420
+- **last_swarm_goal:** 421
 - **strategy:** 309
 - **tool:** 104
-- **hand_result:** 94
+- **hand_result:** 95
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*01.09. 12:51 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*01.09. 12:46 UTC · Quelle: system*
+
+Vorschläge prüfen und validieren
+
+### `dream:20260901124558:5:b3b9a5`
+*01.09. 12:45 UTC · Quelle: dream*
+
+The system is in a 'conserve' state with limited budget, which may be contributing to premature task termination and incomplete skill implementation.
+
+### `dream:20260901124558:4:2723e1`
+*01.09. 12:45 UTC · Quelle: dream*
+
+Model performance varies significantly by provider, with some models consistently timing out or returning upstream errors under load.
+
+### `dream:20260901124558:3:62f7ca`
+*01.09. 12:45 UTC · Quelle: dream*
+
+Market analysis results remain unused despite completion, pointing to a gap between task execution and actionable integration.
+
+### `dream:20260901124558:2:94420e`
+*01.09. 12:45 UTC · Quelle: dream*
+
+The 'Fähigkeiten-Ideen in echte Skills wandeln' goal repeatedly fails due to a path resolution error in the script, suggesting a systemic issue with data path handling.
+
+### `dream:20260901124558:1:574372`
+*01.09. 12:45 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or fallback strategies.
 
 ### `dream:20260901123853:5:0b1d36`
 *01.09. 12:38 UTC · Quelle: dream*

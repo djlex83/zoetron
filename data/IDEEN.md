@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 12:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 12:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system is in a 'conserve' state with limited budget, which may be contributing to premature task termination and incomplete skill implementation.
+- Model performance varies significantly by provider, with some models consistently timing out or returning upstream errors under load.
+- Market analysis results remain unused despite completion, pointing to a gap between task execution and actionable integration.
+- The 'Fähigkeiten-Ideen in echte Skills wandeln' goal repeatedly fails due to a path resolution error in the script, suggesting a systemic issue with d
+- Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or fallback strategies.
 - Model failures dominate the error budget (2:1 failure:success) but self-diagnosis only checks internal organs; external dependency health must be part
 - Completed analyses (three market reports) remain unused because no process links outputs to downstream decisions; every artifact needs an explicit con
 - Hand actions fail on path resolution because relative paths diverge from ZOETRON_DATA; all file operations must resolve against the canonical data roo
@@ -51,11 +56,6 @@
 - HTTP 200 responses can still carry upstream error payloads, so response-body schema validation is required to catch masquerading failures.
 - Free models exhibit unpredictable latency (5s to 27s) and availability, necessitating a tiered architecture that separates fast-path endpoints from qu
 - Rate-limit errors (429) recur predictably on free-tier models and require provider-level circuit breakers rather than per-model handling to isolate qu
-- Skill proposals accumulate without a staged promotion pipeline, causing proposals to linger as unactioned ideas.
-- Hand actions returning exit code 1 with zero bytes read reveal missing pre-flight checks for file existence and permissions.
-- Swarm convergence fails when builder-to-critic ratio exceeds 3:1, suggesting a mandatory critic gate after each builder iteration.
-- Evolution cycles stall at 7/10 because the critic detects demo stubs substituting for real simulations, indicating the simulation harness must enforce
-- Free tier models consistently hit 429 rate limits under load, requiring a health-aware router that tracks consecutive 429s and shifts traffic to healt
 
 ---
 

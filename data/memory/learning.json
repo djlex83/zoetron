@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 12:39:33",
+ "stand": "2026-09-01 12:51:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,12 +69,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -109,6 +103,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -211,23 +211,29 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.785,
- "simulationen_angewandt": 24,
+ "haende_quote": 0.778,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 26,
   "best": 9.0,
-  "schnitt": 5.96
+  "schnitt": 6.08
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 19,
-   "schnitt": 6.37
-  },
   "bau": {
    "n": 6,
    "schnitt": 4.67
+  },
+  "analyse": {
+   "n": 19,
+   "schnitt": 6.42
   }
  }
 }
