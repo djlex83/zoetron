@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 06:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 07:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 14×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -37,10 +37,15 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration predictions matched actual outcomes with zero error, confirming accurate self-assessment of task difficulty.
+- Evolutionary variant testing reliably improves scores from 6 to 9 when data-flow integrity is corrected across generations.
+- Data flow breaks (Datenfluss-Bruch) are the primary critic-identified defect in skill-proposal evaluation pipelines, causing revision loops.
+- nvidia/nemotron-3-ultra-550b-a55b:free is the only reliable model in the pool, delivering consistent results despite latency variance from 15s to 75s.
+- 429 rate-limiting on z-ai/glm-5.2:free is a persistent, repeatable failure mode that blocks progress when no fallback model is available.
 - Zero knowledge base pruning occurred despite stale goals accumulating, indicating that unused facts and abandoned goals build up and may degrade decis
 - Self-diagnosis reports zero organ errors while operational failures persist, revealing that diagnostic coverage is incomplete and misses runtime failu
 - Nemotron's latency degraded from 16.1s to 21.2s between successful calls, demonstrating that even healthy models can worsen over time and need enforce
@@ -51,11 +56,6 @@
 - Hand actions fail when using relative paths instead of the absolute ZOETRON_DATA path, causing silent zero-byte reads.
 - The nvidia/nemotron-3-ultra model succeeds but exhibits high latency variance (8-42s), indicating unstable upstream capacity.
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
-- Latency variance on the same model (7.9s to 51.4s) means timeout configuration is critical to avoid blocking the entire pipeline.
-- Swarm execution without explicit convergence criteria wastes cycles, as a score of 6 with no convergence demonstrates.
-- Skill proposals generated during consolidation cycles require a validation gate to prevent unvetted ideas from consuming execution resources.
-- Even previously reliable models can fail with upstream 502 errors, so dependency on a single endpoint is a single point of failure.
-- Free-tier endpoints on shared APIs are systematically prone to 429 rate-limit errors, making them unreliable for production workflows.
 
 ---
 
