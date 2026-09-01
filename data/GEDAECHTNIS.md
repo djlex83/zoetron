@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9145 Fakten** · Stand 2026-09-01 21:13 UTC · aktualisiert bei jedem Herzschlag
+**9150 Fakten** · Stand 2026-09-01 21:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4845
+- **dream:** 4850
 - **swarm_artifact:** 1981
 - **last_swarm_critique:** 682
 - **anti_pattern:** 591
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901211819:5:212558`
+*01.09. 21:18 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, indicating health checks don't cover external dependency degradation.
+
+### `dream:20260901211819:4:a70529`
+*01.09. 21:18 UTC · Quelle: dream*
+
+Pruning removes 61 events but zero facts, showing episodic memory grows faster than semantic consolidation.
+
+### `dream:20260901211819:3:21af22`
+*01.09. 21:18 UTC · Quelle: dream*
+
+Evolution/swarm cycles consistently stall at score 7 without convergence, revealing a missing 'good enough' termination criterion.
+
+### `dream:20260901211819:2:147e23`
+*01.09. 21:18 UTC · Quelle: dream*
+
+Models that initially fail (nemotron, poolside) often recover on retry, suggesting transient overload rather than permanent unavailability.
+
+### `dream:20260901211819:1:d71589`
+*01.09. 21:18 UTC · Quelle: dream*
+
+Intermittent 429/502 errors across multiple providers indicate systemic rate-limiting and upstream instability, not model-specific failures.
 
 ### `dream:20260901211128:5:dd179f`
 *01.09. 21:11 UTC · Quelle: dream*
