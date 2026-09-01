@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8462 Fakten** · Stand 2026-09-01 00:23 UTC · aktualisiert bei jedem Herzschlag
+**8467 Fakten** · Stand 2026-09-01 00:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4410
+- **dream:** 4415
 - **swarm_artifact:** 1849
 - **last_swarm_critique:** 660
 - **anti_pattern:** 559
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901003235:5:a33e1d`
+*01.09. 00:32 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero issues despite observable failures, suggesting internal monitoring is not capturing external dependency failures effectively.
+
+### `dream:20260901003235:4:5f8d69`
+*01.09. 00:32 UTC · Quelle: dream*
+
+Stale market analysis steps and unused skill proposals reveal a gap between idea generation and execution, indicating need for automated proposal-to-skill conversion.
+
+### `dream:20260901003235:3:736c24`
+*01.09. 00:32 UTC · Quelle: dream*
+
+High failure count (68) on a single model shows lack of automatic failover and health-aware routing is causing cascading task delays.
+
+### `dream:20260901003235:2:432ddc`
+*01.09. 00:32 UTC · Quelle: dream*
+
+Model latency varies significantly (5.3s to 11.3s) for similar token counts, suggesting cold starts or provider-side throttling that can be mitigated with pre-warming and latency budgets.
+
+### `dream:20260901003235:1:b08c50`
+*01.09. 00:32 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limiting issue that must be handled at the routing layer rather than per-call retries.
 
 ### `dream:20260901002204:5:2cdef1`
 *01.09. 00:22 UTC · Quelle: dream*

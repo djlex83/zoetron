@@ -1,12 +1,12 @@
 {
- "stand": 1788222144.1670206,
+ "stand": 1788222779.1754494,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 2213,
-   "fehler": 442,
-   "fehler_in_folge": 0,
+   "laeufe": 2215,
+   "fehler": 444,
+   "fehler_in_folge": 2,
    "gesperrt_bis": 0.0,
    "latenz_summe_s": 78820.45638632774,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
@@ -31,7 +31,7 @@
    "latenz_summe_s": 231.03127098083496,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 584
+   "kontofehler": 586
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 9,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 277.40880942344666,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 567
+   "kontofehler": 569
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -61,7 +61,7 @@
    "latenz_summe_s": 224.5731382369995,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 2259
+   "kontofehler": 2261
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -92,11 +92,11 @@
    "letzte_sperre": 1787553147.7341604
   },
   "poolside/laguna-s-2.1:free": {
-   "laeufe": 228,
+   "laeufe": 230,
    "fehler": 1,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 3351.2633969783783,
+   "latenz_summe_s": 3377.138961315155,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
    "kontofehler": 182

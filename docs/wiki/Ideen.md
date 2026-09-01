@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 10×)*
@@ -31,16 +31,21 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch analysieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis consistently reports zero issues despite observable failures, suggesting internal monitoring is not capturing external dependency failu
+- Stale market analysis steps and unused skill proposals reveal a gap between idea generation and execution, indicating need for automated proposal-to-s
+- High failure count (68) on a single model shows lack of automatic failover and health-aware routing is causing cascading task delays.
+- Model latency varies significantly (5.3s to 11.3s) for similar token counts, suggesting cold starts or provider-side throttling that can be mitigated 
+- Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limiting issue that must be handled at the routing layer rather than per-call retrie
 - Identical failure patterns recur across cycles because root-cause fixes (router, backoff, profiler) are proposed but not deployed.
 - Self-diagnosis reports zero organ errors while model-layer failures persist, revealing a monitoring blind spot at the inference boundary.
 - Skill proposals accumulate (5+ per cycle) but require manual reflex conversion, creating a proposal-to-production gap.
@@ -51,11 +56,6 @@
 - Evolutionary revision reliably lifts artifact scores (6→8) even when swarm convergence stalls after only 2 cycles.
 - nvidia/nemotron-3-ultra succeeds but exhibits extreme latency variance (4.9s–158.5s), suggesting queueing or cold-start effects on the free endpoint.
 - Free-tier models (z-ai/glm, google/gemma) consistently hit 429 rate limits making them unreliable for production workflows.
-- Artifact execution succeeded (137-line Python), proving the simulation-evolution loop works despite model-layer instability.
-- The sole reliable model (poolside/laguna-s-2.1) shows extreme latency variance (25–177s), requiring explicit timeout budgets.
-- Simulation-based verification caught defects early yet required three revisions, revealing gaps between spec and executable artifact.
-- Consecutive-failure detection with 1800s bans prevents cascade waste but demands a diverse model pool to maintain throughput.
-- Free-tier LLM APIs on OpenRouter suffer systematic rate-limiting (429) making them unreliable without queuing and backoff.
 
 ---
 
