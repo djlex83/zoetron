@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 21:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 21:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No data pruning occurred despite accumulated events, suggesting that retention without cleanup leads to stale context that may interfere with future d
+- Self-diagnosis reports zero organ failures while operational errors persist, showing that structural health does not guarantee resilience against exte
+- Reflex-based learning from past failures works reliably, but it only fires after a goal is explicitly set, meaning the system must self-generate impro
+- Completed analyses and skill proposals accumulate without being actioned, indicating that finishing work is not the bottleneck — triggering execution 
+- The same model endpoint fails repeatedly with 429 errors while alternatives succeed, revealing that no automatic fallback exists when a primary resour
 - Stale market analyses represent untapped signal that can bias model selection and prompt routing toward historically validated strategies.
 - Convergence monitoring is essential to prevent evolutionary loops from spinning indefinitely when score deltas fall below meaningful thresholds.
 - AST validation gate is critical because hand_action execution failures due to syntax errors waste compute and delay convergence.
@@ -51,11 +56,6 @@
 - Evolution/swarm cycles consistently stall at score 7 without convergence, revealing a missing 'good enough' termination criterion.
 - Models that initially fail (nemotron, poolside) often recover on retry, suggesting transient overload rather than permanent unavailability.
 - Intermittent 429/502 errors across multiple providers indicate systemic rate-limiting and upstream instability, not model-specific failures.
-- Calibration error of 2 cycles suggests systematic underestimation of task complexity in skill-building workflows.
-- Local hand-action execution succeeds reliably and quickly compared to external API dependencies.
-- inclusionai/ling-3.0-flash-fin:free demonstrates consistent availability and lower latency among tested free models.
-- Nvidia's Nemotron model exhibits intermittent 502 upstream errors indicating provider-side capacity issues beyond rate limits.
-- Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for production workloads.
 
 ---
 
