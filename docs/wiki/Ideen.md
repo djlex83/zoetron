@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 19:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 19:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance for same model (Nemotron: 23s vs 139s) suggests cold-start or queueing effects not accounted in planning.
+- Calibration system overestimates success rate by 250% (predicted 7 vs actual 2) indicating broken feedback loop.
+- Generated Python code uses dict[str, str] type syntax requiring Python 3.9+ but runtime environment appears older causing syntax errors.
+- Nvidia Nemotron models exhibit recurring 502 upstream overload errors indicating provider-side capacity constraints.
+- Free-tier models on OpenRouter suffer systemic 429 rate limiting across all providers making them unreliable for production workloads.
 - Model diversity without request pacing creates thundering herd on shared OpenRouter infrastructure.
 - High stress state (1.0) with conservative budget does not prevent new task spawns, worsening contention.
 - Generated code artifacts contain syntax errors (type annotation misuse) that pass simulation but fail at execution time.
@@ -51,11 +56,6 @@
 - Repeated 429 errors on the same model indicate missing client-side rate-limit awareness and exponential backoff.
 - High latency variance (20-74s) in fallback models destabilizes interactive workflows and requires latency-aware scheduling.
 - Free-tier models exhibit unreliable availability under load, making them unsuitable for critical-path operations without automated fallback.
-- Core organ CI failure (herzschlag) during high model stress suggests resource contention between inference and system maintenance.
-- Existing skill proposals (circuit-breaker, health monitor, stress scheduler) directly address observed failure modes but remain unimplemented.
-- Latency variance (14s–74s) across successful calls indicates unpredictable queue depths, necessitating per-model timeout budgets.
-- Upstream provider overload (502) can affect even previously reliable models like Nemotron, requiring multi-provider fallback chains.
-- Free-tier models on OpenRouter exhibit correlated 429 rate-limiting failures across multiple providers, making single-model reliance untenable.
 
 ---
 

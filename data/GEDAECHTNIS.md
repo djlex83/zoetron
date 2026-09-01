@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9066 Fakten** · Stand 2026-09-01 19:04 UTC · aktualisiert bei jedem Herzschlag
+**9071 Fakten** · Stand 2026-09-01 19:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4790
+- **dream:** 4795
 - **swarm_artifact:** 1969
 - **last_swarm_critique:** 680
 - **anti_pattern:** 587
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901190932:5:810902`
+*01.09. 19:09 UTC · Quelle: dream*
+
+Latency variance for same model (Nemotron: 23s vs 139s) suggests cold-start or queueing effects not accounted in planning.
+
+### `dream:20260901190932:4:437e14`
+*01.09. 19:09 UTC · Quelle: dream*
+
+Calibration system overestimates success rate by 250% (predicted 7 vs actual 2) indicating broken feedback loop.
+
+### `dream:20260901190932:3:e11194`
+*01.09. 19:09 UTC · Quelle: dream*
+
+Generated Python code uses dict[str, str] type syntax requiring Python 3.9+ but runtime environment appears older causing syntax errors.
+
+### `dream:20260901190932:2:9ea552`
+*01.09. 19:09 UTC · Quelle: dream*
+
+Nvidia Nemotron models exhibit recurring 502 upstream overload errors indicating provider-side capacity constraints.
+
+### `dream:20260901190932:1:294ad6`
+*01.09. 19:09 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systemic 429 rate limiting across all providers making them unreliable for production workloads.
 
 ### `dream:20260901190152:5:65e3c8`
 *01.09. 19:01 UTC · Quelle: dream*

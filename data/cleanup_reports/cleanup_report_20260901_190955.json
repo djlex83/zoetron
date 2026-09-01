@@ -1,0 +1,158 @@
+{
+  "scan_time": "2026-09-01T19:09:55.124073",
+  "total_files": 555,
+  "total_size_bytes": 14861379,
+  "total_size_mb": 14.17,
+  "by_action": {
+    "keep": 431,
+    "delete": 2,
+    "review": 110,
+    "archive": 12
+  },
+  "by_category": {
+    "memory": 61,
+    "temp": 1,
+    "unknown": 110,
+    "result": 34,
+    "backup": 1,
+    "artifact": 348
+  },
+  "archive_size_mb": 0.05,
+  "delete_size_mb": 0.0,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "rel_path": "tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "size_bytes": 2681,
+      "modified": 1787812317.2147682,
+      "modified_iso": "2026-08-27T06:31:57.214768",
+      "age_days": 5.5,
+      "category": "backup",
+      "action": "delete",
+      "reason": "Old backup - superseded"
+    },
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 6.3,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/s04_1787676147_draw-wahrscheinlichkeit-aus-elo-differenz-ableiten.md",
+      "rel_path": "artefakte/s04_1787676147_draw-wahrscheinlichkeit-aus-elo-differenz-ableiten.md",
+      "size_bytes": 5754,
+      "modified": 1787676147.3395329,
+      "modified_iso": "2026-08-25T16:42:27.339533",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s04_1787676073_dynamischer-k-faktor-nach-team-erfahrung.md",
+      "rel_path": "artefakte/s04_1787676073_dynamischer-k-faktor-nach-team-erfahrung.md",
+      "size_bytes": 5228,
+      "modified": 1787676073.4791782,
+      "modified_iso": "2026-08-25T16:41:13.479178",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787677755_draft-deliverable-for-fu-ball-die-basislinie-von-50-2-schlag.md",
+      "rel_path": "artefakte/s03_1787677755_draft-deliverable-for-fu-ball-die-basislinie-von-50-2-schlag.md",
+      "size_bytes": 5168,
+      "modified": 1787677755.8581853,
+      "modified_iso": "2026-08-25T17:09:15.858185",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787684763_variante-b-adaptive-lernrate-k-neue-teams-lernen-schnell-eta.md",
+      "rel_path": "artefakte/s03_1787684763_variante-b-adaptive-lernrate-k-neue-teams-lernen-schnell-eta.md",
+      "size_bytes": 4998,
+      "modified": 1787684763.6816468,
+      "modified_iso": "2026-08-25T19:06:03.681647",
+      "age_days": 7.0,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787684793_variante-c-kombination-der-beiden-unter-rauschgrenze-aenderu.md",
+      "rel_path": "artefakte/s03_1787684793_variante-c-kombination-der-beiden-unter-rauschgrenze-aenderu.md",
+      "size_bytes": 4843,
+      "modified": 1787684793.0617692,
+      "modified_iso": "2026-08-25T19:06:33.061769",
+      "age_days": 7.0,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787679307_optimize-margin-parameter-for-goal-difference-multiplier.md",
+      "rel_path": "artefakte/s03_1787679307_optimize-margin-parameter-for-goal-difference-multiplier.md",
+      "size_bytes": 4532,
+      "modified": 1787679307.8681278,
+      "modified_iso": "2026-08-25T17:35:07.868128",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787684738_variante-a-elo-am-team-statt-an-liga-team.md",
+      "rel_path": "artefakte/s03_1787684738_variante-a-elo-am-team-statt-an-liga-team.md",
+      "size_bytes": 4470,
+      "modified": 1787684738.996544,
+      "modified_iso": "2026-08-25T19:05:38.996544",
+      "age_days": 7.0,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787679265_test-dynamic-k-factor-based-on-team-match-count.md",
+      "rel_path": "artefakte/s03_1787679265_test-dynamic-k-factor-based-on-team-match-count.md",
+      "size_bytes": 4316,
+      "modified": 1787679265.508949,
+      "modified_iso": "2026-08-25T17:34:25.508949",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787674333_draft-deliverable-for-fu-ball-die-basislinie-von-50-2-schlag.md",
+      "rel_path": "artefakte/s05_1787674333_draft-deliverable-for-fu-ball-die-basislinie-von-50-2-schlag.md",
+      "size_bytes": 4240,
+      "modified": 1787674333.5985482,
+      "modified_iso": "2026-08-25T16:12:13.598548",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787679364_adjust-calibration-bin-width-binw-for-better-probability-est.md",
+      "rel_path": "artefakte/s03_1787679364_adjust-calibration-bin-width-binw-for-better-probability-est.md",
+      "size_bytes": 4222,
+      "modified": 1787679364.033365,
+      "modified_iso": "2026-08-25T17:36:04.033365",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    }
+  ]
+}
