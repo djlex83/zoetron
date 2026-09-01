@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8447 Fakten** · Stand 2026-09-01 00:04 UTC · aktualisiert bei jedem Herzschlag
+**8452 Fakten** · Stand 2026-09-01 00:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4395
+- **dream:** 4400
 - **swarm_artifact:** 1849
 - **last_swarm_critique:** 660
 - **anti_pattern:** 559
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901000916:5:6193c1`
+*01.09. 00:09 UTC · Quelle: dream*
+
+Artifact execution succeeded (137-line Python), proving the simulation-evolution loop works despite model-layer instability.
+
+### `dream:20260901000916:4:3d00b7`
+*01.09. 00:09 UTC · Quelle: dream*
+
+The sole reliable model (poolside/laguna-s-2.1) shows extreme latency variance (25–177s), requiring explicit timeout budgets.
+
+### `dream:20260901000916:3:665d2d`
+*01.09. 00:09 UTC · Quelle: dream*
+
+Simulation-based verification caught defects early yet required three revisions, revealing gaps between spec and executable artifact.
+
+### `dream:20260901000916:2:875a0b`
+*01.09. 00:09 UTC · Quelle: dream*
+
+Consecutive-failure detection with 1800s bans prevents cascade waste but demands a diverse model pool to maintain throughput.
+
+### `dream:20260901000916:1:32f334`
+*01.09. 00:09 UTC · Quelle: dream*
+
+Free-tier LLM APIs on OpenRouter suffer systematic rate-limiting (429) making them unreliable without queuing and backoff.
 
 ### `dream:20260901000226:5:db7b51`
 *01.09. 00:02 UTC · Quelle: dream*
