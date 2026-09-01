@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,31 +16,36 @@
 - Add per-request timeout (20 s) and retry budget (max 2 attempts with exponential backoff + jitter) before fail *(hatte die Idee 3×)*
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 3×)*
 - Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 3×)*
-- Deploy QuotaAwareRouter with per-key circuit breakers, EWMA latency tracking, and automatic fallback to health *(hatte die Idee 2×)*
-- Implement SyntheticProbeHarness running lightweight completions every 60s per model to populate ModelHealthReg *(hatte die Idee 2×)*
-- Create ExecutionGapTracker mapping each drive goal to concrete skill proposals with goal_age alerts (>24h) and *(hatte die Idee 2×)*
-- Enforce PathContract at skill registration: require I/O skills to declare path parameters, auto-wrap with reso *(hatte die Idee 2×)*
+- Deploy ModelHealthRegistry with per-model quota tracking, EWMA latency, exponential backoff, and priority-base *(hatte die Idee 2×)*
+- Implement CircuitBreakerMiddleware wrapping all model calls with configurable failure thresholds, half-open st *(hatte die Idee 2×)*
+- Build DriveToSkillPipeline that auto-converts drive goals into skill specs with acceptance criteria, testing g *(hatte die Idee 2×)*
+- Create PathResolver utility enforcing ZOETRON_DATA root, with validation decorators for all file-access skills *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token throughput on successful Nemotron calls scales with input size (2k-8k tokens in, 2k-3k out), but latency remains prohibitively high for interact
+- Hand-action retry (fail then succeed on second attempt) demonstrates that transient filesystem or permission issues self-resolve with immediate retry.
+- The simulation-revision-apply loop successfully detected stale analysis data, executed 3 revisions, and produced a verified 296-line Python artifact.
+- Nemotron-3-Ultra exhibits a bimodal failure pattern: 502 upstream overload errors followed by eventual success at 64-100s latency, indicating severe q
+- Free-tier models across providers (Google, Z.ai, Poolside) consistently hit 429 rate limits, making them unreliable for sustained workloads.
 - Only 2 out of ~7 attempted model calls succeeded, yielding a <30% success rate — free-tier models are unsuitable for critical or time-sensitive tasks 
 - Proposed safeguards (health-aware routing, async timeouts) remain unimplemented, allowing the same failures to recur — proposals must be executed befo
 - System stress at maximum (1.0) with conserve mode and a budget of 1 iteration means the system cannot absorb repeated external failures — external cal
@@ -51,11 +56,6 @@
 - The z-ai/glm-5.2:free model has a near-100% failure rate in this session and should be deprioritized or removed from the active fallback pool.
 - Latency on successful calls degrades progressively under sustained load (42s → 213s), so early success does not guarantee continued availability withi
 - 429 rate-limit errors are systemic across nearly all free-tier OpenRouter models, not isolated to a single provider, making model diversity the primar
-- Simulation-based revision (5 risks → 3 patches) catches defects before deployment; simulation should be a mandatory gate for all artifact changes.
-- Evolutionary search (3 variants, 2 cycles) lifted scores from 4 to 7–9, proving iterative variant generation with critic feedback is a high-leverage p
-- Calibration error of 4 (predicted 8 vs actual 4) reveals systematic overestimation of task complexity; historical actuals must feed future predictions
-- nvidia/nemotron-3-ultra-550b-a55b:free succeeds reliably but shows high latency variance (48–137 s), requiring async invocation with configurable time
-- The model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limiting errors, making it unreliable without exponential backoff and automatic fall
 
 ---
 

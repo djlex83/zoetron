@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8955 Fakten** · Stand 2026-09-01 15:23 UTC · aktualisiert bei jedem Herzschlag
+**8960 Fakten** · Stand 2026-09-01 15:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4715
+- **dream:** 4720
 - **swarm_artifact:** 1951
 - **last_swarm_critique:** 677
 - **anti_pattern:** 581
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901153058:5:1c6815`
+*01.09. 15:30 UTC · Quelle: dream*
+
+Token throughput on successful Nemotron calls scales with input size (2k-8k tokens in, 2k-3k out), but latency remains prohibitively high for interactive use.
+
+### `dream:20260901153058:4:b328cb`
+*01.09. 15:30 UTC · Quelle: dream*
+
+Hand-action retry (fail then succeed on second attempt) demonstrates that transient filesystem or permission issues self-resolve with immediate retry.
+
+### `dream:20260901153058:3:14ef7b`
+*01.09. 15:30 UTC · Quelle: dream*
+
+The simulation-revision-apply loop successfully detected stale analysis data, executed 3 revisions, and produced a verified 296-line Python artifact.
+
+### `dream:20260901153058:2:6b5b7e`
+*01.09. 15:30 UTC · Quelle: dream*
+
+Nemotron-3-Ultra exhibits a bimodal failure pattern: 502 upstream overload errors followed by eventual success at 64-100s latency, indicating severe queueing.
+
+### `dream:20260901153058:1:1d8f01`
+*01.09. 15:30 UTC · Quelle: dream*
+
+Free-tier models across providers (Google, Z.ai, Poolside) consistently hit 429 rate limits, making them unreliable for sustained workloads.
 
 ### `dream:20260901152138:5:94d1c6`
 *01.09. 15:21 UTC · Quelle: dream*
