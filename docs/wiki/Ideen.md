@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,9 +31,9 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero internal organ errors, confirming that external API instability is the dominant failure surface.
+- Numerous skill proposals accumulate without a validation pipeline, so useful capabilities (router, watchdog, convergence gate) stay unimplemented.
+- Completed analytical work (market analysis) remains unused for multiple cycles, indicating a missing 'knowledge-to-action' trigger.
+- Fallback to nemotron-3-ultra succeeds but exhibits high, variable latency (8–45 s), degrading overall system responsiveness.
+- Free-tier LLM endpoints (z-ai/glm-5.2:free) fail via 429 rate-limits at ~2x the success rate, making them unreliable as primary models.
 - Self-diagnosis and pruning report zero errors and zero pruned items, indicating stable internal state but also no adaptive pressure to clean up stale 
 - Goal-directed reflexes (e.g., market-analysis update) converge in a single step when a dedicated tool exists, confirming reflex efficacy for well-scop
 - Multiple skill proposals for model routing, retry wrappers, and metrics instrumentation already exist but remain unimplemented, revealing a proposal-t
@@ -51,11 +56,6 @@
 - 3-variant evolution with critic scoring is highly effective: it lifted a 1/10 baseline to [9, 10, 9] in a single run, confirming that competitive vari
 - Calibration is severely overconfident (predicted 6, actual 1, abs_error 5), indicating the predictor systematically overestimates output quality for c
 - z-ai/glm-5.2:free is chronically rate-limited (5 consecutive 429 errors) and should be removed from the active routing pool or given a 60-second coold
-- The goal 'Marktanalyse abschließen und Lücke nutzen' failed because the generated artifact contained a runtime error (Traceback), highlighting the nee
-- The calibration error of 5 (predicted 6, actual 1) reveals a significant overestimation of task success probability for complex goals like 'Marktanaly
-- Repeated `hand_action` failures with `exit: 1` and `gelesen: 0` suggest the generated Python code is failing immediately on execution, likely due to s
-- High latency on `nvidia/nemotron-3-ultra-550b-a55b:free` (up to 111.2s) indicates a need for timeout handling or asynchronous execution to prevent blo
-- The `z-ai/glm-5.2:free` model is consistently rate-limited (429) and should be temporarily blacklisted to avoid wasting cycles.
 
 ---
 

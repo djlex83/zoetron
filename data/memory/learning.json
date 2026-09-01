@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 03:18:27",
+ "stand": "2026-09-01 03:25:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 17,
+   "erfolge": 17,
    "quote": 1.0
   },
   {
@@ -168,9 +168,9 @@
  "haende_quote": 0.832,
  "simulationen_angewandt": 17,
  "swarm_scores": {
-  "n": 21,
+  "n": 20,
   "best": 8.0,
-  "schnitt": 5.62
+  "schnitt": 5.5
  },
  "score_nach_ziel_typ": {
   "analyse": {
