@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 03:12:15",
+ "stand": "2026-09-01 03:18:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,15 +45,15 @@
    "quote": 0.0
   },
   {
-   "tool": "fehlerquellen-systematisch-beheben.py",
+   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {

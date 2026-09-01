@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8546 Fakten** · Stand 2026-09-01 03:13 UTC · aktualisiert bei jedem Herzschlag
+**8551 Fakten** · Stand 2026-09-01 03:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4470
+- **dream:** 4475
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901031801:5:c37c00`
+*01.09. 03:18 UTC · Quelle: dream*
+
+Self-diagnosis and pruning report zero errors and zero pruned items, indicating stable internal state but also no adaptive pressure to clean up stale artifacts.
+
+### `dream:20260901031801:4:e1d1f2`
+*01.09. 03:18 UTC · Quelle: dream*
+
+Goal-directed reflexes (e.g., market-analysis update) converge in a single step when a dedicated tool exists, confirming reflex efficacy for well-scoped tasks.
+
+### `dream:20260901031801:3:2ccb64`
+*01.09. 03:18 UTC · Quelle: dream*
+
+Multiple skill proposals for model routing, retry wrappers, and metrics instrumentation already exist but remain unimplemented, revealing a proposal-to-execution gap.
+
+### `dream:20260901031801:2:a3325d`
+*01.09. 03:18 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but shows high latency variance (8–20 s), requiring explicit timeout budgets and circuit-breaker logic.
+
+### `dream:20260901031801:1:050592`
+*01.09. 03:18 UTC · Quelle: dream*
+
+The model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unsuitable as a primary provider without aggressive backoff or deprioritization.
 
 ### `dream:20260901031023:5:fca00a`
 *01.09. 03:10 UTC · Quelle: dream*
