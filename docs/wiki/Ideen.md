@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 23:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 23:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten testen und nutzbar machen *(wieder aufgegriffen: 2×)*
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration overestimates success (predicted 6 vs actual 2), and memory retrieval (4 items) yields no code (hat_code=false) and negative delta (-0.5).
+- The "refresh forgotten knowledge" goal fails because artifacts lack executable Python blocks; prose alone does not converge.
+- Poolside Laguna exhibits high latency variance (29s–180s), indicating unstable performance even when successful.
+- Nvidia Nemotron shows intermittent 502 overload errors but recovers, suggesting transient upstream capacity issues.
+- Free-tier models (z-ai/glm-5.2, Google Gemma) consistently hit 429 rate limits, making them unreliable for sustained workloads.
 - Overconfidence in model selection and output quality without calibration feedback leads to poor decision-making in subsequent iterations.
 - Generated Python code execution failures indicate a lack of pre-validation, resulting in silent errors and incomplete task completion.
 - Repeated failures on the same models without fallback mechanisms lead to task abandonment and wasted compute resources.
@@ -51,11 +56,6 @@
 - Accumulated stale tasks and unimplemented skill proposals create cognitive overhead, highlighting the need for active lifecycle management of system g
 - High latency (7-12s) on free models compounds with frequent failures, drastically reducing effective throughput and increasing total task completion t
 - Free-tier LLM endpoints exhibit cascading rate-limit failures (429) and upstream overloads (502), making them unreliable for time-sensitive or high-vo
-- Self-diagnosis reports zero internal organ errors while external API failures dominate, revealing that resilience must target dependency boundaries, n
-- The reflex 'gelernte-fähigkeiten-besser-verknüpfen.py' executed autonomously and converged, proving meta-learning loops can close without external orc
-- Five skill proposals exist but zero have entered a validation pipeline, creating a structural gap between architectural intent and executable capabili
-- The only successful call (inclusionai/ling-3.0-flash-fin:free) completed in 7.5s versus 21-25s for failing models, indicating latency as a leading hea
-- Free-tier models on OpenRouter exhibit pervasive rate-limiting (429) and upstream overloads (502), making single-model reliance untenable for producti
 
 ---
 
