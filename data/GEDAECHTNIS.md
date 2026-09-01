@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8788 Fakten** · Stand 2026-09-01 10:22 UTC · aktualisiert bei jedem Herzschlag
+**8789 Fakten** · Stand 2026-09-01 10:33 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 4625
 - **swarm_artifact:** 1909
@@ -10,7 +10,7 @@
 - **strategy:** 307
 - **tool:** 103
 - **hand_result:** 93
-- **aktuell_organfehler:** 42
+- **aktuell_organfehler:** 43
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,11 @@
 - **last_goal:** 1
 
 ---
+
+### `aktuell_organfehler`
+*01.09. 10:25 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-01 10:18:27-10:21:11 UTC): drive -> RuntimeError in router.py:395; drive -> rc. all route candidates failed: z-ai/glm-5.2:free: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://o | Phase endete mit rc=1 Diese Phase de
 
 ### `dream:20260901101827:5:1495e8`
 *01.09. 10:18 UTC · Quelle: dream*
