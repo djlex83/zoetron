@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8457 Fakten** · Stand 2026-09-01 00:17 UTC · aktualisiert bei jedem Herzschlag
+**8462 Fakten** · Stand 2026-09-01 00:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4405
+- **dream:** 4410
 - **swarm_artifact:** 1849
 - **last_swarm_critique:** 660
 - **anti_pattern:** 559
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901002204:5:2cdef1`
+*01.09. 00:22 UTC · Quelle: dream*
+
+Identical failure patterns recur across cycles because root-cause fixes (router, backoff, profiler) are proposed but not deployed.
+
+### `dream:20260901002204:4:18b6d4`
+*01.09. 00:22 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model-layer failures persist, revealing a monitoring blind spot at the inference boundary.
+
+### `dream:20260901002204:3:20b125`
+*01.09. 00:22 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ per cycle) but require manual reflex conversion, creating a proposal-to-production gap.
+
+### `dream:20260901002204:2:78454c`
+*01.09. 00:22 UTC · Quelle: dream*
+
+Latency variance (8–15 s) on the fallback model shows no latency budget enforcement or cold-start pre-warming.
+
+### `dream:20260901002204:1:e68a31`
+*01.09. 00:22 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate missing automated rate-limit detection and immediate failover to healthy models.
 
 ### `dream:20260901001551:5:5a700e`
 *01.09. 00:15 UTC · Quelle: dream*

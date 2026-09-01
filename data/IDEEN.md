@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Identical failure patterns recur across cycles because root-cause fixes (router, backoff, profiler) are proposed but not deployed.
+- Self-diagnosis reports zero organ errors while model-layer failures persist, revealing a monitoring blind spot at the inference boundary.
+- Skill proposals accumulate (5+ per cycle) but require manual reflex conversion, creating a proposal-to-production gap.
+- Latency variance (8–15 s) on the fallback model shows no latency budget enforcement or cold-start pre-warming.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate missing automated rate-limit detection and immediate failover to healthy models.
 - Simulation-driven revision loops (5 risks → 5 revisions) improve artifacts but do not guarantee convergence within budget.
 - Calibration error of +1 (predicted 7 vs actual 6) indicates systematic overconfidence in capability estimates.
 - Evolutionary revision reliably lifts artifact scores (6→8) even when swarm convergence stalls after only 2 cycles.
@@ -51,11 +56,6 @@
 - Simulation-based verification caught defects early yet required three revisions, revealing gaps between spec and executable artifact.
 - Consecutive-failure detection with 1800s bans prevents cascade waste but demands a diverse model pool to maintain throughput.
 - Free-tier LLM APIs on OpenRouter suffer systematic rate-limiting (429) making them unreliable without queuing and backoff.
-- Simulation-revision loop (3 revisions applied) proves effective for capability validation but consumes limited iteration budget.
-- High stress state (1.0) triggers conserve mode that severely limits parallelism (max_tasks:3, max_iterations:1) - need stress reduction mechanisms.
-- Relative path resolution fails under ZOETRON_DATA - all file operations must use absolute paths from environment variable.
-- Model endpoint volatility (404 on nemotron) demands continuous availability probing before task assignment to avoid wasted cycles.
-- Rate limiting (429) across multiple free models indicates systemic quota exhaustion requiring fallback chains with local model backup.
 
 ---
 

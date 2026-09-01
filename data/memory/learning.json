@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 00:16:13",
+ "stand": "2026-09-01 00:22:32",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 17,
+   "erfolge": 17,
    "quote": 1.0
   },
   {
@@ -58,8 +58,8 @@
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
