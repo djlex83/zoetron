@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 08:30:43",
+ "stand": "2026-09-01 08:41:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -93,12 +93,6 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -147,6 +141,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -181,6 +181,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.809,
