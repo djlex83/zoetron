@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8657 Fakten** · Stand 2026-09-01 05:56 UTC · aktualisiert bei jedem Herzschlag
+**8674 Fakten** · Stand 2026-09-01 06:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4545
-- **swarm_artifact:** 1879
-- **last_swarm_critique:** 665
-- **anti_pattern:** 569
-- **last_swarm_goal:** 413
-- **strategy:** 305
-- **tool:** 100
+- **dream:** 4550
+- **swarm_artifact:** 1885
+- **last_swarm_critique:** 666
+- **anti_pattern:** 571
+- **last_swarm_goal:** 414
+- **strategy:** 306
+- **tool:** 101
 - **hand_result:** 91
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-tatsächlich-u`
+*01.09. 06:21 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten tatsächlich umsetzen und testen'. Datei: data/tools/vorgeschlagene-fähigkeiten-tatsächlich-u.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:2`
+*01.09. 06:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Architecture-First: Plugin-Strategie mit transparentem Zustandsmodell und Protok - Strukturiere die Lösung um ein `Capability`-Protokoll (aus `typing.Protocol`), das jede Fähigkeit als austauschbares Plugin definiert 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
+*01.09. 06:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 7]): Runtime-Validation-First: Laufzeit-Tests und Property-Based-Testing statt Typ-Hi - Entferne die Abhängigkeit von `typing`-Importen komplett und setze stattdessen auf `dataclasses` und `pydantic`-Modelle für die Fähigk
+
+### `last_swarm_critique`
+*01.09. 06:20 UTC · Quelle: critic*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_goal`
+*01.09. 06:14 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten tatsächlich umsetzen und testen
+
+### `dream:20260901061417:5:868a0f`
+*01.09. 06:14 UTC · Quelle: dream*
+
+Zero knowledge base pruning occurred despite stale goals accumulating, indicating that unused facts and abandoned goals build up and may degrade decision-making quality.
+
+### `dream:20260901061417:4:5c9e8a`
+*01.09. 06:14 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while operational failures persist, revealing that diagnostic coverage is incomplete and misses runtime failures like rate limits and silent no-ops.
+
+### `dream:20260901061417:3:ffaaac`
+*01.09. 06:14 UTC · Quelle: dream*
+
+Nemotron's latency degraded from 16.1s to 21.2s between successful calls, demonstrating that even healthy models can worsen over time and need enforced latency budgets to prevent cascade stalls.
+
+### `dream:20260901061417:2:b53db2`
+*01.09. 06:14 UTC · Quelle: dream*
+
+A persistent gap exists between generating skill proposals and implementing them, as overlapping proposals recur across cycles without evidence of conversion into executed skills.
+
+### `dream:20260901061417:1:0977f0`
+*01.09. 06:14 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model repeatedly fails with 429 Too Many Requests errors across multiple cycles, indicating free-tier rate limits are a systemic bottleneck requiring automatic fallback rather than blind retries.
 
 ### `tool:viele-skill-vorschläge-prüfen-und-nutzba`
 *01.09. 05:55 UTC · Quelle: hands*

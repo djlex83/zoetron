@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 6067 Neuronen · 351495 bewertete Synapsen
+Stand: 6070 Neuronen · 352234 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,11 +13,11 @@ Stand: 6067 Neuronen · 351495 bewertete Synapsen
 | 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 560 | 0.24 |
 | 2 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 555 | 0.24 |
 | 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 545 | 0.24 |
-| 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 554 | 0.23 |
-| 5 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 494 | 0.26 |
+| 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 555 | 0.23 |
+| 5 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 495 | 0.26 |
 | 6 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 561 | 0.23 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 470 | 0.27 |
-| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 470 | 0.26 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 471 | 0.27 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 471 | 0.26 |
 | 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 488 | 0.25 |
 | 10 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 439 | 0.27 |
 | 11 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 483 | 0.24 |
