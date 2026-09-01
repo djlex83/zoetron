@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 04:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs remove zero facts/events, suggesting retention policies are either misconfigured or the knowledge graph lacks TTL metadata.
+- Stale assets (three market analyses) persist unused until a reflex tool forces action, revealing a missing 'stale-data → task' trigger.
+- Skill proposals duplicate across cycles (model-health registry, fallback router) because no promotion gate validates and graduates prototypes to produ
+- Nemotron-3-ultra succeeds but exhibits high latency variance (17–42 s), indicating cold-start or queueing effects that degrade user-facing SLAs.
+- Free-tier model endpoints (glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota management.
 - Swarm-generated skill proposals converge on a common pattern: health-aware routing with timeout, retry budget, and circuit-breaker semantics.
 - Structured telemetry (model, status, latency, tokens) is absent from current calls, preventing data-driven router decisions.
 - The system repeatedly generates similar routing/fallback proposals but lacks an automated mechanism to promote them into active policy.
@@ -51,11 +56,6 @@
 - Fallback model latency varies wildly (100.9s → 15.6s), indicating no latency-aware routing or request timeout budget.
 - Multiple skill proposals for model reliability (health tracker, router, timeout/retry, metrics) exist but remain unimplemented, creating a persistent 
 - Repeated 429 errors on the primary model (z-ai/glm-5.2:free) reveal no automatic failover mechanism, causing reliance on a high-latency fallback (nvid
-- Model health tracking is absent; consecutive 429 errors should trigger timed cooldowns and automatic re-enable probes rather than persistent manual in
-- Skill proposals accumulate faster than validation capacity, creating a backlog that demands automated triage (critic scoring, minimum sub-score thresh
-- Pre-execution validation gaps (syntax, file existence, readability) allow preventable runtime failures that could be caught by static gates before han
-- Calibration drift in success prediction (overestimation) compounds planning errors, requiring dampening rules that halve predictions after large misse
-- Rate-limited models (429 errors) silently degrade system reliability without automatic circuit-breaking, forcing reactive fallbacks that increase late
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 03:57:05",
+ "stand": "2026-09-01 04:03:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 18,
-   "erfolge": 18,
+   "laeufe": 19,
+   "erfolge": 19,
    "quote": 1.0
   },
   {

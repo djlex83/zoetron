@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8581 Fakten** · Stand 2026-09-01 03:58 UTC · aktualisiert bei jedem Herzschlag
+**8586 Fakten** · Stand 2026-09-01 04:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4505
+- **dream:** 4510
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901040257:5:b1d03b`
+*01.09. 04:02 UTC · Quelle: dream*
+
+Pruning runs remove zero facts/events, suggesting retention policies are either misconfigured or the knowledge graph lacks TTL metadata.
+
+### `dream:20260901040257:4:05b469`
+*01.09. 04:02 UTC · Quelle: dream*
+
+Stale assets (three market analyses) persist unused until a reflex tool forces action, revealing a missing 'stale-data → task' trigger.
+
+### `dream:20260901040257:3:e31f81`
+*01.09. 04:02 UTC · Quelle: dream*
+
+Skill proposals duplicate across cycles (model-health registry, fallback router) because no promotion gate validates and graduates prototypes to production.
+
+### `dream:20260901040257:2:c79124`
+*01.09. 04:02 UTC · Quelle: dream*
+
+Nemotron-3-ultra succeeds but exhibits high latency variance (17–42 s), indicating cold-start or queueing effects that degrade user-facing SLAs.
+
+### `dream:20260901040257:1:76315b`
+*01.09. 04:02 UTC · Quelle: dream*
+
+Free-tier model endpoints (glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota management.
 
 ### `dream:20260901035634:5:97b7b7`
 *01.09. 03:56 UTC · Quelle: dream*
