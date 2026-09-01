@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8561 Fakten** · Stand 2026-09-01 03:32 UTC · aktualisiert bei jedem Herzschlag
+**8566 Fakten** · Stand 2026-09-01 03:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4485
+- **dream:** 4490
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901033730:5:5f53a1`
+*01.09. 03:37 UTC · Quelle: dream*
+
+Stress signals correlate with model failures but no automated resource reallocation exists.
+
+### `dream:20260901033730:4:c09348`
+*01.09. 03:37 UTC · Quelle: dream*
+
+Latency variance (4s to 30s) on same model demands latency-aware routing for time-critical tasks.
+
+### `dream:20260901033730:3:1ec736`
+*01.09. 03:37 UTC · Quelle: dream*
+
+Redundant skill proposals indicate missing implementation tracking and deployment accountability.
+
+### `dream:20260901033730:2:5679bb`
+*01.09. 03:37 UTC · Quelle: dream*
+
+Model recovery after failure suggests temporary rate limits rather than permanent unavailability.
+
+### `dream:20260901033730:1:affc16`
+*01.09. 03:37 UTC · Quelle: dream*
+
+Free-tier models exhibit intermittent 429 failures requiring automatic fallback with cooldown tracking.
 
 ### `dream:20260901033102:5:5cec28`
 *01.09. 03:31 UTC · Quelle: dream*
