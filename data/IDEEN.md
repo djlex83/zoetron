@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 22:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 22:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,18 +13,18 @@
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 3×)*
 - Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 3×)*
 - Implement model health registry with per-model 429/502 tracking, circuit-breaker state, and automatic fallback *(hatte die Idee 3×)*
-- Implement a model router that deprioritizes free-tier endpoints after first 429 and falls back to paid/low-lat *(hatte die Idee 2×)*
-- Add latency-aware scheduling: track per-model rolling p95 and avoid models with variance >50s for time-critica *(hatte die Idee 2×)*
-- Create a 'revision budget' skill that caps simulation-revision cycles at 3 and forces early convergence via st *(hatte die Idee 2×)*
-- Calibrate predictors with a rolling error log; apply a -1 correction factor when absolute error >0.5 over last *(hatte die Idee 2×)*
-- Build a swarm convergence monitor that triggers early termination if score delta <0.5 across 2 consecutive cyc *(hatte die Idee 2×)*
+- Implement a model router with real-time health scoring (error rate, latency, 429 frequency) and automatic fall *(hatte die Idee 3×)*
 - Build failure signature cache: hash error patterns (e.g., '429 on free tier') and preemptively apply last succ *(hatte die Idee 2×)*
 - Deploy a fallback router that prefers ling-3.0-flash-fin as primary, routes to nemotron-3-ultra only when prim *(hatte die Idee 2×)*
+- Implement a model health tracker that auto-disables any model after 3 consecutive 429 errors and re-enables it *(hatte die Idee 2×)*
+- Introduce a calibration dampening rule: when abs_error ≥ 3, multiply the next prediction by 0.5 until two cons *(hatte die Idee 2×)*
+- Standardize 3-variant evolution with critic scoring as a mandatory step for all artifact generation tasks, acc *(hatte die Idee 2×)*
+- Instrument every external model call with structured metrics (model, status, latency_s, tokens_in, tokens_out, *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions succeed for narrow, well-defined tasks (market analysis reuse) but are not generalized into reusable skills.
+- Tool outputs lack a uniform Result<T,E> schema with error codes and retry hints, forcing ad-hoc error handling downstream.
+- Goals have no TTL or auto-renewal, leading to stale context (e.g., outdated market analysis) that degrades decision quality.
+- Skill proposals accumulate but lack a validation pipeline (sandbox → benchmark → promote), causing good ideas to stall untested.
+- 429 rate limiting is the dominant failure mode across all model providers, indicating missing circuit breakers and health-aware routing.
 - Combining skills and reviving old memories are key intrinsic drives that should guide future learning and task prioritization.
 - Periodic event pruning is essential to maintain system efficiency, as evidenced by the removal of 35 obsolete events.
 - Reflexes can successfully automate routine cleanup tasks (e.g., 'Marktanalyse-Abschlüsse aufräumen') with zero errors and fast execution.
@@ -51,11 +56,6 @@
 - The absence of circuit breakers or fallback mechanisms causes cascading failures when primary models are throttled, wasting compute budget and stallin
 - Models that succeed under load (e.g., inclusionai/ling-3.0-flash-fin) are smaller and faster, suggesting a trade-off between model size and reliabilit
 - Rate limiting (429) and upstream overload (502) are the dominant failure modes across all models, indicating systemic API saturation rather than isola
-- No data pruning occurred despite accumulated events, suggesting that retention without cleanup leads to stale context that may interfere with future d
-- Self-diagnosis reports zero organ failures while operational errors persist, showing that structural health does not guarantee resilience against exte
-- Reflex-based learning from past failures works reliably, but it only fires after a goal is explicitly set, meaning the system must self-generate impro
-- Completed analyses and skill proposals accumulate without being actioned, indicating that finishing work is not the bottleneck — triggering execution 
-- The same model endpoint fails repeatedly with 429 errors while alternatives succeed, revealing that no automatic fallback exists when a primary resour
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9181 Fakten** · Stand 2026-09-01 22:27 UTC · aktualisiert bei jedem Herzschlag
+**9186 Fakten** · Stand 2026-09-01 22:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4870
+- **dream:** 4875
 - **swarm_artifact:** 1987
 - **last_swarm_critique:** 683
 - **anti_pattern:** 593
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901223241:5:c46571`
+*01.09. 22:32 UTC · Quelle: dream*
+
+Reflex actions succeed for narrow, well-defined tasks (market analysis reuse) but are not generalized into reusable skills.
+
+### `dream:20260901223241:4:c05f98`
+*01.09. 22:32 UTC · Quelle: dream*
+
+Tool outputs lack a uniform Result<T,E> schema with error codes and retry hints, forcing ad-hoc error handling downstream.
+
+### `dream:20260901223241:3:ef1c4a`
+*01.09. 22:32 UTC · Quelle: dream*
+
+Goals have no TTL or auto-renewal, leading to stale context (e.g., outdated market analysis) that degrades decision quality.
+
+### `dream:20260901223241:2:56d8b1`
+*01.09. 22:32 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a validation pipeline (sandbox → benchmark → promote), causing good ideas to stall untested.
+
+### `dream:20260901223241:1:201b27`
+*01.09. 22:32 UTC · Quelle: dream*
+
+429 rate limiting is the dominant failure mode across all model providers, indicating missing circuit breakers and health-aware routing.
 
 ### `dream:20260901222551:5:05b197`
 *01.09. 22:25 UTC · Quelle: dream*

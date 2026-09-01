@@ -682,3 +682,19 @@
 {"ts": 1787696297.2359881, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.1}}
 {"ts": 1787696298.9706526, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.07}}
 {"ts": 1787696300.1308312, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.16}}
+{"ts": 1787697005.981549, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787697024.6068194, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.8, "tokens_ein": 1389, "tokens_aus": 407}}
+{"ts": 1787697024.6073716, "kind": "skill_proposal", "payload": {"proposal": "When a swarm hits its cycle budget with open 'revise' issues, auto-spawn a follow-up goal seeded with the critic's issue list instead of marking the goal done unconverged."}}
+{"ts": 1787697024.6074293, "kind": "skill_proposal", "payload": {"proposal": "Wrap all organ-to-organ calls (dream, drive, act) in a retry-with-backoff policy keyed on ConnectError, escalating to selbstdiagnose only after N consecutive failures."}}
+{"ts": 1787697024.6074822, "kind": "skill_proposal", "payload": {"proposal": "Enforce a proposal-to-test ratio: for every K new skill proposals accepted, schedule at least one as a micro-experiment goal whose outcome is written back to the skill registry."}}
+{"ts": 1787697024.6075332, "kind": "skill_proposal", "payload": {"proposal": "After any evolution or swarm run, re-score the final artifact with the critic once more and store that score as the authoritative result to prevent inflated self-assessments."}}
+{"ts": 1787697024.6075866, "kind": "skill_proposal", "payload": {"proposal": "Add an adaptive pruning rule: if a prune run removes nothing twice in a row, lower the recency/access thresholds automatically until pruning has non-zero effect."}}
+{"ts": 1787697024.6076398, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787697034.2277756, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 8.3, "tokens_ein": 488, "tokens_aus": 241}}
+{"ts": 1787697034.227967, "kind": "drive_goal", "payload": {"title": "Ursachen für fehlgeschlagene Vorhersagen finden", "why": "Das System hat sich bei einigen Vorhersagen geirrt, ohne zu wissen warum. Wenn wir diese Fehler verstehen, macht es künftig weniger Fehler.", "signal": "failure"}}
+{"ts": 1787697034.2280464, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber nur wenige wurden wirklich getestet. Ausprobieren zeigt, welche Ideen wirklich nützlich sind.", "signal": "gap"}}
+{"ts": 1787697034.2281246, "kind": "drive_goal", "payload": {"title": "Alte Träume mit guten Handgriffen verbinden", "why": "Es gibt eine alte Erinnerung und eine Sammlung der besten eigenen Momente, die zusammenpassen könnten. Wer beides verknüpft, lernt aus dem eigenen Besten.", "signal": "combination"}}
+{"ts": 1787697037.6938968, "kind": "drive_whisper", "payload": {"title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "why": "Die schnellste Destillation braucht kein Training: Die besten eigenen Lösungen werden Lehrbeispiele. Baue exemplare.py: Artefakte mit Score >= 8 und bestandenem Test wandern als gekürztes Beispiel (Aufgabe + Lösung) in eine Exemplar-Bank; pro neuem Ziel werden die 2 semantisch ähnlichsten Beispiele ", "geerbt": false, "auftrag_zeichen": 571, "versuch": 2}}
+{"ts": 1787697038.1584291, "kind": "swarm_started", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)"}}
+{"ts": 1787697045.5966144, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787697046.3780606, "kind": "metabolism_check", "payload": {"stress": 0.124, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}

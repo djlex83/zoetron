@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 22:26:21",
+ "stand": "2026-09-01 22:33:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -289,14 +289,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-prüfen-und-integrieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.718,
+ "haende_quote": 0.719,
  "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 33,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 5.85
+  "schnitt": 5.88
  },
  "score_nach_ziel_typ": {
   "bau": {
