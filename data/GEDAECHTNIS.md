@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9223 Fakten** · Stand 2026-09-01 23:39 UTC · aktualisiert bei jedem Herzschlag
+**9228 Fakten** · Stand 2026-09-01 23:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4905
+- **dream:** 4910
 - **swarm_artifact:** 1989
 - **last_swarm_critique:** 684
 - **anti_pattern:** 595
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901234501:5:37496c`
+*01.09. 23:45 UTC · Quelle: dream*
+
+Overconfidence in model selection and output quality without calibration feedback leads to poor decision-making in subsequent iterations.
+
+### `dream:20260901234501:4:dcabe9`
+*01.09. 23:45 UTC · Quelle: dream*
+
+Generated Python code execution failures indicate a lack of pre-validation, resulting in silent errors and incomplete task completion.
+
+### `dream:20260901234501:3:1e8368`
+*01.09. 23:45 UTC · Quelle: dream*
+
+Repeated failures on the same models without fallback mechanisms lead to task abandonment and wasted compute resources.
+
+### `dream:20260901234501:2:5e8f81`
+*01.09. 23:45 UTC · Quelle: dream*
+
+Model reliability varies significantly under load, with some models (e.g., nvidia/nemotron-3-ultra) failing consistently while others (e.g., poolside/laguna-s-2.1) succeed.
+
+### `dream:20260901234501:1:296525`
+*01.09. 23:45 UTC · Quelle: dream*
+
+Free-tier LLM endpoints frequently return 429 rate-limit errors and 502 upstream overload errors, causing cascading failures across multiple model calls.
 
 ### `dream:20260901233713:5:7fb939`
 *01.09. 23:37 UTC · Quelle: dream*

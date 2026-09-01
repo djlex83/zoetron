@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 23:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 23:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
@@ -35,12 +35,17 @@
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzbar machen *(wieder aufgegriffen: 2×)*
-- Marktanalyse-Ergebnisse endlich umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Overconfidence in model selection and output quality without calibration feedback leads to poor decision-making in subsequent iterations.
+- Generated Python code execution failures indicate a lack of pre-validation, resulting in silent errors and incomplete task completion.
+- Repeated failures on the same models without fallback mechanisms lead to task abandonment and wasted compute resources.
+- Model reliability varies significantly under load, with some models (e.g., nvidia/nemotron-3-ultra) failing consistently while others (e.g., poolside/
+- Free-tier LLM endpoints frequently return 429 rate-limit errors and 502 upstream overload errors, causing cascading failures across multiple model cal
 - A high volume of proposed skills that are never implemented represents a systemic gap between planning and execution capabilities.
 - Reflexive execution can bypass complex model routing and achieve goals directly, proving that some tasks are better handled by deterministic scripts r
 - Accumulated stale tasks and unimplemented skill proposals create cognitive overhead, highlighting the need for active lifecycle management of system g
@@ -51,11 +56,6 @@
 - Five skill proposals exist but zero have entered a validation pipeline, creating a structural gap between architectural intent and executable capabili
 - The only successful call (inclusionai/ling-3.0-flash-fin:free) completed in 7.5s versus 21-25s for failing models, indicating latency as a leading hea
 - Free-tier models on OpenRouter exhibit pervasive rate-limiting (429) and upstream overloads (502), making single-model reliance untenable for producti
-- No standardized Result<T,E> schema exists for tool outputs, forcing ad-hoc error handling and preventing uniform retry/fallback logic.
-- Goals for market analysis and skill evaluation have gone stale, revealing missing TTL-based archival and renewal mechanisms.
-- 55 skill proposals exist without a validation pipeline, causing proposal overload and preventing promotion of high-value skills.
-- nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (9.7–25.9s), suggesting the need for latency-aware routing and time
-- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors across multiple timestamps, indicating it should be deprioritized or removed
 
 ---
 
