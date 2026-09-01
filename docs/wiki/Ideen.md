@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 12:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 12:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Add per-request timeout (20 s) and retry budget (max 2 attempts with exponential backoff + jitter) before fail *(hatte die Idee 3×)*
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 3×)*
 - Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 3×)*
-- Create ModelRotationScheduler using EMA of 429 frequency to proactively switch primary model before predicted  *(hatte die Idee 2×)*
-- Add latency trend tracking (p50/p95 delta over windows) as an early-warning signal for silent model degradatio *(hatte die Idee 2×)*
 - Create ExecutionGapTracker that maps drive goals (stale, failure, gap) to concrete skill proposals and alerts  *(hatte die Idee 2×)*
+- Implement per-model-key CircuitBreaker: open after 3 consecutive 429/5xx, half-open after 60s with single synt *(hatte die Idee 2×)*
+- Deploy QuotaAwareRouter with per-key circuit breakers, EWMA latency tracking, and automatic fallback to health *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -29,9 +29,9 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm role allocation must include graceful degradation by pinning critical roles (planner, critic) to reliable models while allowing best-effort role
+- Historical gaps between predicted and actual scores reveal systematic bias per goal type, which a calibration layer can learn and compensate for over 
+- HTTP 200 responses can still carry upstream error payloads, so response-body schema validation is required to catch masquerading failures.
+- Free models exhibit unpredictable latency (5s to 27s) and availability, necessitating a tiered architecture that separates fast-path endpoints from qu
+- Rate-limit errors (429) recur predictably on free-tier models and require provider-level circuit breakers rather than per-model handling to isolate qu
 - Skill proposals accumulate without a staged promotion pipeline, causing proposals to linger as unactioned ideas.
 - Hand actions returning exit code 1 with zero bytes read reveal missing pre-flight checks for file existence and permissions.
 - Swarm convergence fails when builder-to-critic ratio exceeds 3:1, suggesting a mandatory critic gate after each builder iteration.
@@ -51,11 +56,6 @@
 - Reflex-driven execution succeeded where model-dependent planning failed, proving reflexes as a stable fallback for deterministic tasks.
 - Upstream errors (e.g., 502) masked inside HTTP 200 responses evade current error handling and corrupt routing decisions.
 - Free-tier model reliance causes cascading 429 rate-limit failures across multiple providers, making single-model strategies unreliable.
-- Zero pruning events and zero organ errors indicate healthy memory but stagnant optimization - the system maintains rather than improves.
-- Skill proposals accumulate (5+ this cycle) but only one reflex executed, revealing a proposal-to-implementation gap despite available tooling.
-- Fallback models (nvidia/nemotron) succeed but at 20-30s latency, creating a reliability-speed tradeoff with no fast-path tier for time-critical subtas
-- Identical high-priority goals (reduce model errors, finish market analyses, implement skills) recur across cycles, proving reflex completions don't re
-- Provider-level quota exhaustion (429 errors on z-ai/glm-5.2) cascades because backoff is per-model not per-provider, starving all models from that pro
 
 ---
 

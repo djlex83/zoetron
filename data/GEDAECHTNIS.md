@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8849 Fakten** · Stand 2026-09-01 12:22 UTC · aktualisiert bei jedem Herzschlag
+**8854 Fakten** · Stand 2026-09-01 12:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4660
+- **dream:** 4665
 - **swarm_artifact:** 1921
 - **last_swarm_critique:** 672
 - **anti_pattern:** 577
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901122729:5:fb5f88`
+*01.09. 12:27 UTC · Quelle: dream*
+
+Swarm role allocation must include graceful degradation by pinning critical roles (planner, critic) to reliable models while allowing best-effort roles to fall back.
+
+### `dream:20260901122729:4:9c4b2b`
+*01.09. 12:27 UTC · Quelle: dream*
+
+Historical gaps between predicted and actual scores reveal systematic bias per goal type, which a calibration layer can learn and compensate for over time.
+
+### `dream:20260901122729:3:0ccb12`
+*01.09. 12:27 UTC · Quelle: dream*
+
+HTTP 200 responses can still carry upstream error payloads, so response-body schema validation is required to catch masquerading failures.
+
+### `dream:20260901122729:2:ed7afe`
+*01.09. 12:27 UTC · Quelle: dream*
+
+Free models exhibit unpredictable latency (5s to 27s) and availability, necessitating a tiered architecture that separates fast-path endpoints from quality-tier ones.
+
+### `dream:20260901122729:1:fbfe66`
+*01.09. 12:27 UTC · Quelle: dream*
+
+Rate-limit errors (429) recur predictably on free-tier models and require provider-level circuit breakers rather than per-model handling to isolate quota exhaustion.
 
 ### `dream:20260901122026:5:b667f5`
 *01.09. 12:20 UTC · Quelle: dream*
