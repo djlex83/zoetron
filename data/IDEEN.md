@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 16:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 16:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 39 skill proposals accumulate unimplemented because no mechanism exists to validate, prioritize, and deploy proposals as executable code.
+- Reflection loops (8 self-checks, 6 reflex uses) produce no measurable improvement because they lack automated verification of corrective actions.
+- Self-diagnosis reports zero organ errors while model inference fails repeatedly, indicating diagnostic coverage misses external dependency health.
+- Extreme latency variance (5s vs 75s for successful calls) without SLA enforcement causes unpredictable iteration times and timeout cascades.
+- Provider-level quota exhaustion (429 errors across all Google models simultaneously) makes per-model fallback ineffective; routing must track provider
 - Simulation gates (verdict=go, grün=true) precede successful artifact runs, confirming pre-flight checks reduce runtime failures.
 - Local hand-action execution completes in <0.3s with zero failures, outperforming all remote API calls by orders of magnitude.
 - Poolside Laguna-S-2.1:free succeeded on both attempts with moderate latency (~50–68s), suggesting it is the most reliable free option observed.
@@ -51,11 +56,6 @@
 - Hand actions fail due to path resolution errors (relative vs absolute paths), not command logic, revealing environment configuration drift.
 - Latency variance between models (10.7s vs 47.4s) exceeds 4x, making latency-aware routing critical under tight iteration budgets.
 - Rate limiting (429) affects all free-tier models simultaneously, indicating shared quota exhaustion rather than individual model failure.
-- Hand actions can fail with exit code 1 without a specific error message, indicating a need for better error capture in execution environments.
-- Evolution runs effectively improve task scores, as seen by a variant scoring 9 out of 10 after an initial score of 7.
-- The inclusionai/ling-3.0-flash-fin:free model provides a good balance of reliability and low latency (~10s) compared to other free models.
-- The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but suffers from high latency (up to 183s) and occasional 502 upstream overload.
-- Free models on OpenRouter frequently hit 429 Too Many Requests errors, requiring robust fallback mechanisms.
 
 ---
 

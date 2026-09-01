@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8987 Fakten** · Stand 2026-09-01 16:03 UTC · aktualisiert bei jedem Herzschlag
+**8992 Fakten** · Stand 2026-09-01 16:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4735
+- **dream:** 4740
 - **swarm_artifact:** 1957
 - **last_swarm_critique:** 678
 - **anti_pattern:** 583
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901164305:5:c481b5`
+*01.09. 16:43 UTC · Quelle: dream*
+
+39 skill proposals accumulate unimplemented because no mechanism exists to validate, prioritize, and deploy proposals as executable code.
+
+### `dream:20260901164305:4:03a715`
+*01.09. 16:43 UTC · Quelle: dream*
+
+Reflection loops (8 self-checks, 6 reflex uses) produce no measurable improvement because they lack automated verification of corrective actions.
+
+### `dream:20260901164305:3:1b0de4`
+*01.09. 16:43 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model inference fails repeatedly, indicating diagnostic coverage misses external dependency health.
+
+### `dream:20260901164305:2:285959`
+*01.09. 16:43 UTC · Quelle: dream*
+
+Extreme latency variance (5s vs 75s for successful calls) without SLA enforcement causes unpredictable iteration times and timeout cascades.
+
+### `dream:20260901164305:1:fd2ad0`
+*01.09. 16:43 UTC · Quelle: dream*
+
+Provider-level quota exhaustion (429 errors across all Google models simultaneously) makes per-model fallback ineffective; routing must track provider-level rate limits.
 
 ### `tool:vorgeschlagene-fähigkeiten-echt-umsetzen`
 *01.09. 16:02 UTC · Quelle: hands*
