@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 22:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 22:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Free-tier models share a common rate-limit pool, so diversifying across many free models does not increase throughput and instead amplifies rate-limit
+- Sequential calls to the same OpenRouter endpoint without delay cause cascading 429 errors, suggesting that request batching or throttling is essential
+- The simulation-revision loop (revise verdict with 3 risks and 3 applied revisions) demonstrates that iterative refinement works effectively even under
+- poolside/laguna-s-2.1 is the only model that consistently succeeds under load, but its latency varies wildly from 1.4s to 180.8s, making it reliable f
+- Rate limiting (HTTP 429) is the dominant and systemic failure mode across all free-tier OpenRouter models, indicating the need for exponential backoff
 - High latency (46s) on the only working model makes synchronous calls unusable for interactive loops.
 - Skill proposals accumulate but lack a gated promotion pipeline, so none reach production validation.
 - Metabolic stress hits 1.0 before any defensive shedding occurs, indicating the scheduler reacts too late.
@@ -51,11 +56,6 @@
 - Goals have no TTL or auto-renewal, leading to stale context (e.g., outdated market analysis) that degrades decision quality.
 - Skill proposals accumulate but lack a validation pipeline (sandbox → benchmark → promote), causing good ideas to stall untested.
 - 429 rate limiting is the dominant failure mode across all model providers, indicating missing circuit breakers and health-aware routing.
-- Combining skills and reviving old memories are key intrinsic drives that should guide future learning and task prioritization.
-- Periodic event pruning is essential to maintain system efficiency, as evidenced by the removal of 35 obsolete events.
-- Reflexes can successfully automate routine cleanup tasks (e.g., 'Marktanalyse-Abschlüsse aufräumen') with zero errors and fast execution.
-- Automatically locking out models after consecutive failures prevents cascading delays and forces the system to find healthier alternatives.
-- Free-tier models on OpenRouter are highly susceptible to rate limits (429) and upstream overloads (502), necessitating robust fallback chains.
 
 ---
 

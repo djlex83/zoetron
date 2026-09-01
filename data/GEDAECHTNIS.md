@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9191 Fakten** · Stand 2026-09-01 22:41 UTC · aktualisiert bei jedem Herzschlag
+**9196 Fakten** · Stand 2026-09-01 22:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4880
+- **dream:** 4885
 - **swarm_artifact:** 1987
 - **last_swarm_critique:** 683
 - **anti_pattern:** 593
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901224649:5:4cfaea`
+*01.09. 22:46 UTC · Quelle: dream*
+
+Free-tier models share a common rate-limit pool, so diversifying across many free models does not increase throughput and instead amplifies rate-limit exhaustion.
+
+### `dream:20260901224649:4:2f40e0`
+*01.09. 22:46 UTC · Quelle: dream*
+
+Sequential calls to the same OpenRouter endpoint without delay cause cascading 429 errors, suggesting that request batching or throttling is essential for multi-model workflows.
+
+### `dream:20260901224649:3:79ba28`
+*01.09. 22:46 UTC · Quelle: dream*
+
+The simulation-revision loop (revise verdict with 3 risks and 3 applied revisions) demonstrates that iterative refinement works effectively even under degraded model availability.
+
+### `dream:20260901224649:2:067cb0`
+*01.09. 22:46 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1 is the only model that consistently succeeds under load, but its latency varies wildly from 1.4s to 180.8s, making it reliable for availability but unpredictable for latency-sensitive workflows.
+
+### `dream:20260901224649:1:9b0af2`
+*01.09. 22:46 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant and systemic failure mode across all free-tier OpenRouter models, indicating the need for exponential backoff and request spacing rather than sequential rapid calls.
 
 ### `dream:20260901223954:5:61b7ca`
 *01.09. 22:39 UTC · Quelle: dream*
