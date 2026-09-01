@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 09:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 10:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse-Ergebnisse endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- TOR validation (grün, 423-line Python artifact) provides reliable ground-truth success signal.
+- Simulation-driven revision loops (3 risks → 3 revisions → applied) converge to working artifacts.
+- High stress (1.0) and conserve mode force strict task/iteration budgets that prevent retry storms.
+- Nvidia Nemotron succeeds but exhibits extreme latency variance (5.8s–161s) requiring adaptive timeouts.
+- Free-tier models consistently fail with 429 rate limits making them unreliable for primary workloads.
 - Drive goals repeat thematic priorities (learning from failure, promoting proposals, connecting memories) without concrete execution criteria, causing 
 - Multiple identical skill proposals appear in the log, indicating proposal generation lacks deduplication and wastes consolidation cycles.
 - Upstream provider errors (502 from Nvidia) cascade as silent failures with HTTP 200, requiring response-body validation not just status codes.
@@ -51,11 +56,6 @@
 - Validation path breaks ('Pfadbruch zwischen Valid') indicate missing contract enforcement between planner, builder, and critic roles.
 - Proposed skills accumulate but never integrate — the integration pipeline itself is the bottleneck, not proposal generation.
 - Single-model dependency on z-ai/glm-5.2 causes systemic 429 failures that halt all LLM-dependent workflows.
-- Prune runs consistently remove zero facts or events, suggesting the pruning logic is either too conservative or the knowledge base is already compact.
-- The only reliable model (nvidia/nemotron-3-ultra) has high latency (25-72s), creating a fundamental tension between reliability and responsiveness.
-- A persistent gap exists between skill proposal generation and actual implementation — many proposals are produced but few are trained and operationali
-- Self-diagnosis consistently reports zero organ errors despite observable API-level failures, revealing a blind spot in infrastructure error detection.
-- Free-tier models on shared APIs (z-ai/glm-5.2) repeatedly hit 429 rate limits and must never serve as primary models on critical paths.
 
 ---
 

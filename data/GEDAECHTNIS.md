@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8778 Fakten** · Stand 2026-09-01 09:59 UTC · aktualisiert bei jedem Herzschlag
+**8783 Fakten** · Stand 2026-09-01 10:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4615
+- **dream:** 4620
 - **swarm_artifact:** 1909
 - **last_swarm_critique:** 670
 - **anti_pattern:** 573
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901100655:5:e521ef`
+*01.09. 10:06 UTC · Quelle: dream*
+
+TOR validation (grün, 423-line Python artifact) provides reliable ground-truth success signal.
+
+### `dream:20260901100655:4:e165c0`
+*01.09. 10:06 UTC · Quelle: dream*
+
+Simulation-driven revision loops (3 risks → 3 revisions → applied) converge to working artifacts.
+
+### `dream:20260901100655:3:a3d507`
+*01.09. 10:06 UTC · Quelle: dream*
+
+High stress (1.0) and conserve mode force strict task/iteration budgets that prevent retry storms.
+
+### `dream:20260901100655:2:6f9e3d`
+*01.09. 10:06 UTC · Quelle: dream*
+
+Nvidia Nemotron succeeds but exhibits extreme latency variance (5.8s–161s) requiring adaptive timeouts.
+
+### `dream:20260901100655:1:73b597`
+*01.09. 10:06 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits making them unreliable for primary workloads.
 
 ### `dream:20260901095740:5:a8c99c`
 *01.09. 09:57 UTC · Quelle: dream*

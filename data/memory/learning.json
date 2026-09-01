@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 09:58:38",
+ "stand": "2026-09-01 10:09:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -123,12 +123,6 @@
    "quote": 0.0
   },
   {
-   "tool": "simulationen-in-echtes-handeln-übersetze.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-gezielt-trainieren.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -193,6 +187,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "marktanalyse-endlich-abschließen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.799,
