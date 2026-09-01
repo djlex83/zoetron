@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 07:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 07:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goal achievement (269-line Python artifact running) validates that the planner→executor→verifier loop works when model calls succeed.
+- Hand actions (file reads) complete in <0.3s with zero failures, confirming local tooling is more reliable than remote inference.
+- poolside/laguna-s-2.1:free exhibits extreme latency variance (72s vs 191s) when it succeeds, suggesting queue-depth-dependent scheduling.
+- inclusionai/ling-3.0-flash-fin:free is the only consistently available model with acceptable latency (23-36s), making it the de facto primary backend.
+- Rate limiting (HTTP 429) is the systemic failure mode across 4 of 5 models, indicating provider-level quota exhaustion rather than model defects.
 - Circuit-breaker lockout (1800 s) is too coarse: it discards a model entirely instead of backing off exponentially, wasting recoverable capacity.
 - The simulation gate caught 3 risks and forced 3 revisions before apply, proving that dry-run validation prevents faulty skill deployment.
 - Latency variance for successful calls spans 6–23 s even on the same model (Ling 3.0 Flash), indicating queue-depth jitter rather than model complexity
@@ -51,11 +56,6 @@
 - Data flow breaks (Datenfluss-Bruch) are the primary critic-identified defect in skill-proposal evaluation pipelines, causing revision loops.
 - nvidia/nemotron-3-ultra-550b-a55b:free is the only reliable model in the pool, delivering consistent results despite latency variance from 15s to 75s.
 - 429 rate-limiting on z-ai/glm-5.2:free is a persistent, repeatable failure mode that blocks progress when no fallback model is available.
-- Zero knowledge base pruning occurred despite stale goals accumulating, indicating that unused facts and abandoned goals build up and may degrade decis
-- Self-diagnosis reports zero organ errors while operational failures persist, revealing that diagnostic coverage is incomplete and misses runtime failu
-- Nemotron's latency degraded from 16.1s to 21.2s between successful calls, demonstrating that even healthy models can worsen over time and need enforce
-- A persistent gap exists between generating skill proposals and implementing them, as overlapping proposals recur across cycles without evidence of con
-- The z-ai/glm-5.2:free model repeatedly fails with 429 Too Many Requests errors across multiple cycles, indicating free-tier rate limits are a systemic
 
 ---
 

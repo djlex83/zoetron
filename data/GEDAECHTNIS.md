@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8693 Fakten** · Stand 2026-09-01 07:34 UTC · aktualisiert bei jedem Herzschlag
+**8698 Fakten** · Stand 2026-09-01 07:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4560
+- **dream:** 4565
 - **swarm_artifact:** 1891
 - **last_swarm_critique:** 667
 - **anti_pattern:** 571
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901073915:5:47d652`
+*01.09. 07:39 UTC · Quelle: dream*
+
+Goal achievement (269-line Python artifact running) validates that the planner→executor→verifier loop works when model calls succeed.
+
+### `dream:20260901073915:4:b64520`
+*01.09. 07:39 UTC · Quelle: dream*
+
+Hand actions (file reads) complete in <0.3s with zero failures, confirming local tooling is more reliable than remote inference.
+
+### `dream:20260901073915:3:fc3680`
+*01.09. 07:39 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1:free exhibits extreme latency variance (72s vs 191s) when it succeeds, suggesting queue-depth-dependent scheduling.
+
+### `dream:20260901073915:2:d7f214`
+*01.09. 07:39 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only consistently available model with acceptable latency (23-36s), making it the de facto primary backend.
+
+### `dream:20260901073915:1:443c81`
+*01.09. 07:39 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the systemic failure mode across 4 of 5 models, indicating provider-level quota exhaustion rather than model defects.
 
 ### `dream:20260901073222:5:355362`
 *01.09. 07:32 UTC · Quelle: dream*
