@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8566 Fakten** · Stand 2026-09-01 03:38 UTC · aktualisiert bei jedem Herzschlag
+**8571 Fakten** · Stand 2026-09-01 03:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4490
+- **dream:** 4495
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901034344:5:960abc`
+*01.09. 03:43 UTC · Quelle: dream*
+
+Model health tracking is absent; consecutive 429 errors should trigger timed cooldowns and automatic re-enable probes rather than persistent manual intervention.
+
+### `dream:20260901034344:4:b55714`
+*01.09. 03:43 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than validation capacity, creating a backlog that demands automated triage (critic scoring, minimum sub-score thresholds) to convert ideas into verified capabilities.
+
+### `dream:20260901034344:3:9077a3`
+*01.09. 03:43 UTC · Quelle: dream*
+
+Pre-execution validation gaps (syntax, file existence, readability) allow preventable runtime failures that could be caught by static gates before hand_action.
+
+### `dream:20260901034344:2:d6072a`
+*01.09. 03:43 UTC · Quelle: dream*
+
+Calibration drift in success prediction (overestimation) compounds planning errors, requiring dampening rules that halve predictions after large misses until accuracy recovers.
+
+### `dream:20260901034344:1:cb2f0e`
+*01.09. 03:43 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) silently degrade system reliability without automatic circuit-breaking, forcing reactive fallbacks that increase latency variance.
 
 ### `dream:20260901033730:5:5f53a1`
 *01.09. 03:37 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model health tracking is absent; consecutive 429 errors should trigger timed cooldowns and automatic re-enable probes rather than persistent manual in
+- Skill proposals accumulate faster than validation capacity, creating a backlog that demands automated triage (critic scoring, minimum sub-score thresh
+- Pre-execution validation gaps (syntax, file existence, readability) allow preventable runtime failures that could be caught by static gates before han
+- Calibration drift in success prediction (overestimation) compounds planning errors, requiring dampening rules that halve predictions after large misse
+- Rate-limited models (429 errors) silently degrade system reliability without automatic circuit-breaking, forcing reactive fallbacks that increase late
 - Stress signals correlate with model failures but no automated resource reallocation exists.
 - Latency variance (4s to 30s) on same model demands latency-aware routing for time-critical tasks.
 - Redundant skill proposals indicate missing implementation tracking and deployment accountability.
@@ -51,11 +56,6 @@
 - Reflex-driven automation (cortex-upgrade-reflex-neue-modelle-autom.py) successfully converged on model error understanding, showing that codified diag
 - A single reliable model (ling-3.0-flash-fin) outperformed five failing free endpoints, proving that endpoint diversity without health tracking increas
 - Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 overloads) making them unreliable as primary infrastructure.
-- Self-diagnosis reports zero internal organ errors, confirming that external API instability is the dominant failure surface.
-- Numerous skill proposals accumulate without a validation pipeline, so useful capabilities (router, watchdog, convergence gate) stay unimplemented.
-- Completed analytical work (market analysis) remains unused for multiple cycles, indicating a missing 'knowledge-to-action' trigger.
-- Fallback to nemotron-3-ultra succeeds but exhibits high, variable latency (8–45 s), degrading overall system responsiveness.
-- Free-tier LLM endpoints (z-ai/glm-5.2:free) fail via 429 rate-limits at ~2x the success rate, making them unreliable as primary models.
 
 ---
 
