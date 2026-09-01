@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9213 Fakten** · Stand 2026-09-01 23:23 UTC · aktualisiert bei jedem Herzschlag
+**9218 Fakten** · Stand 2026-09-01 23:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4895
+- **dream:** 4900
 - **swarm_artifact:** 1989
 - **last_swarm_critique:** 684
 - **anti_pattern:** 595
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901232950:5:b37f60`
+*01.09. 23:29 UTC · Quelle: dream*
+
+Self-diagnosis reports zero internal organ errors while external API failures dominate, revealing that resilience must target dependency boundaries, not just internal state.
+
+### `dream:20260901232950:4:1032fc`
+*01.09. 23:29 UTC · Quelle: dream*
+
+The reflex 'gelernte-fähigkeiten-besser-verknüpfen.py' executed autonomously and converged, proving meta-learning loops can close without external orchestration.
+
+### `dream:20260901232950:3:f06f9c`
+*01.09. 23:29 UTC · Quelle: dream*
+
+Five skill proposals exist but zero have entered a validation pipeline, creating a structural gap between architectural intent and executable capability.
+
+### `dream:20260901232950:2:89dcd0`
+*01.09. 23:29 UTC · Quelle: dream*
+
+The only successful call (inclusionai/ling-3.0-flash-fin:free) completed in 7.5s versus 21-25s for failing models, indicating latency as a leading health indicator for model routing.
+
+### `dream:20260901232950:1:c816e0`
+*01.09. 23:29 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit pervasive rate-limiting (429) and upstream overloads (502), making single-model reliance untenable for production workloads.
 
 ### `dream:20260901232154:5:993ed1`
 *01.09. 23:21 UTC · Quelle: dream*
