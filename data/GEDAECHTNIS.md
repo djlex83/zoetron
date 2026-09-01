@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9125 Fakten** · Stand 2026-09-01 20:44 UTC · aktualisiert bei jedem Herzschlag
+**9130 Fakten** · Stand 2026-09-01 20:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4825
+- **dream:** 4830
 - **swarm_artifact:** 1981
 - **last_swarm_critique:** 682
 - **anti_pattern:** 591
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901204945:5:97f6b6`
+*01.09. 20:49 UTC · Quelle: dream*
+
+Critical-path tasks should be pinned to a verified backbone model while exploration runs offline on a shadow queue.
+
+### `dream:20260901204945:4:fd6997`
+*01.09. 20:49 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an execution gate; a "proposal-to-production" pipeline with validation checkpoints would close the loop.
+
+### `dream:20260901204945:3:e8eeaa`
+*01.09. 20:49 UTC · Quelle: dream*
+
+Model latency variance (9–44s) makes fixed timeouts unreliable; adaptive deadlines tied to historical percentiles are needed.
+
+### `dream:20260901204945:2:227ba6`
+*01.09. 20:49 UTC · Quelle: dream*
+
+Upstream provider overloads (502) cascade into silent failures that self-diagnosis misses because they originate outside organ boundaries.
+
+### `dream:20260901204945:1:f0c17c`
+*01.09. 20:49 UTC · Quelle: dream*
+
+Rate limiting (429) is the dominant failure mode across all free-tier models, requiring systematic request scheduling rather than reactive retries.
 
 ### `dream:20260901204146:5:dd3b2b`
 *01.09. 20:41 UTC · Quelle: dream*

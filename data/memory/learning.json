@@ -1,13 +1,7 @@
 {
- "stand": "2026-09-01 20:43:18",
+ "stand": "2026-09-01 20:50:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 11,
-   "erfolge": 11,
-   "quote": 1.0
-  },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 11,
@@ -16,6 +10,12 @@
   },
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 10,
+   "erfolge": 10,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 10,
    "erfolge": 10,
    "quote": 1.0
@@ -256,6 +256,12 @@
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

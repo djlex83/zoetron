@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 20:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 20:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -34,28 +34,28 @@
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Aus Fehlern lernen und Modelle verbessern *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Critical-path tasks should be pinned to a verified backbone model while exploration runs offline on a shadow queue.
+- Skill proposals accumulate but lack an execution gate; a "proposal-to-production" pipeline with validation checkpoints would close the loop.
+- Model latency variance (9–44s) makes fixed timeouts unreliable; adaptive deadlines tied to historical percentiles are needed.
+- Upstream provider overloads (502) cascade into silent failures that self-diagnosis misses because they originate outside organ boundaries.
+- Rate limiting (429) is the dominant failure mode across all free-tier models, requiring systematic request scheduling rather than reactive retries.
 - Stress accumulation from repeated failures is not monitored or throttled, leading to runaway resource consumption
 - Swarm convergence fails when critical roles lack redundancy and health-aware routing
 - Code execution failures occur without pre-validation, wasting cycles on syntactically invalid artifacts
 - Model failures cascade when fallback chains are absent, causing complete task paralysis instead of graceful degradation
-- Rate limiting (429) is the dominant failure mode across all API providers, indicating systemic overload rather than isolated incidents
 - Self-diagnosis and pruning mechanisms are functioning correctly with zero errors and pruned items, indicating stable memory management.
 - Unfinished tasks accumulate and should be actively completed or discarded to maintain system focus.
 - Repeatedly generating identical skill proposals wastes resources; a deduplication mechanism is needed.
 - Tracking per-model latency and error rates is essential for building a reliable model routing system.
 - Free-tier models on OpenRouter experience frequent 429 and 502 errors, necessitating robust fallback mechanisms.
 - Evolutionary optimization loops without convergence detection (score delta threshold) waste compute cycles on stagnant strategies.
-- Missing AST-based syntax validation gate allows syntactically invalid generated code to reach execution, causing preventable runtime errors.
-- Lack of proactive rate-limit header parsing and exponential backoff leads to repeated hammering of blocked endpoints, wasting latency budget.
-- Absence of real-time model health scoring and automatic failover causes cascading failures when primary models become unavailable.
-- Free-tier model endpoints exhibit systematic rate-limiting (429) and upstream overload (502) failures, making them unreliable for critical-path tasks 
 
 ---
 
