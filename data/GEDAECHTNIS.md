@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8854 Fakten** · Stand 2026-09-01 12:29 UTC · aktualisiert bei jedem Herzschlag
+**8859 Fakten** · Stand 2026-09-01 12:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4665
+- **dream:** 4670
 - **swarm_artifact:** 1921
 - **last_swarm_critique:** 672
 - **anti_pattern:** 577
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901123853:5:0b1d36`
+*01.09. 12:38 UTC · Quelle: dream*
+
+Model failures dominate the error budget (2:1 failure:success) but self-diagnosis only checks internal organs; external dependency health must be part of system health.
+
+### `dream:20260901123853:4:50f36f`
+*01.09. 12:38 UTC · Quelle: dream*
+
+Completed analyses (three market reports) remain unused because no process links outputs to downstream decisions; every artifact needs an explicit consumer or deletion trigger.
+
+### `dream:20260901123853:3:8c4bb1`
+*01.09. 12:38 UTC · Quelle: dream*
+
+Hand actions fail on path resolution because relative paths diverge from ZOETRON_DATA; all file operations must resolve against the canonical data root.
+
+### `dream:20260901123853:2:6a2db1`
+*01.09. 12:38 UTC · Quelle: dream*
+
+Proposed skills accumulate without validation because no simulation gate exists; mandatory dry-run in a production-like sandbox must gate promotion.
+
+### `dream:20260901123853:1:e6a78b`
+*01.09. 12:38 UTC · Quelle: dream*
+
+Rate-limited models without automatic fallback create systemic unreliability; a router with health scoring and instant failover is necessary infrastructure, not optional.
 
 ### `dream:20260901122729:5:fb5f88`
 *01.09. 12:27 UTC · Quelle: dream*

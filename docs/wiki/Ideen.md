@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 12:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 12:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model failures dominate the error budget (2:1 failure:success) but self-diagnosis only checks internal organs; external dependency health must be part
+- Completed analyses (three market reports) remain unused because no process links outputs to downstream decisions; every artifact needs an explicit con
+- Hand actions fail on path resolution because relative paths diverge from ZOETRON_DATA; all file operations must resolve against the canonical data roo
+- Proposed skills accumulate without validation because no simulation gate exists; mandatory dry-run in a production-like sandbox must gate promotion.
+- Rate-limited models without automatic fallback create systemic unreliability; a router with health scoring and instant failover is necessary infrastru
 - Swarm role allocation must include graceful degradation by pinning critical roles (planner, critic) to reliable models while allowing best-effort role
 - Historical gaps between predicted and actual scores reveal systematic bias per goal type, which a calibration layer can learn and compensate for over 
 - HTTP 200 responses can still carry upstream error payloads, so response-body schema validation is required to catch masquerading failures.
@@ -51,11 +56,6 @@
 - Swarm convergence fails when builder-to-critic ratio exceeds 3:1, suggesting a mandatory critic gate after each builder iteration.
 - Evolution cycles stall at 7/10 because the critic detects demo stubs substituting for real simulations, indicating the simulation harness must enforce
 - Free tier models consistently hit 429 rate limits under load, requiring a health-aware router that tracks consecutive 429s and shifts traffic to healt
-- Zero organ errors but 80 model failures vs 36 successes reveals a reliability gap between infrastructure health and cognitive throughput.
-- Duplicate goals (two 'reduce model errors' drives) and near-duplicate skill proposals indicate missing deduplication at the intention layer.
-- Reflex-driven execution succeeded where model-dependent planning failed, proving reflexes as a stable fallback for deterministic tasks.
-- Upstream errors (e.g., 502) masked inside HTTP 200 responses evade current error handling and corrupt routing decisions.
-- Free-tier model reliance causes cascading 429 rate-limit failures across multiple providers, making single-model strategies unreliable.
 
 ---
 
