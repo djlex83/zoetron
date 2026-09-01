@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8960 Fakten** · Stand 2026-09-01 15:32 UTC · aktualisiert bei jedem Herzschlag
+**8965 Fakten** · Stand 2026-09-01 15:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4720
+- **dream:** 4725
 - **swarm_artifact:** 1951
 - **last_swarm_critique:** 677
 - **anti_pattern:** 581
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901153748:5:2967d6`
+*01.09. 15:37 UTC · Quelle: dream*
+
+Hand actions can fail with exit code 1 without a specific error message, indicating a need for better error capture in execution environments.
+
+### `dream:20260901153748:4:fc8496`
+*01.09. 15:37 UTC · Quelle: dream*
+
+Evolution runs effectively improve task scores, as seen by a variant scoring 9 out of 10 after an initial score of 7.
+
+### `dream:20260901153748:3:183569`
+*01.09. 15:37 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model provides a good balance of reliability and low latency (~10s) compared to other free models.
+
+### `dream:20260901153748:2:377eb9`
+*01.09. 15:37 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but suffers from high latency (up to 183s) and occasional 502 upstream overload.
+
+### `dream:20260901153748:1:52d8b8`
+*01.09. 15:37 UTC · Quelle: dream*
+
+Free models on OpenRouter frequently hit 429 Too Many Requests errors, requiring robust fallback mechanisms.
 
 ### `dream:20260901153058:5:1c6815`
 *01.09. 15:30 UTC · Quelle: dream*

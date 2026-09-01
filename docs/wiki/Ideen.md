@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions can fail with exit code 1 without a specific error message, indicating a need for better error capture in execution environments.
+- Evolution runs effectively improve task scores, as seen by a variant scoring 9 out of 10 after an initial score of 7.
+- The inclusionai/ling-3.0-flash-fin:free model provides a good balance of reliability and low latency (~10s) compared to other free models.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but suffers from high latency (up to 183s) and occasional 502 upstream overload.
+- Free models on OpenRouter frequently hit 429 Too Many Requests errors, requiring robust fallback mechanisms.
 - Token throughput on successful Nemotron calls scales with input size (2k-8k tokens in, 2k-3k out), but latency remains prohibitively high for interact
 - Hand-action retry (fail then succeed on second attempt) demonstrates that transient filesystem or permission issues self-resolve with immediate retry.
 - The simulation-revision-apply loop successfully detected stale analysis data, executed 3 revisions, and produced a verified 296-line Python artifact.
@@ -51,11 +56,6 @@
 - System stress at maximum (1.0) with conserve mode and a budget of 1 iteration means the system cannot absorb repeated external failures — external cal
 - The 502 'service temporarily overloaded' from Nvidia shows that even HTTP-200 responses can carry upstream failures, requiring response-payload valida
 - OpenRouter's free-tier models share a common rate-limit pool, so 429 errors cascade across all models simultaneously — diversification across provider
-- The inclusionai/ling-3.0-flash-fin:free model delivered fast, successful results (22.4s) when all other free models failed, proving that a sufficientl
-- In conserve mode with a budget of max 3 tasks and 1 iteration, each failed model call wastes irreplaceable budget, so artifact verification should pre
-- The z-ai/glm-5.2:free model has a near-100% failure rate in this session and should be deprioritized or removed from the active fallback pool.
-- Latency on successful calls degrades progressively under sustained load (42s → 213s), so early success does not guarantee continued availability withi
-- 429 rate-limit errors are systemic across nearly all free-tier OpenRouter models, not isolated to a single provider, making model diversity the primar
 
 ---
 
