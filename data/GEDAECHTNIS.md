@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8608 Fakten** · Stand 2026-09-01 04:24 UTC · aktualisiert bei jedem Herzschlag
+**8625 Fakten** · Stand 2026-09-01 05:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4520
-- **swarm_artifact:** 1867
-- **last_swarm_critique:** 663
-- **anti_pattern:** 565
-- **last_swarm_goal:** 411
-- **strategy:** 303
-- **tool:** 98
+- **dream:** 4525
+- **swarm_artifact:** 1873
+- **last_swarm_critique:** 664
+- **anti_pattern:** 567
+- **last_swarm_goal:** 412
+- **strategy:** 304
+- **tool:** 99
 - **hand_result:** 91
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-stark-verringern`
+*01.09. 04:59 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler stark verringern'. Datei: data/tools/modellfehler-stark-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler stark verri:1`
+*01.09. 04:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 4, 8]): Adaptive Selbstoptimierung mit Metriken-getriebener Validierung - Ersetze alle Hardcodings in ResilientLLM durch einen Reinforcement-Learning-basierten Parameter-Optimizer (z.B. Bayesian Optimization via Optuna oder R
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler stark verri:0`
+*01.09. 04:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 7]): Vereinigte Datenfluss-Architektur (Event-Driven Pipeline) - Erstelle eine zentrale Event-Bus-Schicht (z.B. Apache Kafka oder Redis Streams), die Analysis, Resilience und Closure als verbundene Micro-Services miteinand
+
+### `last_swarm_critique`
+*01.09. 04:58 UTC · Quelle: critic*
+
+score=6; issues=Artefakte sind nicht integriert: Analyse (1), Resilienz (2) und Closure (3) laufen als separate Skripte ohne Datenfluss oder gemeinsame Konfiguration; Keine messbare Validierung: Es wird nicht demonstriert, dass Modellfehler tatsächlich sinken 
+
+### `last_swarm_goal`
+*01.09. 04:53 UTC · Quelle: system*
+
+Modellfehler stark verringern
+
+### `dream:20260901045337:5:d0de1e`
+*01.09. 04:53 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, showing health checks don't cover external API dependency failures.
+
+### `dream:20260901045337:4:9f48f2`
+*01.09. 04:53 UTC · Quelle: dream*
+
+Drive goals repeat the same three themes (model errors, stale analyses, unlearned skills) across cycles, indicating no closure mechanism for completed work.
+
+### `dream:20260901045337:3:2f1f5b`
+*01.09. 04:53 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a mandatory promotion gate; the system proposes reliability improvements yet fails to deploy them.
+
+### `dream:20260901045337:2:f6a06c`
+*01.09. 04:53 UTC · Quelle: dream*
+
+Fallback latency varies 2× (18–40 s) even on the same model, so latency-based routing thresholds must be adaptive, not fixed.
+
+### `dream:20260901045337:1:844868`
+*01.09. 04:53 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without health-aware routing.
 
 ### `tool:vorgeschlagene-skills-nutzbar-machen`
 *01.09. 04:23 UTC · Quelle: hands*
