@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8635 Fakten** · Stand 2026-09-01 05:34 UTC · aktualisiert bei jedem Herzschlag
+**8640 Fakten** · Stand 2026-09-01 05:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4535
+- **dream:** 4540
 - **swarm_artifact:** 1873
 - **last_swarm_critique:** 664
 - **anti_pattern:** 567
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901053925:5:b9c2b1`
+*01.09. 05:39 UTC · Quelle: dream*
+
+Latency variance on the same model (7.9s to 51.4s) means timeout configuration is critical to avoid blocking the entire pipeline.
+
+### `dream:20260901053925:4:992fc1`
+*01.09. 05:39 UTC · Quelle: dream*
+
+Swarm execution without explicit convergence criteria wastes cycles, as a score of 6 with no convergence demonstrates.
+
+### `dream:20260901053925:3:660660`
+*01.09. 05:39 UTC · Quelle: dream*
+
+Skill proposals generated during consolidation cycles require a validation gate to prevent unvetted ideas from consuming execution resources.
+
+### `dream:20260901053925:2:a73b5c`
+*01.09. 05:39 UTC · Quelle: dream*
+
+Even previously reliable models can fail with upstream 502 errors, so dependency on a single endpoint is a single point of failure.
+
+### `dream:20260901053925:1:8be413`
+*01.09. 05:39 UTC · Quelle: dream*
+
+Free-tier endpoints on shared APIs are systematically prone to 429 rate-limit errors, making them unreliable for production workflows.
 
 ### `dream:20260901053311:5:e88508`
 *01.09. 05:33 UTC · Quelle: dream*
