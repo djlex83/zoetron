@@ -22,3 +22,6 @@
 {"type": "skill_reinforced", "skill": "code_analysis", "proficiency": 0.6, "usage_count": 7, "timestamp": "2026-08-29T19:14:00.315389"}
 {"type": "skill_reinforced", "skill": "module_extension", "proficiency": 0.4, "usage_count": 7, "timestamp": "2026-08-29T19:14:00.315931"}
 {"type": "skill_reinforced", "skill": "persistent_storage", "proficiency": 0.8, "usage_count": 7, "timestamp": "2026-08-29T19:14:00.316504"}
+{"type": "skill_used", "skill": "code_analysis", "erfolg": null, "proficiency_vorher": 0.6, "proficiency": 0.6, "usage_count": 8, "timestamp": "2026-09-01T20:57:14.172699"}
+{"type": "skill_used", "skill": "module_extension", "erfolg": null, "proficiency_vorher": 0.4, "proficiency": 0.4, "usage_count": 8, "timestamp": "2026-09-01T20:57:14.173200"}
+{"type": "skill_used", "skill": "persistent_storage", "erfolg": null, "proficiency_vorher": 0.8, "proficiency": 0.8, "usage_count": 8, "timestamp": "2026-09-01T20:57:14.173576"}
