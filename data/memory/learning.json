@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 11:02:17",
+ "stand": "2026-09-01 11:35:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -199,14 +199,20 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.784,
  "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 26,
+  "n": 25,
   "best": 9.0,
-  "schnitt": 5.96
+  "schnitt": 5.92
  },
  "score_nach_ziel_typ": {
   "analyse": {

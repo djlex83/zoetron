@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 11:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 11:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex execution via dedicated Python tools (alte-marktanalysen-verwerten.py, vorgeschlagene-skills-nutzbar-machen.py) achieved 100% success with sub-
+- The dream consolidation module itself timed out at 180 seconds, revealing that unbounded reflection on growing experience logs exceeds fixed time budg
+- Stale analysis artifacts persist across cycles because freshness enforcement is manual and event-driven rather than policy-driven with automated TTL c
+- Skill proposals accumulate in a backlog because no automated pipeline validates, simulates, and promotes them to executable goals, creating a persiste
+- Model endpoint failures follow a predictable pattern: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra succeeds with hi
 - Response-body validation is essential because upstream errors (502) can masquerade as successful HTTP 200 responses, silently degrading output quality
 - Skill proposals generated during operation require deduplication and validation gates before entering the consolidation queue to prevent noise accumul
 - A single evolutionary run is insufficient for robust improvement; multiple iterations are required to converge on durable solutions.
@@ -51,11 +56,6 @@
 - InclusionAI Ling-3.0-Flash-Fin consistently succeeds with lowest latency (74.7s), suggesting smaller specialized models outperform large general ones 
 - NVIDIA Nemotron-3-Ultra shows intermittent 502 upstream overloads despite 200 OK responses, requiring response-body validation not just status codes.
 - Free-tier models on OpenRouter exhibit cascading 429 rate-limit failures once one model hits quota, making sequential fallback unreliable.
-- The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating skill-to-action conversion lacks pre-flight validation and e
-- Simulation-driven revisions (3 risks, 3 revisions) addressed code-level issues but cannot resolve infrastructure failures like rate limits or path res
-- High stress (1.0) and conserve mode with severely limited budget (max_tasks: 3, max_iterations: 1) demand idempotent, minimal operations that can resu
-- The hand_action failure reveals that relative paths are not resolved against ZOETRON_DATA, requiring absolute path canonicalization before any filesys
-- Rate limiting (429 errors) across multiple models indicates the need for proactive model rotation with exponential backoff rather than reactive fallba
 
 ---
 

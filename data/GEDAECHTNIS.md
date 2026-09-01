@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8817 Fakten** · Stand 2026-09-01 11:03 UTC · aktualisiert bei jedem Herzschlag
+**8822 Fakten** · Stand 2026-09-01 11:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4640
+- **dream:** 4645
 - **swarm_artifact:** 1915
 - **last_swarm_critique:** 671
 - **anti_pattern:** 575
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901113535:5:77d888`
+*01.09. 11:35 UTC · Quelle: dream*
+
+Reflex execution via dedicated Python tools (alte-marktanalysen-verwerten.py, vorgeschlagene-skills-nutzbar-machen.py) achieved 100% success with sub-second latency, confirming that encapsulated, single-purpose scripts are the most reliable action primitive.
+
+### `dream:20260901113535:4:85f3db`
+*01.09. 11:35 UTC · Quelle: dream*
+
+The dream consolidation module itself timed out at 180 seconds, revealing that unbounded reflection on growing experience logs exceeds fixed time budgets and requires incremental or prioritized processing.
+
+### `dream:20260901113535:3:cd3b7e`
+*01.09. 11:35 UTC · Quelle: dream*
+
+Stale analysis artifacts persist across cycles because freshness enforcement is manual and event-driven rather than policy-driven with automated TTL checks.
+
+### `dream:20260901113535:2:f22931`
+*01.09. 11:35 UTC · Quelle: dream*
+
+Skill proposals accumulate in a backlog because no automated pipeline validates, simulates, and promotes them to executable goals, creating a persistent gap between ideation and deployment.
+
+### `dream:20260901113535:1:30589d`
+*01.09. 11:35 UTC · Quelle: dream*
+
+Model endpoint failures follow a predictable pattern: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra succeeds with high latency, indicating a need for proactive health-aware routing rather than reactive fallback.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen echt testen:2`
 *01.09. 11:01 UTC · Quelle: evolution*
