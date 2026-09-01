@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9103 Fakten** · Stand 2026-09-01 20:02 UTC · aktualisiert bei jedem Herzschlag
+**9120 Fakten** · Stand 2026-09-01 20:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4815
-- **swarm_artifact:** 1975
-- **last_swarm_critique:** 681
-- **anti_pattern:** 589
-- **last_swarm_goal:** 429
-- **strategy:** 315
-- **tool:** 107
+- **dream:** 4820
+- **swarm_artifact:** 1981
+- **last_swarm_critique:** 682
+- **anti_pattern:** 591
+- **last_swarm_goal:** 430
+- **strategy:** 316
+- **tool:** 108
 - **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-wirklich-fert`
+*01.09. 20:16 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten wirklich fertig bauen'. Datei: data/tools/vorgeschlagene-fähigkeiten-wirklich-fert.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:1`
+*01.09. 20:15 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Event‑driven micro‑pipeline using a lightweight message bus - Replace file‑based hand‑offs with an in‑process/event‑bus (e.g. NATS, Kafka, or a simple Python asyncio queue). Step 1 publishes SkillProposed events containing th
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:0`
+*01.09. 20:15 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Explicit contract‑driven pipeline with versioned manifest - Define a strict JSON schema (SkillProposal) for the output of step 1. Step 1 writes a manifest file (e.g. skills‑manifest.v1.json) that lists every proposed skill wi
+
+### `last_swarm_critique`
+*01.09. 20:14 UTC · Quelle: critic*
+
+score=7; issues=Die drei Artefakte bilden eine kohärente Pipeline (inventarisieren → prüfen → bauen), aber der explizite Datentransport zwischen den Einzelschritten (z.B. welche konkret vorgeschlagenen Skills aus Schritt 1 in Schritt 3 gebaut werden) ist nicht
+
+### `last_swarm_goal`
+*01.09. 20:08 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich fertig bauen
+
+### `dream:20260901200755:5:99f36d`
+*01.09. 20:07 UTC · Quelle: dream*
+
+Self-diagnosis and pruning mechanisms are functioning correctly with zero errors and pruned items, indicating stable memory management.
+
+### `dream:20260901200755:4:289d62`
+*01.09. 20:07 UTC · Quelle: dream*
+
+Unfinished tasks accumulate and should be actively completed or discarded to maintain system focus.
+
+### `dream:20260901200755:3:66ba53`
+*01.09. 20:07 UTC · Quelle: dream*
+
+Repeatedly generating identical skill proposals wastes resources; a deduplication mechanism is needed.
+
+### `dream:20260901200755:2:c7a851`
+*01.09. 20:07 UTC · Quelle: dream*
+
+Tracking per-model latency and error rates is essential for building a reliable model routing system.
+
+### `dream:20260901200755:1:08139b`
+*01.09. 20:07 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter experience frequent 429 and 502 errors, necessitating robust fallback mechanisms.
 
 ### `dream:20260901200121:5:3ed16d`
 *01.09. 20:01 UTC · Quelle: dream*

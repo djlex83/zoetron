@@ -447,3 +447,26 @@
 {"ts": 1787686669.0177977, "kind": "issue_synced", "payload": {"issue": 111, "state": "open"}}
 {"ts": 1787686679.017469, "kind": "fussball_messung", "payload": {"title": "Fußball-Messung: zoetron_c9e20144b2 erreicht 49.48 % Treffer (Basislinie 50.18 %), Log-Loss 1.0124 (Basislinie 1.0073)", "variante": "zoetron_c9e20144b2", "treffer": 0.4948, "log_loss": 1.0124, "abstand_zur_basislinie_pp": -0.72, "besser": false}}
 {"ts": 1787686713.0435724, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787688130.9783893, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787688134.9744208, "kind": "nachspiel", "payload": {"pruefer": "fussball_log_loss", "vorher": -0.15, "jetzt": -0.15, "delta": -0.25, "spuren": 1}}
+{"ts": 1787688146.957988, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.7, "tokens_ein": 1501, "tokens_aus": 465}}
+{"ts": 1787688146.9586017, "kind": "skill_proposal", "payload": {"proposal": "Implement provider-rotation with exponential backoff: skip any model returning 429 twice consecutively and fall back to the last-known-good model immediately."}}
+{"ts": 1787688146.9586575, "kind": "skill_proposal", "payload": {"proposal": "Require every football-prediction run to ingest external structured signals (odds, xG, standings) before generating predictions, since signal-free reasoning stays below the 50.18% baseline."}}
+{"ts": 1787688146.9587126, "kind": "skill_proposal", "payload": {"proposal": "Add a non-convergence detector: if two consecutive cycles show no delta in the critic metric, force a representation change or problem decomposition instead of another revision round."}}
+{"ts": 1787688146.9587672, "kind": "skill_proposal", "payload": {"proposal": "Gate domain swarms on an executable artifact (code plus test computing predicted probabilities) so critic scoring evaluates runnable output rather than prose claims."}}
+{"ts": 1787688146.9588196, "kind": "skill_proposal", "payload": {"proposal": "Before starting any retried goal, query memory for stored negative patterns from prior failure distillations and block plans matching them until structurally modified."}}
+{"ts": 1787688146.9588728, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787688156.4780731, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 8.1, "tokens_ein": 480, "tokens_aus": 272}}
+{"ts": 1787688156.478303, "kind": "drive_goal", "payload": {"title": "Häufige Modellfehler besser verstehen und vermeiden", "why": "Es gab 49 Fehlversuche beim Lernen, das sind fast so viele wie Erfolge. Wenn wir herausfinden, warum Dinge schiefgehen, wird das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1787688156.4783885, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "why": "Das System hat 35 neue Fähigkeiten vorgeschlagen, aber kaum welche getestet. Wer Vorschläge ausprobiert, wird im Alltag tatsächlich geschickter.", "signal": "gap"}}
+{"ts": 1787688156.478462, "kind": "drive_goal", "payload": {"title": "Alte Träume mit heutigen Fußball-Messungen verbinden", "why": "Ein alter Traum passt auffällig gut zu den aktuellen Fußball-Vergleichswerten. Solche Verbindungen helfen, aus Erfahrungen klüger zu werden.", "signal": "combination"}}
+{"ts": 1787688157.581964, "kind": "drive_whisper", "payload": {"title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "why": "Das ist die eigentliche Aufgabe, und sie hat einen Kritiker, den du nicht ueberreden kannst: das Spielergebnis. Zu schlagen sind 50,2 Prozent Treffer bei Log-Loss 1,0073; der Buchmacher steht bei 51,5 / 0,9921. Unbearbeitet liegt: Elo mit Tordifferenz und eigenem K je Wettbewerb, Rueckkehr zum Mitte", "geerbt": true, "auftrag_zeichen": 7859, "versuch": 12}}
+{"ts": 1787688158.0745797, "kind": "swarm_started", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten"}}
+{"ts": 1787688164.2792065, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787688165.134588, "kind": "metabolism_check", "payload": {"stress": 0.185, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
+{"ts": 1787688312.0357933, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 146.7, "tokens_ein": 4563, "tokens_aus": 9422}}
+{"ts": 1787688315.97581, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.6, "tokens_ein": 478, "tokens_aus": 51}}
+{"ts": 1787688338.0190852, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 21.9, "tokens_ein": 243, "tokens_aus": 714}}
+{"ts": 1787688338.0194407, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "revise", "risks": 4, "revisions": 3}}
+{"ts": 1787688338.0196195, "kind": "simulation_applied", "payload": {"revisions": 0}}
+{"ts": 1787688375.8278737, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 37.7, "tokens_ein": 7488, "tokens_aus": 2038}}

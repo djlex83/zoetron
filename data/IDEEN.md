@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 20:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 20:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,35 +12,40 @@
 - Add per-request timeout (20 s) and retry budget (max 2 attempts with exponential backoff + jitter) before fail *(hatte die Idee 3×)*
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 3×)*
 - Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 3×)*
-- Build a latency-aware router: route tasks <500 output tokens to fast-fallback pool, >500 to primary with dynam *(hatte die Idee 2×)*
-- Create a 'proposal-to-production' skill: auto-test top-3 skill proposals in sandbox, promote if they reduce 42 *(hatte die Idee 2×)*
 - Implement parallel multi-model dispatch with first-success-wins to bypass correlated rate limits. *(hatte die Idee 2×)*
 - Implement provider-aware model registry with health scores, routing requests to least-loaded provider first. *(hatte die Idee 2×)*
 - Add exponential backoff + jitter retry wrapper (max 3 retries) for 429/502 before fallback trigger. *(hatte die Idee 2×)*
 - Build latency-aware router: tasks <500 tokens → fast pool; >500 tokens → primary with timeout = 2× rolling p95 *(hatte die Idee 2×)*
 - Create proposal-to-production pipeline: auto-test top-3 proposals in sandbox, promote if 429 rate ↓>50% or lat *(hatte die Idee 2×)*
 - Build a model router with health scoring, automatic failover, and exponential backoff on 429 responses. *(hatte die Idee 2×)*
+- Implement a circuit-breaker that quarantines models after N consecutive failures and schedules timed re-probes *(hatte die Idee 2×)*
+- Create a simulation harness that runs artifacts in a sandbox and feeds concrete errors back into revision loop *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Aus Fehlern lernen und Modelle verbessern *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning mechanisms are functioning correctly with zero errors and pruned items, indicating stable memory management.
+- Unfinished tasks accumulate and should be actively completed or discarded to maintain system focus.
+- Repeatedly generating identical skill proposals wastes resources; a deduplication mechanism is needed.
+- Tracking per-model latency and error rates is essential for building a reliable model routing system.
+- Free-tier models on OpenRouter experience frequent 429 and 502 errors, necessitating robust fallback mechanisms.
 - Evolutionary optimization loops without convergence detection (score delta threshold) waste compute cycles on stagnant strategies.
 - Missing AST-based syntax validation gate allows syntactically invalid generated code to reach execution, causing preventable runtime errors.
 - Lack of proactive rate-limit header parsing and exponential backoff leads to repeated hammering of blocked endpoints, wasting latency budget.
@@ -51,11 +56,6 @@
 - Generated code executes without mandatory AST validation, risking runtime failures that could be caught statically.
 - Skill proposals accumulate (50+) but lack a validation-to-production pipeline, causing a persistent idea-execution gap.
 - Repeated 429/502 errors across multiple providers reveal that external API dependency is a systemic single point of failure without circuit breaking o
-- Event pruning occurs but fact pruning does not, implying fact accumulation may become a long-term memory burden.
-- Reflex-driven actions can successfully complete stalled tasks (market analysis), suggesting reflexes as a reliable execution path.
-- Skill proposals are generated repeatedly (e.g., circuit breaker) but not implemented, indicating a gap between ideation and execution.
-- Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits high latency (up to 90s), making it unsuitable for time-critical paths.
-- The primary model `z-ai/glm-5.2:free` consistently fails with 429 errors, requiring a robust fallback strategy.
 
 ---
 
