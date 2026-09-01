@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 10:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 10:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning despite completed cycles suggests retention thresholds are too aggressive or metrics insufficient to trigger cleanup.
+- Calibration error of 2 points (predicted 6 vs actual 8) indicates systematic over-pessimism in self-assessment that skews resource allocation.
+- Swarm convergence in one cycle with planner/builder/critic roles validates the multi-agent pattern for skill integration tasks.
+- Nemotron-3-ultra shows high latency variance (43–116 s) despite success, requiring latency-aware routing not just availability checks.
+- Free-tier models exhibit cascading 429/502 failures under load, making single-model reliance unsafe for production workflows.
 - TOR validation (grün, 423-line Python artifact) provides reliable ground-truth success signal.
 - Simulation-driven revision loops (3 risks → 3 revisions → applied) converge to working artifacts.
 - High stress (1.0) and conserve mode force strict task/iteration budgets that prevent retry storms.
@@ -51,11 +56,6 @@
 - Upstream provider errors (502 from Nvidia) cascade as silent failures with HTTP 200, requiring response-body validation not just status codes.
 - A single reliable fallback model (inclusionai/ling-3.0-flash-fin) maintains availability when all primary models fail, proving the value of a verified
 - Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary providers without rate-limit management.
-- Nemotron-3-ultra latency (29–56 s) makes iterative development infeasible; speed must be a first-class selection criterion.
-- Swarm evolution produces high-scoring variants (9/9/9) but overall score stalls at 5/10, revealing a metric–reward misalignment.
-- Validation path breaks ('Pfadbruch zwischen Valid') indicate missing contract enforcement between planner, builder, and critic roles.
-- Proposed skills accumulate but never integrate — the integration pipeline itself is the bottleneck, not proposal generation.
-- Single-model dependency on z-ai/glm-5.2 causes systemic 429 failures that halt all LLM-dependent workflows.
 
 ---
 

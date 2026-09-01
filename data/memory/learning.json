@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 10:09:46",
+ "stand": "2026-09-01 10:21:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "laeufe": 14,
+   "erfolge": 14,
    "quote": 1.0
   },
   {
@@ -27,15 +27,15 @@
    "quote": 1.0
   },
   {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -193,9 +193,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.799,
+ "haende_quote": 0.798,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 25,
