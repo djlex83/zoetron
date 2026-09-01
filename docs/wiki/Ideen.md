@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 18:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 19:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 10×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -34,13 +34,18 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Aus Fehlern lernen und Modelle verbessern *(wieder aufgegriffen: 3×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model diversity without request pacing creates thundering herd on shared OpenRouter infrastructure.
+- High stress state (1.0) with conservative budget does not prevent new task spawns, worsening contention.
+- Generated code artifacts contain syntax errors (type annotation misuse) that pass simulation but fail at execution time.
+- Successful fallback calls suffer extreme latency variance (4.9s to 138.9s) indicating queue buildup rather than capacity limits.
+- Free-tier model endpoints exhibit systemic rate limiting (429) and upstream failures (502) that cascade across providers simultaneously.
 - System stress at maximum (1.0) with conserve-mode budget constraints amplifies the cost of any model failure or retry loop.
 - Reflex failure on 'Modellfehler stark reduzieren' despite existing skill proposals shows a gap between proposal and executable implementation.
 - Repeated 429 errors on the same model indicate missing client-side rate-limit awareness and exponential backoff.
@@ -51,11 +56,6 @@
 - Latency variance (14s–74s) across successful calls indicates unpredictable queue depths, necessitating per-model timeout budgets.
 - Upstream provider overload (502) can affect even previously reliable models like Nemotron, requiring multi-provider fallback chains.
 - Free-tier models on OpenRouter exhibit correlated 429 rate-limiting failures across multiple providers, making single-model reliance untenable.
-- Drive goals are correctly identifying the system's stagnation (stale analyses, unused skills) but the system struggles to autonomously close these loo
-- A CI failure in `herzschlag: organzyklus + gedächtnis-sync [hermes-daemon]` indicates that memory synchronization is fragile and needs error handling.
-- High latency on the fallback model (`nvidia/nemotron-3-ultra-550b-a55b:free`) suggests the need for timeout-bounded LLM calls to prevent system stalls
-- The system repeatedly generates identical skill proposals (e.g., circuit breakers, model routers) without implementing them, indicating a bottleneck i
-- The `z-ai/glm-5.2:free` model is consistently rate-limited (429) and should be temporarily blacklisted in favor of `nvidia/nemotron-3-ultra-550b-a55b:
 
 ---
 

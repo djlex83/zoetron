@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9061 Fakten** · Stand 2026-09-01 18:56 UTC · aktualisiert bei jedem Herzschlag
+**9066 Fakten** · Stand 2026-09-01 19:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4785
+- **dream:** 4790
 - **swarm_artifact:** 1969
 - **last_swarm_critique:** 680
 - **anti_pattern:** 587
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901190152:5:65e3c8`
+*01.09. 19:01 UTC · Quelle: dream*
+
+Model diversity without request pacing creates thundering herd on shared OpenRouter infrastructure.
+
+### `dream:20260901190152:4:1b6c8a`
+*01.09. 19:01 UTC · Quelle: dream*
+
+High stress state (1.0) with conservative budget does not prevent new task spawns, worsening contention.
+
+### `dream:20260901190152:3:5a0eb0`
+*01.09. 19:01 UTC · Quelle: dream*
+
+Generated code artifacts contain syntax errors (type annotation misuse) that pass simulation but fail at execution time.
+
+### `dream:20260901190152:2:8edf4c`
+*01.09. 19:01 UTC · Quelle: dream*
+
+Successful fallback calls suffer extreme latency variance (4.9s to 138.9s) indicating queue buildup rather than capacity limits.
+
+### `dream:20260901190152:1:261dfb`
+*01.09. 19:01 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit systemic rate limiting (429) and upstream failures (502) that cascade across providers simultaneously.
 
 ### `dream:20260901185448:5:80f1a0`
 *01.09. 18:54 UTC · Quelle: dream*
