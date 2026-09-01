@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 13:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 14:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence in one cycle with high score masks the underlying model instability that preceded it.
+- Proposed skills accumulate (45+) but require manual tool invocation to test and activate, creating a deployment gap.
+- Calibration consistently underestimates actual effort (predicted 6 vs actual 9), causing under-resourced planning cycles.
+- Self-diagnosis treats API failures as transient rather than organ-level degradation, so health signals never trigger fallback logic.
+- Rate-limited endpoints (429 errors) repeatedly block primary model calls while fallback models succeed with high latency, revealing no automatic quota
 - Hand_action failed because relative paths did not resolve to real files under the data path, indicating missing pre-execution argument validation.
 - Calibration underestimated effort by 50% (predicted 6 vs actual 9), revealing a systematic undercounting of iteration overhead.
 - The simulation acted as a circuit breaker: after applying its 3 revisions, previously failing models resumed succeeding.
@@ -51,11 +56,6 @@
 - HTTP 200 responses from Nvidia contained error payloads instead of choices, demonstrating that status-code-only success checks allow silent failures t
 - A single reliable model (inclusionai/ling-3.0-flash-fin) sustained the entire workload, proving that one robust endpoint can compensate for multiple f
 - Free-tier LLM endpoints exhibit systematic quota exhaustion (429) and upstream overload (502) making them unreliable as sole providers for any critica
-- Hand actions and reflexes succeed locally (exit 0, 0.25s) but cannot compensate for upstream model unavailability that blocks cognitive steps.
-- Self-diagnosis and pruning report zero issues while model failures persist, indicating monitoring blind spots for external API dependencies.
-- Skill proposals accumulate but lack a mechanism to graduate into deployed capabilities, creating a proposal-to-production gap.
-- The nemotron-3-ultra endpoint succeeded after glm-5.2 failures, proving fallback chains work but only when at least one endpoint has available quota.
-- Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making endpoint diversity without quota management ineffecti
 
 ---
 

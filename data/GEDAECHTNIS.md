@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8900 Fakten** · Stand 2026-09-01 13:47 UTC · aktualisiert bei jedem Herzschlag
+**8914 Fakten** · Stand 2026-09-01 14:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4690
-- **swarm_artifact:** 1933
-- **last_swarm_critique:** 674
+- **dream:** 4695
+- **swarm_artifact:** 1939
+- **last_swarm_critique:** 675
 - **anti_pattern:** 579
-- **last_swarm_goal:** 422
+- **last_swarm_goal:** 423
 - **strategy:** 310
 - **tool:** 104
-- **hand_result:** 96
+- **hand_result:** 97
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*01.09. 14:06 UTC · Quelle: critic*
+
+score=8; issues=Drei separate Artefakte (adaptive Mutationsraten, Benchmark-Feedback-Schleife, Historien-Analysator) sind nicht zu einem integrierten Gesamtsystem zusammengefuegt - die Interoperabilitaet zwischen den Modulen ist nicht erkennbar; Starke Abhaeng
+
+### `last_swarm_goal`
+*01.09. 13:54 UTC · Quelle: system*
+
+Evolutionelle Verbesserung fördern
+
+### `dream:20260901135302:5:3af592`
+*01.09. 13:53 UTC · Quelle: dream*
+
+Swarm convergence in one cycle with high score masks the underlying model instability that preceded it.
+
+### `dream:20260901135302:4:4b33c1`
+*01.09. 13:53 UTC · Quelle: dream*
+
+Proposed skills accumulate (45+) but require manual tool invocation to test and activate, creating a deployment gap.
+
+### `dream:20260901135302:3:6f2b2a`
+*01.09. 13:53 UTC · Quelle: dream*
+
+Calibration consistently underestimates actual effort (predicted 6 vs actual 9), causing under-resourced planning cycles.
+
+### `dream:20260901135302:2:247456`
+*01.09. 13:53 UTC · Quelle: dream*
+
+Self-diagnosis treats API failures as transient rather than organ-level degradation, so health signals never trigger fallback logic.
+
+### `dream:20260901135302:1:6ba126`
+*01.09. 13:53 UTC · Quelle: dream*
+
+Rate-limited endpoints (429 errors) repeatedly block primary model calls while fallback models succeed with high latency, revealing no automatic quota-aware routing.
 
 ### `dream:20260901134545:5:14298d`
 *01.09. 13:45 UTC · Quelle: dream*

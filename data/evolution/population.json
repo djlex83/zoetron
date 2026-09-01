@@ -1,0 +1,338 @@
+[
+  {
+    "id": "4be98f4c",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.06732933434298423,
+      "hidden_dim": 1024,
+      "batch_size": 16,
+      "activation": "gelu"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "86c59784",
+      "0c572d02"
+    ]
+  },
+  {
+    "id": "0c572d02",
+    "params": {
+      "layers": 2,
+      "dropout": 0.46803079788262897,
+      "learning_rate": 0.03029094480710742,
+      "hidden_dim": 127,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "ecbb4c32"
+    ]
+  },
+  {
+    "id": "bdb694b5",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.027560320490431254,
+      "hidden_dim": 128,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "4be98f4c",
+      "dcf28da9"
+    ]
+  },
+  {
+    "id": "6d783728",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.06732933434298423,
+      "hidden_dim": 1024,
+      "batch_size": 64,
+      "activation": "gelu"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "be45dd1c",
+      "296e7184"
+    ]
+  },
+  {
+    "id": "03e34aff",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.025943570628859807,
+      "hidden_dim": 128,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "bdb694b5"
+    ]
+  },
+  {
+    "id": "e2d7b961",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.06732933434298423,
+      "hidden_dim": 1024,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "51b9af8f",
+      "0c572d02"
+    ]
+  },
+  {
+    "id": "3eef1191",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.027560320490431254,
+      "hidden_dim": 128,
+      "batch_size": 64,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "bdb694b5",
+      "6d783728"
+    ]
+  },
+  {
+    "id": "a2b58142",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.06732933434298423,
+      "hidden_dim": 1024,
+      "batch_size": 16,
+      "activation": "gelu"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "4be98f4c"
+    ]
+  },
+  {
+    "id": "27790be0",
+    "params": {
+      "layers": 2,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.03029094480710742,
+      "hidden_dim": 127,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "37bf5b15",
+      "ffac9692"
+    ]
+  },
+  {
+    "id": "1925274d",
+    "params": {
+      "layers": 2,
+      "dropout": 0.46803079788262897,
+      "learning_rate": 0.03029094480710742,
+      "hidden_dim": 127,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "0c572d02",
+      "ffac9692"
+    ]
+  },
+  {
+    "id": "18dfe67c",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.06732933434298423,
+      "hidden_dim": 1024,
+      "batch_size": 64,
+      "activation": "swish"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "51b9af8f",
+      "6d783728"
+    ]
+  },
+  {
+    "id": "39c68eb2",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.027560320490431254,
+      "hidden_dim": 128,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "bdb694b5",
+      "bdb694b5"
+    ]
+  },
+  {
+    "id": "8e7b069b",
+    "params": {
+      "layers": 2,
+      "dropout": 0.46803079788262897,
+      "learning_rate": 0.03029094480710742,
+      "hidden_dim": 128,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "0c572d02",
+      "bdb694b5"
+    ]
+  },
+  {
+    "id": "89a4151e",
+    "params": {
+      "layers": 2,
+      "dropout": 0.46803079788262897,
+      "learning_rate": 0.03029094480710742,
+      "hidden_dim": 127,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "bdb694b5",
+      "ffac9692"
+    ]
+  },
+  {
+    "id": "41465ef3",
+    "params": {
+      "layers": 2,
+      "dropout": 0.46803079788262897,
+      "learning_rate": 0.03029094480710742,
+      "hidden_dim": 127,
+      "batch_size": 16,
+      "activation": "gelu"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "ffac9692",
+      "4be98f4c"
+    ]
+  },
+  {
+    "id": "2bb74089",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.06732933434298423,
+      "hidden_dim": 1024,
+      "batch_size": 64,
+      "activation": "gelu"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "6d783728"
+    ]
+  },
+  {
+    "id": "a763cb00",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.027560320490431254,
+      "hidden_dim": 1024,
+      "batch_size": 32,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "dcf28da9",
+      "4be98f4c"
+    ]
+  },
+  {
+    "id": "8389a54c",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.06732933434298423,
+      "hidden_dim": 1024,
+      "batch_size": 64,
+      "activation": "swish"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "bdb694b5",
+      "51b9af8f"
+    ]
+  },
+  {
+    "id": "72f828b1",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.06732933434298423,
+      "hidden_dim": 1024,
+      "batch_size": 64,
+      "activation": "gelu"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "6d783728",
+      "4be98f4c"
+    ]
+  },
+  {
+    "id": "e15753ba",
+    "params": {
+      "layers": 6,
+      "dropout": 0.476194624536579,
+      "learning_rate": 0.027560320490431254,
+      "hidden_dim": 128,
+      "batch_size": 16,
+      "activation": "tanh"
+    },
+    "fitness": 0.0,
+    "age": 1,
+    "parent_ids": [
+      "0c572d02",
+      "bdb694b5"
+    ]
+  }
+]

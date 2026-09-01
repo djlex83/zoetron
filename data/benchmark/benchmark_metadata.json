@@ -1,0 +1,17 @@
+{
+  "dimensions": [
+    "reasoning",
+    "coding",
+    "creativity",
+    "accuracy",
+    "speed"
+  ],
+  "weights": {
+    "reasoning": 0.25,
+    "coding": 0.25,
+    "creativity": 0.2,
+    "accuracy": 0.2,
+    "speed": 0.1
+  },
+  "version": "1.0"
+}

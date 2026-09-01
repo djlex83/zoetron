@@ -1,17 +1,17 @@
 {
- "stand": "2026-09-01 13:46:41",
+ "stand": "2026-09-01 14:07:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 19,
    "erfolge": 19,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 19,
-   "erfolge": 19,
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 18,
+   "erfolge": 18,
    "quote": 1.0
   },
   {
@@ -51,12 +51,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "fehlerquellen-systematisch-beheben.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -66,12 +60,6 @@
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -85,6 +73,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
@@ -121,6 +115,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
@@ -225,12 +225,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.763,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.754,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
-  "n": 26,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 5.92
+  "schnitt": 6.0
  },
  "score_nach_ziel_typ": {
   "bau": {
@@ -238,8 +238,8 @@
    "schnitt": 4.67
   },
   "analyse": {
-   "n": 20,
-   "schnitt": 6.3
+   "n": 21,
+   "schnitt": 6.38
   }
  }
 }
