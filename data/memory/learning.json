@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-01 17:31:16",
+ "stand": "2026-09-01 17:41:44",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 16,
-   "erfolge": 16,
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
@@ -99,6 +99,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -142,12 +148,6 @@
   },
   {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0

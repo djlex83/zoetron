@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 17:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 17:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
@@ -36,11 +36,16 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning is effective at maintaining memory hygiene, but skill completion remains a bottleneck.
+- Reflex-based execution successfully converged the swarm run, proving that automated, local-first tools can bypass external dependencies.
+- Stale artifacts block cognitive space and should be aggressively pruned or completed to maintain system focus.
+- There is a significant gap between proposed skills and completed implementations, indicating a need to prioritize building over ideating.
+- Free LLM endpoints are highly volatile and prone to rate-limiting (429) and upstream overloads (502), requiring robust failover mechanisms.
 - Pre-flight provider health probes would prevent wasted requests on already-throttled endpoints, saving both quota and latency.
 - Swarm cycles converged=false despite evolution=true, indicating that evaluation criteria are too loose to halt search and more cycles or tighter conve
 - The gap between 38 skill proposals and only 8 completed dreams reveals an execution bottleneck—generation outpaces implementation by nearly 5x.
@@ -51,11 +56,6 @@
 - Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3), indicating a need for empirical baseline tracking per model
 - Consecutive failures trigger automatic model bans (1800s), so error handling must track consecutive failures per model and proactively rotate before b
 - Free tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without request queuing an
-- Without per-model rate-limit tracking and exponential backoff, the system wastes cycles hammering throttled endpoints instead of failing over to avail
-- Stale self-diagnoses create blind spots: infrequent health checks allow degradation to accumulate until it cascades into visible failures.
-- Models that occasionally succeed under load (e.g., inclusionai/ling-3.0-flash-fin at 11s) must be tracked via a rolling reliability scorecard to infor
-- Local execution (hand-action/interpreter) completes in sub-second time and succeeds where remote LLM calls fail repeatedly, establishing a clear prefe
-- Simultaneous 429/502 errors across multiple remote models indicate systemic API-level rate limiting, not isolated model failures, requiring a circuit 
 
 ---
 

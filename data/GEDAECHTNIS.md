@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9019 Fakten** · Stand 2026-09-01 17:32 UTC · aktualisiert bei jedem Herzschlag
+**9024 Fakten** · Stand 2026-09-01 17:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4755
+- **dream:** 4760
 - **swarm_artifact:** 1963
 - **last_swarm_critique:** 679
 - **anti_pattern:** 585
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901174029:5:007d77`
+*01.09. 17:40 UTC · Quelle: dream*
+
+Event pruning is effective at maintaining memory hygiene, but skill completion remains a bottleneck.
+
+### `dream:20260901174029:4:8118ae`
+*01.09. 17:40 UTC · Quelle: dream*
+
+Reflex-based execution successfully converged the swarm run, proving that automated, local-first tools can bypass external dependencies.
+
+### `dream:20260901174029:3:40027a`
+*01.09. 17:40 UTC · Quelle: dream*
+
+Stale artifacts block cognitive space and should be aggressively pruned or completed to maintain system focus.
+
+### `dream:20260901174029:2:c651f3`
+*01.09. 17:40 UTC · Quelle: dream*
+
+There is a significant gap between proposed skills and completed implementations, indicating a need to prioritize building over ideating.
+
+### `dream:20260901174029:1:3c779f`
+*01.09. 17:40 UTC · Quelle: dream*
+
+Free LLM endpoints are highly volatile and prone to rate-limiting (429) and upstream overloads (502), requiring robust failover mechanisms.
 
 ### `dream:20260901173032:5:cd7935`
 *01.09. 17:30 UTC · Quelle: dream*
