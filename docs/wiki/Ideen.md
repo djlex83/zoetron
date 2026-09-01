@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 05:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 05:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism stress at 1.0 triggers conserve mode that caps tasks/iterations, starving the very fixes needed to reduce load.
+- Reflex scripts for error reduction fail silently without logging, preventing diagnostic feedback loops.
+- Hand actions fail when using relative paths instead of the absolute ZOETRON_DATA path, causing silent zero-byte reads.
+- The nvidia/nemotron-3-ultra model succeeds but exhibits high latency variance (8-42s), indicating unstable upstream capacity.
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
 - Latency variance on the same model (7.9s to 51.4s) means timeout configuration is critical to avoid blocking the entire pipeline.
 - Swarm execution without explicit convergence criteria wastes cycles, as a score of 6 with no convergence demonstrates.
 - Skill proposals generated during consolidation cycles require a validation gate to prevent unvetted ideas from consuming execution resources.
@@ -51,11 +56,6 @@
 - Evolutionary iteration (3 variants, critic feedback) lifted artifact score from 6 to 8–9, confirming that structured self-critique loops produce measu
 - Nvidia Nemotron-3-Ultra succeeds but exhibits high latency variance (24–56s) and eventual 502 upstream overload, indicating capacity saturation.
 - Free-tier models on OpenRouter consistently hit 429 rate limits under sequential load, making them unreliable for multi-step workflows.
-- Recalling last_swarm_goal after a failed reflex indicates the system can self-correct by revisiting prior goals, but only after exhausting retries on 
-- The simulation-revision loop (5 risks → 5 revisions) proved effective but was followed by further failed model calls, suggesting revisions were applie
-- Under maximum stress (1.0) and conserve mode, the system still attempted parallel model calls instead of serializing around the single working model.
-- Scripts that exit with code 0 but produce no file or directory mutations are silently treated as successes, masking real execution failures.
-- When multiple API providers simultaneously return 429/502 errors, the system lacks a prioritized fallback chain based on proven model availability, ca
 
 ---
 
