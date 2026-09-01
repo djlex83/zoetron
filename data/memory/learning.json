@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 21:04:11",
+ "stand": "2026-09-01 21:11:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 10,
    "erfolge": 10,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -268,6 +268,12 @@
   },
   {
    "tool": "neue-fähigkeiten-erlernen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

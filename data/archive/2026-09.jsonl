@@ -549,3 +549,24 @@
 {"ts": 1787691766.699856, "kind": "swarm_started", "payload": {"goal": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren"}}
 {"ts": 1787691774.1596148, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
 {"ts": 1787691775.105194, "kind": "metabolism_check", "payload": {"stress": 0.372, "state": "moderate", "budget": {"max_tasks": 4, "max_iterations": 2}}}
+{"ts": 1787691844.5252185, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 68.2, "tokens_ein": 1763, "tokens_aus": 3455}}
+{"ts": 1787691853.373505, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 8.5, "tokens_ein": 526, "tokens_aus": 60}}
+{"ts": 1787691861.151997, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.6, "tokens_ein": 235, "tokens_aus": 383}}
+{"ts": 1787691861.1522226, "kind": "simulation", "payload": {"goal": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren", "verdict": "revise", "risks": 3, "revisions": 2}}
+{"ts": 1787691861.1523495, "kind": "simulation_applied", "payload": {"revisions": 2}}
+{"ts": 1787691981.2864332, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 120.0, "tokens_ein": 2235, "tokens_aus": 6061}}
+{"ts": 1787692008.6212604, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 27.2, "tokens_ein": 1677, "tokens_aus": 575}}
+{"ts": 1787692008.6221128, "kind": "calibration", "payload": {"goal": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren", "predicted": 5, "actual": 3, "abs_error": 2}}
+{"ts": 1787692008.622214, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 3}}
+{"ts": 1787692014.583161, "kind": "bahnen", "payload": {"goal": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren", "delta": -0.5, "kanten": 0, "hat_code": true, "score": 3, "abgerufen": 5, "ids": ["e:7a890db8c50a", "e:61e28dcc70b1", "e:2ec1bb183777", "f:508e228a4524", "e:009e8b961300"], "ziel_id": "g:05f8db322546"}}
+{"ts": 1787692060.5751002, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 46.0, "tokens_ein": 292, "tokens_aus": 1049}}
+{"ts": 1787692082.8018286, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 22.2, "tokens_ein": 862, "tokens_aus": 433}}
+{"ts": 1787692082.8021872, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren\nCritic issues: Artefakt i", "variants": 3, "winner_index": 2, "scores": [7, 5, 9]}}
+{"ts": 1787692101.0057638, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.1, "tokens_ein": 549, "tokens_aus": 50}}
+{"ts": 1787692115.3480837, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.0, "tokens_ein": 314, "tokens_aus": 311}}
+{"ts": 1787692115.3483412, "kind": "simulation", "payload": {"goal": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren", "verdict": "go", "risks": 3, "revisions": 2}}
+{"ts": 1787692115.3484743, "kind": "swarm_finished", "payload": {"goal": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren", "score": 3, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787692115.3486753, "kind": "act_done", "payload": {"goal_title": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren", "score": 3, "converged": false}}
+{"ts": 1787692115.955059, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.5}}
+{"ts": 1787692118.486659, "kind": "issue_synced", "payload": {"issue": 116, "state": "open"}}
+{"ts": 1787692157.82716, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

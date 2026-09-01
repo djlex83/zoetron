@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9140 Fakten** · Stand 2026-09-01 21:05 UTC · aktualisiert bei jedem Herzschlag
+**9145 Fakten** · Stand 2026-09-01 21:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4840
+- **dream:** 4845
 - **swarm_artifact:** 1981
 - **last_swarm_critique:** 682
 - **anti_pattern:** 591
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901211128:5:dd179f`
+*01.09. 21:11 UTC · Quelle: dream*
+
+Calibration error of 2 cycles suggests systematic underestimation of task complexity in skill-building workflows.
+
+### `dream:20260901211128:4:2ed0f0`
+*01.09. 21:11 UTC · Quelle: dream*
+
+Local hand-action execution succeeds reliably and quickly compared to external API dependencies.
+
+### `dream:20260901211128:3:8c3107`
+*01.09. 21:11 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free demonstrates consistent availability and lower latency among tested free models.
+
+### `dream:20260901211128:2:8cc36c`
+*01.09. 21:11 UTC · Quelle: dream*
+
+Nvidia's Nemotron model exhibits intermittent 502 upstream errors indicating provider-side capacity issues beyond rate limits.
+
+### `dream:20260901211128:1:e03ef3`
+*01.09. 21:11 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for production workloads.
 
 ### `dream:20260901210345:5:549288`
 *01.09. 21:03 UTC · Quelle: dream*

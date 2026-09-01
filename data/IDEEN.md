@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 21:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 21:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Aus Fehlern lernen und Modelle verbessern *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 2 cycles suggests systematic underestimation of task complexity in skill-building workflows.
+- Local hand-action execution succeeds reliably and quickly compared to external API dependencies.
+- inclusionai/ling-3.0-flash-fin:free demonstrates consistent availability and lower latency among tested free models.
+- Nvidia's Nemotron model exhibits intermittent 502 upstream errors indicating provider-side capacity issues beyond rate limits.
+- Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for production workloads.
 - Simulations approve risky operations (verdict: go) but real execution fails, showing simulation does not model rate-limit or filesystem constraints.
 - Reflex tools and swarm executions for skill-building consistently fail (ok: false), creating a proposal-to-production gap.
 - Hand actions fail on basic path resolution (sys.argv[1], ZOETRON_DATA), indicating environment assumptions break under execution.
@@ -51,11 +56,6 @@
 - Stale goals accumulate because no automatic triage discards or renews them after a TTL.
 - Upstream provider errors (502) cascade as silent failures unless explicitly caught and routed around.
 - Free tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without queuing.
-- Critical-path tasks should be pinned to a verified backbone model while exploration runs offline on a shadow queue.
-- Skill proposals accumulate but lack an execution gate; a "proposal-to-production" pipeline with validation checkpoints would close the loop.
-- Model latency variance (9–44s) makes fixed timeouts unreliable; adaptive deadlines tied to historical percentiles are needed.
-- Upstream provider overloads (502) cascade into silent failures that self-diagnosis misses because they originate outside organ boundaries.
-- Rate limiting (429) is the dominant failure mode across all free-tier models, requiring systematic request scheduling rather than reactive retries.
 
 ---
 
