@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-01 08:50:11",
+ "stand": "2026-09-01 09:07:17",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 24,
-   "erfolge": 24,
+   "laeufe": 23,
+   "erfolge": 23,
    "quote": 1.0
   },
   {
@@ -15,25 +15,25 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 16,
-   "erfolge": 16,
-   "quote": 1.0
-  },
-  {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 15,
    "erfolge": 15,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 15,
+   "erfolge": 15,
    "quote": 1.0
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
+   "laeufe": 8,
+   "erfolge": 8,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
@@ -187,19 +187,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "entfernte-erinnerungen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.809,
- "simulationen_angewandt": 22,
+ "haende_quote": 0.804,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 23,
+  "n": 24,
   "best": 8.0,
-  "schnitt": 5.7
+  "schnitt": 5.79
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 18,
-   "schnitt": 6.22
+   "n": 19,
+   "schnitt": 6.32
   },
   "bau": {
    "n": 5,
