@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8713 Fakten** · Stand 2026-09-01 08:04 UTC · aktualisiert bei jedem Herzschlag
+**8718 Fakten** · Stand 2026-09-01 08:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4580
+- **dream:** 4585
 - **swarm_artifact:** 1891
 - **last_swarm_critique:** 667
 - **anti_pattern:** 571
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901080959:5:a68dba`
+*01.09. 08:09 UTC · Quelle: dream*
+
+Calibration error of 1 cycle on an 8-cycle prediction shows the effort estimator is accurate enough for scheduling.
+
+### `dream:20260901080959:4:8ce19a`
+*01.09. 08:09 UTC · Quelle: dream*
+
+Swarm convergence in a single cycle with high score (8) indicates the planner-builder-critic loop is well-calibrated for implementation tasks.
+
+### `dream:20260901080959:3:3034a8`
+*01.09. 08:09 UTC · Quelle: dream*
+
+Hand actions fail intermittently (exit 1) without error details, suggesting transient environment issues rather than code defects.
+
+### `dream:20260901080959:2:0f12a4`
+*01.09. 08:09 UTC · Quelle: dream*
+
+Latency variance between models spans 30x (5s vs 150s), so model selection must weigh speed against availability.
+
+### `dream:20260901080959:1:e7ca4a`
+*01.09. 08:09 UTC · Quelle: dream*
+
+Rate limiting (429) is the dominant failure mode across multiple free-tier models, making automatic fallback essential for reliability.
 
 ### `dream:20260901080105:5:7ea1b5`
 *01.09. 08:01 UTC · Quelle: dream*

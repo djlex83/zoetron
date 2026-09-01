@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 08:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 08:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 cycle on an 8-cycle prediction shows the effort estimator is accurate enough for scheduling.
+- Swarm convergence in a single cycle with high score (8) indicates the planner-builder-critic loop is well-calibrated for implementation tasks.
+- Hand actions fail intermittently (exit 1) without error details, suggesting transient environment issues rather than code defects.
+- Latency variance between models spans 30x (5s vs 150s), so model selection must weigh speed against availability.
+- Rate limiting (429) is the dominant failure mode across multiple free-tier models, making automatic fallback essential for reliability.
 - Three completed swarm analyses and 35 skill proposals remain unprocessed for days, creating stale work backlog that blocks new capacity.
 - Metabolism stress at 1.0 with conserve state and single-iteration budget shows resource exhaustion cascades from model latency spikes (up to 110s).
 - Simulation verdicts repeatedly demand revisions (5 risks, 3 revisions) before approval, indicating skill proposals are under-specified before simulati
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (35+) but lack an automated trial loop, turning innovation into inventory instead of capability.
 - Relative path resolution in hand_action breaks when working directory diverges from ZOETRON_DATA, causing silent zero-result runs.
 - Rate-limiting (429) across multiple free-tier models indicates systemic dependency on unreliable external APIs rather than isolated model failures.
-- Self-diagnosis reports zero organ errors while external API failures persist, revealing a blind spot in health monitoring scope.
-- Calibration remains accurate (predicted=actual=6) despite model instability, suggesting the estimator is robust to provider noise.
-- Simulation gate catches 4 risks and forces 2 revisions before 'go' verdict, proving its value as a pre-execution quality filter.
-- Evolutionary swarm cycles improve solution scores (6→8-9) but fail to converge, indicating missing convergence criteria or insufficient critic diversi
-- Rate limiting (HTTP 429) across multiple model providers is the dominant failure mode, requiring systematic request throttling and fallback chaining.
 
 ---
 
