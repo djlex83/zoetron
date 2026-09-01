@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8467 Fakten** · Stand 2026-09-01 00:36 UTC · aktualisiert bei jedem Herzschlag
+**8472 Fakten** · Stand 2026-09-01 00:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4415
+- **dream:** 4420
 - **swarm_artifact:** 1849
 - **last_swarm_critique:** 660
 - **anti_pattern:** 559
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901004531:5:31e675`
+*01.09. 00:45 UTC · Quelle: dream*
+
+Repeated identical 429 failures on the same endpoint within seconds suggest no backoff or cooldown is applied between retry attempts.
+
+### `dream:20260901004531:4:361f44`
+*01.09. 00:45 UTC · Quelle: dream*
+
+Stale goals (market analysis, self-assessment) persist across multiple cycles without convergence, indicating no escalation mechanism for blocked or abandoned objectives.
+
+### `dream:20260901004531:3:beafcf`
+*01.09. 00:45 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles without implementation, creating a widening gap between proposed and actual capabilities.
+
+### `dream:20260901004531:2:149edc`
+*01.09. 00:45 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron shows extreme latency variance (11s to 41s) with no timeout or latency-budget enforcement, risking cascading delays.
+
+### `dream:20260901004531:1:52a6be`
+*01.09. 00:45 UTC · Quelle: dream*
+
+The model z-ai/glm-5.2:free is chronically rate-limited with repeated 429s across multiple cycles, yet no circuit breaker removes it from the active routing pool.
 
 ### `dream:20260901003235:5:a33e1d`
 *01.09. 00:32 UTC · Quelle: dream*

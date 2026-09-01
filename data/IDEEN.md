@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,11 +25,11 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated identical 429 failures on the same endpoint within seconds suggest no backoff or cooldown is applied between retry attempts.
+- Stale goals (market analysis, self-assessment) persist across multiple cycles without convergence, indicating no escalation mechanism for blocked or a
+- Skill proposals accumulate across dream cycles without implementation, creating a widening gap between proposed and actual capabilities.
+- Fallback model nvidia/nemotron shows extreme latency variance (11s to 41s) with no timeout or latency-budget enforcement, risking cascading delays.
+- The model z-ai/glm-5.2:free is chronically rate-limited with repeated 429s across multiple cycles, yet no circuit breaker removes it from the active r
 - Self-diagnosis consistently reports zero issues despite observable failures, suggesting internal monitoring is not capturing external dependency failu
 - Stale market analysis steps and unused skill proposals reveal a gap between idea generation and execution, indicating need for automated proposal-to-s
 - High failure count (68) on a single model shows lack of automatic failover and health-aware routing is causing cascading task delays.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (5+ per cycle) but require manual reflex conversion, creating a proposal-to-production gap.
 - Latency variance (8–15 s) on the fallback model shows no latency budget enforcement or cold-start pre-warming.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate missing automated rate-limit detection and immediate failover to healthy models.
-- Simulation-driven revision loops (5 risks → 5 revisions) improve artifacts but do not guarantee convergence within budget.
-- Calibration error of +1 (predicted 7 vs actual 6) indicates systematic overconfidence in capability estimates.
-- Evolutionary revision reliably lifts artifact scores (6→8) even when swarm convergence stalls after only 2 cycles.
-- nvidia/nemotron-3-ultra succeeds but exhibits extreme latency variance (4.9s–158.5s), suggesting queueing or cold-start effects on the free endpoint.
-- Free-tier models (z-ai/glm, google/gemma) consistently hit 429 rate limits making them unreliable for production workflows.
 
 ---
 
