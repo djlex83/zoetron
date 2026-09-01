@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8526 Fakten** · Stand 2026-09-01 02:46 UTC · aktualisiert bei jedem Herzschlag
+**8531 Fakten** · Stand 2026-09-01 02:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4450
+- **dream:** 4455
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901025115:5:b9ee89`
+*01.09. 02:51 UTC · Quelle: dream*
+
+No systematic model health registry exists, so routing decisions remain reactive instead of predictive.
+
+### `dream:20260901025115:4:867538`
+*01.09. 02:51 UTC · Quelle: dream*
+
+Reflex-based skill evaluation works but operates in isolation from the model routing layer that needs those skills.
+
+### `dream:20260901025115:3:1889f5`
+*01.09. 02:51 UTC · Quelle: dream*
+
+Skill proposals accumulate (55+) but lack a mandatory prototype gate, causing proposal inflation without execution.
+
+### `dream:20260901025115:2:060d34`
+*01.09. 02:51 UTC · Quelle: dream*
+
+Latency variance across successful models spans 9.9s to 71.7s, violating any reasonable SLO without active routing.
+
+### `dream:20260901025115:1:f71aab`
+*01.09. 02:51 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary endpoints.
 
 ### `dream:20260901024415:5:6de242`
 *01.09. 02:44 UTC · Quelle: dream*

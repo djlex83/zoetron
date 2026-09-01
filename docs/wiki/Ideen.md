@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 02:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 02:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No systematic model health registry exists, so routing decisions remain reactive instead of predictive.
+- Reflex-based skill evaluation works but operates in isolation from the model routing layer that needs those skills.
+- Skill proposals accumulate (55+) but lack a mandatory prototype gate, causing proposal inflation without execution.
+- Latency variance across successful models spans 9.9s to 71.7s, violating any reasonable SLO without active routing.
+- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary endpoints.
 - NVIDIA Nemotron returned 502 'Service temporarily overloaded' despite HTTP 200, showing upstream provider errors masquerade as success codes.
 - Hand-action tooling returned exit code 1 with zero bytes read, revealing a silent I/O failure mode that bypasses error logging.
 - Swarm-based debugging (planner/builder/critic) did not converge in 2 cycles, indicating the error-space is too large for fixed-iteration consensus.
@@ -51,11 +56,6 @@
 - Evolution with critic feedback yields >50% quality improvement (6→9) and should be standard after every first-pass generation.
 - inclusionai/ling-3.0-flash-fin:free is the only consistently available free model under load and should be prioritized as primary.
 - Rate limiting (429) is systemic across free-tier models and should be treated as expected behavior rather than exceptional failure.
-- Swarm-based error investigation recurs without preventing new 429 failures, suggesting reactive analysis lacks proactive routing enforcement.
-- Maximum stress (1.0) triggers conserve mode limiting to 3 tasks, creating a capacity trap where root-cause fixes cannot be executed.
-- The system generates effective skill proposals (router, latency scheduling, revision budgets) but recurring swarm goals indicate they are not deployed
-- A single free model (inclusionai/ling-3.0-flash-fin) succeeded twice with stable ~9s latency, proving viable fallback exists if routed to exclusively.
-- Free-tier models consistently fail with 429 rate limits across four different providers, making them unreliable for production workloads.
 
 ---
 
