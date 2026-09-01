@@ -1,0 +1,23 @@
+[
+  {
+    "name": "daten_validierung",
+    "status": "bewaehrt",
+    "herkunft": "vorschlag_erfuellt_messlatte",
+    "messung": {
+      "werkzeug_qualitaet": 85.0,
+      "sicherheit": 90.0,
+      "performance": 80.0,
+      "reflex_zeit_ms": 150.0
+    },
+    "pruefung": {
+      "werkzeug_qualitaet_bestanden": true,
+      "sicherheit_bestanden": true,
+      "performance_bestanden": true,
+      "reflex_bestanden": true,
+      "gesamt_bestanden": true
+    },
+    "verknuepfte_vorgeschlagene": [
+      "fehler_behandlung"
+    ]
+  }
+]

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8878 Fakten** · Stand 2026-09-01 13:09 UTC · aktualisiert bei jedem Herzschlag
+**8895 Fakten** · Stand 2026-09-01 13:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4680
-- **swarm_artifact:** 1927
-- **last_swarm_critique:** 673
-- **anti_pattern:** 577
-- **last_swarm_goal:** 421
-- **strategy:** 309
+- **dream:** 4685
+- **swarm_artifact:** 1933
+- **last_swarm_critique:** 674
+- **anti_pattern:** 579
+- **last_swarm_goal:** 422
+- **strategy:** 310
 - **tool:** 104
-- **hand_result:** 95
+- **hand_result:** 96
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
+*01.09. 13:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): Task Fusion with In-Memory Pipeline - Merge the three tasks into a single executable workflow that passes data as in-memory objects without serialization. Define a pipeline function that chains the logic: first, evalu
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:0`
+*01.09. 13:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 8]): Schema-First Contract Enforcement - Define explicit JSON schemas for each task's input and output. Task 1 outputs a standardized 'Pruefergebnis' schema containing only 'typ' and 'beschreibung' (no numeric scores). Tas
+
+### `last_swarm_critique`
+*01.09. 13:26 UTC · Quelle: critic*
+
+score=4; issues=Task 1/2 Data Contract Violation: Task 1 outputs pruefe-result objects with 'bestanden'/'kriterien' fields, but Task 2's lade_task1_ergebnis expects entries with 'typ'/'beschreibung' and no numeric scores needed for measurement; Task 2/3 Data C
+
+### `last_swarm_goal`
+*01.09. 13:16 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten zu bewährten Fertigkeiten verbinden
+
+### `dream:20260901131504:5:20f3ab`
+*01.09. 13:15 UTC · Quelle: dream*
+
+Rate-limit errors cluster in time across multiple providers, suggesting shared infrastructure or coordinated quota windows that defeat naive round-robin load balancing.
+
+### `dream:20260901131504:4:1b8501`
+*01.09. 13:15 UTC · Quelle: dream*
+
+Reflex-mode convergence on "turn suggestions into actions" succeeded despite model chaos, indicating the orchestration layer can absorb provider instability when fallback logic exists.
+
+### `dream:20260901131504:3:6769da`
+*01.09. 13:15 UTC · Quelle: dream*
+
+HTTP 200 responses from Nvidia contained error payloads instead of choices, demonstrating that status-code-only success checks allow silent failures to propagate.
+
+### `dream:20260901131504:2:6a462f`
+*01.09. 13:15 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin) sustained the entire workload, proving that one robust endpoint can compensate for multiple failing free-tier alternatives.
+
+### `dream:20260901131504:1:db60b2`
+*01.09. 13:15 UTC · Quelle: dream*
+
+Free-tier LLM endpoints exhibit systematic quota exhaustion (429) and upstream overload (502) making them unreliable as sole providers for any critical path.
 
 ### `dream:20260901130655:5:899a0e`
 *01.09. 13:06 UTC · Quelle: dream*

@@ -1,0 +1,97 @@
+{
+  "messlatte": {
+    "werkzeug_qualitaet": 75.0,
+    "reflex_geschwindigkeit": 200.0,
+    "sicherheit": 80.0,
+    "performance": 70.0
+  },
+  "bewaehrte_faehigkeiten": [
+    {
+      "name": "daten_validierung",
+      "status": "bewaehrt",
+      "herkunft": "vorschlag_erfuellt_messlatte",
+      "messung": {
+        "werkzeug_qualitaet": 85.0,
+        "sicherheit": 90.0,
+        "performance": 80.0,
+        "reflex_zeit_ms": 150.0
+      },
+      "pruefung": {
+        "werkzeug_qualitaet_bestanden": true,
+        "sicherheit_bestanden": true,
+        "performance_bestanden": true,
+        "reflex_bestanden": true,
+        "gesamt_bestanden": true
+      },
+      "verknuepfte_vorgeschlagene": [
+        "fehler_behandlung"
+      ]
+    }
+  ],
+  "vorgeschlagene_bestanden": [
+    {
+      "name": "daten_validierung",
+      "status": "vorgeschlagen",
+      "herkunft": "vorschlag",
+      "messung": {
+        "werkzeug_qualitaet": 85.0,
+        "sicherheit": 90.0,
+        "performance": 80.0,
+        "reflex_zeit_ms": 150.0
+      },
+      "pruefung": {
+        "werkzeug_qualitaet_bestanden": true,
+        "sicherheit_bestanden": true,
+        "performance_bestanden": true,
+        "reflex_bestanden": true,
+        "gesamt_bestanden": true
+      },
+      "an_bewaehrt_angehaengt": false
+    },
+    {
+      "name": "fehler_behandlung",
+      "status": "vorgeschlagen",
+      "herkunft": "vorschlag",
+      "messung": {
+        "werkzeug_qualitaet": 82.0,
+        "sicherheit": 88.0,
+        "performance": 75.0,
+        "reflex_zeit_ms": 180.0
+      },
+      "pruefung": {
+        "werkzeug_qualitaet_bestanden": true,
+        "sicherheit_bestanden": true,
+        "performance_bestanden": true,
+        "reflex_bestanden": true,
+        "gesamt_bestanden": true
+      },
+      "an_bewaehrt_angehaengt": true
+    }
+  ],
+  "vorgeschlagene_durchgefallen": [
+    {
+      "name": "cache_management",
+      "status": "vorgeschlagen",
+      "herkunft": "vorschlag",
+      "messung": {
+        "werkzeug_qualitaet": 78.0,
+        "sicherheit": 75.0,
+        "performance": 85.0,
+        "reflex_zeit_ms": 120.0
+      },
+      "pruefung": {
+        "werkzeug_qualitaet_bestanden": true,
+        "sicherheit_bestanden": false,
+        "performance_bestanden": true,
+        "reflex_bestanden": true,
+        "gesamt_bestanden": false
+      },
+      "an_bewaehrt_angehaengt": false
+    }
+  ],
+  "statistik": {
+    "gesamt_bewaehrt": 1,
+    "vorgeschlagen_angeknuepft": 2,
+    "vorgeschlagen_abgelehnt": 1
+  }
+}
