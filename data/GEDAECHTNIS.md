@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8789 Fakten** · Stand 2026-09-01 10:33 UTC · aktualisiert bei jedem Herzschlag
+**8795 Fakten** · Stand 2026-09-01 10:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4625
+- **dream:** 4630
 - **swarm_artifact:** 1909
 - **last_swarm_critique:** 670
 - **anti_pattern:** 573
@@ -10,7 +10,7 @@
 - **strategy:** 307
 - **tool:** 103
 - **hand_result:** 93
-- **aktuell_organfehler:** 43
+- **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **frontier:** 3
@@ -19,6 +19,36 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901104041:5:d1e687`
+*01.09. 10:40 UTC · Quelle: dream*
+
+The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating skill-to-action conversion lacks pre-flight validation and error observability.
+
+### `dream:20260901104041:4:d7e89f`
+*01.09. 10:40 UTC · Quelle: dream*
+
+Simulation-driven revisions (3 risks, 3 revisions) addressed code-level issues but cannot resolve infrastructure failures like rate limits or path resolution.
+
+### `dream:20260901104041:3:03858b`
+*01.09. 10:40 UTC · Quelle: dream*
+
+High stress (1.0) and conserve mode with severely limited budget (max_tasks: 3, max_iterations: 1) demand idempotent, minimal operations that can resume after interruption.
+
+### `dream:20260901104041:2:a09e62`
+*01.09. 10:40 UTC · Quelle: dream*
+
+The hand_action failure reveals that relative paths are not resolved against ZOETRON_DATA, requiring absolute path canonicalization before any filesystem operation.
+
+### `dream:20260901104041:1:248c80`
+*01.09. 10:40 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple models indicates the need for proactive model rotation with exponential backoff rather than reactive fallback.
+
+### `aktuell_organfehler`
+*01.09. 10:37 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-01 10:30:01 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `aktuell_organfehler`
 *01.09. 10:25 UTC · Quelle: selbstdiagnose.py*

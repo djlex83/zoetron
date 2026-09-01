@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 10:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 10:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating skill-to-action conversion lacks pre-flight validation and e
+- Simulation-driven revisions (3 risks, 3 revisions) addressed code-level issues but cannot resolve infrastructure failures like rate limits or path res
+- High stress (1.0) and conserve mode with severely limited budget (max_tasks: 3, max_iterations: 1) demand idempotent, minimal operations that can resu
+- The hand_action failure reveals that relative paths are not resolved against ZOETRON_DATA, requiring absolute path canonicalization before any filesys
+- Rate limiting (429 errors) across multiple models indicates the need for proactive model rotation with exponential backoff rather than reactive fallba
 - Zero pruning despite completed cycles suggests retention thresholds are too aggressive or metrics insufficient to trigger cleanup.
 - Calibration error of 2 points (predicted 6 vs actual 8) indicates systematic over-pessimism in self-assessment that skews resource allocation.
 - Swarm convergence in one cycle with planner/builder/critic roles validates the multi-agent pattern for skill integration tasks.
@@ -51,11 +56,6 @@
 - High stress (1.0) and conserve mode force strict task/iteration budgets that prevent retry storms.
 - Nvidia Nemotron succeeds but exhibits extreme latency variance (5.8s–161s) requiring adaptive timeouts.
 - Free-tier models consistently fail with 429 rate limits making them unreliable for primary workloads.
-- Drive goals repeat thematic priorities (learning from failure, promoting proposals, connecting memories) without concrete execution criteria, causing 
-- Multiple identical skill proposals appear in the log, indicating proposal generation lacks deduplication and wastes consolidation cycles.
-- Upstream provider errors (502 from Nvidia) cascade as silent failures with HTTP 200, requiring response-body validation not just status codes.
-- A single reliable fallback model (inclusionai/ling-3.0-flash-fin) maintains availability when all primary models fail, proving the value of a verified
-- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary providers without rate-limit management.
 
 ---
 
