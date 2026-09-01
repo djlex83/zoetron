@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8576 Fakten** · Stand 2026-09-01 03:51 UTC · aktualisiert bei jedem Herzschlag
+**8581 Fakten** · Stand 2026-09-01 03:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4500
+- **dream:** 4505
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901035634:5:97b7b7`
+*01.09. 03:56 UTC · Quelle: dream*
+
+Swarm-generated skill proposals converge on a common pattern: health-aware routing with timeout, retry budget, and circuit-breaker semantics.
+
+### `dream:20260901035634:4:eb23f0`
+*01.09. 03:56 UTC · Quelle: dream*
+
+Structured telemetry (model, status, latency, tokens) is absent from current calls, preventing data-driven router decisions.
+
+### `dream:20260901035634:3:d88907`
+*01.09. 03:56 UTC · Quelle: dream*
+
+The system repeatedly generates similar routing/fallback proposals but lacks an automated mechanism to promote them into active policy.
+
+### `dream:20260901035634:2:5c0c6b`
+*01.09. 03:56 UTC · Quelle: dream*
+
+Latency variance on nemotron-3-ultra (13–42 s) exceeds acceptable bounds for interactive tasks, requiring timeout guards.
+
+### `dream:20260901035634:1:e5355a`
+*01.09. 03:56 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently return 429 errors under load, making them unreliable for production workflows.
 
 ### `dream:20260901035002:5:7f3968`
 *01.09. 03:50 UTC · Quelle: dream*

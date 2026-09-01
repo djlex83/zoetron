@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm-generated skill proposals converge on a common pattern: health-aware routing with timeout, retry budget, and circuit-breaker semantics.
+- Structured telemetry (model, status, latency, tokens) is absent from current calls, preventing data-driven router decisions.
+- The system repeatedly generates similar routing/fallback proposals but lacks an automated mechanism to promote them into active policy.
+- Latency variance on nemotron-3-ultra (13–42 s) exceeds acceptable bounds for interactive tasks, requiring timeout guards.
+- Free-tier models on OpenRouter consistently return 429 errors under load, making them unreliable for production workflows.
 - Market analysis completed only via reflex trigger, showing stale goals persist until explicit reflex activation rather than proactive scheduling.
 - Tool invocations (hand_action) lack pre-flight validation and failure capture, risking silent failures on missing/unreadable targets.
 - Fallback model latency varies wildly (100.9s → 15.6s), indicating no latency-aware routing or request timeout budget.
@@ -51,11 +56,6 @@
 - Pre-execution validation gaps (syntax, file existence, readability) allow preventable runtime failures that could be caught by static gates before han
 - Calibration drift in success prediction (overestimation) compounds planning errors, requiring dampening rules that halve predictions after large misse
 - Rate-limited models (429 errors) silently degrade system reliability without automatic circuit-breaking, forcing reactive fallbacks that increase late
-- Stress signals correlate with model failures but no automated resource reallocation exists.
-- Latency variance (4s to 30s) on same model demands latency-aware routing for time-critical tasks.
-- Redundant skill proposals indicate missing implementation tracking and deployment accountability.
-- Model recovery after failure suggests temporary rate limits rather than permanent unavailability.
-- Free-tier models exhibit intermittent 429 failures requiring automatic fallback with cooldown tracking.
 
 ---
 
