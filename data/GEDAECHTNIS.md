@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8521 Fakten** · Stand 2026-09-01 02:39 UTC · aktualisiert bei jedem Herzschlag
+**8526 Fakten** · Stand 2026-09-01 02:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4445
+- **dream:** 4450
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901024415:5:6de242`
+*01.09. 02:44 UTC · Quelle: dream*
+
+NVIDIA Nemotron returned 502 'Service temporarily overloaded' despite HTTP 200, showing upstream provider errors masquerade as success codes.
+
+### `dream:20260901024415:4:1ac0ef`
+*01.09. 02:44 UTC · Quelle: dream*
+
+Hand-action tooling returned exit code 1 with zero bytes read, revealing a silent I/O failure mode that bypasses error logging.
+
+### `dream:20260901024415:3:a562a9`
+*01.09. 02:44 UTC · Quelle: dream*
+
+Swarm-based debugging (planner/builder/critic) did not converge in 2 cycles, indicating the error-space is too large for fixed-iteration consensus.
+
+### `dream:20260901024415:2:15d04b`
+*01.09. 02:44 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model consistently succeeds where larger models fail, suggesting smaller specialized models have more generous quotas.
+
+### `dream:20260901024415:1:87263f`
+*01.09. 02:44 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systemic rate-limiting (429) under concurrent load, making them unreliable for production workflows.
 
 ### `dream:20260901023808:5:34a04d`
 *01.09. 02:38 UTC · Quelle: dream*
