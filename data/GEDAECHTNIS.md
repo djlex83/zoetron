@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9024 Fakten** · Stand 2026-09-01 17:42 UTC · aktualisiert bei jedem Herzschlag
+**9029 Fakten** · Stand 2026-09-01 17:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4760
+- **dream:** 4765
 - **swarm_artifact:** 1963
 - **last_swarm_critique:** 679
 - **anti_pattern:** 585
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901174831:5:58f9a2`
+*01.09. 17:48 UTC · Quelle: dream*
+
+Latency variance across successful models (15–116s) makes timeout tuning a moving target.
+
+### `dream:20260901174831:4:022a94`
+*01.09. 17:48 UTC · Quelle: dream*
+
+High metabolic stress (1.0) forces aggressive budget cuts (max_tasks=3, max_iterations=1) that starve recovery actions.
+
+### `dream:20260901174831:3:4b610c`
+*01.09. 17:48 UTC · Quelle: dream*
+
+The skill-to-ability pipeline fails at the filesystem layer: relative paths don't resolve to the real data root (ZOETRON_DATA).
+
+### `dream:20260901174831:2:de43f7`
+*01.09. 17:48 UTC · Quelle: dream*
+
+Upstream provider overload (502) cascades into local failures even when HTTP status is 200.
+
+### `dream:20260901174831:1:ec37ee`
+*01.09. 17:48 UTC · Quelle: dream*
+
+Free-tier models consistently hit rate limits (429) under load, making them unreliable for production workflows.
 
 ### `dream:20260901174029:5:007d77`
 *01.09. 17:40 UTC · Quelle: dream*

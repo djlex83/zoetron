@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 17:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 17:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance across successful models (15–116s) makes timeout tuning a moving target.
+- High metabolic stress (1.0) forces aggressive budget cuts (max_tasks=3, max_iterations=1) that starve recovery actions.
+- The skill-to-ability pipeline fails at the filesystem layer: relative paths don't resolve to the real data root (ZOETRON_DATA).
+- Upstream provider overload (502) cascades into local failures even when HTTP status is 200.
+- Free-tier models consistently hit rate limits (429) under load, making them unreliable for production workflows.
 - Event pruning is effective at maintaining memory hygiene, but skill completion remains a bottleneck.
 - Reflex-based execution successfully converged the swarm run, proving that automated, local-first tools can bypass external dependencies.
 - Stale artifacts block cognitive space and should be aggressively pruned or completed to maintain system focus.
@@ -51,11 +56,6 @@
 - The gap between 38 skill proposals and only 8 completed dreams reveals an execution bottleneck—generation outpaces implementation by nearly 5x.
 - Without a latency SLA guard, models like nemotron-3-ultra (58.9s) succeed but waste time budgets; a configurable abort threshold with immediate fallba
 - 429 rate-limit errors cascade across all models sharing the same OpenRouter provider, proving that throttling is provider-level and requires sliding-w
-- Poolside/laguna-s-2.1:free shows consistent success (2/2) with low latency (3.5-7.3s), suggesting it should be prioritized as primary model for simila
-- Evolutionary iteration with critic feedback can improve solution scores from 3/10 to 9/10 in a single generation, but requires explicit sandbox valida
-- Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3), indicating a need for empirical baseline tracking per model
-- Consecutive failures trigger automatic model bans (1800s), so error handling must track consecutive failures per model and proactively rotate before b
-- Free tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without request queuing an
 
 ---
 
