@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8795 Fakten** · Stand 2026-09-01 10:44 UTC · aktualisiert bei jedem Herzschlag
+**8800 Fakten** · Stand 2026-09-01 10:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4630
+- **dream:** 4635
 - **swarm_artifact:** 1909
 - **last_swarm_critique:** 670
 - **anti_pattern:** 573
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901104924:5:fe8ad6`
+*01.09. 10:49 UTC · Quelle: dream*
+
+Calibration consistently underestimates actual performance (predicted 6 vs actual 9), indicating the predictor lacks visibility into swarm compensation effects.
+
+### `dream:20260901104924:4:f49035`
+*01.09. 10:49 UTC · Quelle: dream*
+
+System achieved goal convergence in 1 cycle with score 9 despite 80% model failure rate, proving the swarm architecture tolerates massive LLM unreliability.
+
+### `dream:20260901104924:3:6186ff`
+*01.09. 10:49 UTC · Quelle: dream*
+
+InclusionAI Ling-3.0-Flash-Fin consistently succeeds with lowest latency (74.7s), suggesting smaller specialized models outperform large general ones under load.
+
+### `dream:20260901104924:2:5cf79d`
+*01.09. 10:49 UTC · Quelle: dream*
+
+NVIDIA Nemotron-3-Ultra shows intermittent 502 upstream overloads despite 200 OK responses, requiring response-body validation not just status codes.
+
+### `dream:20260901104924:1:205346`
+*01.09. 10:49 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit cascading 429 rate-limit failures once one model hits quota, making sequential fallback unreliable.
 
 ### `dream:20260901104041:5:d1e687`
 *01.09. 10:40 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 10:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 10:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration consistently underestimates actual performance (predicted 6 vs actual 9), indicating the predictor lacks visibility into swarm compensatio
+- System achieved goal convergence in 1 cycle with score 9 despite 80% model failure rate, proving the swarm architecture tolerates massive LLM unreliab
+- InclusionAI Ling-3.0-Flash-Fin consistently succeeds with lowest latency (74.7s), suggesting smaller specialized models outperform large general ones 
+- NVIDIA Nemotron-3-Ultra shows intermittent 502 upstream overloads despite 200 OK responses, requiring response-body validation not just status codes.
+- Free-tier models on OpenRouter exhibit cascading 429 rate-limit failures once one model hits quota, making sequential fallback unreliable.
 - The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating skill-to-action conversion lacks pre-flight validation and e
 - Simulation-driven revisions (3 risks, 3 revisions) addressed code-level issues but cannot resolve infrastructure failures like rate limits or path res
 - High stress (1.0) and conserve mode with severely limited budget (max_tasks: 3, max_iterations: 1) demand idempotent, minimal operations that can resu
@@ -51,11 +56,6 @@
 - Swarm convergence in one cycle with planner/builder/critic roles validates the multi-agent pattern for skill integration tasks.
 - Nemotron-3-ultra shows high latency variance (43–116 s) despite success, requiring latency-aware routing not just availability checks.
 - Free-tier models exhibit cascading 429/502 failures under load, making single-model reliance unsafe for production workflows.
-- TOR validation (grün, 423-line Python artifact) provides reliable ground-truth success signal.
-- Simulation-driven revision loops (3 risks → 3 revisions → applied) converge to working artifacts.
-- High stress (1.0) and conserve mode force strict task/iteration budgets that prevent retry storms.
-- Nvidia Nemotron succeeds but exhibits extreme latency variance (5.8s–161s) requiring adaptive timeouts.
-- Free-tier models consistently fail with 429 rate limits making them unreliable for primary workloads.
 
 ---
 
