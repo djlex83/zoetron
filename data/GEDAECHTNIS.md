@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8536 Fakten** · Stand 2026-09-01 02:59 UTC · aktualisiert bei jedem Herzschlag
+**8541 Fakten** · Stand 2026-09-01 03:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4460
+- **dream:** 4465
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901030430:5:322a1b`
+*01.09. 03:04 UTC · Quelle: dream*
+
+The goal 'Marktanalyse abschließen und Lücke nutzen' failed because the generated artifact contained a runtime error (Traceback), highlighting the need for syntax validation before execution.
+
+### `dream:20260901030430:4:f34ede`
+*01.09. 03:04 UTC · Quelle: dream*
+
+The calibration error of 5 (predicted 6, actual 1) reveals a significant overestimation of task success probability for complex goals like 'Marktanalyse'.
+
+### `dream:20260901030430:3:9902f1`
+*01.09. 03:04 UTC · Quelle: dream*
+
+Repeated `hand_action` failures with `exit: 1` and `gelesen: 0` suggest the generated Python code is failing immediately on execution, likely due to syntax or import errors.
+
+### `dream:20260901030430:2:221824`
+*01.09. 03:04 UTC · Quelle: dream*
+
+High latency on `nvidia/nemotron-3-ultra-550b-a55b:free` (up to 111.2s) indicates a need for timeout handling or asynchronous execution to prevent blocking.
+
+### `dream:20260901030430:1:d05061`
+*01.09. 03:04 UTC · Quelle: dream*
+
+The `z-ai/glm-5.2:free` model is consistently rate-limited (429) and should be temporarily blacklisted to avoid wasting cycles.
 
 ### `dream:20260901025831:5:1860b8`
 *01.09. 02:58 UTC · Quelle: dream*
