@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8844 Fakten** · Stand 2026-09-01 12:01 UTC · aktualisiert bei jedem Herzschlag
+**8849 Fakten** · Stand 2026-09-01 12:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4655
+- **dream:** 4660
 - **swarm_artifact:** 1921
 - **last_swarm_critique:** 672
 - **anti_pattern:** 577
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901122026:5:b667f5`
+*01.09. 12:20 UTC · Quelle: dream*
+
+Skill proposals accumulate without a staged promotion pipeline, causing proposals to linger as unactioned ideas.
+
+### `dream:20260901122026:4:dd65ee`
+*01.09. 12:20 UTC · Quelle: dream*
+
+Hand actions returning exit code 1 with zero bytes read reveal missing pre-flight checks for file existence and permissions.
+
+### `dream:20260901122026:3:2ece06`
+*01.09. 12:20 UTC · Quelle: dream*
+
+Swarm convergence fails when builder-to-critic ratio exceeds 3:1, suggesting a mandatory critic gate after each builder iteration.
+
+### `dream:20260901122026:2:5894e1`
+*01.09. 12:20 UTC · Quelle: dream*
+
+Evolution cycles stall at 7/10 because the critic detects demo stubs substituting for real simulations, indicating the simulation harness must enforce genuine execution before scoring.
+
+### `dream:20260901122026:1:8d02fd`
+*01.09. 12:20 UTC · Quelle: dream*
+
+Free tier models consistently hit 429 rate limits under load, requiring a health-aware router that tracks consecutive 429s and shifts traffic to healthier endpoints.
 
 ### `tool:fähigkeiten-ideen-in-echte-skills-wandel`
 *01.09. 12:00 UTC · Quelle: hands*
