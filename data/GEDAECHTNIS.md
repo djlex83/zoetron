@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9098 Fakten** · Stand 2026-09-01 19:54 UTC · aktualisiert bei jedem Herzschlag
+**9103 Fakten** · Stand 2026-09-01 20:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4810
+- **dream:** 4815
 - **swarm_artifact:** 1975
 - **last_swarm_critique:** 681
 - **anti_pattern:** 589
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901200121:5:3ed16d`
+*01.09. 20:01 UTC · Quelle: dream*
+
+Evolutionary optimization loops without convergence detection (score delta threshold) waste compute cycles on stagnant strategies.
+
+### `dream:20260901200121:4:062342`
+*01.09. 20:01 UTC · Quelle: dream*
+
+Missing AST-based syntax validation gate allows syntactically invalid generated code to reach execution, causing preventable runtime errors.
+
+### `dream:20260901200121:3:1ded49`
+*01.09. 20:01 UTC · Quelle: dream*
+
+Lack of proactive rate-limit header parsing and exponential backoff leads to repeated hammering of blocked endpoints, wasting latency budget.
+
+### `dream:20260901200121:2:07b1e8`
+*01.09. 20:01 UTC · Quelle: dream*
+
+Absence of real-time model health scoring and automatic failover causes cascading failures when primary models become unavailable.
+
+### `dream:20260901200121:1:0e6dc7`
+*01.09. 20:01 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit systematic rate-limiting (429) and upstream overload (502) failures, making them unreliable for critical-path tasks without robust fallback.
 
 ### `dream:20260901195313:5:2ef127`
 *01.09. 19:53 UTC · Quelle: dream*

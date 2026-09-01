@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 19:53:39",
+ "stand": "2026-09-01 20:01:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -244,6 +244,12 @@
   },
   {
    "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-ziele-erneuern.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
