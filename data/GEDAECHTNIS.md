@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8759 Fakten** · Stand 2026-09-01 09:08 UTC · aktualisiert bei jedem Herzschlag
+**8773 Fakten** · Stand 2026-09-01 09:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4605
-- **swarm_artifact:** 1903
-- **last_swarm_critique:** 669
+- **dream:** 4610
+- **swarm_artifact:** 1909
+- **last_swarm_critique:** 670
 - **anti_pattern:** 573
-- **last_swarm_goal:** 417
+- **last_swarm_goal:** 418
 - **strategy:** 307
-- **tool:** 102
+- **tool:** 103
 - **hand_result:** 93
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeiten-in-taten-umsetzen`
+*01.09. 09:38 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten in Taten umsetzen'. Datei: data/tools/fähigkeiten-in-taten-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*01.09. 09:38 UTC · Quelle: critic*
+
+score=9; issues=Skill-Generierung nutzt einfache Heuristik (Titel -> Funktionsname) statt semantischer Code-Synthese; für Produktionsnutzung wäre LLM-basierte Generierung nötig; Sandbox-Isolation erfolgt prozess-intern via importlib + chdir/sys.path-Manipulati
+
+### `last_swarm_goal`
+*01.09. 09:25 UTC · Quelle: system*
+
+Fähigkeiten in Taten umsetzen
+
+### `dream:20260901092454:5:e25d51`
+*01.09. 09:24 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260901092454:4:381f30`
+*01.09. 09:24 UTC · Quelle: dream*
+
+Swarm evolution produces high-scoring variants (9/9/9) but overall score stalls at 5/10, revealing a metric–reward misalignment.
+
+### `dream:20260901092454:3:d81337`
+*01.09. 09:24 UTC · Quelle: dream*
+
+Validation path breaks ('Pfadbruch zwischen Valid') indicate missing contract enforcement between planner, builder, and critic roles.
+
+### `dream:20260901092454:2:dba68d`
+*01.09. 09:24 UTC · Quelle: dream*
+
+Proposed skills accumulate but never integrate — the integration pipeline itself is the bottleneck, not proposal generation.
+
+### `dream:20260901092454:1:9d3fc2`
+*01.09. 09:24 UTC · Quelle: dream*
+
+Single-model dependency on z-ai/glm-5.2 causes systemic 429 failures that halt all LLM-dependent workflows.
 
 ### `tool:gelernte-fähigkeiten-besser-verknüpfen`
 *01.09. 09:07 UTC · Quelle: hands*
