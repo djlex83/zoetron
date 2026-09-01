@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8472 Fakten** · Stand 2026-09-01 00:48 UTC · aktualisiert bei jedem Herzschlag
+**8477 Fakten** · Stand 2026-09-01 00:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4420
+- **dream:** 4425
 - **swarm_artifact:** 1849
 - **last_swarm_critique:** 660
 - **anti_pattern:** 559
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901005523:5:002fcd`
+*01.09. 00:55 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ failures, indicating stable internal system health monitoring.
+
+### `dream:20260901005523:4:11eb32`
+*01.09. 00:55 UTC · Quelle: dream*
+
+Stale market analyses persist because there is no automated process to convert insights into actionable tasks.
+
+### `dream:20260901005523:3:d0a59f`
+*01.09. 00:55 UTC · Quelle: dream*
+
+Unimplemented skill proposals represent a gap between planning and execution that undermines system reliability.
+
+### `dream:20260901005523:2:19316c`
+*01.09. 00:55 UTC · Quelle: dream*
+
+Consistent success with nvidia/nemotron-3-ultra-550b-a55b:free suggests it should be prioritized as a reliable default model.
+
+### `dream:20260901005523:1:6fece4`
+*01.09. 00:55 UTC · Quelle: dream*
+
+Repeated 429 errors from z-ai/glm-5.2:free indicate a need for rate-limit-aware model routing and automatic failover.
 
 ### `dream:20260901004531:5:31e675`
 *01.09. 00:45 UTC · Quelle: dream*
