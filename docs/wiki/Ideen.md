@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 07:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 07:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
@@ -32,15 +32,20 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while external API failures persist, revealing a blind spot in health monitoring scope.
+- Calibration remains accurate (predicted=actual=6) despite model instability, suggesting the estimator is robust to provider noise.
+- Simulation gate catches 4 risks and forces 2 revisions before 'go' verdict, proving its value as a pre-execution quality filter.
+- Evolutionary swarm cycles improve solution scores (6→8-9) but fail to converge, indicating missing convergence criteria or insufficient critic diversi
+- Rate limiting (HTTP 429) across multiple model providers is the dominant failure mode, requiring systematic request throttling and fallback chaining.
 - Goal achievement (269-line Python artifact running) validates that the planner→executor→verifier loop works when model calls succeed.
 - Hand actions (file reads) complete in <0.3s with zero failures, confirming local tooling is more reliable than remote inference.
 - poolside/laguna-s-2.1:free exhibits extreme latency variance (72s vs 191s) when it succeeds, suggesting queue-depth-dependent scheduling.
@@ -51,11 +56,6 @@
 - Latency variance for successful calls spans 6–23 s even on the same model (Ling 3.0 Flash), indicating queue-depth jitter rather than model complexity
 - Nvidia Nemotron exhibits a distinct 502 upstream-overload failure mode that triggers a hard 30-minute lockout after three consecutive errors, removing
 - Free-tier models across all providers suffer pervasive 429 rate-limiting, making them unreliable for production workloads without aggressive request s
-- Calibration predictions matched actual outcomes with zero error, confirming accurate self-assessment of task difficulty.
-- Evolutionary variant testing reliably improves scores from 6 to 9 when data-flow integrity is corrected across generations.
-- Data flow breaks (Datenfluss-Bruch) are the primary critic-identified defect in skill-proposal evaluation pipelines, causing revision loops.
-- nvidia/nemotron-3-ultra-550b-a55b:free is the only reliable model in the pool, delivering consistent results despite latency variance from 15s to 75s.
-- 429 rate-limiting on z-ai/glm-5.2:free is a persistent, repeatable failure mode that blocks progress when no fallback model is available.
 
 ---
 

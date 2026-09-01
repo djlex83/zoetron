@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8698 Fakten** · Stand 2026-09-01 07:41 UTC · aktualisiert bei jedem Herzschlag
+**8703 Fakten** · Stand 2026-09-01 07:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4565
+- **dream:** 4570
 - **swarm_artifact:** 1891
 - **last_swarm_critique:** 667
 - **anti_pattern:** 571
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901074640:5:8a30c6`
+*01.09. 07:46 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external API failures persist, revealing a blind spot in health monitoring scope.
+
+### `dream:20260901074640:4:505d2c`
+*01.09. 07:46 UTC · Quelle: dream*
+
+Calibration remains accurate (predicted=actual=6) despite model instability, suggesting the estimator is robust to provider noise.
+
+### `dream:20260901074640:3:18e1f6`
+*01.09. 07:46 UTC · Quelle: dream*
+
+Simulation gate catches 4 risks and forces 2 revisions before 'go' verdict, proving its value as a pre-execution quality filter.
+
+### `dream:20260901074640:2:688219`
+*01.09. 07:46 UTC · Quelle: dream*
+
+Evolutionary swarm cycles improve solution scores (6→8-9) but fail to converge, indicating missing convergence criteria or insufficient critic diversity.
+
+### `dream:20260901074640:1:03c864`
+*01.09. 07:46 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) across multiple model providers is the dominant failure mode, requiring systematic request throttling and fallback chaining.
 
 ### `dream:20260901073915:5:47d652`
 *01.09. 07:39 UTC · Quelle: dream*
