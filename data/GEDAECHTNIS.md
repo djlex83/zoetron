@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9176 Fakten** · Stand 2026-09-01 21:50 UTC · aktualisiert bei jedem Herzschlag
+**9181 Fakten** · Stand 2026-09-01 22:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4865
+- **dream:** 4870
 - **swarm_artifact:** 1987
 - **last_swarm_critique:** 683
 - **anti_pattern:** 593
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901222551:5:05b197`
+*01.09. 22:25 UTC · Quelle: dream*
+
+Combining skills and reviving old memories are key intrinsic drives that should guide future learning and task prioritization.
+
+### `dream:20260901222551:4:3d5124`
+*01.09. 22:25 UTC · Quelle: dream*
+
+Periodic event pruning is essential to maintain system efficiency, as evidenced by the removal of 35 obsolete events.
+
+### `dream:20260901222551:3:babc54`
+*01.09. 22:25 UTC · Quelle: dream*
+
+Reflexes can successfully automate routine cleanup tasks (e.g., 'Marktanalyse-Abschlüsse aufräumen') with zero errors and fast execution.
+
+### `dream:20260901222551:2:474673`
+*01.09. 22:25 UTC · Quelle: dream*
+
+Automatically locking out models after consecutive failures prevents cascading delays and forces the system to find healthier alternatives.
+
+### `dream:20260901222551:1:2dac64`
+*01.09. 22:25 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly susceptible to rate limits (429) and upstream overloads (502), necessitating robust fallback chains.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Vorgeschlagene Faehigkei:2`
 *01.09. 21:48 UTC · Quelle: evolution*

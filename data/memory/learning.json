@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 21:49:04",
+ "stand": "2026-09-01 22:26:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -283,6 +283,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.718,

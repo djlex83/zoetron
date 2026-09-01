@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 21:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 22:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,25 +13,25 @@
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 3×)*
 - Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 3×)*
 - Implement model health registry with per-model 429/502 tracking, circuit-breaker state, and automatic fallback *(hatte die Idee 3×)*
-- Build a model router with health scoring, automatic failover, and exponential backoff on 429 responses. *(hatte die Idee 2×)*
-- Implement a circuit-breaker that quarantines models after N consecutive failures and schedules timed re-probes *(hatte die Idee 2×)*
-- Create a simulation harness that runs artifacts in a sandbox and feeds concrete errors back into revision loop *(hatte die Idee 2×)*
-- Define per-model latency SLOs and abort calls exceeding budget to prevent pipeline stalls. *(hatte die Idee 2×)*
-- Emit structured telemetry (model, error_type, latency, tokens) for continuous reliability analysis. *(hatte die Idee 2×)*
 - Implement a model router that deprioritizes free-tier endpoints after first 429 and falls back to paid/low-lat *(hatte die Idee 2×)*
 - Add latency-aware scheduling: track per-model rolling p95 and avoid models with variance >50s for time-critica *(hatte die Idee 2×)*
+- Create a 'revision budget' skill that caps simulation-revision cycles at 3 and forces early convergence via st *(hatte die Idee 2×)*
+- Calibrate predictors with a rolling error log; apply a -1 correction factor when absolute error >0.5 over last *(hatte die Idee 2×)*
+- Build a swarm convergence monitor that triggers early termination if score delta <0.5 across 2 consecutive cyc *(hatte die Idee 2×)*
+- Build failure signature cache: hash error patterns (e.g., '429 on free tier') and preemptively apply last succ *(hatte die Idee 2×)*
+- Deploy a fallback router that prefers ling-3.0-flash-fin as primary, routes to nemotron-3-ultra only when prim *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Combining skills and reviving old memories are key intrinsic drives that should guide future learning and task prioritization.
+- Periodic event pruning is essential to maintain system efficiency, as evidenced by the removal of 35 obsolete events.
+- Reflexes can successfully automate routine cleanup tasks (e.g., 'Marktanalyse-Abschlüsse aufräumen') with zero errors and fast execution.
+- Automatically locking out models after consecutive failures prevents cascading delays and forces the system to find healthier alternatives.
+- Free-tier models on OpenRouter are highly susceptible to rate limits (429) and upstream overloads (502), necessitating robust fallback chains.
 - Error recovery is reactive rather than proactive; no metabolic scheduler or stress-aware resource allocation exists to preemptively throttle or rerout
 - Stale market analyses and unimplemented skill proposals share a common root cause: lack of automated validation and deployment pipelines to transition
 - The absence of circuit breakers or fallback mechanisms causes cascading failures when primary models are throttled, wasting compute budget and stallin
@@ -51,11 +56,6 @@
 - Reflex-based learning from past failures works reliably, but it only fires after a goal is explicitly set, meaning the system must self-generate impro
 - Completed analyses and skill proposals accumulate without being actioned, indicating that finishing work is not the bottleneck — triggering execution 
 - The same model endpoint fails repeatedly with 429 errors while alternatives succeed, revealing that no automatic fallback exists when a primary resour
-- Stale market analyses represent untapped signal that can bias model selection and prompt routing toward historically validated strategies.
-- Convergence monitoring is essential to prevent evolutionary loops from spinning indefinitely when score deltas fall below meaningful thresholds.
-- AST validation gate is critical because hand_action execution failures due to syntax errors waste compute and delay convergence.
-- Latency variance across models (6.1s to 81.4s) shows that fallback chains must include latency-aware routing to maintain acceptable response times.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limit vulnerability that must be handled at the scheduler level, not the model level
 
 ---
 
