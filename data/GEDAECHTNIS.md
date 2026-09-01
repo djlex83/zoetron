@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8688 Fakten** · Stand 2026-09-01 07:20 UTC · aktualisiert bei jedem Herzschlag
+**8693 Fakten** · Stand 2026-09-01 07:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4555
+- **dream:** 4560
 - **swarm_artifact:** 1891
 - **last_swarm_critique:** 667
 - **anti_pattern:** 571
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901073222:5:355362`
+*01.09. 07:32 UTC · Quelle: dream*
+
+Circuit-breaker lockout (1800 s) is too coarse: it discards a model entirely instead of backing off exponentially, wasting recoverable capacity.
+
+### `dream:20260901073222:4:4efb44`
+*01.09. 07:32 UTC · Quelle: dream*
+
+The simulation gate caught 3 risks and forced 3 revisions before apply, proving that dry-run validation prevents faulty skill deployment.
+
+### `dream:20260901073222:3:a18868`
+*01.09. 07:32 UTC · Quelle: dream*
+
+Latency variance for successful calls spans 6–23 s even on the same model (Ling 3.0 Flash), indicating queue-depth jitter rather than model complexity.
+
+### `dream:20260901073222:2:6591c0`
+*01.09. 07:32 UTC · Quelle: dream*
+
+Nvidia Nemotron exhibits a distinct 502 upstream-overload failure mode that triggers a hard 30-minute lockout after three consecutive errors, removing capacity precisely when load is highest.
+
+### `dream:20260901073222:1:9292cf`
+*01.09. 07:32 UTC · Quelle: dream*
+
+Free-tier models across all providers suffer pervasive 429 rate-limiting, making them unreliable for production workloads without aggressive request spacing.
 
 ### `last_swarm_critique`
 *01.09. 07:19 UTC · Quelle: critic*

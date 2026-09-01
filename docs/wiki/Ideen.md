@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 07:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 07:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit-breaker lockout (1800 s) is too coarse: it discards a model entirely instead of backing off exponentially, wasting recoverable capacity.
+- The simulation gate caught 3 risks and forced 3 revisions before apply, proving that dry-run validation prevents faulty skill deployment.
+- Latency variance for successful calls spans 6–23 s even on the same model (Ling 3.0 Flash), indicating queue-depth jitter rather than model complexity
+- Nvidia Nemotron exhibits a distinct 502 upstream-overload failure mode that triggers a hard 30-minute lockout after three consecutive errors, removing
+- Free-tier models across all providers suffer pervasive 429 rate-limiting, making them unreliable for production workloads without aggressive request s
 - Calibration predictions matched actual outcomes with zero error, confirming accurate self-assessment of task difficulty.
 - Evolutionary variant testing reliably improves scores from 6 to 9 when data-flow integrity is corrected across generations.
 - Data flow breaks (Datenfluss-Bruch) are the primary critic-identified defect in skill-proposal evaluation pipelines, causing revision loops.
@@ -51,11 +56,6 @@
 - Nemotron's latency degraded from 16.1s to 21.2s between successful calls, demonstrating that even healthy models can worsen over time and need enforce
 - A persistent gap exists between generating skill proposals and implementing them, as overlapping proposals recur across cycles without evidence of con
 - The z-ai/glm-5.2:free model repeatedly fails with 429 Too Many Requests errors across multiple cycles, indicating free-tier rate limits are a systemic
-- Metabolism stress at 1.0 triggers conserve mode that caps tasks/iterations, starving the very fixes needed to reduce load.
-- Reflex scripts for error reduction fail silently without logging, preventing diagnostic feedback loops.
-- Hand actions fail when using relative paths instead of the absolute ZOETRON_DATA path, causing silent zero-byte reads.
-- The nvidia/nemotron-3-ultra model succeeds but exhibits high latency variance (8-42s), indicating unstable upstream capacity.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
 ---
 
