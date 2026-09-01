@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8477 Fakten** · Stand 2026-09-01 00:57 UTC · aktualisiert bei jedem Herzschlag
+**8494 Fakten** · Stand 2026-09-01 01:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4425
-- **swarm_artifact:** 1849
-- **last_swarm_critique:** 660
-- **anti_pattern:** 559
-- **last_swarm_goal:** 408
-- **strategy:** 300
+- **dream:** 4430
+- **swarm_artifact:** 1855
+- **last_swarm_critique:** 661
+- **anti_pattern:** 561
+- **last_swarm_goal:** 409
+- **strategy:** 301
 - **tool:** 97
-- **hand_result:** 89
+- **hand_result:** 90
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Häufige Fehlerquellen fi:2`
+*01.09. 01:12 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Functional Reactive Step-Pipeline with Async Auto-Patching - Implement a single functional pipeline script where data flows through a series of pure functions: `check_organ_1() -> repair_organ_1() -> check_organ_2() -> repair
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Häufige Fehlerquellen fi:1`
+*01.09. 01:12 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Declarative Configuration-Driven Remediation Engine - Develop a single entry point script that reads a YAML configuration file defining the three organs, their potential error sources, and the exact remediation steps (e.g., r
+
+### `last_swarm_critique`
+*01.09. 01:12 UTC · Quelle: critic*
+
+score=6; issues=Drei separate Skripte ohne vereinheitlichendes Hauptskript – kein einzelner Einstiegspunkt, der alle drei Organe nacheinander ausführt; Die Skripte identifizieren Fehlerquellen, beheben sie aber nicht aktiv – der Vertrag 'finden und beheben' wi
+
+### `last_swarm_goal`
+*01.09. 01:04 UTC · Quelle: system*
+
+Häufige Fehlerquellen finden und beheben
+
+### `dream:20260901010357:5:21f06d`
+*01.09. 01:03 UTC · Quelle: dream*
+
+Self-diagnosis and pruning both report zero issues, indicating the consolidation system is healthy and current knowledge is still valid.
+
+### `dream:20260901010357:4:e32458`
+*01.09. 01:03 UTC · Quelle: dream*
+
+The system productively generates concrete skill proposals from failure patterns, creating a self-improving loop where failures directly feed capability upgrades.
+
+### `dream:20260901010357:3:10f322`
+*01.09. 01:03 UTC · Quelle: dream*
+
+The sole successful model (poolside/laguna-s-2.1 at 8.4s) confirms that low-latency pools are consistently more available than high-latency free-tier alternatives.
+
+### `dream:20260901010357:2:e49f12`
+*01.09. 01:03 UTC · Quelle: dream*
+
+Reflex execution mode reliably converges on well-defined cleanup and decision tasks without any model dependency, outperforming model-driven approaches for routine goals.
+
+### `dream:20260901010357:1:7fc0a4`
+*01.09. 01:03 UTC · Quelle: dream*
+
+Free-tier model endpoints cluster-fail under load (429/502 errors within seconds), making them unreliable as primary inference routes without circuit-breaking and fallback.
 
 ### `dream:20260901005523:5:002fcd`
 *01.09. 00:55 UTC · Quelle: dream*

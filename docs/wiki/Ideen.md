@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 01:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,7 +30,7 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and pruning both report zero issues, indicating the consolidation system is healthy and current knowledge is still valid.
+- The system productively generates concrete skill proposals from failure patterns, creating a self-improving loop where failures directly feed capabili
+- The sole successful model (poolside/laguna-s-2.1 at 8.4s) confirms that low-latency pools are consistently more available than high-latency free-tier 
+- Reflex execution mode reliably converges on well-defined cleanup and decision tasks without any model dependency, outperforming model-driven approache
+- Free-tier model endpoints cluster-fail under load (429/502 errors within seconds), making them unreliable as primary inference routes without circuit-
 - Self-diagnosis consistently reports zero organ failures, indicating stable internal system health monitoring.
 - Stale market analyses persist because there is no automated process to convert insights into actionable tasks.
 - Unimplemented skill proposals represent a gap between planning and execution that undermines system reliability.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across dream cycles without implementation, creating a widening gap between proposed and actual capabilities.
 - Fallback model nvidia/nemotron shows extreme latency variance (11s to 41s) with no timeout or latency-budget enforcement, risking cascading delays.
 - The model z-ai/glm-5.2:free is chronically rate-limited with repeated 429s across multiple cycles, yet no circuit breaker removes it from the active r
-- Self-diagnosis consistently reports zero issues despite observable failures, suggesting internal monitoring is not capturing external dependency failu
-- Stale market analysis steps and unused skill proposals reveal a gap between idea generation and execution, indicating need for automated proposal-to-s
-- High failure count (68) on a single model shows lack of automatic failover and health-aware routing is causing cascading task delays.
-- Model latency varies significantly (5.3s to 11.3s) for similar token counts, suggesting cold starts or provider-side throttling that can be mitigated 
-- Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limiting issue that must be handled at the routing layer rather than per-call retrie
 
 ---
 

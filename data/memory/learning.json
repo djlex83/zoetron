@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 00:55:50",
+ "stand": "2026-09-01 01:12:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 18,
-   "erfolge": 18,
+   "laeufe": 17,
+   "erfolge": 17,
    "quote": 1.0
   },
   {
@@ -69,12 +69,6 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltete-infos-auffrischen.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "exemplar-bank-von-den-eigenen-besten-mom.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -95,6 +89,12 @@
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "veraltete-infos-auffrischen.py",
+   "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -159,21 +159,21 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.833,
- "simulationen_angewandt": 16,
+ "haende_quote": 0.826,
+ "simulationen_angewandt": 18,
  "swarm_scores": {
-  "n": 22,
+  "n": 21,
   "best": 8.0,
-  "schnitt": 5.91
+  "schnitt": 5.81
  },
  "score_nach_ziel_typ": {
-  "bau": {
-   "n": 6,
-   "schnitt": 4.33
-  },
   "analyse": {
-   "n": 15,
-   "schnitt": 6.53
+   "n": 16,
+   "schnitt": 6.5
+  },
+  "bau": {
+   "n": 5,
+   "schnitt": 3.6
   }
  }
 }
