@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9014 Fakten** · Stand 2026-09-01 17:25 UTC · aktualisiert bei jedem Herzschlag
+**9019 Fakten** · Stand 2026-09-01 17:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4750
+- **dream:** 4755
 - **swarm_artifact:** 1963
 - **last_swarm_critique:** 679
 - **anti_pattern:** 585
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901173032:5:cd7935`
+*01.09. 17:30 UTC · Quelle: dream*
+
+Pre-flight provider health probes would prevent wasted requests on already-throttled endpoints, saving both quota and latency.
+
+### `dream:20260901173032:4:d4a6b1`
+*01.09. 17:30 UTC · Quelle: dream*
+
+Swarm cycles converged=false despite evolution=true, indicating that evaluation criteria are too loose to halt search and more cycles or tighter convergence gates are needed.
+
+### `dream:20260901173032:3:f903e8`
+*01.09. 17:30 UTC · Quelle: dream*
+
+The gap between 38 skill proposals and only 8 completed dreams reveals an execution bottleneck—generation outpaces implementation by nearly 5x.
+
+### `dream:20260901173032:2:aca91e`
+*01.09. 17:30 UTC · Quelle: dream*
+
+Without a latency SLA guard, models like nemotron-3-ultra (58.9s) succeed but waste time budgets; a configurable abort threshold with immediate fallback is essential.
+
+### `dream:20260901173032:1:b14739`
+*01.09. 17:30 UTC · Quelle: dream*
+
+429 rate-limit errors cascade across all models sharing the same OpenRouter provider, proving that throttling is provider-level and requires sliding-window counters per provider rather than per model.
 
 ### `dream:20260901172317:5:3bcc7e`
 *01.09. 17:23 UTC · Quelle: dream*

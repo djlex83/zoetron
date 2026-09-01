@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 17:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 17:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pre-flight provider health probes would prevent wasted requests on already-throttled endpoints, saving both quota and latency.
+- Swarm cycles converged=false despite evolution=true, indicating that evaluation criteria are too loose to halt search and more cycles or tighter conve
+- The gap between 38 skill proposals and only 8 completed dreams reveals an execution bottleneck—generation outpaces implementation by nearly 5x.
+- Without a latency SLA guard, models like nemotron-3-ultra (58.9s) succeed but waste time budgets; a configurable abort threshold with immediate fallba
+- 429 rate-limit errors cascade across all models sharing the same OpenRouter provider, proving that throttling is provider-level and requires sliding-w
 - Poolside/laguna-s-2.1:free shows consistent success (2/2) with low latency (3.5-7.3s), suggesting it should be prioritized as primary model for simila
 - Evolutionary iteration with critic feedback can improve solution scores from 3/10 to 9/10 in a single generation, but requires explicit sandbox valida
 - Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3), indicating a need for empirical baseline tracking per model
@@ -51,11 +56,6 @@
 - Models that occasionally succeed under load (e.g., inclusionai/ling-3.0-flash-fin at 11s) must be tracked via a rolling reliability scorecard to infor
 - Local execution (hand-action/interpreter) completes in sub-second time and succeeds where remote LLM calls fail repeatedly, establishing a clear prefe
 - Simultaneous 429/502 errors across multiple remote models indicate systemic API-level rate limiting, not isolated model failures, requiring a circuit 
-- 39 skill proposals accumulate unimplemented because no mechanism exists to validate, prioritize, and deploy proposals as executable code.
-- Reflection loops (8 self-checks, 6 reflex uses) produce no measurable improvement because they lack automated verification of corrective actions.
-- Self-diagnosis reports zero organ errors while model inference fails repeatedly, indicating diagnostic coverage misses external dependency health.
-- Extreme latency variance (5s vs 75s for successful calls) without SLA enforcement causes unpredictable iteration times and timeout cascades.
-- Provider-level quota exhaustion (429 errors across all Google models simultaneously) makes per-model fallback ineffective; routing must track provider
 
 ---
 
