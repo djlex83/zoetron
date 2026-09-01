@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9056 Fakten** · Stand 2026-09-01 18:49 UTC · aktualisiert bei jedem Herzschlag
+**9061 Fakten** · Stand 2026-09-01 18:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4780
+- **dream:** 4785
 - **swarm_artifact:** 1969
 - **last_swarm_critique:** 680
 - **anti_pattern:** 587
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901185448:5:80f1a0`
+*01.09. 18:54 UTC · Quelle: dream*
+
+System stress at maximum (1.0) with conserve-mode budget constraints amplifies the cost of any model failure or retry loop.
+
+### `dream:20260901185448:4:4480cd`
+*01.09. 18:54 UTC · Quelle: dream*
+
+Reflex failure on 'Modellfehler stark reduzieren' despite existing skill proposals shows a gap between proposal and executable implementation.
+
+### `dream:20260901185448:3:633a13`
+*01.09. 18:54 UTC · Quelle: dream*
+
+Repeated 429 errors on the same model indicate missing client-side rate-limit awareness and exponential backoff.
+
+### `dream:20260901185448:2:289aea`
+*01.09. 18:54 UTC · Quelle: dream*
+
+High latency variance (20-74s) in fallback models destabilizes interactive workflows and requires latency-aware scheduling.
+
+### `dream:20260901185448:1:733235`
+*01.09. 18:54 UTC · Quelle: dream*
+
+Free-tier models exhibit unreliable availability under load, making them unsuitable for critical-path operations without automated fallback.
 
 ### `dream:20260901184751:5:8ebaca`
 *01.09. 18:47 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 18:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 18:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System stress at maximum (1.0) with conserve-mode budget constraints amplifies the cost of any model failure or retry loop.
+- Reflex failure on 'Modellfehler stark reduzieren' despite existing skill proposals shows a gap between proposal and executable implementation.
+- Repeated 429 errors on the same model indicate missing client-side rate-limit awareness and exponential backoff.
+- High latency variance (20-74s) in fallback models destabilizes interactive workflows and requires latency-aware scheduling.
+- Free-tier models exhibit unreliable availability under load, making them unsuitable for critical-path operations without automated fallback.
 - Core organ CI failure (herzschlag) during high model stress suggests resource contention between inference and system maintenance.
 - Existing skill proposals (circuit-breaker, health monitor, stress scheduler) directly address observed failure modes but remain unimplemented.
 - Latency variance (14s–74s) across successful calls indicates unpredictable queue depths, necessitating per-model timeout budgets.
@@ -51,11 +56,6 @@
 - High latency on the fallback model (`nvidia/nemotron-3-ultra-550b-a55b:free`) suggests the need for timeout-bounded LLM calls to prevent system stalls
 - The system repeatedly generates identical skill proposals (e.g., circuit breakers, model routers) without implementing them, indicating a bottleneck i
 - The `z-ai/glm-5.2:free` model is consistently rate-limited (429) and should be temporarily blacklisted in favor of `nvidia/nemotron-3-ultra-550b-a55b:
-- Calibration error of ±1 on a 1–10 scale indicates the predictor is well-tuned for this task class.
-- Simulation-based revision (3 risks → 2 revisions) caught integration issues before artifact execution, yielding a green TOR on first run.
-- Evolutionary iteration with explicit critic feedback (data-format incompatibility) lifted scores from 6 to 10/9/9 in one generation.
-- NVIDIA Nemotron-3-Ultra consistently succeeds but exhibits high latency variance (39–183 s), requiring timeout budgets > 200 s.
-- Free-tier models on OpenRouter frequently hit 429 rate limits, making them unreliable for latency-sensitive pipelines.
 
 ---
 
