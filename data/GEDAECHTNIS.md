@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9029 Fakten** · Stand 2026-09-01 17:50 UTC · aktualisiert bei jedem Herzschlag
+**9046 Fakten** · Stand 2026-09-01 18:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4765
-- **swarm_artifact:** 1963
-- **last_swarm_critique:** 679
-- **anti_pattern:** 585
-- **last_swarm_goal:** 427
-- **strategy:** 313
+- **dream:** 4770
+- **swarm_artifact:** 1969
+- **last_swarm_critique:** 680
+- **anti_pattern:** 587
+- **last_swarm_goal:** 428
+- **strategy:** 314
 - **tool:** 107
-- **hand_result:** 98
+- **hand_result:** 99
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modellfehler stark reduz:2`
+*01.09. 18:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 2): Laufzeit-Fehlerisolierung und Fallback - Refaktoriere die Modellinitialisierung, um einen dynamischen Wrapper um `default_factory` zu legen, der zur Laufzeit `TypeError`-Exceptions abfängt. Sollte die Felddefinition fehlerhaf
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Modellfehler stark reduz:0`
+*01.09. 18:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Lokalisierte Syntax- und Typkorrektur - Behebe den harten Syntaxfehler direkt im Code, indem du `default_factory:dict` in `default_factory=dict` änderst. Führe anschließend einen strengen statischen Typ-Check (z. B. mit mypy)
+
+### `last_swarm_critique`
+*01.09. 18:02 UTC · Quelle: critic*
+
+score=2; issues=SyntaxError: Datei läuft nicht. Zeile 235 enthält `last_model_hash: dict[str, str] = field(default_factory:dict)` — fehlendes Leerzeichen nach `default_factory` (`default_factory:dict` statt `default_factory=dict`). Dies ist ein harter Laufzeit
+
+### `last_swarm_goal`
+*01.09. 17:57 UTC · Quelle: system*
+
+Modellfehler stark reduzieren
+
+### `dream:20260901175634:5:89e118`
+*01.09. 17:56 UTC · Quelle: dream*
+
+Calibration error of ±1 on a 1–10 scale indicates the predictor is well-tuned for this task class.
+
+### `dream:20260901175634:4:a8459d`
+*01.09. 17:56 UTC · Quelle: dream*
+
+Simulation-based revision (3 risks → 2 revisions) caught integration issues before artifact execution, yielding a green TOR on first run.
+
+### `dream:20260901175634:3:b9af0b`
+*01.09. 17:56 UTC · Quelle: dream*
+
+Evolutionary iteration with explicit critic feedback (data-format incompatibility) lifted scores from 6 to 10/9/9 in one generation.
+
+### `dream:20260901175634:2:e8eb96`
+*01.09. 17:56 UTC · Quelle: dream*
+
+NVIDIA Nemotron-3-Ultra consistently succeeds but exhibits high latency variance (39–183 s), requiring timeout budgets > 200 s.
+
+### `dream:20260901175634:1:120b6f`
+*01.09. 17:56 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter frequently hit 429 rate limits, making them unreliable for latency-sensitive pipelines.
 
 ### `dream:20260901174831:5:58f9a2`
 *01.09. 17:48 UTC · Quelle: dream*
