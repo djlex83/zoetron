@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8992 Fakten** · Stand 2026-09-01 16:45 UTC · aktualisiert bei jedem Herzschlag
+**9009 Fakten** · Stand 2026-09-01 17:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4740
-- **swarm_artifact:** 1957
-- **last_swarm_critique:** 678
-- **anti_pattern:** 583
-- **last_swarm_goal:** 426
-- **strategy:** 312
-- **tool:** 106
+- **dream:** 4745
+- **swarm_artifact:** 1963
+- **last_swarm_critique:** 679
+- **anti_pattern:** 585
+- **last_swarm_goal:** 427
+- **strategy:** 313
+- **tool:** 107
 - **hand_result:** 98
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:skill-ideen-in-echte-faehigkeiten-umwand`
+*01.09. 17:08 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Skill-Ideen in echte Faehigkeiten umwandeln'. Datei: data/tools/skill-ideen-in-echte-faehigkeiten-umwand.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Skill-Ideen in echte Fae:1`
+*01.09. 17:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 6, 7]): Event-Driven Micro-Pipeline with Contract Testing - Replace the linear artifact-passing pipeline with an event bus (e.g., Redis Streams, Kafka, or in-process asyncio.Queue). Each stage is an independent service that e
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Skill-Ideen in echte Fae:0`
+*01.09. 17:05 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 9, 8]): Unified Schema-First Pipeline with Adapter Layer - Define a single canonical SkillSpec schema (JSON Schema) that all stages consume/produce. Stage 1 (Ideation) outputs only the schema subset it owns (maturity, tags, e
+
+### `last_swarm_critique`
+*01.09. 17:03 UTC · Quelle: critic*
+
+score=6; issues=Datenformat-Inkompatibilität zwischen den Pipeline-Stufen: Artefakt 1 liefert 'maturity', 'tags', 'estimated_effort' aber kein 'code'/'implementation', das Artefakt 2 erwartet; Artefakt 3 erwartet 'params'/'returns' als strukturierte Dicts mit 
+
+### `last_swarm_goal`
+*01.09. 16:51 UTC · Quelle: system*
+
+Skill-Ideen in echte Faehigkeiten umwandeln
+
+### `dream:20260901165021:5:5b4e98`
+*01.09. 16:50 UTC · Quelle: dream*
+
+Without per-model rate-limit tracking and exponential backoff, the system wastes cycles hammering throttled endpoints instead of failing over to available candidates.
+
+### `dream:20260901165021:4:6af20d`
+*01.09. 16:50 UTC · Quelle: dream*
+
+Stale self-diagnoses create blind spots: infrequent health checks allow degradation to accumulate until it cascades into visible failures.
+
+### `dream:20260901165021:3:78331d`
+*01.09. 16:50 UTC · Quelle: dream*
+
+Models that occasionally succeed under load (e.g., inclusionai/ling-3.0-flash-fin at 11s) must be tracked via a rolling reliability scorecard to inform routing decisions.
+
+### `dream:20260901165021:2:24b41f`
+*01.09. 16:50 UTC · Quelle: dream*
+
+Local execution (hand-action/interpreter) completes in sub-second time and succeeds where remote LLM calls fail repeatedly, establishing a clear preference hierarchy for reliability.
+
+### `dream:20260901165021:1:e1ebfe`
+*01.09. 16:50 UTC · Quelle: dream*
+
+Simultaneous 429/502 errors across multiple remote models indicate systemic API-level rate limiting, not isolated model failures, requiring a circuit breaker rather than per-model retries.
 
 ### `dream:20260901164305:5:c481b5`
 *01.09. 16:43 UTC · Quelle: dream*
