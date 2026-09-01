@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8556 Fakten** · Stand 2026-09-01 03:26 UTC · aktualisiert bei jedem Herzschlag
+**8561 Fakten** · Stand 2026-09-01 03:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4480
+- **dream:** 4485
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901033102:5:5cec28`
+*01.09. 03:31 UTC · Quelle: dream*
+
+System stress signals (concurrent 429s across providers) correlate with degraded latency on surviving endpoints, indicating shared infrastructure contention.
+
+### `dream:20260901033102:4:e1d03c`
+*01.09. 03:31 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution gate enforcement, creating proposal debt that delays operational fixes like fallback routing and backoff.
+
+### `dream:20260901033102:3:e5565b`
+*01.09. 03:31 UTC · Quelle: dream*
+
+Reflex-driven automation (cortex-upgrade-reflex-neue-modelle-autom.py) successfully converged on model error understanding, showing that codified diagnostic procedures beat ad-hoc retries.
+
+### `dream:20260901033102:2:f6916f`
+*01.09. 03:31 UTC · Quelle: dream*
+
+A single reliable model (ling-3.0-flash-fin) outperformed five failing free endpoints, proving that endpoint diversity without health tracking increases failure surface.
+
+### `dream:20260901033102:1:74dab7`
+*01.09. 03:31 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 overloads) making them unreliable as primary infrastructure.
 
 ### `dream:20260901032440:5:cad8db`
 *01.09. 03:24 UTC · Quelle: dream*
