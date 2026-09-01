@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 21:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 21:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale market analyses represent untapped signal that can bias model selection and prompt routing toward historically validated strategies.
+- Convergence monitoring is essential to prevent evolutionary loops from spinning indefinitely when score deltas fall below meaningful thresholds.
+- AST validation gate is critical because hand_action execution failures due to syntax errors waste compute and delay convergence.
+- Latency variance across models (6.1s to 81.4s) shows that fallback chains must include latency-aware routing to maintain acceptable response times.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limit vulnerability that must be handled at the scheduler level, not the model level
 - Self-diagnosis reports zero organ errors while model failures persist, indicating health checks don't cover external dependency degradation.
 - Pruning removes 61 events but zero facts, showing episodic memory grows faster than semantic consolidation.
 - Evolution/swarm cycles consistently stall at score 7 without convergence, revealing a missing 'good enough' termination criterion.
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free demonstrates consistent availability and lower latency among tested free models.
 - Nvidia's Nemotron model exhibits intermittent 502 upstream errors indicating provider-side capacity issues beyond rate limits.
 - Free-tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for production workloads.
-- Simulations approve risky operations (verdict: go) but real execution fails, showing simulation does not model rate-limit or filesystem constraints.
-- Reflex tools and swarm executions for skill-building consistently fail (ok: false), creating a proposal-to-production gap.
-- Hand actions fail on basic path resolution (sys.argv[1], ZOETRON_DATA), indicating environment assumptions break under execution.
-- System stress (1.0) triggers conserve mode that caps tasks to 3 and iterations to 1, starving the very retries needed to recover from rate limits.
-- All model failures stem from a single OpenRouter gateway rate limit (429), proving the multi-model fallback is illusory when sharing one quota.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9150 Fakten** · Stand 2026-09-01 21:19 UTC · aktualisiert bei jedem Herzschlag
+**9155 Fakten** · Stand 2026-09-01 21:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4850
+- **dream:** 4855
 - **swarm_artifact:** 1981
 - **last_swarm_critique:** 682
 - **anti_pattern:** 591
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901212500:5:108791`
+*01.09. 21:25 UTC · Quelle: dream*
+
+Stale market analyses represent untapped signal that can bias model selection and prompt routing toward historically validated strategies.
+
+### `dream:20260901212500:4:2e5052`
+*01.09. 21:25 UTC · Quelle: dream*
+
+Convergence monitoring is essential to prevent evolutionary loops from spinning indefinitely when score deltas fall below meaningful thresholds.
+
+### `dream:20260901212500:3:355348`
+*01.09. 21:25 UTC · Quelle: dream*
+
+AST validation gate is critical because hand_action execution failures due to syntax errors waste compute and delay convergence.
+
+### `dream:20260901212500:2:2936e3`
+*01.09. 21:25 UTC · Quelle: dream*
+
+Latency variance across models (6.1s to 81.4s) shows that fallback chains must include latency-aware routing to maintain acceptable response times.
+
+### `dream:20260901212500:1:ba5cb8`
+*01.09. 21:25 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic rate-limit vulnerability that must be handled at the scheduler level, not the model level.
 
 ### `dream:20260901211819:5:212558`
 *01.09. 21:18 UTC · Quelle: dream*
