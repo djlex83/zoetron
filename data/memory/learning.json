@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 20:16:26",
+ "stand": "2026-09-01 20:43:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -123,12 +123,6 @@
    "quote": 1.0
   },
   {
-   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -243,6 +237,12 @@
    "quote": 1.0
   },
   {
+   "tool": "neue-fähigkeiten-aktiv-vorschlagen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -250,6 +250,12 @@
   },
   {
    "tool": "veraltete-ziele-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

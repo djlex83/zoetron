@@ -470,3 +470,64 @@
 {"ts": 1787688338.0194407, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "revise", "risks": 4, "revisions": 3}}
 {"ts": 1787688338.0196195, "kind": "simulation_applied", "payload": {"revisions": 0}}
 {"ts": 1787688375.8278737, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 37.7, "tokens_ein": 7488, "tokens_aus": 2038}}
+{"ts": 1787688518.1471264, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 142.2, "tokens_ein": 1920, "tokens_aus": 10000}}
+{"ts": 1787688518.1476142, "kind": "calibration", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "predicted": 4, "actual": 5, "abs_error": 1}}
+{"ts": 1787688518.147689, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 5}}
+{"ts": 1787688518.1479437, "kind": "bahnen", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 7, "ids": ["f:9f73add2cf92", "f:73f144b5ebbe", "e:99433f1eacfc", "e:eca1e55bb6f9", "e:7a89957706b9", "e:e2f87bfd5dc7", "e:ebfdc74d8d61"], "ziel_id": "g:e550bf96d00e"}}
+{"ts": 1787688544.24193, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 23.4, "tokens_ein": 194, "tokens_aus": 694}}
+{"ts": 1787688561.005477, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.9, "tokens_ein": 794, "tokens_aus": 413}}
+{"ts": 1787688561.0059052, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten\nCritic issues: Critic outpu", "variants": 3, "winner_index": 0, "scores": [9, 5, 6]}}
+{"ts": 1787688571.3330877, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.5, "tokens_ein": 505, "tokens_aus": 71}}
+{"ts": 1787688588.979531, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 17.5, "tokens_ein": 243, "tokens_aus": 681}}
+{"ts": 1787688588.979724, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "revise", "risks": 4, "revisions": 3}}
+{"ts": 1787688588.9798293, "kind": "simulation_applied", "payload": {"revisions": 1}}
+{"ts": 1787688588.9799302, "kind": "swarm_finished", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787688588.980119, "kind": "act_done", "payload": {"goal_title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "score": 5, "converged": false}}
+{"ts": 1787688589.09708, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
+{"ts": 1787688590.5625577, "kind": "issue_synced", "payload": {"issue": 111, "state": "open"}}
+{"ts": 1787688601.1004639, "kind": "fussball_messung", "payload": {"title": "Fußball-Messung: zoetron_6cae1f330f erreicht 49.48 % Treffer (Basislinie 50.18 %), Log-Loss 1.0124 (Basislinie 1.0073)", "variante": "zoetron_6cae1f330f", "treffer": 0.4948, "log_loss": 1.0124, "abstand_zur_basislinie_pp": -0.72, "besser": false}}
+{"ts": 1787688638.5426202, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787689931.83995, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787689936.5225847, "kind": "nachspiel", "payload": {"pruefer": "fussball_log_loss", "vorher": -0.15, "jetzt": -0.15, "delta": -0.25, "spuren": 1}}
+{"ts": 1787689953.9046311, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 17.1, "tokens_ein": 1590, "tokens_aus": 454}}
+{"ts": 1787689953.9052355, "kind": "skill_proposal", "payload": {"proposal": "Implement a response cache keyed by goal hash that stores successful model outputs and serves them during 429 cascades before attempting any new API call."}}
+{"ts": 1787689953.9053082, "kind": "skill_proposal", "payload": {"proposal": "Add a calibration corrector that multiplies new score predictions by (recent actual / recent predicted) from the last N calibration events before committing to a plan."}}
+{"ts": 1787689953.9053838, "kind": "skill_proposal", "payload": {"proposal": "Enforce a 'revisions_applied == revisions_required' gate after simulation: block execution until all flagged revisions are applied or explicitly waived with a reason."}}
+{"ts": 1787689953.9054468, "kind": "skill_proposal", "payload": {"proposal": "Build an evolution-first policy for goals whose baseline score is below 5: always generate at least 3 variants and run the critic before spending tokens on full execution."}}
+{"ts": 1787689953.9055018, "kind": "skill_proposal", "payload": {"proposal": "Create a skill-proposal test queue that automatically schedules each proposed skill as a task within the next N cycles, demoting skills that fail twice."}}
+{"ts": 1787689953.9055564, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787689963.9184148, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 8.5, "tokens_ein": 492, "tokens_aus": 249}}
+{"ts": 1787689963.918582, "kind": "drive_goal", "payload": {"title": "Mehr Modellfehler verstehen und beheben", "why": "Viele Berechnungen schlagen fehl, obwohl die meisten klappen. Wenn ich herausfinde, warum Dinge scheitern, werde ich zuverlässiger.", "signal": "failure"}}
+{"ts": 1787689963.918665, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "why": "Es wurden 35 neue Fähigkeiten vorgeschlagen, aber nur wenige wurden je ausprobiert. Ich sollte mehr davon tatsächlich testen, damit sie mir nützen.", "signal": "gap"}}
+{"ts": 1787689963.9187348, "kind": "drive_goal", "payload": {"title": "Traum und Fußball-Ergebnis verbinden", "why": "Ein alter Traum passt auffällig gut zu einem früheren Fußball-Versuch. Beides zusammenzudenken könnte neue Ideen für bessere Ergebnisse bringen.", "signal": "combination"}}
+{"ts": 1787689965.1050854, "kind": "drive_whisper", "payload": {"title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "why": "Das ist die eigentliche Aufgabe, und sie hat einen Kritiker, den du nicht ueberreden kannst: das Spielergebnis. Zu schlagen sind 50,2 Prozent Treffer bei Log-Loss 1,0073; der Buchmacher steht bei 51,5 / 0,9921. Unbearbeitet liegt: Elo mit Tordifferenz und eigenem K je Wettbewerb, Rueckkehr zum Mitte", "geerbt": true, "auftrag_zeichen": 7859, "versuch": 13}}
+{"ts": 1787689965.738941, "kind": "swarm_started", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten"}}
+{"ts": 1787689971.729324, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787689972.432399, "kind": "metabolism_check", "payload": {"stress": 0.081, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
+{"ts": 1787690131.8640046, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 159.3, "tokens_ein": 4708, "tokens_aus": 10000}}
+{"ts": 1787690135.384509, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.3, "tokens_ein": 505, "tokens_aus": 44}}
+{"ts": 1787690159.894306, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 24.4, "tokens_ein": 243, "tokens_aus": 778}}
+{"ts": 1787690159.894497, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "revise", "risks": 4, "revisions": 4}}
+{"ts": 1787690159.8945992, "kind": "simulation_applied", "payload": {"revisions": 0}}
+{"ts": 1787690200.1068454, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 40.1, "tokens_ein": 7633, "tokens_aus": 1929}}
+{"ts": 1787690242.8448088, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 41.2, "tokens_ein": 1954, "tokens_aus": 1317}}
+{"ts": 1787690242.8454237, "kind": "calibration", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "predicted": 5, "actual": 5, "abs_error": 0}}
+{"ts": 1787690242.8455074, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 5}}
+{"ts": 1787690242.8458164, "kind": "bahnen", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 8, "ids": ["f:9f73add2cf92", "f:73f144b5ebbe", "e:99433f1eacfc", "e:eca1e55bb6f9", "e:ebfdc74d8d61", "e:7a89957706b9", "e:be41cb07cf36", "e:0e25c261afeb"], "ziel_id": "g:e550bf96d00e"}}
+{"ts": 1787690283.2493742, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 40.4, "tokens_ein": 292, "tokens_aus": 822}}
+{"ts": 1787690283.566538, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787690283.5665357, "schalter_geoeffnet": false}}
+{"ts": 1787690283.9585228, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787690283.9585207, "schalter_geoeffnet": false}}
+{"ts": 1787690321.0185497, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 37.1, "tokens_ein": 747, "tokens_aus": 1636}}
+{"ts": 1787690321.0189314, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten\nCritic issues: Kein empiris", "variants": 3, "winner_index": 2, "scores": [7.5, 8.0, 8.5]}}
+{"ts": 1787690334.9582176, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 6.9, "tokens_ein": 534, "tokens_aus": 110}}
+{"ts": 1787690335.459697, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787690335.4596949, "schalter_geoeffnet": false}}
+{"ts": 1787690335.8154316, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787690335.815429, "schalter_geoeffnet": false}}
+{"ts": 1787690341.5415225, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 5.7, "tokens_ein": 181, "tokens_aus": 792}}
+{"ts": 1787690341.5417032, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "revise", "risks": 5, "revisions": 1}}
+{"ts": 1787690341.5418334, "kind": "simulation_applied", "payload": {"revisions": 1}}
+{"ts": 1787690341.5419664, "kind": "swarm_finished", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787690341.542173, "kind": "act_done", "payload": {"goal_title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "score": 5, "converged": false}}
+{"ts": 1787690341.682429, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.04}}
+{"ts": 1787690343.1361215, "kind": "issue_synced", "payload": {"issue": 111, "state": "open"}}
+{"ts": 1787690353.9072816, "kind": "fussball_messung", "payload": {"title": "Fußball-Messung: zoetron_40c3426639 erreicht 49.48 % Treffer (Basislinie 50.18 %), Log-Loss 1.0124 (Basislinie 1.0073)", "variante": "zoetron_40c3426639", "treffer": 0.4948, "log_loss": 1.0124, "abstand_zur_basislinie_pp": -0.72, "besser": false}}
+{"ts": 1787690393.3058693, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

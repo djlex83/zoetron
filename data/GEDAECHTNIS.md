@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9120 Fakten** · Stand 2026-09-01 20:17 UTC · aktualisiert bei jedem Herzschlag
+**9125 Fakten** · Stand 2026-09-01 20:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4820
+- **dream:** 4825
 - **swarm_artifact:** 1981
 - **last_swarm_critique:** 682
 - **anti_pattern:** 591
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901204146:5:dd3b2b`
+*01.09. 20:41 UTC · Quelle: dream*
+
+Stress accumulation from repeated failures is not monitored or throttled, leading to runaway resource consumption
+
+### `dream:20260901204146:4:1d056a`
+*01.09. 20:41 UTC · Quelle: dream*
+
+Swarm convergence fails when critical roles lack redundancy and health-aware routing
+
+### `dream:20260901204146:3:1f9121`
+*01.09. 20:41 UTC · Quelle: dream*
+
+Code execution failures occur without pre-validation, wasting cycles on syntactically invalid artifacts
+
+### `dream:20260901204146:2:47cb56`
+*01.09. 20:41 UTC · Quelle: dream*
+
+Model failures cascade when fallback chains are absent, causing complete task paralysis instead of graceful degradation
+
+### `dream:20260901204146:1:8eb0d4`
+*01.09. 20:41 UTC · Quelle: dream*
+
+Rate limiting (429) is the dominant failure mode across all API providers, indicating systemic overload rather than isolated incidents
 
 ### `tool:vorgeschlagene-fähigkeiten-wirklich-fert`
 *01.09. 20:16 UTC · Quelle: hands*
