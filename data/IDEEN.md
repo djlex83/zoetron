@@ -1,12 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 14:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 14:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototy *(hatte die Idee 6×)*
-- Enforce PathContract at skill registration: require I/O skills to declare path parameters, auto-wrap with reso *(hatte die Idee 3×)*
 - Implement per-model telemetry (p50/p95 latency, error rate, token efficiency) over a 10-minute sliding window  *(hatte die Idee 3×)*
 - Add a stress-aware scheduler that halves max_concurrent_tasks and doubles request timeouts when metabolism.str *(hatte die Idee 3×)*
 - Create a skill-graduation pipeline requiring 1-hour A/B test (success rate > baseline +10%, p95 latency < 2x b *(hatte die Idee 3×)*
@@ -20,6 +19,7 @@
 - Deploy QuotaAwareRouter with per-key circuit breakers, EWMA latency tracking, and automatic fallback to health *(hatte die Idee 2×)*
 - Implement SyntheticProbeHarness running lightweight completions every 60s per model to populate ModelHealthReg *(hatte die Idee 2×)*
 - Create ExecutionGapTracker mapping each drive goal to concrete skill proposals with goal_age alerts (>24h) and *(hatte die Idee 2×)*
+- Enforce PathContract at skill registration: require I/O skills to declare path parameters, auto-wrap with reso *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -30,10 +30,10 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-based revision (5 risks → 3 patches) catches defects before deployment; simulation should be a mandatory gate for all artifact changes.
+- Evolutionary search (3 variants, 2 cycles) lifted scores from 4 to 7–9, proving iterative variant generation with critic feedback is a high-leverage p
+- Calibration error of 4 (predicted 8 vs actual 4) reveals systematic overestimation of task complexity; historical actuals must feed future predictions
+- nvidia/nemotron-3-ultra-550b-a55b:free succeeds reliably but shows high latency variance (48–137 s), requiring async invocation with configurable time
+- The model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limiting errors, making it unreliable without exponential backoff and automatic fall
 - The simulation-driven revision loop (verdict=revise, risks=3, revisions=3) indicates skill proposals require multi-pass validation before consolidatio
 - nvidia/nemotron-3-ultra-550b-a55b:free exhibits high latency variance (76-158s) and intermittent 502 upstream errors.
 - z-ai/glm-5.2:free offers low latency (~4.5s) when requests succeed but fails with 429 errors >80% of the time.
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates actual effort (predicted 6 vs actual 9), causing under-resourced planning cycles.
 - Self-diagnosis treats API failures as transient rather than organ-level degradation, so health signals never trigger fallback logic.
 - Rate-limited endpoints (429 errors) repeatedly block primary model calls while fallback models succeed with high latency, revealing no automatic quota
-- Hand_action failed because relative paths did not resolve to real files under the data path, indicating missing pre-execution argument validation.
-- Calibration underestimated effort by 50% (predicted 6 vs actual 9), revealing a systematic undercounting of iteration overhead.
-- The simulation acted as a circuit breaker: after applying its 3 revisions, previously failing models resumed succeeding.
-- Conserve mode with max_iterations=1 is too restrictive for multi-step validation tasks, causing incomplete execution under high stress.
-- Simultaneous 429 errors across multiple models indicate a shared API rate-limit bottleneck, not model-specific failures, requiring provider diversific
 
 ---
 

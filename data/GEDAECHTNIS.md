@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8919 Fakten** · Stand 2026-09-01 14:16 UTC · aktualisiert bei jedem Herzschlag
+**8936 Fakten** · Stand 2026-09-01 14:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4700
-- **swarm_artifact:** 1939
-- **last_swarm_critique:** 675
-- **anti_pattern:** 579
-- **last_swarm_goal:** 423
-- **strategy:** 310
+- **dream:** 4705
+- **swarm_artifact:** 1945
+- **last_swarm_critique:** 676
+- **anti_pattern:** 581
+- **last_swarm_goal:** 424
+- **strategy:** 311
 - **tool:** 104
-- **hand_result:** 97
+- **hand_result:** 98
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Analysedaten e:2`
+*01.09. 14:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Lazy on-demand reconciliation layer: Wrap SemanticMemory in a proxy that transpa - Build a ReconcilingMemoryProxy that implements the SemanticMemory interface but intercepts all read calls (get_entry, query). On each read: (1
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Analysedaten e:0`
+*01.09. 14:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-sourced rebuild: Instead of patching existing memory in place, replay all  - Create an EventReplayUpdater that (1) collects all analysis events from a structured event log (not raw JSON files), (2) applies a determinist
+
+### `last_swarm_critique`
+*01.09. 14:32 UTC · Quelle: critic*
+
+score=7; issues=Auto-resolved contradictions are computed but not applied to semantic memory - the validation detects and decides on resolutions (timestamp-based, confidence-based, source-based) but lacks code to persist these fixes back to the memory store; l
+
+### `last_swarm_goal`
+*01.09. 14:23 UTC · Quelle: system*
+
+Veraltete Analysedaten erneuern und aktualisieren
+
+### `dream:20260901142215:5:2c6267`
+*01.09. 14:22 UTC · Quelle: dream*
+
+Simulation-based revision (5 risks → 3 patches) catches defects before deployment; simulation should be a mandatory gate for all artifact changes.
+
+### `dream:20260901142215:4:72190b`
+*01.09. 14:22 UTC · Quelle: dream*
+
+Evolutionary search (3 variants, 2 cycles) lifted scores from 4 to 7–9, proving iterative variant generation with critic feedback is a high-leverage pattern.
+
+### `dream:20260901142215:3:ac28b4`
+*01.09. 14:22 UTC · Quelle: dream*
+
+Calibration error of 4 (predicted 8 vs actual 4) reveals systematic overestimation of task complexity; historical actuals must feed future predictions.
+
+### `dream:20260901142215:2:8d4715`
+*01.09. 14:22 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free succeeds reliably but shows high latency variance (48–137 s), requiring async invocation with configurable timeout budgets.
+
+### `dream:20260901142215:1:b57b4c`
+*01.09. 14:22 UTC · Quelle: dream*
+
+The model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limiting errors, making it unreliable without exponential backoff and automatic fallback routing.
 
 ### `dream:20260901141416:5:b25514`
 *01.09. 14:14 UTC · Quelle: dream*
