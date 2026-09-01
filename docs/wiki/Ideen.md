@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 03:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Market analysis completed only via reflex trigger, showing stale goals persist until explicit reflex activation rather than proactive scheduling.
+- Tool invocations (hand_action) lack pre-flight validation and failure capture, risking silent failures on missing/unreadable targets.
+- Fallback model latency varies wildly (100.9s → 15.6s), indicating no latency-aware routing or request timeout budget.
+- Multiple skill proposals for model reliability (health tracker, router, timeout/retry, metrics) exist but remain unimplemented, creating a persistent 
+- Repeated 429 errors on the primary model (z-ai/glm-5.2:free) reveal no automatic failover mechanism, causing reliance on a high-latency fallback (nvid
 - Model health tracking is absent; consecutive 429 errors should trigger timed cooldowns and automatic re-enable probes rather than persistent manual in
 - Skill proposals accumulate faster than validation capacity, creating a backlog that demands automated triage (critic scoring, minimum sub-score thresh
 - Pre-execution validation gaps (syntax, file existence, readability) allow preventable runtime failures that could be caught by static gates before han
@@ -51,11 +56,6 @@
 - Redundant skill proposals indicate missing implementation tracking and deployment accountability.
 - Model recovery after failure suggests temporary rate limits rather than permanent unavailability.
 - Free-tier models exhibit intermittent 429 failures requiring automatic fallback with cooldown tracking.
-- System stress signals (concurrent 429s across providers) correlate with degraded latency on surviving endpoints, indicating shared infrastructure cont
-- Skill proposals accumulate without execution gate enforcement, creating proposal debt that delays operational fixes like fallback routing and backoff.
-- Reflex-driven automation (cortex-upgrade-reflex-neue-modelle-autom.py) successfully converged on model error understanding, showing that codified diag
-- A single reliable model (ling-3.0-flash-fin) outperformed five failing free endpoints, proving that endpoint diversity without health tracking increas
-- Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 overloads) making them unreliable as primary infrastructure.
 
 ---
 

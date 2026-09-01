@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8571 Fakten** · Stand 2026-09-01 03:45 UTC · aktualisiert bei jedem Herzschlag
+**8576 Fakten** · Stand 2026-09-01 03:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4495
+- **dream:** 4500
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901035002:5:7f3968`
+*01.09. 03:50 UTC · Quelle: dream*
+
+Market analysis completed only via reflex trigger, showing stale goals persist until explicit reflex activation rather than proactive scheduling.
+
+### `dream:20260901035002:4:23efb4`
+*01.09. 03:50 UTC · Quelle: dream*
+
+Tool invocations (hand_action) lack pre-flight validation and failure capture, risking silent failures on missing/unreadable targets.
+
+### `dream:20260901035002:3:dc6ce9`
+*01.09. 03:50 UTC · Quelle: dream*
+
+Fallback model latency varies wildly (100.9s → 15.6s), indicating no latency-aware routing or request timeout budget.
+
+### `dream:20260901035002:2:1ab4ef`
+*01.09. 03:50 UTC · Quelle: dream*
+
+Multiple skill proposals for model reliability (health tracker, router, timeout/retry, metrics) exist but remain unimplemented, creating a persistent proposal-to-execution gap.
+
+### `dream:20260901035002:1:e70724`
+*01.09. 03:50 UTC · Quelle: dream*
+
+Repeated 429 errors on the primary model (z-ai/glm-5.2:free) reveal no automatic failover mechanism, causing reliance on a high-latency fallback (nvidia/nemotron-3-ultra).
 
 ### `dream:20260901034344:5:960abc`
 *01.09. 03:43 UTC · Quelle: dream*
