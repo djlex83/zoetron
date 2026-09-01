@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9218 Fakten** · Stand 2026-09-01 23:32 UTC · aktualisiert bei jedem Herzschlag
+**9223 Fakten** · Stand 2026-09-01 23:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4900
+- **dream:** 4905
 - **swarm_artifact:** 1989
 - **last_swarm_critique:** 684
 - **anti_pattern:** 595
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901233713:5:7fb939`
+*01.09. 23:37 UTC · Quelle: dream*
+
+A high volume of proposed skills that are never implemented represents a systemic gap between planning and execution capabilities.
+
+### `dream:20260901233713:4:036a20`
+*01.09. 23:37 UTC · Quelle: dream*
+
+Reflexive execution can bypass complex model routing and achieve goals directly, proving that some tasks are better handled by deterministic scripts rather than LLMs.
+
+### `dream:20260901233713:3:35b8fc`
+*01.09. 23:37 UTC · Quelle: dream*
+
+Accumulated stale tasks and unimplemented skill proposals create cognitive overhead, highlighting the need for active lifecycle management of system goals.
+
+### `dream:20260901233713:2:694a0c`
+*01.09. 23:37 UTC · Quelle: dream*
+
+High latency (7-12s) on free models compounds with frequent failures, drastically reducing effective throughput and increasing total task completion time.
+
+### `dream:20260901233713:1:4550b4`
+*01.09. 23:37 UTC · Quelle: dream*
+
+Free-tier LLM endpoints exhibit cascading rate-limit failures (429) and upstream overloads (502), making them unreliable for time-sensitive or high-volume tasks.
 
 ### `dream:20260901232950:5:b37f60`
 *01.09. 23:29 UTC · Quelle: dream*

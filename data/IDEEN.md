@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 23:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 23:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A high volume of proposed skills that are never implemented represents a systemic gap between planning and execution capabilities.
+- Reflexive execution can bypass complex model routing and achieve goals directly, proving that some tasks are better handled by deterministic scripts r
+- Accumulated stale tasks and unimplemented skill proposals create cognitive overhead, highlighting the need for active lifecycle management of system g
+- High latency (7-12s) on free models compounds with frequent failures, drastically reducing effective throughput and increasing total task completion t
+- Free-tier LLM endpoints exhibit cascading rate-limit failures (429) and upstream overloads (502), making them unreliable for time-sensitive or high-vo
 - Self-diagnosis reports zero internal organ errors while external API failures dominate, revealing that resilience must target dependency boundaries, n
 - The reflex 'gelernte-fähigkeiten-besser-verknüpfen.py' executed autonomously and converged, proving meta-learning loops can close without external orc
 - Five skill proposals exist but zero have entered a validation pipeline, creating a structural gap between architectural intent and executable capabili
@@ -51,11 +56,6 @@
 - 55 skill proposals exist without a validation pipeline, causing proposal overload and preventing promotion of high-value skills.
 - nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (9.7–25.9s), suggesting the need for latency-aware routing and time
 - The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors across multiple timestamps, indicating it should be deprioritized or removed
-- The 'Kein lauffaehiger Python' critique shows that code generation without execution validation leads to non-functional artifacts despite appearing co
-- Models like poolside/laguna-s-2.1 and inclusionai/ling-3.0-flash-fin succeeded where others failed, suggesting certain free-tier models are more relia
-- Evolution runs with variant scoring (8, 9, 7) show that iterative refinement with critique feedback significantly improves output quality from 0/10 to
-- Calibration predicted 6 successful abilities but achieved 0, revealing a severe overconfidence bias in planning versus execution reality.
-- Repeated 429 Too Many Requests errors across multiple models indicate rate limiting is a systemic bottleneck when hitting OpenRouter's free endpoints 
 
 ---
 

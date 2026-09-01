@@ -835,3 +835,45 @@
 {"ts": 1787700462.413182, "kind": "hand_action", "payload": {"ok": false, "exit": null, "error": "timeout after 30.0s", "duration_s": 30.0}}
 {"ts": 1787700462.865744, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.45}}
 {"ts": 1787700463.327483, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.46}}
+{"ts": 1787700606.672715, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787700635.455272, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 16.0, "tokens_ein": 1429, "tokens_aus": 488}}
+{"ts": 1787700635.45631, "kind": "skill_proposal", "payload": {"proposal": "Wrap all hand_actions in a guard: pre-flight no-op dry-run requiring exit 0, plus a timeout parameter with automatic retry-once and failure-to-issue escalation on timeout."}}
+{"ts": 1787700635.456431, "kind": "skill_proposal", "payload": {"proposal": "Change swarm termination policy: if score < 6 and converged=false after max cycles, re-enter evolution once with the critic's open issues as the new problem statement before accepting the result."}}
+{"ts": 1787700635.4565322, "kind": "skill_proposal", "payload": {"proposal": "Add a post-simulation assertion that revisions_applied == revisions_proposed; log a warning and re-apply any dropped revision instead of proceeding."}}
+{"ts": 1787700635.4566417, "kind": "skill_proposal", "payload": {"proposal": "Implement proposal-aging: each skill_proposal older than N cycles must be either tested in a sandbox run or explicitly demoted, preventing indefinite backlog growth."}}
+{"ts": 1787700635.456728, "kind": "skill_proposal", "payload": {"proposal": "Set a per-call token/latency budget for model calls (e.g., cap output tokens or abort at 120s) and split oversized generations into chunked sub-calls."}}
+{"ts": 1787700635.4567928, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787700645.4529474, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.9, "tokens_ein": 461, "tokens_aus": 222}}
+{"ts": 1787700645.453223, "kind": "drive_goal", "payload": {"title": "Gründe für die zwei Modellfehler finden", "why": "Das System hat zweimal Fehler beim Denken gemacht. Wenn wir herausfinden, warum, können wir solche Fehler künftig vermeiden.", "signal": "failure"}}
+{"ts": 1787700645.4533272, "kind": "drive_goal", "payload": {"title": "Mehr gute Fähigkeiten wirklich anwenden", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber nur wenige wurden tatsächlich benutzt. Wir sollten die besten Vorschläge ausprobieren, damit sie nützen.", "signal": "gap"}}
+{"ts": 1787700645.4533992, "kind": "drive_goal", "payload": {"title": "Alte Träume mit Kritik vergleichen", "why": "Es gibt eine alte Idee aus einem Traum und eine frühe Kritik daran, die noch nie zusammengebracht wurden. Ihr Vergleich könnte neue Einsichten für bessere Entscheidungen liefern.", "signal": "combination"}}
+{"ts": 1787700646.7305481, "kind": "whisper_geparkt", "payload": {"title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "versuche": 3, "grund": "nach 3 Versuchen ohne Konvergenz geparkt - braucht eine Entscheidung des Erschaffers"}}
+{"ts": 1787700652.689762, "kind": "drive_whisper", "payload": {"title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig ", "geerbt": false, "auftrag_zeichen": 462, "versuch": 1}}
+{"ts": 1787700653.247689, "kind": "swarm_started", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial"}}
+{"ts": 1787700662.7539241, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787700663.5022376, "kind": "metabolism_check", "payload": {"stress": 0.0, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
+{"ts": 1787700765.9805799, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 102.1, "tokens_ein": 2303, "tokens_aus": 4338}}
+{"ts": 1787700770.3691692, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.5, "tokens_ein": 597, "tokens_aus": 62}}
+{"ts": 1787700788.5932546, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 15.8, "tokens_ein": 241, "tokens_aus": 436}}
+{"ts": 1787700788.5935974, "kind": "simulation", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1787700788.593775, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787700788.99504, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787700788.9950364, "schalter_geoeffnet": false}}
+{"ts": 1787700789.3041558, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787700789.3041518, "schalter_geoeffnet": false}}
+{"ts": 1787700840.69052, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 48.6, "tokens_ein": 2822, "tokens_aus": 3874}}
+{"ts": 1787700841.7612624, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.97}}
+{"ts": 1787700841.7614398, "kind": "tor", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "gruen": false, "grund": "Artefakt laeuft nicht: Fehler", "zyklus": 1}}
+{"ts": 1787700865.425982, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 18.8, "tokens_ein": 3553, "tokens_aus": 483}}
+{"ts": 1787700865.4266596, "kind": "calibration", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "predicted": 4, "actual": 2, "abs_error": 2}}
+{"ts": 1787700865.4267588, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 2}}
+{"ts": 1787700871.5571961, "kind": "bahnen", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "delta": -0.5, "kanten": 0, "hat_code": true, "score": 2, "abgerufen": 12, "ids": ["f:fea18c93a567", "f:933375788d0b", "e:9817192dd82c", "f:e4a3d10c7b7a", "f:2b0546863a1d", "f:965236c9a0c6", "f:b2c473682376", "f:578580a89cf3", "f:9f0ed5aa75b0", "f:8357f498e745", "f:aaf27715006b", "f:ac22fc0a32cd"], "ziel_id": "g:3f62adc5e2ab"}}
+{"ts": 1787700899.1298032, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 27.6, "tokens_ein": 297, "tokens_aus": 830}}
+{"ts": 1787700912.8825207, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.8, "tokens_ein": 896, "tokens_aus": 387}}
+{"ts": 1787700912.8828468, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 2/10. Goal: Destillat-Datensatz: Gedächtnis wird Trainingsmaterial\nCritic issues: Sandbox-Urteil", "variants": 3, "winner_index": 0, "scores": [9, 7, 6]}}
+{"ts": 1787700923.468849, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 2.5, "tokens_ein": 596, "tokens_aus": 45}}
+{"ts": 1787700932.1201017, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.8, "tokens_ein": 354, "tokens_aus": 247}}
+{"ts": 1787700932.120427, "kind": "simulation", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "verdict": "go", "risks": 3, "revisions": 2}}
+{"ts": 1787700932.1205564, "kind": "swarm_finished", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "score": 2, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787700932.1211672, "kind": "act_done", "payload": {"goal_title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "score": 2, "converged": false}}
+{"ts": 1787700932.6607676, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.44}}
+{"ts": 1787700934.5286646, "kind": "issue_synced", "payload": {"issue": 101, "state": "open"}}
+{"ts": 1787700977.2983406, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
