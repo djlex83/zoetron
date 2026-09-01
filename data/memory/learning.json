@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 04:03:48",
+ "stand": "2026-09-01 04:10:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -28,8 +28,8 @@
   },
   {
    "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -168,9 +168,9 @@
  "haende_quote": 0.837,
  "simulationen_angewandt": 16,
  "swarm_scores": {
-  "n": 19,
+  "n": 18,
   "best": 8.0,
-  "schnitt": 5.37
+  "schnitt": 5.44
  },
  "score_nach_ziel_typ": {
   "bau": {

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 04:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 04:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,21 +13,21 @@
 - Add a calibration monitor that logs prediction vs. actual per task type and triggers retraining when MAE excee *(hatte die Idee 4×)*
 - Create ExecutionGapTracker that maps drive goals (stale, failure, gap) to concrete skill proposals and alerts  *(hatte die Idee 4×)*
 - Enforce PathContract at skill registration: require I/O skills to declare path parameters, auto-wrap with reso *(hatte die Idee 4×)*
+- Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototy *(hatte die Idee 4×)*
 - Develop a local-first execution policy that attempts hand actions (file ops, scripts) before any model invocat *(hatte die Idee 3×)*
 - Implement a model router with per-provider exponential backoff, circuit-breaker state, and automatic fallback  *(hatte die Idee 3×)*
 - Create SkillLifecycleManager: auto-promote proposals with ≥2 drive signals to 'committed', assign owner via ca *(hatte die Idee 3×)*
 - Add Calibration Monitor: log predicted vs actual latency/tokens per task type, trigger router retraining when  *(hatte die Idee 3×)*
 - Create Proposal Execution Tracker: persist proposal ID, test result, merge status, and deployment timestamp to *(hatte die Idee 3×)*
 - Create SkillProposalHarness that spins up minimal test case for each proposal and reports pass/fail within 5 m *(hatte die Idee 3×)*
-- Build ProposalDeduplicator that hashes skill proposals by semantic intent (circuit breaker, pre-flight probe,  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis and reflex actions operate in isolation without feeding back into model routing or skill deployment decisions.
+- Latency variance across models (5.9s–17.6s) and frequent failures indicate no circuit-breaker or fallback logic is active.
+- Model selection is reactive without health-based routing, causing repeated calls to known-failing endpoints.
+- Skill proposals accumulate (5 recorded) but lack an execution gate to promote or reject them, causing capability stagnation.
+- Free-tier model endpoints consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production workloads.
 - Pruning runs remove zero facts/events, suggesting retention policies are either misconfigured or the knowledge graph lacks TTL metadata.
 - Stale assets (three market analyses) persist unused until a reflex tool forces action, revealing a missing 'stale-data → task' trigger.
 - Skill proposals duplicate across cycles (model-health registry, fallback router) because no promotion gate validates and graduates prototypes to produ
@@ -51,11 +56,6 @@
 - The system repeatedly generates similar routing/fallback proposals but lacks an automated mechanism to promote them into active policy.
 - Latency variance on nemotron-3-ultra (13–42 s) exceeds acceptable bounds for interactive tasks, requiring timeout guards.
 - Free-tier models on OpenRouter consistently return 429 errors under load, making them unreliable for production workflows.
-- Market analysis completed only via reflex trigger, showing stale goals persist until explicit reflex activation rather than proactive scheduling.
-- Tool invocations (hand_action) lack pre-flight validation and failure capture, risking silent failures on missing/unreadable targets.
-- Fallback model latency varies wildly (100.9s → 15.6s), indicating no latency-aware routing or request timeout budget.
-- Multiple skill proposals for model reliability (health tracker, router, timeout/retry, metrics) exist but remain unimplemented, creating a persistent 
-- Repeated 429 errors on the primary model (z-ai/glm-5.2:free) reveal no automatic failover mechanism, causing reliance on a high-latency fallback (nvid
 
 ---
 

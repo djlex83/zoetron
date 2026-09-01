@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8586 Fakten** · Stand 2026-09-01 04:04 UTC · aktualisiert bei jedem Herzschlag
+**8591 Fakten** · Stand 2026-09-01 04:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4510
+- **dream:** 4515
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901040953:5:9cdc39`
+*01.09. 04:09 UTC · Quelle: dream*
+
+Self-diagnosis and reflex actions operate in isolation without feeding back into model routing or skill deployment decisions.
+
+### `dream:20260901040953:4:e06a6e`
+*01.09. 04:09 UTC · Quelle: dream*
+
+Latency variance across models (5.9s–17.6s) and frequent failures indicate no circuit-breaker or fallback logic is active.
+
+### `dream:20260901040953:3:0bd54b`
+*01.09. 04:09 UTC · Quelle: dream*
+
+Model selection is reactive without health-based routing, causing repeated calls to known-failing endpoints.
+
+### `dream:20260901040953:2:ac3720`
+*01.09. 04:09 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 recorded) but lack an execution gate to promote or reject them, causing capability stagnation.
+
+### `dream:20260901040953:1:336968`
+*01.09. 04:09 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production workloads.
 
 ### `dream:20260901040257:5:b1d03b`
 *01.09. 04:02 UTC · Quelle: dream*
