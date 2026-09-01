@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9186 Fakten** · Stand 2026-09-01 22:34 UTC · aktualisiert bei jedem Herzschlag
+**9191 Fakten** · Stand 2026-09-01 22:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4875
+- **dream:** 4880
 - **swarm_artifact:** 1987
 - **last_swarm_critique:** 683
 - **anti_pattern:** 593
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901223954:5:61b7ca`
+*01.09. 22:39 UTC · Quelle: dream*
+
+High latency (46s) on the only working model makes synchronous calls unusable for interactive loops.
+
+### `dream:20260901223954:4:318f99`
+*01.09. 22:39 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a gated promotion pipeline, so none reach production validation.
+
+### `dream:20260901223954:3:211fd8`
+*01.09. 22:39 UTC · Quelle: dream*
+
+Metabolic stress hits 1.0 before any defensive shedding occurs, indicating the scheduler reacts too late.
+
+### `dream:20260901223954:2:0bc754`
+*01.09. 22:39 UTC · Quelle: dream*
+
+Path resolution fails because code trusts relative paths instead of canonicalizing sys.argv[1] and ZOETRON_DATA at startup.
+
+### `dream:20260901223954:1:3d822e`
+*01.09. 22:39 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) cascades across multiple free-tier models simultaneously, making single-model fallback unreliable.
 
 ### `dream:20260901223241:5:c46571`
 *01.09. 22:32 UTC · Quelle: dream*

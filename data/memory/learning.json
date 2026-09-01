@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 22:33:16",
+ "stand": "2026-09-01 22:40:28",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -292,6 +292,12 @@
   },
   {
    "tool": "neue-fähigkeiten-prüfen-und-integrieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

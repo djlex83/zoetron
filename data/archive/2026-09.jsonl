@@ -698,3 +698,29 @@
 {"ts": 1787697038.1584291, "kind": "swarm_started", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)"}}
 {"ts": 1787697045.5966144, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
 {"ts": 1787697046.3780606, "kind": "metabolism_check", "payload": {"stress": 0.124, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
+{"ts": 1787697173.0878184, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 126.0, "tokens_ein": 2034, "tokens_aus": 5576}}
+{"ts": 1787697176.6181397, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.3, "tokens_ein": 712, "tokens_aus": 74}}
+{"ts": 1787697202.560804, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 25.5, "tokens_ein": 649, "tokens_aus": 886}}
+{"ts": 1787697202.5610962, "kind": "simulation", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787697202.5612543, "kind": "simulation_applied", "payload": {"revisions": 1}}
+{"ts": 1787697218.0524204, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.9, "tokens_ein": 3035, "tokens_aus": 751}}
+{"ts": 1787697232.0912974, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.0, "tokens_ein": 3394, "tokens_aus": 686}}
+{"ts": 1787697246.3174791, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.2, "tokens_ein": 4016, "tokens_aus": 795}}
+{"ts": 1787697258.2300048, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.9, "tokens_ein": 4557, "tokens_aus": 636}}
+{"ts": 1787697300.7690303, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 42.4, "tokens_ein": 5084, "tokens_aus": 2224}}
+{"ts": 1787697343.8691204, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 43.0, "tokens_ein": 4630, "tokens_aus": 1398}}
+{"ts": 1787697343.8704758, "kind": "calibration", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "predicted": 5, "actual": 5, "abs_error": 0}}
+{"ts": 1787697343.8705544, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 5}}
+{"ts": 1787697343.8707397, "kind": "bahnen", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 9, "ids": ["f:8357f498e745", "f:726907f6a061", "e:1403f66dcb6f", "f:7decb9a1c139", "f:51830f3639c0", "f:6a2f5ff1faca", "f:0d0884ebcc96", "e:bb36b02353cb", "f:7f5173304c7a"], "ziel_id": "g:9817192dd82c"}}
+{"ts": 1787697371.4924731, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 27.6, "tokens_ein": 197, "tokens_aus": 703}}
+{"ts": 1787697388.8240137, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 17.3, "tokens_ein": 753, "tokens_aus": 337}}
+{"ts": 1787697388.8243804, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)\nCritic ", "variants": 3, "winner_index": 1, "scores": [7, 8, 5]}}
+{"ts": 1787697400.9790363, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 4.7, "tokens_ein": 712, "tokens_aus": 66}}
+{"ts": 1787697423.895194, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 22.8, "tokens_ein": 649, "tokens_aus": 808}}
+{"ts": 1787697423.8954637, "kind": "simulation", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787697423.8956318, "kind": "simulation_applied", "payload": {"revisions": 1}}
+{"ts": 1787697423.89576, "kind": "swarm_finished", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 5, "critic": 1}, "evolved": true}}
+{"ts": 1787697423.8959537, "kind": "act_done", "payload": {"goal_title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "score": 5, "converged": false}}
+{"ts": 1787697424.0223022, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
+{"ts": 1787697425.8521304, "kind": "issue_synced", "payload": {"issue": 100, "state": "open"}}
+{"ts": 1787697462.4106455, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
