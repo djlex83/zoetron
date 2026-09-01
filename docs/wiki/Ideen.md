@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 09:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 09:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
+- Marktanalyse-Ergebnisse endlich umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals repeat thematic priorities (learning from failure, promoting proposals, connecting memories) without concrete execution criteria, causing 
+- Multiple identical skill proposals appear in the log, indicating proposal generation lacks deduplication and wastes consolidation cycles.
+- Upstream provider errors (502 from Nvidia) cascade as silent failures with HTTP 200, requiring response-body validation not just status codes.
+- A single reliable fallback model (inclusionai/ling-3.0-flash-fin) maintains availability when all primary models fail, proving the value of a verified
+- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary providers without rate-limit management.
 - Nemotron-3-ultra latency (29–56 s) makes iterative development infeasible; speed must be a first-class selection criterion.
 - Swarm evolution produces high-scoring variants (9/9/9) but overall score stalls at 5/10, revealing a metric–reward misalignment.
 - Validation path breaks ('Pfadbruch zwischen Valid') indicate missing contract enforcement between planner, builder, and critic roles.
@@ -51,11 +56,6 @@
 - A persistent gap exists between skill proposal generation and actual implementation — many proposals are produced but few are trained and operationali
 - Self-diagnosis consistently reports zero organ errors despite observable API-level failures, revealing a blind spot in infrastructure error detection.
 - Free-tier models on shared APIs (z-ai/glm-5.2) repeatedly hit 429 rate limits and must never serve as primary models on critical paths.
-- Transient failures (429, network) need automatic retry-with-backoff to improve robustness of external calls.
-- Self-diagnosis and pruning report healthy system but lack proactive degradation detection for model performance.
-- Multiple skill proposals accumulate without an implementation gate, causing idea hoarding instead of execution.
-- Fallback model nvidia/nemotron-3-ultra exhibits high latency (56–106s), requiring latency-aware routing for interactive vs batch tasks.
-- The z-ai/glm-5.2:free model consistently returns 429 errors, making it unreliable for production use without rate-limit handling.
 
 ---
 

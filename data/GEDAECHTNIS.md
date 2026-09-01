@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8773 Fakten** · Stand 2026-09-01 09:39 UTC · aktualisiert bei jedem Herzschlag
+**8778 Fakten** · Stand 2026-09-01 09:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4610
+- **dream:** 4615
 - **swarm_artifact:** 1909
 - **last_swarm_critique:** 670
 - **anti_pattern:** 573
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901095740:5:a8c99c`
+*01.09. 09:57 UTC · Quelle: dream*
+
+Drive goals repeat thematic priorities (learning from failure, promoting proposals, connecting memories) without concrete execution criteria, causing goal drift.
+
+### `dream:20260901095740:4:4bddf4`
+*01.09. 09:57 UTC · Quelle: dream*
+
+Multiple identical skill proposals appear in the log, indicating proposal generation lacks deduplication and wastes consolidation cycles.
+
+### `dream:20260901095740:3:0fb0ea`
+*01.09. 09:57 UTC · Quelle: dream*
+
+Upstream provider errors (502 from Nvidia) cascade as silent failures with HTTP 200, requiring response-body validation not just status codes.
+
+### `dream:20260901095740:2:fbfc30`
+*01.09. 09:57 UTC · Quelle: dream*
+
+A single reliable fallback model (inclusionai/ling-3.0-flash-fin) maintains availability when all primary models fail, proving the value of a verified backup.
+
+### `dream:20260901095740:1:3e0f31`
+*01.09. 09:57 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary providers without rate-limit management.
 
 ### `tool:fähigkeiten-in-taten-umsetzen`
 *01.09. 09:38 UTC · Quelle: hands*
