@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9051 Fakten** · Stand 2026-09-01 18:41 UTC · aktualisiert bei jedem Herzschlag
+**9056 Fakten** · Stand 2026-09-01 18:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4775
+- **dream:** 4780
 - **swarm_artifact:** 1969
 - **last_swarm_critique:** 680
 - **anti_pattern:** 587
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901184751:5:8ebaca`
+*01.09. 18:47 UTC · Quelle: dream*
+
+Core organ CI failure (herzschlag) during high model stress suggests resource contention between inference and system maintenance.
+
+### `dream:20260901184751:4:20adfc`
+*01.09. 18:47 UTC · Quelle: dream*
+
+Existing skill proposals (circuit-breaker, health monitor, stress scheduler) directly address observed failure modes but remain unimplemented.
+
+### `dream:20260901184751:3:19e24d`
+*01.09. 18:47 UTC · Quelle: dream*
+
+Latency variance (14s–74s) across successful calls indicates unpredictable queue depths, necessitating per-model timeout budgets.
+
+### `dream:20260901184751:2:be5159`
+*01.09. 18:47 UTC · Quelle: dream*
+
+Upstream provider overload (502) can affect even previously reliable models like Nemotron, requiring multi-provider fallback chains.
+
+### `dream:20260901184751:1:a695b4`
+*01.09. 18:47 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit correlated 429 rate-limiting failures across multiple providers, making single-model reliance untenable.
 
 ### `dream:20260901183932:5:115c60`
 *01.09. 18:39 UTC · Quelle: dream*

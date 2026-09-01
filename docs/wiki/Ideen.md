@@ -1,12 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 18:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 18:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototy *(hatte die Idee 6×)*
-- Create a skill-graduation pipeline requiring 1-hour A/B test (success rate > baseline +10%, p95 latency < 2x b *(hatte die Idee 3×)*
 - Implement parallel multi-model dispatch with first-success-wins to bypass correlated rate limits. *(hatte die Idee 3×)*
 - Implement a model health registry tracking success rate, p95 latency, and 429 count per endpoint; auto-quarant *(hatte die Idee 3×)*
 - Add exponential backoff with jitter (base 2s, max 30s, jitter ±25%) to every model call and emit structured te *(hatte die Idee 3×)*
@@ -17,6 +16,7 @@
 - Deploy a model router that quarantines providers after 3 consecutive 429/502 errors and fails over to a pre-wa *(hatte die Idee 2×)*
 - Implement per-model telemetry (p50/p95 latency, error rate, token efficiency) over a 10-minute sliding window  *(hatte die Idee 2×)*
 - Add a stress-aware scheduler that halves max_concurrent_tasks and doubles request timeouts when metabolism.str *(hatte die Idee 2×)*
+- Create a skill-graduation pipeline requiring 1-hour A/B test (success rate > baseline +10%, p95 latency < 2x b *(hatte die Idee 2×)*
 - Build a path-resolution utility that all tools must use, expanding relative paths against ZOETRON_DATA and val *(hatte die Idee 2×)*
 - Add exponential backoff + jitter retry wrapper for 429/502 errors before model fallback. *(hatte die Idee 2×)*
 - Create a 'critic-driven evolution' skill that takes a low-scoring artifact, generates targeted variants, and a *(hatte die Idee 2×)*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Core organ CI failure (herzschlag) during high model stress suggests resource contention between inference and system maintenance.
+- Existing skill proposals (circuit-breaker, health monitor, stress scheduler) directly address observed failure modes but remain unimplemented.
+- Latency variance (14s–74s) across successful calls indicates unpredictable queue depths, necessitating per-model timeout budgets.
+- Upstream provider overload (502) can affect even previously reliable models like Nemotron, requiring multi-provider fallback chains.
+- Free-tier models on OpenRouter exhibit correlated 429 rate-limiting failures across multiple providers, making single-model reliance untenable.
 - Drive goals are correctly identifying the system's stagnation (stale analyses, unused skills) but the system struggles to autonomously close these loo
 - A CI failure in `herzschlag: organzyklus + gedächtnis-sync [hermes-daemon]` indicates that memory synchronization is fragile and needs error handling.
 - High latency on the fallback model (`nvidia/nemotron-3-ultra-550b-a55b:free`) suggests the need for timeout-bounded LLM calls to prevent system stalls
@@ -51,11 +56,6 @@
 - Evolutionary iteration with explicit critic feedback (data-format incompatibility) lifted scores from 6 to 10/9/9 in one generation.
 - NVIDIA Nemotron-3-Ultra consistently succeeds but exhibits high latency variance (39–183 s), requiring timeout budgets > 200 s.
 - Free-tier models on OpenRouter frequently hit 429 rate limits, making them unreliable for latency-sensitive pipelines.
-- Latency variance across successful models (15–116s) makes timeout tuning a moving target.
-- High metabolic stress (1.0) forces aggressive budget cuts (max_tasks=3, max_iterations=1) that starve recovery actions.
-- The skill-to-ability pipeline fails at the filesystem layer: relative paths don't resolve to the real data root (ZOETRON_DATA).
-- Upstream provider overload (502) cascades into local failures even when HTTP status is 200.
-- Free-tier models consistently hit rate limits (429) under load, making them unreliable for production workflows.
 
 ---
 
