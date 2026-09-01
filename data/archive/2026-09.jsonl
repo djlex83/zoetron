@@ -98,3 +98,18 @@
 {"ts": 1787672461.0128045, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 27.1, "tokens_ein": 181, "tokens_aus": 769}}
 {"ts": 1787672461.013011, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "revise", "risks": 5, "revisions": 1}}
 {"ts": 1787672461.0131254, "kind": "simulation_applied", "payload": {"revisions": 1}}
+{"ts": 1787672755.6152606, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 294.4, "tokens_ein": 3952, "tokens_aus": 10000}}
+{"ts": 1787672780.1761942, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 24.4, "tokens_ein": 1619, "tokens_aus": 680}}
+{"ts": 1787672780.177199, "kind": "calibration", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "predicted": 9, "actual": 3, "abs_error": 6}}
+{"ts": 1787672780.177369, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 3}}
+{"ts": 1787672787.223662, "kind": "bahnen", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "delta": -0.5, "kanten": 0, "hat_code": false, "score": 3, "abgerufen": 4, "ids": ["e:99433f1eacfc", "e:a901f5638bf1", "e:76d35fa7fac8", "e:d07d9a58cb63"], "ziel_id": "g:e550bf96d00e"}}
+{"ts": 1787672836.8749294, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 49.6, "tokens_ein": 304, "tokens_aus": 1081}}
+{"ts": 1787672883.2555082, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 46.4, "tokens_ein": 934, "tokens_aus": 469}}
+{"ts": 1787672883.2559185, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 3/10. Goal: Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten\nCritic issues: Deliverable ", "variants": 3, "winner_index": 0, "scores": [9, 6, 6]}}
+{"ts": 1787672913.7787323, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 21.5, "tokens_ein": 319, "tokens_aus": 89}}
+{"ts": 1787672974.4320114, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 60.5, "tokens_ein": 318, "tokens_aus": 608}}
+{"ts": 1787672974.4323435, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787672974.432536, "kind": "simulation_applied", "payload": {"revisions": 0}}
+{"ts": 1787672974.4327044, "kind": "swarm_finished", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "score": 3, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787672974.4329994, "kind": "act_done", "payload": {"goal_title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "score": 3, "converged": false}}
+{"ts": 1787672976.042174, "kind": "issue_synced", "payload": {"issue": 111, "state": "open"}}

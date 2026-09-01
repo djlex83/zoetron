@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8970 Fakten** · Stand 2026-09-01 15:47 UTC · aktualisiert bei jedem Herzschlag
+**8987 Fakten** · Stand 2026-09-01 16:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4730
-- **swarm_artifact:** 1951
-- **last_swarm_critique:** 677
-- **anti_pattern:** 581
-- **last_swarm_goal:** 425
-- **strategy:** 311
-- **tool:** 105
+- **dream:** 4735
+- **swarm_artifact:** 1957
+- **last_swarm_critique:** 678
+- **anti_pattern:** 583
+- **last_swarm_goal:** 426
+- **strategy:** 312
+- **tool:** 106
 - **hand_result:** 98
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-echt-umsetzen`
+*01.09. 16:02 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten echt umsetzen'. Datei: data/tools/vorgeschlagene-fähigkeiten-echt-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:2`
+*01.09. 16:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Live-Demo als interaktiver Proof-of-Concept - Ersetze statische Artefakte durch eine laufende, interaktive Umgebung (z.B. Web-App oder API-Endpunkt), in der die Fähigkeiten in Echtzeit sichtbar angewendet werden. Das Ziel wir
+
+### `anti_pattern:Previous attempt scored 3/10. Goal: Vorgeschlagene Fähigkeit:1`
+*01.09. 16:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Ergebnisorientierte Messung via definierten KPIs - Überspringe die Implementierungsanleitung und definiere exakte, messbare Outputs (KPIs) für jede Fähigkeit. Setze die Fähigkeiten direkt ein und beweise die Zielerreichung du
+
+### `last_swarm_critique`
+*01.09. 16:00 UTC · Quelle: critic*
+
+score=3; issues=Sandbox-Urteil fehlt: Es ist nicht dokumentiert, ob das Artefakt läuft oder nicht. Ohne diese Information kann keine Bewertung der Lauffähigkeit erfolgen.; Keine klare Zielerreichung erkennbar: Die Artikel beschreiben zwar, wie Fähigkeiten gesa
+
+### `last_swarm_goal`
+*01.09. 15:54 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten echt umsetzen
+
+### `dream:20260901155310:5:a2bada`
+*01.09. 15:53 UTC · Quelle: dream*
+
+Simulation gates (verdict=go, grün=true) precede successful artifact runs, confirming pre-flight checks reduce runtime failures.
+
+### `dream:20260901155310:4:388062`
+*01.09. 15:53 UTC · Quelle: dream*
+
+Local hand-action execution completes in <0.3s with zero failures, outperforming all remote API calls by orders of magnitude.
+
+### `dream:20260901155310:3:8b0ac0`
+*01.09. 15:53 UTC · Quelle: dream*
+
+Poolside Laguna-S-2.1:free succeeded on both attempts with moderate latency (~50–68s), suggesting it is the most reliable free option observed.
+
+### `dream:20260901155310:2:b7ab25`
+*01.09. 15:53 UTC · Quelle: dream*
+
+Nvidia Nemotron shows high latency variance (35–79s) and intermittent 502 upstream overloads, indicating unstable capacity.
+
+### `dream:20260901155310:1:169cf2`
+*01.09. 15:53 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without aggressive backoff and rotation.
 
 ### `dream:20260901154541:5:e4264d`
 *01.09. 15:45 UTC · Quelle: dream*

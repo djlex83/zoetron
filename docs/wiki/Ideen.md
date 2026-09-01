@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 15:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 16:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation gates (verdict=go, grün=true) precede successful artifact runs, confirming pre-flight checks reduce runtime failures.
+- Local hand-action execution completes in <0.3s with zero failures, outperforming all remote API calls by orders of magnitude.
+- Poolside Laguna-S-2.1:free succeeded on both attempts with moderate latency (~50–68s), suggesting it is the most reliable free option observed.
+- Nvidia Nemotron shows high latency variance (35–79s) and intermittent 502 upstream overloads, indicating unstable capacity.
+- Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without aggressive backoff and rotati
 - Conserve mode budget (max_iterations=1) conflicts with multi-step fallback strategies, requiring single-call success or pre-verified artifacts.
 - Reflex/simulation tools fail silently without error details, preventing diagnostic feedback loops for capability validation.
 - Hand actions fail due to path resolution errors (relative vs absolute paths), not command logic, revealing environment configuration drift.
@@ -51,11 +56,6 @@
 - The inclusionai/ling-3.0-flash-fin:free model provides a good balance of reliability and low latency (~10s) compared to other free models.
 - The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but suffers from high latency (up to 183s) and occasional 502 upstream overload.
 - Free models on OpenRouter frequently hit 429 Too Many Requests errors, requiring robust fallback mechanisms.
-- Token throughput on successful Nemotron calls scales with input size (2k-8k tokens in, 2k-3k out), but latency remains prohibitively high for interact
-- Hand-action retry (fail then succeed on second attempt) demonstrates that transient filesystem or permission issues self-resolve with immediate retry.
-- The simulation-revision-apply loop successfully detected stale analysis data, executed 3 revisions, and produced a verified 296-line Python artifact.
-- Nemotron-3-Ultra exhibits a bimodal failure pattern: 502 upstream overload errors followed by eventual success at 64-100s latency, indicating severe q
-- Free-tier models across providers (Google, Z.ai, Poolside) consistently hit 429 rate limits, making them unreliable for sustained workloads.
 
 ---
 
