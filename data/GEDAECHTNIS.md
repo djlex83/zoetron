@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8895 Fakten** · Stand 2026-09-01 13:33 UTC · aktualisiert bei jedem Herzschlag
+**8900 Fakten** · Stand 2026-09-01 13:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4685
+- **dream:** 4690
 - **swarm_artifact:** 1933
 - **last_swarm_critique:** 674
 - **anti_pattern:** 579
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901134545:5:14298d`
+*01.09. 13:45 UTC · Quelle: dream*
+
+Hand_action failed because relative paths did not resolve to real files under the data path, indicating missing pre-execution argument validation.
+
+### `dream:20260901134545:4:384412`
+*01.09. 13:45 UTC · Quelle: dream*
+
+Calibration underestimated effort by 50% (predicted 6 vs actual 9), revealing a systematic undercounting of iteration overhead.
+
+### `dream:20260901134545:3:3c08e2`
+*01.09. 13:45 UTC · Quelle: dream*
+
+The simulation acted as a circuit breaker: after applying its 3 revisions, previously failing models resumed succeeding.
+
+### `dream:20260901134545:2:fa4370`
+*01.09. 13:45 UTC · Quelle: dream*
+
+Conserve mode with max_iterations=1 is too restrictive for multi-step validation tasks, causing incomplete execution under high stress.
+
+### `dream:20260901134545:1:cec646`
+*01.09. 13:45 UTC · Quelle: dream*
+
+Simultaneous 429 errors across multiple models indicate a shared API rate-limit bottleneck, not model-specific failures, requiring provider diversification or backoff.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:2`
 *01.09. 13:29 UTC · Quelle: evolution*

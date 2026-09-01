@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 13:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 13:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototy *(hatte die Idee 6×)*
-- Enforce PathContract at skill registration: require I/O skills to declare path parameters, auto-wrap with reso *(hatte die Idee 4×)*
+- Enforce PathContract at skill registration: require I/O skills to declare path parameters, auto-wrap with reso *(hatte die Idee 3×)*
 - Implement per-model telemetry (p50/p95 latency, error rate, token efficiency) over a 10-minute sliding window  *(hatte die Idee 3×)*
 - Add a stress-aware scheduler that halves max_concurrent_tasks and doubles request timeouts when metabolism.str *(hatte die Idee 3×)*
 - Create a skill-graduation pipeline requiring 1-hour A/B test (success rate > baseline +10%, p95 latency < 2x b *(hatte die Idee 3×)*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand_action failed because relative paths did not resolve to real files under the data path, indicating missing pre-execution argument validation.
+- Calibration underestimated effort by 50% (predicted 6 vs actual 9), revealing a systematic undercounting of iteration overhead.
+- The simulation acted as a circuit breaker: after applying its 3 revisions, previously failing models resumed succeeding.
+- Conserve mode with max_iterations=1 is too restrictive for multi-step validation tasks, causing incomplete execution under high stress.
+- Simultaneous 429 errors across multiple models indicate a shared API rate-limit bottleneck, not model-specific failures, requiring provider diversific
 - Rate-limit errors cluster in time across multiple providers, suggesting shared infrastructure or coordinated quota windows that defeat naive round-rob
 - Reflex-mode convergence on "turn suggestions into actions" succeeded despite model chaos, indicating the orchestration layer can absorb provider insta
 - HTTP 200 responses from Nvidia contained error payloads instead of choices, demonstrating that status-code-only success checks allow silent failures t
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but lack a mechanism to graduate into deployed capabilities, creating a proposal-to-production gap.
 - The nemotron-3-ultra endpoint succeeded after glm-5.2 failures, proving fallback chains work but only when at least one endpoint has available quota.
 - Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making endpoint diversity without quota management ineffecti
-- The system is in a 'conserve' state with limited budget, which may be contributing to premature task termination and incomplete skill implementation.
-- Model performance varies significantly by provider, with some models consistently timing out or returning upstream errors under load.
-- Market analysis results remain unused despite completion, pointing to a gap between task execution and actionable integration.
-- The 'Fähigkeiten-Ideen in echte Skills wandeln' goal repeatedly fails due to a path resolution error in the script, suggesting a systemic issue with d
-- Rate limiting (429 errors) is the dominant failure mode across multiple models, indicating a need for request throttling or fallback strategies.
 
 ---
 
