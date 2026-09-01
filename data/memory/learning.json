@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 23:00:29",
+ "stand": "2026-09-01 23:22:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -301,10 +301,16 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.716,
- "simulationen_angewandt": 34,
+ "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 32,
   "best": 9.0,

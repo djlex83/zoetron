@@ -724,3 +724,46 @@
 {"ts": 1787697424.0223022, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
 {"ts": 1787697425.8521304, "kind": "issue_synced", "payload": {"issue": 100, "state": "open"}}
 {"ts": 1787697462.4106455, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787698806.6366544, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787698826.1525934, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.8, "tokens_ein": 1569, "tokens_aus": 455}}
+{"ts": 1787698826.1531549, "kind": "skill_proposal", "payload": {"proposal": "Enforce a minimum of 4 swarm cycles OR converged=true before termination whenever score < 6, re-entering evolution with critic issues as the new problem statement."}}
+{"ts": 1787698826.1532123, "kind": "skill_proposal", "payload": {"proposal": "Add exponential backoff with automatic failover to nvidia/nemotron-3-ultra-550b-a55b:free on any OpenRouter connection/429 error, retrying the original model after cooldown."}}
+{"ts": 1787698826.1532674, "kind": "skill_proposal", "payload": {"proposal": "Insert a pre-flight dry-run for all hand_actions that requires exit code 0 on a no-op invocation before executing the real command."}}
+{"ts": 1787698826.1533418, "kind": "skill_proposal", "payload": {"proposal": "Apply a calibration penalty that halves self-predicted scores for goals without a prior successful retrieval, until empirical measurement validates them."}}
+{"ts": 1787698826.1533976, "kind": "skill_proposal", "payload": {"proposal": "Persist zero-delta 'bahnen' entries for goals scoring >= 4 so partial-success state (edges, code, retrieved ids) survives as a warm start for future attempts."}}
+{"ts": 1787698826.1534512, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787698835.2534504, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.7, "tokens_ein": 494, "tokens_aus": 196}}
+{"ts": 1787698835.253643, "kind": "drive_goal", "payload": {"title": "Fehlgeschlagene Modellprüfungen gründlich untersuchen", "why": "Manche Prüfungen sind öfter schiefgegangen als andere. Wenn wir den Grund finden, läuft künftig alles zuverlässiger.", "signal": "failure"}}
+{"ts": 1787698835.2537344, "kind": "drive_goal", "payload": {"title": "Alte Fähigkeitsvorschläge endlich ausprobieren", "why": "Es liegen viele gute Ideen vor, die noch nie getestet wurden. Wenn wir sie ausprobieren, wird das System im Alltag besser.", "signal": "stale"}}
+{"ts": 1787698835.2538006, "kind": "drive_goal", "payload": {"title": "Erinnerungen und Berichte sinnvoll verbinden", "why": "Wichtiges Wissen liegt verstreut in alten Notizen und Berichten. Wer es zusammenbringt, kann daraus klügere Entscheidungen treffen.", "signal": "combination"}}
+{"ts": 1787698837.4978795, "kind": "drive_whisper", "payload": {"title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "why": "Die schnellste Destillation braucht kein Training: Die besten eigenen Lösungen werden Lehrbeispiele. Baue exemplare.py: Artefakte mit Score >= 8 und bestandenem Test wandern als gekürztes Beispiel (Aufgabe + Lösung) in eine Exemplar-Bank; pro neuem Ziel werden die 2 semantisch ähnlichsten Beispiele ", "geerbt": false, "auftrag_zeichen": 571, "versuch": 3}}
+{"ts": 1787698838.045923, "kind": "swarm_started", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)"}}
+{"ts": 1787698844.67681, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787698845.6114223, "kind": "metabolism_check", "payload": {"stress": 0.039, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
+{"ts": 1787698930.809737, "kind": "hand_action", "payload": {"ok": false, "exit": null, "error": "timeout after 25.0s", "duration_s": 25.0}}
+{"ts": 1787699217.9507716, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 372.2, "tokens_ein": 2036, "tokens_aus": 6238}}
+{"ts": 1787699221.364206, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.3, "tokens_ein": 704, "tokens_aus": 78}}
+{"ts": 1787699239.9147468, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 17.3, "tokens_ein": 700, "tokens_aus": 612}}
+{"ts": 1787699239.9149783, "kind": "simulation", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "verdict": "revise", "risks": 4, "revisions": 4}}
+{"ts": 1787699239.9151092, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787699257.4316337, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 17.4, "tokens_ein": 3061, "tokens_aus": 859}}
+{"ts": 1787699286.979631, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 29.5, "tokens_ein": 3263, "tokens_aus": 1120}}
+{"ts": 1787699309.5385134, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 20.7, "tokens_ein": 3790, "tokens_aus": 909}}
+{"ts": 1787699328.0825443, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 18.5, "tokens_ein": 4195, "tokens_aus": 742}}
+{"ts": 1787699352.1774538, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 24.1, "tokens_ein": 4718, "tokens_aus": 1030}}
+{"ts": 1787699410.235785, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 57.7, "tokens_ein": 4334, "tokens_aus": 1701}}
+{"ts": 1787699410.2373898, "kind": "calibration", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "predicted": 5, "actual": 4, "abs_error": 1}}
+{"ts": 1787699410.2374902, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 4}}
+{"ts": 1787699410.2377632, "kind": "bahnen", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 4, "abgerufen": 8, "ids": ["f:8357f498e745", "f:726907f6a061", "e:1403f66dcb6f", "f:7decb9a1c139", "f:51830f3639c0", "f:6a2f5ff1faca", "e:bb36b02353cb", "f:7f5173304c7a"], "ziel_id": "g:9817192dd82c"}}
+{"ts": 1787699444.4903584, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 33.2, "tokens_ein": 299, "tokens_aus": 925}}
+{"ts": 1787699457.83492, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.3, "tokens_ein": 879, "tokens_aus": 378}}
+{"ts": 1787699457.83525, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 4/10. Goal: Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)\nCritic ", "variants": 3, "winner_index": 1, "scores": [7, 9, 6]}}
+{"ts": 1787699469.059517, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 2.4, "tokens_ein": 700, "tokens_aus": 53}}
+{"ts": 1787699492.110754, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 22.4, "tokens_ein": 700, "tokens_aus": 807}}
+{"ts": 1787699492.1111617, "kind": "simulation", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787699492.1114278, "kind": "simulation_applied", "payload": {"revisions": 4}}
+{"ts": 1787699492.1115668, "kind": "swarm_finished", "payload": {"goal": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "score": 4, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 5, "critic": 1}, "evolved": true}}
+{"ts": 1787699492.1117961, "kind": "act_done", "payload": {"goal_title": "Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)", "score": 4, "converged": false}}
+{"ts": 1787699492.228107, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
+{"ts": 1787699493.6910193, "kind": "issue_synced", "payload": {"issue": 100, "state": "open"}}
+{"ts": 1787699535.7684999, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
