@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 19:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 19:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm optimization stalls at score 2/10 after 2 cycles indicating either flawed fitness function or insufficient search diversity.
+- Evolutionary search produces syntax errors on first generation, wasting cycles on basic validity instead of quality.
+- Circuit-breaker blocking (1800s after 3 failures) prevents cascade but removes capacity permanently without recovery logic.
+- A single model (inclusionai/ling-3.0-flash-fin) sustains 100% success across repeated calls and should be the backbone.
+- Free-tier models consistently fail with 429 rate limits making them unreliable as primary workers.
 - Latency variance for same model (Nemotron: 23s vs 139s) suggests cold-start or queueing effects not accounted in planning.
 - Calibration system overestimates success rate by 250% (predicted 7 vs actual 2) indicating broken feedback loop.
 - Generated Python code uses dict[str, str] type syntax requiring Python 3.9+ but runtime environment appears older causing syntax errors.
@@ -51,11 +56,6 @@
 - Generated code artifacts contain syntax errors (type annotation misuse) that pass simulation but fail at execution time.
 - Successful fallback calls suffer extreme latency variance (4.9s to 138.9s) indicating queue buildup rather than capacity limits.
 - Free-tier model endpoints exhibit systemic rate limiting (429) and upstream failures (502) that cascade across providers simultaneously.
-- System stress at maximum (1.0) with conserve-mode budget constraints amplifies the cost of any model failure or retry loop.
-- Reflex failure on 'Modellfehler stark reduzieren' despite existing skill proposals shows a gap between proposal and executable implementation.
-- Repeated 429 errors on the same model indicate missing client-side rate-limit awareness and exponential backoff.
-- High latency variance (20-74s) in fallback models destabilizes interactive workflows and requires latency-aware scheduling.
-- Free-tier models exhibit unreliable availability under load, making them unsuitable for critical-path operations without automated fallback.
 
 ---
 

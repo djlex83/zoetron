@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9071 Fakten** · Stand 2026-09-01 19:11 UTC · aktualisiert bei jedem Herzschlag
+**9076 Fakten** · Stand 2026-09-01 19:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4795
+- **dream:** 4800
 - **swarm_artifact:** 1969
 - **last_swarm_critique:** 680
 - **anti_pattern:** 587
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901191633:5:5e94c9`
+*01.09. 19:16 UTC · Quelle: dream*
+
+Swarm optimization stalls at score 2/10 after 2 cycles indicating either flawed fitness function or insufficient search diversity.
+
+### `dream:20260901191633:4:5437bf`
+*01.09. 19:16 UTC · Quelle: dream*
+
+Evolutionary search produces syntax errors on first generation, wasting cycles on basic validity instead of quality.
+
+### `dream:20260901191633:3:11d742`
+*01.09. 19:16 UTC · Quelle: dream*
+
+Circuit-breaker blocking (1800s after 3 failures) prevents cascade but removes capacity permanently without recovery logic.
+
+### `dream:20260901191633:2:4f8de2`
+*01.09. 19:16 UTC · Quelle: dream*
+
+A single model (inclusionai/ling-3.0-flash-fin) sustains 100% success across repeated calls and should be the backbone.
+
+### `dream:20260901191633:1:fb2317`
+*01.09. 19:16 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits making them unreliable as primary workers.
 
 ### `dream:20260901190932:5:810902`
 *01.09. 19:09 UTC · Quelle: dream*
