@@ -1,13 +1,13 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 08:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 08:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototy *(hatte die Idee 6×)*
-- Enforce absolute-path contract: all I/O actions must call resolve_path(rel, ZOETRON_DATA) -> abs_path with exi *(hatte die Idee 5×)*
-- Build concurrent model pool scheduler maintaining warm connections to 3+ models, load-balancing by real-time h *(hatte die Idee 5×)*
+- Build concurrent model pool scheduler maintaining warm connections to 3+ models, load-balancing by real-time h *(hatte die Idee 4×)*
+- Enforce absolute-path contract: all I/O actions must call resolve_path(rel, ZOETRON_DATA) -> abs_path with exi *(hatte die Idee 4×)*
 - Create ExecutionGapTracker that maps drive goals (stale, failure, gap) to concrete skill proposals and alerts  *(hatte die Idee 4×)*
 - Enforce PathContract at skill registration: require I/O skills to declare path parameters, auto-wrap with reso *(hatte die Idee 4×)*
 - Add Calibration Monitor: log predicted vs actual latency/tokens per task type, trigger router retraining when  *(hatte die Idee 3×)*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High-value market analyses stall without automated execution triggers or freshness monitoring.
+- Simulation-to-practice gap persists despite explicit recognition, lacking enforced deployment gates.
+- Multiple identical skill proposals for rate limiting and backoff indicate missing proposal deduplication.
+- Fallback models consistently exhibit high latency (28-35s) without latency-based traffic shedding.
+- Rate limiting (429 errors) on specific models recurs predictably but routing lacks proactive quota awareness.
 - Calibration error of 1 cycle on an 8-cycle prediction shows the effort estimator is accurate enough for scheduling.
 - Swarm convergence in a single cycle with high score (8) indicates the planner-builder-critic loop is well-calibrated for implementation tasks.
 - Hand actions fail intermittently (exit 1) without error details, suggesting transient environment issues rather than code defects.
@@ -51,11 +56,6 @@
 - Simulation verdicts repeatedly demand revisions (5 risks, 3 revisions) before approval, indicating skill proposals are under-specified before simulati
 - Hand actions fail when relative paths ignore sys.argv[1] and ZOETRON_DATA environment variables, preventing access to actual data directories.
 - Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows.
-- Previous dream's exponential-backoff proposal remains unimplemented, revealing a meta-failure: consolidation without deployment.
-- Swarm-to-practice reflex fails because simulation artifacts don't validate against real data paths before execution.
-- Skill proposals accumulate (35+) but lack an automated trial loop, turning innovation into inventory instead of capability.
-- Relative path resolution in hand_action breaks when working directory diverges from ZOETRON_DATA, causing silent zero-result runs.
-- Rate-limiting (429) across multiple free-tier models indicates systemic dependency on unreliable external APIs rather than isolated model failures.
 
 ---
 

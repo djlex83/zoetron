@@ -1,0 +1,8 @@
+{
+  "min_test_coverage": 0.8,
+  "max_latency_ms": 500,
+  "max_memory_mb": 100,
+  "min_safety_score": 0.9,
+  "require_deterministic": true,
+  "max_error_rate": 0.01
+}

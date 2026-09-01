@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8718 Fakten** · Stand 2026-09-01 08:12 UTC · aktualisiert bei jedem Herzschlag
+**8735 Fakten** · Stand 2026-09-01 08:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4585
-- **swarm_artifact:** 1891
-- **last_swarm_critique:** 667
-- **anti_pattern:** 571
-- **last_swarm_goal:** 415
-- **strategy:** 306
+- **dream:** 4590
+- **swarm_artifact:** 1897
+- **last_swarm_critique:** 668
+- **anti_pattern:** 573
+- **last_swarm_goal:** 416
+- **strategy:** 307
 - **tool:** 101
-- **hand_result:** 92
+- **hand_result:** 93
 - **aktuell_organfehler:** 42
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*01.09. 08:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Capability Registry as Single Source of Truth - Introduce a persistent Capability Registry (SQLite, PostgreSQL, or even a JSON index) that stores capability metadata, validation status, and artifact pointers. Validati
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*01.09. 08:29 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 7]): Event-Driven Pipeline with Shared Message Bus - Decouple validation and integration via a lightweight message bus (e.g., Redis Streams, Kafka, or even a local file-system queue). Validation publishes a 'CapabilityVali
+
+### `last_swarm_critique`
+*01.09. 08:28 UTC · Quelle: critic*
+
+score=5; issues=Pfadbruch zwischen Validierung und Integration: Validierung schreibt nach artefakte/validation/konvergenztor_validation_{timestamp}.json, aber Integration liest aus validation/convergence_report.json – Pipeline findet nie validierte Fähigkeiten
+
+### `last_swarm_goal`
+*01.09. 08:18 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich einbauen
+
+### `dream:20260901081711:5:7c4253`
+*01.09. 08:17 UTC · Quelle: dream*
+
+High-value market analyses stall without automated execution triggers or freshness monitoring.
+
+### `dream:20260901081711:4:e0f382`
+*01.09. 08:17 UTC · Quelle: dream*
+
+Simulation-to-practice gap persists despite explicit recognition, lacking enforced deployment gates.
+
+### `dream:20260901081711:3:4d4eee`
+*01.09. 08:17 UTC · Quelle: dream*
+
+Multiple identical skill proposals for rate limiting and backoff indicate missing proposal deduplication.
+
+### `dream:20260901081711:2:79b63d`
+*01.09. 08:17 UTC · Quelle: dream*
+
+Fallback models consistently exhibit high latency (28-35s) without latency-based traffic shedding.
+
+### `dream:20260901081711:1:f8954c`
+*01.09. 08:17 UTC · Quelle: dream*
+
+Rate limiting (429 errors) on specific models recurs predictably but routing lacks proactive quota awareness.
 
 ### `dream:20260901080959:5:a68dba`
 *01.09. 08:09 UTC · Quelle: dream*
