@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 10:49:57",
+ "stand": "2026-09-01 11:02:17",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,12 +63,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -117,6 +111,18 @@
    "quote": 1.0
   },
   {
+   "tool": "simulationen-in-die-praxis-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -151,12 +157,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "veraltete-infos-auffrischen.py",
@@ -201,12 +201,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.796,
+ "haende_quote": 0.784,
  "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 25,
+  "n": 26,
   "best": 9.0,
-  "schnitt": 5.92
+  "schnitt": 5.96
  },
  "score_nach_ziel_typ": {
   "analyse": {

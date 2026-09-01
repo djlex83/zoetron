@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8800 Fakten** · Stand 2026-09-01 10:51 UTC · aktualisiert bei jedem Herzschlag
+**8817 Fakten** · Stand 2026-09-01 11:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4635
-- **swarm_artifact:** 1909
-- **last_swarm_critique:** 670
-- **anti_pattern:** 573
-- **last_swarm_goal:** 418
-- **strategy:** 307
+- **dream:** 4640
+- **swarm_artifact:** 1915
+- **last_swarm_critique:** 671
+- **anti_pattern:** 575
+- **last_swarm_goal:** 419
+- **strategy:** 308
 - **tool:** 103
-- **hand_result:** 93
+- **hand_result:** 94
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen echt testen:2`
+*01.09. 11:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Event-Sourced Simulation Pipeline - Reframe the three artifacts as stages in an event-sourced pipeline backed by an append-only event store (e.g., SQLite or Kafka). A single CLI entry-point (`simulate`) writes a `SimulationSt
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Simulationen echt testen:1`
+*01.09. 11:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Contract-Driven Consumer-Driven Testing - Define explicit OpenAPI/JSON-Schema contracts for each artifact's CLI and file interfaces. Generate provider stubs from the contracts and run consumer-driven contract tests (Pact) so 
+
+### `last_swarm_critique`
+*01.09. 11:00 UTC · Quelle: critic*
+
+score=7; issues=Demo-Stubs werden als Fallback genutzt wenn zoetron-Module fehlen — ohne das externe Package werden Simulationen simuliert statt echt getestet; Kein gemeinsamer Test-Runner / Entry-Point für die drei Artefakte; diese laufen isoliert; Unterschie
+
+### `last_swarm_goal`
+*01.09. 10:56 UTC · Quelle: system*
+
+Simulationen echt testen
+
+### `dream:20260901105605:5:ed3164`
+*01.09. 10:56 UTC · Quelle: dream*
+
+Response-body validation is essential because upstream errors (502) can masquerade as successful HTTP 200 responses, silently degrading output quality.
+
+### `dream:20260901105605:4:f6bb90`
+*01.09. 10:56 UTC · Quelle: dream*
+
+Skill proposals generated during operation require deduplication and validation gates before entering the consolidation queue to prevent noise accumulation.
+
+### `dream:20260901105605:3:a33d92`
+*01.09. 10:56 UTC · Quelle: dream*
+
+A single evolutionary run is insufficient for robust improvement; multiple iterations are required to converge on durable solutions.
+
+### `dream:20260901105605:2:a22562`
+*01.09. 10:56 UTC · Quelle: dream*
+
+Self-diagnosis mechanisms currently detect only internal organ errors but miss external service failures, creating a critical blind spot in system reliability monitoring.
+
+### `dream:20260901105605:1:7a89bc`
+*01.09. 10:56 UTC · Quelle: dream*
+
+External model API failures (429 rate limits, 502 upstream errors) are the dominant failure mode and must be mitigated through health-aware routing with automatic fallback to surviving models.
 
 ### `dream:20260901104924:5:fe8ad6`
 *01.09. 10:49 UTC · Quelle: dream*
