@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9076 Fakten** · Stand 2026-09-01 19:18 UTC · aktualisiert bei jedem Herzschlag
+**9093 Fakten** · Stand 2026-09-01 19:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4800
-- **swarm_artifact:** 1969
-- **last_swarm_critique:** 680
-- **anti_pattern:** 587
-- **last_swarm_goal:** 428
-- **strategy:** 314
+- **dream:** 4805
+- **swarm_artifact:** 1975
+- **last_swarm_critique:** 681
+- **anti_pattern:** 589
+- **last_swarm_goal:** 429
+- **strategy:** 315
 - **tool:** 107
-- **hand_result:** 99
+- **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Selbstdiagnose und Refle:1`
+*01.09. 19:27 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Meta-Learning Feedback Loop - Implement a controller that periodically runs self-diagnosis/reflection tasks on synthetic and historical scenarios, measures their effectiveness (e.g., precision/recall of predicted issues, time
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Selbstdiagnose und Refle:0`
+*01.09. 19:27 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Embedded Introspection Engine - Instrument the zoetron core modules to emit structured runtime telemetry (decision points, error contexts, performance counters) into a local event store. Build a reflection analyzer that conti
+
+### `last_swarm_critique`
+*01.09. 19:27 UTC · Quelle: critic*
+
+score=4; issues=Scripts are mere CLI wrappers invoking zoetron modules - no actual strengthening/improvement of self-diagnosis or reflection capabilities implemented; No measurement or validation that self-diagnosis/reflection has been strengthened (goal not f
+
+### `last_swarm_goal`
+*01.09. 19:23 UTC · Quelle: system*
+
+Selbstdiagnose und Reflexion stärken
+
+### `dream:20260901192323:5:96e792`
+*01.09. 19:23 UTC · Quelle: dream*
+
+Event pruning occurs but fact pruning does not, implying fact accumulation may become a long-term memory burden.
+
+### `dream:20260901192323:4:d83486`
+*01.09. 19:23 UTC · Quelle: dream*
+
+Reflex-driven actions can successfully complete stalled tasks (market analysis), suggesting reflexes as a reliable execution path.
+
+### `dream:20260901192323:3:ed656b`
+*01.09. 19:23 UTC · Quelle: dream*
+
+Skill proposals are generated repeatedly (e.g., circuit breaker) but not implemented, indicating a gap between ideation and execution.
+
+### `dream:20260901192323:2:39384b`
+*01.09. 19:23 UTC · Quelle: dream*
+
+Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits high latency (up to 90s), making it unsuitable for time-critical paths.
+
+### `dream:20260901192323:1:499d50`
+*01.09. 19:23 UTC · Quelle: dream*
+
+The primary model `z-ai/glm-5.2:free` consistently fails with 429 errors, requiring a robust fallback strategy.
 
 ### `dream:20260901191633:5:5e94c9`
 *01.09. 19:16 UTC · Quelle: dream*
