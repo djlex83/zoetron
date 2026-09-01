@@ -531,3 +531,21 @@
 {"ts": 1787690343.1361215, "kind": "issue_synced", "payload": {"issue": 111, "state": "open"}}
 {"ts": 1787690353.9072816, "kind": "fussball_messung", "payload": {"title": "Fußball-Messung: zoetron_40c3426639 erreicht 49.48 % Treffer (Basislinie 50.18 %), Log-Loss 1.0124 (Basislinie 1.0073)", "variante": "zoetron_40c3426639", "treffer": 0.4948, "log_loss": 1.0124, "abstand_zur_basislinie_pp": -0.72, "besser": false}}
 {"ts": 1787690393.3058693, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787691731.2586796, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787691738.6139789, "kind": "nachspiel", "payload": {"pruefer": "fussball_log_loss", "vorher": -0.15, "jetzt": -0.15, "delta": -0.25, "spuren": 1}}
+{"ts": 1787691752.5546136, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.6, "tokens_ein": 1556, "tokens_aus": 399}}
+{"ts": 1787691752.555376, "kind": "skill_proposal", "payload": {"proposal": "After every evolution_run that improves a score by >=2 points, automatically store the winning variant's diff as a reusable strategy trace keyed by goal type."}}
+{"ts": 1787691752.5554483, "kind": "skill_proposal", "payload": {"proposal": "Trigger a second evolution round whenever swarm_finished reports converged=false and score <6, instead of ending the cycle at 2 iterations."}}
+{"ts": 1787691752.5555243, "kind": "skill_proposal", "payload": {"proposal": "Write a 'bahnen' fallback that creates at least one edge from any goal scoring >=4 even when delta is 0, so partial successes remain retrievable."}}
+{"ts": 1787691752.5555966, "kind": "skill_proposal", "payload": {"proposal": "Log per-role (planner/critic/builder) token and latency totals during swarms to attribute cost spikes to specific roles."}}
+{"ts": 1787691752.5556607, "kind": "skill_proposal", "payload": {"proposal": "Before emitting a new skill proposal, check the existing proposal backlog and skip creation if an untested proposal already covers the same failure mode."}}
+{"ts": 1787691752.5557353, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787691761.655287, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.6, "tokens_ein": 489, "tokens_aus": 234}}
+{"ts": 1787691761.6555688, "kind": "drive_goal", "payload": {"title": "Häufige Modellfehler verstehen und beheben", "why": "Das System macht beim Lernen öfter Fehler als sonst üblich. Wenn wir herausfinden, warum, wird alles Zuverlässiger.", "signal": "failure"}}
+{"ts": 1787691761.65569, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber kaum eine wurde wirklich getestet. Nur durch Ausprobieren nützen sie etwas.", "signal": "gap"}}
+{"ts": 1787691761.6557865, "kind": "drive_goal", "payload": {"title": "Unfertige Schwarm-Aufgabe zu Ende bringen", "why": "Eine gestartete Gruppenaufgabe wurde nie abgeschlossen. Offene Aufgaben kosten Speicherplatz und bringen keinen Nutzen.", "signal": "stale"}}
+{"ts": 1787691762.8372178, "kind": "whisper_geparkt", "payload": {"title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "versuche": 3, "grund": "nach 3 Versuchen ohne Konvergenz geparkt - braucht eine Entscheidung des Erschaffers"}}
+{"ts": 1787691766.1108606, "kind": "drive_whisper", "payload": {"title": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren", "why": "Die Intelligenz-Obergrenze des Organismus ist das beste erreichbare Modell - also muss er automatisch klüger werden, sobald die Welt bessere Cortexe veröffentlicht. Erweitere den AutoRouter: täglicher Scan nach neuen freien tool-fähigen OpenRouter-Modellen; jeder Neuling durchläuft binnen 24 Stunden", "geerbt": false, "auftrag_zeichen": 561, "versuch": 1}}
+{"ts": 1787691766.699856, "kind": "swarm_started", "payload": {"goal": "Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren"}}
+{"ts": 1787691774.1596148, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787691775.105194, "kind": "metabolism_check", "payload": {"stress": 0.372, "state": "moderate", "budget": {"max_tasks": 4, "max_iterations": 2}}}

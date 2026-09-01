@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 20:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 21:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulations approve risky operations (verdict: go) but real execution fails, showing simulation does not model rate-limit or filesystem constraints.
+- Reflex tools and swarm executions for skill-building consistently fail (ok: false), creating a proposal-to-production gap.
+- Hand actions fail on basic path resolution (sys.argv[1], ZOETRON_DATA), indicating environment assumptions break under execution.
+- System stress (1.0) triggers conserve mode that caps tasks to 3 and iterations to 1, starving the very retries needed to recover from rate limits.
+- All model failures stem from a single OpenRouter gateway rate limit (429), proving the multi-model fallback is illusory when sharing one quota.
 - Hand actions fail with opaque messages ("nichts gelesen") because tool outputs lack structured error schemas.
 - Skill proposals pile up untested because the system lacks a validation pipeline from proposal to deployment.
 - Stale goals accumulate because no automatic triage discards or renews them after a TTL.
@@ -51,11 +56,6 @@
 - Model latency variance (9–44s) makes fixed timeouts unreliable; adaptive deadlines tied to historical percentiles are needed.
 - Upstream provider overloads (502) cascade into silent failures that self-diagnosis misses because they originate outside organ boundaries.
 - Rate limiting (429) is the dominant failure mode across all free-tier models, requiring systematic request scheduling rather than reactive retries.
-- Stress accumulation from repeated failures is not monitored or throttled, leading to runaway resource consumption
-- Swarm convergence fails when critical roles lack redundancy and health-aware routing
-- Code execution failures occur without pre-validation, wasting cycles on syntactically invalid artifacts
-- Model failures cascade when fallback chains are absent, causing complete task paralysis instead of graceful degradation
-- Self-diagnosis and pruning mechanisms are functioning correctly with zero errors and pruned items, indicating stable memory management.
 
 ---
 

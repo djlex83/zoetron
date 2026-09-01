@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9135 Fakten** · Stand 2026-09-01 20:58 UTC · aktualisiert bei jedem Herzschlag
+**9140 Fakten** · Stand 2026-09-01 21:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4835
+- **dream:** 4840
 - **swarm_artifact:** 1981
 - **last_swarm_critique:** 682
 - **anti_pattern:** 591
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901210345:5:549288`
+*01.09. 21:03 UTC · Quelle: dream*
+
+Simulations approve risky operations (verdict: go) but real execution fails, showing simulation does not model rate-limit or filesystem constraints.
+
+### `dream:20260901210345:4:216db2`
+*01.09. 21:03 UTC · Quelle: dream*
+
+Reflex tools and swarm executions for skill-building consistently fail (ok: false), creating a proposal-to-production gap.
+
+### `dream:20260901210345:3:fae1cf`
+*01.09. 21:03 UTC · Quelle: dream*
+
+Hand actions fail on basic path resolution (sys.argv[1], ZOETRON_DATA), indicating environment assumptions break under execution.
+
+### `dream:20260901210345:2:c68e98`
+*01.09. 21:03 UTC · Quelle: dream*
+
+System stress (1.0) triggers conserve mode that caps tasks to 3 and iterations to 1, starving the very retries needed to recover from rate limits.
+
+### `dream:20260901210345:1:9a4aee`
+*01.09. 21:03 UTC · Quelle: dream*
+
+All model failures stem from a single OpenRouter gateway rate limit (429), proving the multi-model fallback is illusory when sharing one quota.
 
 ### `dream:20260901205651:5:bece82`
 *01.09. 20:56 UTC · Quelle: dream*
