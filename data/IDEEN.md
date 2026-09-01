@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 05:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 05:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Recalling last_swarm_goal after a failed reflex indicates the system can self-correct by revisiting prior goals, but only after exhausting retries on 
+- The simulation-revision loop (5 risks → 5 revisions) proved effective but was followed by further failed model calls, suggesting revisions were applie
+- Under maximum stress (1.0) and conserve mode, the system still attempted parallel model calls instead of serializing around the single working model.
+- Scripts that exit with code 0 but produce no file or directory mutations are silently treated as successes, masking real execution failures.
+- When multiple API providers simultaneously return 429/502 errors, the system lacks a prioritized fallback chain based on proven model availability, ca
 - Self-diagnosis reports zero organ errors while model failures persist, showing health checks don't cover external API dependency failures.
 - Drive goals repeat the same three themes (model errors, stale analyses, unlearned skills) across cycles, indicating no closure mechanism for completed
 - Skill proposals accumulate but lack a mandatory promotion gate; the system proposes reliability improvements yet fails to deploy them.
@@ -51,11 +56,6 @@
 - Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (9.9–20.7s), indicating unstable capacity on free ti
 - Free-tier model z-ai/glm-5.2:free consistently returns 429 errors under load, making it unreliable for production use without circuit-breaking.
 - Self-diagnosis and reflex actions operate in isolation without feeding back into model routing or skill deployment decisions.
-- Latency variance across models (5.9s–17.6s) and frequent failures indicate no circuit-breaker or fallback logic is active.
-- Model selection is reactive without health-based routing, causing repeated calls to known-failing endpoints.
-- Skill proposals accumulate (5 recorded) but lack an execution gate to promote or reject them, causing capability stagnation.
-- Free-tier model endpoints consistently fail with 429 rate limits and 502 upstream errors, making them unreliable for production workloads.
-- Pruning runs remove zero facts/events, suggesting retention policies are either misconfigured or the knowledge graph lacks TTL metadata.
 
 ---
 

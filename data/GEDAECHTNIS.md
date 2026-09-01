@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8625 Fakten** · Stand 2026-09-01 05:01 UTC · aktualisiert bei jedem Herzschlag
+**8630 Fakten** · Stand 2026-09-01 05:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4525
+- **dream:** 4530
 - **swarm_artifact:** 1873
 - **last_swarm_critique:** 664
 - **anti_pattern:** 567
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901052531:5:b5d63d`
+*01.09. 05:25 UTC · Quelle: dream*
+
+Recalling last_swarm_goal after a failed reflex indicates the system can self-correct by revisiting prior goals, but only after exhausting retries on broken paths.
+
+### `dream:20260901052531:4:344657`
+*01.09. 05:25 UTC · Quelle: dream*
+
+The simulation-revision loop (5 risks → 5 revisions) proved effective but was followed by further failed model calls, suggesting revisions were applied before the model layer was stabilized.
+
+### `dream:20260901052531:3:729c8c`
+*01.09. 05:25 UTC · Quelle: dream*
+
+Under maximum stress (1.0) and conserve mode, the system still attempted parallel model calls instead of serializing around the single working model.
+
+### `dream:20260901052531:2:b8c56c`
+*01.09. 05:25 UTC · Quelle: dream*
+
+Scripts that exit with code 0 but produce no file or directory mutations are silently treated as successes, masking real execution failures.
+
+### `dream:20260901052531:1:6ef906`
+*01.09. 05:25 UTC · Quelle: dream*
+
+When multiple API providers simultaneously return 429/502 errors, the system lacks a prioritized fallback chain based on proven model availability, causing cascading failures.
 
 ### `tool:modellfehler-stark-verringern`
 *01.09. 04:59 UTC · Quelle: hands*
