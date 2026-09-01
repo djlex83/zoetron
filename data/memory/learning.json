@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 02:51:41",
+ "stand": "2026-09-01 02:58:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 15,
-   "erfolge": 15,
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 16,
+   "erfolge": 16,
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 15,
    "erfolge": 15,
    "quote": 1.0
@@ -165,7 +165,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.821,
+ "haende_quote": 0.822,
  "simulationen_angewandt": 18,
  "swarm_scores": {
   "n": 22,

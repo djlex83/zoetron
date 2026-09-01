@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8531 Fakten** · Stand 2026-09-01 02:52 UTC · aktualisiert bei jedem Herzschlag
+**8536 Fakten** · Stand 2026-09-01 02:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4455
+- **dream:** 4460
 - **swarm_artifact:** 1861
 - **last_swarm_critique:** 662
 - **anti_pattern:** 563
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901025831:5:1860b8`
+*01.09. 02:58 UTC · Quelle: dream*
+
+Critical goals (market analysis, error reduction) stall because non-critical combination goals consume scarce iteration budget.
+
+### `dream:20260901025831:4:d1b7fe`
+*01.09. 02:58 UTC · Quelle: dream*
+
+Model failures follow predictable signatures (429 on free tiers, 502 upstream errors) that can be cached and preemptively routed around.
+
+### `dream:20260901025831:3:07c443`
+*01.09. 02:58 UTC · Quelle: dream*
+
+Fifty-five skill proposals exist but remain unimplemented due to missing deployment tracking and accountability mechanisms.
+
+### `dream:20260901025831:2:848465`
+*01.09. 02:58 UTC · Quelle: dream*
+
+The system operates at maximum stress (1.0) with severely constrained budgets, causing cascading failures in hand actions and reflexes.
+
+### `dream:20260901025831:1:139c57`
+*01.09. 02:58 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits after minimal usage, making them unreliable for production workloads.
 
 ### `dream:20260901025115:5:b9ee89`
 *01.09. 02:51 UTC · Quelle: dream*

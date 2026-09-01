@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 02:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 02:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Critical goals (market analysis, error reduction) stall because non-critical combination goals consume scarce iteration budget.
+- Model failures follow predictable signatures (429 on free tiers, 502 upstream errors) that can be cached and preemptively routed around.
+- Fifty-five skill proposals exist but remain unimplemented due to missing deployment tracking and accountability mechanisms.
+- The system operates at maximum stress (1.0) with severely constrained budgets, causing cascading failures in hand actions and reflexes.
+- Free-tier models consistently fail with 429 rate limits after minimal usage, making them unreliable for production workloads.
 - No systematic model health registry exists, so routing decisions remain reactive instead of predictive.
 - Reflex-based skill evaluation works but operates in isolation from the model routing layer that needs those skills.
 - Skill proposals accumulate (55+) but lack a mandatory prototype gate, causing proposal inflation without execution.
@@ -51,11 +56,6 @@
 - Swarm-based debugging (planner/builder/critic) did not converge in 2 cycles, indicating the error-space is too large for fixed-iteration consensus.
 - The inclusionai/ling-3.0-flash-fin model consistently succeeds where larger models fail, suggesting smaller specialized models have more generous quot
 - Free-tier models on OpenRouter exhibit systemic rate-limiting (429) under concurrent load, making them unreliable for production workflows.
-- Transient hand-action failures self-correct on immediate retry, so single automatic retries should precede escalation.
-- Calibration predictions match actual scores exactly (error 0), making them reliable for resource allocation decisions.
-- Evolution with critic feedback yields >50% quality improvement (6→9) and should be standard after every first-pass generation.
-- inclusionai/ling-3.0-flash-fin:free is the only consistently available free model under load and should be prioritized as primary.
-- Rate limiting (429) is systemic across free-tier models and should be treated as expected behavior rather than exceptional failure.
 
 ---
 
