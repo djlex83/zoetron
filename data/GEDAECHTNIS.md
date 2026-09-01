@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8873 Fakten** · Stand 2026-09-01 12:52 UTC · aktualisiert bei jedem Herzschlag
+**8878 Fakten** · Stand 2026-09-01 13:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4675
+- **dream:** 4680
 - **swarm_artifact:** 1927
 - **last_swarm_critique:** 673
 - **anti_pattern:** 577
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901130655:5:899a0e`
+*01.09. 13:06 UTC · Quelle: dream*
+
+Hand actions and reflexes succeed locally (exit 0, 0.25s) but cannot compensate for upstream model unavailability that blocks cognitive steps.
+
+### `dream:20260901130655:4:05b2f2`
+*01.09. 13:06 UTC · Quelle: dream*
+
+Self-diagnosis and pruning report zero issues while model failures persist, indicating monitoring blind spots for external API dependencies.
+
+### `dream:20260901130655:3:305cce`
+*01.09. 13:06 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a mechanism to graduate into deployed capabilities, creating a proposal-to-production gap.
+
+### `dream:20260901130655:2:9bcb55`
+*01.09. 13:06 UTC · Quelle: dream*
+
+The nemotron-3-ultra endpoint succeeded after glm-5.2 failures, proving fallback chains work but only when at least one endpoint has available quota.
+
+### `dream:20260901130655:1:354f5a`
+*01.09. 13:06 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making endpoint diversity without quota management ineffective.
 
 ### `last_swarm_critique`
 *01.09. 12:51 UTC · Quelle: critic*

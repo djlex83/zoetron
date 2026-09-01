@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 12:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 13:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,15 +17,15 @@
 - Add per-request timeout (20 s) and retry budget (max 2 attempts with exponential backoff + jitter) before fail *(hatte die Idee 3×)*
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 3×)*
 - Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 3×)*
-- Create ExecutionGapTracker that maps drive goals (stale, failure, gap) to concrete skill proposals and alerts  *(hatte die Idee 2×)*
 - Implement per-model-key CircuitBreaker: open after 3 consecutive 429/5xx, half-open after 60s with single synt *(hatte die Idee 2×)*
 - Deploy QuotaAwareRouter with per-key circuit breakers, EWMA latency tracking, and automatic fallback to health *(hatte die Idee 2×)*
+- Implement SyntheticProbeHarness running lightweight completions every 60s per model to populate ModelHealthReg *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions and reflexes succeed locally (exit 0, 0.25s) but cannot compensate for upstream model unavailability that blocks cognitive steps.
+- Self-diagnosis and pruning report zero issues while model failures persist, indicating monitoring blind spots for external API dependencies.
+- Skill proposals accumulate but lack a mechanism to graduate into deployed capabilities, creating a proposal-to-production gap.
+- The nemotron-3-ultra endpoint succeeded after glm-5.2 failures, proving fallback chains work but only when at least one endpoint has available quota.
+- Rate limiting (429 errors) across multiple free-tier models is the dominant failure mode, making endpoint diversity without quota management ineffecti
 - The system is in a 'conserve' state with limited budget, which may be contributing to premature task termination and incomplete skill implementation.
 - Model performance varies significantly by provider, with some models consistently timing out or returning upstream errors under load.
 - Market analysis results remain unused despite completion, pointing to a gap between task execution and actionable integration.
@@ -51,11 +56,6 @@
 - Hand actions fail on path resolution because relative paths diverge from ZOETRON_DATA; all file operations must resolve against the canonical data roo
 - Proposed skills accumulate without validation because no simulation gate exists; mandatory dry-run in a production-like sandbox must gate promotion.
 - Rate-limited models without automatic fallback create systemic unreliability; a router with health scoring and instant failover is necessary infrastru
-- Swarm role allocation must include graceful degradation by pinning critical roles (planner, critic) to reliable models while allowing best-effort role
-- Historical gaps between predicted and actual scores reveal systematic bias per goal type, which a calibration layer can learn and compensate for over 
-- HTTP 200 responses can still carry upstream error payloads, so response-body schema validation is required to catch masquerading failures.
-- Free models exhibit unpredictable latency (5s to 27s) and availability, necessitating a tiered architecture that separates fast-path endpoints from qu
-- Rate-limit errors (429) recur predictably on free-tier models and require provider-level circuit breakers rather than per-model handling to isolate qu
 
 ---
 
