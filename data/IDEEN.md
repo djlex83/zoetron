@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 17:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 17:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,9 +28,9 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Poolside/laguna-s-2.1:free shows consistent success (2/2) with low latency (3.5-7.3s), suggesting it should be prioritized as primary model for simila
+- Evolutionary iteration with critic feedback can improve solution scores from 3/10 to 9/10 in a single generation, but requires explicit sandbox valida
+- Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3), indicating a need for empirical baseline tracking per model
+- Consecutive failures trigger automatic model bans (1800s), so error handling must track consecutive failures per model and proactively rotate before b
+- Free tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without request queuing an
 - Without per-model rate-limit tracking and exponential backoff, the system wastes cycles hammering throttled endpoints instead of failing over to avail
 - Stale self-diagnoses create blind spots: infrequent health checks allow degradation to accumulate until it cascades into visible failures.
 - Models that occasionally succeed under load (e.g., inclusionai/ling-3.0-flash-fin at 11s) must be tracked via a rolling reliability scorecard to infor
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors while model inference fails repeatedly, indicating diagnostic coverage misses external dependency health.
 - Extreme latency variance (5s vs 75s for successful calls) without SLA enforcement causes unpredictable iteration times and timeout cascades.
 - Provider-level quota exhaustion (429 errors across all Google models simultaneously) makes per-model fallback ineffective; routing must track provider
-- Simulation gates (verdict=go, grün=true) precede successful artifact runs, confirming pre-flight checks reduce runtime failures.
-- Local hand-action execution completes in <0.3s with zero failures, outperforming all remote API calls by orders of magnitude.
-- Poolside Laguna-S-2.1:free succeeded on both attempts with moderate latency (~50–68s), suggesting it is the most reliable free option observed.
-- Nvidia Nemotron shows high latency variance (35–79s) and intermittent 502 upstream overloads, indicating unstable capacity.
-- Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for production workloads without aggressive backoff and rotati
 
 ---
 

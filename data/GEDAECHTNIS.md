@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9009 Fakten** · Stand 2026-09-01 17:10 UTC · aktualisiert bei jedem Herzschlag
+**9014 Fakten** · Stand 2026-09-01 17:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4745
+- **dream:** 4750
 - **swarm_artifact:** 1963
 - **last_swarm_critique:** 679
 - **anti_pattern:** 585
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901172317:5:3bcc7e`
+*01.09. 17:23 UTC · Quelle: dream*
+
+Poolside/laguna-s-2.1:free shows consistent success (2/2) with low latency (3.5-7.3s), suggesting it should be prioritized as primary model for similar tasks.
+
+### `dream:20260901172317:4:9c4073`
+*01.09. 17:23 UTC · Quelle: dream*
+
+Evolutionary iteration with critic feedback can improve solution scores from 3/10 to 9/10 in a single generation, but requires explicit sandbox validation criteria.
+
+### `dream:20260901172317:3:13aec9`
+*01.09. 17:23 UTC · Quelle: dream*
+
+Calibration predictions overestimate actual performance by ~57% (predicted 7 vs actual 3), indicating a need for empirical baseline tracking per model-task pair.
+
+### `dream:20260901172317:2:db788d`
+*01.09. 17:23 UTC · Quelle: dream*
+
+Consecutive failures trigger automatic model bans (1800s), so error handling must track consecutive failures per model and proactively rotate before ban thresholds.
+
+### `dream:20260901172317:1:421928`
+*01.09. 17:23 UTC · Quelle: dream*
+
+Free tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without request queuing and exponential backoff.
 
 ### `tool:skill-ideen-in-echte-faehigkeiten-umwand`
 *01.09. 17:08 UTC · Quelle: hands*
