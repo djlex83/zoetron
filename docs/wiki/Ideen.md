@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 05:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 05:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,13 +24,13 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Graph traversal (bahnen) returned zero new edges despite code presence, suggesting the retrieval heuristic misses relevant connections when artifact s
+- Calibration error of 1 point (predicted 5 vs actual 6) shows the predictor is well-tuned for this task class.
+- Evolutionary iteration (3 variants, critic feedback) lifted artifact score from 6 to 8–9, confirming that structured self-critique loops produce measu
+- Nvidia Nemotron-3-Ultra succeeds but exhibits high latency variance (24–56s) and eventual 502 upstream overload, indicating capacity saturation.
+- Free-tier models on OpenRouter consistently hit 429 rate limits under sequential load, making them unreliable for multi-step workflows.
 - Recalling last_swarm_goal after a failed reflex indicates the system can self-correct by revisiting prior goals, but only after exhausting retries on 
 - The simulation-revision loop (5 risks → 5 revisions) proved effective but was followed by further failed model calls, suggesting revisions were applie
 - Under maximum stress (1.0) and conserve mode, the system still attempted parallel model calls instead of serializing around the single working model.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but lack a mandatory promotion gate; the system proposes reliability improvements yet fails to deploy them.
 - Fallback latency varies 2× (18–40 s) even on the same model, so latency-based routing thresholds must be adaptive, not fixed.
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary endpoints without health-aware routing.
-- Reflex actions succeed when concrete tools exist (alte-erinnerungen-aktualisieren.py, ersten-swarm-lauf-mit-score-8-konvergier.py), showing tool-media
-- System generates skill proposals (5+ this session) but drive_goal 'Vorgeschlagene Fähigkeiten wirklich lernen' reveals a persistent proposal-to-implem
-- Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency variance (9.9–20.7s), indicating unstable capacity on free ti
-- Free-tier model z-ai/glm-5.2:free consistently returns 429 errors under load, making it unreliable for production use without circuit-breaking.
-- Self-diagnosis and reflex actions operate in isolation without feeding back into model routing or skill deployment decisions.
 
 ---
 

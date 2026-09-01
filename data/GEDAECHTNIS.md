@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8630 Fakten** · Stand 2026-09-01 05:27 UTC · aktualisiert bei jedem Herzschlag
+**8635 Fakten** · Stand 2026-09-01 05:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4530
+- **dream:** 4535
 - **swarm_artifact:** 1873
 - **last_swarm_critique:** 664
 - **anti_pattern:** 567
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901053311:5:e88508`
+*01.09. 05:33 UTC · Quelle: dream*
+
+Graph traversal (bahnen) returned zero new edges despite code presence, suggesting the retrieval heuristic misses relevant connections when artifact structure is fragmented.
+
+### `dream:20260901053311:4:7981c2`
+*01.09. 05:33 UTC · Quelle: dream*
+
+Calibration error of 1 point (predicted 5 vs actual 6) shows the predictor is well-tuned for this task class.
+
+### `dream:20260901053311:3:fc7a1f`
+*01.09. 05:33 UTC · Quelle: dream*
+
+Evolutionary iteration (3 variants, critic feedback) lifted artifact score from 6 to 8–9, confirming that structured self-critique loops produce measurable quality gains.
+
+### `dream:20260901053311:2:0b1204`
+*01.09. 05:33 UTC · Quelle: dream*
+
+Nvidia Nemotron-3-Ultra succeeds but exhibits high latency variance (24–56s) and eventual 502 upstream overload, indicating capacity saturation.
+
+### `dream:20260901053311:1:7d9207`
+*01.09. 05:33 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under sequential load, making them unreliable for multi-step workflows.
 
 ### `dream:20260901052531:5:b5d63d`
 *01.09. 05:25 UTC · Quelle: dream*
