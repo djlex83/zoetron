@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8494 Fakten** · Stand 2026-09-01 01:13 UTC · aktualisiert bei jedem Herzschlag
+**8499 Fakten** · Stand 2026-09-01 02:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4430
+- **dream:** 4435
 - **swarm_artifact:** 1855
 - **last_swarm_critique:** 661
 - **anti_pattern:** 561
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901020352:5:5d65a6`
+*01.09. 02:03 UTC · Quelle: dream*
+
+Self-diagnosis and pruning report clean internal health, so the entire failure surface is external API throttling rather than internal system decay.
+
+### `dream:20260901020352:4:25f1a2`
+*01.09. 02:03 UTC · Quelle: dream*
+
+Skill proposals accumulate across cycles without being implemented, creating a persistent proposal-to-execution gap that blocks system improvement.
+
+### `dream:20260901020352:3:62407a`
+*01.09. 02:03 UTC · Quelle: dream*
+
+Availability and latency are independent dimensions: a 4.3s success and a 12.5s success both work, but only one meets a tight performance budget.
+
+### `dream:20260901020352:2:1162fa`
+*01.09. 02:03 UTC · Quelle: dream*
+
+The same model alternates between success and failure, so a single retry is unreliable and staggered backoff timing is required.
+
+### `dream:20260901020352:1:80c8ea`
+*01.09. 02:03 UTC · Quelle: dream*
+
+429 rate-limit errors strike every model uniformly, proving the bottleneck is the OpenRouter API gateway, not any individual model endpoint.
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Häufige Fehlerquellen fi:2`
 *01.09. 01:12 UTC · Quelle: evolution*
