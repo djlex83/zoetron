@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 00:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 13×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Modellfehler systematisch analysieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-driven revision loops (5 risks → 5 revisions) improve artifacts but do not guarantee convergence within budget.
+- Calibration error of +1 (predicted 7 vs actual 6) indicates systematic overconfidence in capability estimates.
+- Evolutionary revision reliably lifts artifact scores (6→8) even when swarm convergence stalls after only 2 cycles.
+- nvidia/nemotron-3-ultra succeeds but exhibits extreme latency variance (4.9s–158.5s), suggesting queueing or cold-start effects on the free endpoint.
+- Free-tier models (z-ai/glm, google/gemma) consistently hit 429 rate limits making them unreliable for production workflows.
 - Artifact execution succeeded (137-line Python), proving the simulation-evolution loop works despite model-layer instability.
 - The sole reliable model (poolside/laguna-s-2.1) shows extreme latency variance (25–177s), requiring explicit timeout budgets.
 - Simulation-based verification caught defects early yet required three revisions, revealing gaps between spec and executable artifact.
@@ -51,11 +56,6 @@
 - Relative path resolution fails under ZOETRON_DATA - all file operations must use absolute paths from environment variable.
 - Model endpoint volatility (404 on nemotron) demands continuous availability probing before task assignment to avoid wasted cycles.
 - Rate limiting (429) across multiple free models indicates systemic quota exhaustion requiring fallback chains with local model backup.
-- Relative path resolution in hand_action breaks under varying working directories; all file ops must anchor to ZOETRON_DATA.
-- Swarm convergence fails when evaluation criteria are implicit; explicit success metrics and max-cycle bounds are required.
-- Skill proposals accumulate but lack automated validation loop; proposals need sandbox A/B testing before production promotion.
-- Extreme latency variance (8s vs 44s) for same model class makes static timeouts harmful; routing must use rolling p95 latency per model.
-- Correlated 429/502 failures across multiple providers indicate shared rate-limit infrastructure, requiring provider-diverse fallback routing.
 
 ---
 

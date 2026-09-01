@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8452 Fakten** · Stand 2026-09-01 00:10 UTC · aktualisiert bei jedem Herzschlag
+**8457 Fakten** · Stand 2026-09-01 00:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4400
+- **dream:** 4405
 - **swarm_artifact:** 1849
 - **last_swarm_critique:** 660
 - **anti_pattern:** 559
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901001551:5:5a700e`
+*01.09. 00:15 UTC · Quelle: dream*
+
+Simulation-driven revision loops (5 risks → 5 revisions) improve artifacts but do not guarantee convergence within budget.
+
+### `dream:20260901001551:4:e1e9ea`
+*01.09. 00:15 UTC · Quelle: dream*
+
+Calibration error of +1 (predicted 7 vs actual 6) indicates systematic overconfidence in capability estimates.
+
+### `dream:20260901001551:3:af05fa`
+*01.09. 00:15 UTC · Quelle: dream*
+
+Evolutionary revision reliably lifts artifact scores (6→8) even when swarm convergence stalls after only 2 cycles.
+
+### `dream:20260901001551:2:e09228`
+*01.09. 00:15 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra succeeds but exhibits extreme latency variance (4.9s–158.5s), suggesting queueing or cold-start effects on the free endpoint.
+
+### `dream:20260901001551:1:c8f6f4`
+*01.09. 00:15 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm, google/gemma) consistently hit 429 rate limits making them unreliable for production workflows.
 
 ### `dream:20260901000916:5:6193c1`
 *01.09. 00:09 UTC · Quelle: dream*

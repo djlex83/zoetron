@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 5901 Neuronen · 335852 bewertete Synapsen
+Stand: 5907 Neuronen · 336543 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,7 +12,7 @@ Stand: 5901 Neuronen · 335852 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 546 | 0.24 |
 | 2 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 541 | 0.24 |
-| 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 532 | 0.24 |
+| 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 533 | 0.24 |
 | 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 547 | 0.23 |
 | 5 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 487 | 0.26 |
 | 6 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 548 | 0.23 |
@@ -20,10 +20,10 @@ Stand: 5901 Neuronen · 335852 bewertete Synapsen
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 460 | 0.26 |
 | 9 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 478 | 0.25 |
 | 10 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 470 | 0.24 |
-| 11 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 426 | 0.27 |
-| 12 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 438 | 0.26 |
-| 13 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 444 | 0.25 |
-| 14 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 438 | 0.25 |
+| 11 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 427 | 0.27 |
+| 12 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 439 | 0.26 |
+| 13 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 445 | 0.25 |
+| 14 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 439 | 0.25 |
 | 15 | 💭 | Model provider instability (502/429 errors, 11–81s latency varia… | 492 | 0.22 |
 
 ## Die 15 stärksten Synapsen
