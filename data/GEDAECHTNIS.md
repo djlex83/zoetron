@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8914 Fakten** · Stand 2026-09-01 14:08 UTC · aktualisiert bei jedem Herzschlag
+**8919 Fakten** · Stand 2026-09-01 14:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4695
+- **dream:** 4700
 - **swarm_artifact:** 1939
 - **last_swarm_critique:** 675
 - **anti_pattern:** 579
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901141416:5:b25514`
+*01.09. 14:14 UTC · Quelle: dream*
+
+The simulation-driven revision loop (verdict=revise, risks=3, revisions=3) indicates skill proposals require multi-pass validation before consolidation.
+
+### `dream:20260901141416:4:05f005`
+*01.09. 14:14 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free exhibits high latency variance (76-158s) and intermittent 502 upstream errors.
+
+### `dream:20260901141416:3:928c34`
+*01.09. 14:14 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free offers low latency (~4.5s) when requests succeed but fails with 429 errors >80% of the time.
+
+### `dream:20260901141416:2:6bc8af`
+*01.09. 14:14 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model with consistent availability (100% success in logs) albeit at 16-18s latency.
+
+### `dream:20260901141416:1:f806ec`
+*01.09. 14:14 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate limits and 502 upstream overloads, making them unreliable as primary endpoints.
 
 ### `last_swarm_critique`
 *01.09. 14:06 UTC · Quelle: critic*
