@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 11:35:54",
+ "stand": "2026-09-01 11:43:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -63,6 +57,18 @@
    "quote": 1.0
   },
   {
+   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -70,12 +76,6 @@
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8822 Fakten** · Stand 2026-09-01 11:37 UTC · aktualisiert bei jedem Herzschlag
+**8827 Fakten** · Stand 2026-09-01 11:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4645
+- **dream:** 4650
 - **swarm_artifact:** 1915
 - **last_swarm_critique:** 671
 - **anti_pattern:** 575
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901114211:5:de0ae1`
+*01.09. 11:42 UTC · Quelle: dream*
+
+Zero pruning events and zero organ errors indicate healthy memory but stagnant optimization - the system maintains rather than improves.
+
+### `dream:20260901114211:4:3c31fd`
+*01.09. 11:42 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ this cycle) but only one reflex executed, revealing a proposal-to-implementation gap despite available tooling.
+
+### `dream:20260901114211:3:cf6fe9`
+*01.09. 11:42 UTC · Quelle: dream*
+
+Fallback models (nvidia/nemotron) succeed but at 20-30s latency, creating a reliability-speed tradeoff with no fast-path tier for time-critical subtasks.
+
+### `dream:20260901114211:2:e168bc`
+*01.09. 11:42 UTC · Quelle: dream*
+
+Identical high-priority goals (reduce model errors, finish market analyses, implement skills) recur across cycles, proving reflex completions don't resolve root causes.
+
+### `dream:20260901114211:1:ed18d5`
+*01.09. 11:42 UTC · Quelle: dream*
+
+Provider-level quota exhaustion (429 errors on z-ai/glm-5.2) cascades because backoff is per-model not per-provider, starving all models from that provider.
 
 ### `dream:20260901113535:5:77d888`
 *01.09. 11:35 UTC · Quelle: dream*

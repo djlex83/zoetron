@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 11:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 11:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,15 +25,15 @@
 
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 9×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero pruning events and zero organ errors indicate healthy memory but stagnant optimization - the system maintains rather than improves.
+- Skill proposals accumulate (5+ this cycle) but only one reflex executed, revealing a proposal-to-implementation gap despite available tooling.
+- Fallback models (nvidia/nemotron) succeed but at 20-30s latency, creating a reliability-speed tradeoff with no fast-path tier for time-critical subtas
+- Identical high-priority goals (reduce model errors, finish market analyses, implement skills) recur across cycles, proving reflex completions don't re
+- Provider-level quota exhaustion (429 errors on z-ai/glm-5.2) cascades because backoff is per-model not per-provider, starving all models from that pro
 - Reflex execution via dedicated Python tools (alte-marktanalysen-verwerten.py, vorgeschlagene-skills-nutzbar-machen.py) achieved 100% success with sub-
 - The dream consolidation module itself timed out at 180 seconds, revealing that unbounded reflection on growing experience logs exceeds fixed time budg
 - Stale analysis artifacts persist across cycles because freshness enforcement is manual and event-driven rather than policy-driven with automated TTL c
@@ -51,11 +56,6 @@
 - A single evolutionary run is insufficient for robust improvement; multiple iterations are required to converge on durable solutions.
 - Self-diagnosis mechanisms currently detect only internal organ errors but miss external service failures, creating a critical blind spot in system rel
 - External model API failures (429 rate limits, 502 upstream errors) are the dominant failure mode and must be mitigated through health-aware routing wi
-- Calibration consistently underestimates actual performance (predicted 6 vs actual 9), indicating the predictor lacks visibility into swarm compensatio
-- System achieved goal convergence in 1 cycle with score 9 despite 80% model failure rate, proving the swarm architecture tolerates massive LLM unreliab
-- InclusionAI Ling-3.0-Flash-Fin consistently succeeds with lowest latency (74.7s), suggesting smaller specialized models outperform large general ones 
-- NVIDIA Nemotron-3-Ultra shows intermittent 502 upstream overloads despite 200 OK responses, requiring response-body validation not just status codes.
-- Free-tier models on OpenRouter exhibit cascading 429 rate-limit failures once one model hits quota, making sequential fallback unreliable.
 
 ---
 
