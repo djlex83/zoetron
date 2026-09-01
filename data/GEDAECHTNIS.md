@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8703 Fakten** · Stand 2026-09-01 07:48 UTC · aktualisiert bei jedem Herzschlag
+**8708 Fakten** · Stand 2026-09-01 07:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4570
+- **dream:** 4575
 - **swarm_artifact:** 1891
 - **last_swarm_critique:** 667
 - **anti_pattern:** 571
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901075341:5:c2a27f`
+*01.09. 07:53 UTC · Quelle: dream*
+
+Previous dream's exponential-backoff proposal remains unimplemented, revealing a meta-failure: consolidation without deployment.
+
+### `dream:20260901075341:4:425446`
+*01.09. 07:53 UTC · Quelle: dream*
+
+Swarm-to-practice reflex fails because simulation artifacts don't validate against real data paths before execution.
+
+### `dream:20260901075341:3:ed1ac0`
+*01.09. 07:53 UTC · Quelle: dream*
+
+Skill proposals accumulate (35+) but lack an automated trial loop, turning innovation into inventory instead of capability.
+
+### `dream:20260901075341:2:b0c9ee`
+*01.09. 07:53 UTC · Quelle: dream*
+
+Relative path resolution in hand_action breaks when working directory diverges from ZOETRON_DATA, causing silent zero-result runs.
+
+### `dream:20260901075341:1:6b694a`
+*01.09. 07:53 UTC · Quelle: dream*
+
+Rate-limiting (429) across multiple free-tier models indicates systemic dependency on unreliable external APIs rather than isolated model failures.
 
 ### `dream:20260901074640:5:8a30c6`
 *01.09. 07:46 UTC · Quelle: dream*
