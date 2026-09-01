@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**8827 Fakten** · Stand 2026-09-01 11:44 UTC · aktualisiert bei jedem Herzschlag
+**8844 Fakten** · Stand 2026-09-01 12:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4650
-- **swarm_artifact:** 1915
-- **last_swarm_critique:** 671
-- **anti_pattern:** 575
-- **last_swarm_goal:** 419
-- **strategy:** 308
-- **tool:** 103
+- **dream:** 4655
+- **swarm_artifact:** 1921
+- **last_swarm_critique:** 672
+- **anti_pattern:** 577
+- **last_swarm_goal:** 420
+- **strategy:** 309
+- **tool:** 104
 - **hand_result:** 94
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeiten-ideen-in-echte-skills-wandel`
+*01.09. 12:00 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeiten-Ideen in echte Skills wandeln'. Datei: data/tools/fähigkeiten-ideen-in-echte-skills-wandel.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten-Ideen in ech:2`
+*01.09. 11:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Generative Test-Driven Development - Write a suite of property-based integration tests first, describing the expected behavior of the entire skill-generation pipeline. Then implement each artifact (discovery, transformation, 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten-Ideen in ech:0`
+*01.09. 11:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Complete and Validate - Finish the truncated implementation in Artifact 3 by reconstructing the missing return statement and adding full type annotations to satisfy mypy --strict. Then create a comprehensive end-to-end integ 
+
+### `last_swarm_critique`
+*01.09. 11:56 UTC · Quelle: critic*
+
+score=7; issues=Artifact 3 (implementation) ends with incomplete return statement: `return {"generated": generated, "c` - truncated mid-expression; Only Artifact 1 (discovery, 247 lines) confirmed runnable by sandbox verdict; Artifacts 2-3 execution status unk
+
+### `last_swarm_goal`
+*01.09. 11:50 UTC · Quelle: system*
+
+Fähigkeiten-Ideen in echte Skills wandeln
+
+### `dream:20260901114933:5:1b6c08`
+*01.09. 11:49 UTC · Quelle: dream*
+
+Zero organ errors but 80 model failures vs 36 successes reveals a reliability gap between infrastructure health and cognitive throughput.
+
+### `dream:20260901114933:4:887201`
+*01.09. 11:49 UTC · Quelle: dream*
+
+Duplicate goals (two 'reduce model errors' drives) and near-duplicate skill proposals indicate missing deduplication at the intention layer.
+
+### `dream:20260901114933:3:446932`
+*01.09. 11:49 UTC · Quelle: dream*
+
+Reflex-driven execution succeeded where model-dependent planning failed, proving reflexes as a stable fallback for deterministic tasks.
+
+### `dream:20260901114933:2:f963ae`
+*01.09. 11:49 UTC · Quelle: dream*
+
+Upstream errors (e.g., 502) masked inside HTTP 200 responses evade current error handling and corrupt routing decisions.
+
+### `dream:20260901114933:1:edcafa`
+*01.09. 11:49 UTC · Quelle: dream*
+
+Free-tier model reliance causes cascading 429 rate-limit failures across multiple providers, making single-model strategies unreliable.
 
 ### `dream:20260901114211:5:de0ae1`
 *01.09. 11:42 UTC · Quelle: dream*
