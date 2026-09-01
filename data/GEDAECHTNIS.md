@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9093 Fakten** · Stand 2026-09-01 19:29 UTC · aktualisiert bei jedem Herzschlag
+**9098 Fakten** · Stand 2026-09-01 19:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4805
+- **dream:** 4810
 - **swarm_artifact:** 1975
 - **last_swarm_critique:** 681
 - **anti_pattern:** 589
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260901195313:5:2ef127`
+*01.09. 19:53 UTC · Quelle: dream*
+
+Stress signals (metabolism.stress > 0.7) are ignored by the scheduler, allowing non-critical swarms to consume resources during overload.
+
+### `dream:20260901195313:4:c9adfb`
+*01.09. 19:53 UTC · Quelle: dream*
+
+Model latency varies wildly (33-43s) and failures cascade because no request coalescing, backoff, or local fallback exists.
+
+### `dream:20260901195313:3:3baff7`
+*01.09. 19:53 UTC · Quelle: dream*
+
+Generated code executes without mandatory AST validation, risking runtime failures that could be caught statically.
+
+### `dream:20260901195313:2:43e941`
+*01.09. 19:53 UTC · Quelle: dream*
+
+Skill proposals accumulate (50+) but lack a validation-to-production pipeline, causing a persistent idea-execution gap.
+
+### `dream:20260901195313:1:759561`
+*01.09. 19:53 UTC · Quelle: dream*
+
+Repeated 429/502 errors across multiple providers reveal that external API dependency is a systemic single point of failure without circuit breaking or health-aware routing.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Selbstdiagnose und Refle:1`
 *01.09. 19:27 UTC · Quelle: evolution*

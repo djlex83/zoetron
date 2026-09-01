@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 19:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 19:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,7 +12,6 @@
 - Add per-request timeout (20 s) and retry budget (max 2 attempts with exponential backoff + jitter) before fail *(hatte die Idee 3×)*
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 3×)*
 - Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 3×)*
-- Maintain a tiered model registry: primary (heavy), fast-fallback (light), and emergency (local/offline) with h *(hatte die Idee 2×)*
 - Path resolver utility: single function that takes logical path, returns absolute path anchored at ZOETRON_DATA *(hatte die Idee 2×)*
 - Stress-aware scheduler: reads metabolism state, caps concurrent tasks/iterations, queues excess work for low-s *(hatte die Idee 2×)*
 - Build a latency-aware router: route tasks <500 output tokens to fast-fallback pool, >500 to primary with dynam *(hatte die Idee 2×)*
@@ -20,12 +19,13 @@
 - Implement parallel multi-model dispatch with first-success-wins to bypass correlated rate limits. *(hatte die Idee 2×)*
 - Implement provider-aware model registry with health scores, routing requests to least-loaded provider first. *(hatte die Idee 2×)*
 - Add exponential backoff + jitter retry wrapper (max 3 retries) for 429/502 before fallback trigger. *(hatte die Idee 2×)*
+- Build latency-aware router: tasks <500 tokens → fast pool; >500 tokens → primary with timeout = 2× rolling p95 *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Aus Fehlern lernen und Modelle verbessern *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress signals (metabolism.stress > 0.7) are ignored by the scheduler, allowing non-critical swarms to consume resources during overload.
+- Model latency varies wildly (33-43s) and failures cascade because no request coalescing, backoff, or local fallback exists.
+- Generated code executes without mandatory AST validation, risking runtime failures that could be caught statically.
+- Skill proposals accumulate (50+) but lack a validation-to-production pipeline, causing a persistent idea-execution gap.
+- Repeated 429/502 errors across multiple providers reveal that external API dependency is a systemic single point of failure without circuit breaking o
 - Event pruning occurs but fact pruning does not, implying fact accumulation may become a long-term memory burden.
 - Reflex-driven actions can successfully complete stalled tasks (market analysis), suggesting reflexes as a reliable execution path.
 - Skill proposals are generated repeatedly (e.g., circuit breaker) but not implemented, indicating a gap between ideation and execution.
@@ -51,11 +56,6 @@
 - Circuit-breaker blocking (1800s after 3 failures) prevents cascade but removes capacity permanently without recovery logic.
 - A single model (inclusionai/ling-3.0-flash-fin) sustains 100% success across repeated calls and should be the backbone.
 - Free-tier models consistently fail with 429 rate limits making them unreliable as primary workers.
-- Latency variance for same model (Nemotron: 23s vs 139s) suggests cold-start or queueing effects not accounted in planning.
-- Calibration system overestimates success rate by 250% (predicted 7 vs actual 2) indicating broken feedback loop.
-- Generated Python code uses dict[str, str] type syntax requiring Python 3.9+ but runtime environment appears older causing syntax errors.
-- Nvidia Nemotron models exhibit recurring 502 upstream overload errors indicating provider-side capacity constraints.
-- Free-tier models on OpenRouter suffer systemic 429 rate limiting across all providers making them unreliable for production workloads.
 
 ---
 

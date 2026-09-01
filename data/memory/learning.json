@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 19:28:47",
+ "stand": "2026-09-01 19:53:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -238,6 +238,12 @@
   },
   {
    "tool": "mehr-experimente-für-neue-lösungen-wagen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
