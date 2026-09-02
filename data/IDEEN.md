@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,21 +16,21 @@
 - Create CodeValidationGate that parses, type-checks, and sandbox-runs all code blocks before skill registration *(hatte die Idee 4×)*
 - Develop SkillDeploymentPipeline that takes validated proposals, generates tests, runs CI, and registers skills *(hatte die Idee 4×)*
 - Add DiagnosticGapDetector that correlates organ-level 'clean' reports with system-level failure patterns (e.g. *(hatte die Idee 4×)*
+- Create a periodic audit task that scores each proposed skill by test coverage and last-used timestamp, archivi *(hatte die Idee 4×)*
 - Implement model health registry with per-model 429/502 tracking, circuit-breaker state, and automatic fallback *(hatte die Idee 3×)*
 - Create a path resolver service that validates ZOETRON_DATA and sys.argv[1] at startup and provides canonical a *(hatte die Idee 3×)*
 - Develop a simulation harness that injects rate-limit, latency, and filesystem errors to vet plans before execu *(hatte die Idee 3×)*
-- Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful task completion correlates with reflex-mode tool execution, while systemic repair attempts fail due to missing pre-flight checks and valida
+- Metabolism-driven conserve mode (stress=1.0) starves remediation capacity exactly when systemic failures demand more resources.
+- Skill proposals accumulate without validation gates (AST parsing, unit tests), leading to execution failures when reflex tools are invoked.
+- Self-diagnosis limited to organ-level checks misses critical infrastructure health signals like router error rates, latency percentiles, and fallback 
+- Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 upstream errors) that cascade into system-wide degradation when no au
 - No response caching by prompt hash wastes tokens and exacerbates rate limits on repeated or similar queries across cycles.
 - Fallback to Nemotron-3-ultra succeeds but at 25-65s latency, violating implicit SLOs and lacking a latency budget guard to trigger conservative mode e
 - Skill proposals accumulate (path resolver, deployment pipeline, latency guard) but lack an automated ingestion→test→register pipeline, leaving capabil
@@ -51,11 +56,6 @@
 - Skill proposals accumulate faster than they are deployed; the gap between proposal and atomic registration with rollback is the primary bottleneck for
 - Self-diagnosis reporting 'no organ errors' while sustained 429s occur across models reveals a blind spot: cross-organ failure signatures (e.g., coordi
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable for production without a health-aware router that tracks per-mode
-- Goals converge via reflex actions without measurable scores, making it impossible to distinguish genuine improvement from mere task completion.
-- Event pruning removes dozens of records while zero facts are pruned, causing the fact store to accumulate unevaluated observations that dilute signal 
-- Self-diagnosis reports zero organ errors despite repeated external API failures, indicating that infrastructure-level degradation is invisible to the 
-- Skill proposals are generated faster than they are validated through AST parse and unit-test gates, creating a persistent gap between proposed and pro
-- Free-tier models on shared OpenRouter infrastructure fail under load with cascading 429 errors across multiple providers, proving that at least one re
 
 ---
 

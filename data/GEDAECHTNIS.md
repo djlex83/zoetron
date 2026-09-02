@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9702 Fakten** · Stand 2026-09-02 13:30 UTC · aktualisiert bei jedem Herzschlag
+**9707 Fakten** · Stand 2026-09-02 13:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5225
+- **dream:** 5230
 - **swarm_artifact:** 2077
 - **last_swarm_critique:** 700
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902133842:5:2c3696`
+*02.09. 13:38 UTC · Quelle: dream*
+
+Successful task completion correlates with reflex-mode tool execution, while systemic repair attempts fail due to missing pre-flight checks and validation pipelines.
+
+### `dream:20260902133842:4:bb7d17`
+*02.09. 13:38 UTC · Quelle: dream*
+
+Metabolism-driven conserve mode (stress=1.0) starves remediation capacity exactly when systemic failures demand more resources.
+
+### `dream:20260902133842:3:7b8b80`
+*02.09. 13:38 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates (AST parsing, unit tests), leading to execution failures when reflex tools are invoked.
+
+### `dream:20260902133842:2:e24acb`
+*02.09. 13:38 UTC · Quelle: dream*
+
+Self-diagnosis limited to organ-level checks misses critical infrastructure health signals like router error rates, latency percentiles, and fallback trigger frequencies.
+
+### `dream:20260902133842:1:00b41d`
+*02.09. 13:38 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 upstream errors) that cascade into system-wide degradation when no automated failover exists.
 
 ### `tool:traum-ideen-zu-fähigkeiten-machen`
 *02.09. 13:28 UTC · Quelle: hands*
