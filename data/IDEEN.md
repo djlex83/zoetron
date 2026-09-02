@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 16:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 16:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite cascading model failures, revealing a monitoring blind spot for external dependencies.
+- Sequential model fallback without backoff wastes latency budget; health-aware routing must precede request dispatch.
+- Event pruning without fact pruning indicates episodic memory turnover while semantic knowledge remains stable.
+- Reflex-based task completion bypasses scoring but achieves convergence, suggesting a fast-path for routine maintenance.
+- Free-tier model endpoints exhibit correlated 429/502 failures under load, making single-provider reliance untenable.
 - The swarm architecture with planner/builder/critic roles converges in a single cycle, proving effective for skill-verification tasks.
 - Calibration systematically under-predicts outcomes (predicted 7 vs actual 9), indicating a need to adjust prediction confidence upward.
 - Tasks can converge to a high score (9) even when initial simulation prescribes revisions, suggesting the simulation's revision count is overcautious.
@@ -51,11 +56,6 @@
 - Path-resolution guards must execute before hand_actions, not after: the failed hand_action touched no file because unresolved paths were not validated
 - Skill proposals accumulate without execution: the reflex to validate proposed skills failed, confirming that proposals without enforced action deadlin
 - 429 rate-limit failures cascade across all providers simultaneously, indicating that naive failover routing is insufficient without circuit breakers t
-- Pruning 10–12 events per cycle with zero facts pruned suggests the system discards raw failure data but retains no distilled failure signatures for cr
-- A 502 upstream overload from Nvidia alongside 429s from Google and Zhipu confirms that free-tier models share infrastructure fragility and cannot be t
-- Proposals generated without a deployment pipeline remain inert—the recurring 'fragile reflex script' pattern shows that manual implementation is a sin
-- The fastest successful model (inclusionai/ling-3.0-flash-fin at 10.5s) should anchor any fallback chain, as latency correlates directly with throughpu
-- 429 rate-limit errors are systemic across multiple free-tier models on OpenRouter, indicating a shared API gateway bottleneck rather than isolated pro
 
 ---
 

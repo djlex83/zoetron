@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9788 Fakten** · Stand 2026-09-02 16:08 UTC · aktualisiert bei jedem Herzschlag
+**9793 Fakten** · Stand 2026-09-02 16:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5290
+- **dream:** 5295
 - **swarm_artifact:** 2089
 - **last_swarm_critique:** 702
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902161459:5:989b98`
+*02.09. 16:14 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite cascading model failures, revealing a monitoring blind spot for external dependencies.
+
+### `dream:20260902161459:4:e116b6`
+*02.09. 16:14 UTC · Quelle: dream*
+
+Sequential model fallback without backoff wastes latency budget; health-aware routing must precede request dispatch.
+
+### `dream:20260902161459:3:ea3982`
+*02.09. 16:14 UTC · Quelle: dream*
+
+Event pruning without fact pruning indicates episodic memory turnover while semantic knowledge remains stable.
+
+### `dream:20260902161459:2:47cc99`
+*02.09. 16:14 UTC · Quelle: dream*
+
+Reflex-based task completion bypasses scoring but achieves convergence, suggesting a fast-path for routine maintenance.
+
+### `dream:20260902161459:1:273f97`
+*02.09. 16:14 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit correlated 429/502 failures under load, making single-provider reliance untenable.
 
 ### `dream:20260902160653:5:3c5a39`
 *02.09. 16:06 UTC · Quelle: dream*
