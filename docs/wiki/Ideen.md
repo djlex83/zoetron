@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 05:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 05:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goal creation reacts to failure signals but lacks prioritization, creating parallel goals that compete for the same broken model resources.
+- Self-diagnosis and pruning operate correctly but only report local health, missing the distributed failure mode in external model APIs.
+- Skill proposals accumulate without implementation because no mechanism converts proposals into owned, tracked work items.
+- Reflex-based execution succeeded where model-dependent planning failed, proving the reflex pathway is more reliable under API degradation.
+- Repeated 429 errors across four different models indicate systemic rate-limiting at the provider level, not model-specific failures.
 - The system autonomously generated relevant skill proposals (router, circuit breaker, fallback roster) directly from observed failures.
 - Latency variance (6.7s vs 13.7s) across successful calls indicates unpredictable queue times even when requests succeed.
 - Error patterns cluster by provider (Google, Z.ai) rather than model size, suggesting provider-level quota exhaustion.
@@ -51,11 +56,6 @@
 - File-path assumptions in hand_action invocations cause silent failures when data moves or disappears, wasting cycles on retries that cannot succeed.
 - Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that clutters the system and delays reliable automati
 - 429 rate limits cascade across all free-tier models simultaneously, making single-model fallbacks ineffective and requiring multi-provider circuit bre
-- Pruning removes dozens of events per cycle, yet stale-work sweeps are absent, leaving unfinished tasks to consume attention and storage.
-- Skill proposals accumulate but lack a mandatory live-validation gate, so untested code can enter the registry.
-- Swarm executions often finish without convergence (score 6, converged=false), indicating the critic/planner loop needs stronger stopping criteria.
-- Consecutive 429 errors trigger long model-level lockouts (e.g., 1800 s), so retry logic must back off before the provider enforces a ban.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary workers without automatic fallback.
 
 ---
 

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9424 Fakten** · Stand 2026-09-02 05:40 UTC · aktualisiert bei jedem Herzschlag
+**9438 Fakten** · Stand 2026-09-02 05:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5035
-- **swarm_artifact:** 2027
-- **last_swarm_critique:** 691
+- **dream:** 5040
+- **swarm_artifact:** 2033
+- **last_swarm_critique:** 692
 - **anti_pattern:** 603
-- **last_swarm_goal:** 439
+- **last_swarm_goal:** 440
 - **strategy:** 322
 - **tool:** 115
-- **hand_result:** 100
+- **hand_result:** 101
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*02.09. 05:51 UTC · Quelle: critic*
+
+score=9; issues=Drei separate Artefakte (Register, Router, Benchmark) müssen manuell verdrahtet werden - keine gemeinsame Entry-Point/Orchestrierung sichtbar; Benchmark nutzt SimulatedModelAdapter als Default; echte API-Integration erfordert Konfiguration (API
+
+### `last_swarm_goal`
+*02.09. 05:46 UTC · Quelle: system*
+
+Modell-Fehler stark reduzieren
+
+### `dream:20260902054601:5:b4c44d`
+*02.09. 05:46 UTC · Quelle: dream*
+
+Goal creation reacts to failure signals but lacks prioritization, creating parallel goals that compete for the same broken model resources.
+
+### `dream:20260902054601:4:436cd9`
+*02.09. 05:46 UTC · Quelle: dream*
+
+Self-diagnosis and pruning operate correctly but only report local health, missing the distributed failure mode in external model APIs.
+
+### `dream:20260902054601:3:9eba59`
+*02.09. 05:46 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation because no mechanism converts proposals into owned, tracked work items.
+
+### `dream:20260902054601:2:1754ff`
+*02.09. 05:46 UTC · Quelle: dream*
+
+Reflex-based execution succeeded where model-dependent planning failed, proving the reflex pathway is more reliable under API degradation.
+
+### `dream:20260902054601:1:131b37`
+*02.09. 05:46 UTC · Quelle: dream*
+
+Repeated 429 errors across four different models indicate systemic rate-limiting at the provider level, not model-specific failures.
 
 ### `dream:20260902053902:5:51ad5e`
 *02.09. 05:39 UTC · Quelle: dream*

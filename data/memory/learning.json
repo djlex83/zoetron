@@ -1,13 +1,7 @@
 {
- "stand": "2026-09-02 05:39:19",
+ "stand": "2026-09-02 05:51:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
-  {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 9,
-   "erfolge": 9,
-   "quote": 1.0
-  },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 9,
@@ -15,9 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
+   "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 8,
    "erfolge": 8,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalysen-verwerten.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -57,16 +57,16 @@
    "quote": 1.0
   },
   {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
@@ -121,6 +121,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -196,12 +202,6 @@
   },
   {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -327,17 +327,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.732,
+ "haende_quote": 0.715,
  "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 31,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 5.81
+  "schnitt": 5.91
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 5.86
+   "n": 29,
+   "schnitt": 5.97
   },
   "bau": {
    "n": 3,

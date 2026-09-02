@@ -1,0 +1,139 @@
+{
+  "timestamp": "2026-09-02T05:50:50.452466+00:00",
+  "results": [
+    {
+      "model_id": "gpt-4o-mini",
+      "timestamp": "2026-09-02T05:50:46.825343+00:00",
+      "latency_ms": 148.15205666430606,
+      "error_rate": 0.08333333333333333,
+      "token_cost_per_1k": 0.001248,
+      "tokens_tested": 624,
+      "requests_made": 12,
+      "requests_failed": 1,
+      "p50_latency_ms": 144.00405500782654,
+      "p95_latency_ms": 165.75703100534156,
+      "p99_latency_ms": 165.75703100534156,
+      "health_score": 79.77012766690272,
+      "metadata": {
+        "config": {
+          "test_prompts": [
+            "Erkläre kurz das Konzept der Rekursion in der Programmierung.",
+            "Was ist der Unterschied zwischen synchroner und asynchroner Ausführung?",
+            "Nenne drei Vorteile von funktionaler Programmierung.",
+            "Wie funktioniert ein Hash-Tabelle (Dictionary) intern?",
+            "Was bedeutet 'Big O Notation' und warum ist sie wichtig?"
+          ],
+          "max_tokens_per_request": 150,
+          "timeout_seconds": 30.0,
+          "concurrent_requests": 3,
+          "warmup_requests": 2,
+          "measurement_requests": 10,
+          "models_to_test": []
+        },
+        "adapter_type": "SimulatedModelAdapter"
+      }
+    },
+    {
+      "model_id": "gpt-3.5-turbo",
+      "timestamp": "2026-09-02T05:50:48.681022+00:00",
+      "latency_ms": 308.73625179810915,
+      "error_rate": 0.0,
+      "token_cost_per_1k": 0.001384,
+      "tokens_tested": 692,
+      "requests_made": 12,
+      "requests_failed": 0,
+      "p50_latency_ms": 301.81766298483126,
+      "p95_latency_ms": 347.4823400028981,
+      "p99_latency_ms": 347.4823400028981,
+      "health_score": 67.74237482018908,
+      "metadata": {
+        "config": {
+          "test_prompts": [
+            "Erkläre kurz das Konzept der Rekursion in der Programmierung.",
+            "Was ist der Unterschied zwischen synchroner und asynchroner Ausführung?",
+            "Nenne drei Vorteile von funktionaler Programmierung.",
+            "Wie funktioniert ein Hash-Tabelle (Dictionary) intern?",
+            "Was bedeutet 'Big O Notation' und warum ist sie wichtig?"
+          ],
+          "max_tokens_per_request": 150,
+          "timeout_seconds": 30.0,
+          "concurrent_requests": 3,
+          "warmup_requests": 2,
+          "measurement_requests": 10,
+          "models_to_test": []
+        },
+        "adapter_type": "SimulatedModelAdapter"
+      }
+    },
+    {
+      "model_id": "claude-3-haiku",
+      "timestamp": "2026-09-02T05:50:49.566288+00:00",
+      "latency_ms": 144.3068811277044,
+      "error_rate": 0.16666666666666666,
+      "token_cost_per_1k": 0.001098,
+      "tokens_tested": 549,
+      "requests_made": 12,
+      "requests_failed": 2,
+      "p50_latency_ms": 143.98218601127155,
+      "p95_latency_ms": 165.74361099628732,
+      "p99_latency_ms": 165.74361099628732,
+      "health_score": 76.13797855389623,
+      "metadata": {
+        "config": {
+          "test_prompts": [
+            "Erkläre kurz das Konzept der Rekursion in der Programmierung.",
+            "Was ist der Unterschied zwischen synchroner und asynchroner Ausführung?",
+            "Nenne drei Vorteile von funktionaler Programmierung.",
+            "Wie funktioniert ein Hash-Tabelle (Dictionary) intern?",
+            "Was bedeutet 'Big O Notation' und warum ist sie wichtig?"
+          ],
+          "max_tokens_per_request": 150,
+          "timeout_seconds": 30.0,
+          "concurrent_requests": 3,
+          "warmup_requests": 2,
+          "measurement_requests": 10,
+          "models_to_test": []
+        },
+        "adapter_type": "SimulatedModelAdapter"
+      }
+    },
+    {
+      "model_id": "llama-3-8b",
+      "timestamp": "2026-09-02T05:50:50.451516+00:00",
+      "latency_ms": 148.66845132847732,
+      "error_rate": 0.08333333333333333,
+      "token_cost_per_1k": 0.001248,
+      "tokens_tested": 624,
+      "requests_made": 12,
+      "requests_failed": 1,
+      "p50_latency_ms": 143.9790449803695,
+      "p95_latency_ms": 165.75914100394584,
+      "p99_latency_ms": 165.75914100394584,
+      "health_score": 79.7184882004856,
+      "metadata": {
+        "config": {
+          "test_prompts": [
+            "Erkläre kurz das Konzept der Rekursion in der Programmierung.",
+            "Was ist der Unterschied zwischen synchroner und asynchroner Ausführung?",
+            "Nenne drei Vorteile von funktionaler Programmierung.",
+            "Wie funktioniert ein Hash-Tabelle (Dictionary) intern?",
+            "Was bedeutet 'Big O Notation' und warum ist sie wichtig?"
+          ],
+          "max_tokens_per_request": 150,
+          "timeout_seconds": 30.0,
+          "concurrent_requests": 3,
+          "warmup_requests": 2,
+          "measurement_requests": 10,
+          "models_to_test": []
+        },
+        "adapter_type": "SimulatedModelAdapter"
+      }
+    }
+  ],
+  "summary": {
+    "models_tested": 4,
+    "best_model": "gpt-4o-mini",
+    "worst_model": "gpt-3.5-turbo",
+    "avg_health_score": 75.8422423103684
+  }
+}

@@ -1827,3 +1827,25 @@
 {"ts": 1787722601.61839, "kind": "werkzeug_abgelehnt", "payload": {"name": "mehr-simulationen-wirklich-anwenden", "grund": "zerstoerende Operation (subprocess) - braucht menschliche Freigabe", "goal": "Mehr Simulationen wirklich anwenden"}}
 {"ts": 1787722603.8599463, "kind": "issue_synced", "payload": {"issue": 123, "state": "closed"}}
 {"ts": 1787722643.1620667, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787722891.3834867, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787722895.0890725, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787722895.0890682, "schalter_geoeffnet": false}}
+{"ts": 1787722895.940775, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787722895.940772, "schalter_geoeffnet": false}}
+{"ts": 1787722906.4078808, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 10.5, "tokens_ein": 1654, "tokens_aus": 850}}
+{"ts": 1787722906.408427, "kind": "skill_proposal", "payload": {"proposal": "Implement model fallback chain with health checks: probe models for 429/latency before dispatch, prefer nemotron-3-ultra as primary, cache responses to reduce quota pressure."}}
+{"ts": 1787722906.4084861, "kind": "skill_proposal", "payload": {"proposal": "Add syntax validation gate after code generation: run `python -m py_compile` on artifacts before execution, auto-repair truncated imports via AST completion."}}
+{"ts": 1787722906.4085429, "kind": "skill_proposal", "payload": {"proposal": "Introduce integration test harness for evolved variants: run full swarm simulation on top-k variants before committing, reject if integrated score < variant score - 2."}}
+{"ts": 1787722906.408612, "kind": "skill_proposal", "payload": {"proposal": "Calibrate predictor with execution-aware features: include recent 429 rate, hand_action failure rate, and syntax error count as inputs to prediction model."}}
+{"ts": 1787722906.4086697, "kind": "skill_proposal", "payload": {"proposal": "Create bootstrap procedure: verify environment, install dependencies, run smoke test hand_action before main task; retry with exponential backoff on exit=1."}}
+{"ts": 1787722906.4087234, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787722920.1510549, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.4, "tokens_ein": 490, "tokens_aus": 353}}
+{"ts": 1787722920.1512144, "kind": "drive_goal", "payload": {"title": "Modellfehler auf die Hälfte senken", "why": "Das System macht genauso oft Fehler wie richtige Vorhersagen. Wenn es zuverlässiger wird, kann es besser planen und hilft allen anderen Aufgaben.", "signal": "failure"}}
+{"ts": 1787722920.1512847, "kind": "drive_goal", "payload": {"title": "Gute Fähigkeitsvorschläge wirklich ausprobieren", "why": "Es wurden schon 30 neue Fähigkeiten vorgeschlagen, aber fast keine davon wurde bisher getestet oder genutzt. Wenn wir die besten Ideen ausprobieren, wird das System im Alltag tatsächlich besser.", "signal": "gap"}}
+{"ts": 1787722920.151341, "kind": "drive_goal", "payload": {"title": "Abgelehnte Werkzeuge und geparkte Ideen prüfen", "why": "Einige Werkzeuge wurden abgelehnt und eine Idee liegt ungenutzt herum. Wenn wir herausfinden, woran das liegt, gehen keine guten Lösungen verloren.", "signal": "combination"}}
+{"ts": 1787722922.4139953, "kind": "swarm_started", "payload": {"goal": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren"}}
+{"ts": 1787722929.8235118, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787722930.6828818, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787723010.968717, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 80.1, "tokens_ein": 1613, "tokens_aus": 2256}}
+{"ts": 1787723014.1039567, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.0, "tokens_ein": 588, "tokens_aus": 57}}
+{"ts": 1787723039.6862178, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 25.4, "tokens_ein": 231, "tokens_aus": 512}}
+{"ts": 1787723039.6864188, "kind": "simulation", "payload": {"goal": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1787723039.6865308, "kind": "simulation_applied", "payload": {"revisions": 3}}
