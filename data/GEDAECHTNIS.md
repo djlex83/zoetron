@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9773 Fakten** · Stand 2026-09-02 15:44 UTC · aktualisiert bei jedem Herzschlag
+**9778 Fakten** · Stand 2026-09-02 15:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5275
+- **dream:** 5280
 - **swarm_artifact:** 2089
 - **last_swarm_critique:** 702
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902155120:5:c14d69`
+*02.09. 15:51 UTC · Quelle: dream*
+
+Pruning 10–12 events per cycle with zero facts pruned suggests the system discards raw failure data but retains no distilled failure signatures for cross-cycle learning.
+
+### `dream:20260902155120:4:178efd`
+*02.09. 15:51 UTC · Quelle: dream*
+
+A 502 upstream overload from Nvidia alongside 429s from Google and Zhipu confirms that free-tier models share infrastructure fragility and cannot be treated as independent endpoints.
+
+### `dream:20260902155120:3:0cc293`
+*02.09. 15:51 UTC · Quelle: dream*
+
+Proposals generated without a deployment pipeline remain inert—the recurring 'fragile reflex script' pattern shows that manual implementation is a single point of failure.
+
+### `dream:20260902155120:2:a2915d`
+*02.09. 15:51 UTC · Quelle: dream*
+
+The fastest successful model (inclusionai/ling-3.0-flash-fin at 10.5s) should anchor any fallback chain, as latency correlates directly with throughput under load.
+
+### `dream:20260902155120:1:30be91`
+*02.09. 15:51 UTC · Quelle: dream*
+
+429 rate-limit errors are systemic across multiple free-tier models on OpenRouter, indicating a shared API gateway bottleneck rather than isolated provider issues.
 
 ### `dream:20260902154211:5:751c25`
 *02.09. 15:42 UTC · Quelle: dream*
