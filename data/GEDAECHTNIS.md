@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9722 Fakten** · Stand 2026-09-02 14:10 UTC · aktualisiert bei jedem Herzschlag
+**9739 Fakten** · Stand 2026-09-02 14:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5245
-- **swarm_artifact:** 2077
-- **last_swarm_critique:** 700
-- **anti_pattern:** 611
-- **last_swarm_goal:** 448
-- **strategy:** 326
+- **dream:** 5250
+- **swarm_artifact:** 2083
+- **last_swarm_critique:** 701
+- **anti_pattern:** 613
+- **last_swarm_goal:** 449
+- **strategy:** 327
 - **tool:** 119
-- **hand_result:** 104
+- **hand_result:** 105
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Häufige Fehlerquellen be:2`
+*02.09. 14:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Interactive Root-Cause Tracing System - Baue ein interaktives System, das Fehler nicht nur klassifiziert, sondern ihre Ursachen zurückverfolgt. Durch Dependency-Graphs, Ausführungs-Traces und historische Korrelationsanalyse w
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Häufige Fehlerquellen be:1`
+*02.09. 14:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): NLP-Driven Semantic Analysis Pipeline - Verwende NLP-Embeddings und Clustering-Algorithmen, um Fehlermuster semantisch zu erkennen statt durch simples Keyword-Matching. Embedding-Modelle wie Sentence-BERT analysieren Fehlerme
+
+### `last_swarm_critique`
+*02.09. 14:33 UTC · Quelle: critic*
+
+score=6; issues=Drittes Skript verwendet /dev/null als Fallback-Datenverzeichnis - ein Special Device File, kein Verzeichnis; funktioniert nur weil memory_dir.exists() False liefert, ist aber ein Designfehler; Mustererkennung basiert auf einfachem Keyword-Matc
+
+### `last_swarm_goal`
+*02.09. 14:19 UTC · Quelle: system*
+
+Häufige Fehlerquellen besser verstehen
+
+### `dream:20260902141736:5:31f058`
+*02.09. 14:17 UTC · Quelle: dream*
+
+Only 2 of 5 tested models (nvidia/nemotron-3-ultra, inclusionai/ling-3.0-flash-fin) return successful completions, establishing a narrow reliable-model set that must be cached and prioritized.
+
+### `dream:20260902141736:4:8a1b94`
+*02.09. 14:17 UTC · Quelle: dream*
+
+The reflex tool 'vorschläge-zu-echten-fähigkeiten-machen.py' fails silently while simulation approves the same goal (verdict=go, 3 risks), revealing a verification gap between dry-run and execution.
+
+### `dream:20260902141736:3:57ae14`
+*02.09. 14:17 UTC · Quelle: dream*
+
+Hand-action timeouts (20s, 0 bytes read) indicate I/O-bound operations lack circuit-breakers, causing silent stalls that cascade into missed deadlines.
+
+### `dream:20260902141736:2:4ea721`
+*02.09. 14:17 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers aggressive resource conservation that caps task parallelism (max_tasks=3) and iteration depth (max_iterations=1), starving skill-validation loops.
+
+### `dream:20260902141736:1:cfc2e5`
+*02.09. 14:17 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making them unreliable for production workflows without fallback orchestration.
 
 ### `dream:20260902140801:5:41936c`
 *02.09. 14:08 UTC · Quelle: dream*

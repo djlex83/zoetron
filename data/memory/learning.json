@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-02 14:08:51",
+ "stand": "2026-09-02 14:37:22",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 6,
-   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -46,6 +40,12 @@
   },
   {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -161,18 +161,6 @@
   {
    "tool": "modellfehler-stark-verringern.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "entfernte-erinnerungen-verknüpfen.py",
-   "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -367,23 +355,29 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-verringern.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.726,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.718,
+ "simulationen_angewandt": 27,
  "swarm_scores": {
-  "n": 32,
+  "n": 33,
   "best": 9.0,
   "schnitt": 5.88
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 30,
-   "schnitt": 5.9
-  },
   "bau": {
    "n": 2,
    "schnitt": 5.5
+  },
+  "analyse": {
+   "n": 30,
+   "schnitt": 5.83
   }
  }
 }

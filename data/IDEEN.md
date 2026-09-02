@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 14:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 14:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
+- Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Only 2 of 5 tested models (nvidia/nemotron-3-ultra, inclusionai/ling-3.0-flash-fin) return successful completions, establishing a narrow reliable-mode
+- The reflex tool 'vorschläge-zu-echten-fähigkeiten-machen.py' fails silently while simulation approves the same goal (verdict=go, 3 risks), revealing a
+- Hand-action timeouts (20s, 0 bytes read) indicate I/O-bound operations lack circuit-breakers, causing silent stalls that cascade into missed deadlines
+- High metabolic stress (1.0) triggers aggressive resource conservation that caps task parallelism (max_tasks=3) and iteration depth (max_iterations=1),
+- Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making them unreliable for production workflows 
 - Pruning removed 38 events but model failure pattern persists, indicating event pruning alone doesn't address systemic causes; need causal analysis bef
 - Market analysis reflex succeeded (marktanalyse-endlich-nutzen.py) but drive goal remains stale, suggesting reflexes solve immediate tasks but not stra
 - Self-diagnosis reported zero organ errors despite sustained 429 failures, showing diagnostic gap: per-organ checks miss cross-organ failure signatures
@@ -51,11 +56,6 @@
 - Calibration predicted 5 actual 8 (abs_error=3), indicating the system consistently underestimates task complexity and its confidence scores are unreli
 - Self-diagnosis reported zero organ failures while systemic 429 errors persisted across cycles, revealing a blind spot where cross-organ infrastructure
 - Free-tier models (glm-5.2) repeatedly hit 429 rate limits with zero recoverable error, making them unusable as primary dependencies without a health-a
-- Calibration error 60% (predicted 5 cycles, actual 8) - estimation models drift and need online correction.
-- Simulation gate caught 3 risks and forced 2 revisions before 'go' verdict - virtual rehearsal prevents real failures but adds latency.
-- Stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1) - metabolic state directly caps execution scope.
-- First hand action failed because relative paths ignored injected absolute references (sys.argv[1], ZOETRON_DATA) - path normalization must precede fil
-- Model fallback succeeds but latency varies 6x (27-161s) - nemotron-3-ultra reliably replaces rate-limited glm-5.2 but needs timeout budgets.
 
 ---
 
