@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10031 Fakten** · Stand 2026-09-02 22:46 UTC · aktualisiert bei jedem Herzschlag
+**10036 Fakten** · Stand 2026-09-02 22:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5450
+- **dream:** 5455
 - **swarm_artifact:** 2137
 - **last_swarm_critique:** 710
 - **anti_pattern:** 621
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902225214:5:be2fb5`
+*02.09. 22:52 UTC · Quelle: dream*
+
+Circuit breaker, exponential backoff, and provider-aware routing proposals all target the same 429 failure mode but remain unimplemented.
+
+### `dream:20260902225214:4:7ea9dd`
+*02.09. 22:52 UTC · Quelle: dream*
+
+Drive goals accumulate stale and combination signals without automatic execution, showing a gap between goal setting and skill dispatch.
+
+### `dream:20260902225214:3:427a27`
+*02.09. 22:52 UTC · Quelle: dream*
+
+Event pruning runs regularly (16-19 events) but fact pruning never triggers, revealing asymmetric memory pressure handling.
+
+### `dream:20260902225214:2:3dcce4`
+*02.09. 22:52 UTC · Quelle: dream*
+
+Multiple skill proposals address the same path resolution issue (ZOETRON_DATA prefixing), indicating a systemic missing middleware layer.
+
+### `dream:20260902225214:1:e1a9e9`
+*02.09. 22:52 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra works reliably but with high latency (6-14s).
 
 ### `dream:20260902224439:5:db2033`
 *02.09. 22:44 UTC · Quelle: dream*

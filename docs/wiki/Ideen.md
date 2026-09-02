@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 22:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 22:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit breaker, exponential backoff, and provider-aware routing proposals all target the same 429 failure mode but remain unimplemented.
+- Drive goals accumulate stale and combination signals without automatic execution, showing a gap between goal setting and skill dispatch.
+- Event pruning runs regularly (16-19 events) but fact pruning never triggers, revealing asymmetric memory pressure handling.
+- Multiple skill proposals address the same path resolution issue (ZOETRON_DATA prefixing), indicating a systemic missing middleware layer.
+- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra works reliably but with high latency (6-14s).
 - Pruning removes events (36, 16) but never facts, suggesting the fact store may accumulate stale entries that the current pruning logic misses.
 - Self-diagnosis consistently reports zero organ errors, yet model failures persist, meaning the diagnostic scope does not cover external API failures.
 - Skill proposals (circuit breaker, path wrapper, skill verification) repeat across cycles but are never verified as loadable or executable, indicating 
@@ -51,11 +56,6 @@
 - Calibration error of 7 (predicted 8 vs actual 1) reveals severe overconfidence in success estimation requiring empirical recalibration.
 - InclusionAI Ling 3.0 Flash Fin consistently delivers low-latency (7.4s) successful responses and should be the primary model.
 - Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable for production use.
-- High metabolic stress (1.0) forces conservative budgets that starve the very skill-building needed to reduce load.
-- Proposed skills accumulate but remain unimplemented because the reflex that converts ideas to code itself fails silently.
-- Hand actions fail because relative paths are not resolved against ZOETRON_DATA, causing silent zero-byte reads.
-- Upstream 502 errors from Nvidia indicate provider-side instability that requires circuit-breaking, not just retries.
-- Rate limiting (429) is the dominant failure mode across all free-tier providers, making naive round-robin routing ineffective.
 
 ---
 
