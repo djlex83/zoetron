@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 22:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 22:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High metabolic stress (1.0) forces conservative budgets that starve the very skill-building needed to reduce load.
+- Proposed skills accumulate but remain unimplemented because the reflex that converts ideas to code itself fails silently.
+- Hand actions fail because relative paths are not resolved against ZOETRON_DATA, causing silent zero-byte reads.
+- Upstream 502 errors from Nvidia indicate provider-side instability that requires circuit-breaking, not just retries.
+- Rate limiting (429) is the dominant failure mode across all free-tier providers, making naive round-robin routing ineffective.
 - Calibration drift appears on Python artifacts >400 lines, requiring a systematic +3 correction factor for effort estimates.
 - Transient simulation logs grow unbounded because pruning runs only on schedule, not on memory-pressure triggers.
 - Swarm convergence requires explicit role quotas (1 planner, N builders, 1 critic) as a hard precondition, not a soft guideline.
@@ -51,11 +56,6 @@
 - Multiple independent skill proposals converge on the same reliability primitives (circuit breaker, retry-with-backoff, fallback chain), revealing a sy
 - Nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (9–30 s), indicating it cannot serve as a sole low-latency fallback.
 - Model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors under load, making it unreliable for production routing.
-- Latency varies significantly across models and over time (3.7s vs 9.3s), necessitating continuous health polling for routing decisions.
-- Fact TTL pruning policy exists but prunes zero facts, indicating access thresholds or time windows are miscalibrated.
-- Reflex execution succeeds when goal semantics match registered patterns, but lacks pre-deployment validation.
-- Skill proposals accumulate faster than implementation, creating a capability gap that slows system improvement.
-- Model endpoints exhibit high failure rates (429/502) requiring automatic blacklisting and fallback chains to maintain throughput.
 
 ---
 

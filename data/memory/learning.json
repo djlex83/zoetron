@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 22:04:44",
+ "stand": "2026-09-02 22:12:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,9 +15,9 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -27,9 +27,9 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
