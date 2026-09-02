@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 22:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration drift appears on Python artifacts >400 lines, requiring a systematic +3 correction factor for effort estimates.
+- Transient simulation logs grow unbounded because pruning runs only on schedule, not on memory-pressure triggers.
+- Swarm convergence requires explicit role quotas (1 planner, N builders, 1 critic) as a hard precondition, not a soft guideline.
+- Proposed skills accumulate but remain unbuilt because no mechanism prioritizes construction over generation when the 'gap' signal fires.
+- Rate limiting (429) and upstream overload (502) cascade across all free-tier providers, making single-model reliance untenable.
 - Fifty-eight proposed skills remain unverified as learned, creating a capability illusion where the system believes it has abilities it cannot actually
 - Reflex-driven script execution succeeds when paths are absolute, but relative paths fail silently without a ZOETRON_DATA prefix wrapper.
 - Multiple independent skill proposals converge on the same reliability primitives (circuit breaker, retry-with-backoff, fallback chain), revealing a sy
@@ -51,11 +56,6 @@
 - Reflex execution succeeds when goal semantics match registered patterns, but lacks pre-deployment validation.
 - Skill proposals accumulate faster than implementation, creating a capability gap that slows system improvement.
 - Model endpoints exhibit high failure rates (429/502) requiring automatic blacklisting and fallback chains to maintain throughput.
-- Pruning runs consistently remove events but never facts, indicating the knowledge base accumulates stale procedural events alongside durable facts.
-- Hand action failures produce unhelpful error output (null error, exit code 1), making root cause analysis nearly impossible without additional diagnos
-- Reflex-based execution reliably achieves goals for known tasks, while general planning cycles show higher variability and occasional silent hand-actio
-- A persistent gap exists between skill proposal generation and actual implementation, limiting the system's capability growth over cycles.
-- Model provider rate limiting (429 errors) is the dominant recurring failure mode and requires systemic handling rather than per-call fixes.
 
 ---
 

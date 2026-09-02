@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9999 Fakten** · Stand 2026-09-02 21:58 UTC · aktualisiert bei jedem Herzschlag
+**10004 Fakten** · Stand 2026-09-02 22:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5430
+- **dream:** 5435
 - **swarm_artifact:** 2131
 - **last_swarm_critique:** 709
 - **anti_pattern:** 619
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902220427:5:3d28c9`
+*02.09. 22:04 UTC · Quelle: dream*
+
+Calibration drift appears on Python artifacts >400 lines, requiring a systematic +3 correction factor for effort estimates.
+
+### `dream:20260902220427:4:bac2c0`
+*02.09. 22:04 UTC · Quelle: dream*
+
+Transient simulation logs grow unbounded because pruning runs only on schedule, not on memory-pressure triggers.
+
+### `dream:20260902220427:3:6fcd69`
+*02.09. 22:04 UTC · Quelle: dream*
+
+Swarm convergence requires explicit role quotas (1 planner, N builders, 1 critic) as a hard precondition, not a soft guideline.
+
+### `dream:20260902220427:2:14988d`
+*02.09. 22:04 UTC · Quelle: dream*
+
+Proposed skills accumulate but remain unbuilt because no mechanism prioritizes construction over generation when the 'gap' signal fires.
+
+### `dream:20260902220427:1:9de510`
+*02.09. 22:04 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) cascade across all free-tier providers, making single-model reliance untenable.
 
 ### `dream:20260902215635:5:a7cec9`
 *02.09. 21:56 UTC · Quelle: dream*
