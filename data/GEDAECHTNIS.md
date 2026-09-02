@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9353 Fakten** · Stand 2026-09-02 03:25 UTC · aktualisiert bei jedem Herzschlag
+**9358 Fakten** · Stand 2026-09-02 03:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4990
+- **dream:** 4995
 - **swarm_artifact:** 2013
 - **last_swarm_critique:** 688
 - **anti_pattern:** 601
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902033045:5:bb022d`
+*02.09. 03:30 UTC · Quelle: dream*
+
+Latency and token usage vary dramatically across models, suggesting that performance-aware routing could significantly improve throughput.
+
+### `dream:20260902033045:4:7f0d9b`
+*02.09. 03:30 UTC · Quelle: dream*
+
+Model selection lacks fallback logic, causing cascading failures when primary models are rate-limited or overloaded.
+
+### `dream:20260902033045:3:16f0b8`
+*02.09. 03:30 UTC · Quelle: dream*
+
+Stale goals persist in the system because there is no automated mechanism to detect and retire inactive or repeatedly failing objectives.
+
+### `dream:20260902033045:2:cb1457`
+*02.09. 03:30 UTC · Quelle: dream*
+
+Swarm tasks fail silently when file paths are not resolved against the real data directory, indicating a systemic path-handling defect.
+
+### `dream:20260902033045:1:e1ffb1`
+*02.09. 03:30 UTC · Quelle: dream*
+
+Free-tier LLM endpoints consistently fail under concurrent load with 429 and 502 errors, making them unreliable for production-grade orchestration.
 
 ### `dream:20260902032352:5:47b54d`
 *02.09. 03:23 UTC · Quelle: dream*

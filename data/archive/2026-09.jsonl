@@ -1491,3 +1491,17 @@
 {"ts": 1787713677.2089298, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.7, "tokens_ein": 239, "tokens_aus": 485}}
 {"ts": 1787713677.2091615, "kind": "simulation", "payload": {"goal": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren", "verdict": "revise", "risks": 3, "revisions": 2}}
 {"ts": 1787713677.209296, "kind": "simulation_applied", "payload": {"revisions": 2}}
+{"ts": 1787714734.3493338, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 1057.0, "tokens_ein": 2581, "tokens_aus": 5225}}
+{"ts": 1787714875.5892982, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 141.2, "tokens_ein": 2814, "tokens_aus": 5617}}
+{"ts": 1787714875.893263, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.18}}
+{"ts": 1787714875.8935163, "kind": "tor", "payload": {"goal": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren", "gruen": true, "grund": "Artefakt laeuft (346 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787714973.495782, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 97.5, "tokens_ein": 4187, "tokens_aus": 3877}}
+{"ts": 1787714973.4962916, "kind": "calibration", "payload": {"goal": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren", "predicted": 4, "actual": 5, "abs_error": 1}}
+{"ts": 1787714973.4963725, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 5}}
+{"ts": 1787714973.4968169, "kind": "bahnen", "payload": {"goal": "Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 8, "ids": ["f:071546d62ccd", "e:61ec674c8c54", "f:69582b45f634", "f:3baa18e4837f", "f:c1694a5f466a", "f:400e151dceb1", "f:667d59266e4e", "f:6c74c09d50a4"], "ziel_id": "g:66e26c0196a4"}}
+{"ts": 1787714997.6948729, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 24.2, "tokens_ein": 192, "tokens_aus": 569}}
+{"ts": 1787715008.2768667, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.6, "tokens_ein": 719, "tokens_aus": 313}}
+{"ts": 1787715008.2771716, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Semantisches Dedup für Ideen-Board und DRIVE-Ziele aktivieren\nCritic issues: Critic ", "variants": 3, "winner_index": 1, "scores": [8, 9, 6]}}
+{"ts": 1787715016.6285975, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787715016.628595, "schalter_geoeffnet": false}}
+{"ts": 1787715016.9815352, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787715016.9815326, "schalter_geoeffnet": false}}
+{"ts": 1787715031.7299235, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 14.7, "tokens_ein": 540, "tokens_aus": 442}}

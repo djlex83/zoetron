@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 03:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 03:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency and token usage vary dramatically across models, suggesting that performance-aware routing could significantly improve throughput.
+- Model selection lacks fallback logic, causing cascading failures when primary models are rate-limited or overloaded.
+- Stale goals persist in the system because there is no automated mechanism to detect and retire inactive or repeatedly failing objectives.
+- Swarm tasks fail silently when file paths are not resolved against the real data directory, indicating a systemic path-handling defect.
+- Free-tier LLM endpoints consistently fail under concurrent load with 429 and 502 errors, making them unreliable for production-grade orchestration.
 - Prune cycles remove events but never distill high-signal events into durable facts, losing reusable knowledge.
 - Three market analyses remain stale across multiple cycles with no automatic expiration or escalation, wasting context space and attention.
 - Five skill proposals were generated in one cycle but none were promoted to implemented skills, revealing a broken proposal-to-production pipeline.
@@ -51,11 +56,6 @@
 - Three stale market analyses persisted until a reflex forcibly closed them, showing no automatic staleness detection or cleanup policy.
 - Fallback latency varies 7.8–16.7 s with no timeout budget, causing unpredictable delays that stall downstream planning.
 - The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, revealing a single-provider dependen
-- During resource-constrained metabolic states, speculative and low-value work should be collapsed or skipped entirely to preserve system capacity.
-- Relative-path dependencies in file operations cause intermittent, environment-sensitive failures that are eliminated only by anchoring all paths to en
-- The structural gap between proposal generation and proposal execution undermines system evolution and must be closed with measurable convergence thres
-- Exit code 0 from hand actions is an unreliable success signal — silent failures occur when expected files or data are not actually created or modified
-- OpenRouter 429 rate-limiting is a systemic, recurring failure mode that demands proactive failover to direct model endpoints rather than retry-based r
 
 ---
 
