@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9749 Fakten** · Stand 2026-09-02 15:04 UTC · aktualisiert bei jedem Herzschlag
+**9763 Fakten** · Stand 2026-09-02 15:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5260
-- **swarm_artifact:** 2083
-- **last_swarm_critique:** 701
+- **dream:** 5265
+- **swarm_artifact:** 2089
+- **last_swarm_critique:** 702
 - **anti_pattern:** 613
-- **last_swarm_goal:** 449
+- **last_swarm_goal:** 450
 - **strategy:** 327
-- **tool:** 119
+- **tool:** 120
 - **hand_result:** 105
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fertigkeiten-prüfen-und-nutzbar-machen`
+*02.09. 15:22 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fertigkeiten prüfen und nutzbar machen'. Datei: data/tools/fertigkeiten-prüfen-und-nutzbar-machen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*02.09. 15:22 UTC · Quelle: critic*
+
+score=9; issues=Abhängigkeit von externen zoetron-Modulen (benchmark_organ, werkzeugpruefung, konvergenztor, reflexsuche) die nicht im Lieferumfang sind - Fallbacks erzeugen nur leere Strukturen; Keine Unit-Tests oder Integrationstests für die Pipeline; Gap-An
+
+### `last_swarm_goal`
+*02.09. 15:12 UTC · Quelle: system*
+
+Fertigkeiten prüfen und nutzbar machen
+
+### `dream:20260902151043:5:ce957f`
+*02.09. 15:10 UTC · Quelle: dream*
+
+Event pruning removed 31 events while extracting 0 facts, revealing that raw events accumulate faster than they are distilled into durable knowledge.
+
+### `dream:20260902151043:4:c6dc36`
+*02.09. 15:10 UTC · Quelle: dream*
+
+Hand-actions fail when relative paths are used without proper resolution against ZOETRON_DATA, indicating a path-handling vulnerability that silently produces empty results.
+
+### `dream:20260902151043:3:b0278e`
+*02.09. 15:10 UTC · Quelle: dream*
+
+When metabolic stress reaches 1.0, the system enters conserve mode with severely restricted budgets (max_tasks: 3, max_iterations: 1), which likely contributes to incomplete or degraded task execution.
+
+### `dream:20260902151043:2:6bde89`
+*02.09. 15:10 UTC · Quelle: dream*
+
+There is a systematic gap between skill proposal generation and skill execution — the system generates solutions but fails to implement them, turning insights into dead letters.
+
+### `dream:20260902151043:1:6c47f9`
+*02.09. 15:10 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model repeatedly returns 429 Too Many Requests errors, indicating rate-limiting is a persistent infrastructure issue requiring automatic fallback rather than blind retry.
 
 ### `dream:20260902150037:5:bfa366`
 *02.09. 15:00 UTC · Quelle: dream*

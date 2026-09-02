@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning removed 31 events while extracting 0 facts, revealing that raw events accumulate faster than they are distilled into durable knowledge.
+- Hand-actions fail when relative paths are used without proper resolution against ZOETRON_DATA, indicating a path-handling vulnerability that silently 
+- When metabolic stress reaches 1.0, the system enters conserve mode with severely restricted budgets (max_tasks: 3, max_iterations: 1), which likely co
+- There is a systematic gap between skill proposal generation and skill execution — the system generates solutions but fails to implement them, turning 
+- The z-ai/glm-5.2:free model repeatedly returns 429 Too Many Requests errors, indicating rate-limiting is a persistent infrastructure issue requiring a
 - Pruning removes events but zero facts, indicating fact retention policy may be too aggressive or fact extraction is not happening during consolidation
 - Reflex scripts complete goals but are described as fragile; the system lacks a verified deployment pipeline with contract tests and atomic rollback fo
 - Multiple skill proposals already exist to fix observed failures (fallback chain, backoff, cache, pipeline, detector) but remain unimplemented, reveali
@@ -51,11 +56,6 @@
 - Skill proposals outnumber their actual deployment — the system generates ideas but lacks a validated pipeline to test and register them, leaving capab
 - Stale data accumulates without a consumption loop: market analyses and outdated facts were flagged repeatedly but never acted upon, indicating a gap b
 - Free-tier model dependencies without circuit breakers caused cascading 429 rate-limit failures across four consecutive calls, exposing a single-point-
-- Only 2 of 5 tested models (nvidia/nemotron-3-ultra, inclusionai/ling-3.0-flash-fin) return successful completions, establishing a narrow reliable-mode
-- The reflex tool 'vorschläge-zu-echten-fähigkeiten-machen.py' fails silently while simulation approves the same goal (verdict=go, 3 risks), revealing a
-- Hand-action timeouts (20s, 0 bytes read) indicate I/O-bound operations lack circuit-breakers, causing silent stalls that cascade into missed deadlines
-- High metabolic stress (1.0) triggers aggressive resource conservation that caps task parallelism (max_tasks=3) and iteration depth (max_iterations=1),
-- Free-tier models on OpenRouter exhibit systematic rate-limiting (429) and upstream instability (502), making them unreliable for production workflows 
 
 ---
 
