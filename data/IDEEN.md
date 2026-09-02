@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 07:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 07:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex scripts (e.g., modellfehler-deutlich-reduzieren.py) execute but return ok:false, indicating missing error handling or dependency gaps.
+- High metabolic stress (1.0) forces conservative budgets that starve retries and parallel fallback attempts, creating a death spiral.
+- File operations fail because relative paths ignore the ZOETRON_DATA environment variable, breaking data access in containerized runs.
+- The system lacks a model router with health tracking, circuit breakers, and exponential backoff, causing repeated hammering of failing endpoints.
+- Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
 - Stale goals (market analysis, model error reduction) persist over multiple cycles without completion, requiring automated archiving or forced reflex s
 - Skill proposals accumulate without automated validation or promotion, leaving high-value improvements (circuit breaker, fallback roster) unimplemented
 - Reflex tools for critical improvements (e.g., model reliability) fail silently, suggesting missing pre-execution validation or dependency checks.
@@ -51,11 +56,6 @@
 - Proactive prevention (pausing before thresholds, pre-flight path validation) outperforms reactive retry by avoiding failures entirely rather than reco
 - Information decays autonomously — stale market analyses, outdated facts, and archived events accumulate without intervention, requiring automated TTL-
 - Free-tier API models consistently hit 429 rate limits under load, making quota-aware routing with exponential backoff and fallback models a non-negoti
-- Automatic event pruning (85 events) maintains performance but fact retention remains untouched, creating asymmetric memory decay.
-- Hand actions fail when 'gelesen' is 0 but succeed when input is present, revealing a missing pre-flight input validation.
-- Swarm topology with 1 planner, 3 builders, 1 critic achieves rapid convergence (1 cycle) and high score (9) for error-reduction goals.
-- Calibration consistently underestimates task duration by ~2x for data-processing goals, indicating a missing complexity multiplier.
-- Rate limiting (429) on free-tier models is a systemic failure mode that requires proactive fallback rather than reactive retry.
 
 ---
 

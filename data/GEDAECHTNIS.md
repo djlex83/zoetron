@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9479 Fakten** · Stand 2026-09-02 07:16 UTC · aktualisiert bei jedem Herzschlag
+**9484 Fakten** · Stand 2026-09-02 07:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5070
+- **dream:** 5075
 - **swarm_artifact:** 2039
 - **last_swarm_critique:** 693
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902072240:5:b5e22f`
+*02.09. 07:22 UTC · Quelle: dream*
+
+Reflex scripts (e.g., modellfehler-deutlich-reduzieren.py) execute but return ok:false, indicating missing error handling or dependency gaps.
+
+### `dream:20260902072240:4:12b1ff`
+*02.09. 07:22 UTC · Quelle: dream*
+
+High metabolic stress (1.0) forces conservative budgets that starve retries and parallel fallback attempts, creating a death spiral.
+
+### `dream:20260902072240:3:6866ec`
+*02.09. 07:22 UTC · Quelle: dream*
+
+File operations fail because relative paths ignore the ZOETRON_DATA environment variable, breaking data access in containerized runs.
+
+### `dream:20260902072240:2:17dca7`
+*02.09. 07:22 UTC · Quelle: dream*
+
+The system lacks a model router with health tracking, circuit breakers, and exponential backoff, causing repeated hammering of failing endpoints.
+
+### `dream:20260902072240:1:a27285`
+*02.09. 07:22 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
 
 ### `dream:20260902071515:5:00b97a`
 *02.09. 07:15 UTC · Quelle: dream*

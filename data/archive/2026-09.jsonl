@@ -2179,3 +2179,28 @@
 {"ts": 1787728360.4539204, "kind": "swarm_started", "payload": {"goal": "Modell-Fehler deutlich reduzieren"}}
 {"ts": 1787728368.2744534, "kind": "recall", "payload": {"keys": ["last_swarm_goal", "dream:20260826063114:4:d1038a"]}}
 {"ts": 1787728369.2788317, "kind": "metabolism_check", "payload": {"stress": 0.0, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
+{"ts": 1787728432.3214478, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 62.8, "tokens_ein": 1676, "tokens_aus": 2224}}
+{"ts": 1787728436.4330602, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 4.0, "tokens_ein": 524, "tokens_aus": 95}}
+{"ts": 1787728453.2081912, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 16.6, "tokens_ein": 221, "tokens_aus": 493}}
+{"ts": 1787728453.2084603, "kind": "simulation", "payload": {"goal": "Modell-Fehler deutlich reduzieren", "verdict": "revise", "risks": 4, "revisions": 4}}
+{"ts": 1787728453.2085671, "kind": "simulation_applied", "payload": {"revisions": 4}}
+{"ts": 1787728682.2279058, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 228.9, "tokens_ein": 1952, "tokens_aus": 7843}}
+{"ts": 1787728682.59898, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.18}}
+{"ts": 1787728682.5991473, "kind": "tor", "payload": {"goal": "Modell-Fehler deutlich reduzieren", "gruen": false, "grund": "Artefakt laeuft nicht: Fehler", "zyklus": 1}}
+{"ts": 1787728706.703852, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 24.0, "tokens_ein": 2675, "tokens_aus": 539}}
+{"ts": 1787728706.7043386, "kind": "calibration", "payload": {"goal": "Modell-Fehler deutlich reduzieren", "predicted": 5, "actual": 2, "abs_error": 3}}
+{"ts": 1787728706.7044144, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 2}}
+{"ts": 1787728714.6337438, "kind": "bahnen", "payload": {"goal": "Modell-Fehler deutlich reduzieren", "delta": -0.5, "kanten": 0, "hat_code": true, "score": 2, "abgerufen": 8, "ids": ["e:41469b18c0f6", "e:e82ba9587449", "f:361137174b6f", "f:e6697c36f2bc", "e:988396ce1ddc", "e:c0fdf8bf0be2", "f:68f9fb9bb51f", "f:9aa4a012feff"], "ziel_id": "g:5c9390041fe8"}}
+{"ts": 1787728746.278669, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 31.6, "tokens_ein": 292, "tokens_aus": 668}}
+{"ts": 1787728755.036176, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 8.8, "tokens_ein": 850, "tokens_aus": 221}}
+{"ts": 1787728755.0365648, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 2/10. Goal: Modell-Fehler deutlich reduzieren\nCritic issues: Harter Mangel: Sandbox-Urteil laute", "variants": 3, "winner_index": 0, "scores": [9, 5, 7]}}
+{"ts": 1787728763.2647939, "kind": "recall", "payload": {"keys": ["swarm_artifact:Draft deliverable for: Modell-Fehler deutlich reduzieren"]}}
+{"ts": 1787728787.7878544, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 23.5, "tokens_ein": 513, "tokens_aus": 102}}
+{"ts": 1787728791.3708482, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.4, "tokens_ein": 359, "tokens_aus": 79}}
+{"ts": 1787728791.3710568, "kind": "simulation", "payload": {"goal": "Modell-Fehler deutlich reduzieren", "verdict": "go", "risks": 0, "revisions": 0}}
+{"ts": 1787728791.3711817, "kind": "swarm_finished", "payload": {"goal": "Modell-Fehler deutlich reduzieren", "score": 2, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787728791.3714068, "kind": "act_done", "payload": {"goal_title": "Modell-Fehler deutlich reduzieren", "score": 2, "converged": false}}
+{"ts": 1787728791.6641529, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.19}}
+{"ts": 1787728794.2074943, "kind": "issue_synced", "payload": {"issue": 132, "state": "open"}}
+{"ts": 1787728836.663339, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787728917.136553, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
