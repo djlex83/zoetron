@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token/latency metrics are collected per-call but not aggregated into per-model health scores, preventing dynamic routing away from degraded endpoints.
+- Self-diagnosis and reflex loops succeed internally (0 organ errors, prune runs complete) but cannot compensate for external dependency fragility, crea
+- Strategic drive goals (market analysis utilization, knowledge refresh) remain stale despite existing strategies, revealing a missing trigger mechanism
+- Multiple independent skill proposals converge on the same resilience patterns (health registry, deployment automaton, circuit breaker, budget allocato
+- External model APIs are the single point of failure: repeated 429/502 errors across three providers show no circuit breaker, fallback routing, or rate
 - Event pruning (43 events) ran while fact pruning found 0 facts, indicating memory pressure comes from event logs, not the knowledge base.
 - The critic's verdict 'LAEUFT NICH' (sandbox failure) on the previous attempt was not resolved by the evolution run, meaning sandbox validation is not 
 - Latency on the healthy model varied 4.5x (7.6s to 34.6s) with no adaptive routing or timeout handling, suggesting latency-based health scoring is miss
@@ -51,11 +56,6 @@
 - Poolside Laguna exhibits high latency variance (29s–180s), indicating unstable performance even when successful.
 - Nvidia Nemotron shows intermittent 502 overload errors but recovers, suggesting transient upstream capacity issues.
 - Free-tier models (z-ai/glm-5.2, Google Gemma) consistently hit 429 rate limits, making them unreliable for sustained workloads.
-- Overconfidence in model selection and output quality without calibration feedback leads to poor decision-making in subsequent iterations.
-- Generated Python code execution failures indicate a lack of pre-validation, resulting in silent errors and incomplete task completion.
-- Repeated failures on the same models without fallback mechanisms lead to task abandonment and wasted compute resources.
-- Model reliability varies significantly under load, with some models (e.g., nvidia/nemotron-3-ultra) failing consistently while others (e.g., poolside/
-- Free-tier LLM endpoints frequently return 429 rate-limit errors and 502 upstream overload errors, causing cascading failures across multiple model cal
 
 ---
 

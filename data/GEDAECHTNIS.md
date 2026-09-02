@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9238 Fakten** · Stand 2026-09-02 00:03 UTC · aktualisiert bei jedem Herzschlag
+**9243 Fakten** · Stand 2026-09-02 00:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4920
+- **dream:** 4925
 - **swarm_artifact:** 1989
 - **last_swarm_critique:** 684
 - **anti_pattern:** 595
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902001001:5:e09e1f`
+*02.09. 00:10 UTC · Quelle: dream*
+
+Token/latency metrics are collected per-call but not aggregated into per-model health scores, preventing dynamic routing away from degraded endpoints.
+
+### `dream:20260902001001:4:851587`
+*02.09. 00:10 UTC · Quelle: dream*
+
+Self-diagnosis and reflex loops succeed internally (0 organ errors, prune runs complete) but cannot compensate for external dependency fragility, creating a reliability ceiling.
+
+### `dream:20260902001001:3:67899d`
+*02.09. 00:10 UTC · Quelle: dream*
+
+Strategic drive goals (market analysis utilization, knowledge refresh) remain stale despite existing strategies, revealing a missing trigger mechanism that converts 'signal: stale/gap' into scheduled work.
+
+### `dream:20260902001001:2:3b6627`
+*02.09. 00:10 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on the same resilience patterns (health registry, deployment automaton, circuit breaker, budget allocator, simulation harness), indicating a clear architectural gap rather than isolated ideas.
+
+### `dream:20260902001001:1:bc97a4`
+*02.09. 00:10 UTC · Quelle: dream*
+
+External model APIs are the single point of failure: repeated 429/502 errors across three providers show no circuit breaker, fallback routing, or rate-limit handling exists.
 
 ### `dream:20260902000045:5:a95e0a`
 *02.09. 00:00 UTC · Quelle: dream*
