@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9348 Fakten** · Stand 2026-09-02 03:18 UTC · aktualisiert bei jedem Herzschlag
+**9353 Fakten** · Stand 2026-09-02 03:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4985
+- **dream:** 4990
 - **swarm_artifact:** 2013
 - **last_swarm_critique:** 688
 - **anti_pattern:** 601
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902032352:5:47b54d`
+*02.09. 03:23 UTC · Quelle: dream*
+
+Prune cycles remove events but never distill high-signal events into durable facts, losing reusable knowledge.
+
+### `dream:20260902032352:4:9eebd6`
+*02.09. 03:23 UTC · Quelle: dream*
+
+Three market analyses remain stale across multiple cycles with no automatic expiration or escalation, wasting context space and attention.
+
+### `dream:20260902032352:3:93b75e`
+*02.09. 03:23 UTC · Quelle: dream*
+
+Five skill proposals were generated in one cycle but none were promoted to implemented skills, revealing a broken proposal-to-production pipeline.
+
+### `dream:20260902032352:2:df9ba4`
+*02.09. 03:23 UTC · Quelle: dream*
+
+hand_action fails when given relative paths because it does not canonicalize inputs against ZOETRON_DATA, causing silent zero-byte reads that look like successes.
+
+### `dream:20260902032352:1:dea341`
+*02.09. 03:23 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free provider consistently returns 429 errors under load while nvidia/nemotron-3-ultra succeeds, indicating provider-specific rate limits require proactive routing not reactive fallback.
 
 ### `dream:20260902031702:5:fd7f1d`
 *02.09. 03:17 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 03:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 03:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prune cycles remove events but never distill high-signal events into durable facts, losing reusable knowledge.
+- Three market analyses remain stale across multiple cycles with no automatic expiration or escalation, wasting context space and attention.
+- Five skill proposals were generated in one cycle but none were promoted to implemented skills, revealing a broken proposal-to-production pipeline.
+- hand_action fails when given relative paths because it does not canonicalize inputs against ZOETRON_DATA, causing silent zero-byte reads that look lik
+- The z-ai/glm-5.2:free provider consistently returns 429 errors under load while nvidia/nemotron-3-ultra succeeds, indicating provider-specific rate li
 - Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don't cover external API reliability.
 - Five model-reliability skill proposals were generated but none converted to executable goals, exposing a proposal-to-goal pipeline gap.
 - Three stale market analyses persisted until a reflex forcibly closed them, showing no automatic staleness detection or cleanup policy.
@@ -51,11 +56,6 @@
 - The structural gap between proposal generation and proposal execution undermines system evolution and must be closed with measurable convergence thres
 - Exit code 0 from hand actions is an unreliable success signal — silent failures occur when expected files or data are not actually created or modified
 - OpenRouter 429 rate-limiting is a systemic, recurring failure mode that demands proactive failover to direct model endpoints rather than retry-based r
-- Two swarm cycles with fixed roles (1 planner, 3 builders, 1 critic) are insufficient for converging on skill organization.
-- Event pruning removed 95 entries but extracted zero new facts, revealing a gap in automated knowledge distillation.
-- Nvidia Nemotron shows extreme latency variance (6–43 s) and intermittent 502s, indicating unstable upstream capacity.
-- The skill-clustering evolution stalled at 6/10 because similarity scoring was hardcoded instead of learned or configurable.
-- Free-tier OpenRouter models consistently return 429 errors under load, making single-model reliance infeasible for production workflows.
 
 ---
 
