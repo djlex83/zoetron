@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 05:51:58",
+ "stand": "2026-09-02 06:06:23",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,12 +63,6 @@
    "quote": 0.0
   },
   {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -103,6 +97,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "fehlerquellen-systematisch-beheben.py",
@@ -322,6 +322,12 @@
   },
   {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

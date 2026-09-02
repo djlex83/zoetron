@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9438 Fakten** · Stand 2026-09-02 05:53 UTC · aktualisiert bei jedem Herzschlag
+**9443 Fakten** · Stand 2026-09-02 06:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5040
+- **dream:** 5045
 - **swarm_artifact:** 2033
 - **last_swarm_critique:** 692
 - **anti_pattern:** 603
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902060533:5:6bee56`
+*02.09. 06:05 UTC · Quelle: dream*
+
+System self-diagnosis correctly identifies the absence of organ failures, ensuring system health is maintained during routine operations.
+
+### `dream:20260902060533:4:3c278a`
+*02.09. 06:05 UTC · Quelle: dream*
+
+Swarm-based task execution with planner, builder, and critic roles successfully converges on a high-quality solution (score 8) in a single cycle.
+
+### `dream:20260902060533:3:adc2f5`
+*02.09. 06:05 UTC · Quelle: dream*
+
+Event pruning is highly effective at reducing memory bloat, successfully removing 55 outdated events in a single run.
+
+### `dream:20260902060533:2:d6c652`
+*02.09. 06:05 UTC · Quelle: dream*
+
+Task duration calibration tends to underestimate the actual time required for data updating tasks by a significant margin (predicted 5 vs actual 8).
+
+### `dream:20260902060533:1:b09a90`
+*02.09. 06:05 UTC · Quelle: dream*
+
+Free models on OpenRouter frequently hit 429 rate limits, requiring automatic fallback to alternative models to maintain operational continuity.
 
 ### `last_swarm_critique`
 *02.09. 05:51 UTC · Quelle: critic*
