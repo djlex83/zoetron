@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -34,13 +34,18 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency varies significantly across models and over time (3.7s vs 9.3s), necessitating continuous health polling for routing decisions.
+- Fact TTL pruning policy exists but prunes zero facts, indicating access thresholds or time windows are miscalibrated.
+- Reflex execution succeeds when goal semantics match registered patterns, but lacks pre-deployment validation.
+- Skill proposals accumulate faster than implementation, creating a capability gap that slows system improvement.
+- Model endpoints exhibit high failure rates (429/502) requiring automatic blacklisting and fallback chains to maintain throughput.
 - Pruning runs consistently remove events but never facts, indicating the knowledge base accumulates stale procedural events alongside durable facts.
 - Hand action failures produce unhelpful error output (null error, exit code 1), making root cause analysis nearly impossible without additional diagnos
 - Reflex-based execution reliably achieves goals for known tasks, while general planning cycles show higher variability and occasional silent hand-actio
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates task complexity by ~3 points when code artifacts exceed 400 lines.
 - Hand actions fail on first attempt due to relative path resolution but succeed when absolute paths are used.
 - Model providers on free tiers exhibit bursty 429/502 failures that resolve after 20-180s, making naive retries wasteful.
-- Free-tier models on OpenRouter are highly unstable, exhibiting both rate limits (429) and upstream overloads (502), necessitating a robust multi-model
-- Simulations are catching significant risks (5 risks, 5 revisions), proving the simulation layer is valuable for preventing bad actions during high-str
-- Reflexes and hand actions are failing (exit 1, ok: false), indicating that current scripts for refreshing outdated knowledge are broken or lack proper
-- High stress state (1.0) combined with frequent model failures causes severe operational bottlenecks, requiring aggressive task deferral or cheaper fal
-- The z-ai/glm-5.2:free model is chronically rate-limited (429) and should be temporarily blacklisted or deprioritized to prevent retry storms.
 
 ---
 

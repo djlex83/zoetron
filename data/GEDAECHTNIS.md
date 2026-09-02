@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9989 Fakten** · Stand 2026-09-02 21:28 UTC · aktualisiert bei jedem Herzschlag
+**9994 Fakten** · Stand 2026-09-02 21:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5420
+- **dream:** 5425
 - **swarm_artifact:** 2131
 - **last_swarm_critique:** 709
 - **anti_pattern:** 619
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902214836:5:1a53d4`
+*02.09. 21:48 UTC · Quelle: dream*
+
+Latency varies significantly across models and over time (3.7s vs 9.3s), necessitating continuous health polling for routing decisions.
+
+### `dream:20260902214836:4:4c5f2d`
+*02.09. 21:48 UTC · Quelle: dream*
+
+Fact TTL pruning policy exists but prunes zero facts, indicating access thresholds or time windows are miscalibrated.
+
+### `dream:20260902214836:3:5b74ee`
+*02.09. 21:48 UTC · Quelle: dream*
+
+Reflex execution succeeds when goal semantics match registered patterns, but lacks pre-deployment validation.
+
+### `dream:20260902214836:2:2e8fde`
+*02.09. 21:48 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than implementation, creating a capability gap that slows system improvement.
+
+### `dream:20260902214836:1:f62f97`
+*02.09. 21:48 UTC · Quelle: dream*
+
+Model endpoints exhibit high failure rates (429/502) requiring automatic blacklisting and fallback chains to maintain throughput.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modelle zuverlässiger ma:2`
 *02.09. 21:25 UTC · Quelle: evolution*
