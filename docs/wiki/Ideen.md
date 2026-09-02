@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 23:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 23:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-based risk assessment catches issues pre-execution but hand-layer path resolution remains a blind spot.
+- Proposed skills accumulate without a consolidation mechanism to turn them into learned, reusable procedures.
+- Under conserve metabolism (stress=1.0), the system still wastes budget on repeated calls to known-failing models instead of immediate fallback.
+- Hand actions fail when they resolve paths relatively instead of using the absolute data path from ZOETRON_DATA or sys.argv[1].
+- Model "z-ai/glm-5.2:free" consistently fails with 429 rate limits and should be permanently excluded from routing.
 - Reflex-based skill execution and self-diagnosis both function correctly, confirming internal processes are sound and failures originate externally fro
 - Drive goals expose that simulation results go unused and analysis tasks go stale, meaning computation without utilization mechanisms and completion de
 - The nvidia/nemotron-3-ultra-550b-a55b:free model is the sole reliable provider but exhibits high latency variance (12.5s–27.8s), indicating capacity s
@@ -51,11 +56,6 @@
 - Event pruning runs regularly (16-19 events) but fact pruning never triggers, revealing asymmetric memory pressure handling.
 - Multiple skill proposals address the same path resolution issue (ZOETRON_DATA prefixing), indicating a systemic missing middleware layer.
 - The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra works reliably but with high latency (6-14s).
-- Pruning removes events (36, 16) but never facts, suggesting the fact store may accumulate stale entries that the current pruning logic misses.
-- Self-diagnosis consistently reports zero organ errors, yet model failures persist, meaning the diagnostic scope does not cover external API failures.
-- Skill proposals (circuit breaker, path wrapper, skill verification) repeat across cycles but are never verified as loadable or executable, indicating 
-- The nvidia/nemotron-3-ultra-550b-a55b:free model consistently succeeds as a fallback but with highly variable latency (9–24s), so routing decisions mu
-- API rate-limit errors (429) from z-ai/glm-5.2:free recur every few seconds with no automatic fallback, making the primary model unreliable without a c
 
 ---
 

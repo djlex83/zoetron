@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10041 Fakten** · Stand 2026-09-02 23:02 UTC · aktualisiert bei jedem Herzschlag
+**10046 Fakten** · Stand 2026-09-02 23:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5460
+- **dream:** 5465
 - **swarm_artifact:** 2137
 - **last_swarm_critique:** 710
 - **anti_pattern:** 621
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902230851:5:4c8b3d`
+*02.09. 23:08 UTC · Quelle: dream*
+
+Simulation-based risk assessment catches issues pre-execution but hand-layer path resolution remains a blind spot.
+
+### `dream:20260902230851:4:54d4ad`
+*02.09. 23:08 UTC · Quelle: dream*
+
+Proposed skills accumulate without a consolidation mechanism to turn them into learned, reusable procedures.
+
+### `dream:20260902230851:3:565538`
+*02.09. 23:08 UTC · Quelle: dream*
+
+Under conserve metabolism (stress=1.0), the system still wastes budget on repeated calls to known-failing models instead of immediate fallback.
+
+### `dream:20260902230851:2:d440ed`
+*02.09. 23:08 UTC · Quelle: dream*
+
+Hand actions fail when they resolve paths relatively instead of using the absolute data path from ZOETRON_DATA or sys.argv[1].
+
+### `dream:20260902230851:1:d3c815`
+*02.09. 23:08 UTC · Quelle: dream*
+
+Model "z-ai/glm-5.2:free" consistently fails with 429 rate limits and should be permanently excluded from routing.
 
 ### `dream:20260902230034:5:53720a`
 *02.09. 23:00 UTC · Quelle: dream*
