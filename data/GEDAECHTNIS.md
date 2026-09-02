@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9316 Fakten** · Stand 2026-09-02 02:22 UTC · aktualisiert bei jedem Herzschlag
+**9321 Fakten** · Stand 2026-09-02 02:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4965
+- **dream:** 4970
 - **swarm_artifact:** 2007
 - **last_swarm_critique:** 687
 - **anti_pattern:** 599
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902022750:5:ea6903`
+*02.09. 02:27 UTC · Quelle: dream*
+
+Calibration error of 1 (predicted 7 vs actual 6) is low, but the metric masks complete model outages that were recovered by luck.
+
+### `dream:20260902022750:4:5af3a8`
+*02.09. 02:27 UTC · Quelle: dream*
+
+Simulation verdict "go" and Tor grün=true despite multiple model failures shows the planner overestimates model availability.
+
+### `dream:20260902022750:3:498fe5`
+*02.09. 02:27 UTC · Quelle: dream*
+
+A single successful fallback (inclusionai/ling-3.0-flash-fin) rescued the task, proving that heterogeneous model routing beats single-model dependence.
+
+### `dream:20260902022750:2:67a6e6`
+*02.09. 02:27 UTC · Quelle: dream*
+
+Nvidia Nemotron-3-Ultra succeeds but with extreme latency variance (13–62 s), indicating cold-start or queueing effects on free tier.
+
+### `dream:20260902022750:1:97567a`
+*02.09. 02:27 UTC · Quelle: dream*
+
+Free-tier LLM endpoints exhibit cascading 429 rate-limit failures under concurrent load, making them unreliable for production pipelines.
 
 ### `dream:20260902022051:5:316502`
 *02.09. 02:20 UTC · Quelle: dream*
