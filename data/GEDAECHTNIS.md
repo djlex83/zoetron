@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9414 Fakten** · Stand 2026-09-02 05:26 UTC · aktualisiert bei jedem Herzschlag
+**9419 Fakten** · Stand 2026-09-02 05:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5025
+- **dream:** 5030
 - **swarm_artifact:** 2027
 - **last_swarm_critique:** 691
 - **anti_pattern:** 603
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902053158:5:749b8d`
+*02.09. 05:31 UTC · Quelle: dream*
+
+Event pruning removes operational history but preserves stale facts, leaving the knowledge base polluted with outdated context that misguides future decisions.
+
+### `dream:20260902053158:4:e018d6`
+*02.09. 05:31 UTC · Quelle: dream*
+
+Conserve-mode budgets are ignored by schedulers that spawn unbounded concurrent tasks, triggering rate limits that then stall all dependent work.
+
+### `dream:20260902053158:3:6d4d3a`
+*02.09. 05:31 UTC · Quelle: dream*
+
+File-path assumptions in hand_action invocations cause silent failures when data moves or disappears, wasting cycles on retries that cannot succeed.
+
+### `dream:20260902053158:2:2d959e`
+*02.09. 05:31 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that clutters the system and delays reliable automation.
+
+### `dream:20260902053158:1:d961c7`
+*02.09. 05:31 UTC · Quelle: dream*
+
+429 rate limits cascade across all free-tier models simultaneously, making single-model fallbacks ineffective and requiring multi-provider circuit breakers with shared quota awareness.
 
 ### `dream:20260902052439:5:12f655`
 *02.09. 05:24 UTC · Quelle: dream*

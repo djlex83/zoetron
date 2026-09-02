@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 05:24:52",
+ "stand": "2026-09-02 05:32:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
@@ -145,12 +145,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
