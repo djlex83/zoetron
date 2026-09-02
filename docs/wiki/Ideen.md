@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 09:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 10:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Silent hand-action failures (exit 1, 0 bytes read) indicate missing pre-execution validation and health-check gates before downstream actions.
+- 502 upstream errors from Nvidia providers signal provider-side saturation, requiring provider diversification rather than naive retry loops.
+- A final swarm score of 1 despite a best variant score of 8.7 indicates the evolution mechanism fails to aggregate individual improvements into coheren
+- inclusionai/ling-3.0-flash-fin:free is the only consistently available low-latency model in this environment and should be treated as the primary fall
+- OpenRouter free-tier models are systematically rate-limited under concurrent load, making them unreliable for any time-sensitive or multi-request work
 - Five skill proposals exist but none deployed, exposing gap between proposal and production registration.
 - Organ-level diagnostics report clean while systemic rate-limit failures persist, requiring cross-organ correlation.
 - Reflex tool execution failed despite valid goal, showing need for pre-registration validation gates.
@@ -51,11 +56,6 @@
 - The system successfully self-implemented proposed skills via reflex-driven hand action, proving autonomous capability deployment works end-to-end.
 - Free-tier models exhibit high failure rates (429, 502) and latency variance (12-20s), making them unreliable for production workloads.
 - OpenRouter gateway creates a single point of failure causing correlated 429 errors across all routed models simultaneously.
-- Self-diagnosis reports zero organ errors across all cycles while model-layer failures persist, meaning health checks miss external dependency failures
-- Three completed market analyses remain unleveraged despite explicit drive goals to use them, showing output artifacts decay without forced integration
-- Goals consistently converge via reflex-mode tool execution (marktanalyse-endlich-nutzen.py, veraltete-marktanalyse-auffrischen.py) rather than deliber
-- Five concrete skill proposals exist (calibration corrector, model-router, swarm optimizer, stale-goal reaper, pre-flight check) but none have been imp
-- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, proving single-provider reliance cau
 
 ---
 

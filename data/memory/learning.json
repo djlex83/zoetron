@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 09:57:57",
+ "stand": "2026-09-02 10:19:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -161,12 +161,6 @@
   {
    "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-dauerhaft-senken.py",
-   "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -355,19 +349,25 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modellfehler-dauerhaft-senken.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.71,
- "simulationen_angewandt": 30,
+ "haende_quote": 0.7,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 34,
   "best": 9.0,
-  "schnitt": 5.94
+  "schnitt": 5.76
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 30,
-   "schnitt": 6.0
+   "schnitt": 5.8
   },
   "bau": {
    "n": 3,

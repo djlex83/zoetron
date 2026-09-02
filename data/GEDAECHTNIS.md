@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9579 Fakten** · Stand 2026-09-02 09:59 UTC · aktualisiert bei jedem Herzschlag
+**9592 Fakten** · Stand 2026-09-02 10:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5140
-- **swarm_artifact:** 2057
-- **last_swarm_critique:** 696
-- **anti_pattern:** 607
-- **last_swarm_goal:** 444
-- **strategy:** 324
+- **dream:** 5145
+- **swarm_artifact:** 2059
+- **last_swarm_critique:** 697
+- **anti_pattern:** 609
+- **last_swarm_goal:** 445
+- **strategy:** 325
 - **tool:** 116
-- **hand_result:** 103
+- **hand_result:** 104
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Gründe für häufige Model:2`
+*02.09. 10:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 8]): template_rendering_pipeline - Extract report structure into a Jinja2/template string or JSON schema. synthesize_report becomes a pure data preparation step that feeds a renderer. The template defines all keys, nesting
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Gründe für häufige Model:0`
+*02.09. 10:18 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 9, 7]): defensive_completion - Complete the broken dictionary by adding missing keys, closing braces, colons, and return statement. Wrap synthesis in try/except with validation to guarantee well-formed output even if upstream
+
+### `last_swarm_critique`
+*02.09. 10:17 UTC · Quelle: critic*
+
+score=0; issues=LAEUFT NICHT: Artefakt läuft nicht - SyntaxError durch unvollständige Dictionary-Definition in synthesize_report (Zeile ~150: 'taxonomy_summar' ohne schließendes 'y', kein schließendes '}', kein schließendes ':', und fehlender Rückgabewert). Di
+
+### `last_swarm_goal`
+*02.09. 10:12 UTC · Quelle: system*
+
+Gründe für häufige Modellfehler finden
+
+### `dream:20260902101127:5:2ac983`
+*02.09. 10:11 UTC · Quelle: dream*
+
+Silent hand-action failures (exit 1, 0 bytes read) indicate missing pre-execution validation and health-check gates before downstream actions.
+
+### `dream:20260902101127:4:e24637`
+*02.09. 10:11 UTC · Quelle: dream*
+
+502 upstream errors from Nvidia providers signal provider-side saturation, requiring provider diversification rather than naive retry loops.
+
+### `dream:20260902101127:3:02e26c`
+*02.09. 10:11 UTC · Quelle: dream*
+
+A final swarm score of 1 despite a best variant score of 8.7 indicates the evolution mechanism fails to aggregate individual improvements into coherent system-level progress.
+
+### `dream:20260902101127:2:453bb9`
+*02.09. 10:11 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only consistently available low-latency model in this environment and should be treated as the primary fallback endpoint.
+
+### `dream:20260902101127:1:2dc05e`
+*02.09. 10:11 UTC · Quelle: dream*
+
+OpenRouter free-tier models are systematically rate-limited under concurrent load, making them unreliable for any time-sensitive or multi-request workflow.
 
 ### `last_swarm_critique`
 *02.09. 09:57 UTC · Quelle: critic*
