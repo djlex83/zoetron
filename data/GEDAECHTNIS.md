@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9262 Fakten** · Stand 2026-09-02 00:43 UTC · aktualisiert bei jedem Herzschlag
+**9279 Fakten** · Stand 2026-09-02 00:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4935
-- **swarm_artifact:** 1995
-- **last_swarm_critique:** 685
-- **anti_pattern:** 595
-- **last_swarm_goal:** 433
-- **strategy:** 318
-- **tool:** 109
+- **dream:** 4940
+- **swarm_artifact:** 2001
+- **last_swarm_critique:** 686
+- **anti_pattern:** 597
+- **last_swarm_goal:** 434
+- **strategy:** 319
+- **tool:** 110
 - **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:veraltete-marktanalyse-auffrischen`
+*02.09. 00:53 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Marktanalyse auffrischen'. Datei: data/tools/veraltete-marktanalyse-auffrischen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Marktanalyse a:2`
+*02.09. 00:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 6, 8]): Graph-Native Unification: Statt drei separater Artefakte mit File-I/O wird die g - unified_graph_refresh.py: load_graph() → annotate_market_nodes(graph) [setzt type='market_analysis' auf jeden Match-Knoten] → fetch_la
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Veraltete Marktanalyse a:0`
+*02.09. 00:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 8, 8]): Schema-First Contract: Alle drei Artefakte werden an einer zentralen JSON-Schema - contracts/pipeline_contract.json definieren mit Feldern: output_filename, expected_node_type, required_fields. Jedes Artefakt importie
+
+### `last_swarm_critique`
+*02.09. 00:52 UTC · Quelle: critic*
+
+score=4; issues=Datenfluss zwischen den drei Artefakten ist gebrochen: Artefakt 2 speichert als 'market_data_latest.json', Artefakt 3 sucht nach 'fresh_market_data.json' (Dateiname-Mismatch); Artefakt 3 erwartet Graph-Knoten mit type='market_analysis', aber Ar
+
+### `last_swarm_goal`
+*02.09. 00:49 UTC · Quelle: system*
+
+Veraltete Marktanalyse auffrischen
+
+### `dream:20260902004845:5:9044cb`
+*02.09. 00:48 UTC · Quelle: dream*
+
+A reflex-based learning loop can converge successfully on its own, but sustained reliability requires infrastructure hardening because the learning mechanism is only as dependable as its execution environment.
+
+### `dream:20260902004845:4:4b0857`
+*02.09. 00:48 UTC · Quelle: dream*
+
+Self-diagnosis reports no internal organ failures even while the system fails repeatedly, revealing that diagnostic scope must explicitly include external dependency health (model endpoints, API providers).
+
+### `dream:20260902004845:3:ee517f`
+*02.09. 00:48 UTC · Quelle: dream*
+
+Stale artifacts, outdated memories, and unfinished analyses accumulate faster than pruning routines can clean them, creating clutter that degrades decision clarity.
+
+### `dream:20260902004845:2:3186ee`
+*02.09. 00:48 UTC · Quelle: dream*
+
+A persistent gap exists between generating proposals/suggestions and actually executing them — the system collects 55 capability suggestions and 5 skill proposals but struggles to convert them into implemented features.
+
+### `dream:20260902004845:1:6e4f0f`
+*02.09. 00:48 UTC · Quelle: dream*
+
+Model infrastructure failures (429 rate limits, 503 service unavailability) are the dominant systemic risk, causing 75 failures versus 37 successes, and must be hardened before algorithmic improvements can yield reliable outcomes.
 
 ### `dream:20260902004151:5:bb2fb2`
 *02.09. 00:41 UTC · Quelle: dream*

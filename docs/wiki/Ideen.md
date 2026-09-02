@@ -1,16 +1,13 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototy *(hatte die Idee 6×)*
+- Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototy *(hatte die Idee 5×)*
 - Implement a model router with real-time health scoring (error rate, latency, 429 frequency) and automatic fall *(hatte die Idee 4×)*
 - Build a skill validation pipeline: propose → unit-test → integration-test → canary-deploy → promote, with auto *(hatte die Idee 4×)*
-- Implement a model health registry tracking success rate, p95 latency, and 429 count per endpoint; auto-quarant *(hatte die Idee 3×)*
-- Add exponential backoff with jitter (base 2s, max 30s, jitter ±25%) to every model call and emit structured te *(hatte die Idee 3×)*
-- Build a stress-aware scheduler that reduces concurrent model calls when system stress > 0.7 and prioritizes la *(hatte die Idee 3×)*
 - Add per-request timeout (20 s) and retry budget (max 2 attempts with exponential backoff + jitter) before fail *(hatte die Idee 3×)*
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 3×)*
 - Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 3×)*
@@ -19,7 +16,10 @@
 - Develop a simulation harness that injects rate-limit, latency, and filesystem errors to vet plans before execu *(hatte die Idee 3×)*
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
-- Deploy a fallback router that prefers ling-3.0-flash-fin as primary, routes to nemotron-3-ultra only when prim *(hatte die Idee 2×)*
+- Instrument every external model call with structured metrics (model, status, latency_s, tokens_in, tokens_out, *(hatte die Idee 2×)*
+- Deploy a model-health registry that tracks success-rate, p95 latency, and 429 count per endpoint; auto-quarant *(hatte die Idee 2×)*
+- Implement a fallback router: prefer ling-3.0-flash-fin as primary, route to nemotron-3-ultra only when primary *(hatte die Idee 2×)*
+- Implement a model health registry tracking success rate, p95 latency, and 429 count per endpoint; auto-quarant *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,9 +27,9 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A reflex-based learning loop can converge successfully on its own, but sustained reliability requires infrastructure hardening because the learning me
+- Self-diagnosis reports no internal organ failures even while the system fails repeatedly, revealing that diagnostic scope must explicitly include exte
+- Stale artifacts, outdated memories, and unfinished analyses accumulate faster than pruning routines can clean them, creating clutter that degrades dec
+- A persistent gap exists between generating proposals/suggestions and actually executing them — the system collects 55 capability suggestions and 5 ski
+- Model infrastructure failures (429 rate limits, 503 service unavailability) are the dominant systemic risk, causing 75 failures versus 37 successes, a
 - Memory pruning operates at low throughput (1 event/cycle), risking accumulation of stale model-performance beliefs.
 - Self-diagnosis reports no internal organ errors while external model failures dominate, indicating monitoring blind spots for dependency health.
 - Reflex-driven hebbian learning on model failure graphs enables autonomous adaptation but requires executable code artifacts to be effective.
@@ -51,11 +56,6 @@
 - Circuit breakers that quarantine failing models for cooldown periods preserve system throughput during partial outages.
 - Proactive token-bucket throttling across all outbound requests prevents cascade 429 errors better than reactive backoff.
 - External LLM APIs fail predominantly via rate limits (429) and upstream overloads (502), making them unreliable as sole reasoning providers.
-- Token/latency metrics are collected per-call but not aggregated into per-model health scores, preventing dynamic routing away from degraded endpoints.
-- Self-diagnosis and reflex loops succeed internally (0 organ errors, prune runs complete) but cannot compensate for external dependency fragility, crea
-- Strategic drive goals (market analysis utilization, knowledge refresh) remain stale despite existing strategies, revealing a missing trigger mechanism
-- Multiple independent skill proposals converge on the same resilience patterns (health registry, deployment automaton, circuit breaker, budget allocato
-- External model APIs are the single point of failure: repeated 429/502 errors across three providers show no circuit breaker, fallback routing, or rate
 
 ---
 
