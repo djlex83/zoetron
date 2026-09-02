@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9972 Fakten** · Stand 2026-09-02 21:12 UTC · aktualisiert bei jedem Herzschlag
+**9989 Fakten** · Stand 2026-09-02 21:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5415
-- **swarm_artifact:** 2125
-- **last_swarm_critique:** 708
-- **anti_pattern:** 617
-- **last_swarm_goal:** 456
-- **strategy:** 329
+- **dream:** 5420
+- **swarm_artifact:** 2131
+- **last_swarm_critique:** 709
+- **anti_pattern:** 619
+- **last_swarm_goal:** 457
+- **strategy:** 330
 - **tool:** 123
-- **hand_result:** 107
+- **hand_result:** 108
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modelle zuverlässiger ma:2`
+*02.09. 21:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 7]): Ensemble-Based Fault Tolerance - Redundancy through diversity instead of retry logic. Deploy 3+ heterogeneous models per task (different architectures, training seeds, feature subsets, or even model types — e.g., XGBo
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modelle zuverlässiger ma:1`
+*02.09. 21:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Contract-Driven Validation & Observability - Treat each model as a service with explicit I/O contracts (schemas, ranges, latency budgets, drift thresholds). Generate validation stubs from contracts (Pydantic/JSON Sche
+
+### `last_swarm_critique`
+*02.09. 21:24 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: Beide Artefakte laufen nicht (Tracebacks in action_1788384263931.py Zeile 469 und action_1788384264997.py Zeile 363); Artefakt 1: _aktualisiere_circuit_breaker-Methode bricht mittendrin ab ('if kategorie in (FehlerKategorie.TRAN
+
+### `last_swarm_goal`
+*02.09. 21:18 UTC · Quelle: system*
+
+Modelle zuverlässiger machen
+
+### `dream:20260902211807:5:a691fb`
+*02.09. 21:18 UTC · Quelle: dream*
+
+Pruning runs consistently remove events but never facts, indicating the knowledge base accumulates stale procedural events alongside durable facts.
+
+### `dream:20260902211807:4:cdb3ae`
+*02.09. 21:18 UTC · Quelle: dream*
+
+Hand action failures produce unhelpful error output (null error, exit code 1), making root cause analysis nearly impossible without additional diagnostics.
+
+### `dream:20260902211807:3:4a5c0b`
+*02.09. 21:18 UTC · Quelle: dream*
+
+Reflex-based execution reliably achieves goals for known tasks, while general planning cycles show higher variability and occasional silent hand-action failures.
+
+### `dream:20260902211807:2:ef11da`
+*02.09. 21:18 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposal generation and actual implementation, limiting the system's capability growth over cycles.
+
+### `dream:20260902211807:1:bf4ce6`
+*02.09. 21:18 UTC · Quelle: dream*
+
+Model provider rate limiting (429 errors) is the dominant recurring failure mode and requires systemic handling rather than per-call fixes.
 
 ### `dream:20260902211017:5:4af181`
 *02.09. 21:10 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs consistently remove events but never facts, indicating the knowledge base accumulates stale procedural events alongside durable facts.
+- Hand action failures produce unhelpful error output (null error, exit code 1), making root cause analysis nearly impossible without additional diagnos
+- Reflex-based execution reliably achieves goals for known tasks, while general planning cycles show higher variability and occasional silent hand-actio
+- A persistent gap exists between skill proposal generation and actual implementation, limiting the system's capability growth over cycles.
+- Model provider rate limiting (429 errors) is the dominant recurring failure mode and requires systemic handling rather than per-call fixes.
 - Event pruning removes 40+ events per cycle without fact loss, indicating high transient-event volume.
 - Swarm convergence in a single cycle correlates with clear role separation (1 planner, 3 builders, 1 critic) and pre-existing code artifacts.
 - Calibration consistently underestimates task complexity by ~3 points when code artifacts exceed 400 lines.
@@ -51,11 +56,6 @@
 - Reflexes and hand actions are failing (exit 1, ok: false), indicating that current scripts for refreshing outdated knowledge are broken or lack proper
 - High stress state (1.0) combined with frequent model failures causes severe operational bottlenecks, requiring aggressive task deferral or cheaper fal
 - The z-ai/glm-5.2:free model is chronically rate-limited (429) and should be temporarily blacklisted or deprioritized to prevent retry storms.
-- Reflex layer exists but lacks semantic gating, so model calls fire even when a reflex could handle the goal.
-- Pruning removes 86 events but zero facts, indicating fact TTL policy is absent or ineffective.
-- High-latency endpoints (24-27s) are used interchangeably with fast ones (4-6s) because routing ignores latency history.
-- Benchmark scoring is criticized as arbitrary, causing evolution to stall at 7/10 without convergence across 2 cycles.
-- Model endpoint failures (429/502) dominate latency variance and cause swarm instability, yet no circuit breaker or health-aware routing exists despite
 
 ---
 
