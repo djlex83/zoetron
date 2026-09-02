@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,20 +18,20 @@
 - Build ModelRouter with per-model 429-rate tracking, latency percentile baselines, and circuit-breaker auto-fal *(hatte die Idee 4×)*
 - Implement SkillDeploymentPipeline that ingests proposals, generates tests, runs CI in sandbox, and atomically  *(hatte die Idee 4×)*
 - Design LatencyBudgetGuard that enforces per-task SLOs, triggers conservative mode early when latency exceeds t *(hatte die Idee 4×)*
-- Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
-- Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
+- Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceedi *(hatte die Idee 3×)*
+- Add DiagnosticGapDetector that correlates per-organ healthy reports with cross-organ failure signatures (e.g., *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Path resolution failures in hand actions reveal that input handling must explicitly declare data source locations rather than relying on implicit rela
+- Event accumulation without fact consolidation (38 events pruned, 0 facts) indicates passive recording over active learning.
+- Generated knowledge (proposals, analyses) decays into staleness when not operationalized within a bounded timeframe.
+- Reflex-based execution consistently converges where model-dependent execution fails under load, making reflex patterns the more reliable execution pat
+- Model endpoint failures (429 rate limits) are the primary blocker of system autonomy and require automatic failover rather than manual retry.
 - Stale goals (market analysis, model reliability) persist across cycles because failure signals don't automatically escalate to architectural fixes.
 - Fifty skill proposals exist but remain unvalidated; the simulation reflex proves a viable test path yet isn't triggered automatically for new proposal
 - Reflex-based tools (market analysis update, skill simulation) succeed when invoked, but the system lacks an orchestration layer to chain them reliably
@@ -51,11 +56,6 @@
 - Swarm execution evolved but failed to converge (score 1, converged=false), revealing missing termination criteria or insufficient reward signals for k
 - Fallback chains collapse when all configured models route through the same rate-limited gateway, making provider diversity meaningless without infrast
 - Correlated 429 errors across Google, Z.ai, and Nvidia providers indicate shared upstream rate-limiting infrastructure rather than independent provider
-- The evolutionary approach shows promise (variant scores 5-9 vs baseline 1/10) but cannot realize gains while the underlying artifact remains non-funct
-- Hand actions fail uniformly with exit code 1 regardless of input size or duration, indicating a systemic tool-interface failure rather than an input p
-- Performance calibration is severely miscalibrated (predicted 7 vs actual 1, abs_error 6), meaning self-assessments cannot be trusted without recalibra
-- The execution sandbox artifact is broken ('Artefakt laeuf'), blocking all hand actions (exit code 1) and causing evolution runs to score 1/10 despite 
-- Free-tier OpenRouter models (z-ai/glm-5.2, google/gemma-4-31b-it) fail consistently with 429 rate-limit errors, making nvidia/nemotron-3-ultra-550b-a5
 
 ---
 

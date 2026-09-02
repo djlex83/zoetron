@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 19:13:48",
+ "stand": "2026-09-02 19:21:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0

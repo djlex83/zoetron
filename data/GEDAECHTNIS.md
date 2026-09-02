@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9901 Fakten** · Stand 2026-09-02 19:15 UTC · aktualisiert bei jedem Herzschlag
+**9906 Fakten** · Stand 2026-09-02 19:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5365
+- **dream:** 5370
 - **swarm_artifact:** 2113
 - **last_swarm_critique:** 706
 - **anti_pattern:** 615
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902192105:5:e78bea`
+*02.09. 19:21 UTC · Quelle: dream*
+
+Path resolution failures in hand actions reveal that input handling must explicitly declare data source locations rather than relying on implicit relative paths.
+
+### `dream:20260902192105:4:96b791`
+*02.09. 19:21 UTC · Quelle: dream*
+
+Event accumulation without fact consolidation (38 events pruned, 0 facts) indicates passive recording over active learning.
+
+### `dream:20260902192105:3:73026a`
+*02.09. 19:21 UTC · Quelle: dream*
+
+Generated knowledge (proposals, analyses) decays into staleness when not operationalized within a bounded timeframe.
+
+### `dream:20260902192105:2:3ac8e1`
+*02.09. 19:21 UTC · Quelle: dream*
+
+Reflex-based execution consistently converges where model-dependent execution fails under load, making reflex patterns the more reliable execution path.
+
+### `dream:20260902192105:1:9f9c8e`
+*02.09. 19:21 UTC · Quelle: dream*
+
+Model endpoint failures (429 rate limits) are the primary blocker of system autonomy and require automatic failover rather than manual retry.
 
 ### `dream:20260902191254:5:05205a`
 *02.09. 19:12 UTC · Quelle: dream*
