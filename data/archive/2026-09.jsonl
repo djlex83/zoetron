@@ -2429,3 +2429,20 @@
 {"ts": 1787732768.0398939, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
 {"ts": 1787732770.1873221, "kind": "issue_synced", "payload": {"issue": 135, "state": "open"}}
 {"ts": 1787732816.2002056, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787733226.1964743, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787733245.1079495, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 15.3, "tokens_ein": 1349, "tokens_aus": 447}}
+{"ts": 1787733245.1085355, "kind": "skill_proposal", "payload": {"proposal": "Skill 'reflex_first_routing': at goal creation, keyword-match against the reflex registry and auto-execute the matching reflex as the first action before any LLM deliberation."}}
+{"ts": 1787733245.1086078, "kind": "skill_proposal", "payload": {"proposal": "Skill 'proposal_backlog_gate': pause new skill_proposal emission whenever untested proposals exceed tested proposals by more than 5:1, forcing a trial run first."}}
+{"ts": 1787733245.1086872, "kind": "skill_proposal", "payload": {"proposal": "Skill 'rate_limit_backoff': on HTTP 429, apply exponential backoff per provider and record which providers are throttled to skip them for the next N minutes instead of failing serially."}}
+{"ts": 1787733245.1087677, "kind": "skill_proposal", "payload": {"proposal": "Skill 'zero_prune_alert': after 3 consecutive prune_runs with 0 removals, automatically log a diagnostic comparing prune criteria against the current fact/event schema."}}
+{"ts": 1787733245.108849, "kind": "skill_proposal", "payload": {"proposal": "Skill 'dream_integration_step': convert recurring 'connect old dreams with new plans' drive goals into a concrete action by selecting one specific old dream item and one recent result per cycle and writing their combination as a new artifact."}}
+{"ts": 1787733245.1089377, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787733255.804072, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.2, "tokens_ein": 462, "tokens_aus": 287}}
+{"ts": 1787733255.80426, "kind": "drive_goal", "payload": {"title": "Weniger Fehlversuche bei Vorhersagen erreichen", "why": "Das System macht beim Voraussagen öfter Fehler als gewünscht. Wenn es seine Fehler besser versteht, wird es zuverlässiger und spart Energie.", "signal": "failure"}}
+{"ts": 1787733255.804351, "kind": "drive_goal", "payload": {"title": "Mehr gute Ideen tatsächlich umsetzen", "why": "Es werden viele neue Fähigkeiten vorgeschlagen, aber nur wenige werden wirklich ausprobiert. Wer mehr Ideen testet, lernt schneller, was wirklich funktioniert.", "signal": "gap"}}
+{"ts": 1787733255.8044178, "kind": "drive_goal", "payload": {"title": "Alte gescheiterte Pläne neu verbinden", "why": "Ein alter Traum erinnert an einen früheren Plan, der abgelehnt wurde. Wenn das System alte Misserfolge mit neuen Erkenntnissen verknüpft, kann es dieselben Fehler nicht noch einmal machen.", "signal": "combination"}}
+{"ts": 1787733257.4654045, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.18}}
+{"ts": 1787733257.4658725, "kind": "reflex_used", "payload": {"goal": "Abgelehnte Werkzeuge prüfen und nutzen lernen", "tool": "alte-traumideen-mit-strategien-verbinden.py", "ok": true}}
+{"ts": 1787733257.9164705, "kind": "act_done", "payload": {"goal_title": "Abgelehnte Werkzeuge prüfen und nutzen lernen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787733303.1411119, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787733495.6180706, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,12 +25,12 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning (92 events) without fact loss shows the memory decay policy preserves semantic knowledge while discarding operational noise.
+- Calibration consistently underestimates actual scores (predicted 7 vs actual 9), indicating a systematic pessimism bias in the predictor.
+- Swarm convergence in one cycle with 1 planner, 3 builders, 1 critic suggests the current role ratio is sufficient for well-scoped goals.
+- NVIDIA Nemotron and InclusionAI Ling served as effective fallbacks when Google, Poolside, and Z.ai models throttled.
+- Free-tier model endpoints consistently hit 429 rate limits under sustained load, making single-provider reliance unreliable.
 - Metabolism stress=1.0 forced conserve mode (max 1 iteration); add proactive load-shedding before stress peaks.
 - Initial hand_action timeout (20s, 0 bytes) vs later success (1.4s) shows transient I/O flakiness; implement retry with exponential backoff.
 - Simulation-based pre-flight (verdict: revise, 4 risks) prevented deployment failures; institutionalize sim-before-execute.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but remain unimplemented; a drive goal explicitly notes the proposal-to-execution gap.
 - Hand actions time out with zero input read (gelesen: 0), indicating missing pre-flight validation of preconditions before execution.
 - Multiple free-tier models simultaneously hit rate limits (429) and upstream errors (502), revealing that model dispatch lacks health-aware routing and
-- Pruning removes only events (31-32 per run) while facts persist, suggesting fact durability but event volatility in memory consolidation.
-- Skill proposals for health checks, fallback routing, and validation gates exist but remain unimplemented, creating a proposal-execution gap.
-- The system repeatedly retries failed providers without backoff or circuit-breaking, wasting cycles and amplifying upstream errors.
-- Latency variance across models (4.2s vs 45.8s) breaks planning assumptions and causes timeout cascades in downstream tasks.
-- Free-tier models consistently fail with 429 rate limits and 502 overloads under sustained autonomous load, making them unreliable as primary providers
 
 ---
 
