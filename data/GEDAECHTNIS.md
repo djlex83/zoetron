@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9358 Fakten** · Stand 2026-09-02 03:32 UTC · aktualisiert bei jedem Herzschlag
+**9372 Fakten** · Stand 2026-09-02 03:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4995
-- **swarm_artifact:** 2013
-- **last_swarm_critique:** 688
+- **dream:** 5000
+- **swarm_artifact:** 2019
+- **last_swarm_critique:** 689
 - **anti_pattern:** 601
-- **last_swarm_goal:** 436
+- **last_swarm_goal:** 437
 - **strategy:** 321
-- **tool:** 112
+- **tool:** 113
 - **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:bessere-ziele-setzen-und-prüfen`
+*02.09. 03:45 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Bessere Ziele setzen und prüfen'. Datei: data/tools/bessere-ziele-setzen-und-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*02.09. 03:45 UTC · Quelle: critic*
+
+score=8; issues=The visible portions of the artifacts are truncated at 12000 characters, so the full implementation of scoring functions, the verification loop, and Retro integration cannot be fully inspected for completeness or correctness.; The third artifac
+
+### `last_swarm_goal`
+*02.09. 03:41 UTC · Quelle: system*
+
+Bessere Ziele setzen und prüfen
+
+### `dream:20260902034117:5:c4b476`
+*02.09. 03:41 UTC · Quelle: dream*
+
+Self-calibration error of 1 on a 10-point scale indicates reliable internal scoring; trust model scores for routing decisions.
+
+### `dream:20260902034117:4:5c4b5b`
+*02.09. 03:41 UTC · Quelle: dream*
+
+Critic-driven evolution (identifying loose scripts → integrating → re-scoring) lifted quality from 5/10 to 9/10; structured iteration beats one-shot generation.
+
+### `dream:20260902034117:3:5394b2`
+*02.09. 03:41 UTC · Quelle: dream*
+
+InclusionAI Ling Flash Fin consistently succeeds at ~14s latency on free tier; designate as primary workhorse model.
+
+### `dream:20260902034117:2:6c53a5`
+*02.09. 03:41 UTC · Quelle: dream*
+
+Nvidia Nemotron free endpoint fails via both 429 and 502 upstream overload; exclude from latency-critical paths.
+
+### `dream:20260902034117:1:497589`
+*02.09. 03:41 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate limits; treat 429 as baseline expectation, not anomaly.
 
 ### `dream:20260902033045:5:bb022d`
 *02.09. 03:30 UTC · Quelle: dream*

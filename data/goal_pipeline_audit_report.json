@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-09-02T03:45:36.794850",
+  "data_root": "/workspace/zoetron/data",
+  "fell_back_to_cwd": false,
+  "modules": {
+    "Drive": {
+      "name": "Drive",
+      "status": "not_found",
+      "searched_paths": []
+    },
+    "Wille": {
+      "name": "Wille",
+      "status": "not_found",
+      "searched_paths": []
+    },
+    "BenchmarkOrgan": {
+      "name": "BenchmarkOrgan",
+      "status": "not_found",
+      "searched_paths": []
+    },
+    "Konvergenztor": {
+      "name": "Konvergenztor",
+      "status": "not_found",
+      "searched_paths": []
+    },
+    "Retro": {
+      "name": "Retro",
+      "status": "not_found",
+      "searched_paths": []
+    }
+  },
+  "goal_data_files": {},
+  "schema_files": {
+    "hands_workspace/schema_errors.json": {
+      "generated_at": "2026-09-01T06:21:45.041105+00:00",
+      "total_errors": 26,
+      "errors": [
+        "Missing required field 'id' in ?",
+        "Missing required field 'name' in ?",
+        "Missing required field 'category' in ?",
+        "Missing required field 'source' in ?",
+        "Missing optional field 'description' in ?, using default",
+        "Missing optional field 'status' in ?, using default",
+        "Missing optional field 'tags' in ?, using default",
+        "Missing optional field 'parameters' in ?, using default",
+        "Missing optional field 'dependencies' in ?, using default",
+        "Missing optional field 'benchmark_score' in ?, using default",
+        "Missing optional field 'verified' in ?, using default",
+        "Missing optional field 'last_tested' in ?, using default",
+        "Missing optional field 'owner' in ?, using default",
+        "Missing required field 'name' in lru_cache_ttl_threadsafe",
+        "Missing required field 'category' in lru_cache_ttl_threadsafe",
+        "Missing required field 'version' in lru_cache_ttl_threadsafe",
+        "Missing required field 'source' in lru_cache_ttl_threadsafe",
+        "Missing optional field 'description' in lru_cache_ttl_threadsafe, using default",
+        "Missing optional field 'status' in lru_cache_ttl_threadsafe, using default",
+        "Missing optional field 'tags' in lru_cache_ttl_threadsafe, using default",
+        "Missing optional field 'parameters' in lru_cache_ttl_threadsafe, using default",
+        "Missing optional field 'dependencies' in lru_cache_ttl_threadsafe, using default",
+        "Missing optional field 'benchmark_score' in lru_cache_ttl_threadsafe, using default",
+        "Missing optional field 'verified' in lru_cache_ttl_threadsafe, using default",
+        "Missing optional field 'last_tested' in lru_cache_ttl_threadsafe, using default",
+        "Missing optional field 'owner' in lru_cache_ttl_threadsafe, using default"
+      ]
+    },
+    "hands_workspace/schueler_paket/config.json": {
+      "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "datensatz": "daten/destillat.jsonl",
+      "ausgabe": "output/schueler",
+      "lora": {
+        "rank": 16,
+        "alpha": 32,
+        "dropout": 0.05,
+        "ziel_module": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj"
+        ]
+      },
+      "training": {
+        "epochen": 3,
+        "batch_groesse": 2,
+        "gradient_accumulation": 8,
+        "lernrate": 0.0002,
+        "max_seq_len": 1024
+      },
+      "quantisierung": {
+        "qlora_fallback": true,
+        "load_in_4bit": false,
+        "compute_dtype": "bfloat16"
+      }
+    }
+  },
+  "identified_gaps": [
+    "Drive: Module not found or failed to load",
+    "Wille: Module not found or failed to load",
+    "BenchmarkOrgan: Module not found - no benchmarking/quality measurement for goals",
+    "Konvergenztor: Module not found - no convergence/approval gate for goals",
+    "Retro: Module not found - no retrospective/learning loop for goal outcomes",
+    "No existing goal data files found - cannot assess historical goal quality"
+  ],
+  "summary": {
+    "modules_found": 0,
+    "modules_missing": 5,
+    "total_gaps": 6,
+    "critical_gaps": [
+      "Drive: Module not found or failed to load",
+      "Wille: Module not found or failed to load",
+      "BenchmarkOrgan: Module not found - no benchmarking/quality measurement for goals",
+      "Konvergenztor: Module not found - no convergence/approval gate for goals",
+      "Retro: Module not found - no retrospective/learning loop for goal outcomes"
+    ]
+  }
+}
