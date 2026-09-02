@@ -1,12 +1,12 @@
 {
- "stand": 1788388085.1349716,
+ "stand": 1788389082.4839463,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 2824,
-   "fehler": 587,
-   "fehler_in_folge": 0,
+   "laeufe": 2825,
+   "fehler": 588,
+   "fehler_in_folge": 1,
    "gesperrt_bis": 0.0,
    "latenz_summe_s": 101214.03546071053,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
@@ -31,7 +31,7 @@
    "latenz_summe_s": 231.03127098083496,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 761
+   "kontofehler": 762
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 10,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 417.6829409599304,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 742
+   "kontofehler": 743
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -54,14 +54,14 @@
    "kontofehler": 200
   },
   "z-ai/glm-5.2:free": {
-   "laeufe": 123,
+   "laeufe": 124,
    "fehler": 6,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 453.20113945007324,
+   "latenz_summe_s": 454.65608644485474,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 2904
+   "kontofehler": 2905
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -99,7 +99,7 @@
    "latenz_summe_s": 4775.637195587158,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 0.0,
-   "kontofehler": 263
+   "kontofehler": 264
   },
   "nvidia/nemotron-3-nano-30b-a3b:free": {
    "laeufe": 3,
@@ -148,11 +148,11 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 344,
+   "laeufe": 345,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 4595.00004196167,
+   "latenz_summe_s": 4605.913697957993,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   },

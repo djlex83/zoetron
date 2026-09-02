@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10026 Fakten** · Stand 2026-09-02 22:29 UTC · aktualisiert bei jedem Herzschlag
+**10031 Fakten** · Stand 2026-09-02 22:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5445
+- **dream:** 5450
 - **swarm_artifact:** 2137
 - **last_swarm_critique:** 710
 - **anti_pattern:** 621
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902224439:5:db2033`
+*02.09. 22:44 UTC · Quelle: dream*
+
+Pruning removes events (36, 16) but never facts, suggesting the fact store may accumulate stale entries that the current pruning logic misses.
+
+### `dream:20260902224439:4:3d742c`
+*02.09. 22:44 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ errors, yet model failures persist, meaning the diagnostic scope does not cover external API failures.
+
+### `dream:20260902224439:3:f8cd74`
+*02.09. 22:44 UTC · Quelle: dream*
+
+Skill proposals (circuit breaker, path wrapper, skill verification) repeat across cycles but are never verified as loadable or executable, indicating a proposal-to-implementation gap.
+
+### `dream:20260902224439:2:7663b4`
+*02.09. 22:44 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model consistently succeeds as a fallback but with highly variable latency (9–24s), so routing decisions must account for latency variance.
+
+### `dream:20260902224439:1:93d6f5`
+*02.09. 22:44 UTC · Quelle: dream*
+
+API rate-limit errors (429) from z-ai/glm-5.2:free recur every few seconds with no automatic fallback, making the primary model unreliable without a circuit breaker.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse endlich in :2`
 *02.09. 22:27 UTC · Quelle: evolution*
