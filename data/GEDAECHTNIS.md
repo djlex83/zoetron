@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9649 Fakten** · Stand 2026-09-02 12:09 UTC · aktualisiert bei jedem Herzschlag
+**9654 Fakten** · Stand 2026-09-02 12:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5190
+- **dream:** 5195
 - **swarm_artifact:** 2065
 - **last_swarm_critique:** 698
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902121536:5:d7d380`
+*02.09. 12:15 UTC · Quelle: dream*
+
+Memory retains routine successes while discarding actionable failure signatures (error codes, latency outliers, convergence metrics).
+
+### `dream:20260902121536:4:c59d08`
+*02.09. 12:15 UTC · Quelle: dream*
+
+Optimization cycles continue despite >80% infrastructure error rates (429/timeouts), wasting compute and masking root causes.
+
+### `dream:20260902121536:3:50fc5e`
+*02.09. 12:15 UTC · Quelle: dream*
+
+Identical skill proposals recur across dream cycles without deployment – proposal generation is decoupled from validation, testing, and atomic registration.
+
+### `dream:20260902121536:2:3e72ec`
+*02.09. 12:15 UTC · Quelle: dream*
+
+Organ-level diagnostics report 'clean' while system suffers sustained 429 failures – a cross-level observability gap that masks infrastructure degradation.
+
+### `dream:20260902121536:1:1190e3`
+*02.09. 12:15 UTC · Quelle: dream*
+
+Provider-specific rate limiting (z-ai/glm-5.2:free 429s vs nvidia/nemotron success) reveals absent per-provider health routing and circuit-breaking.
 
 ### `dream:20260902120621:5:a38ad4`
 *02.09. 12:06 UTC · Quelle: dream*

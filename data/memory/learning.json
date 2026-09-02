@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 12:07:39",
+ "stand": "2026-09-02 12:16:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,6 +81,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -115,12 +121,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-stark-reduzieren.py",

@@ -1,14 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Add a background job that scans goals older than 7 days with no progress and either archives them or spawns a  *(hatte die Idee 7×)*
 - Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60s cooldown) with 2-retry, 10s t *(hatte die Idee 6×)*
-- Implement ModelRouter with per-provider health scoring (success rate, 429 frequency, latency p95) and automati *(hatte die Idee 5×)*
-- Build RateLimitAwareScheduler that spaces requests per provider using token-bucket estimators derived from obs *(hatte die Idee 5×)*
+- Implement ModelRouter with per-provider health scoring (success rate, 429 frequency, latency p95) and automati *(hatte die Idee 6×)*
+- Build RateLimitAwareScheduler that spaces requests per provider using token-bucket estimators derived from obs *(hatte die Idee 6×)*
 - Implement a model router with real-time health scoring (error rate, latency, 429 frequency) and automatic fall *(hatte die Idee 4×)*
 - Build a skill validation pipeline: propose → unit-test → integration-test → canary-deploy → promote, with auto *(hatte die Idee 4×)*
 - Implement a model health registry that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoint *(hatte die Idee 4×)*
@@ -25,9 +25,9 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory retains routine successes while discarding actionable failure signatures (error codes, latency outliers, convergence metrics).
+- Optimization cycles continue despite >80% infrastructure error rates (429/timeouts), wasting compute and masking root causes.
+- Identical skill proposals recur across dream cycles without deployment – proposal generation is decoupled from validation, testing, and atomic registr
+- Organ-level diagnostics report 'clean' while system suffers sustained 429 failures – a cross-level observability gap that masks infrastructure degrada
+- Provider-specific rate limiting (z-ai/glm-5.2:free 429s vs nvidia/nemotron success) reveals absent per-provider health routing and circuit-breaking.
 - Reflex-driven skill testing (vorgeschlagene-fähigkeiten-wirklich-fertigen) successfully converts proposals into applied capability, unlike passive pro
 - A stable fallback model (nemotron-3-ultra-550b-a55b:free) exists with acceptable latency but is not being systematically leveraged as the primary rout
 - Self-diagnosis at the organ level reports clean while system-level failures persist, meaning external infrastructure errors escape organ-level detecti
@@ -51,11 +56,6 @@
 - Proposed skills accumulate faster than they are validated, creating a backlog of untested capabilities.
 - Latency variance across successful calls (4s–76s) indicates unpredictable queueing, not model speed, as the primary bottleneck.
 - Free-tier models on OpenRouter exhibit correlated 429/502 failures under load, making single-provider reliance unreliable.
-- Fallback model nvidia/nemotron-3-ultra exhibits 30-60s latency, making naive failover costly; routing must weigh latency against availability.
-- Skill proposals accumulate (10+ in this log) but none are validated or deployed, creating a proposal-to-production gap that wastes design effort.
-- Multiple ModelRouter proposals converge on per-provider health scoring, circuit breakers, and token-bucket pacing, showing consensus on required resil
-- Organ-level self-diagnosis reports zero errors while system-level 429 storms persist, revealing a diagnostic blind spot between component health and e
-- Recurring 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness in model selection, causing repeated hammering of exhausted endpoints.
 
 ---
 
