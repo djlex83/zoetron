@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9513 Fakten** · Stand 2026-09-02 08:10 UTC · aktualisiert bei jedem Herzschlag
+**9518 Fakten** · Stand 2026-09-02 08:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5095
+- **dream:** 5100
 - **swarm_artifact:** 2045
 - **last_swarm_critique:** 694
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902081624:5:cd5f2d`
+*02.09. 08:16 UTC · Quelle: dream*
+
+Pruning removes only events (31-32 per run) while facts persist, suggesting fact durability but event volatility in memory consolidation.
+
+### `dream:20260902081624:4:6055ad`
+*02.09. 08:16 UTC · Quelle: dream*
+
+Skill proposals for health checks, fallback routing, and validation gates exist but remain unimplemented, creating a proposal-execution gap.
+
+### `dream:20260902081624:3:e2b9c1`
+*02.09. 08:16 UTC · Quelle: dream*
+
+The system repeatedly retries failed providers without backoff or circuit-breaking, wasting cycles and amplifying upstream errors.
+
+### `dream:20260902081624:2:17bfd5`
+*02.09. 08:16 UTC · Quelle: dream*
+
+Latency variance across models (4.2s vs 45.8s) breaks planning assumptions and causes timeout cascades in downstream tasks.
+
+### `dream:20260902081624:1:c0bed4`
+*02.09. 08:16 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits and 502 overloads under sustained autonomous load, making them unreliable as primary providers.
 
 ### `dream:20260902080834:5:c83096`
 *02.09. 08:08 UTC · Quelle: dream*

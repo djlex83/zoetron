@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes only events (31-32 per run) while facts persist, suggesting fact durability but event volatility in memory consolidation.
+- Skill proposals for health checks, fallback routing, and validation gates exist but remain unimplemented, creating a proposal-execution gap.
+- The system repeatedly retries failed providers without backoff or circuit-breaking, wasting cycles and amplifying upstream errors.
+- Latency variance across models (4.2s vs 45.8s) breaks planning assumptions and causes timeout cascades in downstream tasks.
+- Free-tier models consistently fail with 429 rate limits and 502 overloads under sustained autonomous load, making them unreliable as primary providers
 - Pruning runs remove 25-31 stale events per cycle, showing the fact/event store requires active cleanup to prevent accumulation.
 - The nvidia/nemotron-3-ultra-550b-a55b:free model is a reliable fallback but its 26-46s latency must be factored into scheduling decisions.
 - Self-diagnosis reports zero organ errors even when systemic failures like rate limiting occur, indicating blind spots in the diagnostic framework.
@@ -51,11 +56,6 @@
 - Three drive goals (model errors, stale analyses, 50 pending skills) share root cause: no automated pipeline converts proposals into executed capabilit
 - Fallback to nvidia/nemotron works but introduces 38-98s latency spikes, making reactive failover too slow for interactive loops.
 - Recurring 429 errors from z-ai/glm-5.2:free indicate missing proactive model health monitoring before dispatch.
-- Self-diagnosis reports zero organ errors despite poor task outcomes, revealing a blind spot where structural failures escape internal detection.
-- Upstream service overload (Nvidia 502) compounds rate-limiting failures, meaning multi-model redundancy alone is insufficient without load-aware sched
-- High event churn (160 pruned, 0 facts retained) signals that the system generates excessive noisy signal rather than durable knowledge.
-- The evolution loop is stuck at score 1/10 across multiple cycles, indicating that incremental revisions fail to address root causes like missing execu
-- Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring a fallback dispatch strategy rather than single-model
 
 ---
 

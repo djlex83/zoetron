@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 08:09:02",
+ "stand": "2026-09-02 08:16:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -84,12 +84,6 @@
    "tool": "marktanalyse-in-handlung-umsetzen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -208,6 +202,12 @@
   },
   {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -340,6 +340,12 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
