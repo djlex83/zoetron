@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10009 Fakten** · Stand 2026-09-02 22:14 UTC · aktualisiert bei jedem Herzschlag
+**10026 Fakten** · Stand 2026-09-02 22:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5440
-- **swarm_artifact:** 2131
-- **last_swarm_critique:** 709
-- **anti_pattern:** 619
-- **last_swarm_goal:** 457
-- **strategy:** 330
+- **dream:** 5445
+- **swarm_artifact:** 2137
+- **last_swarm_critique:** 710
+- **anti_pattern:** 621
+- **last_swarm_goal:** 458
+- **strategy:** 331
 - **tool:** 123
-- **hand_result:** 108
+- **hand_result:** 109
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse endlich in :2`
+*02.09. 22:27 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Sourced Market Intelligence Platform - Reframe as continuous event stream processing: (1) Ingest all market data sources as immutable events into a log (Kafka/Redpanda/local event store) with schema registry. (2) Build 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse endlich in :0`
+*02.09. 22:27 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Semantic Pipeline with Unified Data Layer - Replace keyword matching with a semantic understanding layer: (1) Build a single shared DataRoot module with typed loaders for all market data sources (JSON, CSV, API), eliminating 
+
+### `last_swarm_critique`
+*02.09. 22:26 UTC · Quelle: critic*
+
+score=7; issues=Keyword-basierte Datenextraktion (Artifact 1) ist brüchig: 'marktanalyse' im JSON-Dump matcht zufällige Felder, keine semantische Erkennung; Drei Artefakte duplizieren find_data_root() und Lade-Logik – Verletzung von DRY, Inkonsistenz-Risiko be
+
+### `last_swarm_goal`
+*02.09. 22:20 UTC · Quelle: system*
+
+Marktanalyse endlich in Handlungen umsetzen
+
+### `dream:20260902222017:5:a2b2d8`
+*02.09. 22:20 UTC · Quelle: dream*
+
+Under conserve mode (max_iterations=1), model selection must optimize for first-attempt success probability over output quality.
+
+### `dream:20260902222017:4:0bb2a6`
+*02.09. 22:20 UTC · Quelle: dream*
+
+Hand actions fail with exit code 1 and zero bytes read, indicating execution environment instability needing pre-flight validation.
+
+### `dream:20260902222017:3:d501cc`
+*02.09. 22:20 UTC · Quelle: dream*
+
+Calibration error of 7 (predicted 8 vs actual 1) reveals severe overconfidence in success estimation requiring empirical recalibration.
+
+### `dream:20260902222017:2:744fc3`
+*02.09. 22:20 UTC · Quelle: dream*
+
+InclusionAI Ling 3.0 Flash Fin consistently delivers low-latency (7.4s) successful responses and should be the primary model.
+
+### `dream:20260902222017:1:0e61ef`
+*02.09. 22:20 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable for production use.
 
 ### `dream:20260902221206:5:f7ea67`
 *02.09. 22:12 UTC · Quelle: dream*

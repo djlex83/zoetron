@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 22:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 22:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,10 +30,10 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Under conserve mode (max_iterations=1), model selection must optimize for first-attempt success probability over output quality.
+- Hand actions fail with exit code 1 and zero bytes read, indicating execution environment instability needing pre-flight validation.
+- Calibration error of 7 (predicted 8 vs actual 1) reveals severe overconfidence in success estimation requiring empirical recalibration.
+- InclusionAI Ling 3.0 Flash Fin consistently delivers low-latency (7.4s) successful responses and should be the primary model.
+- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting making them unreliable for production use.
 - High metabolic stress (1.0) forces conservative budgets that starve the very skill-building needed to reduce load.
 - Proposed skills accumulate but remain unimplemented because the reflex that converts ideas to code itself fails silently.
 - Hand actions fail because relative paths are not resolved against ZOETRON_DATA, causing silent zero-byte reads.
@@ -51,11 +56,6 @@
 - Swarm convergence requires explicit role quotas (1 planner, N builders, 1 critic) as a hard precondition, not a soft guideline.
 - Proposed skills accumulate but remain unbuilt because no mechanism prioritizes construction over generation when the 'gap' signal fires.
 - Rate limiting (429) and upstream overload (502) cascade across all free-tier providers, making single-model reliance untenable.
-- Fifty-eight proposed skills remain unverified as learned, creating a capability illusion where the system believes it has abilities it cannot actually
-- Reflex-driven script execution succeeds when paths are absolute, but relative paths fail silently without a ZOETRON_DATA prefix wrapper.
-- Multiple independent skill proposals converge on the same reliability primitives (circuit breaker, retry-with-backoff, fallback chain), revealing a sy
-- Nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (9–30 s), indicating it cannot serve as a sole low-latency fallback.
-- Model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors under load, making it unreliable for production routing.
 
 ---
 
