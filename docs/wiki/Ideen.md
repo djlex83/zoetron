@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 07:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 07:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceedi *(hatte die Idee 3×)*
 - Implement a model health registry that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoint *(hatte die Idee 3×)*
 - Maintain a ranked fallback roster of models across at least 3 providers (e.g., Poolside, NVIDIA, Google) so a  *(hatte die Idee 3×)*
-- Build integrate_skill_proposal pipeline: auto-scaffold, test, and promote proposals from dream log to skills/  *(hatte die Idee 2×)*
-- Add validate_contracts skill: enforce JSON-schema contracts at every planner→builder→critic handoff; fail fast *(hatte die Idee 2×)*
-- Create skill_trial_scheduler: nightly job picks top-3 untried proposals, runs in sandbox, promotes on +2 score *(hatte die Idee 2×)*
+- Implement a model router with per-model token-bucket rate limiters calibrated to observed 429 thresholds, auto *(hatte die Idee 2×)*
+- Add response-body validation for all model calls to detect upstream errors (e.g., 502 in 200 OK) and treat the *(hatte die Idee 2×)*
+- Create a proposal deduplication service that hashes proposal content and rejects near-duplicates within a 24-h *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -28,8 +28,8 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite poor task outcomes, revealing a blind spot where structural failures escape internal detection.
+- Upstream service overload (Nvidia 502) compounds rate-limiting failures, meaning multi-model redundancy alone is insufficient without load-aware sched
+- High event churn (160 pruned, 0 facts retained) signals that the system generates excessive noisy signal rather than durable knowledge.
+- The evolution loop is stuck at score 1/10 across multiple cycles, indicating that incremental revisions fail to address root causes like missing execu
+- Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring a fallback dispatch strategy rather than single-model
 - Graph traversal yielded negative delta (-0.5) with zero code execution (hat_code: false), confirming stalled progress when models emit only text.
 - Calibration predicted 5 but actual was 1 (400% error), revealing the prediction model is fundamentally miscalibrated for this task domain.
 - Validation gate rejected output for lacking executable Python blocks, proving prose-only responses cannot drive convergent automation.
@@ -51,11 +56,6 @@
 - File operations fail because relative paths ignore the ZOETRON_DATA environment variable, breaking data access in containerized runs.
 - The system lacks a model router with health tracking, circuit breakers, and exponential backoff, causing repeated hammering of failing endpoints.
 - Free-tier models consistently fail with 429 rate limits and 502 upstream overloads, making them unreliable for production workloads.
-- Stale goals (market analysis, model error reduction) persist over multiple cycles without completion, requiring automated archiving or forced reflex s
-- Skill proposals accumulate without automated validation or promotion, leaving high-value improvements (circuit breaker, fallback roster) unimplemented
-- Reflex tools for critical improvements (e.g., model reliability) fail silently, suggesting missing pre-execution validation or dependency checks.
-- Hand actions fail when using relative paths because they are not resolved against ZOETRON_DATA, causing file read/write errors that block goal progres
-- Primary model (z-ai/glm-5.2:free) consistently hits 429 rate limits, forcing fallback to high-latency (70s) NVIDIA model, indicating need for multi-pr
 
 ---
 

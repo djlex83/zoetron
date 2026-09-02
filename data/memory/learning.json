@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 07:31:15",
+ "stand": "2026-09-02 07:43:20",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -337,19 +337,25 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "wiederkehrenden-organfehler-endgültig-kl.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.725,
+ "haende_quote": 0.739,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 32,
   "best": 9.0,
-  "schnitt": 5.75
+  "schnitt": 6.0
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 5.96
+   "n": 29,
+   "schnitt": 6.07
   },
   "bau": {
    "n": 3,

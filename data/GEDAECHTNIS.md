@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9489 Fakten** · Stand 2026-09-02 07:32 UTC · aktualisiert bei jedem Herzschlag
+**9503 Fakten** · Stand 2026-09-02 07:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5080
-- **swarm_artifact:** 2039
-- **last_swarm_critique:** 693
+- **dream:** 5085
+- **swarm_artifact:** 2045
+- **last_swarm_critique:** 694
 - **anti_pattern:** 605
-- **last_swarm_goal:** 441
+- **last_swarm_goal:** 442
 - **strategy:** 323
-- **tool:** 115
+- **tool:** 116
 - **hand_result:** 101
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:kritik-und-ziel-prozess-wieder-beleben`
+*02.09. 07:43 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Kritik- und Ziel-Prozess wieder beleben'. Datei: data/tools/kritik-und-ziel-prozess-wieder-beleben.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*02.09. 07:43 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*02.09. 07:39 UTC · Quelle: system*
+
+Kritik- und Ziel-Prozess wieder beleben
+
+### `dream:20260902073808:5:237a13`
+*02.09. 07:38 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite poor task outcomes, revealing a blind spot where structural failures escape internal detection.
+
+### `dream:20260902073808:4:133334`
+*02.09. 07:38 UTC · Quelle: dream*
+
+Upstream service overload (Nvidia 502) compounds rate-limiting failures, meaning multi-model redundancy alone is insufficient without load-aware scheduling.
+
+### `dream:20260902073808:3:4adf23`
+*02.09. 07:38 UTC · Quelle: dream*
+
+High event churn (160 pruned, 0 facts retained) signals that the system generates excessive noisy signal rather than durable knowledge.
+
+### `dream:20260902073808:2:b495e8`
+*02.09. 07:38 UTC · Quelle: dream*
+
+The evolution loop is stuck at score 1/10 across multiple cycles, indicating that incremental revisions fail to address root causes like missing executable Python artifacts.
+
+### `dream:20260902073808:1:b720d0`
+*02.09. 07:38 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring a fallback dispatch strategy rather than single-model retries.
 
 ### `dream:20260902073049:5:9db56b`
 *02.09. 07:30 UTC · Quelle: dream*

@@ -1,0 +1,158 @@
+{
+  "scan_time": "2026-09-02T07:38:45.406094",
+  "total_files": 577,
+  "total_size_bytes": 17867745,
+  "total_size_mb": 17.04,
+  "by_action": {
+    "keep": 372,
+    "delete": 2,
+    "review": 118,
+    "archive": 85
+  },
+  "by_category": {
+    "memory": 68,
+    "temp": 1,
+    "unknown": 118,
+    "result": 37,
+    "backup": 1,
+    "artifact": 352
+  },
+  "archive_size_mb": 0.64,
+  "delete_size_mb": 0.0,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "rel_path": "tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "size_bytes": 2681,
+      "modified": 1787812317.2147682,
+      "modified_iso": "2026-08-27T06:31:57.214768",
+      "age_days": 6.0,
+      "category": "backup",
+      "action": "delete",
+      "reason": "Old backup - superseded"
+    },
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 6.8,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/s01_1787703814_draft-deliverable-for-lokaler-sch-ler-das-erste-mal-lernt-da.md",
+      "rel_path": "artefakte/s01_1787703814_draft-deliverable-for-lokaler-sch-ler-das-erste-mal-lernt-da.md",
+      "size_bytes": 20574,
+      "modified": 1787703814.9466794,
+      "modified_iso": "2026-08-26T00:23:34.946679",
+      "age_days": 7.3,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s02_1787705604_draft-deliverable-for-destillat-datensatz-ged-chtnis-wird-tr.md",
+      "rel_path": "artefakte/s02_1787705604_draft-deliverable-for-destillat-datensatz-ged-chtnis-wird-tr.md",
+      "size_bytes": 19101,
+      "modified": 1787705604.3520403,
+      "modified_iso": "2026-08-26T00:53:24.352040",
+      "age_days": 7.3,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787693897_mini-benchmark-runner-8-tasks.md",
+      "rel_path": "artefakte/s03_1787693897_mini-benchmark-runner-8-tasks.md",
+      "size_bytes": 18459,
+      "modified": 1787693897.4094365,
+      "modified_iso": "2026-08-25T21:38:17.409436",
+      "age_days": 7.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787691981_draft-deliverable-for-cortex-upgrade-reflex-neue-modelle-aut.md",
+      "rel_path": "artefakte/s03_1787691981_draft-deliverable-for-cortex-upgrade-reflex-neue-modelle-aut.md",
+      "size_bytes": 18313,
+      "modified": 1787691981.28544,
+      "modified_iso": "2026-08-25T21:06:21.285440",
+      "age_days": 7.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s01_1787710664_draft-deliverable-for-zoem-protokoll-vererbbares-gepr-ftes-w.md",
+      "rel_path": "artefakte/s01_1787710664_draft-deliverable-for-zoem-protokoll-vererbbares-gepr-ftes-w.md",
+      "size_bytes": 17693,
+      "modified": 1787710664.5579283,
+      "modified_iso": "2026-08-26T02:17:44.557928",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s08_1787707146_draft-deliverable-for-lokaler-sch-ler-das-erste-mal-lernt-da.md",
+      "rel_path": "artefakte/s08_1787707146_draft-deliverable-for-lokaler-sch-ler-das-erste-mal-lernt-da.md",
+      "size_bytes": 17554,
+      "modified": 1787707146.4664035,
+      "modified_iso": "2026-08-26T01:19:06.466403",
+      "age_days": 7.3,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s02_1787719794_couple-calibration-prediction-with-stop-criterion.md",
+      "rel_path": "artefakte/s02_1787719794_couple-calibration-prediction-with-stop-criterion.md",
+      "size_bytes": 17202,
+      "modified": 1787719794.8226304,
+      "modified_iso": "2026-08-26T04:49:54.822630",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787703709_draft-deliverable-for-lokaler-sch-ler-das-erste-mal-lernt-da.md",
+      "rel_path": "artefakte/s05_1787703709_draft-deliverable-for-lokaler-sch-ler-das-erste-mal-lernt-da.md",
+      "size_bytes": 16362,
+      "modified": 1787703709.0472467,
+      "modified_iso": "2026-08-26T00:21:49.047247",
+      "age_days": 7.3,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s01_1787712122_build-organism-a-and-b-simulation-with-anti-pattern-inherita.md",
+      "rel_path": "artefakte/s01_1787712122_build-organism-a-and-b-simulation-with-anti-pattern-inherita.md",
+      "size_bytes": 15210,
+      "modified": 1787712122.782754,
+      "modified_iso": "2026-08-26T02:42:02.782754",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s06_1787707998_draft-deliverable-for-lebender-steckbrief-die-biografie-als.md",
+      "rel_path": "artefakte/s06_1787707998_draft-deliverable-for-lebender-steckbrief-die-biografie-als.md",
+      "size_bytes": 15127,
+      "modified": 1787707998.0239213,
+      "modified_iso": "2026-08-26T01:33:18.023921",
+      "age_days": 7.3,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    }
+  ]
+}

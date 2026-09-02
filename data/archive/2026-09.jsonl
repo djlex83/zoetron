@@ -2235,3 +2235,35 @@
 {"ts": 1787729223.0656257, "kind": "reflex_used", "payload": {"goal": "Ideen wirklich zu Ende bringen", "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py", "ok": true}}
 {"ts": 1787729223.4657931, "kind": "act_done", "payload": {"goal_title": "Ideen wirklich zu Ende bringen", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1787729266.3093927, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787729456.8809805, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787729473.8556428, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.4, "tokens_ein": 1465, "tokens_aus": 385}}
+{"ts": 1787729473.8561997, "kind": "skill_proposal", "payload": {"proposal": "Implement a calibration corrector that subtracts the rolling mean abs_error from predicted scores before using them for gating decisions."}}
+{"ts": 1787729473.8562584, "kind": "skill_proposal", "payload": {"proposal": "Add a critic-output repair stage: if critic output fails to parse, retry once with an explicit schema prompt before failing the cycle."}}
+{"ts": 1787729473.8563228, "kind": "skill_proposal", "payload": {"proposal": "Create a 'proposal executor' reflex that picks the oldest untested skill proposal each cycle and runs it against a real task, recording pass/fail."}}
+{"ts": 1787729473.8563786, "kind": "skill_proposal", "payload": {"proposal": "Build latency-tiered routing that assigns timeout budgets per model tier based on rolling average latency and tokens_ein buckets."}}
+{"ts": 1787729473.8564327, "kind": "skill_proposal", "payload": {"proposal": "Persist simulation 'revise' verdicts as structured risk patterns so future plans matching known risk signatures trigger auto-revision before execution."}}
+{"ts": 1787729473.8564875, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787729486.369714, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.1, "tokens_ein": 470, "tokens_aus": 276}}
+{"ts": 1787729486.369986, "kind": "drive_goal", "payload": {"title": "Werkzeuge besser benutzen und ablehnungen vermeiden", "why": "Das System hat dreimal ein Werkzeug falsch benutzt und es wurde abgelehnt. Wenn es lernt, Werkzeuge richtig einzusetzen, kann es Aufgaben zuverlässiger erledigen.", "signal": "failure"}}
+{"ts": 1787729486.3701086, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren", "why": "Es wurden 55 neue Fähigkeiten vorgeschlagen, aber kaum eine wurde wirklich getestet. Nur durch Ausprobieren wird klar, welche davon wirklich nützlich sind.", "signal": "gap"}}
+{"ts": 1787729486.370223, "kind": "drive_goal", "payload": {"title": "Alte Träume miteinander verbinden", "why": "Zwei alte Gedankengänge aus demselben Tag passen gut zusammen, wurden aber nie verbunden. Wer alte Ideen kombiniert, findet neue Lösungen für Probleme.", "signal": "combination"}}
+{"ts": 1787729488.0881202, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23}}
+{"ts": 1787729488.0886972, "kind": "reflex_used", "payload": {"goal": "Mehr gute Ideen tatsächlich ausprobieren", "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py", "ok": true}}
+{"ts": 1787729488.5324512, "kind": "act_done", "payload": {"goal_title": "Mehr gute Ideen tatsächlich ausprobieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787729532.1058378, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787729727.9050493, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787729751.1881027, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 20.8, "tokens_ein": 1252, "tokens_aus": 420}}
+{"ts": 1787729751.1889863, "kind": "skill_proposal", "payload": {"proposal": "Implement an execution queue that caps pending skill proposals at N and forces the oldest untested proposal into a real trial run before any new proposals are accepted."}}
+{"ts": 1787729751.1890829, "kind": "skill_proposal", "payload": {"proposal": "Add a goal-lifecycle tracker that marks a drive goal 'stalled' after K cycles without signal change and auto-generates a concrete diagnostic action for it."}}
+{"ts": 1787729751.18916, "kind": "skill_proposal", "payload": {"proposal": "Replace the no-op prune policy with one that prunes any fact/event not retrieved within N=10 cycles and logs what was removed to verify it fires."}}
+{"ts": 1787729751.1892397, "kind": "skill_proposal", "payload": {"proposal": "Attach a mandatory post-action score (even a coarse 1-5 self-rating) to reflex-mode completions so convergence claims become comparable over time."}}
+{"ts": 1787729751.189337, "kind": "skill_proposal", "payload": {"proposal": "Record structured rejection metadata (tool name, gate, reason code) on every denied tool call and surface weekly aggregates in the selbstdiagnose output."}}
+{"ts": 1787729751.189422, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787729760.9931755, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 8.5, "tokens_ein": 464, "tokens_aus": 265}}
+{"ts": 1787729760.993425, "kind": "drive_goal", "payload": {"title": "Werkzeug-Ablehnungen gründlich untersuchen", "why": "Zwei Mal wurde ein Werkzeug abgelehnt. Ich will herausfinden, warum das passiert ist, damit es künftig klappt.", "signal": "failure"}}
+{"ts": 1787729760.9935215, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "why": "Es wurden schon 60 Fähigkeiten vorgeschlagen, aber viele liegen ungenutzt herum. Ich will die besten davon testen und in die Praxis umsetzen.", "signal": "gap"}}
+{"ts": 1787729760.9936013, "kind": "drive_goal", "payload": {"title": "Alte Träume miteinander verbinden", "why": "Zwei ältere Erinnerungen passen vielleicht zusammen, wurden aber nie verbunden. Ich will sie vergleichen und daraus eine neue Idee entwickeln.", "signal": "stale"}}
+{"ts": 1787729762.8002326, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.32}}
+{"ts": 1787729762.8007798, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten in echte Handlungen umsetzen", "tool": "simulationen-häufiger-in-handlungen-umse.py", "ok": true}}
+{"ts": 1787729763.6103787, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten in echte Handlungen umsetzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787729807.1243637, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
