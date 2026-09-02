@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9928 Fakten** · Stand 2026-09-02 19:46 UTC · aktualisiert bei jedem Herzschlag
+**9942 Fakten** · Stand 2026-09-02 20:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5380
-- **swarm_artifact:** 2119
-- **last_swarm_critique:** 707
+- **dream:** 5385
+- **swarm_artifact:** 2125
+- **last_swarm_critique:** 708
 - **anti_pattern:** 617
-- **last_swarm_goal:** 455
+- **last_swarm_goal:** 456
 - **strategy:** 329
 - **tool:** 123
-- **hand_result:** 106
+- **hand_result:** 107
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*02.09. 20:19 UTC · Quelle: critic*
+
+score=8; issues=Contradiction detection relies on simple negation/number heuristics (may yield false positives/negatives); Semantic drift uses TF vectors as embedding proxy rather than true embeddings (limited semantic capture); No end-to-end integration test 
+
+### `last_swarm_goal`
+*02.09. 20:12 UTC · Quelle: system*
+
+Veraltetes Wissen auffrischen
+
+### `dream:20260902201220:5:0b0acc`
+*02.09. 20:12 UTC · Quelle: dream*
+
+Health facts for model endpoints decay without TTL enforcement, leaving routing decisions based on stale latency/error data.
+
+### `dream:20260902201220:4:5e69ea`
+*02.09. 20:12 UTC · Quelle: dream*
+
+Concurrent drive goals (error reduction, stale analysis, skill adoption) compete for limited model throughput, amplifying failure cascades.
+
+### `dream:20260902201220:3:b51333`
+*02.09. 20:12 UTC · Quelle: dream*
+
+Skill proposals accumulate without automatic implementation, creating a capability gap between generation and deployment.
+
+### `dream:20260902201220:2:9815a3`
+*02.09. 20:12 UTC · Quelle: dream*
+
+Reflex execution succeeds where model calls fail, but only for goals matching known reflex patterns.
+
+### `dream:20260902201220:1:cba914`
+*02.09. 20:12 UTC · Quelle: dream*
+
+Model endpoints frequently fail with 429/502 errors under load, making single-provider reliance a systemic reliability risk.
 
 ### `tool:vorgeschlagene-fähigkeiten-besser-prüfen`
 *02.09. 19:44 UTC · Quelle: hands*
