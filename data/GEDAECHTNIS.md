@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9816 Fakten** · Stand 2026-09-02 16:58 UTC · aktualisiert bei jedem Herzschlag
+**9821 Fakten** · Stand 2026-09-02 17:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5310
+- **dream:** 5315
 - **swarm_artifact:** 2095
 - **last_swarm_critique:** 703
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902170550:5:15f13f`
+*02.09. 17:05 UTC · Quelle: dream*
+
+Drive goals repeat similar themes (market data refresh, model failure analysis, memory utilization) across cycles, suggesting missing cross-goal synthesis.
+
+### `dream:20260902170550:4:e0f5eb`
+*02.09. 17:05 UTC · Quelle: dream*
+
+Selbstdiagnose only checks internal organs, missing the external dependency failures (model endpoints) that actually halt progress.
+
+### `dream:20260902170550:3:e53e30`
+*02.09. 17:05 UTC · Quelle: dream*
+
+Fact store grows (10k+ facts) but prune_run never removes facts (facts_pruned: 0), indicating stale knowledge accumulates without decay mechanism.
+
+### `dream:20260902170550:2:210177`
+*02.09. 17:05 UTC · Quelle: dream*
+
+Reflex tools execute in <1s with 100% success rate while model calls take 18-60s with >80% failure rate, making reflex-first routing a clear latency/reliability win.
+
+### `dream:20260902170550:1:071c19`
+*02.09. 17:05 UTC · Quelle: dream*
+
+Model endpoint failures cascade predictably: 429 rate limits hit first, then 502 upstream overloads, forcing sequential fallback through 4+ models before success.
 
 ### `dream:20260902165441:5:51c428`
 *02.09. 16:54 UTC · Quelle: dream*
