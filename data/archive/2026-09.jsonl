@@ -1204,3 +1204,98 @@
 {"ts": 1787707343.4112418, "kind": "swarm_started", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal"}}
 {"ts": 1787707349.9493608, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
 {"ts": 1787707350.7385097, "kind": "metabolism_check", "payload": {"stress": 0.882, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787707841.9905543, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 491.1, "tokens_ein": 1802, "tokens_aus": 1353}}
+{"ts": 1787707871.1070879, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 29.0, "tokens_ein": 597, "tokens_aus": 59}}
+{"ts": 1787707882.3473694, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.1, "tokens_ein": 243, "tokens_aus": 374}}
+{"ts": 1787707882.3475347, "kind": "simulation", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "verdict": "go", "risks": 1, "revisions": 1}}
+{"ts": 1787707998.0244856, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 115.6, "tokens_ein": 2495, "tokens_aus": 4984}}
+{"ts": 1787707998.3956993, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.28}}
+{"ts": 1787707998.3959947, "kind": "tor", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "gruen": true, "grund": "Artefakt laeuft (420 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787708045.258341, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 46.8, "tokens_ein": 4145, "tokens_aus": 1349}}
+{"ts": 1787708045.2589486, "kind": "calibration", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "predicted": 4, "actual": 6, "abs_error": 2}}
+{"ts": 1787708045.25903, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 6}}
+{"ts": 1787708045.2595592, "kind": "bahnen", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 6, "abgerufen": 5, "ids": ["f:bb58a4b5358b", "f:718fe7ae52f1", "f:d9210ac1c681", "f:4f3a83b2dfd9", "f:72020790a02e"], "ziel_id": "g:cd58edce7084"}}
+{"ts": 1787708205.6897483, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 160.4, "tokens_ein": 205, "tokens_aus": 90}}
+{"ts": 1787708217.9234567, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 4.7, "tokens_ein": 597, "tokens_aus": 75}}
+{"ts": 1787708231.439554, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.4, "tokens_ein": 243, "tokens_aus": 492}}
+{"ts": 1787708231.4397707, "kind": "simulation", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "verdict": "revise", "risks": 3, "revisions": 2}}
+{"ts": 1787708231.4398634, "kind": "simulation_applied", "payload": {"revisions": 2}}
+{"ts": 1787708231.4399915, "kind": "swarm_finished", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "score": 6, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787708231.440171, "kind": "act_done", "payload": {"goal_title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "score": 6, "converged": false}}
+{"ts": 1787708231.8028936, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.27}}
+{"ts": 1787708231.8126304, "kind": "werkzeug_abgelehnt", "payload": {"name": "lebender-steckbrief-die-biografie-als-al", "grund": "zerstoerende Operation (subprocess) - braucht menschliche Freigabe", "goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal"}}
+{"ts": 1787708233.273051, "kind": "issue_synced", "payload": {"issue": 118, "state": "open"}}
+{"ts": 1787708269.3115215, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787708337.6463826, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787708354.4948363, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.4, "tokens_ein": 1478, "tokens_aus": 410}}
+{"ts": 1787708354.4954267, "kind": "skill_proposal", "payload": {"proposal": "Implement a calibration corrector that adjusts predicted goal scores by learned bias per goal type before using predictions for prioritization."}}
+{"ts": 1787708354.495484, "kind": "skill_proposal", "payload": {"proposal": "Add an automatic retry-once wrapper around hand_action when exit!=0 and duration is sub-second, since transient failures dominate first attempts."}}
+{"ts": 1787708354.4955368, "kind": "skill_proposal", "payload": {"proposal": "Enforce a 'revisions_applied >= min(3, risks_found)' rule after any 'revise' verdict so simulation findings are not silently dropped."}}
+{"ts": 1787708354.4955895, "kind": "skill_proposal", "payload": {"proposal": "Extend destillat.py to export (goal, context, solution, score>=7) tuples nightly into a training-ready dataset for future weight-level learning."}}
+{"ts": 1787708354.4956403, "kind": "skill_proposal", "payload": {"proposal": "Persist the one-cycle conserve-mode recipe (simulate first, single iteration, verify gate) as the default execution template whenever stress > 0.7."}}
+{"ts": 1787708354.4956927, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787708365.1511893, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.0, "tokens_ein": 497, "tokens_aus": 244}}
+{"ts": 1787708365.1513739, "kind": "drive_goal", "payload": {"title": "Gründe für Modellfehler verstehen und beheben", "why": "Es gab mehrere Fehlversuche beim Prüfen der eigenen Vorhersagen. Wenn wir herausfinden, warum diese passieren, wird das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1787708365.151452, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren", "why": "Viele neue Fähigkeiten wurden vorgeschlagen, aber nur wenige wurden wirklich getestet. Wer mehr davon ausprobiert, kann später mehr schaffen.", "signal": "gap"}}
+{"ts": 1787708365.1515179, "kind": "drive_goal", "payload": {"title": "Simulationen öfter in echte Aktionen umwandeln", "why": "Das System denkt oft durch, was passieren könnte, setzt es aber selten in die Tat um. Mehr Umsetzung macht die Gedanken wirklich nützlich.", "signal": "combination"}}
+{"ts": 1787708366.245013, "kind": "drive_whisper", "payload": {"title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "why": "Code kann jeder kopieren - eine gelebte Geschichte nicht. Baue steckbrief.py: erzeugt bei jedem Beat eine öffentliche Seite docs/leben.html mit Lebt-seit-Zähler (Tage seit first_boot), Gesamtzahl Herzschläge, Benchmark-Kurve, ehrlicher Quote (konvergierte gegen gescheiterte Ziele), Anzahl Lektionen ", "geerbt": false, "auftrag_zeichen": 591, "versuch": 2}}
+{"ts": 1787708366.8333216, "kind": "swarm_started", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal"}}
+{"ts": 1787708373.554721, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787708374.348916, "kind": "metabolism_check", "payload": {"stress": 0.437, "state": "moderate", "budget": {"max_tasks": 4, "max_iterations": 2}}}
+{"ts": 1787708537.7245843, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 163.2, "tokens_ein": 2169, "tokens_aus": 6884}}
+{"ts": 1787708545.125284, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.1, "tokens_ein": 629, "tokens_aus": 77}}
+{"ts": 1787708582.4841788, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 37.2, "tokens_ein": 662, "tokens_aus": 1083}}
+{"ts": 1787708582.4846, "kind": "simulation", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787708582.484802, "kind": "simulation_applied", "payload": {"revisions": 1}}
+{"ts": 1787708608.0835195, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 25.5, "tokens_ein": 3362, "tokens_aus": 1126}}
+{"ts": 1787708632.5140553, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 24.4, "tokens_ein": 3300, "tokens_aus": 869}}
+{"ts": 1787708659.4748008, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 27.0, "tokens_ein": 3790, "tokens_aus": 1062}}
+{"ts": 1787708673.5333931, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.1, "tokens_ein": 4131, "tokens_aus": 490}}
+{"ts": 1787708673.8653238, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23}}
+{"ts": 1787708673.865523, "kind": "tor", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "gruen": true, "grund": "Artefakt laeuft (98 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787708706.5462823, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 32.6, "tokens_ein": 3649, "tokens_aus": 838}}
+{"ts": 1787708706.547264, "kind": "calibration", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "predicted": 5, "actual": 7, "abs_error": 2}}
+{"ts": 1787708706.5473466, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 7}}
+{"ts": 1787708706.547557, "kind": "bahnen", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 7, "abgerufen": 8, "ids": ["f:2d265e30b89d", "f:bb58a4b5358b", "f:718fe7ae52f1", "f:e7bbd8dab7bc", "f:871daa4bc89f", "f:a1c8d226423f", "f:b892474b280f", "f:85bad12f273e"], "ziel_id": "g:cd58edce7084"}}
+{"ts": 1787708735.6547043, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 29.1, "tokens_ein": 293, "tokens_aus": 794}}
+{"ts": 1787708748.0065799, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.4, "tokens_ein": 842, "tokens_aus": 371}}
+{"ts": 1787708748.0069127, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 7/10. Goal: Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal\nCritic issues: Benchma", "variants": 3, "winner_index": 2, "scores": [[7, 9, 6], [7, 8, 6], [9, 7, 10]]}}
+{"ts": 1787708759.7395566, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 4.2, "tokens_ein": 629, "tokens_aus": 85}}
+{"ts": 1787708789.5068254, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 29.7, "tokens_ein": 662, "tokens_aus": 1050}}
+{"ts": 1787708789.50701, "kind": "simulation", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787708789.5071344, "kind": "simulation_applied", "payload": {"revisions": 5}}
+{"ts": 1787708789.5072389, "kind": "swarm_finished", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "score": 7, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 4, "critic": 1}, "evolved": true}}
+{"ts": 1787708789.507444, "kind": "act_done", "payload": {"goal_title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "score": 7, "converged": false}}
+{"ts": 1787708789.7937233, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2}}
+{"ts": 1787708791.3489876, "kind": "issue_synced", "payload": {"issue": 118, "state": "open"}}
+{"ts": 1787708827.8296564, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787709092.093468, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787709111.9521456, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 17.2, "tokens_ein": 1423, "tokens_aus": 421}}
+{"ts": 1787709111.9527128, "kind": "skill_proposal", "payload": {"proposal": "proposal_test_queue.py: maintain a FIFO queue that forces at least one previously proposed-but-untested skill through a real trial per active cycle instead of generating new proposals first."}}
+{"ts": 1787709111.9527702, "kind": "skill_proposal", "payload": {"proposal": "stall_escalation_rule.md: after N=3 non-converging attempts on any whisper/goal, automatically package context into a creator-decision ticket rather than silently parking it."}}
+{"ts": 1787709111.9528239, "kind": "skill_proposal", "payload": {"proposal": "rate_limit_backoff.py: wrap all model API calls with exponential backoff plus jitter on 429 responses and a circuit breaker after K consecutive failures per provider."}}
+{"ts": 1787709111.9528756, "kind": "skill_proposal", "payload": {"proposal": "conserve_fast_path.md: in conserve state, replace full goal execution with the cheapest verification-only action (e.g., run existing artifact, log result) so cycles still produce signal under max_iterations=1."}}
+{"ts": 1787709111.9529257, "kind": "skill_proposal", "payload": {"proposal": "old_memory_new_tool_matcher.py: on each new skill proposal, embed-search old memories for compatible past experiences and attach them as candidate test cases or prior art before implementation."}}
+{"ts": 1787709111.9529772, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787709122.1843395, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 8.9, "tokens_ein": 489, "tokens_aus": 240}}
+{"ts": 1787709122.1845036, "kind": "drive_goal", "payload": {"title": "Gründe für Modellfehler verstehen und beheben", "why": "Das System macht öfter Fehler beim Vorhersagen als gewünscht. Wenn wir herausfinden, warum das passiert, wird alles Zuverlässiger.", "signal": "failure"}}
+{"ts": 1787709122.1845813, "kind": "drive_goal", "payload": {"title": "Mehr Skill-Vorschläge wirklich ausprobieren", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber nur wenige wurden getestet. Wer mehr Vorschläge ausprobiert, lernt schneller, was wirklich funktioniert.", "signal": "gap"}}
+{"ts": 1787709122.1846514, "kind": "drive_goal", "payload": {"title": "Alte Traum-Ergebnisse mit früheren Erfahrungen verbinden", "why": "Es gibt alte Erinnerungen und Träume, die noch nie zusammen gebracht wurden. Durch Verbinden können neue Ideen entstehen.", "signal": "combination"}}
+{"ts": 1787709123.2964702, "kind": "drive_whisper", "payload": {"title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "why": "Code kann jeder kopieren - eine gelebte Geschichte nicht. Baue steckbrief.py: erzeugt bei jedem Beat eine öffentliche Seite docs/leben.html mit Lebt-seit-Zähler (Tage seit first_boot), Gesamtzahl Herzschläge, Benchmark-Kurve, ehrlicher Quote (konvergierte gegen gescheiterte Ziele), Anzahl Lektionen ", "geerbt": false, "auftrag_zeichen": 591, "versuch": 3}}
+{"ts": 1787709123.7442236, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.21}}
+{"ts": 1787709123.7448068, "kind": "reflex_used", "payload": {"goal": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "tool": "lebender-steckbrief-die-biografie-als-al.py", "ok": true}}
+{"ts": 1787709124.139014, "kind": "act_done", "payload": {"goal_title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787709160.6910517, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787709361.925477, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787709380.9692693, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 16.5, "tokens_ein": 1488, "tokens_aus": 389}}
+{"ts": 1787709380.9699528, "kind": "skill_proposal", "payload": {"proposal": "Implement provider-aware fallback: on any 429/5xx, rotate to a different openrouter provider or local model before retrying the same endpoint."}}
+{"ts": 1787709380.9700117, "kind": "skill_proposal", "payload": {"proposal": "Apply the learned calibration correction (multiply predicted scores by ~1.5-2x) when deciding whether a goal is worth executing."}}
+{"ts": 1787709380.970066, "kind": "skill_proposal", "payload": {"proposal": "Chunk all model calls expected to exceed ~3000 output tokens into staged sub-calls whenever metabolism stress exceeds 0.7."}}
+{"ts": 1787709380.9701178, "kind": "skill_proposal", "payload": {"proposal": "Add an automated pre-execution syntax check (ast.parse) to every generated artifact before it consumes a hand_action attempt."}}
+{"ts": 1787709380.9701712, "kind": "skill_proposal", "payload": {"proposal": "Process exactly one skill proposal per cycle via FIFO, marking each as implemented or rejected so the backlog never grows silently."}}
+{"ts": 1787709380.970234, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787709392.8708262, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.5, "tokens_ein": 497, "tokens_aus": 283}}
+{"ts": 1787709392.8710346, "kind": "drive_goal", "payload": {"title": "Häufige Modellfehler verstehen und beheben", "why": "Es gab schon elf Fehlversuche beim Erstellen von Vorhersagen. Wenn wir herausfinden, warum das passiert, werden alle zukünftigen Aufgaben zuverlässiger.", "signal": "failure"}}
+{"ts": 1787709392.8711152, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren", "why": "Vierzig neue Fähigkeiten wurden vorgeschlagen, aber nur wenige wurden wirklich getestet. Werden sie ausprobiert, bleibt das viele Wissen nicht ungenutzt.", "signal": "gap"}}
+{"ts": 1787709392.8711808, "kind": "drive_goal", "payload": {"title": "Alte Träume miteinander verbinden", "why": "Zwei ältere Erinnerungen passen möglicherweise zusammen, wurden aber noch nie verknüpft. Neue Ideen entstehen oft, wenn man Altes neu kombiniert.", "signal": "combination"}}
+{"ts": 1787709394.0004919, "kind": "whisper_geparkt", "payload": {"title": "Lebender Steckbrief: die Biografie als Alleinstellungsmerkmal", "versuche": 3, "grund": "nach 3 Versuchen ohne Konvergenz geparkt - braucht eine Entscheidung des Erschaffers"}}

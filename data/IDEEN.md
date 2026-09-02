@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 01:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 01:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - Develop a simulation harness that injects rate-limit, latency, and filesystem errors to vet plans before execu *(hatte die Idee 3×)*
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
-- Create skill deployment tracker: every proposal gets 3-cycle TTL; unimplemented proposals escalate as blocking *(hatte die Idee 2×)*
 - Add per-request timeout (20 s) and retry budget (max 2 attempts with exponential backoff + jitter) before fail *(hatte die Idee 2×)*
 - Build a skill-validation harness that runs each proposal in a sandbox, measures pass-rate / latency / side-eff *(hatte die Idee 2×)*
 - Implement a model-health registry tracking success-rate, p95 latency, and 429 count per endpoint; auto-quarant *(hatte die Idee 2×)*
 - Create resolve_data_path skill: normalize all file references to absolute paths using ZOETRON_DATA and sys.arg *(hatte die Idee 2×)*
 - Build an analysis freshness monitor that auto-escalates stale (>7d) completed analyses to action planning. *(hatte die Idee 2×)*
+- Build integrate_skill_proposal pipeline: auto-scaffold, test, and promote proposals from dream log to skills/  *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -31,9 +31,9 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm initiation succeeds but downstream reflex execution fails, indicating a handoff gap between swarm_start and tool invocation.
+- Reflex tools (veraltete-infos-auffrischen.py) fail silently without emitting structured error telemetry for dream analysis.
+- High metabolic stress (1.0) triggers conserve mode that caps tasks at 3 and iterations at 1, starving recovery procedures.
+- File path resolution fails when relative paths diverge from ZOETRON_DATA root, causing hand actions to touch zero files despite clean exits.
+- Model rate limiting (429 errors) cascades across multiple free-tier providers, requiring automatic fallback rotation with exponential backoff.
 - Single-provider dependency (openrouter.ai) creates a correlated failure domain; all 6 models route through the same gateway, eliminating redundancy.
 - Latency variance is extreme (30s–113s) even for successful calls, making timeout budgets unpredictable and causing cascade delays in swarm coordinatio
 - No client-side backoff or circuit breaker exists: the system hammered failing endpoints repeatedly within seconds, wasting budget during conserve mode
@@ -51,11 +56,6 @@
 - Stale artifacts, outdated memories, and unfinished analyses accumulate faster than pruning routines can clean them, creating clutter that degrades dec
 - A persistent gap exists between generating proposals/suggestions and actually executing them — the system collects 55 capability suggestions and 5 ski
 - Model infrastructure failures (429 rate limits, 503 service unavailability) are the dominant systemic risk, causing 75 failures versus 37 successes, a
-- Memory pruning operates at low throughput (1 event/cycle), risking accumulation of stale model-performance beliefs.
-- Self-diagnosis reports no internal organ errors while external model failures dominate, indicating monitoring blind spots for dependency health.
-- Reflex-driven hebbian learning on model failure graphs enables autonomous adaptation but requires executable code artifacts to be effective.
-- Proposed resilience skills (router, fallback, latency-aware selection) remain unimplemented, creating a gap between diagnosis and cure.
-- Free-tier model APIs exhibit pervasive rate-limiting (429) and upstream overload (502), making single-model reliance unreliable.
 
 ---
 

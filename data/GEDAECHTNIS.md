@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9296 Fakten** · Stand 2026-09-02 01:29 UTC · aktualisiert bei jedem Herzschlag
+**9301 Fakten** · Stand 2026-09-02 01:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4945
+- **dream:** 4950
 - **swarm_artifact:** 2007
 - **last_swarm_critique:** 687
 - **anti_pattern:** 599
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902015700:5:ae5fa5`
+*02.09. 01:57 UTC · Quelle: dream*
+
+Swarm initiation succeeds but downstream reflex execution fails, indicating a handoff gap between swarm_start and tool invocation.
+
+### `dream:20260902015700:4:490ad4`
+*02.09. 01:57 UTC · Quelle: dream*
+
+Reflex tools (veraltete-infos-auffrischen.py) fail silently without emitting structured error telemetry for dream analysis.
+
+### `dream:20260902015700:3:28e48e`
+*02.09. 01:57 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers conserve mode that caps tasks at 3 and iterations at 1, starving recovery procedures.
+
+### `dream:20260902015700:2:3c005d`
+*02.09. 01:57 UTC · Quelle: dream*
+
+File path resolution fails when relative paths diverge from ZOETRON_DATA root, causing hand actions to touch zero files despite clean exits.
+
+### `dream:20260902015700:1:45270a`
+*02.09. 01:57 UTC · Quelle: dream*
+
+Model rate limiting (429 errors) cascades across multiple free-tier providers, requiring automatic fallback rotation with exponential backoff.
 
 ### `tool:viele-skill-vorschläge-ordnen-und-zusamm`
 *02.09. 01:27 UTC · Quelle: hands*
