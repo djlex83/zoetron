@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 04:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 04:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,13 +13,13 @@
 - Develop a simulation harness that injects rate-limit, latency, and filesystem errors to vet plans before execu *(hatte die Idee 3×)*
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
+- Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceedi *(hatte die Idee 3×)*
+- Add a background job that scans goals older than 7 days with no progress and either archives them or spawns a  *(hatte die Idee 3×)*
 - Create resolve_data_path skill: normalize all file references to absolute paths using ZOETRON_DATA and sys.arg *(hatte die Idee 2×)*
 - Build an analysis freshness monitor that auto-escalates stale (>7d) completed analyses to action planning. *(hatte die Idee 2×)*
 - Build integrate_skill_proposal pipeline: auto-scaffold, test, and promote proposals from dream log to skills/  *(hatte die Idee 2×)*
 - Add validate_contracts skill: enforce JSON-schema contracts at every planner→builder→critic handoff; fail fast *(hatte die Idee 2×)*
 - Create skill_trial_scheduler: nightly job picks top-3 untried proposals, runs in sandbox, promotes on +2 score *(hatte die Idee 2×)*
-- Wrap all model calls in @retry_with_fallback decorator that logs latency, error type, and fallback chosen for  *(hatte die Idee 2×)*
-- Implement a model router with per-model token-bucket rate limiters calibrated to observed 429 thresholds, auto *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning (42 events) runs cleanly while fact pruning stays at zero, suggesting the system correctly distinguishes ephemeral from durable data.
+- The system achieved goal convergence (score 8) despite cascading model failures, proving the swarm architecture is resilient but calibration between p
+- Latency for free models varies wildly (7.7s to 88.3s), making p95 latency an unreliable SLA without circuit breakers and timeout enforcement.
+- Upstream 502 errors from Nvidia endpoints demonstrate that even non-rate-limited models suffer from provider-side overload, requiring automatic failov
+- Rate limiting (429) is the dominant failure mode across multiple free-tier models on OpenRouter, indicating a systemic capacity constraint rather than
 - Resource-constrained 'conserve' mode (stress=1.0, max 1 iteration) demands strict single-task prioritization to avoid spreading effort too thin.
 - Unfinished analysis work blocks storage and cognitive bandwidth; stale tasks must be archived or deleted rather than allowed to linger indefinitely.
 - The system generates high-quality skill proposals but lacks a validation loop to test them, leaving 55 ideas untested and accumulating theoretical deb
@@ -51,11 +56,6 @@
 - Goals persisting weeks without progress (market analysis, reliability) show missing automatic escalation or archival mechanisms.
 - 44 skill proposals vs 9 completed dreams reveals a broken proposal-to-implementation pipeline that stalls capability growth.
 - Recurring 429 errors from z-ai/glm-5.2:free indicate single-model dependency is a systemic reliability risk.
-- Self-calibration error of 1 on a 10-point scale indicates reliable internal scoring; trust model scores for routing decisions.
-- Critic-driven evolution (identifying loose scripts → integrating → re-scoring) lifted quality from 5/10 to 9/10; structured iteration beats one-shot g
-- InclusionAI Ling Flash Fin consistently succeeds at ~14s latency on free tier; designate as primary workhorse model.
-- Nvidia Nemotron free endpoint fails via both 429 and 502 upstream overload; exclude from latency-critical paths.
-- Free-tier models on OpenRouter suffer pervasive 429 rate limits; treat 429 as baseline expectation, not anomaly.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9394 Fakten** · Stand 2026-09-02 04:40 UTC · aktualisiert bei jedem Herzschlag
+**9399 Fakten** · Stand 2026-09-02 04:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5010
+- **dream:** 5015
 - **swarm_artifact:** 2025
 - **last_swarm_critique:** 690
 - **anti_pattern:** 603
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902044748:5:5e9301`
+*02.09. 04:47 UTC · Quelle: dream*
+
+Event pruning (42 events) runs cleanly while fact pruning stays at zero, suggesting the system correctly distinguishes ephemeral from durable data.
+
+### `dream:20260902044748:4:066c03`
+*02.09. 04:47 UTC · Quelle: dream*
+
+The system achieved goal convergence (score 8) despite cascading model failures, proving the swarm architecture is resilient but calibration between predicted (4) and actual (8) scores remains off.
+
+### `dream:20260902044748:3:a0f794`
+*02.09. 04:47 UTC · Quelle: dream*
+
+Latency for free models varies wildly (7.7s to 88.3s), making p95 latency an unreliable SLA without circuit breakers and timeout enforcement.
+
+### `dream:20260902044748:2:35d213`
+*02.09. 04:47 UTC · Quelle: dream*
+
+Upstream 502 errors from Nvidia endpoints demonstrate that even non-rate-limited models suffer from provider-side overload, requiring automatic failover.
+
+### `dream:20260902044748:1:653533`
+*02.09. 04:47 UTC · Quelle: dream*
+
+Rate limiting (429) is the dominant failure mode across multiple free-tier models on OpenRouter, indicating a systemic capacity constraint rather than model-specific issues.
 
 ### `dream:20260902043826:5:f3870b`
 *02.09. 04:38 UTC · Quelle: dream*
