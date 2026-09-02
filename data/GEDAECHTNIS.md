@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9739 Fakten** · Stand 2026-09-02 14:38 UTC · aktualisiert bei jedem Herzschlag
+**9744 Fakten** · Stand 2026-09-02 14:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5250
+- **dream:** 5255
 - **swarm_artifact:** 2083
 - **last_swarm_critique:** 701
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902145020:5:25631d`
+*02.09. 14:50 UTC · Quelle: dream*
+
+Per-organ self-diagnosis found no errors, yet cross-organ patterns (sustained 429s across multiple models) were invisible without correlation — isolated health checks miss systemic failures.
+
+### `dream:20260902145020:4:582973`
+*02.09. 14:50 UTC · Quelle: dream*
+
+Latency varies dramatically even for the same successful model (9.4s vs 77.6s), meaning average-based budgeting is insufficient and percentile-based SLOs are needed.
+
+### `dream:20260902145020:3:4597df`
+*02.09. 14:50 UTC · Quelle: dream*
+
+Skill proposals outnumber their actual deployment — the system generates ideas but lacks a validated pipeline to test and register them, leaving capabilities theoretical.
+
+### `dream:20260902145020:2:6959c9`
+*02.09. 14:50 UTC · Quelle: dream*
+
+Stale data accumulates without a consumption loop: market analyses and outdated facts were flagged repeatedly but never acted upon, indicating a gap between detection and execution.
+
+### `dream:20260902145020:1:0d3f59`
+*02.09. 14:50 UTC · Quelle: dream*
+
+Free-tier model dependencies without circuit breakers caused cascading 429 rate-limit failures across four consecutive calls, exposing a single-point-of-failure in the inference layer.
 
 ### `anti_pattern:Previous attempt scored 6/10. Goal: Häufige Fehlerquellen be:2`
 *02.09. 14:34 UTC · Quelle: evolution*

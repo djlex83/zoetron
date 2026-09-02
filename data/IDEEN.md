@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 14:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 14:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Per-organ self-diagnosis found no errors, yet cross-organ patterns (sustained 429s across multiple models) were invisible without correlation — isolat
+- Latency varies dramatically even for the same successful model (9.4s vs 77.6s), meaning average-based budgeting is insufficient and percentile-based S
+- Skill proposals outnumber their actual deployment — the system generates ideas but lacks a validated pipeline to test and register them, leaving capab
+- Stale data accumulates without a consumption loop: market analyses and outdated facts were flagged repeatedly but never acted upon, indicating a gap b
+- Free-tier model dependencies without circuit breakers caused cascading 429 rate-limit failures across four consecutive calls, exposing a single-point-
 - Only 2 of 5 tested models (nvidia/nemotron-3-ultra, inclusionai/ling-3.0-flash-fin) return successful completions, establishing a narrow reliable-mode
 - The reflex tool 'vorschläge-zu-echten-fähigkeiten-machen.py' fails silently while simulation approves the same goal (verdict=go, 3 risks), revealing a
 - Hand-action timeouts (20s, 0 bytes read) indicate I/O-bound operations lack circuit-breakers, causing silent stalls that cascade into missed deadlines
@@ -51,11 +56,6 @@
 - Self-diagnosis reported zero organ errors despite sustained 429 failures, showing diagnostic gap: per-organ checks miss cross-organ failure signatures
 - Skill deployment pipeline failed due to timeout (20s) when converting proposals to capabilities, revealing that the reflex tool 'vorschläge-zu-echten-
 - Rate-limited models (glm-5.2) repeatedly fail with 429 errors while fallback model (nemotron-3-ultra) succeeds but with high latency (58-93s), indicat
-- Latency for the reliable model varied 2.4x (38s to 93s) across identical task types, showing that without per-task SLO enforcement, performance degrad
-- Five skill proposals were generated but none have been deployed, confirming that proposal generation without an automated pipeline results in permanen
-- Calibration predicted 5 actual 8 (abs_error=3), indicating the system consistently underestimates task complexity and its confidence scores are unreli
-- Self-diagnosis reported zero organ failures while systemic 429 errors persisted across cycles, revealing a blind spot where cross-organ infrastructure
-- Free-tier models (glm-5.2) repeatedly hit 429 rate limits with zero recoverable error, making them unusable as primary dependencies without a health-a
 
 ---
 
