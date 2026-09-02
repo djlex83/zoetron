@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 14:51:16",
+ "stand": "2026-09-02 15:02:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -19,12 +19,6 @@
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 5,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
@@ -49,6 +43,12 @@
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 4,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
@@ -361,9 +361,15 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.716,
+ "haende_quote": 0.721,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 32,
@@ -371,13 +377,13 @@
   "schnitt": 5.81
  },
  "score_nach_ziel_typ": {
-  "bau": {
-   "n": 2,
-   "schnitt": 5.5
-  },
   "analyse": {
    "n": 30,
    "schnitt": 5.83
+  },
+  "bau": {
+   "n": 1,
+   "schnitt": 2.0
   }
  }
 }

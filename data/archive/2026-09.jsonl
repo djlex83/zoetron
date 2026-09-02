@@ -3496,3 +3496,13 @@
 {"ts": 1787755155.356042, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
 {"ts": 1787755156.5364456, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
 {"ts": 1787755157.5323973, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787755157.5323956, "schalter_geoeffnet": false}}
+{"ts": 1787755866.6622095, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 709.1, "tokens_ein": 5891, "tokens_aus": 9810}}
+{"ts": 1787755867.51199, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787755867.5119872, "schalter_geoeffnet": false}}
+{"ts": 1787755935.6427, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 68.1, "tokens_ein": 508, "tokens_aus": 493}}
+{"ts": 1787755936.4088092, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '404 Not Found' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT", "ts": 1787755936.4088078, "schalter_geoeffnet": false}}
+{"ts": 1787756020.0084953, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 83.6, "tokens_ein": 396, "tokens_aus": 1044}}
+{"ts": 1787756020.0086966, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "go", "risks": 5, "revisions": 1}}
+{"ts": 1787756080.8214412, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "endpoint returned no choices (status 200): {'message': 'error code: 504\\n', 'code': 504}", "ts": 1787756080.8214388, "schalter_geoeffnet": false}}
+{"ts": 1787756176.3680305, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 95.5, "tokens_ein": 8225, "tokens_aus": 2297}}
+{"ts": 1787756237.5764372, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "endpoint returned no choices (status 200): {'message': 'error code: 504\\n', 'code': 504}", "ts": 1787756237.5764349, "schalter_geoeffnet": true}}
+{"ts": 1787756237.576542, "kind": "model_gesperrt", "payload": {"model": "z-ai/glm-5.2:free", "sperre_s": 1800, "grund": "3 Fehler in Folge"}}
