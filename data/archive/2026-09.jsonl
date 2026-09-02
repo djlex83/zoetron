@@ -2148,3 +2148,34 @@
 {"ts": 1787727819.1907604, "kind": "reflex_used", "payload": {"goal": "Altes Handlungswissen mit Träumen verbinden", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
 {"ts": 1787727819.5693126, "kind": "act_done", "payload": {"goal_title": "Altes Handlungswissen mit Träumen verbinden", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1787727861.2656252, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787728055.7515, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787728075.5026565, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 17.2, "tokens_ein": 1584, "tokens_aus": 448}}
+{"ts": 1787728075.503145, "kind": "skill_proposal", "payload": {"proposal": "model_router.py: wrap all LLM calls with exponential backoff on 429s plus automatic failover to the next healthy provider from a ranked list, logging per-model success rates."}}
+{"ts": 1787728075.5031936, "kind": "skill_proposal", "payload": {"proposal": "tool_rejection_auditor.py: capture the full rejection reason for every denied tool call into a structured log entry so patterns can be mined instead of leaving rejections opaque."}}
+{"ts": 1787728075.5032384, "kind": "skill_proposal", "payload": {"proposal": "dream_goal_linker.py: before each dream, retrieve the last swarm goal and force-match old dream insights against it, emitting merged hypotheses instead of isolated summaries."}}
+{"ts": 1787728075.5032897, "kind": "skill_proposal", "payload": {"proposal": "convergence_tuner.py: after each swarm run, compare final score against the convergence threshold and auto-relax/tighten the threshold based on whether extra cycles would plausibly change the verdict."}}
+{"ts": 1787728075.5033367, "kind": "skill_proposal", "payload": {"proposal": "stress_aware_planner.py: read metabolism state before planning and pre-truncate task/iteration budgets to conserve-mode limits so simulations are designed to fit in one iteration from the start."}}
+{"ts": 1787728075.5033836, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787728087.1581123, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.3, "tokens_ein": 471, "tokens_aus": 258}}
+{"ts": 1787728087.158331, "kind": "drive_goal", "payload": {"title": "Gründe für Modellfehler besser verstehen", "why": "Das System hat 17 Fehler gemacht, aber nur wenige davon wirklich untersucht. Wenn wir verstehen, warum Dinge schiefgehen, können wir sie beim nächsten Mal vermeiden.", "signal": "failure"}}
+{"ts": 1787728087.1584163, "kind": "drive_goal", "payload": {"title": "Abgelehnte Werkzeuge prüfen und verbessern", "why": "Viermal wurde ein vorgeschlagenes Werkzeug abgelehnt. Es wäre gut zu wissen, warum, damit zukünftige Vorschläge besser passen.", "signal": "failure"}}
+{"ts": 1787728087.158485, "kind": "drive_goal", "payload": {"title": "Reflexe öfter automatisch einsetzen", "why": "Das System hat bisher nur einmal auf einen schnellen Reflex zurückgegriffen, obwohl es viele wiederholte Aufgaben gibt. Mehr automatische Schnellreaktionen sparen Zeit und Mühe.", "signal": "gap"}}
+{"ts": 1787728088.9384234, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22}}
+{"ts": 1787728088.938908, "kind": "reflex_used", "payload": {"goal": "Viele vorgeschlagene Fähigkeiten endlich ausprobieren", "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py", "ok": true}}
+{"ts": 1787728089.31602, "kind": "act_done", "payload": {"goal_title": "Viele vorgeschlagene Fähigkeiten endlich ausprobieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787728131.1906316, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787728326.5742261, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787728346.8625286, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 17.6, "tokens_ein": 1437, "tokens_aus": 466}}
+{"ts": 1787728346.863102, "kind": "skill_proposal", "payload": {"proposal": "swarm_runner.py: extend swarm cycles until either convergence is reached or the best-evolved variant's score is adopted as the final result, never exiting below the evolution winner's score."}}
+{"ts": 1787728346.8631644, "kind": "skill_proposal", "payload": {"proposal": "skill_trial_scheduler.py: enforce that at least one pending skill_proposal per dream cycle receives a concrete trial run with pass/fail evidence attached to its issue."}}
+{"ts": 1787728346.863241, "kind": "skill_proposal", "payload": {"proposal": "action_executor.py: automatically convert the top-scoring simulation revision into a queued real action within the same cycle instead of leaving revisions unapplied."}}
+{"ts": 1787728346.8633122, "kind": "skill_proposal", "payload": {"proposal": "memory_pruner.py: trigger a prune pass whenever consolidated events exceed a threshold relative to pruned count, prioritizing stale drive-goal events with zero recall hits."}}
+{"ts": 1787728346.8633683, "kind": "skill_proposal", "payload": {"proposal": "calibration_tracker.py: log predicted-vs-actual scores per goal over time and flag systematic underprediction (>1 abs error trend) for prompt adjustment."}}
+{"ts": 1787728346.8634236, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787728357.915007, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.7, "tokens_ein": 470, "tokens_aus": 229}}
+{"ts": 1787728357.9151905, "kind": "drive_goal", "payload": {"title": "Gründe für Modellfehler finden und beheben", "why": "Das System hat oft Fehler gemacht, wenn es Vorhersagen getroffen hat. Wenn wir verstehen, warum das passiert, wird es zuverlässiger.", "signal": "failure"}}
+{"ts": 1787728357.915268, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten ausprobieren", "why": "Es liegen viele neue Fähigkeits-Vorschläge vor, die noch nicht getestet wurden. Wer sie ausprobiert, findet heraus, welche wirklich nützlich sind.", "signal": "gap"}}
+{"ts": 1787728357.915355, "kind": "drive_goal", "payload": {"title": "Abgelehnte Werkzeuge besser nutzen lernen", "why": "Manchmal wurden Werkzeuge abgelehnt, weil sie falsch angewendet wurden. Besser lernen, wann welches Werkzeug passt, spart Zeit und Mühe.", "signal": "combination"}}
+{"ts": 1787728360.4539204, "kind": "swarm_started", "payload": {"goal": "Modell-Fehler deutlich reduzieren"}}
+{"ts": 1787728368.2744534, "kind": "recall", "payload": {"keys": ["last_swarm_goal", "dream:20260826063114:4:d1038a"]}}
+{"ts": 1787728369.2788317, "kind": "metabolism_check", "payload": {"stress": 0.0, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 07:07:03",
+ "stand": "2026-09-02 07:15:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -165,6 +165,12 @@
    "quote": 0.0
   },
   {
+   "tool": "marktanalyse-endlich-nutzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeits-messlatte-bauen-capability-be.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -315,12 +321,6 @@
    "quote": 0.0
   },
   {
-   "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -339,12 +339,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.715,
- "simulationen_angewandt": 29,
+ "haende_quote": 0.72,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
-  "n": 33,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 5.76
+  "schnitt": 5.75
  },
  "score_nach_ziel_typ": {
   "analyse": {

@@ -1,25 +1,25 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 07:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 07:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Add a background job that scans goals older than 7 days with no progress and either archives them or spawns a  *(hatte die Idee 5×)*
+- Add a background job that scans goals older than 7 days with no progress and either archives them or spawns a  *(hatte die Idee 6×)*
+- Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60s cooldown) with 2-retry, 10s t *(hatte die Idee 5×)*
 - Implement a model router with real-time health scoring (error rate, latency, 429 frequency) and automatic fall *(hatte die Idee 4×)*
 - Build a skill validation pipeline: propose → unit-test → integration-test → canary-deploy → promote, with auto *(hatte die Idee 4×)*
-- Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60s cooldown) with 2-retry, 10s t *(hatte die Idee 4×)*
 - Implement model health registry with per-model 429/502 tracking, circuit-breaker state, and automatic fallback *(hatte die Idee 3×)*
 - Create a path resolver service that validates ZOETRON_DATA and sys.argv[1] at startup and provides canonical a *(hatte die Idee 3×)*
 - Develop a simulation harness that injects rate-limit, latency, and filesystem errors to vet plans before execu *(hatte die Idee 3×)*
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
 - Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceedi *(hatte die Idee 3×)*
+- Implement a model health registry that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoint *(hatte die Idee 3×)*
+- Maintain a ranked fallback roster of models across at least 3 providers (e.g., Poolside, NVIDIA, Google) so a  *(hatte die Idee 3×)*
 - Build integrate_skill_proposal pipeline: auto-scaffold, test, and promote proposals from dream log to skills/  *(hatte die Idee 2×)*
 - Add validate_contracts skill: enforce JSON-schema contracts at every planner→builder→critic handoff; fail fast *(hatte die Idee 2×)*
 - Create skill_trial_scheduler: nightly job picks top-3 untried proposals, runs in sandbox, promotes on +2 score *(hatte die Idee 2×)*
-- Wrap all model calls in @retry_with_fallback decorator that logs latency, error type, and fallback chosen for  *(hatte die Idee 2×)*
-- Implement a model router with per-model token-bucket rate limiters calibrated to observed 429 thresholds, auto *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals (market analysis, model error reduction) persist over multiple cycles without completion, requiring automated archiving or forced reflex s
+- Skill proposals accumulate without automated validation or promotion, leaving high-value improvements (circuit breaker, fallback roster) unimplemented
+- Reflex tools for critical improvements (e.g., model reliability) fail silently, suggesting missing pre-execution validation or dependency checks.
+- Hand actions fail when using relative paths because they are not resolved against ZOETRON_DATA, causing file read/write errors that block goal progres
+- Primary model (z-ai/glm-5.2:free) consistently hits 429 rate limits, forcing fallback to high-latency (70s) NVIDIA model, indicating need for multi-pr
 - Structured lifecycle gates — validation suite passage before promotion and rollback on regression — prevent low-quality proposals from propagating thr
 - Prediction calibration systematically underestimates durations for data processing tasks, indicating a structural bias that a multiplier correction ca
 - Proactive prevention (pausing before thresholds, pre-flight path validation) outperforms reactive retry by avoiding failures entirely rather than reco
@@ -51,11 +56,6 @@
 - Swarm topology with 1 planner, 3 builders, 1 critic achieves rapid convergence (1 cycle) and high score (9) for error-reduction goals.
 - Calibration consistently underestimates task duration by ~2x for data-processing goals, indicating a missing complexity multiplier.
 - Rate limiting (429) on free-tier models is a systemic failure mode that requires proactive fallback rather than reactive retry.
-- Token budget and rate-limit constraints require proactive scheduling to avoid conserve-mode throttling.
-- Skill proposals accumulate without a validation gate, causing backlog of untested capabilities.
-- Stale goals (market analysis, model repair) persist without automated archival or completion reflexes.
-- Ad-hoc fallback to NVIDIA model works but lacks automated health tracking, circuit breaking, and multi-provider roster.
-- Repeated 429 errors on z-ai/glm-5.2:free reveal single-provider dependency as a systemic reliability risk.
 
 ---
 

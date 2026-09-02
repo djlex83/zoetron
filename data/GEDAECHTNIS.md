@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9474 Fakten** · Stand 2026-09-02 07:08 UTC · aktualisiert bei jedem Herzschlag
+**9479 Fakten** · Stand 2026-09-02 07:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5065
+- **dream:** 5070
 - **swarm_artifact:** 2039
 - **last_swarm_critique:** 693
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902071515:5:00b97a`
+*02.09. 07:15 UTC · Quelle: dream*
+
+Stale goals (market analysis, model error reduction) persist over multiple cycles without completion, requiring automated archiving or forced reflex spawning.
+
+### `dream:20260902071515:4:1724d8`
+*02.09. 07:15 UTC · Quelle: dream*
+
+Skill proposals accumulate without automated validation or promotion, leaving high-value improvements (circuit breaker, fallback roster) unimplemented.
+
+### `dream:20260902071515:3:ea5db0`
+*02.09. 07:15 UTC · Quelle: dream*
+
+Reflex tools for critical improvements (e.g., model reliability) fail silently, suggesting missing pre-execution validation or dependency checks.
+
+### `dream:20260902071515:2:c24ee0`
+*02.09. 07:15 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths because they are not resolved against ZOETRON_DATA, causing file read/write errors that block goal progress.
+
+### `dream:20260902071515:1:c4a6bc`
+*02.09. 07:15 UTC · Quelle: dream*
+
+Primary model (z-ai/glm-5.2:free) consistently hits 429 rate limits, forcing fallback to high-latency (70s) NVIDIA model, indicating need for multi-provider routing with health tracking.
 
 ### `dream:20260902070612:5:2f6177`
 *02.09. 07:06 UTC · Quelle: dream*
