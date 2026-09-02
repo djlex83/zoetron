@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9845 Fakten** · Stand 2026-09-02 17:41 UTC · aktualisiert bei jedem Herzschlag
+**9862 Fakten** · Stand 2026-09-02 18:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5330
-- **swarm_artifact:** 2101
-- **last_swarm_critique:** 704
-- **anti_pattern:** 613
-- **last_swarm_goal:** 452
-- **strategy:** 327
+- **dream:** 5335
+- **swarm_artifact:** 2107
+- **last_swarm_critique:** 705
+- **anti_pattern:** 615
+- **last_swarm_goal:** 453
+- **strategy:** 328
 - **tool:** 121
-- **hand_result:** 105
+- **hand_result:** 106
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Veraltetes Analysewissen:2`
+*02.09. 18:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): LLM-assisted knowledge synthesis with human-in-the-loop verification - Deploy a RAG pipeline where outdated knowledge chunks are retrieved from local vector store (Chroma/FAISS), then re-synthesized by an LLM (local Ollama or
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Veraltetes Analysewissen:1`
+*02.09. 18:01 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Rule-based validation and refresh engine with external knowledge sources - Build a declarative rule engine (YAML/DSL) that defines freshness criteria per knowledge domain (e.g., 'market_trends older than 90 days = stale'). En
+
+### `last_swarm_critique`
+*02.09. 18:00 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: Artefakt laeuft nicht (harter Laufzeitfehler); Log bricht ab bei 'Found ex' - moeglicherweise Exception beim Laden der Abhaengigkeiten oder Daten; zoetron.semantic und zoetron.graph Clients scheinen nicht verfuegbar zu sein (Imp
+
+### `last_swarm_goal`
+*02.09. 17:54 UTC · Quelle: system*
+
+Veraltetes Analysewissen aktualisieren
+
+### `dream:20260902175415:5:1a28d7`
+*02.09. 17:54 UTC · Quelle: dream*
+
+Drive goals accumulate from failure/stale signals but lack automatic clustering into composite work packages.
+
+### `dream:20260902175415:4:01d3de`
+*02.09. 17:54 UTC · Quelle: dream*
+
+Prune runs consistently remove zero facts/events, indicating TTL/access policies are either absent or misconfigured.
+
+### `dream:20260902175415:3:169b8e`
+*02.09. 17:54 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while external model APIs fail repeatedly, revealing a monitoring blind spot.
+
+### `dream:20260902175415:2:c06727`
+*02.09. 17:54 UTC · Quelle: dream*
+
+Reflex execution succeeds where model calls fail, but only triggers for exact goal-tool pattern matches.
+
+### `dream:20260902175415:1:f205c5`
+*02.09. 17:54 UTC · Quelle: dream*
+
+Model endpoint failures cascade across providers (429/404) causing systemic unreliability despite fallback attempts.
 
 ### `tool:häufige-modellfehler-besser-verstehen`
 *02.09. 17:39 UTC · Quelle: hands*

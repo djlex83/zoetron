@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 17:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 18:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,8 +30,8 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals accumulate from failure/stale signals but lack automatic clustering into composite work packages.
+- Prune runs consistently remove zero facts/events, indicating TTL/access policies are either absent or misconfigured.
+- Selbstdiagnose reports zero organ errors while external model APIs fail repeatedly, revealing a monitoring blind spot.
+- Reflex execution succeeds where model calls fail, but only triggers for exact goal-tool pattern matches.
+- Model endpoint failures cascade across providers (429/404) causing systemic unreliability despite fallback attempts.
 - Swarm convergence in 1 cycle with score 8 masks a 5:1 model failure-to-success ratio, revealing that task success metrics decouple from model reliabil
 - Safety gate correctly blocks destructive tool execution (os.system) but lacks an automated escalation path for legitimate automation needs.
 - Successful calls to nemotron-3-ultra exhibit 96-108s latency, signaling provider saturation that precedes hard errors.
@@ -51,11 +56,6 @@
 - The reflex tool 'modellfehler-deutlich-reduzieren.py' itself failed (ok: false), showing that error-reduction procedures need their own validation.
 - Hand actions fail when they don't resolve input paths from both sys.argv[1] and ZOETRON_DATA environment variable before attempting file operations.
 - Free-tier models (glm-5.2, gemma-4) consistently return 429 rate-limit errors, making them unreliable as primary providers.
-- Self-diagnosis reported zero organ errors while model failures, path errors, and stress saturation occurred simultaneously, revealing missing cross-or
-- Five skill proposals were generated but none were tested or deployed; proposal accumulation without validation pipeline creates illusion of progress.
-- System entered stress=1.0 conserve mode (max_tasks=3, max_iterations=1) precisely when recovery capacity was needed most, creating a death spiral.
-- Fallback model (nvidia/nemotron-3-ultra) latency varies wildly (26–73s), causing reflex tasks to exceed acceptable SLOs and triggering stress cascades
-- Free-tier models (z-ai/glm-5.2) repeatedly hit 429 rate limits, making them unreliable as primary dependencies without circuit-breaker fallback logic.
 
 ---
 
