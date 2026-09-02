@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency for the reliable model varied 2.4x (38s to 93s) across identical task types, showing that without per-task SLO enforcement, performance degrad
+- Five skill proposals were generated but none have been deployed, confirming that proposal generation without an automated pipeline results in permanen
+- Calibration predicted 5 actual 8 (abs_error=3), indicating the system consistently underestimates task complexity and its confidence scores are unreli
+- Self-diagnosis reported zero organ failures while systemic 429 errors persisted across cycles, revealing a blind spot where cross-organ infrastructure
+- Free-tier models (glm-5.2) repeatedly hit 429 rate limits with zero recoverable error, making them unusable as primary dependencies without a health-a
 - Calibration error 60% (predicted 5 cycles, actual 8) - estimation models drift and need online correction.
 - Simulation gate caught 3 risks and forced 2 revisions before 'go' verdict - virtual rehearsal prevents real failures but adds latency.
 - Stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1) - metabolic state directly caps execution scope.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without validation gates (AST parsing, unit tests), leading to execution failures when reflex tools are invoked.
 - Self-diagnosis limited to organ-level checks misses critical infrastructure health signals like router error rates, latency percentiles, and fallback 
 - Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 upstream errors) that cascade into system-wide degradation when no au
-- No response caching by prompt hash wastes tokens and exacerbates rate limits on repeated or similar queries across cycles.
-- Fallback to Nemotron-3-ultra succeeds but at 25-65s latency, violating implicit SLOs and lacking a latency budget guard to trigger conservative mode e
-- Skill proposals accumulate (path resolver, deployment pipeline, latency guard) but lack an automated ingestion→test→register pipeline, leaving capabil
-- Cross-organ diagnostic gap: individual organs report healthy while sustained 429s degrade system-wide reliability, revealing missing correlation alert
-- Recurring 429 errors from z-ai/glm-5.2:free indicate a single-model dependency without health-aware routing, causing cascade failures when rate limits
 
 ---
 

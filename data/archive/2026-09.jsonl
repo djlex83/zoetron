@@ -3390,3 +3390,12 @@
 {"ts": 1787751848.0247524, "kind": "metabolism_check", "payload": {"stress": 0.192, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
 {"ts": 1787751974.3563833, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 126.0, "tokens_ein": 3437, "tokens_aus": 5229}}
 {"ts": 1787751979.3417907, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 4.6, "tokens_ein": 660, "tokens_aus": 93}}
+{"ts": 1787752005.7116272, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 26.2, "tokens_ein": 676, "tokens_aus": 765}}
+{"ts": 1787752005.7118258, "kind": "simulation", "payload": {"goal": "Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten", "verdict": "revise", "risks": 4, "revisions": 4}}
+{"ts": 1787752005.7119436, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787752158.9139113, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 153.0, "tokens_ein": 3479, "tokens_aus": 6065}}
+{"ts": 1787752317.551389, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 158.6, "tokens_ein": 4101, "tokens_aus": 6664}}
+{"ts": 1787752317.867859, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '404 Not Found' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT", "ts": 1787752317.867856, "schalter_geoeffnet": false}}
+{"ts": 1787752318.249732, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787752318.2497299, "schalter_geoeffnet": false}}
+{"ts": 1787752318.7809498, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1787752318.7809474, "schalter_geoeffnet": false}}
+{"ts": 1787752318.8979614, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787752318.897958, "schalter_geoeffnet": false}}

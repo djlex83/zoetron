@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9712 Fakten** · Stand 2026-09-02 13:51 UTC · aktualisiert bei jedem Herzschlag
+**9717 Fakten** · Stand 2026-09-02 14:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5235
+- **dream:** 5240
 - **swarm_artifact:** 2077
 - **last_swarm_critique:** 700
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902135820:5:043f72`
+*02.09. 13:58 UTC · Quelle: dream*
+
+Latency for the reliable model varied 2.4x (38s to 93s) across identical task types, showing that without per-task SLO enforcement, performance degrades silently.
+
+### `dream:20260902135820:4:d70f56`
+*02.09. 13:58 UTC · Quelle: dream*
+
+Five skill proposals were generated but none have been deployed, confirming that proposal generation without an automated pipeline results in permanent backlog decay.
+
+### `dream:20260902135820:3:5b1093`
+*02.09. 13:58 UTC · Quelle: dream*
+
+Calibration predicted 5 actual 8 (abs_error=3), indicating the system consistently underestimates task complexity and its confidence scores are unreliable.
+
+### `dream:20260902135820:2:a5cb67`
+*02.09. 13:58 UTC · Quelle: dream*
+
+Self-diagnosis reported zero organ failures while systemic 429 errors persisted across cycles, revealing a blind spot where cross-organ infrastructure failures go undetected.
+
+### `dream:20260902135820:1:9b2699`
+*02.09. 13:58 UTC · Quelle: dream*
+
+Free-tier models (glm-5.2) repeatedly hit 429 rate limits with zero recoverable error, making them unusable as primary dependencies without a health-aware fallback.
 
 ### `dream:20260902134811:5:3950c8`
 *02.09. 13:48 UTC · Quelle: dream*
