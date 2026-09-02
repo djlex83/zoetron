@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 04:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 05:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,9 +31,9 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm goals fail silently when input paths are misconfigured, indicating a need for pre-execution validation of file and directory references.
+- Telemetry logs are generated but not analyzed in real-time, missing opportunities to detect and isolate failing models before they block execution.
+- Drive goals decay without active reflexes or deadlines, leading to stagnation in critical improvement areas like error reduction and skill adoption.
+- Model failures cascade into unimplemented skill proposals because there is no fallback routing or circuit-breaker logic to maintain progress.
+- Repeated 429 errors on the same model indicate rate-limit exhaustion rather than transient failure, requiring per-model backoff instead of generic ret
 - Event pruning (42 events) runs cleanly while fact pruning stays at zero, suggesting the system correctly distinguishes ephemeral from durable data.
 - The system achieved goal convergence (score 8) despite cascading model failures, proving the swarm architecture is resilient but calibration between p
 - Latency for free models varies wildly (7.7s to 88.3s), making p95 latency an unreliable SLA without circuit breakers and timeout enforcement.
@@ -51,11 +56,6 @@
 - The system generates high-quality skill proposals but lacks a validation loop to test them, leaving 55 ideas untested and accumulating theoretical deb
 - Every GLM failure was instantly recovered by Nemotron, proving that a pre-configured secondary model with automatic failover eliminates single-point-o
 - Free-tier LLM endpoints (GLM, Gemma, Poolside) repeatedly hit 429 rate limits under load and must never be relied upon as primary models.
-- Successful fallback to nvidia/nemotron-3-ultra (15.4s latency) proves multi-model routing with latency/error tracking would prevent outages.
-- Self-diagnosis reports zero organ errors while external model failures cascade, proving internal health checks miss dependency failures.
-- Goals persisting weeks without progress (market analysis, reliability) show missing automatic escalation or archival mechanisms.
-- 44 skill proposals vs 9 completed dreams reveals a broken proposal-to-implementation pipeline that stalls capability growth.
-- Recurring 429 errors from z-ai/glm-5.2:free indicate single-model dependency is a systemic reliability risk.
 
 ---
 

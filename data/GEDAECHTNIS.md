@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9399 Fakten** · Stand 2026-09-02 04:49 UTC · aktualisiert bei jedem Herzschlag
+**9409 Fakten** · Stand 2026-09-02 05:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5015
-- **swarm_artifact:** 2025
-- **last_swarm_critique:** 690
+- **dream:** 5020
+- **swarm_artifact:** 2027
+- **last_swarm_critique:** 691
 - **anti_pattern:** 603
-- **last_swarm_goal:** 438
+- **last_swarm_goal:** 439
 - **strategy:** 322
-- **tool:** 114
+- **tool:** 115
 - **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:veraltete-marktdaten-regelaessig-aktuali`
+*02.09. 05:04 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Marktdaten regelaessig aktualisieren'. Datei: data/tools/veraltete-marktdaten-regelaessig-aktuali.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*02.09. 05:04 UTC · Quelle: critic*
+
+score=8; issues=Kein echtes Monitoring-Alert-System (Webhook-Variable definiert, aber nie verwendet); SLA-Schwellenwerte sind im Code fest codiert und nicht konfigurierbar; keine Retry-Logik oder Fehlerbehandlung für fehlschlagende Datenquellen-Aktualisierunge
+
+### `last_swarm_goal`
+*02.09. 04:56 UTC · Quelle: system*
+
+Veraltete Marktdaten regelaessig aktualisieren
+
+### `dream:20260902045610:5:a76846`
+*02.09. 04:56 UTC · Quelle: dream*
+
+Swarm goals fail silently when input paths are misconfigured, indicating a need for pre-execution validation of file and directory references.
+
+### `dream:20260902045610:4:c3c36e`
+*02.09. 04:56 UTC · Quelle: dream*
+
+Telemetry logs are generated but not analyzed in real-time, missing opportunities to detect and isolate failing models before they block execution.
+
+### `dream:20260902045610:3:cc6a5b`
+*02.09. 04:56 UTC · Quelle: dream*
+
+Drive goals decay without active reflexes or deadlines, leading to stagnation in critical improvement areas like error reduction and skill adoption.
+
+### `dream:20260902045610:2:af4f42`
+*02.09. 04:56 UTC · Quelle: dream*
+
+Model failures cascade into unimplemented skill proposals because there is no fallback routing or circuit-breaker logic to maintain progress.
+
+### `dream:20260902045610:1:02e83c`
+*02.09. 04:56 UTC · Quelle: dream*
+
+Repeated 429 errors on the same model indicate rate-limit exhaustion rather than transient failure, requiring per-model backoff instead of generic retries.
 
 ### `dream:20260902044748:5:5e9301`
 *02.09. 04:47 UTC · Quelle: dream*
