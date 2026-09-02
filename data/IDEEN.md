@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 06:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 06:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automatic event pruning (85 events) maintains performance but fact retention remains untouched, creating asymmetric memory decay.
+- Hand actions fail when 'gelesen' is 0 but succeed when input is present, revealing a missing pre-flight input validation.
+- Swarm topology with 1 planner, 3 builders, 1 critic achieves rapid convergence (1 cycle) and high score (9) for error-reduction goals.
+- Calibration consistently underestimates task duration by ~2x for data-processing goals, indicating a missing complexity multiplier.
+- Rate limiting (429) on free-tier models is a systemic failure mode that requires proactive fallback rather than reactive retry.
 - Token budget and rate-limit constraints require proactive scheduling to avoid conserve-mode throttling.
 - Skill proposals accumulate without a validation gate, causing backlog of untested capabilities.
 - Stale goals (market analysis, model repair) persist without automated archival or completion reflexes.
@@ -51,11 +56,6 @@
 - Stale data (market analysis, facts) persists without TTL-based archival or re-verification triggers, degrading decision quality.
 - Multiple proposals converge on pre-execution validation: path resolution, quota checks, and proposal testing gates prevent silent failures.
 - Primary model (z-ai/glm-5.2:free) repeatedly fails with 429 rate-limit errors, forcing fallback to slower but reliable nemotron-3-ultra.
-- System self-diagnosis correctly identifies the absence of organ failures, ensuring system health is maintained during routine operations.
-- Swarm-based task execution with planner, builder, and critic roles successfully converges on a high-quality solution (score 8) in a single cycle.
-- Event pruning is highly effective at reducing memory bloat, successfully removing 55 outdated events in a single run.
-- Task duration calibration tends to underestimate the actual time required for data updating tasks by a significant margin (predicted 5 vs actual 8).
-- Free models on OpenRouter frequently hit 429 rate limits, requiring automatic fallback to alternative models to maintain operational continuity.
 
 ---
 

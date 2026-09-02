@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9464 Fakten** · Stand 2026-09-02 06:32 UTC · aktualisiert bei jedem Herzschlag
+**9469 Fakten** · Stand 2026-09-02 07:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5055
+- **dream:** 5060
 - **swarm_artifact:** 2039
 - **last_swarm_critique:** 693
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902065850:5:180131`
+*02.09. 06:58 UTC · Quelle: dream*
+
+Automatic event pruning (85 events) maintains performance but fact retention remains untouched, creating asymmetric memory decay.
+
+### `dream:20260902065850:4:23fcb4`
+*02.09. 06:58 UTC · Quelle: dream*
+
+Hand actions fail when 'gelesen' is 0 but succeed when input is present, revealing a missing pre-flight input validation.
+
+### `dream:20260902065850:3:20b476`
+*02.09. 06:58 UTC · Quelle: dream*
+
+Swarm topology with 1 planner, 3 builders, 1 critic achieves rapid convergence (1 cycle) and high score (9) for error-reduction goals.
+
+### `dream:20260902065850:2:219c68`
+*02.09. 06:58 UTC · Quelle: dream*
+
+Calibration consistently underestimates task duration by ~2x for data-processing goals, indicating a missing complexity multiplier.
+
+### `dream:20260902065850:1:86dc9c`
+*02.09. 06:58 UTC · Quelle: dream*
+
+Rate limiting (429) on free-tier models is a systemic failure mode that requires proactive fallback rather than reactive retry.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Zuverlässigkeit d:2`
 *02.09. 06:30 UTC · Quelle: evolution*
