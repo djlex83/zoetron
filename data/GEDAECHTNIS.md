@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9911 Fakten** · Stand 2026-09-02 19:30 UTC · aktualisiert bei jedem Herzschlag
+**9928 Fakten** · Stand 2026-09-02 19:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5375
-- **swarm_artifact:** 2113
-- **last_swarm_critique:** 706
-- **anti_pattern:** 615
-- **last_swarm_goal:** 454
-- **strategy:** 328
-- **tool:** 122
+- **dream:** 5380
+- **swarm_artifact:** 2119
+- **last_swarm_critique:** 707
+- **anti_pattern:** 617
+- **last_swarm_goal:** 455
+- **strategy:** 329
+- **tool:** 123
 - **hand_result:** 106
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-besser-prüfen`
+*02.09. 19:44 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten besser prüfen'. Datei: data/tools/vorgeschlagene-fähigkeiten-besser-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:1`
+*02.09. 19:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 5, 7]): Semantic Embedding & Vector Retrieval - Replace substring search with semantic matching: embed 'vorgeschlagene Fähigkeit' descriptions and memory entries using sentence transformers (e.g., paraphrase-multilingual-mpne
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:0`
+*02.09. 19:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 8, 8]): Declarative Configuration & Plugin Architecture - Externalize all scoring weights, thresholds, and matching rules into versioned YAML/JSON configs with schema validation. Implement a plugin interface (IPruefModul) tha
+
+### `last_swarm_critique`
+*02.09. 19:43 UTC · Quelle: critic*
+
+score=7; issues=Benchmark-Scoring ist willkärlich hardcodet (Gewichte 4/3/2/1) ohne Konfiguration oder Kalibrierung; Keine Integration mit bestehenden Prüfmodulen (werkzeugpruefung, benchmark_organ, konvergenztor) aus Artefakten 1&2 - Pipeline steht isoliert; 
+
+### `last_swarm_goal`
+*02.09. 19:36 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten besser prüfen
+
+### `dream:20260902193629:5:09c61b`
+*02.09. 19:36 UTC · Quelle: dream*
+
+Pruning removed 52 events but 0 facts, suggesting event-level noise dominates while factual knowledge remains stable during this task type.
+
+### `dream:20260902193629:4:7b532d`
+*02.09. 19:36 UTC · Quelle: dream*
+
+The swarm converged in 1 cycle with score 9 despite multiple model failures mid-execution, proving the planner/builder/critic role distribution is resilient to partial model unavailability.
+
+### `dream:20260902193629:3:8f3eea`
+*02.09. 19:36 UTC · Quelle: dream*
+
+Nvidia nemotron-3-ultra succeeds but at 44s latency, while inclusionai/ling-3.0-flash-fin delivers comparable quality at 14.6s, revealing a latency-quality tradeoff not captured by model selection logic.
+
+### `dream:20260902193629:2:94bae7`
+*02.09. 19:36 UTC · Quelle: dream*
+
+Calibration error of 5 points (predicted 4 vs actual 9) indicates the scoring predictor systematically underestimates task difficulty when artifacts are large (224 lines).
+
+### `dream:20260902193629:1:909e6b`
+*02.09. 19:36 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading 429 rate-limit failures that propagate across multiple providers simultaneously, making single-model reliance untenable.
 
 ### `dream:20260902192840:5:e4bce2`
 *02.09. 19:28 UTC · Quelle: dream*

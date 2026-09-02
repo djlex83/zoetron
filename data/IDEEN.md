@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 52 events but 0 facts, suggesting event-level noise dominates while factual knowledge remains stable during this task type.
+- The swarm converged in 1 cycle with score 9 despite multiple model failures mid-execution, proving the planner/builder/critic role distribution is res
+- Nvidia nemotron-3-ultra succeeds but at 44s latency, while inclusionai/ling-3.0-flash-fin delivers comparable quality at 14.6s, revealing a latency-qu
+- Calibration error of 5 points (predicted 4 vs actual 9) indicates the scoring predictor systematically underestimates task difficulty when artifacts a
+- Free-tier models exhibit cascading 429 rate-limit failures that propagate across multiple providers simultaneously, making single-model reliance unten
 - The simulation step with a 'revise' verdict and 5 forced revisions acted as an effective pre-flight safety net, catching risks before irreversible han
 - Latency escalation from 11s to 276s across successive nemotron calls signals degrading upstream capacity, demanding early timeout thresholds and autom
 - Operating at metabolism stress=1.0 with a budget of max 1 iteration eliminated all recovery headroom, turning transient API errors into cascading fail
@@ -51,11 +56,6 @@
 - Generated knowledge (proposals, analyses) decays into staleness when not operationalized within a bounded timeframe.
 - Reflex-based execution consistently converges where model-dependent execution fails under load, making reflex patterns the more reliable execution pat
 - Model endpoint failures (429 rate limits) are the primary blocker of system autonomy and require automatic failover rather than manual retry.
-- Stale goals (market analysis, model reliability) persist across cycles because failure signals don't automatically escalate to architectural fixes.
-- Fifty skill proposals exist but remain unvalidated; the simulation reflex proves a viable test path yet isn't triggered automatically for new proposal
-- Reflex-based tools (market analysis update, skill simulation) succeed when invoked, but the system lacks an orchestration layer to chain them reliably
-- The only working model (nvidia/nemotron-3-ultra) exhibits high latency (17-35s), creating a throughput bottleneck for autonomous operation.
-- Free-tier model endpoints (z-ai/glm-5.2:free) consistently fail with 429 rate-limit errors, making them unreliable as primary inference providers.
 
 ---
 
