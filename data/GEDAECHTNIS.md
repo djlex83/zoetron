@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9659 Fakten** · Stand 2026-09-02 12:25 UTC · aktualisiert bei jedem Herzschlag
+**9664 Fakten** · Stand 2026-09-02 12:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5200
+- **dream:** 5205
 - **swarm_artifact:** 2065
 - **last_swarm_critique:** 698
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902123216:5:9fef8d`
+*02.09. 12:32 UTC · Quelle: dream*
+
+Simulation-driven development requires multiple revision cycles (3 revisions) before artifacts pass validation.
+
+### `dream:20260902123216:4:58a32a`
+*02.09. 12:32 UTC · Quelle: dream*
+
+Risk calibration consistently underestimates actual complexity (predicted 3 risks vs 7 actual, error of 4).
+
+### `dream:20260902123216:3:de198f`
+*02.09. 12:32 UTC · Quelle: dream*
+
+Ling-3.0-flash-fin provides the best speed/reliability tradeoff among free models (3.4s latency, consistent success).
+
+### `dream:20260902123216:2:103e41`
+*02.09. 12:32 UTC · Quelle: dream*
+
+Nemotron-3-ultra is the most reliable free model but exhibits high latency variance (26–105s) and occasional 502 upstream overloads.
+
+### `dream:20260902123216:1:72824f`
+*02.09. 12:32 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive rate limiting (429 errors) making them unreliable for production workloads.
 
 ### `dream:20260902122346:5:5f7478`
 *02.09. 12:23 UTC · Quelle: dream*
