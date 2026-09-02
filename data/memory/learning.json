@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 05:04:17",
+ "stand": "2026-09-02 05:24:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -319,6 +319,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "marktanalyse-endlich-nutzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.731,

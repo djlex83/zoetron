@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9409 Fakten** · Stand 2026-09-02 05:05 UTC · aktualisiert bei jedem Herzschlag
+**9414 Fakten** · Stand 2026-09-02 05:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5020
+- **dream:** 5025
 - **swarm_artifact:** 2027
 - **last_swarm_critique:** 691
 - **anti_pattern:** 603
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902052439:5:12f655`
+*02.09. 05:24 UTC · Quelle: dream*
+
+Pruning removes dozens of events per cycle, yet stale-work sweeps are absent, leaving unfinished tasks to consume attention and storage.
+
+### `dream:20260902052439:4:1d09df`
+*02.09. 05:24 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a mandatory live-validation gate, so untested code can enter the registry.
+
+### `dream:20260902052439:3:6f01ca`
+*02.09. 05:24 UTC · Quelle: dream*
+
+Swarm executions often finish without convergence (score 6, converged=false), indicating the critic/planner loop needs stronger stopping criteria.
+
+### `dream:20260902052439:2:6a43ba`
+*02.09. 05:24 UTC · Quelle: dream*
+
+Consecutive 429 errors trigger long model-level lockouts (e.g., 1800 s), so retry logic must back off before the provider enforces a ban.
+
+### `dream:20260902052439:1:943f24`
+*02.09. 05:24 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary workers without automatic fallback.
 
 ### `tool:veraltete-marktdaten-regelaessig-aktuali`
 *02.09. 05:04 UTC · Quelle: hands*

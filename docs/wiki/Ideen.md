@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 05:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 05:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes dozens of events per cycle, yet stale-work sweeps are absent, leaving unfinished tasks to consume attention and storage.
+- Skill proposals accumulate but lack a mandatory live-validation gate, so untested code can enter the registry.
+- Swarm executions often finish without convergence (score 6, converged=false), indicating the critic/planner loop needs stronger stopping criteria.
+- Consecutive 429 errors trigger long model-level lockouts (e.g., 1800 s), so retry logic must back off before the provider enforces a ban.
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary workers without automatic fallback.
 - Swarm goals fail silently when input paths are misconfigured, indicating a need for pre-execution validation of file and directory references.
 - Telemetry logs are generated but not analyzed in real-time, missing opportunities to detect and isolate failing models before they block execution.
 - Drive goals decay without active reflexes or deadlines, leading to stagnation in critical improvement areas like error reduction and skill adoption.
@@ -51,11 +56,6 @@
 - Latency for free models varies wildly (7.7s to 88.3s), making p95 latency an unreliable SLA without circuit breakers and timeout enforcement.
 - Upstream 502 errors from Nvidia endpoints demonstrate that even non-rate-limited models suffer from provider-side overload, requiring automatic failov
 - Rate limiting (429) is the dominant failure mode across multiple free-tier models on OpenRouter, indicating a systemic capacity constraint rather than
-- Resource-constrained 'conserve' mode (stress=1.0, max 1 iteration) demands strict single-task prioritization to avoid spreading effort too thin.
-- Unfinished analysis work blocks storage and cognitive bandwidth; stale tasks must be archived or deleted rather than allowed to linger indefinitely.
-- The system generates high-quality skill proposals but lacks a validation loop to test them, leaving 55 ideas untested and accumulating theoretical deb
-- Every GLM failure was instantly recovered by Nemotron, proving that a pre-configured secondary model with automatic failover eliminates single-point-o
-- Free-tier LLM endpoints (GLM, Gemma, Poolside) repeatedly hit 429 rate limits under load and must never be relied upon as primary models.
 
 ---
 

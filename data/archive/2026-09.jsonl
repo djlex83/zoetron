@@ -1735,3 +1735,58 @@
 {"ts": 1787719870.8538685, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.02}}
 {"ts": 1787719872.8753004, "kind": "issue_synced", "payload": {"issue": 64, "state": "open"}}
 {"ts": 1787719911.8354383, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787720958.2507303, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787720961.2038913, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787720961.2038882, "schalter_geoeffnet": false}}
+{"ts": 1787720961.5450914, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787720961.5450888, "schalter_geoeffnet": false}}
+{"ts": 1787720975.1747699, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 13.6, "tokens_ein": 1434, "tokens_aus": 1242}}
+{"ts": 1787720975.1753132, "kind": "skill_proposal", "payload": {"proposal": "quota_aware_router.py: track per-model 429 events with timestamps, demote repeatedly-limited models in fallback order for 15 minutes, and promote models with recent success streaks."}}
+{"ts": 1787720975.1753867, "kind": "skill_proposal", "payload": {"proposal": "act_checkpoint.py: wrap long-running act calls with periodic progress heartbeats and a soft deadline that triggers graceful partial-result capture before hard timeout at 1500s."}}
+{"ts": 1787720975.175463, "kind": "skill_proposal", "payload": {"proposal": "stress_gated_spawner.py: refuse to start new swarm tasks when metabolism stress exceeds 0.8 and defer them to a queue drained during recovery."}}
+{"ts": 1787720975.1755373, "kind": "skill_proposal", "payload": {"proposal": "proposal_trial_queue.py: maintain a FIFO of untried skill proposals, execute one per drive cycle in a time-boxed sandbox, and auto-retire proposals failing twice."}}
+{"ts": 1787720975.175607, "kind": "skill_proposal", "payload": {"proposal": "whisper_escalation.py: after 2 failed convergence attempts on a whisper, generate a concrete decision request with options and surface it prominently instead of parking silently."}}
+{"ts": 1787720975.1756804, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787720977.0269089, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787720977.0269048, "schalter_geoeffnet": false}}
+{"ts": 1787720977.5482092, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787720977.548207, "schalter_geoeffnet": false}}
+{"ts": 1787720990.92218, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 13.4, "tokens_ein": 471, "tokens_aus": 602}}
+{"ts": 1787720990.9224765, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert fast so oft wie es gelingt. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1787720990.9226506, "kind": "drive_goal", "payload": {"title": "Fähigkeiten in echte Handlungen umsetzen", "why": "Viele Vorschläge für neue Fähigkeiten liegen vor, aber echte Handlungen bleiben selten. Praxis bringt Fortschritt.", "signal": "gap"}}
+{"ts": 1787720990.9227972, "kind": "drive_goal", "payload": {"title": "Simulationen besser in Realität nutzen", "why": "Simulationen laufen oft, aber ihre Ergebnisse werden kaum angewendet. Der Transfer muss klappen.", "signal": "gap"}}
+{"ts": 1787720993.0603867, "kind": "swarm_started", "payload": {"goal": "Mehr Vorschläge wirklich ausprobieren"}}
+{"ts": 1787721000.2141726, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787721001.0591905, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787721001.5630565, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787721001.563054, "schalter_geoeffnet": false}}
+{"ts": 1787721001.95647, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787721001.9564672, "schalter_geoeffnet": false}}
+{"ts": 1787721007.970944, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 6.0, "tokens_ein": 1472, "tokens_aus": 487}}
+{"ts": 1787721010.9606833, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 2.8, "tokens_ein": 614, "tokens_aus": 56}}
+{"ts": 1787721011.4429362, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787721011.442934, "schalter_geoeffnet": false}}
+{"ts": 1787721011.812, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787721011.8119974, "schalter_geoeffnet": false}}
+{"ts": 1787721025.2824004, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 13.5, "tokens_ein": 278, "tokens_aus": 673}}
+{"ts": 1787721025.2827344, "kind": "simulation", "payload": {"goal": "Mehr Vorschläge wirklich ausprobieren", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1787721025.2829018, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787721025.7009945, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787721025.7009916, "schalter_geoeffnet": false}}
+{"ts": 1787721026.5200684, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787721026.5200646, "schalter_geoeffnet": false}}
+{"ts": 1787721043.2006521, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 16.7, "tokens_ein": 1671, "tokens_aus": 1756}}
+{"ts": 1787721165.2211075, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 122.0, "tokens_ein": 2097, "tokens_aus": 3091}}
+{"ts": 1787721165.7688491, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787721165.7688468, "schalter_geoeffnet": false}}
+{"ts": 1787721166.0956059, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787721166.0956028, "schalter_geoeffnet": false}}
+{"ts": 1787721208.1737676, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 42.1, "tokens_ein": 2507, "tokens_aus": 2767}}
+{"ts": 1787721208.601186, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.33}}
+{"ts": 1787721208.9204063, "kind": "hand_action", "payload": {"ok": false, "exit": 2, "error": null, "duration_s": 0.32}}
+{"ts": 1787721209.242047, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.32}}
+{"ts": 1787721209.242243, "kind": "tor", "payload": {"goal": "Mehr Vorschläge wirklich ausprobieren", "gruen": false, "grund": "Artefakt laeuft nicht: [ERROR] Proposals directory not found: proposals\n | /workspace/zoetron/data/hands_workspace/action_1787721208601.py:70: SyntaxWarning: \"is not\" with 'str' literal. Did you ", "zyklus": 1}}
+{"ts": 1787721235.7705991, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 26.4, "tokens_ein": 6976, "tokens_aus": 659}}
+{"ts": 1787721235.7714403, "kind": "calibration", "payload": {"goal": "Mehr Vorschläge wirklich ausprobieren", "predicted": 6, "actual": 5, "abs_error": 1}}
+{"ts": 1787721235.7715116, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 5}}
+{"ts": 1787721235.771789, "kind": "bahnen", "payload": {"goal": "Mehr Vorschläge wirklich ausprobieren", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 6, "ids": ["e:618463ab4179", "e:bb36b02353cb", "e:8f6780a8b9b3", "e:3cfdb9c0b465", "e:9d71d993df00", "e:bb6600dd88dd"], "ziel_id": "g:8174d0749757"}}
+{"ts": 1787721262.8638983, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 27.1, "tokens_ein": 186, "tokens_aus": 603}}
+{"ts": 1787721268.6960797, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 5.8, "tokens_ein": 697, "tokens_aus": 124}}
+{"ts": 1787721268.6964364, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Mehr Vorschläge wirklich ausprobieren\nCritic issues: Critic output unparseable.\nDevi", "variants": 3, "winner_index": 1, "scores": [6, 9, 8]}}
+{"ts": 1787721276.1244223, "kind": "recall", "payload": {"keys": ["strategy:mehr_vorschläge_wirklich_ausprobieren"]}}
+{"ts": 1787721279.9399903, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 2.9, "tokens_ein": 606, "tokens_aus": 51}}
+{"ts": 1787721302.008901, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 21.9, "tokens_ein": 464, "tokens_aus": 296}}
+{"ts": 1787721302.0090537, "kind": "simulation", "payload": {"goal": "Mehr Vorschläge wirklich ausprobieren", "verdict": "go", "risks": 3, "revisions": 2}}
+{"ts": 1787721302.0091522, "kind": "swarm_finished", "payload": {"goal": "Mehr Vorschläge wirklich ausprobieren", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787721302.0093358, "kind": "act_done", "payload": {"goal_title": "Mehr Vorschläge wirklich ausprobieren", "score": 5, "converged": false}}
+{"ts": 1787721302.448335, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.34}}
+{"ts": 1787721304.8089664, "kind": "issue_synced", "payload": {"issue": 122, "state": "open"}}
+{"ts": 1787721344.8112469, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
