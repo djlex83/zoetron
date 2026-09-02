@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Relative file paths in tool calls cause silent failures when the working directory shifts; binding all I/O to an explicit base (ZOETRON_DATA) at call 
+- Latency variance (12s vs 34s) for successful calls indicates missing per-task SLO enforcement; without a budget guard, low-priority work starves criti
+- Skill proposals accumulate faster than they are deployed; the gap between proposal and atomic registration with rollback is the primary bottleneck for
+- Self-diagnosis reporting 'no organ errors' while sustained 429s occur across models reveals a blind spot: cross-organ failure signatures (e.g., coordi
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production without a health-aware router that tracks per-mode
 - Goals converge via reflex actions without measurable scores, making it impossible to distinguish genuine improvement from mere task completion.
 - Event pruning removes dozens of records while zero facts are pruned, causing the fact store to accumulate unevaluated observations that dilute signal 
 - Self-diagnosis reports zero organ errors despite repeated external API failures, indicating that infrastructure-level degradation is invisible to the 
@@ -51,11 +56,6 @@
 - Evolution runs improve scores (7→9) but swarm convergence remains false after 2 cycles, suggesting the fitness function or stopping criteria are misal
 - The critic consistently flags unbounded loops (while True:) as a forbidden pattern, yet generated code still produces them, indicating a missing synta
 - Free-tier endpoints exhibit burst 429/502 failures that cluster in time, making naive round-robin routing ineffective without shared quota awareness.
-- Simulation-driven development requires multiple revision cycles (3 revisions) before artifacts pass validation.
-- Risk calibration consistently underestimates actual complexity (predicted 3 risks vs 7 actual, error of 4).
-- Ling-3.0-flash-fin provides the best speed/reliability tradeoff among free models (3.4s latency, consistent success).
-- Nemotron-3-ultra is the most reliable free model but exhibits high latency variance (26–105s) and occasional 502 upstream overloads.
-- Free-tier models on OpenRouter suffer pervasive rate limiting (429 errors) making them unreliable for production workloads.
 
 ---
 

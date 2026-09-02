@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9683 Fakten** · Stand 2026-09-02 13:00 UTC · aktualisiert bei jedem Herzschlag
+**9688 Fakten** · Stand 2026-09-02 13:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5215
+- **dream:** 5220
 - **swarm_artifact:** 2071
 - **last_swarm_critique:** 699
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902130819:5:8ea56d`
+*02.09. 13:08 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260902130819:4:e780d5`
+*02.09. 13:08 UTC · Quelle: dream*
+
+Latency variance (12s vs 34s) for successful calls indicates missing per-task SLO enforcement; without a budget guard, low-priority work starves critical paths before stress=1.0.
+
+### `dream:20260902130819:3:98af71`
+*02.09. 13:08 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are deployed; the gap between proposal and atomic registration with rollback is the primary bottleneck for capability growth.
+
+### `dream:20260902130819:2:daf366`
+*02.09. 13:08 UTC · Quelle: dream*
+
+Self-diagnosis reporting 'no organ errors' while sustained 429s occur across models reveals a blind spot: cross-organ failure signatures (e.g., coordinated rate-limiting) are invisible to per-organ health checks.
+
+### `dream:20260902130819:1:15864c`
+*02.09. 13:08 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for production without a health-aware router that tracks per-model error rates and latency percentiles.
 
 ### `tool:modellfehler-finden-und-beheben`
 *02.09. 12:58 UTC · Quelle: hands*
