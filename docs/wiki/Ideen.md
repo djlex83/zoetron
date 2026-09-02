@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 10:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 10:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,19 +17,19 @@
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
 - Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceedi *(hatte die Idee 3×)*
-- Implement a quota-aware model router that tracks per-endpoint rate-limit headers, enforces cooldowns after 429 *(hatte die Idee 2×)*
-- Build a skill graduation pipeline: proposal → simulation test → dry-run on shadow traffic → canary deployment  *(hatte die Idee 2×)*
-- Add external dependency health monitors that feed into self-diagnosis, treating API error rates as organ-level *(hatte die Idee 2×)*
+- Implement ModelRouter with per-provider health scoring (success rate, 429 frequency, latency p95) and automati *(hatte die Idee 3×)*
+- Build RateLimitAwareScheduler that spaces requests per provider using token-bucket estimators derived from obs *(hatte die Idee 3×)*
+- Create CodeValidationGate that parses, type-checks, and sandbox-runs all code blocks before skill registration *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High metabolic stress (1.0) triggers conserve mode that caps task throughput, amplifying latency impact of slow fallback models.
+- Skill proposals accumulate without validation gates, leaving untested code candidates that cannot be trusted for production registration.
+- Organ-level diagnostics report clean while system-level model failures persist, revealing a monitoring blind spot between component and system health.
+- Hand actions fail when using relative paths instead of resolving against ZOETRON_DATA or sys.argv[1], causing silent zero-byte reads.
+- Rate limiting (429) affects multiple providers simultaneously, indicating systemic quota exhaustion rather than isolated provider failure.
 - Silent hand-action failures (exit 1, 0 bytes read) indicate missing pre-execution validation and health-check gates before downstream actions.
 - 502 upstream errors from Nvidia providers signal provider-side saturation, requiring provider diversification rather than naive retry loops.
 - A final swarm score of 1 despite a best variant score of 8.7 indicates the evolution mechanism fails to aggregate individual improvements into coheren
@@ -51,11 +56,6 @@
 - Reflex tool execution failed despite valid goal, showing need for pre-registration validation gates.
 - Hand action failure due to unresolved data paths indicates fragile path resolution needing abstraction.
 - Sustained 429 errors across four providers reveal missing request scheduling and per-provider health tracking.
-- Drive goals correctly identify systemic issues (model errors, stale knowledge, implementation gap) but lack automated execution loops to close them.
-- Event pruning (38 events/run) without fact pruning suggests experience accumulation outpaces knowledge distillation, risking memory bloat.
-- The system successfully self-implemented proposed skills via reflex-driven hand action, proving autonomous capability deployment works end-to-end.
-- Free-tier models exhibit high failure rates (429, 502) and latency variance (12-20s), making them unreliable for production workloads.
-- OpenRouter gateway creates a single point of failure causing correlated 429 errors across all routed models simultaneously.
 
 ---
 

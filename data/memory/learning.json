@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-02 10:19:04",
+ "stand": "2026-09-02 10:40:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {

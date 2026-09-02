@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9592 Fakten** · Stand 2026-09-02 10:20 UTC · aktualisiert bei jedem Herzschlag
+**9597 Fakten** · Stand 2026-09-02 10:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5145
+- **dream:** 5150
 - **swarm_artifact:** 2059
 - **last_swarm_critique:** 697
 - **anti_pattern:** 609
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902103939:5:d6e3a8`
+*02.09. 10:39 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers conserve mode that caps task throughput, amplifying latency impact of slow fallback models.
+
+### `dream:20260902103939:4:9723e4`
+*02.09. 10:39 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates, leaving untested code candidates that cannot be trusted for production registration.
+
+### `dream:20260902103939:3:85332a`
+*02.09. 10:39 UTC · Quelle: dream*
+
+Organ-level diagnostics report clean while system-level model failures persist, revealing a monitoring blind spot between component and system health.
+
+### `dream:20260902103939:2:f4c0cd`
+*02.09. 10:39 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of resolving against ZOETRON_DATA or sys.argv[1], causing silent zero-byte reads.
+
+### `dream:20260902103939:1:65f8a3`
+*02.09. 10:39 UTC · Quelle: dream*
+
+Rate limiting (429) affects multiple providers simultaneously, indicating systemic quota exhaustion rather than isolated provider failure.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Gründe für häufige Model:2`
 *02.09. 10:18 UTC · Quelle: evolution*
