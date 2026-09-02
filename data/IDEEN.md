@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation step with a 'revise' verdict and 5 forced revisions acted as an effective pre-flight safety net, catching risks before irreversible han
+- Latency escalation from 11s to 276s across successive nemotron calls signals degrading upstream capacity, demanding early timeout thresholds and autom
+- Operating at metabolism stress=1.0 with a budget of max 1 iteration eliminated all recovery headroom, turning transient API errors into cascading fail
+- Simultaneous 429 errors across multiple OpenRouter providers indicate a systemic rate-limit event, not a model-specific failure, requiring global back
+- Path resolution using relative paths against sys.argv[1] and environment variables failed silently because the cwd did not match the expected data roo
 - Path resolution failures in hand actions reveal that input handling must explicitly declare data source locations rather than relying on implicit rela
 - Event accumulation without fact consolidation (38 events pruned, 0 facts) indicates passive recording over active learning.
 - Generated knowledge (proposals, analyses) decays into staleness when not operationalized within a bounded timeframe.
@@ -51,11 +56,6 @@
 - Reflex-based tools (market analysis update, skill simulation) succeed when invoked, but the system lacks an orchestration layer to chain them reliably
 - The only working model (nvidia/nemotron-3-ultra) exhibits high latency (17-35s), creating a throughput bottleneck for autonomous operation.
 - Free-tier model endpoints (z-ai/glm-5.2:free) consistently fail with 429 rate-limit errors, making them unreliable as primary inference providers.
-- Fifty skill proposals exist without validation lifecycle, creating proposal debt that clogs planning and prevents proven capabilities from emerging.
-- Model failure rate of 57% (63 failures vs 47 successes) exceeds reliability thresholds for any production workload, requiring systemic mitigation not 
-- Swarm execution evolved but failed to converge (score 1, converged=false), revealing missing termination criteria or insufficient reward signals for k
-- Fallback chains collapse when all configured models route through the same rate-limited gateway, making provider diversity meaningless without infrast
-- Correlated 429 errors across Google, Z.ai, and Nvidia providers indicate shared upstream rate-limiting infrastructure rather than independent provider
 
 ---
 

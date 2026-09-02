@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9906 Fakten** · Stand 2026-09-02 19:22 UTC · aktualisiert bei jedem Herzschlag
+**9911 Fakten** · Stand 2026-09-02 19:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5370
+- **dream:** 5375
 - **swarm_artifact:** 2113
 - **last_swarm_critique:** 706
 - **anti_pattern:** 615
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902192840:5:e4bce2`
+*02.09. 19:28 UTC · Quelle: dream*
+
+The simulation step with a 'revise' verdict and 5 forced revisions acted as an effective pre-flight safety net, catching risks before irreversible hand_actions were committed.
+
+### `dream:20260902192840:4:8c1a34`
+*02.09. 19:28 UTC · Quelle: dream*
+
+Latency escalation from 11s to 276s across successive nemotron calls signals degrading upstream capacity, demanding early timeout thresholds and automatic model rotation.
+
+### `dream:20260902192840:3:d86a1f`
+*02.09. 19:28 UTC · Quelle: dream*
+
+Operating at metabolism stress=1.0 with a budget of max 1 iteration eliminated all recovery headroom, turning transient API errors into cascading failures.
+
+### `dream:20260902192840:2:760e0c`
+*02.09. 19:28 UTC · Quelle: dream*
+
+Simultaneous 429 errors across multiple OpenRouter providers indicate a systemic rate-limit event, not a model-specific failure, requiring global backoff rather than per-model fallback.
+
+### `dream:20260902192840:1:1d5fd9`
+*02.09. 19:28 UTC · Quelle: dream*
+
+Path resolution using relative paths against sys.argv[1] and environment variables failed silently because the cwd did not match the expected data root — absolute path verification is required before any file-reading action.
 
 ### `dream:20260902192105:5:e78bea`
 *02.09. 19:21 UTC · Quelle: dream*
