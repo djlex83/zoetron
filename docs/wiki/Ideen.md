@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 09:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 09:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
 - Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceedi *(hatte die Idee 3×)*
-- Build a calibration correction layer that learns systematic prediction bias per goal type from historical pred *(hatte die Idee 2×)*
 - Deploy a model router with per-model token-bucket rate limiters calibrated to observed 429 thresholds, automat *(hatte die Idee 2×)*
 - Add mandatory response-body validation for all model calls to detect upstream errors (e.g., 502 in 200 OK) and *(hatte die Idee 2×)*
+- Codify a reflex-based systematic fixing template capturing recurring error classes, detection signatures, and  *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -28,12 +28,12 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors across all cycles while model-layer failures persist, meaning health checks miss external dependency failures
+- Three completed market analyses remain unleveraged despite explicit drive goals to use them, showing output artifacts decay without forced integration
+- Goals consistently converge via reflex-mode tool execution (marktanalyse-endlich-nutzen.py, veraltete-marktanalyse-auffrischen.py) rather than deliber
+- Five concrete skill proposals exist (calibration corrector, model-router, swarm optimizer, stale-goal reaper, pre-flight check) but none have been imp
+- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, proving single-provider reliance cau
 - Reflex-driven learning executed without validation gates, risking integration of untested code into the skill graph.
 - Multiple independent skill proposals converge on circuit-breaker routing, rate-limit scheduling, and deployment automation, signaling architectural co
 - Successful calls (ling-3.0-flash-fin, nemotron-3-ultra) show 13-26s latency, indicating that any routing strategy must tolerate high variance.
@@ -51,11 +56,6 @@
 - Nvidia's 502 upstream errors reveal provider-level instability that model-level fallbacks cannot mitigate.
 - 429 errors hit multiple models simultaneously indicating shared quota exhaustion rather than per-model limits.
 - All failing models route through OpenRouter creating a single gateway bottleneck that amplifies rate limits across providers.
-- Event pruning (92 events) without fact loss shows the memory decay policy preserves semantic knowledge while discarding operational noise.
-- Calibration consistently underestimates actual scores (predicted 7 vs actual 9), indicating a systematic pessimism bias in the predictor.
-- Swarm convergence in one cycle with 1 planner, 3 builders, 1 critic suggests the current role ratio is sufficient for well-scoped goals.
-- NVIDIA Nemotron and InclusionAI Ling served as effective fallbacks when Google, Poolside, and Z.ai models throttled.
-- Free-tier model endpoints consistently hit 429 rate limits under sustained load, making single-provider reliance unreliable.
 
 ---
 
