@@ -1,12 +1,12 @@
 {
- "stand": 1788374843.753383,
+ "stand": 1788375430.0761409,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 2771,
-   "fehler": 578,
-   "fehler_in_folge": 0,
+   "laeufe": 2772,
+   "fehler": 579,
+   "fehler_in_folge": 1,
    "gesperrt_bis": 0.0,
    "latenz_summe_s": 99985.17864322662,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
@@ -31,7 +31,7 @@
    "latenz_summe_s": 231.03127098083496,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 752
+   "kontofehler": 753
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 10,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 417.6829409599304,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 733
+   "kontofehler": 734
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -54,14 +54,14 @@
    "kontofehler": 200
   },
   "z-ai/glm-5.2:free": {
-   "laeufe": 116,
+   "laeufe": 117,
    "fehler": 6,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 426.5945348739624,
+   "latenz_summe_s": 429.74465131759644,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 2851
+   "kontofehler": 2852
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -148,11 +148,11 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 335,
+   "laeufe": 336,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 4446.114950418472,
+   "latenz_summe_s": 4460.691272497177,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   },

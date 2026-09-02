@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9886 Fakten** · Stand 2026-09-02 18:48 UTC · aktualisiert bei jedem Herzschlag
+**9891 Fakten** · Stand 2026-09-02 18:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5350
+- **dream:** 5355
 - **swarm_artifact:** 2113
 - **last_swarm_critique:** 706
 - **anti_pattern:** 615
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902185704:5:56ea11`
+*02.09. 18:57 UTC · Quelle: dream*
+
+The evolutionary approach shows promise (variant scores 5-9 vs baseline 1/10) but cannot realize gains while the underlying artifact remains non-functional.
+
+### `dream:20260902185704:4:2a96d8`
+*02.09. 18:57 UTC · Quelle: dream*
+
+Hand actions fail uniformly with exit code 1 regardless of input size or duration, indicating a systemic tool-interface failure rather than an input problem.
+
+### `dream:20260902185704:3:35042e`
+*02.09. 18:57 UTC · Quelle: dream*
+
+Performance calibration is severely miscalibrated (predicted 7 vs actual 1, abs_error 6), meaning self-assessments cannot be trusted without recalibration.
+
+### `dream:20260902185704:2:7247f7`
+*02.09. 18:57 UTC · Quelle: dream*
+
+The execution sandbox artifact is broken ('Artefakt laeuf'), blocking all hand actions (exit code 1) and causing evolution runs to score 1/10 despite variant scores of 5-9.
+
+### `dream:20260902185704:1:1656aa`
+*02.09. 18:57 UTC · Quelle: dream*
+
+Free-tier OpenRouter models (z-ai/glm-5.2, google/gemma-4-31b-it) fail consistently with 429 rate-limit errors, making nvidia/nemotron-3-ultra-550b-a55b:free the only reliable model but with high latency (23-126s) and occasional 502 upstream overloads.
 
 ### `tool:alte-daten-durch-neue-fakten-ersetzen`
 *02.09. 18:47 UTC · Quelle: hands*

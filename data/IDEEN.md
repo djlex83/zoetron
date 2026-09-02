@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 18:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 18:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The evolutionary approach shows promise (variant scores 5-9 vs baseline 1/10) but cannot realize gains while the underlying artifact remains non-funct
+- Hand actions fail uniformly with exit code 1 regardless of input size or duration, indicating a systemic tool-interface failure rather than an input p
+- Performance calibration is severely miscalibrated (predicted 7 vs actual 1, abs_error 6), meaning self-assessments cannot be trusted without recalibra
+- The execution sandbox artifact is broken ('Artefakt laeuf'), blocking all hand actions (exit code 1) and causing evolution runs to score 1/10 despite 
+- Free-tier OpenRouter models (z-ai/glm-5.2, google/gemma-4-31b-it) fail consistently with 429 rate-limit errors, making nvidia/nemotron-3-ultra-550b-a5
 - Pruning removes event noise (28 events) but no fact decay policy exists for stale model-health knowledge, risking routing decisions on outdated data.
 - Current reflex system reacts to failures post-hoc rather than proactively routing around known-degraded endpoints before calling models.
 - The swarm's self-chosen goal "understand frequent model errors" perfectly predicted the observed failure rate (calibration error 0), indicating accura
@@ -51,11 +56,6 @@
 - The swarm completed its goal (calibration error 0, tor grün) despite 70% model-call failures, proving resilience through model diversity and conservat
 - Nemotron-3-Ultra succeeds consistently but exhibits extreme latency variance (14–217 s), indicating queue-depth sensitivity rather than model failure.
 - Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary workers.
-- Cross-provider failure correlation (simultaneous 429s) goes undetected, missing systemic rate-limit signals.
-- File path resolution fails when relative paths diverge from data root, requiring absolute path anchoring.
-- Skill proposals accumulate without enforced lifecycle, creating a 65-proposal backlog with near-zero implementation rate.
-- System stress at maximum triggers conservative mode but lacks automated degradation policies for model calls.
-- Provider-specific rate limits (429 errors) persist without automatic exclusion, wasting retries on doomed calls.
 
 ---
 
