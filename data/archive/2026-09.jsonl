@@ -3549,3 +3549,32 @@
 {"ts": 1787758211.1391032, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787758211.1391003, "schalter_geoeffnet": false}}
 {"ts": 1787758290.3524163, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 79.2, "tokens_ein": 501, "tokens_aus": 979}}
 {"ts": 1787758291.0684516, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787758291.068448, "schalter_geoeffnet": false}}
+{"ts": 1787758392.5259883, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 101.5, "tokens_ein": 476, "tokens_aus": 842}}
+{"ts": 1787758392.526252, "kind": "simulation", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "verdict": "revise", "risks": 4, "revisions": 4}}
+{"ts": 1787758392.5264103, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787758392.5265458, "kind": "swarm_finished", "payload": {"goal": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "score": 1, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787758392.5268114, "kind": "act_done", "payload": {"goal_title": "Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten", "score": 1, "converged": false}}
+{"ts": 1787758392.7656674, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03, "gelesen": 0}}
+{"ts": 1787758394.6875577, "kind": "issue_synced", "payload": {"issue": 111, "state": "open"}}
+{"ts": 1787758401.6964972, "kind": "fussball_abgelehnt", "payload": {"title": "Fußball: Einreichung zoetron_f15fbd279b.py am Vertrag gescheitert", "einreichung": "zoetron_f15fbd279b.py", "grund": "IndentationError: unindent does not match any outer indentation level"}}
+{"ts": 1787758804.4242349, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 0.9, "tokens_ein": 25, "tokens_aus": 173}}
+{"ts": 1787758523.4096117, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787758540.3896685, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787758542.6454816, "kind": "skill_proposal", "payload": {"proposal": "Before building, check memory for prior artifacts on the same topic."}}
+{"ts": 1787758542.6455667, "kind": "dream_finished", "payload": {"insights": 2, "skill_proposals": 1}}
+{"ts": 1787758543.7366784, "kind": "drive_goal", "payload": {"title": "Explore unknown territory", "why": "Memory shows few events in this area; high information gain.", "signal": "gap"}}
+{"ts": 1787758543.7367756, "kind": "drive_goal", "payload": {"title": "Test a capability limit", "why": "Calibration data is thin; probing limits sharpens self-knowledge.", "signal": "gap"}}
+{"ts": 1787758543.736827, "kind": "drive_goal", "payload": {"title": "Connect two distant memories", "why": "Novel combinations often yield the biggest insights.", "signal": "gap"}}
+{"ts": 1787758544.8451135, "kind": "drive_mission", "payload": {"title": "Ein Gedächtnis aufbauen, das Bedeutung versteht", "why": "Wort-Vergleich reicht nicht - Zoetron soll verwandte Ideen finden, auch wenn sie anders formuliert sind."}}
+{"ts": 1787758546.0873744, "kind": "swarm_started", "payload": {"goal": "Ein Gedächtnis aufbauen, das Bedeutung versteht"}}
+{"ts": 1787758546.1095793, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787758546.1155632, "kind": "metabolism_check", "payload": {"stress": 0.0, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
+{"ts": 1787758546.3420331, "kind": "simulation", "payload": {"goal": "Ein Gedächtnis aufbauen, das Bedeutung versteht", "verdict": "go", "risks": 0, "revisions": 1}}
+{"ts": 1787758546.3439624, "kind": "tor", "payload": {"goal": "Ein Gedächtnis aufbauen, das Bedeutung versteht", "gruen": false, "grund": "kein ausfuehrbarer Python-Block im Artefakt - Prosa allein konvergiert nicht", "zyklus": 1}}
+{"ts": 1787758546.3449695, "kind": "calibration", "payload": {"goal": "Ein Gedächtnis aufbauen, das Bedeutung versteht", "predicted": 7, "actual": 9, "abs_error": 2}}
+{"ts": 1787758546.345028, "kind": "tor_rot", "payload": {"goal": "Ein Gedächtnis aufbauen, das Bedeutung versteht", "score": 9, "grund": "kein ausfuehrbarer Python-Block im Artefakt - Prosa allein konvergiert nicht"}}
+{"ts": 1787758546.347227, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 9/10. Goal: Ein Gedächtnis aufbauen, das Bedeutung versteht\nCritic issues: \nDevise a fundamental", "variants": 3, "winner_index": 1, "scores": [7, 8, 6]}}
+{"ts": 1787758546.362786, "kind": "simulation", "payload": {"goal": "Ein Gedächtnis aufbauen, das Bedeutung versteht", "verdict": "go", "risks": 0, "revisions": 1}}
+{"ts": 1787758546.362894, "kind": "swarm_finished", "payload": {"goal": "Ein Gedächtnis aufbauen, das Bedeutung versteht", "score": 9, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787758546.3629584, "kind": "act_done", "payload": {"goal_title": "Ein Gedächtnis aufbauen, das Bedeutung versteht", "score": 9, "converged": false}}
+{"ts": 1787758548.548043, "kind": "issue_synced", "payload": {"issue": 145, "state": "open"}}

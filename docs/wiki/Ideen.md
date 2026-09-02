@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,7 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency exceeding the 75th percentile is an early warning signal that should trigger conservative mode before stress reaches critical levels.
+- Skill proposals generated from failure patterns only create value when they pass through a tested, rollback-capable deployment pipeline.
+- Stale analytical knowledge accumulates silently without timestamping or TTL-based pruning, degrading decision quality over time.
+- When multiple models fail simultaneously with 429/502 errors, the absence of a circuit-breaker and fallback mechanism causes cascading task failures.
+- Free-tier LLM APIs on shared infrastructure consistently hit rate limits and overload, making them unsuitable as sole dependencies for critical tasks.
 - Calibration consistently underestimates difficulty (predicted 4 vs actual 6), and critic identifies /dev/ usage as a concrete code defect.
 - The swarm evolution process stalls at score 6/10 with converged=false despite 2 cycles and 3 revisions applied.
 - InclusionAI/Ling-3.0-Flash-Fin is the only model completing requests successfully in this session.
@@ -51,11 +56,6 @@
 - When metabolic stress reaches 1.0, the system enters conserve mode with severely restricted budgets (max_tasks: 3, max_iterations: 1), which likely co
 - There is a systematic gap between skill proposal generation and skill execution — the system generates solutions but fails to implement them, turning 
 - The z-ai/glm-5.2:free model repeatedly returns 429 Too Many Requests errors, indicating rate-limiting is a persistent infrastructure issue requiring a
-- Pruning removes events but zero facts, indicating fact retention policy may be too aggressive or fact extraction is not happening during consolidation
-- Reflex scripts complete goals but are described as fragile; the system lacks a verified deployment pipeline with contract tests and atomic rollback fo
-- Multiple skill proposals already exist to fix observed failures (fallback chain, backoff, cache, pipeline, detector) but remain unimplemented, reveali
-- Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (39-115s), suggesting the fallback path lacks latency SLOs and may itself 
-- Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate-limiting that self-diagnosis misses because it only checks organ-level health, not c
 
 ---
 

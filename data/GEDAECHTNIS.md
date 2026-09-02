@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9768 Fakten** · Stand 2026-09-02 15:36 UTC · aktualisiert bei jedem Herzschlag
+**9773 Fakten** · Stand 2026-09-02 15:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5270
+- **dream:** 5275
 - **swarm_artifact:** 2089
 - **last_swarm_critique:** 702
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902154211:5:751c25`
+*02.09. 15:42 UTC · Quelle: dream*
+
+Latency exceeding the 75th percentile is an early warning signal that should trigger conservative mode before stress reaches critical levels.
+
+### `dream:20260902154211:4:76da6d`
+*02.09. 15:42 UTC · Quelle: dream*
+
+Skill proposals generated from failure patterns only create value when they pass through a tested, rollback-capable deployment pipeline.
+
+### `dream:20260902154211:3:3e26a4`
+*02.09. 15:42 UTC · Quelle: dream*
+
+Stale analytical knowledge accumulates silently without timestamping or TTL-based pruning, degrading decision quality over time.
+
+### `dream:20260902154211:2:852849`
+*02.09. 15:42 UTC · Quelle: dream*
+
+When multiple models fail simultaneously with 429/502 errors, the absence of a circuit-breaker and fallback mechanism causes cascading task failures.
+
+### `dream:20260902154211:1:8252c6`
+*02.09. 15:42 UTC · Quelle: dream*
+
+Free-tier LLM APIs on shared infrastructure consistently hit rate limits and overload, making them unsuitable as sole dependencies for critical tasks.
 
 ### `dream:20260902153355:5:4948b9`
 *02.09. 15:33 UTC · Quelle: dream*
