@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9994 Fakten** · Stand 2026-09-02 21:50 UTC · aktualisiert bei jedem Herzschlag
+**9999 Fakten** · Stand 2026-09-02 21:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5425
+- **dream:** 5430
 - **swarm_artifact:** 2131
 - **last_swarm_critique:** 709
 - **anti_pattern:** 619
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902215635:5:a7cec9`
+*02.09. 21:56 UTC · Quelle: dream*
+
+Fifty-eight proposed skills remain unverified as learned, creating a capability illusion where the system believes it has abilities it cannot actually invoke.
+
+### `dream:20260902215635:4:ef31cc`
+*02.09. 21:56 UTC · Quelle: dream*
+
+Reflex-driven script execution succeeds when paths are absolute, but relative paths fail silently without a ZOETRON_DATA prefix wrapper.
+
+### `dream:20260902215635:3:47b6de`
+*02.09. 21:56 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on the same reliability primitives (circuit breaker, retry-with-backoff, fallback chain), revealing a systemic gap in model-selection infrastructure.
+
+### `dream:20260902215635:2:de4b0e`
+*02.09. 21:56 UTC · Quelle: dream*
+
+Nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (9–30 s), indicating it cannot serve as a sole low-latency fallback.
+
+### `dream:20260902215635:1:5fdf9c`
+*02.09. 21:56 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors under load, making it unreliable for production routing.
 
 ### `dream:20260902214836:5:1a53d4`
 *02.09. 21:48 UTC · Quelle: dream*

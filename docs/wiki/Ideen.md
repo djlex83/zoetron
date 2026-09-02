@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -31,9 +31,9 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fifty-eight proposed skills remain unverified as learned, creating a capability illusion where the system believes it has abilities it cannot actually
+- Reflex-driven script execution succeeds when paths are absolute, but relative paths fail silently without a ZOETRON_DATA prefix wrapper.
+- Multiple independent skill proposals converge on the same reliability primitives (circuit breaker, retry-with-backoff, fallback chain), revealing a sy
+- Nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (9–30 s), indicating it cannot serve as a sole low-latency fallback.
+- Model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors under load, making it unreliable for production routing.
 - Latency varies significantly across models and over time (3.7s vs 9.3s), necessitating continuous health polling for routing decisions.
 - Fact TTL pruning policy exists but prunes zero facts, indicating access thresholds or time windows are miscalibrated.
 - Reflex execution succeeds when goal semantics match registered patterns, but lacks pre-deployment validation.
@@ -51,11 +56,6 @@
 - Reflex-based execution reliably achieves goals for known tasks, while general planning cycles show higher variability and occasional silent hand-actio
 - A persistent gap exists between skill proposal generation and actual implementation, limiting the system's capability growth over cycles.
 - Model provider rate limiting (429 errors) is the dominant recurring failure mode and requires systemic handling rather than per-call fixes.
-- Event pruning removes 40+ events per cycle without fact loss, indicating high transient-event volume.
-- Swarm convergence in a single cycle correlates with clear role separation (1 planner, 3 builders, 1 critic) and pre-existing code artifacts.
-- Calibration consistently underestimates task complexity by ~3 points when code artifacts exceed 400 lines.
-- Hand actions fail on first attempt due to relative path resolution but succeed when absolute paths are used.
-- Model providers on free tiers exhibit bursty 429/502 failures that resolve after 20-180s, making naive retries wasteful.
 
 ---
 
