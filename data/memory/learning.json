@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 12:33:15",
+ "stand": "2026-09-02 12:40:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -355,10 +355,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.713,
- "simulationen_angewandt": 29,
+ "haende_quote": 0.716,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 32,
   "best": 9.0,

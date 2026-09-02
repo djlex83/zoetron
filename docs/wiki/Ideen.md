@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 81 events but zero facts, implying the fact store accumulates stale entries that never get invalidated by outcome feedback.
+- Self-diagnosis reports zero organ errors while router-level failure rates exceed 50%, revealing a blind spot in health monitoring scope.
+- Evolution runs improve scores (7→9) but swarm convergence remains false after 2 cycles, suggesting the fitness function or stopping criteria are misal
+- The critic consistently flags unbounded loops (while True:) as a forbidden pattern, yet generated code still produces them, indicating a missing synta
+- Free-tier endpoints exhibit burst 429/502 failures that cluster in time, making naive round-robin routing ineffective without shared quota awareness.
 - Simulation-driven development requires multiple revision cycles (3 revisions) before artifacts pass validation.
 - Risk calibration consistently underestimates actual complexity (predicted 3 risks vs 7 actual, error of 4).
 - Ling-3.0-flash-fin provides the best speed/reliability tradeoff among free models (3.4s latency, consistent success).
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but deployment reflex (fähigkeitsvorschläge-in-echte-skills-ums.py) fails silently, creating a proposal-to-production gap.
 - Hand actions fail when tools resolve paths relative to CWD instead of ZOETRON_DATA, causing zero-byte reads despite valid input.
 - Primary model (glm-5.2) fails deterministically with 429 errors under load while fallback (nemotron-3-ultra) succeeds at 2-10x latency cost.
-- Memory retains routine successes while discarding actionable failure signatures (error codes, latency outliers, convergence metrics).
-- Optimization cycles continue despite >80% infrastructure error rates (429/timeouts), wasting compute and masking root causes.
-- Identical skill proposals recur across dream cycles without deployment – proposal generation is decoupled from validation, testing, and atomic registr
-- Organ-level diagnostics report 'clean' while system suffers sustained 429 failures – a cross-level observability gap that masks infrastructure degrada
-- Provider-specific rate limiting (z-ai/glm-5.2:free 429s vs nvidia/nemotron success) reveals absent per-provider health routing and circuit-breaking.
 
 ---
 

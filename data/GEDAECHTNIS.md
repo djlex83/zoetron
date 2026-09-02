@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9664 Fakten** · Stand 2026-09-02 12:34 UTC · aktualisiert bei jedem Herzschlag
+**9669 Fakten** · Stand 2026-09-02 12:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5205
+- **dream:** 5210
 - **swarm_artifact:** 2065
 - **last_swarm_critique:** 698
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902124026:5:6d8c65`
+*02.09. 12:40 UTC · Quelle: dream*
+
+Pruning removed 81 events but zero facts, implying the fact store accumulates stale entries that never get invalidated by outcome feedback.
+
+### `dream:20260902124026:4:f53887`
+*02.09. 12:40 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while router-level failure rates exceed 50%, revealing a blind spot in health monitoring scope.
+
+### `dream:20260902124026:3:aaa8ab`
+*02.09. 12:40 UTC · Quelle: dream*
+
+Evolution runs improve scores (7→9) but swarm convergence remains false after 2 cycles, suggesting the fitness function or stopping criteria are misaligned with actual readiness.
+
+### `dream:20260902124026:2:4ac240`
+*02.09. 12:40 UTC · Quelle: dream*
+
+The critic consistently flags unbounded loops (while True:) as a forbidden pattern, yet generated code still produces them, indicating a missing syntactic gate before execution.
+
+### `dream:20260902124026:1:ade36a`
+*02.09. 12:40 UTC · Quelle: dream*
+
+Free-tier endpoints exhibit burst 429/502 failures that cluster in time, making naive round-robin routing ineffective without shared quota awareness.
 
 ### `dream:20260902123216:5:9fef8d`
 *02.09. 12:32 UTC · Quelle: dream*
