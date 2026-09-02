@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9821 Fakten** · Stand 2026-09-02 17:07 UTC · aktualisiert bei jedem Herzschlag
+**9826 Fakten** · Stand 2026-09-02 17:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5315
+- **dream:** 5320
 - **swarm_artifact:** 2095
 - **last_swarm_critique:** 703
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902171347:5:d1bf68`
+*02.09. 17:13 UTC · Quelle: dream*
+
+Self-diagnosis reported zero organ errors while model failures, path errors, and stress saturation occurred simultaneously, revealing missing cross-organ correlation.
+
+### `dream:20260902171347:4:f0187a`
+*02.09. 17:13 UTC · Quelle: dream*
+
+Five skill proposals were generated but none were tested or deployed; proposal accumulation without validation pipeline creates illusion of progress.
+
+### `dream:20260902171347:3:1ac4d2`
+*02.09. 17:13 UTC · Quelle: dream*
+
+System entered stress=1.0 conserve mode (max_tasks=3, max_iterations=1) precisely when recovery capacity was needed most, creating a death spiral.
+
+### `dream:20260902171347:2:e4d792`
+*02.09. 17:13 UTC · Quelle: dream*
+
+Fallback model (nvidia/nemotron-3-ultra) latency varies wildly (26–73s), causing reflex tasks to exceed acceptable SLOs and triggering stress cascades.
+
+### `dream:20260902171347:1:f505b8`
+*02.09. 17:13 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2) repeatedly hit 429 rate limits, making them unreliable as primary dependencies without circuit-breaker fallback logic.
 
 ### `dream:20260902170550:5:15f13f`
 *02.09. 17:05 UTC · Quelle: dream*
