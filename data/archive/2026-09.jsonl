@@ -4243,3 +4243,13 @@
 {"ts": 1787776458.3739398, "kind": "werkzeug_abgelehnt", "payload": {"name": "embedding-recall-statt-reinem-wortvergle", "grund": "bewirkt nichts - kein Rueckgabewert und nichts geschrieben, nur Ausgabe", "goal": "Embedding-Recall statt reinem Wortvergleich"}}
 {"ts": 1787776460.0900114, "kind": "issue_synced", "payload": {"issue": 114, "state": "open"}}
 {"ts": 1787776524.8742423, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787777587.4991474, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787777590.715907, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787777590.7159035, "schalter_geoeffnet": false}}
+{"ts": 1787777646.764459, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 56.0, "tokens_ein": 1618, "tokens_aus": 1210}}
+{"ts": 1787777646.764991, "kind": "skill_proposal", "payload": {"proposal": "Build a model_router skill that tracks per-model error rates, latency, and implements automatic fallback with circuit breakers."}}
+{"ts": 1787777646.7650456, "kind": "skill_proposal", "payload": {"proposal": "Implement a swarm_coordinator skill that sequences swarm tasks, shares context, and resolves parked whispers via automated tie-breaking."}}
+{"ts": 1787777646.7650988, "kind": "skill_proposal", "payload": {"proposal": "Create an embedding_recall skill with incremental indexing to replace TF-IDF for semantic fact retrieval."}}
+{"ts": 1787777646.76515, "kind": "skill_proposal", "payload": {"proposal": "Develop a metabolism_aware_scheduler that prioritizes tasks by drive signal and estimated ROI within current budget."}}
+{"ts": 1787777646.7652001, "kind": "skill_proposal", "payload": {"proposal": "Add a whisper_resolver skill that escalates parked items after N failed attempts with a default heuristic or human-in-the-loop trigger."}}
+{"ts": 1787777646.7652524, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787777648.893308, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787777648.893305, "schalter_geoeffnet": false}}

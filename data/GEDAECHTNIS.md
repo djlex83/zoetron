@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9957 Fakten** · Stand 2026-09-02 20:48 UTC · aktualisiert bei jedem Herzschlag
+**9962 Fakten** · Stand 2026-09-02 20:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5400
+- **dream:** 5405
 - **swarm_artifact:** 2125
 - **last_swarm_critique:** 708
 - **anti_pattern:** 617
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902205447:5:a0bedd`
+*02.09. 20:54 UTC · Quelle: dream*
+
+Reflex layer exists but lacks semantic gating, so model calls fire even when a reflex could handle the goal.
+
+### `dream:20260902205447:4:bd0254`
+*02.09. 20:54 UTC · Quelle: dream*
+
+Pruning removes 86 events but zero facts, indicating fact TTL policy is absent or ineffective.
+
+### `dream:20260902205447:3:77b978`
+*02.09. 20:54 UTC · Quelle: dream*
+
+High-latency endpoints (24-27s) are used interchangeably with fast ones (4-6s) because routing ignores latency history.
+
+### `dream:20260902205447:2:5b81d3`
+*02.09. 20:54 UTC · Quelle: dream*
+
+Benchmark scoring is criticized as arbitrary, causing evolution to stall at 7/10 without convergence across 2 cycles.
+
+### `dream:20260902205447:1:9e511b`
+*02.09. 20:54 UTC · Quelle: dream*
+
+Model endpoint failures (429/502) dominate latency variance and cause swarm instability, yet no circuit breaker or health-aware routing exists despite prior proposals.
 
 ### `dream:20260902204655:5:ead978`
 *02.09. 20:46 UTC · Quelle: dream*

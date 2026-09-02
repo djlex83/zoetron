@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 20:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 20:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,7 +19,7 @@
 - Implement SkillDeploymentPipeline that ingests proposals, generates tests, runs CI in sandbox, and atomically  *(hatte die Idee 4×)*
 - Design LatencyBudgetGuard that enforces per-task SLOs, triggers conservative mode early when latency exceeds t *(hatte die Idee 4×)*
 - Implement circuit breaker per model endpoint with exponential backoff, health scores, and automatic failover t *(hatte die Idee 4×)*
-- Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceedi *(hatte die Idee 3×)*
+- Create reflex eligibility gate: match goal semantics against registered reflex patterns via embedding similari *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex layer exists but lacks semantic gating, so model calls fire even when a reflex could handle the goal.
+- Pruning removes 86 events but zero facts, indicating fact TTL policy is absent or ineffective.
+- High-latency endpoints (24-27s) are used interchangeably with fast ones (4-6s) because routing ignores latency history.
+- Benchmark scoring is criticized as arbitrary, causing evolution to stall at 7/10 without convergence across 2 cycles.
+- Model endpoint failures (429/502) dominate latency variance and cause swarm instability, yet no circuit breaker or health-aware routing exists despite
 - Same goal persists across 4+ cycles without completion; termination criteria or progress metrics missing.
 - Calibration consistently overestimates by ~1 point; systematic bias requires correction factor.
 - Critic identified benchmark scoring as arbitrary – optimization lacks objective fitness functions.
@@ -51,11 +56,6 @@
 - Latency for free models can be extremely high (up to 124s), which must be accounted for in timeout handling.
 - High stress and conserve mode limit task budget, but the system successfully completed a single cycle by relying on alternative models when primary on
 - Free models on OpenRouter are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
-- Under high stress (1.0), the system enters a conserve state, limiting task execution to 3 tasks and 1 iteration, which should dictate task prioritizat
-- High latency (e.g., 124s) on fallback models can stall the system just as much as hard failures, necessitating strict latency budgets.
-- The system accumulates skill proposals without executing them, creating a growing gap between proposed and actual capabilities.
-- Hand actions fail when scripts do not properly resolve relative paths using `sys.argv[1]` and the `ZOETRON_DATA` environment variable.
-- Free-tier models on OpenRouter are highly unreliable, frequently hitting 429 rate limits and 502 upstream errors, requiring active circuit breaking.
 
 ---
 
