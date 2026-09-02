@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9389 Fakten** · Stand 2026-09-02 04:09 UTC · aktualisiert bei jedem Herzschlag
+**9394 Fakten** · Stand 2026-09-02 04:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5005
+- **dream:** 5010
 - **swarm_artifact:** 2025
 - **last_swarm_critique:** 690
 - **anti_pattern:** 603
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902043826:5:f3870b`
+*02.09. 04:38 UTC · Quelle: dream*
+
+Resource-constrained 'conserve' mode (stress=1.0, max 1 iteration) demands strict single-task prioritization to avoid spreading effort too thin.
+
+### `dream:20260902043826:4:1d97e3`
+*02.09. 04:38 UTC · Quelle: dream*
+
+Unfinished analysis work blocks storage and cognitive bandwidth; stale tasks must be archived or deleted rather than allowed to linger indefinitely.
+
+### `dream:20260902043826:3:7436ea`
+*02.09. 04:38 UTC · Quelle: dream*
+
+The system generates high-quality skill proposals but lacks a validation loop to test them, leaving 55 ideas untested and accumulating theoretical debt.
+
+### `dream:20260902043826:2:3b581b`
+*02.09. 04:38 UTC · Quelle: dream*
+
+Every GLM failure was instantly recovered by Nemotron, proving that a pre-configured secondary model with automatic failover eliminates single-point-of-failure downtime.
+
+### `dream:20260902043826:1:3cf565`
+*02.09. 04:38 UTC · Quelle: dream*
+
+Free-tier LLM endpoints (GLM, Gemma, Poolside) repeatedly hit 429 rate limits under load and must never be relied upon as primary models.
 
 ### `tool:fähigkeitsvorschläge-in-echte-skills-wan`
 *02.09. 04:07 UTC · Quelle: hands*

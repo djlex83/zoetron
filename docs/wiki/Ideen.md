@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 04:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 04:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
-- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Resource-constrained 'conserve' mode (stress=1.0, max 1 iteration) demands strict single-task prioritization to avoid spreading effort too thin.
+- Unfinished analysis work blocks storage and cognitive bandwidth; stale tasks must be archived or deleted rather than allowed to linger indefinitely.
+- The system generates high-quality skill proposals but lacks a validation loop to test them, leaving 55 ideas untested and accumulating theoretical deb
+- Every GLM failure was instantly recovered by Nemotron, proving that a pre-configured secondary model with automatic failover eliminates single-point-o
+- Free-tier LLM endpoints (GLM, Gemma, Poolside) repeatedly hit 429 rate limits under load and must never be relied upon as primary models.
 - Successful fallback to nvidia/nemotron-3-ultra (15.4s latency) proves multi-model routing with latency/error tracking would prevent outages.
 - Self-diagnosis reports zero organ errors while external model failures cascade, proving internal health checks miss dependency failures.
 - Goals persisting weeks without progress (market analysis, reliability) show missing automatic escalation or archival mechanisms.
@@ -51,11 +56,6 @@
 - InclusionAI Ling Flash Fin consistently succeeds at ~14s latency on free tier; designate as primary workhorse model.
 - Nvidia Nemotron free endpoint fails via both 429 and 502 upstream overload; exclude from latency-critical paths.
 - Free-tier models on OpenRouter suffer pervasive 429 rate limits; treat 429 as baseline expectation, not anomaly.
-- Latency and token usage vary dramatically across models, suggesting that performance-aware routing could significantly improve throughput.
-- Model selection lacks fallback logic, causing cascading failures when primary models are rate-limited or overloaded.
-- Stale goals persist in the system because there is no automated mechanism to detect and retire inactive or repeatedly failing objectives.
-- Swarm tasks fail silently when file paths are not resolved against the real data directory, indicating a systemic path-handling defect.
-- Free-tier LLM endpoints consistently fail under concurrent load with 429 and 502 errors, making them unreliable for production-grade orchestration.
 
 ---
 
