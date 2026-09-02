@@ -1790,3 +1790,40 @@
 {"ts": 1787721302.448335, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.34}}
 {"ts": 1787721304.8089664, "kind": "issue_synced", "payload": {"issue": 122, "state": "open"}}
 {"ts": 1787721344.8112469, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787722300.364792, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787722315.737732, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.9, "tokens_ein": 1373, "tokens_aus": 391}}
+{"ts": 1787722315.7383275, "kind": "skill_proposal", "payload": {"proposal": "Implement per-model 429 cooldown tracking with exponential backoff before retrying the same provider, and reorder failover to skip recently-throttled models."}}
+{"ts": 1787722315.7383885, "kind": "skill_proposal", "payload": {"proposal": "Modify swarm termination so 'done' requires critic-verified closure of every logged risk, independent of cycle count or score threshold."}}
+{"ts": 1787722315.7384427, "kind": "skill_proposal", "payload": {"proposal": "Build a sandbox trial pipeline that executes each pending skill proposal, records pass/fail metrics, and auto-promotes or discards it based on outcomes."}}
+{"ts": 1787722315.7384949, "kind": "skill_proposal", "payload": {"proposal": "Extend selbstdiagnose to ingest operational events (model_fail, werkzeug_abgelehnt, converged=false) as health findings that feed drive_goals automatically."}}
+{"ts": 1787722315.738548, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-execution classifier flagging artifacts using subprocess/network/file-deletion so approval-required goals route to a human queue before swarm completion."}}
+{"ts": 1787722315.7386065, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787722329.5778246, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.5, "tokens_ein": 486, "tokens_aus": 242}}
+{"ts": 1787722329.577985, "kind": "drive_goal", "payload": {"title": "Grund für häufige Modellfehler finden", "why": "Es gab fast genauso viele Fehler wie Erfolge beim Lernen. Wenn wir die Ursache kennen, wird das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1787722329.5780585, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten endlich ausprobieren", "why": "Viele neue Fähigkeiten wurden vorgeschlagen, aber kaum eine wurde wirklich getestet. Nur durch Ausprobieren nützen sie dem System.", "signal": "stale"}}
+{"ts": 1787722329.5781214, "kind": "drive_goal", "payload": {"title": "Alte Traumideen mit Strategien verbinden", "why": "In Träumen und alten Notizen stecken gute Ideen, die bisher getrennt bleiben. Werden sie verbunden, entstehen neue Lösungen für Probleme.", "signal": "combination"}}
+{"ts": 1787722331.7251413, "kind": "swarm_started", "payload": {"goal": "Mehr Simulationen wirklich anwenden"}}
+{"ts": 1787722339.000476, "kind": "recall", "payload": {"keys": ["last_swarm_goal", "hand_result:Mehr Vorschläge wirklich ausprobieren"]}}
+{"ts": 1787722339.8786104, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787722407.4052112, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 67.3, "tokens_ein": 1467, "tokens_aus": 2798}}
+{"ts": 1787722421.0981302, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.5, "tokens_ein": 620, "tokens_aus": 91}}
+{"ts": 1787722463.7763302, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 42.5, "tokens_ein": 607, "tokens_aus": 676}}
+{"ts": 1787722463.776506, "kind": "simulation", "payload": {"goal": "Mehr Simulationen wirklich anwenden", "verdict": "revise", "risks": 4, "revisions": 4}}
+{"ts": 1787722463.776604, "kind": "simulation_applied", "payload": {"revisions": 4}}
+{"ts": 1787722477.447465, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.6, "tokens_ein": 1954, "tokens_aus": 478}}
+{"ts": 1787722539.1340687, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 61.7, "tokens_ein": 2389, "tokens_aus": 480}}
+{"ts": 1787722551.702255, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.6, "tokens_ein": 2766, "tokens_aus": 571}}
+{"ts": 1787722552.1066592, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.29}}
+{"ts": 1787722552.106832, "kind": "tor", "payload": {"goal": "Mehr Simulationen wirklich anwenden", "gruen": true, "grund": "Artefakt laeuft (50 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787722552.523337, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787722552.523335, "schalter_geoeffnet": false}}
+{"ts": 1787722552.8708012, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787722552.8707988, "schalter_geoeffnet": false}}
+{"ts": 1787722593.8099618, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 40.9, "tokens_ein": 1809, "tokens_aus": 1033}}
+{"ts": 1787722593.8117695, "kind": "calibration", "payload": {"goal": "Mehr Simulationen wirklich anwenden", "predicted": 6, "actual": 8, "abs_error": 2}}
+{"ts": 1787722593.811899, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 8}}
+{"ts": 1787722601.2375255, "kind": "bahnen", "payload": {"goal": "Mehr Simulationen wirklich anwenden", "delta": 1.0, "kanten": 21, "hat_code": true, "score": 8, "abgerufen": 6, "ids": ["e:8f6780a8b9b3", "e:8174d0749757", "e:c2bc00eea0d2", "e:bb36b02353cb", "e:83ad52b8f40f", "e:817ff3b1634a"], "ziel_id": "g:e08bc1cda132"}}
+{"ts": 1787722601.2377508, "kind": "swarm_finished", "payload": {"goal": "Mehr Simulationen wirklich anwenden", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1787722601.2379725, "kind": "act_done", "payload": {"goal_title": "Mehr Simulationen wirklich anwenden", "score": 8, "converged": true}}
+{"ts": 1787722601.6149287, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.27}}
+{"ts": 1787722601.61839, "kind": "werkzeug_abgelehnt", "payload": {"name": "mehr-simulationen-wirklich-anwenden", "grund": "zerstoerende Operation (subprocess) - braucht menschliche Freigabe", "goal": "Mehr Simulationen wirklich anwenden"}}
+{"ts": 1787722603.8599463, "kind": "issue_synced", "payload": {"issue": 123, "state": "closed"}}
+{"ts": 1787722643.1620667, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

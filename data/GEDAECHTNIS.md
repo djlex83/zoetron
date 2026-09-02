@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9419 Fakten** · Stand 2026-09-02 05:33 UTC · aktualisiert bei jedem Herzschlag
+**9424 Fakten** · Stand 2026-09-02 05:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5030
+- **dream:** 5035
 - **swarm_artifact:** 2027
 - **last_swarm_critique:** 691
 - **anti_pattern:** 603
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902053902:5:51ad5e`
+*02.09. 05:39 UTC · Quelle: dream*
+
+The system autonomously generated relevant skill proposals (router, circuit breaker, fallback roster) directly from observed failures.
+
+### `dream:20260902053902:4:e5e664`
+*02.09. 05:39 UTC · Quelle: dream*
+
+Latency variance (6.7s vs 13.7s) across successful calls indicates unpredictable queue times even when requests succeed.
+
+### `dream:20260902053902:3:aa5821`
+*02.09. 05:39 UTC · Quelle: dream*
+
+Error patterns cluster by provider (Google, Z.ai) rather than model size, suggesting provider-level quota exhaustion.
+
+### `dream:20260902053902:2:936056`
+*02.09. 05:39 UTC · Quelle: dream*
+
+A single successful reflex execution (swarm run) proves the architecture can close the loop when model availability is stable.
+
+### `dream:20260902053902:1:f71aab`
+*02.09. 05:39 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary endpoints.
 
 ### `dream:20260902053158:5:749b8d`
 *02.09. 05:31 UTC · Quelle: dream*
