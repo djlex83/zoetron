@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 20:39:06",
+ "stand": "2026-09-02 20:47:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -64,6 +58,12 @@
   },
   {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -358,6 +358,12 @@
   },
   {
    "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

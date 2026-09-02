@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 20:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 20:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Same goal persists across 4+ cycles without completion; termination criteria or progress metrics missing.
+- Calibration consistently overestimates by ~1 point; systematic bias requires correction factor.
+- Critic identified benchmark scoring as arbitrary – optimization lacks objective fitness functions.
+- Latency variance for identical models exceeds 3x (86s vs 29s), making timeout budgets essential.
+- Free-tier models fail predominantly from rate limits (429) and upstream overload (502), not model capability.
 - Relying on multiple model providers (z-ai, nvidia, google, inclusionai) provides necessary redundancy against individual provider outages.
 - Simulations are effective for identifying risks and generating revisions before committing to an artifact.
 - Latency for free models can be extremely high (up to 124s), which must be accounted for in timeout handling.
@@ -51,11 +56,6 @@
 - The system accumulates skill proposals without executing them, creating a growing gap between proposed and actual capabilities.
 - Hand actions fail when scripts do not properly resolve relative paths using `sys.argv[1]` and the `ZOETRON_DATA` environment variable.
 - Free-tier models on OpenRouter are highly unreliable, frequently hitting 429 rate limits and 502 upstream errors, requiring active circuit breaking.
-- Health facts for model endpoints decay without TTL enforcement, leaving routing decisions based on stale latency/error data.
-- Concurrent drive goals (error reduction, stale analysis, skill adoption) compete for limited model throughput, amplifying failure cascades.
-- Skill proposals accumulate without automatic implementation, creating a capability gap between generation and deployment.
-- Reflex execution succeeds where model calls fail, but only for goals matching known reflex patterns.
-- Model endpoints frequently fail with 429/502 errors under load, making single-provider reliance a systemic reliability risk.
 
 ---
 

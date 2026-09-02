@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9952 Fakten** · Stand 2026-09-02 20:40 UTC · aktualisiert bei jedem Herzschlag
+**9957 Fakten** · Stand 2026-09-02 20:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5395
+- **dream:** 5400
 - **swarm_artifact:** 2125
 - **last_swarm_critique:** 708
 - **anti_pattern:** 617
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902204655:5:ead978`
+*02.09. 20:46 UTC · Quelle: dream*
+
+Same goal persists across 4+ cycles without completion; termination criteria or progress metrics missing.
+
+### `dream:20260902204655:4:ece52f`
+*02.09. 20:46 UTC · Quelle: dream*
+
+Calibration consistently overestimates by ~1 point; systematic bias requires correction factor.
+
+### `dream:20260902204655:3:826906`
+*02.09. 20:46 UTC · Quelle: dream*
+
+Critic identified benchmark scoring as arbitrary – optimization lacks objective fitness functions.
+
+### `dream:20260902204655:2:a670f0`
+*02.09. 20:46 UTC · Quelle: dream*
+
+Latency variance for identical models exceeds 3x (86s vs 29s), making timeout budgets essential.
+
+### `dream:20260902204655:1:5ecea9`
+*02.09. 20:46 UTC · Quelle: dream*
+
+Free-tier models fail predominantly from rate limits (429) and upstream overload (502), not model capability.
 
 ### `dream:20260902203803:5:3e350a`
 *02.09. 20:38 UTC · Quelle: dream*
