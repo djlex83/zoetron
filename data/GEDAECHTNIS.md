@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9778 Fakten** · Stand 2026-09-02 15:53 UTC · aktualisiert bei jedem Herzschlag
+**9783 Fakten** · Stand 2026-09-02 16:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5280
+- **dream:** 5285
 - **swarm_artifact:** 2089
 - **last_swarm_critique:** 702
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902155904:5:dd658d`
+*02.09. 15:59 UTC · Quelle: dream*
+
+The gap between proposal generation and simulator testing is a persistent failure mode: new capabilities are suggested but never validated before deployment.
+
+### `dream:20260902155904:4:39e915`
+*02.09. 15:59 UTC · Quelle: dream*
+
+At stress=1.0 the system correctly entered conserve mode but still attempted multi-model fallback chains, wasting scarce budget on redundant retry attempts.
+
+### `dream:20260902155904:3:c80e2b`
+*02.09. 15:59 UTC · Quelle: dream*
+
+Path-resolution guards must execute before hand_actions, not after: the failed hand_action touched no file because unresolved paths were not validated at call time.
+
+### `dream:20260902155904:2:4ada2e`
+*02.09. 15:59 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution: the reflex to validate proposed skills failed, confirming that proposals without enforced action deadlines remain inert knowledge.
+
+### `dream:20260902155904:1:1e3c00`
+*02.09. 15:59 UTC · Quelle: dream*
+
+429 rate-limit failures cascade across all providers simultaneously, indicating that naive failover routing is insufficient without circuit breakers that halt retries during provider-wide outages.
 
 ### `dream:20260902155120:5:c14d69`
 *02.09. 15:51 UTC · Quelle: dream*

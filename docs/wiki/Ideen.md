@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,9 +27,9 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The gap between proposal generation and simulator testing is a persistent failure mode: new capabilities are suggested but never validated before depl
+- At stress=1.0 the system correctly entered conserve mode but still attempted multi-model fallback chains, wasting scarce budget on redundant retry att
+- Path-resolution guards must execute before hand_actions, not after: the failed hand_action touched no file because unresolved paths were not validated
+- Skill proposals accumulate without execution: the reflex to validate proposed skills failed, confirming that proposals without enforced action deadlin
+- 429 rate-limit failures cascade across all providers simultaneously, indicating that naive failover routing is insufficient without circuit breakers t
 - Pruning 10–12 events per cycle with zero facts pruned suggests the system discards raw failure data but retains no distilled failure signatures for cr
 - A 502 upstream overload from Nvidia alongside 429s from Google and Zhipu confirms that free-tier models share infrastructure fragility and cannot be t
 - Proposals generated without a deployment pipeline remain inert—the recurring 'fragile reflex script' pattern shows that manual implementation is a sin
@@ -51,11 +56,6 @@
 - Stale analytical knowledge accumulates silently without timestamping or TTL-based pruning, degrading decision quality over time.
 - When multiple models fail simultaneously with 429/502 errors, the absence of a circuit-breaker and fallback mechanism causes cascading task failures.
 - Free-tier LLM APIs on shared infrastructure consistently hit rate limits and overload, making them unsuitable as sole dependencies for critical tasks.
-- Calibration consistently underestimates difficulty (predicted 4 vs actual 6), and critic identifies /dev/ usage as a concrete code defect.
-- The swarm evolution process stalls at score 6/10 with converged=false despite 2 cycles and 3 revisions applied.
-- InclusionAI/Ling-3.0-Flash-Fin is the only model completing requests successfully in this session.
-- Nvidia Nemotron consistently returns 502 upstream errors, indicating unreliable infrastructure rather than rate limits.
-- Rate limiting (429 errors) across multiple providers is the dominant failure mode, making model availability unpredictable.
 
 ---
 
