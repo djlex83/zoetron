@@ -2204,3 +2204,34 @@
 {"ts": 1787728794.2074943, "kind": "issue_synced", "payload": {"issue": 132, "state": "open"}}
 {"ts": 1787728836.663339, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
 {"ts": 1787728917.136553, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787728932.4901555, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.8, "tokens_ein": 1433, "tokens_aus": 389}}
+{"ts": 1787728932.4907455, "kind": "skill_proposal", "payload": {"proposal": "Skill 'risk_class_tagger': annotate every proposed artifact/tool with its operation class (read-only, sandboxed, destructive) at proposal time so approval requirements are known before execution."}}
+{"ts": 1787728932.490803, "kind": "skill_proposal", "payload": {"proposal": "Skill 'approval_queue': buffer rejected destructive operations in a human-approval queue instead of dropping them, preserving the invested planning work."}}
+{"ts": 1787728932.4908724, "kind": "skill_proposal", "payload": {"proposal": "Skill 'fast_path_convergence': when a swarm converges on cycle 1 with score ≥ 8, skip evolution and record the role configuration as a template for similar goal types."}}
+{"ts": 1787728932.490936, "kind": "skill_proposal", "payload": {"proposal": "Skill 'per_type_calibration': maintain calibration baselines per goal-type and auto-adjust predicted scores using the rolling mean of abs_errors for that type."}}
+{"ts": 1787728932.4909887, "kind": "skill_proposal", "payload": {"proposal": "Skill 'budget_aware_dispatch': check metabolism state before task/model-call dispatch so conserve-mode budgets actually limit spawned calls rather than being applied mid-run."}}
+{"ts": 1787728932.4910429, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787728943.8602858, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.0, "tokens_ein": 466, "tokens_aus": 277}}
+{"ts": 1787728943.8604548, "kind": "drive_goal", "payload": {"title": "Häufige Modellfehler gezielt reduzieren", "why": "Es gab 13 Fälle, in denen das interne Modell falsch lag. Wenn wir diese Fehler verstehen und beheben, macht das System insgesamt deutlich weniger Fehler.", "signal": "failure"}}
+{"ts": 1787728943.8605351, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten endlich ausprobieren", "why": "Es liegen 45 neue Fähigkeitsvorschläge vor, aber kaum jemand hat sie getestet. Werden sie ausprobiert, kann das System wirklich besser werden statt nur Ideen zu sammeln.", "signal": "gap"}}
+{"ts": 1787728943.8606017, "kind": "drive_goal", "payload": {"title": "Abgelehnte Werkzeuge und Reflexe prüfen", "why": "Drei Mal wurde ein Werkzeug abgelehnt und Reflexe wurden fast nie genutzt. Wir sollten herausfinden, warum, damit nützliche Hilfsmittel nicht ungenutzt bleiben.", "signal": "combination"}}
+{"ts": 1787728945.5152602, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25}}
+{"ts": 1787728945.5158167, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten testen und nutzen", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1787728945.9338546, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten testen und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787728988.8371422, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787729187.654048, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787729210.7226412, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 20.3, "tokens_ein": 1568, "tokens_aus": 512}}
+{"ts": 1787729210.7232242, "kind": "skill_proposal", "payload": {"proposal": "Skill 'critic_schema_guard': Wrap all critic-role outputs in a validation step that retries once with an explicit format reminder before declaring the output unparsable, avoiding unnecessary evolution runs."}}
+{"ts": 1787729210.7232914, "kind": "skill_proposal", "payload": {"proposal": "Skill 'calibration_discount': Subtract the rolling mean absolute calibration error from every predicted score when deciding whether to skip evolution or accept a result early."}}
+{"ts": 1787729210.7233543, "kind": "skill_proposal", "payload": {"proposal": "Skill 'conserve_budget_escalator': If a swarm under conserve mode fails to converge within its iteration budget, automatically allow exactly one extra cycle instead of ending unconverged at score <6."}}
+{"ts": 1787729210.7234092, "kind": "skill_proposal", "payload": {"proposal": "Skill 'skill_backlog_consumer': At swarm start, inject one untested pending skill proposal into the planner's context so each run validates at least one proposed capability."}}
+{"ts": 1787729210.7234764, "kind": "skill_proposal", "payload": {"proposal": "Skill 'fast_path_convergence': When a swarm converges on cycle 1 with score >= 8, skip evolution entirely and record the role configuration as a template for similar goal types."}}
+{"ts": 1787729210.7235353, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787729221.3032346, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.3, "tokens_ein": 470, "tokens_aus": 224}}
+{"ts": 1787729221.303446, "kind": "drive_goal", "payload": {"title": "Gründe für Modellfehler verstehen und beheben", "why": "Das System hat siebenmal falsch vorhergesagt. Wenn wir herausfinden, warum, wird es zuverlässiger.", "signal": "failure"}}
+{"ts": 1787729221.3035252, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten endlich ausprobieren", "why": "Es liegen fünfzig neue Fähigkeitsvorschläge herum, die niemand getestet hat. Wer sie ausprobiert, kann besser handeln.", "signal": "stale"}}
+{"ts": 1787729221.303592, "kind": "drive_goal", "payload": {"title": "Alte Traumerinnerungen miteinander verbinden", "why": "Zwei alte Gedanken passen gut zusammen, wurden aber nie verknüpft. Solche Verbindungen helfen, neue Ideen zu finden.", "signal": "combination"}}
+{"ts": 1787729223.0650222, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23}}
+{"ts": 1787729223.0656257, "kind": "reflex_used", "payload": {"goal": "Ideen wirklich zu Ende bringen", "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py", "ok": true}}
+{"ts": 1787729223.4657931, "kind": "act_done", "payload": {"goal_title": "Ideen wirklich zu Ende bringen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787729266.3093927, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

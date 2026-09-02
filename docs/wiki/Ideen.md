@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 07:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 07:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Graph traversal yielded negative delta (-0.5) with zero code execution (hat_code: false), confirming stalled progress when models emit only text.
+- Calibration predicted 5 but actual was 1 (400% error), revealing the prediction model is fundamentally miscalibrated for this task domain.
+- Validation gate rejected output for lacking executable Python blocks, proving prose-only responses cannot drive convergent automation.
+- Nvidia Nemotron shows intermittent 502 upstream overload errors despite occasional low-latency successes, indicating provider-side capacity issues.
+- Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for autonomous loops requiring repeated calls.
 - Reflex scripts (e.g., modellfehler-deutlich-reduzieren.py) execute but return ok:false, indicating missing error handling or dependency gaps.
 - High metabolic stress (1.0) forces conservative budgets that starve retries and parallel fallback attempts, creating a death spiral.
 - File operations fail because relative paths ignore the ZOETRON_DATA environment variable, breaking data access in containerized runs.
@@ -51,11 +56,6 @@
 - Reflex tools for critical improvements (e.g., model reliability) fail silently, suggesting missing pre-execution validation or dependency checks.
 - Hand actions fail when using relative paths because they are not resolved against ZOETRON_DATA, causing file read/write errors that block goal progres
 - Primary model (z-ai/glm-5.2:free) consistently hits 429 rate limits, forcing fallback to high-latency (70s) NVIDIA model, indicating need for multi-pr
-- Structured lifecycle gates — validation suite passage before promotion and rollback on regression — prevent low-quality proposals from propagating thr
-- Prediction calibration systematically underestimates durations for data processing tasks, indicating a structural bias that a multiplier correction ca
-- Proactive prevention (pausing before thresholds, pre-flight path validation) outperforms reactive retry by avoiding failures entirely rather than reco
-- Information decays autonomously — stale market analyses, outdated facts, and archived events accumulate without intervention, requiring automated TTL-
-- Free-tier API models consistently hit 429 rate limits under load, making quota-aware routing with exponential backoff and fallback models a non-negoti
 
 ---
 
