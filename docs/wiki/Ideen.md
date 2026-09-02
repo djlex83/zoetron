@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 20:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -34,13 +34,18 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Free-tier models on OpenRouter are highly unstable, exhibiting both rate limits (429) and upstream overloads (502), necessitating a robust multi-model
+- Simulations are catching significant risks (5 risks, 5 revisions), proving the simulation layer is valuable for preventing bad actions during high-str
+- Reflexes and hand actions are failing (exit 1, ok: false), indicating that current scripts for refreshing outdated knowledge are broken or lack proper
+- High stress state (1.0) combined with frequent model failures causes severe operational bottlenecks, requiring aggressive task deferral or cheaper fal
+- The z-ai/glm-5.2:free model is chronically rate-limited (429) and should be temporarily blacklisted or deprioritized to prevent retry storms.
 - Reflex layer exists but lacks semantic gating, so model calls fire even when a reflex could handle the goal.
 - Pruning removes 86 events but zero facts, indicating fact TTL policy is absent or ineffective.
 - High-latency endpoints (24-27s) are used interchangeably with fast ones (4-6s) because routing ignores latency history.
@@ -51,11 +56,6 @@
 - Critic identified benchmark scoring as arbitrary – optimization lacks objective fitness functions.
 - Latency variance for identical models exceeds 3x (86s vs 29s), making timeout budgets essential.
 - Free-tier models fail predominantly from rate limits (429) and upstream overload (502), not model capability.
-- Relying on multiple model providers (z-ai, nvidia, google, inclusionai) provides necessary redundancy against individual provider outages.
-- Simulations are effective for identifying risks and generating revisions before committing to an artifact.
-- Latency for free models can be extremely high (up to 124s), which must be accounted for in timeout handling.
-- High stress and conserve mode limit task budget, but the system successfully completed a single cycle by relying on alternative models when primary on
-- Free models on OpenRouter are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 
 ---
 

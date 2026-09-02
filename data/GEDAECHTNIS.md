@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9962 Fakten** · Stand 2026-09-02 20:56 UTC · aktualisiert bei jedem Herzschlag
+**9967 Fakten** · Stand 2026-09-02 21:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5405
+- **dream:** 5410
 - **swarm_artifact:** 2125
 - **last_swarm_critique:** 708
 - **anti_pattern:** 617
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902210220:5:2538cd`
+*02.09. 21:02 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly unstable, exhibiting both rate limits (429) and upstream overloads (502), necessitating a robust multi-model fallback chain.
+
+### `dream:20260902210220:4:494cd3`
+*02.09. 21:02 UTC · Quelle: dream*
+
+Simulations are catching significant risks (5 risks, 5 revisions), proving the simulation layer is valuable for preventing bad actions during high-stress states.
+
+### `dream:20260902210220:3:3782c8`
+*02.09. 21:02 UTC · Quelle: dream*
+
+Reflexes and hand actions are failing (exit 1, ok: false), indicating that current scripts for refreshing outdated knowledge are broken or lack proper error handling.
+
+### `dream:20260902210220:2:9d7d68`
+*02.09. 21:02 UTC · Quelle: dream*
+
+High stress state (1.0) combined with frequent model failures causes severe operational bottlenecks, requiring aggressive task deferral or cheaper fallbacks.
+
+### `dream:20260902210220:1:e9eb62`
+*02.09. 21:02 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is chronically rate-limited (429) and should be temporarily blacklisted or deprioritized to prevent retry storms.
 
 ### `dream:20260902205447:5:a0bedd`
 *02.09. 20:54 UTC · Quelle: dream*

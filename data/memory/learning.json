@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 20:55:08",
+ "stand": "2026-09-02 21:02:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -30,6 +30,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -67,12 +73,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
@@ -369,7 +369,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.745,
+ "haende_quote": 0.746,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 31,
