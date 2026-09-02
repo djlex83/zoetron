@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10046 Fakten** · Stand 2026-09-02 23:10 UTC · aktualisiert bei jedem Herzschlag
+**10063 Fakten** · Stand 2026-09-02 23:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5465
-- **swarm_artifact:** 2137
-- **last_swarm_critique:** 710
-- **anti_pattern:** 621
-- **last_swarm_goal:** 458
-- **strategy:** 331
-- **tool:** 123
+- **dream:** 5470
+- **swarm_artifact:** 2143
+- **last_swarm_critique:** 711
+- **anti_pattern:** 623
+- **last_swarm_goal:** 459
+- **strategy:** 332
+- **tool:** 124
 - **hand_result:** 109
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-marktanalysen-wieder-auf-den-neuest`
+*02.09. 23:21 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Marktanalysen wieder auf den neuesten Stand bringen'. Datei: data/tools/alte-marktanalysen-wieder-auf-den-neuest.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Marktanalysen wiede:2`
+*02.09. 23:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Analyst-in-the-Loop Knowledge Graph Curation - Treat market analyses as living knowledge graph nodes rather than static files: (1) Parse all existing analyses into a property graph (Neo4j/GraphDB) with entities (companies, in
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Alte Marktanalysen wiede:1`
+*02.09. 23:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Event-Driven Continuous Synchronization Architecture - Shift from batch 'bring up to date' to continuous sync: (1) Deploy a lightweight message bus (NATS/Kafka) as the central nervous system. (2) Wrap each external data provi
+
+### `last_swarm_critique`
+*02.09. 23:20 UTC · Quelle: critic*
+
+score=6; issues=Core update logic delegated to external tool 'marktwissen-auf-den-neuesten-stand-bring' not included in artifacts - orchestration only; Verification checks file metadata (mtime, JSON validity) but not actual market data freshness or currency; F
+
+### `last_swarm_goal`
+*02.09. 23:17 UTC · Quelle: system*
+
+Alte Marktanalysen wieder auf den neuesten Stand bringen
+
+### `dream:20260902231656:5:997c99`
+*02.09. 23:16 UTC · Quelle: dream*
+
+Critic identified 'keyword-based data extraction' as key weakness, indicating structural parsing (selectors, schemas) must replace regex/keyword heuristics.
+
+### `dream:20260902231656:4:35f4db`
+*02.09. 23:16 UTC · Quelle: dream*
+
+Nemotron latency varies 6-75s (12x range), requiring adaptive timeouts rather than fixed limits to avoid premature failures.
+
+### `dream:20260902231656:3:737839`
+*02.09. 23:16 UTC · Quelle: dream*
+
+Simulation verdict 'revise' with 3 risks triggered exactly 3 revisions, showing simulation feedback directly maps to concrete correction cycles.
+
+### `dream:20260902231656:2:d18be8`
+*02.09. 23:16 UTC · Quelle: dream*
+
+Evolutionary variant generation (3 variants) improved solution score from 7 to 9, proving iterative refinement outperforms single-pass generation.
+
+### `dream:20260902231656:1:7776c3`
+*02.09. 23:16 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors and should be deprioritized in favor of nvidia/nemotron-3-ultra which succeeds reliably.
 
 ### `dream:20260902230851:5:4c8b3d`
 *02.09. 23:08 UTC · Quelle: dream*

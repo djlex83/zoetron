@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 23:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 23:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 18×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Critic identified 'keyword-based data extraction' as key weakness, indicating structural parsing (selectors, schemas) must replace regex/keyword heuri
+- Nemotron latency varies 6-75s (12x range), requiring adaptive timeouts rather than fixed limits to avoid premature failures.
+- Simulation verdict 'revise' with 3 risks triggered exactly 3 revisions, showing simulation feedback directly maps to concrete correction cycles.
+- Evolutionary variant generation (3 variants) improved solution score from 7 to 9, proving iterative refinement outperforms single-pass generation.
+- Model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors and should be deprioritized in favor of nvidia/nemotron-3-ultra which succeeds r
 - Simulation-based risk assessment catches issues pre-execution but hand-layer path resolution remains a blind spot.
 - Proposed skills accumulate without a consolidation mechanism to turn them into learned, reusable procedures.
 - Under conserve metabolism (stress=1.0), the system still wastes budget on repeated calls to known-failing models instead of immediate fallback.
@@ -51,11 +56,6 @@
 - The nvidia/nemotron-3-ultra-550b-a55b:free model is the sole reliable provider but exhibits high latency variance (12.5s–27.8s), indicating capacity s
 - Multiple independent skill proposals converge on model routing and fallback strategies, revealing a systemic reliability gap rather than an isolated i
 - The z-ai/glm-5.2:free model fails with 429 errors on every call across multiple cycles, making it permanently unreliable as a primary provider.
-- Circuit breaker, exponential backoff, and provider-aware routing proposals all target the same 429 failure mode but remain unimplemented.
-- Drive goals accumulate stale and combination signals without automatic execution, showing a gap between goal setting and skill dispatch.
-- Event pruning runs regularly (16-19 events) but fact pruning never triggers, revealing asymmetric memory pressure handling.
-- Multiple skill proposals address the same path resolution issue (ZOETRON_DATA prefixing), indicating a systemic missing middleware layer.
-- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra works reliably but with high latency (6-14s).
 
 ---
 
