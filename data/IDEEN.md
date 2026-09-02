@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 18:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 18:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Cross-provider failure correlation (simultaneous 429s) goes undetected, missing systemic rate-limit signals.
+- File path resolution fails when relative paths diverge from data root, requiring absolute path anchoring.
+- Skill proposals accumulate without enforced lifecycle, creating a 65-proposal backlog with near-zero implementation rate.
+- System stress at maximum triggers conservative mode but lacks automated degradation policies for model calls.
+- Provider-specific rate limits (429 errors) persist without automatic exclusion, wasting retries on doomed calls.
 - Drive goals accumulate from failure/stale signals but lack automatic clustering into composite work packages.
 - Prune runs consistently remove zero facts/events, indicating TTL/access policies are either absent or misconfigured.
 - Selbstdiagnose reports zero organ errors while external model APIs fail repeatedly, revealing a monitoring blind spot.
@@ -51,11 +56,6 @@
 - Successful calls to nemotron-3-ultra exhibit 96-108s latency, signaling provider saturation that precedes hard errors.
 - Absence of a circuit breaker causes repeated futile calls to failing providers, wasting latency budget and tokens on doomed requests.
 - Multiple providers (z-ai, google, nvidia) simultaneously return 429/502 errors, indicating correlated rate-limiting or upstream saturation rather than
-- Skills are proposed via drive_goal but lack an automated test harness; the system explicitly notes 'Viele Fähigkeiten werden vorgeschlagen, aber kaum 
-- Under high stress (1.0) and conserve mode, the system still attempted multiple model calls with long latencies (up to 136s) instead of degrading grace
-- The reflex tool 'modellfehler-deutlich-reduzieren.py' itself failed (ok: false), showing that error-reduction procedures need their own validation.
-- Hand actions fail when they don't resolve input paths from both sys.argv[1] and ZOETRON_DATA environment variable before attempting file operations.
-- Free-tier models (glm-5.2, gemma-4) consistently return 429 rate-limit errors, making them unreliable as primary providers.
 
 ---
 

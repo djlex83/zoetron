@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9862 Fakten** · Stand 2026-09-02 18:04 UTC · aktualisiert bei jedem Herzschlag
+**9867 Fakten** · Stand 2026-09-02 18:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5335
+- **dream:** 5340
 - **swarm_artifact:** 2107
 - **last_swarm_critique:** 705
 - **anti_pattern:** 615
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902182128:5:e01fa2`
+*02.09. 18:21 UTC · Quelle: dream*
+
+Cross-provider failure correlation (simultaneous 429s) goes undetected, missing systemic rate-limit signals.
+
+### `dream:20260902182128:4:703666`
+*02.09. 18:21 UTC · Quelle: dream*
+
+File path resolution fails when relative paths diverge from data root, requiring absolute path anchoring.
+
+### `dream:20260902182128:3:5ccc90`
+*02.09. 18:21 UTC · Quelle: dream*
+
+Skill proposals accumulate without enforced lifecycle, creating a 65-proposal backlog with near-zero implementation rate.
+
+### `dream:20260902182128:2:ec9a06`
+*02.09. 18:21 UTC · Quelle: dream*
+
+System stress at maximum triggers conservative mode but lacks automated degradation policies for model calls.
+
+### `dream:20260902182128:1:7236c8`
+*02.09. 18:21 UTC · Quelle: dream*
+
+Provider-specific rate limits (429 errors) persist without automatic exclusion, wasting retries on doomed calls.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Veraltetes Analysewissen:2`
 *02.09. 18:01 UTC · Quelle: evolution*
