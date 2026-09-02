@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,8 +28,8 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism stress=1.0 forced conserve mode (max 1 iteration); add proactive load-shedding before stress peaks.
+- Initial hand_action timeout (20s, 0 bytes) vs later success (1.4s) shows transient I/O flakiness; implement retry with exponential backoff.
+- Simulation-based pre-flight (verdict: revise, 4 risks) prevented deployment failures; institutionalize sim-before-execute.
+- High latency on fallback models (20–75s) makes synchronous calls impractical; async with timeout budgets needed.
+- Free model endpoints suffer frequent 429 rate limits; a rotating fallback pool with health checks is essential.
 - Reflex tool execution failed but swarm fallback activated, showing partial resilience but no systematic retry/fallback policy.
 - Market analysis artifacts age without TTL-based freshness checks, risking stale insights influencing decisions.
 - Skill proposals accumulate but remain unimplemented; a drive goal explicitly notes the proposal-to-execution gap.
@@ -51,11 +56,6 @@
 - The system repeatedly retries failed providers without backoff or circuit-breaking, wasting cycles and amplifying upstream errors.
 - Latency variance across models (4.2s vs 45.8s) breaks planning assumptions and causes timeout cascades in downstream tasks.
 - Free-tier models consistently fail with 429 rate limits and 502 overloads under sustained autonomous load, making them unreliable as primary providers
-- Pruning runs remove 25-31 stale events per cycle, showing the fact/event store requires active cleanup to prevent accumulation.
-- The nvidia/nemotron-3-ultra-550b-a55b:free model is a reliable fallback but its 26-46s latency must be factored into scheduling decisions.
-- Self-diagnosis reports zero organ errors even when systemic failures like rate limiting occur, indicating blind spots in the diagnostic framework.
-- Skill proposals accumulate across sessions but remain unimplemented, revealing a persistent gap between diagnosis and actual deployment.
-- The z-ai/glm-5.2:free model repeatedly fails with 429 rate-limit errors, making it unusable without circuit breakers or automatic fallback.
 
 ---
 
