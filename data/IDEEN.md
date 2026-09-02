@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 09:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 09:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
@@ -36,11 +36,16 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five skill proposals exist but none deployed, exposing gap between proposal and production registration.
+- Organ-level diagnostics report clean while systemic rate-limit failures persist, requiring cross-organ correlation.
+- Reflex tool execution failed despite valid goal, showing need for pre-registration validation gates.
+- Hand action failure due to unresolved data paths indicates fragile path resolution needing abstraction.
+- Sustained 429 errors across four providers reveal missing request scheduling and per-provider health tracking.
 - Drive goals correctly identify systemic issues (model errors, stale knowledge, implementation gap) but lack automated execution loops to close them.
 - Event pruning (38 events/run) without fact pruning suggests experience accumulation outpaces knowledge distillation, risking memory bloat.
 - The system successfully self-implemented proposed skills via reflex-driven hand action, proving autonomous capability deployment works end-to-end.
@@ -51,11 +56,6 @@
 - Goals consistently converge via reflex-mode tool execution (marktanalyse-endlich-nutzen.py, veraltete-marktanalyse-auffrischen.py) rather than deliber
 - Five concrete skill proposals exist (calibration corrector, model-router, swarm optimizer, stale-goal reaper, pre-flight check) but none have been imp
 - The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, proving single-provider reliance cau
-- Reflex-driven learning executed without validation gates, risking integration of untested code into the skill graph.
-- Multiple independent skill proposals converge on circuit-breaker routing, rate-limit scheduling, and deployment automation, signaling architectural co
-- Successful calls (ling-3.0-flash-fin, nemotron-3-ultra) show 13-26s latency, indicating that any routing strategy must tolerate high variance.
-- Organ-level self-diagnosis reports clean health while system-level reliability collapses, revealing a monitoring blind spot for distributed rate-limit
-- Free-tier LLM endpoints fail predominantly via 429 rate-limit errors rather than model errors, making request scheduling more critical than model sele
 
 ---
 

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9565 Fakten** · Stand 2026-09-02 09:43 UTC · aktualisiert bei jedem Herzschlag
+**9579 Fakten** · Stand 2026-09-02 09:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5135
-- **swarm_artifact:** 2051
-- **last_swarm_critique:** 695
+- **dream:** 5140
+- **swarm_artifact:** 2057
+- **last_swarm_critique:** 696
 - **anti_pattern:** 607
-- **last_swarm_goal:** 443
+- **last_swarm_goal:** 444
 - **strategy:** 324
 - **tool:** 116
-- **hand_result:** 102
+- **hand_result:** 103
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*02.09. 09:57 UTC · Quelle: critic*
+
+score=9; issues=Zweites Artefakt (Registrierung) nutzt Fallback-Skills bei fehlenden Daten - in Produktion sollte strikter auf echte Daten bestanden werden; Drittes Artefakt (Konvergenztor) importiert Module zur Laufzeit ohne Isolation - potenzielles Risiko be
+
+### `last_swarm_goal`
+*02.09. 09:49 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich bauen
+
+### `dream:20260902094920:5:0ce947`
+*02.09. 09:49 UTC · Quelle: dream*
+
+Five skill proposals exist but none deployed, exposing gap between proposal and production registration.
+
+### `dream:20260902094920:4:be53d9`
+*02.09. 09:49 UTC · Quelle: dream*
+
+Organ-level diagnostics report clean while systemic rate-limit failures persist, requiring cross-organ correlation.
+
+### `dream:20260902094920:3:b3993b`
+*02.09. 09:49 UTC · Quelle: dream*
+
+Reflex tool execution failed despite valid goal, showing need for pre-registration validation gates.
+
+### `dream:20260902094920:2:099297`
+*02.09. 09:49 UTC · Quelle: dream*
+
+Hand action failure due to unresolved data paths indicates fragile path resolution needing abstraction.
+
+### `dream:20260902094920:1:3176ee`
+*02.09. 09:49 UTC · Quelle: dream*
+
+Sustained 429 errors across four providers reveal missing request scheduling and per-provider health tracking.
 
 ### `dream:20260902094113:5:2ac090`
 *02.09. 09:41 UTC · Quelle: dream*

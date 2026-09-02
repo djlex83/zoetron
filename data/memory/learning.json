@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-02 09:41:51",
+ "stand": "2026-09-02 09:57:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -15,22 +15,16 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 5,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 5,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
@@ -45,13 +39,19 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
@@ -357,17 +357,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.719,
- "simulationen_angewandt": 29,
+ "haende_quote": 0.71,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 33,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 5.85
+  "schnitt": 5.94
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 30,
-   "schnitt": 5.9
+   "schnitt": 6.0
   },
   "bau": {
    "n": 3,
