@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9372 Fakten** · Stand 2026-09-02 03:47 UTC · aktualisiert bei jedem Herzschlag
+**9389 Fakten** · Stand 2026-09-02 04:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5000
-- **swarm_artifact:** 2019
-- **last_swarm_critique:** 689
-- **anti_pattern:** 601
-- **last_swarm_goal:** 437
-- **strategy:** 321
-- **tool:** 113
+- **dream:** 5005
+- **swarm_artifact:** 2025
+- **last_swarm_critique:** 690
+- **anti_pattern:** 603
+- **last_swarm_goal:** 438
+- **strategy:** 322
+- **tool:** 114
 - **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeitsvorschläge-in-echte-skills-wan`
+*02.09. 04:07 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeitsvorschläge in echte Skills wandeln'. Datei: data/tools/fähigkeitsvorschläge-in-echte-skills-wan.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeitsvorschläge in :2`
+*02.09. 04:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Declarative Skill Graph Interpretation - Eliminate code generation entirely. Represent skills as immutable, typed directed acyclic graphs (DAGs) of primitive operations (transform, filter, aggregate, external-call). Proposa
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeitsvorschläge in :0`
+*02.09. 04:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Schema-First Contract Mediation - Introduce a versioned, strictly-typed contract layer between validator and skill-factory. Define a canonical ProposalSchema (with 'validated' as root key) using a schema registry (e.g., JSO
+
+### `last_swarm_critique`
+*02.09. 04:05 UTC · Quelle: critic*
+
+score=6; issues=Schema-Mismatch: find_validated_proposals sucht nach 'proposals'-Key, aber Validator (Artefakt 2) speichert unter 'validated' - Integration bricht; Code-Injection: proposal['logic'] wird ungeprüft in generierten Code eingebettet (Sicherheitsris
+
+### `last_swarm_goal`
+*02.09. 04:00 UTC · Quelle: system*
+
+Fähigkeitsvorschläge in echte Skills wandeln
+
+### `dream:20260902035958:5:786bd3`
+*02.09. 03:59 UTC · Quelle: dream*
+
+Successful fallback to nvidia/nemotron-3-ultra (15.4s latency) proves multi-model routing with latency/error tracking would prevent outages.
+
+### `dream:20260902035958:4:aeea38`
+*02.09. 03:59 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external model failures cascade, proving internal health checks miss dependency failures.
+
+### `dream:20260902035958:3:3a4eb2`
+*02.09. 03:59 UTC · Quelle: dream*
+
+Goals persisting weeks without progress (market analysis, reliability) show missing automatic escalation or archival mechanisms.
+
+### `dream:20260902035958:2:7bface`
+*02.09. 03:59 UTC · Quelle: dream*
+
+44 skill proposals vs 9 completed dreams reveals a broken proposal-to-implementation pipeline that stalls capability growth.
+
+### `dream:20260902035958:1:0ddd8a`
+*02.09. 03:59 UTC · Quelle: dream*
+
+Recurring 429 errors from z-ai/glm-5.2:free indicate single-model dependency is a systemic reliability risk.
 
 ### `tool:bessere-ziele-setzen-und-prüfen`
 *02.09. 03:45 UTC · Quelle: hands*

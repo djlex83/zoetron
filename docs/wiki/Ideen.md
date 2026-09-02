@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 03:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 04:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Successful fallback to nvidia/nemotron-3-ultra (15.4s latency) proves multi-model routing with latency/error tracking would prevent outages.
+- Self-diagnosis reports zero organ errors while external model failures cascade, proving internal health checks miss dependency failures.
+- Goals persisting weeks without progress (market analysis, reliability) show missing automatic escalation or archival mechanisms.
+- 44 skill proposals vs 9 completed dreams reveals a broken proposal-to-implementation pipeline that stalls capability growth.
+- Recurring 429 errors from z-ai/glm-5.2:free indicate single-model dependency is a systemic reliability risk.
 - Self-calibration error of 1 on a 10-point scale indicates reliable internal scoring; trust model scores for routing decisions.
 - Critic-driven evolution (identifying loose scripts → integrating → re-scoring) lifted quality from 5/10 to 9/10; structured iteration beats one-shot g
 - InclusionAI Ling Flash Fin consistently succeeds at ~14s latency on free tier; designate as primary workhorse model.
@@ -51,11 +56,6 @@
 - Stale goals persist in the system because there is no automated mechanism to detect and retire inactive or repeatedly failing objectives.
 - Swarm tasks fail silently when file paths are not resolved against the real data directory, indicating a systemic path-handling defect.
 - Free-tier LLM endpoints consistently fail under concurrent load with 429 and 502 errors, making them unreliable for production-grade orchestration.
-- Prune cycles remove events but never distill high-signal events into durable facts, losing reusable knowledge.
-- Three market analyses remain stale across multiple cycles with no automatic expiration or escalation, wasting context space and attention.
-- Five skill proposals were generated in one cycle but none were promoted to implemented skills, revealing a broken proposal-to-production pipeline.
-- hand_action fails when given relative paths because it does not canonicalize inputs against ZOETRON_DATA, causing silent zero-byte reads that look lik
-- The z-ai/glm-5.2:free provider consistently returns 429 errors under load while nvidia/nemotron-3-ultra succeeds, indicating provider-specific rate li
 
 ---
 

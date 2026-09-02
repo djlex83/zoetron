@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-02 03:45:44",
+ "stand": "2026-09-02 04:08:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 9,
    "erfolge": 9,
-   "quote": 1.0
-  },
-  {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 8,
-   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -27,10 +21,22 @@
    "quote": 1.0
   },
   {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 7,
+   "erfolge": 7,
+   "quote": 1.0
+  },
+  {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 5,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
@@ -51,26 +57,20 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
-   "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 4,
+   "tool": "alte-erinnerungen-auf-wert-prüfen.py",
+   "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -327,21 +327,21 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.724,
- "simulationen_angewandt": 32,
+ "haende_quote": 0.731,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 31,
   "best": 9.0,
-  "schnitt": 5.65
+  "schnitt": 5.74
  },
  "score_nach_ziel_typ": {
   "bau": {
-   "n": 5,
-   "schnitt": 5.0
+   "n": 4,
+   "schnitt": 5.5
   },
   "analyse": {
-   "n": 26,
-   "schnitt": 5.77
+   "n": 27,
+   "schnitt": 5.78
   }
  }
 }
