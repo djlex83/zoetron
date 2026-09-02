@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 16:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm architecture with planner/builder/critic roles converges in a single cycle, proving effective for skill-verification tasks.
+- Calibration systematically under-predicts outcomes (predicted 7 vs actual 9), indicating a need to adjust prediction confidence upward.
+- Tasks can converge to a high score (9) even when initial simulation prescribes revisions, suggesting the simulation's revision count is overcautious.
+- The nemotron-3-ultra-550b fallback model succeeds every time but exhibits degrading latency over successive calls (44s to 167s), signaling load-depend
+- Free models on OpenRouter (z-ai/glm-5.2) are unreliable due to repeated 429 rate-limit errors, requiring automatic fallback to a secondary model.
 - The gap between proposal generation and simulator testing is a persistent failure mode: new capabilities are suggested but never validated before depl
 - At stress=1.0 the system correctly entered conserve mode but still attempted multi-model fallback chains, wasting scarce budget on redundant retry att
 - Path-resolution guards must execute before hand_actions, not after: the failed hand_action touched no file because unresolved paths were not validated
@@ -51,11 +56,6 @@
 - Proposals generated without a deployment pipeline remain inert—the recurring 'fragile reflex script' pattern shows that manual implementation is a sin
 - The fastest successful model (inclusionai/ling-3.0-flash-fin at 10.5s) should anchor any fallback chain, as latency correlates directly with throughpu
 - 429 rate-limit errors are systemic across multiple free-tier models on OpenRouter, indicating a shared API gateway bottleneck rather than isolated pro
-- Latency exceeding the 75th percentile is an early warning signal that should trigger conservative mode before stress reaches critical levels.
-- Skill proposals generated from failure patterns only create value when they pass through a tested, rollback-capable deployment pipeline.
-- Stale analytical knowledge accumulates silently without timestamping or TTL-based pruning, degrading decision quality over time.
-- When multiple models fail simultaneously with 429/502 errors, the absence of a circuit-breaker and fallback mechanism causes cascading task failures.
-- Free-tier LLM APIs on shared infrastructure consistently hit rate limits and overload, making them unsuitable as sole dependencies for critical tasks.
 
 ---
 

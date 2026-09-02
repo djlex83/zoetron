@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9783 Fakten** · Stand 2026-09-02 16:01 UTC · aktualisiert bei jedem Herzschlag
+**9788 Fakten** · Stand 2026-09-02 16:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5285
+- **dream:** 5290
 - **swarm_artifact:** 2089
 - **last_swarm_critique:** 702
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902160653:5:3c5a39`
+*02.09. 16:06 UTC · Quelle: dream*
+
+The swarm architecture with planner/builder/critic roles converges in a single cycle, proving effective for skill-verification tasks.
+
+### `dream:20260902160653:4:ee3b23`
+*02.09. 16:06 UTC · Quelle: dream*
+
+Calibration systematically under-predicts outcomes (predicted 7 vs actual 9), indicating a need to adjust prediction confidence upward.
+
+### `dream:20260902160653:3:dd0733`
+*02.09. 16:06 UTC · Quelle: dream*
+
+Tasks can converge to a high score (9) even when initial simulation prescribes revisions, suggesting the simulation's revision count is overcautious.
+
+### `dream:20260902160653:2:67c110`
+*02.09. 16:06 UTC · Quelle: dream*
+
+The nemotron-3-ultra-550b fallback model succeeds every time but exhibits degrading latency over successive calls (44s to 167s), signaling load-dependent performance.
+
+### `dream:20260902160653:1:afb1c7`
+*02.09. 16:06 UTC · Quelle: dream*
+
+Free models on OpenRouter (z-ai/glm-5.2) are unreliable due to repeated 429 rate-limit errors, requiring automatic fallback to a secondary model.
 
 ### `dream:20260902155904:5:dd658d`
 *02.09. 15:59 UTC · Quelle: dream*

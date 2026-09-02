@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 15:59:49",
+ "stand": "2026-09-02 16:07:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -154,6 +154,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -321,12 +327,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-dauerhaft-senken.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -375,7 +375,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.715,
+ "haende_quote": 0.72,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 32,
@@ -384,8 +384,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 31,
-   "schnitt": 5.94
+   "n": 30,
+   "schnitt": 5.9
   },
   "bau": {
    "n": 1,
