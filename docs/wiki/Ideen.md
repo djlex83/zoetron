@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goals converge via reflex actions without measurable scores, making it impossible to distinguish genuine improvement from mere task completion.
+- Event pruning removes dozens of records while zero facts are pruned, causing the fact store to accumulate unevaluated observations that dilute signal 
+- Self-diagnosis reports zero organ errors despite repeated external API failures, indicating that infrastructure-level degradation is invisible to the 
+- Skill proposals are generated faster than they are validated through AST parse and unit-test gates, creating a persistent gap between proposed and pro
+- Free-tier models on shared OpenRouter infrastructure fail under load with cascading 429 errors across multiple providers, proving that at least one re
 - Pruning removed 81 events but zero facts, implying the fact store accumulates stale entries that never get invalidated by outcome feedback.
 - Self-diagnosis reports zero organ errors while router-level failure rates exceed 50%, revealing a blind spot in health monitoring scope.
 - Evolution runs improve scores (7→9) but swarm convergence remains false after 2 cycles, suggesting the fitness function or stopping criteria are misal
@@ -51,11 +56,6 @@
 - Ling-3.0-flash-fin provides the best speed/reliability tradeoff among free models (3.4s latency, consistent success).
 - Nemotron-3-ultra is the most reliable free model but exhibits high latency variance (26–105s) and occasional 502 upstream overloads.
 - Free-tier models on OpenRouter suffer pervasive rate limiting (429 errors) making them unreliable for production workloads.
-- System runs at stress=1.0 in 'conserve' mode with max_tasks=3, causing model fallback cascades that exceed latency budgets.
-- Simulation-based revision loop works: verdict 'revise' → 3 risks identified → 3 revisions applied → re-validation.
-- Skill proposals accumulate but deployment reflex (fähigkeitsvorschläge-in-echte-skills-ums.py) fails silently, creating a proposal-to-production gap.
-- Hand actions fail when tools resolve paths relative to CWD instead of ZOETRON_DATA, causing zero-byte reads despite valid input.
-- Primary model (glm-5.2) fails deterministically with 429 errors under load while fallback (nemotron-3-ultra) succeeds at 2-10x latency cost.
 
 ---
 

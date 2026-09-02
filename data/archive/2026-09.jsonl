@@ -3166,3 +3166,21 @@
 {"ts": 1787747749.4193604, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 23.5, "tokens_ein": 173, "tokens_aus": 878}}
 {"ts": 1787747749.4196103, "kind": "simulation", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "verdict": "revise", "risks": 5, "revisions": 5}}
 {"ts": 1787747749.419747, "kind": "simulation_applied", "payload": {"revisions": 1}}
+{"ts": 1787748005.6529112, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 256.1, "tokens_ein": 2731, "tokens_aus": 10000}}
+{"ts": 1787748005.6556177, "kind": "tor", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "gruen": false, "grund": "kein ausfuehrbarer Python-Block im Artefakt - Prosa allein konvergiert nicht", "zyklus": 1}}
+{"ts": 1787748024.999089, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 19.2, "tokens_ein": 1517, "tokens_aus": 497}}
+{"ts": 1787748024.9997878, "kind": "calibration", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "predicted": 5, "actual": 2, "abs_error": 3}}
+{"ts": 1787748024.9999113, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 2}}
+{"ts": 1787748034.7074883, "kind": "bahnen", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "delta": -0.5, "kanten": 0, "hat_code": false, "score": 2, "abgerufen": 9, "ids": ["f:b1a341f410ff", "e:172bb0b72b0b", "f:c528a33f71d3", "e:bb6600dd88dd", "f:b71e03640e62", "f:efdd930d5b7b", "e:b7c724c1d2b4", "f:1de710f3e1fc", "f:85ca530505a7"], "ziel_id": "g:63afc75ac900"}}
+{"ts": 1787748035.0990274, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787748035.0990252, "schalter_geoeffnet": false}}
+{"ts": 1787748035.4524078, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787748035.4524057, "schalter_geoeffnet": false}}
+{"ts": 1787748046.4588833, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 11.0, "tokens_ein": 252, "tokens_aus": 638}}
+{"ts": 1787748056.079644, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.6, "tokens_ein": 734, "tokens_aus": 249}}
+{"ts": 1787748056.0799878, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 2/10. Goal: Fähigkeits-Messlatte bauen (Capability-Benchmark)\nCritic issues: SANDBOX-URTEIL 'LAE", "variants": 3, "winner_index": 1, "scores": [6, 9, 5]}}
+{"ts": 1787748069.2476199, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 2.2, "tokens_ein": 540, "tokens_aus": 37}}
+{"ts": 1787748088.0048969, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 18.6, "tokens_ein": 299, "tokens_aus": 612}}
+{"ts": 1787748088.0051105, "kind": "simulation", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "verdict": "go", "risks": 5, "revisions": 5}}
+{"ts": 1787748088.0052986, "kind": "swarm_finished", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "score": 2, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787748088.0055516, "kind": "act_done", "payload": {"goal_title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "score": 2, "converged": false}}
+{"ts": 1787748090.0811749, "kind": "issue_synced", "payload": {"issue": 144, "state": "open"}}
+{"ts": 1787748139.9464817, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

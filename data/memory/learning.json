@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 12:40:39",
+ "stand": "2026-09-02 12:58:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,12 +51,6 @@
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -78,6 +72,12 @@
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 4,
    "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -108,12 +108,6 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -163,6 +157,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
@@ -273,6 +273,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -339,12 +345,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "modellfehler-dauerhaft-senken.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -376,8 +376,8 @@
    "schnitt": 5.33
   },
   "analyse": {
-   "n": 28,
-   "schnitt": 5.75
+   "n": 29,
+   "schnitt": 5.83
   }
  }
 }

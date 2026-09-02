@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9669 Fakten** · Stand 2026-09-02 12:42 UTC · aktualisiert bei jedem Herzschlag
+**9683 Fakten** · Stand 2026-09-02 13:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5210
-- **swarm_artifact:** 2065
-- **last_swarm_critique:** 698
+- **dream:** 5215
+- **swarm_artifact:** 2071
+- **last_swarm_critique:** 699
 - **anti_pattern:** 611
-- **last_swarm_goal:** 446
+- **last_swarm_goal:** 447
 - **strategy:** 326
-- **tool:** 117
+- **tool:** 118
 - **hand_result:** 104
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-finden-und-beheben`
+*02.09. 12:58 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler finden und beheben'. Datei: data/tools/modellfehler-finden-und-beheben.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*02.09. 12:58 UTC · Quelle: critic*
+
+score=8; issues=Keine automatische Behebung (Fix) implementiert - Artefakte erkennen Fehler, beheben sie nicht selbst; Harte Schwellenwerte in Drift-Detection (p=0.05, JS=0.1, PSI=0.2) ohne Konfigurierbarkeit; Synthetische Fallback-Daten können echte Produktio
+
+### `last_swarm_goal`
+*02.09. 12:48 UTC · Quelle: system*
+
+Modellfehler finden und beheben
+
+### `dream:20260902124809:5:29f98f`
+*02.09. 12:48 UTC · Quelle: dream*
+
+Goals converge via reflex actions without measurable scores, making it impossible to distinguish genuine improvement from mere task completion.
+
+### `dream:20260902124809:4:cded0a`
+*02.09. 12:48 UTC · Quelle: dream*
+
+Event pruning removes dozens of records while zero facts are pruned, causing the fact store to accumulate unevaluated observations that dilute signal quality over time.
+
+### `dream:20260902124809:3:06a94f`
+*02.09. 12:48 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated external API failures, indicating that infrastructure-level degradation is invisible to the current health-monitoring scope.
+
+### `dream:20260902124809:2:4d61ca`
+*02.09. 12:48 UTC · Quelle: dream*
+
+Skill proposals are generated faster than they are validated through AST parse and unit-test gates, creating a persistent gap between proposed and proven capabilities.
+
+### `dream:20260902124809:1:db646d`
+*02.09. 12:48 UTC · Quelle: dream*
+
+Free-tier models on shared OpenRouter infrastructure fail under load with cascading 429 errors across multiple providers, proving that at least one reliable fallback endpoint is a hard requirement for continuity.
 
 ### `dream:20260902124026:5:6d8c65`
 *02.09. 12:40 UTC · Quelle: dream*
