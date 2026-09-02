@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 16:15:47",
+ "stand": "2026-09-02 16:34:32",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -52,6 +46,12 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -157,6 +157,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
@@ -303,12 +309,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "wiederkehrenden-organfehler-endgültig-kl.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -369,17 +369,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.725,
+ "haende_quote": 0.729,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 32,
   "best": 9.0,
-  "schnitt": 5.81
+  "schnitt": 5.84
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 5.9
+   "n": 31,
+   "schnitt": 5.97
   },
   "bau": {
    "n": 1,

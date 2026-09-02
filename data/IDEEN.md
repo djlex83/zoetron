@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 16:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 16:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,30 +17,35 @@
 - Develop SkillDeploymentPipeline that takes validated proposals, generates tests, runs CI, and registers skills *(hatte die Idee 4×)*
 - Add DiagnosticGapDetector that correlates organ-level 'clean' reports with system-level failure patterns (e.g. *(hatte die Idee 4×)*
 - Create a periodic audit task that scores each proposed skill by test coverage and last-used timestamp, archivi *(hatte die Idee 4×)*
-- Implement model health registry with per-model 429/502 tracking, circuit-breaker state, and automatic fallback *(hatte die Idee 3×)*
-- Create a path resolver service that validates ZOETRON_DATA and sys.argv[1] at startup and provides canonical a *(hatte die Idee 3×)*
-- Develop a simulation harness that injects rate-limit, latency, and filesystem errors to vet plans before execu *(hatte die Idee 3×)*
+- Build ModelRouter with per-model 429-rate tracking, latency percentile baselines, and circuit-breaker auto-fal *(hatte die Idee 4×)*
+- Implement SkillDeploymentPipeline that ingests proposals, generates tests, runs CI in sandbox, and atomically  *(hatte die Idee 4×)*
+- Design LatencyBudgetGuard that enforces per-task SLOs, triggers conservative mode early when latency exceeds t *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning removes noise but fact retention needs TTL-based stale-data lifecycle.
+- Circuit-breaker activation after three consecutive errors prevents cascade but leaves capacity gaps.
+- Reflex-based tool execution converges reliably for well-scoped tasks like stale analysis refresh.
+- Organ-level health checks miss cross-organ failure signatures like sustained model 429s across multiple providers.
+- Free-tier models exhibit correlated failure bursts (429/502) making single-model dependence unsafe.
 - Self-diagnosis reports zero organ errors despite cascading model failures, revealing a monitoring blind spot for external dependencies.
 - Sequential model fallback without backoff wastes latency budget; health-aware routing must precede request dispatch.
 - Event pruning without fact pruning indicates episodic memory turnover while semantic knowledge remains stable.
@@ -51,11 +56,6 @@
 - Tasks can converge to a high score (9) even when initial simulation prescribes revisions, suggesting the simulation's revision count is overcautious.
 - The nemotron-3-ultra-550b fallback model succeeds every time but exhibits degrading latency over successive calls (44s to 167s), signaling load-depend
 - Free models on OpenRouter (z-ai/glm-5.2) are unreliable due to repeated 429 rate-limit errors, requiring automatic fallback to a secondary model.
-- The gap between proposal generation and simulator testing is a persistent failure mode: new capabilities are suggested but never validated before depl
-- At stress=1.0 the system correctly entered conserve mode but still attempted multi-model fallback chains, wasting scarce budget on redundant retry att
-- Path-resolution guards must execute before hand_actions, not after: the failed hand_action touched no file because unresolved paths were not validated
-- Skill proposals accumulate without execution: the reflex to validate proposed skills failed, confirming that proposals without enforced action deadlin
-- 429 rate-limit failures cascade across all providers simultaneously, indicating that naive failover routing is insufficient without circuit breakers t
 
 ---
 

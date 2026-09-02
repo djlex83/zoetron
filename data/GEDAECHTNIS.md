@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9793 Fakten** · Stand 2026-09-02 16:17 UTC · aktualisiert bei jedem Herzschlag
+**9806 Fakten** · Stand 2026-09-02 16:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5295
-- **swarm_artifact:** 2089
-- **last_swarm_critique:** 702
+- **dream:** 5300
+- **swarm_artifact:** 2095
+- **last_swarm_critique:** 703
 - **anti_pattern:** 613
-- **last_swarm_goal:** 450
+- **last_swarm_goal:** 451
 - **strategy:** 327
 - **tool:** 120
 - **hand_result:** 105
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*02.09. 16:34 UTC · Quelle: critic*
+
+score=8; issues=Leichte Code-Duplikation in den Fallback-Test-Methoden (ähnliche Retry-Schleifen in test_basic_failover, test_cascading_failures, test_intermittent_failure); ExtendedRegister fällt auf Vererbung von object zurück wenn model_health/metabolism ni
+
+### `last_swarm_goal`
+*02.09. 16:24 UTC · Quelle: system*
+
+Modell-Fehler reduzieren und Stabilität erhöhen
+
+### `dream:20260902162357:5:70df89`
+*02.09. 16:23 UTC · Quelle: dream*
+
+Event pruning removes noise but fact retention needs TTL-based stale-data lifecycle.
+
+### `dream:20260902162357:4:5fa60c`
+*02.09. 16:23 UTC · Quelle: dream*
+
+Circuit-breaker activation after three consecutive errors prevents cascade but leaves capacity gaps.
+
+### `dream:20260902162357:3:312a5c`
+*02.09. 16:23 UTC · Quelle: dream*
+
+Reflex-based tool execution converges reliably for well-scoped tasks like stale analysis refresh.
+
+### `dream:20260902162357:2:4d6d41`
+*02.09. 16:23 UTC · Quelle: dream*
+
+Organ-level health checks miss cross-organ failure signatures like sustained model 429s across multiple providers.
+
+### `dream:20260902162357:1:8f544f`
+*02.09. 16:23 UTC · Quelle: dream*
+
+Free-tier models exhibit correlated failure bursts (429/502) making single-model dependence unsafe.
 
 ### `dream:20260902161459:5:989b98`
 *02.09. 16:14 UTC · Quelle: dream*
