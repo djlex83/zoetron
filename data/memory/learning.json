@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 00:11:42",
+ "stand": "2026-09-02 00:32:17",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -105,12 +105,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -196,6 +190,12 @@
   },
   {
    "tool": "entfernte-erinnerungen-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -313,10 +313,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.721,
- "simulationen_angewandt": 33,
+ "haende_quote": 0.73,
+ "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 30,
   "best": 9.0,

@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9243 Fakten** · Stand 2026-09-02 00:12 UTC · aktualisiert bei jedem Herzschlag
+**9257 Fakten** · Stand 2026-09-02 00:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4925
-- **swarm_artifact:** 1989
-- **last_swarm_critique:** 684
+- **dream:** 4930
+- **swarm_artifact:** 1995
+- **last_swarm_critique:** 685
 - **anti_pattern:** 595
-- **last_swarm_goal:** 432
+- **last_swarm_goal:** 433
 - **strategy:** 318
-- **tool:** 108
+- **tool:** 109
 - **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:langsame-fakten-regelmäßig-aktualisieren`
+*02.09. 00:32 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Langsame Fakten regelmäßig aktualisieren'. Datei: data/tools/langsame-fakten-regelmäßig-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*02.09. 00:32 UTC · Quelle: critic*
+
+score=8; issues=Web search uses fragile DuckDuckGo HTML scraping that may break with UI changes; Volatility classification relies on German-specific regex patterns with no configurability; Fact extraction heuristics are basic (verb matching for text, key-name 
+
+### `last_swarm_goal`
+*02.09. 00:20 UTC · Quelle: system*
+
+Langsame Fakten regelmäßig aktualisieren
+
+### `dream:20260902001925:5:ed15b8`
+*02.09. 00:19 UTC · Quelle: dream*
+
+Replaying recorded 429/502/timeout traces in a simulation harness catches regressions before deployment.
+
+### `dream:20260902001925:4:8cf30b`
+*02.09. 00:19 UTC · Quelle: dream*
+
+Hybrid routing—fast local reflexes for routine work, external LLMs only for complex reasoning—reduces external dependency surface.
+
+### `dream:20260902001925:3:d8bbee`
+*02.09. 00:19 UTC · Quelle: dream*
+
+Circuit breakers that quarantine failing models for cooldown periods preserve system throughput during partial outages.
+
+### `dream:20260902001925:2:577678`
+*02.09. 00:19 UTC · Quelle: dream*
+
+Proactive token-bucket throttling across all outbound requests prevents cascade 429 errors better than reactive backoff.
+
+### `dream:20260902001925:1:1f1028`
+*02.09. 00:19 UTC · Quelle: dream*
+
+External LLM APIs fail predominantly via rate limits (429) and upstream overloads (502), making them unreliable as sole reasoning providers.
 
 ### `dream:20260902001001:5:e09e1f`
 *02.09. 00:10 UTC · Quelle: dream*

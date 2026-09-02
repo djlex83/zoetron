@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,14 +26,14 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Replaying recorded 429/502/timeout traces in a simulation harness catches regressions before deployment.
+- Hybrid routing—fast local reflexes for routine work, external LLMs only for complex reasoning—reduces external dependency surface.
+- Circuit breakers that quarantine failing models for cooldown periods preserve system throughput during partial outages.
+- Proactive token-bucket throttling across all outbound requests prevents cascade 429 errors better than reactive backoff.
+- External LLM APIs fail predominantly via rate limits (429) and upstream overloads (502), making them unreliable as sole reasoning providers.
 - Token/latency metrics are collected per-call but not aggregated into per-model health scores, preventing dynamic routing away from degraded endpoints.
 - Self-diagnosis and reflex loops succeed internally (0 organ errors, prune runs complete) but cannot compensate for external dependency fragility, crea
 - Strategic drive goals (market analysis utilization, knowledge refresh) remain stale despite existing strategies, revealing a missing trigger mechanism
@@ -51,11 +56,6 @@
 - Latency on the healthy model varied 4.5x (7.6s to 34.6s) with no adaptive routing or timeout handling, suggesting latency-based health scoring is miss
 - The goal 'Vergessenes Wissen regelmäßig auffrischen' scored only 2/10 and did not converge despite evolution (winner 9/10) and 5 simulation revisions,
 - glm-5.2:free failed with 429 rate-limit errors on 5 consecutive calls while nemotron-3-ultra remained healthy, indicating persistent endpoint-specific
-- Calibration overestimates success (predicted 6 vs actual 2), and memory retrieval (4 items) yields no code (hat_code=false) and negative delta (-0.5).
-- The "refresh forgotten knowledge" goal fails because artifacts lack executable Python blocks; prose alone does not converge.
-- Poolside Laguna exhibits high latency variance (29s–180s), indicating unstable performance even when successful.
-- Nvidia Nemotron shows intermittent 502 overload errors but recovers, suggesting transient upstream capacity issues.
-- Free-tier models (z-ai/glm-5.2, Google Gemma) consistently hit 429 rate limits, making them unreliable for sustained workloads.
 
 ---
 
