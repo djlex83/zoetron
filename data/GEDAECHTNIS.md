@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9518 Fakten** · Stand 2026-09-02 08:18 UTC · aktualisiert bei jedem Herzschlag
+**9523 Fakten** · Stand 2026-09-02 08:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5100
+- **dream:** 5105
 - **swarm_artifact:** 2045
 - **last_swarm_critique:** 694
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902082334:5:845eda`
+*02.09. 08:23 UTC · Quelle: dream*
+
+Reflex tool execution failed but swarm fallback activated, showing partial resilience but no systematic retry/fallback policy.
+
+### `dream:20260902082334:4:8d9d30`
+*02.09. 08:23 UTC · Quelle: dream*
+
+Market analysis artifacts age without TTL-based freshness checks, risking stale insights influencing decisions.
+
+### `dream:20260902082334:3:2108b6`
+*02.09. 08:23 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain unimplemented; a drive goal explicitly notes the proposal-to-execution gap.
+
+### `dream:20260902082334:2:52e093`
+*02.09. 08:23 UTC · Quelle: dream*
+
+Hand actions time out with zero input read (gelesen: 0), indicating missing pre-flight validation of preconditions before execution.
+
+### `dream:20260902082334:1:7d7d95`
+*02.09. 08:23 UTC · Quelle: dream*
+
+Multiple free-tier models simultaneously hit rate limits (429) and upstream errors (502), revealing that model dispatch lacks health-aware routing and circuit-breaking.
 
 ### `dream:20260902081624:5:cd5f2d`
 *02.09. 08:16 UTC · Quelle: dream*

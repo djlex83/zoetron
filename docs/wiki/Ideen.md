@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex tool execution failed but swarm fallback activated, showing partial resilience but no systematic retry/fallback policy.
+- Market analysis artifacts age without TTL-based freshness checks, risking stale insights influencing decisions.
+- Skill proposals accumulate but remain unimplemented; a drive goal explicitly notes the proposal-to-execution gap.
+- Hand actions time out with zero input read (gelesen: 0), indicating missing pre-flight validation of preconditions before execution.
+- Multiple free-tier models simultaneously hit rate limits (429) and upstream errors (502), revealing that model dispatch lacks health-aware routing and
 - Pruning removes only events (31-32 per run) while facts persist, suggesting fact durability but event volatility in memory consolidation.
 - Skill proposals for health checks, fallback routing, and validation gates exist but remain unimplemented, creating a proposal-execution gap.
 - The system repeatedly retries failed providers without backoff or circuit-breaking, wasting cycles and amplifying upstream errors.
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors even when systemic failures like rate limiting occur, indicating blind spots in the diagnostic framework.
 - Skill proposals accumulate across sessions but remain unimplemented, revealing a persistent gap between diagnosis and actual deployment.
 - The z-ai/glm-5.2:free model repeatedly fails with 429 rate-limit errors, making it unusable without circuit breakers or automatic fallback.
-- Self-diagnosis reports zero organ errors while model_fail events persist, revealing a blind spot between component health and service-level SLA.
-- Pruning removes events but zero facts, suggesting the fact store accumulates stale context that degrades future model prompts.
-- Three drive goals (model errors, stale analyses, 50 pending skills) share root cause: no automated pipeline converts proposals into executed capabilit
-- Fallback to nvidia/nemotron works but introduces 38-98s latency spikes, making reactive failover too slow for interactive loops.
-- Recurring 429 errors from z-ai/glm-5.2:free indicate missing proactive model health monitoring before dispatch.
 
 ---
 

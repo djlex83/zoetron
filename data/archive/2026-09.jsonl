@@ -2386,3 +2386,22 @@
 {"ts": 1787731542.7609792, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.37}}
 {"ts": 1787731544.7596228, "kind": "issue_synced", "payload": {"issue": 134, "state": "open"}}
 {"ts": 1787731588.8065417, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787732418.5341594, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787732432.9557965, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.8, "tokens_ein": 1458, "tokens_aus": 419}}
+{"ts": 1787732432.9565003, "kind": "skill_proposal", "payload": {"proposal": "skill_trial_scheduler.py: guarantee at least one pending skill_proposal gets an executed trial with recorded pass/fail evidence per dream cycle, prioritizing proposals repeated more than twice."}}
+{"ts": 1787732432.9565892, "kind": "skill_proposal", "payload": {"proposal": "failure_reason_logger.py: write structured rejection/error reasons (tool denial, model failure, goal abort) into the event stream at the moment of failure to enable cross-cycle pattern mining."}}
+{"ts": 1787732432.9566717, "kind": "skill_proposal", "payload": {"proposal": "goal_resolution_tracker.py: mark drive_goals as blocked or duplicate when no new evidence has arrived since the last cycle, forcing either investigation or explicit retirement instead of re-emission."}}
+{"ts": 1787732432.9567575, "kind": "skill_proposal", "payload": {"proposal": "memory_pruner.py: run prune passes automatically on event-age and recall-hit thresholds rather than waiting for manual triggers that consistently prune nothing."}}
+{"ts": 1787732432.956843, "kind": "skill_proposal", "payload": {"proposal": "reflex_matcher.py: before planning any recurring task type, check the reflex registry and directly execute a previously successful matching skill, bypassing full deliberation."}}
+{"ts": 1787732432.9569263, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787732444.2917202, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.9, "tokens_ein": 460, "tokens_aus": 224}}
+{"ts": 1787732444.2918856, "kind": "drive_goal", "payload": {"title": "Weniger Modellfehler durch bessere Vorhersagen", "why": "Das System macht oft Fehler bei seinen Vorhersagen. Wenn wir herausfinden, warum das passiert, wird alles Zuverlässiger.", "signal": "failure"}}
+{"ts": 1787732444.2919626, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber kaum davon wurden getestet. Wir sollten mehr davon ausprobieren, um zu sehen, was nützt.", "signal": "gap"}}
+{"ts": 1787732444.292028, "kind": "drive_goal", "payload": {"title": "Simulationen häufiger in die Tat umsetzen", "why": "Viele Übungen bleiben nur Theorie und werden selten im echten Leben angewendet. Wer mehr übt, was er sich vorstellt, wird besser darin.", "signal": "combination"}}
+{"ts": 1787732446.5291395, "kind": "swarm_started", "payload": {"goal": "Abgelehnte Werkzeuge besser prüfen"}}
+{"ts": 1787732454.8694723, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787732455.9074113, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787732498.589557, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 42.5, "tokens_ein": 1483, "tokens_aus": 1918}}
+{"ts": 1787732502.6364338, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.9, "tokens_ein": 508, "tokens_aus": 106}}
+{"ts": 1787732511.8158817, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.0, "tokens_ein": 229, "tokens_aus": 314}}
+{"ts": 1787732511.816109, "kind": "simulation", "payload": {"goal": "Abgelehnte Werkzeuge besser prüfen", "verdict": "go", "risks": 2, "revisions": 2}}
