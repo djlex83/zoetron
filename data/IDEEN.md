@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 10:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 10:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning removed 96 entries while facts remained stable, indicating experience accumulates faster than distilled knowledge.
+- Calibration error of 2 cycles suggests the planner underestimates complexity when model latency varies.
+- The swarm converged in one cycle with score 9 despite multiple model failures, proving ensemble redundancy works.
+- Hand actions failing with exit code 1 but no error message indicate silent I/O failures that pre-action validation could prevent.
+- Free-tier model providers consistently hit 429 rate limits under load, requiring automatic fallback to alternative providers.
 - Reflex tool 'vorgeschlagene-fähigkeiten-prüfen-und-ba.py' failed silently; skill-building pipelines need explicit success/failure telemetry and idempo
 - Simulation verdict 'revise' with 2 risks and 2 applied revisions shows pre-execution simulation catches defects, but the revision loop lacks a hard it
 - System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which silently truncates work; tasks must check metabolism budget before 
@@ -51,11 +56,6 @@
 - Organ-level diagnostics report clean while system-level model failures persist, revealing a monitoring blind spot between component and system health.
 - Hand actions fail when using relative paths instead of resolving against ZOETRON_DATA or sys.argv[1], causing silent zero-byte reads.
 - Rate limiting (429) affects multiple providers simultaneously, indicating systemic quota exhaustion rather than isolated provider failure.
-- Silent hand-action failures (exit 1, 0 bytes read) indicate missing pre-execution validation and health-check gates before downstream actions.
-- 502 upstream errors from Nvidia providers signal provider-side saturation, requiring provider diversification rather than naive retry loops.
-- A final swarm score of 1 despite a best variant score of 8.7 indicates the evolution mechanism fails to aggregate individual improvements into coheren
-- inclusionai/ling-3.0-flash-fin:free is the only consistently available low-latency model in this environment and should be treated as the primary fall
-- OpenRouter free-tier models are systematically rate-limited under concurrent load, making them unreliable for any time-sensitive or multi-request work
 
 ---
 

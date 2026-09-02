@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9602 Fakten** · Stand 2026-09-02 10:50 UTC · aktualisiert bei jedem Herzschlag
+**9607 Fakten** · Stand 2026-09-02 10:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5155
+- **dream:** 5160
 - **swarm_artifact:** 2059
 - **last_swarm_critique:** 697
 - **anti_pattern:** 609
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902105633:5:adbcc1`
+*02.09. 10:56 UTC · Quelle: dream*
+
+Event pruning removed 96 entries while facts remained stable, indicating experience accumulates faster than distilled knowledge.
+
+### `dream:20260902105633:4:f5860b`
+*02.09. 10:56 UTC · Quelle: dream*
+
+Calibration error of 2 cycles suggests the planner underestimates complexity when model latency varies.
+
+### `dream:20260902105633:3:4e3113`
+*02.09. 10:56 UTC · Quelle: dream*
+
+The swarm converged in one cycle with score 9 despite multiple model failures, proving ensemble redundancy works.
+
+### `dream:20260902105633:2:a17190`
+*02.09. 10:56 UTC · Quelle: dream*
+
+Hand actions failing with exit code 1 but no error message indicate silent I/O failures that pre-action validation could prevent.
+
+### `dream:20260902105633:1:6feafe`
+*02.09. 10:56 UTC · Quelle: dream*
+
+Free-tier model providers consistently hit 429 rate limits under load, requiring automatic fallback to alternative providers.
 
 ### `dream:20260902104806:5:03f0b3`
 *02.09. 10:48 UTC · Quelle: dream*
