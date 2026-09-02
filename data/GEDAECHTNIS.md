@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9942 Fakten** · Stand 2026-09-02 20:21 UTC · aktualisiert bei jedem Herzschlag
+**9947 Fakten** · Stand 2026-09-02 20:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5385
+- **dream:** 5390
 - **swarm_artifact:** 2125
 - **last_swarm_critique:** 708
 - **anti_pattern:** 617
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902203040:5:f629d9`
+*02.09. 20:30 UTC · Quelle: dream*
+
+Under high stress (1.0), the system enters a conserve state, limiting task execution to 3 tasks and 1 iteration, which should dictate task prioritization.
+
+### `dream:20260902203040:4:e1ff11`
+*02.09. 20:30 UTC · Quelle: dream*
+
+High latency (e.g., 124s) on fallback models can stall the system just as much as hard failures, necessitating strict latency budgets.
+
+### `dream:20260902203040:3:3a3986`
+*02.09. 20:30 UTC · Quelle: dream*
+
+The system accumulates skill proposals without executing them, creating a growing gap between proposed and actual capabilities.
+
+### `dream:20260902203040:2:1eb0c7`
+*02.09. 20:30 UTC · Quelle: dream*
+
+Hand actions fail when scripts do not properly resolve relative paths using `sys.argv[1]` and the `ZOETRON_DATA` environment variable.
+
+### `dream:20260902203040:1:f50667`
+*02.09. 20:30 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly unreliable, frequently hitting 429 rate limits and 502 upstream errors, requiring active circuit breaking.
 
 ### `last_swarm_critique`
 *02.09. 20:19 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 20:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 20:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Under high stress (1.0), the system enters a conserve state, limiting task execution to 3 tasks and 1 iteration, which should dictate task prioritizat
+- High latency (e.g., 124s) on fallback models can stall the system just as much as hard failures, necessitating strict latency budgets.
+- The system accumulates skill proposals without executing them, creating a growing gap between proposed and actual capabilities.
+- Hand actions fail when scripts do not properly resolve relative paths using `sys.argv[1]` and the `ZOETRON_DATA` environment variable.
+- Free-tier models on OpenRouter are highly unreliable, frequently hitting 429 rate limits and 502 upstream errors, requiring active circuit breaking.
 - Health facts for model endpoints decay without TTL enforcement, leaving routing decisions based on stale latency/error data.
 - Concurrent drive goals (error reduction, stale analysis, skill adoption) compete for limited model throughput, amplifying failure cascades.
 - Skill proposals accumulate without automatic implementation, creating a capability gap between generation and deployment.
@@ -51,11 +56,6 @@
 - Nvidia nemotron-3-ultra succeeds but at 44s latency, while inclusionai/ling-3.0-flash-fin delivers comparable quality at 14.6s, revealing a latency-qu
 - Calibration error of 5 points (predicted 4 vs actual 9) indicates the scoring predictor systematically underestimates task difficulty when artifacts a
 - Free-tier models exhibit cascading 429 rate-limit failures that propagate across multiple providers simultaneously, making single-model reliance unten
-- The simulation step with a 'revise' verdict and 5 forced revisions acted as an effective pre-flight safety net, catching risks before irreversible han
-- Latency escalation from 11s to 276s across successive nemotron calls signals degrading upstream capacity, demanding early timeout thresholds and autom
-- Operating at metabolism stress=1.0 with a budget of max 1 iteration eliminated all recovery headroom, turning transient API errors into cascading fail
-- Simultaneous 429 errors across multiple OpenRouter providers indicate a systemic rate-limit event, not a model-specific failure, requiring global back
-- Path resolution using relative paths against sys.argv[1] and environment variables failed silently because the cwd did not match the expected data roo
 
 ---
 
