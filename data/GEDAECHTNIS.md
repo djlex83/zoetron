@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9279 Fakten** · Stand 2026-09-02 00:55 UTC · aktualisiert bei jedem Herzschlag
+**9296 Fakten** · Stand 2026-09-02 01:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4940
-- **swarm_artifact:** 2001
-- **last_swarm_critique:** 686
-- **anti_pattern:** 597
-- **last_swarm_goal:** 434
-- **strategy:** 319
-- **tool:** 110
+- **dream:** 4945
+- **swarm_artifact:** 2007
+- **last_swarm_critique:** 687
+- **anti_pattern:** 599
+- **last_swarm_goal:** 435
+- **strategy:** 320
+- **tool:** 111
 - **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:viele-skill-vorschläge-ordnen-und-zusamm`
+*02.09. 01:27 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Viele Skill-Vorschläge ordnen und zusammenfassen'. Datei: data/tools/viele-skill-vorschläge-ordnen-und-zusamm.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Viele Skill-Vorschläge o:2`
+*02.09. 01:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): LLM-gesteuerte semantische Gruppierung mit iterativer Verfeinerung - Umgehe klassisches Clustering vollständig und nutze ein Sprachmodell (GPT-4o oder ein deutsches Open-Source-Modell wie Llama-3-8B), um Skill-Vorschläge anha
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Viele Skill-Vorschläge o:0`
+*02.09. 01:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Semantische Einbettung mit HDBSCAN-Hierarchischer Clusterung - Ersetze TF-IDF vollständig durch mehrsprachige Sentence-Embeddings (z.B. multilingual-e5-large oder LaBSE), die semantische Ähnlichkeiten über reines Wort-Overlap
+
+### `last_swarm_critique`
+*02.09. 01:26 UTC · Quelle: critic*
+
+score=6; issues=Hardcoded similarity thresholds (0.25, 0.3, 0.35) without justification or configurability; TF-IDF tokenization (\b\w{3,}\b) and stopword list not adapted for German language; Clustering algorithm is basic threshold-based connected components (
+
+### `last_swarm_goal`
+*02.09. 01:23 UTC · Quelle: system*
+
+Viele Skill-Vorschläge ordnen und zusammenfassen
+
+### `dream:20260902012300:5:7b21a5`
+*02.09. 01:23 UTC · Quelle: dream*
+
+Single-provider dependency (openrouter.ai) creates a correlated failure domain; all 6 models route through the same gateway, eliminating redundancy.
+
+### `dream:20260902012300:4:d78400`
+*02.09. 01:23 UTC · Quelle: dream*
+
+Latency variance is extreme (30s–113s) even for successful calls, making timeout budgets unpredictable and causing cascade delays in swarm coordination.
+
+### `dream:20260902012300:3:f7c121`
+*02.09. 01:23 UTC · Quelle: dream*
+
+No client-side backoff or circuit breaker exists: the system hammered failing endpoints repeatedly within seconds, wasting budget during conserve mode (stress=1.0, max_iterations=1).
+
+### `dream:20260902012300:2:71f3c1`
+*02.09. 01:23 UTC · Quelle: dream*
+
+Model reliability is transient: nvidia/nemotron succeeded 3 times but later returned 502 upstream errors, while inclusionai/ling-3.0-flash-fin succeeded once at 30s latency but was not retried.
+
+### `dream:20260902012300:1:d26b5b`
+*02.09. 01:23 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the systemic failure mode affecting all models simultaneously, indicating a shared OpenRouter gateway bottleneck rather than model-specific issues.
 
 ### `tool:veraltete-marktanalyse-auffrischen`
 *02.09. 00:53 UTC · Quelle: hands*

@@ -1,13 +1,7 @@
 {
- "stand": "2026-09-02 00:53:52",
+ "stand": "2026-09-02 01:27:45",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
-  {
-   "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 9,
-   "erfolge": 9,
-   "quote": 1.0
-  },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 9,
@@ -16,6 +10,12 @@
   },
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 8,
+   "erfolge": 8,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
@@ -75,12 +75,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -102,12 +96,6 @@
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -135,10 +123,22 @@
    "quote": 1.0
   },
   {
+   "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
@@ -165,6 +165,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-dauerhaft-senken.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -184,12 +190,6 @@
   },
   {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -315,16 +315,16 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.725,
+ "haende_quote": 0.72,
  "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 31,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 5.68
+  "schnitt": 5.69
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
+   "n": 27,
    "schnitt": 5.81
   },
   "bau": {
