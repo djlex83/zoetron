@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 17:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 17:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skills are proposed via drive_goal but lack an automated test harness; the system explicitly notes 'Viele Fähigkeiten werden vorgeschlagen, aber kaum 
+- Under high stress (1.0) and conserve mode, the system still attempted multiple model calls with long latencies (up to 136s) instead of degrading grace
+- The reflex tool 'modellfehler-deutlich-reduzieren.py' itself failed (ok: false), showing that error-reduction procedures need their own validation.
+- Hand actions fail when they don't resolve input paths from both sys.argv[1] and ZOETRON_DATA environment variable before attempting file operations.
+- Free-tier models (glm-5.2, gemma-4) consistently return 429 rate-limit errors, making them unreliable as primary providers.
 - Self-diagnosis reported zero organ errors while model failures, path errors, and stress saturation occurred simultaneously, revealing missing cross-or
 - Five skill proposals were generated but none were tested or deployed; proposal accumulation without validation pipeline creates illusion of progress.
 - System entered stress=1.0 conserve mode (max_tasks=3, max_iterations=1) precisely when recovery capacity was needed most, creating a death spiral.
@@ -51,11 +56,6 @@
 - Fact store grows (10k+ facts) but prune_run never removes facts (facts_pruned: 0), indicating stale knowledge accumulates without decay mechanism.
 - Reflex tools execute in <1s with 100% success rate while model calls take 18-60s with >80% failure rate, making reflex-first routing a clear latency/r
 - Model endpoint failures cascade predictably: 429 rate limits hit first, then 502 upstream overloads, forcing sequential fallback through 4+ models bef
-- Pruning removes events but not facts, suggesting fact-store bloat without quality control.
-- Memory contains ~10k facts yet retrieval is nearly absent during decision-making, wasting consolidated knowledge.
-- Reflex-driven tool execution (vorgeschlagene-fähigkeiten-wirklich-fert.py, veraltete-marktdaten-regelaessig-aktuali.py) succeeds when triggered, but t
-- Proposed skills accumulate but are not automatically built or tested, creating a capability gap.
-- Free-tier models consistently hit 429 rate limits under load while inclusionai/ling-3.0-flash-fin:free remains stable.
 
 ---
 

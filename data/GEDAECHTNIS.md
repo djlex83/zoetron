@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9826 Fakten** · Stand 2026-09-02 17:16 UTC · aktualisiert bei jedem Herzschlag
+**9831 Fakten** · Stand 2026-09-02 17:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5320
+- **dream:** 5325
 - **swarm_artifact:** 2095
 - **last_swarm_critique:** 703
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902172206:5:c3a37f`
+*02.09. 17:22 UTC · Quelle: dream*
+
+Skills are proposed via drive_goal but lack an automated test harness; the system explicitly notes 'Viele Fähigkeiten werden vorgeschlagen, aber kaum getestet.'
+
+### `dream:20260902172206:4:7076fa`
+*02.09. 17:22 UTC · Quelle: dream*
+
+Under high stress (1.0) and conserve mode, the system still attempted multiple model calls with long latencies (up to 136s) instead of degrading gracefully.
+
+### `dream:20260902172206:3:15588b`
+*02.09. 17:22 UTC · Quelle: dream*
+
+The reflex tool 'modellfehler-deutlich-reduzieren.py' itself failed (ok: false), showing that error-reduction procedures need their own validation.
+
+### `dream:20260902172206:2:b77a91`
+*02.09. 17:22 UTC · Quelle: dream*
+
+Hand actions fail when they don't resolve input paths from both sys.argv[1] and ZOETRON_DATA environment variable before attempting file operations.
+
+### `dream:20260902172206:1:d5fe9c`
+*02.09. 17:22 UTC · Quelle: dream*
+
+Free-tier models (glm-5.2, gemma-4) consistently return 429 rate-limit errors, making them unreliable as primary providers.
 
 ### `dream:20260902171347:5:d1bf68`
 *02.09. 17:13 UTC · Quelle: dream*

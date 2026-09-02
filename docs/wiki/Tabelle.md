@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 6937 Neuronen · 444086 bewertete Synapsen
+Stand: 6941 Neuronen · 444498 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,10 +12,10 @@ Stand: 6937 Neuronen · 444086 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 560 | 0.26 |
 | 2 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 606 | 0.23 |
-| 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 596 | 0.24 |
+| 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 597 | 0.24 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 602 | 0.23 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 612 | 0.23 |
-| 6 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 598 | 0.23 |
+| 6 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 599 | 0.23 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 507 | 0.27 |
 | 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 507 | 0.26 |
 | 9 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 505 | 0.26 |
