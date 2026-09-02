@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 11:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,12 +27,12 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven skill testing (vorgeschlagene-fähigkeiten-wirklich-fertigen) successfully converts proposals into applied capability, unlike passive pro
+- A stable fallback model (nemotron-3-ultra-550b-a55b:free) exists with acceptable latency but is not being systematically leveraged as the primary rout
+- Self-diagnosis at the organ level reports clean while system-level failures persist, meaning external infrastructure errors escape organ-level detecti
+- Skill proposals accumulate without being applied — the gap between proposing and implementing skills is a systemic bottleneck that reflex-based execut
+- 429 rate-limit errors on z-ai/glm-5.2:free are a persistent, recurring infrastructure failure requiring systematic circuit-breaking and provider failo
 - Self-diagnosis reports zero organ errors while the model router repeatedly fails, revealing a monitoring blind spot.
 - Automatic pruning removes events but not the systemic causes (rate limits, missing pre-flight checks) that generate them.
 - Proposed skills accumulate faster than they are validated, creating a backlog of untested capabilities.
@@ -51,11 +56,6 @@
 - Multiple ModelRouter proposals converge on per-provider health scoring, circuit breakers, and token-bucket pacing, showing consensus on required resil
 - Organ-level self-diagnosis reports zero errors while system-level 429 storms persist, revealing a diagnostic blind spot between component health and e
 - Recurring 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness in model selection, causing repeated hammering of exhausted endpoints.
-- Pruning 79 events while retaining 429 error patterns indicates the memory system preserves noise over signal, hindering future root-cause analysis.
-- Evolution and swarm cycles fail to converge (score 0) when the root cause is external infrastructure (rate limits) rather than code logic, wasting com
-- Organ-level self-diagnosis reports 'clean' while system-level 429 storms persist, revealing a critical observability gap between component health and 
-- Nvidia/nemotron-3-ultra serves as a stable fallback but introduces 18-37s latency variance that degrades interactive workflows.
-- Provider z-ai/glm-5.2:free exhibits systematic 429 rate-limiting under load, making it unreliable as a primary model despite occasional low-latency su
 
 ---
 
