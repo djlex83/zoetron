@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error 60% (predicted 5 cycles, actual 8) - estimation models drift and need online correction.
+- Simulation gate caught 3 risks and forced 2 revisions before 'go' verdict - virtual rehearsal prevents real failures but adds latency.
+- Stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1) - metabolic state directly caps execution scope.
+- First hand action failed because relative paths ignored injected absolute references (sys.argv[1], ZOETRON_DATA) - path normalization must precede fil
+- Model fallback succeeds but latency varies 6x (27-161s) - nemotron-3-ultra reliably replaces rate-limited glm-5.2 but needs timeout budgets.
 - Successful task completion correlates with reflex-mode tool execution, while systemic repair attempts fail due to missing pre-flight checks and valida
 - Metabolism-driven conserve mode (stress=1.0) starves remediation capacity exactly when systemic failures demand more resources.
 - Skill proposals accumulate without validation gates (AST parsing, unit tests), leading to execution failures when reflex tools are invoked.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (path resolver, deployment pipeline, latency guard) but lack an automated ingestion→test→register pipeline, leaving capabil
 - Cross-organ diagnostic gap: individual organs report healthy while sustained 429s degrade system-wide reliability, revealing missing correlation alert
 - Recurring 429 errors from z-ai/glm-5.2:free indicate a single-model dependency without health-aware routing, causing cascade failures when rate limits
-- Relative file paths in tool calls cause silent failures when the working directory shifts; binding all I/O to an explicit base (ZOETRON_DATA) at call 
-- Latency variance (12s vs 34s) for successful calls indicates missing per-task SLO enforcement; without a budget guard, low-priority work starves criti
-- Skill proposals accumulate faster than they are deployed; the gap between proposal and atomic registration with rollback is the primary bottleneck for
-- Self-diagnosis reporting 'no organ errors' while sustained 429s occur across models reveals a blind spot: cross-organ failure signatures (e.g., coordi
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production without a health-aware router that tracks per-mode
 
 ---
 

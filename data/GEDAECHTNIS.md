@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9707 Fakten** · Stand 2026-09-02 13:41 UTC · aktualisiert bei jedem Herzschlag
+**9712 Fakten** · Stand 2026-09-02 13:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5230
+- **dream:** 5235
 - **swarm_artifact:** 2077
 - **last_swarm_critique:** 700
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902134811:5:3950c8`
+*02.09. 13:48 UTC · Quelle: dream*
+
+Calibration error 60% (predicted 5 cycles, actual 8) - estimation models drift and need online correction.
+
+### `dream:20260902134811:4:0e75d9`
+*02.09. 13:48 UTC · Quelle: dream*
+
+Simulation gate caught 3 risks and forced 2 revisions before 'go' verdict - virtual rehearsal prevents real failures but adds latency.
+
+### `dream:20260902134811:3:b195ef`
+*02.09. 13:48 UTC · Quelle: dream*
+
+Stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1) - metabolic state directly caps execution scope.
+
+### `dream:20260902134811:2:b7a6b6`
+*02.09. 13:48 UTC · Quelle: dream*
+
+First hand action failed because relative paths ignored injected absolute references (sys.argv[1], ZOETRON_DATA) - path normalization must precede file ops.
+
+### `dream:20260902134811:1:c2ff2f`
+*02.09. 13:48 UTC · Quelle: dream*
+
+Model fallback succeeds but latency varies 6x (27-161s) - nemotron-3-ultra reliably replaces rate-limited glm-5.2 but needs timeout budgets.
 
 ### `dream:20260902133842:5:2c3696`
 *02.09. 13:38 UTC · Quelle: dream*
