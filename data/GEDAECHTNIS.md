@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9763 Fakten** · Stand 2026-09-02 15:23 UTC · aktualisiert bei jedem Herzschlag
+**9768 Fakten** · Stand 2026-09-02 15:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5265
+- **dream:** 5270
 - **swarm_artifact:** 2089
 - **last_swarm_critique:** 702
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902153355:5:4948b9`
+*02.09. 15:33 UTC · Quelle: dream*
+
+Calibration consistently underestimates difficulty (predicted 4 vs actual 6), and critic identifies /dev/ usage as a concrete code defect.
+
+### `dream:20260902153355:4:2bf048`
+*02.09. 15:33 UTC · Quelle: dream*
+
+The swarm evolution process stalls at score 6/10 with converged=false despite 2 cycles and 3 revisions applied.
+
+### `dream:20260902153355:3:fdee87`
+*02.09. 15:33 UTC · Quelle: dream*
+
+InclusionAI/Ling-3.0-Flash-Fin is the only model completing requests successfully in this session.
+
+### `dream:20260902153355:2:0f06ec`
+*02.09. 15:33 UTC · Quelle: dream*
+
+Nvidia Nemotron consistently returns 502 upstream errors, indicating unreliable infrastructure rather than rate limits.
+
+### `dream:20260902153355:1:f8d7c2`
+*02.09. 15:33 UTC · Quelle: dream*
+
+Rate limiting (429 errors) across multiple providers is the dominant failure mode, making model availability unpredictable.
 
 ### `tool:fertigkeiten-prüfen-und-nutzbar-machen`
 *02.09. 15:22 UTC · Quelle: hands*

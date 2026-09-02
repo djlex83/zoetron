@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 15:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,8 +29,8 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration consistently underestimates difficulty (predicted 4 vs actual 6), and critic identifies /dev/ usage as a concrete code defect.
+- The swarm evolution process stalls at score 6/10 with converged=false despite 2 cycles and 3 revisions applied.
+- InclusionAI/Ling-3.0-Flash-Fin is the only model completing requests successfully in this session.
+- Nvidia Nemotron consistently returns 502 upstream errors, indicating unreliable infrastructure rather than rate limits.
+- Rate limiting (429 errors) across multiple providers is the dominant failure mode, making model availability unpredictable.
 - Event pruning removed 31 events while extracting 0 facts, revealing that raw events accumulate faster than they are distilled into durable knowledge.
 - Hand-actions fail when relative paths are used without proper resolution against ZOETRON_DATA, indicating a path-handling vulnerability that silently 
 - When metabolic stress reaches 1.0, the system enters conserve mode with severely restricted budgets (max_tasks: 3, max_iterations: 1), which likely co
@@ -51,11 +56,6 @@
 - Multiple skill proposals already exist to fix observed failures (fallback chain, backoff, cache, pipeline, detector) but remain unimplemented, reveali
 - Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (39-115s), suggesting the fallback path lacks latency SLOs and may itself 
 - Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate-limiting that self-diagnosis misses because it only checks organ-level health, not c
-- Per-organ self-diagnosis found no errors, yet cross-organ patterns (sustained 429s across multiple models) were invisible without correlation — isolat
-- Latency varies dramatically even for the same successful model (9.4s vs 77.6s), meaning average-based budgeting is insufficient and percentile-based S
-- Skill proposals outnumber their actual deployment — the system generates ideas but lacks a validated pipeline to test and register them, leaving capab
-- Stale data accumulates without a consumption loop: market analyses and outdated facts were flagged repeatedly but never acted upon, indicating a gap b
-- Free-tier model dependencies without circuit breakers caused cascading 429 rate-limit failures across four consecutive calls, exposing a single-point-
 
 ---
 
