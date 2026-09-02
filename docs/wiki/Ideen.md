@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Skills testen und nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No response caching by prompt hash wastes tokens and exacerbates rate limits on repeated or similar queries across cycles.
+- Fallback to Nemotron-3-ultra succeeds but at 25-65s latency, violating implicit SLOs and lacking a latency budget guard to trigger conservative mode e
+- Skill proposals accumulate (path resolver, deployment pipeline, latency guard) but lack an automated ingestion→test→register pipeline, leaving capabil
+- Cross-organ diagnostic gap: individual organs report healthy while sustained 429s degrade system-wide reliability, revealing missing correlation alert
+- Recurring 429 errors from z-ai/glm-5.2:free indicate a single-model dependency without health-aware routing, causing cascade failures when rate limits
 - Relative file paths in tool calls cause silent failures when the working directory shifts; binding all I/O to an explicit base (ZOETRON_DATA) at call 
 - Latency variance (12s vs 34s) for successful calls indicates missing per-task SLO enforcement; without a budget guard, low-priority work starves criti
 - Skill proposals accumulate faster than they are deployed; the gap between proposal and atomic registration with rollback is the primary bottleneck for
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors despite repeated external API failures, indicating that infrastructure-level degradation is invisible to the 
 - Skill proposals are generated faster than they are validated through AST parse and unit-test gates, creating a persistent gap between proposed and pro
 - Free-tier models on shared OpenRouter infrastructure fail under load with cascading 429 errors across multiple providers, proving that at least one re
-- Pruning removed 81 events but zero facts, implying the fact store accumulates stale entries that never get invalidated by outcome feedback.
-- Self-diagnosis reports zero organ errors while router-level failure rates exceed 50%, revealing a blind spot in health monitoring scope.
-- Evolution runs improve scores (7→9) but swarm convergence remains false after 2 cycles, suggesting the fitness function or stopping criteria are misal
-- The critic consistently flags unbounded loops (while True:) as a forbidden pattern, yet generated code still produces them, indicating a missing synta
-- Free-tier endpoints exhibit burst 429/502 failures that cluster in time, making naive round-robin routing ineffective without shared quota awareness.
 
 ---
 

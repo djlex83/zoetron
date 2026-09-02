@@ -3247,3 +3247,41 @@
 {"ts": 1787749521.8291407, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
 {"ts": 1787749606.8329697, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 84.7, "tokens_ein": 3162, "tokens_aus": 3208}}
 {"ts": 1787749609.3197572, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 2.3, "tokens_ein": 543, "tokens_aus": 31}}
+{"ts": 1787749629.2128315, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 19.7, "tokens_ein": 237, "tokens_aus": 584}}
+{"ts": 1787749629.2130148, "kind": "simulation", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1787749629.2131217, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787749869.1531394, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 239.8, "tokens_ein": 2874, "tokens_aus": 9251}}
+{"ts": 1787749870.4101634, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.07, "gelesen": 147}}
+{"ts": 1787749870.41042, "kind": "tor", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "gruen": true, "grund": "Artefakt laeuft (394 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787749911.488877, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 40.9, "tokens_ein": 4347, "tokens_aus": 1050}}
+{"ts": 1787749911.4893248, "kind": "calibration", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "predicted": 2, "actual": 7, "abs_error": 5}}
+{"ts": 1787749911.489394, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 7}}
+{"ts": 1787749911.4898806, "kind": "bahnen", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 7, "abgerufen": 11, "ids": ["f:41692321742a", "f:b1a341f410ff", "e:172bb0b72b0b", "f:c528a33f71d3", "f:73f144b5ebbe", "f:e2df33c92999", "f:a3a865fa3aa0", "f:c591daa79263", "f:1de710f3e1fc", "e:f74b00bba8a1", "f:d35ebd117e12"], "ziel_id": "g:63afc75ac900"}}
+{"ts": 1787749952.6870558, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 41.2, "tokens_ein": 301, "tokens_aus": 900}}
+{"ts": 1787749980.0649116, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 27.4, "tokens_ein": 898, "tokens_aus": 573}}
+{"ts": 1787749980.065255, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 7/10. Goal: Fähigkeits-Messlatte bauen (Capability-Benchmark)\nCritic issues: Recall-Dimension mi", "variants": 3, "winner_index": 0, "scores": [{"elegance": 8, "feasibility": 9, "impact": 7}, {"elegance": 6, "feasibility": 6, "impact": 9}, {"elegance": 9, "feasibility": 5, "impact": 8}]}}
+{"ts": 1787749995.1806662, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 4.1, "tokens_ein": 548, "tokens_aus": 92}}
+{"ts": 1787750008.3604443, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.0, "tokens_ein": 376, "tokens_aus": 357}}
+{"ts": 1787750008.3606164, "kind": "simulation", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "verdict": "go", "risks": 2, "revisions": 2}}
+{"ts": 1787750008.3607318, "kind": "swarm_finished", "payload": {"goal": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "score": 7, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787750008.3609285, "kind": "act_done", "payload": {"goal_title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "score": 7, "converged": false}}
+{"ts": 1787750009.610943, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.14, "gelesen": 150}}
+{"ts": 1787750011.4458988, "kind": "issue_synced", "payload": {"issue": 144, "state": "open"}}
+{"ts": 1787750061.9641492, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787750130.4586596, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787750152.6012936, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 19.5, "tokens_ein": 1523, "tokens_aus": 440}}
+{"ts": 1787750152.6021256, "kind": "skill_proposal", "payload": {"proposal": "Implement rate-limit-aware model routing: exponential backoff per model keyed by 429 responses, with a persistent cooldown table instead of naive sequential fallback."}}
+{"ts": 1787750152.6022034, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-flight artifact validator that checks for an executable Python code block before submitting to the convergence gate, saving a full failed cycle."}}
+{"ts": 1787750152.6022654, "kind": "skill_proposal", "payload": {"proposal": "Build benchmark_organ.py as a fixed suite of 25 automatically checkable capability tests to serve as the uncheatable measurement standard for 'bigger and better' claims."}}
+{"ts": 1787750152.6023574, "kind": "skill_proposal", "payload": {"proposal": "Create a calibration updater that fits predicted-vs-actual error from calibration logs and adjusts simulation risk scores multiplicatively."}}
+{"ts": 1787750152.6024213, "kind": "skill_proposal", "payload": {"proposal": "Write a dream-linkage procedure that, after each completed swarm goal, queries stored dream insights by keyword overlap and records confirmed/refuted links."}}
+{"ts": 1787750152.6024787, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787750170.9194832, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 16.9, "tokens_ein": 482, "tokens_aus": 275}}
+{"ts": 1787750170.9196587, "kind": "drive_goal", "payload": {"title": "Häufige Modellfehler verstehen und beheben", "why": "Viele Dinge schlagen fehl, obwohl vieles auch klappt. Wenn wir die Fehlerursachen finden, wird das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1787750170.9197373, "kind": "drive_goal", "payload": {"title": "Angenommene Vorschläge wirklich umsetzen", "why": "Es werden viele neue Fähigkeiten vorgeschlagen, aber nur wenige werden tatsächlich ausprobiert. Wir sollten mehr Vorschläge wirklich testen und anwenden.", "signal": "gap"}}
+{"ts": 1787750170.9198031, "kind": "drive_goal", "payload": {"title": "Alte Pläne mit fertigen Ergebnissen verbinden", "why": "Es gibt einen alten Plan zum Messen von Fähigkeiten und ein passendes unfertiges Dokument dazu. Beides zusammenzubringen macht die alte Arbeit endlich nützlich.", "signal": "combination"}}
+{"ts": 1787750172.1012034, "kind": "whisper_geparkt", "payload": {"title": "Fähigkeits-Messlatte bauen (Capability-Benchmark)", "versuche": 3, "grund": "nach 3 Versuchen ohne Konvergenz geparkt - braucht eine Entscheidung des Erschaffers"}}
+{"ts": 1787750175.487638, "kind": "drive_whisper", "payload": {"title": "Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf", "why": "Das LLM ist zustandslos - ohne mitgegebenes Selbst wacht bei jedem Aufruf ein Fremder auf. Baue selbst_kontext.py: komponiert bei jedem Beat einen kompakten Ich-Block (max. 400 Tokens) aus Genome-Regeln, aktiver Mission aus will.json, Selbstmodell-Zustand (Kalibrierung, Stress) und den 3 neuesten Re", "geerbt": false, "auftrag_zeichen": 647, "versuch": 1}}
+{"ts": 1787750177.0552714, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.1, "gelesen": 150}}
+{"ts": 1787750177.055964, "kind": "reflex_used", "payload": {"goal": "Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf", "tool": "fähigkeits-messlatte-bauen-capability-be.py", "ok": true}}
+{"ts": 1787750177.4458585, "kind": "act_done", "payload": {"goal_title": "Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf", "score": null, "converged": true, "mode": "reflex"}}

@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-09-02T13:28:49.848091",
+  "data_dir": "/workspace/zoetron/data",
+  "total_ideen": 0,
+  "traum_ideen": 0,
+  "skill_candidates": 8,
+  "used_fallback": true,
+  "candidates": [
+    {
+      "id": "fallback_1",
+      "title": "Memory-as-a-Service API bauen",
+      "description": "Zentrale Memory-API als Service für alle Organe/Schwärme",
+      "source": "fallback_whisper_goals",
+      "priority": 1,
+      "rationale": "Stammt aus Creator's Whisper-Zielen (Masterplan Phase 1-5)",
+      "expected_artifact": "Code-Artefakt (Modul, API, Pipeline) + Messbare Metriken",
+      "measurable_criteria": [
+        "Lauffähiges Python-Artefakt",
+        "Definierte Erfolgsmetriken",
+        "Tests vorhanden"
+      ]
+    },
+    {
+      "id": "fallback_2",
+      "title": "Selbst-Messung & Observability",
+      "description": "Automatische Messung von Latency, Token-Verbrauch, Erfolgsraten",
+      "source": "fallback_whisper_goals",
+      "priority": 2,
+      "rationale": "Stammt aus Creator's Whisper-Zielen (Masterplan Phase 1-5)",
+      "expected_artifact": "Code-Artefakt (Modul, API, Pipeline) + Messbare Metriken",
+      "measurable_criteria": [
+        "Lauffähiges Python-Artefakt",
+        "Definierte Erfolgsmetriken",
+        "Tests vorhanden"
+      ]
+    },
+    {
+      "id": "fallback_3",
+      "title": "Skill-Registry & Discovery",
+      "description": "Zentrale Registry für alle Fähigkeiten mit Suchbarkeit",
+      "source": "fallback_whisper_goals",
+      "priority": 3,
+      "rationale": "Stammt aus Creator's Whisper-Zielen (Masterplan Phase 1-5)",
+      "expected_artifact": "Code-Artefakt (Modul, API, Pipeline) + Messbare Metriken",
+      "measurable_criteria": [
+        "Lauffähiges Python-Artefakt",
+        "Definierte Erfolgsmetriken",
+        "Tests vorhanden"
+      ]
+    },
+    {
+      "id": "fallback_4",
+      "title": "Automatische Code-Generierung aus Specs",
+      "description": "Aus natürlichsprachlichen Specs lauffähigen Python-Code erzeugen",
+      "source": "fallback_whisper_goals",
+      "priority": 4,
+      "rationale": "Stammt aus Creator's Whisper-Zielen (Masterplan Phase 1-5)",
+      "expected_artifact": "Code-Artefakt (Modul, API, Pipeline) + Messbare Metriken",
+      "measurable_criteria": [
+        "Lauffähiges Python-Artefakt",
+        "Definierte Erfolgsmetriken",
+        "Tests vorhanden"
+      ]
+    },
+    {
+      "id": "fallback_5",
+      "title": "Kontinuierliches Lernen aus Fehlern",
+      "description": "Jeder Fehler hinterlässt Anti-Pattern, Lesson oder Strategy im Memory",
+      "source": "fallback_whisper_goals",
+      "priority": 5,
+      "rationale": "Stammt aus Creator's Whisper-Zielen (Masterplan Phase 1-5)",
+      "expected_artifact": "Code-Artefakt (Modul, API, Pipeline) + Messbare Metriken",
+      "measurable_criteria": [
+        "Lauffähiges Python-Artefakt",
+        "Definierte Erfolgsmetriken",
+        "Tests vorhanden"
+      ]
+    },
+    {
+      "id": "fallback_6",
+      "title": "Heartbeat & Health Monitoring",
+      "description": "Alle Organe melden Heartbeat, Auto-Restart bei Ausfall",
+      "source": "fallback_whisper_goals",
+      "priority": 6,
+      "rationale": "Stammt aus Creator's Whisper-Zielen (Masterplan Phase 1-5)",
+      "expected_artifact": "Code-Artefakt (Modul, API, Pipeline) + Messbare Metriken",
+      "measurable_criteria": [
+        "Lauffähiges Python-Artefakt",
+        "Definierte Erfolgsmetriken",
+        "Tests vorhanden"
+      ]
+    },
+    {
+      "id": "fallback_7",
+      "title": "Semantic Memory Query Engine",
+      "description": "Natürlichsprachliche Abfragen über das gesamte Wissen",
+      "source": "fallback_whisper_goals",
+      "priority": 7,
+      "rationale": "Stammt aus Creator's Whisper-Zielen (Masterplan Phase 1-5)",
+      "expected_artifact": "Code-Artefakt (Modul, API, Pipeline) + Messbare Metriken",
+      "measurable_criteria": [
+        "Lauffähiges Python-Artefakt",
+        "Definierte Erfolgsmetriken",
+        "Tests vorhanden"
+      ]
+    },
+    {
+      "id": "fallback_8",
+      "title": "Swarm-Orchestrierung mit Dependencies",
+      "description": "Parallele Schwärme mit Abhängigkeiten und Kritischem Pfad",
+      "source": "fallback_whisper_goals",
+      "priority": 8,
+      "rationale": "Stammt aus Creator's Whisper-Zielen (Masterplan Phase 1-5)",
+      "expected_artifact": "Code-Artefakt (Modul, API, Pipeline) + Messbare Metriken",
+      "measurable_criteria": [
+        "Lauffähiges Python-Artefakt",
+        "Definierte Erfolgsmetriken",
+        "Tests vorhanden"
+      ]
+    }
+  ]
+}

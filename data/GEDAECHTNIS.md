@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9688 Fakten** · Stand 2026-09-02 13:11 UTC · aktualisiert bei jedem Herzschlag
+**9702 Fakten** · Stand 2026-09-02 13:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5220
-- **swarm_artifact:** 2071
-- **last_swarm_critique:** 699
+- **dream:** 5225
+- **swarm_artifact:** 2077
+- **last_swarm_critique:** 700
 - **anti_pattern:** 611
-- **last_swarm_goal:** 447
+- **last_swarm_goal:** 448
 - **strategy:** 326
-- **tool:** 118
+- **tool:** 119
 - **hand_result:** 104
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:traum-ideen-zu-fähigkeiten-machen`
+*02.09. 13:28 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Traum-Ideen zu Fähigkeiten machen'. Datei: data/tools/traum-ideen-zu-fähigkeiten-machen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*02.09. 13:28 UTC · Quelle: critic*
+
+score=8; issues=Fallback-Simulation ist rein heuristisch (Keyword-Matching) und kein echtes Weltmodell; Keine echte Integration mit zoetron.simulate sichtbar (Modul wird nur versucht zu importieren); Simulationsergebnisse bei Fallback sind deterministisch aber
+
+### `last_swarm_goal`
+*02.09. 13:19 UTC · Quelle: system*
+
+Traum-Ideen zu Fähigkeiten machen
+
+### `dream:20260902131800:5:87e757`
+*02.09. 13:18 UTC · Quelle: dream*
+
+No response caching by prompt hash wastes tokens and exacerbates rate limits on repeated or similar queries across cycles.
+
+### `dream:20260902131800:4:ee6332`
+*02.09. 13:18 UTC · Quelle: dream*
+
+Fallback to Nemotron-3-ultra succeeds but at 25-65s latency, violating implicit SLOs and lacking a latency budget guard to trigger conservative mode early.
+
+### `dream:20260902131800:3:cf0d78`
+*02.09. 13:18 UTC · Quelle: dream*
+
+Skill proposals accumulate (path resolver, deployment pipeline, latency guard) but lack an automated ingestion→test→register pipeline, leaving capabilities undeployed.
+
+### `dream:20260902131800:2:808f7a`
+*02.09. 13:18 UTC · Quelle: dream*
+
+Cross-organ diagnostic gap: individual organs report healthy while sustained 429s degrade system-wide reliability, revealing missing correlation alerts.
+
+### `dream:20260902131800:1:155063`
+*02.09. 13:18 UTC · Quelle: dream*
+
+Recurring 429 errors from z-ai/glm-5.2:free indicate a single-model dependency without health-aware routing, causing cascade failures when rate limits hit.
 
 ### `dream:20260902130819:5:8ea56d`
 *02.09. 13:08 UTC · Quelle: dream*
