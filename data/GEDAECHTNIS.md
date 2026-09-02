@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9622 Fakten** · Stand 2026-09-02 11:23 UTC · aktualisiert bei jedem Herzschlag
+**9639 Fakten** · Stand 2026-09-02 11:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5175
-- **swarm_artifact:** 2059
-- **last_swarm_critique:** 697
-- **anti_pattern:** 609
-- **last_swarm_goal:** 445
-- **strategy:** 325
-- **tool:** 116
+- **dream:** 5180
+- **swarm_artifact:** 2065
+- **last_swarm_critique:** 698
+- **anti_pattern:** 611
+- **last_swarm_goal:** 446
+- **strategy:** 326
+- **tool:** 117
 - **hand_result:** 104
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-skills-umsetzen`
+*02.09. 11:42 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Skills umsetzen'. Datei: data/tools/vorgeschlagene-skills-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Skills um:2`
+*02.09. 11:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.0): Symbol-level import verification - Implement import checking by actually importing the module and inspecting its namespace for required symbols (List, Dict, etc.) using hasattr() and type checking. Generate precise error me
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Skills um:0`
+*02.09. 11:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.5): AST-based static analysis - Replace regex-based forbidden pattern detection with AST parsing to understand code context. For 'while True:' loops, analyze the loop body for break/return/raise statements to allow legitimate i
+
+### `last_swarm_critique`
+*02.09. 11:36 UTC · Quelle: critic*
+
+score=7; issues=Forbidden pattern 'while True:' flags legitimate loops with break conditions (false positive); Forbidden pattern 'TODO|FIXME|XXX|HACK' flags any occurrence including explanatory comments (false positive); Dry-run execution only verifies module 
+
+### `last_swarm_goal`
+*02.09. 11:29 UTC · Quelle: system*
+
+Vorgeschlagene Skills umsetzen
+
+### `dream:20260902112936:5:6436a0`
+*02.09. 11:29 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra exhibits 30-60s latency, making naive failover costly; routing must weigh latency against availability.
+
+### `dream:20260902112936:4:09d42f`
+*02.09. 11:29 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this log) but none are validated or deployed, creating a proposal-to-production gap that wastes design effort.
+
+### `dream:20260902112936:3:d3c8db`
+*02.09. 11:29 UTC · Quelle: dream*
+
+Multiple ModelRouter proposals converge on per-provider health scoring, circuit breakers, and token-bucket pacing, showing consensus on required resilience primitives.
+
+### `dream:20260902112936:2:1d13a9`
+*02.09. 11:29 UTC · Quelle: dream*
+
+Organ-level self-diagnosis reports zero errors while system-level 429 storms persist, revealing a diagnostic blind spot between component health and emergent failure patterns.
+
+### `dream:20260902112936:1:2e018e`
+*02.09. 11:29 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free indicate missing rate-limit awareness in model selection, causing repeated hammering of exhausted endpoints.
 
 ### `dream:20260902112053:5:ae04ad`
 *02.09. 11:20 UTC · Quelle: dream*
