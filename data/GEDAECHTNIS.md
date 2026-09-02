@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9867 Fakten** · Stand 2026-09-02 18:23 UTC · aktualisiert bei jedem Herzschlag
+**9872 Fakten** · Stand 2026-09-02 18:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5340
+- **dream:** 5345
 - **swarm_artifact:** 2107
 - **last_swarm_critique:** 705
 - **anti_pattern:** 615
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902182929:5:a00644`
+*02.09. 18:29 UTC · Quelle: dream*
+
+Hand-action (local tool) succeeded in 0.45 s with zero errors, confirming non-LLM steps as stable backbone when LLM layer degrades.
+
+### `dream:20260902182929:4:c82b40`
+*02.09. 18:29 UTC · Quelle: dream*
+
+Metabolism state 'conserve' with max_tasks=3 and max_iterations=1 correctly throttled load, preventing cascade failures under high model error rates.
+
+### `dream:20260902182929:3:6caa19`
+*02.09. 18:29 UTC · Quelle: dream*
+
+The swarm completed its goal (calibration error 0, tor grün) despite 70% model-call failures, proving resilience through model diversity and conservative budgeting.
+
+### `dream:20260902182929:2:229952`
+*02.09. 18:29 UTC · Quelle: dream*
+
+Nemotron-3-Ultra succeeds consistently but exhibits extreme latency variance (14–217 s), indicating queue-depth sensitivity rather than model failure.
+
+### `dream:20260902182929:1:9a60b3`
+*02.09. 18:29 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary workers.
 
 ### `dream:20260902182128:5:e01fa2`
 *02.09. 18:21 UTC · Quelle: dream*

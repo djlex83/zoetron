@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 18:21:53",
+ "stand": "2026-09-02 18:29:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -201,6 +201,12 @@
    "quote": 0.0
   },
   {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -345,12 +351,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "wissenswidersprüche-auflösen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -363,8 +363,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.725,
- "simulationen_angewandt": 27,
+ "haende_quote": 0.726,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 32,
   "best": 9.0,
