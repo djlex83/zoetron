@@ -2267,3 +2267,95 @@
 {"ts": 1787729762.8007798, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten in echte Handlungen umsetzen", "tool": "simulationen-häufiger-in-handlungen-umse.py", "ok": true}}
 {"ts": 1787729763.6103787, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten in echte Handlungen umsetzen", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1787729807.1243637, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787729998.5427625, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787730016.107961, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 15.1, "tokens_ein": 1245, "tokens_aus": 423}}
+{"ts": 1787730016.1085896, "kind": "skill_proposal", "payload": {"proposal": "skill_trial_scheduler.py: enforce that at least one pending skill_proposal per dream cycle gets an actual trial run with pass/fail evidence recorded, prioritizing proposals proposed more than twice."}}
+{"ts": 1787730016.1086462, "kind": "skill_proposal", "payload": {"proposal": "failure_reason_logger.py: capture structured rejection/error reasons (tool denials, model failures, goal aborts) at the point of failure so cross-cycle pattern mining becomes possible."}}
+{"ts": 1787730016.1087053, "kind": "skill_proposal", "payload": {"proposal": "goal_resolution_tracker.py: mark a drive_goal as blocked/duplicate instead of re-emitting it when no new evidence was gathered since last cycle, forcing either investigation or explicit retirement."}}
+{"ts": 1787730016.108761, "kind": "skill_proposal", "payload": {"proposal": "memory_pruner.py: trigger prune passes based on event-age and recall-hit thresholds rather than manual runs, since current prune runs always prune zero items."}}
+{"ts": 1787730016.108815, "kind": "skill_proposal", "payload": {"proposal": "reflex_matcher.py: before planning any repeated task type, check the reflex registry first and execute directly if a previously successful skill matches, bypassing full deliberation."}}
+{"ts": 1787730016.1088684, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787730028.1561916, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.5, "tokens_ein": 466, "tokens_aus": 287}}
+{"ts": 1787730028.1563988, "kind": "drive_goal", "payload": {"title": "Mehr Skill-Vorschläge wirklich ausprobieren", "why": "Das System schlägt sehr viele neue Fähigkeiten vor, aber nur wenige werden tatsächlich getestet. Wenn mehr Vorschläge ausprobiert werden, kann es im Alltag mehr selbst erledigen.", "signal": "gap"}}
+{"ts": 1787730028.1564782, "kind": "drive_goal", "payload": {"title": "Grund für abgelehnte Werkzeuge finden", "why": "Zweimal wurde ein Werkzeug vom System abgelehnt. Wir wollen herausfinden, warum das passiert ist, damit es künftig seltener blockiert wird.", "signal": "failure"}}
+{"ts": 1787730028.1565428, "kind": "drive_goal", "payload": {"title": "Alte Träume miteinander verbinden", "why": "Es gibt zwei alte Erinnerungen aus Träumen, die noch nie zusammengebracht wurden. Werden sie verbunden, kann das System neue Ideen daraus lernen.", "signal": "combination"}}
+{"ts": 1787730030.4259741, "kind": "swarm_started", "payload": {"goal": "Alte Traumideen mit Strategien verbinden"}}
+{"ts": 1787730038.8059611, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787730039.7294202, "kind": "metabolism_check", "payload": {"stress": 0.0, "state": "full", "budget": {"max_tasks": 5, "max_iterations": 2}}}
+{"ts": 1787730103.9309456, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 64.0, "tokens_ein": 1594, "tokens_aus": 2435}}
+{"ts": 1787730108.827036, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 4.7, "tokens_ein": 523, "tokens_aus": 85}}
+{"ts": 1787730127.821706, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 18.9, "tokens_ein": 231, "tokens_aus": 607}}
+{"ts": 1787730127.821891, "kind": "simulation", "payload": {"goal": "Alte Traumideen mit Strategien verbinden", "verdict": "revise", "risks": 4, "revisions": 3}}
+{"ts": 1787730127.8219848, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787730180.7338457, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 52.8, "tokens_ein": 1874, "tokens_aus": 1941}}
+{"ts": 1787730181.0665386, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22}}
+{"ts": 1787730181.066775, "kind": "tor", "payload": {"goal": "Alte Traumideen mit Strategien verbinden", "gruen": true, "grund": "Artefakt laeuft (163 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787730191.9657192, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.8, "tokens_ein": 2235, "tokens_aus": 273}}
+{"ts": 1787730191.966227, "kind": "calibration", "payload": {"goal": "Alte Traumideen mit Strategien verbinden", "predicted": 6, "actual": 8, "abs_error": 2}}
+{"ts": 1787730191.9663131, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 8}}
+{"ts": 1787730200.0516226, "kind": "bahnen", "payload": {"goal": "Alte Traumideen mit Strategien verbinden", "delta": 1.0, "kanten": 15, "hat_code": true, "score": 8, "abgerufen": 5, "ids": ["e:f08663a0d512", "e:be1bb9b945cf", "e:736308c2debb", "e:4205ee108d54", "f:ab734fb14718"], "ziel_id": "g:8ed382c4bec6"}}
+{"ts": 1787730200.0518098, "kind": "swarm_finished", "payload": {"goal": "Alte Traumideen mit Strategien verbinden", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": false}}
+{"ts": 1787730200.0519936, "kind": "act_done", "payload": {"goal_title": "Alte Traumideen mit Strategien verbinden", "score": 8, "converged": true}}
+{"ts": 1787730200.3267572, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.18}}
+{"ts": 1787730202.7987185, "kind": "issue_synced", "payload": {"issue": 133, "state": "closed"}}
+{"ts": 1787730245.9848042, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787730375.5971014, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787730397.6063387, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 19.4, "tokens_ein": 1507, "tokens_aus": 529}}
+{"ts": 1787730397.6068714, "kind": "skill_proposal", "payload": {"proposal": "Skill 'stderr_capture': wrap every hand_action so exit code, stdout, and stderr are persisted as structured facts, enabling root-cause analysis instead of 'error: null'."}}
+{"ts": 1787730397.6069257, "kind": "skill_proposal", "payload": {"proposal": "Skill 'late_calibration': defer score prediction until after simulation verdicts exist, or predict twice (pre/post-simulation) and report both to shrink abs_error."}}
+{"ts": 1787730397.6069758, "kind": "skill_proposal", "payload": {"proposal": "Skill 'evolve_on_low_score': automatically trigger an evolution_run with ≥3 variants whenever a swarm cycle ends with score < 5 instead of waiting for the next full cycle."}}
+{"ts": 1787730397.6070282, "kind": "skill_proposal", "payload": {"proposal": "Skill 'long_call_splitter': detect predicted output > ~4000 tokens and decompose into chunked sub-calls to cap per-call latency below ~60s."}}
+{"ts": 1787730397.6070778, "kind": "skill_proposal", "payload": {"proposal": "Skill 'recurring_failure_ledger': aggregate repeated failure signatures (e.g., exit 1, calibration miss > 2) into a persistent ledger that auto-generates drive goals like 'reduce model errors' with concrete counts."}}
+{"ts": 1787730397.6071277, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787730409.3256404, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.4, "tokens_ein": 465, "tokens_aus": 244}}
+{"ts": 1787730409.3258069, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten endlich ausprobieren", "why": "Es wurden sehr viele neue Fähigkeiten vorgeschlagen, aber kaum eine wurde wirklich getestet. Wenn wir sie ausprobieren, wird das System im Alltag tatsächlich besser.", "signal": "gap"}}
+{"ts": 1787730409.3258822, "kind": "drive_goal", "payload": {"title": "Abgelehntes Werkzeug genauer anschauen", "why": "Ein Werkzeug wurde einmal abgelehnt und niemand hat geklärt, warum. Wenn wir den Grund finden, vermeiden wir künftig solche Fehler.", "signal": "failure"}}
+{"ts": 1787730409.3259692, "kind": "drive_goal", "payload": {"title": "Alte Trauminhalte mit neuen Plänen verbinden", "why": "Es gibt alte Ideen aus Träumen und fertige Ergebnisse, die noch nie zusammengebracht wurden. Wer sie kombiniert, entdeckt vielleicht nützliche Neues.", "signal": "combination"}}
+{"ts": 1787730411.1158764, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24}}
+{"ts": 1787730411.1164608, "kind": "reflex_used", "payload": {"goal": "Gute Fähigkeitsvorschläge wirklich ausprobieren", "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py", "ok": true}}
+{"ts": 1787730411.4821334, "kind": "act_done", "payload": {"goal_title": "Gute Fähigkeitsvorschläge wirklich ausprobieren", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787730454.8558698, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787730645.0950854, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787730666.7373004, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 19.0, "tokens_ein": 1314, "tokens_aus": 455}}
+{"ts": 1787730666.7378716, "kind": "skill_proposal", "payload": {"proposal": "Skill 'error_payload_guard': on any non-zero exit with error=null, automatically re-run the action with verbose/stderr capture enabled before logging it as a bare failure."}}
+{"ts": 1787730666.7379296, "kind": "skill_proposal", "payload": {"proposal": "Skill 'proposal_trial_quota': enforce a ratio cap (e.g., max 5 open proposals per 1 tested) that pauses new skill_proposal generation until backlog items get trial runs."}}
+{"ts": 1787730666.7379844, "kind": "skill_proposal", "payload": {"proposal": "Skill 'min_cycle_floor': set a minimum of 3-4 swarm cycles before declaring non-convergence when score is low but rising, preventing premature termination."}}
+{"ts": 1787730666.738037, "kind": "skill_proposal", "payload": {"proposal": "Skill 'reflex_goal_binding': index available reflexes by goal keywords at goal creation time so matching reflexes are surfaced as first-action candidates instead of being discovered ad hoc."}}
+{"ts": 1787730666.7380912, "kind": "skill_proposal", "payload": {"proposal": "Skill 'prune_effectiveness_check': if a prune_run removes 0 items for N consecutive runs, flag the pruning criteria for review rather than silently continuing."}}
+{"ts": 1787730666.7381442, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787730679.1067567, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.0, "tokens_ein": 463, "tokens_aus": 298}}
+{"ts": 1787730679.1069353, "kind": "drive_goal", "payload": {"title": "Mehr vorgeschlagene Fähigkeiten wirklich ausprobieren", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber nur wenige wurden bisher getestet. Wenn wir mehr davon ausprobieren, lernen wir schneller, was wirklich funktioniert.", "signal": "gap"}}
+{"ts": 1787730679.1070125, "kind": "drive_goal", "payload": {"title": "Verstehen, warum ein Werkzeug abgelehnt wurde", "why": "Ein Werkzeug wurde einmal nicht erlaubt und wir wissen noch nicht genau warum. Das zu klären hilft, solche Fehler künftig zu vermeiden.", "signal": "failure"}}
+{"ts": 1787730679.107078, "kind": "drive_goal", "payload": {"title": "Alte Träume mit neuen Handlungen verbinden", "why": "Zwei alte Erinnerungen liegen weit auseinander, obwohl sie zusammengehören könnten. Werden sie verbunden, entstehen neue Ideen für bessere Entscheidungen.", "signal": "combination"}}
+{"ts": 1787730680.9083772, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23}}
+{"ts": 1787730680.9089184, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fertigkeiten tatsächlich einbauen", "tool": "vorgeschlagene-fähigkeiten-wirklich-ausp.py", "ok": true}}
+{"ts": 1787730681.3421912, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fertigkeiten tatsächlich einbauen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787730724.6971507, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787730915.042424, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787730918.0587947, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787730918.0587914, "schalter_geoeffnet": false}}
+{"ts": 1787730918.4714737, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787730918.4714708, "schalter_geoeffnet": false}}
+{"ts": 1787730972.7268047, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 54.3, "tokens_ein": 1269, "tokens_aus": 689}}
+{"ts": 1787730972.7276583, "kind": "skill_proposal", "payload": {"proposal": "Implement automatic skill-backlog injection at swarm start so each run validates at least one pending proposal, clearing the 50-item backlog."}}
+{"ts": 1787730972.7277517, "kind": "skill_proposal", "payload": {"proposal": "Add calibration corrector that subtracts rolling mean absolute error from predicted scores before gating evolution/acceptance decisions."}}
+{"ts": 1787730972.7278407, "kind": "skill_proposal", "payload": {"proposal": "Create critic_schema_guard wrapper that retries once with explicit format reminder before marking critic output unparsable, preventing wasted evolution runs."}}
+{"ts": 1787730972.7279322, "kind": "skill_proposal", "payload": {"proposal": "Build conserve_budget_escalator: if conserve-mode swarm fails to converge within budget, allow exactly one extra cycle instead of ending unconverged at score <6."}}
+{"ts": 1787730972.7280192, "kind": "skill_proposal", "payload": {"proposal": "Record fast-path convergence templates: when swarm converges cycle 1 with score >=8, save role configuration as reusable template for similar goal types."}}
+{"ts": 1787730972.728109, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787730974.430263, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787730974.430259, "schalter_geoeffnet": false}}
+{"ts": 1787730974.7678154, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787730974.7678125, "schalter_geoeffnet": false}}
+{"ts": 1787731024.9406424, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 50.2, "tokens_ein": 447, "tokens_aus": 723}}
+{"ts": 1787731024.9407742, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Es gab Fehler bei den Modellen. Wenn sie besser funktionieren, kann das System sicherer planen.", "signal": "failure"}}
+{"ts": 1787731024.940849, "kind": "drive_goal", "payload": {"title": "Werkzeuge besser auswählen", "why": "Ein Werkzeug wurde abgelehnt. Das System soll lernen, passende Werkzeuge zu finden.", "signal": "failure"}}
+{"ts": 1787731024.9409144, "kind": "drive_goal", "payload": {"title": "Simulationen öfter anwenden", "why": "Viele Simulationen laufen, aber wenige werden genutzt. Mehr Anwendung bringt mehr Können.", "signal": "gap"}}
+{"ts": 1787731027.5735178, "kind": "swarm_started", "payload": {"goal": "Modell-Fehler reduzieren durch bessere Skills"}}
+{"ts": 1787731035.8412514, "kind": "recall", "payload": {"keys": ["last_swarm_goal", "dream:20260826075106:1:2d8d42"]}}
+{"ts": 1787731036.8293521, "kind": "metabolism_check", "payload": {"stress": 0.58, "state": "moderate", "budget": {"max_tasks": 4, "max_iterations": 2}}}
+{"ts": 1787731037.7305455, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787731037.7305434, "schalter_geoeffnet": false}}
+{"ts": 1787731038.0669556, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787731038.0669527, "schalter_geoeffnet": false}}
+{"ts": 1787731045.3703575, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 7.3, "tokens_ein": 1817, "tokens_aus": 519}}
+{"ts": 1787731048.8126776, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.2, "tokens_ein": 529, "tokens_aus": 76}}
+{"ts": 1787731067.6008458, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 18.6, "tokens_ein": 379, "tokens_aus": 559}}
+{"ts": 1787731067.601026, "kind": "simulation", "payload": {"goal": "Modell-Fehler reduzieren durch bessere Skills", "verdict": "go", "risks": 0, "revisions": 0}}
+{"ts": 1787731067.9583778, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787731067.958375, "schalter_geoeffnet": false}}
+{"ts": 1787731068.3056428, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787731068.3056397, "schalter_geoeffnet": false}}
+{"ts": 1787731171.2206433, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 102.9, "tokens_ein": 1993, "tokens_aus": 5348}}

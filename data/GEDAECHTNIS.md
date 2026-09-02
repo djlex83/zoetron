@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9503 Fakten** · Stand 2026-09-02 07:44 UTC · aktualisiert bei jedem Herzschlag
+**9508 Fakten** · Stand 2026-09-02 08:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5085
+- **dream:** 5090
 - **swarm_artifact:** 2045
 - **last_swarm_critique:** 694
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902080056:5:74794d`
+*02.09. 08:00 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model_fail events persist, revealing a blind spot between component health and service-level SLA.
+
+### `dream:20260902080056:4:c54dd2`
+*02.09. 08:00 UTC · Quelle: dream*
+
+Pruning removes events but zero facts, suggesting the fact store accumulates stale context that degrades future model prompts.
+
+### `dream:20260902080056:3:641c1f`
+*02.09. 08:00 UTC · Quelle: dream*
+
+Three drive goals (model errors, stale analyses, 50 pending skills) share root cause: no automated pipeline converts proposals into executed capabilities.
+
+### `dream:20260902080056:2:3e538b`
+*02.09. 08:00 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron works but introduces 38-98s latency spikes, making reactive failover too slow for interactive loops.
+
+### `dream:20260902080056:1:d6c467`
+*02.09. 08:00 UTC · Quelle: dream*
+
+Recurring 429 errors from z-ai/glm-5.2:free indicate missing proactive model health monitoring before dispatch.
 
 ### `tool:kritik-und-ziel-prozess-wieder-beleben`
 *02.09. 07:43 UTC · Quelle: hands*
