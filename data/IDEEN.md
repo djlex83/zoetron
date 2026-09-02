@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 03:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 03:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,19 +13,19 @@
 - Develop a simulation harness that injects rate-limit, latency, and filesystem errors to vet plans before execu *(hatte die Idee 3×)*
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
-- Implement a model-health registry tracking success-rate, p95 latency, and 429 count per endpoint; auto-quarant *(hatte die Idee 2×)*
-- Create a proposal-to-execution gate: every cycle must promote at least one skill proposal to a working prototy *(hatte die Idee 2×)*
 - Create resolve_data_path skill: normalize all file references to absolute paths using ZOETRON_DATA and sys.arg *(hatte die Idee 2×)*
 - Build an analysis freshness monitor that auto-escalates stale (>7d) completed analyses to action planning. *(hatte die Idee 2×)*
 - Build integrate_skill_proposal pipeline: auto-scaffold, test, and promote proposals from dream log to skills/  *(hatte die Idee 2×)*
 - Add validate_contracts skill: enforce JSON-schema contracts at every planner→builder→critic handoff; fail fast *(hatte die Idee 2×)*
 - Create skill_trial_scheduler: nightly job picks top-3 untried proposals, runs in sandbox, promotes on +2 score *(hatte die Idee 2×)*
+- Wrap all model calls in @retry_with_fallback decorator that logs latency, error type, and fallback chosen for  *(hatte die Idee 2×)*
+- Implement a model router with per-model token-bucket rate limiters calibrated to observed 429 thresholds, auto *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite repeated model failures, indicating health checks don't cover external API reliability.
+- Five model-reliability skill proposals were generated but none converted to executable goals, exposing a proposal-to-goal pipeline gap.
+- Three stale market analyses persisted until a reflex forcibly closed them, showing no automatic staleness detection or cleanup policy.
+- Fallback latency varies 7.8–16.7 s with no timeout budget, causing unpredictable delays that stall downstream planning.
+- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, revealing a single-provider dependen
 - During resource-constrained metabolic states, speculative and low-value work should be collapsed or skipped entirely to preserve system capacity.
 - Relative-path dependencies in file operations cause intermittent, environment-sensitive failures that are eliminated only by anchoring all paths to en
 - The structural gap between proposal generation and proposal execution undermines system evolution and must be closed with measurable convergence thres
@@ -51,11 +56,6 @@
 - Nvidia Nemotron shows extreme latency variance (6–43 s) and intermittent 502s, indicating unstable upstream capacity.
 - The skill-clustering evolution stalled at 6/10 because similarity scoring was hardcoded instead of learned or configurable.
 - Free-tier OpenRouter models consistently return 429 errors under load, making single-model reliance infeasible for production workflows.
-- Calibration error of 1 (predicted 7 vs actual 6) is low, but the metric masks complete model outages that were recovered by luck.
-- Simulation verdict "go" and Tor grün=true despite multiple model failures shows the planner overestimates model availability.
-- A single successful fallback (inclusionai/ling-3.0-flash-fin) rescued the task, proving that heterogeneous model routing beats single-model dependence
-- Nvidia Nemotron-3-Ultra succeeds but with extreme latency variance (13–62 s), indicating cold-start or queueing effects on free tier.
-- Free-tier LLM endpoints exhibit cascading 429 rate-limit failures under concurrent load, making them unreliable for production pipelines.
 
 ---
 

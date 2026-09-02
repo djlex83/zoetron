@@ -1,15 +1,15 @@
 {
- "stand": "2026-09-02 03:10:01",
+ "stand": "2026-09-02 03:17:17",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
@@ -310,6 +310,12 @@
   },
   {
    "tool": "viele-skill-vorschläge-ordnen-und-zusamm.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "regelmäßige-selbstprüfung-etablieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
