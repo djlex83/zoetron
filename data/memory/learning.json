@@ -1,13 +1,7 @@
 {
- "stand": "2026-09-02 08:39:49",
+ "stand": "2026-09-02 08:47:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
-  },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 7,
@@ -18,6 +12,12 @@
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 7,
    "erfolge": 7,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -153,16 +153,16 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
@@ -250,12 +250,6 @@
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -33,14 +33,19 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven fact updates succeed autonomously while model-dependent goals stall due to unavailable inference.
+- Proposed resilience skills (health registry, circuit breaker, multi-provider roster) exist but remain unimplemented while failures repeat.
+- Nvidia's 502 upstream errors reveal provider-level instability that model-level fallbacks cannot mitigate.
+- 429 errors hit multiple models simultaneously indicating shared quota exhaustion rather than per-model limits.
+- All failing models route through OpenRouter creating a single gateway bottleneck that amplifies rate limits across providers.
 - Event pruning (92 events) without fact loss shows the memory decay policy preserves semantic knowledge while discarding operational noise.
 - Calibration consistently underestimates actual scores (predicted 7 vs actual 9), indicating a systematic pessimism bias in the predictor.
 - Swarm convergence in one cycle with 1 planner, 3 builders, 1 critic suggests the current role ratio is sufficient for well-scoped goals.
@@ -51,11 +56,6 @@
 - Simulation-based pre-flight (verdict: revise, 4 risks) prevented deployment failures; institutionalize sim-before-execute.
 - High latency on fallback models (20–75s) makes synchronous calls impractical; async with timeout budgets needed.
 - Free model endpoints suffer frequent 429 rate limits; a rotating fallback pool with health checks is essential.
-- Reflex tool execution failed but swarm fallback activated, showing partial resilience but no systematic retry/fallback policy.
-- Market analysis artifacts age without TTL-based freshness checks, risking stale insights influencing decisions.
-- Skill proposals accumulate but remain unimplemented; a drive goal explicitly notes the proposal-to-execution gap.
-- Hand actions time out with zero input read (gelesen: 0), indicating missing pre-flight validation of preconditions before execution.
-- Multiple free-tier models simultaneously hit rate limits (429) and upstream errors (502), revealing that model dispatch lacks health-aware routing and
 
 ---
 

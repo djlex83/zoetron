@@ -2446,3 +2446,41 @@
 {"ts": 1787733257.9164705, "kind": "act_done", "payload": {"goal_title": "Abgelehnte Werkzeuge prüfen und nutzen lernen", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1787733303.1411119, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
 {"ts": 1787733495.6180706, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787733519.6304767, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 21.4, "tokens_ein": 1343, "tokens_aus": 597}}
+{"ts": 1787733519.6311169, "kind": "skill_proposal", "payload": {"proposal": "Implement per-model exponential backoff with a shared cooldown table: after two consecutive 429s on a model, skip it for N minutes instead of retrying immediately."}}
+{"ts": 1787733519.6311922, "kind": "skill_proposal", "payload": {"proposal": "Build a model-health router that ranks endpoints by recent success rate and latency, automatically demoting models with >50% failure rate over the last 10 calls."}}
+{"ts": 1787733519.631304, "kind": "skill_proposal", "payload": {"proposal": "Create a scheduled backlog-drainer task that pops and implements the oldest pending skill proposal each swarm start until the queue drops below 10 items."}}
+{"ts": 1787733519.6313908, "kind": "skill_proposal", "payload": {"proposal": "Add a monitor that maps model_fail events into the selbstdiagnose organ taxonomy (e.g., 'kommunikation' organ) so API degradation is visible in health reports."}}
+{"ts": 1787733519.6314564, "kind": "skill_proposal", "payload": {"proposal": "Instrument the pruner to log why candidates were rejected (below threshold vs. none evaluated) so zero-prune results become actionable diagnostics."}}
+{"ts": 1787733519.631527, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787733531.5831, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 10.6, "tokens_ein": 458, "tokens_aus": 251}}
+{"ts": 1787733531.5833426, "kind": "drive_goal", "payload": {"title": "Gründe für Modellfehler finden und beheben", "why": "Das System hat 19 Fehler bei seinen Vorhersagen gemacht, obwohl es meistens richtig liegt. Wenn wir diese Fehler verstehen, wird das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1787733531.5834253, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren", "why": "Es wurden 62 neue Fähigkeiten vorgeschlagen, aber nur 12 Aktionen wirklich ausgeführt. Viele gute Ideen bleiben also ungenutzt und sollten getestet werden.", "signal": "gap"}}
+{"ts": 1787733531.58349, "kind": "drive_goal", "payload": {"title": "Werkzeug-Erfahrung mit Träumen verbinden", "why": "Eine alte Erfahrung über abgelehnte Werkzeuge passt zu einem früheren Traum, wurde aber nie zusammen betrachtet. Wer beides verknüpft, kann künftig Werkzeuge besser auswählen.", "signal": "combination"}}
+{"ts": 1787733533.7922254, "kind": "swarm_started", "payload": {"goal": "Abgelehnte Werkzeuge genauer prüfen"}}
+{"ts": 1787733542.3580472, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787733543.3012376, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787733626.140295, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 82.6, "tokens_ein": 1496, "tokens_aus": 2718}}
+{"ts": 1787733630.452045, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 4.1, "tokens_ein": 502, "tokens_aus": 104}}
+{"ts": 1787733646.3760352, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 15.8, "tokens_ein": 231, "tokens_aus": 577}}
+{"ts": 1787733646.3762348, "kind": "simulation", "payload": {"goal": "Abgelehnte Werkzeuge genauer prüfen", "verdict": "revise", "risks": 3, "revisions": 2}}
+{"ts": 1787733646.376346, "kind": "simulation_applied", "payload": {"revisions": 2}}
+{"ts": 1787733698.4841151, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 52.0, "tokens_ein": 1783, "tokens_aus": 2410}}
+{"ts": 1787733698.662223, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.02}}
+{"ts": 1787733698.66241, "kind": "tor", "payload": {"goal": "Abgelehnte Werkzeuge genauer prüfen", "gruen": false, "grund": "Artefakt laeuft nicht:   File \"/workspace/zoetron/data/hands_workspace/action_1787733698637.py\", line 16\n    from __future__ import annotations", "zyklus": 1}}
+{"ts": 1787733714.8227699, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 16.1, "tokens_ein": 2737, "tokens_aus": 455}}
+{"ts": 1787733714.8232694, "kind": "calibration", "payload": {"goal": "Abgelehnte Werkzeuge genauer prüfen", "predicted": 3, "actual": 1, "abs_error": 2}}
+{"ts": 1787733714.8233607, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 1}}
+{"ts": 1787733723.2237642, "kind": "bahnen", "payload": {"goal": "Abgelehnte Werkzeuge genauer prüfen", "delta": -0.5, "kanten": 0, "hat_code": true, "score": 1, "abgerufen": 4, "ids": ["e:89f635677151", "e:d85d5766534c", "e:b4be66b7ff6b", "e:906f52ced100"], "ziel_id": "g:c2526cff9f58"}}
+{"ts": 1787733763.0293202, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 39.8, "tokens_ein": 303, "tokens_aus": 935}}
+{"ts": 1787733777.025887, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.0, "tokens_ein": 863, "tokens_aus": 395}}
+{"ts": 1787733777.026195, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 1/10. Goal: Abgelehnte Werkzeuge genauer prüfen\nCritic issues: SANDBOX-URTEIL: LAEUFT NICHT - Sy", "variants": 3, "winner_index": 2, "scores": [7, 6, 9]}}
+{"ts": 1787733785.8330464, "kind": "recall", "payload": {"keys": ["swarm_artifact:Draft deliverable for: Abgelehnte Werkzeuge genauer prüfen"]}}
+{"ts": 1787733796.5053241, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.6, "tokens_ein": 495, "tokens_aus": 24}}
+{"ts": 1787733807.7359476, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.0, "tokens_ein": 376, "tokens_aus": 464}}
+{"ts": 1787733807.7362332, "kind": "simulation", "payload": {"goal": "Abgelehnte Werkzeuge genauer prüfen", "verdict": "go", "risks": 3, "revisions": 3}}
+{"ts": 1787733807.7363994, "kind": "swarm_finished", "payload": {"goal": "Abgelehnte Werkzeuge genauer prüfen", "score": 1, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787733807.7366312, "kind": "act_done", "payload": {"goal_title": "Abgelehnte Werkzeuge genauer prüfen", "score": 1, "converged": false}}
+{"ts": 1787733807.8708053, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
+{"ts": 1787733809.7167466, "kind": "issue_synced", "payload": {"issue": 136, "state": "open"}}
+{"ts": 1787733855.2157326, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

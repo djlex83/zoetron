@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9533 Fakten** · Stand 2026-09-02 08:41 UTC · aktualisiert bei jedem Herzschlag
+**9538 Fakten** · Stand 2026-09-02 08:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5115
+- **dream:** 5120
 - **swarm_artifact:** 2045
 - **last_swarm_critique:** 694
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902084637:5:9b79f1`
+*02.09. 08:46 UTC · Quelle: dream*
+
+Reflex-driven fact updates succeed autonomously while model-dependent goals stall due to unavailable inference.
+
+### `dream:20260902084637:4:486ce5`
+*02.09. 08:46 UTC · Quelle: dream*
+
+Proposed resilience skills (health registry, circuit breaker, multi-provider roster) exist but remain unimplemented while failures repeat.
+
+### `dream:20260902084637:3:fe8373`
+*02.09. 08:46 UTC · Quelle: dream*
+
+Nvidia's 502 upstream errors reveal provider-level instability that model-level fallbacks cannot mitigate.
+
+### `dream:20260902084637:2:c67e11`
+*02.09. 08:46 UTC · Quelle: dream*
+
+429 errors hit multiple models simultaneously indicating shared quota exhaustion rather than per-model limits.
+
+### `dream:20260902084637:1:910b25`
+*02.09. 08:46 UTC · Quelle: dream*
+
+All failing models route through OpenRouter creating a single gateway bottleneck that amplifies rate limits across providers.
 
 ### `dream:20260902083903:5:c84e68`
 *02.09. 08:39 UTC · Quelle: dream*
