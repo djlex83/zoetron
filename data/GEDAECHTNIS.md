@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9717 Fakten** · Stand 2026-09-02 14:00 UTC · aktualisiert bei jedem Herzschlag
+**9722 Fakten** · Stand 2026-09-02 14:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5240
+- **dream:** 5245
 - **swarm_artifact:** 2077
 - **last_swarm_critique:** 700
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902140801:5:41936c`
+*02.09. 14:08 UTC · Quelle: dream*
+
+Pruning removed 38 events but model failure pattern persists, indicating event pruning alone doesn't address systemic causes; need causal analysis before pruning.
+
+### `dream:20260902140801:4:0c2d88`
+*02.09. 14:08 UTC · Quelle: dream*
+
+Market analysis reflex succeeded (marktanalyse-endlich-nutzen.py) but drive goal remains stale, suggesting reflexes solve immediate tasks but not strategic completion without explicit convergence criteria.
+
+### `dream:20260902140801:3:74e137`
+*02.09. 14:08 UTC · Quelle: dream*
+
+Self-diagnosis reported zero organ errors despite sustained 429 failures, showing diagnostic gap: per-organ checks miss cross-organ failure signatures like repeated rate-limiting.
+
+### `dream:20260902140801:2:1bdc44`
+*02.09. 14:08 UTC · Quelle: dream*
+
+Skill deployment pipeline failed due to timeout (20s) when converting proposals to capabilities, revealing that the reflex tool 'vorschläge-zu-echten-fähigkeiten-machen.py' lacks robustness for multi-step operations.
+
+### `dream:20260902140801:1:403487`
+*02.09. 14:08 UTC · Quelle: dream*
+
+Rate-limited models (glm-5.2) repeatedly fail with 429 errors while fallback model (nemotron-3-ultra) succeeds but with high latency (58-93s), indicating need for proactive model health tracking.
 
 ### `dream:20260902135820:5:043f72`
 *02.09. 13:58 UTC · Quelle: dream*

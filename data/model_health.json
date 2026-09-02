@@ -1,14 +1,14 @@
 {
- "stand": 1788357541.4529848,
+ "stand": 1788358122.8297033,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 2701,
+   "laeufe": 2703,
    "fehler": 564,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 96423.54445290565,
+   "latenz_summe_s": 96577.65053653717,
    "letzter_fehler": "peer closed connection without sending complete message body (incomplete chunked read)",
    "letzte_sperre": 1788323895.3907905,
    "kontofehler": 6
@@ -61,7 +61,7 @@
    "latenz_summe_s": 412.08386278152466,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 2776
+   "kontofehler": 2778
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,

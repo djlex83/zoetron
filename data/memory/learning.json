@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 13:59:09",
+ "stand": "2026-09-02 14:08:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,6 +63,12 @@
    "quote": 0.0
   },
   {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -76,12 +82,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -369,7 +369,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.721,
+ "haende_quote": 0.726,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 32,

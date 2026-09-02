@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 13:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 14:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Skills testen und nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 38 events but model failure pattern persists, indicating event pruning alone doesn't address systemic causes; need causal analysis bef
+- Market analysis reflex succeeded (marktanalyse-endlich-nutzen.py) but drive goal remains stale, suggesting reflexes solve immediate tasks but not stra
+- Self-diagnosis reported zero organ errors despite sustained 429 failures, showing diagnostic gap: per-organ checks miss cross-organ failure signatures
+- Skill deployment pipeline failed due to timeout (20s) when converting proposals to capabilities, revealing that the reflex tool 'vorschläge-zu-echten-
+- Rate-limited models (glm-5.2) repeatedly fail with 429 errors while fallback model (nemotron-3-ultra) succeeds but with high latency (58-93s), indicat
 - Latency for the reliable model varied 2.4x (38s to 93s) across identical task types, showing that without per-task SLO enforcement, performance degrad
 - Five skill proposals were generated but none have been deployed, confirming that proposal generation without an automated pipeline results in permanen
 - Calibration predicted 5 actual 8 (abs_error=3), indicating the system consistently underestimates task complexity and its confidence scores are unreli
@@ -51,11 +56,6 @@
 - Stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1) - metabolic state directly caps execution scope.
 - First hand action failed because relative paths ignored injected absolute references (sys.argv[1], ZOETRON_DATA) - path normalization must precede fil
 - Model fallback succeeds but latency varies 6x (27-161s) - nemotron-3-ultra reliably replaces rate-limited glm-5.2 but needs timeout budgets.
-- Successful task completion correlates with reflex-mode tool execution, while systemic repair attempts fail due to missing pre-flight checks and valida
-- Metabolism-driven conserve mode (stress=1.0) starves remediation capacity exactly when systemic failures demand more resources.
-- Skill proposals accumulate without validation gates (AST parsing, unit tests), leading to execution failures when reflex tools are invoked.
-- Self-diagnosis limited to organ-level checks misses critical infrastructure health signals like router error rates, latency percentiles, and fallback 
-- Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 upstream errors) that cascade into system-wide degradation when no au
 
 ---
 
