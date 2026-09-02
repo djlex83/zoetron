@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 08:01:38",
+ "stand": "2026-09-02 08:09:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,6 +27,12 @@
    "quote": 1.0
   },
   {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -37,12 +43,6 @@
    "laeufe": 5,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
@@ -162,12 +162,6 @@
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeits-messlatte-bauen-capability-be.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {

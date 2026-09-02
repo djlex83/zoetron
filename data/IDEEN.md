@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 08:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,9 +27,9 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs remove 25-31 stale events per cycle, showing the fact/event store requires active cleanup to prevent accumulation.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model is a reliable fallback but its 26-46s latency must be factored into scheduling decisions.
+- Self-diagnosis reports zero organ errors even when systemic failures like rate limiting occur, indicating blind spots in the diagnostic framework.
+- Skill proposals accumulate across sessions but remain unimplemented, revealing a persistent gap between diagnosis and actual deployment.
+- The z-ai/glm-5.2:free model repeatedly fails with 429 rate-limit errors, making it unusable without circuit breakers or automatic fallback.
 - Self-diagnosis reports zero organ errors while model_fail events persist, revealing a blind spot between component health and service-level SLA.
 - Pruning removes events but zero facts, suggesting the fact store accumulates stale context that degrades future model prompts.
 - Three drive goals (model errors, stale analyses, 50 pending skills) share root cause: no automated pipeline converts proposals into executed capabilit
@@ -51,11 +56,6 @@
 - High event churn (160 pruned, 0 facts retained) signals that the system generates excessive noisy signal rather than durable knowledge.
 - The evolution loop is stuck at score 1/10 across multiple cycles, indicating that incremental revisions fail to address root causes like missing execu
 - Rate limiting (HTTP 429) is the dominant systemic failure across all free-tier models, requiring a fallback dispatch strategy rather than single-model
-- Graph traversal yielded negative delta (-0.5) with zero code execution (hat_code: false), confirming stalled progress when models emit only text.
-- Calibration predicted 5 but actual was 1 (400% error), revealing the prediction model is fundamentally miscalibrated for this task domain.
-- Validation gate rejected output for lacking executable Python blocks, proving prose-only responses cannot drive convergent automation.
-- Nvidia Nemotron shows intermittent 502 upstream overload errors despite occasional low-latency successes, indicating provider-side capacity issues.
-- Free-tier models on OpenRouter suffer systemic 429 rate-limiting that makes them unreliable for autonomous loops requiring repeated calls.
 
 ---
 

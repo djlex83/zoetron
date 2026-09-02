@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9508 Fakten** · Stand 2026-09-02 08:02 UTC · aktualisiert bei jedem Herzschlag
+**9513 Fakten** · Stand 2026-09-02 08:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5090
+- **dream:** 5095
 - **swarm_artifact:** 2045
 - **last_swarm_critique:** 694
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902080834:5:c83096`
+*02.09. 08:08 UTC · Quelle: dream*
+
+Pruning runs remove 25-31 stale events per cycle, showing the fact/event store requires active cleanup to prevent accumulation.
+
+### `dream:20260902080834:4:88aab1`
+*02.09. 08:08 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model is a reliable fallback but its 26-46s latency must be factored into scheduling decisions.
+
+### `dream:20260902080834:3:d97a1c`
+*02.09. 08:08 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors even when systemic failures like rate limiting occur, indicating blind spots in the diagnostic framework.
+
+### `dream:20260902080834:2:796758`
+*02.09. 08:08 UTC · Quelle: dream*
+
+Skill proposals accumulate across sessions but remain unimplemented, revealing a persistent gap between diagnosis and actual deployment.
+
+### `dream:20260902080834:1:46b33c`
+*02.09. 08:08 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model repeatedly fails with 429 rate-limit errors, making it unusable without circuit breakers or automatic fallback.
 
 ### `dream:20260902080056:5:74794d`
 *02.09. 08:00 UTC · Quelle: dream*
