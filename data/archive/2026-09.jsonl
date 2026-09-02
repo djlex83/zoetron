@@ -877,3 +877,4 @@
 {"ts": 1787700932.6607676, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.44}}
 {"ts": 1787700934.5286646, "kind": "issue_synced", "payload": {"issue": 101, "state": "open"}}
 {"ts": 1787700977.2983406, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787702406.3467658, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}

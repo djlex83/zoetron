@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-01 23:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,16 +19,16 @@
 - Develop a simulation harness that injects rate-limit, latency, and filesystem errors to vet plans before execu *(hatte die Idee 3×)*
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
-- Build failure signature cache: hash error patterns (e.g., '429 on free tier') and preemptively apply last succ *(hatte die Idee 2×)*
+- Deploy a fallback router that prefers ling-3.0-flash-fin as primary, routes to nemotron-3-ultra only when prim *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning (43 events) ran while fact pruning found 0 facts, indicating memory pressure comes from event logs, not the knowledge base.
+- The critic's verdict 'LAEUFT NICH' (sandbox failure) on the previous attempt was not resolved by the evolution run, meaning sandbox validation is not 
+- Latency on the healthy model varied 4.5x (7.6s to 34.6s) with no adaptive routing or timeout handling, suggesting latency-based health scoring is miss
+- The goal 'Vergessenes Wissen regelmäßig auffrischen' scored only 2/10 and did not converge despite evolution (winner 9/10) and 5 simulation revisions,
+- glm-5.2:free failed with 429 rate-limit errors on 5 consecutive calls while nemotron-3-ultra remained healthy, indicating persistent endpoint-specific
 - Calibration overestimates success (predicted 6 vs actual 2), and memory retrieval (4 items) yields no code (hat_code=false) and negative delta (-0.5).
 - The "refresh forgotten knowledge" goal fails because artifacts lack executable Python blocks; prose alone does not converge.
 - Poolside Laguna exhibits high latency variance (29s–180s), indicating unstable performance even when successful.
@@ -51,11 +56,6 @@
 - Repeated failures on the same models without fallback mechanisms lead to task abandonment and wasted compute resources.
 - Model reliability varies significantly under load, with some models (e.g., nvidia/nemotron-3-ultra) failing consistently while others (e.g., poolside/
 - Free-tier LLM endpoints frequently return 429 rate-limit errors and 502 upstream overload errors, causing cascading failures across multiple model cal
-- A high volume of proposed skills that are never implemented represents a systemic gap between planning and execution capabilities.
-- Reflexive execution can bypass complex model routing and achieve goals directly, proving that some tasks are better handled by deterministic scripts r
-- Accumulated stale tasks and unimplemented skill proposals create cognitive overhead, highlighting the need for active lifecycle management of system g
-- High latency (7-12s) on free models compounds with frequent failures, drastically reducing effective throughput and increasing total task completion t
-- Free-tier LLM endpoints exhibit cascading rate-limit failures (429) and upstream overloads (502), making them unreliable for time-sensitive or high-vo
 
 ---
 

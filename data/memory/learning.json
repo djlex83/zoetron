@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-01 23:54:14",
+ "stand": "2026-09-02 00:02:00",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,15 +9,15 @@
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 9,
    "erfolge": 9,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -69,12 +69,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -115,6 +109,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",

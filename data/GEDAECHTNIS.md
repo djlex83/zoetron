@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9233 Fakten** · Stand 2026-09-01 23:55 UTC · aktualisiert bei jedem Herzschlag
+**9238 Fakten** · Stand 2026-09-02 00:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4915
+- **dream:** 4920
 - **swarm_artifact:** 1989
 - **last_swarm_critique:** 684
 - **anti_pattern:** 595
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902000045:5:a95e0a`
+*02.09. 00:00 UTC · Quelle: dream*
+
+Event pruning (43 events) ran while fact pruning found 0 facts, indicating memory pressure comes from event logs, not the knowledge base.
+
+### `dream:20260902000045:4:4c1694`
+*02.09. 00:00 UTC · Quelle: dream*
+
+The critic's verdict 'LAEUFT NICH' (sandbox failure) on the previous attempt was not resolved by the evolution run, meaning sandbox validation is not part of the variant scoring loop.
+
+### `dream:20260902000045:3:ebf0c8`
+*02.09. 00:00 UTC · Quelle: dream*
+
+Latency on the healthy model varied 4.5x (7.6s to 34.6s) with no adaptive routing or timeout handling, suggesting latency-based health scoring is missing from model selection.
+
+### `dream:20260902000045:2:ce5dfb`
+*02.09. 00:00 UTC · Quelle: dream*
+
+The goal 'Vergessenes Wissen regelmäßig auffrischen' scored only 2/10 and did not converge despite evolution (winner 9/10) and 5 simulation revisions, revealing a gap between variant-level scores and end-to-end goal success.
+
+### `dream:20260902000045:1:757f5b`
+*02.09. 00:00 UTC · Quelle: dream*
+
+glm-5.2:free failed with 429 rate-limit errors on 5 consecutive calls while nemotron-3-ultra remained healthy, indicating persistent endpoint-specific degradation rather than transient load.
 
 ### `dream:20260901235328:5:e2c1f5`
 *01.09. 23:53 UTC · Quelle: dream*
