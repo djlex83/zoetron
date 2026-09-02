@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 18:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 18:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,7 +9,6 @@
 - Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60s cooldown) with 2-retry, 10s t *(hatte die Idee 6×)*
 - Implement ModelRouter with per-provider health scoring (success rate, 429 frequency, latency p95) and automati *(hatte die Idee 6×)*
 - Build RateLimitAwareScheduler that spaces requests per provider using token-bucket estimators derived from obs *(hatte die Idee 6×)*
-- Build a skill validation pipeline: propose → unit-test → integration-test → canary-deploy → promote, with auto *(hatte die Idee 4×)*
 - Implement a model health registry that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoint *(hatte die Idee 4×)*
 - Maintain a ranked fallback roster of models across at least 3 providers (e.g., Poolside, NVIDIA, Google) so a  *(hatte die Idee 4×)*
 - Create CodeValidationGate that parses, type-checks, and sandbox-runs all code blocks before skill registration *(hatte die Idee 4×)*
@@ -19,18 +18,18 @@
 - Build ModelRouter with per-model 429-rate tracking, latency percentile baselines, and circuit-breaker auto-fal *(hatte die Idee 4×)*
 - Implement SkillDeploymentPipeline that ingests proposals, generates tests, runs CI in sandbox, and atomically  *(hatte die Idee 4×)*
 - Design LatencyBudgetGuard that enforces per-task SLOs, triggers conservative mode early when latency exceeds t *(hatte die Idee 4×)*
-- Create a path resolver service that validates ZOETRON_DATA and sys.argv[1] at startup and provides canonical a *(hatte die Idee 3×)*
+- Implement a model router with real-time health scoring (error rate, latency, 429 frequency) and automatic fall *(hatte die Idee 3×)*
+- Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
@@ -38,9 +37,15 @@
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes event noise (28 events) but no fact decay policy exists for stale model-health knowledge, risking routing decisions on outdated data.
+- Current reflex system reacts to failures post-hoc rather than proactively routing around known-degraded endpoints before calling models.
+- The swarm's self-chosen goal "understand frequent model errors" perfectly predicted the observed failure rate (calibration error 0), indicating accura
+- Automatic failover between providers eventually succeeds but incurs high latency variance (3.5–22.7s) and wastes cycles on repeated failures.
+- Free-tier model endpoints systematically fail with 429 rate limits and 502 upstream errors, making them unreliable as primary dependencies.
 - Hand-action (local tool) succeeded in 0.45 s with zero errors, confirming non-LLM steps as stable backbone when LLM layer degrades.
 - Metabolism state 'conserve' with max_tasks=3 and max_iterations=1 correctly throttled load, preventing cascade failures under high model error rates.
 - The swarm completed its goal (calibration error 0, tor grün) despite 70% model-call failures, proving resilience through model diversity and conservat
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without enforced lifecycle, creating a 65-proposal backlog with near-zero implementation rate.
 - System stress at maximum triggers conservative mode but lacks automated degradation policies for model calls.
 - Provider-specific rate limits (429 errors) persist without automatic exclusion, wasting retries on doomed calls.
-- Drive goals accumulate from failure/stale signals but lack automatic clustering into composite work packages.
-- Prune runs consistently remove zero facts/events, indicating TTL/access policies are either absent or misconfigured.
-- Selbstdiagnose reports zero organ errors while external model APIs fail repeatedly, revealing a monitoring blind spot.
-- Reflex execution succeeds where model calls fail, but only triggers for exact goal-tool pattern matches.
-- Model endpoint failures cascade across providers (429/404) causing systemic unreliability despite fallback attempts.
 
 ---
 

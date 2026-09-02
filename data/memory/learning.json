@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 18:29:59",
+ "stand": "2026-09-02 18:47:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -99,12 +99,6 @@
    "quote": 1.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -145,6 +139,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "veraltete-infos-auffrischen.py",
@@ -279,12 +279,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "viele-skill-vorschläge-ordnen-und-zusamm.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -304,6 +298,12 @@
   },
   {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -363,17 +363,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.726,
+ "haende_quote": 0.73,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 32,
   "best": 9.0,
-  "schnitt": 5.59
+  "schnitt": 5.75
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 5.89
+   "n": 29,
+   "schnitt": 6.0
   },
   "bau": {
    "n": 3,

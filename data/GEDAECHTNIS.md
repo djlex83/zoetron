@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9872 Fakten** · Stand 2026-09-02 18:31 UTC · aktualisiert bei jedem Herzschlag
+**9886 Fakten** · Stand 2026-09-02 18:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5345
-- **swarm_artifact:** 2107
-- **last_swarm_critique:** 705
+- **dream:** 5350
+- **swarm_artifact:** 2113
+- **last_swarm_critique:** 706
 - **anti_pattern:** 615
-- **last_swarm_goal:** 453
+- **last_swarm_goal:** 454
 - **strategy:** 328
-- **tool:** 121
+- **tool:** 122
 - **hand_result:** 106
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-daten-durch-neue-fakten-ersetzen`
+*02.09. 18:47 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Daten durch neue Fakten ersetzen'. Datei: data/tools/alte-daten-durch-neue-fakten-ersetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*02.09. 18:47 UTC · Quelle: critic*
+
+score=9; issues=Einfaches Hash-basiertes Embedding (simple_embedding) ist sehr rudimentär - für produktive semantische Ähnlichkeit wäre ein echtes Embedding-Modell besser, aber als dependency-freie Fallback-Implementierung akzeptabel; Temporale Widerspruchsprü
+
+### `last_swarm_goal`
+*02.09. 18:38 UTC · Quelle: system*
+
+Alte Daten durch neue Fakten ersetzen
+
+### `dream:20260902183742:5:084301`
+*02.09. 18:37 UTC · Quelle: dream*
+
+Pruning removes event noise (28 events) but no fact decay policy exists for stale model-health knowledge, risking routing decisions on outdated data.
+
+### `dream:20260902183742:4:df736b`
+*02.09. 18:37 UTC · Quelle: dream*
+
+Current reflex system reacts to failures post-hoc rather than proactively routing around known-degraded endpoints before calling models.
+
+### `dream:20260902183742:3:f8569c`
+*02.09. 18:37 UTC · Quelle: dream*
+
+The swarm's self-chosen goal "understand frequent model errors" perfectly predicted the observed failure rate (calibration error 0), indicating accurate meta-cognition.
+
+### `dream:20260902183742:2:10579f`
+*02.09. 18:37 UTC · Quelle: dream*
+
+Automatic failover between providers eventually succeeds but incurs high latency variance (3.5–22.7s) and wastes cycles on repeated failures.
+
+### `dream:20260902183742:1:367c93`
+*02.09. 18:37 UTC · Quelle: dream*
+
+Free-tier model endpoints systematically fail with 429 rate limits and 502 upstream errors, making them unreliable as primary dependencies.
 
 ### `dream:20260902182929:5:a00644`
 *02.09. 18:29 UTC · Quelle: dream*
