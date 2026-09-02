@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9538 Fakten** · Stand 2026-09-02 08:48 UTC · aktualisiert bei jedem Herzschlag
+**9555 Fakten** · Stand 2026-09-02 09:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5120
-- **swarm_artifact:** 2045
-- **last_swarm_critique:** 694
-- **anti_pattern:** 605
-- **last_swarm_goal:** 442
-- **strategy:** 323
+- **dream:** 5125
+- **swarm_artifact:** 2051
+- **last_swarm_critique:** 695
+- **anti_pattern:** 607
+- **last_swarm_goal:** 443
+- **strategy:** 324
 - **tool:** 116
-- **hand_result:** 101
+- **hand_result:** 102
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Gesundheit kontin:2`
+*02.09. 09:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.7): Operational Health and Resource Monitoring - Monitor the serving infrastructure: model latency, throughput, error rates, GPU/CPU memory utilization, and request queue lengths. Correlate infrastructure metrics with predictio
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Gesundheit kontin:1`
+*02.09. 09:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.3): Ground Truth Feedback Loop with Delayed Labels - Design a feedback ingestion pipeline that collects delayed ground truth labels (e.g., user corrections, batch labels) and joins them with past predictions. Compute performanc
+
+### `last_swarm_critique`
+*02.09. 09:02 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - Artefakt laeuft nicht (Traceback in action_1788339695050.py Zeile 20 und action_1788339695485.py Zeile 22); Laufzeitfehler beim Ausfuehren der vollstaendigen Datei - Vertrag verletzt (kein lauffaehiger Python-Bloc
+
+### `last_swarm_goal`
+*02.09. 08:54 UTC · Quelle: system*
+
+Modell-Gesundheit kontinuierlich überwachen
+
+### `dream:20260902085413:5:4a1317`
+*02.09. 08:54 UTC · Quelle: dream*
+
+Reflex-driven learning executed without validation gates, risking integration of untested code into the skill graph.
+
+### `dream:20260902085413:4:2f1c02`
+*02.09. 08:54 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on circuit-breaker routing, rate-limit scheduling, and deployment automation, signaling architectural consensus.
+
+### `dream:20260902085413:3:a53710`
+*02.09. 08:54 UTC · Quelle: dream*
+
+Successful calls (ling-3.0-flash-fin, nemotron-3-ultra) show 13-26s latency, indicating that any routing strategy must tolerate high variance.
+
+### `dream:20260902085413:2:a859c7`
+*02.09. 08:54 UTC · Quelle: dream*
+
+Organ-level self-diagnosis reports clean health while system-level reliability collapses, revealing a monitoring blind spot for distributed rate-limit exhaustion.
+
+### `dream:20260902085413:1:6b9ba6`
+*02.09. 08:54 UTC · Quelle: dream*
+
+Free-tier LLM endpoints fail predominantly via 429 rate-limit errors rather than model errors, making request scheduling more critical than model selection.
 
 ### `dream:20260902084637:5:9b79f1`
 *02.09. 08:46 UTC · Quelle: dream*

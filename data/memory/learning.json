@@ -1,13 +1,7 @@
 {
- "stand": "2026-09-02 08:47:16",
+ "stand": "2026-09-02 09:04:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
-  {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
-  },
   {
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 7,
@@ -15,7 +9,7 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -27,7 +21,7 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -61,6 +55,12 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -355,19 +355,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.737,
- "simulationen_angewandt": 28,
+ "haende_quote": 0.719,
+ "simulationen_angewandt": 29,
  "swarm_scores": {
-  "n": 32,
+  "n": 33,
   "best": 9.0,
-  "schnitt": 6.0
+  "schnitt": 5.85
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 29,
-   "schnitt": 6.07
+   "n": 30,
+   "schnitt": 5.9
   },
   "bau": {
    "n": 3,
