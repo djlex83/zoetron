@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 10:40:21",
+ "stand": "2026-09-02 10:48:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -25,6 +25,12 @@
    "laeufe": 5,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
@@ -55,12 +61,6 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -360,7 +360,7 @@
  "haende_quote": 0.7,
  "simulationen_angewandt": 31,
  "swarm_scores": {
-  "n": 34,
+  "n": 33,
   "best": 9.0,
   "schnitt": 5.76
  },

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 10:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 10:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex tool 'vorgeschlagene-fähigkeiten-prüfen-und-ba.py' failed silently; skill-building pipelines need explicit success/failure telemetry and idempo
+- Simulation verdict 'revise' with 2 risks and 2 applied revisions shows pre-execution simulation catches defects, but the revision loop lacks a hard it
+- System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which silently truncates work; tasks must check metabolism budget before 
+- Hand actions fail when using relative paths; all file operations must resolve against ZOETRON_DATA and sys.argv[1] to absolute paths before execution.
+- Rate limiting (429) and upstream errors (502) across multiple free models necessitate a managed fallback chain with health-aware routing instead of na
 - High metabolic stress (1.0) triggers conserve mode that caps task throughput, amplifying latency impact of slow fallback models.
 - Skill proposals accumulate without validation gates, leaving untested code candidates that cannot be trusted for production registration.
 - Organ-level diagnostics report clean while system-level model failures persist, revealing a monitoring blind spot between component and system health.
@@ -51,11 +56,6 @@
 - A final swarm score of 1 despite a best variant score of 8.7 indicates the evolution mechanism fails to aggregate individual improvements into coheren
 - inclusionai/ling-3.0-flash-fin:free is the only consistently available low-latency model in this environment and should be treated as the primary fall
 - OpenRouter free-tier models are systematically rate-limited under concurrent load, making them unreliable for any time-sensitive or multi-request work
-- Five skill proposals exist but none deployed, exposing gap between proposal and production registration.
-- Organ-level diagnostics report clean while systemic rate-limit failures persist, requiring cross-organ correlation.
-- Reflex tool execution failed despite valid goal, showing need for pre-registration validation gates.
-- Hand action failure due to unresolved data paths indicates fragile path resolution needing abstraction.
-- Sustained 429 errors across four providers reveal missing request scheduling and per-provider health tracking.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9597 Fakten** · Stand 2026-09-02 10:41 UTC · aktualisiert bei jedem Herzschlag
+**9602 Fakten** · Stand 2026-09-02 10:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5150
+- **dream:** 5155
 - **swarm_artifact:** 2059
 - **last_swarm_critique:** 697
 - **anti_pattern:** 609
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902104806:5:03f0b3`
+*02.09. 10:48 UTC · Quelle: dream*
+
+Reflex tool 'vorgeschlagene-fähigkeiten-prüfen-und-ba.py' failed silently; skill-building pipelines need explicit success/failure telemetry and idempotent retries.
+
+### `dream:20260902104806:4:7876a3`
+*02.09. 10:48 UTC · Quelle: dream*
+
+Simulation verdict 'revise' with 2 risks and 2 applied revisions shows pre-execution simulation catches defects, but the revision loop lacks a hard iteration cap.
+
+### `dream:20260902104806:3:b511b5`
+*02.09. 10:48 UTC · Quelle: dream*
+
+System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which silently truncates work; tasks must check metabolism budget before spawning subtasks.
+
+### `dream:20260902104806:2:22456a`
+*02.09. 10:48 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths; all file operations must resolve against ZOETRON_DATA and sys.argv[1] to absolute paths before execution.
+
+### `dream:20260902104806:1:626ba9`
+*02.09. 10:48 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream errors (502) across multiple free models necessitate a managed fallback chain with health-aware routing instead of naive round-robin.
 
 ### `dream:20260902103939:5:d6e3a8`
 *02.09. 10:39 UTC · Quelle: dream*
