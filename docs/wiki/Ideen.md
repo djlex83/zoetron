@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Build ModelRouter with per-model 429-rate tracking, latency percentile baselines, and circuit-breaker auto-fal *(hatte die Idee 4×)*
 - Implement SkillDeploymentPipeline that ingests proposals, generates tests, runs CI in sandbox, and atomically  *(hatte die Idee 4×)*
 - Design LatencyBudgetGuard that enforces per-task SLOs, triggers conservative mode early when latency exceeds t *(hatte die Idee 4×)*
-- Implement a model router with real-time health scoring (error rate, latency, 429 frequency) and automatic fall *(hatte die Idee 3×)*
 - Create a goal TTL scheduler that auto-archives stale goals and spawns renewal tasks with fresh context before  *(hatte die Idee 3×)*
+- Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -30,8 +30,8 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals (market analysis, model reliability) persist across cycles because failure signals don't automatically escalate to architectural fixes.
+- Fifty skill proposals exist but remain unvalidated; the simulation reflex proves a viable test path yet isn't triggered automatically for new proposal
+- Reflex-based tools (market analysis update, skill simulation) succeed when invoked, but the system lacks an orchestration layer to chain them reliably
+- The only working model (nvidia/nemotron-3-ultra) exhibits high latency (17-35s), creating a throughput bottleneck for autonomous operation.
+- Free-tier model endpoints (z-ai/glm-5.2:free) consistently fail with 429 rate-limit errors, making them unreliable as primary inference providers.
 - Fifty skill proposals exist without validation lifecycle, creating proposal debt that clogs planning and prevents proven capabilities from emerging.
 - Model failure rate of 57% (63 failures vs 47 successes) exceeds reliability thresholds for any production workload, requiring systemic mitigation not 
 - Swarm execution evolved but failed to converge (score 1, converged=false), revealing missing termination criteria or insufficient reward signals for k
@@ -51,11 +56,6 @@
 - Performance calibration is severely miscalibrated (predicted 7 vs actual 1, abs_error 6), meaning self-assessments cannot be trusted without recalibra
 - The execution sandbox artifact is broken ('Artefakt laeuf'), blocking all hand actions (exit code 1) and causing evolution runs to score 1/10 despite 
 - Free-tier OpenRouter models (z-ai/glm-5.2, google/gemma-4-31b-it) fail consistently with 429 rate-limit errors, making nvidia/nemotron-3-ultra-550b-a5
-- Pruning removes event noise (28 events) but no fact decay policy exists for stale model-health knowledge, risking routing decisions on outdated data.
-- Current reflex system reacts to failures post-hoc rather than proactively routing around known-degraded endpoints before calling models.
-- The swarm's self-chosen goal "understand frequent model errors" perfectly predicted the observed failure rate (calibration error 0), indicating accura
-- Automatic failover between providers eventually succeeds but incurs high latency variance (3.5–22.7s) and wastes cycles on repeated failures.
-- Free-tier model endpoints systematically fail with 429 rate limits and 502 upstream errors, making them unreliable as primary dependencies.
 
 ---
 

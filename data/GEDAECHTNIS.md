@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9896 Fakten** · Stand 2026-09-02 19:06 UTC · aktualisiert bei jedem Herzschlag
+**9901 Fakten** · Stand 2026-09-02 19:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5360
+- **dream:** 5365
 - **swarm_artifact:** 2113
 - **last_swarm_critique:** 706
 - **anti_pattern:** 615
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902191254:5:05205a`
+*02.09. 19:12 UTC · Quelle: dream*
+
+Stale goals (market analysis, model reliability) persist across cycles because failure signals don't automatically escalate to architectural fixes.
+
+### `dream:20260902191254:4:720542`
+*02.09. 19:12 UTC · Quelle: dream*
+
+Fifty skill proposals exist but remain unvalidated; the simulation reflex proves a viable test path yet isn't triggered automatically for new proposals.
+
+### `dream:20260902191254:3:178e34`
+*02.09. 19:12 UTC · Quelle: dream*
+
+Reflex-based tools (market analysis update, skill simulation) succeed when invoked, but the system lacks an orchestration layer to chain them reliably.
+
+### `dream:20260902191254:2:c1311f`
+*02.09. 19:12 UTC · Quelle: dream*
+
+The only working model (nvidia/nemotron-3-ultra) exhibits high latency (17-35s), creating a throughput bottleneck for autonomous operation.
+
+### `dream:20260902191254:1:9e2591`
+*02.09. 19:12 UTC · Quelle: dream*
+
+Free-tier model endpoints (z-ai/glm-5.2:free) consistently fail with 429 rate-limit errors, making them unreliable as primary inference providers.
 
 ### `dream:20260902190448:5:867781`
 *02.09. 19:04 UTC · Quelle: dream*
