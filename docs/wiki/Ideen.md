@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 23:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 23:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token efficiency varies wildly (448–1399 output tokens) even for similar latency, so routing must weigh cost per useful token.
+- A single successful reflex-driven swarm run proves the toolchain works when model latency is acceptable.
+- Stale tasks (e.g., market analysis) persist across cycles because no governor archives or deadlines them.
+- The system repeatedly proposes the same routing and circuit-breaker skills but does not enact them, creating a proposal-execution gap.
+- Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable as primary providers without automatic fallback.
 - Successful reflex execution (marktanalyse-endlich-nutzen.py) demonstrates that targeted automation works but lacks a generalization framework.
 - Tasks exceeding a cycle threshold (e.g., market analyses) remain incomplete indefinitely without a stale-task enforcement mechanism.
 - Skill proposals accumulate without execution because no governor prioritizes building over proposing, creating a capability gap.
@@ -51,11 +56,6 @@
 - Simulation verdict 'revise' with 3 risks triggered exactly 3 revisions, showing simulation feedback directly maps to concrete correction cycles.
 - Evolutionary variant generation (3 variants) improved solution score from 7 to 9, proving iterative refinement outperforms single-pass generation.
 - Model z-ai/glm-5.2:free consistently fails with 429 rate-limit errors and should be deprioritized in favor of nvidia/nemotron-3-ultra which succeeds r
-- Simulation-based risk assessment catches issues pre-execution but hand-layer path resolution remains a blind spot.
-- Proposed skills accumulate without a consolidation mechanism to turn them into learned, reusable procedures.
-- Under conserve metabolism (stress=1.0), the system still wastes budget on repeated calls to known-failing models instead of immediate fallback.
-- Hand actions fail when they resolve paths relatively instead of using the absolute data path from ZOETRON_DATA or sys.argv[1].
-- Model "z-ai/glm-5.2:free" consistently fails with 429 rate limits and should be permanently excluded from routing.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10068 Fakten** · Stand 2026-09-02 23:48 UTC · aktualisiert bei jedem Herzschlag
+**10073 Fakten** · Stand 2026-09-02 23:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5475
+- **dream:** 5480
 - **swarm_artifact:** 2143
 - **last_swarm_critique:** 711
 - **anti_pattern:** 623
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902235525:5:f3c20f`
+*02.09. 23:55 UTC · Quelle: dream*
+
+Token efficiency varies wildly (448–1399 output tokens) even for similar latency, so routing must weigh cost per useful token.
+
+### `dream:20260902235525:4:986aee`
+*02.09. 23:55 UTC · Quelle: dream*
+
+A single successful reflex-driven swarm run proves the toolchain works when model latency is acceptable.
+
+### `dream:20260902235525:3:d47a3b`
+*02.09. 23:55 UTC · Quelle: dream*
+
+Stale tasks (e.g., market analysis) persist across cycles because no governor archives or deadlines them.
+
+### `dream:20260902235525:2:656f59`
+*02.09. 23:55 UTC · Quelle: dream*
+
+The system repeatedly proposes the same routing and circuit-breaker skills but does not enact them, creating a proposal-execution gap.
+
+### `dream:20260902235525:1:972f66`
+*02.09. 23:55 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable as primary providers without automatic fallback.
 
 ### `dream:20260902234551:5:d17479`
 *02.09. 23:45 UTC · Quelle: dream*
