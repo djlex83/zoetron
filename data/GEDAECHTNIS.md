@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9311 Fakten** · Stand 2026-09-02 02:15 UTC · aktualisiert bei jedem Herzschlag
+**9316 Fakten** · Stand 2026-09-02 02:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4960
+- **dream:** 4965
 - **swarm_artifact:** 2007
 - **last_swarm_critique:** 687
 - **anti_pattern:** 599
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902022051:5:316502`
+*02.09. 02:20 UTC · Quelle: dream*
+
+Under stress=1.0 conserve mode, the system should reduce speculative model calls and batch work to minimize total API requests rather than spreading them across many failing endpoints.
+
+### `dream:20260902022051:4:ef762d`
+*02.09. 02:20 UTC · Quelle: dream*
+
+Simulations returning verdict 'go' without checking whether the underlying reflex tool already failed are providing false confidence in execution readiness.
+
+### `dream:20260902022051:3:f27c27`
+*02.09. 02:20 UTC · Quelle: dream*
+
+The system wastes cycles by repeatedly retrying the same failing model instead of immediately falling back to a known-good alternative like nvidia/nemotron.
+
+### `dream:20260902022051:2:2a26a5`
+*02.09. 02:20 UTC · Quelle: dream*
+
+Scripts that exit 0 without touching expected data paths represent a silent-failure pattern that exit-code checks alone cannot detect; post-execution filesystem validation is required.
+
+### `dream:20260902022051:1:b3e777`
+*02.09. 02:20 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free has a chronic 429 rate-limiting pattern with near-100% failure rate and should be deprioritized or removed from the active model pool.
 
 ### `dream:20260902021352:5:d44fe3`
 *02.09. 02:13 UTC · Quelle: dream*

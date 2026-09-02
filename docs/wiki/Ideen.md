@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 02:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 02:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Under stress=1.0 conserve mode, the system should reduce speculative model calls and batch work to minimize total API requests rather than spreading t
+- Simulations returning verdict 'go' without checking whether the underlying reflex tool already failed are providing false confidence in execution read
+- The system wastes cycles by repeatedly retrying the same failing model instead of immediately falling back to a known-good alternative like nvidia/nem
+- Scripts that exit 0 without touching expected data paths represent a silent-failure pattern that exit-code checks alone cannot detect; post-execution 
+- z-ai/glm-5.2:free has a chronic 429 rate-limiting pattern with near-100% failure rate and should be deprioritized or removed from the active model poo
 - The system auto-generates relevant skill proposals for observed failures (rate limiting, circuit breaking) but cannot execute them due to tooling path
 - NVIDIA Nemotron-3-Ultra consistently succeeds but with high latency variance (8-22s), making it a reliable fallback for quality-critical non-interacti
 - Swarm processes evolve (evolved=true) but fail to converge (converged=false) at score 4, indicating missing or miscalibrated exit criteria.
@@ -51,11 +56,6 @@
 - Latency and token usage vary significantly across successful calls to the same model, implying that input complexity directly impacts performance and 
 - The nvidia/nemotron-3-ultra-550b-a55b:free model generally succeeds but can fail under upstream overload conditions (HTTP 502), suggesting it should b
 - The z-ai/glm-5.2:free model consistently fails with HTTP 429 errors, indicating a rate-limiting issue that makes it unreliable for repeated use within
-- Swarm initiation succeeds but downstream reflex execution fails, indicating a handoff gap between swarm_start and tool invocation.
-- Reflex tools (veraltete-infos-auffrischen.py) fail silently without emitting structured error telemetry for dream analysis.
-- High metabolic stress (1.0) triggers conserve mode that caps tasks at 3 and iterations at 1, starving recovery procedures.
-- File path resolution fails when relative paths diverge from ZOETRON_DATA root, causing hand actions to touch zero files despite clean exits.
-- Model rate limiting (429 errors) cascades across multiple free-tier providers, requiring automatic fallback rotation with exponential backoff.
 
 ---
 
