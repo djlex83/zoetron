@@ -1329,3 +1329,22 @@
 {"ts": 1787709794.4200368, "kind": "act_done", "payload": {"goal_title": "Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen", "score": 1, "converged": false}}
 {"ts": 1787709794.540094, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
 {"ts": 1787709796.7638948, "kind": "issue_synced", "payload": {"issue": 119, "state": "open"}}
+{"ts": 1787709833.3938887, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787710278.703733, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787710294.1377723, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.9, "tokens_ein": 1459, "tokens_aus": 400}}
+{"ts": 1787710294.1383533, "kind": "skill_proposal", "payload": {"proposal": "Add a per-goal-type bias corrector to calibration so predicted scores are adjusted by learned error history before use in prioritization."}}
+{"ts": 1787710294.1384113, "kind": "skill_proposal", "payload": {"proposal": "Enforce 'revisions_applied >= min(3, risks_found)' after any 'revise' verdict from simulation before allowing act_done."}}
+{"ts": 1787710294.1384666, "kind": "skill_proposal", "payload": {"proposal": "Pre-check planned tools against a destructive-operation allowlist during planning so human-approval blockers surface before swarm cycles are spent."}}
+{"ts": 1787710294.1385202, "kind": "skill_proposal", "payload": {"proposal": "Define an explicit acceptance policy for non-converged swarms (e.g., accept if score >= threshold AND no open revise risks, else schedule one more cycle)."}}
+{"ts": 1787710294.1385736, "kind": "skill_proposal", "payload": {"proposal": "Retry hand_action once automatically when exit != 0 and duration_s < 1, logging whether the retry succeeded to quantify transient failure rates."}}
+{"ts": 1787710294.138628, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787710295.900338, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787710295.900336, "schalter_geoeffnet": false}}
+{"ts": 1787710296.1962938, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787710296.1962907, "schalter_geoeffnet": false}}
+{"ts": 1787710314.3472025, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.1, "tokens_ein": 468, "tokens_aus": 817}}
+{"ts": 1787710314.3473678, "kind": "drive_goal", "payload": {"title": "Modellfehler stark reduzieren", "why": "Das Modell scheitert noch zu oft. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1787710314.3474584, "kind": "drive_goal", "payload": {"title": "Simulationen häufiger in Handlungen umsetzen", "why": "Viele Simulationen laufen, aber wenige werden angewendet. Mehr Übertragung bringt echten Lernfortschritt.", "signal": "gap"}}
+{"ts": 1787710314.3475246, "kind": "drive_goal", "payload": {"title": "Alte Erinnerungen mit Träumen verknüpfen", "why": "Das Zoem-Protokoll und ein Traum hängen zusammen. Solche Verbindungen nutzen, um neue Muster zu finden.", "signal": "combination"}}
+{"ts": 1787710315.5769696, "kind": "drive_whisper", "payload": {"title": "Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen", "why": "Erfindung des Erschaffers: das Zoem als kleinste vererbbare Einheit geprüfter Maschinen-Erfahrung - Kultur statt nur Gene. Baue zoem.py mit drei Teilen: 1) EXPORT: jede Lektion und jedes Anti-Pattern mit Score-Beleg wird als einzelne Datei nach data/zoeme/out/ exportiert - Felder: inhalt (Klartext),", "geerbt": false, "auftrag_zeichen": 1061, "versuch": 2}}
+{"ts": 1787710316.4509423, "kind": "swarm_started", "payload": {"goal": "Zoem-Protokoll: vererbbares, geprüftes Wissen zwischen Organismen"}}
+{"ts": 1787710323.1981373, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787710324.0370448, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}

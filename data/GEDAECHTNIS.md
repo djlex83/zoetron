@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9306 Fakten** · Stand 2026-09-02 02:05 UTC · aktualisiert bei jedem Herzschlag
+**9311 Fakten** · Stand 2026-09-02 02:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4955
+- **dream:** 4960
 - **swarm_artifact:** 2007
 - **last_swarm_critique:** 687
 - **anti_pattern:** 599
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902021352:5:d44fe3`
+*02.09. 02:13 UTC · Quelle: dream*
+
+The system auto-generates relevant skill proposals for observed failures (rate limiting, circuit breaking) but cannot execute them due to tooling path errors.
+
+### `dream:20260902021352:4:9d0780`
+*02.09. 02:13 UTC · Quelle: dream*
+
+NVIDIA Nemotron-3-Ultra consistently succeeds but with high latency variance (8-22s), making it a reliable fallback for quality-critical non-interactive tasks.
+
+### `dream:20260902021352:3:80aa18`
+*02.09. 02:13 UTC · Quelle: dream*
+
+Swarm processes evolve (evolved=true) but fail to converge (converged=false) at score 4, indicating missing or miscalibrated exit criteria.
+
+### `dream:20260902021352:2:30487d`
+*02.09. 02:13 UTC · Quelle: dream*
+
+Relative path resolution fails when the working directory diverges from ZOETRON_DATA, causing hand actions to read zero bytes despite valid inputs.
+
+### `dream:20260902021352:1:d5fd31`
+*02.09. 02:13 UTC · Quelle: dream*
+
+OpenRouter's shared quota causes correlated 429 failures across all free models simultaneously, making provider diversification essential for reliability.
 
 ### `dream:20260902020347:5:540424`
 *02.09. 02:03 UTC · Quelle: dream*
