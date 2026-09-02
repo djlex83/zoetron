@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 16:34:32",
+ "stand": "2026-09-02 16:46:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,6 +16,12 @@
   },
   {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -46,12 +52,6 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -187,12 +187,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "cortex-upgrade-reflex-neue-modelle-autom.py",

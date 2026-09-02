@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9806 Fakten** · Stand 2026-09-02 16:35 UTC · aktualisiert bei jedem Herzschlag
+**9811 Fakten** · Stand 2026-09-02 16:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5300
+- **dream:** 5305
 - **swarm_artifact:** 2095
 - **last_swarm_critique:** 703
 - **anti_pattern:** 613
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902164414:5:686cfc`
+*02.09. 16:44 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external API failures cascade, revealing a blind spot: health checks ignore dependency reliability.
+
+### `dream:20260902164414:4:b5c713`
+*02.09. 16:44 UTC · Quelle: dream*
+
+Stress signals (repeated 429s) do not trigger adaptive throttling; the system continues full fallback chains, wasting latency and budget.
+
+### `dream:20260902164414:3:c79585`
+*02.09. 16:44 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin) consistently succeeds when others fail, yet the selector does not preferentially route to it after observed failures.
+
+### `dream:20260902164414:2:11b9f2`
+*02.09. 16:44 UTC · Quelle: dream*
+
+The system repeatedly generates skill proposals (5 in this cycle, 5 in prior dream) but lacks a mechanism to ensure they are implemented, creating a proposal-execution gap.
+
+### `dream:20260902164414:1:736b27`
+*02.09. 16:44 UTC · Quelle: dream*
+
+Simultaneous 429 errors across three distinct providers indicate correlated rate-limiting, not independent failures, making sequential failover ineffective.
 
 ### `last_swarm_critique`
 *02.09. 16:34 UTC · Quelle: critic*

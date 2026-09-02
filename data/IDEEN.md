@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 16:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 16:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -37,10 +37,15 @@
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while external API failures cascade, revealing a blind spot: health checks ignore dependency reliability.
+- Stress signals (repeated 429s) do not trigger adaptive throttling; the system continues full fallback chains, wasting latency and budget.
+- A single reliable model (inclusionai/ling-3.0-flash-fin) consistently succeeds when others fail, yet the selector does not preferentially route to it 
+- The system repeatedly generates skill proposals (5 in this cycle, 5 in prior dream) but lacks a mechanism to ensure they are implemented, creating a p
+- Simultaneous 429 errors across three distinct providers indicate correlated rate-limiting, not independent failures, making sequential failover ineffe
 - Event pruning removes noise but fact retention needs TTL-based stale-data lifecycle.
 - Circuit-breaker activation after three consecutive errors prevents cascade but leaves capacity gaps.
 - Reflex-based tool execution converges reliably for well-scoped tasks like stale analysis refresh.
@@ -51,11 +56,6 @@
 - Event pruning without fact pruning indicates episodic memory turnover while semantic knowledge remains stable.
 - Reflex-based task completion bypasses scoring but achieves convergence, suggesting a fast-path for routine maintenance.
 - Free-tier model endpoints exhibit correlated 429/502 failures under load, making single-provider reliance untenable.
-- The swarm architecture with planner/builder/critic roles converges in a single cycle, proving effective for skill-verification tasks.
-- Calibration systematically under-predicts outcomes (predicted 7 vs actual 9), indicating a need to adjust prediction confidence upward.
-- Tasks can converge to a high score (9) even when initial simulation prescribes revisions, suggesting the simulation's revision count is overcautious.
-- The nemotron-3-ultra-550b fallback model succeeds every time but exhibits degrading latency over successive calls (44s to 167s), signaling load-depend
-- Free models on OpenRouter (z-ai/glm-5.2) are unreliable due to repeated 429 rate-limit errors, requiring automatic fallback to a secondary model.
 
 ---
 
