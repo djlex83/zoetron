@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9967 Fakten** · Stand 2026-09-02 21:04 UTC · aktualisiert bei jedem Herzschlag
+**9972 Fakten** · Stand 2026-09-02 21:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5410
+- **dream:** 5415
 - **swarm_artifact:** 2125
 - **last_swarm_critique:** 708
 - **anti_pattern:** 617
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902211017:5:4af181`
+*02.09. 21:10 UTC · Quelle: dream*
+
+Event pruning removes 40+ events per cycle without fact loss, indicating high transient-event volume.
+
+### `dream:20260902211017:4:257367`
+*02.09. 21:10 UTC · Quelle: dream*
+
+Swarm convergence in a single cycle correlates with clear role separation (1 planner, 3 builders, 1 critic) and pre-existing code artifacts.
+
+### `dream:20260902211017:3:945cbe`
+*02.09. 21:10 UTC · Quelle: dream*
+
+Calibration consistently underestimates task complexity by ~3 points when code artifacts exceed 400 lines.
+
+### `dream:20260902211017:2:db7993`
+*02.09. 21:10 UTC · Quelle: dream*
+
+Hand actions fail on first attempt due to relative path resolution but succeed when absolute paths are used.
+
+### `dream:20260902211017:1:d4d00d`
+*02.09. 21:10 UTC · Quelle: dream*
+
+Model providers on free tiers exhibit bursty 429/502 failures that resolve after 20-180s, making naive retries wasteful.
 
 ### `dream:20260902210220:5:2538cd`
 *02.09. 21:02 UTC · Quelle: dream*

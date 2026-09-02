@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 21:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
+- Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
-- Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning removes 40+ events per cycle without fact loss, indicating high transient-event volume.
+- Swarm convergence in a single cycle correlates with clear role separation (1 planner, 3 builders, 1 critic) and pre-existing code artifacts.
+- Calibration consistently underestimates task complexity by ~3 points when code artifacts exceed 400 lines.
+- Hand actions fail on first attempt due to relative path resolution but succeed when absolute paths are used.
+- Model providers on free tiers exhibit bursty 429/502 failures that resolve after 20-180s, making naive retries wasteful.
 - Free-tier models on OpenRouter are highly unstable, exhibiting both rate limits (429) and upstream overloads (502), necessitating a robust multi-model
 - Simulations are catching significant risks (5 risks, 5 revisions), proving the simulation layer is valuable for preventing bad actions during high-str
 - Reflexes and hand actions are failing (exit 1, ok: false), indicating that current scripts for refreshing outdated knowledge are broken or lack proper
@@ -51,11 +56,6 @@
 - High-latency endpoints (24-27s) are used interchangeably with fast ones (4-6s) because routing ignores latency history.
 - Benchmark scoring is criticized as arbitrary, causing evolution to stall at 7/10 without convergence across 2 cycles.
 - Model endpoint failures (429/502) dominate latency variance and cause swarm instability, yet no circuit breaker or health-aware routing exists despite
-- Same goal persists across 4+ cycles without completion; termination criteria or progress metrics missing.
-- Calibration consistently overestimates by ~1 point; systematic bias requires correction factor.
-- Critic identified benchmark scoring as arbitrary – optimization lacks objective fitness functions.
-- Latency variance for identical models exceeds 3x (86s vs 29s), making timeout budgets essential.
-- Free-tier models fail predominantly from rate limits (429) and upstream overload (502), not model capability.
 
 ---
 

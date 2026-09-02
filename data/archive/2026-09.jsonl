@@ -4299,3 +4299,4 @@
 {"ts": 1787778079.6436093, "kind": "swarm_finished", "payload": {"goal": "Embedding-Recall statt reinem Wortvergleich", "score": 3, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
 {"ts": 1787778079.6438024, "kind": "act_done", "payload": {"goal_title": "Embedding-Recall statt reinem Wortvergleich", "score": 3, "converged": false}}
 {"ts": 1787778081.766634, "kind": "issue_synced", "payload": {"issue": 114, "state": "open"}}
+{"ts": 1787778146.244565, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
