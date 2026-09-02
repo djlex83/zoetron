@@ -1934,3 +1934,26 @@
 {"ts": 1787724269.16247, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1787724269.1624684, "schalter_geoeffnet": false}}
 {"ts": 1787724269.2758653, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787724269.275863, "schalter_geoeffnet": false}}
 {"ts": 1787724269.3679092, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787724269.367907, "schalter_geoeffnet": false}}
+{"ts": 1787724352.6591098, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3.5-lightning:free", "latency_s": 83.3, "tokens_ein": 1976, "tokens_aus": 2990}}
+{"ts": 1787724353.3512359, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.58}}
+{"ts": 1787724353.3514516, "kind": "tor", "payload": {"goal": "Simulationen öfter in echte Aktionen umwandeln", "gruen": true, "grund": "Artefakt laeuft (58 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787724386.3539197, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 32.9, "tokens_ein": 890, "tokens_aus": 554}}
+{"ts": 1787724386.3544083, "kind": "calibration", "payload": {"goal": "Simulationen öfter in echte Aktionen umwandeln", "predicted": 5, "actual": 5, "abs_error": 0}}
+{"ts": 1787724386.3544834, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3.5-lightning:free", "score": 5}}
+{"ts": 1787724386.3546548, "kind": "bahnen", "payload": {"goal": "Simulationen öfter in echte Aktionen umwandeln", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 10, "ids": ["e:e08bc1cda132", "e:83ad52b8f40f", "e:72dcf58d751a", "f:8dd9be62dbb2", "g:e08bc1cda132", "e:817ff3b1634a", "e:8f6780a8b9b3", "e:b633cffa6964", "f:65aaf151d0ac", "f:13f9b4e72912"], "ziel_id": "g:dc6a317f4e27"}}
+{"ts": 1787724425.4894197, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 39.1, "tokens_ein": 283, "tokens_aus": 693}}
+{"ts": 1787724437.4849794, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.0, "tokens_ein": 828, "tokens_aus": 308}}
+{"ts": 1787724437.4853024, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Simulationen öfter in echte Aktionen umwandeln\nCritic issues: Das Ziel 'Simulationen", "variants": 3, "winner_index": 0, "scores": [9, 7, 6]}}
+{"ts": 1787724444.932131, "kind": "recall", "payload": {"keys": ["last_swarm_critique"]}}
+{"ts": 1787724467.8260849, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 21.8, "tokens_ein": 575, "tokens_aus": 29}}
+{"ts": 1787724468.6086311, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787724468.6086287, "schalter_geoeffnet": false}}
+{"ts": 1787724468.983593, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787724468.9835908, "schalter_geoeffnet": false}}
+{"ts": 1787724554.446133, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 85.5, "tokens_ein": 261, "tokens_aus": 1407}}
+{"ts": 1787724554.4463573, "kind": "simulation", "payload": {"goal": "Simulationen öfter in echte Aktionen umwandeln", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787724554.4464753, "kind": "simulation_applied", "payload": {"revisions": 1}}
+{"ts": 1787724554.446576, "kind": "swarm_finished", "payload": {"goal": "Simulationen öfter in echte Aktionen umwandeln", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787724554.446789, "kind": "act_done", "payload": {"goal_title": "Simulationen öfter in echte Aktionen umwandeln", "score": 5, "converged": false}}
+{"ts": 1787724555.1238306, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.56}}
+{"ts": 1787724555.1279254, "kind": "werkzeug_abgelehnt", "payload": {"name": "simulationen-öfter-in-echte-aktionen-umw", "grund": "zerstoerende Operation (subprocess) - braucht menschliche Freigabe", "goal": "Simulationen öfter in echte Aktionen umwandeln"}}
+{"ts": 1787724557.1260471, "kind": "issue_synced", "payload": {"issue": 126, "state": "open"}}
+{"ts": 1787724597.485046, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

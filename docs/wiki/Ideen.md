@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 06:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 06:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,11 +15,11 @@
 - Standardize all tool outputs to a Result<T, E> schema with error codes, context, and retry hints so downstream *(hatte die Idee 3×)*
 - Implement a model router that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoints exceedi *(hatte die Idee 3×)*
 - Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60s cooldown) with 2-retry, 10s t *(hatte die Idee 3×)*
-- Implement per-model token-bucket rate limiters calibrated to observed 429 thresholds, with automatic fallback  *(hatte die Idee 2×)*
 - Build an analysis freshness monitor that auto-escalates stale (>7d) completed analyses to action planning. *(hatte die Idee 2×)*
 - Build integrate_skill_proposal pipeline: auto-scaffold, test, and promote proposals from dream log to skills/  *(hatte die Idee 2×)*
 - Add validate_contracts skill: enforce JSON-schema contracts at every planner→builder→critic handoff; fail fast *(hatte die Idee 2×)*
 - Create skill_trial_scheduler: nightly job picks top-3 untried proposals, runs in sandbox, promotes on +2 score *(hatte die Idee 2×)*
+- Wrap all model calls in @retry_with_fallback decorator that logs latency, error type, and fallback chosen for  *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven actions (marktanalyse-endlich-nutzen.py) succeed where autonomous planning stalls, suggesting reflexes as reliable execution primitives.
+- Resource exhaustion occurs without token-budget scheduling or concurrency caps, especially under conserve-mode constraints.
+- Stale data (market analysis, facts) persists without TTL-based archival or re-verification triggers, degrading decision quality.
+- Multiple proposals converge on pre-execution validation: path resolution, quota checks, and proposal testing gates prevent silent failures.
+- Primary model (z-ai/glm-5.2:free) repeatedly fails with 429 rate-limit errors, forcing fallback to slower but reliable nemotron-3-ultra.
 - System self-diagnosis correctly identifies the absence of organ failures, ensuring system health is maintained during routine operations.
 - Swarm-based task execution with planner, builder, and critic roles successfully converges on a high-quality solution (score 8) in a single cycle.
 - Event pruning is highly effective at reducing memory bloat, successfully removing 55 outdated events in a single run.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without implementation because no mechanism converts proposals into owned, tracked work items.
 - Reflex-based execution succeeded where model-dependent planning failed, proving the reflex pathway is more reliable under API degradation.
 - Repeated 429 errors across four different models indicate systemic rate-limiting at the provider level, not model-specific failures.
-- The system autonomously generated relevant skill proposals (router, circuit breaker, fallback roster) directly from observed failures.
-- Latency variance (6.7s vs 13.7s) across successful calls indicates unpredictable queue times even when requests succeed.
-- Error patterns cluster by provider (Google, Z.ai) rather than model size, suggesting provider-level quota exhaustion.
-- A single successful reflex execution (swarm run) proves the architecture can close the loop when model availability is stable.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable as primary endpoints.
 
 ---
 

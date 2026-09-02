@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 06:06:23",
+ "stand": "2026-09-02 06:14:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -141,6 +141,12 @@
    "quote": 1.0
   },
   {
+   "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "marktanalyse-endlich-umsetzen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -237,12 +243,6 @@
    "quote": 1.0
   },
   {
-   "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "neue-fähigkeiten-erlernen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -333,7 +333,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.715,
+ "haende_quote": 0.716,
  "simulationen_angewandt": 30,
  "swarm_scores": {
   "n": 32,

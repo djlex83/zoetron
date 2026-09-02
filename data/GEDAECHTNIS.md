@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9443 Fakten** · Stand 2026-09-02 06:07 UTC · aktualisiert bei jedem Herzschlag
+**9448 Fakten** · Stand 2026-09-02 06:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5045
+- **dream:** 5050
 - **swarm_artifact:** 2033
 - **last_swarm_critique:** 692
 - **anti_pattern:** 603
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902061350:5:c952fc`
+*02.09. 06:13 UTC · Quelle: dream*
+
+Reflex-driven actions (marktanalyse-endlich-nutzen.py) succeed where autonomous planning stalls, suggesting reflexes as reliable execution primitives.
+
+### `dream:20260902061350:4:870463`
+*02.09. 06:13 UTC · Quelle: dream*
+
+Resource exhaustion occurs without token-budget scheduling or concurrency caps, especially under conserve-mode constraints.
+
+### `dream:20260902061350:3:bbbf8b`
+*02.09. 06:13 UTC · Quelle: dream*
+
+Stale data (market analysis, facts) persists without TTL-based archival or re-verification triggers, degrading decision quality.
+
+### `dream:20260902061350:2:3d209c`
+*02.09. 06:13 UTC · Quelle: dream*
+
+Multiple proposals converge on pre-execution validation: path resolution, quota checks, and proposal testing gates prevent silent failures.
+
+### `dream:20260902061350:1:4bbc78`
+*02.09. 06:13 UTC · Quelle: dream*
+
+Primary model (z-ai/glm-5.2:free) repeatedly fails with 429 rate-limit errors, forcing fallback to slower but reliable nemotron-3-ultra.
 
 ### `dream:20260902060533:5:6bee56`
 *02.09. 06:05 UTC · Quelle: dream*
