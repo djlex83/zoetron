@@ -2938,3 +2938,12 @@
 {"ts": 1787742084.1647537, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787742084.1647506, "schalter_geoeffnet": false}}
 {"ts": 1787742084.3927288, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787742084.3927271, "schalter_geoeffnet": false}}
 {"ts": 1787742084.6335578, "kind": "model_fail", "payload": {"model": "poolside/laguna-s-2.1:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787742084.6335542, "schalter_geoeffnet": false}}
+{"ts": 1787742233.81809, "kind": "model_ok", "payload": {"model": "dots-studio/dots-3-note-preview:free", "latency_s": 149.2, "tokens_ein": 458, "tokens_aus": 6990}}
+{"ts": 1787742247.6120772, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.6, "tokens_ein": 310, "tokens_aus": 542}}
+{"ts": 1787742247.61232, "kind": "simulation", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "verdict": "go", "risks": 5, "revisions": 5}}
+{"ts": 1787742247.6124334, "kind": "swarm_finished", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": 4, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787742247.612615, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": 4, "converged": false}}
+{"ts": 1787742247.9466937, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22}}
+{"ts": 1787742247.951987, "kind": "werkzeug_abgelehnt", "payload": {"name": "ersten-swarm-lauf-mit-score-8-konvergier", "grund": "nimmt keine Eingabe entgegen - keine Parameter, kein argv/stdin, keine Datei", "goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen"}}
+{"ts": 1787742249.7737155, "kind": "issue_synced", "payload": {"issue": 64, "state": "open"}}
+{"ts": 1787742298.2931423, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

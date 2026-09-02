@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9612 Fakten** · Stand 2026-09-02 11:06 UTC · aktualisiert bei jedem Herzschlag
+**9617 Fakten** · Stand 2026-09-02 11:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5165
+- **dream:** 5170
 - **swarm_artifact:** 2059
 - **last_swarm_critique:** 697
 - **anti_pattern:** 609
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902111244:5:a4f653`
+*02.09. 11:12 UTC · Quelle: dream*
+
+Evolution loops improve scores internally (6→9→7) but still produce zero-score artifacts, revealing a simulation-reality gap.
+
+### `dream:20260902111244:4:9c91d0`
+*02.09. 11:12 UTC · Quelle: dream*
+
+Calibration error of 7 points (predicted 7 vs actual 0) indicates the reward model overestimates artifact viability by default.
+
+### `dream:20260902111244:3:75cc77`
+*02.09. 11:12 UTC · Quelle: dream*
+
+Artifact execution failures recur due to syntax errors in generated code (e.g., malformed list comprehensions), not model reasoning gaps.
+
+### `dream:20260902111244:2:d10928`
+*02.09. 11:12 UTC · Quelle: dream*
+
+Latency variance for successful calls spans 3x-50x (3s to 161s), invalidating fixed timeout assumptions.
+
+### `dream:20260902111244:1:76b6c1`
+*02.09. 11:12 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) cascades across all free-tier models simultaneously, making single-model fallback unreliable.
 
 ### `dream:20260902110427:5:6032ea`
 *02.09. 11:04 UTC · Quelle: dream*

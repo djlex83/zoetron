@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 11:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 11:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution loops improve scores internally (6→9→7) but still produce zero-score artifacts, revealing a simulation-reality gap.
+- Calibration error of 7 points (predicted 7 vs actual 0) indicates the reward model overestimates artifact viability by default.
+- Artifact execution failures recur due to syntax errors in generated code (e.g., malformed list comprehensions), not model reasoning gaps.
+- Latency variance for successful calls spans 3x-50x (3s to 161s), invalidating fixed timeout assumptions.
+- Rate limiting (HTTP 429) cascades across all free-tier models simultaneously, making single-model fallback unreliable.
 - A single successful model response does not establish provider reliability—sustained health scoring across multiple requests is required to distinguis
 - The evolution loop allows regression disguised as improvement when it lacks monotonic score-continuity enforcement across cycles.
 - Unused analytical assets represent a compounding opportunity cost because their insights never feed the skill evolution loop.
@@ -51,11 +56,6 @@
 - The swarm converged in one cycle with score 9 despite multiple model failures, proving ensemble redundancy works.
 - Hand actions failing with exit code 1 but no error message indicate silent I/O failures that pre-action validation could prevent.
 - Free-tier model providers consistently hit 429 rate limits under load, requiring automatic fallback to alternative providers.
-- Reflex tool 'vorgeschlagene-fähigkeiten-prüfen-und-ba.py' failed silently; skill-building pipelines need explicit success/failure telemetry and idempo
-- Simulation verdict 'revise' with 2 risks and 2 applied revisions shows pre-execution simulation catches defects, but the revision loop lacks a hard it
-- System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which silently truncates work; tasks must check metabolism budget before 
-- Hand actions fail when using relative paths; all file operations must resolve against ZOETRON_DATA and sys.argv[1] to absolute paths before execution.
-- Rate limiting (429) and upstream errors (502) across multiple free models necessitate a managed fallback chain with health-aware routing instead of na
 
 ---
 
