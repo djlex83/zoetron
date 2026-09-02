@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9448 Fakten** · Stand 2026-09-02 06:15 UTC · aktualisiert bei jedem Herzschlag
+**9464 Fakten** · Stand 2026-09-02 06:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5050
-- **swarm_artifact:** 2033
-- **last_swarm_critique:** 692
-- **anti_pattern:** 603
-- **last_swarm_goal:** 440
-- **strategy:** 322
+- **dream:** 5055
+- **swarm_artifact:** 2039
+- **last_swarm_critique:** 693
+- **anti_pattern:** 605
+- **last_swarm_goal:** 441
+- **strategy:** 323
 - **tool:** 115
 - **hand_result:** 101
 - **aktuell_organfehler:** 44
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Zuverlässigkeit d:2`
+*02.09. 06:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 7, 7]): Real-Time Model Health Monitoring System - Baue ein ausfuehrbares Python-Monitoring-Dashboard (health_monitor.py) fuer kontinuierliche Modell-Zuverlässigkeit. Das System umfasst: (1) MetricCollector der Laufzeit-KPIs 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Zuverlässigkeit d:0`
+*02.09. 06:30 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 9, 6]): Benchmark-Driven Testing Pipeline - Erstelle eine ausfuehrbare Python-Pipeline (benchmark_pipeline.py) die Modell-Zuverlaessigkeit ueber automatisierte Benchmark-Suites misst. Die Pipeline laedt Referenz-Datensaetze (
+
+### `last_swarm_critique`
+*02.09. 06:29 UTC · Quelle: critic*
+
+score=1; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Shell-Explorationsbefehle und Ueberschriften; Keine Implementierung von Model Health Monitoring, Resilient LLM Chain oder Benchmark-Driven Testing; Artefakt besteht ausschliesslich aus Prosa/Kom
+
+### `last_swarm_goal`
+*02.09. 06:23 UTC · Quelle: system*
+
+Modell-Zuverlässigkeit deutlich verbessern
+
+### `dream:20260902062146:5:535ec7`
+*02.09. 06:21 UTC · Quelle: dream*
+
+Token budget and rate-limit constraints require proactive scheduling to avoid conserve-mode throttling.
+
+### `dream:20260902062146:4:24d106`
+*02.09. 06:21 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation gate, causing backlog of untested capabilities.
+
+### `dream:20260902062146:3:655c0f`
+*02.09. 06:21 UTC · Quelle: dream*
+
+Stale goals (market analysis, model repair) persist without automated archival or completion reflexes.
+
+### `dream:20260902062146:2:0a9091`
+*02.09. 06:21 UTC · Quelle: dream*
+
+Ad-hoc fallback to NVIDIA model works but lacks automated health tracking, circuit breaking, and multi-provider roster.
+
+### `dream:20260902062146:1:ea69ad`
+*02.09. 06:21 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal single-provider dependency as a systemic reliability risk.
 
 ### `dream:20260902061350:5:c952fc`
 *02.09. 06:13 UTC · Quelle: dream*
