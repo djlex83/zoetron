@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9617 Fakten** · Stand 2026-09-02 11:14 UTC · aktualisiert bei jedem Herzschlag
+**9622 Fakten** · Stand 2026-09-02 11:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5170
+- **dream:** 5175
 - **swarm_artifact:** 2059
 - **last_swarm_critique:** 697
 - **anti_pattern:** 609
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902112053:5:ae04ad`
+*02.09. 11:20 UTC · Quelle: dream*
+
+Pruning 79 events while retaining 429 error patterns indicates the memory system preserves noise over signal, hindering future root-cause analysis.
+
+### `dream:20260902112053:4:6098ad`
+*02.09. 11:20 UTC · Quelle: dream*
+
+Evolution and swarm cycles fail to converge (score 0) when the root cause is external infrastructure (rate limits) rather than code logic, wasting compute on unsolvable optimization.
+
+### `dream:20260902112053:3:d2c8f5`
+*02.09. 11:20 UTC · Quelle: dream*
+
+Organ-level self-diagnosis reports 'clean' while system-level 429 storms persist, revealing a critical observability gap between component health and end-to-end reliability.
+
+### `dream:20260902112053:2:c31e79`
+*02.09. 11:20 UTC · Quelle: dream*
+
+Nvidia/nemotron-3-ultra serves as a stable fallback but introduces 18-37s latency variance that degrades interactive workflows.
+
+### `dream:20260902112053:1:bf7430`
+*02.09. 11:20 UTC · Quelle: dream*
+
+Provider z-ai/glm-5.2:free exhibits systematic 429 rate-limiting under load, making it unreliable as a primary model despite occasional low-latency successes.
 
 ### `dream:20260902111244:5:a4f653`
 *02.09. 11:12 UTC · Quelle: dream*

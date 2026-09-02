@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 11:13:27",
+ "stand": "2026-09-02 11:22:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -88,6 +82,12 @@
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -355,6 +355,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.701,
@@ -366,8 +372,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 5.8
+   "n": 29,
+   "schnitt": 5.79
   },
   "bau": {
    "n": 3,
