@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 12:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,16 +24,16 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System runs at stress=1.0 in 'conserve' mode with max_tasks=3, causing model fallback cascades that exceed latency budgets.
+- Simulation-based revision loop works: verdict 'revise' → 3 risks identified → 3 revisions applied → re-validation.
+- Skill proposals accumulate but deployment reflex (fähigkeitsvorschläge-in-echte-skills-ums.py) fails silently, creating a proposal-to-production gap.
+- Hand actions fail when tools resolve paths relative to CWD instead of ZOETRON_DATA, causing zero-byte reads despite valid input.
+- Primary model (glm-5.2) fails deterministically with 429 errors under load while fallback (nemotron-3-ultra) succeeds at 2-10x latency cost.
 - Memory retains routine successes while discarding actionable failure signatures (error codes, latency outliers, convergence metrics).
 - Optimization cycles continue despite >80% infrastructure error rates (429/timeouts), wasting compute and masking root causes.
 - Identical skill proposals recur across dream cycles without deployment – proposal generation is decoupled from validation, testing, and atomic registr
@@ -51,11 +56,6 @@
 - Self-diagnosis at the organ level reports clean while system-level failures persist, meaning external infrastructure errors escape organ-level detecti
 - Skill proposals accumulate without being applied — the gap between proposing and implementing skills is a systemic bottleneck that reflex-based execut
 - 429 rate-limit errors on z-ai/glm-5.2:free are a persistent, recurring infrastructure failure requiring systematic circuit-breaking and provider failo
-- Self-diagnosis reports zero organ errors while the model router repeatedly fails, revealing a monitoring blind spot.
-- Automatic pruning removes events but not the systemic causes (rate limits, missing pre-flight checks) that generate them.
-- Proposed skills accumulate faster than they are validated, creating a backlog of untested capabilities.
-- Latency variance across successful calls (4s–76s) indicates unpredictable queueing, not model speed, as the primary bottleneck.
-- Free-tier models on OpenRouter exhibit correlated 429/502 failures under load, making single-provider reliance unreliable.
 
 ---
 

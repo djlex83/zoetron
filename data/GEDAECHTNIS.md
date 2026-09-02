@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9654 Fakten** · Stand 2026-09-02 12:17 UTC · aktualisiert bei jedem Herzschlag
+**9659 Fakten** · Stand 2026-09-02 12:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5195
+- **dream:** 5200
 - **swarm_artifact:** 2065
 - **last_swarm_critique:** 698
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902122346:5:5f7478`
+*02.09. 12:23 UTC · Quelle: dream*
+
+System runs at stress=1.0 in 'conserve' mode with max_tasks=3, causing model fallback cascades that exceed latency budgets.
+
+### `dream:20260902122346:4:97f35a`
+*02.09. 12:23 UTC · Quelle: dream*
+
+Simulation-based revision loop works: verdict 'revise' → 3 risks identified → 3 revisions applied → re-validation.
+
+### `dream:20260902122346:3:d7038b`
+*02.09. 12:23 UTC · Quelle: dream*
+
+Skill proposals accumulate but deployment reflex (fähigkeitsvorschläge-in-echte-skills-ums.py) fails silently, creating a proposal-to-production gap.
+
+### `dream:20260902122346:2:fdbd47`
+*02.09. 12:23 UTC · Quelle: dream*
+
+Hand actions fail when tools resolve paths relative to CWD instead of ZOETRON_DATA, causing zero-byte reads despite valid input.
+
+### `dream:20260902122346:1:b3ffe0`
+*02.09. 12:23 UTC · Quelle: dream*
+
+Primary model (glm-5.2) fails deterministically with 429 errors under load while fallback (nemotron-3-ultra) succeeds at 2-10x latency cost.
 
 ### `dream:20260902121536:5:d7d380`
 *02.09. 12:15 UTC · Quelle: dream*
