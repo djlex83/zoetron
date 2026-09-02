@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 01:57:19",
+ "stand": "2026-09-02 02:04:05",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -313,6 +313,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "viele-skill-vorschläge-ordnen-und-zusamm.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.725,

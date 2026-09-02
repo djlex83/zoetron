@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 01:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 02:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
+- Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution runs with multiple variants and scoring mechanisms improve solution quality, as evidenced by higher scores in subsequent attempts.
+- Calibration predictions can deviate substantially from actual outcomes (predicted 8 vs actual 4), highlighting the need for iterative refinement in go
+- Latency and token usage vary significantly across successful calls to the same model, implying that input complexity directly impacts performance and 
+- The nvidia/nemotron-3-ultra-550b-a55b:free model generally succeeds but can fail under upstream overload conditions (HTTP 502), suggesting it should b
+- The z-ai/glm-5.2:free model consistently fails with HTTP 429 errors, indicating a rate-limiting issue that makes it unreliable for repeated use within
 - Swarm initiation succeeds but downstream reflex execution fails, indicating a handoff gap between swarm_start and tool invocation.
 - Reflex tools (veraltete-infos-auffrischen.py) fail silently without emitting structured error telemetry for dream analysis.
 - High metabolic stress (1.0) triggers conserve mode that caps tasks at 3 and iterations at 1, starving recovery procedures.
@@ -51,11 +56,6 @@
 - No client-side backoff or circuit breaker exists: the system hammered failing endpoints repeatedly within seconds, wasting budget during conserve mode
 - Model reliability is transient: nvidia/nemotron succeeded 3 times but later returned 502 upstream errors, while inclusionai/ling-3.0-flash-fin succeed
 - Rate limiting (HTTP 429) is the systemic failure mode affecting all models simultaneously, indicating a shared OpenRouter gateway bottleneck rather th
-- A reflex-based learning loop can converge successfully on its own, but sustained reliability requires infrastructure hardening because the learning me
-- Self-diagnosis reports no internal organ failures even while the system fails repeatedly, revealing that diagnostic scope must explicitly include exte
-- Stale artifacts, outdated memories, and unfinished analyses accumulate faster than pruning routines can clean them, creating clutter that degrades dec
-- A persistent gap exists between generating proposals/suggestions and actually executing them — the system collects 55 capability suggestions and 5 ski
-- Model infrastructure failures (429 rate limits, 503 service unavailability) are the dominant systemic risk, causing 75 failures versus 37 successes, a
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9301 Fakten** · Stand 2026-09-02 01:58 UTC · aktualisiert bei jedem Herzschlag
+**9306 Fakten** · Stand 2026-09-02 02:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4950
+- **dream:** 4955
 - **swarm_artifact:** 2007
 - **last_swarm_critique:** 687
 - **anti_pattern:** 599
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902020347:5:540424`
+*02.09. 02:03 UTC · Quelle: dream*
+
+Evolution runs with multiple variants and scoring mechanisms improve solution quality, as evidenced by higher scores in subsequent attempts.
+
+### `dream:20260902020347:4:df8492`
+*02.09. 02:03 UTC · Quelle: dream*
+
+Calibration predictions can deviate substantially from actual outcomes (predicted 8 vs actual 4), highlighting the need for iterative refinement in goal assessment.
+
+### `dream:20260902020347:3:87f81c`
+*02.09. 02:03 UTC · Quelle: dream*
+
+Latency and token usage vary significantly across successful calls to the same model, implying that input complexity directly impacts performance and resource consumption.
+
+### `dream:20260902020347:2:d01226`
+*02.09. 02:03 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model generally succeeds but can fail under upstream overload conditions (HTTP 502), suggesting it should be used with fallback strategies.
+
+### `dream:20260902020347:1:804777`
+*02.09. 02:03 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with HTTP 429 errors, indicating a rate-limiting issue that makes it unreliable for repeated use within short timeframes.
 
 ### `dream:20260902015700:5:ae5fa5`
 *02.09. 01:57 UTC · Quelle: dream*
