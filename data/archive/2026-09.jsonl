@@ -2117,3 +2117,34 @@
 {"ts": 1787727380.488443, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 66.5, "tokens_ein": 1906, "tokens_aus": 1943}}
 {"ts": 1787727380.811889, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22}}
 {"ts": 1787727380.81209, "kind": "tor", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "gruen": true, "grund": "Artefakt laeuft (147 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787727530.6376472, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 149.7, "tokens_ein": 1722, "tokens_aus": 235}}
+{"ts": 1787727530.6384926, "kind": "calibration", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "predicted": 7, "actual": 5, "abs_error": 2}}
+{"ts": 1787727530.6387162, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 5}}
+{"ts": 1787727530.6396391, "kind": "bahnen", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 6, "ids": ["f:1de710f3e1fc", "e:2394dbe1f771", "e:9ebe42abbb25", "e:618463ab4179", "g:e08bc1cda132", "g:bb6600dd88dd"], "ziel_id": "g:bb36b02353cb"}}
+{"ts": 1787727549.0428207, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 18.4, "tokens_ein": 188, "tokens_aus": 488}}
+{"ts": 1787727555.4331388, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 6.4, "tokens_ein": 611, "tokens_aus": 124}}
+{"ts": 1787727555.4336417, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeiten wirklich ausprobieren\nCritic issues: Critic output unpars", "variants": 3, "winner_index": 2, "scores": [8, 7, 9]}}
+{"ts": 1787727567.8903575, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.6, "tokens_ein": 534, "tokens_aus": 82}}
+{"ts": 1787727577.8288844, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.8, "tokens_ein": 353, "tokens_aus": 289}}
+{"ts": 1787727577.8290687, "kind": "simulation", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "verdict": "go", "risks": 2, "revisions": 3}}
+{"ts": 1787727577.829182, "kind": "swarm_finished", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787727577.8294055, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "score": 5, "converged": false}}
+{"ts": 1787727578.185001, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24}}
+{"ts": 1787727580.2411664, "kind": "issue_synced", "payload": {"issue": 131, "state": "open"}}
+{"ts": 1787727622.5913038, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787727785.0765917, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787727804.3506875, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 16.6, "tokens_ein": 1521, "tokens_aus": 409}}
+{"ts": 1787727804.3512568, "kind": "skill_proposal", "payload": {"proposal": "Add a calibration corrector that adjusts predicted scores using a running mean of abs_error from recent cycles."}}
+{"ts": 1787727804.351326, "kind": "skill_proposal", "payload": {"proposal": "Implement latency-tiered routing that classifies models by rolling average latency and assigns timeout budgets per tier."}}
+{"ts": 1787727804.3513806, "kind": "skill_proposal", "payload": {"proposal": "Create an adaptive prune policy that prunes any fact/event not retrieved within N cycles, starting with N=10."}}
+{"ts": 1787727804.3514333, "kind": "skill_proposal", "payload": {"proposal": "Persist simulation 'revise' outcomes as reusable risk patterns so future plans matching known risk signatures get auto-revised."}}
+{"ts": 1787727804.3514853, "kind": "skill_proposal", "payload": {"proposal": "Track rejected-tool events with structured reasons (which tool, which gate, why) to close the diagnostic gap flagged in the drive goals."}}
+{"ts": 1787727804.351536, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787727817.6521208, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.8, "tokens_ein": 450, "tokens_aus": 272}}
+{"ts": 1787727817.6523442, "kind": "drive_goal", "payload": {"title": "Gründe für misslungene Vorhersagen finden", "why": "Das System hat sich oft daneben gelegen, wenn es versucht hat, Dinge vorherzusagen. Wenn wir herausfinden, woran das liegt, macht es zukünftig weniger Fehler.", "signal": "failure"}}
+{"ts": 1787727817.6524475, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich ausprobieren", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber nur wenige wurden tatsächlich getestet. Nur durch Ausprobieren zeigt sich, was wirklich nützt.", "signal": "gap"}}
+{"ts": 1787727817.652525, "kind": "drive_goal", "payload": {"title": "Abgelehnte Werkzeuge verstehen und verbessern", "why": "Manchmal werden Werkzeuge vom System abgelehnt und dann liegt alles still. Wenn wir verstehen warum, kann das System besser mit ihnen arbeiten.", "signal": "combination"}}
+{"ts": 1787727819.1902366, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.19}}
+{"ts": 1787727819.1907604, "kind": "reflex_used", "payload": {"goal": "Altes Handlungswissen mit Träumen verbinden", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1787727819.5693126, "kind": "act_done", "payload": {"goal_title": "Altes Handlungswissen mit Träumen verbinden", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787727861.2656252, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

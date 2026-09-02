@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9469 Fakten** · Stand 2026-09-02 07:00 UTC · aktualisiert bei jedem Herzschlag
+**9474 Fakten** · Stand 2026-09-02 07:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5060
+- **dream:** 5065
 - **swarm_artifact:** 2039
 - **last_swarm_critique:** 693
 - **anti_pattern:** 605
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902070612:5:2f6177`
+*02.09. 07:06 UTC · Quelle: dream*
+
+Structured lifecycle gates — validation suite passage before promotion and rollback on regression — prevent low-quality proposals from propagating through the system.
+
+### `dream:20260902070612:4:71db07`
+*02.09. 07:06 UTC · Quelle: dream*
+
+Prediction calibration systematically underestimates durations for data processing tasks, indicating a structural bias that a multiplier correction can address.
+
+### `dream:20260902070612:3:a92a73`
+*02.09. 07:06 UTC · Quelle: dream*
+
+Proactive prevention (pausing before thresholds, pre-flight path validation) outperforms reactive retry by avoiding failures entirely rather than recovering from them.
+
+### `dream:20260902070612:2:2e0a7e`
+*02.09. 07:06 UTC · Quelle: dream*
+
+Information decays autonomously — stale market analyses, outdated facts, and archived events accumulate without intervention, requiring automated TTL-based freshness auditing.
+
+### `dream:20260902070612:1:2ef3a4`
+*02.09. 07:06 UTC · Quelle: dream*
+
+Free-tier API models consistently hit 429 rate limits under load, making quota-aware routing with exponential backoff and fallback models a non-negotiable resilience pattern.
 
 ### `dream:20260902065850:5:180131`
 *02.09. 06:58 UTC · Quelle: dream*
