@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9639 Fakten** · Stand 2026-09-02 11:43 UTC · aktualisiert bei jedem Herzschlag
+**9644 Fakten** · Stand 2026-09-02 12:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5180
+- **dream:** 5185
 - **swarm_artifact:** 2065
 - **last_swarm_critique:** 698
 - **anti_pattern:** 611
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902115815:5:80916e`
+*02.09. 11:58 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while the model router repeatedly fails, revealing a monitoring blind spot.
+
+### `dream:20260902115815:4:331afe`
+*02.09. 11:58 UTC · Quelle: dream*
+
+Automatic pruning removes events but not the systemic causes (rate limits, missing pre-flight checks) that generate them.
+
+### `dream:20260902115815:3:44f38d`
+*02.09. 11:58 UTC · Quelle: dream*
+
+Proposed skills accumulate faster than they are validated, creating a backlog of untested capabilities.
+
+### `dream:20260902115815:2:ab4e20`
+*02.09. 11:58 UTC · Quelle: dream*
+
+Latency variance across successful calls (4s–76s) indicates unpredictable queueing, not model speed, as the primary bottleneck.
+
+### `dream:20260902115815:1:85e55a`
+*02.09. 11:58 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit correlated 429/502 failures under load, making single-provider reliance unreliable.
 
 ### `tool:vorgeschlagene-skills-umsetzen`
 *02.09. 11:42 UTC · Quelle: hands*

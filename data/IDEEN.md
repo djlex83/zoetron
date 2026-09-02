@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 11:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 11:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,9 +31,9 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Neue Fähigkeiten aktiv vorschlagen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Fehler in Modellen systematisch beheben *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while the model router repeatedly fails, revealing a monitoring blind spot.
+- Automatic pruning removes events but not the systemic causes (rate limits, missing pre-flight checks) that generate them.
+- Proposed skills accumulate faster than they are validated, creating a backlog of untested capabilities.
+- Latency variance across successful calls (4s–76s) indicates unpredictable queueing, not model speed, as the primary bottleneck.
+- Free-tier models on OpenRouter exhibit correlated 429/502 failures under load, making single-provider reliance unreliable.
 - Fallback model nvidia/nemotron-3-ultra exhibits 30-60s latency, making naive failover costly; routing must weigh latency against availability.
 - Skill proposals accumulate (10+ in this log) but none are validated or deployed, creating a proposal-to-production gap that wastes design effort.
 - Multiple ModelRouter proposals converge on per-provider health scoring, circuit breakers, and token-bucket pacing, showing consensus on required resil
@@ -51,11 +56,6 @@
 - Organ-level self-diagnosis reports 'clean' while system-level 429 storms persist, revealing a critical observability gap between component health and 
 - Nvidia/nemotron-3-ultra serves as a stable fallback but introduces 18-37s latency variance that degrades interactive workflows.
 - Provider z-ai/glm-5.2:free exhibits systematic 429 rate-limiting under load, making it unreliable as a primary model despite occasional low-latency su
-- Evolution loops improve scores internally (6→9→7) but still produce zero-score artifacts, revealing a simulation-reality gap.
-- Calibration error of 7 points (predicted 7 vs actual 0) indicates the reward model overestimates artifact viability by default.
-- Artifact execution failures recur due to syntax errors in generated code (e.g., malformed list comprehensions), not model reasoning gaps.
-- Latency variance for successful calls spans 3x-50x (3s to 161s), invalidating fixed timeout assumptions.
-- Rate limiting (HTTP 429) cascades across all free-tier models simultaneously, making single-model fallback unreliable.
 
 ---
 
