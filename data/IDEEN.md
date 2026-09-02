@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 17:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 17:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence in 1 cycle with score 8 masks a 5:1 model failure-to-success ratio, revealing that task success metrics decouple from model reliabil
+- Safety gate correctly blocks destructive tool execution (os.system) but lacks an automated escalation path for legitimate automation needs.
+- Successful calls to nemotron-3-ultra exhibit 96-108s latency, signaling provider saturation that precedes hard errors.
+- Absence of a circuit breaker causes repeated futile calls to failing providers, wasting latency budget and tokens on doomed requests.
+- Multiple providers (z-ai, google, nvidia) simultaneously return 429/502 errors, indicating correlated rate-limiting or upstream saturation rather than
 - Skills are proposed via drive_goal but lack an automated test harness; the system explicitly notes 'Viele Fähigkeiten werden vorgeschlagen, aber kaum 
 - Under high stress (1.0) and conserve mode, the system still attempted multiple model calls with long latencies (up to 136s) instead of degrading grace
 - The reflex tool 'modellfehler-deutlich-reduzieren.py' itself failed (ok: false), showing that error-reduction procedures need their own validation.
@@ -51,11 +56,6 @@
 - System entered stress=1.0 conserve mode (max_tasks=3, max_iterations=1) precisely when recovery capacity was needed most, creating a death spiral.
 - Fallback model (nvidia/nemotron-3-ultra) latency varies wildly (26–73s), causing reflex tasks to exceed acceptable SLOs and triggering stress cascades
 - Free-tier models (z-ai/glm-5.2) repeatedly hit 429 rate limits, making them unreliable as primary dependencies without circuit-breaker fallback logic.
-- Drive goals repeat similar themes (market data refresh, model failure analysis, memory utilization) across cycles, suggesting missing cross-goal synth
-- Selbstdiagnose only checks internal organs, missing the external dependency failures (model endpoints) that actually halt progress.
-- Fact store grows (10k+ facts) but prune_run never removes facts (facts_pruned: 0), indicating stale knowledge accumulates without decay mechanism.
-- Reflex tools execute in <1s with 100% success rate while model calls take 18-60s with >80% failure rate, making reflex-first routing a clear latency/r
-- Model endpoint failures cascade predictably: 429 rate limits hit first, then 502 upstream overloads, forcing sequential fallback through 4+ models bef
 
 ---
 
