@@ -2631,3 +2631,34 @@
 {"ts": 1787736705.345094, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
 {"ts": 1787736707.5589776, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787736707.5589752, "schalter_geoeffnet": false}}
 {"ts": 1787736707.9296443, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787736707.9296417, "schalter_geoeffnet": false}}
+{"ts": 1787736771.1306207, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 63.2, "tokens_ein": 433, "tokens_aus": 696}}
+{"ts": 1787736771.1307583, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und reduzieren", "why": "Das System macht noch zu viele Fehler. Wenn wir die Ursachen finden, wird es zuverlässiger.", "signal": "failure"}}
+{"ts": 1787736771.130836, "kind": "drive_goal", "payload": {"title": "Neue Fähigkeiten aus Vorschlägen lernen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten. Die besten davon sollten wir echt ausprobieren.", "signal": "gap"}}
+{"ts": 1787736771.1309035, "kind": "drive_goal", "payload": {"title": "Traumerkenntnisse für bessere Entscheidungen nutzen", "why": "Die Träume enthalten wertvolle Muster. Wir sollten sie besser mit dem echten Handeln verbinden.", "signal": "combination"}}
+{"ts": 1787736773.656138, "kind": "swarm_started", "payload": {"goal": "Vorgeschlagene Fähigkeiten ausprobieren"}}
+{"ts": 1787736782.5618715, "kind": "recall", "payload": {"keys": ["last_swarm_goal", "tool:vorgeschlagene-fähigkeiten-wirklich-ausp"]}}
+{"ts": 1787736783.5548437, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787736830.2915237, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 46.5, "tokens_ein": 1803, "tokens_aus": 2132}}
+{"ts": 1787736833.684129, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.2, "tokens_ein": 495, "tokens_aus": 82}}
+{"ts": 1787736841.2833984, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.4, "tokens_ein": 229, "tokens_aus": 287}}
+{"ts": 1787736841.283563, "kind": "simulation", "payload": {"goal": "Vorgeschlagene Fähigkeiten ausprobieren", "verdict": "revise", "risks": 2, "revisions": 2}}
+{"ts": 1787736841.2836525, "kind": "simulation_applied", "payload": {"revisions": 2}}
+{"ts": 1787736917.9489515, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 76.4, "tokens_ein": 2025, "tokens_aus": 3231}}
+{"ts": 1787736918.1051884, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.02}}
+{"ts": 1787736918.105392, "kind": "tor", "payload": {"goal": "Vorgeschlagene Fähigkeiten ausprobieren", "gruen": false, "grund": "Artefakt laeuft nicht:   File \"/workspace/zoetron/data/hands_workspace/action_1787736918080.py\", line 19\n    from __future__ import annotations", "zyklus": 1}}
+{"ts": 1787736918.6012297, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787736918.6012273, "schalter_geoeffnet": false}}
+{"ts": 1787736920.0330553, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 1.4, "tokens_ein": 2830, "tokens_aus": 333}}
+{"ts": 1787736920.033538, "kind": "calibration", "payload": {"goal": "Vorgeschlagene Fähigkeiten ausprobieren", "predicted": 6, "actual": 2, "abs_error": 4}}
+{"ts": 1787736920.0336168, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 2}}
+{"ts": 1787736928.8528574, "kind": "bahnen", "payload": {"goal": "Vorgeschlagene Fähigkeiten ausprobieren", "delta": -0.5, "kanten": 13, "hat_code": true, "score": 2, "abgerufen": 9, "ids": ["e:9d71d993df00", "f:1de710f3e1fc", "e:817ff3b1634a", "f:4146b4249bf6", "g:e08bc1cda132", "g:bb6600dd88dd", "f:5280caafc677", "f:e5d857299b15", "f:52868aed04d1"], "ziel_id": "g:172bb0b72b0b"}}
+{"ts": 1787736952.3269982, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 23.5, "tokens_ein": 227, "tokens_aus": 645}}
+{"ts": 1787736960.2438416, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.9, "tokens_ein": 747, "tokens_aus": 221}}
+{"ts": 1787736960.244159, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 2/10. Goal: Vorgeschlagene Fähigkeiten ausprobieren\nCritic issues: Artefakt läuft nicht laut San", "variants": 3, "winner_index": 1, "scores": [7, 9, 8]}}
+{"ts": 1787736985.8193355, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 15.4, "tokens_ein": 492, "tokens_aus": 87}}
+{"ts": 1787736995.090989, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 9.1, "tokens_ein": 310, "tokens_aus": 271}}
+{"ts": 1787736995.0911903, "kind": "simulation", "payload": {"goal": "Vorgeschlagene Fähigkeiten ausprobieren", "verdict": "go", "risks": 2, "revisions": 2}}
+{"ts": 1787736995.0913143, "kind": "swarm_finished", "payload": {"goal": "Vorgeschlagene Fähigkeiten ausprobieren", "score": 2, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787736995.0915327, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten ausprobieren", "score": 2, "converged": false}}
+{"ts": 1787736995.2217145, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
+{"ts": 1787736997.1636758, "kind": "issue_synced", "payload": {"issue": 140, "state": "open"}}
+{"ts": 1787737043.22945, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

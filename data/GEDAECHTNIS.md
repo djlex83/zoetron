@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9560 Fakten** · Stand 2026-09-02 09:34 UTC · aktualisiert bei jedem Herzschlag
+**9565 Fakten** · Stand 2026-09-02 09:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5130
+- **dream:** 5135
 - **swarm_artifact:** 2051
 - **last_swarm_critique:** 695
 - **anti_pattern:** 607
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902094113:5:2ac090`
+*02.09. 09:41 UTC · Quelle: dream*
+
+Drive goals correctly identify systemic issues (model errors, stale knowledge, implementation gap) but lack automated execution loops to close them.
+
+### `dream:20260902094113:4:b437b5`
+*02.09. 09:41 UTC · Quelle: dream*
+
+Event pruning (38 events/run) without fact pruning suggests experience accumulation outpaces knowledge distillation, risking memory bloat.
+
+### `dream:20260902094113:3:dcee64`
+*02.09. 09:41 UTC · Quelle: dream*
+
+The system successfully self-implemented proposed skills via reflex-driven hand action, proving autonomous capability deployment works end-to-end.
+
+### `dream:20260902094113:2:721c7d`
+*02.09. 09:41 UTC · Quelle: dream*
+
+Free-tier models exhibit high failure rates (429, 502) and latency variance (12-20s), making them unreliable for production workloads.
+
+### `dream:20260902094113:1:f175d3`
+*02.09. 09:41 UTC · Quelle: dream*
+
+OpenRouter gateway creates a single point of failure causing correlated 429 errors across all routed models simultaneously.
 
 ### `dream:20260902093251:5:66f595`
 *02.09. 09:32 UTC · Quelle: dream*
