@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9607 Fakten** · Stand 2026-09-02 10:58 UTC · aktualisiert bei jedem Herzschlag
+**9612 Fakten** · Stand 2026-09-02 11:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5160
+- **dream:** 5165
 - **swarm_artifact:** 2059
 - **last_swarm_critique:** 697
 - **anti_pattern:** 609
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902110427:5:6032ea`
+*02.09. 11:04 UTC · Quelle: dream*
+
+A single successful model response does not establish provider reliability—sustained health scoring across multiple requests is required to distinguish transient recovery from genuine availability.
+
+### `dream:20260902110427:4:26e456`
+*02.09. 11:04 UTC · Quelle: dream*
+
+The evolution loop allows regression disguised as improvement when it lacks monotonic score-continuity enforcement across cycles.
+
+### `dream:20260902110427:3:2b409d`
+*02.09. 11:04 UTC · Quelle: dream*
+
+Unused analytical assets represent a compounding opportunity cost because their insights never feed the skill evolution loop.
+
+### `dream:20260902110427:2:ff49cc`
+*02.09. 11:04 UTC · Quelle: dream*
+
+Silent failures in hand_actions occur when pre-execution validation of file existence and data availability is skipped, leaving errors undetected.
+
+### `dream:20260902110427:1:23dd11`
+*02.09. 11:04 UTC · Quelle: dream*
+
+Provider rate limits are a structural constraint, not an isolated incident—any single-model dependency will repeatedly fail without a health-scored routing registry.
 
 ### `dream:20260902105633:5:adbcc1`
 *02.09. 10:56 UTC · Quelle: dream*

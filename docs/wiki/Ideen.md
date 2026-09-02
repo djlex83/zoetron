@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 10:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 11:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A single successful model response does not establish provider reliability—sustained health scoring across multiple requests is required to distinguis
+- The evolution loop allows regression disguised as improvement when it lacks monotonic score-continuity enforcement across cycles.
+- Unused analytical assets represent a compounding opportunity cost because their insights never feed the skill evolution loop.
+- Silent failures in hand_actions occur when pre-execution validation of file existence and data availability is skipped, leaving errors undetected.
+- Provider rate limits are a structural constraint, not an isolated incident—any single-model dependency will repeatedly fail without a health-scored ro
 - Event pruning removed 96 entries while facts remained stable, indicating experience accumulates faster than distilled knowledge.
 - Calibration error of 2 cycles suggests the planner underestimates complexity when model latency varies.
 - The swarm converged in one cycle with score 9 despite multiple model failures, proving ensemble redundancy works.
@@ -51,11 +56,6 @@
 - System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which silently truncates work; tasks must check metabolism budget before 
 - Hand actions fail when using relative paths; all file operations must resolve against ZOETRON_DATA and sys.argv[1] to absolute paths before execution.
 - Rate limiting (429) and upstream errors (502) across multiple free models necessitate a managed fallback chain with health-aware routing instead of na
-- High metabolic stress (1.0) triggers conserve mode that caps task throughput, amplifying latency impact of slow fallback models.
-- Skill proposals accumulate without validation gates, leaving untested code candidates that cannot be trusted for production registration.
-- Organ-level diagnostics report clean while system-level model failures persist, revealing a monitoring blind spot between component and system health.
-- Hand actions fail when using relative paths instead of resolving against ZOETRON_DATA or sys.argv[1], causing silent zero-byte reads.
-- Rate limiting (429) affects multiple providers simultaneously, indicating systemic quota exhaustion rather than isolated provider failure.
 
 ---
 
