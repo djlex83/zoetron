@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9321 Fakten** · Stand 2026-09-02 02:29 UTC · aktualisiert bei jedem Herzschlag
+**9338 Fakten** · Stand 2026-09-02 02:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4970
-- **swarm_artifact:** 2007
-- **last_swarm_critique:** 687
-- **anti_pattern:** 599
-- **last_swarm_goal:** 435
-- **strategy:** 320
-- **tool:** 111
+- **dream:** 4975
+- **swarm_artifact:** 2013
+- **last_swarm_critique:** 688
+- **anti_pattern:** 601
+- **last_swarm_goal:** 436
+- **strategy:** 321
+- **tool:** 112
 - **hand_result:** 100
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktanalyse-endlich-nutzen`
+*02.09. 02:40 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse endlich nutzen'. Datei: data/tools/marktanalyse-endlich-nutzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich nut:2`
+*02.09. 02:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Declarative Pipeline-as-Code with Pluggable Stages - Pipeline defined entirely in a .pipeline.yaml (or JSONNet) specifying DAG of stages, their input/output schemas, and fallback mappings. A generic PipelineRunner (single bin
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Marktanalyse endlich nut:1`
+*02.09. 02:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Sourced CQRS Architecture - Separate write model (Commands: FetchMarketData, RunAnalysis, GenerateDecision) from read model (Projections: MarketSnapshot, AnalysisResult, DecisionLog). Event store (SQLite/PostgreSQL) per
+
+### `last_swarm_critique`
+*02.09. 02:39 UTC · Quelle: critic*
+
+score=5; issues=Drei lose, nicht integrierte Skripte statt zusammenhaengender Pipeline - jeder Block laeuft isoliert und ruft die anderen nicht auf; Die Entscheidungslogik nutzt oberflaechliche Heuristiken (Keyword-Zaehlung, willkuerliche Schwellenwerte wie /5
+
+### `last_swarm_goal`
+*02.09. 02:35 UTC · Quelle: system*
+
+Marktanalyse endlich nutzen
+
+### `dream:20260902023511:5:a5c504`
+*02.09. 02:35 UTC · Quelle: dream*
+
+Two swarm cycles with fixed roles (1 planner, 3 builders, 1 critic) are insufficient for converging on skill organization.
+
+### `dream:20260902023511:4:6f23ad`
+*02.09. 02:35 UTC · Quelle: dream*
+
+Event pruning removed 95 entries but extracted zero new facts, revealing a gap in automated knowledge distillation.
+
+### `dream:20260902023511:3:181f96`
+*02.09. 02:35 UTC · Quelle: dream*
+
+Nvidia Nemotron shows extreme latency variance (6–43 s) and intermittent 502s, indicating unstable upstream capacity.
+
+### `dream:20260902023511:2:3d9f80`
+*02.09. 02:35 UTC · Quelle: dream*
+
+The skill-clustering evolution stalled at 6/10 because similarity scoring was hardcoded instead of learned or configurable.
+
+### `dream:20260902023511:1:8fb043`
+*02.09. 02:35 UTC · Quelle: dream*
+
+Free-tier OpenRouter models consistently return 429 errors under load, making single-model reliance infeasible for production workflows.
 
 ### `dream:20260902022750:5:ea6903`
 *02.09. 02:27 UTC · Quelle: dream*

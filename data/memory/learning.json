@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 02:28:12",
+ "stand": "2026-09-02 02:40:24",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -61,6 +55,12 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
@@ -99,12 +99,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -135,8 +129,8 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 1,
+   "tool": "marktanalyse-endlich-umsetzen.py",
+   "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -187,6 +181,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
@@ -261,12 +261,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -321,21 +315,21 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.73,
+ "haende_quote": 0.729,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 31,
   "best": 9.0,
-  "schnitt": 5.74
+  "schnitt": 5.65
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 25,
-   "schnitt": 5.8
-  },
   "bau": {
    "n": 5,
    "schnitt": 5.0
+  },
+  "analyse": {
+   "n": 25,
+   "schnitt": 5.68
   }
  }
 }
