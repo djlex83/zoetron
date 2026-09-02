@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9338 Fakten** · Stand 2026-09-02 02:41 UTC · aktualisiert bei jedem Herzschlag
+**9343 Fakten** · Stand 2026-09-02 03:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 4975
+- **dream:** 4980
 - **swarm_artifact:** 2013
 - **last_swarm_critique:** 688
 - **anti_pattern:** 601
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902030932:5:751150`
+*02.09. 03:09 UTC · Quelle: dream*
+
+During resource-constrained metabolic states, speculative and low-value work should be collapsed or skipped entirely to preserve system capacity.
+
+### `dream:20260902030932:4:5fdb5f`
+*02.09. 03:09 UTC · Quelle: dream*
+
+Relative-path dependencies in file operations cause intermittent, environment-sensitive failures that are eliminated only by anchoring all paths to environment variables.
+
+### `dream:20260902030932:3:49bc28`
+*02.09. 03:09 UTC · Quelle: dream*
+
+The structural gap between proposal generation and proposal execution undermines system evolution and must be closed with measurable convergence thresholds.
+
+### `dream:20260902030932:2:18d0db`
+*02.09. 03:09 UTC · Quelle: dream*
+
+Exit code 0 from hand actions is an unreliable success signal — silent failures occur when expected files or data are not actually created or modified.
+
+### `dream:20260902030932:1:00a0df`
+*02.09. 03:09 UTC · Quelle: dream*
+
+OpenRouter 429 rate-limiting is a systemic, recurring failure mode that demands proactive failover to direct model endpoints rather than retry-based recovery.
 
 ### `tool:marktanalyse-endlich-nutzen`
 *02.09. 02:40 UTC · Quelle: hands*
