@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 00:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,15 +25,15 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
-- Marktanalyse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning operates at low throughput (1 event/cycle), risking accumulation of stale model-performance beliefs.
+- Self-diagnosis reports no internal organ errors while external model failures dominate, indicating monitoring blind spots for dependency health.
+- Reflex-driven hebbian learning on model failure graphs enables autonomous adaptation but requires executable code artifacts to be effective.
+- Proposed resilience skills (router, fallback, latency-aware selection) remain unimplemented, creating a gap between diagnosis and cure.
+- Free-tier model APIs exhibit pervasive rate-limiting (429) and upstream overload (502), making single-model reliance unreliable.
 - Replaying recorded 429/502/timeout traces in a simulation harness catches regressions before deployment.
 - Hybrid routing—fast local reflexes for routine work, external LLMs only for complex reasoning—reduces external dependency surface.
 - Circuit breakers that quarantine failing models for cooldown periods preserve system throughput during partial outages.
@@ -51,11 +56,6 @@
 - Strategic drive goals (market analysis utilization, knowledge refresh) remain stale despite existing strategies, revealing a missing trigger mechanism
 - Multiple independent skill proposals converge on the same resilience patterns (health registry, deployment automaton, circuit breaker, budget allocato
 - External model APIs are the single point of failure: repeated 429/502 errors across three providers show no circuit breaker, fallback routing, or rate
-- Event pruning (43 events) ran while fact pruning found 0 facts, indicating memory pressure comes from event logs, not the knowledge base.
-- The critic's verdict 'LAEUFT NICH' (sandbox failure) on the previous attempt was not resolved by the evolution run, meaning sandbox validation is not 
-- Latency on the healthy model varied 4.5x (7.6s to 34.6s) with no adaptive routing or timeout handling, suggesting latency-based health scoring is miss
-- The goal 'Vergessenes Wissen regelmäßig auffrischen' scored only 2/10 and did not converge despite evolution (winner 9/10) and 5 simulation revisions,
-- glm-5.2:free failed with 429 rate-limit errors on 5 consecutive calls while nemotron-3-ultra remained healthy, indicating persistent endpoint-specific
 
 ---
 

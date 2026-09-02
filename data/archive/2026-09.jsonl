@@ -948,3 +948,122 @@
 {"ts": 1787703467.2447486, "kind": "skill_proposal", "payload": {"proposal": "For the 'two model errors' goal, define error detection criteria beyond ok-flag: flag calls exceeding 3x median latency or 2x median output tokens as anomalous for root-cause analysis."}}
 {"ts": 1787703467.2448015, "kind": "skill_proposal", "payload": {"proposal": "Route the parked Exemplar-Bank whisper to an explicit creator-decision queue entry with its 3 failed attempts attached, freeing it from automatic retry loops."}}
 {"ts": 1787703467.2448575, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787703474.912436, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 6.3, "tokens_ein": 467, "tokens_aus": 229}}
+{"ts": 1787703474.9126267, "kind": "drive_goal", "payload": {"title": "Gründe für die acht Modellfehler finden", "why": "Das System hat mehrfach Fehler gemacht, wenn es Dinge vorherzusagen versucht. Wenn wir verstehen, warum das passiert, wird es zuverlässiger.", "signal": "failure"}}
+{"ts": 1787703474.91271, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten endlich ausprobieren", "why": "Es liegen schon 30 neue Fähigkeits-Vorschläge herum, aber kaum einer wurde getestet. Ausprobieren zeigt, welche davon wirklich nützlich sind.", "signal": "gap"}}
+{"ts": 1787703474.9127853, "kind": "drive_goal", "payload": {"title": "Alten Traum mit Organfehler verbinden", "why": "Ein alter Traum und ein aktueller Organfehler passen seltsam gut zusammen, wurden aber nie verglichen. Das Verbinden könnte ein verstecktes Problem früh aufdecken.", "signal": "combination"}}
+{"ts": 1787703476.0487056, "kind": "whisper_geparkt", "payload": {"title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "versuche": 3, "grund": "nach 3 Versuchen ohne Konvergenz geparkt - braucht eine Entscheidung des Erschaffers"}}
+{"ts": 1787703478.3378656, "kind": "drive_whisper", "payload": {"title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "why": "Der Meilenstein: Lernen erreicht die Gewichte. Bereite alles vor, damit der Erschaffer ein kleines Modell (0.5 bis 3 Milliarden Parameter) per LoRA (kleines Zusatz-Training statt Volltraining) auf dem Destillat trainieren kann: fertiges Trainingsskript + Konfiguration + Schritt-für-Schritt-Anleitung", "geerbt": false, "auftrag_zeichen": 849, "versuch": 1}}
+{"ts": 1787703478.8856947, "kind": "swarm_started", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)"}}
+{"ts": 1787703485.155069, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787703485.967212, "kind": "metabolism_check", "payload": {"stress": 0.712, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787703560.9826863, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787703575.4956472, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 89.3, "tokens_ein": 2352, "tokens_aus": 4329}}
+{"ts": 1787703578.7279055, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 15.2, "tokens_ein": 1425, "tokens_aus": 455}}
+{"ts": 1787703578.7284987, "kind": "skill_proposal", "payload": {"proposal": "Add automatic retry with exponential backoff plus rotation through at least two backup providers when a model call returns 429, before surfacing a failure."}}
+{"ts": 1787703578.7285576, "kind": "skill_proposal", "payload": {"proposal": "Insert a pre-flight syntax/import check (e.g., py_compile or dry-run) immediately after code generation so broken artifacts fail fast and cheaply before full evaluation."}}
+{"ts": 1787703578.7286148, "kind": "skill_proposal", "payload": {"proposal": "Apply a calibration correction factor to confidence predictions: multiply predicted scores by the rolling ratio of actual/predicted from the last N goals."}}
+{"ts": 1787703578.728669, "kind": "skill_proposal", "payload": {"proposal": "Enforce a 'one proposal must be tested per cycle' rule drawn FIFO from the proposal backlog, converting stored ideas into verified skills at a fixed rate."}}
+{"ts": 1787703578.728727, "kind": "skill_proposal", "payload": {"proposal": "Route any item failing 3 attempts directly to a creator-decision queue with a one-line summary of what was tried, replacing indefinite park-and-retry."}}
+{"ts": 1787703578.7287831, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787703578.8164797, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.2, "tokens_ein": 601, "tokens_aus": 76}}
+{"ts": 1787703588.2137628, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 8.1, "tokens_ein": 478, "tokens_aus": 236}}
+{"ts": 1787703588.213939, "kind": "drive_goal", "payload": {"title": "Fehler bei den Modellen verstehen und beheben", "why": "Es gab mehrere Fehlversuche bei den Modellen. Wenn wir herausfinden, warum das passiert, funktioniert alles zuverlässiger.", "signal": "failure"}}
+{"ts": 1787703588.2140162, "kind": "drive_goal", "payload": {"title": "Mehr gute Ideen wirklich ausprobieren", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber nur wenige wurden tatsächlich umgesetzt. Wir sollten mehr davon in die Praxis testen.", "signal": "gap"}}
+{"ts": 1787703588.2140815, "kind": "drive_goal", "payload": {"title": "Simulationen und Träume besser verbinden", "why": "Viele Simulationen und Träume wurden gemacht, aber nur wenige halfen bei echten Aufgaben. Wenn wir beides zusammenbringen, lernen wir schneller.", "signal": "combination"}}
+{"ts": 1787703589.3235257, "kind": "drive_whisper", "payload": {"title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "why": "Der Meilenstein: Lernen erreicht die Gewichte. Bereite alles vor, damit der Erschaffer ein kleines Modell (0.5 bis 3 Milliarden Parameter) per LoRA (kleines Zusatz-Training statt Volltraining) auf dem Destillat trainieren kann: fertiges Trainingsskript + Konfiguration + Schritt-für-Schritt-Anleitung", "geerbt": false, "auftrag_zeichen": 849, "versuch": 1}}
+{"ts": 1787703589.9481478, "kind": "swarm_started", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)"}}
+{"ts": 1787703591.1518543, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.2, "tokens_ein": 243, "tokens_aus": 381}}
+{"ts": 1787703591.1520395, "kind": "simulation", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "verdict": "go", "risks": 2, "revisions": 0}}
+{"ts": 1787703596.4485834, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787703597.2964337, "kind": "metabolism_check", "payload": {"stress": 0.682, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787703664.4163067, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 67.0, "tokens_ein": 2224, "tokens_aus": 3199}}
+{"ts": 1787703668.12994, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.6, "tokens_ein": 601, "tokens_aus": 73}}
+{"ts": 1787703683.0902085, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 14.8, "tokens_ein": 243, "tokens_aus": 641}}
+{"ts": 1787703683.0904255, "kind": "simulation", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1787703683.0905302, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787703709.0466433, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 117.8, "tokens_ein": 2868, "tokens_aus": 5587}}
+{"ts": 1787703709.1650481, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
+{"ts": 1787703709.1652281, "kind": "tor", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "gruen": false, "grund": "Artefakt laeuft nicht:   File \"/workspace/zoetron/data/hands_workspace/action_1787703709139.py\", line 357\n    ANLEITUNG_MD = \"\"\"\\\n             ", "zyklus": 1}}
+{"ts": 1787703729.6074376, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 20.4, "tokens_ein": 4029, "tokens_aus": 599}}
+{"ts": 1787703729.6079452, "kind": "calibration", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "predicted": 3, "actual": 5, "abs_error": 2}}
+{"ts": 1787703729.608021, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 5}}
+{"ts": 1787703729.6084807, "kind": "bahnen", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 5, "abgerufen": 10, "ids": ["f:7036385bb786", "f:23151e73bd55", "f:d1e79f36ba38", "f:27169a256dac", "f:c18990636129", "f:8c555a3201fe", "f:ec256936e0cf", "f:fea18c93a567", "f:3f8638f18a1f", "f:d14f14bb9e43"], "ziel_id": "g:22863b9f5def"}}
+{"ts": 1787703749.7902505, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 20.2, "tokens_ein": 194, "tokens_aus": 597}}
+{"ts": 1787703750.0845268, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787703750.0845237, "schalter_geoeffnet": false}}
+{"ts": 1787703750.475443, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787703750.475441, "schalter_geoeffnet": false}}
+{"ts": 1787703814.9471433, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 131.8, "tokens_ein": 2929, "tokens_aus": 5968}}
+{"ts": 1787703814.9495566, "kind": "tor", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "gruen": false, "grund": "Artefakt laeuft nicht: Code zu lang: 20045 Zeichen > 20000. NICHT gekappt ausgefuehrt - ein Schnitt mitten im Code faellt am Syntaxfehler durch", "zyklus": 1}}
+{"ts": 1787703828.696732, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 13.6, "tokens_ein": 3976, "tokens_aus": 382}}
+{"ts": 1787703828.6974568, "kind": "calibration", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "predicted": 3, "actual": 1, "abs_error": 2}}
+{"ts": 1787703828.697537, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 1}}
+{"ts": 1787703835.0848248, "kind": "bahnen", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "delta": -0.5, "kanten": 0, "hat_code": true, "score": 1, "abgerufen": 8, "ids": ["f:7036385bb786", "f:23151e73bd55", "f:d1e79f36ba38", "f:27169a256dac", "f:4a08ae2270c9", "f:6eb790d47316", "f:a0fa542c0608", "f:bf2d210ffb5c"], "ziel_id": "g:22863b9f5def"}}
+{"ts": 1787703843.4514995, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 93.0, "tokens_ein": 599, "tokens_aus": 1274}}
+{"ts": 1787703843.4517918, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)\nCritic issues: Critic ", "variants": 3, "winner_index": 1, "scores": [7, 9, 6]}}
+{"ts": 1787703862.6905272, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.9, "tokens_ein": 598, "tokens_aus": 47}}
+{"ts": 1787703874.8990607, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 39.8, "tokens_ein": 307, "tokens_aus": 971}}
+{"ts": 1787703883.970501, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 21.2, "tokens_ein": 243, "tokens_aus": 840}}
+{"ts": 1787703883.9707358, "kind": "simulation", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "verdict": "revise", "risks": 3, "revisions": 2}}
+{"ts": 1787703883.9708495, "kind": "simulation_applied", "payload": {"revisions": 2}}
+{"ts": 1787703883.9709442, "kind": "swarm_finished", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787703883.9711483, "kind": "act_done", "payload": {"goal_title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "score": 5, "converged": false}}
+{"ts": 1787703884.095861, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.02}}
+{"ts": 1787703886.093889, "kind": "issue_synced", "payload": {"issue": 117, "state": "open"}}
+{"ts": 1787703886.474365, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.6, "tokens_ein": 933, "tokens_aus": 399}}
+{"ts": 1787703886.4746726, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 1/10. Goal: Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)\nCritic issues: Sandbox", "variants": 3, "winner_index": 2, "scores": [7, 5, 9]}}
+{"ts": 1787703893.0996509, "kind": "recall", "payload": {"keys": ["hand_result:Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)"]}}
+{"ts": 1787703896.2083194, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 2.2, "tokens_ein": 598, "tokens_aus": 44}}
+{"ts": 1787703907.3524961, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 11.0, "tokens_ein": 432, "tokens_aus": 399}}
+{"ts": 1787703907.3526783, "kind": "simulation", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "verdict": "go", "risks": 3, "revisions": 2}}
+{"ts": 1787703907.3527937, "kind": "swarm_finished", "payload": {"goal": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "score": 1, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1787703907.3529696, "kind": "act_done", "payload": {"goal_title": "Lokaler Schüler: das erste Mal lernt das Gehirn selbst (LoRA)", "score": 1, "converged": false}}
+{"ts": 1787703908.8235605, "kind": "issue_synced", "payload": {"issue": 117, "state": "open"}}
+{"ts": 1787703943.2957883, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787704326.3579793, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787704329.372017, "kind": "model_fail", "payload": {"model": "stealth/ox-alpha", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787704329.372014, "schalter_geoeffnet": false}}
+{"ts": 1787704330.275051, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787704330.2750487, "schalter_geoeffnet": false}}
+{"ts": 1787704330.8360734, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1787704330.8360715, "schalter_geoeffnet": false}}
+{"ts": 1787704330.958807, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787704330.9588048, "schalter_geoeffnet": false}}
+{"ts": 1787704331.0613961, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787704331.0613935, "schalter_geoeffnet": false}}
+{"ts": 1787704437.0631664, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3.5-lightning:free", "latency_s": 106.0, "tokens_ein": 1621, "tokens_aus": 3932}}
+{"ts": 1787704437.0637252, "kind": "skill_proposal", "payload": {"proposal": "Replace fixed calibration targets with an adaptive offset that tracks and corrects the predicted‑vs‑actual gap in real time, eliminating the persistent 3‑unit underestimate."}}
+{"ts": 1787704437.0637958, "kind": "skill_proposal", "payload": {"proposal": "Implement latency‑tiered model routing: infer <20s instantly, batch or defer >40s to off‑peak cycles, and flag 20‑40s for resource‑investigation before reuse."}}
+{"ts": 1787704437.0638547, "kind": "skill_proposal", "payload": {"proposal": "Add a convergence gate to evolution/swarm runs: halt after 2 cycles at 6/10, auto‑retrospect calibration error and latency distribution, then trigger a targeted model or parameter swap."}}
+{"ts": 1787704437.0639257, "kind": "skill_proposal", "payload": {"proposal": "Standardize hand‑action logs to include duration, exit code, and command arguments, enabling automatic correlation with “push kurz” and other infrastructure diagnostics."}}
+{"ts": 1787704437.0639849, "kind": "skill_proposal", "payload": {"proposal": "Institutionalize a monthly replay-consolidation ritual that executes the oldest pending skill proposal in sandbox mode, turning adoption from aspiration into a scheduled, validated obligation."}}
+{"ts": 1787704437.0640433, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787704445.825214, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 7.3, "tokens_ein": 466, "tokens_aus": 230}}
+{"ts": 1787704445.8253984, "kind": "drive_goal", "payload": {"title": "Häufige Modellfehler untersuchen und beheben", "why": "Das System macht oft Fehler bei seinen Vorhersagen. Wenn wir herausfinden, warum, wird es zuverlässiger.", "signal": "failure"}}
+{"ts": 1787704445.8254757, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten tatsächlich ausprobieren", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber fast keine wurden benutzt. Wir sollten testen, ob sie wirklich helfen.", "signal": "gap"}}
+{"ts": 1787704445.8255436, "kind": "drive_goal", "payload": {"title": "Simulationen besser mit echten Handlungen verbinden", "why": "Nur die Hälfte der Übungs-Durchläufe wurde wirklich angewendet. So lernt das System aus dem Üben mehr für die Praxis.", "signal": "stale"}}
+{"ts": 1787704446.9848454, "kind": "drive_whisper", "payload": {"title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig ", "geerbt": false, "auftrag_zeichen": 462, "versuch": 4}}
+{"ts": 1787704447.4543226, "kind": "swarm_started", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial"}}
+{"ts": 1787704453.70645, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787704454.459371, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787704478.5776234, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 23.9, "tokens_ein": 2101, "tokens_aus": 803}}
+{"ts": 1787704482.5949051, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 3.9, "tokens_ein": 611, "tokens_aus": 61}}
+{"ts": 1787704506.3846576, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 23.7, "tokens_ein": 641, "tokens_aus": 913}}
+{"ts": 1787704506.3849273, "kind": "simulation", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787704506.3850884, "kind": "simulation_applied", "payload": {"revisions": 4}}
+{"ts": 1787704565.3010824, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 58.8, "tokens_ein": 2805, "tokens_aus": 2869}}
+{"ts": 1787704598.5303843, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 33.2, "tokens_ein": 3101, "tokens_aus": 1871}}
+{"ts": 1787704663.9082358, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 65.4, "tokens_ein": 3552, "tokens_aus": 3556}}
+{"ts": 1787704664.044931, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.03}}
+{"ts": 1787704664.0687175, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.02}}
+{"ts": 1787704664.0928326, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.02}}
+{"ts": 1787704664.0930443, "kind": "tor", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "gruen": false, "grund": "Artefakt laeuft nicht:   File \"/workspace/zoetron/data/hands_workspace/action_1787704664018.py\", line 17\n    from __future__ import annotations |   File \"/workspace/zoetron/data/hands_workspace/action", "zyklus": 1}}
+{"ts": 1787704697.656135, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 33.5, "tokens_ein": 7939, "tokens_aus": 1009}}
+{"ts": 1787704697.6573198, "kind": "calibration", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "predicted": 5, "actual": 1, "abs_error": 4}}
+{"ts": 1787704697.6574323, "kind": "model_score", "payload": {"model": "stealth/ox-alpha", "score": 1}}
+{"ts": 1787704703.792198, "kind": "bahnen", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "delta": -0.5, "kanten": 0, "hat_code": true, "score": 1, "abgerufen": 8, "ids": ["f:9f9656eb2b9a", "f:42250296337c", "f:645af2bf5750", "f:fea18c93a567", "f:c85572885e79", "f:f7b27df216a9", "f:ebb00d909776", "f:1dfb7b7d0914"], "ziel_id": "g:3f62adc5e2ab"}}
+{"ts": 1787704731.2088313, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 27.4, "tokens_ein": 308, "tokens_aus": 816}}
+{"ts": 1787704743.6001282, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 12.4, "tokens_ein": 876, "tokens_aus": 424}}
+{"ts": 1787704743.6005714, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 1/10. Goal: Destillat-Datensatz: Gedächtnis wird Trainingsmaterial\nCritic issues: SANDBOX-URTEIL", "variants": 3, "winner_index": 1, "scores": [7, 9, 8]}}
+{"ts": 1787704753.4939141, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 2.5, "tokens_ein": 610, "tokens_aus": 67}}
+{"ts": 1787704780.4491842, "kind": "model_ok", "payload": {"model": "stealth/ox-alpha", "latency_s": 26.8, "tokens_ein": 647, "tokens_aus": 897}}
+{"ts": 1787704780.4493694, "kind": "simulation", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "verdict": "go", "risks": 5, "revisions": 5}}
+{"ts": 1787704780.4494822, "kind": "swarm_finished", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "score": 1, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787704780.4496875, "kind": "act_done", "payload": {"goal_title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "score": 1, "converged": false}}
+{"ts": 1787704780.5571465, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.02}}
+{"ts": 1787704782.5221448, "kind": "issue_synced", "payload": {"issue": 101, "state": "open"}}
+{"ts": 1787704817.9013388, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
