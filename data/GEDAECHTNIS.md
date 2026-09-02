@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9947 Fakten** · Stand 2026-09-02 20:32 UTC · aktualisiert bei jedem Herzschlag
+**9952 Fakten** · Stand 2026-09-02 20:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5390
+- **dream:** 5395
 - **swarm_artifact:** 2125
 - **last_swarm_critique:** 708
 - **anti_pattern:** 617
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902203803:5:3e350a`
+*02.09. 20:38 UTC · Quelle: dream*
+
+Relying on multiple model providers (z-ai, nvidia, google, inclusionai) provides necessary redundancy against individual provider outages.
+
+### `dream:20260902203803:4:df3ac8`
+*02.09. 20:38 UTC · Quelle: dream*
+
+Simulations are effective for identifying risks and generating revisions before committing to an artifact.
+
+### `dream:20260902203803:3:84d3b8`
+*02.09. 20:38 UTC · Quelle: dream*
+
+Latency for free models can be extremely high (up to 124s), which must be accounted for in timeout handling.
+
+### `dream:20260902203803:2:ebe005`
+*02.09. 20:38 UTC · Quelle: dream*
+
+High stress and conserve mode limit task budget, but the system successfully completed a single cycle by relying on alternative models when primary ones failed.
+
+### `dream:20260902203803:1:1d2dc5`
+*02.09. 20:38 UTC · Quelle: dream*
+
+Free models on OpenRouter are highly unreliable due to rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 
 ### `dream:20260902203040:5:f629d9`
 *02.09. 20:30 UTC · Quelle: dream*
