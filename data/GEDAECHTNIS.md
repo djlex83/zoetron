@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**9891 Fakten** · Stand 2026-09-02 18:58 UTC · aktualisiert bei jedem Herzschlag
+**9896 Fakten** · Stand 2026-09-02 19:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5355
+- **dream:** 5360
 - **swarm_artifact:** 2113
 - **last_swarm_critique:** 706
 - **anti_pattern:** 615
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260902190448:5:867781`
+*02.09. 19:04 UTC · Quelle: dream*
+
+Fifty skill proposals exist without validation lifecycle, creating proposal debt that clogs planning and prevents proven capabilities from emerging.
+
+### `dream:20260902190448:4:24a896`
+*02.09. 19:04 UTC · Quelle: dream*
+
+Model failure rate of 57% (63 failures vs 47 successes) exceeds reliability thresholds for any production workload, requiring systemic mitigation not per-model fixes.
+
+### `dream:20260902190448:3:94f081`
+*02.09. 19:04 UTC · Quelle: dream*
+
+Swarm execution evolved but failed to converge (score 1, converged=false), revealing missing termination criteria or insufficient reward signals for knowledge-update tasks.
+
+### `dream:20260902190448:2:ce536f`
+*02.09. 19:04 UTC · Quelle: dream*
+
+Fallback chains collapse when all configured models route through the same rate-limited gateway, making provider diversity meaningless without infrastructure awareness.
+
+### `dream:20260902190448:1:56cf9a`
+*02.09. 19:04 UTC · Quelle: dream*
+
+Correlated 429 errors across Google, Z.ai, and Nvidia providers indicate shared upstream rate-limiting infrastructure rather than independent provider failures.
 
 ### `dream:20260902185704:5:56ea11`
 *02.09. 18:57 UTC · Quelle: dream*

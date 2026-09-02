@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-02 18:57:18",
+ "stand": "2026-09-02 19:05:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -361,10 +361,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.731,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.735,
+ "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 32,
   "best": 9.0,

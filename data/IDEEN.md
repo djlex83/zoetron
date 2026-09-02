@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 18:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-02 19:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten echt umsetzen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalysen abschließen oder löschen *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich nutzen *(wieder aufgegriffen: 3×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fifty skill proposals exist without validation lifecycle, creating proposal debt that clogs planning and prevents proven capabilities from emerging.
+- Model failure rate of 57% (63 failures vs 47 successes) exceeds reliability thresholds for any production workload, requiring systemic mitigation not 
+- Swarm execution evolved but failed to converge (score 1, converged=false), revealing missing termination criteria or insufficient reward signals for k
+- Fallback chains collapse when all configured models route through the same rate-limited gateway, making provider diversity meaningless without infrast
+- Correlated 429 errors across Google, Z.ai, and Nvidia providers indicate shared upstream rate-limiting infrastructure rather than independent provider
 - The evolutionary approach shows promise (variant scores 5-9 vs baseline 1/10) but cannot realize gains while the underlying artifact remains non-funct
 - Hand actions fail uniformly with exit code 1 regardless of input size or duration, indicating a systemic tool-interface failure rather than an input p
 - Performance calibration is severely miscalibrated (predicted 7 vs actual 1, abs_error 6), meaning self-assessments cannot be trusted without recalibra
@@ -51,11 +56,6 @@
 - The swarm's self-chosen goal "understand frequent model errors" perfectly predicted the observed failure rate (calibration error 0), indicating accura
 - Automatic failover between providers eventually succeeds but incurs high latency variance (3.5–22.7s) and wastes cycles on repeated failures.
 - Free-tier model endpoints systematically fail with 429 rate limits and 502 upstream errors, making them unreliable as primary dependencies.
-- Hand-action (local tool) succeeded in 0.45 s with zero errors, confirming non-LLM steps as stable backbone when LLM layer degrades.
-- Metabolism state 'conserve' with max_tasks=3 and max_iterations=1 correctly throttled load, preventing cascade failures under high model error rates.
-- The swarm completed its goal (calibration error 0, tor grün) despite 70% model-call failures, proving resilience through model diversity and conservat
-- Nemotron-3-Ultra succeeds consistently but exhibits extreme latency variance (14–217 s), indicating queue-depth sensitivity rather than model failure.
-- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary workers.
 
 ---
 
