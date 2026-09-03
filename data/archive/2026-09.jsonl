@@ -7956,3 +7956,13 @@
 {"ts": 1787874297.1535556, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 59.1, "tokens_ein": 740, "tokens_aus": 867}}
 {"ts": 1787874297.1538718, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 5/10. Goal: Fertigkeiten wirklich ausprobieren nicht nur planen\nCritic issues: Artefakte laufen ", "variants": 3, "winner_index": 0, "scores": [9, 6, 4]}}
 {"ts": 1787874315.9761808, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787874315.9761782, "schalter_geoeffnet": false}}
+{"ts": 1787874395.2497182, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 79.3, "tokens_ein": 422, "tokens_aus": 1708}}
+{"ts": 1787874396.4549396, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787874396.454938, "schalter_geoeffnet": false}}
+{"ts": 1787874419.6352735, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 23.2, "tokens_ein": 452, "tokens_aus": 1000}}
+{"ts": 1787874419.6355946, "kind": "simulation", "payload": {"goal": "Fertigkeiten wirklich ausprobieren nicht nur planen", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1787874419.6357484, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787874419.6358876, "kind": "swarm_finished", "payload": {"goal": "Fertigkeiten wirklich ausprobieren nicht nur planen", "score": 5, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787874419.636208, "kind": "act_done", "payload": {"goal_title": "Fertigkeiten wirklich ausprobieren nicht nur planen", "score": 5, "converged": false}}
+{"ts": 1787874420.1865332, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 5}}
+{"ts": 1787874422.1750598, "kind": "issue_synced", "payload": {"issue": 171, "state": "open"}}
+{"ts": 1787874509.6220698, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

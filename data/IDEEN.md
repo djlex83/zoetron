@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goals are set reactively from failure/stale/gap signals rather than from a prioritized, proactive roadmap.
+- Simulation pipeline returns 'go' but flags 3 risks and requires 3 revisions, indicating a pattern of optimistic verdicts with hidden rework.
+- System stress at 1.0 triggers conserve mode, capping tasks to 3 and iterations to 1, which stalls multi-step operations.
+- Hand actions fail when using relative paths instead of resolving absolute paths via ZOETRON_DATA and sys.argv[1].
+- Free-tier model endpoints suffer pervasive 429 rate limits and 502 upstream overloads, making them unreliable for production workflows.
 - Hand actions fail silently when expected files/directories are missing, revealing absent pre-condition checks in tool wrappers.
 - Drive goals for 'reduce model errors', 'use stale analyses', and 'implement proposed skills' recur across cycles, indicating systemic gaps not resolve
 - Proposed skills accumulate in backlog without implementation because no gate enforces minimal viable artifact (sketch + smoke test) before acceptance.
@@ -51,11 +56,6 @@
 - Task completion without score measurement creates an illusion of progress — convergence detection without quality scoring cannot distinguish success f
 - API model failures are predictable, not random — repeated 429s from the same model require health-based routing with cooldown, not blind retry.
 - The system generates proposals faster than it implements them — the proposal-to-execution gap is the primary productivity bottleneck, not idea generat
-- Pruning discards events without validating fact extraction completeness, potentially losing training signal for entity/relation extractors.
-- Hand actions already emit structured telemetry (exit code, duration, stdout/stderr) but lack automatic retry with backoff for transient failures.
-- Self-improvement loops lack convergence detection, risking infinite cycles without measurable progress toward goals.
-- Multiple independent skill proposals converge on model routing, circuit breaking, and structured error telemetry, indicating a systemic gap in resilie
-- Rate-limited models (429 errors) repeatedly block primary execution paths, making automatic fallback with health scoring essential for reliability.
 
 ---
 

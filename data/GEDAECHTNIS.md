@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10886 Fakten** · Stand 2026-09-03 23:48 UTC · aktualisiert bei jedem Herzschlag
+**10891 Fakten** · Stand 2026-09-03 23:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6000
+- **dream:** 6005
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903235519:5:454738`
+*03.09. 23:55 UTC · Quelle: dream*
+
+Goals are set reactively from failure/stale/gap signals rather than from a prioritized, proactive roadmap.
+
+### `dream:20260903235519:4:dcb0e3`
+*03.09. 23:55 UTC · Quelle: dream*
+
+Simulation pipeline returns 'go' but flags 3 risks and requires 3 revisions, indicating a pattern of optimistic verdicts with hidden rework.
+
+### `dream:20260903235519:3:40b50f`
+*03.09. 23:55 UTC · Quelle: dream*
+
+System stress at 1.0 triggers conserve mode, capping tasks to 3 and iterations to 1, which stalls multi-step operations.
+
+### `dream:20260903235519:2:8a811f`
+*03.09. 23:55 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of resolving absolute paths via ZOETRON_DATA and sys.argv[1].
+
+### `dream:20260903235519:1:f668b2`
+*03.09. 23:55 UTC · Quelle: dream*
+
+Free-tier model endpoints suffer pervasive 429 rate limits and 502 upstream overloads, making them unreliable for production workflows.
 
 ### `dream:20260903234632:5:76443b`
 *03.09. 23:46 UTC · Quelle: dream*
