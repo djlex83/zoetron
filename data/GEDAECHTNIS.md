@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10110 Fakten** · Stand 2026-09-03 01:07 UTC · aktualisiert bei jedem Herzschlag
+**10115 Fakten** · Stand 2026-09-03 01:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5505
+- **dream:** 5510
 - **swarm_artifact:** 2149
 - **last_swarm_critique:** 712
 - **anti_pattern:** 625
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903011332:5:238443`
+*03.09. 01:13 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this cycle alone) but the "build proposed skills" goal remains stale, confirming a pattern of proposal generation without implementation follow-through.
+
+### `dream:20260903011332:4:4457c9`
+*03.09. 01:13 UTC · Quelle: dream*
+
+System operates at maximum stress (1.0) in conserve mode with severely limited budgets (max_tasks=3, max_iterations=1), causing premature termination of corrective actions like the model-error reduction swarm.
+
+### `dream:20260903011332:3:17be54`
+*03.09. 01:13 UTC · Quelle: dream*
+
+Reflex tools fail due to filesystem path resolution errors ("nichts gelesen - der Lauf endete mit 0"), showing that automation scripts assume incorrect working directories or data paths.
+
+### `dream:20260903011332:2:9bcecf`
+*03.09. 01:13 UTC · Quelle: dream*
+
+Three identical drive goals (reduce model errors, complete market analysis, build proposed skills) recur across cycles without convergence, revealing a persistent execution gap between intention and completion.
+
+### `dream:20260903011332:1:91c4b6`
+*03.09. 01:13 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating provider-specific quota exhaustion rather than systemic model failure.
 
 ### `dream:20260903010517:5:a34510`
 *03.09. 01:05 UTC · Quelle: dream*

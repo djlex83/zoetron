@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 01:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 01:13 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,13 +27,13 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5 in this cycle alone) but the "build proposed skills" goal remains stale, confirming a pattern of proposal generation wit
+- System operates at maximum stress (1.0) in conserve mode with severely limited budgets (max_tasks=3, max_iterations=1), causing premature termination 
+- Reflex tools fail due to filesystem path resolution errors ("nichts gelesen - der Lauf endete mit 0"), showing that automation scripts assume incorrec
+- Three identical drive goals (reduce model errors, complete market analysis, build proposed skills) recur across cycles without convergence, revealing 
+- The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating provider-specific quota exhaus
 - The recurring drive goal of reducing model errors across multiple sessions signals that error resilience is the highest-priority durable capability to
 - Event pruning removed 33 entries while preserving all facts, indicating a tiered retention strategy exists but its criteria and effectiveness need ref
 - Latency varies nearly fourfold between successful models (5.6s to 20.7s), meaning naive model selection wastes time and resources without latency-awar
@@ -51,11 +56,6 @@
 - Pruning 11 events with zero fact loss suggests aggressive event retention thresholds are safe for this workload.
 - Successful fallbacks to inclusionai/ling-3.0-flash-fin show smaller, specialized models can maintain availability when flagship models saturate.
 - Rate-limit errors (429) across multiple providers indicate systemic upstream congestion, not isolated model failures.
-- Hand-action execution (0.2s, exit 0) confirms the generated Python artifact is syntactically valid and runs without runtime errors.
-- Calibration error of 1 point (predicted 5 vs actual 6) suggests the risk estimator is well-calibrated but slightly pessimistic.
-- Evolutionary variant generation (3 variants) boosted score from 6 to 9, proving iterative refinement outperforms single-pass generation for complex an
-- Nemotron-3-Ultra shows high reliability but unpredictable latency (7-54s), making it unsuitable for time-critical paths without timeout guards.
-- Rate limiting (429 errors) affects multiple free-tier models simultaneously, indicating a shared infrastructure bottleneck rather than model-specific 
 
 ---
 
