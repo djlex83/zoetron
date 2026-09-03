@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 06:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,11 +29,11 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 39 events were pruned while zero facts survived pruning, suggesting the system retains raw event data too long and needs earlier compression into dura
+- The fallback model (nemotron-3-ultra) performed well with variable latency (10-60s), indicating that latency-aware routing is needed to optimize respo
+- Stale goals (Marktanalyse) accumulated across multiple cycles without action, revealing an execution-inertia pattern where completed analysis never tr
+- Reflex-based execution consistently converged tasks successfully, demonstrating that automated decision paths outperform manual goal-driven workflows 
+- Single-provider model dependency caused repeated 429 rate-limit failures, proving that provider diversity with automatic health-based fallback is esse
 - Cross-memory synthesis (recall + active drives) must be a first-class skill, not ad-hoc, to turn stale goals into testable procedures.
 - Simulation verdicts (go/risk/revision) are only valuable when automatically fed back into skill validation gates before deployment.
 - Retry budgets must be metabolically aware—reserving iteration capacity for rate-limit recovery prevents starvation of critical goals.
@@ -51,11 +56,6 @@
 - Multiple independent proposals converge on model routing, path validation, and simulation scaffolding – signaling architectural gaps.
 - Automatic fallback to nemotron succeeds but lacks health-aware routing (latency, error rates, cost tracking).
 - Repeated 429 errors on glm-5.2 reveal that single-model dependence creates systemic fragility under rate limits.
-- Simulation and planning overconfidence persists without calibration tracking, causing repeated execution surprises.
-- Skill proposals accumulate but rarely become implemented skills, revealing a missing promotion pipeline from proposal to production.
-- Reflex execution successfully completed a stale market-analysis goal, proving that lightweight deterministic tools unblock high-value work.
-- Multiple independent proposals for model routing indicate a systemic gap: no single owned component manages model reliability.
-- Recurring 429 errors from glm-5.2 require proactive health monitoring rather than reactive fallback after failure.
 
 ---
 

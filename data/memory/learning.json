@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 05:53:02",
+ "stand": "2026-09-03 06:12:17",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -379,6 +379,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-wirklich-testen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.69,

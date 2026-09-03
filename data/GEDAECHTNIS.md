@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10282 Fakten** · Stand 2026-09-03 05:54 UTC · aktualisiert bei jedem Herzschlag
+**10287 Fakten** · Stand 2026-09-03 06:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5610
+- **dream:** 5615
 - **swarm_artifact:** 2187
 - **last_swarm_critique:** 719
 - **anti_pattern:** 631
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903061120:5:d7345a`
+*03.09. 06:11 UTC · Quelle: dream*
+
+39 events were pruned while zero facts survived pruning, suggesting the system retains raw event data too long and needs earlier compression into durable facts.
+
+### `dream:20260903061120:4:b036d1`
+*03.09. 06:11 UTC · Quelle: dream*
+
+The fallback model (nemotron-3-ultra) performed well with variable latency (10-60s), indicating that latency-aware routing is needed to optimize response time under varying load.
+
+### `dream:20260903061120:3:2326ec`
+*03.09. 06:11 UTC · Quelle: dream*
+
+Stale goals (Marktanalyse) accumulated across multiple cycles without action, revealing an execution-inertia pattern where completed analysis never triggers downstream decisions.
+
+### `dream:20260903061120:2:950e6b`
+*03.09. 06:11 UTC · Quelle: dream*
+
+Reflex-based execution consistently converged tasks successfully, demonstrating that automated decision paths outperform manual goal-driven workflows under stress.
+
+### `dream:20260903061120:1:aa54b6`
+*03.09. 06:11 UTC · Quelle: dream*
+
+Single-provider model dependency caused repeated 429 rate-limit failures, proving that provider diversity with automatic health-based fallback is essential for system reliability.
 
 ### `last_swarm_critique`
 *03.09. 05:52 UTC · Quelle: critic*
