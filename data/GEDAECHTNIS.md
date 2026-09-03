@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10314 Fakten** · Stand 2026-09-03 06:54 UTC · aktualisiert bei jedem Herzschlag
+**10319 Fakten** · Stand 2026-09-03 07:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5630
+- **dream:** 5635
 - **swarm_artifact:** 2193
 - **last_swarm_critique:** 720
 - **anti_pattern:** 633
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903070134:5:76068c`
+*03.09. 07:01 UTC · Quelle: dream*
+
+Proposed skills remain unimplemented because the system lacks a mandatory validation loop that tests and deploys skill proposals automatically.
+
+### `dream:20260903070134:4:05b38b`
+*03.09. 07:01 UTC · Quelle: dream*
+
+High latency variance (8s–44s) for the same model indicates unreliable performance that requires composite scoring (latency × availability × cost) for routing decisions.
+
+### `dream:20260903070134:3:98c82d`
+*03.09. 07:01 UTC · Quelle: dream*
+
+Stale goals persist indefinitely without an automatic forcing mechanism, creating execution inertia that accumulates across cycles.
+
+### `dream:20260903070134:2:9949e8`
+*03.09. 07:01 UTC · Quelle: dream*
+
+Reactive error handling without proactive quota tracking and circuit breaking causes repeated 429 failures that could be avoided by distributing load across providers.
+
+### `dream:20260903070134:1:da3ffc`
+*03.09. 07:01 UTC · Quelle: dream*
+
+Concentrating all model calls through a single API gateway (OpenRouter) creates a systemic rate-limit bottleneck that cascades across all providers simultaneously.
 
 ### `dream:20260903065237:5:a4d0be`
 *03.09. 06:52 UTC · Quelle: dream*

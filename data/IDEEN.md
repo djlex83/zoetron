@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 06:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 07:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proposed skills remain unimplemented because the system lacks a mandatory validation loop that tests and deploys skill proposals automatically.
+- High latency variance (8s–44s) for the same model indicates unreliable performance that requires composite scoring (latency × availability × cost) for
+- Stale goals persist indefinitely without an automatic forcing mechanism, creating execution inertia that accumulates across cycles.
+- Reactive error handling without proactive quota tracking and circuit breaking causes repeated 429 failures that could be avoided by distributing load 
+- Concentrating all model calls through a single API gateway (OpenRouter) creates a systemic rate-limit bottleneck that cascades across all providers si
 - Swarm convergence succeeds in 1 cycle with role distribution but collapses when model availability drops below threshold.
 - Hand actions fail intermittently (exit=1) without error payloads, making debugging and retry logic impossible.
 - Calibration predicted 1 but actual was 8 (7x error), revealing broken estimation heuristics for task complexity.
@@ -51,11 +56,6 @@
 - Relative file paths in hand_action fail to resolve under the real data path; absolute path resolution must be enforced before any read attempt.
 - Under conserve mode (stress=1.0, max_iterations=1), the system lacks the retry budget to self-recover from transient API failures, creating a deadlock
 - 429 Too Many Requests errors are systemic across nearly all free-tier models, making exponential backoff with model rotation the primary recovery mech
-- Simulation-to-practice gap persists because simulator validation lacks adversarial counterfactuals that expose high-score-but-fails-execution cases.
-- Pruning removes 30-40 events per cycle yet stale drive goals (market analysis) persist, indicating pruning targets noise not strategic backlog.
-- Multiple duplicate skill proposals for model routing reveal a coordination gap: proposals are generated but not deduplicated or promoted to production
-- Reflex-based error fixing converges quickly but only addresses symptoms; the root cause (model instability) persists across cycles.
-- Consistent 429 errors on z-ai/glm-5.2:free indicate hard rate limits requiring proactive model routing rather than reactive fallback.
 
 ---
 

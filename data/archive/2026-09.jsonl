@@ -5662,3 +5662,10 @@
 {"ts": 1787813529.6773536, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.21, "gelesen": 1}}
 {"ts": 1787813529.677867, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten aus Träumen nutzen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
 {"ts": 1787813530.0961285, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten aus Träumen nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787813601.1813586, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787813937.594572, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787813938.7692635, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787813941.9819472, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787813941.9819438, "schalter_geoeffnet": false}}
+{"ts": 1787813942.0973775, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787813942.0973744, "schalter_geoeffnet": false}}
+{"ts": 1787813942.2339065, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787813942.233904, "schalter_geoeffnet": false}}
+{"ts": 1787813942.5538754, "kind": "model_fail", "payload": {"model": "poolside/laguna-s-2.1:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787813942.5538712, "schalter_geoeffnet": false}}
