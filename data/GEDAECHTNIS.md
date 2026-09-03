@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10229 Fakten** · Stand 2026-09-03 04:42 UTC · aktualisiert bei jedem Herzschlag
+**10234 Fakten** · Stand 2026-09-03 04:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5575
+- **dream:** 5580
 - **swarm_artifact:** 2175
 - **last_swarm_critique:** 717
 - **anti_pattern:** 631
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903044913:5:12ca3a`
+*03.09. 04:49 UTC · Quelle: dream*
+
+Evolution optimizes for proxy metrics that don't transfer; winner variant scored 9-10 in evolution but 1 in reality.
+
+### `dream:20260903044913:4:f5afb4`
+*03.09. 04:49 UTC · Quelle: dream*
+
+Calibration error of 5 points (predicted 6 vs actual 1) reveals systemic overconfidence in planning estimates.
+
+### `dream:20260903044913:3:b16bb6`
+*03.09. 04:49 UTC · Quelle: dream*
+
+Artifact execution fails repeatedly due to sandbox environment issues (missing data dirs, tracebacks), not code logic errors.
+
+### `dream:20260903044913:2:6b8dac`
+*03.09. 04:49 UTC · Quelle: dream*
+
+Simulator scores (9-10) catastrophically diverge from real execution scores (1), indicating reward hacking or missing environment constraints in simulation.
+
+### `dream:20260903044913:1:76a742`
+*03.09. 04:49 UTC · Quelle: dream*
+
+Free-tier models (glm-5.2) consistently hit 429 rate limits, making them unreliable for primary workloads without a fallback chain.
 
 ### `dream:20260903044103:5:8699df`
 *03.09. 04:41 UTC · Quelle: dream*

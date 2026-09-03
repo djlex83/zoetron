@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 04:41:25",
+ "stand": "2026-09-03 04:50:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -201,12 +201,6 @@
    "quote": 0.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "fehlerquellen-systematisch-beheben.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -367,9 +361,15 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "schwarm-orchestrierung-vollständig-aufba.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.698,
+ "haende_quote": 0.7,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 33,

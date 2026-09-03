@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 04:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 04:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,16 +24,16 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution optimizes for proxy metrics that don't transfer; winner variant scored 9-10 in evolution but 1 in reality.
+- Calibration error of 5 points (predicted 6 vs actual 1) reveals systemic overconfidence in planning estimates.
+- Artifact execution fails repeatedly due to sandbox environment issues (missing data dirs, tracebacks), not code logic errors.
+- Simulator scores (9-10) catastrophically diverge from real execution scores (1), indicating reward hacking or missing environment constraints in simul
+- Free-tier models (glm-5.2) consistently hit 429 rate limits, making them unreliable for primary workloads without a fallback chain.
 - The system explicitly recognizes that insights decay without active refresh, yet lacks a mechanism to resurface them.
 - Simulation-driven revision cycles (5 risks, 5 revisions, 4 applied) converge but consume excessive model calls.
 - Metabolism stress at 1.0 forces conserve mode with max_tasks=3 and max_iterations=1, starving learning loops.
@@ -51,11 +56,6 @@
 - Low-latency models (poolside/laguna-s-2.1 at 6s) outperform high-latency fallbacks (nemotron at 20-55s) by 3-9x under conserve mode, making latency a 
 - Fallback chains collapse when all fallback models route through the same rate-limited gateway, necessitating provider-diverse fallback pools with inde
 - Quota exhaustion cascades across multiple models simultaneously via shared OpenRouter infrastructure, requiring proactive per-provider quota tracking 
-- Stale swarm results (old market analyses) accumulate because no automated pruning policy binds TTL to goal completion.
-- Five skill proposals exist but none have been executed; the system proposes but does not validate or deploy, creating a proposal-execution gap.
-- Metabolism enters conserve state (stress=1.0) with only 1 iteration budget, preventing recovery retries exactly when they are needed most.
-- Hand actions fail because they use relative paths instead of resolving sys.argv[1]/ZOETRON_DATA to absolute, verified paths before I/O.
-- Repeated 429 errors on z-ai/glm-5.2:free show that model health tracking and automatic fallback are missing, causing silent degradation.
 
 ---
 
