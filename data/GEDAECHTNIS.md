@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10410 Fakten** · Stand 2026-09-03 09:41 UTC · aktualisiert bei jedem Herzschlag
+**10415 Fakten** · Stand 2026-09-03 09:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5685
+- **dream:** 5690
 - **swarm_artifact:** 2217
 - **last_swarm_critique:** 724
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903094858:5:640f2d`
+*03.09. 09:48 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failure rate exceeds 70%, revealing a blind spot in health monitoring granularity.
+
+### `dream:20260903094858:4:289a92`
+*03.09. 09:48 UTC · Quelle: dream*
+
+Fallback chains succeed eventually but waste 2-3 failed attempts per request, burning latency budget before reaching a healthy model.
+
+### `dream:20260903094858:3:8b91d1`
+*03.09. 09:48 UTC · Quelle: dream*
+
+The system accumulates skill proposals (circuit breaker, health scoreboard, backoff) but lacks an execution pipeline to turn them into deployed capabilities.
+
+### `dream:20260903094858:2:497edd`
+*03.09. 09:48 UTC · Quelle: dream*
+
+Latency variance for the same model (nemotron: 47s vs 77s) indicates upstream instability that simple retries cannot fix.
+
+### `dream:20260903094858:1:0f444e`
+*03.09. 09:48 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits within minutes, making them unreliable as primary providers without aggressive quota management.
 
 ### `dream:20260903093907:5:c1ec9f`
 *03.09. 09:39 UTC · Quelle: dream*
