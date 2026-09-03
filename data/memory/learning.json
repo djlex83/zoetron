@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 18:18:19",
+ "stand": "2026-09-03 18:27:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -183,12 +183,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -355,9 +349,15 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "wissensgraph-verknüpfungen-reparieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.673,
+ "haende_quote": 0.676,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 37,
@@ -366,8 +366,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 33,
-   "schnitt": 6.24
+   "n": 32,
+   "schnitt": 6.19
   },
   "bau": {
    "n": 4,
