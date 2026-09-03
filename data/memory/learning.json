@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 23:38:02",
+ "stand": "2026-09-03 23:46:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -349,9 +349,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.661,
+ "haende_quote": 0.671,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 36,

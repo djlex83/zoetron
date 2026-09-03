@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10881 Fakten** · Stand 2026-09-03 23:39 UTC · aktualisiert bei jedem Herzschlag
+**10886 Fakten** · Stand 2026-09-03 23:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5995
+- **dream:** 6000
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903234632:5:76443b`
+*03.09. 23:46 UTC · Quelle: dream*
+
+Hand actions fail silently when expected files/directories are missing, revealing absent pre-condition checks in tool wrappers.
+
+### `dream:20260903234632:4:5b6cb3`
+*03.09. 23:46 UTC · Quelle: dream*
+
+Drive goals for 'reduce model errors', 'use stale analyses', and 'implement proposed skills' recur across cycles, indicating systemic gaps not resolved by one-off actions.
+
+### `dream:20260903234632:3:f5d0b3`
+*03.09. 23:46 UTC · Quelle: dream*
+
+Proposed skills accumulate in backlog without implementation because no gate enforces minimal viable artifact (sketch + smoke test) before acceptance.
+
+### `dream:20260903234632:2:169934`
+*03.09. 23:46 UTC · Quelle: dream*
+
+Fallback model (nemotron-3-ultra) succeeds but exhibits high latency variance (6-60s), violating latency budgets for time-critical goals.
+
+### `dream:20260903234632:1:8b6027`
+*03.09. 23:46 UTC · Quelle: dream*
+
+Primary model (glm-5.2) consistently fails with 429 rate-limit errors, making it unreliable as a default without circuit-breaker protection.
 
 ### `dream:20260903233714:5:cf0ae9`
 *03.09. 23:37 UTC · Quelle: dream*
