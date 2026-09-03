@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 07:20:24",
+ "stand": "2026-09-03 07:34:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,12 +27,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -54,6 +48,12 @@
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -105,12 +105,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -157,6 +151,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "marktanalyse-in-handeln-umsetzen.py",
@@ -261,12 +261,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -310,6 +304,12 @@
   },
   {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "marktanalyse-endlich-umsetzen.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -387,17 +387,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.69,
- "simulationen_angewandt": 29,
+ "haende_quote": 0.682,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 33,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 6.06
+  "schnitt": 6.15
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 29,
-   "schnitt": 6.14
+   "schnitt": 6.28
   },
   "bau": {
    "n": 4,

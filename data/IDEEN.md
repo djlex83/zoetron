@@ -1,14 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 07:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 07:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement ModelRouter with per-provider health scoring (success rate, 429 frequency, latency p95) and automati *(hatte die Idee 5×)*
-- Build RateLimitAwareScheduler that spaces requests per provider using token-bucket estimators derived from obs *(hatte die Idee 5×)*
 - Implement a circuit breaker that disables any model provider for 60 seconds after 3 consecutive 429 or 502 err *(hatte die Idee 5×)*
 - Design a cross-memory synthesis skill that systematically combines recall results (e.g., last_swarm_goal) with *(hatte die Idee 5×)*
+- Implement ModelRouter with per-provider health scoring (success rate, 429 frequency, latency p95) and automati *(hatte die Idee 4×)*
+- Build RateLimitAwareScheduler that spaces requests per provider using token-bucket estimators derived from obs *(hatte die Idee 4×)*
 - Create a periodic audit task that scores each proposed skill by test coverage and last-used timestamp, archivi *(hatte die Idee 4×)*
 - Build ModelRouter with per-model 429-rate tracking, latency percentile baselines, and circuit-breaker auto-fal *(hatte die Idee 4×)*
 - Implement SkillDeploymentPipeline that ingests proposals, generates tests, runs CI in sandbox, and atomically  *(hatte die Idee 4×)*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 18×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system self-corrects by generating skill proposals from failures, but the learning loop is slow without automated retry logic.
+- Simulation-guided revision (3 revisions, 5 risks identified) improves quality before final convergence.
+- Evolutionary scoring of multiple variants (4→7/8/9) consistently produces better results than single-attempt generation.
+- Having a priority chain of fallback models (nvidia, inclusionai) that succeed when primary models fail is critical for system resilience.
+- Free-tier LLM APIs on OpenRouter exhibit frequent rate-limiting (429) and upstream overload (502), making them unreliable without retry and fallback m
 - The skill graph (bahnen) showed zero topological growth (delta=0.0, kanten=0) despite successful artifact execution, indicating that execution alone d
 - Calibration overpredicted success by 75% (predicted 7 vs actual 4), revealing a systematic optimism bias in effort estimation during conserve mode.
 - Under metabolic conserve mode (stress=1.0, max_iterations=1), the system still completed a full simulation–revision–execution cycle, demonstrating tha
@@ -51,11 +56,6 @@
 - Skill proposals are generated repeatedly but the validation pipeline (vorgeschlagene-fähigkeiten-prüfen-und-ba.py) fails, so no proposals reach produc
 - Hand actions fail because relative paths are used instead of the canonical ZOETRON_DATA directory, causing silent zero-byte operations.
 - The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, making it unreliable as a primary endpoint without a robust fallback router.
-- Proposed skills remain unimplemented because the system lacks a mandatory validation loop that tests and deploys skill proposals automatically.
-- High latency variance (8s–44s) for the same model indicates unreliable performance that requires composite scoring (latency × availability × cost) for
-- Stale goals persist indefinitely without an automatic forcing mechanism, creating execution inertia that accumulates across cycles.
-- Reactive error handling without proactive quota tracking and circuit breaking causes repeated 429 failures that could be avoided by distributing load 
-- Concentrating all model calls through a single API gateway (OpenRouter) creates a systemic rate-limit bottleneck that cascades across all providers si
 
 ---
 

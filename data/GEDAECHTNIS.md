@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10329 Fakten** · Stand 2026-09-03 07:21 UTC · aktualisiert bei jedem Herzschlag
+**10343 Fakten** · Stand 2026-09-03 07:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5645
-- **swarm_artifact:** 2193
-- **last_swarm_critique:** 720
+- **dream:** 5650
+- **swarm_artifact:** 2199
+- **last_swarm_critique:** 721
 - **anti_pattern:** 633
-- **last_swarm_goal:** 468
+- **last_swarm_goal:** 469
 - **strategy:** 337
 - **tool:** 129
-- **hand_result:** 112
+- **hand_result:** 113
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*03.09. 07:34 UTC · Quelle: critic*
+
+score=9; issues=Abhängigkeit von zoetron-Modulen (benchmark_organ, selflearn, ideen, werkzeugpruefung, konvergenztor) die in manchen Umgebungen fehlen könnten - Fallbacks mindern dies aber; Fallback-Beispieldaten in Artefakt 2 könnten echte Lücken maskieren we
+
+### `last_swarm_goal`
+*03.09. 07:29 UTC · Quelle: system*
+
+Vorschläge zu echten Fähigkeiten machen
+
+### `dream:20260903072824:5:ec2c5d`
+*03.09. 07:28 UTC · Quelle: dream*
+
+The system self-corrects by generating skill proposals from failures, but the learning loop is slow without automated retry logic.
+
+### `dream:20260903072824:4:4d6fd9`
+*03.09. 07:28 UTC · Quelle: dream*
+
+Simulation-guided revision (3 revisions, 5 risks identified) improves quality before final convergence.
+
+### `dream:20260903072824:3:afadb9`
+*03.09. 07:28 UTC · Quelle: dream*
+
+Evolutionary scoring of multiple variants (4→7/8/9) consistently produces better results than single-attempt generation.
+
+### `dream:20260903072824:2:65d305`
+*03.09. 07:28 UTC · Quelle: dream*
+
+Having a priority chain of fallback models (nvidia, inclusionai) that succeed when primary models fail is critical for system resilience.
+
+### `dream:20260903072824:1:3176e7`
+*03.09. 07:28 UTC · Quelle: dream*
+
+Free-tier LLM APIs on OpenRouter exhibit frequent rate-limiting (429) and upstream overload (502), making them unreliable without retry and fallback mechanisms.
 
 ### `dream:20260903071945:5:3774a5`
 *03.09. 07:19 UTC · Quelle: dream*
