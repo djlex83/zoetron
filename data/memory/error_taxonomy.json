@@ -1,0 +1,728 @@
+{
+  "metadata": {
+    "created": "2026-09-03T16:25:26.040095Z",
+    "total_patterns": 35376,
+    "categories": 11,
+    "fallback_used": false,
+    "data_root": "/workspace/zoetron/data"
+  },
+  "categories": {
+    "unknown": {
+      "name_de": "Unkategorisiert",
+      "name_en": "Uncategorized",
+      "count": 25515,
+      "indicators": [],
+      "mitigation_strategy": "Manual review required",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848149.9489317, \"kind\": \"reflex_ok\", \"payload\": {}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848151.1904008, \"kind\": \"prune_run\", \"payload\": {\"facts_pruned\": 0, \"events_pruned\": 0}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848156.2509186, \"kind\": \"model_fail\", \"payload\": {\"model\": \"nvidia/nemotron-3-ultra-550b-a55b:free\", \"error\": \"endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}\", \"ts\": 1787848156.2509143, \"schalter_geoeffnet\": false}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848165.0150292, \"kind\": \"model_ok\", \"payload\": {\"model\": \"inclusionai/ling-3.0-flash-fin:free\", \"latency_s\": 7.9, \"tokens_ein\": 1402, \"tokens_aus\": 1219}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848165.0157256, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Add a latency-aware routing policy with a configurable ceiling (e.g., >30s) that excludes slow models from non-critical reflex tasks.\"}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [],
+        "regex_patterns": []
+      }
+    },
+    "rate_limit": {
+      "name_de": "Rate-Limit / API-Drosselung",
+      "name_en": "Rate limiting / API throttling",
+      "count": 7885,
+      "indicators": [
+        "429",
+        "too many requests",
+        "quota exceeded",
+        "throttle"
+      ],
+      "mitigation_strategy": "Exponential backoff, request batching, caching",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848154.9701257, \"kind\": \"model_fail\", \"payload\": {\"model\": \"z-ai/glm-5.2:free\", \"error\": \"Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\\nFor more information check: https://developer.mozilla.org/en-US/doc\", \"ts\": 1787848154.970123, \"schalter_geoeffnet\": false}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848156.6424193, \"kind\": \"model_fail\", \"payload\": {\"model\": \"google/gemma-4-31b-it:free\", \"error\": \"Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\\nFor more information check: https://developer.mozilla.org/en-US/doc\", \"ts\": 1787848156.6424172, \"schalter_geoeffnet\": false}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848156.767932, \"kind\": \"model_fail\", \"payload\": {\"model\": \"google/gemma-4-26b-a4b-it:free\", \"error\": \"Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\\nFor more information check: https://developer.mozilla.org/en-US/doc\", \"ts\": 1787848156.7679296, \"schalter_geoeffnet\": false}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848157.1612558, \"kind\": \"model_fail\", \"payload\": {\"model\": \"poolside/laguna-s-2.1:free\", \"error\": \"Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\\nFor more information check: https://developer.mozilla.org/en-US/doc\", \"ts\": 1787848157.161253, \"schalter_geoeffnet\": false}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848165.0156577, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Implement predictive model health scoring with exponential backoff to preemptively route around rate-limited providers before 429 errors occur.\"}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "429",
+          "too many requests",
+          "quota exceeded",
+          "throttle"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "timeout": {
+      "name_de": "Timeout / Zeitüberschreitung",
+      "name_en": "Timeout errors",
+      "count": 596,
+      "indicators": [
+        "timeout",
+        "timed out"
+      ],
+      "mitigation_strategy": "Longer timeouts, async processing, request splitting",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848165.0159159, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Implement streaming dream consolidation with checkpointed partial results to prevent drive timeouts during long or failing model calls.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787849992.6566155, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Add adaptive timeout logic that scales with observed p95 latency of the chosen endpoint.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787861420.107657, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Create adaptive timeout policy: timeout = max(5s, 2×rolling_p95_latency) per model.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787870291.062354, \"kind\": \"hand_action\", \"payload\": {\"ok\": false, \"exit\": null, \"error\": \"timeout after 30.0s\", \"duration_s\": 30.03, \"gelesen\": 0}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787870291.0626414, \"kind\": \"tor\", \"payload\": {\"goal\": \"Häufige Fehlermuster untersuchen und beheben\", \"gruen\": false, \"grund\": \"Artefakt laeuft nicht: timeout after 30.0s\", \"zyklus\": 1}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "timeout",
+          "timed out"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "auth_error": {
+      "name_de": "Authentifizierungs-Fehler",
+      "name_en": "Authentication errors",
+      "count": 888,
+      "indicators": [
+        "401",
+        "403",
+        "unauthorized",
+        "forbidden",
+        "invalid token"
+      ],
+      "mitigation_strategy": "Token refresh, credential rotation, proper auth headers",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848401.0830023, \"kind\": \"model_ok\", \"payload\": {\"model\": \"nvidia/nemotron-3-ultra-550b-a55b:free\", \"latency_s\": 65.5, \"tokens_ein\": 402, \"tokens_aus\": 1301}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848401.083223, \"kind\": \"simulation\", \"payload\": {\"goal\": \"Weniger menschliche Hilfe nötig\", \"verdict\": \"revise\", \"risks\": 5, \"revisions\": 5}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848401.08338, \"kind\": \"simulation_applied\", \"payload\": {\"revisions\": 5}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787848403.5210073, \"kind\": \"model_fail\", \"payload\": {\"model\": \"z-ai/glm-5.2:free\", \"error\": \"Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\\nFor more information check: https://developer.mozilla.org/en-US/doc\", \"ts\": 1787848403.521005, \"schalter_geoeffnet\": false}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787850446.0403082, \"kind\": \"hand_action\", \"payload\": {\"ok\": true, \"exit\": 0, \"error\": null, \"duration_s\": 0.26, \"gelesen\": 0}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "401",
+          "403",
+          "unauthorized",
+          "forbidden",
+          "invalid token"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "hallucination": {
+      "name_de": "Halluzination / Erfundene Inhalte",
+      "name_en": "Hallucination / fabricated content",
+      "count": 8,
+      "indicators": [
+        "hallucinat",
+        "fabricat",
+        "made up",
+        "nicht existent",
+        "erfunden"
+      ],
+      "mitigation_strategy": "Grounding with sources, fact-checking, confidence thresholds",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787856342.8290565, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Create simulation harness that enumerates failure modes (hallucination, drift, incompleteness) and forces concrete revisions before execution.\"}}"
+        },
+        {
+          "source": "facts",
+          "timestamp": "",
+          "content": ""
+        },
+        {
+          "source": "facts",
+          "timestamp": "",
+          "content": ""
+        },
+        {
+          "source": "facts",
+          "timestamp": "",
+          "content": ""
+        },
+        {
+          "source": "facts",
+          "timestamp": "",
+          "content": ""
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "hallucinat",
+          "fabricat",
+          "made up",
+          "nicht existent",
+          "erfunden"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "network_error": {
+      "name_de": "Netzwerk-Fehler",
+      "name_en": "Network errors",
+      "count": 282,
+      "indicators": [
+        "connection error",
+        "network error",
+        "dns",
+        "unreachable"
+      ],
+      "mitigation_strategy": "Retry with backoff, circuit breaker, fallback endpoints",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787869683.292101, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DATA/sys.argv[1] and rejecting relative references.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787873172.6398237, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DATA/sys.argv[1] and rejecting relative references.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787873431.8766274, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Create path-resolver utility enforcing absolute paths rooted at ZOETRON_DATA/sys.argv[1] and rejecting relative references for all hand_actions.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787875346.0617087, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DATA/sys.argv[1] and rejecting relative references.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787877586.8533456, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"resolve-paths-before-hand-action: A pre-check procedure that resolves all relative paths against ZOETRON_DATA before executing hand actions.\"}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "connection error",
+          "network error",
+          "dns",
+          "unreachable"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "tool_error": {
+      "name_de": "Werkzeug-Ausführungsfehler",
+      "name_en": "Tool execution errors",
+      "count": 65,
+      "indicators": [
+        "tool failed",
+        "execution failed",
+        "subprocess",
+        "command not found"
+      ],
+      "mitigation_strategy": "Input validation, sandbox isolation, fallback tools",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787912853.382088, \"kind\": \"werkzeug_abgelehnt\", \"payload\": {\"name\": \"modellfehler-stark-reduzieren\", \"grund\": \"zerstoerende Operation (subprocess) - braucht menschliche Freigabe\", \"goal\": \"Modellfehler stark reduzieren\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787948480.890214, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Add a path-normalization wrapper that rewrites all file arguments to absolute paths rooted at $ZOETRON_DATA before handing to subprocesses.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787974148.8165317, \"kind\": \"werkzeug_abgelehnt\", \"payload\": {\"name\": \"letzte-kritik-und-ziel-neu-bewerten\", \"grund\": \"zerstoerende Operation (subprocess) - braucht menschliche Freigabe\", \"goal\": \"Letzte Kritik und Ziel neu bewerten\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787979030.8071706, \"kind\": \"werkzeug_abgelehnt\", \"payload\": {\"name\": \"liegende-marktanalyse-abschließen\", \"grund\": \"zerstoerende Operation (subprocess) - braucht menschliche Freigabe\", \"goal\": \"Liegende Marktanalyse abschließen\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788047658.8077042, \"kind\": \"werkzeug_abgelehnt\", \"payload\": {\"name\": \"marktlücke-endgültig-untersuchen\", \"grund\": \"zerstoerende Operation (os.system, subprocess) - braucht menschliche Freigabe\", \"goal\": \"Marktlücke endgültig untersuchen\"}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "tool failed",
+          "execution failed",
+          "subprocess",
+          "command not found"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "memory_error": {
+      "name_de": "Speicher-Fehler / Out of Memory",
+      "name_en": "Memory errors / OOM",
+      "count": 22,
+      "indicators": [
+        "out of memory",
+        "oom",
+        "memory limit"
+      ],
+      "mitigation_strategy": "Streaming processing, chunking, memory profiling",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787930091.3062341, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Develop a pre-flight checklist for swarm launches that verifies model availability, rate-limit headroom, and skill prerequisites before committing resources.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787932076.8347838, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Introduce a pre-flight check for swarm tasks to verify model availability and rate-limit headroom before starting.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787934958.1134408, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Introduce a pre-flight check for swarm tasks that verifies model availability and rate-limit headroom before starting execution.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787939723.796955, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Add per-model rate-limit headroom tracking using response headers (Retry-After, X-RateLimit-Remaining) to predict 429s before they occur and throttle proactively.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1787942239.1457431, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Add per-model rate-limit headroom tracking using response headers (Retry-After, X-RateLimit-Remaining) to predict 429s before they occur and throttle proactively.\"}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "out of memory",
+          "oom",
+          "memory limit"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "logic_error": {
+      "name_de": "Logik-Fehler / Widersprüche",
+      "name_en": "Logic errors / contradictions",
+      "count": 65,
+      "indicators": [
+        "contradiction",
+        "inkonsistent",
+        "widerspruch",
+        "false conclusion"
+      ],
+      "mitigation_strategy": "Chain-of-thought verification, consistency checks, multi-step reasoning",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788017920.2570043, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Instrument hand actions with structured result codes (not just exit codes) to distinguish transient I/O failures from logic errors.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788020661.9227076, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Instrument hand actions with structured result codes instead of exit codes to distinguish transient I/O failures from logic errors.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788061784.9905288, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Add ContradictionResolver: nightly scan knowledge graph for conflicting facts (same predicate, different objects); flag for review, auto-resolve if one source has higher trust score.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788062062.5868816, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"KnowledgeContradictionDetector: scan the knowledge store for conflicting entries on the same topic, flag them, and trigger resolution before they corrupt downstream reasoning.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788065942.589501, \"kind\": \"evolution_run\", \"payload\": {\"problem\": \"Previous attempt scored 4/10. Goal: Wissenswidersprüche auflösen\\nCritic issues: Keine eigentliche Widerspruchserkennung/\", \"variants\": 3, \"winner_index\": 2, \"scores\": [[8, 7, 8], [6, 5, 7], [9, 9, 8]]}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "contradiction",
+          "inkonsistent",
+          "widerspruch",
+          "false conclusion"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "format_error": {
+      "name_de": "Format-Fehler / Parsing-Fehler",
+      "name_en": "Format / parsing errors",
+      "count": 39,
+      "indicators": [
+        "json decode",
+        "invalid json",
+        "malformed",
+        "syntax error",
+        "unexpected token"
+      ],
+      "mitigation_strategy": "Strict schema validation, output templates, retry with correction",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788055197.3354714, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Design FailureSignalRouter: parse error patterns from failed model calls and task runs, cluster them into root-cause categories, and auto-generate new improvement drives when failure thresholds are crossed.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788057107.8256001, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Design FailureSignalRouter: parse error patterns into root-cause clusters and auto-generate improvement drives at failure thresholds.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788070826.8936963, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Add pre-sandbox syntax/lint check in evolution generator to catch syntax errors before execution.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788072679.1623833, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Add mandatory pre-sandbox syntax/lint check (AST parse + dry-run) in all code generation paths to catch syntax errors before execution.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788075572.0725064, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Enforce mandatory pre-sandbox AST parse and dry-run checks in all code generation paths so syntax errors are caught before any execution is attempted.\"}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "json decode",
+          "invalid json",
+          "malformed",
+          "syntax error",
+          "unexpected token"
+        ],
+        "regex_patterns": []
+      }
+    },
+    "validation_error": {
+      "name_de": "Validierungs-Fehler / Schema-Fehler",
+      "name_en": "Validation / schema errors",
+      "count": 11,
+      "indicators": [
+        "validation error",
+        "schema error",
+        "type error",
+        "missing field"
+      ],
+      "mitigation_strategy": "Pre-flight validation, strict schemas, default values",
+      "examples": [
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788063842.5017078, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Create OutputValidator middleware: reject any hand_action result that is empty, fails JSON schema, or lacks required fields; retry once with alternate model before failing task.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788065535.6565561, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Create OutputValidator middleware: reject hand_action results that are empty, fail JSON schema, or lack required fields; retry once with alternate model before failing task.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788068968.8778994, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Deploy OutputValidator middleware: reject hand_action results that are empty, fail JSON schema, or lack required fields; retry once with next model in chain before failing task.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788070826.893643, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Deploy OutputValidator middleware: reject hand_action results that are empty, fail JSON schema, or lack required fields; retry once with next model in chain before failing task.\"}}"
+        },
+        {
+          "source": "events",
+          "timestamp": "",
+          "goal": "",
+          "tool": "",
+          "ok": null,
+          "excerpt": "{\"ts\": 1788072679.1623273, \"kind\": \"skill_proposal\", \"payload\": {\"proposal\": \"Deploy OutputValidator middleware: reject hand_action results that are empty, fail JSON schema, or lack required fields; retry once with next model in chain before failing task.\"}}"
+        }
+      ],
+      "detection_rules": {
+        "keywords": [
+          "validation error",
+          "schema error",
+          "type error",
+          "missing field"
+        ],
+        "regex_patterns": []
+      }
+    }
+  },
+  "ranking": [
+    [
+      "unknown",
+      25515
+    ],
+    [
+      "rate_limit",
+      7885
+    ],
+    [
+      "auth_error",
+      888
+    ],
+    [
+      "timeout",
+      596
+    ],
+    [
+      "network_error",
+      282
+    ],
+    [
+      "tool_error",
+      65
+    ],
+    [
+      "logic_error",
+      65
+    ],
+    [
+      "format_error",
+      39
+    ],
+    [
+      "memory_error",
+      22
+    ],
+    [
+      "validation_error",
+      11
+    ],
+    [
+      "hallucination",
+      8
+    ]
+  ]
+}

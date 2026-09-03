@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10616 Fakten** · Stand 2026-09-03 16:10 UTC · aktualisiert bei jedem Herzschlag
+**10629 Fakten** · Stand 2026-09-03 16:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5810
-- **swarm_artifact:** 2261
-- **last_swarm_critique:** 732
+- **dream:** 5815
+- **swarm_artifact:** 2267
+- **last_swarm_critique:** 733
 - **anti_pattern:** 647
-- **last_swarm_goal:** 480
+- **last_swarm_goal:** 481
 - **strategy:** 344
 - **tool:** 134
 - **hand_result:** 116
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*03.09. 16:25 UTC · Quelle: critic*
+
+score=9; issues=Hardcoded thresholds (alert_threshold=5, circuit breaker 30%/10req/5consec) could be made configurable via config file or env vars for production tuning; No persistence of circuit breaker half-open state across restarts (only in-memory consecut
+
+### `last_swarm_goal`
+*03.09. 16:17 UTC · Quelle: system*
+
+Modellfehler systematisch reduzieren und vermeiden
+
+### `dream:20260903161712:5:2088bb`
+*03.09. 16:17 UTC · Quelle: dream*
+
+Pruning removed 40 events but 0 facts, suggesting episodic noise accumulates faster than semantic drift.
+
+### `dream:20260903161712:4:67d239`
+*03.09. 16:17 UTC · Quelle: dream*
+
+Stress signals (model failures, rate limits) correlate with increased drive-goal generation (3 new goals this cycle).
+
+### `dream:20260903161712:3:a0eaa7`
+*03.09. 16:17 UTC · Quelle: dream*
+
+The system generates skill proposals faster than it can validate them: 5 proposals queued with no deployment pipeline.
+
+### `dream:20260903161712:2:fe9e13`
+*03.09. 16:17 UTC · Quelle: dream*
+
+Swarm execution converges in 1 cycle when roles are balanced (1 planner, 3 builders, 1 critic) but calibration underestimates effort by ~25%.
+
+### `dream:20260903161712:1:f0430b`
+*03.09. 16:17 UTC · Quelle: dream*
+
+Model reliability is the primary bottleneck: 4/6 models failed with 429/502 errors while only inclusionai/ling-3.0-flash-fin:free succeeded consistently.
 
 ### `dream:20260903160801:5:dfe8de`
 *03.09. 16:08 UTC · Quelle: dream*

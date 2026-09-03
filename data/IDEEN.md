@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 16:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 16:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -10,7 +10,6 @@
 - Implement a circuit breaker that disables any model provider for 60 seconds after 3 consecutive 429 or 502 err *(hatte die Idee 5×)*
 - Design a cross-memory synthesis skill that systematically combines recall results (e.g., last_swarm_goal) with *(hatte die Idee 5×)*
 - Develop a knowledge-rehydration skill that scans stale facts/market analyses nightly, extracts actionable patt *(hatte die Idee 5×)*
-- Implement circuit breaker per model endpoint with exponential backoff, health scores, and automatic failover t *(hatte die Idee 4×)*
 - Create reflex eligibility gate: match goal semantics against registered reflex patterns via embedding similari *(hatte die Idee 4×)*
 - Enforce fact TTL policy: auto-prune model-health facts unaccessed >7 days or access_count <2; trigger prune_ru *(hatte die Idee 4×)*
 - Implement a model router that tracks per-model 429/502 rates, latency percentiles, and token costs, then autom *(hatte die Idee 4×)*
@@ -18,6 +17,7 @@
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
 - Add a metabolism-aware retry scheduler that reserves a configurable iteration budget for rate-limit retries an *(hatte die Idee 4×)*
 - Add a proposal-to-production pipeline requiring simulation verdict=accept, load test (latency <30s p95), and c *(hatte die Idee 4×)*
+- Implement circuit breaker per model endpoint with exponential backoff, health scores, and automatic failover t *(hatte die Idee 3×)*
 - Add proactive endpoint health polling that pings all model endpoints before each swarm cycle and caches latenc *(hatte die Idee 3×)*
 - Build latency-aware router that prefers lowest-latency healthy endpoint and deprioritizes endpoints with >2 re *(hatte die Idee 3×)*
 
@@ -30,17 +30,22 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 40 events but 0 facts, suggesting episodic noise accumulates faster than semantic drift.
+- Stress signals (model failures, rate limits) correlate with increased drive-goal generation (3 new goals this cycle).
+- The system generates skill proposals faster than it can validate them: 5 proposals queued with no deployment pipeline.
+- Swarm execution converges in 1 cycle when roles are balanced (1 planner, 3 builders, 1 critic) but calibration underestimates effort by ~25%.
+- Model reliability is the primary bottleneck: 4/6 models failed with 429/502 errors while only inclusionai/ling-3.0-flash-fin:free succeeded consistent
 - Task execution succeeds via 188-line Python artifact with graph retrieval (10 edges, 4 nodes fetched) but requires 3 revisions.
 - Effort calibration systematically underestimates by ~25% (predicted 6 vs actual 8 cycles) for market-plan update tasks.
 - inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success (61.8s latency, score 8) under current load.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but never graduate to deployed capabilities, revealing a broken promotion pipeline.
 - Swarm executions repeatedly score zero and fail to converge despite evolving, indicating broken convergence criteria.
 - Free-tier models consistently hit 429 rate limits causing cascading fallbacks to a single reliable model.
-- Upstream service errors (502 from Nvidia) are a secondary intermittent failure mode requiring automatic fallback to alternative models.
-- The evolutionary variant loop (generate → score → select) reliably improves output quality from 0/10 to 6-9/10, confirming that multi-variant explorat
-- Lower-tier models (inclusionai/ling-3.0-flash-fin) achieve reliable success at 5-6s latency, while high-capacity models (nemotron-550b) succeed but wi
-- Prose-only artifacts fail to converge on the task goal (score 0/10); executable Python code blocks are a necessary condition for meaningful scoring (v
-- Rate limiting (HTTP 429) is the dominant failure mode, causing 100% failure on z-ai/glm-5.2 (6/6) and all google/gemma calls — these models must be de
 
 ---
 
