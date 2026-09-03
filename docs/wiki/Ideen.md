@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 17:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 17:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
+- Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress-aware scheduling proposal emerges only after sustained high-latency episodes, showing reactive rather than predictive design.
+- Duplicate skill proposals across cycles signal convergence on circuit-breakers, path-resolver, and graduation-gates as critical infrastructure.
+- Fallback latency variance (31-70s) on nemotron demands adaptive timeouts, not fixed thresholds.
+- Multiple proposals for path resolution (sys.argv[1], ZOETRON_DATA) reveal systemic I/O failures from relative-path ambiguity.
+- Repeated 429 errors on glm-5.2:free indicate single-model dependency creates cascading failures when rate-limited.
 - Self-calibration underestimated actual performance by 2 units (predicted 7 vs actual 9), revealing a systematic scoring bias that must be corrected.
 - Destructive subprocess operations are systematically blocked and require human approval, creating a hard constraint that all autonomous tool designs m
 - The system converged to score 9 despite repeated primary-model failures, proving that automatic failover chains provide operational resilience under a
@@ -51,11 +56,6 @@
 - Hand actions fail because they use relative paths instead of the absolute ZOETRON_DATA root, causing silent zero-byte runs.
 - High stress (1.0) triggers conserve mode but the scheduler still spawns swarms that immediately hit model failures, wasting the tiny budget.
 - Rate limiting (429) and upstream overload (502) across multiple free-tier models indicate reliance on unreliable endpoints without circuit-breaking.
-- Under high metabolic stress (stress=1.0, state=conserve), the system restricts to max_tasks=3 and max_iterations=1, which can prematurely terminate sw
-- The nemotron model succeeds but exhibits high latency variance (26–120 s); timeouts should be set to at least 150 s and tasks should be parallelized t
-- Calibration predictions systematically underestimate actual scores by ~2 points (predicted 6 vs actual 8), indicating a need to adjust the calibration
-- Hand actions fail when using relative paths; all file operations must resolve inputs via sys.argv[1] and the ZOETRON_DATA environment variable to abso
-- The model "z-ai/glm-5.2:free" consistently returns 429 Too Many Requests errors and should be excluded from the routing pool or used only with aggress
 
 ---
 

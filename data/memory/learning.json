@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 17:20:30",
+ "stand": "2026-09-03 17:34:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -87,6 +87,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -97,12 +103,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
@@ -157,12 +157,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
@@ -250,6 +244,12 @@
   },
   {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -363,17 +363,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.677,
+ "haende_quote": 0.673,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 37,
   "best": 9.0,
-  "schnitt": 6.14
+  "schnitt": 6.16
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 32,
-   "schnitt": 6.19
+   "n": 33,
+   "schnitt": 6.24
   },
   "bau": {
    "n": 4,
