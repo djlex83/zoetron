@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10078 Fakten** · Stand 2026-09-03 00:06 UTC · aktualisiert bei jedem Herzschlag
+**10083 Fakten** · Stand 2026-09-03 00:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5485
+- **dream:** 5490
 - **swarm_artifact:** 2143
 - **last_swarm_critique:** 711
 - **anti_pattern:** 623
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903001214:5:dd861f`
+*03.09. 00:12 UTC · Quelle: dream*
+
+Simulation-driven revision loops can return 'go' verdicts with residual risks, meaning binary pass/fail decisions are insufficient without risk-budget tracking.
+
+### `dream:20260903001214:4:a0c429`
+*03.09. 00:12 UTC · Quelle: dream*
+
+Reflex scripts can execute without actually modifying target files, producing false progress signals that mask stale work items.
+
+### `dream:20260903001214:3:aa9d7a`
+*03.09. 00:12 UTC · Quelle: dream*
+
+Skill proposals accumulate far faster than they are implemented (55 proposals), creating a triage gap that prevents good ideas from becoming usable capabilities.
+
+### `dream:20260903001214:2:3d3fb5`
+*03.09. 00:12 UTC · Quelle: dream*
+
+Even healthy providers exhibit highly variable latency (7.8s to 37.3s), making latency-aware routing essential for predictable system performance.
+
+### `dream:20260903001214:1:a9754a`
+*03.09. 00:12 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is a persistent source of 429 rate-limit errors and must be treated as an unreliable provider requiring mandatory automatic fallback.
 
 ### `dream:20260903000406:5:5046ab`
 *03.09. 00:04 UTC · Quelle: dream*

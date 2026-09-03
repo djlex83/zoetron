@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 00:04:38",
+ "stand": "2026-09-03 00:12:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -375,7 +375,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.732,
+ "haende_quote": 0.733,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 31,
@@ -384,8 +384,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 5.86
+   "n": 27,
+   "schnitt": 5.93
   },
   "bau": {
    "n": 3,
