@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10152 Fakten** · Stand 2026-09-03 02:21 UTC · aktualisiert bei jedem Herzschlag
+**10157 Fakten** · Stand 2026-09-03 02:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5535
+- **dream:** 5540
 - **swarm_artifact:** 2155
 - **last_swarm_critique:** 713
 - **anti_pattern:** 627
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903022728:5:ca117d`
+*03.09. 02:27 UTC · Quelle: dream*
+
+Swarm and reflex mechanisms trigger for the same goal ("Simulationen konsequent anwenden") but both fail, revealing a gap between goal declaration and executable simulation procedures.
+
+### `dream:20260903022728:4:21c8a4`
+*03.09. 02:27 UTC · Quelle: dream*
+
+The metabolism controller correctly throttles to conserve mode (max_tasks=3, max_iterations=1) under stress=1.0, but this starves the very retries needed to overcome rate limits.
+
+### `dream:20260903022728:3:330467`
+*03.09. 02:27 UTC · Quelle: dream*
+
+Tool executions fail when they don't resolve absolute data paths from sys.argv[1] and ZOETRON_DATA, indicating a systemic path-resolution bug in hand actions.
+
+### `dream:20260903022728:2:100a61`
+*03.09. 02:27 UTC · Quelle: dream*
+
+poolside/laguna-s-2.1:free is the only model that consistently succeeds under current load, suggesting it should be the primary workhorse with others as fallbacks.
+
+### `dream:20260903022728:1:23304a`
+*03.09. 02:27 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making request pacing and fallback chains essential for reliability.
 
 ### `dream:20260903021933:5:2c42f2`
 *03.09. 02:19 UTC · Quelle: dream*

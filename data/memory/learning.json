@@ -1,17 +1,17 @@
 {
- "stand": "2026-09-03 02:19:52",
+ "stand": "2026-09-03 02:27:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "alte-marktanalysen-verwerten.py",
+   "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 9,
    "erfolge": 9,
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "tool": "alte-marktanalysen-verwerten.py",
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -364,6 +364,12 @@
   },
   {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
