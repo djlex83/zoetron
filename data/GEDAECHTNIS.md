@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10497 Fakten** · Stand 2026-09-03 12:11 UTC · aktualisiert bei jedem Herzschlag
+**10502 Fakten** · Stand 2026-09-03 12:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5740
+- **dream:** 5745
 - **swarm_artifact:** 2235
 - **last_swarm_critique:** 727
 - **anti_pattern:** 641
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903122236:5:86f0a6`
+*03.09. 12:22 UTC · Quelle: dream*
+
+Simulation revisions (4 cycles) addressed symptoms but not the root cause: absence of a managed fallback policy.
+
+### `dream:20260903122236:4:b99700`
+*03.09. 12:22 UTC · Quelle: dream*
+
+Calibration error of 1 indicates reliable self-assessment; predicted difficulty matches observed failure rate.
+
+### `dream:20260903122236:3:614271`
+*03.09. 12:22 UTC · Quelle: dream*
+
+Evolutionary search improved scores from 7 to 9 by generating application-level resilience code, not just monitoring.
+
+### `dream:20260903122236:2:388de4`
+*03.09. 12:22 UTC · Quelle: dream*
+
+Working models (nemotron) show extreme latency variance (44-194s), requiring async timeouts and progress callbacks.
+
+### `dream:20260903122236:1:9b74ec`
+*03.09. 12:22 UTC · Quelle: dream*
+
+Free-tier models exhibit systemic 429 rate-limit failures across providers, making single-model reliance untenable.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Skill-Vorschläge in echt:1`
 *03.09. 12:07 UTC · Quelle: evolution*

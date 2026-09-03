@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-03 12:10:06",
+ "stand": "2026-09-03 12:23:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -70,6 +70,12 @@
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-in-handeln-umsetzen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -151,12 +157,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "marktanalyse-in-handeln-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-verstehen-und-verringern.py",

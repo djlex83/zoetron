@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 12:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 12:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation revisions (4 cycles) addressed symptoms but not the root cause: absence of a managed fallback policy.
+- Calibration error of 1 indicates reliable self-assessment; predicted difficulty matches observed failure rate.
+- Evolutionary search improved scores from 7 to 9 by generating application-level resilience code, not just monitoring.
+- Working models (nemotron) show extreme latency variance (44-194s), requiring async timeouts and progress callbacks.
+- Free-tier models exhibit systemic 429 rate-limit failures across providers, making single-model reliance untenable.
 - Direct destructive operations (os.system/subprocess) bypass review, creating irreversible risk.
 - Stale analyses lose value without an automated rehydration pipeline that extracts current patterns.
 - The scheduler starves the revision loop because conserve-mode consumes all iteration slots.
@@ -51,11 +56,6 @@
 - Unvalidated skill proposals accumulate without a compilation pipeline that lints, type-checks, tests, and atomically promotes with rollback.
 - High fallback latency (40s+) demands predictive budget allocation based on prompt tokens and historical performance to pre-select optimal model tiers.
 - Provider-specific rate limits (429 errors) require per-provider circuit breakers with exponential backoff and automatic fallback to healthy tiers to m
-- Autonomous goals fire on failure/stale/gap signals but lack priority arbitration, risking thrashing when multiple high-signal goals compete for the sa
-- Event pruning (36-37 per run) occurs while fact count stays static, signaling unbounded fact-store growth that needs TTL or relevance-based decay.
-- Recurring 'herzschlag: organzyklus + gedächtnis-sync' CI failures indicate infrastructure fragility that should gate non-critical organ activity via c
-- Forty-five skill proposals exist without a validation pipeline, creating proposal debt; the successful reflex test of 'vorgeschlagene-fähigkeiten-wirk
-- The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds at 32-44s latency, proving single-model de
 
 ---
 
