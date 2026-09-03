@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 18:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 19:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,32 +15,37 @@
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
 - Add a metabolism-aware retry scheduler that reserves a configurable iteration budget for rate-limit retries an *(hatte die Idee 4×)*
 - Add a proposal-to-production pipeline requiring simulation verdict=accept, load test (latency <30s p95), and c *(hatte die Idee 4×)*
-- Build a skill backlog manager that prioritizes building proposed skills over generating new ones when the 'gap *(hatte die Idee 3×)*
 - Implement a model router with circuit-breaker: track 429/502 rates per model, auto-fallback to next provider a *(hatte die Idee 3×)*
 - Create an 'evolution loop' skill: generate N variants, score with critic, keep top-k, repeat until score >= 8  *(hatte die Idee 3×)*
 - Build a calibration tracker: log predicted vs actual scores per task type, adjust risk estimator weights weekl *(hatte die Idee 3×)*
 - Develop a continuous event-to-fact compressor that runs each cycle before pruning, extracting durable facts fr *(hatte die Idee 3×)*
+- Implement a model-resilience middleware: per-provider circuit breaker, exponential backoff with jitter (base 2 *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 50 events but zero facts, suggesting the fact store is accumulating stale entries that never get validated or expired.
+- Five skill proposals were generated in this cycle but none have been deployed, revealing a proposal-to-production gap that defeats the consolidation l
+- Self-diagnosis reports zero organ errors while the model router simultaneously fails repeatedly, indicating health checks do not cover external API av
+- The nemotron model was hard-blocked for 1800s after 3 consecutive errors, proving that naive retry without backoff triggers permanent bans.
+- Rate limiting (429 errors) is the dominant failure mode across all major models except inclusionai/ling-3.0-flash-fin:free, which remains stable at 11
 - Hand-tool file operations succeed reliably, indicating the execution substrate is sound and the primary instability resides in the LLM inference layer
 - Skill proposals accumulate in the log without automated validation or integration, creating a backlog of unimplemented improvements.
 - Automatic model locking after three consecutive errors prevents cascade failures but does not proactively route to healthy alternatives.
@@ -51,11 +56,6 @@
 - Event pruning stabilizes after initial burst (67 events pruned first run, 0 second run), indicating the system reaches steady-state log hygiene.
 - 429 errors dominate model failures (z-ai/glm-5.2, google/gemma-4-31b, google/gemma-4-26b) requiring exponential backoff and automatic fallback as core
 - Free-tier models fail systematically with 429 rate limits and 502 upstream errors across multiple providers, making multi-provider routing with health
-- Aggressive event pruning (67 events) with zero fact pruning preserves knowledge integrity while eliminating transient noise.
-- Swarm convergence in a single cycle with role distribution (1 planner, 3 builders, 1 critic) demonstrates effective parallelization for skill-bundling
-- Capability prediction underestimates actual output by 2x (predicted 4 vs actual 8), revealing a systematic calibration bias in the prediction module.
-- Nvidia nemotron-3-ultra-550b is the most reliable model (4/5 successes, score 8) with the sole failure being upstream overload (502), making it the pr
-- Rate limiting (HTTP 429) is the dominant and systematic failure mode across z-ai/glm-5.2 and Google models, indicating API throttling rather than mode
 
 ---
 

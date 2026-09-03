@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 18:46:20",
+ "stand": "2026-09-03 19:02:14",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -93,6 +93,12 @@
    "quote": 0.0
   },
   {
+   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -101,12 +107,6 @@
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
-   "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -151,12 +151,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "marktanalyse-endlich-umsetzen.py",
@@ -321,6 +315,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeiten-gezielt-trainieren.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -357,21 +357,21 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.676,
- "simulationen_angewandt": 33,
+ "haende_quote": 0.668,
+ "simulationen_angewandt": 34,
  "swarm_scores": {
   "n": 36,
   "best": 9.0,
-  "schnitt": 6.11
+  "schnitt": 6.14
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 32,
-   "schnitt": 6.19
+   "n": 31,
+   "schnitt": 6.13
   },
   "bau": {
-   "n": 4,
-   "schnitt": 5.5
+   "n": 5,
+   "schnitt": 6.2
   }
  }
 }
