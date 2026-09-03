@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 17:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 17:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-calibration underestimated actual performance by 2 units (predicted 7 vs actual 9), revealing a systematic scoring bias that must be corrected.
+- Destructive subprocess operations are systematically blocked and require human approval, creating a hard constraint that all autonomous tool designs m
+- The system converged to score 9 despite repeated primary-model failures, proving that automatic failover chains provide operational resilience under a
+- nvidia/nemotron-3-ultra-550b-a55b:free was the only consistently working model but exhibited high latency variance (33–103s), indicating cold-start or
+- z-ai/glm-5.2:free failed on every invocation with 429 rate-limit errors, making it fundamentally unreliable as a primary model without circuit protect
 - Simulation approved a risky swarm (3 risks) while metabolism allowed only 1 iteration, guaranteeing incomplete execution.
 - Proposed skills (calibration adjuster, stress scheduler, retry wrapper) directly address the observed failure modes but remain untested.
 - Hand actions fail because they use relative paths instead of the absolute ZOETRON_DATA root, causing silent zero-byte runs.
@@ -51,11 +56,6 @@
 - Calibration predictions systematically underestimate actual scores by ~2 points (predicted 6 vs actual 8), indicating a need to adjust the calibration
 - Hand actions fail when using relative paths; all file operations must resolve inputs via sys.argv[1] and the ZOETRON_DATA environment variable to abso
 - The model "z-ai/glm-5.2:free" consistently returns 429 Too Many Requests errors and should be excluded from the routing pool or used only with aggress
-- Multiple skill proposals already exist for model routing but remain unpromoted, exposing a missing graduation gate from proposal to deployed skill.
-- High stress (1.0) with conserve metabolism throttles all new work, so any remediation must run within the 3-task/1-iteration budget.
-- Hand-action failure due to unresolved relative paths shows that data-access helpers must canonicalize paths against ZOETRON_DATA before execution.
-- Fallback model latency varies 2.5x (26–69 s), revealing cold-start effects that keep-alive pings could stabilize.
-- Recurring 429 errors on the same model indicate missing per-model rate-limit tracking and automatic fallback logic.
 
 ---
 

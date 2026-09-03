@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10656 Fakten** · Stand 2026-09-03 17:12 UTC · aktualisiert bei jedem Herzschlag
+**10661 Fakten** · Stand 2026-09-03 17:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5830
+- **dream:** 5835
 - **swarm_artifact:** 2273
 - **last_swarm_critique:** 734
 - **anti_pattern:** 649
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903171953:5:885faf`
+*03.09. 17:19 UTC · Quelle: dream*
+
+Self-calibration underestimated actual performance by 2 units (predicted 7 vs actual 9), revealing a systematic scoring bias that must be corrected.
+
+### `dream:20260903171953:4:f37f69`
+*03.09. 17:19 UTC · Quelle: dream*
+
+Destructive subprocess operations are systematically blocked and require human approval, creating a hard constraint that all autonomous tool designs must respect.
+
+### `dream:20260903171953:3:49131c`
+*03.09. 17:19 UTC · Quelle: dream*
+
+The system converged to score 9 despite repeated primary-model failures, proving that automatic failover chains provide operational resilience under adverse conditions.
+
+### `dream:20260903171953:2:a58791`
+*03.09. 17:19 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free was the only consistently working model but exhibited high latency variance (33–103s), indicating cold-start or resource contention issues.
+
+### `dream:20260903171953:1:a55696`
+*03.09. 17:19 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free failed on every invocation with 429 rate-limit errors, making it fundamentally unreliable as a primary model without circuit protection.
 
 ### `dream:20260903171030:5:6e64a7`
 *03.09. 17:10 UTC · Quelle: dream*

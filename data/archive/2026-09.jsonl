@@ -7014,3 +7014,13 @@
 {"ts": 1787850519.9872954, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.8, "tokens_ein": 731, "tokens_aus": 982}}
 {"ts": 1787850519.9876149, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 6/10. Goal: Fähigkeiten echt testen nicht nur vorschlagen\nCritic issues: Konvergenz-Tor verwende", "variants": 3, "winner_index": 0, "scores": [8, 6, 6]}}
 {"ts": 1787850537.7686622, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787850537.76866, "schalter_geoeffnet": false}}
+{"ts": 1787850610.339939, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 72.6, "tokens_ein": 434, "tokens_aus": 1900}}
+{"ts": 1787850616.9756327, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787850616.9756284, "schalter_geoeffnet": false}}
+{"ts": 1787850660.9620528, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 44.0, "tokens_ein": 528, "tokens_aus": 870}}
+{"ts": 1787850660.9622035, "kind": "simulation", "payload": {"goal": "Fähigkeiten echt testen nicht nur vorschlagen", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1787850660.9623284, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787850660.9624312, "kind": "swarm_finished", "payload": {"goal": "Fähigkeiten echt testen nicht nur vorschlagen", "score": 6, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787850660.9626772, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten echt testen nicht nur vorschlagen", "score": 6, "converged": false}}
+{"ts": 1787850669.3338447, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.27, "gelesen": 0}}
+{"ts": 1787850671.3008416, "kind": "issue_synced", "payload": {"issue": 163, "state": "open"}}
+{"ts": 1787850754.5063438, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
