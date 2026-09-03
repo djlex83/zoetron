@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10780 Fakten** · Stand 2026-09-03 20:34 UTC · aktualisiert bei jedem Herzschlag
+**10785 Fakten** · Stand 2026-09-03 20:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5915
+- **dream:** 5920
 - **swarm_artifact:** 2297
 - **last_swarm_critique:** 738
 - **anti_pattern:** 651
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903204108:5:296ec8`
+*03.09. 20:41 UTC · Quelle: dream*
+
+The tor artifact fails to run with a traceback at line 206 of the action script, pointing to a code-quality issue in the generated artifact rather than a runtime environment problem.
+
+### `dream:20260903204108:4:3892bc`
+*03.09. 20:41 UTC · Quelle: dream*
+
+Calibration predicted 7 against an actual value of 1 (abs_error 6), revealing that confidence estimates are poorly calibrated and should be discounted.
+
+### `dream:20260903204108:3:8fe4ed`
+*03.09. 20:41 UTC · Quelle: dream*
+
+All three hand_action executions failed with exit code 1 and no error message, suggesting a systematic artifact execution problem rather than transient failures.
+
+### `dream:20260903204108:2:1eb9e1`
+*03.09. 20:41 UTC · Quelle: dream*
+
+A 502 upstream overload from the Nvidia endpoint confirms that infrastructure strain compounds rate-limiting, requiring defensive retry logic beyond simple backoff.
+
+### `dream:20260903204108:1:262a75`
+*03.09. 20:41 UTC · Quelle: dream*
+
+429 rate-limit errors from OpenRouter are the dominant failure mode, hitting 4+ different models simultaneously, indicating an API-level bottleneck rather than model-specific issues.
 
 ### `dream:20260903203222:5:e530eb`
 *03.09. 20:32 UTC · Quelle: dream*

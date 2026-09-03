@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
@@ -38,9 +37,15 @@
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The tor artifact fails to run with a traceback at line 206 of the action script, pointing to a code-quality issue in the generated artifact rather tha
+- Calibration predicted 7 against an actual value of 1 (abs_error 6), revealing that confidence estimates are poorly calibrated and should be discounted
+- All three hand_action executions failed with exit code 1 and no error message, suggesting a systematic artifact execution problem rather than transien
+- A 502 upstream overload from the Nvidia endpoint confirms that infrastructure strain compounds rate-limiting, requiring defensive retry logic beyond s
+- 429 rate-limit errors from OpenRouter are the dominant failure mode, hitting 4+ different models simultaneously, indicating an API-level bottleneck ra
 - Stale analytical work accumulates unchecked — no mechanism currently flags or expires outdated knowledge, degrading decision quality over time.
 - Under stress (stress=1.0) the system enters conserve mode with severely limited budgets, which compounds the impact of each individual model failure.
 - A persistent gap exists between skill proposal generation and actual deployment — proposals accumulate without a mechanism to promote them into active
@@ -51,11 +56,6 @@
 - Swarm converged in 1 cycle despite model instability, proving task decomposition absorbs individual model failures.
 - Nemotron-3-ultra succeeds but at 74–162 s latency, making it a throughput bottleneck not a reliability fix.
 - Rate-limiting on glm-5.2:free follows a burst pattern (5×429 in 90s) that saturates the fallback model's capacity.
-- Reflex tool 'veraltete-infos-auffrischen.py' failed, indicating automated refresh scripts need error handling or replacement.
-- System operates under high stress (1.0) in conserve mode, severely limiting parallel task execution (max_tasks=3, max_iterations=1).
-- The simulation→revision→TOR loop (verdict: revise → 5 revisions applied → TOR grün) successfully validates artifact correctness.
-- Hand actions fail when using relative paths; they must resolve inputs via sys.argv[1] and ZOETRON_DATA environment variable.
-- The model z-ai/glm-5.2:free fails consistently with 429 rate-limit errors, making it unreliable as a primary model.
 
 ---
 
