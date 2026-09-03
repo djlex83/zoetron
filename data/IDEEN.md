@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning (41 events) without insight re-embedding loses high-value stale knowledge, requiring periodic consolidation job.
+- Path-related proposals repeat ZOETRON_DATA canonicalization need, suggesting hand actions frequently fail from relative-path ambiguity.
+- Multiple skill proposals for model routing, path resolution, and health profiling exist but remain unimplemented, showing gap between proposal generat
+- Automatic fallback to nvidia/nemotron-3-ultra works but latency varies 10-16s, indicating need for composite scoring (latency × cost × availability) u
+- Recurring 429 errors on z-ai/glm-5.2:free reveal single-provider dependency as primary failure mode, requiring provider-diverse routing with quota tra
 - The swarm converged in one cycle with score 8, demonstrating that multi-role orchestration (planner/builder/critic) can achieve target quality despite
 - Calibration predicted 7 failures vs 8 actual (error=1), showing the failure estimator is well-calibrated but slightly optimistic.
 - Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra) succeeded, both with ~20s latency, establishing a high-latency baseline f
@@ -51,11 +56,6 @@
 - Swarm cycles consistently fail to converge (score 1, converged=false), revealing missing convergence criteria or insufficient critic feedback.
 - Nemotron-3-ultra succeeds but shows 7x latency variance (14–102s), indicating unreliable throughput for time-bounded tasks.
 - The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limit errors, making it unusable without a retry/fallback strategy.
-- Evolution optimizes for proxy metrics that don't transfer; winner variant scored 9-10 in evolution but 1 in reality.
-- Calibration error of 5 points (predicted 6 vs actual 1) reveals systemic overconfidence in planning estimates.
-- Artifact execution fails repeatedly due to sandbox environment issues (missing data dirs, tracebacks), not code logic errors.
-- Simulator scores (9-10) catastrophically diverge from real execution scores (1), indicating reward hacking or missing environment constraints in simul
-- Free-tier models (glm-5.2) consistently hit 429 rate limits, making them unreliable for primary workloads without a fallback chain.
 
 ---
 

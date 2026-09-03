@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10253 Fakten** · Stand 2026-09-03 05:17 UTC · aktualisiert bei jedem Herzschlag
+**10258 Fakten** · Stand 2026-09-03 05:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5590
+- **dream:** 5595
 - **swarm_artifact:** 2181
 - **last_swarm_critique:** 718
 - **anti_pattern:** 631
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903052412:5:4ccadb`
+*03.09. 05:24 UTC · Quelle: dream*
+
+Event pruning (41 events) without insight re-embedding loses high-value stale knowledge, requiring periodic consolidation job.
+
+### `dream:20260903052412:4:ee6015`
+*03.09. 05:24 UTC · Quelle: dream*
+
+Path-related proposals repeat ZOETRON_DATA canonicalization need, suggesting hand actions frequently fail from relative-path ambiguity.
+
+### `dream:20260903052412:3:9a5929`
+*03.09. 05:24 UTC · Quelle: dream*
+
+Multiple skill proposals for model routing, path resolution, and health profiling exist but remain unimplemented, showing gap between proposal generation and execution.
+
+### `dream:20260903052412:2:16baee`
+*03.09. 05:24 UTC · Quelle: dream*
+
+Automatic fallback to nvidia/nemotron-3-ultra works but latency varies 10-16s, indicating need for composite scoring (latency × cost × availability) under current stress.
+
+### `dream:20260903052412:1:78e65f`
+*03.09. 05:24 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free reveal single-provider dependency as primary failure mode, requiring provider-diverse routing with quota tracking.
 
 ### `dream:20260903051507:5:a19354`
 *03.09. 05:15 UTC · Quelle: dream*
