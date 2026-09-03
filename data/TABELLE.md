@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7610 Neuronen · 542717 bewertete Synapsen
+Stand: 7616 Neuronen · 543367 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,7 +10,7 @@ Stand: 7610 Neuronen · 542717 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 658 | 0.24 |
+| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 659 | 0.24 |
 | 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 601 | 0.26 |
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 643 | 0.24 |
 | 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 651 | 0.23 |
@@ -19,11 +19,11 @@ Stand: 7610 Neuronen · 542717 bewertete Synapsen
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 540 | 0.27 |
 | 8 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 634 | 0.23 |
 | 9 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 561 | 0.25 |
-| 10 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 529 | 0.27 |
-| 11 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 551 | 0.26 |
+| 10 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 530 | 0.27 |
+| 11 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 552 | 0.26 |
 | 12 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 571 | 0.24 |
-| 13 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 563 | 0.24 |
-| 14 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 548 | 0.25 |
+| 13 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 549 | 0.25 |
+| 14 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 563 | 0.24 |
 | 15 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 572 | 0.24 |
 
 ## Die 15 stärksten Synapsen

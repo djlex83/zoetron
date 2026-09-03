@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10795 Fakten** · Stand 2026-09-03 21:01 UTC · aktualisiert bei jedem Herzschlag
+**10800 Fakten** · Stand 2026-09-03 21:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5930
+- **dream:** 5935
 - **swarm_artifact:** 2297
 - **last_swarm_critique:** 738
 - **anti_pattern:** 651
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903210746:5:f10448`
+*03.09. 21:07 UTC · Quelle: dream*
+
+Fact pruning removes events but no TTL mechanism exists for semantic knowledge, allowing stale analyses to persist indefinitely.
+
+### `dream:20260903210746:4:d2f760`
+*03.09. 21:07 UTC · Quelle: dream*
+
+Reactive fallback routing works but lacks proactive capacity awareness, causing repeated 429 hammering before switch.
+
+### `dream:20260903210746:3:af7aa6`
+*03.09. 21:07 UTC · Quelle: dream*
+
+Market analyses are generated but never trigger actions, revealing a missing link between insight generation and goal activation.
+
+### `dream:20260903210746:2:6b1fbc`
+*03.09. 21:07 UTC · Quelle: dream*
+
+Skill proposals accumulate (7+ in log) but none transition to implemented capabilities, indicating a broken proposal-to-production pipeline.
+
+### `dream:20260903210746:1:a26319`
+*03.09. 21:07 UTC · Quelle: dream*
+
+GLM-5.2 fails deterministically under rate limits (429) while Nemotron succeeds but with 2x latency variance (9-16s), creating unpredictable tail latency.
 
 ### `dream:20260903205854:5:cac28f`
 *03.09. 20:58 UTC · Quelle: dream*

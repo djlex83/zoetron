@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 21:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,10 +26,10 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fact pruning removes events but no TTL mechanism exists for semantic knowledge, allowing stale analyses to persist indefinitely.
+- Reactive fallback routing works but lacks proactive capacity awareness, causing repeated 429 hammering before switch.
+- Market analyses are generated but never trigger actions, revealing a missing link between insight generation and goal activation.
+- Skill proposals accumulate (7+ in log) but none transition to implemented capabilities, indicating a broken proposal-to-production pipeline.
+- GLM-5.2 fails deterministically under rate limits (429) while Nemotron succeeds but with 2x latency variance (9-16s), creating unpredictable tail late
 - Unvalidated skill proposals accumulate without a testing harness, creating technical debt and duplicated effort.
 - Reflex-based tool selection outperforms heuristic search when failure patterns are cataloged in a searchable index.
 - Latency variance between models (13s vs 35s) demands continuous profiling before routing decisions can optimize for speed.
@@ -51,11 +56,6 @@
 - High-latency fallback models (30-43s) succeed where fast free models fail, revealing a latency-reliability tradeoff not captured in model selection lo
 - Evolutionary optimization cycles converge on paper (scores 7-8) but fail in deployment (score 1), indicating a simulation-to-reality gap in the fitnes
 - Free-tier models consistently fail with 429 rate limits under sustained load, making them unreliable for production workflows.
-- The tor artifact fails to run with a traceback at line 206 of the action script, pointing to a code-quality issue in the generated artifact rather tha
-- Calibration predicted 7 against an actual value of 1 (abs_error 6), revealing that confidence estimates are poorly calibrated and should be discounted
-- All three hand_action executions failed with exit code 1 and no error message, suggesting a systematic artifact execution problem rather than transien
-- A 502 upstream overload from the Nvidia endpoint confirms that infrastructure strain compounds rate-limiting, requiring defensive retry logic beyond s
-- 429 rate-limit errors from OpenRouter are the dominant failure mode, hitting 4+ different models simultaneously, indicating an API-level bottleneck ra
 
 ---
 

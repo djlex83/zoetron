@@ -7488,3 +7488,25 @@
 {"ts": 1787864282.3183072, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 35.5, "tokens_ein": 281, "tokens_aus": 1344}}
 {"ts": 1787864282.3185363, "kind": "simulation", "payload": {"goal": "Organfehler beheben", "verdict": "go", "risks": 5, "revisions": 5}}
 {"ts": 1787864287.865471, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787864287.8654678, "schalter_geoeffnet": false}}
+{"ts": 1787864377.3265321, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 89.5, "tokens_ein": 2020, "tokens_aus": 2158}}
+{"ts": 1787864378.090983, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787864378.09098, "schalter_geoeffnet": false}}
+{"ts": 1787864466.324562, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 88.2, "tokens_ein": 2389, "tokens_aus": 2875}}
+{"ts": 1787864466.9403303, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787864466.9403267, "schalter_geoeffnet": false}}
+{"ts": 1787864467.3461597, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1787864467.3461576, "schalter_geoeffnet": false}}
+{"ts": 1787864467.4756236, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787864467.4756205, "schalter_geoeffnet": false}}
+{"ts": 1787864467.585304, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787864467.5853004, "schalter_geoeffnet": false}}
+{"ts": 1787864652.5177858, "kind": "model_ok", "payload": {"model": "poolside/laguna-s-2.1:free", "latency_s": 184.9, "tokens_ein": 2957, "tokens_aus": 10000}}
+{"ts": 1787864656.8555355, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 4.2, "tokens_ein": 2680, "tokens_aus": 1991}}
+{"ts": 1787864657.4310174, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.26, "gelesen": 57}}
+{"ts": 1787864657.6752386, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 60}}
+{"ts": 1787864657.6755586, "kind": "tor", "payload": {"goal": "Organfehler beheben", "gruen": true, "grund": "Artefakt laeuft (276 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787864658.281759, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787864658.2817564, "schalter_geoeffnet": false}}
+{"ts": 1787864680.2015634, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 21.9, "tokens_ein": 7039, "tokens_aus": 1160}}
+{"ts": 1787864680.2024333, "kind": "calibration", "payload": {"goal": "Organfehler beheben", "predicted": 6, "actual": 8, "abs_error": 2}}
+{"ts": 1787864680.2025094, "kind": "model_score", "payload": {"model": "z-ai/glm-5.2:free", "score": 8}}
+{"ts": 1787864695.2813048, "kind": "bahnen", "payload": {"goal": "Organfehler beheben", "delta": 1.0, "kanten": 15, "hat_code": true, "score": 8, "abgerufen": 5, "ids": ["e:632212aab60d", "e:b8eac66e5a3d", "f:5c252633e483", "f:e6697c36f2bc", "f:fc294734ed47"], "ziel_id": "g:916640a51ad2"}}
+{"ts": 1787864695.2815113, "kind": "swarm_finished", "payload": {"goal": "Organfehler beheben", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 4, "critic": 1}, "evolved": false}}
+{"ts": 1787864695.2817097, "kind": "act_done", "payload": {"goal_title": "Organfehler beheben", "score": 8, "converged": true}}
+{"ts": 1787864695.7216227, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.27, "gelesen": 57}}
+{"ts": 1787864698.5923743, "kind": "issue_synced", "payload": {"issue": 168, "state": "closed"}}
+{"ts": 1787864782.078812, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
