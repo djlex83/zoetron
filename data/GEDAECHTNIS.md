@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10535 Fakten** · Stand 2026-09-03 13:34 UTC · aktualisiert bei jedem Herzschlag
+**10552 Fakten** · Stand 2026-09-03 13:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5770
-- **swarm_artifact:** 2237
-- **last_swarm_critique:** 728
-- **anti_pattern:** 643
-- **last_swarm_goal:** 476
-- **strategy:** 342
-- **tool:** 132
+- **dream:** 5775
+- **swarm_artifact:** 2243
+- **last_swarm_critique:** 729
+- **anti_pattern:** 645
+- **last_swarm_goal:** 477
+- **strategy:** 343
+- **tool:** 133
 - **hand_result:** 115
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:marktanalyse-endlich-umsetzen`
+*03.09. 13:44 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Marktanalyse endlich umsetzen'. Datei: data/tools/marktanalyse-endlich-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse endlich ums:2`
+*03.09. 13:43 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 7]): Functional Core / Imperative Shell with Pure Validation - Separate the system into a pure functional core (no side effects, no fallbacks, deterministic) and a thin imperative shell (handles I/O, logging, error reporti
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Marktanalyse endlich ums:1`
+*03.09. 13:43 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 6, 8]): Event-Sourced State Machine with Append-Log - Model the market analysis as a state machine with explicit states: PENDING, EXTRACTING, VALIDATING, SUMMARIZING, COMPLETE, FAILED. Each transition appends an event to an i
+
+### `last_swarm_critique`
+*03.09. 13:43 UTC · Quelle: critic*
+
+score=7; issues=Drei separate Code-Bloecke mit inkonsistenten Schnittstellen (extract_market_data gibt in Block 1 combined zurueck, in Block 2/3 Tuples), was die Komposierbarkeit erschwert; validate_directives hat unterschiedliche Logik in Block 2 (Keyword-Pru
+
+### `last_swarm_goal`
+*03.09. 13:40 UTC · Quelle: system*
+
+Marktanalyse endlich umsetzen
+
+### `dream:20260903134032:5:121d9d`
+*03.09. 13:40 UTC · Quelle: dream*
+
+The system's conserve-mode budget constraints (max 1 iteration) prevent self-improvement cycles from completing, creating a deadlock where the system needs resources to fix the resource-management problem.
+
+### `dream:20260903134032:4:a73a9b`
+*03.09. 13:40 UTC · Quelle: dream*
+
+Relative path resolution without canonical validation causes silent execution failures when the working directory or environment variables don't match expectations.
+
+### `dream:20260903134032:3:d565de`
+*03.09. 13:40 UTC · Quelle: dream*
+
+Generated skill proposals and dream insights remain unimplemented because there is no pipeline connecting idea generation to validated deployment.
+
+### `dream:20260903134032:2:e78a75`
+*03.09. 13:40 UTC · Quelle: dream*
+
+Stale analysis and market data accumulate systematically because no automated refresh mechanism exists to detect and act on outdated information.
+
+### `dream:20260903134032:1:4b813f`
+*03.09. 13:40 UTC · Quelle: dream*
+
+Recurring 429 rate-limit errors from the glm-5.2 model reveal the absence of a circuit breaker and fallback chain, causing cascading failures whenever the primary model is saturated.
 
 ### `dream:20260903133122:5:2a93c3`
 *03.09. 13:31 UTC · Quelle: dream*

@@ -6552,3 +6552,16 @@
 {"ts": 1787837425.6317616, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 0}}
 {"ts": 1787837425.6319575, "kind": "tor", "payload": {"goal": "Effizienter werden", "gruen": true, "grund": "Artefakt laeuft (132 Zeilen Python)", "zyklus": 1}}
 {"ts": 1787837431.373464, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787837431.3734615, "schalter_geoeffnet": false}}
+{"ts": 1787837435.9850194, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1787837435.9850168, "schalter_geoeffnet": true}}
+{"ts": 1787837435.985115, "kind": "model_gesperrt", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "sperre_s": 1800, "grund": "3 Fehler in Folge"}}
+{"ts": 1787837436.1171775, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787837436.1171737, "schalter_geoeffnet": false}}
+{"ts": 1787837436.295612, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787837436.2956092, "schalter_geoeffnet": false}}
+{"ts": 1787837480.1466224, "kind": "model_ok", "payload": {"model": "poolside/laguna-s-2.1:free", "latency_s": 43.9, "tokens_ein": 5681, "tokens_aus": 2697}}
+{"ts": 1787837480.1474142, "kind": "calibration", "payload": {"goal": "Effizienter werden", "predicted": 5, "actual": 8, "abs_error": 3}}
+{"ts": 1787837480.1474864, "kind": "model_score", "payload": {"model": "poolside/laguna-s-2.1:free", "score": 8}}
+{"ts": 1787837494.2333965, "kind": "bahnen", "payload": {"goal": "Effizienter werden", "delta": 1.0, "kanten": 28, "hat_code": true, "score": 8, "abgerufen": 8, "ids": ["f:dae6fc33b8b9", "f:0a0e7456d7de", "f:e1a446cd6b5b", "f:443a297c21aa", "f:3b6cf187fbf0", "f:5287d0fe9cf0", "f:d4f00a3ac10f", "f:b31df5c377e8"], "ziel_id": "g:dcfde4a717ab"}}
+{"ts": 1787837494.2336204, "kind": "swarm_finished", "payload": {"goal": "Effizienter werden", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1787837494.2338474, "kind": "act_done", "payload": {"goal_title": "Effizienter werden", "score": 8, "converged": true}}
+{"ts": 1787837497.8623052, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 1}}
+{"ts": 1787837500.4739425, "kind": "issue_synced", "payload": {"issue": 158, "state": "closed"}}
+{"ts": 1787837578.6835616, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

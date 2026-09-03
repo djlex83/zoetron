@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 13:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 13:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system's conserve-mode budget constraints (max 1 iteration) prevent self-improvement cycles from completing, creating a deadlock where the system 
+- Relative path resolution without canonical validation causes silent execution failures when the working directory or environment variables don't match
+- Generated skill proposals and dream insights remain unimplemented because there is no pipeline connecting idea generation to validated deployment.
+- Stale analysis and market data accumulate systematically because no automated refresh mechanism exists to detect and act on outdated information.
+- Recurring 429 rate-limit errors from the glm-5.2 model reveal the absence of a circuit breaker and fallback chain, causing cascading failures whenever
 - Free-tier models succeed intermittently with high latency (50-65s), making predictive tier selection essential to avoid wasted calls and timeouts.
 - The system can self-diagnose structural health and converge on reflex execution, but cannot overcome external dependency failures without explicit res
 - Knowledge assets such as market analyses decay over time and must be actively rehydrated nightly rather than passively stored.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without a validation-to-deployment pipeline, causing capability gaps despite abundant ideas.
 - Working models (nvidia/nemotron-3-ultra) exhibit high latency (43-64s), necessitating latency-aware routing and streaming fallbacks for interactive ta
 - Rate-limited models (z-ai/glm-5.2:free) consistently fail with 429 errors, requiring provider-level rate limiting and automatic fallback.
-- Hand actions fail on relative path resolution indicating environment drift between simulation and production contexts.
-- Skill proposals accumulate (5+) but reflex-driven implementation fails due to path resolution errors and missing execution pipeline.
-- Conserve-mode metabolism (1 iteration budget) starves simulation validation, creating blind spots for destructive operations.
-- Nemotron backup works but exhibits extreme latency variance (47-211s) requiring adaptive timeouts and circuit breakers.
-- GLM model consistently fails with 429 rate-limit errors making it unusable as primary without robust fallback.
 
 ---
 
