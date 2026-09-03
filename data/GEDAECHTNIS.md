@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10675 Fakten** · Stand 2026-09-03 17:35 UTC · aktualisiert bei jedem Herzschlag
+**10680 Fakten** · Stand 2026-09-03 17:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5840
+- **dream:** 5845
 - **swarm_artifact:** 2279
 - **last_swarm_critique:** 735
 - **anti_pattern:** 649
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903175032:5:40f011`
+*03.09. 17:50 UTC · Quelle: dream*
+
+Swarm converges poorly (score 4, not converged) when builder role dominates 3:1 over planner/critic.
+
+### `dream:20260903175032:4:cee05b`
+*03.09. 17:50 UTC · Quelle: dream*
+
+Evolutionary search with 3 variants reliably lifts skill scores from 4 to 8+ (winner scores [8,7,9]).
+
+### `dream:20260903175032:3:a59c93`
+*03.09. 17:50 UTC · Quelle: dream*
+
+Hand actions failing in <0.03s with 0 bytes read indicate missing precondition checks (paths, permissions).
+
+### `dream:20260903175032:2:00e406`
+*03.09. 17:50 UTC · Quelle: dream*
+
+Calibration underestimates required cycles by 3x (predicted 1, actual 4) for skill-generation tasks.
+
+### `dream:20260903175032:1:c9ee22`
+*03.09. 17:50 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free consistently returns 429 Too Many Requests errors and should be excluded from primary routing.
 
 ### `tool:fähigkeiten-bündeln-und-ziele-prüfen`
 *03.09. 17:34 UTC · Quelle: hands*
