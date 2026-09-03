@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 08:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 09:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,14 +18,14 @@
 - Build a simulation scaffold that converts any high-level goal into a runnable script with explicit I/O contrac *(hatte die Idee 4×)*
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
 - Add a metabolism-aware retry scheduler that reserves a configurable iteration budget for rate-limit retries an *(hatte die Idee 4×)*
-- Implement ModelRouter with per-provider health scoring (success rate, 429 frequency, latency p95) and automati *(hatte die Idee 3×)*
-- Build RateLimitAwareScheduler that spaces requests per provider using token-bucket estimators derived from obs *(hatte die Idee 3×)*
+- Add DiagnosticGapDetector that correlates per-organ healthy reports with cross-organ failure signatures (e.g., *(hatte die Idee 3×)*
+- Create StaleDataLifecycle that timestamps facts and events, prunes entries past a TTL, and surfaces unused ana *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five skill proposals were generated (circuit breaker, pipeline, middleware, router, tracing) but none have been promoted to executable tasks, showing 
+- Pruning removed 92 events but 0 facts, indicating experience consolidation is discarding operational context faster than durable knowledge is extracte
+- Critic identifies "directory disconnects" as a structural issue, suggesting skill proposals lack proper integration pathways into the system's capabil
+- Evolution runs for "turn skill proposals into real skills" score only 4/10 and fail to converge despite 2 swarm cycles, revealing a gap between propos
+- The z-ai/glm-5.2:free provider consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds but with 35-58s latency, indicatin
 - Repeated fallback attempts without backoff strategy waste cycles and increase total latency.
 - Skill conversion pipeline executes successfully (artifact running 202 lines Python) but calibration error suggests estimation inaccuracy.
 - System operates under maximum stress (1.0) with conservative budget, limiting parallel task execution to 3 tasks and 1 iteration.
@@ -51,11 +56,6 @@
 - Relative path assumptions break hand actions; all file operations must resolve against ZOETRON_DATA environment variable.
 - Skill proposals accumulate without implementation because no automated pipeline exists to convert proposals into tested, deployed skills.
 - Rate-limited models without automatic fallback cause cascading failures; a provider-diverse registry with circuit breaking is essential.
-- Rate limiting manifests as sudden 429 bursts without header-based early warning, causing reactive rather than proactive model switching.
-- Event pruning (18 events) preserves facts but discards operational context needed for debugging model failures.
-- Reflex-based automation succeeds for well-scoped tasks (dream connection converged) but hand_action timeouts indicate unreliable primitive operations.
-- Skill proposals accumulate faster than implementation (3 drive goals vs 0 completed skills), revealing an execution gap between ideation and deploymen
-- Model API reliability is the primary system bottleneck with cascading 429/502 failures across 4 of 6 providers, making external dependency management 
 
 ---
 

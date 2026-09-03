@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10387 Fakten** · Stand 2026-09-03 09:00 UTC · aktualisiert bei jedem Herzschlag
+**10392 Fakten** · Stand 2026-09-03 09:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5670
+- **dream:** 5675
 - **swarm_artifact:** 2211
 - **last_swarm_critique:** 723
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903090732:5:ceef9c`
+*03.09. 09:07 UTC · Quelle: dream*
+
+Five skill proposals were generated (circuit breaker, pipeline, middleware, router, tracing) but none have been promoted to executable tasks, showing a proposal-to-implementation bottleneck.
+
+### `dream:20260903090732:4:464c68`
+*03.09. 09:07 UTC · Quelle: dream*
+
+Pruning removed 92 events but 0 facts, indicating experience consolidation is discarding operational context faster than durable knowledge is extracted.
+
+### `dream:20260903090732:3:073c84`
+*03.09. 09:07 UTC · Quelle: dream*
+
+Critic identifies "directory disconnects" as a structural issue, suggesting skill proposals lack proper integration pathways into the system's capability registry.
+
+### `dream:20260903090732:2:e35ded`
+*03.09. 09:07 UTC · Quelle: dream*
+
+Evolution runs for "turn skill proposals into real skills" score only 4/10 and fail to converge despite 2 swarm cycles, revealing a gap between proposal generation and executable skill implementation.
+
+### `dream:20260903090732:1:2085ea`
+*03.09. 09:07 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free provider consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds but with 35-58s latency, indicating a need for provider-aware routing with health scoring.
 
 ### `dream:20260903085751:5:df9185`
 *03.09. 08:57 UTC · Quelle: dream*
