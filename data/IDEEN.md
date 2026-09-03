@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 01:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 02:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model response latency varies by 2.5x (9.5s to 24.1s) under similar load, requiring SLA enforcement to guarantee predictable system behavior.
+- Without circuit breakers and automatic provider fallback, a single rate-limited model causes cascading latency and failed predictions across the entir
+- Analytical outputs (e.g., market analysis) lose actionable value exponentially if not converted into concrete plans within a bounded time window.
+- The system's largest bottleneck is the gap between generating skill proposals and actually executing them—proposals without enforcement mechanisms dec
+- Free-tier API providers (e.g., z-ai/glm-5.2) are structurally unreliable under load and must never serve as primary models; they should be last-resort
 - The 190-line Python artifact executed cleanly (exit 0), proving the generate→execute→verify loop is functional.
 - Calibration error of 1 point (predicted 6 vs actual 7) shows the system’s self-assessment is already useful.
 - A single evolution cycle with three variants lifted the critic score from 7 to 8–9, confirming iterative refinement works.
@@ -51,11 +56,6 @@
 - Reflex tools are deployed without pre-flight validation, causing immediate execution failures (e.g., modellfehler-deutlich-reduzieren.py).
 - File operations fail because tools use relative paths instead of resolving against ZOETRON_DATA environment variable.
 - Free-tier model endpoints on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads.
-- Skill proposals accumulate (5 in this cycle alone) but the "build proposed skills" goal remains stale, confirming a pattern of proposal generation wit
-- System operates at maximum stress (1.0) in conserve mode with severely limited budgets (max_tasks=3, max_iterations=1), causing premature termination 
-- Reflex tools fail due to filesystem path resolution errors ("nichts gelesen - der Lauf endete mit 0"), showing that automation scripts assume incorrec
-- Three identical drive goals (reduce model errors, complete market analysis, build proposed skills) recur across cycles without convergence, revealing 
-- The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating provider-specific quota exhaus
 
 ---
 

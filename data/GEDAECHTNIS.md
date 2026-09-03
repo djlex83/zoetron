@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10137 Fakten** · Stand 2026-09-03 01:37 UTC · aktualisiert bei jedem Herzschlag
+**10142 Fakten** · Stand 2026-09-03 02:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5520
+- **dream:** 5525
 - **swarm_artifact:** 2155
 - **last_swarm_critique:** 713
 - **anti_pattern:** 627
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903020307:5:f4d9c6`
+*03.09. 02:03 UTC · Quelle: dream*
+
+Model response latency varies by 2.5x (9.5s to 24.1s) under similar load, requiring SLA enforcement to guarantee predictable system behavior.
+
+### `dream:20260903020307:4:fbcd0b`
+*03.09. 02:03 UTC · Quelle: dream*
+
+Without circuit breakers and automatic provider fallback, a single rate-limited model causes cascading latency and failed predictions across the entire pipeline.
+
+### `dream:20260903020307:3:873c09`
+*03.09. 02:03 UTC · Quelle: dream*
+
+Analytical outputs (e.g., market analysis) lose actionable value exponentially if not converted into concrete plans within a bounded time window.
+
+### `dream:20260903020307:2:79f2ac`
+*03.09. 02:03 UTC · Quelle: dream*
+
+The system's largest bottleneck is the gap between generating skill proposals and actually executing them—proposals without enforcement mechanisms decay into stale artifacts.
+
+### `dream:20260903020307:1:7290df`
+*03.09. 02:03 UTC · Quelle: dream*
+
+Free-tier API providers (e.g., z-ai/glm-5.2) are structurally unreliable under load and must never serve as primary models; they should be last-resort fallbacks only.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen konsequent :2`
 *03.09. 01:35 UTC · Quelle: evolution*
