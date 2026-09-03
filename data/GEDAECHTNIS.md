@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10827 Fakten** · Stand 2026-09-03 22:03 UTC · aktualisiert bei jedem Herzschlag
+**10832 Fakten** · Stand 2026-09-03 22:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5950
+- **dream:** 5955
 - **swarm_artifact:** 2303
 - **last_swarm_critique:** 739
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903221036:5:8def17`
+*03.09. 22:10 UTC · Quelle: dream*
+
+Transient 429 failures resolve spontaneously (model recovers to 4.0s latency), proving that pre-flight health probes and cached availability checks would prevent unnecessary routing to rate-limited models.
+
+### `dream:20260903221036:4:47c814`
+*03.09. 22:10 UTC · Quelle: dream*
+
+Event accumulation (23 pruned) far outpaces fact distillation (0 pruned), revealing that raw experiences are stored but never condensed into durable knowledge without a TTL-based janitor.
+
+### `dream:20260903221036:3:ee545d`
+*03.09. 22:10 UTC · Quelle: dream*
+
+Stale analytical work (market analysis) is repeatedly flagged but never completed, indicating a missing auto-escalation or auto-decomposition mechanism for overdue deliverables.
+
+### `dream:20260903221036:2:8f46cc`
+*03.09. 22:10 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution — the recurring 'gap' signal confirms that ideas are generated faster than they are tested, creating backlog bloat and knowledge rot.
+
+### `dream:20260903221036:1:d76e88`
+*03.09. 22:10 UTC · Quelle: dream*
+
+429 rate-limit errors on z-ai/glm-5.2:free recur within seconds and cascade into task failures because no circuit breaker or cooldown exists to halt repeated calls to a cooling model.
 
 ### `dream:20260903220106:5:3920ab`
 *03.09. 22:01 UTC · Quelle: dream*
