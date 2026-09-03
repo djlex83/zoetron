@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10651 Fakten** · Stand 2026-09-03 16:59 UTC · aktualisiert bei jedem Herzschlag
+**10656 Fakten** · Stand 2026-09-03 17:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5825
+- **dream:** 5830
 - **swarm_artifact:** 2273
 - **last_swarm_critique:** 734
 - **anti_pattern:** 649
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903171030:5:6e64a7`
+*03.09. 17:10 UTC · Quelle: dream*
+
+Simulation approved a risky swarm (3 risks) while metabolism allowed only 1 iteration, guaranteeing incomplete execution.
+
+### `dream:20260903171030:4:f177aa`
+*03.09. 17:10 UTC · Quelle: dream*
+
+Proposed skills (calibration adjuster, stress scheduler, retry wrapper) directly address the observed failure modes but remain untested.
+
+### `dream:20260903171030:3:8ae139`
+*03.09. 17:10 UTC · Quelle: dream*
+
+Hand actions fail because they use relative paths instead of the absolute ZOETRON_DATA root, causing silent zero-byte runs.
+
+### `dream:20260903171030:2:5b5c7c`
+*03.09. 17:10 UTC · Quelle: dream*
+
+High stress (1.0) triggers conserve mode but the scheduler still spawns swarms that immediately hit model failures, wasting the tiny budget.
+
+### `dream:20260903171030:1:e5c04e`
+*03.09. 17:10 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) across multiple free-tier models indicate reliance on unreliable endpoints without circuit-breaking.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeits-Vorschläge in:1`
 *03.09. 16:56 UTC · Quelle: evolution*

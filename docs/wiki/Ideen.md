@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 16:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 17:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation approved a risky swarm (3 risks) while metabolism allowed only 1 iteration, guaranteeing incomplete execution.
+- Proposed skills (calibration adjuster, stress scheduler, retry wrapper) directly address the observed failure modes but remain untested.
+- Hand actions fail because they use relative paths instead of the absolute ZOETRON_DATA root, causing silent zero-byte runs.
+- High stress (1.0) triggers conserve mode but the scheduler still spawns swarms that immediately hit model failures, wasting the tiny budget.
+- Rate limiting (429) and upstream overload (502) across multiple free-tier models indicate reliance on unreliable endpoints without circuit-breaking.
 - Under high metabolic stress (stress=1.0, state=conserve), the system restricts to max_tasks=3 and max_iterations=1, which can prematurely terminate sw
 - The nemotron model succeeds but exhibits high latency variance (26–120 s); timeouts should be set to at least 150 s and tasks should be parallelized t
 - Calibration predictions systematically underestimate actual scores by ~2 points (predicted 6 vs actual 8), indicating a need to adjust the calibration
@@ -51,11 +56,6 @@
 - Hand-action failure due to unresolved relative paths shows that data-access helpers must canonicalize paths against ZOETRON_DATA before execution.
 - Fallback model latency varies 2.5x (26–69 s), revealing cold-start effects that keep-alive pings could stabilize.
 - Recurring 429 errors on the same model indicate missing per-model rate-limit tracking and automatic fallback logic.
-- Pruning removed 40 events but 0 facts, suggesting episodic noise accumulates faster than semantic drift.
-- Stress signals (model failures, rate limits) correlate with increased drive-goal generation (3 new goals this cycle).
-- The system generates skill proposals faster than it can validate them: 5 proposals queued with no deployment pipeline.
-- Swarm execution converges in 1 cycle when roles are balanced (1 planner, 3 builders, 1 critic) but calibration underestimates effort by ~25%.
-- Model reliability is the primary bottleneck: 4/6 models failed with 429/502 errors while only inclusionai/ling-3.0-flash-fin:free succeeded consistent
 
 ---
 
