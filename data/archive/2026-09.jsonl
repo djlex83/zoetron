@@ -5916,3 +5916,13 @@
 {"ts": 1787820415.578252, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 89.8, "tokens_ein": 467, "tokens_aus": 2646}}
 {"ts": 1787820415.5787387, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeiten wirklich nutzbar machen\nCritic issues: Only provides audi", "variants": 3, "winner_index": 1, "scores": [8.3, 8.7, 6.3]}}
 {"ts": 1787820430.8847497, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787820430.8847475, "schalter_geoeffnet": false}}
+{"ts": 1787820471.664874, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 40.8, "tokens_ein": 502, "tokens_aus": 1025}}
+{"ts": 1787820472.2562435, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787820472.2562408, "schalter_geoeffnet": false}}
+{"ts": 1787820489.2912095, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 17.0, "tokens_ein": 392, "tokens_aus": 1199}}
+{"ts": 1787820489.2913651, "kind": "simulation", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich nutzbar machen", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787820489.2914772, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787820489.291575, "kind": "swarm_finished", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich nutzbar machen", "score": 4, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787820489.2917702, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten wirklich nutzbar machen", "score": 4, "converged": false}}
+{"ts": 1787820489.8736868, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.28, "gelesen": 54}}
+{"ts": 1787820492.202037, "kind": "issue_synced", "payload": {"issue": 150, "state": "open"}}
+{"ts": 1787820565.4688537, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

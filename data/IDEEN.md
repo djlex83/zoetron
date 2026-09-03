@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 08:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 08:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated fallback attempts without backoff strategy waste cycles and increase total latency.
+- Skill conversion pipeline executes successfully (artifact running 202 lines Python) but calibration error suggests estimation inaccuracy.
+- System operates under maximum stress (1.0) with conservative budget, limiting parallel task execution to 3 tasks and 1 iteration.
+- Fallback model (nemotron-3-ultra) succeeds but exhibits high latency variance (19-135s), indicating unpredictable performance.
+- Primary model (glm-5.2) consistently fails with 429 rate limits, making it unreliable for production use.
 - Event pruning without fact extraction wastes experience; a continuous event-to-fact compressor must run before pruning.
 - High stress triggers conserve mode that starves consolidation; memory pressure must trigger proactive compression before stress peaks.
 - Relative path assumptions break hand actions; all file operations must resolve against ZOETRON_DATA environment variable.
@@ -51,11 +56,6 @@
 - Reflex-based automation succeeds for well-scoped tasks (dream connection converged) but hand_action timeouts indicate unreliable primitive operations.
 - Skill proposals accumulate faster than implementation (3 drive goals vs 0 completed skills), revealing an execution gap between ideation and deploymen
 - Model API reliability is the primary system bottleneck with cascading 429/502 failures across 4 of 6 providers, making external dependency management 
-- Model latency variance (34–72s) under fallback indicates no health-aware routing or composite scoring under load.
-- Reflex actions succeed for known patterns but lack a mechanism to generalize solutions to novel failure modes.
-- Stale goals persist across cycles without automatic intervention, requiring manual reflex cleanup that doesn't generalize.
-- Events accumulate without compression into durable facts, increasing memory overhead and degrading consolidation quality over cycles.
-- Repeated 429 errors on a single model provider cause cascading fallback latency spikes because fallback selection is reactive, not proactive.
 
 ---
 

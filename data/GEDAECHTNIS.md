@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10382 Fakten** · Stand 2026-09-03 08:50 UTC · aktualisiert bei jedem Herzschlag
+**10387 Fakten** · Stand 2026-09-03 09:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5665
+- **dream:** 5670
 - **swarm_artifact:** 2211
 - **last_swarm_critique:** 723
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903085751:5:df9185`
+*03.09. 08:57 UTC · Quelle: dream*
+
+Repeated fallback attempts without backoff strategy waste cycles and increase total latency.
+
+### `dream:20260903085751:4:aeee40`
+*03.09. 08:57 UTC · Quelle: dream*
+
+Skill conversion pipeline executes successfully (artifact running 202 lines Python) but calibration error suggests estimation inaccuracy.
+
+### `dream:20260903085751:3:68608f`
+*03.09. 08:57 UTC · Quelle: dream*
+
+System operates under maximum stress (1.0) with conservative budget, limiting parallel task execution to 3 tasks and 1 iteration.
+
+### `dream:20260903085751:2:cf46b6`
+*03.09. 08:57 UTC · Quelle: dream*
+
+Fallback model (nemotron-3-ultra) succeeds but exhibits high latency variance (19-135s), indicating unpredictable performance.
+
+### `dream:20260903085751:1:69a508`
+*03.09. 08:57 UTC · Quelle: dream*
+
+Primary model (glm-5.2) consistently fails with 429 rate limits, making it unreliable for production use.
 
 ### `dream:20260903084846:5:a6fc4a`
 *03.09. 08:48 UTC · Quelle: dream*
