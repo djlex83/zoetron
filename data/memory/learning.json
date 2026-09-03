@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 23:28:41",
+ "stand": "2026-09-03 23:38:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -24,6 +24,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -54,18 +60,6 @@
    "tool": "marktanalyse-in-handeln-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktkenntnisse-aktualisieren.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -163,6 +157,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktkenntnisse-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "träume-besser-zum-lernen-nutzen.py",
@@ -351,21 +351,21 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.656,
- "simulationen_angewandt": 32,
+ "haende_quote": 0.661,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 36,
   "best": 9.0,
   "schnitt": 5.86
  },
  "score_nach_ziel_typ": {
-  "bau": {
-   "n": 4,
-   "schnitt": 6.0
-  },
   "analyse": {
    "n": 32,
    "schnitt": 5.84
+  },
+  "bau": {
+   "n": 3,
+   "schnitt": 7.67
   }
  }
 }

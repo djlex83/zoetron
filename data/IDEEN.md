@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex execution bypasses quality gates — fast reflex success with null scores means speed without validation is a hidden failure mode.
+- Knowledge decay is silent and cumulative — 33 events pruned with 0 fact pruning reveals the system removes noise but preserves potentially stale facts
+- Task completion without score measurement creates an illusion of progress — convergence detection without quality scoring cannot distinguish success f
+- API model failures are predictable, not random — repeated 429s from the same model require health-based routing with cooldown, not blind retry.
+- The system generates proposals faster than it implements them — the proposal-to-execution gap is the primary productivity bottleneck, not idea generat
 - Pruning discards events without validating fact extraction completeness, potentially losing training signal for entity/relation extractors.
 - Hand actions already emit structured telemetry (exit code, duration, stdout/stderr) but lack automatic retry with backoff for transient failures.
 - Self-improvement loops lack convergence detection, risking infinite cycles without measurable progress toward goals.
@@ -51,11 +56,6 @@
 - Stale drive goals (market analyses, self-criticism) linger without automatic refresh triggers tied to data freshness metrics.
 - Skill proposals accumulate (11 logged) but execution gap persists, indicating missing validation-to-commitment pipeline.
 - Free-tier model rate limits (429 errors) cascade into fallback latency spikes (8-60s), requiring proactive health-aware routing.
-- Fact pruning yields zero removals because TTL policies lack access-frequency weighting, allowing stale facts to persist beyond 7 days with <3 reads.
-- Fallback model latency p95 exceeds 60s, violating swarm latency budgets and necessitating automatic goal decomposition into sub-goals with <30s wall-c
-- Dream insights lack an automatic bridge to actionable goals, causing high-confidence lessons (>0.8) to remain inert instead of spawning drive_goals wi
-- Skill proposals accumulate without validation because no gate enforces implementation sketches and smoke tests before backlog entry.
-- Free-tier models consistently hit 429 rate limits under load, requiring per-model circuit breakers with 60s rolling windows and 120s cooldowns to prev
 
 ---
 

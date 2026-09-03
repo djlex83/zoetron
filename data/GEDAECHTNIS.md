@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10876 Fakten** · Stand 2026-09-03 23:30 UTC · aktualisiert bei jedem Herzschlag
+**10881 Fakten** · Stand 2026-09-03 23:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5990
+- **dream:** 5995
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903233714:5:cf0ae9`
+*03.09. 23:37 UTC · Quelle: dream*
+
+Reflex execution bypasses quality gates — fast reflex success with null scores means speed without validation is a hidden failure mode.
+
+### `dream:20260903233714:4:4c1346`
+*03.09. 23:37 UTC · Quelle: dream*
+
+Knowledge decay is silent and cumulative — 33 events pruned with 0 fact pruning reveals the system removes noise but preserves potentially stale facts.
+
+### `dream:20260903233714:3:09b795`
+*03.09. 23:37 UTC · Quelle: dream*
+
+Task completion without score measurement creates an illusion of progress — convergence detection without quality scoring cannot distinguish success from accidental completion.
+
+### `dream:20260903233714:2:6f913c`
+*03.09. 23:37 UTC · Quelle: dream*
+
+API model failures are predictable, not random — repeated 429s from the same model require health-based routing with cooldown, not blind retry.
+
+### `dream:20260903233714:1:faacd5`
+*03.09. 23:37 UTC · Quelle: dream*
+
+The system generates proposals faster than it implements them — the proposal-to-execution gap is the primary productivity bottleneck, not idea generation.
 
 ### `dream:20260903232816:5:2f7bc8`
 *03.09. 23:28 UTC · Quelle: dream*
