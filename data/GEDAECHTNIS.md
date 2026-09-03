@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10502 Fakten** · Stand 2026-09-03 12:25 UTC · aktualisiert bei jedem Herzschlag
+**10507 Fakten** · Stand 2026-09-03 12:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5745
+- **dream:** 5750
 - **swarm_artifact:** 2235
 - **last_swarm_critique:** 727
 - **anti_pattern:** 641
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903123229:5:f1f225`
+*03.09. 12:32 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, showing health checks monitor internal state but not external provider reliability.
+
+### `dream:20260903123229:4:ab7f61`
+*03.09. 12:32 UTC · Quelle: dream*
+
+Pruning removed 34 events but 0 facts, suggesting event-log bloat without semantic consolidation; durable memory needs fact extraction, not just event deletion.
+
+### `dream:20260903123229:3:a2ae19`
+*03.09. 12:32 UTC · Quelle: dream*
+
+Automatic skill proposals are generated but lack a validation gate (simulation verdict, load test, canary) before promotion, risking regression from untested middleware.
+
+### `dream:20260903123229:2:4ac283`
+*03.09. 12:32 UTC · Quelle: dream*
+
+Evolution and swarm cycles for 'Modellfehler systematisch reduzieren' stall at score 7/10 without convergence, revealing that infrastructure-only fixes (monitoring) don't address root-cause model selection logic.
+
+### `dream:20260903123229:1:0d61de`
+*03.09. 12:32 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate-limiting errors while nvidia/nemotron-3-ultra succeeds but exhibits high latency variance (33-78s), indicating a missing circuit-breaker and fallback mechanism.
 
 ### `dream:20260903122236:5:86f0a6`
 *03.09. 12:22 UTC · Quelle: dream*

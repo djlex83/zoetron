@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 12:23:58",
+ "stand": "2026-09-03 12:33:30",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,12 +21,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -40,6 +34,12 @@
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -207,6 +207,12 @@
    "quote": 0.0
   },
   {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "wiederkehrenden-organfehler-endgültig-kl.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -340,12 +346,6 @@
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 12:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 12:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, showing health checks monitor internal state but not external provider reliabil
+- Pruning removed 34 events but 0 facts, suggesting event-log bloat without semantic consolidation; durable memory needs fact extraction, not just event
+- Automatic skill proposals are generated but lack a validation gate (simulation verdict, load test, canary) before promotion, risking regression from u
+- Evolution and swarm cycles for 'Modellfehler systematisch reduzieren' stall at score 7/10 without convergence, revealing that infrastructure-only fixe
+- The z-ai/glm-5.2:free model consistently fails with 429 rate-limiting errors while nvidia/nemotron-3-ultra succeeds but exhibits high latency variance
 - Simulation revisions (4 cycles) addressed symptoms but not the root cause: absence of a managed fallback policy.
 - Calibration error of 1 indicates reliable self-assessment; predicted difficulty matches observed failure rate.
 - Evolutionary search improved scores from 7 to 9 by generating application-level resilience code, not just monitoring.
@@ -51,11 +56,6 @@
 - The scheduler starves the revision loop because conserve-mode consumes all iteration slots.
 - Skill proposals accumulate without a mandatory simulation-to-production gate, causing capability gaps.
 - Model reliability depends on a validated fallback chain with circuit breakers, not just a secondary endpoint.
-- File-read failures ("nichts gelesen") stem from relative-path ambiguity, requiring a canonical absolute-path resolver bound at process start.
-- Stale knowledge (market analyses) persists without automated nightly rehydration that extracts actionable patterns and version-updates memory.
-- Unvalidated skill proposals accumulate without a compilation pipeline that lints, type-checks, tests, and atomically promotes with rollback.
-- High fallback latency (40s+) demands predictive budget allocation based on prompt tokens and historical performance to pre-select optimal model tiers.
-- Provider-specific rate limits (429 errors) require per-provider circuit breakers with exponential backoff and automatic fallback to healthy tiers to m
 
 ---
 
