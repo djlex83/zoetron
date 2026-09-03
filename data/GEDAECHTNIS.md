@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10512 Fakten** · Stand 2026-09-03 12:44 UTC · aktualisiert bei jedem Herzschlag
+**10525 Fakten** · Stand 2026-09-03 13:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5755
-- **swarm_artifact:** 2235
-- **last_swarm_critique:** 727
-- **anti_pattern:** 641
-- **last_swarm_goal:** 475
-- **strategy:** 341
+- **dream:** 5760
+- **swarm_artifact:** 2237
+- **last_swarm_critique:** 728
+- **anti_pattern:** 643
+- **last_swarm_goal:** 476
+- **strategy:** 342
 - **tool:** 132
-- **hand_result:** 114
+- **hand_result:** 115
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Träume miteinander :2`
+*03.09. 13:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Vektor-Embedding mit Approximate Nearest Neighbor (ANN) Suche - Jeder alte Traum wird mittels eines leichtgewichtigen TF-IDF- oder Sentence-Transformers-Modells in einen d-dimensionalen Vektor eingebettet (z.B. d=128). Anstel
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Träume miteinander :1`
+*03.09. 13:04 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Streaming-Batch-Verarbeitung mit Early-Pruning und Progress-Tracking - Die Träume werden als Datenstrom in konfigurierbare Batches (z.B. 100 pro Chunk) aufgeteilt. Innerhalb jedes Batches wird ein schneller Heuristik-Filter (
+
+### `last_swarm_critique`
+*03.09. 13:02 UTC · Quelle: critic*
+
+score=1; issues=Artefakt laeuft nicht: timeout after 30.0s (Sandbox-Urteil); O(n^2)-Vergleich in find_connections ohne Limit oder Fruehabbruch bei grossen Datensaetzen; Keine Timeout-Behandlung oder Fortschrittsanzeige bei potenziell langer Laufzeit
+
+### `last_swarm_goal`
+*03.09. 12:52 UTC · Quelle: system*
+
+Alte Träume miteinander verbinden
+
+### `dream:20260903125157:5:d10b1f`
+*03.09. 12:51 UTC · Quelle: dream*
+
+Hand actions fail on relative path resolution indicating environment drift between simulation and production contexts.
+
+### `dream:20260903125157:4:68544e`
+*03.09. 12:51 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+) but reflex-driven implementation fails due to path resolution errors and missing execution pipeline.
+
+### `dream:20260903125157:3:9b6534`
+*03.09. 12:51 UTC · Quelle: dream*
+
+Conserve-mode metabolism (1 iteration budget) starves simulation validation, creating blind spots for destructive operations.
+
+### `dream:20260903125157:2:89cda5`
+*03.09. 12:51 UTC · Quelle: dream*
+
+Nemotron backup works but exhibits extreme latency variance (47-211s) requiring adaptive timeouts and circuit breakers.
+
+### `dream:20260903125157:1:cd84ce`
+*03.09. 12:51 UTC · Quelle: dream*
+
+GLM model consistently fails with 429 rate-limit errors making it unusable as primary without robust fallback.
 
 ### `dream:20260903124225:5:0a6c97`
 *03.09. 12:42 UTC · Quelle: dream*

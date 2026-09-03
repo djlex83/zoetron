@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 12:43:11",
+ "stand": "2026-09-03 13:07:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -42,12 +42,6 @@
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -159,6 +153,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-verstehen-und-verringern.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -207,6 +207,12 @@
    "quote": 0.0
   },
   {
+   "tool": "träume-besser-zum-lernen-nutzen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -217,12 +223,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "wiederkehrenden-organfehler-endgültig-kl.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
@@ -309,12 +309,6 @@
    "quote": 1.0
   },
   {
-   "tool": "träume-besser-zum-lernen-nutzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "schwarm-orchestrierung-vollständig-aufba.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -375,17 +369,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.685,
+ "haende_quote": 0.674,
  "simulationen_angewandt": 34,
  "swarm_scores": {
   "n": 34,
   "best": 9.0,
-  "schnitt": 6.15
+  "schnitt": 5.91
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 30,
-   "schnitt": 6.23
+   "schnitt": 5.97
   },
   "bau": {
    "n": 4,
