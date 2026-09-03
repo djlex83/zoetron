@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10073 Fakten** · Stand 2026-09-02 23:57 UTC · aktualisiert bei jedem Herzschlag
+**10078 Fakten** · Stand 2026-09-03 00:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5480
+- **dream:** 5485
 - **swarm_artifact:** 2143
 - **last_swarm_critique:** 711
 - **anti_pattern:** 623
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903000406:5:5046ab`
+*03.09. 00:04 UTC · Quelle: dream*
+
+Event pruning removes 20-30 items per run while facts persist, indicating temporal relevance decays faster than semantic knowledge.
+
+### `dream:20260903000406:4:54c797`
+*03.09. 00:04 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than deployment, creating a validation-to-production gap that stalls capability growth.
+
+### `dream:20260903000406:3:445b51`
+*03.09. 00:04 UTC · Quelle: dream*
+
+Reflex-driven automation succeeds for repetitive, well-scoped tasks like market analysis updates without model involvement.
+
+### `dream:20260903000406:2:adfa0e`
+*03.09. 00:04 UTC · Quelle: dream*
+
+Model latency varies 4x (10s vs 38s) even among successful calls, requiring latency-aware routing for budget adherence.
+
+### `dream:20260903000406:1:11d4bc`
+*03.09. 00:04 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic 429 rate-limiting failures across providers, making them unreliable for time-sensitive workloads.
 
 ### `dream:20260902235525:5:f3c20f`
 *02.09. 23:55 UTC · Quelle: dream*
