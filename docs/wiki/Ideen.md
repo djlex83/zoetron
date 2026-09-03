@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale analytical work accumulates unchecked — no mechanism currently flags or expires outdated knowledge, degrading decision quality over time.
+- Under stress (stress=1.0) the system enters conserve mode with severely limited budgets, which compounds the impact of each individual model failure.
+- A persistent gap exists between skill proposal generation and actual deployment — proposals accumulate without a mechanism to promote them into active
+- Silent zero-byte failures arise from relative path usage in hand-actions — the system accepts invalid paths without validation, producing no data read
+- The z-ai/glm-5.2:free model is a chronic failure point — 429s cluster in rapid succession, indicating a systemic rate-limit bottleneck rather than tra
 - Pruning removed 36 events but 0 facts, indicating fact-store grows unbounded while event log stays bounded.
 - Calibration predicted 5 cycles but actual was 9 (abs_error 4), revealing systematic under-estimation for multi-agent market-update tasks.
 - Swarm converged in 1 cycle despite model instability, proving task decomposition absorbs individual model failures.
@@ -51,11 +56,6 @@
 - The simulation→revision→TOR loop (verdict: revise → 5 revisions applied → TOR grün) successfully validates artifact correctness.
 - Hand actions fail when using relative paths; they must resolve inputs via sys.argv[1] and ZOETRON_DATA environment variable.
 - The model z-ai/glm-5.2:free fails consistently with 429 rate-limit errors, making it unreliable as a primary model.
-- Pruning runs remove zero artifacts, indicating TTL metadata is missing from drive-goal outputs and skill proposals, causing stale knowledge to persist
-- Reflex-driven simulation validation (fähigkeiten-durch-simulation-prüfen.py) succeeds when invoked, proving that pre-deployment skill testing via repl
-- Drive goals express meta-cognitive needs (understand errors, update insights, connect skills) but lack automated translation into concrete actions or 
-- Skill proposals accumulate without validation; the system generates many proposals but few become functional skills because there is no shadow-mode te
-- Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable without a routing layer that enforces exponent
 
 ---
 

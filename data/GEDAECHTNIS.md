@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10775 Fakten** · Stand 2026-09-03 20:25 UTC · aktualisiert bei jedem Herzschlag
+**10780 Fakten** · Stand 2026-09-03 20:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5910
+- **dream:** 5915
 - **swarm_artifact:** 2297
 - **last_swarm_critique:** 738
 - **anti_pattern:** 651
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903203222:5:e530eb`
+*03.09. 20:32 UTC · Quelle: dream*
+
+Stale analytical work accumulates unchecked — no mechanism currently flags or expires outdated knowledge, degrading decision quality over time.
+
+### `dream:20260903203222:4:727fcd`
+*03.09. 20:32 UTC · Quelle: dream*
+
+Under stress (stress=1.0) the system enters conserve mode with severely limited budgets, which compounds the impact of each individual model failure.
+
+### `dream:20260903203222:3:f5a0cb`
+*03.09. 20:32 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposal generation and actual deployment — proposals accumulate without a mechanism to promote them into active capabilities.
+
+### `dream:20260903203222:2:595afe`
+*03.09. 20:32 UTC · Quelle: dream*
+
+Silent zero-byte failures arise from relative path usage in hand-actions — the system accepts invalid paths without validation, producing no data read and no visible error.
+
+### `dream:20260903203222:1:356f43`
+*03.09. 20:32 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is a chronic failure point — 429s cluster in rapid succession, indicating a systemic rate-limit bottleneck rather than transient noise.
 
 ### `dream:20260903202308:5:349d9f`
 *03.09. 20:23 UTC · Quelle: dream*
