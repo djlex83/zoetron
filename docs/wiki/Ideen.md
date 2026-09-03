@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 17:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 18:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fact pruning is consistently zero while event pruning removes dozens of entries, indicating stale facts accumulate and may degrade future decision qua
+- Reflex-driven actions succeed reliably when properly triggered, suggesting that reflex architecture is more dependable than manual orchestration for r
+- Self-diagnosis consistently reports zero organ errors despite repeated model failures, revealing a calibration problem where the diagnostic mechanism 
+- Skill proposals accumulate across cycles but are never converted into implemented skills, creating a persistent proposal-to-execution gap that wastes 
+- All model endpoints fail simultaneously with 429/502 errors, indicating a systemic rate-limiting problem that requires request queuing and exponential
 - Swarm converges poorly (score 4, not converged) when builder role dominates 3:1 over planner/critic.
 - Evolutionary search with 3 variants reliably lifts skill scores from 4 to 8+ (winner scores [8,7,9]).
 - Hand actions failing in <0.03s with 0 bytes read indicate missing precondition checks (paths, permissions).
@@ -51,11 +56,6 @@
 - Fallback latency variance (31-70s) on nemotron demands adaptive timeouts, not fixed thresholds.
 - Multiple proposals for path resolution (sys.argv[1], ZOETRON_DATA) reveal systemic I/O failures from relative-path ambiguity.
 - Repeated 429 errors on glm-5.2:free indicate single-model dependency creates cascading failures when rate-limited.
-- Self-calibration underestimated actual performance by 2 units (predicted 7 vs actual 9), revealing a systematic scoring bias that must be corrected.
-- Destructive subprocess operations are systematically blocked and require human approval, creating a hard constraint that all autonomous tool designs m
-- The system converged to score 9 despite repeated primary-model failures, proving that automatic failover chains provide operational resilience under a
-- nvidia/nemotron-3-ultra-550b-a55b:free was the only consistently working model but exhibited high latency variance (33–103s), indicating cold-start or
-- z-ai/glm-5.2:free failed on every invocation with 429 rate-limit errors, making it fundamentally unreliable as a primary model without circuit protect
 
 ---
 

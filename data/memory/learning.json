@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 17:51:09",
+ "stand": "2026-09-03 17:59:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -165,6 +165,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "träume-besser-zum-lernen-nutzen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -180,12 +186,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "selbstprüfung-regelmäßig-erneuern.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -268,12 +268,6 @@
   },
   {
    "tool": "häufige-modellfehler-besser-verstehen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

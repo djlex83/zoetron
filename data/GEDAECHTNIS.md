@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10680 Fakten** · Stand 2026-09-03 17:52 UTC · aktualisiert bei jedem Herzschlag
+**10685 Fakten** · Stand 2026-09-03 18:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5845
+- **dream:** 5850
 - **swarm_artifact:** 2279
 - **last_swarm_critique:** 735
 - **anti_pattern:** 649
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903175927:5:c25e93`
+*03.09. 17:59 UTC · Quelle: dream*
+
+Fact pruning is consistently zero while event pruning removes dozens of entries, indicating stale facts accumulate and may degrade future decision quality.
+
+### `dream:20260903175927:4:268c2e`
+*03.09. 17:59 UTC · Quelle: dream*
+
+Reflex-driven actions succeed reliably when properly triggered, suggesting that reflex architecture is more dependable than manual orchestration for routine tasks.
+
+### `dream:20260903175927:3:63cbb1`
+*03.09. 17:59 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ errors despite repeated model failures, revealing a calibration problem where the diagnostic mechanism is blind to systemic degradation.
+
+### `dream:20260903175927:2:7d750f`
+*03.09. 17:59 UTC · Quelle: dream*
+
+Skill proposals accumulate across cycles but are never converted into implemented skills, creating a persistent proposal-to-execution gap that wastes cognitive effort.
+
+### `dream:20260903175927:1:8e2fe5`
+*03.09. 17:59 UTC · Quelle: dream*
+
+All model endpoints fail simultaneously with 429/502 errors, indicating a systemic rate-limiting problem that requires request queuing and exponential backoff rather than simple retry.
 
 ### `dream:20260903175032:5:40f011`
 *03.09. 17:50 UTC · Quelle: dream*
