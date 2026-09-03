@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 18:27:12",
+ "stand": "2026-09-03 18:36:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -159,6 +159,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -244,12 +250,6 @@
   },
   {
    "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -360,9 +360,9 @@
  "haende_quote": 0.676,
  "simulationen_angewandt": 33,
  "swarm_scores": {
-  "n": 37,
+  "n": 36,
   "best": 9.0,
-  "schnitt": 6.16
+  "schnitt": 6.11
  },
  "score_nach_ziel_typ": {
   "analyse": {

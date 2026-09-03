@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10700 Fakten** · Stand 2026-09-03 18:28 UTC · aktualisiert bei jedem Herzschlag
+**10705 Fakten** · Stand 2026-09-03 18:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5865
+- **dream:** 5870
 - **swarm_artifact:** 2279
 - **last_swarm_critique:** 735
 - **anti_pattern:** 649
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903183601:5:428d3b`
+*03.09. 18:36 UTC · Quelle: dream*
+
+Cycle estimates for skill-generation tasks consistently underestimate by ~3x, requiring a calibration correction factor for planning accuracy.
+
+### `dream:20260903183601:4:923b75`
+*03.09. 18:36 UTC · Quelle: dream*
+
+Reflex-based tool execution successfully converged the swarm mission (score 8+ target) validating reflex architecture for complex goal achievement.
+
+### `dream:20260903183601:3:81dd29`
+*03.09. 18:36 UTC · Quelle: dream*
+
+Event pruning stabilizes after initial burst (67 events pruned first run, 0 second run), indicating the system reaches steady-state log hygiene.
+
+### `dream:20260903183601:2:8b260f`
+*03.09. 18:36 UTC · Quelle: dream*
+
+429 errors dominate model failures (z-ai/glm-5.2, google/gemma-4-31b, google/gemma-4-26b) requiring exponential backoff and automatic fallback as core infrastructure.
+
+### `dream:20260903183601:1:03dc26`
+*03.09. 18:36 UTC · Quelle: dream*
+
+Free-tier models fail systematically with 429 rate limits and 502 upstream errors across multiple providers, making multi-provider routing with health checks essential for reliability.
 
 ### `dream:20260903182642:5:1adcd9`
 *03.09. 18:26 UTC · Quelle: dream*

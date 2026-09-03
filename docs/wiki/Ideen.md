@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 18:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 18:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
@@ -33,14 +33,19 @@
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Cycle estimates for skill-generation tasks consistently underestimate by ~3x, requiring a calibration correction factor for planning accuracy.
+- Reflex-based tool execution successfully converged the swarm mission (score 8+ target) validating reflex architecture for complex goal achievement.
+- Event pruning stabilizes after initial burst (67 events pruned first run, 0 second run), indicating the system reaches steady-state log hygiene.
+- 429 errors dominate model failures (z-ai/glm-5.2, google/gemma-4-31b, google/gemma-4-26b) requiring exponential backoff and automatic fallback as core
+- Free-tier models fail systematically with 429 rate limits and 502 upstream errors across multiple providers, making multi-provider routing with health
 - Aggressive event pruning (67 events) with zero fact pruning preserves knowledge integrity while eliminating transient noise.
 - Swarm convergence in a single cycle with role distribution (1 planner, 3 builders, 1 critic) demonstrates effective parallelization for skill-bundling
 - Capability prediction underestimates actual output by 2x (predicted 4 vs actual 8), revealing a systematic calibration bias in the prediction module.
@@ -51,11 +56,6 @@
 - High-latency fallback models (>25s) can become their own failure mode when downstream operations or user expectations impose tighter time constraints 
 - Hand-actions that exit with code 0 but touch no actual data represent a silent failure class caused by unresolved relative paths — the system reports 
 - Free-tier LLM providers fail in correlated cascades (429s across multiple providers within seconds), making simple sequential fallback chains insuffic
-- Subprocess-based tool execution triggers human-approval blockers that declarative, non-destructive designs eliminate.
-- Reflexive behavior dominates planned action by a 9:1 ratio, reducing adaptability in novel situations.
-- Self-assessed scores systematically underestimate true performance and require a +2 calibration correction factor.
-- A single reliable model (nemotron-3-ultra-550b-a55b) consistently serves as the stable fallback when all other models fail.
-- Rate-limiting (429) is the dominant failure mode across all models, making it the primary threat to autonomous operation.
 
 ---
 
