@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 12:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 12:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,8 +14,8 @@
 - Build a simulation scaffold that converts any high-level goal into a runnable script with explicit I/O contrac *(hatte die Idee 4×)*
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
 - Add a metabolism-aware retry scheduler that reserves a configurable iteration budget for rate-limit retries an *(hatte die Idee 4×)*
-- Build ModelRouter with per-model 429-rate tracking, latency percentile baselines, and circuit-breaker auto-fal *(hatte die Idee 3×)*
-- Implement SkillDeploymentPipeline that ingests proposals, generates tests, runs CI in sandbox, and atomically  *(hatte die Idee 3×)*
+- Build a skill-compilation pipeline that lints, type-checks, and runs unit tests on generated code before atomi *(hatte die Idee 4×)*
+- Create a predictive budget allocator that estimates task complexity from prompt tokens and historical latency/ *(hatte die Idee 4×)*
 - Design LatencyBudgetGuard that enforces per-task SLOs, triggers conservative mode early when latency exceeds t *(hatte die Idee 3×)*
 - Create StaleDataLifecycle that timestamps facts and events, prunes entries past a TTL, and surfaces unused ana *(hatte die Idee 3×)*
 - Add proactive endpoint health polling that pings all model endpoints before each swarm cycle and caches latenc *(hatte die Idee 3×)*
@@ -25,11 +25,11 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence succeeded via reflex, proving that validated tools can close the loop when simulation-to-production pipeline exists.
+- Stale market analyses persist across cycles despite repeated drive goals, showing knowledge-rehydration is not automated.
+- Multiple skill proposals address resilience (fallback, circuit breaker, backoff) but none have been promoted to reflex registry, creating a proposal-e
+- Nemotron-3-ultra succeeds but exhibits high latency (47-78s), indicating need for latency-aware routing and timeout budgets.
+- Provider z-ai/glm-5.2:free consistently fails with 429 rate limits, making it unreliable as primary or secondary without circuit-breaking.
 - Self-diagnosis reports zero organ errors while model failures persist, showing health checks monitor internal state but not external provider reliabil
 - Pruning removed 34 events but 0 facts, suggesting event-log bloat without semantic consolidation; durable memory needs fact extraction, not just event
 - Automatic skill proposals are generated but lack a validation gate (simulation verdict, load test, canary) before promotion, risking regression from u
@@ -51,11 +56,6 @@
 - Evolutionary search improved scores from 7 to 9 by generating application-level resilience code, not just monitoring.
 - Working models (nemotron) show extreme latency variance (44-194s), requiring async timeouts and progress callbacks.
 - Free-tier models exhibit systemic 429 rate-limit failures across providers, making single-model reliance untenable.
-- Direct destructive operations (os.system/subprocess) bypass review, creating irreversible risk.
-- Stale analyses lose value without an automated rehydration pipeline that extracts current patterns.
-- The scheduler starves the revision loop because conserve-mode consumes all iteration slots.
-- Skill proposals accumulate without a mandatory simulation-to-production gate, causing capability gaps.
-- Model reliability depends on a validated fallback chain with circuit breakers, not just a secondary endpoint.
 
 ---
 
