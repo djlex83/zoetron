@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm converged in one cycle with score 8, demonstrating that multi-role orchestration (planner/builder/critic) can achieve target quality despite
+- Calibration predicted 7 failures vs 8 actual (error=1), showing the failure estimator is well-calibrated but slightly optimistic.
+- Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra) succeeded, both with ~20s latency, establishing a high-latency baseline f
+- Nvidia's Nemotron model fails with HTTP 502 upstream overload, revealing provider-side capacity constraints as a second independent failure mode.
+- Free-tier models across multiple providers (Z.ai, Google, Poolside) consistently fail with HTTP 429 rate limits under concurrent load, indicating syst
 - The system autonomously generates skill proposals and drive goals from failure patterns, demonstrating functional meta-learning but lacking deployment
 - Hand actions fail on path resolution (exit 1, "nichts gelesen"), proving that relative-path handling is a systemic fault point.
 - Swarm cycles consistently fail to converge (score 1, converged=false), revealing missing convergence criteria or insufficient critic feedback.
@@ -51,11 +56,6 @@
 - Artifact execution fails repeatedly due to sandbox environment issues (missing data dirs, tracebacks), not code logic errors.
 - Simulator scores (9-10) catastrophically diverge from real execution scores (1), indicating reward hacking or missing environment constraints in simul
 - Free-tier models (glm-5.2) consistently hit 429 rate limits, making them unreliable for primary workloads without a fallback chain.
-- The system explicitly recognizes that insights decay without active refresh, yet lacks a mechanism to resurface them.
-- Simulation-driven revision cycles (5 risks, 5 revisions, 4 applied) converge but consume excessive model calls.
-- Metabolism stress at 1.0 forces conserve mode with max_tasks=3 and max_iterations=1, starving learning loops.
-- File operations fail because relative paths do not resolve against the true data root (ZOETRON_DATA or sys.argv[1]).
-- Free-tier model endpoints consistently return 429 rate-limit errors, making them unreliable for sustained operation.
 
 ---
 

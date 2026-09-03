@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10248 Fakten** · Stand 2026-09-03 05:06 UTC · aktualisiert bei jedem Herzschlag
+**10253 Fakten** · Stand 2026-09-03 05:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5585
+- **dream:** 5590
 - **swarm_artifact:** 2181
 - **last_swarm_critique:** 718
 - **anti_pattern:** 631
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903051507:5:a19354`
+*03.09. 05:15 UTC · Quelle: dream*
+
+The swarm converged in one cycle with score 8, demonstrating that multi-role orchestration (planner/builder/critic) can achieve target quality despite model instability.
+
+### `dream:20260903051507:4:cd1c83`
+*03.09. 05:15 UTC · Quelle: dream*
+
+Calibration predicted 7 failures vs 8 actual (error=1), showing the failure estimator is well-calibrated but slightly optimistic.
+
+### `dream:20260903051507:3:98513a`
+*03.09. 05:15 UTC · Quelle: dream*
+
+Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra) succeeded, both with ~20s latency, establishing a high-latency baseline for currently reliable free models.
+
+### `dream:20260903051507:2:13e2fc`
+*03.09. 05:15 UTC · Quelle: dream*
+
+Nvidia's Nemotron model fails with HTTP 502 upstream overload, revealing provider-side capacity constraints as a second independent failure mode.
+
+### `dream:20260903051507:1:1aed86`
+*03.09. 05:15 UTC · Quelle: dream*
+
+Free-tier models across multiple providers (Z.ai, Google, Poolside) consistently fail with HTTP 429 rate limits under concurrent load, indicating systemic quota exhaustion rather than isolated incidents.
 
 ### `tool:modellfehler-verstehen-und-beheben`
 *03.09. 05:05 UTC · Quelle: hands*
