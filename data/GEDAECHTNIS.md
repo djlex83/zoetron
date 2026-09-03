@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10147 Fakten** · Stand 2026-09-03 02:13 UTC · aktualisiert bei jedem Herzschlag
+**10152 Fakten** · Stand 2026-09-03 02:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5530
+- **dream:** 5535
 - **swarm_artifact:** 2155
 - **last_swarm_critique:** 713
 - **anti_pattern:** 627
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903021933:5:2c42f2`
+*03.09. 02:19 UTC · Quelle: dream*
+
+Self-diagnosis reports healthy organs while the model inference layer degrades, revealing a monitoring blind spot at the API boundary.
+
+### `dream:20260903021933:4:ba22e1`
+*03.09. 02:19 UTC · Quelle: dream*
+
+Model fallback chain retries rate-limited endpoints immediately instead of backing off, wasting latency budget and worsening 429 storms.
+
+### `dream:20260903021933:3:277b9d`
+*03.09. 02:19 UTC · Quelle: dream*
+
+Stale assets (market analyses, old tasks) persist because no periodic review trigger surfaces them for refresh or retirement.
+
+### `dream:20260903021933:2:7afcab`
+*03.09. 02:19 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution because no automated pipeline validates, tests, and promotes them after generation.
+
+### `dream:20260903021933:1:59e628`
+*03.09. 02:19 UTC · Quelle: dream*
+
+Rate limiting across multiple free-tier models causes cascading failures because the router lacks per-model quota tracking and cooldown state.
 
 ### `dream:20260903021106:5:87e01f`
 *03.09. 02:11 UTC · Quelle: dream*
