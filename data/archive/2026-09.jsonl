@@ -4954,3 +4954,25 @@
 {"ts": 1787795450.8443124, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.02, "gelesen": 0}}
 {"ts": 1787795452.393985, "kind": "issue_synced", "payload": {"issue": 101, "state": "open"}}
 {"ts": 1787795519.448895, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787796527.6146615, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787796528.74387, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787796534.809078, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 3.3, "tokens_ein": 1459, "tokens_aus": 799}}
+{"ts": 1787796534.809907, "kind": "skill_proposal", "payload": {"proposal": "Implement an exponential backoff and circuit breaker protocol specifically for models returning 429 errors to avoid wasting budget on dead endpoints."}}
+{"ts": 1787796534.8100045, "kind": "skill_proposal", "payload": {"proposal": "Develop a dynamic model routing skill that deprioritizes models with recent 429 failures and prioritizes those with recent successful pings."}}
+{"ts": 1787796534.8100927, "kind": "skill_proposal", "payload": {"proposal": "Create a 'stress-aware' task batching skill that automatically reduces concurrency and switches to lower-latency models when metabolism stress is 1.0."}}
+{"ts": 1787796534.8102088, "kind": "skill_proposal", "payload": {"proposal": "Add a retry-with-delay mechanism for 502 upstream errors, as they indicate temporary overload rather than hard rate limits."}}
+{"ts": 1787796534.8103306, "kind": "dream_finished", "payload": {"insights": 4, "skill_proposals": 4}}
+{"ts": 1787796536.9398189, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787796536.9398162, "schalter_geoeffnet": false}}
+{"ts": 1787796555.5257354, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.6, "tokens_ein": 463, "tokens_aus": 399}}
+{"ts": 1787796555.525933, "kind": "drive_goal", "payload": {"title": "Fehler beim Modell stark reduzieren", "why": "Das Modell scheitert oft (87 Fehlschläge vs. 57 Erfolge). Weniger Fehler bedeuten zuverlässigeres Handeln.", "signal": "failure"}}
+{"ts": 1787796555.5260386, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Skills wirklich nutzen", "why": "Es gibt 29 Skill-Vorschläge, aber unklar ob sie angewendet werden. Genutzte Skills erweitern die Fähigkeiten.", "signal": "gap"}}
+{"ts": 1787796555.526136, "kind": "drive_goal", "payload": {"title": "Aus Träumen und Fehlern lernen", "why": "Träume (6 mal) und ein alter Fehlversuch (1/10 Punkte) enthalten ungenutztes Wissen für bessere Entscheidungen.", "signal": "combination"}}
+{"ts": 1787796556.7456062, "kind": "drive_whisper", "payload": {"title": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial", "why": "Vorstufe zum echten Gewichts-Lernen. Baue destillat.py: exportiert nächtlich erfolgreiche Läufe (Ziel + Kontext -> Lösung) und dauerhafte Einsichten als saubere Trainingspaare im JSONL-Format (JSONL = eine JSON-Zeile pro Beispiel). Qualitätsfilter: nur Score >= 8, Test grün, keine Duplikate. Fertig ", "geerbt": false, "auftrag_zeichen": 462, "versuch": 9}}
+{"ts": 1787796557.7409258, "kind": "swarm_started", "payload": {"goal": "Destillat-Datensatz: Gedächtnis wird Trainingsmaterial"}}
+{"ts": 1787796569.4233549, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787796570.756322, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787796572.3002248, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787796572.3002212, "schalter_geoeffnet": false}}
+{"ts": 1787796584.7513154, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 12.4, "tokens_ein": 3642, "tokens_aus": 724}}
+{"ts": 1787796585.4655688, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787796585.4655664, "schalter_geoeffnet": false}}
+{"ts": 1787796647.8886423, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 62.4, "tokens_ein": 523, "tokens_aus": 454}}
+{"ts": 1787796648.599468, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787796648.5994654, "schalter_geoeffnet": false}}

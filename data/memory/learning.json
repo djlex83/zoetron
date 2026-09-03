@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 02:03:35",
+ "stand": "2026-09-03 02:11:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -24,6 +24,12 @@
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -60,12 +66,6 @@
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {

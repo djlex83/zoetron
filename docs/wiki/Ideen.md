@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 02:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 02:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress-aware scheduling is absent: the system runs model calls back-to-back despite repeated 429s, wasting latency budget.
+- Stale analyses and proposed skills persist unused because no automatic triage converts 'stale'/'gap' signals into scheduled work.
+- Rate-limit errors (429) on specific models create systemic unreliability that self-diagnosis misses because it only checks organs, not model health.
+- Reflex-driven execution reliably converges goals (Marktanalyse, Fähigkeiten testen) whereas proactive drive goals accumulate without action.
+- Model fallback chains are essential because primary models (z-ai/glm-5.2) fail consistently with rate limits while alternatives (nvidia/nemotron-3-ult
 - Model response latency varies by 2.5x (9.5s to 24.1s) under similar load, requiring SLA enforcement to guarantee predictable system behavior.
 - Without circuit breakers and automatic provider fallback, a single rate-limited model causes cascading latency and failed predictions across the entir
 - Analytical outputs (e.g., market analysis) lose actionable value exponentially if not converted into concrete plans within a bounded time window.
@@ -51,11 +56,6 @@
 - A single evolution cycle with three variants lifted the critic score from 7 to 8–9, confirming iterative refinement works.
 - Nvidia Nemotron 3 Ultra is the only consistently available free model but exhibits extreme latency variance (21–101 s).
 - Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
-- Three concurrent drive goals (failure, stale, gap) compete for tiny budgets without explicit prioritization or resource allocation.
-- System stress at 1.0 triggers conserve mode (max 1 iteration), preventing iterative error recovery exactly when it's needed most.
-- Reflex tools are deployed without pre-flight validation, causing immediate execution failures (e.g., modellfehler-deutlich-reduzieren.py).
-- File operations fail because tools use relative paths instead of resolving against ZOETRON_DATA environment variable.
-- Free-tier model endpoints on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads.
 
 ---
 
