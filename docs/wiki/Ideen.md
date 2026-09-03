@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 19:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,11 +25,11 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning runs remove zero artifacts, indicating TTL metadata is missing from drive-goal outputs and skill proposals, causing stale knowledge to persist
+- Reflex-driven simulation validation (fähigkeiten-durch-simulation-prüfen.py) succeeds when invoked, proving that pre-deployment skill testing via repl
+- Drive goals express meta-cognitive needs (understand errors, update insights, connect skills) but lack automated translation into concrete actions or 
+- Skill proposals accumulate without validation; the system generates many proposals but few become functional skills because there is no shadow-mode te
+- Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable without a routing layer that enforces exponent
 - Simulation verdicts consistently return 'revise' with 5+ risks, indicating the swarm planner lacks a validated, reusable pattern for 'make human inter
 - Metabolism stress hits 1.0 (conserve mode) whenever model latency spikes, throttling max_tasks to 3 and max_iterations to 1 – a hard cap on throughput
 - Skill proposals accumulate (5+ in this window) but none auto-deploy; the gap between proposal and production is a manual bottleneck.
@@ -51,11 +56,6 @@
 - Stale market-analysis artifacts persist across cycles because no TTL-based garbage collector prunes drive-goal outputs after their relevance window.
 - Skill proposals accumulate (55+) without implementation because no automatic promotion pipeline validates and deploys them against live tasks.
 - Rate limit errors (429) cascade across multiple free-tier providers simultaneously, indicating shared infrastructure quotas rather than isolated model
-- Systematic underestimation of capability output (noted in prior dream) persists because prediction recalibration has not been implemented.
-- Drive signals reveal a meta-cognitive gap: the system explicitly seeks to understand its own failure patterns and combine distant memories for novel s
-- The knowledge graph pruning policy retains all facts and events (zero deletions), indicating a conservative memory strategy that may accumulate stale 
-- Reflex-driven execution converges reliably for structured procedural tasks like market-analysis updates without requiring model inference.
-- Rate limiting (429) on Google and z-ai models is the dominant failure mode while inclusionai/ling-3.0-flash-fin:free succeeds consistently across all 
 
 ---
 

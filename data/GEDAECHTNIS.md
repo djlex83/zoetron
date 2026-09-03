@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10760 Fakten** · Stand 2026-09-03 19:47 UTC · aktualisiert bei jedem Herzschlag
+**10765 Fakten** · Stand 2026-09-03 20:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5895
+- **dream:** 5900
 - **swarm_artifact:** 2297
 - **last_swarm_critique:** 738
 - **anti_pattern:** 651
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903200512:5:bfe712`
+*03.09. 20:05 UTC · Quelle: dream*
+
+Pruning runs remove zero artifacts, indicating TTL metadata is missing from drive-goal outputs and skill proposals, causing stale knowledge to persist indefinitely.
+
+### `dream:20260903200512:4:d83adc`
+*03.09. 20:05 UTC · Quelle: dream*
+
+Reflex-driven simulation validation (fähigkeiten-durch-simulation-prüfen.py) succeeds when invoked, proving that pre-deployment skill testing via replay is a high-leverage pattern.
+
+### `dream:20260903200512:3:d4b39b`
+*03.09. 20:05 UTC · Quelle: dream*
+
+Drive goals express meta-cognitive needs (understand errors, update insights, connect skills) but lack automated translation into concrete actions or measurable success criteria.
+
+### `dream:20260903200512:2:fe58a3`
+*03.09. 20:05 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation; the system generates many proposals but few become functional skills because there is no shadow-mode testing against replayed tasks before promotion.
+
+### `dream:20260903200512:1:81abcf`
+*03.09. 20:05 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable without a routing layer that enforces exponential backoff and paid-tier fallback.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler systematis:2`
 *03.09. 19:44 UTC · Quelle: evolution*
