@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 13:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 14:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, showing monitoring blind spots for external API dependencies.
+- Skill proposals for resilience middleware and compilation pipelines exist but remain unpromoted, revealing a gap between problem recognition and produ
+- Only one model (inclusionai/ling-3.0-flash-fin) consistently succeeds, creating a single point of failure despite apparent provider diversity.
+- The system lacks circuit breakers and exponential backoff, causing repeated hammering of already-failing endpoints instead of graceful degradation.
+- Rate limits (429) and upstream overloads (502) cascade across multiple providers simultaneously, indicating shared infrastructure bottlenecks rather t
 - The system's conserve-mode budget constraints (max 1 iteration) prevent self-improvement cycles from completing, creating a deadlock where the system 
 - Relative path resolution without canonical validation causes silent execution failures when the working directory or environment variables don't match
 - Generated skill proposals and dream insights remain unimplemented because there is no pipeline connecting idea generation to validated deployment.
@@ -51,11 +56,6 @@
 - Knowledge assets such as market analyses decay over time and must be actively rehydrated nightly rather than passively stored.
 - There is a persistent proposal-to-execution gap: skills are repeatedly proposed but never promoted past the suggestion stage without a formal compilat
 - External model API rate limits (429 errors) on free-tier providers are the dominant failure mode, requiring per-provider circuit breakers and automati
-- No circuit breaker or health tracking exists, causing repeated hammering of failing models instead of quarantine and cooldown.
-- Stale analyses (market analysis) persist without automated rehydration, leading to outdated decision bases.
-- Skill proposals accumulate without a validation-to-deployment pipeline, causing capability gaps despite abundant ideas.
-- Working models (nvidia/nemotron-3-ultra) exhibit high latency (43-64s), necessitating latency-aware routing and streaming fallbacks for interactive ta
-- Rate-limited models (z-ai/glm-5.2:free) consistently fail with 429 errors, requiring provider-level rate limiting and automatic fallback.
 
 ---
 

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10552 Fakten** · Stand 2026-09-03 13:46 UTC · aktualisiert bei jedem Herzschlag
+**10568 Fakten** · Stand 2026-09-03 14:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5775
-- **swarm_artifact:** 2243
-- **last_swarm_critique:** 729
-- **anti_pattern:** 645
-- **last_swarm_goal:** 477
-- **strategy:** 343
+- **dream:** 5780
+- **swarm_artifact:** 2249
+- **last_swarm_critique:** 730
+- **anti_pattern:** 647
+- **last_swarm_goal:** 478
+- **strategy:** 344
 - **tool:** 133
 - **hand_result:** 115
 - **aktuell_organfehler:** 44
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Vorschläge in echte Fähi:2`
+*03.09. 14:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 6]): DSL Interpreter for Executable Proposals - #!/usr/bin/env python3 """Approach 3: Domain-specific language interpreter that executes proposal scripts directly.""" import re import json import operator from typing impor
+
+### `anti_pattern:Previous attempt scored 0/10. Goal: Vorschläge in echte Fähi:1`
+*03.09. 14:36 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 7, 9]): Dynamic Plugin Registry with Hot Loading - #!/usr/bin/env python3 """Approach 2: Runtime plugin system that registers proposals as callable capabilities via entry points.""" import json import importlib.util import sy
+
+### `last_swarm_critique`
+*03.09. 14:33 UTC · Quelle: critic*
+
+score=0; issues=No executable Python block found in the artifact - the sandbox verdict explicitly states 'LAEUFT NICHT: kein ausfuehrbarer Python-Block im Artefakt - Prosa allein konvergiert nicht'; The artifact contains only exploration commands (bash find/ls
+
+### `last_swarm_goal`
+*03.09. 14:26 UTC · Quelle: system*
+
+Vorschläge in echte Fähigkeiten wandeln
+
+### `dream:20260903142516:5:bdab5a`
+*03.09. 14:25 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, showing monitoring blind spots for external API dependencies.
+
+### `dream:20260903142516:4:39339e`
+*03.09. 14:25 UTC · Quelle: dream*
+
+Skill proposals for resilience middleware and compilation pipelines exist but remain unpromoted, revealing a gap between problem recognition and production deployment.
+
+### `dream:20260903142516:3:e9e4bc`
+*03.09. 14:25 UTC · Quelle: dream*
+
+Only one model (inclusionai/ling-3.0-flash-fin) consistently succeeds, creating a single point of failure despite apparent provider diversity.
+
+### `dream:20260903142516:2:6dd34f`
+*03.09. 14:25 UTC · Quelle: dream*
+
+The system lacks circuit breakers and exponential backoff, causing repeated hammering of already-failing endpoints instead of graceful degradation.
+
+### `dream:20260903142516:1:8fec72`
+*03.09. 14:25 UTC · Quelle: dream*
+
+Rate limits (429) and upstream overloads (502) cascade across multiple providers simultaneously, indicating shared infrastructure bottlenecks rather than isolated model failures.
 
 ### `tool:marktanalyse-endlich-umsetzen`
 *03.09. 13:44 UTC · Quelle: hands*

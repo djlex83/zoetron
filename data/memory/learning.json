@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 13:44:44",
+ "stand": "2026-09-03 14:38:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "alte-marktanalysen-verwerten.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
@@ -63,6 +63,12 @@
    "quote": 0.0
   },
   {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -93,12 +99,6 @@
    "quote": 0.0
   },
   {
-   "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -109,12 +109,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -223,6 +217,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
@@ -363,17 +363,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.668,
- "simulationen_angewandt": 36,
+ "haende_quote": 0.673,
+ "simulationen_angewandt": 37,
  "swarm_scores": {
-  "n": 35,
+  "n": 36,
   "best": 9.0,
-  "schnitt": 5.94
+  "schnitt": 5.78
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 31,
-   "schnitt": 6.0
+   "schnitt": 5.97
   },
   "bau": {
    "n": 4,
