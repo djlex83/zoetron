@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10360 Fakten** · Stand 2026-09-03 08:07 UTC · aktualisiert bei jedem Herzschlag
+**10377 Fakten** · Stand 2026-09-03 08:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5655
-- **swarm_artifact:** 2205
-- **last_swarm_critique:** 722
-- **anti_pattern:** 635
-- **last_swarm_goal:** 470
-- **strategy:** 338
-- **tool:** 130
+- **dream:** 5660
+- **swarm_artifact:** 2211
+- **last_swarm_critique:** 723
+- **anti_pattern:** 637
+- **last_swarm_goal:** 471
+- **strategy:** 339
+- **tool:** 131
 - **hand_result:** 113
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:neue-fähigkeiten-testen-und-nutzbar-mach`
+*03.09. 08:26 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Neue Fähigkeiten testen und nutzbar machen'. Datei: data/tools/neue-fähigkeiten-testen-und-nutzbar-mach.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Neue Fähigkeiten testen :2`
+*03.09. 08:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 7]): Self-Describing Capability Registry - Require every organ to expose a standardized __capabilities__ attribute (JSON Schema) declaring its methods, parameters, return types, and side effects. Build a CapabilityRegistry
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Neue Fähigkeiten testen :0`
+*03.09. 08:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 9, 8]): Contract-First Interface Stabilization - Define a formal, versioned interface contract (Protocol/ABC) for the simulate organ with explicit method signatures, return types, and error semantics. Implement a contract val
+
+### `last_swarm_critique`
+*03.09. 08:24 UTC · Quelle: critic*
+
+score=7; issues=Simulations-Integration ist spekulativ: Mehrere Fallback-Pfade (import_module, import_, simulate, run_scenario, apply_revisions) deuten darauf hin, dass das Interface des simulate-Organs nicht stabil definiert ist - das Artefakt ratet statt zu 
+
+### `last_swarm_goal`
+*03.09. 08:18 UTC · Quelle: system*
+
+Neue Fähigkeiten testen und nutzbar machen
+
+### `dream:20260903081818:5:05bd71`
+*03.09. 08:18 UTC · Quelle: dream*
+
+Rate limiting manifests as sudden 429 bursts without header-based early warning, causing reactive rather than proactive model switching.
+
+### `dream:20260903081818:4:4c9bf3`
+*03.09. 08:18 UTC · Quelle: dream*
+
+Event pruning (18 events) preserves facts but discards operational context needed for debugging model failures.
+
+### `dream:20260903081818:3:49530a`
+*03.09. 08:18 UTC · Quelle: dream*
+
+Reflex-based automation succeeds for well-scoped tasks (dream connection converged) but hand_action timeouts indicate unreliable primitive operations.
+
+### `dream:20260903081818:2:370e4b`
+*03.09. 08:18 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than implementation (3 drive goals vs 0 completed skills), revealing an execution gap between ideation and deployment.
+
+### `dream:20260903081818:1:26153b`
+*03.09. 08:18 UTC · Quelle: dream*
+
+Model API reliability is the primary system bottleneck with cascading 429/502 failures across 4 of 6 providers, making external dependency management the critical path.
 
 ### `tool:fähigkeitsvorschläge-in-echte-skills-ver`
 *03.09. 08:05 UTC · Quelle: hands*
