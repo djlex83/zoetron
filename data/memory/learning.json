@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 13:07:19",
+ "stand": "2026-09-03 13:22:44",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -82,6 +82,12 @@
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -177,12 +183,6 @@
    "quote": 0.0
   },
   {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -222,12 +222,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
