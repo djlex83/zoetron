@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Unvalidated skill proposals accumulate without a testing harness, creating technical debt and duplicated effort.
+- Reflex-based tool selection outperforms heuristic search when failure patterns are cataloged in a searchable index.
+- Latency variance between models (13s vs 35s) demands continuous profiling before routing decisions can optimize for speed.
+- Error signatures (429, 502, timeout) map directly to specific recovery actions: fallback, circuit-break, or exponential backoff.
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production tasks without automatic fallback.
 - Pruning removes events but preserves faulty model-selection policies, allowing the same 429 failures to recur across cycles.
 - Skill proposals accumulate (5 in this session) but lack automatic promotion gates, causing proposal debt without measurable adoption.
 - High-latency fallback models (30-43s) succeed where fast free models fail, revealing a latency-reliability tradeoff not captured in model selection lo
@@ -51,11 +56,6 @@
 - All three hand_action executions failed with exit code 1 and no error message, suggesting a systematic artifact execution problem rather than transien
 - A 502 upstream overload from the Nvidia endpoint confirms that infrastructure strain compounds rate-limiting, requiring defensive retry logic beyond s
 - 429 rate-limit errors from OpenRouter are the dominant failure mode, hitting 4+ different models simultaneously, indicating an API-level bottleneck ra
-- Stale analytical work accumulates unchecked — no mechanism currently flags or expires outdated knowledge, degrading decision quality over time.
-- Under stress (stress=1.0) the system enters conserve mode with severely limited budgets, which compounds the impact of each individual model failure.
-- A persistent gap exists between skill proposal generation and actual deployment — proposals accumulate without a mechanism to promote them into active
-- Silent zero-byte failures arise from relative path usage in hand-actions — the system accepts invalid paths without validation, producing no data read
-- The z-ai/glm-5.2:free model is a chronic failure point — 429s cluster in rapid succession, indicating a systemic rate-limit bottleneck rather than tra
 
 ---
 

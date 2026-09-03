@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10790 Fakten** · Stand 2026-09-03 20:52 UTC · aktualisiert bei jedem Herzschlag
+**10795 Fakten** · Stand 2026-09-03 21:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5925
+- **dream:** 5930
 - **swarm_artifact:** 2297
 - **last_swarm_critique:** 738
 - **anti_pattern:** 651
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903205854:5:cac28f`
+*03.09. 20:58 UTC · Quelle: dream*
+
+Unvalidated skill proposals accumulate without a testing harness, creating technical debt and duplicated effort.
+
+### `dream:20260903205854:4:78e8d4`
+*03.09. 20:58 UTC · Quelle: dream*
+
+Reflex-based tool selection outperforms heuristic search when failure patterns are cataloged in a searchable index.
+
+### `dream:20260903205854:3:67146f`
+*03.09. 20:58 UTC · Quelle: dream*
+
+Latency variance between models (13s vs 35s) demands continuous profiling before routing decisions can optimize for speed.
+
+### `dream:20260903205854:2:3ef847`
+*03.09. 20:58 UTC · Quelle: dream*
+
+Error signatures (429, 502, timeout) map directly to specific recovery actions: fallback, circuit-break, or exponential backoff.
+
+### `dream:20260903205854:1:ca9428`
+*03.09. 20:58 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for production tasks without automatic fallback.
 
 ### `dream:20260903205002:5:619b82`
 *03.09. 20:50 UTC · Quelle: dream*

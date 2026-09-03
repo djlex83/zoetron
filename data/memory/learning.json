@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 20:50:35",
+ "stand": "2026-09-03 20:59:23",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,12 +189,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "wissenswidersprüche-auflösen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -361,6 +355,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.662,
