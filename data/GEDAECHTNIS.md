@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10743 Fakten** · Stand 2026-09-03 19:31 UTC · aktualisiert bei jedem Herzschlag
+**10760 Fakten** · Stand 2026-09-03 19:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5890
-- **swarm_artifact:** 2291
-- **last_swarm_critique:** 737
-- **anti_pattern:** 649
-- **last_swarm_goal:** 485
-- **strategy:** 345
+- **dream:** 5895
+- **swarm_artifact:** 2297
+- **last_swarm_critique:** 738
+- **anti_pattern:** 651
+- **last_swarm_goal:** 486
+- **strategy:** 346
 - **tool:** 136
-- **hand_result:** 118
+- **hand_result:** 119
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler systematis:2`
+*03.09. 19:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Statistische Fehlerkorrektur und Bias-Reduktion - Trainiere ein lineares Modell mit numpy, teile die Daten in Trainings- und Validierungssets auf. Berechne die systematischen Abweichungen (Bias) der Vorhersagen im Validierung
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler systematis:0`
+*03.09. 19:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Standard ML Pipeline mit Scikit-Learn - Implementiere eine komplett eigenständige Pipeline mit scikit-learn. Trainiere ein Basismodell (z.B. RandomForest), evaluiere den MSE, und reduziere den Fehler systematisch durch GridSe
+
+### `last_swarm_critique`
+*03.09. 19:44 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - beide Artefakte scheitern zur Laufzeit mit Tracebacks (action_1788464633408.py:206, action_1788464634502.py:184); Abhaengigkeit von internen zoetron-Modulen (model_health, router, reflex) die im Sandbox-Kontext ni
+
+### `last_swarm_goal`
+*03.09. 19:38 UTC · Quelle: system*
+
+Modell-Fehler systematisch reduzieren
+
+### `dream:20260903193827:5:e56d14`
+*03.09. 19:38 UTC · Quelle: dream*
+
+Simulation verdicts consistently return 'revise' with 5+ risks, indicating the swarm planner lacks a validated, reusable pattern for 'make human interventions unnecessary'.
+
+### `dream:20260903193827:4:c47345`
+*03.09. 19:38 UTC · Quelle: dream*
+
+Metabolism stress hits 1.0 (conserve mode) whenever model latency spikes, throttling max_tasks to 3 and max_iterations to 1 – a hard cap on throughput.
+
+### `dream:20260903193827:3:5edd31`
+*03.09. 19:38 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ in this window) but none auto-deploy; the gap between proposal and production is a manual bottleneck.
+
+### `dream:20260903193827:2:bf2ab6`
+*03.09. 19:38 UTC · Quelle: dream*
+
+Hand actions fail silently when sys.argv[1] and ZOETRON_DATA are not resolved to absolute paths before execution, wasting cycles on zero-byte runs.
+
+### `dream:20260903193827:1:2f6f54`
+*03.09. 19:38 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free without circuit-breaking cause cascading fallbacks to high-latency models (21-44s), starving the metabolism budget.
 
 ### `tool:veraltete-marktinfos-aktualisieren`
 *03.09. 19:30 UTC · Quelle: hands*

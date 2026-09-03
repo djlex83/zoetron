@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 19:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 19:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,25 +14,25 @@
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
 - Add a metabolism-aware retry scheduler that reserves a configurable iteration budget for rate-limit retries an *(hatte die Idee 4×)*
 - Add a proposal-to-production pipeline requiring simulation verdict=accept, load test (latency <30s p95), and c *(hatte die Idee 4×)*
-- Implement a circuit breaker that disables any model provider for 60 seconds after 3 consecutive 429 or 502 err *(hatte die Idee 3×)*
 - Implement a model router with circuit-breaker: track 429/502 rates per model, auto-fallback to next provider a *(hatte die Idee 3×)*
 - Create an 'evolution loop' skill: generate N variants, score with critic, keep top-k, repeat until score >= 8  *(hatte die Idee 3×)*
 - Build a calibration tracker: log predicted vs actual scores per task type, adjust risk estimator weights weekl *(hatte die Idee 3×)*
 - Develop a continuous event-to-fact compressor that runs each cycle before pruning, extracting durable facts fr *(hatte die Idee 3×)*
 - Implement a model-resilience middleware: per-provider circuit breaker, exponential backoff with jitter (base 2 *(hatte die Idee 3×)*
+- Enforce absolute-path resolution in the hand tool by prepending ZOETRON_DATA to any relative input before exec *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
+- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation verdicts consistently return 'revise' with 5+ risks, indicating the swarm planner lacks a validated, reusable pattern for 'make human inter
+- Metabolism stress hits 1.0 (conserve mode) whenever model latency spikes, throttling max_tasks to 3 and max_iterations to 1 – a hard cap on throughput
+- Skill proposals accumulate (5+ in this window) but none auto-deploy; the gap between proposal and production is a manual bottleneck.
+- Hand actions fail silently when sys.argv[1] and ZOETRON_DATA are not resolved to absolute paths before execution, wasting cycles on zero-byte runs.
+- Repeated 429 errors on z-ai/glm-5.2:free without circuit-breaking cause cascading fallbacks to high-latency models (21-44s), starving the metabolism b
 - Reflex-driven repair (wissensgraph-verknüpfungen-reparieren.py) converges in one shot when the tool matches the failure mode precisely.
 - Model latency variance (19s vs 47s) correlates with parameter count, not quality—smaller models succeed faster when they succeed.
 - Stale market-analysis artifacts persist across cycles because no TTL-based garbage collector prunes drive-goal outputs after their relevance window.
@@ -51,11 +56,6 @@
 - The knowledge graph pruning policy retains all facts and events (zero deletions), indicating a conservative memory strategy that may accumulate stale 
 - Reflex-driven execution converges reliably for structured procedural tasks like market-analysis updates without requiring model inference.
 - Rate limiting (429) on Google and z-ai models is the dominant failure mode while inclusionai/ling-3.0-flash-fin:free succeeds consistently across all 
-- Pruning removed 50 events but zero facts, suggesting the fact store is accumulating stale entries that never get validated or expired.
-- Five skill proposals were generated in this cycle but none have been deployed, revealing a proposal-to-production gap that defeats the consolidation l
-- Self-diagnosis reports zero organ errors while the model router simultaneously fails repeatedly, indicating health checks do not cover external API av
-- The nemotron model was hard-blocked for 1800s after 3 consecutive errors, proving that naive retry without backoff triggers permanent bans.
-- Rate limiting (429 errors) is the dominant failure mode across all major models except inclusionai/ling-3.0-flash-fin:free, which remains stable at 11
 
 ---
 

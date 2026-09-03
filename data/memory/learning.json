@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 19:30:12",
+ "stand": "2026-09-03 19:45:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -18,12 +18,6 @@
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -46,6 +40,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -101,12 +101,6 @@
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-verringern.py",
-   "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -181,6 +175,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-dauerhaft-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
@@ -279,6 +279,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-verstehen-und-verringern.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fehlerquellen-systematisch-beheben.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -333,12 +339,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-dauerhaft-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -363,17 +363,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.664,
- "simulationen_angewandt": 35,
+ "haende_quote": 0.653,
+ "simulationen_angewandt": 34,
  "swarm_scores": {
-  "n": 37,
+  "n": 38,
   "best": 9.0,
-  "schnitt": 6.22
+  "schnitt": 6.08
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 32,
-   "schnitt": 6.22
+   "schnitt": 6.06
   },
   "bau": {
    "n": 5,
