@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 22:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 22:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fallback models succeed but with unpredictable latency, making them unreliable for time-constrained operations.
+- Multiple concurrent drive goals (error analysis, stale plans, skill testing) compete for severely limited iteration budget.
+- Previous self-improvement attempt scored 1/10, indicating goal formulation or execution tracking is fundamentally broken.
+- High stress state (1.0) with conservative budget (max 3 tasks, 1 iteration) prevents adequate exploration of new skill proposals.
+- Rate limiting (429 errors) on primary models causes cascading fallbacks that increase latency variance by 50x (2s to 119s).
 - Transient 429 failures resolve spontaneously (model recovers to 4.0s latency), proving that pre-flight health probes and cached availability checks wo
 - Event accumulation (23 pruned) far outpaces fact distillation (0 pruned), revealing that raw experiences are stored but never condensed into durable k
 - Stale analytical work (market analysis) is repeatedly flagged but never completed, indicating a missing auto-escalation or auto-decomposition mechanis
@@ -51,11 +56,6 @@
 - Drive goals signal awareness (reduce errors, update self-analysis, implement skills) but no automatic coupling to concrete skills exists.
 - Skill proposals accumulate but lack enforcement mechanism: reflex converts only when explicitly triggered, leaving backlog stale.
 - Repeated 429/502 errors across multiple free-tier models indicate systemic rate-limit saturation, not isolated model failures.
-- Pruning 26 events without fact loss demonstrates healthy memory pressure management.
-- Reflex-driven market update completed autonomously with zero errors, validating the reflex pattern for maintenance tasks.
-- Successful free-model calls exhibit 10-18s latency, indicating systematic deprioritization of free tiers.
-- Upstream provider overload (502) on Nvidia models reveals dependency fragility beyond local retry logic.
-- Free-tier models consistently hit 429 rate limits under concurrent load, making them unreliable for production workflows.
 
 ---
 

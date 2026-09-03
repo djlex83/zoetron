@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10832 Fakten** · Stand 2026-09-03 22:12 UTC · aktualisiert bei jedem Herzschlag
+**10837 Fakten** · Stand 2026-09-03 22:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5955
+- **dream:** 5960
 - **swarm_artifact:** 2303
 - **last_swarm_critique:** 739
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903221952:5:94b11f`
+*03.09. 22:19 UTC · Quelle: dream*
+
+Fallback models succeed but with unpredictable latency, making them unreliable for time-constrained operations.
+
+### `dream:20260903221952:4:a6a37f`
+*03.09. 22:19 UTC · Quelle: dream*
+
+Multiple concurrent drive goals (error analysis, stale plans, skill testing) compete for severely limited iteration budget.
+
+### `dream:20260903221952:3:34f97a`
+*03.09. 22:19 UTC · Quelle: dream*
+
+Previous self-improvement attempt scored 1/10, indicating goal formulation or execution tracking is fundamentally broken.
+
+### `dream:20260903221952:2:ce9a7b`
+*03.09. 22:19 UTC · Quelle: dream*
+
+High stress state (1.0) with conservative budget (max 3 tasks, 1 iteration) prevents adequate exploration of new skill proposals.
+
+### `dream:20260903221952:1:14343c`
+*03.09. 22:19 UTC · Quelle: dream*
+
+Rate limiting (429 errors) on primary models causes cascading fallbacks that increase latency variance by 50x (2s to 119s).
 
 ### `dream:20260903221036:5:8def17`
 *03.09. 22:10 UTC · Quelle: dream*
