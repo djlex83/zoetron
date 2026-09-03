@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10800 Fakten** · Stand 2026-09-03 21:10 UTC · aktualisiert bei jedem Herzschlag
+**10817 Fakten** · Stand 2026-09-03 21:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5935
-- **swarm_artifact:** 2297
-- **last_swarm_critique:** 738
-- **anti_pattern:** 651
-- **last_swarm_goal:** 486
-- **strategy:** 346
+- **dream:** 5940
+- **swarm_artifact:** 2303
+- **last_swarm_critique:** 739
+- **anti_pattern:** 653
+- **last_swarm_goal:** 487
+- **strategy:** 347
 - **tool:** 136
-- **hand_result:** 119
+- **hand_result:** 120
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Selbstverbesserung schne:2`
+*03.09. 21:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Automated Reinforcement Learning for Self-Improvement Policy - Frame self-improvement as a reinforcement learning problem where an agent learns a policy to select mutation operators, hyperparameters, and evaluation strategies
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Selbstverbesserung schne:0`
+*03.09. 21:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Meta-Learning with Gradient-Based Optimization - Implement a meta-learning framework (e.g., MAML or Reptile) that learns an initialization which can quickly adapt to new self-improvement tasks with few gradient steps. This re
+
+### `last_swarm_critique`
+*03.09. 21:21 UTC · Quelle: critic*
+
+score=2; issues=Sandbox verdict LAEUFT NICHT: Artefakt enthält einen Syntaxfehler (=base_genome)'), wodurch der Python-Block nicht ausgeführt werden kann; Die sichtbare Datei endet mit einem unvollständigen String ('evolution_history'), was auf einen Trunkieru
+
+### `last_swarm_goal`
+*03.09. 21:17 UTC · Quelle: system*
+
+Selbstverbesserung schneller vorantreiben
+
+### `dream:20260903211657:5:5b4b99`
+*03.09. 21:16 UTC · Quelle: dream*
+
+Calibration drift between predicted and actual cycles goes unmeasured, so the planner cannot learn task-class-specific latency distributions.
+
+### `dream:20260903211657:4:bb70d7`
+*03.09. 21:16 UTC · Quelle: dream*
+
+Facts never expire, bloating context and risking stale knowledge; a 7-day TTL with re-validation gate would bound growth.
+
+### `dream:20260903211657:3:121dcc`
+*03.09. 21:16 UTC · Quelle: dream*
+
+Skill proposals accumulate in a backlog because no automated pipeline promotes, canaries, and graduates them to production.
+
+### `dream:20260903211657:2:f20085`
+*03.09. 21:16 UTC · Quelle: dream*
+
+Silent zero-byte hand-action failures trace to unexpanded relative paths in sys.argv[1] and ZOETRON_DATA.
+
+### `dream:20260903211657:1:333080`
+*03.09. 21:16 UTC · Quelle: dream*
+
+Model 429/502 errors cascade because no circuit breaker isolates failing endpoints, causing repeated hammering of rate-limited models.
 
 ### `dream:20260903210746:5:f10448`
 *03.09. 21:07 UTC · Quelle: dream*

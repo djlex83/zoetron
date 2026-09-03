@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 21:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 21:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,18 +14,18 @@
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
 - Add a metabolism-aware retry scheduler that reserves a configurable iteration budget for rate-limit retries an *(hatte die Idee 4×)*
 - Add a proposal-to-production pipeline requiring simulation verdict=accept, load test (latency <30s p95), and c *(hatte die Idee 4×)*
+- Deploy a path-resolver utility that expands sys.argv[1] and ZOETRON_DATA to absolute paths before any hand-act *(hatte die Idee 4×)*
 - Implement a model router with circuit-breaker: track 429/502 rates per model, auto-fallback to next provider a *(hatte die Idee 3×)*
 - Create an 'evolution loop' skill: generate N variants, score with critic, keep top-k, repeat until score >= 8  *(hatte die Idee 3×)*
 - Build a calibration tracker: log predicted vs actual scores per task type, adjust risk estimator weights weekl *(hatte die Idee 3×)*
 - Develop a continuous event-to-fact compressor that runs each cycle before pruning, extracting durable facts fr *(hatte die Idee 3×)*
 - Implement a model-resilience middleware: per-provider circuit breaker, exponential backoff with jitter (base 2 *(hatte die Idee 3×)*
-- Enforce absolute-path resolution in the hand tool by prepending ZOETRON_DATA to any relative input before exec *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration drift between predicted and actual cycles goes unmeasured, so the planner cannot learn task-class-specific latency distributions.
+- Facts never expire, bloating context and risking stale knowledge; a 7-day TTL with re-validation gate would bound growth.
+- Skill proposals accumulate in a backlog because no automated pipeline promotes, canaries, and graduates them to production.
+- Silent zero-byte hand-action failures trace to unexpanded relative paths in sys.argv[1] and ZOETRON_DATA.
+- Model 429/502 errors cascade because no circuit breaker isolates failing endpoints, causing repeated hammering of rate-limited models.
 - Fact pruning removes events but no TTL mechanism exists for semantic knowledge, allowing stale analyses to persist indefinitely.
 - Reactive fallback routing works but lacks proactive capacity awareness, causing repeated 429 hammering before switch.
 - Market analyses are generated but never trigger actions, revealing a missing link between insight generation and goal activation.
@@ -51,11 +56,6 @@
 - Latency variance between models (13s vs 35s) demands continuous profiling before routing decisions can optimize for speed.
 - Error signatures (429, 502, timeout) map directly to specific recovery actions: fallback, circuit-break, or exponential backoff.
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable for production tasks without automatic fallback.
-- Pruning removes events but preserves faulty model-selection policies, allowing the same 429 failures to recur across cycles.
-- Skill proposals accumulate (5 in this session) but lack automatic promotion gates, causing proposal debt without measurable adoption.
-- High-latency fallback models (30-43s) succeed where fast free models fail, revealing a latency-reliability tradeoff not captured in model selection lo
-- Evolutionary optimization cycles converge on paper (scores 7-8) but fail in deployment (score 1), indicating a simulation-to-reality gap in the fitnes
-- Free-tier models consistently fail with 429 rate limits under sustained load, making them unreliable for production workflows.
 
 ---
 
