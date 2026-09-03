@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10433 Fakten** · Stand 2026-09-03 10:18 UTC · aktualisiert bei jedem Herzschlag
+**10438 Fakten** · Stand 2026-09-03 10:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5700
+- **dream:** 5705
 - **swarm_artifact:** 2223
 - **last_swarm_critique:** 725
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903102541:5:7cec24`
+*03.09. 10:25 UTC · Quelle: dream*
+
+Skill proposals accumulate in memory without deployment pipeline, creating proposal debt that never translates into capability.
+
+### `dream:20260903102541:4:843fc5`
+*03.09. 10:25 UTC · Quelle: dream*
+
+Event pruning discarded 39 events with zero fact extraction, permanently losing operational context needed for root-cause analysis.
+
+### `dream:20260903102541:3:2cdc70`
+*03.09. 10:25 UTC · Quelle: dream*
+
+High-latency success (51s for nemotron) is functionally equivalent to failure for interactive decision loops.
+
+### `dream:20260903102541:2:0343ba`
+*03.09. 10:25 UTC · Quelle: dream*
+
+Destructive operation guard correctly blocks unauthorized system changes but creates workflow deadlocks when legitimate automation needs elevated privileges.
+
+### `dream:20260903102541:1:aaa95a`
+*03.09. 10:25 UTC · Quelle: dream*
+
+Rate limiting cascades across multiple providers simultaneously, indicating shared infrastructure bottlenecks rather than isolated model failures.
 
 ### `dream:20260903101619:5:fcd94a`
 *03.09. 10:16 UTC · Quelle: dream*

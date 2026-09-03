@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-03 10:17:12",
+ "stand": "2026-09-03 10:27:05",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -18,6 +18,12 @@
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 7,
    "erfolge": 7,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-in-handlung-umsetzen.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -34,12 +40,6 @@
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-in-handlung-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0

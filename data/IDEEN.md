@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Build a simulation scaffold that converts any high-level goal into a runnable script with explicit I/O contrac *(hatte die Idee 4×)*
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
 - Add a metabolism-aware retry scheduler that reserves a configurable iteration budget for rate-limit retries an *(hatte die Idee 4×)*
-- Create a periodic audit task that scores each proposed skill by test coverage and last-used timestamp, archivi *(hatte die Idee 3×)*
 - Add DiagnosticGapDetector that correlates per-organ healthy reports with cross-organ failure signatures (e.g., *(hatte die Idee 3×)*
 - Create StaleDataLifecycle that timestamps facts and events, prunes entries past a TTL, and surfaces unused ana *(hatte die Idee 3×)*
+- Add proactive endpoint health polling that pings all model endpoints before each swarm cycle and caches latenc *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -37,10 +37,15 @@
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate in memory without deployment pipeline, creating proposal debt that never translates into capability.
+- Event pruning discarded 39 events with zero fact extraction, permanently losing operational context needed for root-cause analysis.
+- High-latency success (51s for nemotron) is functionally equivalent to failure for interactive decision loops.
+- Destructive operation guard correctly blocks unauthorized system changes but creates workflow deadlocks when legitimate automation needs elevated priv
+- Rate limiting cascades across multiple providers simultaneously, indicating shared infrastructure bottlenecks rather than isolated model failures.
 - Hand actions (shell commands) complete in ~1.2s with zero failures, confirming they are a reliable low-latency primitive for file I/O.
 - Calibration error of 1 (predicted 8 vs actual 9) on a 10-point scale suggests the predictor is well-calibrated for this task class.
 - The simulation-driven goal achieved convergence in a single swarm cycle after 5 revisions, indicating revision loops are more critical than iteration 
@@ -51,11 +56,6 @@
 - Self-diagnosis reports zero organ errors while external model calls fail at >80% rate, revealing a blind spot in monitoring scope.
 - Existing skill proposals for circuit breakers, health-aware routing, and request middleware directly address the observed failure modes but remain uni
 - Rate limiting (429) and upstream overload (502) across multiple providers indicate systemic quota exhaustion rather than isolated failures.
-- Self-diagnosis reports zero organ errors while model failure rate exceeds 70%, revealing a blind spot in health monitoring granularity.
-- Fallback chains succeed eventually but waste 2-3 failed attempts per request, burning latency budget before reaching a healthy model.
-- The system accumulates skill proposals (circuit breaker, health scoreboard, backoff) but lacks an execution pipeline to turn them into deployed capabi
-- Latency variance for the same model (nemotron: 47s vs 77s) indicates upstream instability that simple retries cannot fix.
-- Free-tier models consistently hit 429 rate limits within minutes, making them unreliable as primary providers without aggressive quota management.
 
 ---
 
