@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 11:43:58",
+ "stand": "2026-09-03 12:10:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -91,12 +91,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "neue-fähigkeiten-erlernen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
@@ -213,12 +207,6 @@
    "quote": 0.0
   },
   {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "wiederkehrenden-organfehler-endgültig-kl.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -333,6 +321,12 @@
    "quote": 1.0
   },
   {
+   "tool": "neue-fähigkeiten-erlernen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -373,10 +367,16 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.696,
- "simulationen_angewandt": 32,
+ "haende_quote": 0.683,
+ "simulationen_angewandt": 34,
  "swarm_scores": {
   "n": 34,
   "best": 9.0,
@@ -384,8 +384,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 29,
-   "schnitt": 6.41
+   "n": 30,
+   "schnitt": 6.23
   },
   "bau": {
    "n": 4,

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10480 Fakten** · Stand 2026-09-03 11:45 UTC · aktualisiert bei jedem Herzschlag
+**10497 Fakten** · Stand 2026-09-03 12:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5735
-- **swarm_artifact:** 2229
-- **last_swarm_critique:** 726
-- **anti_pattern:** 639
-- **last_swarm_goal:** 474
-- **strategy:** 340
+- **dream:** 5740
+- **swarm_artifact:** 2235
+- **last_swarm_critique:** 727
+- **anti_pattern:** 641
+- **last_swarm_goal:** 475
+- **strategy:** 341
 - **tool:** 132
-- **hand_result:** 113
+- **hand_result:** 114
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Skill-Vorschläge in echt:1`
+*03.09. 12:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Deklarative Skill-Definition via YAML + Interpreter-Engine - Definiere Skills rein deklarativ in YAML-Dateien (z. B. `skill_definition.yaml` mit Feldern: `name`, `trigger`, `steps` als Liste von Aktionen wie `http_request`, `
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Skill-Vorschläge in echt:0`
+*03.09. 12:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Plugin-Architektur mit dynamischem Loader - Implementiere ein Skill-Plugin-System: Jede Fähigkeit ist ein eigenständiges Python-Paket mit einem festen Interface (z. B. Klasse `Skill` mit Methoden `execute()`, `validate()`). E
+
+### `last_swarm_critique`
+*03.09. 12:05 UTC · Quelle: critic*
+
+score=1; issues=Artefakt laeuft nicht (Sandbox-Urteil: LAEUFT NICHT, Fehler in Zeile 285); Kein lauffaehiger Python-Block - harter Vertragsbruch; Ziel 'Skill-Vorschlaege in echte Faehigkeiten wandeln' nicht erreicht da Code nicht ausfuehrbar
+
+### `last_swarm_goal`
+*03.09. 11:53 UTC · Quelle: system*
+
+Skill-Vorschläge in echte Fähigkeiten wandeln
+
+### `dream:20260903115252:5:af5537`
+*03.09. 11:52 UTC · Quelle: dream*
+
+Direct destructive operations (os.system/subprocess) bypass review, creating irreversible risk.
+
+### `dream:20260903115252:4:0e971f`
+*03.09. 11:52 UTC · Quelle: dream*
+
+Stale analyses lose value without an automated rehydration pipeline that extracts current patterns.
+
+### `dream:20260903115252:3:01a6d9`
+*03.09. 11:52 UTC · Quelle: dream*
+
+The scheduler starves the revision loop because conserve-mode consumes all iteration slots.
+
+### `dream:20260903115252:2:943a52`
+*03.09. 11:52 UTC · Quelle: dream*
+
+Skill proposals accumulate without a mandatory simulation-to-production gate, causing capability gaps.
+
+### `dream:20260903115252:1:3f45b5`
+*03.09. 11:52 UTC · Quelle: dream*
+
+Model reliability depends on a validated fallback chain with circuit breakers, not just a secondary endpoint.
 
 ### `dream:20260903114259:5:9d3adf`
 *03.09. 11:42 UTC · Quelle: dream*
