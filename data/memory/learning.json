@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 16:37:38",
+ "stand": "2026-09-03 16:57:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -25,6 +25,12 @@
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 4,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
@@ -49,12 +55,6 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -97,12 +97,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -201,12 +195,6 @@
    "quote": 1.0
   },
   {
-   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -247,6 +235,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
@@ -369,17 +363,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.685,
+ "haende_quote": 0.673,
  "simulationen_angewandt": 34,
  "swarm_scores": {
-  "n": 36,
+  "n": 37,
   "best": 9.0,
-  "schnitt": 6.19
+  "schnitt": 6.14
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 32,
-   "schnitt": 6.28
+   "n": 33,
+   "schnitt": 6.21
   },
   "bau": {
    "n": 4,

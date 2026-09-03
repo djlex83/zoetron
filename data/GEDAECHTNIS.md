@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10634 Fakten** · Stand 2026-09-03 16:39 UTC · aktualisiert bei jedem Herzschlag
+**10651 Fakten** · Stand 2026-09-03 16:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5820
-- **swarm_artifact:** 2267
-- **last_swarm_critique:** 733
-- **anti_pattern:** 647
-- **last_swarm_goal:** 481
-- **strategy:** 344
+- **dream:** 5825
+- **swarm_artifact:** 2273
+- **last_swarm_critique:** 734
+- **anti_pattern:** 649
+- **last_swarm_goal:** 482
+- **strategy:** 345
 - **tool:** 134
-- **hand_result:** 116
+- **hand_result:** 117
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeits-Vorschläge in:1`
+*03.09. 16:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 4, 9]): Architectural Redesign with Separation of Concerns - Redesign the system into independent components: (1) A ProposalParser that extracts structured intent from proposals. (2) A CodeGenerator interface with multiple im
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeits-Vorschläge in:0`
+*03.09. 16:56 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [5, 9, 5]): Direct Refactoring and Completion - Fix the existing codebase by: (1) Implementing SkillGenerator.generate_skill to actually render the proposed code (e.g., using Jinja2 templates or AST manipulation) instead of raisi
+
+### `last_swarm_critique`
+*03.09. 16:55 UTC · Quelle: critic*
+
+score=4; issues=SkillGenerator erzeugt nur Stubs mit NotImplementedError statt den eigentlichen Code aus den Vorschlägen zu übernehmen - Ziel 'echte Skills' verfehlt; SkillValidator.validate_proposal: Score-Berechnung unvollständig (abgebrochen bei 'if syntax_
+
+### `last_swarm_goal`
+*03.09. 16:47 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge in echte Skills verwandeln
+
+### `dream:20260903164645:5:b1dd49`
+*03.09. 16:46 UTC · Quelle: dream*
+
+Under high metabolic stress (stress=1.0, state=conserve), the system restricts to max_tasks=3 and max_iterations=1, which can prematurely terminate swarms; stress-aware scheduling should defer non-critical work.
+
+### `dream:20260903164645:4:a5b3de`
+*03.09. 16:46 UTC · Quelle: dream*
+
+The nemotron model succeeds but exhibits high latency variance (26–120 s); timeouts should be set to at least 150 s and tasks should be parallelized to hide latency.
+
+### `dream:20260903164645:3:0c6b59`
+*03.09. 16:46 UTC · Quelle: dream*
+
+Calibration predictions systematically underestimate actual scores by ~2 points (predicted 6 vs actual 8), indicating a need to adjust the calibration baseline upward.
+
+### `dream:20260903164645:2:a93677`
+*03.09. 16:46 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths; all file operations must resolve inputs via sys.argv[1] and the ZOETRON_DATA environment variable to absolute paths before execution.
+
+### `dream:20260903164645:1:4fdfa4`
+*03.09. 16:46 UTC · Quelle: dream*
+
+The model "z-ai/glm-5.2:free" consistently returns 429 Too Many Requests errors and should be excluded from the routing pool or used only with aggressive exponential backoff.
 
 ### `dream:20260903163656:5:e9479b`
 *03.09. 16:36 UTC · Quelle: dream*
