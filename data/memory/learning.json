@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 05:40:56",
+ "stand": "2026-09-03 05:53:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -111,16 +105,16 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltete-infos-auffrischen.py",
+   "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
   {
-   "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "marktanalyse-endlich-umsetzen.py",
@@ -220,6 +214,12 @@
   },
   {
    "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -373,19 +373,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.7,
+ "haende_quote": 0.69,
  "simulationen_angewandt": 27,
  "swarm_scores": {
-  "n": 33,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 6.0
+  "schnitt": 6.06
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 29,
-   "schnitt": 6.07
+   "schnitt": 6.21
   },
   "bau": {
    "n": 4,

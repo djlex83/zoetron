@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10268 Fakten** · Stand 2026-09-03 05:42 UTC · aktualisiert bei jedem Herzschlag
+**10282 Fakten** · Stand 2026-09-03 05:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5605
-- **swarm_artifact:** 2181
-- **last_swarm_critique:** 718
+- **dream:** 5610
+- **swarm_artifact:** 2187
+- **last_swarm_critique:** 719
 - **anti_pattern:** 631
-- **last_swarm_goal:** 466
+- **last_swarm_goal:** 467
 - **strategy:** 336
 - **tool:** 128
-- **hand_result:** 111
+- **hand_result:** 112
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*03.09. 05:52 UTC · Quelle: critic*
+
+score=8; issues=Simulation-Scheduler läuft und führt simulate regelmäßig aus, aber verwendet ein festes Intervall statt tatsächlicher Taktungs-Logik aus dem taktung-Organ; Drive-Zyklus Gate liest Simulations-Ergebnisse und nutzt Verdikte als Gate, aber Zeitste
+
+### `last_swarm_goal`
+*03.09. 05:49 UTC · Quelle: system*
+
+Simulationen regelmäßig anwenden
+
+### `dream:20260903054842:5:20c5fd`
+*03.09. 05:48 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260903054842:4:45f98b`
+*03.09. 05:48 UTC · Quelle: dream*
+
+Simulation verdicts (go/risk/revision) are only valuable when automatically fed back into skill validation gates before deployment.
+
+### `dream:20260903054842:3:830509`
+*03.09. 05:48 UTC · Quelle: dream*
+
+Retry budgets must be metabolically aware—reserving iteration capacity for rate-limit recovery prevents starvation of critical goals.
+
+### `dream:20260903054842:2:540231`
+*03.09. 05:48 UTC · Quelle: dream*
+
+All file operations must resolve paths through a canonical utility that handles sys.argv[1] and ZOETRON_DATA to avoid silent zero-byte reads.
+
+### `dream:20260903054842:1:920f67`
+*03.09. 05:48 UTC · Quelle: dream*
+
+Model health tracking with automatic failover prevents cascade failures when primary models hit rate limits.
 
 ### `dream:20260903054031:5:edf882`
 *03.09. 05:40 UTC · Quelle: dream*
