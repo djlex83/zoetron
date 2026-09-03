@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10309 Fakten** · Stand 2026-09-03 06:46 UTC · aktualisiert bei jedem Herzschlag
+**10314 Fakten** · Stand 2026-09-03 06:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5625
+- **dream:** 5630
 - **swarm_artifact:** 2193
 - **last_swarm_critique:** 720
 - **anti_pattern:** 633
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903065237:5:a4d0be`
+*03.09. 06:52 UTC · Quelle: dream*
+
+Swarm convergence succeeds in 1 cycle with role distribution but collapses when model availability drops below threshold.
+
+### `dream:20260903065237:4:051ed6`
+*03.09. 06:52 UTC · Quelle: dream*
+
+Hand actions fail intermittently (exit=1) without error payloads, making debugging and retry logic impossible.
+
+### `dream:20260903065237:3:c17616`
+*03.09. 06:52 UTC · Quelle: dream*
+
+Calibration predicted 1 but actual was 8 (7x error), revealing broken estimation heuristics for task complexity.
+
+### `dream:20260903065237:2:375039`
+*03.09. 06:52 UTC · Quelle: dream*
+
+No automatic fallback triggers when primary models fail, causing complete inference outage until manual intervention.
+
+### `dream:20260903065237:1:876605`
+*03.09. 06:52 UTC · Quelle: dream*
+
+Rate limits (429) hit multiple models simultaneously via OpenRouter, indicating shared provider-level quotas rather than per-model limits.
 
 ### `dream:20260903064425:5:982c94`
 *03.09. 06:44 UTC · Quelle: dream*

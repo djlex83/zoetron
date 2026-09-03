@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 06:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 06:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 18×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm convergence succeeds in 1 cycle with role distribution but collapses when model availability drops below threshold.
+- Hand actions fail intermittently (exit=1) without error payloads, making debugging and retry logic impossible.
+- Calibration predicted 1 but actual was 8 (7x error), revealing broken estimation heuristics for task complexity.
+- No automatic fallback triggers when primary models fail, causing complete inference outage until manual intervention.
+- Rate limits (429) hit multiple models simultaneously via OpenRouter, indicating shared provider-level quotas rather than per-model limits.
 - High-latency models like inclusionai/ling-3.0-flash-fin (72.7s) rapidly deplete the task budget and must be deprioritized when stress is elevated.
 - nvidia/nemotron-3-ultra-550b-a55b:free is the most reliable model under load despite occasional 502 upstream errors, while z-ai/glm-5.2:free has the w
 - Relative file paths in hand_action fail to resolve under the real data path; absolute path resolution must be enforced before any read attempt.
@@ -51,11 +56,6 @@
 - Multiple duplicate skill proposals for model routing reveal a coordination gap: proposals are generated but not deduplicated or promoted to production
 - Reflex-based error fixing converges quickly but only addresses symptoms; the root cause (model instability) persists across cycles.
 - Consistent 429 errors on z-ai/glm-5.2:free indicate hard rate limits requiring proactive model routing rather than reactive fallback.
-- 39 events were pruned while zero facts survived pruning, suggesting the system retains raw event data too long and needs earlier compression into dura
-- The fallback model (nemotron-3-ultra) performed well with variable latency (10-60s), indicating that latency-aware routing is needed to optimize respo
-- Stale goals (Marktanalyse) accumulated across multiple cycles without action, revealing an execution-inertia pattern where completed analysis never tr
-- Reflex-based execution consistently converged tasks successfully, demonstrating that automated decision paths outperform manual goal-driven workflows 
-- Single-provider model dependency caused repeated 429 rate-limit failures, proving that provider diversity with automatic health-based fallback is esse
 
 ---
 
