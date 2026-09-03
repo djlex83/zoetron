@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 16:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 16:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple skill proposals already exist for model routing but remain unpromoted, exposing a missing graduation gate from proposal to deployed skill.
+- High stress (1.0) with conserve metabolism throttles all new work, so any remediation must run within the 3-task/1-iteration budget.
+- Hand-action failure due to unresolved relative paths shows that data-access helpers must canonicalize paths against ZOETRON_DATA before execution.
+- Fallback model latency varies 2.5x (26–69 s), revealing cold-start effects that keep-alive pings could stabilize.
+- Recurring 429 errors on the same model indicate missing per-model rate-limit tracking and automatic fallback logic.
 - Pruning removed 40 events but 0 facts, suggesting episodic noise accumulates faster than semantic drift.
 - Stress signals (model failures, rate limits) correlate with increased drive-goal generation (3 new goals this cycle).
 - The system generates skill proposals faster than it can validate them: 5 proposals queued with no deployment pipeline.
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success (61.8s latency, score 8) under current load.
 - Nvidia Nemotron exhibits high latency (48-92s) and intermittent 502 upstream overload errors despite successful completions.
 - Free-tier models (GLM, Gemma) consistently hit 429 rate limits within seconds, making them unreliable for sustained workloads.
-- Reflex-driven cleanup successfully closes stale work loops, but only when explicitly triggered.
-- Latency variance (38-59s) on the fallback model suggests cold-start effects that could be mitigated by keep-alive requests.
-- Skill proposals accumulate but never graduate to deployed capabilities, revealing a broken promotion pipeline.
-- Swarm executions repeatedly score zero and fail to converge despite evolving, indicating broken convergence criteria.
-- Free-tier models consistently hit 429 rate limits causing cascading fallbacks to a single reliable model.
 
 ---
 

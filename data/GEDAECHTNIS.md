@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10629 Fakten** · Stand 2026-09-03 16:27 UTC · aktualisiert bei jedem Herzschlag
+**10634 Fakten** · Stand 2026-09-03 16:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5815
+- **dream:** 5820
 - **swarm_artifact:** 2267
 - **last_swarm_critique:** 733
 - **anti_pattern:** 647
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903163656:5:e9479b`
+*03.09. 16:36 UTC · Quelle: dream*
+
+Multiple skill proposals already exist for model routing but remain unpromoted, exposing a missing graduation gate from proposal to deployed skill.
+
+### `dream:20260903163656:4:a83ead`
+*03.09. 16:36 UTC · Quelle: dream*
+
+High stress (1.0) with conserve metabolism throttles all new work, so any remediation must run within the 3-task/1-iteration budget.
+
+### `dream:20260903163656:3:54e116`
+*03.09. 16:36 UTC · Quelle: dream*
+
+Hand-action failure due to unresolved relative paths shows that data-access helpers must canonicalize paths against ZOETRON_DATA before execution.
+
+### `dream:20260903163656:2:9d1b46`
+*03.09. 16:36 UTC · Quelle: dream*
+
+Fallback model latency varies 2.5x (26–69 s), revealing cold-start effects that keep-alive pings could stabilize.
+
+### `dream:20260903163656:1:71f03d`
+*03.09. 16:36 UTC · Quelle: dream*
+
+Recurring 429 errors on the same model indicate missing per-model rate-limit tracking and automatic fallback logic.
 
 ### `last_swarm_critique`
 *03.09. 16:25 UTC · Quelle: critic*
