@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events but preserves faulty model-selection policies, allowing the same 429 failures to recur across cycles.
+- Skill proposals accumulate (5 in this session) but lack automatic promotion gates, causing proposal debt without measurable adoption.
+- High-latency fallback models (30-43s) succeed where fast free models fail, revealing a latency-reliability tradeoff not captured in model selection lo
+- Evolutionary optimization cycles converge on paper (scores 7-8) but fail in deployment (score 1), indicating a simulation-to-reality gap in the fitnes
+- Free-tier models consistently fail with 429 rate limits under sustained load, making them unreliable for production workflows.
 - The tor artifact fails to run with a traceback at line 206 of the action script, pointing to a code-quality issue in the generated artifact rather tha
 - Calibration predicted 7 against an actual value of 1 (abs_error 6), revealing that confidence estimates are poorly calibrated and should be discounted
 - All three hand_action executions failed with exit code 1 and no error message, suggesting a systematic artifact execution problem rather than transien
@@ -51,11 +56,6 @@
 - A persistent gap exists between skill proposal generation and actual deployment — proposals accumulate without a mechanism to promote them into active
 - Silent zero-byte failures arise from relative path usage in hand-actions — the system accepts invalid paths without validation, producing no data read
 - The z-ai/glm-5.2:free model is a chronic failure point — 429s cluster in rapid succession, indicating a systemic rate-limit bottleneck rather than tra
-- Pruning removed 36 events but 0 facts, indicating fact-store grows unbounded while event log stays bounded.
-- Calibration predicted 5 cycles but actual was 9 (abs_error 4), revealing systematic under-estimation for multi-agent market-update tasks.
-- Swarm converged in 1 cycle despite model instability, proving task decomposition absorbs individual model failures.
-- Nemotron-3-ultra succeeds but at 74–162 s latency, making it a throughput bottleneck not a reliability fix.
-- Rate-limiting on glm-5.2:free follows a burst pattern (5×429 in 90s) that saturates the fallback model's capacity.
 
 ---
 

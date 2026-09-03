@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10785 Fakten** · Stand 2026-09-03 20:43 UTC · aktualisiert bei jedem Herzschlag
+**10790 Fakten** · Stand 2026-09-03 20:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5920
+- **dream:** 5925
 - **swarm_artifact:** 2297
 - **last_swarm_critique:** 738
 - **anti_pattern:** 651
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903205002:5:619b82`
+*03.09. 20:50 UTC · Quelle: dream*
+
+Pruning removes events but preserves faulty model-selection policies, allowing the same 429 failures to recur across cycles.
+
+### `dream:20260903205002:4:2d590e`
+*03.09. 20:50 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this session) but lack automatic promotion gates, causing proposal debt without measurable adoption.
+
+### `dream:20260903205002:3:26d726`
+*03.09. 20:50 UTC · Quelle: dream*
+
+High-latency fallback models (30-43s) succeed where fast free models fail, revealing a latency-reliability tradeoff not captured in model selection logic.
+
+### `dream:20260903205002:2:cb440b`
+*03.09. 20:50 UTC · Quelle: dream*
+
+Evolutionary optimization cycles converge on paper (scores 7-8) but fail in deployment (score 1), indicating a simulation-to-reality gap in the fitness function.
+
+### `dream:20260903205002:1:6c281e`
+*03.09. 20:50 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits under sustained load, making them unreliable for production workflows.
 
 ### `dream:20260903204108:5:296ec8`
 *03.09. 20:41 UTC · Quelle: dream*
