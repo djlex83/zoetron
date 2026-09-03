@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10597 Fakten** · Stand 2026-09-03 15:41 UTC · aktualisiert bei jedem Herzschlag
+**10611 Fakten** · Stand 2026-09-03 16:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5800
-- **swarm_artifact:** 2255
-- **last_swarm_critique:** 731
+- **dream:** 5805
+- **swarm_artifact:** 2261
+- **last_swarm_critique:** 732
 - **anti_pattern:** 647
-- **last_swarm_goal:** 479
+- **last_swarm_goal:** 480
 - **strategy:** 344
 - **tool:** 134
-- **hand_result:** 115
+- **hand_result:** 116
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*03.09. 15:58 UTC · Quelle: critic*
+
+score=8; issues=Temperature Scaling nutzt binäre Sigmoid-Annahme (logits = log(p/(1-p))), aber Router-Ranking ist typischerweise multi-class - für echte Multi-Class-Kalibrierung wäre Vektor-Temperature-Scaling (pro Klasse) oder Matrix-Scaling nötig; Calibrated
+
+### `last_swarm_goal`
+*03.09. 15:49 UTC · Quelle: system*
+
+Modellfehler durch Kalibrierung senken
+
+### `dream:20260903154845:5:fe6e83`
+*03.09. 15:48 UTC · Quelle: dream*
+
+Reflex-driven cleanup successfully closes stale work loops, but only when explicitly triggered.
+
+### `dream:20260903154845:4:62c341`
+*03.09. 15:48 UTC · Quelle: dream*
+
+Latency variance (38-59s) on the fallback model suggests cold-start effects that could be mitigated by keep-alive requests.
+
+### `dream:20260903154845:3:17d81f`
+*03.09. 15:48 UTC · Quelle: dream*
+
+Skill proposals accumulate but never graduate to deployed capabilities, revealing a broken promotion pipeline.
+
+### `dream:20260903154845:2:c80ac0`
+*03.09. 15:48 UTC · Quelle: dream*
+
+Swarm executions repeatedly score zero and fail to converge despite evolving, indicating broken convergence criteria.
+
+### `dream:20260903154845:1:c6ac98`
+*03.09. 15:48 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits causing cascading fallbacks to a single reliable model.
 
 ### `dream:20260903153848:5:a35d4b`
 *03.09. 15:38 UTC · Quelle: dream*

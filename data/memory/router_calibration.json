@@ -1,0 +1,10 @@
+{
+  "global_temperature": 1.0,
+  "global_fitted": true,
+  "per_model": {
+    "unknown": 1.0
+  },
+  "model_health_keys": [
+    "unknown"
+  ]
+}
