@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 11:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 11:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- File-read failures ("nichts gelesen") stem from relative-path ambiguity, requiring a canonical absolute-path resolver bound at process start.
+- Stale knowledge (market analyses) persists without automated nightly rehydration that extracts actionable patterns and version-updates memory.
+- Unvalidated skill proposals accumulate without a compilation pipeline that lints, type-checks, tests, and atomically promotes with rollback.
+- High fallback latency (40s+) demands predictive budget allocation based on prompt tokens and historical performance to pre-select optimal model tiers.
+- Provider-specific rate limits (429 errors) require per-provider circuit breakers with exponential backoff and automatic fallback to healthy tiers to m
 - Autonomous goals fire on failure/stale/gap signals but lack priority arbitration, risking thrashing when multiple high-signal goals compete for the sa
 - Event pruning (36-37 per run) occurs while fact count stays static, signaling unbounded fact-store growth that needs TTL or relevance-based decay.
 - Recurring 'herzschlag: organzyklus + gedächtnis-sync' CI failures indicate infrastructure fragility that should gate non-critical organ activity via c
@@ -51,11 +56,6 @@
 - Destructive tool operations (os.system, subprocess) are correctly blocked by the safety gate, requiring human approval for production deployment.
 - The simulation-to-practice pipeline (simulate → revise → apply → verify via tor/calibration/bahnen/swarm) successfully delivered a working 417-line Py
 - The model "z-ai/glm-5.2:free" consistently fails with HTTP 429 rate limiting, making it unreliable as a primary model without exponential backoff and 
-- Simulation-driven revision cycles (verdict=revise, 4 revisions applied) prove effective but only run when metabolism budget permits.
-- System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which starves the very simulations needed to validate skill proposals.
-- File-system actions fail due to relative-path confusion between sys.argv[1], ZOETRON_DATA, and working directory, mandating absolute-path resolution a
-- The working model (nvidia/nemotron-3-ultra) exhibits high latency variance (27-63s), requiring timeout budgets and fallback chains rather than single-
-- Free-tier model providers (z-ai/glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota-aware schedul
 
 ---
 

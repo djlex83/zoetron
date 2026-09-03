@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10475 Fakten** · Stand 2026-09-03 11:27 UTC · aktualisiert bei jedem Herzschlag
+**10480 Fakten** · Stand 2026-09-03 11:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5730
+- **dream:** 5735
 - **swarm_artifact:** 2229
 - **last_swarm_critique:** 726
 - **anti_pattern:** 639
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903114259:5:9d3adf`
+*03.09. 11:42 UTC · Quelle: dream*
+
+File-read failures ("nichts gelesen") stem from relative-path ambiguity, requiring a canonical absolute-path resolver bound at process start.
+
+### `dream:20260903114259:4:1eed2c`
+*03.09. 11:42 UTC · Quelle: dream*
+
+Stale knowledge (market analyses) persists without automated nightly rehydration that extracts actionable patterns and version-updates memory.
+
+### `dream:20260903114259:3:9218d7`
+*03.09. 11:42 UTC · Quelle: dream*
+
+Unvalidated skill proposals accumulate without a compilation pipeline that lints, type-checks, tests, and atomically promotes with rollback.
+
+### `dream:20260903114259:2:c13e61`
+*03.09. 11:42 UTC · Quelle: dream*
+
+High fallback latency (40s+) demands predictive budget allocation based on prompt tokens and historical performance to pre-select optimal model tiers.
+
+### `dream:20260903114259:1:afb951`
+*03.09. 11:42 UTC · Quelle: dream*
+
+Provider-specific rate limits (429 errors) require per-provider circuit breakers with exponential backoff and automatic fallback to healthy tiers to maintain system reliability.
 
 ### `tool:modellfehler-systematisch-reduzieren`
 *03.09. 11:26 UTC · Quelle: hands*

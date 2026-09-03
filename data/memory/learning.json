@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 11:26:14",
+ "stand": "2026-09-03 11:43:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,15 +27,15 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-in-handlung-umsetzen.py",
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "marktanalyse-in-handlung-umsetzen.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -375,7 +375,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.694,
+ "haende_quote": 0.696,
  "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 34,
