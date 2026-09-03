@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10100 Fakten** · Stand 2026-09-03 00:28 UTC · aktualisiert bei jedem Herzschlag
+**10105 Fakten** · Stand 2026-09-03 00:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5495
+- **dream:** 5500
 - **swarm_artifact:** 2149
 - **last_swarm_critique:** 712
 - **anti_pattern:** 625
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903005704:5:d0732a`
+*03.09. 00:57 UTC · Quelle: dream*
+
+Drive signals (stale, failure, gap) map cleanly to distinct remediation pathways: refresh, harden, explore.
+
+### `dream:20260903005704:4:78fa01`
+*03.09. 00:57 UTC · Quelle: dream*
+
+Reflex-driven goals converge without explicit scoring, implying heuristic completion signals are sufficient for routine tasks.
+
+### `dream:20260903005704:3:360923`
+*03.09. 00:57 UTC · Quelle: dream*
+
+Pruning 11 events with zero fact loss suggests aggressive event retention thresholds are safe for this workload.
+
+### `dream:20260903005704:2:ba46b3`
+*03.09. 00:57 UTC · Quelle: dream*
+
+Successful fallbacks to inclusionai/ling-3.0-flash-fin show smaller, specialized models can maintain availability when flagship models saturate.
+
+### `dream:20260903005704:1:dc1f17`
+*03.09. 00:57 UTC · Quelle: dream*
+
+Rate-limit errors (429) across multiple providers indicate systemic upstream congestion, not isolated model failures.
 
 ### `tool:modellfehler-deutlich-reduzieren`
 *03.09. 00:27 UTC · Quelle: hands*
