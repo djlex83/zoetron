@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 04:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 04:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate but remain unused because no mechanism exists to evaluate, prioritize, and automatically implement proposals matched to obs
+- Hand action tool failures consistently stem from path resolution confusion between relative paths, sys.argv[1], and ZOETRON_DATA environment variable,
+- Low-latency models (poolside/laguna-s-2.1 at 6s) outperform high-latency fallbacks (nemotron at 20-55s) by 3-9x under conserve mode, making latency a 
+- Fallback chains collapse when all fallback models route through the same rate-limited gateway, necessitating provider-diverse fallback pools with inde
+- Quota exhaustion cascades across multiple models simultaneously via shared OpenRouter infrastructure, requiring proactive per-provider quota tracking 
 - Stale swarm results (old market analyses) accumulate because no automated pruning policy binds TTL to goal completion.
 - Five skill proposals exist but none have been executed; the system proposes but does not validate or deploy, creating a proposal-execution gap.
 - Metabolism enters conserve state (stress=1.0) with only 1 iteration budget, preventing recovery retries exactly when they are needed most.
@@ -51,11 +56,6 @@
 - Initial tool execution failure (exit:1) recovered on retry (exit:0), confirming transient infrastructure issues warrant automatic retry with backoff.
 - High stress state (1.0) with conserve budget correlates with cascading model failures and should trigger aggressive fallback selection.
 - Simultaneous 429 errors across multiple models indicate shared quota exhaustion rather than individual model limits.
-- Path-resolution failures are latent: a dedicated skill proposal for absolute-path conversion suggests hand actions currently rely on fragile relative 
-- Reflex tools succeed at micro-tasks (file reading, idea-to-skill conversion) but macro-goals (reduce error rate, utilize analyses) stall because they 
-- Stale artifacts persist despite explicit drive goals: three market analyses remain outdated across multiple cycles, indicating no automated freshness 
-- Skill proposals accumulate but lack a validation pipeline: five proposals exist (router, path resolver, simulation scaffold, retry scheduler, cross-me
-- Model reliability is the primary bottleneck: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra shows high latency varian
 
 ---
 

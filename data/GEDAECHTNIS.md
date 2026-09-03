@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10219 Fakten** · Stand 2026-09-03 04:18 UTC · aktualisiert bei jedem Herzschlag
+**10224 Fakten** · Stand 2026-09-03 04:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5565
+- **dream:** 5570
 - **swarm_artifact:** 2175
 - **last_swarm_critique:** 717
 - **anti_pattern:** 631
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903043259:5:759388`
+*03.09. 04:32 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain unused because no mechanism exists to evaluate, prioritize, and automatically implement proposals matched to observed failure patterns.
+
+### `dream:20260903043259:4:78499a`
+*03.09. 04:32 UTC · Quelle: dream*
+
+Hand action tool failures consistently stem from path resolution confusion between relative paths, sys.argv[1], and ZOETRON_DATA environment variable, requiring canonical path validation before execution.
+
+### `dream:20260903043259:3:5c4739`
+*03.09. 04:32 UTC · Quelle: dream*
+
+Low-latency models (poolside/laguna-s-2.1 at 6s) outperform high-latency fallbacks (nemotron at 20-55s) by 3-9x under conserve mode, making latency a primary routing criterion over capability.
+
+### `dream:20260903043259:2:cdb9c1`
+*03.09. 04:32 UTC · Quelle: dream*
+
+Fallback chains collapse when all fallback models route through the same rate-limited gateway, necessitating provider-diverse fallback pools with independent quota buckets.
+
+### `dream:20260903043259:1:b3ed78`
+*03.09. 04:32 UTC · Quelle: dream*
+
+Quota exhaustion cascades across multiple models simultaneously via shared OpenRouter infrastructure, requiring proactive per-provider quota tracking and circuit breaking before 429 errors occur.
 
 ### `tool:modellfehler-dauerhaft-reduzieren`
 *03.09. 04:16 UTC · Quelle: hands*
