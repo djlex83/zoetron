@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning discards events without validating fact extraction completeness, potentially losing training signal for entity/relation extractors.
+- Hand actions already emit structured telemetry (exit code, duration, stdout/stderr) but lack automatic retry with backoff for transient failures.
+- Self-improvement loops lack convergence detection, risking infinite cycles without measurable progress toward goals.
+- Multiple independent skill proposals converge on model routing, circuit breaking, and structured error telemetry, indicating a systemic gap in resilie
+- Rate-limited models (429 errors) repeatedly block primary execution paths, making automatic fallback with health scoring essential for reliability.
 - Error telemetry is fragmented across model_fail, hand_action, and reflex logs, preventing unified failure pattern mining.
 - Reflex actions succeed for narrow tasks (memory update) but lack generalization to broader goal execution.
 - Stale drive goals (market analyses, self-criticism) linger without automatic refresh triggers tied to data freshness metrics.
@@ -51,11 +56,6 @@
 - Dream insights lack an automatic bridge to actionable goals, causing high-confidence lessons (>0.8) to remain inert instead of spawning drive_goals wi
 - Skill proposals accumulate without validation because no gate enforces implementation sketches and smoke tests before backlog entry.
 - Free-tier models consistently hit 429 rate limits under load, requiring per-model circuit breakers with 60s rolling windows and 120s cooldowns to prev
-- Fact pruning removed zero items despite a 7-day TTL proposal, showing maintenance policies are not enforced automatically.
-- Drive goal 'Vorgeschlagene Fähigkeiten wirklich bauen' exists but no skill proposals have been implemented, proving the insight-to-action loop is brok
-- Five separate skill proposals for model resilience (fallback chain, circuit breaker, health dashboard, error-signature router, real-time router) dupli
-- Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x latency variance (13–61 s), making it unreliable for time-bounded tasks without a hard
-- Model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, indicating it should be permanently excluded or strictly rate-limited.
 
 ---
 

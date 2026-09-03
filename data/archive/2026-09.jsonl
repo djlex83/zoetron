@@ -7853,3 +7853,21 @@
 {"ts": 1787870386.2470472, "kind": "hand_action", "payload": {"ok": false, "exit": null, "error": "timeout after 20.0s", "duration_s": 20.02, "gelesen": 0}}
 {"ts": 1787870388.298934, "kind": "issue_synced", "payload": {"issue": 170, "state": "open"}}
 {"ts": 1787870474.8640518, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787873130.0190449, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787873131.4304128, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787873134.8585167, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787873134.858513, "schalter_geoeffnet": false}}
+{"ts": 1787873172.6390135, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 37.8, "tokens_ein": 1311, "tokens_aus": 1410}}
+{"ts": 1787873172.639646, "kind": "skill_proposal", "payload": {"proposal": "Deploy a model-router organ that tags each model with its OpenRouter quota bucket, tracks real-time usage, and routes requests to the least-used healthy bucket with exponential backoff (base 2s, max 60s) and circuit-breaker (3 consecutive 429/5xx)."}}
+{"ts": 1787873172.639703, "kind": "skill_proposal", "payload": {"proposal": "Implement hourly synthetic probes per model bucket feeding a rolling p95/error-rate dashboard that auto-demotes unhealthy models and escalates to paid models for high-priority goals."}}
+{"ts": 1787873172.639757, "kind": "skill_proposal", "payload": {"proposal": "Wrap the simulation→hand_action→tor cycle into a 'skill_bootstrap' procedure requiring artifact validation (file exists, non-zero size, checksum match) before production promotion."}}
+{"ts": 1787873172.6398237, "kind": "skill_proposal", "payload": {"proposal": "Create a path-resolver utility that all hand_actions must call, enforcing absolute paths rooted at ZOETRON_DATA/sys.argv[1] and rejecting relative references."}}
+{"ts": 1787873172.6398785, "kind": "skill_proposal", "payload": {"proposal": "Reactivate self-diagnose as a scheduled organ that audits model-router metrics (latency, error rate, fallback depth) and skill-promotion pipeline health weekly, with metabolism-aware task gating (block swarm launch when stress > 0.8)."}}
+{"ts": 1787873172.6399324, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787873174.6061447, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787873174.6061409, "schalter_geoeffnet": false}}
+{"ts": 1787873181.829158, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 7.2, "tokens_ein": 436, "tokens_aus": 712}}
+{"ts": 1787873181.829302, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht zu viele Fehler. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1787873181.8293748, "kind": "drive_goal", "payload": {"title": "Fehleranalyse-Organ endlich bauen", "why": "Der letzte Versuch scheiterte komplett. Eine gute Fehleranalyse hilft, Probleme zu verstehen.", "signal": "failure"}}
+{"ts": 1787873181.8294368, "kind": "drive_goal", "payload": {"title": "Mehr Simulationen für Lernen nutzen", "why": "Simulationen wurden selten angewendet. Mehr Übung im Kopf verbessert echte Aktionen.", "signal": "gap"}}
+{"ts": 1787873183.7360034, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 1}}
+{"ts": 1787873183.736858, "kind": "reflex_used", "payload": {"goal": "Neue Fähigkeiten aus Vorschlägen entwickeln", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1787873184.362178, "kind": "act_done", "payload": {"goal_title": "Neue Fähigkeiten aus Vorschlägen entwickeln", "score": null, "converged": true, "mode": "reflex"}}

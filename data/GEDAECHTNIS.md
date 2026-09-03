@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10871 Fakten** · Stand 2026-09-03 23:20 UTC · aktualisiert bei jedem Herzschlag
+**10876 Fakten** · Stand 2026-09-03 23:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5985
+- **dream:** 5990
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903232816:5:2f7bc8`
+*03.09. 23:28 UTC · Quelle: dream*
+
+Pruning discards events without validating fact extraction completeness, potentially losing training signal for entity/relation extractors.
+
+### `dream:20260903232816:4:8df420`
+*03.09. 23:28 UTC · Quelle: dream*
+
+Hand actions already emit structured telemetry (exit code, duration, stdout/stderr) but lack automatic retry with backoff for transient failures.
+
+### `dream:20260903232816:3:e57c3e`
+*03.09. 23:28 UTC · Quelle: dream*
+
+Self-improvement loops lack convergence detection, risking infinite cycles without measurable progress toward goals.
+
+### `dream:20260903232816:2:20161d`
+*03.09. 23:28 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on model routing, circuit breaking, and structured error telemetry, indicating a systemic gap in resilience infrastructure.
+
+### `dream:20260903232816:1:4eced8`
+*03.09. 23:28 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) repeatedly block primary execution paths, making automatic fallback with health scoring essential for reliability.
 
 ### `dream:20260903231729:5:6a6a0b`
 *03.09. 23:17 UTC · Quelle: dream*
