@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7158 Neuronen · 474801 bewertete Synapsen
+Stand: 7165 Neuronen · 476177 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -15,15 +15,15 @@ Stand: 7158 Neuronen · 474801 bewertete Synapsen
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 618 | 0.23 |
 | 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 624 | 0.23 |
 | 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 612 | 0.23 |
-| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 517 | 0.27 |
+| 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 519 | 0.27 |
 | 7 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 610 | 0.23 |
-| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 517 | 0.26 |
-| 9 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 529 | 0.26 |
-| 10 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 502 | 0.27 |
-| 11 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 519 | 0.26 |
+| 8 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 519 | 0.26 |
+| 9 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 530 | 0.26 |
+| 10 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 503 | 0.27 |
+| 11 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is reliable but… | 520 | 0.26 |
 | 12 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 545 | 0.24 |
 | 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 539 | 0.24 |
-| 14 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 517 | 0.25 |
+| 14 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 518 | 0.25 |
 | 15 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 536 | 0.24 |
 
 ## Die 15 stärksten Synapsen

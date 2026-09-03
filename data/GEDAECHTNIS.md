@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10157 Fakten** · Stand 2026-09-03 02:29 UTC · aktualisiert bei jedem Herzschlag
+**10174 Fakten** · Stand 2026-09-03 02:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5540
-- **swarm_artifact:** 2155
-- **last_swarm_critique:** 713
-- **anti_pattern:** 627
-- **last_swarm_goal:** 461
-- **strategy:** 334
-- **tool:** 125
+- **dream:** 5545
+- **swarm_artifact:** 2161
+- **last_swarm_critique:** 714
+- **anti_pattern:** 629
+- **last_swarm_goal:** 462
+- **strategy:** 335
+- **tool:** 126
 - **hand_result:** 110
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:veraltete-ziele-aktualisieren`
+*03.09. 02:42 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Ziele aktualisieren'. Datei: data/tools/veraltete-ziele-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Veraltete Ziele aktualis:2`
+*03.09. 02:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Declarative Goal Evolution Rules Engine - Express goal lifecycle rules (expiration, metric drift, policy changes) in a domain‑specific language (DSL) or rule engine (e.g., Drools, Open Policy Agent). Each artefact contributes
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Veraltete Ziele aktualis:1`
+*03.09. 02:41 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Event‑Driven Goal Synchronization Layer - Deploy a lightweight event bus (e.g., NATS or Kafka) that emits 'GoalOutdated' events whenever any artefact discovers staleness. A dedicated synchronizer service subscribes to these e
+
+### `last_swarm_critique`
+*03.09. 02:40 UTC · Quelle: critic*
+
+score=5; issues=Zwei von drei Artefakten (WILL-Organ und SEMANTIC) identifizieren nur veraltete Ziele, fuehren aber kein tatsaechliches Update aus – der Kernauftrag 'aktualisieren' bleibt fuer diese beiden unerfuellt.; Keine Integration zwischen den drei Artef
+
+### `last_swarm_goal`
+*03.09. 02:35 UTC · Quelle: system*
+
+Veraltete Ziele aktualisieren
+
+### `dream:20260903023524:5:484fc6`
+*03.09. 02:35 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free failed on every attempt due to 429 rate limits, making it completely unusable under current conditions without a backoff strategy or tier upgrade.
+
+### `dream:20260903023524:4:274b2b`
+*03.09. 02:35 UTC · Quelle: dream*
+
+The simulation revision loop (revise → apply revisions → re-evaluate) is a viable iterative pattern but lacks convergence criteria, risking excessive cycles without guaranteed improvement.
+
+### `dream:20260903023524:3:f17961`
+*03.09. 02:35 UTC · Quelle: dream*
+
+Simulation calibration was wildly inaccurate (predicted 6 vs actual 1, error 5), meaning the prediction model or its inputs require recalibration before simulation outputs can be trusted.
+
+### `dream:20260903023524:2:b27efa`
+*03.09. 02:35 UTC · Quelle: dream*
+
+Hand action execution fails silently (exit 1, no error message, gelesen 0), pointing to a broken artifact execution path that produces no diagnostic output for debugging.
+
+### `dream:20260903023524:1:6dba86`
+*03.09. 02:35 UTC · Quelle: dream*
+
+Free-tier OpenRouter models are severely rate-limited; only nvidia/nemotron-3-ultra-550b-a55b:free proved consistently usable, though its latency spiked to 100s, indicating unstable infrastructure even for the reliable model.
 
 ### `dream:20260903022728:5:ca117d`
 *03.09. 02:27 UTC · Quelle: dream*

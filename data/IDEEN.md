@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 02:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 02:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,12 +27,12 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- z-ai/glm-5.2:free failed on every attempt due to 429 rate limits, making it completely unusable under current conditions without a backoff strategy or
+- The simulation revision loop (revise → apply revisions → re-evaluate) is a viable iterative pattern but lacks convergence criteria, risking excessive 
+- Simulation calibration was wildly inaccurate (predicted 6 vs actual 1, error 5), meaning the prediction model or its inputs require recalibration befo
+- Hand action execution fails silently (exit 1, no error message, gelesen 0), pointing to a broken artifact execution path that produces no diagnostic o
+- Free-tier OpenRouter models are severely rate-limited; only nvidia/nemotron-3-ultra-550b-a55b:free proved consistently usable, though its latency spik
 - Swarm and reflex mechanisms trigger for the same goal ("Simulationen konsequent anwenden") but both fail, revealing a gap between goal declaration and
 - The metabolism controller correctly throttles to conserve mode (max_tasks=3, max_iterations=1) under stress=1.0, but this starves the very retries nee
 - Tool executions fail when they don't resolve absolute data paths from sys.argv[1] and ZOETRON_DATA, indicating a systemic path-resolution bug in hand 
@@ -51,11 +56,6 @@
 - Stale assets (market analyses, old tasks) persist because no periodic review trigger surfaces them for refresh or retirement.
 - Skill proposals accumulate without execution because no automated pipeline validates, tests, and promotes them after generation.
 - Rate limiting across multiple free-tier models causes cascading failures because the router lacks per-model quota tracking and cooldown state.
-- Stress-aware scheduling is absent: the system runs model calls back-to-back despite repeated 429s, wasting latency budget.
-- Stale analyses and proposed skills persist unused because no automatic triage converts 'stale'/'gap' signals into scheduled work.
-- Rate-limit errors (429) on specific models create systemic unreliability that self-diagnosis misses because it only checks organs, not model health.
-- Reflex-driven execution reliably converges goals (Marktanalyse, Fähigkeiten testen) whereas proactive drive goals accumulate without action.
-- Model fallback chains are essential because primary models (z-ai/glm-5.2) fail consistently with rate limits while alternatives (nvidia/nemotron-3-ult
 
 ---
 
