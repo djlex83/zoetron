@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 09:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 09:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 4×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate but reflex tooling (traum-ideen-zu-fähigkeiten-machen.py) fails to materialize them.
+- System operates at max stress (1.0) in 'conserve' mode with 1-iteration budget, yet still spawns swarms that fail.
+- hand_action fails on path resolution (relative vs absolute, env var ZOETRON_DATA), causing silent zero-byte reads.
+- Provider health is highly asymmetric: nemotron-3-ultra and ling-3.0-flash-fin succeed while glm-5.2, gemma-4 variants consistently fail.
+- Rate limiting (HTTP 429) is the dominant failure mode across 4+ providers, indicating missing client-side rate awareness and backoff.
 - Five skill proposals were generated (circuit breaker, pipeline, middleware, router, tracing) but none have been promoted to executable tasks, showing 
 - Pruning removed 92 events but 0 facts, indicating experience consolidation is discarding operational context faster than durable knowledge is extracte
 - Critic identifies "directory disconnects" as a structural issue, suggesting skill proposals lack proper integration pathways into the system's capabil
@@ -51,11 +56,6 @@
 - System operates under maximum stress (1.0) with conservative budget, limiting parallel task execution to 3 tasks and 1 iteration.
 - Fallback model (nemotron-3-ultra) succeeds but exhibits high latency variance (19-135s), indicating unpredictable performance.
 - Primary model (glm-5.2) consistently fails with 429 rate limits, making it unreliable for production use.
-- Event pruning without fact extraction wastes experience; a continuous event-to-fact compressor must run before pruning.
-- High stress triggers conserve mode that starves consolidation; memory pressure must trigger proactive compression before stress peaks.
-- Relative path assumptions break hand actions; all file operations must resolve against ZOETRON_DATA environment variable.
-- Skill proposals accumulate without implementation because no automated pipeline exists to convert proposals into tested, deployed skills.
-- Rate-limited models without automatic fallback cause cascading failures; a provider-diverse registry with circuit breaking is essential.
 
 ---
 

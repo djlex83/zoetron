@@ -5926,3 +5926,29 @@
 {"ts": 1787820489.8736868, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.28, "gelesen": 54}}
 {"ts": 1787820492.202037, "kind": "issue_synced", "payload": {"issue": 150, "state": "open"}}
 {"ts": 1787820565.4688537, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787821782.5874975, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787821783.766774, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787821791.4466174, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787821791.4466145, "schalter_geoeffnet": false}}
+{"ts": 1787821844.0805852, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 52.6, "tokens_ein": 1649, "tokens_aus": 883}}
+{"ts": 1787821844.0814507, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with health-aware failover: track per-model success rate, latency, and rate-limit state; prefer Nemotron, fall back to Laguna, quarantine 429-ing models for cooldown."}}
+{"ts": 1787821844.0815444, "kind": "skill_proposal", "payload": {"proposal": "Add exponential backoff + jitter retry logic for 429/502 errors before failing over to next model."}}
+{"ts": 1787821844.0816598, "kind": "skill_proposal", "payload": {"proposal": "Create a 'skill crystallization' procedure: simulate → revise until risk<2 → execute hand action → validate artifact with tor; store verified artifacts in a reusable library."}}
+{"ts": 1787821844.0817597, "kind": "skill_proposal", "payload": {"proposal": "Instrument hand actions to log bytes read and parse target selectors so zero-byte reads become detectable anomalies."}}
+{"ts": 1787821844.081893, "kind": "skill_proposal", "payload": {"proposal": "Build a latency SLO monitor: alert if Nemotron p95 > 120s or fallback rate > 30% over 10 requests."}}
+{"ts": 1787821844.0819826, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787821846.2348514, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787821846.2348485, "schalter_geoeffnet": false}}
+{"ts": 1787821895.7935233, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 49.6, "tokens_ein": 455, "tokens_aus": 936}}
+{"ts": 1787821895.7936602, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Viele Modelle scheitern noch. Wir brauchen bessere Modelle für sichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1787821895.7937322, "kind": "drive_goal", "payload": {"title": "Mehr Evolution starten", "why": "Das System entwickelt sich zu selten weiter. Regelmäßige Evolution bringt neue Fähigkeiten.", "signal": "gap"}}
+{"ts": 1787821895.7937942, "kind": "drive_goal", "payload": {"title": "Aus Träumen lernen verbessern", "why": "Träume bringen wenig Nutzen. Wir müssen Träume besser in Können umwandeln.", "signal": "combination"}}
+{"ts": 1787821899.0827413, "kind": "swarm_started", "payload": {"goal": "Simulations-Lernschleife schließen"}}
+{"ts": 1787821912.2017097, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787821913.542873, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787821914.9035165, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787821914.9035144, "schalter_geoeffnet": false}}
+{"ts": 1787821967.0283537, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 52.1, "tokens_ein": 3285, "tokens_aus": 954}}
+{"ts": 1787821968.2062607, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787821968.2062578, "schalter_geoeffnet": false}}
+{"ts": 1787821976.108667, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 7.9, "tokens_ein": 510, "tokens_aus": 501}}
+{"ts": 1787821976.979311, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787821976.9793072, "schalter_geoeffnet": false}}
+{"ts": 1787822076.4579694, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 99.5, "tokens_ein": 380, "tokens_aus": 575}}
+{"ts": 1787822076.4581742, "kind": "simulation", "payload": {"goal": "Simulations-Lernschleife schließen", "verdict": "go", "risks": 3, "revisions": 2}}
+{"ts": 1787822077.3672082, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787822077.367205, "schalter_geoeffnet": false}}
