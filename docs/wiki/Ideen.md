@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulator overconfidence (high scores, execution failures) indicates missing adversarial validation loop.
+- Reflex execution of ‘fail-safe routing’ succeeded, proving the system can deploy complex skills autonomously when triggered.
+- Multiple independent proposals converge on model routing, path validation, and simulation scaffolding – signaling architectural gaps.
+- Automatic fallback to nemotron succeeds but lacks health-aware routing (latency, error rates, cost tracking).
+- Repeated 429 errors on glm-5.2 reveal that single-model dependence creates systemic fragility under rate limits.
 - Simulation and planning overconfidence persists without calibration tracking, causing repeated execution surprises.
 - Skill proposals accumulate but rarely become implemented skills, revealing a missing promotion pipeline from proposal to production.
 - Reflex execution successfully completed a stale market-analysis goal, proving that lightweight deterministic tools unblock high-value work.
@@ -51,11 +56,6 @@
 - Multiple skill proposals for model routing, path resolution, and health profiling exist but remain unimplemented, showing gap between proposal generat
 - Automatic fallback to nvidia/nemotron-3-ultra works but latency varies 10-16s, indicating need for composite scoring (latency × cost × availability) u
 - Recurring 429 errors on z-ai/glm-5.2:free reveal single-provider dependency as primary failure mode, requiring provider-diverse routing with quota tra
-- The swarm converged in one cycle with score 8, demonstrating that multi-role orchestration (planner/builder/critic) can achieve target quality despite
-- Calibration predicted 7 failures vs 8 actual (error=1), showing the failure estimator is well-calibrated but slightly optimistic.
-- Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra) succeeded, both with ~20s latency, establishing a high-latency baseline f
-- Nvidia's Nemotron model fails with HTTP 502 upstream overload, revealing provider-side capacity constraints as a second independent failure mode.
-- Free-tier models across multiple providers (Z.ai, Google, Poolside) consistently fail with HTTP 429 rate limits under concurrent load, indicating syst
 
 ---
 

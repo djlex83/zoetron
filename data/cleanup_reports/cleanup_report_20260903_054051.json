@@ -1,0 +1,158 @@
+{
+  "scan_time": "2026-09-03T05:40:51.027311",
+  "total_files": 609,
+  "total_size_bytes": 18729436,
+  "total_size_mb": 17.86,
+  "by_action": {
+    "keep": 286,
+    "delete": 2,
+    "review": 131,
+    "archive": 190
+  },
+  "by_category": {
+    "memory": 70,
+    "temp": 1,
+    "unknown": 131,
+    "result": 42,
+    "backup": 1,
+    "artifact": 364
+  },
+  "archive_size_mb": 1.52,
+  "delete_size_mb": 0.0,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "rel_path": "tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "size_bytes": 2681,
+      "modified": 1787812317.2147682,
+      "modified_iso": "2026-08-27T06:31:57.214768",
+      "age_days": 7.0,
+      "category": "backup",
+      "action": "delete",
+      "reason": "Old backup - superseded"
+    },
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 7.7,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787803986_create-zoem-py-core-module-with-zoem-data-class-and-export-f.md",
+      "rel_path": "artefakte/s05_1787803986_create-zoem-py-core-module-with-zoem-data-class-and-export-f.md",
+      "size_bytes": 35138,
+      "modified": 1787803986.9755025,
+      "modified_iso": "2026-08-27T04:13:06.975502",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787731419_implement-model-error-categorization-and-tracking.md",
+      "rel_path": "artefakte/s05_1787731419_implement-model-error-categorization-and-tracking.md",
+      "size_bytes": 28313,
+      "modified": 1787731419.9866219,
+      "modified_iso": "2026-08-26T08:03:39.986622",
+      "age_days": 7.9,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787787993_router-promotion-logic-auto-promote-superior-models.md",
+      "rel_path": "artefakte/s05_1787787993_router-promotion-logic-auto-promote-superior-models.md",
+      "size_bytes": 25767,
+      "modified": 1787787993.0334134,
+      "modified_iso": "2026-08-26T23:46:33.033413",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787731171_build-skill-validation-pipeline-with-automated-injection.md",
+      "rel_path": "artefakte/s05_1787731171_build-skill-validation-pipeline-with-automated-injection.md",
+      "size_bytes": 24527,
+      "modified": 1787731171.2196295,
+      "modified_iso": "2026-08-26T07:59:31.219630",
+      "age_days": 7.9,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s03_1787777965_draft-deliverable-for-embedding-recall-statt-reinem-wortverg.md",
+      "rel_path": "artefakte/s03_1787777965_draft-deliverable-for-embedding-recall-statt-reinem-wortverg.md",
+      "size_bytes": 24259,
+      "modified": 1787777965.7756953,
+      "modified_iso": "2026-08-26T20:59:25.775695",
+      "age_days": 7.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787787906_mini-benchmark-suite-8-tasks-rapid-evaluation-pipeline.md",
+      "rel_path": "artefakte/s05_1787787906_mini-benchmark-suite-8-tasks-rapid-evaluation-pipeline.md",
+      "size_bytes": 21299,
+      "modified": 1787787906.2380362,
+      "modified_iso": "2026-08-26T23:45:06.238036",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787786088_mini-benchmark-runner-8-task-capability-evaluation-for-new-m.md",
+      "rel_path": "artefakte/s05_1787786088_mini-benchmark-runner-8-task-capability-evaluation-for-new-m.md",
+      "size_bytes": 20897,
+      "modified": 1787786088.7141044,
+      "modified_iso": "2026-08-26T23:14:48.714104",
+      "age_days": 7.3,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s01_1787703814_draft-deliverable-for-lokaler-sch-ler-das-erste-mal-lernt-da.md",
+      "rel_path": "artefakte/s01_1787703814_draft-deliverable-for-lokaler-sch-ler-das-erste-mal-lernt-da.md",
+      "size_bytes": 20574,
+      "modified": 1787703814.9466794,
+      "modified_iso": "2026-08-26T00:23:34.946679",
+      "age_days": 8.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s04_1787776227_erstelle-benchmark-py-mit-20-festen-testfragen.md",
+      "rel_path": "artefakte/s04_1787776227_erstelle-benchmark-py-mit-20-festen-testfragen.md",
+      "size_bytes": 20401,
+      "modified": 1787776227.600144,
+      "modified_iso": "2026-08-26T20:30:27.600144",
+      "age_days": 7.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s02_1787798661_draft-deliverable-for-lebender-steckbrief-die-biografie-als.md",
+      "rel_path": "artefakte/s02_1787798661_draft-deliverable-for-lebender-steckbrief-die-biografie-als.md",
+      "size_bytes": 20253,
+      "modified": 1787798661.4916325,
+      "modified_iso": "2026-08-27T02:44:21.491632",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    }
+  ]
+}

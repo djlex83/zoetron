@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10263 Fakten** · Stand 2026-09-03 05:34 UTC · aktualisiert bei jedem Herzschlag
+**10268 Fakten** · Stand 2026-09-03 05:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5600
+- **dream:** 5605
 - **swarm_artifact:** 2181
 - **last_swarm_critique:** 718
 - **anti_pattern:** 631
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903054031:5:edf882`
+*03.09. 05:40 UTC · Quelle: dream*
+
+Simulator overconfidence (high scores, execution failures) indicates missing adversarial validation loop.
+
+### `dream:20260903054031:4:536d09`
+*03.09. 05:40 UTC · Quelle: dream*
+
+Reflex execution of ‘fail-safe routing’ succeeded, proving the system can deploy complex skills autonomously when triggered.
+
+### `dream:20260903054031:3:92b3ff`
+*03.09. 05:40 UTC · Quelle: dream*
+
+Multiple independent proposals converge on model routing, path validation, and simulation scaffolding – signaling architectural gaps.
+
+### `dream:20260903054031:2:5fa3ec`
+*03.09. 05:40 UTC · Quelle: dream*
+
+Automatic fallback to nemotron succeeds but lacks health-aware routing (latency, error rates, cost tracking).
+
+### `dream:20260903054031:1:f078fe`
+*03.09. 05:40 UTC · Quelle: dream*
+
+Repeated 429 errors on glm-5.2 reveal that single-model dependence creates systemic fragility under rate limits.
 
 ### `dream:20260903053212:5:7c6755`
 *03.09. 05:32 UTC · Quelle: dream*
