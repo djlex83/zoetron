@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 03:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 04:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,14 +18,14 @@
 - Implement circuit breaker per model endpoint with exponential backoff, health scores, and automatic failover t *(hatte die Idee 4×)*
 - Create reflex eligibility gate: match goal semantics against registered reflex patterns via embedding similari *(hatte die Idee 4×)*
 - Enforce fact TTL policy: auto-prune model-health facts unaccessed >7 days or access_count <2; trigger prune_ru *(hatte die Idee 4×)*
-- Implement a model health registry that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoint *(hatte die Idee 3×)*
-- Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60s cooldown) with 2-retry, 10s t *(hatte die Idee 3×)*
+- Add DiagnosticGapDetector that correlates per-organ healthy reports with cross-organ failure signatures (e.g., *(hatte die Idee 3×)*
+- Create StaleDataLifecycle that timestamps facts and events, prunes entries past a TTL, and surfaces unused ana *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -35,12 +35,17 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale swarm results (old market analyses) accumulate because no automated pruning policy binds TTL to goal completion.
+- Five skill proposals exist but none have been executed; the system proposes but does not validate or deploy, creating a proposal-execution gap.
+- Metabolism enters conserve state (stress=1.0) with only 1 iteration budget, preventing recovery retries exactly when they are needed most.
+- Hand actions fail because they use relative paths instead of resolving sys.argv[1]/ZOETRON_DATA to absolute, verified paths before I/O.
+- Repeated 429 errors on z-ai/glm-5.2:free show that model health tracking and automatic fallback are missing, causing silent degradation.
 - z-ai/glm-5.2:free fails 100% of attempts while nvidia/nemotron and inclusionai/ling succeed, revealing provider-specific reliability tiers.
 - Simulation approved execution despite 3 risks, but those risks materialized as model latency spikes (17-35s) and upstream 502 errors.
 - Initial tool execution failure (exit:1) recovered on retry (exit:0), confirming transient infrastructure issues warrant automatic retry with backoff.
@@ -51,11 +56,6 @@
 - Stale artifacts persist despite explicit drive goals: three market analyses remain outdated across multiple cycles, indicating no automated freshness 
 - Skill proposals accumulate but lack a validation pipeline: five proposals exist (router, path resolver, simulation scaffold, retry scheduler, cross-me
 - Model reliability is the primary bottleneck: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra shows high latency varian
-- Event pruning removes 18 items per cycle yet stale market analyses persist, meaning pruning does not target decision-critical staleness.
-- Self-diagnosis reports zero organ errors while model failures persist, showing health checks do not cover inference reliability.
-- Skill proposals accumulate (5+ per dream) but a drive goal explicitly notes they remain untested, revealing a missing validation loop.
-- Market-analysis goals recur across cycles but are only resolved via reflex tools, indicating planning does not schedule them proactively.
-- Rate-limited free models (z-ai/glm-5.2) cause repeated 429 failures while Nemotron succeeds with highly variable latency (7.7–28.2s).
 
 ---
 

@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10209 Fakten** · Stand 2026-09-03 03:51 UTC · aktualisiert bei jedem Herzschlag
+**10219 Fakten** · Stand 2026-09-03 04:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5560
-- **swarm_artifact:** 2173
-- **last_swarm_critique:** 716
+- **dream:** 5565
+- **swarm_artifact:** 2175
+- **last_swarm_critique:** 717
 - **anti_pattern:** 631
-- **last_swarm_goal:** 464
+- **last_swarm_goal:** 465
 - **strategy:** 336
-- **tool:** 126
+- **tool:** 127
 - **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-dauerhaft-reduzieren`
+*03.09. 04:16 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler dauerhaft reduzieren'. Datei: data/tools/modellfehler-dauerhaft-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*03.09. 04:16 UTC · Quelle: critic*
+
+score=8; issues=Error classification in ErrorTaxonomy.classify relies on simple heuristic if/elif rules rather than a trained model, which may misclassify complex or ambiguous error patterns; Synthetic error generation in _generate_synthetic_errors uses unifor
+
+### `last_swarm_goal`
+*03.09. 04:12 UTC · Quelle: system*
+
+Modellfehler dauerhaft reduzieren
+
+### `dream:20260903041214:5:0b784a`
+*03.09. 04:12 UTC · Quelle: dream*
+
+Stale swarm results (old market analyses) accumulate because no automated pruning policy binds TTL to goal completion.
+
+### `dream:20260903041214:4:59d5d3`
+*03.09. 04:12 UTC · Quelle: dream*
+
+Five skill proposals exist but none have been executed; the system proposes but does not validate or deploy, creating a proposal-execution gap.
+
+### `dream:20260903041214:3:29ac7b`
+*03.09. 04:12 UTC · Quelle: dream*
+
+Metabolism enters conserve state (stress=1.0) with only 1 iteration budget, preventing recovery retries exactly when they are needed most.
+
+### `dream:20260903041214:2:bd80c2`
+*03.09. 04:12 UTC · Quelle: dream*
+
+Hand actions fail because they use relative paths instead of resolving sys.argv[1]/ZOETRON_DATA to absolute, verified paths before I/O.
+
+### `dream:20260903041214:1:23dcc8`
+*03.09. 04:12 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free show that model health tracking and automatic fallback are missing, causing silent degradation.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Traum-Simulationen besse:2`
 *03.09. 03:47 UTC · Quelle: evolution*
