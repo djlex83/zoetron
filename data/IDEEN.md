@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 00:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 00:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand-action execution (0.2s, exit 0) confirms the generated Python artifact is syntactically valid and runs without runtime errors.
+- Calibration error of 1 point (predicted 5 vs actual 6) suggests the risk estimator is well-calibrated but slightly pessimistic.
+- Evolutionary variant generation (3 variants) boosted score from 6 to 9, proving iterative refinement outperforms single-pass generation for complex an
+- Nemotron-3-Ultra shows high reliability but unpredictable latency (7-54s), making it unsuitable for time-critical paths without timeout guards.
+- Rate limiting (429 errors) affects multiple free-tier models simultaneously, indicating a shared infrastructure bottleneck rather than model-specific 
 - Simulation-driven revision loops can return 'go' verdicts with residual risks, meaning binary pass/fail decisions are insufficient without risk-budget
 - Reflex scripts can execute without actually modifying target files, producing false progress signals that mask stale work items.
 - Skill proposals accumulate far faster than they are implemented (55 proposals), creating a triage gap that prevents good ideas from becoming usable ca
@@ -51,11 +56,6 @@
 - Reflex-driven automation succeeds for repetitive, well-scoped tasks like market analysis updates without model involvement.
 - Model latency varies 4x (10s vs 38s) even among successful calls, requiring latency-aware routing for budget adherence.
 - Free-tier models exhibit systematic 429 rate-limiting failures across providers, making them unreliable for time-sensitive workloads.
-- Token efficiency varies wildly (448–1399 output tokens) even for similar latency, so routing must weigh cost per useful token.
-- A single successful reflex-driven swarm run proves the toolchain works when model latency is acceptable.
-- Stale tasks (e.g., market analysis) persist across cycles because no governor archives or deadlines them.
-- The system repeatedly proposes the same routing and circuit-breaker skills but does not enact them, creating a proposal-execution gap.
-- Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable as primary providers without automatic fallback.
 
 ---
 
