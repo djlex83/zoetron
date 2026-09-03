@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10115 Fakten** · Stand 2026-09-03 01:15 UTC · aktualisiert bei jedem Herzschlag
+**10120 Fakten** · Stand 2026-09-03 01:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5510
+- **dream:** 5515
 - **swarm_artifact:** 2149
 - **last_swarm_critique:** 712
 - **anti_pattern:** 625
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903012124:5:7df083`
+*03.09. 01:21 UTC · Quelle: dream*
+
+Three concurrent drive goals (failure, stale, gap) compete for tiny budgets without explicit prioritization or resource allocation.
+
+### `dream:20260903012124:4:a39a8e`
+*03.09. 01:21 UTC · Quelle: dream*
+
+System stress at 1.0 triggers conserve mode (max 1 iteration), preventing iterative error recovery exactly when it's needed most.
+
+### `dream:20260903012124:3:182cbe`
+*03.09. 01:21 UTC · Quelle: dream*
+
+Reflex tools are deployed without pre-flight validation, causing immediate execution failures (e.g., modellfehler-deutlich-reduzieren.py).
+
+### `dream:20260903012124:2:7dc463`
+*03.09. 01:21 UTC · Quelle: dream*
+
+File operations fail because tools use relative paths instead of resolving against ZOETRON_DATA environment variable.
+
+### `dream:20260903012124:1:0e500f`
+*03.09. 01:21 UTC · Quelle: dream*
+
+Free-tier model endpoints on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads.
 
 ### `dream:20260903011332:5:238443`
 *03.09. 01:13 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 01:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 01:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three concurrent drive goals (failure, stale, gap) compete for tiny budgets without explicit prioritization or resource allocation.
+- System stress at 1.0 triggers conserve mode (max 1 iteration), preventing iterative error recovery exactly when it's needed most.
+- Reflex tools are deployed without pre-flight validation, causing immediate execution failures (e.g., modellfehler-deutlich-reduzieren.py).
+- File operations fail because tools use relative paths instead of resolving against ZOETRON_DATA environment variable.
+- Free-tier model endpoints on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads.
 - Skill proposals accumulate (5 in this cycle alone) but the "build proposed skills" goal remains stale, confirming a pattern of proposal generation wit
 - System operates at maximum stress (1.0) in conserve mode with severely limited budgets (max_tasks=3, max_iterations=1), causing premature termination 
 - Reflex tools fail due to filesystem path resolution errors ("nichts gelesen - der Lauf endete mit 0"), showing that automation scripts assume incorrec
@@ -51,11 +56,6 @@
 - Latency varies nearly fourfold between successful models (5.6s to 20.7s), meaning naive model selection wastes time and resources without latency-awar
 - Reflex-based execution converged successfully but produced a null score, exposing that outcome validation is missing from the execution pipeline.
 - Rate-limit (429) and overload (502) errors across five different providers reveal that the absence of any fallback or circuit-breaking mechanism is th
-- Drive signals (stale, failure, gap) map cleanly to distinct remediation pathways: refresh, harden, explore.
-- Reflex-driven goals converge without explicit scoring, implying heuristic completion signals are sufficient for routine tasks.
-- Pruning 11 events with zero fact loss suggests aggressive event retention thresholds are safe for this workload.
-- Successful fallbacks to inclusionai/ling-3.0-flash-fin show smaller, specialized models can maintain availability when flagship models saturate.
-- Rate-limit errors (429) across multiple providers indicate systemic upstream congestion, not isolated model failures.
 
 ---
 
