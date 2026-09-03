@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10847 Fakten** · Stand 2026-09-03 22:41 UTC · aktualisiert bei jedem Herzschlag
+**10852 Fakten** · Stand 2026-09-03 22:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5970
+- **dream:** 5975
 - **swarm_artifact:** 2303
 - **last_swarm_critique:** 739
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903224853:5:4a3758`
+*03.09. 22:48 UTC · Quelle: dream*
+
+Fact pruning removed zero items despite a 7-day TTL proposal, showing maintenance policies are not enforced automatically.
+
+### `dream:20260903224853:4:3391f2`
+*03.09. 22:48 UTC · Quelle: dream*
+
+Drive goal 'Vorgeschlagene Fähigkeiten wirklich bauen' exists but no skill proposals have been implemented, proving the insight-to-action loop is broken.
+
+### `dream:20260903224853:3:cfd65c`
+*03.09. 22:48 UTC · Quelle: dream*
+
+Five separate skill proposals for model resilience (fallback chain, circuit breaker, health dashboard, error-signature router, real-time router) duplicate each other, revealing no deduplication gate before backlog entry.
+
+### `dream:20260903224853:2:d31d68`
+*03.09. 22:48 UTC · Quelle: dream*
+
+Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x latency variance (13–61 s), making it unreliable for time-bounded tasks without a hard timeout and fallback.
+
+### `dream:20260903224853:1:219df2`
+*03.09. 22:48 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, indicating it should be permanently excluded or strictly rate-limited.
 
 ### `dream:20260903223858:5:640b29`
 *03.09. 22:38 UTC · Quelle: dream*
