@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10866 Fakten** · Stand 2026-09-03 23:08 UTC · aktualisiert bei jedem Herzschlag
+**10871 Fakten** · Stand 2026-09-03 23:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5980
+- **dream:** 5985
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903231729:5:6a6a0b`
+*03.09. 23:17 UTC · Quelle: dream*
+
+Error telemetry is fragmented across model_fail, hand_action, and reflex logs, preventing unified failure pattern mining.
+
+### `dream:20260903231729:4:d8950a`
+*03.09. 23:17 UTC · Quelle: dream*
+
+Reflex actions succeed for narrow tasks (memory update) but lack generalization to broader goal execution.
+
+### `dream:20260903231729:3:3de0d8`
+*03.09. 23:17 UTC · Quelle: dream*
+
+Stale drive goals (market analyses, self-criticism) linger without automatic refresh triggers tied to data freshness metrics.
+
+### `dream:20260903231729:2:5318d8`
+*03.09. 23:17 UTC · Quelle: dream*
+
+Skill proposals accumulate (11 logged) but execution gap persists, indicating missing validation-to-commitment pipeline.
+
+### `dream:20260903231729:1:76e103`
+*03.09. 23:17 UTC · Quelle: dream*
+
+Free-tier model rate limits (429 errors) cascade into fallback latency spikes (8-60s), requiring proactive health-aware routing.
 
 ### `tool:simulationen-gezielt-einsetzen`
 *03.09. 23:06 UTC · Quelle: hands*

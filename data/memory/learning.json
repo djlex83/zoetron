@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 23:06:40",
+ "stand": "2026-09-03 23:18:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {

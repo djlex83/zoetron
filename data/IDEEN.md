@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Error telemetry is fragmented across model_fail, hand_action, and reflex logs, preventing unified failure pattern mining.
+- Reflex actions succeed for narrow tasks (memory update) but lack generalization to broader goal execution.
+- Stale drive goals (market analyses, self-criticism) linger without automatic refresh triggers tied to data freshness metrics.
+- Skill proposals accumulate (11 logged) but execution gap persists, indicating missing validation-to-commitment pipeline.
+- Free-tier model rate limits (429 errors) cascade into fallback latency spikes (8-60s), requiring proactive health-aware routing.
 - Fact pruning yields zero removals because TTL policies lack access-frequency weighting, allowing stale facts to persist beyond 7 days with <3 reads.
 - Fallback model latency p95 exceeds 60s, violating swarm latency budgets and necessitating automatic goal decomposition into sub-goals with <30s wall-c
 - Dream insights lack an automatic bridge to actionable goals, causing high-confidence lessons (>0.8) to remain inert instead of spawning drive_goals wi
@@ -51,11 +56,6 @@
 - Five separate skill proposals for model resilience (fallback chain, circuit breaker, health dashboard, error-signature router, real-time router) dupli
 - Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x latency variance (13–61 s), making it unreliable for time-bounded tasks without a hard
 - Model z-ai/glm-5.2:free fails 100% of the time with HTTP 429 rate-limit errors, indicating it should be permanently excluded or strictly rate-limited.
-- Event pruning removes 156 events but zero facts, suggesting the fact-extraction pipeline is not capturing durable knowledge from experience.
-- Hand action execution fails silently (exit 1, gelesen=0) without error detail, revealing an observability gap in the tool-use layer.
-- Self-improvement swarm cycles fail to converge (score 2, converged=false) despite revisions, indicating the goal metric or revision mechanism lacks su
-- The inclusionai/ling-3.0-flash-fin model demonstrates consistent success (2/2 calls) albeit with higher latency (8-13s), identifying it as a reliable 
-- Free-tier models exhibit systematic 429 rate-limiting and 502 upstream overload failures, making single-model reliance non-viable for production workl
 
 ---
 
