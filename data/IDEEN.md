@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 00:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 01:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The recurring drive goal of reducing model errors across multiple sessions signals that error resilience is the highest-priority durable capability to
+- Event pruning removed 33 entries while preserving all facts, indicating a tiered retention strategy exists but its criteria and effectiveness need ref
+- Latency varies nearly fourfold between successful models (5.6s to 20.7s), meaning naive model selection wastes time and resources without latency-awar
+- Reflex-based execution converged successfully but produced a null score, exposing that outcome validation is missing from the execution pipeline.
+- Rate-limit (429) and overload (502) errors across five different providers reveal that the absence of any fallback or circuit-breaking mechanism is th
 - Drive signals (stale, failure, gap) map cleanly to distinct remediation pathways: refresh, harden, explore.
 - Reflex-driven goals converge without explicit scoring, implying heuristic completion signals are sufficient for routine tasks.
 - Pruning 11 events with zero fact loss suggests aggressive event retention thresholds are safe for this workload.
@@ -51,11 +56,6 @@
 - Evolutionary variant generation (3 variants) boosted score from 6 to 9, proving iterative refinement outperforms single-pass generation for complex an
 - Nemotron-3-Ultra shows high reliability but unpredictable latency (7-54s), making it unsuitable for time-critical paths without timeout guards.
 - Rate limiting (429 errors) affects multiple free-tier models simultaneously, indicating a shared infrastructure bottleneck rather than model-specific 
-- Simulation-driven revision loops can return 'go' verdicts with residual risks, meaning binary pass/fail decisions are insufficient without risk-budget
-- Reflex scripts can execute without actually modifying target files, producing false progress signals that mask stale work items.
-- Skill proposals accumulate far faster than they are implemented (55 proposals), creating a triage gap that prevents good ideas from becoming usable ca
-- Even healthy providers exhibit highly variable latency (7.8s to 37.3s), making latency-aware routing essential for predictable system performance.
-- The z-ai/glm-5.2:free model is a persistent source of 429 rate-limit errors and must be treated as an unreliable provider requiring mandatory automati
 
 ---
 
