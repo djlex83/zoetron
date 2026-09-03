@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10258 Fakten** · Stand 2026-09-03 05:26 UTC · aktualisiert bei jedem Herzschlag
+**10263 Fakten** · Stand 2026-09-03 05:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5595
+- **dream:** 5600
 - **swarm_artifact:** 2181
 - **last_swarm_critique:** 718
 - **anti_pattern:** 631
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903053212:5:7c6755`
+*03.09. 05:32 UTC · Quelle: dream*
+
+Simulation and planning overconfidence persists without calibration tracking, causing repeated execution surprises.
+
+### `dream:20260903053212:4:1a08fd`
+*03.09. 05:32 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely become implemented skills, revealing a missing promotion pipeline from proposal to production.
+
+### `dream:20260903053212:3:e67ddc`
+*03.09. 05:32 UTC · Quelle: dream*
+
+Reflex execution successfully completed a stale market-analysis goal, proving that lightweight deterministic tools unblock high-value work.
+
+### `dream:20260903053212:2:eda22c`
+*03.09. 05:32 UTC · Quelle: dream*
+
+Multiple independent proposals for model routing indicate a systemic gap: no single owned component manages model reliability.
+
+### `dream:20260903053212:1:8ac271`
+*03.09. 05:32 UTC · Quelle: dream*
+
+Recurring 429 errors from glm-5.2 require proactive health monitoring rather than reactive fallback after failure.
 
 ### `dream:20260903052412:5:4ccadb`
 *03.09. 05:24 UTC · Quelle: dream*

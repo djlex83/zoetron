@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 05:24:34",
+ "stand": "2026-09-03 05:32:44",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -111,12 +111,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "veraltete-infos-auffrischen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -139,6 +133,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "neue-fähigkeiten-erlernen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
@@ -249,12 +249,6 @@
    "quote": 1.0
   },
   {
-   "tool": "neue-fähigkeiten-erlernen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "wiederkehrenden-organfehler-endgültig-kl.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -295,6 +289,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
@@ -369,7 +369,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.7,
+ "haende_quote": 0.701,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 34,

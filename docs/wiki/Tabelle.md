@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7227 Neuronen · 484387 bewertete Synapsen
+Stand: 7234 Neuronen · 484926 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,10 +10,10 @@ Stand: 7227 Neuronen · 484387 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 578 | 0.26 |
+| 1 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 579 | 0.26 |
 | 2 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 623 | 0.24 |
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 619 | 0.23 |
-| 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 626 | 0.23 |
+| 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 627 | 0.23 |
 | 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 615 | 0.23 |
 | 6 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 521 | 0.27 |
 | 7 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 613 | 0.23 |

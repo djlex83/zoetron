@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
+- Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation and planning overconfidence persists without calibration tracking, causing repeated execution surprises.
+- Skill proposals accumulate but rarely become implemented skills, revealing a missing promotion pipeline from proposal to production.
+- Reflex execution successfully completed a stale market-analysis goal, proving that lightweight deterministic tools unblock high-value work.
+- Multiple independent proposals for model routing indicate a systemic gap: no single owned component manages model reliability.
+- Recurring 429 errors from glm-5.2 require proactive health monitoring rather than reactive fallback after failure.
 - Event pruning (41 events) without insight re-embedding loses high-value stale knowledge, requiring periodic consolidation job.
 - Path-related proposals repeat ZOETRON_DATA canonicalization need, suggesting hand actions frequently fail from relative-path ambiguity.
 - Multiple skill proposals for model routing, path resolution, and health profiling exist but remain unimplemented, showing gap between proposal generat
@@ -51,11 +56,6 @@
 - Only two models (inclusionai/ling-3.0-flash-fin and nvidia/nemotron-3-ultra) succeeded, both with ~20s latency, establishing a high-latency baseline f
 - Nvidia's Nemotron model fails with HTTP 502 upstream overload, revealing provider-side capacity constraints as a second independent failure mode.
 - Free-tier models across multiple providers (Z.ai, Google, Poolside) consistently fail with HTTP 429 rate limits under concurrent load, indicating syst
-- The system autonomously generates skill proposals and drive goals from failure patterns, demonstrating functional meta-learning but lacking deployment
-- Hand actions fail on path resolution (exit 1, "nichts gelesen"), proving that relative-path handling is a systemic fault point.
-- Swarm cycles consistently fail to converge (score 1, converged=false), revealing missing convergence criteria or insufficient critic feedback.
-- Nemotron-3-ultra succeeds but shows 7x latency variance (14–102s), indicating unreliable throughput for time-bounded tasks.
-- The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limit errors, making it unusable without a retry/fallback strategy.
 
 ---
 
