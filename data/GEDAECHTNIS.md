@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10319 Fakten** · Stand 2026-09-03 07:03 UTC · aktualisiert bei jedem Herzschlag
+**10324 Fakten** · Stand 2026-09-03 07:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5635
+- **dream:** 5640
 - **swarm_artifact:** 2193
 - **last_swarm_critique:** 720
 - **anti_pattern:** 633
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903071106:5:9b8308`
+*03.09. 07:11 UTC · Quelle: dream*
+
+Event pruning removes 17 events per cycle but zero facts, indicating the fact store is stagnant while episodic noise accumulates.
+
+### `dream:20260903071106:4:996afb`
+*03.09. 07:11 UTC · Quelle: dream*
+
+System stress hits maximum (1.0) and triggers conserve mode, throttling all new work while model latency spikes to 48s on the fallback model.
+
+### `dream:20260903071106:3:5fd04d`
+*03.09. 07:11 UTC · Quelle: dream*
+
+Skill proposals are generated repeatedly but the validation pipeline (vorgeschlagene-fähigkeiten-prüfen-und-ba.py) fails, so no proposals reach production.
+
+### `dream:20260903071106:2:b0c286`
+*03.09. 07:11 UTC · Quelle: dream*
+
+Hand actions fail because relative paths are used instead of the canonical ZOETRON_DATA directory, causing silent zero-byte operations.
+
+### `dream:20260903071106:1:688042`
+*03.09. 07:11 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, making it unreliable as a primary endpoint without a robust fallback router.
 
 ### `dream:20260903070134:5:76068c`
 *03.09. 07:01 UTC · Quelle: dream*

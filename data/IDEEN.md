@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 07:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 07:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,8 +30,8 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning removes 17 events per cycle but zero facts, indicating the fact store is stagnant while episodic noise accumulates.
+- System stress hits maximum (1.0) and triggers conserve mode, throttling all new work while model latency spikes to 48s on the fallback model.
+- Skill proposals are generated repeatedly but the validation pipeline (vorgeschlagene-fähigkeiten-prüfen-und-ba.py) fails, so no proposals reach produc
+- Hand actions fail because relative paths are used instead of the canonical ZOETRON_DATA directory, causing silent zero-byte operations.
+- The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, making it unreliable as a primary endpoint without a robust fallback router.
 - Proposed skills remain unimplemented because the system lacks a mandatory validation loop that tests and deploys skill proposals automatically.
 - High latency variance (8s–44s) for the same model indicates unreliable performance that requires composite scoring (latency × availability × cost) for
 - Stale goals persist indefinitely without an automatic forcing mechanism, creating execution inertia that accumulates across cycles.
@@ -51,11 +56,6 @@
 - Calibration predicted 1 but actual was 8 (7x error), revealing broken estimation heuristics for task complexity.
 - No automatic fallback triggers when primary models fail, causing complete inference outage until manual intervention.
 - Rate limits (429) hit multiple models simultaneously via OpenRouter, indicating shared provider-level quotas rather than per-model limits.
-- High-latency models like inclusionai/ling-3.0-flash-fin (72.7s) rapidly deplete the task budget and must be deprioritized when stress is elevated.
-- nvidia/nemotron-3-ultra-550b-a55b:free is the most reliable model under load despite occasional 502 upstream errors, while z-ai/glm-5.2:free has the w
-- Relative file paths in hand_action fail to resolve under the real data path; absolute path resolution must be enforced before any read attempt.
-- Under conserve mode (stress=1.0, max_iterations=1), the system lacks the retry budget to self-recover from transient API failures, creating a deadlock
-- 429 Too Many Requests errors are systemic across nearly all free-tier models, making exponential backoff with model rotation the primary recovery mech
 
 ---
 
