@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,11 +26,11 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex tool 'veraltete-infos-auffrischen.py' failed, indicating automated refresh scripts need error handling or replacement.
+- System operates under high stress (1.0) in conserve mode, severely limiting parallel task execution (max_tasks=3, max_iterations=1).
+- The simulation→revision→TOR loop (verdict: revise → 5 revisions applied → TOR grün) successfully validates artifact correctness.
+- Hand actions fail when using relative paths; they must resolve inputs via sys.argv[1] and ZOETRON_DATA environment variable.
+- The model z-ai/glm-5.2:free fails consistently with 429 rate-limit errors, making it unreliable as a primary model.
 - Pruning runs remove zero artifacts, indicating TTL metadata is missing from drive-goal outputs and skill proposals, causing stale knowledge to persist
 - Reflex-driven simulation validation (fähigkeiten-durch-simulation-prüfen.py) succeeds when invoked, proving that pre-deployment skill testing via repl
 - Drive goals express meta-cognitive needs (understand errors, update insights, connect skills) but lack automated translation into concrete actions or 
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (5+ in this window) but none auto-deploy; the gap between proposal and production is a manual bottleneck.
 - Hand actions fail silently when sys.argv[1] and ZOETRON_DATA are not resolved to absolute paths before execution, wasting cycles on zero-byte runs.
 - Repeated 429 errors on z-ai/glm-5.2:free without circuit-breaking cause cascading fallbacks to high-latency models (21-44s), starving the metabolism b
-- Reflex-driven repair (wissensgraph-verknüpfungen-reparieren.py) converges in one shot when the tool matches the failure mode precisely.
-- Model latency variance (19s vs 47s) correlates with parameter count, not quality—smaller models succeed faster when they succeed.
-- Stale market-analysis artifacts persist across cycles because no TTL-based garbage collector prunes drive-goal outputs after their relevance window.
-- Skill proposals accumulate (55+) without implementation because no automatic promotion pipeline validates and deploys them against live tasks.
-- Rate limit errors (429) cascade across multiple free-tier providers simultaneously, indicating shared infrastructure quotas rather than isolated model
 
 ---
 

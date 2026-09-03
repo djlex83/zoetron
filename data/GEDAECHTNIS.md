@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10765 Fakten** · Stand 2026-09-03 20:07 UTC · aktualisiert bei jedem Herzschlag
+**10770 Fakten** · Stand 2026-09-03 20:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5900
+- **dream:** 5905
 - **swarm_artifact:** 2297
 - **last_swarm_critique:** 738
 - **anti_pattern:** 651
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903201424:5:bed5e2`
+*03.09. 20:14 UTC · Quelle: dream*
+
+Reflex tool 'veraltete-infos-auffrischen.py' failed, indicating automated refresh scripts need error handling or replacement.
+
+### `dream:20260903201424:4:684dba`
+*03.09. 20:14 UTC · Quelle: dream*
+
+System operates under high stress (1.0) in conserve mode, severely limiting parallel task execution (max_tasks=3, max_iterations=1).
+
+### `dream:20260903201424:3:82ba1b`
+*03.09. 20:14 UTC · Quelle: dream*
+
+The simulation→revision→TOR loop (verdict: revise → 5 revisions applied → TOR grün) successfully validates artifact correctness.
+
+### `dream:20260903201424:2:00a9b0`
+*03.09. 20:14 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths; they must resolve inputs via sys.argv[1] and ZOETRON_DATA environment variable.
+
+### `dream:20260903201424:1:f6d052`
+*03.09. 20:14 UTC · Quelle: dream*
+
+The model z-ai/glm-5.2:free fails consistently with 429 rate-limit errors, making it unreliable as a primary model.
 
 ### `dream:20260903200512:5:bfe712`
 *03.09. 20:05 UTC · Quelle: dream*
