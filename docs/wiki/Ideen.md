@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 08:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 08:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,10 +30,10 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning without fact extraction wastes experience; a continuous event-to-fact compressor must run before pruning.
+- High stress triggers conserve mode that starves consolidation; memory pressure must trigger proactive compression before stress peaks.
+- Relative path assumptions break hand actions; all file operations must resolve against ZOETRON_DATA environment variable.
+- Skill proposals accumulate without implementation because no automated pipeline exists to convert proposals into tested, deployed skills.
+- Rate-limited models without automatic fallback cause cascading failures; a provider-diverse registry with circuit breaking is essential.
 - Rate limiting manifests as sudden 429 bursts without header-based early warning, causing reactive rather than proactive model switching.
 - Event pruning (18 events) preserves facts but discards operational context needed for debugging model failures.
 - Reflex-based automation succeeds for well-scoped tasks (dream connection converged) but hand_action timeouts indicate unreliable primitive operations.
@@ -51,11 +56,6 @@
 - Stale goals persist across cycles without automatic intervention, requiring manual reflex cleanup that doesn't generalize.
 - Events accumulate without compression into durable facts, increasing memory overhead and degrading consolidation quality over cycles.
 - Repeated 429 errors on a single model provider cause cascading fallback latency spikes because fallback selection is reactive, not proactive.
-- The system self-corrects by generating skill proposals from failures, but the learning loop is slow without automated retry logic.
-- Simulation-guided revision (3 revisions, 5 risks identified) improves quality before final convergence.
-- Evolutionary scoring of multiple variants (4→7/8/9) consistently produces better results than single-attempt generation.
-- Having a priority chain of fallback models (nvidia, inclusionai) that succeed when primary models fail is critical for system resilience.
-- Free-tier LLM APIs on OpenRouter exhibit frequent rate-limiting (429) and upstream overload (502), making them unreliable without retry and fallback m
 
 ---
 

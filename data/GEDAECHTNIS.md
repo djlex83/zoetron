@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10377 Fakten** · Stand 2026-09-03 08:28 UTC · aktualisiert bei jedem Herzschlag
+**10382 Fakten** · Stand 2026-09-03 08:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5660
+- **dream:** 5665
 - **swarm_artifact:** 2211
 - **last_swarm_critique:** 723
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903084846:5:a6fc4a`
+*03.09. 08:48 UTC · Quelle: dream*
+
+Event pruning without fact extraction wastes experience; a continuous event-to-fact compressor must run before pruning.
+
+### `dream:20260903084846:4:4c5116`
+*03.09. 08:48 UTC · Quelle: dream*
+
+High stress triggers conserve mode that starves consolidation; memory pressure must trigger proactive compression before stress peaks.
+
+### `dream:20260903084846:3:592569`
+*03.09. 08:48 UTC · Quelle: dream*
+
+Relative path assumptions break hand actions; all file operations must resolve against ZOETRON_DATA environment variable.
+
+### `dream:20260903084846:2:87a7c9`
+*03.09. 08:48 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation because no automated pipeline exists to convert proposals into tested, deployed skills.
+
+### `dream:20260903084846:1:b7911d`
+*03.09. 08:48 UTC · Quelle: dream*
+
+Rate-limited models without automatic fallback cause cascading failures; a provider-diverse registry with circuit breaking is essential.
 
 ### `tool:neue-fähigkeiten-testen-und-nutzbar-mach`
 *03.09. 08:26 UTC · Quelle: hands*
