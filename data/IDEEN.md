@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 03:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 03:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,14 +26,14 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 9×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- z-ai/glm-5.2:free fails 100% of attempts while nvidia/nemotron and inclusionai/ling succeed, revealing provider-specific reliability tiers.
+- Simulation approved execution despite 3 risks, but those risks materialized as model latency spikes (17-35s) and upstream 502 errors.
+- Initial tool execution failure (exit:1) recovered on retry (exit:0), confirming transient infrastructure issues warrant automatic retry with backoff.
+- High stress state (1.0) with conserve budget correlates with cascading model failures and should trigger aggressive fallback selection.
+- Simultaneous 429 errors across multiple models indicate shared quota exhaustion rather than individual model limits.
 - Path-resolution failures are latent: a dedicated skill proposal for absolute-path conversion suggests hand actions currently rely on fragile relative 
 - Reflex tools succeed at micro-tasks (file reading, idea-to-skill conversion) but macro-goals (reduce error rate, utilize analyses) stall because they 
 - Stale artifacts persist despite explicit drive goals: three market analyses remain outdated across multiple cycles, indicating no automated freshness 
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (5+ per dream) but a drive goal explicitly notes they remain untested, revealing a missing validation loop.
 - Market-analysis goals recur across cycles but are only resolved via reflex tools, indicating planning does not schedule them proactively.
 - Rate-limited free models (z-ai/glm-5.2) cause repeated 429 failures while Nemotron succeeds with highly variable latency (7.7–28.2s).
-- z-ai/glm-5.2:free failed on every attempt due to 429 rate limits, making it completely unusable under current conditions without a backoff strategy or
-- The simulation revision loop (revise → apply revisions → re-evaluate) is a viable iterative pattern but lacks convergence criteria, risking excessive 
-- Simulation calibration was wildly inaccurate (predicted 6 vs actual 1, error 5), meaning the prediction model or its inputs require recalibration befo
-- Hand action execution fails silently (exit 1, no error message, gelesen 0), pointing to a broken artifact execution path that produces no diagnostic o
-- Free-tier OpenRouter models are severely rate-limited; only nvidia/nemotron-3-ultra-550b-a55b:free proved consistently usable, though its latency spik
 
 ---
 

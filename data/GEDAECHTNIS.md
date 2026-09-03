@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10192 Fakten** · Stand 2026-09-03 03:35 UTC · aktualisiert bei jedem Herzschlag
+**10209 Fakten** · Stand 2026-09-03 03:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5555
-- **swarm_artifact:** 2167
-- **last_swarm_critique:** 715
-- **anti_pattern:** 629
-- **last_swarm_goal:** 463
-- **strategy:** 335
+- **dream:** 5560
+- **swarm_artifact:** 2173
+- **last_swarm_critique:** 716
+- **anti_pattern:** 631
+- **last_swarm_goal:** 464
+- **strategy:** 336
 - **tool:** 126
-- **hand_result:** 110
+- **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Traum-Simulationen besse:2`
+*03.09. 03:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 9]): Event-Sourced Actor Architecture - Model the entire dream simulation as an event-sourced actor system. Each dream entity (MemoryStore, Dream, Simulator, KnowledgeGraph) is an independent actor communicating via typed 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Traum-Simulationen besse:1`
+*03.09. 03:47 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Configuration-Driven Declarative Pipeline - Shift from code-centric to data-centric: define dreams, simulations, and memory operations as YAML/JSON manifests. Build a generic interpreter that reads manifests and execu
+
+### `last_swarm_critique`
+*03.09. 03:46 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: Artefakt laeuft nicht (Traceback in Zeile 325 der Validierungspipeline); Fehlende zoetron-Abhaengigkeiten: MemoryStore, Dream, Simulate, Register, KnowledgeGraph sind nicht verfuegbar; Zweites Artefakt unvollstaendig abgebrochen
+
+### `last_swarm_goal`
+*03.09. 03:42 UTC · Quelle: system*
+
+Traum-Simulationen besser nutzen
+
+### `dream:20260903034156:5:a5d4d6`
+*03.09. 03:41 UTC · Quelle: dream*
+
+z-ai/glm-5.2:free fails 100% of attempts while nvidia/nemotron and inclusionai/ling succeed, revealing provider-specific reliability tiers.
+
+### `dream:20260903034156:4:be25e9`
+*03.09. 03:41 UTC · Quelle: dream*
+
+Simulation approved execution despite 3 risks, but those risks materialized as model latency spikes (17-35s) and upstream 502 errors.
+
+### `dream:20260903034156:3:2f5ffe`
+*03.09. 03:41 UTC · Quelle: dream*
+
+Initial tool execution failure (exit:1) recovered on retry (exit:0), confirming transient infrastructure issues warrant automatic retry with backoff.
+
+### `dream:20260903034156:2:851b1f`
+*03.09. 03:41 UTC · Quelle: dream*
+
+High stress state (1.0) with conserve budget correlates with cascading model failures and should trigger aggressive fallback selection.
+
+### `dream:20260903034156:1:f20ea3`
+*03.09. 03:41 UTC · Quelle: dream*
+
+Simultaneous 429 errors across multiple models indicate shared quota exhaustion rather than individual model limits.
 
 ### `last_swarm_critique`
 *03.09. 03:33 UTC · Quelle: critic*

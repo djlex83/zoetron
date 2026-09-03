@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 03:33:39",
+ "stand": "2026-09-03 03:49:34",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -18,12 +18,6 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -46,6 +40,12 @@
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -109,12 +109,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
@@ -211,12 +205,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py",
@@ -327,6 +315,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -367,19 +361,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "träume-besser-zum-lernen-nutzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.716,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.7,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
-  "n": 32,
+  "n": 33,
   "best": 9.0,
-  "schnitt": 5.94
+  "schnitt": 5.79
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 28,
-   "schnitt": 6.0
+   "schnitt": 5.96
   },
   "bau": {
    "n": 4,
