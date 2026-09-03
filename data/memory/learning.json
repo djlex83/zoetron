@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 21:22:27",
+ "stand": "2026-09-03 21:51:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -111,9 +111,9 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
-   "laeufe": 2,
-   "erfolge": 2,
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -183,12 +183,6 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -250,6 +244,12 @@
   },
   {
    "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 21:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 21:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 26 events without fact loss demonstrates healthy memory pressure management.
+- Reflex-driven market update completed autonomously with zero errors, validating the reflex pattern for maintenance tasks.
+- Successful free-model calls exhibit 10-18s latency, indicating systematic deprioritization of free tiers.
+- Upstream provider overload (502) on Nvidia models reveals dependency fragility beyond local retry logic.
+- Free-tier models consistently hit 429 rate limits under concurrent load, making them unreliable for production workflows.
 - Calibration drift between predicted and actual cycles goes unmeasured, so the planner cannot learn task-class-specific latency distributions.
 - Facts never expire, bloating context and risking stale knowledge; a 7-day TTL with re-validation gate would bound growth.
 - Skill proposals accumulate in a backlog because no automated pipeline promotes, canaries, and graduates them to production.
@@ -51,11 +56,6 @@
 - Market analyses are generated but never trigger actions, revealing a missing link between insight generation and goal activation.
 - Skill proposals accumulate (7+ in log) but none transition to implemented capabilities, indicating a broken proposal-to-production pipeline.
 - GLM-5.2 fails deterministically under rate limits (429) while Nemotron succeeds but with 2x latency variance (9-16s), creating unpredictable tail late
-- Unvalidated skill proposals accumulate without a testing harness, creating technical debt and duplicated effort.
-- Reflex-based tool selection outperforms heuristic search when failure patterns are cataloged in a searchable index.
-- Latency variance between models (13s vs 35s) demands continuous profiling before routing decisions can optimize for speed.
-- Error signatures (429, 502, timeout) map directly to specific recovery actions: fallback, circuit-break, or exponential backoff.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production tasks without automatic fallback.
 
 ---
 
