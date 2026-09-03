@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 06:12:17",
+ "stand": "2026-09-03 06:30:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -99,14 +99,14 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-dauerhaft-senken.py",
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
   },
   {
-   "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
-   "laeufe": 2,
+   "tool": "modellfehler-dauerhaft-senken.py",
+   "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -148,12 +148,6 @@
   },
   {
    "tool": "modellfehler-stark-verringern.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -279,6 +273,12 @@
    "quote": 0.0
   },
   {
+   "tool": "viele-skill-vorschläge-prüfen-und-nutzba.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "wissenswidersprüche-auflösen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -388,7 +388,7 @@
   }
  ],
  "haende_quote": 0.69,
- "simulationen_angewandt": 27,
+ "simulationen_angewandt": 29,
  "swarm_scores": {
   "n": 34,
   "best": 9.0,
@@ -397,7 +397,7 @@
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 29,
-   "schnitt": 6.21
+   "schnitt": 6.14
   },
   "bau": {
    "n": 4,

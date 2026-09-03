@@ -5569,3 +5569,20 @@
 {"ts": 1787810970.1132724, "kind": "simulation", "payload": {"goal": "Entfernte Erinnerungen verknüpfen", "verdict": "revise", "risks": 5, "revisions": 5}}
 {"ts": 1787810970.1134071, "kind": "simulation_applied", "payload": {"revisions": 5}}
 {"ts": 1787810971.2370508, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787810971.2370486, "schalter_geoeffnet": false}}
+{"ts": 1787811123.6576185, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 152.4, "tokens_ein": 2096, "tokens_aus": 5004}}
+{"ts": 1787811124.2894, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787811124.2893982, "schalter_geoeffnet": false}}
+{"ts": 1787811314.9421484, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 190.7, "tokens_ein": 2558, "tokens_aus": 4601}}
+{"ts": 1787811315.5612023, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787811315.5612, "schalter_geoeffnet": false}}
+{"ts": 1787811467.1168146, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 151.6, "tokens_ein": 3004, "tokens_aus": 7176}}
+{"ts": 1787811468.0776513, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.69, "gelesen": 3}}
+{"ts": 1787811468.0778522, "kind": "tor", "payload": {"goal": "Entfernte Erinnerungen verknüpfen", "gruen": true, "grund": "Artefakt laeuft (439 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787811468.8130703, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787811468.813068, "schalter_geoeffnet": false}}
+{"ts": 1787811493.474008, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 24.7, "tokens_ein": 9662, "tokens_aus": 694}}
+{"ts": 1787811493.4748642, "kind": "calibration", "payload": {"goal": "Entfernte Erinnerungen verknüpfen", "predicted": 6, "actual": 9, "abs_error": 3}}
+{"ts": 1787811493.4749365, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 9}}
+{"ts": 1787811506.0952, "kind": "bahnen", "payload": {"goal": "Entfernte Erinnerungen verknüpfen", "delta": 1.0, "kanten": 15, "hat_code": true, "score": 9, "abgerufen": 5, "ids": ["e:d88844a9614d", "e:4e0666f4f924", "f:35d8849e3a5c", "f:65f2dd7d6f56", "f:3f7382d6bdab"], "ziel_id": "g:d8f8b1855b99"}}
+{"ts": 1787811506.0954487, "kind": "swarm_finished", "payload": {"goal": "Entfernte Erinnerungen verknüpfen", "score": 9, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1787811506.0956478, "kind": "act_done", "payload": {"goal_title": "Entfernte Erinnerungen verknüpfen", "score": 9, "converged": true}}
+{"ts": 1787811506.9086967, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.55, "gelesen": 4}}
+{"ts": 1787811509.0865874, "kind": "issue_synced", "payload": {"issue": 146, "state": "closed"}}
+{"ts": 1787811580.8090556, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

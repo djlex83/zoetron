@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10287 Fakten** · Stand 2026-09-03 06:13 UTC · aktualisiert bei jedem Herzschlag
+**10304 Fakten** · Stand 2026-09-03 06:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5615
-- **swarm_artifact:** 2187
-- **last_swarm_critique:** 719
-- **anti_pattern:** 631
-- **last_swarm_goal:** 467
-- **strategy:** 336
-- **tool:** 128
+- **dream:** 5620
+- **swarm_artifact:** 2193
+- **last_swarm_critique:** 720
+- **anti_pattern:** 633
+- **last_swarm_goal:** 468
+- **strategy:** 337
+- **tool:** 129
 - **hand_result:** 112
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-testen-und-be`
+*03.09. 06:30 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten testen und behalten'. Datei: data/tools/vorgeschlagene-fähigkeiten-testen-und-be.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:1`
+*03.09. 06:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Pipeline Consolidation - Merge Script 2 and Script 3 into a single unified script that performs capability testing and immediate evaluation in memory, eliminating the intermediate file entirely. The combined script runs synta
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vorgeschlagene Fähigkeit:0`
+*03.09. 06:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Adapter/Transformer Layer - Introduce a dedicated adapter script or library that sits between Script 2 and Script 3. Script 2 continues writing to 'memory/tested_capabilities.jsonl' with its current schema. The adapter reads 
+
+### `last_swarm_critique`
+*03.09. 06:27 UTC · Quelle: critic*
+
+score=4; issues=Script 2 writes test results to 'memory/tested_capabilities.jsonl' but Script 3 reads from 'memory/capability_test_results.jsonl' - file path mismatch breaks the pipeline; Script 2 outputs fields: capability, syntax_passed, benchmark_score, ove
+
+### `last_swarm_goal`
+*03.09. 06:20 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten testen und behalten
+
+### `dream:20260903062005:5:2020cf`
+*03.09. 06:20 UTC · Quelle: dream*
+
+Simulation-to-practice gap persists because simulator validation lacks adversarial counterfactuals that expose high-score-but-fails-execution cases.
+
+### `dream:20260903062005:4:0b0529`
+*03.09. 06:20 UTC · Quelle: dream*
+
+Pruning removes 30-40 events per cycle yet stale drive goals (market analysis) persist, indicating pruning targets noise not strategic backlog.
+
+### `dream:20260903062005:3:47102d`
+*03.09. 06:20 UTC · Quelle: dream*
+
+Multiple duplicate skill proposals for model routing reveal a coordination gap: proposals are generated but not deduplicated or promoted to production.
+
+### `dream:20260903062005:2:ffebdb`
+*03.09. 06:20 UTC · Quelle: dream*
+
+Reflex-based error fixing converges quickly but only addresses symptoms; the root cause (model instability) persists across cycles.
+
+### `dream:20260903062005:1:7d38fb`
+*03.09. 06:20 UTC · Quelle: dream*
+
+Consistent 429 errors on z-ai/glm-5.2:free indicate hard rate limits requiring proactive model routing rather than reactive fallback.
 
 ### `dream:20260903061120:5:d7345a`
 *03.09. 06:11 UTC · Quelle: dream*
