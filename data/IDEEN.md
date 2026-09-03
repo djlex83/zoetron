@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 04:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 04:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system explicitly recognizes that insights decay without active refresh, yet lacks a mechanism to resurface them.
+- Simulation-driven revision cycles (5 risks, 5 revisions, 4 applied) converge but consume excessive model calls.
+- Metabolism stress at 1.0 forces conserve mode with max_tasks=3 and max_iterations=1, starving learning loops.
+- File operations fail because relative paths do not resolve against the true data root (ZOETRON_DATA or sys.argv[1]).
+- Free-tier model endpoints consistently return 429 rate-limit errors, making them unreliable for sustained operation.
 - Skill proposals accumulate but remain unused because no mechanism exists to evaluate, prioritize, and automatically implement proposals matched to obs
 - Hand action tool failures consistently stem from path resolution confusion between relative paths, sys.argv[1], and ZOETRON_DATA environment variable,
 - Low-latency models (poolside/laguna-s-2.1 at 6s) outperform high-latency fallbacks (nemotron at 20-55s) by 3-9x under conserve mode, making latency a 
@@ -51,11 +56,6 @@
 - Metabolism enters conserve state (stress=1.0) with only 1 iteration budget, preventing recovery retries exactly when they are needed most.
 - Hand actions fail because they use relative paths instead of resolving sys.argv[1]/ZOETRON_DATA to absolute, verified paths before I/O.
 - Repeated 429 errors on z-ai/glm-5.2:free show that model health tracking and automatic fallback are missing, causing silent degradation.
-- z-ai/glm-5.2:free fails 100% of attempts while nvidia/nemotron and inclusionai/ling succeed, revealing provider-specific reliability tiers.
-- Simulation approved execution despite 3 risks, but those risks materialized as model latency spikes (17-35s) and upstream 502 errors.
-- Initial tool execution failure (exit:1) recovered on retry (exit:0), confirming transient infrastructure issues warrant automatic retry with backoff.
-- High stress state (1.0) with conserve budget correlates with cascading model failures and should trigger aggressive fallback selection.
-- Simultaneous 429 errors across multiple models indicate shared quota exhaustion rather than individual model limits.
 
 ---
 

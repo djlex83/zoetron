@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10224 Fakten** · Stand 2026-09-03 04:34 UTC · aktualisiert bei jedem Herzschlag
+**10229 Fakten** · Stand 2026-09-03 04:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5570
+- **dream:** 5575
 - **swarm_artifact:** 2175
 - **last_swarm_critique:** 717
 - **anti_pattern:** 631
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903044103:5:8699df`
+*03.09. 04:41 UTC · Quelle: dream*
+
+The system explicitly recognizes that insights decay without active refresh, yet lacks a mechanism to resurface them.
+
+### `dream:20260903044103:4:1356cb`
+*03.09. 04:41 UTC · Quelle: dream*
+
+Simulation-driven revision cycles (5 risks, 5 revisions, 4 applied) converge but consume excessive model calls.
+
+### `dream:20260903044103:3:92677e`
+*03.09. 04:41 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode with max_tasks=3 and max_iterations=1, starving learning loops.
+
+### `dream:20260903044103:2:d793bb`
+*03.09. 04:41 UTC · Quelle: dream*
+
+File operations fail because relative paths do not resolve against the true data root (ZOETRON_DATA or sys.argv[1]).
+
+### `dream:20260903044103:1:e673a2`
+*03.09. 04:41 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently return 429 rate-limit errors, making them unreliable for sustained operation.
 
 ### `dream:20260903043259:5:759388`
 *03.09. 04:32 UTC · Quelle: dream*
