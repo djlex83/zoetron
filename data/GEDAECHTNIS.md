@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10234 Fakten** · Stand 2026-09-03 04:51 UTC · aktualisiert bei jedem Herzschlag
+**10248 Fakten** · Stand 2026-09-03 05:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5580
-- **swarm_artifact:** 2175
-- **last_swarm_critique:** 717
+- **dream:** 5585
+- **swarm_artifact:** 2181
+- **last_swarm_critique:** 718
 - **anti_pattern:** 631
-- **last_swarm_goal:** 465
+- **last_swarm_goal:** 466
 - **strategy:** 336
-- **tool:** 127
+- **tool:** 128
 - **hand_result:** 111
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-verstehen-und-beheben`
+*03.09. 05:05 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler verstehen und beheben'. Datei: data/tools/modellfehler-verstehen-und-beheben.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*03.09. 05:05 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*03.09. 04:58 UTC · Quelle: system*
+
+Modellfehler verstehen und beheben
+
+### `dream:20260903045748:5:7e4214`
+*03.09. 04:57 UTC · Quelle: dream*
+
+The system autonomously generates skill proposals and drive goals from failure patterns, demonstrating functional meta-learning but lacking deployment validation.
+
+### `dream:20260903045748:4:d43aa2`
+*03.09. 04:57 UTC · Quelle: dream*
+
+Hand actions fail on path resolution (exit 1, "nichts gelesen"), proving that relative-path handling is a systemic fault point.
+
+### `dream:20260903045748:3:19ea36`
+*03.09. 04:57 UTC · Quelle: dream*
+
+Swarm cycles consistently fail to converge (score 1, converged=false), revealing missing convergence criteria or insufficient critic feedback.
+
+### `dream:20260903045748:2:acfab7`
+*03.09. 04:57 UTC · Quelle: dream*
+
+Nemotron-3-ultra succeeds but shows 7x latency variance (14–102s), indicating unreliable throughput for time-bounded tasks.
+
+### `dream:20260903045748:1:692875`
+*03.09. 04:57 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limit errors, making it unusable without a retry/fallback strategy.
 
 ### `dream:20260903044913:5:12ca3a`
 *03.09. 04:49 UTC · Quelle: dream*

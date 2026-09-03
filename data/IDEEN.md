@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 04:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 05:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Implement circuit breaker per model endpoint with exponential backoff, health scores, and automatic failover t *(hatte die Idee 4×)*
 - Create reflex eligibility gate: match goal semantics against registered reflex patterns via embedding similari *(hatte die Idee 4×)*
 - Enforce fact TTL policy: auto-prune model-health facts unaccessed >7 days or access_count <2; trigger prune_ru *(hatte die Idee 4×)*
+- Design a cross-memory synthesis skill that systematically combines recall results (e.g., last_swarm_goal) with *(hatte die Idee 4×)*
 - Add DiagnosticGapDetector that correlates per-organ healthy reports with cross-organ failure signatures (e.g., *(hatte die Idee 3×)*
-- Create StaleDataLifecycle that timestamps facts and events, prunes entries past a TTL, and surfaces unused ana *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system autonomously generates skill proposals and drive goals from failure patterns, demonstrating functional meta-learning but lacking deployment
+- Hand actions fail on path resolution (exit 1, "nichts gelesen"), proving that relative-path handling is a systemic fault point.
+- Swarm cycles consistently fail to converge (score 1, converged=false), revealing missing convergence criteria or insufficient critic feedback.
+- Nemotron-3-ultra succeeds but shows 7x latency variance (14–102s), indicating unreliable throughput for time-bounded tasks.
+- The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limit errors, making it unusable without a retry/fallback strategy.
 - Evolution optimizes for proxy metrics that don't transfer; winner variant scored 9-10 in evolution but 1 in reality.
 - Calibration error of 5 points (predicted 6 vs actual 1) reveals systemic overconfidence in planning estimates.
 - Artifact execution fails repeatedly due to sandbox environment issues (missing data dirs, tracebacks), not code logic errors.
@@ -51,11 +56,6 @@
 - Metabolism stress at 1.0 forces conserve mode with max_tasks=3 and max_iterations=1, starving learning loops.
 - File operations fail because relative paths do not resolve against the true data root (ZOETRON_DATA or sys.argv[1]).
 - Free-tier model endpoints consistently return 429 rate-limit errors, making them unreliable for sustained operation.
-- Skill proposals accumulate but remain unused because no mechanism exists to evaluate, prioritize, and automatically implement proposals matched to obs
-- Hand action tool failures consistently stem from path resolution confusion between relative paths, sys.argv[1], and ZOETRON_DATA environment variable,
-- Low-latency models (poolside/laguna-s-2.1 at 6s) outperform high-latency fallbacks (nemotron at 20-55s) by 3-9x under conserve mode, making latency a 
-- Fallback chains collapse when all fallback models route through the same rate-limited gateway, necessitating provider-diverse fallback pools with inde
-- Quota exhaustion cascades across multiple models simultaneously via shared OpenRouter infrastructure, requiring proactive per-provider quota tracking 
 
 ---
 
