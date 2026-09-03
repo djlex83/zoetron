@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10705 Fakten** · Stand 2026-09-03 18:38 UTC · aktualisiert bei jedem Herzschlag
+**10710 Fakten** · Stand 2026-09-03 18:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5870
+- **dream:** 5875
 - **swarm_artifact:** 2279
 - **last_swarm_critique:** 735
 - **anti_pattern:** 649
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903184515:5:5f95c9`
+*03.09. 18:45 UTC · Quelle: dream*
+
+Hand-tool file operations succeed reliably, indicating the execution substrate is sound and the primary instability resides in the LLM inference layer.
+
+### `dream:20260903184515:4:887efe`
+*03.09. 18:45 UTC · Quelle: dream*
+
+Skill proposals accumulate in the log without automated validation or integration, creating a backlog of unimplemented improvements.
+
+### `dream:20260903184515:3:9a9d40`
+*03.09. 18:45 UTC · Quelle: dream*
+
+Automatic model locking after three consecutive errors prevents cascade failures but does not proactively route to healthy alternatives.
+
+### `dream:20260903184515:2:e4bb33`
+*03.09. 18:45 UTC · Quelle: dream*
+
+The reflex-based swarm converged successfully when a responsive model was available, proving the control loop works but is bottlenecked by model reliability.
+
+### `dream:20260903184515:1:23af0d`
+*03.09. 18:45 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit correlated failure bursts (429/502) that disable swarm execution unless a validated fallback chain exists.
 
 ### `dream:20260903183601:5:428d3b`
 *03.09. 18:36 UTC · Quelle: dream*

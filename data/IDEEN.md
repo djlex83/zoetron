@@ -1,15 +1,15 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 18:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 18:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Build a skill-compilation pipeline that lints, type-checks, and runs unit tests on generated code before atomi *(hatte die Idee 6×)*
 - Create a predictive budget allocator that estimates task complexity from prompt tokens and historical latency/ *(hatte die Idee 6×)*
-- Implement a circuit breaker that disables any model provider for 60 seconds after 3 consecutive 429 or 502 err *(hatte die Idee 5×)*
 - Design a cross-memory synthesis skill that systematically combines recall results (e.g., last_swarm_goal) with *(hatte die Idee 5×)*
 - Develop a knowledge-rehydration skill that scans stale facts/market analyses nightly, extracts actionable patt *(hatte die Idee 5×)*
+- Implement a circuit breaker that disables any model provider for 60 seconds after 3 consecutive 429 or 502 err *(hatte die Idee 4×)*
 - Implement a model router that tracks per-model 429/502 rates, latency percentiles, and token costs, then autom *(hatte die Idee 4×)*
 - Build a simulation scaffold that converts any high-level goal into a runnable script with explicit I/O contrac *(hatte die Idee 4×)*
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand-tool file operations succeed reliably, indicating the execution substrate is sound and the primary instability resides in the LLM inference layer
+- Skill proposals accumulate in the log without automated validation or integration, creating a backlog of unimplemented improvements.
+- Automatic model locking after three consecutive errors prevents cascade failures but does not proactively route to healthy alternatives.
+- The reflex-based swarm converged successfully when a responsive model was available, proving the control loop works but is bottlenecked by model relia
+- Free-tier model endpoints exhibit correlated failure bursts (429/502) that disable swarm execution unless a validated fallback chain exists.
 - Cycle estimates for skill-generation tasks consistently underestimate by ~3x, requiring a calibration correction factor for planning accuracy.
 - Reflex-based tool execution successfully converged the swarm mission (score 8+ target) validating reflex architecture for complex goal achievement.
 - Event pruning stabilizes after initial burst (67 events pruned first run, 0 second run), indicating the system reaches steady-state log hygiene.
@@ -51,11 +56,6 @@
 - Capability prediction underestimates actual output by 2x (predicted 4 vs actual 8), revealing a systematic calibration bias in the prediction module.
 - Nvidia nemotron-3-ultra-550b is the most reliable model (4/5 successes, score 8) with the sole failure being upstream overload (502), making it the pr
 - Rate limiting (HTTP 429) is the dominant and systematic failure mode across z-ai/glm-5.2 and Google models, indicating API throttling rather than mode
-- Stress=1.0 with metabolism=conserve correctly throttles task execution, but without hysteresis in mode transitions, the system risks thrashing between
-- The primary vulnerability across this session is the deployment gap: safeguards exist as validated proposals but provide zero operational protection u
-- High-latency fallback models (>25s) can become their own failure mode when downstream operations or user expectations impose tighter time constraints 
-- Hand-actions that exit with code 0 but touch no actual data represent a silent failure class caused by unresolved relative paths — the system reports 
-- Free-tier LLM providers fail in correlated cascades (429s across multiple providers within seconds), making simple sequential fallback chains insuffic
 
 ---
 
