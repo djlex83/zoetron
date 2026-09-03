@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 10:35:56",
+ "stand": "2026-09-03 10:45:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,6 +189,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -205,12 +211,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-stark-reduzieren.py",
@@ -262,12 +262,6 @@
   },
   {
    "tool": "wissenswidersprüche-auflösen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

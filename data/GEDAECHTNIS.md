@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10443 Fakten** · Stand 2026-09-03 10:37 UTC · aktualisiert bei jedem Herzschlag
+**10448 Fakten** · Stand 2026-09-03 10:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5710
+- **dream:** 5715
 - **swarm_artifact:** 2223
 - **last_swarm_critique:** 725
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903104423:5:2c2043`
+*03.09. 10:44 UTC · Quelle: dream*
+
+Dream and simulation runs operate in isolation; fusing their latent representations could surface novel strategies neither produces alone.
+
+### `dream:20260903104423:4:e90f80`
+*03.09. 10:44 UTC · Quelle: dream*
+
+Stale analytical facts persist indefinitely because no periodic rehydration job extracts fresh patterns and overwrites outdated memory entries.
+
+### `dream:20260903104423:3:60bbfb`
+*03.09. 10:44 UTC · Quelle: dream*
+
+Skill proposals accumulate but never reach production because there is no automated validation gate (syntax, types, tests) before registry promotion.
+
+### `dream:20260903104423:2:e97ca5`
+*03.09. 10:44 UTC · Quelle: dream*
+
+A single failing model can cascade into system-wide stalls because the orchestrator lacks a circuit-breaker that isolates unhealthy providers.
+
+### `dream:20260903104423:1:b07220`
+*03.09. 10:44 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary workers without aggressive backoff and fallback chains.
 
 ### `dream:20260903103541:5:1138e7`
 *03.09. 10:35 UTC · Quelle: dream*

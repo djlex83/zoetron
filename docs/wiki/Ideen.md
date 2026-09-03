@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 4×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream and simulation runs operate in isolation; fusing their latent representations could surface novel strategies neither produces alone.
+- Stale analytical facts persist indefinitely because no periodic rehydration job extracts fresh patterns and overwrites outdated memory entries.
+- Skill proposals accumulate but never reach production because there is no automated validation gate (syntax, types, tests) before registry promotion.
+- A single failing model can cascade into system-wide stalls because the orchestrator lacks a circuit-breaker that isolates unhealthy providers.
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary workers without aggressive backoff and fallback chains
 - Model selection currently ignores real-time health signals (latency, error rate, quota), causing repeated fallback to already-degraded providers.
 - Path-related failures persist despite a proposed resolver utility, indicating missing enforcement of absolute-path usage across tools.
 - Zero facts pruned while 31 events were discarded suggests the event-to-fact compressor is absent or ineffective, risking knowledge loss.
@@ -51,11 +56,6 @@
 - High-latency success (51s for nemotron) is functionally equivalent to failure for interactive decision loops.
 - Destructive operation guard correctly blocks unauthorized system changes but creates workflow deadlocks when legitimate automation needs elevated priv
 - Rate limiting cascades across multiple providers simultaneously, indicating shared infrastructure bottlenecks rather than isolated model failures.
-- Hand actions (shell commands) complete in ~1.2s with zero failures, confirming they are a reliable low-latency primitive for file I/O.
-- Calibration error of 1 (predicted 8 vs actual 9) on a 10-point scale suggests the predictor is well-calibrated for this task class.
-- The simulation-driven goal achieved convergence in a single swarm cycle after 5 revisions, indicating revision loops are more critical than iteration 
-- nvidia/nemotron-3-ultra succeeds consistently but exhibits 60-150s latency, while inclusionai/ling-3.0-flash-fin delivers comparable success at 13s la
-- Free-tier models on OpenRouter suffer pervasive 429 rate limits, making them unreliable for production workflows without fallback chains.
 
 ---
 
