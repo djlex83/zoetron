@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10453 Fakten** · Stand 2026-09-03 10:56 UTC · aktualisiert bei jedem Herzschlag
+**10458 Fakten** · Stand 2026-09-03 11:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5720
+- **dream:** 5725
 - **swarm_artifact:** 2223
 - **last_swarm_critique:** 725
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903110328:5:49bfa9`
+*03.09. 11:03 UTC · Quelle: dream*
+
+CI failure in hermes-daemon (organzyklus + gedächtnis-sync) was caught by reflex, indicating monitoring works but the daemon has stability issues.
+
+### `dream:20260903110328:4:92758b`
+*03.09. 11:03 UTC · Quelle: dream*
+
+Calibration systematically underestimated outcome (predicted 6 vs actual 9), suggesting the predictor needs recalibration on this task class.
+
+### `dream:20260903110328:3:dd7ff3`
+*03.09. 11:03 UTC · Quelle: dream*
+
+Destructive tool operations (os.system, subprocess) are correctly blocked by the safety gate, requiring human approval for production deployment.
+
+### `dream:20260903110328:2:de6e89`
+*03.09. 11:03 UTC · Quelle: dream*
+
+The simulation-to-practice pipeline (simulate → revise → apply → verify via tor/calibration/bahnen/swarm) successfully delivered a working 417-line Python artifact scoring 9/9.
+
+### `dream:20260903110328:1:d14d3c`
+*03.09. 11:03 UTC · Quelle: dream*
+
+The model "z-ai/glm-5.2:free" consistently fails with HTTP 429 rate limiting, making it unreliable as a primary model without exponential backoff and fallback.
 
 ### `dream:20260903105346:5:f347d1`
 *03.09. 10:53 UTC · Quelle: dream*

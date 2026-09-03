@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 11:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 4×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- CI failure in hermes-daemon (organzyklus + gedächtnis-sync) was caught by reflex, indicating monitoring works but the daemon has stability issues.
+- Calibration systematically underestimated outcome (predicted 6 vs actual 9), suggesting the predictor needs recalibration on this task class.
+- Destructive tool operations (os.system, subprocess) are correctly blocked by the safety gate, requiring human approval for production deployment.
+- The simulation-to-practice pipeline (simulate → revise → apply → verify via tor/calibration/bahnen/swarm) successfully delivered a working 417-line Py
+- The model "z-ai/glm-5.2:free" consistently fails with HTTP 429 rate limiting, making it unreliable as a primary model without exponential backoff and 
 - Simulation-driven revision cycles (verdict=revise, 4 revisions applied) prove effective but only run when metabolism budget permits.
 - System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which starves the very simulations needed to validate skill proposals.
 - File-system actions fail due to relative-path confusion between sys.argv[1], ZOETRON_DATA, and working directory, mandating absolute-path resolution a
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but never reach production because there is no automated validation gate (syntax, types, tests) before registry promotion.
 - A single failing model can cascade into system-wide stalls because the orchestrator lacks a circuit-breaker that isolates unhealthy providers.
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary workers without aggressive backoff and fallback chains
-- Model selection currently ignores real-time health signals (latency, error rate, quota), causing repeated fallback to already-degraded providers.
-- Path-related failures persist despite a proposed resolver utility, indicating missing enforcement of absolute-path usage across tools.
-- Zero facts pruned while 31 events were discarded suggests the event-to-fact compressor is absent or ineffective, risking knowledge loss.
-- Skill proposals for circuit breakers, routing, and backoff exist but remain unimplemented, creating a gap between diagnosis and remedy.
-- Repeated 429/502 errors across all free-tier providers indicate systemic quota exhaustion, not isolated provider failures.
 
 ---
 

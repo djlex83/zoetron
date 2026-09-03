@@ -6204,3 +6204,20 @@
 {"ts": 1787827902.491463, "kind": "simulation", "payload": {"goal": "Vorschläge zu echten Fähigkeiten machen", "verdict": "revise", "risks": 5, "revisions": 5}}
 {"ts": 1787827902.4915676, "kind": "simulation_applied", "payload": {"revisions": 5}}
 {"ts": 1787827903.6241236, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787827903.6241214, "schalter_geoeffnet": false}}
+{"ts": 1787828009.639918, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 106.0, "tokens_ein": 2065, "tokens_aus": 3486}}
+{"ts": 1787828011.0693655, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787828011.0693622, "schalter_geoeffnet": false}}
+{"ts": 1787828076.2527184, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 65.2, "tokens_ein": 2490, "tokens_aus": 3286}}
+{"ts": 1787828076.9705656, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787828076.9705625, "schalter_geoeffnet": false}}
+{"ts": 1787828172.0091712, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 95.0, "tokens_ein": 2868, "tokens_aus": 5126}}
+{"ts": 1787828174.4416358, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.13, "gelesen": 1038}}
+{"ts": 1787828174.4418142, "kind": "tor", "payload": {"goal": "Vorschläge zu echten Fähigkeiten machen", "gruen": true, "grund": "Artefakt laeuft (372 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787828175.7655838, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787828175.7655814, "schalter_geoeffnet": false}}
+{"ts": 1787828192.8712578, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 17.1, "tokens_ein": 8618, "tokens_aus": 1039}}
+{"ts": 1787828192.872149, "kind": "calibration", "payload": {"goal": "Vorschläge zu echten Fähigkeiten machen", "predicted": 5, "actual": 8, "abs_error": 3}}
+{"ts": 1787828192.8722224, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 8}}
+{"ts": 1787828206.173092, "kind": "bahnen", "payload": {"goal": "Vorschläge zu echten Fähigkeiten machen", "delta": 1.0, "kanten": 21, "hat_code": true, "score": 8, "abgerufen": 6, "ids": ["e:9e2c4a211c54", "e:0b488d122e95", "e:02030268e4f3", "e:c0b37e6b9e35", "e:01ac977c144b", "e:1c5bfd3c237a"], "ziel_id": "g:8d722edd944a"}}
+{"ts": 1787828206.1733384, "kind": "swarm_finished", "payload": {"goal": "Vorschläge zu echten Fähigkeiten machen", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1787828206.173568, "kind": "act_done", "payload": {"goal_title": "Vorschläge zu echten Fähigkeiten machen", "score": 8, "converged": true}}
+{"ts": 1787828208.829121, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 2.31, "gelesen": 1038}}
+{"ts": 1787828211.4483688, "kind": "issue_synced", "payload": {"issue": 153, "state": "closed"}}
+{"ts": 1787828286.4673595, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
