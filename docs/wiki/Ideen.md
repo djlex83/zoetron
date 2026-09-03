@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 14:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 15:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,9 +31,9 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Token throughput on the working model varies 3× (479→2732 input tokens) with no corresponding latency scaling, suggesting queueing or cold-start effec
+- Simulation-driven revision loops (5 risks → 5 revisions → 3 applied) indicate over-generation of corrections relative to actionable changes.
+- The system retries rate-limited models repeatedly without backoff or fallback, wasting cycles and amplifying quota exhaustion.
+- The inclusionai/ling-3.0-flash-fin:free model succeeds where others fail but exhibits high latency variance (7.5–23.5s) unrelated to token volume.
+- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows.
 - Self-diagnosis reports zero organ errors while model failures persist, showing monitoring blind spots for external API dependencies.
 - Skill proposals for resilience middleware and compilation pipelines exist but remain unpromoted, revealing a gap between problem recognition and produ
 - Only one model (inclusionai/ling-3.0-flash-fin) consistently succeeds, creating a single point of failure despite apparent provider diversity.
@@ -51,11 +56,6 @@
 - Generated skill proposals and dream insights remain unimplemented because there is no pipeline connecting idea generation to validated deployment.
 - Stale analysis and market data accumulate systematically because no automated refresh mechanism exists to detect and act on outdated information.
 - Recurring 429 rate-limit errors from the glm-5.2 model reveal the absence of a circuit breaker and fallback chain, causing cascading failures whenever
-- Free-tier models succeed intermittently with high latency (50-65s), making predictive tier selection essential to avoid wasted calls and timeouts.
-- The system can self-diagnose structural health and converge on reflex execution, but cannot overcome external dependency failures without explicit res
-- Knowledge assets such as market analyses decay over time and must be actively rehydrated nightly rather than passively stored.
-- There is a persistent proposal-to-execution gap: skills are repeatedly proposed but never promoted past the suggestion stage without a formal compilat
-- External model API rate limits (429 errors) on free-tier providers are the dominant failure mode, requiring per-provider circuit breakers and automati
 
 ---
 

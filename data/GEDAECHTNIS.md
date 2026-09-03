@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10568 Fakten** · Stand 2026-09-03 14:40 UTC · aktualisiert bei jedem Herzschlag
+**10573 Fakten** · Stand 2026-09-03 15:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5780
+- **dream:** 5785
 - **swarm_artifact:** 2249
 - **last_swarm_critique:** 730
 - **anti_pattern:** 647
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903145946:5:8755dd`
+*03.09. 14:59 UTC · Quelle: dream*
+
+Token throughput on the working model varies 3× (479→2732 input tokens) with no corresponding latency scaling, suggesting queueing or cold-start effects.
+
+### `dream:20260903145946:4:a674da`
+*03.09. 14:59 UTC · Quelle: dream*
+
+Simulation-driven revision loops (5 risks → 5 revisions → 3 applied) indicate over-generation of corrections relative to actionable changes.
+
+### `dream:20260903145946:3:0aee49`
+*03.09. 14:59 UTC · Quelle: dream*
+
+The system retries rate-limited models repeatedly without backoff or fallback, wasting cycles and amplifying quota exhaustion.
+
+### `dream:20260903145946:2:13f848`
+*03.09. 14:59 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model succeeds where others fail but exhibits high latency variance (7.5–23.5s) unrelated to token volume.
+
+### `dream:20260903145946:1:f1bb4d`
+*03.09. 14:59 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Vorschläge in echte Fähi:2`
 *03.09. 14:36 UTC · Quelle: evolution*
