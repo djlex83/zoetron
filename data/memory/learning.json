@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-03 15:58:25",
+ "stand": "2026-09-03 16:08:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -363,12 +363,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.684,
- "simulationen_angewandt": 35,
+ "haende_quote": 0.688,
+ "simulationen_angewandt": 34,
  "swarm_scores": {
-  "n": 36,
+  "n": 35,
   "best": 9.0,
-  "schnitt": 5.94
+  "schnitt": 6.11
  },
  "score_nach_ziel_typ": {
   "analyse": {

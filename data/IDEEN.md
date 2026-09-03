@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 15:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 16:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Task execution succeeds via 188-line Python artifact with graph retrieval (10 edges, 4 nodes fetched) but requires 3 revisions.
+- Effort calibration systematically underestimates by ~25% (predicted 6 vs actual 8 cycles) for market-plan update tasks.
+- inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success (61.8s latency, score 8) under current load.
+- Nvidia Nemotron exhibits high latency (48-92s) and intermittent 502 upstream overload errors despite successful completions.
+- Free-tier models (GLM, Gemma) consistently hit 429 rate limits within seconds, making them unreliable for sustained workloads.
 - Reflex-driven cleanup successfully closes stale work loops, but only when explicitly triggered.
 - Latency variance (38-59s) on the fallback model suggests cold-start effects that could be mitigated by keep-alive requests.
 - Skill proposals accumulate but never graduate to deployed capabilities, revealing a broken promotion pipeline.
@@ -51,11 +56,6 @@
 - Lower-tier models (inclusionai/ling-3.0-flash-fin) achieve reliable success at 5-6s latency, while high-capacity models (nemotron-550b) succeed but wi
 - Prose-only artifacts fail to converge on the task goal (score 0/10); executable Python code blocks are a necessary condition for meaningful scoring (v
 - Rate limiting (HTTP 429) is the dominant failure mode, causing 100% failure on z-ai/glm-5.2 (6/6) and all google/gemma calls — these models must be de
-- Repeated reflex, swarm, and simulation attempts for the same goal reveal a missing unified skill-deployment pipeline.
-- Simulation-based revision (3 risks, 3 revisions) catches defects pre-deployment but only works when a healthy model is available.
-- Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), so any multi-step workflow must be serialized and idempotent.
-- File operations fail when scripts use relative paths instead of resolving ZOETRON_DATA and sys.argv[1] into absolute paths before I/O.
-- Free-tier LLM endpoints suffer pervasive 429/502 errors, making inclusionai/ling-3.0-flash-fin:free the only reliably responsive model in this session
 
 ---
 
