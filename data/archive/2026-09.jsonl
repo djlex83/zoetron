@@ -6111,3 +6111,40 @@
 {"ts": 1787826151.5072875, "kind": "reflex_used", "payload": {"goal": "Aus Simulationen besser lernen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
 {"ts": 1787826152.1271355, "kind": "act_done", "payload": {"goal_title": "Aus Simulationen besser lernen", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1787826226.4543107, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787826350.179922, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787826351.4071662, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787826356.3594465, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 2.0, "tokens_ein": 1352, "tokens_aus": 752}}
+{"ts": 1787826356.3600125, "kind": "skill_proposal", "payload": {"proposal": "Implement an automatic model blacklist mechanism that temporarily removes models from the routing pool after three consecutive 429 errors."}}
+{"ts": 1787826356.3600705, "kind": "skill_proposal", "payload": {"proposal": "Create an adaptive timeout manager that scales timeout limits based on the rolling 90th percentile latency of each specific model."}}
+{"ts": 1787826356.3601248, "kind": "skill_proposal", "payload": {"proposal": "Develop a skill execution gatekeeper that automatically tests and deploys high-scoring skill proposals into active workflows."}}
+{"ts": 1787826356.3601909, "kind": "skill_proposal", "payload": {"proposal": "Establish a fallback model hierarchy that immediately switches to a secondary model upon primary failure without manual intervention."}}
+{"ts": 1787826356.3602483, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-simulation validation step that checks proposals against current system stress levels to avoid overloading the system during conserve mode."}}
+{"ts": 1787826356.360318, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787826359.541142, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787826359.541139, "schalter_geoeffnet": false}}
+{"ts": 1787826372.2264638, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 12.7, "tokens_ein": 439, "tokens_aus": 701}}
+{"ts": 1787826372.2267525, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Viele Modelle scheitern noch. Bessere Modelle bedeuten weniger Fehler beim Handeln.", "signal": "failure"}}
+{"ts": 1787826372.2268775, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich umsetzen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber wenige werden wirklich genutzt.", "signal": "gap"}}
+{"ts": 1787826372.2270465, "kind": "drive_goal", "payload": {"title": "Träume und Simulationen für Handeln nutzen", "why": "Das System träumt und simuliert, wendet die Ergebnisse aber kaum im echten Handeln an.", "signal": "combination"}}
+{"ts": 1787826374.395548, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.28, "gelesen": 1}}
+{"ts": 1787826374.396041, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich nutzen", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1787826374.8559344, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten wirklich nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787826449.6035476, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787826620.15154, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787826621.3317854, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787826625.5415974, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787826625.5415943, "schalter_geoeffnet": false}}
+{"ts": 1787826663.581881, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 38.0, "tokens_ein": 1645, "tokens_aus": 1028}}
+{"ts": 1787826663.5824323, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router that prioritizes Nvidia Nemotron models and implements exponential backoff with jitter for 429 errors."}}
+{"ts": 1787826663.5824869, "kind": "skill_proposal", "payload": {"proposal": "Add pre-flight checks for hand actions: verify workspace state, required files, and protocol scaffolds before execution."}}
+{"ts": 1787826663.5825458, "kind": "skill_proposal", "payload": {"proposal": "Create a calibration feedback loop that updates difficulty estimates based on actual vs predicted revision counts."}}
+{"ts": 1787826663.582602, "kind": "skill_proposal", "payload": {"proposal": "Build a protocol scaffold generator that creates minimal Zoem-Protokoll-Entwurf artifacts before task execution."}}
+{"ts": 1787826663.5826533, "kind": "skill_proposal", "payload": {"proposal": "Design a revision budget tracker that caps revisions at 3 and escalates to alternative strategy when exceeded."}}
+{"ts": 1787826663.5827076, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787826665.7941406, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787826665.7941382, "schalter_geoeffnet": false}}
+{"ts": 1787826694.048031, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 28.3, "tokens_ein": 442, "tokens_aus": 843}}
+{"ts": 1787826694.0482183, "kind": "drive_goal", "payload": {"title": "Modelle seltener scheitern lassen", "why": "Die Modelle machen noch zu viele Fehler. Weniger Fehler bedeuten, dass das System verlässlicher arbeitet.", "signal": "failure"}}
+{"ts": 1787826694.0483203, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich nutzen", "why": "Es werden viele neue Fähigkeiten vorgeschlagen, aber nicht alle angewendet. Das System lernt schneller, wenn es gute Vorschläge übernimmt.", "signal": "gap"}}
+{"ts": 1787826694.0484118, "kind": "drive_goal", "payload": {"title": "Weniger menschliche Hilfe nötig", "why": "Oft muss ein Mensch eingreifen. Wenn das System mehr selbst kann, arbeitet es eigenständiger.", "signal": "gap"}}
+{"ts": 1787826696.4642615, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.3, "gelesen": 56}}
+{"ts": 1787826696.465107, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten testen", "tool": "vorgeschlagene-fähigkeiten-wirklich-nutz.py", "ok": true}}
+{"ts": 1787826697.0140913, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten testen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787826771.3960576, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

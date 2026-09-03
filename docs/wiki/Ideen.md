@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model selection currently ignores real-time health signals (latency, error rate, quota), causing repeated fallback to already-degraded providers.
+- Path-related failures persist despite a proposed resolver utility, indicating missing enforcement of absolute-path usage across tools.
+- Zero facts pruned while 31 events were discarded suggests the event-to-fact compressor is absent or ineffective, risking knowledge loss.
+- Skill proposals for circuit breakers, routing, and backoff exist but remain unimplemented, creating a gap between diagnosis and remedy.
+- Repeated 429/502 errors across all free-tier providers indicate systemic quota exhaustion, not isolated provider failures.
 - Skill proposals accumulate in memory without deployment pipeline, creating proposal debt that never translates into capability.
 - Event pruning discarded 39 events with zero fact extraction, permanently losing operational context needed for root-cause analysis.
 - High-latency success (51s for nemotron) is functionally equivalent to failure for interactive decision loops.
@@ -51,11 +56,6 @@
 - The simulation-driven goal achieved convergence in a single swarm cycle after 5 revisions, indicating revision loops are more critical than iteration 
 - nvidia/nemotron-3-ultra succeeds consistently but exhibits 60-150s latency, while inclusionai/ling-3.0-flash-fin delivers comparable success at 13s la
 - Free-tier models on OpenRouter suffer pervasive 429 rate limits, making them unreliable for production workflows without fallback chains.
-- Drive goals for model-error reduction, stale analysis reuse, and memory combination point to three orthogonal reliability gaps: runtime resilience, kn
-- Pruning removed 26 events but zero facts, suggesting episodic noise accumulates faster than semantic knowledge.
-- Self-diagnosis reports zero organ errors while external model calls fail at >80% rate, revealing a blind spot in monitoring scope.
-- Existing skill proposals for circuit breakers, health-aware routing, and request middleware directly address the observed failure modes but remain uni
-- Rate limiting (429) and upstream overload (502) across multiple providers indicate systemic quota exhaustion rather than isolated failures.
 
 ---
 
