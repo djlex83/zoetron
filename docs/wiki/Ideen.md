@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 22:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 22:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand/tool actions fail silently (exit 1, 0 bytes read, no error), preventing diagnostic learning from execution failures.
+- Evolutionary search with 3+ variants and critic feedback yields dramatic improvement (2→9), but only when sandbox executes.
+- Self-assessment is miscalibrated: predicted score 4 vs actual 2 indicates consistent overconfidence in capability estimates.
+- Code generation frequently produces syntax errors that crash the sandbox ("LAEUFT NICHT"), requiring pre-execution validation.
+- Free-tier models suffer systemic rate-limiting (429) and upstream overload (502), making single-model reliance fragile.
 - Fallback models succeed but with unpredictable latency, making them unreliable for time-constrained operations.
 - Multiple concurrent drive goals (error analysis, stale plans, skill testing) compete for severely limited iteration budget.
 - Previous self-improvement attempt scored 1/10, indicating goal formulation or execution tracking is fundamentally broken.
@@ -51,11 +56,6 @@
 - Stale analytical work (market analysis) is repeatedly flagged but never completed, indicating a missing auto-escalation or auto-decomposition mechanis
 - Skill proposals accumulate without execution — the recurring 'gap' signal confirms that ideas are generated faster than they are tested, creating back
 - 429 rate-limit errors on z-ai/glm-5.2:free recur within seconds and cascade into task failures because no circuit breaker or cooldown exists to halt r
-- Pruning removes events but retains facts untouched for weeks, bloating context without utility.
-- Model router success (nemotron-3-ultra OK after glm-5.2 fail) shows fallback works but lacks proactive cooldown and health scoring.
-- Drive goals signal awareness (reduce errors, update self-analysis, implement skills) but no automatic coupling to concrete skills exists.
-- Skill proposals accumulate but lack enforcement mechanism: reflex converts only when explicitly triggered, leaving backlog stale.
-- Repeated 429/502 errors across multiple free-tier models indicate systemic rate-limit saturation, not isolated model failures.
 
 ---
 

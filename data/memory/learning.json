@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 22:21:03",
+ "stand": "2026-09-03 22:29:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,6 +189,12 @@
    "quote": 0.0
   },
   {
+   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-dauerhaft-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -310,12 +316,6 @@
   },
   {
    "tool": "fähigkeiten-gezielt-trainieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
