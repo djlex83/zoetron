@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 10:45:18",
+ "stand": "2026-09-03 10:54:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -213,12 +213,6 @@
    "quote": 0.0
   },
   {
-   "tool": "modellfehler-stark-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -373,9 +367,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.68,
+ "haende_quote": 0.685,
  "simulationen_angewandt": 30,
  "swarm_scores": {
   "n": 34,
@@ -384,8 +384,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 6.3
+   "n": 29,
+   "schnitt": 6.21
   },
   "bau": {
    "n": 4,

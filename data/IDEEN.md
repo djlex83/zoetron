@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-driven revision cycles (verdict=revise, 4 revisions applied) prove effective but only run when metabolism budget permits.
+- System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which starves the very simulations needed to validate skill proposals.
+- File-system actions fail due to relative-path confusion between sys.argv[1], ZOETRON_DATA, and working directory, mandating absolute-path resolution a
+- The working model (nvidia/nemotron-3-ultra) exhibits high latency variance (27-63s), requiring timeout budgets and fallback chains rather than single-
+- Free-tier model providers (z-ai/glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota-aware schedul
 - Dream and simulation runs operate in isolation; fusing their latent representations could surface novel strategies neither produces alone.
 - Stale analytical facts persist indefinitely because no periodic rehydration job extracts fresh patterns and overwrites outdated memory entries.
 - Skill proposals accumulate but never reach production because there is no automated validation gate (syntax, types, tests) before registry promotion.
@@ -51,11 +56,6 @@
 - Zero facts pruned while 31 events were discarded suggests the event-to-fact compressor is absent or ineffective, risking knowledge loss.
 - Skill proposals for circuit breakers, routing, and backoff exist but remain unimplemented, creating a gap between diagnosis and remedy.
 - Repeated 429/502 errors across all free-tier providers indicate systemic quota exhaustion, not isolated provider failures.
-- Skill proposals accumulate in memory without deployment pipeline, creating proposal debt that never translates into capability.
-- Event pruning discarded 39 events with zero fact extraction, permanently losing operational context needed for root-cause analysis.
-- High-latency success (51s for nemotron) is functionally equivalent to failure for interactive decision loops.
-- Destructive operation guard correctly blocks unauthorized system changes but creates workflow deadlocks when legitimate automation needs elevated priv
-- Rate limiting cascades across multiple providers simultaneously, indicating shared infrastructure bottlenecks rather than isolated model failures.
 
 ---
 

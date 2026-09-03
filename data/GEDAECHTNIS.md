@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10448 Fakten** · Stand 2026-09-03 10:46 UTC · aktualisiert bei jedem Herzschlag
+**10453 Fakten** · Stand 2026-09-03 10:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5715
+- **dream:** 5720
 - **swarm_artifact:** 2223
 - **last_swarm_critique:** 725
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903105346:5:f347d1`
+*03.09. 10:53 UTC · Quelle: dream*
+
+Simulation-driven revision cycles (verdict=revise, 4 revisions applied) prove effective but only run when metabolism budget permits.
+
+### `dream:20260903105346:4:407ebe`
+*03.09. 10:53 UTC · Quelle: dream*
+
+System stress at 1.0 triggers conserve mode (max_tasks=3, max_iterations=1), which starves the very simulations needed to validate skill proposals.
+
+### `dream:20260903105346:3:e8b994`
+*03.09. 10:53 UTC · Quelle: dream*
+
+File-system actions fail due to relative-path confusion between sys.argv[1], ZOETRON_DATA, and working directory, mandating absolute-path resolution at entry points.
+
+### `dream:20260903105346:2:9bc83c`
+*03.09. 10:53 UTC · Quelle: dream*
+
+The working model (nvidia/nemotron-3-ultra) exhibits high latency variance (27-63s), requiring timeout budgets and fallback chains rather than single-model dependence.
+
+### `dream:20260903105346:1:59c63b`
+*03.09. 10:53 UTC · Quelle: dream*
+
+Free-tier model providers (z-ai/glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota-aware scheduling.
 
 ### `dream:20260903104423:5:2c2043`
 *03.09. 10:44 UTC · Quelle: dream*
