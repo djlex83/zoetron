@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 18:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 18:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress=1.0 with metabolism=conserve correctly throttles task execution, but without hysteresis in mode transitions, the system risks thrashing between
+- The primary vulnerability across this session is the deployment gap: safeguards exist as validated proposals but provide zero operational protection u
+- High-latency fallback models (>25s) can become their own failure mode when downstream operations or user expectations impose tighter time constraints 
+- Hand-actions that exit with code 0 but touch no actual data represent a silent failure class caused by unresolved relative paths — the system reports 
+- Free-tier LLM providers fail in correlated cascades (429s across multiple providers within seconds), making simple sequential fallback chains insuffic
 - Subprocess-based tool execution triggers human-approval blockers that declarative, non-destructive designs eliminate.
 - Reflexive behavior dominates planned action by a 9:1 ratio, reducing adaptability in novel situations.
 - Self-assessed scores systematically underestimate true performance and require a +2 calibration correction factor.
@@ -51,11 +56,6 @@
 - Self-diagnosis consistently reports zero organ errors despite repeated model failures, revealing a calibration problem where the diagnostic mechanism 
 - Skill proposals accumulate across cycles but are never converted into implemented skills, creating a persistent proposal-to-execution gap that wastes 
 - All model endpoints fail simultaneously with 429/502 errors, indicating a systemic rate-limiting problem that requires request queuing and exponential
-- Swarm converges poorly (score 4, not converged) when builder role dominates 3:1 over planner/critic.
-- Evolutionary search with 3 variants reliably lifts skill scores from 4 to 8+ (winner scores [8,7,9]).
-- Hand actions failing in <0.03s with 0 bytes read indicate missing precondition checks (paths, permissions).
-- Calibration underestimates required cycles by 3x (predicted 1, actual 4) for skill-generation tasks.
-- Model z-ai/glm-5.2:free consistently returns 429 Too Many Requests errors and should be excluded from primary routing.
 
 ---
 
