@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 07:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 08:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzen *(wieder aufgegriffen: 3×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency variance (34–72s) under fallback indicates no health-aware routing or composite scoring under load.
+- Reflex actions succeed for known patterns but lack a mechanism to generalize solutions to novel failure modes.
+- Stale goals persist across cycles without automatic intervention, requiring manual reflex cleanup that doesn't generalize.
+- Events accumulate without compression into durable facts, increasing memory overhead and degrading consolidation quality over cycles.
+- Repeated 429 errors on a single model provider cause cascading fallback latency spikes because fallback selection is reactive, not proactive.
 - The system self-corrects by generating skill proposals from failures, but the learning loop is slow without automated retry logic.
 - Simulation-guided revision (3 revisions, 5 risks identified) improves quality before final convergence.
 - Evolutionary scoring of multiple variants (4→7/8/9) consistently produces better results than single-attempt generation.
@@ -51,11 +56,6 @@
 - Under metabolic conserve mode (stress=1.0, max_iterations=1), the system still completed a full simulation–revision–execution cycle, demonstrating tha
 - The nvidia/nemotron-3-ultra model succeeds consistently but exhibits high latency variance (17–144s), requiring timeout budgets that accommodate tail 
 - The z-ai/glm-5.2:free model is persistently unavailable due to rate limiting (429 errors), making it unreliable for production use.
-- Event pruning removes 17 events per cycle but zero facts, indicating the fact store is stagnant while episodic noise accumulates.
-- System stress hits maximum (1.0) and triggers conserve mode, throttling all new work while model latency spikes to 48s on the fallback model.
-- Skill proposals are generated repeatedly but the validation pipeline (vorgeschlagene-fähigkeiten-prüfen-und-ba.py) fails, so no proposals reach produc
-- Hand actions fail because relative paths are used instead of the canonical ZOETRON_DATA directory, causing silent zero-byte operations.
-- The z-ai/glm-5.2:free model consistently returns 429 rate-limit errors, making it unreliable as a primary endpoint without a robust fallback router.
 
 ---
 

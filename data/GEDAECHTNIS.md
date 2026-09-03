@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10343 Fakten** · Stand 2026-09-03 07:36 UTC · aktualisiert bei jedem Herzschlag
+**10360 Fakten** · Stand 2026-09-03 08:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5650
-- **swarm_artifact:** 2199
-- **last_swarm_critique:** 721
-- **anti_pattern:** 633
-- **last_swarm_goal:** 469
-- **strategy:** 337
-- **tool:** 129
+- **dream:** 5655
+- **swarm_artifact:** 2205
+- **last_swarm_critique:** 722
+- **anti_pattern:** 635
+- **last_swarm_goal:** 470
+- **strategy:** 338
+- **tool:** 130
 - **hand_result:** 113
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:fähigkeitsvorschläge-in-echte-skills-ver`
+*03.09. 08:05 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeitsvorschläge in echte Skills verwandeln'. Datei: data/tools/fähigkeitsvorschläge-in-echte-skills-ver.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeitsvorschläge in :2`
+*03.09. 08:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Event-Driven Architecture with Message Bus - Replace file-based handshake with an event-driven system (e.g., Redis Streams, Kafka, or local pub/sub). Artifact 1 emits 'skill.proposed' events with payload containing raw idea. 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeitsvorschläge in :1`
+*03.09. 08:03 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Adapter/Transformer Layer - Keep existing artifacts unchanged but insert adapter modules between them. Adapter A transforms Artifact 1's dream/idea format into the strict schema required by Artifact 2 (adding missing fields, 
+
+### `last_swarm_critique`
+*03.09. 08:02 UTC · Quelle: critic*
+
+score=4; issues=Directory disconnects: Artifact 1 writes to memory/skills/, Artifact 2 reads from memory/skill_proposals/ and writes to tools/toolbox/, Artifact 3 reads from memory/skills/verified/ - no connected pipeline; Validation mismatch: Artifact 2's wer
+
+### `last_swarm_goal`
+*03.09. 07:54 UTC · Quelle: system*
+
+Fähigkeitsvorschläge in echte Skills verwandeln
+
+### `dream:20260903075347:5:a4c97e`
+*03.09. 07:53 UTC · Quelle: dream*
+
+Model latency variance (34–72s) under fallback indicates no health-aware routing or composite scoring under load.
+
+### `dream:20260903075347:4:cc0a3a`
+*03.09. 07:53 UTC · Quelle: dream*
+
+Reflex actions succeed for known patterns but lack a mechanism to generalize solutions to novel failure modes.
+
+### `dream:20260903075347:3:4bf0d3`
+*03.09. 07:53 UTC · Quelle: dream*
+
+Stale goals persist across cycles without automatic intervention, requiring manual reflex cleanup that doesn't generalize.
+
+### `dream:20260903075347:2:cead49`
+*03.09. 07:53 UTC · Quelle: dream*
+
+Events accumulate without compression into durable facts, increasing memory overhead and degrading consolidation quality over cycles.
+
+### `dream:20260903075347:1:7e84fa`
+*03.09. 07:53 UTC · Quelle: dream*
+
+Repeated 429 errors on a single model provider cause cascading fallback latency spikes because fallback selection is reactive, not proactive.
 
 ### `last_swarm_critique`
 *03.09. 07:34 UTC · Quelle: critic*
