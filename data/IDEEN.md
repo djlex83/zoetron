@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 11:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 11:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Autonomous goals fire on failure/stale/gap signals but lack priority arbitration, risking thrashing when multiple high-signal goals compete for the sa
+- Event pruning (36-37 per run) occurs while fact count stays static, signaling unbounded fact-store growth that needs TTL or relevance-based decay.
+- Recurring 'herzschlag: organzyklus + gedächtnis-sync' CI failures indicate infrastructure fragility that should gate non-critical organ activity via c
+- Forty-five skill proposals exist without a validation pipeline, creating proposal debt; the successful reflex test of 'vorgeschlagene-fähigkeiten-wirk
+- The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds at 32-44s latency, proving single-model de
 - CI failure in hermes-daemon (organzyklus + gedächtnis-sync) was caught by reflex, indicating monitoring works but the daemon has stability issues.
 - Calibration systematically underestimated outcome (predicted 6 vs actual 9), suggesting the predictor needs recalibration on this task class.
 - Destructive tool operations (os.system, subprocess) are correctly blocked by the safety gate, requiring human approval for production deployment.
@@ -51,11 +56,6 @@
 - File-system actions fail due to relative-path confusion between sys.argv[1], ZOETRON_DATA, and working directory, mandating absolute-path resolution a
 - The working model (nvidia/nemotron-3-ultra) exhibits high latency variance (27-63s), requiring timeout budgets and fallback chains rather than single-
 - Free-tier model providers (z-ai/glm-5.2) consistently hit 429 rate limits, making them unreliable for production workloads without quota-aware schedul
-- Dream and simulation runs operate in isolation; fusing their latent representations could surface novel strategies neither produces alone.
-- Stale analytical facts persist indefinitely because no periodic rehydration job extracts fresh patterns and overwrites outdated memory entries.
-- Skill proposals accumulate but never reach production because there is no automated validation gate (syntax, types, tests) before registry promotion.
-- A single failing model can cascade into system-wide stalls because the orchestrator lacks a circuit-breaker that isolates unhealthy providers.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary workers without aggressive backoff and fallback chains
 
 ---
 

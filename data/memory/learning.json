@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 11:04:53",
+ "stand": "2026-09-03 11:26:14",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -43,18 +43,6 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -183,6 +171,18 @@
    "quote": 0.0
   },
   {
+   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -211,12 +211,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
@@ -373,19 +367,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-dauerhaft-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
  "haende_quote": 0.694,
- "simulationen_angewandt": 30,
+ "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 33,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 6.12
+  "schnitt": 6.15
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 29,
-   "schnitt": 6.21
+   "schnitt": 6.41
   },
   "bau": {
    "n": 4,

@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10458 Fakten** · Stand 2026-09-03 11:06 UTC · aktualisiert bei jedem Herzschlag
+**10475 Fakten** · Stand 2026-09-03 11:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5725
-- **swarm_artifact:** 2223
-- **last_swarm_critique:** 725
-- **anti_pattern:** 637
-- **last_swarm_goal:** 473
-- **strategy:** 339
-- **tool:** 131
+- **dream:** 5730
+- **swarm_artifact:** 2229
+- **last_swarm_critique:** 726
+- **anti_pattern:** 639
+- **last_swarm_goal:** 474
+- **strategy:** 340
+- **tool:** 132
 - **hand_result:** 113
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modellfehler-systematisch-reduzieren`
+*03.09. 11:26 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler systematisch reduzieren'. Datei: data/tools/modellfehler-systematisch-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modellfehler systematisc:2`
+*03.09. 11:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Formal Contract Verification with Counterexample-Guided Synthesis - Shift from heuristic detection to provable correctness: (1) Express model I/O contracts as executable specifications (pre/post conditions, invariants) in a l
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modellfehler systematisc:1`
+*03.09. 11:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Semantic Error Embedding & Neural Classification with Human-in-the-Loop Active L - Abandon static regex for a learned semantic pipeline: (1) Fine-tune a small encoder (e.g., DistilBERT) on historical error logs + resolution l
+
+### `last_swarm_critique`
+*03.09. 11:22 UTC · Quelle: critic*
+
+score=7; issues=Nur Infrastruktur/Monitoring - keine aktive Fehlerreduktionslogik (keine Fixes, Retries, Korrekturen); Artefakte in der Ansicht gekappt - Vollständigkeit der Klassifizierungs- und Bereinigungslogik nicht prüfbar; Kein Integrationstest: die drei
+
+### `last_swarm_goal`
+*03.09. 11:14 UTC · Quelle: system*
+
+Modellfehler systematisch reduzieren
+
+### `dream:20260903111343:5:06a698`
+*03.09. 11:13 UTC · Quelle: dream*
+
+Autonomous goals fire on failure/stale/gap signals but lack priority arbitration, risking thrashing when multiple high-signal goals compete for the same organs.
+
+### `dream:20260903111343:4:1f218b`
+*03.09. 11:13 UTC · Quelle: dream*
+
+Event pruning (36-37 per run) occurs while fact count stays static, signaling unbounded fact-store growth that needs TTL or relevance-based decay.
+
+### `dream:20260903111343:3:09f752`
+*03.09. 11:13 UTC · Quelle: dream*
+
+Recurring 'herzschlag: organzyklus + gedächtnis-sync' CI failures indicate infrastructure fragility that should gate non-critical organ activity via circuit breakers.
+
+### `dream:20260903111343:2:f87718`
+*03.09. 11:13 UTC · Quelle: dream*
+
+Forty-five skill proposals exist without a validation pipeline, creating proposal debt; the successful reflex test of 'vorgeschlagene-fähigkeiten-wirklich-fert.py' shows a gated promotion path works.
+
+### `dream:20260903111343:1:bc4604`
+*03.09. 11:13 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds at 32-44s latency, proving single-model dependency causes cascading failures.
 
 ### `dream:20260903110328:5:49bfa9`
 *03.09. 11:03 UTC · Quelle: dream*
