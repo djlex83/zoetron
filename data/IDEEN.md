@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 22:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 22:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
@@ -33,14 +33,19 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning removes 156 events but zero facts, suggesting the fact-extraction pipeline is not capturing durable knowledge from experience.
+- Hand action execution fails silently (exit 1, gelesen=0) without error detail, revealing an observability gap in the tool-use layer.
+- Self-improvement swarm cycles fail to converge (score 2, converged=false) despite revisions, indicating the goal metric or revision mechanism lacks su
+- The inclusionai/ling-3.0-flash-fin model demonstrates consistent success (2/2 calls) albeit with higher latency (8-13s), identifying it as a reliable 
+- Free-tier models exhibit systematic 429 rate-limiting and 502 upstream overload failures, making single-model reliance non-viable for production workl
 - Hand/tool actions fail silently (exit 1, 0 bytes read, no error), preventing diagnostic learning from execution failures.
 - Evolutionary search with 3+ variants and critic feedback yields dramatic improvement (2→9), but only when sandbox executes.
 - Self-assessment is miscalibrated: predicted score 4 vs actual 2 indicates consistent overconfidence in capability estimates.
@@ -51,11 +56,6 @@
 - Previous self-improvement attempt scored 1/10, indicating goal formulation or execution tracking is fundamentally broken.
 - High stress state (1.0) with conservative budget (max 3 tasks, 1 iteration) prevents adequate exploration of new skill proposals.
 - Rate limiting (429 errors) on primary models causes cascading fallbacks that increase latency variance by 50x (2s to 119s).
-- Transient 429 failures resolve spontaneously (model recovers to 4.0s latency), proving that pre-flight health probes and cached availability checks wo
-- Event accumulation (23 pruned) far outpaces fact distillation (0 pruned), revealing that raw experiences are stored but never condensed into durable k
-- Stale analytical work (market analysis) is repeatedly flagged but never completed, indicating a missing auto-escalation or auto-decomposition mechanis
-- Skill proposals accumulate without execution — the recurring 'gap' signal confirms that ideas are generated faster than they are tested, creating back
-- 429 rate-limit errors on z-ai/glm-5.2:free recur within seconds and cascade into task failures because no circuit breaker or cooldown exists to halt r
 
 ---
 

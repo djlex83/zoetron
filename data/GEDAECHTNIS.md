@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10842 Fakten** · Stand 2026-09-03 22:31 UTC · aktualisiert bei jedem Herzschlag
+**10847 Fakten** · Stand 2026-09-03 22:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5965
+- **dream:** 5970
 - **swarm_artifact:** 2303
 - **last_swarm_critique:** 739
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903223858:5:640b29`
+*03.09. 22:38 UTC · Quelle: dream*
+
+Event pruning removes 156 events but zero facts, suggesting the fact-extraction pipeline is not capturing durable knowledge from experience.
+
+### `dream:20260903223858:4:a526c8`
+*03.09. 22:38 UTC · Quelle: dream*
+
+Hand action execution fails silently (exit 1, gelesen=0) without error detail, revealing an observability gap in the tool-use layer.
+
+### `dream:20260903223858:3:b20f47`
+*03.09. 22:38 UTC · Quelle: dream*
+
+Self-improvement swarm cycles fail to converge (score 2, converged=false) despite revisions, indicating the goal metric or revision mechanism lacks sufficient gradient signal.
+
+### `dream:20260903223858:2:fa8753`
+*03.09. 22:38 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model demonstrates consistent success (2/2 calls) albeit with higher latency (8-13s), identifying it as a reliable fallback anchor.
+
+### `dream:20260903223858:1:75342c`
+*03.09. 22:38 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic 429 rate-limiting and 502 upstream overload failures, making single-model reliance non-viable for production workloads.
 
 ### `dream:20260903222928:5:370f24`
 *03.09. 22:29 UTC · Quelle: dream*
