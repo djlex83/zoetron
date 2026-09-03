@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10304 Fakten** · Stand 2026-09-03 06:31 UTC · aktualisiert bei jedem Herzschlag
+**10309 Fakten** · Stand 2026-09-03 06:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5620
+- **dream:** 5625
 - **swarm_artifact:** 2193
 - **last_swarm_critique:** 720
 - **anti_pattern:** 633
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903064425:5:982c94`
+*03.09. 06:44 UTC · Quelle: dream*
+
+High-latency models like inclusionai/ling-3.0-flash-fin (72.7s) rapidly deplete the task budget and must be deprioritized when stress is elevated.
+
+### `dream:20260903064425:4:f7dcf7`
+*03.09. 06:44 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free is the most reliable model under load despite occasional 502 upstream errors, while z-ai/glm-5.2:free has the worst 429 failure rate.
+
+### `dream:20260903064425:3:33c5ad`
+*03.09. 06:44 UTC · Quelle: dream*
+
+Relative file paths in hand_action fail to resolve under the real data path; absolute path resolution must be enforced before any read attempt.
+
+### `dream:20260903064425:2:8c0d03`
+*03.09. 06:44 UTC · Quelle: dream*
+
+Under conserve mode (stress=1.0, max_iterations=1), the system lacks the retry budget to self-recover from transient API failures, creating a deadlock between resource conservation and fault tolerance.
+
+### `dream:20260903064425:1:f6f30e`
+*03.09. 06:44 UTC · Quelle: dream*
+
+429 Too Many Requests errors are systemic across nearly all free-tier models, making exponential backoff with model rotation the primary recovery mechanism.
 
 ### `tool:vorgeschlagene-fähigkeiten-testen-und-be`
 *03.09. 06:30 UTC · Quelle: hands*
