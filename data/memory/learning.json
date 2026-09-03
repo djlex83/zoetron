@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 09:28:20",
+ "stand": "2026-09-03 09:40:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -42,12 +42,6 @@
    "tool": "marktanalyse-in-handlung-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -151,6 +145,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
@@ -370,6 +370,12 @@
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

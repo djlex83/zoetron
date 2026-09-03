@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 09:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 09:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex mechanism successfully converts dream goals into converged actions, proving the dream-to-action pipeline is functional when a valid tool re
+- Pruning removes raw events (57 then 10) while zero facts are consolidated, indicating the system stores ephemeral data but never extracts durable know
+- Skill proposals accumulate across cycles (10 total) but none are validated or deployed, revealing a gap between reactive idea generation and automated
+- The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits 2.5x latency variance (25s–63s), showing that a single fallback without h
+- Repeated 429 rate-limit failures on z-ai/glm-5.2:free without backoff trigger cascading goal cycles, proving that unprotected external dependencies ar
 - Skill proposals accumulate but reflex tooling (traum-ideen-zu-fähigkeiten-machen.py) fails to materialize them.
 - System operates at max stress (1.0) in 'conserve' mode with 1-iteration budget, yet still spawns swarms that fail.
 - hand_action fails on path resolution (relative vs absolute, env var ZOETRON_DATA), causing silent zero-byte reads.
@@ -51,11 +56,6 @@
 - Critic identifies "directory disconnects" as a structural issue, suggesting skill proposals lack proper integration pathways into the system's capabil
 - Evolution runs for "turn skill proposals into real skills" score only 4/10 and fail to converge despite 2 swarm cycles, revealing a gap between propos
 - The z-ai/glm-5.2:free provider consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds but with 35-58s latency, indicatin
-- Repeated fallback attempts without backoff strategy waste cycles and increase total latency.
-- Skill conversion pipeline executes successfully (artifact running 202 lines Python) but calibration error suggests estimation inaccuracy.
-- System operates under maximum stress (1.0) with conservative budget, limiting parallel task execution to 3 tasks and 1 iteration.
-- Fallback model (nemotron-3-ultra) succeeds but exhibits high latency variance (19-135s), indicating unpredictable performance.
-- Primary model (glm-5.2) consistently fails with 429 rate limits, making it unreliable for production use.
 
 ---
 
