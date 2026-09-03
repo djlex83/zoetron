@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10530 Fakten** · Stand 2026-09-03 13:24 UTC · aktualisiert bei jedem Herzschlag
+**10535 Fakten** · Stand 2026-09-03 13:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5765
+- **dream:** 5770
 - **swarm_artifact:** 2237
 - **last_swarm_critique:** 728
 - **anti_pattern:** 643
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903133122:5:2a93c3`
+*03.09. 13:31 UTC · Quelle: dream*
+
+Free-tier models succeed intermittently with high latency (50-65s), making predictive tier selection essential to avoid wasted calls and timeouts.
+
+### `dream:20260903133122:4:65c3d4`
+*03.09. 13:31 UTC · Quelle: dream*
+
+The system can self-diagnose structural health and converge on reflex execution, but cannot overcome external dependency failures without explicit resilience engineering.
+
+### `dream:20260903133122:3:bcb36c`
+*03.09. 13:31 UTC · Quelle: dream*
+
+Knowledge assets such as market analyses decay over time and must be actively rehydrated nightly rather than passively stored.
+
+### `dream:20260903133122:2:f3edb3`
+*03.09. 13:31 UTC · Quelle: dream*
+
+There is a persistent proposal-to-execution gap: skills are repeatedly proposed but never promoted past the suggestion stage without a formal compilation and deployment pipeline.
+
+### `dream:20260903133122:1:93fe85`
+*03.09. 13:31 UTC · Quelle: dream*
+
+External model API rate limits (429 errors) on free-tier providers are the dominant failure mode, requiring per-provider circuit breakers and automatic fallback to healthy tiers.
 
 ### `dream:20260903132132:5:b24efe`
 *03.09. 13:21 UTC · Quelle: dream*
