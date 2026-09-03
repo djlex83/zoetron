@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 07:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 07:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The skill graph (bahnen) showed zero topological growth (delta=0.0, kanten=0) despite successful artifact execution, indicating that execution alone d
+- Calibration overpredicted success by 75% (predicted 7 vs actual 4), revealing a systematic optimism bias in effort estimation during conserve mode.
+- Under metabolic conserve mode (stress=1.0, max_iterations=1), the system still completed a full simulation–revision–execution cycle, demonstrating tha
+- The nvidia/nemotron-3-ultra model succeeds consistently but exhibits high latency variance (17–144s), requiring timeout budgets that accommodate tail 
+- The z-ai/glm-5.2:free model is persistently unavailable due to rate limiting (429 errors), making it unreliable for production use.
 - Event pruning removes 17 events per cycle but zero facts, indicating the fact store is stagnant while episodic noise accumulates.
 - System stress hits maximum (1.0) and triggers conserve mode, throttling all new work while model latency spikes to 48s on the fallback model.
 - Skill proposals are generated repeatedly but the validation pipeline (vorgeschlagene-fähigkeiten-prüfen-und-ba.py) fails, so no proposals reach produc
@@ -51,11 +56,6 @@
 - Stale goals persist indefinitely without an automatic forcing mechanism, creating execution inertia that accumulates across cycles.
 - Reactive error handling without proactive quota tracking and circuit breaking causes repeated 429 failures that could be avoided by distributing load 
 - Concentrating all model calls through a single API gateway (OpenRouter) creates a systemic rate-limit bottleneck that cascades across all providers si
-- Swarm convergence succeeds in 1 cycle with role distribution but collapses when model availability drops below threshold.
-- Hand actions fail intermittently (exit=1) without error payloads, making debugging and retry logic impossible.
-- Calibration predicted 1 but actual was 8 (7x error), revealing broken estimation heuristics for task complexity.
-- No automatic fallback triggers when primary models fail, causing complete inference outage until manual intervention.
-- Rate limits (429) hit multiple models simultaneously via OpenRouter, indicating shared provider-level quotas rather than per-model limits.
 
 ---
 

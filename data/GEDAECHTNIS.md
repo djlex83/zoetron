@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10324 Fakten** · Stand 2026-09-03 07:13 UTC · aktualisiert bei jedem Herzschlag
+**10329 Fakten** · Stand 2026-09-03 07:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5640
+- **dream:** 5645
 - **swarm_artifact:** 2193
 - **last_swarm_critique:** 720
 - **anti_pattern:** 633
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903071945:5:3774a5`
+*03.09. 07:19 UTC · Quelle: dream*
+
+The skill graph (bahnen) showed zero topological growth (delta=0.0, kanten=0) despite successful artifact execution, indicating that execution alone does not update structural knowledge without explicit consolidation.
+
+### `dream:20260903071945:4:169490`
+*03.09. 07:19 UTC · Quelle: dream*
+
+Calibration overpredicted success by 75% (predicted 7 vs actual 4), revealing a systematic optimism bias in effort estimation during conserve mode.
+
+### `dream:20260903071945:3:478b67`
+*03.09. 07:19 UTC · Quelle: dream*
+
+Under metabolic conserve mode (stress=1.0, max_iterations=1), the system still completed a full simulation–revision–execution cycle, demonstrating that single-iteration budgets can suffice for targeted skill validation.
+
+### `dream:20260903071945:2:3482a1`
+*03.09. 07:19 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra model succeeds consistently but exhibits high latency variance (17–144s), requiring timeout budgets that accommodate tail latency.
+
+### `dream:20260903071945:1:35d6ca`
+*03.09. 07:19 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is persistently unavailable due to rate limiting (429 errors), making it unreliable for production use.
 
 ### `dream:20260903071106:5:9b8308`
 *03.09. 07:11 UTC · Quelle: dream*
