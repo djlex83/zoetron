@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 02:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 03:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Alte Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning removes 18 items per cycle yet stale market analyses persist, meaning pruning does not target decision-critical staleness.
+- Self-diagnosis reports zero organ errors while model failures persist, showing health checks do not cover inference reliability.
+- Skill proposals accumulate (5+ per dream) but a drive goal explicitly notes they remain untested, revealing a missing validation loop.
+- Market-analysis goals recur across cycles but are only resolved via reflex tools, indicating planning does not schedule them proactively.
+- Rate-limited free models (z-ai/glm-5.2) cause repeated 429 failures while Nemotron succeeds with highly variable latency (7.7–28.2s).
 - z-ai/glm-5.2:free failed on every attempt due to 429 rate limits, making it completely unusable under current conditions without a backoff strategy or
 - The simulation revision loop (revise → apply revisions → re-evaluate) is a viable iterative pattern but lacks convergence criteria, risking excessive 
 - Simulation calibration was wildly inaccurate (predicted 6 vs actual 1, error 5), meaning the prediction model or its inputs require recalibration befo
@@ -51,11 +56,6 @@
 - Tool executions fail when they don't resolve absolute data paths from sys.argv[1] and ZOETRON_DATA, indicating a systemic path-resolution bug in hand 
 - poolside/laguna-s-2.1:free is the only model that consistently succeeds under current load, suggesting it should be the primary workhorse with others 
 - Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, making request pacing and fallback chains essential for reliability
-- Self-diagnosis reports healthy organs while the model inference layer degrades, revealing a monitoring blind spot at the API boundary.
-- Model fallback chain retries rate-limited endpoints immediately instead of backing off, wasting latency budget and worsening 429 storms.
-- Stale assets (market analyses, old tasks) persist because no periodic review trigger surfaces them for refresh or retirement.
-- Skill proposals accumulate without execution because no automated pipeline validates, tests, and promotes them after generation.
-- Rate limiting across multiple free-tier models causes cascading failures because the router lacks per-model quota tracking and cooldown state.
 
 ---
 

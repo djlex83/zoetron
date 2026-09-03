@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10174 Fakten** · Stand 2026-09-03 02:44 UTC · aktualisiert bei jedem Herzschlag
+**10179 Fakten** · Stand 2026-09-03 03:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5545
+- **dream:** 5550
 - **swarm_artifact:** 2161
 - **last_swarm_critique:** 714
 - **anti_pattern:** 629
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903031440:5:b51a02`
+*03.09. 03:14 UTC · Quelle: dream*
+
+Event pruning removes 18 items per cycle yet stale market analyses persist, meaning pruning does not target decision-critical staleness.
+
+### `dream:20260903031440:4:be0dac`
+*03.09. 03:14 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, showing health checks do not cover inference reliability.
+
+### `dream:20260903031440:3:ec47e3`
+*03.09. 03:14 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ per dream) but a drive goal explicitly notes they remain untested, revealing a missing validation loop.
+
+### `dream:20260903031440:2:578f58`
+*03.09. 03:14 UTC · Quelle: dream*
+
+Market-analysis goals recur across cycles but are only resolved via reflex tools, indicating planning does not schedule them proactively.
+
+### `dream:20260903031440:1:38586f`
+*03.09. 03:14 UTC · Quelle: dream*
+
+Rate-limited free models (z-ai/glm-5.2) cause repeated 429 failures while Nemotron succeeds with highly variable latency (7.7–28.2s).
 
 ### `tool:veraltete-ziele-aktualisieren`
 *03.09. 02:42 UTC · Quelle: hands*
