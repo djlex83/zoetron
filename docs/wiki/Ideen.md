@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 22:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fact pruning yields zero removals because TTL policies lack access-frequency weighting, allowing stale facts to persist beyond 7 days with <3 reads.
+- Fallback model latency p95 exceeds 60s, violating swarm latency budgets and necessitating automatic goal decomposition into sub-goals with <30s wall-c
+- Dream insights lack an automatic bridge to actionable goals, causing high-confidence lessons (>0.8) to remain inert instead of spawning drive_goals wi
+- Skill proposals accumulate without validation because no gate enforces implementation sketches and smoke tests before backlog entry.
+- Free-tier models consistently hit 429 rate limits under load, requiring per-model circuit breakers with 60s rolling windows and 120s cooldowns to prev
 - Fact pruning removed zero items despite a 7-day TTL proposal, showing maintenance policies are not enforced automatically.
 - Drive goal 'Vorgeschlagene Fähigkeiten wirklich bauen' exists but no skill proposals have been implemented, proving the insight-to-action loop is brok
 - Five separate skill proposals for model resilience (fallback chain, circuit breaker, health dashboard, error-signature router, real-time router) dupli
@@ -51,11 +56,6 @@
 - Self-improvement swarm cycles fail to converge (score 2, converged=false) despite revisions, indicating the goal metric or revision mechanism lacks su
 - The inclusionai/ling-3.0-flash-fin model demonstrates consistent success (2/2 calls) albeit with higher latency (8-13s), identifying it as a reliable 
 - Free-tier models exhibit systematic 429 rate-limiting and 502 upstream overload failures, making single-model reliance non-viable for production workl
-- Hand/tool actions fail silently (exit 1, 0 bytes read, no error), preventing diagnostic learning from execution failures.
-- Evolutionary search with 3+ variants and critic feedback yields dramatic improvement (2→9), but only when sandbox executes.
-- Self-assessment is miscalibrated: predicted score 4 vs actual 2 indicates consistent overconfidence in capability estimates.
-- Code generation frequently produces syntax errors that crash the sandbox ("LAEUFT NICHT"), requiring pre-execution validation.
-- Free-tier models suffer systemic rate-limiting (429) and upstream overload (502), making single-model reliance fragile.
 
 ---
 

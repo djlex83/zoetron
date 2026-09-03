@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10852 Fakten** · Stand 2026-09-03 22:50 UTC · aktualisiert bei jedem Herzschlag
+**10866 Fakten** · Stand 2026-09-03 23:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5975
-- **swarm_artifact:** 2303
-- **last_swarm_critique:** 739
+- **dream:** 5980
+- **swarm_artifact:** 2309
+- **last_swarm_critique:** 740
 - **anti_pattern:** 653
-- **last_swarm_goal:** 487
+- **last_swarm_goal:** 488
 - **strategy:** 347
-- **tool:** 136
+- **tool:** 137
 - **hand_result:** 120
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:simulationen-gezielt-einsetzen`
+*03.09. 23:06 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Simulationen gezielt einsetzen'. Datei: data/tools/simulationen-gezielt-einsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*03.09. 23:06 UTC · Quelle: critic*
+
+score=8; issues=Drei separate Skripte statt einheitliches Organ-System (Analyse, Strategie, Messung laufen isoliert); File-basierte JSONL-Persistenz statt robuster Datenbank-Integration; MemoryInterface nutzt nur einfache Textsuche statt semantischer/vektorbas
+
+### `last_swarm_goal`
+*03.09. 22:58 UTC · Quelle: system*
+
+Simulationen gezielt einsetzen
+
+### `dream:20260903225829:5:fe2726`
+*03.09. 22:58 UTC · Quelle: dream*
+
+Fact pruning yields zero removals because TTL policies lack access-frequency weighting, allowing stale facts to persist beyond 7 days with <3 reads.
+
+### `dream:20260903225829:4:78b884`
+*03.09. 22:58 UTC · Quelle: dream*
+
+Fallback model latency p95 exceeds 60s, violating swarm latency budgets and necessitating automatic goal decomposition into sub-goals with <30s wall-clock targets.
+
+### `dream:20260903225829:3:e2215e`
+*03.09. 22:58 UTC · Quelle: dream*
+
+Dream insights lack an automatic bridge to actionable goals, causing high-confidence lessons (>0.8) to remain inert instead of spawning drive_goals with concrete first actions.
+
+### `dream:20260903225829:2:064c3a`
+*03.09. 22:58 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation because no gate enforces implementation sketches and smoke tests before backlog entry.
+
+### `dream:20260903225829:1:b9c6d5`
+*03.09. 22:58 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, requiring per-model circuit breakers with 60s rolling windows and 120s cooldowns to prevent cascade failures.
 
 ### `dream:20260903224853:5:4a3758`
 *03.09. 22:48 UTC · Quelle: dream*
