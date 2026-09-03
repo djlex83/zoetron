@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 21:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 22:02 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events but retains facts untouched for weeks, bloating context without utility.
+- Model router success (nemotron-3-ultra OK after glm-5.2 fail) shows fallback works but lacks proactive cooldown and health scoring.
+- Drive goals signal awareness (reduce errors, update self-analysis, implement skills) but no automatic coupling to concrete skills exists.
+- Skill proposals accumulate but lack enforcement mechanism: reflex converts only when explicitly triggered, leaving backlog stale.
+- Repeated 429/502 errors across multiple free-tier models indicate systemic rate-limit saturation, not isolated model failures.
 - Pruning 26 events without fact loss demonstrates healthy memory pressure management.
 - Reflex-driven market update completed autonomously with zero errors, validating the reflex pattern for maintenance tasks.
 - Successful free-model calls exhibit 10-18s latency, indicating systematic deprioritization of free tiers.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate in a backlog because no automated pipeline promotes, canaries, and graduates them to production.
 - Silent zero-byte hand-action failures trace to unexpanded relative paths in sys.argv[1] and ZOETRON_DATA.
 - Model 429/502 errors cascade because no circuit breaker isolates failing endpoints, causing repeated hammering of rate-limited models.
-- Fact pruning removes events but no TTL mechanism exists for semantic knowledge, allowing stale analyses to persist indefinitely.
-- Reactive fallback routing works but lacks proactive capacity awareness, causing repeated 429 hammering before switch.
-- Market analyses are generated but never trigger actions, revealing a missing link between insight generation and goal activation.
-- Skill proposals accumulate (7+ in log) but none transition to implemented capabilities, indicating a broken proposal-to-production pipeline.
-- GLM-5.2 fails deterministically under rate limits (429) while Nemotron succeeds but with 2x latency variance (9-16s), creating unpredictable tail late
 
 ---
 

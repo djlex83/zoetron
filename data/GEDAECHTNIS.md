@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10822 Fakten** · Stand 2026-09-03 21:53 UTC · aktualisiert bei jedem Herzschlag
+**10827 Fakten** · Stand 2026-09-03 22:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5945
+- **dream:** 5950
 - **swarm_artifact:** 2303
 - **last_swarm_critique:** 739
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903220106:5:3920ab`
+*03.09. 22:01 UTC · Quelle: dream*
+
+Pruning removes events but retains facts untouched for weeks, bloating context without utility.
+
+### `dream:20260903220106:4:f3cb1b`
+*03.09. 22:01 UTC · Quelle: dream*
+
+Model router success (nemotron-3-ultra OK after glm-5.2 fail) shows fallback works but lacks proactive cooldown and health scoring.
+
+### `dream:20260903220106:3:e56800`
+*03.09. 22:01 UTC · Quelle: dream*
+
+Drive goals signal awareness (reduce errors, update self-analysis, implement skills) but no automatic coupling to concrete skills exists.
+
+### `dream:20260903220106:2:7d7fce`
+*03.09. 22:01 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack enforcement mechanism: reflex converts only when explicitly triggered, leaving backlog stale.
+
+### `dream:20260903220106:1:ab7f3b`
+*03.09. 22:01 UTC · Quelle: dream*
+
+Repeated 429/502 errors across multiple free-tier models indicate systemic rate-limit saturation, not isolated model failures.
 
 ### `dream:20260903215129:5:a41399`
 *03.09. 21:51 UTC · Quelle: dream*

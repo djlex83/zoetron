@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 21:51:53",
+ "stand": "2026-09-03 22:02:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -117,12 +117,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -169,6 +163,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
@@ -237,6 +237,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -274,12 +280,6 @@
   },
   {
    "tool": "neue-fähigkeiten-erlernen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -351,7 +351,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.651,
+ "haende_quote": 0.656,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 37,
@@ -359,13 +359,13 @@
   "schnitt": 5.89
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 32,
-   "schnitt": 5.84
-  },
   "bau": {
    "n": 5,
    "schnitt": 6.2
+  },
+  "analyse": {
+   "n": 31,
+   "schnitt": 5.77
   }
  }
 }
