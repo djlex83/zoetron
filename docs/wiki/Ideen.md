@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 20:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 10×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modellfehler dauerhaft reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 36 events but 0 facts, indicating fact-store grows unbounded while event log stays bounded.
+- Calibration predicted 5 cycles but actual was 9 (abs_error 4), revealing systematic under-estimation for multi-agent market-update tasks.
+- Swarm converged in 1 cycle despite model instability, proving task decomposition absorbs individual model failures.
+- Nemotron-3-ultra succeeds but at 74–162 s latency, making it a throughput bottleneck not a reliability fix.
+- Rate-limiting on glm-5.2:free follows a burst pattern (5×429 in 90s) that saturates the fallback model's capacity.
 - Reflex tool 'veraltete-infos-auffrischen.py' failed, indicating automated refresh scripts need error handling or replacement.
 - System operates under high stress (1.0) in conserve mode, severely limiting parallel task execution (max_tasks=3, max_iterations=1).
 - The simulation→revision→TOR loop (verdict: revise → 5 revisions applied → TOR grün) successfully validates artifact correctness.
@@ -51,11 +56,6 @@
 - Drive goals express meta-cognitive needs (understand errors, update insights, connect skills) but lack automated translation into concrete actions or 
 - Skill proposals accumulate without validation; the system generates many proposals but few become functional skills because there is no shadow-mode te
 - Free-tier models consistently fail with 429 rate limits and 502 upstream errors, making them unreliable without a routing layer that enforces exponent
-- Simulation verdicts consistently return 'revise' with 5+ risks, indicating the swarm planner lacks a validated, reusable pattern for 'make human inter
-- Metabolism stress hits 1.0 (conserve mode) whenever model latency spikes, throttling max_tasks to 3 and max_iterations to 1 – a hard cap on throughput
-- Skill proposals accumulate (5+ in this window) but none auto-deploy; the gap between proposal and production is a manual bottleneck.
-- Hand actions fail silently when sys.argv[1] and ZOETRON_DATA are not resolved to absolute paths before execution, wasting cycles on zero-byte runs.
-- Repeated 429 errors on z-ai/glm-5.2:free without circuit-breaking cause cascading fallbacks to high-latency models (21-44s), starving the metabolism b
 
 ---
 

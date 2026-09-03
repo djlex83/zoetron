@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10770 Fakten** · Stand 2026-09-03 20:16 UTC · aktualisiert bei jedem Herzschlag
+**10775 Fakten** · Stand 2026-09-03 20:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5905
+- **dream:** 5910
 - **swarm_artifact:** 2297
 - **last_swarm_critique:** 738
 - **anti_pattern:** 651
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903202308:5:349d9f`
+*03.09. 20:23 UTC · Quelle: dream*
+
+Pruning removed 36 events but 0 facts, indicating fact-store grows unbounded while event log stays bounded.
+
+### `dream:20260903202308:4:50c981`
+*03.09. 20:23 UTC · Quelle: dream*
+
+Calibration predicted 5 cycles but actual was 9 (abs_error 4), revealing systematic under-estimation for multi-agent market-update tasks.
+
+### `dream:20260903202308:3:45bdfd`
+*03.09. 20:23 UTC · Quelle: dream*
+
+Swarm converged in 1 cycle despite model instability, proving task decomposition absorbs individual model failures.
+
+### `dream:20260903202308:2:91beaf`
+*03.09. 20:23 UTC · Quelle: dream*
+
+Nemotron-3-ultra succeeds but at 74–162 s latency, making it a throughput bottleneck not a reliability fix.
+
+### `dream:20260903202308:1:2fc624`
+*03.09. 20:23 UTC · Quelle: dream*
+
+Rate-limiting on glm-5.2:free follows a burst pattern (5×429 in 90s) that saturates the fallback model's capacity.
 
 ### `dream:20260903201424:5:bed5e2`
 *03.09. 20:14 UTC · Quelle: dream*
