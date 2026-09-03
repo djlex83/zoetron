@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 01:21:53",
+ "stand": "2026-09-03 01:36:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -30,12 +30,6 @@
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -93,6 +87,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -108,18 +108,6 @@
    "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-erlernen.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -267,7 +255,19 @@
    "quote": 0.0
   },
   {
+   "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-erlernen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -361,19 +361,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "simulationen-in-die-praxis-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.741,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.72,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
-  "n": 30,
+  "n": 31,
   "best": 9.0,
-  "schnitt": 5.83
+  "schnitt": 5.68
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
-   "schnitt": 5.88
+   "n": 27,
+   "schnitt": 5.7
   },
   "bau": {
    "n": 4,

@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10120 Fakten** · Stand 2026-09-03 01:23 UTC · aktualisiert bei jedem Herzschlag
+**10137 Fakten** · Stand 2026-09-03 01:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5515
-- **swarm_artifact:** 2149
-- **last_swarm_critique:** 712
-- **anti_pattern:** 625
-- **last_swarm_goal:** 460
-- **strategy:** 333
+- **dream:** 5520
+- **swarm_artifact:** 2155
+- **last_swarm_critique:** 713
+- **anti_pattern:** 627
+- **last_swarm_goal:** 461
+- **strategy:** 334
 - **tool:** 125
-- **hand_result:** 109
+- **hand_result:** 110
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen konsequent :2`
+*03.09. 01:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 7]): Declarative YAML-driven state machine - Express simulations as YAML state machines (states, transitions, actions). Write a tiny interpreter (simulate.py) that loads YAML, validates schema, then executes transitions us
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Simulationen konsequent :1`
+*03.09. 01:35 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 6]): Containerized black-box orchestration - Treat each simulation as an OCI container. Write a thin orchestrator (simulate.py) that: 1) reads a spec.json (image, env, volumes, entrypoint), 2) pulls/runs container via dock
+
+### `last_swarm_critique`
+*03.09. 01:34 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: Artefakt laeuft nicht (Traceback in line 44) - harter Mangel laut Vertrag; Abhaengigkeit zoetron.simulate.Simulate existiert nicht (ImportError im Pre-Flight-Check); Abhaengigkeit zoetron.simulate.apply_revisions existiert nicht
+
+### `last_swarm_goal`
+*03.09. 01:29 UTC · Quelle: system*
+
+Simulationen konsequent anwenden
+
+### `dream:20260903012922:5:4d5962`
+*03.09. 01:29 UTC · Quelle: dream*
+
+The 190-line Python artifact executed cleanly (exit 0), proving the generate→execute→verify loop is functional.
+
+### `dream:20260903012922:4:6a7dc7`
+*03.09. 01:29 UTC · Quelle: dream*
+
+Calibration error of 1 point (predicted 6 vs actual 7) shows the system’s self-assessment is already useful.
+
+### `dream:20260903012922:3:109f3f`
+*03.09. 01:29 UTC · Quelle: dream*
+
+A single evolution cycle with three variants lifted the critic score from 7 to 8–9, confirming iterative refinement works.
+
+### `dream:20260903012922:2:3f2faa`
+*03.09. 01:29 UTC · Quelle: dream*
+
+Nvidia Nemotron 3 Ultra is the only consistently available free model but exhibits extreme latency variance (21–101 s).
+
+### `dream:20260903012922:1:2bd382`
+*03.09. 01:29 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
 
 ### `dream:20260903012124:5:7df083`
 *03.09. 01:21 UTC · Quelle: dream*

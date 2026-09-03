@@ -1,14 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 01:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 01:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60s cooldown) with 2-retry, 10s t *(hatte die Idee 6×)*
-- Add a background job that scans goals older than 7 days with no progress and either archives them or spawns a  *(hatte die Idee 6×)*
 - Implement ModelRouter with per-provider health scoring (success rate, 429 frequency, latency p95) and automati *(hatte die Idee 6×)*
 - Build RateLimitAwareScheduler that spaces requests per provider using token-bucket estimators derived from obs *(hatte die Idee 6×)*
+- Wrap every LLM call in a circuit breaker (trip after 3 consecutive failures, 60s cooldown) with 2-retry, 10s t *(hatte die Idee 5×)*
+- Add a background job that scans goals older than 7 days with no progress and either archives them or spawns a  *(hatte die Idee 5×)*
 - Implement a circuit breaker that disables any model provider for 60 seconds after 3 consecutive 429 or 502 err *(hatte die Idee 5×)*
 - Implement a model health registry that tracks per-model 429/5xx rates and p95 latency, auto-excluding endpoint *(hatte die Idee 4×)*
 - Maintain a ranked fallback roster of models across at least 3 providers (e.g., Poolside, NVIDIA, Google) so a  *(hatte die Idee 4×)*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 17×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The 190-line Python artifact executed cleanly (exit 0), proving the generate→execute→verify loop is functional.
+- Calibration error of 1 point (predicted 6 vs actual 7) shows the system’s self-assessment is already useful.
+- A single evolution cycle with three variants lifted the critic score from 7 to 8–9, confirming iterative refinement works.
+- Nvidia Nemotron 3 Ultra is the only consistently available free model but exhibits extreme latency variance (21–101 s).
+- Free-tier models on OpenRouter suffer pervasive 429 rate-limiting, making them unreliable as primary providers.
 - Three concurrent drive goals (failure, stale, gap) compete for tiny budgets without explicit prioritization or resource allocation.
 - System stress at 1.0 triggers conserve mode (max 1 iteration), preventing iterative error recovery exactly when it's needed most.
 - Reflex tools are deployed without pre-flight validation, causing immediate execution failures (e.g., modellfehler-deutlich-reduzieren.py).
@@ -51,11 +56,6 @@
 - Reflex tools fail due to filesystem path resolution errors ("nichts gelesen - der Lauf endete mit 0"), showing that automation scripts assume incorrec
 - Three identical drive goals (reduce model errors, complete market analysis, build proposed skills) recur across cycles without convergence, revealing 
 - The z-ai/glm-5.2 model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating provider-specific quota exhaus
-- The recurring drive goal of reducing model errors across multiple sessions signals that error resilience is the highest-priority durable capability to
-- Event pruning removed 33 entries while preserving all facts, indicating a tiered retention strategy exists but its criteria and effectiveness need ref
-- Latency varies nearly fourfold between successful models (5.6s to 20.7s), meaning naive model selection wastes time and resources without latency-awar
-- Reflex-based execution converged successfully but produced a null score, exposing that outcome validation is missing from the execution pipeline.
-- Rate-limit (429) and overload (502) errors across five different providers reveal that the absence of any fallback or circuit-breaking mechanism is th
 
 ---
 
