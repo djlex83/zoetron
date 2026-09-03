@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 15:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 15:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
-- Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions execute reliably in ~1s with zero errors, confirming the execution sandbox is not the bottleneck.
+- Calibration error of +3 (predicted 4 vs actual 7) indicates systematic underestimation of task complexity for market analysis artifacts.
+- Evolutionary refinement raised artifact scores from 7 to 8-9 by consolidating three inconsistent code blocks into a single coherent implementation.
+- inclusionai/ling-3.0-flash-fin:free is the only model delivering consistent successes (13-19s latency) under current quota constraints.
+- Free-tier models on OpenRouter (Gemma, GLM) consistently hit 429 rate limits, making them unreliable for production workflows.
 - Token throughput on the working model varies 3× (479→2732 input tokens) with no corresponding latency scaling, suggesting queueing or cold-start effec
 - Simulation-driven revision loops (5 risks → 5 revisions → 3 applied) indicate over-generation of corrections relative to actionable changes.
 - The system retries rate-limited models repeatedly without backoff or fallback, wasting cycles and amplifying quota exhaustion.
@@ -51,11 +56,6 @@
 - Only one model (inclusionai/ling-3.0-flash-fin) consistently succeeds, creating a single point of failure despite apparent provider diversity.
 - The system lacks circuit breakers and exponential backoff, causing repeated hammering of already-failing endpoints instead of graceful degradation.
 - Rate limits (429) and upstream overloads (502) cascade across multiple providers simultaneously, indicating shared infrastructure bottlenecks rather t
-- The system's conserve-mode budget constraints (max 1 iteration) prevent self-improvement cycles from completing, creating a deadlock where the system 
-- Relative path resolution without canonical validation causes silent execution failures when the working directory or environment variables don't match
-- Generated skill proposals and dream insights remain unimplemented because there is no pipeline connecting idea generation to validated deployment.
-- Stale analysis and market data accumulate systematically because no automated refresh mechanism exists to detect and act on outdated information.
-- Recurring 429 rate-limit errors from the glm-5.2 model reveal the absence of a circuit breaker and fallback chain, causing cascading failures whenever
 
 ---
 
