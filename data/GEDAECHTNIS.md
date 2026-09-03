@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10729 Fakten** · Stand 2026-09-03 19:14 UTC · aktualisiert bei jedem Herzschlag
+**10743 Fakten** · Stand 2026-09-03 19:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5885
-- **swarm_artifact:** 2285
-- **last_swarm_critique:** 736
+- **dream:** 5890
+- **swarm_artifact:** 2291
+- **last_swarm_critique:** 737
 - **anti_pattern:** 649
-- **last_swarm_goal:** 484
+- **last_swarm_goal:** 485
 - **strategy:** 345
-- **tool:** 135
+- **tool:** 136
 - **hand_result:** 118
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:veraltete-marktinfos-aktualisieren`
+*03.09. 19:30 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Marktinfos aktualisieren'. Datei: data/tools/veraltete-marktinfos-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*03.09. 19:30 UTC · Quelle: critic*
+
+score=9; issues=Update-Skript implementiert nur 2 von 15+ katalogisierten Quellen (Yahoo, CoinGecko) - Framework für weitere Quellen vorhanden, aber Fetcher fehlen; Keine Integration der Priorisierungs-Logik aus Artefakt 2 in Artefakt 3 (Quellen-Auswahl hardco
+
+### `last_swarm_goal`
+*03.09. 19:21 UTC · Quelle: system*
+
+Veraltete Marktinfos aktualisieren
+
+### `dream:20260903192131:5:1fe8ad`
+*03.09. 19:21 UTC · Quelle: dream*
+
+Reflex-driven repair (wissensgraph-verknüpfungen-reparieren.py) converges in one shot when the tool matches the failure mode precisely.
+
+### `dream:20260903192131:4:3d3c91`
+*03.09. 19:21 UTC · Quelle: dream*
+
+Model latency variance (19s vs 47s) correlates with parameter count, not quality—smaller models succeed faster when they succeed.
+
+### `dream:20260903192131:3:85e222`
+*03.09. 19:21 UTC · Quelle: dream*
+
+Stale market-analysis artifacts persist across cycles because no TTL-based garbage collector prunes drive-goal outputs after their relevance window.
+
+### `dream:20260903192131:2:8b0ee5`
+*03.09. 19:21 UTC · Quelle: dream*
+
+Skill proposals accumulate (55+) without implementation because no automatic promotion pipeline validates and deploys them against live tasks.
+
+### `dream:20260903192131:1:0a13a7`
+*03.09. 19:21 UTC · Quelle: dream*
+
+Rate limit errors (429) cascade across multiple free-tier providers simultaneously, indicating shared infrastructure quotas rather than isolated model failures.
 
 ### `dream:20260903191238:5:323c0c`
 *03.09. 19:12 UTC · Quelle: dream*

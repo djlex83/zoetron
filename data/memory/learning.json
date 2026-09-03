@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-03 19:13:11",
+ "stand": "2026-09-03 19:30:12",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -48,12 +48,6 @@
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-in-handeln-umsetzen.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -160,6 +154,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-in-handeln-umsetzen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -355,19 +355,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "veraltete-infos-auffrischen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.668,
- "simulationen_angewandt": 34,
+ "haende_quote": 0.664,
+ "simulationen_angewandt": 35,
  "swarm_scores": {
-  "n": 36,
+  "n": 37,
   "best": 9.0,
-  "schnitt": 6.14
+  "schnitt": 6.22
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 31,
-   "schnitt": 6.13
+   "n": 32,
+   "schnitt": 6.22
   },
   "bau": {
    "n": 5,
