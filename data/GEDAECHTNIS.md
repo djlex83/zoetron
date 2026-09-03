@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10592 Fakten** · Stand 2026-09-03 15:31 UTC · aktualisiert bei jedem Herzschlag
+**10597 Fakten** · Stand 2026-09-03 15:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5795
+- **dream:** 5800
 - **swarm_artifact:** 2255
 - **last_swarm_critique:** 731
 - **anti_pattern:** 647
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903153848:5:a35d4b`
+*03.09. 15:38 UTC · Quelle: dream*
+
+Upstream service errors (502 from Nvidia) are a secondary intermittent failure mode requiring automatic fallback to alternative models.
+
+### `dream:20260903153848:4:2f35b0`
+*03.09. 15:38 UTC · Quelle: dream*
+
+The evolutionary variant loop (generate → score → select) reliably improves output quality from 0/10 to 6-9/10, confirming that multi-variant exploration is essential for this task type.
+
+### `dream:20260903153848:3:34d4d4`
+*03.09. 15:38 UTC · Quelle: dream*
+
+Lower-tier models (inclusionai/ling-3.0-flash-fin) achieve reliable success at 5-6s latency, while high-capacity models (nemotron-550b) succeed but with latency spikes up to 163s and occasional 502 upstream overloads.
+
+### `dream:20260903153848:2:c920c6`
+*03.09. 15:38 UTC · Quelle: dream*
+
+Prose-only artifacts fail to converge on the task goal (score 0/10); executable Python code blocks are a necessary condition for meaningful scoring (variants reached 6-9/10).
+
+### `dream:20260903153848:1:ea0455`
+*03.09. 15:38 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode, causing 100% failure on z-ai/glm-5.2 (6/6) and all google/gemma calls — these models must be deprioritized or gated behind backoff.
 
 ### `dream:20260903152916:5:ed2324`
 *03.09. 15:29 UTC · Quelle: dream*

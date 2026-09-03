@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 15:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 15:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Upstream service errors (502 from Nvidia) are a secondary intermittent failure mode requiring automatic fallback to alternative models.
+- The evolutionary variant loop (generate → score → select) reliably improves output quality from 0/10 to 6-9/10, confirming that multi-variant explorat
+- Lower-tier models (inclusionai/ling-3.0-flash-fin) achieve reliable success at 5-6s latency, while high-capacity models (nemotron-550b) succeed but wi
+- Prose-only artifacts fail to converge on the task goal (score 0/10); executable Python code blocks are a necessary condition for meaningful scoring (v
+- Rate limiting (HTTP 429) is the dominant failure mode, causing 100% failure on z-ai/glm-5.2 (6/6) and all google/gemma calls — these models must be de
 - Repeated reflex, swarm, and simulation attempts for the same goal reveal a missing unified skill-deployment pipeline.
 - Simulation-based revision (3 risks, 3 revisions) catches defects pre-deployment but only works when a healthy model is available.
 - Metabolism stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), so any multi-step workflow must be serialized and idempotent.
@@ -51,11 +56,6 @@
 - Evolutionary refinement raised artifact scores from 7 to 8-9 by consolidating three inconsistent code blocks into a single coherent implementation.
 - inclusionai/ling-3.0-flash-fin:free is the only model delivering consistent successes (13-19s latency) under current quota constraints.
 - Free-tier models on OpenRouter (Gemma, GLM) consistently hit 429 rate limits, making them unreliable for production workflows.
-- Token throughput on the working model varies 3× (479→2732 input tokens) with no corresponding latency scaling, suggesting queueing or cold-start effec
-- Simulation-driven revision loops (5 risks → 5 revisions → 3 applied) indicate over-generation of corrections relative to actionable changes.
-- The system retries rate-limited models repeatedly without backoff or fallback, wasting cycles and amplifying quota exhaustion.
-- The inclusionai/ling-3.0-flash-fin:free model succeeds where others fail but exhibits high latency variance (7.5–23.5s) unrelated to token volume.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
 ---
 
