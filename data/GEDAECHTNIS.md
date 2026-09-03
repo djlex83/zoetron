@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10428 Fakten** · Stand 2026-09-03 10:09 UTC · aktualisiert bei jedem Herzschlag
+**10433 Fakten** · Stand 2026-09-03 10:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5695
+- **dream:** 5700
 - **swarm_artifact:** 2223
 - **last_swarm_critique:** 725
 - **anti_pattern:** 637
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260903101619:5:fcd94a`
+*03.09. 10:16 UTC · Quelle: dream*
+
+Hand actions (shell commands) complete in ~1.2s with zero failures, confirming they are a reliable low-latency primitive for file I/O.
+
+### `dream:20260903101619:4:a7bcd2`
+*03.09. 10:16 UTC · Quelle: dream*
+
+Calibration error of 1 (predicted 8 vs actual 9) on a 10-point scale suggests the predictor is well-calibrated for this task class.
+
+### `dream:20260903101619:3:79c5b9`
+*03.09. 10:16 UTC · Quelle: dream*
+
+The simulation-driven goal achieved convergence in a single swarm cycle after 5 revisions, indicating revision loops are more critical than iteration count.
+
+### `dream:20260903101619:2:f880c6`
+*03.09. 10:16 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra succeeds consistently but exhibits 60-150s latency, while inclusionai/ling-3.0-flash-fin delivers comparable success at 13s latency.
+
+### `dream:20260903101619:1:845f32`
+*03.09. 10:16 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer pervasive 429 rate limits, making them unreliable for production workflows without fallback chains.
 
 ### `last_swarm_critique`
 *03.09. 10:07 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions (shell commands) complete in ~1.2s with zero failures, confirming they are a reliable low-latency primitive for file I/O.
+- Calibration error of 1 (predicted 8 vs actual 9) on a 10-point scale suggests the predictor is well-calibrated for this task class.
+- The simulation-driven goal achieved convergence in a single swarm cycle after 5 revisions, indicating revision loops are more critical than iteration 
+- nvidia/nemotron-3-ultra succeeds consistently but exhibits 60-150s latency, while inclusionai/ling-3.0-flash-fin delivers comparable success at 13s la
+- Free-tier models on OpenRouter suffer pervasive 429 rate limits, making them unreliable for production workflows without fallback chains.
 - Drive goals for model-error reduction, stale analysis reuse, and memory combination point to three orthogonal reliability gaps: runtime resilience, kn
 - Pruning removed 26 events but zero facts, suggesting episodic noise accumulates faster than semantic knowledge.
 - Self-diagnosis reports zero organ errors while external model calls fail at >80% rate, revealing a blind spot in monitoring scope.
@@ -51,11 +56,6 @@
 - The system accumulates skill proposals (circuit breaker, health scoreboard, backoff) but lacks an execution pipeline to turn them into deployed capabi
 - Latency variance for the same model (nemotron: 47s vs 77s) indicates upstream instability that simple retries cannot fix.
 - Free-tier models consistently hit 429 rate limits within minutes, making them unreliable as primary providers without aggressive quota management.
-- The reflex mechanism successfully converts dream goals into converged actions, proving the dream-to-action pipeline is functional when a valid tool re
-- Pruning removes raw events (57 then 10) while zero facts are consolidated, indicating the system stores ephemeral data but never extracts durable know
-- Skill proposals accumulate across cycles (10 total) but none are validated or deployed, revealing a gap between reactive idea generation and automated
-- The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits 2.5x latency variance (25s–63s), showing that a single fallback without h
-- Repeated 429 rate-limit failures on z-ai/glm-5.2:free without backoff trigger cascading goal cycles, proving that unprotected external dependencies ar
 
 ---
 
