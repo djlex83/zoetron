@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 09:49:58",
+ "stand": "2026-09-03 10:07:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -201,8 +201,8 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltete-infos-auffrischen.py",
-   "laeufe": 1,
+   "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
+   "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -357,12 +357,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-skills-wirklich-testen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -387,17 +381,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.679,
+ "haende_quote": 0.68,
  "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 34,
+  "n": 35,
   "best": 9.0,
-  "schnitt": 6.18
+  "schnitt": 6.26
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 30,
-   "schnitt": 6.27
+   "schnitt": 6.3
   },
   "bau": {
    "n": 4,

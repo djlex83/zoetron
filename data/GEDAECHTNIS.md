@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10415 Fakten** · Stand 2026-09-03 09:51 UTC · aktualisiert bei jedem Herzschlag
+**10428 Fakten** · Stand 2026-09-03 10:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 5690
-- **swarm_artifact:** 2217
-- **last_swarm_critique:** 724
+- **dream:** 5695
+- **swarm_artifact:** 2223
+- **last_swarm_critique:** 725
 - **anti_pattern:** 637
-- **last_swarm_goal:** 472
+- **last_swarm_goal:** 473
 - **strategy:** 339
 - **tool:** 131
 - **hand_result:** 113
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*03.09. 10:07 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*03.09. 09:59 UTC · Quelle: system*
+
+Simulationen öfter in die Praxis umsetzen
+
+### `dream:20260903095818:5:12fcf0`
+*03.09. 09:58 UTC · Quelle: dream*
+
+Drive goals for model-error reduction, stale analysis reuse, and memory combination point to three orthogonal reliability gaps: runtime resilience, knowledge activation, and creative synthesis.
+
+### `dream:20260903095818:4:808ac1`
+*03.09. 09:58 UTC · Quelle: dream*
+
+Pruning removed 26 events but zero facts, suggesting episodic noise accumulates faster than semantic knowledge.
+
+### `dream:20260903095818:3:d03664`
+*03.09. 09:58 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external model calls fail at >80% rate, revealing a blind spot in monitoring scope.
+
+### `dream:20260903095818:2:90adac`
+*03.09. 09:58 UTC · Quelle: dream*
+
+Existing skill proposals for circuit breakers, health-aware routing, and request middleware directly address the observed failure modes but remain unimplemented.
+
+### `dream:20260903095818:1:2c8056`
+*03.09. 09:58 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) across multiple providers indicate systemic quota exhaustion rather than isolated failures.
 
 ### `dream:20260903094858:5:640f2d`
 *03.09. 09:48 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 09:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 10:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals for model-error reduction, stale analysis reuse, and memory combination point to three orthogonal reliability gaps: runtime resilience, kn
+- Pruning removed 26 events but zero facts, suggesting episodic noise accumulates faster than semantic knowledge.
+- Self-diagnosis reports zero organ errors while external model calls fail at >80% rate, revealing a blind spot in monitoring scope.
+- Existing skill proposals for circuit breakers, health-aware routing, and request middleware directly address the observed failure modes but remain uni
+- Rate limiting (429) and upstream overload (502) across multiple providers indicate systemic quota exhaustion rather than isolated failures.
 - Self-diagnosis reports zero organ errors while model failure rate exceeds 70%, revealing a blind spot in health monitoring granularity.
 - Fallback chains succeed eventually but waste 2-3 failed attempts per request, burning latency budget before reaching a healthy model.
 - The system accumulates skill proposals (circuit breaker, health scoreboard, backoff) but lacks an execution pipeline to turn them into deployed capabi
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across cycles (10 total) but none are validated or deployed, revealing a gap between reactive idea generation and automated
 - The fallback model nvidia/nemotron-3-ultra-550b-a55b:free works but exhibits 2.5x latency variance (25s–63s), showing that a single fallback without h
 - Repeated 429 rate-limit failures on z-ai/glm-5.2:free without backoff trigger cascading goal cycles, proving that unprotected external dependencies ar
-- Skill proposals accumulate but reflex tooling (traum-ideen-zu-fähigkeiten-machen.py) fails to materialize them.
-- System operates at max stress (1.0) in 'conserve' mode with 1-iteration budget, yet still spawns swarms that fail.
-- hand_action fails on path resolution (relative vs absolute, env var ZOETRON_DATA), causing silent zero-byte reads.
-- Provider health is highly asymmetric: nemotron-3-ultra and ling-3.0-flash-fin succeed while glm-5.2, gemma-4 variants consistently fail.
-- Rate limiting (HTTP 429) is the dominant failure mode across 4+ providers, indicating missing client-side rate awareness and backoff.
 
 ---
 
