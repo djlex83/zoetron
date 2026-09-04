@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11536 Fakten** · Stand 2026-09-04 21:35 UTC · aktualisiert bei jedem Herzschlag
+**11536 Fakten** · Stand 2026-09-04 21:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6504
-- **swarm_artifact:** 2387
+- **dream:** 6509
+- **swarm_artifact:** 2383
 - **last_swarm_critique:** 757
 - **anti_pattern:** 669
 - **last_swarm_goal:** 505
-- **strategy:** 354
+- **strategy:** 353
 - **tool:** 151
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904214305:5:576a41`
+*04.09. 21:43 UTC · Quelle: dream*
+
+Memory pruning removes events but retains facts, suggesting fact staleness detection is a separate unsolved problem.
+
+### `dream:20260904214305:4:f35be8`
+*04.09. 21:43 UTC · Quelle: dream*
+
+Proactive error-handling proposals (circuit breakers, dynamic routing, pre-flight checks) indicate systemic reliability gaps rather than isolated incidents.
+
+### `dream:20260904214305:3:24939f`
+*04.09. 21:43 UTC · Quelle: dream*
+
+Stale swarm artifacts accumulate silently and block new work until explicit cleanup reflexes are triggered.
+
+### `dream:20260904214305:2:81d02c`
+*04.09. 21:43 UTC · Quelle: dream*
+
+Latency variance between available models (4.5s vs 6.7s) creates unpredictable execution budgets for time-constrained sub-tasks.
+
+### `dream:20260904214305:1:9d28ff`
+*04.09. 21:43 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 upstream errors) that cascade across primary and fallback models simultaneously.
 
 ### `dream:20260904213308:5:5e432b`
 *04.09. 21:33 UTC · Quelle: dream*

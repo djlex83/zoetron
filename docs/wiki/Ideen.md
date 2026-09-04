@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 21:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 21:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning removes events but retains facts, suggesting fact staleness detection is a separate unsolved problem.
+- Proactive error-handling proposals (circuit breakers, dynamic routing, pre-flight checks) indicate systemic reliability gaps rather than isolated inci
+- Stale swarm artifacts accumulate silently and block new work until explicit cleanup reflexes are triggered.
+- Latency variance between available models (4.5s vs 6.7s) creates unpredictable execution budgets for time-constrained sub-tasks.
+- Free-tier model endpoints exhibit correlated failure modes (429 rate limits, 502 upstream errors) that cascade across primary and fallback models simu
 - Automatic skill proposals (circuit breaker, dynamic routing) emerge reactively but lack proactive health-checking before model selection.
 - Event logs accumulate 91x faster than facts, indicating sensory noise dominates the memory stream and requires upstream filtering.
 - The evolution loop stalls at 7/10 because the critic detects simulated sense data but the builder cannot access real-time verification sources.
@@ -51,11 +56,6 @@
 - The system eventually succeeded by falling back to inclusionai/ling-3.0-flash-fin:free (7s latency, 8882 input tokens), demonstrating that rapid model
 - The dominant failure mode across this session was HTTP 429 from z-ai/glm-5.2:free and Google models, while Nvidia models succeeded but introduced high
 - Free-tier models on OpenRouter are subject to aggressive rate limiting (429 errors), and retrying the same failing model repeatedly wastes critical ti
-- Circuit breakers and health registries address symptoms but only close the reliability gap when paired with disciplined execution of proposed solution
-- Reflex-driven maintenance (like cleaning stale swarm data) proves effective and should be generalized to other recurring housekeeping tasks.
-- The persistent gap between skill proposals and actual implementation is the primary bottleneck preventing reliability improvements.
-- Model health is ephemeral — a successful response does not guarantee future reliability, requiring continuous monitoring rather than one-time assessme
-- Rate-limit errors (429) are the dominant and recurring failure mode across multiple providers, indicating a systemic capacity constraint rather than i
 
 ---
 
