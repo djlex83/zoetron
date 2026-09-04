@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11446 Fakten** · Stand 2026-09-04 18:29 UTC · aktualisiert bei jedem Herzschlag
+**11451 Fakten** · Stand 2026-09-04 18:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6435
+- **dream:** 6440
 - **swarm_artifact:** 2374
 - **last_swarm_critique:** 754
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904183733:5:511323`
+*04.09. 18:37 UTC · Quelle: dream*
+
+Simulation approved 'go' despite 3 risks/3 revisions; artifact (206 lines Python) ran successfully, validating risk tolerance.
+
+### `dream:20260904183733:4:27b192`
+*04.09. 18:37 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model with consistent low-latency success (7-11s) under load.
+
+### `dream:20260904183733:3:344f1b`
+*04.09. 18:37 UTC · Quelle: dream*
+
+Under conserve budget (max_tasks=3), the system still wastes iterations on repeatedly failing models (z-ai/glm-5.2 failed 5+ times).
+
+### `dream:20260904183733:2:f46e82`
+*04.09. 18:37 UTC · Quelle: dream*
+
+Local hand_action execution (1.6s) is 5-75x faster and more reliable than any API model call (7-123s).
+
+### `dream:20260904183733:1:fac650`
+*04.09. 18:37 UTC · Quelle: dream*
+
+Free-tier models exhibit pervasive rate-limiting (429) and upstream overload (502) making them unreliable as primary dependencies.
 
 ### `dream:20260904182632:5:5878f7`
 *04.09. 18:26 UTC · Quelle: dream*

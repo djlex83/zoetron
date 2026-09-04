@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 18:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 18:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation approved 'go' despite 3 risks/3 revisions; artifact (206 lines Python) ran successfully, validating risk tolerance.
+- inclusionai/ling-3.0-flash-fin:free is the only model with consistent low-latency success (7-11s) under load.
+- Under conserve budget (max_tasks=3), the system still wastes iterations on repeatedly failing models (z-ai/glm-5.2 failed 5+ times).
+- Local hand_action execution (1.6s) is 5-75x faster and more reliable than any API model call (7-123s).
+- Free-tier models exhibit pervasive rate-limiting (429) and upstream overload (502) making them unreliable as primary dependencies.
 - Simulation catches risks (3) and demands revisions (3) but the system proceeds anyway under high stress, risking further failures.
 - Previously proposed skills (dynamic router, quota tracker, automatic fallback) remain unimplemented despite repeated 429 failures across sessions.
 - Relative path handling fails when the working directory diverges from ZOETRON_DATA, causing silent zero-byte reads in hand actions.
@@ -51,11 +56,6 @@
 - Swarm convergence in a single cycle with score 8 demonstrates effective role distribution (planner/builder/critic), but lacks an early-stopping metric
 - The calibration abs_error of 1 on "Veraltetes Wissen erneuern" reveals a persistent prediction gap that a learning calibration head could systematical
 - Repeated 429 rate-limit errors from z-ai/glm-5.2 indicate that reactive fallback is insufficient; models must be proactively blacklisted with cooldown
-- Calibration error of 1 point (predicted 7 vs actual 8) shows the predictor is well-tuned for this task class.
-- Single-cycle swarm convergence with fixed roles (1 planner, 3 builders, 1 critic) reliably produces score-8 artifacts for knowledge-renewal tasks.
-- Nvidia Nemotron exhibits bimodal failure: extreme latency (97s) and 502 upstream overload errors, indicating unstable capacity.
-- inclusionai/ling-3.0-flash-fin:free succeeds repeatedly at ~2s latency, establishing it as the only consistently available free model for this workloa
-- Free-tier models consistently fail with 429 rate-limit errors across providers (GLM, Gemma, Nemotron), making them unreliable as primary workers.
 
 ---
 

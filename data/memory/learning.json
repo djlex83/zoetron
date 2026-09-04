@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 18:27:20",
+ "stand": "2026-09-04 18:37:48",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -201,12 +201,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modell-fehler-deutlich-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -403,6 +397,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.764,
