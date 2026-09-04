@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 23:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 23:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
-- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency variance (13-43s) for the working model creates unpredictable iteration budgets, breaking time-boxed planning.
+- Hand actions fail silently (exit 1, no error), pointing to unchecked subprocess assumptions in tool wrappers.
+- Evolution runs show critic artifacts breaking with premature returns, suggesting validation gates are missing before artifact commit.
+- Swarm executions repeatedly stall at score 7 without convergence, indicating insufficient critic feedback or builder capability gaps.
+- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors, making it unreliable for production use.
 - Evolution critic flagged 'Artifact 2 bricht mit return' indicating premature termination is a recurring code-generation defect.
 - Calibration error of +2 (predicted 5 risks, actual 7) suggests systematic underestimation of complexity in gap-closing tasks.
 - inclusionai/ling-3.0-flash-fin:free is the only model with consistent sub-10s latency and zero observed failures across multiple calls.
@@ -51,11 +56,6 @@
 - Swarm launch proceeds despite reflex tool failure (ok=false), propagating faulty preconditions into distributed execution.
 - Conservation metabolism (stress=1.0, max_iterations=1) eliminates retry capacity, turning transient failures into permanent blocks.
 - Free-tier model endpoints exhibit systematic unreliability (429 rate limits, 502 upstream overload) requiring provider-aware fallback chains.
-- Self-diagnosis reports zero organ errors even during active failure cascades, meaning the diagnostic layer lacks visibility into external dependency f
-- The reflex system successfully closes open fronts and swarm artifacts, but stale group tasks and untested skill proposals continue to accumulate, show
-- 18 events were pruned while 0 facts were pruned, suggesting that event-level noise accumulates faster than core knowledge, and pruning policy should d
-- Fallback to nvidia/nemotron-3-ultra-550b-a55b:free succeeds but with higher latency (14-18s), indicating that failover paths must be pre-validated for
-- The z-ai/glm-5.2:free endpoint repeatedly fails with 429 rate-limit errors, revealing that relying on a single model without proactive health checks c
 
 ---
 

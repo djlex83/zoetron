@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11589 Fakten** · Stand 2026-09-04 23:39 UTC · aktualisiert bei jedem Herzschlag
+**11594 Fakten** · Stand 2026-09-04 23:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6549
+- **dream:** 6554
 - **swarm_artifact:** 2386
 - **last_swarm_critique:** 760
 - **anti_pattern:** 671
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904234632:5:20ae51`
+*04.09. 23:46 UTC · Quelle: dream*
+
+Model latency variance (13-43s) for the working model creates unpredictable iteration budgets, breaking time-boxed planning.
+
+### `dream:20260904234632:4:0bdd10`
+*04.09. 23:46 UTC · Quelle: dream*
+
+Hand actions fail silently (exit 1, no error), pointing to unchecked subprocess assumptions in tool wrappers.
+
+### `dream:20260904234632:3:c68dd0`
+*04.09. 23:46 UTC · Quelle: dream*
+
+Evolution runs show critic artifacts breaking with premature returns, suggesting validation gates are missing before artifact commit.
+
+### `dream:20260904234632:2:8c0a5e`
+*04.09. 23:46 UTC · Quelle: dream*
+
+Swarm executions repeatedly stall at score 7 without convergence, indicating insufficient critic feedback or builder capability gaps.
+
+### `dream:20260904234632:1:59a4f4`
+*04.09. 23:46 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors, making it unreliable for production use.
 
 ### `dream:20260904233625:5:ae92e3`
 *04.09. 23:36 UTC · Quelle: dream*
