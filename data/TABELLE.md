@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7737 Neuronen · 565171 bewertete Synapsen
+Stand: 7738 Neuronen · 566081 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -15,16 +15,16 @@ Stand: 7737 Neuronen · 565171 bewertete Synapsen
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 655 | 0.24 |
 | 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 649 | 0.23 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 659 | 0.23 |
-| 6 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 649 | 0.23 |
+| 6 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 650 | 0.23 |
 | 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 544 | 0.27 |
 | 8 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 570 | 0.25 |
 | 9 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 561 | 0.26 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 544 | 0.27 |
-| 11 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 584 | 0.24 |
-| 12 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 557 | 0.25 |
-| 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 583 | 0.24 |
-| 14 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is the sole rel… | 508 | 0.27 |
-| 15 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 570 | 0.24 |
+| 11 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 585 | 0.24 |
+| 12 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 584 | 0.24 |
+| 13 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 557 | 0.25 |
+| 14 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 571 | 0.24 |
+| 15 | 💭 | The nvidia/nemotron-3-ultra-550b-a55b:free model is the sole rel… | 508 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 
@@ -41,9 +41,9 @@ Stand: 7737 Neuronen · 565171 bewertete Synapsen
 | 7 | **0.55** | 💬 Träume in echte Verbesserungen verwandeln — {"… | 💬 Fakten-Ausbeute pro Beat verdreifachen ohne Qu… |
 | 8 | **0.55** | 🛠 „Identify outdated market analyses in knowledg… | 🛠 „Identify outdated analysis entries in semanti… |
 | 9 | **0.55** | 💭 Fallback to nvidia/nemotron-3-ultra succeeds b… | 💭 Model nvidia/nemotron-3-ultra-550b-a55b:free s… |
-| 10 | **0.55** | 💭 The swarm architecture with planner/builder/cr… | 💭 Swarm convergence in a single cycle with role … |
-| 11 | **0.54** | 💭 Swarm consistently stalls at score 6/10 with c… | 💭 Evolutionary variant selection improved score … |
-| 12 | **0.54** | 💭 The calibration swarm fails to converge (score… | 💭 The swarm failed to converge (score 4, delta 0… |
-| 13 | **0.54** | 💭 Prune runs removed 0 facts and 0 events, provi… | 💭 A prune run removed 0 of ~1700 stored facts, p… |
-| 14 | **0.54** | 💭 Automatic model blocking after 3 consecutive f… | 💭 Automatic model blocking after three consecuti… |
-| 15 | **0.54** | 💭 „Inventory the 26-fact knowledge base“. Ergebn… | 💭 „Consolidate redundant or conflicting facts“. … |
+| 10 | **0.55** | 💭 Self-diagnosis and pruning report zero issues … | 💭 Self-diagnosis and pruning reported zero issue… |
+| 11 | **0.55** | 💭 The swarm architecture with planner/builder/cr… | 💭 Swarm convergence in a single cycle with role … |
+| 12 | **0.54** | 💭 Swarm consistently stalls at score 6/10 with c… | 💭 Evolutionary variant selection improved score … |
+| 13 | **0.54** | 💭 The calibration swarm fails to converge (score… | 💭 The swarm failed to converge (score 4, delta 0… |
+| 14 | **0.54** | 💭 Prune runs removed 0 facts and 0 events, provi… | 💭 A prune run removed 0 of ~1700 stored facts, p… |
+| 15 | **0.54** | 💭 Automatic model blocking after 3 consecutive f… | 💭 Automatic model blocking after three consecuti… |

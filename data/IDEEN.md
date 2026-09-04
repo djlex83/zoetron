@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 02:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 02:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple skill proposals target the same failure modes (routing, validation, staleness, logging, calibration) but lack integration into a unified reli
+- Self-diagnosis and pruning reported zero issues despite cascading model failures, indicating monitoring blind spots for external API degradation.
+- Reflex-driven execution (marktanalyse-endlich-nutzen.py) converged cleanly while model-dependent steps failed, proving deterministic tools outperform 
+- Successful model calls (Nemotron, Ling) show 15-24s latency with 400-1300 input tokens, establishing a baseline for timeout budgets.
+- Free-tier models consistently hit 429 rate limits and 502 overload errors, making single-model reliance unreliable for production tasks.
 - The recurrence of identical failure patterns across cycles reveals that reactive goal-setting alone does not prevent repeated failures without concret
 - Pruning events without expiring stale facts leaves outdated knowledge in the system, creating a false sense of freshness.
 - Skill proposals generated without an execution tracker are likely to remain unimplemented, turning potential improvements into forgotten artifacts.
@@ -51,11 +56,6 @@
 - Market analyses produce outputs that stall without a forced handoff mechanism that translates findings into concrete action steps.
 - Skill proposals accumulate but rarely execute because no automated pipeline converts proposals into implemented, tested code.
 - Free-tier models consistently fail under load with 429/502 errors, making them unreliable for production-critical paths.
-- New skill proposals directly address observed failure modes (circuit breakers, validators, detectors, replay buffers), showing meta-learning but riski
-- Self-diagnosis and pruning operate cleanly (0 organ errors, 17-28 events pruned), but model-layer observability is missing (no selection/error/latency
-- Stale work (market data, swarm analyses) persists until manual reflex intervention; no automated staleness detection triggers refresh.
-- Skill proposals accumulate without implementation gates; a drive goal explicitly targets this gap, indicating proposal-to-production pipeline is broke
-- Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 rate-limit errors, forcing fallback to 'nvidia/nemotron-3-ultra' with 2-3x latency var
 
 ---
 

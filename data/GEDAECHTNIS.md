@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10968 Fakten** · Stand 2026-09-04 02:25 UTC · aktualisiert bei jedem Herzschlag
+**10973 Fakten** · Stand 2026-09-04 02:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6070
+- **dream:** 6075
 - **swarm_artifact:** 2315
 - **last_swarm_critique:** 741
 - **anti_pattern:** 655
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904023237:5:d83f13`
+*04.09. 02:32 UTC · Quelle: dream*
+
+Multiple skill proposals target the same failure modes (routing, validation, staleness, logging, calibration) but lack integration into a unified reliability layer.
+
+### `dream:20260904023237:4:387018`
+*04.09. 02:32 UTC · Quelle: dream*
+
+Self-diagnosis and pruning reported zero issues despite cascading model failures, indicating monitoring blind spots for external API degradation.
+
+### `dream:20260904023237:3:026b80`
+*04.09. 02:32 UTC · Quelle: dream*
+
+Reflex-driven execution (marktanalyse-endlich-nutzen.py) converged cleanly while model-dependent steps failed, proving deterministic tools outperform probabilistic LLMs for structured workflows.
+
+### `dream:20260904023237:2:eaa573`
+*04.09. 02:32 UTC · Quelle: dream*
+
+Successful model calls (Nemotron, Ling) show 15-24s latency with 400-1300 input tokens, establishing a baseline for timeout budgets.
+
+### `dream:20260904023237:1:20a13f`
+*04.09. 02:32 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits and 502 overload errors, making single-model reliance unreliable for production tasks.
 
 ### `dream:20260904022241:5:d8d062`
 *04.09. 02:22 UTC · Quelle: dream*
