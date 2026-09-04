@@ -1,11 +1,17 @@
 {
- "stand": "2026-09-04 14:29:04",
+ "stand": "2026-09-04 14:47:05",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 10,
    "erfolge": 10,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -16,12 +22,6 @@
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -102,12 +102,6 @@
    "tool": "häufige-modellfehler-besser-verstehen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -352,6 +346,12 @@
   },
   {
    "tool": "fehlerquellen-systematisch-beheben.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

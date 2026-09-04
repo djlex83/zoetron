@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11344 Fakten** · Stand 2026-09-04 14:33 UTC · aktualisiert bei jedem Herzschlag
+**11349 Fakten** · Stand 2026-09-04 14:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6350
+- **dream:** 6355
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904144542:5:7b2490`
+*04.09. 14:45 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ errors, yet model failures persist, meaning health checks miss external API failures.
+
+### `dream:20260904144542:4:42ede6`
+*04.09. 14:45 UTC · Quelle: dream*
+
+Pruning removes events (30, 21) but zero facts, suggesting fact store grows unbounded while event log stays bounded.
+
+### `dream:20260904144542:3:3601d2`
+*04.09. 14:45 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in last dream) but only one reflex executed them, indicating a proposal-to-implementation gap.
+
+### `dream:20260904144542:2:73de35`
+*04.09. 14:45 UTC · Quelle: dream*
+
+Latency disparity between inclusionai/ling-3.0-flash-fin:free (~4 s) and nvidia/nemotron-3-ultra (~30 s) creates a natural fast/slow tier for routing.
+
+### `dream:20260904144542:1:7248f9`
+*04.09. 14:45 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) on z-ai/glm-5.2:free recurs across sessions, making it unreliable as a primary model.
 
 ### `dream:20260904142730:5:66c811`
 *04.09. 14:27 UTC · Quelle: dream*
