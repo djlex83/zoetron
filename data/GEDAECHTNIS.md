@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11389 Fakten** · Stand 2026-09-04 16:40 UTC · aktualisiert bei jedem Herzschlag
+**11393 Fakten** · Stand 2026-09-04 16:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6395
-- **swarm_artifact:** 2363
+- **dream:** 6400
+- **swarm_artifact:** 2362
 - **last_swarm_critique:** 752
 - **anti_pattern:** 667
 - **last_swarm_goal:** 500
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904164801:5:bb39c9`
+*04.09. 16:48 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots for external API dependencies.
+
+### `dream:20260904164801:4:00c34a`
+*04.09. 16:48 UTC · Quelle: dream*
+
+Pruning discards 40-50 events per run without mining error signatures, losing recurring failure patterns.
+
+### `dream:20260904164801:3:38654c`
+*04.09. 16:48 UTC · Quelle: dream*
+
+Skill proposals accumulate (7+ in logs) but lack validation sandbox, risking untested promotions to production.
+
+### `dream:20260904164801:2:b8dde6`
+*04.09. 16:48 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra shows 2x latency variance (39-87s), making task duration unpredictable without health-aware routing.
+
+### `dream:20260904164801:1:a255dd`
+*04.09. 16:48 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal absent proactive quota monitoring, causing predictable fallback latency spikes.
 
 ### `dream:20260904163655:5:95a629`
 *04.09. 16:36 UTC · Quelle: dream*

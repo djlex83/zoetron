@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 16:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 16:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots for external API dependencies.
+- Pruning discards 40-50 events per run without mining error signatures, losing recurring failure patterns.
+- Skill proposals accumulate (7+ in logs) but lack validation sandbox, risking untested promotions to production.
+- Fallback model nvidia/nemotron-3-ultra shows 2x latency variance (39-87s), making task duration unpredictable without health-aware routing.
+- Repeated 429 errors on z-ai/glm-5.2:free reveal absent proactive quota monitoring, causing predictable fallback latency spikes.
 - Calibration error of 3 points (predicted 5 vs actual 8) indicates systematic underestimation of task complexity.
 - The swarm-based pipeline construction converged in one cycle with score 8, validating the planner-builder-critic role division.
 - Ling-3.0-flash-fin delivers fast (4s) successful responses, making it a preferred primary model for speed-critical steps.
@@ -51,11 +56,6 @@
 - Drive goals go stale (market analysis artifacts, model error reduction) without TTL enforcement or cost-benefit re-evaluation, causing zombie work tha
 - Skill proposals accumulate (10+ in this log) but lack an execution pipeline; the reflex 'vorgeschlagene-fähigkeiten-wirklich-fert.py' ran once but no 
 - A single provider (z-ai/glm-5.2:free) repeatedly fails with 429 errors while the fallback (nvidia/nemotron-3-ultra) succeeds but at 23-36s latency, re
-- Drive goals age without automatic cost-benefit re-evaluation, causing stale objectives to consume planning cycles.
-- Reflex tools succeed when dependencies are present but lack pre-flight validation, risking silent fallback loops on missing configs.
-- Skill proposals accumulate without a promotion/archival mechanism, leading to proposal debt and missed automation opportunities.
-- Latency variance between working models is extreme (3.7s vs 46.3s), making blind fallback dangerous for user-facing tasks.
-- Rate-limit exhaustion (429 errors) across multiple free-tier providers is the dominant failure mode, causing cascading fallbacks and latency spikes.
 
 ---
 
