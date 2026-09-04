@@ -1,14 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 01:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 01:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Build a skill-compilation pipeline that lints, type-checks, and runs unit tests on generated code before atomi *(hatte die Idee 6×)*
 - Create a predictive budget allocator that estimates task complexity from prompt tokens and historical latency/ *(hatte die Idee 6×)*
+- Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic  *(hatte die Idee 6×)*
 - Develop a knowledge-rehydration skill that scans stale facts/market analyses nightly, extracts actionable patt *(hatte die Idee 5×)*
-- Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic  *(hatte die Idee 5×)*
 - Implement a model router that tracks per-model 429/502 rates, latency percentiles, and token costs, then autom *(hatte die Idee 4×)*
 - Build a simulation scaffold that converts any high-level goal into a runnable script with explicit I/O contrac *(hatte die Idee 4×)*
 - Create a path-resolution utility that all hand actions must call to convert sys.argv[1]/ZOETRON_DATA into abso *(hatte die Idee 4×)*
@@ -31,16 +31,21 @@
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals (market analysis weeks old) persist because no mechanism escalates or reformulates long-dormant objectives.
+- Hand actions succeed when instrumented (exit code, duration captured), but transient failures lack automatic retry with backoff.
+- Self-improvement loops lack convergence detection, causing indefinite cycling without measurable progress.
+- Skill proposals accumulate (70+) without execution because no automated pipeline converts proposals to tested, deployed skills.
+- Model providers frequently return 429/502 errors under load, making single-model reliance unreliable without automated failover.
 - Hand actions have no structured error capture or retry policy, so transient failures become silent data loss.
 - Self-improvement cycles lack a convergence guard, risking infinite retries when scores plateau.
 - The system repeatedly proposes the same model-router skill (twice in this log) because no deployment tracker exists to close the loop.
@@ -51,11 +56,6 @@
 - Latency variance (15-69s) on successful calls exceeds acceptable thresholds for interactive use, requiring SLA-aware routing.
 - Circuit-breaker state must persist across sessions to avoid re-probing known-degraded endpoints after restarts.
 - Free-tier models exhibit correlated failure bursts (429/502) making single-model reliance untenable for production workloads.
-- Reflex-driven convergence succeeded for swarm run, showing hard-coded fallbacks outperform LLM planning under rate limits.
-- Model latency varies wildly (5–68s) on fallback, necessitating latency-weighted routing for predictable performance.
-- Stale market analyses and goals persist unused because no automated freshness detector triggers refresh.
-- Skill proposals accumulate (65+) without validation gates or implementation tracking, creating a capability gap.
-- Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with circuit breakers.
 
 ---
 

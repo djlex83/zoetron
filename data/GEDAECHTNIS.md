@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10931 Fakten** · Stand 2026-09-04 01:13 UTC · aktualisiert bei jedem Herzschlag
+**10936 Fakten** · Stand 2026-09-04 01:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6045
+- **dream:** 6050
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904012045:5:9c745e`
+*04.09. 01:20 UTC · Quelle: dream*
+
+Stale goals (market analysis weeks old) persist because no mechanism escalates or reformulates long-dormant objectives.
+
+### `dream:20260904012045:4:6d17c3`
+*04.09. 01:20 UTC · Quelle: dream*
+
+Hand actions succeed when instrumented (exit code, duration captured), but transient failures lack automatic retry with backoff.
+
+### `dream:20260904012045:3:875093`
+*04.09. 01:20 UTC · Quelle: dream*
+
+Self-improvement loops lack convergence detection, causing indefinite cycling without measurable progress.
+
+### `dream:20260904012045:2:a941c9`
+*04.09. 01:20 UTC · Quelle: dream*
+
+Skill proposals accumulate (70+) without execution because no automated pipeline converts proposals to tested, deployed skills.
+
+### `dream:20260904012045:1:c80298`
+*04.09. 01:20 UTC · Quelle: dream*
+
+Model providers frequently return 429/502 errors under load, making single-model reliance unreliable without automated failover.
 
 ### `dream:20260904011140:5:3395b5`
 *04.09. 01:11 UTC · Quelle: dream*
