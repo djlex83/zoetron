@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11329 Fakten** · Stand 2026-09-04 13:37 UTC · aktualisiert bei jedem Herzschlag
+**11334 Fakten** · Stand 2026-09-04 13:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6335
+- **dream:** 6340
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904134530:5:d22895`
+*04.09. 13:45 UTC · Quelle: dream*
+
+Event pruning (17 events) without fact loss suggests the memory decay policy is correctly calibrated for noise reduction.
+
+### `dream:20260904134530:4:4995e4`
+*04.09. 13:45 UTC · Quelle: dream*
+
+Reflex-driven skill validation succeeded without human intervention, proving the propose-test-adopt loop is operational.
+
+### `dream:20260904134530:3:0782bf`
+*04.09. 13:45 UTC · Quelle: dream*
+
+Upstream 502 errors from Nvidia reveal provider-side instability that no client-side retry policy can resolve.
+
+### `dream:20260904134530:2:2a179f`
+*04.09. 13:45 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model remains the only reliable endpoint under load, making it a de facto backbone for critical paths.
+
+### `dream:20260904134530:1:f4866f`
+*04.09. 13:45 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota exhaustion rather than isolated failures.
 
 ### `dream:20260904133535:5:265343`
 *04.09. 13:35 UTC · Quelle: dream*

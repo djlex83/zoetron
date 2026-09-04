@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning (17 events) without fact loss suggests the memory decay policy is correctly calibrated for noise reduction.
+- Reflex-driven skill validation succeeded without human intervention, proving the propose-test-adopt loop is operational.
+- Upstream 502 errors from Nvidia reveal provider-side instability that no client-side retry policy can resolve.
+- The inclusionai/ling-3.0-flash-fin model remains the only reliable endpoint under load, making it a de facto backbone for critical paths.
+- Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota exhaustion rather than isolated failures.
 - No paid-model fallback budget exists, leaving critical-path tasks without an emergency resolution path when both free endpoints fail simultaneously.
 - Latency-sensitive reflexes and computationally-heavy dream tasks share the same model pool, causing predictable resource contention and 429 exhaustion
 - Sequential model fallback without enforced timeout budgets creates cascading delays — when one model fails, the next is called immediately without res
@@ -51,11 +56,6 @@
 - The system spontaneously generates concrete skill proposals during operation, indicating a working meta-cognitive improvement loop.
 - Latency varies by an order of magnitude between models (3 s vs 27 s), so latency-aware routing is critical for responsive operation.
 - Free-tier model endpoints frequently return 429 rate-limit errors, making single-model reliance unreliable for production tasks.
-- Stale goals and analyses accumulate without TTL enforcement, consuming context slots and creating zombie work.
-- Hand actions silently succeed with empty output (e.g., 70 bytes read but no content validation), masking partial failures.
-- Swarm convergence lacks explicit criteria, leading to undefined success conditions and potential infinite cycles.
-- Nvidia/nemotron-3-ultra succeeds but exhibits high latency (26-65s) and occasional empty-choice failures, requiring timeout and retry guards.
-- Model provider z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable as primary or sole provider.
 
 ---
 
