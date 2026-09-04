@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,9 +30,9 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, revealing a monitoring blind spot between component health and service-level re
+- Drive goals for model reliability and market analysis recur across cycles, signaling that root causes remain unaddressed despite reflex completions.
+- Skill proposals accumulate without a defined lifecycle (proposed→approved→implemented→validated), causing duplication and orphaned ideas.
+- Fallback routing to nemotron succeeds but exhibits high latency variance (7-31s), indicating need for latency-aware model selection.
+- Free-tier models consistently hit 429 rate limits under sustained load, making them unreliable as primary workers without quota-aware routing.
 - Pre-execution validation (path existence, simulation gates) is missing, leading to preventable hand_action failures and wasted swarm_started calls.
 - Drive goals compete without a conserved-mode heuristic, causing low-iteration cycles to waste budget on low-impact objectives.
 - Skill proposals accumulate (10+ in this session) without an automated implementation pipeline, creating a backlog that never converts to deployed capa
@@ -51,11 +56,6 @@
 - The proposed skill solutions (conservative scheduler, decaying error signal, empirical thresholds) address planning-layer optimization but not the roo
 - Successful convergence (reflex=true) without a measurable numeric score is incomplete validation — the system must distinguish between 'ran' and 'succ
 - Rate limiting and upstream overload are the dominant systemic failure mode, affecting multiple providers simultaneously — a single-point-of-failure mi
-- Static risk and quality thresholds fail to reflect empirical system behavior, so pass-rates and decay signals should replace fixed cutoffs.
-- High-latency models (15-22s) block the main execution loop, demanding async or batched handling to maintain system responsiveness.
-- Skill proposals accumulate across dream cycles without implementation tracking, causing knowledge to grow while capabilities stagnate.
-- Reflex-mode completions can declare convergence with a null score, creating a quality blind spot that must be closed by mandatory post-hoc assessment.
-- Free-tier models repeatedly trigger 429 rate-limit errors, making them unreliable for critical actions and requiring automatic fallback to healthy end
 
 ---
 

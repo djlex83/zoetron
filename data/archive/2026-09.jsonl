@@ -9138,3 +9138,12 @@
 {"ts": 1787900769.4606483, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.65, "gelesen": 2708}}
 {"ts": 1787900769.4608576, "kind": "tor", "payload": {"goal": "Wiederkehrenden Organfehler endgültig klären", "gruen": true, "grund": "Artefakt laeuft (187 Zeilen Python)", "zyklus": 1}}
 {"ts": 1787900770.2352552, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787900770.2352471, "schalter_geoeffnet": false}}
+{"ts": 1787900825.7187438, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 55.5, "tokens_ein": 7772, "tokens_aus": 1238}}
+{"ts": 1787900825.7193372, "kind": "calibration", "payload": {"goal": "Wiederkehrenden Organfehler endgültig klären", "predicted": 3, "actual": 9, "abs_error": 6}}
+{"ts": 1787900825.7194078, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 9}}
+{"ts": 1787900844.294845, "kind": "bahnen", "payload": {"goal": "Wiederkehrenden Organfehler endgültig klären", "delta": 1.0, "kanten": 21, "hat_code": true, "score": 9, "abgerufen": 6, "ids": ["f:34cbebffefc9", "e:b8eac66e5a3d", "g:916640a51ad2", "f:fc294734ed47", "f:997613065a71", "f:5280caafc677"], "ziel_id": "g:336886889e1c"}}
+{"ts": 1787900844.2950828, "kind": "swarm_finished", "payload": {"goal": "Wiederkehrenden Organfehler endgültig klären", "score": 9, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1787900844.2953126, "kind": "act_done", "payload": {"goal_title": "Wiederkehrenden Organfehler endgültig klären", "score": 9, "converged": true}}
+{"ts": 1787900849.2839148, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.62, "gelesen": 2743}}
+{"ts": 1787900851.523627, "kind": "issue_synced", "payload": {"issue": 183, "state": "closed"}}
+{"ts": 1787900949.2397957, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
