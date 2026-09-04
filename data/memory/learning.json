@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 13:05:42",
+ "stand": "2026-09-04 13:16:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,6 +45,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -75,12 +81,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -88,12 +88,6 @@
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -159,6 +153,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -192,12 +192,6 @@
    "tool": "regelmäßige-selbstprüfung-etablieren.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-wirklich-testen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -411,7 +405,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.748,
+ "haende_quote": 0.751,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 31,
@@ -420,8 +414,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 6.2
+   "n": 29,
+   "schnitt": 6.28
   },
   "bau": {
    "n": 1,

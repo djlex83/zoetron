@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11314 Fakten** · Stand 2026-09-04 13:07 UTC · aktualisiert bei jedem Herzschlag
+**11319 Fakten** · Stand 2026-09-04 13:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6320
+- **dream:** 6325
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904131525:5:f37377`
+*04.09. 13:15 UTC · Quelle: dream*
+
+Stale goals and analyses accumulate without TTL enforcement, consuming context slots and creating zombie work.
+
+### `dream:20260904131525:4:781a6b`
+*04.09. 13:15 UTC · Quelle: dream*
+
+Hand actions silently succeed with empty output (e.g., 70 bytes read but no content validation), masking partial failures.
+
+### `dream:20260904131525:3:6fbaf3`
+*04.09. 13:15 UTC · Quelle: dream*
+
+Swarm convergence lacks explicit criteria, leading to undefined success conditions and potential infinite cycles.
+
+### `dream:20260904131525:2:16bafe`
+*04.09. 13:15 UTC · Quelle: dream*
+
+Nvidia/nemotron-3-ultra succeeds but exhibits high latency (26-65s) and occasional empty-choice failures, requiring timeout and retry guards.
+
+### `dream:20260904131525:1:2e1609`
+*04.09. 13:15 UTC · Quelle: dream*
+
+Model provider z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable as primary or sole provider.
 
 ### `dream:20260904130456:5:f83bfc`
 *04.09. 13:04 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals and analyses accumulate without TTL enforcement, consuming context slots and creating zombie work.
+- Hand actions silently succeed with empty output (e.g., 70 bytes read but no content validation), masking partial failures.
+- Swarm convergence lacks explicit criteria, leading to undefined success conditions and potential infinite cycles.
+- Nvidia/nemotron-3-ultra succeeds but exhibits high latency (26-65s) and occasional empty-choice failures, requiring timeout and retry guards.
+- Model provider z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable as primary or sole provider.
 - Five high-value skill proposals were generated but none executed, revealing a gap between proposal generation and implementation.
 - Hand actions report success but read zero bytes, meaning empty-output failures are silently masked as successes.
 - Swarm converged in a single cycle with score 8, suggesting convergence criteria are too loose and may accept suboptimal outputs.
@@ -51,11 +56,6 @@
 - The hand_action failed because relative paths and ZOETRON_DATA were not validated before execution, showing that path resolution checks must precede f
 - nvidia/nemotron-3-ultra-550b-a55b succeeds reliably but with high latency (38-138s), meaning latency-aware model routing is essential for time-sensiti
 - The z-ai/glm-5.2 model fails with persistent 429 errors on every call, indicating a circuit-breaker pattern is needed instead of blind retries.
-- Pre-existing skill proposals address symptoms (routing, validation) but not root cause: dependence on unreliable free-tier endpoints without SLA.
-- Pruning 51 events in one run suggests experience accumulation outpaces consolidation frequency, risking loss of rare but critical failure patterns.
-- Swarm convergence fails at score 6 despite 2 cycles, indicating the 1:1 critic-to-planner ratio is insufficient for complex validation tasks.
-- The nvidia/nemotron model succeeds but with 40-60s latency variance, making it unsuitable for interactive tasks but viable for background consolidatio
-- Rate limiting (429) affects all free-tier models simultaneously, suggesting shared OpenRouter infrastructure quotas rather than per-model limits.
 
 ---
 
