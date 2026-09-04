@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 14:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 14:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No graceful-degradation ladder exists: when all live models fail the system has no cached-response or offline mode to preserve continuity.
+- Pruning discards 21 events per cycle without extracting recurring error signatures, losing diagnostic signal that could prevent future failures.
+- Reflex and dream/swarm tasks share the same model pool, causing critical fast-path operations to starve behind heavy batch workloads.
+- Absence of circuit-breaking allows single-model failures to cascade into full task collapse instead of triggering controlled fallback.
+- Free-tier model endpoints exhibit systemic instability with correlated 429 rate-limit and 502 upstream overload failures across multiple providers.
 - Self-diagnosis consistently reports zero organ errors, yet model failures persist, meaning health checks miss external API failures.
 - Pruning removes events (30, 21) but zero facts, suggesting fact store grows unbounded while event log stays bounded.
 - Skill proposals accumulate (5 in last dream) but only one reflex executed them, indicating a proposal-to-implementation gap.
@@ -51,11 +56,6 @@
 - Skill proposals remain speculative without simulation validation — the drive goal 'Vorgeschlagene Fähigkeiten im Test prüfen' stayed open across cycle
 - Stale goals accumulate silently because no TTL enforcement exists; the system flagged 'Marktanalyse' as stale and generated a renewal goal, yet the or
 - Model failures are systemic rather than isolated — four consecutive provider failures (429 rate limits, 502 upstream overload) with no automatic failo
-- Goals persist for many cycles without TTL enforcement (market analysis, model reliability), causing zombie work that clutters drive.
-- Skill proposals accumulate (5+ this cycle) but none are executed, creating a planning-execution gap that wastes context and trust.
-- Reflex tool 'marktanalyse-endlich-abschließen.py' succeeded where swarm stalled, proving targeted scripts outperform open-ended swarms for bounded tas
-- Fallback to nvidia/nemotron-3-ultra works but introduces 30-57s latency, making it unsuitable for time-critical reflexes without async handling.
-- Repeated 429 errors from z-ai/glm-5.2:free indicate unreliable provider that should be deprioritized or circuit-broken after 2 consecutive failures.
 
 ---
 

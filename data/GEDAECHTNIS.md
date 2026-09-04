@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11349 Fakten** · Stand 2026-09-04 14:49 UTC · aktualisiert bei jedem Herzschlag
+**11354 Fakten** · Stand 2026-09-04 15:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6355
+- **dream:** 6360
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904145827:5:5c8e28`
+*04.09. 14:58 UTC · Quelle: dream*
+
+No graceful-degradation ladder exists: when all live models fail the system has no cached-response or offline mode to preserve continuity.
+
+### `dream:20260904145827:4:f5e342`
+*04.09. 14:58 UTC · Quelle: dream*
+
+Pruning discards 21 events per cycle without extracting recurring error signatures, losing diagnostic signal that could prevent future failures.
+
+### `dream:20260904145827:3:aa94e1`
+*04.09. 14:58 UTC · Quelle: dream*
+
+Reflex and dream/swarm tasks share the same model pool, causing critical fast-path operations to starve behind heavy batch workloads.
+
+### `dream:20260904145827:2:99f35b`
+*04.09. 14:58 UTC · Quelle: dream*
+
+Absence of circuit-breaking allows single-model failures to cascade into full task collapse instead of triggering controlled fallback.
+
+### `dream:20260904145827:1:54f66d`
+*04.09. 14:58 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit systemic instability with correlated 429 rate-limit and 502 upstream overload failures across multiple providers.
 
 ### `dream:20260904144542:5:7b2490`
 *04.09. 14:45 UTC · Quelle: dream*
