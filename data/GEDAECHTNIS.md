@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11407 Fakten** · Stand 2026-09-04 17:06 UTC · aktualisiert bei jedem Herzschlag
+**11412 Fakten** · Stand 2026-09-04 17:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6405
+- **dream:** 6410
 - **swarm_artifact:** 2368
 - **last_swarm_critique:** 753
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904172310:5:62b441`
+*04.09. 17:23 UTC · Quelle: dream*
+
+Destructive tool calls (os.system/subprocess) are correctly blocked by safety gate, requiring explicit human approval path.
+
+### `dream:20260904172310:4:772740`
+*04.09. 17:23 UTC · Quelle: dream*
+
+Calibration predicted 8 but actual was 4 (abs_error=4), revealing systematic overconfidence in initial capability estimates.
+
+### `dream:20260904172310:3:c9fa38`
+*04.09. 17:23 UTC · Quelle: dream*
+
+Evolutionary iteration boosted score from 4 to 9 in one generation, confirming that critic-driven mutation outperforms single-pass generation.
+
+### `dream:20260904172310:2:44da24`
+*04.09. 17:23 UTC · Quelle: dream*
+
+Nemotron-3-Ultra succeeds reliably but with high latency variance (31-94s), suggesting queue-dependent cold starts.
+
+### `dream:20260904172310:1:2b9af5`
+*04.09. 17:23 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits, making them unreliable for production workflows.
 
 ### `tool:veraltetes-wissen-erneuern`
 *04.09. 17:04 UTC · Quelle: hands*

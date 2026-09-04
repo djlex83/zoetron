@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 17:04:58",
+ "stand": "2026-09-04 17:23:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,6 +81,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -118,12 +124,6 @@
   },
   {
    "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -420,9 +420,9 @@
  "haende_quote": 0.766,
  "simulationen_angewandt": 23,
  "swarm_scores": {
-  "n": 30,
+  "n": 29,
   "best": 9.0,
-  "schnitt": 6.37
+  "schnitt": 6.28
  },
  "score_nach_ziel_typ": {
   "analyse": {
