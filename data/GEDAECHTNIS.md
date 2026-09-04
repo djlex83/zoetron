@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11451 Fakten** · Stand 2026-09-04 18:39 UTC · aktualisiert bei jedem Herzschlag
+**11465 Fakten** · Stand 2026-09-04 18:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6440
-- **swarm_artifact:** 2374
-- **last_swarm_critique:** 754
+- **dream:** 6445
+- **swarm_artifact:** 2380
+- **last_swarm_critique:** 755
 - **anti_pattern:** 667
-- **last_swarm_goal:** 502
+- **last_swarm_goal:** 503
 - **strategy:** 354
-- **tool:** 148
+- **tool:** 149
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -17,6 +17,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:modellfehler-verstehen-und-verringern`
+*04.09. 18:54 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modellfehler verstehen und verringern'. Datei: data/tools/modellfehler-verstehen-und-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*04.09. 18:54 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*04.09. 18:47 UTC · Quelle: system*
+
+Modellfehler verstehen und verringern
+
+### `dream:20260904184708:5:427bb9`
+*04.09. 18:47 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model layer fails repeatedly, exposing a monitoring blind spot at the inference boundary.
+
+### `dream:20260904184708:4:cef66f`
+*04.09. 18:47 UTC · Quelle: dream*
+
+Nvidia 502 errors reveal upstream provider instability that mimics rate limits but requires different retry semantics.
+
+### `dream:20260904184708:3:adce89`
+*04.09. 18:47 UTC · Quelle: dream*
+
+Successful goal completion (score 9) despite 60% model failure rate proves the swarm architecture tolerates partial LLM degradation.
+
+### `dream:20260904184708:2:9979f9`
+*04.09. 18:47 UTC · Quelle: dream*
+
+Calibration error of +4 cycles indicates the planner systematically underestimates execution complexity for multi-role swarms.
+
+### `dream:20260904184708:1:7cd030`
+*04.09. 18:47 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across all free-tier models simultaneously, making single-model fallback ineffective.
 
 ### `dream:20260904183733:5:511323`
 *04.09. 18:37 UTC · Quelle: dream*

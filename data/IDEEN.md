@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 18:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 18:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model layer fails repeatedly, exposing a monitoring blind spot at the inference boundary.
+- Nvidia 502 errors reveal upstream provider instability that mimics rate limits but requires different retry semantics.
+- Successful goal completion (score 9) despite 60% model failure rate proves the swarm architecture tolerates partial LLM degradation.
+- Calibration error of +4 cycles indicates the planner systematically underestimates execution complexity for multi-role swarms.
+- Rate limiting (429) cascades across all free-tier models simultaneously, making single-model fallback ineffective.
 - Simulation approved 'go' despite 3 risks/3 revisions; artifact (206 lines Python) ran successfully, validating risk tolerance.
 - inclusionai/ling-3.0-flash-fin:free is the only model with consistent low-latency success (7-11s) under load.
 - Under conserve budget (max_tasks=3), the system still wastes iterations on repeatedly failing models (z-ai/glm-5.2 failed 5+ times).
@@ -51,11 +56,6 @@
 - Relative path handling fails when the working directory diverges from ZOETRON_DATA, causing silent zero-byte reads in hand actions.
 - Fallback models succeed but impose 10-20x latency penalties (22-72s vs 3.2s) that stall the metabolism budget under conserve mode.
 - Rate-limit errors cascade because no shared quota tracker reads OpenRouter headers and enforces per-model cooldowns before 429 occurs.
-- Simulation reflex results are marked complete without explicit linkage back to the originating action, creating a risk of orphaned completions that ne
-- Self-diagnosis reports zero organ errors and zero pruned facts, yet the drive goal to build a knowledge graph signals that long-term semantic memory i
-- Swarm convergence in a single cycle with score 8 demonstrates effective role distribution (planner/builder/critic), but lacks an early-stopping metric
-- The calibration abs_error of 1 on "Veraltetes Wissen erneuern" reveals a persistent prediction gap that a learning calibration head could systematical
-- Repeated 429 rate-limit errors from z-ai/glm-5.2 indicate that reactive fallback is insufficient; models must be proactively blacklisted with cooldown
 
 ---
 
