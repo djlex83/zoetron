@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11207 Fakten** · Stand 2026-09-04 09:50 UTC · aktualisiert bei jedem Herzschlag
+**11212 Fakten** · Stand 2026-09-04 10:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6255
+- **dream:** 6260
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904095832:5:6e09b2`
+*04.09. 09:58 UTC · Quelle: dream*
+
+Exponential backoff alone is insufficient; need quota-aware routing with rolling-window failure tracking.
+
+### `dream:20260904095832:4:e10ecf`
+*04.09. 09:58 UTC · Quelle: dream*
+
+Self-diagnosis shows no organ errors but model layer is the primary failure surface.
+
+### `dream:20260904095832:3:385d14`
+*04.09. 09:58 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation loops, creating proposal debt that clogs the system.
+
+### `dream:20260904095832:2:90bd5d`
+*04.09. 09:58 UTC · Quelle: dream*
+
+Latency variance across models (4s vs 40s) demands latency-aware routing for interactive vs batch tasks.
+
+### `dream:20260904095832:1:aea80b`
+*04.09. 09:58 UTC · Quelle: dream*
+
+Free tier models exhibit cascading 429/5xx failures under load, requiring circuit-breaker routing with paid fallback.
 
 ### `dream:20260904094730:5:bb39c9`
 *04.09. 09:47 UTC · Quelle: dream*
