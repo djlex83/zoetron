@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 09:38:04",
+ "stand": "2026-09-04 09:48:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -105,12 +105,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "träume-besser-zum-lernen-nutzen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -196,6 +190,12 @@
   },
   {
    "tool": "veraltete-marktanalyse-auffrischen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0

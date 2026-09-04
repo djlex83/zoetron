@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots for external API dependencies.
+- Drive goals (model reliability, market analysis, skill learning) remain stale because no scheduler admits them into the metabolism budget.
+- Skill proposals accumulate but lack a validation gate (tests, docs, deps) before swarm launch, causing proposal debt and unverified capabilities.
+- The working fallback model (nvidia/nemotron-3-ultra) exhibits high and variable latency (21–42 s), requiring latency SLAs and timeout-aware routing.
+- Free-tier models (z-ai/glm-5.2) consistently fail with 429 rate-limit errors, making them unreliable as primary providers without automated fallback.
 - Stale goals persist indefinitely without automated reflex triggers for script-based remediation.
 - High-latency models (42s+) block the main execution loop without async batch processing.
 - Skill proposals accumulate untracked, creating implementation debt with no escalation path.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across dream cycles without implementation tracking, causing repeated re-proposals and wasted consolidation cycles.
 - act_done events repeatedly converge with null scores, revealing missing quality gates that allow unverified completions to pollute memory.
 - Recurring 429 errors on the primary model (z-ai/glm-5.2:free) necessitate an automated tiered fallback chain with observability logging to prevent exe
-- Reflexes that reduce model errors exist but are triggered reactively; proactive quota-aware routing would prevent most 429 cascades.
-- Stale artifacts (market analyses) persist in memory because no automated TTL or ownership review exists for long-lived objects.
-- Quality gates are absent: act_done events mark convergence with null scores, allowing unverified work to pass as complete.
-- Skill proposals accumulate (65+) but lack a verification pipeline, causing proposal rot and duplicated effort across dream cycles.
-- Free-tier models consistently hit 429/5xx errors under load, making them unreliable for production-critical paths without circuit breakers and paid fa
 
 ---
 
