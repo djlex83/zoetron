@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 09:17:07",
+ "stand": "2026-09-04 09:27:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -409,9 +409,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "simulationen-gezielt-einsetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.715,
+ "haende_quote": 0.716,
  "simulationen_angewandt": 27,
  "swarm_scores": {
   "n": 33,

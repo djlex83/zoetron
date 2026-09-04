@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
@@ -35,12 +35,17 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals (e.g., market analysis) persist for many cycles without automated reflex triggering, delaying critical decisions.
+- Prune runs discard 36 events but zero facts, indicating factual density scoring is absent and high-value memories (failures, root causes) may be lost.
+- Skill proposals accumulate across dream cycles without implementation tracking, causing repeated re-proposals and wasted consolidation cycles.
+- act_done events repeatedly converge with null scores, revealing missing quality gates that allow unverified completions to pollute memory.
+- Recurring 429 errors on the primary model (z-ai/glm-5.2:free) necessitate an automated tiered fallback chain with observability logging to prevent exe
 - Reflexes that reduce model errors exist but are triggered reactively; proactive quota-aware routing would prevent most 429 cascades.
 - Stale artifacts (market analyses) persist in memory because no automated TTL or ownership review exists for long-lived objects.
 - Quality gates are absent: act_done events mark convergence with null scores, allowing unverified work to pass as complete.
@@ -51,11 +56,6 @@
 - Swarm execution scores 7/10 but fails to converge, indicating the planner-critic loop lacks a hard convergence threshold or max-iteration guard.
 - A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure if it also hits quota lim
 - Free-tier models consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows without ci
-- Hand actions (shell commands) execute reliably in ~2s, enabling fast artifact validation.
-- Calibration error of 3 (predicted 4 vs actual 7) reveals systematic underestimation of task difficulty.
-- Evolutionary iteration with critic feedback raised solution score from 7 to 9, proving multi-variant refinement works.
-- Nemotron-3-Ultra succeeds but with high latency variance (21-84s), while Ling-3-Flash responds in 3s but may lack depth for complex tasks.
-- Free-tier models consistently hit 429 rate limits, making fallback chains essential for reliability.
 
 ---
 

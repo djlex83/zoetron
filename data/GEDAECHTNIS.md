@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11192 Fakten** · Stand 2026-09-04 09:18 UTC · aktualisiert bei jedem Herzschlag
+**11197 Fakten** · Stand 2026-09-04 09:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6240
+- **dream:** 6245
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904092625:5:c87c70`
+*04.09. 09:26 UTC · Quelle: dream*
+
+Stale goals (e.g., market analysis) persist for many cycles without automated reflex triggering, delaying critical decisions.
+
+### `dream:20260904092625:4:c2540e`
+*04.09. 09:26 UTC · Quelle: dream*
+
+Prune runs discard 36 events but zero facts, indicating factual density scoring is absent and high-value memories (failures, root causes) may be lost.
+
+### `dream:20260904092625:3:502e75`
+*04.09. 09:26 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles without implementation tracking, causing repeated re-proposals and wasted consolidation cycles.
+
+### `dream:20260904092625:2:6007d0`
+*04.09. 09:26 UTC · Quelle: dream*
+
+act_done events repeatedly converge with null scores, revealing missing quality gates that allow unverified completions to pollute memory.
+
+### `dream:20260904092625:1:242536`
+*04.09. 09:26 UTC · Quelle: dream*
+
+Recurring 429 errors on the primary model (z-ai/glm-5.2:free) necessitate an automated tiered fallback chain with observability logging to prevent execution stalls.
 
 ### `dream:20260904091637:5:38ceb8`
 *04.09. 09:16 UTC · Quelle: dream*
