@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11555 Fakten** · Stand 2026-09-04 22:10 UTC · aktualisiert bei jedem Herzschlag
+**11554 Fakten** · Stand 2026-09-04 22:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6519
-- **swarm_artifact:** 2389
+- **dream:** 6524
+- **swarm_artifact:** 2384
 - **last_swarm_critique:** 758
 - **anti_pattern:** 669
 - **last_swarm_goal:** 506
-- **strategy:** 353
+- **strategy:** 352
 - **tool:** 151
 - **hand_result:** 123
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904222105:5:dcbf6e`
+*04.09. 22:21 UTC · Quelle: dream*
+
+Event log accumulates low-density entries (49 pruned in one run), indicating missing sensory filtering before persistence.
+
+### `dream:20260904222105:4:ac7ce4`
+*04.09. 22:21 UTC · Quelle: dream*
+
+Self-predicted confidence scores systematically overestimate success by ~1 point on knowledge-update tasks, needing a calibration discount.
+
+### `dream:20260904222105:3:5d9459`
+*04.09. 22:21 UTC · Quelle: dream*
+
+Evolution scoring workflows (generate→critic→select) recur across knowledge-refresh tasks but lack a standardized, reusable procedure.
+
+### `dream:20260904222105:2:d5d369`
+*04.09. 22:21 UTC · Quelle: dream*
+
+Latency variance on nemotron-3-ultra (8.5s–43.6s) exceeds acceptable bounds for interactive tasks, requiring a hard timeout fallback trigger.
+
+### `dream:20260904222105:1:b608d4`
+*04.09. 22:21 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2:free) consistently fail with 429 rate-limit errors, making them unreliable for production routing without pre-flight checks.
 
 ### `last_swarm_critique`
 *04.09. 22:08 UTC · Quelle: critic*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 22:08:38",
+ "stand": "2026-09-04 22:21:19",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -88,6 +88,12 @@
   },
   {
    "tool": "häufige-modellfehler-besser-verstehen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -184,12 +190,6 @@
   },
   {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -423,8 +423,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.787,
- "simulationen_angewandt": 19,
+ "haende_quote": 0.788,
+ "simulationen_angewandt": 18,
  "swarm_scores": {
   "n": 29,
   "best": 9.0,
