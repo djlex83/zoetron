@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11177 Fakten** · Stand 2026-09-04 08:48 UTC · aktualisiert bei jedem Herzschlag
+**11182 Fakten** · Stand 2026-09-04 08:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6225
+- **dream:** 6230
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904085638:5:c36f2b`
+*04.09. 08:56 UTC · Quelle: dream*
+
+Hand actions (shell commands) execute reliably in ~2s, enabling fast artifact validation.
+
+### `dream:20260904085638:4:b251af`
+*04.09. 08:56 UTC · Quelle: dream*
+
+Calibration error of 3 (predicted 4 vs actual 7) reveals systematic underestimation of task difficulty.
+
+### `dream:20260904085638:3:67abda`
+*04.09. 08:56 UTC · Quelle: dream*
+
+Evolutionary iteration with critic feedback raised solution score from 7 to 9, proving multi-variant refinement works.
+
+### `dream:20260904085638:2:c3eeae`
+*04.09. 08:56 UTC · Quelle: dream*
+
+Nemotron-3-Ultra succeeds but with high latency variance (21-84s), while Ling-3-Flash responds in 3s but may lack depth for complex tasks.
+
+### `dream:20260904085638:1:b8f8b2`
+*04.09. 08:56 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits, making fallback chains essential for reliability.
 
 ### `dream:20260904084635:5:5e1ef9`
 *04.09. 08:46 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 08:47:08",
+ "stand": "2026-09-04 08:57:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -96,12 +96,6 @@
    "tool": "häufige-modellfehler-besser-verstehen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -321,6 +315,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -394,6 +394,12 @@
   },
   {
    "tool": "viele-skill-vorschläge-prüfen-und-beste-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

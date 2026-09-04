@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions (shell commands) execute reliably in ~2s, enabling fast artifact validation.
+- Calibration error of 3 (predicted 4 vs actual 7) reveals systematic underestimation of task difficulty.
+- Evolutionary iteration with critic feedback raised solution score from 7 to 9, proving multi-variant refinement works.
+- Nemotron-3-Ultra succeeds but with high latency variance (21-84s), while Ling-3-Flash responds in 3s but may lack depth for complex tasks.
+- Free-tier models consistently hit 429 rate limits, making fallback chains essential for reliability.
 - System metabolism shows stress=1.0 with a conserve budget of only 3 tasks/1 iteration, so any new skill must be resource-scoped and deferrable.
 - The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating the proposal-to-skill pipeline lacks validation, idempotency
 - Hand actions fail when using relative paths; all file operations must resolve inputs against the absolute ZOETRON_DATA environment variable before exe
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across dream cycles (3+ proposals per cycle) but lack an automated tracker to escalate unimplemented proposals into actiona
 - Reflex executions converge (converged=true) without capturing mandatory quality scores (score=null), allowing unverified completions to pass as succes
 - The primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while the fallback (nvidia/nemotron) succeeds but introduces 20-45s latency, creatin
-- Stale goals like 'Marktanalyse in Handlung umsetzen' accumulate without resolution, indicating the system lacks an enforced rhythm for reviewing and c
-- Prune_run discarded 42 events while preserving 0 facts, suggesting the pruning logic may be too aggressive and risks eliminating high-signal failure m
-- Identical skill proposals recur across dream cycles without evidence of implementation, revealing a persistent proposal-to-execution gap where insight
-- Act_done events are being marked as converged with a null quality score, meaning the system accepts completion without any verifiable quality assuranc
-- The z-ai/glm-5.2 model repeatedly fails with 429 rate-limit errors across multiple dream cycles, exposing the absence of any circuit breaker or automa
 
 ---
 
