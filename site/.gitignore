@@ -1,2 +1,5 @@
 node_modules/
 public/state.json
+# Inkrementeller TypeScript-Zwischenstand: reines Build-Artefakt.
+# Lag bis 28.08.2026 im Repo und erzeugte bei jedem Build Diff-Rauschen.
+tsconfig.tsbuildinfo
