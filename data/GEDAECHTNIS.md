@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11058 Fakten** · Stand 2026-09-04 05:07 UTC · aktualisiert bei jedem Herzschlag
+**11075 Fakten** · Stand 2026-09-04 05:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6130
-- **swarm_artifact:** 2333
-- **last_swarm_critique:** 744
-- **anti_pattern:** 657
-- **last_swarm_goal:** 492
-- **strategy:** 349
-- **tool:** 139
+- **dream:** 6135
+- **swarm_artifact:** 2339
+- **last_swarm_critique:** 745
+- **anti_pattern:** 659
+- **last_swarm_goal:** 493
+- **strategy:** 350
+- **tool:** 140
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:viele-skill-vorschläge-prüfen-und-beste-`
+*04.09. 05:20 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Viele Skill-Vorschläge prüfen und beste integrieren'. Datei: data/tools/viele-skill-vorschläge-prüfen-und-beste-.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Viele Skill-Vorschläge p:2`
+*04.09. 05:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Persistent-State-Workflow-Machine (SQLite-Checkpointing) - Einzelne SQLite-Datenbank (`pipeline.db`) als Single Source of Truth. Tabelle `vorschlaege(id, payload, status)`, `bewertungen(vorschlag_id, ergebnis)`, `integration(
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Viele Skill-Vorschläge p:1`
+*04.09. 05:19 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Streaming-Pipe-Architektur (Unix-Philosophie) - Jedes Skript liest JSONL von stdin und schreibt JSONL nach stdout – keine Dateien, nur Pipes. Skript 1: `generiere | tee skill_vorschlaege.jsonl` (optional Tee für Debug). Skrip
+
+### `last_swarm_critique`
+*04.09. 05:18 UTC · Quelle: critic*
+
+score=6; issues=Pipeline-Konnektivitätslücke: Script 1 gibt JSON auf stdout aus, aber Script 2 erwartet die Datei 'skill_vorschlaege.jsonl' – es fehlt ein Speicherschritt dazwischen.; Pipeline-Konnektivitätslücke: Script 2 speichert Ergebnisse in 'pruefung_erg
+
+### `last_swarm_goal`
+*04.09. 05:14 UTC · Quelle: system*
+
+Viele Skill-Vorschläge prüfen und beste integrieren
+
+### `dream:20260904051423:5:23aede`
+*04.09. 05:14 UTC · Quelle: dream*
+
+Simulation approved a goal with 4 risks and 2 revisions, yet the artifact completed in one cycle, showing risk scores are pessimistic for code-completion tasks.
+
+### `dream:20260904051423:4:8ae2ea`
+*04.09. 05:14 UTC · Quelle: dream*
+
+Calibration error of 3 cycles (predicted 8 vs actual 5) indicates the planner overestimates work complexity when artifacts already exist.
+
+### `dream:20260904051423:3:577042`
+*04.09. 05:14 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra succeeds only after ~97s latency, rendering it unusable for interactive loops but viable for background batch jobs.
+
+### `dream:20260904051423:2:ebc9e5`
+*04.09. 05:14 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only consistently available free model with sub-10s latency across repeated calls.
+
+### `dream:20260904051423:1:f0a772`
+*04.09. 05:14 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systematic 429 rate-limits and 502 upstream overloads, making them unreliable for latency-sensitive paths.
 
 ### `dream:20260904050459:5:da20ee`
 *04.09. 05:04 UTC · Quelle: dream*

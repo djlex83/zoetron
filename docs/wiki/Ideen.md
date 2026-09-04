@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 05:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 05:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation approved a goal with 4 risks and 2 revisions, yet the artifact completed in one cycle, showing risk scores are pessimistic for code-complet
+- Calibration error of 3 cycles (predicted 8 vs actual 5) indicates the planner overestimates work complexity when artifacts already exist.
+- nvidia/nemotron-3-ultra succeeds only after ~97s latency, rendering it unusable for interactive loops but viable for background batch jobs.
+- inclusionai/ling-3.0-flash-fin:free is the only consistently available free model with sub-10s latency across repeated calls.
+- Free-tier models on OpenRouter suffer systematic 429 rate-limits and 502 upstream overloads, making them unreliable for latency-sensitive paths.
 - Reflex-triggered swarm execution fails silently without leaving traceable artifacts for post-mortem analysis.
 - File system operations fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths.
 - Only inclusionai/ling-3.0-flash-fin:free succeeded, suggesting smaller specialized models have better availability.
@@ -51,11 +56,6 @@
 - Swarm convergence in a single cycle with score 8 suggests premature convergence without adequate exploration of alternative solutions.
 - Calibration error of 5 (predicted 3 vs actual 8 model errors) reveals systematic underestimation of failure rates, requiring per-model error-rate trac
 - Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, causing cascading fallbacks that still end in failure when all prov
-- Multiple distinct models failing with identical 429 errors simultaneously suggests a shared quota bucket or IP-level rate limit at the OpenRouter gate
-- Simulation-driven revision cycles (5 revisions applied) correlate with eventual artifact success (206-line Python script running), showing iterative r
-- The system's error prediction calibration significantly underestimates actual failures (predicted 3 vs actual 8), indicating the failure model doesn't
-- Nvidia Nemotron 3 Ultra shows high latency variance (20-115s) but succeeds where rate-limited models fail, suggesting it has higher quota or priority.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
 
 ---
 
