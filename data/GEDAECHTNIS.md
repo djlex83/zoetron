@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11531 Fakten** · Stand 2026-09-04 21:25 UTC · aktualisiert bei jedem Herzschlag
+**11536 Fakten** · Stand 2026-09-04 21:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6499
+- **dream:** 6504
 - **swarm_artifact:** 2387
 - **last_swarm_critique:** 757
 - **anti_pattern:** 669
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904213308:5:5e432b`
+*04.09. 21:33 UTC · Quelle: dream*
+
+Automatic skill proposals (circuit breaker, dynamic routing) emerge reactively but lack proactive health-checking before model selection.
+
+### `dream:20260904213308:4:24cc14`
+*04.09. 21:33 UTC · Quelle: dream*
+
+Event logs accumulate 91x faster than facts, indicating sensory noise dominates the memory stream and requires upstream filtering.
+
+### `dream:20260904213308:3:fc8d7e`
+*04.09. 21:33 UTC · Quelle: dream*
+
+The evolution loop stalls at 7/10 because the critic detects simulated sense data but the builder cannot access real-time verification sources.
+
+### `dream:20260904213308:2:e1e9f5`
+*04.09. 21:33 UTC · Quelle: dream*
+
+OpenRouter free tier enforces aggressive per-model rate limits that cascade across multiple providers simultaneously, making single-model reliance unsustainable.
+
+### `dream:20260904213308:1:c3757f`
+*04.09. 21:33 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model is the only consistently reliable endpoint (100% success, <5s latency) while all other free models suffer systematic rate-limiting (429) or upstream overload (502).
 
 ### `dream:20260904212252:5:abeeb7`
 *04.09. 21:22 UTC · Quelle: dream*
