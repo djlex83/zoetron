@@ -10989,3 +10989,6 @@
 {"ts": 1787946246.1227334, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.63, "gelesen": 2}}
 {"ts": 1787946248.194349, "kind": "issue_synced", "payload": {"issue": 197, "state": "open"}}
 {"ts": 1787946368.984461, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787947538.3480954, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787947539.8328884, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787947545.5080392, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787947545.5080345, "schalter_geoeffnet": false}}
