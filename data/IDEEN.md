@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
@@ -34,13 +34,18 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
+- Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate faster than implementation — 5 generated this cycle with no execution tracking.
+- Event memory prunes aggressively (73 events) while facts persist (0 pruned), indicating high event volatility.
+- Simulation-based revision catches risks effectively (5 risks → 5 revisions) but lacks a convergence gate.
+- Swarm tasks evolve but fail to converge without explicit score thresholds and risk-clearance criteria.
+- Free-tier models on OpenRouter exhibit correlated 429 failures suggesting shared quota pools rather than independent limits.
 - Hand actions (local Python execution) complete in ~0.2s with zero failures, ideal for deterministic validation steps.
 - The evolution-simulation loop (generate→simulate→revise) reliably improves artifact scores (6→9) and should be a standard pipeline stage.
 - Ling-3.0-flash-fin delivers consistent low latency (~8s) and success, making it the preferred default for latency-sensitive tasks.
@@ -51,11 +56,6 @@
 - Running in conserve mode (stress=1.0, max_iterations=1) with multiple competing goals causes resource starvation, so a single-priority focus is requir
 - Hand actions fail silently when file paths are unresolved (relative paths, sys.argv, ZOETRON_DATA), meaning path validation must precede any file oper
 - The z-ai/glm-5.2:free model fails systematically with 429 rate-limit errors on every call, indicating a structural reliability problem rather than tra
-- Static risk thresholds ignore empirical pass-rates; revision gates should adapt to historical failure rates per goal class.
-- Path resolution across sys.argv, env vars, and cwd remains ad-hoc, causing I/O failures under varying launch contexts.
-- Skill proposals accumulate (12+ in logs) but implementation rate is near zero, indicating a proposal-to-execution gap.
-- Nemotron-3-ultra latency varies 15-26s, blocking the main loop unless moved to background batch queue.
-- Free model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for production routing.
 
 ---
 
