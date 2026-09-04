@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8135 Neuronen · 653749 bewertete Synapsen
+Stand: 8137 Neuronen · 654483 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,16 +10,16 @@ Stand: 8135 Neuronen · 653749 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 721 | 0.24 |
+| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 722 | 0.24 |
 | 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 650 | 0.26 |
-| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 717 | 0.23 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 683 | 0.24 |
+| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 718 | 0.23 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 684 | 0.24 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 693 | 0.23 |
 | 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 618 | 0.25 |
 | 7 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 673 | 0.23 |
-| 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 600 | 0.26 |
+| 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 601 | 0.26 |
 | 9 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 685 | 0.23 |
-| 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 622 | 0.24 |
+| 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 624 | 0.24 |
 | 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 595 | 0.25 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 555 | 0.27 |
 | 13 | 💭 | Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x … | 595 | 0.25 |

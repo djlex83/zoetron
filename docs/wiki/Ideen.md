@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 23:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 23:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -32,15 +32,20 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Single reliable fallback model (inclusionai/ling-3.0-flash-fin) succeeded repeatedly while primary models failed, proving asymmetry in provider stabil
+- Simulation approved high-risk plan (5 risks, 0 revisions) under resource pressure, indicating risk tolerance scales inversely with capacity.
+- Swarm launch proceeds despite reflex tool failure (ok=false), propagating faulty preconditions into distributed execution.
+- Conservation metabolism (stress=1.0, max_iterations=1) eliminates retry capacity, turning transient failures into permanent blocks.
+- Free-tier model endpoints exhibit systematic unreliability (429 rate limits, 502 upstream overload) requiring provider-aware fallback chains.
 - Self-diagnosis reports zero organ errors even during active failure cascades, meaning the diagnostic layer lacks visibility into external dependency f
 - The reflex system successfully closes open fronts and swarm artifacts, but stale group tasks and untested skill proposals continue to accumulate, show
 - 18 events were pruned while 0 facts were pruned, suggesting that event-level noise accumulates faster than core knowledge, and pruning policy should d
@@ -51,11 +56,6 @@
 - Metabolism at stress=1.0 forces max_tasks=3 and max_iterations=1, making any multi-step plan infeasible without prior decomposition.
 - Free-tier models hit 429 rate limits within seconds; a ranked fallback chain with latency budgets is mandatory.
 - Scripts fail when they ignore ZOETRON_DATA and sys.argv[1], treating relative paths as absolute.
-- Absence of structured error logging for reflex/tool invocations prevents root-cause analysis of intermittent failures like the 429 spikes.
-- Stale memory pruning (15 events, 5 facts) and drive goals for 'old swarm results' indicate accumulated technical debt in knowledge freshness that impa
-- Multiple independent proposals converge on circuit-breaker, health-check, and dynamic-router patterns, revealing a systemic gap in model reliability i
-- Fallback model nvidia/nemotron-3-ultra exhibits high latency variance (12–31 s), suggesting cold-start or queueing effects that require latency-aware 
-- The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating hard rate limits that make it unreliable for production routing without str
 
 ---
 

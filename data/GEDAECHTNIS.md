@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11579 Fakten** · Stand 2026-09-04 23:18 UTC · aktualisiert bei jedem Herzschlag
+**11584 Fakten** · Stand 2026-09-04 23:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6539
+- **dream:** 6544
 - **swarm_artifact:** 2386
 - **last_swarm_critique:** 760
 - **anti_pattern:** 671
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904232610:5:26bd3e`
+*04.09. 23:26 UTC · Quelle: dream*
+
+Single reliable fallback model (inclusionai/ling-3.0-flash-fin) succeeded repeatedly while primary models failed, proving asymmetry in provider stability.
+
+### `dream:20260904232610:4:012ae1`
+*04.09. 23:26 UTC · Quelle: dream*
+
+Simulation approved high-risk plan (5 risks, 0 revisions) under resource pressure, indicating risk tolerance scales inversely with capacity.
+
+### `dream:20260904232610:3:c182f7`
+*04.09. 23:26 UTC · Quelle: dream*
+
+Swarm launch proceeds despite reflex tool failure (ok=false), propagating faulty preconditions into distributed execution.
+
+### `dream:20260904232610:2:64d01e`
+*04.09. 23:26 UTC · Quelle: dream*
+
+Conservation metabolism (stress=1.0, max_iterations=1) eliminates retry capacity, turning transient failures into permanent blocks.
+
+### `dream:20260904232610:1:e9a1d5`
+*04.09. 23:26 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit systematic unreliability (429 rate limits, 502 upstream overload) requiring provider-aware fallback chains.
 
 ### `dream:20260904231622:5:e60fa0`
 *04.09. 23:16 UTC · Quelle: dream*
