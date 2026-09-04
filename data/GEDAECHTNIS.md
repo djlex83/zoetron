@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11299 Fakten** · Stand 2026-09-04 12:36 UTC · aktualisiert bei jedem Herzschlag
+**11304 Fakten** · Stand 2026-09-04 12:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6305
+- **dream:** 6310
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904124428:5:8f7144`
+*04.09. 12:44 UTC · Quelle: dream*
+
+Pre-existing skill proposals address symptoms (routing, validation) but not root cause: dependence on unreliable free-tier endpoints without SLA.
+
+### `dream:20260904124428:4:3523a5`
+*04.09. 12:44 UTC · Quelle: dream*
+
+Pruning 51 events in one run suggests experience accumulation outpaces consolidation frequency, risking loss of rare but critical failure patterns.
+
+### `dream:20260904124428:3:ce3d73`
+*04.09. 12:44 UTC · Quelle: dream*
+
+Swarm convergence fails at score 6 despite 2 cycles, indicating the 1:1 critic-to-planner ratio is insufficient for complex validation tasks.
+
+### `dream:20260904124428:2:048368`
+*04.09. 12:44 UTC · Quelle: dream*
+
+The nvidia/nemotron model succeeds but with 40-60s latency variance, making it unsuitable for interactive tasks but viable for background consolidation.
+
+### `dream:20260904124428:1:861278`
+*04.09. 12:44 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models simultaneously, suggesting shared OpenRouter infrastructure quotas rather than per-model limits.
 
 ### `dream:20260904123440:5:4c084f`
 *04.09. 12:34 UTC · Quelle: dream*

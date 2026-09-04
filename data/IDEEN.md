@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 12:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 12:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pre-existing skill proposals address symptoms (routing, validation) but not root cause: dependence on unreliable free-tier endpoints without SLA.
+- Pruning 51 events in one run suggests experience accumulation outpaces consolidation frequency, risking loss of rare but critical failure patterns.
+- Swarm convergence fails at score 6 despite 2 cycles, indicating the 1:1 critic-to-planner ratio is insufficient for complex validation tasks.
+- The nvidia/nemotron model succeeds but with 40-60s latency variance, making it unsuitable for interactive tasks but viable for background consolidatio
+- Rate limiting (429) affects all free-tier models simultaneously, suggesting shared OpenRouter infrastructure quotas rather than per-model limits.
 - Calibration error of 0.0 across cycles shows the predictor is well-calibrated for this task class, enabling reliable resource budgeting.
 - Evolutionary iteration with critic feedback raised scores from 6 to 9 in one cycle, confirming that automated self-critique loops are high-leverage fo
 - The inclusionai/ling-3.0-flash-fin:free model delivered 10x lower latency (5.5s vs 52-100s) for comparable tasks, proving smaller specialized models c
@@ -51,11 +56,6 @@
 - Skill proposals repeatedly fail at reflex validation stage (ok:false) before eventually passing simulation (verdict:go), revealing a brittle proposal-
 - Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1) that throttles throughput precisely when error recovery needs capacity.
 - Primary model (glm-5.2) consistently hits 429 rate limits forcing fallback to nemotron-3-ultra with 38-100s latency, creating systemic reliability dep
-- Stale goals and unread hand actions indicate missing completion enforcement and garbage collection for abandoned work.
-- Skill proposals accumulate without implementation, creating a planning-execution gap that clogs the system.
-- Swarm processes consistently fail to converge (score 7, 2 cycles), suggesting insufficient critic/builder ratio or missing convergence criteria.
-- High-latency models (Nemotron 30-60s) succeed where fast models fail, indicating a reliability-latency tradeoff.
-- Rate limiting (429) is the dominant failure mode across free models, requiring systematic fallback and health tracking.
 
 ---
 
