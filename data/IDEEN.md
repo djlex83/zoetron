@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 03:02 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 03:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,12 +19,12 @@
 - Create a skill-deployment pipeline that auto-promotes any proposal tagged 'critical' after a 5-minute canary o *(hatte die Idee 3×)*
 - Add a pre-flight health probe that pings each model's /models endpoint before routing real traffic, caching re *(hatte die Idee 3×)*
 - Add a skill-gate: every proposal must include a single-file implementation sketch and a 5-minute smoke test sc *(hatte die Idee 3×)*
-- Implement per-model circuit breakers that trip after 3 consecutive failures and enforce exponential backoff (1 *(hatte die Idee 3×)*
+- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -41,8 +41,12 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model latency varies wildly (13s to 63s for same model), indicating unpredictable performance even when requests succeed.
+- Fact pruning retains all facts despite 23 events pruned, suggesting TTL policy is ineffective at removing stale knowledge.
+- Skill proposals accumulate without implementation tracking, causing a proposal-execution gap that wastes cognitive investment.
+- Reflex-completed tasks consistently lack quality scores (null), creating a blind spot in convergence verification.
+- Free-tier models on OpenRouter exhibit systemic rate-limiting (429) and upstream failures (502), making single-model reliance a critical vulnerability
 - Event pruning removes 93 events per cycle but zero facts, indicating the fact store is stable while episodic memory churns heavily.
-- Skill proposals accumulate without implementation tracking, creating a gap between generation and deployment that wastes cognitive cycles.
 - Hand actions exhibit transient failures (first run exit 1, second run exit 0) that resolve on retry, pointing to missing idempotency and automatic ret
 - Swarm self-improvement loops frequently fail to converge (score 7, converged false) yet still evolve, suggesting convergence criteria are misaligned w
 - Free-tier models (GLM) consistently hit rate limits (429) while Nemotron remains stable, indicating provider-specific quota exhaustion as a systemic f
@@ -52,10 +56,6 @@
 - Nvidia models fail with HTTP 502 'Service temporarily overloaded' despite returning status 200, revealing a mismatch between HTTP status and actual se
 - Rate limiting (HTTP 429) is the dominant failure mode across Google and Z.ai models, indicating systematic quota exhaustion rather than transient erro
 - Multiple skill proposals target the same failure modes (routing, validation, staleness, logging, calibration) but lack integration into a unified reli
-- Self-diagnosis and pruning reported zero issues despite cascading model failures, indicating monitoring blind spots for external API degradation.
-- Reflex-driven execution (marktanalyse-endlich-nutzen.py) converged cleanly while model-dependent steps failed, proving deterministic tools outperform 
-- Successful model calls (Nemotron, Ling) show 15-24s latency with 400-1300 input tokens, establishing a baseline for timeout budgets.
-- Free-tier models consistently hit 429 rate limits and 502 overload errors, making single-model reliance unreliable for production tasks.
 
 ---
 

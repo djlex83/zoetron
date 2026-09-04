@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10992 Fakten** · Stand 2026-09-04 03:04 UTC · aktualisiert bei jedem Herzschlag
+**10997 Fakten** · Stand 2026-09-04 03:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6085
+- **dream:** 6090
 - **swarm_artifact:** 2321
 - **last_swarm_critique:** 742
 - **anti_pattern:** 655
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904031136:5:5a98ac`
+*04.09. 03:11 UTC · Quelle: dream*
+
+Model latency varies wildly (13s to 63s for same model), indicating unpredictable performance even when requests succeed.
+
+### `dream:20260904031136:4:3a6f60`
+*04.09. 03:11 UTC · Quelle: dream*
+
+Fact pruning retains all facts despite 23 events pruned, suggesting TTL policy is ineffective at removing stale knowledge.
+
+### `dream:20260904031136:3:da1fa2`
+*04.09. 03:11 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation tracking, causing a proposal-execution gap that wastes cognitive investment.
+
+### `dream:20260904031136:2:fb0f84`
+*04.09. 03:11 UTC · Quelle: dream*
+
+Reflex-completed tasks consistently lack quality scores (null), creating a blind spot in convergence verification.
+
+### `dream:20260904031136:1:054700`
+*04.09. 03:11 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systemic rate-limiting (429) and upstream failures (502), making single-model reliance a critical vulnerability.
 
 ### `dream:20260904030145:5:ad814b`
 *04.09. 03:01 UTC · Quelle: dream*
