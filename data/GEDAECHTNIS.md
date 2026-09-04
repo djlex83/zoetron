@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11048 Fakten** · Stand 2026-09-04 04:48 UTC · aktualisiert bei jedem Herzschlag
+**11053 Fakten** · Stand 2026-09-04 04:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6120
+- **dream:** 6125
 - **swarm_artifact:** 2333
 - **last_swarm_critique:** 744
 - **anti_pattern:** 657
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904045551:5:cbeaae`
+*04.09. 04:55 UTC · Quelle: dream*
+
+Multiple skill proposals generated in prior cycles remain unimplemented, creating proposal debt that blocks systemic improvement.
+
+### `dream:20260904045551:4:57623c`
+*04.09. 04:55 UTC · Quelle: dream*
+
+Zero facts pruned despite 54 events pruned indicates asymmetric memory management where factual knowledge accumulates without decay.
+
+### `dream:20260904045551:3:e8eada`
+*04.09. 04:55 UTC · Quelle: dream*
+
+Swarm convergence in a single cycle with score 8 suggests premature convergence without adequate exploration of alternative solutions.
+
+### `dream:20260904045551:2:496a67`
+*04.09. 04:55 UTC · Quelle: dream*
+
+Calibration error of 5 (predicted 3 vs actual 8 model errors) reveals systematic underestimation of failure rates, requiring per-model error-rate tracking.
+
+### `dream:20260904045551:1:7f7d00`
+*04.09. 04:55 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all free-tier models, causing cascading fallbacks that still end in failure when all providers are saturated.
 
 ### `dream:20260904044632:5:7549b8`
 *04.09. 04:46 UTC · Quelle: dream*
