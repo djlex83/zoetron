@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11513 Fakten** · Stand 2026-09-04 20:27 UTC · aktualisiert bei jedem Herzschlag
+**11518 Fakten** · Stand 2026-09-04 20:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6484
+- **dream:** 6489
 - **swarm_artifact:** 2386
 - **last_swarm_critique:** 756
 - **anti_pattern:** 669
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904204512:5:847b34`
+*04.09. 20:45 UTC · Quelle: dream*
+
+The first prune_run removed 42 events while the second removed 0, indicating that stale or redundant data was consuming resources and that the system has now reached a clean state.
+
+### `dream:20260904204512:4:69bef9`
+*04.09. 20:45 UTC · Quelle: dream*
+
+Self-diagnosis reported zero internal organ failures, confirming that all observed failures originate externally from API rate-limiting rather than from system-internal defects.
+
+### `dream:20260904204512:3:ad00d2`
+*04.09. 20:45 UTC · Quelle: dream*
+
+Four skill proposals were generated in the first dream cycle and three more in the second, but none have been implemented, revealing a persistent gap between diagnosis and execution.
+
+### `dream:20260904204512:2:1bfdc1`
+*04.09. 20:45 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b model succeeds consistently in every attempt, confirming it as the dependable fallback model despite variable latency (9–37s).
+
+### `dream:20260904204512:1:ff5ff3`
+*04.09. 20:45 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model repeatedly fails with HTTP 429 rate-limit errors across multiple timestamps, establishing it as an unreliable primary model that requires a known-stable fallback.
 
 ### `tool:veraltete-wissenstände-auffrischen`
 *04.09. 20:25 UTC · Quelle: hands*

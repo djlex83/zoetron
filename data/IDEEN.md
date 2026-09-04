@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 20:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 20:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,10 +30,10 @@
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The first prune_run removed 42 events while the second removed 0, indicating that stale or redundant data was consuming resources and that the system 
+- Self-diagnosis reported zero internal organ failures, confirming that all observed failures originate externally from API rate-limiting rather than fr
+- Four skill proposals were generated in the first dream cycle and three more in the second, but none have been implemented, revealing a persistent gap 
+- The nvidia/nemotron-3-ultra-550b-a55b model succeeds consistently in every attempt, confirming it as the dependable fallback model despite variable la
+- The z-ai/glm-5.2 model repeatedly fails with HTTP 429 rate-limit errors across multiple timestamps, establishing it as an unreliable primary model tha
 - Pruning removes events but retains no model-performance telemetry, preventing learning from failure patterns across sleep cycles.
 - Five concrete skill proposals addressing quota, latency, and automation already exist but remain unimplemented, indicating an execution gap.
 - Latency variance between successful models (3.7s vs 19.1s) shows no latency-budget enforcement, wasting metabolism on slow fallbacks.
@@ -51,11 +56,6 @@
 - Only one model (inclusionai/ling-3.0-flash-fin) succeeded among many failures, revealing that the system has no mechanism to learn from or route aroun
 - A recurring gap exists between generating skill proposals and actually implementing them — the system dreams solutions but does not execute them, whic
 - The dominant failure mode is API rate-limiting (429) and upstream overload (502), indicating the system lacks proactive throttling and treats all mode
-- The inclusionai/ling-3.0-flash-fin model proved to be a reliable and fast fallback during periods of high API congestion.
-- Swarm tasks can successfully converge and complete even when individual model calls fail intermittently, provided alternative models are available.
-- Latency for the same model can vary drastically from 44s to 114s depending on current upstream load.
-- Free-tier models on OpenRouter frequently experience rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
-- Simulation approved a high-risk (3) plan with revisions (2) while budget allowed only 1 iteration, guaranteeing overrun.
 
 ---
 
