@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 3×)*
 - Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale facts persist indefinitely without automated expiration, degrading the quality of knowledge available for future decisions.
+- Skill proposals accumulate faster than they are implemented, creating a growing gap between identified solutions and actual system capability.
+- Reflex-mode completions bypass quality assessment entirely, allowing low-quality or unverified results to be accepted as final without any threshold c
+- Tasks marked as converged with null scores reveal a quality blind spot where completion is conflated with correctness, producing unreliable outcomes w
+- Transient API failures (429/502) are the dominant and recurring failure mode across multiple providers, indicating the system lacks automated circuit-
 - Fact pruning discards events without validation: 38 events pruned with zero fact audit means missed entities/relations silently degrade knowledge qual
 - Hand-action observability is insufficient: transient failures (network, timeout) are indistinguishable from logic errors, preventing targeted retries.
 - Self-improvement loops lack convergence guards: without automatic abort criteria, cycles waste compute on stagnant objectives.
@@ -51,11 +56,6 @@
 - Replay buffers accumulate low-value events (18 pruned in one cycle) that dilute learning signal and need periodic cleanup.
 - Fallback model latency degrades progressively (18.8s → 83.6s), so availability without latency monitoring creates false reliability.
 - Free-tier LLM APIs fail predictably under rate limits (429 errors), requiring pre-configured fallback chains rather than ad-hoc retries.
-- Reactive skill proposals generated after failures duplicate effort; proactive pattern mining from replay buffers would accelerate resilience.
-- Automatic failover to working model allowed task convergence in one cycle despite repeated primary-model failures, proving redundancy value.
-- Calibration for task "Simulationen gezielt einsetzen" underestimated actual cycles by 60 % (predicted 5 vs actual 8), indicating systematic underestim
-- Fallback model nvidia/nemotron-3-ultra exhibits 10× latency variance (18–174 s) requiring latency-aware routing and timeout budgets.
-- Free-tier model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limit errors, making it unreliable as primary without circuit-breaker fallback
 
 ---
 

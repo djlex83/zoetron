@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 00:24:36",
+ "stand": "2026-09-04 00:34:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -357,12 +357,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.681,
- "simulationen_angewandt": 31,
+ "haende_quote": 0.679,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 35,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 6.0
+  "schnitt": 5.91
  },
  "score_nach_ziel_typ": {
   "bau": {

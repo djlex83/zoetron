@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10906 Fakten** · Stand 2026-09-04 00:26 UTC · aktualisiert bei jedem Herzschlag
+**10911 Fakten** · Stand 2026-09-04 00:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6020
+- **dream:** 6025
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904003325:5:b1637e`
+*04.09. 00:33 UTC · Quelle: dream*
+
+Stale facts persist indefinitely without automated expiration, degrading the quality of knowledge available for future decisions.
+
+### `dream:20260904003325:4:bb0947`
+*04.09. 00:33 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are implemented, creating a growing gap between identified solutions and actual system capability.
+
+### `dream:20260904003325:3:a67667`
+*04.09. 00:33 UTC · Quelle: dream*
+
+Reflex-mode completions bypass quality assessment entirely, allowing low-quality or unverified results to be accepted as final without any threshold check.
+
+### `dream:20260904003325:2:84c21c`
+*04.09. 00:33 UTC · Quelle: dream*
+
+Tasks marked as converged with null scores reveal a quality blind spot where completion is conflated with correctness, producing unreliable outcomes without detection.
+
+### `dream:20260904003325:1:9369bd`
+*04.09. 00:33 UTC · Quelle: dream*
+
+Transient API failures (429/502) are the dominant and recurring failure mode across multiple providers, indicating the system lacks automated circuit-breaking and failover to handle rate limits gracefully.
 
 ### `dream:20260904002402:5:c9a0e9`
 *04.09. 00:24 UTC · Quelle: dream*
