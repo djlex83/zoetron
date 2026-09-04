@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11038 Fakten** · Stand 2026-09-04 04:08 UTC · aktualisiert bei jedem Herzschlag
+**11043 Fakten** · Stand 2026-09-04 04:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6110
+- **dream:** 6115
 - **swarm_artifact:** 2333
 - **last_swarm_critique:** 744
 - **anti_pattern:** 657
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904043704:5:6fa00a`
+*04.09. 04:37 UTC · Quelle: dream*
+
+Stale high-value artifacts (market analyses) persist unused while the system spins on model reliability, indicating misaligned priority scheduling.
+
+### `dream:20260904043704:4:f8a9f9`
+*04.09. 04:37 UTC · Quelle: dream*
+
+No per-model rate-limit tracking exists, causing repeated hammering of exhausted endpoints instead of switching to healthy alternatives.
+
+### `dream:20260904043704:3:a45abb`
+*04.09. 04:37 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in log) but execution fails because the required models are unavailable, creating a proposal-execution deadlock.
+
+### `dream:20260904043704:2:ca265e`
+*04.09. 04:37 UTC · Quelle: dream*
+
+The system enters conserve mode (stress=1.0) but continues attempting model-intensive operations, wasting its single iteration budget on doomed calls.
+
+### `dream:20260904043704:1:abe403`
+*04.09. 04:37 UTC · Quelle: dream*
+
+Free-tier models (glm-5.2, nemotron, gemma) exhibit cascading rate-limit (429) and overload (502) failures, making single-model reliance a systemic risk.
 
 ### `tool:alte-schwarm-arbeiten-abschließen`
 *04.09. 04:06 UTC · Quelle: hands*
