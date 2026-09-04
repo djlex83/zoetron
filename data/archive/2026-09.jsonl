@@ -9002,3 +9002,21 @@
 {"ts": 1787898067.8757982, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.38, "gelesen": 0}}
 {"ts": 1787898069.9053054, "kind": "issue_synced", "payload": {"issue": 155, "state": "open"}}
 {"ts": 1787898166.7516587, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787898936.05821, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787898937.3248293, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787898940.743071, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787898940.7430687, "schalter_geoeffnet": false}}
+{"ts": 1787898956.8751657, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 16.1, "tokens_ein": 1492, "tokens_aus": 1023}}
+{"ts": 1787898956.8757012, "kind": "skill_proposal", "payload": {"proposal": "Build a model router that tracks per-endpoint 429 rates, latency percentiles, and success rates, then dynamically weights fallbacks."}}
+{"ts": 1787898956.8757567, "kind": "skill_proposal", "payload": {"proposal": "Wrap every model call with an adaptive timeout: measure recent p95 latency per model, set timeout = 2×p95, abort and retry on exceed."}}
+{"ts": 1787898956.8758075, "kind": "skill_proposal", "payload": {"proposal": "Implement the proposed skill validation pipeline: proposal → zero-risk simulation gate (revisions≥2 AND risk_delta≤1) → shadow execution → A/B benchmark → promote/reject."}}
+{"ts": 1787898956.8758607, "kind": "skill_proposal", "payload": {"proposal": "Create an 'evolve_artifact' skill that takes a low-scoring artifact, generates three critic-guided variants, and returns the highest-scoring one."}}
+{"ts": 1787898956.8759098, "kind": "skill_proposal", "payload": {"proposal": "Add a stress-aware scheduler that throttles experiment spawns when metabolism.stress > 0.7 and auto-expands budget when stress < 0.3."}}
+{"ts": 1787898956.8759584, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787898959.1832373, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787898959.1832352, "schalter_geoeffnet": false}}
+{"ts": 1787898991.30624, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 32.1, "tokens_ein": 460, "tokens_aus": 845}}
+{"ts": 1787898991.3063993, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Viele Modelle scheitern noch. Bessere Modelle bedeuten weniger Fehler bei Aufgaben.", "signal": "failure"}}
+{"ts": 1787898991.3064747, "kind": "drive_goal", "payload": {"title": "Vorschläge in echte Fähigkeiten verwandeln", "why": "Es gibt viele Ideen für neue Fähigkeiten, aber wenige werden wirklich nutzbar.", "signal": "gap"}}
+{"ts": 1787898991.3065374, "kind": "drive_goal", "payload": {"title": "Traum-Erkenntnisse für neue Verbindungen nutzen", "why": "Träume zeigen verborgene Zusammenhänge. Diese können neue Lösungen für alte Probleme liefern.", "signal": "combination"}}
+{"ts": 1787898993.228149, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
+{"ts": 1787898993.228939, "kind": "reflex_used", "payload": {"goal": "Ziele konsequent zu Ende bringen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
+{"ts": 1787898993.6707711, "kind": "act_done", "payload": {"goal_title": "Ziele konsequent zu Ende bringen", "score": null, "converged": true, "mode": "reflex"}}

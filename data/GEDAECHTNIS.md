@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11105 Fakten** · Stand 2026-09-04 06:31 UTC · aktualisiert bei jedem Herzschlag
+**11110 Fakten** · Stand 2026-09-04 06:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6165
+- **dream:** 6170
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904063931:5:43fcef`
+*04.09. 06:39 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles without execution tracking, causing proposal debt.
+
+### `dream:20260904063931:4:cb8490`
+*04.09. 06:39 UTC · Quelle: dream*
+
+Event pruning occurs without corresponding fact extraction, potentially discarding learnable patterns.
+
+### `dream:20260904063931:3:55ee87`
+*04.09. 06:39 UTC · Quelle: dream*
+
+Memory gap detection generates exploration goals but lacks prioritization, risking low-yield effort.
+
+### `dream:20260904063931:2:918631`
+*04.09. 06:39 UTC · Quelle: dream*
+
+Reflex-driven tasks converge without quality scores, creating blind spots in performance evaluation.
+
+### `dream:20260904063931:1:0524b5`
+*04.09. 06:39 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit systematic rate-limiting (429) and upstream overload (502), making single-model reliance a critical failure mode.
 
 ### `dream:20260904062900:5:23fafa`
 *04.09. 06:29 UTC · Quelle: dream*
