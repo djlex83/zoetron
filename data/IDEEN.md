@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 03:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 03:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
@@ -35,12 +35,17 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Recurring model failures and path errors generate duplicate drive goals, wasting cycles on reactive signals instead of proactive gap closure.
+- The skills-to-actions pipeline (reflex → simulation → swarm) repeatedly revises but does not succeed, indicating missing pre-deployment validation aga
+- High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, starving multi-step skills and causing hand-action failures.
+- Relative path resolution fails in the execution environment; all file operations must use absolute paths derived from ZOETRON_DATA and sys.argv[1].
+- Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, requiring a hardened fallback chain with health c
 - Reflex tools return bare ok:false without structured error context, preventing automated failure classification.
 - Market analysis artifacts remain stale across multiple cycles despite dedicated drive goals, indicating missing execution triggers.
 - 65 skill proposals exist without a visible implementation pipeline, creating an idea-execution gap.
@@ -51,11 +56,6 @@
 - Fallback model latency varies 5× (13–63 s) with no latency-aware routing or SLA tracking.
 - Skill proposals accumulate (7+ this cycle) but lack a validator→executor pipeline, leaving them perpetually unimplemented.
 - Recurring 429 errors on z-ai/glm-5.2:free reveal missing per-model circuit breakers and tiered fallback logic.
-- Model latency varies wildly (13s to 63s for same model), indicating unpredictable performance even when requests succeed.
-- Fact pruning retains all facts despite 23 events pruned, suggesting TTL policy is ineffective at removing stale knowledge.
-- Skill proposals accumulate without implementation tracking, causing a proposal-execution gap that wastes cognitive investment.
-- Reflex-completed tasks consistently lack quality scores (null), creating a blind spot in convergence verification.
-- Free-tier models on OpenRouter exhibit systemic rate-limiting (429) and upstream failures (502), making single-model reliance a critical vulnerability
 
 ---
 

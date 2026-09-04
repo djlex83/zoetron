@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 03:30:40",
+ "stand": "2026-09-04 03:46:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -207,12 +207,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -373,19 +367,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.674,
+ "haende_quote": 0.682,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 34,
   "best": 9.0,
-  "schnitt": 5.91
+  "schnitt": 6.12
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 31,
-   "schnitt": 5.94
+   "n": 32,
+   "schnitt": 6.0
   },
   "bau": {
    "n": 2,
