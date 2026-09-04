@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 23:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 23:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution critic flagged 'Artifact 2 bricht mit return' indicating premature termination is a recurring code-generation defect.
+- Calibration error of +2 (predicted 5 risks, actual 7) suggests systematic underestimation of complexity in gap-closing tasks.
+- inclusionai/ling-3.0-flash-fin:free is the only model with consistent sub-10s latency and zero observed failures across multiple calls.
+- Nvidia Nemotron 3 Ultra shows extreme latency variance (14-74s) and intermittent 502 upstream errors, making it unreliable for time-bounded tasks.
+- Rate limiting (HTTP 429) is the dominant failure mode across 4 different free models, indicating systemic quota exhaustion rather than model-specific 
 - Single reliable fallback model (inclusionai/ling-3.0-flash-fin) succeeded repeatedly while primary models failed, proving asymmetry in provider stabil
 - Simulation approved high-risk plan (5 risks, 0 revisions) under resource pressure, indicating risk tolerance scales inversely with capacity.
 - Swarm launch proceeds despite reflex tool failure (ok=false), propagating faulty preconditions into distributed execution.
@@ -51,11 +56,6 @@
 - 18 events were pruned while 0 facts were pruned, suggesting that event-level noise accumulates faster than core knowledge, and pruning policy should d
 - Fallback to nvidia/nemotron-3-ultra-550b-a55b:free succeeds but with higher latency (14-18s), indicating that failover paths must be pre-validated for
 - The z-ai/glm-5.2:free endpoint repeatedly fails with 429 rate-limit errors, revealing that relying on a single model without proactive health checks c
-- Reflex tool 'alte-erinnerungen-auf-wert-prüfen.py' returned ok=false, indicating stale or broken validation logic in the reflex layer.
-- Simulation veto (verdict=revise, risks=3) caught flaws that live execution would have amplified; simulation is a required gate.
-- Metabolism at stress=1.0 forces max_tasks=3 and max_iterations=1, making any multi-step plan infeasible without prior decomposition.
-- Free-tier models hit 429 rate limits within seconds; a ranked fallback chain with latency budgets is mandatory.
-- Scripts fail when they ignore ZOETRON_DATA and sys.argv[1], treating relative paths as absolute.
 
 ---
 

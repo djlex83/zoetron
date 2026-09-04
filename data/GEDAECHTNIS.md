@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11584 Fakten** · Stand 2026-09-04 23:28 UTC · aktualisiert bei jedem Herzschlag
+**11589 Fakten** · Stand 2026-09-04 23:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6544
+- **dream:** 6549
 - **swarm_artifact:** 2386
 - **last_swarm_critique:** 760
 - **anti_pattern:** 671
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904233625:5:ae92e3`
+*04.09. 23:36 UTC · Quelle: dream*
+
+Evolution critic flagged 'Artifact 2 bricht mit return' indicating premature termination is a recurring code-generation defect.
+
+### `dream:20260904233625:4:174975`
+*04.09. 23:36 UTC · Quelle: dream*
+
+Calibration error of +2 (predicted 5 risks, actual 7) suggests systematic underestimation of complexity in gap-closing tasks.
+
+### `dream:20260904233625:3:0981b7`
+*04.09. 23:36 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model with consistent sub-10s latency and zero observed failures across multiple calls.
+
+### `dream:20260904233625:2:65944e`
+*04.09. 23:36 UTC · Quelle: dream*
+
+Nvidia Nemotron 3 Ultra shows extreme latency variance (14-74s) and intermittent 502 upstream errors, making it unreliable for time-bounded tasks.
+
+### `dream:20260904233625:1:7f19a5`
+*04.09. 23:36 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across 4 different free models, indicating systemic quota exhaustion rather than model-specific issues.
 
 ### `dream:20260904232610:5:26bd3e`
 *04.09. 23:26 UTC · Quelle: dream*
