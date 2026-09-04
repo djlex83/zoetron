@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 15:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 16:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals age without automatic cost-benefit re-evaluation, causing stale objectives to consume planning cycles.
+- Reflex tools succeed when dependencies are present but lack pre-flight validation, risking silent fallback loops on missing configs.
+- Skill proposals accumulate without a promotion/archival mechanism, leading to proposal debt and missed automation opportunities.
+- Latency variance between working models is extreme (3.7s vs 46.3s), making blind fallback dangerous for user-facing tasks.
+- Rate-limit exhaustion (429 errors) across multiple free-tier providers is the dominant failure mode, causing cascading fallbacks and latency spikes.
 - Skill proposals accumulate (5+ this session) but lack a validation pipeline to test them in sandbox before promotion.
 - Reflex execution (local Python tools) succeeded where all model calls failed, proving lightweight deterministic paths are more reliable than LLM calls
 - Failure signatures (429, 502, timeout) recur identically across sessions but are discarded during pruning instead of being mined for durable patterns.
@@ -51,11 +56,6 @@
 - Free-tier API models have strict rate limits that are easily exceeded under burst requests; exponential backoff with jitter must be mandatory for all 
 - Only one model (inclusionai/ling-3.0-flash-fin) succeeded while all others failed, revealing dangerous single-point-of-failure dependency; a model hea
 - Consecutive 429 and 502 errors across multiple models indicate systemic rate-limiting, not individual model failures — a circuit breaker pattern is ne
-- Hand-action output validation is absent: empty stdout/stderr would be treated as success, masking silent failures in tool execution.
-- Goal staleness goes undetected: three drive goals persisted without TTL enforcement, risking zombie work and context bloat.
-- Skill proposals accumulate without execution pipeline: five proposals were generated this cycle but none were built, tested, or logged, creating a pro
-- Reflex tools succeed in isolation but swarm deployments repeat failures when root-cause diagnosis is skipped, as seen in the market-analysis reflex su
-- Model provider failures cascade silently: 429/5xx errors from multiple providers (GLM, Nemotron, Gemma) went unhandled until a free-tier model succeed
 
 ---
 

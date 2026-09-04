@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11377 Fakten** · Stand 2026-09-04 15:50 UTC · aktualisiert bei jedem Herzschlag
+**11381 Fakten** · Stand 2026-09-04 16:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6380
-- **swarm_artifact:** 2371
+- **dream:** 6385
+- **swarm_artifact:** 2370
 - **last_swarm_critique:** 751
 - **anti_pattern:** 665
 - **last_swarm_goal:** 499
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904155931:5:2b9d4e`
+*04.09. 15:59 UTC · Quelle: dream*
+
+Drive goals age without automatic cost-benefit re-evaluation, causing stale objectives to consume planning cycles.
+
+### `dream:20260904155931:4:b654fb`
+*04.09. 15:59 UTC · Quelle: dream*
+
+Reflex tools succeed when dependencies are present but lack pre-flight validation, risking silent fallback loops on missing configs.
+
+### `dream:20260904155931:3:b1061c`
+*04.09. 15:59 UTC · Quelle: dream*
+
+Skill proposals accumulate without a promotion/archival mechanism, leading to proposal debt and missed automation opportunities.
+
+### `dream:20260904155931:2:93f6ec`
+*04.09. 15:59 UTC · Quelle: dream*
+
+Latency variance between working models is extreme (3.7s vs 46.3s), making blind fallback dangerous for user-facing tasks.
+
+### `dream:20260904155931:1:be8c06`
+*04.09. 15:59 UTC · Quelle: dream*
+
+Rate-limit exhaustion (429 errors) across multiple free-tier providers is the dominant failure mode, causing cascading fallbacks and latency spikes.
 
 ### `dream:20260904154800:5:905bcf`
 *04.09. 15:48 UTC · Quelle: dream*
