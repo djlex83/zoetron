@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11120 Fakten** · Stand 2026-09-04 06:59 UTC · aktualisiert bei jedem Herzschlag
+**11125 Fakten** · Stand 2026-09-04 07:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6180
+- **dream:** 6185
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904070715:5:1993a4`
+*04.09. 07:07 UTC · Quelle: dream*
+
+Pre-execution validation (path existence, simulation gates) is missing, leading to preventable hand_action failures and wasted swarm_started calls.
+
+### `dream:20260904070715:4:d85256`
+*04.09. 07:07 UTC · Quelle: dream*
+
+Drive goals compete without a conserved-mode heuristic, causing low-iteration cycles to waste budget on low-impact objectives.
+
+### `dream:20260904070715:3:273424`
+*04.09. 07:07 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this session) without an automated implementation pipeline, creating a backlog that never converts to deployed capabilities.
+
+### `dream:20260904070715:2:05469a`
+*04.09. 07:07 UTC · Quelle: dream*
+
+Fallback models succeed but exhibit extreme latency variance (3.4s vs 58.3s), revealing absence of latency-aware routing in model selection.
+
+### `dream:20260904070715:1:c91dc5`
+*04.09. 07:07 UTC · Quelle: dream*
+
+429 rate-limit errors are the dominant failure mode across multiple models, indicating systemic lack of proactive rate-limit awareness rather than isolated model issues.
 
 ### `dream:20260904065744:5:eeede1`
 *04.09. 06:57 UTC · Quelle: dream*
