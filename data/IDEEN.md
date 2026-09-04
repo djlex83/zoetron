@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reflexes and pruning cycles execute cleanly, showing core maintenance organs are functional.
+- Automatic fallback and retry logic is absent, causing cascading failures when primary models are overloaded.
+- The system spontaneously generates concrete skill proposals during operation, indicating a working meta-cognitive improvement loop.
+- Latency varies by an order of magnitude between models (3 s vs 27 s), so latency-aware routing is critical for responsive operation.
+- Free-tier model endpoints frequently return 429 rate-limit errors, making single-model reliance unreliable for production tasks.
 - Stale goals and analyses accumulate without TTL enforcement, consuming context slots and creating zombie work.
 - Hand actions silently succeed with empty output (e.g., 70 bytes read but no content validation), masking partial failures.
 - Swarm convergence lacks explicit criteria, leading to undefined success conditions and potential infinite cycles.
@@ -51,11 +56,6 @@
 - Swarm converged in a single cycle with score 8, suggesting convergence criteria are too loose and may accept suboptimal outputs.
 - Model 'nvidia/nemotron-3-ultra-550b-a55b:free' succeeds but exhibits 5x latency variance (26–136s), indicating unreliable capacity or cold-start effec
 - Model 'z-ai/glm-5.2:free' fails deterministically with 429 rate-limit errors, making it unusable without backoff or quota management.
-- A stale marktanalyse task has been left unfinished for too long, blocking cognitive budget and demonstrating that unfinished tasks must be actively pr
-- The reflex tool modellfehler-systematisch-reduzieren.py failed and a swarm was started on the same goal without diagnosing the root cause, repeating t
-- The hand_action failed because relative paths and ZOETRON_DATA were not validated before execution, showing that path resolution checks must precede f
-- nvidia/nemotron-3-ultra-550b-a55b succeeds reliably but with high latency (38-138s), meaning latency-aware model routing is essential for time-sensiti
-- The z-ai/glm-5.2 model fails with persistent 429 errors on every call, indicating a circuit-breaker pattern is needed instead of blind retries.
 
 ---
 

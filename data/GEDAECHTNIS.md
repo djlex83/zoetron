@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11319 Fakten** · Stand 2026-09-04 13:17 UTC · aktualisiert bei jedem Herzschlag
+**11324 Fakten** · Stand 2026-09-04 13:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6325
+- **dream:** 6330
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904132536:5:ad23e0`
+*04.09. 13:25 UTC · Quelle: dream*
+
+Self-diagnosis reflexes and pruning cycles execute cleanly, showing core maintenance organs are functional.
+
+### `dream:20260904132536:4:7b355f`
+*04.09. 13:25 UTC · Quelle: dream*
+
+Automatic fallback and retry logic is absent, causing cascading failures when primary models are overloaded.
+
+### `dream:20260904132536:3:337799`
+*04.09. 13:25 UTC · Quelle: dream*
+
+The system spontaneously generates concrete skill proposals during operation, indicating a working meta-cognitive improvement loop.
+
+### `dream:20260904132536:2:2c79b4`
+*04.09. 13:25 UTC · Quelle: dream*
+
+Latency varies by an order of magnitude between models (3 s vs 27 s), so latency-aware routing is critical for responsive operation.
+
+### `dream:20260904132536:1:30e7ac`
+*04.09. 13:25 UTC · Quelle: dream*
+
+Free-tier model endpoints frequently return 429 rate-limit errors, making single-model reliance unreliable for production tasks.
 
 ### `dream:20260904131525:5:f37377`
 *04.09. 13:15 UTC · Quelle: dream*
