@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11381 Fakten** · Stand 2026-09-04 16:02 UTC · aktualisiert bei jedem Herzschlag
+**11393 Fakten** · Stand 2026-09-04 16:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6385
-- **swarm_artifact:** 2370
-- **last_swarm_critique:** 751
-- **anti_pattern:** 665
-- **last_swarm_goal:** 499
-- **strategy:** 353
+- **dream:** 6390
+- **swarm_artifact:** 2372
+- **last_swarm_critique:** 752
+- **anti_pattern:** 667
+- **last_swarm_goal:** 500
+- **strategy:** 354
 - **tool:** 146
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
@@ -17,6 +17,51 @@
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vergessene Ziele und Kri:2`
+*04.09. 16:17 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): ML-based Relevance Classification & Automated Triage - Train a classifier (or use a zero-shot LLM) on historical project data to predict relevance and impact of each goal/criticism. Combine predictions with rule-based heurist
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Vergessene Ziele und Kri:1`
+*04.09. 16:17 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Human-in-the-Loop Collaborative Re-evaluation - Design a facilitated workshop process where stakeholders (or simulated personas) review each goal/criticism in a structured session. Use a digital tool (e.g., Miro, Jira) to cap
+
+### `last_swarm_critique`
+*04.09. 16:15 UTC · Quelle: critic*
+
+score=4; issues=Does not perform re-evaluation (neu bewerten) - only discovers and lists goals/criticisms without assessing relevance, scoring, or making decisions; No structured output artifact produced for swarm consumption - only prints to stdout; No priori
+
+### `last_swarm_goal`
+*04.09. 16:11 UTC · Quelle: system*
+
+Vergessene Ziele und Kritik neu bewerten
+
+### `dream:20260904161037:5:4c42cc`
+*04.09. 16:10 UTC · Quelle: dream*
+
+Swarm convergence accepts null scores and single-cycle completion, allowing premature convergence without measurable outcome thresholds.
+
+### `dream:20260904161037:4:d4f824`
+*04.09. 16:10 UTC · Quelle: dream*
+
+Tools execute without pre-flight dependency validation (API keys, endpoints, schemas), risking silent fallback loops when external services degrade.
+
+### `dream:20260904161037:3:9c3b47`
+*04.09. 16:10 UTC · Quelle: dream*
+
+Drive goals go stale (market analysis artifacts, model error reduction) without TTL enforcement or cost-benefit re-evaluation, causing zombie work that clutters context.
+
+### `dream:20260904161037:2:769919`
+*04.09. 16:10 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this log) but lack an execution pipeline; the reflex 'vorgeschlagene-fähigkeiten-wirklich-fert.py' ran once but no proposals graduated, indicating no automated promotion/validation loop.
+
+### `dream:20260904161037:1:f263bc`
+*04.09. 16:10 UTC · Quelle: dream*
+
+A single provider (z-ai/glm-5.2:free) repeatedly fails with 429 errors while the fallback (nvidia/nemotron-3-ultra) succeeds but at 23-36s latency, revealing missing per-provider health scoring and automatic fallback logic.
 
 ### `dream:20260904155931:5:2b9d4e`
 *04.09. 15:59 UTC · Quelle: dream*
