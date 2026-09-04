@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 18:54:18",
+ "stand": "2026-09-04 19:07:24",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -123,12 +123,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-dauerhaft-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -175,6 +169,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "marktanalyse-swarm-arbeit-abschließen.py",
@@ -232,6 +232,12 @@
   },
   {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "modellfehler-dauerhaft-reduzieren.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -333,12 +339,6 @@
    "quote": 1.0
   },
   {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -411,8 +411,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.761,
- "simulationen_angewandt": 22,
+ "haende_quote": 0.766,
+ "simulationen_angewandt": 21,
  "swarm_scores": {
   "n": 30,
   "best": 9.0,
@@ -420,8 +420,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 6.18
+   "n": 27,
+   "schnitt": 6.15
   },
   "bau": {
    "n": 2,

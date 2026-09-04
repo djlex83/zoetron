@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 18:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The persistent gap between skill proposals and their implementation is itself a recurring failure mode, indicating that proposal generation without en
+- Self-diagnosis reporting zero organ errors despite repeated model failures shows that internal health checks do not capture external API reliability, 
+- Pruning 44 events but 0 facts reveals that stale event data accumulates far faster than factual knowledge, meaning event-level cleanup alone is insuff
+- The sole successful model (ling-3.0-flash-fin) with 3.1s latency indicates smaller, faster models are more resilient under load than larger ones, sugg
+- Sequential retries across multiple models without circuit breakers amplify rate-limit cascades, turning a single 429 into a systemic failure that bloc
 - Self-diagnosis reports zero organ errors while model layer fails repeatedly, exposing a monitoring blind spot at the inference boundary.
 - Nvidia 502 errors reveal upstream provider instability that mimics rate limits but requires different retry semantics.
 - Successful goal completion (score 9) despite 60% model failure rate proves the swarm architecture tolerates partial LLM degradation.
@@ -51,11 +56,6 @@
 - Under conserve budget (max_tasks=3), the system still wastes iterations on repeatedly failing models (z-ai/glm-5.2 failed 5+ times).
 - Local hand_action execution (1.6s) is 5-75x faster and more reliable than any API model call (7-123s).
 - Free-tier models exhibit pervasive rate-limiting (429) and upstream overload (502) making them unreliable as primary dependencies.
-- Simulation catches risks (3) and demands revisions (3) but the system proceeds anyway under high stress, risking further failures.
-- Previously proposed skills (dynamic router, quota tracker, automatic fallback) remain unimplemented despite repeated 429 failures across sessions.
-- Relative path handling fails when the working directory diverges from ZOETRON_DATA, causing silent zero-byte reads in hand actions.
-- Fallback models succeed but impose 10-20x latency penalties (22-72s vs 3.2s) that stall the metabolism budget under conserve mode.
-- Rate-limit errors cascade because no shared quota tracker reads OpenRouter headers and enforces per-model cooldowns before 429 occurs.
 
 ---
 

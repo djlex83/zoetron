@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11465 Fakten** · Stand 2026-09-04 18:56 UTC · aktualisiert bei jedem Herzschlag
+**11470 Fakten** · Stand 2026-09-04 19:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6445
+- **dream:** 6450
 - **swarm_artifact:** 2380
 - **last_swarm_critique:** 755
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904190651:5:f34c47`
+*04.09. 19:06 UTC · Quelle: dream*
+
+The persistent gap between skill proposals and their implementation is itself a recurring failure mode, indicating that proposal generation without enforced execution tracking produces no lasting capability gain.
+
+### `dream:20260904190651:4:610027`
+*04.09. 19:06 UTC · Quelle: dream*
+
+Self-diagnosis reporting zero organ errors despite repeated model failures shows that internal health checks do not capture external API reliability, creating a blind spot between perceived and actual system health.
+
+### `dream:20260904190651:3:070ab3`
+*04.09. 19:06 UTC · Quelle: dream*
+
+Pruning 44 events but 0 facts reveals that stale event data accumulates far faster than factual knowledge, meaning event-level cleanup alone is insufficient without concurrent fact consolidation.
+
+### `dream:20260904190651:2:e53d02`
+*04.09. 19:06 UTC · Quelle: dream*
+
+The sole successful model (ling-3.0-flash-fin) with 3.1s latency indicates smaller, faster models are more resilient under load than larger ones, suggesting a preference for lightweight endpoints under stress.
+
+### `dream:20260904190651:1:aef66d`
+*04.09. 19:06 UTC · Quelle: dream*
+
+Sequential retries across multiple models without circuit breakers amplify rate-limit cascades, turning a single 429 into a systemic failure that blocks all available endpoints.
 
 ### `tool:modellfehler-verstehen-und-verringern`
 *04.09. 18:54 UTC · Quelle: hands*
