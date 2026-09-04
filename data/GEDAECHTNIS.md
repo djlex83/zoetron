@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11532 Fakten** · Stand 2026-09-04 21:01 UTC · aktualisiert bei jedem Herzschlag
+**11531 Fakten** · Stand 2026-09-04 21:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6494
-- **swarm_artifact:** 2392
+- **dream:** 6499
+- **swarm_artifact:** 2387
 - **last_swarm_critique:** 757
 - **anti_pattern:** 669
 - **last_swarm_goal:** 505
-- **strategy:** 355
+- **strategy:** 354
 - **tool:** 151
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904212252:5:abeeb7`
+*04.09. 21:22 UTC · Quelle: dream*
+
+Calibration showed a slight optimism bias (predicted 8 vs actual 7), suggesting self-assessment should be discounted by ~1 point when planning for similar tasks.
+
+### `dream:20260904212252:4:cbf271`
+*04.09. 21:22 UTC · Quelle: dream*
+
+The evolution loop (variant generation + critic scoring) improved scores from 7 to 8-9 across three variants, confirming that iterative refinement with multi-variant scoring is effective for knowledge refresh tasks.
+
+### `dream:20260904212252:3:30a780`
+*04.09. 21:22 UTC · Quelle: dream*
+
+The system eventually succeeded by falling back to inclusionai/ling-3.0-flash-fin:free (7s latency, 8882 input tokens), demonstrating that rapid model rotation is more effective than persistent retry on a single endpoint.
+
+### `dream:20260904212252:2:b961a3`
+*04.09. 21:22 UTC · Quelle: dream*
+
+The dominant failure mode across this session was HTTP 429 from z-ai/glm-5.2:free and Google models, while Nvidia models succeeded but introduced high latency (up to 168s) and occasional 502 upstream overloads.
+
+### `dream:20260904212252:1:b2f656`
+*04.09. 21:22 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are subject to aggressive rate limiting (429 errors), and retrying the same failing model repeatedly wastes critical time instead of rotating to alternatives.
 
 ### `tool:veraltete-grenzgebiete-und-schwarm-ergeb`
 *04.09. 20:58 UTC · Quelle: hands*

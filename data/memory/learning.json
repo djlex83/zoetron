@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 20:59:05",
+ "stand": "2026-09-04 21:23:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -111,6 +105,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -130,6 +130,12 @@
   },
   {
    "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -205,12 +211,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "marktanalyse-endlich-umsetzen.py",

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 20:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 21:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 9×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration showed a slight optimism bias (predicted 8 vs actual 7), suggesting self-assessment should be discounted by ~1 point when planning for sim
+- The evolution loop (variant generation + critic scoring) improved scores from 7 to 8-9 across three variants, confirming that iterative refinement wit
+- The system eventually succeeded by falling back to inclusionai/ling-3.0-flash-fin:free (7s latency, 8882 input tokens), demonstrating that rapid model
+- The dominant failure mode across this session was HTTP 429 from z-ai/glm-5.2:free and Google models, while Nvidia models succeeded but introduced high
+- Free-tier models on OpenRouter are subject to aggressive rate limiting (429 errors), and retrying the same failing model repeatedly wastes critical ti
 - Circuit breakers and health registries address symptoms but only close the reliability gap when paired with disciplined execution of proposed solution
 - Reflex-driven maintenance (like cleaning stale swarm data) proves effective and should be generalized to other recurring housekeeping tasks.
 - The persistent gap between skill proposals and actual implementation is the primary bottleneck preventing reliability improvements.
@@ -51,11 +56,6 @@
 - Four skill proposals were generated in the first dream cycle and three more in the second, but none have been implemented, revealing a persistent gap 
 - The nvidia/nemotron-3-ultra-550b-a55b model succeeds consistently in every attempt, confirming it as the dependable fallback model despite variable la
 - The z-ai/glm-5.2 model repeatedly fails with HTTP 429 rate-limit errors across multiple timestamps, establishing it as an unreliable primary model tha
-- Pruning removes events but retains no model-performance telemetry, preventing learning from failure patterns across sleep cycles.
-- Five concrete skill proposals addressing quota, latency, and automation already exist but remain unimplemented, indicating an execution gap.
-- Latency variance between successful models (3.7s vs 19.1s) shows no latency-budget enforcement, wasting metabolism on slow fallbacks.
-- Self-diagnosis reports zero organ errors while the model layer suffers >80% failure rate, revealing a critical monitoring blind spot.
-- Free-tier models on OpenRouter exhibit systemic unreliability dominated by 429 rate-limit errors and 502 upstream failures across multiple providers.
 
 ---
 
