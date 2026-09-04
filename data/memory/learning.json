@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 10:56:55",
+ "stand": "2026-09-04 11:33:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -61,6 +55,12 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
@@ -99,6 +99,12 @@
    "quote": 1.0
   },
   {
+   "tool": "marktanalyse-endlich-abschließen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktanalyse-auffrischen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -118,12 +124,6 @@
   },
   {
    "tool": "fähigkeiten-durch-simulationen-und-evolu.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
@@ -193,18 +193,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "schwarm-orchestrierung-vollständig-aufba.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-verstehen-und-verringern.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "neue-fähigkeiten-erlernen.py",
@@ -432,14 +420,14 @@
  "haende_quote": 0.736,
  "simulationen_angewandt": 26,
  "swarm_scores": {
-  "n": 31,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 6.39
+  "schnitt": 6.38
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 30,
-   "schnitt": 6.3
+   "schnitt": 6.2
   },
   "bau": {
    "n": 1,

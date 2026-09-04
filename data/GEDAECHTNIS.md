@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11253 Fakten** · Stand 2026-09-04 10:58 UTC · aktualisiert bei jedem Herzschlag
+**11270 Fakten** · Stand 2026-09-04 11:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6280
-- **swarm_artifact:** 2357
-- **last_swarm_critique:** 748
-- **anti_pattern:** 663
-- **last_swarm_goal:** 496
-- **strategy:** 352
-- **tool:** 143
+- **dream:** 6285
+- **swarm_artifact:** 2363
+- **last_swarm_critique:** 749
+- **anti_pattern:** 665
+- **last_swarm_goal:** 497
+- **strategy:** 353
+- **tool:** 144
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-prüfen-und-sp`
+*04.09. 11:33 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten prüfen und speichern'. Datei: data/tools/vorgeschlagene-fähigkeiten-prüfen-und-sp.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:2`
+*04.09. 11:31 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Declarative Pipeline Configuration with Schema Validation Gate - Replace the code-based artifact chain with a declarative pipeline configuration that describes the entire data flow as a directed acyclic graph (DAG) of transfo
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Vorgeschlagene Fähigkeit:1`
+*04.09. 11:31 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Driven State Machine with CQRS - Replace the sequential artifact pipeline entirely with an event-sourced state machine backed by a single write-ahead log (event store). Every action — proposal discovery, validation resu
+
+### `last_swarm_critique`
+*04.09. 11:30 UTC · Quelle: critic*
+
+score=6; issues=Data flow mismatch between artifacts: Artifact 2 outputs {filename, passed, feedback, details} but Artifact 3 expects {skill_name, target, code, description, feedback} - they don't connect as a pipeline; Artifact 2 loads proposals independently
+
+### `last_swarm_goal`
+*04.09. 11:22 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten prüfen und speichern
+
+### `dream:20260904112152:5:6b8a38`
+*04.09. 11:21 UTC · Quelle: dream*
+
+Event pruning removes 81 events per cycle while zero facts are pruned, risking fact staleness and progressive context loss.
+
+### `dream:20260904112152:4:7c8ee1`
+*04.09. 11:21 UTC · Quelle: dream*
+
+Five skill proposals generated this cycle with zero implementation tracking creates proposal debt that clogs future consolidation cycles.
+
+### `dream:20260904112152:3:f13c90`
+*04.09. 11:21 UTC · Quelle: dream*
+
+Swarm convergence in 1 cycle with score 9 using 1:3:1 planner:builder:critic ratio works for review tasks but lacks validation for other task types.
+
+### `dream:20260904112152:2:25812e`
+*04.09. 11:21 UTC · Quelle: dream*
+
+Calibration error of 4 points (predicted 5 vs actual 9) reveals systematic underestimation of task feasibility when swarm converges in one cycle.
+
+### `dream:20260904112152:1:9cf53c`
+*04.09. 11:21 UTC · Quelle: dream*
+
+Free-tier model endpoints are unreliable primary dependencies with 80% failure rate across four models due to rate limits and upstream errors.
 
 ### `tool:modell-fehler-stark-reduzieren`
 *04.09. 10:56 UTC · Quelle: hands*
