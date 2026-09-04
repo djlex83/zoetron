@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8005 Neuronen · 622401 bewertete Synapsen
+Stand: 8012 Neuronen · 623225 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,10 +11,10 @@ Stand: 8005 Neuronen · 622401 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 704 | 0.24 |
-| 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 632 | 0.26 |
+| 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 633 | 0.26 |
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 673 | 0.24 |
-| 4 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 676 | 0.23 |
-| 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 683 | 0.23 |
+| 4 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 678 | 0.23 |
+| 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 684 | 0.23 |
 | 6 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 663 | 0.23 |
 | 7 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 600 | 0.25 |
 | 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 587 | 0.26 |
@@ -45,5 +45,5 @@ Stand: 8005 Neuronen · 622401 bewertete Synapsen
 | 11 | **0.55** | 💭 Self-diagnosis reports zero organ errors while… | 💭 Self-diagnosis reports zero organ errors despi… |
 | 12 | **0.55** | 🛠 „Modell-Fehler-Muster aus Health-Register anal… | 🛠 „Modell-Gesundheitsregister analysieren und Fe… |
 | 13 | **0.55** | 💭 The inclusionai/ling-3.0-flash-fin model consi… | 💭 The inclusionai/ling-3.0-flash-fin model consi… |
-| 14 | **0.55** | 💭 Self-diagnosis reports zero organ errors while… | 💭 Self-diagnosis reports zero organ errors despi… |
-| 15 | **0.55** | 💭 The swarm architecture with planner/builder/cr… | 💭 Swarm convergence in a single cycle with role … |
+| 14 | **0.55** | 💭 The swarm architecture with planner/builder/cr… | 💭 Swarm convergence in a single cycle with role … |
+| 15 | **0.54** | 💭 Swarm consistently stalls at score 6/10 with c… | 💭 Evolutionary variant selection improved score … |

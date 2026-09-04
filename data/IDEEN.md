@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 15:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 15:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Empty stdout/stderr from hand_action calls silently propagate failures; treating empty output as failure with retry-and-escalate prevents corrupted do
+- Stale goals marked with 'stale' signal consume context without producing value; TTL-based auto-archiving prevents zombie work from accumulating across
+- Free-tier API models have strict rate limits that are easily exceeded under burst requests; exponential backoff with jitter must be mandatory for all 
+- Only one model (inclusionai/ling-3.0-flash-fin) succeeded while all others failed, revealing dangerous single-point-of-failure dependency; a model hea
+- Consecutive 429 and 502 errors across multiple models indicate systemic rate-limiting, not individual model failures — a circuit breaker pattern is ne
 - Hand-action output validation is absent: empty stdout/stderr would be treated as success, masking silent failures in tool execution.
 - Goal staleness goes undetected: three drive goals persisted without TTL enforcement, risking zombie work and context bloat.
 - Skill proposals accumulate without execution pipeline: five proposals were generated this cycle but none were built, tested, or logged, creating a pro
@@ -51,11 +56,6 @@
 - Reflex-driven model reliability improvement converged immediately without scoring, implying the fix was structural (e.g., fallback logic) not parametr
 - The inclusionai/ling-3.0-flash-fin model consistently succeeds with low latency (3.6s) while larger models fail, suggesting smaller specialized models
 - Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared upstream quota exhaustion rather than individual model
-- No graceful-degradation ladder exists: when all live models fail the system has no cached-response or offline mode to preserve continuity.
-- Pruning discards 21 events per cycle without extracting recurring error signatures, losing diagnostic signal that could prevent future failures.
-- Reflex and dream/swarm tasks share the same model pool, causing critical fast-path operations to starve behind heavy batch workloads.
-- Absence of circuit-breaking allows single-model failures to cascade into full task collapse instead of triggering controlled fallback.
-- Free-tier model endpoints exhibit systemic instability with correlated 429 rate-limit and 502 upstream overload failures across multiple providers.
 
 ---
 

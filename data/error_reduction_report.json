@@ -1,0 +1,867 @@
+{
+  "generated_at": "2026-09-04T15:35:58.252023",
+  "data_source": "/workspace/zoetron/data",
+  "kpis": {
+    "total_errors": 0,
+    "errors_by_category": {},
+    "errors_by_severity": {},
+    "auto_resolved": 0,
+    "manual_resolved": 0,
+    "unresolved": 0,
+    "mttr_seconds": 0.0,
+    "error_rate_per_hour": 0.0,
+    "reduction_rate_percent": 0.0,
+    "trigger_effectiveness": {},
+    "circuit_breaker_activations": 0,
+    "escalation_count": 0,
+    "baseline_errors": 0,
+    "period_start": null,
+    "period_end": null
+  },
+  "category_stats": {
+    "rate_limit": {
+      "total": 2394,
+      "resolved": 0,
+      "resolution_rate": 0.0,
+      "avg_resolution_time": 0,
+      "severity": "high",
+      "auto_triggers": [
+        "retry",
+        "fallback",
+        "circuit_break"
+      ]
+    },
+    "timeout": {
+      "total": 449,
+      "resolved": 0,
+      "resolution_rate": 0.0,
+      "avg_resolution_time": 0,
+      "severity": "high",
+      "auto_triggers": [
+        "retry",
+        "fallback"
+      ]
+    },
+    "validation_error": {
+      "total": 566,
+      "resolved": 0,
+      "resolution_rate": 0.0,
+      "avg_resolution_time": 0,
+      "severity": "medium",
+      "auto_triggers": [
+        "alert",
+        "fallback"
+      ]
+    },
+    "auth_failure": {
+      "total": 46,
+      "resolved": 0,
+      "resolution_rate": 0.0,
+      "avg_resolution_time": 0,
+      "severity": "critical",
+      "auto_triggers": [
+        "alert",
+        "escalate"
+      ]
+    },
+    "resource_exhaustion": {
+      "total": 1247,
+      "resolved": 0,
+      "resolution_rate": 0.0,
+      "avg_resolution_time": 0,
+      "severity": "critical",
+      "auto_triggers": [
+        "circuit_break",
+        "escalate",
+        "alert"
+      ]
+    },
+    "network_error": {
+      "total": 1,
+      "resolved": 0,
+      "resolution_rate": 0.0,
+      "avg_resolution_time": 0,
+      "severity": "high",
+      "auto_triggers": [
+        "retry",
+        "fallback",
+        "circuit_break"
+      ]
+    },
+    "model_error": {
+      "total": 6085,
+      "resolved": 0,
+      "resolution_rate": 0.0,
+      "avg_resolution_time": 0,
+      "severity": "medium",
+      "auto_triggers": [
+        "retry",
+        "fallback",
+        "alert"
+      ]
+    },
+    "unknown": {
+      "total": 89625,
+      "resolved": 0,
+      "resolution_rate": 0.0,
+      "avg_resolution_time": 0,
+      "severity": "low",
+      "auto_triggers": [
+        "alert"
+      ]
+    }
+  },
+  "circuit_breakers": {},
+  "recent_events": [
+    {
+      "timestamp": "2026-09-04T15:35:58.243173",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: minimax/minimax-m3:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: minimax/minimax-m3:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243191",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243208",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-super-120b-a12b:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-super-120b-a12b:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243228",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-ultra-550b-a55b:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-ultra-550b-a55b:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243247",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3.5-lightning:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3.5-lightning:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243264",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: openrouter/free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: openrouter/free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243281",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: poolside/laguna-s-2.1:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: poolside/laguna-s-2.1:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243302",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: poolside/laguna-xs-2.1:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: poolside/laguna-xs-2.1:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243320",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: stealth/ox-alpha",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: stealth/ox-alpha"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243338",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: thinkingmachines/inkling-small:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: thinkingmachines/inkling-small:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243354",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: thinkingmachines/inkling:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: thinkingmachines/inkling:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243371",
+      "error_category": "model_error",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: z-ai/glm-5.2:free",
+      "component": "log_parser",
+      "severity": "medium",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: z-ai/glm-5.2:free"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243389",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:14Z] BENCH cohere/north-mini-code:free :: arith :: PASS (1.50s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:14Z] BENCH cohere/north-mini-code:free :: arith :: PASS (1.50s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243407",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:15Z] BENCH cohere/north-mini-code:free :: reverse :: FAIL (1.51s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:15Z] BENCH cohere/north-mini-code:free :: reverse :: FAIL (1.51s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243427",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:18Z] BENCH cohere/north-mini-code:free :: json :: FAIL (2.53s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:18Z] BENCH cohere/north-mini-code:free :: json :: FAIL (2.53s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243445",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:20Z] BENCH cohere/north-mini-code:free :: sort :: PASS (1.93s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:20Z] BENCH cohere/north-mini-code:free :: sort :: PASS (1.93s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243464",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:22Z] BENCH cohere/north-mini-code:free :: count :: PASS (1.64s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:22Z] BENCH cohere/north-mini-code:free :: count :: PASS (1.64s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243482",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:26Z] BENCH cohere/north-mini-code:free :: translate :: PASS (4.36s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:26Z] BENCH cohere/north-mini-code:free :: translate :: PASS (4.36s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243500",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:28Z] BENCH cohere/north-mini-code:free :: code :: FAIL (2.38s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:28Z] BENCH cohere/north-mini-code:free :: code :: FAIL (2.38s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243518",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:34Z] BENCH cohere/north-mini-code:free :: logic :: PASS (5.41s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:34Z] BENCH cohere/north-mini-code:free :: logic :: PASS (5.41s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243545",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:34Z] ADOPT abgelehnt fuer cohere/north-mini-code:free: score zu niedrig (5/8)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:34Z] ADOPT abgelehnt fuer cohere/north-mini-code:free: score zu niedrig (5/8)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243566",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:38Z] BENCH dots-studio/dots-3-note-preview:free :: arith :: PASS (4.11s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:38Z] BENCH dots-studio/dots-3-note-preview:free :: arith :: PASS (4.11s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243585",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:40Z] BENCH dots-studio/dots-3-note-preview:free :: reverse :: FAIL (2.64s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:40Z] BENCH dots-studio/dots-3-note-preview:free :: reverse :: FAIL (2.64s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243609",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "[2026-08-25T23:27:42Z] BENCH dots-studio/dots-3-note-preview:free :: json :: FAIL (1.27s)",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/hands_workspace/.cortex/logs/cortex_reflex.log",
+        "raw_line": "[2026-08-25T23:27:42Z] BENCH dots-studio/dots-3-note-preview:free :: json :: FAIL (1.27s)"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243812",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,208 [INFO] ============================================================",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,208 [INFO] ============================================================"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243839",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,208 [INFO] ZOEM-PROTOKOLL: START VOLLSTÄNDIGER ZYKLUS",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,208 [INFO] ZOEM-PROTOKOLL: START VOLLSTÄNDIGER ZYKLUS"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243857",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,208 [INFO] ============================================================",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,208 [INFO] ============================================================"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243874",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,208 [INFO]",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,208 [INFO]"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243894",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "--- SCHRITT 1: Export durch organismus_A_001 ---",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "--- SCHRITT 1: Export durch organismus_A_001 ---"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243921",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,209 [INFO] EXPORT: Zoem 08aaf5b1 (anti_pattern) geschrieben nach /workspace/zoetron/data/data/zoeme/out/08aaf5b1_anti_pattern_1787710665.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,209 [INFO] EXPORT: Zoem 08aaf5b1 (anti_pattern) geschrieben nach /workspace/zoetron/data/data/zoeme/out/08aaf5b1_anti_pattern_1787710665.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243942",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,209 [INFO] EXPORT: Zoem 7cf8eae4 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/7cf8eae4_lektion_1787710665.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,209 [INFO] EXPORT: Zoem 7cf8eae4 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/7cf8eae4_lektion_1787710665.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243965",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,210 [INFO] EXPORT: Zoem f9ece254 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/f9ece254_lektion_1787710665.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,210 [INFO] EXPORT: Zoem f9ece254 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/f9ece254_lektion_1787710665.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.243988",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: 08aaf5b1_anti_pattern_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/08aaf5b1_anti_pattern_1787710665.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: 08aaf5b1_anti_pattern_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/08aaf5b1_anti_pattern_1787710665.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244010",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: 7cf8eae4_lektion_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/7cf8eae4_lektion_1787710665.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: 7cf8eae4_lektion_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/7cf8eae4_lektion_1787710665.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244031",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: f9ece254_lektion_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/f9ece254_lektion_1787710665.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: f9ece254_lektion_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/f9ece254_lektion_1787710665.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244047",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:17:45,211 [INFO]",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:17:45,211 [INFO]"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244065",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "--- SCHRITT 2: Import durch organismus_B_002 mit Immunsystem ---",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "--- SCHRITT 2: Import durch organismus_B_002 mit Immunsystem ---"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244082",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,146 [INFO] ============================================================",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,146 [INFO] ============================================================"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244103",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,146 [INFO] ZOEM-PROTOKOLL: START VOLLSTÄNDIGER ZYKLUS",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,146 [INFO] ZOEM-PROTOKOLL: START VOLLSTÄNDIGER ZYKLUS"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244126",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,146 [INFO] ============================================================",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,146 [INFO] ============================================================"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244142",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,147 [INFO]",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,147 [INFO]"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244160",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "--- SCHRITT 1: Export durch organismus_A_001 ---",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "--- SCHRITT 1: Export durch organismus_A_001 ---"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244181",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,147 [INFO] EXPORT: Zoem e3f51603 (anti_pattern) geschrieben nach /workspace/zoetron/data/data/zoeme/out/e3f51603_anti_pattern_1787710799.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,147 [INFO] EXPORT: Zoem e3f51603 (anti_pattern) geschrieben nach /workspace/zoetron/data/data/zoeme/out/e3f51603_anti_pattern_1787710799.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244201",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,147 [INFO] EXPORT: Zoem 3ed57927 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/3ed57927_lektion_1787710799.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,147 [INFO] EXPORT: Zoem 3ed57927 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/3ed57927_lektion_1787710799.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244221",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,148 [INFO] EXPORT: Zoem f389bb55 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/f389bb55_lektion_1787710799.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,148 [INFO] EXPORT: Zoem f389bb55 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/f389bb55_lektion_1787710799.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244243",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,148 [INFO] ÜBERTRAGUNG: e3f51603_anti_pattern_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/e3f51603_anti_pattern_1787710799.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,148 [INFO] ÜBERTRAGUNG: e3f51603_anti_pattern_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/e3f51603_anti_pattern_1787710799.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244265",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,149 [INFO] ÜBERTRAGUNG: 3ed57927_lektion_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/3ed57927_lektion_1787710799.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,149 [INFO] ÜBERTRAGUNG: 3ed57927_lektion_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/3ed57927_lektion_1787710799.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244285",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,149 [INFO] ÜBERTRAGUNG: f389bb55_lektion_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/f389bb55_lektion_1787710799.json",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,149 [INFO] ÜBERTRAGUNG: f389bb55_lektion_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/f389bb55_lektion_1787710799.json"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244301",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "2026-08-26 02:19:59,149 [INFO]",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "2026-08-26 02:19:59,149 [INFO]"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    },
+    {
+      "timestamp": "2026-09-04T15:35:58.244322",
+      "error_category": "unknown",
+      "error_code": "LOG_PARSED",
+      "message": "--- SCHRITT 2: Import durch organismus_B_002 mit Immunsystem ---",
+      "component": "log_parser",
+      "severity": "low",
+      "context": {
+        "source": "/workspace/zoetron/data/data/zoeme/logs/zoem.log",
+        "raw_line": "--- SCHRITT 2: Import durch organismus_B_002 mit Immunsystem ---"
+      },
+      "resolved": false,
+      "resolution_time_seconds": null,
+      "trigger_action": null
+    }
+  ]
+}
