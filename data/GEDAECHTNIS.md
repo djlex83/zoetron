@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11334 Fakten** · Stand 2026-09-04 13:48 UTC · aktualisiert bei jedem Herzschlag
+**11339 Fakten** · Stand 2026-09-04 14:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6340
+- **dream:** 6345
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904140455:5:d347f9`
+*04.09. 14:04 UTC · Quelle: dream*
+
+Goals persist for many cycles without TTL enforcement (market analysis, model reliability), causing zombie work that clutters drive.
+
+### `dream:20260904140455:4:fdd56d`
+*04.09. 14:04 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ this cycle) but none are executed, creating a planning-execution gap that wastes context and trust.
+
+### `dream:20260904140455:3:5ffb88`
+*04.09. 14:04 UTC · Quelle: dream*
+
+Reflex tool 'marktanalyse-endlich-abschließen.py' succeeded where swarm stalled, proving targeted scripts outperform open-ended swarms for bounded tasks.
+
+### `dream:20260904140455:2:f1f38d`
+*04.09. 14:04 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra works but introduces 30-57s latency, making it unsuitable for time-critical reflexes without async handling.
+
+### `dream:20260904140455:1:4c9b99`
+*04.09. 14:04 UTC · Quelle: dream*
+
+Repeated 429 errors from z-ai/glm-5.2:free indicate unreliable provider that should be deprioritized or circuit-broken after 2 consecutive failures.
 
 ### `dream:20260904134530:5:d22895`
 *04.09. 13:45 UTC · Quelle: dream*

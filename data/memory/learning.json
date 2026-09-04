@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-04 13:46:06",
+ "stand": "2026-09-04 14:05:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -198,12 +198,6 @@
    "tool": "regelmäßige-selbstprüfung-etablieren.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
