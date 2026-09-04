@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 01:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 01:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Nvidia Nemotron succeeds but at 24-38s latency — usable for quality-critical paths but too slow for reflex loops, requiring tiered routing.
+- Fact TTL pruning removed 0 facts despite 28 events pruned — access-frequency decay not triggering suggests thresholds too high or tracking broken.
+- Skill proposals accumulate but lack implementation tracking — 5 proposals logged, 0 confirmed deployed, creating proposal-theater without execution.
+- Reflex completion without score capture (score: null) creates false convergence — tasks marked done have no quality signal, making improvement impossi
+- 429 errors on free-tier models follow a burst pattern — same models fail repeatedly within seconds then recover, indicating rate-limit buckets not req
 - Stale goals (market analysis weeks old) persist because no mechanism escalates or reformulates long-dormant objectives.
 - Hand actions succeed when instrumented (exit code, duration captured), but transient failures lack automatic retry with backoff.
 - Self-improvement loops lack convergence detection, causing indefinite cycling without measurable progress.
@@ -51,11 +56,6 @@
 - The system repeatedly proposes the same model-router skill (twice in this log) because no deployment tracker exists to close the loop.
 - Working models (Nemotron, Ling) exhibit 15-30s latency, indicating cold-start or queueing overhead that degrades interactive use.
 - Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads.
-- Self-diagnosis and reflex loops function correctly but lack integration with model-health telemetry for closed-loop adaptation.
-- Multiple independent skill proposals converge on model routing, calibration logging, and stale-data detection – indicating high-value, cross-cutting i
-- Latency variance (15-69s) on successful calls exceeds acceptable thresholds for interactive use, requiring SLA-aware routing.
-- Circuit-breaker state must persist across sessions to avoid re-probing known-degraded endpoints after restarts.
-- Free-tier models exhibit correlated failure bursts (429/502) making single-model reliance untenable for production workloads.
 
 ---
 
