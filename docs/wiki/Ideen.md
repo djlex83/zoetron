@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 04:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 05:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-triggered swarm execution fails silently without leaving traceable artifacts for post-mortem analysis.
+- File system operations fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths.
+- Only inclusionai/ling-3.0-flash-fin:free succeeded, suggesting smaller specialized models have better availability.
+- Nvidia-hosted models return 502 upstream errors indicating provider-side capacity saturation, not client errors.
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
 - Multiple skill proposals generated in prior cycles remain unimplemented, creating proposal debt that blocks systemic improvement.
 - Zero facts pruned despite 54 events pruned indicates asymmetric memory management where factual knowledge accumulates without decay.
 - Swarm convergence in a single cycle with score 8 suggests premature convergence without adequate exploration of alternative solutions.
@@ -51,11 +56,6 @@
 - The system's error prediction calibration significantly underestimates actual failures (predicted 3 vs actual 8), indicating the failure model doesn't
 - Nvidia Nemotron 3 Ultra shows high latency variance (20-115s) but succeeds where rate-limited models fail, suggesting it has higher quota or priority.
 - Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
-- Stale high-value artifacts (market analyses) persist unused while the system spins on model reliability, indicating misaligned priority scheduling.
-- No per-model rate-limit tracking exists, causing repeated hammering of exhausted endpoints instead of switching to healthy alternatives.
-- Skill proposals accumulate (5 in log) but execution fails because the required models are unavailable, creating a proposal-execution deadlock.
-- The system enters conserve mode (stress=1.0) but continues attempting model-intensive operations, wasting its single iteration budget on doomed calls.
-- Free-tier models (glm-5.2, nemotron, gemma) exhibit cascading rate-limit (429) and overload (502) failures, making single-model reliance a systemic ri
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 04:56:13",
+ "stand": "2026-09-04 05:05:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -90,12 +90,6 @@
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -309,6 +303,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -373,6 +373,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.69,

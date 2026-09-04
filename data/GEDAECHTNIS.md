@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11053 Fakten** · Stand 2026-09-04 04:58 UTC · aktualisiert bei jedem Herzschlag
+**11058 Fakten** · Stand 2026-09-04 05:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6125
+- **dream:** 6130
 - **swarm_artifact:** 2333
 - **last_swarm_critique:** 744
 - **anti_pattern:** 657
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904050459:5:da20ee`
+*04.09. 05:04 UTC · Quelle: dream*
+
+Reflex-triggered swarm execution fails silently without leaving traceable artifacts for post-mortem analysis.
+
+### `dream:20260904050459:4:561663`
+*04.09. 05:04 UTC · Quelle: dream*
+
+File system operations fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths.
+
+### `dream:20260904050459:3:c72c35`
+*04.09. 05:04 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free succeeded, suggesting smaller specialized models have better availability.
+
+### `dream:20260904050459:2:37f556`
+*04.09. 05:04 UTC · Quelle: dream*
+
+Nvidia-hosted models return 502 upstream errors indicating provider-side capacity saturation, not client errors.
+
+### `dream:20260904050459:1:0a6733`
+*04.09. 05:04 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for production workflows.
 
 ### `dream:20260904045551:5:cbeaae`
 *04.09. 04:55 UTC · Quelle: dream*
