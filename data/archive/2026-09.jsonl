@@ -9170,3 +9170,45 @@
 {"ts": 1787901757.701206, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten praktisch üben", "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py", "ok": true}}
 {"ts": 1787901758.1183975, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten praktisch üben", "score": null, "converged": true, "mode": "reflex"}}
 {"ts": 1787901856.1811812, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787902138.5418818, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787902139.7819352, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787902143.705122, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787902143.7051194, "schalter_geoeffnet": false}}
+{"ts": 1787902207.1811507, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 63.5, "tokens_ein": 1417, "tokens_aus": 1154}}
+{"ts": 1787902207.1817153, "kind": "skill_proposal", "payload": {"proposal": "Implement a model registry with automatic failover that tracks per-endpoint error rates, latency percentiles, and circuit-breaker state."}}
+{"ts": 1787902207.1817715, "kind": "skill_proposal", "payload": {"proposal": "Add a simulation/swarm usage quota to the planner that forces a minimum ratio of simulation-driven actions per planning cycle."}}
+{"ts": 1787902207.1818273, "kind": "skill_proposal", "payload": {"proposal": "Create a convergence auditor that logs iteration count, score delta, and risk count for every reflex/act_done to detect premature convergence."}}
+{"ts": 1787902207.1818874, "kind": "skill_proposal", "payload": {"proposal": "Build a memory linker that periodically embeds and clusters old dream insights to surface non-obvious connections."}}
+{"ts": 1787902207.1819441, "kind": "skill_proposal", "payload": {"proposal": "Enforce a skill adoption gate: any approved skill proposal must be instantiated as a tool within 3 cycles or be archived."}}
+{"ts": 1787902207.1819983, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787902209.41002, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787902209.4100163, "schalter_geoeffnet": false}}
+{"ts": 1787902246.3162465, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 36.9, "tokens_ein": 453, "tokens_aus": 684}}
+{"ts": 1787902246.316435, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1787902246.316514, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich nutzen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber wenige werden wirklich angewendet.", "signal": "gap"}}
+{"ts": 1787902246.3165796, "kind": "drive_goal", "payload": {"title": "Traumerkenntnisse besser verwerten", "why": "Träume liefern wertvolle Hinweise, die aber noch nicht systematisch genutzt werden.", "signal": "combination"}}
+{"ts": 1787902248.3987138, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.21, "gelesen": 1}}
+{"ts": 1787902248.3992648, "kind": "reflex_used", "payload": {"goal": "Reflexe und Aktionen verbessern", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
+{"ts": 1787902248.8654902, "kind": "act_done", "payload": {"goal_title": "Reflexe und Aktionen verbessern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787902347.678396, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787902416.422547, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787902417.7031932, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787902421.9862323, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787902421.986229, "schalter_geoeffnet": false}}
+{"ts": 1787902422.9003239, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1787902422.900321, "schalter_geoeffnet": false}}
+{"ts": 1787902423.0165567, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787902423.0165548, "schalter_geoeffnet": false}}
+{"ts": 1787902423.1227198, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787902423.1227174, "schalter_geoeffnet": false}}
+{"ts": 1787902423.3400679, "kind": "model_fail", "payload": {"model": "poolside/laguna-s-2.1:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787902423.3400648, "schalter_geoeffnet": false}}
+{"ts": 1787902432.246743, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 8.9, "tokens_ein": 1454, "tokens_aus": 1402}}
+{"ts": 1787902432.24735, "kind": "skill_proposal", "payload": {"proposal": "Build a model router that tracks per-endpoint 429 rates, latency percentiles, and success rates, then dynamically weights fallbacks."}}
+{"ts": 1787902432.247411, "kind": "skill_proposal", "payload": {"proposal": "Implement pre-flight organ existence checks before swarm launch to fail fast on missing tools like swarm.py."}}
+{"ts": 1787902432.2474682, "kind": "skill_proposal", "payload": {"proposal": "Add a pre-flight model health check that blacklists models with recent 429 errors and selects fallback automatically."}}
+{"ts": 1787902432.2475228, "kind": "skill_proposal", "payload": {"proposal": "Wrap hand_action in retry-with-backoff and path-validation logic to eliminate silent read failures."}}
+{"ts": 1787902432.2475755, "kind": "skill_proposal", "payload": {"proposal": "Create a calibration tracker that logs prediction vs actual scores per goal type and adjusts future estimates."}}
+{"ts": 1787902432.2476306, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787902434.1526277, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787902434.152625, "schalter_geoeffnet": false}}
+{"ts": 1787902442.0155315, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 7.9, "tokens_ein": 453, "tokens_aus": 692}}
+{"ts": 1787902442.0156662, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Zu viele Modelle scheitern, wir brauchen bessere Vorhersagen für sicheres Handeln.", "signal": "failure"}}
+{"ts": 1787902442.0157514, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich nutzen", "why": "Viele Ideen werden vorgeschlagen, aber wenige werden echt angewendet und getestet.", "signal": "gap"}}
+{"ts": 1787902442.0158174, "kind": "drive_goal", "payload": {"title": "Traum-Erkenntnisse in Handlungen umsetzen", "why": "Träume liefern neues Wissen, das wir für echtes Handeln nutzen sollten.", "signal": "combination"}}
+{"ts": 1787902444.4893656, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 1}}
+{"ts": 1787902444.4900117, "kind": "reflex_used", "payload": {"goal": "Mehr Träume zum Lernen nutzen", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
+{"ts": 1787902444.876661, "kind": "act_done", "payload": {"goal_title": "Mehr Träume zum Lernen nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787902543.3240545, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

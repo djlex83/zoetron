@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11135 Fakten** · Stand 2026-09-04 07:29 UTC · aktualisiert bei jedem Herzschlag
+**11140 Fakten** · Stand 2026-09-04 07:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6195
+- **dream:** 6200
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904073701:5:12a87c`
+*04.09. 07:37 UTC · Quelle: dream*
+
+Reflex actions are accepted as converged without any quality threshold, allowing low-quality completions to pass as done.
+
+### `dream:20260904073701:4:f4b894`
+*04.09. 07:37 UTC · Quelle: dream*
+
+Pruning discards 38 events but zero facts, indicating the pruner cannot distinguish high-signal memories; factual density scoring before discard would preserve valuable knowledge.
+
+### `dream:20260904073701:3:1aafcc`
+*04.09. 07:37 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation because there is no tracker that escalates stale proposals into concrete action items after a defined number of dream cycles.
+
+### `dream:20260904073701:2:76c796`
+*04.09. 07:37 UTC · Quelle: dream*
+
+Tasks marked converged with null scores (e.g., reflex completion) create false confidence; mandatory scoring with post-hoc assessment is needed to verify quality.
+
+### `dream:20260904073701:1:28fc9f`
+*04.09. 07:37 UTC · Quelle: dream*
+
+Model failures cascade because the system lacks per-model circuit breakers and automatic fallback routing, causing repeated 429/5xx errors to block progress.
 
 ### `dream:20260904072723:5:5e5c6b`
 *04.09. 07:27 UTC · Quelle: dream*

@@ -1,14 +1,14 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 9×)*
+- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 10×)*
 - Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic  *(hatte die Idee 8×)*
-- Require mandatory score capture on all act_done events — if score is null, trigger automated post-hoc quality  *(hatte die Idee 7×)*
-- Create a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after *(hatte die Idee 7×)*
+- Require mandatory score capture on all act_done events — if score is null, trigger automated post-hoc quality  *(hatte die Idee 8×)*
+- Create a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after *(hatte die Idee 8×)*
 - Build a skill-compilation pipeline that lints, type-checks, and runs unit tests on generated code before atomi *(hatte die Idee 6×)*
 - Create a predictive budget allocator that estimates task complexity from prompt tokens and historical latency/ *(hatte die Idee 6×)*
 - Develop a knowledge-rehydration skill that scans stale facts/market analyses nightly, extracts actionable patt *(hatte die Idee 5×)*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions are accepted as converged without any quality threshold, allowing low-quality completions to pass as done.
+- Pruning discards 38 events but zero facts, indicating the pruner cannot distinguish high-signal memories; factual density scoring before discard would
+- Skill proposals accumulate without implementation because there is no tracker that escalates stale proposals into concrete action items after a define
+- Tasks marked converged with null scores (e.g., reflex completion) create false confidence; mandatory scoring with post-hoc assessment is needed to ver
+- Model failures cascade because the system lacks per-model circuit breakers and automatic fallback routing, causing repeated 429/5xx errors to block pr
 - Drive goals persist unchanged (model reliability, stale market analysis, simulation gap) indicating systemic issues not addressed by current reflexes 
 - Prune_run discards 18 events per cycle without factual density scoring, risking loss of high-signal failure patterns needed for root-cause analysis.
 - Skill proposals accumulate across dream cycles (12+ proposals) but no execution tracker exists — proposals for circuit breakers, quota routers, and sy
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without a defined lifecycle (proposed→approved→implemented→validated), causing duplication and orphaned ideas.
 - Fallback routing to nemotron succeeds but exhibits high latency variance (7-31s), indicating need for latency-aware model selection.
 - Free-tier models consistently hit 429 rate limits under sustained load, making them unreliable as primary workers without quota-aware routing.
-- Pre-execution validation (path existence, simulation gates) is missing, leading to preventable hand_action failures and wasted swarm_started calls.
-- Drive goals compete without a conserved-mode heuristic, causing low-iteration cycles to waste budget on low-impact objectives.
-- Skill proposals accumulate (10+ in this session) without an automated implementation pipeline, creating a backlog that never converts to deployed capa
-- Fallback models succeed but exhibit extreme latency variance (3.4s vs 58.3s), revealing absence of latency-aware routing in model selection.
-- 429 rate-limit errors are the dominant failure mode across multiple models, indicating systemic lack of proactive rate-limit awareness rather than iso
 
 ---
 
