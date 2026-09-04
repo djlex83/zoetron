@@ -1,21 +1,56 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11541 Fakten** · Stand 2026-09-04 21:55 UTC · aktualisiert bei jedem Herzschlag
+**11555 Fakten** · Stand 2026-09-04 22:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6514
-- **swarm_artifact:** 2383
-- **last_swarm_critique:** 757
+- **dream:** 6519
+- **swarm_artifact:** 2389
+- **last_swarm_critique:** 758
 - **anti_pattern:** 669
-- **last_swarm_goal:** 505
+- **last_swarm_goal:** 506
 - **strategy:** 353
 - **tool:** 151
-- **hand_result:** 122
+- **hand_result:** 123
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `last_swarm_critique`
+*04.09. 22:08 UTC · Quelle: critic*
+
+score=8; issues=Tool-Integration (werkzeugpruefung, benchmark_organ) nur als Stub/Simulation implementiert, keine echten Aufrufe; Versionspins (known_versions) und CURRENT_GOALS hardcoded statt aus Konfiguration geladen; Fallback-Modus bei fehlendem Live-Daten
+
+### `last_swarm_goal`
+*04.09. 22:03 UTC · Quelle: system*
+
+Alte Gruppenaufgaben wiederbeleben und prüfen
+
+### `dream:20260904220320:5:604c1e`
+*04.09. 22:03 UTC · Quelle: dream*
+
+Model fallback chain succeeded only for inclusionai/ling-3.0-flash-fin and nemotron, but latency varied 3.9s–46s, making latency-aware routing essential.
+
+### `dream:20260904220320:4:624852`
+*04.09. 22:03 UTC · Quelle: dream*
+
+Tool 'veraltete-marktkenntnisse-aktualisieren.py' failed silently (ok:false, no error) while swarm started, revealing a gap between reflex execution and result verification.
+
+### `dream:20260904220320:3:2328bc`
+*04.09. 22:03 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 with conserve budget (max_tasks=3, max_iterations=1) forces premature termination of knowledge-refresh workflows.
+
+### `dream:20260904220320:2:5921f7`
+*04.09. 22:03 UTC · Quelle: dream*
+
+Simulation verdict 'revise' with equal risks and revisions (5 each) shows a brittle loop where each detected risk triggers a revision without convergence criteria.
+
+### `dream:20260904220320:1:47455b`
+*04.09. 22:03 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) across multiple free models indicate reliance on unstable endpoints without backoff or quota awareness.
 
 ### `dream:20260904215318:5:8045e5`
 *04.09. 21:53 UTC · Quelle: dream*
