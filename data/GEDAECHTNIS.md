@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11393 Fakten** · Stand 2026-09-04 16:50 UTC · aktualisiert bei jedem Herzschlag
+**11407 Fakten** · Stand 2026-09-04 17:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6400
-- **swarm_artifact:** 2362
-- **last_swarm_critique:** 752
+- **dream:** 6405
+- **swarm_artifact:** 2368
+- **last_swarm_critique:** 753
 - **anti_pattern:** 667
-- **last_swarm_goal:** 500
+- **last_swarm_goal:** 501
 - **strategy:** 354
-- **tool:** 146
+- **tool:** 147
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -17,6 +17,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:veraltetes-wissen-erneuern`
+*04.09. 17:04 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltetes Wissen erneuern'. Datei: data/tools/veraltetes-wissen-erneuern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*04.09. 17:04 UTC · Quelle: critic*
+
+score=8; issues=TTL-Prüfung basiert nur auf Erstellungsdatum - harter Cutoff auch bei jüngstem Zugriff (Design-Entscheidung, aber potentiell zu aggressiv); Keine Konfigurationsdatei für TTL-Werte - nur Hardcoded-Defaults und Funktionsparameter; Kein Dry-Run/Pr
+
+### `last_swarm_goal`
+*04.09. 16:58 UTC · Quelle: system*
+
+Veraltetes Wissen erneuern
+
+### `dream:20260904165806:5:9d9cd5`
+*04.09. 16:58 UTC · Quelle: dream*
+
+A backlog of unimplemented skill proposals exists, indicating a need for systematic lifecycle management to evaluate and promote these ideas.
+
+### `dream:20260904165806:4:694dcd`
+*04.09. 16:58 UTC · Quelle: dream*
+
+Automated memory pruning is actively managing context size, but requires continuous execution to prevent event and fact bloat.
+
+### `dream:20260904165806:3:d6fd95`
+*04.09. 16:58 UTC · Quelle: dream*
+
+Reflex tools for market analysis execute successfully and quickly, but their reliability is entirely dependent on the stability of underlying external APIs.
+
+### `dream:20260904165806:2:6a6b91`
+*04.09. 16:58 UTC · Quelle: dream*
+
+Stale goals and unfinished swarm tasks accumulate over weeks, requiring automated detection and escalation based on age and cost-benefit.
+
+### `dream:20260904165806:1:92631f`
+*04.09. 16:58 UTC · Quelle: dream*
+
+The model 'z-ai/glm-5.2:free' is consistently failing with 429 Too Many Requests errors, while 'nvidia/nemotron-3-ultra-550b-a55b:free' serves as a reliable fallback.
 
 ### `dream:20260904164801:5:bb39c9`
 *04.09. 16:48 UTC · Quelle: dream*

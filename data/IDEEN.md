@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 16:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 17:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,12 +19,12 @@
 - Deploy a persistent model-health dashboard tracking per-model success rates, latency percentiles, and quota ex *(hatte die Idee 4×)*
 - Build a synthetic load tester that simulates 429/5xx storms at 10x production rate to validate circuit breaker *(hatte die Idee 4×)*
 - Tighten swarm convergence: require score ≥8 AND critic approval OR max 3 cycles with mandatory strategy change *(hatte die Idee 4×)*
-- Enforce absolute-path resolution in the hand tool by prepending ZOETRON_DATA to any relative input before exec *(hatte die Idee 3×)*
+- Create a skill-deployment pipeline that auto-promotes any proposal tagged 'critical' after a 5-minute canary o *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- A backlog of unimplemented skill proposals exists, indicating a need for systematic lifecycle management to evaluate and promote these ideas.
+- Automated memory pruning is actively managing context size, but requires continuous execution to prevent event and fact bloat.
+- Reflex tools for market analysis execute successfully and quickly, but their reliability is entirely dependent on the stability of underlying external
+- Stale goals and unfinished swarm tasks accumulate over weeks, requiring automated detection and escalation based on age and cost-benefit.
+- The model 'z-ai/glm-5.2:free' is consistently failing with 429 Too Many Requests errors, while 'nvidia/nemotron-3-ultra-550b-a55b:free' serves as a re
 - Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots for external API dependencies.
 - Pruning discards 40-50 events per run without mining error signatures, losing recurring failure patterns.
 - Skill proposals accumulate (7+ in logs) but lack validation sandbox, risking untested promotions to production.
@@ -51,11 +56,6 @@
 - Ling-3.0-flash-fin delivers fast (4s) successful responses, making it a preferred primary model for speed-critical steps.
 - Nemotron-3-ultra provides reliable but high-latency (40-120s) completions, suitable for non-interactive heavy reasoning tasks.
 - Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for autonomous pipelines without quota management.
-- Swarm convergence accepts null scores and single-cycle completion, allowing premature convergence without measurable outcome thresholds.
-- Tools execute without pre-flight dependency validation (API keys, endpoints, schemas), risking silent fallback loops when external services degrade.
-- Drive goals go stale (market analysis artifacts, model error reduction) without TTL enforcement or cost-benefit re-evaluation, causing zombie work tha
-- Skill proposals accumulate (10+ in this log) but lack an execution pipeline; the reflex 'vorgeschlagene-fähigkeiten-wirklich-fert.py' ran once but no 
-- A single provider (z-ai/glm-5.2:free) repeatedly fails with 429 errors while the fallback (nvidia/nemotron-3-ultra) succeeds but at 23-36s latency, re
 
 ---
 
