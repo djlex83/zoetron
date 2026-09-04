@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 14:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 14:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 7 events but retained 0 facts, meaning the system discards raw experience without extracting durable lessons, causing the same failure
+- Self-diagnosis reported zero organ errors while the system experienced cascading model failures, exposing a blind spot where internal health checks ca
+- Skill proposals remain speculative without simulation validation — the drive goal 'Vorgeschlagene Fähigkeiten im Test prüfen' stayed open across cycle
+- Stale goals accumulate silently because no TTL enforcement exists; the system flagged 'Marktanalyse' as stale and generated a renewal goal, yet the or
+- Model failures are systemic rather than isolated — four consecutive provider failures (429 rate limits, 502 upstream overload) with no automatic failo
 - Goals persist for many cycles without TTL enforcement (market analysis, model reliability), causing zombie work that clutters drive.
 - Skill proposals accumulate (5+ this cycle) but none are executed, creating a planning-execution gap that wastes context and trust.
 - Reflex tool 'marktanalyse-endlich-abschließen.py' succeeded where swarm stalled, proving targeted scripts outperform open-ended swarms for bounded tas
@@ -51,11 +56,6 @@
 - Upstream 502 errors from Nvidia reveal provider-side instability that no client-side retry policy can resolve.
 - The inclusionai/ling-3.0-flash-fin model remains the only reliable endpoint under load, making it a de facto backbone for critical paths.
 - Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota exhaustion rather than isolated failures.
-- No paid-model fallback budget exists, leaving critical-path tasks without an emergency resolution path when both free endpoints fail simultaneously.
-- Latency-sensitive reflexes and computationally-heavy dream tasks share the same model pool, causing predictable resource contention and 429 exhaustion
-- Sequential model fallback without enforced timeout budgets creates cascading delays — when one model fails, the next is called immediately without res
-- The system pruned 21 events without mining them for recurring error signatures first, risking permanent loss of durable failure-pattern knowledge that
-- Free-tier models under concurrent load consistently fail with 429/502 errors, and the absence of a pre-implemented quota-aware pool causes failures to
 
 ---
 

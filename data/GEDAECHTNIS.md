@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11339 Fakten** · Stand 2026-09-04 14:10 UTC · aktualisiert bei jedem Herzschlag
+**11344 Fakten** · Stand 2026-09-04 14:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6345
+- **dream:** 6350
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904142730:5:66c811`
+*04.09. 14:27 UTC · Quelle: dream*
+
+Pruning removed 7 events but retained 0 facts, meaning the system discards raw experience without extracting durable lessons, causing the same failure patterns to recur across cycles.
+
+### `dream:20260904142730:4:4f9045`
+*04.09. 14:27 UTC · Quelle: dream*
+
+Self-diagnosis reported zero organ errors while the system experienced cascading model failures, exposing a blind spot where internal health checks cannot detect external reliability degradation.
+
+### `dream:20260904142730:3:9b1788`
+*04.09. 14:27 UTC · Quelle: dream*
+
+Skill proposals remain speculative without simulation validation — the drive goal 'Vorgeschlagene Fähigkeiten im Test prüfen' stayed open across cycles, indicating a persistent gap between proposing a skill and proving it works before execution.
+
+### `dream:20260904142730:2:1d036b`
+*04.09. 14:27 UTC · Quelle: dream*
+
+Stale goals accumulate silently because no TTL enforcement exists; the system flagged 'Marktanalyse' as stale and generated a renewal goal, yet the original objective persisted through multiple cycles, wasting context on zombie work.
+
+### `dream:20260904142730:1:d4e9a7`
+*04.09. 14:27 UTC · Quelle: dream*
+
+Model failures are systemic rather than isolated — four consecutive provider failures (429 rate limits, 502 upstream overload) with no automatic failover reveal that the system lacks a resilient routing layer, making every call a single point of failure.
 
 ### `dream:20260904140455:5:d347f9`
 *04.09. 14:04 UTC · Quelle: dream*
