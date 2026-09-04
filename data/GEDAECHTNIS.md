@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10997 Fakten** · Stand 2026-09-04 03:13 UTC · aktualisiert bei jedem Herzschlag
+**11002 Fakten** · Stand 2026-09-04 03:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6090
+- **dream:** 6095
 - **swarm_artifact:** 2321
 - **last_swarm_critique:** 742
 - **anti_pattern:** 655
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904032056:5:5fa666`
+*04.09. 03:20 UTC · Quelle: dream*
+
+Zero facts pruned despite fact-TTL proposal indicates decay policies are proposed but never deployed.
+
+### `dream:20260904032056:4:dbeea3`
+*04.09. 03:20 UTC · Quelle: dream*
+
+Stale goals (market analysis, model-error reduction) persist across cycles without automated refresh or escalation.
+
+### `dream:20260904032056:3:c94ff0`
+*04.09. 03:20 UTC · Quelle: dream*
+
+Fallback model latency varies 5× (13–63 s) with no latency-aware routing or SLA tracking.
+
+### `dream:20260904032056:2:517c8e`
+*04.09. 03:20 UTC · Quelle: dream*
+
+Skill proposals accumulate (7+ this cycle) but lack a validator→executor pipeline, leaving them perpetually unimplemented.
+
+### `dream:20260904032056:1:dba7f3`
+*04.09. 03:20 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free reveal missing per-model circuit breakers and tiered fallback logic.
 
 ### `dream:20260904031136:5:5a98ac`
 *04.09. 03:11 UTC · Quelle: dream*

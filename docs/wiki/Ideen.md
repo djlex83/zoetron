@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 03:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 03:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero facts pruned despite fact-TTL proposal indicates decay policies are proposed but never deployed.
+- Stale goals (market analysis, model-error reduction) persist across cycles without automated refresh or escalation.
+- Fallback model latency varies 5× (13–63 s) with no latency-aware routing or SLA tracking.
+- Skill proposals accumulate (7+ this cycle) but lack a validator→executor pipeline, leaving them perpetually unimplemented.
+- Recurring 429 errors on z-ai/glm-5.2:free reveal missing per-model circuit breakers and tiered fallback logic.
 - Model latency varies wildly (13s to 63s for same model), indicating unpredictable performance even when requests succeed.
 - Fact pruning retains all facts despite 23 events pruned, suggesting TTL policy is ineffective at removing stale knowledge.
 - Skill proposals accumulate without implementation tracking, causing a proposal-execution gap that wastes cognitive investment.
@@ -51,11 +56,6 @@
 - Swarm self-improvement loops frequently fail to converge (score 7, converged false) yet still evolve, suggesting convergence criteria are misaligned w
 - Free-tier models (GLM) consistently hit rate limits (429) while Nemotron remains stable, indicating provider-specific quota exhaustion as a systemic f
 - Reflex tools (veraltete-infos-auffrischen.py) execute but return ok:false without surfacing stderr, making debugging impossible.
-- File system operations fail because relative paths do not resolve against ZOETRON_DATA, causing hand actions to touch zero real files.
-- Only inclusionai/ling-3.0-flash-fin:free succeeds consistently but with 9-16s latency, creating a single-point-of-failure dependency for all LLM opera
-- Nvidia models fail with HTTP 502 'Service temporarily overloaded' despite returning status 200, revealing a mismatch between HTTP status and actual se
-- Rate limiting (HTTP 429) is the dominant failure mode across Google and Z.ai models, indicating systematic quota exhaustion rather than transient erro
-- Multiple skill proposals target the same failure modes (routing, validation, staleness, logging, calibration) but lack integration into a unified reli
 
 ---
 
