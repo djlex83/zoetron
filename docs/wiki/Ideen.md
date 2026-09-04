@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
+- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
-- Veraltete Marktanalysen aktualisieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven convergence succeeded for swarm run, showing hard-coded fallbacks outperform LLM planning under rate limits.
+- Model latency varies wildly (5–68s) on fallback, necessitating latency-weighted routing for predictable performance.
+- Stale market analyses and goals persist unused because no automated freshness detector triggers refresh.
+- Skill proposals accumulate (65+) without validation gates or implementation tracking, creating a capability gap.
+- Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with circuit breakers.
 - Metabolic stress signals exist but do not trigger scheduling degradation, leaving the system vulnerable under load.
 - Relative path failures recur across tools, requiring a centralized absolute-path resolver anchored to ZOETRON_DATA.
 - Skill proposals accumulate without application because they lack mandatory implementation sketches and smoke tests.
@@ -51,11 +56,6 @@
 - Reflex-mode completions bypass quality assessment entirely, allowing low-quality or unverified results to be accepted as final without any threshold c
 - Tasks marked as converged with null scores reveal a quality blind spot where completion is conflated with correctness, producing unreliable outcomes w
 - Transient API failures (429/502) are the dominant and recurring failure mode across multiple providers, indicating the system lacks automated circuit-
-- Fact pruning discards events without validation: 38 events pruned with zero fact audit means missed entities/relations silently degrade knowledge qual
-- Hand-action observability is insufficient: transient failures (network, timeout) are indistinguishable from logic errors, preventing targeted retries.
-- Self-improvement loops lack convergence guards: without automatic abort criteria, cycles waste compute on stagnant objectives.
-- Skill proposals accumulate but never execute: 60 proposals exist with near-zero adoption, indicating a missing proposal-to-implementation pipeline.
-- Model reliability is the primary bottleneck: 429 rate limits and 502 upstream errors cascade across multiple providers, making single-model dependence
 
 ---
 

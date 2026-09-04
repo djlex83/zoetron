@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10916 Fakten** · Stand 2026-09-04 00:45 UTC · aktualisiert bei jedem Herzschlag
+**10921 Fakten** · Stand 2026-09-04 00:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6030
+- **dream:** 6035
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904005237:5:7151f7`
+*04.09. 00:52 UTC · Quelle: dream*
+
+Reflex-driven convergence succeeded for swarm run, showing hard-coded fallbacks outperform LLM planning under rate limits.
+
+### `dream:20260904005237:4:d71b8c`
+*04.09. 00:52 UTC · Quelle: dream*
+
+Model latency varies wildly (5–68s) on fallback, necessitating latency-weighted routing for predictable performance.
+
+### `dream:20260904005237:3:ed793e`
+*04.09. 00:52 UTC · Quelle: dream*
+
+Stale market analyses and goals persist unused because no automated freshness detector triggers refresh.
+
+### `dream:20260904005237:2:67f755`
+*04.09. 00:52 UTC · Quelle: dream*
+
+Skill proposals accumulate (65+) without validation gates or implementation tracking, creating a capability gap.
+
+### `dream:20260904005237:1:d91714`
+*04.09. 00:52 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with circuit breakers.
 
 ### `dream:20260904004259:5:113c33`
 *04.09. 00:42 UTC · Quelle: dream*

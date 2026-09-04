@@ -8066,3 +8066,20 @@
 {"ts": 1787877691.019369, "kind": "simulation", "payload": {"goal": "Traumerkenntnisse mit Wissen verknüpfen", "verdict": "revise", "risks": 3, "revisions": 3}}
 {"ts": 1787877691.019468, "kind": "simulation_applied", "payload": {"revisions": 3}}
 {"ts": 1787877691.7632542, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877691.763252, "schalter_geoeffnet": false}}
+{"ts": 1787877747.179904, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 55.4, "tokens_ein": 2164, "tokens_aus": 2927}}
+{"ts": 1787877747.6275775, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877747.6275744, "schalter_geoeffnet": false}}
+{"ts": 1787877832.0662885, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 84.4, "tokens_ein": 2553, "tokens_aus": 4185}}
+{"ts": 1787877832.7652915, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877832.7652872, "schalter_geoeffnet": false}}
+{"ts": 1787877868.6424694, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 35.9, "tokens_ein": 2977, "tokens_aus": 2264}}
+{"ts": 1787877869.1165068, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25, "gelesen": 2}}
+{"ts": 1787877869.1167088, "kind": "tor", "payload": {"goal": "Traumerkenntnisse mit Wissen verknüpfen", "gruen": true, "grund": "Artefakt laeuft (264 Zeilen Python)", "zyklus": 1}}
+{"ts": 1787877869.7940223, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877869.7940207, "schalter_geoeffnet": false}}
+{"ts": 1787877978.7475393, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 109.0, "tokens_ein": 8412, "tokens_aus": 1868}}
+{"ts": 1787877978.7486372, "kind": "calibration", "payload": {"goal": "Traumerkenntnisse mit Wissen verknüpfen", "predicted": 3, "actual": 8, "abs_error": 5}}
+{"ts": 1787877978.7487411, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 8}}
+{"ts": 1787877995.298229, "kind": "bahnen", "payload": {"goal": "Traumerkenntnisse mit Wissen verknüpfen", "delta": 1.0, "kanten": 15, "hat_code": true, "score": 8, "abgerufen": 5, "ids": ["e:dc2324e8b289", "e:84e5882e1d52", "e:4e19c5d22de6", "f:5a1d9a7dd3dc", "e:7b1ff08e97e7"], "ziel_id": "g:c387fd0a943c"}}
+{"ts": 1787877995.2984939, "kind": "swarm_finished", "payload": {"goal": "Traumerkenntnisse mit Wissen verknüpfen", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1787877995.2987452, "kind": "act_done", "payload": {"goal_title": "Traumerkenntnisse mit Wissen verknüpfen", "score": 8, "converged": true}}
+{"ts": 1787877995.7649736, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 2}}
+{"ts": 1787877997.8205087, "kind": "issue_synced", "payload": {"issue": 172, "state": "closed"}}
+{"ts": 1787878086.1423366, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
