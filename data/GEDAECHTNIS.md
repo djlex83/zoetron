@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11226 Fakten** · Stand 2026-09-04 10:19 UTC · aktualisiert bei jedem Herzschlag
+**11231 Fakten** · Stand 2026-09-04 10:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6265
+- **dream:** 6270
 - **swarm_artifact:** 2351
 - **last_swarm_critique:** 747
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904102755:5:9f3205`
+*04.09. 10:27 UTC · Quelle: dream*
+
+The prune_run discarded 9 events while preserving 0 facts, suggesting the pruning strategy may be over-filtering event-level data while retaining low-signal facts that should also be culled.
+
+### `dream:20260904102755:4:2e9905`
+*04.09. 10:27 UTC · Quelle: dream*
+
+Act_done events are recorded with null scores, meaning convergence is being accepted without measurable validation — this undermines the entire quality-assessment loop.
+
+### `dream:20260904102755:3:d4b65d`
+*04.09. 10:27 UTC · Quelle: dream*
+
+The reflex-trigger mechanism successfully executed a stale goal (simulationen-gezielt-einsetzen.py) and converged, proving that automated reflexes are an effective fallback when manual progress stalls.
+
+### `dream:20260904102755:2:d7ce9a`
+*04.09. 10:27 UTC · Quelle: dream*
+
+Skill proposals are being generated but not consistently implemented — the proposal-execution tracker was proposed twice without evidence of deployment, revealing a persistent proposal-to-execution gap.
+
+### `dream:20260904102755:1:5a9e57`
+*04.09. 10:27 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model repeatedly fails with 429 rate-limit errors across multiple dream cycles, indicating that relying on a single model without fallback is a systemic single point of failure.
 
 ### `tool:alte-ziele-und-kritik-überprüfen`
 *04.09. 10:17 UTC · Quelle: hands*

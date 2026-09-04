@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 10:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 10:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,29 +18,34 @@
 - Add a fact-TTL janitor that expires facts older than 7 days unless explicitly re-validated, logging expiration *(hatte die Idee 4×)*
 - Build a fact-extraction validator that audits pruned events for missed entities/relations and retrains the ext *(hatte die Idee 4×)*
 - Implement fact TTL with access-frequency decay: auto-expire facts untouched for 7 days AND accessed fewer than *(hatte die Idee 4×)*
+- Add a background-batch queue for high-latency or unreliable models to prevent them from blocking the main exec *(hatte die Idee 4×)*
 - Implement a quota-aware router with per-model 429/5xx tracking in 60s rolling windows, tripping circuit breake *(hatte die Idee 4×)*
-- Deploy a persistent model-health dashboard tracking per-model success rates, latency percentiles, and quota ex *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 9×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The prune_run discarded 9 events while preserving 0 facts, suggesting the pruning strategy may be over-filtering event-level data while retaining low-
+- Act_done events are recorded with null scores, meaning convergence is being accepted without measurable validation — this undermines the entire qualit
+- The reflex-trigger mechanism successfully executed a stale goal (simulationen-gezielt-einsetzen.py) and converged, proving that automated reflexes are
+- Skill proposals are being generated but not consistently implemented — the proposal-execution tracker was proposed twice without evidence of deploymen
+- The z-ai/glm-5.2 model repeatedly fails with 429 rate-limit errors across multiple dream cycles, indicating that relying on a single model without fal
 - Recurring dream cycles surface identical model failures, indicating consolidation isn't translating into permanent architectural fixes.
 - Drive goals are set reactively (failure, stale signals) without a systematic review cadence, leading to strategic drift.
 - Skill proposals accumulate without enforced ownership or deadlines, creating a backlog of unimplemented resilience improvements.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without validation loops, creating proposal debt that clogs the system.
 - Latency variance across models (4s vs 40s) demands latency-aware routing for interactive vs batch tasks.
 - Free tier models exhibit cascading 429/5xx failures under load, requiring circuit-breaker routing with paid fallback.
-- Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots for external API dependencies.
-- Drive goals (model reliability, market analysis, skill learning) remain stale because no scheduler admits them into the metabolism budget.
-- Skill proposals accumulate but lack a validation gate (tests, docs, deps) before swarm launch, causing proposal debt and unverified capabilities.
-- Free-tier models (z-ai/glm-5.2) consistently fail with 429 rate-limit errors, making them unreliable as primary providers without automated fallback.
-- Stale goals persist indefinitely without automated reflex triggers for script-based remediation.
 
 ---
 
