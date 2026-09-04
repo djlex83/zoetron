@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-04 19:07:24",
+ "stand": "2026-09-04 19:17:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {

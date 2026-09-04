@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model-layer failures dominate, indicating health checks miss the actual failure surface.
+- Fifty skill proposals accumulate unimplemented because no sprint mechanism converts proposals into deployed code.
+- Reflex-driven tool execution converged the swarm goal without planner involvement, proving reflexes can bypass brittle planning.
+- High-latency fallbacks (nemotron ~30s) succeed but exceed metabolism budgets, making them unreliable for time-critical loops.
+- Rate-limit headers (x-ratelimit-remaining, retry-after) are ignored, causing repeated 429s across three different model families.
 - The persistent gap between skill proposals and their implementation is itself a recurring failure mode, indicating that proposal generation without en
 - Self-diagnosis reporting zero organ errors despite repeated model failures shows that internal health checks do not capture external API reliability, 
 - Pruning 44 events but 0 facts reveals that stale event data accumulates far faster than factual knowledge, meaning event-level cleanup alone is insuff
@@ -51,11 +56,6 @@
 - Successful goal completion (score 9) despite 60% model failure rate proves the swarm architecture tolerates partial LLM degradation.
 - Calibration error of +4 cycles indicates the planner systematically underestimates execution complexity for multi-role swarms.
 - Rate limiting (429) cascades across all free-tier models simultaneously, making single-model fallback ineffective.
-- Simulation approved 'go' despite 3 risks/3 revisions; artifact (206 lines Python) ran successfully, validating risk tolerance.
-- inclusionai/ling-3.0-flash-fin:free is the only model with consistent low-latency success (7-11s) under load.
-- Under conserve budget (max_tasks=3), the system still wastes iterations on repeatedly failing models (z-ai/glm-5.2 failed 5+ times).
-- Local hand_action execution (1.6s) is 5-75x faster and more reliable than any API model call (7-123s).
-- Free-tier models exhibit pervasive rate-limiting (429) and upstream overload (502) making them unreliable as primary dependencies.
 
 ---
 

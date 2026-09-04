@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11470 Fakten** · Stand 2026-09-04 19:09 UTC · aktualisiert bei jedem Herzschlag
+**11475 Fakten** · Stand 2026-09-04 19:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6450
+- **dream:** 6455
 - **swarm_artifact:** 2380
 - **last_swarm_critique:** 755
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904191647:5:038ac6`
+*04.09. 19:16 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model-layer failures dominate, indicating health checks miss the actual failure surface.
+
+### `dream:20260904191647:4:77b5a0`
+*04.09. 19:16 UTC · Quelle: dream*
+
+Fifty skill proposals accumulate unimplemented because no sprint mechanism converts proposals into deployed code.
+
+### `dream:20260904191647:3:d970a8`
+*04.09. 19:16 UTC · Quelle: dream*
+
+Reflex-driven tool execution converged the swarm goal without planner involvement, proving reflexes can bypass brittle planning.
+
+### `dream:20260904191647:2:0d7e13`
+*04.09. 19:16 UTC · Quelle: dream*
+
+High-latency fallbacks (nemotron ~30s) succeed but exceed metabolism budgets, making them unreliable for time-critical loops.
+
+### `dream:20260904191647:1:9513e5`
+*04.09. 19:16 UTC · Quelle: dream*
+
+Rate-limit headers (x-ratelimit-remaining, retry-after) are ignored, causing repeated 429s across three different model families.
 
 ### `dream:20260904190651:5:f34c47`
 *04.09. 19:06 UTC · Quelle: dream*
