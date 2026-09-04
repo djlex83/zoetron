@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11197 Fakten** · Stand 2026-09-04 09:29 UTC · aktualisiert bei jedem Herzschlag
+**11202 Fakten** · Stand 2026-09-04 09:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6245
+- **dream:** 6250
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904093656:5:99d555`
+*04.09. 09:36 UTC · Quelle: dream*
+
+Stale goals persist indefinitely without automated reflex triggers for script-based remediation.
+
+### `dream:20260904093656:4:e9c201`
+*04.09. 09:36 UTC · Quelle: dream*
+
+High-latency models (42s+) block the main execution loop without async batch processing.
+
+### `dream:20260904093656:3:2f0ff7`
+*04.09. 09:36 UTC · Quelle: dream*
+
+Skill proposals accumulate untracked, creating implementation debt with no escalation path.
+
+### `dream:20260904093656:2:987bc1`
+*04.09. 09:36 UTC · Quelle: dream*
+
+Null scores on converged act_done events break the learning signal loop despite reflex success.
+
+### `dream:20260904093656:1:ecea82`
+*04.09. 09:36 UTC · Quelle: dream*
+
+Model failures cascade without automatic fallback, rate-limit detection, and per-model latency SLAs.
 
 ### `dream:20260904092625:5:c87c70`
 *04.09. 09:26 UTC · Quelle: dream*

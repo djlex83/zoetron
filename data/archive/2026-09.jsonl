@@ -9464,3 +9464,12 @@
 {"ts": 1787909096.5106041, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 6/10. Goal: Träume in Taten umsetzen\nCritic issues: Missing hands organ dependency - the runner ", "variants": 3, "winner_index": 2, "scores": [7, 7, 7, 8, 6, 8, 9, 6, 9]}}
 {"ts": 1787909117.1734354, "kind": "recall", "payload": {"keys": ["anti_pattern:Previous attempt scored 6/10. Goal: Träume in Taten umsetzen:1", "anti_pattern:Previous attempt scored 6/10. Goal: Träume in Taten umsetzen:0"]}}
 {"ts": 1787909119.5361516, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787909119.5361493, "schalter_geoeffnet": false}}
+{"ts": 1787909211.6438384, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 91.7, "tokens_ein": 435, "tokens_aus": 1668}}
+{"ts": 1787909215.6108305, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 3.5, "tokens_ein": 419, "tokens_aus": 862}}
+{"ts": 1787909215.611032, "kind": "simulation", "payload": {"goal": "Träume in Taten umsetzen", "verdict": "revise", "risks": 4, "revisions": 3}}
+{"ts": 1787909215.61131, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787909215.6114497, "kind": "swarm_finished", "payload": {"goal": "Träume in Taten umsetzen", "score": 6, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 4, "critic": 1}, "evolved": true}}
+{"ts": 1787909215.6116989, "kind": "act_done", "payload": {"goal_title": "Träume in Taten umsetzen", "score": 6, "converged": false}}
+{"ts": 1787909216.6264064, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.75, "gelesen": 0}}
+{"ts": 1787909218.9204729, "kind": "issue_synced", "payload": {"issue": 186, "state": "open"}}
+{"ts": 1787909326.4401875, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals persist indefinitely without automated reflex triggers for script-based remediation.
+- High-latency models (42s+) block the main execution loop without async batch processing.
+- Skill proposals accumulate untracked, creating implementation debt with no escalation path.
+- Null scores on converged act_done events break the learning signal loop despite reflex success.
+- Model failures cascade without automatic fallback, rate-limit detection, and per-model latency SLAs.
 - Stale goals (e.g., market analysis) persist for many cycles without automated reflex triggering, delaying critical decisions.
 - Prune runs discard 36 events but zero facts, indicating factual density scoring is absent and high-value memories (failures, root causes) may be lost.
 - Skill proposals accumulate across dream cycles without implementation tracking, causing repeated re-proposals and wasted consolidation cycles.
@@ -51,11 +56,6 @@
 - Quality gates are absent: act_done events mark convergence with null scores, allowing unverified work to pass as complete.
 - Skill proposals accumulate (65+) but lack a verification pipeline, causing proposal rot and duplicated effort across dream cycles.
 - Free-tier models consistently hit 429/5xx errors under load, making them unreliable for production-critical paths without circuit breakers and paid fa
-- Pruning removes 89 events per cycle but zero facts, suggesting the fact store is either static or the pruning criteria are too conservative.
-- Skill proposals accumulate without enforced ownership or deadlines, causing proposal debt that clutters the backlog and delays capability growth.
-- Swarm execution scores 7/10 but fails to converge, indicating the planner-critic loop lacks a hard convergence threshold or max-iteration guard.
-- A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure if it also hits quota lim
-- Free-tier models consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows without ci
 
 ---
 
