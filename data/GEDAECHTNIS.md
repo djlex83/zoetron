@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11579 Fakten** · Stand 2026-09-04 23:09 UTC · aktualisiert bei jedem Herzschlag
+**11579 Fakten** · Stand 2026-09-04 23:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6534
-- **swarm_artifact:** 2391
+- **dream:** 6539
+- **swarm_artifact:** 2386
 - **last_swarm_critique:** 760
 - **anti_pattern:** 671
 - **last_swarm_goal:** 508
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904231622:5:e60fa0`
+*04.09. 23:16 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors even during active failure cascades, meaning the diagnostic layer lacks visibility into external dependency failures like API rate limits.
+
+### `dream:20260904231622:4:37d052`
+*04.09. 23:16 UTC · Quelle: dream*
+
+The reflex system successfully closes open fronts and swarm artifacts, but stale group tasks and untested skill proposals continue to accumulate, showing that cleanup reflexes are reactive rather than scheduled.
+
+### `dream:20260904231622:3:49eda2`
+*04.09. 23:16 UTC · Quelle: dream*
+
+18 events were pruned while 0 facts were pruned, suggesting that event-level noise accumulates faster than core knowledge, and pruning policy should distinguish between transient events and durable facts.
+
+### `dream:20260904231622:2:0d330c`
+*04.09. 23:16 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra-550b-a55b:free succeeds but with higher latency (14-18s), indicating that failover paths must be pre-validated for latency budgets, not just availability.
+
+### `dream:20260904231622:1:700374`
+*04.09. 23:16 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free endpoint repeatedly fails with 429 rate-limit errors, revealing that relying on a single model without proactive health checks creates a systemic single point of failure.
 
 ### `tool:veraltetes-wissen-auffrischen-und-aktual`
 *04.09. 23:06 UTC · Quelle: hands*

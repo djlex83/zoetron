@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 23:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 23:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors even during active failure cascades, meaning the diagnostic layer lacks visibility into external dependency f
+- The reflex system successfully closes open fronts and swarm artifacts, but stale group tasks and untested skill proposals continue to accumulate, show
+- 18 events were pruned while 0 facts were pruned, suggesting that event-level noise accumulates faster than core knowledge, and pruning policy should d
+- Fallback to nvidia/nemotron-3-ultra-550b-a55b:free succeeds but with higher latency (14-18s), indicating that failover paths must be pre-validated for
+- The z-ai/glm-5.2:free endpoint repeatedly fails with 429 rate-limit errors, revealing that relying on a single model without proactive health checks c
 - Reflex tool 'alte-erinnerungen-auf-wert-prüfen.py' returned ok=false, indicating stale or broken validation logic in the reflex layer.
 - Simulation veto (verdict=revise, risks=3) caught flaws that live execution would have amplified; simulation is a required gate.
 - Metabolism at stress=1.0 forces max_tasks=3 and max_iterations=1, making any multi-step plan infeasible without prior decomposition.
@@ -51,11 +56,6 @@
 - Multiple independent proposals converge on circuit-breaker, health-check, and dynamic-router patterns, revealing a systemic gap in model reliability i
 - Fallback model nvidia/nemotron-3-ultra exhibits high latency variance (12–31 s), suggesting cold-start or queueing effects that require latency-aware 
 - The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating hard rate limits that make it unreliable for production routing without str
-- Event log accumulates low-density entries (49 pruned in one run), indicating missing sensory filtering before persistence.
-- Self-predicted confidence scores systematically overestimate success by ~1 point on knowledge-update tasks, needing a calibration discount.
-- Evolution scoring workflows (generate→critic→select) recur across knowledge-refresh tasks but lack a standardized, reusable procedure.
-- Latency variance on nemotron-3-ultra (8.5s–43.6s) exceeds acceptable bounds for interactive tasks, requiring a hard timeout fallback trigger.
-- Free-tier models (z-ai/glm-5.2:free) consistently fail with 429 rate-limit errors, making them unreliable for production routing without pre-flight ch
 
 ---
 
