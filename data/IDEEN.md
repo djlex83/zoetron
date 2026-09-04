@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,9 +30,9 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions (local Python execution) complete in ~0.2s with zero failures, ideal for deterministic validation steps.
+- The evolution-simulation loop (generate→simulate→revise) reliably improves artifact scores (6→9) and should be a standard pipeline stage.
+- Ling-3.0-flash-fin delivers consistent low latency (~8s) and success, making it the preferred default for latency-sensitive tasks.
+- Nemotron-3-Ultra shows high latency variance (16-68s) and 502 upstream errors, making it unreliable as primary despite high quality.
+- Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with exponential backoff.
 - Repeated retries of a failing model waste the entire iteration budget; detecting error patterns and switching models immediately preserves throughput 
 - The simulation step correctly flagged the skill-integration plan for revision (3 risks, 2 revisions), proving that pre-execution simulation catches pl
 - Running in conserve mode (stress=1.0, max_iterations=1) with multiple competing goals causes resource starvation, so a single-priority focus is requir
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (12+ in logs) but implementation rate is near zero, indicating a proposal-to-execution gap.
 - Nemotron-3-ultra latency varies 15-26s, blocking the main loop unless moved to background batch queue.
 - Free model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for production routing.
-- 18 events were pruned while zero facts were pruned, suggesting event-level noise accumulates faster than factual knowledge decay, requiring separate r
-- The nvidia/nemotron-3-ultra-550b model succeeds consistently with 11-21s latency, establishing it as the reliable baseline while free-tier alternative
-- Skill proposals accumulate across dream cycles without implementation tracking, creating a growing gap between identified solutions and executed fixes
-- Act completions marked converged with null scores reveal a broken quality-capture pipeline — without mandatory score enforcement, the system cannot di
-- The z-ai/glm-5.2 free model repeatedly hits 429 rate limits under load, indicating free-tier endpoints are structurally unreliable and must never be a
 
 ---
 

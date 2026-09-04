@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11095 Fakten** · Stand 2026-09-04 06:12 UTC · aktualisiert bei jedem Herzschlag
+**11100 Fakten** · Stand 2026-09-04 06:21 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6155
+- **dream:** 6160
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904061934:5:5890da`
+*04.09. 06:19 UTC · Quelle: dream*
+
+Hand actions (local Python execution) complete in ~0.2s with zero failures, ideal for deterministic validation steps.
+
+### `dream:20260904061934:4:fc85ac`
+*04.09. 06:19 UTC · Quelle: dream*
+
+The evolution-simulation loop (generate→simulate→revise) reliably improves artifact scores (6→9) and should be a standard pipeline stage.
+
+### `dream:20260904061934:3:b5e4f8`
+*04.09. 06:19 UTC · Quelle: dream*
+
+Ling-3.0-flash-fin delivers consistent low latency (~8s) and success, making it the preferred default for latency-sensitive tasks.
+
+### `dream:20260904061934:2:38b6bd`
+*04.09. 06:19 UTC · Quelle: dream*
+
+Nemotron-3-Ultra shows high latency variance (16-68s) and 502 upstream errors, making it unreliable as primary despite high quality.
+
+### `dream:20260904061934:1:2a6a45`
+*04.09. 06:19 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with exponential backoff.
 
 ### `dream:20260904060907:5:de87c3`
 *04.09. 06:09 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 06:10:23",
+ "stand": "2026-09-04 06:19:56",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,6 +51,12 @@
    "quote": 1.0
   },
   {
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -60,12 +66,6 @@
    "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -387,7 +387,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.688,
+ "haende_quote": 0.69,
  "simulationen_angewandt": 29,
  "swarm_scores": {
   "n": 34,
