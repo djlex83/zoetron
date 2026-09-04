@@ -11121,3 +11121,41 @@
 {"ts": 1787949775.7599802, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
 {"ts": 1787949775.76071, "kind": "reflex_used", "payload": {"goal": "Aktuelle Ziele regelmäßig überprüfen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
 {"ts": 1787949776.2329814, "kind": "act_done", "payload": {"goal_title": "Aktuelle Ziele regelmäßig überprüfen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787949902.8348532, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787950133.139525, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787950134.5117536, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787950140.0785816, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787950140.0785785, "schalter_geoeffnet": false}}
+{"ts": 1787950167.6905448, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 26.1, "tokens_ein": 1344, "tokens_aus": 713}}
+{"ts": 1787950167.6912177, "kind": "skill_proposal", "payload": {"proposal": "Implement model router with health tracking: prioritize Poolside Laguna-S-2.1, fallback to Nemotron, quarantine 429-ing models for 60s with exponential backoff."}}
+{"ts": 1787950167.6912792, "kind": "skill_proposal", "payload": {"proposal": "Wrap hand_action executor to capture stdout/stderr/traceback and return structured error objects instead of silent exit=1 failures."}}
+{"ts": 1787950167.691332, "kind": "skill_proposal", "payload": {"proposal": "Add pre-flight artifact validation (syntax check, import test) before sandbox execution to catch tracebacks early."}}
+{"ts": 1787950167.6913846, "kind": "skill_proposal", "payload": {"proposal": "Calibrate predictor on execution-outcome tuples (success/fail) not just scores, using recent 20-run rolling window."}}
+{"ts": 1787950167.691435, "kind": "skill_proposal", "payload": {"proposal": "Create 'fast-path' skill: for simple code-gen tasks, use Poolside Laguna-S-2.1 with 10s timeout, only escalate to Nemotron on failure."}}
+{"ts": 1787950167.6914878, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787950170.2816644, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787950170.2816617, "schalter_geoeffnet": false}}
+{"ts": 1787950202.1890326, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.9, "tokens_ein": 521, "tokens_aus": 620}}
+{"ts": 1787950202.1891918, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das System macht noch zu viele Fehler. Weniger Fehler bedeuten verlässlichere Ergebnisse.", "signal": "failure"}}
+{"ts": 1787950202.189282, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Ergebnisse endlich nutzen", "why": "Die alten Analysen liegen ungenutzt herum. Wir sollten sie in konkrete Schritte umsetzen.", "signal": "stale"}}
+{"ts": 1787950202.1893487, "kind": "drive_goal", "payload": {"title": "Beste Fähigkeitsvorschläge umsetzen", "why": "Es gibt viele Ideen für neue Fähigkeiten. Die besten davon sollten wir jetzt bauen.", "signal": "gap"}}
+{"ts": 1787950205.1911876, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
+{"ts": 1787950205.1920276, "kind": "reflex_used", "payload": {"goal": "Alte Kritiken und Ziele erneuern", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
+{"ts": 1787950205.6683962, "kind": "act_done", "payload": {"goal_title": "Alte Kritiken und Ziele erneuern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787950330.4950523, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787950402.871531, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787950404.2795935, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787950410.083264, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787950410.0832613, "schalter_geoeffnet": false}}
+{"ts": 1787950418.5387523, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 8.4, "tokens_ein": 1360, "tokens_aus": 715}}
+{"ts": 1787950418.539505, "kind": "skill_proposal", "payload": {"proposal": "implement-model-failover-with-health-checks: Deploy the proposed model-failover-manager with proactive health scoring and automatic primary-model recovery attempts."}}
+{"ts": 1787950418.5395834, "kind": "skill_proposal", "payload": {"proposal": "create-skill-deployment-pipeline: Build automated validation, installation, and regression testing for proposed skills to close the proposal-to-production gap."}}
+{"ts": 1787950418.539658, "kind": "skill_proposal", "payload": {"proposal": "add-strategic-goal-tracker: Persistent tracker that escalates stale/failure/gap drives to conscious planning after N cycles without progress."}}
+{"ts": 1787950418.5397413, "kind": "skill_proposal", "payload": {"proposal": "enable-adaptive-pruning: Trigger memory pruning when cycle count exceeds threshold or context usage >80%, preserving only high-salience facts."}}
+{"ts": 1787950418.5398166, "kind": "skill_proposal", "payload": {"proposal": "add-latency-budget-to-planner: Integrate model latency metrics into action selection to prefer low-latency paths during conserve mode."}}
+{"ts": 1787950418.5398927, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787950421.3321712, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787950421.3321688, "schalter_geoeffnet": false}}
+{"ts": 1787950432.456677, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 11.1, "tokens_ein": 522, "tokens_aus": 424}}
+{"ts": 1787950432.4568212, "kind": "drive_goal", "payload": {"title": "Modell-Fehler systematisch reduzieren", "why": "Das Modell macht noch zu viele Fehler. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1787950432.4568946, "kind": "drive_goal", "payload": {"title": "Marktanalyse endlich abschließen", "why": "Die Marktanalyse liegt seit langer Zeit unvollendet herum. Ein Abschluss schafft Klarheit für nächste Schritte.", "signal": "stale"}}
+{"ts": 1787950432.4569557, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten testen und nutzen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber kaum welche im Einsatz. Testen bringt echten Nutzen.", "signal": "gap"}}
+{"ts": 1787950436.0395794, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.25, "gelesen": 2}}
+{"ts": 1787950436.0403697, "kind": "reflex_used", "payload": {"goal": "Marktanalyse-Wissen auffrischen", "tool": "traumerkenntnisse-mit-wissen-verknüpfen.py", "ok": true}}
+{"ts": 1787950436.7207406, "kind": "act_done", "payload": {"goal_title": "Marktanalyse-Wissen auffrischen", "score": null, "converged": true, "mode": "reflex"}}

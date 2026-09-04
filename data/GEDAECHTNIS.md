@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11518 Fakten** · Stand 2026-09-04 20:47 UTC · aktualisiert bei jedem Herzschlag
+**11532 Fakten** · Stand 2026-09-04 21:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6489
-- **swarm_artifact:** 2386
-- **last_swarm_critique:** 756
+- **dream:** 6494
+- **swarm_artifact:** 2392
+- **last_swarm_critique:** 757
 - **anti_pattern:** 669
-- **last_swarm_goal:** 504
+- **last_swarm_goal:** 505
 - **strategy:** 355
-- **tool:** 150
+- **tool:** 151
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:veraltete-grenzgebiete-und-schwarm-ergeb`
+*04.09. 20:58 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Grenzgebiete und Schwarm-Ergebnisse aktualisieren'. Datei: data/tools/veraltete-grenzgebiete-und-schwarm-ergeb.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*04.09. 20:58 UTC · Quelle: critic*
+
+score=9; issues=Diagnostik-Skripte (Artefakte 1 & 2) und Update-Mechanismus (Artefakt 3) sind getrennte Tools statt integrierter Pipeline; Update-Mechanismus enthaelt zwar eigenen StalenessAnalyzer, aber die Aufteilung erfordert manuelle Koordination.; Kein si
+
+### `last_swarm_goal`
+*04.09. 20:55 UTC · Quelle: system*
+
+Veraltete Grenzgebiete und Schwarm-Ergebnisse aktualisieren
+
+### `dream:20260904205444:5:1feca9`
+*04.09. 20:54 UTC · Quelle: dream*
+
+Circuit breakers and health registries address symptoms but only close the reliability gap when paired with disciplined execution of proposed solutions.
+
+### `dream:20260904205444:4:335d40`
+*04.09. 20:54 UTC · Quelle: dream*
+
+Reflex-driven maintenance (like cleaning stale swarm data) proves effective and should be generalized to other recurring housekeeping tasks.
+
+### `dream:20260904205444:3:e2f5cf`
+*04.09. 20:54 UTC · Quelle: dream*
+
+The persistent gap between skill proposals and actual implementation is the primary bottleneck preventing reliability improvements.
+
+### `dream:20260904205444:2:ca27a0`
+*04.09. 20:54 UTC · Quelle: dream*
+
+Model health is ephemeral — a successful response does not guarantee future reliability, requiring continuous monitoring rather than one-time assessment.
+
+### `dream:20260904205444:1:9a343b`
+*04.09. 20:54 UTC · Quelle: dream*
+
+Rate-limit errors (429) are the dominant and recurring failure mode across multiple providers, indicating a systemic capacity constraint rather than isolated incidents.
 
 ### `dream:20260904204512:5:847b34`
 *04.09. 20:45 UTC · Quelle: dream*

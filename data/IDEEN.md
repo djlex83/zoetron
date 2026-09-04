@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 20:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 20:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,19 +17,19 @@
 - Deploy a persistent model-health dashboard tracking per-model success rates, latency percentiles, and quota ex *(hatte die Idee 4×)*
 - Build a synthetic load tester that simulates 429/5xx storms at 10x production rate to validate circuit breaker *(hatte die Idee 4×)*
 - Tighten swarm convergence: require score ≥8 AND critic approval OR max 3 cycles with mandatory strategy change *(hatte die Idee 4×)*
-- Add a fact-TTL janitor that expires facts older than 7 days unless explicitly re-validated, logging expiration *(hatte die Idee 3×)*
 - Add a skill-gate: every proposal must include a single-file implementation sketch and a 5-minute smoke test sc *(hatte die Idee 3×)*
 - Implement per-model circuit breakers that trip after 3 consecutive failures and enforce exponential backoff (1 *(hatte die Idee 3×)*
+- Add a convergence detector to all self-improvement loops that aborts after 5 cycles without metric improvement *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit breakers and health registries address symptoms but only close the reliability gap when paired with disciplined execution of proposed solution
+- Reflex-driven maintenance (like cleaning stale swarm data) proves effective and should be generalized to other recurring housekeeping tasks.
+- The persistent gap between skill proposals and actual implementation is the primary bottleneck preventing reliability improvements.
+- Model health is ephemeral — a successful response does not guarantee future reliability, requiring continuous monitoring rather than one-time assessme
+- Rate-limit errors (429) are the dominant and recurring failure mode across multiple providers, indicating a systemic capacity constraint rather than i
 - The first prune_run removed 42 events while the second removed 0, indicating that stale or redundant data was consuming resources and that the system 
 - Self-diagnosis reported zero internal organ failures, confirming that all observed failures originate externally from API rate-limiting rather than fr
 - Four skill proposals were generated in the first dream cycle and three more in the second, but none have been implemented, revealing a persistent gap 
@@ -51,11 +56,6 @@
 - Latency variance between successful models (3.7s vs 19.1s) shows no latency-budget enforcement, wasting metabolism on slow fallbacks.
 - Self-diagnosis reports zero organ errors while the model layer suffers >80% failure rate, revealing a critical monitoring blind spot.
 - Free-tier models on OpenRouter exhibit systemic unreliability dominated by 429 rate-limit errors and 502 upstream failures across multiple providers.
-- Reflex-based learning (hebbisches-lernen-im-graph-synapsen-qual.py) successfully converged, proving that anchored learning loops work when they are tr
-- Event pruning removed 50 events in one cycle, suggesting high contextual churn that risks discarding useful failure-signal data before it can be conso
-- Only one model (inclusionai/ling-3.0-flash-fin) succeeded among many failures, revealing that the system has no mechanism to learn from or route aroun
-- A recurring gap exists between generating skill proposals and actually implementing them — the system dreams solutions but does not execute them, whic
-- The dominant failure mode is API rate-limiting (429) and upstream overload (502), indicating the system lacks proactive throttling and treats all mode
 
 ---
 
