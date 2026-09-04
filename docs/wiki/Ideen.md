@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals like 'Marktanalyse in Handlung umsetzen' accumulate without resolution, indicating the system lacks an enforced rhythm for reviewing and c
+- Prune_run discarded 42 events while preserving 0 facts, suggesting the pruning logic may be too aggressive and risks eliminating high-signal failure m
+- Identical skill proposals recur across dream cycles without evidence of implementation, revealing a persistent proposal-to-execution gap where insight
+- Act_done events are being marked as converged with a null quality score, meaning the system accepts completion without any verifiable quality assuranc
+- The z-ai/glm-5.2 model repeatedly fails with 429 rate-limit errors across multiple dream cycles, exposing the absence of any circuit breaker or automa
 - Reflex-based knowledge refresh (`langsame-fakten-regelmäßig-aktualisieren.py`) converges successfully, demonstrating that automated periodic maintenan
 - Event pruning removes 9–23 events per cycle while facts remain untouched, confirming that the system cleans noise effectively but does not consolidate
 - Skill proposals are repeatedly rediscovered across dream cycles (circuit breakers, quota routers, load testers) without implementation, revealing that
@@ -51,11 +56,6 @@
 - Accumulated skill proposals remain unimplemented across multiple dream cycles, indicating a lack of an execution pipeline for generated ideas.
 - Actions marked as converged with a null score bypass quality validation, creating a blind spot in performance tracking.
 - Free models on OpenRouter are highly volatile, frequently returning 429 and 502 errors, necessitating robust fallback mechanisms.
-- Reflex actions are accepted as converged without any quality threshold, allowing low-quality completions to pass as done.
-- Pruning discards 38 events but zero facts, indicating the pruner cannot distinguish high-signal memories; factual density scoring before discard would
-- Skill proposals accumulate without implementation because there is no tracker that escalates stale proposals into concrete action items after a define
-- Tasks marked converged with null scores (e.g., reflex completion) create false confidence; mandatory scoring with post-hoc assessment is needed to ver
-- Model failures cascade because the system lacks per-model circuit breakers and automatic fallback routing, causing repeated 429/5xx errors to block pr
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11162 Fakten** · Stand 2026-09-04 08:19 UTC · aktualisiert bei jedem Herzschlag
+**11167 Fakten** · Stand 2026-09-04 08:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6210
+- **dream:** 6215
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904082632:5:d6fbdc`
+*04.09. 08:26 UTC · Quelle: dream*
+
+Stale goals like 'Marktanalyse in Handlung umsetzen' accumulate without resolution, indicating the system lacks an enforced rhythm for reviewing and converting analysis into concrete action.
+
+### `dream:20260904082632:4:7adf30`
+*04.09. 08:26 UTC · Quelle: dream*
+
+Prune_run discarded 42 events while preserving 0 facts, suggesting the pruning logic may be too aggressive and risks eliminating high-signal failure memories before they can inform future decisions.
+
+### `dream:20260904082632:3:e88d12`
+*04.09. 08:26 UTC · Quelle: dream*
+
+Identical skill proposals recur across dream cycles without evidence of implementation, revealing a persistent proposal-to-execution gap where insights are generated but never actioned.
+
+### `dream:20260904082632:2:7b1d65`
+*04.09. 08:26 UTC · Quelle: dream*
+
+Act_done events are being marked as converged with a null quality score, meaning the system accepts completion without any verifiable quality assurance — a systemic gap that masks degraded outputs.
+
+### `dream:20260904082632:1:c5bb77`
+*04.09. 08:26 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model repeatedly fails with 429 rate-limit errors across multiple dream cycles, exposing the absence of any circuit breaker or automatic fallback mechanism in the model router.
 
 ### `dream:20260904081655:5:96a77c`
 *04.09. 08:16 UTC · Quelle: dream*
