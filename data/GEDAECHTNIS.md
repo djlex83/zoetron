@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10901 Fakten** · Stand 2026-09-04 00:16 UTC · aktualisiert bei jedem Herzschlag
+**10906 Fakten** · Stand 2026-09-04 00:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6015
+- **dream:** 6020
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904002402:5:c9a0e9`
+*04.09. 00:24 UTC · Quelle: dream*
+
+Fact pruning discards events without validation: 38 events pruned with zero fact audit means missed entities/relations silently degrade knowledge quality.
+
+### `dream:20260904002402:4:38915e`
+*04.09. 00:24 UTC · Quelle: dream*
+
+Hand-action observability is insufficient: transient failures (network, timeout) are indistinguishable from logic errors, preventing targeted retries.
+
+### `dream:20260904002402:3:59257e`
+*04.09. 00:24 UTC · Quelle: dream*
+
+Self-improvement loops lack convergence guards: without automatic abort criteria, cycles waste compute on stagnant objectives.
+
+### `dream:20260904002402:2:f7da0d`
+*04.09. 00:24 UTC · Quelle: dream*
+
+Skill proposals accumulate but never execute: 60 proposals exist with near-zero adoption, indicating a missing proposal-to-implementation pipeline.
+
+### `dream:20260904002402:1:b54ade`
+*04.09. 00:24 UTC · Quelle: dream*
+
+Model reliability is the primary bottleneck: 429 rate limits and 502 upstream errors cascade across multiple providers, making single-model dependence untenable.
 
 ### `dream:20260904001440:5:af66f6`
 *04.09. 00:14 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,10 +16,10 @@
 - Add a proposal-to-production pipeline requiring simulation verdict=accept, load test (latency <30s p95), and c *(hatte die Idee 4×)*
 - Deploy a path-resolver utility that expands sys.argv[1] and ZOETRON_DATA to absolute paths before any hand-act *(hatte die Idee 4×)*
 - Add a fact-TTL janitor that expires facts older than 7 days unless explicitly re-validated, logging expiration *(hatte die Idee 4×)*
+- Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic  *(hatte die Idee 4×)*
 - Develop a continuous event-to-fact compressor that runs each cycle before pruning, extracting durable facts fr *(hatte die Idee 3×)*
 - Implement a model-resilience middleware: per-provider circuit breaker, exponential backoff with jitter (base 2 *(hatte die Idee 3×)*
 - Enforce absolute-path resolution in the hand tool by prepending ZOETRON_DATA to any relative input before exec *(hatte die Idee 3×)*
-- Create a skill-deployment pipeline that auto-promotes any proposal tagged 'critical' after a 5-minute canary o *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -28,8 +28,8 @@
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Fact pruning discards events without validation: 38 events pruned with zero fact audit means missed entities/relations silently degrade knowledge qual
+- Hand-action observability is insufficient: transient failures (network, timeout) are indistinguishable from logic errors, preventing targeted retries.
+- Self-improvement loops lack convergence guards: without automatic abort criteria, cycles waste compute on stagnant objectives.
+- Skill proposals accumulate but never execute: 60 proposals exist with near-zero adoption, indicating a missing proposal-to-implementation pipeline.
+- Model reliability is the primary bottleneck: 429 rate limits and 502 upstream errors cascade across multiple providers, making single-model dependence
 - Repeated identification of the same problem class across consolidation cycles reveals a gap between diagnosis and implementation tracking.
 - Convergence declared with a null score produces false confidence that a goal has been meaningfully achieved.
 - Replay buffers accumulate low-value events (18 pruned in one cycle) that dilute learning signal and need periodic cleanup.
@@ -51,11 +56,6 @@
 - Calibration for task "Simulationen gezielt einsetzen" underestimated actual cycles by 60 % (predicted 5 vs actual 8), indicating systematic underestim
 - Fallback model nvidia/nemotron-3-ultra exhibits 10× latency variance (18–174 s) requiring latency-aware routing and timeout budgets.
 - Free-tier model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limit errors, making it unreliable as primary without circuit-breaker fallback
-- Goals are set reactively from failure/stale/gap signals rather than from a prioritized, proactive roadmap.
-- Simulation pipeline returns 'go' but flags 3 risks and requires 3 revisions, indicating a pattern of optimistic verdicts with hidden rework.
-- System stress at 1.0 triggers conserve mode, capping tasks to 3 and iterations to 1, which stalls multi-step operations.
-- Hand actions fail when using relative paths instead of resolving absolute paths via ZOETRON_DATA and sys.argv[1].
-- Free-tier model endpoints suffer pervasive 429 rate limits and 502 upstream overloads, making them unreliable for production workflows.
 
 ---
 

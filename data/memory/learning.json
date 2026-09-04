@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 00:15:14",
+ "stand": "2026-09-04 00:24:36",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -159,6 +159,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktkenntnisse-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -201,12 +207,6 @@
    "quote": 0.0
   },
   {
-   "tool": "fakten-ausbeute-pro-beat-verdreifachen-o.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -244,12 +244,6 @@
   },
   {
    "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -363,7 +357,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.676,
+ "haende_quote": 0.681,
  "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 35,
@@ -371,13 +365,13 @@
   "schnitt": 6.0
  },
  "score_nach_ziel_typ": {
-  "analyse": {
-   "n": 32,
-   "schnitt": 5.84
-  },
   "bau": {
    "n": 3,
    "schnitt": 7.67
+  },
+  "analyse": {
+   "n": 31,
+   "schnitt": 5.74
   }
  }
 }
