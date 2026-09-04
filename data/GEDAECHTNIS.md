@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11236 Fakten** · Stand 2026-09-04 10:41 UTC · aktualisiert bei jedem Herzschlag
+**11253 Fakten** · Stand 2026-09-04 10:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6275
-- **swarm_artifact:** 2351
-- **last_swarm_critique:** 747
-- **anti_pattern:** 661
-- **last_swarm_goal:** 495
-- **strategy:** 351
-- **tool:** 142
+- **dream:** 6280
+- **swarm_artifact:** 2357
+- **last_swarm_critique:** 748
+- **anti_pattern:** 663
+- **last_swarm_goal:** 496
+- **strategy:** 352
+- **tool:** 143
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modell-fehler-stark-reduzieren`
+*04.09. 10:56 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler stark reduzieren'. Datei: data/tools/modell-fehler-stark-reduzieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler stark redu:2`
+*04.09. 10:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 5, 10]): Observability-First Integration Harness with Fault Injection - Build a test harness that deploys REAL Artifact 1 + Artifact 2 + Artifact 3 in a test namespace with distributed tracing (OpenTelemetry) and metrics (Pro
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler stark redu:1`
+*04.09. 10:55 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 7]): Consumer-Driven Contract Testing with Pact - Reverse the dependency: Artifact 3 (integration test) publishes the contract it requires from CircuitBreaker and ModelHealthRegister. Artifact 2 implements provider side ve
+
+### `last_swarm_critique`
+*04.09. 10:54 UTC · Quelle: critic*
+
+score=7; issues=Error signature format inconsistent between Artifact 1 (tuple with hash) and Artifact 2 (truncated string) - prevents direct feeding of analyzed patterns into circuit breaker config; Integration test (Artifact 3) uses mock ModelHealthRegister i
+
+### `last_swarm_goal`
+*04.09. 10:49 UTC · Quelle: system*
+
+Modell-Fehler stark reduzieren
+
+### `dream:20260904104915:5:0f675e`
+*04.09. 10:49 UTC · Quelle: dream*
+
+Repeated identical failures from the same model indicate a structural routing defect, requiring pattern-triggered circuit breakers rather than retry logic.
+
+### `dream:20260904104915:4:91c724`
+*04.09. 10:49 UTC · Quelle: dream*
+
+Reflex-driven execution consistently converges where deliberative follow-through stalls — automated triggers outperform manual action loops.
+
+### `dream:20260904104915:3:50355c`
+*04.09. 10:49 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposals (65+) and actual implementation, wasting accumulated knowledge without execution mechanisms.
+
+### `dream:20260904104915:2:bec782`
+*04.09. 10:49 UTC · Quelle: dream*
+
+Accumulated analysis artifacts (e.g., three stale Marktanalyse swarm results) decay in value if not converted into decisions within a defined window.
+
+### `dream:20260904104915:1:3a3043`
+*04.09. 10:49 UTC · Quelle: dream*
+
+Free-tier model rate limits (429 errors) are a recurring systemic failure mode, not transient noise — routing must track quota state per model in real time.
 
 ### `dream:20260904103909:5:cfb0d3`
 *04.09. 10:39 UTC · Quelle: dream*
