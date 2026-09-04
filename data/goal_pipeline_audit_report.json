@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T07:38:45.665858",
+  "timestamp": "2026-09-04T01:03:01.137686",
   "data_root": "/workspace/zoetron/data",
   "fell_back_to_cwd": false,
   "modules": {
@@ -32,7 +32,7 @@
   "goal_data_files": {},
   "schema_files": {
     "hands_workspace/schema_errors.json": {
-      "generated_at": "2026-09-01T06:21:45.041105+00:00",
+      "generated_at": "2026-09-02T19:13:42.943111+00:00",
       "total_errors": 26,
       "errors": [
         "Missing required field 'id' in ?",

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 00:53:18",
+ "stand": "2026-09-04 01:03:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -54,12 +54,6 @@
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -205,6 +199,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
@@ -358,6 +358,12 @@
   },
   {
    "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "bessere-ziele-setzen-und-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10921 Fakten** · Stand 2026-09-04 00:55 UTC · aktualisiert bei jedem Herzschlag
+**10926 Fakten** · Stand 2026-09-04 01:04 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6035
+- **dream:** 6040
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904010224:5:98e666`
+*04.09. 01:02 UTC · Quelle: dream*
+
+Self-diagnosis and reflex loops function correctly but lack integration with model-health telemetry for closed-loop adaptation.
+
+### `dream:20260904010224:4:c88265`
+*04.09. 01:02 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on model routing, calibration logging, and stale-data detection – indicating high-value, cross-cutting infrastructure gaps.
+
+### `dream:20260904010224:3:ec71c5`
+*04.09. 01:02 UTC · Quelle: dream*
+
+Latency variance (15-69s) on successful calls exceeds acceptable thresholds for interactive use, requiring SLA-aware routing.
+
+### `dream:20260904010224:2:56b969`
+*04.09. 01:02 UTC · Quelle: dream*
+
+Circuit-breaker state must persist across sessions to avoid re-probing known-degraded endpoints after restarts.
+
+### `dream:20260904010224:1:ee2ded`
+*04.09. 01:02 UTC · Quelle: dream*
+
+Free-tier models exhibit correlated failure bursts (429/502) making single-model reliance untenable for production workloads.
 
 ### `dream:20260904005237:5:7151f7`
 *04.09. 00:52 UTC · Quelle: dream*
