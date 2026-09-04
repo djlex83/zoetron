@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- No paid-model fallback budget exists, leaving critical-path tasks without an emergency resolution path when both free endpoints fail simultaneously.
+- Latency-sensitive reflexes and computationally-heavy dream tasks share the same model pool, causing predictable resource contention and 429 exhaustion
+- Sequential model fallback without enforced timeout budgets creates cascading delays — when one model fails, the next is called immediately without res
+- The system pruned 21 events without mining them for recurring error signatures first, risking permanent loss of durable failure-pattern knowledge that
+- Free-tier models under concurrent load consistently fail with 429/502 errors, and the absence of a pre-implemented quota-aware pool causes failures to
 - Self-diagnosis reflexes and pruning cycles execute cleanly, showing core maintenance organs are functional.
 - Automatic fallback and retry logic is absent, causing cascading failures when primary models are overloaded.
 - The system spontaneously generates concrete skill proposals during operation, indicating a working meta-cognitive improvement loop.
@@ -51,11 +56,6 @@
 - Swarm convergence lacks explicit criteria, leading to undefined success conditions and potential infinite cycles.
 - Nvidia/nemotron-3-ultra succeeds but exhibits high latency (26-65s) and occasional empty-choice failures, requiring timeout and retry guards.
 - Model provider z-ai/glm-5.2:free consistently fails with 429 rate-limit errors, making it unreliable as primary or sole provider.
-- Five high-value skill proposals were generated but none executed, revealing a gap between proposal generation and implementation.
-- Hand actions report success but read zero bytes, meaning empty-output failures are silently masked as successes.
-- Swarm converged in a single cycle with score 8, suggesting convergence criteria are too loose and may accept suboptimal outputs.
-- Model 'nvidia/nemotron-3-ultra-550b-a55b:free' succeeds but exhibits 5x latency variance (26–136s), indicating unreliable capacity or cold-start effec
-- Model 'z-ai/glm-5.2:free' fails deterministically with 429 rate-limit errors, making it unusable without backoff or quota management.
 
 ---
 

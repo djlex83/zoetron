@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 13:26:19",
+ "stand": "2026-09-04 13:36:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,6 +189,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "regelmäßige-selbstprüfung-etablieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -363,12 +369,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -412,11 +412,11 @@
   }
  ],
  "haende_quote": 0.751,
- "simulationen_angewandt": 25,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 31,
+  "n": 30,
   "best": 9.0,
-  "schnitt": 6.29
+  "schnitt": 6.37
  },
  "score_nach_ziel_typ": {
   "analyse": {

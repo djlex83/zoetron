@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11324 Fakten** · Stand 2026-09-04 13:28 UTC · aktualisiert bei jedem Herzschlag
+**11329 Fakten** · Stand 2026-09-04 13:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6330
+- **dream:** 6335
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904133535:5:265343`
+*04.09. 13:35 UTC · Quelle: dream*
+
+No paid-model fallback budget exists, leaving critical-path tasks without an emergency resolution path when both free endpoints fail simultaneously.
+
+### `dream:20260904133535:4:2c909c`
+*04.09. 13:35 UTC · Quelle: dream*
+
+Latency-sensitive reflexes and computationally-heavy dream tasks share the same model pool, causing predictable resource contention and 429 exhaustion under load.
+
+### `dream:20260904133535:3:b1b55e`
+*04.09. 13:35 UTC · Quelle: dream*
+
+Sequential model fallback without enforced timeout budgets creates cascading delays — when one model fails, the next is called immediately without respecting rate-limit cooldown windows.
+
+### `dream:20260904133535:2:f2d31e`
+*04.09. 13:35 UTC · Quelle: dream*
+
+The system pruned 21 events without mining them for recurring error signatures first, risking permanent loss of durable failure-pattern knowledge that could have informed future resilience.
+
+### `dream:20260904133535:1:e83f5e`
+*04.09. 13:35 UTC · Quelle: dream*
+
+Free-tier models under concurrent load consistently fail with 429/502 errors, and the absence of a pre-implemented quota-aware pool causes failures to cascade rather than degrade gracefully.
 
 ### `dream:20260904132536:5:ad23e0`
 *04.09. 13:25 UTC · Quelle: dream*
