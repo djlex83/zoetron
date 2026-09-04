@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 18:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 18:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation catches risks (3) and demands revisions (3) but the system proceeds anyway under high stress, risking further failures.
+- Previously proposed skills (dynamic router, quota tracker, automatic fallback) remain unimplemented despite repeated 429 failures across sessions.
+- Relative path handling fails when the working directory diverges from ZOETRON_DATA, causing silent zero-byte reads in hand actions.
+- Fallback models succeed but impose 10-20x latency penalties (22-72s vs 3.2s) that stall the metabolism budget under conserve mode.
+- Rate-limit errors cascade because no shared quota tracker reads OpenRouter headers and enforces per-model cooldowns before 429 occurs.
 - Simulation reflex results are marked complete without explicit linkage back to the originating action, creating a risk of orphaned completions that ne
 - Self-diagnosis reports zero organ errors and zero pruned facts, yet the drive goal to build a knowledge graph signals that long-term semantic memory i
 - Swarm convergence in a single cycle with score 8 demonstrates effective role distribution (planner/builder/critic), but lacks an early-stopping metric
@@ -51,11 +56,6 @@
 - Nvidia Nemotron exhibits bimodal failure: extreme latency (97s) and 502 upstream overload errors, indicating unstable capacity.
 - inclusionai/ling-3.0-flash-fin:free succeeds repeatedly at ~2s latency, establishing it as the only consistently available free model for this workloa
 - Free-tier models consistently fail with 429 rate-limit errors across providers (GLM, Gemma, Nemotron), making them unreliable as primary workers.
-- Simulation-based revision catches risks pre-deployment but only when triggered manually, not continuously.
-- Metabolism stress signals arrive too late for proactive shedding; the system reacts instead of predicting load.
-- Skill proposals accumulate without a lifecycle manager that enforces A/B testing and evidence-based promotion.
-- Silent fallback loops waste budget and mask root causes because each model failure triggers another unvalidated attempt.
-- Rate limits and upstream errors cause cascade failures because fallbacks lack pre-flight validation and circuit breakers.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11441 Fakten** · Stand 2026-09-04 18:18 UTC · aktualisiert bei jedem Herzschlag
+**11446 Fakten** · Stand 2026-09-04 18:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6430
+- **dream:** 6435
 - **swarm_artifact:** 2374
 - **last_swarm_critique:** 754
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904182632:5:5878f7`
+*04.09. 18:26 UTC · Quelle: dream*
+
+Simulation catches risks (3) and demands revisions (3) but the system proceeds anyway under high stress, risking further failures.
+
+### `dream:20260904182632:4:585a48`
+*04.09. 18:26 UTC · Quelle: dream*
+
+Previously proposed skills (dynamic router, quota tracker, automatic fallback) remain unimplemented despite repeated 429 failures across sessions.
+
+### `dream:20260904182632:3:d590b0`
+*04.09. 18:26 UTC · Quelle: dream*
+
+Relative path handling fails when the working directory diverges from ZOETRON_DATA, causing silent zero-byte reads in hand actions.
+
+### `dream:20260904182632:2:0c50b4`
+*04.09. 18:26 UTC · Quelle: dream*
+
+Fallback models succeed but impose 10-20x latency penalties (22-72s vs 3.2s) that stall the metabolism budget under conserve mode.
+
+### `dream:20260904182632:1:49d100`
+*04.09. 18:26 UTC · Quelle: dream*
+
+Rate-limit errors cascade because no shared quota tracker reads OpenRouter headers and enforces per-model cooldowns before 429 occurs.
 
 ### `dream:20260904181634:5:90d150`
 *04.09. 18:16 UTC · Quelle: dream*
