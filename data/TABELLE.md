@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7938 Neuronen · 609520 bewertete Synapsen
+Stand: 7943 Neuronen · 610739 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,19 +10,19 @@ Stand: 7938 Neuronen · 609520 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 695 | 0.24 |
-| 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 625 | 0.26 |
-| 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 669 | 0.24 |
-| 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 679 | 0.23 |
+| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 696 | 0.24 |
+| 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 626 | 0.26 |
+| 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 670 | 0.24 |
+| 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 680 | 0.23 |
 | 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 661 | 0.23 |
-| 6 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 660 | 0.23 |
+| 6 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 661 | 0.23 |
 | 7 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 668 | 0.23 |
 | 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 580 | 0.26 |
-| 9 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 589 | 0.25 |
+| 9 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 590 | 0.25 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 550 | 0.27 |
 | 11 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 606 | 0.24 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 550 | 0.27 |
-| 13 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 576 | 0.25 |
+| 13 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 577 | 0.25 |
 | 14 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 601 | 0.24 |
 | 15 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 585 | 0.24 |
 

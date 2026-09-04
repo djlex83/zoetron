@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11284 Fakten** · Stand 2026-09-04 12:05 UTC · aktualisiert bei jedem Herzschlag
+**11289 Fakten** · Stand 2026-09-04 12:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6290
+- **dream:** 6295
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904121341:5:77f19c`
+*04.09. 12:13 UTC · Quelle: dream*
+
+Stale goals and unread hand actions indicate missing completion enforcement and garbage collection for abandoned work.
+
+### `dream:20260904121341:4:247d6c`
+*04.09. 12:13 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation, creating a planning-execution gap that clogs the system.
+
+### `dream:20260904121341:3:db630a`
+*04.09. 12:13 UTC · Quelle: dream*
+
+Swarm processes consistently fail to converge (score 7, 2 cycles), suggesting insufficient critic/builder ratio or missing convergence criteria.
+
+### `dream:20260904121341:2:b13d84`
+*04.09. 12:13 UTC · Quelle: dream*
+
+High-latency models (Nemotron 30-60s) succeed where fast models fail, indicating a reliability-latency tradeoff.
+
+### `dream:20260904121341:1:043ae9`
+*04.09. 12:13 UTC · Quelle: dream*
+
+Rate limiting (429) is the dominant failure mode across free models, requiring systematic fallback and health tracking.
 
 ### `tool:modell-fehler-systematisch-reduzieren-un`
 *04.09. 12:03 UTC · Quelle: hands*
