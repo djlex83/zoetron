@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11304 Fakten** · Stand 2026-09-04 12:46 UTC · aktualisiert bei jedem Herzschlag
+**11309 Fakten** · Stand 2026-09-04 12:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6310
+- **dream:** 6315
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904125416:5:d35a73`
+*04.09. 12:54 UTC · Quelle: dream*
+
+A stale marktanalyse task has been left unfinished for too long, blocking cognitive budget and demonstrating that unfinished tasks must be actively pruned or completed.
+
+### `dream:20260904125416:4:e08ff8`
+*04.09. 12:54 UTC · Quelle: dream*
+
+The reflex tool modellfehler-systematisch-reduzieren.py failed and a swarm was started on the same goal without diagnosing the root cause, repeating the failure pattern.
+
+### `dream:20260904125416:3:3a297b`
+*04.09. 12:54 UTC · Quelle: dream*
+
+The hand_action failed because relative paths and ZOETRON_DATA were not validated before execution, showing that path resolution checks must precede file operations.
+
+### `dream:20260904125416:2:64a775`
+*04.09. 12:54 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b succeeds reliably but with high latency (38-138s), meaning latency-aware model routing is essential for time-sensitive tasks.
+
+### `dream:20260904125416:1:0e0285`
+*04.09. 12:54 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model fails with persistent 429 errors on every call, indicating a circuit-breaker pattern is needed instead of blind retries.
 
 ### `dream:20260904124428:5:8f7144`
 *04.09. 12:44 UTC · Quelle: dream*
