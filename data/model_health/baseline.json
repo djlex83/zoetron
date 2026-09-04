@@ -1,0 +1,69 @@
+{
+  "total_errors": 9,
+  "by_type": {
+    "hallucination": 1,
+    "reasoning_error": 1,
+    "instruction_following": 1,
+    "knowledge_gap": 1,
+    "inconsistency": 1,
+    "bias_fairness": 1,
+    "degradation": 1,
+    "tool_use_error": 1,
+    "context_handling": 1
+  },
+  "by_severity": {
+    "high": 3,
+    "medium": 5,
+    "low": 1
+  },
+  "by_model": {
+    "gpt-4": 4,
+    "claude-3": 2,
+    "llama-3": 1,
+    "mixtral": 1,
+    "gpt-3.5": 1
+  },
+  "by_subtype": {
+    "hallucination.factual": 1,
+    "reasoning_error.logical_fallacy": 1,
+    "instruction_following.format_violation": 1,
+    "knowledge_gap.outdated": 1,
+    "inconsistency.self_contradiction": 1,
+    "bias_fairness.demographic": 1,
+    "degradation.repetition": 1,
+    "tool_use_error.wrong_args": 1,
+    "context_handling.lost_context": 1
+  },
+  "error_rate_per_1k_tokens": 0.526,
+  "critical_ratio": 0.333,
+  "top_error_types": [
+    {
+      "type": "hallucination",
+      "count": 1,
+      "percentage": 11.1
+    },
+    {
+      "type": "reasoning_error",
+      "count": 1,
+      "percentage": 11.1
+    },
+    {
+      "type": "instruction_following",
+      "count": 1,
+      "percentage": 11.1
+    },
+    {
+      "type": "knowledge_gap",
+      "count": 1,
+      "percentage": 11.1
+    },
+    {
+      "type": "inconsistency",
+      "count": 1,
+      "percentage": 11.1
+    }
+  ],
+  "period_start": "2026-09-04T12:03:14.821389",
+  "period_end": "2026-09-04T12:03:14.821480",
+  "generated_at": "2026-09-04T12:03:14.825589"
+}

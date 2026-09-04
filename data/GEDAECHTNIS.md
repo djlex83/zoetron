@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11270 Fakten** · Stand 2026-09-04 11:35 UTC · aktualisiert bei jedem Herzschlag
+**11284 Fakten** · Stand 2026-09-04 12:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6285
-- **swarm_artifact:** 2363
-- **last_swarm_critique:** 749
+- **dream:** 6290
+- **swarm_artifact:** 2369
+- **last_swarm_critique:** 750
 - **anti_pattern:** 665
-- **last_swarm_goal:** 497
+- **last_swarm_goal:** 498
 - **strategy:** 353
-- **tool:** 144
+- **tool:** 145
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,46 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:modell-fehler-systematisch-reduzieren-un`
+*04.09. 12:03 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler systematisch reduzieren und verstehen'. Datei: data/tools/modell-fehler-systematisch-reduzieren-un.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*04.09. 12:03 UTC · Quelle: critic*
+
+score=8; issues=Kategorisierung in Artefakt 1 ist rein keyword-basiert (heuristisch), keine ML/Embedding-basierte Klassifikation - limitiert Generalisierung; Fallback-Implementierungen (MockResilientLLM, mock_run_reflexes, fallback_benchmark_lauf) sind Platzha
+
+### `last_swarm_goal`
+*04.09. 11:52 UTC · Quelle: system*
+
+Modell-Fehler systematisch reduzieren und verstehen
+
+### `dream:20260904115137:5:75717b`
+*04.09. 11:51 UTC · Quelle: dream*
+
+Stale goals, critiques, and artifacts accumulate without expiration, causing the system to replan known failures instead of learning.
+
+### `dream:20260904115137:4:f9eb12`
+*04.09. 11:51 UTC · Quelle: dream*
+
+System stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), which starves the very remediation swarms needed to reduce errors.
+
+### `dream:20260904115137:3:362988`
+*04.09. 11:51 UTC · Quelle: dream*
+
+Reflexes trigger but fail silently when preconditions (like available models or valid scripts) are unmet, indicating missing guardrails.
+
+### `dream:20260904115137:2:e7c8fa`
+*04.09. 11:51 UTC · Quelle: dream*
+
+Hand actions consistently fail to access real data paths because they execute without validating path existence or permissions first.
+
+### `dream:20260904115137:1:a8ee57`
+*04.09. 11:51 UTC · Quelle: dream*
+
+Free-tier model endpoints fail primarily due to rate limits (429) and service overloads (502), making static model selection unreliable without dynamic fallback routing.
 
 ### `tool:vorgeschlagene-fähigkeiten-prüfen-und-sp`
 *04.09. 11:33 UTC · Quelle: hands*

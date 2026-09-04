@@ -1,0 +1,337 @@
+{
+  "baseline": {
+    "total_errors": 9,
+    "by_type": {
+      "hallucination": 1,
+      "reasoning_error": 1,
+      "instruction_following": 1,
+      "knowledge_gap": 1,
+      "inconsistency": 1,
+      "bias_fairness": 1,
+      "degradation": 1,
+      "tool_use_error": 1,
+      "context_handling": 1
+    },
+    "by_severity": {
+      "high": 3,
+      "medium": 5,
+      "low": 1
+    },
+    "by_model": {
+      "gpt-4": 4,
+      "claude-3": 2,
+      "llama-3": 1,
+      "mixtral": 1,
+      "gpt-3.5": 1
+    },
+    "by_subtype": {
+      "hallucination.factual": 1,
+      "reasoning_error.logical_fallacy": 1,
+      "instruction_following.format_violation": 1,
+      "knowledge_gap.outdated": 1,
+      "inconsistency.self_contradiction": 1,
+      "bias_fairness.demographic": 1,
+      "degradation.repetition": 1,
+      "tool_use_error.wrong_args": 1,
+      "context_handling.lost_context": 1
+    },
+    "error_rate_per_1k_tokens": 0.526,
+    "critical_ratio": 0.333,
+    "top_error_types": [
+      {
+        "type": "hallucination",
+        "count": 1,
+        "percentage": 11.1
+      },
+      {
+        "type": "reasoning_error",
+        "count": 1,
+        "percentage": 11.1
+      },
+      {
+        "type": "instruction_following",
+        "count": 1,
+        "percentage": 11.1
+      },
+      {
+        "type": "knowledge_gap",
+        "count": 1,
+        "percentage": 11.1
+      },
+      {
+        "type": "inconsistency",
+        "count": 1,
+        "percentage": 11.1
+      }
+    ],
+    "period_start": "2026-09-04T12:03:14.821389",
+    "period_end": "2026-09-04T12:03:14.821480",
+    "generated_at": "2026-09-04T12:03:14.825589"
+  },
+  "taxonomy": {
+    "hallucination": {
+      "de": "Halluzination (Erfundene Fakten)",
+      "severity": "high",
+      "subtypes": [
+        "factual",
+        "logical",
+        "citation",
+        "code"
+      ]
+    },
+    "reasoning_error": {
+      "de": "Schlussfolgerungsfehler",
+      "severity": "high",
+      "subtypes": [
+        "logical_fallacy",
+        "missing_step",
+        "wrong_premise",
+        "circular"
+      ]
+    },
+    "instruction_following": {
+      "de": "Anweisungs-Nichterfüllung",
+      "severity": "medium",
+      "subtypes": [
+        "format_violation",
+        "constraint_ignored",
+        "partial_compliance",
+        "wrong_language"
+      ]
+    },
+    "knowledge_gap": {
+      "de": "Wissenslücke",
+      "severity": "medium",
+      "subtypes": [
+        "outdated",
+        "domain_specific",
+        "technical_detail",
+        "local_context"
+      ]
+    },
+    "inconsistency": {
+      "de": "Inkonsistenz (Widersprüche)",
+      "severity": "medium",
+      "subtypes": [
+        "self_contradiction",
+        "cross_turn",
+        "cross_document",
+        "temporal"
+      ]
+    },
+    "bias_fairness": {
+      "de": "Bias / Fairness-Problem",
+      "severity": "high",
+      "subtypes": [
+        "demographic",
+        "cultural",
+        "political",
+        "stereotyping"
+      ]
+    },
+    "safety_violation": {
+      "de": "Sicherheitsverletzung",
+      "severity": "critical",
+      "subtypes": [
+        "harmful_content",
+        "pii_leak",
+        "injection",
+        "jailbreak"
+      ]
+    },
+    "degradation": {
+      "de": "Qualitätsabfall (Degradation)",
+      "severity": "medium",
+      "subtypes": [
+        "repetition",
+        "verbosity",
+        "coherence_loss",
+        "style_drift"
+      ]
+    },
+    "tool_use_error": {
+      "de": "Tool-Nutzungsfehler",
+      "severity": "medium",
+      "subtypes": [
+        "wrong_tool",
+        "wrong_args",
+        "tool_failure",
+        "result_misinterpretation"
+      ]
+    },
+    "context_handling": {
+      "de": "Kontext-Verarbeitungsfehler",
+      "severity": "medium",
+      "subtypes": [
+        "lost_context",
+        "context_overflow",
+        "irrelevant_retrieval",
+        "summary_loss"
+      ]
+    }
+  },
+  "records": [
+    {
+      "id": "demo-001",
+      "timestamp": "2026-09-04T12:03:14.821389",
+      "error_type": "hallucination",
+      "subtype": "factual",
+      "severity": "high",
+      "model": "gpt-4",
+      "prompt_hash": "hash_0000",
+      "description": "Model claimed API exists that doesn't",
+      "context": {
+        "tokens": 1500
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    },
+    {
+      "id": "demo-002",
+      "timestamp": "2026-09-04T12:03:14.821424",
+      "error_type": "reasoning_error",
+      "subtype": "logical_fallacy",
+      "severity": "high",
+      "model": "claude-3",
+      "prompt_hash": "hash_0001",
+      "description": "Logical fallacy: affirmed the consequent",
+      "context": {
+        "tokens": 1600
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    },
+    {
+      "id": "demo-003",
+      "timestamp": "2026-09-04T12:03:14.821435",
+      "error_type": "instruction_following",
+      "subtype": "format_violation",
+      "severity": "medium",
+      "model": "gpt-4",
+      "prompt_hash": "hash_0002",
+      "description": "Output not valid JSON despite instruction",
+      "context": {
+        "tokens": 1700
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    },
+    {
+      "id": "demo-004",
+      "timestamp": "2026-09-04T12:03:14.821444",
+      "error_type": "knowledge_gap",
+      "subtype": "outdated",
+      "severity": "medium",
+      "model": "llama-3",
+      "prompt_hash": "hash_0003",
+      "description": "Knowledge cutoff: doesn't know 2024 events",
+      "context": {
+        "tokens": 1800
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    },
+    {
+      "id": "demo-005",
+      "timestamp": "2026-09-04T12:03:14.821454",
+      "error_type": "inconsistency",
+      "subtype": "self_contradiction",
+      "severity": "medium",
+      "model": "gpt-4",
+      "prompt_hash": "hash_0004",
+      "description": "Contradicted own previous answer",
+      "context": {
+        "tokens": 1900
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    },
+    {
+      "id": "demo-006",
+      "timestamp": "2026-09-04T12:03:14.821465",
+      "error_type": "bias_fairness",
+      "subtype": "demographic",
+      "severity": "high",
+      "model": "mixtral",
+      "prompt_hash": "hash_0005",
+      "description": "Stereotypical gender role assumption",
+      "context": {
+        "tokens": 2000
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    },
+    {
+      "id": "demo-007",
+      "timestamp": "2026-09-04T12:03:14.821471",
+      "error_type": "degradation",
+      "subtype": "repetition",
+      "severity": "low",
+      "model": "gpt-3.5",
+      "prompt_hash": "hash_0006",
+      "description": "Repeated same phrase 5 times",
+      "context": {
+        "tokens": 2100
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    },
+    {
+      "id": "demo-008",
+      "timestamp": "2026-09-04T12:03:14.821476",
+      "error_type": "tool_use_error",
+      "subtype": "wrong_args",
+      "severity": "medium",
+      "model": "gpt-4",
+      "prompt_hash": "hash_0007",
+      "description": "Called wrong function with invalid args",
+      "context": {
+        "tokens": 2200
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    },
+    {
+      "id": "demo-009",
+      "timestamp": "2026-09-04T12:03:14.821480",
+      "error_type": "context_handling",
+      "subtype": "lost_context",
+      "severity": "medium",
+      "model": "claude-3",
+      "prompt_hash": "hash_0008",
+      "description": "Forgot context from 3 turns ago",
+      "context": {
+        "tokens": 2300
+      },
+      "tags": [
+        "demo"
+      ],
+      "resolved": false,
+      "resolution_note": ""
+    }
+  ]
+}

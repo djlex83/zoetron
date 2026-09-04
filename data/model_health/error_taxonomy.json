@@ -1,0 +1,102 @@
+{
+  "hallucination": {
+    "de": "Halluzination (Erfundene Fakten)",
+    "severity": "high",
+    "subtypes": [
+      "factual",
+      "logical",
+      "citation",
+      "code"
+    ]
+  },
+  "reasoning_error": {
+    "de": "Schlussfolgerungsfehler",
+    "severity": "high",
+    "subtypes": [
+      "logical_fallacy",
+      "missing_step",
+      "wrong_premise",
+      "circular"
+    ]
+  },
+  "instruction_following": {
+    "de": "Anweisungs-Nichterfüllung",
+    "severity": "medium",
+    "subtypes": [
+      "format_violation",
+      "constraint_ignored",
+      "partial_compliance",
+      "wrong_language"
+    ]
+  },
+  "knowledge_gap": {
+    "de": "Wissenslücke",
+    "severity": "medium",
+    "subtypes": [
+      "outdated",
+      "domain_specific",
+      "technical_detail",
+      "local_context"
+    ]
+  },
+  "inconsistency": {
+    "de": "Inkonsistenz (Widersprüche)",
+    "severity": "medium",
+    "subtypes": [
+      "self_contradiction",
+      "cross_turn",
+      "cross_document",
+      "temporal"
+    ]
+  },
+  "bias_fairness": {
+    "de": "Bias / Fairness-Problem",
+    "severity": "high",
+    "subtypes": [
+      "demographic",
+      "cultural",
+      "political",
+      "stereotyping"
+    ]
+  },
+  "safety_violation": {
+    "de": "Sicherheitsverletzung",
+    "severity": "critical",
+    "subtypes": [
+      "harmful_content",
+      "pii_leak",
+      "injection",
+      "jailbreak"
+    ]
+  },
+  "degradation": {
+    "de": "Qualitätsabfall (Degradation)",
+    "severity": "medium",
+    "subtypes": [
+      "repetition",
+      "verbosity",
+      "coherence_loss",
+      "style_drift"
+    ]
+  },
+  "tool_use_error": {
+    "de": "Tool-Nutzungsfehler",
+    "severity": "medium",
+    "subtypes": [
+      "wrong_tool",
+      "wrong_args",
+      "tool_failure",
+      "result_misinterpretation"
+    ]
+  },
+  "context_handling": {
+    "de": "Kontext-Verarbeitungsfehler",
+    "severity": "medium",
+    "subtypes": [
+      "lost_context",
+      "context_overflow",
+      "irrelevant_retrieval",
+      "summary_loss"
+    ]
+  }
+}

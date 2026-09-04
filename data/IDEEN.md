@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 11:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 12:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,29 +18,34 @@
 - Implement a quota-aware router with per-model 429/5xx tracking in 60s rolling windows, tripping circuit breake *(hatte die Idee 4×)*
 - Deploy a persistent model-health dashboard tracking per-model success rates, latency percentiles, and quota ex *(hatte die Idee 4×)*
 - Build a synthetic load tester that simulates 429/5xx storms at 10x production rate to validate circuit breaker *(hatte die Idee 4×)*
-- Build a skill-compilation pipeline that lints, type-checks, and runs unit tests on generated code before atomi *(hatte die Idee 3×)*
-- Create a predictive budget allocator that estimates task complexity from prompt tokens and historical latency/ *(hatte die Idee 3×)*
+- Enforce absolute-path resolution in the hand tool by prepending ZOETRON_DATA to any relative input before exec *(hatte die Idee 3×)*
+- Create a skill-deployment pipeline that auto-promotes any proposal tagged 'critical' after a 5-minute canary o *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
+- Marktanalyse in konkrete Schritte umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals, critiques, and artifacts accumulate without expiration, causing the system to replan known failures instead of learning.
+- System stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), which starves the very remediation swarms needed to reduce errors.
+- Reflexes trigger but fail silently when preconditions (like available models or valid scripts) are unmet, indicating missing guardrails.
+- Hand actions consistently fail to access real data paths because they execute without validating path existence or permissions first.
+- Free-tier model endpoints fail primarily due to rate limits (429) and service overloads (502), making static model selection unreliable without dynami
 - Event pruning removes 81 events per cycle while zero facts are pruned, risking fact staleness and progressive context loss.
 - Five skill proposals generated this cycle with zero implementation tracking creates proposal debt that clogs future consolidation cycles.
 - Swarm convergence in 1 cycle with score 9 using 1:3:1 planner:builder:critic ratio works for review tasks but lacks validation for other task types.
@@ -51,11 +56,6 @@
 - A persistent gap exists between skill proposals (65+) and actual implementation, wasting accumulated knowledge without execution mechanisms.
 - Accumulated analysis artifacts (e.g., three stale Marktanalyse swarm results) decay in value if not converted into decisions within a defined window.
 - Free-tier model rate limits (429 errors) are a recurring systemic failure mode, not transient noise — routing must track quota state per model in real
-- Self-diagnosis reports zero organ errors despite 56 model failures vs 37 successes, indicating health metrics don't capture inference reliability.
-- Pruning removes 44 events but 0 facts per cycle, suggesting event-log bloat without semantic consolidation.
-- Reflex-triggered actions (skill building, market analysis completion) succeed when executed, but rely on manual goal selection rather than automatic p
-- Stale drive goals (market analysis, model reliability, skill implementation) persist across multiple cycles without automated escalation or resolution
-- The primary model (z-ai/glm-5.2:free) fails deterministically with 429 rate-limit errors, while the fallback (nvidia/nemotron-3-ultra) succeeds but at
 
 ---
 
