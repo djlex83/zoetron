@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,15 +18,15 @@
 - Add a fact-TTL janitor that expires facts older than 7 days unless explicitly re-validated, logging expiration *(hatte die Idee 4×)*
 - Build a fact-extraction validator that audits pruned events for missed entities/relations and retrains the ext *(hatte die Idee 4×)*
 - Implement fact TTL with access-frequency decay: auto-expire facts untouched for 7 days AND accessed fewer than *(hatte die Idee 4×)*
-- Develop a continuous event-to-fact compressor that runs each cycle before pruning, extracting durable facts fr *(hatte die Idee 3×)*
 - Implement a model-resilience middleware: per-provider circuit breaker, exponential backoff with jitter (base 2 *(hatte die Idee 3×)*
+- Enforce absolute-path resolution in the hand tool by prepending ZOETRON_DATA to any relative input before exec *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning is actively maintaining memory hygiene by discarding transient logs while preserving core facts.
+- Reflex-based execution successfully completed the stale market analysis goal, proving that automated scripts can unblock long-pending tasks.
+- Accumulated skill proposals remain unimplemented across multiple dream cycles, indicating a lack of an execution pipeline for generated ideas.
+- Actions marked as converged with a null score bypass quality validation, creating a blind spot in performance tracking.
+- Free models on OpenRouter are highly volatile, frequently returning 429 and 502 errors, necessitating robust fallback mechanisms.
 - Reflex actions are accepted as converged without any quality threshold, allowing low-quality completions to pass as done.
 - Pruning discards 38 events but zero facts, indicating the pruner cannot distinguish high-signal memories; factual density scoring before discard would
 - Skill proposals accumulate without implementation because there is no tracker that escalates stale proposals into concrete action items after a define
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across dream cycles (12+ proposals) but no execution tracker exists — proposals for circuit breakers, quota routers, and sy
 - Convergence is marked without quality validation: act_done events accept null scores and reflex completions lack minimum score thresholds, allowing un
 - Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate limits causing cascading failures, while fallback models (nvidia/nemotron-3-ultra) succee
-- Self-diagnosis reports zero organ errors while model failures persist, revealing a monitoring blind spot between component health and service-level re
-- Drive goals for model reliability and market analysis recur across cycles, signaling that root causes remain unaddressed despite reflex completions.
-- Skill proposals accumulate without a defined lifecycle (proposed→approved→implemented→validated), causing duplication and orphaned ideas.
-- Fallback routing to nemotron succeeds but exhibits high latency variance (7-31s), indicating need for latency-aware model selection.
-- Free-tier models consistently hit 429 rate limits under sustained load, making them unreliable as primary workers without quota-aware routing.
 
 ---
 

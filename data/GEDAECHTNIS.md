@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11140 Fakten** · Stand 2026-09-04 07:39 UTC · aktualisiert bei jedem Herzschlag
+**11157 Fakten** · Stand 2026-09-04 07:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6200
-- **swarm_artifact:** 2339
-- **last_swarm_critique:** 745
-- **anti_pattern:** 659
-- **last_swarm_goal:** 493
-- **strategy:** 350
-- **tool:** 140
+- **dream:** 6205
+- **swarm_artifact:** 2345
+- **last_swarm_critique:** 746
+- **anti_pattern:** 661
+- **last_swarm_goal:** 494
+- **strategy:** 351
+- **tool:** 141
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-in-echte-skil`
+*04.09. 07:55 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten in echte Skills verwandeln'. Datei: data/tools/vorgeschlagene-fähigkeiten-in-echte-skil.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:2`
+*04.09. 07:54 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): State Machine with Real Benchmark Feedback Loop - Model skill evolution as an explicit finite state machine with states: DRAFT → VALIDATING → VERIFIED → REGISTERED. Each transition is triggered by passing defined criteria and
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:1`
+*04.09. 07:54 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*04.09. 07:53 UTC · Quelle: critic*
+
+score=7; issues=Timestamp in update_skill_registry uses str(Path().cwd()) instead of actual timestamp (datetime.now().isoformat()); Registration by appending code to benchmark_organ/werkzeugpruefung scripts is fragile - assumes specific function names (registe
+
+### `last_swarm_goal`
+*04.09. 07:47 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten in echte Skills verwandeln
+
+### `dream:20260904074644:5:43b977`
+*04.09. 07:46 UTC · Quelle: dream*
+
+Event pruning is actively maintaining memory hygiene by discarding transient logs while preserving core facts.
+
+### `dream:20260904074644:4:862cbf`
+*04.09. 07:46 UTC · Quelle: dream*
+
+Reflex-based execution successfully completed the stale market analysis goal, proving that automated scripts can unblock long-pending tasks.
+
+### `dream:20260904074644:3:c95ef8`
+*04.09. 07:46 UTC · Quelle: dream*
+
+Accumulated skill proposals remain unimplemented across multiple dream cycles, indicating a lack of an execution pipeline for generated ideas.
+
+### `dream:20260904074644:2:3ab1fc`
+*04.09. 07:46 UTC · Quelle: dream*
+
+Actions marked as converged with a null score bypass quality validation, creating a blind spot in performance tracking.
+
+### `dream:20260904074644:1:3e2655`
+*04.09. 07:46 UTC · Quelle: dream*
+
+Free models on OpenRouter are highly volatile, frequently returning 429 and 502 errors, necessitating robust fallback mechanisms.
 
 ### `dream:20260904073701:5:12a87c`
 *04.09. 07:37 UTC · Quelle: dream*
