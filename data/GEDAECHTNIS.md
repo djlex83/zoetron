@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10958 Fakten** · Stand 2026-09-04 01:48 UTC · aktualisiert bei jedem Herzschlag
+**10963 Fakten** · Stand 2026-09-04 02:15 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6060
+- **dream:** 6065
 - **swarm_artifact:** 2315
 - **last_swarm_critique:** 741
 - **anti_pattern:** 655
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904021340:5:c3ce0b`
+*04.09. 02:13 UTC · Quelle: dream*
+
+Self-improvement loops have no convergence detection, allowing infinite iteration without measurable progress.
+
+### `dream:20260904021340:4:b9e28e`
+*04.09. 02:13 UTC · Quelle: dream*
+
+Model fallback logic lacks real-time health scoring, causing cascading failures when primary and backup models hit limits simultaneously.
+
+### `dream:20260904021340:3:61fab2`
+*04.09. 02:13 UTC · Quelle: dream*
+
+Market analyses produce outputs that stall without a forced handoff mechanism that translates findings into concrete action steps.
+
+### `dream:20260904021340:2:efe852`
+*04.09. 02:13 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely execute because no automated pipeline converts proposals into implemented, tested code.
+
+### `dream:20260904021340:1:b8bf59`
+*04.09. 02:13 UTC · Quelle: dream*
+
+Free-tier models consistently fail under load with 429/502 errors, making them unreliable for production-critical paths.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Wissenstände a:2`
 *04.09. 01:45 UTC · Quelle: evolution*
