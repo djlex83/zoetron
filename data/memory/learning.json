@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 01:03:07",
+ "stand": "2026-09-04 01:12:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -207,12 +207,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -369,7 +363,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.679,
+ "haende_quote": 0.681,
  "simulationen_angewandt": 30,
  "swarm_scores": {
   "n": 34,

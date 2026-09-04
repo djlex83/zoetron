@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10926 Fakten** · Stand 2026-09-04 01:04 UTC · aktualisiert bei jedem Herzschlag
+**10931 Fakten** · Stand 2026-09-04 01:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6040
+- **dream:** 6045
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904011140:5:3395b5`
+*04.09. 01:11 UTC · Quelle: dream*
+
+Hand actions have no structured error capture or retry policy, so transient failures become silent data loss.
+
+### `dream:20260904011140:4:9b9b70`
+*04.09. 01:11 UTC · Quelle: dream*
+
+Self-improvement cycles lack a convergence guard, risking infinite retries when scores plateau.
+
+### `dream:20260904011140:3:51497c`
+*04.09. 01:11 UTC · Quelle: dream*
+
+The system repeatedly proposes the same model-router skill (twice in this log) because no deployment tracker exists to close the loop.
+
+### `dream:20260904011140:2:abe3c1`
+*04.09. 01:11 UTC · Quelle: dream*
+
+Working models (Nemotron, Ling) exhibit 15-30s latency, indicating cold-start or queueing overhead that degrades interactive use.
+
+### `dream:20260904011140:1:4fae30`
+*04.09. 01:11 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits within minutes, making them unreliable for sustained workloads.
 
 ### `dream:20260904010224:5:98e666`
 *04.09. 01:02 UTC · Quelle: dream*
