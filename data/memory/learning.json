@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 14:58:55",
+ "stand": "2026-09-04 15:10:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -193,12 +193,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fähigkeiten-gezielt-trainieren.py",
@@ -405,7 +399,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.751,
+ "haende_quote": 0.756,
  "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 30,
@@ -414,8 +408,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 29,
-   "schnitt": 6.28
+   "n": 28,
+   "schnitt": 6.18
   },
   "bau": {
    "n": 1,

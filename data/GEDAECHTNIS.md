@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11354 Fakten** · Stand 2026-09-04 15:01 UTC · aktualisiert bei jedem Herzschlag
+**11359 Fakten** · Stand 2026-09-04 15:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6360
+- **dream:** 6365
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904150913:5:83bae2`
+*04.09. 15:09 UTC · Quelle: dream*
+
+Three distinct drive goals (reduce errors, test skills, refresh knowledge) target the same root cause: unverified assumptions about model availability and skill efficacy.
+
+### `dream:20260904150913:4:53a8df`
+*04.09. 15:09 UTC · Quelle: dream*
+
+Pruning removed 18 events but zero facts, showing the system discards operational noise while preserving semantic knowledge – a healthy signal-to-noise ratio.
+
+### `dream:20260904150913:3:c9433f`
+*04.09. 15:09 UTC · Quelle: dream*
+
+Reflex-driven model reliability improvement converged immediately without scoring, implying the fix was structural (e.g., fallback logic) not parametric tuning.
+
+### `dream:20260904150913:2:bf8623`
+*04.09. 15:09 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model consistently succeeds with low latency (3.6s) while larger models fail, suggesting smaller specialized models are more reliable for routine tasks.
+
+### `dream:20260904150913:1:4c6393`
+*04.09. 15:09 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared upstream quota exhaustion rather than individual model failure.
 
 ### `dream:20260904145827:5:5c8e28`
 *04.09. 14:58 UTC · Quelle: dream*

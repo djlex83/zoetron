@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 14:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 15:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three distinct drive goals (reduce errors, test skills, refresh knowledge) target the same root cause: unverified assumptions about model availability
+- Pruning removed 18 events but zero facts, showing the system discards operational noise while preserving semantic knowledge – a healthy signal-to-nois
+- Reflex-driven model reliability improvement converged immediately without scoring, implying the fix was structural (e.g., fallback logic) not parametr
+- The inclusionai/ling-3.0-flash-fin model consistently succeeds with low latency (3.6s) while larger models fail, suggesting smaller specialized models
+- Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared upstream quota exhaustion rather than individual model
 - No graceful-degradation ladder exists: when all live models fail the system has no cached-response or offline mode to preserve continuity.
 - Pruning discards 21 events per cycle without extracting recurring error signatures, losing diagnostic signal that could prevent future failures.
 - Reflex and dream/swarm tasks share the same model pool, causing critical fast-path operations to starve behind heavy batch workloads.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (5 in last dream) but only one reflex executed them, indicating a proposal-to-implementation gap.
 - Latency disparity between inclusionai/ling-3.0-flash-fin:free (~4 s) and nvidia/nemotron-3-ultra (~30 s) creates a natural fast/slow tier for routing.
 - Rate limiting (HTTP 429) on z-ai/glm-5.2:free recurs across sessions, making it unreliable as a primary model.
-- Pruning removed 7 events but retained 0 facts, meaning the system discards raw experience without extracting durable lessons, causing the same failure
-- Self-diagnosis reported zero organ errors while the system experienced cascading model failures, exposing a blind spot where internal health checks ca
-- Skill proposals remain speculative without simulation validation — the drive goal 'Vorgeschlagene Fähigkeiten im Test prüfen' stayed open across cycle
-- Stale goals accumulate silently because no TTL enforcement exists; the system flagged 'Marktanalyse' as stale and generated a renewal goal, yet the or
-- Model failures are systemic rather than isolated — four consecutive provider failures (429 rate limits, 502 upstream overload) with no automatic failo
 
 ---
 
