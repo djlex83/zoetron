@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11393 Fakten** · Stand 2026-09-04 16:22 UTC · aktualisiert bei jedem Herzschlag
+**11389 Fakten** · Stand 2026-09-04 16:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6390
-- **swarm_artifact:** 2372
+- **dream:** 6395
+- **swarm_artifact:** 2363
 - **last_swarm_critique:** 752
 - **anti_pattern:** 667
 - **last_swarm_goal:** 500
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904163655:5:95a629`
+*04.09. 16:36 UTC · Quelle: dream*
+
+Calibration error of 3 points (predicted 5 vs actual 8) indicates systematic underestimation of task complexity.
+
+### `dream:20260904163655:4:0db0d0`
+*04.09. 16:36 UTC · Quelle: dream*
+
+The swarm-based pipeline construction converged in one cycle with score 8, validating the planner-builder-critic role division.
+
+### `dream:20260904163655:3:6f632f`
+*04.09. 16:36 UTC · Quelle: dream*
+
+Ling-3.0-flash-fin delivers fast (4s) successful responses, making it a preferred primary model for speed-critical steps.
+
+### `dream:20260904163655:2:180aba`
+*04.09. 16:36 UTC · Quelle: dream*
+
+Nemotron-3-ultra provides reliable but high-latency (40-120s) completions, suitable for non-interactive heavy reasoning tasks.
+
+### `dream:20260904163655:1:c00fd0`
+*04.09. 16:36 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits, making them unreliable for autonomous pipelines without quota management.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Vergessene Ziele und Kri:2`
 *04.09. 16:17 UTC · Quelle: evolution*
