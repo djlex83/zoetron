@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflexes that reduce model errors exist but are triggered reactively; proactive quota-aware routing would prevent most 429 cascades.
+- Stale artifacts (market analyses) persist in memory because no automated TTL or ownership review exists for long-lived objects.
+- Quality gates are absent: act_done events mark convergence with null scores, allowing unverified work to pass as complete.
+- Skill proposals accumulate (65+) but lack a verification pipeline, causing proposal rot and duplicated effort across dream cycles.
+- Free-tier models consistently hit 429/5xx errors under load, making them unreliable for production-critical paths without circuit breakers and paid fa
 - Pruning removes 89 events per cycle but zero facts, suggesting the fact store is either static or the pruning criteria are too conservative.
 - Skill proposals accumulate without enforced ownership or deadlines, causing proposal debt that clutters the backlog and delays capability growth.
 - Swarm execution scores 7/10 but fails to converge, indicating the planner-critic loop lacks a hard convergence threshold or max-iteration guard.
@@ -51,11 +56,6 @@
 - Evolutionary iteration with critic feedback raised solution score from 7 to 9, proving multi-variant refinement works.
 - Nemotron-3-Ultra succeeds but with high latency variance (21-84s), while Ling-3-Flash responds in 3s but may lack depth for complex tasks.
 - Free-tier models consistently hit 429 rate limits, making fallback chains essential for reliability.
-- System metabolism shows stress=1.0 with a conserve budget of only 3 tasks/1 iteration, so any new skill must be resource-scoped and deferrable.
-- The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating the proposal-to-skill pipeline lacks validation, idempotency
-- Hand actions fail when using relative paths; all file operations must resolve inputs against the absolute ZOETRON_DATA environment variable before exe
-- The nvidia/nemotron-3-ultra fallback succeeds but exhibits high latency variance (24–84 s), requiring timeout budgets and async handling to prevent pi
-- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors, making it unreliable as a primary model without exponential backoff and cir
 
 ---
 

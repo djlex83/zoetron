@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11187 Fakten** · Stand 2026-09-04 09:08 UTC · aktualisiert bei jedem Herzschlag
+**11192 Fakten** · Stand 2026-09-04 09:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6235
+- **dream:** 6240
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904091637:5:38ceb8`
+*04.09. 09:16 UTC · Quelle: dream*
+
+Reflexes that reduce model errors exist but are triggered reactively; proactive quota-aware routing would prevent most 429 cascades.
+
+### `dream:20260904091637:4:07e560`
+*04.09. 09:16 UTC · Quelle: dream*
+
+Stale artifacts (market analyses) persist in memory because no automated TTL or ownership review exists for long-lived objects.
+
+### `dream:20260904091637:3:88e75a`
+*04.09. 09:16 UTC · Quelle: dream*
+
+Quality gates are absent: act_done events mark convergence with null scores, allowing unverified work to pass as complete.
+
+### `dream:20260904091637:2:a97b22`
+*04.09. 09:16 UTC · Quelle: dream*
+
+Skill proposals accumulate (65+) but lack a verification pipeline, causing proposal rot and duplicated effort across dream cycles.
+
+### `dream:20260904091637:1:9d191f`
+*04.09. 09:16 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429/5xx errors under load, making them unreliable for production-critical paths without circuit breakers and paid fallbacks.
 
 ### `dream:20260904090631:5:190b50`
 *04.09. 09:06 UTC · Quelle: dream*

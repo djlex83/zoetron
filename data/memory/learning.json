@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 09:07:09",
+ "stand": "2026-09-04 09:17:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -400,6 +400,12 @@
   },
   {
    "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-bündeln-und-ziele-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
