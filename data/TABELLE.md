@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8144 Neuronen · 656712 bewertete Synapsen
+Stand: 8142 Neuronen · 657372 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,17 +10,17 @@ Stand: 8144 Neuronen · 656712 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 724 | 0.24 |
+| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 725 | 0.24 |
 | 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 652 | 0.26 |
-| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 722 | 0.23 |
+| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 723 | 0.23 |
 | 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 684 | 0.24 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 694 | 0.23 |
-| 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 620 | 0.25 |
+| 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 621 | 0.25 |
 | 7 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 675 | 0.23 |
-| 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 602 | 0.26 |
+| 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 603 | 0.26 |
 | 9 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 687 | 0.23 |
 | 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 625 | 0.24 |
-| 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 596 | 0.25 |
+| 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 597 | 0.25 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 555 | 0.27 |
 | 13 | 💭 | Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x … | 596 | 0.25 |
 | 14 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 555 | 0.27 |

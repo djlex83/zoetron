@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-04 23:46:50",
+ "stand": "2026-09-04 23:56:47",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -213,6 +213,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-schwarm-arbeiten-abschließen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -415,12 +421,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-schwarm-arbeiten-abschließen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
  "haende_quote": 0.785,

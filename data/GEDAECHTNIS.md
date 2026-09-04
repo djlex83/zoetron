@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11594 Fakten** · Stand 2026-09-04 23:48 UTC · aktualisiert bei jedem Herzschlag
+**11593 Fakten** · Stand 2026-09-04 23:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6554
-- **swarm_artifact:** 2386
+- **dream:** 6559
+- **swarm_artifact:** 2381
 - **last_swarm_critique:** 760
 - **anti_pattern:** 671
 - **last_swarm_goal:** 508
-- **strategy:** 352
+- **strategy:** 351
 - **tool:** 152
 - **hand_result:** 124
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904235627:5:c3ce70`
+*04.09. 23:56 UTC · Quelle: dream*
+
+Conserve budget (max_iterations=1) forces atomic steps; any goal requiring >3 atomic steps will fail unless pre-decomposed by task_decomposer.
+
+### `dream:20260904235627:4:b82544`
+*04.09. 23:56 UTC · Quelle: dream*
+
+Fifty skill proposals exist without a validation pipeline, causing proposal rot; each proposal must pass automated test + simulation + live trial before integration.
+
+### `dream:20260904235627:3:04f609`
+*04.09. 23:56 UTC · Quelle: dream*
+
+Simulation gate prevented live commitment by returning verdict=revise with 5 risks, demonstrating that mandatory pre-flight simulation with zero-risk threshold catches fatal errors.
+
+### `dream:20260904235627:2:52489d`
+*04.09. 23:56 UTC · Quelle: dream*
+
+Every hand_action failure traces back to unnormalized paths — the system must resolve all I/O through ZOETRON_DATA and sys.argv[1] before any file operation.
+
+### `dream:20260904235627:1:7c0811`
+*04.09. 23:56 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free fails 100% of the time with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, proving single-model dependence is a reliability catastrophe.
 
 ### `dream:20260904234632:5:20ae51`
 *04.09. 23:46 UTC · Quelle: dream*
