@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11021 Fakten** · Stand 2026-09-04 03:48 UTC · aktualisiert bei jedem Herzschlag
+**11038 Fakten** · Stand 2026-09-04 04:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6105
-- **swarm_artifact:** 2327
-- **last_swarm_critique:** 743
-- **anti_pattern:** 655
-- **last_swarm_goal:** 491
-- **strategy:** 348
-- **tool:** 138
+- **dream:** 6110
+- **swarm_artifact:** 2333
+- **last_swarm_critique:** 744
+- **anti_pattern:** 657
+- **last_swarm_goal:** 492
+- **strategy:** 349
+- **tool:** 139
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -19,6 +19,56 @@
 - **last_goal:** 1
 
 ---
+
+### `tool:alte-schwarm-arbeiten-abschließen`
+*04.09. 04:06 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Alte Schwarm-Arbeiten abschließen'. Datei: data/tools/alte-schwarm-arbeiten-abschließen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Alte Schwarm-Arbeiten ab:2`
+*04.09. 04:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.5): Artifact-Dependency Rebuild Strategy - Shift focus from task completion flags to artifact lifecycle management. Model all swarm outputs as nodes in a dependency graph where each artifact declares its inputs and producer tas
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Alte Schwarm-Arbeiten ab:0`
+*04.09. 04:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.0): Execution-First Pipeline - Replace the hollow complete_task() stub with an actual execution engine that invokes registered tools per task specification. Each task in the swarm carries a 'tool_calls' array; the engine dispat
+
+### `last_swarm_critique`
+*04.09. 04:03 UTC · Quelle: critic*
+
+score=5; issues=Die 'completion' ist hohl: complete_task() markiert Tasks nur als erledigt, ohne tatsaechliche Arbeit auszufuehren - keine Tool-Ausfuehrung, kein Re-Run fehlgeschlagener Artefakte; Verifikation ist selbstdeklariert: 'verification': {'state': 'd
+
+### `last_swarm_goal`
+*04.09. 03:59 UTC · Quelle: system*
+
+Alte Schwarm-Arbeiten abschließen
+
+### `dream:20260904035902:5:a0008d`
+*04.09. 03:59 UTC · Quelle: dream*
+
+Fact store pruning removed zero items despite TTL proposals, indicating retention policies are proposed but not enforced.
+
+### `dream:20260904035902:4:cc820f`
+*04.09. 03:59 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles but no mechanism exists to track which are implemented, abandoned, or superseded.
+
+### `dream:20260904035902:3:2d9312`
+*04.09. 03:59 UTC · Quelle: dream*
+
+Three separate drive goals target overlapping themes (error reduction, skill execution, analysis utilization) showing goal fragmentation instead of unified strategy.
+
+### `dream:20260904035902:2:b39bf2`
+*04.09. 03:59 UTC · Quelle: dream*
+
+Convergence was declared (converged=true) with a null quality score, proving the system accepts completion without measurable success criteria.
+
+### `dream:20260904035902:1:a49f3a`
+*04.09. 03:59 UTC · Quelle: dream*
+
+Repeated 429 errors on the same model indicate missing circuit-breaker logic that would stop hammering a rate-limited endpoint.
 
 ### `tool:modellfehler-stark-reduzieren`
 *04.09. 03:46 UTC · Quelle: hands*

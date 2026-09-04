@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7764 Neuronen · 572049 bewertete Synapsen
+Stand: 7774 Neuronen · 573656 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,15 +11,15 @@ Stand: 7764 Neuronen · 572049 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 673 | 0.24 |
-| 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 611 | 0.26 |
+| 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 612 | 0.26 |
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 658 | 0.24 |
-| 4 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 651 | 0.23 |
-| 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 662 | 0.23 |
+| 4 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 663 | 0.23 |
+| 5 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 651 | 0.23 |
 | 6 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 653 | 0.23 |
-| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 544 | 0.27 |
+| 7 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 546 | 0.27 |
 | 8 | 💭 | The nvidia/nemotron-3-ultra model succeeds where others fail but… | 564 | 0.26 |
 | 9 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 572 | 0.25 |
-| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 544 | 0.27 |
+| 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 546 | 0.27 |
 | 11 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 587 | 0.24 |
 | 12 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 560 | 0.25 |
 | 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 586 | 0.24 |
