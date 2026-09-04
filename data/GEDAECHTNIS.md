@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11480 Fakten** · Stand 2026-09-04 19:29 UTC · aktualisiert bei jedem Herzschlag
+**11482 Fakten** · Stand 2026-09-04 19:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6460
+- **dream:** 6465
 - **swarm_artifact:** 2380
 - **last_swarm_critique:** 755
 - **anti_pattern:** 667
@@ -13,10 +13,34 @@
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
-- **frontier:** 3
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904193652:5:d3e080`
+*04.09. 19:36 UTC · Quelle: dream*
+
+Event pruning is active but facts remain static, suggesting memory consolidation should focus on converting transient events into durable facts.
+
+### `dream:20260904193652:4:063fe5`
+*04.09. 19:36 UTC · Quelle: dream*
+
+Reflexes tied to complex goals like 'understand model errors' fail when the underlying tools or paths are broken, showing that reflexes need pre-flight checks.
+
+### `dream:20260904193652:3:159134`
+*04.09. 19:36 UTC · Quelle: dream*
+
+High system stress (1.0) triggers a 'conserve' state that severely limits task execution, indicating a need for better load shedding before stress peaks.
+
+### `dream:20260904193652:2:d01658`
+*04.09. 19:36 UTC · Quelle: dream*
+
+Hand actions are failing because relative paths are not resolving to the actual ZOETRON_DATA directory, requiring absolute path construction.
+
+### `dream:20260904193652:1:ea8c8b`
+*04.09. 19:36 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of nvidia/nemotron-3-ultra-550b-a55b:free.
 
 ### `dream:20260904192640:5:bccb4c`
 *04.09. 19:26 UTC · Quelle: dream*
@@ -43087,18 +43111,3 @@ Swarm sessions leak resources with 14% orphan rate (7 started vs 6 finished) cau
 *21.08. 23:58 UTC · Quelle: dream*
 
 The nemotron-3-ultra model exhibits unpredictable high latency (up to 219s) making it unreliable for time-sensitive swarm operations.
-
-### `frontier:1936-3`
-*21.08. 19:36 UTC · Quelle: senses*
-
-I accidentally logged hundreds of thousands of phone calls to military bases (https://lina.sh/blog/hijacking-e164-arpa)
-
-### `frontier:1936-2`
-*21.08. 19:36 UTC · Quelle: senses*
-
-DeepSeek-v4-flash-vision-exp (https://api-docs.deepseek.com/guides/vision/)
-
-### `frontier:1936-1`
-*21.08. 19:36 UTC · Quelle: senses*
-
-Kagi added a setting for removing paywalled links from search results (https://kagi.com/changelog#11296)

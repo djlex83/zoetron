@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event pruning is active but facts remain static, suggesting memory consolidation should focus on converting transient events into durable facts.
+- Reflexes tied to complex goals like 'understand model errors' fail when the underlying tools or paths are broken, showing that reflexes need pre-fligh
+- High system stress (1.0) triggers a 'conserve' state that severely limits task execution, indicating a need for better load shedding before stress pea
+- Hand actions are failing because relative paths are not resolving to the actual ZOETRON_DATA directory, requiring absolute path construction.
+- The z-ai/glm-5.2:free model is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of nvidia/nemotron-3-ultra
 - Drive goals repeat across cycles (error reduction, skill adoption, cleanup) indicating persistent systemic gaps.
 - Pruning removes events (22-64 per run) but never facts, causing unbounded fact accumulation over time.
 - 50+ skill proposals exist but reflex testing shows only ad-hoc validation, no systematic adoption pipeline.
@@ -51,11 +56,6 @@
 - Reflex-driven tool execution converged the swarm goal without planner involvement, proving reflexes can bypass brittle planning.
 - High-latency fallbacks (nemotron ~30s) succeed but exceed metabolism budgets, making them unreliable for time-critical loops.
 - Rate-limit headers (x-ratelimit-remaining, retry-after) are ignored, causing repeated 429s across three different model families.
-- The persistent gap between skill proposals and their implementation is itself a recurring failure mode, indicating that proposal generation without en
-- Self-diagnosis reporting zero organ errors despite repeated model failures shows that internal health checks do not capture external API reliability, 
-- Pruning 44 events but 0 facts reveals that stale event data accumulates far faster than factual knowledge, meaning event-level cleanup alone is insuff
-- The sole successful model (ling-3.0-flash-fin) with 3.1s latency indicates smaller, faster models are more resilient under load than larger ones, sugg
-- Sequential retries across multiple models without circuit breakers amplify rate-limit cascades, turning a single 429 into a systemic failure that bloc
 
 ---
 
