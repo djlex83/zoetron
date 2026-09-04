@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 15:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 15:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand-action output validation is absent: empty stdout/stderr would be treated as success, masking silent failures in tool execution.
+- Goal staleness goes undetected: three drive goals persisted without TTL enforcement, risking zombie work and context bloat.
+- Skill proposals accumulate without execution pipeline: five proposals were generated this cycle but none were built, tested, or logged, creating a pro
+- Reflex tools succeed in isolation but swarm deployments repeat failures when root-cause diagnosis is skipped, as seen in the market-analysis reflex su
+- Model provider failures cascade silently: 429/5xx errors from multiple providers (GLM, Nemotron, Gemma) went unhandled until a free-tier model succeed
 - Three distinct drive goals (reduce errors, test skills, refresh knowledge) target the same root cause: unverified assumptions about model availability
 - Pruning removed 18 events but zero facts, showing the system discards operational noise while preserving semantic knowledge – a healthy signal-to-nois
 - Reflex-driven model reliability improvement converged immediately without scoring, implying the fix was structural (e.g., fallback logic) not parametr
@@ -51,11 +56,6 @@
 - Reflex and dream/swarm tasks share the same model pool, causing critical fast-path operations to starve behind heavy batch workloads.
 - Absence of circuit-breaking allows single-model failures to cascade into full task collapse instead of triggering controlled fallback.
 - Free-tier model endpoints exhibit systemic instability with correlated 429 rate-limit and 502 upstream overload failures across multiple providers.
-- Self-diagnosis consistently reports zero organ errors, yet model failures persist, meaning health checks miss external API failures.
-- Pruning removes events (30, 21) but zero facts, suggesting fact store grows unbounded while event log stays bounded.
-- Skill proposals accumulate (5 in last dream) but only one reflex executed them, indicating a proposal-to-implementation gap.
-- Latency disparity between inclusionai/ling-3.0-flash-fin:free (~4 s) and nvidia/nemotron-3-ultra (~30 s) creates a natural fast/slow tier for routing.
-- Rate limiting (HTTP 429) on z-ai/glm-5.2:free recurs across sessions, making it unreliable as a primary model.
 
 ---
 

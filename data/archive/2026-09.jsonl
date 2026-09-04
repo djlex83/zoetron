@@ -10323,3 +10323,23 @@
 {"ts": 1787929649.7943275, "kind": "act_done", "payload": {"goal_title": "Simulationen für echte Aufgaben testen", "score": 1, "converged": false}}
 {"ts": 1787929652.9111621, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 2.79, "gelesen": 335}}
 {"ts": 1787929655.0646856, "kind": "issue_synced", "payload": {"issue": 192, "state": "open"}}
+{"ts": 1787929770.9084866, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787929983.6927714, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787929985.032071, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787929989.4791622, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787929989.479159, "schalter_geoeffnet": false}}
+{"ts": 1787930091.305445, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 101.8, "tokens_ein": 1386, "tokens_aus": 1271}}
+{"ts": 1787930091.3059957, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router with circuit-breaker logic that tracks per-model 429/502 rates and latency percentiles, automatically falling back to the healthiest available model."}}
+{"ts": 1787930091.3060522, "kind": "skill_proposal", "payload": {"proposal": "Create a skill-implementation pipeline that converts approved skill proposals into executable code tasks and schedules them in the next available hand-action window."}}
+{"ts": 1787930091.3061047, "kind": "skill_proposal", "payload": {"proposal": "Build a dream-to-skill bridge that extracts recurring failure patterns from consolidation logs and auto-generates targeted skill proposals with acceptance criteria."}}
+{"ts": 1787930091.306169, "kind": "skill_proposal", "payload": {"proposal": "Enhance the hand-action wrapper to snapshot environment state (model endpoints, queue depths, rate-limit headers) on every execution for forensic replay."}}
+{"ts": 1787930091.3062341, "kind": "skill_proposal", "payload": {"proposal": "Develop a pre-flight checklist for swarm launches that verifies model availability, rate-limit headroom, and skill prerequisites before committing resources."}}
+{"ts": 1787930091.3062894, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787930094.29234, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787930094.2923353, "schalter_geoeffnet": false}}
+{"ts": 1787930210.1513073, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 115.9, "tokens_ein": 435, "tokens_aus": 497}}
+{"ts": 1787930210.1514502, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Die Modelle scheitern viel zu oft. Weniger Fehler bedeuten zuverlässigere Entscheidungen.", "signal": "failure"}}
+{"ts": 1787930210.1515284, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Skills wirklich nutzen", "why": "Viele Skills wurden vorgeschlagen, aber wenige funktionieren. Wir müssen sie testen und anwenden.", "signal": "gap"}}
+{"ts": 1787930210.1515937, "kind": "drive_goal", "payload": {"title": "Simulationen und Träume verbessern", "why": "Frühere Versuche mit Simulationen scheiterten kläglich. Bessere Simulationen helfen beim Lernen ohne Risiko.", "signal": "combination"}}
+{"ts": 1787930212.2550097, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.21, "gelesen": 1}}
+{"ts": 1787930212.2557764, "kind": "reflex_used", "payload": {"goal": "Mehr Simulationen zum Lernen nutzen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
+{"ts": 1787930212.6717658, "kind": "act_done", "payload": {"goal_title": "Mehr Simulationen zum Lernen nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787930337.9921558, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

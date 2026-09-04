@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11359 Fakten** · Stand 2026-09-04 15:12 UTC · aktualisiert bei jedem Herzschlag
+**11364 Fakten** · Stand 2026-09-04 15:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6365
+- **dream:** 6370
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904151949:5:427b30`
+*04.09. 15:19 UTC · Quelle: dream*
+
+Hand-action output validation is absent: empty stdout/stderr would be treated as success, masking silent failures in tool execution.
+
+### `dream:20260904151949:4:a26101`
+*04.09. 15:19 UTC · Quelle: dream*
+
+Goal staleness goes undetected: three drive goals persisted without TTL enforcement, risking zombie work and context bloat.
+
+### `dream:20260904151949:3:64604b`
+*04.09. 15:19 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution pipeline: five proposals were generated this cycle but none were built, tested, or logged, creating a proposal graveyard.
+
+### `dream:20260904151949:2:42e4a7`
+*04.09. 15:19 UTC · Quelle: dream*
+
+Reflex tools succeed in isolation but swarm deployments repeat failures when root-cause diagnosis is skipped, as seen in the market-analysis reflex succeeding while earlier swarm attempts failed.
+
+### `dream:20260904151949:1:2e521f`
+*04.09. 15:19 UTC · Quelle: dream*
+
+Model provider failures cascade silently: 429/5xx errors from multiple providers (GLM, Nemotron, Gemma) went unhandled until a free-tier model succeeded, revealing no automatic fallback logic.
 
 ### `dream:20260904150913:5:83bae2`
 *04.09. 15:09 UTC · Quelle: dream*
