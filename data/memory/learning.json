@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 19:47:51",
+ "stand": "2026-09-04 19:57:22",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -153,6 +153,12 @@
    "quote": 0.0
   },
   {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -238,12 +244,6 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -417,8 +417,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.77,
- "simulationen_angewandt": 20,
+ "haende_quote": 0.775,
+ "simulationen_angewandt": 19,
  "swarm_scores": {
   "n": 29,
   "best": 9.0,

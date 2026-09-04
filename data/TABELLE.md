@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8085 Neuronen · 640611 bewertete Synapsen
+Stand: 8087 Neuronen · 641240 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,11 +12,11 @@ Stand: 8085 Neuronen · 640611 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 715 | 0.24 |
 | 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 641 | 0.26 |
-| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 696 | 0.23 |
+| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 698 | 0.23 |
 | 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 678 | 0.24 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 689 | 0.23 |
 | 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 612 | 0.25 |
-| 7 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 667 | 0.23 |
+| 7 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 668 | 0.23 |
 | 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 594 | 0.26 |
 | 9 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 680 | 0.23 |
 | 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 619 | 0.24 |

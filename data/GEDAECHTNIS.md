@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11487 Fakten** · Stand 2026-09-04 19:49 UTC · aktualisiert bei jedem Herzschlag
+**11491 Fakten** · Stand 2026-09-04 19:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6470
+- **dream:** 6474
 - **swarm_artifact:** 2380
 - **last_swarm_critique:** 755
 - **anti_pattern:** 667
@@ -16,6 +16,26 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904195701:4:fa5659`
+*04.09. 19:57 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model proved to be a reliable and fast fallback during periods of high API congestion.
+
+### `dream:20260904195701:3:6f18b7`
+*04.09. 19:57 UTC · Quelle: dream*
+
+Swarm tasks can successfully converge and complete even when individual model calls fail intermittently, provided alternative models are available.
+
+### `dream:20260904195701:2:7f68a9`
+*04.09. 19:57 UTC · Quelle: dream*
+
+Latency for the same model can vary drastically from 44s to 114s depending on current upstream load.
+
+### `dream:20260904195701:1:ea75bc`
+*04.09. 19:57 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter frequently experience rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 
 ### `dream:20260904194731:5:206040`
 *04.09. 19:47 UTC · Quelle: dream*

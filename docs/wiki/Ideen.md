@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,18 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The inclusionai/ling-3.0-flash-fin model proved to be a reliable and fast fallback during periods of high API congestion.
+- Swarm tasks can successfully converge and complete even when individual model calls fail intermittently, provided alternative models are available.
+- Latency for the same model can vary drastically from 44s to 114s depending on current upstream load.
+- Free-tier models on OpenRouter frequently experience rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 - Simulation approved a high-risk (3) plan with revisions (2) while budget allowed only 1 iteration, guaranteeing overrun.
 - Reflex tools that fail silently (ok: false) leave no trace for post-mortem, breaking the learning loop.
 - Metabolism stress at 1.0 with conserve mode active means any new task spawns starve existing swarms, causing cascade stalls.
@@ -52,10 +56,6 @@
 - Hand actions are failing because relative paths are not resolving to the actual ZOETRON_DATA directory, requiring absolute path construction.
 - The z-ai/glm-5.2:free model is consistently rate-limited (429) and should be temporarily disabled or deprioritized in favor of nvidia/nemotron-3-ultra
 - Drive goals repeat across cycles (error reduction, skill adoption, cleanup) indicating persistent systemic gaps.
-- Pruning removes events (22-64 per run) but never facts, causing unbounded fact accumulation over time.
-- 50+ skill proposals exist but reflex testing shows only ad-hoc validation, no systematic adoption pipeline.
-- Native hand_actions succeed in ~1s with zero errors, while model calls take 30-67s and fail frequently.
-- External model APIs (z-ai/glm-5.2) fail consistently with 429 rate limits, making them unreliable for production use.
 
 ---
 
