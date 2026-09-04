@@ -1,21 +1,66 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11554 Fakten** · Stand 2026-09-04 22:23 UTC · aktualisiert bei jedem Herzschlag
+**11571 Fakten** · Stand 2026-09-04 22:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6524
-- **swarm_artifact:** 2384
-- **last_swarm_critique:** 758
-- **anti_pattern:** 669
-- **last_swarm_goal:** 506
-- **strategy:** 352
+- **dream:** 6529
+- **swarm_artifact:** 2390
+- **last_swarm_critique:** 759
+- **anti_pattern:** 671
+- **last_swarm_goal:** 507
+- **strategy:** 353
 - **tool:** 151
-- **hand_result:** 123
+- **hand_result:** 124
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Wissenslücken schli:1`
+*04.09. 22:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 7, 7]): Verified Learning Loop with Fact State Tracking - Extend selflearn.learn() to return a fact identifier and a closure status (e.g., 'pending', 'verified', 'failed'). Artifact 3 must query this status after each learn c
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Wissenslücken schli:0`
+*04.09. 22:34 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 5]): Defensive Fallback-First Architecture - Restructure Artifact 2 to never abort on missing contradiction organ. Implement a tiered fallback: first attempt dynamic detection, then static rule-based conflict analysis, fin
+
+### `last_swarm_critique`
+*04.09. 22:33 UTC · Quelle: critic*
+
+score=7; issues=Artifact 2 bricht mit return 1 ab, wenn das widerspruch-Organ nicht gefunden wird – kein Fallback auf Demo-Daten oder statische Konflikt-Erkennung, obwohl fallback_used-Flag existiert; Keine Verifikation dass Lücken tatsächlich geschlossen wurd
+
+### `last_swarm_goal`
+*04.09. 22:31 UTC · Quelle: system*
+
+Alte Wissenslücken schließen und prüfen
+
+### `dream:20260904223058:5:2aa966`
+*04.09. 22:30 UTC · Quelle: dream*
+
+Absence of structured error logging for reflex/tool invocations prevents root-cause analysis of intermittent failures like the 429 spikes.
+
+### `dream:20260904223058:4:d3a3b3`
+*04.09. 22:30 UTC · Quelle: dream*
+
+Stale memory pruning (15 events, 5 facts) and drive goals for 'old swarm results' indicate accumulated technical debt in knowledge freshness that impairs decision quality.
+
+### `dream:20260904223058:3:b0eeaa`
+*04.09. 22:30 UTC · Quelle: dream*
+
+Multiple independent proposals converge on circuit-breaker, health-check, and dynamic-router patterns, revealing a systemic gap in model reliability infrastructure.
+
+### `dream:20260904223058:2:b4d10e`
+*04.09. 22:30 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra exhibits high latency variance (12–31 s), suggesting cold-start or queueing effects that require latency-aware scheduling.
+
+### `dream:20260904223058:1:d4687c`
+*04.09. 22:30 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free endpoint consistently returns 429 errors, indicating hard rate limits that make it unreliable for production routing without strict quota management.
 
 ### `dream:20260904222105:5:dcbf6e`
 *04.09. 22:21 UTC · Quelle: dream*
