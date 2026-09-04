@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 19:37:49",
+ "stand": "2026-09-04 19:47:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -193,12 +193,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "träume-besser-zum-lernen-nutzen.py",
@@ -415,9 +409,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "wissenswidersprüche-auflösen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.766,
+ "haende_quote": 0.77,
  "simulationen_angewandt": 20,
  "swarm_scores": {
   "n": 29,
@@ -426,8 +426,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 27,
-   "schnitt": 6.15
+   "n": 26,
+   "schnitt": 6.35
   },
   "bau": {
    "n": 2,

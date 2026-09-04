@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation approved a high-risk (3) plan with revisions (2) while budget allowed only 1 iteration, guaranteeing overrun.
+- Reflex tools that fail silently (ok: false) leave no trace for post-mortem, breaking the learning loop.
+- Metabolism stress at 1.0 with conserve mode active means any new task spawns starve existing swarms, causing cascade stalls.
+- The hand action failed because it used relative paths instead of the absolute ZOETRON_DATA path, violating the system's data access contract.
+- Rate limiting (HTTP 429) across multiple free-tier models indicates reliance on unreliable endpoints without backoff or fallback logic.
 - Event pruning is active but facts remain static, suggesting memory consolidation should focus on converting transient events into durable facts.
 - Reflexes tied to complex goals like 'understand model errors' fail when the underlying tools or paths are broken, showing that reflexes need pre-fligh
 - High system stress (1.0) triggers a 'conserve' state that severely limits task execution, indicating a need for better load shedding before stress pea
@@ -51,11 +56,6 @@
 - 50+ skill proposals exist but reflex testing shows only ad-hoc validation, no systematic adoption pipeline.
 - Native hand_actions succeed in ~1s with zero errors, while model calls take 30-67s and fail frequently.
 - External model APIs (z-ai/glm-5.2) fail consistently with 429 rate limits, making them unreliable for production use.
-- Self-diagnosis reports zero organ errors while model-layer failures dominate, indicating health checks miss the actual failure surface.
-- Fifty skill proposals accumulate unimplemented because no sprint mechanism converts proposals into deployed code.
-- Reflex-driven tool execution converged the swarm goal without planner involvement, proving reflexes can bypass brittle planning.
-- High-latency fallbacks (nemotron ~30s) succeed but exceed metabolism budgets, making them unreliable for time-critical loops.
-- Rate-limit headers (x-ratelimit-remaining, retry-after) are ignored, causing repeated 429s across three different model families.
 
 ---
 
