@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11002 Fakten** · Stand 2026-09-04 03:23 UTC · aktualisiert bei jedem Herzschlag
+**11007 Fakten** · Stand 2026-09-04 03:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6095
+- **dream:** 6100
 - **swarm_artifact:** 2321
 - **last_swarm_critique:** 742
 - **anti_pattern:** 655
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904033004:5:15449c`
+*04.09. 03:30 UTC · Quelle: dream*
+
+Reflex tools return bare ok:false without structured error context, preventing automated failure classification.
+
+### `dream:20260904033004:4:3480d8`
+*04.09. 03:30 UTC · Quelle: dream*
+
+Market analysis artifacts remain stale across multiple cycles despite dedicated drive goals, indicating missing execution triggers.
+
+### `dream:20260904033004:3:e6dd4d`
+*04.09. 03:30 UTC · Quelle: dream*
+
+65 skill proposals exist without a visible implementation pipeline, creating an idea-execution gap.
+
+### `dream:20260904033004:2:41c71e`
+*04.09. 03:30 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (16-47s), suggesting no latency-aware routing.
+
+### `dream:20260904033004:1:77305d`
+*04.09. 03:30 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic provider rate-limit issue, not transient failures.
 
 ### `dream:20260904032056:5:5fa666`
 *04.09. 03:20 UTC · Quelle: dream*

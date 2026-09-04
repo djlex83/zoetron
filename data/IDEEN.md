@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 03:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 03:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
-- Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex tools return bare ok:false without structured error context, preventing automated failure classification.
+- Market analysis artifacts remain stale across multiple cycles despite dedicated drive goals, indicating missing execution triggers.
+- 65 skill proposals exist without a visible implementation pipeline, creating an idea-execution gap.
+- Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (16-47s), suggesting no latency-aware routing.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate a systemic provider rate-limit issue, not transient failures.
 - Zero facts pruned despite fact-TTL proposal indicates decay policies are proposed but never deployed.
 - Stale goals (market analysis, model-error reduction) persist across cycles without automated refresh or escalation.
 - Fallback model latency varies 5× (13–63 s) with no latency-aware routing or SLA tracking.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without implementation tracking, causing a proposal-execution gap that wastes cognitive investment.
 - Reflex-completed tasks consistently lack quality scores (null), creating a blind spot in convergence verification.
 - Free-tier models on OpenRouter exhibit systemic rate-limiting (429) and upstream failures (502), making single-model reliance a critical vulnerability
-- Event pruning removes 93 events per cycle but zero facts, indicating the fact store is stable while episodic memory churns heavily.
-- Hand actions exhibit transient failures (first run exit 1, second run exit 0) that resolve on retry, pointing to missing idempotency and automatic ret
-- Swarm self-improvement loops frequently fail to converge (score 7, converged false) yet still evolve, suggesting convergence criteria are misaligned w
-- Free-tier models (GLM) consistently hit rate limits (429) while Nemotron remains stable, indicating provider-specific quota exhaustion as a systemic f
-- Reflex tools (veraltete-infos-auffrischen.py) execute but return ok:false without surfacing stderr, making debugging impossible.
 
 ---
 
