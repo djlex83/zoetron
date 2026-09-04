@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,13 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 5×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolic stress signals exist but do not trigger scheduling degradation, leaving the system vulnerable under load.
+- Relative path failures recur across tools, requiring a centralized absolute-path resolver anchored to ZOETRON_DATA.
+- Skill proposals accumulate without application because they lack mandatory implementation sketches and smoke tests.
+- Latency variance (6-14s) on the working model demands explicit latency budgets and goal decomposition to meet SLAs.
+- Free-tier models consistently fail with 429 rate limits, making paid/local fallback chains essential for reliability.
 - Stale facts persist indefinitely without automated expiration, degrading the quality of knowledge available for future decisions.
 - Skill proposals accumulate faster than they are implemented, creating a growing gap between identified solutions and actual system capability.
 - Reflex-mode completions bypass quality assessment entirely, allowing low-quality or unverified results to be accepted as final without any threshold c
@@ -51,11 +56,6 @@
 - Self-improvement loops lack convergence guards: without automatic abort criteria, cycles waste compute on stagnant objectives.
 - Skill proposals accumulate but never execute: 60 proposals exist with near-zero adoption, indicating a missing proposal-to-implementation pipeline.
 - Model reliability is the primary bottleneck: 429 rate limits and 502 upstream errors cascade across multiple providers, making single-model dependence
-- Repeated identification of the same problem class across consolidation cycles reveals a gap between diagnosis and implementation tracking.
-- Convergence declared with a null score produces false confidence that a goal has been meaningfully achieved.
-- Replay buffers accumulate low-value events (18 pruned in one cycle) that dilute learning signal and need periodic cleanup.
-- Fallback model latency degrades progressively (18.8s → 83.6s), so availability without latency monitoring creates false reliability.
-- Free-tier LLM APIs fail predictably under rate limits (429 errors), requiring pre-configured fallback chains rather than ad-hoc retries.
 
 ---
 

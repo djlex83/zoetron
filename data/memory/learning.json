@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-04 00:34:01",
+ "stand": "2026-09-04 00:43:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -352,6 +352,12 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktdaten-regelaessig-aktuali.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

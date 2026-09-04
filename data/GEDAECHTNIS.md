@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10911 Fakten** · Stand 2026-09-04 00:35 UTC · aktualisiert bei jedem Herzschlag
+**10916 Fakten** · Stand 2026-09-04 00:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6025
+- **dream:** 6030
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904004259:5:113c33`
+*04.09. 00:42 UTC · Quelle: dream*
+
+Metabolic stress signals exist but do not trigger scheduling degradation, leaving the system vulnerable under load.
+
+### `dream:20260904004259:4:787ae0`
+*04.09. 00:42 UTC · Quelle: dream*
+
+Relative path failures recur across tools, requiring a centralized absolute-path resolver anchored to ZOETRON_DATA.
+
+### `dream:20260904004259:3:bdfdd7`
+*04.09. 00:42 UTC · Quelle: dream*
+
+Skill proposals accumulate without application because they lack mandatory implementation sketches and smoke tests.
+
+### `dream:20260904004259:2:fdb6da`
+*04.09. 00:42 UTC · Quelle: dream*
+
+Latency variance (6-14s) on the working model demands explicit latency budgets and goal decomposition to meet SLAs.
+
+### `dream:20260904004259:1:0e6913`
+*04.09. 00:42 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits, making paid/local fallback chains essential for reliability.
 
 ### `dream:20260904003325:5:b1637e`
 *04.09. 00:33 UTC · Quelle: dream*

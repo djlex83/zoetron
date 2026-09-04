@@ -8038,3 +8038,31 @@
 {"ts": 1787875909.668867, "kind": "hand_action", "payload": {"ok": false, "exit": 2, "error": null, "duration_s": 0.33, "gelesen": 0}}
 {"ts": 1787875911.1414337, "kind": "issue_synced", "payload": {"issue": 155, "state": "open"}}
 {"ts": 1787875998.6402333, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787877580.5952022, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787877581.840392, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787877586.8523653, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 2.0, "tokens_ein": 1456, "tokens_aus": 895}}
+{"ts": 1787877586.8532312, "kind": "skill_proposal", "payload": {"proposal": "auto-disable-rate-limited-models: Automatically remove models from the active pool after N consecutive 429 errors."}}
+{"ts": 1787877586.8533456, "kind": "skill_proposal", "payload": {"proposal": "resolve-paths-before-hand-action: A pre-check procedure that resolves all relative paths against ZOETRON_DATA before executing hand actions."}}
+{"ts": 1787877586.8534362, "kind": "skill_proposal", "payload": {"proposal": "execute-skill-from-simulation: A procedure to automatically instantiate and run a skill immediately after a simulation verdict is 'revise' and applied."}}
+{"ts": 1787877586.8535428, "kind": "skill_proposal", "payload": {"proposal": "conserve-mode-execution: A skill to prioritize and execute only the top 1-3 critical goals when stress is 1.0 to ensure completion without resource exhaustion."}}
+{"ts": 1787877586.8536258, "kind": "skill_proposal", "payload": {"proposal": "track-skill-usage-gap: A monitoring skill that flags when proposed skills remain unused for more than 2 cycles and triggers a reflex to test them."}}
+{"ts": 1787877586.8536851, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787877588.9398935, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877588.939891, "schalter_geoeffnet": false}}
+{"ts": 1787877598.050001, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 9.1, "tokens_ein": 454, "tokens_aus": 569}}
+{"ts": 1787877598.0501318, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert fast doppelt so oft wie es gelingt. Weniger Fehler machen das System zuverlässiger.", "signal": "failure"}}
+{"ts": 1787877598.0502033, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Skills wirklich testen", "why": "Es gibt viele Skill-Vorschläge, aber unklar ob sie funktionieren. Ausprobieren schafft echte Fähigkeiten.", "signal": "gap"}}
+{"ts": 1787877598.050265, "kind": "drive_goal", "payload": {"title": "Erfolgreichen Schwarm-Lauf stabil wiederholen", "why": "Ein erster Schwarm-Lauf erreichte Score 8. Das zuverlässig zu wiederholen, sichert den Fortschritt.", "signal": "combination"}}
+{"ts": 1787877600.8218513, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.55, "gelesen": 6}}
+{"ts": 1787877600.822446, "kind": "reflex_used", "payload": {"goal": "Traumerkenntnisse mit Wissen verknüpfen", "tool": "entfernte-erinnerungen-verknüpfen.py", "ok": false}}
+{"ts": 1787877602.463268, "kind": "swarm_started", "payload": {"goal": "Traumerkenntnisse mit Wissen verknüpfen"}}
+{"ts": 1787877619.0849676, "kind": "recall", "payload": {"keys": ["last_swarm_goal"]}}
+{"ts": 1787877620.6796145, "kind": "metabolism_check", "payload": {"stress": 1.0, "state": "conserve", "budget": {"max_tasks": 3, "max_iterations": 1}}}
+{"ts": 1787877621.6701567, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877621.6701536, "schalter_geoeffnet": false}}
+{"ts": 1787877650.708638, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 29.0, "tokens_ein": 3038, "tokens_aus": 727}}
+{"ts": 1787877651.4788826, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877651.47888, "schalter_geoeffnet": false}}
+{"ts": 1787877671.1666374, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 19.7, "tokens_ein": 438, "tokens_aus": 1287}}
+{"ts": 1787877672.27057, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877672.2705674, "schalter_geoeffnet": false}}
+{"ts": 1787877691.0192118, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.7, "tokens_ein": 386, "tokens_aus": 925}}
+{"ts": 1787877691.019369, "kind": "simulation", "payload": {"goal": "Traumerkenntnisse mit Wissen verknüpfen", "verdict": "revise", "risks": 3, "revisions": 3}}
+{"ts": 1787877691.019468, "kind": "simulation_applied", "payload": {"revisions": 3}}
+{"ts": 1787877691.7632542, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787877691.763252, "schalter_geoeffnet": false}}
