@@ -8929,3 +8929,16 @@
 {"ts": 1787896198.4988964, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787896198.4988933, "schalter_geoeffnet": false}}
 {"ts": 1787896213.5923743, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 15.1, "tokens_ein": 205, "tokens_aus": 816}}
 {"ts": 1787896213.9475667, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787896213.9475646, "schalter_geoeffnet": false}}
+{"ts": 1787896286.1719034, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 72.2, "tokens_ein": 592, "tokens_aus": 3195}}
+{"ts": 1787896286.172303, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 7/10. Goal: Mehr Experimente für neue Lösungen wagen\nCritic issues: Hardcoded stress thresholds ", "variants": 3, "winner_index": 2, "scores": [8, 9, 7, 8, 7, 8, 9, 6, 9]}}
+{"ts": 1787896306.5928695, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787896306.5928664, "schalter_geoeffnet": false}}
+{"ts": 1787896401.78608, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 95.2, "tokens_ein": 435, "tokens_aus": 3327}}
+{"ts": 1787896402.6055756, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787896402.605574, "schalter_geoeffnet": false}}
+{"ts": 1787896418.6272647, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 16.0, "tokens_ein": 532, "tokens_aus": 1010}}
+{"ts": 1787896418.6274283, "kind": "simulation", "payload": {"goal": "Mehr Experimente für neue Lösungen wagen", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787896418.627538, "kind": "simulation_applied", "payload": {"revisions": 4}}
+{"ts": 1787896418.6276412, "kind": "swarm_finished", "payload": {"goal": "Mehr Experimente für neue Lösungen wagen", "score": 7, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787896418.6278498, "kind": "act_done", "payload": {"goal_title": "Mehr Experimente für neue Lösungen wagen", "score": 7, "converged": false}}
+{"ts": 1787896419.9647498, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.09, "gelesen": 1}}
+{"ts": 1787896421.9554021, "kind": "issue_synced", "payload": {"issue": 182, "state": "open"}}
+{"ts": 1787896517.087389, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

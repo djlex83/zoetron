@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 05:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
-- Marktanalyse aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Static risk thresholds ignore empirical pass-rates; revision gates should adapt to historical failure rates per goal class.
+- Path resolution across sys.argv, env vars, and cwd remains ad-hoc, causing I/O failures under varying launch contexts.
+- Skill proposals accumulate (12+ in logs) but implementation rate is near zero, indicating a proposal-to-execution gap.
+- Nemotron-3-ultra latency varies 15-26s, blocking the main loop unless moved to background batch queue.
+- Free model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for production routing.
 - 18 events were pruned while zero facts were pruned, suggesting event-level noise accumulates faster than factual knowledge decay, requiring separate r
 - The nvidia/nemotron-3-ultra-550b model succeeds consistently with 11-21s latency, establishing it as the reliable baseline while free-tier alternative
 - Skill proposals accumulate across dream cycles without implementation tracking, creating a growing gap between identified solutions and executed fixes
@@ -51,11 +56,6 @@
 - Multiple skill proposals address the same routing/quota problem but none have been implemented, revealing a proposal-execution gap.
 - Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (14–35s), suggesting unreliable capacity on the backup model.
 - The z-ai/glm-5.2:free model consistently returns 429 errors indicating persistent quota exhaustion rather than transient load.
-- Simulation approved a goal with 4 risks and 2 revisions, yet the artifact completed in one cycle, showing risk scores are pessimistic for code-complet
-- Calibration error of 3 cycles (predicted 8 vs actual 5) indicates the planner overestimates work complexity when artifacts already exist.
-- nvidia/nemotron-3-ultra succeeds only after ~97s latency, rendering it unusable for interactive loops but viable for background batch jobs.
-- inclusionai/ling-3.0-flash-fin:free is the only consistently available free model with sub-10s latency across repeated calls.
-- Free-tier models on OpenRouter suffer systematic 429 rate-limits and 502 upstream overloads, making them unreliable for latency-sensitive paths.
 
 ---
 

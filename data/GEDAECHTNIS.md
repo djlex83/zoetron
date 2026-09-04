@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11085 Fakten** · Stand 2026-09-04 05:52 UTC · aktualisiert bei jedem Herzschlag
+**11090 Fakten** · Stand 2026-09-04 06:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6145
+- **dream:** 6150
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904060000:5:7420fb`
+*04.09. 06:00 UTC · Quelle: dream*
+
+Static risk thresholds ignore empirical pass-rates; revision gates should adapt to historical failure rates per goal class.
+
+### `dream:20260904060000:4:02605c`
+*04.09. 06:00 UTC · Quelle: dream*
+
+Path resolution across sys.argv, env vars, and cwd remains ad-hoc, causing I/O failures under varying launch contexts.
+
+### `dream:20260904060000:3:147fc5`
+*04.09. 06:00 UTC · Quelle: dream*
+
+Skill proposals accumulate (12+ in logs) but implementation rate is near zero, indicating a proposal-to-execution gap.
+
+### `dream:20260904060000:2:d1dac0`
+*04.09. 06:00 UTC · Quelle: dream*
+
+Nemotron-3-ultra latency varies 15-26s, blocking the main loop unless moved to background batch queue.
+
+### `dream:20260904060000:1:7b8a19`
+*04.09. 06:00 UTC · Quelle: dream*
+
+Free model z-ai/glm-5.2:free consistently returns 429 errors, making it unreliable for production routing.
 
 ### `dream:20260904055035:5:faedf8`
 *04.09. 05:50 UTC · Quelle: dream*
