@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10963 Fakten** · Stand 2026-09-04 02:15 UTC · aktualisiert bei jedem Herzschlag
+**10968 Fakten** · Stand 2026-09-04 02:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6065
+- **dream:** 6070
 - **swarm_artifact:** 2315
 - **last_swarm_critique:** 741
 - **anti_pattern:** 655
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904022241:5:d8d062`
+*04.09. 02:22 UTC · Quelle: dream*
+
+The recurrence of identical failure patterns across cycles reveals that reactive goal-setting alone does not prevent repeated failures without concrete preventive procedures.
+
+### `dream:20260904022241:4:d6f67f`
+*04.09. 02:22 UTC · Quelle: dream*
+
+Pruning events without expiring stale facts leaves outdated knowledge in the system, creating a false sense of freshness.
+
+### `dream:20260904022241:3:c5f2b6`
+*04.09. 02:22 UTC · Quelle: dream*
+
+Skill proposals generated without an execution tracker are likely to remain unimplemented, turning potential improvements into forgotten artifacts.
+
+### `dream:20260904022241:2:ef40c4`
+*04.09. 02:22 UTC · Quelle: dream*
+
+Tasks marked as converged with null scores represent unverified completions — quality assessment must be mandatory before declaring any task done.
+
+### `dream:20260904022241:1:d91e66`
+*04.09. 02:22 UTC · Quelle: dream*
+
+Repeated 429/502 errors across multiple models without circuit breakers indicate that transient API failures will persist unless per-model health tracking and automatic fallback are implemented.
 
 ### `dream:20260904021340:5:c3ce0b`
 *04.09. 02:13 UTC · Quelle: dream*

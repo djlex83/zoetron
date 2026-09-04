@@ -8290,3 +8290,26 @@
 {"ts": 1787882232.7793841, "kind": "act_done", "payload": {"goal_title": "Simulationen in echtes Handeln umsetzen", "score": 2, "converged": false}}
 {"ts": 1787882234.984242, "kind": "issue_synced", "payload": {"issue": 175, "state": "open"}}
 {"ts": 1787882324.9649296, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787883363.4967046, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787883364.7198386, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787883368.181701, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787883368.1816976, "schalter_geoeffnet": false}}
+{"ts": 1787883368.661055, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1787883368.6610525, "schalter_geoeffnet": false}}
+{"ts": 1787883368.7694411, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787883368.7694385, "schalter_geoeffnet": false}}
+{"ts": 1787883370.3181946, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787883370.3181915, "schalter_geoeffnet": false}}
+{"ts": 1787883380.7465718, "kind": "model_ok", "payload": {"model": "poolside/laguna-s-2.1:free", "latency_s": 10.4, "tokens_ein": 1705, "tokens_aus": 282}}
+{"ts": 1787883380.7471364, "kind": "skill_proposal", "payload": {"proposal": "Implement automatic model fallback when a model returns HTTP 429, switching to an available alternative like nvidia/nemotron-3-ultra-550b-a55b:free."}}
+{"ts": 1787883380.7471917, "kind": "skill_proposal", "payload": {"proposal": "Add pre-execution static analysis to detect and block forbidden patterns (e.g., shutdown, kill) in generated scripts before running them."}}
+{"ts": 1787883380.7472448, "kind": "skill_proposal", "payload": {"proposal": "Integrate exponential backoff retry logic for all external API calls to handle transient rate-limit errors gracefully."}}
+{"ts": 1787883380.747314, "kind": "skill_proposal", "payload": {"proposal": "Improve calibration by logging prediction confidence alongside outcomes to train better uncertainty estimation over time."}}
+{"ts": 1787883380.74738, "kind": "skill_proposal", "payload": {"proposal": "Enhance swarm variant scoring by incorporating runtime feedback (e.g., sandbox verdicts) into the selection criteria to avoid promoting non-functional variants."}}
+{"ts": 1787883380.7474542, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787883382.630592, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787883382.630588, "schalter_geoeffnet": false}}
+{"ts": 1787883390.8117707, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 8.2, "tokens_ein": 431, "tokens_aus": 396}}
+{"ts": 1787883390.811911, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell scheitert oft. Weniger Fehler bedeuten zuverlässigere Aktionen.", "signal": "failure"}}
+{"ts": 1787883390.8119833, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten tatsächlich testen", "why": "Viele Ideen werden vorgeschlagen, aber kaum ausprobiert. Testen bringt echten Fortschritt.", "signal": "gap"}}
+{"ts": 1787883390.8120468, "kind": "drive_goal", "payload": {"title": "Simulationen für bessere Planung nutzen", "why": "Frühere Simulationen waren schlecht. Gute Simulationen verhindern echte Fehler.", "signal": "combination"}}
+{"ts": 1787883392.7026646, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
+{"ts": 1787883392.7032568, "kind": "reflex_used", "payload": {"goal": "Simulationen zum Lernen nutzen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
+{"ts": 1787883393.2029357, "kind": "act_done", "payload": {"goal_title": "Simulationen zum Lernen nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787883482.7909758, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787883741.2225418, "kind": "reflex_ok", "payload": {}}

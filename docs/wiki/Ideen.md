@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 02:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 02:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The recurrence of identical failure patterns across cycles reveals that reactive goal-setting alone does not prevent repeated failures without concret
+- Pruning events without expiring stale facts leaves outdated knowledge in the system, creating a false sense of freshness.
+- Skill proposals generated without an execution tracker are likely to remain unimplemented, turning potential improvements into forgotten artifacts.
+- Tasks marked as converged with null scores represent unverified completions — quality assessment must be mandatory before declaring any task done.
+- Repeated 429/502 errors across multiple models without circuit breakers indicate that transient API failures will persist unless per-model health trac
 - Self-improvement loops have no convergence detection, allowing infinite iteration without measurable progress.
 - Model fallback logic lacks real-time health scoring, causing cascading failures when primary and backup models hit limits simultaneously.
 - Market analyses produce outputs that stall without a forced handoff mechanism that translates findings into concrete action steps.
@@ -51,11 +56,6 @@
 - Stale work (market data, swarm analyses) persists until manual reflex intervention; no automated staleness detection triggers refresh.
 - Skill proposals accumulate without implementation gates; a drive goal explicitly targets this gap, indicating proposal-to-production pipeline is broke
 - Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 rate-limit errors, forcing fallback to 'nvidia/nemotron-3-ultra' with 2-3x latency var
-- Nvidia Nemotron succeeds but at 24-38s latency — usable for quality-critical paths but too slow for reflex loops, requiring tiered routing.
-- Fact TTL pruning removed 0 facts despite 28 events pruned — access-frequency decay not triggering suggests thresholds too high or tracking broken.
-- Skill proposals accumulate but lack implementation tracking — 5 proposals logged, 0 confirmed deployed, creating proposal-theater without execution.
-- Reflex completion without score capture (score: null) creates false convergence — tasks marked done have no quality signal, making improvement impossi
-- 429 errors on free-tier models follow a burst pattern — same models fail repeatedly within seconds then recover, indicating rate-limit buckets not req
 
 ---
 
