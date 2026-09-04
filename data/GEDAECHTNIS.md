@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10973 Fakten** · Stand 2026-09-04 02:35 UTC · aktualisiert bei jedem Herzschlag
+**10987 Fakten** · Stand 2026-09-04 02:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6075
-- **swarm_artifact:** 2315
-- **last_swarm_critique:** 741
+- **dream:** 6080
+- **swarm_artifact:** 2321
+- **last_swarm_critique:** 742
 - **anti_pattern:** 655
-- **last_swarm_goal:** 489
+- **last_swarm_goal:** 490
 - **strategy:** 348
 - **tool:** 137
-- **hand_result:** 121
+- **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,41 @@
 - **last_goal:** 1
 
 ---
+
+### `last_swarm_critique`
+*04.09. 02:47 UTC · Quelle: critic*
+
+score=8; issues=ReflexWrapper.execute verwendet str(tool_name) statt str(tool_path) im cmd-Konstrukt - Tool-Ausführung würde fehlschlagen, auch wenn das Skript selbst laeuft; subprocess wird in ReflexWrapper genutzt, ist aber im sichtbaren Bereich nicht expliz
+
+### `last_swarm_goal`
+*04.09. 02:43 UTC · Quelle: system*
+
+Fähigkeiten mit echten Taten verbinden
+
+### `dream:20260904024244:5:2ebf0d`
+*04.09. 02:42 UTC · Quelle: dream*
+
+Reflex tools (veraltete-infos-auffrischen.py) execute but return ok:false without surfacing stderr, making debugging impossible.
+
+### `dream:20260904024244:4:9850c7`
+*04.09. 02:42 UTC · Quelle: dream*
+
+File system operations fail because relative paths do not resolve against ZOETRON_DATA, causing hand actions to touch zero real files.
+
+### `dream:20260904024244:3:ef2d6d`
+*04.09. 02:42 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free succeeds consistently but with 9-16s latency, creating a single-point-of-failure dependency for all LLM operations.
+
+### `dream:20260904024244:2:28eb5b`
+*04.09. 02:42 UTC · Quelle: dream*
+
+Nvidia models fail with HTTP 502 'Service temporarily overloaded' despite returning status 200, revealing a mismatch between HTTP status and actual service health.
+
+### `dream:20260904024244:1:ac56b2`
+*04.09. 02:42 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across Google and Z.ai models, indicating systematic quota exhaustion rather than transient errors.
 
 ### `dream:20260904023237:5:d83f13`
 *04.09. 02:32 UTC · Quelle: dream*

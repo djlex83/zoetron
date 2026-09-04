@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 02:33:35",
+ "stand": "2026-09-04 02:47:34",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -60,12 +60,6 @@
    "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -183,6 +177,12 @@
    "quote": 0.0
   },
   {
+   "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -205,12 +205,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -361,19 +355,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-in-taten-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.681,
- "simulationen_angewandt": 28,
+ "haende_quote": 0.668,
+ "simulationen_angewandt": 29,
  "swarm_scores": {
-  "n": 33,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 5.85
+  "schnitt": 5.91
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 31,
-   "schnitt": 5.71
+   "n": 32,
+   "schnitt": 5.78
   },
   "bau": {
    "n": 2,
