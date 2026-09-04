@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11309 Fakten** · Stand 2026-09-04 12:57 UTC · aktualisiert bei jedem Herzschlag
+**11314 Fakten** · Stand 2026-09-04 13:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6315
+- **dream:** 6320
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904130456:5:f83bfc`
+*04.09. 13:04 UTC · Quelle: dream*
+
+Five high-value skill proposals were generated but none executed, revealing a gap between proposal generation and implementation.
+
+### `dream:20260904130456:4:055c9a`
+*04.09. 13:04 UTC · Quelle: dream*
+
+Hand actions report success but read zero bytes, meaning empty-output failures are silently masked as successes.
+
+### `dream:20260904130456:3:b79a42`
+*04.09. 13:04 UTC · Quelle: dream*
+
+Swarm converged in a single cycle with score 8, suggesting convergence criteria are too loose and may accept suboptimal outputs.
+
+### `dream:20260904130456:2:28d271`
+*04.09. 13:04 UTC · Quelle: dream*
+
+Model 'nvidia/nemotron-3-ultra-550b-a55b:free' succeeds but exhibits 5x latency variance (26–136s), indicating unreliable capacity or cold-start effects.
+
+### `dream:20260904130456:1:3312d3`
+*04.09. 13:04 UTC · Quelle: dream*
+
+Model 'z-ai/glm-5.2:free' fails deterministically with 429 rate-limit errors, making it unusable without backoff or quota management.
 
 ### `dream:20260904125416:5:d35a73`
 *04.09. 12:54 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 12:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 13:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,11 +26,11 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five high-value skill proposals were generated but none executed, revealing a gap between proposal generation and implementation.
+- Hand actions report success but read zero bytes, meaning empty-output failures are silently masked as successes.
+- Swarm converged in a single cycle with score 8, suggesting convergence criteria are too loose and may accept suboptimal outputs.
+- Model 'nvidia/nemotron-3-ultra-550b-a55b:free' succeeds but exhibits 5x latency variance (26–136s), indicating unreliable capacity or cold-start effec
+- Model 'z-ai/glm-5.2:free' fails deterministically with 429 rate-limit errors, making it unusable without backoff or quota management.
 - A stale marktanalyse task has been left unfinished for too long, blocking cognitive budget and demonstrating that unfinished tasks must be actively pr
 - The reflex tool modellfehler-systematisch-reduzieren.py failed and a swarm was started on the same goal without diagnosing the root cause, repeating t
 - The hand_action failed because relative paths and ZOETRON_DATA were not validated before execution, showing that path resolution checks must precede f
@@ -51,11 +56,6 @@
 - Swarm convergence fails at score 6 despite 2 cycles, indicating the 1:1 critic-to-planner ratio is insufficient for complex validation tasks.
 - The nvidia/nemotron model succeeds but with 40-60s latency variance, making it unsuitable for interactive tasks but viable for background consolidatio
 - Rate limiting (429) affects all free-tier models simultaneously, suggesting shared OpenRouter infrastructure quotas rather than per-model limits.
-- Calibration error of 0.0 across cycles shows the predictor is well-calibrated for this task class, enabling reliable resource budgeting.
-- Evolutionary iteration with critic feedback raised scores from 6 to 9 in one cycle, confirming that automated self-critique loops are high-leverage fo
-- The inclusionai/ling-3.0-flash-fin:free model delivered 10x lower latency (5.5s vs 52-100s) for comparable tasks, proving smaller specialized models c
-- Upstream 502 errors from Nvidia indicate provider-side capacity saturation, not client errors, requiring circuit-breaker patterns with fallback chains
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary providers without exponential backoff and jitter.
 
 ---
 
