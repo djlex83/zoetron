@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11130 Fakten** · Stand 2026-09-04 07:19 UTC · aktualisiert bei jedem Herzschlag
+**11135 Fakten** · Stand 2026-09-04 07:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6190
+- **dream:** 6195
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904072723:5:5e5c6b`
+*04.09. 07:27 UTC · Quelle: dream*
+
+Drive goals persist unchanged (model reliability, stale market analysis, simulation gap) indicating systemic issues not addressed by current reflexes or skills.
+
+### `dream:20260904072723:4:1f8a35`
+*04.09. 07:27 UTC · Quelle: dream*
+
+Prune_run discards 18 events per cycle without factual density scoring, risking loss of high-signal failure patterns needed for root-cause analysis.
+
+### `dream:20260904072723:3:39e228`
+*04.09. 07:27 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles (12+ proposals) but no execution tracker exists — proposals for circuit breakers, quota routers, and synthetic testers remain unimplemented.
+
+### `dream:20260904072723:2:a0db1c`
+*04.09. 07:27 UTC · Quelle: dream*
+
+Convergence is marked without quality validation: act_done events accept null scores and reflex completions lack minimum score thresholds, allowing unreliable outputs to propagate.
+
+### `dream:20260904072723:1:79e4a2`
+*04.09. 07:27 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate limits causing cascading failures, while fallback models (nvidia/nemotron-3-ultra) succeed but with high latency variance (9.5s–93.6s).
 
 ### `dream:20260904071655:5:e571a4`
 *04.09. 07:16 UTC · Quelle: dream*

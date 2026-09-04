@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
@@ -34,13 +34,18 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals persist unchanged (model reliability, stale market analysis, simulation gap) indicating systemic issues not addressed by current reflexes 
+- Prune_run discards 18 events per cycle without factual density scoring, risking loss of high-signal failure patterns needed for root-cause analysis.
+- Skill proposals accumulate across dream cycles (12+ proposals) but no execution tracker exists — proposals for circuit breakers, quota routers, and sy
+- Convergence is marked without quality validation: act_done events accept null scores and reflex completions lack minimum score thresholds, allowing un
+- Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate limits causing cascading failures, while fallback models (nvidia/nemotron-3-ultra) succee
 - Self-diagnosis reports zero organ errors while model failures persist, revealing a monitoring blind spot between component health and service-level re
 - Drive goals for model reliability and market analysis recur across cycles, signaling that root causes remain unaddressed despite reflex completions.
 - Skill proposals accumulate without a defined lifecycle (proposed→approved→implemented→validated), causing duplication and orphaned ideas.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (10+ in this session) without an automated implementation pipeline, creating a backlog that never converts to deployed capa
 - Fallback models succeed but exhibit extreme latency variance (3.4s vs 58.3s), revealing absence of latency-aware routing in model selection.
 - 429 rate-limit errors are the dominant failure mode across multiple models, indicating systemic lack of proactive rate-limit awareness rather than iso
-- Zero pruning (facts_pruned=0, events_pruned=0) indicates the system retains stale failure records without extracting causal patterns from them.
-- Free-tier models fail in correlated bursts, so model selection must incorporate real-time health signals rather than static preference lists.
-- The proposed skill solutions (conservative scheduler, decaying error signal, empirical thresholds) address planning-layer optimization but not the roo
-- Successful convergence (reflex=true) without a measurable numeric score is incomplete validation — the system must distinguish between 'ran' and 'succ
-- Rate limiting and upstream overload are the dominant systemic failure mode, affecting multiple providers simultaneously — a single-point-of-failure mi
 
 ---
 

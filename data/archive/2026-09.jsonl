@@ -9147,3 +9147,26 @@
 {"ts": 1787900849.2839148, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.62, "gelesen": 2743}}
 {"ts": 1787900851.523627, "kind": "issue_synced", "payload": {"issue": 183, "state": "closed"}}
 {"ts": 1787900949.2397957, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787901707.228545, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787901708.565233, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787901712.3489902, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787901712.3489878, "schalter_geoeffnet": false}}
+{"ts": 1787901713.324389, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1787901713.324385, "schalter_geoeffnet": false}}
+{"ts": 1787901713.4263666, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787901713.426363, "schalter_geoeffnet": false}}
+{"ts": 1787901713.5344775, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787901713.5344748, "schalter_geoeffnet": false}}
+{"ts": 1787901713.7631743, "kind": "model_fail", "payload": {"model": "poolside/laguna-s-2.1:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787901713.7631721, "schalter_geoeffnet": false}}
+{"ts": 1787901721.0996165, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 7.3, "tokens_ein": 1477, "tokens_aus": 1120}}
+{"ts": 1787901721.1004465, "kind": "skill_proposal", "payload": {"proposal": "Implement a model health monitor that auto-excludes endpoints after 3 consecutive 429 responses with exponential backoff."}}
+{"ts": 1787901721.1005242, "kind": "skill_proposal", "payload": {"proposal": "Build a latency-aware router with per-model timeout budgets (e.g., 30s p95) and automatic fallback to fastest healthy model."}}
+{"ts": 1787901721.1005914, "kind": "skill_proposal", "payload": {"proposal": "Add convergence criteria to evolution/swarm loops: stop when top-score plateaus for 2 cycles AND score variance < 0.5."}}
+{"ts": 1787901721.1006525, "kind": "skill_proposal", "payload": {"proposal": "Create a calibration adjuster that learns per-goal-type prediction bias and corrects future estimates automatically."}}
+{"ts": 1787901721.1007118, "kind": "skill_proposal", "payload": {"proposal": "Replace hardcoded thresholds with a configurable parameter registry loaded at task start."}}
+{"ts": 1787901721.1008418, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787901723.6129675, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787901723.6129649, "schalter_geoeffnet": false}}
+{"ts": 1787901755.0698328, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.5, "tokens_ein": 427, "tokens_aus": 755}}
+{"ts": 1787901755.0699687, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Unsere Modelle scheitern oft. Wir müssen sie testen und verbessern, damit sie verlässlich funktionieren.", "signal": "failure"}}
+{"ts": 1787901755.0700462, "kind": "drive_goal", "payload": {"title": "Hand-Organ-Fehler verstehen", "why": "Es gibt wiederkehrende Probleme mit Hand- und Organmodellen. Wir müssen die Ursachen finden und beheben.", "signal": "combination"}}
+{"ts": 1787901755.070113, "kind": "drive_goal", "payload": {"title": "Fähigkeiten vor Nutzung prüfen", "why": "Viele neue Fähigkeiten werden vorgeschlagen, aber Modelle versagen oft. Wir müssen Fähigkeiten erst testen.", "signal": "gap"}}
+{"ts": 1787901757.7006612, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.37, "gelesen": 70}}
+{"ts": 1787901757.701206, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten praktisch üben", "tool": "fähigkeiten-aus-vorschlägen-wirklich-ler.py", "ok": true}}
+{"ts": 1787901758.1183975, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten praktisch üben", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787901856.1811812, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
