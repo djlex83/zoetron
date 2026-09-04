@@ -1,15 +1,15 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10941 Fakten** · Stand 2026-09-04 01:32 UTC · aktualisiert bei jedem Herzschlag
+**10958 Fakten** · Stand 2026-09-04 01:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6055
-- **swarm_artifact:** 2309
-- **last_swarm_critique:** 740
-- **anti_pattern:** 653
-- **last_swarm_goal:** 488
-- **strategy:** 347
+- **dream:** 6060
+- **swarm_artifact:** 2315
+- **last_swarm_critique:** 741
+- **anti_pattern:** 655
+- **last_swarm_goal:** 489
+- **strategy:** 348
 - **tool:** 137
-- **hand_result:** 120
+- **hand_result:** 121
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
@@ -19,6 +19,51 @@
 - **last_goal:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Wissenstände a:2`
+*04.09. 01:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Sourced Reactive Staleness Tracking - Shift from polling-based `identify_stale_synapses` to event-driven architecture: (1) Emit `SynapseAccessed`, `SynapseCreated`, `KnowledgeUpdated` events to an event store (Kafka/Red
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Wissenstände a:0`
+*04.09. 01:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Defensive Refactoring with Modern Python Standards - Directly fix all identified bugs in the existing three artifacts: (1) Correct `default_dict(set)` to `defaultdict(set)` in PruneOrgan.__init__ with proper import from colle
+
+### `last_swarm_critique`
+*04.09. 01:43 UTC · Quelle: critic*
+
+score=7; issues=Typo: default_dict(set) sollte defaultdict(set) sein in PruneOrgan.__init__ - verursacht NameError beim Instanziieren; datetime.utcnow() ist deprecated (alle 3 Artefakte); sollte datetime.now(timezone.utc) verwenden; identify_stale_synapses pru
+
+### `last_swarm_goal`
+*04.09. 01:39 UTC · Quelle: system*
+
+Veraltete Wissenstände aktualisieren
+
+### `dream:20260904013905:5:e486ac`
+*04.09. 01:39 UTC · Quelle: dream*
+
+New skill proposals directly address observed failure modes (circuit breakers, validators, detectors, replay buffers), showing meta-learning but risking proposal inflation.
+
+### `dream:20260904013905:4:5417f5`
+*04.09. 01:39 UTC · Quelle: dream*
+
+Self-diagnosis and pruning operate cleanly (0 organ errors, 17-28 events pruned), but model-layer observability is missing (no selection/error/latency logging).
+
+### `dream:20260904013905:3:4c15d3`
+*04.09. 01:39 UTC · Quelle: dream*
+
+Stale work (market data, swarm analyses) persists until manual reflex intervention; no automated staleness detection triggers refresh.
+
+### `dream:20260904013905:2:855f6f`
+*04.09. 01:39 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation gates; a drive goal explicitly targets this gap, indicating proposal-to-production pipeline is broken.
+
+### `dream:20260904013905:1:3928c0`
+*04.09. 01:39 UTC · Quelle: dream*
+
+Free-tier model 'z-ai/glm-5.2:free' consistently fails with 429 rate-limit errors, forcing fallback to 'nvidia/nemotron-3-ultra' with 2-3x latency variance (19-47s).
 
 ### `dream:20260904012951:5:098664`
 *04.09. 01:29 UTC · Quelle: dream*
