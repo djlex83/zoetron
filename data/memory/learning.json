@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-03 23:55:35",
+ "stand": "2026-09-04 00:05:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -30,12 +30,6 @@
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -100,6 +94,12 @@
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -352,6 +352,12 @@
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

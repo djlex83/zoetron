@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-03 23:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 00:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reactive skill proposals generated after failures duplicate effort; proactive pattern mining from replay buffers would accelerate resilience.
+- Automatic failover to working model allowed task convergence in one cycle despite repeated primary-model failures, proving redundancy value.
+- Calibration for task "Simulationen gezielt einsetzen" underestimated actual cycles by 60 % (predicted 5 vs actual 8), indicating systematic underestim
+- Fallback model nvidia/nemotron-3-ultra exhibits 10× latency variance (18–174 s) requiring latency-aware routing and timeout budgets.
+- Free-tier model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limit errors, making it unreliable as primary without circuit-breaker fallback
 - Goals are set reactively from failure/stale/gap signals rather than from a prioritized, proactive roadmap.
 - Simulation pipeline returns 'go' but flags 3 risks and requires 3 revisions, indicating a pattern of optimistic verdicts with hidden rework.
 - System stress at 1.0 triggers conserve mode, capping tasks to 3 and iterations to 1, which stalls multi-step operations.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate in backlog without implementation because no gate enforces minimal viable artifact (sketch + smoke test) before acceptance.
 - Fallback model (nemotron-3-ultra) succeeds but exhibits high latency variance (6-60s), violating latency budgets for time-critical goals.
 - Primary model (glm-5.2) consistently fails with 429 rate-limit errors, making it unreliable as a default without circuit-breaker protection.
-- Reflex execution bypasses quality gates — fast reflex success with null scores means speed without validation is a hidden failure mode.
-- Knowledge decay is silent and cumulative — 33 events pruned with 0 fact pruning reveals the system removes noise but preserves potentially stale facts
-- Task completion without score measurement creates an illusion of progress — convergence detection without quality scoring cannot distinguish success f
-- API model failures are predictable, not random — repeated 429s from the same model require health-based routing with cooldown, not blind retry.
-- The system generates proposals faster than it implements them — the proposal-to-execution gap is the primary productivity bottleneck, not idea generat
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10891 Fakten** · Stand 2026-09-03 23:57 UTC · aktualisiert bei jedem Herzschlag
+**10896 Fakten** · Stand 2026-09-04 00:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6005
+- **dream:** 6010
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904000508:5:1cdeee`
+*04.09. 00:05 UTC · Quelle: dream*
+
+Reactive skill proposals generated after failures duplicate effort; proactive pattern mining from replay buffers would accelerate resilience.
+
+### `dream:20260904000508:4:a042b9`
+*04.09. 00:05 UTC · Quelle: dream*
+
+Automatic failover to working model allowed task convergence in one cycle despite repeated primary-model failures, proving redundancy value.
+
+### `dream:20260904000508:3:15f281`
+*04.09. 00:05 UTC · Quelle: dream*
+
+Calibration for task "Simulationen gezielt einsetzen" underestimated actual cycles by 60 % (predicted 5 vs actual 8), indicating systematic underestimation bias.
+
+### `dream:20260904000508:2:40e75b`
+*04.09. 00:05 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra exhibits 10× latency variance (18–174 s) requiring latency-aware routing and timeout budgets.
+
+### `dream:20260904000508:1:8a3bda`
+*04.09. 00:05 UTC · Quelle: dream*
+
+Free-tier model z-ai/glm-5.2:free consistently fails with HTTP 429 rate-limit errors, making it unreliable as primary without circuit-breaker fallback.
 
 ### `dream:20260903235519:5:454738`
 *03.09. 23:55 UTC · Quelle: dream*
