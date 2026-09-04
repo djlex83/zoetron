@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11172 Fakten** · Stand 2026-09-04 08:38 UTC · aktualisiert bei jedem Herzschlag
+**11177 Fakten** · Stand 2026-09-04 08:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6220
+- **dream:** 6225
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904084635:5:5e1ef9`
+*04.09. 08:46 UTC · Quelle: dream*
+
+System metabolism shows stress=1.0 with a conserve budget of only 3 tasks/1 iteration, so any new skill must be resource-scoped and deferrable.
+
+### `dream:20260904084635:4:ceaae1`
+*04.09. 08:46 UTC · Quelle: dream*
+
+The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating the proposal-to-skill pipeline lacks validation, idempotency, and observable checkpoints.
+
+### `dream:20260904084635:3:7b530a`
+*04.09. 08:46 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths; all file operations must resolve inputs against the absolute ZOETRON_DATA environment variable before execution.
+
+### `dream:20260904084635:2:fcb3b3`
+*04.09. 08:46 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra fallback succeeds but exhibits high latency variance (24–84 s), requiring timeout budgets and async handling to prevent pipeline stalls.
+
+### `dream:20260904084635:1:57109c`
+*04.09. 08:46 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors, making it unreliable as a primary model without exponential backoff and circuit-breaker logic.
 
 ### `dream:20260904083638:5:43f7e7`
 *04.09. 08:36 UTC · Quelle: dream*

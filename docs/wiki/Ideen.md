@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,10 +26,10 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System metabolism shows stress=1.0 with a conserve budget of only 3 tasks/1 iteration, so any new skill must be resource-scoped and deferrable.
+- The reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' failed silently, indicating the proposal-to-skill pipeline lacks validation, idempotency
+- Hand actions fail when using relative paths; all file operations must resolve inputs against the absolute ZOETRON_DATA environment variable before exe
+- The nvidia/nemotron-3-ultra fallback succeeds but exhibits high latency variance (24–84 s), requiring timeout budgets and async handling to prevent pi
+- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors, making it unreliable as a primary model without exponential backoff and cir
 - Stale goals (market analyses, untested proposals) persist across cycles without a reflex-trigger mechanism to automatically resume or reprioritize the
 - Prune runs discard 25 events per cycle with zero facts extracted, indicating the pruning heuristic lacks a factual-density filter to preserve high-sig
 - Skill proposals accumulate across dream cycles (3+ proposals per cycle) but lack an automated tracker to escalate unimplemented proposals into actiona
@@ -51,11 +56,6 @@
 - Identical skill proposals recur across dream cycles without evidence of implementation, revealing a persistent proposal-to-execution gap where insight
 - Act_done events are being marked as converged with a null quality score, meaning the system accepts completion without any verifiable quality assuranc
 - The z-ai/glm-5.2 model repeatedly fails with 429 rate-limit errors across multiple dream cycles, exposing the absence of any circuit breaker or automa
-- Reflex-based knowledge refresh (`langsame-fakten-regelmäßig-aktualisieren.py`) converges successfully, demonstrating that automated periodic maintenan
-- Event pruning removes 9–23 events per cycle while facts remain untouched, confirming that the system cleans noise effectively but does not consolidate
-- Skill proposals are repeatedly rediscovered across dream cycles (circuit breakers, quota routers, load testers) without implementation, revealing that
-- The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeeds consistently but exhibits high latency variance (23s–57s), indicating that fallback 
-- Free-tier model `z-ai/glm-5.2:free` fails with 429 errors across every dream cycle, proving quota exhaustion is a systemic and recurring failure mode,
 
 ---
 

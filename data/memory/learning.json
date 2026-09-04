@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 08:37:03",
+ "stand": "2026-09-04 08:47:08",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -213,12 +213,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarm-orchestrierung-vollständig-aufba.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -394,6 +388,12 @@
   },
   {
    "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "viele-skill-vorschläge-prüfen-und-beste-.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
