@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 04:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 04:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,13 +27,13 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich testen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Multiple distinct models failing with identical 429 errors simultaneously suggests a shared quota bucket or IP-level rate limit at the OpenRouter gate
+- Simulation-driven revision cycles (5 revisions applied) correlate with eventual artifact success (206-line Python script running), showing iterative r
+- The system's error prediction calibration significantly underestimates actual failures (predicted 3 vs actual 8), indicating the failure model doesn't
+- Nvidia Nemotron 3 Ultra shows high latency variance (20-115s) but succeeds where rate-limited models fail, suggesting it has higher quota or priority.
+- Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
 - Stale high-value artifacts (market analyses) persist unused while the system spins on model reliability, indicating misaligned priority scheduling.
 - No per-model rate-limit tracking exists, causing repeated hammering of exhausted endpoints instead of switching to healthy alternatives.
 - Skill proposals accumulate (5 in log) but execution fails because the required models are unavailable, creating a proposal-execution deadlock.
@@ -51,11 +56,6 @@
 - Three separate drive goals target overlapping themes (error reduction, skill execution, analysis utilization) showing goal fragmentation instead of un
 - Convergence was declared (converged=true) with a null quality score, proving the system accepts completion without measurable success criteria.
 - Repeated 429 errors on the same model indicate missing circuit-breaker logic that would stop hammering a rate-limited endpoint.
-- Recurring model failures and path errors generate duplicate drive goals, wasting cycles on reactive signals instead of proactive gap closure.
-- The skills-to-actions pipeline (reflex → simulation → swarm) repeatedly revises but does not succeed, indicating missing pre-deployment validation aga
-- High metabolic stress (1.0) triggers conserve mode that caps iterations to 1, starving multi-step skills and causing hand-action failures.
-- Relative path resolution fails in the execution environment; all file operations must use absolute paths derived from ZOETRON_DATA and sys.argv[1].
-- Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, requiring a hardened fallback chain with health c
 
 ---
 

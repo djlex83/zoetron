@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11043 Fakten** · Stand 2026-09-04 04:39 UTC · aktualisiert bei jedem Herzschlag
+**11048 Fakten** · Stand 2026-09-04 04:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6115
+- **dream:** 6120
 - **swarm_artifact:** 2333
 - **last_swarm_critique:** 744
 - **anti_pattern:** 657
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904044632:5:7549b8`
+*04.09. 04:46 UTC · Quelle: dream*
+
+Multiple distinct models failing with identical 429 errors simultaneously suggests a shared quota bucket or IP-level rate limit at the OpenRouter gateway.
+
+### `dream:20260904044632:4:5ee717`
+*04.09. 04:46 UTC · Quelle: dream*
+
+Simulation-driven revision cycles (5 revisions applied) correlate with eventual artifact success (206-line Python script running), showing iterative repair works.
+
+### `dream:20260904044632:3:894df8`
+*04.09. 04:46 UTC · Quelle: dream*
+
+The system's error prediction calibration significantly underestimates actual failures (predicted 3 vs actual 8), indicating the failure model doesn't account for rate-limiting cascades.
+
+### `dream:20260904044632:2:e70cbf`
+*04.09. 04:46 UTC · Quelle: dream*
+
+Nvidia Nemotron 3 Ultra shows high latency variance (20-115s) but succeeds where rate-limited models fail, suggesting it has higher quota or priority.
+
+### `dream:20260904044632:1:74f50c`
+*04.09. 04:46 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under sustained load, making them unreliable for production workflows.
 
 ### `dream:20260904043704:5:6fa00a`
 *04.09. 04:37 UTC · Quelle: dream*
