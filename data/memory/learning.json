@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 09:59:07",
+ "stand": "2026-09-04 10:17:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -97,12 +97,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "träume-besser-zum-lernen-nutzen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "modellfehler-dauerhaft-senken.py",
@@ -250,6 +244,12 @@
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
+   "tool": "träume-besser-zum-lernen-nutzen.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
@@ -415,6 +415,12 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
  "haende_quote": 0.721,
@@ -427,7 +433,7 @@
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 30,
-   "schnitt": 6.07
+   "schnitt": 6.33
   },
   "bau": {
    "n": 1,

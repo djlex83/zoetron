@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 09:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 10:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,29 +18,34 @@
 - Add a fact-TTL janitor that expires facts older than 7 days unless explicitly re-validated, logging expiration *(hatte die Idee 4×)*
 - Build a fact-extraction validator that audits pruned events for missed entities/relations and retrains the ext *(hatte die Idee 4×)*
 - Implement fact TTL with access-frequency decay: auto-expire facts untouched for 7 days AND accessed fewer than *(hatte die Idee 4×)*
-- Enforce absolute-path resolution in the hand tool by prepending ZOETRON_DATA to any relative input before exec *(hatte die Idee 3×)*
-- Create a skill-deployment pipeline that auto-promotes any proposal tagged 'critical' after a 5-minute canary o *(hatte die Idee 3×)*
+- Implement a quota-aware router with per-model 429/5xx tracking in 60s rolling windows, tripping circuit breake *(hatte die Idee 4×)*
+- Deploy a persistent model-health dashboard tracking per-model success rates, latency percentiles, and quota ex *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 8×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Recurring dream cycles surface identical model failures, indicating consolidation isn't translating into permanent architectural fixes.
+- Drive goals are set reactively (failure, stale signals) without a systematic review cadence, leading to strategic drift.
+- Skill proposals accumulate without enforced ownership or deadlines, creating a backlog of unimplemented resilience improvements.
+- The working fallback model (nvidia/nemotron-3-ultra) exhibits high latency (26-38s), indicating free-tier capacity constraints affect performance even
+- Free-tier model quotas are exhausted repeatedly causing 429 errors, making z-ai/glm-5.2:free unreliable for production workloads.
 - Exponential backoff alone is insufficient; need quota-aware routing with rolling-window failure tracking.
 - Self-diagnosis shows no organ errors but model layer is the primary failure surface.
 - Skill proposals accumulate without validation loops, creating proposal debt that clogs the system.
@@ -49,13 +54,8 @@
 - Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots for external API dependencies.
 - Drive goals (model reliability, market analysis, skill learning) remain stale because no scheduler admits them into the metabolism budget.
 - Skill proposals accumulate but lack a validation gate (tests, docs, deps) before swarm launch, causing proposal debt and unverified capabilities.
-- The working fallback model (nvidia/nemotron-3-ultra) exhibits high and variable latency (21–42 s), requiring latency SLAs and timeout-aware routing.
 - Free-tier models (z-ai/glm-5.2) consistently fail with 429 rate-limit errors, making them unreliable as primary providers without automated fallback.
 - Stale goals persist indefinitely without automated reflex triggers for script-based remediation.
-- High-latency models (42s+) block the main execution loop without async batch processing.
-- Skill proposals accumulate untracked, creating implementation debt with no escalation path.
-- Null scores on converged act_done events break the learning signal loop despite reflex success.
-- Model failures cascade without automatic fallback, rate-limit detection, and per-model latency SLAs.
 
 ---
 
