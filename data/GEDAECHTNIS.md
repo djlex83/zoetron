@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11157 Fakten** · Stand 2026-09-04 07:57 UTC · aktualisiert bei jedem Herzschlag
+**11162 Fakten** · Stand 2026-09-04 08:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6205
+- **dream:** 6210
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904081655:5:96a77c`
+*04.09. 08:16 UTC · Quelle: dream*
+
+Reflex-based knowledge refresh (`langsame-fakten-regelmäßig-aktualisieren.py`) converges successfully, demonstrating that automated periodic maintenance is a reliable pattern worth extending to model-health monitoring.
+
+### `dream:20260904081655:4:757b6c`
+*04.09. 08:16 UTC · Quelle: dream*
+
+Event pruning removes 9–23 events per cycle while facts remain untouched, confirming that the system cleans noise effectively but does not consolidate recurring failure patterns into durable procedural knowledge.
+
+### `dream:20260904081655:3:1f4ddf`
+*04.09. 08:16 UTC · Quelle: dream*
+
+Skill proposals are repeatedly rediscovered across dream cycles (circuit breakers, quota routers, load testers) without implementation, revealing that the proposal-to-execution gap is the primary productivity bottleneck.
+
+### `dream:20260904081655:2:11f367`
+*04.09. 08:16 UTC · Quelle: dream*
+
+The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeeds consistently but exhibits high latency variance (23s–57s), indicating that fallback reliability does not equal fallback performance.
+
+### `dream:20260904081655:1:6c07f7`
+*04.09. 08:16 UTC · Quelle: dream*
+
+Free-tier model `z-ai/glm-5.2:free` fails with 429 errors across every dream cycle, proving quota exhaustion is a systemic and recurring failure mode, not a transient spike.
 
 ### `tool:vorgeschlagene-fähigkeiten-in-echte-skil`
 *04.09. 07:55 UTC · Quelle: hands*

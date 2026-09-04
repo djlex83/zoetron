@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 07:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:17 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,14 +25,14 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based knowledge refresh (`langsame-fakten-regelmäßig-aktualisieren.py`) converges successfully, demonstrating that automated periodic maintenan
+- Event pruning removes 9–23 events per cycle while facts remain untouched, confirming that the system cleans noise effectively but does not consolidate
+- Skill proposals are repeatedly rediscovered across dream cycles (circuit breakers, quota routers, load testers) without implementation, revealing that
+- The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeeds consistently but exhibits high latency variance (23s–57s), indicating that fallback 
+- Free-tier model `z-ai/glm-5.2:free` fails with 429 errors across every dream cycle, proving quota exhaustion is a systemic and recurring failure mode,
 - Event pruning is actively maintaining memory hygiene by discarding transient logs while preserving core facts.
 - Reflex-based execution successfully completed the stale market analysis goal, proving that automated scripts can unblock long-pending tasks.
 - Accumulated skill proposals remain unimplemented across multiple dream cycles, indicating a lack of an execution pipeline for generated ideas.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without implementation because there is no tracker that escalates stale proposals into concrete action items after a define
 - Tasks marked converged with null scores (e.g., reflex completion) create false confidence; mandatory scoring with post-hoc assessment is needed to ver
 - Model failures cascade because the system lacks per-model circuit breakers and automatic fallback routing, causing repeated 429/5xx errors to block pr
-- Drive goals persist unchanged (model reliability, stale market analysis, simulation gap) indicating systemic issues not addressed by current reflexes 
-- Prune_run discards 18 events per cycle without factual density scoring, risking loss of high-signal failure patterns needed for root-cause analysis.
-- Skill proposals accumulate across dream cycles (12+ proposals) but no execution tracker exists — proposals for circuit breakers, quota routers, and sy
-- Convergence is marked without quality validation: act_done events accept null scores and reflex completions lack minimum score thresholds, allowing un
-- Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate limits causing cascading failures, while fallback models (nvidia/nemotron-3-ultra) succee
 
 ---
 
