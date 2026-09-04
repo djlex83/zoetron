@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 17:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 18:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 1 point (predicted 7 vs actual 8) shows the predictor is well-tuned for this task class.
+- Single-cycle swarm convergence with fixed roles (1 planner, 3 builders, 1 critic) reliably produces score-8 artifacts for knowledge-renewal tasks.
+- Nvidia Nemotron exhibits bimodal failure: extreme latency (97s) and 502 upstream overload errors, indicating unstable capacity.
+- inclusionai/ling-3.0-flash-fin:free succeeds repeatedly at ~2s latency, establishing it as the only consistently available free model for this workloa
+- Free-tier models consistently fail with 429 rate-limit errors across providers (GLM, Gemma, Nemotron), making them unreliable as primary workers.
 - Simulation-based revision catches risks pre-deployment but only when triggered manually, not continuously.
 - Metabolism stress signals arrive too late for proactive shedding; the system reacts instead of predicting load.
 - Skill proposals accumulate without a lifecycle manager that enforces A/B testing and evidence-based promotion.
@@ -51,11 +56,6 @@
 - Destructive operations are correctly intercepted by the safety layer, requiring human approval before execution.
 - Simulations are frequently initiated but their results are rarely utilized to inform actual decisions.
 - The `z-ai/glm-5.2:free` model is consistently rate-limited (429 errors) and should be temporarily removed from the active routing pool.
-- Destructive tool calls (os.system/subprocess) are correctly blocked by safety gate, requiring explicit human approval path.
-- Calibration predicted 8 but actual was 4 (abs_error=4), revealing systematic overconfidence in initial capability estimates.
-- Evolutionary iteration boosted score from 4 to 9 in one generation, confirming that critic-driven mutation outperforms single-pass generation.
-- Nemotron-3-Ultra succeeds reliably but with high latency variance (31-94s), suggesting queue-dependent cold starts.
-- Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits, making them unreliable for production workflows.
 
 ---
 

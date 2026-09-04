@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11431 Fakten** · Stand 2026-09-04 17:57 UTC · aktualisiert bei jedem Herzschlag
+**11436 Fakten** · Stand 2026-09-04 18:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6420
+- **dream:** 6425
 - **swarm_artifact:** 2374
 - **last_swarm_critique:** 754
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904180542:5:ddf70e`
+*04.09. 18:05 UTC · Quelle: dream*
+
+Calibration error of 1 point (predicted 7 vs actual 8) shows the predictor is well-tuned for this task class.
+
+### `dream:20260904180542:4:9792d3`
+*04.09. 18:05 UTC · Quelle: dream*
+
+Single-cycle swarm convergence with fixed roles (1 planner, 3 builders, 1 critic) reliably produces score-8 artifacts for knowledge-renewal tasks.
+
+### `dream:20260904180542:3:49affc`
+*04.09. 18:05 UTC · Quelle: dream*
+
+Nvidia Nemotron exhibits bimodal failure: extreme latency (97s) and 502 upstream overload errors, indicating unstable capacity.
+
+### `dream:20260904180542:2:a2e11d`
+*04.09. 18:05 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free succeeds repeatedly at ~2s latency, establishing it as the only consistently available free model for this workload.
+
+### `dream:20260904180542:1:090981`
+*04.09. 18:05 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate-limit errors across providers (GLM, Gemma, Nemotron), making them unreliable as primary workers.
 
 ### `dream:20260904175452:5:14b4f5`
 *04.09. 17:54 UTC · Quelle: dream*
