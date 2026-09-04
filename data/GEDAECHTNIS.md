@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11374 Fakten** · Stand 2026-09-04 15:38 UTC · aktualisiert bei jedem Herzschlag
+**11377 Fakten** · Stand 2026-09-04 15:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6375
+- **dream:** 6380
 - **swarm_artifact:** 2371
 - **last_swarm_critique:** 751
 - **anti_pattern:** 665
@@ -15,10 +15,33 @@
 - **creator_teaching:** 9
 - **frontier:** 3
 - **semantic_organ:** 1
-- **last_critique:** 1
-- **last_goal:** 1
 
 ---
+
+### `dream:20260904154800:5:905bcf`
+*04.09. 15:48 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ this session) but lack a validation pipeline to test them in sandbox before promotion.
+
+### `dream:20260904154800:4:180843`
+*04.09. 15:48 UTC · Quelle: dream*
+
+Reflex execution (local Python tools) succeeded where all model calls failed, proving lightweight deterministic paths are more reliable than LLM calls.
+
+### `dream:20260904154800:3:ee9faf`
+*04.09. 15:48 UTC · Quelle: dream*
+
+Failure signatures (429, 502, timeout) recur identically across sessions but are discarded during pruning instead of being mined for durable patterns.
+
+### `dream:20260904154800:2:870fb9`
+*04.09. 15:48 UTC · Quelle: dream*
+
+Cascading retries without coordinated backoff exhaust the shared quota faster, turning transient overload into sustained outage.
+
+### `dream:20260904154800:1:fc85a2`
+*04.09. 15:48 UTC · Quelle: dream*
+
+Rate limits (429) are a shared OpenRouter quota constraint, not per-model limits, causing cascading failures across all free models simultaneously.
 
 ### `tool:automatische-fehler-reduktions-pipeline-`
 *04.09. 15:35 UTC · Quelle: hands*
@@ -42614,13 +42637,3 @@ DeepSeek-v4-flash-vision-exp (https://api-docs.deepseek.com/guides/vision/)
 *21.08. 19:36 UTC · Quelle: senses*
 
 Kagi added a setting for removing paywalled links from search results (https://kagi.com/changelog#11296)
-
-### `last_critique`
-*21.08. 15:34 UTC · Quelle: critic*
-
-score=9; issues=
-
-### `last_goal`
-*21.08. 15:34 UTC · Quelle: system*
-
-Finde die Marktluecke: ein KI-Produkt, das es noch nicht gibt und alle brauchen

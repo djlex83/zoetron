@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 15:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 15:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5+ this session) but lack a validation pipeline to test them in sandbox before promotion.
+- Reflex execution (local Python tools) succeeded where all model calls failed, proving lightweight deterministic paths are more reliable than LLM calls
+- Failure signatures (429, 502, timeout) recur identically across sessions but are discarded during pruning instead of being mined for durable patterns.
+- Cascading retries without coordinated backoff exhaust the shared quota faster, turning transient overload into sustained outage.
+- Rate limits (429) are a shared OpenRouter quota constraint, not per-model limits, causing cascading failures across all free models simultaneously.
 - Empty stdout/stderr from hand_action calls silently propagate failures; treating empty output as failure with retry-and-escalate prevents corrupted do
 - Stale goals marked with 'stale' signal consume context without producing value; TTL-based auto-archiving prevents zombie work from accumulating across
 - Free-tier API models have strict rate limits that are easily exceeded under burst requests; exponential backoff with jitter must be mandatory for all 
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without execution pipeline: five proposals were generated this cycle but none were built, tested, or logged, creating a pro
 - Reflex tools succeed in isolation but swarm deployments repeat failures when root-cause diagnosis is skipped, as seen in the market-analysis reflex su
 - Model provider failures cascade silently: 429/5xx errors from multiple providers (GLM, Nemotron, Gemma) went unhandled until a free-tier model succeed
-- Three distinct drive goals (reduce errors, test skills, refresh knowledge) target the same root cause: unverified assumptions about model availability
-- Pruning removed 18 events but zero facts, showing the system discards operational noise while preserving semantic knowledge – a healthy signal-to-nois
-- Reflex-driven model reliability improvement converged immediately without scoring, implying the fix was structural (e.g., fallback logic) not parametr
-- The inclusionai/ling-3.0-flash-fin model consistently succeeds with low latency (3.6s) while larger models fail, suggesting smaller specialized models
-- Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared upstream quota exhaustion rather than individual model
 
 ---
 
