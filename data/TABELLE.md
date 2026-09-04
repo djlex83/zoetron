@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8046 Neuronen · 631790 bewertete Synapsen
+Stand: 8053 Neuronen · 632403 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,7 +13,7 @@ Stand: 8046 Neuronen · 631790 bewertete Synapsen
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 709 | 0.24 |
 | 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 636 | 0.26 |
 | 3 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 676 | 0.24 |
-| 4 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 684 | 0.23 |
+| 4 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 685 | 0.23 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 685 | 0.23 |
 | 6 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 666 | 0.23 |
 | 7 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 606 | 0.25 |

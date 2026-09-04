@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 17:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 17:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,10 +28,10 @@
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 9×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation-based revision catches risks pre-deployment but only when triggered manually, not continuously.
+- Metabolism stress signals arrive too late for proactive shedding; the system reacts instead of predicting load.
+- Skill proposals accumulate without a lifecycle manager that enforces A/B testing and evidence-based promotion.
+- Silent fallback loops waste budget and mask root causes because each model failure triggers another unvalidated attempt.
+- Rate limits and upstream errors cause cascade failures because fallbacks lack pre-flight validation and circuit breakers.
 - High-latency models like `nvidia/nemotron-3-ultra-550b-a55b:free` can serve as reliable fallbacks when faster models fail.
 - Periodic memory pruning is effectively bounding memory growth by removing stale facts and events.
 - Destructive operations are correctly intercepted by the safety layer, requiring human approval before execution.
@@ -51,11 +56,6 @@
 - Evolutionary iteration boosted score from 4 to 9 in one generation, confirming that critic-driven mutation outperforms single-pass generation.
 - Nemotron-3-Ultra succeeds reliably but with high latency variance (31-94s), suggesting queue-dependent cold starts.
 - Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits, making them unreliable for production workflows.
-- A backlog of unimplemented skill proposals exists, indicating a need for systematic lifecycle management to evaluate and promote these ideas.
-- Automated memory pruning is actively managing context size, but requires continuous execution to prevent event and fact bloat.
-- Reflex tools for market analysis execute successfully and quickly, but their reliability is entirely dependent on the stability of underlying external
-- Stale goals and unfinished swarm tasks accumulate over weeks, requiring automated detection and escalation based on age and cost-benefit.
-- The model 'z-ai/glm-5.2:free' is consistently failing with 429 Too Many Requests errors, while 'nvidia/nemotron-3-ultra-550b-a55b:free' serves as a re
 
 ---
 

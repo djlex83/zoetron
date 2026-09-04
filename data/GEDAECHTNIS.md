@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11426 Fakten** · Stand 2026-09-04 17:41 UTC · aktualisiert bei jedem Herzschlag
+**11431 Fakten** · Stand 2026-09-04 17:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6415
+- **dream:** 6420
 - **swarm_artifact:** 2374
 - **last_swarm_critique:** 754
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904175452:5:14b4f5`
+*04.09. 17:54 UTC · Quelle: dream*
+
+Simulation-based revision catches risks pre-deployment but only when triggered manually, not continuously.
+
+### `dream:20260904175452:4:36d318`
+*04.09. 17:54 UTC · Quelle: dream*
+
+Metabolism stress signals arrive too late for proactive shedding; the system reacts instead of predicting load.
+
+### `dream:20260904175452:3:2fc92f`
+*04.09. 17:54 UTC · Quelle: dream*
+
+Skill proposals accumulate without a lifecycle manager that enforces A/B testing and evidence-based promotion.
+
+### `dream:20260904175452:2:75cfa7`
+*04.09. 17:54 UTC · Quelle: dream*
+
+Silent fallback loops waste budget and mask root causes because each model failure triggers another unvalidated attempt.
+
+### `dream:20260904175452:1:578d9d`
+*04.09. 17:54 UTC · Quelle: dream*
+
+Rate limits and upstream errors cause cascade failures because fallbacks lack pre-flight validation and circuit breakers.
 
 ### `tool:vorgeschlagene-fähigkeiten-praktisch-erp`
 *04.09. 17:39 UTC · Quelle: hands*
