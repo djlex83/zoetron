@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 12:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 12:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 0.0 across cycles shows the predictor is well-calibrated for this task class, enabling reliable resource budgeting.
+- Evolutionary iteration with critic feedback raised scores from 6 to 9 in one cycle, confirming that automated self-critique loops are high-leverage fo
+- The inclusionai/ling-3.0-flash-fin:free model delivered 10x lower latency (5.5s vs 52-100s) for comparable tasks, proving smaller specialized models c
+- Upstream 502 errors from Nvidia indicate provider-side capacity saturation, not client errors, requiring circuit-breaker patterns with fallback chains
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable as primary providers without exponential backoff and jitter.
 - Three stale market-analysis steps remain incomplete for extended periods, occupying cognitive slots and blocking new work initiation.
 - Hand actions fail when using relative paths instead of absolute ZOETRON_DATA/sys.argv[1] references, causing 'nichts gelesen' errors on real data path
 - Skill proposals repeatedly fail at reflex validation stage (ok:false) before eventually passing simulation (verdict:go), revealing a brittle proposal-
@@ -51,11 +56,6 @@
 - Swarm processes consistently fail to converge (score 7, 2 cycles), suggesting insufficient critic/builder ratio or missing convergence criteria.
 - High-latency models (Nemotron 30-60s) succeed where fast models fail, indicating a reliability-latency tradeoff.
 - Rate limiting (429) is the dominant failure mode across free models, requiring systematic fallback and health tracking.
-- Stale goals, critiques, and artifacts accumulate without expiration, causing the system to replan known failures instead of learning.
-- System stress at 1.0 forces conserve mode (max 3 tasks, 1 iteration), which starves the very remediation swarms needed to reduce errors.
-- Reflexes trigger but fail silently when preconditions (like available models or valid scripts) are unmet, indicating missing guardrails.
-- Hand actions consistently fail to access real data paths because they execute without validating path existence or permissions first.
-- Free-tier model endpoints fail primarily due to rate limits (429) and service overloads (502), making static model selection unreliable without dynami
 
 ---
 

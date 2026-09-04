@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 12:25:11",
+ "stand": "2026-09-04 12:34:56",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,6 +45,12 @@
    "quote": 0.0
   },
   {
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -87,12 +93,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "häufige-modellfehler-besser-verstehen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -108,12 +108,6 @@
    "tool": "veraltete-marktanalyse-auffrischen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -286,6 +280,12 @@
   },
   {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
