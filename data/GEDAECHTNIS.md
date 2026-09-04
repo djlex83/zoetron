@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11167 Fakten** · Stand 2026-09-04 08:28 UTC · aktualisiert bei jedem Herzschlag
+**11172 Fakten** · Stand 2026-09-04 08:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6215
+- **dream:** 6220
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904083638:5:43f7e7`
+*04.09. 08:36 UTC · Quelle: dream*
+
+Stale goals (market analyses, untested proposals) persist across cycles without a reflex-trigger mechanism to automatically resume or reprioritize them.
+
+### `dream:20260904083638:4:942f93`
+*04.09. 08:36 UTC · Quelle: dream*
+
+Prune runs discard 25 events per cycle with zero facts extracted, indicating the pruning heuristic lacks a factual-density filter to preserve high-signal memories.
+
+### `dream:20260904083638:3:fb8663`
+*04.09. 08:36 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles (3+ proposals per cycle) but lack an automated tracker to escalate unimplemented proposals into actionable tasks.
+
+### `dream:20260904083638:2:e6aa0a`
+*04.09. 08:36 UTC · Quelle: dream*
+
+Reflex executions converge (converged=true) without capturing mandatory quality scores (score=null), allowing unverified completions to pass as successful.
+
+### `dream:20260904083638:1:6f1a6f`
+*04.09. 08:36 UTC · Quelle: dream*
+
+The primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while the fallback (nvidia/nemotron) succeeds but introduces 20-45s latency, creating a reliability-latency tradeoff that blocks the main loop.
 
 ### `dream:20260904082632:5:d6fbdc`
 *04.09. 08:26 UTC · Quelle: dream*

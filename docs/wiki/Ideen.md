@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 08:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,8 +29,8 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale goals (market analyses, untested proposals) persist across cycles without a reflex-trigger mechanism to automatically resume or reprioritize the
+- Prune runs discard 25 events per cycle with zero facts extracted, indicating the pruning heuristic lacks a factual-density filter to preserve high-sig
+- Skill proposals accumulate across dream cycles (3+ proposals per cycle) but lack an automated tracker to escalate unimplemented proposals into actiona
+- Reflex executions converge (converged=true) without capturing mandatory quality scores (score=null), allowing unverified completions to pass as succes
+- The primary model (z-ai/glm-5.2) repeatedly fails with 429 errors while the fallback (nvidia/nemotron) succeeds but introduces 20-45s latency, creatin
 - Stale goals like 'Marktanalyse in Handlung umsetzen' accumulate without resolution, indicating the system lacks an enforced rhythm for reviewing and c
 - Prune_run discarded 42 events while preserving 0 facts, suggesting the pruning logic may be too aggressive and risks eliminating high-signal failure m
 - Identical skill proposals recur across dream cycles without evidence of implementation, revealing a persistent proposal-to-execution gap where insight
@@ -51,11 +56,6 @@
 - Skill proposals are repeatedly rediscovered across dream cycles (circuit breakers, quota routers, load testers) without implementation, revealing that
 - The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeeds consistently but exhibits high latency variance (23s–57s), indicating that fallback 
 - Free-tier model `z-ai/glm-5.2:free` fails with 429 errors across every dream cycle, proving quota exhaustion is a systemic and recurring failure mode,
-- Event pruning is actively maintaining memory hygiene by discarding transient logs while preserving core facts.
-- Reflex-based execution successfully completed the stale market analysis goal, proving that automated scripts can unblock long-pending tasks.
-- Accumulated skill proposals remain unimplemented across multiple dream cycles, indicating a lack of an execution pipeline for generated ideas.
-- Actions marked as converged with a null score bypass quality validation, creating a blind spot in performance tracking.
-- Free models on OpenRouter are highly volatile, frequently returning 429 and 502 errors, necessitating robust fallback mechanisms.
 
 ---
 

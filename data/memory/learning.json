@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 08:27:09",
+ "stand": "2026-09-04 08:37:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -24,18 +24,6 @@
    "tool": "marktanalyse-in-handlung-umsetzen.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-in-handeln-umsetzen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -88,6 +76,18 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-in-handeln-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -388,6 +388,12 @@
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
