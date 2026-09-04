@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11090 Fakten** · Stand 2026-09-04 06:02 UTC · aktualisiert bei jedem Herzschlag
+**11095 Fakten** · Stand 2026-09-04 06:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6150
+- **dream:** 6155
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904060907:5:de87c3`
+*04.09. 06:09 UTC · Quelle: dream*
+
+Repeated retries of a failing model waste the entire iteration budget; detecting error patterns and switching models immediately preserves throughput and avoids cascading delays.
+
+### `dream:20260904060907:4:ab1042`
+*04.09. 06:09 UTC · Quelle: dream*
+
+The simulation step correctly flagged the skill-integration plan for revision (3 risks, 2 revisions), proving that pre-execution simulation catches planning flaws before costly swarm execution.
+
+### `dream:20260904060907:3:cd7534`
+*04.09. 06:09 UTC · Quelle: dream*
+
+Running in conserve mode (stress=1.0, max_iterations=1) with multiple competing goals causes resource starvation, so a single-priority focus is required when budget is constrained.
+
+### `dream:20260904060907:2:f01907`
+*04.09. 06:09 UTC · Quelle: dream*
+
+Hand actions fail silently when file paths are unresolved (relative paths, sys.argv, ZOETRON_DATA), meaning path validation must precede any file operation to prevent no-op executions.
+
+### `dream:20260904060907:1:f04c2e`
+*04.09. 06:09 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model fails systematically with 429 rate-limit errors on every call, indicating a structural reliability problem rather than transient throttling that requires an automatic fallback to nvidia/nemotron-3-ultra-550b-a55b:free.
 
 ### `dream:20260904060000:5:7420fb`
 *04.09. 06:00 UTC · Quelle: dream*

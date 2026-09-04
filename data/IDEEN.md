@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Repeated retries of a failing model waste the entire iteration budget; detecting error patterns and switching models immediately preserves throughput 
+- The simulation step correctly flagged the skill-integration plan for revision (3 risks, 2 revisions), proving that pre-execution simulation catches pl
+- Running in conserve mode (stress=1.0, max_iterations=1) with multiple competing goals causes resource starvation, so a single-priority focus is requir
+- Hand actions fail silently when file paths are unresolved (relative paths, sys.argv, ZOETRON_DATA), meaning path validation must precede any file oper
+- The z-ai/glm-5.2:free model fails systematically with 429 rate-limit errors on every call, indicating a structural reliability problem rather than tra
 - Static risk thresholds ignore empirical pass-rates; revision gates should adapt to historical failure rates per goal class.
 - Path resolution across sys.argv, env vars, and cwd remains ad-hoc, causing I/O failures under varying launch contexts.
 - Skill proposals accumulate (12+ in logs) but implementation rate is near zero, indicating a proposal-to-execution gap.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across dream cycles without implementation tracking, creating a growing gap between identified solutions and executed fixes
 - Act completions marked converged with null scores reveal a broken quality-capture pipeline — without mandatory score enforcement, the system cannot di
 - The z-ai/glm-5.2 free model repeatedly hits 429 rate limits under load, indicating free-tier endpoints are structurally unreliable and must never be a
-- Event pruning removes history but fact pruning stays at zero, causing unbounded fact accumulation over cycles.
-- Reflex completions are accepted with null quality scores, bypassing any quality gate and risking silent degradation.
-- Multiple skill proposals address the same routing/quota problem but none have been implemented, revealing a proposal-execution gap.
-- Fallback to nvidia/nemotron-3-ultra succeeds but with high latency variance (14–35s), suggesting unreliable capacity on the backup model.
-- The z-ai/glm-5.2:free model consistently returns 429 errors indicating persistent quota exhaustion rather than transient load.
 
 ---
 

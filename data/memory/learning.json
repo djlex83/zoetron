@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 06:00:20",
+ "stand": "2026-09-04 06:10:23",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,6 +12,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 6,
    "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -30,24 +36,6 @@
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "häufige-modellfehler-besser-verstehen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -81,6 +69,12 @@
    "quote": 1.0
   },
   {
+   "tool": "marktanalyse-endlich-abschließen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -94,6 +88,12 @@
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "häufige-modellfehler-besser-verstehen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -387,7 +387,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.69,
+ "haende_quote": 0.688,
  "simulationen_angewandt": 29,
  "swarm_scores": {
   "n": 34,
