@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-04 18:07:14",
+ "stand": "2026-09-04 18:16:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 9,
    "erfolge": 9,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 7,
-   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -22,8 +16,14 @@
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -48,12 +48,6 @@
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 5,
    "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-in-handlung-umsetzen.py",
-   "laeufe": 4,
-   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -94,6 +88,12 @@
   },
   {
    "tool": "alte-marktanalysen-verwerten.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-in-handlung-umsetzen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -405,7 +405,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.766,
+ "haende_quote": 0.764,
  "simulationen_angewandt": 22,
  "swarm_scores": {
   "n": 29,

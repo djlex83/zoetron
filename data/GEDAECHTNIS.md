@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11436 Fakten** · Stand 2026-09-04 18:09 UTC · aktualisiert bei jedem Herzschlag
+**11441 Fakten** · Stand 2026-09-04 18:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6425
+- **dream:** 6430
 - **swarm_artifact:** 2374
 - **last_swarm_critique:** 754
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904181634:5:90d150`
+*04.09. 18:16 UTC · Quelle: dream*
+
+Simulation reflex results are marked complete without explicit linkage back to the originating action, creating a risk of orphaned completions that never inform downstream decisions.
+
+### `dream:20260904181634:4:6c40c4`
+*04.09. 18:16 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors and zero pruned facts, yet the drive goal to build a knowledge graph signals that long-term semantic memory is still absent—a structural gap, not a transient bug.
+
+### `dream:20260904181634:3:863ffa`
+*04.09. 18:16 UTC · Quelle: dream*
+
+Swarm convergence in a single cycle with score 8 demonstrates effective role distribution (planner/builder/critic), but lacks an early-stopping metric like score delta < 1 to avoid unnecessary cycles.
+
+### `dream:20260904181634:2:dd27e3`
+*04.09. 18:16 UTC · Quelle: dream*
+
+The calibration abs_error of 1 on "Veraltetes Wissen erneuern" reveals a persistent prediction gap that a learning calibration head could systematically shrink over time.
+
+### `dream:20260904181634:1:b664c6`
+*04.09. 18:16 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors from z-ai/glm-5.2 indicate that reactive fallback is insufficient; models must be proactively blacklisted with cooldown periods to prevent cascading failures.
 
 ### `dream:20260904180542:5:ddf70e`
 *04.09. 18:05 UTC · Quelle: dream*
