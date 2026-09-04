@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 20:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 20:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events but retains no model-performance telemetry, preventing learning from failure patterns across sleep cycles.
+- Five concrete skill proposals addressing quota, latency, and automation already exist but remain unimplemented, indicating an execution gap.
+- Latency variance between successful models (3.7s vs 19.1s) shows no latency-budget enforcement, wasting metabolism on slow fallbacks.
+- Self-diagnosis reports zero organ errors while the model layer suffers >80% failure rate, revealing a critical monitoring blind spot.
+- Free-tier models on OpenRouter exhibit systemic unreliability dominated by 429 rate-limit errors and 502 upstream failures across multiple providers.
 - Reflex-based learning (hebbisches-lernen-im-graph-synapsen-qual.py) successfully converged, proving that anchored learning loops work when they are tr
 - Event pruning removed 50 events in one cycle, suggesting high contextual churn that risks discarding useful failure-signal data before it can be conso
 - Only one model (inclusionai/ling-3.0-flash-fin) succeeded among many failures, revealing that the system has no mechanism to learn from or route aroun
@@ -51,11 +56,6 @@
 - Latency for the same model can vary drastically from 44s to 114s depending on current upstream load.
 - Free-tier models on OpenRouter frequently experience rate limits (429) and upstream overloads (502), requiring robust fallback mechanisms.
 - Simulation approved a high-risk (3) plan with revisions (2) while budget allowed only 1 iteration, guaranteeing overrun.
-- Reflex tools that fail silently (ok: false) leave no trace for post-mortem, breaking the learning loop.
-- Metabolism stress at 1.0 with conserve mode active means any new task spawns starve existing swarms, causing cascade stalls.
-- The hand action failed because it used relative paths instead of the absolute ZOETRON_DATA path, violating the system's data access contract.
-- Rate limiting (HTTP 429) across multiple free-tier models indicates reliance on unreliable endpoints without backoff or fallback logic.
-- Event pruning is active but facts remain static, suggesting memory consolidation should focus on converting transient events into durable facts.
 
 ---
 

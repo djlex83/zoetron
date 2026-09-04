@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11496 Fakten** · Stand 2026-09-04 20:08 UTC · aktualisiert bei jedem Herzschlag
+**11513 Fakten** · Stand 2026-09-04 20:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6479
-- **swarm_artifact:** 2380
-- **last_swarm_critique:** 755
-- **anti_pattern:** 667
-- **last_swarm_goal:** 503
-- **strategy:** 354
-- **tool:** 149
+- **dream:** 6484
+- **swarm_artifact:** 2386
+- **last_swarm_critique:** 756
+- **anti_pattern:** 669
+- **last_swarm_goal:** 504
+- **strategy:** 355
+- **tool:** 150
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,56 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:veraltete-wissenstände-auffrischen`
+*04.09. 20:25 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Wissenstände auffrischen'. Datei: data/tools/veraltete-wissenstände-auffrischen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Wissenstände a:2`
+*04.09. 20:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 6, 9]): LLM-Agentic Retrieval with Self-Verification Loop - Deploy an autonomous agent (LangGraph/Autogen) equipped with function-calling tools: web_search, fetch_url, extract_facts, embed_text, vector_upsert, vector_query. O
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Wissenstände a:1`
+*04.09. 20:24 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Knowledge Graph with Temporal Versioning - Model knowledge as a property graph (Neo4j/FalkorDB) where nodes are entities/concepts and edges are typed relations with provenance (source URL, retrieval timestamp, confide
+
+### `last_swarm_critique`
+*04.09. 20:22 UTC · Quelle: critic*
+
+score=7; issues=Senses organ uses simulated data (simulate_senses_organ) instead of real external API calls, meaning the artifact does not actually fetch current information from the web — the 'refresh' is demonstrated but not functional for production use; Se
+
+### `last_swarm_goal`
+*04.09. 20:16 UTC · Quelle: system*
+
+Veraltete Wissenstände auffrischen
+
+### `dream:20260904201624:5:b63128`
+*04.09. 20:16 UTC · Quelle: dream*
+
+Pruning removes events but retains no model-performance telemetry, preventing learning from failure patterns across sleep cycles.
+
+### `dream:20260904201624:4:ecd565`
+*04.09. 20:16 UTC · Quelle: dream*
+
+Five concrete skill proposals addressing quota, latency, and automation already exist but remain unimplemented, indicating an execution gap.
+
+### `dream:20260904201624:3:04bc17`
+*04.09. 20:16 UTC · Quelle: dream*
+
+Latency variance between successful models (3.7s vs 19.1s) shows no latency-budget enforcement, wasting metabolism on slow fallbacks.
+
+### `dream:20260904201624:2:65b7b9`
+*04.09. 20:16 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while the model layer suffers >80% failure rate, revealing a critical monitoring blind spot.
+
+### `dream:20260904201624:1:4c0e88`
+*04.09. 20:16 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systemic unreliability dominated by 429 rate-limit errors and 502 upstream failures across multiple providers.
 
 ### `dream:20260904200634:5:28f4d0`
 *04.09. 20:06 UTC · Quelle: dream*
