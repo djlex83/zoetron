@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**10896 Fakten** · Stand 2026-09-04 00:07 UTC · aktualisiert bei jedem Herzschlag
+**10901 Fakten** · Stand 2026-09-04 00:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6010
+- **dream:** 6015
 - **swarm_artifact:** 2309
 - **last_swarm_critique:** 740
 - **anti_pattern:** 653
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904001440:5:af66f6`
+*04.09. 00:14 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260904001440:4:1f9ae2`
+*04.09. 00:14 UTC · Quelle: dream*
+
+Convergence declared with a null score produces false confidence that a goal has been meaningfully achieved.
+
+### `dream:20260904001440:3:33ca99`
+*04.09. 00:14 UTC · Quelle: dream*
+
+Replay buffers accumulate low-value events (18 pruned in one cycle) that dilute learning signal and need periodic cleanup.
+
+### `dream:20260904001440:2:c8c714`
+*04.09. 00:14 UTC · Quelle: dream*
+
+Fallback model latency degrades progressively (18.8s → 83.6s), so availability without latency monitoring creates false reliability.
+
+### `dream:20260904001440:1:2babbc`
+*04.09. 00:14 UTC · Quelle: dream*
+
+Free-tier LLM APIs fail predictably under rate limits (429 errors), requiring pre-configured fallback chains rather than ad-hoc retries.
 
 ### `dream:20260904000508:5:1cdeee`
 *04.09. 00:05 UTC · Quelle: dream*

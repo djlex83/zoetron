@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 00:05:55",
+ "stand": "2026-09-04 00:15:14",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -52,6 +46,12 @@
   },
   {
    "tool": "marktanalyse-in-handeln-umsetzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -93,13 +93,13 @@
    "quote": 0.0
   },
   {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
