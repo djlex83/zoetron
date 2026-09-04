@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 10:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 10:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse in Handlung umsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite 56 model failures vs 37 successes, indicating health metrics don't capture inference reliability.
+- Pruning removes 44 events but 0 facts per cycle, suggesting event-log bloat without semantic consolidation.
+- Reflex-triggered actions (skill building, market analysis completion) succeed when executed, but rely on manual goal selection rather than automatic p
+- Stale drive goals (market analysis, model reliability, skill implementation) persist across multiple cycles without automated escalation or resolution
+- The primary model (z-ai/glm-5.2:free) fails deterministically with 429 rate-limit errors, while the fallback (nvidia/nemotron-3-ultra) succeeds but at
 - The prune_run discarded 9 events while preserving 0 facts, suggesting the pruning strategy may be over-filtering event-level data while retaining low-
 - Act_done events are recorded with null scores, meaning convergence is being accepted without measurable validation — this undermines the entire qualit
 - The reflex-trigger mechanism successfully executed a stale goal (simulationen-gezielt-einsetzen.py) and converged, proving that automated reflexes are
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without enforced ownership or deadlines, creating a backlog of unimplemented resilience improvements.
 - The working fallback model (nvidia/nemotron-3-ultra) exhibits high latency (26-38s), indicating free-tier capacity constraints affect performance even
 - Free-tier model quotas are exhausted repeatedly causing 429 errors, making z-ai/glm-5.2:free unreliable for production workloads.
-- Exponential backoff alone is insufficient; need quota-aware routing with rolling-window failure tracking.
-- Self-diagnosis shows no organ errors but model layer is the primary failure surface.
-- Skill proposals accumulate without validation loops, creating proposal debt that clogs the system.
-- Latency variance across models (4s vs 40s) demands latency-aware routing for interactive vs batch tasks.
-- Free tier models exhibit cascading 429/5xx failures under load, requiring circuit-breaker routing with paid fallback.
 
 ---
 

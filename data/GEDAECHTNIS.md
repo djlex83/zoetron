@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11231 Fakten** · Stand 2026-09-04 10:31 UTC · aktualisiert bei jedem Herzschlag
+**11236 Fakten** · Stand 2026-09-04 10:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6270
+- **dream:** 6275
 - **swarm_artifact:** 2351
 - **last_swarm_critique:** 747
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904103909:5:cfb0d3`
+*04.09. 10:39 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite 56 model failures vs 37 successes, indicating health metrics don't capture inference reliability.
+
+### `dream:20260904103909:4:777f01`
+*04.09. 10:39 UTC · Quelle: dream*
+
+Pruning removes 44 events but 0 facts per cycle, suggesting event-log bloat without semantic consolidation.
+
+### `dream:20260904103909:3:3fde42`
+*04.09. 10:39 UTC · Quelle: dream*
+
+Reflex-triggered actions (skill building, market analysis completion) succeed when executed, but rely on manual goal selection rather than automatic priority scheduling.
+
+### `dream:20260904103909:2:b60dc4`
+*04.09. 10:39 UTC · Quelle: dream*
+
+Stale drive goals (market analysis, model reliability, skill implementation) persist across multiple cycles without automated escalation or resolution.
+
+### `dream:20260904103909:1:4f7ce7`
+*04.09. 10:39 UTC · Quelle: dream*
+
+The primary model (z-ai/glm-5.2:free) fails deterministically with 429 rate-limit errors, while the fallback (nvidia/nemotron-3-ultra) succeeds but at 33-45s latency, creating a reliability-latency tradeoff.
 
 ### `dream:20260904102755:5:9f3205`
 *04.09. 10:27 UTC · Quelle: dream*
