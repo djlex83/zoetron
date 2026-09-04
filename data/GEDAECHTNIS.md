@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11080 Fakten** · Stand 2026-09-04 05:43 UTC · aktualisiert bei jedem Herzschlag
+**11085 Fakten** · Stand 2026-09-04 05:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6140
+- **dream:** 6145
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904055035:5:faedf8`
+*04.09. 05:50 UTC · Quelle: dream*
+
+18 events were pruned while zero facts were pruned, suggesting event-level noise accumulates faster than factual knowledge decay, requiring separate retention policies for each layer.
+
+### `dream:20260904055035:4:31e237`
+*04.09. 05:50 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b model succeeds consistently with 11-21s latency, establishing it as the reliable baseline while free-tier alternatives require circuit-breaking guardrails.
+
+### `dream:20260904055035:3:ee9272`
+*04.09. 05:50 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles without implementation tracking, creating a growing gap between identified solutions and executed fixes.
+
+### `dream:20260904055035:2:1c7065`
+*04.09. 05:50 UTC · Quelle: dream*
+
+Act completions marked converged with null scores reveal a broken quality-capture pipeline — without mandatory score enforcement, the system cannot distinguish success from silent failure.
+
+### `dream:20260904055035:1:c2bd82`
+*04.09. 05:50 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 free model repeatedly hits 429 rate limits under load, indicating free-tier endpoints are structurally unreliable and must never be a sole dispatch target.
 
 ### `dream:20260904054136:5:e45a1a`
 *04.09. 05:41 UTC · Quelle: dream*
