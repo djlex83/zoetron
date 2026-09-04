@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 12:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 12:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Three stale market-analysis steps remain incomplete for extended periods, occupying cognitive slots and blocking new work initiation.
+- Hand actions fail when using relative paths instead of absolute ZOETRON_DATA/sys.argv[1] references, causing 'nichts gelesen' errors on real data path
+- Skill proposals repeatedly fail at reflex validation stage (ok:false) before eventually passing simulation (verdict:go), revealing a brittle proposal-
+- Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1) that throttles throughput precisely when error recovery needs capacity.
+- Primary model (glm-5.2) consistently hits 429 rate limits forcing fallback to nemotron-3-ultra with 38-100s latency, creating systemic reliability dep
 - Stale goals and unread hand actions indicate missing completion enforcement and garbage collection for abandoned work.
 - Skill proposals accumulate without implementation, creating a planning-execution gap that clogs the system.
 - Swarm processes consistently fail to converge (score 7, 2 cycles), suggesting insufficient critic/builder ratio or missing convergence criteria.
@@ -51,11 +56,6 @@
 - Reflexes trigger but fail silently when preconditions (like available models or valid scripts) are unmet, indicating missing guardrails.
 - Hand actions consistently fail to access real data paths because they execute without validating path existence or permissions first.
 - Free-tier model endpoints fail primarily due to rate limits (429) and service overloads (502), making static model selection unreliable without dynami
-- Event pruning removes 81 events per cycle while zero facts are pruned, risking fact staleness and progressive context loss.
-- Five skill proposals generated this cycle with zero implementation tracking creates proposal debt that clogs future consolidation cycles.
-- Swarm convergence in 1 cycle with score 9 using 1:3:1 planner:builder:critic ratio works for review tasks but lacks validation for other task types.
-- Calibration error of 4 points (predicted 5 vs actual 9) reveals systematic underestimation of task feasibility when swarm converges in one cycle.
-- Free-tier model endpoints are unreliable primary dependencies with 80% failure rate across four models due to rate limits and upstream errors.
 
 ---
 

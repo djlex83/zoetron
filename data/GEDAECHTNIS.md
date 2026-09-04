@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11289 Fakten** · Stand 2026-09-04 12:16 UTC · aktualisiert bei jedem Herzschlag
+**11294 Fakten** · Stand 2026-09-04 12:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6295
+- **dream:** 6300
 - **swarm_artifact:** 2369
 - **last_swarm_critique:** 750
 - **anti_pattern:** 665
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904122424:5:8d0bc5`
+*04.09. 12:24 UTC · Quelle: dream*
+
+Three stale market-analysis steps remain incomplete for extended periods, occupying cognitive slots and blocking new work initiation.
+
+### `dream:20260904122424:4:fb0f23`
+*04.09. 12:24 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of absolute ZOETRON_DATA/sys.argv[1] references, causing 'nichts gelesen' errors on real data paths.
+
+### `dream:20260904122424:3:4e039c`
+*04.09. 12:24 UTC · Quelle: dream*
+
+Skill proposals repeatedly fail at reflex validation stage (ok:false) before eventually passing simulation (verdict:go), revealing a brittle proposal-to-execution pipeline.
+
+### `dream:20260904122424:2:314bc8`
+*04.09. 12:24 UTC · Quelle: dream*
+
+Metabolism stress=1.0 triggers conserve mode (max_tasks=3, max_iterations=1) that throttles throughput precisely when error recovery needs capacity.
+
+### `dream:20260904122424:1:d4c18c`
+*04.09. 12:24 UTC · Quelle: dream*
+
+Primary model (glm-5.2) consistently hits 429 rate limits forcing fallback to nemotron-3-ultra with 38-100s latency, creating systemic reliability dependency on a single backup.
 
 ### `dream:20260904121341:5:77f19c`
 *04.09. 12:13 UTC · Quelle: dream*

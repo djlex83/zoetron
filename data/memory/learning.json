@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-04 12:14:19",
+ "stand": "2026-09-04 12:25:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -195,9 +195,9 @@
    "quote": 1.0
   },
   {
-   "tool": "neue-fähigkeiten-erlernen.py",
-   "laeufe": 1,
-   "erfolge": 1,
+   "tool": "regelmäßige-selbstprüfung-etablieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -409,12 +409,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "regelmäßige-selbstprüfung-etablieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   }
  ],
  "haende_quote": 0.731,
