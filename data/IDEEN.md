@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 21:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 21:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex tool execution failed with exit code 1 despite 5.3s runtime, indicating the action layer lacks pre-flight validation and structured error captu
+- Event pruning removed 38 items while fact pruning removed 0, showing experience accumulates faster than distilled knowledge.
+- Upstream 502 errors from Nvidia reveal that provider-side overloads propagate as silent failures (status 200 with empty choices), requiring response-b
+- The model inclusionai/ling-3.0-flash-fin:free maintains 100% success with ~3.5s latency, making it the only reliable default for production routing.
+- Rate limiting (HTTP 429) is the dominant failure mode across 4 different model providers, indicating systemic quota exhaustion rather than isolated in
 - Memory pruning removes events but retains facts, suggesting fact staleness detection is a separate unsolved problem.
 - Proactive error-handling proposals (circuit breakers, dynamic routing, pre-flight checks) indicate systemic reliability gaps rather than isolated inci
 - Stale swarm artifacts accumulate silently and block new work until explicit cleanup reflexes are triggered.
@@ -51,11 +56,6 @@
 - The evolution loop stalls at 7/10 because the critic detects simulated sense data but the builder cannot access real-time verification sources.
 - OpenRouter free tier enforces aggressive per-model rate limits that cascade across multiple providers simultaneously, making single-model reliance uns
 - The inclusionai/ling-3.0-flash-fin model is the only consistently reliable endpoint (100% success, <5s latency) while all other free models suffer sys
-- Calibration showed a slight optimism bias (predicted 8 vs actual 7), suggesting self-assessment should be discounted by ~1 point when planning for sim
-- The evolution loop (variant generation + critic scoring) improved scores from 7 to 8-9 across three variants, confirming that iterative refinement wit
-- The system eventually succeeded by falling back to inclusionai/ling-3.0-flash-fin:free (7s latency, 8882 input tokens), demonstrating that rapid model
-- The dominant failure mode across this session was HTTP 429 from z-ai/glm-5.2:free and Google models, while Nvidia models succeeded but introduced high
-- Free-tier models on OpenRouter are subject to aggressive rate limiting (429 errors), and retrying the same failing model repeatedly wastes critical ti
 
 ---
 

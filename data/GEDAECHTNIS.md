@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11536 Fakten** · Stand 2026-09-04 21:45 UTC · aktualisiert bei jedem Herzschlag
+**11541 Fakten** · Stand 2026-09-04 21:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6509
+- **dream:** 6514
 - **swarm_artifact:** 2383
 - **last_swarm_critique:** 757
 - **anti_pattern:** 669
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904215318:5:8045e5`
+*04.09. 21:53 UTC · Quelle: dream*
+
+Reflex tool execution failed with exit code 1 despite 5.3s runtime, indicating the action layer lacks pre-flight validation and structured error capture.
+
+### `dream:20260904215318:4:e244cb`
+*04.09. 21:53 UTC · Quelle: dream*
+
+Event pruning removed 38 items while fact pruning removed 0, showing experience accumulates faster than distilled knowledge.
+
+### `dream:20260904215318:3:eeeb14`
+*04.09. 21:53 UTC · Quelle: dream*
+
+Upstream 502 errors from Nvidia reveal that provider-side overloads propagate as silent failures (status 200 with empty choices), requiring response-body validation.
+
+### `dream:20260904215318:2:51b8ba`
+*04.09. 21:53 UTC · Quelle: dream*
+
+The model inclusionai/ling-3.0-flash-fin:free maintains 100% success with ~3.5s latency, making it the only reliable default for production routing.
+
+### `dream:20260904215318:1:d94341`
+*04.09. 21:53 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across 4 different model providers, indicating systemic quota exhaustion rather than isolated incidents.
 
 ### `dream:20260904214305:5:576a41`
 *04.09. 21:43 UTC · Quelle: dream*
