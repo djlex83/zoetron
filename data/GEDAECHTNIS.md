@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11182 Fakten** · Stand 2026-09-04 08:58 UTC · aktualisiert bei jedem Herzschlag
+**11187 Fakten** · Stand 2026-09-04 09:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6230
+- **dream:** 6235
 - **swarm_artifact:** 2345
 - **last_swarm_critique:** 746
 - **anti_pattern:** 661
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904090631:5:190b50`
+*04.09. 09:06 UTC · Quelle: dream*
+
+Pruning removes 89 events per cycle but zero facts, suggesting the fact store is either static or the pruning criteria are too conservative.
+
+### `dream:20260904090631:4:fe92a8`
+*04.09. 09:06 UTC · Quelle: dream*
+
+Skill proposals accumulate without enforced ownership or deadlines, causing proposal debt that clutters the backlog and delays capability growth.
+
+### `dream:20260904090631:3:ef0c68`
+*04.09. 09:06 UTC · Quelle: dream*
+
+Swarm execution scores 7/10 but fails to converge, indicating the planner-critic loop lacks a hard convergence threshold or max-iteration guard.
+
+### `dream:20260904090631:2:385743`
+*04.09. 09:06 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin) handles all successful requests, creating a single point of failure if it also hits quota limits.
+
+### `dream:20260904090631:1:4fb01c`
+*04.09. 09:06 UTC · Quelle: dream*
+
+Free-tier models consistently fail under load with 429 rate limits and 502 upstream errors, making them unreliable for production workflows without circuit breakers.
 
 ### `dream:20260904085638:5:c36f2b`
 *04.09. 08:56 UTC · Quelle: dream*

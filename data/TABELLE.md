@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 7878 Neuronen · 595709 bewertete Synapsen
+Stand: 7880 Neuronen · 596635 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -21,7 +21,7 @@ Stand: 7878 Neuronen · 595709 bewertete Synapsen
 | 9 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 548 | 0.27 |
 | 10 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 548 | 0.27 |
 | 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 573 | 0.25 |
-| 12 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 597 | 0.24 |
+| 12 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 598 | 0.24 |
 | 13 | 💭 | Same model (nemotron-3-super) shows 8x latency variance (4.4s to… | 596 | 0.24 |
 | 14 | 💭 | Model latency varies 50x (3.8–203 s) without a circuit breaker, … | 581 | 0.24 |
 | 15 | 💭 | Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x … | 566 | 0.25 |
