@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11110 Fakten** · Stand 2026-09-04 06:41 UTC · aktualisiert bei jedem Herzschlag
+**11115 Fakten** · Stand 2026-09-04 06:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6170
+- **dream:** 6175
 - **swarm_artifact:** 2339
 - **last_swarm_critique:** 745
 - **anti_pattern:** 659
@@ -19,6 +19,31 @@
 - **last_goal:** 1
 
 ---
+
+### `dream:20260904064840:5:50297e`
+*04.09. 06:48 UTC · Quelle: dream*
+
+Static risk and quality thresholds fail to reflect empirical system behavior, so pass-rates and decay signals should replace fixed cutoffs.
+
+### `dream:20260904064840:4:b7f39e`
+*04.09. 06:48 UTC · Quelle: dream*
+
+High-latency models (15-22s) block the main execution loop, demanding async or batched handling to maintain system responsiveness.
+
+### `dream:20260904064840:3:d24355`
+*04.09. 06:48 UTC · Quelle: dream*
+
+Skill proposals accumulate across dream cycles without implementation tracking, causing knowledge to grow while capabilities stagnate.
+
+### `dream:20260904064840:2:671cc1`
+*04.09. 06:48 UTC · Quelle: dream*
+
+Reflex-mode completions can declare convergence with a null score, creating a quality blind spot that must be closed by mandatory post-hoc assessment.
+
+### `dream:20260904064840:1:80e3a7`
+*04.09. 06:48 UTC · Quelle: dream*
+
+Free-tier models repeatedly trigger 429 rate-limit errors, making them unreliable for critical actions and requiring automatic fallback to healthy endpoints.
 
 ### `dream:20260904063931:5:43fcef`
 *04.09. 06:39 UTC · Quelle: dream*

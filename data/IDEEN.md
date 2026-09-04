@@ -1,16 +1,16 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 06:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
+- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 9×)*
 - Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic  *(hatte die Idee 8×)*
-- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 8×)*
+- Require mandatory score capture on all act_done events — if score is null, trigger automated post-hoc quality  *(hatte die Idee 7×)*
+- Create a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after *(hatte die Idee 7×)*
 - Build a skill-compilation pipeline that lints, type-checks, and runs unit tests on generated code before atomi *(hatte die Idee 6×)*
 - Create a predictive budget allocator that estimates task complexity from prompt tokens and historical latency/ *(hatte die Idee 6×)*
-- Require mandatory score capture on all act_done events — if score is null, trigger automated post-hoc quality  *(hatte die Idee 6×)*
-- Create a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after *(hatte die Idee 6×)*
 - Develop a knowledge-rehydration skill that scans stale facts/market analyses nightly, extracts actionable patt *(hatte die Idee 5×)*
 - Deploy a reflex quality gate requiring minimum score threshold (e.g., 0.7) before accepting reflex completions *(hatte die Idee 5×)*
 - Add a proposal-to-production pipeline requiring simulation verdict=accept, load test (latency <30s p95), and c *(hatte die Idee 4×)*
@@ -33,14 +33,19 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehlerquote deutlich senken *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten in echte Skills verwandeln *(wieder aufgegriffen: 3×)*
-- Marktanalyse aktualisieren und Lücken schließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Static risk and quality thresholds fail to reflect empirical system behavior, so pass-rates and decay signals should replace fixed cutoffs.
+- High-latency models (15-22s) block the main execution loop, demanding async or batched handling to maintain system responsiveness.
+- Skill proposals accumulate across dream cycles without implementation tracking, causing knowledge to grow while capabilities stagnate.
+- Reflex-mode completions can declare convergence with a null score, creating a quality blind spot that must be closed by mandatory post-hoc assessment.
+- Free-tier models repeatedly trigger 429 rate-limit errors, making them unreliable for critical actions and requiring automatic fallback to healthy end
 - Skill proposals accumulate across dream cycles without execution tracking, causing proposal debt.
 - Event pruning occurs without corresponding fact extraction, potentially discarding learnable patterns.
 - Memory gap detection generates exploration goals but lacks prioritization, risking low-yield effort.
@@ -51,11 +56,6 @@
 - Simulation-based revision catches risks effectively (5 risks → 5 revisions) but lacks a convergence gate.
 - Swarm tasks evolve but fail to converge without explicit score thresholds and risk-clearance criteria.
 - Free-tier models on OpenRouter exhibit correlated 429 failures suggesting shared quota pools rather than independent limits.
-- Hand actions (local Python execution) complete in ~0.2s with zero failures, ideal for deterministic validation steps.
-- The evolution-simulation loop (generate→simulate→revise) reliably improves artifact scores (6→9) and should be a standard pipeline stage.
-- Ling-3.0-flash-fin delivers consistent low latency (~8s) and success, making it the preferred default for latency-sensitive tasks.
-- Nemotron-3-Ultra shows high latency variance (16-68s) and 502 upstream errors, making it unreliable as primary despite high quality.
-- Free-tier models consistently hit 429 rate limits under load, requiring automatic fallback chains with exponential backoff.
 
 ---
 

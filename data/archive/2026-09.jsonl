@@ -9020,3 +9020,41 @@
 {"ts": 1787898993.228149, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
 {"ts": 1787898993.228939, "kind": "reflex_used", "payload": {"goal": "Ziele konsequent zu Ende bringen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
 {"ts": 1787898993.6707711, "kind": "act_done", "payload": {"goal_title": "Ziele konsequent zu Ende bringen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787899091.0531635, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787899206.808927, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787899208.0724106, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787899214.278124, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 3.2, "tokens_ein": 1500, "tokens_aus": 917}}
+{"ts": 1787899214.2787101, "kind": "skill_proposal", "payload": {"proposal": "Implement an automatic model fallback chain that skips models with recent 429 errors for a 10-minute cooldown period."}}
+{"ts": 1787899214.278781, "kind": "skill_proposal", "payload": {"proposal": "Add a latency threshold to the model selection logic to avoid models with >60s latency when faster alternatives exist."}}
+{"ts": 1787899214.278838, "kind": "skill_proposal", "payload": {"proposal": "Update the calibration model for 'Mehr Experimente für neue Lösungen wagen' to predict higher scores based on recent actuals."}}
+{"ts": 1787899214.2788932, "kind": "skill_proposal", "payload": {"proposal": "Create a dynamic rate-limit awareness mechanism that detects 429s and automatically switches to less popular free models."}}
+{"ts": 1787899214.278947, "kind": "skill_proposal", "payload": {"proposal": "Develop a retry logic that distinguishes between 429 (rate limit) and 502 (upstream error) to apply different backoff strategies."}}
+{"ts": 1787899214.2790003, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787899216.2545063, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787899216.254503, "schalter_geoeffnet": false}}
+{"ts": 1787899250.253991, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 34.0, "tokens_ein": 461, "tokens_aus": 750}}
+{"ts": 1787899250.2541564, "kind": "drive_goal", "payload": {"title": "Modellfehler stark reduzieren", "why": "Viele Modelle scheitern noch. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1787899250.2542279, "kind": "drive_goal", "payload": {"title": "Traumerkenntnisse besser nutzen", "why": "Alte Traumerinnerungen liegen unverbunden. Ihr Wissen könnte neue Fähigkeiten bringen.", "signal": "gap"}}
+{"ts": 1787899250.2543242, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich lernen", "why": "Viele Skill-Vorschläge existieren, aber wenige werden echt. Lernen macht sie nutzbar.", "signal": "gap"}}
+{"ts": 1787899252.4745994, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
+{"ts": 1787899252.475373, "kind": "reflex_used", "payload": {"goal": "Ziele messbar und erreichbar machen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
+{"ts": 1787899253.5172925, "kind": "act_done", "payload": {"goal_title": "Ziele messbar und erreichbar machen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787899351.3912334, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787899477.5880606, "kind": "reflex_ok", "payload": {}}
+{"ts": 1787899478.9356983, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1787899482.4414175, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787899482.4414153, "schalter_geoeffnet": false}}
+{"ts": 1787899548.5949676, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 66.2, "tokens_ein": 1665, "tokens_aus": 1344}}
+{"ts": 1787899548.595622, "kind": "skill_proposal", "payload": {"proposal": "Implement a model health monitor that auto-excludes endpoints after 3 consecutive 429 responses with exponential backoff."}}
+{"ts": 1787899548.5956914, "kind": "skill_proposal", "payload": {"proposal": "Build a latency-aware router with per-model timeout budgets (e.g., 30s p95) and automatic fallback to fastest healthy model."}}
+{"ts": 1787899548.5957596, "kind": "skill_proposal", "payload": {"proposal": "Add convergence criteria to evolution/swarm loops: stop when top-score plateaus for 2 cycles AND score variance < 0.5."}}
+{"ts": 1787899548.5958545, "kind": "skill_proposal", "payload": {"proposal": "Create a calibration adjuster that learns per-goal-type prediction bias and corrects future estimates automatically."}}
+{"ts": 1787899548.5959306, "kind": "skill_proposal", "payload": {"proposal": "Replace hardcoded thresholds with a configurable parameter registry loaded at task start."}}
+{"ts": 1787899548.5960033, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1787899550.636036, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787899550.6360333, "schalter_geoeffnet": false}}
+{"ts": 1787899604.3975801, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 53.8, "tokens_ein": 452, "tokens_aus": 793}}
+{"ts": 1787899604.3977187, "kind": "drive_goal", "payload": {"title": "Modelle zuverlässiger machen", "why": "Viele Modelle scheitern noch. Bessere Modelle helfen bei allen Aufgaben.", "signal": "failure"}}
+{"ts": 1787899604.3977923, "kind": "drive_goal", "payload": {"title": "Mehr Fähigkeiten wirklich nutzen", "why": "Viele Vorschläge für neue Fähigkeiten liegen bereit. Wir sollten die besten davon einbauen.", "signal": "gap"}}
+{"ts": 1787899604.397855, "kind": "drive_goal", "payload": {"title": "Simulation und Schwarm stärker nutzen", "why": "Wir simulieren und schwärmen noch wenig. Mehr davon beschleunigt das Lernen.", "signal": "combination"}}
+{"ts": 1787899607.9143279, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.22, "gelesen": 7}}
+{"ts": 1787899607.915133, "kind": "reflex_used", "payload": {"goal": "Schwarm-Lernen und Simulationen ausbauen", "tool": "exemplar-bank-von-den-eigenen-besten-mom.py", "ok": true}}
+{"ts": 1787899608.4141922, "kind": "act_done", "payload": {"goal_title": "Schwarm-Lernen und Simulationen ausbauen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787899706.047654, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
