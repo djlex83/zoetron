@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11412 Fakten** · Stand 2026-09-04 17:25 UTC · aktualisiert bei jedem Herzschlag
+**11426 Fakten** · Stand 2026-09-04 17:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6410
-- **swarm_artifact:** 2368
-- **last_swarm_critique:** 753
+- **dream:** 6415
+- **swarm_artifact:** 2374
+- **last_swarm_critique:** 754
 - **anti_pattern:** 667
-- **last_swarm_goal:** 501
+- **last_swarm_goal:** 502
 - **strategy:** 354
-- **tool:** 147
+- **tool:** 148
 - **hand_result:** 122
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -17,6 +17,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-praktisch-erp`
+*04.09. 17:39 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten praktisch erproben'. Datei: data/tools/vorgeschlagene-fähigkeiten-praktisch-erp.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*04.09. 17:39 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*04.09. 17:33 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten praktisch erproben
+
+### `dream:20260904173250:5:08aed6`
+*04.09. 17:32 UTC · Quelle: dream*
+
+High-latency models like `nvidia/nemotron-3-ultra-550b-a55b:free` can serve as reliable fallbacks when faster models fail.
+
+### `dream:20260904173250:4:f45c7c`
+*04.09. 17:32 UTC · Quelle: dream*
+
+Periodic memory pruning is effectively bounding memory growth by removing stale facts and events.
+
+### `dream:20260904173250:3:a77eb3`
+*04.09. 17:32 UTC · Quelle: dream*
+
+Destructive operations are correctly intercepted by the safety layer, requiring human approval before execution.
+
+### `dream:20260904173250:2:70468e`
+*04.09. 17:32 UTC · Quelle: dream*
+
+Simulations are frequently initiated but their results are rarely utilized to inform actual decisions.
+
+### `dream:20260904173250:1:ea50ea`
+*04.09. 17:32 UTC · Quelle: dream*
+
+The `z-ai/glm-5.2:free` model is consistently rate-limited (429 errors) and should be temporarily removed from the active routing pool.
 
 ### `dream:20260904172310:5:62b441`
 *04.09. 17:23 UTC · Quelle: dream*

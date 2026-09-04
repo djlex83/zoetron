@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 17:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 17:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High-latency models like `nvidia/nemotron-3-ultra-550b-a55b:free` can serve as reliable fallbacks when faster models fail.
+- Periodic memory pruning is effectively bounding memory growth by removing stale facts and events.
+- Destructive operations are correctly intercepted by the safety layer, requiring human approval before execution.
+- Simulations are frequently initiated but their results are rarely utilized to inform actual decisions.
+- The `z-ai/glm-5.2:free` model is consistently rate-limited (429 errors) and should be temporarily removed from the active routing pool.
 - Destructive tool calls (os.system/subprocess) are correctly blocked by safety gate, requiring explicit human approval path.
 - Calibration predicted 8 but actual was 4 (abs_error=4), revealing systematic overconfidence in initial capability estimates.
 - Evolutionary iteration boosted score from 4 to 9 in one generation, confirming that critic-driven mutation outperforms single-pass generation.
@@ -51,11 +56,6 @@
 - Reflex tools for market analysis execute successfully and quickly, but their reliability is entirely dependent on the stability of underlying external
 - Stale goals and unfinished swarm tasks accumulate over weeks, requiring automated detection and escalation based on age and cost-benefit.
 - The model 'z-ai/glm-5.2:free' is consistently failing with 429 Too Many Requests errors, while 'nvidia/nemotron-3-ultra-550b-a55b:free' serves as a re
-- Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots for external API dependencies.
-- Pruning discards 40-50 events per run without mining error signatures, losing recurring failure patterns.
-- Skill proposals accumulate (7+ in logs) but lack validation sandbox, risking untested promotions to production.
-- Fallback model nvidia/nemotron-3-ultra shows 2x latency variance (39-87s), making task duration unpredictable without health-aware routing.
-- Repeated 429 errors on z-ai/glm-5.2:free reveal absent proactive quota monitoring, causing predictable fallback latency spikes.
 
 ---
 
