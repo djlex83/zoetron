@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11475 Fakten** · Stand 2026-09-04 19:19 UTC · aktualisiert bei jedem Herzschlag
+**11480 Fakten** · Stand 2026-09-04 19:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6455
+- **dream:** 6460
 - **swarm_artifact:** 2380
 - **last_swarm_critique:** 755
 - **anti_pattern:** 667
@@ -17,6 +17,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260904192640:5:bccb4c`
+*04.09. 19:26 UTC · Quelle: dream*
+
+Drive goals repeat across cycles (error reduction, skill adoption, cleanup) indicating persistent systemic gaps.
+
+### `dream:20260904192640:4:2dbe05`
+*04.09. 19:26 UTC · Quelle: dream*
+
+Pruning removes events (22-64 per run) but never facts, causing unbounded fact accumulation over time.
+
+### `dream:20260904192640:3:76eb3f`
+*04.09. 19:26 UTC · Quelle: dream*
+
+50+ skill proposals exist but reflex testing shows only ad-hoc validation, no systematic adoption pipeline.
+
+### `dream:20260904192640:2:39d56b`
+*04.09. 19:26 UTC · Quelle: dream*
+
+Native hand_actions succeed in ~1s with zero errors, while model calls take 30-67s and fail frequently.
+
+### `dream:20260904192640:1:abf6ba`
+*04.09. 19:26 UTC · Quelle: dream*
+
+External model APIs (z-ai/glm-5.2) fail consistently with 429 rate limits, making them unreliable for production use.
 
 ### `dream:20260904191647:5:038ac6`
 *04.09. 19:16 UTC · Quelle: dream*

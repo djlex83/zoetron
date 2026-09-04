@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-04 19:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 8×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals repeat across cycles (error reduction, skill adoption, cleanup) indicating persistent systemic gaps.
+- Pruning removes events (22-64 per run) but never facts, causing unbounded fact accumulation over time.
+- 50+ skill proposals exist but reflex testing shows only ad-hoc validation, no systematic adoption pipeline.
+- Native hand_actions succeed in ~1s with zero errors, while model calls take 30-67s and fail frequently.
+- External model APIs (z-ai/glm-5.2) fail consistently with 429 rate limits, making them unreliable for production use.
 - Self-diagnosis reports zero organ errors while model-layer failures dominate, indicating health checks miss the actual failure surface.
 - Fifty skill proposals accumulate unimplemented because no sprint mechanism converts proposals into deployed code.
 - Reflex-driven tool execution converged the swarm goal without planner involvement, proving reflexes can bypass brittle planning.
@@ -51,11 +56,6 @@
 - Pruning 44 events but 0 facts reveals that stale event data accumulates far faster than factual knowledge, meaning event-level cleanup alone is insuff
 - The sole successful model (ling-3.0-flash-fin) with 3.1s latency indicates smaller, faster models are more resilient under load than larger ones, sugg
 - Sequential retries across multiple models without circuit breakers amplify rate-limit cascades, turning a single 429 into a systemic failure that bloc
-- Self-diagnosis reports zero organ errors while model layer fails repeatedly, exposing a monitoring blind spot at the inference boundary.
-- Nvidia 502 errors reveal upstream provider instability that mimics rate limits but requires different retry semantics.
-- Successful goal completion (score 9) despite 60% model failure rate proves the swarm architecture tolerates partial LLM degradation.
-- Calibration error of +4 cycles indicates the planner systematically underestimates execution complexity for multi-role swarms.
-- Rate limiting (429) cascades across all free-tier models simultaneously, making single-model fallback ineffective.
 
 ---
 

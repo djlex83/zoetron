@@ -10909,3 +10909,14 @@
 {"ts": 1787944558.966097, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787944558.9660952, "schalter_geoeffnet": false}}
 {"ts": 1787944563.3293722, "kind": "model_ok", "payload": {"model": "poolside/laguna-s-2.1:free", "latency_s": 4.4, "tokens_ein": 612, "tokens_aus": 162}}
 {"ts": 1787944563.3296716, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 1/10. Goal: Ersten Swarm-Lauf mit Score 8+ konvergieren lassen\nCritic issues: Sandbox-Urteil: LA", "variants": 3, "winner_index": 1, "scores": [6, 9, 8]}}
+{"ts": 1787944597.1754973, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787944597.175494, "schalter_geoeffnet": false}}
+{"ts": 1787944646.8087313, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 49.6, "tokens_ein": 443, "tokens_aus": 1093}}
+{"ts": 1787944647.8126643, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1787944647.8126614, "schalter_geoeffnet": false}}
+{"ts": 1787944663.9528182, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 16.1, "tokens_ein": 373, "tokens_aus": 987}}
+{"ts": 1787944663.9530115, "kind": "simulation", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "verdict": "revise", "risks": 5, "revisions": 5}}
+{"ts": 1787944663.9531496, "kind": "simulation_applied", "payload": {"revisions": 5}}
+{"ts": 1787944663.9532547, "kind": "swarm_finished", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": 1, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1787944663.9534953, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": 1, "converged": false}}
+{"ts": 1787944665.4362807, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.21, "gelesen": 0}}
+{"ts": 1787944667.3586519, "kind": "issue_synced", "payload": {"issue": 155, "state": "open"}}
+{"ts": 1787944788.3579154, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
