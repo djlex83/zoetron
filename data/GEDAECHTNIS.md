@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11593 Fakten** · Stand 2026-09-05 00:58 UTC · aktualisiert bei jedem Herzschlag
+**11594 Fakten** · Stand 2026-09-05 01:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6564
-- **swarm_artifact:** 2372
+- **dream:** 6569
+- **swarm_artifact:** 2368
 - **last_swarm_critique:** 761
 - **anti_pattern:** 673
 - **last_swarm_goal:** 509
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905010729:5:fb2e9a`
+*05.09. 01:07 UTC · Quelle: dream*
+
+Pruning (facts/events) occurs regularly but its criteria and impact on consolidation are unmonitored.
+
+### `dream:20260905010729:4:825d7e`
+*05.09. 01:07 UTC · Quelle: dream*
+
+Successful reflex execution (alte-schwarm-arbeiten-abschließen) shows autonomous tool use works when tools are validated.
+
+### `dream:20260905010729:3:95b6a7`
+*05.09. 01:07 UTC · Quelle: dream*
+
+Rate limit errors (429) are predictable from request frequency but currently trigger only after failure, wasting cycles.
+
+### `dream:20260905010729:2:3ffd48`
+*05.09. 01:07 UTC · Quelle: dream*
+
+Reactive skill proposals emerge only after repeated failures, indicating a missing proactive resilience design phase.
+
+### `dream:20260905010729:1:2b304f`
+*05.09. 01:07 UTC · Quelle: dream*
+
+External model APIs exhibit correlated failure modes (rate limits, upstream errors) that cascade into system-wide unavailability without circuit breakers.
 
 ### `dream:20260905005617:5:b0dea7`
 *05.09. 00:56 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 00:56:46",
+ "stand": "2026-09-05 01:07:53",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -202,6 +202,12 @@
   },
   {
    "tool": "regelmäßige-selbstprüfung-etablieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-wissenstände-auffrischen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -411,24 +417,18 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltete-wissenstände-auffrischen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
   }
  ],
- "haende_quote": 0.783,
+ "haende_quote": 0.788,
  "simulationen_angewandt": 19,
  "swarm_scores": {
-  "n": 28,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 7.0
+  "schnitt": 7.11
  },
  "score_nach_ziel_typ": {
   "analyse": {

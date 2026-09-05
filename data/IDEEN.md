@@ -1,15 +1,15 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 00:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 9×)*
+- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 8×)*
 - Require mandatory score capture on all act_done events — if score is null, trigger automated post-hoc quality  *(hatte die Idee 8×)*
 - Create a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after *(hatte die Idee 8×)*
-- Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic  *(hatte die Idee 5×)*
 - Deploy a reflex quality gate requiring minimum score threshold (e.g., 0.7) before accepting reflex completions *(hatte die Idee 5×)*
+- Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic  *(hatte die Idee 4×)*
 - Implement fact TTL with access-frequency decay: auto-expire facts untouched for 7 days AND accessed fewer than *(hatte die Idee 4×)*
 - Add a background-batch queue for high-latency or unreliable models to prevent them from blocking the main exec *(hatte die Idee 4×)*
 - Implement a quota-aware router with per-model 429/5xx tracking in 60s rolling windows, tripping circuit breake *(hatte die Idee 4×)*
@@ -27,13 +27,13 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning (facts/events) occurs regularly but its criteria and impact on consolidation are unmonitored.
+- Successful reflex execution (alte-schwarm-arbeiten-abschließen) shows autonomous tool use works when tools are validated.
+- Rate limit errors (429) are predictable from request frequency but currently trigger only after failure, wasting cycles.
+- Reactive skill proposals emerge only after repeated failures, indicating a missing proactive resilience design phase.
+- External model APIs exhibit correlated failure modes (rate limits, upstream errors) that cascade into system-wide unavailability without circuit break
 - Self-diagnosis reporting zero organ errors while operational failures persist indicates the root cause lies in execution policy, not in system archite
 - Even successful models exhibit wide latency variance (7s to 19.8s), meaning a successful response does not guarantee performance within acceptable tim
 - Reflex-driven cleanup operations succeed reliably when triggered, demonstrating that automated maintenance beats manual intervention for managing stal
@@ -51,11 +56,6 @@
 - The swarm architecture with planner/builder/critic roles achieved convergence in a single cycle with a score of 8, demonstrating that role-specialized
 - The nvidia/nemotron model exhibits extreme latency variance (8.6s to 126.9s) and occasional upstream 502 errors, making it unreliable as a default wit
 - Rate limiting (429 errors) is the dominant and most persistent failure mode across multiple model providers, indicating systemic API quota constraints
-- Conserve budget (max_iterations=1) forces atomic steps; any goal requiring >3 atomic steps will fail unless pre-decomposed by task_decomposer.
-- Fifty skill proposals exist without a validation pipeline, causing proposal rot; each proposal must pass automated test + simulation + live trial befo
-- Simulation gate prevented live commitment by returning verdict=revise with 5 risks, demonstrating that mandatory pre-flight simulation with zero-risk 
-- Every hand_action failure traces back to unnormalized paths — the system must resolve all I/O through ZOETRON_DATA and sys.argv[1] before any file ope
-- Model z-ai/glm-5.2:free fails 100% of the time with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, proving single-model dependence is a
 
 ---
 
