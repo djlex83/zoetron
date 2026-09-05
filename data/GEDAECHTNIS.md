@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11901 Fakten** · Stand 2026-09-05 15:07 UTC · aktualisiert bei jedem Herzschlag
+**11898 Fakten** · Stand 2026-09-05 15:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6858
-- **swarm_artifact:** 2347
+- **dream:** 6863
+- **swarm_artifact:** 2342
 - **last_swarm_critique:** 775
-- **anti_pattern:** 681
+- **anti_pattern:** 679
 - **last_swarm_goal:** 523
-- **strategy:** 342
+- **strategy:** 341
 - **tool:** 159
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905151512:5:1b92b5`
+*05.09. 15:15 UTC · Quelle: dream*
+
+Self-diagnosis found no structural organ errors, confirming the system architecture is sound but its execution layer (model selection, artifact wiring) is the bottleneck.
+
+### `dream:20260905151512:4:90f75e`
+*05.09. 15:15 UTC · Quelle: dream*
+
+Five completed swarm artifacts and five computed simulations remain unapplied, revealing a persistent gap between computation and operational integration.
+
+### `dream:20260905151512:3:cfe2a6`
+*05.09. 15:15 UTC · Quelle: dream*
+
+A 58% failure rate (64 errors vs 46 successes) shows that the current model routing strategy lacks predictive filtering and falls back too late.
+
+### `dream:20260905151512:2:72ebdc`
+*05.09. 15:15 UTC · Quelle: dream*
+
+The 502 upstream error from Nvidia reveals that even successful models can fail silently due to provider-side overload, requiring upstream health awareness.
+
+### `dream:20260905151512:1:7ce21f`
+*05.09. 15:15 UTC · Quelle: dream*
+
+Rate-limit errors (429) are systemic across multiple providers, not isolated to one model, indicating that provider selection alone cannot solve the reliability problem.
 
 ### `dream:20260905150418:5:34e24e`
 *05.09. 15:04 UTC · Quelle: dream*
@@ -45384,15 +45409,3 @@ ABGELEHNT von Evolution (Score 7): Automated Static Analysis & Lint‑First Repa
 *22.08. 15:39 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Idempotent logger configuration - Encapsulate logger setup in a get_logger() function that adds handlers only when the logger has none, and call it lazily on first use. Remove any logging.basicConfig calls at module level to
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Träume nutzen
-Critic iss:1`
-*22.08. 15:14 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Apply the Template Method pattern with explicit abstract contracts - Define `AnalyzerTemplate` and `ExecutorTemplate` as ABCs using `abc.ABC`. In `AnalyzerTemplate`, implement `__init__` to accept required parameters and decl
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Träume nutzen
-Critic iss:0`
-*22.08. 15:14 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Centralize shared enums and enforce implementation via inheritance - Create a single `skill_enums.py` module containing `SkillCategory` and `SimulationOutcome`. Have `DreamSkillAnalyzer` and `CognitiveSkillExecutor` import th

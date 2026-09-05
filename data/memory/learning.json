@@ -1,13 +1,7 @@
 {
- "stand": "2026-09-05 15:05:05",
+ "stand": "2026-09-05 15:15:54",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
-  {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 6,
@@ -22,6 +16,12 @@
   },
   {
    "tool": "marktanalyse-endlich-nutzen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -394,6 +394,12 @@
   },
   {
    "tool": "traum-gedächtnis-system-fertigstellen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-prüfen-und-nutzbar-machen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
