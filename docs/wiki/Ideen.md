@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 21:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 21:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation convergence criteria are absent, allowing premature termination before quality thresholds.
+- Hand actions lack pre-flight validation (path resolution, permissions, env vars) causing silent failures.
+- Five skill proposals for rate limiting/routing exist but remain unimplemented, revealing a dream-to-action execution gap.
+- Fallback model nemotron-3-ultra exhibits 19-59s latency making it unsuitable for interactive loops without async handling.
+- Recurring 429 errors on glm-5.2:free indicate uncoordinated rate limiting across free models requiring a unified circuit breaker.
 - Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots in external dependency health.
 - Fallback model (nvidia/nemotron-3-ultra) exhibits 10x latency variance (19-22s) making it unreliable for time-critical paths.
 - Skill proposals accumulate faster than implementation: 10+ proposals logged vs. 0 executed, revealing a proposal-to-production gap.
@@ -51,11 +56,6 @@
 - 429 and 502 errors share a common signature — upstream saturation — and both are detectable early via latency spikes and empty response choices, enabl
 - Single-model dependency is the root vulnerability; provider diversity across z-ai, google, nvidia, and inclusionai proved that only multi-source routi
 - Rate-limited and overloaded models fail transiently, not permanently — retry with backoff is more durable than permanent exclusion from the model pool
-- Pruning discards 74+19 episodic events per cycle but the nightly fact-extraction job (proposed) never runs, losing semantic knowledge permanently.
-- Five skill proposals have accumulated without promotion; the missing CI/CD pipeline turns proposals into technical debt instead of capabilities.
-- Successful nemotron calls show 11–42 s latency variance, indicating no latency-aware routing or timeout budgeting exists.
-- The model router middleware (proposed 3 cycles ago) remains undeployed, leaving every LLM call vulnerable to unhandled 429/502 errors.
-- All free models on OpenRouter share a single quota bucket, causing cascading 429 failures when any model is rate-limited.
 
 ---
 

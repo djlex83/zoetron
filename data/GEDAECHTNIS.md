@@ -1,21 +1,66 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12041 Fakten** · Stand 2026-09-05 21:12 UTC · aktualisiert bei jedem Herzschlag
+**12054 Fakten** · Stand 2026-09-05 21:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6983
-- **swarm_artifact:** 2350
-- **last_swarm_critique:** 781
-- **anti_pattern:** 677
-- **last_swarm_goal:** 529
-- **strategy:** 340
+- **dream:** 6988
+- **swarm_artifact:** 2352
+- **last_swarm_critique:** 782
+- **anti_pattern:** 679
+- **last_swarm_goal:** 530
+- **strategy:** 341
 - **tool:** 164
-- **hand_result:** 130
+- **hand_result:** 131
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: CI-Pipeline und Simulati:2`
+*05.09. 21:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Automated AST Remediation Pipeline - Introduce an Abstract Syntax Tree (AST) linting step in the CI pipeline that automatically detects and rewrites `IsNot` comparisons with string constants to `!=`. This removes the manual b
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: CI-Pipeline und Simulati:1`
+*05.09. 21:25 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Logic Refactoring via Structural Pattern Matching - Refactor the code block around line 70 to eliminate the direct string comparison entirely. Use Python's `match-case` structural pattern matching to handle the string states,
+
+### `last_swarm_critique`
+*05.09. 21:24 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - SyntaxWarning: "is not" with 'str' literal at line 70 (vermutlich Vergleich wie `x is not "string"` statt `x != "string"`); Artefakt ist nicht lauffaehig, verletzt damit die Grundvoraussetzung fuer Score >= 3
+
+### `last_swarm_goal`
+*05.09. 21:20 UTC · Quelle: system*
+
+CI-Pipeline und Simulationen wieder funktionsfähig machen
+
+### `dream:20260905212024:5:8d376c`
+*05.09. 21:20 UTC · Quelle: dream*
+
+Simulation convergence criteria are absent, allowing premature termination before quality thresholds.
+
+### `dream:20260905212024:4:82e9b3`
+*05.09. 21:20 UTC · Quelle: dream*
+
+Hand actions lack pre-flight validation (path resolution, permissions, env vars) causing silent failures.
+
+### `dream:20260905212024:3:7d4106`
+*05.09. 21:20 UTC · Quelle: dream*
+
+Five skill proposals for rate limiting/routing exist but remain unimplemented, revealing a dream-to-action execution gap.
+
+### `dream:20260905212024:2:fee14a`
+*05.09. 21:20 UTC · Quelle: dream*
+
+Fallback model nemotron-3-ultra exhibits 19-59s latency making it unsuitable for interactive loops without async handling.
+
+### `dream:20260905212024:1:dacd14`
+*05.09. 21:20 UTC · Quelle: dream*
+
+Recurring 429 errors on glm-5.2:free indicate uncoordinated rate limiting across free models requiring a unified circuit breaker.
 
 ### `dream:20260905210938:5:e2b992`
 *05.09. 21:09 UTC · Quelle: dream*
