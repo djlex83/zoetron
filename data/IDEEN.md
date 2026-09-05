@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 02:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 03:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflexes for knowledge base cleanup are functioning reliably and should be scheduled on a regular cadence.
+- Event logs grow significantly faster than the fact base, necessitating frequent automated event pruning to prevent memory bloat.
+- A backlog of stale swarm tasks and unused skill proposals reveals a bottleneck in the execution phase rather than ideation.
+- High latency on fallback models (20-60s) indicates a need for asynchronous handling or strict timeout management.
+- Free models on OpenRouter are highly rate-limited and require active fallback mechanisms to prevent system blocking.
 - Calibration error of +1 (predicted 7, actual 8) shows consistent slight underestimation of task complexity in knowledge cleanup tasks.
 - Swarm converged in one cycle with planner/builder/critic roles but five improvement proposals remain unimplemented, indicating execution gap between p
 - Memory pruning removes only events (56, 41) but zero facts, suggesting fact retention policy may be too conservative for long-term relevance.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate redundantly (5+ similar routing proposals) because the proposal-to-execution pipeline is broken.
 - Latency variance between working models exceeds 7x (3s vs 22s), making latency-aware routing essential for usability.
 - Rate limiting (429) affects all free-tier models simultaneously, indicating provider-level quota exhaustion rather than model-specific failures.
-- Dream-memory consolidation has five stale tasks blocking cross-cycle knowledge transfer, yet pruning only removes events not facts.
-- Drive goals (reduce errors, finish dream memory, translate goals) remain declarative without executable mission plans or acceptance criteria.
-- Five duplicate skill proposals for circuit-breaker/fallback/routing indicate no proposal deduplication gate, bloating the skill backlog.
-- Nemotron-3-ultra shows high latency variance (11.7–27.6s) without latency-aware routing, making tail latency unpredictable for downstream tasks.
-- Repeated 429 errors on z-ai/glm-5.2:free reveal absent rate-limit awareness before dispatch, causing wasted retries and cascade failures.
 
 ---
 

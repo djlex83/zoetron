@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11645 Fakten** · Stand 2026-09-05 03:00 UTC · aktualisiert bei jedem Herzschlag
+**11647 Fakten** · Stand 2026-09-05 03:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6609
-- **swarm_artifact:** 2372
+- **dream:** 6614
+- **swarm_artifact:** 2369
 - **last_swarm_critique:** 763
 - **anti_pattern:** 675
 - **last_swarm_goal:** 511
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905030805:5:efa556`
+*05.09. 03:08 UTC · Quelle: dream*
+
+Reflexes for knowledge base cleanup are functioning reliably and should be scheduled on a regular cadence.
+
+### `dream:20260905030805:4:24f47e`
+*05.09. 03:08 UTC · Quelle: dream*
+
+Event logs grow significantly faster than the fact base, necessitating frequent automated event pruning to prevent memory bloat.
+
+### `dream:20260905030805:3:31e051`
+*05.09. 03:08 UTC · Quelle: dream*
+
+A backlog of stale swarm tasks and unused skill proposals reveals a bottleneck in the execution phase rather than ideation.
+
+### `dream:20260905030805:2:4202d2`
+*05.09. 03:08 UTC · Quelle: dream*
+
+High latency on fallback models (20-60s) indicates a need for asynchronous handling or strict timeout management.
+
+### `dream:20260905030805:1:c3f5db`
+*05.09. 03:08 UTC · Quelle: dream*
+
+Free models on OpenRouter are highly rate-limited and require active fallback mechanisms to prevent system blocking.
 
 ### `dream:20260905025815:5:249b6c`
 *05.09. 02:58 UTC · Quelle: dream*

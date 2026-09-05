@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 02:58:38",
+ "stand": "2026-09-05 03:08:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -120,12 +120,6 @@
    "tool": "alte-schwarm-arbeiten-abschließen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -375,6 +369,12 @@
    "quote": 0.0
   },
   {
+   "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -418,6 +418,12 @@
   },
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltetes-wissen-auffrischen-und-aktual.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
