@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 05:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 06:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,15 +25,15 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in konkrete Schritte umsetzen *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High stress (1.0) triggers conserve mode with max_tasks=3 and max_iterations=1, amplifying failure impact.
+- Calibration shows 300% prediction error (predicted 4 vs actual 1) meaning effort estimation is untrustworthy.
+- Artifact execution crashes with tracebacks indicating missing pre-flight validation of dependencies and syntax.
+- Hand actions fail to read data because they use relative paths instead of resolving via ZOETRON_DATA and sys.argv[1].
+- Primary model (glm-5.2) consistently hits 429 rate limits requiring automatic fallback to slower but reliable nemotron model.
 - High metabolic stress (1.0) triggers aggressive conservation that starves consolidation tasks by limiting max_tasks to 3.
 - File system operations fail when code assumes absolute paths but receives relative paths via sys.argv/environment variables.
 - Skill proposals accumulate without execution because no automated pipeline bridges proposal to deployment.
@@ -51,11 +56,6 @@
 - Multiple skill proposals for the same resilience patterns (circuit breaker, model router, rate limiter) accumulate without implementation, revealing a
 - Fallback to nvidia/nemotron-3-ultra succeeds but with high variable latency (10–23 s), indicating a static fallback chain that ignores real-time healt
 - The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors because no circuit breaker or provider-level backoff exists, causing repeate
-- Automatic pruning (44 events, 4 facts) prevents memory bloat but may discard failure-pattern evidence needed for future model routing decisions.
-- Task succeeded despite 70% model failure rate because the swarm architecture tolerates individual model failures through role redundancy (planner/buil
-- Calibration error of 100% (predicted 4 cycles vs actual 8) reveals planning horizon blindness for novel system-building tasks.
-- inclusionai/ling-3.0-flash-fin is the only free model showing consistent success (2/2) with sub-11s latency, suggesting it should be the primary fallb
-- Free-tier models exhibit systematic unreliability: 429 rate limits dominate Google/Z.ai models while Nvidia returns 502 upstream overloads, making the
 
 ---
 

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11720 Fakten** · Stand 2026-09-05 06:01 UTC · aktualisiert bei jedem Herzschlag
+**11724 Fakten** · Stand 2026-09-05 06:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6684
-- **swarm_artifact:** 2366
+- **dream:** 6689
+- **swarm_artifact:** 2365
 - **last_swarm_critique:** 765
 - **anti_pattern:** 677
 - **last_swarm_goal:** 513
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905060920:5:2e6be0`
+*05.09. 06:09 UTC · Quelle: dream*
+
+High stress (1.0) triggers conserve mode with max_tasks=3 and max_iterations=1, amplifying failure impact.
+
+### `dream:20260905060920:4:86dac7`
+*05.09. 06:09 UTC · Quelle: dream*
+
+Calibration shows 300% prediction error (predicted 4 vs actual 1) meaning effort estimation is untrustworthy.
+
+### `dream:20260905060920:3:6fb6fc`
+*05.09. 06:09 UTC · Quelle: dream*
+
+Artifact execution crashes with tracebacks indicating missing pre-flight validation of dependencies and syntax.
+
+### `dream:20260905060920:2:c09231`
+*05.09. 06:09 UTC · Quelle: dream*
+
+Hand actions fail to read data because they use relative paths instead of resolving via ZOETRON_DATA and sys.argv[1].
+
+### `dream:20260905060920:1:9c9caa`
+*05.09. 06:09 UTC · Quelle: dream*
+
+Primary model (glm-5.2) consistently hits 429 rate limits requiring automatic fallback to slower but reliable nemotron model.
 
 ### `dream:20260905055848:5:166498`
 *05.09. 05:58 UTC · Quelle: dream*
