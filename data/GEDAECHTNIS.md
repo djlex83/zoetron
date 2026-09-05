@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12054 Fakten** · Stand 2026-09-05 21:28 UTC · aktualisiert bei jedem Herzschlag
+**12051 Fakten** · Stand 2026-09-05 21:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6988
-- **swarm_artifact:** 2352
+- **dream:** 6993
+- **swarm_artifact:** 2347
 - **last_swarm_critique:** 782
-- **anti_pattern:** 679
+- **anti_pattern:** 677
 - **last_swarm_goal:** 530
-- **strategy:** 341
+- **strategy:** 340
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905213907:5:596cfc`
+*05.09. 21:39 UTC · Quelle: dream*
+
+Pruning removes events but not facts, causing knowledge-graph stagnation despite regular cleanup cycles.
+
+### `dream:20260905213907:4:a0a7fd`
+*05.09. 21:39 UTC · Quelle: dream*
+
+Reflex-based targeted skill building converged successfully, proving directed training outperforms random exploration.
+
+### `dream:20260905213907:3:6bbb86`
+*05.09. 21:39 UTC · Quelle: dream*
+
+Drive goals repeatedly surface the same three failure modes: model unreliability, stale work accumulation, and simulation–action gap.
+
+### `dream:20260905213907:2:75c6af`
+*05.09. 21:39 UTC · Quelle: dream*
+
+Nemotron fallback succeeds but latency (10–18 s) exceeds interactive thresholds, requiring timeout budgets.
+
+### `dream:20260905213907:1:052e81`
+*05.09. 21:39 UTC · Quelle: dream*
+
+The glm-5.2 model consistently fails with 429 rate-limit errors, making it unreliable as a primary model.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: CI-Pipeline und Simulati:2`
 *05.09. 21:25 UTC · Quelle: evolution*
@@ -46114,16 +46139,6 @@ Model latency varies by 27× (13s–355s) without automatic failover, causing un
 *22.08. 21:53 UTC · Quelle: system*
 
 Modellfehler reduzieren
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationsergebnisse di:2`
-*22.08. 21:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.3): Actor Model with Hierarchical Supervision - Implement in Akka Typed / Orleans / Proto.Actor: SimulationActor (per run) → on completion sends SimulationResult to CoordinatorActor. CoordinatorActor spawns ActionPlannerActor (
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationsergebnisse di:0`
-*22.08. 21:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5.7): Event-Driven Stream Processing Pipeline - Replace the monolithic parser/executor with a Kafka/Redis Streams pipeline: SimulationRunner publishes raw results to 'simulation.raw' topic → StreamProcessor (stateless, horizontal
 
 ### `last_swarm_critique`
 *22.08. 21:32 UTC · Quelle: critic*

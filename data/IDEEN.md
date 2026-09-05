@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 21:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 21:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,12 +25,12 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Alte Schwarm-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events but not facts, causing knowledge-graph stagnation despite regular cleanup cycles.
+- Reflex-based targeted skill building converged successfully, proving directed training outperforms random exploration.
+- Drive goals repeatedly surface the same three failure modes: model unreliability, stale work accumulation, and simulation–action gap.
+- Nemotron fallback succeeds but latency (10–18 s) exceeds interactive thresholds, requiring timeout budgets.
+- The glm-5.2 model consistently fails with 429 rate-limit errors, making it unreliable as a primary model.
 - Simulation convergence criteria are absent, allowing premature termination before quality thresholds.
 - Hand actions lack pre-flight validation (path resolution, permissions, env vars) causing silent failures.
 - Five skill proposals for rate limiting/routing exist but remain unimplemented, revealing a dream-to-action execution gap.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate faster than implementation: 10+ proposals logged vs. 0 executed, revealing a proposal-to-production gap.
 - Pruning effectiveness decays rapidly: aggressive first pass (72 events) followed by zero-prune second pass indicates threshold miscalibration.
 - Rate-limited models (z-ai/glm-5.2:free) repeatedly trigger 429 storms that cascade into system-wide fallback latency spikes.
-- Caching successful model responses creates a resilience buffer that decouples execution continuity from upstream availability during transient outages
-- Swarm execution launched with known-failing reflex tools wastes the entire budget; pre-flight health checks on capability checkers are a cheap insuran
-- 429 and 502 errors share a common signature — upstream saturation — and both are detectable early via latency spikes and empty response choices, enabl
-- Single-model dependency is the root vulnerability; provider diversity across z-ai, google, nvidia, and inclusionai proved that only multi-source routi
-- Rate-limited and overloaded models fail transiently, not permanently — retry with backoff is more durable than permanent exclusion from the model pool
 
 ---
 
