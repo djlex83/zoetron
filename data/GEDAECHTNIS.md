@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11624 Fakten** · Stand 2026-09-05 02:02 UTC · aktualisiert bei jedem Herzschlag
+**11629 Fakten** · Stand 2026-09-05 02:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6594
+- **dream:** 6599
 - **swarm_artifact:** 2371
 - **last_swarm_critique:** 762
 - **anti_pattern:** 673
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905021114:5:036651`
+*05.09. 02:11 UTC · Quelle: dream*
+
+Dream-memory consolidation has five stale tasks blocking cross-cycle knowledge transfer, yet pruning only removes events not facts.
+
+### `dream:20260905021114:4:09a655`
+*05.09. 02:11 UTC · Quelle: dream*
+
+Drive goals (reduce errors, finish dream memory, translate goals) remain declarative without executable mission plans or acceptance criteria.
+
+### `dream:20260905021114:3:f80d73`
+*05.09. 02:11 UTC · Quelle: dream*
+
+Five duplicate skill proposals for circuit-breaker/fallback/routing indicate no proposal deduplication gate, bloating the skill backlog.
+
+### `dream:20260905021114:2:288981`
+*05.09. 02:11 UTC · Quelle: dream*
+
+Nemotron-3-ultra shows high latency variance (11.7–27.6s) without latency-aware routing, making tail latency unpredictable for downstream tasks.
+
+### `dream:20260905021114:1:00d89d`
+*05.09. 02:11 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free reveal absent rate-limit awareness before dispatch, causing wasted retries and cascade failures.
 
 ### `dream:20260905020024:5:0f4be7`
 *05.09. 02:00 UTC · Quelle: dream*

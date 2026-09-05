@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 02:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 02:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream-memory consolidation has five stale tasks blocking cross-cycle knowledge transfer, yet pruning only removes events not facts.
+- Drive goals (reduce errors, finish dream memory, translate goals) remain declarative without executable mission plans or acceptance criteria.
+- Five duplicate skill proposals for circuit-breaker/fallback/routing indicate no proposal deduplication gate, bloating the skill backlog.
+- Nemotron-3-ultra shows high latency variance (11.7–27.6s) without latency-aware routing, making tail latency unpredictable for downstream tasks.
+- Repeated 429 errors on z-ai/glm-5.2:free reveal absent rate-limit awareness before dispatch, causing wasted retries and cascade failures.
 - Periodic pruning of events and facts is necessary to prevent memory bloat and maintain efficient system performance during continuous operation.
 - Reactive retries exacerbate 429 errors, proving that proactive rate limiting and circuit breaking are essential for maintaining system throughput.
 - InclusionAI Ling-3.0-flash-fin demonstrates consistent reliability and low latency, making it a strong default choice during periods of high provider 
@@ -51,11 +56,6 @@
 - Hand actions failing with exit=1 and zero bytes read indicate path-resolution or permission bugs that evade static checks.
 - The simulation gate approved a live commit despite risks=4, violating its own safety contract and allowing a non-converged swarm run.
 - Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without a router.
-- Evolutionary improvement works: variant 0 scored 8/10 vs baseline 7/10, proving multi-candidate generation with critic selection yields measurable gai
-- Calibration consistently underestimates task complexity (predicted 5 vs actual 7), causing under-allocation of retries and time budget.
-- No exponential backoff or model rotation logic exists: the system retries failing models immediately, wasting cycles on known-broken endpoints.
-- inclusionai/ling-3.0-flash-fin:free is the only model that consistently succeeds with acceptable latency (3.4-6.3s) and should be the default fallback
-- Three free models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently return 429 rate-limit errors, making them unreliable for production use.
 
 ---
 

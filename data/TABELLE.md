@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8156 Neuronen · 663094 bewertete Synapsen
+Stand: 8160 Neuronen · 663872 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -13,18 +13,18 @@ Stand: 8156 Neuronen · 663094 bewertete Synapsen
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 727 | 0.24 |
 | 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 654 | 0.26 |
 | 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 733 | 0.23 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 687 | 0.24 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 688 | 0.24 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 696 | 0.23 |
-| 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 622 | 0.25 |
-| 7 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 677 | 0.23 |
-| 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 603 | 0.26 |
+| 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 623 | 0.25 |
+| 7 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 678 | 0.23 |
+| 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 604 | 0.26 |
 | 9 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 690 | 0.22 |
 | 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 629 | 0.24 |
-| 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 598 | 0.25 |
+| 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 599 | 0.25 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 557 | 0.27 |
 | 13 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 575 | 0.26 |
-| 14 | 💭 | Repeated 429 errors across four different models indicate system… | 605 | 0.25 |
-| 15 | 💭 | Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x … | 596 | 0.25 |
+| 14 | 💭 | Repeated 429 errors across four different models indicate system… | 606 | 0.25 |
+| 15 | 💭 | Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x … | 597 | 0.25 |
 
 ## Die 15 stärksten Synapsen
 
