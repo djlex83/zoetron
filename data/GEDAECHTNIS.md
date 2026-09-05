@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12067 Fakten** · Stand 2026-09-05 21:56 UTC · aktualisiert bei jedem Herzschlag
+**12068 Fakten** · Stand 2026-09-05 22:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6998
-- **swarm_artifact:** 2353
+- **dream:** 7003
+- **swarm_artifact:** 2349
 - **last_swarm_critique:** 783
 - **anti_pattern:** 679
 - **last_swarm_goal:** 531
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905222211:5:1ede7b`
+*05.09. 22:22 UTC · Quelle: dream*
+
+Evolutionary variant search (3 variants) boosted score from 1 to 9, proving multi-candidate generation with selection outperforms single-shot.
+
+### `dream:20260905222211:4:49ce27`
+*05.09. 22:22 UTC · Quelle: dream*
+
+Calibration error of 500% (predicted 6 vs actual 1) indicates missing task-complexity heuristics for CI/repair tasks.
+
+### `dream:20260905222211:3:f39c97`
+*05.09. 22:22 UTC · Quelle: dream*
+
+Generated artifacts contain basic syntax errors (e.g., "is not" with string literals) that simulation catches late; need pre-flight static validation.
+
+### `dream:20260905222211:2:590fc4`
+*05.09. 22:22 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of resolving via ZOETRON_DATA and sys.argv[1] environment contract.
+
+### `dream:20260905222211:1:362dbe`
+*05.09. 22:22 UTC · Quelle: dream*
+
+Primary model rate limiting (429) requires automatic fallback with latency budgeting to avoid pipeline stalls.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler halbieren
 :2`

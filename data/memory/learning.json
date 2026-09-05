@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 21:54:04",
+ "stand": "2026-09-05 22:22:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,6 +16,12 @@
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -46,12 +52,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
