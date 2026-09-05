@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11943 Fakten** · Stand 2026-09-05 17:05 UTC · aktualisiert bei jedem Herzschlag
+**11948 Fakten** · Stand 2026-09-05 17:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6893
+- **dream:** 6898
 - **swarm_artifact:** 2351
 - **last_swarm_critique:** 778
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905171401:5:ff4234`
+*05.09. 17:14 UTC · Quelle: dream*
+
+System stress hits 1.0 (conserve mode) during multi-model fallback cascades, starving concurrent tasks of budget.
+
+### `dream:20260905171401:4:00b08f`
+*05.09. 17:14 UTC · Quelle: dream*
+
+Four swarm tasks remain stale because no forced-completion or reaper mechanism exists to close or escalate aged work.
+
+### `dream:20260905171401:3:ecfb0b`
+*05.09. 17:14 UTC · Quelle: dream*
+
+The simulation→revision→apply loop works correctly (5 risks → 5 revisions → applied), proving the verification gate is functional when invoked.
+
+### `dream:20260905171401:2:4ff604`
+*05.09. 17:14 UTC · Quelle: dream*
+
+Hand actions consistently fail to resolve real data paths (ZOETRON_DATA/sys.argv[1]), indicating a path-resolution bug in the execution sandbox.
+
+### `dream:20260905171401:1:a3774a`
+*05.09. 17:14 UTC · Quelle: dream*
+
+The primary model (glm-5.2) fails 100% of the time with rate-limiting errors, making fallback chains mandatory rather than optional.
 
 ### `dream:20260905170257:5:e6732a`
 *05.09. 17:02 UTC · Quelle: dream*

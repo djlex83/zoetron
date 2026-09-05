@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:03 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- System stress hits 1.0 (conserve mode) during multi-model fallback cascades, starving concurrent tasks of budget.
+- Four swarm tasks remain stale because no forced-completion or reaper mechanism exists to close or escalate aged work.
+- The simulation→revision→apply loop works correctly (5 risks → 5 revisions → applied), proving the verification gate is functional when invoked.
+- Hand actions consistently fail to resolve real data paths (ZOETRON_DATA/sys.argv[1]), indicating a path-resolution bug in the execution sandbox.
+- The primary model (glm-5.2) fails 100% of the time with rate-limiting errors, making fallback chains mandatory rather than optional.
 - The dream cycle itself generated five unimplemented skill proposals, revealing a meta-learning loop that proposes but does not execute.
 - Three drive goals—model reliability, stale criticism loop, stalled learning—share a root cause: cascading model failures starve the system of compute.
 - Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency success (3.6 s), marking it as the sole dependable fallback.
@@ -51,11 +56,6 @@
 - High stress metabolism state correctly triggers a conservative budget, limiting tasks and iterations to prevent resource exhaustion.
 - The model `inclusionai/ling-3.0-flash-fin:free` demonstrates the most consistent availability and low latency compared to other free models.
 - Free-tier models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads.
-- Convergence declarations lack statistical rigor, risking premature termination or infinite runs without a minimum-cycle plus stability-metric gate.
-- Swarm outputs and strategies decay unused because no automated bridge detects and integrates them into active pipelines.
-- Proposed skills accumulate faster than implementation capacity, creating a backlog where high-value routing and health-check capabilities remain undep
-- Upstream overload errors (502) from major providers like Nvidia indicate single-provider dependency creates systemic fragility even when rate limits a
-- Rate limits (429) cascade across multiple free-tier providers simultaneously, making reactive fallback insufficient without predictive quota tracking.
 
 ---
 
