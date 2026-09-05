@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8366 Neuronen · 733861 bewertete Synapsen
+Stand: 8372 Neuronen · 734788 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,18 +12,18 @@ Stand: 8366 Neuronen · 733861 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 763 | 0.24 |
 | 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 792 | 0.23 |
-| 3 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 671 | 0.26 |
+| 3 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 672 | 0.26 |
 | 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 716 | 0.24 |
 | 5 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 717 | 0.24 |
 | 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 652 | 0.25 |
 | 7 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 648 | 0.25 |
-| 8 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 717 | 0.23 |
+| 8 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 718 | 0.23 |
 | 9 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 696 | 0.23 |
-| 10 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 629 | 0.26 |
+| 10 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 630 | 0.26 |
 | 11 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 698 | 0.23 |
-| 12 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 711 | 0.22 |
-| 13 | 💭 | Repeated 429 errors across four different models indicate system… | 651 | 0.25 |
-| 14 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 667 | 0.24 |
+| 12 | 💭 | Repeated 429 errors across four different models indicate system… | 653 | 0.25 |
+| 13 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 711 | 0.22 |
+| 14 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 668 | 0.24 |
 | 15 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 627 | 0.25 |
 
 ## Die 15 stärksten Synapsen
