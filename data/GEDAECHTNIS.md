@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11602 Fakten** · Stand 2026-09-05 00:10 UTC · aktualisiert bei jedem Herzschlag
+**11593 Fakten** · Stand 2026-09-05 00:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6559
-- **swarm_artifact:** 2384
+- **dream:** 6564
+- **swarm_artifact:** 2372
 - **last_swarm_critique:** 761
 - **anti_pattern:** 673
 - **last_swarm_goal:** 509
-- **strategy:** 352
+- **strategy:** 350
 - **tool:** 152
 - **hand_result:** 125
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905005617:5:b0dea7`
+*05.09. 00:56 UTC · Quelle: dream*
+
+Self-diagnosis reporting zero organ errors while operational failures persist indicates the root cause lies in execution policy, not in system architecture.
+
+### `dream:20260905005617:4:e466d3`
+*05.09. 00:56 UTC · Quelle: dream*
+
+Even successful models exhibit wide latency variance (7s to 19.8s), meaning a successful response does not guarantee performance within acceptable time budgets.
+
+### `dream:20260905005617:3:b7bb2d`
+*05.09. 00:56 UTC · Quelle: dream*
+
+Reflex-driven cleanup operations succeed reliably when triggered, demonstrating that automated maintenance beats manual intervention for managing stale swarm tasks.
+
+### `dream:20260905005617:2:d03255`
+*05.09. 00:56 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are evaluated and integrated, creating a growing gap between suggested improvements and actual deployed capability.
+
+### `dream:20260905005617:1:060a82`
+*05.09. 00:56 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors from a single model reveal the absence of rate-limit awareness and automatic failover, making this the system's most persistent and recurring failure mode.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Aufgaben au:2`
 *05.09. 00:07 UTC · Quelle: evolution*
