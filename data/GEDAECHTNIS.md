@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12007 Fakten** · Stand 2026-09-05 19:45 UTC · aktualisiert bei jedem Herzschlag
+**12011 Fakten** · Stand 2026-09-05 19:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6943
-- **swarm_artifact:** 2356
+- **dream:** 6948
+- **swarm_artifact:** 2355
 - **last_swarm_critique:** 781
 - **anti_pattern:** 677
 - **last_swarm_goal:** 529
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905195342:5:802238`
+*05.09. 19:53 UTC · Quelle: dream*
+
+The reflex tool vorgeschlagene-fähigkeiten-prüfen-und-ba.py failed immediately, suggesting capability-checking procedures need validation before reliance.
+
+### `dream:20260905195342:4:70a74b`
+*05.09. 19:53 UTC · Quelle: dream*
+
+The simulation verdict was 'revise' with 5 risks and 5 revisions, revealing that the initial plan lacked sufficient robustness for the given constraints.
+
+### `dream:20260905195342:3:e65814`
+*05.09. 19:53 UTC · Quelle: dream*
+
+The system operated under maximum stress (stress=1.0) with a severely constrained budget (max 3 tasks, max 1 iteration), which amplified every failure and prevented recovery.
+
+### `dream:20260905195342:2:99c8f5`
+*05.09. 19:53 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model failed consistently with 429 errors across every retry attempt, making it an unreliable choice under any load condition.
+
+### `dream:20260905195342:1:3d0c04`
+*05.09. 19:53 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) was the dominant failure mode, affecting nearly all models except inclusionai/ling-3.0-flash-fin, indicating a need for rate-limit-aware model selection.
 
 ### `dream:20260905194315:5:6c422a`
 *05.09. 19:43 UTC · Quelle: dream*

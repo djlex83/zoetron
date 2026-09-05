@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 19:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 19:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex tool vorgeschlagene-fähigkeiten-prüfen-und-ba.py failed immediately, suggesting capability-checking procedures need validation before relia
+- The simulation verdict was 'revise' with 5 risks and 5 revisions, revealing that the initial plan lacked sufficient robustness for the given constrain
+- The system operated under maximum stress (stress=1.0) with a severely constrained budget (max 3 tasks, max 1 iteration), which amplified every failure
+- The z-ai/glm-5.2 model failed consistently with 429 errors across every retry attempt, making it an unreliable choice under any load condition.
+- Rate limiting (HTTP 429) was the dominant failure mode, affecting nearly all models except inclusionai/ling-3.0-flash-fin, indicating a need for rate-
 - Pruning removed 41 events but 0 facts, suggesting episodic memory is bloated while semantic knowledge stays sparse – consolidation should prioritize f
 - Metabolism stress at 1.0 with 'conserve' budget indicates resource exhaustion coincides with model cascade failures, creating a death spiral.
 - The system generates high-quality skill proposals but lacks an automated validation-to-deployment pipeline, leaving critical reliability fixes in prop
@@ -51,11 +56,6 @@
 - Large models (550B) incur 40-60x higher latency than small flash models - reserve them only for tasks where complexity justifies the cost
 - When one model hits 429, others on the same platform often fail simultaneously, indicating provider-wide rate limiting rather than per-model throttlin
 - Free-tier OpenRouter models experience cascading 429/502 failures during congestion - always maintain fallback chains with 3+ models from different pr
-- Automated reflexes (cleanup, prune, self-diagnose) converge reliably and should be the template for promoting high-frequency manual tasks.
-- Drive goals repeat similar themes (error reduction, proposal conversion, pipeline repair) without measurable convergence criteria, causing perpetual r
-- Skill proposals accumulate faster than validation, creating a backlog of untested ideas that clutters the capability surface.
-- Fallback models succeed but exhibit bimodal latency (7s vs 72s), indicating cold-start or queueing effects that violate latency SLAs.
-- Rate-limit errors (429) on primary models cascade into high-latency fallbacks, making quota exhaustion the dominant reliability risk.
 
 ---
 
