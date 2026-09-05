@@ -1,21 +1,56 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11931 Fakten** · Stand 2026-09-05 16:32 UTC · aktualisiert bei jedem Herzschlag
+**11945 Fakten** · Stand 2026-09-05 16:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6883
-- **swarm_artifact:** 2349
-- **last_swarm_critique:** 777
+- **dream:** 6888
+- **swarm_artifact:** 2355
+- **last_swarm_critique:** 778
 - **anti_pattern:** 679
-- **last_swarm_goal:** 525
+- **last_swarm_goal:** 526
 - **strategy:** 341
 - **tool:** 161
-- **hand_result:** 129
+- **hand_result:** 130
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `last_swarm_critique`
+*05.09. 16:52 UTC · Quelle: critic*
+
+score=9; issues=Orchestrator simuliert Task-Ausführung statt echte Sub-Schritte auszuführen (Design-Entscheidung, kein Bug); Validierung im Fallback-Modus nur demonstrativ - erfordert echtes ZOETRON_DATA für produktive Nutzung
+
+### `last_swarm_goal`
+*05.09. 16:45 UTC · Quelle: system*
+
+Alte Schwarm-Aufgaben fertigstellen
+
+### `dream:20260905164456:5:46343c`
+*05.09. 16:44 UTC · Quelle: dream*
+
+Simulations aimed at improving model reliability successfully identified and applied revisions to mitigate risks.
+
+### `dream:20260905164456:4:543f3e`
+*05.09. 16:44 UTC · Quelle: dream*
+
+The model `nvidia/nemotron-3-ultra-550b-a55b:free` suffers from intermittent 502 errors and high latency (over 100s) when it does succeed.
+
+### `dream:20260905164456:3:b28e0f`
+*05.09. 16:44 UTC · Quelle: dream*
+
+High stress metabolism state correctly triggers a conservative budget, limiting tasks and iterations to prevent resource exhaustion.
+
+### `dream:20260905164456:2:6ba3c0`
+*05.09. 16:44 UTC · Quelle: dream*
+
+The model `inclusionai/ling-3.0-flash-fin:free` demonstrates the most consistent availability and low latency compared to other free models.
+
+### `dream:20260905164456:1:40ad81`
+*05.09. 16:44 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads.
 
 ### `tool:fähigkeits-vorschläge-verbessern`
 *05.09. 16:30 UTC · Quelle: hands*
