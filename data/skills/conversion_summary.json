@@ -1,0 +1,19 @@
+{
+  "converted_at": "2026-09-05T11:59:13.865559",
+  "total_skills": 1,
+  "by_priority": {
+    "P1": 1
+  },
+  "by_status": {
+    "draft": 1
+  },
+  "skills": [
+    {
+      "id": "skill_auto_summarize",
+      "name": "Auto Summarize",
+      "priority": "P1",
+      "composite_score": 7.7,
+      "artifact": "/workspace/zoetron/data/skills/skill_auto_summarize_v1.0.0.json"
+    }
+  ]
+}

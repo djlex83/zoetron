@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11837 Fakten** · Stand 2026-09-05 11:46 UTC · aktualisiert bei jedem Herzschlag
+**11850 Fakten** · Stand 2026-09-05 12:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6793
-- **swarm_artifact:** 2350
-- **last_swarm_critique:** 771
-- **anti_pattern:** 687
-- **last_swarm_goal:** 519
-- **strategy:** 345
-- **tool:** 156
+- **dream:** 6798
+- **swarm_artifact:** 2352
+- **last_swarm_critique:** 772
+- **anti_pattern:** 689
+- **last_swarm_goal:** 520
+- **strategy:** 346
+- **tool:** 157
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,56 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:fähigkeits-vorschläge-in-echte-skills-um`
+*05.09. 11:59 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Vorschläge in echte Skills umwandeln'. Datei: data/tools/fähigkeits-vorschläge-in-echte-skills-um.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeits-Vorschläge in:2`
+*05.09. 11:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.0): Geschlossener Validierungs- und Test-Feedback-Loop - Baue eine echte Closed-Loop-Validierung ein, in der Testausführung und Validierung nicht nur simuliert, sondern tatsächlich durchgeführt werden. Nach der Konvertierung ei
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeits-Vorschläge in:1`
+*05.09. 11:58 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.3): Abhängigkeitsgewichtete Priorisierungsgraph-Analyse - Ersetze die rudimentäre Tag-Heuristik mit festen Defaults (5.0) durch einen dynamischen Abhängigkeitsgraphen, der Prioritäten aus tatsächlichen Zusammenhängen ableitet. 
+
+### `last_swarm_critique`
+*05.09. 11:57 UTC · Quelle: critic*
+
+score=7; issues=Technical Spike, Validation Tests und Migration Steps sind weitgehend templatisiert (String-Interpolation) statt aus Vorschlagsinhalt abgeleitet - Conversion ist strukturell korrekt, aber nicht inhaltlich adaptiv; Priorisierung basiert auf rudi
+
+### `last_swarm_goal`
+*05.09. 11:54 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge in echte Skills umwandeln
+
+### `dream:20260905115426:5:91984a`
+*05.09. 11:54 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports zero organ errors, suggesting either healthy operation or insufficient instrumentation to detect latent degradation.
+
+### `dream:20260905115426:4:d4ebd7`
+*05.09. 11:54 UTC · Quelle: dream*
+
+Pruning runs (41–80 events per cycle) indicate high churn; without retention rules, valuable patterns may be discarded alongside noise.
+
+### `dream:20260905115426:3:90c35d`
+*05.09. 11:54 UTC · Quelle: dream*
+
+Reflex tools (alte-schwarm-ergebnisse-aufräumen.py, modellfehler-reduzieren-fuer-zuverlaessi.py) succeed when goals map to single, deterministic scripts but fail for open-ended objectives.
+
+### `dream:20260905115426:2:70cb2c`
+*05.09. 11:54 UTC · Quelle: dream*
+
+Stale swarm tasks and unconverted skill proposals accumulate because no aging policy or completion pipeline exists to force closure or deletion.
+
+### `dream:20260905115426:1:403d10`
+*05.09. 11:54 UTC · Quelle: dream*
+
+Primary model z-ai/glm-5.2:free repeatedly hits 429 rate limits, causing cascading failures until fallback to nvidia/nemotron-3-ultra activates.
 
 ### `dream:20260905114326:5:ffff1f`
 *05.09. 11:43 UTC · Quelle: dream*

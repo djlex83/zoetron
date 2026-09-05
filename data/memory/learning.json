@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 11:44:03",
+ "stand": "2026-09-05 11:59:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -121,12 +121,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-in-taten-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
@@ -381,23 +375,35 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-in-taten-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "wissensgraph-verknüpfungen-reparieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.751,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.759,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 30,
   "best": 9.0,
-  "schnitt": 6.37
+  "schnitt": 6.33
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 29,
-   "schnitt": 6.28
+   "schnitt": 6.24
   },
   "bau": {
    "n": 1,

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 11:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 11:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,16 +31,21 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 2×)*
 - Fähigkeiten wirklich ausprobieren statt nur planen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
+- Modell-Fehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
+- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis consistently reports zero organ errors, suggesting either healthy operation or insufficient instrumentation to detect latent degradatio
+- Pruning runs (41–80 events per cycle) indicate high churn; without retention rules, valuable patterns may be discarded alongside noise.
+- Reflex tools (alte-schwarm-ergebnisse-aufräumen.py, modellfehler-reduzieren-fuer-zuverlaessi.py) succeed when goals map to single, deterministic scrip
+- Stale swarm tasks and unconverted skill proposals accumulate because no aging policy or completion pipeline exists to force closure or deletion.
+- Primary model z-ai/glm-5.2:free repeatedly hits 429 rate limits, causing cascading failures until fallback to nvidia/nemotron-3-ultra activates.
 - Pruning removes events but rarely facts, indicating fact-store bloat from unverified or obsolete knowledge.
 - Model health is not tracked per-provider, so the planner cannot dynamically prefer healthy, low-latency models.
 - Reflex-driven cleanup (alte-schwarm-ergebnisse-aufräumen.py) converges reliably when given a concrete, bounded goal.
@@ -51,11 +56,6 @@
 - The system successfully uses reflex actions to implement proposed skills, showing a working self-improvement loop.
 - High latency (~20s) on `nvidia/nemotron-3-ultra-550b-a55b:free` indicates a need for latency-aware routing or fallback models.
 - The model `z-ai/glm-5.2:free` is chronically rate-limited (429 errors) and should be temporarily disabled or deprioritized.
-- Only inclusionai/ling-3.0-flash-fin:free succeeded (3.3s latency), proving health-aware routing can bypass systemic free-tier unreliability.
-- Aggressive event pruning (83 events per run) erases the failure-signature history required for predictive cooldown scheduling.
-- Swarm tasks consistently fail to converge (score 1, converged=false) due to missing critic-to-builder feedback loops for stale work items.
-- The 1800-second circuit-breaker lockout after three consecutive errors is too blunt, discarding potentially recovered capacity and lacking graded degr
-- Free-tier models exhibit systemic 429/502 failure patterns rather than transient errors, making reactive fallback insufficient for reliable operation.
 
 ---
 
