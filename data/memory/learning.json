@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 10:46:33",
+ "stand": "2026-09-05 10:56:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -153,6 +153,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -250,12 +256,6 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -381,8 +381,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.745,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.747,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 30,
   "best": 9.0,

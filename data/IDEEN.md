@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 10:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 10:56 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 2×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 2×)*
+- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution runs with critic-guided variant generation can recover from 1/10 to 9/9/9 when the critic explicitly identifies the missing executable code 
+- Calibration systematically overestimates completion for code-dependent tasks (predicted 4 vs actual 1); predicted scores for such tasks should be halv
+- Models accumulating 3 consecutive failures should be auto-blocked for 30 minutes to prevent wasting cycles on a known-bad endpoint.
+- Swarm tasks that require executable Python blocks fail when models output prose only; a hard validator must reject any artifact lacking a runnable cod
+- Free-tier OpenRouter models are chronically rate-limited (429) and upstream-overloaded (502); a pool of 3+ fallback models with automatic failover is 
 - Metabolism conserve mode (max_tasks=3, max_iterations=1) prevents retry depth needed to overcome transient provider errors.
 - Execution fails when planner emits only prose instead of executable code blocks; a code-block validator gate is missing.
 - Nemotron-3-ultra exhibits extreme latency variance (5.7s to 87.6s) and 502 upstream errors, violating SLA assumptions.
@@ -51,11 +56,6 @@
 - Retrying rate-limited models without provider-aware exponential backoff wastes the limited task budget and accelerates stress-induced conserve mode.
 - Latency variance exceeding 20x (3.5s to 87.6s) on the same model indicates noisy-neighbor queueing effects, not model capability differences.
 - Free-tier models on OpenRouter share a provider-level rate limit quota, causing correlated 429 failures across all :free models simultaneously.
-- Self-diagnosis reports zero organ errors while model failures and proposal stagnation persist, showing diagnostic blind spots for systemic degradation
-- Reflex tools (vorgeschlagene-fähigkeiten-echt-umsetzen.py, alte-träume-mit-wissen-verbinden) execute successfully but are invoked ad-hoc, not systemat
-- Stale drive goals (swarm plans, proposal-to-execution) recur across cycles, indicating no mechanism to promote stale signals into concrete work packag
-- Skill proposals accumulate (5+ in this log) but execution gap persists: proposals like artifact validator and model monitor are re-proposed instead of
-- Rate-limited models (429 errors) repeatedly fail but fallback to nemotron succeeds, revealing a reactive-only routing strategy without proactive healt
 
 ---
 

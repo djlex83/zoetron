@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11836 Fakten** · Stand 2026-09-05 10:48 UTC · aktualisiert bei jedem Herzschlag
+**11838 Fakten** · Stand 2026-09-05 10:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6773
-- **swarm_artifact:** 2370
+- **dream:** 6778
+- **swarm_artifact:** 2367
 - **last_swarm_critique:** 770
 - **anti_pattern:** 685
 - **last_swarm_goal:** 518
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905105616:5:057407`
+*05.09. 10:56 UTC · Quelle: dream*
+
+Evolution runs with critic-guided variant generation can recover from 1/10 to 9/9/9 when the critic explicitly identifies the missing executable code as the failure cause.
+
+### `dream:20260905105616:4:beac1a`
+*05.09. 10:56 UTC · Quelle: dream*
+
+Calibration systematically overestimates completion for code-dependent tasks (predicted 4 vs actual 1); predicted scores for such tasks should be halved.
+
+### `dream:20260905105616:3:3c44b8`
+*05.09. 10:56 UTC · Quelle: dream*
+
+Models accumulating 3 consecutive failures should be auto-blocked for 30 minutes to prevent wasting cycles on a known-bad endpoint.
+
+### `dream:20260905105616:2:5d0ad6`
+*05.09. 10:56 UTC · Quelle: dream*
+
+Swarm tasks that require executable Python blocks fail when models output prose only; a hard validator must reject any artifact lacking a runnable code block before scoring.
+
+### `dream:20260905105616:1:5ddb31`
+*05.09. 10:56 UTC · Quelle: dream*
+
+Free-tier OpenRouter models are chronically rate-limited (429) and upstream-overloaded (502); a pool of 3+ fallback models with automatic failover is mandatory for reliability.
 
 ### `dream:20260905104602:5:415459`
 *05.09. 10:46 UTC · Quelle: dream*
