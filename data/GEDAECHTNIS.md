@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11914 Fakten** · Stand 2026-09-05 16:09 UTC · aktualisiert bei jedem Herzschlag
+**11931 Fakten** · Stand 2026-09-05 16:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6878
-- **swarm_artifact:** 2343
-- **last_swarm_critique:** 776
-- **anti_pattern:** 677
-- **last_swarm_goal:** 524
-- **strategy:** 340
-- **tool:** 160
+- **dream:** 6883
+- **swarm_artifact:** 2349
+- **last_swarm_critique:** 777
+- **anti_pattern:** 679
+- **last_swarm_goal:** 525
+- **strategy:** 341
+- **tool:** 161
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,56 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:fähigkeits-vorschläge-verbessern`
+*05.09. 16:30 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Vorschläge verbessern'. Datei: data/tools/fähigkeits-vorschläge-verbessern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeits-Vorschläge ve:2`
+*05.09. 16:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Schema-First Synthesis with Constraint Solving - Define a strict JSON Schema for capabilities (required fields: id, name, trigger, input_contract, output_contract, success_metric, test_case, owner, dependencies, sla). Parse e
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeits-Vorschläge ve:1`
+*05.09. 16:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Embedding-Driven Semantic Enrichment - Use a local sentence-transformer model (e.g., all-MiniLM-L6-v2) to embed all existing suggestions and a curated seed corpus of high-quality capabilities. For each input suggestion: (1) R
+
+### `last_swarm_critique`
+*05.09. 16:25 UTC · Quelle: critic*
+
+score=5; issues=Goal mismatch: artifacts only audit/validate/prioritize suggestions but do not *improve* them (no refinement loop, no suggestion rewriting, no feedback to source); Validator and Gap Analysis depend on external classes (SemanticMemory, Knowledge
+
+### `last_swarm_goal`
+*05.09. 16:18 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge verbessern
+
+### `dream:20260905161822:5:a8af1d`
+*05.09. 16:18 UTC · Quelle: dream*
+
+Convergence declarations lack statistical rigor, risking premature termination or infinite runs without a minimum-cycle plus stability-metric gate.
+
+### `dream:20260905161822:4:a7b00c`
+*05.09. 16:18 UTC · Quelle: dream*
+
+Swarm outputs and strategies decay unused because no automated bridge detects and integrates them into active pipelines.
+
+### `dream:20260905161822:3:5793e4`
+*05.09. 16:18 UTC · Quelle: dream*
+
+Proposed skills accumulate faster than implementation capacity, creating a backlog where high-value routing and health-check capabilities remain undeployed.
+
+### `dream:20260905161822:2:005e17`
+*05.09. 16:18 UTC · Quelle: dream*
+
+Upstream overload errors (502) from major providers like Nvidia indicate single-provider dependency creates systemic fragility even when rate limits are respected.
+
+### `dream:20260905161822:1:bdcc38`
+*05.09. 16:18 UTC · Quelle: dream*
+
+Rate limits (429) cascade across multiple free-tier providers simultaneously, making reactive fallback insufficient without predictive quota tracking.
 
 ### `dream:20260905160728:5:bd9b1a`
 *05.09. 16:07 UTC · Quelle: dream*

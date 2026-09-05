@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-05 16:07:52",
+ "stand": "2026-09-05 16:30:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -57,6 +51,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 4,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -81,10 +81,10 @@
    "quote": 0.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
@@ -109,12 +109,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -297,6 +291,12 @@
    "quote": 0.0
   },
   {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -399,17 +399,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.757,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.752,
+ "simulationen_angewandt": 27,
  "swarm_scores": {
-  "n": 31,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 6.35
+  "schnitt": 6.31
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 6.27
+   "n": 31,
+   "schnitt": 6.23
   },
   "bau": {
    "n": 1,

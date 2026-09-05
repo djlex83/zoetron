@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 16:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 16:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
 - Veraltete Grenzgebiete und Schwarm-Ergebnisse aktualisieren *(wieder aufgegriffen: 2×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence declarations lack statistical rigor, risking premature termination or infinite runs without a minimum-cycle plus stability-metric gate.
+- Swarm outputs and strategies decay unused because no automated bridge detects and integrates them into active pipelines.
+- Proposed skills accumulate faster than implementation capacity, creating a backlog where high-value routing and health-check capabilities remain undep
+- Upstream overload errors (502) from major providers like Nvidia indicate single-provider dependency creates systemic fragility even when rate limits a
+- Rate limits (429) cascade across multiple free-tier providers simultaneously, making reactive fallback insufficient without predictive quota tracking.
 - Pruning removes facts/events but does not address the root cause of repeated model failures accumulating in logs.
 - Self-diagnosis reports zero organ errors while model failures persist, indicating diagnostic coverage misses external dependency failures.
 - Previously proposed skills (router, integration gate, tracker, validator, calibrator) remain unimplemented despite identified needs, creating a propos
@@ -51,11 +56,6 @@
 - Calibration error of 7 points (predicted 2 vs actual 9) reveals systematic underestimation of swarm convergence speed.
 - Latency variance (7s–36s) across free tiers makes static timeouts dangerous; adaptive deadlines per model are essential.
 - Model provider APIs exhibit bursty 429/502 failures requiring circuit-breaker and fallback chains rather than single-model reliance.
-- Stale swarm results persist because no automated pipeline promotes validated outputs to production skills.
-- High stress (1.0) with conserve mode prevents parallel model trials that could reduce latency.
-- Previous swarm reactivation scored 4/10 because simulation revisions addressed symptoms not root causes.
-- The fallback chain succeeds only after 5+ consecutive failures, wasting 200+ seconds per request cycle.
-- Rate limiting (429) across multiple providers indicates systemic quota exhaustion, not isolated model failure.
 
 ---
 

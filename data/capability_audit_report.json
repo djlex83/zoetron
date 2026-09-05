@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "total": 0,
+    "actionable": 0,
+    "raw": 0
+  },
+  "suggestions": [],
+  "rubric": {
+    "clear_trigger": 0.25,
+    "defined_io": 0.25,
+    "measurable_metric": 0.25,
+    "test_case": 0.25
+  },
+  "threshold": 0.6
+}
