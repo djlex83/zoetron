@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11719 Fakten** · Stand 2026-09-05 05:50 UTC · aktualisiert bei jedem Herzschlag
+**11720 Fakten** · Stand 2026-09-05 06:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6679
-- **swarm_artifact:** 2370
+- **dream:** 6684
+- **swarm_artifact:** 2366
 - **last_swarm_critique:** 765
 - **anti_pattern:** 677
 - **last_swarm_goal:** 513
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905055848:5:166498`
+*05.09. 05:58 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers aggressive conservation that starves consolidation tasks by limiting max_tasks to 3.
+
+### `dream:20260905055848:4:2f5357`
+*05.09. 05:58 UTC · Quelle: dream*
+
+File system operations fail when code assumes absolute paths but receives relative paths via sys.argv/environment variables.
+
+### `dream:20260905055848:3:693307`
+*05.09. 05:58 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution because no automated pipeline bridges proposal to deployment.
+
+### `dream:20260905055848:2:660a10`
+*05.09. 05:58 UTC · Quelle: dream*
+
+Fallback models succeed but introduce 14-23s latency penalties that must be budgeted in metabolic planning.
+
+### `dream:20260905055848:1:3516d2`
+*05.09. 05:58 UTC · Quelle: dream*
+
+Rate-limited models require proactive token-bucket throttling rather than reactive failover after 429 errors.
 
 ### `dream:20260905054827:5:8e20a7`
 *05.09. 05:48 UTC · Quelle: dream*
