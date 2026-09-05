@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:14 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of artifact quality.
+- Critic detected goal mismatch: evolution produced audit artifacts instead of actual skill-improvement code.
+- Simulation-based pre-flight (5 risks caught, 5 revisions applied) prevented deployment of flawed artifacts.
+- nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (28s–168s) but remains the most reliable primary model.
+- Model z-ai/glm-5.2:free is unusable due to persistent 429 rate limiting across 7+ consecutive attempts.
 - System stress hits 1.0 (conserve mode) during multi-model fallback cascades, starving concurrent tasks of budget.
 - Four swarm tasks remain stale because no forced-completion or reaper mechanism exists to close or escalate aged work.
 - The simulation→revision→apply loop works correctly (5 risks → 5 revisions → applied), proving the verification gate is functional when invoked.
@@ -51,11 +56,6 @@
 - Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency success (3.6 s), marking it as the sole dependable fallback.
 - Nemotron succeeds but with highly variable latency (17–41 s), indicating unstable upstream capacity that degrades tail latency.
 - Free-tier models consistently hit 429 rate limits under sustained load, making them unreliable without proactive quota management.
-- Simulations aimed at improving model reliability successfully identified and applied revisions to mitigate risks.
-- The model `nvidia/nemotron-3-ultra-550b-a55b:free` suffers from intermittent 502 errors and high latency (over 100s) when it does succeed.
-- High stress metabolism state correctly triggers a conservative budget, limiting tasks and iterations to prevent resource exhaustion.
-- The model `inclusionai/ling-3.0-flash-fin:free` demonstrates the most consistent availability and low latency compared to other free models.
-- Free-tier models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads.
 
 ---
 

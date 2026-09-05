@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11948 Fakten** · Stand 2026-09-05 17:16 UTC · aktualisiert bei jedem Herzschlag
+**11945 Fakten** · Stand 2026-09-05 17:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6898
-- **swarm_artifact:** 2351
+- **dream:** 6903
+- **swarm_artifact:** 2346
 - **last_swarm_critique:** 778
-- **anti_pattern:** 677
+- **anti_pattern:** 675
 - **last_swarm_goal:** 526
-- **strategy:** 340
+- **strategy:** 339
 - **tool:** 161
 - **hand_result:** 130
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905172516:5:01a037`
+*05.09. 17:25 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of artifact quality.
+
+### `dream:20260905172516:4:70c14b`
+*05.09. 17:25 UTC · Quelle: dream*
+
+Critic detected goal mismatch: evolution produced audit artifacts instead of actual skill-improvement code.
+
+### `dream:20260905172516:3:89e614`
+*05.09. 17:25 UTC · Quelle: dream*
+
+Simulation-based pre-flight (5 risks caught, 5 revisions applied) prevented deployment of flawed artifacts.
+
+### `dream:20260905172516:2:77603c`
+*05.09. 17:25 UTC · Quelle: dream*
+
+nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (28s–168s) but remains the most reliable primary model.
+
+### `dream:20260905172516:1:ea7ba9`
+*05.09. 17:25 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free is unusable due to persistent 429 rate limiting across 7+ consecutive attempts.
 
 ### `dream:20260905171401:5:ff4234`
 *05.09. 17:14 UTC · Quelle: dream*
@@ -45604,13 +45629,3 @@ ABGELEHNT von Evolution (Score 8): Contract testing & simulation sandbox - Intro
 *22.08. 17:48 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 7): Defensive programming & explicit error handling - Revise the revision‑limit and role‑distribution scripts to validate inputs before use: replace the incorrect MAX_REVISIONS keyword with the correct max_allowed parameter, add
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fehlermuster aus Schwarm:2`
-*22.08. 17:23 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Refactor RoleManager.assign into a dependency‑injected factory with explicit err - Replace the opaque `RoleManager.assign` call with a `RoleFactory` interface that produces role objects given a typed configuration. The factor
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fehlermuster aus Schwarm:1`
-*22.08. 17:23 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Introduce a centralized normalization layer before plugin dispatch - Add a `DreamNormalizer` component that receives raw log lines, extracts a common structure (timestamp, raw message, severity level), and augments missing fi
