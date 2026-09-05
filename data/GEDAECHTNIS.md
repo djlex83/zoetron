@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11971 Fakten** · Stand 2026-09-05 18:44 UTC · aktualisiert bei jedem Herzschlag
+**11988 Fakten** · Stand 2026-09-05 19:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6928
-- **swarm_artifact:** 2344
-- **last_swarm_critique:** 779
-- **anti_pattern:** 675
-- **last_swarm_goal:** 527
-- **strategy:** 339
-- **tool:** 162
+- **dream:** 6933
+- **swarm_artifact:** 2350
+- **last_swarm_critique:** 780
+- **anti_pattern:** 677
+- **last_swarm_goal:** 528
+- **strategy:** 340
+- **tool:** 163
 - **hand_result:** 130
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,56 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:traum-fähigkeiten-prüfen-und-nutzen`
+*05.09. 18:59 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Traum-Fähigkeiten prüfen und nutzen'. Datei: data/tools/traum-fähigkeiten-prüfen-und-nutzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Traum-Fähigkeiten prüfen:2`
+*05.09. 18:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Declarative Schema-Driven Discovery - Abilities defined in external YAML files (one per ability) with fields: id, name, interface_version, entry_point, input_schema, output_schema, measurement_criteria, tags. Loader reads all
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Traum-Fähigkeiten prüfen:0`
+*05.09. 18:57 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Contract-First with Runtime Validation - Define a strict AbilityProtocol (abstract base class) with required methods: get_name(), get_parameters(), execute(), validate_result(). All discovered abilities must inherit this prot
+
+### `last_swarm_critique`
+*05.09. 18:57 UTC · Quelle: critic*
+
+score=6; issues=Registry wird erstellt aber nicht mit den entdeckten Fähigkeiten befüllt - nur Template; Messlogik spekulativ: probiert Parameternamen ('name', 'faehigkeit', 'bezeichnung') in der Hoffnung auf Match statt definierter Schnittstelle; Suchbegriffe
+
+### `last_swarm_goal`
+*05.09. 18:52 UTC · Quelle: system*
+
+Traum-Fähigkeiten prüfen und nutzen
+
+### `dream:20260905185223:5:4cca87`
+*05.09. 18:52 UTC · Quelle: dream*
+
+Automated reflexes (cleanup, prune, self-diagnose) converge reliably and should be the template for promoting high-frequency manual tasks.
+
+### `dream:20260905185223:4:f68aa8`
+*05.09. 18:52 UTC · Quelle: dream*
+
+Drive goals repeat similar themes (error reduction, proposal conversion, pipeline repair) without measurable convergence criteria, causing perpetual re-planning.
+
+### `dream:20260905185223:3:5f8222`
+*05.09. 18:52 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than validation, creating a backlog of untested ideas that clutters the capability surface.
+
+### `dream:20260905185223:2:0233b7`
+*05.09. 18:52 UTC · Quelle: dream*
+
+Fallback models succeed but exhibit bimodal latency (7s vs 72s), indicating cold-start or queueing effects that violate latency SLAs.
+
+### `dream:20260905185223:1:6f8d01`
+*05.09. 18:52 UTC · Quelle: dream*
+
+Rate-limit errors (429) on primary models cascade into high-latency fallbacks, making quota exhaustion the dominant reliability risk.
 
 ### `dream:20260905184146:5:b42f64`
 *05.09. 18:41 UTC · Quelle: dream*

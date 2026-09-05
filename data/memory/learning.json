@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 18:42:02",
+ "stand": "2026-09-05 18:59:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,16 +9,16 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
@@ -51,10 +51,10 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 4,
+   "quote": 1.0
   },
   {
    "tool": "marktanalyse-endlich-nutzen.py",
@@ -198,18 +198,6 @@
    "tool": "traum-gedächtnis-system-fertigstellen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-bündeln-und-ziele-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "simulationen-gezielt-einsetzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -387,16 +375,16 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.744,
- "simulationen_angewandt": 30,
+ "haende_quote": 0.738,
+ "simulationen_angewandt": 32,
  "swarm_scores": {
-  "n": 33,
+  "n": 34,
   "best": 9.0,
-  "schnitt": 6.36
+  "schnitt": 6.35
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 31,
+   "n": 32,
    "schnitt": 6.19
   },
   "bau": {
