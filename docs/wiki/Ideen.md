@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism-driven budget cuts (max_tasks=3, max_iterations=1) coincide with peak failure rates, creating a death spiral where recovery capacity shrink
+- Cleanup routines fail when they cannot locate artifacts at expected paths, revealing a systemic assumption that workspace state matches logical state.
+- A single reliable model (inclusionai/ling-3.0-flash-fin) consistently succeeds under high stress, proving that provider diversity alone is insufficien
+- Models that exceed consecutive error thresholds receive automatic 30-minute blocks, turning transient overload into prolonged unavailability.
+- Rate limits (429) are the dominant failure mode across all major free-tier providers, making proactive throttling more critical than reactive fallback
 - Pruning (facts/events) occurs regularly but its criteria and impact on consolidation are unmonitored.
 - Successful reflex execution (alte-schwarm-arbeiten-abschließen) shows autonomous tool use works when tools are validated.
 - Rate limit errors (429) are predictable from request frequency but currently trigger only after failure, wasting cycles.
@@ -51,11 +56,6 @@
 - Reflex-driven cleanup operations succeed reliably when triggered, demonstrating that automated maintenance beats manual intervention for managing stal
 - Skill proposals accumulate faster than they are evaluated and integrated, creating a growing gap between suggested improvements and actual deployed ca
 - Repeated 429 rate-limit errors from a single model reveal the absence of rate-limit awareness and automatic failover, making this the system's most pe
-- Calibration showed a systematic underestimation bias (predicted 6 vs actual 8), suggesting that self-assessment models consistently underestimate task
-- Self-diagnosis and pruning mechanisms successfully removed 5 stale facts and 29 events, confirming that automated knowledge hygiene is essential to pr
-- The swarm architecture with planner/builder/critic roles achieved convergence in a single cycle with a score of 8, demonstrating that role-specialized
-- The nvidia/nemotron model exhibits extreme latency variance (8.6s to 126.9s) and occasional upstream 502 errors, making it unreliable as a default wit
-- Rate limiting (429 errors) is the dominant and most persistent failure mode across multiple model providers, indicating systemic API quota constraints
 
 ---
 

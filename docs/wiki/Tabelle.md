@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8135 Neuronen · 659495 bewertete Synapsen
+Stand: 8141 Neuronen · 659874 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,7 +12,7 @@ Stand: 8135 Neuronen · 659495 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 725 | 0.24 |
 | 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 653 | 0.26 |
-| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 727 | 0.23 |
+| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 728 | 0.23 |
 | 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 685 | 0.24 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 696 | 0.23 |
 | 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 621 | 0.25 |
@@ -22,9 +22,9 @@ Stand: 8135 Neuronen · 659495 bewertete Synapsen
 | 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 626 | 0.24 |
 | 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 597 | 0.25 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 557 | 0.27 |
-| 13 | 💭 | Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x … | 596 | 0.25 |
-| 14 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 557 | 0.27 |
-| 15 | 💭 | Repeated 429 errors across four different models indicate system… | 601 | 0.25 |
+| 13 | 💭 | Repeated 429 errors across four different models indicate system… | 602 | 0.25 |
+| 14 | 💭 | Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x … | 596 | 0.25 |
+| 15 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 557 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 

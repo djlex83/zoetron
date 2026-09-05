@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11594 Fakten** · Stand 2026-09-05 01:09 UTC · aktualisiert bei jedem Herzschlag
+**11598 Fakten** · Stand 2026-09-05 01:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6569
+- **dream:** 6574
 - **swarm_artifact:** 2368
 - **last_swarm_critique:** 761
 - **anti_pattern:** 673
 - **last_swarm_goal:** 509
-- **strategy:** 350
+- **strategy:** 349
 - **tool:** 152
 - **hand_result:** 125
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905011742:5:ed716d`
+*05.09. 01:17 UTC · Quelle: dream*
+
+Metabolism-driven budget cuts (max_tasks=3, max_iterations=1) coincide with peak failure rates, creating a death spiral where recovery capacity shrinks as errors rise.
+
+### `dream:20260905011742:4:d47f75`
+*05.09. 01:17 UTC · Quelle: dream*
+
+Cleanup routines fail when they cannot locate artifacts at expected paths, revealing a systemic assumption that workspace state matches logical state.
+
+### `dream:20260905011742:3:5e8f14`
+*05.09. 01:17 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin) consistently succeeds under high stress, proving that provider diversity alone is insufficient without reliability weighting.
+
+### `dream:20260905011742:2:4a918b`
+*05.09. 01:17 UTC · Quelle: dream*
+
+Models that exceed consecutive error thresholds receive automatic 30-minute blocks, turning transient overload into prolonged unavailability.
+
+### `dream:20260905011742:1:2ef3b9`
+*05.09. 01:17 UTC · Quelle: dream*
+
+Rate limits (429) are the dominant failure mode across all major free-tier providers, making proactive throttling more critical than reactive fallback.
 
 ### `dream:20260905010729:5:fb2e9a`
 *05.09. 01:07 UTC · Quelle: dream*
