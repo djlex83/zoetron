@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12002 Fakten** · Stand 2026-09-05 19:31 UTC · aktualisiert bei jedem Herzschlag
+**12007 Fakten** · Stand 2026-09-05 19:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6938
+- **dream:** 6943
 - **swarm_artifact:** 2356
 - **last_swarm_critique:** 781
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905194315:5:6c422a`
+*05.09. 19:43 UTC · Quelle: dream*
+
+Pruning removed 41 events but 0 facts, suggesting episodic memory is bloated while semantic knowledge stays sparse – consolidation should prioritize fact extraction.
+
+### `dream:20260905194315:4:411624`
+*05.09. 19:43 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 with 'conserve' budget indicates resource exhaustion coincides with model cascade failures, creating a death spiral.
+
+### `dream:20260905194315:3:3a42de`
+*05.09. 19:43 UTC · Quelle: dream*
+
+The system generates high-quality skill proposals but lacks an automated validation-to-deployment pipeline, leaving critical reliability fixes in proposal limbo.
+
+### `dream:20260905194315:2:95aec0`
+*05.09. 19:43 UTC · Quelle: dream*
+
+Swarm tools consistently fail on path resolution: they use relative paths instead of resolving ZOETRON_DATA and sys.argv[1] to absolute data directories.
+
+### `dream:20260905194315:1:6dab40`
+*05.09. 19:43 UTC · Quelle: dream*
+
+Model failures are systemic (429/502 across all providers) not transient, yet the proposed router with quota tracking and circuit-breakers remains unimplemented.
 
 ### `tool:traum-fähigkeiten-nutzbar-machen`
 *05.09. 19:29 UTC · Quelle: hands*

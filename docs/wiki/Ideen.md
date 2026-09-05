@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 19:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 19:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 17×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 41 events but 0 facts, suggesting episodic memory is bloated while semantic knowledge stays sparse – consolidation should prioritize f
+- Metabolism stress at 1.0 with 'conserve' budget indicates resource exhaustion coincides with model cascade failures, creating a death spiral.
+- The system generates high-quality skill proposals but lacks an automated validation-to-deployment pipeline, leaving critical reliability fixes in prop
+- Swarm tools consistently fail on path resolution: they use relative paths instead of resolving ZOETRON_DATA and sys.argv[1] to absolute data directori
+- Model failures are systemic (429/502 across all providers) not transient, yet the proposed router with quota tracking and circuit-breakers remains uni
 - Evolution runs can recover from pipeline breaks and improve scores significantly (6→9) even under model instability, confirming the retry-and-refine l
 - The 3-strike blocking mechanism (1800s lockout) can rapidly deplete the available model pool during a congestion event, leaving the system without any
 - Large models (550B) incur 40-60x higher latency than small flash models - reserve them only for tasks where complexity justifies the cost
@@ -51,11 +56,6 @@
 - Skill proposals accumulate faster than validation, creating a backlog of untested ideas that clutters the capability surface.
 - Fallback models succeed but exhibit bimodal latency (7s vs 72s), indicating cold-start or queueing effects that violate latency SLAs.
 - Rate-limit errors (429) on primary models cascade into high-latency fallbacks, making quota exhaustion the dominant reliability risk.
-- CI-pipeline and simulation failures are persistent infrastructure issues that compound model-level errors, requiring dedicated stabilization before mo
-- Skill proposal volume without a filtering mechanism creates a 'gap' drive state—quantity of ideas without selection paralyzes progress.
-- The reliable model (nemotron-3-ultra) succeeds consistently but at 35-37s latency, revealing a fundamental reliability-vs-speed tradeoff that must be 
-- Reflex-mode execution with established tools (e.g., marktanalyse-endlich-abschließen.py) reliably converges tasks, while novel or unproven paths stall
-- Rate-limit errors (429) from the z-ai/glm-5.2 model are the dominant recurring failure cause, cascading into task failures whenever no fallback exists
 
 ---
 
