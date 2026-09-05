@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 08:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 08:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,9 +26,8 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
@@ -36,11 +35,17 @@
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 4×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Faehigkeiten testen und einfuehren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system's own drive goals (failure analysis, skill organization, memory pruning) mirror the consolidation process, confirming functional meta-cogni
+- Event memory accumulates ~30x faster than fact memory (66 vs 2 pruned in latest run), demanding distinct retention policies.
+- Encoded reflexes for known error patterns (e.g., "reduce model errors") converge faster and more reliably than generic planning loops.
+- Static fallback chains fail when the designated backup (nvidia/nemotron) also returns 502 under load; health-aware routing is required.
+- Free-tier model rate limits (429) are the dominant systemic failure mode, not isolated per-model anomalies.
 - Pruning removes only 2 facts per cycle, indicating retention policy is too conservative for long-term memory health.
 - Swarm convergence succeeded via reflex tool execution, proving pre-built procedural skills outperform ad-hoc generation.
 - Multiple independent proposals converge on model routing with rate-limit counters, exponential backoff, and automatic fallback.
@@ -51,11 +56,6 @@
 - Hand actions fail when using relative paths instead of absolute ZOETRON_DATA paths, breaking file I/O despite successful process exit.
 - Stress at 1.0 triggers conserve mode with hard limits (max 3 tasks, 1 iteration) that cause premature termination of swarm and hand actions.
 - Primary models (glm-5.2, gemma) consistently hit 429 rate limits while nvidia/nemotron and inclusionai/ling remain reliable, necessitating automatic f
-- Circuit breakers triggered after a single failure prevent cascading errors more effectively than waiting for multiple consecutive failures to confirm 
-- Stale swarm tasks and event-store accumulation are symptoms of missing automated maintenance triggers, not one-time cleanup problems requiring manual 
-- Latency variability on successful calls (14.7s to 30.9s) means reliability must encompass both success rate and response-time consistency, not just er
-- Fallback chains to reliable models (e.g., nvidia/nemotron-3-ultra-550b-a55b:free) consistently succeed even when primary models fail, making them the 
-- Free-tier models like z-ai/glm-5.2:free exhibit systemic rate-limit failures (repeated 429s) rather than transient errors, indicating that structural 
 
 ---
 

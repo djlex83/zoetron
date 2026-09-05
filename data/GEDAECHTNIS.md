@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11777 Fakten** · Stand 2026-09-05 08:11 UTC · aktualisiert bei jedem Herzschlag
+**11782 Fakten** · Stand 2026-09-05 08:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6728
+- **dream:** 6733
 - **swarm_artifact:** 2368
 - **last_swarm_critique:** 767
 - **anti_pattern:** 681
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905082012:5:31850e`
+*05.09. 08:20 UTC · Quelle: dream*
+
+The system's own drive goals (failure analysis, skill organization, memory pruning) mirror the consolidation process, confirming functional meta-cognitive loops.
+
+### `dream:20260905082012:4:930973`
+*05.09. 08:20 UTC · Quelle: dream*
+
+Event memory accumulates ~30x faster than fact memory (66 vs 2 pruned in latest run), demanding distinct retention policies.
+
+### `dream:20260905082012:3:dce960`
+*05.09. 08:20 UTC · Quelle: dream*
+
+Encoded reflexes for known error patterns (e.g., "reduce model errors") converge faster and more reliably than generic planning loops.
+
+### `dream:20260905082012:2:bcc9d1`
+*05.09. 08:20 UTC · Quelle: dream*
+
+Static fallback chains fail when the designated backup (nvidia/nemotron) also returns 502 under load; health-aware routing is required.
+
+### `dream:20260905082012:1:160857`
+*05.09. 08:20 UTC · Quelle: dream*
+
+Free-tier model rate limits (429) are the dominant systemic failure mode, not isolated per-model anomalies.
 
 ### `dream:20260905080857:5:221914`
 *05.09. 08:08 UTC · Quelle: dream*
