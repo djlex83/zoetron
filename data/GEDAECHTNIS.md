@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11954 Fakten** · Stand 2026-09-05 17:49 UTC · aktualisiert bei jedem Herzschlag
+**11952 Fakten** · Stand 2026-09-05 18:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6913
-- **swarm_artifact:** 2345
+- **dream:** 6918
+- **swarm_artifact:** 2341
 - **last_swarm_critique:** 778
-- **anti_pattern:** 675
+- **anti_pattern:** 673
 - **last_swarm_goal:** 526
-- **strategy:** 339
+- **strategy:** 338
 - **tool:** 161
 - **hand_result:** 130
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905175841:5:fd5bc8`
+*05.09. 17:58 UTC · Quelle: dream*
+
+Pruning (7 facts, 57 events) and self-diagnosis (0 organ errors) ran automatically, confirming maintenance loops operate independently of task success.
+
+### `dream:20260905175841:4:aedbf4`
+*05.09. 17:58 UTC · Quelle: dream*
+
+Fast model (ling-3.0-flash-fin: 4s) succeeded but was not used as primary fallback; latency-aware routing would have avoided 149s nemotron calls.
+
+### `dream:20260905175841:3:54aad9`
+*05.09. 17:58 UTC · Quelle: dream*
+
+Swarm converged in 1 cycle with score 9 despite 4 model failures and 20s hand-action timeout, proving task-level redundancy masks component flakiness.
+
+### `dream:20260905175841:2:98c503`
+*05.09. 17:58 UTC · Quelle: dream*
+
+Calibration predicted 2 cycles but actual was 9 (error 7), showing the estimator does not account for model-failure retries and fallback latency.
+
+### `dream:20260905175841:1:160c96`
+*05.09. 17:58 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate static model selection fails under rate limits; dynamic routing to healthy alternatives (ling-3.0-flash-fin, nemotron) maintains throughput.
 
 ### `dream:20260905174725:5:a403ea`
 *05.09. 17:47 UTC · Quelle: dream*
@@ -45669,13 +45694,3 @@ ABGELEHNT von Evolution (Score 5.7): Event-Driven Stream Processing Pipeline - R
 *22.08. 21:32 UTC · Quelle: critic*
 
 score=3; issues=Multiple methods are incomplete/cut off mid-implementation: JsonSimulationParser._extract_actions, SimpleEmbeddingProvider.embed, ComplexityAnalyzer.analyze, ActionExecutionTracker.get_correlations, SyntheticSimulationRunner.run_simulation; Mis
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: CI-Pipeline reparieren u:2`
-*22.08. 17:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Contract testing & simulation sandbox - Introduce a contract‑testing layer (e.g., using Pact or JSON Schema) that defines the expected interface between the CI scripts and the simulation tool. Each script writes its output to
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: CI-Pipeline reparieren u:0`
-*22.08. 17:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Defensive programming & explicit error handling - Revise the revision‑limit and role‑distribution scripts to validate inputs before use: replace the incorrect MAX_REVISIONS keyword with the correct max_allowed parameter, add

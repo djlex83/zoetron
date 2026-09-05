@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 17:47:38",
+ "stand": "2026-09-05 17:59:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -61,6 +55,12 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "marktanalyse-endlich-nutzen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
@@ -87,7 +87,7 @@
    "quote": 0.0
   },
   {
-   "tool": "marktanalyse-endlich-nutzen.py",
+   "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
