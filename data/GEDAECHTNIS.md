@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12012 Fakten** · Stand 2026-09-05 20:06 UTC · aktualisiert bei jedem Herzschlag
+**12017 Fakten** · Stand 2026-09-05 20:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6953
+- **dream:** 6958
 - **swarm_artifact:** 2351
 - **last_swarm_critique:** 781
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905201502:5:7b451d`
+*05.09. 20:15 UTC · Quelle: dream*
+
+Initial simulation scores systematically underestimate final outcomes after evolution, requiring calibration adjustment using historical improvement deltas.
+
+### `dream:20260905201502:4:8dfd40`
+*05.09. 20:15 UTC · Quelle: dream*
+
+Hand tool fails silently on path resolution errors, preventing data ingestion without clear diagnostics.
+
+### `dream:20260905201502:3:a7bfc5`
+*05.09. 20:15 UTC · Quelle: dream*
+
+Simulation runs terminate before convergence (2 cycles, score 6/10) despite evolution occurring, suggesting insufficient iteration budget or weak stopping criteria.
+
+### `dream:20260905201502:2:abaa05`
+*05.09. 20:15 UTC · Quelle: dream*
+
+Model routing currently ignores latency and health signals, leading to unnecessary use of slow or unreliable models when faster alternatives exist.
+
+### `dream:20260905201502:1:57509a`
+*05.09. 20:15 UTC · Quelle: dream*
+
+Concurrent 429 errors across multiple models indicate lack of global rate-limit coordination, causing complete pool exhaustion instead of graceful backoff.
 
 ### `dream:20260905200432:5:6d614a`
 *05.09. 20:04 UTC · Quelle: dream*

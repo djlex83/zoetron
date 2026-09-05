@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Create an automated skill proposal evaluator that scores by impact/effort/risk and auto-implements top proposa *(hatte die Idee 3×)*
 - Build predictive cooldown scheduler using failure-signature cache to preemptively skip models during historica *(hatte die Idee 3×)*
 - Create swarm-task watchdog flagging tasks stale >7 days, auto-generating revive sub-goals with critic-to-build *(hatte die Idee 3×)*
-- Create a skill-implementation sprint scheduler that auto-promotes the top-3 pending proposals into working cod *(hatte die Idee 2×)*
 - Implement a circuit breaker pattern for all model API calls with configurable failure thresholds, exponential  *(hatte die Idee 2×)*
+- Develop a latency-aware model selection heuristic that avoids high-latency models for time-sensitive sub-tasks *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -35,12 +35,17 @@
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
-- Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Alte Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 2×)*
+- Alte Schwarm-Aufgaben aufräumen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Initial simulation scores systematically underestimate final outcomes after evolution, requiring calibration adjustment using historical improvement d
+- Hand tool fails silently on path resolution errors, preventing data ingestion without clear diagnostics.
+- Simulation runs terminate before convergence (2 cycles, score 6/10) despite evolution occurring, suggesting insufficient iteration budget or weak stop
+- Model routing currently ignores latency and health signals, leading to unnecessary use of slow or unreliable models when faster alternatives exist.
+- Concurrent 429 errors across multiple models indicate lack of global rate-limit coordination, causing complete pool exhaustion instead of graceful bac
 - Pruning removed 90 events but 0 facts, suggesting fact extraction is not capturing reusable knowledge from experience.
 - Simulation flagged 5 risks and applied 4 revisions, yet swarm still did not converge after 2 cycles.
 - Evolutionary variants improved scores from 6 to 8/9/7, proving iterative refinement works but needs more cycles for convergence.
@@ -51,11 +56,6 @@
 - The system operated under maximum stress (stress=1.0) with a severely constrained budget (max 3 tasks, max 1 iteration), which amplified every failure
 - The z-ai/glm-5.2 model failed consistently with 429 errors across every retry attempt, making it an unreliable choice under any load condition.
 - Rate limiting (HTTP 429) was the dominant failure mode, affecting nearly all models except inclusionai/ling-3.0-flash-fin, indicating a need for rate-
-- Pruning removed 41 events but 0 facts, suggesting episodic memory is bloated while semantic knowledge stays sparse – consolidation should prioritize f
-- Metabolism stress at 1.0 with 'conserve' budget indicates resource exhaustion coincides with model cascade failures, creating a death spiral.
-- The system generates high-quality skill proposals but lacks an automated validation-to-deployment pipeline, leaving critical reliability fixes in prop
-- Swarm tools consistently fail on path resolution: they use relative paths instead of resolving ZOETRON_DATA and sys.argv[1] to absolute data directori
-- Model failures are systemic (429/502 across all providers) not transient, yet the proposed router with quota tracking and circuit-breakers remains uni
 
 ---
 

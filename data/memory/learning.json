@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 20:04:46",
+ "stand": "2026-09-05 20:16:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -123,12 +123,6 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-abschließen-und-lücken-schl.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -142,6 +136,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "selbstprüfung-regelmäßig-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -207,7 +207,7 @@
    "quote": 1.0
   },
   {
-   "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "tool": "veraltete-marktanalyse-auffrischen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
