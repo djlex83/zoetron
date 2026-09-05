@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11782 Fakten** · Stand 2026-09-05 08:23 UTC · aktualisiert bei jedem Herzschlag
+**11795 Fakten** · Stand 2026-09-05 08:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6733
-- **swarm_artifact:** 2368
-- **last_swarm_critique:** 767
-- **anti_pattern:** 681
-- **last_swarm_goal:** 515
-- **strategy:** 348
-- **tool:** 154
+- **dream:** 6738
+- **swarm_artifact:** 2370
+- **last_swarm_critique:** 768
+- **anti_pattern:** 683
+- **last_swarm_goal:** 516
+- **strategy:** 349
+- **tool:** 155
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,56 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:fähigkeits-vorschläge-in-echte-skills-um`
+*05.09. 08:34 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Vorschläge in echte Skills umsetzen'. Datei: data/tools/fähigkeits-vorschläge-in-echte-skills-um.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeits-Vorschläge in:1`
+*05.09. 08:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Process-Centric State Machine Pipeline - Refactor the conversion process into a state machine with distinct phases: 'DataLoading', 'StructureValidation', 'SkillMapping', and 'FallbackGeneration'. In the 'StructureValidation' 
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeits-Vorschläge in:0`
+*05.09. 08:33 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Data-Centric Strict Validation & Null-Object Pattern - Implement a strict validation layer that parses the loaded JSON against a predefined schema (e.g., using jsonschema or Pydantic) before any field access occurs. For the f
+
+### `last_swarm_critique`
+*05.09. 08:32 UTC · Quelle: critic*
+
+score=7; issues=Fallback-Logik ist inkonsistent: Die Ausgabe meldet 'generischer Strukturplan', aber wenn keine Daten gefunden werden, wird keine Plan-Instanz erzeugt (anzahl_skills=0). Die Nachricht suggeriert einen Fallback-Plan, der nicht existiert.; Die Fe
+
+### `last_swarm_goal`
+*05.09. 08:31 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge in echte Skills umsetzen
+
+### `dream:20260905083118:5:bddfc7`
+*05.09. 08:31 UTC · Quelle: dream*
+
+Event pruning triggers manually rather than automatically, allowing event store bloat between maintenance cycles.
+
+### `dream:20260905083118:4:3252ac`
+*05.09. 08:31 UTC · Quelle: dream*
+
+Stale drive goals persist across cycles, indicating the goal selection mechanism fails to retire or prioritize effectively.
+
+### `dream:20260905083118:3:ce6245`
+*05.09. 08:31 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely convert to deployed capabilities, creating a proposal-execution gap that reflex scripts can bridge.
+
+### `dream:20260905083118:2:dcd41b`
+*05.09. 08:31 UTC · Quelle: dream*
+
+Latency variance across successful models spans 4s to 46s, requiring latency-aware routing to meet task urgency constraints.
+
+### `dream:20260905083118:1:848d6c`
+*05.09. 08:31 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate limits and 502 overloads, making them unreliable for production workloads without circuit breakers.
 
 ### `dream:20260905082012:5:31850e`
 *05.09. 08:20 UTC · Quelle: dream*

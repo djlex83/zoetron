@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-05 08:21:14",
+ "stand": "2026-09-05 08:34:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 6,
-   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -33,7 +27,7 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -42,6 +36,12 @@
    "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -117,12 +117,6 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -169,6 +163,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
@@ -285,12 +285,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -328,6 +322,12 @@
   },
   {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-beheben.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -417,17 +417,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.757,
- "simulationen_angewandt": 22,
+ "haende_quote": 0.752,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 27,
+  "n": 28,
   "best": 9.0,
-  "schnitt": 6.7
+  "schnitt": 6.71
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 26,
-   "schnitt": 6.62
+   "n": 27,
+   "schnitt": 6.63
   },
   "bau": {
    "n": 1,
