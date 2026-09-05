@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 03:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 03:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory pruning (86 events) occurs without preserving failure-pattern metadata needed for adaptive routing decisions.
+- Free-tier models exhibit extreme latency variance (0.9s–33s) and unreliable availability, requiring explicit latency/availability SLAs in model select
+- Evolution-driven artifact improvement (1→9 score) does not translate to swarm convergence, indicating a gap between artifact quality and execution rel
+- The 30-minute model block after three consecutive failures is disproportionate to transient 429/502 errors and removes viable capacity from the pool.
+- Provider-level rate limits (429) cascade across all models from the same provider simultaneously, making per-model fallback ineffective when the entir
 - Calibration overestimates task completion by 7x (predicted 8 vs actual 1), showing fundamentally flawed progress estimation.
 - Python syntax error in generated code (walrus operator used incorrectly in comprehension) reveals lack of pre-execution validation.
 - Hand actions consistently fail with exit code 1 and zero bytes read, indicating systematic execution environment or permission issues.
@@ -51,11 +56,6 @@
 - inclusionai/ling-3.0-flash-fin:free is the only model delivering consistent sub-6s latency, suggesting it should be the default for time-constrained c
 - The nemotron model succeeds intermittently but with 25-48s latency, violating the 1-iteration budget under conserve mode and causing deadline misses.
 - Free-tier models exhibit systematic rate-limiting (429) and overload (502) failures, making them unreliable as primary endpoints without robust fallba
-- Stale swarm tasks remain incomplete because the reflex tool lacks idempotent resume logic and per-task checkpointing.
-- High stress (1.0) triggers conserve mode that caps tasks/iterations, starving the very remediation needed to lower stress.
-- Hand actions fail on path resolution when sys.argv[1] and ZOETRON_DATA diverge, revealing missing path canonicalization.
-- Skill proposals accumulate but never execute because no automated proposal-to-action pipeline validates and deploys them.
-- Model 429 errors persist despite fallback because the router lacks health-aware scoring and exponential backoff quarantine.
 
 ---
 

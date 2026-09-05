@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11659 Fakten** · Stand 2026-09-05 03:43 UTC · aktualisiert bei jedem Herzschlag
+**11662 Fakten** · Stand 2026-09-05 03:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6629
-- **swarm_artifact:** 2367
+- **dream:** 6634
+- **swarm_artifact:** 2365
 - **last_swarm_critique:** 763
 - **anti_pattern:** 675
 - **last_swarm_goal:** 511
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905035113:5:c38e11`
+*05.09. 03:51 UTC · Quelle: dream*
+
+Memory pruning (86 events) occurs without preserving failure-pattern metadata needed for adaptive routing decisions.
+
+### `dream:20260905035113:4:c4ac21`
+*05.09. 03:51 UTC · Quelle: dream*
+
+Free-tier models exhibit extreme latency variance (0.9s–33s) and unreliable availability, requiring explicit latency/availability SLAs in model selection.
+
+### `dream:20260905035113:3:af6b6d`
+*05.09. 03:51 UTC · Quelle: dream*
+
+Evolution-driven artifact improvement (1→9 score) does not translate to swarm convergence, indicating a gap between artifact quality and execution reliability.
+
+### `dream:20260905035113:2:3a885d`
+*05.09. 03:51 UTC · Quelle: dream*
+
+The 30-minute model block after three consecutive failures is disproportionate to transient 429/502 errors and removes viable capacity from the pool.
+
+### `dream:20260905035113:1:76c4c1`
+*05.09. 03:51 UTC · Quelle: dream*
+
+Provider-level rate limits (429) cascade across all models from the same provider simultaneously, making per-model fallback ineffective when the entire provider is throttled.
 
 ### `dream:20260905034102:5:b1513f`
 *05.09. 03:41 UTC · Quelle: dream*
