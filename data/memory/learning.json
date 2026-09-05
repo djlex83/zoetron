@@ -1,13 +1,7 @@
 {
- "stand": "2026-09-05 11:13:59",
+ "stand": "2026-09-05 11:33:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
   {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 6,
@@ -34,6 +28,12 @@
   },
   {
    "tool": "marktanalyse-swarm-arbeit-abschließen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -376,6 +376,12 @@
   },
   {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "wissensgraph-verknüpfungen-reparieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

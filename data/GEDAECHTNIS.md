@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11848 Fakten** · Stand 2026-09-05 11:16 UTC · aktualisiert bei jedem Herzschlag
+**11832 Fakten** · Stand 2026-09-05 11:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6783
-- **swarm_artifact:** 2368
+- **dream:** 6788
+- **swarm_artifact:** 2350
 - **last_swarm_critique:** 771
 - **anti_pattern:** 687
 - **last_swarm_goal:** 519
-- **strategy:** 348
+- **strategy:** 345
 - **tool:** 156
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905113251:5:0a411d`
+*05.09. 11:32 UTC · Quelle: dream*
+
+Stale swarm projects and old dream memories represent untapped potential for new combinations and should be actively reviewed.
+
+### `dream:20260905113251:4:d0b51c`
+*05.09. 11:32 UTC · Quelle: dream*
+
+Regular pruning of events keeps the memory footprint manageable without pruning essential facts.
+
+### `dream:20260905113251:3:8dbb91`
+*05.09. 11:32 UTC · Quelle: dream*
+
+The system successfully uses reflex actions to implement proposed skills, showing a working self-improvement loop.
+
+### `dream:20260905113251:2:ef27b7`
+*05.09. 11:32 UTC · Quelle: dream*
+
+High latency (~20s) on `nvidia/nemotron-3-ultra-550b-a55b:free` indicates a need for latency-aware routing or fallback models.
+
+### `dream:20260905113251:1:939521`
+*05.09. 11:32 UTC · Quelle: dream*
+
+The model `z-ai/glm-5.2:free` is chronically rate-limited (429 errors) and should be temporarily disabled or deprioritized.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten-Vorschläge p:2`
 *05.09. 11:12 UTC · Quelle: evolution*
