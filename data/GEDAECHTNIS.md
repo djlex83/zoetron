@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11646 Fakten** · Stand 2026-09-05 02:29 UTC · aktualisiert bei jedem Herzschlag
+**11645 Fakten** · Stand 2026-09-05 03:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6604
-- **swarm_artifact:** 2377
+- **dream:** 6609
+- **swarm_artifact:** 2372
 - **last_swarm_critique:** 763
 - **anti_pattern:** 675
 - **last_swarm_goal:** 511
-- **strategy:** 350
+- **strategy:** 349
 - **tool:** 153
 - **hand_result:** 126
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905025815:5:249b6c`
+*05.09. 02:58 UTC · Quelle: dream*
+
+Calibration error of +1 (predicted 7, actual 8) shows consistent slight underestimation of task complexity in knowledge cleanup tasks.
+
+### `dream:20260905025815:4:3d7f05`
+*05.09. 02:58 UTC · Quelle: dream*
+
+Swarm converged in one cycle with planner/builder/critic roles but five improvement proposals remain unimplemented, indicating execution gap between planning and action.
+
+### `dream:20260905025815:3:b01d7a`
+*05.09. 02:58 UTC · Quelle: dream*
+
+Memory pruning removes only events (56, 41) but zero facts, suggesting fact retention policy may be too conservative for long-term relevance.
+
+### `dream:20260905025815:2:7b714f`
+*05.09. 02:58 UTC · Quelle: dream*
+
+Self-diagnosis reports no organ errors while drive goals signal model unreliability and stale swarm tasks, revealing a monitoring blind spot for systemic degradation.
+
+### `dream:20260905025815:1:cbd436`
+*05.09. 02:58 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free indicate provider-level rate limiting that cascades into high-latency fallbacks (Nemotron at 18-58s vs 4.3s).
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Schwarm-Aufgaben zu Ende:1`
 *05.09. 02:27 UTC · Quelle: evolution*

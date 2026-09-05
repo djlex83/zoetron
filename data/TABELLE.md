@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8166 Neuronen · 665747 bewertete Synapsen
+Stand: 8166 Neuronen · 666718 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,20 +10,20 @@ Stand: 8166 Neuronen · 665747 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 727 | 0.24 |
+| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 728 | 0.24 |
 | 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 655 | 0.26 |
 | 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 734 | 0.23 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 689 | 0.24 |
-| 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 697 | 0.23 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 690 | 0.24 |
+| 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 698 | 0.23 |
 | 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 623 | 0.25 |
 | 7 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 678 | 0.23 |
 | 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 604 | 0.26 |
-| 9 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 690 | 0.22 |
-| 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 629 | 0.24 |
-| 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 599 | 0.25 |
+| 9 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 691 | 0.22 |
+| 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 630 | 0.24 |
+| 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 600 | 0.25 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 559 | 0.27 |
-| 13 | 💭 | Repeated 429 errors across four different models indicate system… | 607 | 0.25 |
-| 14 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 575 | 0.26 |
+| 13 | 💭 | Repeated 429 errors across four different models indicate system… | 608 | 0.25 |
+| 14 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 576 | 0.26 |
 | 15 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 559 | 0.27 |
 
 ## Die 15 stärksten Synapsen
