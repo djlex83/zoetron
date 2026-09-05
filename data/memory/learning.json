@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 07:50:41",
+ "stand": "2026-09-05 08:09:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,6 +10,12 @@
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -28,12 +34,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -114,12 +114,6 @@
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-in-handlung-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -232,6 +226,12 @@
   },
   {
    "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-in-handlung-umsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

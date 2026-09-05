@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11774 Fakten** · Stand 2026-09-05 07:52 UTC · aktualisiert bei jedem Herzschlag
+**11777 Fakten** · Stand 2026-09-05 08:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6723
-- **swarm_artifact:** 2370
+- **dream:** 6728
+- **swarm_artifact:** 2368
 - **last_swarm_critique:** 767
 - **anti_pattern:** 681
 - **last_swarm_goal:** 515
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905080857:5:221914`
+*05.09. 08:08 UTC · Quelle: dream*
+
+Pruning removes only 2 facts per cycle, indicating retention policy is too conservative for long-term memory health.
+
+### `dream:20260905080857:4:16ce1a`
+*05.09. 08:08 UTC · Quelle: dream*
+
+Swarm convergence succeeded via reflex tool execution, proving pre-built procedural skills outperform ad-hoc generation.
+
+### `dream:20260905080857:3:1dc166`
+*05.09. 08:08 UTC · Quelle: dream*
+
+Multiple independent proposals converge on model routing with rate-limit counters, exponential backoff, and automatic fallback.
+
+### `dream:20260905080857:2:4700f1`
+*05.09. 08:08 UTC · Quelle: dream*
+
+Identical 429 errors repeat across cycles because no cooldown memory or predictive avoidance exists for failing models.
+
+### `dream:20260905080857:1:b18b1e`
+*05.09. 08:08 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits while fallback models (nvidia/nemotron) succeed with 15-26s latency.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten schneller in:1`
 *05.09. 07:50 UTC · Quelle: evolution*
