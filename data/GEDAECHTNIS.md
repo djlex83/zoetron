@@ -1,21 +1,66 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11593 Fakten** · Stand 2026-09-04 23:58 UTC · aktualisiert bei jedem Herzschlag
+**11602 Fakten** · Stand 2026-09-05 00:10 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6559
-- **swarm_artifact:** 2381
-- **last_swarm_critique:** 760
-- **anti_pattern:** 671
-- **last_swarm_goal:** 508
-- **strategy:** 351
+- **swarm_artifact:** 2384
+- **last_swarm_critique:** 761
+- **anti_pattern:** 673
+- **last_swarm_goal:** 509
+- **strategy:** 352
 - **tool:** 152
-- **hand_result:** 124
+- **hand_result:** 125
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Aufgaben au:2`
+*05.09. 00:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Driven Staleness State Machine (Architecture Redesign) - Abandon the polling-based record-scanning architecture entirely. Replace Artifacts 1–3 with an event-driven state machine where each swarm task emits lifecycle ev
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Alte Schwarm-Aufgaben au:1`
+*05.09. 00:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Content-Addressable Record Hashing (Eliminate Serialization) - Replace `json.dumps(record)` entirely with a content-addressable hashing scheme. Each record is assigned a stable hash (e.g., SHA-256 over a canonical sorted-key 
+
+### `last_swarm_critique`
+*05.09. 00:07 UTC · Quelle: critic*
+
+score=7; issues=Artifact 3 (Prune-Organ): is_stale() behandelt numerische Timestamps nicht korrekt - der isinstance(ts, str)-Check führt dazu, dass int/float-Timestamps sofort False zurückgeben und nie als stale erkannt werden, obwohl is_session_inactive in Ar
+
+### `last_swarm_goal`
+*05.09. 00:06 UTC · Quelle: system*
+
+Alte Schwarm-Aufgaben aufräumen und abschließen
+
+### `dream:20260905000623:5:53c2c2`
+*05.09. 00:06 UTC · Quelle: dream*
+
+Calibration showed a systematic underestimation bias (predicted 6 vs actual 8), suggesting that self-assessment models consistently underestimate task complexity and should be adjusted upward.
+
+### `dream:20260905000623:4:b6e9c5`
+*05.09. 00:06 UTC · Quelle: dream*
+
+Self-diagnosis and pruning mechanisms successfully removed 5 stale facts and 29 events, confirming that automated knowledge hygiene is essential to prevent accumulation of outdated information.
+
+### `dream:20260905000623:3:b54f9e`
+*05.09. 00:06 UTC · Quelle: dream*
+
+The swarm architecture with planner/builder/critic roles achieved convergence in a single cycle with a score of 8, demonstrating that role-specialized coordination is highly effective for knowledge consolidation tasks.
+
+### `dream:20260905000623:2:2c41a4`
+*05.09. 00:06 UTC · Quelle: dream*
+
+The nvidia/nemotron model exhibits extreme latency variance (8.6s to 126.9s) and occasional upstream 502 errors, making it unreliable as a default without strict timeout and fallback handling.
+
+### `dream:20260905000623:1:6859f7`
+*05.09. 00:06 UTC · Quelle: dream*
+
+Rate limiting (429 errors) is the dominant and most persistent failure mode across multiple model providers, indicating systemic API quota constraints rather than isolated incidents.
 
 ### `dream:20260904235627:5:c3ce70`
 *04.09. 23:56 UTC · Quelle: dream*
@@ -43641,28 +43686,3 @@ ABGELEHNT von Evolution (Score 8): Graph‑based memory network with weak refere
 *22.08. 12:33 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 9): Event‑sourced CQRS architecture - Store each fact addition as an immutable event (dream_id, fact, timestamp, tags, embedding) in an append‑only event log. DreamMemory becomes a read‑model projection rebuilt on demand by repla
-
-### `dream:20260821:5`
-*21.08. 23:58 UTC · Quelle: dream*
-
-Swarms fail to converge (score 3/5, not converged) due to vague goals lacking explicit acceptance criteria.
-
-### `dream:20260821:4`
-*21.08. 23:58 UTC · Quelle: dream*
-
-Simulation revisions rarely transfer to reality (33% gap) because applied revisions lack verification gates.
-
-### `dream:20260821:3`
-*21.08. 23:58 UTC · Quelle: dream*
-
-Skill proposals accumulate without execution (30 proposed, 2 executed) creating a capability illusion.
-
-### `dream:20260821:2`
-*21.08. 23:58 UTC · Quelle: dream*
-
-Swarm sessions leak resources with 14% orphan rate (7 started vs 6 finished) causing lost partial outputs.
-
-### `dream:20260821:1`
-*21.08. 23:58 UTC · Quelle: dream*
-
-The nemotron-3-ultra model exhibits unpredictable high latency (up to 219s) making it unreliable for time-sensitive swarm operations.
