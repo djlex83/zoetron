@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12011 Fakten** · Stand 2026-09-05 19:56 UTC · aktualisiert bei jedem Herzschlag
+**12012 Fakten** · Stand 2026-09-05 20:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6948
-- **swarm_artifact:** 2355
+- **dream:** 6953
+- **swarm_artifact:** 2351
 - **last_swarm_critique:** 781
 - **anti_pattern:** 677
 - **last_swarm_goal:** 529
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905200432:5:6d614a`
+*05.09. 20:04 UTC · Quelle: dream*
+
+Pruning removed 90 events but 0 facts, suggesting fact extraction is not capturing reusable knowledge from experience.
+
+### `dream:20260905200432:4:987467`
+*05.09. 20:04 UTC · Quelle: dream*
+
+Simulation flagged 5 risks and applied 4 revisions, yet swarm still did not converge after 2 cycles.
+
+### `dream:20260905200432:3:f9db69`
+*05.09. 20:04 UTC · Quelle: dream*
+
+Evolutionary variants improved scores from 6 to 8/9/7, proving iterative refinement works but needs more cycles for convergence.
+
+### `dream:20260905200432:2:aa473b`
+*05.09. 20:04 UTC · Quelle: dream*
+
+Calibration predicted 1 but actual was 6 (abs_error 5), indicating systematic underestimation of task complexity.
+
+### `dream:20260905200432:1:174486`
+*05.09. 20:04 UTC · Quelle: dream*
+
+Model z-ai/glm-5.2:free consistently returns 429 rate-limit errors, requiring automatic fallback to reliable alternatives like nemotron-3-ultra.
 
 ### `dream:20260905195342:5:802238`
 *05.09. 19:53 UTC · Quelle: dream*
