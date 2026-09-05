@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 06:20:02",
+ "stand": "2026-09-05 06:30:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,6 +81,12 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "häufige-modellfehler-besser-verstehen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -112,12 +118,6 @@
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -423,12 +423,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.786,
- "simulationen_angewandt": 21,
+ "haende_quote": 0.791,
+ "simulationen_angewandt": 20,
  "swarm_scores": {
-  "n": 27,
+  "n": 26,
   "best": 9.0,
-  "schnitt": 6.78
+  "schnitt": 6.96
  },
  "score_nach_ziel_typ": {
   "analyse": {

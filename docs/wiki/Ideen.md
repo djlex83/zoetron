@@ -1,13 +1,13 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 06:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 06:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 5×)*
-- Require mandatory score capture on all act_done events — if score is null, trigger automated post-hoc quality  *(hatte die Idee 5×)*
-- Create a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after *(hatte die Idee 5×)*
+- Implement a model router with per-model circuit breakers tracking 429/5xx errors in a 60s rolling window, trip *(hatte die Idee 4×)*
+- Require mandatory score capture on all act_done events — if score is null, trigger automated post-hoc quality  *(hatte die Idee 4×)*
+- Create a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after *(hatte die Idee 4×)*
 - Add a background-batch queue for high-latency or unreliable models to prevent them from blocking the main exec *(hatte die Idee 4×)*
 - Implement a quota-aware router with per-model 429/5xx tracking in 60s rolling windows, tripping circuit breake *(hatte die Idee 4×)*
 - Deploy a persistent model-health dashboard tracking per-model success rates, latency percentiles, and quota ex *(hatte die Idee 4×)*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -33,14 +33,19 @@
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Marktanalyse in konkrete Schritte umsetzen *(wieder aufgegriffen: 2×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream-memory reflex (alte-erinnerungen-aktualisieren.py) converges reliably, but insights remain isolated unless explicitly linked into the active kno
+- Five high-value swarm tasks have stalled indefinitely; no automatic stale-detection or revival reflex exists to unblock them.
+- System underestimates 'completion' goals by ~100% (observed 2× actual cycles), so initial estimates must be calibrated with a 2.0× correction factor.
+- Fallback model (nvidia/nemotron-3-ultra) succeeds but with 10–60s latency variance, causing unpredictable cycle times that break static scheduling.
+- Free-tier models (z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable as primary workers without per-model quota tracking.
 - Aggressive pruning (87 events in one run) risks discarding failure context needed for root-cause analysis.
 - Hand actions consistently exit with code 1 and zero bytes read, pointing to a systemic sandbox or path-resolution failure.
 - Calibration error of 300% (predicted 4 vs actual 1) shows the planner's difficulty estimator is uncoupled from execution reality.
@@ -51,11 +56,6 @@
 - Artifact execution crashes with tracebacks indicating missing pre-flight validation of dependencies and syntax.
 - Hand actions fail to read data because they use relative paths instead of resolving via ZOETRON_DATA and sys.argv[1].
 - Primary model (glm-5.2) consistently hits 429 rate limits requiring automatic fallback to slower but reliable nemotron model.
-- High metabolic stress (1.0) triggers aggressive conservation that starves consolidation tasks by limiting max_tasks to 3.
-- File system operations fail when code assumes absolute paths but receives relative paths via sys.argv/environment variables.
-- Skill proposals accumulate without execution because no automated pipeline bridges proposal to deployment.
-- Fallback models succeed but introduce 14-23s latency penalties that must be budgeted in metabolic planning.
-- Rate-limited models require proactive token-bucket throttling rather than reactive failover after 429 errors.
 
 ---
 

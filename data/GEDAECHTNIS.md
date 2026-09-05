@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11729 Fakten** · Stand 2026-09-05 06:22 UTC · aktualisiert bei jedem Herzschlag
+**11734 Fakten** · Stand 2026-09-05 06:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6694
+- **dream:** 6699
 - **swarm_artifact:** 2365
 - **last_swarm_critique:** 765
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905063024:5:97f62a`
+*05.09. 06:30 UTC · Quelle: dream*
+
+Dream-memory reflex (alte-erinnerungen-aktualisieren.py) converges reliably, but insights remain isolated unless explicitly linked into the active knowledge graph.
+
+### `dream:20260905063024:4:3b61b9`
+*05.09. 06:30 UTC · Quelle: dream*
+
+Five high-value swarm tasks have stalled indefinitely; no automatic stale-detection or revival reflex exists to unblock them.
+
+### `dream:20260905063024:3:d101b0`
+*05.09. 06:30 UTC · Quelle: dream*
+
+System underestimates 'completion' goals by ~100% (observed 2× actual cycles), so initial estimates must be calibrated with a 2.0× correction factor.
+
+### `dream:20260905063024:2:15b460`
+*05.09. 06:30 UTC · Quelle: dream*
+
+Fallback model (nvidia/nemotron-3-ultra) succeeds but with 10–60s latency variance, causing unpredictable cycle times that break static scheduling.
+
+### `dream:20260905063024:1:0a5198`
+*05.09. 06:30 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable as primary workers without per-model quota tracking.
 
 ### `dream:20260905061935:5:bda89a`
 *05.09. 06:19 UTC · Quelle: dream*
