@@ -1,13 +1,7 @@
 {
- "stand": "2026-09-05 07:22:24",
+ "stand": "2026-09-05 07:32:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
-  {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
-  },
   {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 7,
@@ -22,6 +16,12 @@
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -153,6 +153,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -259,12 +265,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",

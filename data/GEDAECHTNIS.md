@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11752 Fakten** · Stand 2026-09-05 07:24 UTC · aktualisiert bei jedem Herzschlag
+**11757 Fakten** · Stand 2026-09-05 07:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6713
+- **dream:** 6718
 - **swarm_artifact:** 2364
 - **last_swarm_critique:** 766
 - **anti_pattern:** 679
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905073207:5:756825`
+*05.09. 07:32 UTC · Quelle: dream*
+
+Circuit breakers triggered after a single failure prevent cascading errors more effectively than waiting for multiple consecutive failures to confirm a pattern.
+
+### `dream:20260905073207:4:5e1ac0`
+*05.09. 07:32 UTC · Quelle: dream*
+
+Stale swarm tasks and event-store accumulation are symptoms of missing automated maintenance triggers, not one-time cleanup problems requiring manual intervention.
+
+### `dream:20260905073207:3:92e6b9`
+*05.09. 07:32 UTC · Quelle: dream*
+
+Latency variability on successful calls (14.7s to 30.9s) means reliability must encompass both success rate and response-time consistency, not just error avoidance.
+
+### `dream:20260905073207:2:979c6c`
+*05.09. 07:32 UTC · Quelle: dream*
+
+Fallback chains to reliable models (e.g., nvidia/nemotron-3-ultra-550b-a55b:free) consistently succeed even when primary models fail, making them the most robust recovery mechanism.
+
+### `dream:20260905073207:1:67b1a8`
+*05.09. 07:32 UTC · Quelle: dream*
+
+Free-tier models like z-ai/glm-5.2:free exhibit systemic rate-limit failures (repeated 429s) rather than transient errors, indicating that structural avoidance is more durable than retry logic.
 
 ### `dream:20260905072212:5:506af3`
 *05.09. 07:22 UTC · Quelle: dream*
