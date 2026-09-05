@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11663 Fakten** · Stand 2026-09-05 04:03 UTC · aktualisiert bei jedem Herzschlag
+**11668 Fakten** · Stand 2026-09-05 04:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6639
+- **dream:** 6644
 - **swarm_artifact:** 2362
 - **last_swarm_critique:** 763
 - **anti_pattern:** 675
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905041111:5:e15cbd`
+*05.09. 04:11 UTC · Quelle: dream*
+
+Self-diagnosis and reflex mechanisms operate in isolation from model health signals, missing opportunities for proactive failover.
+
+### `dream:20260905041111:4:3a7463`
+*05.09. 04:11 UTC · Quelle: dream*
+
+Event log volume remains high despite periodic pruning, indicating need for tiered retention policies based on event importance.
+
+### `dream:20260905041111:3:77ab2d`
+*05.09. 04:11 UTC · Quelle: dream*
+
+Long-running model calls block the main loop, requiring strict timeouts and asynchronous hedging to maintain responsiveness.
+
+### `dream:20260905041111:2:5cc8a4`
+*05.09. 04:11 UTC · Quelle: dream*
+
+Skill proposals accumulate in a backlog without automated evaluation or implementation, causing capability debt despite viable ideas.
+
+### `dream:20260905041111:1:3a1294`
+*05.09. 04:11 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429 rate-limit errors and unpredictable latency spikes (up to 60s), making single-model reliance unreliable.
 
 ### `dream:20260905040107:5:55c819`
 *05.09. 04:01 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 04:01:30",
+ "stand": "2026-09-05 04:11:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -427,14 +427,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.784,
  "simulationen_angewandt": 20,
  "swarm_scores": {
-  "n": 27,
+  "n": 26,
   "best": 9.0,
-  "schnitt": 6.81
+  "schnitt": 6.73
  },
  "score_nach_ziel_typ": {
   "analyse": {
