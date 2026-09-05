@@ -1,21 +1,66 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11688 Fakten** · Stand 2026-09-05 04:55 UTC · aktualisiert bei jedem Herzschlag
+**11705 Fakten** · Stand 2026-09-05 05:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6659
-- **swarm_artifact:** 2364
-- **last_swarm_critique:** 764
-- **anti_pattern:** 675
-- **last_swarm_goal:** 512
-- **strategy:** 347
+- **dream:** 6664
+- **swarm_artifact:** 2370
+- **last_swarm_critique:** 765
+- **anti_pattern:** 677
+- **last_swarm_goal:** 513
+- **strategy:** 348
 - **tool:** 154
-- **hand_result:** 126
+- **hand_result:** 127
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Traum-Erinnerungen nutzb:2`
+*05.09. 05:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): CLI Tool with Git-Backed Version Control - Standalone Go binary (single file, no runtime deps). Dreams stored as JSONL in a git repository - each entry a commit with timestamp. Built-in fuzzy search via bleve (embedded). Tag 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Traum-Erinnerungen nutzb:1`
+*05.09. 05:07 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Browser-Based Progressive Web App with IndexedDB - Single-file HTML/JS application (no build step) using IndexedDB for persistence. Web Speech API for voice dream entry. Service worker for offline-first operation. Client-side
+
+### `last_swarm_critique`
+*05.09. 05:07 UTC · Quelle: critic*
+
+score=1; issues=Sandbox-Urteil: LAEUFT NICHT - Tracebacks in zwei Dateien (action_1788584792834.py:75, action_1788584793886.py:183) belegen Laufzeitfehler; Alle drei Artefakte hängen von nicht-verfügbaren zoetron-Modulen ab (MemoryStore, Dream, KnowledgeGraph,
+
+### `last_swarm_goal`
+*05.09. 05:03 UTC · Quelle: system*
+
+Traum-Erinnerungen nutzbar machen
+
+### `dream:20260905050306:5:a4ec1c`
+*05.09. 05:03 UTC · Quelle: dream*
+
+Recurring drive goals (reliability, stale tasks, execution gap) signal that root-cause fixes are not being institutionalized; each cycle treats symptoms anew.
+
+### `dream:20260905050306:4:24b5b5`
+*05.09. 05:03 UTC · Quelle: dream*
+
+Fallback model (Nemotron) succeeds but exhibits high latency variance (10–21s), indicating need for latency-aware routing and shadow validation of alternatives.
+
+### `dream:20260905050306:3:f8bd26`
+*05.09. 05:03 UTC · Quelle: dream*
+
+Skill proposals accumulate without implementation because no automated evaluator scores impact/effort/risk and auto-generates PRs for top candidates.
+
+### `dream:20260905050306:2:25db48`
+*05.09. 05:03 UTC · Quelle: dream*
+
+Reflex tools reliably close stale swarm tasks when invoked, but the system lacks a scheduler to trigger them autonomously for recurring backlog.
+
+### `dream:20260905050306:1:4f680e`
+*05.09. 05:03 UTC · Quelle: dream*
+
+Model 429 errors on GLM-5.2 reveal absent rate-limit awareness; proactive token-bucket throttling per provider would prevent cascade fallbacks.
 
 ### `dream:20260905045253:5:4865c0`
 *05.09. 04:52 UTC · Quelle: dream*

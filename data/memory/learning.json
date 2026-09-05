@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 04:53:16",
+ "stand": "2026-09-05 05:08:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -75,18 +75,6 @@
    "quote": 0.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "häufige-modellfehler-besser-verstehen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -120,12 +108,6 @@
    "tool": "alte-schwarm-arbeiten-abschließen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-in-handeln-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -177,6 +159,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -207,6 +195,12 @@
    "quote": 1.0
   },
   {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-wissenstände-auffrischen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -225,7 +219,19 @@
    "quote": 1.0
   },
   {
+   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-in-handeln-umsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -427,25 +433,19 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   }
  ],
- "haende_quote": 0.801,
- "simulationen_angewandt": 20,
+ "haende_quote": 0.779,
+ "simulationen_angewandt": 21,
  "swarm_scores": {
-  "n": 26,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 7.0
+  "schnitt": 6.78
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 25,
-   "schnitt": 6.92
+   "n": 26,
+   "schnitt": 6.69
   },
   "bau": {
    "n": 1,

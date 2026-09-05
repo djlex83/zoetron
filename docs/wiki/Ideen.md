@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 04:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 05:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,11 +26,11 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Recurring drive goals (reliability, stale tasks, execution gap) signal that root-cause fixes are not being institutionalized; each cycle treats sympto
+- Fallback model (Nemotron) succeeds but exhibits high latency variance (10–21s), indicating need for latency-aware routing and shadow validation of alt
+- Skill proposals accumulate without implementation because no automated evaluator scores impact/effort/risk and auto-generates PRs for top candidates.
+- Reflex tools reliably close stale swarm tasks when invoked, but the system lacks a scheduler to trigger them autonomously for recurring backlog.
+- Model 429 errors on GLM-5.2 reveal absent rate-limit awareness; proactive token-bucket throttling per provider would prevent cascade fallbacks.
 - Pruning removes high-frequency events but durable consolidation only occurs during explicit dream cycles, risking memory bloat.
 - Skill proposals accumulate without an automated lifecycle to evaluate, deduplicate, test, and promote the best ones.
 - Reflex tools reliably converge stale goals when explicitly invoked, but invocation depends on manual or opportunistic matching.
@@ -51,11 +56,6 @@
 - A large backlog of unvalidated skill proposals (58+) indicates a critical bottleneck in the capability integration pipeline.
 - High latency on fallback models (e.g., 54.9s for nvidia/nemotron) severely degrades system responsiveness and necessitates latency-aware routing.
 - The `z-ai/glm-5.2:free` model is chronically rate-limited with 429 errors and should be temporarily removed or heavily deprioritized in the active mod
-- Swarm task completion succeeds when reflex-driven, but the absence of checkpoints and idempotent resume means any mid-task failure previously caused l
-- Proposed skill improvements have high value but zero durability until executed: the system generates proposals (router, circuit breaker, executor) but
-- Repeated 429 errors without backoff create a positive feedback loop: each failed request consumes a rate-limit slot, making subsequent failures more l
-- Model availability is highly volatile and non-uniform: some models (e.g., inclusionai/ling-3.0-flash-fin) succeed with low latency while others fail r
-- External API dependency is the single largest failure point: every model failure traces to third-party rate limits (429) or upstream overload (502), m
 
 ---
 
