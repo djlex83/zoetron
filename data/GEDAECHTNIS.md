@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11838 Fakten** · Stand 2026-09-05 10:58 UTC · aktualisiert bei jedem Herzschlag
+**11848 Fakten** · Stand 2026-09-05 11:16 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6778
-- **swarm_artifact:** 2367
-- **last_swarm_critique:** 770
-- **anti_pattern:** 685
-- **last_swarm_goal:** 518
+- **dream:** 6783
+- **swarm_artifact:** 2368
+- **last_swarm_critique:** 771
+- **anti_pattern:** 687
+- **last_swarm_goal:** 519
 - **strategy:** 348
 - **tool:** 156
 - **hand_result:** 129
@@ -16,6 +16,51 @@
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten-Vorschläge p:2`
+*05.09. 11:12 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 3): Plugin Architecture with Hot-Reloadable Skill Modules - Define SkillPlugin ABC with validate(), implement(), rollback() methods. Each suggestion becomes a plugin directory: manifest.yaml (metadata), validator.py (wraps werkze
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten-Vorschläge p:1`
+*05.09. 11:12 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Event-Sourced Skill Registry with Command Handlers - Model each skill suggestion as an immutable event (SkillProposed, SkillValidated, SkillRejected, SkillImplemented). Event store persists all events. Command handlers: Propo
+
+### `last_swarm_critique`
+*05.09. 11:11 UTC · Quelle: critic*
+
+score=1; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Bash-Explorationsbefehle; Ziel 'Faehigkeiten-Vorschlaege pruefen und nutzbare umsetzen' nicht implementiert: kein Laden von Vorschlaegen, keine Bewertung mit werkzeugpruefung-Modul, keine Implem
+
+### `last_swarm_goal`
+*05.09. 11:08 UTC · Quelle: system*
+
+Fähigkeiten-Vorschläge prüfen und nutzbare umsetzen
+
+### `dream:20260905110712:5:500e6e`
+*05.09. 11:07 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free succeeded (3.3s latency), proving health-aware routing can bypass systemic free-tier unreliability.
+
+### `dream:20260905110712:4:e6a32a`
+*05.09. 11:07 UTC · Quelle: dream*
+
+Aggressive event pruning (83 events per run) erases the failure-signature history required for predictive cooldown scheduling.
+
+### `dream:20260905110712:3:5bd318`
+*05.09. 11:07 UTC · Quelle: dream*
+
+Swarm tasks consistently fail to converge (score 1, converged=false) due to missing critic-to-builder feedback loops for stale work items.
+
+### `dream:20260905110712:2:e44b96`
+*05.09. 11:07 UTC · Quelle: dream*
+
+The 1800-second circuit-breaker lockout after three consecutive errors is too blunt, discarding potentially recovered capacity and lacking graded degradation.
+
+### `dream:20260905110712:1:b41a15`
+*05.09. 11:07 UTC · Quelle: dream*
+
+Free-tier models exhibit systemic 429/502 failure patterns rather than transient errors, making reactive fallback insufficient for reliable operation.
 
 ### `dream:20260905105616:5:057407`
 *05.09. 10:56 UTC · Quelle: dream*

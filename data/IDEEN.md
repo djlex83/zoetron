@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 10:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 11:14 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
+- Add artifact pre-flight validator running syntax check, import test, and sandbox permission verification befor *(hatte die Idee 5×)*
 - Tighten swarm convergence: require score ≥8 AND critic approval OR max 3 cycles with mandatory strategy change *(hatte die Idee 4×)*
-- Add artifact pre-flight validator running syntax check, import test, and sandbox permission verification befor *(hatte die Idee 4×)*
 - Implement a model router with priority-ordered fallback chain, automatic 429/502 detection, exponential backof *(hatte die Idee 3×)*
 - Build a critic-evolution loop skill: generate → score → critique → mutate → select winner, with configurable v *(hatte die Idee 3×)*
 - Add a calibration monitor that logs predicted vs actual scores per task type and triggers retraining when MAE  *(hatte die Idee 3×)*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 2×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 2×)*
+- Fähigkeiten wirklich ausprobieren statt nur planen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Only inclusionai/ling-3.0-flash-fin:free succeeded (3.3s latency), proving health-aware routing can bypass systemic free-tier unreliability.
+- Aggressive event pruning (83 events per run) erases the failure-signature history required for predictive cooldown scheduling.
+- Swarm tasks consistently fail to converge (score 1, converged=false) due to missing critic-to-builder feedback loops for stale work items.
+- The 1800-second circuit-breaker lockout after three consecutive errors is too blunt, discarding potentially recovered capacity and lacking graded degr
+- Free-tier models exhibit systemic 429/502 failure patterns rather than transient errors, making reactive fallback insufficient for reliable operation.
 - Evolution runs with critic-guided variant generation can recover from 1/10 to 9/9/9 when the critic explicitly identifies the missing executable code 
 - Calibration systematically overestimates completion for code-dependent tasks (predicted 4 vs actual 1); predicted scores for such tasks should be halv
 - Models accumulating 3 consecutive failures should be auto-blocked for 30 minutes to prevent wasting cycles on a known-bad endpoint.
@@ -51,11 +56,6 @@
 - Nemotron-3-ultra exhibits extreme latency variance (5.7s to 87.6s) and 502 upstream errors, violating SLA assumptions.
 - inclusionai/ling-3.0-flash-fin:free consistently succeeds with low latency (1.3-2.0s) while larger models fail or stall.
 - Free-tier models suffer cascading 429 rate limits under load, making them unreliable for time-bounded workflows.
-- Swarm task completion fails silently (exit code 1, no error) because the reflex tool lacks idempotency verification and automatic retry logic.
-- The system enters conserve mode at stress=1.0 but continues attempting speculative model calls instead of restricting to a single validated primary.
-- Retrying rate-limited models without provider-aware exponential backoff wastes the limited task budget and accelerates stress-induced conserve mode.
-- Latency variance exceeding 20x (3.5s to 87.6s) on the same model indicates noisy-neighbor queueing effects, not model capability differences.
-- Free-tier models on OpenRouter share a provider-level rate limit quota, causing correlated 429 failures across all :free models simultaneously.
 
 ---
 

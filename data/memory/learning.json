@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 10:56:51",
+ "stand": "2026-09-05 11:13:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,6 +63,12 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 4,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -87,12 +93,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -109,12 +109,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -208,6 +202,12 @@
   },
   {
    "tool": "veraltete-wissenstände-auffrischen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -381,17 +381,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.747,
- "simulationen_angewandt": 24,
+ "haende_quote": 0.751,
+ "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 30,
   "best": 9.0,
-  "schnitt": 6.57
+  "schnitt": 6.37
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 6.46
+   "n": 29,
+   "schnitt": 6.28
   },
   "bau": {
    "n": 1,
