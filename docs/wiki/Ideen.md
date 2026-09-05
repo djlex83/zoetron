@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 07:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 07:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 3×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren für zuverlässigere Vorhersagen *(wieder aufgegriffen: 2×)*
-- Marktanalyse in konkrete Schritte umsetzen *(wieder aufgegriffen: 2×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Faehigkeiten testen und einfuehren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation verdicts approve execution despite residual risks (5) and required revisions (3), indicating incomplete validation gating.
+- Stale swarm proposals accumulate without automatic expiration or conversion, clogging the backlog and wasting simulation cycles.
+- Hand actions fail when using relative paths instead of absolute ZOETRON_DATA paths, breaking file I/O despite successful process exit.
+- Stress at 1.0 triggers conserve mode with hard limits (max 3 tasks, 1 iteration) that cause premature termination of swarm and hand actions.
+- Primary models (glm-5.2, gemma) consistently hit 429 rate limits while nvidia/nemotron and inclusionai/ling remain reliable, necessitating automatic f
 - Circuit breakers triggered after a single failure prevent cascading errors more effectively than waiting for multiple consecutive failures to confirm 
 - Stale swarm tasks and event-store accumulation are symptoms of missing automated maintenance triggers, not one-time cleanup problems requiring manual 
 - Latency variability on successful calls (14.7s to 30.9s) means reliability must encompass both success rate and response-time consistency, not just er
@@ -51,11 +56,6 @@
 - Cycle estimates are systematically optimistic; a calibration layer with per-goal correction factors is needed for realistic planning.
 - Skill proposals accumulate without an implementation pipeline, creating a learning gap where insights never become capabilities.
 - Free-tier model rate limits cause predictable 429 cascades that waste cycles unless routed proactively with cooldown tracking.
-- Pruning discarded 19 events but 0 facts; tiered retention keeping all failures would preserve diagnostic signal for future consolidation.
-- Pre-flight validation (paths, syntax, imports, sandbox) appears in 3+ proposals, indicating execution failures often stem from preventable setup issue
-- Multiple independent proposals converge on model router with health checks, exponential backoff, and automatic fallback - a clear architectural need.
-- Fallback to nvidia/nemotron-3-ultra succeeds but latency varies 10-19s, suggesting need for latency-aware routing not just availability.
-- Repeated 429 errors on z-ai/glm-5.2:free indicate hard rate limits that require proactive model routing with per-model quota tracking.
 
 ---
 

@@ -1,21 +1,66 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11757 Fakten** · Stand 2026-09-05 07:34 UTC · aktualisiert bei jedem Herzschlag
+**11774 Fakten** · Stand 2026-09-05 07:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6718
-- **swarm_artifact:** 2364
-- **last_swarm_critique:** 766
-- **anti_pattern:** 679
-- **last_swarm_goal:** 514
-- **strategy:** 347
+- **dream:** 6723
+- **swarm_artifact:** 2370
+- **last_swarm_critique:** 767
+- **anti_pattern:** 681
+- **last_swarm_goal:** 515
+- **strategy:** 348
 - **tool:** 154
-- **hand_result:** 128
+- **hand_result:** 129
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten schneller in:1`
+*05.09. 07:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Organ-Native Event Fabric - Eliminate all LocalSimulate/fallback paths by constructing a direct, contract-first integration layer: (1) Define OpenAPI/AsyncAPI contracts for every organ capability; publish them in a central ca
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Fähigkeiten schneller in:0`
+*05.09. 07:50 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Semantic Intelligence Layer - Replace keyword matching with a vector-embedding + knowledge-graph pipeline: (1) Encode every skill description, organ capability, and historical action trace into a shared embedding space (e.g.,
+
+### `last_swarm_critique`
+*05.09. 07:49 UTC · Quelle: critic*
+
+score=7; issues=Skill-zu-Taten-Konvertierung nutzt nur naive Keyword-Überlappung (keine semantische Analyse), was die Konvertierungsqualität stark begrenzt; Messung von 'schneller' erfolgt nur als absolute Ausführungszeit ohne Baseline-Vergleich oder Benchmark
+
+### `last_swarm_goal`
+*05.09. 07:43 UTC · Quelle: system*
+
+Fähigkeiten schneller in Taten umsetzen
+
+### `dream:20260905074303:5:617aa8`
+*05.09. 07:43 UTC · Quelle: dream*
+
+Simulation verdicts approve execution despite residual risks (5) and required revisions (3), indicating incomplete validation gating.
+
+### `dream:20260905074303:4:4a359d`
+*05.09. 07:43 UTC · Quelle: dream*
+
+Stale swarm proposals accumulate without automatic expiration or conversion, clogging the backlog and wasting simulation cycles.
+
+### `dream:20260905074303:3:ffc08b`
+*05.09. 07:43 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths instead of absolute ZOETRON_DATA paths, breaking file I/O despite successful process exit.
+
+### `dream:20260905074303:2:6b930f`
+*05.09. 07:43 UTC · Quelle: dream*
+
+Stress at 1.0 triggers conserve mode with hard limits (max 3 tasks, 1 iteration) that cause premature termination of swarm and hand actions.
+
+### `dream:20260905074303:1:e18c8d`
+*05.09. 07:43 UTC · Quelle: dream*
+
+Primary models (glm-5.2, gemma) consistently hit 429 rate limits while nvidia/nemotron and inclusionai/ling remain reliable, necessitating automatic fallback chains.
 
 ### `dream:20260905073207:5:756825`
 *05.09. 07:32 UTC · Quelle: dream*

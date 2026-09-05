@@ -1,17 +1,11 @@
 {
- "stand": "2026-09-05 07:32:41",
+ "stand": "2026-09-05 07:50:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 6,
-   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -34,6 +28,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -153,6 +153,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-in-taten-umsetzen.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -225,12 +231,6 @@
    "quote": 1.0
   },
   {
-   "tool": "simulationen-in-die-praxis-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -259,12 +259,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-in-taten-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "skill-ideen-in-echte-faehigkeiten-umwand.py",
@@ -423,17 +417,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.77,
- "simulationen_angewandt": 21,
+ "haende_quote": 0.757,
+ "simulationen_angewandt": 22,
  "swarm_scores": {
   "n": 27,
   "best": 9.0,
-  "schnitt": 6.74
+  "schnitt": 6.7
  },
  "score_nach_ziel_typ": {
   "analyse": {
    "n": 26,
-   "schnitt": 6.65
+   "schnitt": 6.62
   },
   "bau": {
    "n": 1,
