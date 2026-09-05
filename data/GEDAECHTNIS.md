@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11795 Fakten** · Stand 2026-09-05 08:36 UTC · aktualisiert bei jedem Herzschlag
+**11794 Fakten** · Stand 2026-09-05 09:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6738
-- **swarm_artifact:** 2370
+- **dream:** 6743
+- **swarm_artifact:** 2365
 - **last_swarm_critique:** 768
 - **anti_pattern:** 683
 - **last_swarm_goal:** 516
-- **strategy:** 349
+- **strategy:** 348
 - **tool:** 155
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905090333:5:57b625`
+*05.09. 09:03 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this session) but none graduate to deployed skills because there's no promotion pipeline from proposal to production.
+
+### `dream:20260905090333:4:bea5d8`
+*05.09. 09:03 UTC · Quelle: dream*
+
+Model latency varies 10x (2.6s vs 34s) but routing ignores latency, causing unpredictable response times and timeouts.
+
+### `dream:20260905090333:3:131340`
+*05.09. 09:03 UTC · Quelle: dream*
+
+Hand-action failures (exit code 1) reveal a missing pre-flight validation step before code execution in the sandbox.
+
+### `dream:20260905090333:2:e74263`
+*05.09. 09:03 UTC · Quelle: dream*
+
+Swarm cycles consistently stall at 7/10 without convergence because critic feedback isn't automatically converted into builder patches.
+
+### `dream:20260905090333:1:c87924`
+*05.09. 09:03 UTC · Quelle: dream*
+
+Rate-limit errors (429) cascade across multiple models because the system lacks per-model request budgets and exponential backoff.
 
 ### `tool:fähigkeits-vorschläge-in-echte-skills-um`
 *05.09. 08:34 UTC · Quelle: hands*

@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8265 Neuronen · 692602 bewertete Synapsen
+Stand: 8265 Neuronen · 693682 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,20 +11,20 @@ Stand: 8265 Neuronen · 692602 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 743 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 756 | 0.23 |
-| 3 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 658 | 0.26 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 700 | 0.24 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 757 | 0.23 |
+| 3 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 659 | 0.26 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 701 | 0.24 |
 | 5 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 679 | 0.24 |
 | 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 637 | 0.25 |
 | 7 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 705 | 0.23 |
 | 8 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 618 | 0.26 |
 | 9 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 687 | 0.23 |
 | 10 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 698 | 0.22 |
-| 11 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 598 | 0.26 |
+| 11 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 600 | 0.26 |
 | 12 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 642 | 0.24 |
 | 13 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 658 | 0.23 |
 | 14 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 610 | 0.25 |
-| 15 | 💭 | Repeated 429 errors across four different models indicate system… | 620 | 0.25 |
+| 15 | 💭 | Repeated 429 errors across four different models indicate system… | 621 | 0.25 |
 
 ## Die 15 stärksten Synapsen
 

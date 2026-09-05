@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 08:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 09:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5 in this session) but none graduate to deployed skills because there's no promotion pipeline from proposal to production.
+- Model latency varies 10x (2.6s vs 34s) but routing ignores latency, causing unpredictable response times and timeouts.
+- Hand-action failures (exit code 1) reveal a missing pre-flight validation step before code execution in the sandbox.
+- Swarm cycles consistently stall at 7/10 without convergence because critic feedback isn't automatically converted into builder patches.
+- Rate-limit errors (429) cascade across multiple models because the system lacks per-model request budgets and exponential backoff.
 - Event pruning triggers manually rather than automatically, allowing event store bloat between maintenance cycles.
 - Stale drive goals persist across cycles, indicating the goal selection mechanism fails to retire or prioritize effectively.
 - Skill proposals accumulate but rarely convert to deployed capabilities, creating a proposal-execution gap that reflex scripts can bridge.
@@ -51,11 +56,6 @@
 - Encoded reflexes for known error patterns (e.g., "reduce model errors") converge faster and more reliably than generic planning loops.
 - Static fallback chains fail when the designated backup (nvidia/nemotron) also returns 502 under load; health-aware routing is required.
 - Free-tier model rate limits (429) are the dominant systemic failure mode, not isolated per-model anomalies.
-- Pruning removes only 2 facts per cycle, indicating retention policy is too conservative for long-term memory health.
-- Swarm convergence succeeded via reflex tool execution, proving pre-built procedural skills outperform ad-hoc generation.
-- Multiple independent proposals converge on model routing with rate-limit counters, exponential backoff, and automatic fallback.
-- Identical 429 errors repeat across cycles because no cooldown memory or predictive avoidance exists for failing models.
-- Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits while fallback models (nvidia/nemotron) succeed with 15-26s latency.
 
 ---
 
