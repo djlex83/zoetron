@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 18:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 18:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- CI-pipeline and simulation failures are persistent infrastructure issues that compound model-level errors, requiring dedicated stabilization before mo
+- Skill proposal volume without a filtering mechanism creates a 'gap' drive state—quantity of ideas without selection paralyzes progress.
+- The reliable model (nemotron-3-ultra) succeeds consistently but at 35-37s latency, revealing a fundamental reliability-vs-speed tradeoff that must be 
+- Reflex-mode execution with established tools (e.g., marktanalyse-endlich-abschließen.py) reliably converges tasks, while novel or unproven paths stall
+- Rate-limit errors (429) from the z-ai/glm-5.2 model are the dominant recurring failure cause, cascading into task failures whenever no fallback exists
 - Self-diagnosis reports zero organ errors despite repeated model failures, showing the diagnostic scope excludes external API reliability.
 - Stale swarm tasks accumulate and block progress until manual reflex cleanup runs, indicating missing TTL-based auto-reaping.
 - Five skill proposals for model routing and quota management were generated across cycles but none were implemented, revealing a proposal-to-execution 
@@ -51,11 +56,6 @@
 - Swarm converged in 1 cycle with score 9 despite 4 model failures and 20s hand-action timeout, proving task-level redundancy masks component flakiness.
 - Calibration predicted 2 cycles but actual was 9 (error 7), showing the estimator does not account for model-failure retries and fallback latency.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate static model selection fails under rate limits; dynamic routing to healthy alternatives (ling-3.0-fl
-- Hand actions and reflex tools fail silently (exit=1, ok=false) without surfacing error context, preventing automated recovery.
-- Low-latency free models (inclusionai/ling-3.0-flash-fin: 4s, z-ai/glm-5.2: 2.6s) exist but are not prioritized over failing high-latency alternatives.
-- Simulation revision loops (5 risks → 4 revisions) converge but require multiple iterations that are denied when max_iterations=1.
-- High metabolism stress (1.0) triggers a conserve budget that starves swarm tasks of iteration headroom, causing stale work despite simulation revision
-- Free-tier model endpoints exhibit bursty availability with correlated 429 rate-limit errors across multiple providers, making single-model reliance a 
 
 ---
 

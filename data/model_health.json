@@ -1,5 +1,5 @@
 {
- "stand": 1788632160.3350937,
+ "stand": 1788633712.5647454,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -31,7 +31,7 @@
    "latenz_summe_s": 383.8006021976471,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 953
+   "kontofehler": 955
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 11,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 459.68022561073303,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 933
+   "kontofehler": 935
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -61,7 +61,7 @@
    "latenz_summe_s": 701.9702219963074,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 3842
+   "kontofehler": 3844
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -148,11 +148,11 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 531,
+   "laeufe": 533,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 6409.317932844162,
+   "latenz_summe_s": 6417.036150932312,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   },

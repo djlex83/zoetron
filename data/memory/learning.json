@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 18:16:10",
+ "stand": "2026-09-05 18:42:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -201,12 +201,6 @@
    "quote": 1.0
   },
   {
-   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-bündeln-und-ziele-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -382,6 +376,12 @@
   },
   {
    "tool": "offene-marktanalyse-arbeiten-endlich-abs.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "vergessene-schwarmprojekte-reaktivieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
