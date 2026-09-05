@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 14:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 14:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Add artifact pre-flight validator running syntax check, import test, and sandbox permission verification befor *(hatte die Idee 5×)*
-- Tighten swarm convergence: require score ≥8 AND critic approval OR max 3 cycles with mandatory strategy change *(hatte die Idee 4×)*
+- Tighten swarm convergence: require score ≥8 AND critic approval OR max 3 cycles with mandatory strategy change *(hatte die Idee 3×)*
 - Implement a circuit breaker pattern for all model API calls with configurable failure thresholds, exponential  *(hatte die Idee 3×)*
 - Implement a circuit breaker with per-model failure counters, exponential backoff, and a prioritized fallback c *(hatte die Idee 3×)*
 - Build a dynamic model router that scores endpoints on recent 429/502 rates, latency percentiles, and token thr *(hatte die Idee 3×)*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Modell-Fehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
+- Alte Schwarm-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und verringern *(wieder aufgegriffen: 2×)*
-- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Upstream provider fragility (Nvidia 502 overloads) compounds rate-limit failures, so reliance on a single free-tier provider creates a cascading failu
+- The critic consistently identifies missing executable Python blocks as a structural defect, meaning output validation rules are not being enforced bef
+- Swarm convergence failed after only 2 cycles with score 1, suggesting that the convergence threshold or role allocation (1 planner, 3 builders, 1 crit
+- System calibration is severely miscalibrated: predicted performance of 7 vs actual 1 (abs_error 6) reveals a systematic overestimation bias that must 
+- 429 rate-limit errors from free-tier models (especially z-ai/glm-5.2) are the dominant failure mode, occurring far more frequently than upstream 502 e
 - Skill graph traversal (6 nodes, delta -0.5) without code execution capability yields negative progress, confirming code generation as a hard dependenc
 - Calibration error of 6 (predicted 7 vs actual 1) indicates severe overconfidence in task feasibility estimates after revisions.
 - Simulation-driven revisions (5 applied) failed to produce executable code artifacts, revealing that prose-only outputs do not converge to working solu
@@ -51,11 +56,6 @@
 - High metabolic stress (1.0) triggers conserve mode that caps task throughput, creating a feedback loop where failures increase stress which reduces ca
 - Fallback to nvidia/nemotron-3-ultra succeeds but introduces 30-60s latency spikes that violate real-time constraints.
 - Free-tier models exhibit systematic rate-limiting (429) and upstream overload (502) errors making them unreliable for production workloads.
-- Stale swarm tasks block new capabilities, indicating a need for a task expiration or forced completion mechanism.
-- Pruning stale events is essential for maintaining a clean context window and preventing cognitive overload during dream cycles.
-- Converting skill proposals into actual skills via reflexes works but needs supervised execution to ensure reliability and proper error handling.
-- The 'inclusionai/ling-3.0-flash-fin:free' model proved to be a reliable, low-latency fallback when primary models (z-ai, nvidia, google) failed.
-- Free-tier models on OpenRouter are highly susceptible to 429 rate limits and 502 upstream errors, requiring aggressive failover and circuit-breaking.
 
 ---
 

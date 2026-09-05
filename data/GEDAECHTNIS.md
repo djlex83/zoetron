@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11880 Fakten** · Stand 2026-09-05 14:11 UTC · aktualisiert bei jedem Herzschlag
+**11894 Fakten** · Stand 2026-09-05 14:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6838
-- **swarm_artifact:** 2346
-- **last_swarm_critique:** 774
+- **dream:** 6843
+- **swarm_artifact:** 2352
+- **last_swarm_critique:** 775
 - **anti_pattern:** 683
-- **last_swarm_goal:** 522
+- **last_swarm_goal:** 523
 - **strategy:** 343
-- **tool:** 158
+- **tool:** 159
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:vergessene-schwarmprojekte-reaktivieren`
+*05.09. 14:28 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vergessene Schwarmprojekte reaktivieren'. Datei: data/tools/vergessene-schwarmprojekte-reaktivieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*05.09. 14:28 UTC · Quelle: critic*
+
+score=9; issues=Die drei Artefakte bilden eine zusammenhängende Pipeline (Identifizieren → Bewerten → Reaktivieren), die das Ziel vollständig abdeckt. Alle Skripte laufen (Sandbox: LAEUFT), nutzen konsistente Datenverzeichnis-Auflösung (sys.argv[1] / ZOETRON_D
+
+### `last_swarm_goal`
+*05.09. 14:20 UTC · Quelle: system*
+
+Vergessene Schwarmprojekte reaktivieren
+
+### `dream:20260905142003:5:1fd611`
+*05.09. 14:20 UTC · Quelle: dream*
+
+Upstream provider fragility (Nvidia 502 overloads) compounds rate-limit failures, so reliance on a single free-tier provider creates a cascading failure chain.
+
+### `dream:20260905142003:4:d50a4e`
+*05.09. 14:20 UTC · Quelle: dream*
+
+The critic consistently identifies missing executable Python blocks as a structural defect, meaning output validation rules are not being enforced before submission.
+
+### `dream:20260905142003:3:0be7ab`
+*05.09. 14:20 UTC · Quelle: dream*
+
+Swarm convergence failed after only 2 cycles with score 1, suggesting that the convergence threshold or role allocation (1 planner, 3 builders, 1 critic) is insufficient for the problem complexity.
+
+### `dream:20260905142003:2:53c852`
+*05.09. 14:20 UTC · Quelle: dream*
+
+System calibration is severely miscalibrated: predicted performance of 7 vs actual 1 (abs_error 6) reveals a systematic overestimation bias that must be corrected before any goal-setting.
+
+### `dream:20260905142003:1:ac7abc`
+*05.09. 14:20 UTC · Quelle: dream*
+
+429 rate-limit errors from free-tier models (especially z-ai/glm-5.2) are the dominant failure mode, occurring far more frequently than upstream 502 errors, indicating that rate limiting must be treated as the primary constraint in model selection.
 
 ### `dream:20260905140828:5:c70f45`
 *05.09. 14:08 UTC · Quelle: dream*

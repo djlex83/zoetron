@@ -1,14 +1,14 @@
 {
- "stand": 1788617382.4886653,
+ "stand": 1788618534.209978,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 3688,
-   "fehler": 749,
+   "laeufe": 3696,
+   "fehler": 751,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 129234.11308050156,
+   "latenz_summe_s": 129695.77779388428,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1788601192.3835728,
    "kontofehler": 6
@@ -31,7 +31,7 @@
    "latenz_summe_s": 319.5520341396332,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.4064176,
-   "kontofehler": 938
+   "kontofehler": 940
   },
   "google/gemma-4-26b-a4b-it:free": {
    "laeufe": 11,
@@ -41,7 +41,7 @@
    "latenz_summe_s": 459.68022561073303,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787527026.469221,
-   "kontofehler": 918
+   "kontofehler": 920
   },
   "stealth/ox-alpha": {
    "laeufe": 705,
@@ -54,14 +54,14 @@
    "kontofehler": 200
   },
   "z-ai/glm-5.2:free": {
-   "laeufe": 176,
+   "laeufe": 177,
    "fehler": 6,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 671.1628432273865,
+   "latenz_summe_s": 678.4308993816376,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 3785
+   "kontofehler": 3793
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,
@@ -148,11 +148,11 @@
    "kontofehler": 3
   },
   "inclusionai/ling-3.0-flash-fin:free": {
-   "laeufe": 516,
+   "laeufe": 518,
    "fehler": 0,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 6343.803689241409,
+   "latenz_summe_s": 6357.387233734131,
    "letzter_fehler": "",
    "letzte_sperre": 0.0
   },
