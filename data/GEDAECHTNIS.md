@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11673 Fakten** · Stand 2026-09-05 04:23 UTC · aktualisiert bei jedem Herzschlag
+**11687 Fakten** · Stand 2026-09-05 04:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6649
-- **swarm_artifact:** 2362
-- **last_swarm_critique:** 763
+- **dream:** 6654
+- **swarm_artifact:** 2368
+- **last_swarm_critique:** 764
 - **anti_pattern:** 675
-- **last_swarm_goal:** 511
+- **last_swarm_goal:** 512
 - **strategy:** 347
-- **tool:** 153
+- **tool:** 154
 - **hand_result:** 126
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:traum-gedächtnis-system-fertigstellen`
+*05.09. 04:35 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Traum-Gedächtnis-System fertigstellen'. Datei: data/tools/traum-gedächtnis-system-fertigstellen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*05.09. 04:35 UTC · Quelle: critic*
+
+score=8; issues=Die drei Artefakte bilden zusammen ein vollständiges Traum-Gedächtnis-System (Diagnose, Datenwiederbelebung, semantische Verknüpfung), aber als einzelne Dateien deckt jedes nur einen Teilaspekt ab – die Integration zwischen den Modulen ist nich
+
+### `last_swarm_goal`
+*05.09. 04:31 UTC · Quelle: system*
+
+Traum-Gedächtnis-System fertigstellen
+
+### `dream:20260905043104:5:1dc983`
+*05.09. 04:31 UTC · Quelle: dream*
+
+Unfinished critical infrastructure components, such as swarm recovery and heartbeat modules, remain a systemic risk that blocks overall system robustness.
+
+### `dream:20260905043104:4:b94588`
+*05.09. 04:31 UTC · Quelle: dream*
+
+Routine event pruning is actively preventing context bloat, as demonstrated by the successful pruning of 55 obsolete events.
+
+### `dream:20260905043104:3:aa79a4`
+*05.09. 04:31 UTC · Quelle: dream*
+
+A large backlog of unvalidated skill proposals (58+) indicates a critical bottleneck in the capability integration pipeline.
+
+### `dream:20260905043104:2:9e3621`
+*05.09. 04:31 UTC · Quelle: dream*
+
+High latency on fallback models (e.g., 54.9s for nvidia/nemotron) severely degrades system responsiveness and necessitates latency-aware routing.
+
+### `dream:20260905043104:1:923aea`
+*05.09. 04:31 UTC · Quelle: dream*
+
+The `z-ai/glm-5.2:free` model is chronically rate-limited with 429 errors and should be temporarily removed or heavily deprioritized in the active model pool.
 
 ### `dream:20260905042116:5:561de7`
 *05.09. 04:21 UTC · Quelle: dream*

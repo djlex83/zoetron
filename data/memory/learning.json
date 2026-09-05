@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-05 04:21:37",
+ "stand": "2026-09-05 04:36:05",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -427,19 +427,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.8,
+ "haende_quote": 0.801,
  "simulationen_angewandt": 20,
  "swarm_scores": {
   "n": 26,
   "best": 9.0,
-  "schnitt": 6.73
+  "schnitt": 7.0
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 24,
-   "schnitt": 6.88
+   "n": 25,
+   "schnitt": 6.92
   },
   "bau": {
    "n": 1,
