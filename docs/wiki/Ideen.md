@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 03:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 03:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,9 +28,9 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration overestimates task completion by 7x (predicted 8 vs actual 1), showing fundamentally flawed progress estimation.
+- Python syntax error in generated code (walrus operator used incorrectly in comprehension) reveals lack of pre-execution validation.
+- Hand actions consistently fail with exit code 1 and zero bytes read, indicating systematic execution environment or permission issues.
+- Nvidia Nemotron model exhibits both high latency (44-99s) and upstream 502 errors, triggering automatic 30-minute blocks after 3 consecutive failures.
+- Free tier models on OpenRouter suffer pervasive rate limiting (429) making them unreliable for production workloads.
 - Hand actions fail with exit=1 and no error payload, preventing diagnostic replay and requiring structured stderr/stdout capture for post-mortem analys
 - Simulation detected 5 risks and proposed 5 revisions but only 3 were applied, indicating a gap between risk identification and mandatory remediation e
 - inclusionai/ling-3.0-flash-fin:free is the only model delivering consistent sub-6s latency, suggesting it should be the default for time-constrained c
@@ -51,11 +56,6 @@
 - Hand actions fail on path resolution when sys.argv[1] and ZOETRON_DATA diverge, revealing missing path canonicalization.
 - Skill proposals accumulate but never execute because no automated proposal-to-action pipeline validates and deploys them.
 - Model 429 errors persist despite fallback because the router lacks health-aware scoring and exponential backoff quarantine.
-- Reflexes for knowledge base cleanup are functioning reliably and should be scheduled on a regular cadence.
-- Event logs grow significantly faster than the fact base, necessitating frequent automated event pruning to prevent memory bloat.
-- A backlog of stale swarm tasks and unused skill proposals reveals a bottleneck in the execution phase rather than ideation.
-- High latency on fallback models (20-60s) indicates a need for asynchronous handling or strict timeout management.
-- Free models on OpenRouter are highly rate-limited and require active fallback mechanisms to prevent system blocking.
 
 ---
 

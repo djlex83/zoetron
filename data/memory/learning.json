@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 03:31:25",
+ "stand": "2026-09-05 03:41:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -36,6 +36,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -87,12 +93,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "häufige-modellfehler-besser-verstehen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -126,12 +126,6 @@
    "tool": "alte-schwarm-arbeiten-abschließen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -376,6 +370,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

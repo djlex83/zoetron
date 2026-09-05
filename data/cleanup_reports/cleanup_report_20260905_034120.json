@@ -1,0 +1,158 @@
+{
+  "scan_time": "2026-09-05T03:41:20.317116",
+  "total_files": 677,
+  "total_size_bytes": 57825693,
+  "total_size_mb": 55.15,
+  "by_action": {
+    "keep": 280,
+    "delete": 2,
+    "review": 158,
+    "archive": 237
+  },
+  "by_category": {
+    "memory": 76,
+    "temp": 1,
+    "unknown": 158,
+    "result": 46,
+    "backup": 1,
+    "artifact": 395
+  },
+  "archive_size_mb": 2.42,
+  "delete_size_mb": 0.0,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "rel_path": "tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "size_bytes": 2681,
+      "modified": 1787812317.2147682,
+      "modified_iso": "2026-08-27T06:31:57.214768",
+      "age_days": 8.9,
+      "category": "backup",
+      "action": "delete",
+      "reason": "Old backup - superseded"
+    },
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 9.6,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/selbstdiagnose_bericht.json",
+      "rel_path": "artefakte/selbstdiagnose_bericht.json",
+      "size_bytes": 218216,
+      "modified": 1787900849.1866405,
+      "modified_iso": "2026-08-28T07:07:29.186641",
+      "age_days": 7.9,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s01_1787824516_complete-import-immune-validation-conflict-resolution-atomic.md",
+      "rel_path": "artefakte/s01_1787824516_complete-import-immune-validation-conflict-resolution-atomic.md",
+      "size_bytes": 41951,
+      "modified": 1787824516.403457,
+      "modified_iso": "2026-08-27T09:55:16.403457",
+      "age_days": 8.7,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787803986_create-zoem-py-core-module-with-zoem-data-class-and-export-f.md",
+      "rel_path": "artefakte/s05_1787803986_create-zoem-py-core-module-with-zoem-data-class-and-export-f.md",
+      "size_bytes": 35138,
+      "modified": 1787803986.9755025,
+      "modified_iso": "2026-08-27T04:13:06.975502",
+      "age_days": 9.0,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260829_015253.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260829_015253.json",
+      "size_bytes": 29290,
+      "modified": 1787968373.5324247,
+      "modified_iso": "2026-08-29T01:52:53.532425",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s06_1787887573_integriere-simulations-ergebnisse-in-memory-semantic-graph.md",
+      "rel_path": "artefakte/s06_1787887573_integriere-simulations-ergebnisse-in-memory-semantic-graph.md",
+      "size_bytes": 29028,
+      "modified": 1787887573.894266,
+      "modified_iso": "2026-08-28T03:26:13.894266",
+      "age_days": 8.0,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260829_010631.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260829_010631.json",
+      "size_bytes": 28929,
+      "modified": 1787965591.3068798,
+      "modified_iso": "2026-08-29T01:06:31.306880",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s06_1787848823_selbstheilende-modell-fehler-reduktion-via-router-reflex.md",
+      "rel_path": "artefakte/s06_1787848823_selbstheilende-modell-fehler-reduktion-via-router-reflex.md",
+      "size_bytes": 28820,
+      "modified": 1787848823.3455806,
+      "modified_iso": "2026-08-27T16:40:23.345581",
+      "age_days": 8.5,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260829_003219.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260829_003219.json",
+      "size_bytes": 28568,
+      "modified": 1787963539.5945797,
+      "modified_iso": "2026-08-29T00:32:19.594580",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s09_1787811467_baue-verkn-pfungs-pipeline-kandidaten-finden-pr-fen-synapsen.md",
+      "rel_path": "artefakte/s09_1787811467_baue-verkn-pfungs-pipeline-kandidaten-finden-pr-fen-synapsen.md",
+      "size_bytes": 28387,
+      "modified": 1787811467.1161623,
+      "modified_iso": "2026-08-27T06:17:47.116162",
+      "age_days": 8.9,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260828_235406.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260828_235406.json",
+      "size_bytes": 28207,
+      "modified": 1787961247.1785438,
+      "modified_iso": "2026-08-28T23:54:07.178544",
+      "age_days": 7.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    }
+  ]
+}

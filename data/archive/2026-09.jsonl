@@ -12410,3 +12410,4 @@
 {"ts": 1787974148.8043268, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.33, "gelesen": 2}}
 {"ts": 1787974148.8165317, "kind": "werkzeug_abgelehnt", "payload": {"name": "letzte-kritik-und-ziel-neu-bewerten", "grund": "zerstoerende Operation (subprocess) - braucht menschliche Freigabe", "goal": "Letzte Kritik und Ziel neu bewerten"}}
 {"ts": 1787974150.6317904, "kind": "issue_synced", "payload": {"issue": 209, "state": "open"}}
+{"ts": 1787974278.0274131, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
