@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 14:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 14:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events (40) but zero facts, indicating fact retention policy may be too aggressive or event pruning too conservative.
+- Skill proposal pipeline is congested: 40+ proposals accumulate but deployment latency prevents conversion into usable capabilities.
+- Reflex tools succeed only when they enforce strict contracts: single exit code, <30s timeout, idempotent semantics — unverified tools risk silent fail
+- Stale goals (GitHub issues, swarm plans) persist for weeks without auto-archival, clogging the drive_goal queue and blocking collaboration.
+- Model provider z-ai/glm-5.2:free consistently fails with 429 rate limits, causing cascading fallback to high-latency nemotron model (22-59s).
 - Upstream provider fragility (Nvidia 502 overloads) compounds rate-limit failures, so reliance on a single free-tier provider creates a cascading failu
 - The critic consistently identifies missing executable Python blocks as a structural defect, meaning output validation rules are not being enforced bef
 - Swarm convergence failed after only 2 cycles with score 1, suggesting that the convergence threshold or role allocation (1 planner, 3 builders, 1 crit
@@ -51,11 +56,6 @@
 - Simulation-driven revisions (5 applied) failed to produce executable code artifacts, revealing that prose-only outputs do not converge to working solu
 - inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success with low latency (2-3s), suggesting it should be the primary fallback
 - Free-tier models on OpenRouter suffer systemic rate limiting (429) and upstream overload (502), making them unreliable for latency-sensitive workflows
-- Simulation-driven revision cycles (5 risks → 5 revisions) demonstrate effective self-correction but only when the simulation verdict is 'revise' not '
-- File system operations fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths - indicating missing path canonical
-- High metabolic stress (1.0) triggers conserve mode that caps task throughput, creating a feedback loop where failures increase stress which reduces ca
-- Fallback to nvidia/nemotron-3-ultra succeeds but introduces 30-60s latency spikes that violate real-time constraints.
-- Free-tier models exhibit systematic rate-limiting (429) and upstream overload (502) errors making them unreliable for production workloads.
 
 ---
 
