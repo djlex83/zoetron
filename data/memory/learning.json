@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 06:45:44",
+ "stand": "2026-09-05 07:12:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,13 +21,13 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 5,
-   "erfolge": 5,
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -72,12 +72,6 @@
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-aktualisieren.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -223,6 +217,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "simulationen-in-die-praxis-umsetzen.py",

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 06:45 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 07:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler reduzieren für zuverlässigere Vorhersagen *(wieder aufgegriffen: 2×)*
 - Marktanalyse in konkrete Schritte umsetzen *(wieder aufgegriffen: 2×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning discarded 19 events but 0 facts; tiered retention keeping all failures would preserve diagnostic signal for future consolidation.
+- Pre-flight validation (paths, syntax, imports, sandbox) appears in 3+ proposals, indicating execution failures often stem from preventable setup issue
+- Multiple independent proposals converge on model router with health checks, exponential backoff, and automatic fallback - a clear architectural need.
+- Fallback to nvidia/nemotron-3-ultra succeeds but latency varies 10-19s, suggesting need for latency-aware routing not just availability.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate hard rate limits that require proactive model routing with per-model quota tracking.
 - System drive goals are correctly identifying systemic issues like model unreliability, stale tasks, and the sim-to-real gap based on recent failure si
 - Reflex-based actions for routine maintenance (memory ordering, swarm tasks) consistently converge successfully without needing complex planning.
 - Event pruning is actively maintaining memory hygiene by removing 39-40 events per cycle, keeping the event store from bloating.
@@ -51,11 +56,6 @@
 - Fallback model (nvidia/nemotron-3-ultra) succeeds but with 10–60s latency variance, causing unpredictable cycle times that break static scheduling.
 - Free-tier models (z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable as primary workers without per-model quota tracking.
 - Aggressive pruning (87 events in one run) risks discarding failure context needed for root-cause analysis.
-- Hand actions consistently exit with code 1 and zero bytes read, pointing to a systemic sandbox or path-resolution failure.
-- Calibration error of 300% (predicted 4 vs actual 1) shows the planner's difficulty estimator is uncoupled from execution reality.
-- Evolutionary search can jump artifact scores from 1 to 9 in one generation, but the swarm still fails to converge, indicating a verification gap.
-- Free-tier models exhibit hard rate limits that cascade into repeated 429 errors, making them unreliable as primary workers without a router.
-- High stress (1.0) triggers conserve mode with max_tasks=3 and max_iterations=1, amplifying failure impact.
 
 ---
 
