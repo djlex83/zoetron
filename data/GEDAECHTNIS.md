@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11799 Fakten** · Stand 2026-09-05 09:17 UTC · aktualisiert bei jedem Herzschlag
+**11804 Fakten** · Stand 2026-09-05 09:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6748
+- **dream:** 6753
 - **swarm_artifact:** 2365
 - **last_swarm_critique:** 768
 - **anti_pattern:** 683
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905092445:5:0bdd58`
+*05.09. 09:24 UTC · Quelle: dream*
+
+Event pruning remains inactive because the differential memory pruning skill lacks concrete trigger thresholds to execute automatically.
+
+### `dream:20260905092445:4:d259c2`
+*05.09. 09:24 UTC · Quelle: dream*
+
+Stale drive goals persist because there is no automated mechanism to decay or archive them over time.
+
+### `dream:20260905092445:3:93292f`
+*05.09. 09:24 UTC · Quelle: dream*
+
+The accumulation of unexecuted skill proposals indicates a bottleneck in the skill graduation pipeline that prevents theoretical improvements from becoming active reflexes.
+
+### `dream:20260905092445:2:f47364`
+*05.09. 09:24 UTC · Quelle: dream*
+
+High latency on fallback models (24-36s) suggests that fallback chains must account for timeout thresholds to prevent cascading delays.
+
+### `dream:20260905092445:1:07bf97`
+*05.09. 09:24 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently hits 429 rate limits, indicating it should be temporarily demoted or removed from the primary routing pool.
 
 ### `dream:20260905091409:5:81c922`
 *05.09. 09:14 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 09:15:05",
+ "stand": "2026-09-05 09:25:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -183,6 +183,12 @@
    "quote": 1.0
   },
   {
+   "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -210,12 +216,6 @@
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -352,12 +352,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
