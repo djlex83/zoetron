@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8431 Neuronen · 749453 bewertete Synapsen
+Stand: 8434 Neuronen · 749955 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,7 +11,7 @@ Stand: 8431 Neuronen · 749453 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 774 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 805 | 0.23 |
+| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 806 | 0.23 |
 | 3 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 708 | 0.26 |
 | 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 725 | 0.24 |
 | 5 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 677 | 0.26 |
@@ -21,10 +21,10 @@ Stand: 8431 Neuronen · 749453 bewertete Synapsen
 | 9 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 711 | 0.23 |
 | 10 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 642 | 0.26 |
 | 11 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 723 | 0.23 |
-| 12 | 💭 | Repeated 429 errors across four different models indicate system… | 663 | 0.24 |
+| 12 | 💭 | Repeated 429 errors across four different models indicate system… | 664 | 0.24 |
 | 13 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 701 | 0.23 |
-| 14 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 716 | 0.22 |
-| 15 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 681 | 0.24 |
+| 14 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 682 | 0.24 |
+| 15 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 716 | 0.22 |
 
 ## Die 15 stärksten Synapsen
 

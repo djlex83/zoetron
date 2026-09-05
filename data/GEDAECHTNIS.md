@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12073 Fakten** · Stand 2026-09-05 22:46 UTC · aktualisiert bei jedem Herzschlag
+**12078 Fakten** · Stand 2026-09-05 22:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7008
+- **dream:** 7013
 - **swarm_artifact:** 2349
 - **last_swarm_critique:** 783
 - **anti_pattern:** 679
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905225440:5:6ef87b`
+*05.09. 22:54 UTC · Quelle: dream*
+
+Metabolism enters 'conserve' mode (stress=1.0) precisely when remediation capacity is most needed, throttling the very fixes that would reduce load.
+
+### `dream:20260905225440:4:523ddd`
+*05.09. 22:54 UTC · Quelle: dream*
+
+The simulation/CI pipeline is broken, so the system cannot validate changes safely, creating a catch-22 where fixes cannot be verified.
+
+### `dream:20260905225440:3:fbfc47`
+*05.09. 22:54 UTC · Quelle: dream*
+
+Stale swarm tasks accumulate because the scheduler never enforces completion of old work before admitting new goals, starving infrastructure repairs.
+
+### `dream:20260905225440:2:1083a5`
+*05.09. 22:54 UTC · Quelle: dream*
+
+Hand actions consistently fail because they resolve paths relative to the working directory instead of the canonical data root (ZOETRON_DATA / sys.argv[1]).
+
+### `dream:20260905225440:1:50fb48`
+*05.09. 22:54 UTC · Quelle: dream*
+
+All model inference depends on a single external gateway (OpenRouter) with no local fallback, causing systemic failure when any provider rate-limits or overloads.
 
 ### `dream:20260905224337:5:28ef78`
 *05.09. 22:43 UTC · Quelle: dream*
