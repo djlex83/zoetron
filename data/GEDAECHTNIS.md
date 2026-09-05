@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11619 Fakten** · Stand 2026-09-05 01:52 UTC · aktualisiert bei jedem Herzschlag
+**11624 Fakten** · Stand 2026-09-05 02:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6589
+- **dream:** 6594
 - **swarm_artifact:** 2371
 - **last_swarm_critique:** 762
 - **anti_pattern:** 673
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905020024:5:0f4be7`
+*05.09. 02:00 UTC · Quelle: dream*
+
+Periodic pruning of events and facts is necessary to prevent memory bloat and maintain efficient system performance during continuous operation.
+
+### `dream:20260905020024:4:de6d05`
+*05.09. 02:00 UTC · Quelle: dream*
+
+Reactive retries exacerbate 429 errors, proving that proactive rate limiting and circuit breaking are essential for maintaining system throughput.
+
+### `dream:20260905020024:3:99eae6`
+*05.09. 02:00 UTC · Quelle: dream*
+
+InclusionAI Ling-3.0-flash-fin demonstrates consistent reliability and low latency, making it a strong default choice during periods of high provider instability.
+
+### `dream:20260905020024:2:1f83dc`
+*05.09. 02:00 UTC · Quelle: dream*
+
+Upstream 502 errors on high-parameter models like Nvidia Nemotron suggest that service overload is common and requires graceful fallback handling.
+
+### `dream:20260905020024:1:750d6d`
+*05.09. 02:00 UTC · Quelle: dream*
+
+Free-tier models from the same provider frequently hit 429 rate limits simultaneously, indicating shared provider-level quotas rather than per-model limits.
 
 ### `tool:wissenbasis-aufräumen-und-prüfen`
 *05.09. 01:50 UTC · Quelle: hands*

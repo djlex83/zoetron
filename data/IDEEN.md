@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 02:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Periodic pruning of events and facts is necessary to prevent memory bloat and maintain efficient system performance during continuous operation.
+- Reactive retries exacerbate 429 errors, proving that proactive rate limiting and circuit breaking are essential for maintaining system throughput.
+- InclusionAI Ling-3.0-flash-fin demonstrates consistent reliability and low latency, making it a strong default choice during periods of high provider 
+- Upstream 502 errors on high-parameter models like Nvidia Nemotron suggest that service overload is common and requires graceful fallback handling.
+- Free-tier models from the same provider frequently hit 429 rate limits simultaneously, indicating shared provider-level quotas rather than per-model l
 - The swarm evolved yet failed to converge, suggesting the critic role lacks veto power or the convergence threshold is misconfigured.
 - Pruning 149 events per cycle keeps memory bounded but discards failure context needed for root-cause analysis.
 - Hand actions failing with exit=1 and zero bytes read indicate path-resolution or permission bugs that evade static checks.
@@ -51,11 +56,6 @@
 - No exponential backoff or model rotation logic exists: the system retries failing models immediately, wasting cycles on known-broken endpoints.
 - inclusionai/ling-3.0-flash-fin:free is the only model that consistently succeeds with acceptable latency (3.4-6.3s) and should be the default fallback
 - Three free models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently return 429 rate-limit errors, making them unreliable for production use.
-- Model selection appears static rather than adaptive based on recent success/failure history.
-- No exponential backoff or circuit breaker logic is present, causing repeated hammering of rate-limited endpoints.
-- The system lacks automatic failover: it retries failing models instead of switching to healthy alternatives.
-- The inclusionai/ling-3.0-flash-fin:free model shows consistent availability and low latency (~3-6s) while Google Gemma and Z.ai GLM models fail repeat
-- Free-tier models on OpenRouter exhibit severe rate limiting (429 errors) making them unreliable for production workloads.
 
 ---
 

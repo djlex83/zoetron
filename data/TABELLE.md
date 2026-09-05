@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8151 Neuronen · 662426 bewertete Synapsen
+Stand: 8156 Neuronen · 663094 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -11,9 +11,9 @@ Stand: 8151 Neuronen · 662426 bewertete Synapsen
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
 | 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 727 | 0.24 |
-| 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 653 | 0.26 |
-| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 731 | 0.23 |
-| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 686 | 0.24 |
+| 2 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 654 | 0.26 |
+| 3 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 733 | 0.23 |
+| 4 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 687 | 0.24 |
 | 5 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 696 | 0.23 |
 | 6 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 622 | 0.25 |
 | 7 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 677 | 0.23 |
@@ -22,8 +22,8 @@ Stand: 8151 Neuronen · 662426 bewertete Synapsen
 | 10 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 629 | 0.24 |
 | 11 | 💭 | The fallback model (nemotron-3-ultra) succeeds but exhibits 4x l… | 598 | 0.25 |
 | 12 | 🚫 | 🚫 Gescheiterter Versuch für „Fußball: die Basislinie “ (Note 9/1… | 557 | 0.27 |
-| 13 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 573 | 0.26 |
-| 14 | 💭 | Repeated 429 errors across four different models indicate system… | 604 | 0.25 |
+| 13 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 575 | 0.26 |
+| 14 | 💭 | Repeated 429 errors across four different models indicate system… | 605 | 0.25 |
 | 15 | 💭 | Working model nvidia/nemotron-3-ultra-550b-a55b:free shows 4.7x … | 596 | 0.25 |
 
 ## Die 15 stärksten Synapsen
