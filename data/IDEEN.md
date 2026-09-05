@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 15:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 15:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale swarm results persist because no automated pipeline promotes validated outputs to production skills.
+- High stress (1.0) with conserve mode prevents parallel model trials that could reduce latency.
+- Previous swarm reactivation scored 4/10 because simulation revisions addressed symptoms not root causes.
+- The fallback chain succeeds only after 5+ consecutive failures, wasting 200+ seconds per request cycle.
+- Rate limiting (429) across multiple providers indicates systemic quota exhaustion, not isolated model failure.
 - Self-diagnosis found no structural organ errors, confirming the system architecture is sound but its execution layer (model selection, artifact wiring
 - Five completed swarm artifacts and five computed simulations remain unapplied, revealing a persistent gap between computation and operational integrat
 - A 58% failure rate (64 errors vs 46 successes) shows that the current model routing strategy lacks predictive filtering and falls back too late.
@@ -51,11 +56,6 @@
 - The proposal-to-implementation gap (50 proposals, few active) is itself a failure mode: the system generates solutions faster than it executes them, c
 - Five completed swarm artifacts remain unintegrated across multiple consolidation cycles, proving that stale detection without mandatory action leads t
 - Consecutive 429 errors from z-ai/glm-5.2:free across multiple dream cycles indicate a systemic incompatibility, not a transient failure — the model mu
-- Dream cycles run without waiting for assembly/linking/pruning completion flags, producing stale or incomplete insights that pollute the knowledge base
-- Path resolution failures recur because hand_actions execute against non-canonical, unvalidated paths instead of resolving against ZOETRON_DATA first.
-- Uncontrolled spawning of swarms and heavy tasks under metabolic stress >0.7 causes resource exhaustion because no admission controller checks budget b
-- Fifty skill proposals exist but few become active capabilities because the proposal-to-implementation pipeline lacks automated validation, staging, an
-- Rate limiting on free-tier models (429 errors) cascades into system unreliability because naive sequential retries lack circuit breakers and exponenti
 
 ---
 

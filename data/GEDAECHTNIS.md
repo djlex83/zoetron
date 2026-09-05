@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11898 Fakten** · Stand 2026-09-05 15:17 UTC · aktualisiert bei jedem Herzschlag
+**11903 Fakten** · Stand 2026-09-05 15:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6863
+- **dream:** 6868
 - **swarm_artifact:** 2342
 - **last_swarm_critique:** 775
 - **anti_pattern:** 679
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905152626:5:12dc0a`
+*05.09. 15:26 UTC · Quelle: dream*
+
+Stale swarm results persist because no automated pipeline promotes validated outputs to production skills.
+
+### `dream:20260905152626:4:caceb3`
+*05.09. 15:26 UTC · Quelle: dream*
+
+High stress (1.0) with conserve mode prevents parallel model trials that could reduce latency.
+
+### `dream:20260905152626:3:73fe53`
+*05.09. 15:26 UTC · Quelle: dream*
+
+Previous swarm reactivation scored 4/10 because simulation revisions addressed symptoms not root causes.
+
+### `dream:20260905152626:2:e617c6`
+*05.09. 15:26 UTC · Quelle: dream*
+
+The fallback chain succeeds only after 5+ consecutive failures, wasting 200+ seconds per request cycle.
+
+### `dream:20260905152626:1:4f3302`
+*05.09. 15:26 UTC · Quelle: dream*
+
+Rate limiting (429) across multiple providers indicates systemic quota exhaustion, not isolated model failure.
 
 ### `dream:20260905151512:5:1b92b5`
 *05.09. 15:15 UTC · Quelle: dream*
