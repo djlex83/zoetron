@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,17 +9,17 @@
 - Require mandatory score capture on all act_done events — if score is null, trigger automated post-hoc quality  *(hatte die Idee 8×)*
 - Create a proposal-execution tracker that logs every skill_proposal and escalates unimplemented proposals after *(hatte die Idee 8×)*
 - Deploy a reflex quality gate requiring minimum score threshold (e.g., 0.7) before accepting reflex completions *(hatte die Idee 5×)*
-- Instrument all hand actions with structured error capture (stdout, stderr, exit code, duration) and automatic  *(hatte die Idee 4×)*
 - Implement fact TTL with access-frequency decay: auto-expire facts untouched for 7 days AND accessed fewer than *(hatte die Idee 4×)*
 - Add a background-batch queue for high-latency or unreliable models to prevent them from blocking the main exec *(hatte die Idee 4×)*
 - Implement a quota-aware router with per-model 429/5xx tracking in 60s rolling windows, tripping circuit breake *(hatte die Idee 4×)*
 - Deploy a persistent model-health dashboard tracking per-model success rates, latency percentiles, and quota ex *(hatte die Idee 4×)*
 - Build a synthetic load tester that simulates 429/5xx storms at 10x production rate to validate circuit breaker *(hatte die Idee 4×)*
 - Tighten swarm convergence: require score ≥8 AND critic approval OR max 3 cycles with mandatory strategy change *(hatte die Idee 4×)*
-- Implement per-model circuit breakers that trip after 3 consecutive failures and enforce exponential backoff (1 *(hatte die Idee 3×)*
-- Add a convergence detector to all self-improvement loops that aborts after 5 cycles without metric improvement *(hatte die Idee 3×)*
 - Replace static risk thresholds with empirical pass-rates: only demand revisions when historical failure-rate f *(hatte die Idee 3×)*
 - Introduce a reflex-trigger mechanism that automatically identifies and executes available scripts for goals ma *(hatte die Idee 3×)*
+- Enforce a mandatory proposal-execution lifecycle: every skill_proposal must be assigned an owner and deadline, *(hatte die Idee 3×)*
+- Implement a model-router with automatic fallback, rate-limit detection, exponential backoff, and per-model lat *(hatte die Idee 3×)*
+- Build a skill-proposal validator that checks prerequisites (tests, docs, dependencies) before allowing swarm l *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,20 +27,25 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm evolved yet failed to converge, suggesting the critic role lacks veto power or the convergence threshold is misconfigured.
+- Pruning 149 events per cycle keeps memory bounded but discards failure context needed for root-cause analysis.
+- Hand actions failing with exit=1 and zero bytes read indicate path-resolution or permission bugs that evade static checks.
+- The simulation gate approved a live commit despite risks=4, violating its own safety contract and allowing a non-converged swarm run.
+- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without a router.
 - Evolutionary improvement works: variant 0 scored 8/10 vs baseline 7/10, proving multi-candidate generation with critic selection yields measurable gai
 - Calibration consistently underestimates task complexity (predicted 5 vs actual 7), causing under-allocation of retries and time budget.
 - No exponential backoff or model rotation logic exists: the system retries failing models immediately, wasting cycles on known-broken endpoints.
@@ -51,11 +56,6 @@
 - The system lacks automatic failover: it retries failing models instead of switching to healthy alternatives.
 - The inclusionai/ling-3.0-flash-fin:free model shows consistent availability and low latency (~3-6s) while Google Gemma and Z.ai GLM models fail repeat
 - Free-tier models on OpenRouter exhibit severe rate limiting (429 errors) making them unreliable for production workloads.
-- Metabolism-driven budget cuts (max_tasks=3, max_iterations=1) coincide with peak failure rates, creating a death spiral where recovery capacity shrink
-- Cleanup routines fail when they cannot locate artifacts at expected paths, revealing a systemic assumption that workspace state matches logical state.
-- A single reliable model (inclusionai/ling-3.0-flash-fin) consistently succeeds under high stress, proving that provider diversity alone is insufficien
-- Models that exceed consecutive error thresholds receive automatic 30-minute blocks, turning transient overload into prolonged unavailability.
-- Rate limits (429) are the dominant failure mode across all major free-tier providers, making proactive throttling more critical than reactive fallback
 
 ---
 

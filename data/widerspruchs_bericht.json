@@ -1,0 +1,12 @@
+{
+  "scan_timestamp": "2026-09-05T01:50:39.267550",
+  "data_directory": "/workspace/zoetron/data",
+  "files_processed": 17,
+  "entries_scanned": 500,
+  "pending_files": [],
+  "contradictions_found": 0,
+  "by_type": {},
+  "by_severity": {},
+  "affected_entries": [],
+  "details": []
+}

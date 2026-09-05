@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 01:37:52",
+ "stand": "2026-09-05 01:50:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,6 +63,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
+   "laeufe": 4,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -97,12 +103,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -423,8 +423,8 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.792,
- "simulationen_angewandt": 19,
+ "haende_quote": 0.789,
+ "simulationen_angewandt": 20,
  "swarm_scores": {
   "n": 27,
   "best": 9.0,
@@ -436,8 +436,8 @@
    "schnitt": 9.0
   },
   "analyse": {
-   "n": 24,
-   "schnitt": 6.92
+   "n": 25,
+   "schnitt": 6.96
   }
  }
 }

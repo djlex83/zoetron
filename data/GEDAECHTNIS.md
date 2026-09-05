@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11608 Fakten** · Stand 2026-09-05 01:39 UTC · aktualisiert bei jedem Herzschlag
+**11619 Fakten** · Stand 2026-09-05 01:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6584
-- **swarm_artifact:** 2368
-- **last_swarm_critique:** 761
+- **dream:** 6589
+- **swarm_artifact:** 2371
+- **last_swarm_critique:** 762
 - **anti_pattern:** 673
-- **last_swarm_goal:** 509
+- **last_swarm_goal:** 510
 - **strategy:** 349
-- **tool:** 152
+- **tool:** 153
 - **hand_result:** 125
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:wissenbasis-aufräumen-und-prüfen`
+*05.09. 01:50 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Wissenbasis aufräumen und prüfen'. Datei: data/tools/wissenbasis-aufräumen-und-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*05.09. 01:50 UTC · Quelle: critic*
+
+score=8; issues=Referenz-Extraktion nutzt O(n²) String-Matching (Substring-Suche in allen Werten) - bei großen Datenmengen sehr langsam und fehleranfällig (False Positives durch Teilstring-Matches); Threshold für Assoziations-Gewicht hardcoded auf 0.1 ohne Kon
+
+### `last_swarm_goal`
+*05.09. 01:47 UTC · Quelle: system*
+
+Wissenbasis aufräumen und prüfen
+
+### `dream:20260905014746:5:dc6317`
+*05.09. 01:47 UTC · Quelle: dream*
+
+The swarm evolved yet failed to converge, suggesting the critic role lacks veto power or the convergence threshold is misconfigured.
+
+### `dream:20260905014746:4:01572a`
+*05.09. 01:47 UTC · Quelle: dream*
+
+Pruning 149 events per cycle keeps memory bounded but discards failure context needed for root-cause analysis.
+
+### `dream:20260905014746:3:9dd020`
+*05.09. 01:47 UTC · Quelle: dream*
+
+Hand actions failing with exit=1 and zero bytes read indicate path-resolution or permission bugs that evade static checks.
+
+### `dream:20260905014746:2:ec43ef`
+*05.09. 01:47 UTC · Quelle: dream*
+
+The simulation gate approved a live commit despite risks=4, violating its own safety contract and allowing a non-converged swarm run.
+
+### `dream:20260905014746:1:10b1ef`
+*05.09. 01:47 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without a router.
 
 ### `dream:20260905013734:5:fa726f`
 *05.09. 01:37 UTC · Quelle: dream*
