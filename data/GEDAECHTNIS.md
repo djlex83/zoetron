@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11649 Fakten** · Stand 2026-09-05 03:22 UTC · aktualisiert bei jedem Herzschlag
+**11654 Fakten** · Stand 2026-09-05 03:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6619
+- **dream:** 6624
 - **swarm_artifact:** 2367
 - **last_swarm_critique:** 763
 - **anti_pattern:** 675
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905033021:5:fd7f1d`
+*05.09. 03:30 UTC · Quelle: dream*
+
+Hand actions fail with exit=1 and no error payload, preventing diagnostic replay and requiring structured stderr/stdout capture for post-mortem analysis.
+
+### `dream:20260905033021:4:f161c3`
+*05.09. 03:30 UTC · Quelle: dream*
+
+Simulation detected 5 risks and proposed 5 revisions but only 3 were applied, indicating a gap between risk identification and mandatory remediation enforcement.
+
+### `dream:20260905033021:3:fd4514`
+*05.09. 03:30 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model delivering consistent sub-6s latency, suggesting it should be the default for time-constrained conserve states.
+
+### `dream:20260905033021:2:1a015b`
+*05.09. 03:30 UTC · Quelle: dream*
+
+The nemotron model succeeds intermittently but with 25-48s latency, violating the 1-iteration budget under conserve mode and causing deadline misses.
+
+### `dream:20260905033021:1:89627e`
+*05.09. 03:30 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic rate-limiting (429) and overload (502) failures, making them unreliable as primary endpoints without robust fallback chains.
 
 ### `dream:20260905031854:5:d1d6ea`
 *05.09. 03:18 UTC · Quelle: dream*

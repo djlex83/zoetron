@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 03:20:01",
+ "stand": "2026-09-05 03:31:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,6 +81,12 @@
    "quote": 1.0
   },
   {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -130,12 +136,6 @@
   },
   {
    "tool": "marktanalyse-in-handeln-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -429,12 +429,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.772,
+ "haende_quote": 0.779,
  "simulationen_angewandt": 21,
  "swarm_scores": {
-  "n": 28,
+  "n": 27,
   "best": 9.0,
-  "schnitt": 6.89
+  "schnitt": 6.81
  },
  "score_nach_ziel_typ": {
   "analyse": {

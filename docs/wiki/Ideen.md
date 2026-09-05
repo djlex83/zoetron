@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 03:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 03:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions fail with exit=1 and no error payload, preventing diagnostic replay and requiring structured stderr/stdout capture for post-mortem analys
+- Simulation detected 5 risks and proposed 5 revisions but only 3 were applied, indicating a gap between risk identification and mandatory remediation e
+- inclusionai/ling-3.0-flash-fin:free is the only model delivering consistent sub-6s latency, suggesting it should be the default for time-constrained c
+- The nemotron model succeeds intermittently but with 25-48s latency, violating the 1-iteration budget under conserve mode and causing deadline misses.
+- Free-tier models exhibit systematic rate-limiting (429) and overload (502) failures, making them unreliable as primary endpoints without robust fallba
 - Stale swarm tasks remain incomplete because the reflex tool lacks idempotent resume logic and per-task checkpointing.
 - High stress (1.0) triggers conserve mode that caps tasks/iterations, starving the very remediation needed to lower stress.
 - Hand actions fail on path resolution when sys.argv[1] and ZOETRON_DATA diverge, revealing missing path canonicalization.
@@ -51,11 +56,6 @@
 - A backlog of stale swarm tasks and unused skill proposals reveals a bottleneck in the execution phase rather than ideation.
 - High latency on fallback models (20-60s) indicates a need for asynchronous handling or strict timeout management.
 - Free models on OpenRouter are highly rate-limited and require active fallback mechanisms to prevent system blocking.
-- Calibration error of +1 (predicted 7, actual 8) shows consistent slight underestimation of task complexity in knowledge cleanup tasks.
-- Swarm converged in one cycle with planner/builder/critic roles but five improvement proposals remain unimplemented, indicating execution gap between p
-- Memory pruning removes only events (56, 41) but zero facts, suggesting fact retention policy may be too conservative for long-term relevance.
-- Self-diagnosis reports no organ errors while drive goals signal model unreliability and stale swarm tasks, revealing a monitoring blind spot for syste
-- Recurring 429 errors on z-ai/glm-5.2:free indicate provider-level rate limiting that cascades into high-latency fallbacks (Nemotron at 18-58s vs 4.3s)
 
 ---
 
