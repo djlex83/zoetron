@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11603 Fakten** · Stand 2026-09-05 01:30 UTC · aktualisiert bei jedem Herzschlag
+**11608 Fakten** · Stand 2026-09-05 01:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6579
+- **dream:** 6584
 - **swarm_artifact:** 2368
 - **last_swarm_critique:** 761
 - **anti_pattern:** 673
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905013734:5:fa726f`
+*05.09. 01:37 UTC · Quelle: dream*
+
+Evolutionary improvement works: variant 0 scored 8/10 vs baseline 7/10, proving multi-candidate generation with critic selection yields measurable gains.
+
+### `dream:20260905013734:4:4a2008`
+*05.09. 01:37 UTC · Quelle: dream*
+
+Calibration consistently underestimates task complexity (predicted 5 vs actual 7), causing under-allocation of retries and time budget.
+
+### `dream:20260905013734:3:d632cb`
+*05.09. 01:37 UTC · Quelle: dream*
+
+No exponential backoff or model rotation logic exists: the system retries failing models immediately, wasting cycles on known-broken endpoints.
+
+### `dream:20260905013734:2:f7a02e`
+*05.09. 01:37 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model that consistently succeeds with acceptable latency (3.4-6.3s) and should be the default fallback.
+
+### `dream:20260905013734:1:545d4a`
+*05.09. 01:37 UTC · Quelle: dream*
+
+Three free models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently return 429 rate-limit errors, making them unreliable for production use.
 
 ### `dream:20260905012746:5:8e0aea`
 *05.09. 01:27 UTC · Quelle: dream*

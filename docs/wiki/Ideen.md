@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary improvement works: variant 0 scored 8/10 vs baseline 7/10, proving multi-candidate generation with critic selection yields measurable gai
+- Calibration consistently underestimates task complexity (predicted 5 vs actual 7), causing under-allocation of retries and time budget.
+- No exponential backoff or model rotation logic exists: the system retries failing models immediately, wasting cycles on known-broken endpoints.
+- inclusionai/ling-3.0-flash-fin:free is the only model that consistently succeeds with acceptable latency (3.4-6.3s) and should be the default fallback
+- Three free models (glm-5.2, gemma-4-31b, gemma-4-26b) consistently return 429 rate-limit errors, making them unreliable for production use.
 - Model selection appears static rather than adaptive based on recent success/failure history.
 - No exponential backoff or circuit breaker logic is present, causing repeated hammering of rate-limited endpoints.
 - The system lacks automatic failover: it retries failing models instead of switching to healthy alternatives.
@@ -51,11 +56,6 @@
 - A single reliable model (inclusionai/ling-3.0-flash-fin) consistently succeeds under high stress, proving that provider diversity alone is insufficien
 - Models that exceed consecutive error thresholds receive automatic 30-minute blocks, turning transient overload into prolonged unavailability.
 - Rate limits (429) are the dominant failure mode across all major free-tier providers, making proactive throttling more critical than reactive fallback
-- Pruning (facts/events) occurs regularly but its criteria and impact on consolidation are unmonitored.
-- Successful reflex execution (alte-schwarm-arbeiten-abschließen) shows autonomous tool use works when tools are validated.
-- Rate limit errors (429) are predictable from request frequency but currently trigger only after failure, wasting cycles.
-- Reactive skill proposals emerge only after repeated failures, indicating a missing proactive resilience design phase.
-- External model APIs exhibit correlated failure modes (rate limits, upstream errors) that cascade into system-wide unavailability without circuit break
 
 ---
 
