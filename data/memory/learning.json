@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 05:27:35",
+ "stand": "2026-09-05 05:38:25",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -42,6 +36,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -112,6 +112,12 @@
   },
   {
    "tool": "alte-schwarm-arbeiten-abschließen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -208,12 +214,6 @@
   },
   {
    "tool": "wissenbasis-aufräumen-und-prüfen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
