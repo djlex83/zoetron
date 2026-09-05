@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11804 Fakten** · Stand 2026-09-05 09:27 UTC · aktualisiert bei jedem Herzschlag
+**11816 Fakten** · Stand 2026-09-05 09:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6753
-- **swarm_artifact:** 2365
-- **last_swarm_critique:** 768
-- **anti_pattern:** 683
-- **last_swarm_goal:** 516
+- **dream:** 6758
+- **swarm_artifact:** 2368
+- **last_swarm_critique:** 769
+- **anti_pattern:** 685
+- **last_swarm_goal:** 517
 - **strategy:** 348
 - **tool:** 155
 - **hand_result:** 129
@@ -16,6 +16,51 @@
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Schwarm-Aufgaben en:1`
+*05.09. 09:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 6, 7]): Decentralized Peer-to-Peer Coordination - Implement a Python Worker Agent that operates on a shared filesystem/KV-store. Coordination is achieved via atomic file locks (.lock files). Each worker: 1. Attempts to claim 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Schwarm-Aufgaben en:0`
+*05.09. 09:39 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 9, 9]): Centralized State-Machine Orchestrator - Implement a single Python Controller that manages a task registry (SQLite/JSON). The Controller implements a loop that: 1. Scans for 'Pending' tasks. 2. Spawns worker threads/p
+
+### `last_swarm_critique`
+*05.09. 09:38 UTC · Quelle: critic*
+
+score=1; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Bash-Explorationsbefehle; Sandbox-Urteil: LAEUFT NICHT (kein Python-Code); Vertrag verletzt: Aufgabe verlangt Implementierung, Artefakt liefert nur Diagnose-Befehle; Keine Heartbeat-Monitoring-L
+
+### `last_swarm_goal`
+*05.09. 09:36 UTC · Quelle: system*
+
+Alte Schwarm-Aufgaben endlich erledigen
+
+### `dream:20260905093549:5:30c4a9`
+*05.09. 09:35 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode (max_tasks=3), throttling the very remediation tasks needed to reduce load.
+
+### `dream:20260905093549:4:5308c2`
+*05.09. 09:35 UTC · Quelle: dream*
+
+Swarm tasks start but never complete, indicating missing heartbeat monitoring or retry logic for long-running background work.
+
+### `dream:20260905093549:3:04c426`
+*05.09. 09:35 UTC · Quelle: dream*
+
+Hand actions fail because relative paths do not resolve against ZOETRON_DATA, causing zero file I/O despite successful process exit.
+
+### `dream:20260905093549:2:4ec484`
+*05.09. 09:35 UTC · Quelle: dream*
+
+Skill proposals accumulate but the reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' fails silently, leaving a deployment gap between idea and production.
+
+### `dream:20260905093549:1:253a90`
+*05.09. 09:35 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits and 502 upstream errors, making them unreliable as primary inference providers without a health-aware router.
 
 ### `dream:20260905092445:5:0bdd58`
 *05.09. 09:24 UTC · Quelle: dream*
