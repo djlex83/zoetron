@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11662 Fakten** · Stand 2026-09-05 03:53 UTC · aktualisiert bei jedem Herzschlag
+**11663 Fakten** · Stand 2026-09-05 04:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6634
-- **swarm_artifact:** 2365
+- **dream:** 6639
+- **swarm_artifact:** 2362
 - **last_swarm_critique:** 763
 - **anti_pattern:** 675
 - **last_swarm_goal:** 511
-- **strategy:** 348
+- **strategy:** 347
 - **tool:** 153
 - **hand_result:** 126
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905040107:5:55c819`
+*05.09. 04:01 UTC · Quelle: dream*
+
+Memory pruning must preserve cross-session links between distant events to enable pattern recognition across dreams.
+
+### `dream:20260905040107:4:792f52`
+*05.09. 04:01 UTC · Quelle: dream*
+
+Proactive request spacing using historical 429 cooldown periods prevents rate limits more effectively than reactive retries.
+
+### `dream:20260905040107:3:8b429b`
+*05.09. 04:01 UTC · Quelle: dream*
+
+Skill proposal backlog grows because evaluation/implementation is manual; an automated pipeline is needed to close the loop.
+
+### `dream:20260905040107:2:11cc87`
+*05.09. 04:01 UTC · Quelle: dream*
+
+Fallback chains must dynamically reorder based on real-time success rates and latency, not static priority.
+
+### `dream:20260905040107:1:756279`
+*05.09. 04:01 UTC · Quelle: dream*
+
+Provider-level 429 errors require circuit breakers that block all models from a rate-limited provider, not just individual models.
 
 ### `dream:20260905035113:5:c38e11`
 *05.09. 03:51 UTC · Quelle: dream*
