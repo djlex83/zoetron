@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12037 Fakten** · Stand 2026-09-05 21:01 UTC · aktualisiert bei jedem Herzschlag
+**12041 Fakten** · Stand 2026-09-05 21:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6978
-- **swarm_artifact:** 2351
+- **dream:** 6983
+- **swarm_artifact:** 2350
 - **last_swarm_critique:** 781
 - **anti_pattern:** 677
 - **last_swarm_goal:** 529
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905210938:5:e2b992`
+*05.09. 21:09 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots in external dependency health.
+
+### `dream:20260905210938:4:e3aa29`
+*05.09. 21:09 UTC · Quelle: dream*
+
+Fallback model (nvidia/nemotron-3-ultra) exhibits 10x latency variance (19-22s) making it unreliable for time-critical paths.
+
+### `dream:20260905210938:3:9f6c24`
+*05.09. 21:09 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than implementation: 10+ proposals logged vs. 0 executed, revealing a proposal-to-production gap.
+
+### `dream:20260905210938:2:1b87eb`
+*05.09. 21:09 UTC · Quelle: dream*
+
+Pruning effectiveness decays rapidly: aggressive first pass (72 events) followed by zero-prune second pass indicates threshold miscalibration.
+
+### `dream:20260905210938:1:d6fb8f`
+*05.09. 21:09 UTC · Quelle: dream*
+
+Rate-limited models (z-ai/glm-5.2:free) repeatedly trigger 429 storms that cascade into system-wide fallback latency spikes.
 
 ### `dream:20260905205854:5:59d45e`
 *05.09. 20:58 UTC · Quelle: dream*

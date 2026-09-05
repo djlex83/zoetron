@@ -15277,3 +15277,23 @@
 {"ts": 1788036978.3772447, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten prüfen und bauen", "score": 8, "converged": true}}
 {"ts": 1788036979.0694335, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.34, "gelesen": 0}}
 {"ts": 1788036981.412032, "kind": "issue_synced", "payload": {"issue": 231, "state": "closed"}}
+{"ts": 1787432340.0, "key": "swarm_artifact:Draft deliverable for: Neue Fähigkeiten systematisch prüfen", "value": "# Testplan: Neue Fähigkeiten systematisch prüfen  **Version:** 1.0   **Datum:** 2026-08-22   **Status:** Entwurf   **Verantwortlich:** Forge Swarm – Capability Assessment Team  ---  ## 1. Scope & Ziel", "source": "builder"}
+{"ts": 1788037141.340485, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788037595.721088, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788037597.1255598, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788037603.0809755, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788037603.0809736, "schalter_geoeffnet": false}}
+{"ts": 1788037644.7722068, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 41.7, "tokens_ein": 1371, "tokens_aus": 1388}}
+{"ts": 1788037644.772757, "kind": "skill_proposal", "payload": {"proposal": "Implement a model circuit breaker with exponential backoff quarantine (5min base) after 3 consecutive 429/502 errors and instant failover to next-ranked healthy model."}}
+{"ts": 1788037644.7728176, "kind": "skill_proposal", "payload": {"proposal": "Deploy a latency budget enforcer that rejects responses >15s p95 and triggers immediate fallback, with per-model latency SLOs tracked in real-time."}}
+{"ts": 1788037644.7728724, "kind": "skill_proposal", "payload": {"proposal": "Build a skill-implementation pipeline that auto-promotes proposals matching active drive goals (failure>gap>stale) to staging when acceptance criteria (tests, docs, deploy) are met via reflex."}}
+{"ts": 1788037644.7729309, "kind": "skill_proposal", "payload": {"proposal": "Create a model-performance dashboard with success rate, latency p50/p95, error taxonomy per model to drive dynamic ranking and automatic selection."}}
+{"ts": 1788037644.7729871, "kind": "skill_proposal", "payload": {"proposal": "Add a drive-goal-to-skill compiler that parses high-priority goals, generates skill specs with measurable acceptance criteria, and schedules implementation when linked goals hit failure-signal thresholds."}}
+{"ts": 1788037644.773044, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788037647.1234198, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788037647.1234174, "schalter_geoeffnet": false}}
+{"ts": 1788037666.8014333, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 19.7, "tokens_ein": 516, "tokens_aus": 572}}
+{"ts": 1788037666.8016655, "kind": "drive_goal", "payload": {"title": "Modell-Fehler deutlich reduzieren", "why": "Das Modell macht noch zu viele Fehler. Wenn es zuverlässiger wird, können wir ihm mehr Aufgaben anvertrauen.", "signal": "failure"}}
+{"ts": 1788037666.801759, "kind": "drive_goal", "payload": {"title": "Marktanalyse endlich abschließen", "why": "Drei Arbeitsschritte zur Marktanalyse liegen seit längerem unfertig herum. Wir sollten sie zu Ende bringen, damit der Aufwand nicht umsonst war.", "signal": "stale"}}
+{"ts": 1788037666.8018558, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten echt nutzbar machen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten, aber sie sind noch nicht als echte Werkzeuge eingebaut. Wir wandeln die besten in nutzbare Funktionen um.", "signal": "combination"}}
+{"ts": 1788037671.1967342, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.28, "gelesen": 7}}
+{"ts": 1788037671.197642, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten wirklich lernen", "tool": "exemplar-bank-von-den-eigenen-besten-mom.py", "ok": true}}
+{"ts": 1788037671.5349386, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten wirklich lernen", "score": null, "converged": true, "mode": "reflex"}}

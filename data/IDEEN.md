@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 21:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,10 +23,10 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
@@ -36,11 +36,16 @@
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
-- Alte Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 2×)*
 - Alte Schwarm-Aufgaben aufräumen *(wieder aufgegriffen: 2×)*
+- Modell-Fehler verstehen und beheben *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures persist, indicating monitoring blind spots in external dependency health.
+- Fallback model (nvidia/nemotron-3-ultra) exhibits 10x latency variance (19-22s) making it unreliable for time-critical paths.
+- Skill proposals accumulate faster than implementation: 10+ proposals logged vs. 0 executed, revealing a proposal-to-production gap.
+- Pruning effectiveness decays rapidly: aggressive first pass (72 events) followed by zero-prune second pass indicates threshold miscalibration.
+- Rate-limited models (z-ai/glm-5.2:free) repeatedly trigger 429 storms that cascade into system-wide fallback latency spikes.
 - Caching successful model responses creates a resilience buffer that decouples execution continuity from upstream availability during transient outages
 - Swarm execution launched with known-failing reflex tools wastes the entire budget; pre-flight health checks on capability checkers are a cheap insuran
 - 429 and 502 errors share a common signature — upstream saturation — and both are detectable early via latency spikes and empty response choices, enabl
@@ -51,11 +56,6 @@
 - Successful nemotron calls show 11–42 s latency variance, indicating no latency-aware routing or timeout budgeting exists.
 - The model router middleware (proposed 3 cycles ago) remains undeployed, leaving every LLM call vulnerable to unhandled 429/502 errors.
 - All free models on OpenRouter share a single quota bucket, causing cascading 429 failures when any model is rate-limited.
-- Single-cycle swarm convergence with 3 builders suggests either the goal was decomposable into parallel subtasks or the critic role lacked teeth to dem
-- Pruning removed 74 episodic events but zero semantic facts, wasting consolidation opportunity; a nightly extractor would convert pruned traces into du
-- Calibration underestimated effort by 2x (predicted 4, actual 8), indicating the estimator lacks a complexity-inflation factor for multi-role swarm tas
-- nvidia/nemotron-3-ultra succeeds but exhibits 3-8x latency variance (20-155s), requiring timeout budgets and fallback triggers for time-sensitive path
-- The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limit errors, making it unusable without a circuit-breaker and quota-aware router.
 
 ---
 
