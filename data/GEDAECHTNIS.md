@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11897 Fakten** · Stand 2026-09-05 14:44 UTC · aktualisiert bei jedem Herzschlag
+**11896 Fakten** · Stand 2026-09-05 14:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6848
-- **swarm_artifact:** 2350
+- **dream:** 6853
+- **swarm_artifact:** 2347
 - **last_swarm_critique:** 775
-- **anti_pattern:** 683
+- **anti_pattern:** 681
 - **last_swarm_goal:** 523
-- **strategy:** 343
+- **strategy:** 342
 - **tool:** 159
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905145254:5:69cacf`
+*05.09. 14:52 UTC · Quelle: dream*
+
+Dream cycles run without waiting for assembly/linking/pruning completion flags, producing stale or incomplete insights that pollute the knowledge base.
+
+### `dream:20260905145254:4:f58f3e`
+*05.09. 14:52 UTC · Quelle: dream*
+
+Path resolution failures recur because hand_actions execute against non-canonical, unvalidated paths instead of resolving against ZOETRON_DATA first.
+
+### `dream:20260905145254:3:d7801e`
+*05.09. 14:52 UTC · Quelle: dream*
+
+Uncontrolled spawning of swarms and heavy tasks under metabolic stress >0.7 causes resource exhaustion because no admission controller checks budget before execution.
+
+### `dream:20260905145254:2:2b344b`
+*05.09. 14:52 UTC · Quelle: dream*
+
+Fifty skill proposals exist but few become active capabilities because the proposal-to-implementation pipeline lacks automated validation, staging, and promotion gates.
+
+### `dream:20260905145254:1:9eb463`
+*05.09. 14:52 UTC · Quelle: dream*
+
+Rate limiting on free-tier models (429 errors) cascades into system unreliability because naive sequential retries lack circuit breakers and exponential backoff.
 
 ### `dream:20260905144140:5:7609c6`
 *05.09. 14:41 UTC · Quelle: dream*
@@ -45346,13 +45371,3 @@ Critic iss:0`
 *22.08. 15:14 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Centralize shared enums and enforce implementation via inheritance - Create a single `skill_enums.py` module containing `SkillCategory` and `SimulationOutcome`. Have `DreamSkillAnalyzer` and `CognitiveSkillExecutor` import th
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Bekannte Fehler systemat:2`
-*22.08. 14:44 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Object‑Oriented Composition with Built‑In Metrics - Create a BiasCorrectionLayer subclass of torch.nn.Module that encapsulates bias computation and correction in its forward method, handling arbitrary output shapes via broadc
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Bekannte Fehler systemat:0`
-*22.08. 14:44 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Robust Refactoring with Defensive Programming - Rewrite BiasCorrectedHead to include explicit input shape checks, raise informative errors for unsupported dimensions, and initialize multi‑output bias as a tensor matching the

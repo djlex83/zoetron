@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 14:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 14:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream cycles run without waiting for assembly/linking/pruning completion flags, producing stale or incomplete insights that pollute the knowledge base
+- Path resolution failures recur because hand_actions execute against non-canonical, unvalidated paths instead of resolving against ZOETRON_DATA first.
+- Uncontrolled spawning of swarms and heavy tasks under metabolic stress >0.7 causes resource exhaustion because no admission controller checks budget b
+- Fifty skill proposals exist but few become active capabilities because the proposal-to-implementation pipeline lacks automated validation, staging, an
+- Rate limiting on free-tier models (429 errors) cascades into system unreliability because naive sequential retries lack circuit breakers and exponenti
 - Pruning removes events (40) but zero facts, indicating fact retention policy may be too aggressive or event pruning too conservative.
 - Skill proposal pipeline is congested: 40+ proposals accumulate but deployment latency prevents conversion into usable capabilities.
 - Reflex tools succeed only when they enforce strict contracts: single exit code, <30s timeout, idempotent semantics — unverified tools risk silent fail
@@ -51,11 +56,6 @@
 - Swarm convergence failed after only 2 cycles with score 1, suggesting that the convergence threshold or role allocation (1 planner, 3 builders, 1 crit
 - System calibration is severely miscalibrated: predicted performance of 7 vs actual 1 (abs_error 6) reveals a systematic overestimation bias that must 
 - 429 rate-limit errors from free-tier models (especially z-ai/glm-5.2) are the dominant failure mode, occurring far more frequently than upstream 502 e
-- Skill graph traversal (6 nodes, delta -0.5) without code execution capability yields negative progress, confirming code generation as a hard dependenc
-- Calibration error of 6 (predicted 7 vs actual 1) indicates severe overconfidence in task feasibility estimates after revisions.
-- Simulation-driven revisions (5 applied) failed to produce executable code artifacts, revealing that prose-only outputs do not converge to working solu
-- inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success with low latency (2-3s), suggesting it should be the primary fallback
-- Free-tier models on OpenRouter suffer systemic rate limiting (429) and upstream overload (502), making them unreliable for latency-sensitive workflows
 
 ---
 
