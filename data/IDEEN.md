@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions and reflex tools fail silently (exit=1, ok=false) without surfacing error context, preventing automated recovery.
+- Low-latency free models (inclusionai/ling-3.0-flash-fin: 4s, z-ai/glm-5.2: 2.6s) exist but are not prioritized over failing high-latency alternatives.
+- Simulation revision loops (5 risks → 4 revisions) converge but require multiple iterations that are denied when max_iterations=1.
+- High metabolism stress (1.0) triggers a conserve budget that starves swarm tasks of iteration headroom, causing stale work despite simulation revision
+- Free-tier model endpoints exhibit bursty availability with correlated 429 rate-limit errors across multiple providers, making single-model reliance a 
 - Pruning removed 105 events but 0 facts, indicating the system discards operational context faster than it extracts durable patterns.
 - Hand-action tooling fails silently (exit=1, no error) when invoked during high-stress windows, breaking the human-in-the-loop recovery path.
 - Metabolism stress=1.0 (conserve mode) caps tasks to 3 and iterations to 1, starving the very retries and multi-cycle refinement needed to fix model re
@@ -51,11 +56,6 @@
 - Simulation-based pre-flight (5 risks caught, 5 revisions applied) prevented deployment of flawed artifacts.
 - nvidia/nemotron-3-ultra-550b-a55b:free shows high latency variance (28s–168s) but remains the most reliable primary model.
 - Model z-ai/glm-5.2:free is unusable due to persistent 429 rate limiting across 7+ consecutive attempts.
-- System stress hits 1.0 (conserve mode) during multi-model fallback cascades, starving concurrent tasks of budget.
-- Four swarm tasks remain stale because no forced-completion or reaper mechanism exists to close or escalate aged work.
-- The simulation→revision→apply loop works correctly (5 risks → 5 revisions → applied), proving the verification gate is functional when invoked.
-- Hand actions consistently fail to resolve real data paths (ZOETRON_DATA/sys.argv[1]), indicating a path-resolution bug in the execution sandbox.
-- The primary model (glm-5.2) fails 100% of the time with rate-limiting errors, making fallback chains mandatory rather than optional.
 
 ---
 

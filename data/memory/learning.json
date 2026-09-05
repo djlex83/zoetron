@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-05 17:36:57",
+ "stand": "2026-09-05 17:47:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -402,9 +402,9 @@
  "haende_quote": 0.749,
  "simulationen_angewandt": 28,
  "swarm_scores": {
-  "n": 33,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 6.39
+  "schnitt": 6.38
  },
  "score_nach_ziel_typ": {
   "analyse": {

@@ -14682,3 +14682,20 @@
 {"ts": 1788024850.4944065, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788024850.4944034, "schalter_geoeffnet": false}}
 {"ts": 1788024885.4928994, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 35.0, "tokens_ein": 2032, "tokens_aus": 3281}}
 {"ts": 1788024886.0510197, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788024886.0510178, "schalter_geoeffnet": false}}
+{"ts": 1787420760.0, "key": "swarm_artifact:Analyse und Anpassen der Rollenverteilung im CI-Pipeline", "value": "```markdown ```python import json  # Load existing config (could be from file) config = {\"roles\": [\"builder\", \"builder\", \"planner\", \"builder\", \"critic\"]}  # Ensure at least one planner and critic requ", "source": "builder"}
+{"ts": 1788025057.3347704, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 171.3, "tokens_ein": 2468, "tokens_aus": 4807}}
+{"ts": 1788025065.2778583, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 7.7, "tokens_ein": 2767, "tokens_aus": 5231}}
+{"ts": 1788025066.5647902, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.41, "gelesen": 0}}
+{"ts": 1788025066.920973, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.35, "gelesen": 0}}
+{"ts": 1788025067.3143315, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.39, "gelesen": 104}}
+{"ts": 1788025067.3145883, "kind": "tor", "payload": {"goal": "Vorgeschlagene Fähigkeiten öfter umsetzen", "gruen": true, "grund": "Artefakt laeuft (558 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788025068.154412, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788025068.154408, "schalter_geoeffnet": false}}
+{"ts": 1788025074.0272546, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 5.9, "tokens_ein": 9582, "tokens_aus": 580}}
+{"ts": 1788025074.0277746, "kind": "calibration", "payload": {"goal": "Vorgeschlagene Fähigkeiten öfter umsetzen", "predicted": 5, "actual": 9, "abs_error": 4}}
+{"ts": 1788025074.0278344, "kind": "model_score", "payload": {"model": "z-ai/glm-5.2:free", "score": 9}}
+{"ts": 1788025074.346559, "kind": "bahnen", "payload": {"goal": "Vorgeschlagene Fähigkeiten öfter umsetzen", "delta": 1.0, "kanten": 10, "hat_code": true, "score": 9, "abgerufen": 4, "ids": ["e:fee414d3d752", "e:de7d346552fd", "e:b1657c3fa4c5", "e:4b17b7d5a84e"], "ziel_id": "g:7028b615dae8"}}
+{"ts": 1788025074.3467844, "kind": "swarm_finished", "payload": {"goal": "Vorgeschlagene Fähigkeiten öfter umsetzen", "score": 9, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1788025074.3470101, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten öfter umsetzen", "score": 9, "converged": true}}
+{"ts": 1788025075.1512766, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.39, "gelesen": 0}}
+{"ts": 1788025077.5208783, "kind": "issue_synced", "payload": {"issue": 227, "state": "closed"}}
+{"ts": 1788025229.734566, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

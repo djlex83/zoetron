@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11950 Fakten** · Stand 2026-09-05 17:39 UTC · aktualisiert bei jedem Herzschlag
+**11954 Fakten** · Stand 2026-09-05 17:49 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6908
-- **swarm_artifact:** 2346
+- **dream:** 6913
+- **swarm_artifact:** 2345
 - **last_swarm_critique:** 778
 - **anti_pattern:** 675
 - **last_swarm_goal:** 526
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905174725:5:a403ea`
+*05.09. 17:47 UTC · Quelle: dream*
+
+Hand actions and reflex tools fail silently (exit=1, ok=false) without surfacing error context, preventing automated recovery.
+
+### `dream:20260905174725:4:035817`
+*05.09. 17:47 UTC · Quelle: dream*
+
+Low-latency free models (inclusionai/ling-3.0-flash-fin: 4s, z-ai/glm-5.2: 2.6s) exist but are not prioritized over failing high-latency alternatives.
+
+### `dream:20260905174725:3:3f093c`
+*05.09. 17:47 UTC · Quelle: dream*
+
+Simulation revision loops (5 risks → 4 revisions) converge but require multiple iterations that are denied when max_iterations=1.
+
+### `dream:20260905174725:2:3a37ee`
+*05.09. 17:47 UTC · Quelle: dream*
+
+High metabolism stress (1.0) triggers a conserve budget that starves swarm tasks of iteration headroom, causing stale work despite simulation revisions.
+
+### `dream:20260905174725:1:d82ff5`
+*05.09. 17:47 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit bursty availability with correlated 429 rate-limit errors across multiple providers, making single-model reliance a systemic failure mode.
 
 ### `dream:20260905173609:5:7faf1e`
 *05.09. 17:36 UTC · Quelle: dream*
