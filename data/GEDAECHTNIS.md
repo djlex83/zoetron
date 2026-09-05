@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11917 Fakten** · Stand 2026-09-05 15:47 UTC · aktualisiert bei jedem Herzschlag
+**11914 Fakten** · Stand 2026-09-05 16:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6873
-- **swarm_artifact:** 2348
+- **dream:** 6878
+- **swarm_artifact:** 2343
 - **last_swarm_critique:** 776
-- **anti_pattern:** 679
+- **anti_pattern:** 677
 - **last_swarm_goal:** 524
-- **strategy:** 341
+- **strategy:** 340
 - **tool:** 160
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905160728:5:bd9b1a`
+*05.09. 16:07 UTC · Quelle: dream*
+
+Pruning removes facts/events but does not address the root cause of repeated model failures accumulating in logs.
+
+### `dream:20260905160728:4:572841`
+*05.09. 16:07 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, indicating diagnostic coverage misses external dependency failures.
+
+### `dream:20260905160728:3:f70cca`
+*05.09. 16:07 UTC · Quelle: dream*
+
+Previously proposed skills (router, integration gate, tracker, validator, calibrator) remain unimplemented despite identified needs, creating a proposal-implementation gap.
+
+### `dream:20260905160728:2:5fcc86`
+*05.09. 16:07 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model succeeded where larger models failed, suggesting smaller specialized models may offer better availability.
+
+### `dream:20260905160728:1:3b9ed3`
+*05.09. 16:07 UTC · Quelle: dream*
+
+Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
 
 ### `tool:modelle-zuverlässiger-machen`
 *05.09. 15:44 UTC · Quelle: hands*
@@ -45464,13 +45489,3 @@ ABGELEHNT von Evolution (Score 8): Modular Re‑architecture with Dependency Inj
 *22.08. 16:52 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 7): Automated Static Analysis & Lint‑First Repair Pipeline - Integrate a pre‑commit CI stage that runs pylint, flake8, bandit, and mypy on the codebase. Use the diagnostic output to automatically generate fix suggestions (via too
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fehler im Modell vermeid:2`
-*22.08. 15:39 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fehler im Modell vermeid:0`
-*22.08. 15:39 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Idempotent logger configuration - Encapsulate logger setup in a get_logger() function that adds handlers only when the logger has none, and call it lazily on first use. Remove any logging.basicConfig calls at module level to

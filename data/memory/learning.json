@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 15:45:07",
+ "stand": "2026-09-05 16:07:52",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -213,9 +213,9 @@
    "quote": 1.0
   },
   {
-   "tool": "fehlerquellen-systematisch-beheben.py",
-   "laeufe": 1,
-   "erfolge": 1,
+   "tool": "traum-gedächtnis-system-fertigstellen.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -388,12 +388,6 @@
   },
   {
    "tool": "alte-marktanalysen-wieder-auf-den-neuest.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "traum-gedächtnis-system-fertigstellen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
