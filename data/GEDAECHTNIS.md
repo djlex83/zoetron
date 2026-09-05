@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12051 Fakten** · Stand 2026-09-05 21:41 UTC · aktualisiert bei jedem Herzschlag
+**12067 Fakten** · Stand 2026-09-05 21:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6993
-- **swarm_artifact:** 2347
-- **last_swarm_critique:** 782
-- **anti_pattern:** 677
-- **last_swarm_goal:** 530
-- **strategy:** 340
+- **dream:** 6998
+- **swarm_artifact:** 2353
+- **last_swarm_critique:** 783
+- **anti_pattern:** 679
+- **last_swarm_goal:** 531
+- **strategy:** 341
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -16,6 +16,53 @@
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler halbieren
+:2`
+*05.09. 21:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 4): Neural Architecture Search with Progressive Refinement - import numpy as np import pandas as pd import torch import torch.nn as nn import torch.optim as optim from torch.utils.data import DataLoader, TensorDataset from sklear
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Modell-Fehler halbieren
+:1`
+*05.09. 21:53 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Ensemble Stacking with Diversity-Driven Base Learners - import numpy as np import pandas as pd from sklearn.model_selection import KFold, cross_val_predict from sklearn.ensemble import RandomForestRegressor, GradientBoostingR
+
+### `last_swarm_critique`
+*05.09. 21:51 UTC · Quelle: critic*
+
+score=1; issues=LAEUFT NICHT: Kein ausführbarer Python-Block im Artefakt vorhanden. Der Inhalt besteht ausschließlich aus Prosa/Bash-Kommando-Snippets, nicht aus Python-Code.; Der Vertrag ('Modell-Fehler halbieren') kann nicht erfüllt werden, da keine Python-L
+
+### `last_swarm_goal`
+*05.09. 21:49 UTC · Quelle: system*
+
+Modell-Fehler halbieren
+
+### `dream:20260905214940:5:6162cf`
+*05.09. 21:49 UTC · Quelle: dream*
+
+Event pruning (44 events) keeps the stream clean but leaves facts untouched, indicating a need for deeper knowledge consolidation.
+
+### `dream:20260905214940:4:d5388b`
+*05.09. 21:49 UTC · Quelle: dream*
+
+Simulations generate results that fail to translate into real actions, creating a persistent gap between theoretical and practical capabilities.
+
+### `dream:20260905214940:3:bbd7b0`
+*05.09. 21:49 UTC · Quelle: dream*
+
+Stale swarm tasks accumulate and drain system momentum; regular reflex-driven cleanup is necessary to close open loops.
+
+### `dream:20260905214940:2:df50ec`
+*05.09. 21:49 UTC · Quelle: dream*
+
+Single-model reliance guarantees eventual failure; multi-model fallback with health-aware routing is essential for sustained operation.
+
+### `dream:20260905214940:1:fa803d`
+*05.09. 21:49 UTC · Quelle: dream*
+
+Free-tier model endpoints are highly volatile, with 429 and 502 errors causing cascading failures that block decision-making.
 
 ### `dream:20260905213907:5:596cfc`
 *05.09. 21:39 UTC · Quelle: dream*
