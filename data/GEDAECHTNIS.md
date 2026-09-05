@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12078 Fakten** · Stand 2026-09-05 23:08 UTC · aktualisiert bei jedem Herzschlag
+**12078 Fakten** · Stand 2026-09-05 23:18 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7013
 - **swarm_artifact:** 2349
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905231606:5:bd8f21`
+*05.09. 23:16 UTC · Quelle: dream*
+
+The swarm converged to score 1 across 2 cycles despite evolution and role specialization, indicating the search space or mutation operator is insufficiently expressive for the problem difficulty.
+
+### `dream:20260905231606:4:2708cd`
+*05.09. 23:16 UTC · Quelle: dream*
+
+Without a pre-simulation validation gate, syntactically invalid or non-executable code reaches the simulation stage, wasting compute and evaluation cycles on fundamentally broken artifacts.
+
+### `dream:20260905231606:3:ab4db7`
+*05.09. 23:16 UTC · Quelle: dream*
+
+Evolutionary improvement starting from a 1/10 scored artifact wastes cycles; the mutation strategy cannot recover from such poor initial conditions within the available budget.
+
+### `dream:20260905231606:2:f41129`
+*05.09. 23:16 UTC · Quelle: dream*
+
+Generated code artifacts frequently lack executable Python blocks, revealing a fundamental gap between prompt intent and the code structure the model produces.
+
+### `dream:20260905231606:1:5f81fd`
+*05.09. 23:16 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is systematically unreliable due to persistent 429 rate limiting and must never serve as the primary model in any production pipeline.
 
 ### `dream:20260905230537:5:1a6e12`
 *05.09. 23:05 UTC · Quelle: dream*
@@ -46231,31 +46256,6 @@ Interface contracts (e.g., MemoryStore.add_fact) must be validated at process st
 *22.08. 23:30 UTC · Quelle: dream*
 
 Model latency exhibits extreme variance (7s–353s) requiring circuit breakers and tiered fallbacks to prevent cascade failures.
-
-### `dream:202608222314:5`
-*22.08. 23:14 UTC · Quelle: dream*
-
-Simulation revision limit of 5 is too high; it wastes cycles without improving convergence.
-
-### `dream:202608222314:4`
-*22.08. 23:14 UTC · Quelle: dream*
-
-Missing MemoryStore.add_fact method reveals interface drift between skill proposals and actual runtime contracts.
-
-### `dream:202608222314:3`
-*22.08. 23:14 UTC · Quelle: dream*
-
-Evolution improves intermediate scores (3 → 8.7) but gains don't persist to production hand-action phase.
-
-### `dream:202608222314:2`
-*22.08. 23:14 UTC · Quelle: dream*
-
-Swarm role imbalance (1 planner, 5 builders, 1 critic) correlates with non-convergence and low final scores.
-
-### `dream:202608222314:1`
-*22.08. 23:14 UTC · Quelle: dream*
-
-Model latency varies wildly (6–215 s) causing unpredictable swarm cycle times and timeout risk.
 
 ### `last_swarm_goal`
 *22.08. 21:53 UTC · Quelle: system*

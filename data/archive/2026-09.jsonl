@@ -15661,3 +15661,26 @@
 {"ts": 1788044215.947849, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.33, "gelesen": 474}}
 {"ts": 1788044218.322996, "kind": "issue_synced", "payload": {"issue": 233, "state": "open"}}
 {"ts": 1788044383.7640586, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787440440.0, "key": "dream:202608222314:5", "value": "Simulation revision limit of 5 is too high; it wastes cycles without improving convergence.", "source": "dream"}
+{"ts": 1787440440.0, "key": "dream:202608222314:4", "value": "Missing MemoryStore.add_fact method reveals interface drift between skill proposals and actual runtime contracts.", "source": "dream"}
+{"ts": 1787440440.0, "key": "dream:202608222314:3", "value": "Evolution improves intermediate scores (3 → 8.7) but gains don't persist to production hand-action phase.", "source": "dream"}
+{"ts": 1787440440.0, "key": "dream:202608222314:2", "value": "Swarm role imbalance (1 planner, 5 builders, 1 critic) correlates with non-convergence and low final scores.", "source": "dream"}
+{"ts": 1787440440.0, "key": "dream:202608222314:1", "value": "Model latency varies wildly (6–215 s) causing unpredictable swarm cycle times and timeout risk.", "source": "dream"}
+{"ts": 1788045316.0200112, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788045317.679829, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788045321.5281518, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788045321.5281487, "schalter_geoeffnet": false}}
+{"ts": 1788045334.7430003, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 13.2, "tokens_ein": 1421, "tokens_aus": 1507}}
+{"ts": 1788045334.7436163, "kind": "skill_proposal", "payload": {"proposal": "Build a ModelRouter skill that reads RateLimit-Remaining/Reset headers, maintains a token-bucket per model, and routes requests to the highest-available model with <5 s 95th-percentile latency."}}
+{"ts": 1788045334.7436762, "kind": "skill_proposal", "payload": {"proposal": "Add a CircuitBreaker decorator that trips after 3 consecutive 429/502/503 errors, quarantines the model for 60 s, emits model_quarantined, and forces fallback to the next healthy model."}}
+{"ts": 1788045334.743732, "kind": "skill_proposal", "payload": {"proposal": "Implement a ProposalGate skill that requires (1) a concrete implementation plan, (2) a measurable acceptance test (e.g., \"429 rate drops to 0% in 100 calls\"), and (3) an assigned owner before promoting any proposal to the backlog."}}
+{"ts": 1788045334.743788, "kind": "skill_proposal", "payload": {"proposal": "Create an AdaptiveDeadlineExtender that detects external API error codes (429, 502, 503) in drive execution and adds 30 s per retry to the drive timeout, capping at 3 extensions."}}
+{"ts": 1788045334.743841, "kind": "skill_proposal", "payload": {"proposal": "Develop a PreFlightProbe skill that sends a 1-token completion to candidate models before dispatch, filtering out any model that returns 429 or exceeds 5 s latency, and caches results for 60 s."}}
+{"ts": 1788045334.7438953, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788045337.1070497, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788045337.107047, "schalter_geoeffnet": false}}
+{"ts": 1788045344.3437371, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 7.2, "tokens_ein": 530, "tokens_aus": 458}}
+{"ts": 1788045344.343871, "kind": "drive_goal", "payload": {"title": "Modell-Fehler systematisch reduzieren", "why": "Das Modell macht noch zu viele Fehler. Wenn es zuverlässiger wird, können alle anderen Fähigkeiten besser darauf aufbauen.", "signal": "failure"}}
+{"ts": 1788045344.3439457, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Ergebnisse zu Ende bringen", "why": "Die Swarm-Arbeiten zur Marktanalyse liegen seit längerem unvollendet herum. Ihr Abschluss schafft Klarheit für spätere Entscheidungen.", "signal": "stale"}}
+{"ts": 1788045344.344011, "kind": "drive_goal", "payload": {"title": "Traum-Erkenntnisse nutzbar machen", "why": "Aus den Träumen liegen wertvolle Muster vor, die noch nicht in handlungsrelevantes Wissen umgewandelt wurden.", "signal": "gap"}}
+{"ts": 1788045347.5832274, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.32, "gelesen": 474}}
+{"ts": 1788045347.5848856, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Skills wirklich bauen", "tool": "fertigkeiten-wirklich-zu-ende-bringen.py", "ok": true}}
+{"ts": 1788045347.947201, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Skills wirklich bauen", "score": null, "converged": true, "mode": "reflex"}}

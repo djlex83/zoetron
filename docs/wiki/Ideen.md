@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 23:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 23:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm converged to score 1 across 2 cycles despite evolution and role specialization, indicating the search space or mutation operator is insuffic
+- Without a pre-simulation validation gate, syntactically invalid or non-executable code reaches the simulation stage, wasting compute and evaluation cy
+- Evolutionary improvement starting from a 1/10 scored artifact wastes cycles; the mutation strategy cannot recover from such poor initial conditions wi
+- Generated code artifacts frequently lack executable Python blocks, revealing a fundamental gap between prompt intent and the code structure the model 
+- The z-ai/glm-5.2:free model is systematically unreliable due to persistent 429 rate limiting and must never serve as the primary model in any producti
 - Calibration severely overestimated error counts (predicted 5 vs actual 1), suggesting the error model assumes independence but failures are correlated
 - The optimization loop failed because the proposer emitted only prose without executable Python, proving code-generation is a hard gate for convergence
 - inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (1.6-4.7s), making it the most reliable free-tier fallback.
@@ -51,11 +56,6 @@
 - Stale swarm tasks accumulate because the scheduler never enforces completion of old work before admitting new goals, starving infrastructure repairs.
 - Hand actions consistently fail because they resolve paths relative to the working directory instead of the canonical data root (ZOETRON_DATA / sys.arg
 - All model inference depends on a single external gateway (OpenRouter) with no local fallback, causing systemic failure when any provider rate-limits o
-- Model fallback is unreliable without explicit routing logic: when the primary model fails, the system does not consistently switch to alternatives, ca
-- The reflex-based self-repair mechanism (CI pipeline repair via knowledge-graph linkages) is proven effective and should be generalized to other infras
-- Stale swarm tasks create compounding drag by blocking new work, and no enforced mechanism currently clears them before new tasks are accepted.
-- High-quality skill proposals (circuit breakers, model routers, caching) accumulate repeatedly but the gap between proposal and actual deployment is th
-- Rate-limit errors (429) from z-ai/glm-5.2 are the single most persistent failure mode, recurring across every interaction window and demanding a struc
 
 ---
 
