@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12078 Fakten** · Stand 2026-09-05 23:18 UTC · aktualisiert bei jedem Herzschlag
+**12094 Fakten** · Stand 2026-09-05 23:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7013
-- **swarm_artifact:** 2349
-- **last_swarm_critique:** 783
-- **anti_pattern:** 679
-- **last_swarm_goal:** 531
-- **strategy:** 341
+- **dream:** 7018
+- **swarm_artifact:** 2355
+- **last_swarm_critique:** 784
+- **anti_pattern:** 681
+- **last_swarm_goal:** 532
+- **strategy:** 342
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -16,6 +16,51 @@
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Pläne für Simulatio:2`
+*05.09. 23:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 4, 6]): distributed simulation framework with time-warp synchronization - Baue ein verteiltes Simulations-Framework basierend auf Time-Warp/Optimistic Synchronization (Jefferson's Algorithm). Prozesse (Logical Processes) lauf
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Pläne für Simulatio:1`
+*05.09. 23:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [9, 6, 7]): declarative simulation DSL with reactive feedback loops - Entwickle eine deklarative DSL (Domain Specific Language) in Python für Simulationsspezifikation: @simulation Dekoratoren definieren Zustände, Transitionen, Pa
+
+### `last_swarm_critique`
+*05.09. 23:28 UTC · Quelle: critic*
+
+score=1; issues=Kein ausfuehrbarer Python-Block im Artefakt - nur Bash-Explorationsbefehle; Sandbox-Urteil: LAEUFT NICHT (kein Python-Code, nur Prosa/Befehle); Ziel 'Simulationen und Feedback wiederbeleben' nicht erfuellt - keine Implementierung vorhanden; Ver
+
+### `last_swarm_goal`
+*05.09. 23:27 UTC · Quelle: system*
+
+Alte Pläne für Simulationen und Feedback wiederbeleben
+
+### `dream:20260905232638:5:93bec5`
+*05.09. 23:26 UTC · Quelle: dream*
+
+Pruning runs are ineffective (0 facts/events pruned), suggesting the pruning criteria or triggers need adjustment to manage memory.
+
+### `dream:20260905232638:4:ed1949`
+*05.09. 23:26 UTC · Quelle: dream*
+
+Hand actions and reflexes are currently stable and successful, showing that basic execution loops are functioning well.
+
+### `dream:20260905232638:3:93c146`
+*05.09. 23:26 UTC · Quelle: dream*
+
+There is a significant gap between proposing skills (60 proposals) and actually building them, indicating a bottleneck in the skill implementation pipeline.
+
+### `dream:20260905232638:2:b330f3`
+*05.09. 23:26 UTC · Quelle: dream*
+
+Fallback models like nvidia/nemotron suffer from high latency (13-22s), which degrades overall system responsiveness.
+
+### `dream:20260905232638:1:e5a8f5`
+*05.09. 23:26 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is highly unreliable due to frequent 429 rate limits, necessitating a robust fallback system.
 
 ### `dream:20260905231606:5:bd8f21`
 *05.09. 23:16 UTC · Quelle: dream*
