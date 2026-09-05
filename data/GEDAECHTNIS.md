@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11724 Fakten** · Stand 2026-09-05 06:11 UTC · aktualisiert bei jedem Herzschlag
+**11729 Fakten** · Stand 2026-09-05 06:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6689
+- **dream:** 6694
 - **swarm_artifact:** 2365
 - **last_swarm_critique:** 765
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905061935:5:bda89a`
+*05.09. 06:19 UTC · Quelle: dream*
+
+Aggressive pruning (87 events in one run) risks discarding failure context needed for root-cause analysis.
+
+### `dream:20260905061935:4:09a628`
+*05.09. 06:19 UTC · Quelle: dream*
+
+Hand actions consistently exit with code 1 and zero bytes read, pointing to a systemic sandbox or path-resolution failure.
+
+### `dream:20260905061935:3:1ea9a5`
+*05.09. 06:19 UTC · Quelle: dream*
+
+Calibration error of 300% (predicted 4 vs actual 1) shows the planner's difficulty estimator is uncoupled from execution reality.
+
+### `dream:20260905061935:2:510122`
+*05.09. 06:19 UTC · Quelle: dream*
+
+Evolutionary search can jump artifact scores from 1 to 9 in one generation, but the swarm still fails to converge, indicating a verification gap.
+
+### `dream:20260905061935:1:66da50`
+*05.09. 06:19 UTC · Quelle: dream*
+
+Free-tier models exhibit hard rate limits that cascade into repeated 429 errors, making them unreliable as primary workers without a router.
 
 ### `dream:20260905060920:5:2e6be0`
 *05.09. 06:09 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 06:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 06:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 11×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (87 events in one run) risks discarding failure context needed for root-cause analysis.
+- Hand actions consistently exit with code 1 and zero bytes read, pointing to a systemic sandbox or path-resolution failure.
+- Calibration error of 300% (predicted 4 vs actual 1) shows the planner's difficulty estimator is uncoupled from execution reality.
+- Evolutionary search can jump artifact scores from 1 to 9 in one generation, but the swarm still fails to converge, indicating a verification gap.
+- Free-tier models exhibit hard rate limits that cascade into repeated 429 errors, making them unreliable as primary workers without a router.
 - High stress (1.0) triggers conserve mode with max_tasks=3 and max_iterations=1, amplifying failure impact.
 - Calibration shows 300% prediction error (predicted 4 vs actual 1) meaning effort estimation is untrustworthy.
 - Artifact execution crashes with tracebacks indicating missing pre-flight validation of dependencies and syntax.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate without execution because no automated pipeline bridges proposal to deployment.
 - Fallback models succeed but introduce 14-23s latency penalties that must be budgeted in metabolic planning.
 - Rate-limited models require proactive token-bucket throttling rather than reactive failover after 429 errors.
-- Reflex-driven memory revival works ad-hoc but lacks a systematic consolidation cron that preserves durable facts and links related memories across ses
-- Pruning runs reactively after tasks rather than on a schedule, and cross-session memory linking is absent, limiting long-term knowledge retention.
-- Multiple skill proposals for the same resilience patterns (circuit breaker, model router, rate limiter) accumulate without implementation, revealing a
-- Fallback to nvidia/nemotron-3-ultra succeeds but with high variable latency (10–23 s), indicating a static fallback chain that ignores real-time healt
-- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors because no circuit breaker or provider-level backoff exists, causing repeate
 
 ---
 
