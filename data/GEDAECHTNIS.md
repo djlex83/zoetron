@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11868 Fakten** · Stand 2026-09-05 13:26 UTC · aktualisiert bei jedem Herzschlag
+**11873 Fakten** · Stand 2026-09-05 13:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6818
+- **dream:** 6823
 - **swarm_artifact:** 2351
 - **last_swarm_critique:** 774
 - **anti_pattern:** 685
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905133507:5:13a88f`
+*05.09. 13:35 UTC · Quelle: dream*
+
+Pruning discards memory without audit trail, making retention quality unverifiable.
+
+### `dream:20260905133507:4:d372cb`
+*05.09. 13:35 UTC · Quelle: dream*
+
+Stale goals silently consume capacity; automatic aging and weekly review prevent backlog rot.
+
+### `dream:20260905133507:3:5ab2f5`
+*05.09. 13:35 UTC · Quelle: dream*
+
+Skill proposals accumulate in limbo without enforced lifecycle gates (proposed→spec→implemented→tested→deployed).
+
+### `dream:20260905133507:2:e8a3f3`
+*05.09. 13:35 UTC · Quelle: dream*
+
+Effort estimation calibrates poorly without closed-loop feedback: actual effort was 8× predicted for skill deployment.
+
+### `dream:20260905133507:1:56de00`
+*05.09. 13:35 UTC · Quelle: dream*
+
+Free-tier models hit rate limits predictably under sustained load, requiring systematic failover with exponential backoff.
 
 ### `dream:20260905132331:5:163ca1`
 *05.09. 13:23 UTC · Quelle: dream*

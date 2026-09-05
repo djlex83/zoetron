@@ -1,0 +1,159 @@
+{
+  "scan_time": "2026-09-05T13:35:35.378324",
+  "total_files": 687,
+  "total_size_bytes": 58180029,
+  "total_size_mb": 55.48,
+  "by_action": {
+    "keep": 309,
+    "delete": 2,
+    "review": 162,
+    "archive": 214
+  },
+  "by_category": {
+    "memory": 77,
+    "temp": 1,
+    "unknown": 162,
+    "result": 48,
+    "backup": 1,
+    "artifact": 397,
+    "log": 1
+  },
+  "archive_size_mb": 2.26,
+  "delete_size_mb": 0.0,
+  "top_delete_candidates": [
+    {
+      "path": "/workspace/zoetron/data/tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "rel_path": "tools/fähigkeitsvorschläge-in-echte-skills-umw.py.20260829T101635Z.bak",
+      "size_bytes": 2681,
+      "modified": 1787812317.2147682,
+      "modified_iso": "2026-08-27T06:31:57.214768",
+      "age_days": 9.3,
+      "category": "backup",
+      "action": "delete",
+      "reason": "Old backup - superseded"
+    },
+    {
+      "path": "/workspace/zoetron/data/memory/convergence_gate_state.json.tmp",
+      "rel_path": "memory/convergence_gate_state.json.tmp",
+      "size_bytes": 550,
+      "modified": 1787746836.8862145,
+      "modified_iso": "2026-08-26T12:20:36.886214",
+      "age_days": 10.1,
+      "category": "temp",
+      "action": "delete",
+      "reason": "Temporary file - safe to remove"
+    }
+  ],
+  "top_archive_candidates": [
+    {
+      "path": "/workspace/zoetron/data/artefakte/selbstdiagnose_bericht.json",
+      "rel_path": "artefakte/selbstdiagnose_bericht.json",
+      "size_bytes": 218216,
+      "modified": 1787900849.1866405,
+      "modified_iso": "2026-08-28T07:07:29.186641",
+      "age_days": 8.3,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s01_1787824516_complete-import-immune-validation-conflict-resolution-atomic.md",
+      "rel_path": "artefakte/s01_1787824516_complete-import-immune-validation-conflict-resolution-atomic.md",
+      "size_bytes": 41951,
+      "modified": 1787824516.403457,
+      "modified_iso": "2026-08-27T09:55:16.403457",
+      "age_days": 9.2,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s05_1787803986_create-zoem-py-core-module-with-zoem-data-class-and-export-f.md",
+      "rel_path": "artefakte/s05_1787803986_create-zoem-py-core-module-with-zoem-data-class-and-export-f.md",
+      "size_bytes": 35138,
+      "modified": 1787803986.9755025,
+      "modified_iso": "2026-08-27T04:13:06.975502",
+      "age_days": 9.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260829_102537.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260829_102537.json",
+      "size_bytes": 33678,
+      "modified": 1787999137.5463586,
+      "modified_iso": "2026-08-29T10:25:37.546359",
+      "age_days": 7.1,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260829_064827.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260829_064827.json",
+      "size_bytes": 31675,
+      "modified": 1787986107.432651,
+      "modified_iso": "2026-08-29T06:48:27.432651",
+      "age_days": 7.3,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260829_015253.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260829_015253.json",
+      "size_bytes": 29290,
+      "modified": 1787968373.5324247,
+      "modified_iso": "2026-08-29T01:52:53.532425",
+      "age_days": 7.5,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s06_1787887573_integriere-simulations-ergebnisse-in-memory-semantic-graph.md",
+      "rel_path": "artefakte/s06_1787887573_integriere-simulations-ergebnisse-in-memory-semantic-graph.md",
+      "size_bytes": 29028,
+      "modified": 1787887573.894266,
+      "modified_iso": "2026-08-28T03:26:13.894266",
+      "age_days": 8.4,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260829_010631.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260829_010631.json",
+      "size_bytes": 28929,
+      "modified": 1787965591.3068798,
+      "modified_iso": "2026-08-29T01:06:31.306880",
+      "age_days": 7.5,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/s06_1787848823_selbstheilende-modell-fehler-reduktion-via-router-reflex.md",
+      "rel_path": "artefakte/s06_1787848823_selbstheilende-modell-fehler-reduktion-via-router-reflex.md",
+      "size_bytes": 28820,
+      "modified": 1787848823.3455806,
+      "modified_iso": "2026-08-27T16:40:23.345581",
+      "age_days": 8.9,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    },
+    {
+      "path": "/workspace/zoetron/data/artefakte/bestandsaufnahme_marktanalyse_20260829_003219.json",
+      "rel_path": "artefakte/bestandsaufnahme_marktanalyse_20260829_003219.json",
+      "size_bytes": 28568,
+      "modified": 1787963539.5945797,
+      "modified_iso": "2026-08-29T00:32:19.594580",
+      "age_days": 7.5,
+      "category": "artifact",
+      "action": "archive",
+      "reason": "Built artifact - keep for reference"
+    }
+  ]
+}

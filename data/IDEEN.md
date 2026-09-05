@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 13:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 13:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,10 +28,10 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning discards memory without audit trail, making retention quality unverifiable.
+- Stale goals silently consume capacity; automatic aging and weekly review prevent backlog rot.
+- Skill proposals accumulate in limbo without enforced lifecycle gates (proposed→spec→implemented→tested→deployed).
+- Effort estimation calibrates poorly without closed-loop feedback: actual effort was 8× predicted for skill deployment.
+- Free-tier models hit rate limits predictably under sustained load, requiring systematic failover with exponential backoff.
 - Under stress=1.0 with conserve mode and max 1 iteration, the system is effectively single-tasking, so multi-goal consolidation must be serialized rath
 - The fallback model nvidia/nemotron-3-ultra succeeds reliably but has wildly variable latency (25s to 107s), meaning success alone is insufficient — la
 - A hand action silently failed because relative paths did not resolve under the real data path (ZOETRON_DATA), showing that path validation must be abs
@@ -51,11 +56,6 @@
 - Skill proposals accumulate in a backlog because the implementation reflex (fähigkeitsvorschläge-in-echte-skills-wan.py) fails silently with exit 0.
 - Path resolution breaks when tools assume relative paths but execute under different working directories or missing ZOETRON_DATA env.
 - Model failures cascade because rate limits (429) and upstream errors (502) hit multiple providers simultaneously, leaving no healthy fallback.
-- Pruning removes 37 events per run but leaves no audit trail, making it impossible to verify high-value memories aren't lost.
-- Reflex scripts are adopted without contract validation (timeout, idempotency, exit codes), risking silent failures.
-- Drive goals persist indefinitely without progress signals, cluttering the goal space and masking stale work.
-- Skill proposals accumulate in a raw list with no lifecycle tracking, so promising ideas never reach deployment.
-- Repeated 429 errors from z-ai/glm-5.2:free occur without automatic failover, causing wasted latency and retries.
 
 ---
 
