@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 12:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 12:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 37 events per run but leaves no audit trail, making it impossible to verify high-value memories aren't lost.
+- Reflex scripts are adopted without contract validation (timeout, idempotency, exit codes), risking silent failures.
+- Drive goals persist indefinitely without progress signals, cluttering the goal space and masking stale work.
+- Skill proposals accumulate in a raw list with no lifecycle tracking, so promising ideas never reach deployment.
+- Repeated 429 errors from z-ai/glm-5.2:free occur without automatic failover, causing wasted latency and retries.
 - Evolution runs improve scores (1→8) but swarm convergence remains false; separate code-generation from review cycles.
 - Calibration error (predicted 3 vs actual 1) indicates overconfidence in planner estimates; require empirical baseline before planning.
 - High latency variance in fallback models (17–60 s) degrades swarm convergence; implement latency-aware model routing.
@@ -51,11 +56,6 @@
 - Reflex tools (alte-schwarm-ergebnisse-aufräumen.py, modellfehler-reduzieren-fuer-zuverlaessi.py) succeed when goals map to single, deterministic scrip
 - Stale swarm tasks and unconverted skill proposals accumulate because no aging policy or completion pipeline exists to force closure or deletion.
 - Primary model z-ai/glm-5.2:free repeatedly hits 429 rate limits, causing cascading failures until fallback to nvidia/nemotron-3-ultra activates.
-- Pruning removes events but rarely facts, indicating fact-store bloat from unverified or obsolete knowledge.
-- Model health is not tracked per-provider, so the planner cannot dynamically prefer healthy, low-latency models.
-- Reflex-driven cleanup (alte-schwarm-ergebnisse-aufräumen.py) converges reliably when given a concrete, bounded goal.
-- Stale swarm tasks and skill proposals accumulate without automatic expiration or cleanup, consuming cognitive bandwidth.
-- Free-tier models (z-ai/glm-5.2) hit 429 rate limits repeatedly, causing fallback to high-latency models (nvidia/nemotron ~19s).
 
 ---
 

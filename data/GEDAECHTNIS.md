@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11864 Fakten** · Stand 2026-09-05 12:28 UTC · aktualisiert bei jedem Herzschlag
+**11862 Fakten** · Stand 2026-09-05 12:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6803
-- **swarm_artifact:** 2358
+- **dream:** 6808
+- **swarm_artifact:** 2354
 - **last_swarm_critique:** 773
-- **anti_pattern:** 689
+- **anti_pattern:** 687
 - **last_swarm_goal:** 521
-- **strategy:** 346
+- **strategy:** 345
 - **tool:** 158
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905123707:5:cb6610`
+*05.09. 12:37 UTC · Quelle: dream*
+
+Pruning removes 37 events per run but leaves no audit trail, making it impossible to verify high-value memories aren't lost.
+
+### `dream:20260905123707:4:5193bd`
+*05.09. 12:37 UTC · Quelle: dream*
+
+Reflex scripts are adopted without contract validation (timeout, idempotency, exit codes), risking silent failures.
+
+### `dream:20260905123707:3:e5ef33`
+*05.09. 12:37 UTC · Quelle: dream*
+
+Drive goals persist indefinitely without progress signals, cluttering the goal space and masking stale work.
+
+### `dream:20260905123707:2:2e5147`
+*05.09. 12:37 UTC · Quelle: dream*
+
+Skill proposals accumulate in a raw list with no lifecycle tracking, so promising ideas never reach deployment.
+
+### `dream:20260905123707:1:e71062`
+*05.09. 12:37 UTC · Quelle: dream*
+
+Repeated 429 errors from z-ai/glm-5.2:free occur without automatic failover, causing wasted latency and retries.
 
 ### `tool:fähigkeitsvorschläge-in-produktion-überf`
 *05.09. 12:26 UTC · Quelle: hands*
@@ -45126,13 +45151,3 @@ ABGELEHNT von Evolution (Score 8): Immutable, namespaced skill‑goal graph cons
 *22.08. 12:57 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 7): Robust input validation and explicit error handling - Replace mean_absolute_error with a wrapper that validates non‑empty inputs and raises ValueError with a clear message when they are empty. For orphaned session detection,
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erinnerungen besse:2`
-*22.08. 12:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Graph‑based memory network with weak references and version vectors - Model memories as nodes in a directed graph where each node holds a deep‑copied snapshot of tags, embedding, and a version vector. MemoryStore maintains a
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Traum-Erinnerungen besse:1`
-*22.08. 12:33 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Event‑sourced CQRS architecture - Store each fact addition as an immutable event (dream_id, fact, timestamp, tags, embedding) in an append‑only event log. DreamMemory becomes a read‑model projection rebuilt on demand by repla
