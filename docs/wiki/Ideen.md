@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 02:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 02:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,9 +24,9 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Systematic 71:39 failure-to-success ratio proves free-tier reliance is unsustainable without automated health-based failover.
+- Dream consolidation preserves summaries but loses executable procedures, causing repeated relearning of same patterns.
+- Skill proposals accumulate redundantly (5+ similar routing proposals) because the proposal-to-execution pipeline is broken.
+- Latency variance between working models exceeds 7x (3s vs 22s), making latency-aware routing essential for usability.
+- Rate limiting (429) affects all free-tier models simultaneously, indicating provider-level quota exhaustion rather than model-specific failures.
 - Dream-memory consolidation has five stale tasks blocking cross-cycle knowledge transfer, yet pruning only removes events not facts.
 - Drive goals (reduce errors, finish dream memory, translate goals) remain declarative without executable mission plans or acceptance criteria.
 - Five duplicate skill proposals for circuit-breaker/fallback/routing indicate no proposal deduplication gate, bloating the skill backlog.
@@ -51,11 +56,6 @@
 - InclusionAI Ling-3.0-flash-fin demonstrates consistent reliability and low latency, making it a strong default choice during periods of high provider 
 - Upstream 502 errors on high-parameter models like Nvidia Nemotron suggest that service overload is common and requires graceful fallback handling.
 - Free-tier models from the same provider frequently hit 429 rate limits simultaneously, indicating shared provider-level quotas rather than per-model l
-- The swarm evolved yet failed to converge, suggesting the critic role lacks veto power or the convergence threshold is misconfigured.
-- Pruning 149 events per cycle keeps memory bounded but discards failure context needed for root-cause analysis.
-- Hand actions failing with exit=1 and zero bytes read indicate path-resolution or permission bugs that evade static checks.
-- The simulation gate approved a live commit despite risks=4, violating its own safety contract and allowing a non-converged swarm run.
-- Free-tier models on OpenRouter consistently hit 429 rate limits under load, making them unreliable for production workflows without a router.
 
 ---
 

@@ -1,21 +1,66 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11629 Fakten** · Stand 2026-09-05 02:13 UTC · aktualisiert bei jedem Herzschlag
+**11646 Fakten** · Stand 2026-09-05 02:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6599
-- **swarm_artifact:** 2371
-- **last_swarm_critique:** 762
-- **anti_pattern:** 673
-- **last_swarm_goal:** 510
-- **strategy:** 349
+- **dream:** 6604
+- **swarm_artifact:** 2377
+- **last_swarm_critique:** 763
+- **anti_pattern:** 675
+- **last_swarm_goal:** 511
+- **strategy:** 350
 - **tool:** 153
-- **hand_result:** 125
+- **hand_result:** 126
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Schwarm-Aufgaben zu Ende:1`
+*05.09. 02:27 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Async Coroutine-Based Concurrent Task Processing - Implement the swarm task system using Python's asyncio library. Each swarm agent is an async coroutine that pulls tasks from an asyncio.Queue, processes them, and signals com
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Schwarm-Aufgaben zu Ende:0`
+*05.09. 02:27 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*05.09. 02:26 UTC · Quelle: critic*
+
+score=1; issues=First artifact has syntax error at line 246: `for o in orphan_details := report | ast):` - invalid walrus operator usage in for-loop, `|` operator with undefined `ast` variable; Sandbox verdict confirms first artifact 'LAEUFT NICHT' - hard exec
+
+### `last_swarm_goal`
+*05.09. 02:21 UTC · Quelle: system*
+
+Schwarm-Aufgaben zu Ende bringen
+
+### `dream:20260905022142:5:696728`
+*05.09. 02:21 UTC · Quelle: dream*
+
+Systematic 71:39 failure-to-success ratio proves free-tier reliance is unsustainable without automated health-based failover.
+
+### `dream:20260905022142:4:e5cd22`
+*05.09. 02:21 UTC · Quelle: dream*
+
+Dream consolidation preserves summaries but loses executable procedures, causing repeated relearning of same patterns.
+
+### `dream:20260905022142:3:9a2467`
+*05.09. 02:21 UTC · Quelle: dream*
+
+Skill proposals accumulate redundantly (5+ similar routing proposals) because the proposal-to-execution pipeline is broken.
+
+### `dream:20260905022142:2:adaa3a`
+*05.09. 02:21 UTC · Quelle: dream*
+
+Latency variance between working models exceeds 7x (3s vs 22s), making latency-aware routing essential for usability.
+
+### `dream:20260905022142:1:678c11`
+*05.09. 02:21 UTC · Quelle: dream*
+
+Rate limiting (429) affects all free-tier models simultaneously, indicating provider-level quota exhaustion rather than model-specific failures.
 
 ### `dream:20260905021114:5:036651`
 *05.09. 02:11 UTC · Quelle: dream*

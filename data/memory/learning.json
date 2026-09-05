@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 02:11:48",
+ "stand": "2026-09-05 02:27:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,12 +21,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -42,6 +36,12 @@
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -91,6 +91,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
@@ -177,12 +183,6 @@
    "quote": 0.0
   },
   {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -222,18 +222,6 @@
    "tool": "wissenbasis-aufräumen-und-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-analyseergebnisse-mit-neuen-da.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "wissensgraph-verknüpfungen-reparieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -429,12 +417,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.789,
- "simulationen_angewandt": 20,
+ "haende_quote": 0.767,
+ "simulationen_angewandt": 22,
  "swarm_scores": {
-  "n": 27,
+  "n": 28,
   "best": 9.0,
-  "schnitt": 7.11
+  "schnitt": 6.89
  },
  "score_nach_ziel_typ": {
   "bau": {
@@ -442,8 +430,8 @@
    "schnitt": 9.0
   },
   "analyse": {
-   "n": 25,
-   "schnitt": 6.96
+   "n": 26,
+   "schnitt": 6.73
   }
  }
 }
