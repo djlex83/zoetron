@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 22:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 22:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand-action tool fails with exit code 1 and no error message, indicating silent execution failures require mandatory stdout/stderr capture and structu
+- Swarm execution with planner/builder/critic roles failed to converge (score 1) despite evolution, suggesting role prompts lack concrete verification s
+- Evolutionary search produced a 9/10 variant from a 1/10 seed, proving that generating multiple code variants and selecting by critic score reliably re
+- Calibration error of 5 points (predicted 6 vs actual 1) reveals planning estimates are unmoored from execution reality and must be updated via Bayesia
+- The glm-5.2 model consistently fails with 429 rate-limit errors while nemotron-3-ultra succeeds, indicating urgent need for per-model quota tracking a
 - Evolutionary variant search (3 variants) boosted score from 1 to 9, proving multi-candidate generation with selection outperforms single-shot.
 - Calibration error of 500% (predicted 6 vs actual 1) indicates missing task-complexity heuristics for CI/repair tasks.
 - Generated artifacts contain basic syntax errors (e.g., "is not" with string literals) that simulation catches late; need pre-flight static validation.
@@ -51,11 +56,6 @@
 - Stale swarm tasks accumulate and drain system momentum; regular reflex-driven cleanup is necessary to close open loops.
 - Single-model reliance guarantees eventual failure; multi-model fallback with health-aware routing is essential for sustained operation.
 - Free-tier model endpoints are highly volatile, with 429 and 502 errors causing cascading failures that block decision-making.
-- Pruning removes events but not facts, causing knowledge-graph stagnation despite regular cleanup cycles.
-- Reflex-based targeted skill building converged successfully, proving directed training outperforms random exploration.
-- Drive goals repeatedly surface the same three failure modes: model unreliability, stale work accumulation, and simulation–action gap.
-- Nemotron fallback succeeds but latency (10–18 s) exceeds interactive thresholds, requiring timeout budgets.
-- The glm-5.2 model consistently fails with 429 rate-limit errors, making it unreliable as a primary model.
 
 ---
 

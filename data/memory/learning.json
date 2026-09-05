@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 22:22:35",
+ "stand": "2026-09-05 22:33:31",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -28,6 +28,12 @@
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -67,12 +73,6 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "marktanalyse-swarm-arbeit-abschließen.py",
@@ -127,12 +127,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
@@ -223,6 +217,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "modellfehler-verstehen-und-verringern.py",
@@ -381,7 +381,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.731,
+ "haende_quote": 0.732,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 33,

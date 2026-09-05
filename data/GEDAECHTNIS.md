@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12068 Fakten** · Stand 2026-09-05 22:24 UTC · aktualisiert bei jedem Herzschlag
+**12073 Fakten** · Stand 2026-09-05 22:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7003
+- **dream:** 7008
 - **swarm_artifact:** 2349
 - **last_swarm_critique:** 783
 - **anti_pattern:** 679
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905223258:5:650e82`
+*05.09. 22:32 UTC · Quelle: dream*
+
+Hand-action tool fails with exit code 1 and no error message, indicating silent execution failures require mandatory stdout/stderr capture and structured error envelopes.
+
+### `dream:20260905223258:4:8cb45e`
+*05.09. 22:32 UTC · Quelle: dream*
+
+Swarm execution with planner/builder/critic roles failed to converge (score 1) despite evolution, suggesting role prompts lack concrete verification steps and shared context.
+
+### `dream:20260905223258:3:bba9f6`
+*05.09. 22:32 UTC · Quelle: dream*
+
+Evolutionary search produced a 9/10 variant from a 1/10 seed, proving that generating multiple code variants and selecting by critic score reliably rescues failed tasks.
+
+### `dream:20260905223258:2:fb7844`
+*05.09. 22:32 UTC · Quelle: dream*
+
+Calibration error of 5 points (predicted 6 vs actual 1) reveals planning estimates are unmoored from execution reality and must be updated via Bayesian correction after each task.
+
+### `dream:20260905223258:1:0a7d5c`
+*05.09. 22:32 UTC · Quelle: dream*
+
+The glm-5.2 model consistently fails with 429 rate-limit errors while nemotron-3-ultra succeeds, indicating urgent need for per-model quota tracking and automatic fallback.
 
 ### `dream:20260905222211:5:1ede7b`
 *05.09. 22:22 UTC · Quelle: dream*
