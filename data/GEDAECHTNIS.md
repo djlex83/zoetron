@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11687 Fakten** · Stand 2026-09-05 04:38 UTC · aktualisiert bei jedem Herzschlag
+**11688 Fakten** · Stand 2026-09-05 04:55 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6654
-- **swarm_artifact:** 2368
+- **dream:** 6659
+- **swarm_artifact:** 2364
 - **last_swarm_critique:** 764
 - **anti_pattern:** 675
 - **last_swarm_goal:** 512
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905045253:5:4865c0`
+*05.09. 04:52 UTC · Quelle: dream*
+
+Pruning removes high-frequency events but durable consolidation only occurs during explicit dream cycles, risking memory bloat.
+
+### `dream:20260905045253:4:9482b4`
+*05.09. 04:52 UTC · Quelle: dream*
+
+Skill proposals accumulate without an automated lifecycle to evaluate, deduplicate, test, and promote the best ones.
+
+### `dream:20260905045253:3:6ba2ee`
+*05.09. 04:52 UTC · Quelle: dream*
+
+Reflex tools reliably converge stale goals when explicitly invoked, but invocation depends on manual or opportunistic matching.
+
+### `dream:20260905045253:2:c246db`
+*05.09. 04:52 UTC · Quelle: dream*
+
+Stale goals (swarm tasks, skill execution gap) persist across cycles because no automatic escalation or scheduler closes them.
+
+### `dream:20260905045253:1:7aefe7`
+*05.09. 04:52 UTC · Quelle: dream*
+
+Provider rate limits (429) cause repeated model failures that are only mitigated by reactive fallback to a working model.
 
 ### `tool:traum-gedächtnis-system-fertigstellen`
 *05.09. 04:35 UTC · Quelle: hands*
