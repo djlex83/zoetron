@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 05:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 05:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 11×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
+- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven memory revival works ad-hoc but lacks a systematic consolidation cron that preserves durable facts and links related memories across ses
+- Pruning runs reactively after tasks rather than on a schedule, and cross-session memory linking is absent, limiting long-term knowledge retention.
+- Multiple skill proposals for the same resilience patterns (circuit breaker, model router, rate limiter) accumulate without implementation, revealing a
+- Fallback to nvidia/nemotron-3-ultra succeeds but with high variable latency (10–23 s), indicating a static fallback chain that ignores real-time healt
+- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors because no circuit breaker or provider-level backoff exists, causing repeate
 - Automatic pruning (44 events, 4 facts) prevents memory bloat but may discard failure-pattern evidence needed for future model routing decisions.
 - Task succeeded despite 70% model failure rate because the swarm architecture tolerates individual model failures through role redundancy (planner/buil
 - Calibration error of 100% (predicted 4 cycles vs actual 8) reveals planning horizon blindness for novel system-building tasks.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate but are never executed because no scheduler triggers them from the proposal store.
 - Relative file paths fail to resolve against the real data root (ZOETRON_DATA), causing hand actions to read nothing.
 - Free tier models consistently hit 429 rate limits and 502 upstream errors, requiring a robust fallback chain with exponential backoff.
-- Recurring drive goals (reliability, stale tasks, execution gap) signal that root-cause fixes are not being institutionalized; each cycle treats sympto
-- Fallback model (Nemotron) succeeds but exhibits high latency variance (10–21s), indicating need for latency-aware routing and shadow validation of alt
-- Skill proposals accumulate without implementation because no automated evaluator scores impact/effort/risk and auto-generates PRs for top candidates.
-- Reflex tools reliably close stale swarm tasks when invoked, but the system lacks a scheduler to trigger them autonomously for recurring backlog.
-- Model 429 errors on GLM-5.2 reveal absent rate-limit awareness; proactive token-bucket throttling per provider would prevent cascade fallbacks.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11714 Fakten** · Stand 2026-09-05 05:40 UTC · aktualisiert bei jedem Herzschlag
+**11719 Fakten** · Stand 2026-09-05 05:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6674
+- **dream:** 6679
 - **swarm_artifact:** 2370
 - **last_swarm_critique:** 765
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905054827:5:8e20a7`
+*05.09. 05:48 UTC · Quelle: dream*
+
+Reflex-driven memory revival works ad-hoc but lacks a systematic consolidation cron that preserves durable facts and links related memories across sessions.
+
+### `dream:20260905054827:4:75677a`
+*05.09. 05:48 UTC · Quelle: dream*
+
+Pruning runs reactively after tasks rather than on a schedule, and cross-session memory linking is absent, limiting long-term knowledge retention.
+
+### `dream:20260905054827:3:8ebec2`
+*05.09. 05:48 UTC · Quelle: dream*
+
+Multiple skill proposals for the same resilience patterns (circuit breaker, model router, rate limiter) accumulate without implementation, revealing a missing automated promotion pipeline.
+
+### `dream:20260905054827:2:b048f7`
+*05.09. 05:48 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra succeeds but with high variable latency (10–23 s), indicating a static fallback chain that ignores real-time health and latency metrics.
+
+### `dream:20260905054827:1:3d6e2e`
+*05.09. 05:48 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors because no circuit breaker or provider-level backoff exists, causing repeated wasted calls.
 
 ### `dream:20260905053733:5:fc8b80`
 *05.09. 05:37 UTC · Quelle: dream*
