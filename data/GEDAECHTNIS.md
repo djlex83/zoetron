@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11647 Fakten** · Stand 2026-09-05 03:10 UTC · aktualisiert bei jedem Herzschlag
+**11649 Fakten** · Stand 2026-09-05 03:22 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6614
-- **swarm_artifact:** 2369
+- **dream:** 6619
+- **swarm_artifact:** 2367
 - **last_swarm_critique:** 763
 - **anti_pattern:** 675
 - **last_swarm_goal:** 511
-- **strategy:** 349
+- **strategy:** 348
 - **tool:** 153
 - **hand_result:** 126
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905031854:5:d1d6ea`
+*05.09. 03:18 UTC · Quelle: dream*
+
+Stale swarm tasks remain incomplete because the reflex tool lacks idempotent resume logic and per-task checkpointing.
+
+### `dream:20260905031854:4:d876ce`
+*05.09. 03:18 UTC · Quelle: dream*
+
+High stress (1.0) triggers conserve mode that caps tasks/iterations, starving the very remediation needed to lower stress.
+
+### `dream:20260905031854:3:ab105e`
+*05.09. 03:18 UTC · Quelle: dream*
+
+Hand actions fail on path resolution when sys.argv[1] and ZOETRON_DATA diverge, revealing missing path canonicalization.
+
+### `dream:20260905031854:2:940c2c`
+*05.09. 03:18 UTC · Quelle: dream*
+
+Skill proposals accumulate but never execute because no automated proposal-to-action pipeline validates and deploys them.
+
+### `dream:20260905031854:1:6ec866`
+*05.09. 03:18 UTC · Quelle: dream*
+
+Model 429 errors persist despite fallback because the router lacks health-aware scoring and exponential backoff quarantine.
 
 ### `dream:20260905030805:5:efa556`
 *05.09. 03:08 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 03:08:25",
+ "stand": "2026-09-05 03:20:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -213,12 +213,6 @@
    "quote": 1.0
   },
   {
-   "tool": "traum-ideen-zu-fähigkeiten-machen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "modellfehler-dauerhaft-reduzieren.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -427,23 +421,29 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.767,
- "simulationen_angewandt": 22,
+ "haende_quote": 0.772,
+ "simulationen_angewandt": 21,
  "swarm_scores": {
   "n": 28,
   "best": 9.0,
   "schnitt": 6.89
  },
  "score_nach_ziel_typ": {
-  "bau": {
-   "n": 2,
-   "schnitt": 9.0
-  },
   "analyse": {
    "n": 26,
    "schnitt": 6.73
+  },
+  "bau": {
+   "n": 1,
+   "schnitt": 9.0
   }
  }
 }
