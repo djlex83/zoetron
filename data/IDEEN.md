@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 11:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 11:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,18 +29,23 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 2×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 2×)*
 - Fähigkeiten wirklich ausprobieren statt nur planen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events but rarely facts, indicating fact-store bloat from unverified or obsolete knowledge.
+- Model health is not tracked per-provider, so the planner cannot dynamically prefer healthy, low-latency models.
+- Reflex-driven cleanup (alte-schwarm-ergebnisse-aufräumen.py) converges reliably when given a concrete, bounded goal.
+- Stale swarm tasks and skill proposals accumulate without automatic expiration or cleanup, consuming cognitive bandwidth.
+- Free-tier models (z-ai/glm-5.2) hit 429 rate limits repeatedly, causing fallback to high-latency models (nvidia/nemotron ~19s).
 - Stale swarm projects and old dream memories represent untapped potential for new combinations and should be actively reviewed.
 - Regular pruning of events keeps the memory footprint manageable without pruning essential facts.
 - The system successfully uses reflex actions to implement proposed skills, showing a working self-improvement loop.
@@ -51,11 +56,6 @@
 - Swarm tasks consistently fail to converge (score 1, converged=false) due to missing critic-to-builder feedback loops for stale work items.
 - The 1800-second circuit-breaker lockout after three consecutive errors is too blunt, discarding potentially recovered capacity and lacking graded degr
 - Free-tier models exhibit systemic 429/502 failure patterns rather than transient errors, making reactive fallback insufficient for reliable operation.
-- Evolution runs with critic-guided variant generation can recover from 1/10 to 9/9/9 when the critic explicitly identifies the missing executable code 
-- Calibration systematically overestimates completion for code-dependent tasks (predicted 4 vs actual 1); predicted scores for such tasks should be halv
-- Models accumulating 3 consecutive failures should be auto-blocked for 30 minutes to prevent wasting cycles on a known-bad endpoint.
-- Swarm tasks that require executable Python blocks fail when models output prose only; a hard validator must reject any artifact lacking a runnable cod
-- Free-tier OpenRouter models are chronically rate-limited (429) and upstream-overloaded (502); a pool of 3+ fallback models with automatic failover is 
 
 ---
 

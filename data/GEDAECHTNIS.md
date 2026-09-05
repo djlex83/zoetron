@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11832 Fakten** · Stand 2026-09-05 11:35 UTC · aktualisiert bei jedem Herzschlag
+**11837 Fakten** · Stand 2026-09-05 11:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6788
+- **dream:** 6793
 - **swarm_artifact:** 2350
 - **last_swarm_critique:** 771
 - **anti_pattern:** 687
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905114326:5:ffff1f`
+*05.09. 11:43 UTC · Quelle: dream*
+
+Pruning removes events but rarely facts, indicating fact-store bloat from unverified or obsolete knowledge.
+
+### `dream:20260905114326:4:feb500`
+*05.09. 11:43 UTC · Quelle: dream*
+
+Model health is not tracked per-provider, so the planner cannot dynamically prefer healthy, low-latency models.
+
+### `dream:20260905114326:3:37a182`
+*05.09. 11:43 UTC · Quelle: dream*
+
+Reflex-driven cleanup (alte-schwarm-ergebnisse-aufräumen.py) converges reliably when given a concrete, bounded goal.
+
+### `dream:20260905114326:2:0b64a3`
+*05.09. 11:43 UTC · Quelle: dream*
+
+Stale swarm tasks and skill proposals accumulate without automatic expiration or cleanup, consuming cognitive bandwidth.
+
+### `dream:20260905114326:1:bad2a1`
+*05.09. 11:43 UTC · Quelle: dream*
+
+Free-tier models (z-ai/glm-5.2) hit 429 rate limits repeatedly, causing fallback to high-latency models (nvidia/nemotron ~19s).
 
 ### `dream:20260905113251:5:0a411d`
 *05.09. 11:32 UTC · Quelle: dream*
