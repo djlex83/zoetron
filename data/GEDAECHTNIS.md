@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12094 Fakten** · Stand 2026-09-05 23:31 UTC · aktualisiert bei jedem Herzschlag
+**12081 Fakten** · Stand 2026-09-05 23:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7018
-- **swarm_artifact:** 2355
+- **dream:** 7013
+- **swarm_artifact:** 2350
 - **last_swarm_critique:** 784
-- **anti_pattern:** 681
+- **anti_pattern:** 679
 - **last_swarm_goal:** 532
-- **strategy:** 342
+- **strategy:** 341
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905235459:5:8fb702`
+*05.09. 23:54 UTC · Quelle: dream*
+
+Automatic pruning (5 facts, 20 events) occurs but stale-task reaper and TTL enforcement are missing, allowing zombie tasks to persist.
+
+### `dream:20260905235459:4:0c74cf`
+*05.09. 23:54 UTC · Quelle: dream*
+
+Swarm intelligence and reflex mechanisms exist but are underutilized; drive goals show stale signals for swarm revival and memory cleanup.
+
+### `dream:20260905235459:3:ce744e`
+*05.09. 23:54 UTC · Quelle: dream*
+
+Conserve-mode throttling starves critical remediation; a protected minimum remediation quota (1 task/iteration) is needed to prevent stale-task accumulation.
+
+### `dream:20260905235459:2:3b4a51`
+*05.09. 23:54 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on the same resilience pattern: circuit breaker + prompt-hash cache + local fallback + provider health routing, indicating a clear architectural gap.
+
+### `dream:20260905235459:1:5bc664`
+*05.09. 23:54 UTC · Quelle: dream*
+
+The system suffers from a single-point-of-failure in model inference: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra works but with high latency variance (11.7-25.4s).
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Pläne für Simulatio:2`
 *05.09. 23:28 UTC · Quelle: evolution*
@@ -46232,16 +46257,6 @@ Simulation weight must be dynamically calibrated against rolling MAE to avoid ov
 
 Contract validation at process boundaries prevents cascade failures like AttributeError in hand-action batches.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler verringern :1`
-*22.08. 23:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.7): Data-Centric AI via Synthetic Augmentation & Active Curation - Shift focus from model complexity to training data quality. Train a conditional CTGAN/TVAE on tabular data to generate synthetic samples targeting underrepresen
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler verringern :0`
-*22.08. 23:51 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6.3): AutoML-driven Neural Architecture Search with Meta-Learning - Replace manual pipeline construction with an AutoML framework that jointly optimizes preprocessing, feature engineering, model architecture, and hyperparameters
-
 ### `last_swarm_critique`
 *22.08. 23:51 UTC · Quelle: critic*
 
@@ -46251,56 +46266,6 @@ score=3; issues=All five artifacts are incomplete (cut off mid-implementation), 
 *22.08. 23:46 UTC · Quelle: system*
 
 Modellfehler verringern durch besseres Training
-
-### `dream:202608222345:5`
-*22.08. 23:45 UTC · Quelle: dream*
-
-Pruning thresholds are ineffective (0 facts/events pruned); 30-day/100-cycle limits are either too loose or not evaluated against actual access patterns.
-
-### `dream:202608222345:4`
-*22.08. 23:45 UTC · Quelle: dream*
-
-Swarm cycles start with role-balance intent but no enforcement mechanism exists; planner/critic/builder minimums remain unenforced across cycles.
-
-### `dream:202608222345:3`
-*22.08. 23:45 UTC · Quelle: dream*
-
-Simulations produce revisions (5 risks, 5 revisions) but are rarely validated in production; the calibration loop shows MAE>1.5 threshold is never measured.
-
-### `dream:202608222345:2`
-*22.08. 23:45 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack a deployment pipeline; only 2 of 11+ proposals show instantiation tracking, creating a proposal–production gap.
-
-### `dream:202608222345:1`
-*22.08. 23:45 UTC · Quelle: dream*
-
-Model latency varies 50x (7s–353s) causing cascading timeouts; a hard SLO with tiered fallback is required to bound tail latency.
-
-### `dream:202608222330:5`
-*22.08. 23:30 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack activation tracking, leaving proposed capabilities dormant and unverified.
-
-### `dream:202608222330:4`
-*22.08. 23:30 UTC · Quelle: dream*
-
-Simulation revision loops hit the maximum (5) without convergence, indicating missing exit criteria and auto-escalation triggers.
-
-### `dream:202608222330:3`
-*22.08. 23:30 UTC · Quelle: dream*
-
-Swarm role imbalance (5 builders, 1 planner, 1 critic) consistently produces low scores and non-convergence; minimum role quotas are essential.
-
-### `dream:202608222330:2`
-*22.08. 23:30 UTC · Quelle: dream*
-
-Interface contracts (e.g., MemoryStore.add_fact) must be validated at process start and before every hand-action batch to fail fast on missing methods.
-
-### `dream:202608222330:1`
-*22.08. 23:30 UTC · Quelle: dream*
-
-Model latency exhibits extreme variance (7s–353s) requiring circuit breakers and tiered fallbacks to prevent cascade failures.
 
 ### `last_swarm_goal`
 *22.08. 21:53 UTC · Quelle: system*
