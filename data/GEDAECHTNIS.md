@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11878 Fakten** · Stand 2026-09-05 12:56 UTC · aktualisiert bei jedem Herzschlag
+**11868 Fakten** · Stand 2026-09-05 13:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6813
-- **swarm_artifact:** 2360
+- **dream:** 6818
+- **swarm_artifact:** 2351
 - **last_swarm_critique:** 774
-- **anti_pattern:** 689
+- **anti_pattern:** 685
 - **last_swarm_goal:** 522
-- **strategy:** 346
+- **strategy:** 344
 - **tool:** 158
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905132331:5:163ca1`
+*05.09. 13:23 UTC · Quelle: dream*
+
+Under stress=1.0 with conserve mode and max 1 iteration, the system is effectively single-tasking, so multi-goal consolidation must be serialized rather than parallelized to avoid resource exhaustion.
+
+### `dream:20260905132331:4:557415`
+*05.09. 13:23 UTC · Quelle: dream*
+
+The fallback model nvidia/nemotron-3-ultra succeeds reliably but has wildly variable latency (25s to 107s), meaning success alone is insufficient — latency-aware routing is needed for predictable throughput.
+
+### `dream:20260905132331:3:09c8ea`
+*05.09. 13:23 UTC · Quelle: dream*
+
+A hand action silently failed because relative paths did not resolve under the real data path (ZOETRON_DATA), showing that path validation must be absolute and explicit before any file operation.
+
+### `dream:20260905132331:2:b06437`
+*05.09. 13:23 UTC · Quelle: dream*
+
+The skill-to-production pipeline failed on first attempt but succeeded after simulation with 5 revisions, revealing that deployment-grade skill transformations need a validated simulation gate before production handoff.
+
+### `dream:20260905132331:1:59ecbe`
+*05.09. 13:23 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model fails with 429 errors on every single call, indicating a persistent rate-limit or access issue that requires immediate removal from the model rotation rather than repeated retry.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten schneller nu:1`
 *05.09. 12:52 UTC · Quelle: evolution*
@@ -45176,23 +45201,3 @@ ABGELEHNT von Evolution (Score 9): Adopt exponential back‑with jitter and expl
 *22.08. 13:56 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Implement missing diagnostic method and tighten error classification - Add the `_test_issue_operations` method to the diagnostic script, ensuring it exercises create, read, update, and delete flows. Simultaneously rewrite the
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeitsvorschläge in :2`
-*22.08. 13:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Configuration‑Driven YAML Template Engine - Externalize all variant‑specific logic (bullet regex, transformation rules, default values) into a YAML configuration file. A small engine loads the config, compiles the regexes, an
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeitsvorschläge in :0`
-*22.08. 13:22 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fehler beim Handeln vers:1`
-*22.08. 12:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Immutable, namespaced skill‑goal graph construction - Separate the node namespaces for skills and goals by prefixing identifiers (e.g., "skill:" + name and "goal:" + name) before adding them to the graph. Store the node type
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Fehler beim Handeln vers:0`
-*22.08. 12:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Robust input validation and explicit error handling - Replace mean_absolute_error with a wrapper that validates non‑empty inputs and raises ValueError with a clear message when they are empty. For orphaned session detection,
