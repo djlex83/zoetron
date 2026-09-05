@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11831 Fakten** · Stand 2026-09-05 10:38 UTC · aktualisiert bei jedem Herzschlag
+**11836 Fakten** · Stand 2026-09-05 10:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6768
+- **dream:** 6773
 - **swarm_artifact:** 2370
 - **last_swarm_critique:** 770
 - **anti_pattern:** 685
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905104602:5:415459`
+*05.09. 10:46 UTC · Quelle: dream*
+
+Metabolism conserve mode (max_tasks=3, max_iterations=1) prevents retry depth needed to overcome transient provider errors.
+
+### `dream:20260905104602:4:502669`
+*05.09. 10:46 UTC · Quelle: dream*
+
+Execution fails when planner emits only prose instead of executable code blocks; a code-block validator gate is missing.
+
+### `dream:20260905104602:3:0a6f9a`
+*05.09. 10:46 UTC · Quelle: dream*
+
+Nemotron-3-ultra exhibits extreme latency variance (5.7s to 87.6s) and 502 upstream errors, violating SLA assumptions.
+
+### `dream:20260905104602:2:7cc507`
+*05.09. 10:46 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free consistently succeeds with low latency (1.3-2.0s) while larger models fail or stall.
+
+### `dream:20260905104602:1:50f320`
+*05.09. 10:46 UTC · Quelle: dream*
+
+Free-tier models suffer cascading 429 rate limits under load, making them unreliable for time-bounded workflows.
 
 ### `dream:20260905103527:5:942b05`
 *05.09. 10:35 UTC · Quelle: dream*

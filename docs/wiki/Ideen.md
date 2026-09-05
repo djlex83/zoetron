@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 10:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 10:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism conserve mode (max_tasks=3, max_iterations=1) prevents retry depth needed to overcome transient provider errors.
+- Execution fails when planner emits only prose instead of executable code blocks; a code-block validator gate is missing.
+- Nemotron-3-ultra exhibits extreme latency variance (5.7s to 87.6s) and 502 upstream errors, violating SLA assumptions.
+- inclusionai/ling-3.0-flash-fin:free consistently succeeds with low latency (1.3-2.0s) while larger models fail or stall.
+- Free-tier models suffer cascading 429 rate limits under load, making them unreliable for time-bounded workflows.
 - Swarm task completion fails silently (exit code 1, no error) because the reflex tool lacks idempotency verification and automatic retry logic.
 - The system enters conserve mode at stress=1.0 but continues attempting speculative model calls instead of restricting to a single validated primary.
 - Retrying rate-limited models without provider-aware exponential backoff wastes the limited task budget and accelerates stress-induced conserve mode.
@@ -51,11 +56,6 @@
 - Stale drive goals (swarm plans, proposal-to-execution) recur across cycles, indicating no mechanism to promote stale signals into concrete work packag
 - Skill proposals accumulate (5+ in this log) but execution gap persists: proposals like artifact validator and model monitor are re-proposed instead of
 - Rate-limited models (429 errors) repeatedly fail but fallback to nemotron succeeds, revealing a reactive-only routing strategy without proactive healt
-- Metabolism stress at 1.0 forces conserve mode (max_tasks=3), throttling the very remediation tasks needed to reduce load.
-- Swarm tasks start but never complete, indicating missing heartbeat monitoring or retry logic for long-running background work.
-- Hand actions fail because relative paths do not resolve against ZOETRON_DATA, causing zero file I/O despite successful process exit.
-- Skill proposals accumulate but the reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' fails silently, leaving a deployment gap between idea and
-- Free-tier models consistently hit 429 rate limits and 502 upstream errors, making them unreliable as primary inference providers without a health-awar
 
 ---
 
