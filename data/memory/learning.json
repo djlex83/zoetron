@@ -1,15 +1,15 @@
 {
- "stand": "2026-09-05 10:17:37",
+ "stand": "2026-09-05 10:36:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "marktanalyse-endlich-nutzen.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -189,6 +189,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -316,12 +322,6 @@
   },
   {
    "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

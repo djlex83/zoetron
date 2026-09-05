@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11827 Fakten** · Stand 2026-09-05 10:19 UTC · aktualisiert bei jedem Herzschlag
+**11831 Fakten** · Stand 2026-09-05 10:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6763
-- **swarm_artifact:** 2371
+- **dream:** 6768
+- **swarm_artifact:** 2370
 - **last_swarm_critique:** 770
 - **anti_pattern:** 685
 - **last_swarm_goal:** 518
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905103527:5:942b05`
+*05.09. 10:35 UTC · Quelle: dream*
+
+Swarm task completion fails silently (exit code 1, no error) because the reflex tool lacks idempotency verification and automatic retry logic.
+
+### `dream:20260905103527:4:57dc67`
+*05.09. 10:35 UTC · Quelle: dream*
+
+The system enters conserve mode at stress=1.0 but continues attempting speculative model calls instead of restricting to a single validated primary.
+
+### `dream:20260905103527:3:8ce612`
+*05.09. 10:35 UTC · Quelle: dream*
+
+Retrying rate-limited models without provider-aware exponential backoff wastes the limited task budget and accelerates stress-induced conserve mode.
+
+### `dream:20260905103527:2:3a3bc1`
+*05.09. 10:35 UTC · Quelle: dream*
+
+Latency variance exceeding 20x (3.5s to 87.6s) on the same model indicates noisy-neighbor queueing effects, not model capability differences.
+
+### `dream:20260905103527:1:938109`
+*05.09. 10:35 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter share a provider-level rate limit quota, causing correlated 429 failures across all :free models simultaneously.
 
 ### `tool:lernen-aus-fehlern-systematisch-verbesse`
 *05.09. 10:17 UTC · Quelle: hands*

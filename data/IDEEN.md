@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 10:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 10:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -30,17 +30,22 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm task completion fails silently (exit code 1, no error) because the reflex tool lacks idempotency verification and automatic retry logic.
+- The system enters conserve mode at stress=1.0 but continues attempting speculative model calls instead of restricting to a single validated primary.
+- Retrying rate-limited models without provider-aware exponential backoff wastes the limited task budget and accelerates stress-induced conserve mode.
+- Latency variance exceeding 20x (3.5s to 87.6s) on the same model indicates noisy-neighbor queueing effects, not model capability differences.
+- Free-tier models on OpenRouter share a provider-level rate limit quota, causing correlated 429 failures across all :free models simultaneously.
 - Self-diagnosis reports zero organ errors while model failures and proposal stagnation persist, showing diagnostic blind spots for systemic degradation
 - Reflex tools (vorgeschlagene-fähigkeiten-echt-umsetzen.py, alte-träume-mit-wissen-verbinden) execute successfully but are invoked ad-hoc, not systemat
 - Stale drive goals (swarm plans, proposal-to-execution) recur across cycles, indicating no mechanism to promote stale signals into concrete work packag
@@ -51,11 +56,6 @@
 - Hand actions fail because relative paths do not resolve against ZOETRON_DATA, causing zero file I/O despite successful process exit.
 - Skill proposals accumulate but the reflex tool 'fähigkeitsvorschläge-in-echte-skills-ums.py' fails silently, leaving a deployment gap between idea and
 - Free-tier models consistently hit 429 rate limits and 502 upstream errors, making them unreliable as primary inference providers without a health-awar
-- Event pruning remains inactive because the differential memory pruning skill lacks concrete trigger thresholds to execute automatically.
-- Stale drive goals persist because there is no automated mechanism to decay or archive them over time.
-- The accumulation of unexecuted skill proposals indicates a bottleneck in the skill graduation pipeline that prevents theoretical improvements from bec
-- High latency on fallback models (24-36s) suggests that fallback chains must account for timeout thresholds to prevent cascading delays.
-- The z-ai/glm-5.2:free model consistently hits 429 rate limits, indicating it should be temporarily demoted or removed from the primary routing pool.
 
 ---
 
