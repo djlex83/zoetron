@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 13:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 14:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill graph traversal (6 nodes, delta -0.5) without code execution capability yields negative progress, confirming code generation as a hard dependenc
+- Calibration error of 6 (predicted 7 vs actual 1) indicates severe overconfidence in task feasibility estimates after revisions.
+- Simulation-driven revisions (5 applied) failed to produce executable code artifacts, revealing that prose-only outputs do not converge to working solu
+- inclusionai/ling-3.0-flash-fin:free is the only model showing consistent success with low latency (2-3s), suggesting it should be the primary fallback
+- Free-tier models on OpenRouter suffer systemic rate limiting (429) and upstream overload (502), making them unreliable for latency-sensitive workflows
 - Simulation-driven revision cycles (5 risks → 5 revisions) demonstrate effective self-correction but only when the simulation verdict is 'revise' not '
 - File system operations fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths - indicating missing path canonical
 - High metabolic stress (1.0) triggers conserve mode that caps task throughput, creating a feedback loop where failures increase stress which reduces ca
@@ -51,11 +56,6 @@
 - Converting skill proposals into actual skills via reflexes works but needs supervised execution to ensure reliability and proper error handling.
 - The 'inclusionai/ling-3.0-flash-fin:free' model proved to be a reliable, low-latency fallback when primary models (z-ai, nvidia, google) failed.
 - Free-tier models on OpenRouter are highly susceptible to 429 rate limits and 502 upstream errors, requiring aggressive failover and circuit-breaking.
-- Pruning discards memory without audit trail, making retention quality unverifiable.
-- Stale goals silently consume capacity; automatic aging and weekly review prevent backlog rot.
-- Skill proposals accumulate in limbo without enforced lifecycle gates (proposed→spec→implemented→tested→deployed).
-- Effort estimation calibrates poorly without closed-loop feedback: actual effort was 8× predicted for skill deployment.
-- Free-tier models hit rate limits predictably under sustained load, requiring systematic failover with exponential backoff.
 
 ---
 

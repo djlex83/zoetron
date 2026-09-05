@@ -14064,3 +14064,12 @@
 {"ts": 1788011728.5487742, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 7/10. Goal: Modellbewertung ausbauen\nCritic issues: Duplicate boilerplate across all three artif", "variants": 3, "winner_index": 0, "scores": [[8, 7, 8], [9, 5, 9], [9, 6, 8]]}}
 {"ts": 1788011729.179594, "kind": "recall", "payload": {"keys": ["anti_pattern:Previous attempt scored 7/10. Goal: Modellbewertung ausbauen:2", "anti_pattern:Previous attempt scored 7/10. Goal: Modellbewertung ausbauen:1"]}}
 {"ts": 1788011732.4271913, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788011732.4271889, "schalter_geoeffnet": false}}
+{"ts": 1788011783.0531676, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 50.6, "tokens_ein": 450, "tokens_aus": 708}}
+{"ts": 1788011786.9770024, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788011786.9769998, "schalter_geoeffnet": false}}
+{"ts": 1788011823.6550949, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 36.7, "tokens_ein": 391, "tokens_aus": 733}}
+{"ts": 1788011823.655281, "kind": "simulation", "payload": {"goal": "Modellbewertung ausbauen", "verdict": "go", "risks": 3, "revisions": 3}}
+{"ts": 1788011823.6553888, "kind": "swarm_finished", "payload": {"goal": "Modellbewertung ausbauen", "score": 7, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1788011823.6556766, "kind": "act_done", "payload": {"goal_title": "Modellbewertung ausbauen", "score": 7, "converged": false}}
+{"ts": 1788011824.641185, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.33, "gelesen": 1}}
+{"ts": 1788011826.5235474, "kind": "issue_synced", "payload": {"issue": 222, "state": "open"}}
+{"ts": 1788011971.8396335, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
