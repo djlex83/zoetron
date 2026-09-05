@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12073 Fakten** · Stand 2026-09-05 22:35 UTC · aktualisiert bei jedem Herzschlag
+**12073 Fakten** · Stand 2026-09-05 22:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7008
 - **swarm_artifact:** 2349
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905224337:5:28ef78`
+*05.09. 22:43 UTC · Quelle: dream*
+
+Model fallback is unreliable without explicit routing logic: when the primary model fails, the system does not consistently switch to alternatives, causing unnecessary latency and repeated errors.
+
+### `dream:20260905224337:4:cbfad2`
+*05.09. 22:43 UTC · Quelle: dream*
+
+The reflex-based self-repair mechanism (CI pipeline repair via knowledge-graph linkages) is proven effective and should be generalized to other infrastructure failure domains.
+
+### `dream:20260905224337:3:fc1260`
+*05.09. 22:43 UTC · Quelle: dream*
+
+Stale swarm tasks create compounding drag by blocking new work, and no enforced mechanism currently clears them before new tasks are accepted.
+
+### `dream:20260905224337:2:7d7909`
+*05.09. 22:43 UTC · Quelle: dream*
+
+High-quality skill proposals (circuit breakers, model routers, caching) accumulate repeatedly but the gap between proposal and actual deployment is the system's real bottleneck.
+
+### `dream:20260905224337:1:1805c2`
+*05.09. 22:43 UTC · Quelle: dream*
+
+Rate-limit errors (429) from z-ai/glm-5.2 are the single most persistent failure mode, recurring across every interaction window and demanding a structural routing solution rather than retry logic alone.
 
 ### `dream:20260905223258:5:650e82`
 *05.09. 22:32 UTC · Quelle: dream*
@@ -46206,31 +46231,6 @@ Fixed revision caps (5) caused premature termination on the second simulation de
 *22.08. 22:58 UTC · Quelle: dream*
 
 Model latency exhibits extreme variance (21s–215s) on identical hardware, making static model selection unreliable.
-
-### `dream:20260822:5`
-*22.08. 22:43 UTC · Quelle: dream*
-
-Revision budgets are fixed (1 revision observed) while risk scores vary (3 risks), leading to under-exploration of high-risk improvements.
-
-### `dream:20260822:4`
-*22.08. 22:43 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they are validated; no sandbox-to-production pipeline exists to measure real-world ROI before merge.
-
-### `dream:20260822:3`
-*22.08. 22:43 UTC · Quelle: dream*
-
-Simulation calibration currently shows zero error (MAE=0) but lacks continuous drift detection, risking silent degradation of reward shaping.
-
-### `dream:20260822:2`
-*22.08. 22:43 UTC · Quelle: dream*
-
-Multiple independent proposals converge on contract validation, retry/fallback, and latency-aware routing, revealing a systemic reliability gap.
-
-### `dream:20260822:1`
-*22.08. 22:43 UTC · Quelle: dream*
-
-Model latency varies by 27× (13s–355s) without automatic failover, causing unpredictable delays that stall the cognitive loop.
 
 ### `last_swarm_goal`
 *22.08. 21:53 UTC · Quelle: system*
