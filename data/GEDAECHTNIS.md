@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11816 Fakten** · Stand 2026-09-05 09:42 UTC · aktualisiert bei jedem Herzschlag
+**11827 Fakten** · Stand 2026-09-05 10:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6758
-- **swarm_artifact:** 2368
-- **last_swarm_critique:** 769
+- **dream:** 6763
+- **swarm_artifact:** 2371
+- **last_swarm_critique:** 770
 - **anti_pattern:** 685
-- **last_swarm_goal:** 517
+- **last_swarm_goal:** 518
 - **strategy:** 348
-- **tool:** 155
+- **tool:** 156
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:lernen-aus-fehlern-systematisch-verbesse`
+*05.09. 10:17 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Lernen aus Fehlern systematisch verbessern'. Datei: data/tools/lernen-aus-fehlern-systematisch-verbesse.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*05.09. 10:17 UTC · Quelle: critic*
+
+score=8; issues=Hardcodierte Schwellenwerte (24h-Fenster, >3 Häufung, >2 Punkte Kalibrierung) sind nicht konfigurierbar; Kategorie-Erkennung basiert auf Heuristiken (Tool-Name, Goal, stderr-Keywords) - kann Fehlklassifikationen produzieren; Keine Persistenz de
+
+### `last_swarm_goal`
+*05.09. 10:14 UTC · Quelle: system*
+
+Lernen aus Fehlern systematisch verbessern
+
+### `dream:20260905101406:5:ccbe22`
+*05.09. 10:14 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures and proposal stagnation persist, showing diagnostic blind spots for systemic degradation.
+
+### `dream:20260905101406:4:56acb6`
+*05.09. 10:14 UTC · Quelle: dream*
+
+Reflex tools (vorgeschlagene-fähigkeiten-echt-umsetzen.py, alte-träume-mit-wissen-verbinden) execute successfully but are invoked ad-hoc, not systematically triggered by drift detectors.
+
+### `dream:20260905101406:3:c8dbbb`
+*05.09. 10:14 UTC · Quelle: dream*
+
+Stale drive goals (swarm plans, proposal-to-execution) recur across cycles, indicating no mechanism to promote stale signals into concrete work packages.
+
+### `dream:20260905101406:2:9629a0`
+*05.09. 10:14 UTC · Quelle: dream*
+
+Skill proposals accumulate (5+ in this log) but execution gap persists: proposals like artifact validator and model monitor are re-proposed instead of deployed.
+
+### `dream:20260905101406:1:1b03b6`
+*05.09. 10:14 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) repeatedly fail but fallback to nemotron succeeds, revealing a reactive-only routing strategy without proactive health tracking.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Schwarm-Aufgaben en:1`
 *05.09. 09:39 UTC · Quelle: evolution*
