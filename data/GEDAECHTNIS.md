@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11668 Fakten** · Stand 2026-09-05 04:13 UTC · aktualisiert bei jedem Herzschlag
+**11673 Fakten** · Stand 2026-09-05 04:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6644
+- **dream:** 6649
 - **swarm_artifact:** 2362
 - **last_swarm_critique:** 763
 - **anti_pattern:** 675
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905042116:5:561de7`
+*05.09. 04:21 UTC · Quelle: dream*
+
+Swarm task completion succeeds when reflex-driven, but the absence of checkpoints and idempotent resume means any mid-task failure previously caused lost or duplicated work.
+
+### `dream:20260905042116:4:704def`
+*05.09. 04:21 UTC · Quelle: dream*
+
+Proposed skill improvements have high value but zero durability until executed: the system generates proposals (router, circuit breaker, executor) but without an automated pipeline they risk remaining as unimplemented intentions.
+
+### `dream:20260905042116:3:b37dde`
+*05.09. 04:21 UTC · Quelle: dream*
+
+Repeated 429 errors without backoff create a positive feedback loop: each failed request consumes a rate-limit slot, making subsequent failures more likely and prolonging the outage for all models on the same provider.
+
+### `dream:20260905042116:2:06434f`
+*05.09. 04:21 UTC · Quelle: dream*
+
+Model availability is highly volatile and non-uniform: some models (e.g., inclusionai/ling-3.0-flash-fin) succeed with low latency while others fail repeatedly, so blind sequential fallback wastes resources and amplifies rate-limit storms.
+
+### `dream:20260905042116:1:b59c34`
+*05.09. 04:21 UTC · Quelle: dream*
+
+External API dependency is the single largest failure point: every model failure traces to third-party rate limits (429) or upstream overload (502), meaning the system's reliability is capped by providers it does not control.
 
 ### `dream:20260905041111:5:e15cbd`
 *05.09. 04:11 UTC · Quelle: dream*
