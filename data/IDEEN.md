@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Alte Schwarm-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
+- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Alte Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 2×)*
-- Alte Schwarm-Aufgaben aufräumen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism state 'conserve' with max_iterations=1 forces single-shot execution, making any transient failure (rate limit, path error, tool crash) fata
+- Simulation-driven revision loops (5 risks → 5 revisions → 4 applied) operate without a risk threshold gate, allowing unbounded rework under tight meta
+- File system operations fail because code uses relative paths while the runtime expects absolute paths rooted at ZOETRON_DATA, a systemic path-resoluti
+- The only consistently reliable model (ling-3.0-flash-fin:free) delivers low latency (~4s) and high throughput, making it a natural primary candidate f
+- Rate limiting (HTTP 429) is the dominant failure mode across all tested models except inclusionai/ling-3.0-flash-fin:free, indicating missing request 
 - Initial simulation scores systematically underestimate final outcomes after evolution, requiring calibration adjustment using historical improvement d
 - Hand tool fails silently on path resolution errors, preventing data ingestion without clear diagnostics.
 - Simulation runs terminate before convergence (2 cycles, score 6/10) despite evolution occurring, suggesting insufficient iteration budget or weak stop
@@ -51,11 +56,6 @@
 - Evolutionary variants improved scores from 6 to 8/9/7, proving iterative refinement works but needs more cycles for convergence.
 - Calibration predicted 1 but actual was 6 (abs_error 5), indicating systematic underestimation of task complexity.
 - Model z-ai/glm-5.2:free consistently returns 429 rate-limit errors, requiring automatic fallback to reliable alternatives like nemotron-3-ultra.
-- The reflex tool vorgeschlagene-fähigkeiten-prüfen-und-ba.py failed immediately, suggesting capability-checking procedures need validation before relia
-- The simulation verdict was 'revise' with 5 risks and 5 revisions, revealing that the initial plan lacked sufficient robustness for the given constrain
-- The system operated under maximum stress (stress=1.0) with a severely constrained budget (max 3 tasks, max 1 iteration), which amplified every failure
-- The z-ai/glm-5.2 model failed consistently with 429 errors across every retry attempt, making it an unreliable choice under any load condition.
-- Rate limiting (HTTP 429) was the dominant failure mode, affecting nearly all models except inclusionai/ling-3.0-flash-fin, indicating a need for rate-
 
 ---
 

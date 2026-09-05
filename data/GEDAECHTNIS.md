@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12017 Fakten** · Stand 2026-09-05 20:18 UTC · aktualisiert bei jedem Herzschlag
+**12022 Fakten** · Stand 2026-09-05 20:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6958
+- **dream:** 6963
 - **swarm_artifact:** 2351
 - **last_swarm_critique:** 781
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905202639:5:0a03af`
+*05.09. 20:26 UTC · Quelle: dream*
+
+Metabolism state 'conserve' with max_iterations=1 forces single-shot execution, making any transient failure (rate limit, path error, tool crash) fatal to the entire task.
+
+### `dream:20260905202639:4:7b7d1f`
+*05.09. 20:26 UTC · Quelle: dream*
+
+Simulation-driven revision loops (5 risks → 5 revisions → 4 applied) operate without a risk threshold gate, allowing unbounded rework under tight metabolism budgets.
+
+### `dream:20260905202639:3:c54b70`
+*05.09. 20:26 UTC · Quelle: dream*
+
+File system operations fail because code uses relative paths while the runtime expects absolute paths rooted at ZOETRON_DATA, a systemic path-resolution bug.
+
+### `dream:20260905202639:2:9313a8`
+*05.09. 20:26 UTC · Quelle: dream*
+
+The only consistently reliable model (ling-3.0-flash-fin:free) delivers low latency (~4s) and high throughput, making it a natural primary candidate for a model routing policy.
+
+### `dream:20260905202639:1:11e7d7`
+*05.09. 20:26 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all tested models except inclusionai/ling-3.0-flash-fin:free, indicating missing request throttling and fallback routing.
 
 ### `dream:20260905201502:5:7b451d`
 *05.09. 20:15 UTC · Quelle: dream*
