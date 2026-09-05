@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 16:52 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:03 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
 - Veraltete Grenzgebiete und Schwarm-Ergebnisse aktualisieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The dream cycle itself generated five unimplemented skill proposals, revealing a meta-learning loop that proposes but does not execute.
+- Three drive goals—model reliability, stale criticism loop, stalled learning—share a root cause: cascading model failures starve the system of compute.
+- Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency success (3.6 s), marking it as the sole dependable fallback.
+- Nemotron succeeds but with highly variable latency (17–41 s), indicating unstable upstream capacity that degrades tail latency.
+- Free-tier models consistently hit 429 rate limits under sustained load, making them unreliable without proactive quota management.
 - Simulations aimed at improving model reliability successfully identified and applied revisions to mitigate risks.
 - The model `nvidia/nemotron-3-ultra-550b-a55b:free` suffers from intermittent 502 errors and high latency (over 100s) when it does succeed.
 - High stress metabolism state correctly triggers a conservative budget, limiting tasks and iterations to prevent resource exhaustion.
@@ -51,11 +56,6 @@
 - Proposed skills accumulate faster than implementation capacity, creating a backlog where high-value routing and health-check capabilities remain undep
 - Upstream overload errors (502) from major providers like Nvidia indicate single-provider dependency creates systemic fragility even when rate limits a
 - Rate limits (429) cascade across multiple free-tier providers simultaneously, making reactive fallback insufficient without predictive quota tracking.
-- Pruning removes facts/events but does not address the root cause of repeated model failures accumulating in logs.
-- Self-diagnosis reports zero organ errors while model failures persist, indicating diagnostic coverage misses external dependency failures.
-- Previously proposed skills (router, integration gate, tracker, validator, calibrator) remain unimplemented despite identified needs, creating a propos
-- The inclusionai/ling-3.0-flash-fin:free model succeeded where larger models failed, suggesting smaller specialized models may offer better availabilit
-- Free-tier models consistently fail under load with 429/502 errors, making single-model reliance unreliable for production tasks.
 
 ---
 

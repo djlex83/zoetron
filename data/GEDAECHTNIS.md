@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11945 Fakten** · Stand 2026-09-05 16:54 UTC · aktualisiert bei jedem Herzschlag
+**11943 Fakten** · Stand 2026-09-05 17:05 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6888
-- **swarm_artifact:** 2355
+- **dream:** 6893
+- **swarm_artifact:** 2351
 - **last_swarm_critique:** 778
-- **anti_pattern:** 679
+- **anti_pattern:** 677
 - **last_swarm_goal:** 526
-- **strategy:** 341
+- **strategy:** 340
 - **tool:** 161
 - **hand_result:** 130
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905170257:5:e6732a`
+*05.09. 17:02 UTC · Quelle: dream*
+
+The dream cycle itself generated five unimplemented skill proposals, revealing a meta-learning loop that proposes but does not execute.
+
+### `dream:20260905170257:4:e409a7`
+*05.09. 17:02 UTC · Quelle: dream*
+
+Three drive goals—model reliability, stale criticism loop, stalled learning—share a root cause: cascading model failures starve the system of compute.
+
+### `dream:20260905170257:3:075efc`
+*05.09. 17:02 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency success (3.6 s), marking it as the sole dependable fallback.
+
+### `dream:20260905170257:2:a8355a`
+*05.09. 17:02 UTC · Quelle: dream*
+
+Nemotron succeeds but with highly variable latency (17–41 s), indicating unstable upstream capacity that degrades tail latency.
+
+### `dream:20260905170257:1:88b0be`
+*05.09. 17:02 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under sustained load, making them unreliable without proactive quota management.
 
 ### `last_swarm_critique`
 *05.09. 16:52 UTC · Quelle: critic*
@@ -45564,13 +45589,3 @@ ABGELEHNT von Evolution (Score 7): Refactor RoleManager.assign into a dependency
 *22.08. 17:23 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 8): Introduce a centralized normalization layer before plugin dispatch - Add a `DreamNormalizer` component that receives raw log lines, extracts a common structure (timestamp, raw message, severity level), and augments missing fi
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler finden und :2`
-*22.08. 16:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Modular Re‑architecture with Dependency Injection & Configuration‑Driven Design - Decompose the monolithic scripts into three loosely‑coupled modules: (1) DiagnosticEngine, (2) SkillActivator, and (3) RevisionCapPolicy. Defin
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler finden und :1`
-*22.08. 16:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Automated Static Analysis & Lint‑First Repair Pipeline - Integrate a pre‑commit CI stage that runs pylint, flake8, bandit, and mypy on the codebase. Use the diagnostic output to automatically generate fix suggestions (via too
