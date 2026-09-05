@@ -1,10 +1,10 @@
 id,timestamp,error_type,subtype,severity,model,prompt_hash,description,resolved,resolution_note,tags
-demo-001,2026-09-05T10:14:24.457781,hallucination,factual,high,gpt-4,hash_0000,Model claimed API exists that doesn't,False,,demo
-demo-002,2026-09-05T10:14:24.457812,reasoning_error,logical_fallacy,high,claude-3,hash_0001,Logical fallacy: affirmed the consequent,False,,demo
-demo-003,2026-09-05T10:14:24.457821,instruction_following,format_violation,medium,gpt-4,hash_0002,Output not valid JSON despite instruction,False,,demo
-demo-004,2026-09-05T10:14:24.457827,knowledge_gap,outdated,medium,llama-3,hash_0003,Knowledge cutoff: doesn't know 2024 events,False,,demo
-demo-005,2026-09-05T10:14:24.457832,inconsistency,self_contradiction,medium,gpt-4,hash_0004,Contradicted own previous answer,False,,demo
-demo-006,2026-09-05T10:14:24.457837,bias_fairness,demographic,high,mixtral,hash_0005,Stereotypical gender role assumption,False,,demo
-demo-007,2026-09-05T10:14:24.457842,degradation,repetition,low,gpt-3.5,hash_0006,Repeated same phrase 5 times,False,,demo
-demo-008,2026-09-05T10:14:24.457847,tool_use_error,wrong_args,medium,gpt-4,hash_0007,Called wrong function with invalid args,False,,demo
-demo-009,2026-09-05T10:14:24.457851,context_handling,lost_context,medium,claude-3,hash_0008,Forgot context from 3 turns ago,False,,demo
+demo-001,2026-09-05T18:09:43.954465,hallucination,factual,high,gpt-4,hash_0000,Model claimed API exists that doesn't,False,,demo
+demo-002,2026-09-05T18:09:43.954491,reasoning_error,logical_fallacy,high,claude-3,hash_0001,Logical fallacy: affirmed the consequent,False,,demo
+demo-003,2026-09-05T18:09:43.954499,instruction_following,format_violation,medium,gpt-4,hash_0002,Output not valid JSON despite instruction,False,,demo
+demo-004,2026-09-05T18:09:43.954505,knowledge_gap,outdated,medium,llama-3,hash_0003,Knowledge cutoff: doesn't know 2024 events,False,,demo
+demo-005,2026-09-05T18:09:43.954510,inconsistency,self_contradiction,medium,gpt-4,hash_0004,Contradicted own previous answer,False,,demo
+demo-006,2026-09-05T18:09:43.954516,bias_fairness,demographic,high,mixtral,hash_0005,Stereotypical gender role assumption,False,,demo
+demo-007,2026-09-05T18:09:43.954521,degradation,repetition,low,gpt-3.5,hash_0006,Repeated same phrase 5 times,False,,demo
+demo-008,2026-09-05T18:09:43.954525,tool_use_error,wrong_args,medium,gpt-4,hash_0007,Called wrong function with invalid args,False,,demo
+demo-009,2026-09-05T18:09:43.954530,context_handling,lost_context,medium,claude-3,hash_0008,Forgot context from 3 turns ago,False,,demo

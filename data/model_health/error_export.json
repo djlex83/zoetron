@@ -64,9 +64,9 @@
         "percentage": 11.1
       }
     ],
-    "period_start": "2026-09-05T10:14:24.457781",
-    "period_end": "2026-09-05T10:14:24.457851",
-    "generated_at": "2026-09-05T10:14:24.461703"
+    "period_start": "2026-09-05T18:09:43.954465",
+    "period_end": "2026-09-05T18:09:43.954530",
+    "generated_at": "2026-09-05T18:09:43.957915"
   },
   "taxonomy": {
     "hallucination": {
@@ -173,7 +173,7 @@
   "records": [
     {
       "id": "demo-001",
-      "timestamp": "2026-09-05T10:14:24.457781",
+      "timestamp": "2026-09-05T18:09:43.954465",
       "error_type": "hallucination",
       "subtype": "factual",
       "severity": "high",
@@ -191,7 +191,7 @@
     },
     {
       "id": "demo-002",
-      "timestamp": "2026-09-05T10:14:24.457812",
+      "timestamp": "2026-09-05T18:09:43.954491",
       "error_type": "reasoning_error",
       "subtype": "logical_fallacy",
       "severity": "high",
@@ -209,7 +209,7 @@
     },
     {
       "id": "demo-003",
-      "timestamp": "2026-09-05T10:14:24.457821",
+      "timestamp": "2026-09-05T18:09:43.954499",
       "error_type": "instruction_following",
       "subtype": "format_violation",
       "severity": "medium",
@@ -227,7 +227,7 @@
     },
     {
       "id": "demo-004",
-      "timestamp": "2026-09-05T10:14:24.457827",
+      "timestamp": "2026-09-05T18:09:43.954505",
       "error_type": "knowledge_gap",
       "subtype": "outdated",
       "severity": "medium",
@@ -245,7 +245,7 @@
     },
     {
       "id": "demo-005",
-      "timestamp": "2026-09-05T10:14:24.457832",
+      "timestamp": "2026-09-05T18:09:43.954510",
       "error_type": "inconsistency",
       "subtype": "self_contradiction",
       "severity": "medium",
@@ -263,7 +263,7 @@
     },
     {
       "id": "demo-006",
-      "timestamp": "2026-09-05T10:14:24.457837",
+      "timestamp": "2026-09-05T18:09:43.954516",
       "error_type": "bias_fairness",
       "subtype": "demographic",
       "severity": "high",
@@ -281,7 +281,7 @@
     },
     {
       "id": "demo-007",
-      "timestamp": "2026-09-05T10:14:24.457842",
+      "timestamp": "2026-09-05T18:09:43.954521",
       "error_type": "degradation",
       "subtype": "repetition",
       "severity": "low",
@@ -299,7 +299,7 @@
     },
     {
       "id": "demo-008",
-      "timestamp": "2026-09-05T10:14:24.457847",
+      "timestamp": "2026-09-05T18:09:43.954525",
       "error_type": "tool_use_error",
       "subtype": "wrong_args",
       "severity": "medium",
@@ -317,7 +317,7 @@
     },
     {
       "id": "demo-009",
-      "timestamp": "2026-09-05T10:14:24.457851",
+      "timestamp": "2026-09-05T18:09:43.954530",
       "error_type": "context_handling",
       "subtype": "lost_context",
       "severity": "medium",

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 17:59:01",
+ "stand": "2026-09-05 18:16:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -99,6 +99,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modell-fehler-systematisch-reduzieren-un.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -115,12 +121,6 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
@@ -157,12 +157,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "modell-fehler-systematisch-reduzieren-un.py",
-   "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
@@ -204,18 +198,6 @@
    "tool": "traum-gedächtnis-system-fertigstellen.py",
    "laeufe": 2,
    "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "viele-skill-vorschläge-prüfen-und-beste-.py",
-   "laeufe": 1,
-   "erfolge": 1,
    "quote": 1.0
   },
   {
@@ -327,6 +309,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -399,17 +387,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.749,
- "simulationen_angewandt": 28,
+ "haende_quote": 0.744,
+ "simulationen_angewandt": 30,
  "swarm_scores": {
-  "n": 32,
+  "n": 33,
   "best": 9.0,
-  "schnitt": 6.38
+  "schnitt": 6.36
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 6.2
+   "n": 31,
+   "schnitt": 6.19
   },
   "bau": {
    "n": 2,

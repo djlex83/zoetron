@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11952 Fakten** · Stand 2026-09-05 18:01 UTC · aktualisiert bei jedem Herzschlag
+**11969 Fakten** · Stand 2026-09-05 18:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6918
-- **swarm_artifact:** 2341
-- **last_swarm_critique:** 778
-- **anti_pattern:** 673
-- **last_swarm_goal:** 526
-- **strategy:** 338
-- **tool:** 161
+- **dream:** 6923
+- **swarm_artifact:** 2347
+- **last_swarm_critique:** 779
+- **anti_pattern:** 675
+- **last_swarm_goal:** 527
+- **strategy:** 339
+- **tool:** 162
 - **hand_result:** 130
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,56 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:fehler-systematisch-sammeln-und-verstehe`
+*05.09. 18:16 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fehler systematisch sammeln und verstehen'. Datei: data/tools/fehler-systematisch-sammeln-und-verstehe.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fehler systematisch samm:2`
+*05.09. 18:15 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Centralized Orchestration with Adapter Translation Layer - Introduce a pipeline orchestrator script that wraps all three artifacts and manages their I/O explicitly. The orchestrator reads audit_errors.json (Artifact 1 output)
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fehler systematisch samm:1`
+*05.09. 18:15 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Event-Driven Pipeline with Canonical Message Bus - Replace all file-based handoffs between artifacts with an in-memory or lightweight message-bus event stream. Each artifact publishes typed events (AuditCompleted, Categorizat
+
+### `last_swarm_critique`
+*05.09. 18:15 UTC · Quelle: critic*
+
+score=6; issues=Pipeline-Bruch: Artefakt 2 (Kategorisierung) persistiert seine Ergebnisse nicht – es gibt keinen Schreibvorgang für categorized_errors.json, aber Artefakt 3 erwartet genau diese Datei; Schema-Mismatch: Artefakt 2 produziert Felder wie error_typ
+
+### `last_swarm_goal`
+*05.09. 18:09 UTC · Quelle: system*
+
+Fehler systematisch sammeln und verstehen
+
+### `dream:20260905180924:5:0ad14d`
+*05.09. 18:09 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, showing the diagnostic scope excludes external API reliability.
+
+### `dream:20260905180924:4:cb37b4`
+*05.09. 18:09 UTC · Quelle: dream*
+
+Stale swarm tasks accumulate and block progress until manual reflex cleanup runs, indicating missing TTL-based auto-reaping.
+
+### `dream:20260905180924:3:8f205f`
+*05.09. 18:09 UTC · Quelle: dream*
+
+Five skill proposals for model routing and quota management were generated across cycles but none were implemented, revealing a proposal-to-execution gap.
+
+### `dream:20260905180924:2:f92ceb`
+*05.09. 18:09 UTC · Quelle: dream*
+
+Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency (23-34s), suggesting the router lacks latency-aware selection criteria.
+
+### `dream:20260905180924:1:84b961`
+*05.09. 18:09 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently returns 429 errors indicating quota exhaustion, yet the system continues selecting it instead of preemptively falling back to healthier alternatives.
 
 ### `dream:20260905175841:5:fd5bc8`
 *05.09. 17:58 UTC · Quelle: dream*

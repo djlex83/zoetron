@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 18:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 17×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
-- Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
-- Veraltete Grenzgebiete und Schwarm-Ergebnisse aktualisieren *(wieder aufgegriffen: 2×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite repeated model failures, showing the diagnostic scope excludes external API reliability.
+- Stale swarm tasks accumulate and block progress until manual reflex cleanup runs, indicating missing TTL-based auto-reaping.
+- Five skill proposals for model routing and quota management were generated across cycles but none were implemented, revealing a proposal-to-execution 
+- Fallback model nvidia/nemotron-3-ultra-550b-a55b:free succeeds but exhibits high latency (23-34s), suggesting the router lacks latency-aware selection
+- The z-ai/glm-5.2:free model consistently returns 429 errors indicating quota exhaustion, yet the system continues selecting it instead of preemptively
 - Pruning (7 facts, 57 events) and self-diagnosis (0 organ errors) ran automatically, confirming maintenance loops operate independently of task success
 - Fast model (ling-3.0-flash-fin: 4s) succeeded but was not used as primary fallback; latency-aware routing would have avoided 149s nemotron calls.
 - Swarm converged in 1 cycle with score 9 despite 4 model failures and 20s hand-action timeout, proving task-level redundancy masks component flakiness.
@@ -51,11 +56,6 @@
 - Simulation revision loops (5 risks → 4 revisions) converge but require multiple iterations that are denied when max_iterations=1.
 - High metabolism stress (1.0) triggers a conserve budget that starves swarm tasks of iteration headroom, causing stale work despite simulation revision
 - Free-tier model endpoints exhibit bursty availability with correlated 429 rate-limit errors across multiple providers, making single-model reliance a 
-- Pruning removed 105 events but 0 facts, indicating the system discards operational context faster than it extracts durable patterns.
-- Hand-action tooling fails silently (exit=1, no error) when invoked during high-stress windows, breaking the human-in-the-loop recovery path.
-- Metabolism stress=1.0 (conserve mode) caps tasks to 3 and iterations to 1, starving the very retries and multi-cycle refinement needed to fix model re
-- Swarm evolution stalls at 5/10 because critic feedback ('artifacts only audit/') reveals a goal-implementation gap: proposals are generated but not wi
-- Free-tier models exhibit bimodal failure: z-ai/glm-5.2 hits 429 rate limits repeatedly while nvidia/nemotron-3-ultra succeeds but with 10-100s latency
 
 ---
 
