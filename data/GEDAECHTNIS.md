@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11705 Fakten** · Stand 2026-09-05 05:10 UTC · aktualisiert bei jedem Herzschlag
+**11709 Fakten** · Stand 2026-09-05 05:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6664
+- **dream:** 6669
 - **swarm_artifact:** 2370
 - **last_swarm_critique:** 765
 - **anti_pattern:** 677
 - **last_swarm_goal:** 513
-- **strategy:** 348
+- **strategy:** 347
 - **tool:** 154
 - **hand_result:** 127
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905052712:5:00150e`
+*05.09. 05:27 UTC · Quelle: dream*
+
+High stress (1.0) forces conservative metabolism budgets that starve task throughput, creating a negative feedback loop.
+
+### `dream:20260905052712:4:87a132`
+*05.09. 05:27 UTC · Quelle: dream*
+
+Four swarm projects remain stale indefinitely without a completion tracker that revives or archives them.
+
+### `dream:20260905052712:3:7fecaf`
+*05.09. 05:27 UTC · Quelle: dream*
+
+Proposed skills accumulate but are never executed because no scheduler triggers them from the proposal store.
+
+### `dream:20260905052712:2:e463e2`
+*05.09. 05:27 UTC · Quelle: dream*
+
+Relative file paths fail to resolve against the real data root (ZOETRON_DATA), causing hand actions to read nothing.
+
+### `dream:20260905052712:1:656552`
+*05.09. 05:27 UTC · Quelle: dream*
+
+Free tier models consistently hit 429 rate limits and 502 upstream errors, requiring a robust fallback chain with exponential backoff.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Traum-Erinnerungen nutzb:2`
 *05.09. 05:07 UTC · Quelle: evolution*

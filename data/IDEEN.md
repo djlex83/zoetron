@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 05:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 05:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
-- Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 5×)*
+- Marktanalyse endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
+- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High stress (1.0) forces conservative metabolism budgets that starve task throughput, creating a negative feedback loop.
+- Four swarm projects remain stale indefinitely without a completion tracker that revives or archives them.
+- Proposed skills accumulate but are never executed because no scheduler triggers them from the proposal store.
+- Relative file paths fail to resolve against the real data root (ZOETRON_DATA), causing hand actions to read nothing.
+- Free tier models consistently hit 429 rate limits and 502 upstream errors, requiring a robust fallback chain with exponential backoff.
 - Recurring drive goals (reliability, stale tasks, execution gap) signal that root-cause fixes are not being institutionalized; each cycle treats sympto
 - Fallback model (Nemotron) succeeds but exhibits high latency variance (10–21s), indicating need for latency-aware routing and shadow validation of alt
 - Skill proposals accumulate without implementation because no automated evaluator scores impact/effort/risk and auto-generates PRs for top candidates.
@@ -51,11 +56,6 @@
 - Reflex tools reliably converge stale goals when explicitly invoked, but invocation depends on manual or opportunistic matching.
 - Stale goals (swarm tasks, skill execution gap) persist across cycles because no automatic escalation or scheduler closes them.
 - Provider rate limits (429) cause repeated model failures that are only mitigated by reactive fallback to a working model.
-- Unfinished critical infrastructure components, such as swarm recovery and heartbeat modules, remain a systemic risk that blocks overall system robustn
-- Routine event pruning is actively preventing context bloat, as demonstrated by the successful pruning of 55 obsolete events.
-- A large backlog of unvalidated skill proposals (58+) indicates a critical bottleneck in the capability integration pipeline.
-- High latency on fallback models (e.g., 54.9s for nvidia/nemotron) severely degrades system responsiveness and necessitates latency-aware routing.
-- The `z-ai/glm-5.2:free` model is chronically rate-limited with 429 errors and should be temporarily removed or heavily deprioritized in the active mod
 
 ---
 
