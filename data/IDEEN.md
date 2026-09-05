@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 01:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 6×)*
 - Marktanalyse-Ergebnisse endlich nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich bauen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model selection appears static rather than adaptive based on recent success/failure history.
+- No exponential backoff or circuit breaker logic is present, causing repeated hammering of rate-limited endpoints.
+- The system lacks automatic failover: it retries failing models instead of switching to healthy alternatives.
+- The inclusionai/ling-3.0-flash-fin:free model shows consistent availability and low latency (~3-6s) while Google Gemma and Z.ai GLM models fail repeat
+- Free-tier models on OpenRouter exhibit severe rate limiting (429 errors) making them unreliable for production workloads.
 - Metabolism-driven budget cuts (max_tasks=3, max_iterations=1) coincide with peak failure rates, creating a death spiral where recovery capacity shrink
 - Cleanup routines fail when they cannot locate artifacts at expected paths, revealing a systemic assumption that workspace state matches logical state.
 - A single reliable model (inclusionai/ling-3.0-flash-fin) consistently succeeds under high stress, proving that provider diversity alone is insufficien
@@ -51,11 +56,6 @@
 - Rate limit errors (429) are predictable from request frequency but currently trigger only after failure, wasting cycles.
 - Reactive skill proposals emerge only after repeated failures, indicating a missing proactive resilience design phase.
 - External model APIs exhibit correlated failure modes (rate limits, upstream errors) that cascade into system-wide unavailability without circuit break
-- Self-diagnosis reporting zero organ errors while operational failures persist indicates the root cause lies in execution policy, not in system archite
-- Even successful models exhibit wide latency variance (7s to 19.8s), meaning a successful response does not guarantee performance within acceptable tim
-- Reflex-driven cleanup operations succeed reliably when triggered, demonstrating that automated maintenance beats manual intervention for managing stal
-- Skill proposals accumulate faster than they are evaluated and integrated, creating a growing gap between suggested improvements and actual deployed ca
-- Repeated 429 rate-limit errors from a single model reveal the absence of rate-limit awareness and automatic failover, making this the system's most pe
 
 ---
 

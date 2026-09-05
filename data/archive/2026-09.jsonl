@@ -12011,3 +12011,4 @@
 {"ts": 1787966106.667283, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": 1, "converged": false}}
 {"ts": 1787966107.2708771, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.33, "gelesen": 489}}
 {"ts": 1787966108.6284895, "kind": "issue_synced", "payload": {"issue": 155, "state": "open"}}
+{"ts": 1787966232.2518528, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

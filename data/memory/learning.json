@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 01:18:05",
+ "stand": "2026-09-05 01:28:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -123,12 +123,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-verwerten.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -178,6 +172,12 @@
   },
   {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -285,13 +285,13 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalysen-wieder-auf-den-neuest.py",
+   "tool": "alte-marktanalysen-verwerten.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
   },
   {
-   "tool": "alte-träume-miteinander-verbinden.py",
+   "tool": "alte-marktanalysen-wieder-auf-den-neuest.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

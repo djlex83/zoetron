@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11598 Fakten** · Stand 2026-09-05 01:20 UTC · aktualisiert bei jedem Herzschlag
+**11603 Fakten** · Stand 2026-09-05 01:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6574
+- **dream:** 6579
 - **swarm_artifact:** 2368
 - **last_swarm_critique:** 761
 - **anti_pattern:** 673
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905012746:5:8e0aea`
+*05.09. 01:27 UTC · Quelle: dream*
+
+Model selection appears static rather than adaptive based on recent success/failure history.
+
+### `dream:20260905012746:4:67526d`
+*05.09. 01:27 UTC · Quelle: dream*
+
+No exponential backoff or circuit breaker logic is present, causing repeated hammering of rate-limited endpoints.
+
+### `dream:20260905012746:3:4bc4f0`
+*05.09. 01:27 UTC · Quelle: dream*
+
+The system lacks automatic failover: it retries failing models instead of switching to healthy alternatives.
+
+### `dream:20260905012746:2:f03a4b`
+*05.09. 01:27 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model shows consistent availability and low latency (~3-6s) while Google Gemma and Z.ai GLM models fail repeatedly.
+
+### `dream:20260905012746:1:b5f1a3`
+*05.09. 01:27 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit severe rate limiting (429 errors) making them unreliable for production workloads.
 
 ### `dream:20260905011742:5:ed716d`
 *05.09. 01:17 UTC · Quelle: dream*
