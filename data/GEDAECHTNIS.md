@@ -1,21 +1,61 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11734 Fakten** · Stand 2026-09-05 06:32 UTC · aktualisiert bei jedem Herzschlag
+**11746 Fakten** · Stand 2026-09-05 06:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6699
-- **swarm_artifact:** 2365
-- **last_swarm_critique:** 765
-- **anti_pattern:** 677
-- **last_swarm_goal:** 513
-- **strategy:** 347
+- **dream:** 6703
+- **swarm_artifact:** 2367
+- **last_swarm_critique:** 766
+- **anti_pattern:** 679
+- **last_swarm_goal:** 514
+- **strategy:** 348
 - **tool:** 154
-- **hand_result:** 127
+- **hand_result:** 128
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:1`
+*05.09. 06:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Dynamic Discovery and Adaptive Integration - Replace hardcoded organ/module references with a dynamic discovery mechanism. At runtime, scan the data directory using os.listdir() or importlib to discover what modules/artifacts
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:0`
+*05.09. 06:45 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Self-contained Inline Execution - Eliminate all external module dependencies by embedding every required capability directly into a single self-contained Python script. Instead of importing 'werkzeugpruefung', 'benchmark_orga
+
+### `last_swarm_critique`
+*05.09. 06:44 UTC · Quelle: critic*
+
+score=1; issues=Erstes Artefakt (Werkzeugprüfung) laeuft nicht: ModuleNotFoundError fuer 'werkzeugpruefung' und IndentationError in Zeile 98 (Sandbox-Urteil: LAEUFT NICHT); Alle drei Artefakte setzen Organe voraus ('werkzeugpruefung', 'benchmark_organ', 'konve
+
+### `last_swarm_goal`
+*05.09. 06:41 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten prüfen und nutzen
+
+### `dream:20260905064029:4:eb373a`
+*05.09. 06:40 UTC · Quelle: dream*
+
+System drive goals are correctly identifying systemic issues like model unreliability, stale tasks, and the sim-to-real gap based on recent failure signals.
+
+### `dream:20260905064029:3:ba190b`
+*05.09. 06:40 UTC · Quelle: dream*
+
+Reflex-based actions for routine maintenance (memory ordering, swarm tasks) consistently converge successfully without needing complex planning.
+
+### `dream:20260905064029:2:df90f2`
+*05.09. 06:40 UTC · Quelle: dream*
+
+Event pruning is actively maintaining memory hygiene by removing 39-40 events per cycle, keeping the event store from bloating.
+
+### `dream:20260905064029:1:d796e7`
+*05.09. 06:40 UTC · Quelle: dream*
+
+The `z-ai/glm-5.2:free` model consistently hits 429 rate limits, requiring immediate fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` which proves reliable but has high latency (23-39s).
 
 ### `dream:20260905063024:5:97f62a`
 *05.09. 06:30 UTC · Quelle: dream*
