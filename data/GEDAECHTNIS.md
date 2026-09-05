@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11794 Fakten** · Stand 2026-09-05 09:06 UTC · aktualisiert bei jedem Herzschlag
+**11799 Fakten** · Stand 2026-09-05 09:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6743
+- **dream:** 6748
 - **swarm_artifact:** 2365
 - **last_swarm_critique:** 768
 - **anti_pattern:** 683
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905091409:5:81c922`
+*05.09. 09:14 UTC · Quelle: dream*
+
+Artifacts execute without pre-flight validation, risking sandbox permission failures and syntax errors that waste cycles.
+
+### `dream:20260905091409:4:ae3341`
+*05.09. 09:14 UTC · Quelle: dream*
+
+Cycle estimates lack calibration, consistently underestimating actual duration by ~2x without per-goal correction factors.
+
+### `dream:20260905091409:3:3aafce`
+*05.09. 09:14 UTC · Quelle: dream*
+
+Swarm tasks exceed 7-day staleness without automated revival, causing progress blockage despite available critic-to-builder fallback logic.
+
+### `dream:20260905091409:2:95760a`
+*05.09. 09:14 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely become executable skills, creating a proposal-implementation gap that stalls capability growth.
+
+### `dream:20260905091409:1:9f9f06`
+*05.09. 09:14 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free reveal absent proactive model health tracking, forcing reactive fallbacks that increase latency.
 
 ### `dream:20260905090333:5:57b625`
 *05.09. 09:03 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 09:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 09:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,9 +31,9 @@
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 4×)*
 - Marktanalyse abschließen und nutzen *(wieder aufgegriffen: 4×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Faehigkeiten testen und einfuehren *(wieder aufgegriffen: 2×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Artifacts execute without pre-flight validation, risking sandbox permission failures and syntax errors that waste cycles.
+- Cycle estimates lack calibration, consistently underestimating actual duration by ~2x without per-goal correction factors.
+- Swarm tasks exceed 7-day staleness without automated revival, causing progress blockage despite available critic-to-builder fallback logic.
+- Skill proposals accumulate but rarely become executable skills, creating a proposal-implementation gap that stalls capability growth.
+- Recurring 429 errors on z-ai/glm-5.2:free reveal absent proactive model health tracking, forcing reactive fallbacks that increase latency.
 - Skill proposals accumulate (5 in this session) but none graduate to deployed skills because there's no promotion pipeline from proposal to production.
 - Model latency varies 10x (2.6s vs 34s) but routing ignores latency, causing unpredictable response times and timeouts.
 - Hand-action failures (exit code 1) reveal a missing pre-flight validation step before code execution in the sandbox.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but rarely convert to deployed capabilities, creating a proposal-execution gap that reflex scripts can bridge.
 - Latency variance across successful models spans 4s to 46s, requiring latency-aware routing to meet task urgency constraints.
 - Free-tier models consistently fail with 429 rate limits and 502 overloads, making them unreliable for production workloads without circuit breakers.
-- The system's own drive goals (failure analysis, skill organization, memory pruning) mirror the consolidation process, confirming functional meta-cogni
-- Event memory accumulates ~30x faster than fact memory (66 vs 2 pruned in latest run), demanding distinct retention policies.
-- Encoded reflexes for known error patterns (e.g., "reduce model errors") converge faster and more reliably than generic planning loops.
-- Static fallback chains fail when the designated backup (nvidia/nemotron) also returns 502 under load; health-aware routing is required.
-- Free-tier model rate limits (429) are the dominant systemic failure mode, not isolated per-model anomalies.
 
 ---
 
