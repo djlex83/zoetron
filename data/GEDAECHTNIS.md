@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11903 Fakten** · Stand 2026-09-05 15:30 UTC · aktualisiert bei jedem Herzschlag
+**11917 Fakten** · Stand 2026-09-05 15:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6868
-- **swarm_artifact:** 2342
-- **last_swarm_critique:** 775
+- **dream:** 6873
+- **swarm_artifact:** 2348
+- **last_swarm_critique:** 776
 - **anti_pattern:** 679
-- **last_swarm_goal:** 523
+- **last_swarm_goal:** 524
 - **strategy:** 341
-- **tool:** 159
+- **tool:** 160
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:modelle-zuverlässiger-machen`
+*05.09. 15:44 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modelle zuverlässiger machen'. Datei: data/tools/modelle-zuverlässiger-machen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*05.09. 15:44 UTC · Quelle: critic*
+
+score=8; issues=compute_reliability_metrics function truncated in view - cannot verify complete reliability scoring logic; No unit tests visible in truncated portion; Import fallback depends on external zoetron.model_health module which may not exist in all en
+
+### `last_swarm_goal`
+*05.09. 15:38 UTC · Quelle: system*
+
+Modelle zuverlässiger machen
+
+### `dream:20260905153817:5:784870`
+*05.09. 15:38 UTC · Quelle: dream*
+
+Automated skill-proposal generation (5 proposals in one cycle) indicates meta-learning loop is functional but unvalidated.
+
+### `dream:20260905153817:4:ae4812`
+*05.09. 15:38 UTC · Quelle: dream*
+
+Swarm succeeded in one cycle despite repeated model failures, proving the planner/builder/critic role redundancy works.
+
+### `dream:20260905153817:3:a19a2d`
+*05.09. 15:38 UTC · Quelle: dream*
+
+Calibration error of 7 points (predicted 2 vs actual 9) reveals systematic underestimation of swarm convergence speed.
+
+### `dream:20260905153817:2:46937d`
+*05.09. 15:38 UTC · Quelle: dream*
+
+Latency variance (7s–36s) across free tiers makes static timeouts dangerous; adaptive deadlines per model are essential.
+
+### `dream:20260905153817:1:b3b25b`
+*05.09. 15:38 UTC · Quelle: dream*
+
+Model provider APIs exhibit bursty 429/502 failures requiring circuit-breaker and fallback chains rather than single-model reliance.
 
 ### `dream:20260905152626:5:12dc0a`
 *05.09. 15:26 UTC · Quelle: dream*

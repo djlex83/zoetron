@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 15:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 15:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
-- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Ergebnisse endlich nutzen *(wieder aufgegriffen: 3×)*
-- Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und verringern *(wieder aufgegriffen: 2×)*
+- Modellfehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
+- Veraltete Grenzgebiete und Schwarm-Ergebnisse aktualisieren *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automated skill-proposal generation (5 proposals in one cycle) indicates meta-learning loop is functional but unvalidated.
+- Swarm succeeded in one cycle despite repeated model failures, proving the planner/builder/critic role redundancy works.
+- Calibration error of 7 points (predicted 2 vs actual 9) reveals systematic underestimation of swarm convergence speed.
+- Latency variance (7s–36s) across free tiers makes static timeouts dangerous; adaptive deadlines per model are essential.
+- Model provider APIs exhibit bursty 429/502 failures requiring circuit-breaker and fallback chains rather than single-model reliance.
 - Stale swarm results persist because no automated pipeline promotes validated outputs to production skills.
 - High stress (1.0) with conserve mode prevents parallel model trials that could reduce latency.
 - Previous swarm reactivation scored 4/10 because simulation revisions addressed symptoms not root causes.
@@ -51,11 +56,6 @@
 - A 58% failure rate (64 errors vs 46 successes) shows that the current model routing strategy lacks predictive filtering and falls back too late.
 - The 502 upstream error from Nvidia reveals that even successful models can fail silently due to provider-side overload, requiring upstream health awar
 - Rate-limit errors (429) are systemic across multiple providers, not isolated to one model, indicating that provider selection alone cannot solve the r
-- Self-diagnosis consistently reports zero organ errors while operational failures persist, meaning structural health checks are insufficient and must b
-- Model error rates exceeding 50% (64 errors vs 46 successes) signal a routing problem, not a model problem — the router, not the individual models, is 
-- The proposal-to-implementation gap (50 proposals, few active) is itself a failure mode: the system generates solutions faster than it executes them, c
-- Five completed swarm artifacts remain unintegrated across multiple consolidation cycles, proving that stale detection without mandatory action leads t
-- Consecutive 429 errors from z-ai/glm-5.2:free across multiple dream cycles indicate a systemic incompatibility, not a transient failure — the model mu
 
 ---
 
