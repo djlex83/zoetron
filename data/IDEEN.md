@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:38 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning discards 74+19 episodic events per cycle but the nightly fact-extraction job (proposed) never runs, losing semantic knowledge permanently.
+- Five skill proposals have accumulated without promotion; the missing CI/CD pipeline turns proposals into technical debt instead of capabilities.
+- Successful nemotron calls show 11–42 s latency variance, indicating no latency-aware routing or timeout budgeting exists.
+- The model router middleware (proposed 3 cycles ago) remains undeployed, leaving every LLM call vulnerable to unhandled 429/502 errors.
+- All free models on OpenRouter share a single quota bucket, causing cascading 429 failures when any model is rate-limited.
 - Single-cycle swarm convergence with 3 builders suggests either the goal was decomposable into parallel subtasks or the critic role lacked teeth to dem
 - Pruning removed 74 episodic events but zero semantic facts, wasting consolidation opportunity; a nightly extractor would convert pruned traces into du
 - Calibration underestimated effort by 2x (predicted 4, actual 8), indicating the estimator lacks a complexity-inflation factor for multi-role swarm tas
@@ -51,11 +56,6 @@
 - File system operations fail because code uses relative paths while the runtime expects absolute paths rooted at ZOETRON_DATA, a systemic path-resoluti
 - The only consistently reliable model (ling-3.0-flash-fin:free) delivers low latency (~4s) and high throughput, making it a natural primary candidate f
 - Rate limiting (HTTP 429) is the dominant failure mode across all tested models except inclusionai/ling-3.0-flash-fin:free, indicating missing request 
-- Initial simulation scores systematically underestimate final outcomes after evolution, requiring calibration adjustment using historical improvement d
-- Hand tool fails silently on path resolution errors, preventing data ingestion without clear diagnostics.
-- Simulation runs terminate before convergence (2 cycles, score 6/10) despite evolution occurring, suggesting insufficient iteration budget or weak stop
-- Model routing currently ignores latency and health signals, leading to unnecessary use of slow or unreliable models when faster alternatives exist.
-- Concurrent 429 errors across multiple models indicate lack of global rate-limit coordination, causing complete pool exhaustion instead of graceful bac
 
 ---
 

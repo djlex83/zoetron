@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12027 Fakten** · Stand 2026-09-05 20:40 UTC · aktualisiert bei jedem Herzschlag
+**12032 Fakten** · Stand 2026-09-05 20:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6968
+- **dream:** 6973
 - **swarm_artifact:** 2351
 - **last_swarm_critique:** 781
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905204822:5:41ff68`
+*05.09. 20:48 UTC · Quelle: dream*
+
+Pruning discards 74+19 episodic events per cycle but the nightly fact-extraction job (proposed) never runs, losing semantic knowledge permanently.
+
+### `dream:20260905204822:4:a1fdc7`
+*05.09. 20:48 UTC · Quelle: dream*
+
+Five skill proposals have accumulated without promotion; the missing CI/CD pipeline turns proposals into technical debt instead of capabilities.
+
+### `dream:20260905204822:3:6a51e4`
+*05.09. 20:48 UTC · Quelle: dream*
+
+Successful nemotron calls show 11–42 s latency variance, indicating no latency-aware routing or timeout budgeting exists.
+
+### `dream:20260905204822:2:bc9dce`
+*05.09. 20:48 UTC · Quelle: dream*
+
+The model router middleware (proposed 3 cycles ago) remains undeployed, leaving every LLM call vulnerable to unhandled 429/502 errors.
+
+### `dream:20260905204822:1:4b80f3`
+*05.09. 20:48 UTC · Quelle: dream*
+
+All free models on OpenRouter share a single quota bucket, causing cascading 429 failures when any model is rate-limited.
 
 ### `dream:20260905203739:5:c063e5`
 *05.09. 20:37 UTC · Quelle: dream*
