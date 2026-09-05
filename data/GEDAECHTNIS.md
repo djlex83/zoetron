@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12032 Fakten** · Stand 2026-09-05 20:50 UTC · aktualisiert bei jedem Herzschlag
+**12037 Fakten** · Stand 2026-09-05 21:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6973
+- **dream:** 6978
 - **swarm_artifact:** 2351
 - **last_swarm_critique:** 781
 - **anti_pattern:** 677
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905205854:5:59d45e`
+*05.09. 20:58 UTC · Quelle: dream*
+
+Caching successful model responses creates a resilience buffer that decouples execution continuity from upstream availability during transient outages.
+
+### `dream:20260905205854:4:998907`
+*05.09. 20:58 UTC · Quelle: dream*
+
+Swarm execution launched with known-failing reflex tools wastes the entire budget; pre-flight health checks on capability checkers are a cheap insurance against total swarm failure.
+
+### `dream:20260905205854:3:217ac4`
+*05.09. 20:58 UTC · Quelle: dream*
+
+429 and 502 errors share a common signature — upstream saturation — and both are detectable early via latency spikes and empty response choices, enabling proactive failover.
+
+### `dream:20260905205854:2:cedccd`
+*05.09. 20:58 UTC · Quelle: dream*
+
+Single-model dependency is the root vulnerability; provider diversity across z-ai, google, nvidia, and inclusionai proved that only multi-source routing prevents cascading outages.
+
+### `dream:20260905205854:1:3ea1fe`
+*05.09. 20:58 UTC · Quelle: dream*
+
+Rate-limited and overloaded models fail transiently, not permanently — retry with backoff is more durable than permanent exclusion from the model pool.
 
 ### `dream:20260905204822:5:41ff68`
 *05.09. 20:48 UTC · Quelle: dream*

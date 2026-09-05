@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 20:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,14 +18,14 @@
 - Create an automated skill proposal evaluator that scores by impact/effort/risk and auto-implements top proposa *(hatte die Idee 3×)*
 - Build predictive cooldown scheduler using failure-signature cache to preemptively skip models during historica *(hatte die Idee 3×)*
 - Create swarm-task watchdog flagging tasks stale >7 days, auto-generating revive sub-goals with critic-to-build *(hatte die Idee 3×)*
-- Implement a circuit breaker pattern for all model API calls with configurable failure thresholds, exponential  *(hatte die Idee 2×)*
-- Develop a latency-aware model selection heuristic that avoids high-latency models for time-sensitive sub-tasks *(hatte die Idee 2×)*
+- Add a pre-flight health check that pings each model endpoint with a minimal token request before routing produ *(hatte die Idee 2×)*
+- path_resolver: normalize every file reference through ZOETRON_DATA and sys.argv[1] before any read/write; reje *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten umsetzen *(wieder aufgegriffen: 2×)*
 - Alte Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 2×)*
+- Alte Schwarm-Aufgaben aufräumen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Caching successful model responses creates a resilience buffer that decouples execution continuity from upstream availability during transient outages
+- Swarm execution launched with known-failing reflex tools wastes the entire budget; pre-flight health checks on capability checkers are a cheap insuran
+- 429 and 502 errors share a common signature — upstream saturation — and both are detectable early via latency spikes and empty response choices, enabl
+- Single-model dependency is the root vulnerability; provider diversity across z-ai, google, nvidia, and inclusionai proved that only multi-source routi
+- Rate-limited and overloaded models fail transiently, not permanently — retry with backoff is more durable than permanent exclusion from the model pool
 - Pruning discards 74+19 episodic events per cycle but the nightly fact-extraction job (proposed) never runs, losing semantic knowledge permanently.
 - Five skill proposals have accumulated without promotion; the missing CI/CD pipeline turns proposals into technical debt instead of capabilities.
 - Successful nemotron calls show 11–42 s latency variance, indicating no latency-aware routing or timeout budgeting exists.
@@ -51,11 +56,6 @@
 - Calibration underestimated effort by 2x (predicted 4, actual 8), indicating the estimator lacks a complexity-inflation factor for multi-role swarm tas
 - nvidia/nemotron-3-ultra succeeds but exhibits 3-8x latency variance (20-155s), requiring timeout budgets and fallback triggers for time-sensitive path
 - The z-ai/glm-5.2:free model fails 100% of the time with 429 rate-limit errors, making it unusable without a circuit-breaker and quota-aware router.
-- Metabolism state 'conserve' with max_iterations=1 forces single-shot execution, making any transient failure (rate limit, path error, tool crash) fata
-- Simulation-driven revision loops (5 risks → 5 revisions → 4 applied) operate without a risk threshold gate, allowing unbounded rework under tight meta
-- File system operations fail because code uses relative paths while the runtime expects absolute paths rooted at ZOETRON_DATA, a systemic path-resoluti
-- The only consistently reliable model (ling-3.0-flash-fin:free) delivers low latency (~4s) and high throughput, making it a natural primary candidate f
-- Rate limiting (HTTP 429) is the dominant failure mode across all tested models except inclusionai/ling-3.0-flash-fin:free, indicating missing request 
 
 ---
 
