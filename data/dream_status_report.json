@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-05T04:35:57.695029",
+  "timestamp": "2026-09-05T15:04:59.596645",
   "data_dir": "/workspace/zoetron/data",
   "dream_module_found": true,
   "capabilities": {
@@ -21,7 +21,6 @@
   "data_files_found": [
     "memory/metacog_dream_memory.json",
     "memory/semantic_memory_indices.json",
-    "artefakte/s08_1787739093_draft-deliverable-for-alte-trauminhalte-mit-neuen-pl-nen-ver.md",
     "artefakte/s04_1787765152_dream-organ-auf-json-array-fakten-umstellen.md",
     "artefakte/s01_1787767351_dream-organ-json-array-aus-atomaren-fakten-statt-flie-text.md",
     "artefakte/s02_1787769398_dream-organ-auf-json-array-atomarer-fakten-umstellen.md",
@@ -51,8 +50,13 @@
     "artefakte/s08_1788582804_dream-system-status-pr-fen-und-l-cken-identifizieren.md",
     "artefakte/s08_1788582859_alte-traum-erinnerungen-aus-events-archiven-wiederbeleben.md",
     "artefakte/s08_1788582950_traum-erinnerungen-mit-semantischem-ged-chtnis-verkn-pfen.md",
+    "artefakte/s01_1788584661_traum-fakten-extrahieren-und-katalogisieren.md",
+    "artefakte/s01_1788584723_traum-erkenntnisse-mit-semantischem-ged-chtnis-verkn-pfen.md",
+    "artefakte/s01_1788584792_traum-erkenntnisse-in-nutzbare-fakten-umwandeln.md",
+    "artefakte/s01_1788612680_traum-zu-f-higkeit-br-cke-automatischer-export-getr-umter-mu.md",
     "tools/traumerkenntnisse-mit-wissen-verknüpfen.py",
     "tools/traum-ideen-zu-fähigkeiten-machen.py",
+    "tools/traum-gedächtnis-system-fertigstellen.py",
     "GEDAECHTNIS.md",
     "dream_status_report.json",
     "artefakte/s08_1788573011_semantisches-gedaechtnis-auf-konsistenz-pruefen.md",

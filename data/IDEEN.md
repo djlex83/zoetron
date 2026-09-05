@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 14:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 15:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis consistently reports zero organ errors while operational failures persist, meaning structural health checks are insufficient and must b
+- Model error rates exceeding 50% (64 errors vs 46 successes) signal a routing problem, not a model problem — the router, not the individual models, is 
+- The proposal-to-implementation gap (50 proposals, few active) is itself a failure mode: the system generates solutions faster than it executes them, c
+- Five completed swarm artifacts remain unintegrated across multiple consolidation cycles, proving that stale detection without mandatory action leads t
+- Consecutive 429 errors from z-ai/glm-5.2:free across multiple dream cycles indicate a systemic incompatibility, not a transient failure — the model mu
 - Dream cycles run without waiting for assembly/linking/pruning completion flags, producing stale or incomplete insights that pollute the knowledge base
 - Path resolution failures recur because hand_actions execute against non-canonical, unvalidated paths instead of resolving against ZOETRON_DATA first.
 - Uncontrolled spawning of swarms and heavy tasks under metabolic stress >0.7 causes resource exhaustion because no admission controller checks budget b
@@ -51,11 +56,6 @@
 - Reflex tools succeed only when they enforce strict contracts: single exit code, <30s timeout, idempotent semantics — unverified tools risk silent fail
 - Stale goals (GitHub issues, swarm plans) persist for weeks without auto-archival, clogging the drive_goal queue and blocking collaboration.
 - Model provider z-ai/glm-5.2:free consistently fails with 429 rate limits, causing cascading fallback to high-latency nemotron model (22-59s).
-- Upstream provider fragility (Nvidia 502 overloads) compounds rate-limit failures, so reliance on a single free-tier provider creates a cascading failu
-- The critic consistently identifies missing executable Python blocks as a structural defect, meaning output validation rules are not being enforced bef
-- Swarm convergence failed after only 2 cycles with score 1, suggesting that the convergence threshold or role allocation (1 planner, 3 builders, 1 crit
-- System calibration is severely miscalibrated: predicted performance of 7 vs actual 1 (abs_error 6) reveals a systematic overestimation bias that must 
-- 429 rate-limit errors from free-tier models (especially z-ai/glm-5.2) are the dominant failure mode, occurring far more frequently than upstream 502 e
 
 ---
 
