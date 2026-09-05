@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11749 Fakten** · Stand 2026-09-05 07:14 UTC · aktualisiert bei jedem Herzschlag
+**11752 Fakten** · Stand 2026-09-05 07:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6708
-- **swarm_artifact:** 2366
+- **dream:** 6713
+- **swarm_artifact:** 2364
 - **last_swarm_critique:** 766
 - **anti_pattern:** 679
 - **last_swarm_goal:** 514
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905072212:5:506af3`
+*05.09. 07:22 UTC · Quelle: dream*
+
+Evolved artifacts are promoted without sandbox verification, risking regression; a post-evolution gate is essential.
+
+### `dream:20260905072212:4:9de323`
+*05.09. 07:22 UTC · Quelle: dream*
+
+Stale swarm tasks persist without automated watchdog revival, blocking memory and distracting the system.
+
+### `dream:20260905072212:3:2cc765`
+*05.09. 07:22 UTC · Quelle: dream*
+
+Cycle estimates are systematically optimistic; a calibration layer with per-goal correction factors is needed for realistic planning.
+
+### `dream:20260905072212:2:acb8a0`
+*05.09. 07:22 UTC · Quelle: dream*
+
+Skill proposals accumulate without an implementation pipeline, creating a learning gap where insights never become capabilities.
+
+### `dream:20260905072212:1:9eda08`
+*05.09. 07:22 UTC · Quelle: dream*
+
+Free-tier model rate limits cause predictable 429 cascades that waste cycles unless routed proactively with cooldown tracking.
 
 ### `dream:20260905071151:5:5d96dc`
 *05.09. 07:11 UTC · Quelle: dream*

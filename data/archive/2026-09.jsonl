@@ -12989,3 +12989,5 @@
 {"ts": 1787986682.7715528, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.62, "gelesen": 55}}
 {"ts": 1787986684.6696553, "kind": "issue_synced", "payload": {"issue": 216, "state": "open"}}
 {"ts": 1787986819.6330023, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787382960.0, "key": "swarm_artifact:Validate deploy_orphan_detector.sh script integrity", "value": "# Orphaned Swarm Session Detector — Deployment Integrity Validation Report  **Artifact ID:** `orphan-detector-validation-r1` **Target:** `deploy_orphan_detector.sh` **Sandbox Namespace:** `swarm-sandb", "source": "builder"}
+{"ts": 1787383260.0, "key": "swarm_artifact:Deploy detector to canary namespace and validate detection l", "value": "# Orphaned Swarm Session Detector — Canary Deployment & Detection‑Logic Validation  **Artifact ID:** `orphan-detector-canary-r1` **Goal:** System‑wide Deployment of Orphaned Swarm Session Detector **T", "source": "builder"}

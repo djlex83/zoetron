@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 07:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 07:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Marktanalyse endlich abschließen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolved artifacts are promoted without sandbox verification, risking regression; a post-evolution gate is essential.
+- Stale swarm tasks persist without automated watchdog revival, blocking memory and distracting the system.
+- Cycle estimates are systematically optimistic; a calibration layer with per-goal correction factors is needed for realistic planning.
+- Skill proposals accumulate without an implementation pipeline, creating a learning gap where insights never become capabilities.
+- Free-tier model rate limits cause predictable 429 cascades that waste cycles unless routed proactively with cooldown tracking.
 - Pruning discarded 19 events but 0 facts; tiered retention keeping all failures would preserve diagnostic signal for future consolidation.
 - Pre-flight validation (paths, syntax, imports, sandbox) appears in 3+ proposals, indicating execution failures often stem from preventable setup issue
 - Multiple independent proposals converge on model router with health checks, exponential backoff, and automatic fallback - a clear architectural need.
@@ -51,11 +56,6 @@
 - Event pruning is actively maintaining memory hygiene by removing 39-40 events per cycle, keeping the event store from bloating.
 - The `z-ai/glm-5.2:free` model consistently hits 429 rate limits, requiring immediate fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` which proves
 - Dream-memory reflex (alte-erinnerungen-aktualisieren.py) converges reliably, but insights remain isolated unless explicitly linked into the active kno
-- Five high-value swarm tasks have stalled indefinitely; no automatic stale-detection or revival reflex exists to unblock them.
-- System underestimates 'completion' goals by ~100% (observed 2× actual cycles), so initial estimates must be calibrated with a 2.0× correction factor.
-- Fallback model (nvidia/nemotron-3-ultra) succeeds but with 10–60s latency variance, causing unpredictable cycle times that break static scheduling.
-- Free-tier models (z-ai/glm-5.2:free) consistently hit 429 rate limits, making them unreliable as primary workers without per-model quota tracking.
-- Aggressive pruning (87 events in one run) risks discarding failure context needed for root-cause analysis.
 
 ---
 
