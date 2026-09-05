@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11945 Fakten** · Stand 2026-09-05 17:27 UTC · aktualisiert bei jedem Herzschlag
+**11950 Fakten** · Stand 2026-09-05 17:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6903
+- **dream:** 6908
 - **swarm_artifact:** 2346
 - **last_swarm_critique:** 778
 - **anti_pattern:** 675
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905173609:5:7faf1e`
+*05.09. 17:36 UTC · Quelle: dream*
+
+Pruning removed 105 events but 0 facts, indicating the system discards operational context faster than it extracts durable patterns.
+
+### `dream:20260905173609:4:a4226f`
+*05.09. 17:36 UTC · Quelle: dream*
+
+Hand-action tooling fails silently (exit=1, no error) when invoked during high-stress windows, breaking the human-in-the-loop recovery path.
+
+### `dream:20260905173609:3:e6b4f6`
+*05.09. 17:36 UTC · Quelle: dream*
+
+Metabolism stress=1.0 (conserve mode) caps tasks to 3 and iterations to 1, starving the very retries and multi-cycle refinement needed to fix model reliability.
+
+### `dream:20260905173609:2:ea1bc7`
+*05.09. 17:36 UTC · Quelle: dream*
+
+Swarm evolution stalls at 5/10 because critic feedback ('artifacts only audit/') reveals a goal-implementation gap: proposals are generated but not wired into executable code paths.
+
+### `dream:20260905173609:1:815d5d`
+*05.09. 17:36 UTC · Quelle: dream*
+
+Free-tier models exhibit bimodal failure: z-ai/glm-5.2 hits 429 rate limits repeatedly while nvidia/nemotron-3-ultra succeeds but with 10-100s latency spikes.
 
 ### `dream:20260905172516:5:01a037`
 *05.09. 17:25 UTC · Quelle: dream*

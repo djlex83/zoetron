@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 17:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 105 events but 0 facts, indicating the system discards operational context faster than it extracts durable patterns.
+- Hand-action tooling fails silently (exit=1, no error) when invoked during high-stress windows, breaking the human-in-the-loop recovery path.
+- Metabolism stress=1.0 (conserve mode) caps tasks to 3 and iterations to 1, starving the very retries and multi-cycle refinement needed to fix model re
+- Swarm evolution stalls at 5/10 because critic feedback ('artifacts only audit/') reveals a goal-implementation gap: proposals are generated but not wi
+- Free-tier models exhibit bimodal failure: z-ai/glm-5.2 hits 429 rate limits repeatedly while nvidia/nemotron-3-ultra succeeds but with 10-100s latency
 - Calibration error of 2 points (predicted 3 vs actual 5) indicates systematic underestimation of artifact quality.
 - Critic detected goal mismatch: evolution produced audit artifacts instead of actual skill-improvement code.
 - Simulation-based pre-flight (5 risks caught, 5 revisions applied) prevented deployment of flawed artifacts.
@@ -51,11 +56,6 @@
 - The simulation→revision→apply loop works correctly (5 risks → 5 revisions → applied), proving the verification gate is functional when invoked.
 - Hand actions consistently fail to resolve real data paths (ZOETRON_DATA/sys.argv[1]), indicating a path-resolution bug in the execution sandbox.
 - The primary model (glm-5.2) fails 100% of the time with rate-limiting errors, making fallback chains mandatory rather than optional.
-- The dream cycle itself generated five unimplemented skill proposals, revealing a meta-learning loop that proposes but does not execute.
-- Three drive goals—model reliability, stale criticism loop, stalled learning—share a root cause: cascading model failures starve the system of compute.
-- Only inclusionai/ling-3.0-flash-fin:free delivered consistent low-latency success (3.6 s), marking it as the sole dependable fallback.
-- Nemotron succeeds but with highly variable latency (17–41 s), indicating unstable upstream capacity that degrades tail latency.
-- Free-tier models consistently hit 429 rate limits under sustained load, making them unreliable without proactive quota management.
 
 ---
 
