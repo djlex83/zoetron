@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 11:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 12:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Fähigkeiten wirklich ausprobieren statt nur planen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 2×)*
+- Modellfehler verstehen und verringern *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution runs improve scores (1→8) but swarm convergence remains false; separate code-generation from review cycles.
+- Calibration error (predicted 3 vs actual 1) indicates overconfidence in planner estimates; require empirical baseline before planning.
+- High latency variance in fallback models (17–60 s) degrades swarm convergence; implement latency-aware model routing.
+- Tasks requiring executable code fail when agents produce only prose; enforce code-block validation before acceptance.
+- Rate-limited models (429 errors) should be temporarily blacklisted to avoid wasted retries and latency spikes.
 - Self-diagnosis consistently reports zero organ errors, suggesting either healthy operation or insufficient instrumentation to detect latent degradatio
 - Pruning runs (41–80 events per cycle) indicate high churn; without retention rules, valuable patterns may be discarded alongside noise.
 - Reflex tools (alte-schwarm-ergebnisse-aufräumen.py, modellfehler-reduzieren-fuer-zuverlaessi.py) succeed when goals map to single, deterministic scrip
@@ -51,11 +56,6 @@
 - Reflex-driven cleanup (alte-schwarm-ergebnisse-aufräumen.py) converges reliably when given a concrete, bounded goal.
 - Stale swarm tasks and skill proposals accumulate without automatic expiration or cleanup, consuming cognitive bandwidth.
 - Free-tier models (z-ai/glm-5.2) hit 429 rate limits repeatedly, causing fallback to high-latency models (nvidia/nemotron ~19s).
-- Stale swarm projects and old dream memories represent untapped potential for new combinations and should be actively reviewed.
-- Regular pruning of events keeps the memory footprint manageable without pruning essential facts.
-- The system successfully uses reflex actions to implement proposed skills, showing a working self-improvement loop.
-- High latency (~20s) on `nvidia/nemotron-3-ultra-550b-a55b:free` indicates a need for latency-aware routing or fallback models.
-- The model `z-ai/glm-5.2:free` is chronically rate-limited (429 errors) and should be temporarily disabled or deprioritized.
 
 ---
 

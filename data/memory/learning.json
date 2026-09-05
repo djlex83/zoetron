@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 11:59:21",
+ "stand": "2026-09-05 12:26:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -12,12 +12,6 @@
    "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 6,
    "erfolge": 6,
-   "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -39,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktanalyse-auffrischen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -58,6 +46,12 @@
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -93,7 +87,7 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
+   "tool": "veraltete-marktanalyse-auffrischen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -103,6 +97,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
@@ -147,10 +147,10 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "kritiken-und-ziele-regelmäßig-prüfen.py",
@@ -393,17 +393,17 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.759,
+ "haende_quote": 0.755,
  "simulationen_angewandt": 26,
  "swarm_scores": {
-  "n": 30,
+  "n": 31,
   "best": 9.0,
-  "schnitt": 6.33
+  "schnitt": 6.39
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 29,
-   "schnitt": 6.24
+   "n": 30,
+   "schnitt": 6.3
   },
   "bau": {
    "n": 1,

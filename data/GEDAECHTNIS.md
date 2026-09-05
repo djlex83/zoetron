@@ -1,14 +1,14 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11850 Fakten** · Stand 2026-09-05 12:01 UTC · aktualisiert bei jedem Herzschlag
+**11864 Fakten** · Stand 2026-09-05 12:28 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6798
-- **swarm_artifact:** 2352
-- **last_swarm_critique:** 772
+- **dream:** 6803
+- **swarm_artifact:** 2358
+- **last_swarm_critique:** 773
 - **anti_pattern:** 689
-- **last_swarm_goal:** 520
+- **last_swarm_goal:** 521
 - **strategy:** 346
-- **tool:** 157
+- **tool:** 158
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
@@ -16,6 +16,46 @@
 - **semantic_organ:** 1
 
 ---
+
+### `tool:fähigkeitsvorschläge-in-produktion-überf`
+*05.09. 12:26 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeitsvorschläge in Produktion überführen'. Datei: data/tools/fähigkeitsvorschläge-in-produktion-überf.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*05.09. 12:26 UTC · Quelle: critic*
+
+score=8; issues=Single-shot execution model (not a daemon) - requires external scheduler like cron/systemd for continuous monitoring; Drift calculation uses simple relative difference without statistical significance testing (no confidence intervals, p-values,
+
+### `last_swarm_goal`
+*05.09. 12:19 UTC · Quelle: system*
+
+Fähigkeitsvorschläge in Produktion überführen
+
+### `dream:20260905121837:5:5ada11`
+*05.09. 12:18 UTC · Quelle: dream*
+
+Evolution runs improve scores (1→8) but swarm convergence remains false; separate code-generation from review cycles.
+
+### `dream:20260905121837:4:824e03`
+*05.09. 12:18 UTC · Quelle: dream*
+
+Calibration error (predicted 3 vs actual 1) indicates overconfidence in planner estimates; require empirical baseline before planning.
+
+### `dream:20260905121837:3:94e025`
+*05.09. 12:18 UTC · Quelle: dream*
+
+High latency variance in fallback models (17–60 s) degrades swarm convergence; implement latency-aware model routing.
+
+### `dream:20260905121837:2:3947d7`
+*05.09. 12:18 UTC · Quelle: dream*
+
+Tasks requiring executable code fail when agents produce only prose; enforce code-block validation before acceptance.
+
+### `dream:20260905121837:1:901d5f`
+*05.09. 12:18 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) should be temporarily blacklisted to avoid wasted retries and latency spikes.
 
 ### `tool:fähigkeits-vorschläge-in-echte-skills-um`
 *05.09. 11:59 UTC · Quelle: hands*
