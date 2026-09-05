@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11862 Fakten** · Stand 2026-09-05 12:39 UTC · aktualisiert bei jedem Herzschlag
+**11878 Fakten** · Stand 2026-09-05 12:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6808
-- **swarm_artifact:** 2354
-- **last_swarm_critique:** 773
-- **anti_pattern:** 687
-- **last_swarm_goal:** 521
-- **strategy:** 345
+- **dream:** 6813
+- **swarm_artifact:** 2360
+- **last_swarm_critique:** 774
+- **anti_pattern:** 689
+- **last_swarm_goal:** 522
+- **strategy:** 346
 - **tool:** 158
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,51 @@
 - **semantic_organ:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten schneller nu:1`
+*05.09. 12:52 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Fähigkeiten schneller nu:0`
+*05.09. 12:52 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 7]): Code Generation & Scaffolding Automation - # Auto-generate capability wrappers, interfaces, and wiring from declarative specs # Eliminates boilerplate, makes new capabilities instantly importable  from dataclasses imp
+
+### `last_swarm_critique`
+*05.09. 12:51 UTC · Quelle: critic*
+
+score=1; issues=Kein ausführbarer Python-Block im Artefakt vorhanden - die gesamte Eingabe besteht aus Prosa und BUILDER-Tool-Calls, nicht aus lauffähigem Code; Das SANDBOX-URTEIL bestätigt 'LÄUFT NICHT': kein ausführbarer Python-Block, Prosa allein konvergier
+
+### `last_swarm_goal`
+*05.09. 12:48 UTC · Quelle: system*
+
+Fähigkeiten schneller nutzbar machen
+
+### `dream:20260905124808:5:ead396`
+*05.09. 12:48 UTC · Quelle: dream*
+
+Dream consolidation stalls because memory-assembly, dream-linking, and pruning-audit components depend on each other but none are complete.
+
+### `dream:20260905124808:4:92f9a1`
+*05.09. 12:48 UTC · Quelle: dream*
+
+Metabolism conservation mode (stress=1.0) still spawns expensive swarms, wasting the limited budget on doomed work.
+
+### `dream:20260905124808:3:48e908`
+*05.09. 12:48 UTC · Quelle: dream*
+
+Skill proposals accumulate in a backlog because the implementation reflex (fähigkeitsvorschläge-in-echte-skills-wan.py) fails silently with exit 0.
+
+### `dream:20260905124808:2:059f6e`
+*05.09. 12:48 UTC · Quelle: dream*
+
+Path resolution breaks when tools assume relative paths but execute under different working directories or missing ZOETRON_DATA env.
+
+### `dream:20260905124808:1:bf71de`
+*05.09. 12:48 UTC · Quelle: dream*
+
+Model failures cascade because rate limits (429) and upstream errors (502) hit multiple providers simultaneously, leaving no healthy fallback.
 
 ### `dream:20260905123707:5:cb6610`
 *05.09. 12:37 UTC · Quelle: dream*

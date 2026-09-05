@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 12:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 12:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 4×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 4×)*
 - Modell-Fehler systematisch reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich nutzbar machen *(wieder aufgegriffen: 2×)*
 - Modell-Fehler reduzieren und verstehen *(wieder aufgegriffen: 2×)*
-- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 2×)*
 - Modellfehler verstehen und verringern *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream consolidation stalls because memory-assembly, dream-linking, and pruning-audit components depend on each other but none are complete.
+- Metabolism conservation mode (stress=1.0) still spawns expensive swarms, wasting the limited budget on doomed work.
+- Skill proposals accumulate in a backlog because the implementation reflex (fähigkeitsvorschläge-in-echte-skills-wan.py) fails silently with exit 0.
+- Path resolution breaks when tools assume relative paths but execute under different working directories or missing ZOETRON_DATA env.
+- Model failures cascade because rate limits (429) and upstream errors (502) hit multiple providers simultaneously, leaving no healthy fallback.
 - Pruning removes 37 events per run but leaves no audit trail, making it impossible to verify high-value memories aren't lost.
 - Reflex scripts are adopted without contract validation (timeout, idempotency, exit codes), risking silent failures.
 - Drive goals persist indefinitely without progress signals, cluttering the goal space and masking stale work.
@@ -51,11 +56,6 @@
 - High latency variance in fallback models (17–60 s) degrades swarm convergence; implement latency-aware model routing.
 - Tasks requiring executable code fail when agents produce only prose; enforce code-block validation before acceptance.
 - Rate-limited models (429 errors) should be temporarily blacklisted to avoid wasted retries and latency spikes.
-- Self-diagnosis consistently reports zero organ errors, suggesting either healthy operation or insufficient instrumentation to detect latent degradatio
-- Pruning runs (41–80 events per cycle) indicate high churn; without retention rules, valuable patterns may be discarded alongside noise.
-- Reflex tools (alte-schwarm-ergebnisse-aufräumen.py, modellfehler-reduzieren-fuer-zuverlaessi.py) succeed when goals map to single, deterministic scrip
-- Stale swarm tasks and unconverted skill proposals accumulate because no aging policy or completion pipeline exists to force closure or deletion.
-- Primary model z-ai/glm-5.2:free repeatedly hits 429 rate limits, causing cascading failures until fallback to nvidia/nemotron-3-ultra activates.
 
 ---
 
