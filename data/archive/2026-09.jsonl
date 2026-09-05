@@ -15636,3 +15636,28 @@
 {"ts": 1788044059.2053664, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.29, "gelesen": 474}}
 {"ts": 1788044059.2055368, "kind": "tor", "payload": {"goal": "Fertigkeiten wirklich zu Ende bringen", "gruen": true, "grund": "Artefakt laeuft (160 Zeilen Python)", "zyklus": 1}}
 {"ts": 1788044059.9351926, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788044059.9351904, "schalter_geoeffnet": false}}
+{"ts": 1787439480.0, "key": "dream:202608222258:5", "value": "Swarm drive goals explicitly cite coordination failures, confirming incomplete swarm lifecycles waste compute.", "source": "dream"}
+{"ts": 1787439480.0, "key": "dream:202608222258:4", "value": "Five skill proposals were generated but none promoted, exposing a missing pipeline from proposal to production.", "source": "dream"}
+{"ts": 1787439480.0, "key": "dream:202608222258:3", "value": "Calibration error jumped from 0 to 1 when goal novelty increased, showing prediction models don't generalize to new task types.", "source": "dream"}
+{"ts": 1787439480.0, "key": "dream:202608222258:2", "value": "Fixed revision caps (5) caused premature termination on the second simulation despite high risk (5), revealing rigid limits hurt complex tasks.", "source": "dream"}
+{"ts": 1787439480.0, "key": "dream:202608222258:1", "value": "Model latency exhibits extreme variance (21s–215s) on identical hardware, making static model selection unreliable.", "source": "dream"}
+{"ts": 1788044109.4227846, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 49.5, "tokens_ein": 7650, "tokens_aus": 1123}}
+{"ts": 1788044109.423625, "kind": "calibration", "payload": {"goal": "Fertigkeiten wirklich zu Ende bringen", "predicted": 6, "actual": 6, "abs_error": 0}}
+{"ts": 1788044109.4237392, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 6}}
+{"ts": 1788044109.4240916, "kind": "bahnen", "payload": {"goal": "Fertigkeiten wirklich zu Ende bringen", "delta": 0.0, "kanten": 0, "hat_code": true, "score": 6, "abgerufen": 6, "ids": ["e:7d5fc003a525", "e:d2b81fe3f377", "e:4523700c6363", "e:88513c916cfe", "g:7f1624dded1a", "e:e2bcb2868fdd"], "ziel_id": "g:2bc8e5b3b614"}}
+{"ts": 1788044109.795443, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788044109.7954407, "schalter_geoeffnet": false}}
+{"ts": 1788044143.4609644, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 33.7, "tokens_ein": 210, "tokens_aus": 927}}
+{"ts": 1788044143.8158484, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788044143.8158464, "schalter_geoeffnet": false}}
+{"ts": 1788044148.7995677, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 5.0, "tokens_ein": 711, "tokens_aus": 844}}
+{"ts": 1788044148.7998984, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 6/10. Goal: Fertigkeiten wirklich zu Ende bringen\nCritic issues: Drei separate Skripte ohne Orch", "variants": 3, "winner_index": 0, "scores": [[9, 9, 9], [7, 6, 8], [5, 4, 6]]}}
+{"ts": 1788044152.7468436, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788044152.7468414, "schalter_geoeffnet": false}}
+{"ts": 1788044201.1222906, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 48.4, "tokens_ein": 443, "tokens_aus": 1612}}
+{"ts": 1788044202.1788185, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788044202.178816, "schalter_geoeffnet": false}}
+{"ts": 1788044213.9784315, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 11.8, "tokens_ein": 334, "tokens_aus": 688}}
+{"ts": 1788044213.9786077, "kind": "simulation", "payload": {"goal": "Fertigkeiten wirklich zu Ende bringen", "verdict": "revise", "risks": 4, "revisions": 4}}
+{"ts": 1788044213.9787316, "kind": "simulation_applied", "payload": {"revisions": 4}}
+{"ts": 1788044213.9788325, "kind": "swarm_finished", "payload": {"goal": "Fertigkeiten wirklich zu Ende bringen", "score": 6, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
+{"ts": 1788044213.979179, "kind": "act_done", "payload": {"goal_title": "Fertigkeiten wirklich zu Ende bringen", "score": 6, "converged": false}}
+{"ts": 1788044215.947849, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.33, "gelesen": 474}}
+{"ts": 1788044218.322996, "kind": "issue_synced", "payload": {"issue": 233, "state": "open"}}
+{"ts": 1788044383.7640586, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

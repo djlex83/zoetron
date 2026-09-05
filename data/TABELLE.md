@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8434 Neuronen · 749955 bewertete Synapsen
+Stand: 8429 Neuronen · 750263 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,20 +10,20 @@ Stand: 8434 Neuronen · 749955 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 774 | 0.24 |
-| 2 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 806 | 0.23 |
-| 3 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 708 | 0.26 |
-| 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 725 | 0.24 |
-| 5 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 677 | 0.26 |
-| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 724 | 0.24 |
-| 7 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 661 | 0.26 |
+| 1 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 808 | 0.23 |
+| 2 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 774 | 0.24 |
+| 3 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 709 | 0.26 |
+| 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 727 | 0.24 |
+| 5 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 678 | 0.26 |
+| 6 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 723 | 0.24 |
+| 7 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 662 | 0.26 |
 | 8 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 659 | 0.25 |
-| 9 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 711 | 0.23 |
-| 10 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 642 | 0.26 |
+| 9 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 712 | 0.23 |
+| 10 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 643 | 0.26 |
 | 11 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 723 | 0.23 |
-| 12 | 💭 | Repeated 429 errors across four different models indicate system… | 664 | 0.24 |
-| 13 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 701 | 0.23 |
-| 14 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 682 | 0.24 |
+| 12 | 💭 | Repeated 429 errors across four different models indicate system… | 665 | 0.24 |
+| 13 | 💭 | High latency variance (2.8s–83.8s) for same model shows need for… | 700 | 0.23 |
+| 14 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 683 | 0.24 |
 | 15 | 💭 | Model 429 errors cascade into fallback with 2-3x latency varianc… | 716 | 0.22 |
 
 ## Die 15 stärksten Synapsen
@@ -36,14 +36,14 @@ Stand: 8434 Neuronen · 749955 bewertete Synapsen
 | 2 | **0.55** | 💭 Rate-limit failures (429) cluster in bursts ac… | 💭 Rate-limit failures (429) cluster in bursts ac… |
 | 3 | **0.55** | 🚫 🚫 Gescheiterter Versuch für „Fußball: die Basi… | 🚫 🚫 Gescheiterter Versuch für „Fußball: die Basi… |
 | 4 | **0.55** | 💭 Rate limits (429 errors) across multiple provi… | 💭 Rate limiting (429 errors) across multiple fre… |
-| 5 | **0.55** | 💭 Working model nvidia/nemotron-3-ultra-550b-a55… | 💭 Nemotron-3-ultra shows high latency variance (… |
-| 6 | **0.55** | 💭 The swarm process evolves solutions but fails … | 💭 Swarm execution evolves roles but fails to con… |
-| 7 | **0.55** | 💬 Träume in echte Verbesserungen verwandeln — {"… | 💬 Fakten-Ausbeute pro Beat verdreifachen ohne Qu… |
-| 8 | **0.55** | 🛠 „Identify outdated market analyses in knowledg… | 🛠 „Identify outdated analysis entries in semanti… |
-| 9 | **0.55** | 💭 Skill proposals accumulate without implementat… | 💭 Skill proposals accumulate across dream cycles… |
-| 10 | **0.55** | 💭 Fallback to nvidia/nemotron-3-ultra succeeds b… | 💭 Model nvidia/nemotron-3-ultra-550b-a55b:free s… |
-| 11 | **0.55** | 💭 Self-diagnosis reports zero organ errors while… | 💭 Self-diagnosis reports zero organ errors despi… |
-| 12 | **0.55** | 🛠 „Modell-Fehler-Muster aus Health-Register anal… | 🛠 „Modell-Gesundheitsregister analysieren und Fe… |
-| 13 | **0.55** | 💭 The inclusionai/ling-3.0-flash-fin model consi… | 💭 The inclusionai/ling-3.0-flash-fin model consi… |
-| 14 | **0.55** | 💭 The swarm architecture with planner/builder/cr… | 💭 Swarm convergence in a single cycle with role … |
-| 15 | **0.55** | 💭 Free-tier models exhibit cascading 429 rate-li… | 💭 Free-tier model endpoints exhibit bursty avail… |
+| 5 | **0.55** | 💭 The swarm process evolves solutions but fails … | 💭 Swarm execution evolves roles but fails to con… |
+| 6 | **0.55** | 💬 Träume in echte Verbesserungen verwandeln — {"… | 💬 Fakten-Ausbeute pro Beat verdreifachen ohne Qu… |
+| 7 | **0.55** | 🛠 „Identify outdated market analyses in knowledg… | 🛠 „Identify outdated analysis entries in semanti… |
+| 8 | **0.55** | 💭 Skill proposals accumulate without implementat… | 💭 Skill proposals accumulate across dream cycles… |
+| 9 | **0.55** | 💭 Fallback to nvidia/nemotron-3-ultra succeeds b… | 💭 Model nvidia/nemotron-3-ultra-550b-a55b:free s… |
+| 10 | **0.55** | 💭 Self-diagnosis reports zero organ errors while… | 💭 Self-diagnosis reports zero organ errors despi… |
+| 11 | **0.55** | 🛠 „Modell-Fehler-Muster aus Health-Register anal… | 🛠 „Modell-Gesundheitsregister analysieren und Fe… |
+| 12 | **0.55** | 💭 The inclusionai/ling-3.0-flash-fin model consi… | 💭 The inclusionai/ling-3.0-flash-fin model consi… |
+| 13 | **0.55** | 💭 The swarm architecture with planner/builder/cr… | 💭 Swarm convergence in a single cycle with role … |
+| 14 | **0.55** | 💭 Free-tier models exhibit cascading 429 rate-li… | 💭 Free-tier model endpoints exhibit bursty avail… |
+| 15 | **0.54** | 💭 Swarm consistently stalls at score 6/10 with c… | 💭 Evolutionary variant selection improved score … |

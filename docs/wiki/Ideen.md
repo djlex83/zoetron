@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 22:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-05 23:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration severely overestimated error counts (predicted 5 vs actual 1), suggesting the error model assumes independence but failures are correlated
+- The optimization loop failed because the proposer emitted only prose without executable Python, proving code-generation is a hard gate for convergence
+- inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (1.6-4.7s), making it the most reliable free-tier fallback.
+- Nvidia Nemotron exhibits dual failure modes: rate limits and upstream 502 overloads, indicating unreliable capacity.
+- Rate limiting (HTTP 429) is the dominant failure mode across all major free-tier providers, making single-model reliance untenable.
 - Metabolism enters 'conserve' mode (stress=1.0) precisely when remediation capacity is most needed, throttling the very fixes that would reduce load.
 - The simulation/CI pipeline is broken, so the system cannot validate changes safely, creating a catch-22 where fixes cannot be verified.
 - Stale swarm tasks accumulate because the scheduler never enforces completion of old work before admitting new goals, starving infrastructure repairs.
@@ -51,11 +56,6 @@
 - Stale swarm tasks create compounding drag by blocking new work, and no enforced mechanism currently clears them before new tasks are accepted.
 - High-quality skill proposals (circuit breakers, model routers, caching) accumulate repeatedly but the gap between proposal and actual deployment is th
 - Rate-limit errors (429) from z-ai/glm-5.2 are the single most persistent failure mode, recurring across every interaction window and demanding a struc
-- Hand-action tool fails with exit code 1 and no error message, indicating silent execution failures require mandatory stdout/stderr capture and structu
-- Swarm execution with planner/builder/critic roles failed to converge (score 1) despite evolution, suggesting role prompts lack concrete verification s
-- Evolutionary search produced a 9/10 variant from a 1/10 seed, proving that generating multiple code variants and selecting by critic score reliably re
-- Calibration error of 5 points (predicted 6 vs actual 1) reveals planning estimates are unmoored from execution reality and must be updated via Bayesia
-- The glm-5.2 model consistently fails with 429 rate-limit errors while nemotron-3-ultra succeeds, indicating urgent need for per-model quota tracking a
 
 ---
 

@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12078 Fakten** · Stand 2026-09-05 22:57 UTC · aktualisiert bei jedem Herzschlag
+**12078 Fakten** · Stand 2026-09-05 23:08 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7013
 - **swarm_artifact:** 2349
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905230537:5:1a6e12`
+*05.09. 23:05 UTC · Quelle: dream*
+
+Calibration severely overestimated error counts (predicted 5 vs actual 1), suggesting the error model assumes independence but failures are correlated bursts.
+
+### `dream:20260905230537:4:a41805`
+*05.09. 23:05 UTC · Quelle: dream*
+
+The optimization loop failed because the proposer emitted only prose without executable Python, proving code-generation is a hard gate for convergence.
+
+### `dream:20260905230537:3:7a68b0`
+*05.09. 23:05 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (1.6-4.7s), making it the most reliable free-tier fallback.
+
+### `dream:20260905230537:2:3ae6e3`
+*05.09. 23:05 UTC · Quelle: dream*
+
+Nvidia Nemotron exhibits dual failure modes: rate limits and upstream 502 overloads, indicating unreliable capacity.
+
+### `dream:20260905230537:1:e89344`
+*05.09. 23:05 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across all major free-tier providers, making single-model reliance untenable.
 
 ### `dream:20260905225440:5:6ef87b`
 *05.09. 22:54 UTC · Quelle: dream*
@@ -46231,31 +46256,6 @@ Swarm role imbalance (1 planner, 5 builders, 1 critic) correlates with non-conve
 *22.08. 23:14 UTC · Quelle: dream*
 
 Model latency varies wildly (6–215 s) causing unpredictable swarm cycle times and timeout risk.
-
-### `dream:202608222258:5`
-*22.08. 22:58 UTC · Quelle: dream*
-
-Swarm drive goals explicitly cite coordination failures, confirming incomplete swarm lifecycles waste compute.
-
-### `dream:202608222258:4`
-*22.08. 22:58 UTC · Quelle: dream*
-
-Five skill proposals were generated but none promoted, exposing a missing pipeline from proposal to production.
-
-### `dream:202608222258:3`
-*22.08. 22:58 UTC · Quelle: dream*
-
-Calibration error jumped from 0 to 1 when goal novelty increased, showing prediction models don't generalize to new task types.
-
-### `dream:202608222258:2`
-*22.08. 22:58 UTC · Quelle: dream*
-
-Fixed revision caps (5) caused premature termination on the second simulation despite high risk (5), revealing rigid limits hurt complex tasks.
-
-### `dream:202608222258:1`
-*22.08. 22:58 UTC · Quelle: dream*
-
-Model latency exhibits extreme variance (21s–215s) on identical hardware, making static model selection unreliable.
 
 ### `last_swarm_goal`
 *22.08. 21:53 UTC · Quelle: system*

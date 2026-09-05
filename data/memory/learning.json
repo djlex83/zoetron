@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-05 22:55:17",
+ "stand": "2026-09-05 23:05:56",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -135,12 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -166,6 +160,12 @@
   },
   {
    "tool": "wissenbasis-aufräumen-und-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -279,12 +279,6 @@
    "quote": 1.0
   },
   {
-   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -301,6 +295,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
@@ -375,7 +375,7 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.732,
+ "haende_quote": 0.731,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 33,
