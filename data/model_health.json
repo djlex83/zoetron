@@ -1,14 +1,14 @@
 {
- "stand": 1788615993.5079427,
+ "stand": 1788616662.1796882,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
-   "laeufe": 3684,
+   "laeufe": 3686,
    "fehler": 749,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 129036.4038143158,
+   "latenz_summe_s": 129108.20045375824,
    "letzter_fehler": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}",
    "letzte_sperre": 1788601192.3835728,
    "kontofehler": 6
@@ -61,7 +61,7 @@
    "latenz_summe_s": 671.1628432273865,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
-   "kontofehler": 3781
+   "kontofehler": 3783
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
    "laeufe": 7,

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11878 Fakten** · Stand 2026-09-05 13:48 UTC · aktualisiert bei jedem Herzschlag
+**11875 Fakten** · Stand 2026-09-05 13:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6828
-- **swarm_artifact:** 2351
+- **dream:** 6833
+- **swarm_artifact:** 2346
 - **last_swarm_critique:** 774
-- **anti_pattern:** 685
+- **anti_pattern:** 683
 - **last_swarm_goal:** 522
-- **strategy:** 344
+- **strategy:** 343
 - **tool:** 158
 - **hand_result:** 129
 - **aktuell_organfehler:** 44
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260905135658:5:f1912e`
+*05.09. 13:56 UTC · Quelle: dream*
+
+Simulation-driven revision cycles (5 risks → 5 revisions) demonstrate effective self-correction but only when the simulation verdict is 'revise' not 'reject'.
+
+### `dream:20260905135658:4:55ed29`
+*05.09. 13:56 UTC · Quelle: dream*
+
+File system operations fail due to path resolution confusion between sys.argv[1], ZOETRON_DATA, and relative paths - indicating missing path canonicalization.
+
+### `dream:20260905135658:3:367a09`
+*05.09. 13:56 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers conserve mode that caps task throughput, creating a feedback loop where failures increase stress which reduces capacity to handle failures.
+
+### `dream:20260905135658:2:0374b8`
+*05.09. 13:56 UTC · Quelle: dream*
+
+Fallback to nvidia/nemotron-3-ultra succeeds but introduces 30-60s latency spikes that violate real-time constraints.
+
+### `dream:20260905135658:1:b0a426`
+*05.09. 13:56 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic rate-limiting (429) and upstream overload (502) errors making them unreliable for production workloads.
 
 ### `dream:20260905134532:5:6b017c`
 *05.09. 13:45 UTC · Quelle: dream*
@@ -45241,13 +45266,3 @@ ABGELEHNT von Evolution (Score 7): Object‑Oriented Composition with Built‑In
 *22.08. 14:44 UTC · Quelle: evolution*
 
 ABGELEHNT von Evolution (Score 6): Robust Refactoring with Defensive Programming - Rewrite BiasCorrectedHead to include explicit input shape checks, raise informative errors for unsupported dimensions, and initialize multi‑output bias as a tensor matching the
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: GitHub-Fehler bei Issues:1`
-*22.08. 13:56 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Adopt exponential back‑with jitter and explicit 422 handling - Replace the current naive retry loop with a robust back‑off strategy (exponential delay + jitter) that caps attempts. Include a pre‑check for existing issues via
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: GitHub-Fehler bei Issues:0`
-*22.08. 13:56 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Implement missing diagnostic method and tighten error classification - Add the `_test_issue_operations` method to the diagnostic script, ensuring it exercises create, read, update, and delete flows. Simultaneously rewrite the
