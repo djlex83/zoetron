@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12073 Fakten** · Stand 2026-09-06 08:10 UTC · aktualisiert bei jedem Herzschlag
+**12073 Fakten** · Stand 2026-09-06 08:21 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7088
 - **swarm_artifact:** 2305
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906081822:5:0741ad`
+*06.09. 08:18 UTC · Quelle: dream*
+
+The simulation pathway (verdict: go, 5 risks, 3 revisions) eventually succeeded after repeated model failures, demonstrating that simulation-based reasoning can serve as a resilient fallback when direct LLM generation is unavailable.
+
+### `dream:20260906081822:4:03cda4`
+*06.09. 08:18 UTC · Quelle: dream*
+
+The hand_action timeout (20.0s, 0 tokens read) combined with the reflex tool failure shows that when the system is already under resource pressure, synchronous blocking calls without timeouts or fallbacks become single points of failure.
+
+### `dream:20260906081822:3:1d8c0a`
+*06.09. 08:18 UTC · Quelle: dream*
+
+Simultaneous 429 errors across multiple OpenRouter-hosted models indicate provider-level rate limiting, not model-specific issues, meaning diversification across hosting providers matters more than diversification across model names.
+
+### `dream:20260906081822:2:dc9fee`
+*06.09. 08:18 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model succeeded consistently (5-12s latency) while all major providers (z-ai, google, nvidia) hit rate limits or 502 errors, proving that lesser-known fallback models are more reliable under load than popular ones.
+
+### `dream:20260906081822:1:970a47`
+*06.09. 08:18 UTC · Quelle: dream*
+
+Under high stress (stress=1.0, conserve mode), the system's extremely limited budget (max_tasks:3, max_iterations:1) caused cascading timeouts, revealing that resource constraints must trigger earlier scope reduction before failures compound.
 
 ### `dream:20260906080743:5:4e7304`
 *06.09. 08:07 UTC · Quelle: dream*
@@ -46345,31 +46370,6 @@ Calibration drift of 50% (predicted 4 vs actual 6 simulations) indicates predict
 *23.08. 08:29 UTC · Quelle: dream*
 
 Model latency variance exceeds 20x (1.4s–35s) making fixed timeouts unreliable and requiring adaptive routing.
-
-### `dream:202608230813:5`
-*23.08. 08:13 UTC · Quelle: dream*
-
-Skill proposals accumulate (4 new this cycle) but implementation lags behind generation, creating a growing capability debt.
-
-### `dream:202608230813:4`
-*23.08. 08:13 UTC · Quelle: dream*
-
-Swarm runs score 6/10 and fail to converge in 2 cycles despite evolution, indicating insufficient observability into queue health and worker status.
-
-### `dream:202608230813:3`
-*23.08. 08:13 UTC · Quelle: dream*
-
-Model latency varies 7.7× (4.6–35.3 s) for the same model, making fixed timeouts unreliable and requiring latency-aware routing.
-
-### `dream:202608230813:2`
-*23.08. 08:13 UTC · Quelle: dream*
-
-Calibration error of 50% (predicted 4 vs actual 6) persists without automatic correction, degrading planning reliability.
-
-### `dream:202608230813:1`
-*23.08. 08:13 UTC · Quelle: dream*
-
-Interface contract violations (missing MemoryStore.add_fact, unconfigured logging) cause runtime crashes that could be caught by startup validation.
 
 ### `last_swarm_critique`
 *23.08. 07:41 UTC · Quelle: critic*

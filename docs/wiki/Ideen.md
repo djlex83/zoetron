@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 08:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 08:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The simulation pathway (verdict: go, 5 risks, 3 revisions) eventually succeeded after repeated model failures, demonstrating that simulation-based rea
+- The hand_action timeout (20.0s, 0 tokens read) combined with the reflex tool failure shows that when the system is already under resource pressure, sy
+- Simultaneous 429 errors across multiple OpenRouter-hosted models indicate provider-level rate limiting, not model-specific issues, meaning diversifica
+- The inclusionai/ling-3.0-flash-fin model succeeded consistently (5-12s latency) while all major providers (z-ai, google, nvidia) hit rate limits or 50
+- Under high stress (stress=1.0, conserve mode), the system's extremely limited budget (max_tasks:3, max_iterations:1) caused cascading timeouts, reveal
 - Synchronous hand actions time out under load without fallback, blocking critical paths.
 - Self-diagnosis reports zero organ errors while external model dependencies are failing, revealing a monitoring blind spot.
 - Memory pruning occurs only via manual invocation, risking unbounded growth between runs.
@@ -51,11 +56,6 @@
 - Aggressive pruning (75→1 events per cycle) keeps working memory lean but discards failure context needed for root-cause analysis of model outages.
 - Reflex-mode execution reliably closes known goals (swarm revive, knowledge refresh) without LLM calls, proving that compiled skills bypass the unrelia
 - Model inference is the single point of failure: every provider (GLM, Nemotron, Gemma) hits 429 or 502 errors within minutes, making the system effecti
-- The pattern of repeated model_fail followed by model_ok on nvidia/nemotron-3-ultra shows that fallback to a reliable model mid-task is effective but r
-- Swarm convergence failed after only 2 cycles with 5 roles, suggesting that role count and cycle budget must be tuned to task complexity; reflex-driven
-- Dream timeouts (180s) signal that the consolidation phase itself can become a bottleneck when fact/event stores grow unbounded, making periodic prunin
-- Skill proposals accumulate faster than they get executed — the swarm generated 5 proposals but converged=false, indicating that proposal generation wi
-- Free models on OpenRouter consistently hit 429 rate limits (z-ai/glm-5.2), making them unreliable for any task requiring sequential calls; a health-aw
 
 ---
 
