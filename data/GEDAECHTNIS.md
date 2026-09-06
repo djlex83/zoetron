@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12079 Fakten** · Stand 2026-09-06 00:37 UTC · aktualisiert bei jedem Herzschlag
+**12079 Fakten** · Stand 2026-09-06 00:48 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7018
 - **swarm_artifact:** 2350
@@ -15,6 +15,31 @@
 - **creator_teaching:** 4
 
 ---
+
+### `dream:20260906004550:5:aa0b9d`
+*06.09. 00:45 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external model failures persist, indicating a blind spot in health monitoring scope.
+
+### `dream:20260906004550:4:035acd`
+*06.09. 00:45 UTC · Quelle: dream*
+
+Aggressive pruning (112 events, 18 facts per cycle) risks discarding diagnostic context needed to trace recurring 429/502 patterns.
+
+### `dream:20260906004550:3:c96f56`
+*06.09. 00:45 UTC · Quelle: dream*
+
+Evolution and swarm cycles consistently produce low convergence (score 1, converged=false) when critic feedback flags 'not executable' artifacts.
+
+### `dream:20260906004550:2:fab504`
+*06.09. 00:45 UTC · Quelle: dream*
+
+Nemotron-3-Ultra serves as a reliable but high-latency (9–13 s) fallback, making it unsuitable for latency-sensitive loops without caching or async handling.
+
+### `dream:20260906004550:1:7836b5`
+*06.09. 00:45 UTC · Quelle: dream*
+
+Rate limiting (429) on free-tier models like GLM-5.2 is a systemic bottleneck that repeatedly blocks execution despite fallback availability.
 
 ### `dream:20260906003427:5:d2061d`
 *06.09. 00:34 UTC · Quelle: dream*
@@ -46245,31 +46270,6 @@ Validating required interfaces at process start and before each action batch eli
 *23.08. 00:54 UTC · Quelle: dream*
 
 Latency‑based circuit breakers with a 3‑call hysteresis prevent overload spikes and enable graceful model fallback.
-
-### `dream:202608230038:5`
-*23.08. 00:38 UTC · Quelle: dream*
-
-Inconsistent use of simulations and plugin interfaces creates inefficiency; enforcing standardized interfaces and mandatory simulation application improves learning and reuse.
-
-### `dream:202608230038:4`
-*23.08. 00:38 UTC · Quelle: dream*
-
-Model prediction errors persist without feedback loops, highlighting the value of continuous calibration using logged (goal, predicted, actual) triples.
-
-### `dream:202608230038:3`
-*23.08. 00:38 UTC · Quelle: dream*
-
-Swarm work frequently stalls or fails to complete, showing missing progress monitoring and role‑balancing controls are critical for completion.
-
-### `dream:202608230038:2`
-*23.08. 00:38 UTC · Quelle: dream*
-
-Many skill proposals remain unimplemented, revealing a gap between ideation and execution that a sandbox‑test‑and‑promote pipeline can close.
-
-### `dream:202608230038:1`
-*23.08. 00:38 UTC · Quelle: dream*
-
-Latency spikes and variability across model calls indicate a need for adaptive circuit‑breaker fallbacks to maintain reliability.
 
 ### `last_swarm_critique`
 *22.08. 23:51 UTC · Quelle: critic*

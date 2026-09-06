@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 00:34:58",
+ "stand": "2026-09-06 00:46:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -71,12 +71,6 @@
   {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "modell-fehler-systematisch-reduzieren-un.py",
-   "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -175,6 +169,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modell-fehler-systematisch-reduzieren-un.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "wissensgraph-verknüpfungen-reparieren.py",
@@ -367,9 +367,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.73,
+ "haende_quote": 0.735,
  "simulationen_angewandt": 33,
  "swarm_scores": {
   "n": 34,
@@ -378,8 +384,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 32,
-   "schnitt": 5.59
+   "n": 31,
+   "schnitt": 5.52
   },
   "bau": {
    "n": 2,
