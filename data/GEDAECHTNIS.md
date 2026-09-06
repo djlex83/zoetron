@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12070 Fakten** · Stand 2026-09-06 12:45 UTC · aktualisiert bei jedem Herzschlag
+**12081 Fakten** · Stand 2026-09-06 13:10 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7097
-- **swarm_artifact:** 2290
-- **last_swarm_critique:** 808
+- **dream:** 7102
+- **swarm_artifact:** 2293
+- **last_swarm_critique:** 809
 - **anti_pattern:** 635
-- **last_swarm_goal:** 540
+- **last_swarm_goal:** 541
 - **strategy:** 319
 - **tool:** 169
-- **hand_result:** 132
+- **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:2`
+*06.09. 13:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [8, 8, 8]): capability-composition-strategy - Redesign around composable Capability objects using Strategy + Decorator patterns. Define Capability interface with execute(context) -> Result. Concrete strategies: ReflexSucheStrateg
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:0`
+*06.09. 13:06 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 8, 8]): architectural-refactoring - Replace the stub execution layer with a real capability runtime: introduce a CapabilityRegistry that loads concrete implementations via entry points or plugin system. Each capability (_exec
+
+### `last_swarm_critique`
+*06.09. 13:05 UTC · Quelle: critic*
+
+score=7; issues=Ausfuehrung der Capability-Methoden (_execute_reflexsuche, _execute_werkzeugpruefung) erzeugt Stub-Tools statt reale Ausfuehrung - die Fuehler-Organ-Logik ist abstrahiert statt konkret implementiert; Benchmark-Messungen fallen auf simulierte De
+
+### `last_swarm_goal`
+*06.09. 12:55 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten wirklich einsetzen
+
+### `dream:20260906125424:5:7f9b26`
+*06.09. 12:54 UTC · Quelle: dream*
+
+Automatic model blocking after three consecutive errors protects downstream stability but requires proactive health tracking to avoid wasting attempts on doomed endpoints.
+
+### `dream:20260906125424:4:9034b3`
+*06.09. 12:54 UTC · Quelle: dream*
+
+Reflex-driven tool execution achieves goals without consuming model budget, demonstrating that coded procedures outperform probabilistic generation for known patterns.
+
+### `dream:20260906125424:3:ba6f7b`
+*06.09. 12:54 UTC · Quelle: dream*
+
+Hand actions execute reliably (exit code 0) and can serve as deterministic fallbacks when all model endpoints are rate-limited.
+
+### `dream:20260906125424:2:8b7fbd`
+*06.09. 12:54 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model consistently succeeds with low latency, making it a reliable primary candidate for routine tasks.
+
+### `dream:20260906125424:1:b4023b`
+*06.09. 12:54 UTC · Quelle: dream*
+
+Rate limits on free-tier models cause cascading failures when the system retries blocked models instead of switching to healthy alternatives.
 
 ### `dream:20260906124146:5:af01a0`
 *06.09. 12:41 UTC · Quelle: dream*
@@ -46340,16 +46385,6 @@ Memory pruning triggers but removes nothing, indicating stale thresholds or inef
 *23.08. 12:55 UTC · Quelle: dream*
 
 Model latency degrades over consecutive calls without circuit breaker, causing cascading delays.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fehler beim Denken reduz:1`
-*23.08. 12:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 9]): event-sourcing-cqrs - Adopt Event Sourcing + CQRS. Write model: append-only event store (SQLite or file) storing FactAdded/FactUpdated/FactDeleted events. Read model: separate projection databases (in-memory dicts, Re
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fehler beim Denken reduz:0`
-*23.08. 12:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): actor-model-isolation - Replace shared-memory SQLite with actor-based architecture. Each MemoryStore operation becomes a message sent to a dedicated actor process that serializes all DB access internally. Use Python's
 
 ### `last_swarm_critique`
 *23.08. 12:47 UTC · Quelle: critic*

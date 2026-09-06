@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 12:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:08 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 28×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 26×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Automatic model blocking after three consecutive errors protects downstream stability but requires proactive health tracking to avoid wasting attempts
+- Reflex-driven tool execution achieves goals without consuming model budget, demonstrating that coded procedures outperform probabilistic generation fo
+- Hand actions execute reliably (exit code 0) and can serve as deterministic fallbacks when all model endpoints are rate-limited.
+- The inclusionai/ling-3.0-flash-fin:free model consistently succeeds with low latency, making it a reliable primary candidate for routine tasks.
+- Rate limits on free-tier models cause cascading failures when the system retries blocked models instead of switching to healthy alternatives.
 - Rate-limit errors are not random noise but a clear signal that traffic concentration on popular models must be redistributed via continuous health sco
 - Skill proposals generated during dreaming have no durable value unless a registration-and-testing pipeline exists to promote them from suggestion to a
 - Stale swarm knowledge actively degrades routing and skill-selection decisions, making periodic freshness audits a prerequisite rather than an optional
@@ -51,11 +56,6 @@
 - Drive goals for 'Schwarm-Wissen auffrischen' and 'Veraltetes Schwarm-Wissen aktualisieren' reappear despite recent successful refreshes, suggesting th
 - Reflex scripts (schwarm-ergebnisse-mit-bestandsaufnahme-.py, vorgeschlagene-skills-nutzbar-machen.py) execute reliably and converge, proving the refle
 - The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating a hard quota ceiling on t
-- High prune counts (56 events, 5 facts) suggest accumulated failure noise that obscures signal, requiring more aggressive or intelligent filtering duri
-- The system consistently generates skill proposals but shows a persistent gap between proposal generation and actual implementation, revealing a conver
-- Stale swarm knowledge compounds planning failures, creating a feedback loop where outdated information leads to poor decisions that generate more nois
-- The latency spread between fast models (3.6s) and slow models (88s) creates a reliability-vs-capability tradeoff that must be explicitly managed throu
-- OpenRouter 429 rate-limit errors are a systemic, recurring failure mode across multiple models, indicating the API gateway—not individual models—is th
 
 ---
 
