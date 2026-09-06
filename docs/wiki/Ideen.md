@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 17:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 17:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale swarm knowledge degrades planning quality over time; regular reflex-driven updates are necessary but insufficient without concurrent freshness s
+- Proposed skills remain theoretical until executed; the gap between skill proposal and skill validation is itself a systemic failure mode that must be 
+- Model reliability under stress is inversely correlated with model size in this environment; smaller models like inclusionai/ling-3.0-flash-fin deliver
+- Swarm convergence failure at score 7 with only 2 cycles indicates that variant refinement alone cannot overcome structural limitations—evaluation mech
+- Large models fail unpredictably under load and simultaneous provider outages create cascading breakdowns that require proactive load distribution rath
 - Pruning removed 8 facts and 43 events per cycle, indicating aggressive memory consolidation that may discard context needed for convergence.
 - Calibration was perfect (predicted 7, actual 7) yet system continued iterating without converging, revealing a gap between score prediction and conver
 - Simulation detected 5 risks and proposed 5 revisions but only 3 were applied, suggesting revision filtering or application logic drops valid mitigatio
@@ -51,11 +56,6 @@
 - Simulation-driven revision loops (verdict=revise → revisions applied → grün=true) reliably convert risky plans into working artifacts.
 - Primary model (Nemotron) suffers 502 upstream overloads; fallback models (Gemma) hit 429 rate limits; a model router with health-aware selection is es
 - Relative path handling fails under real data paths; all file operations must resolve via ZOETRON_DATA and sys.argv[1] before use.
-- Swarm knowledge is stale and dream-to-skill conversion fails, leaving the system without updated collective intelligence or new capabilities.
-- Proposed skills (failover, scheduler, pruning, calibration) remain untested because no drive executes them end-to-end.
-- High metabolic stress (1.0) triggers conserve mode that caps tasks/iterations, starving skill validation and swarm refresh.
-- File operations fail because relative paths and ZOETRON_DATA env var are not resolved to absolute paths before execution.
-- Free-tier models (nemotron, gemma) fail intermittently with 502/429 errors while ling-3.0-flash-fin:free consistently succeeds at ~3s latency.
 
 ---
 
