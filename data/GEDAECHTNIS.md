@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12090 Fakten** · Stand 2026-09-06 11:11 UTC · aktualisiert bei jedem Herzschlag
+**12090 Fakten** · Stand 2026-09-06 11:23 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7107
 - **swarm_artifact:** 2307
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906112047:5:928802`
+*06.09. 11:20 UTC · Quelle: dream*
+
+Evolutionary variant generation with simulation feedback can recover from 0/10 to 7-8/10 scores within one cycle.
+
+### `dream:20260906112047:4:d8b7c5`
+*06.09. 11:20 UTC · Quelle: dream*
+
+Calibration error of 6 points (predicted 6, actual 0) indicates the predictor overestimates success when code execution is absent.
+
+### `dream:20260906112047:3:d2dcaf`
+*06.09. 11:20 UTC · Quelle: dream*
+
+Skill artifacts without executable code blocks are rejected by the critic, proving that prose-only outputs cannot converge to working capabilities.
+
+### `dream:20260906112047:2:914c1b`
+*06.09. 11:20 UTC · Quelle: dream*
+
+Nvidia Nemotron provides reliable but high-latency responses (25-83s), making it unsuitable for latency-critical paths without caching.
+
+### `dream:20260906112047:1:cab550`
+*06.09. 11:20 UTC · Quelle: dream*
+
+Free-tier models frequently hit 429 rate limits, requiring automatic fallback and retry-with-backoff strategies.
 
 ### `dream:20260906110816:5:dfe4f2`
 *06.09. 11:08 UTC · Quelle: dream*
@@ -46380,31 +46405,6 @@ Missing 'add_fact' method on MemoryStore causes hand-action failures; ensuring t
 *23.08. 11:17 UTC · Quelle: system*
 
 GitHub-Fehler beim Synchronisieren beheben
-
-### `dream:202608231117:5`
-*23.08. 11:17 UTC · Quelle: dream*
-
-MemoryStore lacks an 'add_fact' method causing hand-action failures, revealing an interface contract violation in the persistence layer.
-
-### `dream:202608231117:4`
-*23.08. 11:17 UTC · Quelle: dream*
-
-Skill proposals are generated but rarely consumed, creating a capability-acquisition bottleneck explicitly recognized by the drive system.
-
-### `dream:202608231117:3`
-*23.08. 11:17 UTC · Quelle: dream*
-
-Simulation detects risks (3 in second cycle) but revisions are not applied (0 applied), breaking the feedback loop between critic and builder.
-
-### `dream:202608231117:2`
-*23.08. 11:17 UTC · Quelle: dream*
-
-The calibration swarm fails to converge (score 4/10) despite evolution producing high-scoring variants (9/10), indicating a gap between evolution evaluation and swarm integration.
-
-### `dream:202608231117:1`
-*23.08. 11:17 UTC · Quelle: dream*
-
-Free-tier models exhibit high failure rates (502/429) making them unreliable for production swarms; only dots-studio/dots-3-note-preview and nvidia/nemotron-3-nano-omni-30b-a3b-reasoning show consistent availability.
 
 ### `last_swarm_critique`
 *23.08. 10:58 UTC · Quelle: critic*

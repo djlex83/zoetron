@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 27×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary variant generation with simulation feedback can recover from 0/10 to 7-8/10 scores within one cycle.
+- Calibration error of 6 points (predicted 6, actual 0) indicates the predictor overestimates success when code execution is absent.
+- Skill artifacts without executable code blocks are rejected by the critic, proving that prose-only outputs cannot converge to working capabilities.
+- Nvidia Nemotron provides reliable but high-latency responses (25-83s), making it unsuitable for latency-critical paths without caching.
+- Free-tier models frequently hit 429 rate limits, requiring automatic fallback and retry-with-backoff strategies.
 - Simulation verdict 'revise' with 5 risks and 5 revisions shows the system detects flaws but each revision cycle burns limited budget without guarantee
 - High stress (1.0) triggers conserve mode, capping tasks and iterations, which prevents multi-step recovery from cascading model failures.
 - Skill proposals stall at the reflex layer because the conversion script (fähigkeitsvorschläge-in-echte-skills-ums.py) exits with ok=false without touc
@@ -51,11 +56,6 @@
 - The reflex mechanism—executing skills rather than merely planning them—proved effective in bridging the intention-action gap, indicating autonomous sy
 - The successful fallback to inclusionai/ling-3.0-flash-fin demonstrates that maintaining a diverse model pool with at least one reliably fast fallback 
 - Free-tier models on OpenRouter exhibit systematic unreliability through rate limits (429) and upstream overloads (502), making them unsuitable as prim
-- Pruning 10 events per cycle without fact loss suggests the event log grows faster than semantic consolidation, requiring scheduled summarization.
-- Reflex scripts (e.g., modellfehler-deutlich-reduzieren.py) can autonomously resolve model errors when triggered by failure signals, proving the value 
-- Latency variance between successful calls (3.8s vs 33.4s) indicates missing SLA enforcement, causing unpredictable user-facing delays.
-- Upstream provider errors (502) cascade into silent failures unless explicit health checks and circuit breakers are implemented per model endpoint.
-- Free tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without quota-aware routing.
 
 ---
 
