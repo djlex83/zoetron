@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 15:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 15:19 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals pile up (reduce errors, update swarm, convert skills) without a scheduler that sequences them by dependency and urgency.
+- Pruning runs late (33 events, 6 facts) after reusable intermediate state has already been discarded, wasting compute on doomed branches.
+- Self-predictions consistently overshoot by ~3 points (calibration error), causing premature convergence declarations in evolution cycles.
+- The reflex executor lacks automatic failover: it retries the same failing model family instead of switching to the known-working fallback immediately.
+- Free-tier models fail systematically under load (429/502) while a single free model (ling-3.0-flash-fin) remains reliable, indicating provider-level q
 - The recurrence of identical model failures across two separate time windows proves that transient-error handling without stateful tracking (blacklists
 - Repeated 429 and 502 errors consume context and memory (15 events pruned), indicating that failed model attempts are a significant source of context p
 - Reflex-driven convergence can succeed without producing a measurable score, revealing that convergence signals alone are insufficient validation and t
@@ -51,11 +56,6 @@
 - Knowledge staleness persists because no scheduled audit re-verifies timestamped entries against live sources.
 - Skill proposals accumulate but rarely become production skills due to missing automated validation pipeline with sandbox testing.
 - Model failures (502, 429) cascade because no health registry tracks cooldowns, causing repeated calls to degraded endpoints.
-- Reflex scripts function as the system's reactive immune layer — their exit codes and success rates must be continuously monitored, and scripts exceedi
-- Memory hygiene requires enforced policy rather than ad-hoc cleanup; a fixed fact:event prune ratio with deviation logging prevents both data bloat and
-- The proposal-to-execution gap is the system's most persistent failure mode — skills that are proposed but never validated through automated failure-in
-- Knowledge decay is silent and compounding: without explicit freshness timestamps and scheduled audit cycles, stale swarm data degrades decision qualit
-- Model endpoint failures (502 overload, 429 rate-limiting) are systemic rather than incidental — any reliable system must assume providers will fail an
 
 ---
 
