@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12079 Fakten** · Stand 2026-09-06 00:26 UTC · aktualisiert bei jedem Herzschlag
+**12079 Fakten** · Stand 2026-09-06 00:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7013
+- **dream:** 7018
 - **swarm_artifact:** 2350
 - **last_swarm_critique:** 784
 - **anti_pattern:** 679
@@ -12,9 +12,34 @@
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
-- **creator_teaching:** 9
+- **creator_teaching:** 4
 
 ---
+
+### `dream:20260906003427:5:d2061d`
+*06.09. 00:34 UTC · Quelle: dream*
+
+The system lacks automatic model failover and retry logic, causing cascading failures when primary models are rate-limited.
+
+### `dream:20260906003427:4:c1f0f7`
+*06.09. 00:34 UTC · Quelle: dream*
+
+Simulation/feedback revival failed because the system produced only prose without executable Python blocks, confirming that artifacts must be runnable code.
+
+### `dream:20260906003427:3:08e448`
+*06.09. 00:34 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free demonstrates consistent low latency (~1.7s) and success across multiple calls, making it a stable fallback.
+
+### `dream:20260906003427:2:fdafdf`
+*06.09. 00:34 UTC · Quelle: dream*
+
+Nvidia Nemotron shows high latency variance (6-18s) and intermittent 502 upstream errors despite successful completions.
+
+### `dream:20260906003427:1:438b92`
+*06.09. 00:34 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for sustained autonomous operation.
 
 ### `dream:20260906002336:5:dfe778`
 *06.09. 00:23 UTC · Quelle: dream*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 00:24:02",
+ "stand": "2026-09-06 00:34:58",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-schwarm-arbeiten-abschließen.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -75,12 +75,6 @@
    "quote": 0.0
   },
   {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "modell-fehler-systematisch-reduzieren-un.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -142,6 +136,12 @@
   },
   {
    "tool": "veraltete-wissenstände-auffrischen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
