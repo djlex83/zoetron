@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 23:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 23:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 18×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -35,12 +35,17 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen wieder nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while hand_action fails on path resolution, revealing a blind spot between organ health and execution-layer I
+- Pruning discards 24 facts and 1 event without recording retention scores or reasons, losing diagnostic value for model_error_patterns.
+- Goals mark converged=true with score=null and no critic sign-off, allowing incomplete work to pass convergence gates.
+- Relative path inputs bypass ZOETRON_DATA/env/argv[1] canonicalization, making hand_action fail with 'nothing read' despite valid logical paths.
+- Model provider failures cascade silently without automatic fallback, causing 502/429 errors to halt swarm execution despite available alternatives.
 - Drive goals auto-generated from failure signals (30 model errors → 'Modell-Fehler verstehen', stale swarm → 'Schwarm-Wissen aktualisieren') create a c
 - Pruning aggressively removes noise (22 facts, 87 events then 24 facts, 1 event) without losing convergent reflex outcomes, confirming that consolidati
 - Reflex tools for dream/simulation improvement converge reliably (2/2 successes) while model-dependent planning fails, suggesting reflexes should handl
@@ -51,11 +56,6 @@
 - Pruning volume (facts/events) correlates with experience density; aggressive pruning during high-throughput phases prevents memory bloat.
 - Reflex execution succeeds when tool scripts exist and paths resolve, but fails silently when preconditions aren't validated beforehand.
 - Model failures (502/429) cluster on specific providers, making provider-aware fallback with circuit-breakers essential for reliability.
-- Reflex execution succeeds (ok: true) but pre-flight validation of tool paths/env is missing, risking silent failures.
-- Pruning runs remove 25–41 events per cycle yet drive goals still cite stale swarm knowledge, indicating pruning discards useful context.
-- FailurePatternMiner was proposed twice independently, revealing no deduplication mechanism for skill proposals.
-- Model latency varies wildly (14–72 s) without circuit-breaker logic, causing unpredictable reflex performance.
-- Skill proposals accumulate but lack an autonomous pipeline to convert them into tested, registered tools.
 
 ---
 

@@ -4,7 +4,7 @@
     "name": "Auto Summarize",
     "description": "Automatische Zusammenfassung langer Texte via LLM",
     "source": "user_feedback",
-    "created_at": "2026-09-05T11:59:13.864865",
+    "created_at": "2026-09-06T23:49:52.493321",
     "tags": [
       "user-requested",
       "strategic",
@@ -84,7 +84,7 @@
       "metrics:prometheus"
     ],
     "risk_assessment": "low",
-    "spike_completed_at": "2026-09-05T11:59:13.864970"
+    "spike_completed_at": "2026-09-06T23:49:52.493429"
   },
   "prioritization": {
     "user_demand_score": 8.0,
@@ -109,5 +109,5 @@
     ],
     "canary_percentage": 15.0
   },
-  "converted_at": "2026-09-05T11:59:13.864947"
+  "converted_at": "2026-09-06T23:49:52.493401"
 }

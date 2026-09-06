@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11782 Fakten** · Stand 2026-09-06 23:42 UTC · aktualisiert bei jedem Herzschlag
+**11791 Fakten** · Stand 2026-09-06 23:56 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6956
-- **swarm_artifact:** 2187
-- **last_swarm_critique:** 814
+- **swarm_artifact:** 2193
+- **last_swarm_critique:** 815
 - **anti_pattern:** 595
-- **last_swarm_goal:** 546
+- **last_swarm_goal:** 547
 - **strategy:** 299
-- **tool:** 173
+- **tool:** 174
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:vorschläge-in-echte-fähigkeiten-wandeln`
+*06.09. 23:54 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorschläge in echte Fähigkeiten wandeln'. Datei: data/tools/vorschläge-in-echte-fähigkeiten-wandeln.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*06.09. 23:54 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*06.09. 23:49 UTC · Quelle: system*
+
+Vorschläge in echte Fähigkeiten wandeln
+
+### `dream:20260906234938:5:05ab83`
+*06.09. 23:49 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while hand_action fails on path resolution, revealing a blind spot between organ health and execution-layer I/O.
+
+### `dream:20260906234938:4:9529a0`
+*06.09. 23:49 UTC · Quelle: dream*
+
+Pruning discards 24 facts and 1 event without recording retention scores or reasons, losing diagnostic value for model_error_patterns.
+
+### `dream:20260906234938:3:f71703`
+*06.09. 23:49 UTC · Quelle: dream*
+
+Goals mark converged=true with score=null and no critic sign-off, allowing incomplete work to pass convergence gates.
+
+### `dream:20260906234938:2:908622`
+*06.09. 23:49 UTC · Quelle: dream*
+
+Relative path inputs bypass ZOETRON_DATA/env/argv[1] canonicalization, making hand_action fail with 'nothing read' despite valid logical paths.
+
+### `dream:20260906234938:1:38a1ca`
+*06.09. 23:49 UTC · Quelle: dream*
+
+Model provider failures cascade silently without automatic fallback, causing 502/429 errors to halt swarm execution despite available alternatives.
 
 ### `dream:20260906233949:5:f6daf9`
 *06.09. 23:39 UTC · Quelle: dream*
@@ -45076,31 +45116,6 @@ Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 *23.08. 23:44 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608232341:5`
-*23.08. 23:41 UTC · Quelle: dream*
-
-Many simulations were launched but only one was ever applied, revealing a recurring gap between generating plans and executing their results.
-
-### `dream:202608232341:4`
-*23.08. 23:41 UTC · Quelle: dream*
-
-Local hand actions always succeeded in under 0.05s with exit 0, confirming failures are confined entirely to remote LLM API calls and never to local tooling.
-
-### `dream:202608232341:3`
-*23.08. 23:41 UTC · Quelle: dream*
-
-Successful stealth/ox-alpha calls took 145–151 seconds, so timeouts and scheduling budgets must assume multi-minute latencies instead of treating slow calls as hangs.
-
-### `dream:202608232341:2`
-*23.08. 23:41 UTC · Quelle: dream*
-
-The automatic 1800-second lockout after 3 consecutive failures worked as intended and should be retained as the standard circuit-breaker policy.
-
-### `dream:202608232341:1`
-*23.08. 23:41 UTC · Quelle: dream*
-
-All 429 failures came from OpenRouter free-tier models sharing one rate-limited endpoint, so rotating among them provides no real redundancy.
 
 ### `last_swarm_goal`
 *23.08. 23:33 UTC · Quelle: system*
