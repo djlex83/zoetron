@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 02:18:03",
+ "stand": "2026-09-06 02:28:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -379,14 +379,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "mehr-evolution-starten.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.739,
  "simulationen_angewandt": 31,
  "swarm_scores": {
-  "n": 33,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 5.85
+  "schnitt": 5.78
  },
  "score_nach_ziel_typ": {
   "analyse": {

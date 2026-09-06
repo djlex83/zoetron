@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12073 Fakten** · Stand 2026-09-06 02:20 UTC · aktualisiert bei jedem Herzschlag
+**12078 Fakten** · Stand 2026-09-06 02:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7033
+- **dream:** 7038
 - **swarm_artifact:** 2340
 - **last_swarm_critique:** 785
 - **anti_pattern:** 671
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906022814:5:02515e`
+*06.09. 02:28 UTC · Quelle: dream*
+
+Model selection currently ignores token efficiency and latency percentiles, causing slow/expensive models to be chosen over faster, cheaper ones.
+
+### `dream:20260906022814:4:11fea2`
+*06.09. 02:28 UTC · Quelle: dream*
+
+Prompt repetition across dreams suggests a PromptCache could cut external calls by ~30% as projected, directly reducing 429 exposure.
+
+### `dream:20260906022814:3:569391`
+*06.09. 02:28 UTC · Quelle: dream*
+
+Successful reflex execution (veraltete-schwarm-artefakte-aufräumen-un.py) proves autonomous remediation works when scoped to a single, well-defined tool.
+
+### `dream:20260906022814:2:738943`
+*06.09. 02:28 UTC · Quelle: dream*
+
+Redundant skill proposals (ModelRouter, circuit-breaker, scorecard) indicate the system repeatedly identifies the same reliability gap but fails to promote any to production.
+
+### `dream:20260906022814:1:9e8b0f`
+*06.09. 02:28 UTC · Quelle: dream*
+
+Rate limits (429) and upstream overloads (502) cascade across multiple free-tier providers simultaneously, making single-provider fallbacks unreliable.
 
 ### `dream:20260906021746:5:ed9c5b`
 *06.09. 02:17 UTC · Quelle: dream*

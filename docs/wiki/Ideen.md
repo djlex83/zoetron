@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 02:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 02:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
@@ -35,12 +35,17 @@
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
-- Traum-Gedächtnis-System fertigstellen *(wieder aufgegriffen: 2×)*
 - Vorschläge in echte Aktionen umwandeln *(wieder aufgegriffen: 2×)*
 - Traum-Erinnerungen nutzbar machen *(wieder aufgegriffen: 2×)*
+- Vorgeschlagene Fähigkeiten wirklich ausführen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model selection currently ignores token efficiency and latency percentiles, causing slow/expensive models to be chosen over faster, cheaper ones.
+- Prompt repetition across dreams suggests a PromptCache could cut external calls by ~30% as projected, directly reducing 429 exposure.
+- Successful reflex execution (veraltete-schwarm-artefakte-aufräumen-un.py) proves autonomous remediation works when scoped to a single, well-defined to
+- Redundant skill proposals (ModelRouter, circuit-breaker, scorecard) indicate the system repeatedly identifies the same reliability gap but fails to pr
+- Rate limits (429) and upstream overloads (502) cascade across multiple free-tier providers simultaneously, making single-provider fallbacks unreliable
 - Drive goals explicitly note skill proposals accumulate without implementation, revealing a missing dream-to-drive-to-execution pipeline.
 - Reflex-driven CI recovery succeeds but operates reactively; proactive model health scoring would prevent many fallbacks entirely.
 - Pruning runs show high initial volume (102 events) then near-zero, suggesting threshold-based scheduling would replace manual triggers effectively.
@@ -51,11 +56,6 @@
 - Calibration error of 300% (predicted 2 vs actual 8 cycles) indicates the planner systematically underestimates execution complexity for multi-role swa
 - High-latency models (Nemotron: 24-85s) succeed consistently while low-latency models (GLM: 2.5-7s) fail intermittently under load, revealing an invers
 - Rate limiting (HTTP 429) is the dominant failure mode across multiple free-tier models, making reliability dependent on request pacing rather than mod
-- Stale tasks and unused memory items accumulate during conserve mode, requiring automated cleanup to maintain system health.
-- Skill proposals are accumulating but not being executed, indicating a systemic gap between planning and operationalization that needs active bridging.
-- Under high stress (conserve mode), task execution is throttled, but critical remediation actions still require a dedicated budget to prevent total sys
-- Hand actions fail when using relative paths; scripts must resolve absolute paths using environment variables like `ZOETRON_DATA`.
-- The primary model `z-ai/glm-5.2:free` is highly rate-limited and should be temporarily deprioritized in favor of `nvidia/nemotron` to maintain through
 
 ---
 

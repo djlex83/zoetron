@@ -16253,3 +16253,41 @@
 {"ts": 1788056239.4825976, "kind": "drive_goal", "payload": {"title": "Simulationen öfter in der Praxis testen", "why": "Wir simulieren, aber wenden es kaum an. Echte Tests verbessern das Können.", "signal": "gap"}}
 {"ts": 1788056242.4865613, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.41, "gelesen": 31}}
 {"ts": 1788056242.4874773, "kind": "reflex_used", "payload": {"goal": "Marktanalyse-Ergebnisse zu Ende bringen", "tool": "alte-schwarm-ergebnisse-aufräumen.py", "ok": true}}
+{"ts": 1788056242.8264353, "kind": "act_done", "payload": {"goal_title": "Marktanalyse-Ergebnisse zu Ende bringen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788056413.2495873, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788056481.5819912, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788056482.9770432, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788056486.681157, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788056486.681152, "schalter_geoeffnet": false}}
+{"ts": 1788056506.749327, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 20.1, "tokens_ein": 1552, "tokens_aus": 1215}}
+{"ts": 1788056506.749999, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router that tracks per-model error rates, latency percentiles, and 429 frequency to dynamically rank fallbacks."}}
+{"ts": 1788056506.750064, "kind": "skill_proposal", "payload": {"proposal": "Add exponential backoff with jitter for 429 responses, respecting Retry-After headers when present."}}
+{"ts": 1788056506.750128, "kind": "skill_proposal", "payload": {"proposal": "Create a model health registry that auto-deprecates 404 models and quarantines 429-heavy models for cooldown periods."}}
+{"ts": 1788056506.7501962, "kind": "skill_proposal", "payload": {"proposal": "Build a local-first execution policy: attempt hand actions before model calls for tasks with known code artifacts."}}
+{"ts": 1788056506.7502513, "kind": "skill_proposal", "payload": {"proposal": "Calibrate the error-threshold block duration based on error type (shorter for 429, longer for 404/500)."}}
+{"ts": 1788056506.7503035, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788056511.5168066, "kind": "model_ok", "payload": {"model": "z-ai/glm-5.2:free", "latency_s": 3.0, "tokens_ein": 489, "tokens_aus": 416}}
+{"ts": 1788056511.5170069, "kind": "drive_goal", "payload": {"title": "Häufige Fehlerquellen finden und beheben", "why": "Es gab sehr viele Fehlschläge beim Modellieren. Wenn wir verstehen, woran es liegt, können wir in Zukunft viel mehr Aufgaben richtig lösen.", "signal": "failure"}}
+{"ts": 1788056511.5170908, "kind": "drive_goal", "payload": {"title": "Marktanalyse und Lückenanalyse aktualisieren", "why": "Die alten Ergebnisse zur Marktanalyse sind veraltet und ungenutzt. Eine Aktualisierung hilft, wieder zielgerichteter zu arbeiten.", "signal": "stale"}}
+{"ts": 1788056511.5171664, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten erfolgreich umsetzen", "why": "Es wurden viele neue Fähigkeiten vorgeschlagen, aber selten erfolgreich angewendet. Wir sollten die besten Vorschläge auswählen und gezielt einüben.", "signal": "combination"}}
+{"ts": 1788056516.1461694, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 1.11, "gelesen": 2}}
+{"ts": 1788056516.1469786, "kind": "reflex_used", "payload": {"goal": "Veraltete Marktanalyse erneuern", "tool": "marktanalyse-endlich-abschließen.py", "ok": true}}
+{"ts": 1788056516.623321, "kind": "act_done", "payload": {"goal_title": "Veraltete Marktanalyse erneuern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788056687.4720995, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788056763.6270816, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788056765.0431955, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788056768.831807, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788056768.8318048, "schalter_geoeffnet": false}}
+{"ts": 1788056831.5162914, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 62.7, "tokens_ein": 1529, "tokens_aus": 853}}
+{"ts": 1788056831.5168464, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router that tracks per-model 429/502 rates and automatically falls back to the most reliable free model (currently ling-3.0-flash-fin)."}}
+{"ts": 1788056831.5169024, "kind": "skill_proposal", "payload": {"proposal": "Add a circuit-breaker that pauses a model after N consecutive errors and enforces a cooldown before retry, preventing 30-minute hard bans."}}
+{"ts": 1788056831.5169573, "kind": "skill_proposal", "payload": {"proposal": "Require every skill to return a JSON-serializable result or write a verifiable artifact; reject skills that only print to stdout during registration."}}
+{"ts": 1788056831.5170102, "kind": "skill_proposal", "payload": {"proposal": "Introduce a convergence gate in swarm loops: stop early if best score hasn't improved >1 point in the last K cycles, saving compute."}}
+{"ts": 1788056831.5170622, "kind": "skill_proposal", "payload": {"proposal": "Create a 'model_health_monitor' skill that logs latency, error rates, and ban status per model to a persistent store for routing decisions."}}
+{"ts": 1788056831.517121, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788056833.7897682, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788056833.789766, "schalter_geoeffnet": false}}
+{"ts": 1788056847.7774947, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 14.0, "tokens_ein": 545, "tokens_aus": 700}}
+{"ts": 1788056847.7776594, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und beheben", "why": "Viele Modelle scheitern noch. Wenn wir die Ursachen finden, werden zukünftige Vorhersagen zuverlässiger.", "signal": "failure"}}
+{"ts": 1788056847.7777412, "kind": "drive_goal", "payload": {"title": "Marktanalyse abschließen und nutzen", "why": "Die begonnene Marktanalyse liegt brach. Ihr Abschluss zeigt neue Chancen für das System.", "signal": "stale"}}
+{"ts": 1788056847.77786, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten echt machen", "why": "Viele Fähigkeiten wurden nur vorgeschlagen. Echte Umsetzung erweitert, was das System kann.", "signal": "gap"}}
+{"ts": 1788056851.1492856, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 5}}
+{"ts": 1788056851.1504261, "kind": "reflex_used", "payload": {"goal": "Fertigkeiten schneller in echte Handlungen umsetzen", "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py", "ok": true}}
+{"ts": 1788056851.5079494, "kind": "act_done", "payload": {"goal_title": "Fertigkeiten schneller in echte Handlungen umsetzen", "score": null, "converged": true, "mode": "reflex"}}
