@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11833 Fakten** · Stand 2026-09-06 22:12 UTC · aktualisiert bei jedem Herzschlag
+**11811 Fakten** · Stand 2026-09-06 22:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6981
-- **swarm_artifact:** 2210
+- **dream:** 6971
+- **swarm_artifact:** 2204
 - **last_swarm_critique:** 813
-- **anti_pattern:** 599
+- **anti_pattern:** 595
 - **last_swarm_goal:** 545
-- **strategy:** 301
+- **strategy:** 299
 - **tool:** 172
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906222035:5:75c0c7`
+*06.09. 22:20 UTC · Quelle: dream*
+
+Failure patterns correlate with specific model/provider/goal tuples but are never mined to spawn corrective skills.
+
+### `dream:20260906222035:4:ebd440`
+*06.09. 22:20 UTC · Quelle: dream*
+
+Relative-path executions fail silently because HandAction lacks pre-flight existence checks and env expansion.
+
+### `dream:20260906222035:3:ff1667`
+*06.09. 22:20 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely deploy because no mandatory simulation gate validates them pre-flight.
+
+### `dream:20260906222035:2:fd5f65`
+*06.09. 22:20 UTC · Quelle: dream*
+
+Swarm knowledge staleness persists because refresh cycles are manual, not tied to convergence events.
+
+### `dream:20260906222035:1:fbcdef`
+*06.09. 22:20 UTC · Quelle: dream*
+
+Model cascade failures (429/502) recur because providers lack proactive health checks and automatic fallback chains.
 
 ### `dream:20260906221007:5:114b13`
 *06.09. 22:10 UTC · Quelle: dream*
@@ -45217,41 +45242,6 @@ High latency variance (6.7–108.9 s) for the same model indicates unreliable in
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232220:5`
-*23.08. 22:20 UTC · Quelle: dream*
-
-Drive goals (reliable swarms, model health, dream-goal alignment) emerge reactively from failures rather than proactively shaping swarm design.
-
-### `dream:202608232220:4`
-*23.08. 22:20 UTC · Quelle: dream*
-
-Skill proposals accumulate without a selection filter, flooding the system with unimplemented ideas while critical bugs (AttributeError) block progress.
-
-### `dream:202608232220:3`
-*23.08. 22:20 UTC · Quelle: dream*
-
-Prune_run prunes zero candidates across cycles, indicating the retention threshold is miscalibrated and memory grows unbounded under load.
-
-### `dream:202608232220:2`
-*23.08. 22:20 UTC · Quelle: dream*
-
-Swarms repeatedly fail to converge (Ich-Kern-Injektor parked after 3 attempts) because simulation verdicts ignore runtime interface mismatches like missing MemoryStore.add_fact.
-
-### `dream:202608232220:1`
-*23.08. 22:20 UTC · Quelle: dream*
-
-Extreme latency spikes (108.9s) correlate with swarm initiation under high stress (0.849), suggesting model overload cascades into coordination failures.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:2`
-*23.08. 22:18 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Actor-Based Local-First Bridge - Model the bridge as an Actor (using `asyncio` + `asyncactor` or `thespian`) running in the same process as the Boten-Agent. Hermes messages arrive via a lightweight in-process Channel (queue)
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:1`
-*23.08. 22:18 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
 ### `last_swarm_critique`
 *23.08. 22:18 UTC · Quelle: critic*
 
@@ -45262,70 +45252,10 @@ ABGELEHNT von Evolution (Score 6): Actor-Based Local-First Bridge - Model the br
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232214:5`
-*23.08. 22:14 UTC · Quelle: dream*
-
-LLM statelessness forces repeated self-reconstruction; a persistent identity layer must survive context windows.
-
-### `dream:202608232214:4`
-*23.08. 22:14 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than validation capacity, creating a proposal graveyard without promotion criteria.
-
-### `dream:202608232214:3`
-*23.08. 22:14 UTC · Quelle: dream*
-
-Swarm goals repeatedly start without completion signals, indicating missing termination conditions or progress tracking.
-
-### `dream:202608232214:2`
-*23.08. 22:14 UTC · Quelle: dream*
-
-Pruning stalls silently when criteria drift from data reality, requiring explicit staleness detection.
-
-### `dream:202608232214:1`
-*23.08. 22:14 UTC · Quelle: dream*
-
-Model fallback chains mask upstream instability but hide degradation until all tiers exhaust.
-
 ### `last_swarm_goal`
 *23.08. 22:13 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608232212:5`
-*23.08. 22:12 UTC · Quelle: dream*
-
-Whispers blocked on creator decisions re-consume execution slots each cycle instead of batching into one decision request.
-
-### `dream:202608232212:4`
-*23.08. 22:12 UTC · Quelle: dream*
-
-Swarm tasks stall at handoff boundaries because completion gates lack mandatory verification artifacts.
-
-### `dream:202608232212:3`
-*23.08. 22:12 UTC · Quelle: dream*
-
-Prune runs repeatedly remove zero items, indicating stale thresholds that never self-adjust.
-
-### `dream:202608232212:2`
-*23.08. 22:12 UTC · Quelle: dream*
-
-Model latency variance (45s–194s) breaks time budgets and triggers cascading retries without a circuit-breaker.
-
-### `dream:202608232212:1`
-*23.08. 22:12 UTC · Quelle: dream*
-
-Duplicate skill proposals recur because no deduplication mechanism exists across dream cycles.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Ich-Kern-Injektor bauen::2`
-*23.08. 22:11 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 4, 9]): Recursive Self-Construction Loop - Ich-Kern starts as minimal seed (name, values, blank memory). On each LLM call, a meta-prompt asks the model to *update* the kernel given the interaction transcript: `"Given this con
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Ich-Kern-Injektor bauen::1`
-*23.08. 22:11 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 7, 7]): Self-as-Executable DSL - Define the Ich-Kern as a typed, executable Python DSL (dataclasses + `__call__` protocol) that renders its own injection block. Each LLM call receives `ich_kern.render(context)` which executes
 
 ### `last_swarm_critique`
 *23.08. 22:10 UTC · Quelle: critic*

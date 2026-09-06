@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 22:10:48",
+ "stand": "2026-09-06 22:22:10",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
@@ -120,12 +120,6 @@
    "tool": "modellfehler-stark-reduzieren.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "wissensgraph-verknüpfungen-reparieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -268,6 +262,12 @@
   },
   {
    "tool": "fähigkeiten-gezielt-trainieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "wissensgraph-verknüpfungen-reparieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

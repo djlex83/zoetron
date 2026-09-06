@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 19×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Failure patterns correlate with specific model/provider/goal tuples but are never mined to spawn corrective skills.
+- Relative-path executions fail silently because HandAction lacks pre-flight existence checks and env expansion.
+- Skill proposals accumulate but rarely deploy because no mandatory simulation gate validates them pre-flight.
+- Swarm knowledge staleness persists because refresh cycles are manual, not tied to convergence events.
+- Model cascade failures (429/502) recur because providers lack proactive health checks and automatic fallback chains.
 - Critic calibration drifts silently because predicted vs. actual score pairs are never fed back into online isotonic regression.
 - Artifacts deploy without simulation verdicts because no gate enforces 'go' with risks ≤ 2 before release.
 - Swarm knowledge decays into staleness without an automatic refresh trigger tied to convergence cycles.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently without scheduled refresh cycles, causing decision drift that only surfaces as stale-goal signals.
 - A single reliable model (inclusionai/ling-3.0-flash-fin) outperforms multiple unreliable premium models, making provider diversity less valuable than 
 - Provider-specific failure modes (502 upstream overload vs 429 rate limits) require distinct mitigation strategies rather than generic retry logic.
-- Path-resolution failures are recurrent enough to warrant a dedicated utility, suggesting filesystem access assumes incorrect working directories.
-- Goals converge via reflex mode with null scores, bypassing quality thresholds and leaving convergence criteria undefined.
-- Skill proposals accumulate (5 this cycle) but none pass a validation gate; the system proposes skills faster than it can verify them.
-- Swarm-knowledge refresh runs as a reflex but goals re-appear with 'stale' signal, indicating the refresh fetches data but fails to integrate or invali
-- Model provider failures cascade silently: nemotron overload (502) and gemma rate-limits (429) occur without automatic fallback, causing action stalls.
 
 ---
 
