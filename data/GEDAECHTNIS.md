@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12074 Fakten** · Stand 2026-09-06 02:41 UTC · aktualisiert bei jedem Herzschlag
+**12075 Fakten** · Stand 2026-09-06 02:52 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7038
-- **swarm_artifact:** 2336
+- **dream:** 7043
+- **swarm_artifact:** 2335
 - **last_swarm_critique:** 785
-- **anti_pattern:** 671
+- **anti_pattern:** 669
 - **last_swarm_goal:** 533
-- **strategy:** 337
+- **strategy:** 336
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906024907:5:0130b4`
+*06.09. 02:49 UTC · Quelle: dream*
+
+Absolute path enforcement via ZOETRON_DATA prevents hand-action failures caused by relative-path drift across metabolism ticks.
+
+### `dream:20260906024907:4:422043`
+*06.09. 02:49 UTC · Quelle: dream*
+
+Stale tasks accumulate silently without TTL-enforced archival, polluting drive-goal selection and masking true system capacity.
+
+### `dream:20260906024907:3:0cd378`
+*06.09. 02:49 UTC · Quelle: dream*
+
+Swarm collaboration stalls when critic feedback loops exceed metabolism tick budgets, but reserved remediation slots bypassing conserve-mode restore convergence.
+
+### `dream:20260906024907:2:10584e`
+*06.09. 02:49 UTC · Quelle: dream*
+
+Model 429 errors cascade into fallback latency spikes because routing lacks proactive health-aware load shedding based on sliding-window error rates.
+
+### `dream:20260906024907:1:a46bce`
+*06.09. 02:49 UTC · Quelle: dream*
+
+Duplicate skill proposals recur because the system lacks semantic deduplication before persistence, wasting metabolism cycles on redundant implementations.
 
 ### `dream:20260906023843:5:68b3a5`
 *06.09. 02:38 UTC · Quelle: dream*
@@ -46285,16 +46310,6 @@ Model latency varies 50x (3.8–203 s) without a circuit breaker, making plannin
 *23.08. 02:56 UTC · Quelle: dream*
 
 Missing interface validation allows runtime AttributeError crashes like MemoryStore.add_fact, which must be caught at process start and before every hand-action batch.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationen öfter in ec:2`
-*23.08. 02:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Automated Real-World Test Orchestration via Containerized Environments - Build a containerized test orchestration platform (using Docker Compose or Kubernetes Jobs) that spins up real hardware or high-fidelity digital twins o
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationen öfter in ec:1`
-*23.08. 02:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Plugin-Based Architecture with Standardized Interfaces - Refactor the system into a core framework that discovers and loads plugins for simulation runners, environment adapters, and result comparators. Define a strict Environ
 
 ### `last_swarm_critique`
 *23.08. 02:40 UTC · Quelle: critic*
