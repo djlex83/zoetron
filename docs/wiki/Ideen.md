@@ -1,11 +1,11 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuo *(hatte die Idee 6×)*
+- Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuo *(hatte die Idee 7×)*
 - Add ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity (cosine > 0.85), and *(hatte die Idee 5×)*
 - Add @circuit_breaker decorator with configurable failure threshold, half-open probe interval, and automatic me *(hatte die Idee 5×)*
 - Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run i *(hatte die Idee 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale swarm data degrades decision quality; freshness validation must be paired with refresh cycles to avoid propagating outdated information into rou
+- Skill proposals generated during consolidation are only durable if validated through sandbox testing before promotion to the active registry, preventi
+- Reactive reflexes successfully triggered skill-building, but proactive mechanisms like circuit breakers and health-score-based routing would prevent c
+- The system's reliance on a single working model (inclusionai/ling-3.0-flash-fin) creates dangerous concentration risk; any future disruption without a
+- Repeated 429 and 502 errors across multiple providers indicate infrastructure-level failures, not model-specific defects, so resilience must be built 
 - Proactive skill proposals (quota tracker, SLA wrapper, degradation organ) directly mirror observed failure modes but remain unimplemented.
 - Latency variance (3.7s vs 43.4s) correlates with model size tier, not reliability – smaller models can be both faster and more available.
 - Swarm convergence fails (score 0) despite evolution, suggesting the planner-critic loop lacks a measurable quality gate for skill synthesis.
@@ -51,11 +56,6 @@
 - Skill artifacts without executable code blocks are rejected by the critic, proving that prose-only outputs cannot converge to working capabilities.
 - Nvidia Nemotron provides reliable but high-latency responses (25-83s), making it unsuitable for latency-critical paths without caching.
 - Free-tier models frequently hit 429 rate limits, requiring automatic fallback and retry-with-backoff strategies.
-- Simulation verdict 'revise' with 5 risks and 5 revisions shows the system detects flaws but each revision cycle burns limited budget without guarantee
-- High stress (1.0) triggers conserve mode, capping tasks and iterations, which prevents multi-step recovery from cascading model failures.
-- Skill proposals stall at the reflex layer because the conversion script (fähigkeitsvorschläge-in-echte-skills-ums.py) exits with ok=false without touc
-- File operations fail when using relative paths instead of resolving sys.argv[1] and ZOETRON_DATA to absolute paths before access.
-- Rate-limited models (z-ai/glm-5.2, google/gemma) consistently return 429 errors, making them unreliable for primary workflows.
 
 ---
 

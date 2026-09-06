@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12080 Fakten** · Stand 2026-09-06 11:35 UTC · aktualisiert bei jedem Herzschlag
+**12078 Fakten** · Stand 2026-09-06 11:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7102
-- **swarm_artifact:** 2302
+- **swarm_artifact:** 2300
 - **last_swarm_critique:** 792
 - **anti_pattern:** 641
 - **last_swarm_goal:** 540
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906114353:5:729ff0`
+*06.09. 11:43 UTC · Quelle: dream*
+
+Stale swarm data degrades decision quality; freshness validation must be paired with refresh cycles to avoid propagating outdated information into routing and skill-selection logic.
+
+### `dream:20260906114353:4:b4522e`
+*06.09. 11:43 UTC · Quelle: dream*
+
+Skill proposals generated during consolidation are only durable if validated through sandbox testing before promotion to the active registry, preventing untested code from entering production.
+
+### `dream:20260906114353:3:457c6b`
+*06.09. 11:43 UTC · Quelle: dream*
+
+Reactive reflexes successfully triggered skill-building, but proactive mechanisms like circuit breakers and health-score-based routing would prevent cascading failures before they occur.
+
+### `dream:20260906114353:2:d7e991`
+*06.09. 11:43 UTC · Quelle: dream*
+
+The system's reliance on a single working model (inclusionai/ling-3.0-flash-fin) creates dangerous concentration risk; any future disruption without a pre-qualified fallback chain will cause total inference failure.
+
+### `dream:20260906114353:1:d73251`
+*06.09. 11:43 UTC · Quelle: dream*
+
+Repeated 429 and 502 errors across multiple providers indicate infrastructure-level failures, not model-specific defects, so resilience must be built into the routing layer rather than by switching models.
 
 ### `dream:20260906113211:5:7a1f03`
 *06.09. 11:32 UTC · Quelle: dream*
@@ -46350,31 +46375,6 @@ score=4; issues=Artifact 1: Uses test set for selecting calibration method, caus
 *23.08. 11:38 UTC · Quelle: system*
 
 Modellleistung durch regelmäßiges Kalibrieren steigern
-
-### `dream:202608231137:5`
-*23.08. 11:37 UTC · Quelle: dream*
-
-Repeated zero‑prune runs signal stale data accumulation, so prune thresholds must auto‑escalate when two consecutive runs prune nothing to prevent unbounded memory growth.
-
-### `dream:202608231137:4`
-*23.08. 11:37 UTC · Quelle: dream*
-
-Missing interface methods such as MemoryStore.add_fact lead to AttributeError crashes, proving that pre‑flight interface checks are essential for stability.
-
-### `dream:202608231137:3`
-*23.08. 11:37 UTC · Quelle: dream*
-
-Swarm role imbalance (many builders, few critics) correlates with low convergence scores, showing that enforcer‑based role quotas improve validation quality.
-
-### `dream:202608231137:2`
-*23.08. 11:37 UTC · Quelle: dream*
-
-Latency spikes (e.g., 80.9 s) exceed mission timeouts, indicating a need for real‑time latency monitoring and automatic fallback to faster models.
-
-### `dream:202608231137:1`
-*23.08. 11:37 UTC · Quelle: dream*
-
-Critic output must be validated against a strict schema before use, as unparseable critic results caused scoring failures in evolution runs.
 
 ### `last_swarm_goal`
 *23.08. 11:17 UTC · Quelle: system*
