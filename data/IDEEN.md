@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 02:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model failures cascade because the system lacks a health-aware router that prefers reliable endpoints for critical operations.
+- Stale tasks and obsolete swarm data persist without automated archival, polluting the knowledge base and degrading future decisions.
+- Conserve-mode throttling prevents execution of remediation tasks, creating a deadlock where the system cannot self-heal under load.
+- Multiple overlapping proposals for circuit breakers, rate limiters, and health registries reveal a missing deduplication mechanism that wastes proposa
+- Primary model (z-ai/glm-5.2:free) consistently returns 429 errors, necessitating automatic fallback and rate limiting to maintain system availability.
 - Absolute path enforcement via ZOETRON_DATA prevents hand-action failures caused by relative-path drift across metabolism ticks.
 - Stale tasks accumulate silently without TTL-enforced archival, polluting drive-goal selection and masking true system capacity.
 - Swarm collaboration stalls when critic feedback loops exceed metabolism tick budgets, but reserved remediation slots bypassing conserve-mode restore c
@@ -51,11 +56,6 @@
 - Latency variance from 4.7s to 25.1s across "healthy" models makes timeout-based routing unreliable without percentile-aware SLAs.
 - Duplicate skill proposals (ModelRouter proposed twice) reveal missing semantic deduplication in the consolidation pipeline.
 - Cross-provider 429 errors indicate systemic rate-limiting vulnerability requiring coordinated traffic management rather than per-model retries.
-- Model selection currently ignores token efficiency and latency percentiles, causing slow/expensive models to be chosen over faster, cheaper ones.
-- Prompt repetition across dreams suggests a PromptCache could cut external calls by ~30% as projected, directly reducing 429 exposure.
-- Successful reflex execution (veraltete-schwarm-artefakte-aufräumen-un.py) proves autonomous remediation works when scoped to a single, well-defined to
-- Redundant skill proposals (ModelRouter, circuit-breaker, scorecard) indicate the system repeatedly identifies the same reliability gap but fails to pr
-- Rate limits (429) and upstream overloads (502) cascade across multiple free-tier providers simultaneously, making single-provider fallbacks unreliable
 
 ---
 

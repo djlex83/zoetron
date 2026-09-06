@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12075 Fakten** · Stand 2026-09-06 02:52 UTC · aktualisiert bei jedem Herzschlag
+**12071 Fakten** · Stand 2026-09-06 03:03 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7043
-- **swarm_artifact:** 2335
+- **swarm_artifact:** 2331
 - **last_swarm_critique:** 785
 - **anti_pattern:** 669
 - **last_swarm_goal:** 533
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906030119:5:8a55e7`
+*06.09. 03:01 UTC · Quelle: dream*
+
+Model failures cascade because the system lacks a health-aware router that prefers reliable endpoints for critical operations.
+
+### `dream:20260906030119:4:8cf17c`
+*06.09. 03:01 UTC · Quelle: dream*
+
+Stale tasks and obsolete swarm data persist without automated archival, polluting the knowledge base and degrading future decisions.
+
+### `dream:20260906030119:3:9f5f6c`
+*06.09. 03:01 UTC · Quelle: dream*
+
+Conserve-mode throttling prevents execution of remediation tasks, creating a deadlock where the system cannot self-heal under load.
+
+### `dream:20260906030119:2:18b6fd`
+*06.09. 03:01 UTC · Quelle: dream*
+
+Multiple overlapping proposals for circuit breakers, rate limiters, and health registries reveal a missing deduplication mechanism that wastes proposal capacity.
+
+### `dream:20260906030119:1:4acbe6`
+*06.09. 03:01 UTC · Quelle: dream*
+
+Primary model (z-ai/glm-5.2:free) consistently returns 429 errors, necessitating automatic fallback and rate limiting to maintain system availability.
 
 ### `dream:20260906024907:5:0130b4`
 *06.09. 02:49 UTC · Quelle: dream*
@@ -46285,31 +46310,6 @@ score=4; issues=Nightly Calibration Updater assumes ordered, equal-length JSON l
 *23.08. 02:56 UTC · Quelle: system*
 
 Schwarm-Aufgaben zu Ende bringen
-
-### `dream:202608230256:5`
-*23.08. 02:56 UTC · Quelle: dream*
-
-Swarm runs lack heartbeat monitoring and role quotas, so stalled shards and planner/critic shortages go unnoticed until the goal fails.
-
-### `dream:202608230256:4`
-*23.08. 02:56 UTC · Quelle: dream*
-
-Calibration predictions match actuals (error 0) when run, yet the nightly updater is not deployed so drift goes undetected between sessions.
-
-### `dream:202608230256:3`
-*23.08. 02:56 UTC · Quelle: dream*
-
-The evolution loop (simulate → critic → evolve) reliably lifts scores from 4 to 10, but only when code-duplication critiques are enforced as hard gates.
-
-### `dream:202608230256:2`
-*23.08. 02:56 UTC · Quelle: dream*
-
-Model latency varies 50x (3.8–203 s) without a circuit breaker, making planning unreliable and causing cascade timeouts in swarm orchestration.
-
-### `dream:202608230256:1`
-*23.08. 02:56 UTC · Quelle: dream*
-
-Missing interface validation allows runtime AttributeError crashes like MemoryStore.add_fact, which must be caught at process start and before every hand-action batch.
 
 ### `last_swarm_critique`
 *23.08. 02:40 UTC · Quelle: critic*
