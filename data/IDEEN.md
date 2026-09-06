@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 21:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 21:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Path-resolution failures are recurrent enough to warrant a dedicated utility, suggesting filesystem access assumes incorrect working directories.
+- Goals converge via reflex mode with null scores, bypassing quality thresholds and leaving convergence criteria undefined.
+- Skill proposals accumulate (5 this cycle) but none pass a validation gate; the system proposes skills faster than it can verify them.
+- Swarm-knowledge refresh runs as a reflex but goals re-appear with 'stale' signal, indicating the refresh fetches data but fails to integrate or invali
+- Model provider failures cascade silently: nemotron overload (502) and gemma rate-limits (429) occur without automatic fallback, causing action stalls.
 - Autonomous drive goals emerge from three distinct signals (gap, stale, error) and immediately spawn executable reflex actions, proving the system can 
 - Pruning removes 20 facts and 20-47 events per cycle without diagnostic errors, indicating memory pressure is managed but retention policies lack seman
 - Skill proposals generated during dreaming directly target observed failure modes (ModelRouter for 502/429, SimulationGate for artifact quality, Boiler
@@ -51,11 +56,6 @@
 - Model endpoint failures (429/502) cascade without proactive health tracking, forcing reactive fallbacks instead of predictive routing.
 - Skill proposals accumulate faster than validation (5+ per cycle vs. few tested), creating a deployment gap that the SkillValidationPipeline aims to cl
 - Reflex-driven execution reliably converges swarm goals but operates without predictive model health awareness, causing 27-31s latency per call.
-- The system self-corrects effectively when reflex-based action is paired with structured goal-driven refinement, but this synergy collapses whenever mo
-- Convergence declared without strict criteria (score threshold, risk simulation, critic sign-off) produces false positives that undermine the entire le
-- Skills proposed without a mandatory execution-and-scoring gate accumulate as untested dead weight, polluting the skill registry and eroding trust in t
-- Stale swarm knowledge creates a compounding error loop: outdated goals and critiques cause repeated mistakes, making periodic refresh cycles non-optio
-- Model provider failures (502/429) are the primary system bottleneck — without per-provider health tracking and automatic fallback chains, the system w
 
 ---
 

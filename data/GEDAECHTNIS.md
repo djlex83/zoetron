@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11898 Fakten** · Stand 2026-09-06 21:32 UTC · aktualisiert bei jedem Herzschlag
+**11865 Fakten** · Stand 2026-09-06 21:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7016
-- **swarm_artifact:** 2228
+- **dream:** 7001
+- **swarm_artifact:** 2216
 - **last_swarm_critique:** 813
-- **anti_pattern:** 607
+- **anti_pattern:** 603
 - **last_swarm_goal:** 545
-- **strategy:** 305
+- **strategy:** 303
 - **tool:** 172
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906214926:5:f18cce`
+*06.09. 21:49 UTC · Quelle: dream*
+
+Path-resolution failures are recurrent enough to warrant a dedicated utility, suggesting filesystem access assumes incorrect working directories.
+
+### `dream:20260906214926:4:cbd86e`
+*06.09. 21:49 UTC · Quelle: dream*
+
+Goals converge via reflex mode with null scores, bypassing quality thresholds and leaving convergence criteria undefined.
+
+### `dream:20260906214926:3:917f90`
+*06.09. 21:49 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 this cycle) but none pass a validation gate; the system proposes skills faster than it can verify them.
+
+### `dream:20260906214926:2:3e2520`
+*06.09. 21:49 UTC · Quelle: dream*
+
+Swarm-knowledge refresh runs as a reflex but goals re-appear with 'stale' signal, indicating the refresh fetches data but fails to integrate or invalidate old conclusions.
+
+### `dream:20260906214926:1:dae305`
+*06.09. 21:49 UTC · Quelle: dream*
+
+Model provider failures cascade silently: nemotron overload (502) and gemma rate-limits (429) occur without automatic fallback, causing action stalls.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Träume miteinander :2`
 *06.09. 21:28 UTC · Quelle: evolution*
@@ -45467,91 +45492,6 @@ score=3; issues=Benchmark modules are only placeholders with no actual benchmark
 
 Fähigkeits-Messlatte bauen (Capability-Benchmark)
 
-### `dream:202608232148:5`
-*23.08. 21:48 UTC · Quelle: dream*
-
-Promoting the highest‑scoring variant in evolution pipelines yields consistent performance gains across cycles.
-
-### `dream:202608232148:4`
-*23.08. 21:48 UTC · Quelle: dream*
-
-Missing required methods on dependencies cause silent failures; pre‑invocation interface validation catches configuration errors early.
-
-### `dream:202608232148:3`
-*23.08. 21:48 UTC · Quelle: dream*
-
-Successful calibration after four revisions shows that limiting revision batches to five prevents endless loops.
-
-### `dream:202608232148:2`
-*23.08. 21:48 UTC · Quelle: dream*
-
-Duplicate skill proposals appear repeatedly; hashing and rejecting them saves proposal‑processing cycles.
-
-### `dream:202608232148:1`
-*23.08. 21:48 UTC · Quelle: dream*
-
-Latency spikes above twice the rolling median often precede simulation revision requests, indicating a need for dynamic throttling.
-
-### `dream:202608232142:5`
-*23.08. 21:42 UTC · Quelle: dream*
-
-Simulation reviews flagged several risks requiring multiple revisions, showing that act_done should be blocked until all risks are addressed or waived.
-
-### `dream:202608232142:4`
-*23.08. 21:42 UTC · Quelle: dream*
-
-Multiple identical skill proposals appear across cycles, showing a lack of deduplication that wastes effort.
-
-### `dream:202608232142:3`
-*23.08. 21:42 UTC · Quelle: dream*
-
-Repeated zero‑prune runs suggest pruning criteria may be too strict or data stale, warranting an automated audit trigger.
-
-### `dream:202608232142:2`
-*23.08. 21:42 UTC · Quelle: dream*
-
-Missing attribute errors (e.g., MemoryStore.add_fact) reveal absent interface‑contract enforcement across components.
-
-### `dream:202608232142:1`
-*23.08. 21:42 UTC · Quelle: dream*
-
-Latency shows high variance with occasional spikes >100 s, indicating a need for dynamic timeouts and fallback mechanisms.
-
-### `dream:202608232137:5`
-*23.08. 21:37 UTC · Quelle: dream*
-
-Swarm composition heavily favored builders (5) over planners and critics (1 each), limiting convergent improvement.
-
-### `dream:202608232137:4`
-*23.08. 21:37 UTC · Quelle: dream*
-
-Simulation flagged five risks but act_done proceeded with score 4, showing revisions are not gated before execution.
-
-### `dream:202608232137:3`
-*23.08. 21:37 UTC · Quelle: dream*
-
-Three consecutive zero‑prune runs indicate pruning criteria may be too strict, allowing stale facts to accumulate.
-
-### `dream:202608232137:2`
-*23.08. 21:37 UTC · Quelle: dream*
-
-Missing MemoryStore.add_fact method caused a runtime AttributeError, revealing a gap in interface contract enforcement.
-
-### `dream:202608232137:1`
-*23.08. 21:37 UTC · Quelle: dream*
-
-Latency jitter (5.7‑37.7 s) shows response times are unpredictable, requiring adaptive timeout mechanisms.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Gesundheitsregist:1`
-*23.08. 21:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Typed circuit‑breaker decorator with whitelisted exceptions - Create a @circuit_breaker decorator that accepts a tuple of exception types to monitor (e.g., (ConnectionError, TimeoutError, ServiceUnavailable)). Inside the wrap
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Modell-Gesundheitsregist:0`
-*23.08. 21:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Centralized data model with dataclass and module-level import - Define Patient as a frozen dataclass in a dedicated models module; import it wherever needed to eliminate duplicate definitions. Use type hints and __post_init__
-
 ### `last_swarm_critique`
 *23.08. 21:35 UTC · Quelle: critic*
 
@@ -45561,41 +45501,6 @@ ABGELEHNT von Evolution (Score 6): Centralized data model with dataclass and mod
 *23.08. 21:31 UTC · Quelle: system*
 
 Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
-
-### `dream:202608232131:5`
-*23.08. 21:31 UTC · Quelle: dream*
-
-Many proposed skills remain unimplemented, revealing a disconnect between ideation and execution that benefits from explicit execution tracking and prioritization.
-
-### `dream:202608232131:4`
-*23.08. 21:31 UTC · Quelle: dream*
-
-The pruner consistently finds zero candidates to prune, suggesting either overly permissive thresholds or missing detection logic that should be monitored and alerted.
-
-### `dream:202608232131:3`
-*23.08. 21:31 UTC · Quelle: dream*
-
-Simulation results are rarely turned into action, indicating a gap between validation and deployment that can be closed with an automated gate.
-
-### `dream:202608232131:2`
-*23.08. 21:31 UTC · Quelle: dream*
-
-Duplicate skill proposals accumulate without added value, showing that a centralized registry with deduplication and issue tracking would improve proposal hygiene.
-
-### `dream:202608232131:1`
-*23.08. 21:31 UTC · Quelle: dream*
-
-Latency spikes and upstream overloads frequently cause model failures, highlighting the need for dynamic load‑shedding and fallback mechanisms.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Modell-Gesundheitsregist:2`
-*23.08. 21:30 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Modell-Gesundheitsregist:1`
-*23.08. 21:30 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Dataclass‑based model with post‑init validation and context‑manager circuit brea - Implement Patient as a @dataclass with fields patient_id: str and name: str, and add a __post_init__ method that raises ValueError if patient_
 
 ### `last_swarm_critique`
 *23.08. 21:29 UTC · Quelle: critic*
