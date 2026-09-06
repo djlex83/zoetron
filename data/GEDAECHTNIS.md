@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12073 Fakten** · Stand 2026-09-06 08:21 UTC · aktualisiert bei jedem Herzschlag
+**12073 Fakten** · Stand 2026-09-06 08:33 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7088
 - **swarm_artifact:** 2305
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906083033:5:48b0e1`
+*06.09. 08:30 UTC · Quelle: dream*
+
+Aggressive pruning (24 events/cycle) discards failure context needed for longitudinal pattern detection.
+
+### `dream:20260906083033:4:70fdfc`
+*06.09. 08:30 UTC · Quelle: dream*
+
+Single-cycle swarm convergence with score 8 may reflect insufficient critic diversity rather than true solution quality.
+
+### `dream:20260906083033:3:98de56`
+*06.09. 08:30 UTC · Quelle: dream*
+
+Calibration MAE of 3 cycles reveals predictor drift; self-scores cannot be trusted until retrained on recent (predicted, actual) pairs.
+
+### `dream:20260906083033:2:17711a`
+*06.09. 08:30 UTC · Quelle: dream*
+
+Nemotron latency varies 5x (18–90s) suggesting cold-start or queue effects; routing should prefer lower-variance models for time-sensitive tasks.
+
+### `dream:20260906083033:1:38a803`
+*06.09. 08:30 UTC · Quelle: dream*
+
+Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate-limiting that makes it unreliable for production routing.
 
 ### `dream:20260906081822:5:0741ad`
 *06.09. 08:18 UTC · Quelle: dream*
@@ -46345,31 +46370,6 @@ score=1; issues=All five sections contain identical copy-pasted bash reconnaissa
 *23.08. 08:30 UTC · Quelle: system*
 
 Mehr Skills wirklich nutzen
-
-### `dream:202608230829:5`
-*23.08. 08:29 UTC · Quelle: dream*
-
-Evolution improved variant scores from 6→8 but the winning variant still triggered 'revise' verdict with 5 risks, showing simulation validation catches issues evolution misses.
-
-### `dream:202608230829:4`
-*23.08. 08:29 UTC · Quelle: dream*
-
-Swarm consistently stalls at score 6/10 with convergence=false, suggesting the critic/builder ratio (1:4) lacks sufficient adversarial pressure.
-
-### `dream:202608230829:3`
-*23.08. 08:29 UTC · Quelle: dream*
-
-Missing 'add_fact' method on MemoryStore caused a runtime AttributeError that halted execution despite prior evolution cycles.
-
-### `dream:202608230829:2`
-*23.08. 08:29 UTC · Quelle: dream*
-
-Calibration drift of 50% (predicted 4 vs actual 6 simulations) indicates prediction models need online correction after each task.
-
-### `dream:202608230829:1`
-*23.08. 08:29 UTC · Quelle: dream*
-
-Model latency variance exceeds 20x (1.4s–35s) making fixed timeouts unreliable and requiring adaptive routing.
 
 ### `last_swarm_critique`
 *23.08. 07:41 UTC · Quelle: critic*

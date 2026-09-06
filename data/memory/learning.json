@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 08:18:52",
+ "stand": "2026-09-06 08:31:00",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -379,9 +379,15 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.741,
+ "haende_quote": 0.748,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 31,

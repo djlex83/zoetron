@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 08:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 08:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
-- Add artifact pre-flight validator running syntax check, import test, and sandbox permission verification befor *(hatte die Idee 5×)*
 - Add ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity (cosine > 0.85), and *(hatte die Idee 5×)*
+- Add artifact pre-flight validator running syntax check, import test, and sandbox permission verification befor *(hatte die Idee 4×)*
 - Build predictive cooldown scheduler using failure-signature cache to preemptively skip models during historica *(hatte die Idee 3×)*
 - Create swarm-task watchdog flagging tasks stale >7 days, auto-generating revive sub-goals with critic-to-build *(hatte die Idee 3×)*
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
@@ -19,7 +19,7 @@
 - Add @circuit_breaker decorator with configurable failure threshold, half-open probe interval, and automatic me *(hatte die Idee 3×)*
 - Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run i *(hatte die Idee 3×)*
 - Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as *(hatte die Idee 3×)*
-- Build model router with per-model rate-limit counters, exponential backoff, latency tracking, and automatic fa *(hatte die Idee 2×)*
+- Implement a calibration layer that multiplies cycle estimates by 2.0 and learns per-goal correction factors fr *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (24 events/cycle) discards failure context needed for longitudinal pattern detection.
+- Single-cycle swarm convergence with score 8 may reflect insufficient critic diversity rather than true solution quality.
+- Calibration MAE of 3 cycles reveals predictor drift; self-scores cannot be trusted until retrained on recent (predicted, actual) pairs.
+- Nemotron latency varies 5x (18–90s) suggesting cold-start or queue effects; routing should prefer lower-variance models for time-sensitive tasks.
+- Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate-limiting that makes it unreliable for production routing.
 - The simulation pathway (verdict: go, 5 risks, 3 revisions) eventually succeeded after repeated model failures, demonstrating that simulation-based rea
 - The hand_action timeout (20.0s, 0 tokens read) combined with the reflex tool failure shows that when the system is already under resource pressure, sy
 - Simultaneous 429 errors across multiple OpenRouter-hosted models indicate provider-level rate limiting, not model-specific issues, meaning diversifica
@@ -51,11 +56,6 @@
 - Memory pruning occurs only via manual invocation, risking unbounded growth between runs.
 - Skill proposals are generated but lack an automated incubation pipeline to validate against real failure scenarios before promotion.
 - External model APIs fail frequently due to rate limits and overloads, causing cascading failures without automatic failover.
-- The system spontaneously generates the same model-resilience skill proposals (router, cache, SLA, dashboard) each cycle, indicating it recognizes the 
-- Self-diagnosis reports zero organ errors while the cognitive layer (model router) is failing, revealing a monitoring blind spot between infrastructure
-- Aggressive pruning (75→1 events per cycle) keeps working memory lean but discards failure context needed for root-cause analysis of model outages.
-- Reflex-mode execution reliably closes known goals (swarm revive, knowledge refresh) without LLM calls, proving that compiled skills bypass the unrelia
-- Model inference is the single point of failure: every provider (GLM, Nemotron, Gemma) hits 429 or 502 errors within minutes, making the system effecti
 
 ---
 
