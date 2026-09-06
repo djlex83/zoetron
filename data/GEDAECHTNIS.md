@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11775 Fakten** · Stand 2026-09-06 22:44 UTC · aktualisiert bei jedem Herzschlag
+**11767 Fakten** · Stand 2026-09-06 23:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6951
-- **swarm_artifact:** 2188
-- **last_swarm_critique:** 813
+- **dream:** 6941
+- **swarm_artifact:** 2187
+- **last_swarm_critique:** 814
 - **anti_pattern:** 595
-- **last_swarm_goal:** 545
+- **last_swarm_goal:** 546
 - **strategy:** 299
-- **tool:** 172
+- **tool:** 173
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:träume-in-echte-fähigkeiten-verwandeln`
+*06.09. 22:59 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume in echte Fähigkeiten verwandeln'. Datei: data/tools/träume-in-echte-fähigkeiten-verwandeln.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*06.09. 22:59 UTC · Quelle: critic*
+
+score=8; issues=Dream Insight Extractor uses simplistic n-gram pattern extraction with arbitrary confidence scoring (score/5 * sources/5) that lacks statistical grounding; Skill Code Generator relies on keyword heuristics (analyzer/auditor/canonicalizer in nam
+
+### `last_swarm_goal`
+*06.09. 22:52 UTC · Quelle: system*
+
+Träume in echte Fähigkeiten verwandeln
+
+### `dream:20260906225229:5:312442`
+*06.09. 22:52 UTC · Quelle: dream*
+
+Pruning removes 38-49 facts/events per cycle but self-diagnosis finds zero organ errors, suggesting pruning may discard diagnostic context needed for root-cause analysis.
+
+### `dream:20260906225229:4:e742cc`
+*06.09. 22:52 UTC · Quelle: dream*
+
+Path resolution failures ("Kein ausführbarer Pyth") indicate inputs are not canonicalized to absolute paths via ZOETRON_DATA before filesystem access.
+
+### `dream:20260906225229:3:314aec`
+*06.09. 22:52 UTC · Quelle: dream*
+
+Proposed skills (ProviderFallbackChain, ConvergenceGate, etc.) accumulate without implementation - the SkillValidationGate proposal itself was never validated, creating a meta-gap.
+
+### `dream:20260906225229:2:f911fa`
+*06.09. 22:52 UTC · Quelle: dream*
+
+Swarm goals repeatedly fail to converge (score 1, converged=false) because simulation risks (3 risks) and critic issues (no executable Python) are not resolved before execution.
+
+### `dream:20260906225229:1:cd4a2d`
+*06.09. 22:52 UTC · Quelle: dream*
+
+Primary model inclusionai/ling-3.0-flash-fin consistently fails (score 1) while nemotron-3-ultra succeeds but with 13-40s latency, making provider fallback essential for reliability.
 
 ### `dream:20260906224201:5:12923b`
 *06.09. 22:42 UTC · Quelle: dream*
@@ -45022,90 +45062,15 @@ Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232248:5`
-*23.08. 22:48 UTC · Quelle: dream*
-
-Baseline benchmark scores 25/25 but without comparative runs, performance regressions or improvements cannot be detected.
-
-### `dream:202608232248:4`
-*23.08. 22:48 UTC · Quelle: dream*
-
-Three drive goals expose systemic gaps: skills untested in simulation, swarms rarely complete, and no regular model benchmarking exists.
-
-### `dream:202608232248:3`
-*23.08. 22:48 UTC · Quelle: dream*
-
-Identical simulation goal 'Hermes-Brücke' executed twice with same risks/revisions parameters, wasting compute on redundant verification.
-
-### `dream:202608232248:2`
-*23.08. 22:48 UTC · Quelle: dream*
-
-Hand actions complete consistently in 20-50ms locally, proving local execution is orders of magnitude more dependable than remote model calls.
-
-### `dream:202608232248:1`
-*23.08. 22:48 UTC · Quelle: dream*
-
-Model latency varies extremely (0.7s to 143s) with upstream 502 overload errors, making remote inference unreliable for time-critical paths.
-
 ### `last_swarm_goal`
 *23.08. 22:44 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232244:5`
-*23.08. 22:44 UTC · Quelle: dream*
-
-Previous dream output (5 insights, 5 proposals) did not prevent recurrence of the same latency and adoption issues.
-
-### `dream:202608232244:4`
-*23.08. 22:44 UTC · Quelle: dream*
-
-Three drive goals (skill adoption, Hermes protocol, swarm completion) remain open across cycles, indicating a systemic execution gap.
-
-### `dream:202608232244:3`
-*23.08. 22:44 UTC · Quelle: dream*
-
-Prune runs consistently remove zero items, suggesting retention thresholds are too high or accumulation is too slow.
-
-### `dream:202608232244:2`
-*23.08. 22:44 UTC · Quelle: dream*
-
-Hand actions complete in ~30 ms with zero failures, proving local tooling is stable while remote inference is the bottleneck.
-
-### `dream:202608232244:1`
-*23.08. 22:44 UTC · Quelle: dream*
-
-Model latency for nemotron-3-ultra varies wildly (4.5–182.8 s) making it unreliable for time-bound tasks.
-
 ### `last_swarm_goal`
 *23.08. 22:43 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608232243:5`
-*23.08. 22:43 UTC · Quelle: dream*
-
-Recurrent drive goals (revive old dream, fix model errors, apply skills) persist across cycles because the system lacks a mechanism to promote a drive goal into a binding work-item with acceptance criteria.
-
-### `dream:202608232243:4`
-*23.08. 22:43 UTC · Quelle: dream*
-
-The Hermes-Brücke architecture relies on filesystem polling (bruecke.py) for inter-agent communication, which inherently creates race conditions and latency that no amount of revision fixes.
-
-### `dream:202608232243:3`
-*23.08. 22:43 UTC · Quelle: dream*
-
-Five skill proposals were generated in one cycle (MemoryStore fallback, model_health, smoke tests, proposal filter, prune metrics) but zero were implemented, confirming the proposal-to-production gap the drive goal explicitly identifies.
-
-### `dream:202608232243:2`
-*23.08. 22:43 UTC · Quelle: dream*
-
-Simulation repeatedly verdicts "go" then demands 5 revisions for the same Hermes-Brücke goal, proving the simulator does not validate actual filesystem I/O or inter-agent handshake logic.
-
-### `dream:202608232243:1`
-*23.08. 22:43 UTC · Quelle: dream*
-
-Model latency cascades exponentially within a single session (7.7s → 182.8s) without any circuit breaker or failover, turning transient load into systemic paralysis.
 
 ### `last_swarm_goal`
 *23.08. 22:42 UTC · Quelle: system*

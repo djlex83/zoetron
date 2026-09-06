@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:42 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 20×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes 38-49 facts/events per cycle but self-diagnosis finds zero organ errors, suggesting pruning may discard diagnostic context needed for 
+- Path resolution failures ("Kein ausführbarer Pyth") indicate inputs are not canonicalized to absolute paths via ZOETRON_DATA before filesystem access.
+- Proposed skills (ProviderFallbackChain, ConvergenceGate, etc.) accumulate without implementation - the SkillValidationGate proposal itself was never v
+- Swarm goals repeatedly fail to converge (score 1, converged=false) because simulation risks (3 risks) and critic issues (no executable Python) are not
+- Primary model inclusionai/ling-3.0-flash-fin consistently fails (score 1) while nemotron-3-ultra succeeds but with 13-40s latency, making provider fal
 - Concurrent retries across multiple failing providers create a cascading failure pattern where rate limits and overloads compound rather than resolve.
 - InclusionAI's ling-3.0-flash-fin is the only consistently reliable model in the current pool, succeeding across all attempts with low latency (1.4–4.6
 - The system severely overestimated its reliability (predicted 6 successes, actual 1), revealing a calibration gap where free-tier availability is treat
@@ -51,11 +56,6 @@
 - Reflex execution fails silently when tool paths are invalid or data directories missing (hand_action exit 0, reflex_used ok=false), revealing a gap be
 - High metabolic stress (0.836) forces conservative budgets that starve the very planners needed to recover from model failures, creating a death spiral
 - Model reliability is the primary bottleneck: 502/429 errors cascade into planner failures and wasted cycles, making per-provider circuit-breakers (Mod
-- Failure patterns correlate with specific model/provider/goal tuples but are never mined to spawn corrective skills.
-- Relative-path executions fail silently because HandAction lacks pre-flight existence checks and env expansion.
-- Skill proposals accumulate but rarely deploy because no mandatory simulation gate validates them pre-flight.
-- Swarm knowledge staleness persists because refresh cycles are manual, not tied to convergence events.
-- Model cascade failures (429/502) recur because providers lack proactive health checks and automatic fallback chains.
 
 ---
 
