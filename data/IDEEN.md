@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 16:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 17:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The reflex executor successfully ran a skill-testing script (vorgeschlagene-fähigkeiten-testen-und-nu.py), proving the system can execute implementati
+- Pruning reduces fact/event counts (16→10 facts, 26 events) but recurring model errors regenerate similar experience, indicating that structural fixes—
+- Only inclusionai/ling-3.0-flash-fin:free delivers consistent sub-5s latency and 200 responses, establishing it as the de facto reliable free model tha
+- The system repeatedly proposes identical resilience patterns (circuit breaker, retry wrapper, rate-limit awareness, fallback chain, revision cache) bu
+- Free-tier models (nemotron, gemma-4) exhibit systematic unreliability: nemotron suffers 502 overload errors and 60s+ latency, while gemma-4 hits 429 q
 - Self-diagnosis consistently reports no internal organ errors, confirming that failures originate externally and the system's primary vulnerability is 
 - Circuit breakers that auto-blacklist after consecutive failures prevent cascading errors more effectively than any manual intervention or post-hoc ana
 - Reactive retries without health awareness waste context and tokens on models already known to be degraded, compounding the original failure with unnec
@@ -51,11 +56,6 @@
 - Evolution improved the best variant score from 7 to 9, but the swarm still didn't converge after 2 cycles, indicating that score improvement alone doe
 - The inclusionai/ling-3.0-flash-fin model succeeded consistently where larger models (Nemotron, Gemma) failed, proving that smaller specialized models 
 - When multiple providers simultaneously return 429/502 errors, parallel retries amplify the problem — staggered backoff with jitter is essential to avo
-- Self-diagnosis reports zero organ errors despite repeated model failures, indicating blind spots in health monitoring.
-- Existing skill proposals directly address observed model failures but remain unimplemented.
-- Multiple drive goals activate concurrently without prerequisite ordering (model reliability → swarm update → skill conversion).
-- Reflex execution converges reliably for well-scoped goals (swarm update) but requires pre-built tools.
-- Free-tier models (nemotron, gemma) fail systematically with 502/429 errors while ling-3.0-flash-fin:free succeeds consistently at 3.6s latency.
 
 ---
 

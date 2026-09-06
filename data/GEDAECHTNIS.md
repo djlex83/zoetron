@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12035 Fakten** · Stand 2026-09-06 16:59 UTC · aktualisiert bei jedem Herzschlag
+**12039 Fakten** · Stand 2026-09-06 17:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7101
-- **swarm_artifact:** 2266
+- **dream:** 7106
+- **swarm_artifact:** 2265
 - **last_swarm_critique:** 811
 - **anti_pattern:** 619
 - **last_swarm_goal:** 543
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906170845:5:ac0a82`
+*06.09. 17:08 UTC · Quelle: dream*
+
+The reflex executor successfully ran a skill-testing script (vorgeschlagene-fähigkeiten-testen-und-nu.py), proving the system can execute implementation tasks when triggered, but this occurs reactively rather than proactively.
+
+### `dream:20260906170845:4:f6598e`
+*06.09. 17:08 UTC · Quelle: dream*
+
+Pruning reduces fact/event counts (16→10 facts, 26 events) but recurring model errors regenerate similar experience, indicating that structural fixes—not memory management—are needed to break the failure loop.
+
+### `dream:20260906170845:3:2df421`
+*06.09. 17:08 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free delivers consistent sub-5s latency and 200 responses, establishing it as the de facto reliable free model that should anchor all routing logic.
+
+### `dream:20260906170845:2:2ed532`
+*06.09. 17:08 UTC · Quelle: dream*
+
+The system repeatedly proposes identical resilience patterns (circuit breaker, retry wrapper, rate-limit awareness, fallback chain, revision cache) but fails to implement them, creating a proposal-implementation gap that perpetuates model failures.
+
+### `dream:20260906170845:1:a68164`
+*06.09. 17:08 UTC · Quelle: dream*
+
+Free-tier models (nemotron, gemma-4) exhibit systematic unreliability: nemotron suffers 502 overload errors and 60s+ latency, while gemma-4 hits 429 quota exhaustion, making them unsuitable as primary routes.
 
 ### `dream:20260906165633:5:4cba0e`
 *06.09. 16:56 UTC · Quelle: dream*

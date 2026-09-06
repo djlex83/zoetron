@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 16:57:35",
+ "stand": "2026-09-06 17:10:21",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,6 +33,12 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 5,
    "erfolge": 4,
@@ -43,12 +49,6 @@
    "laeufe": 5,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
   },
   {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
@@ -375,7 +375,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.8,
+ "haende_quote": 0.801,
  "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 30,
