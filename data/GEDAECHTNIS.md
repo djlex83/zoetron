@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12077 Fakten** · Stand 2026-09-06 01:38 UTC · aktualisiert bei jedem Herzschlag
+**12082 Fakten** · Stand 2026-09-06 01:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7023
+- **dream:** 7028
 - **swarm_artifact:** 2348
 - **last_swarm_critique:** 785
 - **anti_pattern:** 675
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906014619:5:f705f0`
+*06.09. 01:46 UTC · Quelle: dream*
+
+Stale tasks accumulate without automatic archival, losing diagnostic value unless reaped with generated post-mortems each metabolism tick.
+
+### `dream:20260906014619:4:fcdc71`
+*06.09. 01:46 UTC · Quelle: dream*
+
+Conserve-mode throttling blocks critical remediation tasks, necessitating a reserved budget that bypasses normal resource constraints.
+
+### `dream:20260906014619:3:0d434a`
+*06.09. 01:46 UTC · Quelle: dream*
+
+Skill proposals generated during operation frequently duplicate existing capabilities, wasting persistence and review cycles without semantic deduplication.
+
+### `dream:20260906014619:2:5df48e`
+*06.09. 01:46 UTC · Quelle: dream*
+
+HTTP 200 responses from model APIs often contain upstream error payloads that must be parsed and treated as failures for routing decisions.
+
+### `dream:20260906014619:1:78a0a8`
+*06.09. 01:46 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, requiring proactive traffic management rather than reactive retries.
 
 ### `dream:20260906013532:5:6e1fac`
 *06.09. 01:35 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 01:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 01:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale tasks accumulate without automatic archival, losing diagnostic value unless reaped with generated post-mortems each metabolism tick.
+- Conserve-mode throttling blocks critical remediation tasks, necessitating a reserved budget that bypasses normal resource constraints.
+- Skill proposals generated during operation frequently duplicate existing capabilities, wasting persistence and review cycles without semantic deduplic
+- HTTP 200 responses from model APIs often contain upstream error payloads that must be parsed and treated as failures for routing decisions.
+- Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, requiring proactive traffic management rather tha
 - Non-runnable outputs entering evolution pipelines corrupt the quality signal at the source, making downstream validation exponentially harder and erod
 - Stale swarm knowledge accumulates unchecked because no scheduled mechanism exists to consume, integrate, and retire it, causing decision-making to rel
 - The persistent gap between simulation artifacts and real-world application indicates that skills are accumulated but never validated through execution
@@ -51,11 +56,6 @@
 - Pruning removed 42 events but only 5 facts, suggesting event-level pruning is aggressive while fact retention may accumulate stale knowledge.
 - A single successful reflex execution (marktanalyse-in-handlung-umsetzen.py) proves the dream-to-action pipeline works but lacks systematic triggering 
 - Rate-limited model endpoints (429) and overloaded services (502) cause cascading failures without exponential backoff and circuit-breaker protection.
-- The system is currently generating drive goals to understand and mitigate model failures, showing a proactive stance on reliability.
-- Benchmark scores show room for improvement in convergence, reflex, and memory modules.
-- Memory pruning is actively maintaining system health by removing stale facts and events.
-- Model latency varies significantly even within the same provider, indicating the need for latency-aware routing.
-- Free models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads, necessitating robust fallback mechanisms.
 
 ---
 
