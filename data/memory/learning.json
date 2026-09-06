@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 10:38:57",
+ "stand": "2026-09-06 10:55:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -19,12 +19,6 @@
    "laeufe": 6,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "alte-schwarm-arbeiten-abschließen.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
   },
   {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
@@ -48,6 +42,12 @@
    "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-arbeiten-abschließen.py",
+   "laeufe": 4,
+   "erfolge": 4,
    "quote": 1.0
   },
   {
@@ -123,10 +123,10 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-wissenstände-auffrischen.py",
+   "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
    "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "wissenbasis-aufräumen-und-prüfen.py",
@@ -179,12 +179,6 @@
   {
    "tool": "simulationen-in-die-praxis-umsetzen.py",
    "laeufe": 2,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
-   "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -351,6 +345,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltete-wissenstände-auffrischen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -381,17 +381,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.757,
- "simulationen_angewandt": 30,
+ "haende_quote": 0.754,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
-  "n": 30,
+  "n": 31,
   "best": 9.0,
-  "schnitt": 5.17
+  "schnitt": 5.26
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 29,
-   "schnitt": 5.03
+   "n": 30,
+   "schnitt": 5.13
   },
   "bau": {
    "n": 1,

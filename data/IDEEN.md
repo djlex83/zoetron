@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 10:39 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 10:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
+- Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuo *(hatte die Idee 6×)*
 - Add ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity (cosine > 0.85), and *(hatte die Idee 5×)*
-- Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuo *(hatte die Idee 5×)*
 - Add @circuit_breaker decorator with configurable failure threshold, half-open probe interval, and automatic me *(hatte die Idee 5×)*
 - Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run i *(hatte die Idee 5×)*
 - Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as *(hatte die Idee 5×)*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 26×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 27×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis returning zero organ errors suggests internal health monitoring is functional but lacks the granularity to detect subtle degradation pa
+- Pruning 11 facts and 37 events in a single run reveals that the system accumulates stale data faster than it processes it, requiring aggressive retent
+- The reflex mechanism—executing skills rather than merely planning them—proved effective in bridging the intention-action gap, indicating autonomous sy
+- The successful fallback to inclusionai/ling-3.0-flash-fin demonstrates that maintaining a diverse model pool with at least one reliably fast fallback 
+- Free-tier models on OpenRouter exhibit systematic unreliability through rate limits (429) and upstream overloads (502), making them unsuitable as prim
 - Pruning 10 events per cycle without fact loss suggests the event log grows faster than semantic consolidation, requiring scheduled summarization.
 - Reflex scripts (e.g., modellfehler-deutlich-reduzieren.py) can autonomously resolve model errors when triggered by failure signals, proving the value 
 - Latency variance between successful calls (3.8s vs 33.4s) indicates missing SLA enforcement, causing unpredictable user-facing delays.
@@ -51,11 +56,6 @@
 - Proposed skills stall in "validation limbo" – the reflex checker crashes, simulation demands revisions, but no automated repair loop exists; a self-he
 - File operations fail when using relative paths because the working directory diverges from ZOETRON_DATA; all paths must be resolved absolutely via the
 - Free tier LLM APIs exhibit pervasive rate limiting (429) and upstream errors (502), making a single-model strategy non-viable; a validated fallback ch
-- Ad-hoc pruning (12 facts, 25 events) reduces memory load but lacks scheduling, meaning memory hygiene is inconsistent and likely lags behind actual st
-- Selbstdiagnose correctly reports no internal organ errors, yet external dependency degradation (API rate limits) is invisible to it — a diagnostic bli
-- Model diversity provides implicit resilience (some models succeed when others fail), but without an explicit routing strategy, this resilience is acci
-- The reflex-based error-reduction loop works but is purely reactive; without proactive health monitoring, the system repeatedly discovers the same fail
-- 429 rate-limit errors are systemic across all external model providers, indicating the bottleneck is API quota management, not individual model reliab
 
 ---
 

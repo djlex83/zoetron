@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12084 Fakten** · Stand 2026-09-06 10:41 UTC · aktualisiert bei jedem Herzschlag
+**12093 Fakten** · Stand 2026-09-06 10:57 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7107
-- **swarm_artifact:** 2301
-- **last_swarm_critique:** 791
+- **swarm_artifact:** 2307
+- **last_swarm_critique:** 792
 - **anti_pattern:** 643
-- **last_swarm_goal:** 539
+- **last_swarm_goal:** 540
 - **strategy:** 323
-- **tool:** 168
+- **tool:** 169
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `tool:schwarm-wissen-auffrischen-und-prüfen`
+*06.09. 10:55 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Schwarm-Wissen auffrischen und prüfen'. Datei: data/tools/schwarm-wissen-auffrischen-und-prüfen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*06.09. 10:55 UTC · Quelle: critic*
+
+score=8; issues=Prune-Skript behauptet 'Dry-run first', fuehrt aber klassifizierung, archivierung und loeschung in einem Durchlauf ohne echten Abbruch/Gate aus; dry_run_only ist immer False; Inkonsistente Dateiformat-Annahmen zwischen Artefakten: Audit laedt s
+
+### `last_swarm_goal`
+*06.09. 10:50 UTC · Quelle: system*
+
+Schwarm-Wissen auffrischen und prüfen
+
+### `dream:20260906104937:5:a1c60d`
+*06.09. 10:49 UTC · Quelle: dream*
+
+Self-diagnosis returning zero organ errors suggests internal health monitoring is functional but lacks the granularity to detect subtle degradation patterns that precede outright failures.
+
+### `dream:20260906104937:4:a50ace`
+*06.09. 10:49 UTC · Quelle: dream*
+
+Pruning 11 facts and 37 events in a single run reveals that the system accumulates stale data faster than it processes it, requiring aggressive retention policies to maintain signal-to-noise ratio.
+
+### `dream:20260906104937:3:f8edea`
+*06.09. 10:49 UTC · Quelle: dream*
+
+The reflex mechanism—executing skills rather than merely planning them—proved effective in bridging the intention-action gap, indicating autonomous systems need concrete execution triggers, not just decision logic.
+
+### `dream:20260906104937:2:4ebad4`
+*06.09. 10:49 UTC · Quelle: dream*
+
+The successful fallback to inclusionai/ling-3.0-flash-fin demonstrates that maintaining a diverse model pool with at least one reliably fast fallback prevents total system stall during cascading failures.
+
+### `dream:20260906104937:1:419b1f`
+*06.09. 10:49 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systematic unreliability through rate limits (429) and upstream overloads (502), making them unsuitable as primary inference targets without continuous health monitoring.
 
 ### `dream:20260906103807:5:49c677`
 *06.09. 10:38 UTC · Quelle: dream*
@@ -46385,31 +46425,6 @@ Calibration error of 2 points (predicted 5 vs actual 3) persists despite evoluti
 *23.08. 10:56 UTC · Quelle: dream*
 
 Model latency varies 10x (3.6–40.4 s) on the same endpoint, making fixed timeouts unreliable and causing cascade delays in swarm cycles.
-
-### `dream:202608231040:5`
-*23.08. 10:40 UTC · Quelle: dream*
-
-Applying simulation revisions cut flagged risks from 5 to 2, demonstrating that revise-and-resimulate loops monotonically reduce risk and should iterate until risks fall below threshold or budget ends.
-
-### `dream:202608231040:4`
-*23.08. 10:40 UTC · Quelle: dream*
-
-The swarm exhausted its max_iterations=2 budget while still carrying unresolved risks, showing iteration budgets must scale with initial risk count instead of being fixed.
-
-### `dream:202608231040:3`
-*23.08. 10:40 UTC · Quelle: dream*
-
-The evolution run selected a variant scoring 9 offline, yet the swarm still finished at 3, proving offline variant scores do not transfer to runtime and must be gated by the same critic criteria that failed earlier.
-
-### `dream:202608231040:2`
-*23.08. 10:40 UTC · Quelle: dream*
-
-The role mix of 5 builders to only 1 critic and 1 planner coincided with a failed, unconverged mission (score 3), indicating builder-heavy compositions lack sufficient validation throughput.
-
-### `dream:202608231040:1`
-*23.08. 10:40 UTC · Quelle: dream*
-
-Predicted swarm success (5) overshot actual outcome (3) by 2 points, so pre-mission score predictions should be discounted by the observed ~40% calibration error before committing resources.
 
 ### `last_swarm_critique`
 *23.08. 10:20 UTC · Quelle: critic*
