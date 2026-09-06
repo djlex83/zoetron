@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12060 Fakten** · Stand 2026-09-06 04:07 UTC · aktualisiert bei jedem Herzschlag
+**12065 Fakten** · Stand 2026-09-06 04:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7058
+- **dream:** 7063
 - **swarm_artifact:** 2317
 - **last_swarm_critique:** 785
 - **anti_pattern:** 661
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906041601:5:eff276`
+*06.09. 04:16 UTC · Quelle: dream*
+
+Only one model (inclusionai/ling-3.0-flash-fin:free) succeeded, creating a single-point-of-failure dependency without fallback diversity.
+
+### `dream:20260906041601:4:812780`
+*06.09. 04:16 UTC · Quelle: dream*
+
+Pruning volume increases across cycles (4→12 facts, 13→48 events), suggesting failed attempts generate noise that must be aggressively cleaned.
+
+### `dream:20260906041601:3:9e1b1e`
+*06.09. 04:16 UTC · Quelle: dream*
+
+Skill proposals accumulate but require manual reflex actions to test, creating a proposal-to-execution gap that delays capability acquisition.
+
+### `dream:20260906041601:2:e09b28`
+*06.09. 04:16 UTC · Quelle: dream*
+
+The system lacks proactive model health tracking, causing repeated hammering of already-failing endpoints instead of routing away preemptively.
+
+### `dream:20260906041601:1:820123`
+*06.09. 04:16 UTC · Quelle: dream*
+
+Free-tier models consistently fail under rate limits (429) and upstream overload (502), making them unreliable for production workloads.
 
 ### `dream:20260906040454:5:7ce48e`
 *06.09. 04:04 UTC · Quelle: dream*
