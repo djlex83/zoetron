@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:47 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 26×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning and self-diagnosis show healthy internals, but external model dependencies remain the single point of failure.
+- Hand-action timeouts (20s) and reflex failures indicate missing timeout handling and fallback chains for tool execution.
+- Swarm knowledge refresh succeeds reflexively but fails to translate into updated drive goals, leaving intelligence stale.
+- Proposed skills accumulate without automated validation, causing reflex failures and timeouts when attempted manually.
+- Model failures (502/429) and high latency on the primary model cause systemic unreliability and trigger conserve mode, halting skill development.
 - Pruning removes facts/events regularly (15 facts, 65 events total) but does not target stale model performance metrics that corrupt routing decisions.
 - Reflex-based swarm knowledge refresh succeeds consistently (two consecutive runs converged), proving deterministic scripts outperform LLM calls for da
 - Dream-generated skill proposals (ModelRouter, circuit breaker, fallback chain, SkillIncubator, freshness audit) accumulate but lack an incubation pipe
@@ -51,11 +56,6 @@
 - Pruning runs consistently at ~1:3.2 fact:event ratio but without policy enforcement, risking audit gaps and drift.
 - Reflex scripts succeed reliably (exit 0, converged true) but remain unpromoted, creating a capability gap between ad-hoc automation and registered ski
 - Model provider rate limits (429) and overloads (502) cause cascading failures because no quota-aware routing or circuit breaker exists.
-- Skill proposals already cluster around resilience patterns (circuit-breaker, health registry, graceful degradation) but remain unimplemented.
-- Reflex-driven swarm update succeeded without model calls, proving local tool execution bypasses API fragility for maintenance tasks.
-- Drive goals directly mirror observed failure patterns (model errors, stale data), showing the system's meta-cognition correctly identifies its own wea
-- A single reliable model (inclusionai/ling-3.0-flash-fin:free) handles all successful requests, creating a dangerous single point of failure.
-- Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model lim
 
 ---
 

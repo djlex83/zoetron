@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12050 Fakten** · Stand 2026-09-06 13:49 UTC · aktualisiert bei jedem Herzschlag
+**12047 Fakten** · Stand 2026-09-06 14:01 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7097
 - **swarm_artifact:** 2279
 - **last_swarm_critique:** 809
-- **anti_pattern:** 627
+- **anti_pattern:** 625
 - **last_swarm_goal:** 541
-- **strategy:** 315
+- **strategy:** 314
 - **tool:** 169
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906135810:5:76b663`
+*06.09. 13:58 UTC · Quelle: dream*
+
+Pruning and self-diagnosis show healthy internals, but external model dependencies remain the single point of failure.
+
+### `dream:20260906135810:4:52afc4`
+*06.09. 13:58 UTC · Quelle: dream*
+
+Hand-action timeouts (20s) and reflex failures indicate missing timeout handling and fallback chains for tool execution.
+
+### `dream:20260906135810:3:8d3a3b`
+*06.09. 13:58 UTC · Quelle: dream*
+
+Swarm knowledge refresh succeeds reflexively but fails to translate into updated drive goals, leaving intelligence stale.
+
+### `dream:20260906135810:2:c9f438`
+*06.09. 13:58 UTC · Quelle: dream*
+
+Proposed skills accumulate without automated validation, causing reflex failures and timeouts when attempted manually.
+
+### `dream:20260906135810:1:2b9413`
+*06.09. 13:58 UTC · Quelle: dream*
+
+Model failures (502/429) and high latency on the primary model cause systemic unreliability and trigger conserve mode, halting skill development.
 
 ### `dream:20260906134508:5:d6b46d`
 *06.09. 13:45 UTC · Quelle: dream*
@@ -46234,16 +46259,6 @@ Model provider failures (429/502) and high latency variance (3–306 s) require 
 
 Interface contract violations (missing `add_fact`) cause runtime crashes; enforce ABC validation at component initialization.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge endlich wirkl:2`
-*23.08. 13:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Systematic repair pipeline with contract verification - Fix the existing harness incrementally using a repair loop: 1) Write contract tests (pre/post conditions) for each incomplete method using hypothesis for property-based
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge endlich wirkl:1`
-*23.08. 13:52 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
 ### `last_swarm_critique`
 *23.08. 13:51 UTC · Quelle: critic*
 
@@ -46253,31 +46268,6 @@ score=3; issues=Skill test harness is incomplete - cuts off mid-exception handle
 *23.08. 13:48 UTC · Quelle: system*
 
 Vorschläge endlich wirklich ausprobieren
-
-### `dream:202608231348:5`
-*23.08. 13:48 UTC · Quelle: dream*
-
-Fixed low iteration budget (max_iterations=2) prevents convergence on complex goals despite evolutionary improvements.
-
-### `dream:202608231348:4`
-*23.08. 13:48 UTC · Quelle: dream*
-
-Calibration error of 2 points (predicted 5 vs actual 3) indicates systematic overestimation requiring continuous recalibration.
-
-### `dream:202608231348:3`
-*23.08. 13:48 UTC · Quelle: dream*
-
-Runtime AttributeError on MemoryStore.add_fact reveals missing startup contract validation for core service interfaces.
-
-### `dream:202608231348:2`
-*23.08. 13:48 UTC · Quelle: dream*
-
-Evolution optimizing internal variant scores (8-9) without post-evolution swarm validation produces overfitted solutions that fail real evaluation (score 3).
-
-### `dream:202608231348:1`
-*23.08. 13:48 UTC · Quelle: dream*
-
-Model latency variance (5-60s) breaks role-specific SLAs and causes cascade failures in time-bounded swarms.
 
 ### `last_swarm_critique`
 *23.08. 13:40 UTC · Quelle: critic*
