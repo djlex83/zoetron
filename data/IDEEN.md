@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning events and facts during consolidation is necessary but insufficient without also pruning stale proposals whose underlying assumptions have alr
+- Rate-limit and server errors cluster in predictable patterns that are cacheable, making pre-emptive routing and quota-aware scheduling more efficient 
+- The persistent gap between skill proposals and implemented skills reveals a missing commitment mechanism that converts intentions into tracked, owned,
+- Swarm knowledge follows a predictable decay curve, meaning proactive scheduled refresh outperforms reactive recovery every time the system detects sta
+- External model failures (429/502/503) are the primary systemic constraint; internal self-diagnosis consistently passes, confirming resilience engineer
 - Pruning and self-diagnosis run cleanly, showing memory management works but doesn't address core reliability issues.
 - Swarm knowledge updates occur regularly but drive goals remain stale, suggesting updates lack effectiveness metrics.
 - High latency (49s) on previously failing models indicates intermittent degradation that health checks would catch.
@@ -51,11 +56,6 @@
 - Model reliability under stress is inversely correlated with model size in this environment; smaller models like inclusionai/ling-3.0-flash-fin deliver
 - Swarm convergence failure at score 7 with only 2 cycles indicates that variant refinement alone cannot overcome structural limitations—evaluation mech
 - Large models fail unpredictably under load and simultaneous provider outages create cascading breakdowns that require proactive load distribution rath
-- Pruning removed 8 facts and 43 events per cycle, indicating aggressive memory consolidation that may discard context needed for convergence.
-- Calibration was perfect (predicted 7, actual 7) yet system continued iterating without converging, revealing a gap between score prediction and conver
-- Simulation detected 5 risks and proposed 5 revisions but only 3 were applied, suggesting revision filtering or application logic drops valid mitigatio
-- Evolution improved score from 7 to 9 (variant 1) but swarm still failed to converge after 2 cycles, indicating convergence criteria or role allocation
-- Model inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.5-5.2s) while nemotron-3-ultra and gemma-4 variants fail repeatedly due
 
 ---
 

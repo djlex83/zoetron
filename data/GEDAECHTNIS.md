@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12019 Fakten** · Stand 2026-09-06 18:13 UTC · aktualisiert bei jedem Herzschlag
+**12014 Fakten** · Stand 2026-09-06 18:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7111
+- **dream:** 7106
 - **swarm_artifact:** 2247
 - **last_swarm_critique:** 811
 - **anti_pattern:** 615
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906182126:5:1c7cf0`
+*06.09. 18:21 UTC · Quelle: dream*
+
+Pruning events and facts during consolidation is necessary but insufficient without also pruning stale proposals whose underlying assumptions have already been invalidated.
+
+### `dream:20260906182126:4:a21f58`
+*06.09. 18:21 UTC · Quelle: dream*
+
+Rate-limit and server errors cluster in predictable patterns that are cacheable, making pre-emptive routing and quota-aware scheduling more efficient than reactive retry loops.
+
+### `dream:20260906182126:3:3f7928`
+*06.09. 18:21 UTC · Quelle: dream*
+
+The persistent gap between skill proposals and implemented skills reveals a missing commitment mechanism that converts intentions into tracked, owned, and deadline-bound work items.
+
+### `dream:20260906182126:2:c304bf`
+*06.09. 18:21 UTC · Quelle: dream*
+
+Swarm knowledge follows a predictable decay curve, meaning proactive scheduled refresh outperforms reactive recovery every time the system detects staleness signals.
+
+### `dream:20260906182126:1:645c92`
+*06.09. 18:21 UTC · Quelle: dream*
+
+External model failures (429/502/503) are the primary systemic constraint; internal self-diagnosis consistently passes, confirming resilience engineering must target the model interface layer rather than internal architecture.
 
 ### `dream:20260906180948:5:a7c8fd`
 *06.09. 18:09 UTC · Quelle: dream*
@@ -46136,56 +46161,6 @@ score=3; issues=Test factories in benchmark.py use self-check when expected valu
 *23.08. 18:20 UTC · Quelle: system*
 
 Fähigkeits-Messlatte bauen (Capability-Benchmark)
-
-### `dream:202608231819:5`
-*23.08. 18:19 UTC · Quelle: dream*
-
-Multiple prune runs reporting zero facts and zero events pruned signal that retention policies are overly permissive, risking unbounded memory growth.
-
-### `dream:202608231819:4`
-*23.08. 18:19 UTC · Quelle: dream*
-
-Swarm runs converge to a score of 6 with low convergence, suggesting evolution stops early when critic feedback is insufficient or thresholds are too lax.
-
-### `dream:202608231819:3`
-*23.08. 18:19 UTC · Quelle: dream*
-
-Hand‑action failures due to missing MemoryStore methods demonstrate that component interfaces are not validated before execution, leading to runtime errors.
-
-### `dream:202608231819:2`
-*23.08. 18:19 UTC · Quelle: dream*
-
-Repeated simulation verdicts to revise without applying changes cause goal scores to stall, showing a missing feedback loop from simulation to policy updates.
-
-### `dream:202608231819:1`
-*23.08. 18:19 UTC · Quelle: dream*
-
-High latency spikes (up to 90 s) reveal occasional model overload, indicating a need for adaptive timeouts and fallback mechanisms.
-
-### `dream:202608231813:5`
-*23.08. 18:13 UTC · Quelle: dream*
-
-Evolution winners should meet a convergence gate (score≥8) or undergo multiple swarm cycles to avoid accepting suboptimal candidates.
-
-### `dream:202608231813:4`
-*23.08. 18:13 UTC · Quelle: dream*
-
-Applying revisions atomically and re‑simulating prevents residual risks from persisting after changes.
-
-### `dream:202608231813:3`
-*23.08. 18:13 UTC · Quelle: dream*
-
-Score predictor updates are reliable only after a sufficient number of recent prediction‑actual pairs, suggesting a minimum sample threshold.
-
-### `dream:202608231813:2`
-*23.08. 18:13 UTC · Quelle: dream*
-
-Intermittent 502 upstream errors reveal volatile model endpoints that require graceful degradation.
-
-### `dream:202608231813:1`
-*23.08. 18:13 UTC · Quelle: dream*
-
-Latency frequently exceeds 30 seconds, indicating a need for retry/backoff and failover strategies.
 
 ### `last_swarm_critique`
 *23.08. 18:07 UTC · Quelle: critic*
