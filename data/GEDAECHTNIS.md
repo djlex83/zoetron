@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11811 Fakten** · Stand 2026-09-06 22:24 UTC · aktualisiert bei jedem Herzschlag
+**11792 Fakten** · Stand 2026-09-06 22:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6971
-- **swarm_artifact:** 2204
+- **dream:** 6961
+- **swarm_artifact:** 2195
 - **last_swarm_critique:** 813
 - **anti_pattern:** 595
 - **last_swarm_goal:** 545
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906223152:5:f6c7a0`
+*06.09. 22:31 UTC · Quelle: dream*
+
+Failure timestamps cluster around specific models (Nemotron 502, Gemma 429), so FailurePatternMiner can quickly emit targeted fallbacks (e.g., 'on 429 → switch to ling-3.0-flash-fin') instead of generic retries.
+
+### `dream:20260906223152:4:349f68`
+*06.09. 22:31 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain unimplemented because no autonomous loop exists to promote a proposal → write code → register tool → verify reflex route, leaving the system stuck in 'proposal debt'.
+
+### `dream:20260906223152:3:a17712`
+*06.09. 22:31 UTC · Quelle: dream*
+
+Reflex execution fails silently when tool paths are invalid or data directories missing (hand_action exit 0, reflex_used ok=false), revealing a gap between tool registration and runtime environment validation.
+
+### `dream:20260906223152:2:b5d6e5`
+*06.09. 22:31 UTC · Quelle: dream*
+
+High metabolic stress (0.836) forces conservative budgets that starve the very planners needed to recover from model failures, creating a death spiral where recovery capacity shrinks as failures mount.
+
+### `dream:20260906223152:1:6a0a85`
+*06.09. 22:31 UTC · Quelle: dream*
+
+Model reliability is the primary bottleneck: 502/429 errors cascade into planner failures and wasted cycles, making per-provider circuit-breakers (ModelHealthTracker) a prerequisite for any stable workflow.
 
 ### `dream:20260906222035:5:75c0c7`
 *06.09. 22:20 UTC · Quelle: dream*
@@ -45152,90 +45177,15 @@ Model latency varies 27× (1s–27s) on identical nemotron-3-ultra calls, making
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232228:5`
-*23.08. 22:28 UTC · Quelle: dream*
-
-Five skill proposals were generated in one cycle with no novelty/feasibility filter, flooding the queue with unvetted ideas.
-
-### `dream:202608232228:4`
-*23.08. 22:28 UTC · Quelle: dream*
-
-Prune runs consistently remove 0 facts and 0 events, meaning the forgetting mechanism is inert and memory grows unbounded.
-
-### `dream:202608232228:3`
-*23.08. 22:28 UTC · Quelle: dream*
-
-Simulations produce revisions (4 risks, 4 revisions) yet the Hermes bridge task remains unconverged (score 3), indicating simulation fixes don't translate to working code.
-
-### `dream:202608232228:2`
-*23.08. 22:28 UTC · Quelle: dream*
-
-MemoryStore lacks add_fact method but code assumes it exists, revealing interface drift between memory layer and callers.
-
-### `dream:202608232228:1`
-*23.08. 22:28 UTC · Quelle: dream*
-
-Model latency varies 66x (2.4s–160.4s) with no circuit breaker, causing unpredictable task durations and silent degradation.
-
 ### `last_swarm_goal`
 *23.08. 22:28 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232227:5`
-*23.08. 22:27 UTC · Quelle: dream*
-
-Simulation verdict "go" with 3 risks did not prevent execution stall, indicating simulation fidelity gaps need post-mortem comparison logs.
-
-### `dream:202608232227:4`
-*23.08. 22:27 UTC · Quelle: dream*
-
-Evolution raised variant score from 3 to 9 yet the swarm still did not converge, proving optimization ≠ convergence — explicit convergence criteria are required.
-
-### `dream:202608232227:3`
-*23.08. 22:27 UTC · Quelle: dream*
-
-MemoryStore missing add_fact method shows interface drift; every store mutation needs a contract test before deployment.
-
-### `dream:202608232227:2`
-*23.08. 22:27 UTC · Quelle: dream*
-
-Hand actions return exit=1 with error=null, revealing silent failures that require mandatory stderr capture and structured error envelopes.
-
-### `dream:202608232227:1`
-*23.08. 22:27 UTC · Quelle: dream*
-
-Model latency varies 25× (6–160 s) across identical calls, demanding per-model EMA tracking and a circuit-breaker that trips at 2× median latency.
-
 ### `last_swarm_goal`
 *23.08. 22:22 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608232221:5`
-*23.08. 22:21 UTC · Quelle: dream*
-
-Calibration error of 1 point on a 10-point scale compounds over cycles, causing systematic over-confidence in go/no-go decisions.
-
-### `dream:202608232221:4`
-*23.08. 22:21 UTC · Quelle: dream*
-
-Pruning removes zero items across consecutive runs, meaning retention policy is stale and memory grows unbounded.
-
-### `dream:202608232221:3`
-*23.08. 22:21 UTC · Quelle: dream*
-
-Hand execution fails with AttributeError on MemoryStore.add_fact, showing that tool contracts drift from implementation.
-
-### `dream:202608232221:2`
-*23.08. 22:21 UTC · Quelle: dream*
-
-Evolution boosts variant scores (8–9) but swarm convergence still fails at 2/10, revealing a gap between component quality and system integration.
-
-### `dream:202608232221:1`
-*23.08. 22:21 UTC · Quelle: dream*
-
-High latency variance (6.7–108.9 s) for the same model indicates unreliable inference infrastructure that breaks planning assumptions.
 
 ### `last_swarm_goal`
 *23.08. 22:20 UTC · Quelle: system*

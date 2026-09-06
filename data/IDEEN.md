@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,8 +31,8 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Failure timestamps cluster around specific models (Nemotron 502, Gemma 429), so FailurePatternMiner can quickly emit targeted fallbacks (e.g., 'on 429
+- Skill proposals accumulate but remain unimplemented because no autonomous loop exists to promote a proposal → write code → register tool → verify refl
+- Reflex execution fails silently when tool paths are invalid or data directories missing (hand_action exit 0, reflex_used ok=false), revealing a gap be
+- High metabolic stress (0.836) forces conservative budgets that starve the very planners needed to recover from model failures, creating a death spiral
+- Model reliability is the primary bottleneck: 502/429 errors cascade into planner failures and wasted cycles, making per-provider circuit-breakers (Mod
 - Failure patterns correlate with specific model/provider/goal tuples but are never mined to spawn corrective skills.
 - Relative-path executions fail silently because HandAction lacks pre-flight existence checks and env expansion.
 - Skill proposals accumulate but rarely deploy because no mandatory simulation gate validates them pre-flight.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays into staleness without an automatic refresh trigger tied to convergence cycles.
 - Skills accumulate untested because proposals lack a mandatory execute-and-score gate within the same cycle.
 - Model cascade failures occur because no proactive health checks or fallback chains exist, turning single 502/429 errors into system-wide stalls.
-- Convergence declarations without critic sign-off and risk simulation produce false confidence in swarm outcomes.
-- Unvalidated skill proposals accumulate indefinitely without mandatory execution-and-scoring gates, creating technical debt in the skill registry.
-- Swarm knowledge decays silently without scheduled refresh cycles, causing decision drift that only surfaces as stale-goal signals.
-- A single reliable model (inclusionai/ling-3.0-flash-fin) outperforms multiple unreliable premium models, making provider diversity less valuable than 
-- Provider-specific failure modes (502 upstream overload vs 429 rate limits) require distinct mitigation strategies rather than generic retry logic.
 
 ---
 
