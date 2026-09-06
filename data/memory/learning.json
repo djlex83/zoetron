@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 09:45:53",
+ "stand": "2026-09-06 09:57:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
-   "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -75,10 +69,22 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-träume-miteinander-verbinden.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
@@ -112,12 +118,6 @@
   },
   {
    "tool": "traum-gedächtnis-system-fertigstellen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -381,7 +381,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.75,
+ "haende_quote": 0.755,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 30,
@@ -390,8 +390,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 29,
-   "schnitt": 5.28
+   "n": 28,
+   "schnitt": 5.21
   },
   "bau": {
    "n": 1,

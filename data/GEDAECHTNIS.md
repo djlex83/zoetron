@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12077 Fakten** · Stand 2026-09-06 09:48 UTC · aktualisiert bei jedem Herzschlag
+**12071 Fakten** · Stand 2026-09-06 09:59 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7098
-- **swarm_artifact:** 2302
+- **swarm_artifact:** 2299
 - **last_swarm_critique:** 790
-- **anti_pattern:** 645
+- **anti_pattern:** 643
 - **last_swarm_goal:** 538
-- **strategy:** 324
+- **strategy:** 323
 - **tool:** 168
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906095622:5:f162c1`
+*06.09. 09:56 UTC · Quelle: dream*
+
+Ad-hoc pruning (12 facts, 25 events) reduces memory load but lacks scheduling, meaning memory hygiene is inconsistent and likely lags behind actual state changes.
+
+### `dream:20260906095622:4:1be266`
+*06.09. 09:56 UTC · Quelle: dream*
+
+Selbstdiagnose correctly reports no internal organ errors, yet external dependency degradation (API rate limits) is invisible to it — a diagnostic blind spot.
+
+### `dream:20260906095622:3:e31b80`
+*06.09. 09:56 UTC · Quelle: dream*
+
+Model diversity provides implicit resilience (some models succeed when others fail), but without an explicit routing strategy, this resilience is accidental rather than engineered.
+
+### `dream:20260906095622:2:2f9e57`
+*06.09. 09:56 UTC · Quelle: dream*
+
+The reflex-based error-reduction loop works but is purely reactive; without proactive health monitoring, the system repeatedly discovers the same failures.
+
+### `dream:20260906095622:1:157f8d`
+*06.09. 09:56 UTC · Quelle: dream*
+
+429 rate-limit errors are systemic across all external model providers, indicating the bottleneck is API quota management, not individual model reliability.
 
 ### `dream:20260906094507:5:127d4e`
 *06.09. 09:45 UTC · Quelle: dream*
@@ -46341,16 +46366,6 @@ Ergebnisvalidierung und Logging hinzufügen
 
 Dream could not parse its own output - check prompt size.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modellkalibrierung verbe:2`
-*23.08. 09:54 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Distribution-Free Calibration via Conformal Prediction and Venn-Abers - Abandon parametric calibration. Use Inductive Conformal Prediction (ICP) with calibration set to produce prediction sets with guaranteed marginal coverag
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modellkalibrierung verbe:1`
-*23.08. 09:54 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Post-hoc Temperature/Platt Scaling on Dedicated Calibration Holdout - Split data three-way: train (60%), calibration (20%), test (20%). Train base model ONLY on train set. Fit temperature scaling (single scalar) or Platt scal
-
 ### `last_swarm_critique`
 *23.08. 09:52 UTC · Quelle: critic*
 
@@ -46360,31 +46375,6 @@ score=4; issues=Critical data leakage risk: base_model is fitted on full X_train
 *23.08. 09:49 UTC · Quelle: system*
 
 Modellkalibrierung verbessern
-
-### `dream:202608230948:5`
-*23.08. 09:48 UTC · Quelle: dream*
-
-Missing interface contract validation risks AttributeError failures that can halt execution mid‑swarm.
-
-### `dream:202608230948:4`
-*23.08. 09:48 UTC · Quelle: dream*
-
-Repeated identical sections in evolution attempts show insufficient variant diversity, wasting compute cycles.
-
-### `dream:202608230948:3`
-*23.08. 09:48 UTC · Quelle: dream*
-
-Calibration revealed large prediction errors (abs_error = 3), indicating over‑optimistic skill impact estimates.
-
-### `dream:202608230948:2`
-*23.08. 09:48 UTC · Quelle: dream*
-
-Role imbalance (1 planner, 5 builders, 1 critic) limited critical feedback and planning, yielding a low score and non‑convergence.
-
-### `dream:202608230948:1`
-*23.08. 09:48 UTC · Quelle: dream*
-
-High latency variance and occasional model overloads cause timeouts that degrade swarm performance.
 
 ### `last_swarm_critique`
 *23.08. 09:32 UTC · Quelle: critic*
