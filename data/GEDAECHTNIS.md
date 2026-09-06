@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12066 Fakten** · Stand 2026-09-06 07:00 UTC · aktualisiert bei jedem Herzschlag
+**12071 Fakten** · Stand 2026-09-06 07:17 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7078
-- **swarm_artifact:** 2308
-- **last_swarm_critique:** 788
+- **swarm_artifact:** 2310
+- **last_swarm_critique:** 789
 - **anti_pattern:** 651
-- **last_swarm_goal:** 536
+- **last_swarm_goal:** 537
 - **strategy:** 327
-- **tool:** 166
+- **tool:** 167
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `tool:vorschläge-zu-echten-fähigkeiten-machen`
+*06.09. 07:15 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorschläge zu echten Fähigkeiten machen'. Datei: data/tools/vorschläge-zu-echten-fähigkeiten-machen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*06.09. 07:15 UTC · Quelle: critic*
+
+score=8; issues=Benchmark misst heuristisch statt ueber echtes benchmark_organ (Organ nicht implementiert/geladen); Keyword-basierte Kandidatenextraktion ist bruchig (nur String-Matching); Fallback-Demo-Kandidaten verdecken fehlende echte Daten; Direkter exec(
+
+### `last_swarm_goal`
+*06.09. 07:09 UTC · Quelle: system*
+
+Vorschläge zu echten Fähigkeiten machen
+
+### `dream:20260906070900:5:e18c6c`
+*06.09. 07:09 UTC · Quelle: dream*
+
+Swarm knowledge decays rapidly; the stale signal on swarm goals confirms that without periodic refresh cycles, swarm roles and critiques become obsolete within a single session.
+
+### `dream:20260906070900:4:e2cc5c`
+*06.09. 07:09 UTC · Quelle: dream*
+
+Model failures are never fed back into Selbstdiagnose, meaning degraded external dependencies silently persist as unflagged organ warnings.
+
+### `dream:20260906070900:3:05815f`
+*06.09. 07:09 UTC · Quelle: dream*
+
+Manual prune_run invocations are ad-hoc and inconsistent—event pruning volume varied wildly (81 vs 20 events) indicating no reliable schedule or threshold triggers.
+
+### `dream:20260906070900:2:61a6d6`
+*06.09. 07:09 UTC · Quelle: dream*
+
+Skill proposals generated during dreaming consistently lack validation; without a sandbox testing phase, unproven skills risk being promoted to the active registry prematurely.
+
+### `dream:20260906070900:1:30808f`
+*06.09. 07:09 UTC · Quelle: dream*
+
+Repeated 429 rate-limit errors from z-ai/glm-5.2:free prove that external model dependencies are the single largest failure point and require automatic fallback routing to healthy models like nvidia/nemotron-3-ultra-550b-a55b:free.
 
 ### `dream:20260906065830:5:05b4d7`
 *06.09. 06:58 UTC · Quelle: dream*
@@ -46310,31 +46350,6 @@ score=4; issues=Unit test uses hardcoded model path 'model.pkl' and fixed datase
 *23.08. 07:06 UTC · Quelle: system*
 
 Modellfehler schnell erkennen und beheben
-
-### `dream:202608230706:5`
-*23.08. 07:06 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:202608230706:4`
-*23.08. 07:06 UTC · Quelle: dream*
-
-Dream-generated skill proposals directly target observed failure modes (validation, latency, calibration, logging, evolution), proving the dream-to-proposal pipeline produces actionable, high-signal mutations.
-
-### `dream:202608230706:3`
-*23.08. 07:06 UTC · Quelle: dream*
-
-Iterative simulation-revision loops converge but revision count grows (1 → 3), indicating a need for bounded iteration budgets or early-stop criteria to prevent runaway refinement.
-
-### `dream:202608230706:2`
-*23.08. 07:06 UTC · Quelle: dream*
-
-Model latency varies 30× (2.2 s to 69.5 s) on the same model, making fixed timeouts unsafe and demanding a latency-aware router with median-based failover thresholds.
-
-### `dream:202608230706:1`
-*23.08. 07:06 UTC · Quelle: dream*
-
-Missing interface validation on MemoryStore caused AttributeError at runtime, revealing a systemic gap in startup contract checking for all store-like components.
 
 ### `last_swarm_critique`
 *23.08. 06:49 UTC · Quelle: critic*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 06:58:51",
+ "stand": "2026-09-06 07:15:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,12 +21,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 6,
    "erfolge": 0,
@@ -40,6 +34,12 @@
   },
   {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 5,
    "erfolge": 5,
    "quote": 1.0
@@ -61,12 +61,6 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "veraltete-wissenstände-auffrischen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
@@ -127,6 +121,12 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltete-wissenstände-auffrischen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
   },
   {
    "tool": "wissenbasis-aufräumen-und-prüfen.py",
@@ -379,19 +379,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.731,
+ "haende_quote": 0.728,
  "simulationen_angewandt": 29,
  "swarm_scores": {
-  "n": 31,
+  "n": 32,
   "best": 9.0,
-  "schnitt": 5.48
+  "schnitt": 5.56
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 30,
-   "schnitt": 5.37
+   "n": 31,
+   "schnitt": 5.45
   },
   "bau": {
    "n": 1,

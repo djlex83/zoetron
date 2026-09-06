@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 06:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 07:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge decays rapidly; the stale signal on swarm goals confirms that without periodic refresh cycles, swarm roles and critiques become obsole
+- Model failures are never fed back into Selbstdiagnose, meaning degraded external dependencies silently persist as unflagged organ warnings.
+- Manual prune_run invocations are ad-hoc and inconsistent—event pruning volume varied wildly (81 vs 20 events) indicating no reliable schedule or thres
+- Skill proposals generated during dreaming consistently lack validation; without a sandbox testing phase, unproven skills risk being promoted to the ac
+- Repeated 429 rate-limit errors from z-ai/glm-5.2:free prove that external model dependencies are the single largest failure point and require automati
 - Self-diagnosis reports no organ failures, confirming infrastructure health despite model-layer instability.
 - The skill-transformation pipeline converged in one cycle with score 9, proving the planner→builder→critic loop works end-to-end.
 - High latency variance (2.7 s – 159 s) on nemotron-3-ultra indicates unpredictable queueing; treat as fallback only.
@@ -51,11 +56,6 @@
 - Hand actions fail on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero file/directory contact.
 - Skill proposals accumulate but execution fails due to missing ProposalExecutor and broken reflex tooling (fähigkeitsvorschläge-in-echte-skills-ums.py)
 - Free model endpoints exhibit cascading failure modes (429 rate limits, 502 overloads) making them unreliable for critical paths.
-- Pruning runs reactively via manual invocation instead of event-count or time-window triggers.
-- Skill proposals accumulate in logs without an incubation pipeline to validate, sandbox, and promote them.
-- Reflex execution succeeds for known procedures (schwarmwissen) but cannot handle novel model routing decisions.
-- Self-diagnosis only checks internal organs, missing degraded external APIs that cause 80% of task failures.
-- External model dependencies fail catastrophically under rate limits (429) and upstream errors (502) with zero automatic failover.
 
 ---
 
