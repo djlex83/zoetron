@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 15:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 15:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolution cycles with marginal score improvements below 1 point waste computational resources, indicating a need for convergence thresholds before com
+- Self-predictions are systematically biased upward by approximately 3 points, causing goal targets to be set unrealistically high without historical er
+- Unbounded accumulation of facts and events silently degrades reasoning quality, and late-run pruning destroys reusable intermediate state that could h
+- Skill proposals that survive multiple dream cycles without auto-instantiation as tracked tasks are effectively abandoned, revealing a systemic proposa
+- Free-tier model endpoints fail with predictable error signatures (429 rate limits, 502 upstream overload) within minutes of each other, meaning routin
 - Drive goals pile up (reduce errors, update swarm, convert skills) without a scheduler that sequences them by dependency and urgency.
 - Pruning runs late (33 events, 6 facts) after reusable intermediate state has already been discarded, wasting compute on doomed branches.
 - Self-predictions consistently overshoot by ~3 points (calibration error), causing premature convergence declarations in evolution cycles.
@@ -51,11 +56,6 @@
 - Reflex-driven convergence can succeed without producing a measurable score, revealing that convergence signals alone are insufficient validation and t
 - inclusionai/ling-3.0-flash-fin is the only reliably responsive model in the current pool (4.1s latency, successful completion), making it the default 
 - Model failures follow predictable patterns—gemma-4 series consistently hits 429 rate limits while nemotron hits 502 upstream overloads—meaning retry-o
-- Latency variance across models is ignored in routing, wasting fast models on simple tasks and slow models on time-critical ones.
-- Fallback chains are manual rather than automatic, so non-200 responses or timeouts stall execution until human intervention.
-- Knowledge staleness persists because no scheduled audit re-verifies timestamped entries against live sources.
-- Skill proposals accumulate but rarely become production skills due to missing automated validation pipeline with sandbox testing.
-- Model failures (502, 429) cascade because no health registry tracks cooldowns, causing repeated calls to degraded endpoints.
 
 ---
 

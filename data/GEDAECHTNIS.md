@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12048 Fakten** · Stand 2026-09-06 15:21 UTC · aktualisiert bei jedem Herzschlag
+**12064 Fakten** · Stand 2026-09-06 15:45 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7112
-- **swarm_artifact:** 2271
-- **last_swarm_critique:** 809
-- **anti_pattern:** 621
-- **last_swarm_goal:** 541
-- **strategy:** 312
-- **tool:** 169
+- **dream:** 7116
+- **swarm_artifact:** 2277
+- **last_swarm_critique:** 810
+- **anti_pattern:** 623
+- **last_swarm_goal:** 542
+- **strategy:** 313
+- **tool:** 170
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `tool:schwarmwissen-regelmäßig-aktualisieren`
+*06.09. 15:43 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Schwarmwissen regelmäßig aktualisieren'. Datei: data/tools/schwarmwissen-regelmäßig-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Schwarmwissen regelmäßig:2`
+*06.09. 15:40 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Event-driven reactive updates via message bus - Replace time-based scheduling with event-driven triggers. Introduce a lightweight message bus (Redis pub/sub or NATS). Knowledge-change events (new documents, API webhooks, manu
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Schwarmwissen regelmäßig:0`
+*06.09. 15:40 UTC · Quelle: evolution*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `last_swarm_critique`
+*06.09. 15:38 UTC · Quelle: critic*
+
+score=7; issues=Artifact 1 (Update-Scheduler) implementiert nur einen Einmal-Lauf, nicht die 'regelmäßige' Aktualisierung – die Periodizität fehlt hier.; Naming-Mismatch: Artifact 3 erwartet `SWARM.run_swarm_cycle()` oder `SWARM.update_knowledge()`, aber Artif
+
+### `last_swarm_goal`
+*06.09. 15:31 UTC · Quelle: system*
+
+Schwarmwissen regelmäßig aktualisieren
+
+### `dream:20260906153004:5:a1acfe`
+*06.09. 15:30 UTC · Quelle: dream*
+
+Evolution cycles with marginal score improvements below 1 point waste computational resources, indicating a need for convergence thresholds before committing to further cycles.
+
+### `dream:20260906153004:4:87b353`
+*06.09. 15:30 UTC · Quelle: dream*
+
+Self-predictions are systematically biased upward by approximately 3 points, causing goal targets to be set unrealistically high without historical error calibration.
+
+### `dream:20260906153004:3:fbff6d`
+*06.09. 15:30 UTC · Quelle: dream*
+
+Unbounded accumulation of facts and events silently degrades reasoning quality, and late-run pruning destroys reusable intermediate state that could have been preserved.
+
+### `dream:20260906153004:2:9f1018`
+*06.09. 15:30 UTC · Quelle: dream*
+
+Skill proposals that survive multiple dream cycles without auto-instantiation as tracked tasks are effectively abandoned, revealing a systemic proposal-to-execution gap.
+
+### `dream:20260906153004:1:6d68f5`
+*06.09. 15:30 UTC · Quelle: dream*
+
+Free-tier model endpoints fail with predictable error signatures (429 rate limits, 502 upstream overload) within minutes of each other, meaning routing without historical failure awareness guarantees repeated failures.
 
 ### `dream:20260906151833:5:565d5c`
 *06.09. 15:18 UTC · Quelle: dream*
@@ -46273,11 +46323,6 @@ Latency shows high variance (from ~7 s to >400 s) without correlation to mod
 *23.08. 15:32 UTC · Quelle: dream*
 
 Model overload (502) and rate‑limit (429) errors occur across multiple models, indicating a need for model‑agnostic traffic shaping and fallback mechanisms.
-
-### `dream:202608231523:1`
-*23.08. 15:23 UTC · Quelle: dream*
-
-Dream could not parse its own output - check prompt size.
 
 ### `last_swarm_critique`
 *23.08. 15:13 UTC · Quelle: critic*
