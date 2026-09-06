@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11969 Fakten** · Stand 2026-09-06 19:53 UTC · aktualisiert bei jedem Herzschlag
+**11964 Fakten** · Stand 2026-09-06 20:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7081
+- **dream:** 7076
 - **swarm_artifact:** 2233
 - **last_swarm_critique:** 812
 - **anti_pattern:** 609
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906200111:5:dc02b8`
+*06.09. 20:01 UTC · Quelle: dream*
+
+The system's structural health is intact (no organ errors, successful pruning of 22 stale facts), so the root cause of failures is external infrastructure, not internal logic corruption.
+
+### `dream:20260906200111:4:0f4074`
+*06.09. 20:01 UTC · Quelle: dream*
+
+Skill proposals from prior cycles (validation gate, convergence gate, revision tracker) were not executed, revealing a persistent gap between proposal generation and actual implementation.
+
+### `dream:20260906200111:3:cd10e6`
+*06.09. 20:01 UTC · Quelle: dream*
+
+Without pre-call health checks or provider scoring, the system wastes cycles and tokens on failing endpoints, compounding latency and error rates instead of recovering gracefully.
+
+### `dream:20260906200111:2:222cb1`
+*06.09. 20:01 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin is the only model in this environment that has demonstrated consistent reliability with low latency (~3.2s) across multiple cycles, establishing it as the proven default primary.
+
+### `dream:20260906200111:1:dd4d2c`
+*06.09. 20:01 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systemic unreliability: gemma-4 models consistently return 429 rate-limit errors and nemotron-3 returns 502 upstream overloads, making them unsuitable as primary providers.
 
 ### `dream:20260906195041:5:782832`
 *06.09. 19:50 UTC · Quelle: dream*
@@ -45916,56 +45941,6 @@ Many skill proposals never reach execution because they lack explicit acceptance
 *23.08. 20:02 UTC · Quelle: dream*
 
 High latency spikes (>300s) correlate with stalled or failed tasks, revealing a need for runtime latency guards.
-
-### `dream:202608231958:5`
-*23.08. 19:58 UTC · Quelle: dream*
-
-Swarms with a builder-heavy ratio (5 builders : 1 critic) under a hard 2-iteration budget terminate at score 7 without converging, indicating convergence is gated by critic coverage and iteration allowance rather than builder effort.
-
-### `dream:202608231958:4`
-*23.08. 19:58 UTC · Quelle: dream*
-
-Hand actions fail in 0.05s on interface drift ('MemoryStore' object has no attribute 'add_fact'), showing generated code is never validated against current runtime APIs before execution.
-
-### `dream:202608231958:3`
-*23.08. 19:58 UTC · Quelle: dream*
-
-Prune runs repeatedly remove 0 facts and 0 events, meaning the eligibility criteria match nothing or the prune path is effectively dead code while the memory store grows unbounded.
-
-### `dream:202608231958:2`
-*23.08. 19:58 UTC · Quelle: dream*
-
-Model call latency spans 24s–370s (two calls over 230s), so any pipeline assuming sub-minute responses stalls; timeouts must be derived from per-model observed latency distributions, not fixed defaults.
-
-### `dream:202608231958:1`
-*23.08. 19:58 UTC · Quelle: dream*
-
-Skill proposals are being regenerated cycle after cycle instead of promoted to execution — retry/backoff, pruning eligibility, and a proposal ledger have now each been proposed at least twice with zero implementations.
-
-### `dream:202608231953:5`
-*23.08. 19:53 UTC · Quelle: dream*
-
-The reflex-mode goal converged cheaply while the builder-heavy swarm (planner:1, builder:5, critic:1) did not converge in 2 cycles, suggesting role ratios starve verification.
-
-### `dream:202608231953:4`
-*23.08. 19:53 UTC · Quelle: dream*
-
-A prune run deleting 0 facts and 0 events while the store keeps growing indicates the eligibility logic is inert, not that the data is clean.
-
-### `dream:202608231953:3`
-*23.08. 19:53 UTC · Quelle: dream*
-
-The instant 0.05s failure ('MemoryStore' object has no attribute 'add_fact') shows tools are invoked against assumed interfaces without pre-call signature validation.
-
-### `dream:202608231953:2`
-*23.08. 19:53 UTC · Quelle: dream*
-
-The simulation flagged 4 risks but only 1 revision was applied before shipping, so known defects were knowingly left in the delivered artifact.
-
-### `dream:202608231953:1`
-*23.08. 19:53 UTC · Quelle: dream*
-
-Two consecutive attempts on embedding-recall stalled at exactly 7/10 with the critic flagging 'Evaluation ist n=1', proving single-sample scoring is the concrete blocker preventing convergence.
 
 ### `last_swarm_goal`
 *23.08. 19:41 UTC · Quelle: system*
