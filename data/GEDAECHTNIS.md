@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12047 Fakten** · Stand 2026-09-06 14:01 UTC · aktualisiert bei jedem Herzschlag
+**12046 Fakten** · Stand 2026-09-06 14:13 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7097
-- **swarm_artifact:** 2279
+- **swarm_artifact:** 2278
 - **last_swarm_critique:** 809
 - **anti_pattern:** 625
 - **last_swarm_goal:** 541
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906141010:5:92b4aa`
+*06.09. 14:10 UTC · Quelle: dream*
+
+Stress=1.0 conserve budget (max_tasks=3, max_iterations=1) forces premature truncation of multi-model fallback chains.
+
+### `dream:20260906141010:4:25fabf`
+*06.09. 14:10 UTC · Quelle: dream*
+
+Hand-action execution succeeds on retry (exit 1 → exit 0) suggesting transient environment issues, not code defects.
+
+### `dream:20260906141010:3:084349`
+*06.09. 14:10 UTC · Quelle: dream*
+
+Simulation-driven revision loops (5 risks → 5 revisions → 4 applied) converge but consume disproportionate latency when primary models fail.
+
+### `dream:20260906141010:2:efc24b`
+*06.09. 14:10 UTC · Quelle: dream*
+
+Calibration systematically underestimates task complexity (predicted 4 vs actual 7 cycles), causing resource budget overruns under conserve mode.
+
+### `dream:20260906141010:1:212ed6`
+*06.09. 14:10 UTC · Quelle: dream*
+
+Model reliability is highly inconsistent: nemotron-3-ultra fails with 502 upstream errors, gemma models hit 429 rate limits, only inclusionai/ling-3.0-flash-fin delivers consistent low-latency responses.
 
 ### `dream:20260906135810:5:76b663`
 *06.09. 13:58 UTC · Quelle: dream*
@@ -46233,31 +46258,6 @@ Free-tier models exhibit cascading 429/502 failures under load, making them unre
 *23.08. 13:59 UTC · Quelle: system*
 
 Fähigkeitsvorschläge konsequent umsetzen
-
-### `dream:202608231358:5`
-*23.08. 13:58 UTC · Quelle: dream*
-
-Fixed timeouts ignore model-specific p95 latency distributions; route requests to models within SLA budget and shed load when all exceed budget.
-
-### `dream:202608231358:4`
-*23.08. 13:58 UTC · Quelle: dream*
-
-Swarm role imbalance (insufficient critics) reduces solution quality; maintain dynamic critic:builder quota of at least 1:2 with auto-spawning.
-
-### `dream:202608231358:3`
-*23.08. 13:58 UTC · Quelle: dream*
-
-Calibration predictions consistently underestimate actual scores by ~1.5×; apply rolling actual/predicted ratio correction before threshold decisions.
-
-### `dream:202608231358:2`
-*23.08. 13:58 UTC · Quelle: dream*
-
-Model provider failures (429/502) and high latency variance (3–306 s) require multi-provider routing with token-bucket rate limiting and exponential backoff.
-
-### `dream:202608231358:1`
-*23.08. 13:58 UTC · Quelle: dream*
-
-Interface contract violations (missing `add_fact`) cause runtime crashes; enforce ABC validation at component initialization.
 
 ### `last_swarm_critique`
 *23.08. 13:51 UTC · Quelle: critic*
