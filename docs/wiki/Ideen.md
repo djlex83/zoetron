@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 17:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 17:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,10 +29,10 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removed 8 facts and 43 events per cycle, indicating aggressive memory consolidation that may discard context needed for convergence.
+- Calibration was perfect (predicted 7, actual 7) yet system continued iterating without converging, revealing a gap between score prediction and conver
+- Simulation detected 5 risks and proposed 5 revisions but only 3 were applied, suggesting revision filtering or application logic drops valid mitigatio
+- Evolution improved score from 7 to 9 (variant 1) but swarm still failed to converge after 2 cycles, indicating convergence criteria or role allocation
+- Model inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.5-5.2s) while nemotron-3-ultra and gemma-4 variants fail repeatedly due
 - Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1); any skill must operate within single-iteration, low-task budgets.
 - Calibration accuracy (predicted=actual=7) indicates the estimator is trustworthy and can gate resource allocation.
 - Simulation-driven revision loops (verdict=revise → revisions applied → grün=true) reliably convert risky plans into working artifacts.
@@ -51,11 +56,6 @@
 - High metabolic stress (1.0) triggers conserve mode that caps tasks/iterations, starving skill validation and swarm refresh.
 - File operations fail because relative paths and ZOETRON_DATA env var are not resolved to absolute paths before execution.
 - Free-tier models (nemotron, gemma) fail intermittently with 502/429 errors while ling-3.0-flash-fin:free consistently succeeds at ~3s latency.
-- The reflex executor successfully ran a skill-testing script (vorgeschlagene-fähigkeiten-testen-und-nu.py), proving the system can execute implementati
-- Pruning reduces fact/event counts (16→10 facts, 26 events) but recurring model errors regenerate similar experience, indicating that structural fixes—
-- Only inclusionai/ling-3.0-flash-fin:free delivers consistent sub-5s latency and 200 responses, establishing it as the de facto reliable free model tha
-- The system repeatedly proposes identical resilience patterns (circuit breaker, retry wrapper, rate-limit awareness, fallback chain, revision cache) bu
-- Free-tier models (nemotron, gemma-4) exhibit systematic unreliability: nemotron suffers 502 overload errors and 60s+ latency, while gemma-4 hits 429 q
 
 ---
 

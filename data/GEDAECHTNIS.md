@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12031 Fakten** · Stand 2026-09-06 17:37 UTC · aktualisiert bei jedem Herzschlag
+**12026 Fakten** · Stand 2026-09-06 17:48 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7106
-- **swarm_artifact:** 2258
+- **swarm_artifact:** 2256
 - **last_swarm_critique:** 811
-- **anti_pattern:** 619
+- **anti_pattern:** 617
 - **last_swarm_goal:** 543
-- **strategy:** 311
+- **strategy:** 310
 - **tool:** 171
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906174547:5:b6c743`
+*06.09. 17:45 UTC · Quelle: dream*
+
+Pruning removed 8 facts and 43 events per cycle, indicating aggressive memory consolidation that may discard context needed for convergence.
+
+### `dream:20260906174547:4:93632b`
+*06.09. 17:45 UTC · Quelle: dream*
+
+Calibration was perfect (predicted 7, actual 7) yet system continued iterating without converging, revealing a gap between score prediction and convergence detection.
+
+### `dream:20260906174547:3:094793`
+*06.09. 17:45 UTC · Quelle: dream*
+
+Simulation detected 5 risks and proposed 5 revisions but only 3 were applied, suggesting revision filtering or application logic drops valid mitigations.
+
+### `dream:20260906174547:2:920cb9`
+*06.09. 17:45 UTC · Quelle: dream*
+
+Evolution improved score from 7 to 9 (variant 1) but swarm still failed to converge after 2 cycles, indicating convergence criteria or role allocation (1 planner, 3 builders, 1 critic) insufficient for closure.
+
+### `dream:20260906174547:1:f6475d`
+*06.09. 17:45 UTC · Quelle: dream*
+
+Model inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.5-5.2s) while nemotron-3-ultra and gemma-4 variants fail repeatedly due to upstream 502 errors and 429 rate limits.
 
 ### `dream:20260906173412:5:67ea87`
 *06.09. 17:34 UTC · Quelle: dream*
@@ -46166,43 +46191,6 @@ Latency measurements for the same model vary from 1.1 s to over 230 s, showi
 *23.08. 17:42 UTC · Quelle: system*
 
 MemoryStore-Vertragswächter bauen (Contract-Validator)
-
-### `dream:202608231742:5`
-*23.08. 17:42 UTC · Quelle: dream*
-
-Three consecutive prune runs that remove zero facts/events indicate retention thresholds are too lax and risk memory growth.
-
-### `dream:202608231742:4`
-*23.08. 17:42 UTC · Quelle: dream*
-
-Cross‑module calls often fail due to missing attributes, which can be prevented by pre‑flight existence checks.
-
-### `dream:202608231742:3`
-*23.08. 17:42 UTC · Quelle: dream*
-
-Simulation outcomes are frequently generated but not applied, creating a learning gap that reduces system improvement.
-
-### `dream:202608231742:2`
-*23.08. 17:42 UTC · Quelle: dream*
-
-Repeated model failures without root‑cause analysis reveal a missing systematic error‑pattern collection process.
-
-### `dream:202608231742:1`
-*23.08. 17:42 UTC · Quelle: dream*
-
-High latency outliers (>150 s) destabilize the pipeline and require per‑call timeouts with fallback mechanisms.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler senken
-Crit:2`
-*23.08. 17:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Non‑linear ensemble learning - Replace the linear regression with a gradient‑boosted decision tree ensemble (e.g., XGBoost, LightGBM, or CatBoost). These algorithms inherently capture non‑linear relationships, handle missing
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellfehler senken
-Crit:0`
-*23.08. 17:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Data‑centric preprocessing and validation - Implement a robust preprocessing pipeline: verify file existence and array shape before loading; replace >= threshold with np.argpartition to select exact top‑5% values; explicitly
 
 ### `last_swarm_critique`
 *23.08. 17:35 UTC · Quelle: critic*
