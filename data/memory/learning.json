@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 01:25:25",
+ "stand": "2026-09-06 01:35:57",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -364,6 +364,12 @@
   },
   {
    "tool": "automatische-fehler-reduktions-pipeline-.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "simulationen-gezielt-einsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

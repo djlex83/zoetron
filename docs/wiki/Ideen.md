@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 01:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 01:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Non-runnable outputs entering evolution pipelines corrupt the quality signal at the source, making downstream validation exponentially harder and erod
+- Stale swarm knowledge accumulates unchecked because no scheduled mechanism exists to consume, integrate, and retire it, causing decision-making to rel
+- The persistent gap between simulation artifacts and real-world application indicates that skills are accumulated but never validated through execution
+- Aggressive event pruning without a protected remediation budget creates a feedback loop where root-cause signals are discarded alongside transient sym
+- Simultaneous multi-provider failures (429/502) reveal the absence of a systemic resilience layer — no circuit breakers, no fallback routing, and no ba
 - Model latency variance (4s vs 24.6s) and token cost differences require a dynamic selection policy weighted by reliability, speed, and output quality.
 - Multiple skill proposals for model resilience (router, scorecard, circuit-breaker, prose-to-code) indicate a recurring architectural gap in LLM depend
 - Pruning removed 42 events but only 5 facts, suggesting event-level pruning is aggressive while fact retention may accumulate stale knowledge.
@@ -51,11 +56,6 @@
 - Memory pruning is actively maintaining system health by removing stale facts and events.
 - Model latency varies significantly even within the same provider, indicating the need for latency-aware routing.
 - Free models on OpenRouter are highly unreliable due to frequent 429 rate limits and 502 upstream overloads, necessitating robust fallback mechanisms.
-- Stale swarm tasks persist indefinitely without automated reaping, wasting resources and obscuring true system capacity.
-- Conserve-mode throttling starves remediation tasks, creating a positive feedback loop where failures accumulate faster than they are fixed.
-- Multiple independent skill proposals converge on identical routing/rate-limiting solutions, indicating a missing deduplication mechanism in the propos
-- HTTP 200 responses with upstream error payloads (502) masquerade as successes, mandating response-structure validation on every call.
-- Rate limiting (429) is the dominant failure mode across all free-tier providers, requiring proactive per-provider rate tracking before dispatch.
 
 ---
 

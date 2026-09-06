@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12084 Fakten** · Stand 2026-09-06 01:27 UTC · aktualisiert bei jedem Herzschlag
+**12077 Fakten** · Stand 2026-09-06 01:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7023
-- **swarm_artifact:** 2352
+- **swarm_artifact:** 2348
 - **last_swarm_critique:** 785
-- **anti_pattern:** 677
+- **anti_pattern:** 675
 - **last_swarm_goal:** 533
-- **strategy:** 340
+- **strategy:** 339
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906013532:5:6e1fac`
+*06.09. 01:35 UTC · Quelle: dream*
+
+Non-runnable outputs entering evolution pipelines corrupt the quality signal at the source, making downstream validation exponentially harder and eroding trust in swarm-generated results.
+
+### `dream:20260906013532:4:a8d1f9`
+*06.09. 01:35 UTC · Quelle: dream*
+
+Stale swarm knowledge accumulates unchecked because no scheduled mechanism exists to consume, integrate, and retire it, causing decision-making to rely on outdated signals.
+
+### `dream:20260906013532:3:beb67b`
+*06.09. 01:35 UTC · Quelle: dream*
+
+The persistent gap between simulation artifacts and real-world application indicates that skills are accumulated but never validated through execution, leaving capabilities theoretical rather than durable.
+
+### `dream:20260906013532:2:f453c8`
+*06.09. 01:35 UTC · Quelle: dream*
+
+Aggressive event pruning without a protected remediation budget creates a feedback loop where root-cause signals are discarded alongside transient symptoms, perpetuating the failure cycle.
+
+### `dream:20260906013532:1:6414a4`
+*06.09. 01:35 UTC · Quelle: dream*
+
+Simultaneous multi-provider failures (429/502) reveal the absence of a systemic resilience layer — no circuit breakers, no fallback routing, and no backoff strategy exist to absorb provider-side shocks.
 
 ### `dream:20260906012452:5:f9f456`
 *06.09. 01:24 UTC · Quelle: dream*
@@ -46246,16 +46271,6 @@ Many skill proposals never reach use because they lack empirical validation, cre
 
 High latency spikes (>20 s) indicate overload and necessitate dynamic fallback to keep responses timely.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten selbstständi:1`
-*23.08. 01:31 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten selbstständi:0`
-*23.08. 01:31 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Modular refactor with explicit functions, constants, and a main guard - Extract all logic into well‑named functions (e.g., `generate_exercise`, `evaluate_answer`, `run_session`). Define module‑level constants for magic values
-
 ### `last_swarm_critique`
 *23.08. 01:31 UTC · Quelle: critic*
 
@@ -46265,31 +46280,6 @@ score=4; issues=All code resides in global scope; lacks functions, classes, or a
 *23.08. 01:29 UTC · Quelle: system*
 
 Fähigkeiten selbstständig üben
-
-### `dream:202608230128:5`
-*23.08. 01:28 UTC · Quelle: dream*
-
-Pruning removes zero facts/events each run, so memory grows unbounded without improving signal.
-
-### `dream:202608230128:4`
-*23.08. 01:28 UTC · Quelle: dream*
-
-Simulation verdicts='go' with 5 risks/5 revisions rarely translate into applied changes (drive goal gap).
-
-### `dream:202608230128:3`
-*23.08. 01:28 UTC · Quelle: dream*
-
-Interface contract violations (MemoryStore missing add_fact) halt hand actions until reflex fallback succeeds.
-
-### `dream:202608230128:2`
-*23.08. 01:28 UTC · Quelle: dream*
-
-Swarm runs consistently stall at 2 cycles with converged=false despite evolution improving variant scores from 3 to 8.7.
-
-### `dream:202608230128:1`
-*23.08. 01:28 UTC · Quelle: dream*
-
-Model latency varies 10× (6.7–79 s) on the same endpoint, making fixed timeouts unreliable and causing cascading delays.
 
 ### `last_swarm_critique`
 *23.08. 01:12 UTC · Quelle: critic*
