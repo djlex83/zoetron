@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12090 Fakten** · Stand 2026-09-06 11:23 UTC · aktualisiert bei jedem Herzschlag
+**12080 Fakten** · Stand 2026-09-06 11:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7107
-- **swarm_artifact:** 2307
+- **dream:** 7102
+- **swarm_artifact:** 2302
 - **last_swarm_critique:** 792
 - **anti_pattern:** 641
 - **last_swarm_goal:** 540
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906113211:5:7a1f03`
+*06.09. 11:32 UTC · Quelle: dream*
+
+Proactive skill proposals (quota tracker, SLA wrapper, degradation organ) directly mirror observed failure modes but remain unimplemented.
+
+### `dream:20260906113211:4:531a50`
+*06.09. 11:32 UTC · Quelle: dream*
+
+Latency variance (3.7s vs 43.4s) correlates with model size tier, not reliability – smaller models can be both faster and more available.
+
+### `dream:20260906113211:3:a7813c`
+*06.09. 11:32 UTC · Quelle: dream*
+
+Swarm convergence fails (score 0) despite evolution, suggesting the planner-critic loop lacks a measurable quality gate for skill synthesis.
+
+### `dream:20260906113211:2:446b64`
+*06.09. 11:32 UTC · Quelle: dream*
+
+Fallback chains succeed only when a model with distinct quota (inclusionai/ling-3.0-flash-fin) remains available, revealing single-point-of-failure in provider diversity.
+
+### `dream:20260906113211:1:cbce2c`
+*06.09. 11:32 UTC · Quelle: dream*
+
+Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota pools or correlated traffic spikes.
 
 ### `dream:20260906112047:5:928802`
 *06.09. 11:20 UTC · Quelle: dream*
@@ -46350,56 +46375,6 @@ Latency spikes (e.g., 80.9 s) exceed mission timeouts, indicating a need for r
 *23.08. 11:37 UTC · Quelle: dream*
 
 Critic output must be validated against a strict schema before use, as unparseable critic results caused scoring failures in evolution runs.
-
-### `dream:202608231131:5`
-*23.08. 11:31 UTC · Quelle: dream*
-
-Missing MemoryStore.add_fact method caused a runtime hand-execution error, showing that interface contracts must be enforced via abstract base classes or runtime checks.
-
-### `dream:202608231131:4`
-*23.08. 11:31 UTC · Quelle: dream*
-
-Consistent overprediction of goal scores (predicted 7 vs actual 5) reveals calibration drift that can be corrected by applying a rolling actual/predicted ratio before go/no-go decisions.
-
-### `dream:202608231131:3`
-*23.08. 11:31 UTC · Quelle: dream*
-
-Builder-heavy role distribution (4 builders : 1 critic) correlates with low convergence scores, suggesting a minimum critic-to-builder ratio is needed for quality control.
-
-### `dream:202608231131:2`
-*23.08. 11:31 UTC · Quelle: dream*
-
-Critic output parsing failures halt evolution; implementing a validation wrapper that ensures critic output is parseable before use improves robustness.
-
-### `dream:202608231131:1`
-*23.08. 11:31 UTC · Quelle: dream*
-
-Frequent resource exhaustion errors from the primary model indicate a need for request rate limiting or automatic fallback to alternative models.
-
-### `dream:202608231126:5`
-*23.08. 11:26 UTC · Quelle: dream*
-
-Swarm cycles rarely converge within two iterations, suggesting convergence criteria are too strict or insufficient exploration; adjusting criteria or increasing allowed cycles improves solution quality.
-
-### `dream:202608231126:4`
-*23.08. 11:26 UTC · Quelle: dream*
-
-Prediction calibration consistently overestimates outcomes (e.g., predicted 7 vs actual 5), indicating a bias that can be corrected by adjusting prediction models or adding uncertainty margins.
-
-### `dream:202608231126:3`
-*23.08. 11:26 UTC · Quelle: dream*
-
-Critic outputs are often unparseable, blocking evolution; enforcing a strict JSON schema for critic feedback enables reliable variant selection.
-
-### `dream:202608231126:2`
-*23.08. 11:26 UTC · Quelle: dream*
-
-Nvidia model requests frequently hit resource limits, causing upstream errors; implementing request throttling, exponential backoff, or fallback to alternative models improves reliability.
-
-### `dream:202608231126:1`
-*23.08. 11:26 UTC · Quelle: dream*
-
-Missing 'add_fact' method on MemoryStore causes hand-action failures; ensuring the store implements the required interface prevents execution errors.
 
 ### `last_swarm_goal`
 *23.08. 11:17 UTC · Quelle: system*

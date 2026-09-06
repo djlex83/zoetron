@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,9 +17,9 @@
 - Guarantee one remediation task per meta-cycle via ReservedRemediationBudget scheduler to prevent pruning from  *(hatte die Idee 3×)*
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
-- Implement model health monitor with sliding-window 429/502 rates and get_healthy_model() router integration to *(hatte die Idee 2×)*
-- Deploy error-classification reflex mapping 429/502/timeout to pre-validated recovery sequences (exponential ba *(hatte die Idee 2×)*
-- Build predictive cooldown scheduler using failure-signature cache to preemptively skip models during historica *(hatte die Idee 2×)*
+- Implement ModelFailoverChain: track per-model 429/5xx rates, auto-demote offenders for 1800s, promote next-fre *(hatte die Idee 2×)*
+- Add SkillProposalLifecycle: enforce states proposed→spec_written→implemented→tested→deployed with mandatory tr *(hatte die Idee 2×)*
+- Create GoalAgingPolicy: tag every drive_goal with created_ts, auto-archive goals >7 days with no act_done, sur *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -34,13 +34,18 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Proactive skill proposals (quota tracker, SLA wrapper, degradation organ) directly mirror observed failure modes but remain unimplemented.
+- Latency variance (3.7s vs 43.4s) correlates with model size tier, not reliability – smaller models can be both faster and more available.
+- Swarm convergence fails (score 0) despite evolution, suggesting the planner-critic loop lacks a measurable quality gate for skill synthesis.
+- Fallback chains succeed only when a model with distinct quota (inclusionai/ling-3.0-flash-fin) remains available, revealing single-point-of-failure in
+- Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota pools or correlated traffic spikes.
 - Evolutionary variant generation with simulation feedback can recover from 0/10 to 7-8/10 scores within one cycle.
 - Calibration error of 6 points (predicted 6, actual 0) indicates the predictor overestimates success when code execution is absent.
 - Skill artifacts without executable code blocks are rejected by the critic, proving that prose-only outputs cannot converge to working capabilities.
@@ -51,11 +56,6 @@
 - Skill proposals stall at the reflex layer because the conversion script (fähigkeitsvorschläge-in-echte-skills-ums.py) exits with ok=false without touc
 - File operations fail when using relative paths instead of resolving sys.argv[1] and ZOETRON_DATA to absolute paths before access.
 - Rate-limited models (z-ai/glm-5.2, google/gemma) consistently return 429 errors, making them unreliable for primary workflows.
-- Self-diagnosis returning zero organ errors suggests internal health monitoring is functional but lacks the granularity to detect subtle degradation pa
-- Pruning 11 facts and 37 events in a single run reveals that the system accumulates stale data faster than it processes it, requiring aggressive retent
-- The reflex mechanism—executing skills rather than merely planning them—proved effective in bridging the intention-action gap, indicating autonomous sy
-- The successful fallback to inclusionai/ling-3.0-flash-fin demonstrates that maintaining a diverse model pool with at least one reliably fast fallback 
-- Free-tier models on OpenRouter exhibit systematic unreliability through rate limits (429) and upstream overloads (502), making them unsuitable as prim
 
 ---
 
