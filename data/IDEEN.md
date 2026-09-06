@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 16:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 16:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -34,13 +34,18 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system maintained a score of 7 across multiple cycles despite revisions and evolution, suggesting a plateau where further improvement requires str
+- Self-diagnosis found zero organ failures while 71+ events were pruned, confirming that failures were external (provider-side) rather than internal sys
+- Evolution improved the best variant score from 7 to 9, but the swarm still didn't converge after 2 cycles, indicating that score improvement alone doe
+- The inclusionai/ling-3.0-flash-fin model succeeded consistently where larger models (Nemotron, Gemma) failed, proving that smaller specialized models 
+- When multiple providers simultaneously return 429/502 errors, parallel retries amplify the problem — staggered backoff with jitter is essential to avo
 - Self-diagnosis reports zero organ errors despite repeated model failures, indicating blind spots in health monitoring.
 - Existing skill proposals directly address observed model failures but remain unimplemented.
 - Multiple drive goals activate concurrently without prerequisite ordering (model reliability → swarm update → skill conversion).
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but are not automatically validated, deployed, or measured for impact.
 - A single reliable model (ling-3.0-flash-fin) consistently succeeds while primary/secondary models fail unpredictably.
 - Transient model failures (502, 429) cascade into workflow stalls because no circuit breaker or retry logic exists.
-- Drive goals for error reduction and swarm utilization conflict: swarm data is stale because model failures prevent fresh collection.
-- Pruning removes facts but not the recurring failure signatures, so the system relearns the same model limitations each cycle.
-- Skill proposals generated during reflex execution already encode the needed resilience patterns but remain unimplemented due to missing promotion pipe
-- Automatic fallback to inclusionai/ling-3.0-flash-fin succeeded within 3s, proving that a pre-validated fast fallback chain beats dynamic selection und
-- Model failures (502/429) cluster on specific providers, making provider-level health tracking more effective than per-model tracking.
 
 ---
 

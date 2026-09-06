@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12041 Fakten** · Stand 2026-09-06 16:36 UTC · aktualisiert bei jedem Herzschlag
+**12038 Fakten** · Stand 2026-09-06 16:48 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7101
-- **swarm_artifact:** 2272
+- **swarm_artifact:** 2269
 - **last_swarm_critique:** 811
 - **anti_pattern:** 619
 - **last_swarm_goal:** 543
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906164508:5:cac7b2`
+*06.09. 16:45 UTC · Quelle: dream*
+
+The system maintained a score of 7 across multiple cycles despite revisions and evolution, suggesting a plateau where further improvement requires structural changes rather than iterative refinement.
+
+### `dream:20260906164508:4:fcf098`
+*06.09. 16:45 UTC · Quelle: dream*
+
+Self-diagnosis found zero organ failures while 71+ events were pruned, confirming that failures were external (provider-side) rather than internal system corruption.
+
+### `dream:20260906164508:3:7a2aea`
+*06.09. 16:45 UTC · Quelle: dream*
+
+Evolution improved the best variant score from 7 to 9, but the swarm still didn't converge after 2 cycles, indicating that score improvement alone doesn't guarantee systemic convergence.
+
+### `dream:20260906164508:2:ae4d07`
+*06.09. 16:45 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model succeeded consistently where larger models (Nemotron, Gemma) failed, proving that smaller specialized models can be more reliable under load than general-purpose ones.
+
+### `dream:20260906164508:1:e2416a`
+*06.09. 16:45 UTC · Quelle: dream*
+
+When multiple providers simultaneously return 429/502 errors, parallel retries amplify the problem — staggered backoff with jitter is essential to avoid coordinated retry storms.
 
 ### `tool:träume-und-simulationen-in-skills-umsetz`
 *06.09. 16:34 UTC · Quelle: hands*
@@ -46183,31 +46208,6 @@ Score prediction is systematically optimistic (predicted 8 vs actual 4, abs_erro
 *23.08. 16:46 UTC · Quelle: dream*
 
 The swarm ended unconverged (score 5, 2 cycles) because it was launched under a metabolism budget of max_iterations=2, below the ≥3 threshold later proposed, so budget gating must happen before launch, not after.
-
-### `dream:202608231639:5`
-*23.08. 16:39 UTC · Quelle: dream*
-
-Five skill proposals were queued in one dream cycle while a drive goal explicitly demands more proposal usage, showing generation outpaces consumption and widens the intention-action gap.
-
-### `dream:202608231639:4`
-*23.08. 16:39 UTC · Quelle: dream*
-
-Both simulation runs returned verdict 'revise' (100% rate, 8 total revisions), indicating the simulation gate is non-discriminative and adds revision cost without ever approving.
-
-### `dream:202608231639:3`
-*23.08. 16:39 UTC · Quelle: dream*
-
-A runtime AttributeError ('MemoryStore' object has no attribute 'add_fact') proves cross-module API drift is only caught at execution time, crashing the hands pipeline in 0.03s.
-
-### `dream:202608231639:2`
-*23.08. 16:39 UTC · Quelle: dream*
-
-The same model showed 47x latency variance (2.8s-131.9s), making single-call latency useless for routing decisions and demanding timeouts plus fallback providers.
-
-### `dream:202608231639:1`
-*23.08. 16:39 UTC · Quelle: dream*
-
-Internal evolution scores (8-9) diverged sharply from the realized swarm score (5), revealing systematic evaluator inflation that masks a progress plateau at 5/10.
 
 ### `last_swarm_goal`
 *23.08. 16:16 UTC · Quelle: system*
