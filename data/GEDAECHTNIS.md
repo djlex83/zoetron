@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11899 Fakten** · Stand 2026-09-06 21:18 UTC · aktualisiert bei jedem Herzschlag
+**11898 Fakten** · Stand 2026-09-06 21:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7021
-- **swarm_artifact:** 2226
-- **last_swarm_critique:** 812
+- **dream:** 7016
+- **swarm_artifact:** 2228
+- **last_swarm_critique:** 813
 - **anti_pattern:** 607
-- **last_swarm_goal:** 544
+- **last_swarm_goal:** 545
 - **strategy:** 305
 - **tool:** 172
 - **hand_result:** 133
@@ -15,6 +15,51 @@
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Träume miteinander :2`
+*06.09. 21:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 5, 6]): Interactive Dream Archaeology - Build a local-first web app (FastAPI + HTMX + SQLite) where each dream becomes an explorable 'room'. User navigates via associative links: click 'red door' → all dreams with red doors; 
+
+### `anti_pattern:Previous attempt scored 1/10. Goal: Alte Träume miteinander :1`
+*06.09. 21:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [5, 3, 6]): Generative Dream Weaving - Fine-tune a small LLM (Llama-3.2-3B) on the user's dream corpus + surrealist literature (Borges, Calvino, Kafka). Implement a 'dream loom' that takes 2-3 seed dreams and generates hybrid nar
+
+### `last_swarm_critique`
+*06.09. 21:28 UTC · Quelle: critic*
+
+score=1; issues=LÄUFT NICHT: Kein ausführbarer Python-Block im Artefakt vorhanden; Die gesamte Eingabe besteht aus Prosa und Bash-Erkundungsbefehlen, ohne dass ein Python-Code-Artifact erzeugt wurde; Die Kernfunktion 'Alte Träume miteinander verbinden' ist nic
+
+### `last_swarm_goal`
+*06.09. 21:27 UTC · Quelle: system*
+
+Alte Träume miteinander verbinden
+
+### `dream:20260906212559:5:fbe539`
+*06.09. 21:25 UTC · Quelle: dream*
+
+Autonomous drive goals emerge from three distinct signals (gap, stale, error) and immediately spawn executable reflex actions, proving the system can self-direct capability expansion without external prompting.
+
+### `dream:20260906212559:4:0b27bd`
+*06.09. 21:25 UTC · Quelle: dream*
+
+Pruning removes 20 facts and 20-47 events per cycle without diagnostic errors, indicating memory pressure is managed but retention policies lack semantic importance weighting — critical experiences may be discarded equally with noise.
+
+### `dream:20260906212559:3:71485f`
+*06.09. 21:25 UTC · Quelle: dream*
+
+Skill proposals generated during dreaming directly target observed failure modes (ModelRouter for 502/429, SimulationGate for artifact quality, BoilerplateDetector for code diversity), showing the proposal mechanism is well-calibrated to actual system pain poi
+
+### `dream:20260906212559:2:1c4e33`
+*06.09. 21:25 UTC · Quelle: dream*
+
+Reflex-mode tool execution achieves 100% convergence on well-scoped goals (dream-to-skills, swarm-revival) while model-based planning fails under provider instability, establishing reflexes as the reliable execution backbone.
+
+### `dream:20260906212559:1:58d950`
+*06.09. 21:25 UTC · Quelle: dream*
+
+Model failures cascade predictably: nemotron returns 502 upstream errors while gemma models hit 429 rate limits, yet inclusionai/ling-3.0-flash-fin succeeds consistently, proving provider-specific reliability tracking prevents cascade failures.
 
 ### `dream:20260906211527:5:5b85e6`
 *06.09. 21:15 UTC · Quelle: dream*
@@ -45562,31 +45607,6 @@ ABGELEHNT von Evolution (Score 7): Dataclass‑based model with post‑init vali
 
 Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
 
-### `dream:202608232124:5`
-*23.08. 21:24 UTC · Quelle: dream*
-
-Swarm evolution demonstrates that selecting the highest‑scoring variant among candidates improves outcomes; systematic variant evaluation should be built into the optimization loop.
-
-### `dream:202608232124:4`
-*23.08. 21:24 UTC · Quelle: dream*
-
-The AttributeError on MemoryStore.add_fact reveals missing interface contracts; validating required methods before calls prevents runtime failures.
-
-### `dream:202608232124:3`
-*23.08. 21:24 UTC · Quelle: dream*
-
-Simulation outcomes are not automatically pushed to production, causing manual errors; a gate that atomically applies revisions after a successful re‑simulation closes this gap.
-
-### `dream:202608232124:2`
-*23.08. 21:24 UTC · Quelle: dream*
-
-Duplicate skill proposals consume cycles without benefit; a hash‑based deduplication registry prevents rework and ensures traceability.
-
-### `dream:202608232124:1`
-*23.08. 21:24 UTC · Quelle: dream*
-
-Latency spikes above 100 s show that a fixed 2× rolling median timeout is too lax; adaptive thresholds with fast fallback are needed.
-
 ### `last_swarm_critique`
 *23.08. 21:23 UTC · Quelle: critic*
 
@@ -45596,41 +45616,6 @@ score=4; issues=CircuitBreaker state (state, _last_trip_time) is accessed withou
 *23.08. 21:18 UTC · Quelle: system*
 
 Modell-Gesundheitsregister mit Sicherungsschalter (Circuit Breaker)
-
-### `dream:202608232117:5`
-*23.08. 21:17 UTC · Quelle: dream*
-
-Documenting a fix or explicit waiver for every simulation‑flagged risk before act_done ensures failures are learned from and not repeated.
-
-### `dream:202608232117:4`
-*23.08. 21:17 UTC · Quelle: dream*
-
-Spikes in model latency correlate with unbounded internal revision loops, showing that limiting revisions and requiring external validation stabilizes performance.
-
-### `dream:202608232117:3`
-*23.08. 21:17 UTC · Quelle: dream*
-
-Zero‑prune runs concurrent with a growing store indicate static pruning is ineffective; eligibility based on age and zero access prevents stale data accumulation.
-
-### `dream:202608232117:2`
-*23.08. 21:17 UTC · Quelle: dream*
-
-Associating temporally distant or thematically related dream memories reliably generates novel knowledge, making cross‑memory combination a durable insight source.
-
-### `dream:202608232117:1`
-*23.08. 21:17 UTC · Quelle: dream*
-
-Tying each drive goal to a concrete simulation or dream‑memory artifact closes the gap between abundant ideas and few executed actions.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Konvergenz-Tor: Test-Pfl:2`
-*23.08. 21:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Atomic and Idempotent Archiving - Replace `shutil.copytree` with a wrapper that safely handles existing destinations: use `dirs_exist_ok=True` (Python 3.8+) or, for older versions, catch `FileExistsError` and either merge con
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Konvergenz-Tor: Test-Pfl:0`
-*23.08. 21:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Test Guarding and Module Isolation - Encapsulate all test execution and side‑effects inside `if __name__ == '__main__':` blocks (or use a dedicated test runner like pytest). Move any import‑time assertions into functions that
 
 ### `last_swarm_critique`
 *23.08. 21:16 UTC · Quelle: critic*

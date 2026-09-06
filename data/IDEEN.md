@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 21:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 21:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,10 +25,10 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Autonomous drive goals emerge from three distinct signals (gap, stale, error) and immediately spawn executable reflex actions, proving the system can 
+- Pruning removes 20 facts and 20-47 events per cycle without diagnostic errors, indicating memory pressure is managed but retention policies lack seman
+- Skill proposals generated during dreaming directly target observed failure modes (ModelRouter for 502/429, SimulationGate for artifact quality, Boiler
+- Reflex-mode tool execution achieves 100% convergence on well-scoped goals (dream-to-skills, swarm-revival) while model-based planning fails under prov
+- Model failures cascade predictably: nemotron returns 502 upstream errors while gemma models hit 429 rate limits, yet inclusionai/ling-3.0-flash-fin su
 - HandAction path resolution fails on relative paths, requiring mandatory absolute path expansion via ZOETRON_DATA before execution.
 - Swarm knowledge staleness persists despite convergence success, indicating missing continuous refresh loops for stored goals/critiques.
 - Model endpoint failures (429/502) cascade without proactive health tracking, forcing reactive fallbacks instead of predictive routing.
@@ -51,11 +56,6 @@
 - Skills proposed without a mandatory execution-and-scoring gate accumulate as untested dead weight, polluting the skill registry and eroding trust in t
 - Stale swarm knowledge creates a compounding error loop: outdated goals and critiques cause repeated mistakes, making periodic refresh cycles non-optio
 - Model provider failures (502/429) are the primary system bottleneck — without per-provider health tracking and automatic fallback chains, the system w
-- Dream-to-skill conversion remains aspirational: five skill proposals were generated last cycle but none passed through execution, simulation, and scor
-- Swarm knowledge decays measurably between refresh cycles, causing stale goals and outdated criticism to persist until explicit revival.
-- Aggressive pruning (15→10 facts, 47→21 events per cycle) risks discarding latent patterns before cross-cycle consolidation can extract them.
-- Reflex execution succeeds when concrete tools exist (vorgeschlagene-fähigkeiten-tatsächlich-u.py, schwarmwissen-wieder-auffrischen.py) but proposed sk
-- Model reliability collapses under load: nemotron returns 502 upstream errors while gemma-4 models hit 429 rate limits, leaving no working provider dur
 
 ---
 
