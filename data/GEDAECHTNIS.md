@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11772 Fakten** · Stand 2026-09-06 23:11 UTC · aktualisiert bei jedem Herzschlag
+**11772 Fakten** · Stand 2026-09-06 23:21 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6946
 - **swarm_artifact:** 2187
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906231909:5:e06082`
+*06.09. 23:19 UTC · Quelle: dream*
+
+Reflex execution succeeds (ok: true) but pre-flight validation of tool paths/env is missing, risking silent failures.
+
+### `dream:20260906231909:4:abf0d1`
+*06.09. 23:19 UTC · Quelle: dream*
+
+Pruning runs remove 25–41 events per cycle yet drive goals still cite stale swarm knowledge, indicating pruning discards useful context.
+
+### `dream:20260906231909:3:c0c921`
+*06.09. 23:19 UTC · Quelle: dream*
+
+FailurePatternMiner was proposed twice independently, revealing no deduplication mechanism for skill proposals.
+
+### `dream:20260906231909:2:091973`
+*06.09. 23:19 UTC · Quelle: dream*
+
+Model latency varies wildly (14–72 s) without circuit-breaker logic, causing unpredictable reflex performance.
+
+### `dream:20260906231909:1:debe0c`
+*06.09. 23:19 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an autonomous pipeline to convert them into tested, registered tools.
 
 ### `dream:20260906230901:5:ead98c`
 *06.09. 23:09 UTC · Quelle: dream*
@@ -45051,31 +45076,6 @@ Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 *23.08. 23:13 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608232311:5`
-*23.08. 23:11 UTC · Quelle: dream*
-
-The Hermes bridge goal emerged independently from both dream analysis and swarm planning (a 'combination' signal), and since filesystem hand-actions ran 100% reliably at ~30ms, building bruecke.py on file-based channels is the highest-confidence next construct
-
-### `dream:202608232311:4`
-*23.08. 23:11 UTC · Quelle: dream*
-
-Prune runs removed 0 facts and 0 events, proving current pruning thresholds never fire and memory will grow unbounded without usage- or age-based eviction.
-
-### `dream:202608232311:3`
-*23.08. 23:11 UTC · Quelle: dream*
-
-Skill proposals systematically outpace simulation testing (confirmed by the explicit 'gap' drive goal), creating an idea graveyard unless proposals are automatically converted into simulation tasks.
-
-### `dream:202608232311:2`
-*23.08. 23:11 UTC · Quelle: dream*
-
-Benchmark scoring reveals reflex (2/5) as the weakest subsystem while cortex is already maxed (5/5), so improvement effort should shift from reasoning depth to hardening reactive loops.
-
-### `dream:202608232311:1`
-*23.08. 23:11 UTC · Quelle: dream*
-
-Model latency on the same endpoint is bimodal (3-14s for light tasks vs 92-164s under load), so critical-path model calls must assume worst-case latency and carry timeout/fallback guards rather than average-case expectations.
 
 ### `last_swarm_goal`
 *23.08. 23:03 UTC · Quelle: system*
