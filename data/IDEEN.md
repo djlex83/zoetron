@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 06:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 06:58 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,15 +24,15 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
+- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports no organ failures, confirming infrastructure health despite model-layer instability.
+- The skill-transformation pipeline converged in one cycle with score 9, proving the planner→builder→critic loop works end-to-end.
+- High latency variance (2.7 s – 159 s) on nemotron-3-ultra indicates unpredictable queueing; treat as fallback only.
+- inclusionai/ling-3.0-flash-fin:free consistently succeeds with low-to-moderate latency, marking it as the current reliable workhorse.
+- Rate limiting (HTTP 429) across multiple free-tier models is the dominant failure mode, making single-model reliance brittle.
 - Swarm knowledge remains stale because no validator runs; drive goal exists but no skill implements periodic fact refresh.
 - Metabolism enters conserve state (stress=1.0) with extreme budget cuts (max_tasks=3, max_iterations=1), throttling all autonomous activity.
 - Hand actions fail on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero file/directory contact.
@@ -51,11 +56,6 @@
 - Reflex execution succeeds for known procedures (schwarmwissen) but cannot handle novel model routing decisions.
 - Self-diagnosis only checks internal organs, missing degraded external APIs that cause 80% of task failures.
 - External model dependencies fail catastrophically under rate limits (429) and upstream errors (502) with zero automatic failover.
-- Pruning removes facts and events but does not address the root cause of stale swarm knowledge, which requires a periodic validator using a reliable no
-- Self-diagnose reports zero organ errors while model_fail events persist, showing that external provider degradation is not captured as an organ-level 
-- Swarm knowledge refresh attempts time out after 20 seconds, indicating that the current hand_action timeout is too short for reliable model responses 
-- Skill proposals accumulate but are rarely executed because there is no automated ProposalExecutor to test and integrate high-confidence, low-complexit
-- Free-tier model endpoints consistently hit 429 rate limits, causing cascading failures unless a resilient fallback layer with circuit breaking and tok
 
 ---
 

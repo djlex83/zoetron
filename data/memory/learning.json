@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 06:48:18",
+ "stand": "2026-09-06 06:58:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -63,12 +63,6 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltete-wissenstände-auffrischen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -112,6 +106,12 @@
   },
   {
    "tool": "traum-gedächtnis-system-fertigstellen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "schwarmwissen-wieder-auffrischen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -177,6 +177,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -187,12 +193,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
   },
   {
    "tool": "alte-erinnerungen-auf-wert-prüfen.py",

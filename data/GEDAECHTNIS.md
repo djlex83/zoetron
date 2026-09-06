@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12068 Fakten** · Stand 2026-09-06 06:50 UTC · aktualisiert bei jedem Herzschlag
+**12066 Fakten** · Stand 2026-09-06 07:00 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7073
-- **swarm_artifact:** 2312
+- **dream:** 7078
+- **swarm_artifact:** 2308
 - **last_swarm_critique:** 788
-- **anti_pattern:** 653
+- **anti_pattern:** 651
 - **last_swarm_goal:** 536
-- **strategy:** 328
+- **strategy:** 327
 - **tool:** 166
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906065830:5:05b4d7`
+*06.09. 06:58 UTC · Quelle: dream*
+
+Self-diagnosis reports no organ failures, confirming infrastructure health despite model-layer instability.
+
+### `dream:20260906065830:4:4f7fd8`
+*06.09. 06:58 UTC · Quelle: dream*
+
+The skill-transformation pipeline converged in one cycle with score 9, proving the planner→builder→critic loop works end-to-end.
+
+### `dream:20260906065830:3:0ea46c`
+*06.09. 06:58 UTC · Quelle: dream*
+
+High latency variance (2.7 s – 159 s) on nemotron-3-ultra indicates unpredictable queueing; treat as fallback only.
+
+### `dream:20260906065830:2:5c0732`
+*06.09. 06:58 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free consistently succeeds with low-to-moderate latency, marking it as the current reliable workhorse.
+
+### `dream:20260906065830:1:187962`
+*06.09. 06:58 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) across multiple free-tier models is the dominant failure mode, making single-model reliance brittle.
 
 ### `dream:20260906064737:5:0fe486`
 *06.09. 06:47 UTC · Quelle: dream*
@@ -46310,16 +46335,6 @@ Model latency varies 30× (2.2 s to 69.5 s) on the same model, making fixed time
 *23.08. 07:06 UTC · Quelle: dream*
 
 Missing interface validation on MemoryStore caused AttributeError at runtime, revealing a systemic gap in startup contract checking for all store-like components.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Mehr Simulationen durchf:1`
-*23.08. 06:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Leverage asyncio with a semaphore‑limited task queue for I/O‑bound simulation la - Rewrite the simulation driver as an async coroutine that submits simulation tasks to a ThreadPoolExecutor (for CPU‑bound work) or directly run
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Mehr Simulationen durchf:0`
-*23.08. 06:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Configure structured logging and use reproducible seeding with ProcessPoolExecut - Set up logging.basicConfig with a format that includes timestamps and level, capture logger in each worker via initializer, and pass a determi
 
 ### `last_swarm_critique`
 *23.08. 06:49 UTC · Quelle: critic*
