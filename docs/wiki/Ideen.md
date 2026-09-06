@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate (5 in this cycle) but none are instantiated, tested, or registered, stalling capability growth.
+- Swarm refresh occurs only via reactive reflex triggers, not proactive freshness decay metrics, leaving knowledge stale between runs.
+- Pruning runs consistently at ~1:3.2 fact:event ratio but without policy enforcement, risking audit gaps and drift.
+- Reflex scripts succeed reliably (exit 0, converged true) but remain unpromoted, creating a capability gap between ad-hoc automation and registered ski
+- Model provider rate limits (429) and overloads (502) cause cascading failures because no quota-aware routing or circuit breaker exists.
 - Skill proposals already cluster around resilience patterns (circuit-breaker, health registry, graceful degradation) but remain unimplemented.
 - Reflex-driven swarm update succeeded without model calls, proving local tool execution bypasses API fragility for maintenance tasks.
 - Drive goals directly mirror observed failure patterns (model errors, stale data), showing the system's meta-cognition correctly identifies its own wea
@@ -51,11 +56,6 @@
 - Hand actions execute reliably (exit code 0) and can serve as deterministic fallbacks when all model endpoints are rate-limited.
 - The inclusionai/ling-3.0-flash-fin:free model consistently succeeds with low latency, making it a reliable primary candidate for routine tasks.
 - Rate limits on free-tier models cause cascading failures when the system retries blocked models instead of switching to healthy alternatives.
-- Rate-limit errors are not random noise but a clear signal that traffic concentration on popular models must be redistributed via continuous health sco
-- Skill proposals generated during dreaming have no durable value unless a registration-and-testing pipeline exists to promote them from suggestion to a
-- Stale swarm knowledge actively degrades routing and skill-selection decisions, making periodic freshness audits a prerequisite rather than an optional
-- The single successful model (inclusionai/ling-3.0-flash-fin) reveals that fallback diversity is the primary resilience factor when multiple upstream s
-- Cascading 429/502 failures across four independent providers indicate no health-aware routing existed, causing repeated wasted calls to degraded model
 
 ---
 

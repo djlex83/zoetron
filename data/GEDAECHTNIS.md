@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12057 Fakten** · Stand 2026-09-06 13:23 UTC · aktualisiert bei jedem Herzschlag
+**12054 Fakten** · Stand 2026-09-06 13:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7092
-- **swarm_artifact:** 2285
+- **dream:** 7097
+- **swarm_artifact:** 2280
 - **last_swarm_critique:** 809
-- **anti_pattern:** 631
+- **anti_pattern:** 629
 - **last_swarm_goal:** 541
-- **strategy:** 317
+- **strategy:** 316
 - **tool:** 169
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906133253:5:23e6a7`
+*06.09. 13:32 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 in this cycle) but none are instantiated, tested, or registered, stalling capability growth.
+
+### `dream:20260906133253:4:944f76`
+*06.09. 13:32 UTC · Quelle: dream*
+
+Swarm refresh occurs only via reactive reflex triggers, not proactive freshness decay metrics, leaving knowledge stale between runs.
+
+### `dream:20260906133253:3:95c9d2`
+*06.09. 13:32 UTC · Quelle: dream*
+
+Pruning runs consistently at ~1:3.2 fact:event ratio but without policy enforcement, risking audit gaps and drift.
+
+### `dream:20260906133253:2:616f6f`
+*06.09. 13:32 UTC · Quelle: dream*
+
+Reflex scripts succeed reliably (exit 0, converged true) but remain unpromoted, creating a capability gap between ad-hoc automation and registered skills.
+
+### `dream:20260906133253:1:fc22b3`
+*06.09. 13:32 UTC · Quelle: dream*
+
+Model provider rate limits (429) and overloads (502) cause cascading failures because no quota-aware routing or circuit breaker exists.
 
 ### `dream:20260906132040:5:08ca50`
 *06.09. 13:20 UTC · Quelle: dream*
@@ -46273,16 +46298,6 @@ Calibration drift (predicted 4 vs actual 3) systematically overestimates perform
 *23.08. 13:36 UTC · Quelle: dream*
 
 High latency variance (2.9s–138.3s) across model variants makes p90-based circuit breakers essential for SLA compliance.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: CI-Workflow für automati:1`
-*23.08. 13:29 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): AI‑Assisted Conflict Detection and Resolution - Integrate a large language model (or specialized code‑understanding AI) into the CI pipeline to detect potential merge conflicts early. When a conflict is flagged, the AI attemp
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: CI-Workflow für automati:0`
-*23.08. 13:29 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Prioritization & Automated Queue Management - Implement a priority‑driven merge queue where changes are automatically pre‑validated (static analysis, unit/integration tests) before entering the queue. Low‑risk, conflict‑free
 
 ### `last_swarm_critique`
 *23.08. 13:28 UTC · Quelle: critic*
