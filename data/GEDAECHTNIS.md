@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12034 Fakten** · Stand 2026-09-06 16:08 UTC · aktualisiert bei jedem Herzschlag
+**12041 Fakten** · Stand 2026-09-06 16:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7106
-- **swarm_artifact:** 2266
-- **last_swarm_critique:** 810
-- **anti_pattern:** 617
-- **last_swarm_goal:** 542
-- **strategy:** 310
-- **tool:** 170
+- **dream:** 7101
+- **swarm_artifact:** 2272
+- **last_swarm_critique:** 811
+- **anti_pattern:** 619
+- **last_swarm_goal:** 543
+- **strategy:** 311
+- **tool:** 171
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `tool:träume-und-simulationen-in-skills-umsetz`
+*06.09. 16:34 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume und Simulationen in Skills umsetzen'. Datei: data/tools/träume-und-simulationen-in-skills-umsetz.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Träume und Simulationen :2`
+*06.09. 16:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Multi-Agent Collaborative Framework with Differential Benchmarking - Decompose the single evolutionary pipeline into four specialized collaborative agents: (1) Specification Parser — translates 'Träume und Simulationen' requi
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Träume und Simulationen :0`
+*06.09. 16:32 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Instrumented Test-Driven Evolution with Real Profiling - Replace all simulated/heuristic fitness evaluation with a full instrumentation pipeline. The evolutionary loop uses coverage.py to measure actual branch coverage of gen
+
+### `last_swarm_critique`
+*06.09. 16:30 UTC · Quelle: critic*
+
+score=7; issues=Benchmark and convergence gate measurements are simulated/heuristic (regex-based coverage, hardcoded benchmark values) rather than using real tools like coverage.py or actual performance measurement; AST-based synthesis produces only template-l
+
+### `last_swarm_goal`
+*06.09. 16:18 UTC · Quelle: system*
+
+Träume und Simulationen in Skills umsetzen
+
+### `dream:20260906161737:5:cd4c29`
+*06.09. 16:17 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors despite repeated model failures, indicating blind spots in health monitoring.
+
+### `dream:20260906161737:4:39e58b`
+*06.09. 16:17 UTC · Quelle: dream*
+
+Existing skill proposals directly address observed model failures but remain unimplemented.
+
+### `dream:20260906161737:3:eb4ca2`
+*06.09. 16:17 UTC · Quelle: dream*
+
+Multiple drive goals activate concurrently without prerequisite ordering (model reliability → swarm update → skill conversion).
+
+### `dream:20260906161737:2:105811`
+*06.09. 16:17 UTC · Quelle: dream*
+
+Reflex execution converges reliably for well-scoped goals (swarm update) but requires pre-built tools.
+
+### `dream:20260906161737:1:1325e1`
+*06.09. 16:17 UTC · Quelle: dream*
+
+Free-tier models (nemotron, gemma) fail systematically with 502/429 errors while ling-3.0-flash-fin:free succeeds consistently at 3.6s latency.
 
 ### `dream:20260906160548:5:8d98ed`
 *06.09. 16:05 UTC · Quelle: dream*
@@ -46163,56 +46213,6 @@ Internal evolution scores (8-9) diverged sharply from the realized swarm score (
 *23.08. 16:16 UTC · Quelle: system*
 
 GitHub-Fehler besser verstehen
-
-### `dream:202608231615:5`
-*23.08. 16:15 UTC · Quelle: dream*
-
-Metabolism reports low stress (0.169) but enforces a tight iteration budget (max_iterations=2), starving convergence-heavy goals.
-
-### `dream:202608231615:4`
-*23.08. 16:15 UTC · Quelle: dream*
-
-A runtime AttributeError ('MemoryStore' has no 'add_fact') surfaced during hand execution, revealing missing method implementations in core modules.
-
-### `dream:202608231615:3`
-*23.08. 16:15 UTC · Quelle: dream*
-
-Simulation repeatedly flags risks (3 then 5) requiring revisions, but applied revisions don't achieve convergence, indicating a validation gap.
-
-### `dream:202608231615:2`
-*23.08. 16:15 UTC · Quelle: dream*
-
-Evolution and swarm cycles consistently produce non-converging results (score 7, converged=false) despite multiple revision passes.
-
-### `dream:202608231615:1`
-*23.08. 16:15 UTC · Quelle: dream*
-
-Model latency varies extremely (2.8s to 131.9s) on the same endpoint, causing unpredictable task durations and timeouts.
-
-### `dream:202608231609:5`
-*23.08. 16:09 UTC · Quelle: dream*
-
-MemoryStore lacks add_fact method, causing a runtime AttributeError that halted issue creation and reveals missing interface contract tests.
-
-### `dream:202608231609:4`
-*23.08. 16:09 UTC · Quelle: dream*
-
-Swarm budget of max_iterations=2 is too low for convergence on calibration goals, as evidenced by 2 cycles ending with score 7 and converged=false.
-
-### `dream:202608231609:3`
-*23.08. 16:09 UTC · Quelle: dream*
-
-First simulation flagged 5 risks but only 4 revisions were applied; partial application left residual risk that likely caused non-convergence.
-
-### `dream:202608231609:2`
-*23.08. 16:09 UTC · Quelle: dream*
-
-Calibration predicted 4 but actual was 7 (abs_error=3), showing the predictor is systematically miscalibrated and untrustworthy for gating.
-
-### `dream:202608231609:1`
-*23.08. 16:09 UTC · Quelle: dream*
-
-Model latency varies extremely (6.5s to 128s) on the same model, making time budgets unreliable for planning.
 
 ### `last_swarm_critique`
 *23.08. 15:56 UTC · Quelle: critic*

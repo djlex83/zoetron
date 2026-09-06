@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 16:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 16:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,8 +27,8 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors despite repeated model failures, indicating blind spots in health monitoring.
+- Existing skill proposals directly address observed model failures but remain unimplemented.
+- Multiple drive goals activate concurrently without prerequisite ordering (model reliability → swarm update → skill conversion).
+- Reflex execution converges reliably for well-scoped goals (swarm update) but requires pre-built tools.
+- Free-tier models (nemotron, gemma) fail systematically with 502/429 errors while ling-3.0-flash-fin:free succeeds consistently at 3.6s latency.
 - Pruning removes facts without checking if they are referenced by active skills or pending goals.
 - Swarm knowledge goes stale because no scheduled refresh or relevance scoring triggers re-ingestion.
 - Skill proposals accumulate but are not automatically validated, deployed, or measured for impact.
@@ -51,11 +56,6 @@
 - Skill proposals generated during reflex execution already encode the needed resilience patterns but remain unimplemented due to missing promotion pipe
 - Automatic fallback to inclusionai/ling-3.0-flash-fin succeeded within 3s, proving that a pre-validated fast fallback chain beats dynamic selection und
 - Model failures (502/429) cluster on specific providers, making provider-level health tracking more effective than per-model tracking.
-- Evolution cycles with marginal score improvements below 1 point waste computational resources, indicating a need for convergence thresholds before com
-- Self-predictions are systematically biased upward by approximately 3 points, causing goal targets to be set unrealistically high without historical er
-- Unbounded accumulation of facts and events silently degrades reasoning quality, and late-run pruning destroys reusable intermediate state that could h
-- Skill proposals that survive multiple dream cycles without auto-instantiation as tracked tasks are effectively abandoned, revealing a systemic proposa
-- Free-tier model endpoints fail with predictable error signatures (429 rate limits, 502 upstream overload) within minutes of each other, meaning routin
 
 ---
 
