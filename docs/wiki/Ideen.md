@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 02:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 02:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals explicitly note skill proposals accumulate without implementation, revealing a missing dream-to-drive-to-execution pipeline.
+- Reflex-driven CI recovery succeeds but operates reactively; proactive model health scoring would prevent many fallbacks entirely.
+- Pruning runs show high initial volume (102 events) then near-zero, suggesting threshold-based scheduling would replace manual triggers effectively.
+- Multiple independent skill proposals converge on circuit-breaker, retry-with-backoff, and health-tracking patterns, indicating a systemic resilience g
+- Recurring 429 errors on z-ai/glm-5.2:free cause mandatory fallbacks to slower models, degrading latency from ~2s to ~16s per request.
 - Single-cycle swarm convergence with score 8 suggests the current role allocation (1 planner, 3 builders, 1 critic) is sufficient for well-scoped imple
 - Automatic pruning (16 facts, 102 events) triggered without manual intervention, confirming the memory system self-regulates under volume pressure.
 - Calibration error of 300% (predicted 2 vs actual 8 cycles) indicates the planner systematically underestimates execution complexity for multi-role swa
@@ -51,11 +56,6 @@
 - Under high stress (conserve mode), task execution is throttled, but critical remediation actions still require a dedicated budget to prevent total sys
 - Hand actions fail when using relative paths; scripts must resolve absolute paths using environment variables like `ZOETRON_DATA`.
 - The primary model `z-ai/glm-5.2:free` is highly rate-limited and should be temporarily deprioritized in favor of `nvidia/nemotron` to maintain through
-- Stale tasks accumulate without automatic archival, losing diagnostic value unless reaped with generated post-mortems each metabolism tick.
-- Conserve-mode throttling blocks critical remediation tasks, necessitating a reserved budget that bypasses normal resource constraints.
-- Skill proposals generated during operation frequently duplicate existing capabilities, wasting persistence and review cycles without semantic deduplic
-- HTTP 200 responses from model APIs often contain upstream error payloads that must be parsed and treated as failures for routing decisions.
-- Free-tier model endpoints consistently fail under load with 429 rate limits and 502 upstream errors, requiring proactive traffic management rather tha
 
 ---
 

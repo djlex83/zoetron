@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12080 Fakten** · Stand 2026-09-06 02:09 UTC · aktualisiert bei jedem Herzschlag
+**12073 Fakten** · Stand 2026-09-06 02:20 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7033
-- **swarm_artifact:** 2344
+- **swarm_artifact:** 2340
 - **last_swarm_critique:** 785
-- **anti_pattern:** 673
+- **anti_pattern:** 671
 - **last_swarm_goal:** 533
-- **strategy:** 338
+- **strategy:** 337
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906021746:5:ed9c5b`
+*06.09. 02:17 UTC · Quelle: dream*
+
+Drive goals explicitly note skill proposals accumulate without implementation, revealing a missing dream-to-drive-to-execution pipeline.
+
+### `dream:20260906021746:4:b7933b`
+*06.09. 02:17 UTC · Quelle: dream*
+
+Reflex-driven CI recovery succeeds but operates reactively; proactive model health scoring would prevent many fallbacks entirely.
+
+### `dream:20260906021746:3:7dfd11`
+*06.09. 02:17 UTC · Quelle: dream*
+
+Pruning runs show high initial volume (102 events) then near-zero, suggesting threshold-based scheduling would replace manual triggers effectively.
+
+### `dream:20260906021746:2:ba9b93`
+*06.09. 02:17 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on circuit-breaker, retry-with-backoff, and health-tracking patterns, indicating a systemic resilience gap.
+
+### `dream:20260906021746:1:c37b41`
+*06.09. 02:17 UTC · Quelle: dream*
+
+Recurring 429 errors on z-ai/glm-5.2:free cause mandatory fallbacks to slower models, degrading latency from ~2s to ~16s per request.
 
 ### `dream:20260906020715:5:ef42f0`
 *06.09. 02:07 UTC · Quelle: dream*
@@ -46256,16 +46281,6 @@ Model latency shows high variance (from ~4 s to >49 s), suggesting that stat
 
 Intermittent upstream overload errors cause complete loss of model output, indicating a need for automatic retry and fallback mechanisms.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Vor:2`
-*23.08. 02:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 8]): Sample variance with comprehensive property‑based testing - Switch from population variance (divide by n) to the unbiased sample variance (divide by n‑1) and justify the choice based on the dataset’s size and represen
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Neue Fähigkeiten aus Vor:0`
-*23.08. 02:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 9, 7]): Explicit Aufwand scaling and normalization framework - Define a clear effort range (e.g., 0–100 person‑hours) and apply min‑max normalization to convert raw Aufwand values into a 0‑1 score before any inverse calculati
-
 ### `last_swarm_critique`
 *23.08. 02:12 UTC · Quelle: critic*
 
@@ -46275,31 +46290,6 @@ score=5; issues=Scoring model lacks explicit definition of Aufwand range and nor
 *23.08. 02:08 UTC · Quelle: system*
 
 Neue Fähigkeiten aus Vorschlägen bauen
-
-### `dream:202608230208:5`
-*23.08. 02:08 UTC · Quelle: dream*
-
-Tracking skill usage and auto‑promoting skills that prevent ≥3 failures keeps the skill set relevant and reduces dormancy.
-
-### `dream:202608230208:4`
-*23.08. 02:08 UTC · Quelle: dream*
-
-Enforcing role quotas (≥1 planner, ≥1 critic, ≥2 builders) before task allocation led to better swarm convergence, showing the value of balanced agent composition.
-
-### `dream:202608230208:3`
-*23.08. 02:08 UTC · Quelle: dream*
-
-Model scores remain low (≈5/10) despite multiple runs, suggesting that increased simulation frequency and calibration would improve accuracy.
-
-### `dream:202608230208:2`
-*23.08. 02:08 UTC · Quelle: dream*
-
-Duplicated file loading and JSON parsing errors caused evolution run failures, indicating a need for deduplication and validation in data pipelines.
-
-### `dream:202608230208:1`
-*23.08. 02:08 UTC · Quelle: dream*
-
-Latency spikes up to 62.5 s reveal the need for timeout, fallback, and alerting in model calls.
 
 ### `last_swarm_critique`
 *23.08. 01:52 UTC · Quelle: critic*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 02:07:30",
+ "stand": "2026-09-06 02:18:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,13 +15,13 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -41,12 +41,6 @@
   {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 5,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
-   "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
-   "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
   },
@@ -97,6 +91,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -381,8 +381,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.735,
- "simulationen_angewandt": 32,
+ "haende_quote": 0.739,
+ "simulationen_angewandt": 31,
  "swarm_scores": {
   "n": 33,
   "best": 9.0,
@@ -390,8 +390,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 31,
-   "schnitt": 5.65
+   "n": 30,
+   "schnitt": 5.57
   },
   "bau": {
    "n": 2,
