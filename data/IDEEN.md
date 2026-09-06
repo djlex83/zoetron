@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 15:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 15:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,16 +24,16 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals for error reduction and swarm utilization conflict: swarm data is stale because model failures prevent fresh collection.
+- Pruning removes facts but not the recurring failure signatures, so the system relearns the same model limitations each cycle.
+- Skill proposals generated during reflex execution already encode the needed resilience patterns but remain unimplemented due to missing promotion pipe
+- Automatic fallback to inclusionai/ling-3.0-flash-fin succeeded within 3s, proving that a pre-validated fast fallback chain beats dynamic selection und
+- Model failures (502/429) cluster on specific providers, making provider-level health tracking more effective than per-model tracking.
 - Evolution cycles with marginal score improvements below 1 point waste computational resources, indicating a need for convergence thresholds before com
 - Self-predictions are systematically biased upward by approximately 3 points, causing goal targets to be set unrealistically high without historical er
 - Unbounded accumulation of facts and events silently degrades reasoning quality, and late-run pruning destroys reusable intermediate state that could h
@@ -51,11 +56,6 @@
 - Self-predictions consistently overshoot by ~3 points (calibration error), causing premature convergence declarations in evolution cycles.
 - The reflex executor lacks automatic failover: it retries the same failing model family instead of switching to the known-working fallback immediately.
 - Free-tier models fail systematically under load (429/502) while a single free model (ling-3.0-flash-fin) remains reliable, indicating provider-level q
-- The recurrence of identical model failures across two separate time windows proves that transient-error handling without stateful tracking (blacklists
-- Repeated 429 and 502 errors consume context and memory (15 events pruned), indicating that failed model attempts are a significant source of context p
-- Reflex-driven convergence can succeed without producing a measurable score, revealing that convergence signals alone are insufficient validation and t
-- inclusionai/ling-3.0-flash-fin is the only reliably responsive model in the current pool (4.1s latency, successful completion), making it the default 
-- Model failures follow predictable patterns—gemma-4 series consistently hits 429 rate limits while nemotron hits 502 upstream overloads—meaning retry-o
 
 ---
 

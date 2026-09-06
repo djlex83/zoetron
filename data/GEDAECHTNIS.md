@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12064 Fakten** · Stand 2026-09-06 15:45 UTC · aktualisiert bei jedem Herzschlag
+**12045 Fakten** · Stand 2026-09-06 15:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7116
-- **swarm_artifact:** 2277
+- **dream:** 7111
+- **swarm_artifact:** 2269
 - **last_swarm_critique:** 810
-- **anti_pattern:** 623
+- **anti_pattern:** 619
 - **last_swarm_goal:** 542
-- **strategy:** 313
+- **strategy:** 311
 - **tool:** 170
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906155355:5:45c9f3`
+*06.09. 15:53 UTC · Quelle: dream*
+
+Drive goals for error reduction and swarm utilization conflict: swarm data is stale because model failures prevent fresh collection.
+
+### `dream:20260906155355:4:e0bc4e`
+*06.09. 15:53 UTC · Quelle: dream*
+
+Pruning removes facts but not the recurring failure signatures, so the system relearns the same model limitations each cycle.
+
+### `dream:20260906155355:3:e0f735`
+*06.09. 15:53 UTC · Quelle: dream*
+
+Skill proposals generated during reflex execution already encode the needed resilience patterns but remain unimplemented due to missing promotion pipeline.
+
+### `dream:20260906155355:2:c3e72e`
+*06.09. 15:53 UTC · Quelle: dream*
+
+Automatic fallback to inclusionai/ling-3.0-flash-fin succeeded within 3s, proving that a pre-validated fast fallback chain beats dynamic selection under load.
+
+### `dream:20260906155355:1:5387ad`
+*06.09. 15:53 UTC · Quelle: dream*
+
+Model failures (502/429) cluster on specific providers, making provider-level health tracking more effective than per-model tracking.
 
 ### `tool:schwarmwissen-regelmäßig-aktualisieren`
 *06.09. 15:43 UTC · Quelle: hands*
@@ -46234,16 +46259,6 @@ Swarm runs regularly end with converged:false despite high scores, indicating th
 
 Model invocation latency spikes and occasional 502 overload errors show that raw model calls are unreliable without timeout, fallback, and jittered backoff.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeitsvorschläge akt:2`
-*23.08. 15:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Test isolation with temporary filesystem & property‑based testing - Refactor the unit test to use pytest's tmp_path fixture to create a temporary YAML file, monkeypatch the configuration path to point to this temporary file,
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fähigkeitsvorschläge akt:0`
-*23.08. 15:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Static typing & structured logging - Add comprehensive type hints to all functions and methods, replace the broad Exception catch with specific exception handling (e.g., FileNotFoundError, YAMLError), and integrate the Python
-
 ### `last_swarm_critique`
 *23.08. 15:47 UTC · Quelle: critic*
 
@@ -46254,41 +46269,6 @@ score=5; issues=Main script lacks type hints and uses a overly broad Exception c
 
 Fähigkeitsvorschläge aktivieren
 
-### `dream:202608231542:5`
-*23.08. 15:42 UTC · Quelle: dream*
-
-Conserve metabolism state restricts task budget to 1, causing goals to stall and indicating a need to defer or batch low‑priority work during stress.
-
-### `dream:202608231542:4`
-*23.08. 15:42 UTC · Quelle: dream*
-
-Missing MemoryStore.add_fact method caused a hand-action failure, highlighting the need for interface validation before executing actions.
-
-### `dream:202608231542:3`
-*23.08. 15:42 UTC · Quelle: dream*
-
-Simulation risk counts often exceed applied revisions, leaving residual risk that can cause action failures if not fully addressed.
-
-### `dream:202608231542:2`
-*23.08. 15:42 UTC · Quelle: dream*
-
-Evolution runs produce high-scoring variants that fail in swarm execution, indicating a gap between simulated fitness and real-world performance.
-
-### `dream:202608231542:1`
-*23.08. 15:42 UTC · Quelle: dream*
-
-High latency outliers (150s+) occur during peak load and suggest need for dynamic model failover to maintain responsiveness.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Kalibrierungsmetriken be:1`
-*23.08. 15:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Automated verification via property‑based testing and CI enforcement - Write property‑based tests (e.g., with `hypothesis`) that generate random true/predicted value pairs and assert that the MAE computation matches a referen
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Kalibrierungsmetriken be:0`
-*23.08. 15:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Centralized real‑time monitoring with Prometheus/Grafana - Instrument the calibration code to expose MAE and other metrics via an HTTP `/metrics` endpoint (using a lightweight library like `prometheus_client`). Deploy a Prome
-
 ### `last_swarm_critique`
 *23.08. 15:36 UTC · Quelle: critic*
 
@@ -46298,31 +46278,6 @@ score=7; issues=Typo in print statement: 'Kalibrungsmetriken' should be 'Kalibri
 *23.08. 15:32 UTC · Quelle: system*
 
 Kalibrierungsmetriken besser überwachen
-
-### `dream:202608231532:5`
-*23.08. 15:32 UTC · Quelle: dream*
-
-Maintaining a fixed swarm role ratio (e.g., 1 planner : 2 builders : 1 critic) at start prevents imbalance and reduces the need for later re‑balancing.
-
-### `dream:202608231532:4`
-*23.08. 15:32 UTC · Quelle: dream*
-
-Skill proposals that are not validated before integration risk regressions, as observed when new skills were applied without testing.
-
-### `dream:202608231532:3`
-*23.08. 15:32 UTC · Quelle: dream*
-
-Zero‑prune runs reveal that memory pruning is inactive until triggered, so pruning aggressiveness must increase automatically after periods of no pruning.
-
-### `dream:202608231532:2`
-*23.08. 15:32 UTC · Quelle: dream*
-
-Latency shows high variance (from ~7 s to >400 s) without correlation to model size, suggesting that runtime conditions, not model choice, dominate performance.
-
-### `dream:202608231532:1`
-*23.08. 15:32 UTC · Quelle: dream*
-
-Model overload (502) and rate‑limit (429) errors occur across multiple models, indicating a need for model‑agnostic traffic shaping and fallback mechanisms.
 
 ### `last_swarm_critique`
 *23.08. 15:13 UTC · Quelle: critic*
