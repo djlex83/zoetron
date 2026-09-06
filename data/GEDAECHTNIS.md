@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12058 Fakten** · Stand 2026-09-06 04:29 UTC · aktualisiert bei jedem Herzschlag
+**12063 Fakten** · Stand 2026-09-06 04:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7063
+- **dream:** 7068
 - **swarm_artifact:** 2313
 - **last_swarm_critique:** 785
 - **anti_pattern:** 659
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906043708:5:3dfa40`
+*06.09. 04:37 UTC · Quelle: dream*
+
+The persistent gap between skill proposal generation and actual implementation means ideas decay without enforced execution cycles, turning insight into noise.
+
+### `dream:20260906043708:4:ad41f3`
+*06.09. 04:37 UTC · Quelle: dream*
+
+Fallback models that return successful HTTP 200 responses but with 12-15 second latency are functionally degraded — success codes do not equal acceptable performance.
+
+### `dream:20260906043708:3:f0d554`
+*06.09. 04:37 UTC · Quelle: dream*
+
+Self-diagnosis modules that only audit internal organs report zero errors while external model dependencies degrade, creating a critical blind spot in system health visibility.
+
+### `dream:20260906043708:2:2d9224`
+*06.09. 04:37 UTC · Quelle: dream*
+
+Aggressive pruning (37 events, 12 facts in one cycle) can erase the very failure evidence needed to diagnose and prove recurring problems, masking root causes.
+
+### `dream:20260906043708:1:8bc4e1`
+*06.09. 04:37 UTC · Quelle: dream*
+
+Recurring 429 errors from the same model (z-ai/glm-5.2:free) across multiple cycles indicate a systemic capacity limit, not a transient glitch — blind retries without routing changes are futile.
 
 ### `dream:20260906042640:5:ed25fe`
 *06.09. 04:26 UTC · Quelle: dream*
