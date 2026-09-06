@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,19 +14,19 @@
 - Create swarm-task watchdog flagging tasks stale >7 days, auto-generating revive sub-goals with critic-to-build *(hatte die Idee 3×)*
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
 - Guarantee a ReservedRemediationBudget of one task per metabolism tick that bypasses conserve-mode throttling e *(hatte die Idee 3×)*
-- Develop a dynamic model scoring system that tracks recent success rates and automatically promotes reliable mo *(hatte die Idee 2×)*
-- Create a proactive request queue that spaces out API calls based on historical 429 cooldown periods per provid *(hatte die Idee 2×)*
-- Add a fallback mechanism that automatically retries 502 upstream errors on alternative models after a brief ex *(hatte die Idee 2×)*
-- Establish a periodic memory consolidation routine that prunes outdated events and links distant dream memories *(hatte die Idee 2×)*
 - Build a proposal-to-action executor that parses skill_proposals, generates implementation diffs, runs tests in *(hatte die Idee 2×)*
 - Canonicalize all file paths in hand_action by resolving sys.argv[1] against ZOETRON_DATA and rejecting relativ *(hatte die Idee 2×)*
+- Add a request scheduler that spaces API calls per provider based on observed rate-limit windows and cooldown p *(hatte die Idee 2×)*
+- Establish a daily consolidation cron that prunes high-frequency events, preserves durable facts, and links rel *(hatte die Idee 2×)*
+- Implement a model router with real-time health scoring (success rate, latency p95, error categorization) and a *(hatte die Idee 2×)*
+- Add request hedging: dispatch identical prompts to top-2 models simultaneously and return first successful res *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -36,11 +36,16 @@
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Offene Schwarm-Aufgaben endlich umsetzen *(wieder aufgegriffen: 2×)*
 - Alte Schwarm-Pläne endlich umsetzen *(wieder aufgegriffen: 2×)*
+- Fähigkeits-Vorschläge in echte Skills umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate without an automated incubation pipeline that registers, prioritizes, sandbox-tests, and promotes them.
+- Prompt-level caching (SQLite + hash + TTL) eliminates redundant calls that accelerate rate-limit exhaustion.
+- Circuit-breaker patterns with half-open probes prevent cascade failures when individual providers degrade.
+- Health-aware routing must fuse real-time 429/502 counters, Retry-After headers, latency percentiles, and token cost into a single dynamic score.
+- Rate-limiting (429) and upstream overload (502) errors dominate free-tier model failures, making static model selection unreliable.
 - Circuit-breakers alone are insufficient; effective resilience requires combining circuit-breaker state, exponential backoff with jitter, and predictiv
 - Swarm knowledge degrades predictably over time and requires proactive scheduled refresh rather than reactive updates triggered only by failure signals
 - A persistent execution gap exists between generating skill proposals and registering tested code stubs — knowledge without implementation decays faste
@@ -51,11 +56,6 @@
 - Conserve-mode throttling prevents execution of remediation tasks, creating a deadlock where the system cannot self-heal under load.
 - Multiple overlapping proposals for circuit breakers, rate limiters, and health registries reveal a missing deduplication mechanism that wastes proposa
 - Primary model (z-ai/glm-5.2:free) consistently returns 429 errors, necessitating automatic fallback and rate limiting to maintain system availability.
-- Absolute path enforcement via ZOETRON_DATA prevents hand-action failures caused by relative-path drift across metabolism ticks.
-- Stale tasks accumulate silently without TTL-enforced archival, polluting drive-goal selection and masking true system capacity.
-- Swarm collaboration stalls when critic feedback loops exceed metabolism tick budgets, but reserved remediation slots bypassing conserve-mode restore c
-- Model 429 errors cascade into fallback latency spikes because routing lacks proactive health-aware load shedding based on sliding-window error rates.
-- Duplicate skill proposals recur because the system lacks semantic deduplication before persistence, wasting metabolism cycles on redundant implementat
 
 ---
 

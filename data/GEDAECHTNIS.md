@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12072 Fakten** · Stand 2026-09-06 03:14 UTC · aktualisiert bei jedem Herzschlag
+**12065 Fakten** · Stand 2026-09-06 03:24 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7048
-- **swarm_artifact:** 2330
+- **swarm_artifact:** 2326
 - **last_swarm_critique:** 785
-- **anti_pattern:** 667
+- **anti_pattern:** 665
 - **last_swarm_goal:** 533
-- **strategy:** 335
+- **strategy:** 334
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906032222:5:0b71da`
+*06.09. 03:22 UTC · Quelle: dream*
+
+Skill proposals accumulate without an automated incubation pipeline that registers, prioritizes, sandbox-tests, and promotes them.
+
+### `dream:20260906032222:4:7bfd24`
+*06.09. 03:22 UTC · Quelle: dream*
+
+Prompt-level caching (SQLite + hash + TTL) eliminates redundant calls that accelerate rate-limit exhaustion.
+
+### `dream:20260906032222:3:f95818`
+*06.09. 03:22 UTC · Quelle: dream*
+
+Circuit-breaker patterns with half-open probes prevent cascade failures when individual providers degrade.
+
+### `dream:20260906032222:2:c22eb0`
+*06.09. 03:22 UTC · Quelle: dream*
+
+Health-aware routing must fuse real-time 429/502 counters, Retry-After headers, latency percentiles, and token cost into a single dynamic score.
+
+### `dream:20260906032222:1:ae81cb`
+*06.09. 03:22 UTC · Quelle: dream*
+
+Rate-limiting (429) and upstream overload (502) errors dominate free-tier model failures, making static model selection unreliable.
 
 ### `dream:20260906031147:5:e17bee`
 *06.09. 03:11 UTC · Quelle: dream*
@@ -46271,16 +46296,6 @@ Skills that are only planned but not executed yield low performance; deliberate 
 
 High latency outliers (>150 s) correlate with failed simulations and should trigger automatic fallback or retry mechanisms.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Schwärme zuverlässig zum:2`
-*23.08. 03:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): External watchdog service - Decouple monitoring from the swarm logic: deploy a separate Watchdog process that subscribes to a lightweight message bus (e.g., Redis pub/sub) for queue change events and heartbeat pings. The watc
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Schwärme zuverlässig zum:1`
-*23.08. 03:20 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Sliding‑window timestamp buffer - Maintain a lock‑free deque of timestamps for every queue activity (enqueue/dequeue). The effective empty duration is now_now - deque.front() if the deque is empty, otherwise zero. Heartbeat l
-
 ### `last_swarm_critique`
 *23.08. 03:20 UTC · Quelle: critic*
 
@@ -46290,31 +46305,6 @@ score=4; issues=Swarm completion criteria: queue_empty_for_n_seconds does not up
 *23.08. 03:18 UTC · Quelle: system*
 
 Schwärme zuverlässig zum Abschluss bringen
-
-### `dream:202608230317:5`
-*23.08. 03:17 UTC · Quelle: dream*
-
-Malformed JSON in evolution pipelines causes wasted retries; a deduplication/validation stage that aborts after two attempts improves robustness.
-
-### `dream:202608230317:4`
-*23.08. 03:17 UTC · Quelle: dream*
-
-Missing planner, critic, or builder roles leads to allocation failures; a balancing controller ensures a minimal viable team before each task.
-
-### `dream:202608230317:3`
-*23.08. 03:17 UTC · Quelle: dream*
-
-Skills dormant for >3 swarm cycles correlate with missed improvements; automated promotion/demotion keeps the skill pool effective.
-
-### `dream:202608230317:2`
-*23.08. 03:17 UTC · Quelle: dream*
-
-Repeated simulation revisions (3→5) indicate insufficient early validation; using prediction error thresholds can cut rework.
-
-### `dream:202608230317:1`
-*23.08. 03:17 UTC · Quelle: dream*
-
-High latency spikes (>150 s) reveal the need for adaptive timeouts and fallback mechanisms to avoid stalled tasks.
 
 ### `last_swarm_critique`
 *23.08. 03:01 UTC · Quelle: critic*

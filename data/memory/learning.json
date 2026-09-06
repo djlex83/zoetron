@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 03:12:18",
+ "stand": "2026-09-06 03:22:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,12 +69,6 @@
    "quote": 0.0
   },
   {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -85,6 +79,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltete-wissenstände-auffrischen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -117,12 +117,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-wissenstände-auffrischen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -130,6 +124,12 @@
   },
   {
    "tool": "wissenbasis-aufräumen-und-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
