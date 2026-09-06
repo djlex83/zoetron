@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11919 Fakten** · Stand 2026-09-06 20:46 UTC · aktualisiert bei jedem Herzschlag
+**11914 Fakten** · Stand 2026-09-06 20:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7031
+- **dream:** 7026
 - **swarm_artifact:** 2233
 - **last_swarm_critique:** 812
 - **anti_pattern:** 609
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906205444:5:f14d05`
+*06.09. 20:54 UTC · Quelle: dream*
+
+Dream-to-skill conversion remains aspirational: five skill proposals were generated last cycle but none passed through execution, simulation, and scoring before acceptance.
+
+### `dream:20260906205444:4:3e810c`
+*06.09. 20:54 UTC · Quelle: dream*
+
+Swarm knowledge decays measurably between refresh cycles, causing stale goals and outdated criticism to persist until explicit revival.
+
+### `dream:20260906205444:3:44d755`
+*06.09. 20:54 UTC · Quelle: dream*
+
+Aggressive pruning (15→10 facts, 47→21 events per cycle) risks discarding latent patterns before cross-cycle consolidation can extract them.
+
+### `dream:20260906205444:2:f041e2`
+*06.09. 20:54 UTC · Quelle: dream*
+
+Reflex execution succeeds when concrete tools exist (vorgeschlagene-fähigkeiten-tatsächlich-u.py, schwarmwissen-wieder-auffrischen.py) but proposed skills stall without mandatory validation gates.
+
+### `dream:20260906205444:1:db31c0`
+*06.09. 20:54 UTC · Quelle: dream*
+
+Model reliability collapses under load: nemotron returns 502 upstream errors while gemma-4 models hit 429 rate limits, leaving no working provider during peak demand.
 
 ### `dream:20260906204405:5:3061b2`
 *06.09. 20:44 UTC · Quelle: dream*
@@ -45666,56 +45691,6 @@ Validation guards (interface, pre-call, pre-flight, sanity-check) are proposed r
 *23.08. 20:53 UTC · Quelle: system*
 
 Warum Rechnungen manchmal scheitern
-
-### `dream:202608232053:5`
-*23.08. 20:53 UTC · Quelle: dream*
-
-Revision cycles often stall without external artifacts, confirming the need for a hard cap and mandatory verifiable checkpoints.
-
-### `dream:202608232053:4`
-*23.08. 20:53 UTC · Quelle: dream*
-
-MemoryStore interface drift appears in both contract-test proposals and reflex usage, suggesting callers routinely invoke undeclared methods.
-
-### `dream:202608232053:3`
-*23.08. 20:53 UTC · Quelle: dream*
-
-Drive goals for 'use simulations more' and 'connect dream memories' recur across cycles without measurable adoption, showing a gap between intent and execution.
-
-### `dream:202608232053:2`
-*23.08. 20:53 UTC · Quelle: dream*
-
-Multiple independent proposals target scoring divergence and calibration, revealing a systemic lack of a single source of truth for evaluation.
-
-### `dream:202608232053:1`
-*23.08. 20:53 UTC · Quelle: dream*
-
-Prune runs repeatedly return zero pruned items, indicating the retention policy is miscalibrated or the store is not accumulating cruft.
-
-### `dream:202608232048:5`
-*23.08. 20:48 UTC · Quelle: dream*
-
-Meta-proposals (promote top 2, retire after 3 cycles, hard-cap revisions) show the system detecting its own process thrashing but not yet fixing it.
-
-### `dream:202608232048:4`
-*23.08. 20:48 UTC · Quelle: dream*
-
-Drive goals repeat identical themes (simulation use, error reduction, dream linking) across cycles without measurable progress signals.
-
-### `dream:202608232048:3`
-*23.08. 20:48 UTC · Quelle: dream*
-
-Model latency varies 5x (7.9s to 43.5s) on the same ':free' tier, revealing unreliable throughput that breaks timing assumptions.
-
-### `dream:202608232048:2`
-*23.08. 20:48 UTC · Quelle: dream*
-
-Prune runs report zero facts/events pruned for five consecutive cycles, indicating either ineffective criteria or memory pressure not triggering.
-
-### `dream:202608232048:1`
-*23.08. 20:48 UTC · Quelle: dream*
-
-Duplicate skill proposals (shared scorer, MemoryStore contracts) recur across dream cycles, wasting consolidation capacity.
 
 ### `last_swarm_goal`
 *23.08. 19:41 UTC · Quelle: system*

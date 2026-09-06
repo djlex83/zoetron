@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,13 +24,13 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream-to-skill conversion remains aspirational: five skill proposals were generated last cycle but none passed through execution, simulation, and scor
+- Swarm knowledge decays measurably between refresh cycles, causing stale goals and outdated criticism to persist until explicit revival.
+- Aggressive pruning (15→10 facts, 47→21 events per cycle) risks discarding latent patterns before cross-cycle consolidation can extract them.
+- Reflex execution succeeds when concrete tools exist (vorgeschlagene-fähigkeiten-tatsächlich-u.py, schwarmwissen-wieder-auffrischen.py) but proposed sk
+- Model reliability collapses under load: nemotron returns 502 upstream errors while gemma-4 models hit 429 rate limits, leaving no working provider dur
 - DriveScheduler's topological sort (model reliability → swarm update → skill conversion) is never instantiated, so resource contention and stale-data r
 - Dream cycles produce insights and skill proposals that are never validated through execution + simulation + scoring, creating a proposal–validation ga
 - Filesystem operations fail intermittently because relative paths drift across contexts; PathResolver canonicalization must precede every I/O action.
@@ -51,11 +56,6 @@
 - Aggressive pruning (22 events, 11 facts) can silently invalidate the assumptions underlying active skill proposals, creating proposals built on alread
 - A simulation verdict of 'go' does not guarantee real-world performance — the 6/10 score despite a green verdict reveals a calibration gap between pred
 - Model endpoint failures (502/429) are systemic and cascading; without proactive health-checks and automatic fallback chains, every task depending on m
-- Calibration systematically underestimates quality by 3 points (predicted 3 vs actual 6); scoring rubric needs recalibration against critic dimensions.
-- Simulation gate reduces risk count from 5 to 2 but requires 2–3 revision loops; mandatory re-verification after each revision prevents risk regression
-- Evolution cycles waste generations on boilerplate duplication (critic: "All three artifacts duplicate boilerplate"); template-aware diffing must gate 
-- Primary model (nemotron-3-ultra) shows 4x latency variance (26–107 s) indicating unreliable QoS; fast fallback (ling-3.0-flash-fin at 8.7 s) should be
-- Model fallback chains collapse when all free-tier endpoints hit simultaneous rate limits (429) or upstream overload (502), requiring proactive health-
 
 ---
 
