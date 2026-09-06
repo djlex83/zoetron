@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 12:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 27×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The swarm converged in a single cycle with score 8 despite cascading model failures, suggesting the planner/builder/critic role distribution absorbed 
+- All 5 skill proposals generated are direct reactive responses to observed failure modes, revealing the proposal engine is tightly coupled to failure s
+- Proactive maintenance operations (pruning 8 facts and 13 events, self-diagnosis returning zero organ errors) ran cleanly even under model failure pres
+- The system demonstrates implicit fallback resilience by eventually finding inclusionai/ling-3.0-flash-fin as a working model, but lacks explicit routi
+- The dominant failure pattern is API rate limiting (429) and upstream overload (502), affecting 4 of 5 model calls — this is an infrastructure bottlene
 - Hand action (exit 0, 1.04s) succeeded immediately after repeated model failures, proving that non-model fallbacks are faster and more reliable under d
 - The simulation required 3 revisions before succeeding, demonstrating that initial plans systematically underestimate complexity and early revision det
 - Metabolic conservation mode (stress=1.0, max 1 iteration) severely constrained execution capacity, showing that internal state throttling can prevent 
@@ -51,11 +56,6 @@
 - Reactive reflexes successfully triggered skill-building, but proactive mechanisms like circuit breakers and health-score-based routing would prevent c
 - The system's reliance on a single working model (inclusionai/ling-3.0-flash-fin) creates dangerous concentration risk; any future disruption without a
 - Repeated 429 and 502 errors across multiple providers indicate infrastructure-level failures, not model-specific defects, so resilience must be built 
-- Proactive skill proposals (quota tracker, SLA wrapper, degradation organ) directly mirror observed failure modes but remain unimplemented.
-- Latency variance (3.7s vs 43.4s) correlates with model size tier, not reliability – smaller models can be both faster and more available.
-- Swarm convergence fails (score 0) despite evolution, suggesting the planner-critic loop lacks a measurable quality gate for skill synthesis.
-- Fallback chains succeed only when a model with distinct quota (inclusionai/ling-3.0-flash-fin) remains available, revealing single-point-of-failure in
-- Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota pools or correlated traffic spikes.
 
 ---
 

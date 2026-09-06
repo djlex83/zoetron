@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12071 Fakten** · Stand 2026-09-06 11:57 UTC · aktualisiert bei jedem Herzschlag
+**12066 Fakten** · Stand 2026-09-06 12:08 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7102
-- **swarm_artifact:** 2296
+- **swarm_artifact:** 2294
 - **last_swarm_critique:** 792
-- **anti_pattern:** 639
+- **anti_pattern:** 637
 - **last_swarm_goal:** 540
-- **strategy:** 321
+- **strategy:** 320
 - **tool:** 169
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906120610:5:3bb58d`
+*06.09. 12:06 UTC · Quelle: dream*
+
+The swarm converged in a single cycle with score 8 despite cascading model failures, suggesting the planner/builder/critic role distribution absorbed infrastructure instability effectively.
+
+### `dream:20260906120610:4:bf6d93`
+*06.09. 12:06 UTC · Quelle: dream*
+
+All 5 skill proposals generated are direct reactive responses to observed failure modes, revealing the proposal engine is tightly coupled to failure signals rather than proactive optimization.
+
+### `dream:20260906120610:3:529199`
+*06.09. 12:06 UTC · Quelle: dream*
+
+Proactive maintenance operations (pruning 8 facts and 13 events, self-diagnosis returning zero organ errors) ran cleanly even under model failure pressure, indicating the health-check layer is reliable.
+
+### `dream:20260906120610:2:92dd7a`
+*06.09. 12:06 UTC · Quelle: dream*
+
+The system demonstrates implicit fallback resilience by eventually finding inclusionai/ling-3.0-flash-fin as a working model, but lacks explicit routing logic to make this deterministic and repeatable.
+
+### `dream:20260906120610:1:efd401`
+*06.09. 12:06 UTC · Quelle: dream*
+
+The dominant failure pattern is API rate limiting (429) and upstream overload (502), affecting 4 of 5 model calls — this is an infrastructure bottleneck, not a code defect.
 
 ### `dream:20260906115531:5:0cf408`
 *06.09. 11:55 UTC · Quelle: dream*
@@ -46310,41 +46335,6 @@ Repeated skill proposals highlight a gap between dream-generated ideas and imple
 *23.08. 12:09 UTC · Quelle: dream*
 
 Model latency spikes (26-36s) and occasional failures require proactive circuit breakers and fallback models to maintain system responsiveness and reliability.
-
-### `dream:202608231203:5`
-*23.08. 12:03 UTC · Quelle: dream*
-
-The swarm's role distribution can become unbalanced, with builders outnumbering critics, leading to inefficient convergence and requiring dynamic quotas.
-
-### `dream:202608231203:4`
-*23.08. 12:03 UTC · Quelle: dream*
-
-The MemoryStore interface may be incomplete or inconsistent, as suggested by the need for an interface guard to prevent runtime errors in hand actions.
-
-### `dream:202608231203:3`
-*23.08. 12:03 UTC · Quelle: dream*
-
-The system's predictions are consistently biased by a factor of approximately 0.6, necessitating a calibration step to correct scores before decision making.
-
-### `dream:202608231203:2`
-*23.08. 12:03 UTC · Quelle: dream*
-
-The critic module's output frequently fails JSON parsing, indicating a need for output validation and fallback strategies to ensure pipeline continuity.
-
-### `dream:202608231203:1`
-*23.08. 12:03 UTC · Quelle: dream*
-
-The Nvidia model endpoints are prone to temporary overloads, as evidenced by a 502 error, requiring a robust request handling mechanism with retries and fallbacks.
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellkalibrierung regel:2`
-*23.08. 11:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Decouple pandas dependency and provide a lightweight validation path - Extract the pandas‑only logic into an optional helper module. In `calibrate_and_score`, first attempt to import pandas; if unavailable, raise a clear `Mis
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Modellkalibrierung regel:0`
-*23.08. 11:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Enforce timezone‑aware timestamps and centralized storage - Replace naive `datetime.now()` with `datetime.now(timezone.utc)` (or a configured zone) and persist the last‑run timestamp in a durable, shared store (e.g., a Redis
 
 ### `last_swarm_critique`
 *23.08. 11:56 UTC · Quelle: critic*
