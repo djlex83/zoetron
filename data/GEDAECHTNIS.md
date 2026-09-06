@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12043 Fakten** · Stand 2026-09-06 14:45 UTC · aktualisiert bei jedem Herzschlag
+**12047 Fakten** · Stand 2026-09-06 14:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7102
-- **swarm_artifact:** 2273
+- **dream:** 7107
+- **swarm_artifact:** 2272
 - **last_swarm_critique:** 809
 - **anti_pattern:** 623
 - **last_swarm_goal:** 541
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906145412:5:c94d26`
+*06.09. 14:54 UTC · Quelle: dream*
+
+Latency variance across models is ignored in routing, wasting fast models on simple tasks and slow models on time-critical ones.
+
+### `dream:20260906145412:4:589146`
+*06.09. 14:54 UTC · Quelle: dream*
+
+Fallback chains are manual rather than automatic, so non-200 responses or timeouts stall execution until human intervention.
+
+### `dream:20260906145412:3:ce4827`
+*06.09. 14:54 UTC · Quelle: dream*
+
+Knowledge staleness persists because no scheduled audit re-verifies timestamped entries against live sources.
+
+### `dream:20260906145412:2:2e484b`
+*06.09. 14:54 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely become production skills due to missing automated validation pipeline with sandbox testing.
+
+### `dream:20260906145412:1:7ed6a5`
+*06.09. 14:54 UTC · Quelle: dream*
+
+Model failures (502, 429) cascade because no health registry tracks cooldowns, causing repeated calls to degraded endpoints.
 
 ### `dream:20260906144250:5:98a32d`
 *06.09. 14:42 UTC · Quelle: dream*

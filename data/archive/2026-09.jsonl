@@ -18619,3 +18619,4 @@
 {"ts": 1788100457.6980672, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.06, "gelesen": 0}}
 {"ts": 1788100459.7777681, "kind": "issue_synced", "payload": {"issue": 249, "state": "open"}}
 {"ts": 1788100652.3146381, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787496540.0, "key": "swarm_artifact:Draft deliverable for: Simulationen häufiger einsetzen", "value": "# Artefakt: `deliverable_simulations_haeufiger_einsetzen.md`  ```markdown # Deliverable: Simulationen häufiger einsetzen  **Task-Typ:** build · **Versuch:** 1/3 · **Status:** Entwurf zur Umsetzung  --", "source": "builder"}

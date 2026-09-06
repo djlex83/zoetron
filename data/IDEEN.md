@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,7 +31,7 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance across models is ignored in routing, wasting fast models on simple tasks and slow models on time-critical ones.
+- Fallback chains are manual rather than automatic, so non-200 responses or timeouts stall execution until human intervention.
+- Knowledge staleness persists because no scheduled audit re-verifies timestamped entries against live sources.
+- Skill proposals accumulate but rarely become production skills due to missing automated validation pipeline with sandbox testing.
+- Model failures (502, 429) cascade because no health registry tracks cooldowns, causing repeated calls to degraded endpoints.
 - Reflex scripts function as the system's reactive immune layer — their exit codes and success rates must be continuously monitored, and scripts exceedi
 - Memory hygiene requires enforced policy rather than ad-hoc cleanup; a fixed fact:event prune ratio with deviation logging prevents both data bloat and
 - The proposal-to-execution gap is the system's most persistent failure mode — skills that are proposed but never validated through automated failure-in
@@ -51,11 +56,6 @@
 - Pruning runs remove large volumes of facts and events (up to 29 facts and 19 events per run), but the recurring model failures suggest that failure-pa
 - The dream module repeatedly generates skill proposals clustered around quota management and resilience, revealing a persistent gap between recognizing
 - Free-tier model endpoints fail systematically (429s, 502s) across multiple providers simultaneously, indicating that availability is a structural prop
-- Aggressive pruning (29 facts, 19 events) after the run suggests the system accumulates noise faster than it consolidates signal, risking loss of usefu
-- Two evolution cycles were insufficient to converge on the goal (score remained 7), indicating that when initial variant quality is low (scores 7–9), t
-- Multiple free-tier models competing simultaneously without quota awareness creates a self-inflicted rate-limit cascade, where each request worsens the
-- The calibration gap (predicted 4 vs actual 7) reveals a persistent self-underestimation pattern that causes the system to set insufficiently ambitious
-- Free-tier models exhibit cascading failure modes (502 upstream overload, 429 rate limits) that are not isolated incidents but systemic — the system tr
 
 ---
 
