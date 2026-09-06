@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12039 Fakten** · Stand 2026-09-06 17:25 UTC · aktualisiert bei jedem Herzschlag
+**12031 Fakten** · Stand 2026-09-06 17:37 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7106
-- **swarm_artifact:** 2265
+- **swarm_artifact:** 2258
 - **last_swarm_critique:** 811
 - **anti_pattern:** 619
 - **last_swarm_goal:** 543
@@ -12,9 +12,34 @@
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
-- **creator_teaching:** 2
+- **creator_teaching:** 1
 
 ---
+
+### `dream:20260906173412:5:67ea87`
+*06.09. 17:34 UTC · Quelle: dream*
+
+Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1); any skill must operate within single-iteration, low-task budgets.
+
+### `dream:20260906173412:4:e851f3`
+*06.09. 17:34 UTC · Quelle: dream*
+
+Calibration accuracy (predicted=actual=7) indicates the estimator is trustworthy and can gate resource allocation.
+
+### `dream:20260906173412:3:423e41`
+*06.09. 17:34 UTC · Quelle: dream*
+
+Simulation-driven revision loops (verdict=revise → revisions applied → grün=true) reliably convert risky plans into working artifacts.
+
+### `dream:20260906173412:2:cd4499`
+*06.09. 17:34 UTC · Quelle: dream*
+
+Primary model (Nemotron) suffers 502 upstream overloads; fallback models (Gemma) hit 429 rate limits; a model router with health-aware selection is essential.
+
+### `dream:20260906173412:1:958b34`
+*06.09. 17:34 UTC · Quelle: dream*
+
+Relative path handling fails under real data paths; all file operations must resolve via ZOETRON_DATA and sys.argv[1] before use.
 
 ### `dream:20260906172118:5:928064`
 *06.09. 17:21 UTC · Quelle: dream*
@@ -46188,31 +46213,6 @@ score=6; issues=Snippet 1: Using >= threshold may select more than top 5% due to
 *23.08. 17:31 UTC · Quelle: system*
 
 Modellfehler senken
-
-### `dream:202608231731:5`
-*23.08. 17:31 UTC · Quelle: dream*
-
-Evolution winners should only be accepted after a minimum number of swarm cycles or a convergence score gate; otherwise they must be recycled to prevent premature adoption.
-
-### `dream:202608231731:4`
-*23.08. 17:31 UTC · Quelle: dream*
-
-Core component interfaces (e.g., MemoryStore) need automated contract tests in CI to catch missing or breaking methods early.
-
-### `dream:202608231731:3`
-*23.08. 17:31 UTC · Quelle: dream*
-
-Score predictor calibration should require a minimum number of recent (predicted, actual) pairs before gating to avoid unstable updates from scarce data.
-
-### `dream:202608231731:2`
-*23.08. 17:31 UTC · Quelle: dream*
-
-Simulation revisions must be applied atomically and verified by re‑simulation to ensure zero residual risk before committing changes.
-
-### `dream:202608231731:1`
-*23.08. 17:31 UTC · Quelle: dream*
-
-Model latency spikes and occasional 502 errors necessitate exponential‑backoff retry with automatic failover and logging to keep the system available.
 
 ### `last_swarm_critique`
 *23.08. 17:25 UTC · Quelle: critic*

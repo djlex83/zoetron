@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 17:23:33",
+ "stand": "2026-09-06 17:35:09",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -18,12 +18,6 @@
    "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 6,
-   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -51,6 +45,18 @@
    "quote": 0.0
   },
   {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -72,12 +78,6 @@
    "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
