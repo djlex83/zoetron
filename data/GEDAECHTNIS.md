@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12070 Fakten** · Stand 2026-09-06 03:35 UTC · aktualisiert bei jedem Herzschlag
+**12063 Fakten** · Stand 2026-09-06 03:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7053
-- **swarm_artifact:** 2326
+- **swarm_artifact:** 2322
 - **last_swarm_critique:** 785
-- **anti_pattern:** 665
+- **anti_pattern:** 663
 - **last_swarm_goal:** 533
-- **strategy:** 334
+- **strategy:** 333
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906034319:5:c35b8b`
+*06.09. 03:43 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while model_fail events flood the log, proving it does not ingest provider-level degradation signals.
+
+### `dream:20260906034319:4:b52337`
+*06.09. 03:43 UTC · Quelle: dream*
+
+Duplicate skill proposals (ModelRouter, ResponseValidator, etc.) accumulate because no semantic deduplication runs before persistence, wasting consolidation cycles.
+
+### `dream:20260906034319:3:f8a07f`
+*06.09. 03:43 UTC · Quelle: dream*
+
+Pruning runs (38+ events) consistently outpace remediation, starving root-cause fixes unless a reserved budget guarantees at least one remediation per meta-cycle.
+
+### `dream:20260906034319:2:a4ef20`
+*06.09. 03:43 UTC · Quelle: dream*
+
+HTTP 200 responses containing 502 error bodies (Nvidia) reveal that status-code-only validation misses upstream failures, requiring body-level error parsing.
+
+### `dream:20260906034319:1:629940`
+*06.09. 03:43 UTC · Quelle: dream*
+
+Simultaneous 429 errors across multiple providers indicate shared rate-limit buckets or coordinated upstream throttling, not isolated provider failures.
 
 ### `dream:20260906033242:5:15ada7`
 *06.09. 03:32 UTC · Quelle: dream*
@@ -46276,16 +46301,6 @@ Calibration error of 1 point (predicted 5 vs actual 4) indicates drift; nightly 
 
 Latency outliers and timeouts (e.g., 22.5 s ultra model timeout) show that static model selection risks stalls, requiring adaptive fallback based on real‑time p90 breaches.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Träume und Simulationen :2`
-*23.08. 03:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Closed‑Loop Neuro‑Simulation Interface - Acquire real‑time EEG/fNIRS signals from participants during sleep, detect REM/dream phases, and stream these neurophysiological features into a physics‑based simulation engine. The en
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Träume und Simulationen :1`
-*23.08. 03:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Latent Dream‑Replay Reinforcement Learning - Extract latent representations of dream episodes from a pretrained transformer encoder. During RL training, periodically replace a fraction of environment steps with sampled dream
-
 ### `last_swarm_critique`
 *23.08. 03:40 UTC · Quelle: critic*
 
@@ -46295,31 +46310,6 @@ score=4; issues=Snippet 1: regex uses a curly apostrophe ’ but not the straigh
 *23.08. 03:36 UTC · Quelle: system*
 
 Träume und Simulationen besser nutzen
-
-### `dream:202608230336:5`
-*23.08. 03:36 UTC · Quelle: dream*
-
-Swarm configurations with a higher builder ratio and dedicated critic feedback improve convergence on simulation goals.
-
-### `dream:202608230336:4`
-*23.08. 03:36 UTC · Quelle: dream*
-
-Repeated GitHub task failures indicate a need for stricter pre‑commit checks or automated error detection.
-
-### `dream:202608230336:3`
-*23.08. 03:36 UTC · Quelle: dream*
-
-Translating dream goals into concrete simulations reduces the gap between intention and learning.
-
-### `dream:202608230336:2`
-*23.08. 03:36 UTC · Quelle: dream*
-
-Skills that are only planned but not executed yield low performance; deliberate practice improves outcomes.
-
-### `dream:202608230336:1`
-*23.08. 03:36 UTC · Quelle: dream*
-
-High latency outliers (>150 s) correlate with failed simulations and should trigger automatic fallback or retry mechanisms.
 
 ### `last_swarm_critique`
 *23.08. 03:20 UTC · Quelle: critic*

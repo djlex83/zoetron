@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
+- Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 2×)*
 - Alte Schwarm-Pläne endlich umsetzen *(wieder aufgegriffen: 2×)*
 - Fähigkeits-Vorschläge in echte Skills umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Selbstdiagnose reports zero organ errors while model_fail events flood the log, proving it does not ingest provider-level degradation signals.
+- Duplicate skill proposals (ModelRouter, ResponseValidator, etc.) accumulate because no semantic deduplication runs before persistence, wasting consoli
+- Pruning runs (38+ events) consistently outpace remediation, starving root-cause fixes unless a reserved budget guarantees at least one remediation per
+- HTTP 200 responses containing 502 error bodies (Nvidia) reveal that status-code-only validation misses upstream failures, requiring body-level error p
+- Simultaneous 429 errors across multiple providers indicate shared rate-limit buckets or coordinated upstream throttling, not isolated provider failure
 - The system's action loop remains functional, successfully executing reflexes and drive goals despite upstream model failures.
 - Pruning actively manages memory by removing old events, but care must be taken to preserve critical state.
 - The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a reliable fallback but exhibits high latency between 8 and 14 seconds.
@@ -51,11 +56,6 @@
 - Circuit-breaker patterns with half-open probes prevent cascade failures when individual providers degrade.
 - Health-aware routing must fuse real-time 429/502 counters, Retry-After headers, latency percentiles, and token cost into a single dynamic score.
 - Rate-limiting (429) and upstream overload (502) errors dominate free-tier model failures, making static model selection unreliable.
-- Circuit-breakers alone are insufficient; effective resilience requires combining circuit-breaker state, exponential backoff with jitter, and predictiv
-- Swarm knowledge degrades predictably over time and requires proactive scheduled refresh rather than reactive updates triggered only by failure signals
-- A persistent execution gap exists between generating skill proposals and registering tested code stubs — knowledge without implementation decays faste
-- Skill proposals evolve from isolated components (circuit-breaker, registry) toward unified integrated layers, indicating that consolidation favors hol
-- Rate limiting (429) and upstream overload (502) are the dominant, systemic failure modes across diverse models — not model-specific bugs but infrastru
 
 ---
 
