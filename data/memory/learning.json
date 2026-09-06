@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 04:37:39",
+ "stand": "2026-09-06 04:48:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
@@ -193,12 +193,6 @@
    "laeufe": 2,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "modell-fehler-deutlich-reduzieren.py",

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 04:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 04:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,8 +15,8 @@
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
 - Guarantee a ReservedRemediationBudget of one task per metabolism tick that bypasses conserve-mode throttling e *(hatte die Idee 3×)*
 - Create an automated skill incubator that converts dream skill_proposals into registered, prioritized, and sand *(hatte die Idee 3×)*
-- Build a proposal-to-action executor that parses skill_proposals, generates implementation diffs, runs tests in *(hatte die Idee 2×)*
-- Canonicalize all file paths in hand_action by resolving sys.argv[1] against ZOETRON_DATA and rejecting relativ *(hatte die Idee 2×)*
+- Guarantee one remediation task per meta-cycle via ReservedRemediationBudget scheduler to prevent pruning from  *(hatte die Idee 3×)*
+- Add ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity (cosine > 0.85), and *(hatte die Idee 3×)*
 - Add a request scheduler that spaces API calls per provider based on observed rate-limit windows and cooldown p *(hatte die Idee 2×)*
 - Establish a daily consolidation cron that prunes high-frequency events, preserves durable facts, and links rel *(hatte die Idee 2×)*
 - Implement a model router with real-time health scoring (success rate, latency p95, error categorization) and a *(hatte die Idee 2×)*
@@ -25,22 +25,27 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
-- Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 2×)*
 - Alte Schwarm-Pläne endlich umsetzen *(wieder aufgegriffen: 2×)*
+- Fähigkeits-Vorschläge in echte Skills umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals for 'reducing model errors' and 'making proposals into skills' persist across cycles without measurable progress, indicating missing autom
+- Selbstdiagnose reports zero organ errors despite recurring 429 failures, revealing that provider-level degradation is not mapped to organ health signa
+- Pruning removes 37-39 events per cycle while zero facts are pruned, suggesting event retention policy is too aggressive relative to fact durability.
+- Identical skill proposals (ModelRouter, ProposalDeduplicator) appear in consecutive dream cycles, proving the proposal pipeline lacks deduplication an
+- Provider z-ai/glm-5.2:free repeatedly emits 429 errors under load but recovers latency from 15s to 3s when rate limits reset, indicating burst-only ca
 - The persistent gap between skill proposal generation and actual implementation means ideas decay without enforced execution cycles, turning insight in
 - Fallback models that return successful HTTP 200 responses but with 12-15 second latency are functionally degraded — success codes do not equal accepta
 - Self-diagnosis modules that only audit internal organs report zero errors while external model dependencies degrade, creating a critical blind spot in
@@ -51,11 +56,6 @@
 - Ad-hoc pruning misses optimal timing; event-count and time-window triggers would maintain memory hygiene continuously.
 - Skill proposals accumulate without a validation pipeline, leading to proposal inflation rather than capability growth.
 - Model rate limiting (429 errors) causes cascading failures without automated fallback and health-based traffic shifting.
-- Only one model (inclusionai/ling-3.0-flash-fin:free) succeeded, creating a single-point-of-failure dependency without fallback diversity.
-- Pruning volume increases across cycles (4→12 facts, 13→48 events), suggesting failed attempts generate noise that must be aggressively cleaned.
-- Skill proposals accumulate but require manual reflex actions to test, creating a proposal-to-execution gap that delays capability acquisition.
-- The system lacks proactive model health tracking, causing repeated hammering of already-failing endpoints instead of routing away preemptively.
-- Free-tier models consistently fail under rate limits (429) and upstream overload (502), making them unreliable for production workloads.
 
 ---
 

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12063 Fakten** · Stand 2026-09-06 04:39 UTC · aktualisiert bei jedem Herzschlag
+**12056 Fakten** · Stand 2026-09-06 04:50 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7068
-- **swarm_artifact:** 2313
+- **swarm_artifact:** 2309
 - **last_swarm_critique:** 785
-- **anti_pattern:** 659
+- **anti_pattern:** 657
 - **last_swarm_goal:** 533
-- **strategy:** 331
+- **strategy:** 330
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906044748:5:154014`
+*06.09. 04:47 UTC · Quelle: dream*
+
+Drive goals for 'reducing model errors' and 'making proposals into skills' persist across cycles without measurable progress, indicating missing automated remediation loops.
+
+### `dream:20260906044748:4:2c18f7`
+*06.09. 04:47 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors despite recurring 429 failures, revealing that provider-level degradation is not mapped to organ health signals.
+
+### `dream:20260906044748:3:a23fed`
+*06.09. 04:47 UTC · Quelle: dream*
+
+Pruning removes 37-39 events per cycle while zero facts are pruned, suggesting event retention policy is too aggressive relative to fact durability.
+
+### `dream:20260906044748:2:af5242`
+*06.09. 04:47 UTC · Quelle: dream*
+
+Identical skill proposals (ModelRouter, ProposalDeduplicator) appear in consecutive dream cycles, proving the proposal pipeline lacks deduplication and execution closure.
+
+### `dream:20260906044748:1:dd118d`
+*06.09. 04:47 UTC · Quelle: dream*
+
+Provider z-ai/glm-5.2:free repeatedly emits 429 errors under load but recovers latency from 15s to 3s when rate limits reset, indicating burst-only capacity.
 
 ### `dream:20260906043708:5:3dfa40`
 *06.09. 04:37 UTC · Quelle: dream*
@@ -46291,16 +46316,6 @@ Daily logging of (goal_embedding, predicted, actual) reveals calibration drift; 
 
 Latency exceeding 60 s on the primary model indicates upstream overload and warrants an automatic fallback to a lighter model.
 
-### `anti_pattern:Previous attempt scored 7/10. Goal: Schwarm-Aufgaben zuverlä:2`
-*23.08. 04:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Event‑driven asyncio architecture with async Queue and graceful cancellation - Use asyncio.Queue for task distribution. Worker coroutines await queue.get(), process the item, call queue.task_done(), and break when a sentinel
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Schwarm-Aufgaben zuverlä:0`
-*23.08. 04:40 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Correct sentinel/poison‑pill pattern with proper task_done and logging - Place a single sentinel (e.g., None) per worker at the end of the queue. Each worker calls queue.task_done() after processing any item, including the se
-
 ### `last_swarm_critique`
 *23.08. 04:40 UTC · Quelle: critic*
 
@@ -46310,31 +46325,6 @@ score=7; issues=Task queue worker's sentinel handling leaves unfinished count in
 *23.08. 04:37 UTC · Quelle: system*
 
 Schwarm-Aufgaben zuverlässig abschließen
-
-### `dream:202608230437:5`
-*23.08. 04:37 UTC · Quelle: dream*
-
-Linking dream‑derived insights to swarm critique bridges offline consolidation and online skill improvement.
-
-### `dream:202608230437:4`
-*23.08. 04:37 UTC · Quelle: dream*
-
-Repeated simulation verdicts of 'revise' with moderate risk expose persistent error patterns that can be harvested as mutation seeds.
-
-### `dream:202608230437:3`
-*23.08. 04:37 UTC · Quelle: dream*
-
-Swarm runs with a builder‑heavy ratio (1 planner : 4 builder : 1 critic) converge poorly; adding more critic feedback improves revision quality.
-
-### `dream:202608230437:2`
-*23.08. 04:37 UTC · Quelle: dream*
-
-Model performance stays around 4/10 until low‑risk revise triggers evolution, which yields variants scoring up to 8/10.
-
-### `dream:202608230437:1`
-*23.08. 04:37 UTC · Quelle: dream*
-
-Latency spikes above 150 s disrupt the pipeline, showing the need for adaptive routing with fallback and alerting.
 
 ### `last_swarm_critique`
 *23.08. 04:20 UTC · Quelle: critic*
