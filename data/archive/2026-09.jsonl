@@ -16015,3 +16015,8 @@
 {"ts": 1788050411.2658725, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 4.38, "gelesen": 244}}
 {"ts": 1788050413.7116876, "kind": "issue_synced", "payload": {"issue": 235, "state": "open"}}
 {"ts": 1788050582.2680972, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787446440.0, "key": "dream:202608230054:5", "value": "Logging the latency from skill proposal to activation and flagging dormancy after three cycles surfaces reusable capabilities.", "source": "dream"}
+{"ts": 1787446440.0, "key": "dream:202608230054:4", "value": "Limiting iterative revisions and auto‑triggering evolution on stagnant scores curtails wasteful compute while driving improvement.", "source": "dream"}
+{"ts": 1787446440.0, "key": "dream:202608230054:3", "value": "Guaranteeing minimum role counts (planner, critic, builder) each cycle keeps the swarm from deadlocking and ensures progress.", "source": "dream"}
+{"ts": 1787446440.0, "key": "dream:202608230054:2", "value": "Validating required interfaces at process start and before each action batch eliminates silent failures and speeds up debugging.", "source": "dream"}
+{"ts": 1787446440.0, "key": "dream:202608230054:1", "value": "Latency‑based circuit breakers with a 3‑call hysteresis prevent overload spikes and enable graceful model fallback.", "source": "dream"}

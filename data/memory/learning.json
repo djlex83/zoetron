@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 00:46:16",
+ "stand": "2026-09-06 01:01:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -189,12 +189,6 @@
    "quote": 0.0
   },
   {
-   "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-daten-durch-neue-fakten-ersetzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -373,10 +367,16 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "träume-in-taten-umsetzen.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.735,
- "simulationen_angewandt": 33,
+ "haende_quote": 0.73,
+ "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 34,
   "best": 9.0,
@@ -384,8 +384,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 31,
-   "schnitt": 5.52
+   "n": 32,
+   "schnitt": 5.59
   },
   "bau": {
    "n": 2,
