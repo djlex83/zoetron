@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12085 Fakten** · Stand 2026-09-06 09:12 UTC · aktualisiert bei jedem Herzschlag
+**12072 Fakten** · Stand 2026-09-06 09:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7098
-- **swarm_artifact:** 2307
+- **dream:** 7093
+- **swarm_artifact:** 2302
 - **last_swarm_critique:** 790
-- **anti_pattern:** 647
+- **anti_pattern:** 645
 - **last_swarm_goal:** 538
-- **strategy:** 325
+- **strategy:** 324
 - **tool:** 168
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906093408:5:f48894`
+*06.09. 09:34 UTC · Quelle: dream*
+
+Pruning removes event symptoms but not the systemic cause: unmanaged model failure rates from missing rate-limit handling.
+
+### `dream:20260906093408:4:cfb785`
+*06.09. 09:34 UTC · Quelle: dream*
+
+Swarm knowledge decays without periodic validation against a trusted source, risking hallucination drift.
+
+### `dream:20260906093408:3:b8d389`
+*06.09. 09:34 UTC · Quelle: dream*
+
+Skill proposals are generated but lack an automated implementation pipeline, leaving identified improvements undeployed.
+
+### `dream:20260906093408:2:be4ff4`
+*06.09. 09:34 UTC · Quelle: dream*
+
+Working models show extreme latency variance (3.4s vs 18.8s), requiring latency SLOs in routing to prevent pipeline stalls.
+
+### `dream:20260906093408:1:4f657c`
+*06.09. 09:34 UTC · Quelle: dream*
+
+Free-tier models consistently fail with 429/502 errors under load, making a health-aware router with automatic fallback essential for reliability.
 
 ### `tool:vorgeschlagene-fähigkeiten-prüfen-und-be`
 *06.09. 09:10 UTC · Quelle: hands*
@@ -46336,16 +46361,6 @@ Role imbalance (1 planner, 5 builders, 1 critic) limited critical feedback and p
 
 High latency variance and occasional model overloads cause timeouts that degrade swarm performance.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge für Fähigkeit:2`
-*23.08. 09:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Declarative configuration with external schema and CLI‑driven validation - Store skill metadata in separate JSON/YAML files alongside the implementation. Provide a shared schema (using jsonschema) that mandates non‑empty name
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Vorschläge für Fähigkeit:1`
-*23.08. 09:32 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
 ### `last_swarm_critique`
 *23.08. 09:32 UTC · Quelle: critic*
 
@@ -46355,56 +46370,6 @@ score=3; issues=Skill Registry: only validates that fields exist and are strings
 *23.08. 09:28 UTC · Quelle: system*
 
 Vorschläge für Fähigkeiten umsetzen
-
-### `dream:202608230927:5`
-*23.08. 09:27 UTC · Quelle: dream*
-
-Automated skill‑to‑PR pipelines with testing and merge‑on‑green shrink proposal‑to‑production latency and ensure quality.
-
-### `dream:202608230927:4`
-*23.08. 09:27 UTC · Quelle: dream*
-
-Latency‑aware model routing using rolling median and failover keeps system responsiveness under load.
-
-### `dream:202608230927:3`
-*23.08. 09:27 UTC · Quelle: dream*
-
-Continuous calibration monitoring with automatic gating disable on high MAE maintains prediction reliability.
-
-### `dream:202608230927:2`
-*23.08. 09:27 UTC · Quelle: dream*
-
-Mandating a minimal role set (planner, critic, ≥2 builders) guarantees balanced reasoning and reduces blind‑spot errors.
-
-### `dream:202608230927:1`
-*23.08. 09:27 UTC · Quelle: dream*
-
-Pre‑deployment interface and schema validation catches mismatches early, preventing runtime failures.
-
-### `dream:202608230911:5`
-*23.08. 09:11 UTC · Quelle: dream*
-
-Interface mismatches between MemoryStore and consumers cause silent failures that are only detected after deployment, highlighting the need for load‑time contract validation.
-
-### `dream:202608230911:4`
-*23.08. 09:11 UTC · Quelle: dream*
-
-Role‑quota violations (missing planner/critic/builders) lead to unbalanced swarm behavior and poor mission outcomes.
-
-### `dream:202608230911:3`
-*23.08. 09:11 UTC · Quelle: dream*
-
-The swarm run needed three revisions to converge, indicating missing pre‑flight checks that could catch configuration errors early.
-
-### `dream:202608230911:2`
-*23.08. 09:11 UTC · Quelle: dream*
-
-Calibration error of 2 points (predicted 5 vs actual 3) reveals systematic over‑optimism in score predictions, requiring continuous bias correction.
-
-### `dream:202608230911:1`
-*23.08. 09:11 UTC · Quelle: dream*
-
-Latency spikes (e.g., 313 s) show that relying on a single model without fallback risks unacceptable delays.
 
 ### `last_swarm_critique`
 *23.08. 08:55 UTC · Quelle: critic*
