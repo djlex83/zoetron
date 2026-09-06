@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12039 Fakten** · Stand 2026-09-06 17:12 UTC · aktualisiert bei jedem Herzschlag
+**12039 Fakten** · Stand 2026-09-06 17:25 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7106
 - **swarm_artifact:** 2265
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906172118:5:928064`
+*06.09. 17:21 UTC · Quelle: dream*
+
+Swarm knowledge is stale and dream-to-skill conversion fails, leaving the system without updated collective intelligence or new capabilities.
+
+### `dream:20260906172118:4:bb8381`
+*06.09. 17:21 UTC · Quelle: dream*
+
+Proposed skills (failover, scheduler, pruning, calibration) remain untested because no drive executes them end-to-end.
+
+### `dream:20260906172118:3:7ee5e3`
+*06.09. 17:21 UTC · Quelle: dream*
+
+High metabolic stress (1.0) triggers conserve mode that caps tasks/iterations, starving skill validation and swarm refresh.
+
+### `dream:20260906172118:2:068216`
+*06.09. 17:21 UTC · Quelle: dream*
+
+File operations fail because relative paths and ZOETRON_DATA env var are not resolved to absolute paths before execution.
+
+### `dream:20260906172118:1:2c2089`
+*06.09. 17:21 UTC · Quelle: dream*
+
+Free-tier models (nemotron, gemma) fail intermittently with 502/429 errors while ling-3.0-flash-fin:free consistently succeeds at ~3s latency.
 
 ### `dream:20260906170845:5:ac0a82`
 *06.09. 17:08 UTC · Quelle: dream*
@@ -46198,31 +46223,6 @@ score=4; issues=divergenz_benchmark.py: category() function is referenced but no
 *23.08. 17:10 UTC · Quelle: system*
 
 Kreatives Denken trainieren
-
-### `dream:202608231708:5`
-*23.08. 17:08 UTC · Quelle: dream*
-
-Reflex-mode act_done returns score:null, so roughly half of executed actions produce no reward signal and cannot participate in learning or calibration.
-
-### `dream:202608231708:4`
-*23.08. 17:08 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:202608231708:3`
-*23.08. 17:08 UTC · Quelle: dream*
-
-The simulator issued verdict 'go' with 0 risks and 0 revisions for a task that then scored 4/10 in reality, so current simulation output is not predictive and should not gate deployment alone.
-
-### `dream:202608231708:2`
-*23.08. 17:08 UTC · Quelle: dream*
-
-Evolution variants scored 9/8/7 while the swarm's final score stayed 4/10 without converging in 2 cycles, indicating the winner-integration or final-scoring step destroys variant quality rather than the generation step failing.
-
-### `dream:202608231708:1`
-*23.08. 17:08 UTC · Quelle: dream*
-
-The AttributeError 'MemoryStore' object has no attribute 'add_fact' surfaced in hands-execute and again in dream skill proposals, meaning multiple components code against an assumed API instead of the real interface.
 
 ### `last_swarm_critique`
 *23.08. 17:00 UTC · Quelle: critic*

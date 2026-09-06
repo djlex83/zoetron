@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 17:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 17:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,14 +25,14 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge is stale and dream-to-skill conversion fails, leaving the system without updated collective intelligence or new capabilities.
+- Proposed skills (failover, scheduler, pruning, calibration) remain untested because no drive executes them end-to-end.
+- High metabolic stress (1.0) triggers conserve mode that caps tasks/iterations, starving skill validation and swarm refresh.
+- File operations fail because relative paths and ZOETRON_DATA env var are not resolved to absolute paths before execution.
+- Free-tier models (nemotron, gemma) fail intermittently with 502/429 errors while ling-3.0-flash-fin:free consistently succeeds at ~3s latency.
 - The reflex executor successfully ran a skill-testing script (vorgeschlagene-fähigkeiten-testen-und-nu.py), proving the system can execute implementati
 - Pruning reduces fact/event counts (16→10 facts, 26 events) but recurring model errors regenerate similar experience, indicating that structural fixes—
 - Only inclusionai/ling-3.0-flash-fin:free delivers consistent sub-5s latency and 200 responses, establishing it as the de facto reliable free model tha
@@ -51,11 +56,6 @@
 - Reactive retries without health awareness waste context and tokens on models already known to be degraded, compounding the original failure with unnec
 - Skill proposals accumulate faster than they get validated, creating a persistent gap between ideation and proven capability that wastes cognitive and 
 - Provider-side overload (502/429) is the dominant failure mode, not internal system errors, so resilience must be built around external dependency dive
-- The system maintained a score of 7 across multiple cycles despite revisions and evolution, suggesting a plateau where further improvement requires str
-- Self-diagnosis found zero organ failures while 71+ events were pruned, confirming that failures were external (provider-side) rather than internal sys
-- Evolution improved the best variant score from 7 to 9, but the swarm still didn't converge after 2 cycles, indicating that score improvement alone doe
-- The inclusionai/ling-3.0-flash-fin model succeeded consistently where larger models (Nemotron, Gemma) failed, proving that smaller specialized models 
-- When multiple providers simultaneously return 429/502 errors, parallel retries amplify the problem — staggered backoff with jitter is essential to avo
 
 ---
 
