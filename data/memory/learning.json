@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 20:23:13",
+ "stand": "2026-09-06 20:33:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -148,6 +148,12 @@
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -303,12 +309,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "simulationen-gezielt-einsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -393,7 +393,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.831,
+ "haende_quote": 0.832,
  "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 28,

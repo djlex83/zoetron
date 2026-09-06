@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,6 +12,7 @@
 - Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
 - PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem a *(hatte die Idee 4×)*
+- DriveScheduler: topologically sort active goals by prerequisite dependency (model reliability → swarm update → *(hatte die Idee 4×)*
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
 - Guarantee a ReservedRemediationBudget of one task per metabolism tick that bypasses conserve-mode throttling e *(hatte die Idee 3×)*
 - Create an automated skill incubator that converts dream skill_proposals into registered, prioritized, and sand *(hatte die Idee 3×)*
@@ -19,12 +20,11 @@
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
 - Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
-- ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -32,7 +32,7 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-mode execution can converge a goal but produces no score, meaning quality assurance is entirely absent when reflexes bypass normal evaluation p
+- Swarm convergence failed across 2 cycles with 5 roles because tasks were not ordered by prerequisite dependency, causing resource contention and stale
+- Aggressive pruning (22 events, 11 facts) can silently invalidate the assumptions underlying active skill proposals, creating proposals built on alread
+- A simulation verdict of 'go' does not guarantee real-world performance — the 6/10 score despite a green verdict reveals a calibration gap between pred
+- Model endpoint failures (502/429) are systemic and cascading; without proactive health-checks and automatic fallback chains, every task depending on m
 - Calibration systematically underestimates quality by 3 points (predicted 3 vs actual 6); scoring rubric needs recalibration against critic dimensions.
 - Simulation gate reduces risk count from 5 to 2 but requires 2–3 revision loops; mandatory re-verification after each revision prevents risk regression
 - Evolution cycles waste generations on boilerplate duplication (critic: "All three artifacts duplicate boilerplate"); template-aware diffing must gate 
@@ -51,11 +56,6 @@
 - The system accumulates skill proposals (health registry, fallback chains, validation pipelines) but lacks a deployment mechanism, creating a persisten
 - Hand actions fail silently when using relative paths instead of resolving against ZOETRON_DATA or sys.argv[1], causing "nichts gelesen" errors that le
 - Provider health varies dramatically: nemotron-3-ultra has 31-107s latency but succeeds, while Gemma models hit 429 rate limits and Nvidia returns 502 
-- The system's structural health is intact (no organ errors, successful pruning of 22 stale facts), so the root cause of failures is external infrastruc
-- Skill proposals from prior cycles (validation gate, convergence gate, revision tracker) were not executed, revealing a persistent gap between proposal
-- Without pre-call health checks or provider scoring, the system wastes cycles and tokens on failing endpoints, compounding latency and error rates inst
-- inclusionai/ling-3.0-flash-fin is the only model in this environment that has demonstrated consistent reliability with low latency (~3.2s) across mult
-- Free-tier models on OpenRouter exhibit systemic unreliability: gemma-4 models consistently return 429 rate-limit errors and nemotron-3 returns 502 ups
 
 ---
 

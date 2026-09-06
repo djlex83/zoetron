@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11944 Fakten** · Stand 2026-09-06 20:25 UTC · aktualisiert bei jedem Herzschlag
+**11929 Fakten** · Stand 2026-09-06 20:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7056
+- **dream:** 7041
 - **swarm_artifact:** 2233
 - **last_swarm_critique:** 812
 - **anti_pattern:** 609
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906203310:5:0f35b2`
+*06.09. 20:33 UTC · Quelle: dream*
+
+Reflex-mode execution can converge a goal but produces no score, meaning quality assurance is entirely absent when reflexes bypass normal evaluation pipelines.
+
+### `dream:20260906203310:4:cca5f9`
+*06.09. 20:33 UTC · Quelle: dream*
+
+Swarm convergence failed across 2 cycles with 5 roles because tasks were not ordered by prerequisite dependency, causing resource contention and stale-data propagation.
+
+### `dream:20260906203310:3:9f3e31`
+*06.09. 20:33 UTC · Quelle: dream*
+
+Aggressive pruning (22 events, 11 facts) can silently invalidate the assumptions underlying active skill proposals, creating proposals built on already-deleted context.
+
+### `dream:20260906203310:2:9eeccc`
+*06.09. 20:33 UTC · Quelle: dream*
+
+A simulation verdict of 'go' does not guarantee real-world performance — the 6/10 score despite a green verdict reveals a calibration gap between predicted and actual outcomes.
+
+### `dream:20260906203310:1:29c567`
+*06.09. 20:33 UTC · Quelle: dream*
+
+Model endpoint failures (502/429) are systemic and cascading; without proactive health-checks and automatic fallback chains, every task depending on model calls is at risk of silent failure.
 
 ### `dream:20260906202250:5:292898`
 *06.09. 20:22 UTC · Quelle: dream*
@@ -45741,106 +45766,6 @@ The pruner runs repeatedly but prunes zero events, indicating the pruning criter
 *23.08. 20:37 UTC · Quelle: dream*
 
 Model latency frequently exceeds 30 s (observed 35.2 s) without automatic degradation, causing unpredictable swarm start delays.
-
-### `dream:202608232032:5`
-*23.08. 20:32 UTC · Quelle: dream*
-
-The system fails to connect recent dreams with older memories, limiting insight generation and goal formation.
-
-### `dream:202608232032:4`
-*23.08. 20:32 UTC · Quelle: dream*
-
-Applying simulation revisions incrementally leaves partially patched plans, indicating a need for atomic batch updates.
-
-### `dream:202608232032:3`
-*23.08. 20:32 UTC · Quelle: dream*
-
-Model latency occasionally exceeds acceptable thresholds, risking delays without a fallback mechanism.
-
-### `dream:202608232032:2`
-*23.08. 20:32 UTC · Quelle: dream*
-
-GitHub synchronization failures stem from unhandled API rate limits and transient errors, requiring retry logic.
-
-### `dream:202608232032:1`
-*23.08. 20:32 UTC · Quelle: dream*
-
-Many skill proposals remain unimplemented because there is no systematic validation or testing pipeline.
-
-### `dream:202608232032:5`
-*23.08. 20:32 UTC · Quelle: dream*
-
-Isolated same‑day dreaming fails to leverage older memories; pairing them generates novel goal candidates and improves insight generation.
-
-### `dream:202608232032:4`
-*23.08. 20:32 UTC · Quelle: dream*
-
-Errors in GitHub‑task synchronization arise from unvalidated external‑API assumptions, necessitating pre‑flight validation and issue tracking.
-
-### `dream:202608232032:3`
-*23.08. 20:32 UTC · Quelle: dream*
-
-Skill proposals often stay unimplemented; a repetition‑based promotion mechanism turns idle ideas into actionable tasks.
-
-### `dream:202608232032:2`
-*23.08. 20:32 UTC · Quelle: dream*
-
-Pruning runs that prune zero items while the store exceeds size threshold reveal missing eligibility criteria, risking unbounded growth.
-
-### `dream:202608232032:1`
-*23.08. 20:32 UTC · Quelle: dream*
-
-Latency variability across models requires adaptive timeout guards to avoid stalls and enable reliable fallback.
-
-### `dream:202608232027:5`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Isolated knowledge (e.g., old dreams, biographies) fails to generate new value unless linked through explicit cross‑referencing mechanisms.
-
-### `dream:202608232027:4`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Ideas stay unused when there is no systematic process to prototype, evaluate, and promote promising proposals.
-
-### `dream:202608232027:3`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Calculation failures frequently stem from unchecked assumptions or missing sanity checks in numeric pipelines.
-
-### `dream:202608232027:2`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Task-transfer errors occur when interface contracts are not validated, causing data loss or corruption.
-
-### `dream:202608232027:1`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Incomplete group projects often result from missing explicit completion criteria and verification steps before marking tasks as done.
-
-### `dream:202608232027:5`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Runtime errors from missing or changed interfaces can be avoided by validating contracts at startup and guarding calls.
-
-### `dream:202608232027:4`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Overreliance on generator self‑scores inflates perceived quality; independent, calibrated scoring is required for reliable selection.
-
-### `dream:202608232027:3`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Task-transfer failures stem from unclear responsibility and lack of automated verification of hand‑off data.
-
-### `dream:202608232027:2`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Group projects frequently abort when completion criteria are not explicitly defined and tracked.
-
-### `dream:202608232027:1`
-*23.08. 20:27 UTC · Quelle: dream*
-
-Without a concrete test or validation step, most generated ideas stay unimplemented, causing wasted potential.
 
 ### `last_swarm_goal`
 *23.08. 19:41 UTC · Quelle: system*
