@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 21:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -12,9 +12,9 @@
 - Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as *(hatte die Idee 5×)*
 - PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem a *(hatte die Idee 5×)*
 - DriveScheduler: topologically sort active goals by prerequisite dependency (model reliability → swarm update → *(hatte die Idee 5×)*
+- Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backof *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
-- Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backof *(hatte die Idee 4×)*
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
 - Guarantee a ReservedRemediationBudget of one task per metabolism tick that bypasses conserve-mode throttling e *(hatte die Idee 3×)*
 - Create an automated skill incubator that converts dream skill_proposals into registered, prioritized, and sand *(hatte die Idee 3×)*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence declarations without critic sign-off and risk simulation produce false confidence in swarm outcomes.
+- Unvalidated skill proposals accumulate indefinitely without mandatory execution-and-scoring gates, creating technical debt in the skill registry.
+- Swarm knowledge decays silently without scheduled refresh cycles, causing decision drift that only surfaces as stale-goal signals.
+- A single reliable model (inclusionai/ling-3.0-flash-fin) outperforms multiple unreliable premium models, making provider diversity less valuable than 
+- Provider-specific failure modes (502 upstream overload vs 429 rate limits) require distinct mitigation strategies rather than generic retry logic.
 - Path-resolution failures are recurrent enough to warrant a dedicated utility, suggesting filesystem access assumes incorrect working directories.
 - Goals converge via reflex mode with null scores, bypassing quality thresholds and leaving convergence criteria undefined.
 - Skill proposals accumulate (5 this cycle) but none pass a validation gate; the system proposes skills faster than it can verify them.
@@ -51,11 +56,6 @@
 - Skill proposals generated during dreaming directly target observed failure modes (ModelRouter for 502/429, SimulationGate for artifact quality, Boiler
 - Reflex-mode tool execution achieves 100% convergence on well-scoped goals (dream-to-skills, swarm-revival) while model-based planning fails under prov
 - Model failures cascade predictably: nemotron returns 502 upstream errors while gemma models hit 429 rate limits, yet inclusionai/ling-3.0-flash-fin su
-- HandAction path resolution fails on relative paths, requiring mandatory absolute path expansion via ZOETRON_DATA before execution.
-- Swarm knowledge staleness persists despite convergence success, indicating missing continuous refresh loops for stored goals/critiques.
-- Model endpoint failures (429/502) cascade without proactive health tracking, forcing reactive fallbacks instead of predictive routing.
-- Skill proposals accumulate faster than validation (5+ per cycle vs. few tested), creating a deployment gap that the SkillValidationPipeline aims to cl
-- Reflex-driven execution reliably converges swarm goals but operates without predictive model health awareness, causing 27-31s latency per call.
 
 ---
 

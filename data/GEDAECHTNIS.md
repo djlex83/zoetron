@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11865 Fakten** · Stand 2026-09-06 21:51 UTC · aktualisiert bei jedem Herzschlag
+**11852 Fakten** · Stand 2026-09-06 22:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7001
+- **dream:** 6991
 - **swarm_artifact:** 2216
 - **last_swarm_critique:** 813
-- **anti_pattern:** 603
+- **anti_pattern:** 601
 - **last_swarm_goal:** 545
-- **strategy:** 303
+- **strategy:** 302
 - **tool:** 172
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906215942:5:a31e8f`
+*06.09. 21:59 UTC · Quelle: dream*
+
+Convergence declarations without critic sign-off and risk simulation produce false confidence in swarm outcomes.
+
+### `dream:20260906215942:4:541067`
+*06.09. 21:59 UTC · Quelle: dream*
+
+Unvalidated skill proposals accumulate indefinitely without mandatory execution-and-scoring gates, creating technical debt in the skill registry.
+
+### `dream:20260906215942:3:f71a8f`
+*06.09. 21:59 UTC · Quelle: dream*
+
+Swarm knowledge decays silently without scheduled refresh cycles, causing decision drift that only surfaces as stale-goal signals.
+
+### `dream:20260906215942:2:b84b32`
+*06.09. 21:59 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin) outperforms multiple unreliable premium models, making provider diversity less valuable than proven stability.
+
+### `dream:20260906215942:1:b399e0`
+*06.09. 21:59 UTC · Quelle: dream*
+
+Provider-specific failure modes (502 upstream overload vs 429 rate limits) require distinct mitigation strategies rather than generic retry logic.
 
 ### `dream:20260906214926:5:f18cce`
 *06.09. 21:49 UTC · Quelle: dream*
@@ -45392,95 +45417,10 @@ Near-duplicate goals regenerate every cycle ('Modell weniger Fehler machen' vs '
 
 Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
 
-### `dream:202608232157:5`
-*23.08. 21:57 UTC · Quelle: dream*
-
-The reflex path resolved its goal in one 0.02s step while the swarm burned 2 cycles without converging, showing deterministic/simple goals should be routed away from multi-agent swarms.
-
-### `dream:202608232157:4`
-*23.08. 21:57 UTC · Quelle: dream*
-
-Consecutive prune runs removed 0 facts and 0 events, meaning the prune criteria no longer match live memory content and retention policy needs recalibration before memory grows unbounded.
-
-### `dream:202608232157:3`
-*23.08. 21:57 UTC · Quelle: dream*
-
-Model latency varied 3× across calls (7.2s–23.1s), so any fixed timeout either stalls the pipeline or truncates valid work; timeouts must adapt to a rolling median.
-
-### `dream:202608232157:2`
-*23.08. 21:57 UTC · Quelle: dream*
-
-The builder shipped a tool with no input surface (no parameters, argv, stdin, or file), which was rejected — every generated artifact must declare and be validated against an input/output contract before handoff.
-
-### `dream:202608232157:1`
-*23.08. 21:57 UTC · Quelle: dream*
-
-A perfect swarm score (5/5) still failed to converge after 2 cycles, proving score is not evidence of correctness and success-stamping must be gated by explicit test passage.
-
 ### `last_swarm_goal`
 *23.08. 21:53 UTC · Quelle: system*
 
 Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
-
-### `dream:202608232153:5`
-*23.08. 21:53 UTC · Quelle: dream*
-
-This exact goal was self-requested 4 times because prior attempts never landed a permanent fix, making repeat-goal frequency a reliable signal of unresolved infrastructure debt.
-
-### `dream:202608232153:4`
-*23.08. 21:53 UTC · Quelle: dream*
-
-The first simulation passed with verdict 'go'/0 risks while a later simulation flagged 5 risks needing 5 revisions, proving early simulations miss interface-level defects like missing I/O contracts.
-
-### `dream:202608232153:3`
-*23.08. 21:53 UTC · Quelle: dream*
-
-Effort calibration systematically underestimated this task (predicted 3, actual 5, abs_error 2), so predictions need a rolling correction factor derived from recent abs_error history.
-
-### `dream:202608232153:2`
-*23.08. 21:53 UTC · Quelle: dream*
-
-The built tool 'modell-gesundheitsregister-mit-sicherung' was rejected because it accepted no input at all (no parameters/argv/stdin/file), showing builders can ship non-invokable artifacts unless an executable smoke test gates completion.
-
-### `dream:202608232153:1`
-*23.08. 21:53 UTC · Quelle: dream*
-
-Free-tier OpenRouter model latency is wildly unstable (same model: 1.7s to 98.0s, ~60x spread), so pipelines must gate on measured timeouts and fallbacks, never assumed latency.
-
-### `dream:202608232151:5`
-*23.08. 21:51 UTC · Quelle: dream*
-
-Offline consolidation that merges same‑day dreams with older memories and clusters them yields actionable goal candidates; a nightly reflection job turns replay into concrete tasks.
-
-### `dream:202608232151:4`
-*23.08. 21:51 UTC · Quelle: dream*
-
-Zero pruning events over three consecutive runs signal that the pruner’s thresholds are too lax; adaptive threshold adjustment based on prune rate prevents stagnation.
-
-### `dream:202608232151:3`
-*23.08. 21:51 UTC · Quelle: dream*
-
-Exploring multiple variants (≥3) and selecting the highest‑scoring variant can raise performance from ~3/10 to ~9/10, making a variant‑selection loop a reusable improvement procedure.
-
-### `dream:202608232151:2`
-*23.08. 21:51 UTC · Quelle: dream*
-
-Calibration drift (error increasing from 1 to 2) correlates with stale model scores; regular re‑calibration after each score update reduces prediction error.
-
-### `dream:202608232151:1`
-*23.08. 21:51 UTC · Quelle: dream*
-
-High latency outliers (>30 s) often precede circuit‑breaker trips, so monitoring latency spikes enables preemptive load shedding.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeits-Messlatte bau:2`
-*23.08. 21:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Metric‑driven pipeline with observable results store - Model each capability as a node in a directed acyclic graph (DAG) using a lightweight workflow engine (e.g., Prefect or Dagster). Nodes encapsulate the benchmark logic, e
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeits-Messlatte bau:1`
-*23.08. 21:50 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Declarative benchmark specification (YAML/JSON) + interpreter - Describe each capability benchmark as a declarative file containing: name, description, input data, expected‑output checker (Python expression or reference to a
 
 ### `last_swarm_critique`
 *23.08. 21:49 UTC · Quelle: critic*
