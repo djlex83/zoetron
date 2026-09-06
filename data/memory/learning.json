@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 01:57:06",
+ "stand": "2026-09-06 02:07:30",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -117,12 +117,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltete-wissenstände-auffrischen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -136,6 +130,12 @@
   },
   {
    "tool": "wissenbasis-aufräumen-und-prüfen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -243,12 +243,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "gelernte-fähigkeiten-besser-verknüpfen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -271,6 +265,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",

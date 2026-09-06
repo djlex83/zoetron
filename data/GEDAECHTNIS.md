@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12075 Fakten** · Stand 2026-09-06 01:59 UTC · aktualisiert bei jedem Herzschlag
+**12080 Fakten** · Stand 2026-09-06 02:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7028
+- **dream:** 7033
 - **swarm_artifact:** 2344
 - **last_swarm_critique:** 785
 - **anti_pattern:** 673
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906020715:5:ef42f0`
+*06.09. 02:07 UTC · Quelle: dream*
+
+Single-cycle swarm convergence with score 8 suggests the current role allocation (1 planner, 3 builders, 1 critic) is sufficient for well-scoped implementation goals.
+
+### `dream:20260906020715:4:d6be1e`
+*06.09. 02:07 UTC · Quelle: dream*
+
+Automatic pruning (16 facts, 102 events) triggered without manual intervention, confirming the memory system self-regulates under volume pressure.
+
+### `dream:20260906020715:3:93f70a`
+*06.09. 02:07 UTC · Quelle: dream*
+
+Calibration error of 300% (predicted 2 vs actual 8 cycles) indicates the planner systematically underestimates execution complexity for multi-role swarms.
+
+### `dream:20260906020715:2:e53a1c`
+*06.09. 02:07 UTC · Quelle: dream*
+
+High-latency models (Nemotron: 24-85s) succeed consistently while low-latency models (GLM: 2.5-7s) fail intermittently under load, revealing an inverse reliability-latency tradeoff in free tiers.
+
+### `dream:20260906020715:1:6a36c4`
+*06.09. 02:07 UTC · Quelle: dream*
+
+Rate limiting (HTTP 429) is the dominant failure mode across multiple free-tier models, making reliability dependent on request pacing rather than model capability.
 
 ### `dream:20260906015651:5:347f57`
 *06.09. 01:56 UTC · Quelle: dream*
