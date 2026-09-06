@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12081 Fakten** · Stand 2026-09-05 23:57 UTC · aktualisiert bei jedem Herzschlag
+**12086 Fakten** · Stand 2026-09-06 00:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7013
+- **dream:** 7018
 - **swarm_artifact:** 2350
 - **last_swarm_critique:** 784
 - **anti_pattern:** 679
@@ -16,6 +16,31 @@
 - **semantic_organ:** 1
 
 ---
+
+### `dream:20260906000544:5:2bb5f8`
+*06.09. 00:05 UTC · Quelle: dream*
+
+Pruning 18-20 events per run while failures persist suggests the system is forgetting the very patterns it needs to learn from.
+
+### `dream:20260906000544:4:34832a`
+*06.09. 00:05 UTC · Quelle: dream*
+
+Skill proposals already generated (router, backoff, scorecard) are redundant in theme—need prioritization, not more ideas.
+
+### `dream:20260906000544:3:835b0c`
+*06.09. 00:05 UTC · Quelle: dream*
+
+Only one provider (inclusionai/ling-3.0-flash-fin) succeeded, revealing a narrow reliable subset amid widespread outages.
+
+### `dream:20260906000544:2:04cda1`
+*06.09. 00:05 UTC · Quelle: dream*
+
+HTTP 200 with empty choices (Nvidia 502-overload) bypasses standard error handling—status-code-only checks are insufficient for health detection.
+
+### `dream:20260906000544:1:0c0d1c`
+*06.09. 00:05 UTC · Quelle: dream*
+
+429 rate-limit errors dominate across all providers (z-ai, google), indicating a systemic quota-exhaustion pattern rather than isolated incidents.
 
 ### `dream:20260905235459:5:8fb702`
 *05.09. 23:54 UTC · Quelle: dream*

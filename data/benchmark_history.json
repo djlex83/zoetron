@@ -23,6 +23,18 @@
    "reflex": 4,
    "gedaechtnis": 4,
    "basislinie": false
+  },
+  {
+   "ts": 1788653361.6907911,
+   "datum": "2026-09-06",
+   "punkte": 23,
+   "max": 25,
+   "cortex": 5,
+   "werkzeug": 6,
+   "konvergenz": 4,
+   "reflex": 4,
+   "gedaechtnis": 4,
+   "basislinie": false
   }
  ]
 }
