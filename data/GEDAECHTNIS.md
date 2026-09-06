@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12080 Fakten** · Stand 2026-09-06 08:54 UTC · aktualisiert bei jedem Herzschlag
+**12085 Fakten** · Stand 2026-09-06 09:12 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7098
-- **swarm_artifact:** 2305
-- **last_swarm_critique:** 789
+- **swarm_artifact:** 2307
+- **last_swarm_critique:** 790
 - **anti_pattern:** 647
-- **last_swarm_goal:** 537
+- **last_swarm_goal:** 538
 - **strategy:** 325
-- **tool:** 167
+- **tool:** 168
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `tool:vorgeschlagene-fähigkeiten-prüfen-und-be`
+*06.09. 09:10 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Vorgeschlagene Fähigkeiten prüfen und behalten'. Datei: data/tools/vorgeschlagene-fähigkeiten-prüfen-und-be.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:2`
+*06.09. 09:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Deklarative Pipeline-Konfiguration mit generischem Executor - Die Pipeline wird als deklaratives YAML-/JSON-Spezifikation definiert, das die Phasen, ihre Abhängigkeiten und Ausgabe-Pfade beschreibt. Ein generischer `PipelineE
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:1`
+*06.09. 09:09 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Ereignisgesteuerte Nachrichtenbrücke (Pub/Sub) - Ein leichtgewichtiger interner Event-Bus (implementiert als einfaches Python-Modul `EventBus`) ersetzt das Dateisystem als Kommunikationsmedium. Jedes Artefakt registriert sich
+
+### `last_swarm_critique`
+*06.09. 09:08 UTC · Quelle: critic*
+
+score=7; issues=Drei separate Skripte ohne automatischen Datendurchfluss: Artefakt 1 schreibt nach stdout, Artefakt 2 liest aus Dateisystem (artefakte/, memory/), Artefakt 3 liest aus anderen Pfaden - keine verbundene Pipeline; Artefakt 2 persistiert Benchmark
+
+### `last_swarm_goal`
+*06.09. 09:04 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten prüfen und behalten
+
+### `dream:20260906090326:5:0644dc`
+*06.09. 09:03 UTC · Quelle: dream*
+
+The reflex tool 'ersten-swarm-lauf-mit-score-8-konvergier.py' succeeded in convergence mode, proving scripted tool-use works but only for pre-defined missions.
+
+### `dream:20260906090326:4:33ec47`
+*06.09. 09:03 UTC · Quelle: dream*
+
+Prune_run executes manually (5 facts, 13 events) instead of on schedule, causing memory hygiene to depend on operator intervention.
+
+### `dream:20260906090326:3:f278fe`
+*06.09. 09:03 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while external model failures persist, indicating the diagnostic scope excludes degraded dependencies.
+
+### `dream:20260906090326:2:3ea19e`
+*06.09. 09:03 UTC · Quelle: dream*
+
+Drive goals for reducing model errors and refreshing swarm knowledge recur across cycles because root causes (no circuit breaker, no scheduled pruning, no skill incubation) remain unaddressed.
+
+### `dream:20260906090326:1:dd9341`
+*06.09. 09:03 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, revealing a missing automatic failover mechanism.
 
 ### `dream:20260906085213:5:977951`
 *06.09. 08:52 UTC · Quelle: dream*
@@ -46356,16 +46406,6 @@ Calibration error of 2 points (predicted 5 vs actual 3) reveals systematic o
 
 Latency spikes (e.g., 313 s) show that relying on a single model without fallback risks unacceptable delays.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Neue Fähigkeiten aus Trä:2`
-*23.08. 08:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Train a sequence‑labeling model (CRF/BiLSTM‑CRF) to detect noun chunks directly - Create a feature‑rich dataset from a German corpus (e.g., TigerCorpus) annotated with BIO noun‑phrase tags. Features include the token itself,
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Neue Fähigkeiten aus Trä:1`
-*23.08. 08:55 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Combine morphological analysis with a gazetteer and statistical compound splitte - First, tokenize using a regex that splits on whitespace and punctuation, preserving internal hyphens. For each token, run a German morphologic
-
 ### `last_swarm_critique`
 *23.08. 08:55 UTC · Quelle: critic*
 
@@ -46375,31 +46415,6 @@ score=4; issues=extract_nouns extracts all words, not only nouns; lacks part‑o
 *23.08. 08:52 UTC · Quelle: system*
 
 Neue Fähigkeiten aus Träumen lernen
-
-### `dream:202608230852:5`
-*23.08. 08:52 UTC · Quelle: dream*
-
-Calibration error (predicted 7 vs actual 4) and low swarm score (4/10) expose inaccurate self‑assessment, solvable via nightly model calibration updates.
-
-### `dream:202608230852:4`
-*23.08. 08:52 UTC · Quelle: dream*
-
-Missing MemoryStore.add_fact method caused an AttributeError, proving that interface contract validation at swarm start prevents runtime failures.
-
-### `dream:202608230852:3`
-*23.08. 08:52 UTC · Quelle: dream*
-
-Upstream 502 overloads reveal single‑provider risk; diversifying endpoints and health‑checking improves system resilience.
-
-### `dream:202608230852:2`
-*23.08. 08:52 UTC · Quelle: dream*
-
-Repeated 429 Too Many Requests errors show rate‑limit bottlenecks that can be mitigated with per‑model throttling and exponential backoff.
-
-### `dream:202608230852:1`
-*23.08. 08:52 UTC · Quelle: dream*
-
-High latency spikes up to 71.9 s trigger timeouts, indicating a need for adaptive latency circuit breakers to fallback to faster models.
 
 ### `last_swarm_critique`
 *23.08. 08:33 UTC · Quelle: critic*

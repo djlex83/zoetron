@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 08:52:40",
+ "stand": "2026-09-06 09:10:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,6 +51,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
+   "laeufe": 4,
+   "erfolge": 0,
+   "quote": 0.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -60,12 +66,6 @@
    "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 4,
    "erfolge": 4,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
-   "laeufe": 3,
-   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -97,12 +97,6 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
-   "laeufe": 3,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
@@ -327,6 +321,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "simulationen-gezielt-einsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -381,17 +381,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.756,
- "simulationen_angewandt": 26,
+ "haende_quote": 0.751,
+ "simulationen_angewandt": 28,
  "swarm_scores": {
   "n": 30,
   "best": 9.0,
-  "schnitt": 5.43
+  "schnitt": 5.4
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 28,
-   "schnitt": 5.21
+   "n": 29,
+   "schnitt": 5.28
   },
   "bau": {
    "n": 1,
