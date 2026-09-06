@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 12:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 12:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -17,20 +17,20 @@
 - Guarantee one remediation task per meta-cycle via ReservedRemediationBudget scheduler to prevent pruning from  *(hatte die Idee 3×)*
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
+- Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
 - Implement ModelFailoverChain: track per-model 429/5xx rates, auto-demote offenders for 1800s, promote next-fre *(hatte die Idee 2×)*
 - Add SkillProposalLifecycle: enforce states proposed→spec_written→implemented→tested→deployed with mandatory tr *(hatte die Idee 2×)*
-- Create GoalAgingPolicy: tag every drive_goal with created_ts, auto-archive goals >7 days with no act_done, sur *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 27×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 28×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Rate-limit errors are not random noise but a clear signal that traffic concentration on popular models must be redistributed via continuous health sco
+- Skill proposals generated during dreaming have no durable value unless a registration-and-testing pipeline exists to promote them from suggestion to a
+- Stale swarm knowledge actively degrades routing and skill-selection decisions, making periodic freshness audits a prerequisite rather than an optional
+- The single successful model (inclusionai/ling-3.0-flash-fin) reveals that fallback diversity is the primary resilience factor when multiple upstream s
+- Cascading 429/502 failures across four independent providers indicate no health-aware routing existed, causing repeated wasted calls to degraded model
 - Five concrete skill proposals already exist (QuotaPool, CircuitBreaker, ConvergenceGate, LatencyBudgetRouter, SkillPromotionPipeline) yet a new drive 
 - Pruning removes facts (15, then 7) but events only in the second run (42), implying event retention policy is inconsistent or event volume spiked.
 - Drive goals for 'Schwarm-Wissen auffrischen' and 'Veraltetes Schwarm-Wissen aktualisieren' reappear despite recent successful refreshes, suggesting th
@@ -51,11 +56,6 @@
 - Stale swarm knowledge compounds planning failures, creating a feedback loop where outdated information leads to poor decisions that generate more nois
 - The latency spread between fast models (3.6s) and slow models (88s) creates a reliability-vs-capability tradeoff that must be explicitly managed throu
 - OpenRouter 429 rate-limit errors are a systemic, recurring failure mode across multiple models, indicating the API gateway—not individual models—is th
-- The swarm converged in a single cycle with score 8 despite cascading model failures, suggesting the planner/builder/critic role distribution absorbed 
-- All 5 skill proposals generated are direct reactive responses to observed failure modes, revealing the proposal engine is tightly coupled to failure s
-- Proactive maintenance operations (pruning 8 facts and 13 events, self-diagnosis returning zero organ errors) ran cleanly even under model failure pres
-- The system demonstrates implicit fallback resilience by eventually finding inclusionai/ling-3.0-flash-fin as a working model, but lacks explicit routi
-- The dominant failure pattern is API rate limiting (429) and upstream overload (502), affecting 4 of 5 model calls — this is an infrastructure bottlene
 
 ---
 

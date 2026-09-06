@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12058 Fakten** · Stand 2026-09-06 12:31 UTC · aktualisiert bei jedem Herzschlag
+**12070 Fakten** · Stand 2026-09-06 12:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7097
-- **swarm_artifact:** 2291
-- **last_swarm_critique:** 792
-- **anti_pattern:** 637
+- **swarm_artifact:** 2290
+- **last_swarm_critique:** 808
+- **anti_pattern:** 635
 - **last_swarm_goal:** 540
-- **strategy:** 320
+- **strategy:** 319
 - **tool:** 169
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,111 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906124146:5:af01a0`
+*06.09. 12:41 UTC · Quelle: dream*
+
+Rate-limit errors are not random noise but a clear signal that traffic concentration on popular models must be redistributed via continuous health scoring.
+
+### `dream:20260906124146:4:597b5c`
+*06.09. 12:41 UTC · Quelle: dream*
+
+Skill proposals generated during dreaming have no durable value unless a registration-and-testing pipeline exists to promote them from suggestion to active capability.
+
+### `dream:20260906124146:3:eed545`
+*06.09. 12:41 UTC · Quelle: dream*
+
+Stale swarm knowledge actively degrades routing and skill-selection decisions, making periodic freshness audits a prerequisite rather than an optional maintenance task.
+
+### `dream:20260906124146:2:9b5f65`
+*06.09. 12:41 UTC · Quelle: dream*
+
+The single successful model (inclusionai/ling-3.0-flash-fin) reveals that fallback diversity is the primary resilience factor when multiple upstream services are overloaded.
+
+### `dream:20260906124146:1:3dc169`
+*06.09. 12:41 UTC · Quelle: dream*
+
+Cascading 429/502 failures across four independent providers indicate no health-aware routing existed, causing repeated wasted calls to degraded models.
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
+
+### `last_swarm_critique`
+*06.09. 12:38 UTC · Quelle: critic*
+
+score=7; issues=
 
 ### `dream:20260906122742:5:779fc4`
 *06.09. 12:27 UTC · Quelle: dream*
@@ -46255,41 +46360,6 @@ score=3; issues=All three artifacts are truncated/incomplete (memory_store.py cu
 *23.08. 12:39 UTC · Quelle: system*
 
 Fehler beim Denken reduzieren
-
-### `dream:202608231239:5`
-*23.08. 12:39 UTC · Quelle: dream*
-
-Same model (nemotron-3-super) shows 8x latency variance (4.4s to 35s), making timeout-based fallbacks unreliable without percentile-based SLAs.
-
-### `dream:202608231239:4`
-*23.08. 12:39 UTC · Quelle: dream*
-
-MemoryStore lacks required 'add_fact' method causing AttributeError during hand-execution, revealing missing interface contracts.
-
-### `dream:202608231239:3`
-*23.08. 12:39 UTC · Quelle: dream*
-
-Swarm role imbalance (4 builders : 1 critic) correlates with non-convergence (score 6, converged false) despite evolution improving variant quality (6→9).
-
-### `dream:202608231239:2`
-*23.08. 12:39 UTC · Quelle: dream*
-
-Calibration consistently underestimates actual scores by ~33% (predicted 4 vs actual 6), causing premature go/no-go decisions without correction.
-
-### `dream:202608231239:1`
-*23.08. 12:39 UTC · Quelle: dream*
-
-Free-tier models across all providers (Nvidia, Google, Z.ai, Stealth) simultaneously hit rate limits (429) and resource exhaustion (502), indicating systemic capacity constraints rather than isolated failures.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Träume in echte Aufträge:2`
-*23.08. 12:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Domain‑Specific Grammar with Parsing Expression Grammar (PEG) and Code Generatio - Define a PEG grammar (using parsimonious or lark) that captures the syntax of dream‑to‑task phrases (e.g., "Ich möchte [Action] das [Object] b
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Träume in echte Aufträge:1`
-*23.08. 12:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Large Language Model Prompt‑Chaining with Validation Loops - Prompt an LLM (e.g., GPT‑4) to convert each dream sentence into a structured JSON order using few‑shot examples. Chain prompts: first extract intent, then refine fi
 
 ### `last_swarm_critique`
 *23.08. 12:32 UTC · Quelle: critic*
