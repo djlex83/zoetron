@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12065 Fakten** · Stand 2026-09-06 03:24 UTC · aktualisiert bei jedem Herzschlag
+**12070 Fakten** · Stand 2026-09-06 03:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7048
+- **dream:** 7053
 - **swarm_artifact:** 2326
 - **last_swarm_critique:** 785
 - **anti_pattern:** 665
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906033242:5:15ada7`
+*06.09. 03:32 UTC · Quelle: dream*
+
+The system's action loop remains functional, successfully executing reflexes and drive goals despite upstream model failures.
+
+### `dream:20260906033242:4:a862ed`
+*06.09. 03:32 UTC · Quelle: dream*
+
+Pruning actively manages memory by removing old events, but care must be taken to preserve critical state.
+
+### `dream:20260906033242:3:753bab`
+*06.09. 03:32 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a reliable fallback but exhibits high latency between 8 and 14 seconds.
+
+### `dream:20260906033242:2:e6f5ec`
+*06.09. 03:32 UTC · Quelle: dream*
+
+Repeated identical skill proposals indicate a missing semantic deduplication mechanism before persistence.
+
+### `dream:20260906033242:1:c4a9fe`
+*06.09. 03:32 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model is consistently rate-limited and should be temporarily blacklisted or heavily deprioritized.
 
 ### `dream:20260906032222:5:0b71da`
 *06.09. 03:22 UTC · Quelle: dream*

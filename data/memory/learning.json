@@ -1,15 +1,15 @@
 {
- "stand": "2026-09-06 03:22:43",
+ "stand": "2026-09-06 03:33:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "laeufe": 9,
+   "erfolge": 9,
    "quote": 1.0
   },
   {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 8,
    "erfolge": 8,
    "quote": 1.0
@@ -43,12 +43,6 @@
    "laeufe": 5,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
@@ -94,6 +88,12 @@
   },
   {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-endlich-abschließen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0

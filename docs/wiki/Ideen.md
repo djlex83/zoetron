@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,10 +27,10 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
+- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system's action loop remains functional, successfully executing reflexes and drive goals despite upstream model failures.
+- Pruning actively manages memory by removing old events, but care must be taken to preserve critical state.
+- The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a reliable fallback but exhibits high latency between 8 and 14 seconds.
+- Repeated identical skill proposals indicate a missing semantic deduplication mechanism before persistence.
+- The z-ai/glm-5.2:free model is consistently rate-limited and should be temporarily blacklisted or heavily deprioritized.
 - Skill proposals accumulate without an automated incubation pipeline that registers, prioritizes, sandbox-tests, and promotes them.
 - Prompt-level caching (SQLite + hash + TTL) eliminates redundant calls that accelerate rate-limit exhaustion.
 - Circuit-breaker patterns with half-open probes prevent cascade failures when individual providers degrade.
@@ -51,11 +56,6 @@
 - A persistent execution gap exists between generating skill proposals and registering tested code stubs — knowledge without implementation decays faste
 - Skill proposals evolve from isolated components (circuit-breaker, registry) toward unified integrated layers, indicating that consolidation favors hol
 - Rate limiting (429) and upstream overload (502) are the dominant, systemic failure modes across diverse models — not model-specific bugs but infrastru
-- Model failures cascade because the system lacks a health-aware router that prefers reliable endpoints for critical operations.
-- Stale tasks and obsolete swarm data persist without automated archival, polluting the knowledge base and degrading future decisions.
-- Conserve-mode throttling prevents execution of remediation tasks, creating a deadlock where the system cannot self-heal under load.
-- Multiple overlapping proposals for circuit breakers, rate limiters, and health registries reveal a missing deduplication mechanism that wastes proposa
-- Primary model (z-ai/glm-5.2:free) consistently returns 429 errors, necessitating automatic fallback and rate limiting to maintain system availability.
 
 ---
 
