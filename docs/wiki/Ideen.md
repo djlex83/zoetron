@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 10:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 27×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation verdict 'revise' with 5 risks and 5 revisions shows the system detects flaws but each revision cycle burns limited budget without guarantee
+- High stress (1.0) triggers conserve mode, capping tasks and iterations, which prevents multi-step recovery from cascading model failures.
+- Skill proposals stall at the reflex layer because the conversion script (fähigkeitsvorschläge-in-echte-skills-ums.py) exits with ok=false without touc
+- File operations fail when using relative paths instead of resolving sys.argv[1] and ZOETRON_DATA to absolute paths before access.
+- Rate-limited models (z-ai/glm-5.2, google/gemma) consistently return 429 errors, making them unreliable for primary workflows.
 - Self-diagnosis returning zero organ errors suggests internal health monitoring is functional but lacks the granularity to detect subtle degradation pa
 - Pruning 11 facts and 37 events in a single run reveals that the system accumulates stale data faster than it processes it, requiring aggressive retent
 - The reflex mechanism—executing skills rather than merely planning them—proved effective in bridging the intention-action gap, indicating autonomous sy
@@ -51,11 +56,6 @@
 - Latency variance between successful calls (3.8s vs 33.4s) indicates missing SLA enforcement, causing unpredictable user-facing delays.
 - Upstream provider errors (502) cascade into silent failures unless explicit health checks and circuit breakers are implemented per model endpoint.
 - Free tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without quota-aware routing.
-- Swarm knowledge decays silently; the last_swarm_goal recall shows no freshness check, so a timestamped knowledge TTL with automatic refresh triggers i
-- Metabolism-driven conserve mode (stress=1.0) caps iterations to 1 and tasks to 3, so every action must be idempotent, low-latency, and produce a durab
-- Proposed skills stall in "validation limbo" – the reflex checker crashes, simulation demands revisions, but no automated repair loop exists; a self-he
-- File operations fail when using relative paths because the working directory diverges from ZOETRON_DATA; all paths must be resolved absolutely via the
-- Free tier LLM APIs exhibit pervasive rate limiting (429) and upstream errors (502), making a single-model strategy non-viable; a validated fallback ch
 
 ---
 
