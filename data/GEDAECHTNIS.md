@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11767 Fakten** · Stand 2026-09-06 23:01 UTC · aktualisiert bei jedem Herzschlag
+**11772 Fakten** · Stand 2026-09-06 23:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6941
+- **dream:** 6946
 - **swarm_artifact:** 2187
 - **last_swarm_critique:** 814
 - **anti_pattern:** 595
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906230901:5:ead98c`
+*06.09. 23:09 UTC · Quelle: dream*
+
+Critic calibration drifts without online isotonic regression retrained on recent (predicted, actual) pairs per dimension.
+
+### `dream:20260906230901:4:bc2bc7`
+*06.09. 23:09 UTC · Quelle: dream*
+
+Simulation usage is reflex-driven but not yet a mandatory gate for artifact deployment, allowing unvalidated changes.
+
+### `dream:20260906230901:3:740582`
+*06.09. 23:09 UTC · Quelle: dream*
+
+Swarm knowledge decays rapidly between convergence cycles, necessitating automatic refresh triggered by simulation feedback.
+
+### `dream:20260906230901:2:60368a`
+*06.09. 23:09 UTC · Quelle: dream*
+
+Model failures (429/502 errors, latency spikes >30s) correlate with learning stalls and require automated routing with fallback chains.
+
+### `dream:20260906230901:1:0c31a3`
+*06.09. 23:09 UTC · Quelle: dream*
+
+Skill proposals recur across cycles but lack a mandatory execution gate, creating a persistent proposal-implementation gap.
 
 ### `tool:träume-in-echte-fähigkeiten-verwandeln`
 *06.09. 22:59 UTC · Quelle: hands*

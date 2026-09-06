@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 22:59:22",
+ "stand": "2026-09-06 23:09:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -57,12 +57,6 @@
    "quote": 1.0
   },
   {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 4,
-   "erfolge": 0,
-   "quote": 0.0
-  },
-  {
    "tool": "traum-ideen-zu-fähigkeiten-machen.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -91,6 +85,12 @@
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 3,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",
@@ -397,9 +397,15 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.838,
+ "haende_quote": 0.843,
  "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 26,
@@ -408,8 +414,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 24,
-   "schnitt": 5.79
+   "n": 23,
+   "schnitt": 5.7
   },
   "bau": {
    "n": 2,

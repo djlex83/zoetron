@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 23:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Critic calibration drifts without online isotonic regression retrained on recent (predicted, actual) pairs per dimension.
+- Simulation usage is reflex-driven but not yet a mandatory gate for artifact deployment, allowing unvalidated changes.
+- Swarm knowledge decays rapidly between convergence cycles, necessitating automatic refresh triggered by simulation feedback.
+- Model failures (429/502 errors, latency spikes >30s) correlate with learning stalls and require automated routing with fallback chains.
+- Skill proposals recur across cycles but lack a mandatory execution gate, creating a persistent proposal-implementation gap.
 - Pruning removes 38-49 facts/events per cycle but self-diagnosis finds zero organ errors, suggesting pruning may discard diagnostic context needed for 
 - Path resolution failures ("Kein ausführbarer Pyth") indicate inputs are not canonicalized to absolute paths via ZOETRON_DATA before filesystem access.
 - Proposed skills (ProviderFallbackChain, ConvergenceGate, etc.) accumulate without implementation - the SkillValidationGate proposal itself was never v
@@ -51,11 +56,6 @@
 - The system severely overestimated its reliability (predicted 6 successes, actual 1), revealing a calibration gap where free-tier availability is treat
 - Prose-only artifacts fail to converge; executable Python code blocks are a necessary condition for task completion in the 'Alte Träume miteinander ver
 - Free-tier models on OpenRouter exhibit systematic unreliability: Google models consistently hit 429 rate limits while NVIDIA models intermittently ret
-- Failure timestamps cluster around specific models (Nemotron 502, Gemma 429), so FailurePatternMiner can quickly emit targeted fallbacks (e.g., 'on 429
-- Skill proposals accumulate but remain unimplemented because no autonomous loop exists to promote a proposal → write code → register tool → verify refl
-- Reflex execution fails silently when tool paths are invalid or data directories missing (hand_action exit 0, reflex_used ok=false), revealing a gap be
-- High metabolic stress (0.836) forces conservative budgets that starve the very planners needed to recover from model failures, creating a death spiral
-- Model reliability is the primary bottleneck: 502/429 errors cascade into planner failures and wasted cycles, making per-provider circuit-breakers (Mod
 
 ---
 
