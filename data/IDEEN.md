@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 08:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 08:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -19,7 +19,7 @@
 - Add @circuit_breaker decorator with configurable failure threshold, half-open probe interval, and automatic me *(hatte die Idee 3×)*
 - Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run i *(hatte die Idee 3×)*
 - Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as *(hatte die Idee 3×)*
-- Implement a calibration layer that multiplies cycle estimates by 2.0 and learns per-goal correction factors fr *(hatte die Idee 2×)*
+- Create a skill graduation pipeline that auto-promotes proposals to deployed skills after passing validation te *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -30,17 +30,22 @@
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge decays silently; no scheduled verification against external ground truth exists to detect staleness.
+- Budget exhaustion triggers conserve mode that queues tasks, but no proactive guard prevents overcommitment before budget check.
+- Skill proposals accumulate without an automated validation-to-deployment pipeline, creating a gap between generation and operational use.
+- A single reliable fallback model (inclusionai/ling-3.0-flash-fin) rescued the system after four consecutive provider failures.
+- Model provider rate limits (429) and upstream overloads (502) cause cascading failures across multiple free-tier models simultaneously.
 - Aggressive pruning (24 events/cycle) discards failure context needed for longitudinal pattern detection.
 - Single-cycle swarm convergence with score 8 may reflect insufficient critic diversity rather than true solution quality.
 - Calibration MAE of 3 cycles reveals predictor drift; self-scores cannot be trusted until retrained on recent (predicted, actual) pairs.
@@ -51,11 +56,6 @@
 - Simultaneous 429 errors across multiple OpenRouter-hosted models indicate provider-level rate limiting, not model-specific issues, meaning diversifica
 - The inclusionai/ling-3.0-flash-fin model succeeded consistently (5-12s latency) while all major providers (z-ai, google, nvidia) hit rate limits or 50
 - Under high stress (stress=1.0, conserve mode), the system's extremely limited budget (max_tasks:3, max_iterations:1) caused cascading timeouts, reveal
-- Synchronous hand actions time out under load without fallback, blocking critical paths.
-- Self-diagnosis reports zero organ errors while external model dependencies are failing, revealing a monitoring blind spot.
-- Memory pruning occurs only via manual invocation, risking unbounded growth between runs.
-- Skill proposals are generated but lack an automated incubation pipeline to validate against real failure scenarios before promotion.
-- External model APIs fail frequently due to rate limits and overloads, causing cascading failures without automatic failover.
 
 ---
 

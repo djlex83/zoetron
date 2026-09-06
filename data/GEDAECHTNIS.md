@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12073 Fakten** · Stand 2026-09-06 08:33 UTC · aktualisiert bei jedem Herzschlag
+**12075 Fakten** · Stand 2026-09-06 08:43 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7088
+- **dream:** 7093
 - **swarm_artifact:** 2305
 - **last_swarm_critique:** 789
-- **anti_pattern:** 649
+- **anti_pattern:** 647
 - **last_swarm_goal:** 537
-- **strategy:** 326
+- **strategy:** 325
 - **tool:** 167
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906084120:5:73c7cb`
+*06.09. 08:41 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; no scheduled verification against external ground truth exists to detect staleness.
+
+### `dream:20260906084120:4:11ff81`
+*06.09. 08:41 UTC · Quelle: dream*
+
+Budget exhaustion triggers conserve mode that queues tasks, but no proactive guard prevents overcommitment before budget check.
+
+### `dream:20260906084120:3:febf23`
+*06.09. 08:41 UTC · Quelle: dream*
+
+Skill proposals accumulate without an automated validation-to-deployment pipeline, creating a gap between generation and operational use.
+
+### `dream:20260906084120:2:8ff854`
+*06.09. 08:41 UTC · Quelle: dream*
+
+A single reliable fallback model (inclusionai/ling-3.0-flash-fin) rescued the system after four consecutive provider failures.
+
+### `dream:20260906084120:1:52e9b8`
+*06.09. 08:41 UTC · Quelle: dream*
+
+Model provider rate limits (429) and upstream overloads (502) cause cascading failures across multiple free-tier models simultaneously.
 
 ### `dream:20260906083033:5:48b0e1`
 *06.09. 08:30 UTC · Quelle: dream*
@@ -46350,16 +46375,6 @@ Repeated 429 Too Many Requests errors show rate‑limit bottlenecks that can be 
 *23.08. 08:52 UTC · Quelle: dream*
 
 High latency spikes up to 71.9 s trigger timeouts, indicating a need for adaptive latency circuit breakers to fallback to faster models.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Mehr Skills wirklich nut:2`
-*23.08. 08:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): AI-Native Skill Synthesis - Ingest all repository code, docs, and existing scripts into a code-embedding index (Tree-sitter + CodeBERT). Use an LLM agent to: (1) extract reusable capabilities as candidate skills with signatur
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Mehr Skills wirklich nut:1`
-*23.08. 08:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Event-Driven Skill Mesh - Model skills as stateless actors communicating via a message broker (NATS/Kafka). Each skill declares its event subscriptions (topics) and publications. Deploy a sidecar proxy per skill that handles
 
 ### `last_swarm_critique`
 *23.08. 08:33 UTC · Quelle: critic*
