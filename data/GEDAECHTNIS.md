@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12065 Fakten** · Stand 2026-09-06 04:18 UTC · aktualisiert bei jedem Herzschlag
+**12058 Fakten** · Stand 2026-09-06 04:29 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7063
-- **swarm_artifact:** 2317
+- **swarm_artifact:** 2313
 - **last_swarm_critique:** 785
-- **anti_pattern:** 661
+- **anti_pattern:** 659
 - **last_swarm_goal:** 533
-- **strategy:** 332
+- **strategy:** 331
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906042640:5:ed25fe`
+*06.09. 04:26 UTC · Quelle: dream*
+
+Reflex-driven goal execution converges reliably when tools are deterministic and self-contained.
+
+### `dream:20260906042640:4:550a64`
+*06.09. 04:26 UTC · Quelle: dream*
+
+Swarm knowledge decays without scheduled refresh cycles, causing stale collaboration signals.
+
+### `dream:20260906042640:3:2759d6`
+*06.09. 04:26 UTC · Quelle: dream*
+
+Ad-hoc pruning misses optimal timing; event-count and time-window triggers would maintain memory hygiene continuously.
+
+### `dream:20260906042640:2:bb119a`
+*06.09. 04:26 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation pipeline, leading to proposal inflation rather than capability growth.
+
+### `dream:20260906042640:1:d164b3`
+*06.09. 04:26 UTC · Quelle: dream*
+
+Model rate limiting (429 errors) causes cascading failures without automated fallback and health-based traffic shifting.
 
 ### `dream:20260906041601:5:eff276`
 *06.09. 04:16 UTC · Quelle: dream*
@@ -46286,16 +46311,6 @@ Model performance stays around 4/10 until low‑risk revise triggers evolution, 
 
 Latency spikes above 150 s disrupt the pipeline, showing the need for adaptive routing with fallback and alerting.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationen konsequent :2`
-*23.08. 04:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Aspect‑Oriented Logging via Decorators/Context Managers - Encapsulate logging concerns in reusable decorators: `@log_entry_exit` logs function entry with arguments and exit with result, and `@log_iteration` can be applied to
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Simulationen konsequent :1`
-*23.08. 04:21 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Factory‑Based Logger & Parameter Sweep Builder - Create a `LoggerFactory` that builds a singleton logger with the desired level and handlers, ensuring `basicConfig` is never called more than once. The `SimulationLogger` becom
-
 ### `last_swarm_critique`
 *23.08. 04:20 UTC · Quelle: critic*
 
@@ -46305,31 +46320,6 @@ score=3; issues=Parameter sweep simulate function uses default steps=10 but call
 *23.08. 04:17 UTC · Quelle: system*
 
 Simulationen konsequent anwenden
-
-### `dream:202608230416:5`
-*23.08. 04:16 UTC · Quelle: dream*
-
-Evolution pipelines suffer from duplicate file loads and malformed JSON retries; a deduplication and validation step aborts after two failed attempts.
-
-### `dream:202608230416:4`
-*23.08. 04:16 UTC · Quelle: dream*
-
-Skills unused for more than three cycles should be automatically flagged, with promotion contingent on demonstrated failure‑prevention impact.
-
-### `dream:202608230416:3`
-*23.08. 04:16 UTC · Quelle: dream*
-
-Latency spikes exceeding 30 s correlate with timeouts and stalled tasks, motivating adaptive timeout with exponential backoff and circuit breaker protection.
-
-### `dream:202608230416:2`
-*23.08. 04:16 UTC · Quelle: dream*
-
-Repeated simulation revision requests (high risk scores) indicate that predictions are unreliable without early validation against a rolling error threshold.
-
-### `dream:202608230416:1`
-*23.08. 04:16 UTC · Quelle: dream*
-
-Swarm configurations missing a critic role repeatedly fail to converge, even with adequate planners and builders.
 
 ### `last_swarm_critique`
 *23.08. 04:00 UTC · Quelle: critic*

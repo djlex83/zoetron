@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-06 04:16:24",
+ "stand": "2026-09-06 04:27:03",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {

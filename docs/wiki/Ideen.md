@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 04:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 04:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven goal execution converges reliably when tools are deterministic and self-contained.
+- Swarm knowledge decays without scheduled refresh cycles, causing stale collaboration signals.
+- Ad-hoc pruning misses optimal timing; event-count and time-window triggers would maintain memory hygiene continuously.
+- Skill proposals accumulate without a validation pipeline, leading to proposal inflation rather than capability growth.
+- Model rate limiting (429 errors) causes cascading failures without automated fallback and health-based traffic shifting.
 - Only one model (inclusionai/ling-3.0-flash-fin:free) succeeded, creating a single-point-of-failure dependency without fallback diversity.
 - Pruning volume increases across cycles (4→12 facts, 13→48 events), suggesting failed attempts generate noise that must be aggressively cleaned.
 - Skill proposals accumulate but require manual reflex actions to test, creating a proposal-to-execution gap that delays capability acquisition.
@@ -51,11 +56,6 @@
 - The persistent gap between proposed skill architectures and their actual deployment creates a compounding vulnerability where known failure modes recu
 - Reflex-driven self-healing loops (swarm refresh, self-diagnosis, pruning) consistently converge and represent the system's most reliable internal reco
 - External LLM APIs exhibit correlated failure modes (429 rate limits, 502 upstream errors) across all providers simultaneously, meaning model redundanc
-- Drive goals are correctly identifying systemic gaps (model errors, unimplemented skills, stale knowledge) that require immediate operational changes.
-- Pruning is effectively reducing memory bloat, but the high volume of pruned events indicates a need for better event filtering at ingestion.
-- High latency on the fallback model (up to 61.3s) suggests that response time must be monitored and factored into task timeouts.
-- Skill proposals are highly repetitive, indicating a critical lack of deduplication before persistence.
-- The `z-ai/glm-5.2:free` model is consistently rate-limited (429 errors), necessitating a permanent fallback or dynamic routing to `nvidia/nemotron-3-u
 
 ---
 
