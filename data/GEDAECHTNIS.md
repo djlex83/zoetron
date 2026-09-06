@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11929 Fakten** · Stand 2026-09-06 20:35 UTC · aktualisiert bei jedem Herzschlag
+**11919 Fakten** · Stand 2026-09-06 20:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7041
+- **dream:** 7031
 - **swarm_artifact:** 2233
 - **last_swarm_critique:** 812
 - **anti_pattern:** 609
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906204405:5:3061b2`
+*06.09. 20:44 UTC · Quelle: dream*
+
+DriveScheduler's topological sort (model reliability → swarm update → skill conversion) is never instantiated, so resource contention and stale-data reads persist.
+
+### `dream:20260906204405:4:d13b14`
+*06.09. 20:44 UTC · Quelle: dream*
+
+Dream cycles produce insights and skill proposals that are never validated through execution + simulation + scoring, creating a proposal–validation gap.
+
+### `dream:20260906204405:3:239915`
+*06.09. 20:44 UTC · Quelle: dream*
+
+Filesystem operations fail intermittently because relative paths drift across contexts; PathResolver canonicalization must precede every I/O action.
+
+### `dream:20260906204405:2:24dcca`
+*06.09. 20:44 UTC · Quelle: dream*
+
+Goals repeatedly converge without verified evidence (score ≥ 8, critic sign-off, zero critical risks) because ConvergenceGate is proposed but not enforced.
+
+### `dream:20260906204405:1:145c22`
+*06.09. 20:44 UTC · Quelle: dream*
+
+Model unreliability cascades into failed simulations, stale swarm data, and unconverged goals because no health-checked fallback chain exists before critical operations.
 
 ### `dream:20260906203310:5:0f35b2`
 *06.09. 20:33 UTC · Quelle: dream*
@@ -45691,81 +45716,6 @@ Prune runs report zero facts/events pruned for five consecutive cycles, indicati
 *23.08. 20:48 UTC · Quelle: dream*
 
 Duplicate skill proposals (shared scorer, MemoryStore contracts) recur across dream cycles, wasting consolidation capacity.
-
-### `dream:202608232043:5`
-*23.08. 20:43 UTC · Quelle: dream*
-
-The simulator occasionally emits 'go' verdicts with zero enumerated risks, a blind spot that multiple proposals flag by requiring a minimum risk count and a mandatory second simulation pass for any zero-risk approval.
-
-### `dream:202608232043:4`
-*23.08. 20:43 UTC · Quelle: dream*
-
-Free-tier model latency varies 2x (9.7–19.7 s) and 502/429 errors appear, yet fallbacks treat each model independently instead of sharing a single rate-limit pool with exponential backoff and jitter.
-
-### `dream:202608232043:3`
-*23.08. 20:43 UTC · Quelle: dream*
-
-MemoryStore API drift causes runtime failures in hands-execute, prompting repeated proposals for both startup contract tests and CI-level static verification of every invoked method.
-
-### `dream:202608232043:2`
-*23.08. 20:43 UTC · Quelle: dream*
-
-Score calibration emerges as a systemic weakness: three independent proposals across cycles demand cross-checking evolution winners, predictor outputs, and swarm results against a shared scorer with automatic calibration events when scores diverge >2 points.
-
-### `dream:202608232043:1`
-*23.08. 20:43 UTC · Quelle: dream*
-
-Pruning runs consistently remove zero facts and events across multiple cycles, indicating the retention criteria are either misconfigured or the thresholds are set too high to ever trigger.
-
-### `dream:202608232042:5`
-*23.08. 20:42 UTC · Quelle: dream*
-
-Pruning thresholds are set too high (zero events pruned across runs), leaving calibration-critical data buried in noise.
-
-### `dream:202608232042:4`
-*23.08. 20:42 UTC · Quelle: dream*
-
-Simulations frequently emit zero-risk 'go' verdicts that bypass scrutiny, requiring a mandatory second-pass gate.
-
-### `dream:202608232042:3`
-*23.08. 20:42 UTC · Quelle: dream*
-
-Internal score predictors drift upward systematically; only independent re-scoring with a fixed threshold (Δ>2) catches inflation.
-
-### `dream:202608232042:2`
-*23.08. 20:42 UTC · Quelle: dream*
-
-All :free-tier models share a hidden rate-limit pool, making provider diversity illusory without explicit pooling logic.
-
-### `dream:202608232042:1`
-*23.08. 20:42 UTC · Quelle: dream*
-
-Model latency spikes (35s vs 19s baseline) cascade into swarm failures and demand automatic tier degradation.
-
-### `dream:202608232037:5`
-*23.08. 20:37 UTC · Quelle: dream*
-
-Calibration events are sparse while drive goals explicitly demand more frequent calibration to improve model predictions.
-
-### `dream:202608232037:4`
-*23.08. 20:37 UTC · Quelle: dream*
-
-Skill proposals accumulate without an execution pipeline; none are auto-converted to tracked issues or scheduled for review.
-
-### `dream:202608232037:3`
-*23.08. 20:37 UTC · Quelle: dream*
-
-Documentation metrics drift across README, docs, and code (heartbeat: 5 min vs 10 min vs 300 s) because no single source of truth is enforced.
-
-### `dream:202608232037:2`
-*23.08. 20:37 UTC · Quelle: dream*
-
-The pruner runs repeatedly but prunes zero events, indicating the pruning criteria or scheduler are misconfigured or ineffective.
-
-### `dream:202608232037:1`
-*23.08. 20:37 UTC · Quelle: dream*
-
-Model latency frequently exceeds 30 s (observed 35.2 s) without automatic degradation, causing unpredictable swarm start delays.
 
 ### `last_swarm_goal`
 *23.08. 19:41 UTC · Quelle: system*
