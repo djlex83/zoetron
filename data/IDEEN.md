@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 11:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -34,13 +34,18 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand action (exit 0, 1.04s) succeeded immediately after repeated model failures, proving that non-model fallbacks are faster and more reliable under d
+- The simulation required 3 revisions before succeeding, demonstrating that initial plans systematically underestimate complexity and early revision det
+- Metabolic conservation mode (stress=1.0, max 1 iteration) severely constrained execution capacity, showing that internal state throttling can prevent 
+- The nvidia/nemotron-3-ultra-550b-a55b model succeeded every time but with high latency (32-87s), revealing that reliability and speed are inversely co
+- The z-ai/glm-5.2 model failed repeatedly with HTTP 429 rate-limit errors when called in rapid succession, indicating that retry without backoff on a k
 - Stale swarm data degrades decision quality; freshness validation must be paired with refresh cycles to avoid propagating outdated information into rou
 - Skill proposals generated during consolidation are only durable if validated through sandbox testing before promotion to the active registry, preventi
 - Reactive reflexes successfully triggered skill-building, but proactive mechanisms like circuit breakers and health-score-based routing would prevent c
@@ -51,11 +56,6 @@
 - Swarm convergence fails (score 0) despite evolution, suggesting the planner-critic loop lacks a measurable quality gate for skill synthesis.
 - Fallback chains succeed only when a model with distinct quota (inclusionai/ling-3.0-flash-fin) remains available, revealing single-point-of-failure in
 - Rate limiting (429) cascades across multiple free-tier models simultaneously, indicating shared quota pools or correlated traffic spikes.
-- Evolutionary variant generation with simulation feedback can recover from 0/10 to 7-8/10 scores within one cycle.
-- Calibration error of 6 points (predicted 6, actual 0) indicates the predictor overestimates success when code execution is absent.
-- Skill artifacts without executable code blocks are rejected by the critic, proving that prose-only outputs cannot converge to working capabilities.
-- Nvidia Nemotron provides reliable but high-latency responses (25-83s), making it unsuitable for latency-critical paths without caching.
-- Free-tier models frequently hit 429 rate limits, requiring automatic fallback and retry-with-backoff strategies.
 
 ---
 

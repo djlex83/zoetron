@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12078 Fakten** · Stand 2026-09-06 11:46 UTC · aktualisiert bei jedem Herzschlag
+**12071 Fakten** · Stand 2026-09-06 11:57 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7102
-- **swarm_artifact:** 2300
+- **swarm_artifact:** 2296
 - **last_swarm_critique:** 792
-- **anti_pattern:** 641
+- **anti_pattern:** 639
 - **last_swarm_goal:** 540
-- **strategy:** 322
+- **strategy:** 321
 - **tool:** 169
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906115531:5:0cf408`
+*06.09. 11:55 UTC · Quelle: dream*
+
+Hand action (exit 0, 1.04s) succeeded immediately after repeated model failures, proving that non-model fallbacks are faster and more reliable under degraded conditions.
+
+### `dream:20260906115531:4:2da9ba`
+*06.09. 11:55 UTC · Quelle: dream*
+
+The simulation required 3 revisions before succeeding, demonstrating that initial plans systematically underestimate complexity and early revision detection would reduce wasted cycles.
+
+### `dream:20260906115531:3:352ad9`
+*06.09. 11:55 UTC · Quelle: dream*
+
+Metabolic conservation mode (stress=1.0, max 1 iteration) severely constrained execution capacity, showing that internal state throttling can prevent convergence even when a valid path exists.
+
+### `dream:20260906115531:2:6530ab`
+*06.09. 11:55 UTC · Quelle: dream*
+
+The nvidia/nemotron-3-ultra-550b-a55b model succeeded every time but with high latency (32-87s), revealing that reliability and speed are inversely correlated and model selection must account for task urgency.
+
+### `dream:20260906115531:1:732ac8`
+*06.09. 11:55 UTC · Quelle: dream*
+
+The z-ai/glm-5.2 model failed repeatedly with HTTP 429 rate-limit errors when called in rapid succession, indicating that retry without backoff on a known-failing model wastes budget and stalls progress.
 
 ### `dream:20260906114353:5:729ff0`
 *06.09. 11:43 UTC · Quelle: dream*
@@ -46330,41 +46355,6 @@ score=6; issues=save_last_run uses naive datetime without timezone awareness; co
 *23.08. 11:51 UTC · Quelle: system*
 
 Modellkalibrierung regelmäßig durchführen
-
-### `dream:202608231151:5`
-*23.08. 11:51 UTC · Quelle: dream*
-
-Unaddressed simulation risks (revisions required) led to a revise verdict, demonstrating that risk mitigation must be enforced before swarm continuation.
-
-### `dream:202608231151:4`
-*23.08. 11:51 UTC · Quelle: dream*
-
-Critic feedback limited to discovery commands caused blind spots, implying that diverse critic roles are needed to catch varied failure modes.
-
-### `dream:202608231151:3`
-*23.08. 11:51 UTC · Quelle: dream*
-
-Limited iteration budget (max_iterations=2) prevented convergence, showing that insufficient search cycles lead to premature termination and low scores.
-
-### `dream:202608231151:2`
-*23.08. 11:51 UTC · Quelle: dream*
-
-Evolution-generated high scores did not improve actual swarm outcome, suggesting the fitness function is misaligned with real‑world performance metrics.
-
-### `dream:202608231151:1`
-*23.08. 11:51 UTC · Quelle: dream*
-
-High latency spikes (>30s) correlate with low task scores, indicating that model selection should avoid high‑latency variants for time‑sensitive swarm roles.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modellleistung durch reg:1`
-*23.08. 11:45 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 7, 9]): Cross‑validated temperature scaling integrated into training pipeline - Treat calibration as a hyperparameter (temperature) and select it via nested cross‑validation on a validation split, never using the test set. Af
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modellleistung durch reg:0`
-*23.08. 11:45 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 9, 7]): Strict holdout‑based calibration with persistence - Split data into train, calibration holdout, and test. Fit the base model on train only. Fit calibrators (Platt scaling or isotonic regression) exclusively on the cal
 
 ### `last_swarm_critique`
 *23.08. 11:44 UTC · Quelle: critic*
