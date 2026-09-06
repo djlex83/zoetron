@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12081 Fakten** · Stand 2026-09-06 05:55 UTC · aktualisiert bei jedem Herzschlag
+**12079 Fakten** · Stand 2026-09-06 06:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7078
-- **swarm_artifact:** 2318
+- **dream:** 7083
+- **swarm_artifact:** 2314
 - **last_swarm_critique:** 787
-- **anti_pattern:** 657
+- **anti_pattern:** 655
 - **last_swarm_goal:** 535
-- **strategy:** 330
+- **strategy:** 329
 - **tool:** 166
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906060857:5:8dba36`
+*06.09. 06:08 UTC · Quelle: dream*
+
+Pruning runs reactively via manual invocation instead of event-count or time-window triggers.
+
+### `dream:20260906060857:4:57f913`
+*06.09. 06:08 UTC · Quelle: dream*
+
+Skill proposals accumulate in logs without an incubation pipeline to validate, sandbox, and promote them.
+
+### `dream:20260906060857:3:ce10c6`
+*06.09. 06:08 UTC · Quelle: dream*
+
+Reflex execution succeeds for known procedures (schwarmwissen) but cannot handle novel model routing decisions.
+
+### `dream:20260906060857:2:569c2e`
+*06.09. 06:08 UTC · Quelle: dream*
+
+Self-diagnosis only checks internal organs, missing degraded external APIs that cause 80% of task failures.
+
+### `dream:20260906060857:1:f8f4ec`
+*06.09. 06:08 UTC · Quelle: dream*
+
+External model dependencies fail catastrophically under rate limits (429) and upstream errors (502) with zero automatic failover.
 
 ### `tool:fähigkeits-vorschläge-in-nutzbare-skills`
 *06.09. 05:53 UTC · Quelle: hands*
@@ -46370,16 +46395,6 @@ Missing method errors like MemoryStore.add_fact expose interface contract gaps t
 *23.08. 06:09 UTC · Quelle: dream*
 
 Model latency fluctuates dramatically (4‑44 s), showing the need for latency‑aware routing and dynamic failover.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeitsvorschläge erf:2`
-*23.08. 05:53 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Probabilistic Skill Recommendation Engine - Shift from deterministic adoption metrics to a probabilistic recommendation system that learns from historical skill usage, test outcomes, and developer feedback. Collect real test
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeitsvorschläge erf:0`
-*23.08. 05:53 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Data-Driven Real Test Execution - Replace the random simulation in the Skill Adoption Analysis Script with a real test execution framework that pulls actual skill test results from the CI/CD pipeline or test management system
 
 ### `last_swarm_critique`
 *23.08. 05:53 UTC · Quelle: critic*
