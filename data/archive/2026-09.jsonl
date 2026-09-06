@@ -17585,3 +17585,4 @@
 {"ts": 1788079139.4846513, "kind": "act_done", "payload": {"goal_title": "Faehigkeiten schneller einsetzen", "score": 1, "converged": false}}
 {"ts": 1788079140.2142787, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.44, "gelesen": 0}}
 {"ts": 1788079142.2771056, "kind": "issue_synced", "payload": {"issue": 242, "state": "open"}}
+{"ts": 1788079327.6531386, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

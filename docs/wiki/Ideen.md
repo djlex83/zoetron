@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 08:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 08:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events (83) but zero facts, suggesting fact retention policy is misaligned with actual consolidation bottlenecks.
+- Skill proposals accumulate (10+ in logs) but none are versioned, tested, or deployed, creating a proposal-execution gap.
+- Swarm knowledge staleness was only detected via manual reflex, indicating missing automated validation against external ground truth.
+- Multiple independent skill proposals (MetabolismGuard, DreamTimeoutGuard, latency SLA guard) converge on the same unmet need: proactive resource budge
+- Recurring 429 errors from z-ai/glm-5.2:free reveal a single-point-of-failure in model routing with no circuit breaker or fallback depth monitoring.
 - Swarm knowledge decays silently; no scheduled verification against external ground truth exists to detect staleness.
 - Budget exhaustion triggers conserve mode that queues tasks, but no proactive guard prevents overcommitment before budget check.
 - Skill proposals accumulate without an automated validation-to-deployment pipeline, creating a gap between generation and operational use.
@@ -51,11 +56,6 @@
 - Calibration MAE of 3 cycles reveals predictor drift; self-scores cannot be trusted until retrained on recent (predicted, actual) pairs.
 - Nemotron latency varies 5x (18–90s) suggesting cold-start or queue effects; routing should prefer lower-variance models for time-sensitive tasks.
 - Repeated 429 errors on z-ai/glm-5.2:free indicate persistent rate-limiting that makes it unreliable for production routing.
-- The simulation pathway (verdict: go, 5 risks, 3 revisions) eventually succeeded after repeated model failures, demonstrating that simulation-based rea
-- The hand_action timeout (20.0s, 0 tokens read) combined with the reflex tool failure shows that when the system is already under resource pressure, sy
-- Simultaneous 429 errors across multiple OpenRouter-hosted models indicate provider-level rate limiting, not model-specific issues, meaning diversifica
-- The inclusionai/ling-3.0-flash-fin model succeeded consistently (5-12s latency) while all major providers (z-ai, google, nvidia) hit rate limits or 50
-- Under high stress (stress=1.0, conserve mode), the system's extremely limited budget (max_tasks:3, max_iterations:1) caused cascading timeouts, reveal
 
 ---
 

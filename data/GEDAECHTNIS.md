@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12075 Fakten** · Stand 2026-09-06 08:43 UTC · aktualisiert bei jedem Herzschlag
+**12080 Fakten** · Stand 2026-09-06 08:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7093
+- **dream:** 7098
 - **swarm_artifact:** 2305
 - **last_swarm_critique:** 789
 - **anti_pattern:** 647
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906085213:5:977951`
+*06.09. 08:52 UTC · Quelle: dream*
+
+Pruning removes events (83) but zero facts, suggesting fact retention policy is misaligned with actual consolidation bottlenecks.
+
+### `dream:20260906085213:4:83856b`
+*06.09. 08:52 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in logs) but none are versioned, tested, or deployed, creating a proposal-execution gap.
+
+### `dream:20260906085213:3:6f4aed`
+*06.09. 08:52 UTC · Quelle: dream*
+
+Swarm knowledge staleness was only detected via manual reflex, indicating missing automated validation against external ground truth.
+
+### `dream:20260906085213:2:9b31ec`
+*06.09. 08:52 UTC · Quelle: dream*
+
+Multiple independent skill proposals (MetabolismGuard, DreamTimeoutGuard, latency SLA guard) converge on the same unmet need: proactive resource budgeting before task execution.
+
+### `dream:20260906085213:1:d0f0da`
+*06.09. 08:52 UTC · Quelle: dream*
+
+Recurring 429 errors from z-ai/glm-5.2:free reveal a single-point-of-failure in model routing with no circuit breaker or fallback depth monitoring.
 
 ### `dream:20260906084120:5:73c7cb`
 *06.09. 08:41 UTC · Quelle: dream*
