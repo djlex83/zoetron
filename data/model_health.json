@@ -1,5 +1,5 @@
 {
- "stand": 1788666218.3652048,
+ "stand": 1788666854.5619338,
  "schwelle": 3,
  "sperre_s": 1800,
  "modelle": {
@@ -54,11 +54,11 @@
    "kontofehler": 200
   },
   "z-ai/glm-5.2:free": {
-   "laeufe": 204,
+   "laeufe": 206,
    "fehler": 7,
    "fehler_in_folge": 0,
    "gesperrt_bis": 0.0,
-   "latenz_summe_s": 765.8178379535675,
+   "latenz_summe_s": 774.3518254756927,
    "letzter_fehler": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc",
    "letzte_sperre": 1787756237.575501,
    "kontofehler": 3947

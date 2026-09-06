@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12063 Fakten** · Stand 2026-09-06 03:45 UTC · aktualisiert bei jedem Herzschlag
+**12068 Fakten** · Stand 2026-09-06 03:56 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7053
+- **dream:** 7058
 - **swarm_artifact:** 2322
 - **last_swarm_critique:** 785
 - **anti_pattern:** 663
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906035409:5:4a60a3`
+*06.09. 03:54 UTC · Quelle: dream*
+
+Drive goals are correctly identifying systemic gaps (model errors, unimplemented skills, stale knowledge) that require immediate operational changes.
+
+### `dream:20260906035409:4:df99ac`
+*06.09. 03:54 UTC · Quelle: dream*
+
+Pruning is effectively reducing memory bloat, but the high volume of pruned events indicates a need for better event filtering at ingestion.
+
+### `dream:20260906035409:3:8ab7d1`
+*06.09. 03:54 UTC · Quelle: dream*
+
+High latency on the fallback model (up to 61.3s) suggests that response time must be monitored and factored into task timeouts.
+
+### `dream:20260906035409:2:d70e92`
+*06.09. 03:54 UTC · Quelle: dream*
+
+Skill proposals are highly repetitive, indicating a critical lack of deduplication before persistence.
+
+### `dream:20260906035409:1:3c6903`
+*06.09. 03:54 UTC · Quelle: dream*
+
+The `z-ai/glm-5.2:free` model is consistently rate-limited (429 errors), necessitating a permanent fallback or dynamic routing to `nvidia/nemotron-3-ultra-550b:free`.
 
 ### `dream:20260906034319:5:c35b8b`
 *06.09. 03:43 UTC · Quelle: dream*
