@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12068 Fakten** · Stand 2026-09-06 07:48 UTC · aktualisiert bei jedem Herzschlag
+**12073 Fakten** · Stand 2026-09-06 07:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7083
+- **dream:** 7088
 - **swarm_artifact:** 2305
 - **last_swarm_critique:** 789
 - **anti_pattern:** 649
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906075641:5:dc70a0`
+*06.09. 07:56 UTC · Quelle: dream*
+
+The system spontaneously generates the same model-resilience skill proposals (router, cache, SLA, dashboard) each cycle, indicating it recognizes the pattern but lacks a mechanism to promote proposals into deployed code.
+
+### `dream:20260906075641:4:6562e8`
+*06.09. 07:56 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while the cognitive layer (model router) is failing, revealing a monitoring blind spot between infrastructure health and reasoning capability.
+
+### `dream:20260906075641:3:4641c7`
+*06.09. 07:56 UTC · Quelle: dream*
+
+Aggressive pruning (75→1 events per cycle) keeps working memory lean but discards failure context needed for root-cause analysis of model outages.
+
+### `dream:20260906075641:2:c10579`
+*06.09. 07:56 UTC · Quelle: dream*
+
+Reflex-mode execution reliably closes known goals (swarm revive, knowledge refresh) without LLM calls, proving that compiled skills bypass the unreliable model layer.
+
+### `dream:20260906075641:1:4f987f`
+*06.09. 07:56 UTC · Quelle: dream*
+
+Model inference is the single point of failure: every provider (GLM, Nemotron, Gemma) hits 429 or 502 errors within minutes, making the system effectively blind during high load.
 
 ### `dream:20260906074526:5:7da99a`
 *06.09. 07:45 UTC · Quelle: dream*
