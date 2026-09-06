@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,12 +18,12 @@
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
 - Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
-- Add SkillProposalLifecycle: enforce states proposed→spec_written→implemented→tested→deployed with mandatory tr *(hatte die Idee 2×)*
-- Create GoalAgingPolicy: tag every drive_goal with created_ts, auto-archive goals >7 days with no act_done, sur *(hatte die Idee 2×)*
+- Add a stress-aware scheduler that pauses low-priority swarm tasks when metabolism stress > 0.8 and resumes the *(hatte die Idee 2×)*
+- Create a health-check skill that pings models with lightweight requests every 5 minutes and maintains a real-t *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 25×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
@@ -31,16 +31,21 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 3×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (29 facts, 19 events) after the run suggests the system accumulates noise faster than it consolidates signal, risking loss of usefu
+- Two evolution cycles were insufficient to converge on the goal (score remained 7), indicating that when initial variant quality is low (scores 7–9), t
+- Multiple free-tier models competing simultaneously without quota awareness creates a self-inflicted rate-limit cascade, where each request worsens the
+- The calibration gap (predicted 4 vs actual 7) reveals a persistent self-underestimation pattern that causes the system to set insufficiently ambitious
+- Free-tier models exhibit cascading failure modes (502 upstream overload, 429 rate limits) that are not isolated incidents but systemic — the system tr
 - Stress=1.0 conserve budget (max_tasks=3, max_iterations=1) forces premature truncation of multi-model fallback chains.
 - Hand-action execution succeeds on retry (exit 1 → exit 0) suggesting transient environment issues, not code defects.
 - Simulation-driven revision loops (5 risks → 5 revisions → 4 applied) converge but consume disproportionate latency when primary models fail.
@@ -51,11 +56,6 @@
 - Swarm knowledge refresh succeeds reflexively but fails to translate into updated drive goals, leaving intelligence stale.
 - Proposed skills accumulate without automated validation, causing reflex failures and timeouts when attempted manually.
 - Model failures (502/429) and high latency on the primary model cause systemic unreliability and trigger conserve mode, halting skill development.
-- Pruning removes facts/events regularly (15 facts, 65 events total) but does not target stale model performance metrics that corrupt routing decisions.
-- Reflex-based swarm knowledge refresh succeeds consistently (two consecutive runs converged), proving deterministic scripts outperform LLM calls for da
-- Dream-generated skill proposals (ModelRouter, circuit breaker, fallback chain, SkillIncubator, freshness audit) accumulate but lack an incubation pipe
-- A fast fallback model (inclusionai/ling-3.0-flash-fin: 2.7s latency) succeeds when primary models fail, but traffic shifting is manual, not automatic.
-- Model endpoint failures are systemic (71 failures vs 39 successes) with rate limits (429) and upstream overloads (502) affecting multiple providers si
 
 ---
 

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12046 Fakten** · Stand 2026-09-06 14:13 UTC · aktualisiert bei jedem Herzschlag
+**12045 Fakten** · Stand 2026-09-06 14:24 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7097
-- **swarm_artifact:** 2278
+- **swarm_artifact:** 2277
 - **last_swarm_critique:** 809
 - **anti_pattern:** 625
 - **last_swarm_goal:** 541
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906142148:5:cb8241`
+*06.09. 14:21 UTC · Quelle: dream*
+
+Aggressive pruning (29 facts, 19 events) after the run suggests the system accumulates noise faster than it consolidates signal, risking loss of useful intermediate state before it can be reused.
+
+### `dream:20260906142148:4:da4f7d`
+*06.09. 14:21 UTC · Quelle: dream*
+
+Two evolution cycles were insufficient to converge on the goal (score remained 7), indicating that when initial variant quality is low (scores 7–9), the system needs a convergence threshold check before declaring completion.
+
+### `dream:20260906142148:3:87e783`
+*06.09. 14:21 UTC · Quelle: dream*
+
+Multiple free-tier models competing simultaneously without quota awareness creates a self-inflicted rate-limit cascade, where each request worsens the conditions for the next.
+
+### `dream:20260906142148:2:a1fb9d`
+*06.09. 14:21 UTC · Quelle: dream*
+
+The calibration gap (predicted 4 vs actual 7) reveals a persistent self-underestimation pattern that causes the system to set insufficiently ambitious targets and prematurely accept mediocre scores.
+
+### `dream:20260906142148:1:51b270`
+*06.09. 14:21 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading failure modes (502 upstream overload, 429 rate limits) that are not isolated incidents but systemic — the system treated them as transient noise rather than a structural reliability gap.
 
 ### `dream:20260906141010:5:92b4aa`
 *06.09. 14:10 UTC · Quelle: dream*
@@ -46228,31 +46253,6 @@ ABGELEHNT von Evolution (Score 7): CLI-first complete rewrite - Rewrite validate
 *23.08. 14:21 UTC · Quelle: system*
 
 Fehler bei Modellen und Issues reduzieren
-
-### `dream:202608231420:5`
-*23.08. 14:20 UTC · Quelle: dream*
-
-MemoryStore API mismatch ('add_fact' missing) reveals schema drift between hand execution and memory module interfaces.
-
-### `dream:202608231420:4`
-*23.08. 14:20 UTC · Quelle: dream*
-
-Swarm convergence fails with 5:1:1 builder-heavy role ratio and only 2 cycles, suggesting insufficient critic/planner oversight.
-
-### `dream:202608231420:3`
-*23.08. 14:20 UTC · Quelle: dream*
-
-Critic role producing unparseable output blocks evolution improvement cycles despite high variant scores (8/10).
-
-### `dream:202608231420:2`
-*23.08. 14:20 UTC · Quelle: dream*
-
-Calibration drift of ±2 points on CI workflow estimates indicates missing feedback loop between predicted and actual scores.
-
-### `dream:202608231420:1`
-*23.08. 14:20 UTC · Quelle: dream*
-
-Free-tier models exhibit cascading 429/502 failures under load, making them unreliable as primary inference endpoints without circuit-breaker fallbacks.
 
 ### `last_swarm_goal`
 *23.08. 13:59 UTC · Quelle: system*
