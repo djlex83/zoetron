@@ -1,20 +1,40 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12079 Fakten** · Stand 2026-09-06 06:11 UTC · aktualisiert bei jedem Herzschlag
+**12079 Fakten** · Stand 2026-09-06 06:31 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7083
-- **swarm_artifact:** 2314
-- **last_swarm_critique:** 787
+- **dream:** 7078
+- **swarm_artifact:** 2316
+- **last_swarm_critique:** 788
 - **anti_pattern:** 655
-- **last_swarm_goal:** 535
+- **last_swarm_goal:** 536
 - **strategy:** 329
 - **tool:** 166
-- **hand_result:** 131
+- **hand_result:** 132
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fähigkeiten gezielt ausb:2`
+*06.09. 06:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.0): Adaptiver Mikro-Lern-Loop mit Selbstbewertung und Difficulty-Scaling - Bau ein Python-Programm (adaptive_skill_builder.py), das einen geschlossenen Lern-Loop implementiert: (1) Definiere Skill-Stufen (Anfänger→Fortgeschritt
+
+### `anti_pattern:Previous attempt scored 2/10. Goal: Fähigkeiten gezielt ausb:1`
+*06.09. 06:28 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.5): Dateibasiertes Skill-Gap-Tracker mit Lernpfad-Generator - Erstelle zwei Dateien: (1) skill_gap_analyzer.py – liest eine JSON-Datei (skills.json) mit aktuellen und Ziel-Kompetenzen, berechnet Lücken mittels reinem Python-Cod
+
+### `last_swarm_critique`
+*06.09. 06:28 UTC · Quelle: critic*
+
+score=2; issues=Artefakte laufen nicht laut Sandbox-Urteil – Tracebacks in beiden Dateien (Zeile 11 bzw. 14), vermutlich fehlende Abhängigkeiten jsonschema/psutil; Drittes Artefakt ('Skill-Score-Historie') enthält nur Bash-Befehle, kein lauffähiges Python; Zie
+
+### `last_swarm_goal`
+*06.09. 06:22 UTC · Quelle: system*
+
+Fähigkeiten gezielt ausbauen statt nur sammeln
 
 ### `dream:20260906060857:5:8dba36`
 *06.09. 06:08 UTC · Quelle: dream*
@@ -46351,16 +46371,6 @@ Latency spikes above 20 s observed for the super model indicate that static mo
 
 Missing interface methods (e.g., MemoryStore.add_fact) cause runtime AttributeError, highlighting the need for pre‑execution contract validation.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Gelerntes Können anwende:2`
-*23.08. 06:12 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Functional reactive pipeline with dependency injection and declarative configura - Treat the worker health process as a stream of events processed by a pipeline of pure functions: `read_config => validate => health_check => d
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Gelerntes Können anwende:0`
-*23.08. 06:12 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Modular function-based design with explicit configuration and robust error handl - Encapsulate the core logic in pure functions that accept configuration parameters (e.g., thresholds, intervals) as arguments. Use a small conf
-
 ### `last_swarm_critique`
 *23.08. 06:12 UTC · Quelle: critic*
 
@@ -46370,31 +46380,6 @@ score=5; issues=Hardcoded values limit reusability; parameters should be configu
 *23.08. 06:09 UTC · Quelle: system*
 
 Gelerntes Können anwenden
-
-### `dream:202608230609:5`
-*23.08. 06:09 UTC · Quelle: dream*
-
-Swarm reliability problems are tied to task‑queue worker sentinel failures, highlighting the necessity for robust worker health checks and restart mechanisms.
-
-### `dream:202608230609:4`
-*23.08. 06:09 UTC · Quelle: dream*
-
-Calibration errors (predicted 4 vs actual 7) reveal systematic over‑confidence, requiring continuous calibration feedback to align predictions with outcomes.
-
-### `dream:202608230609:3`
-*23.08. 06:09 UTC · Quelle: dream*
-
-Simulation verdicts of 'revise' with low risk scores repeatedly trigger evolution, indicating low‑risk revisions are a reliable signal for skill improvement.
-
-### `dream:202608230609:2`
-*23.08. 06:09 UTC · Quelle: dream*
-
-Missing method errors like MemoryStore.add_fact expose interface contract gaps that cause runtime failures despite successful model inference.
-
-### `dream:202608230609:1`
-*23.08. 06:09 UTC · Quelle: dream*
-
-Model latency fluctuates dramatically (4‑44 s), showing the need for latency‑aware routing and dynamic failover.
 
 ### `last_swarm_critique`
 *23.08. 05:53 UTC · Quelle: critic*

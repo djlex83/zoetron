@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 06:09 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 06:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,17 +15,17 @@
 - Guarantee one remediation task per meta-cycle via ReservedRemediationBudget scheduler to prevent pruning from  *(hatte die Idee 3×)*
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
-- Create an automated skill proposal evaluator that scores by impact/effort/risk and auto-implements top proposa *(hatte die Idee 2×)*
 - Automate the event pruning process to trigger automatically when the event store exceeds a specific threshold  *(hatte die Idee 2×)*
 - Develop a reflex script that automatically converts stale swarm task proposals into actionable builder tasks t *(hatte die Idee 2×)*
 - Build model router with per-model rate-limit counters, exponential backoff, latency tracking, and automatic fa *(hatte die Idee 2×)*
 - Implement a calibration layer that multiplies cycle estimates by 2.0 and learns per-goal correction factors fr *(hatte die Idee 2×)*
+- Create a failure-signature cache (model, error_type, timestamp) enabling predictive avoidance via cooldown win *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
