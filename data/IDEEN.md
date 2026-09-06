@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 23:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 23:30 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress-aware scheduling proposals emerge when metabolism stress exceeds thresholds, showing homeostatic regulation is a learned behavior.
+- Self-generated skill proposals target observed failure modes (model health, reflex validation, proposal pipeline) indicating effective meta-learning.
+- Pruning volume (facts/events) correlates with experience density; aggressive pruning during high-throughput phases prevents memory bloat.
+- Reflex execution succeeds when tool scripts exist and paths resolve, but fails silently when preconditions aren't validated beforehand.
+- Model failures (502/429) cluster on specific providers, making provider-aware fallback with circuit-breakers essential for reliability.
 - Reflex execution succeeds (ok: true) but pre-flight validation of tool paths/env is missing, risking silent failures.
 - Pruning runs remove 25–41 events per cycle yet drive goals still cite stale swarm knowledge, indicating pruning discards useful context.
 - FailurePatternMiner was proposed twice independently, revealing no deduplication mechanism for skill proposals.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays rapidly between convergence cycles, necessitating automatic refresh triggered by simulation feedback.
 - Model failures (429/502 errors, latency spikes >30s) correlate with learning stalls and require automated routing with fallback chains.
 - Skill proposals recur across cycles but lack a mandatory execution gate, creating a persistent proposal-implementation gap.
-- Pruning removes 38-49 facts/events per cycle but self-diagnosis finds zero organ errors, suggesting pruning may discard diagnostic context needed for 
-- Path resolution failures ("Kein ausführbarer Pyth") indicate inputs are not canonicalized to absolute paths via ZOETRON_DATA before filesystem access.
-- Proposed skills (ProviderFallbackChain, ConvergenceGate, etc.) accumulate without implementation - the SkillValidationGate proposal itself was never v
-- Swarm goals repeatedly fail to converge (score 1, converged=false) because simulation risks (3 risks) and critic issues (no executable Python) are not
-- Primary model inclusionai/ling-3.0-flash-fin consistently fails (score 1) while nemotron-3-ultra succeeds but with 13-40s latency, making provider fal
 
 ---
 

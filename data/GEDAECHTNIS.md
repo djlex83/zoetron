@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11772 Fakten** · Stand 2026-09-06 23:21 UTC · aktualisiert bei jedem Herzschlag
+**11777 Fakten** · Stand 2026-09-06 23:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6946
+- **dream:** 6951
 - **swarm_artifact:** 2187
 - **last_swarm_critique:** 814
 - **anti_pattern:** 595
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906232904:5:cefd27`
+*06.09. 23:29 UTC · Quelle: dream*
+
+Stress-aware scheduling proposals emerge when metabolism stress exceeds thresholds, showing homeostatic regulation is a learned behavior.
+
+### `dream:20260906232904:4:6601c6`
+*06.09. 23:29 UTC · Quelle: dream*
+
+Self-generated skill proposals target observed failure modes (model health, reflex validation, proposal pipeline) indicating effective meta-learning.
+
+### `dream:20260906232904:3:3b62ce`
+*06.09. 23:29 UTC · Quelle: dream*
+
+Pruning volume (facts/events) correlates with experience density; aggressive pruning during high-throughput phases prevents memory bloat.
+
+### `dream:20260906232904:2:687be0`
+*06.09. 23:29 UTC · Quelle: dream*
+
+Reflex execution succeeds when tool scripts exist and paths resolve, but fails silently when preconditions aren't validated beforehand.
+
+### `dream:20260906232904:1:39768b`
+*06.09. 23:29 UTC · Quelle: dream*
+
+Model failures (502/429) cluster on specific providers, making provider-aware fallback with circuit-breakers essential for reliability.
 
 ### `dream:20260906231909:5:e06082`
 *06.09. 23:19 UTC · Quelle: dream*
