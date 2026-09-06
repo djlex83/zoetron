@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11989 Fakten** · Stand 2026-09-06 19:20 UTC · aktualisiert bei jedem Herzschlag
+**11985 Fakten** · Stand 2026-09-06 19:31 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7096
-- **swarm_artifact:** 2235
+- **swarm_artifact:** 2234
 - **last_swarm_critique:** 812
-- **anti_pattern:** 611
+- **anti_pattern:** 609
 - **last_swarm_goal:** 544
-- **strategy:** 307
+- **strategy:** 306
 - **tool:** 172
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906192832:5:c751fa`
+*06.09. 19:28 UTC · Quelle: dream*
+
+Swarm critiques and external goals remain stale because ingestion lacks a 'freshness gate' that converts signal into scheduled proposal review.
+
+### `dream:20260906192832:4:0a17c9`
+*06.09. 19:28 UTC · Quelle: dream*
+
+Drive goals repeat identically across cycles because prerequisite dependencies (model reliability → swarm ingestion → skill conversion) execute concurrently, causing resource contention and starvation.
+
+### `dream:20260906192832:3:8e231a`
+*06.09. 19:28 UTC · Quelle: dream*
+
+Pruning discards events that may invalidate active proposals, yet no audit cross-references pruned facts against proposal assumptions, creating zombie skills.
+
+### `dream:20260906192832:2:35e06e`
+*06.09. 19:28 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a validation pipeline (simulation → calibration → deployment), so ideas never become tested capabilities.
+
+### `dream:20260906192832:1:3f120f`
+*06.09. 19:28 UTC · Quelle: dream*
+
+Model failures (502/429) cascade across providers because fallback is reactive, not health-checked, turning transient overload into systemic unreliability.
 
 ### `tool:träume-besser-nutzen-lernen`
 *06.09. 19:18 UTC · Quelle: hands*
@@ -46031,41 +46056,6 @@ Across two dream cycles ~10 skill proposals accumulated with zero evidence of im
 *23.08. 19:13 UTC · Quelle: system*
 
 Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
-
-### `dream:202608231913:5`
-*23.08. 19:13 UTC · Quelle: dream*
-
-The fact-yield whisper correctly identifies that rate limits make additional LLM calls the wrong lever; yield must come from richer structured output per call (batched DREAM/RETRO returns), not call volume.
-
-### `dream:202608231913:4`
-*23.08. 19:13 UTC · Quelle: dream*
-
-Drive goals with signal=failure ('Reflexe häufiger einsetzen', 'Fehler im Denken reduzieren') persist across cycles, indicating recurring unresolved failure classes rather than one-off incidents.
-
-### `dream:202608231913:3`
-*23.08. 19:13 UTC · Quelle: dream*
-
-Every prune_run reports facts_pruned=0 and events_pruned=0, meaning pruning eligibility logic is effectively inert and memory will grow unboundedly.
-
-### `dream:202608231913:2`
-*23.08. 19:13 UTC · Quelle: dream*
-
-Free-tier model latency varies 3x within minutes (9.4s to 29.4s on nemotron-3-super), so any fixed timeout will either stall the loop or kill healthy calls; timeouts must be derived from per-model observed medians.
-
-### `dream:202608231913:1`
-*23.08. 19:13 UTC · Quelle: dream*
-
-Skill proposals repeat verbatim across consecutive dream cycles (pre-flight validator, N=10 sample gate, convergence gate, atomic revisions all appeared twice) because no downstream step consumes them, confirming a generation-to-implementation gap.
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Embedding-Recall statt r:2`
-*23.08. 19:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Adversariales Minimal-Paar-Design: lexikalische Ueberlappung kontrolliert konsta - Konstruiere den Evaluationsdatensatz per Konstruktion so, dass jeder Distraktor genau die Stoer-Token mit der Query teilt, die zum Fehlurteil
-
-### `anti_pattern:Previous attempt scored 7/10. Goal: Embedding-Recall statt r:0`
-*23.08. 19:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Statistisches Benchmark-Protokoll: n=1 durch Multi-Query-Evaluation mit Signifik - Baue eine Query-Sammlung mit mindestens 50 Queries (Paraphrasen plus Negativbeispiele) und bekannter Ground-Truth-Relevanz je Dokument. Evalui
 
 ### `last_swarm_critique`
 *23.08. 19:04 UTC · Quelle: critic*

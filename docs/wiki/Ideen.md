@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 19:18 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 19:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,15 +32,20 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm critiques and external goals remain stale because ingestion lacks a 'freshness gate' that converts signal into scheduled proposal review.
+- Drive goals repeat identically across cycles because prerequisite dependencies (model reliability → swarm ingestion → skill conversion) execute concur
+- Pruning discards events that may invalidate active proposals, yet no audit cross-references pruned facts against proposal assumptions, creating zombie
+- Skill proposals accumulate but lack a validation pipeline (simulation → calibration → deployment), so ideas never become tested capabilities.
+- Model failures (502/429) cascade across providers because fallback is reactive, not health-checked, turning transient overload into systemic unreliabi
 - Knowledge freshness decay is a silent failure mode: stale swarm data degrades planning quality even when the system appears operational.
 - Convergence stagnation—when score deltas fall below threshold across consecutive cycles—signals the need for structural re-architecture, not increment
 - Real empirical reliability data per provider consistently outperforms advertised capability rankings for routing decisions.
@@ -51,11 +56,6 @@
 - Convergence criteria based on a single metric (e.g., abs_error == 0) are insufficient; a multi-factor gate requiring score >= 8, no critical risks, an
 - Skill proposals accumulate as technical debt when no mandatory execution gate forces every proposal to be implemented and scored within one cycle, cau
 - Provider reliability varies dramatically in practice: inclusionai/ling-3.0-flash-fin succeeded with 4.4s latency while nemotron hit 502 overload and g
-- Aggressive pruning (63 events in one run) risks discarding useful historical patterns; pruning thresholds should be tuned to preserve cross-session si
-- Reflex-based recovery converges reliably but only when pre-configured rules exist, so reflex definitions must precede failure events.
-- Stale swarm data actively degrades decision quality and must be refreshed or discarded rather than left unused.
-- The fastest available model (inclusionai/ling-3.0-flash-fin at 4.1s) outperforms the default model (nemotron at 51-53s) by over 10x in latency, making
-- Model failures follow predictable patterns (upstream 502, rate-limit 429) and must be handled by proactive routing rather than reactive retry.
 
 ---
 
