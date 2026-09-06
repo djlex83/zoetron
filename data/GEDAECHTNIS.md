@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12065 Fakten** · Stand 2026-09-06 05:06 UTC · aktualisiert bei jedem Herzschlag
+**12065 Fakten** · Stand 2026-09-06 05:16 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7068
 - **swarm_artifact:** 2315
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906051435:5:88ef67`
+*06.09. 05:14 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while external model failures persist, showing the diagnostic scope excludes dependency health.
+
+### `dream:20260906051435:4:6130b2`
+*06.09. 05:14 UTC · Quelle: dream*
+
+Pruning and knowledge refresh run manually/ad-hoc despite clear threshold triggers (event counts, age), causing reactive rather than preventive maintenance.
+
+### `dream:20260906051435:3:7e58d8`
+*06.09. 05:14 UTC · Quelle: dream*
+
+Multiple independent proposals converge on automated health-scored routing, circuit breaking, and skill incubation, revealing a systemic gap in resilience automation.
+
+### `dream:20260906051435:2:0a959c`
+*06.09. 05:14 UTC · Quelle: dream*
+
+Latency for the working model varies 2x (8.3s to 17.8s) without correlation to token counts, suggesting queue-depth or cold-start effects.
+
+### `dream:20260906051435:1:565a65`
+*06.09. 05:14 UTC · Quelle: dream*
+
+The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating a single-model dependency bottleneck.
 
 ### `tool:schwarmwissen-wieder-auffrischen`
 *06.09. 05:04 UTC · Quelle: hands*
@@ -46305,31 +46330,6 @@ Role imbalance (5 builders, 1 planner, 1 critic) prevents swarm convergence desp
 *23.08. 05:12 UTC · Quelle: system*
 
 Simulationen häufiger in die Praxis umsetzen
-
-### `dream:202608230512:5`
-*23.08. 05:12 UTC · Quelle: dream*
-
-Calibration MAE=0 despite non-convergence shows outcome prediction ≠ process quality prediction.
-
-### `dream:202608230512:4`
-*23.08. 05:12 UTC · Quelle: dream*
-
-Swarm role distribution (1 planner, 5 builders, 1 critic) correlates with non-convergence; builder-heavy swarms overproduce code without architectural critique.
-
-### `dream:202608230512:3`
-*23.08. 05:12 UTC · Quelle: dream*
-
-MemoryStore.AttributeError escaped simulation validation, proving runtime infrastructure errors require separate contract testing.
-
-### `dream:202608230512:2`
-*23.08. 05:12 UTC · Quelle: dream*
-
-Simulation revision loops (5+ revisions) and evolution scores (8-9) failed to achieve convergence (score 4), revealing simulation-reality gap for plugin architecture tasks.
-
-### `dream:202608230512:1`
-*23.08. 05:12 UTC · Quelle: dream*
-
-High latency variance (3-68s) and ultra-model overload errors indicate single-model dependency creates reliability bottlenecks.
 
 ### `last_swarm_critique`
 *23.08. 04:40 UTC · Quelle: critic*
