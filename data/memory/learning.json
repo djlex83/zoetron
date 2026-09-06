@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 18:33:34",
+ "stand": "2026-09-06 18:44:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -129,12 +129,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -184,6 +178,12 @@
   },
   {
    "tool": "modellfehler-stark-reduzieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -357,7 +357,7 @@
    "quote": 0.0
   },
   {
-   "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,8 +18,8 @@
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
 - Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
+- PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem a *(hatte die Idee 3×)*
 - Add a stress-aware scheduler that pauses low-priority swarm tasks when metabolism stress > 0.8 and resumes the *(hatte die Idee 2×)*
-- Create a health-check skill that pings models with lightweight requests every 5 minutes and maintains a real-t *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,9 +27,9 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning (63 events in one run) risks discarding useful historical patterns; pruning thresholds should be tuned to preserve cross-session si
+- Reflex-based recovery converges reliably but only when pre-configured rules exist, so reflex definitions must precede failure events.
+- Stale swarm data actively degrades decision quality and must be refreshed or discarded rather than left unused.
+- The fastest available model (inclusionai/ling-3.0-flash-fin at 4.1s) outperforms the default model (nemotron at 51-53s) by over 10x in latency, making
+- Model failures follow predictable patterns (upstream 502, rate-limit 429) and must be handled by proactive routing rather than reactive retry.
 - Reflex-based goal execution converges reliably in both cycles, demonstrating that well-defined reflex patterns are more durable than open-ended goal-d
 - Pruning volume scales superlinearly with cycle activity (5→13 facts, 20→63 events), indicating the system accumulates state faster than it can consoli
 - The persistent gap between skill proposals and implemented skills stems from the absence of a committed execution schedule with topological dependency
@@ -51,11 +56,6 @@
 - Swarm knowledge follows a predictable decay curve, meaning proactive scheduled refresh outperforms reactive recovery every time the system detects sta
 - External model failures (429/502/503) are the primary systemic constraint; internal self-diagnosis consistently passes, confirming resilience engineer
 - Pruning and self-diagnosis run cleanly, showing memory management works but doesn't address core reliability issues.
-- Swarm knowledge updates occur regularly but drive goals remain stale, suggesting updates lack effectiveness metrics.
-- High latency (49s) on previously failing models indicates intermittent degradation that health checks would catch.
-- Proposed skills accumulate without validation, creating a deployment gap where known solutions remain unused.
-- Model failures (429/502) are systemic across providers, requiring proactive health tracking and automatic fallback rather than reactive retries.
-- Stale swarm knowledge degrades planning quality over time; regular reflex-driven updates are necessary but insufficient without concurrent freshness s
 
 ---
 
