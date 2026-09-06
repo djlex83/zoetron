@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 21:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 21:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- HandAction path resolution fails on relative paths, requiring mandatory absolute path expansion via ZOETRON_DATA before execution.
+- Swarm knowledge staleness persists despite convergence success, indicating missing continuous refresh loops for stored goals/critiques.
+- Model endpoint failures (429/502) cascade without proactive health tracking, forcing reactive fallbacks instead of predictive routing.
+- Skill proposals accumulate faster than validation (5+ per cycle vs. few tested), creating a deployment gap that the SkillValidationPipeline aims to cl
+- Reflex-driven execution reliably converges swarm goals but operates without predictive model health awareness, causing 27-31s latency per call.
 - The system self-corrects effectively when reflex-based action is paired with structured goal-driven refinement, but this synergy collapses whenever mo
 - Convergence declared without strict criteria (score threshold, risk simulation, critic sign-off) produces false positives that undermine the entire le
 - Skills proposed without a mandatory execution-and-scoring gate accumulate as untested dead weight, polluting the skill registry and eroding trust in t
@@ -51,11 +56,6 @@
 - Aggressive pruning (15→10 facts, 47→21 events per cycle) risks discarding latent patterns before cross-cycle consolidation can extract them.
 - Reflex execution succeeds when concrete tools exist (vorgeschlagene-fähigkeiten-tatsächlich-u.py, schwarmwissen-wieder-auffrischen.py) but proposed sk
 - Model reliability collapses under load: nemotron returns 502 upstream errors while gemma-4 models hit 429 rate limits, leaving no working provider dur
-- DriveScheduler's topological sort (model reliability → swarm update → skill conversion) is never instantiated, so resource contention and stale-data r
-- Dream cycles produce insights and skill proposals that are never validated through execution + simulation + scoring, creating a proposal–validation ga
-- Filesystem operations fail intermittently because relative paths drift across contexts; PathResolver canonicalization must precede every I/O action.
-- Goals repeatedly converge without verified evidence (score ≥ 8, critic sign-off, zero critical risks) because ConvergenceGate is proposed but not enfo
-- Model unreliability cascades into failed simulations, stale swarm data, and unconverged goals because no health-checked fallback chain exists before c
 
 ---
 

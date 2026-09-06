@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11912 Fakten** · Stand 2026-09-06 21:07 UTC · aktualisiert bei jedem Herzschlag
+**11899 Fakten** · Stand 2026-09-06 21:18 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7026
-- **swarm_artifact:** 2231
+- **dream:** 7021
+- **swarm_artifact:** 2226
 - **last_swarm_critique:** 812
-- **anti_pattern:** 609
+- **anti_pattern:** 607
 - **last_swarm_goal:** 544
-- **strategy:** 306
+- **strategy:** 305
 - **tool:** 172
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906211527:5:5b85e6`
+*06.09. 21:15 UTC · Quelle: dream*
+
+HandAction path resolution fails on relative paths, requiring mandatory absolute path expansion via ZOETRON_DATA before execution.
+
+### `dream:20260906211527:4:26aac7`
+*06.09. 21:15 UTC · Quelle: dream*
+
+Swarm knowledge staleness persists despite convergence success, indicating missing continuous refresh loops for stored goals/critiques.
+
+### `dream:20260906211527:3:159fd2`
+*06.09. 21:15 UTC · Quelle: dream*
+
+Model endpoint failures (429/502) cascade without proactive health tracking, forcing reactive fallbacks instead of predictive routing.
+
+### `dream:20260906211527:2:ff7845`
+*06.09. 21:15 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than validation (5+ per cycle vs. few tested), creating a deployment gap that the SkillValidationPipeline aims to close.
+
+### `dream:20260906211527:1:b2f1ab`
+*06.09. 21:15 UTC · Quelle: dream*
+
+Reflex-driven execution reliably converges swarm goals but operates without predictive model health awareness, causing 27-31s latency per call.
 
 ### `dream:20260906210510:5:5c97bb`
 *06.09. 21:05 UTC · Quelle: dream*
@@ -45616,66 +45641,6 @@ score=4; issues=MemoryStore API Contract Test: test runs on import; should be gu
 *23.08. 21:12 UTC · Quelle: system*
 
 Konvergenz-Tor: Test-Pflicht vor Erfolg (Convergence Gate)
-
-### `dream:202608232112:5`
-*23.08. 21:12 UTC · Quelle: dream*
-
-MemoryStore API drift breaks hands-execute silently; a CI contract test pinning the exact public surface would fail fast instead of producing runtime AttributeErrors.
-
-### `dream:202608232112:4`
-*23.08. 21:12 UTC · Quelle: dream*
-
-Simulations routinely emit zero-risk 'go' verdicts, letting fragile plans advance; a hard gate of ≥3 concrete risks per 'go' would force deeper analysis.
-
-### `dream:202608232112:3`
-*23.08. 21:12 UTC · Quelle: dream*
-
-Every free-tier model shares an implicit rate limit, but callers treat them independently, causing cascading 429/502 errors that a single token-bucket would prevent.
-
-### `dream:202608232112:2`
-*23.08. 21:12 UTC · Quelle: dream*
-
-Model latency varies 4× (8–36 s) on the same endpoint, yet no adaptive router or calibration loop exists to exploit faster tiers or trigger fallbacks.
-
-### `dream:202608232112:1`
-*23.08. 21:12 UTC · Quelle: dream*
-
-The system repeatedly proposes identical reliability skills (rate-limiting, simulation gates, contract tests) but never ships them, revealing a planning–execution gap that stalls all other improvements.
-
-### `dream:202608232107:5`
-*23.08. 21:07 UTC · Quelle: dream*
-
-Dream fragments and drive goals reference the same themes (memory linking, skill execution) but remain disconnected, wasting cross-episode learning.
-
-### `dream:202608232107:4`
-*23.08. 21:07 UTC · Quelle: dream*
-
-Prune runs report zero candidates pruned across multiple cycles, indicating the pruner either never fires or its criteria are misconfigured.
-
-### `dream:202608232107:3`
-*23.08. 21:07 UTC · Quelle: dream*
-
-Drive goals explicitly state a simulation-to-execution gap and a GitHub failure pattern, yet no automated rollout or retry logic exists for either.
-
-### `dream:202608232107:2`
-*23.08. 21:07 UTC · Quelle: dream*
-
-Identical skill proposals (latency guard, GitHub retry, proposal-to-issue) appear repeatedly, revealing no deduplication or tracking mechanism for proposals.
-
-### `dream:202608232107:1`
-*23.08. 21:07 UTC · Quelle: dream*
-
-A 35.9 s model latency breach proves the 30 s SLA guard is necessary and currently missing from the hot path.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fehler bei den GitHub-Au:2`
-*23.08. 21:06 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [9, 5, 8]): Asynchronous modular auditor with pluggable backends - Design an async modular framework where the core auditor is backend-agnostic. Define an abstract BaseBackend with methods list_runs(), get_job_logs(). Implement t
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fehler bei den GitHub-Au:0`
-*23.08. 21:06 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 9, 8]): Robust gh CLI wrapper with pagination, retries, and validation - Rewrite the script as a robust gh CLI wrapper. Implement a main() entry point that validates gh installation and authentication via 'gh auth status'. Ad
 
 ### `last_swarm_critique`
 *23.08. 21:05 UTC · Quelle: critic*

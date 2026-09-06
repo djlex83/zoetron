@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 21:05:26",
+ "stand": "2026-09-06 21:16:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -135,6 +135,12 @@
    "quote": 1.0
   },
   {
+   "tool": "marktanalyse-endlich-nutzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -238,12 +244,6 @@
   },
   {
    "tool": "marktanalyse-endlich-abschließen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
