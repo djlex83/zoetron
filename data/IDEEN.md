@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 07:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 07:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,14 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 22×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Artifacts not running is the dominant critic feedback across cycles, yet the system retries without fixing the execution pipeline.
+- Evolution produces high-scoring variants (9.0) but swarm evaluation still yields 2/10 and fails to converge, suggesting evaluation metric mismatch.
+- Calibration error of 5 points (predicted 7 vs actual 2) reveals systematic overconfidence in artifact quality before runtime validation.
+- Hand actions repeatedly fail with exit=1 and gelesen=0, indicating artifact files are missing, unreadable, or not written before execution.
+- Free tier models (glm-5.2, gemma) consistently hit 429 rate limits, forcing fallback to slow nemotron (11-38s) or fast but limited inclusionai/ling.
 - Swarm knowledge decays rapidly; the stale signal on swarm goals confirms that without periodic refresh cycles, swarm roles and critiques become obsole
 - Model failures are never fed back into Selbstdiagnose, meaning degraded external dependencies silently persist as unflagged organ warnings.
 - Manual prune_run invocations are ad-hoc and inconsistent—event pruning volume varied wildly (81 vs 20 events) indicating no reliable schedule or thres
@@ -51,11 +56,6 @@
 - High latency variance (2.7 s – 159 s) on nemotron-3-ultra indicates unpredictable queueing; treat as fallback only.
 - inclusionai/ling-3.0-flash-fin:free consistently succeeds with low-to-moderate latency, marking it as the current reliable workhorse.
 - Rate limiting (HTTP 429) across multiple free-tier models is the dominant failure mode, making single-model reliance brittle.
-- Swarm knowledge remains stale because no validator runs; drive goal exists but no skill implements periodic fact refresh.
-- Metabolism enters conserve state (stress=1.0) with extreme budget cuts (max_tasks=3, max_iterations=1), throttling all autonomous activity.
-- Hand actions fail on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero file/directory contact.
-- Skill proposals accumulate but execution fails due to missing ProposalExecutor and broken reflex tooling (fähigkeitsvorschläge-in-echte-skills-ums.py)
-- Free model endpoints exhibit cascading failure modes (429 rate limits, 502 overloads) making them unreliable for critical paths.
 
 ---
 

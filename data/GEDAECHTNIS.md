@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12071 Fakten** · Stand 2026-09-06 07:17 UTC · aktualisiert bei jedem Herzschlag
+**12067 Fakten** · Stand 2026-09-06 07:37 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7078
-- **swarm_artifact:** 2310
+- **swarm_artifact:** 2309
 - **last_swarm_critique:** 789
-- **anti_pattern:** 651
+- **anti_pattern:** 649
 - **last_swarm_goal:** 537
-- **strategy:** 327
+- **strategy:** 326
 - **tool:** 167
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906073430:5:14a374`
+*06.09. 07:34 UTC · Quelle: dream*
+
+Artifacts not running is the dominant critic feedback across cycles, yet the system retries without fixing the execution pipeline.
+
+### `dream:20260906073430:4:8e335c`
+*06.09. 07:34 UTC · Quelle: dream*
+
+Evolution produces high-scoring variants (9.0) but swarm evaluation still yields 2/10 and fails to converge, suggesting evaluation metric mismatch.
+
+### `dream:20260906073430:3:433508`
+*06.09. 07:34 UTC · Quelle: dream*
+
+Calibration error of 5 points (predicted 7 vs actual 2) reveals systematic overconfidence in artifact quality before runtime validation.
+
+### `dream:20260906073430:2:e667fd`
+*06.09. 07:34 UTC · Quelle: dream*
+
+Hand actions repeatedly fail with exit=1 and gelesen=0, indicating artifact files are missing, unreadable, or not written before execution.
+
+### `dream:20260906073430:1:d8477d`
+*06.09. 07:34 UTC · Quelle: dream*
+
+Free tier models (glm-5.2, gemma) consistently hit 429 rate limits, forcing fallback to slow nemotron (11-38s) or fast but limited inclusionai/ling.
 
 ### `tool:vorschläge-zu-echten-fähigkeiten-machen`
 *06.09. 07:15 UTC · Quelle: hands*
@@ -46305,41 +46330,6 @@ score=3; issues=Critical: check_convergence Trend Logic Bypass - The function ca
 *23.08. 07:27 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:202608230727:5`
-*23.08. 07:27 UTC · Quelle: dream*
-
-Missing interface contracts such as MemoryStore.add_fact cause systemic goal failures, and mandatory startup validation of required methods prevents runtime AttributeError cascades in swarm execution.
-
-### `dream:202608230727:4`
-*23.08. 07:27 UTC · Quelle: dream*
-
-Model latency spikes above 90s trigger a circuit breaker after three consecutive breaches, reducing average latency and preventing system timeout cascades.
-
-### `dream:202608230727:3`
-*23.08. 07:27 UTC · Quelle: dream*
-
-Nightly calibration regressor hot-swaps only when validation MAE improves across three consecutive daily runs, filtering noise-driven switches and stabilizing model performance.
-
-### `dream:202608230727:2`
-*23.08. 07:27 UTC · Quelle: dream*
-
-Swarm convergence improves to 68% when role balance enforces at least two planners and two critics, preventing builder-dominated bottlenecks seen in cycles with 1 planner, 4 builders, and 1 critic.
-
-### `dream:202608230727:1`
-*23.08. 07:27 UTC · Quelle: dream*
-
-Skill proposals converge only when simulation verdicts are 'go' with risk ≤3 and revisions ≤3, otherwise higher metrics indicate stagnation and trigger automatic euthanasia.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler schnell erk:2`
-*23.08. 07:10 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Model contract testing using schema/expectation validation (e.g., Great Expectat - Define explicit contracts for model inputs (feature names, types, allowed ranges) and outputs (prediction shape, dtype, permissible value rang
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler schnell erk:1`
-*23.08. 07:10 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Continuous drift and performance monitoring with automated rollback - Deploy a lightweight monitoring service that computes statistical drift metrics (KS test, PSI, KL divergence) on live prediction distributions against a re
 
 ### `last_swarm_critique`
 *23.08. 07:09 UTC · Quelle: critic*
