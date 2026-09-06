@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 04:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model failure signals arrive faster than the system can adapt its routing, indicating that reactive fallback chains lack the speed needed for real-tim
+- Memory pruning operates effectively but the system generates stale facts and events faster than the current pruning cadence can retire them, risking c
+- The persistent gap between proposed skill architectures and their actual deployment creates a compounding vulnerability where known failure modes recu
+- Reflex-driven self-healing loops (swarm refresh, self-diagnosis, pruning) consistently converge and represent the system's most reliable internal reco
+- External LLM APIs exhibit correlated failure modes (429 rate limits, 502 upstream errors) across all providers simultaneously, meaning model redundanc
 - Drive goals are correctly identifying systemic gaps (model errors, unimplemented skills, stale knowledge) that require immediate operational changes.
 - Pruning is effectively reducing memory bloat, but the high volume of pruned events indicates a need for better event filtering at ingestion.
 - High latency on the fallback model (up to 61.3s) suggests that response time must be monitored and factored into task timeouts.
@@ -51,11 +56,6 @@
 - Pruning runs (38+ events) consistently outpace remediation, starving root-cause fixes unless a reserved budget guarantees at least one remediation per
 - HTTP 200 responses containing 502 error bodies (Nvidia) reveal that status-code-only validation misses upstream failures, requiring body-level error p
 - Simultaneous 429 errors across multiple providers indicate shared rate-limit buckets or coordinated upstream throttling, not isolated provider failure
-- The system's action loop remains functional, successfully executing reflexes and drive goals despite upstream model failures.
-- Pruning actively manages memory by removing old events, but care must be taken to preserve critical state.
-- The nvidia/nemotron-3-ultra-550b-a55b:free model serves as a reliable fallback but exhibits high latency between 8 and 14 seconds.
-- Repeated identical skill proposals indicate a missing semantic deduplication mechanism before persistence.
-- The z-ai/glm-5.2:free model is consistently rate-limited and should be temporarily blacklisted or heavily deprioritized.
 
 ---
 

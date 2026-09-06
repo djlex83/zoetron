@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12068 Fakten** · Stand 2026-09-06 03:56 UTC · aktualisiert bei jedem Herzschlag
+**12060 Fakten** · Stand 2026-09-06 04:07 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7058
-- **swarm_artifact:** 2322
+- **swarm_artifact:** 2317
 - **last_swarm_critique:** 785
-- **anti_pattern:** 663
+- **anti_pattern:** 661
 - **last_swarm_goal:** 533
-- **strategy:** 333
+- **strategy:** 332
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906040454:5:7ce48e`
+*06.09. 04:04 UTC · Quelle: dream*
+
+Model failure signals arrive faster than the system can adapt its routing, indicating that reactive fallback chains lack the speed needed for real-time resilience.
+
+### `dream:20260906040454:4:a58ff0`
+*06.09. 04:04 UTC · Quelle: dream*
+
+Memory pruning operates effectively but the system generates stale facts and events faster than the current pruning cadence can retire them, risking cognitive drift.
+
+### `dream:20260906040454:3:b8049d`
+*06.09. 04:04 UTC · Quelle: dream*
+
+The persistent gap between proposed skill architectures and their actual deployment creates a compounding vulnerability where known failure modes recur without structural fixes.
+
+### `dream:20260906040454:2:4132d5`
+*06.09. 04:04 UTC · Quelle: dream*
+
+Reflex-driven self-healing loops (swarm refresh, self-diagnosis, pruning) consistently converge and represent the system's most reliable internal recovery mechanism when external dependencies fail.
+
+### `dream:20260906040454:1:a137b5`
+*06.09. 04:04 UTC · Quelle: dream*
+
+External LLM APIs exhibit correlated failure modes (429 rate limits, 502 upstream errors) across all providers simultaneously, meaning model redundancy alone cannot guarantee availability.
 
 ### `dream:20260906035409:5:4a60a3`
 *06.09. 03:54 UTC · Quelle: dream*
@@ -46281,16 +46306,6 @@ Repeated simulation revision requests (high risk scores) indicate that predictio
 
 Swarm configurations missing a critic role repeatedly fail to converge, even with adequate planners and builders.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Einheitliche Plugin-Schn:2`
-*23.08. 04:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Isolated plugin namespace with explicit cleanup - Create a dedicated package (e.g., _plugin_ns) and load each plugin into a submodule of that package using importlib.machinery.SourceFileLoader, setting the module's __package_
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Einheitliche Plugin-Schn:0`
-*23.08. 04:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Unique module names and explicit interface import - Modify load_plugins to generate a fully‑qualified module name for each plugin file (e.g., using a hash of its absolute path) and load it via importlib.util.spec_from_file_lo
-
 ### `last_swarm_critique`
 *23.08. 04:00 UTC · Quelle: critic*
 
@@ -46300,31 +46315,6 @@ score=4; issues=Plugin manager does not import PluginInterface, causing NameErro
 *23.08. 03:56 UTC · Quelle: system*
 
 Einheitliche Plugin-Schnittstellen schaffen
-
-### `dream:202608230356:5`
-*23.08. 03:56 UTC · Quelle: dream*
-
-GitHub‑issue errors (failure signal) disrupt collaboration; integrating automated lint‑and‑test on PRs and blocking merge on failures improves reliability.
-
-### `dream:202608230356:4`
-*23.08. 03:56 UTC · Quelle: dream*
-
-Swarm tasks repeatedly need revision (5 revisions each simulation) despite heartbeats; adding a stall detector (>90 s) with automatic shard reassignment reduces rework.
-
-### `dream:202608230356:3`
-*23.08. 03:56 UTC · Quelle: dream*
-
-Many skill proposals remain unimplemented (gap signal), proving that a formal promotion pipeline measuring ROI (delta/compute cost) and requiring ROI>1.2 is essential for adoption.
-
-### `dream:202608230356:2`
-*23.08. 03:56 UTC · Quelle: dream*
-
-Calibration error of 1 point (predicted 5 vs actual 4) indicates drift; nightly retraining with a lightweight regressor and hot‑swap on >5% MAE improvement keeps predictions aligned.
-
-### `dream:202608230356:1`
-*23.08. 03:56 UTC · Quelle: dream*
-
-Latency outliers and timeouts (e.g., 22.5 s ultra model timeout) show that static model selection risks stalls, requiring adaptive fallback based on real‑time p90 breaches.
 
 ### `last_swarm_critique`
 *23.08. 03:40 UTC · Quelle: critic*
