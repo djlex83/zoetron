@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 07:57:15",
+ "stand": "2026-09-06 08:08:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -45,12 +45,6 @@
    "quote": 1.0
   },
   {
-   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "alte-schwarm-arbeiten-zu-ende-bringen.py",
    "laeufe": 4,
    "erfolge": 0,
@@ -64,6 +58,12 @@
   },
   {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -100,6 +100,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -160,12 +166,6 @@
   },
   {
    "tool": "wissensgraph-verknüpfungen-reparieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0

@@ -17463,3 +17463,21 @@
 {"ts": 1788076556.7959156, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 15.7, "tokens_ein": 840, "tokens_aus": 2498}}
 {"ts": 1788076556.7963808, "kind": "evolution_run", "payload": {"problem": "Previous attempt scored 7/10. Goal: Fähigkeitsvorschläge in echte Skills umsetzen\nCritic issues: Die Felder 'woche' (1,2", "variants": 3, "winner_index": 2, "scores": [8, 7, 9]}}
 {"ts": 1788076557.466151, "kind": "recall", "payload": {"keys": ["strategy:fähigkeitsvorschläge_in_echte_skills_umsetzen", "swarm_artifact:Draft deliverable for: Fähigkeitsvorschläge in echte Skills "]}}
+{"ts": 1787471880.0, "key": "dream:202608230758:5", "value": "Critics noted that logging was imported but not configured, highlighting a gap in initialization checks.", "source": "dream"}
+{"ts": 1787471880.0, "key": "dream:202608230758:4", "value": "Calibration predicted score 4 but actual was 6, revealing a systematic underestimation.", "source": "dream"}
+{"ts": 1787471880.0, "key": "dream:202608230758:3", "value": "Swarm role distribution skewed toward builders (4) versus planners (1) and critics (1) contributed to non‑convergence.", "source": "dream"}
+{"ts": 1787471880.0, "key": "dream:202608230758:2", "value": "Missing 'add_fact' method in MemoryStore caused an AttributeError, indicating incomplete interface implementation.", "source": "dream"}
+{"ts": 1787471880.0, "key": "dream:202608230758:1", "value": "Model latency frequently exceeds 30 s, causing unpredictable response times.", "source": "dream"}
+{"ts": 1788076560.3646736, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788076560.3646712, "schalter_geoeffnet": false}}
+{"ts": 1788076586.0365267, "kind": "model_ok", "payload": {"model": "google/gemma-4-31b-it:free", "latency_s": 25.7, "tokens_ein": 395, "tokens_aus": 913}}
+{"ts": 1788076587.0178995, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788076587.017897, "schalter_geoeffnet": false}}
+{"ts": 1788076587.1338317, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788076587.133829, "schalter_geoeffnet": false}}
+{"ts": 1788076587.2493362, "kind": "model_fail", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788076587.2493336, "schalter_geoeffnet": false}}
+{"ts": 1788076609.7477531, "kind": "model_ok", "payload": {"model": "inclusionai/ling-3.0-flash-fin:free", "latency_s": 22.5, "tokens_ein": 240, "tokens_aus": 2392}}
+{"ts": 1788076609.747975, "kind": "simulation", "payload": {"goal": "Fähigkeitsvorschläge in echte Skills umsetzen", "verdict": "revise", "risks": 2, "revisions": 2}}
+{"ts": 1788076609.7480838, "kind": "simulation_applied", "payload": {"revisions": 0}}
+{"ts": 1788076609.7482035, "kind": "swarm_finished", "payload": {"goal": "Fähigkeitsvorschläge in echte Skills umsetzen", "score": 7, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 1, "critic": 1}, "evolved": true}}
+{"ts": 1788076609.748416, "kind": "act_done", "payload": {"goal_title": "Fähigkeitsvorschläge in echte Skills umsetzen", "score": 7, "converged": false}}
+{"ts": 1788076610.5582285, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 0}}
+{"ts": 1788076612.2920687, "kind": "issue_synced", "payload": {"issue": 241, "state": "open"}}
+{"ts": 1788076801.3197117, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

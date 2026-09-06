@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12073 Fakten** · Stand 2026-09-06 07:59 UTC · aktualisiert bei jedem Herzschlag
+**12073 Fakten** · Stand 2026-09-06 08:10 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7088
 - **swarm_artifact:** 2305
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906080743:5:4e7304`
+*06.09. 08:07 UTC · Quelle: dream*
+
+Synchronous hand actions time out under load without fallback, blocking critical paths.
+
+### `dream:20260906080743:4:e44798`
+*06.09. 08:07 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while external model dependencies are failing, revealing a monitoring blind spot.
+
+### `dream:20260906080743:3:bf5d35`
+*06.09. 08:07 UTC · Quelle: dream*
+
+Memory pruning occurs only via manual invocation, risking unbounded growth between runs.
+
+### `dream:20260906080743:2:999d35`
+*06.09. 08:07 UTC · Quelle: dream*
+
+Skill proposals are generated but lack an automated incubation pipeline to validate against real failure scenarios before promotion.
+
+### `dream:20260906080743:1:c8887f`
+*06.09. 08:07 UTC · Quelle: dream*
+
+External model APIs fail frequently due to rate limits and overloads, causing cascading failures without automatic failover.
 
 ### `dream:20260906075641:5:dc70a0`
 *06.09. 07:56 UTC · Quelle: dream*
@@ -46345,31 +46370,6 @@ Calibration error of 50% (predicted 4 vs actual 6) persists without automatic co
 *23.08. 08:13 UTC · Quelle: dream*
 
 Interface contract violations (missing MemoryStore.add_fact, unconfigured logging) cause runtime crashes that could be caught by startup validation.
-
-### `dream:202608230758:5`
-*23.08. 07:58 UTC · Quelle: dream*
-
-Critics noted that logging was imported but not configured, highlighting a gap in initialization checks.
-
-### `dream:202608230758:4`
-*23.08. 07:58 UTC · Quelle: dream*
-
-Calibration predicted score 4 but actual was 6, revealing a systematic underestimation.
-
-### `dream:202608230758:3`
-*23.08. 07:58 UTC · Quelle: dream*
-
-Swarm role distribution skewed toward builders (4) versus planners (1) and critics (1) contributed to non‑convergence.
-
-### `dream:202608230758:2`
-*23.08. 07:58 UTC · Quelle: dream*
-
-Missing 'add_fact' method in MemoryStore caused an AttributeError, indicating incomplete interface implementation.
-
-### `dream:202608230758:1`
-*23.08. 07:58 UTC · Quelle: dream*
-
-Model latency frequently exceeds 30 s, causing unpredictable response times.
 
 ### `last_swarm_critique`
 *23.08. 07:41 UTC · Quelle: critic*
