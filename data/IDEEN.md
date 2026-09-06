@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 00:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 00:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -35,12 +35,17 @@
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
-- Modellfehler systematisch reduzieren *(wieder aufgegriffen: 2×)*
 - Offene Schwarm-Aufgaben zu Ende bringen *(wieder aufgegriffen: 2×)*
 - Modell-Fehlerrate deutlich senken *(wieder aufgegriffen: 2×)*
+- Offene Schwarm-Arbeiten abschließen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream insights evaporate because no post-dream hook writes them into the skill registry or drive goals for next-cycle execution.
+- Swarm intelligence evaluations are stale because no recurring trigger re-runs them after new skills or model changes.
+- Hand actions fail due to relative path confusion between sys.argv[1], ZOETRON_DATA, and working directory - absolute path resolution is missing.
+- Skill proposals accumulate in dreams but lack an automatic incubator to convert them into tested code, creating a persistent proposal-implementation g
+- Model fallback to nemotron works but incurs 8-17x latency penalty, making 429 errors on glm-5.2 a silent performance killer.
 - Pruning 18-20 events per run while failures persist suggests the system is forgetting the very patterns it needs to learn from.
 - Skill proposals already generated (router, backoff, scorecard) are redundant in theme—need prioritization, not more ideas.
 - Only one provider (inclusionai/ling-3.0-flash-fin) succeeded, revealing a narrow reliable subset amid widespread outages.
@@ -51,11 +56,6 @@
 - Conserve-mode throttling starves critical remediation; a protected minimum remediation quota (1 task/iteration) is needed to prevent stale-task accumu
 - Multiple independent skill proposals converge on the same resilience pattern: circuit breaker + prompt-hash cache + local fallback + provider health r
 - The system suffers from a single-point-of-failure in model inference: z-ai/glm-5.2:free consistently returns 429 errors while nvidia/nemotron-3-ultra 
-- Pruning runs are ineffective (0 facts/events pruned), suggesting the pruning criteria or triggers need adjustment to manage memory.
-- Hand actions and reflexes are currently stable and successful, showing that basic execution loops are functioning well.
-- There is a significant gap between proposing skills (60 proposals) and actually building them, indicating a bottleneck in the skill implementation pip
-- Fallback models like nvidia/nemotron suffer from high latency (13-22s), which degrades overall system responsiveness.
-- The z-ai/glm-5.2:free model is highly unreliable due to frequent 429 rate limits, necessitating a robust fallback system.
 
 ---
 

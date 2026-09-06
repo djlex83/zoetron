@@ -1,21 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12086 Fakten** · Stand 2026-09-06 00:09 UTC · aktualisiert bei jedem Herzschlag
+**12079 Fakten** · Stand 2026-09-06 00:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7018
+- **dream:** 7013
 - **swarm_artifact:** 2350
 - **last_swarm_critique:** 784
 - **anti_pattern:** 679
 - **last_swarm_goal:** 532
 - **strategy:** 341
-- **tool:** 164
+- **tool:** 163
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 9
-- **semantic_organ:** 1
 
 ---
+
+### `dream:20260906002336:5:dfe778`
+*06.09. 00:23 UTC · Quelle: dream*
+
+Dream insights evaporate because no post-dream hook writes them into the skill registry or drive goals for next-cycle execution.
+
+### `dream:20260906002336:4:a33b55`
+*06.09. 00:23 UTC · Quelle: dream*
+
+Swarm intelligence evaluations are stale because no recurring trigger re-runs them after new skills or model changes.
+
+### `dream:20260906002336:3:b5ceb0`
+*06.09. 00:23 UTC · Quelle: dream*
+
+Hand actions fail due to relative path confusion between sys.argv[1], ZOETRON_DATA, and working directory - absolute path resolution is missing.
+
+### `dream:20260906002336:2:f5ebdf`
+*06.09. 00:23 UTC · Quelle: dream*
+
+Skill proposals accumulate in dreams but lack an automatic incubator to convert them into tested code, creating a persistent proposal-implementation gap.
+
+### `dream:20260906002336:1:de1f8d`
+*06.09. 00:23 UTC · Quelle: dream*
+
+Model fallback to nemotron works but incurs 8-17x latency penalty, making 429 errors on glm-5.2 a silent performance killer.
 
 ### `dream:20260906000544:5:2bb5f8`
 *06.09. 00:05 UTC · Quelle: dream*
@@ -46221,66 +46245,6 @@ Many skill proposals remain unimplemented, revealing a gap between ideation and 
 *23.08. 00:38 UTC · Quelle: dream*
 
 Latency spikes and variability across model calls indicate a need for adaptive circuit‑breaker fallbacks to maintain reliability.
-
-### `dream:202608230023:5`
-*23.08. 00:23 UTC · Quelle: dream*
-
-Swarms frequently start but rarely converge, suggesting missing heartbeat/stall detection.
-
-### `dream:202608230023:4`
-*23.08. 00:23 UTC · Quelle: dream*
-
-Model errors (5) and GitHub errors (3) cluster around interface mismatches, not model capability.
-
-### `dream:202608230023:3`
-*23.08. 00:23 UTC · Quelle: dream*
-
-13 dreams and 9 simulations produced only 7 applied changes, revealing a 46% transfer gap from insight to action.
-
-### `dream:202608230023:2`
-*23.08. 00:23 UTC · Quelle: dream*
-
-Identical skill proposals recur across 3+ dream cycles but never reach production, indicating a broken promotion pipeline.
-
-### `dream:202608230023:1`
-*23.08. 00:23 UTC · Quelle: dream*
-
-Model latency varies 3x (4-13s) without failover, causing unpredictable task duration.
-
-### `semantic_organ`
-*23.08. 00:14 UTC · Quelle: semantic*
-
-aktiv seit 2026-08-23 - TF-IDF+Synonymfelder+Cross-Domain-Bridging im Planner-Prompt
-
-### `tool:ci-pipeline-reparieren-und-simulation-va`
-*23.08. 00:13 UTC · Quelle: hands*
-
-Werkzeug: repariert CI-Pipelines und validiert per Simulation; liegt in data/tools/, wird vom REFLEX-Pfad automatisch genutzt (2 erfolgreiche Ausfuehrungen verzeichnet).
-
-### `dream:202608230007:5`
-*23.08. 00:07 UTC · Quelle: dream*
-
-Dream logs contain recurring error signatures (timeout, AttributeError) that are not systematically mined to seed evolution variants.
-
-### `dream:202608230007:4`
-*23.08. 00:07 UTC · Quelle: dream*
-
-Model latency spikes >30s correlate with swarm abandonment; failover to pre-warmed backup at 2× median preserves throughput.
-
-### `dream:202608230007:3`
-*23.08. 00:07 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack automated sandbox testing and ROI gating before production merge.
-
-### `dream:202608230007:2`
-*23.08. 00:07 UTC · Quelle: dream*
-
-Simulation weight must be dynamically calibrated against rolling MAE to avoid overtrusting drifting predictors.
-
-### `dream:202608230007:1`
-*23.08. 00:07 UTC · Quelle: dream*
-
-Contract validation at process boundaries prevents cascade failures like AttributeError in hand-action batches.
 
 ### `last_swarm_critique`
 *22.08. 23:51 UTC · Quelle: critic*
