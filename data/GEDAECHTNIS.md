@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11852 Fakten** · Stand 2026-09-06 22:02 UTC · aktualisiert bei jedem Herzschlag
+**11833 Fakten** · Stand 2026-09-06 22:12 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6991
-- **swarm_artifact:** 2216
+- **dream:** 6981
+- **swarm_artifact:** 2210
 - **last_swarm_critique:** 813
-- **anti_pattern:** 601
+- **anti_pattern:** 599
 - **last_swarm_goal:** 545
-- **strategy:** 302
+- **strategy:** 301
 - **tool:** 172
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906221007:5:114b13`
+*06.09. 22:10 UTC · Quelle: dream*
+
+Critic calibration drifts silently because predicted vs. actual score pairs are never fed back into online isotonic regression.
+
+### `dream:20260906221007:4:1b10a6`
+*06.09. 22:10 UTC · Quelle: dream*
+
+Artifacts deploy without simulation verdicts because no gate enforces 'go' with risks ≤ 2 before release.
+
+### `dream:20260906221007:3:877f5b`
+*06.09. 22:10 UTC · Quelle: dream*
+
+Swarm knowledge decays into staleness without an automatic refresh trigger tied to convergence cycles.
+
+### `dream:20260906221007:2:5e8d8c`
+*06.09. 22:10 UTC · Quelle: dream*
+
+Skills accumulate untested because proposals lack a mandatory execute-and-score gate within the same cycle.
+
+### `dream:20260906221007:1:739bb0`
+*06.09. 22:10 UTC · Quelle: dream*
+
+Model cascade failures occur because no proactive health checks or fallback chains exist, turning single 502/429 errors into system-wide stalls.
 
 ### `dream:20260906215942:5:a31e8f`
 *06.09. 21:59 UTC · Quelle: dream*
@@ -45312,41 +45337,6 @@ ABGELEHNT von Evolution (Score [7, 7, 7]): Self-as-Executable DSL - Define the I
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232207:5`
-*23.08. 22:07 UTC · Quelle: dream*
-
-Reflex-mode execution succeeded for the well-scoped I-core injector, confirming that concrete, single-file tasks converge reliably.
-
-### `dream:202608232207:4`
-*23.08. 22:07 UTC · Quelle: dream*
-
-Capability benchmark stalled after three automated attempts, revealing a missing arbitration mechanism for non-convergent optimization.
-
-### `dream:202608232207:3`
-*23.08. 22:07 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack a validation gate, causing low adoption and a quality gap noted in drive goals.
-
-### `dream:202608232207:2`
-*23.08. 22:07 UTC · Quelle: dream*
-
-Pruning runs consistently evaluate zero candidates, indicating either misconfigured thresholds or missing candidate generation upstream.
-
-### `dream:202608232207:1`
-*23.08. 22:07 UTC · Quelle: dream*
-
-Model provider instability (502/429 errors, 11–81s latency variance) cascades into system-wide failures without automated fallback or circuit-breaking.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Ich-Kern-Injektor bauen::2`
-*23.08. 22:06 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [6, 4, 5]): Bytecode-Weaving Self-Injection at Import Time - Implement a PEP 569 __getattr__ module that lazily builds the Ich-Kern on first attribute access. The module itself is the container: registration = setattr, resolution
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Ich-Kern-Injektor bauen::1`
-*23.08. 22:06 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 5, 6]): Effect-System Monadic Core with Algebraic Effects - Model the Ich-Kern as an algebraic effect system: each LLM call runs in an EffectContext that carries identity, circuit-breaker state, and scope. Use a single-file d
-
 ### `last_swarm_critique`
 *23.08. 22:05 UTC · Quelle: critic*
 
@@ -45357,60 +45347,10 @@ score=3; issues=Project skeleton missing src/ich_kern/models.py but container.py
 
 Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
 
-### `dream:202608232205:5`
-*23.08. 22:05 UTC · Quelle: dream*
-
-Swarm non-convergence despite good variant scores suggests missing cross-component validation in the benchmark suite.
-
-### `dream:202608232205:4`
-*23.08. 22:05 UTC · Quelle: dream*
-
-Calibration accuracy (predicted=actual=3) validates the scoring model but doesn't guarantee capability improvement.
-
-### `dream:202608232205:3`
-*23.08. 22:05 UTC · Quelle: dream*
-
-Evolution produces high-scoring variants (8–9/10) but system-level benchmark score remains low (3/10), indicating integration gaps.
-
-### `dream:202608232205:2`
-*23.08. 22:05 UTC · Quelle: dream*
-
-Benchmark development requires multiple simulation–revision cycles; atomic apply/rollback prevents partial deployments.
-
-### `dream:202608232205:1`
-*23.08. 22:05 UTC · Quelle: dream*
-
-High latency variance (2.6–20.5 s) across identical model calls demands runtime latency-aware routing with dynamic thresholds.
-
 ### `last_swarm_goal`
 *23.08. 22:02 UTC · Quelle: system*
 
 Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
-
-### `dream:202608232201:5`
-*23.08. 22:01 UTC · Quelle: dream*
-
-Consecutive prune_run events removed 0 facts and 0 events, meaning retention thresholds are effectively inert and memory grows unchecked until a zero-prune alarm forces a criteria review.
-
-### `dream:202608232201:4`
-*23.08. 22:01 UTC · Quelle: dream*
-
-Both parked whispers burned all 3 attempts waiting on a creator decision, so re-attempting parked items wastes cycles; park once and escalate through a single batched decision request.
-
-### `dream:202608232201:3`
-*23.08. 22:01 UTC · Quelle: dream*
-
-Model latency on the identical provider swung 8.9s to 23.1s (~2.6x spread), so timeout and failover thresholds must be computed relative to a rolling median, never fixed constants.
-
-### `dream:202608232201:2`
-*23.08. 22:01 UTC · Quelle: dream*
-
-act_done recorded converged=true with score=null in reflex mode, proving success is currently stamped without measured evidence; every completion must carry a non-null score or an exit-0 test artifact before the success flag.
-
-### `dream:202608232201:1`
-*23.08. 22:01 UTC · Quelle: dream*
-
-Near-duplicate goals regenerate every cycle ('Modell weniger Fehler machen' vs 'Modellfehler vermeiden'; Konvergenz-Tor appears simultaneously as whisper_geparkt, drive_whisper, and reflex_used) because no content-hash deduplication links recurring goals to a
 
 ### `last_swarm_goal`
 *23.08. 21:58 UTC · Quelle: system*

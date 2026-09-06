@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,7 +23,7 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 19×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
@@ -34,13 +34,18 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Critic calibration drifts silently because predicted vs. actual score pairs are never fed back into online isotonic regression.
+- Artifacts deploy without simulation verdicts because no gate enforces 'go' with risks ≤ 2 before release.
+- Swarm knowledge decays into staleness without an automatic refresh trigger tied to convergence cycles.
+- Skills accumulate untested because proposals lack a mandatory execute-and-score gate within the same cycle.
+- Model cascade failures occur because no proactive health checks or fallback chains exist, turning single 502/429 errors into system-wide stalls.
 - Convergence declarations without critic sign-off and risk simulation produce false confidence in swarm outcomes.
 - Unvalidated skill proposals accumulate indefinitely without mandatory execution-and-scoring gates, creating technical debt in the skill registry.
 - Swarm knowledge decays silently without scheduled refresh cycles, causing decision drift that only surfaces as stale-goal signals.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (5 this cycle) but none pass a validation gate; the system proposes skills faster than it can verify them.
 - Swarm-knowledge refresh runs as a reflex but goals re-appear with 'stale' signal, indicating the refresh fetches data but fails to integrate or invali
 - Model provider failures cascade silently: nemotron overload (502) and gemma rate-limits (429) occur without automatic fallback, causing action stalls.
-- Autonomous drive goals emerge from three distinct signals (gap, stale, error) and immediately spawn executable reflex actions, proving the system can 
-- Pruning removes 20 facts and 20-47 events per cycle without diagnostic errors, indicating memory pressure is managed but retention policies lack seman
-- Skill proposals generated during dreaming directly target observed failure modes (ModelRouter for 502/429, SimulationGate for artifact quality, Boiler
-- Reflex-mode tool execution achieves 100% convergence on well-scoped goals (dream-to-skills, swarm-revival) while model-based planning fails under prov
-- Model failures cascade predictably: nemotron returns 502 upstream errors while gemma models hit 429 rate limits, yet inclusionai/ling-3.0-flash-fin su
 
 ---
 
