@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 3×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors even during active model failures, meaning the system's internal health is sound — the failure domain is enti
+- Reflex-based execution succeeds reliably for deterministic maintenance tasks like updating stale information, confirming that reflex mode is the corre
+- Pruning runs remove large volumes of facts and events (up to 29 facts and 19 events per run), but the recurring model failures suggest that failure-pa
+- The dream module repeatedly generates skill proposals clustered around quota management and resilience, revealing a persistent gap between recognizing
+- Free-tier model endpoints fail systematically (429s, 502s) across multiple providers simultaneously, indicating that availability is a structural prop
 - Aggressive pruning (29 facts, 19 events) after the run suggests the system accumulates noise faster than it consolidates signal, risking loss of usefu
 - Two evolution cycles were insufficient to converge on the goal (score remained 7), indicating that when initial variant quality is low (scores 7–9), t
 - Multiple free-tier models competing simultaneously without quota awareness creates a self-inflicted rate-limit cascade, where each request worsens the
@@ -51,11 +56,6 @@
 - Simulation-driven revision loops (5 risks → 5 revisions → 4 applied) converge but consume disproportionate latency when primary models fail.
 - Calibration systematically underestimates task complexity (predicted 4 vs actual 7 cycles), causing resource budget overruns under conserve mode.
 - Model reliability is highly inconsistent: nemotron-3-ultra fails with 502 upstream errors, gemma models hit 429 rate limits, only inclusionai/ling-3.0
-- Pruning and self-diagnosis show healthy internals, but external model dependencies remain the single point of failure.
-- Hand-action timeouts (20s) and reflex failures indicate missing timeout handling and fallback chains for tool execution.
-- Swarm knowledge refresh succeeds reflexively but fails to translate into updated drive goals, leaving intelligence stale.
-- Proposed skills accumulate without automated validation, causing reflex failures and timeouts when attempted manually.
-- Model failures (502/429) and high latency on the primary model cause systemic unreliability and trigger conserve mode, halting skill development.
 
 ---
 

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12045 Fakten** · Stand 2026-09-06 14:24 UTC · aktualisiert bei jedem Herzschlag
+**12043 Fakten** · Stand 2026-09-06 14:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7097
-- **swarm_artifact:** 2277
+- **dream:** 7102
+- **swarm_artifact:** 2273
 - **last_swarm_critique:** 809
-- **anti_pattern:** 625
+- **anti_pattern:** 623
 - **last_swarm_goal:** 541
-- **strategy:** 314
+- **strategy:** 313
 - **tool:** 169
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906143242:5:72b56c`
+*06.09. 14:32 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors even during active model failures, meaning the system's internal health is sound — the failure domain is entirely external (provider infrastructure and rate limits).
+
+### `dream:20260906143242:4:b2cdec`
+*06.09. 14:32 UTC · Quelle: dream*
+
+Reflex-based execution succeeds reliably for deterministic maintenance tasks like updating stale information, confirming that reflex mode is the correct default for repetitive, well-defined operations.
+
+### `dream:20260906143242:3:9fc794`
+*06.09. 14:32 UTC · Quelle: dream*
+
+Pruning runs remove large volumes of facts and events (up to 29 facts and 19 events per run), but the recurring model failures suggest that failure-pattern knowledge must be preserved even when other data is pruned.
+
+### `dream:20260906143242:2:933b92`
+*06.09. 14:32 UTC · Quelle: dream*
+
+The dream module repeatedly generates skill proposals clustered around quota management and resilience, revealing a persistent gap between recognizing a systemic failure and closing it through implementation.
+
+### `dream:20260906143242:1:8c4ec1`
+*06.09. 14:32 UTC · Quelle: dream*
+
+Free-tier model endpoints fail systematically (429s, 502s) across multiple providers simultaneously, indicating that availability is a structural property, not an anomaly — all architecture must assume free-tier unreliability as a baseline.
 
 ### `dream:20260906142148:5:cb8241`
 *06.09. 14:21 UTC · Quelle: dream*
@@ -46233,16 +46258,6 @@ Calibration was perfect (predicted 3, actual 3, abs_error 0), so the failure is 
 *23.08. 14:41 UTC · Quelle: dream*
 
 The evolution winner scored 9/10 internally but only 3/10 in the actual swarm run, proving variant fitness is measured on the wrong objective and needs post-evolution swarm validation.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fehler bei Modellen und :1`
-*23.08. 14:31 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Modular decomposition with strategy pattern - Split into three modules: cli.py (thin argument-parsing shell), validator.py (pure validation logic returning a score dict), report.py (template-based rendering). Configuration is
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fehler bei Modellen und :0`
-*23.08. 14:31 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): CLI-first complete rewrite - Rewrite validate_model.py from scratch as a standalone command-line tool: (1) argparse/click entrypoint with --model-path, --data-path, --output-dir, --task-type {binary,multiclass}, --average {ma
 
 ### `last_swarm_critique`
 *23.08. 14:29 UTC · Quelle: critic*
