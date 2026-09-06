@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration systematically underestimates quality by 3 points (predicted 3 vs actual 6); scoring rubric needs recalibration against critic dimensions.
+- Simulation gate reduces risk count from 5 to 2 but requires 2–3 revision loops; mandatory re-verification after each revision prevents risk regression
+- Evolution cycles waste generations on boilerplate duplication (critic: "All three artifacts duplicate boilerplate"); template-aware diffing must gate 
+- Primary model (nemotron-3-ultra) shows 4x latency variance (26–107 s) indicating unreliable QoS; fast fallback (ling-3.0-flash-fin at 8.7 s) should be
+- Model fallback chains collapse when all free-tier endpoints hit simultaneous rate limits (429) or upstream overload (502), requiring proactive health-
 - Dream/swarm learning loops initiate but reflex execution fails, indicating the meta-learning layer cannot reliably apply its own proposed improvements
 - Under maximum stress (1.0) with conserve budget (3 tasks, 1 iteration), the system still routes to 77s+ latency models instead of failing fast to fast
 - The system accumulates skill proposals (health registry, fallback chains, validation pipelines) but lacks a deployment mechanism, creating a persisten
@@ -51,11 +56,6 @@
 - Without pre-call health checks or provider scoring, the system wastes cycles and tokens on failing endpoints, compounding latency and error rates inst
 - inclusionai/ling-3.0-flash-fin is the only model in this environment that has demonstrated consistent reliability with low latency (~3.2s) across mult
 - Free-tier models on OpenRouter exhibit systemic unreliability: gemma-4 models consistently return 429 rate-limit errors and nemotron-3 returns 502 ups
-- Metabolism budget overruns occur when operations are not batched into single-iteration, ≤3-task units.
-- Path resolution inconsistencies persist because canonicalization is not enforced before filesystem operations.
-- Skill proposals accumulate untested because no gate enforces execution and scoring within the proposing cycle.
-- Convergence decisions repeatedly lack mandatory simulation risk checks and critic sign-off, causing premature goal completion.
-- Model reliability failures (502 overload, 429 rate limits) cascade into skill validation gaps when fallback chains are absent.
 
 ---
 

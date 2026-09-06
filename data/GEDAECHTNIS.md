@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11959 Fakten** · Stand 2026-09-06 20:14 UTC · aktualisiert bei jedem Herzschlag
+**11944 Fakten** · Stand 2026-09-06 20:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7071
+- **dream:** 7056
 - **swarm_artifact:** 2233
 - **last_swarm_critique:** 812
 - **anti_pattern:** 609
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906202250:5:292898`
+*06.09. 20:22 UTC · Quelle: dream*
+
+Calibration systematically underestimates quality by 3 points (predicted 3 vs actual 6); scoring rubric needs recalibration against critic dimensions.
+
+### `dream:20260906202250:4:c566cc`
+*06.09. 20:22 UTC · Quelle: dream*
+
+Simulation gate reduces risk count from 5 to 2 but requires 2–3 revision loops; mandatory re-verification after each revision prevents risk regression.
+
+### `dream:20260906202250:3:bcc2bd`
+*06.09. 20:22 UTC · Quelle: dream*
+
+Evolution cycles waste generations on boilerplate duplication (critic: "All three artifacts duplicate boilerplate"); template-aware diffing must gate variant creation.
+
+### `dream:20260906202250:2:6ab26d`
+*06.09. 20:22 UTC · Quelle: dream*
+
+Primary model (nemotron-3-ultra) shows 4x latency variance (26–107 s) indicating unreliable QoS; fast fallback (ling-3.0-flash-fin at 8.7 s) should be preferred for time-critical paths.
+
+### `dream:20260906202250:1:af5492`
+*06.09. 20:22 UTC · Quelle: dream*
+
+Model fallback chains collapse when all free-tier endpoints hit simultaneous rate limits (429) or upstream overload (502), requiring proactive health-checked routing with latency budgets.
 
 ### `dream:20260906201202:5:e61c75`
 *06.09. 20:12 UTC · Quelle: dream*
@@ -45816,106 +45841,6 @@ Group projects frequently abort when completion criteria are not explicitly defi
 *23.08. 20:27 UTC · Quelle: dream*
 
 Without a concrete test or validation step, most generated ideas stay unimplemented, causing wasted potential.
-
-### `dream:202608232022:5`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Unbounded revision cycles generate churn without external validation, reducing reliability and slowing progress.
-
-### `dream:202608232022:4`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Zero‑prune runs reveal that pruning criteria become stale, requiring periodic audits to maintain effective memory hygiene.
-
-### `dream:202608232022:3`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Stored facts are rarely reused, indicating a need for systematic retrieval and linking mechanisms to unlock latent knowledge.
-
-### `dream:202608232022:2`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Recurring failures in model and GitHub tasks point to missing root‑cause analysis and preventive guards.
-
-### `dream:202608232022:1`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Many skill proposals remain unimplemented because they lack explicit testing or integration steps, causing wasted potential.
-
-### `dream:202608232022:5`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Mandating at least one concrete risk for 'go' verdicts and a second simulation pass for zero‑risk cases prevents unsafe approvals.
-
-### `dream:202608232022:4`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Exponential backoff with jitter plus a shared ':free' model pool effectively mitigates 502/429 rate‑limit failures.
-
-### `dream:202608232022:3`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Consecutive prune_run cycles with zero prunes indicate outdated pruning criteria and merit an audit.
-
-### `dream:202608232022:2`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Independent scorer disagreement >2 points flags unreliable evaluations and should trigger rejection or calibration.
-
-### `dream:202608232022:1`
-*23.08. 20:22 UTC · Quelle: dream*
-
-Score inflation is corrected by subtracting the rolling mean prediction error before using scores in evolution selection.
-
-### `dream:202608232017:5`
-*23.08. 20:17 UTC · Quelle: dream*
-
-Many skill proposals remain unimplemented, highlighting the need for an automated pipeline that converts top proposals into testable skills.
-
-### `dream:202608232017:4`
-*23.08. 20:17 UTC · Quelle: dream*
-
-Over a thousand stored facts are rarely reused, showing a lack of automatic retrieval triggers for relevant historical knowledge.
-
-### `dream:202608232017:3`
-*23.08. 20:17 UTC · Quelle: dream*
-
-Recurring GitHub sync and model reliability failures stem from unchecked internal scores; independent re‑scoring is needed to deflate inflation.
-
-### `dream:202608232017:2`
-*23.08. 20:17 UTC · Quelle: dream*
-
-Only a minority of generated dreams/simulations are applied, indicating a missing enforcement step that turns ideas into executable skills.
-
-### `dream:202608232017:1`
-*23.08. 20:17 UTC · Quelle: dream*
-
-Free‑tier model overloads (502) reveal a shared rate‑limit bottleneck that requires coordinated backoff and fallback pooling.
-
-### `dream:202608232012:5`
-*23.08. 20:12 UTC · Quelle: dream*
-
-Turning successful simulation/dream outcomes into exemplars enables fast in‑context skill transfer without additional training.
-
-### `dream:202608232012:4`
-*23.08. 20:12 UTC · Quelle: dream*
-
-Unchecked event accumulation dilutes useful data; pruning when >50 events accumulate and retaining only calibration‑critical items keeps the system lean.
-
-### `dream:202608232012:3`
-*23.08. 20:12 UTC · Quelle: dream*
-
-A revision‑to‑risk ratio above 1.0 indicates insufficient upfront validation, warranting a pre‑execution design‑review gate.
-
-### `dream:202608232012:2`
-*23.08. 20:12 UTC · Quelle: dream*
-
-Latency outliers exceeding ~100 s markedly delay swarm starts, demonstrating the value of latency‑based automatic model degradation.
-
-### `dream:202608232012:1`
-*23.08. 20:12 UTC · Quelle: dream*
-
-Free‑tier model latency is highly variable and prone to 502 overloads, causing intermittent failures that require fallback and shared rate‑limiting.
 
 ### `last_swarm_goal`
 *23.08. 19:41 UTC · Quelle: system*
