@@ -19538,3 +19538,13 @@
 {"ts": 1788119501.0888243, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.63, "gelesen": 4}}
 {"ts": 1788119503.2680056, "kind": "issue_synced", "payload": {"issue": 252, "state": "open"}}
 {"ts": 1788119702.9220414, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787515320.0, "key": "dream:202608232002:5", "value": "Self‑generated goals often miss external‑impact orientation, limiting real‑world effectiveness and reliability.", "source": "dream"}
+{"ts": 1787515320.0, "key": "dream:202608232002:4", "value": "Repeated failures in task synchronization arise from applying simulation revisions without transactional rollback on residual risk.", "source": "dream"}
+{"ts": 1787515320.0, "key": "dream:202608232002:3", "value": "Combining related memories or dreams (same‑day or older) consistently produces novel, actionable goals, showing the value of structured reflection.", "source": "dream"}
+{"ts": 1787515320.0, "key": "dream:202608232002:2", "value": "Many skill proposals never reach execution because they lack explicit acceptance criteria and tracking, causing them to expire.", "source": "dream"}
+{"ts": 1787515320.0, "key": "dream:202608232002:1", "value": "High latency spikes (>300s) correlate with stalled or failed tasks, revealing a need for runtime latency guards.", "source": "dream"}
+{"ts": 1787515620.0, "key": "dream:202608232007:5", "value": "Linking same-day dream whispers produces novel ideas, yet there is no automated mechanism to surface related whispers for combination.", "source": "dream"}
+{"ts": 1787515620.0, "key": "dream:202608232007:4", "value": "Many skill proposals are generated but rarely tested, creating a backlog of unimplemented improvements and reducing learning velocity.", "source": "dream"}
+{"ts": 1787515620.0, "key": "dream:202608232007:3", "value": "Repeated GitHub synchronization failures reveal a lack of retry/backoff logic and error escalation, threatening reliable code sharing.", "source": "dream"}
+{"ts": 1787515620.0, "key": "dream:202608232007:2", "value": "The pruner consistently prunes zero items, showing that either evaluation logging is missing or criteria are too strict, obscuring opportunities for memory compression.", "source": "dream"}
+{"ts": 1787515620.0, "key": "dream:202608232007:1", "value": "Latency spikes (>100s) from certain models cause delayed responses and risk timeouts, indicating need for per-call latency guards and automatic fallback.", "source": "dream"}

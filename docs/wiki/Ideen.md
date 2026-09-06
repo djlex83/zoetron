@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Dream/swarm learning loops initiate but reflex execution fails, indicating the meta-learning layer cannot reliably apply its own proposed improvements
+- Under maximum stress (1.0) with conserve budget (3 tasks, 1 iteration), the system still routes to 77s+ latency models instead of failing fast to fast
+- The system accumulates skill proposals (health registry, fallback chains, validation pipelines) but lacks a deployment mechanism, creating a persisten
+- Hand actions fail silently when using relative paths instead of resolving against ZOETRON_DATA or sys.argv[1], causing "nichts gelesen" errors that le
+- Provider health varies dramatically: nemotron-3-ultra has 31-107s latency but succeeds, while Gemma models hit 429 rate limits and Nvidia returns 502 
 - The system's structural health is intact (no organ errors, successful pruning of 22 stale facts), so the root cause of failures is external infrastruc
 - Skill proposals from prior cycles (validation gate, convergence gate, revision tracker) were not executed, revealing a persistent gap between proposal
 - Without pre-call health checks or provider scoring, the system wastes cycles and tokens on failing endpoints, compounding latency and error rates inst
@@ -51,11 +56,6 @@
 - Skill proposals accumulate untested because no gate enforces execution and scoring within the proposing cycle.
 - Convergence decisions repeatedly lack mandatory simulation risk checks and critic sign-off, causing premature goal completion.
 - Model reliability failures (502 overload, 429 rate limits) cascade into skill validation gaps when fallback chains are absent.
-- Metabolism budget is exceeded by unbounded parallel task spawns, causing pruning thrash and dropped experience.
-- Filesystem operations fail silently when relative paths drift across working directories, wasting cycles on retries.
-- Swarm knowledge decays into staleness within hours because no periodic re-ingestion or freshness gate triggers reuse.
-- Skill proposals accumulate but rarely execute because convergence criteria are missing and no scheduler enforces single-threaded, dependency-ordered r
-- Model provider failures (502/429) cascade into system-wide stalls because no automatic health-checked fallback exists.
 
 ---
 
