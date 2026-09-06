@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 19:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 19:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism budget overruns occur when operations are not batched into single-iteration, ≤3-task units.
+- Path resolution inconsistencies persist because canonicalization is not enforced before filesystem operations.
+- Skill proposals accumulate untested because no gate enforces execution and scoring within the proposing cycle.
+- Convergence decisions repeatedly lack mandatory simulation risk checks and critic sign-off, causing premature goal completion.
+- Model reliability failures (502 overload, 429 rate limits) cascade into skill validation gaps when fallback chains are absent.
 - Metabolism budget is exceeded by unbounded parallel task spawns, causing pruning thrash and dropped experience.
 - Filesystem operations fail silently when relative paths drift across working directories, wasting cycles on retries.
 - Swarm knowledge decays into staleness within hours because no periodic re-ingestion or freshness gate triggers reuse.
@@ -51,11 +56,6 @@
 - Pruning discards events that may invalidate active proposals, yet no audit cross-references pruned facts against proposal assumptions, creating zombie
 - Skill proposals accumulate but lack a validation pipeline (simulation → calibration → deployment), so ideas never become tested capabilities.
 - Model failures (502/429) cascade across providers because fallback is reactive, not health-checked, turning transient overload into systemic unreliabi
-- Knowledge freshness decay is a silent failure mode: stale swarm data degrades planning quality even when the system appears operational.
-- Convergence stagnation—when score deltas fall below threshold across consecutive cycles—signals the need for structural re-architecture, not increment
-- Real empirical reliability data per provider consistently outperforms advertised capability rankings for routing decisions.
-- Skill proposals accumulate faster than they are validated and deployed, creating a growing gap between intended capability and actual capability.
-- Provider failures (502/429) are systemic infrastructure issues, not isolated incidents, requiring structural fallback chains rather than retry logic.
 
 ---
 

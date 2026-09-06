@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8263 Neuronen · 768331 bewertete Synapsen
+Stand: 8254 Neuronen · 768375 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,8 +10,8 @@ Stand: 8263 Neuronen · 768331 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 885 | 0.23 |
-| 2 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 772 | 0.25 |
+| 1 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 886 | 0.23 |
+| 2 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 773 | 0.25 |
 | 3 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 728 | 0.26 |
 | 4 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 754 | 0.24 |
 | 5 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 724 | 0.25 |
@@ -19,10 +19,10 @@ Stand: 8263 Neuronen · 768331 bewertete Synapsen
 | 7 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 696 | 0.25 |
 | 8 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 688 | 0.26 |
 | 9 | 💭 | Repeated 429 errors across four different models indicate system… | 717 | 0.25 |
-| 10 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 724 | 0.24 |
+| 10 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 725 | 0.24 |
 | 11 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 653 | 0.26 |
 | 12 | 💭 | The model `nvidia/nemotron-3-ultra-550b-a55b:free` suffers from … | 653 | 0.26 |
-| 13 | 💭 | Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate lim… | 727 | 0.23 |
+| 13 | 💭 | Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate lim… | 729 | 0.23 |
 | 14 | 💭 | Nvidia Nemotron 3 Ultra is the only consistently available free … | 609 | 0.27 |
 | 15 | 💭 | Free-tier models consistently fail with 429 rate-limit errors an… | 682 | 0.24 |
 

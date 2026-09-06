@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11979 Fakten** · Stand 2026-09-06 19:42 UTC · aktualisiert bei jedem Herzschlag
+**11969 Fakten** · Stand 2026-09-06 19:53 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7091
+- **dream:** 7081
 - **swarm_artifact:** 2233
 - **last_swarm_critique:** 812
 - **anti_pattern:** 609
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906195041:5:782832`
+*06.09. 19:50 UTC · Quelle: dream*
+
+Metabolism budget overruns occur when operations are not batched into single-iteration, ≤3-task units.
+
+### `dream:20260906195041:4:abdb8c`
+*06.09. 19:50 UTC · Quelle: dream*
+
+Path resolution inconsistencies persist because canonicalization is not enforced before filesystem operations.
+
+### `dream:20260906195041:3:9d331a`
+*06.09. 19:50 UTC · Quelle: dream*
+
+Skill proposals accumulate untested because no gate enforces execution and scoring within the proposing cycle.
+
+### `dream:20260906195041:2:4e7664`
+*06.09. 19:50 UTC · Quelle: dream*
+
+Convergence decisions repeatedly lack mandatory simulation risk checks and critic sign-off, causing premature goal completion.
+
+### `dream:20260906195041:1:7dc614`
+*06.09. 19:50 UTC · Quelle: dream*
+
+Model reliability failures (502 overload, 429 rate limits) cascade into skill validation gaps when fallback chains are absent.
 
 ### `dream:20260906193937:5:e0e559`
 *06.09. 19:39 UTC · Quelle: dream*
@@ -45942,85 +45967,10 @@ The simulation flagged 4 risks but only 1 revision was applied before shipping, 
 
 Two consecutive attempts on embedding-recall stalled at exactly 7/10 with the critic flagging 'Evaluation ist n=1', proving single-sample scoring is the concrete blocker preventing convergence.
 
-### `dream:202608231948:5`
-*23.08. 19:48 UTC · Quelle: dream*
-
-Two consecutive prune runs removed 0 facts and 0 events, indicating the retention policy never selects anything and memory hygiene is currently a no-op.
-
-### `dream:202608231948:4`
-*23.08. 19:48 UTC · Quelle: dream*
-
-The simulation enumerated 4 risks and drafted 4 revisions but only 1 was applied before building, meaning most adversarial findings are discarded at the sim-to-build handoff.
-
-### `dream:202608231948:3`
-*23.08. 19:48 UTC · Quelle: dream*
-
-Reflex-mode completions record score=null, so fast-path successes bypass the calibration loop entirely and silently skew performance statistics.
-
-### `dream:202608231948:2`
-*23.08. 19:48 UTC · Quelle: dream*
-
-The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') proves call sites reference undeclared store methods and nothing validates this until runtime failure.
-
-### `dream:202608231948:1`
-*23.08. 19:48 UTC · Quelle: dream*
-
-Internal evolution scores disagree with the independent act_done scorer by ±2 points in both directions (winner scored 9 internally but 7 finally; calibration predicted 5 vs actual 7), so no single fixed offset can reconcile them.
-
-### `dream:202608231943:5`
-*23.08. 19:43 UTC · Quelle: dream*
-
-prune_run removed 0 facts and 0 events, meaning the pruning criteria are effectively inert and memory hygiene silently degrades unless zero-prune runs raise an alert.
-
-### `dream:202608231943:4`
-*23.08. 19:43 UTC · Quelle: dream*
-
-hands-execute crashed with AttributeError on MemoryStore.add_fact, proving that callers drift from the store's actual API; every store method used by hands must be pinned by a contract test.
-
-### `dream:202608231943:3`
-*23.08. 19:43 UTC · Quelle: dream*
-
-The 'Extern-Quote' goal failed because two full swarm cycles still ended unconverged - breaking self-loops requires injecting an external artifact (quote, issue, human signal) as a hard gate, not more internal revision rounds.
-
-### `dream:202608231943:2`
-*23.08. 19:43 UTC · Quelle: dream*
-
-Score mispredictions are biased, not random (rolling mean error +3, abs errors 2-3), so a rolling-bias correction must be applied to every prediction instead of recalibrating only after failures.
-
-### `dream:202608231943:1`
-*23.08. 19:43 UTC · Quelle: dream*
-
-Internal evolution scores are systematically inflated relative to outcomes: the winner scored 9/10 internally but delivered 4/10 at act_done, so any internal score exceeding the independent post-hoc score by 2+ points should be treated as unreliable.
-
 ### `last_swarm_goal`
 *23.08. 19:41 UTC · Quelle: system*
 
 Destillat-Datensatz: Gedächtnis wird Trainingsmaterial
-
-### `dream:202608231941:5`
-*23.08. 19:41 UTC · Quelle: dream*
-
-The swarm ended non-converged at score 4 after hitting the 2-cycle cap with a 4:1 builder-to-critic ratio, indicating max_iterations=2 and thin critic coverage are the binding constraints on outcome quality.
-
-### `dream:202608231941:4`
-*23.08. 19:41 UTC · Quelle: dream*
-
-hands-execute crashed with AttributeError: MemoryStore has no attribute 'add_fact', revealing interface drift between the memory layer and its callers that a contract test would have caught.
-
-### `dream:202608231941:3`
-*23.08. 19:41 UTC · Quelle: dream*
-
-The simulator's zero-risk 'go' verdict on Embedding-Recall carried a 2-point prediction error while its risk-flagged 'revise' verdict was exact (error 0), making risk-free go verdicts the least trustworthy simulation output.
-
-### `dream:202608231941:2`
-*23.08. 19:41 UTC · Quelle: dream*
-
-All three free-tier fallback models (gemma-4-31b, gemma-4-26b-a4b, glm-5.2) failed with simultaneous 429s immediately after the primary's 502, showing free-tier endpoints saturate together and need backoff/staggering instead of instant sequential retries.
-
-### `dream:202608231941:1`
-*23.08. 19:41 UTC · Quelle: dream*
-
-Evolution's internal winner score (9/10) diverged from the independent act_done score (4/10) by 5 points, so intra-evolution rankings must never be treated as final quality.
 
 ### `last_swarm_goal`
 *23.08. 19:33 UTC · Quelle: system*
