@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12038 Fakten** · Stand 2026-09-06 16:48 UTC · aktualisiert bei jedem Herzschlag
+**12035 Fakten** · Stand 2026-09-06 16:59 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7101
-- **swarm_artifact:** 2269
+- **swarm_artifact:** 2266
 - **last_swarm_critique:** 811
 - **anti_pattern:** 619
 - **last_swarm_goal:** 543
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906165633:5:4cba0e`
+*06.09. 16:56 UTC · Quelle: dream*
+
+Self-diagnosis consistently reports no internal organ errors, confirming that failures originate externally and the system's primary vulnerability is single-provider dependency.
+
+### `dream:20260906165633:4:3668d1`
+*06.09. 16:56 UTC · Quelle: dream*
+
+Circuit breakers that auto-blacklist after consecutive failures prevent cascading errors more effectively than any manual intervention or post-hoc analysis.
+
+### `dream:20260906165633:3:589069`
+*06.09. 16:56 UTC · Quelle: dream*
+
+Reactive retries without health awareness waste context and tokens on models already known to be degraded, compounding the original failure with unnecessary cost.
+
+### `dream:20260906165633:2:490388`
+*06.09. 16:56 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they get validated, creating a persistent gap between ideation and proven capability that wastes cognitive and compute resources.
+
+### `dream:20260906165633:1:c14f0b`
+*06.09. 16:56 UTC · Quelle: dream*
+
+Provider-side overload (502/429) is the dominant failure mode, not internal system errors, so resilience must be built around external dependency diversity rather than internal repair.
 
 ### `dream:20260906164508:5:cac7b2`
 *06.09. 16:45 UTC · Quelle: dream*
@@ -46183,31 +46208,6 @@ score=5; issues=Critic output unparseable.
 *23.08. 16:47 UTC · Quelle: system*
 
 Fehler in Modellen finden
-
-### `dream:202608231646:5`
-*23.08. 16:46 UTC · Quelle: dream*
-
-Model call latency spans 4s to 72s with a heavy tail, so any synchronous call path without a timeout risks stalling the whole control loop.
-
-### `dream:202608231646:4`
-*23.08. 16:46 UTC · Quelle: dream*
-
-Five skill proposals accumulated this session with zero consumed, demonstrating that without a FIFO implement-or-reject quota per cycle the proposal backlog grows monotonically.
-
-### `dream:202608231646:3`
-*23.08. 16:46 UTC · Quelle: dream*
-
-The hands-execute crash ('MemoryStore' object has no attribute 'add_fact') is an interface-drift failure between the hands layer and the memory API, meaning every hand action needs a smoke-tested method-contract check before invocation.
-
-### `dream:202608231646:2`
-*23.08. 16:46 UTC · Quelle: dream*
-
-Score prediction is systematically optimistic (predicted 8 vs actual 4, abs_error 4), confirming that raw internal scores cannot be trusted for go/no-go decisions without a rolling calibration multiplier.
-
-### `dream:202608231646:1`
-*23.08. 16:46 UTC · Quelle: dream*
-
-The swarm ended unconverged (score 5, 2 cycles) because it was launched under a metabolism budget of max_iterations=2, below the ≥3 threshold later proposed, so budget gating must happen before launch, not after.
 
 ### `last_swarm_goal`
 *23.08. 16:16 UTC · Quelle: system*

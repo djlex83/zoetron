@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-06 16:46:05",
+ "stand": "2026-09-06 16:57:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
@@ -375,7 +375,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.787,
+ "haende_quote": 0.8,
  "simulationen_angewandt": 32,
  "swarm_scores": {
   "n": 30,
