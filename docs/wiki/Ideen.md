@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 09:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 10:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge decays silently; the last_swarm_goal recall shows no freshness check, so a timestamped knowledge TTL with automatic refresh triggers i
+- Metabolism-driven conserve mode (stress=1.0) caps iterations to 1 and tasks to 3, so every action must be idempotent, low-latency, and produce a durab
+- Proposed skills stall in "validation limbo" – the reflex checker crashes, simulation demands revisions, but no automated repair loop exists; a self-he
+- File operations fail when using relative paths because the working directory diverges from ZOETRON_DATA; all paths must be resolved absolutely via the
+- Free tier LLM APIs exhibit pervasive rate limiting (429) and upstream errors (502), making a single-model strategy non-viable; a validated fallback ch
 - Ad-hoc pruning (12 facts, 25 events) reduces memory load but lacks scheduling, meaning memory hygiene is inconsistent and likely lags behind actual st
 - Selbstdiagnose correctly reports no internal organ errors, yet external dependency degradation (API rate limits) is invisible to it — a diagnostic bli
 - Model diversity provides implicit resilience (some models succeed when others fail), but without an explicit routing strategy, this resilience is acci
@@ -51,11 +56,6 @@
 - High-latency successes (28.5s) from nemotron-3-ultra reveal that 'available' models may violate interactive SLAs silently.
 - Fallback chains without coordinated backoff amplify contention: each retry hits the same exhausted quota window.
 - Rate-limit cascades across all free-tier models simultaneously indicate shared upstream quota exhaustion, not individual model failures.
-- Pruning removes event symptoms but not the systemic cause: unmanaged model failure rates from missing rate-limit handling.
-- Swarm knowledge decays without periodic validation against a trusted source, risking hallucination drift.
-- Skill proposals are generated but lack an automated implementation pipeline, leaving identified improvements undeployed.
-- Working models show extreme latency variance (3.4s vs 18.8s), requiring latency SLOs in routing to prevent pipeline stalls.
-- Free-tier models consistently fail with 429/502 errors under load, making a health-aware router with automatic fallback essential for reliability.
 
 ---
 
