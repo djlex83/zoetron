@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12065 Fakten** · Stand 2026-09-06 05:16 UTC · aktualisiert bei jedem Herzschlag
+**12068 Fakten** · Stand 2026-09-06 05:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7068
-- **swarm_artifact:** 2315
+- **dream:** 7073
+- **swarm_artifact:** 2313
 - **last_swarm_critique:** 786
 - **anti_pattern:** 657
 - **last_swarm_goal:** 534
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906052506:5:1f69f0`
+*06.09. 05:25 UTC · Quelle: dream*
+
+Swarm knowledge refresh succeeds via reflex but lacks automated staleness detection, relying on manual drive-goal triggers.
+
+### `dream:20260906052506:4:18c626`
+*06.09. 05:25 UTC · Quelle: dream*
+
+External dependency health is invisible to Selbstdiagnose, allowing degraded models to poison downstream reasoning before detection.
+
+### `dream:20260906052506:3:702cbb`
+*06.09. 05:25 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than implementation because no mechanism reserves capacity for remediation versus new feature work.
+
+### `dream:20260906052506:2:418896`
+*06.09. 05:25 UTC · Quelle: dream*
+
+HTTP 200 responses with embedded upstream error codes (e.g., Nvidia 502) create silent degradation that bypasses standard HTTP error handling.
+
+### `dream:20260906052506:1:ac7670`
+*06.09. 05:25 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit correlated failure bursts (429/502) that cascade across providers sharing the same gateway.
 
 ### `dream:20260906051435:5:88ef67`
 *06.09. 05:14 UTC · Quelle: dream*
