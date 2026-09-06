@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,9 +41,13 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based goal execution converges reliably in both cycles, demonstrating that well-defined reflex patterns are more durable than open-ended goal-d
+- Pruning volume scales superlinearly with cycle activity (5→13 facts, 20→63 events), indicating the system accumulates state faster than it can consoli
+- The persistent gap between skill proposals and implemented skills stems from the absence of a committed execution schedule with topological dependency
+- Stale swarm data actively blocks new collective knowledge formation, making periodic refresh a hard prerequisite rather than an optional maintenance t
+- Model reliability failures recur across consolidation cycles because root causes like rate-limit exhaustion and quota depletion are not addressed at t
 - Pruning events and facts during consolidation is necessary but insufficient without also pruning stale proposals whose underlying assumptions have alr
 - Rate-limit and server errors cluster in predictable patterns that are cacheable, making pre-emptive routing and quota-aware scheduling more efficient 
-- The persistent gap between skill proposals and implemented skills reveals a missing commitment mechanism that converts intentions into tracked, owned,
 - Swarm knowledge follows a predictable decay curve, meaning proactive scheduled refresh outperforms reactive recovery every time the system detects sta
 - External model failures (429/502/503) are the primary systemic constraint; internal self-diagnosis consistently passes, confirming resilience engineer
 - Pruning and self-diagnosis run cleanly, showing memory management works but doesn't address core reliability issues.
@@ -52,10 +56,6 @@
 - Proposed skills accumulate without validation, creating a deployment gap where known solutions remain unused.
 - Model failures (429/502) are systemic across providers, requiring proactive health tracking and automatic fallback rather than reactive retries.
 - Stale swarm knowledge degrades planning quality over time; regular reflex-driven updates are necessary but insufficient without concurrent freshness s
-- Proposed skills remain theoretical until executed; the gap between skill proposal and skill validation is itself a systemic failure mode that must be 
-- Model reliability under stress is inversely correlated with model size in this environment; smaller models like inclusionai/ling-3.0-flash-fin deliver
-- Swarm convergence failure at score 7 with only 2 cycles indicates that variant refinement alone cannot overcome structural limitations—evaluation mech
-- Large models fail unpredictably under load and simultaneous provider outages create cascading breakdowns that require proactive load distribution rath
 
 ---
 

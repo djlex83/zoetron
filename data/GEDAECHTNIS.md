@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12014 Fakten** · Stand 2026-09-06 18:24 UTC · aktualisiert bei jedem Herzschlag
+**12007 Fakten** · Stand 2026-09-06 18:35 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7106
-- **swarm_artifact:** 2247
+- **swarm_artifact:** 2243
 - **last_swarm_critique:** 811
-- **anti_pattern:** 615
+- **anti_pattern:** 613
 - **last_swarm_goal:** 543
-- **strategy:** 309
+- **strategy:** 308
 - **tool:** 171
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906183234:5:0e29a3`
+*06.09. 18:32 UTC · Quelle: dream*
+
+Reflex-based goal execution converges reliably in both cycles, demonstrating that well-defined reflex patterns are more durable than open-ended goal-driven execution.
+
+### `dream:20260906183234:4:79ae44`
+*06.09. 18:32 UTC · Quelle: dream*
+
+Pruning volume scales superlinearly with cycle activity (5→13 facts, 20→63 events), indicating the system accumulates state faster than it can consolidate without proactive budget triggers.
+
+### `dream:20260906183234:3:775596`
+*06.09. 18:32 UTC · Quelle: dream*
+
+The persistent gap between skill proposals and implemented skills stems from the absence of a committed execution schedule with topological dependency resolution.
+
+### `dream:20260906183234:2:6755e9`
+*06.09. 18:32 UTC · Quelle: dream*
+
+Stale swarm data actively blocks new collective knowledge formation, making periodic refresh a hard prerequisite rather than an optional maintenance task.
+
+### `dream:20260906183234:1:5eb6ed`
+*06.09. 18:32 UTC · Quelle: dream*
+
+Model reliability failures recur across consolidation cycles because root causes like rate-limit exhaustion and quota depletion are not addressed at the routing layer—only patched per-incident.
 
 ### `dream:20260906182126:5:1c7cf0`
 *06.09. 18:21 UTC · Quelle: dream*
@@ -46116,41 +46141,6 @@ score=3; issues=SelfCore.load method does not catch JSONDecodeError, only FileNo
 *23.08. 18:31 UTC · Quelle: system*
 
 Ich-Kern-Injektor bauen: ein Selbst für jeden LLM-Aufruf
-
-### `dream:202608231831:5`
-*23.08. 18:31 UTC · Quelle: dream*
-
-New drive goals (reduce model errors, embed dream inspiration, absorb skill proposals) were created reactively rather than derived from systematic failure analysis.
-
-### `dream:202608231831:4`
-*23.08. 18:31 UTC · Quelle: dream*
-
-Generated skill proposals (contract tests, calibration sets, reflex lookup) remain unintegrated, creating a proposal-execution gap that repeats known failure modes.
-
-### `dream:202608231831:3`
-*23.08. 18:31 UTC · Quelle: dream*
-
-Model latency variance (6.9s to 208.3s) for identical model calls suggests unreliable inference infrastructure that destabilizes planning budgets.
-
-### `dream:202608231831:2`
-*23.08. 18:31 UTC · Quelle: dream*
-
-Simulation consistently under-predicted actual scores (predicted 6 vs actual 8), indicating the simulator's risk model is miscalibrated for this task class.
-
-### `dream:202608231831:1`
-*23.08. 18:31 UTC · Quelle: dream*
-
-Swarm convergence (score 8) masked a critical interface mismatch: MemoryStore lacked the contracted `add_fact` method, causing runtime failure after successful validation.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeits-Messlatte bau:2`
-*23.08. 18:24 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Robust Scoring Engine with Constraint Solving & Auditing - Replace the ad‑hoc scoring function with a constrained optimization layer. Define the scoring problem as: maximize Σ w_i * s_i subject to w_i ≥ 0, Σ w_i = 1, and s_i
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeits-Messlatte bau:1`
-*23.08. 18:24 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Property‑Based & Mutation Testing Layer - Supplement the existing unit tests with property‑based tests (using hypotheses or similar) that assert invariants about the operations (e.g., idempotence, commutativity, bounds). Comp
 
 ### `last_swarm_critique`
 *23.08. 18:24 UTC · Quelle: critic*
