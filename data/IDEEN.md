@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 17:58 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:11 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning and self-diagnosis run cleanly, showing memory management works but doesn't address core reliability issues.
+- Swarm knowledge updates occur regularly but drive goals remain stale, suggesting updates lack effectiveness metrics.
+- High latency (49s) on previously failing models indicates intermittent degradation that health checks would catch.
+- Proposed skills accumulate without validation, creating a deployment gap where known solutions remain unused.
+- Model failures (429/502) are systemic across providers, requiring proactive health tracking and automatic fallback rather than reactive retries.
 - Stale swarm knowledge degrades planning quality over time; regular reflex-driven updates are necessary but insufficient without concurrent freshness s
 - Proposed skills remain theoretical until executed; the gap between skill proposal and skill validation is itself a systemic failure mode that must be 
 - Model reliability under stress is inversely correlated with model size in this environment; smaller models like inclusionai/ling-3.0-flash-fin deliver
@@ -51,11 +56,6 @@
 - Simulation detected 5 risks and proposed 5 revisions but only 3 were applied, suggesting revision filtering or application logic drops valid mitigatio
 - Evolution improved score from 7 to 9 (variant 1) but swarm still failed to converge after 2 cycles, indicating convergence criteria or role allocation
 - Model inclusionai/ling-3.0-flash-fin consistently succeeds with low latency (4.5-5.2s) while nemotron-3-ultra and gemma-4 variants fail repeatedly due
-- Metabolism stress=1.0 forces conserve mode (max_tasks=3, max_iterations=1); any skill must operate within single-iteration, low-task budgets.
-- Calibration accuracy (predicted=actual=7) indicates the estimator is trustworthy and can gate resource allocation.
-- Simulation-driven revision loops (verdict=revise → revisions applied → grün=true) reliably convert risky plans into working artifacts.
-- Primary model (Nemotron) suffers 502 upstream overloads; fallback models (Gemma) hit 429 rate limits; a model router with health-aware selection is es
-- Relative path handling fails under real data paths; all file operations must resolve via ZOETRON_DATA and sys.argv[1] before use.
 
 ---
 

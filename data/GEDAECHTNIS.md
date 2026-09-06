@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12022 Fakten** · Stand 2026-09-06 18:00 UTC · aktualisiert bei jedem Herzschlag
+**12019 Fakten** · Stand 2026-09-06 18:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7106
-- **swarm_artifact:** 2252
+- **dream:** 7111
+- **swarm_artifact:** 2247
 - **last_swarm_critique:** 811
-- **anti_pattern:** 617
+- **anti_pattern:** 615
 - **last_swarm_goal:** 543
-- **strategy:** 310
+- **strategy:** 309
 - **tool:** 171
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906180948:5:a7c8fd`
+*06.09. 18:09 UTC · Quelle: dream*
+
+Pruning and self-diagnosis run cleanly, showing memory management works but doesn't address core reliability issues.
+
+### `dream:20260906180948:4:047cec`
+*06.09. 18:09 UTC · Quelle: dream*
+
+Swarm knowledge updates occur regularly but drive goals remain stale, suggesting updates lack effectiveness metrics.
+
+### `dream:20260906180948:3:78261b`
+*06.09. 18:09 UTC · Quelle: dream*
+
+High latency (49s) on previously failing models indicates intermittent degradation that health checks would catch.
+
+### `dream:20260906180948:2:abb97c`
+*06.09. 18:09 UTC · Quelle: dream*
+
+Proposed skills accumulate without validation, creating a deployment gap where known solutions remain unused.
+
+### `dream:20260906180948:1:4ab847`
+*06.09. 18:09 UTC · Quelle: dream*
+
+Model failures (429/502) are systemic across providers, requiring proactive health tracking and automatic fallback rather than reactive retries.
 
 ### `dream:20260906175714:5:d555b5`
 *06.09. 17:57 UTC · Quelle: dream*
@@ -46161,16 +46186,6 @@ Intermittent 502 upstream errors reveal volatile model endpoints that require gr
 *23.08. 18:13 UTC · Quelle: dream*
 
 Latency frequently exceeds 30 seconds, indicating a need for retry/backoff and failover strategies.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modell-Gesundheitsregist:2`
-*23.08. 18:07 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Use a thread‑local functional circuit breaker and Pydantic v2 validation for awa - Implement the circuit breaker as a higher‑order function that returns a wrapper storing its state in `threading.local()`, so each thread has a
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Modell-Gesundheitsregist:1`
-*23.08. 18:07 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `last_swarm_critique`
 *23.08. 18:07 UTC · Quelle: critic*
