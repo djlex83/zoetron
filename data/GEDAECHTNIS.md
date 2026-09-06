@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12072 Fakten** · Stand 2026-09-06 09:36 UTC · aktualisiert bei jedem Herzschlag
+**12077 Fakten** · Stand 2026-09-06 09:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7093
+- **dream:** 7098
 - **swarm_artifact:** 2302
 - **last_swarm_critique:** 790
 - **anti_pattern:** 645
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906094507:5:127d4e`
+*06.09. 09:45 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model router operates at >80% failure rate, exposing a monitoring blind spot for cognitive degradation.
+
+### `dream:20260906094507:4:ba455e`
+*06.09. 09:45 UTC · Quelle: dream*
+
+Reflex-driven swarm knowledge update succeeded autonomously, proving local deterministic skills survive model-layer brownouts.
+
+### `dream:20260906094507:3:5cfbcd`
+*06.09. 09:45 UTC · Quelle: dream*
+
+High-latency successes (28.5s) from nemotron-3-ultra reveal that 'available' models may violate interactive SLAs silently.
+
+### `dream:20260906094507:2:8fb7b4`
+*06.09. 09:45 UTC · Quelle: dream*
+
+Fallback chains without coordinated backoff amplify contention: each retry hits the same exhausted quota window.
+
+### `dream:20260906094507:1:fbb9c5`
+*06.09. 09:45 UTC · Quelle: dream*
+
+Rate-limit cascades across all free-tier models simultaneously indicate shared upstream quota exhaustion, not individual model failures.
 
 ### `dream:20260906093408:5:f48894`
 *06.09. 09:34 UTC · Quelle: dream*
