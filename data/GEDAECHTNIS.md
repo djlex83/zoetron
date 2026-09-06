@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11792 Fakten** · Stand 2026-09-06 22:34 UTC · aktualisiert bei jedem Herzschlag
+**11775 Fakten** · Stand 2026-09-06 22:44 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6961
-- **swarm_artifact:** 2195
+- **dream:** 6951
+- **swarm_artifact:** 2188
 - **last_swarm_critique:** 813
 - **anti_pattern:** 595
 - **last_swarm_goal:** 545
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906224201:5:12923b`
+*06.09. 22:42 UTC · Quelle: dream*
+
+Concurrent retries across multiple failing providers create a cascading failure pattern where rate limits and overloads compound rather than resolve.
+
+### `dream:20260906224201:4:154329`
+*06.09. 22:42 UTC · Quelle: dream*
+
+InclusionAI's ling-3.0-flash-fin is the only consistently reliable model in the current pool, succeeding across all attempts with low latency (1.4–4.6s).
+
+### `dream:20260906224201:3:4db91f`
+*06.09. 22:42 UTC · Quelle: dream*
+
+The system severely overestimated its reliability (predicted 6 successes, actual 1), revealing a calibration gap where free-tier availability is treated as guaranteed.
+
+### `dream:20260906224201:2:47b82a`
+*06.09. 22:42 UTC · Quelle: dream*
+
+Prose-only artifacts fail to converge; executable Python code blocks are a necessary condition for task completion in the 'Alte Träume miteinander verbinden' workflow.
+
+### `dream:20260906224201:1:bfb584`
+*06.09. 22:42 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter exhibit systematic unreliability: Google models consistently hit 429 rate limits while NVIDIA models intermittently return 502 upstream overloads, making them unsuitable as primary inference endpoints.
 
 ### `dream:20260906223152:5:f6c7a0`
 *06.09. 22:31 UTC · Quelle: dream*
@@ -45087,90 +45112,15 @@ Model latency cascades exponentially within a single session (7.7s → 182.8s) w
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232241:5`
-*23.08. 22:41 UTC · Quelle: dream*
-
-Drive goals repeatedly target the same gaps (simulation→practice, swarm completion, inter-agent comms) without measurable progress, suggesting missing feedback loops.
-
-### `dream:202608232241:4`
-*23.08. 22:41 UTC · Quelle: dream*
-
-Skill proposals accumulate (benchmark_arbitrator, prune metrics, model_health, smoke tests, proposal_filter) but no adoption signal exists, creating a proposal-to-production gap.
-
-### `dream:202608232241:3`
-*23.08. 22:41 UTC · Quelle: dream*
-
-Hermes bridge swarm has been started at least twice but no completion event appears, revealing a systemic pattern of swarm initiation without closure.
-
-### `dream:202608232241:2`
-*23.08. 22:41 UTC · Quelle: dream*
-
-Model latency varies 25x (4.6s–113.7s) with no circuit breaker or fallback, causing unpredictable swarm delays and timeouts.
-
-### `dream:202608232241:1`
-*23.08. 22:41 UTC · Quelle: dream*
-
-Pruning runs consistently report zero candidates pruned despite instrumentation proposals, indicating the pruning logic or trigger conditions are fundamentally broken.
-
 ### `last_swarm_goal`
 *23.08. 22:37 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608232235:5`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Eight persistent model errors remain unclassified; error taxonomy is missing, preventing targeted fixes.
-
-### `dream:202608232235:4`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Swarm execution succeeded (simulation approved, all hand_actions ok) showing the filesystem-based coordination protocol works for multi-agent tasks.
-
-### `dream:202608232235:3`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Single baseline benchmark (24/25) provides no trend data; progress cannot be distinguished from variance without repeated measurement.
-
-### `dream:202608232235:2`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Fifty skill proposals exist but adoption is unmeasured, creating a proposal-execution gap where learning doesn't compound.
-
-### `dream:202608232235:1`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Model latency varies 200x (0.6s–114.5s) indicating unreliable inference infrastructure that corrupts timing-dependent decisions.
-
 ### `last_swarm_goal`
 *23.08. 22:35 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608232235:5`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Swarm simulation required 5 revisions before 'go' verdict, revealing iterative refinement as default path.
-
-### `dream:202608232235:4`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Single baseline benchmark (24/25) cannot detect regression; trend measurement is absent.
-
-### `dream:202608232235:3`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Fifty skill proposals exist but no adoption pipeline—proposals decay without deployment tracking.
-
-### `dream:202608232235:2`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Provider 502 errors are transient; automatic failover to nemotron-3-super-120b succeeded on first retry.
-
-### `dream:202608232235:1`
-*23.08. 22:35 UTC · Quelle: dream*
-
-Model latency varies 27× (1s–27s) on identical nemotron-3-ultra calls, making fixed timeouts unreliable.
 
 ### `last_swarm_goal`
 *23.08. 22:28 UTC · Quelle: system*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 22:32:30",
+ "stand": "2026-09-06 22:42:37",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -187,12 +187,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-wan.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ver.py",
@@ -391,9 +385,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.837,
+ "haende_quote": 0.842,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 26,
@@ -402,8 +402,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 24,
-   "schnitt": 5.75
+   "n": 23,
+   "schnitt": 5.7
   },
   "bau": {
    "n": 2,

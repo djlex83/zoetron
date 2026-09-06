@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 22:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,7 +25,7 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 21×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 19×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 14×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -36,11 +36,16 @@
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Schwarm-Wissen wieder nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Concurrent retries across multiple failing providers create a cascading failure pattern where rate limits and overloads compound rather than resolve.
+- InclusionAI's ling-3.0-flash-fin is the only consistently reliable model in the current pool, succeeding across all attempts with low latency (1.4–4.6
+- The system severely overestimated its reliability (predicted 6 successes, actual 1), revealing a calibration gap where free-tier availability is treat
+- Prose-only artifacts fail to converge; executable Python code blocks are a necessary condition for task completion in the 'Alte Träume miteinander ver
+- Free-tier models on OpenRouter exhibit systematic unreliability: Google models consistently hit 429 rate limits while NVIDIA models intermittently ret
 - Failure timestamps cluster around specific models (Nemotron 502, Gemma 429), so FailurePatternMiner can quickly emit targeted fallbacks (e.g., 'on 429
 - Skill proposals accumulate but remain unimplemented because no autonomous loop exists to promote a proposal → write code → register tool → verify refl
 - Reflex execution fails silently when tool paths are invalid or data directories missing (hand_action exit 0, reflex_used ok=false), revealing a gap be
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but rarely deploy because no mandatory simulation gate validates them pre-flight.
 - Swarm knowledge staleness persists because refresh cycles are manual, not tied to convergence events.
 - Model cascade failures (429/502) recur because providers lack proactive health checks and automatic fallback chains.
-- Critic calibration drifts silently because predicted vs. actual score pairs are never fed back into online isotonic regression.
-- Artifacts deploy without simulation verdicts because no gate enforces 'go' with risks ≤ 2 before release.
-- Swarm knowledge decays into staleness without an automatic refresh trigger tied to convergence cycles.
-- Skills accumulate untested because proposals lack a mandatory execute-and-score gate within the same cycle.
-- Model cascade failures occur because no proactive health checks or fallback chains exist, turning single 502/429 errors into system-wide stalls.
 
 ---
 
