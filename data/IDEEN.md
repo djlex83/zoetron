@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:47 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 26×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts/events regularly (15 facts, 65 events total) but does not target stale model performance metrics that corrupt routing decisions.
+- Reflex-based swarm knowledge refresh succeeds consistently (two consecutive runs converged), proving deterministic scripts outperform LLM calls for da
+- Dream-generated skill proposals (ModelRouter, circuit breaker, fallback chain, SkillIncubator, freshness audit) accumulate but lack an incubation pipe
+- A fast fallback model (inclusionai/ling-3.0-flash-fin: 2.7s latency) succeeds when primary models fail, but traffic shifting is manual, not automatic.
+- Model endpoint failures are systemic (71 failures vs 39 successes) with rate limits (429) and upstream overloads (502) affecting multiple providers si
 - Skill proposals accumulate (5 in this cycle) but none are instantiated, tested, or registered, stalling capability growth.
 - Swarm refresh occurs only via reactive reflex triggers, not proactive freshness decay metrics, leaving knowledge stale between runs.
 - Pruning runs consistently at ~1:3.2 fact:event ratio but without policy enforcement, risking audit gaps and drift.
@@ -51,11 +56,6 @@
 - Drive goals directly mirror observed failure patterns (model errors, stale data), showing the system's meta-cognition correctly identifies its own wea
 - A single reliable model (inclusionai/ling-3.0-flash-fin:free) handles all successful requests, creating a dangerous single point of failure.
 - Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model lim
-- Automatic model blocking after three consecutive errors protects downstream stability but requires proactive health tracking to avoid wasting attempts
-- Reflex-driven tool execution achieves goals without consuming model budget, demonstrating that coded procedures outperform probabilistic generation fo
-- Hand actions execute reliably (exit code 0) and can serve as deterministic fallbacks when all model endpoints are rate-limited.
-- The inclusionai/ling-3.0-flash-fin:free model consistently succeeds with low latency, making it a reliable primary candidate for routine tasks.
-- Rate limits on free-tier models cause cascading failures when the system retries blocked models instead of switching to healthy alternatives.
 
 ---
 

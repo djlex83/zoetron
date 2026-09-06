@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12054 Fakten** · Stand 2026-09-06 13:35 UTC · aktualisiert bei jedem Herzschlag
+**12050 Fakten** · Stand 2026-09-06 13:49 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7097
-- **swarm_artifact:** 2280
+- **swarm_artifact:** 2279
 - **last_swarm_critique:** 809
-- **anti_pattern:** 629
+- **anti_pattern:** 627
 - **last_swarm_goal:** 541
-- **strategy:** 316
+- **strategy:** 315
 - **tool:** 169
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906134508:5:d6b46d`
+*06.09. 13:45 UTC · Quelle: dream*
+
+Pruning removes facts/events regularly (15 facts, 65 events total) but does not target stale model performance metrics that corrupt routing decisions.
+
+### `dream:20260906134508:4:54fc77`
+*06.09. 13:45 UTC · Quelle: dream*
+
+Reflex-based swarm knowledge refresh succeeds consistently (two consecutive runs converged), proving deterministic scripts outperform LLM calls for data maintenance.
+
+### `dream:20260906134508:3:6c6d8b`
+*06.09. 13:45 UTC · Quelle: dream*
+
+Dream-generated skill proposals (ModelRouter, circuit breaker, fallback chain, SkillIncubator, freshness audit) accumulate but lack an incubation pipeline to validate and promote them.
+
+### `dream:20260906134508:2:e403c9`
+*06.09. 13:45 UTC · Quelle: dream*
+
+A fast fallback model (inclusionai/ling-3.0-flash-fin: 2.7s latency) succeeds when primary models fail, but traffic shifting is manual, not automatic.
+
+### `dream:20260906134508:1:b09ab7`
+*06.09. 13:45 UTC · Quelle: dream*
+
+Model endpoint failures are systemic (71 failures vs 39 successes) with rate limits (429) and upstream overloads (502) affecting multiple providers simultaneously.
 
 ### `dream:20260906133253:5:23e6a7`
 *06.09. 13:32 UTC · Quelle: dream*
@@ -46254,16 +46279,6 @@ Evolution optimizing internal variant scores (8-9) without post-evolution swarm 
 
 Model latency variance (5-60s) breaks role-specific SLAs and causes cascade failures in time-bounded swarms.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Ersten Swarm-Lauf mit Sc:2`
-*23.08. 13:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Critic-Driven Self-Improvement - Implement a minimal 'Swarm + Critic' loop (2 agents: Worker, Critic) on a specific task. The Worker attempts the task. The Critic (strong LLM + rubric) scores the output 1-10 and outputs *spec
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Ersten Swarm-Lauf mit Sc:1`
-*23.08. 13:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Parameter Optimization Loop - Fix the target task to a single, well-defined, difficult problem (e.g., 'Refactor legacy module X to pass all integration tests'). Treat the swarm configuration (system prompts, temperature, agen
-
 ### `last_swarm_critique`
 *23.08. 13:40 UTC · Quelle: critic*
 
@@ -46273,31 +46288,6 @@ score=3; issues=Goal-Plan Mismatch: The plan describes building a swarm orchestr
 *23.08. 13:37 UTC · Quelle: system*
 
 Ersten Swarm-Lauf mit Score 8+ konvergieren lassen
-
-### `dream:202608231336:5`
-*23.08. 13:36 UTC · Quelle: dream*
-
-Pruner inactivity (0 facts/events pruned) indicates either aggressive thresholds or lack of decay policies, risking unbounded memory growth.
-
-### `dream:202608231336:4`
-*23.08. 13:36 UTC · Quelle: dream*
-
-MemoryStore missing `add_fact` method causes hand-action failures, revealing incomplete interface contracts in core modules.
-
-### `dream:202608231336:3`
-*23.08. 13:36 UTC · Quelle: dream*
-
-Swarm convergence fails despite evolution gains (3→8) due to role imbalance (4 builders, 1 planner, 1 critic) and missing quorum enforcement.
-
-### `dream:202608231336:2`
-*23.08. 13:36 UTC · Quelle: dream*
-
-Calibration drift (predicted 4 vs actual 3) systematically overestimates performance, requiring rolling ratio correction before decisions.
-
-### `dream:202608231336:1`
-*23.08. 13:36 UTC · Quelle: dream*
-
-High latency variance (2.9s–138.3s) across model variants makes p90-based circuit breakers essential for SLA compliance.
 
 ### `last_swarm_critique`
 *23.08. 13:28 UTC · Quelle: critic*
