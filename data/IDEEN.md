@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 03:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
@@ -35,12 +35,17 @@
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
+- Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben endlich umsetzen *(wieder aufgegriffen: 2×)*
 - Alte Schwarm-Pläne endlich umsetzen *(wieder aufgegriffen: 2×)*
-- Fähigkeits-Vorschläge in echte Skills umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Circuit-breakers alone are insufficient; effective resilience requires combining circuit-breaker state, exponential backoff with jitter, and predictiv
+- Swarm knowledge degrades predictably over time and requires proactive scheduled refresh rather than reactive updates triggered only by failure signals
+- A persistent execution gap exists between generating skill proposals and registering tested code stubs — knowledge without implementation decays faste
+- Skill proposals evolve from isolated components (circuit-breaker, registry) toward unified integrated layers, indicating that consolidation favors hol
+- Rate limiting (429) and upstream overload (502) are the dominant, systemic failure modes across diverse models — not model-specific bugs but infrastru
 - Model failures cascade because the system lacks a health-aware router that prefers reliable endpoints for critical operations.
 - Stale tasks and obsolete swarm data persist without automated archival, polluting the knowledge base and degrading future decisions.
 - Conserve-mode throttling prevents execution of remediation tasks, creating a deadlock where the system cannot self-heal under load.
@@ -51,11 +56,6 @@
 - Swarm collaboration stalls when critic feedback loops exceed metabolism tick budgets, but reserved remediation slots bypassing conserve-mode restore c
 - Model 429 errors cascade into fallback latency spikes because routing lacks proactive health-aware load shedding based on sliding-window error rates.
 - Duplicate skill proposals recur because the system lacks semantic deduplication before persistence, wasting metabolism cycles on redundant implementat
-- Pruning removes zero facts/events despite repeated failures, indicating retention policy doesn't prioritize failure-pattern evidence.
-- Selbstdiagnose reports zero organ errors while provider degradation cascades, proving organ-level monitoring misses cross-cutting infrastructure failu
-- Latency variance from 4.7s to 25.1s across "healthy" models makes timeout-based routing unreliable without percentile-aware SLAs.
-- Duplicate skill proposals (ModelRouter proposed twice) reveal missing semantic deduplication in the consolidation pipeline.
-- Cross-provider 429 errors indicate systemic rate-limiting vulnerability requiring coordinated traffic management rather than per-model retries.
 
 ---
 

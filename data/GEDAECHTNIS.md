@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12071 Fakten** · Stand 2026-09-06 03:03 UTC · aktualisiert bei jedem Herzschlag
+**12072 Fakten** · Stand 2026-09-06 03:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7043
-- **swarm_artifact:** 2331
+- **dream:** 7048
+- **swarm_artifact:** 2330
 - **last_swarm_critique:** 785
-- **anti_pattern:** 669
+- **anti_pattern:** 667
 - **last_swarm_goal:** 533
-- **strategy:** 336
+- **strategy:** 335
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906031147:5:e17bee`
+*06.09. 03:11 UTC · Quelle: dream*
+
+Circuit-breakers alone are insufficient; effective resilience requires combining circuit-breaker state, exponential backoff with jitter, and predictive health scoring into a single layered defense.
+
+### `dream:20260906031147:4:4201ba`
+*06.09. 03:11 UTC · Quelle: dream*
+
+Swarm knowledge degrades predictably over time and requires proactive scheduled refresh rather than reactive updates triggered only by failure signals.
+
+### `dream:20260906031147:3:205ac3`
+*06.09. 03:11 UTC · Quelle: dream*
+
+A persistent execution gap exists between generating skill proposals and registering tested code stubs — knowledge without implementation decays faster than stale swarm data.
+
+### `dream:20260906031147:2:fe30f3`
+*06.09. 03:11 UTC · Quelle: dream*
+
+Skill proposals evolve from isolated components (circuit-breaker, registry) toward unified integrated layers, indicating that consolidation favors holistic resilience over fragmented fixes.
+
+### `dream:20260906031147:1:708824`
+*06.09. 03:11 UTC · Quelle: dream*
+
+Rate limiting (429) and upstream overload (502) are the dominant, systemic failure modes across diverse models — not model-specific bugs but infrastructure-level constraints requiring architectural responses.
 
 ### `dream:20260906030119:5:8a55e7`
 *06.09. 03:01 UTC · Quelle: dream*
@@ -46290,16 +46315,6 @@ Repeated simulation revisions (3→5) indicate insufficient early validation; us
 *23.08. 03:17 UTC · Quelle: dream*
 
 High latency spikes (>150 s) reveal the need for adaptive timeouts and fallback mechanisms to avoid stalled tasks.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Schwarm-Aufgaben zu Ende:2`
-*23.08. 03:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Self‑healing containerized service - Package each component (updater, health writer, notifier, heartbeat) as Docker containers with built‑in healthchecks; deploy via Kubernetes CronJobs or Jobs that enforce pod disruption bud
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Schwarm-Aufgaben zu Ende:0`
-*23.08. 03:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Defensive validation & idempotency - Introduce strict schema validation for all JSON inputs (e.g., using JSON‑Schema), validate THRESHOLD as a positive numeric env var with a safe fallback, wrap health‑file writes in flock‑ba
 
 ### `last_swarm_critique`
 *23.08. 03:01 UTC · Quelle: critic*
