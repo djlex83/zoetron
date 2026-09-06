@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 19:18 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Knowledge freshness decay is a silent failure mode: stale swarm data degrades planning quality even when the system appears operational.
+- Convergence stagnation—when score deltas fall below threshold across consecutive cycles—signals the need for structural re-architecture, not increment
+- Real empirical reliability data per provider consistently outperforms advertised capability rankings for routing decisions.
+- Skill proposals accumulate faster than they are validated and deployed, creating a growing gap between intended capability and actual capability.
+- Provider failures (502/429) are systemic infrastructure issues, not isolated incidents, requiring structural fallback chains rather than retry logic.
 - Upstream service failures (502 overload, 429 rate limits) are not rare edge cases but a recurring pattern that demands an automatic ProviderFallbackCh
 - Pruning aggressiveness must protect knowledge tagged with 'risk', 'revision', or 'critic_feedback' for at least 3 cycles, as premature pruning of thes
 - Convergence criteria based on a single metric (e.g., abs_error == 0) are insufficient; a multi-factor gate requiring score >= 8, no critical risks, an
@@ -51,11 +56,6 @@
 - Stale swarm data actively degrades decision quality and must be refreshed or discarded rather than left unused.
 - The fastest available model (inclusionai/ling-3.0-flash-fin at 4.1s) outperforms the default model (nemotron at 51-53s) by over 10x in latency, making
 - Model failures follow predictable patterns (upstream 502, rate-limit 429) and must be handled by proactive routing rather than reactive retry.
-- Reflex-based goal execution converges reliably in both cycles, demonstrating that well-defined reflex patterns are more durable than open-ended goal-d
-- Pruning volume scales superlinearly with cycle activity (5→13 facts, 20→63 events), indicating the system accumulates state faster than it can consoli
-- The persistent gap between skill proposals and implemented skills stems from the absence of a committed execution schedule with topological dependency
-- Stale swarm data actively blocks new collective knowledge formation, making periodic refresh a hard prerequisite rather than an optional maintenance t
-- Model reliability failures recur across consolidation cycles because root causes like rate-limit exhaustion and quota depletion are not addressed at t
 
 ---
 

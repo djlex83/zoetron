@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11994 Fakten** · Stand 2026-09-06 18:57 UTC · aktualisiert bei jedem Herzschlag
+**11989 Fakten** · Stand 2026-09-06 19:20 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7101
-- **swarm_artifact:** 2238
-- **last_swarm_critique:** 811
+- **dream:** 7096
+- **swarm_artifact:** 2235
+- **last_swarm_critique:** 812
 - **anti_pattern:** 611
-- **last_swarm_goal:** 543
+- **last_swarm_goal:** 544
 - **strategy:** 307
-- **tool:** 171
+- **tool:** 172
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:träume-besser-nutzen-lernen`
+*06.09. 19:18 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Träume besser nutzen lernen'. Datei: data/tools/träume-besser-nutzen-lernen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Träume besser nutzen ler:2`
+*06.09. 19:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 3, 7]): Distributed Dreamweaving Network - Move from individual analysis to collective intelligence. Build a federated, privacy-preserving platform where dreamers voluntarily share anonymized reports + minimal metadata (timez
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Träume besser nutzen ler:1`
+*06.09. 19:16 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 5, 8]): Generative Dream Co-Creation with LLMs - Treat the LLM as an active dream incubator and sense-making partner, not a passive analyzer. Pipeline: (1) User states a waking-life question or creative block. (2) LLM generat
+
+### `last_swarm_critique`
+*06.09. 19:14 UTC · Quelle: critic*
+
+score=6; issues=All three artifacts duplicate boilerplate code (find_data_root, load_jsonl, load_json, save_json) instead of sharing a common utility module; Artifact 3 (recombination engine) uses hardcoded German theme keyword dictionaries (flucht, wiederkehr
+
+### `last_swarm_goal`
+*06.09. 19:06 UTC · Quelle: system*
+
+Träume besser nutzen lernen
+
+### `dream:20260906190550:5:95e655`
+*06.09. 19:05 UTC · Quelle: dream*
+
+Knowledge freshness decay is a silent failure mode: stale swarm data degrades planning quality even when the system appears operational.
+
+### `dream:20260906190550:4:8b21dc`
+*06.09. 19:05 UTC · Quelle: dream*
+
+Convergence stagnation—when score deltas fall below threshold across consecutive cycles—signals the need for structural re-architecture, not incremental tuning.
+
+### `dream:20260906190550:3:56e1e5`
+*06.09. 19:05 UTC · Quelle: dream*
+
+Real empirical reliability data per provider consistently outperforms advertised capability rankings for routing decisions.
+
+### `dream:20260906190550:2:0478cd`
+*06.09. 19:05 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they are validated and deployed, creating a growing gap between intended capability and actual capability.
+
+### `dream:20260906190550:1:ee0210`
+*06.09. 19:05 UTC · Quelle: dream*
+
+Provider failures (502/429) are systemic infrastructure issues, not isolated incidents, requiring structural fallback chains rather than retry logic.
 
 ### `dream:20260906185435:5:d6b81d`
 *06.09. 18:54 UTC · Quelle: dream*
@@ -46017,45 +46067,10 @@ ABGELEHNT von Evolution (Score 7): Adversariales Minimal-Paar-Design: lexikalisc
 
 ABGELEHNT von Evolution (Score 8): Statistisches Benchmark-Protokoll: n=1 durch Multi-Query-Evaluation mit Signifik - Baue eine Query-Sammlung mit mindestens 50 Queries (Paraphrasen plus Negativbeispiele) und bekannter Ground-Truth-Relevanz je Dokument. Evalui
 
-### `dream:202608231905:5`
-*23.08. 19:05 UTC · Quelle: dream*
-
-Five new skill proposals accumulated this cycle while earlier ones remain unimplemented, confirming proposal generation chronically outpaces the execution pipeline.
-
-### `dream:202608231905:4`
-*23.08. 19:05 UTC · Quelle: dream*
-
-hands-execute crashed with AttributeError 'MemoryStore.add_fact', demonstrating that callers drifted from the MemoryStore interface with no contract test to catch it.
-
-### `dream:202608231905:3`
-*23.08. 19:05 UTC · Quelle: dream*
-
-Both simulations returned 'go' with zero risks and zero revisions right before a score-3 failure, so the current simulation gate carries no predictive signal.
-
-### `dream:202608231905:2`
-*23.08. 19:05 UTC · Quelle: dream*
-
-The score predictor overestimated by 3 points (predicted 6 vs actual 3), showing systematic optimism that corrupts any decision gated on its output.
-
-### `dream:202608231905:1`
-*23.08. 19:05 UTC · Quelle: dream*
-
-Evolution-run winner scores (9/8/8) diverged sharply from the final independent score (3), proving the evolution evaluator is inflated relative to the acceptance scorer.
-
 ### `last_swarm_critique`
 *23.08. 19:04 UTC · Quelle: critic*
 
 score=7; issues=Evaluation ist n=1: Artefakt 4 verspricht explizit 'Recall@k über einer Query-Sammlung statt Einzelbeispiel', aber Artefakt 5 liefert weiterhin nur EINE Query auf 5 Dokumenten – der Befund '+1.00 Improvement' ist anekdotisch, nicht gemessen.; A
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:2`
-*23.08. 19:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Decoupled event‑driven pipeline with validation stage - Break the process into three independent stages: (1) a fetcher that emits quote events (including external quotes) onto a message queue; (2) a validator that consumes ev
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:1`
-*23.08. 19:01 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Adapter layer with type coercion - Leave the existing artifacts unchanged and insert a thin adapter between fetch_external_quote and detect_self_loop. The adapter converts the author‑string 'source' returned by fetch_external
 
 ### `last_swarm_critique`
 *23.08. 18:59 UTC · Quelle: critic*
@@ -46066,31 +46081,6 @@ score=4; issues=Critical incompatibility: Artifact 2's fetch_external_quote retu
 *23.08. 18:58 UTC · Quelle: system*
 
 Embedding-Recall statt reinem Wortvergleich
-
-### `dream:202608231858:5`
-*23.08. 18:58 UTC · Quelle: dream*
-
-Repeated revision loops (5 revisions, 4 applied) without early interface checks waste cycles; pre‑emptive tool/reflex matching could prevent unnecessary swarms.
-
-### `dream:202608231858:4`
-*23.08. 18:58 UTC · Quelle: dream*
-
-Evolutionary variants can raise scores (up to 9) but swarm convergence fails when generated code lacks required store interfaces, showing that fitness alone doesn’t guarantee integrality.
-
-### `dream:202608231858:3`
-*23.08. 18:58 UTC · Quelle: dream*
-
-Simulation verdicts consistently over‑predict benchmark scores (predicted 5 vs actual 3), revealing a calibration gap that inflates go‑decisions.
-
-### `dream:202608231858:2`
-*23.08. 18:58 UTC · Quelle: dream*
-
-Model latency exhibits high variance (9‑85 s), frequently exceeding 30 s, indicating a need for latency‑aware routing to fallback models.
-
-### `dream:202608231858:1`
-*23.08. 18:58 UTC · Quelle: dream*
-
-Missing method contracts (e.g., add_fact) between auto-generated benchmark code and MemoryStore cause AttributeError failures that halt swarm execution.
 
 ### `last_swarm_goal`
 *23.08. 18:54 UTC · Quelle: system*
