@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12047 Fakten** · Stand 2026-09-06 14:57 UTC · aktualisiert bei jedem Herzschlag
+**12044 Fakten** · Stand 2026-09-06 15:09 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7107
 - **swarm_artifact:** 2272
 - **last_swarm_critique:** 809
-- **anti_pattern:** 623
+- **anti_pattern:** 621
 - **last_swarm_goal:** 541
-- **strategy:** 313
+- **strategy:** 312
 - **tool:** 169
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906150546:5:bbace7`
+*06.09. 15:05 UTC · Quelle: dream*
+
+The recurrence of identical model failures across two separate time windows proves that transient-error handling without stateful tracking (blacklists, cooldowns, circuit breakers) will always repeat the same mistakes.
+
+### `dream:20260906150546:4:5e04e6`
+*06.09. 15:05 UTC · Quelle: dream*
+
+Repeated 429 and 502 errors consume context and memory (15 events pruned), indicating that failed model attempts are a significant source of context pollution that should be prevented rather than cleaned up after the fact.
+
+### `dream:20260906150546:3:e1ed8d`
+*06.09. 15:05 UTC · Quelle: dream*
+
+Reflex-driven convergence can succeed without producing a measurable score, revealing that convergence signals alone are insufficient validation and that score attribution must be explicitly instrumented.
+
+### `dream:20260906150546:2:b9fecc`
+*06.09. 15:05 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin is the only reliably responsive model in the current pool (4.1s latency, successful completion), making it the default primary target with all other models demoted to conditional fallback status.
+
+### `dream:20260906150546:1:3e789a`
+*06.09. 15:05 UTC · Quelle: dream*
+
+Model failures follow predictable patterns—gemma-4 series consistently hits 429 rate limits while nemotron hits 502 upstream overloads—meaning retry-on-failure is wasteful and a health-aware router with auto-blacklisting is required instead.
 
 ### `dream:20260906145412:5:c94d26`
 *06.09. 14:54 UTC · Quelle: dream*
@@ -46238,41 +46263,6 @@ score=6; issues=Zielobjekt unspezifiziert: Der Plan nennt weder Codepfad, Schnit
 *23.08. 15:03 UTC · Quelle: system*
 
 Modellfehler reduzieren und stabiler machen
-
-### `dream:202608231502:5`
-*23.08. 15:02 UTC · Quelle: dream*
-
-Five new skill proposals were generated while the standing goal remains 'finally actually try the suggestions', confirming the proposal backlog grows faster than the execution loop consumes it.
-
-### `dream:202608231502:4`
-*23.08. 15:02 UTC · Quelle: dream*
-
-Conserve-mode throttling (stress 0.811 -> max_iterations=1) launched a swarm that then failed to converge in 2 cycles, so budget cuts during high stress are converting would-be successes into guaranteed failures.
-
-### `dream:202608231502:3`
-*23.08. 15:02 UTC · Quelle: dream*
-
-The evolution run crowned a variant scoring 9/10 internally, yet the swarm finished at 3/10, revealing that builder/critic self-scores are systematically inflated relative to realized outcomes.
-
-### `dream:202608231502:2`
-*23.08. 15:02 UTC · Quelle: dream*
-
-Latency on the same model varied from 1.6s to 41.1s across calls, proving fixed timeouts are unusable on free-tier providers and per-model adaptive latency budgets are required.
-
-### `dream:202608231502:1`
-*23.08. 15:02 UTC · Quelle: dream*
-
-HTTP 200 does not mean success: the nemotron-ultra endpoint returned status 200 with zero choices and a 502 'Service temporarily overloaded' body, so model calls must validate non-empty choices rather than trust the status code.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen häufiger ei:1`
-*23.08. 14:54 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Ereignis-/risikobasierte Policy-Engine: Frequenz über Trigger-Dichte statt Zwang - Simulationen werden ereignisgesteuert: data/tools/sim_triggers.yaml definiert Risikoregeln (destruktive Ops, neuer Dateipfad, Schema/API-Änder
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Simulationen häufiger ei:0`
-*23.08. 14:54 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Runtime-Enforcement: Simulation als fail-closed Gate direkt im Write-Pfad (Code- - Der sim_gate wird nicht entworfen, sondern implementiert: Ein Hook/Middleware in Tool-Executor leitet jeden Write-Aufruf zwingend durch simula
 
 ### `last_swarm_critique`
 *23.08. 14:50 UTC · Quelle: critic*

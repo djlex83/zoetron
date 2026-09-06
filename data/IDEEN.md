@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 15:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 24×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 23×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 7×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The recurrence of identical model failures across two separate time windows proves that transient-error handling without stateful tracking (blacklists
+- Repeated 429 and 502 errors consume context and memory (15 events pruned), indicating that failed model attempts are a significant source of context p
+- Reflex-driven convergence can succeed without producing a measurable score, revealing that convergence signals alone are insufficient validation and t
+- inclusionai/ling-3.0-flash-fin is the only reliably responsive model in the current pool (4.1s latency, successful completion), making it the default 
+- Model failures follow predictable patterns—gemma-4 series consistently hits 429 rate limits while nemotron hits 502 upstream overloads—meaning retry-o
 - Latency variance across models is ignored in routing, wasting fast models on simple tasks and slow models on time-critical ones.
 - Fallback chains are manual rather than automatic, so non-200 responses or timeouts stall execution until human intervention.
 - Knowledge staleness persists because no scheduled audit re-verifies timestamped entries against live sources.
@@ -51,11 +56,6 @@
 - The proposal-to-execution gap is the system's most persistent failure mode — skills that are proposed but never validated through automated failure-in
 - Knowledge decay is silent and compounding: without explicit freshness timestamps and scheduled audit cycles, stale swarm data degrades decision qualit
 - Model endpoint failures (502 overload, 429 rate-limiting) are systemic rather than incidental — any reliable system must assume providers will fail an
-- Self-diagnosis reports zero organ errors even during active model failures, meaning the system's internal health is sound — the failure domain is enti
-- Reflex-based execution succeeds reliably for deterministic maintenance tasks like updating stale information, confirming that reflex mode is the corre
-- Pruning runs remove large volumes of facts and events (up to 29 facts and 19 events per run), but the recurring model failures suggest that failure-pa
-- The dream module repeatedly generates skill proposals clustered around quota management and resilience, revealing a persistent gap between recognizing
-- Free-tier model endpoints fail systematically (429s, 502s) across multiple providers simultaneously, indicating that availability is a structural prop
 
 ---
 
