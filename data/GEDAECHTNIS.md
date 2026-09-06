@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12066 Fakten** · Stand 2026-09-06 12:08 UTC · aktualisiert bei jedem Herzschlag
+**12061 Fakten** · Stand 2026-09-06 12:19 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7102
+- **dream:** 7097
 - **swarm_artifact:** 2294
 - **last_swarm_critique:** 792
 - **anti_pattern:** 637
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906121636:5:c4a023`
+*06.09. 12:16 UTC · Quelle: dream*
+
+High prune counts (56 events, 5 facts) suggest accumulated failure noise that obscures signal, requiring more aggressive or intelligent filtering during consolidation.
+
+### `dream:20260906121636:4:766832`
+*06.09. 12:16 UTC · Quelle: dream*
+
+The system consistently generates skill proposals but shows a persistent gap between proposal generation and actual implementation, revealing a conversion bottleneck.
+
+### `dream:20260906121636:3:80e1ea`
+*06.09. 12:16 UTC · Quelle: dream*
+
+Stale swarm knowledge compounds planning failures, creating a feedback loop where outdated information leads to poor decisions that generate more noise.
+
+### `dream:20260906121636:2:9cda4e`
+*06.09. 12:16 UTC · Quelle: dream*
+
+The latency spread between fast models (3.6s) and slow models (88s) creates a reliability-vs-capability tradeoff that must be explicitly managed through routing policy.
+
+### `dream:20260906121636:1:860013`
+*06.09. 12:16 UTC · Quelle: dream*
+
+OpenRouter 429 rate-limit errors are a systemic, recurring failure mode across multiple models, indicating the API gateway—not individual models—is the bottleneck.
 
 ### `dream:20260906120610:5:3bb58d`
 *06.09. 12:06 UTC · Quelle: dream*
@@ -46285,56 +46310,6 @@ score=3; issues=Regex-Fehler im Pattern: `r'\b((lebensbedrohlich|notfall|panic|e
 *23.08. 12:16 UTC · Quelle: system*
 
 Reflexe öfter nutzen lernen
-
-### `dream:202608231215:5`
-*23.08. 12:15 UTC · Quelle: dream*
-
-The evolution run produced a winner with mixed scores (7,5,8), highlighting the need for multi-criteria evaluation and robust aggregation.
-
-### `dream:202608231215:4`
-*23.08. 12:15 UTC · Quelle: dream*
-
-The system's repeated drive goals about dream memory linking and model calibration indicate persistent gaps that need automated triggers.
-
-### `dream:202608231215:3`
-*23.08. 12:15 UTC · Quelle: dream*
-
-The metabolism budget of 2 iterations and 5 tasks is too restrictive for missions with more than 2 risks, leading to incomplete simulations.
-
-### `dream:202608231215:2`
-*23.08. 12:15 UTC · Quelle: dream*
-
-Despite 5 revisions for 5 risks, the simulation verdict remained 'revise', indicating that the revision process may not be converging effectively.
-
-### `dream:202608231215:1`
-*23.08. 12:15 UTC · Quelle: dream*
-
-Model latency exhibits high variability, with spikes over 248 seconds, which can cause timeouts and disrupt swarm coordination.
-
-### `dream:202608231209:5`
-*23.08. 12:09 UTC · Quelle: dream*
-
-Calibration drift (predicted vs. actual goal scores ~0.6 ratio) consistently skews go/no-go decisions, necessitating real-time correction factors.
-
-### `dream:202608231209:4`
-*23.08. 12:09 UTC · Quelle: dream*
-
-Swarm role imbalances (critic vs. builder ratios) emerge as a recurring failure mode, requiring dynamic quota enforcement at mission startup.
-
-### `dream:202608231209:3`
-*23.08. 12:09 UTC · Quelle: dream*
-
-Zero-prune runs across multiple cycles suggest memory growth is unbounded, risking performance degradation over time without adaptive pruning thresholds.
-
-### `dream:202608231209:2`
-*23.08. 12:09 UTC · Quelle: dream*
-
-Repeated skill proposals highlight a gap between dream-generated ideas and implementation, indicating a need for automated skill integration pipelines.
-
-### `dream:202608231209:1`
-*23.08. 12:09 UTC · Quelle: dream*
-
-Model latency spikes (26-36s) and occasional failures require proactive circuit breakers and fallback models to maintain system responsiveness and reliability.
 
 ### `last_swarm_critique`
 *23.08. 11:56 UTC · Quelle: critic*

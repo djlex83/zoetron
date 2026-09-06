@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 12:06 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 12:16 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 3×)*
-- Vorgeschlagene Fähigkeiten wirklich umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High prune counts (56 events, 5 facts) suggest accumulated failure noise that obscures signal, requiring more aggressive or intelligent filtering duri
+- The system consistently generates skill proposals but shows a persistent gap between proposal generation and actual implementation, revealing a conver
+- Stale swarm knowledge compounds planning failures, creating a feedback loop where outdated information leads to poor decisions that generate more nois
+- The latency spread between fast models (3.6s) and slow models (88s) creates a reliability-vs-capability tradeoff that must be explicitly managed throu
+- OpenRouter 429 rate-limit errors are a systemic, recurring failure mode across multiple models, indicating the API gateway—not individual models—is th
 - The swarm converged in a single cycle with score 8 despite cascading model failures, suggesting the planner/builder/critic role distribution absorbed 
 - All 5 skill proposals generated are direct reactive responses to observed failure modes, revealing the proposal engine is tightly coupled to failure s
 - Proactive maintenance operations (pruning 8 facts and 13 events, self-diagnosis returning zero organ errors) ran cleanly even under model failure pres
@@ -51,11 +56,6 @@
 - Metabolic conservation mode (stress=1.0, max 1 iteration) severely constrained execution capacity, showing that internal state throttling can prevent 
 - The nvidia/nemotron-3-ultra-550b-a55b model succeeded every time but with high latency (32-87s), revealing that reliability and speed are inversely co
 - The z-ai/glm-5.2 model failed repeatedly with HTTP 429 rate-limit errors when called in rapid succession, indicating that retry without backoff on a k
-- Stale swarm data degrades decision quality; freshness validation must be paired with refresh cycles to avoid propagating outdated information into rou
-- Skill proposals generated during consolidation are only durable if validated through sandbox testing before promotion to the active registry, preventi
-- Reactive reflexes successfully triggered skill-building, but proactive mechanisms like circuit breakers and health-score-based routing would prevent c
-- The system's reliance on a single working model (inclusionai/ling-3.0-flash-fin) creates dangerous concentration risk; any future disruption without a
-- Repeated 429 and 502 errors across multiple providers indicate infrastructure-level failures, not model-specific defects, so resilience must be built 
 
 ---
 
