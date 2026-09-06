@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 23:30:15",
+ "stand": "2026-09-06 23:40:04",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -397,9 +397,15 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeiten-ideen-in-echte-skills-wandel.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.842,
+ "haende_quote": 0.843,
  "simulationen_angewandt": 25,
  "swarm_scores": {
   "n": 25,
@@ -408,8 +414,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 23,
-   "schnitt": 5.7
+   "n": 22,
+   "schnitt": 5.91
   },
   "bau": {
    "n": 2,

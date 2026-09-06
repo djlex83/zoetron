@@ -20304,3 +20304,17 @@
 {"ts": 1788132448.7943747, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788132448.7943723, "schalter_geoeffnet": false}}
 {"ts": 1788132502.0607002, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 53.3, "tokens_ein": 2362, "tokens_aus": 2878}}
 {"ts": 1788132502.7516756, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788132502.751673, "schalter_geoeffnet": false}}
+{"ts": 1788132597.60375, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 94.9, "tokens_ein": 2765, "tokens_aus": 4468}}
+{"ts": 1788132598.1606798, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 2}}
+{"ts": 1788132598.160863, "kind": "tor", "payload": {"goal": "Alte Marktdaten auffrischen", "gruen": true, "grund": "Artefakt laeuft (153 Zeilen Python)", "zyklus": 1}}
+{"ts": 1788132599.134533, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788132599.134531, "schalter_geoeffnet": false}}
+{"ts": 1788132628.1395905, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 29.0, "tokens_ein": 7658, "tokens_aus": 2105}}
+{"ts": 1788132628.1401203, "kind": "calibration", "payload": {"goal": "Alte Marktdaten auffrischen", "predicted": 7, "actual": 8, "abs_error": 1}}
+{"ts": 1788132628.140184, "kind": "model_score", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "score": 8}}
+{"ts": 1788132628.641456, "kind": "bahnen", "payload": {"goal": "Alte Marktdaten auffrischen", "delta": 1.0, "kanten": 10, "hat_code": true, "score": 8, "abgerufen": 4, "ids": ["e:4247491106dc", "e:187a9d79f552", "e:173a28a86291", "f:334b5d7c210b"], "ziel_id": "g:67ff28bdc2ae"}}
+{"ts": 1788132628.6416855, "kind": "swarm_finished", "payload": {"goal": "Alte Marktdaten auffrischen", "score": 8, "converged": true, "cycles": 1, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": false}}
+{"ts": 1788132628.641938, "kind": "act_done", "payload": {"goal_title": "Alte Marktdaten auffrischen", "score": 8, "converged": true}}
+{"ts": 1788132629.258441, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22, "gelesen": 2}}
+{"ts": 1788132629.2656367, "kind": "werkzeug_abgelehnt", "payload": {"name": "alte-marktdaten-auffrischen", "grund": "zerstoerende Operation (os.system, subprocess) - braucht menschliche Freigabe", "goal": "Alte Marktdaten auffrischen"}}
+{"ts": 1788132631.3794649, "kind": "issue_synced", "payload": {"issue": 257, "state": "closed"}}
+{"ts": 1788132837.073567, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

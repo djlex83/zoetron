@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 23:30 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 23:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 15×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
@@ -34,13 +34,18 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen wieder nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Drive goals auto-generated from failure signals (30 model errors → 'Modell-Fehler verstehen', stale swarm → 'Schwarm-Wissen aktualisieren') create a c
+- Pruning aggressively removes noise (22 facts, 87 events then 24 facts, 1 event) without losing convergent reflex outcomes, confirming that consolidati
+- Reflex tools for dream/simulation improvement converge reliably (2/2 successes) while model-dependent planning fails, suggesting reflexes should handl
+- Health-check probes before task execution would have prevented 3/4 model failures observed, as the 502 and 429 errors are detectable via lightweight p
+- Free-tier model endpoints exhibit systematic unreliability: NVIDIA returns 502s under load, Gemma hits 429 rate limits, and Nemotron latency varies 5–
 - Stress-aware scheduling proposals emerge when metabolism stress exceeds thresholds, showing homeostatic regulation is a learned behavior.
 - Self-generated skill proposals target observed failure modes (model health, reflex validation, proposal pipeline) indicating effective meta-learning.
 - Pruning volume (facts/events) correlates with experience density; aggressive pruning during high-throughput phases prevents memory bloat.
@@ -51,11 +56,6 @@
 - FailurePatternMiner was proposed twice independently, revealing no deduplication mechanism for skill proposals.
 - Model latency varies wildly (14–72 s) without circuit-breaker logic, causing unpredictable reflex performance.
 - Skill proposals accumulate but lack an autonomous pipeline to convert them into tested, registered tools.
-- Critic calibration drifts without online isotonic regression retrained on recent (predicted, actual) pairs per dimension.
-- Simulation usage is reflex-driven but not yet a mandatory gate for artifact deployment, allowing unvalidated changes.
-- Swarm knowledge decays rapidly between convergence cycles, necessitating automatic refresh triggered by simulation feedback.
-- Model failures (429/502 errors, latency spikes >30s) correlate with learning stalls and require automated routing with fallback chains.
-- Skill proposals recur across cycles but lack a mandatory execution gate, creating a persistent proposal-implementation gap.
 
 ---
 

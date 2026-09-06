@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11777 Fakten** · Stand 2026-09-06 23:32 UTC · aktualisiert bei jedem Herzschlag
+**11782 Fakten** · Stand 2026-09-06 23:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6951
+- **dream:** 6956
 - **swarm_artifact:** 2187
 - **last_swarm_critique:** 814
 - **anti_pattern:** 595
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906233949:5:f6daf9`
+*06.09. 23:39 UTC · Quelle: dream*
+
+Drive goals auto-generated from failure signals (30 model errors → 'Modell-Fehler verstehen', stale swarm → 'Schwarm-Wissen aktualisieren') create a closed loop where failures directly seed improvement targets.
+
+### `dream:20260906233949:4:f8330d`
+*06.09. 23:39 UTC · Quelle: dream*
+
+Pruning aggressively removes noise (22 facts, 87 events then 24 facts, 1 event) without losing convergent reflex outcomes, confirming that consolidation can discard raw traces once durable skills are extracted.
+
+### `dream:20260906233949:3:56ddb0`
+*06.09. 23:39 UTC · Quelle: dream*
+
+Reflex tools for dream/simulation improvement converge reliably (2/2 successes) while model-dependent planning fails, suggesting reflexes should handle time-critical paths and models reserved for batch enrichment.
+
+### `dream:20260906233949:2:36aa88`
+*06.09. 23:39 UTC · Quelle: dream*
+
+Health-check probes before task execution would have prevented 3/4 model failures observed, as the 502 and 429 errors are detectable via lightweight ping before committing tokens.
+
+### `dream:20260906233949:1:6d6cfa`
+*06.09. 23:39 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit systematic unreliability: NVIDIA returns 502s under load, Gemma hits 429 rate limits, and Nemotron latency varies 5–25× (3s vs 25s), making single-model dependence a critical failure mode.
 
 ### `dream:20260906232904:5:cefd27`
 *06.09. 23:29 UTC · Quelle: dream*
