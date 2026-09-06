@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 05:25:35",
+ "stand": "2026-09-06 05:36:13",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,12 +39,6 @@
    "quote": 0.0
   },
   {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -73,6 +67,12 @@
    "laeufe": 3,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
   },
   {
    "tool": "veraltete-wissenstände-auffrischen.py",
@@ -376,6 +376,12 @@
   },
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "marktwissen-auf-den-neuesten-stand-bring.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

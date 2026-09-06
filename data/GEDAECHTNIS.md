@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12068 Fakten** · Stand 2026-09-06 05:27 UTC · aktualisiert bei jedem Herzschlag
+**12073 Fakten** · Stand 2026-09-06 05:38 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7073
+- **dream:** 7078
 - **swarm_artifact:** 2313
 - **last_swarm_critique:** 786
 - **anti_pattern:** 657
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906053558:5:082d1f`
+*06.09. 05:35 UTC · Quelle: dream*
+
+Selbstdiagnose only checks internal organs, missing external dependency health signals that precede cascade failures.
+
+### `dream:20260906053558:4:172eaa`
+*06.09. 05:35 UTC · Quelle: dream*
+
+Aggressive pruning (12 facts, 44 events) risks starving root-cause remediation without a reserved budget.
+
+### `dream:20260906053558:3:37d2ab`
+*06.09. 05:35 UTC · Quelle: dream*
+
+Upstream errors (e.g., Nvidia 502) embedded in HTTP 200 response bodies are silently treated as successes, masking degradation.
+
+### `dream:20260906053558:2:eff1fd`
+*06.09. 05:35 UTC · Quelle: dream*
+
+Provider 429 errors (z-ai/glm-5.2) are not triggering automatic failover, causing repeated request failures.
+
+### `dream:20260906053558:1:a27ca6`
+*06.09. 05:35 UTC · Quelle: dream*
+
+Duplicate skill proposals recur across consolidation cycles because no deduplication mechanism exists before persistence.
 
 ### `dream:20260906052506:5:1f69f0`
 *06.09. 05:25 UTC · Quelle: dream*

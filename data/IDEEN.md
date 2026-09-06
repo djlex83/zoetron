@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 05:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 05:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Add artifact pre-flight validator running syntax check, import test, and sandbox permission verification befor *(hatte die Idee 5×)*
-- Add ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity (cosine > 0.85), and *(hatte die Idee 4×)*
+- Add ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity (cosine > 0.85), and *(hatte die Idee 5×)*
 - Build predictive cooldown scheduler using failure-signature cache to preemptively skip models during historica *(hatte die Idee 3×)*
 - Create swarm-task watchdog flagging tasks stale >7 days, auto-generating revive sub-goals with critic-to-build *(hatte die Idee 3×)*
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
@@ -25,11 +25,11 @@
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 5×)*
+- Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Selbstdiagnose only checks internal organs, missing external dependency health signals that precede cascade failures.
+- Aggressive pruning (12 facts, 44 events) risks starving root-cause remediation without a reserved budget.
+- Upstream errors (e.g., Nvidia 502) embedded in HTTP 200 response bodies are silently treated as successes, masking degradation.
+- Provider 429 errors (z-ai/glm-5.2) are not triggering automatic failover, causing repeated request failures.
+- Duplicate skill proposals recur across consolidation cycles because no deduplication mechanism exists before persistence.
 - Swarm knowledge refresh succeeds via reflex but lacks automated staleness detection, relying on manual drive-goal triggers.
 - External dependency health is invisible to Selbstdiagnose, allowing degraded models to poison downstream reasoning before detection.
 - Skill proposals accumulate faster than implementation because no mechanism reserves capacity for remediation versus new feature work.
@@ -51,11 +56,6 @@
 - Multiple independent proposals converge on automated health-scored routing, circuit breaking, and skill incubation, revealing a systemic gap in resili
 - Latency for the working model varies 2x (8.3s to 17.8s) without correlation to token counts, suggesting queue-depth or cold-start effects.
 - The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating a single-model dependency
-- Drive goals naturally evolve from identifying gaps in testing and detecting staleness in group objectives, guiding autonomous behavior.
-- Self-healing and remediation actions must be prioritized and protected from rate limits to ensure the system can recover when all models are failing.
-- Pruning mechanisms are actively maintaining system health by removing stale facts and events, preventing memory bloat.
-- Semantic deduplication of skill proposals is a recurring need, as identical ideas are generated across multiple cycles.
-- Free model endpoints are highly volatile and frequently return 429 rate limits or 502 upstream errors, necessitating robust fallback mechanisms.
 
 ---
 
