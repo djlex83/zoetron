@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12056 Fakten** · Stand 2026-09-06 04:50 UTC · aktualisiert bei jedem Herzschlag
+**12065 Fakten** · Stand 2026-09-06 05:06 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7068
-- **swarm_artifact:** 2309
-- **last_swarm_critique:** 785
+- **swarm_artifact:** 2315
+- **last_swarm_critique:** 786
 - **anti_pattern:** 657
-- **last_swarm_goal:** 533
+- **last_swarm_goal:** 534
 - **strategy:** 330
-- **tool:** 164
+- **tool:** 165
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `tool:schwarmwissen-wieder-auffrischen`
+*06.09. 05:04 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Schwarmwissen wieder auffrischen'. Datei: data/tools/schwarmwissen-wieder-auffrischen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*06.09. 05:04 UTC · Quelle: critic*
+
+score=8; issues=RoleAgent._generate_insights uses hardcoded per-role strings instead of deriving insights from actual memory context passed in; Cross-pollination phase is simulated (peer reviews just echo other agents' first insight) rather than genuine semant
+
+### `last_swarm_goal`
+*06.09. 04:58 UTC · Quelle: system*
+
+Schwarmwissen wieder auffrischen
+
+### `dream:20260906045820:5:a408cb`
+*06.09. 04:58 UTC · Quelle: dream*
+
+Drive goals naturally evolve from identifying gaps in testing and detecting staleness in group objectives, guiding autonomous behavior.
+
+### `dream:20260906045820:4:5a1b70`
+*06.09. 04:58 UTC · Quelle: dream*
+
+Self-healing and remediation actions must be prioritized and protected from rate limits to ensure the system can recover when all models are failing.
+
+### `dream:20260906045820:3:e8afa9`
+*06.09. 04:58 UTC · Quelle: dream*
+
+Pruning mechanisms are actively maintaining system health by removing stale facts and events, preventing memory bloat.
+
+### `dream:20260906045820:2:a9a666`
+*06.09. 04:58 UTC · Quelle: dream*
+
+Semantic deduplication of skill proposals is a recurring need, as identical ideas are generated across multiple cycles.
+
+### `dream:20260906045820:1:ae4c6a`
+*06.09. 04:58 UTC · Quelle: dream*
+
+Free model endpoints are highly volatile and frequently return 429 rate limits or 502 upstream errors, necessitating robust fallback mechanisms.
 
 ### `dream:20260906044748:5:154014`
 *06.09. 04:47 UTC · Quelle: dream*
@@ -46290,31 +46330,6 @@ Simulation revision loops (5+ revisions) and evolution scores (8-9) failed to ac
 *23.08. 05:12 UTC · Quelle: dream*
 
 High latency variance (3-68s) and ultra-model overload errors indicate single-model dependency creates reliability bottlenecks.
-
-### `dream:202608230456:5`
-*23.08. 04:56 UTC · Quelle: dream*
-
-Integrating dream‑replay insights with swarm criticism generates higher‑quality solutions for unified plugin interfaces.
-
-### `dream:202608230456:4`
-*23.08. 04:56 UTC · Quelle: dream*
-
-Skill proposals that achieve ROI > 1.2 in sandbox benchmarks consistently yield net performance gains when merged.
-
-### `dream:202608230456:3`
-*23.08. 04:56 UTC · Quelle: dream*
-
-Swarm stalls longer than 90 s occur when fewer than two planners or critics are active, degrading task throughput.
-
-### `dream:202608230456:2`
-*23.08. 04:56 UTC · Quelle: dream*
-
-Daily logging of (goal_embedding, predicted, actual) reveals calibration drift; a lightweight regressor retrained nightly reduces prediction error.
-
-### `dream:202608230456:1`
-*23.08. 04:56 UTC · Quelle: dream*
-
-Latency exceeding 60 s on the primary model indicates upstream overload and warrants an automatic fallback to a lighter model.
 
 ### `last_swarm_critique`
 *23.08. 04:40 UTC · Quelle: critic*

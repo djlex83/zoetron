@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T01:14:29.392906",
+  "generated_at": "2026-09-06T04:58:41.637765",
   "data_source": "/workspace/zoetron/data",
   "kpis": {
     "total_errors": 0,
@@ -20,7 +20,7 @@
   },
   "category_stats": {
     "rate_limit": {
-      "total": 2703,
+      "total": 2749,
       "resolved": 0,
       "resolution_rate": 0.0,
       "avg_resolution_time": 0,
@@ -32,7 +32,7 @@
       ]
     },
     "timeout": {
-      "total": 483,
+      "total": 485,
       "resolved": 0,
       "resolution_rate": 0.0,
       "avg_resolution_time": 0,
@@ -43,7 +43,7 @@
       ]
     },
     "validation_error": {
-      "total": 620,
+      "total": 624,
       "resolved": 0,
       "resolution_rate": 0.0,
       "avg_resolution_time": 0,
@@ -54,7 +54,7 @@
       ]
     },
     "auth_failure": {
-      "total": 47,
+      "total": 48,
       "resolved": 0,
       "resolution_rate": 0.0,
       "avg_resolution_time": 0,
@@ -65,7 +65,7 @@
       ]
     },
     "resource_exhaustion": {
-      "total": 1436,
+      "total": 1464,
       "resolved": 0,
       "resolution_rate": 0.0,
       "avg_resolution_time": 0,
@@ -89,7 +89,7 @@
       ]
     },
     "model_error": {
-      "total": 6859,
+      "total": 6966,
       "resolved": 0,
       "resolution_rate": 0.0,
       "avg_resolution_time": 0,
@@ -101,7 +101,7 @@
       ]
     },
     "unknown": {
-      "total": 100965,
+      "total": 102554,
       "resolved": 0,
       "resolution_rate": 0.0,
       "avg_resolution_time": 0,
@@ -114,7 +114,7 @@
   "circuit_breakers": {},
   "recent_events": [
     {
-      "timestamp": "2026-09-06T01:14:29.383825",
+      "timestamp": "2026-09-06T04:58:41.628036",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: minimax/minimax-m3:free",
@@ -129,7 +129,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383843",
+      "timestamp": "2026-09-06T04:58:41.628064",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -144,7 +144,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383859",
+      "timestamp": "2026-09-06T04:58:41.628095",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-super-120b-a12b:free",
@@ -159,7 +159,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383876",
+      "timestamp": "2026-09-06T04:58:41.628120",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -174,7 +174,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383892",
+      "timestamp": "2026-09-06T04:58:41.628138",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: nvidia/nemotron-3.5-lightning:free",
@@ -189,7 +189,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383908",
+      "timestamp": "2026-09-06T04:58:41.628155",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: openrouter/free",
@@ -204,7 +204,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383925",
+      "timestamp": "2026-09-06T04:58:41.628171",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: poolside/laguna-s-2.1:free",
@@ -219,7 +219,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383942",
+      "timestamp": "2026-09-06T04:58:41.628187",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: poolside/laguna-xs-2.1:free",
@@ -234,7 +234,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383958",
+      "timestamp": "2026-09-06T04:58:41.628203",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: stealth/ox-alpha",
@@ -249,7 +249,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383974",
+      "timestamp": "2026-09-06T04:58:41.628220",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: thinkingmachines/inkling-small:free",
@@ -264,7 +264,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.383990",
+      "timestamp": "2026-09-06T04:58:41.628236",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: thinkingmachines/inkling:free",
@@ -279,7 +279,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384006",
+      "timestamp": "2026-09-06T04:58:41.628254",
       "error_category": "model_error",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:12Z] SCAN: neues Modell erkannt: z-ai/glm-5.2:free",
@@ -294,7 +294,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384026",
+      "timestamp": "2026-09-06T04:58:41.628273",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:14Z] BENCH cohere/north-mini-code:free :: arith :: PASS (1.50s)",
@@ -309,7 +309,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384044",
+      "timestamp": "2026-09-06T04:58:41.628291",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:15Z] BENCH cohere/north-mini-code:free :: reverse :: FAIL (1.51s)",
@@ -324,7 +324,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384062",
+      "timestamp": "2026-09-06T04:58:41.628309",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:18Z] BENCH cohere/north-mini-code:free :: json :: FAIL (2.53s)",
@@ -339,7 +339,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384090",
+      "timestamp": "2026-09-06T04:58:41.628327",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:20Z] BENCH cohere/north-mini-code:free :: sort :: PASS (1.93s)",
@@ -354,7 +354,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384108",
+      "timestamp": "2026-09-06T04:58:41.628344",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:22Z] BENCH cohere/north-mini-code:free :: count :: PASS (1.64s)",
@@ -369,7 +369,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384125",
+      "timestamp": "2026-09-06T04:58:41.628362",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:26Z] BENCH cohere/north-mini-code:free :: translate :: PASS (4.36s)",
@@ -384,7 +384,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384142",
+      "timestamp": "2026-09-06T04:58:41.628378",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:28Z] BENCH cohere/north-mini-code:free :: code :: FAIL (2.38s)",
@@ -399,7 +399,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384162",
+      "timestamp": "2026-09-06T04:58:41.628396",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:34Z] BENCH cohere/north-mini-code:free :: logic :: PASS (5.41s)",
@@ -414,7 +414,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384181",
+      "timestamp": "2026-09-06T04:58:41.628414",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:34Z] ADOPT abgelehnt fuer cohere/north-mini-code:free: score zu niedrig (5/8)",
@@ -429,7 +429,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384199",
+      "timestamp": "2026-09-06T04:58:41.628432",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:38Z] BENCH dots-studio/dots-3-note-preview:free :: arith :: PASS (4.11s)",
@@ -444,7 +444,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384219",
+      "timestamp": "2026-09-06T04:58:41.628450",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:40Z] BENCH dots-studio/dots-3-note-preview:free :: reverse :: FAIL (2.64s)",
@@ -459,7 +459,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384237",
+      "timestamp": "2026-09-06T04:58:41.628468",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "[2026-08-25T23:27:42Z] BENCH dots-studio/dots-3-note-preview:free :: json :: FAIL (1.27s)",
@@ -474,7 +474,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384410",
+      "timestamp": "2026-09-06T04:58:41.628604",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,208 [INFO] ============================================================",
@@ -489,7 +489,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384436",
+      "timestamp": "2026-09-06T04:58:41.628638",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,208 [INFO] ZOEM-PROTOKOLL: START VOLLSTÄNDIGER ZYKLUS",
@@ -504,7 +504,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384453",
+      "timestamp": "2026-09-06T04:58:41.628667",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,208 [INFO] ============================================================",
@@ -519,7 +519,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384470",
+      "timestamp": "2026-09-06T04:58:41.628693",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,208 [INFO]",
@@ -534,7 +534,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384489",
+      "timestamp": "2026-09-06T04:58:41.628720",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "--- SCHRITT 1: Export durch organismus_A_001 ---",
@@ -549,7 +549,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384511",
+      "timestamp": "2026-09-06T04:58:41.628761",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,209 [INFO] EXPORT: Zoem 08aaf5b1 (anti_pattern) geschrieben nach /workspace/zoetron/data/data/zoeme/out/08aaf5b1_anti_pattern_1787710665.json",
@@ -564,7 +564,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384532",
+      "timestamp": "2026-09-06T04:58:41.628794",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,209 [INFO] EXPORT: Zoem 7cf8eae4 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/7cf8eae4_lektion_1787710665.json",
@@ -579,7 +579,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384552",
+      "timestamp": "2026-09-06T04:58:41.628830",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,210 [INFO] EXPORT: Zoem f9ece254 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/f9ece254_lektion_1787710665.json",
@@ -594,7 +594,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384574",
+      "timestamp": "2026-09-06T04:58:41.628857",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: 08aaf5b1_anti_pattern_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/08aaf5b1_anti_pattern_1787710665.json",
@@ -609,7 +609,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384596",
+      "timestamp": "2026-09-06T04:58:41.628879",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: 7cf8eae4_lektion_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/7cf8eae4_lektion_1787710665.json",
@@ -624,7 +624,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384617",
+      "timestamp": "2026-09-06T04:58:41.628900",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,210 [INFO] ÜBERTRAGUNG: f9ece254_lektion_1787710665.json -> /workspace/zoetron/data/data/zoeme/in/f9ece254_lektion_1787710665.json",
@@ -639,7 +639,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384633",
+      "timestamp": "2026-09-06T04:58:41.628918",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:17:45,211 [INFO]",
@@ -654,7 +654,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384651",
+      "timestamp": "2026-09-06T04:58:41.628949",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "--- SCHRITT 2: Import durch organismus_B_002 mit Immunsystem ---",
@@ -669,7 +669,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384667",
+      "timestamp": "2026-09-06T04:58:41.628980",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,146 [INFO] ============================================================",
@@ -684,7 +684,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384686",
+      "timestamp": "2026-09-06T04:58:41.629013",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,146 [INFO] ZOEM-PROTOKOLL: START VOLLSTÄNDIGER ZYKLUS",
@@ -699,7 +699,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384702",
+      "timestamp": "2026-09-06T04:58:41.629035",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,146 [INFO] ============================================================",
@@ -714,7 +714,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384718",
+      "timestamp": "2026-09-06T04:58:41.629054",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,147 [INFO]",
@@ -729,7 +729,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384735",
+      "timestamp": "2026-09-06T04:58:41.629076",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "--- SCHRITT 1: Export durch organismus_A_001 ---",
@@ -744,7 +744,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384767",
+      "timestamp": "2026-09-06T04:58:41.629112",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,147 [INFO] EXPORT: Zoem e3f51603 (anti_pattern) geschrieben nach /workspace/zoetron/data/data/zoeme/out/e3f51603_anti_pattern_1787710799.json",
@@ -759,7 +759,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384799",
+      "timestamp": "2026-09-06T04:58:41.629148",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,147 [INFO] EXPORT: Zoem 3ed57927 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/3ed57927_lektion_1787710799.json",
@@ -774,7 +774,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384820",
+      "timestamp": "2026-09-06T04:58:41.629180",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,148 [INFO] EXPORT: Zoem f389bb55 (lektion) geschrieben nach /workspace/zoetron/data/data/zoeme/out/f389bb55_lektion_1787710799.json",
@@ -789,7 +789,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384842",
+      "timestamp": "2026-09-06T04:58:41.629208",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,148 [INFO] ÜBERTRAGUNG: e3f51603_anti_pattern_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/e3f51603_anti_pattern_1787710799.json",
@@ -804,7 +804,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384863",
+      "timestamp": "2026-09-06T04:58:41.629235",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,149 [INFO] ÜBERTRAGUNG: 3ed57927_lektion_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/3ed57927_lektion_1787710799.json",
@@ -819,7 +819,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384884",
+      "timestamp": "2026-09-06T04:58:41.629259",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,149 [INFO] ÜBERTRAGUNG: f389bb55_lektion_1787710799.json -> /workspace/zoetron/data/data/zoeme/in/f389bb55_lektion_1787710799.json",
@@ -834,7 +834,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384899",
+      "timestamp": "2026-09-06T04:58:41.629276",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "2026-08-26 02:19:59,149 [INFO]",
@@ -849,7 +849,7 @@
       "trigger_action": null
     },
     {
-      "timestamp": "2026-09-06T01:14:29.384920",
+      "timestamp": "2026-09-06T04:58:41.629295",
       "error_category": "unknown",
       "error_code": "LOG_PARSED",
       "message": "--- SCHRITT 2: Import durch organismus_B_002 mit Immunsystem ---",

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-09-06T05:04:11.162246",
+  "data_dir": "/workspace/zoetron/data",
+  "counts": {
+    "events": 1194,
+    "facts": 4392,
+    "graph_nodes": 0,
+    "graph_edges": 0,
+    "semantic_vectors": 0,
+    "drive_goals": 0,
+    "reflexes": 0,
+    "total": 5586
+  },
+  "freshness": {
+    "newest_date": null,
+    "oldest_date": null,
+    "days_since_update": null,
+    "is_stale": true
+  },
+  "gaps": [
+    "graph structure",
+    "semantic embeddings",
+    "active drive goals",
+    "reflex patterns"
+  ]
+}
