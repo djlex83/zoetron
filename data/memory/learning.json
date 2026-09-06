@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 06:29:44",
+ "stand": "2026-09-06 06:48:18",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,6 +39,12 @@
    "quote": 1.0
   },
   {
+   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+   "laeufe": 5,
+   "erfolge": 5,
+   "quote": 1.0
+  },
+  {
    "tool": "marktanalyse-swarm-arbeit-abschließen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -49,12 +55,6 @@
    "laeufe": 4,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
@@ -381,12 +381,12 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.732,
+ "haende_quote": 0.731,
  "simulationen_angewandt": 29,
  "swarm_scores": {
-  "n": 32,
+  "n": 31,
   "best": 9.0,
-  "schnitt": 5.59
+  "schnitt": 5.48
  },
  "score_nach_ziel_typ": {
   "analyse": {

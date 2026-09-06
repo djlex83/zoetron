@@ -1,20 +1,50 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12079 Fakten** · Stand 2026-09-06 06:31 UTC · aktualisiert bei jedem Herzschlag
+**12068 Fakten** · Stand 2026-09-06 06:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7078
-- **swarm_artifact:** 2316
+- **dream:** 7073
+- **swarm_artifact:** 2312
 - **last_swarm_critique:** 788
-- **anti_pattern:** 655
+- **anti_pattern:** 653
 - **last_swarm_goal:** 536
-- **strategy:** 329
+- **strategy:** 328
 - **tool:** 166
 - **hand_result:** 132
-- **aktuell_organfehler:** 44
+- **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906064737:5:0fe486`
+*06.09. 06:47 UTC · Quelle: dream*
+
+Swarm knowledge remains stale because no validator runs; drive goal exists but no skill implements periodic fact refresh.
+
+### `dream:20260906064737:4:de9344`
+*06.09. 06:47 UTC · Quelle: dream*
+
+Metabolism enters conserve state (stress=1.0) with extreme budget cuts (max_tasks=3, max_iterations=1), throttling all autonomous activity.
+
+### `dream:20260906064737:3:d9d614`
+*06.09. 06:47 UTC · Quelle: dream*
+
+Hand actions fail on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero file/directory contact.
+
+### `dream:20260906064737:2:674f77`
+*06.09. 06:47 UTC · Quelle: dream*
+
+Skill proposals accumulate but execution fails due to missing ProposalExecutor and broken reflex tooling (fähigkeitsvorschläge-in-echte-skills-ums.py).
+
+### `dream:20260906064737:1:e7daae`
+*06.09. 06:47 UTC · Quelle: dream*
+
+Free model endpoints exhibit cascading failure modes (429 rate limits, 502 overloads) making them unreliable for critical paths.
+
+### `aktuell_organfehler`
+*06.09. 06:38 UTC · Quelle: selbstdiagnose.py*
+
+ORGANFEHLER (2026-09-06 06:22:15 UTC): dream -> timeout. Phase nach 180 s abgebrochen Diese Phase des Herzschlags ist zum genannten Zeitpunkt abgestuerzt oder in eine Zeitgrenze gelaufen; Organ, Fehler, Datei und Zeile stehen oben. Fehler Absturz Traceback Org
 
 ### `anti_pattern:Previous attempt scored 2/10. Goal: Fähigkeiten gezielt ausb:2`
 *06.09. 06:28 UTC · Quelle: evolution*
@@ -46301,41 +46331,6 @@ score=6; issues=Logging is imported but not configured, so error messages may no
 
 Mehr Simulationen durchführen
 
-### `dream:202608230647:5`
-*23.08. 06:47 UTC · Quelle: dream*
-
-Many skill proposals remain unimplemented because there is no mechanism to track adoption or measure impact.
-
-### `dream:202608230647:4`
-*23.08. 06:47 UTC · Quelle: dream*
-
-MemoryStore interface mismatches can silently corrupt data, as no contract tests are run at load time.
-
-### `dream:202608230647:3`
-*23.08. 06:47 UTC · Quelle: dream*
-
-Simulations proceeded with five identified risks because no pre‑flight validation blocked unsafe inputs.
-
-### `dream:202608230647:2`
-*23.08. 06:47 UTC · Quelle: dream*
-
-Latency varied from ~10 s to over 200 s, indicating unpredictable performance that violates service‑level expectations.
-
-### `dream:202608230647:1`
-*23.08. 06:47 UTC · Quelle: dream*
-
-Upstream model overload caused a hard failure, showing that reliance on a single model without fallback leads to downtime.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeitsvorschläge häu:2`
-*23.08. 06:31 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Implement a change‑driven validation harness with watchdog - Instead of a fixed‑time loop, use a file‑system watchdog (watchdog library) that triggers a validation routine whenever the skill‑suggestion source file changes. Th
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fähigkeitsvorschläge häu:1`
-*23.08. 06:31 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
 ### `last_swarm_critique`
 *23.08. 06:31 UTC · Quelle: critic*
 
@@ -46345,31 +46340,6 @@ score=3; issues=Unit test mixes implementation and test logic, uses print statem
 *23.08. 06:28 UTC · Quelle: system*
 
 Fähigkeitsvorschläge häufiger testen
-
-### `dream:202608230628:5`
-*23.08. 06:28 UTC · Quelle: dream*
-
-Model error rates decline when predictions are continuously compared to outcomes and the model is retrained nightly, demonstrating the value of ongoing calibration.
-
-### `dream:202608230628:4`
-*23.08. 06:28 UTC · Quelle: dream*
-
-Swarm tasks stall without detection; heartbeat monitoring and automatic retry/reassignment significantly improve reliability.
-
-### `dream:202608230628:3`
-*23.08. 06:28 UTC · Quelle: dream*
-
-Many skill proposals remain unused, showing that without adoption tracking and ROI‑based promotion, valuable improvements are lost.
-
-### `dream:202608230628:2`
-*23.08. 06:28 UTC · Quelle: dream*
-
-Latency spikes above 20 s observed for the super model indicate that static model selection is insufficient; adaptive fallback mechanisms are required to keep response times within SLA.
-
-### `dream:202608230628:1`
-*23.08. 06:28 UTC · Quelle: dream*
-
-Missing interface methods (e.g., MemoryStore.add_fact) cause runtime AttributeError, highlighting the need for pre‑execution contract validation.
 
 ### `last_swarm_critique`
 *23.08. 06:12 UTC · Quelle: critic*

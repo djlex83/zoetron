@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 06:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 06:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,13 +23,14 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
@@ -37,10 +38,14 @@
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 3×)*
 - Vorgeschlagene Fähigkeiten testen und nutzen *(wieder aufgegriffen: 3×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge remains stale because no validator runs; drive goal exists but no skill implements periodic fact refresh.
+- Metabolism enters conserve state (stress=1.0) with extreme budget cuts (max_tasks=3, max_iterations=1), throttling all autonomous activity.
+- Hand actions fail on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing zero file/directory contact.
+- Skill proposals accumulate but execution fails due to missing ProposalExecutor and broken reflex tooling (fähigkeitsvorschläge-in-echte-skills-ums.py)
+- Free model endpoints exhibit cascading failure modes (429 rate limits, 502 overloads) making them unreliable for critical paths.
 - Pruning runs reactively via manual invocation instead of event-count or time-window triggers.
 - Skill proposals accumulate in logs without an incubation pipeline to validate, sandbox, and promote them.
 - Reflex execution succeeds for known procedures (schwarmwissen) but cannot handle novel model routing decisions.
@@ -51,11 +56,6 @@
 - Swarm knowledge refresh attempts time out after 20 seconds, indicating that the current hand_action timeout is too short for reliable model responses 
 - Skill proposals accumulate but are rarely executed because there is no automated ProposalExecutor to test and integrate high-confidence, low-complexit
 - Free-tier model endpoints consistently hit 429 rate limits, causing cascading failures unless a resilient fallback layer with circuit breaking and tok
-- Selbstdiagnose only checks internal organs, missing external dependency health signals that precede cascade failures.
-- Aggressive pruning (12 facts, 44 events) risks starving root-cause remediation without a reserved budget.
-- Upstream errors (e.g., Nvidia 502) embedded in HTTP 200 response bodies are silently treated as successes, masking degradation.
-- Provider 429 errors (z-ai/glm-5.2) are not triggering automatic failover, causing repeated request failures.
-- Duplicate skill proposals recur across consolidation cycles because no deduplication mechanism exists before persistence.
 
 ---
 
