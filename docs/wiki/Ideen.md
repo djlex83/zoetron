@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 05:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 05:53 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,8 +23,8 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts and events but does not address the root cause of stale swarm knowledge, which requires a periodic validator using a reliable no
+- Self-diagnose reports zero organ errors while model_fail events persist, showing that external provider degradation is not captured as an organ-level 
+- Swarm knowledge refresh attempts time out after 20 seconds, indicating that the current hand_action timeout is too short for reliable model responses 
+- Skill proposals accumulate but are rarely executed because there is no automated ProposalExecutor to test and integrate high-confidence, low-complexit
+- Free-tier model endpoints consistently hit 429 rate limits, causing cascading failures unless a resilient fallback layer with circuit breaking and tok
 - Selbstdiagnose only checks internal organs, missing external dependency health signals that precede cascade failures.
 - Aggressive pruning (12 facts, 44 events) risks starving root-cause remediation without a reserved budget.
 - Upstream errors (e.g., Nvidia 502) embedded in HTTP 200 response bodies are silently treated as successes, masking degradation.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate faster than implementation because no mechanism reserves capacity for remediation versus new feature work.
 - HTTP 200 responses with embedded upstream error codes (e.g., Nvidia 502) create silent degradation that bypasses standard HTTP error handling.
 - Free-tier model endpoints exhibit correlated failure bursts (429/502) that cascade across providers sharing the same gateway.
-- Selbstdiagnose reports zero organ errors while external model failures persist, showing the diagnostic scope excludes dependency health.
-- Pruning and knowledge refresh run manually/ad-hoc despite clear threshold triggers (event counts, age), causing reactive rather than preventive mainte
-- Multiple independent proposals converge on automated health-scored routing, circuit breaking, and skill incubation, revealing a systemic gap in resili
-- Latency for the working model varies 2x (8.3s to 17.8s) without correlation to token counts, suggesting queue-depth or cold-start effects.
-- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating a single-model dependency
 
 ---
 

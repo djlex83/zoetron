@@ -16983,3 +16983,10 @@
 {"ts": 1788068118.9405358, "kind": "act_done", "payload": {"goal_title": "Modellfehler stark verringern", "score": 1, "converged": false}}
 {"ts": 1788068120.4732242, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 1.19, "gelesen": 1}}
 {"ts": 1788068122.4777367, "kind": "issue_synced", "payload": {"issue": 239, "state": "open"}}
+{"ts": 1787463720.0, "key": "dream:202608230542:5", "value": "Model latency variance (4.6–138 s) violates SLOs and destabilizes timeout-dependent skills.", "source": "dream"}
+{"ts": 1787463720.0, "key": "dream:202608230542:4", "value": "Simulation revision loops (3 risks → 3 revisions) indicate missing pre-flight validation gates.", "source": "dream"}
+{"ts": 1787463720.0, "key": "dream:202608230542:3", "value": "Calibration error of 40% (predicted 5 vs actual 3) makes simulation verdicts unreliable for gating.", "source": "dream"}
+{"ts": 1787463720.0, "key": "dream:202608230542:2", "value": "MemoryStore API drift (missing add_fact) breaks hand execution and requires interface contracts.", "source": "dream"}
+{"ts": 1787463720.0, "key": "dream:202608230542:1", "value": "Role imbalance (5 builders, 1 planner, 1 critic) prevents swarm convergence despite evolution cycles.", "source": "dream"}
+{"ts": 1787463960.0, "key": "swarm_artifact:Analyze current skill suggestions and adoption metrics", "value": "# Skill Adoption Analysis Script  ```python #!/usr/bin/env python3 \"\"\" Analyze skill suggestions and adoption metrics. Loads all 45 skill suggestions, checks which have been tested/applied, and genera", "source": "builder"}
+{"ts": 1788068301.8527956, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

@@ -1,20 +1,60 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12073 Fakten** · Stand 2026-09-06 05:38 UTC · aktualisiert bei jedem Herzschlag
+**12081 Fakten** · Stand 2026-09-06 05:55 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7078
-- **swarm_artifact:** 2313
-- **last_swarm_critique:** 786
+- **swarm_artifact:** 2318
+- **last_swarm_critique:** 787
 - **anti_pattern:** 657
-- **last_swarm_goal:** 534
+- **last_swarm_goal:** 535
 - **strategy:** 330
-- **tool:** 165
+- **tool:** 166
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 2
 
 ---
+
+### `tool:fähigkeits-vorschläge-in-nutzbare-skills`
+*06.09. 05:53 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Vorschläge in nutzbare Skills verwandeln'. Datei: data/tools/fähigkeits-vorschläge-in-nutzbare-skills.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `last_swarm_critique`
+*06.09. 05:53 UTC · Quelle: critic*
+
+score=9; issues=
+
+### `last_swarm_goal`
+*06.09. 05:46 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge in nutzbare Skills verwandeln
+
+### `dream:20260906054633:5:f10f7d`
+*06.09. 05:46 UTC · Quelle: dream*
+
+Pruning removes facts and events but does not address the root cause of stale swarm knowledge, which requires a periodic validator using a reliable non-free endpoint.
+
+### `dream:20260906054633:4:b09cec`
+*06.09. 05:46 UTC · Quelle: dream*
+
+Self-diagnose reports zero organ errors while model_fail events persist, showing that external provider degradation is not captured as an organ-level alert.
+
+### `dream:20260906054633:3:133985`
+*06.09. 05:46 UTC · Quelle: dream*
+
+Swarm knowledge refresh attempts time out after 20 seconds, indicating that the current hand_action timeout is too short for reliable model responses or that the swarm tool itself is inefficient.
+
+### `dream:20260906054633:2:fad124`
+*06.09. 05:46 UTC · Quelle: dream*
+
+Skill proposals accumulate but are rarely executed because there is no automated ProposalExecutor to test and integrate high-confidence, low-complexity proposals.
+
+### `dream:20260906054633:1:432e84`
+*06.09. 05:46 UTC · Quelle: dream*
+
+Free-tier model endpoints consistently hit 429 rate limits, causing cascading failures unless a resilient fallback layer with circuit breaking and token-bucket rate limiting is in place.
 
 ### `dream:20260906053558:5:082d1f`
 *06.09. 05:35 UTC · Quelle: dream*
@@ -46350,31 +46390,6 @@ score=4; issues=Skill Adoption Analysis Script uses random simulation for test r
 *23.08. 05:42 UTC · Quelle: system*
 
 Fähigkeitsvorschläge erfolgreicher machen
-
-### `dream:202608230542:5`
-*23.08. 05:42 UTC · Quelle: dream*
-
-Model latency variance (4.6–138 s) violates SLOs and destabilizes timeout-dependent skills.
-
-### `dream:202608230542:4`
-*23.08. 05:42 UTC · Quelle: dream*
-
-Simulation revision loops (3 risks → 3 revisions) indicate missing pre-flight validation gates.
-
-### `dream:202608230542:3`
-*23.08. 05:42 UTC · Quelle: dream*
-
-Calibration error of 40% (predicted 5 vs actual 3) makes simulation verdicts unreliable for gating.
-
-### `dream:202608230542:2`
-*23.08. 05:42 UTC · Quelle: dream*
-
-MemoryStore API drift (missing add_fact) breaks hand execution and requires interface contracts.
-
-### `dream:202608230542:1`
-*23.08. 05:42 UTC · Quelle: dream*
-
-Role imbalance (5 builders, 1 planner, 1 critic) prevents swarm convergence despite evolution cycles.
 
 ### `last_swarm_goal`
 *23.08. 05:12 UTC · Quelle: system*
