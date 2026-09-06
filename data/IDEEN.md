@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 12:16 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 12:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Five concrete skill proposals already exist (QuotaPool, CircuitBreaker, ConvergenceGate, LatencyBudgetRouter, SkillPromotionPipeline) yet a new drive 
+- Pruning removes facts (15, then 7) but events only in the second run (42), implying event retention policy is inconsistent or event volume spiked.
+- Drive goals for 'Schwarm-Wissen auffrischen' and 'Veraltetes Schwarm-Wissen aktualisieren' reappear despite recent successful refreshes, suggesting th
+- Reflex scripts (schwarm-ergebnisse-mit-bestandsaufnahme-.py, vorgeschlagene-skills-nutzbar-machen.py) execute reliably and converge, proving the refle
+- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating a hard quota ceiling on t
 - High prune counts (56 events, 5 facts) suggest accumulated failure noise that obscures signal, requiring more aggressive or intelligent filtering duri
 - The system consistently generates skill proposals but shows a persistent gap between proposal generation and actual implementation, revealing a conver
 - Stale swarm knowledge compounds planning failures, creating a feedback loop where outdated information leads to poor decisions that generate more nois
@@ -51,11 +56,6 @@
 - Proactive maintenance operations (pruning 8 facts and 13 events, self-diagnosis returning zero organ errors) ran cleanly even under model failure pres
 - The system demonstrates implicit fallback resilience by eventually finding inclusionai/ling-3.0-flash-fin as a working model, but lacks explicit routi
 - The dominant failure pattern is API rate limiting (429) and upstream overload (502), affecting 4 of 5 model calls — this is an infrastructure bottlene
-- Hand action (exit 0, 1.04s) succeeded immediately after repeated model failures, proving that non-model fallbacks are faster and more reliable under d
-- The simulation required 3 revisions before succeeding, demonstrating that initial plans systematically underestimate complexity and early revision det
-- Metabolic conservation mode (stress=1.0, max 1 iteration) severely constrained execution capacity, showing that internal state throttling can prevent 
-- The nvidia/nemotron-3-ultra-550b-a55b model succeeded every time but with high latency (32-87s), revealing that reliability and speed are inversely co
-- The z-ai/glm-5.2 model failed repeatedly with HTTP 429 rate-limit errors when called in rapid succession, indicating that retry without backoff on a k
 
 ---
 
