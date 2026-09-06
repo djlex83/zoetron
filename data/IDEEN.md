@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 14:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex scripts function as the system's reactive immune layer — their exit codes and success rates must be continuously monitored, and scripts exceedi
+- Memory hygiene requires enforced policy rather than ad-hoc cleanup; a fixed fact:event prune ratio with deviation logging prevents both data bloat and
+- The proposal-to-execution gap is the system's most persistent failure mode — skills that are proposed but never validated through automated failure-in
+- Knowledge decay is silent and compounding: without explicit freshness timestamps and scheduled audit cycles, stale swarm data degrades decision qualit
+- Model endpoint failures (502 overload, 429 rate-limiting) are systemic rather than incidental — any reliable system must assume providers will fail an
 - Self-diagnosis reports zero organ errors even during active model failures, meaning the system's internal health is sound — the failure domain is enti
 - Reflex-based execution succeeds reliably for deterministic maintenance tasks like updating stale information, confirming that reflex mode is the corre
 - Pruning runs remove large volumes of facts and events (up to 29 facts and 19 events per run), but the recurring model failures suggest that failure-pa
@@ -51,11 +56,6 @@
 - Multiple free-tier models competing simultaneously without quota awareness creates a self-inflicted rate-limit cascade, where each request worsens the
 - The calibration gap (predicted 4 vs actual 7) reveals a persistent self-underestimation pattern that causes the system to set insufficiently ambitious
 - Free-tier models exhibit cascading failure modes (502 upstream overload, 429 rate limits) that are not isolated incidents but systemic — the system tr
-- Stress=1.0 conserve budget (max_tasks=3, max_iterations=1) forces premature truncation of multi-model fallback chains.
-- Hand-action execution succeeds on retry (exit 1 → exit 0) suggesting transient environment issues, not code defects.
-- Simulation-driven revision loops (5 risks → 5 revisions → 4 applied) converge but consume disproportionate latency when primary models fail.
-- Calibration systematically underestimates task complexity (predicted 4 vs actual 7 cycles), causing resource budget overruns under conserve mode.
-- Model reliability is highly inconsistent: nemotron-3-ultra fails with 502 upstream errors, gemma models hit 429 rate limits, only inclusionai/ling-3.0
 
 ---
 

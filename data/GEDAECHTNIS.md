@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12043 Fakten** · Stand 2026-09-06 14:35 UTC · aktualisiert bei jedem Herzschlag
+**12043 Fakten** · Stand 2026-09-06 14:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7102
 - **swarm_artifact:** 2273
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906144250:5:98a32d`
+*06.09. 14:42 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260906144250:4:531921`
+*06.09. 14:42 UTC · Quelle: dream*
+
+Memory hygiene requires enforced policy rather than ad-hoc cleanup; a fixed fact:event prune ratio with deviation logging prevents both data bloat and catastrophic forgetting.
+
+### `dream:20260906144250:3:9243d2`
+*06.09. 14:42 UTC · Quelle: dream*
+
+The proposal-to-execution gap is the system's most persistent failure mode — skills that are proposed but never validated through automated failure-injection testing remain unreliable and should not be trusted in production.
+
+### `dream:20260906144250:2:d890c8`
+*06.09. 14:42 UTC · Quelle: dream*
+
+Knowledge decay is silent and compounding: without explicit freshness timestamps and scheduled audit cycles, stale swarm data degrades decision quality long before it is noticed.
+
+### `dream:20260906144250:1:a8b571`
+*06.09. 14:42 UTC · Quelle: dream*
+
+Model endpoint failures (502 overload, 429 rate-limiting) are systemic rather than incidental — any reliable system must assume providers will fail and design multi-layer resilience (health tracking, circuit breakers, fallback chains) instead of depending on a
 
 ### `dream:20260906143242:5:72b56c`
 *06.09. 14:32 UTC · Quelle: dream*
@@ -46233,31 +46258,6 @@ score=5; issues=Plan-only artifact: no sim_gate hook, no data/tools/sim_triggers
 *23.08. 14:44 UTC · Quelle: system*
 
 Simulationen häufiger einsetzen
-
-### `dream:202608231441:5`
-*23.08. 14:41 UTC · Quelle: dream*
-
-Simulation flagged 5 risks but only 1 revision was applied and the swarm still failed at 3/10, indicating partial revision application leaves critical failure modes unaddressed.
-
-### `dream:202608231441:4`
-*23.08. 14:41 UTC · Quelle: dream*
-
-Metabolism conserve mode (stress 0.877) capped iterations at 1 while the goal required multi-cycle convergence to score 8+, creating a structural conflict between budget policy and goal requirements.
-
-### `dream:202608231441:3`
-*23.08. 14:41 UTC · Quelle: dream*
-
-Both model failures were identical upstream 502 'Service temporarily overloaded' errors on nemotron-3-ultra, while the single manual fallback to nemotron-3-super succeeded, so automatic failover would have eliminated these errors.
-
-### `dream:202608231441:2`
-*23.08. 14:41 UTC · Quelle: dream*
-
-Calibration was perfect (predicted 3, actual 3, abs_error 0), so the failure is corrective not predictive: the system executed a plan it accurately predicted would fail instead of replanning first.
-
-### `dream:202608231441:1`
-*23.08. 14:41 UTC · Quelle: dream*
-
-The evolution winner scored 9/10 internally but only 3/10 in the actual swarm run, proving variant fitness is measured on the wrong objective and needs post-evolution swarm validation.
 
 ### `last_swarm_critique`
 *23.08. 14:29 UTC · Quelle: critic*
