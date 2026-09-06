@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 19:29:06",
+ "stand": "2026-09-06 19:40:26",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 8,
-   "erfolge": 8,
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
@@ -172,6 +172,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -343,12 +349,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11985 Fakten** · Stand 2026-09-06 19:31 UTC · aktualisiert bei jedem Herzschlag
+**11979 Fakten** · Stand 2026-09-06 19:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7096
-- **swarm_artifact:** 2234
+- **dream:** 7091
+- **swarm_artifact:** 2233
 - **last_swarm_critique:** 812
 - **anti_pattern:** 609
 - **last_swarm_goal:** 544
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906193937:5:e0e559`
+*06.09. 19:39 UTC · Quelle: dream*
+
+Metabolism budget is exceeded by unbounded parallel task spawns, causing pruning thrash and dropped experience.
+
+### `dream:20260906193937:4:902820`
+*06.09. 19:39 UTC · Quelle: dream*
+
+Filesystem operations fail silently when relative paths drift across working directories, wasting cycles on retries.
+
+### `dream:20260906193937:3:84b547`
+*06.09. 19:39 UTC · Quelle: dream*
+
+Swarm knowledge decays into staleness within hours because no periodic re-ingestion or freshness gate triggers reuse.
+
+### `dream:20260906193937:2:624156`
+*06.09. 19:39 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely execute because convergence criteria are missing and no scheduler enforces single-threaded, dependency-ordered rollout.
+
+### `dream:20260906193937:1:2531de`
+*06.09. 19:39 UTC · Quelle: dream*
+
+Model provider failures (502/429) cascade into system-wide stalls because no automatic health-checked fallback exists.
 
 ### `dream:20260906192832:5:c751fa`
 *06.09. 19:28 UTC · Quelle: dream*
@@ -46001,56 +46026,6 @@ Evolution's internal winner score (9/10) diverged from the independent act_done 
 *23.08. 19:33 UTC · Quelle: system*
 
 Exemplar-Bank: von den eigenen besten Momenten lernen (In-Context-Destillat)
-
-### `dream:202608231933:5`
-*23.08. 19:33 UTC · Quelle: dream*
-
-Two consecutive model_fail events on different providers (Nemotron 502, Gemma client error) show single-provider dependency is a systemic fragility.
-
-### `dream:202608231933:4`
-*23.08. 19:33 UTC · Quelle: dream*
-
-Embedding-recall simulation passed with zero risks after a drive whisper identified TF-IDF semantic gaps, proving targeted architectural critiques generate shovel-ready work.
-
-### `dream:202608231933:3`
-*23.08. 19:33 UTC · Quelle: dream*
-
-Zero pruning occurred despite 14+ model events, suggesting the retention policy is too conservative for high-volume operational logs.
-
-### `dream:202608231933:2`
-*23.08. 19:33 UTC · Quelle: dream*
-
-Simulation verdicts calibrate perfectly (predicted=actual=4) when risks=0, but require 5 revisions when risks=5, revealing risk count as a proxy for implementation complexity.
-
-### `dream:202608231933:1`
-*23.08. 19:33 UTC · Quelle: dream*
-
-Extreme latency outliers (123.9s, 72.0s) correlate with upstream 502 errors, indicating infrastructure instability not model slowness.
-
-### `dream:202608231930:5`
-*23.08. 19:30 UTC · Quelle: dream*
-
-Prune runs consistently report 0 facts and 0 events pruned, indicating the pruning criteria never match live data and memory will grow unboundedly.
-
-### `dream:202608231930:4`
-*23.08. 19:30 UTC · Quelle: dream*
-
-All three self-selected drive goals were introspective (dream-linking, skill review, error reduction), confirming the navel-gazing loop persists until fixed structurally via quota rather than by awareness.
-
-### `dream:202608231930:3`
-*23.08. 19:30 UTC · Quelle: dream*
-
-The simulation flagged 5 revisions but only 4 were applied, demonstrating that non-atomic partial application leaves silent residual risk while the system proceeds as if validated.
-
-### `dream:202608231930:2`
-*23.08. 19:30 UTC · Quelle: dream*
-
-Model latency on nvidia/nemotron-3-super-120b-a12b:free ranged 3.3s–123.9s (a 37x spread), meaning single-model routing without a timeout/failover exposes every cycle to multi-minute stalls.
-
-### `dream:202608231930:1`
-*23.08. 19:30 UTC · Quelle: dream*
-
-Across two dream cycles ~10 skill proposals accumulated with zero evidence of implementation, revealing that proposal generation has no adoption path and dies as noise.
 
 ### `last_swarm_goal`
 *23.08. 19:13 UTC · Quelle: system*

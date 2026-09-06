@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 19:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 19:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,6 +11,7 @@
 - Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run i *(hatte die Idee 5×)*
 - Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
+- PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem a *(hatte die Idee 4×)*
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
 - Guarantee a ReservedRemediationBudget of one task per metabolism tick that bypasses conserve-mode throttling e *(hatte die Idee 3×)*
 - Create an automated skill incubator that converts dream skill_proposals into registered, prioritized, and sand *(hatte die Idee 3×)*
@@ -18,8 +19,7 @@
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
 - Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
-- PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem a *(hatte die Idee 3×)*
-- Add a stress-aware scheduler that pauses low-priority swarm tasks when metabolism stress > 0.8 and resumes the *(hatte die Idee 2×)*
+- ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -28,19 +28,24 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Metabolism budget is exceeded by unbounded parallel task spawns, causing pruning thrash and dropped experience.
+- Filesystem operations fail silently when relative paths drift across working directories, wasting cycles on retries.
+- Swarm knowledge decays into staleness within hours because no periodic re-ingestion or freshness gate triggers reuse.
+- Skill proposals accumulate but rarely execute because convergence criteria are missing and no scheduler enforces single-threaded, dependency-ordered r
+- Model provider failures (502/429) cascade into system-wide stalls because no automatic health-checked fallback exists.
 - Swarm critiques and external goals remain stale because ingestion lacks a 'freshness gate' that converts signal into scheduled proposal review.
 - Drive goals repeat identically across cycles because prerequisite dependencies (model reliability → swarm ingestion → skill conversion) execute concur
 - Pruning discards events that may invalidate active proposals, yet no audit cross-references pruned facts against proposal assumptions, creating zombie
@@ -51,11 +56,6 @@
 - Real empirical reliability data per provider consistently outperforms advertised capability rankings for routing decisions.
 - Skill proposals accumulate faster than they are validated and deployed, creating a growing gap between intended capability and actual capability.
 - Provider failures (502/429) are systemic infrastructure issues, not isolated incidents, requiring structural fallback chains rather than retry logic.
-- Upstream service failures (502 overload, 429 rate limits) are not rare edge cases but a recurring pattern that demands an automatic ProviderFallbackCh
-- Pruning aggressiveness must protect knowledge tagged with 'risk', 'revision', or 'critic_feedback' for at least 3 cycles, as premature pruning of thes
-- Convergence criteria based on a single metric (e.g., abs_error == 0) are insufficient; a multi-factor gate requiring score >= 8, no critical risks, an
-- Skill proposals accumulate as technical debt when no mandatory execution gate forces every proposal to be implemented and scored within one cycle, cau
-- Provider reliability varies dramatically in practice: inclusionai/ling-3.0-flash-fin succeeded with 4.4s latency while nemotron hit 502 overload and g
 
 ---
 
