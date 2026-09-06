@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:08 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 13:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,10 +27,10 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 4×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 3×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals already cluster around resilience patterns (circuit-breaker, health registry, graceful degradation) but remain unimplemented.
+- Reflex-driven swarm update succeeded without model calls, proving local tool execution bypasses API fragility for maintenance tasks.
+- Drive goals directly mirror observed failure patterns (model errors, stale data), showing the system's meta-cognition correctly identifies its own wea
+- A single reliable model (inclusionai/ling-3.0-flash-fin:free) handles all successful requests, creating a dangerous single point of failure.
+- Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model lim
 - Automatic model blocking after three consecutive errors protects downstream stability but requires proactive health tracking to avoid wasting attempts
 - Reflex-driven tool execution achieves goals without consuming model budget, demonstrating that coded procedures outperform probabilistic generation fo
 - Hand actions execute reliably (exit code 0) and can serve as deterministic fallbacks when all model endpoints are rate-limited.
@@ -51,11 +56,6 @@
 - Stale swarm knowledge actively degrades routing and skill-selection decisions, making periodic freshness audits a prerequisite rather than an optional
 - The single successful model (inclusionai/ling-3.0-flash-fin) reveals that fallback diversity is the primary resilience factor when multiple upstream s
 - Cascading 429/502 failures across four independent providers indicate no health-aware routing existed, causing repeated wasted calls to degraded model
-- Five concrete skill proposals already exist (QuotaPool, CircuitBreaker, ConvergenceGate, LatencyBudgetRouter, SkillPromotionPipeline) yet a new drive 
-- Pruning removes facts (15, then 7) but events only in the second run (42), implying event retention policy is inconsistent or event volume spiked.
-- Drive goals for 'Schwarm-Wissen auffrischen' and 'Veraltetes Schwarm-Wissen aktualisieren' reappear despite recent successful refreshes, suggesting th
-- Reflex scripts (schwarm-ergebnisse-mit-bestandsaufnahme-.py, vorgeschlagene-skills-nutzbar-machen.py) execute reliably and converge, proving the refle
-- The z-ai/glm-5.2:free model consistently fails with 429 rate-limit errors while nvidia/nemotron-3-ultra succeeds, indicating a hard quota ceiling on t
 
 ---
 

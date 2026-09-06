@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12081 Fakten** · Stand 2026-09-06 13:10 UTC · aktualisiert bei jedem Herzschlag
+**12057 Fakten** · Stand 2026-09-06 13:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7102
-- **swarm_artifact:** 2293
+- **dream:** 7092
+- **swarm_artifact:** 2285
 - **last_swarm_critique:** 809
-- **anti_pattern:** 635
+- **anti_pattern:** 631
 - **last_swarm_goal:** 541
-- **strategy:** 319
+- **strategy:** 317
 - **tool:** 169
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906132040:5:08ca50`
+*06.09. 13:20 UTC · Quelle: dream*
+
+Skill proposals already cluster around resilience patterns (circuit-breaker, health registry, graceful degradation) but remain unimplemented.
+
+### `dream:20260906132040:4:1ee053`
+*06.09. 13:20 UTC · Quelle: dream*
+
+Reflex-driven swarm update succeeded without model calls, proving local tool execution bypasses API fragility for maintenance tasks.
+
+### `dream:20260906132040:3:9f57e9`
+*06.09. 13:20 UTC · Quelle: dream*
+
+Drive goals directly mirror observed failure patterns (model errors, stale data), showing the system's meta-cognition correctly identifies its own weaknesses.
+
+### `dream:20260906132040:2:6fd6d3`
+*06.09. 13:20 UTC · Quelle: dream*
+
+A single reliable model (inclusionai/ling-3.0-flash-fin:free) handles all successful requests, creating a dangerous single point of failure.
+
+### `dream:20260906132040:1:faa078`
+*06.09. 13:20 UTC · Quelle: dream*
+
+Rate limiting (429 errors) cascades across multiple free-tier models simultaneously, indicating shared infrastructure quotas rather than per-model limits.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Vorgeschlagene Fähigkeit:2`
 *06.09. 13:06 UTC · Quelle: evolution*
@@ -46269,41 +46294,6 @@ score=5; issues=Critic output unparseable.
 
 CI-Workflow für automatisches Mergen optimieren
 
-### `dream:202608231318:5`
-*23.08. 13:18 UTC · Quelle: dream*
-
-Repeated simulation revisions and low convergence scores show the current process for reducing thinking errors is ineffective.
-
-### `dream:202608231318:4`
-*23.08. 13:18 UTC · Quelle: dream*
-
-Predicted scores consistently exceed actual outcomes by ~1.5×, indicating a systematic optimism bias in scoring.
-
-### `dream:202608231318:3`
-*23.08. 13:18 UTC · Quelle: dream*
-
-The swarm ran with four builders and only one critic, producing insufficient critique and lowering decision quality.
-
-### `dream:202608231318:2`
-*23.08. 13:18 UTC · Quelle: dream*
-
-A missing 'add_fact' method on MemoryStore triggered an AttributeError, revealing a gap in interface contracts.
-
-### `dream:202608231318:1`
-*23.08. 13:18 UTC · Quelle: dream*
-
-Model latency fluctuates widely (8–185 s), causing unpredictable response times and threatening deadline compliance.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Wie gut das Modell arbei:2`
-*23.08. 13:12 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): End‑to‑end profiling and detailed logging - Instrument the benchmark with profiling tools (e.g., torch.cuda.nvtx, NVIDIA Nsight, or Python's cProfile) to capture GPU kernel execution times, memory allocation, and data‑transfe
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Wie gut das Modell arbei:0`
-*23.08. 13:12 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Statistical robustness and variability measurement - Modify the benchmark to run the inference loop N times (e.g., 30 iterations) after a GPU warm‑up phase, collect latency and accuracy per run, then compute mean, standard de
-
 ### `last_swarm_critique`
 *23.08. 13:12 UTC · Quelle: critic*
 
@@ -46314,43 +46304,6 @@ score=3; issues=Benchmark script runs only a single iteration, providing no meas
 
 Wie gut das Modell arbeitet verbessern
 
-### `dream:202608231309:5`
-*23.08. 13:09 UTC · Quelle: dream*
-
-Reliance on recalled goals such as last_swarm_goal makes memory correctness vital; validating interface contracts at startup prevents silent failures.
-
-### `dream:202608231309:4`
-*23.08. 13:09 UTC · Quelle: dream*
-
-Under stress the system enters a conserve mode that caps iterations and tasks, indicating the need for adaptive planning depth to avoid overload.
-
-### `dream:202608231309:3`
-*23.08. 13:09 UTC · Quelle: dream*
-
-Calibration drift between predicted and actual scores shows performance can degrade silently, demanding continuous observability with automated stagnation alerts.
-
-### `dream:202608231309:2`
-*23.08. 13:09 UTC · Quelle: dream*
-
-Authentication (403) and service‑overload (502) errors expose external API unreliability, requiring retry logic, circuit breakers, and model diversification.
-
-### `dream:202608231309:1`
-*23.08. 13:09 UTC · Quelle: dream*
-
-Latency spikes above 60 s for high‑capacity models break real‑time expectations, necessitating SLA enforcement and automatic fallback.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler verringern
-:1`
-*23.08. 13:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Data Quality Audit & Synthetic Gap Detection Pipeline - Implement a main function with argparse that accepts input data paths, output directory, and synthetic generation parameters. Perform a comprehensive data quality audit
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Modellfehler verringern
-:0`
-*23.08. 13:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Calibration & Uncertainty Quantification Overhaul - Rewrite the calibration_curve function to compute reliability diagrams correctly, fix the bootstrap confidence interval argument order, and swap the columns used for bias CI
-
 ### `last_swarm_critique`
 *23.08. 13:03 UTC · Quelle: critic*
 
@@ -46360,31 +46313,6 @@ score=3; issues=Model Error Baseline Measurement & Calibration: calibration_curv
 *23.08. 12:55 UTC · Quelle: system*
 
 Modellfehler verringern
-
-### `dream:202608231255:5`
-*23.08. 12:55 UTC · Quelle: dream*
-
-Swarm role ratios drift at startup, leading to insufficient criticism or planning capacity.
-
-### `dream:202608231255:4`
-*23.08. 12:55 UTC · Quelle: dream*
-
-Predicted goal scores overestimate actual outcomes by ~40%, requiring calibration before critical decisions.
-
-### `dream:202608231255:3`
-*23.08. 12:55 UTC · Quelle: dream*
-
-Skill proposals recur across dreams without implementation, revealing a missing execution pipeline.
-
-### `dream:202608231255:2`
-*23.08. 12:55 UTC · Quelle: dream*
-
-Memory pruning triggers but removes nothing, indicating stale thresholds or ineffective criteria.
-
-### `dream:202608231255:1`
-*23.08. 12:55 UTC · Quelle: dream*
-
-Model latency degrades over consecutive calls without circuit breaker, causing cascading delays.
 
 ### `last_swarm_critique`
 *23.08. 12:47 UTC · Quelle: critic*

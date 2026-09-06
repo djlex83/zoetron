@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 13:08:39",
+ "stand": "2026-09-06 13:21:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -19,6 +19,12 @@
    "laeufe": 6,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
   },
   {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
@@ -43,12 +49,6 @@
    "laeufe": 5,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 5,
-   "erfolge": 5,
-   "quote": 1.0
   },
   {
    "tool": "alte-schwarm-arbeiten-abschließen.py",
@@ -114,12 +114,6 @@
    "tool": "veraltetes-wissen-erneuern.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -220,6 +214,12 @@
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
