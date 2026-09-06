@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 10:20 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 10:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -11,24 +11,24 @@
 - Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run i *(hatte die Idee 5×)*
 - Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
-- Build predictive cooldown scheduler using failure-signature cache to preemptively skip models during historica *(hatte die Idee 3×)*
-- Create swarm-task watchdog flagging tasks stale >7 days, auto-generating revive sub-goals with critic-to-build *(hatte die Idee 3×)*
-- Add artifact pre-flight validator running syntax check, import test, and sandbox permission verification befor *(hatte die Idee 3×)*
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
 - Guarantee a ReservedRemediationBudget of one task per metabolism tick that bypasses conserve-mode throttling e *(hatte die Idee 3×)*
 - Create an automated skill incubator that converts dream skill_proposals into registered, prioritized, and sand *(hatte die Idee 3×)*
 - Guarantee one remediation task per meta-cycle via ReservedRemediationBudget scheduler to prevent pruning from  *(hatte die Idee 3×)*
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
+- Implement model health monitor with sliding-window 429/502 rates and get_healthy_model() router integration to *(hatte die Idee 2×)*
+- Deploy error-classification reflex mapping 429/502/timeout to pre-validated recovery sequences (exponential ba *(hatte die Idee 2×)*
+- Build predictive cooldown scheduler using failure-signature cache to preemptively skip models during historica *(hatte die Idee 2×)*
 
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 26×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 6×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 5×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning 10 events per cycle without fact loss suggests the event log grows faster than semantic consolidation, requiring scheduled summarization.
+- Reflex scripts (e.g., modellfehler-deutlich-reduzieren.py) can autonomously resolve model errors when triggered by failure signals, proving the value 
+- Latency variance between successful calls (3.8s vs 33.4s) indicates missing SLA enforcement, causing unpredictable user-facing delays.
+- Upstream provider errors (502) cascade into silent failures unless explicit health checks and circuit breakers are implemented per model endpoint.
+- Free tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without quota-aware routing.
 - Swarm knowledge decays silently; the last_swarm_goal recall shows no freshness check, so a timestamped knowledge TTL with automatic refresh triggers i
 - Metabolism-driven conserve mode (stress=1.0) caps iterations to 1 and tasks to 3, so every action must be idempotent, low-latency, and produce a durab
 - Proposed skills stall in "validation limbo" – the reflex checker crashes, simulation demands revisions, but no automated repair loop exists; a self-he
@@ -51,11 +56,6 @@
 - Model diversity provides implicit resilience (some models succeed when others fail), but without an explicit routing strategy, this resilience is acci
 - The reflex-based error-reduction loop works but is purely reactive; without proactive health monitoring, the system repeatedly discovers the same fail
 - 429 rate-limit errors are systemic across all external model providers, indicating the bottleneck is API quota management, not individual model reliab
-- Self-diagnosis reports zero organ errors while model router operates at >80% failure rate, exposing a monitoring blind spot for cognitive degradation.
-- Reflex-driven swarm knowledge update succeeded autonomously, proving local deterministic skills survive model-layer brownouts.
-- High-latency successes (28.5s) from nemotron-3-ultra reveal that 'available' models may violate interactive SLAs silently.
-- Fallback chains without coordinated backoff amplify contention: each retry hits the same exhausted quota window.
-- Rate-limit cascades across all free-tier models simultaneously indicate shared upstream quota exhaustion, not individual model failures.
 
 ---
 

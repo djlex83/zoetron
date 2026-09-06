@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12087 Fakten** · Stand 2026-09-06 10:22 UTC · aktualisiert bei jedem Herzschlag
+**12084 Fakten** · Stand 2026-09-06 10:41 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7103
-- **swarm_artifact:** 2305
+- **dream:** 7107
+- **swarm_artifact:** 2301
 - **last_swarm_critique:** 791
-- **anti_pattern:** 645
+- **anti_pattern:** 643
 - **last_swarm_goal:** 539
-- **strategy:** 324
+- **strategy:** 323
 - **tool:** 168
 - **hand_result:** 132
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906103807:5:49c677`
+*06.09. 10:38 UTC · Quelle: dream*
+
+Pruning 10 events per cycle without fact loss suggests the event log grows faster than semantic consolidation, requiring scheduled summarization.
+
+### `dream:20260906103807:4:9fe2c8`
+*06.09. 10:38 UTC · Quelle: dream*
+
+Reflex scripts (e.g., modellfehler-deutlich-reduzieren.py) can autonomously resolve model errors when triggered by failure signals, proving the value of codified recovery procedures.
+
+### `dream:20260906103807:3:299b50`
+*06.09. 10:38 UTC · Quelle: dream*
+
+Latency variance between successful calls (3.8s vs 33.4s) indicates missing SLA enforcement, causing unpredictable user-facing delays.
+
+### `dream:20260906103807:2:fd5bd1`
+*06.09. 10:38 UTC · Quelle: dream*
+
+Upstream provider errors (502) cascade into silent failures unless explicit health checks and circuit breakers are implemented per model endpoint.
+
+### `dream:20260906103807:1:8eb8ff`
+*06.09. 10:38 UTC · Quelle: dream*
+
+Free tier models consistently hit 429 rate limits under load, making them unreliable for production workflows without quota-aware routing.
 
 ### `anti_pattern:Previous attempt scored 0/10. Goal: Skill-Vorschläge in echt:2`
 *06.09. 10:18 UTC · Quelle: evolution*
@@ -46386,16 +46411,6 @@ The role mix of 5 builders to only 1 critic and 1 planner coincided with a faile
 
 Predicted swarm success (5) overshot actual outcome (3) by 2 points, so pre-mission score predictions should be discounted by the observed ~40% calibration error before committing resources.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Ergebnisvalidierung und :2`
-*23.08. 10:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Event-driven observer pipeline: decouple validation and logging from business lo - Refactor the flow into an event bus architecture: each stage publishes typed events (StepStarted, StepFinished, StepFailed) to a bus; separate
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Ergebnisvalidierung und :1`
-*23.08. 10:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Aspect-oriented instrumentation via decorators: add validation and logging as tr - Keep the existing core code completely unchanged and instead create a @validated_logged decorator that (a) serializes arguments and return val
-
 ### `last_swarm_critique`
 *23.08. 10:20 UTC · Quelle: critic*
 
@@ -46405,11 +46420,6 @@ score=5; issues=Critic output unparseable.
 *23.08. 10:14 UTC · Quelle: system*
 
 Ergebnisvalidierung und Logging hinzufügen
-
-### `dream:202608231014:1`
-*23.08. 10:14 UTC · Quelle: dream*
-
-Dream could not parse its own output - check prompt size.
 
 ### `last_swarm_critique`
 *23.08. 09:52 UTC · Quelle: critic*
