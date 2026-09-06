@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12082 Fakten** · Stand 2026-09-06 01:48 UTC · aktualisiert bei jedem Herzschlag
+**12075 Fakten** · Stand 2026-09-06 01:59 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7028
-- **swarm_artifact:** 2348
+- **swarm_artifact:** 2344
 - **last_swarm_critique:** 785
-- **anti_pattern:** 675
+- **anti_pattern:** 673
 - **last_swarm_goal:** 533
-- **strategy:** 339
+- **strategy:** 338
 - **tool:** 164
 - **hand_result:** 131
 - **aktuell_organfehler:** 44
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906015651:5:347f57`
+*06.09. 01:56 UTC · Quelle: dream*
+
+Stale tasks and unused memory items accumulate during conserve mode, requiring automated cleanup to maintain system health.
+
+### `dream:20260906015651:4:6b85f3`
+*06.09. 01:56 UTC · Quelle: dream*
+
+Skill proposals are accumulating but not being executed, indicating a systemic gap between planning and operationalization that needs active bridging.
+
+### `dream:20260906015651:3:5cec67`
+*06.09. 01:56 UTC · Quelle: dream*
+
+Under high stress (conserve mode), task execution is throttled, but critical remediation actions still require a dedicated budget to prevent total system stall.
+
+### `dream:20260906015651:2:a5692b`
+*06.09. 01:56 UTC · Quelle: dream*
+
+Hand actions fail when using relative paths; scripts must resolve absolute paths using environment variables like `ZOETRON_DATA`.
+
+### `dream:20260906015651:1:8818d4`
+*06.09. 01:56 UTC · Quelle: dream*
+
+The primary model `z-ai/glm-5.2:free` is highly rate-limited and should be temporarily deprioritized in favor of `nvidia/nemotron` to maintain throughput.
 
 ### `dream:20260906014619:5:f705f0`
 *06.09. 01:46 UTC · Quelle: dream*
@@ -46251,16 +46276,6 @@ Duplicated file loading and JSON parsing errors caused evolution run failures, i
 
 Latency spikes up to 62.5 s reveal the need for timeout, fallback, and alerting in model calls.
 
-### `anti_pattern:Previous attempt scored 4/10. Goal: Verschiedene Situationen:1`
-*23.08. 01:52 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Verschiedene Situationen:0`
-*23.08. 01:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Data‑driven configuration with a single reusable runner - Define a list of scenario dictionaries (name, description, base_success_rate, modifiers). Write one `run_scenario(scenario: dict, rng: np.random.Generator) -> bool` fu
-
 ### `last_swarm_critique`
 *23.08. 01:52 UTC · Quelle: critic*
 
@@ -46270,31 +46285,6 @@ score=4; issues=Code duplication: the same `run_scenario` function is redefined 
 *23.08. 01:47 UTC · Quelle: system*
 
 Verschiedene Situationen durchspielen
-
-### `dream:202608230147:5`
-*23.08. 01:47 UTC · Quelle: dream*
-
-Recurring model errors stem from missing real‑time error feedback, reducing system reliability.
-
-### `dream:202608230147:4`
-*23.08. 01:47 UTC · Quelle: dream*
-
-Swarm convergence stalls when worker roles become unbalanced or shards stop progressing without detection.
-
-### `dream:202608230147:3`
-*23.08. 01:47 UTC · Quelle: dream*
-
-Infrequent model calibration allows prediction drift to accumulate, degrading decision quality over time.
-
-### `dream:202608230147:2`
-*23.08. 01:47 UTC · Quelle: dream*
-
-Many skill proposals never reach use because they lack empirical validation, creating an ideation‑to‑impact gap.
-
-### `dream:202608230147:1`
-*23.08. 01:47 UTC · Quelle: dream*
-
-High latency spikes (>20 s) indicate overload and necessitate dynamic fallback to keep responses timely.
 
 ### `last_swarm_critique`
 *23.08. 01:31 UTC · Quelle: critic*

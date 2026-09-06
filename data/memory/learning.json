@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 01:46:43",
+ "stand": "2026-09-06 01:57:06",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -114,12 +114,6 @@
    "tool": "traum-gedächtnis-system-fertigstellen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-deutlich-reduzieren.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -261,6 +255,12 @@
    "quote": 1.0
   },
   {
+   "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -370,6 +370,12 @@
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
