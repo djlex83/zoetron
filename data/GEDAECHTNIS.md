@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11914 Fakten** · Stand 2026-09-06 20:57 UTC · aktualisiert bei jedem Herzschlag
+**11912 Fakten** · Stand 2026-09-06 21:07 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7026
-- **swarm_artifact:** 2233
+- **swarm_artifact:** 2231
 - **last_swarm_critique:** 812
 - **anti_pattern:** 609
 - **last_swarm_goal:** 544
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906210510:5:5c97bb`
+*06.09. 21:05 UTC · Quelle: dream*
+
+The system self-corrects effectively when reflex-based action is paired with structured goal-driven refinement, but this synergy collapses whenever model infrastructure reliability degrades.
+
+### `dream:20260906210510:4:8c1e66`
+*06.09. 21:05 UTC · Quelle: dream*
+
+Convergence declared without strict criteria (score threshold, risk simulation, critic sign-off) produces false positives that undermine the entire learning feedback loop.
+
+### `dream:20260906210510:3:49e8df`
+*06.09. 21:05 UTC · Quelle: dream*
+
+Skills proposed without a mandatory execution-and-scoring gate accumulate as untested dead weight, polluting the skill registry and eroding trust in the proposal process.
+
+### `dream:20260906210510:2:4aa6eb`
+*06.09. 21:05 UTC · Quelle: dream*
+
+Stale swarm knowledge creates a compounding error loop: outdated goals and critiques cause repeated mistakes, making periodic refresh cycles non-optional for decision quality.
+
+### `dream:20260906210510:1:b24593`
+*06.09. 21:05 UTC · Quelle: dream*
+
+Model provider failures (502/429) are the primary system bottleneck — without per-provider health tracking and automatic fallback chains, the system wastes cycles on dead endpoints and loses convergence momentum.
 
 ### `dream:20260906205444:5:f14d05`
 *06.09. 20:54 UTC · Quelle: dream*
@@ -45661,31 +45686,6 @@ score=4; issues=fetch_job_logs function is incomplete - ends with 'return log' b
 *23.08. 21:00 UTC · Quelle: system*
 
 Fehler bei den GitHub-Aufgaben beheben
-
-### `dream:202608232100:5`
-*23.08. 21:00 UTC · Quelle: dream*
-
-Latency SLA breaches trigger no automatic fallback, leaving the system stuck on slow providers despite multi-provider availability.
-
-### `dream:202608232100:4`
-*23.08. 21:00 UTC · Quelle: dream*
-
-Simulation flagged risks lack a mandatory resolution gate, so act_done can fire with unresolved hazards.
-
-### `dream:202608232100:3`
-*23.08. 21:00 UTC · Quelle: dream*
-
-Prune runs consistently remove zero items while store size grows, showing the current eligibility heuristic is inert and wastes cycles.
-
-### `dream:202608232100:2`
-*23.08. 21:00 UTC · Quelle: dream*
-
-Proposal deduplication via content-hash ledgers appears in three separate cycles, revealing that the system re-generates identical ideas instead of promoting them.
-
-### `dream:202608232100:1`
-*23.08. 21:00 UTC · Quelle: dream*
-
-Validation guards (interface, pre-call, pre-flight, sanity-check) are proposed repeatedly across cycles, indicating a systemic trust deficit in tool/hand contracts.
 
 ### `last_swarm_goal`
 *23.08. 20:53 UTC · Quelle: system*

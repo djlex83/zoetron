@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 20:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 21:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -14,12 +14,12 @@
 - DriveScheduler: topologically sort active goals by prerequisite dependency (model reliability → swarm update → *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
+- Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backof *(hatte die Idee 4×)*
 - Create a ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity, and merges dup *(hatte die Idee 3×)*
 - Guarantee a ReservedRemediationBudget of one task per metabolism tick that bypasses conserve-mode throttling e *(hatte die Idee 3×)*
 - Create an automated skill incubator that converts dream skill_proposals into registered, prioritized, and sand *(hatte die Idee 3×)*
 - Guarantee one remediation task per meta-cycle via ReservedRemediationBudget scheduler to prevent pruning from  *(hatte die Idee 3×)*
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
-- Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The system self-corrects effectively when reflex-based action is paired with structured goal-driven refinement, but this synergy collapses whenever mo
+- Convergence declared without strict criteria (score threshold, risk simulation, critic sign-off) produces false positives that undermine the entire le
+- Skills proposed without a mandatory execution-and-scoring gate accumulate as untested dead weight, polluting the skill registry and eroding trust in t
+- Stale swarm knowledge creates a compounding error loop: outdated goals and critiques cause repeated mistakes, making periodic refresh cycles non-optio
+- Model provider failures (502/429) are the primary system bottleneck — without per-provider health tracking and automatic fallback chains, the system w
 - Dream-to-skill conversion remains aspirational: five skill proposals were generated last cycle but none passed through execution, simulation, and scor
 - Swarm knowledge decays measurably between refresh cycles, causing stale goals and outdated criticism to persist until explicit revival.
 - Aggressive pruning (15→10 facts, 47→21 events per cycle) risks discarding latent patterns before cross-cycle consolidation can extract them.
@@ -51,11 +56,6 @@
 - Filesystem operations fail intermittently because relative paths drift across contexts; PathResolver canonicalization must precede every I/O action.
 - Goals repeatedly converge without verified evidence (score ≥ 8, critic sign-off, zero critical risks) because ConvergenceGate is proposed but not enfo
 - Model unreliability cascades into failed simulations, stale swarm data, and unconverged goals because no health-checked fallback chain exists before c
-- Reflex-mode execution can converge a goal but produces no score, meaning quality assurance is entirely absent when reflexes bypass normal evaluation p
-- Swarm convergence failed across 2 cycles with 5 roles because tasks were not ordered by prerequisite dependency, causing resource contention and stale
-- Aggressive pruning (22 events, 11 facts) can silently invalidate the assumptions underlying active skill proposals, creating proposals built on alread
-- A simulation verdict of 'go' does not guarantee real-world performance — the 6/10 score despite a green verdict reveals a calibration gap between pred
-- Model endpoint failures (502/429) are systemic and cascading; without proactive health-checks and automatic fallback chains, every task depending on m
 
 ---
 
