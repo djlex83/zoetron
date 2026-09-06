@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8423 Neuronen · 752769 bewertete Synapsen
+Stand: 8419 Neuronen · 752675 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -10,18 +10,18 @@ Stand: 8423 Neuronen · 752769 bewertete Synapsen
 
 | # | Kat | Neuron (Erinnerung) | Synapsen | Ø Stärke |
 |---|---|---|---|---|
-| 1 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 819 | 0.23 |
-| 2 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 716 | 0.26 |
-| 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 769 | 0.24 |
+| 1 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 820 | 0.23 |
+| 2 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 717 | 0.26 |
+| 3 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 767 | 0.24 |
 | 4 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 738 | 0.24 |
-| 5 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 668 | 0.25 |
+| 5 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 669 | 0.25 |
 | 6 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 722 | 0.23 |
-| 7 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 716 | 0.24 |
-| 8 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 681 | 0.25 |
-| 9 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 653 | 0.26 |
+| 7 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 683 | 0.25 |
+| 8 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 654 | 0.26 |
+| 9 | 💭 | Model latency exhibits high variance (9‑85 s), frequently exceed… | 715 | 0.24 |
 | 10 | 💭 | nvidia/nemotron-3-ultra-550b:free consistently succeeds with acc… | 659 | 0.25 |
-| 11 | 💭 | Repeated 429 errors across four different models indicate system… | 672 | 0.24 |
-| 12 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 693 | 0.24 |
+| 11 | 💭 | Repeated 429 errors across four different models indicate system… | 674 | 0.24 |
+| 12 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 694 | 0.24 |
 | 13 | 💭 | Repeated 429 errors on z-ai/glm-5.2:free indicate rate limiting … | 713 | 0.23 |
 | 14 | 💭 | The model `nvidia/nemotron-3-ultra-550b-a55b:free` suffers from … | 625 | 0.26 |
 | 15 | 💭 | The z-ai/glm-5.2:free model is consistently unavailable due to r… | 663 | 0.24 |

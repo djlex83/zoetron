@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 02:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 02:39 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 13×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Offene Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 6×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Alte Schwarm-Aufgaben endlich abschließen *(wieder aufgegriffen: 3×)*
 - Modellfehler drastisch reduzieren *(wieder aufgegriffen: 3×)*
 - Offene Schwarm-Aufgaben abschließen *(wieder aufgegriffen: 3×)*
-- Vorschläge in echte Aktionen umwandeln *(wieder aufgegriffen: 2×)*
 - Traum-Erinnerungen nutzbar machen *(wieder aufgegriffen: 2×)*
 - Vorgeschlagene Fähigkeiten wirklich ausführen *(wieder aufgegriffen: 2×)*
+- Offene Schwarm-Aufgaben endlich umsetzen *(wieder aufgegriffen: 2×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes zero facts/events despite repeated failures, indicating retention policy doesn't prioritize failure-pattern evidence.
+- Selbstdiagnose reports zero organ errors while provider degradation cascades, proving organ-level monitoring misses cross-cutting infrastructure failu
+- Latency variance from 4.7s to 25.1s across "healthy" models makes timeout-based routing unreliable without percentile-aware SLAs.
+- Duplicate skill proposals (ModelRouter proposed twice) reveal missing semantic deduplication in the consolidation pipeline.
+- Cross-provider 429 errors indicate systemic rate-limiting vulnerability requiring coordinated traffic management rather than per-model retries.
 - Model selection currently ignores token efficiency and latency percentiles, causing slow/expensive models to be chosen over faster, cheaper ones.
 - Prompt repetition across dreams suggests a PromptCache could cut external calls by ~30% as projected, directly reducing 429 exposure.
 - Successful reflex execution (veraltete-schwarm-artefakte-aufräumen-un.py) proves autonomous remediation works when scoped to a single, well-defined to
@@ -51,11 +56,6 @@
 - Pruning runs show high initial volume (102 events) then near-zero, suggesting threshold-based scheduling would replace manual triggers effectively.
 - Multiple independent skill proposals converge on circuit-breaker, retry-with-backoff, and health-tracking patterns, indicating a systemic resilience g
 - Recurring 429 errors on z-ai/glm-5.2:free cause mandatory fallbacks to slower models, degrading latency from ~2s to ~16s per request.
-- Single-cycle swarm convergence with score 8 suggests the current role allocation (1 planner, 3 builders, 1 critic) is sufficient for well-scoped imple
-- Automatic pruning (16 facts, 102 events) triggered without manual intervention, confirming the memory system self-regulates under volume pressure.
-- Calibration error of 300% (predicted 2 vs actual 8 cycles) indicates the planner systematically underestimates execution complexity for multi-role swa
-- High-latency models (Nemotron: 24-85s) succeed consistently while low-latency models (GLM: 2.5-7s) fail intermittently under load, revealing an invers
-- Rate limiting (HTTP 429) is the dominant failure mode across multiple free-tier models, making reliability dependent on request pacing rather than mod
 
 ---
 

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12078 Fakten** · Stand 2026-09-06 02:30 UTC · aktualisiert bei jedem Herzschlag
+**12074 Fakten** · Stand 2026-09-06 02:41 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7038
-- **swarm_artifact:** 2340
+- **swarm_artifact:** 2336
 - **last_swarm_critique:** 785
 - **anti_pattern:** 671
 - **last_swarm_goal:** 533
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906023843:5:68b3a5`
+*06.09. 02:38 UTC · Quelle: dream*
+
+Pruning removes zero facts/events despite repeated failures, indicating retention policy doesn't prioritize failure-pattern evidence.
+
+### `dream:20260906023843:4:e59d51`
+*06.09. 02:38 UTC · Quelle: dream*
+
+Selbstdiagnose reports zero organ errors while provider degradation cascades, proving organ-level monitoring misses cross-cutting infrastructure failures.
+
+### `dream:20260906023843:3:8bfaf7`
+*06.09. 02:38 UTC · Quelle: dream*
+
+Latency variance from 4.7s to 25.1s across "healthy" models makes timeout-based routing unreliable without percentile-aware SLAs.
+
+### `dream:20260906023843:2:8e544c`
+*06.09. 02:38 UTC · Quelle: dream*
+
+Duplicate skill proposals (ModelRouter proposed twice) reveal missing semantic deduplication in the consolidation pipeline.
+
+### `dream:20260906023843:1:4f2a18`
+*06.09. 02:38 UTC · Quelle: dream*
+
+Cross-provider 429 errors indicate systemic rate-limiting vulnerability requiring coordinated traffic management rather than per-model retries.
 
 ### `dream:20260906022814:5:02515e`
 *06.09. 02:28 UTC · Quelle: dream*
@@ -46280,31 +46305,6 @@ score=3; issues=Inconsistent data models across artifacts: SimConfig and SimResu
 *23.08. 02:30 UTC · Quelle: system*
 
 Simulationen öfter in echt testen
-
-### `dream:202608230229:5`
-*23.08. 02:29 UTC · Quelle: dream*
-
-Evolutionary variant generation improves scores from 4/10 to 7‑9, demonstrating that systematic code mutations (e.g., removing global scope) enhance skill performance.
-
-### `dream:202608230229:4`
-*23.08. 02:29 UTC · Quelle: dream*
-
-Swarm runs for skill practice achieve low scores and fail to converge, pointing to insufficient builder capacity or weak critic feedback.
-
-### `dream:202608230229:3`
-*23.08. 02:29 UTC · Quelle: dream*
-
-Simulation repeatedly returns a 'revise' verdict for the autonomous skill practice goal, revealing a persistent gap between current implementations and desired behavior.
-
-### `dream:202608230229:2`
-*23.08. 02:29 UTC · Quelle: dream*
-
-Model latency shows high variance (from ~4 s to >49 s), suggesting that static model selection leads to unpredictable response times.
-
-### `dream:202608230229:1`
-*23.08. 02:29 UTC · Quelle: dream*
-
-Intermittent upstream overload errors cause complete loss of model output, indicating a need for automatic retry and fallback mechanisms.
 
 ### `last_swarm_critique`
 *23.08. 02:12 UTC · Quelle: critic*
