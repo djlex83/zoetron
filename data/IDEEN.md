@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 15:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 16:06 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts without checking if they are referenced by active skills or pending goals.
+- Swarm knowledge goes stale because no scheduled refresh or relevance scoring triggers re-ingestion.
+- Skill proposals accumulate but are not automatically validated, deployed, or measured for impact.
+- A single reliable model (ling-3.0-flash-fin) consistently succeeds while primary/secondary models fail unpredictably.
+- Transient model failures (502, 429) cascade into workflow stalls because no circuit breaker or retry logic exists.
 - Drive goals for error reduction and swarm utilization conflict: swarm data is stale because model failures prevent fresh collection.
 - Pruning removes facts but not the recurring failure signatures, so the system relearns the same model limitations each cycle.
 - Skill proposals generated during reflex execution already encode the needed resilience patterns but remain unimplemented due to missing promotion pipe
@@ -51,11 +56,6 @@
 - Unbounded accumulation of facts and events silently degrades reasoning quality, and late-run pruning destroys reusable intermediate state that could h
 - Skill proposals that survive multiple dream cycles without auto-instantiation as tracked tasks are effectively abandoned, revealing a systemic proposa
 - Free-tier model endpoints fail with predictable error signatures (429 rate limits, 502 upstream overload) within minutes of each other, meaning routin
-- Drive goals pile up (reduce errors, update swarm, convert skills) without a scheduler that sequences them by dependency and urgency.
-- Pruning runs late (33 events, 6 facts) after reusable intermediate state has already been discarded, wasting compute on doomed branches.
-- Self-predictions consistently overshoot by ~3 points (calibration error), causing premature convergence declarations in evolution cycles.
-- The reflex executor lacks automatic failover: it retries the same failing model family instead of switching to the known-working fallback immediately.
-- Free-tier models fail systematically under load (429/502) while a single free model (ling-3.0-flash-fin) remains reliable, indicating provider-level q
 
 ---
 

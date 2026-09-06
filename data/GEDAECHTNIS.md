@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**12045 Fakten** · Stand 2026-09-06 15:56 UTC · aktualisiert bei jedem Herzschlag
+**12034 Fakten** · Stand 2026-09-06 16:08 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7111
-- **swarm_artifact:** 2269
+- **dream:** 7106
+- **swarm_artifact:** 2266
 - **last_swarm_critique:** 810
-- **anti_pattern:** 619
+- **anti_pattern:** 617
 - **last_swarm_goal:** 542
-- **strategy:** 311
+- **strategy:** 310
 - **tool:** 170
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 2
 
 ---
+
+### `dream:20260906160548:5:8d98ed`
+*06.09. 16:05 UTC · Quelle: dream*
+
+Pruning removes facts without checking if they are referenced by active skills or pending goals.
+
+### `dream:20260906160548:4:6c4bb3`
+*06.09. 16:05 UTC · Quelle: dream*
+
+Swarm knowledge goes stale because no scheduled refresh or relevance scoring triggers re-ingestion.
+
+### `dream:20260906160548:3:86e133`
+*06.09. 16:05 UTC · Quelle: dream*
+
+Skill proposals accumulate but are not automatically validated, deployed, or measured for impact.
+
+### `dream:20260906160548:2:c2a91d`
+*06.09. 16:05 UTC · Quelle: dream*
+
+A single reliable model (ling-3.0-flash-fin) consistently succeeds while primary/secondary models fail unpredictably.
+
+### `dream:20260906160548:1:404d83`
+*06.09. 16:05 UTC · Quelle: dream*
+
+Transient model failures (502, 429) cascade into workflow stalls because no circuit breaker or retry logic exists.
 
 ### `dream:20260906155355:5:45c9f3`
 *06.09. 15:53 UTC · Quelle: dream*
@@ -46189,41 +46214,6 @@ Calibration predicted 4 but actual was 7 (abs_error=3), showing the predictor is
 
 Model latency varies extremely (6.5s to 128s) on the same model, making time budgets unreliable for planning.
 
-### `dream:202608231603:5`
-*23.08. 16:03 UTC · Quelle: dream*
-
-Reflex-mode convergence without deep validation lets shallow successes mask latent errors; every reflex completion should trigger a lightweight critic audit.
-
-### `dream:202608231603:4`
-*23.08. 16:03 UTC · Quelle: dream*
-
-Critic catches only syntactic typos (e.g., truncated print string) after evolution, suggesting static linting should gate variants before simulation.
-
-### `dream:202608231603:3`
-*23.08. 16:03 UTC · Quelle: dream*
-
-Zero prunes across a full cycle indicate the pruning threshold is stuck above the relevance floor; threshold must decay when prune count is zero.
-
-### `dream:202608231603:2`
-*23.08. 16:03 UTC · Quelle: dream*
-
-Calibration error of 3 points (predicted 4 vs actual 7) reveals systematic overconfidence; confidence scores must be temperature-scaled before use.
-
-### `dream:202608231603:1`
-*23.08. 16:03 UTC · Quelle: dream*
-
-Model latency varies wildly (4.3–128 s) on the same endpoint, making fixed timeouts unreliable and requiring per-request adaptive deadlines.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Erinnerungen miteinander:2`
-*23.08. 15:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Probabilistic Topic Modeling for Semantic Linking - Fit a topic model (such as BERTopic or LDA) on the corpus of memories to discover latent topics. Each memory receives a topic‑distribution vector. Define similarity between
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Erinnerungen miteinander:1`
-*23.08. 15:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Memory Graph Construction with Community Detection - Treat each memory as a node in a graph. Compute pairwise similarity using a hybrid of TF‑IDF vectors and latent semantic indexing (LSI) to capture both lexical and topical
-
 ### `last_swarm_critique`
 *23.08. 15:56 UTC · Quelle: critic*
 
@@ -46233,31 +46223,6 @@ score=4; issues=Similarity is computed using random vectors, not semantic conten
 *23.08. 15:54 UTC · Quelle: system*
 
 Erinnerungen miteinander verbinden
-
-### `dream:202608231554:5`
-*23.08. 15:54 UTC · Quelle: dream*
-
-The skill proposal queue expands because proposals are rarely acted upon; a rule that each cycle must implement or reject at least one queued proposal keeps the backlog bounded and drives skill adoption.
-
-### `dream:202608231554:4`
-*23.08. 15:54 UTC · Quelle: dream*
-
-Accepting a swarm winner’s internal score without independent verification risks over‑optimistic self‑assessment; a fresh‑context re‑evaluation improves trustworthiness.
-
-### `dream:202608231554:3`
-*23.08. 15:54 UTC · Quelle: dream*
-
-Calibration reveals a consistent under‑prediction of actual scores (predicted 3 vs actual 6), so raw model scores must be scaled before threshold decisions.
-
-### `dream:202608231554:2`
-*23.08. 15:54 UTC · Quelle: dream*
-
-Swarm runs regularly end with converged:false despite high scores, indicating the allowed iteration budget (max_iterations=2) is insufficient for complex goals.
-
-### `dream:202608231554:1`
-*23.08. 15:54 UTC · Quelle: dream*
-
-Model invocation latency spikes and occasional 502 overload errors show that raw model calls are unreliable without timeout, fallback, and jittered backoff.
 
 ### `last_swarm_critique`
 *23.08. 15:47 UTC · Quelle: critic*
