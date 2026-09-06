@@ -19370,3 +19370,14 @@
 {"ts": 1788115317.0611703, "kind": "swarm_finished", "payload": {"goal": "Marktanalyse endlich abschließen und nutzen", "score": 0, "converged": false, "cycles": 2, "roles": {"planner": 1, "builder": 3, "critic": 1}, "evolved": true}}
 {"ts": 1788115317.0613742, "kind": "act_done", "payload": {"goal_title": "Marktanalyse endlich abschließen und nutzen", "score": 0, "converged": false}}
 {"ts": 1788115320.0146227, "kind": "issue_synced", "payload": {"issue": 251, "state": "open"}}
+{"ts": 1787510880.0, "key": "dream:202608231848:5", "value": "Updating the score predictor with few (predicted, actual) pairs produces noisy scores; a minimum sample size stabilizes learning.", "source": "dream"}
+{"ts": 1787510880.0, "key": "dream:202608231848:4", "value": "Variable model latency (12‑23 s) without adaptive timeouts caused stalled steps; a timeout with fallback improves robustness.", "source": "dream"}
+{"ts": 1787510880.0, "key": "dream:202608231848:3", "value": "Applying simulation revisions non‑atomically left residual risks, indicating the need for all‑or‑nothing revision application.", "source": "dream"}
+{"ts": 1787510880.0, "key": "dream:202608231848:2", "value": "Runtime AttributeError on MemoryStore.add_fact reveals a missing interface contract that caused failures undetected until execution.", "source": "dream"}
+{"ts": 1787510880.0, "key": "dream:202608231848:1", "value": "Insufficient swarm cycles and limited critic participation prevented convergence, yielding a low score despite an evolution winner.", "source": "dream"}
+{"ts": 1787511240.0, "key": "dream:202608231854:5", "value": "Automated contract and simulation‑verdict testing in CI catches regressions before deployment.", "source": "dream"}
+{"ts": 1787511240.0, "key": "dream:202608231854:4", "value": "Continuous monitoring of error patterns and resource usage (latency, prune activity) enables proactive throttling and alerts.", "source": "dream"}
+{"ts": 1787511240.0, "key": "dream:202608231854:3", "value": "Atomic application of changes followed by re‑verification eliminates residual risk accumulation.", "source": "dream"}
+{"ts": 1787511240.0, "key": "dream:202608231854:2", "value": "Convergence gating (minimum cycles or score threshold) reduces premature acceptance of suboptimal solutions.", "source": "dream"}
+{"ts": 1787511240.0, "key": "dream:202608231854:1", "value": "Early validation of inputs/outputs (e.g., interface contracts, minimum sample size) prevents unstable learning and score corruption.", "source": "dream"}
+{"ts": 1788115519.6345866, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

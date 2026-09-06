@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-06 18:44:29",
+ "stand": "2026-09-06 18:55:38",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -33,12 +33,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 5,
-   "erfolge": 4,
-   "quote": 0.8
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 5,
    "erfolge": 0,
@@ -61,6 +55,12 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 4,
+   "erfolge": 3,
+   "quote": 0.75
   },
   {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
@@ -370,6 +370,12 @@
   },
   {
    "tool": "schwarm-wissen-auffrischen-und-prüfen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "blinden-fleck-2-im-gedächtnis-erforschen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

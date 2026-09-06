@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11999 Fakten** · Stand 2026-09-06 18:46 UTC · aktualisiert bei jedem Herzschlag
+**11994 Fakten** · Stand 2026-09-06 18:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7106
+- **dream:** 7101
 - **swarm_artifact:** 2238
 - **last_swarm_critique:** 811
 - **anti_pattern:** 611
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260906185435:5:d6b81d`
+*06.09. 18:54 UTC · Quelle: dream*
+
+Upstream service failures (502 overload, 429 rate limits) are not rare edge cases but a recurring pattern that demands an automatic ProviderFallbackChain rather than manual intervention.
+
+### `dream:20260906185435:4:4d7b03`
+*06.09. 18:54 UTC · Quelle: dream*
+
+Pruning aggressiveness must protect knowledge tagged with 'risk', 'revision', or 'critic_feedback' for at least 3 cycles, as premature pruning of these facts causes recurring failures to be forgotten.
+
+### `dream:20260906185435:3:d248b9`
+*06.09. 18:54 UTC · Quelle: dream*
+
+Convergence criteria based on a single metric (e.g., abs_error == 0) are insufficient; a multi-factor gate requiring score >= 8, no critical risks, and critic sign-off is needed to prevent false convergence.
+
+### `dream:20260906185435:2:5f2840`
+*06.09. 18:54 UTC · Quelle: dream*
+
+Skill proposals accumulate as technical debt when no mandatory execution gate forces every proposal to be implemented and scored within one cycle, causing the systemic gap between 'many proposals lie fallow' and 'we need real skills'.
+
+### `dream:20260906185435:1:22782b`
+*06.09. 18:54 UTC · Quelle: dream*
+
+Provider reliability varies dramatically in practice: inclusionai/ling-3.0-flash-fin succeeded with 4.4s latency while nemotron hit 502 overload and gemma hit 429 rate limits, proving that empirical latency and error-rate tracking must drive routing decisions 
 
 ### `dream:20260906184348:5:afab71`
 *06.09. 18:43 UTC · Quelle: dream*
@@ -46071,56 +46096,6 @@ Missing method contracts (e.g., add_fact) between auto-generated benchmark code 
 *23.08. 18:54 UTC · Quelle: system*
 
 Extern-Quote in DRIVE: raus aus der Selbst-Schleife
-
-### `dream:202608231854:5`
-*23.08. 18:54 UTC · Quelle: dream*
-
-Automated contract and simulation‑verdict testing in CI catches regressions before deployment.
-
-### `dream:202608231854:4`
-*23.08. 18:54 UTC · Quelle: dream*
-
-Continuous monitoring of error patterns and resource usage (latency, prune activity) enables proactive throttling and alerts.
-
-### `dream:202608231854:3`
-*23.08. 18:54 UTC · Quelle: dream*
-
-Atomic application of changes followed by re‑verification eliminates residual risk accumulation.
-
-### `dream:202608231854:2`
-*23.08. 18:54 UTC · Quelle: dream*
-
-Convergence gating (minimum cycles or score threshold) reduces premature acceptance of suboptimal solutions.
-
-### `dream:202608231854:1`
-*23.08. 18:54 UTC · Quelle: dream*
-
-Early validation of inputs/outputs (e.g., interface contracts, minimum sample size) prevents unstable learning and score corruption.
-
-### `dream:202608231848:5`
-*23.08. 18:48 UTC · Quelle: dream*
-
-Updating the score predictor with few (predicted, actual) pairs produces noisy scores; a minimum sample size stabilizes learning.
-
-### `dream:202608231848:4`
-*23.08. 18:48 UTC · Quelle: dream*
-
-Variable model latency (12‑23 s) without adaptive timeouts caused stalled steps; a timeout with fallback improves robustness.
-
-### `dream:202608231848:3`
-*23.08. 18:48 UTC · Quelle: dream*
-
-Applying simulation revisions non‑atomically left residual risks, indicating the need for all‑or‑nothing revision application.
-
-### `dream:202608231848:2`
-*23.08. 18:48 UTC · Quelle: dream*
-
-Runtime AttributeError on MemoryStore.add_fact reveals a missing interface contract that caused failures undetected until execution.
-
-### `dream:202608231848:1`
-*23.08. 18:48 UTC · Quelle: dream*
-
-Insufficient swarm cycles and limited critic participation prevented convergence, yielding a low score despite an evolution winner.
 
 ### `last_swarm_critique`
 *23.08. 18:36 UTC · Quelle: critic*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:44 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 18:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -37,10 +37,15 @@
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten wirklich einsetzen *(wieder aufgegriffen: 4×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Upstream service failures (502 overload, 429 rate limits) are not rare edge cases but a recurring pattern that demands an automatic ProviderFallbackCh
+- Pruning aggressiveness must protect knowledge tagged with 'risk', 'revision', or 'critic_feedback' for at least 3 cycles, as premature pruning of thes
+- Convergence criteria based on a single metric (e.g., abs_error == 0) are insufficient; a multi-factor gate requiring score >= 8, no critical risks, an
+- Skill proposals accumulate as technical debt when no mandatory execution gate forces every proposal to be implemented and scored within one cycle, cau
+- Provider reliability varies dramatically in practice: inclusionai/ling-3.0-flash-fin succeeded with 4.4s latency while nemotron hit 502 overload and g
 - Aggressive pruning (63 events in one run) risks discarding useful historical patterns; pruning thresholds should be tuned to preserve cross-session si
 - Reflex-based recovery converges reliably but only when pre-configured rules exist, so reflex definitions must precede failure events.
 - Stale swarm data actively degrades decision quality and must be refreshed or discarded rather than left unused.
@@ -51,11 +56,6 @@
 - The persistent gap between skill proposals and implemented skills stems from the absence of a committed execution schedule with topological dependency
 - Stale swarm data actively blocks new collective knowledge formation, making periodic refresh a hard prerequisite rather than an optional maintenance t
 - Model reliability failures recur across consolidation cycles because root causes like rate-limit exhaustion and quota depletion are not addressed at t
-- Pruning events and facts during consolidation is necessary but insufficient without also pruning stale proposals whose underlying assumptions have alr
-- Rate-limit and server errors cluster in predictable patterns that are cacheable, making pre-emptive routing and quota-aware scheduling more efficient 
-- Swarm knowledge follows a predictable decay curve, meaning proactive scheduled refresh outperforms reactive recovery every time the system detects sta
-- External model failures (429/502/503) are the primary systemic constraint; internal self-diagnosis consistently passes, confirming resilience engineer
-- Pruning and self-diagnosis run cleanly, showing memory management works but doesn't address core reliability issues.
 
 ---
 
