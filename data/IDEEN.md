@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 03:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 03:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
@@ -36,11 +36,16 @@
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events but fails to preserve failure-pattern correlations needed for root-cause skill generation.
+- Swarm knowledge becomes stale without scheduled re-simulation against current models after each convergence cycle.
+- Reflex-driven error reduction converges locally but does not address systemic provider unreliability or skill validation gaps.
+- Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that never enter the registry.
+- Provider failures (502/429) cascade without real-time health scoring and automatic failover, causing latency spikes and task delays.
 - Stress spikes (>0.7) trigger ad-hoc goal trimming instead of a deterministic scheduler that caps iterations and prioritizes recovery goals.
 - Swarm knowledge grows stale because no post-convergence re-simulation overwrites old entries with fresh model feedback.
 - Failure patterns (model_fail, high latency) correlate with active goals/tools but are never mined for root-cause skills.
@@ -51,11 +56,6 @@
 - Latency for the same model varies wildly (15s to 33s), indicating infrastructure instability that no single-model strategy can absorb — a tiered, late
 - Every failure generates a skill proposal, but unvalidated proposals risk creating fragile solutions; a SkillValidationGate is needed before any propos
 - Model failures cluster into predictable categories (429 rate-limit, 502 upstream overload, empty responses) — each is retryable and should trigger aut
-- Reflex execution succeeds reliably when preconditions are met, but the absence of a mandatory pre-execution validation gate risks cascading failures f
-- Reactive staleness detection means swarm knowledge degrades before corrective action is triggered; proactive scheduled freshness scanning would preven
-- Different error classes (429 vs 502) require fundamentally different retry strategies — a one-size-fits-all backoff wastes time and compounds provider
-- The gap between generating skill proposals and actually implementing them is the primary bottleneck: many proposals accumulate without conversion to t
-- Provider failures (502 upstream overload, 429 rate limits) are systemic and recurring — without persistent per-provider health tracking, the system re
 
 ---
 

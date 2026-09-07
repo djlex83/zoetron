@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11726 Fakten** · Stand 2026-09-07 03:27 UTC · aktualisiert bei jedem Herzschlag
+**11724 Fakten** · Stand 2026-09-07 03:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6931
-- **swarm_artifact:** 2162
+- **swarm_artifact:** 2160
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907033552:5:44dab5`
+*07.09. 03:35 UTC · Quelle: dream*
+
+Pruning removes events but fails to preserve failure-pattern correlations needed for root-cause skill generation.
+
+### `dream:20260907033552:4:fe609f`
+*07.09. 03:35 UTC · Quelle: dream*
+
+Swarm knowledge becomes stale without scheduled re-simulation against current models after each convergence cycle.
+
+### `dream:20260907033552:3:74a11b`
+*07.09. 03:35 UTC · Quelle: dream*
+
+Reflex-driven error reduction converges locally but does not address systemic provider unreliability or skill validation gaps.
+
+### `dream:20260907033552:2:65727c`
+*07.09. 03:35 UTC · Quelle: dream*
+
+Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that never enter the registry.
+
+### `dream:20260907033552:1:24b7f1`
+*07.09. 03:35 UTC · Quelle: dream*
+
+Provider failures (502/429) cascade without real-time health scoring and automatic failover, causing latency spikes and task delays.
 
 ### `dream:20260907032519:5:18d149`
 *07.09. 03:25 UTC · Quelle: dream*
@@ -44796,31 +44821,6 @@ Skill proposals accumulate untested (50+ backlog) and the same model-health/fall
 *24.08. 03:34 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240332:5`
-*24.08. 03:32 UTC · Quelle: dream*
-
-The simulate->revise->execute pipeline (verdict 'revise', 4 revisions applied before any real run) is the highest-value quality gate observed and should precede every external deliverable.
-
-### `dream:202608240332:4`
-*24.08. 03:32 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they get implemented (5 proposed, 0 implemented this cycle), reproducing the 'Liegengebliebene Ideen' failure mode the drive goals already flag.
-
-### `dream:202608240332:3`
-*24.08. 03:32 UTC · Quelle: dream*
-
-A new swarm was started while stress=1.0 and max_iterations=1 (conserve budget), which structurally guarantees unfinished work piles up instead of completing.
-
-### `dream:202608240332:2`
-*24.08. 03:32 UTC · Quelle: dream*
-
-Effort is systematically underestimated by ~2x (predicted 3 vs actual 6 iterations for the football goal), so raw predictions need a persistent correction multiplier until abs_error drops below 1.
-
-### `dream:202608240332:1`
-*24.08. 03:32 UTC · Quelle: dream*
-
-Models returning HTTP 429 are reliably bypassed by immediate fallback to the last known-good model (nemotron-3-ultra), so retrying a rate-limited model within the same cycle only wastes latency.
 
 ### `last_swarm_goal`
 *24.08. 03:16 UTC · Quelle: system*

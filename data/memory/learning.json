@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 03:25:37",
+ "stand": "2026-09-07 03:36:51",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -153,6 +153,12 @@
    "quote": 1.0
   },
   {
+   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-schwarm-artefakte-aufräumen-un.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -262,12 +268,6 @@
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "traum-fähigkeiten-prüfen-und-nutzen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -429,8 +429,8 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.846,
- "simulationen_angewandt": 24,
+ "haende_quote": 0.847,
+ "simulationen_angewandt": 23,
  "swarm_scores": {
   "n": 25,
   "best": 9.0,
