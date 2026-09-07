@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:55 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm memory entries for goals and critiques become stale quickly; the system re-creates similar drive goals repeatedly instead of updating existing o
+- Metabolism budget (max_tasks=4, max_iterations=2) constrains parallel exploration, forcing sequential fallback attempts that increase total latency.
+- The skill-testing pipeline (simulation → tor) produces working artifacts despite intermediate tool failures, suggesting the orchestration layer is mor
+- Hand actions fail when they don't resolve absolute data paths via ZOETRON_DATA or sys.argv[1], succeeding only after explicit path handling.
+- Model reliability is highly inconsistent: nemotron-3-ultra fails with 502 upstream overload, gemma models hit 429 rate limits, while inclusionai/ling-
 - 75 skill proposals accumulate without a promotion funnel (upvotes, success metrics, owner, deadline) to convert them into tested missions.
 - Pruning discards causal context (experiment_id, parent_step_id, decision_context), making post-hoc debugging impossible.
 - Reflex paths bypass convergence gates (score≥8, delta<0.1 over 3 cycles, critic approval), allowing premature act_done.
@@ -51,11 +56,6 @@
 - Skill proposals consistently fail to convert into deployed abilities because there is no gated validation pipeline — proposals accumulate without sand
 - Swarm knowledge decays on a predictable timeline (~24h) and sits unused without scheduled refresh, creating a persistent gap between available collect
 - Provider failures are systemic rather than incidental — generic retries fail; structured fallback chains with circuit breakers and error-type classifi
-- Relative path handling is a systemic failure point: every tool invocation needs centralized absolute-path rewriting with fail-fast on missing ZOETRON_
-- Reflex actions lack output validation: successes are marked without verifying artifact existence, non-emptiness, or hash traceability, causing silent 
-- Swarm knowledge decays without nightly synthesis: inactive swarm data becomes stale within days, requiring automated dream-link analysis to generate t
-- Stress-aware planning must gate complexity budgets before each step, not after failures, using metabolism state to cap tasks and iterations proactivel
-- Provider-specific failure modes (Nvidia 502, Google 429) require targeted fallback chains rather than generic retries, with inclusionai/ling-3.0-flash
 
 ---
 

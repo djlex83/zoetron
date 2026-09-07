@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11906 Fakten** · Stand 2026-09-07 23:45 UTC · aktualisiert bei jedem Herzschlag
+**11905 Fakten** · Stand 2026-09-07 23:57 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7171
-- **swarm_artifact:** 2108
+- **swarm_artifact:** 2107
 - **last_swarm_critique:** 828
 - **anti_pattern:** 563
 - **last_swarm_goal:** 560
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907235442:5:db740a`
+*07.09. 23:54 UTC · Quelle: dream*
+
+Swarm memory entries for goals and critiques become stale quickly; the system re-creates similar drive goals repeatedly instead of updating existing ones.
+
+### `dream:20260907235442:4:3ad230`
+*07.09. 23:54 UTC · Quelle: dream*
+
+Metabolism budget (max_tasks=4, max_iterations=2) constrains parallel exploration, forcing sequential fallback attempts that increase total latency.
+
+### `dream:20260907235442:3:880dbf`
+*07.09. 23:54 UTC · Quelle: dream*
+
+The skill-testing pipeline (simulation → tor) produces working artifacts despite intermediate tool failures, suggesting the orchestration layer is more robust than individual tools.
+
+### `dream:20260907235442:2:cd0503`
+*07.09. 23:54 UTC · Quelle: dream*
+
+Hand actions fail when they don't resolve absolute data paths via ZOETRON_DATA or sys.argv[1], succeeding only after explicit path handling.
+
+### `dream:20260907235442:1:971113`
+*07.09. 23:54 UTC · Quelle: dream*
+
+Model reliability is highly inconsistent: nemotron-3-ultra fails with 502 upstream overload, gemma models hit 429 rate limits, while inclusionai/ling-3.0-flash-fin:free succeeds consistently.
 
 ### `dream:20260907234339:5:21e395`
 *07.09. 23:43 UTC · Quelle: dream*
@@ -45656,31 +45681,6 @@ score=3; issues=Artefakte sind unvollständig/abgeschnitten: Snippet 1 endet mit
 *24.08. 23:47 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260824234715:5:57ced8`
-*24.08. 23:47 UTC · Quelle: dream*
-
-prune_run entfernte 0 Fakten und 0 Events, während der Wächter parallel 44 Einträge aussortierte – es existieren zwei redundante Bereinigungsmechanismen mit unklarer Zuständigkeit.
-
-### `dream:20260824234715:4:9bc248`
-*24.08. 23:47 UTC · Quelle: dream*
-
-Die Skill-Proposals stapeln sich über mehrere Zyklen (mindestens 5 offen), ohne dass je eine in einem Schatten-A/B-Test erprobt wurde – Vorschläge ohne Testpipeline sind wertlose Metadaten.
-
-### `dream:20260824234715:3:4d02e3`
-*24.08. 23:47 UTC · Quelle: dream*
-
-Vier von fünf Modellanfragen schlugen mit 429/502 fehl, während nur ein Fallback (openrouter/free) erfolgreich war – das System hat keine funktionierende Ausweichstrategie bei Rate-Limits.
-
-### `dream:20260824234715:2:babd5e`
-*24.08. 23:47 UTC · Quelle: dream*
-
-Der wiederholte Abbruch 'MemoryStore' object has no attribute 'add_fact' zeigt einen Schnittstellenfehler zwischen hands-execute und dem Speichermodul, der jede Handlungsphase mit exit 1 sterben lässt.
-
-### `dream:20260824234715:1:15a1b9`
-*24.08. 23:47 UTC · Quelle: dream*
-
-Beide Fußball-Varianten lagen unter der 50,2%-Basislinie (-2,35 pp und -0,31 pp), wobei die einfachere Variante zoetron_3e0cf6f9a6 der komplexeren zoetron_fa2ee4339b klar überlegen war – Komplexität verschlechtert hier die Trefferquote.
 
 ### `last_swarm_critique`
 *24.08. 23:31 UTC · Quelle: critic*
