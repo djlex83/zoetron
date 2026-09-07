@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 05:11:41",
+ "stand": "2026-09-07 05:22:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -81,12 +81,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
    "laeufe": 3,
    "erfolge": 3,
@@ -130,6 +124,12 @@
   },
   {
    "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -418,6 +418,12 @@
   },
   {
    "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "modell-fehler-deutlich-reduzieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

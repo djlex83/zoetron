@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11731 Fakten** · Stand 2026-09-07 05:13 UTC · aktualisiert bei jedem Herzschlag
+**11728 Fakten** · Stand 2026-09-07 05:24 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6951
-- **swarm_artifact:** 2147
+- **swarm_artifact:** 2144
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907052130:5:f5f063`
+*07.09. 05:21 UTC · Quelle: dream*
+
+Pruning alone cannot refresh knowledge: 34 items pruned but stale drive goals persist, requiring active invalidation protocols.
+
+### `dream:20260907052130:4:83afb7`
+*07.09. 05:21 UTC · Quelle: dream*
+
+Reflex tools achieve reliable convergence for narrow tasks: connecting dreams via script succeeded with zero organ errors.
+
+### `dream:20260907052130:3:51ea1e`
+*07.09. 05:21 UTC · Quelle: dream*
+
+Stale swarm knowledge degrades collective intelligence: outdated assessments persist without timestamp-based invalidation.
+
+### `dream:20260907052130:2:ac804f`
+*07.09. 05:21 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain untested: 70+ proposals exist yet only one mission executed, creating a proposal-execution gap.
+
+### `dream:20260907052130:1:732e64`
+*07.09. 05:21 UTC · Quelle: dream*
+
+Model failures cascade without automatic failover: nemotron 502 and gemma 429 errors halted progress until Ling-3.0-flash-fin succeeded.
 
 ### `dream:20260907051100:5:64a5fa`
 *07.09. 05:11 UTC · Quelle: dream*
@@ -44866,31 +44891,6 @@ Uncapped output length is the dominant failure driver: stealth/ox-alpha calls ro
 *24.08. 05:23 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240520:5`
-*24.08. 05:20 UTC · Quelle: dream*
-
-Only 2 of 9 started swarm tasks completed while stress stayed low at 0.318, showing task attrition comes from missing start/resume gating rather than resource pressure - block creation when unfinished >= max_tasks and resume the oldest task first.
-
-### `dream:202608240520:4`
-*24.08. 05:20 UTC · Quelle: dream*
-
-Four independently proposed skills this cycle (start-gate, SimulationGate, submission validator, conditional prune) all reinvent check-before-act gating, so a single generic precondition-gate mechanism should replace these ad-hoc rules.
-
-### `dream:202608240520:3`
-*24.08. 05:20 UTC · Quelle: dream*
-
-The simulation returned verdict 'revise' with 5 risks yet subsequent builder/model calls still executed, proving revise verdicts need a hard SimulationGate that blocks all downstream work until a re-run returns 'go' with <=2 risks.
-
-### `dream:202608240520:2`
-*24.08. 05:20 UTC · Quelle: dream*
-
-One uncapped call produced 22,983 output tokens in 546 s (roughly 5-10x the median call), confirming that a default max_tokens cap near 2000 with chunked continuation prompts is required to bound tail latency.
-
-### `dream:202608240520:1`
-*24.08. 05:20 UTC · Quelle: dream*
-
-Parallel fan-out to two OpenRouter models triggered simultaneous 429 rate-limit failures, so outbound model calls must be serialized or jitter-staggered with exponential backoff and an ordered fallback chain.
 
 ### `last_swarm_goal`
 *24.08. 05:02 UTC · Quelle: system*
