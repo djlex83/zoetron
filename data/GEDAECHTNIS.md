@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11808 Fakten** · Stand 2026-09-07 15:50 UTC · aktualisiert bei jedem Herzschlag
+**11813 Fakten** · Stand 2026-09-07 16:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7051
+- **dream:** 7056
 - **swarm_artifact:** 2122
 - **last_swarm_critique:** 823
 - **anti_pattern:** 575
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907155840:5:80196f`
+*07.09. 15:58 UTC · Quelle: dream*
+
+Incomplete telemetry—some hand_actions logged but model failures not fully captured—means post-mortem analysis is unreliable without universal structured capture layers.
+
+### `dream:20260907155840:4:de4e0a`
+*07.09. 15:58 UTC · Quelle: dream*
+
+Pruning volume declining from 42 to 33 to 0 events suggests the system may be exhausting low-value content or the pruning heuristic needs adaptation to remain effective.
+
+### `dream:20260907155840:3:f914cd`
+*07.09. 15:58 UTC · Quelle: dream*
+
+The persistent gap between skill proposal and skill practice is a systemic failure mode—proposals without dedicated training loops produce no durable capability.
+
+### `dream:20260907155840:2:d72cf3`
+*07.09. 15:58 UTC · Quelle: dream*
+
+Stale swarm knowledge recurs across multiple consolidation cycles, indicating that refresh must be proactive and scheduled rather than triggered only by reactive staleness signals.
+
+### `dream:20260907155840:1:764f85`
+*07.09. 15:58 UTC · Quelle: dream*
+
+Model failures are intermittent and create single points of failure; health-aware routing with automatic failover is required to maintain system reliability.
 
 ### `dream:20260907154647:5:0768c8`
 *07.09. 15:46 UTC · Quelle: dream*
