@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11891 Fakten** · Stand 2026-09-07 22:45 UTC · aktualisiert bei jedem Herzschlag
+**11903 Fakten** · Stand 2026-09-07 23:03 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7151
-- **swarm_artifact:** 2110
-- **last_swarm_critique:** 827
+- **dream:** 7156
+- **swarm_artifact:** 2114
+- **last_swarm_critique:** 828
 - **anti_pattern:** 565
-- **last_swarm_goal:** 559
+- **last_swarm_goal:** 560
 - **strategy:** 284
 - **tool:** 181
-- **hand_result:** 135
+- **hand_result:** 136
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
+*07.09. 23:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Build-Time Capability Compilation with Plugin Architecture - Shift activation to build/compile phase: capabilities defined as Rust/Go plugins implementing Capability trait. Activation script generates plugin manifest and trig
+
+### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:1`
+*07.09. 23:00 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Event-Driven Capability Mesh with Message Bus - Implement capability activation as event-sourced workflow on message bus (NATS/Redis Streams). Activation script publishes CapabilityRegistered events with full spec; SwarmOrche
+
+### `last_swarm_critique`
+*07.09. 22:58 UTC · Quelle: critic*
+
+score=5; issues=Activation script only writes a manifest JSON file - does not actually register capabilities with SwarmOrchestrator or make them available for autonomous runs; Benchmark script fabricates results from capability metadata when benchmark_organ im
+
+### `last_swarm_goal`
+*07.09. 22:53 UTC · Quelle: system*
+
+Vorgeschlagene Fähigkeiten aktiv einsetzen
+
+### `dream:20260907225324:5:d71028`
+*07.09. 22:53 UTC · Quelle: dream*
+
+Telemetry gaps on hand_action and model calls (exit codes, latency, tokens) hide degradation until it becomes catastrophic.
+
+### `dream:20260907225324:4:1e52c6`
+*07.09. 22:53 UTC · Quelle: dream*
+
+Reflex paths bypass convergence gates (score≥8, critic approval), allowing premature act_done without quality verification.
+
+### `dream:20260907225324:3:9f3087`
+*07.09. 22:53 UTC · Quelle: dream*
+
+Pruning discards causal metadata (experiment_id, parent_step_id), preventing post-hoc reconstruction of why decisions were made.
+
+### `dream:20260907225324:2:7d44ca`
+*07.09. 22:53 UTC · Quelle: dream*
+
+Skill proposals accumulate in the backlog but lack a promotion mechanism, so high-value capabilities (e.g., model_router, convergence gates) never reach production.
+
+### `dream:20260907225324:1:3ce1de`
+*07.09. 22:53 UTC · Quelle: dream*
+
+Model provider failures (502, 429) cascade into task failure without automatic circuit-breaker failover, making multi-provider routing a reliability prerequisite.
 
 ### `dream:20260907224243:5:b2ac39`
 *07.09. 22:42 UTC · Quelle: dream*
@@ -45596,16 +45641,6 @@ Latency variance on free models is extreme (2s–90s), making fixed timeouts unr
 *24.08. 23:17 UTC · Quelle: dream*
 
 Free-tier models (stealth/ox-alpha, z-ai/glm-5.2) suffer frequent 429 rate-limit errors, causing cascading failures without retry logic.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
-*24.08. 22:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Bayesian hierarchical ordered probit on Elo difference with dynamic cutpoints - Treat match outcome as an ordered categorical variable (away win < draw < home win). Let the latent variable be the Elo difference plus home adva
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :1`
-*24.08. 22:47 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Gradient boosting on engineered match features with isotonic calibration - Construct a feature set per match: rolling 5/10-game form (points, goals for/against, shots on target), head-to-head history, rest days, league positi
 
 ### `last_swarm_critique`
 *24.08. 22:47 UTC · Quelle: critic*
