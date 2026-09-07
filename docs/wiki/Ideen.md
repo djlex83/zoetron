@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 12:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 12:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions lack structured failure capture (stderr, timeout, exit code), so when a subprocess fails the system has no diagnostic data to determine r
+- Model latency spans orders of magnitude (0.29s to 47.9s), so naive round-robin routing wastes time and amplifies timeout cascades across dependent ste
+- Pruning events without causality IDs destroys the breadcrumb trail needed to reconstruct why a sequence of failures occurred, making post-mortem analy
+- Without a convergence gate requiring sustained score thresholds over multiple cycles, the system prematurely declares tasks complete and skips deeper 
+- Free-tier LLM APIs fail unpredictably (429 rate limits, 502 upstream overload) and any agent pipeline must treat provider failure as the default case,
 - Experience logs grow unbounded; routine model_ok events drown signal—only >2σ deviations carry actionable information.
 - Critic feedback contains specific code-level issues (thread timeouts, etc.) but these are not automatically extracted as fitness constraints for evolu
 - Swarm convergence stalls when score delta <0.5 across cycles, yet the system continues prompt revisions instead of switching to evolutionary code sear
@@ -51,11 +56,6 @@
 - Hand actions fail silently (exit=1, gelesen=0) without stderr/stdout capture, making debugging impossible.
 - Evolution/swarm cycles improve artifact quality (6→8 scores) but converge slowly; two cycles insufficient for complex goals.
 - Model endpoints fail frequently (502 upstream, 429 rate limits) requiring a robust fallback chain with health-aware routing.
-- Swarm knowledge freshness checks are proposed as mandatory gates but not yet enforced, risking stale context in high-stress cycles.
-- Skill proposals accumulate (5 proposed) but deployment verification is absent, leaving execution gap unmeasured.
-- Simulation-driven revision loops (5 revisions) successfully recover from failure but consume 180s+ latency per cycle.
-- Reflex tools fail silently when metabolism budget restricts iterations to 1, causing zero file operations despite valid intent.
-- Model provider overload (429/502 errors) cascades into system-wide stress (0.936) triggering conserve mode that blocks reflex execution.
 
 ---
 

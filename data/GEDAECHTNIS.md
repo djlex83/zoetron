@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11805 Fakten** · Stand 2026-09-07 12:28 UTC · aktualisiert bei jedem Herzschlag
+**11805 Fakten** · Stand 2026-09-07 12:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7001
-- **swarm_artifact:** 2148
+- **dream:** 7006
+- **swarm_artifact:** 2146
 - **last_swarm_critique:** 823
-- **anti_pattern:** 589
+- **anti_pattern:** 587
 - **last_swarm_goal:** 555
-- **strategy:** 296
+- **strategy:** 295
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907123616:5:1e812d`
+*07.09. 12:36 UTC · Quelle: dream*
+
+Hand actions lack structured failure capture (stderr, timeout, exit code), so when a subprocess fails the system has no diagnostic data to determine root cause.
+
+### `dream:20260907123616:4:7c123c`
+*07.09. 12:36 UTC · Quelle: dream*
+
+Model latency spans orders of magnitude (0.29s to 47.9s), so naive round-robin routing wastes time and amplifies timeout cascades across dependent steps.
+
+### `dream:20260907123616:3:58f283`
+*07.09. 12:36 UTC · Quelle: dream*
+
+Pruning events without causality IDs destroys the breadcrumb trail needed to reconstruct why a sequence of failures occurred, making post-mortem analysis impossible.
+
+### `dream:20260907123616:2:6695e6`
+*07.09. 12:36 UTC · Quelle: dream*
+
+Without a convergence gate requiring sustained score thresholds over multiple cycles, the system prematurely declares tasks complete and skips deeper validation.
+
+### `dream:20260907123616:1:e792b7`
+*07.09. 12:36 UTC · Quelle: dream*
+
+Free-tier LLM APIs fail unpredictably (429 rate limits, 502 upstream overload) and any agent pipeline must treat provider failure as the default case, not an exception.
 
 ### `anti_pattern:Previous attempt scored 7/10. Goal: Modelle zuverlässiger ma:2`
 *07.09. 12:21 UTC · Quelle: evolution*
@@ -45076,16 +45101,6 @@ Skill proposals accumulate faster than they are tested (45 pending), so the bott
 *24.08. 12:44 UTC · Quelle: dream*
 
 Nearly half of all model failures trace to unmanaged free-tier rate limits and oversized single calls (400s+ latencies), not model quality itself.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
-*24.08. 12:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Marktunabhängige Wahrscheinlichkeitskalibrierung via Dixon-Coles-Poisson-Modell - Komplett anderer methodischer Zugang: statt Klassifikation direkt ein goals-basiertes Poisson-Modell. Angriffs-/Abwehrstärken jedes Teams werde
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :0`
-*24.08. 12:13 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Vollständige, lauffähige Elo-Pipeline mit Walk-Forward-Validierung - Statt abgebrochenen Code zu reparieren, wird ein komplettes, atomar ausführbares Skript erzeugt: (1) Datenaufbereitung aus einer CSV (Spalten: date, home, a
 
 ### `last_swarm_critique`
 *24.08. 12:12 UTC · Quelle: critic*
