@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 23:23:16",
+ "stand": "2026-09-07 23:33:24",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 11,
-   "erfolge": 11,
+   "laeufe": 10,
+   "erfolge": 10,
    "quote": 1.0
   },
   {
@@ -70,6 +70,12 @@
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
@@ -136,12 +142,6 @@
   },
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0

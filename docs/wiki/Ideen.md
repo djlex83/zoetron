@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -13,34 +13,39 @@
 - ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 6×)*
 - ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 6×)*
 - StalenessDetector: proactively scan swarm data age on a scheduled basis (e.g., hourly), emitting drive_goal ev *(hatte die Idee 5×)*
-- Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backof *(hatte die Idee 4×)*
+- Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 5×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
 - Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
-- Build skill_validation_pipeline that sandboxes each proposal with static analysis and integration tests before *(hatte die Idee 4×)*
 - Deploy swarm_refresh_scheduler that triggers new feedback collection when last critique older than 24 hours. *(hatte die Idee 4×)*
 - Enforce absolute_path_guard middleware on all file tools with canonical ZOETRON_DATA rewriting. *(hatte die Idee 4×)*
 - Add metabolic_gatekeeper to goal_selector reading metabolism_check.state and budget.max_iterations with backof *(hatte die Idee 4×)*
+- Enforce convergence gates on ALL paths including reflex: require score≥8, score_delta<0.1 over 3 cycles, and e *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 6×)*
-- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 5×)*
+- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-driven exploration (verbundene-traeume-nach-neuen-fuehigkeit.py) converges reliably in reflex mode, suggesting that autonomous reflex loops out
+- Self-diagnosis executed on a clean provider breaks the bootstrap dependency where failed providers cannot analyze their own failures, making it a prov
+- Skill proposals consistently fail to convert into deployed abilities because there is no gated validation pipeline — proposals accumulate without sand
+- Swarm knowledge decays on a predictable timeline (~24h) and sits unused without scheduled refresh, creating a persistent gap between available collect
+- Provider failures are systemic rather than incidental — generic retries fail; structured fallback chains with circuit breakers and error-type classifi
 - Relative path handling is a systemic failure point: every tool invocation needs centralized absolute-path rewriting with fail-fast on missing ZOETRON_
 - Reflex actions lack output validation: successes are marked without verifying artifact existence, non-emptiness, or hash traceability, causing silent 
 - Swarm knowledge decays without nightly synthesis: inactive swarm data becomes stale within days, requiring automated dream-link analysis to generate t
@@ -51,11 +56,6 @@
 - Simulated skills never reach production because no automated A/B gate validates them against live metrics before promotion.
 - Swarm knowledge decays within hours without a heartbeat mechanism that forces fresh goal-state and critique propagation.
 - Model provider instability (502/429 errors) cascades into task failures unless automatic fallback with health scoring is baked into every LLM call.
-- Telemetry gaps on hand_action and model calls (exit codes, latency, tokens) hide degradation until it becomes catastrophic.
-- Reflex paths bypass convergence gates (score≥8, critic approval), allowing premature act_done without quality verification.
-- Pruning discards causal metadata (experiment_id, parent_step_id), preventing post-hoc reconstruction of why decisions were made.
-- Skill proposals accumulate in the backlog but lack a promotion mechanism, so high-value capabilities (e.g., model_router, convergence gates) never rea
-- Model provider failures (502, 429) cascade into task failure without automatic circuit-breaker failover, making multi-provider routing a reliability p
 
 ---
 

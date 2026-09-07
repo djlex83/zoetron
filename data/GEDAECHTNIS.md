@@ -1,20 +1,45 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11906 Fakten** · Stand 2026-09-07 23:25 UTC · aktualisiert bei jedem Herzschlag
+**11901 Fakten** · Stand 2026-09-07 23:35 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7161
-- **swarm_artifact:** 2114
+- **dream:** 7166
+- **swarm_artifact:** 2108
 - **last_swarm_critique:** 828
-- **anti_pattern:** 565
+- **anti_pattern:** 563
 - **last_swarm_goal:** 560
-- **strategy:** 284
+- **strategy:** 283
 - **tool:** 181
 - **hand_result:** 136
 - **aktuell_organfehler:** 45
-- **aktuell_fussball_messlatte:** 31
+- **aktuell_fussball_messlatte:** 30
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907233310:5:5ff871`
+*07.09. 23:33 UTC · Quelle: dream*
+
+Reflex-driven exploration (verbundene-traeume-nach-neuen-fuehigkeit.py) converges reliably in reflex mode, suggesting that autonomous reflex loops outperform manually-set goals for skill discovery.
+
+### `dream:20260907233310:4:bd7f04`
+*07.09. 23:33 UTC · Quelle: dream*
+
+Self-diagnosis executed on a clean provider breaks the bootstrap dependency where failed providers cannot analyze their own failures, making it a proven reusable procedure for root-cause analysis.
+
+### `dream:20260907233310:3:2f5066`
+*07.09. 23:33 UTC · Quelle: dream*
+
+Skill proposals consistently fail to convert into deployed abilities because there is no gated validation pipeline — proposals accumulate without sandboxing, testing, or registry promotion.
+
+### `dream:20260907233310:2:d4fae6`
+*07.09. 23:33 UTC · Quelle: dream*
+
+Swarm knowledge decays on a predictable timeline (~24h) and sits unused without scheduled refresh, creating a persistent gap between available collective intelligence and actual decision quality.
+
+### `dream:20260907233310:1:a599ac`
+*07.09. 23:33 UTC · Quelle: dream*
+
+Provider failures are systemic rather than incidental — generic retries fail; structured fallback chains with circuit breakers and error-type classification are required to achieve reliable model routing.
 
 ### `dream:20260907232245:5:7a25bb`
 *07.09. 23:22 UTC · Quelle: dream*
@@ -45631,21 +45656,6 @@ Der wiederholte Abbruch 'MemoryStore' object has no attribute 'add_fact' zeigt e
 *24.08. 23:47 UTC · Quelle: dream*
 
 Beide Fußball-Varianten lagen unter der 50,2%-Basislinie (-2,35 pp und -0,31 pp), wobei die einfachere Variante zoetron_3e0cf6f9a6 der komplexeren zoetron_fa2ee4339b klar überlegen war – Komplexität verschlechtert hier die Trefferquote.
-
-### `aktuell_fussball_messlatte`
-*24.08. 23:33 UTC · Quelle: bewerte.py*
-
-Fußball ohne Quoten: senke den LOG-LOSS. Basislinie 1.0073, bester eigener 1.0098 - fast gleichauf. Treffer: Basislinie 50.18 %, beste eigene 50.08 %. Buchmacher 51.42 % / 0.9921. Verlauf pp zur Basislinie: -0.45 -2.35 -0.31 -0.12 -25.95 -0.19. Der Log-Loss is
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
-*24.08. 23:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Ensemble-of-simple-baselines with inner cross-validation inside the training per - Instead of one tuned model, build an ensemble of deliberately diverse, individually weak predictors: (a) an Elo rating system with standard K-
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :0`
-*24.08. 23:32 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Zero-tuning discipline: fixed-hyperparameter model with strict chronological val - Eliminate every source of leakage by construction instead of by promise. Use a single, pre-registered pipeline whose hyperparameters are NOT t
 
 ### `last_swarm_critique`
 *24.08. 23:31 UTC · Quelle: critic*
