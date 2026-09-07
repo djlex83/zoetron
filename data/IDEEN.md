@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 08:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 08:57 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,9 +25,9 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Zero organ errors across both consolidation cycles confirm structural health; all observed problems are operational and addressable through procedural
+- Model latency for the same model varies dramatically (57s to 163.8s), revealing external load factors that require circuit-breaker and failover handli
+- Stale data accumulation accelerates over time (27 vs 76 events pruned across cycles), indicating pruning frequency must scale with system age and acti
+- The persistent gap between skill proposals and their actual deployment is the primary systemic failure mode, not individual model errors.
+- Reflex-driven convergence reliably succeeds when the correct tool is matched to the stated goal, making reflex-to-goal mapping the most dependable pro
 - Pruning removes facts/events aggressively (10+41, 8+27) without preserving failure-pattern metadata needed for root-cause learning.
 - Reflex executions succeed (ok: true) but lack preflight validation, risking silent failures when scripts, paths, or env vars drift.
 - Swarm knowledge staleness is detected only after quality degrades, not proactively, leading to reactive 'refresh' goals instead of scheduled maintenan
@@ -51,11 +56,6 @@
 - Pruning operations destroy failure context needed for root-cause analysis; the last 30 failure events with goal, tool, and input must be snapshotted b
 - Convergence declarations are invalid without a non-null score and a positive delta from the previous cycle; null scores mask stagnation.
 - Rate-limited models (429 errors) must be classified as infrastructure failures and routed to fallback models immediately instead of being retried.
-- Simulation revision gates (5 risks → 3 applied) effectively catch deployment blockers but are not yet mandatory.
-- Evolutionary search improves variant scores (7→9) but swarm convergence fails without stricter critic gates or more cycles.
-- Calibration underestimates actual difficulty by approximately 40% (predicted 5 vs actual 7), requiring a systematic correction factor.
-- Code duplication across generated modules is the dominant quality defect, consistently flagged by critics and limiting score improvements.
-- Free-tier models on OpenRouter suffer frequent 429 rate limits and 502 upstream errors, making a single-model strategy unreliable.
 
 ---
 

@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11736 Fakten** · Stand 2026-09-07 08:48 UTC · aktualisiert bei jedem Herzschlag
+**11740 Fakten** · Stand 2026-09-07 08:59 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6971
-- **swarm_artifact:** 2132
+- **dream:** 6976
+- **swarm_artifact:** 2131
 - **last_swarm_critique:** 819
 - **anti_pattern:** 581
 - **last_swarm_goal:** 551
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907085631:5:015976`
+*07.09. 08:56 UTC · Quelle: dream*
+
+Zero organ errors across both consolidation cycles confirm structural health; all observed problems are operational and addressable through procedural fixes.
+
+### `dream:20260907085631:4:43e852`
+*07.09. 08:56 UTC · Quelle: dream*
+
+Model latency for the same model varies dramatically (57s to 163.8s), revealing external load factors that require circuit-breaker and failover handling.
+
+### `dream:20260907085631:3:0c419a`
+*07.09. 08:56 UTC · Quelle: dream*
+
+Stale data accumulation accelerates over time (27 vs 76 events pruned across cycles), indicating pruning frequency must scale with system age and activity volume.
+
+### `dream:20260907085631:2:cef9f2`
+*07.09. 08:56 UTC · Quelle: dream*
+
+The persistent gap between skill proposals and their actual deployment is the primary systemic failure mode, not individual model errors.
+
+### `dream:20260907085631:1:59b55c`
+*07.09. 08:56 UTC · Quelle: dream*
+
+Reflex-driven convergence reliably succeeds when the correct tool is matched to the stated goal, making reflex-to-goal mapping the most dependable problem-solving procedure.
 
 ### `dream:20260907084545:5:8b10c9`
 *07.09. 08:45 UTC · Quelle: dream*
