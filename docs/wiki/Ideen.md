@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 01:34 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 01:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,8 +31,8 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Provider diversity (OpenRouter + inclusionAI + NVIDIA) provides resilience, but without a persistent reliability score, the system cannot route intell
+- Stale swarm data is a recurring trigger for new goals, indicating the system lacks proactive staleness detection and instead relies on reactive signal
+- Reflex-based diagnosis (häufige-modellfehler-besser-verstehen.py) converged successfully, proving that structured self-diagnosis works, but only after
+- The system reliably generates high-quality skill proposals (ProviderReliabilityIndex, ReflexPreflightGate, etc.) but the persistent gap between propos
+- 429 rate-limit errors and 502 upstream-overload errors are two distinct failure classes requiring different mitigation strategies (exponential backoff
 - High stress degrades scheduling reliability, so iteration limits and goal prioritization must adapt dynamically to measured stress levels.
 - Failure patterns recur when timestamps are not correlated with active goals and tools, meaning root-cause mining must be periodic rather than ad-hoc.
 - Skill proposals that skip execution-and-scoring validation accumulate as dead weight, so a hard one-cycle gate prevents registry bloat.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate across cycles but reflex tools that should implement them fail (exit 0, ok: false), creating a proposal-execution gap.
 - Model error rate of 34% (24/70) with latency variance 9-26s makes nemotron-3-ultra unreliable as sole provider without fallback chain.
 - Relative path inputs cause silent tool failures because no canonicalization to ZOETRON_DATA/env/argv[1] occurs before execution.
-- Latency variance (2.9s vs 11s) across models violates implicit SLAs; no budget-aware routing exists to protect time-critical pipelines.
-- Swarm knowledge remains stale despite refresh signals; automatic diff-and-patch sync is missing, leaving the system learning from outdated data.
-- Skill proposals accumulate but rarely execute — the system lacks a 'proposal-to-implementation' gate with accountability.
-- Reflex actions reliably converge on concrete tasks (swarm update, skill conversion) while higher-level goals stall without executable artifacts.
-- Model failures cluster around provider overload (502) and rate limits (429), indicating missing circuit-breaker and fallback logic.
 
 ---
 

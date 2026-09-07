@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 01:34:44",
+ "stand": "2026-09-07 01:45:07",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -415,14 +415,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ver.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.842,
+ "haende_quote": 0.841,
  "simulationen_angewandt": 25,
  "swarm_scores": {
-  "n": 26,
+  "n": 25,
   "best": 9.0,
-  "schnitt": 5.88
+  "schnitt": 5.76
  },
  "score_nach_ziel_typ": {
   "analyse": {

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11722 Fakten** · Stand 2026-09-07 01:36 UTC · aktualisiert bei jedem Herzschlag
+**11723 Fakten** · Stand 2026-09-07 01:47 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6921
-- **swarm_artifact:** 2171
+- **dream:** 6926
+- **swarm_artifact:** 2170
 - **last_swarm_critique:** 816
-- **anti_pattern:** 585
+- **anti_pattern:** 583
 - **last_swarm_goal:** 548
-- **strategy:** 294
+- **strategy:** 293
 - **tool:** 175
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907014409:5:53a09a`
+*07.09. 01:44 UTC · Quelle: dream*
+
+Provider diversity (OpenRouter + inclusionAI + NVIDIA) provides resilience, but without a persistent reliability score, the system cannot route intelligently when multiple providers are simultaneously degraded.
+
+### `dream:20260907014409:4:0a57a0`
+*07.09. 01:44 UTC · Quelle: dream*
+
+Stale swarm data is a recurring trigger for new goals, indicating the system lacks proactive staleness detection and instead relies on reactive signal-driven goal generation.
+
+### `dream:20260907014409:3:484723`
+*07.09. 01:44 UTC · Quelle: dream*
+
+Reflex-based diagnosis (häufige-modellfehler-besser-verstehen.py) converged successfully, proving that structured self-diagnosis works, but only after the failure already occurred — reactive, not preventive.
+
+### `dream:20260907014409:2:3b204a`
+*07.09. 01:44 UTC · Quelle: dream*
+
+The system reliably generates high-quality skill proposals (ProviderReliabilityIndex, ReflexPreflightGate, etc.) but the persistent gap between proposal and deployed implementation is itself a root cause of repeated model failures.
+
+### `dream:20260907014409:1:f75f38`
+*07.09. 01:44 UTC · Quelle: dream*
+
+429 rate-limit errors and 502 upstream-overload errors are two distinct failure classes requiring different mitigation strategies (exponential backoff vs. provider fallback), and both recurred across multiple providers in this session.
 
 ### `dream:20260907013424:5:337f2e`
 *07.09. 01:34 UTC · Quelle: dream*
@@ -44786,16 +44811,6 @@ Swarm fails to converge (score 2/10) despite evolution because critic:builder ra
 *24.08. 01:50 UTC · Quelle: dream*
 
 Model latency variance (7.5–52s) on the same free tier causes unpredictable swarm cycle times and timeout cascades.
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fußball: erste eigene Ei:2`
-*24.08. 01:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): blind-iterative-probing - Without assuming any structure, create a series of increasingly complete probe submissions to extract requirements from bewerte.py's error messages. Start with an empty file, run bewerte.py, capture
-
-### `anti_pattern:Previous attempt scored 1/10. Goal: Fußball: erste eigene Ei:1`
-*24.08. 01:36 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): reverse-engineering-from-examples - Search for any example submissions, test files, or documentation in the workspace: run 'find /workspace/fussball -type f -name "*.py" -o -name "*.txt" -o -name "*.md" | xargs grep -l . 2>/d
 
 ### `last_swarm_critique`
 *24.08. 01:36 UTC · Quelle: critic*
