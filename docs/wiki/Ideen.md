@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,8 +29,8 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex execution succeeds reliably when preconditions are met, but the absence of a mandatory pre-execution validation gate risks cascading failures f
+- Reactive staleness detection means swarm knowledge degrades before corrective action is triggered; proactive scheduled freshness scanning would preven
+- Different error classes (429 vs 502) require fundamentally different retry strategies — a one-size-fits-all backoff wastes time and compounds provider
+- The gap between generating skill proposals and actually implementing them is the primary bottleneck: many proposals accumulate without conversion to t
+- Provider failures (502 upstream overload, 429 rate limits) are systemic and recurring — without persistent per-provider health tracking, the system re
 - Stress-aware scheduling is proposed but not yet implemented; current loops run fixed iterations regardless of observed failure density.
 - Swarm-knowledge staleness triggers explicit drive goals, yet the only reflex action is a periodic refresh without fresh critique simulation.
 - Aggressive pruning (63 events in first run) risks discarding failure-pattern evidence needed for root-cause mining.
@@ -51,11 +56,6 @@
 - Swarm convergence fails when critic feedback targets artifact gaps but builder iterations don't close them.
 - Calibration error of 100% (predicted 8 vs actual 4) reveals systematic overconfidence in planner estimates.
 - Model fallback chains must be pre-configured and health-scored, not improvised during failures.
-- Reflex tool returned false negative; only hand-action execution (exit 0, 419 lines running) confirmed true artifact viability.
-- Evolutionary iteration with critic feedback jumped artifact quality from 4/10 to 9/10 in a single generation.
-- Self-calibration is severely miscalibrated (predicted 8 vs actual 4), indicating need for explicit calibration tracking per model/task.
-- Simulation gate caught 5 risks and forced 5 revisions before execution, preventing deployment of a mere 'gap auditor' artifact.
-- Free-tier models (Nemotron, Gemma) exhibit high failure rates (502/429) while inclusionai/ling-3.0-flash-fin delivers consistent low-latency success.
 
 ---
 

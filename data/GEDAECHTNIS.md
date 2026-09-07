@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11723 Fakten** · Stand 2026-09-07 02:37 UTC · aktualisiert bei jedem Herzschlag
+**11721 Fakten** · Stand 2026-09-07 02:47 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6931
-- **swarm_artifact:** 2165
+- **swarm_artifact:** 2163
 - **last_swarm_critique:** 816
 - **anti_pattern:** 583
 - **last_swarm_goal:** 548
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907024510:5:369621`
+*07.09. 02:45 UTC · Quelle: dream*
+
+Reflex execution succeeds reliably when preconditions are met, but the absence of a mandatory pre-execution validation gate risks cascading failures from missing scripts, paths, or dependencies.
+
+### `dream:20260907024510:4:fd942b`
+*07.09. 02:45 UTC · Quelle: dream*
+
+Reactive staleness detection means swarm knowledge degrades before corrective action is triggered; proactive scheduled freshness scanning would prevent knowledge obsolescence.
+
+### `dream:20260907024510:3:5ea25e`
+*07.09. 02:45 UTC · Quelle: dream*
+
+Different error classes (429 vs 502) require fundamentally different retry strategies — a one-size-fits-all backoff wastes time and compounds provider degradation.
+
+### `dream:20260907024510:2:f05819`
+*07.09. 02:45 UTC · Quelle: dream*
+
+The gap between generating skill proposals and actually implementing them is the primary bottleneck: many proposals accumulate without conversion to tested, registered skills.
+
+### `dream:20260907024510:1:2863c5`
+*07.09. 02:45 UTC · Quelle: dream*
+
+Provider failures (502 upstream overload, 429 rate limits) are systemic and recurring — without persistent per-provider health tracking, the system repeatedly wastes cycles on degraded models.
 
 ### `dream:20260907023519:5:ff938f`
 *07.09. 02:35 UTC · Quelle: dream*
@@ -44791,31 +44816,6 @@ score=5; issues=Critic output unparseable.
 *24.08. 02:42 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240241:5`
-*24.08. 02:41 UTC · Quelle: dream*
-
-The largest quality jump (score 1 to 9) came from generating variants that addressed the critic's sole blocking issue ('No evidence'), proving that attaching concrete verifiable artifacts is the gating criterion for passing bewerte.py.
-
-### `dream:202608240241:4`
-*24.08. 02:41 UTC · Quelle: dream*
-
-The calibration record shows systematic overconfidence on submission-style tasks (predicted 3 vs actual 1, abs_error 2), meaning self-predicted scores need a downward correction until empirically calibrated.
-
-### `dream:202608240241:3`
-*24.08. 02:41 UTC · Quelle: dream*
-
-Model reliability fluctuates call-to-call (stealth/ox-alpha and nemotron both alternated success and 429/overload failures), so routing decisions must use recency-weighted health signals instead of static model preferences.
-
-### `dream:202608240241:2`
-*24.08. 02:41 UTC · Quelle: dream*
-
-An HTTP 200 response does not imply success: nvidia/nemotron returned status 200 with zero choices due to upstream Nvidia overload, so responses must be validated for non-empty choices/content.
-
-### `dream:202608240241:1`
-*24.08. 02:41 UTC · Quelle: dream*
-
-HTTP 429 rate-limit failures dominate across all free-tier OpenRouter models, and immediate retries of the same model within seconds fail repeatedly, making tight retry loops counterproductive.
 
 ### `last_swarm_goal`
 *24.08. 02:25 UTC · Quelle: system*
