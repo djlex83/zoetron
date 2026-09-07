@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 17:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 17:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,13 +27,13 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Combining dream outputs from the same cycle surfaced a novel signal that single-dream analysis missed, demonstrating that cross-consolidation is a rel
+- Hand actions fail silently when expected files or directories are absent, and the system does not distinguish between 'nothing to read' and 'data miss
+- A persistent gap exists between skill proposals generated and skills actually deployed, meaning the proposal-to-execution pipeline lacks structural en
+- Stale swarm knowledge degrades decision quality progressively, and the system only reacts to staleness signals after damage is already done, proving t
+- Model failures (502 upstream overload, 429 rate limits) recur across providers, indicating that a single-model dependency is a systemic fragility requ
 - High nemotron latency (39–92s) when healthy makes it unsuitable for interactive loops; it should be relegated to background batch roles.
 - Event pruning aggressively removes noise (43→14 events) while fact preservation (0→7 facts pruned) maintains cross-cycle knowledge, validating the cur
 - Reflex-driven goals (simulation use, memory update) converge reliably without model calls, proving that deterministic skills outperform LLM-dependent 
@@ -51,11 +56,6 @@
 - Aggressive event pruning (43 events in one run) risks destroying causal chains needed for post-mortem reconstruction.
 - Reflex mode achieves convergence but produces null scores, meaning quality assessment is entirely absent from the fastest execution path.
 - Infrastructure failures (NVIDIA 502 service overload, Google 429 rate limits) are the dominant execution blocker, not algorithmic or logic errors.
-- Self-diagnosis reports zero organ errors while model failures (21) and stale swarm signals persist, revealing a monitoring blind spot for external dep
-- Pruning discards causal metadata (experiment_id, parent_step_id), making post-hoc debugging of consolidated knowledge impossible.
-- Skill proposals accumulate (85) but rarely become missions (1), indicating a missing proposal-to-mission pipeline with explicit acceptance criteria.
-- Reflex-mode execution bypasses the convergence gate (score=null, converged=true), creating a silent quality regression path.
-- Model reliability follows a bimodal pattern: free-tier endpoints either respond quickly or fail with 502/429, requiring tiered routing with health-awa
 
 ---
 

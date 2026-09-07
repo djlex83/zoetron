@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11825 Fakten** · Stand 2026-09-07 17:24 UTC · aktualisiert bei jedem Herzschlag
+**11825 Fakten** · Stand 2026-09-07 17:35 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7071
 - **swarm_artifact:** 2120
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907173224:5:69bdab`
+*07.09. 17:32 UTC · Quelle: dream*
+
+Combining dream outputs from the same cycle surfaced a novel signal that single-dream analysis missed, demonstrating that cross-consolidation is a reliable mechanism for discovering non-obvious solutions.
+
+### `dream:20260907173224:4:878ba1`
+*07.09. 17:32 UTC · Quelle: dream*
+
+Hand actions fail silently when expected files or directories are absent, and the system does not distinguish between 'nothing to read' and 'data missing', causing undetected zero-output runs.
+
+### `dream:20260907173224:3:9e12a2`
+*07.09. 17:32 UTC · Quelle: dream*
+
+A persistent gap exists between skill proposals generated and skills actually deployed, meaning the proposal-to-execution pipeline lacks structural enforcement like deadlines, owners, and validation gates.
+
+### `dream:20260907173224:2:649abc`
+*07.09. 17:32 UTC · Quelle: dream*
+
+Stale swarm knowledge degrades decision quality progressively, and the system only reacts to staleness signals after damage is already done, proving that scheduled TTL-based refresh is necessary rather than event-driven.
+
+### `dream:20260907173224:1:09ebfb`
+*07.09. 17:32 UTC · Quelle: dream*
+
+Model failures (502 upstream overload, 429 rate limits) recur across providers, indicating that a single-model dependency is a systemic fragility requiring automatic failover to healthy alternatives.
 
 ### `dream:20260907172113:5:82901e`
 *07.09. 17:21 UTC · Quelle: dream*
@@ -45261,31 +45286,6 @@ score=3; issues=All three artifacts are truncated mid-code (verifier cuts off at
 *24.08. 17:30 UTC · Quelle: system*
 
 Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
-
-### `dream:202608241729:5`
-*24.08. 17:29 UTC · Quelle: dream*
-
-Prune runs consistently remove 0 facts and 0 events, so the pruning mechanism is effectively dead weight and its criteria need recalibration against actual memory volume.
-
-### `dream:202608241729:4`
-*24.08. 17:29 UTC · Quelle: dream*
-
-Reflex mode (single known-good script, no model call) succeeded in 15s where deliberative loops take minutes, confirming that well-defined goals should be routed to cached reflexes first.
-
-### `dream:202608241729:3`
-*24.08. 17:29 UTC · Quelle: dream*
-
-Goals fail by non-convergence rather than by error when the approach itself is wrong: 'Embedding-Recall' burned 3 attempts and got parked, suggesting attempts should be spent on redesigning the approach, not retrying variations of it.
-
-### `dream:202608241729:2`
-*24.08. 17:29 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:202608241729:1`
-*24.08. 17:29 UTC · Quelle: dream*
-
-429/502 errors arrive in correlated bursts across multiple models simultaneously (stealth/ox-alpha and z-ai/glm-5.2 failed within the same second), so rotating to another model does not help — only waiting does.
 
 ### `last_swarm_critique`
 *24.08. 17:06 UTC · Quelle: critic*
