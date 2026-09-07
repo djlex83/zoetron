@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 03:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,10 +26,10 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stale swarm knowledge degrades decision quality silently; periodic diffing against swarm HEAD with confidence-scored patch proposals prevents cascadin
+- Reflex-mode convergence solves immediate tasks but leaves root causes intact, causing recurring failures; durable fixes require moving from reflex to 
+- Latency for the same model varies wildly (15s to 33s), indicating infrastructure instability that no single-model strategy can absorb — a tiered, late
+- Every failure generates a skill proposal, but unvalidated proposals risk creating fragile solutions; a SkillValidationGate is needed before any propos
+- Model failures cluster into predictable categories (429 rate-limit, 502 upstream overload, empty responses) — each is retryable and should trigger aut
 - Reflex execution succeeds reliably when preconditions are met, but the absence of a mandatory pre-execution validation gate risks cascading failures f
 - Reactive staleness detection means swarm knowledge degrades before corrective action is triggered; proactive scheduled freshness scanning would preven
 - Different error classes (429 vs 502) require fundamentally different retry strategies — a one-size-fits-all backoff wastes time and compounds provider
@@ -51,11 +56,6 @@
 - Aggressive pruning (63 events in first run) risks discarding failure-pattern evidence needed for root-cause mining.
 - The system generates corrective skill proposals (ModelHealthTracker, ProviderReliabilityIndex) but lacks an automatic mechanism to validate and promot
 - Free-tier providers (Nvidia Nemotron, Google Gemma) consistently fail with 502 upstream overload and 429 rate-limit errors, while inclusionai/ling-3.0
-- Stress signals (5xx/429 bursts) correlate with goal stagnation but trigger no automatic scope reduction.
-- Skill proposals accumulate without validation gates, creating proposal debt that blocks execution.
-- Swarm convergence fails when critic feedback targets artifact gaps but builder iterations don't close them.
-- Calibration error of 100% (predicted 8 vs actual 4) reveals systematic overconfidence in planner estimates.
-- Model fallback chains must be pre-configured and health-scored, not improvised during failures.
 
 ---
 

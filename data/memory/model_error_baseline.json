@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-09-07T03:00:31.803381",
+  "total_tests": 10,
+  "successful": 9,
+  "failed": 1,
+  "error_rate": 0.1,
+  "avg_latency_ms": 0.0022172927856445312,
+  "details": [
+    {
+      "prompt": "Was ist 2+2?",
+      "ok": true,
+      "latency": 7.3909759521484375e-06,
+      "response_len": 28
+    },
+    {
+      "prompt": "Erkläre Photosynthese in einem Satz.",
+      "ok": true,
+      "latency": 3.0994415283203125e-06,
+      "response_len": 52
+    },
+    {
+      "prompt": "Schreibe eine Python-Funktion für Fibonacci.",
+      "ok": true,
+      "latency": 1.430511474609375e-06,
+      "response_len": 60
+    },
+    {
+      "prompt": "Übersetze 'Hallo Welt' ins Englische.",
+      "ok": true,
+      "latency": 1.430511474609375e-06,
+      "response_len": 53
+    },
+    {
+      "prompt": "Nenne drei Hauptstädte in Europa.",
+      "ok": true,
+      "latency": 1.1920928955078125e-06,
+      "response_len": 49
+    },
+    {
+      "prompt": "Was ist die Hauptstadt von Frankreich?",
+      "ok": true,
+      "latency": 1.430511474609375e-06,
+      "response_len": 54
+    },
+    {
+      "prompt": "Berechne 15 * 23.",
+      "ok": true,
+      "latency": 9.5367431640625e-07,
+      "response_len": 33
+    },
+    {
+      "prompt": "Definiere 'Maschinelles Lernen'.",
+      "ok": true,
+      "latency": 1.430511474609375e-06,
+      "response_len": 48
+    },
+    {
+      "prompt": "Liste 5 Programmiersprachen auf.",
+      "ok": true,
+      "latency": 9.5367431640625e-07,
+      "response_len": 48
+    },
+    {
+      "prompt": "Was bedeutet HTTP?",
+      "ok": false,
+      "latency": 2.86102294921875e-06,
+      "error": "Simulated model error"
+    }
+  ]
+}

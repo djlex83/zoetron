@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11721 Fakten** · Stand 2026-09-07 02:47 UTC · aktualisiert bei jedem Herzschlag
+**11735 Fakten** · Stand 2026-09-07 03:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6931
-- **swarm_artifact:** 2163
-- **last_swarm_critique:** 816
-- **anti_pattern:** 583
-- **last_swarm_goal:** 548
-- **strategy:** 293
-- **tool:** 175
+- **dream:** 6936
+- **swarm_artifact:** 2166
+- **last_swarm_critique:** 817
+- **anti_pattern:** 585
+- **last_swarm_goal:** 549
+- **strategy:** 294
+- **tool:** 176
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:modell-fehler-verstehen-und-verringern`
+*07.09. 03:00 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler verstehen und verringern'. Datei: data/tools/modell-fehler-verstehen-und-verringern.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler verstehen :2`
+*07.09. 02:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.5): Multidimensionale Fehlerklassifikation mit Tiefenanalyse - Ersetze die vereinfachte Kategorie-Analyse in analyze_results durch ein mehrdimensionales Fehlerklassifikationssystem. Jede Messung wird nicht nur einer groben Kate
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler verstehen :1`
+*07.09. 02:59 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8.0): Vollständige modulare Pipeline-Architektur mit eingebauter Analyse - Redesigne die Router-Ketten-Optimierung als vollständiges, selbstcontainetes Modul mit integrierter Analyse- und Speicherlogik. Statt einer abgebrochenen 
+
+### `last_swarm_critique`
+*07.09. 02:59 UTC · Quelle: critic*
+
+score=7; issues=Schwere Abhängigkeit von Fallback-Implementierungen (FallbackRegister, FallbackResilientLLM, MockLLM) bedeutet, dass Messergebnisse bei fehlenden Organen simuliert statt real sind; Die dritte Datei (Router-Ketten-Optimierung) ist abgeschnitten 
+
+### `last_swarm_goal`
+*07.09. 02:55 UTC · Quelle: system*
+
+Modell-Fehler verstehen und verringern
+
+### `dream:20260907025526:5:093a51`
+*07.09. 02:55 UTC · Quelle: dream*
+
+Stale swarm knowledge degrades decision quality silently; periodic diffing against swarm HEAD with confidence-scored patch proposals prevents cascading errors from outdated context.
+
+### `dream:20260907025526:4:59ef9d`
+*07.09. 02:55 UTC · Quelle: dream*
+
+Reflex-mode convergence solves immediate tasks but leaves root causes intact, causing recurring failures; durable fixes require moving from reflex to planning-level interventions.
+
+### `dream:20260907025526:3:ac3640`
+*07.09. 02:55 UTC · Quelle: dream*
+
+Latency for the same model varies wildly (15s to 33s), indicating infrastructure instability that no single-model strategy can absorb — a tiered, latency-budgeted provider chain is essential.
+
+### `dream:20260907025526:2:8e3e7f`
+*07.09. 02:55 UTC · Quelle: dream*
+
+Every failure generates a skill proposal, but unvalidated proposals risk creating fragile solutions; a SkillValidationGate is needed before any proposal becomes an active skill.
+
+### `dream:20260907025526:1:52b9a2`
+*07.09. 02:55 UTC · Quelle: dream*
+
+Model failures cluster into predictable categories (429 rate-limit, 502 upstream overload, empty responses) — each is retryable and should trigger automated failover rather than human intervention.
 
 ### `dream:20260907024510:5:369621`
 *07.09. 02:45 UTC · Quelle: dream*

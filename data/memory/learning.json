@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 02:45:59",
+ "stand": "2026-09-07 03:00:39",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -111,12 +111,6 @@
    "quote": 1.0
   },
   {
-   "tool": "traum-gedächtnis-system-fertigstellen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "marktanalyse-endlich-nutzen.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -145,6 +139,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-stark-verringern.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "alte-träume-miteinander-verbinden.py",
@@ -255,10 +255,10 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-stark-verringern.py",
+   "tool": "traum-gedächtnis-system-fertigstellen.py",
    "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
@@ -429,17 +429,17 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.846,
- "simulationen_angewandt": 25,
+ "haende_quote": 0.841,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
   "n": 25,
   "best": 9.0,
-  "schnitt": 5.76
+  "schnitt": 5.72
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 22,
-   "schnitt": 5.73
+   "n": 23,
+   "schnitt": 5.78
   },
   "bau": {
    "n": 2,
