@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11893 Fakten** · Stand 2026-09-07 22:34 UTC · aktualisiert bei jedem Herzschlag
+**11891 Fakten** · Stand 2026-09-07 22:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7151
-- **swarm_artifact:** 2112
+- **swarm_artifact:** 2110
 - **last_swarm_critique:** 827
 - **anti_pattern:** 565
 - **last_swarm_goal:** 559
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907224243:5:b2ac39`
+*07.09. 22:42 UTC · Quelle: dream*
+
+Model failures cascade silently (502, 429) without automatic failover, wasting cycles and degrading task success rates.
+
+### `dream:20260907224243:4:f95549`
+*07.09. 22:42 UTC · Quelle: dream*
+
+Swarm knowledge refresh is driven only by manual reflex triggers, not automated schedules, causing stale critiques and goals.
+
+### `dream:20260907224243:3:437666`
+*07.09. 22:42 UTC · Quelle: dream*
+
+Five concrete skill proposals (router, validator, scheduler, path guard, gatekeeper) were generated but remain unused by the swarm, revealing a deployment/adoption disconnect.
+
+### `dream:20260907224243:2:3f740a`
+*07.09. 22:42 UTC · Quelle: dream*
+
+Swarm evolution converges poorly (6/10, non-converged) despite multiple cycles, indicating critique quality or integration gaps.
+
+### `dream:20260907224243:1:4b4aef`
+*07.09. 22:42 UTC · Quelle: dream*
+
+Primary model (nemotron-3-ultra) suffers frequent overload failures and 40s+ latency spikes while flash models deliver 3-9s latency reliably.
 
 ### `dream:20260907223132:5:deb0fb`
 *07.09. 22:31 UTC · Quelle: dream*
@@ -45591,31 +45616,6 @@ score=4; issues=Artifact 1: Heuristic draw probability (pD = DRAW * exp(-(d/DRAW
 *24.08. 22:39 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:20260824223903:5:b6c37f`
-*24.08. 22:39 UTC · Quelle: dream*
-
-Offline calibration of predictions is essential to maintain reliability when model outputs exhibit high variance.
-
-### `dream:20260824223903:4:5ea832`
-*24.08. 22:39 UTC · Quelle: dream*
-
-Swarm role distribution (planner 1, builder 3, critic 1) with low scores suggests rebalancing agent responsibilities to improve convergence.
-
-### `dream:20260824223903:3:d2316d`
-*24.08. 22:39 UTC · Quelle: dream*
-
-Attribute errors in MemoryStore indicate skill registration must validate object capabilities before invoking methods.
-
-### `dream:20260824223903:2:736575`
-*24.08. 22:39 UTC · Quelle: dream*
-
-Simulation revisions without convergence show that test‑time compute goals lack clear stopping criteria and iterative feedback loops.
-
-### `dream:20260824223903:1:e70003`
-*24.08. 22:39 UTC · Quelle: dream*
-
-Repeated 429 Too Many Requests errors reveal insufficient per‑model rate‑limit handling and the need for circuit‑breaker logic.
 
 ### `last_swarm_critique`
 *24.08. 22:21 UTC · Quelle: critic*
