@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11864 Fakten** · Stand 2026-09-07 20:05 UTC · aktualisiert bei jedem Herzschlag
+**11864 Fakten** · Stand 2026-09-07 20:15 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7111
 - **swarm_artifact:** 2120
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907201334:5:f0b37c`
+*07.09. 20:13 UTC · Quelle: dream*
+
+Reflex-driven recovery converges reliably when the underlying tool is sound, suggesting that well-designed reflexes are the backbone of autonomous resilience.
+
+### `dream:20260907201334:4:6c0992`
+*07.09. 20:13 UTC · Quelle: dream*
+
+Event pruning removes noise effectively while preserving all facts, indicating that episodic memory should be cleaned more aggressively than semantic memory.
+
+### `dream:20260907201334:3:764087`
+*07.09. 20:13 UTC · Quelle: dream*
+
+Accumulating dreams and skill proposals without active evaluation creates a knowledge-action gap that must be closed by structured micro-trials.
+
+### `dream:20260907201334:2:57944c`
+*07.09. 20:13 UTC · Quelle: dream*
+
+Multi-model fallback with circuit breakers is essential because upstream overload (502) and rate limiting (429) are recurring, not exceptional.
+
+### `dream:20260907201334:1:ee12ea`
+*07.09. 20:13 UTC · Quelle: dream*
+
+Stale swarm coordination data silently degrades decision quality; periodic heartbeat broadcasts are necessary to prevent goal drift.
 
 ### `dream:20260907200311:5:89b561`
 *07.09. 20:03 UTC · Quelle: dream*
@@ -45426,31 +45451,6 @@ Proposed skills accumulate but remain unimplemented because no gate forces trans
 *24.08. 20:38 UTC · Quelle: dream*
 
 Provider rate limits (429) are temporally correlated across models, making naive rotation ineffective without backoff.
-
-### `dream:202608242008:5`
-*24.08. 20:08 UTC · Quelle: dream*
-
-Football metric regresses (-1.66pp) despite evolution cycles, revealing misalignment between optimization objective and evaluation metric.
-
-### `dream:202608242008:4`
-*24.08. 20:08 UTC · Quelle: dream*
-
-Core interface gaps (e.g., MemoryStore.add_fact) break downstream automation like GitHub issue sync.
-
-### `dream:202608242008:3`
-*24.08. 20:08 UTC · Quelle: dream*
-
-Evolution and swarm cycles repeatedly fail to converge, suggesting insufficient selection pressure or variant diversity.
-
-### `dream:202608242008:2`
-*24.08. 20:08 UTC · Quelle: dream*
-
-Calibration consistently underestimates actual scores by ~3 points, indicating a systematic bias in difficulty prediction.
-
-### `dream:202608242008:1`
-*24.08. 20:08 UTC · Quelle: dream*
-
-Provider rate limits (429) arrive in correlated bursts, making reactive model rotation insufficient without proactive backoff.
 
 ### `last_swarm_critique`
 *24.08. 19:06 UTC · Quelle: critic*

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 20:03:44",
+ "stand": "2026-09-07 20:13:50",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -28,8 +28,8 @@
   },
   {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 6,
-   "erfolge": 6,
+   "laeufe": 7,
+   "erfolge": 7,
    "quote": 1.0
   },
   {
@@ -444,9 +444,9 @@
  "haende_quote": 0.867,
  "simulationen_angewandt": 26,
  "swarm_scores": {
-  "n": 22,
+  "n": 21,
   "best": 9.0,
-  "schnitt": 5.82
+  "schnitt": 5.71
  },
  "score_nach_ziel_typ": {
   "analyse": {
