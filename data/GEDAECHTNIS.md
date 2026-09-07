@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11812 Fakten** · Stand 2026-09-07 15:26 UTC · aktualisiert bei jedem Herzschlag
+**11811 Fakten** · Stand 2026-09-07 15:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7046
-- **swarm_artifact:** 2128
+- **swarm_artifact:** 2127
 - **last_swarm_critique:** 823
 - **anti_pattern:** 577
 - **last_swarm_goal:** 555
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907153521:5:33d9a7`
+*07.09. 15:35 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while system-level gaps (stale knowledge, unused skills, model failures) persist undetected.
+
+### `dream:20260907153521:4:3c83da`
+*07.09. 15:35 UTC · Quelle: dream*
+
+Skill proposals accumulate in logs but none graduate to callable skills because no promotion gateway exists.
+
+### `dream:20260907153521:3:d7d5d6`
+*07.09. 15:35 UTC · Quelle: dream*
+
+Swarm knowledge decays faster than the manual refresh reflex can sustain, requiring automated TTL enforcement.
+
+### `dream:20260907153521:2:fc9e0c`
+*07.09. 15:35 UTC · Quelle: dream*
+
+Model latency variance (46-65s) and repeated failure-driven goals indicate provider instability not captured by simple health checks.
+
+### `dream:20260907153521:1:9f5506`
+*07.09. 15:35 UTC · Quelle: dream*
+
+Reflexes converge goals but emit no skill metadata, leaving the registry blind to what actually works.
 
 ### `dream:20260907152327:5:1c3a3e`
 *07.09. 15:23 UTC · Quelle: dream*
@@ -45176,31 +45201,6 @@ score=3; issues=embedding_recall.py ist unvollständig: der __main__-Block brich
 *24.08. 15:30 UTC · Quelle: system*
 
 Embedding-Recall statt reinem Wortvergleich
-
-### `dream:202608241529:5`
-*24.08. 15:29 UTC · Quelle: dream*
-
-Drive goals are self-referential (fixing own model errors, own swarm hangs), confirming the extern-quote reflex is needed to break the navel-gazing loop.
-
-### `dream:202608241529:4`
-*24.08. 15:29 UTC · Quelle: dream*
-
-Model failures cluster as OpenRouter 429 rate-limit errors across multiple models simultaneously, so free-tier fallback chains share the same quota and provide no real redundancy.
-
-### `dream:202608241529:3`
-*24.08. 15:29 UTC · Quelle: dream*
-
-Goals that fail convergence get retried unchanged until the attempt-counter parks them at N=3, wasting cycles on deterministic failures instead of diagnosing the root cause first.
-
-### `dream:202608241529:2`
-*24.08. 15:29 UTC · Quelle: dream*
-
-Hand actions fail in ~0.03s with exit 1 and null error messages, indicating crashes happen before error capture, so exception handling must wrap the hand executor itself.
-
-### `dream:202608241529:1`
-*24.08. 15:29 UTC · Quelle: dream*
-
-The swarm goal 'Fakten-Ausbeute verdreifachen' failed twice because MemoryStore lacks an add_fact method, meaning the fact-persistence API is the actual bottleneck, not the LLM prompt design.
 
 ### `last_swarm_critique`
 *24.08. 15:07 UTC · Quelle: critic*
