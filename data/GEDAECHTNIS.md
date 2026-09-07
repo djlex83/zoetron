@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11748 Fakten** · Stand 2026-09-07 09:52 UTC · aktualisiert bei jedem Herzschlag
+**11760 Fakten** · Stand 2026-09-07 10:17 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6986
-- **swarm_artifact:** 2129
-- **last_swarm_critique:** 819
-- **anti_pattern:** 581
-- **last_swarm_goal:** 551
-- **strategy:** 292
-- **tool:** 178
+- **swarm_artifact:** 2135
+- **last_swarm_critique:** 820
+- **anti_pattern:** 583
+- **last_swarm_goal:** 552
+- **strategy:** 293
+- **tool:** 179
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:modell-fehler-verstehen-und-senken`
+*07.09. 10:15 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Modell-Fehler verstehen und senken'. Datei: data/tools/modell-fehler-verstehen-und-senken.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler verstehen :2`
+*07.09. 10:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 9): Eliminate concurrency entirely - use synchronous execution with signal-based tim - Run model calls synchronously in the main thread but wrap with signal.alarm() (Unix) or a timeout decorator using func_timeout library. This r
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modell-Fehler verstehen :1`
+*07.09. 10:13 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Use multiprocessing with terminate() for hard process isolation and cleanup - Move model simulation to a separate Process instead of Thread. On timeout, call process.terminate() followed by process.join() for guaranteed clean
+
+### `last_swarm_critique`
+*07.09. 10:10 UTC · Quelle: critic*
+
+score=7; issues=Thread-Timeout-Handling in simulate_model_call: thread.join() wartet ab, aber der Thread wird nicht tatsächlich beendet – Resource-Leak bei Timeout; Bug in simulate_model_call: error_message verwendet immer error_types[0] ('Timeout') statt der 
+
+### `last_swarm_goal`
+*07.09. 10:02 UTC · Quelle: system*
+
+Modell-Fehler verstehen und senken
+
+### `dream:20260907100116:5:bb5c95`
+*07.09. 10:01 UTC · Quelle: dream*
+
+Pruning (5 facts, 31 events) occurs alongside repeated failures, suggesting consolidation happens but doesn't prevent recurring infrastructure errors.
+
+### `dream:20260907100116:4:4615d6`
+*07.09. 10:01 UTC · Quelle: dream*
+
+Drive goals for "error-free models" and "fresh swarm data" both stem from the same root cause: lack of real-time model/knowledge health signals.
+
+### `dream:20260907100116:3:2c945a`
+*07.09. 10:01 UTC · Quelle: dream*
+
+Multiple independent skill proposals converge on model health caching, pre-flight checks, and fail-fast routing, revealing a consensus on needed resilience infrastructure.
+
+### `dream:20260907100116:2:7da368`
+*07.09. 10:01 UTC · Quelle: dream*
+
+The system's reactive banning (3 errors → 1800s ban) is too slow; failures cluster in time suggesting need for predictive health tracking.
+
+### `dream:20260907100116:1:96eedb`
+*07.09. 10:01 UTC · Quelle: dream*
+
+Specific models (Nemotron, Gemma variants) repeatedly fail with 502/429 errors while ling-3.0-flash-fin remains reliable, indicating provider-specific instability patterns.
 
 ### `dream:20260907095007:5:573e04`
 *07.09. 09:50 UTC · Quelle: dream*
@@ -44941,31 +44991,6 @@ Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
 *24.08. 09:50 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608240950:5`
-*24.08. 09:50 UTC · Quelle: dream*
-
-The skill backlog reached ~35 proposals with almost none fully tested, meaning proposal generation must be throttled by demonstrated testing throughput or it accumulates unvalidated debt.
-
-### `dream:202608240950:4`
-*24.08. 09:50 UTC · Quelle: dream*
-
-External verifiers dominate persuadable judges: the football critic (game outcome vs the 50.2% baseline) cannot be argued with, so deterministic checkers like bewerte.py exit codes should override LLM-judge scores wherever available.
-
-### `dream:202608240950:3`
-*24.08. 09:50 UTC · Quelle: dream*
-
-A 406 s / 13.5k-token generation was launched while metabolism reported stress=1.0 in conserve mode (max_tasks=3, max_iterations=1), so expensive operations must be sized against the active metabolic budget before starting.
-
-### `dream:202608240950:2`
-*24.08. 09:50 UTC · Quelle: dream*
-
-The same routing fixes (circuit breaker, 429-vs-502 retry policy, health ledger) were re-proposed across multiple cycles while never implemented, proving recurring duplicate proposals signal an implementation gap, not a knowledge gap.
-
-### `dream:202608240950:1`
-*24.08. 09:50 UTC · Quelle: dream*
-
-A 'revise' verdict with 5 flagged risks produced 0 applied revisions, showing simulation gates are decorative unless verdicts mechanically force a revision loop before progression.
 
 ### `last_swarm_goal`
 *24.08. 09:33 UTC · Quelle: system*

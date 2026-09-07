@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 09:50:53",
+ "stand": "2026-09-07 10:15:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,12 +27,6 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
    "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 6,
    "erfolge": 6,
@@ -42,6 +36,12 @@
    "tool": "modellfehler-deutlich-reduzieren.py",
    "laeufe": 6,
    "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -96,12 +96,6 @@
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
    "laeufe": 3,
    "erfolge": 3,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltetes-wissen-erneuern.py",
-   "laeufe": 2,
-   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -285,6 +279,12 @@
    "quote": 1.0
   },
   {
+   "tool": "veraltetes-wissen-erneuern.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
    "tool": "langsame-fakten-regelmäßig-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 0,
@@ -421,19 +421,25 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-dauerhaft-senken.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.881,
- "simulationen_angewandt": 16,
+ "haende_quote": 0.877,
+ "simulationen_angewandt": 18,
  "swarm_scores": {
-  "n": 20,
+  "n": 21,
   "best": 9.0,
-  "schnitt": 6.05
+  "schnitt": 6.1
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 19,
-   "schnitt": 6.32
+   "n": 20,
+   "schnitt": 6.35
   },
   "bau": {
    "n": 1,
