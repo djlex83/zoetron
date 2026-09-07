@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11732 Fakten** · Stand 2026-09-07 07:12 UTC · aktualisiert bei jedem Herzschlag
+**11735 Fakten** · Stand 2026-09-07 07:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6966
-- **swarm_artifact:** 2130
+- **dream:** 6971
+- **swarm_artifact:** 2128
 - **last_swarm_critique:** 818
 - **anti_pattern:** 585
 - **last_swarm_goal:** 550
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907072103:5:93d539`
+*07.09. 07:21 UTC · Quelle: dream*
+
+Error trends are reacted to per-event rather than as statistical sequences, causing premature fallbacks and missed systemic issues.
+
+### `dream:20260907072103:4:dbafca`
+*07.09. 07:21 UTC · Quelle: dream*
+
+No skill enters the registry with a verified test harness, so regressions accumulate silently.
+
+### `dream:20260907072103:3:dd421b`
+*07.09. 07:21 UTC · Quelle: dream*
+
+Pruning discards 52 events per run without protecting failure contexts, erasing evidence needed for root-cause analysis.
+
+### `dream:20260907072103:2:5392ce`
+*07.09. 07:21 UTC · Quelle: dream*
+
+Failure context preservation proposals repeat across cycles, showing the system re-discovers the same gap instead of retaining the lesson.
+
+### `dream:20260907072103:1:d41e72`
+*07.09. 07:21 UTC · Quelle: dream*
+
+Model failures cluster around rate limits (429) and provider overload (502), indicating scheduler lacks provider health awareness.
 
 ### `dream:20260907071010:5:b0d67a`
 *07.09. 07:10 UTC · Quelle: dream*

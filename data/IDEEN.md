@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Error trends are reacted to per-event rather than as statistical sequences, causing premature fallbacks and missed systemic issues.
+- No skill enters the registry with a verified test harness, so regressions accumulate silently.
+- Pruning discards 52 events per run without protecting failure contexts, erasing evidence needed for root-cause analysis.
+- Failure context preservation proposals repeat across cycles, showing the system re-discovers the same gap instead of retaining the lesson.
+- Model failures cluster around rate limits (429) and provider overload (502), indicating scheduler lacks provider health awareness.
 - Model fallback to healthy endpoints must be immediate and systematic, using exponential backoff with jitter, rather than retrying the same failing end
 - Every skill proposal that lacks at least one runnable test case with explicit pass/fail criteria is insufficient for deployment and should be rejected
 - Pruning operations without cascading dependency invalidation risk leaving orphaned or unverified facts in the knowledge graph, corrupting downstream r
@@ -51,11 +56,6 @@
 - The dream-to-do gap — generating skill proposals without an automated pipeline to implement them — is the most persistent bottleneck in autonomous ski
 - 429 and 502 errors require fundamentally different recovery strategies — rate limits need exponential backoff with jitter, while upstream errors deman
 - Provider failures cluster around rate limits (429) and upstream overload (502), meaning single-model dependency is a systemic single point of failure 
-- Goals and swarm processes decay into stale state without active health checks, causing the system to pursue already-achieved or already-obsolete objec
-- Skills enter the registry without deterministic validation, allowing unproven procedures to compound systemic fragility during high-stress periods.
-- Binary convergence detection masks gradual performance degradation; rolling-window score deltas expose decay patterns that binary flags silently ignor
-- Pruning failure events without preserving their goal/tool/provider context creates an amnesia loop where repeated failures cannot be correlated into r
-- Provider-side failures (502 upstream overload, 429 rate limits) dominate the failure landscape, meaning routing resilience and retry strategy outperfo
 
 ---
 
