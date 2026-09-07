@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11874 Fakten** · Stand 2026-09-07 20:36 UTC · aktualisiert bei jedem Herzschlag
+**11872 Fakten** · Stand 2026-09-07 20:47 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7121
-- **swarm_artifact:** 2120
+- **swarm_artifact:** 2118
 - **last_swarm_critique:** 826
 - **anti_pattern:** 569
 - **last_swarm_goal:** 558
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907204418:5:c88dab`
+*07.09. 20:44 UTC · Quelle: dream*
+
+Goal selection ignores metabolic state (budget.max_iterations, backoff) leading to runaway cycles during provider outages.
+
+### `dream:20260907204418:4:0f2354`
+*07.09. 20:44 UTC · Quelle: dream*
+
+File-tool path resolution remains fragile without canonical ZOETRON_DATA rewriting middleware, causing silent read/write drift.
+
+### `dream:20260907204418:3:37130d`
+*07.09. 20:44 UTC · Quelle: dream*
+
+Skill proposals accumulate in registry limbo without a validation pipeline that sandboxes, tests, and promotes them atomically.
+
+### `dream:20260907204418:2:0f8cb0`
+*07.09. 20:44 UTC · Quelle: dream*
+
+Swarm cycles stall at score 6 without convergence because critique feedback loops lack freshness thresholds and automatic refresh triggers.
+
+### `dream:20260907204418:1:f93bbf`
+*07.09. 20:44 UTC · Quelle: dream*
+
+Nemotron-3-Ultra consistently fails with 502 upstream overload while Gemma models hit 429 rate limits, making flash-tier models the only reliable free tier.
 
 ### `dream:20260907203340:5:78f1cc`
 *07.09. 20:33 UTC · Quelle: dream*
@@ -45476,31 +45501,6 @@ score=2; issues=All three artifacts are incomplete/truncated mid-implementation 
 *24.08. 20:39 UTC · Quelle: system*
 
 Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
-
-### `dream:202608242038:5`
-*24.08. 20:38 UTC · Quelle: dream*
-
-Long-tail latencies (200s+) on 'fast' models indicate silent degradation; latency SLOs must trigger fallback before timeout.
-
-### `dream:202608242038:4`
-*24.08. 20:38 UTC · Quelle: dream*
-
-Conserve-mode iteration caps starve test-time-compute swarms that require multiple passes to converge.
-
-### `dream:202608242038:3`
-*24.08. 20:38 UTC · Quelle: dream*
-
-MemoryStore interface drift (missing add_fact) breaks agents silently; versioned contracts or runtime checks are needed.
-
-### `dream:202608242038:2`
-*24.08. 20:38 UTC · Quelle: dream*
-
-Proposed skills accumulate but remain unimplemented because no gate forces transition from proposal to tested code.
-
-### `dream:202608242038:1`
-*24.08. 20:38 UTC · Quelle: dream*
-
-Provider rate limits (429) are temporally correlated across models, making naive rotation ineffective without backoff.
 
 ### `last_swarm_critique`
 *24.08. 19:06 UTC · Quelle: critic*

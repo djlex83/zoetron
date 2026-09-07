@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 20:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 20:45 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -37,10 +37,15 @@
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goal selection ignores metabolic state (budget.max_iterations, backoff) leading to runaway cycles during provider outages.
+- File-tool path resolution remains fragile without canonical ZOETRON_DATA rewriting middleware, causing silent read/write drift.
+- Skill proposals accumulate in registry limbo without a validation pipeline that sandboxes, tests, and promotes them atomically.
+- Swarm cycles stall at score 6 without convergence because critique feedback loops lack freshness thresholds and automatic refresh triggers.
+- Nemotron-3-Ultra consistently fails with 502 upstream overload while Gemma models hit 429 rate limits, making flash-tier models the only reliable free
 - Correlated failures across Nvidia (502) and Google (429) providers suggest that provider diversity alone is insufficient; a circuit-breaker pattern th
 - The simulation verdict shifted from 'go' to 'revise' after 4 revision cycles, indicating that initial validation passes are unreliable and at least 2-
 - Calibration systematically underestimated performance (predicted 4, actual 6), revealing a conservative bias that should be corrected by adding a posi
@@ -51,11 +56,6 @@
 - The system enters conserve mode under stress (max 3 tasks, max 1 iteration), which paradoxically prevents the very execution needed to resolve the pro
 - Skill proposals accumulate faster than they convert into working capabilities, creating a persistent proposal-to-execution gap that wastes metabolic b
 - Model endpoint reliability is the primary systemic bottleneck — 502 overloads, 429 rate limits, and latency spikes up to 96s on the same model reveal 
-- Reflex-driven recovery converges reliably when the underlying tool is sound, suggesting that well-designed reflexes are the backbone of autonomous res
-- Event pruning removes noise effectively while preserving all facts, indicating that episodic memory should be cleaned more aggressively than semantic 
-- Accumulating dreams and skill proposals without active evaluation creates a knowledge-action gap that must be closed by structured micro-trials.
-- Multi-model fallback with circuit breakers is essential because upstream overload (502) and rate limiting (429) are recurring, not exceptional.
-- Stale swarm coordination data silently degrades decision quality; periodic heartbeat broadcasts are necessary to prevent goal drift.
 
 ---
 

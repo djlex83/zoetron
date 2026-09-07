@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 20:33:56",
+ "stand": "2026-09-07 20:45:33",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,12 +21,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
-  },
-  {
    "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 7,
    "erfolge": 7,
@@ -34,6 +28,12 @@
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
+   "laeufe": 6,
+   "erfolge": 6,
+   "quote": 1.0
+  },
+  {
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
    "laeufe": 6,
    "erfolge": 6,
    "quote": 1.0
@@ -436,6 +436,12 @@
   },
   {
    "tool": "traum-fähigkeiten-nutzbar-machen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "fertigkeiten-wirklich-zu-ende-bringen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
