@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 10:53:09",
+ "stand": "2026-09-07 11:04:40",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -16,8 +16,8 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 9,
-   "erfolge": 9,
+   "laeufe": 8,
+   "erfolge": 8,
    "quote": 1.0
   },
   {
@@ -189,6 +189,12 @@
    "quote": 0.0
   },
   {
+   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fertigkeiten-wirklich-ausprobieren-nicht.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -265,12 +271,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "vorgeschlagene-skills-nutzbar-machen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "veraltetes-wissen-erneuern.py",

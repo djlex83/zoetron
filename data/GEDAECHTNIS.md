@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11766 Fakten** · Stand 2026-09-07 10:55 UTC · aktualisiert bei jedem Herzschlag
+**11770 Fakten** · Stand 2026-09-07 11:06 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6981
-- **swarm_artifact:** 2140
+- **dream:** 6986
+- **swarm_artifact:** 2139
 - **last_swarm_critique:** 821
 - **anti_pattern:** 585
 - **last_swarm_goal:** 553
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907110355:5:46fb88`
+*07.09. 11:03 UTC · Quelle: dream*
+
+High metabolic stress (1.0) forces conserve mode that serializes parallel workloads.
+
+### `dream:20260907110355:4:e5bf54`
+*07.09. 11:03 UTC · Quelle: dream*
+
+Swarm knowledge decays into staleness without freshness SLA and automatic re-fetch triggers.
+
+### `dream:20260907110355:3:414c08`
+*07.09. 11:03 UTC · Quelle: dream*
+
+Hand actions fail silently when relative paths diverge from ZOETRON_DATA environment.
+
+### `dream:20260907110355:2:edf5ac`
+*07.09. 11:03 UTC · Quelle: dream*
+
+Proposed skills remain theoretical without mandatory simulation validation before deployment.
+
+### `dream:20260907110355:1:c7f8a5`
+*07.09. 11:03 UTC · Quelle: dream*
+
+Upstream model overload (502) causes cascading failures without health-aware routing.
 
 ### `dream:20260907105215:5:737fb5`
 *07.09. 10:52 UTC · Quelle: dream*

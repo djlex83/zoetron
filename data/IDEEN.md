@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 10:53 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 11:04 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High metabolic stress (1.0) forces conserve mode that serializes parallel workloads.
+- Swarm knowledge decays into staleness without freshness SLA and automatic re-fetch triggers.
+- Hand actions fail silently when relative paths diverge from ZOETRON_DATA environment.
+- Proposed skills remain theoretical without mandatory simulation validation before deployment.
+- Upstream model overload (502) causes cascading failures without health-aware routing.
 - Self-diagnosis confirms structural integrity (no organ errors), meaning failures are entirely external (upstream service issues), so resilience must c
 - The same models fail repeatedly across selection cycles because no shared, persistent error state exists between cycles, indicating a missing cross-se
 - Skill proposals accumulate faster than they get implemented, creating a persistent gap between identified solutions and executed capabilities that the
@@ -51,11 +56,6 @@
 - Skill proposals accumulate in memory but lack automated deployment verification, creating a persistent gap between proposal and operational capability
 - Fallback to inclusionai/ling-3.0-flash-fin succeeds where larger models fail, proving smaller specialized models are more resilient for routine swarm 
 - Google Gemma models on OpenRouter consistently hit 429 rate limits, making them unreliable as primary models for high-frequency tasks.
-- Pruning (5 facts, 31 events) occurs alongside repeated failures, suggesting consolidation happens but doesn't prevent recurring infrastructure errors.
-- Drive goals for "error-free models" and "fresh swarm data" both stem from the same root cause: lack of real-time model/knowledge health signals.
-- Multiple independent skill proposals converge on model health caching, pre-flight checks, and fail-fast routing, revealing a consensus on needed resil
-- The system's reactive banning (3 errors → 1800s ban) is too slow; failures cluster in time suggesting need for predictive health tracking.
-- Specific models (Nemotron, Gemma variants) repeatedly fail with 502/429 errors while ling-3.0-flash-fin remains reliable, indicating provider-specific
 
 ---
 
