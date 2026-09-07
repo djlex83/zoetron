@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11903 Fakten** · Stand 2026-09-07 23:03 UTC · aktualisiert bei jedem Herzschlag
+**11908 Fakten** · Stand 2026-09-07 23:14 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7156
+- **dream:** 7161
 - **swarm_artifact:** 2114
 - **last_swarm_critique:** 828
 - **anti_pattern:** 565
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907231202:5:408538`
+*07.09. 23:12 UTC · Quelle: dream*
+
+High metabolic stress correlates with planning overreach; capping tasks/iterations when stress >0.8 prevents cascade failures.
+
+### `dream:20260907231202:4:d2306e`
+*07.09. 23:12 UTC · Quelle: dream*
+
+Relative path handling in tool calls causes silent data corruption unless a middleware guard rewrites to absolute ZOETRON_DATA paths at dispatch.
+
+### `dream:20260907231202:3:ae1f49`
+*07.09. 23:12 UTC · Quelle: dream*
+
+Simulated skills never reach production because no automated A/B gate validates them against live metrics before promotion.
+
+### `dream:20260907231202:2:a0ffe0`
+*07.09. 23:12 UTC · Quelle: dream*
+
+Swarm knowledge decays within hours without a heartbeat mechanism that forces fresh goal-state and critique propagation.
+
+### `dream:20260907231202:1:e0c2cb`
+*07.09. 23:12 UTC · Quelle: dream*
+
+Model provider instability (502/429 errors) cascades into task failures unless automatic fallback with health scoring is baked into every LLM call.
 
 ### `anti_pattern:Previous attempt scored 5/10. Goal: Vorgeschlagene Fähigkeit:2`
 *07.09. 23:00 UTC · Quelle: evolution*

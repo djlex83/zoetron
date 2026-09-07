@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:01 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,14 +25,14 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 6×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High metabolic stress correlates with planning overreach; capping tasks/iterations when stress >0.8 prevents cascade failures.
+- Relative path handling in tool calls causes silent data corruption unless a middleware guard rewrites to absolute ZOETRON_DATA paths at dispatch.
+- Simulated skills never reach production because no automated A/B gate validates them against live metrics before promotion.
+- Swarm knowledge decays within hours without a heartbeat mechanism that forces fresh goal-state and critique propagation.
+- Model provider instability (502/429 errors) cascades into task failures unless automatic fallback with health scoring is baked into every LLM call.
 - Telemetry gaps on hand_action and model calls (exit codes, latency, tokens) hide degradation until it becomes catastrophic.
 - Reflex paths bypass convergence gates (score≥8, critic approval), allowing premature act_done without quality verification.
 - Pruning discards causal metadata (experiment_id, parent_step_id), preventing post-hoc reconstruction of why decisions were made.
@@ -51,11 +56,6 @@
 - Five concrete skill proposals (router, validator, scheduler, path guard, gatekeeper) were generated but remain unused by the swarm, revealing a deploy
 - Swarm evolution converges poorly (6/10, non-converged) despite multiple cycles, indicating critique quality or integration gaps.
 - Primary model (nemotron-3-ultra) suffers frequent overload failures and 40s+ latency spikes while flash models deliver 3-9s latency reliably.
-- Nemotron latency varies 9x (9s to 127s) for similar token counts, indicating provider-side queueing or batching effects not captured by token metrics.
-- Calibration error of 1 (predicted 5 risks vs actual 6) indicates reasonable risk estimation but systematic underestimation of model-provider failures.
-- Swarm evolution with critic role improves scores (6→26) but fails to converge in 2 cycles, suggesting insufficient iteration depth or missing converge
-- The self-referential task 'understand model errors' suffers from the very model errors it tries to analyze, creating a bootstrap reliability problem.
-- Nvidia Nemotron consistently fails with 502 upstream overload errors while Google Gemma hits 429 rate limits, but inclusionai/ling-3.0-flash-fin succe
 
 ---
 
