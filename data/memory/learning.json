@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 08:28:22",
+ "stand": "2026-09-07 08:46:41",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -21,15 +21,15 @@
    "quote": 1.0
   },
   {
-   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
    "laeufe": 7,
    "erfolge": 7,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
-   "laeufe": 7,
-   "erfolge": 7,
+   "tool": "veraltete-marktinfos-aktualisieren.py",
+   "laeufe": 6,
+   "erfolge": 6,
    "quote": 1.0
   },
   {
@@ -415,6 +415,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.861,

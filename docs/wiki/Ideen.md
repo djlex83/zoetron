@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 08:28 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 08:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,9 +27,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts/events aggressively (10+41, 8+27) without preserving failure-pattern metadata needed for root-cause learning.
+- Reflex executions succeed (ok: true) but lack preflight validation, risking silent failures when scripts, paths, or env vars drift.
+- Swarm knowledge staleness is detected only after quality degrades, not proactively, leading to reactive 'refresh' goals instead of scheduled maintenan
+- Skill proposals accumulate (65) while active goals lag (38), revealing a broken promotion pipeline where proposals never reach production testing.
+- Model failure rate (53 errors vs 36 successes) triggers reactive drive goals but lacks automated failover, causing repeated manual intervention cycles
 - The systemic gap between proposal generation and skill instantiation requires an automated pipeline that converts approved proposals into tested, depl
 - Skill proposals lacking runnable test cases with explicit pass/fail criteria become unactionable debt; every proposal must include at least one execut
 - Pruning operations destroy failure context needed for root-cause analysis; the last 30 failure events with goal, tool, and input must be snapshotted b
@@ -51,11 +56,6 @@
 - Calibration underestimates actual difficulty by approximately 40% (predicted 5 vs actual 7), requiring a systematic correction factor.
 - Code duplication across generated modules is the dominant quality defect, consistently flagged by critics and limiting score improvements.
 - Free-tier models on OpenRouter suffer frequent 429 rate limits and 502 upstream errors, making a single-model strategy unreliable.
-- Nemotron 502 errors are transient upstream overloads that recover within seconds, but gemma 429 errors indicate hard quota exhaustion requiring longer
-- Task 'Viele Fähigkeiten sortieren' succeeded (score 7, artifact 188 lines) despite 60% model failure rate, proving the fallback chain works but is ine
-- Calibration consistently underestimates cycle count (predicted 5 vs actual 7), causing budget overruns when iteration limits are tight.
-- Under conserve metabolism (max_tasks=3, max_iterations=1), the system still wastes budget retrying known-unreliable models instead of failing fast to 
-- The inclusionai/ling-3.0-flash-fin:free model is the only consistently reliable endpoint under load, while nemotron suffers 502 upstream overloads and
 
 ---
 

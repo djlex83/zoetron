@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11742 Fakten** · Stand 2026-09-07 08:30 UTC · aktualisiert bei jedem Herzschlag
+**11736 Fakten** · Stand 2026-09-07 08:48 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6976
-- **swarm_artifact:** 2133
+- **dream:** 6971
+- **swarm_artifact:** 2132
 - **last_swarm_critique:** 819
 - **anti_pattern:** 581
 - **last_swarm_goal:** 551
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907084545:5:8b10c9`
+*07.09. 08:45 UTC · Quelle: dream*
+
+Pruning removes facts/events aggressively (10+41, 8+27) without preserving failure-pattern metadata needed for root-cause learning.
+
+### `dream:20260907084545:4:30af6d`
+*07.09. 08:45 UTC · Quelle: dream*
+
+Reflex executions succeed (ok: true) but lack preflight validation, risking silent failures when scripts, paths, or env vars drift.
+
+### `dream:20260907084545:3:eaf466`
+*07.09. 08:45 UTC · Quelle: dream*
+
+Swarm knowledge staleness is detected only after quality degrades, not proactively, leading to reactive 'refresh' goals instead of scheduled maintenance.
+
+### `dream:20260907084545:2:3a1148`
+*07.09. 08:45 UTC · Quelle: dream*
+
+Skill proposals accumulate (65) while active goals lag (38), revealing a broken promotion pipeline where proposals never reach production testing.
+
+### `dream:20260907084545:1:d68d46`
+*07.09. 08:45 UTC · Quelle: dream*
+
+Model failure rate (53 errors vs 36 successes) triggers reactive drive goals but lacks automated failover, causing repeated manual intervention cycles.
 
 ### `tool:veraltete-schwarmziele-aktualisieren`
 *07.09. 08:28 UTC · Quelle: hands*
@@ -44887,60 +44912,10 @@ z-ai/glm-5.2:free returned HTTP 429 on every attempt (8+ consecutive failures ac
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
 
-### `dream:202608240841:5`
-*24.08. 08:41 UTC · Quelle: dream*
-
-Skill proposals accumulate without ever being built (confirmed by the drive_goal gap signal) and prune_run removed 0 items, so the dream cycle needs a mandatory promote-one-proposal step and a retention cap on stale proposals.
-
-### `dream:202608240841:4`
-*24.08. 08:41 UTC · Quelle: dream*
-
-Simulation issued verdict 'go' while flagging 3 unresolved risks and the run then failed at score 3, so 'go' must be gated on every high-severity risk having a recorded mitigation.
-
-### `dream:202608240841:3`
-*24.08. 08:41 UTC · Quelle: dream*
-
-The critic's blocking issue ('Tool calls') is an execution/harness-format failure that text-only variant mutation cannot fix; candidates must be validated against the real checker (bewerte.py) inside the loop rather than only by LLM-judged scores.
-
-### `dream:202608240841:2`
-*24.08. 08:41 UTC · Quelle: dream*
-
-Evolution produced variants scoring up to 9/10 yet the final swarm artifact still scored 3/10, meaning the winning variant was never integrated into the deliverable — winner selection must be followed by a verified handoff into the submitted artifact.
-
-### `dream:202608240841:1`
-*24.08. 08:41 UTC · Quelle: dream*
-
-z-ai/glm-5.2:free returned HTTP 429 on five consecutive calls while nvidia/nemotron-3-ultra succeeded every time, showing the system retries a known-dead provider instead of failing over — provider choice must be driven by recent health, not a fixed preference
-
 ### `last_swarm_goal`
 *24.08. 08:25 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608240824:5`
-*24.08. 08:24 UTC · Quelle: dream*
-
-Risk calibration was exact for the 'Fußball erste Einreichung' goal (predicted 3, actual 3, abs_error 0), so the current risk-scoring heuristic needs no correction.
-
-### `dream:202608240824:4`
-*24.08. 08:24 UTC · Quelle: dream*
-
-dots-studio/dots-3-note-preview:free completed every call successfully (including a 4573-token generation), making it the most reliable fallback observed.
-
-### `dream:202608240824:3`
-*24.08. 08:24 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:202608240824:2`
-*24.08. 08:24 UTC · Quelle: dream*
-
-nvidia/nemotron-3-ultra failed intermittently with 502 'upstream overloaded' yet succeeded on most attempts, showing its failures are transient capacity blips, not outages.
-
-### `dream:202608240824:1`
-*24.08. 08:24 UTC · Quelle: dream*
-
-Free-tier models z-ai/glm-5.2 and google/gemma-* returned persistent 429 rate-limit errors across the whole session, so immediate retries against them only waste time.
 
 ### `last_swarm_goal`
 *24.08. 08:08 UTC · Quelle: system*
