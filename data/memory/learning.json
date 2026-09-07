@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 09:07:22",
+ "stand": "2026-09-07 09:17:42",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -147,6 +147,12 @@
    "quote": 1.0
   },
   {
+   "tool": "selbstprüfung-regelmäßig-erneuern.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -219,12 +225,6 @@
    "quote": 1.0
   },
   {
-   "tool": "wissensgraph-verknüpfungen-reparieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
    "tool": "traum-gedächtnis-system-fertigstellen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -250,12 +250,6 @@
   },
   {
    "tool": "veraltete-wissenstände-auffrischen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "selbstprüfung-regelmäßig-erneuern.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
