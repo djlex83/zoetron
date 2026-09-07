@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11729 Fakten** · Stand 2026-09-07 07:45 UTC · aktualisiert bei jedem Herzschlag
+**11726 Fakten** · Stand 2026-09-07 07:56 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6971
 - **swarm_artifact:** 2125
 - **last_swarm_critique:** 818
-- **anti_pattern:** 583
+- **anti_pattern:** 581
 - **last_swarm_goal:** 550
-- **strategy:** 293
+- **strategy:** 292
 - **tool:** 177
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907075418:5:1ca8ad`
+*07.09. 07:54 UTC · Quelle: dream*
+
+Nemotron 502 errors are transient upstream overloads that recover within seconds, but gemma 429 errors indicate hard quota exhaustion requiring longer cooldown.
+
+### `dream:20260907075418:4:202904`
+*07.09. 07:54 UTC · Quelle: dream*
+
+Task 'Viele Fähigkeiten sortieren' succeeded (score 7, artifact 188 lines) despite 60% model failure rate, proving the fallback chain works but is inefficient.
+
+### `dream:20260907075418:3:ad99fe`
+*07.09. 07:54 UTC · Quelle: dream*
+
+Calibration consistently underestimates cycle count (predicted 5 vs actual 7), causing budget overruns when iteration limits are tight.
+
+### `dream:20260907075418:2:6b6955`
+*07.09. 07:54 UTC · Quelle: dream*
+
+Under conserve metabolism (max_tasks=3, max_iterations=1), the system still wastes budget retrying known-unreliable models instead of failing fast to the proven fallback.
+
+### `dream:20260907075418:1:f873b4`
+*07.09. 07:54 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin:free model is the only consistently reliable endpoint under load, while nemotron suffers 502 upstream overloads and gemma models hit 429 rate limits.
 
 ### `dream:20260907074323:5:6093cd`
 *07.09. 07:43 UTC · Quelle: dream*
@@ -44891,41 +44916,6 @@ score=5; issues=Critic output unparseable.
 *24.08. 07:53 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608240753:5`
-*24.08. 07:53 UTC · Quelle: dream*
-
-Model calls reached 180s latency without timeout enforcement, confirming that default max_tokens and wall-clock timeouts are not being applied at the call site.
-
-### `dream:202608240753:4`
-*24.08. 07:53 UTC · Quelle: dream*
-
-Simulation demanded revisions (verdict='revise') but the model layer could not deliver due to cascading failures, creating a revision loop that cannot complete.
-
-### `dream:202608240753:3`
-*24.08. 07:53 UTC · Quelle: dream*
-
-Free-tier models exhibited correlated 429 rate limits, proving that per-model concurrency limits are insufficient without provider-level semaphores.
-
-### `dream:202608240753:2`
-*24.08. 07:53 UTC · Quelle: dream*
-
-The system launched a complex swarm while in 'conserve' state with stress=1.0, ignoring that high stress should gate new work, not just limit existing work.
-
-### `dream:202608240753:1`
-*24.08. 07:53 UTC · Quelle: dream*
-
-Multiple model failures (502/429) occurred simultaneously across different providers sharing OpenRouter infrastructure, revealing a single-point-of-failure in the provider layer.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: erste eigene Ei:2`
-*24.08. 07:43 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Specification Extraction and Contract Programming - Treat bewerte.py as a black-box specification. Write a dedicated analysis script that executes bewerte.py with instrumentation (e.g., sys.settrace) to record all inputs/outp
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fußball: erste eigene Ei:1`
-*24.08. 07:43 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Interactive REPL-Driven Development with Checkpointing - Start an interactive Python REPL session. First, import bewerte.py and inspect its public API, test functions, and any hidden validation logic using dir(), help(), and
 
 ### `last_swarm_critique`
 *24.08. 07:41 UTC · Quelle: critic*

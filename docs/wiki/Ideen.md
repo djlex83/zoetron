@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:43 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:54 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,8 +25,8 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -36,11 +36,16 @@
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
+- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Nemotron 502 errors are transient upstream overloads that recover within seconds, but gemma 429 errors indicate hard quota exhaustion requiring longer
+- Task 'Viele Fähigkeiten sortieren' succeeded (score 7, artifact 188 lines) despite 60% model failure rate, proving the fallback chain works but is ine
+- Calibration consistently underestimates cycle count (predicted 5 vs actual 7), causing budget overruns when iteration limits are tight.
+- Under conserve metabolism (max_tasks=3, max_iterations=1), the system still wastes budget retrying known-unreliable models instead of failing fast to 
+- The inclusionai/ling-3.0-flash-fin:free model is the only consistently reliable endpoint under load, while nemotron suffers 502 upstream overloads and
 - Skill proposals accumulate in logs but lack an automated pipeline to convert them into tested, registered capabilities.
 - Swarm knowledge staleness is only detected reactively via drive_goal signals after quality has degraded, not proactively via scheduled scans.
 - Reflex tools crash without mandatory preflight validation of script existence, dependency availability, and path resolution.
@@ -51,11 +56,6 @@
 - Error-class-specific recovery strategies — exponential backoff with jitter for rate limits versus immediate provider switch for service overloads — ou
 - Provider diversity with health-aware routing is the most reliable recovery mechanism, as successful requests consistently originated from alternative 
 - Rate-limit (429) and upstream-overload (502) errors are the dominant systemic failure mode, recurring across multiple providers and requiring architec
-- Error trends are reacted to per-event rather than as statistical sequences, causing premature fallbacks and missed systemic issues.
-- No skill enters the registry with a verified test harness, so regressions accumulate silently.
-- Pruning discards 52 events per run without protecting failure contexts, erasing evidence needed for root-cause analysis.
-- Failure context preservation proposals repeat across cycles, showing the system re-discovers the same gap instead of retaining the lesson.
-- Model failures cluster around rate limits (429) and provider overload (502), indicating scheduler lacks provider health awareness.
 
 ---
 
