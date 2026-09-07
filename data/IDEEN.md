@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:35 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation flagged 5 risks and 5 revisions but the subsequent swarm run didn't validate those fixes against reality.
+- Pruning 50 events without causality IDs severs the forensic chain needed to debug why simulations revised 5 times yet swarm didn't converge.
+- Hand actions exit non-zero silently (exit=1, no stderr captured) creating blind spots in tool execution feedback.
+- Swarm convergence at score 7 after only 2 cycles with evolved=true indicates premature termination masquerading as progress.
+- Free-tier model providers fail unpredictably (502 overload, 429 rate limits) making single-provider dependence a reliability anti-pattern.
 - Calibration error of 2 points (predicted 5 vs actual 7) shows the system underestimates its own reliability gains after improvements.
 - Evolution with critic feedback improved variant scores from baseline 7 to 9, but swarm convergence failed after 2 cycles indicating insufficient itera
 - High latency (41-146s) on Nemotron correlates with eventual success, suggesting queue-backlog retry behavior rather than true unavailability.
@@ -51,11 +56,6 @@
 - Metabolism stress at 1.0 with a budget of max 1 iteration is too restrictive to complete meaningful model-revision cycles, creating a deadlock where t
 - Relative file paths (sys.argv[1], ZOETRON_DATA) resolve to nothing when the script expects absolute paths under the real data directory, causing silen
 - Nvidia consistently returns 502 service-overloaded errors while Google returns 429 rate-limit errors, meaning the only reliable model in this environm
-- Self-diagnosis reports zero organ errors while 31 model failures exist, revealing that health checks only inspect internal state and ignore external d
-- Swarm runs terminate at 2 cycles with score=1 and converged=false, indicating the convergence detector is missing or the iteration budget is too low f
-- Reflex tool execution fails on path resolution because tools receive relative paths but the runtime expects absolute paths under ZOETRON_DATA.
-- Model failures (502/429) trigger metabolic conservation that starves swarm budgets, creating a feedback loop where degraded models reduce iterations w
-- Proposed skills accumulate in dream output but lack an execution gateway, causing the system to repeatedly propose the same capabilities without imple
 
 ---
 

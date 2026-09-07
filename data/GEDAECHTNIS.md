@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11805 Fakten** · Stand 2026-09-07 13:37 UTC · aktualisiert bei jedem Herzschlag
+**11805 Fakten** · Stand 2026-09-07 13:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7016
-- **swarm_artifact:** 2142
+- **dream:** 7021
+- **swarm_artifact:** 2140
 - **last_swarm_critique:** 823
-- **anti_pattern:** 583
+- **anti_pattern:** 581
 - **last_swarm_goal:** 555
-- **strategy:** 293
+- **strategy:** 292
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907134651:5:dd9149`
+*07.09. 13:46 UTC · Quelle: dream*
+
+Simulation flagged 5 risks and 5 revisions but the subsequent swarm run didn't validate those fixes against reality.
+
+### `dream:20260907134651:4:2c7689`
+*07.09. 13:46 UTC · Quelle: dream*
+
+Pruning 50 events without causality IDs severs the forensic chain needed to debug why simulations revised 5 times yet swarm didn't converge.
+
+### `dream:20260907134651:3:b60e69`
+*07.09. 13:46 UTC · Quelle: dream*
+
+Hand actions exit non-zero silently (exit=1, no stderr captured) creating blind spots in tool execution feedback.
+
+### `dream:20260907134651:2:72fbc4`
+*07.09. 13:46 UTC · Quelle: dream*
+
+Swarm convergence at score 7 after only 2 cycles with evolved=true indicates premature termination masquerading as progress.
+
+### `dream:20260907134651:1:87e766`
+*07.09. 13:46 UTC · Quelle: dream*
+
+Free-tier model providers fail unpredictably (502 overload, 429 rate limits) making single-provider dependence a reliability anti-pattern.
 
 ### `dream:20260907133453:5:ea94d7`
 *07.09. 13:34 UTC · Quelle: dream*
@@ -45091,16 +45116,6 @@ Repeated non-convergence (3 attempts) should trigger a problem reformulation or 
 *24.08. 14:00 UTC · Quelle: dream*
 
 Tasks fail to converge when act_done is allowed before the swarm reports converged=true, as seen in the Fußball task scoring 4/10 across 3 attempts without convergence.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:2`
-*24.08. 13:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Pipeline-assembler architecture: build run_pipeline programmatically from compos - Replace monolithic handwritten run_pipeline code with a StageComposer: each pipeline phase (extract_facts, enrich, verify_den, synthesize_beat
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:0`
-*24.08. 13:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Schema-driven declarative generation: replace hardcoded template lambdas with a  - Define a JSON Schema per beat type (metric, trend, comparison, causal). Build a SchemaRegistry that maps each raw_context key to a fact-slot w
 
 ### `last_swarm_critique`
 *24.08. 13:37 UTC · Quelle: critic*
