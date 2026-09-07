@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11726 Fakten** · Stand 2026-09-07 07:56 UTC · aktualisiert bei jedem Herzschlag
+**11728 Fakten** · Stand 2026-09-07 08:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6971
+- **dream:** 6976
 - **swarm_artifact:** 2125
 - **last_swarm_critique:** 818
-- **anti_pattern:** 581
+- **anti_pattern:** 579
 - **last_swarm_goal:** 550
-- **strategy:** 292
+- **strategy:** 291
 - **tool:** 177
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907080704:5:dc84f0`
+*07.09. 08:07 UTC · Quelle: dream*
+
+Simulation revision gates (5 risks → 3 applied) effectively catch deployment blockers but are not yet mandatory.
+
+### `dream:20260907080704:4:e34de9`
+*07.09. 08:07 UTC · Quelle: dream*
+
+Evolutionary search improves variant scores (7→9) but swarm convergence fails without stricter critic gates or more cycles.
+
+### `dream:20260907080704:3:c2684b`
+*07.09. 08:07 UTC · Quelle: dream*
+
+Calibration underestimates actual difficulty by approximately 40% (predicted 5 vs actual 7), requiring a systematic correction factor.
+
+### `dream:20260907080704:2:c1b3f4`
+*07.09. 08:07 UTC · Quelle: dream*
+
+Code duplication across generated modules is the dominant quality defect, consistently flagged by critics and limiting score improvements.
+
+### `dream:20260907080704:1:a40ada`
+*07.09. 08:07 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer frequent 429 rate limits and 502 upstream errors, making a single-model strategy unreliable.
 
 ### `dream:20260907075418:5:1ca8ad`
 *07.09. 07:54 UTC · Quelle: dream*
@@ -44896,16 +44921,6 @@ Destructive operations (subprocess) require human approval, creating a hard auto
 *24.08. 08:08 UTC · Quelle: dream*
 
 Free-tier models consistently fail with 429/502 errors under load, making them unreliable for production workflows.
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :2`
-*24.08. 07:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 4, 5]): Adversarial Feature Distillation from Public Narratives - Scrape 50k+ match previews/reports from 3 languages (DE/EN/ES) via RSS/API. Fine-tune a multilingual BERT to extract implicit expert signals: phrasing like 'cr
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Fußball: die Basislinie :0`
-*24.08. 07:57 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 6, 7]): Graph-Based Network Propagation - Model the league as a dynamic weighted directed graph where nodes are teams and edges are matches with weights = goal difference * time decay. Compute eigenvector centrality (PageRank
 
 ### `last_swarm_critique`
 *24.08. 07:56 UTC · Quelle: critic*

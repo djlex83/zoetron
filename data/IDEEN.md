@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 08:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,7 +26,7 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Simulation revision gates (5 risks → 3 applied) effectively catch deployment blockers but are not yet mandatory.
+- Evolutionary search improves variant scores (7→9) but swarm convergence fails without stricter critic gates or more cycles.
+- Calibration underestimates actual difficulty by approximately 40% (predicted 5 vs actual 7), requiring a systematic correction factor.
+- Code duplication across generated modules is the dominant quality defect, consistently flagged by critics and limiting score improvements.
+- Free-tier models on OpenRouter suffer frequent 429 rate limits and 502 upstream errors, making a single-model strategy unreliable.
 - Nemotron 502 errors are transient upstream overloads that recover within seconds, but gemma 429 errors indicate hard quota exhaustion requiring longer
 - Task 'Viele Fähigkeiten sortieren' succeeded (score 7, artifact 188 lines) despite 60% model failure rate, proving the fallback chain works but is ine
 - Calibration consistently underestimates cycle count (predicted 5 vs actual 7), causing budget overruns when iteration limits are tight.
@@ -51,11 +56,6 @@
 - Reflex tools crash without mandatory preflight validation of script existence, dependency availability, and path resolution.
 - Hand actions fail silently when sys.argv[1] and ZOETRON_DATA environment variables are not resolved to absolute paths before file I/O operations.
 - Free-tier models exhibit predictable failure signatures: Google Gemma models consistently return 429 rate limits, Nvidia Nemotron returns 502 upstream
-- Unvalidated skill proliferation (80+ proposals) creates decision noise that delays actual improvement, making deterministic validation gates essential
-- Aggressive event pruning during consolidation risks discarding failure-context snapshots needed for later root-cause correlation and automatic skill p
-- Error-class-specific recovery strategies — exponential backoff with jitter for rate limits versus immediate provider switch for service overloads — ou
-- Provider diversity with health-aware routing is the most reliable recovery mechanism, as successful requests consistently originated from alternative 
-- Rate-limit (429) and upstream-overload (502) errors are the dominant systemic failure mode, recurring across multiple providers and requiring architec
 
 ---
 
