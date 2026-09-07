@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11811 Fakten** · Stand 2026-09-07 15:38 UTC · aktualisiert bei jedem Herzschlag
+**11808 Fakten** · Stand 2026-09-07 15:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7046
-- **swarm_artifact:** 2127
+- **dream:** 7051
+- **swarm_artifact:** 2122
 - **last_swarm_critique:** 823
-- **anti_pattern:** 577
+- **anti_pattern:** 575
 - **last_swarm_goal:** 555
-- **strategy:** 290
+- **strategy:** 289
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907154647:5:0768c8`
+*07.09. 15:46 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures persist, revealing a monitoring blind spot for external dependencies.
+
+### `dream:20260907154647:4:9fc8b1`
+*07.09. 15:46 UTC · Quelle: dream*
+
+Pruning aggressiveness varies wildly (11 facts/21 events vs 3 facts/42 events) suggesting no adaptive retention policy.
+
+### `dream:20260907154647:3:0c1858`
+*07.09. 15:46 UTC · Quelle: dream*
+
+Skill proposals accumulate (10+ in this session) but none transition to implementation, creating a proposal-execution gap.
+
+### `dream:20260907154647:2:f21d7a`
+*07.09. 15:46 UTC · Quelle: dream*
+
+Swarm knowledge decays rapidly; reflex-driven refresh works but lacks scheduled cadence and staleness detection.
+
+### `dream:20260907154647:1:b36c84`
+*07.09. 15:46 UTC · Quelle: dream*
+
+Model latency spikes (60-118s) and repeated 429/502 errors indicate unreliable primary model requiring automated failover.
 
 ### `dream:20260907153521:5:33d9a7`
 *07.09. 15:35 UTC · Quelle: dream*
@@ -45181,16 +45206,6 @@ Nemotron-3-ultra's '502 overloaded' error was transient: the same model succeede
 *24.08. 15:59 UTC · Quelle: dream*
 
 429 rate-limit errors cluster in bursts across multiple models within seconds (ts 1787581873-1787581908), indicating shared upstream throttling rather than per-model failure, so immediate sequential retries on different models are wasted effort.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:2`
-*24.08. 15:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Hybrid-Retrieval-Pipeline: BM25 + Embedding-Fusion als Ranking-Ensemble - Baue das Retrieval als zweistufige Pipeline: Stufe 1 ist ein BM25-Ranker (reine Implementierung, ~30 Zeilen, keine Dependencies), der die Top-20-Kandid
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:0`
-*24.08. 15:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Minimal-Dependency-Ansatz: TF-IDF-Vektoren statt neuronaler Embeddings - Ersetze die unvollständige embedding_recall.py durch eine komplett eigenständige, lauffähige Datei ohne externe Modell-Downloads: Nutze sklearn TfidfVec
 
 ### `last_swarm_critique`
 *24.08. 15:37 UTC · Quelle: critic*
