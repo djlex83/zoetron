@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11733 Fakten** · Stand 2026-09-07 06:22 UTC · aktualisiert bei jedem Herzschlag
+**11734 Fakten** · Stand 2026-09-07 06:32 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6966
-- **swarm_artifact:** 2134
+- **dream:** 6971
+- **swarm_artifact:** 2130
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907063018:5:51dc7c`
+*07.09. 06:30 UTC · Quelle: dream*
+
+Goals and swarm processes decay into stale state without active health checks, causing the system to pursue already-achieved or already-obsolete objectives.
+
+### `dream:20260907063018:4:95dc3d`
+*07.09. 06:30 UTC · Quelle: dream*
+
+Skills enter the registry without deterministic validation, allowing unproven procedures to compound systemic fragility during high-stress periods.
+
+### `dream:20260907063018:3:dd6d3f`
+*07.09. 06:30 UTC · Quelle: dream*
+
+Binary convergence detection masks gradual performance degradation; rolling-window score deltas expose decay patterns that binary flags silently ignore.
+
+### `dream:20260907063018:2:a31979`
+*07.09. 06:30 UTC · Quelle: dream*
+
+Pruning failure events without preserving their goal/tool/provider context creates an amnesia loop where repeated failures cannot be correlated into root causes.
+
+### `dream:20260907063018:1:162596`
+*07.09. 06:30 UTC · Quelle: dream*
+
+Provider-side failures (502 upstream overload, 429 rate limits) dominate the failure landscape, meaning routing resilience and retry strategy outperform model selection as the primary mitigation lever.
 
 ### `dream:20260907062029:5:60787e`
 *07.09. 06:20 UTC · Quelle: dream*
