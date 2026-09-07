@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 08:57 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 09:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Model inference exhibits a cold-start latency penalty of approximately 8x on first call versus subsequent calls, indicating that resource initializati
+- Infrastructure failures (502/429/timeout) and quality failures (hallucination/wrong output) are fundamentally distinct problem classes that share no r
+- Pruning operations that execute without first persisting failure context risk destroying the diagnostic evidence needed to prevent identical failures 
+- The recurring gap between skill proposal and actual implementation indicates a structural execution failure mode, not a planning deficiency, requiring
+- Convergence declared with a null score reveals a systemic validation gap where the system accepts false-positive completion signals without verifying 
 - Zero organ errors across both consolidation cycles confirm structural health; all observed problems are operational and addressable through procedural
 - Model latency for the same model varies dramatically (57s to 163.8s), revealing external load factors that require circuit-breaker and failover handli
 - Stale data accumulation accelerates over time (27 vs 76 events pruned across cycles), indicating pruning frequency must scale with system age and acti
@@ -51,11 +56,6 @@
 - Swarm knowledge staleness is detected only after quality degrades, not proactively, leading to reactive 'refresh' goals instead of scheduled maintenan
 - Skill proposals accumulate (65) while active goals lag (38), revealing a broken promotion pipeline where proposals never reach production testing.
 - Model failure rate (53 errors vs 36 successes) triggers reactive drive goals but lacks automated failover, causing repeated manual intervention cycles
-- The systemic gap between proposal generation and skill instantiation requires an automated pipeline that converts approved proposals into tested, depl
-- Skill proposals lacking runnable test cases with explicit pass/fail criteria become unactionable debt; every proposal must include at least one execut
-- Pruning operations destroy failure context needed for root-cause analysis; the last 30 failure events with goal, tool, and input must be snapshotted b
-- Convergence declarations are invalid without a non-null score and a positive delta from the previous cycle; null scores mask stagnation.
-- Rate-limited models (429 errors) must be classified as infrastructure failures and routed to fallback models immediately instead of being retried.
 
 ---
 

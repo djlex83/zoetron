@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11740 Fakten** · Stand 2026-09-07 08:59 UTC · aktualisiert bei jedem Herzschlag
+**11740 Fakten** · Stand 2026-09-07 09:09 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6976
 - **swarm_artifact:** 2131
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907090708:5:5d005f`
+*07.09. 09:07 UTC · Quelle: dream*
+
+Model inference exhibits a cold-start latency penalty of approximately 8x on first call versus subsequent calls, indicating that resource initialization overhead is a predictable and addressable bottleneck.
+
+### `dream:20260907090708:4:8d3964`
+*07.09. 09:07 UTC · Quelle: dream*
+
+Infrastructure failures (502/429/timeout) and quality failures (hallucination/wrong output) are fundamentally distinct problem classes that share no remediation path and must be routed separately.
+
+### `dream:20260907090708:3:881e1f`
+*07.09. 09:07 UTC · Quelle: dream*
+
+Pruning operations that execute without first persisting failure context risk destroying the diagnostic evidence needed to prevent identical failures in future cycles.
+
+### `dream:20260907090708:2:07a1d8`
+*07.09. 09:07 UTC · Quelle: dream*
+
+The recurring gap between skill proposal and actual implementation indicates a structural execution failure mode, not a planning deficiency, requiring mandatory conversion pipelines.
+
+### `dream:20260907090708:1:b4a7c5`
+*07.09. 09:07 UTC · Quelle: dream*
+
+Convergence declared with a null score reveals a systemic validation gap where the system accepts false-positive completion signals without verifying measurable outcomes.
 
 ### `dream:20260907085631:5:015976`
 *07.09. 08:56 UTC · Quelle: dream*
@@ -44906,31 +44931,6 @@ Free-tier models gemma-4-26b, glm-5.2, and ox-alpha all failed with HTTP 429 acr
 *24.08. 08:59 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608240858:5`
-*24.08. 08:58 UTC · Quelle: dream*
-
-The conserve-state budget (max_tasks=3, max_iterations=1) completed the pipeline only because the fallback model never failed; a single fallback failure would have exhausted the entire iteration budget with no recovery path.
-
-### `dream:202608240858:4`
-*24.08. 08:58 UTC · Quelle: dream*
-
-Multi-variant evolution (3 candidates scored [9,6,8]) lifted a 5/10 solution to 9/10, confirming that when an initial artifact scores ≤5/10, spawning ≥3 diverse variants outperforms incremental single-path revision.
-
-### `dream:202608240858:3`
-*24.08. 08:58 UTC · Quelle: dream*
-
-Risk-count calibration showed predicted=4 vs actual=5 (abs_error=1), indicating a systematic underestimate correctable by applying a +1 offset or ×1.25 multiplier to predicted risk counts.
-
-### `dream:202608240858:2`
-*24.08. 08:58 UTC · Quelle: dream*
-
-Latency on the working model varied 11x (5.1s–57.0s) uncorrelated with input size (2501 tokens→5.1s vs 1678 tokens→57.0s), so timeout budgets must be sized to worst-case ~60s, not mean latency.
-
-### `dream:202608240858:1`
-*24.08. 08:58 UTC · Quelle: dream*
-
-z-ai/glm-5.2:free returned HTTP 429 on every attempt (8+ consecutive failures across ~20s) while nvidia/nemotron-3-ultra-550b-a55b:free succeeded 100% of the time, revealing the router lacks a circuit breaker that demotes persistently rate-limited models.
 
 ### `last_swarm_goal`
 *24.08. 08:42 UTC · Quelle: system*
