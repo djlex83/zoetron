@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11864 Fakten** · Stand 2026-09-07 20:15 UTC · aktualisiert bei jedem Herzschlag
+**11869 Fakten** · Stand 2026-09-07 20:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7111
+- **dream:** 7116
 - **swarm_artifact:** 2120
 - **last_swarm_critique:** 826
 - **anti_pattern:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907202337:5:85999e`
+*07.09. 20:23 UTC · Quelle: dream*
+
+Hand action failures from unresolved relative paths indicate the system lacks pre-validation of file/directory existence before attempting operations.
+
+### `dream:20260907202337:4:934f40`
+*07.09. 20:23 UTC · Quelle: dream*
+
+Swarm data becomes stale and requires periodic refresh, but refresh cycles compete with execution cycles for the same limited resources, creating a deadlock.
+
+### `dream:20260907202337:3:815fd9`
+*07.09. 20:23 UTC · Quelle: dream*
+
+The system enters conserve mode under stress (max 3 tasks, max 1 iteration), which paradoxically prevents the very execution needed to resolve the problems causing the stress.
+
+### `dream:20260907202337:2:7a2cf4`
+*07.09. 20:23 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than they convert into working capabilities, creating a persistent proposal-to-execution gap that wastes metabolic budget.
+
+### `dream:20260907202337:1:94ecf0`
+*07.09. 20:23 UTC · Quelle: dream*
+
+Model endpoint reliability is the primary systemic bottleneck — 502 overloads, 429 rate limits, and latency spikes up to 96s on the same model reveal no health awareness or fallback routing exists.
 
 ### `dream:20260907201334:5:f0b37c`
 *07.09. 20:13 UTC · Quelle: dream*

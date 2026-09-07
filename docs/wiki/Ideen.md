@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 20:13 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 20:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,7 +28,7 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand action failures from unresolved relative paths indicate the system lacks pre-validation of file/directory existence before attempting operations.
+- Swarm data becomes stale and requires periodic refresh, but refresh cycles compete with execution cycles for the same limited resources, creating a de
+- The system enters conserve mode under stress (max 3 tasks, max 1 iteration), which paradoxically prevents the very execution needed to resolve the pro
+- Skill proposals accumulate faster than they convert into working capabilities, creating a persistent proposal-to-execution gap that wastes metabolic b
+- Model endpoint reliability is the primary systemic bottleneck — 502 overloads, 429 rate limits, and latency spikes up to 96s on the same model reveal 
 - Reflex-driven recovery converges reliably when the underlying tool is sound, suggesting that well-designed reflexes are the backbone of autonomous res
 - Event pruning removes noise effectively while preserving all facts, indicating that episodic memory should be cleaned more aggressively than semantic 
 - Accumulating dreams and skill proposals without active evaluation creates a knowledge-action gap that must be closed by structured micro-trials.
@@ -51,11 +56,6 @@
 - Pruning discards 10-30 facts/events per run without preserving experiment_id or decision_context, breaking causal traceability.
 - Reflex actions converge without scoring or critic approval, bypassing the quality gates required for deliberate actions.
 - Model latency consistently exceeds 30s per call, creating a systemic bottleneck that compounds across sequential reasoning steps.
-- Goal selection ignores metabolic state and iteration budgets, leading to resource exhaustion during conserve mode.
-- Relative paths and non-canonical ZOETRON_DATA references cause file-tool failures across environments.
-- Stale swarm feedback persists because no automated refresh mechanism triggers new critique cycles.
-- Skill proposals accumulate without a validation pipeline, causing deployment of untested capabilities.
-- Model failure rate near 50% stems from lacking automated model routing with circuit breakers and fallback budgets.
 
 ---
 
