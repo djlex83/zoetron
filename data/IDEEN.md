@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 01:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 01:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,15 +23,15 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge and dream memories remain stale because no automated refresh or evaluation mechanism triggers on staleness signals.
+- Pruning discards 39 events/5 facts per cycle without audit trail, losing model_error_patterns needed for failure diagnosis.
+- Skill proposals accumulate across cycles but reflex tools that should implement them fail (exit 0, ok: false), creating a proposal-execution gap.
+- Model error rate of 34% (24/70) with latency variance 9-26s makes nemotron-3-ultra unreliable as sole provider without fallback chain.
+- Relative path inputs cause silent tool failures because no canonicalization to ZOETRON_DATA/env/argv[1] occurs before execution.
 - Latency variance (2.9s vs 11s) across models violates implicit SLAs; no budget-aware routing exists to protect time-critical pipelines.
 - Swarm knowledge remains stale despite refresh signals; automatic diff-and-patch sync is missing, leaving the system learning from outdated data.
 - Skill proposals accumulate but rarely execute — the system lacks a 'proposal-to-implementation' gate with accountability.
@@ -51,11 +56,6 @@
 - Stale swarm knowledge recurs as a drive signal, indicating no scheduled refresh or TTL-based invalidation mechanism.
 - Skill proposals accumulate but lack an automated gate that validates, tests, and promotes them to reflex routes.
 - Model latency varies wildly (11s vs 59s) without automatic fallback, causing unpredictable task duration.
-- Planner budget ignores metabolic stress, causing overcommitment during high-load periods.
-- Failure root causes stay hidden without automated correlation of error timestamps against active goals and tools.
-- Skill proposals accumulate but rarely graduate to tested reflexes because no mandatory validation gate exists.
-- Model unreliability (27+ errors) correlates with missing per-provider health tracking and circuit-breaker logic.
-- Stale swarm knowledge (goals/critiques) persistently blocks novel insights and must be auto-refreshed after every convergence cycle.
 
 ---
 

@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11727 Fakten** · Stand 2026-09-07 01:07 UTC · aktualisiert bei jedem Herzschlag
+**11728 Fakten** · Stand 2026-09-07 01:26 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6926
-- **swarm_artifact:** 2171
-- **last_swarm_critique:** 815
-- **anti_pattern:** 587
-- **last_swarm_goal:** 547
-- **strategy:** 295
-- **tool:** 174
+- **swarm_artifact:** 2172
+- **last_swarm_critique:** 816
+- **anti_pattern:** 585
+- **last_swarm_goal:** 548
+- **strategy:** 294
+- **tool:** 175
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:fähigkeits-vorschläge-wirklich-umsetzen`
+*07.09. 01:23 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Vorschläge wirklich umsetzen'. Datei: data/tools/fähigkeits-vorschläge-wirklich-umsetzen.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeits-Vorschläge wi:2`
+*07.09. 01:23 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): LLM-Driven Skill Synthesis from Natural Language - Create an AI agent pipeline that ingests free-text skill proposals, uses a fine-tuned LLM to generate complete implementation code (including error handling, logging, config 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeits-Vorschläge wi:1`
+*07.09. 01:23 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 8): Runtime Skill Plugin Architecture - Redesign the system around a pluggable organ framework where each skill is a self-contained module (WASM component, Docker container, or Python package) with a standardized interface (init,
+
+### `last_swarm_critique`
+*07.09. 01:22 UTC · Quelle: critic*
+
+score=4; issues=Artifact is a gap auditor only - identifies missing skills but does not implement any skill proposals; Goal 'Fähigkeits-Vorschläge wirklich umsetzen' requires actual implementation, not just audit/reporting; Other two artifacts shown are only b
+
+### `last_swarm_goal`
+*07.09. 01:17 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge wirklich umsetzen
+
+### `dream:20260907011655:5:4fbc49`
+*07.09. 01:16 UTC · Quelle: dream*
+
+Swarm knowledge and dream memories remain stale because no automated refresh or evaluation mechanism triggers on staleness signals.
+
+### `dream:20260907011655:4:7463d0`
+*07.09. 01:16 UTC · Quelle: dream*
+
+Pruning discards 39 events/5 facts per cycle without audit trail, losing model_error_patterns needed for failure diagnosis.
+
+### `dream:20260907011655:3:f427f6`
+*07.09. 01:16 UTC · Quelle: dream*
+
+Skill proposals accumulate across cycles but reflex tools that should implement them fail (exit 0, ok: false), creating a proposal-execution gap.
+
+### `dream:20260907011655:2:cb9a0e`
+*07.09. 01:16 UTC · Quelle: dream*
+
+Model error rate of 34% (24/70) with latency variance 9-26s makes nemotron-3-ultra unreliable as sole provider without fallback chain.
+
+### `dream:20260907011655:1:6813de`
+*07.09. 01:16 UTC · Quelle: dream*
+
+Relative path inputs cause silent tool failures because no canonicalization to ZOETRON_DATA/env/argv[1] occurs before execution.
 
 ### `dream:20260907010509:5:aa9677`
 *07.09. 01:05 UTC · Quelle: dream*
@@ -44787,16 +44837,6 @@ Automatic fallback to nemotron-3-super-120b on failure demonstrates that multi-m
 
 Primary model (nemotron-3-ultra) suffers frequent 502 upstream overloads, making single-model dependency a critical reliability risk.
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Hermes-Brücke bauen: Spr:2`
-*24.08. 01:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 6, 7]): Reactive Streams with Explicit Backpressure - Build the bridge as a pull-based pipeline using async generators and explicit flow control (inspired by Reactive Streams / Kotlin Flow / RxPy). Stages: source (TCP/WebSock
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Hermes-Brücke bauen: Spr:1`
-*24.08. 01:16 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 7]): Actor Model with Supervision Hierarchy - Model each concern as an isolated actor (using asyncio + structured concurrency or a lightweight actor library like 'act' or 'kario'). Actors: InboundListener (accepts connecti
-
 ### `last_swarm_critique`
 *24.08. 01:15 UTC · Quelle: critic*
 
@@ -44806,41 +44846,6 @@ score=2; issues=Multiple incompatible implementations across artifacts - each re
 *24.08. 01:11 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608240111:5`
-*24.08. 01:11 UTC · Quelle: dream*
-
-Multiple drive goals target the same reliability-execution gap (model errors, simulation-to-action, half-built queue); a single 'reliability sprint' skill would address all three.
-
-### `dream:202608240111:4`
-*24.08. 01:11 UTC · Quelle: dream*
-
-Calibration consistently underestimates actual effort by ~33% (predicted 3 vs actual 4); planning buffers should scale with historical error magnitude.
-
-### `dream:202608240111:3`
-*24.08. 01:11 UTC · Quelle: dream*
-
-Simulations with risks≥5 and revisions≥2 still receive 'go' verdicts, bypassing the proposed pre-execution gate; gating must be enforced, not advisory.
-
-### `dream:202608240111:2`
-*24.08. 01:11 UTC · Quelle: dream*
-
-Evolution runs can improve scores from 4 to 9 but only trigger after explicit failure; proactive evolution on low-scoring models would prevent repeated poor performance.
-
-### `dream:202608240111:1`
-*24.08. 01:11 UTC · Quelle: dream*
-
-Model latency variance (4-77s) makes fixed timeouts unreliable; circuit breakers must use adaptive thresholds based on recent percentile latency.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:2`
-*24.08. 01:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Declarative Configuration + Code Generation - Describe the bridge in a YAML schema: directories, file naming patterns, message schemas, atomicity requirements. Feed this to a code generator (Jinja2 templates) that emits compl
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:0`
-*24.08. 01:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Test-Driven Contract-First Development - Define explicit interfaces (abstract base classes) for each filesystem operation (ensure_dir, atomic_write, read_response) and the Hermes bridge protocol (command/status/response schem
 
 ### `last_swarm_critique`
 *24.08. 01:08 UTC · Quelle: critic*
