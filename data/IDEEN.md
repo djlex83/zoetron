@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 00:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 00:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes events but not the underlying causes (stale data, model unreliability, proposal backlog).
+- Reflexes execute successfully but skip pre-flight checks (script existence, env, deps), risking silent failures.
+- Stale swarm knowledge recurs as a drive signal, indicating no scheduled refresh or TTL-based invalidation mechanism.
+- Skill proposals accumulate but lack an automated gate that validates, tests, and promotes them to reflex routes.
+- Model latency varies wildly (11s vs 59s) without automatic fallback, causing unpredictable task duration.
 - Planner budget ignores metabolic stress, causing overcommitment during high-load periods.
 - Failure root causes stay hidden without automated correlation of error timestamps against active goals and tools.
 - Skill proposals accumulate but rarely graduate to tested reflexes because no mandatory validation gate exists.
@@ -51,11 +56,6 @@
 - Swarm converges in 1 cycle with evolved=false, indicating premature convergence from insufficient critic diversity or missing exploration pressure.
 - Calibration error of 100% (predicted 4 vs actual 8) reveals critic scoring is uncalibrated, making all downstream selection decisions unreliable.
 - Model latency variance (138s vs 15s) and 27 errors indicate single-provider dependency creates systemic unreliability requiring routing with fallbacks
-- Self-diagnosis reports zero organ errors while hand_action fails on path resolution, revealing a blind spot between organ health and execution-layer I
-- Pruning discards 24 facts and 1 event without recording retention scores or reasons, losing diagnostic value for model_error_patterns.
-- Goals mark converged=true with score=null and no critic sign-off, allowing incomplete work to pass convergence gates.
-- Relative path inputs bypass ZOETRON_DATA/env/argv[1] canonicalization, making hand_action fail with 'nothing read' despite valid logical paths.
-- Model provider failures cascade silently without automatic fallback, causing 502/429 errors to halt swarm execution despite available alternatives.
 
 ---
 

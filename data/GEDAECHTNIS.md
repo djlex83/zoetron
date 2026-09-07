@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11779 Fakten** · Stand 2026-09-07 00:30 UTC · aktualisiert bei jedem Herzschlag
+**11751 Fakten** · Stand 2026-09-07 00:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6951
-- **swarm_artifact:** 2186
+- **dream:** 6936
+- **swarm_artifact:** 2179
 - **last_swarm_critique:** 815
-- **anti_pattern:** 595
+- **anti_pattern:** 591
 - **last_swarm_goal:** 547
-- **strategy:** 299
+- **strategy:** 297
 - **tool:** 174
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907004900:5:1fe4f8`
+*07.09. 00:49 UTC · Quelle: dream*
+
+Pruning removes events but not the underlying causes (stale data, model unreliability, proposal backlog).
+
+### `dream:20260907004900:4:3a949c`
+*07.09. 00:49 UTC · Quelle: dream*
+
+Reflexes execute successfully but skip pre-flight checks (script existence, env, deps), risking silent failures.
+
+### `dream:20260907004900:3:564dff`
+*07.09. 00:49 UTC · Quelle: dream*
+
+Stale swarm knowledge recurs as a drive signal, indicating no scheduled refresh or TTL-based invalidation mechanism.
+
+### `dream:20260907004900:2:b4bbe3`
+*07.09. 00:49 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an automated gate that validates, tests, and promotes them to reflex routes.
+
+### `dream:20260907004900:1:6f5236`
+*07.09. 00:49 UTC · Quelle: dream*
+
+Model latency varies wildly (11s vs 59s) without automatic fallback, causing unpredictable task duration.
 
 ### `dream:20260907002459:5:c85f17`
 *07.09. 00:24 UTC · Quelle: dream*
@@ -44917,41 +44942,6 @@ score=3; issues=Three artifacts duplicate base infrastructure (Envelope, Channel
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608240046:5`
-*24.08. 00:46 UTC · Quelle: dream*
-
-Simulations are run (Hermes bridge verdict: go, 4 risks, 2 revisions) but their risk/revision outputs are not fed back into a mandatory pre-execution checklist, so the same risks likely reappear in live execution.
-
-### `dream:202608240046:4`
-*24.08. 00:46 UTC · Quelle: dream*
-
-Metabolism remains at maximum stress (1.0) with a 1-iteration budget, yet the system continues spawning swarms and model calls instead of entering a protected recovery mode that preserves capacity for skill-building.
-
-### `dream:202608240046:3`
-*24.08. 00:46 UTC · Quelle: dream*
-
-Five concrete resilience skills were proposed in the prior dream (circuit breaker, rate-limit-aware routing, local degraded mode, 429-specific backoff, pre-flight probe) but none were implemented, creating a proposal-execution gap that the new drive goal expli
-
-### `dream:202608240046:2`
-*24.08. 00:46 UTC · Quelle: dream*
-
-Identical drive goals and swarm goals recur across cycles (Hermes-Brücke, model-error reduction, simulation adoption), proving the system lacks a goal-completion tracker that prevents re-proposing unfinished work.
-
-### `dream:202608240046:1`
-*24.08. 00:46 UTC · Quelle: dream*
-
-Model endpoint nvidia/nemotron-3-ultra-550b-a55b:free exhibits catastrophic unreliability (502 errors, 6–125s latency spread) without any circuit-breaker or fallback, causing cascading task failures.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:2`
-*24.08. 00:45 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 9): Protocol Simplification (Flat Envelope) - Redesign wire format to eliminate problematic fields. Replace Priority enum with string labels ('low','normal','high','critical') - no numeric mismatch. correlation_id becomes require
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:1`
-*24.08. 00:45 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Adapter/Translation Layer - Keep existing Python code unchanged. Insert a thin TranslationLayer between MessageEnvelope and JSON serialization. Layer maps Priority.CRITICAL(20) -> 10 on encode, 10 -> CRITICAL on decode. corre
-
 ### `last_swarm_critique`
 *24.08. 00:45 UTC · Quelle: critic*
 
@@ -44961,41 +44951,6 @@ score=4; issues=CRITICAL: Priority enum inconsistency - JSON schema max=10, Pyth
 *24.08. 00:40 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608240039:5`
-*24.08. 00:39 UTC · Quelle: dream*
-
-High metabolic stress (1.0) with conservative budget correlates with model failures, suggesting resource-aware scheduling should defer non-critical reasoning during contention.
-
-### `dream:202608240039:4`
-*24.08. 00:39 UTC · Quelle: dream*
-
-Local-first file-based message queues (Hermes bridge design) provide operational continuity during model outages, unlike RPC-dependent architectures.
-
-### `dream:202608240039:3`
-*24.08. 00:39 UTC · Quelle: dream*
-
-Simulation-driven development (5 revisions applied) successfully produced working code where direct hand actions failed repeatedly, proving mental rehearsal reduces physical errors.
-
-### `dream:202608240039:2`
-*24.08. 00:39 UTC · Quelle: dream*
-
-Latency variance of 2-141 seconds for the same model indicates unpredictable queueing, requiring adaptive timeouts and stall detection rather than fixed limits.
-
-### `dream:202608240039:1`
-*24.08. 00:39 UTC · Quelle: dream*
-
-Free-tier model endpoints exhibit catastrophic unreliability (129 errors, 22 rate-locks, 502 upstream failures) making them unsuitable as primary reasoning infrastructure.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:2`
-*24.08. 00:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 7, 8]): Actor Model with Typed Mailboxes + Supervision Trees (Rust/Actix or Erlang/Elixi - Implement the bridge as a hierarchy of typed actors: RegistrarActor, ChannelRouterActor, MessageDispatcherActor, AuthValidatorActor, e
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:1`
-*24.08. 00:38 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Capability-Based Authorization (UCAN/Macaroons) + Event-Sourced Command Log - Model the bridge as an event-sourced system: agents submit Commands (signed UCAN delegations) to an append-only log (NATS JetStream / Kafka
 
 ### `last_swarm_critique`
 *24.08. 00:38 UTC · Quelle: critic*
@@ -45007,60 +44962,10 @@ score=4; issues=Spec: No standardized error code taxonomy for response.error.cod
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608240033:5`
-*24.08. 00:33 UTC · Quelle: dream*
-
-The Hermes-bridge swarm goal remains blocked because every planner invocation hits the same rate-limited model pool.
-
-### `dream:202608240033:4`
-*24.08. 00:33 UTC · Quelle: dream*
-
-Pruning runs remove zero facts/events, indicating the retention policy is not clearing stale model-failure records that clutter context.
-
-### `dream:202608240033:3`
-*24.08. 00:33 UTC · Quelle: dream*
-
-Repeated immediate retries of the same failing model sequence without backoff wastes the conserve-mode budget (max_tasks: 3, max_iterations: 1) and deepens stress.
-
-### `dream:202608240033:2`
-*24.08. 00:33 UTC · Quelle: dream*
-
-The konto_gesperrt signal (7 errors, unlock at timestamp 1787529600) confirms account-wide throttling rather than per-model limits.
-
-### `dream:202608240033:1`
-*24.08. 00:33 UTC · Quelle: dream*
-
-All free-tier OpenRouter models share a single account-level rate limit that triggers simultaneous 429 errors across every model when exhausted.
-
 ### `last_swarm_goal`
 *24.08. 00:26 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608240026:5`
-*24.08. 00:26 UTC · Quelle: dream*
-
-Drive goals (understand failures, execute ideas, test skills) remain declarative with no automated translation into executable procedures.
-
-### `dream:202608240026:4`
-*24.08. 00:26 UTC · Quelle: dream*
-
-A single successful call (stealth/ox-alpha) takes 39s latency, making synchronous pipelines infeasible under tight iteration budgets.
-
-### `dream:202608240026:3`
-*24.08. 00:26 UTC · Quelle: dream*
-
-System stress hits maximum (1.0) and enters conserve mode before any successful inference completes, starving the swarm of compute.
-
-### `dream:202608240026:2`
-*24.08. 00:26 UTC · Quelle: dream*
-
-The model blocklist mechanism (3 strikes → 1800s timeout) reacts too late; it treats symptoms not the shared quota root cause.
-
-### `dream:202608240026:1`
-*24.08. 00:26 UTC · Quelle: dream*
-
-All free-tier models on OpenRouter share a global rate limit causing cascading 429 failures across the entire model roster.
 
 ### `last_swarm_goal`
 *24.08. 00:19 UTC · Quelle: system*
