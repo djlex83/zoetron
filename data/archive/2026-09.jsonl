@@ -22000,3 +22000,33 @@
 {"ts": 1788167794.3040607, "kind": "skill_proposal", "payload": {"proposal": "Log simulation-applied delta (revisions requested vs applied) as a metric to detect critique-execution gaps in real time."}}
 {"ts": 1788167794.304113, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
 {"ts": 1788167796.3698556, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788167796.3698535, "schalter_geoeffnet": false}}
+{"ts": 1788167818.467401, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 22.1, "tokens_ein": 522, "tokens_aus": 405}}
+{"ts": 1788167818.4675338, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert viel zu oft. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788167818.4676068, "kind": "drive_goal", "payload": {"title": "Alte Schwarm-Ergebnisse aufräumen", "why": "Marktanalysen liegen seit langem ungenutzt herum. Wir müssen sie prüfen oder löschen.", "signal": "stale"}}
+{"ts": 1788167818.4676692, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten endlich testen", "why": "Viele neue Skills wurden vorgeschlagen, aber kaum ausprobiert. Wir brauchen echte Tests.", "signal": "gap"}}
+{"ts": 1788167821.1036904, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 45}}
+{"ts": 1788167821.1051958, "kind": "reflex_used", "payload": {"goal": "Alte Erinnerungen und Ziele erneuern", "tool": "alte-erinnerungen-aktualisieren.py", "ok": true}}
+{"ts": 1788167821.5096793, "kind": "act_done", "payload": {"goal_title": "Alte Erinnerungen und Ziele erneuern", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788168044.7577405, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788168113.33882, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788168114.8529894, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788168119.2884438, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788168119.2884414, "schalter_geoeffnet": false}}
+{"ts": 1788168119.8504927, "kind": "model_fail", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "error": "endpoint returned no choices (status 200): {'message': 'Upstream error from Nvidia: Service temporarily overloaded', 'code': 502}", "ts": 1788168119.8504903, "schalter_geoeffnet": false}}
+{"ts": 1788168119.9758155, "kind": "model_fail", "payload": {"model": "google/gemma-4-31b-it:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788168119.9758134, "schalter_geoeffnet": false}}
+{"ts": 1788168146.7656877, "kind": "model_ok", "payload": {"model": "google/gemma-4-26b-a4b-it:free", "latency_s": 26.8, "tokens_ein": 1413, "tokens_aus": 1220}}
+{"ts": 1788168146.7662098, "kind": "skill_proposal", "payload": {"proposal": "Implement a dynamic model router with exponential backoff and automatic provider switching upon 429/502 detection."}}
+{"ts": 1788168146.766286, "kind": "skill_proposal", "payload": {"proposal": "Develop an 'Environment Validator' tool to verify file paths and argument availability before executing external scripts."}}
+{"ts": 1788168146.7663677, "kind": "skill_proposal", "payload": {"proposal": "Create a 'Stateful Swarm Recovery' protocol that checkpoints progress to allow resumption after model-induced interruptions."}}
+{"ts": 1788168146.7664497, "kind": "skill_proposal", "payload": {"proposal": "Build a 'Model Health Scorecard' to dynamically weight model selection based on real-time latency and error rates."}}
+{"ts": 1788168146.7665393, "kind": "skill_proposal", "payload": {"proposal": "Standardize script interfaces to use absolute paths derived from a central configuration instead of relative paths."}}
+{"ts": 1788168146.7666285, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788168149.2935379, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788168149.2935348, "schalter_geoeffnet": false}}
+{"ts": 1788168157.517434, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 8.2, "tokens_ein": 519, "tokens_aus": 365}}
+{"ts": 1788168157.5175707, "kind": "drive_goal", "payload": {"title": "Modell-Fehler stark reduzieren", "why": "Das Modell scheitert oft. Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788168157.5176432, "kind": "drive_goal", "payload": {"title": "Marktanalyse endlich nutzen", "why": "Die alte Analyse liegt ungenutzt herum. Wir müssen sie in echte Schritte umsetzen.", "signal": "stale"}}
+{"ts": 1788168157.5177038, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten testen", "why": "Viele Ideen für neue Fähigkeiten existieren. Wir prüfen, welche wirklich funktionieren.", "signal": "gap"}}
+{"ts": 1788168159.0168157, "kind": "drive_mission", "payload": {"title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "why": "Der Critic ist streng - ein echter Erfolg beweist, dass Lernen und Werkzeuge zusammenwirken."}}
+{"ts": 1788168161.1347177, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.35, "gelesen": 52}}
+{"ts": 1788168161.136052, "kind": "reflex_used", "payload": {"goal": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py", "ok": true}}
+{"ts": 1788168161.5385375, "kind": "act_done", "payload": {"goal_title": "Ersten Swarm-Lauf mit Score 8+ konvergieren lassen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788168384.5674174, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}

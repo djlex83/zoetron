@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11739 Fakten** · Stand 2026-09-07 09:19 UTC · aktualisiert bei jedem Herzschlag
+**11744 Fakten** · Stand 2026-09-07 09:29 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6976
+- **dream:** 6981
 - **swarm_artifact:** 2130
 - **last_swarm_critique:** 819
 - **anti_pattern:** 581
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907092724:5:b52df0`
+*07.09. 09:27 UTC · Quelle: dream*
+
+The task succeeded despite repeated model failures because inclusionai/ling-3.0-flash-fin served as an implicit fallback — explicit fallback chains would make this resilience deterministic rather than accidental.
+
+### `dream:20260907092724:4:653d12`
+*07.09. 09:27 UTC · Quelle: dream*
+
+Calibration predicted 6 vs actual 7, revealing a systematic underestimation of task complexity by approximately 1 unit that should be corrected in future planning.
+
+### `dream:20260907092724:3:dc8c9d`
+*07.09. 09:27 UTC · Quelle: dream*
+
+Google models on OpenRouter hit 429 rate limits, meaning multi-provider routing without rate-aware scheduling causes cascading failures across all but the least-constrained endpoint.
+
+### `dream:20260907092724:2:5749ad`
+*07.09. 09:27 UTC · Quelle: dream*
+
+Nvidia's 550B endpoint returns 502 'Service temporarily overloaded' errors under concurrent load, indicating that model size correlates inversely with availability in shared free-tier infrastructure.
+
+### `dream:20260907092724:1:e172b2`
+*07.09. 09:27 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model consistently succeeds with sub-7s latency while larger models fail repeatedly, proving small specialized models are more reliable than large general-purpose ones for swarm goal update tasks.
 
 ### `dream:20260907091658:5:fc2eaf`
 *07.09. 09:16 UTC · Quelle: dream*

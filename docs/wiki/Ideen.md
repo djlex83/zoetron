@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 09:17 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 09:27 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,12 +24,12 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The task succeeded despite repeated model failures because inclusionai/ling-3.0-flash-fin served as an implicit fallback — explicit fallback chains wo
+- Calibration predicted 6 vs actual 7, revealing a systematic underestimation of task complexity by approximately 1 unit that should be corrected in fut
+- Google models on OpenRouter hit 429 rate limits, meaning multi-provider routing without rate-aware scheduling causes cascading failures across all but
+- Nvidia's 550B endpoint returns 502 'Service temporarily overloaded' errors under concurrent load, indicating that model size correlates inversely with
+- The inclusionai/ling-3.0-flash-fin model consistently succeeds with sub-7s latency while larger models fail repeatedly, proving small specialized mode
 - Convergence declarations without null-score and positive-delta validation produce false positives that undermine the reliability of consolidation outc
 - The gap between skill proposals and deployed skills represents a conversion loss where potential capabilities are identified but never materialize int
 - Without persisting failure context before pruning operations, recurring failure patterns become invisible and cannot inform future consolidation cycle
@@ -51,11 +56,6 @@
 - Pruning operations that execute without first persisting failure context risk destroying the diagnostic evidence needed to prevent identical failures 
 - The recurring gap between skill proposal and actual implementation indicates a structural execution failure mode, not a planning deficiency, requiring
 - Convergence declared with a null score reveals a systemic validation gap where the system accepts false-positive completion signals without verifying 
-- Zero organ errors across both consolidation cycles confirm structural health; all observed problems are operational and addressable through procedural
-- Model latency for the same model varies dramatically (57s to 163.8s), revealing external load factors that require circuit-breaker and failover handli
-- Stale data accumulation accelerates over time (27 vs 76 events pruned across cycles), indicating pruning frequency must scale with system age and acti
-- The persistent gap between skill proposals and their actual deployment is the primary systemic failure mode, not individual model errors.
-- Reflex-driven convergence reliably succeeds when the correct tool is matched to the stated goal, making reflex-to-goal mapping the most dependable pro
 
 ---
 
