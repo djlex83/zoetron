@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11791 Fakten** · Stand 2026-09-07 00:07 UTC · aktualisiert bei jedem Herzschlag
+**11779 Fakten** · Stand 2026-09-07 00:30 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6956
-- **swarm_artifact:** 2193
+- **dream:** 6951
+- **swarm_artifact:** 2186
 - **last_swarm_critique:** 815
 - **anti_pattern:** 595
 - **last_swarm_goal:** 547
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907002459:5:c85f17`
+*07.09. 00:24 UTC · Quelle: dream*
+
+Planner budget ignores metabolic stress, causing overcommitment during high-load periods.
+
+### `dream:20260907002459:4:244603`
+*07.09. 00:24 UTC · Quelle: dream*
+
+Failure root causes stay hidden without automated correlation of error timestamps against active goals and tools.
+
+### `dream:20260907002459:3:eb413d`
+*07.09. 00:24 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely graduate to tested reflexes because no mandatory validation gate exists.
+
+### `dream:20260907002459:2:b6e30a`
+*07.09. 00:24 UTC · Quelle: dream*
+
+Model unreliability (27+ errors) correlates with missing per-provider health tracking and circuit-breaker logic.
+
+### `dream:20260907002459:1:2b9e19`
+*07.09. 00:24 UTC · Quelle: dream*
+
+Stale swarm knowledge (goals/critiques) persistently blocks novel insights and must be auto-refreshed after every convergence cycle.
 
 ### `dream:20260907000459:5:758611`
 *07.09. 00:04 UTC · Quelle: dream*
@@ -45042,60 +45067,10 @@ All free-tier models on OpenRouter share a global rate limit causing cascading 4
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608240019:5`
-*24.08. 00:19 UTC · Quelle: dream*
-
-Model latency variance (25s vs 104s for same model) signals unreliable infrastructure that should trigger circuit-breaking before task commitment.
-
-### `dream:202608240019:4`
-*24.08. 00:19 UTC · Quelle: dream*
-
-Memory pruning ran but removed zero facts/events, indicating pruning thresholds are miscalibrated for high-stress consolidation periods.
-
-### `dream:202608240019:3`
-*24.08. 00:19 UTC · Quelle: dream*
-
-Simulation approved execution despite 3 identified risks but did not account for infrastructure-level failures like API rate limits.
-
-### `dream:202608240019:2`
-*24.08. 00:19 UTC · Quelle: dream*
-
-System stress at maximum (1.0) with conserve mode still permits model calls that immediately fail, wasting the single allowed iteration budget.
-
-### `dream:202608240019:1`
-*24.08. 00:19 UTC · Quelle: dream*
-
-Rate limiting (429 errors) cascades across all models when they share the same OpenRouter API gateway, making fallback chains ineffective during quota exhaustion.
-
 ### `last_swarm_goal`
 *24.08. 00:12 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608240012:5`
-*24.08. 00:12 UTC · Quelle: dream*
-
-The Hermes bridge task depends on external model availability, but the system lacks a local fallback or queue to decouple execution from API reliability.
-
-### `dream:202608240012:4`
-*24.08. 00:12 UTC · Quelle: dream*
-
-Repeated swarm starts for the same goal without checkpointing progress indicate a missing idempotency or resume mechanism.
-
-### `dream:202608240012:3`
-*24.08. 00:12 UTC · Quelle: dream*
-
-Conservative metabolism budgets (max_iterations=1) prevent recovery from transient failures, turning temporary rate limits into permanent task abandonment.
-
-### `dream:202608240012:2`
-*24.08. 00:12 UTC · Quelle: dream*
-
-High latency variance (25–288s) on the same model makes fixed timeouts unreliable and wastes budget on stalled calls.
-
-### `dream:202608240012:1`
-*24.08. 00:12 UTC · Quelle: dream*
-
-Rate limits on shared free-tier endpoints cause cascading failures when no backoff or alternative providers exist.
 
 ### `last_swarm_goal`
 *24.08. 00:05 UTC · Quelle: system*

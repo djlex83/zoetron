@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 00:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 00:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,15 +24,15 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Planner budget ignores metabolic stress, causing overcommitment during high-load periods.
+- Failure root causes stay hidden without automated correlation of error timestamps against active goals and tools.
+- Skill proposals accumulate but rarely graduate to tested reflexes because no mandatory validation gate exists.
+- Model unreliability (27+ errors) correlates with missing per-provider health tracking and circuit-breaker logic.
+- Stale swarm knowledge (goals/critiques) persistently blocks novel insights and must be auto-refreshed after every convergence cycle.
 - Reflex route executed hebbian learning tool in 1.06s while swarm took 138s, proving lightweight deterministic paths outperform heavy deliberation for 
 - Five skill proposals generated but zero executed validates that proposal generation without mandatory validation gates produces artifact backlog not c
 - Swarm converges in 1 cycle with evolved=false, indicating premature convergence from insufficient critic diversity or missing exploration pressure.
@@ -51,11 +56,6 @@
 - Goals mark converged=true with score=null and no critic sign-off, allowing incomplete work to pass convergence gates.
 - Relative path inputs bypass ZOETRON_DATA/env/argv[1] canonicalization, making hand_action fail with 'nothing read' despite valid logical paths.
 - Model provider failures cascade silently without automatic fallback, causing 502/429 errors to halt swarm execution despite available alternatives.
-- Drive goals auto-generated from failure signals (30 model errors → 'Modell-Fehler verstehen', stale swarm → 'Schwarm-Wissen aktualisieren') create a c
-- Pruning aggressively removes noise (22 facts, 87 events then 24 facts, 1 event) without losing convergent reflex outcomes, confirming that consolidati
-- Reflex tools for dream/simulation improvement converge reliably (2/2 successes) while model-dependent planning fails, suggesting reflexes should handl
-- Health-check probes before task execution would have prevented 3/4 model failures observed, as the 502 and 429 errors are detectable via lightweight p
-- Free-tier model endpoints exhibit systematic unreliability: NVIDIA returns 502s under load, Gemma hits 429 rate limits, and Nemotron latency varies 5–
 
 ---
 
