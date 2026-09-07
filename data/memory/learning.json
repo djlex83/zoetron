@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 14:36:38",
+ "stand": "2026-09-07 14:48:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -105,9 +105,9 @@
    "quote": 1.0
   },
   {
-   "tool": "mehr-evolution-starten.py",
-   "laeufe": 2,
-   "erfolge": 2,
+   "tool": "veraltete-schwarmziele-aktualisieren.py",
+   "laeufe": 3,
+   "erfolge": 3,
    "quote": 1.0
   },
   {
@@ -214,12 +214,6 @@
   },
   {
    "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "veraltete-schwarmziele-aktualisieren.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -376,6 +370,12 @@
   },
   {
    "tool": "modell-fehler-stark-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "mehr-evolution-starten.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

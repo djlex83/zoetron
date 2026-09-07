@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 14:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 14:49 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Confidence estimates are uncalibrated – predicted scores diverge from actual outcomes, misleading the scheduler.
+- Swarm knowledge decays within hours; critiques and goals become stale before they can be reused.
+- Conserve mode triggers on single iterations without checking task triviality, wasting budget on unwinnable cycles.
+- Skill proposals accumulate but rarely get implemented, creating a proposal-implementation gap that stalls capability growth.
+- Model latency varies wildly (40-74s) for the same provider, making fixed timeouts unreliable and causing cascade failures.
 - Pruning removes 20 events but zero facts, indicating the system accumulates episodic noise while retaining potentially outdated semantic knowledge.
 - Reflex actions using concrete tools (alte-marktanalyse-aktualisieren-und-nutz.py) succeed where abstract planning fails, suggesting tool-grounded exec
 - Swarm knowledge and drive goals become stale without automated refresh cycles, causing the system to re-learn the same lessons (reduce errors, update 
@@ -51,11 +56,6 @@
 - Skill proposals accumulate in dreams but lack a promotion gateway to become executable, versioned capabilities.
 - Drive goals recur across sleep cycles because reflex tools converge without registering reusable skills in the registry.
 - Model endpoint 502 errors cascade into planning failures because no circuit breaker isolates degraded endpoints.
-- Self-diagnosis reports zero organ errors while drive signals (failure, stale, gap) persist, revealing a blind spot: component health ≠ system-level go
-- Skill proposals accumulate in a consistent structured format but lack a gating mechanism (criteria, owner, deadline) to convert them into built capabi
-- Model latency varies by >25% (49–62 s) for the same model, indicating unstable inference conditions that degrade planner reliability and violate impli
-- Swarm knowledge refresh via reflex works reliably when triggered manually, yet the knowledge still goes stale because no automated freshness policy or
-- The system repeatedly sets identical high-level goals (reduce model errors, refresh swarm knowledge, implement proposed skills) across cycles but fail
 
 ---
 

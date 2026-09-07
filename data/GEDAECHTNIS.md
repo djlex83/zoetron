@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11809 Fakten** · Stand 2026-09-07 14:38 UTC · aktualisiert bei jedem Herzschlag
+**11811 Fakten** · Stand 2026-09-07 14:51 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7031
+- **dream:** 7036
 - **swarm_artifact:** 2134
 - **last_swarm_critique:** 823
-- **anti_pattern:** 581
+- **anti_pattern:** 579
 - **last_swarm_goal:** 555
-- **strategy:** 292
+- **strategy:** 291
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907144714:5:c037d4`
+*07.09. 14:47 UTC · Quelle: dream*
+
+Confidence estimates are uncalibrated – predicted scores diverge from actual outcomes, misleading the scheduler.
+
+### `dream:20260907144714:4:ca99fc`
+*07.09. 14:47 UTC · Quelle: dream*
+
+Swarm knowledge decays within hours; critiques and goals become stale before they can be reused.
+
+### `dream:20260907144714:3:176b24`
+*07.09. 14:47 UTC · Quelle: dream*
+
+Conserve mode triggers on single iterations without checking task triviality, wasting budget on unwinnable cycles.
+
+### `dream:20260907144714:2:d50b60`
+*07.09. 14:47 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely get implemented, creating a proposal-implementation gap that stalls capability growth.
+
+### `dream:20260907144714:1:759e3e`
+*07.09. 14:47 UTC · Quelle: dream*
+
+Model latency varies wildly (40-74s) for the same provider, making fixed timeouts unreliable and causing cascade failures.
 
 ### `dream:20260907143428:5:0659e9`
 *07.09. 14:34 UTC · Quelle: dream*
@@ -45146,16 +45171,6 @@ The hard failure 'MemoryStore has no attribute add_fact' in hands-execute shows 
 *24.08. 14:59 UTC · Quelle: dream*
 
 The swarm converged=false at score 2 despite an evolution run producing a 9/10 winner (variant index 1), meaning the winning variant was never actually executed or its output was lost before scoring.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:2`
-*24.08. 14:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Architektural-Institutionell: Extern-Zwang über Ressourcen-Trennung und Budget-M - Verlagere den Loop-Break von Verhalten auf Architektur: Trenne das System physisch in zwei isolierte Komponenten – eine interne Reasoning-Einh
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Extern-Quote in DRIVE: r:1`
-*24.08. 14:34 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Adversarial-Falsifikation: Roter-Teambeweis statt grüner Bestätigung - Kehre die Beweisrichtung um: Statt zu zeigen, dass das System den Loop bricht, baue einen Adversary-Agent, dessen einzige Aufgabe es ist, das System wiede
 
 ### `last_swarm_critique`
 *24.08. 14:33 UTC · Quelle: critic*
