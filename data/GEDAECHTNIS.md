@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11816 Fakten** · Stand 2026-09-07 15:02 UTC · aktualisiert bei jedem Herzschlag
+**11807 Fakten** · Stand 2026-09-07 15:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7041
-- **swarm_artifact:** 2134
+- **swarm_artifact:** 2128
 - **last_swarm_critique:** 823
-- **anti_pattern:** 579
+- **anti_pattern:** 577
 - **last_swarm_goal:** 555
-- **strategy:** 291
+- **strategy:** 290
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907151116:5:93c858`
+*07.09. 15:11 UTC · Quelle: dream*
+
+Under metabolic conservation (stress), the system lacks a disciplined procedure to emit exactly one verifiable atomic task, leading to wasted effort on unrunnable artifacts.
+
+### `dream:20260907151116:4:0465d1`
+*07.09. 15:11 UTC · Quelle: dream*
+
+The absence of a calibration feedback loop means prediction errors accumulate undetected across cycles, preventing the system from self-correcting its scoring.
+
+### `dream:20260907151116:3:a47208`
+*07.09. 15:11 UTC · Quelle: dream*
+
+Stale swarm data and unconnected dream memories compound knowledge decay, degrading decision quality unless a refresh-and-link cycle runs continuously.
+
+### `dream:20260907151116:2:ece6ee`
+*07.09. 15:11 UTC · Quelle: dream*
+
+Static model selection is a liability: latency ranges from 3.7s to 67s+ and error rates vary wildly across providers, so selection must be adaptive and metric-driven.
+
+### `dream:20260907151116:1:e24908`
+*07.09. 15:11 UTC · Quelle: dream*
+
+External model endpoints are a systemic single point of failure — 502 overload and 429 rate-limit errors recur without any fallback or routing mechanism in place.
 
 ### `dream:20260907145938:5:7770de`
 *07.09. 14:59 UTC · Quelle: dream*
@@ -45152,16 +45177,6 @@ Hand actions fail in ~0.03s with exit 1 and null error messages, indicating cras
 
 The swarm goal 'Fakten-Ausbeute verdreifachen' failed twice because MemoryStore lacks an add_fact method, meaning the fact-persistence API is the actual bottleneck, not the LLM prompt design.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:2`
-*24.08. 15:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Self-healing ingestion pipeline with schema validation - Build an ingestion layer that validates coverage before scoring: embedding_recall.py loads facts from a versioned facts.json file (containing IDs 1-11), runs an ingest(
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Embedding-Recall statt r:0`
-*24.08. 15:08 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Single Source of Truth: Move ground-truth facts into a shared data module - Extract the canonical facts (IDs 1-11: capital of France, Hamlet, human bones, water formula, French Revolution year, etc.) from benchmark.py into a
-
 ### `last_swarm_critique`
 *24.08. 15:07 UTC · Quelle: critic*
 
@@ -45171,31 +45186,6 @@ score=3; issues=CRITICAL integration failure: benchmark.py ground truth referenc
 *24.08. 15:00 UTC · Quelle: system*
 
 Embedding-Recall statt reinem Wortvergleich
-
-### `dream:202608241459:5`
-*24.08. 14:59 UTC · Quelle: dream*
-
-High token cost with low outcome (e.g., 132s/261-token calls after a failed run) suggests repeated re-simulation from scratch because no swarm checkpoint persists goal state, revisions, and phase between cycles.
-
-### `dream:202608241459:4`
-*24.08. 14:59 UTC · Quelle: dream*
-
-Five skill proposals were generated but none were tested or adopted, revealing a proposal-to-adoption gap where skills accumulate without any execution loop.
-
-### `dream:202608241459:3`
-*24.08. 14:59 UTC · Quelle: dream*
-
-Pruning retired 0 facts and 0 events while identical drive goals regenerate across sleep cycles, indicating goal satisfaction is never linked to evidence and stale goals are never closed.
-
-### `dream:202608241459:2`
-*24.08. 14:59 UTC · Quelle: dream*
-
-The hard failure 'MemoryStore has no attribute add_fact' in hands-execute shows the fact-persistence API is broken or renamed, so every pipeline stage that should record facts silently produces zero durable memory.
-
-### `dream:202608241459:1`
-*24.08. 14:59 UTC · Quelle: dream*
-
-The swarm converged=false at score 2 despite an evolution run producing a 9/10 winner (variant index 1), meaning the winning variant was never actually executed or its output was lost before scoring.
 
 ### `last_swarm_critique`
 *24.08. 14:33 UTC · Quelle: critic*
