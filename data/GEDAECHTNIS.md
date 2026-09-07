@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11727 Fakten** · Stand 2026-09-07 04:01 UTC · aktualisiert bei jedem Herzschlag
+**11730 Fakten** · Stand 2026-09-07 04:11 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6936
-- **swarm_artifact:** 2158
+- **dream:** 6941
+- **swarm_artifact:** 2156
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907040929:5:60d4df`
+*07.09. 04:09 UTC · Quelle: dream*
+
+Swarm coordination and recall are invoked for model-error reduction but swarm knowledge freshness remains a separate unresolved drive.
+
+### `dream:20260907040929:4:f31aec`
+*07.09. 04:09 UTC · Quelle: dream*
+
+Simulation-based risk assessment (5 risks, 3 revisions) preceded the successful artifact generation, validating pre-flight checks.
+
+### `dream:20260907040929:3:7f0da6`
+*07.09. 04:09 UTC · Quelle: dream*
+
+Metabolic stress at 1.0 triggers conserve mode that caps execution to 3 tasks and 1 iteration, preventing multi-step workflows.
+
+### `dream:20260907040929:2:8f727d`
+*07.09. 04:09 UTC · Quelle: dream*
+
+File operations fail when using relative paths instead of the mandated absolute data path from ZOETRON_DATA and sys.argv[1].
+
+### `dream:20260907040929:1:90552a`
+*07.09. 04:09 UTC · Quelle: dream*
+
+External model APIs (Nemotron, Gemma) frequently fail with 502 overload and 429 rate limits, making inclusionai/ling-3.0-flash-fin the only reliable free-tier option.
 
 ### `dream:20260907035746:5:bcf4b5`
 *07.09. 03:57 UTC · Quelle: dream*

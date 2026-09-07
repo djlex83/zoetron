@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 03:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 04:09 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -32,8 +32,8 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm coordination and recall are invoked for model-error reduction but swarm knowledge freshness remains a separate unresolved drive.
+- Simulation-based risk assessment (5 risks, 3 revisions) preceded the successful artifact generation, validating pre-flight checks.
+- Metabolic stress at 1.0 triggers conserve mode that caps execution to 3 tasks and 1 iteration, preventing multi-step workflows.
+- File operations fail when using relative paths instead of the mandated absolute data path from ZOETRON_DATA and sys.argv[1].
+- External model APIs (Nemotron, Gemma) frequently fail with 502 overload and 429 rate limits, making inclusionai/ling-3.0-flash-fin the only reliable f
 - Pruning removes 34 events but stale-knowledge drive fires immediately after, showing cleanup without freshness verification.
 - Latency variance for the same model (3.6s vs 20.2s) violates any implicit SLA, yet no budget enforcement triggers failover proactively.
 - Self-diagnosis reports zero organ errors while model_fail events persist, indicating diagnostic blind spots for external provider failures.
@@ -51,11 +56,6 @@
 - Reflex execution proceeds without preflight validation (script existence, dependencies, env), risking silent failures that only surface at runtime.
 - The system generates skill proposals reactively after failures but lacks an automated pipeline to promote proposals to tested, registered skills.
 - Model provider failures (502 upstream overload, 429 rate limits) cascade into task failures because no automatic health-aware failover exists.
-- Pruning removes events but fails to preserve failure-pattern correlations needed for root-cause skill generation.
-- Swarm knowledge becomes stale without scheduled re-simulation against current models after each convergence cycle.
-- Reflex-driven error reduction converges locally but does not address systemic provider unreliability or skill validation gaps.
-- Skill proposals accumulate without validation gates, creating a backlog of untested capabilities that never enter the registry.
-- Provider failures (502/429) cascade without real-time health scoring and automatic failover, causing latency spikes and task delays.
 
 ---
 
