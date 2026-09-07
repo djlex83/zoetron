@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 21:07:15",
+ "stand": "2026-09-07 21:25:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -69,12 +69,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 3,
-   "erfolge": 3,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-prüfen-und-ba.py",
    "laeufe": 3,
    "erfolge": 0,
@@ -141,12 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -166,6 +154,12 @@
   },
   {
    "tool": "hebbisches-lernen-im-graph-synapsen-qual.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -244,6 +238,12 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-in-echte-skil.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -451,18 +451,24 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-systematisch-reduzieren.py",
+   "laeufe": 1,
+   "erfolge": 0,
+   "quote": 0.0
   }
  ],
- "haende_quote": 0.867,
+ "haende_quote": 0.863,
  "simulationen_angewandt": 26,
  "swarm_scores": {
-  "n": 21,
+  "n": 22,
   "best": 9.0,
-  "schnitt": 5.71
+  "schnitt": 5.73
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 20,
+   "n": 21,
    "schnitt": 5.95
   },
   "bau": {
