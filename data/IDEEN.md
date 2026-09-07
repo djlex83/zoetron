@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:05 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,8 +26,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex tool returned false negative; only hand-action execution (exit 0, 419 lines running) confirmed true artifact viability.
+- Evolutionary iteration with critic feedback jumped artifact quality from 4/10 to 9/10 in a single generation.
+- Self-calibration is severely miscalibrated (predicted 8 vs actual 4), indicating need for explicit calibration tracking per model/task.
+- Simulation gate caught 5 risks and forced 5 revisions before execution, preventing deployment of a mere 'gap auditor' artifact.
+- Free-tier models (Nemotron, Gemma) exhibit high failure rates (502/429) while inclusionai/ling-3.0-flash-fin delivers consistent low-latency success.
 - Moderate metabolic stress (0.411) with a tight budget (max 4 tasks, 2 iterations) means the system cannot sustain concurrent swarm operations and mode
 - The recurring stale-signal on swarm knowledge indicates that refresh is reactive rather than scheduled, so the system always lags behind updated criti
 - Pruning removed 16 facts and 42 events in a single cycle, which risks losing diagnostic value if no audit trail records why each item was pruned.
@@ -51,11 +56,6 @@
 - Pruning (29 facts, 62 events) runs regularly but no downstream process re-validates surviving facts against fresh swarm signals, risking stale knowled
 - Reflex-driven self-healing (modellfehler-verstehen-und-beheben.py) successfully converged on model-error goals, proving autonomous diagnosis works whe
 - Free-tier models consistently hit 429 rate limits under load, making them unreliable for time-critical paths without a provider-agnostic fallback chai
-- Provider diversity (OpenRouter + inclusionAI + NVIDIA) provides resilience, but without a persistent reliability score, the system cannot route intell
-- Stale swarm data is a recurring trigger for new goals, indicating the system lacks proactive staleness detection and instead relies on reactive signal
-- Reflex-based diagnosis (häufige-modellfehler-besser-verstehen.py) converged successfully, proving that structured self-diagnosis works, but only after
-- The system reliably generates high-quality skill proposals (ProviderReliabilityIndex, ReflexPreflightGate, etc.) but the persistent gap between propos
-- 429 rate-limit errors and 502 upstream-overload errors are two distinct failure classes requiring different mitigation strategies (exponential backoff
 
 ---
 

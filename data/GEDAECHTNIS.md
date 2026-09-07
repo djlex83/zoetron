@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11727 Fakten** · Stand 2026-09-07 02:07 UTC · aktualisiert bei jedem Herzschlag
+**11721 Fakten** · Stand 2026-09-07 02:17 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6931
-- **swarm_artifact:** 2169
+- **dream:** 6926
+- **swarm_artifact:** 2168
 - **last_swarm_critique:** 816
 - **anti_pattern:** 583
 - **last_swarm_goal:** 548
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907021535:5:129361`
+*07.09. 02:15 UTC · Quelle: dream*
+
+Reflex tool returned false negative; only hand-action execution (exit 0, 419 lines running) confirmed true artifact viability.
+
+### `dream:20260907021535:4:e35af3`
+*07.09. 02:15 UTC · Quelle: dream*
+
+Evolutionary iteration with critic feedback jumped artifact quality from 4/10 to 9/10 in a single generation.
+
+### `dream:20260907021535:3:c5b750`
+*07.09. 02:15 UTC · Quelle: dream*
+
+Self-calibration is severely miscalibrated (predicted 8 vs actual 4), indicating need for explicit calibration tracking per model/task.
+
+### `dream:20260907021535:2:ffbd27`
+*07.09. 02:15 UTC · Quelle: dream*
+
+Simulation gate caught 5 risks and forced 5 revisions before execution, preventing deployment of a mere 'gap auditor' artifact.
+
+### `dream:20260907021535:1:21acd2`
+*07.09. 02:15 UTC · Quelle: dream*
+
+Free-tier models (Nemotron, Gemma) exhibit high failure rates (502/429) while inclusionai/ling-3.0-flash-fin delivers consistent low-latency success.
 
 ### `dream:20260907020456:5:c0dd27`
 *07.09. 02:04 UTC · Quelle: dream*
@@ -44781,56 +44806,6 @@ The swarm completion gap (9 started, 2 finished) coincides with metabolism enter
 *24.08. 02:08 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240208:5`
-*24.08. 02:08 UTC · Quelle: dream*
-
-The football goal advanced because its acceptance criterion (pass bewerte.py) was fixed before building and scope was minimized to one file with three functions.
-
-### `dream:202608240208:4`
-*24.08. 02:08 UTC · Quelle: dream*
-
-A swarm was launched while metabolism reported stress 1.0/conserve with max_tasks 3, proving budget fields are currently advisory rather than enforced at launch time.
-
-### `dream:202608240208:3`
-*24.08. 02:08 UTC · Quelle: dream*
-
-The Hermes bridge burned 3 attempts without convergence because no written interface contract existed before coding started; a spec-first approach would have converged in one attempt.
-
-### `dream:202608240208:2`
-*24.08. 02:08 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:202608240208:1`
-*24.08. 02:08 UTC · Quelle: dream*
-
-Five distinct free models returned 429 within the same second, indicating account/IP-level throttling rather than per-model quotas, so rotating models on one provider cannot restore service.
-
-### `dream:202608240207:5`
-*24.08. 02:07 UTC · Quelle: dream*
-
-The Hermes bridge auto-parked after 3 non-convergent attempts instead of looping, validating the 3-strike parking rule as the default escape hatch for any task that fails to converge.
-
-### `dream:202608240207:4`
-*24.08. 02:07 UTC · Quelle: dream*
-
-The football goal advanced only after its scope was shrunk to one file passing bewerte.py, confirming that the smallest evaluator-passing artifact is the correct first deliverable for gated goals.
-
-### `dream:202608240207:3`
-*24.08. 02:07 UTC · Quelle: dream*
-
-Successful call latency scaled with output size (4.5s at 176 output tokens vs 221s at 8526 output tokens), so uncapped generation is the main latency risk and output tokens must be bounded on planning/consolidation calls.
-
-### `dream:202608240207:2`
-*24.08. 02:07 UTC · Quelle: dream*
-
-Model errors require class-specific handling: 429 means backoff-and-rotate, 403 means permanent blacklist, 502 means one retry then skip - a single generic retry policy wastes the retry budget.
-
-### `dream:202608240207:1`
-*24.08. 02:07 UTC · Quelle: dream*
-
-429 rate-limit errors clustered across five different free-tier models within seconds, proving that fallback within the same free pool is useless - failover must cross tiers (paid or local), not just model names.
 
 ### `last_swarm_goal`
 *24.08. 01:51 UTC · Quelle: system*
