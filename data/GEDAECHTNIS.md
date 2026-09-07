@@ -1,20 +1,65 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11793 Fakten** · Stand 2026-09-07 11:58 UTC · aktualisiert bei jedem Herzschlag
+**11805 Fakten** · Stand 2026-09-07 12:28 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7001
-- **swarm_artifact:** 2142
-- **last_swarm_critique:** 822
-- **anti_pattern:** 587
-- **last_swarm_goal:** 554
-- **strategy:** 295
+- **swarm_artifact:** 2148
+- **last_swarm_critique:** 823
+- **anti_pattern:** 589
+- **last_swarm_goal:** 555
+- **strategy:** 296
 - **tool:** 179
-- **hand_result:** 134
+- **hand_result:** 135
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modelle zuverlässiger ma:2`
+*07.09. 12:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Reaktive Überwachung mit Supervisor-Pattern und Schema-Validierter Artefakt-Vera - Statt direkte Timeout-Steuerung via Executor und Event-Loop wird ein reaktives Supervisionsmodell eingeführt: Jede zeitkritische Operation wir
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Modelle zuverlässiger ma:1`
+*07.09. 12:21 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Deklaratives Timeout-DSL mit Konfigurationsgetriebener Durchsetzung - Statt imperativer Decorator wird ein deklaratives Timeout-Konfigurationsschema eingeführt. Jede Funktion/Operation wird über Type-Hints, Annotations oder e
+
+### `last_swarm_critique`
+*07.09. 12:20 UTC · Quelle: critic*
+
+score=7; issues=AsyncTimeoutController erzeugt pro Decorator-Aufruf einen neuen ThreadPoolExecutor – Ressourcenverschwendung und potenzielles Leak bei vielen dekorierten Funktionen; Die sync_wrapper-Funktion im async_timeout-Decorator verwendet loop.run_until_
+
+### `last_swarm_goal`
+*07.09. 12:12 UTC · Quelle: system*
+
+Modelle zuverlässiger machen
+
+### `dream:20260907121108:5:b65435`
+*07.09. 12:11 UTC · Quelle: dream*
+
+Experience logs grow unbounded; routine model_ok events drown signal—only >2σ deviations carry actionable information.
+
+### `dream:20260907121108:4:2f3f07`
+*07.09. 12:11 UTC · Quelle: dream*
+
+Critic feedback contains specific code-level issues (thread timeouts, etc.) but these are not automatically extracted as fitness constraints for evolution.
+
+### `dream:20260907121108:3:3c56b7`
+*07.09. 12:11 UTC · Quelle: dream*
+
+Swarm convergence stalls when score delta <0.5 across cycles, yet the system continues prompt revisions instead of switching to evolutionary code search.
+
+### `dream:20260907121108:2:0f12aa`
+*07.09. 12:11 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack a promotion pipeline; reflex tools execute without verifying skill integration into the agent's repertoire.
+
+### `dream:20260907121108:1:77ff38`
+*07.09. 12:11 UTC · Quelle: dream*
+
+Model reliability degrades silently (502 rates >10%) without automatic throughput adaptation, causing cascading task failures.
 
 ### `anti_pattern:Previous attempt scored 1/10. Goal: Vorgeschlagene Fähigkeit:2`
 *07.09. 11:54 UTC · Quelle: evolution*
@@ -45051,31 +45096,6 @@ score=4; issues=Code ist unvollständig/trunkiert: elo_update bricht mitten in d
 *24.08. 12:04 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608241204:5`
-*24.08. 12:04 UTC · Quelle: dream*
-
-Prune runs remove nothing (0 facts, 0 events) while memory grows with duplicate drive goals, so the same lessons (reduce model errors, finish stalled tasks) are re-derived every cycle instead of being marked resolved.
-
-### `dream:202608241204:4`
-*24.08. 12:04 UTC · Quelle: dream*
-
-Six of nine background tasks remain unfinished across runs, indicating tasks are started without completion tracking or a retry ledger.
-
-### `dream:202608241204:3`
-*24.08. 12:04 UTC · Quelle: dream*
-
-Model failures cluster as 429 rate-limit errors on OpenRouter after long generations (15k–18k output tokens), suggesting bursty high-token calls exhaust the quota; spacing or capping large outputs would prevent them.
-
-### `dream:202608241204:2`
-*24.08. 12:04 UTC · Quelle: dream*
-
-Both football runs ended in a 'revise' verdict with 5 risks identified, yet only 3 and 5 revisions were applied — the simulation loop never converges to an execution step.
-
-### `dream:202608241204:1`
-*24.08. 12:04 UTC · Quelle: dream*
-
-The swarm repeatedly restarts the same football goal from scratch instead of resuming prior work, because 'last_swarm_goal' is recalled but no checkpoint of partial results is stored or reused.
 
 ### `last_swarm_critique`
 *24.08. 11:32 UTC · Quelle: critic*
