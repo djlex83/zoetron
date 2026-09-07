@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 12:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -33,14 +33,19 @@
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 300 % (predicted 4 vs actual 1) shows the estimator ignores model-health signals and artifact-quality gates.
+- Critic feedback repeatedly flags 'no executable Python block' as the root cause of non-convergence, yet the planner/builder loop emits prose artifacts
+- The inclusionai/ling-3.0-flash-fin model delivers consistent sub-4 s latency and zero observed failures, establishing it as the only reliable free-tie
+- Nvidia Nemotron exhibits extreme latency variance (20–121 s) and 502 upstream overload errors, violating iteration-time budgets for multi-step tasks.
+- Free-tier Google models consistently return 429 rate-limit errors, making them unusable as primary endpoints without aggressive backoff and fallback c
 - Hand actions and swarm tasks timeout (20s, 0 bytes read) when fed prose instead of executable code specs.
 - High stress (1.0) with conserve budget (max_tasks=3, max_iterations=1) demands single-step, code-first actions; multi-round exploration is impossible.
 - Self-calibration is broken: predicted effort 4 vs actual 1 (abs_error 3) shows the system cannot estimate its own capability under resource constraint
@@ -51,11 +56,6 @@
 - Pruning events without causality IDs destroys the breadcrumb trail needed to reconstruct why a sequence of failures occurred, making post-mortem analy
 - Without a convergence gate requiring sustained score thresholds over multiple cycles, the system prematurely declares tasks complete and skips deeper 
 - Free-tier LLM APIs fail unpredictably (429 rate limits, 502 upstream overload) and any agent pipeline must treat provider failure as the default case,
-- Experience logs grow unbounded; routine model_ok events drown signal—only >2σ deviations carry actionable information.
-- Critic feedback contains specific code-level issues (thread timeouts, etc.) but these are not automatically extracted as fitness constraints for evolu
-- Swarm convergence stalls when score delta <0.5 across cycles, yet the system continues prompt revisions instead of switching to evolutionary code sear
-- Skill proposals accumulate but lack a promotion pipeline; reflex tools execute without verifying skill integration into the agent's repertoire.
-- Model reliability degrades silently (502 rates >10%) without automatic throughput adaptation, causing cascading task failures.
 
 ---
 

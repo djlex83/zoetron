@@ -1,15 +1,15 @@
 {
- "stand": "2026-09-07 12:48:48",
+ "stand": "2026-09-07 13:00:29",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
-   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
-   "laeufe": 12,
-   "erfolge": 12,
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "tool": "schwarm-ergebnisse-mit-bestandsaufnahme-.py",
    "laeufe": 12,
    "erfolge": 12,
    "quote": 1.0
@@ -423,12 +423,12 @@
    "quote": 0.0
   }
  ],
- "haende_quote": 0.849,
+ "haende_quote": 0.848,
  "simulationen_angewandt": 22,
  "swarm_scores": {
-  "n": 23,
+  "n": 22,
   "best": 9.0,
-  "schnitt": 6.13
+  "schnitt": 6.05
  },
  "score_nach_ziel_typ": {
   "analyse": {

@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11805 Fakten** · Stand 2026-09-07 12:50 UTC · aktualisiert bei jedem Herzschlag
+**11805 Fakten** · Stand 2026-09-07 13:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7006
-- **swarm_artifact:** 2146
+- **dream:** 7011
+- **swarm_artifact:** 2144
 - **last_swarm_critique:** 823
-- **anti_pattern:** 587
+- **anti_pattern:** 585
 - **last_swarm_goal:** 555
-- **strategy:** 295
+- **strategy:** 294
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907125916:5:c7927e`
+*07.09. 12:59 UTC · Quelle: dream*
+
+Calibration error of 300 % (predicted 4 vs actual 1) shows the estimator ignores model-health signals and artifact-quality gates.
+
+### `dream:20260907125916:4:deb8d2`
+*07.09. 12:59 UTC · Quelle: dream*
+
+Critic feedback repeatedly flags 'no executable Python block' as the root cause of non-convergence, yet the planner/builder loop emits prose artifacts instead of validated code.
+
+### `dream:20260907125916:3:12029e`
+*07.09. 12:59 UTC · Quelle: dream*
+
+The inclusionai/ling-3.0-flash-fin model delivers consistent sub-4 s latency and zero observed failures, establishing it as the only reliable free-tier workhorse.
+
+### `dream:20260907125916:2:f0a0ea`
+*07.09. 12:59 UTC · Quelle: dream*
+
+Nvidia Nemotron exhibits extreme latency variance (20–121 s) and 502 upstream overload errors, violating iteration-time budgets for multi-step tasks.
+
+### `dream:20260907125916:1:edfd3a`
+*07.09. 12:59 UTC · Quelle: dream*
+
+Free-tier Google models consistently return 429 rate-limit errors, making them unusable as primary endpoints without aggressive backoff and fallback chains.
 
 ### `dream:20260907124748:5:151aeb`
 *07.09. 12:47 UTC · Quelle: dream*
@@ -45081,16 +45106,6 @@ Output token counts vary 40x between calls on similar inputs (19 to 24326 tokens
 *24.08. 13:00 UTC · Quelle: dream*
 
 Latency is highly bimodal (2.6s to 505s for the same model), so any pipeline design must assume worst-case multi-minute stalls rather than average-case timing.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fakten-Ausbeute pro Beat:1`
-*24.08. 12:49 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Multi-Query-Zerlegung: jeder Beat wird N-mal aus unterschiedlichen Perspektiven  - Fundamentaler Perspektivwechsel: Statt einen Extraktionslauf pro Beat wird jeder Beat parallel durch 3 spezialisierte Linsen analysiert — (1)
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Fakten-Ausbeute pro Beat:0`
-*24.08. 12:49 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Pipeline-Komplettierung mit deterministischem Zwei-Pass-Architekturmuster - Statt den bisherigen Fragment-Ansatz zu reparieren, wird ein vollstaendiges, in sich geschlossenes Modul gebaut: Pass 1 (Extraction) extrahiert Fakte
 
 ### `last_swarm_critique`
 *24.08. 12:48 UTC · Quelle: critic*
