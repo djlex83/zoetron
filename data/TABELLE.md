@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8130 Neuronen · 809632 bewertete Synapsen
+Stand: 8137 Neuronen · 810334 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -12,19 +12,19 @@ Stand: 8130 Neuronen · 809632 bewertete Synapsen
 |---|---|---|---|---|
 | 1 | 💭 | Free-tier model endpoints are unreliable primary dependencies wi… | 942 | 0.23 |
 | 2 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 782 | 0.26 |
-| 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 797 | 0.25 |
+| 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 798 | 0.25 |
 | 4 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 747 | 0.26 |
-| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 797 | 0.23 |
+| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 798 | 0.23 |
 | 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 723 | 0.26 |
 | 7 | 💭 | Repeated 429 errors across four different models indicate system… | 752 | 0.24 |
 | 8 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 744 | 0.25 |
 | 9 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 722 | 0.25 |
 | 10 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 747 | 0.24 |
 | 11 | 💭 | The model `nvidia/nemotron-3-ultra-550b-a55b:free` suffers from … | 679 | 0.26 |
-| 12 | 💭 | Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate lim… | 758 | 0.23 |
-| 13 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 750 | 0.23 |
+| 12 | 💭 | Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate lim… | 759 | 0.23 |
+| 13 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 751 | 0.23 |
 | 14 | 💭 | Free-tier models consistently fail with 429 rate-limit errors an… | 710 | 0.24 |
-| 15 | 💭 | Nvidia Nemotron 3 Ultra is the only consistently available free … | 631 | 0.27 |
+| 15 | 💭 | Nvidia Nemotron 3 Ultra is the only consistently available free … | 632 | 0.27 |
 
 ## Die 15 stärksten Synapsen
 

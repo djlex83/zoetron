@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 17:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 17:22 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High nemotron latency (39–92s) when healthy makes it unsuitable for interactive loops; it should be relegated to background batch roles.
+- Event pruning aggressively removes noise (43→14 events) while fact preservation (0→7 facts pruned) maintains cross-cycle knowledge, validating the cur
+- Reflex-driven goals (simulation use, memory update) converge reliably without model calls, proving that deterministic skills outperform LLM-dependent 
+- Rate limits (429) and upstream overloads (502) are systemic, not transient, requiring proactive exclusion rather than reactive retry.
+- Model provider diversity is ineffective without real-time health routing: three of four providers failed (502, 429, 429) while only inclusionai/ling-3
 - Skill proposals accumulate without guaranteed implementation — the proposal-to-execution gap is itself a recurring systemic pattern.
 - A single low-latency fallback model (inclusionai/ling-3.0-flash-fin at 3.2s) can sustain throughput when all primary providers fail simultaneously.
 - Aggressive event pruning (43 events in one run) risks destroying causal chains needed for post-mortem reconstruction.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate (85) but rarely become missions (1), indicating a missing proposal-to-mission pipeline with explicit acceptance criteria.
 - Reflex-mode execution bypasses the convergence gate (score=null, converged=true), creating a silent quality regression path.
 - Model reliability follows a bimodal pattern: free-tier endpoints either respond quickly or fail with 502/429, requiring tiered routing with health-awa
-- Prediction error persists because actual task scores never feed back into the estimator to recalibrate model-health and artifact-quality weights.
-- Builder artifacts entering simulation without syntactic validation waste compute cycles on guaranteed-fail executions.
-- Swarm knowledge decays silently without TTL-enforced refresh, causing planners to operate on stale context.
-- Skill proposals accumulate without execution because no automated pipeline assigns builders, validates artifacts, and enforces merge deadlines.
-- Model endpoints fail silently with 502/429 errors and latency spikes (67s vs 3.6s), requiring real-time health tracking and automatic failover to main
 
 ---
 

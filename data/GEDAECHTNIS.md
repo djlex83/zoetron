@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11820 Fakten** · Stand 2026-09-07 17:12 UTC · aktualisiert bei jedem Herzschlag
+**11825 Fakten** · Stand 2026-09-07 17:24 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7066
+- **dream:** 7071
 - **swarm_artifact:** 2120
 - **last_swarm_critique:** 824
 - **anti_pattern:** 573
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907172113:5:82901e`
+*07.09. 17:21 UTC · Quelle: dream*
+
+High nemotron latency (39–92s) when healthy makes it unsuitable for interactive loops; it should be relegated to background batch roles.
+
+### `dream:20260907172113:4:4736c6`
+*07.09. 17:21 UTC · Quelle: dream*
+
+Event pruning aggressively removes noise (43→14 events) while fact preservation (0→7 facts pruned) maintains cross-cycle knowledge, validating the current retention policy.
+
+### `dream:20260907172113:3:731ca6`
+*07.09. 17:21 UTC · Quelle: dream*
+
+Reflex-driven goals (simulation use, memory update) converge reliably without model calls, proving that deterministic skills outperform LLM-dependent loops for structured tasks.
+
+### `dream:20260907172113:2:01c731`
+*07.09. 17:21 UTC · Quelle: dream*
+
+Rate limits (429) and upstream overloads (502) are systemic, not transient, requiring proactive exclusion rather than reactive retry.
+
+### `dream:20260907172113:1:8ce19f`
+*07.09. 17:21 UTC · Quelle: dream*
+
+Model provider diversity is ineffective without real-time health routing: three of four providers failed (502, 429, 429) while only inclusionai/ling-3.0-flash-fin delivered consistent low-latency responses.
 
 ### `dream:20260907170913:5:db7477`
 *07.09. 17:09 UTC · Quelle: dream*
