@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 09:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 09:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,12 +25,12 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance of up to 17x between models for identical tasks means speed-aware routing is as critical as accuracy-aware routing for reliable syste
+- Stale swarm knowledge propagates errors silently because freshness is treated as a soft preference rather than a hard convergence gate.
+- Pre-flight validation (ping/latency check) before task assignment prevents the majority of downstream failures and is strictly cheaper than any retry 
+- The gap between skill proposal and deployed skill is the highest-leverage systemic failure mode—ideas accumulate without automated production pipeline
+- Model failures cluster predictably by type (502=overload, 429=rate-limit) and each class requires a distinct handling strategy rather than uniform ret
 - Staleness-driven goals (swarm refresh, model reliability) are reactive; a time-decay priority scheduler would preempt degradation.
 - Skill proposals accumulate in backlog because no automated scaffold→test→promote pipeline exists, turning ideas into technical debt.
 - Swarm evolution consistently plateaus at 7/10 without convergence because critic metric keys drift between cycles, needing schema-locked evaluation co
@@ -51,11 +56,6 @@
 - Google models on OpenRouter hit 429 rate limits, meaning multi-provider routing without rate-aware scheduling causes cascading failures across all but
 - Nvidia's 550B endpoint returns 502 'Service temporarily overloaded' errors under concurrent load, indicating that model size correlates inversely with
 - The inclusionai/ling-3.0-flash-fin model consistently succeeds with sub-7s latency while larger models fail repeatedly, proving small specialized mode
-- Convergence declarations without null-score and positive-delta validation produce false positives that undermine the reliability of consolidation outc
-- The gap between skill proposals and deployed skills represents a conversion loss where potential capabilities are identified but never materialize int
-- Without persisting failure context before pruning operations, recurring failure patterns become invisible and cannot inform future consolidation cycle
-- Stale swarm goals cause reflex failures because the system acts on outdated knowledge without detecting or flagging knowledge decay before execution.
-- Upstream provider failures (502, 429) recur across cycles, indicating that single-provider dependency is a systemic fragility requiring automatic fail
 
 ---
 
