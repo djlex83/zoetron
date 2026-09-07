@@ -1,25 +1,25 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:32 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
 - Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuo *(hatte die Idee 7×)*
+- ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 6×)*
+- ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 6×)*
+- ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 6×)*
+- ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 6×)*
 - Add @circuit_breaker decorator with configurable failure threshold, half-open probe interval, and automatic me *(hatte die Idee 5×)*
 - Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run i *(hatte die Idee 5×)*
 - Integrate model_fail events into Selbstdiagnose module to automatically flag degraded external dependencies as *(hatte die Idee 5×)*
 - PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem a *(hatte die Idee 5×)*
 - DriveScheduler: topologically sort active goals by prerequisite dependency (model reliability → swarm update → *(hatte die Idee 5×)*
 - Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backof *(hatte die Idee 5×)*
-- ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 5×)*
-- ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 5×)*
-- ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 5×)*
-- ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 5×)*
+- StalenessDetector: proactively scan swarm data age on a scheduled basis (e.g., hourly), emitting drive_goal ev *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
-- Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,8 +27,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
@@ -36,11 +36,16 @@
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate in logs but lack an automated pipeline to convert them into tested, registered capabilities.
+- Swarm knowledge staleness is only detected reactively via drive_goal signals after quality has degraded, not proactively via scheduled scans.
+- Reflex tools crash without mandatory preflight validation of script existence, dependency availability, and path resolution.
+- Hand actions fail silently when sys.argv[1] and ZOETRON_DATA environment variables are not resolved to absolute paths before file I/O operations.
+- Free-tier models exhibit predictable failure signatures: Google Gemma models consistently return 429 rate limits, Nvidia Nemotron returns 502 upstream
 - Unvalidated skill proliferation (80+ proposals) creates decision noise that delays actual improvement, making deterministic validation gates essential
 - Aggressive event pruning during consolidation risks discarding failure-context snapshots needed for later root-cause correlation and automatic skill p
 - Error-class-specific recovery strategies — exponential backoff with jitter for rate limits versus immediate provider switch for service overloads — ou
@@ -51,11 +56,6 @@
 - Pruning discards 52 events per run without protecting failure contexts, erasing evidence needed for root-cause analysis.
 - Failure context preservation proposals repeat across cycles, showing the system re-discovers the same gap instead of retaining the lesson.
 - Model failures cluster around rate limits (429) and provider overload (502), indicating scheduler lacks provider health awareness.
-- Model fallback to healthy endpoints must be immediate and systematic, using exponential backoff with jitter, rather than retrying the same failing end
-- Every skill proposal that lacks at least one runnable test case with explicit pass/fail criteria is insufficient for deployment and should be rejected
-- Pruning operations without cascading dependency invalidation risk leaving orphaned or unverified facts in the knowledge graph, corrupting downstream r
-- Convergence declarations are unreliable when scores are null; a valid convergence requires a non-null score with a positive improvement delta from the
-- Infrastructure failures such as 429 rate limits must be classified distinctly from model quality failures and routed to separate remediation pipelines
 
 ---
 

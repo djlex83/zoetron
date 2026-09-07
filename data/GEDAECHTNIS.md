@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11734 Fakten** · Stand 2026-09-07 07:34 UTC · aktualisiert bei jedem Herzschlag
+**11729 Fakten** · Stand 2026-09-07 07:45 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6971
-- **swarm_artifact:** 2127
+- **swarm_artifact:** 2125
 - **last_swarm_critique:** 818
-- **anti_pattern:** 585
+- **anti_pattern:** 583
 - **last_swarm_goal:** 550
-- **strategy:** 294
+- **strategy:** 293
 - **tool:** 177
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907074323:5:6093cd`
+*07.09. 07:43 UTC · Quelle: dream*
+
+Skill proposals accumulate in logs but lack an automated pipeline to convert them into tested, registered capabilities.
+
+### `dream:20260907074323:4:3eb1f0`
+*07.09. 07:43 UTC · Quelle: dream*
+
+Swarm knowledge staleness is only detected reactively via drive_goal signals after quality has degraded, not proactively via scheduled scans.
+
+### `dream:20260907074323:3:bf1bc9`
+*07.09. 07:43 UTC · Quelle: dream*
+
+Reflex tools crash without mandatory preflight validation of script existence, dependency availability, and path resolution.
+
+### `dream:20260907074323:2:09cf36`
+*07.09. 07:43 UTC · Quelle: dream*
+
+Hand actions fail silently when sys.argv[1] and ZOETRON_DATA environment variables are not resolved to absolute paths before file I/O operations.
+
+### `dream:20260907074323:1:02967e`
+*07.09. 07:43 UTC · Quelle: dream*
+
+Free-tier models exhibit predictable failure signatures: Google Gemma models consistently return 429 rate limits, Nvidia Nemotron returns 502 upstream errors, while inclusionai/ling-3.0-flash-fin:free maintains reliable sub-10s latency.
 
 ### `dream:20260907073140:5:dcd8eb`
 *07.09. 07:31 UTC · Quelle: dream*
@@ -44911,41 +44936,6 @@ score=3; issues=Tool calls only cover the first step of reading the file. Missin
 *24.08. 07:38 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240738:5`
-*24.08. 07:38 UTC · Quelle: dream*
-
-Metabolism stress=1.0 with 'conserve' state forces max 3 tasks/iteration, proving resource limits directly constrain throughput.
-
-### `dream:202608240738:4`
-*24.08. 07:38 UTC · Quelle: dream*
-
-60 unimplemented skill proposals reveal a bottleneck in proposal-to-execution pipelines, stalling system improvement.
-
-### `dream:202608240738:3`
-*24.08. 07:38 UTC · Quelle: dream*
-
-Calibration error of 1 (predicted 4, actual 3) suggests model confidence is misaligned with outcomes, requiring recalibration loops.
-
-### `dream:202608240738:2`
-*24.08. 07:38 UTC · Quelle: dream*
-
-The simulation gate's 'revise' verdict with risks=5 shows that high-risk tasks proceed without mandatory mitigation, leading to wasted cycles.
-
-### `dream:202608240738:1`
-*24.08. 07:38 UTC · Quelle: dream*
-
-Rate-limiting errors (429) indicate the system is exceeding API quotas, requiring backoff/retry logic to avoid cascading failures.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fußball: erste eigene Ei:2`
-*24.08. 07:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Black-Box Optimization with Feedback Loop - Treat bewerte.py as a black-box oracle that returns a score. Build a parameterized prediction pipeline (e.g., a simple logistic regression with configurable output formatting). Use
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fußball: erste eigene Ei:1`
-*24.08. 07:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Specification-Driven Development with Property-Based Testing - Define formal Pydantic models for the expected input (match features) and output (probabilities) based on the Fußball domain. Use Hypothesis to generate thousands
 
 ### `last_swarm_critique`
 *24.08. 07:34 UTC · Quelle: critic*
