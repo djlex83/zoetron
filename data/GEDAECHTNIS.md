@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11744 Fakten** · Stand 2026-09-07 09:29 UTC · aktualisiert bei jedem Herzschlag
+**11744 Fakten** · Stand 2026-09-07 09:42 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6981
 - **swarm_artifact:** 2130
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907093923:5:87af74`
+*07.09. 09:39 UTC · Quelle: dream*
+
+Staleness-driven goals (swarm refresh, model reliability) are reactive; a time-decay priority scheduler would preempt degradation.
+
+### `dream:20260907093923:4:3c7eeb`
+*07.09. 09:39 UTC · Quelle: dream*
+
+Skill proposals accumulate in backlog because no automated scaffold→test→promote pipeline exists, turning ideas into technical debt.
+
+### `dream:20260907093923:3:447b96`
+*07.09. 09:39 UTC · Quelle: dream*
+
+Swarm evolution consistently plateaus at 7/10 without convergence because critic metric keys drift between cycles, needing schema-locked evaluation contracts.
+
+### `dream:20260907093923:2:131c9a`
+*07.09. 09:39 UTC · Quelle: dream*
+
+Upstream 502/503 errors from Nvidia Nemotron indicate provider overload, not model failure, demanding immediate failover to healthy alternatives.
+
+### `dream:20260907093923:1:84f9b6`
+*07.09. 09:39 UTC · Quelle: dream*
+
+Rate-limited models (429) cluster on specific providers (Google Gemma) and require exponential backoff with jitter plus provider-level circuit breaking.
 
 ### `dream:20260907092724:5:b52df0`
 *07.09. 09:27 UTC · Quelle: dream*
@@ -44921,31 +44946,6 @@ A 'revise' verdict with 5 flagged risks produced 0 applied revisions, showing si
 *24.08. 09:33 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608240933:5`
-*24.08. 09:33 UTC · Quelle: dream*
-
-Skill proposals keep accumulating (e.g., the circuit breaker was proposed again) while none were executed this cycle, making the proposal-to-execution gap the top reliability bottleneck.
-
-### `dream:202608240933:4`
-*24.08. 09:33 UTC · Quelle: dream*
-
-The simulate→revise loop detected 4 risks and applied 3 revisions before execution, proving pre-flight validation catches problems cheaply and should precede every swarm launch.
-
-### `dream:202608240933:3`
-*24.08. 09:33 UTC · Quelle: dream*
-
-Stress level 1.0 triggered conserve mode (max_tasks=3, max_iterations=1), which throttled spend but the swarm still launched a full new goal, so budgets should also gate swarm starts.
-
-### `dream:202608240933:2`
-*24.08. 09:33 UTC · Quelle: dream*
-
-Model reliability is highly uneven: nvidia/nemotron-3-ultra succeeded twice (12s and 80s) while stealth/ox-alpha and z-ai/glm-5.2 failed repeatedly, meaning fallback order must be dynamic, not fixed.
-
-### `dream:202608240933:1`
-*24.08. 09:33 UTC · Quelle: dream*
-
-OpenRouter free-tier rate limits (HTTP 429) caused the majority of model failures, clustering when several requests fire within seconds, so request pacing or backoff is mandatory.
 
 ### `last_swarm_goal`
 *24.08. 09:16 UTC · Quelle: system*

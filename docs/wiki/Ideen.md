@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 09:27 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 09:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,12 +23,12 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Staleness-driven goals (swarm refresh, model reliability) are reactive; a time-decay priority scheduler would preempt degradation.
+- Skill proposals accumulate in backlog because no automated scaffold→test→promote pipeline exists, turning ideas into technical debt.
+- Swarm evolution consistently plateaus at 7/10 without convergence because critic metric keys drift between cycles, needing schema-locked evaluation co
+- Upstream 502/503 errors from Nvidia Nemotron indicate provider overload, not model failure, demanding immediate failover to healthy alternatives.
+- Rate-limited models (429) cluster on specific providers (Google Gemma) and require exponential backoff with jitter plus provider-level circuit breakin
 - The task succeeded despite repeated model failures because inclusionai/ling-3.0-flash-fin served as an implicit fallback — explicit fallback chains wo
 - Calibration predicted 6 vs actual 7, revealing a systematic underestimation of task complexity by approximately 1 unit that should be corrected in fut
 - Google models on OpenRouter hit 429 rate limits, meaning multi-provider routing without rate-aware scheduling causes cascading failures across all but
@@ -51,11 +56,6 @@
 - Without persisting failure context before pruning operations, recurring failure patterns become invisible and cannot inform future consolidation cycle
 - Stale swarm goals cause reflex failures because the system acts on outdated knowledge without detecting or flagging knowledge decay before execution.
 - Upstream provider failures (502, 429) recur across cycles, indicating that single-provider dependency is a systemic fragility requiring automatic fail
-- Model inference exhibits a cold-start latency penalty of approximately 8x on first call versus subsequent calls, indicating that resource initializati
-- Infrastructure failures (502/429/timeout) and quality failures (hallucination/wrong output) are fundamentally distinct problem classes that share no r
-- Pruning operations that execute without first persisting failure context risk destroying the diagnostic evidence needed to prevent identical failures 
-- The recurring gap between skill proposal and actual implementation indicates a structural execution failure mode, not a planning deficiency, requiring
-- Convergence declared with a null score reveals a systemic validation gap where the system accepts false-positive completion signals without verifying 
 
 ---
 
