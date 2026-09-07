@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 04:09:44",
+ "stand": "2026-09-07 04:19:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -421,14 +421,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "fehler-systematisch-sammeln-und-verstehe.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
- "haende_quote": 0.852,
+ "haende_quote": 0.856,
  "simulationen_angewandt": 21,
  "swarm_scores": {
-  "n": 24,
+  "n": 23,
   "best": 9.0,
-  "schnitt": 5.75
+  "schnitt": 5.61
  },
  "score_nach_ziel_typ": {
   "analyse": {

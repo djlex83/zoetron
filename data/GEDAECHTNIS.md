@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11730 Fakten** · Stand 2026-09-07 04:11 UTC · aktualisiert bei jedem Herzschlag
+**11729 Fakten** · Stand 2026-09-07 04:21 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6941
-- **swarm_artifact:** 2156
+- **swarm_artifact:** 2155
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907041923:5:f79d2c`
+*07.09. 04:19 UTC · Quelle: dream*
+
+Hand actions (file reads) complete in <0.5s while model calls take 5-55s, making model latency the dominant bottleneck and primary failure surface.
+
+### `dream:20260907041923:4:17ba58`
+*07.09. 04:19 UTC · Quelle: dream*
+
+Calibration error of 1 (predicted 6 vs actual 7) reveals the predictor overestimates failure severity, causing wasted compute on over-engineered fixes.
+
+### `dream:20260907041923:3:5c1469`
+*07.09. 04:19 UTC · Quelle: dream*
+
+Evolution/swarm cycles run without convergence (score 7, converged=false) because critic feedback ('Schwere Abhängigkeit von Fallb') indicates architectural brittleness, not parameter tuning issues.
+
+### `dream:20260907041923:2:9b87d9`
+*07.09. 04:19 UTC · Quelle: dream*
+
+The system lacks adaptive model routing — it repeatedly retries known-failing endpoints instead of failing over to the reliable Ling model.
+
+### `dream:20260907041923:1:4628f7`
+*07.09. 04:19 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic failure modes: Nemotron suffers 502 overloads and timeouts, Gemma models hit 429 rate limits, while Ling-3.0-flash-fin consistently succeeds with 3-5s latency.
 
 ### `dream:20260907040929:5:60d4df`
 *07.09. 04:09 UTC · Quelle: dream*
@@ -44836,31 +44861,6 @@ Latency spikes above 200s occur exclusively on calls emitting ~8000+ output toke
 *24.08. 04:12 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240411:5`
-*24.08. 04:11 UTC · Quelle: dream*
-
-The failure-driven goal 'why do models fail' was re-emitted across consecutive cycles without resolution, indicating that recurring drives signal an unresolved root cause requiring a dedicated diagnostic task rather than re-emission.
-
-### `dream:202608240411:4`
-*24.08. 04:11 UTC · Quelle: dream*
-
-Model latency is strongly bimodal (20–50s vs 125–172s), so routing long-generation calls away from slow endpoints whenever rolling p95 exceeds 60s would roughly halve wall-clock time.
-
-### `dream:202608240411:3`
-*24.08. 04:11 UTC · Quelle: dream*
-
-Conserve mode (stress 1.0, max 3 tasks, 1 iteration) failed to prevent multiple >120s, 2–7k-token model calls, so budget limits must constrain call count and duration directly, not just task count.
-
-### `dream:202608240411:2`
-*24.08. 04:11 UTC · Quelle: dream*
-
-With 53 accumulated skill proposals but only ~3 ever tested, idea generation systematically outpaces execution; the bottleneck is the missing automatic conversion of dream output into scheduled tasks.
-
-### `dream:202608240411:1`
-*24.08. 04:11 UTC · Quelle: dream*
-
-The SimulationGate was proposed in the prior dream cycle yet the next swarm still ran with verdict='revise', 5 risks, and 0 applied revisions — skill proposals change behavior only when converted into enforced code.
 
 ### `last_swarm_goal`
 *24.08. 03:53 UTC · Quelle: system*
