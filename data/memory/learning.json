@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 05:51:41",
+ "stand": "2026-09-07 06:01:22",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -427,14 +427,20 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-skills-wirklich-testen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   }
  ],
  "haende_quote": 0.861,
- "simulationen_angewandt": 20,
+ "simulationen_angewandt": 19,
  "swarm_scores": {
-  "n": 23,
+  "n": 22,
   "best": 9.0,
-  "schnitt": 5.61
+  "schnitt": 5.59
  },
  "score_nach_ziel_typ": {
   "analyse": {

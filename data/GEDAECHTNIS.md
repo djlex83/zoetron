@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11732 Fakten** · Stand 2026-09-07 05:53 UTC · aktualisiert bei jedem Herzschlag
+**11730 Fakten** · Stand 2026-09-07 06:03 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6961
-- **swarm_artifact:** 2138
+- **swarm_artifact:** 2136
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907060107:5:63eaad`
+*07.09. 06:01 UTC · Quelle: dream*
+
+Pruning is aggressive but non-cascading — dependent facts can become orphans when parent events are pruned, creating latent inconsistency.
+
+### `dream:20260907060107:4:c5a315`
+*07.09. 06:01 UTC · Quelle: dream*
+
+Reflex mutations execute without transaction safety or rollback logging, meaning any erroneous reflex call can corrupt state irreversibly.
+
+### `dream:20260907060107:3:b85c61`
+*07.09. 06:01 UTC · Quelle: dream*
+
+Skill proposals without mandatory validation or bootstrap actions accumulate as unactionable debt — the 'gap' signal confirms proposals rarely become operational skills.
+
+### `dream:20260907060107:2:5054ac`
+*07.09. 06:01 UTC · Quelle: dream*
+
+Knowledge staleness compounds silently across cycles; both dream passes independently generated stale-detection proposals, indicating the system lacks any built-in freshness guarantee.
+
+### `dream:20260907060107:1:afdc77`
+*07.09. 06:01 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
 
 ### `dream:20260907055112:5:ca9b68`
 *07.09. 05:51 UTC · Quelle: dream*
@@ -44906,31 +44931,6 @@ Consolidation and planning calls regularly emit 8k-13k output tokens at 200-300 
 *24.08. 05:58 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240558:5`
-*24.08. 05:58 UTC · Quelle: dream*
-
-Drive telemetry reports over a third of attempts failing while self-checks run rarely, making acceptance-test-first execution (run bewerte.py before building) the cheapest way to convert failures into fast feedback.
-
-### `dream:202608240558:4`
-*24.08. 05:58 UTC · Quelle: dream*
-
-Both prune runs removed 0 facts and 0 events despite continuous event accumulation, indicating the pruning criteria never fire and memory grows unbounded.
-
-### `dream:202608240558:3`
-*24.08. 05:58 UTC · Quelle: dream*
-
-The 'revise' simulation produced 5 revisions but only 3 were applied and none became queued real executions, exactly reproducing the drive-detected idea-to-action gap.
-
-### `dream:202608240558:2`
-*24.08. 05:58 UTC · Quelle: dream*
-
-TokenBudgetCap was independently proposed twice in one session with different thresholds, proving that unpersisted proposals get regenerated instead of implemented.
-
-### `dream:202608240558:1`
-*24.08. 05:58 UTC · Quelle: dream*
-
-Output token count dominates latency: every call emitting over 4000 output tokens took 98-297s, so capping generation at ~2000 tokens would cut worst-case cycle time roughly threefold.
 
 ### `last_swarm_goal`
 *24.08. 05:41 UTC · Quelle: system*

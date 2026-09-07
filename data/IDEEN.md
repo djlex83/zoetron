@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 05:51 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 06:01 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -18,18 +18,18 @@
 - ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 4×)*
 - ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 4×)*
 - ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 4×)*
-- Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
-- Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
+- Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
+- Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
 
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning is aggressive but non-cascading — dependent facts can become orphans when parent events are pruned, creating latent inconsistency.
+- Reflex mutations execute without transaction safety or rollback logging, meaning any erroneous reflex call can corrupt state irreversibly.
+- Skill proposals without mandatory validation or bootstrap actions accumulate as unactionable debt — the 'gap' signal confirms proposals rarely become 
+- Knowledge staleness compounds silently across cycles; both dream passes independently generated stale-detection proposals, indicating the system lacks
+- Model latency is a first-class systemic risk — three consecutive calls exceeded 29s, and every skill proposal targets latency enforcement, proving it 
 - Structured failure learning (hebbisches-lernen-im-graph) converges reliably when explicitly triggered, proving that systematic post-mortem analysis is
 - Reflex execution without pre-execution validation (script existence, path resolution, dependency checks) risks repeated failures that could have been 
 - Stale swarm knowledge degrades decision quality silently — reactive detection only triggers after damage is already done, making proactive age-based s
@@ -51,11 +56,6 @@
 - Dream-generated skill proposals (FailurePatternMiner, SkillValidationGate, ProviderHealthMonitor) accumulate but never deploy, creating an insight-to-
 - Pruning discards failure context (goals/tools active during model_fail) while keeping routine successes, preventing root-cause learning.
 - Model failure rate approaches 50% due to upstream provider overload (502 errors), making provider health routing critical for reliability.
-- Reflex-based error handling executes reliably (exit 0, ok: true) but may create a false sense of resolution, masking underlying model quality degradat
-- Aggressive pruning of 46 events and 8 facts risks discarding failure-context patterns that are essential for cross-cycle pattern recognition and root-
-- Convergence detection repeatedly fails because binary flags cannot capture gradual improvement, making value-delta threshold approaches fundamentally 
-- The persistent 'gap' signal (proposed skills never tested) exposes a structural disconnect between skill proposal generation and actual deployment ver
-- The recurring 'failure' signal across consolidation cycles reveals that model prediction errors are systemic, meaning infrastructure fixes like circui
 
 ---
 
