@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 20:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 20:33 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,7 +29,7 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Correlated failures across Nvidia (502) and Google (429) providers suggest that provider diversity alone is insufficient; a circuit-breaker pattern th
+- The simulation verdict shifted from 'go' to 'revise' after 4 revision cycles, indicating that initial validation passes are unreliable and at least 2-
+- Calibration systematically underestimated performance (predicted 4, actual 6), revealing a conservative bias that should be corrected by adding a posi
+- Operating under max stress (1.0) with a constrained budget (3 tasks, 1 iteration) forced efficiency but caused under-exploration; the evolution run wi
+- When primary model providers fail with 502/429 errors simultaneously, a lightweight fallback model (inclusionai/ling-3.0-flash-fin) proved both faster
 - Hand action failures from unresolved relative paths indicate the system lacks pre-validation of file/directory existence before attempting operations.
 - Swarm data becomes stale and requires periodic refresh, but refresh cycles compete with execution cycles for the same limited resources, creating a de
 - The system enters conserve mode under stress (max 3 tasks, max 1 iteration), which paradoxically prevents the very execution needed to resolve the pro
@@ -51,11 +56,6 @@
 - Accumulating dreams and skill proposals without active evaluation creates a knowledge-action gap that must be closed by structured micro-trials.
 - Multi-model fallback with circuit breakers is essential because upstream overload (502) and rate limiting (429) are recurring, not exceptional.
 - Stale swarm coordination data silently degrades decision quality; periodic heartbeat broadcasts are necessary to prevent goal drift.
-- 13 completed dreams and 63 skill proposals exist but no promotion mechanism converts them into deployed capabilities.
-- 36 model errors and repeated stale-swarm signals indicate the system lacks automated model health monitoring and failover.
-- Pruning discards 10-30 facts/events per run without preserving experiment_id or decision_context, breaking causal traceability.
-- Reflex actions converge without scoring or critic approval, bypassing the quality gates required for deliberate actions.
-- Model latency consistently exceeds 30s per call, creating a systemic bottleneck that compounds across sequential reasoning steps.
 
 ---
 

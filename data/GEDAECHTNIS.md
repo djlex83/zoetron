@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11869 Fakten** · Stand 2026-09-07 20:25 UTC · aktualisiert bei jedem Herzschlag
+**11874 Fakten** · Stand 2026-09-07 20:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7116
+- **dream:** 7121
 - **swarm_artifact:** 2120
 - **last_swarm_critique:** 826
 - **anti_pattern:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907203340:5:78f1cc`
+*07.09. 20:33 UTC · Quelle: dream*
+
+Correlated failures across Nvidia (502) and Google (429) providers suggest that provider diversity alone is insufficient; a circuit-breaker pattern that detects cascading failures and immediately routes to the fallback model would reduce latency and error prop
+
+### `dream:20260907203340:4:8209a2`
+*07.09. 20:33 UTC · Quelle: dream*
+
+The simulation verdict shifted from 'go' to 'revise' after 4 revision cycles, indicating that initial validation passes are unreliable and at least 2-3 revision rounds should be budgeted before declaring a solution stable.
+
+### `dream:20260907203340:3:b7c1af`
+*07.09. 20:33 UTC · Quelle: dream*
+
+Calibration systematically underestimated performance (predicted 4, actual 6), revealing a conservative bias that should be corrected by adding a positive offset or recalibrating against historical actual-vs-predicted deltas.
+
+### `dream:20260907203340:2:2c30a1`
+*07.09. 20:33 UTC · Quelle: dream*
+
+Operating under max stress (1.0) with a constrained budget (3 tasks, 1 iteration) forced efficiency but caused under-exploration; the evolution run with 3 variants improved scores from 6 to 9, proving that iterative variant generation outperforms single attemp
+
+### `dream:20260907203340:1:47ea6e`
+*07.09. 20:33 UTC · Quelle: dream*
+
+When primary model providers fail with 502/429 errors simultaneously, a lightweight fallback model (inclusionai/ling-3.0-flash-fin) proved both faster (3.5-4.6s) and more reliable than the primary model, indicating correlated provider failures require a pre-re
 
 ### `dream:20260907202337:5:85999e`
 *07.09. 20:23 UTC · Quelle: dream*
