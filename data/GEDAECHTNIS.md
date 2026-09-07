@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11887 Fakten** · Stand 2026-09-07 21:51 UTC · aktualisiert bei jedem Herzschlag
+**11892 Fakten** · Stand 2026-09-07 22:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7136
+- **dream:** 7141
 - **swarm_artifact:** 2118
 - **last_swarm_critique:** 827
 - **anti_pattern:** 567
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907215859:5:6dfce2`
+*07.09. 21:58 UTC · Quelle: dream*
+
+Proposed skills are adopted without micro-trial validation, risking regression and wasted integration effort.
+
+### `dream:20260907215859:4:2ba2a0`
+*07.09. 21:58 UTC · Quelle: dream*
+
+Swarm coordination decays without periodic heartbeat broadcasts of goal state, critique digest, and model health.
+
+### `dream:20260907215859:3:e06080`
+*07.09. 21:58 UTC · Quelle: dream*
+
+Telemetry gaps (missing stdout/stderr/exit_code/tokens) prevent root-cause analysis of hand_action and model_call anomalies.
+
+### `dream:20260907215859:2:dd3234`
+*07.09. 21:58 UTC · Quelle: dream*
+
+Skill proposals emerge reactively from failures but lack automated promotion criteria, leaving high-value ideas stuck in backlog.
+
+### `dream:20260907215859:1:22ac3e`
+*07.09. 21:58 UTC · Quelle: dream*
+
+Model failures cascade when no circuit-breaker/fallback logic exists, turning transient provider errors into system stalls.
 
 ### `dream:20260907214836:5:3708d6`
 *07.09. 21:48 UTC · Quelle: dream*
