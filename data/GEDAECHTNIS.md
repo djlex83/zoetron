@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11887 Fakten** · Stand 2026-09-07 21:27 UTC · aktualisiert bei jedem Herzschlag
+**11892 Fakten** · Stand 2026-09-07 21:40 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7131
+- **dream:** 7136
 - **swarm_artifact:** 2120
 - **last_swarm_critique:** 827
 - **anti_pattern:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907213742:5:467f61`
+*07.09. 21:37 UTC · Quelle: dream*
+
+Revision iterations are spent in single passes instead of distributed across refinement cycles, reducing convergence quality.
+
+### `dream:20260907213742:4:71b717`
+*07.09. 21:37 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; no automated trigger refreshes critiques or goals after staleness threshold.
+
+### `dream:20260907213742:3:10e68e`
+*07.09. 21:37 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation gate, causing registry bloat and untested capabilities.
+
+### `dream:20260907213742:2:7ba85c`
+*07.09. 21:37 UTC · Quelle: dream*
+
+Flash models (ling-3.0-flash-fin) consistently succeed with low latency while ultra models (nemotron-3-ultra) succeed but with high latency variance.
+
+### `dream:20260907213742:1:acf75d`
+*07.09. 21:37 UTC · Quelle: dream*
+
+Correlated 429 errors across multiple Gemma models indicate provider-level rate limiting rather than model-specific failures.
 
 ### `tool:modellfehler-systematisch-verstehen-und-`
 *07.09. 21:25 UTC · Quelle: hands*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 21:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 21:38 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,13 +25,13 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Revision iterations are spent in single passes instead of distributed across refinement cycles, reducing convergence quality.
+- Swarm knowledge decays silently; no automated trigger refreshes critiques or goals after staleness threshold.
+- Skill proposals accumulate without a validation gate, causing registry bloat and untested capabilities.
+- Flash models (ling-3.0-flash-fin) consistently succeed with low latency while ultra models (nemotron-3-ultra) succeed but with high latency variance.
+- Correlated 429 errors across multiple Gemma models indicate provider-level rate limiting rather than model-specific failures.
 - Event pruning removed 37 stale entries while preserving zero organ errors, confirming that diagnostic hygiene does not erase critical failure signatur
 - Reflex-triggered skill execution achieved swarm convergence without planner intervention, indicating mature skill-library coverage for known goal patt
 - The inclusionai/ling-3.0-flash-fin:free model demonstrates consistent sub-5s latency and successful completion, qualifying as a primary fallback candi
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but lack an automated promotion pipeline to production, causing idea-to-action latency.
 - Only inclusionai/ling-3.0-flash-fin:free succeeded consistently, suggesting a need for validated model allowlists.
 - Free-tier models exhibit cascading failures (502 upstream, 429 rate limits) making single-model reliance unreliable.
-- Five skill proposals generated but zero activated (drive_goal 'gap'), revealing a proposal-execution disconnect that stalls capability growth.
-- Pruning removed 34 events but 0 facts, showing experience consolidation discards temporal context while preserving semantic knowledge.
-- Reflex-driven error handling succeeded where proactive model selection failed, proving reactive recovery > static routing.
-- Latency variance of 22x (3.2s vs 70.8s) on same model (nemotron) indicates unreliable upstream capacity, not model quality.
-- Model provider failures cascade: Nvidia 502s and Google 429s simultaneously disable 3/4 primary models, leaving only one fallback.
 
 ---
 
