@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11832 Fakten** · Stand 2026-09-07 18:50 UTC · aktualisiert bei jedem Herzschlag
+**11837 Fakten** · Stand 2026-09-07 19:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7086
+- **dream:** 7091
 - **swarm_artifact:** 2116
 - **last_swarm_critique:** 825
 - **anti_pattern:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907185824:5:d932a1`
+*07.09. 18:58 UTC · Quelle: dream*
+
+Pruning removes 23-27 events per cycle but only 0-10 facts, suggesting event noise dominates while stale facts persist unchecked.
+
+### `dream:20260907185824:4:f4daa9`
+*07.09. 18:58 UTC · Quelle: dream*
+
+70 skill proposals exist but none are validated; a test harness that executes each proposal against a benchmark suite is the only way to convert proposals into capabilities.
+
+### `dream:20260907185824:3:414db3`
+*07.09. 18:58 UTC · Quelle: dream*
+
+Gemma-4 variants consistently hit 429 rate limits within minutes, requiring automatic blacklisting after first 429 to prevent cascade failures.
+
+### `dream:20260907185824:2:af290d`
+*07.09. 18:58 UTC · Quelle: dream*
+
+Reflex-mode convergence reports success (converged=true) without scoring (score=null), creating a quality blind spot that lets unverified work pass.
+
+### `dream:20260907185824:1:aebcf0`
+*07.09. 18:58 UTC · Quelle: dream*
+
+Nemotron's 38-44s latency and 502 errors make it unreliable as primary; inclusionai/ling-3.0-flash-fin delivers 4.3s latency and should be default.
 
 ### `dream:20260907184720:5:2f24a8`
 *07.09. 18:47 UTC · Quelle: dream*
