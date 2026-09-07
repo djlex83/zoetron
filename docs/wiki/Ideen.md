@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 06:11 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 06:20 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,9 +27,9 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Transient failures like rate limits and upstream overloads should trigger automatic fallback, not be interpreted as model-quality degradation signals.
+- Skill proposals without test harnesses and measurable success criteria waste activation cycles and produce untestable capabilities.
+- Pruning routines destroy failure-context events that are essential for root-cause clustering and long-term diagnostic capability.
+- Binary convergence flags are dangerous when scores are null; convergence requires validated score improvement, not merely the absence of errors.
+- Infrastructure errors (502, 429, timeouts) must be classified separately from model quality errors to avoid misdirected remediation efforts.
 - Reflex mutations lack audit trails and rollback capability, making recovery from unintended side effects impossible.
 - Pruning events without cascading invalidation leaves orphaned dependent facts, corrupting the knowledge graph over time.
 - Skill proposals accumulate far faster than they are implemented, revealing a systemic gap between ideation and execution that requires mandatory boots
@@ -51,11 +56,6 @@
 - Skill proposals without mandatory validation or bootstrap actions accumulate as unactionable debt — the 'gap' signal confirms proposals rarely become 
 - Knowledge staleness compounds silently across cycles; both dream passes independently generated stale-detection proposals, indicating the system lacks
 - Model latency is a first-class systemic risk — three consecutive calls exceeded 29s, and every skill proposal targets latency enforcement, proving it 
-- Structured failure learning (hebbisches-lernen-im-graph) converges reliably when explicitly triggered, proving that systematic post-mortem analysis is
-- Reflex execution without pre-execution validation (script existence, path resolution, dependency checks) risks repeated failures that could have been 
-- Stale swarm knowledge degrades decision quality silently — reactive detection only triggers after damage is already done, making proactive age-based s
-- The dream-to-skill conversion pipeline is the system's weakest link: proposals accumulate faster than they are executed, creating a growing gap betwee
-- Model failures follow predictable error classes (429 rate limits, 502 upstream overload) that each require a distinct response strategy rather than un
 
 ---
 

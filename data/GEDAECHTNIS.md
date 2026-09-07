@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11734 Fakten** · Stand 2026-09-07 06:13 UTC · aktualisiert bei jedem Herzschlag
+**11733 Fakten** · Stand 2026-09-07 06:22 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6966
-- **swarm_artifact:** 2135
+- **swarm_artifact:** 2134
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907062029:5:60787e`
+*07.09. 06:20 UTC · Quelle: dream*
+
+Transient failures like rate limits and upstream overloads should trigger automatic fallback, not be interpreted as model-quality degradation signals.
+
+### `dream:20260907062029:4:505cdc`
+*07.09. 06:20 UTC · Quelle: dream*
+
+Skill proposals without test harnesses and measurable success criteria waste activation cycles and produce untestable capabilities.
+
+### `dream:20260907062029:3:9840ff`
+*07.09. 06:20 UTC · Quelle: dream*
+
+Pruning routines destroy failure-context events that are essential for root-cause clustering and long-term diagnostic capability.
+
+### `dream:20260907062029:2:833651`
+*07.09. 06:20 UTC · Quelle: dream*
+
+Binary convergence flags are dangerous when scores are null; convergence requires validated score improvement, not merely the absence of errors.
+
+### `dream:20260907062029:1:51f6c1`
+*07.09. 06:20 UTC · Quelle: dream*
+
+Infrastructure errors (502, 429, timeouts) must be classified separately from model quality errors to avoid misdirected remediation efforts.
 
 ### `dream:20260907061047:5:28ee5d`
 *07.09. 06:10 UTC · Quelle: dream*
@@ -44926,31 +44951,6 @@ Repeated 429 errors on a model should trigger a temporary exclusion from the fal
 *24.08. 06:16 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240616:5`
-*24.08. 06:16 UTC · Quelle: dream*
-
-Two consecutive cycles independently proposed near-identical backlog-gating skills, showing new proposals are generated without checking the existing queue for duplicates.
-
-### `dream:202608240616:4`
-*24.08. 06:16 UTC · Quelle: dream*
-
-About one in four model attempts returned a wrong result, indicating a systematic failure mode that should be classified (format vs. signature vs. logic vs. hallucination) before adding capacity.
-
-### `dream:202608240616:3`
-*24.08. 06:16 UTC · Quelle: dream*
-
-The skill pipeline is imbalanced at roughly 60 proposals to 1 trial, so generation vastly outpaces validation and the backlog consists almost entirely of untested ideas.
-
-### `dream:202608240616:2`
-*24.08. 06:16 UTC · Quelle: dream*
-
-Both recorded prune_run executions pruned 0 facts and 0 events, proving the retention rules never fire and memory grows monotonically.
-
-### `dream:202608240616:1`
-*24.08. 06:16 UTC · Quelle: dream*
-
-Consolidation and planning calls regularly emit 8k-13k output tokens at 200-300 s latency, making oversized generations the single largest consumer of the 2-iteration cycle budget.
 
 ### `last_swarm_goal`
 *24.08. 05:58 UTC · Quelle: system*
