@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11818 Fakten** · Stand 2026-09-07 16:25 UTC · aktualisiert bei jedem Herzschlag
+**11827 Fakten** · Stand 2026-09-07 16:48 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7061
-- **swarm_artifact:** 2122
-- **last_swarm_critique:** 823
-- **anti_pattern:** 575
-- **last_swarm_goal:** 555
-- **strategy:** 289
+- **swarm_artifact:** 2126
+- **last_swarm_critique:** 824
+- **anti_pattern:** 577
+- **last_swarm_goal:** 556
+- **strategy:** 290
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,51 @@
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten testen und p:2`
+*07.09. 16:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [6, 4, 6]): Property-based capability verification with Hypothesis-driven stress testing - Use hypothesis-python to generate adversarial inputs for each capability. Define capability properties as @given strategies (e.g., reflex 
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten testen und p:1`
+*07.09. 16:42 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score [7, 6, 8]): Declarative YAML capability contracts with schema-validated execution engine - Define capabilities in 'capabilities.yaml' with fields: name, description, test_command (inline Python), success_criteria (JSON schema), w
+
+### `last_swarm_critique`
+*07.09. 16:40 UTC · Quelle: critic*
+
+score=4; issues=Scripts delegate entirely to external modules (benchmark_organ, werkzeugpruefung) not included in artifacts - no self-contained capability testing logic; Third artifact is incomplete: only bash exploration commands, no Python convergence gate i
+
+### `last_swarm_goal`
+*07.09. 16:35 UTC · Quelle: system*
+
+Fähigkeiten testen und prüfen
+
+### `dream:20260907163442:5:974886`
+*07.09. 16:34 UTC · Quelle: dream*
+
+Prediction error persists because actual task scores never feed back into the estimator to recalibrate model-health and artifact-quality weights.
+
+### `dream:20260907163442:4:0715b5`
+*07.09. 16:34 UTC · Quelle: dream*
+
+Builder artifacts entering simulation without syntactic validation waste compute cycles on guaranteed-fail executions.
+
+### `dream:20260907163442:3:6916b0`
+*07.09. 16:34 UTC · Quelle: dream*
+
+Swarm knowledge decays silently without TTL-enforced refresh, causing planners to operate on stale context.
+
+### `dream:20260907163442:2:43e8b6`
+*07.09. 16:34 UTC · Quelle: dream*
+
+Skill proposals accumulate without execution because no automated pipeline assigns builders, validates artifacts, and enforces merge deadlines.
+
+### `dream:20260907163442:1:2fc34c`
+*07.09. 16:34 UTC · Quelle: dream*
+
+Model endpoints fail silently with 502/429 errors and latency spikes (67s vs 3.6s), requiring real-time health tracking and automatic failover to maintain reliability.
 
 ### `dream:20260907162232:5:006a4f`
 *07.09. 16:22 UTC · Quelle: dream*
@@ -45231,31 +45276,6 @@ ABGELEHNT von Evolution (Score 7): STDP (Spike-Timing-Dependent Plasticity) - Bi
 *24.08. 16:30 UTC · Quelle: system*
 
 Hebbisches Lernen im Graph: Synapsen-Qualität statt Knotenzahl
-
-### `dream:202608241629:5`
-*24.08. 16:29 UTC · Quelle: dream*
-
-Three drive goals were spawned from failure/gap signals while an existing goal was parked after 3 non-convergent attempts, indicating goal creation outpaces goal resolution and duplicates accumulate without retirement criteria.
-
-### `dream:202608241629:4`
-*24.08. 16:29 UTC · Quelle: dream*
-
-Two consecutive 429 rate-limit failures on openrouter.ai show there is no backoff or model-fallback strategy beyond ad-hoc retries, and free-tier models are unreliable for critical-path calls.
-
-### `dream:202608241629:3`
-*24.08. 16:29 UTC · Quelle: dream*
-
-A hard crash occurred in hands-execute because MemoryStore.add_fact does not exist, meaning write-paths to memory are called without any interface contract or test, and this failure silently broke issue syncing downstream.
-
-### `dream:202608241629:2`
-*24.08. 16:29 UTC · Quelle: dream*
-
-Evolution found a winning variant scoring 8/10, but the pipeline discarded it and re-ran the swarm anyway, so the single largest quality gain in the run was thrown away by missing winner-to-execution wiring.
-
-### `dream:202608241629:1`
-*24.08. 16:29 UTC · Quelle: dream*
-
-The swarm failed to converge (score 4, 2 cycles) because the critic's core complaint — tautological self-referential output ('Selbst-Schleife') — was never translated into a measurable acceptance criterion before generation started.
 
 ### `last_swarm_critique`
 *24.08. 15:37 UTC · Quelle: critic*

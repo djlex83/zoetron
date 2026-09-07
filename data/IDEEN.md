@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 16:23 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 16:46 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,17 +23,17 @@
 
 ## 🔥 Eigene Ziele
 
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 14×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Prediction error persists because actual task scores never feed back into the estimator to recalibrate model-health and artifact-quality weights.
+- Builder artifacts entering simulation without syntactic validation waste compute cycles on guaranteed-fail executions.
+- Swarm knowledge decays silently without TTL-enforced refresh, causing planners to operate on stale context.
+- Skill proposals accumulate without execution because no automated pipeline assigns builders, validates artifacts, and enforces merge deadlines.
+- Model endpoints fail silently with 502/429 errors and latency spikes (67s vs 3.6s), requiring real-time health tracking and automatic failover to main
 - Reflex-based problem solving (alte-träume-miteinander-verbinden.py) successfully connects distant memories without requiring any model calls, proving 
 - Event pruning (38 events) far outpaces fact pruning (0 facts) during consolidation, indicating the system preserves core knowledge while aggressively 
 - The system has proposed but not implemented a model router, creating a persistent gap between diagnosing the failure pattern and executing a solution.
@@ -51,11 +56,6 @@
 - Aggressive pruning (33→19 events per run) without causal tags (experiment_id, parent_step_id) destroys reconstructability for post-mortem analysis.
 - Reflex-mode actions bypass convergence gates (score≥8, delta<0.1 over 3 cycles, critic approval), creating an unverified execution path.
 - Free-tier model providers exhibit systematic failure modes (502 upstream overload, 429 rate limits) requiring a latency-budgeted router with per-provi
-- Incomplete telemetry—some hand_actions logged but model failures not fully captured—means post-mortem analysis is unreliable without universal structu
-- Pruning volume declining from 42 to 33 to 0 events suggests the system may be exhausting low-value content or the pruning heuristic needs adaptation t
-- The persistent gap between skill proposal and skill practice is a systemic failure mode—proposals without dedicated training loops produce no durable 
-- Stale swarm knowledge recurs across multiple consolidation cycles, indicating that refresh must be proactive and scheduled rather than triggered only 
-- Model failures are intermittent and create single points of failure; health-aware routing with automatic failover is required to maintain system relia
 
 ---
 
