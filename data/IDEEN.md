@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 10:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 10:42 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,10 +24,10 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 20×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 16×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 13×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Rate-limit errors cluster temporally across cycles, indicating provider-level backoff is needed rather than per-request retry logic.
+- Swarm knowledge freshness validation prevents stale goal execution but isn't yet enforced as a mandatory reflex pre-condition.
+- Skill proposals accumulate in memory but lack automated deployment verification, creating a persistent gap between proposal and operational capability
+- Fallback to inclusionai/ling-3.0-flash-fin succeeds where larger models fail, proving smaller specialized models are more resilient for routine swarm 
+- Google Gemma models on OpenRouter consistently hit 429 rate limits, making them unreliable as primary models for high-frequency tasks.
 - Pruning (5 facts, 31 events) occurs alongside repeated failures, suggesting consolidation happens but doesn't prevent recurring infrastructure errors.
 - Drive goals for "error-free models" and "fresh swarm data" both stem from the same root cause: lack of real-time model/knowledge health signals.
 - Multiple independent skill proposals converge on model health caching, pre-flight checks, and fail-fast routing, revealing a consensus on needed resil
@@ -51,11 +56,6 @@
 - Pre-flight validation (ping/latency check) before task assignment prevents the majority of downstream failures and is strictly cheaper than any retry 
 - The gap between skill proposal and deployed skill is the highest-leverage systemic failure mode—ideas accumulate without automated production pipeline
 - Model failures cluster predictably by type (502=overload, 429=rate-limit) and each class requires a distinct handling strategy rather than uniform ret
-- Staleness-driven goals (swarm refresh, model reliability) are reactive; a time-decay priority scheduler would preempt degradation.
-- Skill proposals accumulate in backlog because no automated scaffold→test→promote pipeline exists, turning ideas into technical debt.
-- Swarm evolution consistently plateaus at 7/10 without convergence because critic metric keys drift between cycles, needing schema-locked evaluation co
-- Upstream 502/503 errors from Nvidia Nemotron indicate provider overload, not model failure, demanding immediate failover to healthy alternatives.
-- Rate-limited models (429) cluster on specific providers (Google Gemma) and require exponential backoff with jitter plus provider-level circuit breakin
 
 ---
 
