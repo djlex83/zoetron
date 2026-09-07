@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11734 Fakten** · Stand 2026-09-07 06:32 UTC · aktualisiert bei jedem Herzschlag
+**11744 Fakten** · Stand 2026-09-07 06:46 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6971
-- **swarm_artifact:** 2130
-- **last_swarm_critique:** 817
-- **anti_pattern:** 585
-- **last_swarm_goal:** 549
-- **strategy:** 294
-- **tool:** 176
+- **swarm_artifact:** 2134
+- **last_swarm_critique:** 818
+- **anti_pattern:** 587
+- **last_swarm_goal:** 550
+- **strategy:** 295
+- **tool:** 177
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:viele-fähigkeiten-sortieren`
+*07.09. 06:44 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Viele Fähigkeiten sortieren'. Datei: data/tools/viele-fähigkeiten-sortieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Viele Fähigkeiten sortie:2`
+*07.09. 06:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Deklarative DSL mit Interpreter-Laufzeit - Verlasse dich vollständig von prozeduralem Python-Code und definiere stattdessen eine deklarative Konfigurationssprache (YAML/JSON-basiert), die das gesamte Problem beschreibt: Welch
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Viele Fähigkeiten sortie:0`
+*07.09. 06:44 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Plugin-Architektur mit konfigurierbarer Sortierstrategie - Ersetze die drei separaten Dateien durch ein einziges zentrales Framework mit einer Plugin-Schnittstelle. Jede Datenquelle (benchmark_organ.py, ideen-organ.json, tabe
+
+### `last_swarm_critique`
+*07.09. 06:43 UTC · Quelle: critic*
+
+score=7; issues=Erheblicher Code-Duplikation über die drei Dateien hinweg (find_data_root, load_module_from_path werden jeweils neu definiert); Starke Abhängigkeit von Fallback-Mechanismen: Ohne reale Datenquellen (benchmark_organ.py, ideen-organ.json, tabelle
+
+### `last_swarm_goal`
+*07.09. 06:40 UTC · Quelle: system*
+
+Viele Fähigkeiten sortieren
+
+### `dream:20260907064014:5:4cb685`
+*07.09. 06:40 UTC · Quelle: dream*
+
+Reflex execution without pre-flight validation risks cascading failures from missing scripts, broken paths, or absent environment variables that could have been caught cheaply.
+
+### `dream:20260907064014:4:6edbb9`
+*07.09. 06:40 UTC · Quelle: dream*
+
+Stale swarm data silently degrades decision quality, making scheduled age-based detection more reliable than reactive discovery after damage is already done.
+
+### `dream:20260907064014:3:7293db`
+*07.09. 06:40 UTC · Quelle: dream*
+
+The dream-to-do gap — generating skill proposals without an automated pipeline to implement them — is the most persistent bottleneck in autonomous skill evolution.
+
+### `dream:20260907064014:2:02f199`
+*07.09. 06:40 UTC · Quelle: dream*
+
+429 and 502 errors require fundamentally different recovery strategies — rate limits need exponential backoff with jitter, while upstream errors demand immediate provider switching.
+
+### `dream:20260907064014:1:50df01`
+*07.09. 06:40 UTC · Quelle: dream*
+
+Provider failures cluster around rate limits (429) and upstream overload (502), meaning single-model dependency is a systemic single point of failure that will recur.
 
 ### `dream:20260907063018:5:51dc7c`
 *07.09. 06:30 UTC · Quelle: dream*
@@ -44946,31 +44996,6 @@ score=4; issues=Kein Ausführungsnachweis: Artefakt 3 ist nur der Harness-Entwur
 *24.08. 06:32 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240632:5`
-*24.08. 06:32 UTC · Quelle: dream*
-
-Capping model token usage at a default maximum (e.g., 2000) reduces latency, cost, and risk of budget overruns unless a task explicitly overrides it.
-
-### `dream:202608240632:4`
-*24.08. 06:32 UTC · Quelle: dream*
-
-Early validation of submitted skills—checking signatures and running a smoke prediction—prevents costly failures later in the pipeline.
-
-### `dream:202608240632:3`
-*24.08. 06:32 UTC · Quelle: dream*
-
-Near‑duplicate skill proposals should be silently merged or dropped after normalizing case and punctuation to avoid redundant work.
-
-### `dream:202608240632:2`
-*24.08. 06:32 UTC · Quelle: dream*
-
-Unbounded proposal backlog causes stagnation; each cycle must either implement a single queued proposal or reject it with justification, and limit new proposals to two per cycle.
-
-### `dream:202608240632:1`
-*24.08. 06:32 UTC · Quelle: dream*
-
-Repeated 429 errors on a model should trigger a temporary exclusion from the fallback chain with exponential backoff.
 
 ### `last_swarm_goal`
 *24.08. 06:16 UTC · Quelle: system*
