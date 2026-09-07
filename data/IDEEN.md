@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 01:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 01:34 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High stress degrades scheduling reliability, so iteration limits and goal prioritization must adapt dynamically to measured stress levels.
+- Failure patterns recur when timestamps are not correlated with active goals and tools, meaning root-cause mining must be periodic rather than ad-hoc.
+- Skill proposals that skip execution-and-scoring validation accumulate as dead weight, so a hard one-cycle gate prevents registry bloat.
+- Stale swarm data degrades decision quality, making periodic re-simulation after every convergence cycle a non-optional maintenance task.
+- Provider-side failures (502/429) cluster under load, so automatic health tracking and demotion prevent repeated exposure to unreliable endpoints.
 - Swarm knowledge and dream memories remain stale because no automated refresh or evaluation mechanism triggers on staleness signals.
 - Pruning discards 39 events/5 facts per cycle without audit trail, losing model_error_patterns needed for failure diagnosis.
 - Skill proposals accumulate across cycles but reflex tools that should implement them fail (exit 0, ok: false), creating a proposal-execution gap.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but rarely execute — the system lacks a 'proposal-to-implementation' gate with accountability.
 - Reflex actions reliably converge on concrete tasks (swarm update, skill conversion) while higher-level goals stall without executable artifacts.
 - Model failures cluster around provider overload (502) and rate limits (429), indicating missing circuit-breaker and fallback logic.
-- Pruning removes events but not the underlying causes (stale data, model unreliability, proposal backlog).
-- Reflexes execute successfully but skip pre-flight checks (script existence, env, deps), risking silent failures.
-- Stale swarm knowledge recurs as a drive signal, indicating no scheduled refresh or TTL-based invalidation mechanism.
-- Skill proposals accumulate but lack an automated gate that validates, tests, and promotes them to reflex routes.
-- Model latency varies wildly (11s vs 59s) without automatic fallback, causing unpredictable task duration.
 
 ---
 

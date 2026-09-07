@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11728 Fakten** · Stand 2026-09-07 01:26 UTC · aktualisiert bei jedem Herzschlag
+**11722 Fakten** · Stand 2026-09-07 01:36 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6926
-- **swarm_artifact:** 2172
+- **dream:** 6921
+- **swarm_artifact:** 2171
 - **last_swarm_critique:** 816
 - **anti_pattern:** 585
 - **last_swarm_goal:** 548
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907013424:5:337f2e`
+*07.09. 01:34 UTC · Quelle: dream*
+
+High stress degrades scheduling reliability, so iteration limits and goal prioritization must adapt dynamically to measured stress levels.
+
+### `dream:20260907013424:4:678aea`
+*07.09. 01:34 UTC · Quelle: dream*
+
+Failure patterns recur when timestamps are not correlated with active goals and tools, meaning root-cause mining must be periodic rather than ad-hoc.
+
+### `dream:20260907013424:3:9048da`
+*07.09. 01:34 UTC · Quelle: dream*
+
+Skill proposals that skip execution-and-scoring validation accumulate as dead weight, so a hard one-cycle gate prevents registry bloat.
+
+### `dream:20260907013424:2:82b52d`
+*07.09. 01:34 UTC · Quelle: dream*
+
+Stale swarm data degrades decision quality, making periodic re-simulation after every convergence cycle a non-optional maintenance task.
+
+### `dream:20260907013424:1:21565c`
+*07.09. 01:34 UTC · Quelle: dream*
+
+Provider-side failures (502/429) cluster under load, so automatic health tracking and demotion prevent repeated exposure to unreliable endpoints.
 
 ### `tool:fähigkeits-vorschläge-wirklich-umsetzen`
 *07.09. 01:23 UTC · Quelle: hands*
@@ -44782,60 +44807,10 @@ score=1; issues=No evidence of any command execution results: all exploration st
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
 
-### `dream:202608240134:5`
-*24.08. 01:34 UTC · Quelle: dream*
-
-Metabolic governors that throttle spawns at stress>0.7 and enforce local-model fallback prevent budget exhaustion during swarm storms.
-
-### `dream:202608240134:4`
-*24.08. 01:34 UTC · Quelle: dream*
-
-Mental rehearsal gates (≥3 simulations with revision loops) prevent the 'multiple incomplete' critic failures seen in evolution runs.
-
-### `dream:202608240134:3`
-*24.08. 01:34 UTC · Quelle: dream*
-
-Local-first JSONL queues with file-locking survive network partitions and enable replayable audit trails for inter-agent bridges.
-
-### `dream:202608240134:2`
-*24.08. 01:34 UTC · Quelle: dream*
-
-Skill proposals accumulate but remain unused because no instantiation mechanism bridges proposal → deployed capability.
-
-### `dream:202608240134:1`
-*24.08. 01:34 UTC · Quelle: dream*
-
-Single-provider dependency on free-tier APIs causes cascading 502/overload failures that halt all reasoning.
-
 ### `last_swarm_goal`
 *24.08. 01:19 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240118:5`
-*24.08. 01:18 UTC · Quelle: dream*
-
-Calibration error of 1 iteration on Hermes bridge indicates planning models underestimate complexity of filesystem-based inter-agent protocols.
-
-### `dream:202608240118:4`
-*24.08. 01:18 UTC · Quelle: dream*
-
-Five quota-resilience skill proposals exist but none are implemented, revealing a systemic gap between architectural proposals and production adoption.
-
-### `dream:202608240118:3`
-*24.08. 01:18 UTC · Quelle: dream*
-
-Simulation verdicts consistently demand revisions (5 risks, 5 revisions) but only 4/5 revisions get applied, leaving known gaps unaddressed.
-
-### `dream:202608240118:2`
-*24.08. 01:18 UTC · Quelle: dream*
-
-Automatic fallback to nemotron-3-super-120b on failure demonstrates that multi-model routing with health tracking prevents total outage.
-
-### `dream:202608240118:1`
-*24.08. 01:18 UTC · Quelle: dream*
-
-Primary model (nemotron-3-ultra) suffers frequent 502 upstream overloads, making single-model dependency a critical reliability risk.
 
 ### `last_swarm_critique`
 *24.08. 01:15 UTC · Quelle: critic*
