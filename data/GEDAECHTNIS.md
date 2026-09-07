@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11728 Fakten** · Stand 2026-09-07 05:24 UTC · aktualisiert bei jedem Herzschlag
+**11731 Fakten** · Stand 2026-09-07 05:33 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6951
-- **swarm_artifact:** 2144
+- **dream:** 6956
+- **swarm_artifact:** 2142
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907053129:5:1f67e7`
+*07.09. 05:31 UTC · Quelle: dream*
+
+Reflex-based error handling executes reliably (exit 0, ok: true) but may create a false sense of resolution, masking underlying model quality degradation that requires direct intervention rather than routing fixes.
+
+### `dream:20260907053129:4:40ece3`
+*07.09. 05:31 UTC · Quelle: dream*
+
+Aggressive pruning of 46 events and 8 facts risks discarding failure-context patterns that are essential for cross-cycle pattern recognition and root-cause analysis.
+
+### `dream:20260907053129:3:9dd707`
+*07.09. 05:31 UTC · Quelle: dream*
+
+Convergence detection repeatedly fails because binary flags cannot capture gradual improvement, making value-delta threshold approaches fundamentally more durable than on/off convergence declarations.
+
+### `dream:20260907053129:2:d674e7`
+*07.09. 05:31 UTC · Quelle: dream*
+
+The persistent 'gap' signal (proposed skills never tested) exposes a structural disconnect between skill proposal generation and actual deployment verification, causing proposal accumulation without capability improvement.
+
+### `dream:20260907053129:1:d31c84`
+*07.09. 05:31 UTC · Quelle: dream*
+
+The recurring 'failure' signal across consolidation cycles reveals that model prediction errors are systemic, meaning infrastructure fixes like circuit breakers and backoff address symptoms rather than root causes.
 
 ### `dream:20260907052130:5:f5f063`
 *07.09. 05:21 UTC · Quelle: dream*

@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 05:22 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 05:31 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten wirklich lernen *(wieder aufgegriffen: 4×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex-based error handling executes reliably (exit 0, ok: true) but may create a false sense of resolution, masking underlying model quality degradat
+- Aggressive pruning of 46 events and 8 facts risks discarding failure-context patterns that are essential for cross-cycle pattern recognition and root-
+- Convergence detection repeatedly fails because binary flags cannot capture gradual improvement, making value-delta threshold approaches fundamentally 
+- The persistent 'gap' signal (proposed skills never tested) exposes a structural disconnect between skill proposal generation and actual deployment ver
+- The recurring 'failure' signal across consolidation cycles reveals that model prediction errors are systemic, meaning infrastructure fixes like circui
 - Pruning alone cannot refresh knowledge: 34 items pruned but stale drive goals persist, requiring active invalidation protocols.
 - Reflex tools achieve reliable convergence for narrow tasks: connecting dreams via script succeeded with zero organ errors.
 - Stale swarm knowledge degrades collective intelligence: outdated assessments persist without timestamp-based invalidation.
@@ -51,11 +56,6 @@
 - Skill-proposal backlog grows faster than execution because proposals lack a mandatory 'first concrete step' field that the planner can schedule immedi
 - Stale swarm knowledge persists because freshness timestamps are never written at ingestion, making invalidation heuristic rather than deterministic.
 - Model endpoint failures (502/429) cascade into task stalls unless automatic fallback with health-aware routing is baked into every LLM call.
-- Reflex actions succeed for narrow, scripted goals but do not address systemic model unreliability or knowledge drift.
-- Swarm knowledge decays silently; only explicit refresh actions surface staleness, leaving decisions based on obsolete facts.
-- Skill proposals accumulate (65+) without a validation gate, so the system cannot distinguish useful from harmful capabilities.
-- Latency variance spans two orders of magnitude (3 s vs 105 s) on the same model, breaking any fixed timeout strategy.
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for any latency-sensitive path.
 
 ---
 
