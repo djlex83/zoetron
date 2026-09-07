@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11825 Fakten** · Stand 2026-09-07 17:35 UTC · aktualisiert bei jedem Herzschlag
+**11821 Fakten** · Stand 2026-09-07 17:46 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7071
-- **swarm_artifact:** 2120
+- **dream:** 7076
+- **swarm_artifact:** 2114
 - **last_swarm_critique:** 824
-- **anti_pattern:** 573
+- **anti_pattern:** 571
 - **last_swarm_goal:** 556
-- **strategy:** 288
+- **strategy:** 287
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907174400:5:80a0af`
+*07.09. 17:44 UTC · Quelle: dream*
+
+Swarm criticism drive marked 'stale' indicates external feedback loops expire and must be actively refreshed on a schedule.
+
+### `dream:20260907174400:4:4fff8e`
+*07.09. 17:44 UTC · Quelle: dream*
+
+Simulation verdict 'revise' with 5 risks and 4 revisions shows skill validation requires multiple iteration cycles before deployment.
+
+### `dream:20260907174400:3:9313e7`
+*07.09. 17:44 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 forces conserve mode with extreme limits (max_tasks=3, max_iterations=1), throttling all autonomous activity until stress drops.
+
+### `dream:20260907174400:2:91ee33`
+*07.09. 17:44 UTC · Quelle: dream*
+
+Relative path resolution fails silently in production - the hand action read nothing because it didn't touch real data paths under ZOETRON_DATA or sys.argv[1].
+
+### `dream:20260907174400:1:a18bab`
+*07.09. 17:44 UTC · Quelle: dream*
+
+Primary models (nemotron, gemma) fail repeatedly with 502/429 errors while inclusionai/ling-3.0-flash-fin succeeds consistently, making fallback selection a reliability requirement.
 
 ### `dream:20260907173224:5:69bdab`
 *07.09. 17:32 UTC · Quelle: dream*
@@ -45266,16 +45291,6 @@ The swarm run closed as act_done despite a convergence score of 3 because no qua
 *24.08. 17:59 UTC · Quelle: dream*
 
 Recurring 429 rate-limit failures across multiple OpenRouter models show that single-provider fallback chains collapse under load; success came only from a non-OpenRouter endpoint (dots-studio), so provider diversity matters more than model count.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Best-of-N mit unbestechl:1`
-*24.08. 17:39 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Formal Specification + Theorem Prover Verification - Shift from code generation to specification generation. The generator produces: (1) a formal spec in Lean 4 / Coq / F* expressing pre/post conditions and invariants, (2) ex
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Best-of-N mit unbestechl:0`
-*24.08. 17:39 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 8): Type-Safe Generation via Language Server Protocol Integration - Embed a full Language Server (pyright/ruff for Python, tsserver for TS, rust-analyzer for Rust) into the generation loop. The generator emits code tokens; after
 
 ### `last_swarm_critique`
 *24.08. 17:37 UTC · Quelle: critic*

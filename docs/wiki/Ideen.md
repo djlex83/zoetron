@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 17:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 17:44 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,11 +29,11 @@
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm criticism drive marked 'stale' indicates external feedback loops expire and must be actively refreshed on a schedule.
+- Simulation verdict 'revise' with 5 risks and 4 revisions shows skill validation requires multiple iteration cycles before deployment.
+- Metabolism stress at 1.0 forces conserve mode with extreme limits (max_tasks=3, max_iterations=1), throttling all autonomous activity until stress dro
+- Relative path resolution fails silently in production - the hand action read nothing because it didn't touch real data paths under ZOETRON_DATA or sys
+- Primary models (nemotron, gemma) fail repeatedly with 502/429 errors while inclusionai/ling-3.0-flash-fin succeeds consistently, making fallback selec
 - Combining dream outputs from the same cycle surfaced a novel signal that single-dream analysis missed, demonstrating that cross-consolidation is a rel
 - Hand actions fail silently when expected files or directories are absent, and the system does not distinguish between 'nothing to read' and 'data miss
 - A persistent gap exists between skill proposals generated and skills actually deployed, meaning the proposal-to-execution pipeline lacks structural en
@@ -51,11 +56,6 @@
 - Reflex-driven goals (simulation use, memory update) converge reliably without model calls, proving that deterministic skills outperform LLM-dependent 
 - Rate limits (429) and upstream overloads (502) are systemic, not transient, requiring proactive exclusion rather than reactive retry.
 - Model provider diversity is ineffective without real-time health routing: three of four providers failed (502, 429, 429) while only inclusionai/ling-3
-- Skill proposals accumulate without guaranteed implementation — the proposal-to-execution gap is itself a recurring systemic pattern.
-- A single low-latency fallback model (inclusionai/ling-3.0-flash-fin at 3.2s) can sustain throughput when all primary providers fail simultaneously.
-- Aggressive event pruning (43 events in one run) risks destroying causal chains needed for post-mortem reconstruction.
-- Reflex mode achieves convergence but produces null scores, meaning quality assessment is entirely absent from the fastest execution path.
-- Infrastructure failures (NVIDIA 502 service overload, Google 429 rate limits) are the dominant execution blocker, not algorithmic or logic errors.
 
 ---
 
