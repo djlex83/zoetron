@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11805 Fakten** · Stand 2026-09-07 13:26 UTC · aktualisiert bei jedem Herzschlag
+**11805 Fakten** · Stand 2026-09-07 13:37 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7016
 - **swarm_artifact:** 2142
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907133453:5:ea94d7`
+*07.09. 13:34 UTC · Quelle: dream*
+
+Calibration error of 2 points (predicted 5 vs actual 7) shows the system underestimates its own reliability gains after improvements.
+
+### `dream:20260907133453:4:ce8f7b`
+*07.09. 13:34 UTC · Quelle: dream*
+
+Evolution with critic feedback improved variant scores from baseline 7 to 9, but swarm convergence failed after 2 cycles indicating insufficient iteration depth.
+
+### `dream:20260907133453:3:a5960c`
+*07.09. 13:34 UTC · Quelle: dream*
+
+High latency (41-146s) on Nemotron correlates with eventual success, suggesting queue-backlog retry behavior rather than true unavailability.
+
+### `dream:20260907133453:2:d43345`
+*07.09. 13:34 UTC · Quelle: dream*
+
+InclusionAI Ling-3.0-Flash-Fin is the only model delivering consistent low-latency success (4.7-6.2s) across multiple calls without errors.
+
+### `dream:20260907133453:1:d05468`
+*07.09. 13:34 UTC · Quelle: dream*
+
+Free-tier models exhibit systematic reliability failures: NVIDIA Nemotron returns 502 upstream overload errors repeatedly, while Google Gemma models hit 429 rate limits consistently.
 
 ### `dream:20260907132259:5:80eb8f`
 *07.09. 13:22 UTC · Quelle: dream*
@@ -45086,31 +45111,6 @@ score=2; issues=run_pipeline is truncated/incomplete (cuts off at verify_den), m
 *24.08. 13:32 UTC · Quelle: system*
 
 Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust
-
-### `dream:202608241329:5`
-*24.08. 13:29 UTC · Quelle: dream*
-
-Latency variance spans 1.8s–142.5s and output tokens hit the ~4k cap repeatedly, indicating long-form generation stages dominate runtime; chunking large outputs would cut tail latency and reduce truncation risk.
-
-### `dream:202608241329:4`
-*24.08. 13:29 UTC · Quelle: dream*
-
-Prediction calibration error of ±1 on a 50.2% baseline suggests predictions are made before the revision cycle completes; calibrate against post-revision outputs or widen confidence intervals for multi-cycle tasks.
-
-### `dream:202608241329:3`
-*24.08. 13:29 UTC · Quelle: dream*
-
-The task registry gap is the root cause of both stalled swarms and untested skills: without status tracking (open/done/failed), background work is silently dropped and duplicated.
-
-### `dream:202608241329:2`
-*24.08. 13:29 UTC · Quelle: dream*
-
-Skill proposals are write-only artifacts: 60 proposed vs. 2 used means the pipeline lacks an adoption/test step; proposals must be queued into the task registry with a test-and-keep-or-discard verdict to have any value.
-
-### `dream:202608241329:1`
-*24.08. 13:29 UTC · Quelle: dream*
-
-Swarm convergence failure is systemic: 11 of 13 swarms stall because the critic loop re-enters 'revise' after revisions are applied instead of switching to execution, so the fix is a state-machine rule (revise→execute) rather than more iterations.
 
 ### `last_swarm_critique`
 *24.08. 13:04 UTC · Quelle: critic*

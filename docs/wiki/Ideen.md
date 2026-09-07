@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:24 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,22 +25,27 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Calibration error of 2 points (predicted 5 vs actual 7) shows the system underestimates its own reliability gains after improvements.
+- Evolution with critic feedback improved variant scores from baseline 7 to 9, but swarm convergence failed after 2 cycles indicating insufficient itera
+- High latency (41-146s) on Nemotron correlates with eventual success, suggesting queue-backlog retry behavior rather than true unavailability.
+- InclusionAI Ling-3.0-Flash-Fin is the only model delivering consistent low-latency success (4.7-6.2s) across multiple calls without errors.
+- Free-tier models exhibit systematic reliability failures: NVIDIA Nemotron returns 502 upstream overload errors repeatedly, while Google Gemma models h
 - The forbidden-pattern detector correctly blocked a shutdown command embedded in a timeout-control script, proving that code-content guards are effecti
 - Simulation identified 5 risks and applied 3 revisions, but model failures (502/429) undermined validation, showing that simulation revisions must be g
 - Metabolism stress at 1.0 with a budget of max 1 iteration is too restrictive to complete meaningful model-revision cycles, creating a deadlock where t
@@ -51,11 +56,6 @@
 - Reflex tool execution fails on path resolution because tools receive relative paths but the runtime expects absolute paths under ZOETRON_DATA.
 - Model failures (502/429) trigger metabolic conservation that starves swarm budgets, creating a feedback loop where degraded models reduce iterations w
 - Proposed skills accumulate in dream output but lack an execution gateway, causing the system to repeatedly propose the same capabilities without imple
-- Calibration error of 300 % (predicted 4 vs actual 1) shows the estimator ignores model-health signals and artifact-quality gates.
-- Critic feedback repeatedly flags 'no executable Python block' as the root cause of non-convergence, yet the planner/builder loop emits prose artifacts
-- The inclusionai/ling-3.0-flash-fin model delivers consistent sub-4 s latency and zero observed failures, establishing it as the only reliable free-tie
-- Nvidia Nemotron exhibits extreme latency variance (20–121 s) and 502 upstream overload errors, violating iteration-time budgets for multi-step tasks.
-- Free-tier Google models consistently return 429 rate-limit errors, making them unusable as primary endpoints without aggressive backoff and fallback c
 
 ---
 
