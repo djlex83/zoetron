@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11751 Fakten** · Stand 2026-09-07 00:54 UTC · aktualisiert bei jedem Herzschlag
+**11727 Fakten** · Stand 2026-09-07 01:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6936
-- **swarm_artifact:** 2179
+- **dream:** 6926
+- **swarm_artifact:** 2171
 - **last_swarm_critique:** 815
-- **anti_pattern:** 591
+- **anti_pattern:** 587
 - **last_swarm_goal:** 547
-- **strategy:** 297
+- **strategy:** 295
 - **tool:** 174
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907010509:5:aa9677`
+*07.09. 01:05 UTC · Quelle: dream*
+
+Latency variance (2.9s vs 11s) across models violates implicit SLAs; no budget-aware routing exists to protect time-critical pipelines.
+
+### `dream:20260907010509:4:b045e4`
+*07.09. 01:05 UTC · Quelle: dream*
+
+Swarm knowledge remains stale despite refresh signals; automatic diff-and-patch sync is missing, leaving the system learning from outdated data.
+
+### `dream:20260907010509:3:1e203c`
+*07.09. 01:05 UTC · Quelle: dream*
+
+Skill proposals accumulate but rarely execute — the system lacks a 'proposal-to-implementation' gate with accountability.
+
+### `dream:20260907010509:2:3953ae`
+*07.09. 01:05 UTC · Quelle: dream*
+
+Reflex actions reliably converge on concrete tasks (swarm update, skill conversion) while higher-level goals stall without executable artifacts.
+
+### `dream:20260907010509:1:82dd33`
+*07.09. 01:05 UTC · Quelle: dream*
+
+Model failures cluster around provider overload (502) and rate limits (429), indicating missing circuit-breaker and fallback logic.
 
 ### `dream:20260907004900:5:1fe4f8`
 *07.09. 00:49 UTC · Quelle: dream*
@@ -44827,66 +44852,6 @@ score=3; issues=src/hermes/fs.py: Missing ensure_dir function imported by status
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
 
-### `dream:202608240101:5`
-*24.08. 01:01 UTC · Quelle: dream*
-
-System stress >0.7 correlates with degraded performance, necessitating throttling of dream/swarm spawns.
-
-### `dream:202608240101:4`
-*24.08. 01:01 UTC · Quelle: dream*
-
-Ad‑hoc inter‑agent communication channels are fragile; a reliable, replayable message queue is essential.
-
-### `dream:202608240101:3`
-*24.08. 01:01 UTC · Quelle: dream*
-
-Insights from dreams/simulations remain unused unless explicitly translated into actionable procedures.
-
-### `dream:202608240101:2`
-*24.08. 01:01 UTC · Quelle: dream*
-
-Infrequent performance testing creates blind spots; regular measurement is required to detect capability gaps.
-
-### `dream:202608240101:1`
-*24.08. 01:01 UTC · Quelle: dream*
-
-Model overload (502/429 errors) produces latency spikes and failures, revealing the need for fallback and backoff mechanisms.
-
-### `dream:202608240101:5`
-*24.08. 01:01 UTC · Quelle: dream*
-
-Metabolic stress (1.0) coincides with unbounded model calls; no backpressure reduces concurrency when the system should conserve.
-
-### `dream:202608240101:4`
-*24.08. 01:01 UTC · Quelle: dream*
-
-Dream insights accumulate but lack an automatic promotion mechanism; the 'stale knowledge' drive goal confirms zero operationalization of prior consolidations.
-
-### `dream:202608240101:3`
-*24.08. 01:01 UTC · Quelle: dream*
-
-Rate-limit headers (X-RateLimit-Remaining, Retry-After) are ignored, causing surprise lockouts that could be predicted 10-20 requests in advance.
-
-### `dream:202608240101:2`
-*24.08. 01:01 UTC · Quelle: dream*
-
-The simulation-evolution pipeline reliably upgrades design scores from 4/10 to 9/9/9, proving mental rehearsal works but is only triggered manually, not systematically.
-
-### `dream:202608240101:1`
-*24.08. 01:01 UTC · Quelle: dream*
-
-Free-tier Nvidia models (nemotron-3-ultra) exhibit catastrophic 502 errors and 90s+ latency spikes under load, making single-provider reliance a critical failure mode.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:2`
-*24.08. 00:59 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Hermes-Brücke bauen: Spr:0`
-*24.08. 00:59 UTC · Quelle: evolution*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
 ### `last_swarm_critique`
 *24.08. 00:58 UTC · Quelle: critic*
 
@@ -44896,41 +44861,6 @@ score=4; issues=Multiple incomplete implementations: final bruecke.py cuts off m
 *24.08. 00:53 UTC · Quelle: system*
 
 Hermes-Brücke bauen: Sprechkanal zum Boten-Agenten
-
-### `dream:202608240053:5`
-*24.08. 00:53 UTC · Quelle: dream*
-
-System runs in 'conserve' mode with high stress, yet continues spawning swarms instead of degrading gracefully.
-
-### `dream:202608240053:4`
-*24.08. 00:53 UTC · Quelle: dream*
-
-Memory pruning removes zero items, so stale context accumulates and degrades future reasoning.
-
-### `dream:202608240053:3`
-*24.08. 00:53 UTC · Quelle: dream*
-
-Simulations frequently require maximum revisions (5/5), indicating upstream design gaps before execution.
-
-### `dream:202608240053:2`
-*24.08. 00:53 UTC · Quelle: dream*
-
-Rate-limit handling is fragmented across multiple proposals but not yet unified into a single resilience layer.
-
-### `dream:202608240053:1`
-*24.08. 00:53 UTC · Quelle: dream*
-
-Free-tier model latency varies wildly (6–137 s), making it unreliable for time-critical paths.
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:2`
-*24.08. 00:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 5, 7]): Transport-Agnostic Message Bus - Abstract the communication layer behind a MessageBus protocol (send, subscribe, ack). Implement concrete adapters: FileSystemBus (uses atomic_write), RedisBus, InMemoryBus. Envelope an
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Hermes-Brücke bauen: Spr:1`
-*24.08. 00:52 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 6, 8]): Contract-First Code Generation - Define all message schemas in a single JSON Schema / OpenAPI file (hermes_contracts.yaml). Use a code generator (datamodel-code-generator or pydantic2ts) to produce Envelope[T], Channe
 
 ### `last_swarm_critique`
 *24.08. 00:51 UTC · Quelle: critic*

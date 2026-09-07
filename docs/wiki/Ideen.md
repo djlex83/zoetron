@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 00:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 01:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Latency variance (2.9s vs 11s) across models violates implicit SLAs; no budget-aware routing exists to protect time-critical pipelines.
+- Swarm knowledge remains stale despite refresh signals; automatic diff-and-patch sync is missing, leaving the system learning from outdated data.
+- Skill proposals accumulate but rarely execute — the system lacks a 'proposal-to-implementation' gate with accountability.
+- Reflex actions reliably converge on concrete tasks (swarm update, skill conversion) while higher-level goals stall without executable artifacts.
+- Model failures cluster around provider overload (502) and rate limits (429), indicating missing circuit-breaker and fallback logic.
 - Pruning removes events but not the underlying causes (stale data, model unreliability, proposal backlog).
 - Reflexes execute successfully but skip pre-flight checks (script existence, env, deps), risking silent failures.
 - Stale swarm knowledge recurs as a drive signal, indicating no scheduled refresh or TTL-based invalidation mechanism.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but rarely graduate to tested reflexes because no mandatory validation gate exists.
 - Model unreliability (27+ errors) correlates with missing per-provider health tracking and circuit-breaker logic.
 - Stale swarm knowledge (goals/critiques) persistently blocks novel insights and must be auto-refreshed after every convergence cycle.
-- Reflex route executed hebbian learning tool in 1.06s while swarm took 138s, proving lightweight deterministic paths outperform heavy deliberation for 
-- Five skill proposals generated but zero executed validates that proposal generation without mandatory validation gates produces artifact backlog not c
-- Swarm converges in 1 cycle with evolved=false, indicating premature convergence from insufficient critic diversity or missing exploration pressure.
-- Calibration error of 100% (predicted 4 vs actual 8) reveals critic scoring is uncalibrated, making all downstream selection decisions unreliable.
-- Model latency variance (138s vs 15s) and 27 errors indicate single-provider dependency creates systemic unreliability requiring routing with fallbacks
 
 ---
 

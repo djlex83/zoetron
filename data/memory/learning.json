@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 00:49:34",
+ "stand": "2026-09-07 01:05:35",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -15,21 +15,15 @@
    "quote": 1.0
   },
   {
+   "tool": "schwarmwissen-wieder-auffrischen.py",
+   "laeufe": 8,
+   "erfolge": 8,
+   "quote": 1.0
+  },
+  {
    "tool": "veraltete-marktinfos-aktualisieren.py",
    "laeufe": 7,
    "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 7,
-   "erfolge": 7,
-   "quote": 1.0
-  },
-  {
-   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
-   "laeufe": 5,
-   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -64,6 +58,12 @@
   },
   {
    "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
+   "laeufe": 4,
+   "erfolge": 4,
+   "quote": 1.0
+  },
+  {
+   "tool": "beste-vorschläge-in-fähigkeiten-verwande.py",
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
