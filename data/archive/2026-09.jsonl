@@ -22884,3 +22884,30 @@
 {"ts": 1788183502.2800045, "kind": "hand_action", "payload": {"ok": false, "exit": 1, "error": null, "duration_s": 0.19, "gelesen": 0}}
 {"ts": 1788183504.5168035, "kind": "issue_synced", "payload": {"issue": 264, "state": "open"}}
 {"ts": 1788183741.6560688, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787580000.0, "key": "dream:202608241400:5", "value": "Metabolism state was 'full' with low stress yet max_iterations stayed at 2, suggesting budget gates are too conservative relative to actual capacity.", "source": "dream"}
+{"ts": 1787580000.0, "key": "dream:202608241400:4", "value": "Skill proposals accumulate faster than they are implemented (multiple proposals, zero prune activity), indicating an execution bottleneck between dreaming and doing.", "source": "dream"}
+{"ts": 1787580000.0, "key": "dream:202608241400:3", "value": "Rate limits make more LLM calls the wrong lever for throughput; per-call output density (more facts/tokens per call) is the effective multiplier.", "source": "dream"}
+{"ts": 1787580000.0, "key": "dream:202608241400:2", "value": "Repeated non-convergence (3 attempts) should trigger a problem reformulation or creator decision rather than another identical retry cycle.", "source": "dream"}
+{"ts": 1787580000.0, "key": "dream:202608241400:1", "value": "Tasks fail to converge when act_done is allowed before the swarm reports converged=true, as seen in the Fußball task scoring 4/10 across 3 attempts without convergence.", "source": "dream"}
+{"ts": 1788184914.617053, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788184916.153131, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788184920.2215602, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788184920.2215579, "schalter_geoeffnet": false}}
+{"ts": 1788184986.0948458, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 65.9, "tokens_ein": 1243, "tokens_aus": 1167}}
+{"ts": 1788184986.0954058, "kind": "skill_proposal", "payload": {"proposal": "Implement ModelResilienceLayer with per-endpoint circuit breakers (3 failures/60s), EWMA latency prediction, automatic fallback priority chain, and half-open probes every 5 minutes."}}
+{"ts": 1788184986.095462, "kind": "skill_proposal", "payload": {"proposal": "Enforce PathContract at skill registration: require all I/O skills to declare path parameters and auto-wrap with resolve_path(rel, ZOETRON_DATA) + existence check, rejecting registration if missing."}}
+{"ts": 1788184986.0955188, "kind": "skill_proposal", "payload": {"proposal": "Deploy SyntheticProbeHarness that runs lightweight completions against all registered models every 60s, classifies errors (rate_limit, overload, timeout), and updates ModelHealthRegistry for router weighting."}}
+{"ts": 1788184986.0955744, "kind": "skill_proposal", "payload": {"proposal": "Build ProposalDeduplicator that hashes skill proposals by semantic intent (circuit breaker, pre-flight probe, path contract) and surfaces only novel or improved variants to SkillLifecycleManager."}}
+{"ts": 1788184986.095631, "kind": "skill_proposal", "payload": {"proposal": "Create ExecutionGapTracker that maps drive goals (stale, failure, gap) to concrete skill proposals and alerts when goal age exceeds threshold without linked skill in testing or deployed state."}}
+{"ts": 1788184986.095685, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788184988.4621387, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788184988.4621365, "schalter_geoeffnet": false}}
+{"ts": 1788185019.8994555, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 31.4, "tokens_ein": 501, "tokens_aus": 610}}
+{"ts": 1788185019.899608, "kind": "drive_goal", "payload": {"title": "Modell-Fehler reduzieren und Zuverlässigkeit steigern", "why": "Das Modell macht zu viele Fehler. Weniger Fehler bedeuten bessere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788185019.899683, "kind": "drive_goal", "payload": {"title": "Veraltete Schwarm-Artefakte aufräumen und archivieren", "why": "Alte Analyse-Ergebnisse blockieren den Speicher. Aufräumen schafft Platz für Neues.", "signal": "stale"}}
+{"ts": 1788185019.8997447, "kind": "drive_goal", "payload": {"title": "Skill-Vorschläge in nutzbare Fähigkeiten verwandeln", "why": "Viele Vorschläge liegen brach. Echte Fähigkeiten helfen bei echten Aufgaben.", "signal": "gap"}}
+{"ts": 1788185023.1169496, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.65, "gelesen": 4}}
+{"ts": 1788185023.119, "kind": "reflex_used", "payload": {"goal": "Marktanalyse-Ergebnisse in konkrete Schritte umsetzen", "tool": "alte-marktanalysen-verwerten.py", "ok": true}}
+{"ts": 1788185023.5460227, "kind": "act_done", "payload": {"goal_title": "Marktanalyse-Ergebnisse in konkrete Schritte umsetzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788185264.0124822, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788185333.3975382, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788185334.8880541, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788185338.9661694, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788185338.9661663, "schalter_geoeffnet": false}}

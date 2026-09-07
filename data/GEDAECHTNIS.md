@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11810 Fakten** · Stand 2026-09-07 14:01 UTC · aktualisiert bei jedem Herzschlag
+**11810 Fakten** · Stand 2026-09-07 14:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7026
 - **swarm_artifact:** 2140
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907141030:5:1903b0`
+*07.09. 14:10 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while drive signals (failure, stale, gap) persist, revealing a blind spot: component health ≠ system-level goal achievement.
+
+### `dream:20260907141030:4:aecc08`
+*07.09. 14:10 UTC · Quelle: dream*
+
+Skill proposals accumulate in a consistent structured format but lack a gating mechanism (criteria, owner, deadline) to convert them into built capabilities.
+
+### `dream:20260907141030:3:776a70`
+*07.09. 14:10 UTC · Quelle: dream*
+
+Model latency varies by >25% (49–62 s) for the same model, indicating unstable inference conditions that degrade planner reliability and violate implicit latency budgets.
+
+### `dream:20260907141030:2:03b833`
+*07.09. 14:10 UTC · Quelle: dream*
+
+Swarm knowledge refresh via reflex works reliably when triggered manually, yet the knowledge still goes stale because no automated freshness policy or scheduled trigger exists.
+
+### `dream:20260907141030:1:e887ec`
+*07.09. 14:10 UTC · Quelle: dream*
+
+The system repeatedly sets identical high-level goals (reduce model errors, refresh swarm knowledge, implement proposed skills) across cycles but fails to close the execution gap between proposal and deployment.
 
 ### `dream:20260907135854:5:a9328e`
 *07.09. 13:58 UTC · Quelle: dream*
@@ -45116,31 +45141,6 @@ Model latency varies 35× (2.8s–97.5s) on the same model, making fixed timeout
 *24.08. 14:30 UTC · Quelle: dream*
 
 Swarm evolution improved individual variant scores (3→9) but the swarm still failed to converge, indicating the aggregation/critic mechanism cannot synthesize partial improvements into a coherent solution.
-
-### `dream:202608241400:5`
-*24.08. 14:00 UTC · Quelle: dream*
-
-Metabolism state was 'full' with low stress yet max_iterations stayed at 2, suggesting budget gates are too conservative relative to actual capacity.
-
-### `dream:202608241400:4`
-*24.08. 14:00 UTC · Quelle: dream*
-
-Skill proposals accumulate faster than they are implemented (multiple proposals, zero prune activity), indicating an execution bottleneck between dreaming and doing.
-
-### `dream:202608241400:3`
-*24.08. 14:00 UTC · Quelle: dream*
-
-Rate limits make more LLM calls the wrong lever for throughput; per-call output density (more facts/tokens per call) is the effective multiplier.
-
-### `dream:202608241400:2`
-*24.08. 14:00 UTC · Quelle: dream*
-
-Repeated non-convergence (3 attempts) should trigger a problem reformulation or creator decision rather than another identical retry cycle.
-
-### `dream:202608241400:1`
-*24.08. 14:00 UTC · Quelle: dream*
-
-Tasks fail to converge when act_done is allowed before the swarm reports converged=true, as seen in the Fußball task scoring 4/10 across 3 attempts without convergence.
 
 ### `last_swarm_critique`
 *24.08. 13:37 UTC · Quelle: critic*

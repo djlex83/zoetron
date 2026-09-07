@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 14:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -31,8 +31,8 @@
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while drive signals (failure, stale, gap) persist, revealing a blind spot: component health ≠ system-level go
+- Skill proposals accumulate in a consistent structured format but lack a gating mechanism (criteria, owner, deadline) to convert them into built capabi
+- Model latency varies by >25% (49–62 s) for the same model, indicating unstable inference conditions that degrade planner reliability and violate impli
+- Swarm knowledge refresh via reflex works reliably when triggered manually, yet the knowledge still goes stale because no automated freshness policy or
+- The system repeatedly sets identical high-level goals (reduce model errors, refresh swarm knowledge, implement proposed skills) across cycles but fail
 - Pruning discards causal chains unless every removed event carries a traceable experiment ID, preventing post-mortem learning from failures.
 - Swarm knowledge and drive goals go stale without a scheduled ingestion mechanism that converts external critiques into internal code changes.
 - Skill proposals accumulate but remain unintegrated because no automated validation-to-deployment pipeline exists.
@@ -51,11 +56,6 @@
 - Hand actions exit non-zero silently (exit=1, no stderr captured) creating blind spots in tool execution feedback.
 - Swarm convergence at score 7 after only 2 cycles with evolved=true indicates premature termination masquerading as progress.
 - Free-tier model providers fail unpredictably (502 overload, 429 rate limits) making single-provider dependence a reliability anti-pattern.
-- Calibration error of 2 points (predicted 5 vs actual 7) shows the system underestimates its own reliability gains after improvements.
-- Evolution with critic feedback improved variant scores from baseline 7 to 9, but swarm convergence failed after 2 cycles indicating insufficient itera
-- High latency (41-146s) on Nemotron correlates with eventual success, suggesting queue-backlog retry behavior rather than true unavailability.
-- InclusionAI Ling-3.0-Flash-Fin is the only model delivering consistent low-latency success (4.7-6.2s) across multiple calls without errors.
-- Free-tier models exhibit systematic reliability failures: NVIDIA Nemotron returns 502 upstream overload errors repeatedly, while Google Gemma models h
 
 ---
 
