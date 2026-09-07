@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:25 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:35 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress-aware scheduling is proposed but not yet implemented; current loops run fixed iterations regardless of observed failure density.
+- Swarm-knowledge staleness triggers explicit drive goals, yet the only reflex action is a periodic refresh without fresh critique simulation.
+- Aggressive pruning (63 events in first run) risks discarding failure-pattern evidence needed for root-cause mining.
+- The system generates corrective skill proposals (ModelHealthTracker, ProviderReliabilityIndex) but lacks an automatic mechanism to validate and promot
+- Free-tier providers (Nvidia Nemotron, Google Gemma) consistently fail with 502 upstream overload and 429 rate-limit errors, while inclusionai/ling-3.0
 - Stress signals (5xx/429 bursts) correlate with goal stagnation but trigger no automatic scope reduction.
 - Skill proposals accumulate without validation gates, creating proposal debt that blocks execution.
 - Swarm convergence fails when critic feedback targets artifact gaps but builder iterations don't close them.
@@ -51,11 +56,6 @@
 - Self-calibration is severely miscalibrated (predicted 8 vs actual 4), indicating need for explicit calibration tracking per model/task.
 - Simulation gate caught 5 risks and forced 5 revisions before execution, preventing deployment of a mere 'gap auditor' artifact.
 - Free-tier models (Nemotron, Gemma) exhibit high failure rates (502/429) while inclusionai/ling-3.0-flash-fin delivers consistent low-latency success.
-- Moderate metabolic stress (0.411) with a tight budget (max 4 tasks, 2 iterations) means the system cannot sustain concurrent swarm operations and mode
-- The recurring stale-signal on swarm knowledge indicates that refresh is reactive rather than scheduled, so the system always lags behind updated criti
-- Pruning removed 16 facts and 42 events in a single cycle, which risks losing diagnostic value if no audit trail records why each item was pruned.
-- Skill proposals are generated faster than they can be validated and executed, creating a growing gap between dreaming and doing that the system recogn
-- Model failures (502 upstream errors, timeouts) cascade through the entire pipeline because no fallback provider chain exists, causing skill proposals 
 
 ---
 

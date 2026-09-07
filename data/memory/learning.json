@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 02:25:43",
+ "stand": "2026-09-07 02:35:43",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -39,12 +39,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
-   "laeufe": 5,
-   "erfolge": 3,
-   "quote": 0.6
-  },
-  {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
    "laeufe": 5,
    "erfolge": 5,
@@ -61,6 +55,12 @@
    "laeufe": 4,
    "erfolge": 4,
    "quote": 1.0
+  },
+  {
+   "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
+   "laeufe": 4,
+   "erfolge": 2,
+   "quote": 0.5
   },
   {
    "tool": "modellfehler-deutlich-reduzieren.py",
@@ -175,6 +175,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
+   "laeufe": 2,
+   "erfolge": 1,
+   "quote": 0.5
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
@@ -307,12 +313,6 @@
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
-  },
-  {
-   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",

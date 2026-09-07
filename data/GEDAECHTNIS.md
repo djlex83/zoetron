@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11719 Fakten** · Stand 2026-09-07 02:27 UTC · aktualisiert bei jedem Herzschlag
+**11723 Fakten** · Stand 2026-09-07 02:37 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6926
-- **swarm_artifact:** 2166
+- **dream:** 6931
+- **swarm_artifact:** 2165
 - **last_swarm_critique:** 816
 - **anti_pattern:** 583
 - **last_swarm_goal:** 548
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907023519:5:ff938f`
+*07.09. 02:35 UTC · Quelle: dream*
+
+Stress-aware scheduling is proposed but not yet implemented; current loops run fixed iterations regardless of observed failure density.
+
+### `dream:20260907023519:4:ae9b3c`
+*07.09. 02:35 UTC · Quelle: dream*
+
+Swarm-knowledge staleness triggers explicit drive goals, yet the only reflex action is a periodic refresh without fresh critique simulation.
+
+### `dream:20260907023519:3:75ca07`
+*07.09. 02:35 UTC · Quelle: dream*
+
+Aggressive pruning (63 events in first run) risks discarding failure-pattern evidence needed for root-cause mining.
+
+### `dream:20260907023519:2:ea1f57`
+*07.09. 02:35 UTC · Quelle: dream*
+
+The system generates corrective skill proposals (ModelHealthTracker, ProviderReliabilityIndex) but lacks an automatic mechanism to validate and promote them before registry entry.
+
+### `dream:20260907023519:1:2d45f5`
+*07.09. 02:35 UTC · Quelle: dream*
+
+Free-tier providers (Nvidia Nemotron, Google Gemma) consistently fail with 502 upstream overload and 429 rate-limit errors, while inclusionai/ling-3.0-flash-fin succeeds reliably at ~3.3s latency.
 
 ### `dream:20260907022527:5:fdb8b4`
 *07.09. 02:25 UTC · Quelle: dream*
