@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 11:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 11:26 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -9,21 +9,21 @@
 - ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 6×)*
 - ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 6×)*
 - ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 6×)*
-- Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuo *(hatte die Idee 5×)*
 - PathResolver: canonicalize all inputs to absolute paths using ZOETRON_DATA and argv[1] before any filesystem a *(hatte die Idee 5×)*
 - DriveScheduler: topologically sort active goals by prerequisite dependency (model reliability → swarm update → *(hatte die Idee 5×)*
 - Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backof *(hatte die Idee 5×)*
 - StalenessDetector: proactively scan swarm data age on a scheduled basis (e.g., hourly), emitting drive_goal ev *(hatte die Idee 5×)*
+- Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuo *(hatte die Idee 4×)*
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
 - Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
-- Add @circuit_breaker decorator with configurable failure threshold, half-open probe interval, and automatic me *(hatte die Idee 3×)*
-- Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 3×)*
-- Add PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run i *(hatte die Idee 3×)*
+- Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
+- SimulationGate: run simulation verdict; if revise, apply revisions and re-verify before committing artifact. *(hatte die Idee 3×)*
+- Add a mandatory skill validation gate requiring every proposed skill to be executed and scored within one cycl *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- High metabolism stress (0.936) triggers conserve mode that starves swarm iterations needed for convergence.
+- Skill proposals accumulate but deployment verification reflex fails, creating persistent idea-action gap.
+- Hand actions fail on relative paths because ZOETRON_DATA env var isn't resolved before execution.
+- Swarm convergence fails when critic issues (thread timeouts) aren't resolved before evolution runs.
+- Model latency spikes (30-93s) cause cascade timeouts in swarm simulations and hand actions.
 - Event-to-fact pruning ratio 82:1 signals excessive noise in experience stream; most logged events are transient model I/O, not durable knowledge.
 - Evolutionary search (3 variants) jumped scores to 9/8/9 by addressing thread-timeout handling, proving targeted code-level fixes outperform prompt-lev
 - Simulation-revision loops (5+3 revisions) plateau at score 7 without convergence, indicating the critic's feedback isn't actionable enough to escape l
@@ -51,11 +56,6 @@
 - Hand actions fail silently when relative paths diverge from ZOETRON_DATA environment.
 - Proposed skills remain theoretical without mandatory simulation validation before deployment.
 - Upstream model overload (502) causes cascading failures without health-aware routing.
-- Self-diagnosis confirms structural integrity (no organ errors), meaning failures are entirely external (upstream service issues), so resilience must c
-- The same models fail repeatedly across selection cycles because no shared, persistent error state exists between cycles, indicating a missing cross-se
-- Skill proposals accumulate faster than they get implemented, creating a persistent gap between identified solutions and executed capabilities that the
-- The reflex-based error correction loop (`modellfehler-verstehen-und-beheben.py`) converges successfully but is inherently reactive; proactive pre-flig
-- Model failures follow predictable error signatures (502=overload, 429=rate-limit) that should trigger automatic cooldown-based routing rather than exh
 
 ---
 

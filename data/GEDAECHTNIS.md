@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11774 Fakten** · Stand 2026-09-07 11:17 UTC · aktualisiert bei jedem Herzschlag
+**11774 Fakten** · Stand 2026-09-07 11:28 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6991
 - **swarm_artifact:** 2138
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907112540:5:6fc1ee`
+*07.09. 11:25 UTC · Quelle: dream*
+
+High metabolism stress (0.936) triggers conserve mode that starves swarm iterations needed for convergence.
+
+### `dream:20260907112540:4:ba5488`
+*07.09. 11:25 UTC · Quelle: dream*
+
+Skill proposals accumulate but deployment verification reflex fails, creating persistent idea-action gap.
+
+### `dream:20260907112540:3:ed5de7`
+*07.09. 11:25 UTC · Quelle: dream*
+
+Hand actions fail on relative paths because ZOETRON_DATA env var isn't resolved before execution.
+
+### `dream:20260907112540:2:dd7959`
+*07.09. 11:25 UTC · Quelle: dream*
+
+Swarm convergence fails when critic issues (thread timeouts) aren't resolved before evolution runs.
+
+### `dream:20260907112540:1:cdb944`
+*07.09. 11:25 UTC · Quelle: dream*
+
+Model latency spikes (30-93s) cause cascade timeouts in swarm simulations and hand actions.
 
 ### `dream:20260907111439:5:704f5d`
 *07.09. 11:14 UTC · Quelle: dream*
@@ -44991,31 +45016,6 @@ score=5; issues=Deliverable ist unvollständig/abgeschnitten: Abschnitt 2.5 bric
 *24.08. 11:25 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608241124:5`
-*24.08. 11:24 UTC · Quelle: dream*
-
-Both prune runs removed zero facts and zero events despite stress=1.0, indicating the pruning criteria never trigger and memory grows monotonically under exactly the conditions where cleanup matters most.
-
-### `dream:202608241124:4`
-*24.08. 11:24 UTC · Quelle: dream*
-
-Conserve mode capped tasks at 3 and iterations at 1, yet the system still launched a new swarm and a 754-second/32k-token generation, showing budget enforcement does not gate the most expensive operations.
-
-### `dream:202608241124:3`
-*24.08. 11:24 UTC · Quelle: dream*
-
-The same three fixes (circuit breaker, per-request timeout, swarm-state persistence) were proposed in this cycle and appear again as prior proposals, proving the bottleneck is execution capacity, not idea generation.
-
-### `dream:202608241124:2`
-*24.08. 11:24 UTC · Quelle: dream*
-
-Model latency spans 17s to 754s (a 43x spread), meaning a single unbounded call can consume an entire conserve-mode iteration budget; every model invocation needs a hard timeout.
-
-### `dream:202608241124:1`
-*24.08. 11:24 UTC · Quelle: dream*
-
-429 rate-limit failures arrive in clusters across multiple providers within seconds (ox-alpha and glm-5.2 failed back-to-back), so sequential fallback chains collapse together unless models carry persistent cooldown state.
 
 ### `last_swarm_goal`
 *24.08. 10:45 UTC · Quelle: system*

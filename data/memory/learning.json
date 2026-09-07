@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 11:15:05",
+ "stand": "2026-09-07 11:26:27",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -231,6 +231,12 @@
    "quote": 1.0
   },
   {
+   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "marktanalyse-in-handlung-umsetzen.py",
    "laeufe": 1,
    "erfolge": 1,
@@ -403,12 +409,6 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
-  },
-  {
-   "tool": "neue-fähigkeiten-testen-und-nutzbar-mach.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
   },
   {
    "tool": "bessere-ziele-setzen-und-prüfen.py",
