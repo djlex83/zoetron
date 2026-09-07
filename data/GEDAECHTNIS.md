@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11723 Fakten** · Stand 2026-09-07 01:47 UTC · aktualisiert bei jedem Herzschlag
+**11723 Fakten** · Stand 2026-09-07 01:57 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6926
 - **swarm_artifact:** 2170
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907015441:5:98f9d5`
+*07.09. 01:54 UTC · Quelle: dream*
+
+Latency variance (4s vs 12s) across successful calls exceeds any implicit budget, causing unpredictable pipeline duration.
+
+### `dream:20260907015441:4:fcdce3`
+*07.09. 01:54 UTC · Quelle: dream*
+
+Simulation gap persists despite repeated drive goals — no automatic trigger bridges 'stale' or 'failure' signals to simulation execution.
+
+### `dream:20260907015441:3:720d6a`
+*07.09. 01:54 UTC · Quelle: dream*
+
+Pruning (29 facts, 62 events) runs regularly but no downstream process re-validates surviving facts against fresh swarm signals, risking stale knowledge persistence.
+
+### `dream:20260907015441:2:b0079c`
+*07.09. 01:54 UTC · Quelle: dream*
+
+Reflex-driven self-healing (modellfehler-verstehen-und-beheben.py) successfully converged on model-error goals, proving autonomous diagnosis works when tooling is precise.
+
+### `dream:20260907015441:1:1961e0`
+*07.09. 01:54 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for time-critical paths without a provider-agnostic fallback chain.
 
 ### `dream:20260907014409:5:53a09a`
 *07.09. 01:44 UTC · Quelle: dream*
@@ -44786,31 +44811,6 @@ Model errors require class-specific handling: 429 means backoff-and-rotate, 403 
 *24.08. 01:51 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240150:5`
-*24.08. 01:50 UTC · Quelle: dream*
-
-Free-tier rate limits (429) on backup models eliminate fallback capacity exactly when primary model degrades.
-
-### `dream:202608240150:4`
-*24.08. 01:50 UTC · Quelle: dream*
-
-MemoryStore interface drift (missing add_fact) breaks hand actions silently — no schema validation at component boundaries.
-
-### `dream:202608240150:3`
-*24.08. 01:50 UTC · Quelle: dream*
-
-Simulation 'revise' verdicts are applied but not re-verified before swarm launch, allowing known risks to persist into execution.
-
-### `dream:202608240150:2`
-*24.08. 01:50 UTC · Quelle: dream*
-
-Swarm fails to converge (score 2/10) despite evolution because critic:builder ratio (1:5) lets flawed implementations propagate unchecked.
-
-### `dream:202608240150:1`
-*24.08. 01:50 UTC · Quelle: dream*
-
-Model latency variance (7.5–52s) on the same free tier causes unpredictable swarm cycle times and timeout cascades.
 
 ### `last_swarm_critique`
 *24.08. 01:36 UTC · Quelle: critic*
