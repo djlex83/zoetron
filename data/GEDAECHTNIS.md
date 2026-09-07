@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11870 Fakten** · Stand 2026-09-07 20:57 UTC · aktualisiert bei jedem Herzschlag
+**11875 Fakten** · Stand 2026-09-07 21:09 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7126
+- **dream:** 7131
 - **swarm_artifact:** 2114
 - **last_swarm_critique:** 826
 - **anti_pattern:** 567
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907210608:5:f9f173`
+*07.09. 21:06 UTC · Quelle: dream*
+
+Swarm coordination state decays without periodic heartbeat broadcasts, leading to stale collaboration context.
+
+### `dream:20260907210608:4:b99fed`
+*07.09. 21:06 UTC · Quelle: dream*
+
+Absence of structured telemetry on hand_action/model calls prevents rapid diagnosis of latency spikes and non-zero exits.
+
+### `dream:20260907210608:3:a1d2e4`
+*07.09. 21:06 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack an automated promotion pipeline to production, causing idea-to-action latency.
+
+### `dream:20260907210608:2:d91358`
+*07.09. 21:06 UTC · Quelle: dream*
+
+Only inclusionai/ling-3.0-flash-fin:free succeeded consistently, suggesting a need for validated model allowlists.
+
+### `dream:20260907210608:1:871bc5`
+*07.09. 21:06 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading failures (502 upstream, 429 rate limits) making single-model reliance unreliable.
 
 ### `dream:20260907205535:5:878fc9`
 *07.09. 20:55 UTC · Quelle: dream*

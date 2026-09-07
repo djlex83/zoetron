@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 20:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 21:07 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 3×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm coordination state decays without periodic heartbeat broadcasts, leading to stale collaboration context.
+- Absence of structured telemetry on hand_action/model calls prevents rapid diagnosis of latency spikes and non-zero exits.
+- Skill proposals accumulate but lack an automated promotion pipeline to production, causing idea-to-action latency.
+- Only inclusionai/ling-3.0-flash-fin:free succeeded consistently, suggesting a need for validated model allowlists.
+- Free-tier models exhibit cascading failures (502 upstream, 429 rate limits) making single-model reliance unreliable.
 - Five skill proposals generated but zero activated (drive_goal 'gap'), revealing a proposal-execution disconnect that stalls capability growth.
 - Pruning removed 34 events but 0 facts, showing experience consolidation discards temporal context while preserving semantic knowledge.
 - Reflex-driven error handling succeeded where proactive model selection failed, proving reactive recovery > static routing.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate in registry limbo without a validation pipeline that sandboxes, tests, and promotes them atomically.
 - Swarm cycles stall at score 6 without convergence because critique feedback loops lack freshness thresholds and automatic refresh triggers.
 - Nemotron-3-Ultra consistently fails with 502 upstream overload while Gemma models hit 429 rate limits, making flash-tier models the only reliable free
-- Correlated failures across Nvidia (502) and Google (429) providers suggest that provider diversity alone is insufficient; a circuit-breaker pattern th
-- The simulation verdict shifted from 'go' to 'revise' after 4 revision cycles, indicating that initial validation passes are unreliable and at least 2-
-- Calibration systematically underestimated performance (predicted 4, actual 6), revealing a conservative bias that should be corrected by adding a posi
-- Operating under max stress (1.0) with a constrained budget (3 tasks, 1 iteration) forced efficiency but caused under-exploration; the evolution run wi
-- When primary model providers fail with 502/429 errors simultaneously, a lightweight fallback model (inclusionai/ling-3.0-flash-fin) proved both faster
 
 ---
 
