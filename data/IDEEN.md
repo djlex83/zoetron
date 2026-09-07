@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 07:32 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,7 +15,7 @@
 - ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 5×)*
 - ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 5×)*
 - ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 5×)*
-- Add ProposalDeduplicator that embeds new skill proposals, clusters by semantic similarity (cosine > 0.85), and *(hatte die Idee 4×)*
+- ProviderFailoverChain: maintain an ordered, capability-tiered model list with real-time 429/502/latency health *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
@@ -27,13 +27,13 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 10×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Unvalidated skill proliferation (80+ proposals) creates decision noise that delays actual improvement, making deterministic validation gates essential
+- Aggressive event pruning during consolidation risks discarding failure-context snapshots needed for later root-cause correlation and automatic skill p
+- Error-class-specific recovery strategies — exponential backoff with jitter for rate limits versus immediate provider switch for service overloads — ou
+- Provider diversity with health-aware routing is the most reliable recovery mechanism, as successful requests consistently originated from alternative 
+- Rate-limit (429) and upstream-overload (502) errors are the dominant systemic failure mode, recurring across multiple providers and requiring architec
 - Error trends are reacted to per-event rather than as statistical sequences, causing premature fallbacks and missed systemic issues.
 - No skill enters the registry with a verified test harness, so regressions accumulate silently.
 - Pruning discards 52 events per run without protecting failure contexts, erasing evidence needed for root-cause analysis.
@@ -51,11 +56,6 @@
 - Pruning operations without cascading dependency invalidation risk leaving orphaned or unverified facts in the knowledge graph, corrupting downstream r
 - Convergence declarations are unreliable when scores are null; a valid convergence requires a non-null score with a positive improvement delta from the
 - Infrastructure failures such as 429 rate limits must be classified distinctly from model quality failures and routed to separate remediation pipelines
-- Reflex execution without pre-flight validation risks cascading failures from missing scripts, broken paths, or absent environment variables that could
-- Stale swarm data silently degrades decision quality, making scheduled age-based detection more reliable than reactive discovery after damage is alread
-- The dream-to-do gap — generating skill proposals without an automated pipeline to implement them — is the most persistent bottleneck in autonomous ski
-- 429 and 502 errors require fundamentally different recovery strategies — rate limits need exponential backoff with jitter, while upstream errors deman
-- Provider failures cluster around rate limits (429) and upstream overload (502), meaning single-model dependency is a systemic single point of failure 
 
 ---
 
