@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11813 Fakten** · Stand 2026-09-07 16:14 UTC · aktualisiert bei jedem Herzschlag
+**11818 Fakten** · Stand 2026-09-07 16:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7056
+- **dream:** 7061
 - **swarm_artifact:** 2122
 - **last_swarm_critique:** 823
 - **anti_pattern:** 575
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907162232:5:006a4f`
+*07.09. 16:22 UTC · Quelle: dream*
+
+Reflex-based problem solving (alte-träume-miteinander-verbinden.py) successfully connects distant memories without requiring any model calls, proving that internal retrieval can bypass external dependencies entirely.
+
+### `dream:20260907162232:4:7fef96`
+*07.09. 16:22 UTC · Quelle: dream*
+
+Event pruning (38 events) far outpaces fact pruning (0 facts) during consolidation, indicating the system preserves core knowledge while aggressively discarding transient noise.
+
+### `dream:20260907162232:3:cb7218`
+*07.09. 16:22 UTC · Quelle: dream*
+
+The system has proposed but not implemented a model router, creating a persistent gap between diagnosing the failure pattern and executing a solution.
+
+### `dream:20260907162232:2:96707a`
+*07.09. 16:22 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin is the only consistently reliable model, succeeding with ~3.5s latency while every other provider fails repeatedly.
+
+### `dream:20260907162232:1:3cd771`
+*07.09. 16:22 UTC · Quelle: dream*
+
+External service failures (502 upstream overload from Nvidia, 429 rate limits from Google) are the dominant and recurring failure mode across multiple consolidation cycles.
 
 ### `dream:20260907161113:5:7c7fb4`
 *07.09. 16:11 UTC · Quelle: dream*
