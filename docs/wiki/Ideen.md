@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 05:31 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 05:41 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,17 +15,17 @@
 - Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backof *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
-- Guarantee one remediation task per meta-cycle via ReservedRemediationBudget scheduler to prevent pruning from  *(hatte die Idee 3×)*
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
 - Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
 - SimulationGate: run simulation verdict; if revise, apply revisions and re-verify before committing artifact. *(hatte die Idee 3×)*
+- Add a mandatory skill validation gate requiring every proposed skill to be executed and scored within one cycl *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress-aware scheduling remains a proposal while failure-driven goal selection reacts late, allowing cascading failures under load.
+- Swarm knowledge refresh only triggers on stale signal, not on goal convergence, causing outdated critiques to persist for multiple cycles.
+- Dream-generated skill proposals (FailurePatternMiner, SkillValidationGate, ProviderHealthMonitor) accumulate but never deploy, creating an insight-to-
+- Pruning discards failure context (goals/tools active during model_fail) while keeping routine successes, preventing root-cause learning.
+- Model failure rate approaches 50% due to upstream provider overload (502 errors), making provider health routing critical for reliability.
 - Reflex-based error handling executes reliably (exit 0, ok: true) but may create a false sense of resolution, masking underlying model quality degradat
 - Aggressive pruning of 46 events and 8 facts risks discarding failure-context patterns that are essential for cross-cycle pattern recognition and root-
 - Convergence detection repeatedly fails because binary flags cannot capture gradual improvement, making value-delta threshold approaches fundamentally 
@@ -51,11 +56,6 @@
 - Stale swarm knowledge degrades collective intelligence: outdated assessments persist without timestamp-based invalidation.
 - Skill proposals accumulate but remain untested: 70+ proposals exist yet only one mission executed, creating a proposal-execution gap.
 - Model failures cascade without automatic failover: nemotron 502 and gemma 429 errors halted progress until Ling-3.0-flash-fin succeeded.
-- Pruning removes raw events but preserves derived facts, causing zombie beliefs to outlive their evidence base.
-- Reflex tools succeed when they encapsulate a single, idempotent filesystem mutation, but fail silently when they chain multiple side-effects without t
-- Skill-proposal backlog grows faster than execution because proposals lack a mandatory 'first concrete step' field that the planner can schedule immedi
-- Stale swarm knowledge persists because freshness timestamps are never written at ingestion, making invalidation heuristic rather than deterministic.
-- Model endpoint failures (502/429) cascade into task stalls unless automatic fallback with health-aware routing is baked into every LLM call.
 
 ---
 

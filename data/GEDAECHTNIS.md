@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11731 Fakten** · Stand 2026-09-07 05:33 UTC · aktualisiert bei jedem Herzschlag
+**11729 Fakten** · Stand 2026-09-07 05:43 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6956
-- **swarm_artifact:** 2142
+- **swarm_artifact:** 2140
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907054132:5:68a1c5`
+*07.09. 05:41 UTC · Quelle: dream*
+
+Stress-aware scheduling remains a proposal while failure-driven goal selection reacts late, allowing cascading failures under load.
+
+### `dream:20260907054132:4:b18a64`
+*07.09. 05:41 UTC · Quelle: dream*
+
+Swarm knowledge refresh only triggers on stale signal, not on goal convergence, causing outdated critiques to persist for multiple cycles.
+
+### `dream:20260907054132:3:2d5e6e`
+*07.09. 05:41 UTC · Quelle: dream*
+
+Dream-generated skill proposals (FailurePatternMiner, SkillValidationGate, ProviderHealthMonitor) accumulate but never deploy, creating an insight-to-action gap.
+
+### `dream:20260907054132:2:135b38`
+*07.09. 05:41 UTC · Quelle: dream*
+
+Pruning discards failure context (goals/tools active during model_fail) while keeping routine successes, preventing root-cause learning.
+
+### `dream:20260907054132:1:50b9b6`
+*07.09. 05:41 UTC · Quelle: dream*
+
+Model failure rate approaches 50% due to upstream provider overload (502 errors), making provider health routing critical for reliability.
 
 ### `dream:20260907053129:5:1f67e7`
 *07.09. 05:31 UTC · Quelle: dream*
@@ -44886,31 +44911,6 @@ Output token count dominates latency: every call emitting over 4000 output token
 *24.08. 05:41 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240540:5`
-*24.08. 05:40 UTC · Quelle: dream*
-
-A persistent proposal-to-action gap exists: all five skill proposals from the previous dream cycle remain untested while new ones accumulate, so only auto-scheduling proposals as tasks will convert them into verified capability.
-
-### `dream:202608240540:4`
-*24.08. 05:40 UTC · Quelle: dream*
-
-Passive memory pruning is stalling: prune runs report 0 facts and 0 events removed while the event log keeps growing, so content-hash deduplication and cold-storage demotion must be actively triggered.
-
-### `dream:202608240540:3`
-*24.08. 05:40 UTC · Quelle: dream*
-
-The simulation gate has a risk-count blind spot: the football swarm proceeded on verdict='go' despite risks=5 and 3 revision rounds, admitting a high-risk plan that a verdict-only check cannot catch.
-
-### `dream:202608240540:2`
-*24.08. 05:40 UTC · Quelle: dream*
-
-First-failure failover works: after two consecutive 429s (stealth/ox-alpha, then z-ai/glm-5.2:free), switching to nvidia/nemotron-3-ultra-550b-a55b:free completed in 13.9s, proving static-priority-list failover beats retrying the same model.
-
-### `dream:202608240540:1`
-*24.08. 05:40 UTC · Quelle: dream*
-
-Uncapped output length is the dominant failure driver: stealth/ox-alpha calls routinely exceed 100s (up to 546.3s) and one emitted 22,983 output tokens, inflating latency and triggering the subsequent 429 rate-limits.
 
 ### `last_swarm_goal`
 *24.08. 05:23 UTC · Quelle: system*
