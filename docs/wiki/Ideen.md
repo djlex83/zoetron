@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 18:36 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 18:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Path fragility persists: a skill proposal explicitly demands absolute-path enforcement, revealing repeated relative-path failures in file operations.
+- Simulation deficit is structural: only 2 simulations logged despite drive goal identifying gap, indicating no automatic trigger for mental rehearsal.
+- Reflex mode masks complexity: both swarm goals converged instantly via reflex, hiding whether actual collaboration quality improved.
+- Swarm knowledge decays exponentially: two separate reflex revivals within one cycle prove stale-data detection is reactive, not scheduled.
+- Model reliability degrades under load: nemotron-3-ultra shows 29-44s latency with no error tracking, causing silent failures that cascade into poor de
 - Pruning removes facts/events aggressively (5-9 facts, 15-39 events) without preserving decision-critical context.
 - Swarm knowledge staleness triggers reflex recovery but lacks proactive TTL-based refresh schedules.
 - Skill proposals accumulate but lack automatic deployment pipelines, creating a proposal-execution gap.
@@ -51,11 +56,6 @@
 - Skills that produce output without return values or side effects are structurally useless regardless of conceptual merit, as the rejected 'fähigkeiten
 - Swarm cycles lacking explicit convergence criteria waste resources and produce low-scoring outcomes that never stabilize, as seen in the 'Fähigkeiten 
 - Model provider failures follow a recurring pattern of upstream overload (502) and rate limiting (429) that cascades through the system without circuit
-- Calibration error of 1 point persists despite evolution, indicating the predictor overestimates artifact quality by ~20%.
-- Swarm convergence stalls when builder-to-critic ratio exceeds 3:1 and cycles are capped at 2, leaving risks unaddressed.
-- Tools that produce only stdout without side-effects or return values are rejected by the hand-action validator, wasting cycles.
-- Evolutionary search with critic feedback can lift artifact scores from 4 to 8–9, but only when variants implement concrete behavior rather than delega
-- Free-tier models on OpenRouter suffer systematic rate-limiting (429) and upstream overloads (502), making them unreliable for latency-sensitive workfl
 
 ---
 

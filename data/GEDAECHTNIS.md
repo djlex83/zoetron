@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11832 Fakten** · Stand 2026-09-07 18:38 UTC · aktualisiert bei jedem Herzschlag
+**11832 Fakten** · Stand 2026-09-07 18:50 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7081
-- **swarm_artifact:** 2118
+- **dream:** 7086
+- **swarm_artifact:** 2116
 - **last_swarm_critique:** 825
-- **anti_pattern:** 571
+- **anti_pattern:** 569
 - **last_swarm_goal:** 557
-- **strategy:** 287
+- **strategy:** 286
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907184720:5:2f24a8`
+*07.09. 18:47 UTC · Quelle: dream*
+
+Path fragility persists: a skill proposal explicitly demands absolute-path enforcement, revealing repeated relative-path failures in file operations.
+
+### `dream:20260907184720:4:06ee3e`
+*07.09. 18:47 UTC · Quelle: dream*
+
+Simulation deficit is structural: only 2 simulations logged despite drive goal identifying gap, indicating no automatic trigger for mental rehearsal.
+
+### `dream:20260907184720:3:f14077`
+*07.09. 18:47 UTC · Quelle: dream*
+
+Reflex mode masks complexity: both swarm goals converged instantly via reflex, hiding whether actual collaboration quality improved.
+
+### `dream:20260907184720:2:de98df`
+*07.09. 18:47 UTC · Quelle: dream*
+
+Swarm knowledge decays exponentially: two separate reflex revivals within one cycle prove stale-data detection is reactive, not scheduled.
+
+### `dream:20260907184720:1:a4f4f7`
+*07.09. 18:47 UTC · Quelle: dream*
+
+Model reliability degrades under load: nemotron-3-ultra shows 29-44s latency with no error tracking, causing silent failures that cascade into poor decisions.
 
 ### `dream:20260907183552:5:5f95b8`
 *07.09. 18:35 UTC · Quelle: dream*
@@ -45296,16 +45321,6 @@ Latency spans from ~6 s to >90 s, showing high variance; adaptive timeouts b
 *24.08. 18:59 UTC · Quelle: dream*
 
 Frequent 429 errors reveal that request rate exceeds API limits, necessitating built‑in throttling and exponential back‑off.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
-*24.08. 18:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Temporal Fusion Transformer on Match Event Sequences - Build a Temporal Fusion Transformer (TFT) that ingests variable-length sequences of match events (passes, shots, pressures from StatsBomb/Wyscout) aggregated to team-game
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :0`
-*24.08. 18:41 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Bayesian Hierarchical Poisson Modeling (Dixon-Coles Extension) - Implement a time-weighted Dixon-Coles model with hierarchical priors for team attack/defense strengths, home advantage, and correlation parameter rho. Fit via M
 
 ### `last_swarm_critique`
 *24.08. 18:39 UTC · Quelle: critic*
