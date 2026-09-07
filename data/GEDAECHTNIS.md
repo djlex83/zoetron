@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11800 Fakten** · Stand 2026-09-07 13:14 UTC · aktualisiert bei jedem Herzschlag
+**11805 Fakten** · Stand 2026-09-07 13:26 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7011
+- **dream:** 7016
 - **swarm_artifact:** 2142
 - **last_swarm_critique:** 823
 - **anti_pattern:** 583
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907132259:5:80eb8f`
+*07.09. 13:22 UTC · Quelle: dream*
+
+The forbidden-pattern detector correctly blocked a shutdown command embedded in a timeout-control script, proving that code-content guards are effective but must run before execution, not after.
+
+### `dream:20260907132259:4:a1cc73`
+*07.09. 13:22 UTC · Quelle: dream*
+
+Simulation identified 5 risks and applied 3 revisions, but model failures (502/429) undermined validation, showing that simulation revisions must be gated behind actual model availability checks.
+
+### `dream:20260907132259:3:c28563`
+*07.09. 13:22 UTC · Quelle: dream*
+
+Metabolism stress at 1.0 with a budget of max 1 iteration is too restrictive to complete meaningful model-revision cycles, creating a deadlock where the system conserves but cannot progress.
+
+### `dream:20260907132259:2:ccc4a5`
+*07.09. 13:22 UTC · Quelle: dream*
+
+Relative file paths (sys.argv[1], ZOETRON_DATA) resolve to nothing when the script expects absolute paths under the real data directory, causing silent zero-file reads that crash downstream logic.
+
+### `dream:20260907132259:1:6bbfc5`
+*07.09. 13:22 UTC · Quelle: dream*
+
+Nvidia consistently returns 502 service-overloaded errors while Google returns 429 rate-limit errors, meaning the only reliable model in this environment is inclusionai/ling-3.0-flash-fin and all workflows must treat it as the primary fallback.
 
 ### `dream:20260907131105:5:97d030`
 *07.09. 13:11 UTC · Quelle: dream*

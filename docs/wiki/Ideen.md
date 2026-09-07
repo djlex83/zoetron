@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,23 +16,23 @@
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
 - Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
-- Implement ModelRouter with sliding-window error rates, latency percentiles, and token cost to compute continuo *(hatte die Idee 3×)*
 - Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
 - SimulationGate: run simulation verdict; if revise, apply revisions and re-verify before committing artifact. *(hatte die Idee 3×)*
 - Add a mandatory skill validation gate requiring every proposed skill to be executed and scored within one cycl *(hatte die Idee 3×)*
+- Build a convergence gate that requires score >= 8 AND no critical risks from simulation AND critic sign-off be *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The forbidden-pattern detector correctly blocked a shutdown command embedded in a timeout-control script, proving that code-content guards are effecti
+- Simulation identified 5 risks and applied 3 revisions, but model failures (502/429) undermined validation, showing that simulation revisions must be g
+- Metabolism stress at 1.0 with a budget of max 1 iteration is too restrictive to complete meaningful model-revision cycles, creating a deadlock where t
+- Relative file paths (sys.argv[1], ZOETRON_DATA) resolve to nothing when the script expects absolute paths under the real data directory, causing silen
+- Nvidia consistently returns 502 service-overloaded errors while Google returns 429 rate-limit errors, meaning the only reliable model in this environm
 - Self-diagnosis reports zero organ errors while 31 model failures exist, revealing that health checks only inspect internal state and ignore external d
 - Swarm runs terminate at 2 cycles with score=1 and converged=false, indicating the convergence detector is missing or the iteration budget is too low f
 - Reflex tool execution fails on path resolution because tools receive relative paths but the runtime expects absolute paths under ZOETRON_DATA.
@@ -51,11 +56,6 @@
 - The inclusionai/ling-3.0-flash-fin model delivers consistent sub-4 s latency and zero observed failures, establishing it as the only reliable free-tie
 - Nvidia Nemotron exhibits extreme latency variance (20–121 s) and 502 upstream overload errors, violating iteration-time budgets for multi-step tasks.
 - Free-tier Google models consistently return 429 rate-limit errors, making them unusable as primary endpoints without aggressive backoff and fallback c
-- Hand actions and swarm tasks timeout (20s, 0 bytes read) when fed prose instead of executable code specs.
-- High stress (1.0) with conserve budget (max_tasks=3, max_iterations=1) demands single-step, code-first actions; multi-round exploration is impossible.
-- Self-calibration is broken: predicted effort 4 vs actual 1 (abs_error 3) shows the system cannot estimate its own capability under resource constraint
-- Prose artifacts cannot execute: the tor reviewer rejects every proposal lacking a runnable Python block, yet the pipeline keeps generating text-only p
-- Model reliability requires provider diversity: nemotron fails with 502s, gemma hits 429s, only inclusionai/ling-3.0-flash-fin consistently succeeds un
 
 ---
 

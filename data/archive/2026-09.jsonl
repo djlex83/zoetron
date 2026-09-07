@@ -22770,3 +22770,23 @@
 {"ts": 1788181736.7310312, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.29, "gelesen": 45}}
 {"ts": 1788181736.732822, "kind": "reflex_used", "payload": {"goal": "Neue Fähigkeiten aktiv entwickeln", "tool": "alte-erinnerungen-aktualisieren.py", "ok": true}}
 {"ts": 1788181737.1884332, "kind": "act_done", "payload": {"goal_title": "Neue Fähigkeiten aktiv entwickeln", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788181976.432532, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788182155.2860842, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788182156.7663362, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788182161.3076117, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788182161.3076086, "schalter_geoeffnet": false}}
+{"ts": 1788182189.838183, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 28.5, "tokens_ein": 1289, "tokens_aus": 825}}
+{"ts": 1788182189.8387244, "kind": "skill_proposal", "payload": {"proposal": "Implement ModelHealthRegistry with per-model EWMA latency, 429/5xx counters, and synthetic probe scheduler (every 30s) that updates health scores used by router for weighted load balancing."}}
+{"ts": 1788182189.8388014, "kind": "skill_proposal", "payload": {"proposal": "Build ProposalDeduplicator that hashes skill proposals by semantic intent (circuit breaker, pre-flight probe, path contract) and surfaces only novel or improved variants to SkillLifecycleManager."}}
+{"ts": 1788182189.838873, "kind": "skill_proposal", "payload": {"proposal": "Create ExecutionGapTracker that maps drive goals (stale, failure, gap) to concrete skill proposals and alerts when goal age exceeds threshold without linked skill in testing or deployed state."}}
+{"ts": 1788182189.8389308, "kind": "skill_proposal", "payload": {"proposal": "Enforce PathContract at skill registration: require all I/O skills to declare path parameters and auto-wrap with resolve_path(rel, ZOETRON_DATA) + existence check, rejecting registration if missing."}}
+{"ts": 1788182189.8389835, "kind": "skill_proposal", "payload": {"proposal": "Deploy SyntheticProbeHarness that runs lightweight completions against all registered models every 60s, classifies errors (rate_limit, overload, timeout, silent_degradation), and feeds ErrorPatternClassifier for targeted mitigation playbooks."}}
+{"ts": 1788182189.839036, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788182192.0598094, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788182192.0598073, "schalter_geoeffnet": false}}
+{"ts": 1788182224.5207376, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 32.5, "tokens_ein": 425, "tokens_aus": 749}}
+{"ts": 1788182224.5209398, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und beheben", "why": "Viele Modelle funktionieren nicht richtig. Wir müssen herausfinden warum und sie reparieren.", "signal": "failure"}}
+{"ts": 1788182224.5210137, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Ergebnisse endlich nutzen", "why": "Die Marktanalyse liegt seit langem ungenutzt herum. Wir sollten die Ergebnisse in Taten umsetzen.", "signal": "stale"}}
+{"ts": 1788182224.5210755, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich lernen", "why": "Es gibt viele Vorschläge für neue Fähigkeiten. Wir sollten die besten davon wirklich erlernen.", "signal": "gap"}}
+{"ts": 1788182227.1439118, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.23, "gelesen": 2}}
+{"ts": 1788182227.1451297, "kind": "reflex_used", "payload": {"goal": "Veraltete Marktanalyse auf den neuesten Stand bringen", "tool": "alte-marktanalyse-aktualisieren-und-nutz.py", "ok": true}}
+{"ts": 1788182227.6051216, "kind": "act_done", "payload": {"goal_title": "Veraltete Marktanalyse auf den neuesten Stand bringen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788182465.8561208, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
