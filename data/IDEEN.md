@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 14:49 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 15:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -29,9 +29,9 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Convergence is declared by reflex (mode=reflex) without score thresholds or critic sign-off, allowing premature termination of under-optimized skills.
+- Pruning discards causal links (experiment_id, parent_step_id) making failed runs unreproducible and preventing root-cause learning across cycles.
+- Swarm feedback cycles are decoupled from execution cycles, causing stale critiques to drive new goals while fresh execution data sits unused.
+- Skill proposals accumulate faster than validation (12 proposed, 0 tested in log), creating an unvalidated backlog that blocks measurable improvement.
+- Model latency varies 2x (40-86s) for identical requests, making fixed timeouts unreliable and requiring adaptive routing with health-aware fallbacks.
 - Confidence estimates are uncalibrated – predicted scores diverge from actual outcomes, misleading the scheduler.
 - Swarm knowledge decays within hours; critiques and goals become stale before they can be reused.
 - Conserve mode triggers on single iterations without checking task triviality, wasting budget on unwinnable cycles.
@@ -51,11 +56,6 @@
 - Swarm knowledge and drive goals become stale without automated refresh cycles, causing the system to re-learn the same lessons (reduce errors, update 
 - The system repeatedly generates high-value skill proposals (circuit-breaker, path-resolution, health-monitor) but fails to implement them, creating a 
 - Model reliability varies drastically by provider: nemotron-3-ultra suffers 502 upstream overloads while gemma models hit 429 rate limits, but ling-3.0
-- Swarm knowledge refresh succeeds ad-hoc but has no scheduled validator to prevent staleness between cycles.
-- Reflex tools fail silently on relative paths because ZOETRON_DATA prefix is not auto-prepended before execution.
-- Skill proposals accumulate in dreams but lack a promotion gateway to become executable, versioned capabilities.
-- Drive goals recur across sleep cycles because reflex tools converge without registering reusable skills in the registry.
-- Model endpoint 502 errors cascade into planning failures because no circuit breaker isolates degraded endpoints.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11811 Fakten** · Stand 2026-09-07 14:51 UTC · aktualisiert bei jedem Herzschlag
+**11816 Fakten** · Stand 2026-09-07 15:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7036
+- **dream:** 7041
 - **swarm_artifact:** 2134
 - **last_swarm_critique:** 823
 - **anti_pattern:** 579
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907145938:5:7770de`
+*07.09. 14:59 UTC · Quelle: dream*
+
+Convergence is declared by reflex (mode=reflex) without score thresholds or critic sign-off, allowing premature termination of under-optimized skills.
+
+### `dream:20260907145938:4:d3d20b`
+*07.09. 14:59 UTC · Quelle: dream*
+
+Pruning discards causal links (experiment_id, parent_step_id) making failed runs unreproducible and preventing root-cause learning across cycles.
+
+### `dream:20260907145938:3:912dcc`
+*07.09. 14:59 UTC · Quelle: dream*
+
+Swarm feedback cycles are decoupled from execution cycles, causing stale critiques to drive new goals while fresh execution data sits unused.
+
+### `dream:20260907145938:2:922437`
+*07.09. 14:59 UTC · Quelle: dream*
+
+Skill proposals accumulate faster than validation (12 proposed, 0 tested in log), creating an unvalidated backlog that blocks measurable improvement.
+
+### `dream:20260907145938:1:1a5066`
+*07.09. 14:59 UTC · Quelle: dream*
+
+Model latency varies 2x (40-86s) for identical requests, making fixed timeouts unreliable and requiring adaptive routing with health-aware fallbacks.
 
 ### `dream:20260907144714:5:c037d4`
 *07.09. 14:47 UTC · Quelle: dream*
