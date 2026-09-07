@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 04:19 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 04:29 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning aggressively (50+ events/cycle) without preserving failure-context correlations erases the very signal needed for root-cause mining.
+- Reflex tools (modellfehler-deutlich-reduzieren.py) achieve instant convergence where swarm iterations stall, proving targeted heuristics beat generic 
+- Swarm cycles consistently fail to converge (score 7, converged=false) yet still evolve useful artifacts, suggesting convergence criteria are misaligne
+- Nemotron-3-Ultra latency varies 6x (8.5–53 s) for similar token loads, indicating queue-depth or cold-start effects that a latency SLO can expose.
+- Rate-limited providers (429 errors) cluster on specific model families, making provider-level circuit breakers more effective than model-level retries
 - Hand actions (file reads) complete in <0.5s while model calls take 5-55s, making model latency the dominant bottleneck and primary failure surface.
 - Calibration error of 1 (predicted 6 vs actual 7) reveals the predictor overestimates failure severity, causing wasted compute on over-engineered fixes
 - Evolution/swarm cycles run without convergence (score 7, converged=false) because critic feedback ('Schwere Abhängigkeit von Fallb') indicates archite
@@ -51,11 +56,6 @@
 - Metabolic stress at 1.0 triggers conserve mode that caps execution to 3 tasks and 1 iteration, preventing multi-step workflows.
 - File operations fail when using relative paths instead of the mandated absolute data path from ZOETRON_DATA and sys.argv[1].
 - External model APIs (Nemotron, Gemma) frequently fail with 502 overload and 429 rate limits, making inclusionai/ling-3.0-flash-fin the only reliable f
-- Pruning removes 34 events but stale-knowledge drive fires immediately after, showing cleanup without freshness verification.
-- Latency variance for the same model (3.6s vs 20.2s) violates any implicit SLA, yet no budget enforcement triggers failover proactively.
-- Self-diagnosis reports zero organ errors while model_fail events persist, indicating diagnostic blind spots for external provider failures.
-- Skill proposals converge falsely: the system marks 'test proposed skills' complete while the validation hand_action fails silently with 'nothing read'
-- Model failures cascade because failover is reactive and lacks real-time health awareness, causing repeated 429/502 errors before fallback.
 
 ---
 
