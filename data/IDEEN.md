@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 17:56 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 18:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,24 +23,29 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
+- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
-- Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Aggressive pruning of facts and events without provenance metadata destroys the causal context needed to diagnose future failures, risking irrecoverab
+- The proposal-to-execution gap is the system's most persistent failure mode — ideas accumulate as skill proposals but rarely become owned missions with
+- Skills that produce output without return values or side effects are structurally useless regardless of conceptual merit, as the rejected 'fähigkeiten
+- Swarm cycles lacking explicit convergence criteria waste resources and produce low-scoring outcomes that never stabilize, as seen in the 'Fähigkeiten 
+- Model provider failures follow a recurring pattern of upstream overload (502) and rate limiting (429) that cascades through the system without circuit
 - Calibration error of 1 point persists despite evolution, indicating the predictor overestimates artifact quality by ~20%.
 - Swarm convergence stalls when builder-to-critic ratio exceeds 3:1 and cycles are capped at 2, leaving risks unaddressed.
 - Tools that produce only stdout without side-effects or return values are rejected by the hand-action validator, wasting cycles.
@@ -51,11 +56,6 @@
 - Metabolism stress at 1.0 forces conserve mode with extreme limits (max_tasks=3, max_iterations=1), throttling all autonomous activity until stress dro
 - Relative path resolution fails silently in production - the hand action read nothing because it didn't touch real data paths under ZOETRON_DATA or sys
 - Primary models (nemotron, gemma) fail repeatedly with 502/429 errors while inclusionai/ling-3.0-flash-fin succeeds consistently, making fallback selec
-- Combining dream outputs from the same cycle surfaced a novel signal that single-dream analysis missed, demonstrating that cross-consolidation is a rel
-- Hand actions fail silently when expected files or directories are absent, and the system does not distinguish between 'nothing to read' and 'data miss
-- A persistent gap exists between skill proposals generated and skills actually deployed, meaning the proposal-to-execution pipeline lacks structural en
-- Stale swarm knowledge degrades decision quality progressively, and the system only reacts to staleness signals after damage is already done, proving t
-- Model failures (502 upstream overload, 429 rate limits) recur across providers, indicating that a single-model dependency is a systemic fragility requ
 
 ---
 

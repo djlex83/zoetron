@@ -1,12 +1,12 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11826 Fakten** · Stand 2026-09-07 17:58 UTC · aktualisiert bei jedem Herzschlag
+**11832 Fakten** · Stand 2026-09-07 18:17 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7081
-- **swarm_artifact:** 2114
-- **last_swarm_critique:** 824
+- **swarm_artifact:** 2118
+- **last_swarm_critique:** 825
 - **anti_pattern:** 571
-- **last_swarm_goal:** 556
+- **last_swarm_goal:** 557
 - **strategy:** 287
 - **tool:** 179
 - **hand_result:** 135
@@ -15,6 +15,51 @@
 - **creator_teaching:** 1
 
 ---
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler systematisc:2`
+*07.09. 18:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6.7): Model Internals & Failure Mode Clustering - Investigate errors through model behavior: (1) Run inference with Monte Carlo dropout (50 passes) to get prediction uncertainty per voxel per organ; (2) Extract deep features (enc
+
+### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler systematisc:1`
+*07.09. 18:14 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7.7): Clinical Impact-Driven Error Stratification - Anchor investigation in clinical decision impact: (1) Define clinical scenarios per organ (e.g., liver: resection planning needs <5mm boundary; pancreas: tumor contact needs hig
+
+### `last_swarm_critique`
+*07.09. 18:12 UTC · Quelle: critic*
+
+score=4; issues=Artefakte sind reine Explorationsskripts (Verzeichnis-Listing), keine systematische Fehleruntersuchung; Keine Taxonomie-Ableitung aus Organen implementiert; Keine Fehlerfrequenz- oder Schweregradmessung; Keine Cross-Organ-Korrelationsanalyse; K
+
+### `last_swarm_goal`
+*07.09. 18:07 UTC · Quelle: system*
+
+Modellfehler systematisch untersuchen
+
+### `dream:20260907180643:5:b03738`
+*07.09. 18:06 UTC · Quelle: dream*
+
+Aggressive pruning of facts and events without provenance metadata destroys the causal context needed to diagnose future failures, risking irrecoverable loss of reconstructable history.
+
+### `dream:20260907180643:4:49cfc4`
+*07.09. 18:06 UTC · Quelle: dream*
+
+The proposal-to-execution gap is the system's most persistent failure mode — ideas accumulate as skill proposals but rarely become owned missions with deadlines and measurable outcomes.
+
+### `dream:20260907180643:3:232e5f`
+*07.09. 18:06 UTC · Quelle: dream*
+
+Skills that produce output without return values or side effects are structurally useless regardless of conceptual merit, as the rejected 'fähigkeiten-testen-und-prüfen' tool demonstrated.
+
+### `dream:20260907180643:2:b4d24b`
+*07.09. 18:06 UTC · Quelle: dream*
+
+Swarm cycles lacking explicit convergence criteria waste resources and produce low-scoring outcomes that never stabilize, as seen in the 'Fähigkeiten testen und prüfen' run scoring only 4 with no convergence.
+
+### `dream:20260907180643:1:afa4ec`
+*07.09. 18:06 UTC · Quelle: dream*
+
+Model provider failures follow a recurring pattern of upstream overload (502) and rate limiting (429) that cascades through the system without circuit breakers or automatic failover.
 
 ### `dream:20260907175521:5:d12d19`
 *07.09. 17:55 UTC · Quelle: dream*
@@ -45272,16 +45317,6 @@ The proposed best-of-n tool was rejected as a placeholder (generate() contained 
 
 The Best-of-N goal failed to converge in 2 cycles partly because the swarm was throttled by 'conserve' metabolism (max_iterations=1), so test-time-compute goals must be exempted from or prioritized under budget constraints.
 
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fußball: erste eigene Ei:1`
-*24.08. 18:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 5, 8]): Statistisch statt heuristisch: Poisson-Modell mit liga-spezifischen Parametern - Verwerfe den Elo-Ansatz vollständig. Schätze pro Liga zwei Angriffs-/Abwehrstärken je Team (oder einfacher: durchschnittliche Torerwartu
-
-### `anti_pattern:Previous attempt scored 6/10. Goal: Fußball: erste eigene Ei:0`
-*24.08. 18:03 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 9, 6]): Refactoring-first: Minimale, saubere Elo-Basis statt Feature-Reichtum - Baue das System radikal schlank: Eine einzige Funktion elo_update(elo_a, elo_b, tore_a, tore_b, k) enthält die komplette Update-Logik und wird vo
-
 ### `last_swarm_critique`
 *24.08. 18:02 UTC · Quelle: critic*
 
@@ -45291,31 +45326,6 @@ score=6; issues=Dead/confusing code in vorhersage(): pA is computed and immediat
 *24.08. 18:00 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608241759:5`
-*24.08. 17:59 UTC · Quelle: dream*
-
-Skill proposals keep accumulating (5 new this cycle) while the drive goal notes few were ever tested, indicating a proposal-to-validation bottleneck where untested skills create a growing backlog rather than capability.
-
-### `dream:202608241759:4`
-*24.08. 17:59 UTC · Quelle: dream*
-
-Metabolism conserve mode (max_tasks=3, max_iterations=1) was active during the swarm start, meaning resource-constrained runs are more likely to produce low-quality converged results that slip through ungated.
-
-### `dream:202608241759:3`
-*24.08. 17:59 UTC · Quelle: dream*
-
-The whisper 'Hebbisches Lernen im Graph' failed 3 times and was parked for creator decision, revealing that autonomous retries cannot resolve tasks requiring architectural choices — they need an explicit human-decision escalation path instead of silent parking
-
-### `dream:202608241759:2`
-*24.08. 17:59 UTC · Quelle: dream*
-
-The swarm run closed as act_done despite a convergence score of 3 because no quality gate exists between scoring and task completion — completion is currently decoupled from outcome quality.
-
-### `dream:202608241759:1`
-*24.08. 17:59 UTC · Quelle: dream*
-
-Recurring 429 rate-limit failures across multiple OpenRouter models show that single-provider fallback chains collapse under load; success came only from a non-OpenRouter endpoint (dots-studio), so provider diversity matters more than model count.
 
 ### `last_swarm_critique`
 *24.08. 17:37 UTC · Quelle: critic*
