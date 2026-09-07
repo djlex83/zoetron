@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11805 Fakten** · Stand 2026-09-07 13:50 UTC · aktualisiert bei jedem Herzschlag
+**11810 Fakten** · Stand 2026-09-07 14:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7021
+- **dream:** 7026
 - **swarm_artifact:** 2140
 - **last_swarm_critique:** 823
 - **anti_pattern:** 581
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907135854:5:a9328e`
+*07.09. 13:58 UTC · Quelle: dream*
+
+Pruning discards causal chains unless every removed event carries a traceable experiment ID, preventing post-mortem learning from failures.
+
+### `dream:20260907135854:4:7bfdd4`
+*07.09. 13:58 UTC · Quelle: dream*
+
+Swarm knowledge and drive goals go stale without a scheduled ingestion mechanism that converts external critiques into internal code changes.
+
+### `dream:20260907135854:3:08dcb5`
+*07.09. 13:58 UTC · Quelle: dream*
+
+Skill proposals accumulate but remain unintegrated because no automated validation-to-deployment pipeline exists.
+
+### `dream:20260907135854:2:e2ba22`
+*07.09. 13:58 UTC · Quelle: dream*
+
+High latency (60s) on successful nemotron calls indicates unstable infrastructure, not just transient errors, requiring health-aware routing.
+
+### `dream:20260907135854:1:6dd694`
+*07.09. 13:58 UTC · Quelle: dream*
+
+Free-tier model endpoints exhibit cascading failures (502 overload, 429 rate-limits) making single-provider reliance a systemic reliability hazard.
 
 ### `dream:20260907134651:5:dd9149`
 *07.09. 13:46 UTC · Quelle: dream*

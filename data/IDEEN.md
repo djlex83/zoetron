@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:48 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning discards causal chains unless every removed event carries a traceable experiment ID, preventing post-mortem learning from failures.
+- Swarm knowledge and drive goals go stale without a scheduled ingestion mechanism that converts external critiques into internal code changes.
+- Skill proposals accumulate but remain unintegrated because no automated validation-to-deployment pipeline exists.
+- High latency (60s) on successful nemotron calls indicates unstable infrastructure, not just transient errors, requiring health-aware routing.
+- Free-tier model endpoints exhibit cascading failures (502 overload, 429 rate-limits) making single-provider reliance a systemic reliability hazard.
 - Simulation flagged 5 risks and 5 revisions but the subsequent swarm run didn't validate those fixes against reality.
 - Pruning 50 events without causality IDs severs the forensic chain needed to debug why simulations revised 5 times yet swarm didn't converge.
 - Hand actions exit non-zero silently (exit=1, no stderr captured) creating blind spots in tool execution feedback.
@@ -51,11 +56,6 @@
 - High latency (41-146s) on Nemotron correlates with eventual success, suggesting queue-backlog retry behavior rather than true unavailability.
 - InclusionAI Ling-3.0-Flash-Fin is the only model delivering consistent low-latency success (4.7-6.2s) across multiple calls without errors.
 - Free-tier models exhibit systematic reliability failures: NVIDIA Nemotron returns 502 upstream overload errors repeatedly, while Google Gemma models h
-- The forbidden-pattern detector correctly blocked a shutdown command embedded in a timeout-control script, proving that code-content guards are effecti
-- Simulation identified 5 risks and applied 3 revisions, but model failures (502/429) undermined validation, showing that simulation revisions must be g
-- Metabolism stress at 1.0 with a budget of max 1 iteration is too restrictive to complete meaningful model-revision cycles, creating a deadlock where t
-- Relative file paths (sys.argv[1], ZOETRON_DATA) resolve to nothing when the script expects absolute paths under the real data directory, causing silen
-- Nvidia consistently returns 502 service-overloaded errors while Google returns 429 rate-limit errors, meaning the only reliable model in this environm
 
 ---
 

@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 13:48:05",
+ "stand": "2026-09-07 13:59:36",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -27,12 +27,6 @@
    "quote": 1.0
   },
   {
-   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
-   "laeufe": 6,
-   "erfolge": 6,
-   "quote": 1.0
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-wirklich-fert.py",
    "laeufe": 6,
    "erfolge": 3,
@@ -51,9 +45,9 @@
    "quote": 1.0
   },
   {
-   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
-   "laeufe": 4,
-   "erfolge": 4,
+   "tool": "ersten-swarm-lauf-mit-score-8-konvergier.py",
+   "laeufe": 5,
+   "erfolge": 5,
    "quote": 1.0
   },
   {
@@ -93,7 +87,19 @@
    "quote": 1.0
   },
   {
+   "tool": "kritik-und-ziel-prozess-wieder-beleben.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "alte-träume-miteinander-verbinden.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -202,12 +208,6 @@
   },
   {
    "tool": "modellfehler-verstehen-und-beheben.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -423,7 +423,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.849,
+ "haende_quote": 0.848,
  "simulationen_angewandt": 22,
  "swarm_scores": {
   "n": 22,
