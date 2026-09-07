@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 04:50 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 05:00 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
-- Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex actions succeed for narrow, scripted goals but do not address systemic model unreliability or knowledge drift.
+- Swarm knowledge decays silently; only explicit refresh actions surface staleness, leaving decisions based on obsolete facts.
+- Skill proposals accumulate (65+) without a validation gate, so the system cannot distinguish useful from harmful capabilities.
+- Latency variance spans two orders of magnitude (3 s vs 105 s) on the same model, breaking any fixed timeout strategy.
+- Free-tier models consistently hit 429 rate limits under load, making them unreliable for any latency-sensitive path.
 - Reflex execution without pre-flight validation (script existence, path resolution, dependencies) wastes cycles and can propagate failures silently, ma
 - Different error classes (429, 502, 5xx) demand fundamentally distinct recovery strategies — uniform retry logic worsens rate limits and delays upstrea
 - Reactive staleness detection means swarm data is already outdated before corrective action begins; scheduled proactive scanning is required to prevent
@@ -51,11 +56,6 @@
 - Swarm knowledge entries decay into staleness because refresh only occurs on explicit 'stale' signals, not continuously.
 - Skill proposals accumulate rapidly (5+ per cycle) yet lack a mandatory validation gate before registry promotion.
 - Model failure rate near 50% triggers cascading improvement drives but without systematic root-cause correlation.
-- Pruning aggressively (50+ events/cycle) without preserving failure-context correlations erases the very signal needed for root-cause mining.
-- Reflex tools (modellfehler-deutlich-reduzieren.py) achieve instant convergence where swarm iterations stall, proving targeted heuristics beat generic 
-- Swarm cycles consistently fail to converge (score 7, converged=false) yet still evolve useful artifacts, suggesting convergence criteria are misaligne
-- Nemotron-3-Ultra latency varies 6x (8.5–53 s) for similar token loads, indicating queue-depth or cold-start effects that a latency SLO can expose.
-- Rate-limited providers (429 errors) cluster on specific model families, making provider-level circuit breakers more effective than model-level retries
 
 ---
 

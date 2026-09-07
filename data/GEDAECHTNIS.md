@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11729 Fakten** · Stand 2026-09-07 04:52 UTC · aktualisiert bei jedem Herzschlag
+**11732 Fakten** · Stand 2026-09-07 05:02 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6946
-- **swarm_artifact:** 2150
+- **dream:** 6951
+- **swarm_artifact:** 2148
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907045956:5:7baad8`
+*07.09. 04:59 UTC · Quelle: dream*
+
+Reflex actions succeed for narrow, scripted goals but do not address systemic model unreliability or knowledge drift.
+
+### `dream:20260907045956:4:8ec8dd`
+*07.09. 04:59 UTC · Quelle: dream*
+
+Swarm knowledge decays silently; only explicit refresh actions surface staleness, leaving decisions based on obsolete facts.
+
+### `dream:20260907045956:3:4c6aef`
+*07.09. 04:59 UTC · Quelle: dream*
+
+Skill proposals accumulate (65+) without a validation gate, so the system cannot distinguish useful from harmful capabilities.
+
+### `dream:20260907045956:2:12103b`
+*07.09. 04:59 UTC · Quelle: dream*
+
+Latency variance spans two orders of magnitude (3 s vs 105 s) on the same model, breaking any fixed timeout strategy.
+
+### `dream:20260907045956:1:71202d`
+*07.09. 04:59 UTC · Quelle: dream*
+
+Free-tier models consistently hit 429 rate limits under load, making them unreliable for any latency-sensitive path.
 
 ### `dream:20260907044938:5:d63c2f`
 *07.09. 04:49 UTC · Quelle: dream*
