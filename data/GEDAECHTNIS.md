@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11829 Fakten** · Stand 2026-09-07 17:01 UTC · aktualisiert bei jedem Herzschlag
+**11820 Fakten** · Stand 2026-09-07 17:12 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7066
-- **swarm_artifact:** 2126
+- **swarm_artifact:** 2120
 - **last_swarm_critique:** 824
-- **anti_pattern:** 575
+- **anti_pattern:** 573
 - **last_swarm_goal:** 556
-- **strategy:** 289
+- **strategy:** 288
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907170913:5:db7477`
+*07.09. 17:09 UTC · Quelle: dream*
+
+Skill proposals accumulate without guaranteed implementation — the proposal-to-execution gap is itself a recurring systemic pattern.
+
+### `dream:20260907170913:4:8e5ed8`
+*07.09. 17:09 UTC · Quelle: dream*
+
+A single low-latency fallback model (inclusionai/ling-3.0-flash-fin at 3.2s) can sustain throughput when all primary providers fail simultaneously.
+
+### `dream:20260907170913:3:363350`
+*07.09. 17:09 UTC · Quelle: dream*
+
+Aggressive event pruning (43 events in one run) risks destroying causal chains needed for post-mortem reconstruction.
+
+### `dream:20260907170913:2:11d0cc`
+*07.09. 17:09 UTC · Quelle: dream*
+
+Reflex mode achieves convergence but produces null scores, meaning quality assessment is entirely absent from the fastest execution path.
+
+### `dream:20260907170913:1:ed557e`
+*07.09. 17:09 UTC · Quelle: dream*
+
+Infrastructure failures (NVIDIA 502 service overload, Google 429 rate limits) are the dominant execution blocker, not algorithmic or logic errors.
 
 ### `dream:20260907165713:5:458fa8`
 *07.09. 16:57 UTC · Quelle: dream*
@@ -45237,16 +45262,6 @@ Goals fail by non-convergence rather than by error when the approach itself is w
 
 429/502 errors arrive in correlated bursts across multiple models simultaneously (stealth/ox-alpha and z-ai/glm-5.2 failed within the same second), so rotating to another model does not help — only waiting does.
 
-### `anti_pattern:Previous attempt scored 5/10. Goal: Best-of-N mit unbestechl:2`
-*24.08. 17:06 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Tournament with Redundant Judges - Run Best-of-N as a bracketed tournament scored by K independent judge instances with diverse prompts/temperatures. Each match produces votes; majority voting over 3-5 judges makes bribery/co
-
-### `anti_pattern:Previous attempt scored 5/10. Goal: Best-of-N mit unbestechl:0`
-*24.08. 17:06 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Structured Output Enforcement - Eliminate free-form critic responses entirely by forcing the judge into a constrained schema: use function-calling / JSON-mode APIs so the judge can only emit a fixed grammar ({"winner": "A|B",
-
 ### `last_swarm_critique`
 *24.08. 17:06 UTC · Quelle: critic*
 
@@ -45256,31 +45271,6 @@ score=5; issues=Critic output unparseable.
 *24.08. 17:00 UTC · Quelle: system*
 
 Best-of-N mit unbestechlichem Prüfer (Test-Time-Compute)
-
-### `dream:202608241659:5`
-*24.08. 16:59 UTC · Quelle: dream*
-
-prune_run pruning zero facts and events while the system accumulates failures indicates pruning criteria are either broken or never matched, silently wasting memory maintenance cycles.
-
-### `dream:202608241659:4`
-*24.08. 16:59 UTC · Quelle: dream*
-
-hand_action failed with exit=1 but error=null, meaning error payloads are being dropped and must capture tracebacks to be diagnosable.
-
-### `dream:202608241659:3`
-*24.08. 16:59 UTC · Quelle: dream*
-
-The MemoryStore.add_fact AttributeError proves the pipeline calls undocumented interfaces, so every cross-module call needs a contract test before deployment.
-
-### `dream:202608241659:2`
-*24.08. 16:59 UTC · Quelle: dream*
-
-Two consecutive 429 rate-limit failures on both stealth/ox-alpha and z-ai/glm-5.2:free reveal that retry logic lacks backoff and fallback ordering across providers.
-
-### `dream:202608241659:1`
-*24.08. 16:59 UTC · Quelle: dream*
-
-The swarm's 'go' verdict from simulation did not translate into a good outcome (score 3/10), showing that simulation approval without an integration test gate produces false confidence.
 
 ### `last_swarm_critique`
 *24.08. 16:33 UTC · Quelle: critic*

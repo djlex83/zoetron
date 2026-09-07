@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 16:59 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 17:10 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -26,21 +26,26 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 14×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 7×)*
+- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
-- Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 5×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Skill proposals accumulate without guaranteed implementation — the proposal-to-execution gap is itself a recurring systemic pattern.
+- A single low-latency fallback model (inclusionai/ling-3.0-flash-fin at 3.2s) can sustain throughput when all primary providers fail simultaneously.
+- Aggressive event pruning (43 events in one run) risks destroying causal chains needed for post-mortem reconstruction.
+- Reflex mode achieves convergence but produces null scores, meaning quality assessment is entirely absent from the fastest execution path.
+- Infrastructure failures (NVIDIA 502 service overload, Google 429 rate limits) are the dominant execution blocker, not algorithmic or logic errors.
 - Self-diagnosis reports zero organ errors while model failures (21) and stale swarm signals persist, revealing a monitoring blind spot for external dep
 - Pruning discards causal metadata (experiment_id, parent_step_id), making post-hoc debugging of consolidated knowledge impossible.
 - Skill proposals accumulate (85) but rarely become missions (1), indicating a missing proposal-to-mission pipeline with explicit acceptance criteria.
@@ -51,11 +56,6 @@
 - Swarm knowledge decays silently without TTL-enforced refresh, causing planners to operate on stale context.
 - Skill proposals accumulate without execution because no automated pipeline assigns builders, validates artifacts, and enforces merge deadlines.
 - Model endpoints fail silently with 502/429 errors and latency spikes (67s vs 3.6s), requiring real-time health tracking and automatic failover to main
-- Reflex-based problem solving (alte-träume-miteinander-verbinden.py) successfully connects distant memories without requiring any model calls, proving 
-- Event pruning (38 events) far outpaces fact pruning (0 facts) during consolidation, indicating the system preserves core knowledge while aggressively 
-- The system has proposed but not implemented a model router, creating a persistent gap between diagnosing the failure pattern and executing a solution.
-- inclusionai/ling-3.0-flash-fin is the only consistently reliable model, succeeding with ~3.5s latency while every other provider fails repeatedly.
-- External service failures (502 upstream overload from Nvidia, 429 rate limits from Google) are the dominant and recurring failure mode across multiple
 
 ---
 
