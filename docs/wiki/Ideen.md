@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 12:37 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 12:48 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,7 +24,7 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
@@ -34,13 +34,18 @@
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
+- Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Hand actions and swarm tasks timeout (20s, 0 bytes read) when fed prose instead of executable code specs.
+- High stress (1.0) with conserve budget (max_tasks=3, max_iterations=1) demands single-step, code-first actions; multi-round exploration is impossible.
+- Self-calibration is broken: predicted effort 4 vs actual 1 (abs_error 3) shows the system cannot estimate its own capability under resource constraint
+- Prose artifacts cannot execute: the tor reviewer rejects every proposal lacking a runnable Python block, yet the pipeline keeps generating text-only p
+- Model reliability requires provider diversity: nemotron fails with 502s, gemma hits 429s, only inclusionai/ling-3.0-flash-fin consistently succeeds un
 - Hand actions lack structured failure capture (stderr, timeout, exit code), so when a subprocess fails the system has no diagnostic data to determine r
 - Model latency spans orders of magnitude (0.29s to 47.9s), so naive round-robin routing wastes time and amplifies timeout cascades across dependent ste
 - Pruning events without causality IDs destroys the breadcrumb trail needed to reconstruct why a sequence of failures occurred, making post-mortem analy
@@ -51,11 +56,6 @@
 - Swarm convergence stalls when score delta <0.5 across cycles, yet the system continues prompt revisions instead of switching to evolutionary code sear
 - Skill proposals accumulate but lack a promotion pipeline; reflex tools execute without verifying skill integration into the agent's repertoire.
 - Model reliability degrades silently (502 rates >10%) without automatic throughput adaptation, causing cascading task failures.
-- Pruning (15 facts, 88 events) prevents memory bloat but risks discarding failure context needed for root-cause analysis.
-- Calibration remains accurate (predicted=actual=6) indicating reliable self-assessment despite execution noise.
-- Hand actions fail silently (exit=1, gelesen=0) without stderr/stdout capture, making debugging impossible.
-- Evolution/swarm cycles improve artifact quality (6→8 scores) but converge slowly; two cycles insufficient for complex goals.
-- Model endpoints fail frequently (502 upstream, 429 rate limits) requiring a robust fallback chain with health-aware routing.
 
 ---
 
