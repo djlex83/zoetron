@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11805 Fakten** · Stand 2026-09-07 13:02 UTC · aktualisiert bei jedem Herzschlag
+**11800 Fakten** · Stand 2026-09-07 13:14 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7011
-- **swarm_artifact:** 2144
+- **swarm_artifact:** 2142
 - **last_swarm_critique:** 823
-- **anti_pattern:** 585
+- **anti_pattern:** 583
 - **last_swarm_goal:** 555
-- **strategy:** 294
+- **strategy:** 293
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907131105:5:97d030`
+*07.09. 13:11 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while 31 model failures exist, revealing that health checks only inspect internal state and ignore external dependency degradation.
+
+### `dream:20260907131105:4:945d98`
+*07.09. 13:11 UTC · Quelle: dream*
+
+Swarm runs terminate at 2 cycles with score=1 and converged=false, indicating the convergence detector is missing or the iteration budget is too low for meaningful search.
+
+### `dream:20260907131105:3:c1368d`
+*07.09. 13:11 UTC · Quelle: dream*
+
+Reflex tool execution fails on path resolution because tools receive relative paths but the runtime expects absolute paths under ZOETRON_DATA.
+
+### `dream:20260907131105:2:dc2da8`
+*07.09. 13:11 UTC · Quelle: dream*
+
+Model failures (502/429) trigger metabolic conservation that starves swarm budgets, creating a feedback loop where degraded models reduce iterations which prevents convergence.
+
+### `dream:20260907131105:1:48cfd1`
+*07.09. 13:11 UTC · Quelle: dream*
+
+Proposed skills accumulate in dream output but lack an execution gateway, causing the system to repeatedly propose the same capabilities without implementation.
 
 ### `dream:20260907125916:5:c7927e`
 *07.09. 12:59 UTC · Quelle: dream*
@@ -45062,16 +45087,6 @@ Skill proposals are write-only artifacts: 60 proposed vs. 2 used means the pipel
 
 Swarm convergence failure is systemic: 11 of 13 swarms stall because the critic loop re-enters 'revise' after revisions are applied instead of switching to execution, so the fix is a state-machine rule (revise→execute) rather than more iterations.
 
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:2`
-*24.08. 13:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Pipeline-Metadaten-Audit: Messung zuerst, dann gezielte Extraktion - Kehre den Arbeitsfluss um: Statt sofort Code zu produzieren, baue zuerst einen messenden Harness (vollständiges, lauffähiges Skript mit main()), der die akt
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Fakten-Ausbeute pro Beat:0`
-*24.08. 13:05 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 5): Kompletter, atomarer Code-Deliverable statt Fragment - Liefere ein vollständiges, in sich geschlossenes Python-Modul (kein Snippet), das die Faktenextraktion pro Beat implementiert. Struktur: (1) Header mit klarem Scope 'Fakt
-
 ### `last_swarm_critique`
 *24.08. 13:04 UTC · Quelle: critic*
 
@@ -45081,31 +45096,6 @@ score=2; issues=Deliverable is truncated mid-function: 'check_redundancy' is cut
 *24.08. 13:00 UTC · Quelle: system*
 
 Fakten-Ausbeute pro Beat verdreifachen ohne Qualitätsverlust
-
-### `dream:202608241300:5`
-*24.08. 13:00 UTC · Quelle: dream*
-
-Swarm completion is critically low (1 finished of ~11 started) and every simulation returned verdict 'revise', pointing to goal framing or revision loops as the systemic bottleneck rather than model quality.
-
-### `dream:202608241300:4`
-*24.08. 13:00 UTC · Quelle: dream*
-
-prune_run removed zero facts and zero events despite heavy activity, meaning the memory store grows unboundedly and pruning criteria are too conservative or never triggered.
-
-### `dream:202608241300:3`
-*24.08. 13:00 UTC · Quelle: dream*
-
-The same recall key 'last_swarm_goal' was fetched three times in one run, showing redundant memory reads that waste iterations under a max_iterations=2 budget.
-
-### `dream:202608241300:2`
-*24.08. 13:00 UTC · Quelle: dream*
-
-Output token counts vary 40x between calls on similar inputs (19 to 24326 tokens), indicating unbounded generation is the primary cost and timeout risk, not input size.
-
-### `dream:202608241300:1`
-*24.08. 13:00 UTC · Quelle: dream*
-
-Latency is highly bimodal (2.6s to 505s for the same model), so any pipeline design must assume worst-case multi-minute stalls rather than average-case timing.
 
 ### `last_swarm_critique`
 *24.08. 12:48 UTC · Quelle: critic*

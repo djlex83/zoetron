@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:00 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 13:12 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while 31 model failures exist, revealing that health checks only inspect internal state and ignore external d
+- Swarm runs terminate at 2 cycles with score=1 and converged=false, indicating the convergence detector is missing or the iteration budget is too low f
+- Reflex tool execution fails on path resolution because tools receive relative paths but the runtime expects absolute paths under ZOETRON_DATA.
+- Model failures (502/429) trigger metabolic conservation that starves swarm budgets, creating a feedback loop where degraded models reduce iterations w
+- Proposed skills accumulate in dream output but lack an execution gateway, causing the system to repeatedly propose the same capabilities without imple
 - Calibration error of 300 % (predicted 4 vs actual 1) shows the estimator ignores model-health signals and artifact-quality gates.
 - Critic feedback repeatedly flags 'no executable Python block' as the root cause of non-convergence, yet the planner/builder loop emits prose artifacts
 - The inclusionai/ling-3.0-flash-fin model delivers consistent sub-4 s latency and zero observed failures, establishing it as the only reliable free-tie
@@ -51,11 +56,6 @@
 - Self-calibration is broken: predicted effort 4 vs actual 1 (abs_error 3) shows the system cannot estimate its own capability under resource constraint
 - Prose artifacts cannot execute: the tor reviewer rejects every proposal lacking a runnable Python block, yet the pipeline keeps generating text-only p
 - Model reliability requires provider diversity: nemotron fails with 502s, gemma hits 429s, only inclusionai/ling-3.0-flash-fin consistently succeeds un
-- Hand actions lack structured failure capture (stderr, timeout, exit code), so when a subprocess fails the system has no diagnostic data to determine r
-- Model latency spans orders of magnitude (0.29s to 47.9s), so naive round-robin routing wastes time and amplifies timeout cascades across dependent ste
-- Pruning events without causality IDs destroys the breadcrumb trail needed to reconstruct why a sequence of failures occurred, making post-mortem analy
-- Without a convergence gate requiring sustained score thresholds over multiple cycles, the system prematurely declares tasks complete and skips deeper 
-- Free-tier LLM APIs fail unpredictably (429 rate limits, 502 upstream overload) and any agent pipeline must treat provider failure as the default case,
 
 ---
 
