@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 05:41 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 05:51 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -15,11 +15,11 @@
 - Deploy ModelHealthRegistry tracking per-provider 429/502 counters, latency percentiles, and exponential backof *(hatte die Idee 5×)*
 - Create SkillIncubator that ingests dream skill_proposals, registers them, runs sandbox tests against real fail *(hatte die Idee 4×)*
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
+- ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 4×)*
+- ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 4×)*
+- ReflexPreflightGate: enforce mandatory pre-execution checks (script existence, path resolution, env vars, depe *(hatte die Idee 4×)*
 - Add a PruningScheduler triggered by event-count thresholds and time windows to replace ad-hoc manual prune_run *(hatte die Idee 3×)*
 - Integrate model_fail events into the Selbstdiagnose module to automatically flag degraded external dependencie *(hatte die Idee 3×)*
-- Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
-- SimulationGate: run simulation verdict; if revise, apply revisions and re-verify before committing artifact. *(hatte die Idee 3×)*
-- Add a mandatory skill validation gate requiring every proposed skill to be executed and scored within one cycl *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -27,8 +27,8 @@
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Structured failure learning (hebbisches-lernen-im-graph) converges reliably when explicitly triggered, proving that systematic post-mortem analysis is
+- Reflex execution without pre-execution validation (script existence, path resolution, dependency checks) risks repeated failures that could have been 
+- Stale swarm knowledge degrades decision quality silently — reactive detection only triggers after damage is already done, making proactive age-based s
+- The dream-to-skill conversion pipeline is the system's weakest link: proposals accumulate faster than they are executed, creating a growing gap betwee
+- Model failures follow predictable error classes (429 rate limits, 502 upstream overload) that each require a distinct response strategy rather than un
 - Stress-aware scheduling remains a proposal while failure-driven goal selection reacts late, allowing cascading failures under load.
 - Swarm knowledge refresh only triggers on stale signal, not on goal convergence, causing outdated critiques to persist for multiple cycles.
 - Dream-generated skill proposals (FailurePatternMiner, SkillValidationGate, ProviderHealthMonitor) accumulate but never deploy, creating an insight-to-
@@ -51,11 +56,6 @@
 - Convergence detection repeatedly fails because binary flags cannot capture gradual improvement, making value-delta threshold approaches fundamentally 
 - The persistent 'gap' signal (proposed skills never tested) exposes a structural disconnect between skill proposal generation and actual deployment ver
 - The recurring 'failure' signal across consolidation cycles reveals that model prediction errors are systemic, meaning infrastructure fixes like circui
-- Pruning alone cannot refresh knowledge: 34 items pruned but stale drive goals persist, requiring active invalidation protocols.
-- Reflex tools achieve reliable convergence for narrow tasks: connecting dreams via script succeeded with zero organ errors.
-- Stale swarm knowledge degrades collective intelligence: outdated assessments persist without timestamp-based invalidation.
-- Skill proposals accumulate but remain untested: 70+ proposals exist yet only one mission executed, creating a proposal-execution gap.
-- Model failures cascade without automatic failover: nemotron 502 and gemma 429 errors halted progress until Ling-3.0-flash-fin succeeded.
 
 ---
 
