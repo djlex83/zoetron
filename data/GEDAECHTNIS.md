@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11895 Fakten** · Stand 2026-09-07 22:23 UTC · aktualisiert bei jedem Herzschlag
+**11893 Fakten** · Stand 2026-09-07 22:34 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7146
-- **swarm_artifact:** 2116
+- **dream:** 7151
+- **swarm_artifact:** 2112
 - **last_swarm_critique:** 827
-- **anti_pattern:** 567
+- **anti_pattern:** 565
 - **last_swarm_goal:** 559
-- **strategy:** 285
+- **strategy:** 284
 - **tool:** 181
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907223132:5:deb0fb`
+*07.09. 22:31 UTC · Quelle: dream*
+
+Nemotron latency varies 9x (9s to 127s) for similar token counts, indicating provider-side queueing or batching effects not captured by token metrics.
+
+### `dream:20260907223132:4:b5a900`
+*07.09. 22:31 UTC · Quelle: dream*
+
+Calibration error of 1 (predicted 5 risks vs actual 6) indicates reasonable risk estimation but systematic underestimation of model-provider failures.
+
+### `dream:20260907223132:3:c2b6b3`
+*07.09. 22:31 UTC · Quelle: dream*
+
+Swarm evolution with critic role improves scores (6→26) but fails to converge in 2 cycles, suggesting insufficient iteration depth or missing convergence criteria.
+
+### `dream:20260907223132:2:673303`
+*07.09. 22:31 UTC · Quelle: dream*
+
+The self-referential task 'understand model errors' suffers from the very model errors it tries to analyze, creating a bootstrap reliability problem.
+
+### `dream:20260907223132:1:2a18fc`
+*07.09. 22:31 UTC · Quelle: dream*
+
+Nvidia Nemotron consistently fails with 502 upstream overload errors while Google Gemma hits 429 rate limits, but inclusionai/ling-3.0-flash-fin succeeds reliably at 3-5s latency.
 
 ### `dream:20260907222114:5:e96b54`
 *07.09. 22:21 UTC · Quelle: dream*
@@ -45591,16 +45616,6 @@ Simulation revisions without convergence show that test‑time compute goals lac
 *24.08. 22:39 UTC · Quelle: dream*
 
 Repeated 429 Too Many Requests errors reveal insufficient per‑model rate‑limit handling and the need for circuit‑breaker logic.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :2`
-*24.08. 22:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 6): Ensemble-Abstimmung dreier heterogener Heuristiken mit Konfidenz-Gate - Statt eines einzelnen Modells kombiniere drei unabhaengige, einfache Signale und nutze nur Spiele mit hoher Uebereinstimmung: (1) Signal A: Tabellenplatz
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Fußball: die Basislinie :1`
-*24.08. 22:22 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Online-Lernen / sequentielle Aktualisierung statt Batch-Modell - Implementiere einen Online-Ansatz, der chronologisch durch die Spieltage iteriert und nach JEDEM Spiel aktualisiert (das fehlende 'aktualisiere' aus T2 wird die
 
 ### `last_swarm_critique`
 *24.08. 22:21 UTC · Quelle: critic*
