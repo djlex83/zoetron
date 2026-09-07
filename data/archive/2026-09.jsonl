@@ -23652,3 +23652,33 @@
 {"ts": 1788203194.2444081, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.24, "gelesen": 1}}
 {"ts": 1788203194.2457423, "kind": "reflex_used", "payload": {"goal": "Träume kombinieren für neue Erkenntnisse", "tool": "alte-träume-miteinander-verbinden.py", "ok": true}}
 {"ts": 1788203194.650019, "kind": "act_done", "payload": {"goal_title": "Träume kombinieren für neue Erkenntnisse", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788203445.8535285, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788203514.8971171, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788203516.4100425, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788203522.8090494, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788203522.809047, "schalter_geoeffnet": false}}
+{"ts": 1788203566.411897, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 43.6, "tokens_ein": 1704, "tokens_aus": 806}}
+{"ts": 1788203566.4124308, "kind": "skill_proposal", "payload": {"proposal": "Implement a model router that blacklists models after 3 consecutive 429 errors and prefers sub-15 s latency models for interactive loops."}}
+{"ts": 1788203566.4124877, "kind": "skill_proposal", "payload": {"proposal": "Add exponential backoff with jitter (base 2 s, max 60 s) before retrying any model that returns 429."}}
+{"ts": 1788203566.4125402, "kind": "skill_proposal", "payload": {"proposal": "Calibrate the score predictor by applying a +3 offset learned from recent prediction errors."}}
+{"ts": 1788203566.4125962, "kind": "skill_proposal", "payload": {"proposal": "Create a 'fast-path' skill that skips swarm simulation when hand_action returns a working artifact on first try."}}
+{"ts": 1788203566.4126506, "kind": "skill_proposal", "payload": {"proposal": "Log per-model latency percentiles (p50, p95) nightly and auto-demote models whose p95 exceeds 30 s."}}
+{"ts": 1788203566.4127233, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788203573.4872103, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788203573.4872077, "schalter_geoeffnet": false}}
+{"ts": 1788203628.7783148, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 55.3, "tokens_ein": 499, "tokens_aus": 808}}
+{"ts": 1788203628.7785485, "kind": "drive_goal", "payload": {"title": "Modellfehler verstehen und reduzieren", "why": "Das System macht zu viele Fehler beim Vorhersagen. Wir müssen lernen, warum das passiert und es besser machen.", "signal": "failure"}}
+{"ts": 1788203628.7786624, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Ergebnisse aktualisieren und nutzen", "why": "Die alten Marktanalysen sind veraltet und ungenutzt. Wir sollten sie auffrischen und für neue Entscheidungen verwenden.", "signal": "stale"}}
+{"ts": 1788203628.7787786, "kind": "drive_goal", "payload": {"title": "Neue Fähigkeiten zuverlässig machen", "why": "Viele neue Fähigkeiten wurden vorgeschlagen, aber das Modell scheitert oft. Wir müssen die besten Fähigkeiten stabil zum Laufen bringen.", "signal": "combination"}}
+{"ts": 1788203635.1298087, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.35, "gelesen": 548}}
+{"ts": 1788203635.1321666, "kind": "reflex_used", "payload": {"goal": "Alte Marktdaten auf den neuesten Stand bringen", "tool": "fertigkeiten-wirklich-zu-ende-bringen.py", "ok": true}}
+{"ts": 1788203635.6003587, "kind": "act_done", "payload": {"goal_title": "Alte Marktdaten auf den neuesten Stand bringen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788203878.4392889, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788203946.883871, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788203948.407628, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788203953.1430275, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788203953.1430244, "schalter_geoeffnet": false}}
+{"ts": 1788203976.8124042, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 23.7, "tokens_ein": 1391, "tokens_aus": 1294}}
+{"ts": 1788203976.8130982, "kind": "skill_proposal", "payload": {"proposal": "Deploy ModelHealthRegistry with per-model quota tracking, EWMA latency, exponential backoff, and priority-based fallback chain."}}
+{"ts": 1788203976.8131795, "kind": "skill_proposal", "payload": {"proposal": "Implement CircuitBreakerMiddleware wrapping all model calls with configurable failure thresholds, half-open state, and automatic recovery."}}
+{"ts": 1788203976.8132584, "kind": "skill_proposal", "payload": {"proposal": "Build DriveToSkillPipeline that auto-converts drive goals into skill specs with acceptance criteria, testing gates, and deployment promotion."}}
+{"ts": 1788203976.8133256, "kind": "skill_proposal", "payload": {"proposal": "Create PathResolver utility enforcing ZOETRON_DATA root, with validation decorators for all file-access skills and existence checks."}}
+{"ts": 1788203976.8133872, "kind": "skill_proposal", "payload": {"proposal": "Design SkillLifecycleManager tracking proposal→testing→deployed→deprecated with automated promotion criteria and rollback triggers."}}
+{"ts": 1788203976.8134532, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}

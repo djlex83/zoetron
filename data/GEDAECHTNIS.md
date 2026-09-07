@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11832 Fakten** · Stand 2026-09-07 19:12 UTC · aktualisiert bei jedem Herzschlag
+**11837 Fakten** · Stand 2026-09-07 19:23 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7091
+- **dream:** 7096
 - **swarm_artifact:** 2114
 - **last_swarm_critique:** 825
 - **anti_pattern:** 567
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907192024:5:7a709f`
+*07.09. 19:20 UTC · Quelle: dream*
+
+Swarm knowledge staleness creates coordination drift; last_swarm_goal recall returns empty when sync hasn't run.
+
+### `dream:20260907192024:4:dfc069`
+*07.09. 19:20 UTC · Quelle: dream*
+
+Simulation pre-check caught 5 risks and forced 3 revisions before execution, proving its value as a mandatory gate.
+
+### `dream:20260907192024:3:f59041`
+*07.09. 19:20 UTC · Quelle: dream*
+
+High metabolic stress (0.98) triggers conserve mode that caps iterations to 1, preventing multi-step error recovery.
+
+### `dream:20260907192024:2:e90daf`
+*07.09. 19:20 UTC · Quelle: dream*
+
+Model cascade fails predictably: premium models (Nemotron, Gemma) hit 502/429 errors under load while inclusionai/ling-3.0-flash-fin:free remains available.
+
+### `dream:20260907192024:1:f3f36f`
+*07.09. 19:20 UTC · Quelle: dream*
+
+Relative path resolution fails silently when tools expect absolute data paths from ZOETRON_DATA env var.
 
 ### `dream:20260907190924:5:c8af2d`
 *07.09. 19:09 UTC · Quelle: dream*

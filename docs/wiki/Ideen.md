@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 19:10 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 19:21 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,19 +28,24 @@
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Modell-Fehler reduzieren *(wieder aufgegriffen: 6×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 5×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge staleness creates coordination drift; last_swarm_goal recall returns empty when sync hasn't run.
+- Simulation pre-check caught 5 risks and forced 3 revisions before execution, proving its value as a mandatory gate.
+- High metabolic stress (0.98) triggers conserve mode that caps iterations to 1, preventing multi-step error recovery.
+- Model cascade fails predictably: premium models (Nemotron, Gemma) hit 502/429 errors under load while inclusionai/ling-3.0-flash-fin:free remains avai
+- Relative path resolution fails silently when tools expect absolute data paths from ZOETRON_DATA env var.
 - Metabolism stress at 0.982 triggers conserve mode (max 3 tasks, 1 iteration), starving the model-error investigation swarm before it can complete.
 - Pruning discards causal chains: 10 facts and 27 events removed without experiment_id, parent_step_id, or decision_context tags, making post-hoc debugg
 - Reflex convergence lacks guards: the 'Modellfehler systematisch untersuchen' reflex returned ok=false yet act_done was not blocked, unlike the success
@@ -51,11 +56,6 @@
 - Gemma-4 variants consistently hit 429 rate limits within minutes, requiring automatic blacklisting after first 429 to prevent cascade failures.
 - Reflex-mode convergence reports success (converged=true) without scoring (score=null), creating a quality blind spot that lets unverified work pass.
 - Nemotron's 38-44s latency and 502 errors make it unreliable as primary; inclusionai/ling-3.0-flash-fin delivers 4.3s latency and should be default.
-- Path fragility persists: a skill proposal explicitly demands absolute-path enforcement, revealing repeated relative-path failures in file operations.
-- Simulation deficit is structural: only 2 simulations logged despite drive goal identifying gap, indicating no automatic trigger for mental rehearsal.
-- Reflex mode masks complexity: both swarm goals converged instantly via reflex, hiding whether actual collaboration quality improved.
-- Swarm knowledge decays exponentially: two separate reflex revivals within one cycle prove stale-data detection is reactive, not scheduled.
-- Model reliability degrades under load: nemotron-3-ultra shows 29-44s latency with no error tracking, causing silent failures that cascade into poor de
 
 ---
 
