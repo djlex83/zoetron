@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 19:21 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 19:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,16 +23,16 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
-- Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 5×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Evolutionary improvement (4→9) succeeds when critic identifies 'pure exploration' artifacts, but swarm convergence fails without explicit convergence 
+- Calibration error of +3 (predicted 7 vs actual 4) reveals systematic overconfidence in model reliability estimates.
+- inclusionai/ling-3.0-flash-fin:free is the only model demonstrating consistent low-latency (<5s) success across all observed calls.
+- NVIDIA Nemotron 3 Ultra exhibits high latency (30-56s) and frequent 502 upstream overload errors, rendering it unreliable despite occasional successes
+- Free-tier Google Gemma models consistently return 429 rate-limit errors, making them unusable for reliable automated workflows.
 - Swarm knowledge staleness creates coordination drift; last_swarm_goal recall returns empty when sync hasn't run.
 - Simulation pre-check caught 5 risks and forced 3 revisions before execution, proving its value as a mandatory gate.
 - High metabolic stress (0.98) triggers conserve mode that caps iterations to 1, preventing multi-step error recovery.
@@ -51,11 +56,6 @@
 - Reflex convergence lacks guards: the 'Modellfehler systematisch untersuchen' reflex returned ok=false yet act_done was not blocked, unlike the success
 - Hand actions fail silently on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing 'nichts gelesen' exits despite exit code 0.
 - Model failures cascade: nemotron-3-ultra returns 502 upstream errors and gemma models hit 429 rate limits, forcing fallback to inclusionai/ling-3.0-fl
-- Pruning removes 23-27 events per cycle but only 0-10 facts, suggesting event noise dominates while stale facts persist unchecked.
-- 70 skill proposals exist but none are validated; a test harness that executes each proposal against a benchmark suite is the only way to convert propo
-- Gemma-4 variants consistently hit 429 rate limits within minutes, requiring automatic blacklisting after first 429 to prevent cascade failures.
-- Reflex-mode convergence reports success (converged=true) without scoring (score=null), creating a quality blind spot that lets unverified work pass.
-- Nemotron's 38-44s latency and 502 errors make it unreliable as primary; inclusionai/ling-3.0-flash-fin delivers 4.3s latency and should be default.
 
 ---
 

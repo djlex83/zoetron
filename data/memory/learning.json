@@ -1,11 +1,11 @@
 {
- "stand": "2026-09-07 19:21:06",
+ "stand": "2026-09-07 19:40:02",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
    "tool": "schwarmwissen-wieder-auffrischen.py",
-   "laeufe": 14,
-   "erfolge": 14,
+   "laeufe": 13,
+   "erfolge": 13,
    "quote": 1.0
   },
   {
@@ -135,12 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
    "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
    "laeufe": 2,
    "erfolge": 1,
@@ -151,6 +145,12 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
+  },
+  {
+   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
+   "laeufe": 2,
+   "erfolge": 0,
+   "quote": 0.0
   },
   {
    "tool": "vorgeschlagene-skills-nutzbar-machen.py",
@@ -193,12 +193,6 @@
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
-  },
-  {
-   "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
-   "laeufe": 1,
-   "erfolge": 0,
-   "quote": 0.0
   },
   {
    "tool": "veraltetes-wissen-auffrischen-und-prüfen.py",
@@ -265,6 +259,12 @@
    "laeufe": 1,
    "erfolge": 0,
    "quote": 0.0
+  },
+  {
+   "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
   },
   {
    "tool": "simulationen-gezielt-einsetzen.py",
@@ -436,15 +436,15 @@
   }
  ],
  "haende_quote": 0.863,
- "simulationen_angewandt": 25,
+ "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 22,
   "best": 9.0,
-  "schnitt": 5.64
+  "schnitt": 5.82
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 20,
+   "n": 21,
    "schnitt": 6.05
   },
   "bau": {

@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11837 Fakten** · Stand 2026-09-07 19:23 UTC · aktualisiert bei jedem Herzschlag
+**11854 Fakten** · Stand 2026-09-07 19:42 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7096
-- **swarm_artifact:** 2114
-- **last_swarm_critique:** 825
-- **anti_pattern:** 567
-- **last_swarm_goal:** 557
-- **strategy:** 285
-- **tool:** 179
+- **dream:** 7101
+- **swarm_artifact:** 2120
+- **last_swarm_critique:** 826
+- **anti_pattern:** 569
+- **last_swarm_goal:** 558
+- **strategy:** 286
+- **tool:** 180
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:fähigkeits-vorschläge-in-missionen-umwan`
+*07.09. 19:39 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Fähigkeits-Vorschläge in Missionen umwandeln'. Datei: data/tools/fähigkeits-vorschläge-in-missionen-umwan.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeits-Vorschläge in:2`
+*07.09. 19:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 6): Event-Sourced Streaming Architecture - Model the transformation as an event stream: SkillSuggested -> ValidationRequested -> ValidationCompleted -> MissionTransformed -> MissionPersisted. Use a lightweight message bus (Redis 
+
+### `anti_pattern:Previous attempt scored 6/10. Goal: Fähigkeits-Vorschläge in:1`
+*07.09. 19:38 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): Real Execution Benchmark Harness - Build a benchmark runner that actually executes generated missions against a sandboxed environment (Docker/gVisor) and measures convergence (iterations to success), reflex quality (LLM-as-ju
+
+### `last_swarm_critique`
+*07.09. 19:38 UTC · Quelle: critic*
+
+score=6; issues=Validation script simulates benchmarks instead of actually measuring convergence/reflex quality/tool usage - uses hash-based variance and heuristic adjustments, not real execution; Pipeline integration broken: Script 1 outputs to stdout, Script
+
+### `last_swarm_goal`
+*07.09. 19:31 UTC · Quelle: system*
+
+Fähigkeits-Vorschläge in Missionen umwandeln
+
+### `dream:20260907193128:5:75e42e`
+*07.09. 19:31 UTC · Quelle: dream*
+
+Evolutionary improvement (4→9) succeeds when critic identifies 'pure exploration' artifacts, but swarm convergence fails without explicit convergence criteria.
+
+### `dream:20260907193128:4:b980b0`
+*07.09. 19:31 UTC · Quelle: dream*
+
+Calibration error of +3 (predicted 7 vs actual 4) reveals systematic overconfidence in model reliability estimates.
+
+### `dream:20260907193128:3:4c0d00`
+*07.09. 19:31 UTC · Quelle: dream*
+
+inclusionai/ling-3.0-flash-fin:free is the only model demonstrating consistent low-latency (<5s) success across all observed calls.
+
+### `dream:20260907193128:2:7988be`
+*07.09. 19:31 UTC · Quelle: dream*
+
+NVIDIA Nemotron 3 Ultra exhibits high latency (30-56s) and frequent 502 upstream overload errors, rendering it unreliable despite occasional successes.
+
+### `dream:20260907193128:1:d5a19f`
+*07.09. 19:31 UTC · Quelle: dream*
+
+Free-tier Google Gemma models consistently return 429 rate-limit errors, making them unusable for reliable automated workflows.
 
 ### `dream:20260907192024:5:7a709f`
 *07.09. 19:20 UTC · Quelle: dream*
