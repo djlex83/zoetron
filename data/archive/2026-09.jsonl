@@ -21867,3 +21867,8 @@
 {"ts": 1788163151.1277633, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22, "gelesen": 2}}
 {"ts": 1788163153.5557456, "kind": "issue_synced", "payload": {"issue": 262, "state": "open"}}
 {"ts": 1788163378.6175175, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1787558880.0, "key": "dream:202608240808:5", "value": "Only one model (dots-studio/dots-3-note-preview) succeeds but with 24-29s latency, creating a single-point-of-failure with poor throughput.", "source": "dream"}
+{"ts": 1787558880.0, "key": "dream:202608240808:4", "value": "Pruning runs removing zero items signal stagnation - the system accumulates but never discards obsolete knowledge.", "source": "dream"}
+{"ts": 1787558880.0, "key": "dream:202608240808:3", "value": "Tasks can score well (2/2) yet fail to converge, indicating scoring metrics don't capture completion correctness.", "source": "dream"}
+{"ts": 1787558880.0, "key": "dream:202608240808:2", "value": "Destructive operations (subprocess) require human approval, creating a hard automation bottleneck for any write/execute tasks.", "source": "dream"}
+{"ts": 1787558880.0, "key": "dream:202608240808:1", "value": "Free-tier models consistently fail with 429/502 errors under load, making them unreliable for production workflows.", "source": "dream"}

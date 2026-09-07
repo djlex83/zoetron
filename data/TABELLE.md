@@ -2,7 +2,7 @@
 
 *Automatisch bei jedem Herzschlag erneuert. Stärke = Bedeutungsähnlichkeit (Kosinus 0–1).*
 
-Stand: 8044 Neuronen · 780777 bewertete Synapsen
+Stand: 8051 Neuronen · 781779 bewertete Synapsen
 
 ## Die 15 besten Neuronen
 
@@ -14,14 +14,14 @@ Stand: 8044 Neuronen · 780777 bewertete Synapsen
 | 2 | 💭 | A single model provider (z-ai/glm-5.2) fails deterministically w… | 765 | 0.26 |
 | 3 | 💭 | Free-tier models (z-ai/glm-5.2) consistently hit 429 rate limits… | 786 | 0.25 |
 | 4 | 💭 | Fallback model `nvidia/nemotron-3-ultra-550b-a55b:free` exhibits… | 738 | 0.26 |
-| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 780 | 0.24 |
+| 5 | 💭 | Rate-limited models (glm-5.2) repeatedly fail with 429 errors wh… | 781 | 0.24 |
 | 6 | 💭 | Free tier models on OpenRouter consistently hit 429 rate limits … | 712 | 0.26 |
-| 7 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 733 | 0.25 |
-| 8 | 💭 | Repeated 429 errors across four different models indicate system… | 732 | 0.25 |
+| 7 | 💭 | Rate limiting (429 errors) and upstream overload (502 errors) ar… | 734 | 0.25 |
+| 8 | 💭 | Repeated 429 errors across four different models indicate system… | 733 | 0.25 |
 | 9 | 💭 | The fallback to `nvidia/nemotron-3-ultra-550b-a55b:free` succeed… | 705 | 0.25 |
-| 10 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 738 | 0.24 |
-| 11 | 💭 | The model `nvidia/nemotron-3-ultra-550b-a55b:free` suffers from … | 667 | 0.26 |
-| 12 | 💭 | Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate lim… | 746 | 0.23 |
+| 10 | 💭 | Rate limiting (429 errors) cascades across multiple free-tier mo… | 737 | 0.24 |
+| 11 | 💭 | The model `nvidia/nemotron-3-ultra-550b-a55b:free` suffers from … | 666 | 0.26 |
+| 12 | 💭 | Free-tier models (z-ai/glm-5.2:free) repeatedly hit 429 rate lim… | 747 | 0.23 |
 | 13 | 💭 | Model provider z-ai/glm-5.2:free consistently fails with 429 rat… | 731 | 0.23 |
 | 14 | 💭 | The z-ai/glm-5.2:free model consistently fails with 429 rate-lim… | 659 | 0.25 |
 | 15 | 💭 | Nvidia Nemotron 3 Ultra is the only consistently available free … | 617 | 0.27 |

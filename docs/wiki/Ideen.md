@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 08:07 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 08:28 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,23 +24,28 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
-- Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 5×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
 - Vorgeschlagene Fähigkeiten prüfen und nutzen *(wieder aufgegriffen: 4×)*
-- Schwarm-Wissen auffrischen und prüfen *(wieder aufgegriffen: 3×)*
+- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- The systemic gap between proposal generation and skill instantiation requires an automated pipeline that converts approved proposals into tested, depl
+- Skill proposals lacking runnable test cases with explicit pass/fail criteria become unactionable debt; every proposal must include at least one execut
+- Pruning operations destroy failure context needed for root-cause analysis; the last 30 failure events with goal, tool, and input must be snapshotted b
+- Convergence declarations are invalid without a non-null score and a positive delta from the previous cycle; null scores mask stagnation.
+- Rate-limited models (429 errors) must be classified as infrastructure failures and routed to fallback models immediately instead of being retried.
 - Simulation revision gates (5 risks → 3 applied) effectively catch deployment blockers but are not yet mandatory.
 - Evolutionary search improves variant scores (7→9) but swarm convergence fails without stricter critic gates or more cycles.
 - Calibration underestimates actual difficulty by approximately 40% (predicted 5 vs actual 7), requiring a systematic correction factor.
@@ -51,11 +56,6 @@
 - Calibration consistently underestimates cycle count (predicted 5 vs actual 7), causing budget overruns when iteration limits are tight.
 - Under conserve metabolism (max_tasks=3, max_iterations=1), the system still wastes budget retrying known-unreliable models instead of failing fast to 
 - The inclusionai/ling-3.0-flash-fin:free model is the only consistently reliable endpoint under load, while nemotron suffers 502 upstream overloads and
-- Skill proposals accumulate in logs but lack an automated pipeline to convert them into tested, registered capabilities.
-- Swarm knowledge staleness is only detected reactively via drive_goal signals after quality has degraded, not proactively via scheduled scans.
-- Reflex tools crash without mandatory preflight validation of script existence, dependency availability, and path resolution.
-- Hand actions fail silently when sys.argv[1] and ZOETRON_DATA environment variables are not resolved to absolute paths before file I/O operations.
-- Free-tier models exhibit predictable failure signatures: Google Gemma models consistently return 429 rate limits, Nvidia Nemotron returns 502 upstream
 
 ---
 

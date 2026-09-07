@@ -1,20 +1,70 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11728 Fakten** · Stand 2026-09-07 08:09 UTC · aktualisiert bei jedem Herzschlag
+**11742 Fakten** · Stand 2026-09-07 08:30 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6976
-- **swarm_artifact:** 2125
-- **last_swarm_critique:** 818
-- **anti_pattern:** 579
-- **last_swarm_goal:** 550
-- **strategy:** 291
-- **tool:** 177
+- **swarm_artifact:** 2133
+- **last_swarm_critique:** 819
+- **anti_pattern:** 581
+- **last_swarm_goal:** 551
+- **strategy:** 292
+- **tool:** 178
 - **hand_result:** 133
 - **aktuell_organfehler:** 45
 - **aktuell_fussball_messlatte:** 33
 - **creator_teaching:** 1
 
 ---
+
+### `tool:veraltete-schwarmziele-aktualisieren`
+*07.09. 08:28 UTC · Quelle: hands*
+
+Ausfuehrbares Python-Werkzeug aus Ziel 'Veraltete Schwarmziele aktualisieren'. Datei: data/tools/veraltete-schwarmziele-aktualisieren.py - bei aehnlichen Zielen nutzen oder weiterentwickeln.
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Schwarmziele a:2`
+*07.09. 08:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 5): Adapter-Pattern mit dynamischer Feld-Zuordnung - Behalte die bestehende Dateistruktur bei, führe aber ein `FieldAdapter`-System ein, das als Brücke zwischen den inkonsistenten Schlüsseln wirkt. Jeder Datei wird ein `Adapter`-
+
+### `anti_pattern:Previous attempt scored 7/10. Goal: Veraltete Schwarmziele a:1`
+*07.09. 08:26 UTC · Quelle: evolution*
+
+ABGELEHNT von Evolution (Score 7): ETL-Pipeline mit Normalisierungsschicht - Refaktoriere das gesamte System in eine ETL-Pipeline-Architektur. Statt dass jede Datei eigenständig Daten lädt und verarbeitet, gibt es eine einzige `PipelineEngine`: (1) **Extract**
+
+### `last_swarm_critique`
+*07.09. 08:26 UTC · Quelle: critic*
+
+score=7; issues=Inkonsistente Metrik-Schlüssel: Datei 2 nutzt `metrics.total_attempts`/`metrics.successful_attempts` für `calculate_success_rate`, während Datei 4 in `is_outdated` nach `metrics.success_rate` sucht – das kann zu falschen Veraltungs-Entscheidung
+
+### `last_swarm_goal`
+*07.09. 08:18 UTC · Quelle: system*
+
+Veraltete Schwarmziele aktualisieren
+
+### `dream:20260907081756:5:25b913`
+*07.09. 08:17 UTC · Quelle: dream*
+
+The systemic gap between proposal generation and skill instantiation requires an automated pipeline that converts approved proposals into tested, deployed skills.
+
+### `dream:20260907081756:4:a633e7`
+*07.09. 08:17 UTC · Quelle: dream*
+
+Skill proposals lacking runnable test cases with explicit pass/fail criteria become unactionable debt; every proposal must include at least one executable test.
+
+### `dream:20260907081756:3:7998a2`
+*07.09. 08:17 UTC · Quelle: dream*
+
+Pruning operations destroy failure context needed for root-cause analysis; the last 30 failure events with goal, tool, and input must be snapshotted before pruning executes.
+
+### `dream:20260907081756:2:057160`
+*07.09. 08:17 UTC · Quelle: dream*
+
+Convergence declarations are invalid without a non-null score and a positive delta from the previous cycle; null scores mask stagnation.
+
+### `dream:20260907081756:1:2821a4`
+*07.09. 08:17 UTC · Quelle: dream*
+
+Rate-limited models (429 errors) must be classified as infrastructure failures and routed to fallback models immediately instead of being retried.
 
 ### `dream:20260907080704:5:dc84f0`
 *07.09. 08:07 UTC · Quelle: dream*
@@ -44896,31 +44946,6 @@ Free-tier models z-ai/glm-5.2 and google/gemma-* returned persistent 429 rate-li
 *24.08. 08:08 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608240808:5`
-*24.08. 08:08 UTC · Quelle: dream*
-
-Only one model (dots-studio/dots-3-note-preview) succeeds but with 24-29s latency, creating a single-point-of-failure with poor throughput.
-
-### `dream:202608240808:4`
-*24.08. 08:08 UTC · Quelle: dream*
-
-Pruning runs removing zero items signal stagnation - the system accumulates but never discards obsolete knowledge.
-
-### `dream:202608240808:3`
-*24.08. 08:08 UTC · Quelle: dream*
-
-Tasks can score well (2/2) yet fail to converge, indicating scoring metrics don't capture completion correctness.
-
-### `dream:202608240808:2`
-*24.08. 08:08 UTC · Quelle: dream*
-
-Destructive operations (subprocess) require human approval, creating a hard automation bottleneck for any write/execute tasks.
-
-### `dream:202608240808:1`
-*24.08. 08:08 UTC · Quelle: dream*
-
-Free-tier models consistently fail with 429/502 errors under load, making them unreliable for production workflows.
 
 ### `last_swarm_critique`
 *24.08. 07:56 UTC · Quelle: critic*
