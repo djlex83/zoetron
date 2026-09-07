@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 16:46:34",
+ "stand": "2026-09-07 16:58:59",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -43,12 +43,6 @@
    "laeufe": 5,
    "erfolge": 2,
    "quote": 0.4
-  },
-  {
-   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
   },
   {
    "tool": "veraltete-marktinfos-aktualisieren.py",
@@ -105,7 +99,19 @@
    "quote": 1.0
   },
   {
+   "tool": "vorgeschlagene-fähigkeiten-testen-und-nu.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeiten-durch-simulation-prüfen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -178,12 +184,6 @@
   },
   {
    "tool": "vorgeschlagene-fähigkeiten-besser-prüfen.py",
-   "laeufe": 2,
-   "erfolge": 2,
-   "quote": 1.0
-  },
-  {
-   "tool": "träume-besser-nutzen-lernen.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0

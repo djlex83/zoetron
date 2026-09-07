@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 16:46 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 16:59 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Self-diagnosis reports zero organ errors while model failures (21) and stale swarm signals persist, revealing a monitoring blind spot for external dep
+- Pruning discards causal metadata (experiment_id, parent_step_id), making post-hoc debugging of consolidated knowledge impossible.
+- Skill proposals accumulate (85) but rarely become missions (1), indicating a missing proposal-to-mission pipeline with explicit acceptance criteria.
+- Reflex-mode execution bypasses the convergence gate (score=null, converged=true), creating a silent quality regression path.
+- Model reliability follows a bimodal pattern: free-tier endpoints either respond quickly or fail with 502/429, requiring tiered routing with health-awa
 - Prediction error persists because actual task scores never feed back into the estimator to recalibrate model-health and artifact-quality weights.
 - Builder artifacts entering simulation without syntactic validation waste compute cycles on guaranteed-fail executions.
 - Swarm knowledge decays silently without TTL-enforced refresh, causing planners to operate on stale context.
@@ -51,11 +56,6 @@
 - The system has proposed but not implemented a model router, creating a persistent gap between diagnosing the failure pattern and executing a solution.
 - inclusionai/ling-3.0-flash-fin is the only consistently reliable model, succeeding with ~3.5s latency while every other provider fails repeatedly.
 - External service failures (502 upstream overload from Nvidia, 429 rate limits from Google) are the dominant and recurring failure mode across multiple
-- Skill proposals accumulate without synthesis mechanism; drive_goal signals need for consolidation but no automated merge process exists.
-- Model latency variance exceeds 15× (58.6s vs 3.7s) making fixed timeouts ineffective; per-model SLA tracking is essential.
-- Aggressive pruning (33→19 events per run) without causal tags (experiment_id, parent_step_id) destroys reconstructability for post-mortem analysis.
-- Reflex-mode actions bypass convergence gates (score≥8, delta<0.1 over 3 cycles, critic approval), creating an unverified execution path.
-- Free-tier model providers exhibit systematic failure modes (502 upstream overload, 429 rate limits) requiring a latency-budgeted router with per-provi
 
 ---
 

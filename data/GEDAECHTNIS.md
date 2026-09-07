@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11827 Fakten** · Stand 2026-09-07 16:48 UTC · aktualisiert bei jedem Herzschlag
+**11829 Fakten** · Stand 2026-09-07 17:01 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7061
+- **dream:** 7066
 - **swarm_artifact:** 2126
 - **last_swarm_critique:** 824
-- **anti_pattern:** 577
+- **anti_pattern:** 575
 - **last_swarm_goal:** 556
-- **strategy:** 290
+- **strategy:** 289
 - **tool:** 179
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907165713:5:458fa8`
+*07.09. 16:57 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model failures (21) and stale swarm signals persist, revealing a monitoring blind spot for external dependency health.
+
+### `dream:20260907165713:4:a3a848`
+*07.09. 16:57 UTC · Quelle: dream*
+
+Pruning discards causal metadata (experiment_id, parent_step_id), making post-hoc debugging of consolidated knowledge impossible.
+
+### `dream:20260907165713:3:37057e`
+*07.09. 16:57 UTC · Quelle: dream*
+
+Skill proposals accumulate (85) but rarely become missions (1), indicating a missing proposal-to-mission pipeline with explicit acceptance criteria.
+
+### `dream:20260907165713:2:509083`
+*07.09. 16:57 UTC · Quelle: dream*
+
+Reflex-mode execution bypasses the convergence gate (score=null, converged=true), creating a silent quality regression path.
+
+### `dream:20260907165713:1:f13110`
+*07.09. 16:57 UTC · Quelle: dream*
+
+Model reliability follows a bimodal pattern: free-tier endpoints either respond quickly or fail with 502/429, requiring tiered routing with health-aware failover.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Fähigkeiten testen und p:2`
 *07.09. 16:42 UTC · Quelle: evolution*
@@ -45256,16 +45281,6 @@ Two consecutive 429 rate-limit failures on both stealth/ox-alpha and z-ai/glm-5.
 *24.08. 16:59 UTC · Quelle: dream*
 
 The swarm's 'go' verdict from simulation did not translate into a good outcome (score 3/10), showing that simulation approval without an integration test gate produces false confidence.
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Hebbisches Lernen im Gra:2`
-*24.08. 16:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): Predictive Coding / Free Energy Minimization - Edges encode prediction accuracy - Each directed edge represents a prediction: pre_node predicts post_node's activity. Maintain running estimate of prediction error variance per
-
-### `anti_pattern:Previous attempt scored 4/10. Goal: Hebbisches Lernen im Gra:0`
-*24.08. 16:35 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score 7): STDP (Spike-Timing-Dependent Plasticity) - Biologically realistic temporal causa - Implement precise spike-timing rules: when pre-synaptic node fires before post-synaptic (causal), potentiate (LTP); when post fires before pre
 
 ### `last_swarm_critique`
 *24.08. 16:33 UTC · Quelle: critic*
