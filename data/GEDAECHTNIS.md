@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11832 Fakten** · Stand 2026-09-07 18:17 UTC · aktualisiert bei jedem Herzschlag
+**11832 Fakten** · Stand 2026-09-07 18:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7081
 - **swarm_artifact:** 2118
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907183552:5:5f95b8`
+*07.09. 18:35 UTC · Quelle: dream*
+
+Pruning removes facts/events aggressively (5-9 facts, 15-39 events) without preserving decision-critical context.
+
+### `dream:20260907183552:4:524938`
+*07.09. 18:35 UTC · Quelle: dream*
+
+Swarm knowledge staleness triggers reflex recovery but lacks proactive TTL-based refresh schedules.
+
+### `dream:20260907183552:3:bdcfbb`
+*07.09. 18:35 UTC · Quelle: dream*
+
+Skill proposals accumulate but lack automatic deployment pipelines, creating a proposal-execution gap.
+
+### `dream:20260907183552:2:7d8502`
+*07.09. 18:35 UTC · Quelle: dream*
+
+High latency (40-53s) on nemotron-3-ultra after recovery indicates intermittent degradation, not binary health.
+
+### `dream:20260907183552:1:35e429`
+*07.09. 18:35 UTC · Quelle: dream*
+
+Model endpoints fail silently with 502/429 errors rather than explicit rejections, requiring client-side circuit breakers.
 
 ### `anti_pattern:Previous attempt scored 4/10. Goal: Modellfehler systematisc:2`
 *07.09. 18:14 UTC · Quelle: evolution*
@@ -45291,31 +45316,6 @@ score=4; issues=Artefakt ist unvollständig: Die Methodik bricht mitten im Satz 
 *24.08. 18:30 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608241829:5`
-*24.08. 18:29 UTC · Quelle: dream*
-
-Skill proposals accumulate repeatedly across dream cycles (backoff, circuit breaker, pre-flight checks) without being implemented or tested, creating a proposal-to-adoption gap.
-
-### `dream:202608241829:4`
-*24.08. 18:29 UTC · Quelle: dream*
-
-The fallback chain works but is slow and unpredictable (21s, 27s, 63s latencies), indicating latency-aware routing should be part of model selection rather than an afterthought.
-
-### `dream:202608241829:3`
-*24.08. 18:29 UTC · Quelle: dream*
-
-429 rate-limit failures are correlated across providers (stealth/ox-alpha and z-ai/glm-5.2:free fail within the same second), so immediate model rotation is ineffective and backoff is required.
-
-### `dream:202608241829:2`
-*24.08. 18:29 UTC · Quelle: dream*
-
-The proposed best-of-n tool was rejected as a placeholder (generate() contained only stub code), revealing that skill proposals are being registered without implementation verification.
-
-### `dream:202608241829:1`
-*24.08. 18:29 UTC · Quelle: dream*
-
-The Best-of-N goal failed to converge in 2 cycles partly because the swarm was throttled by 'conserve' metabolism (max_iterations=1), so test-time-compute goals must be exempted from or prioritized under budget constraints.
 
 ### `last_swarm_critique`
 *24.08. 18:02 UTC · Quelle: critic*

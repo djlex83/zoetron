@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 18:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 18:36 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -36,11 +36,16 @@
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 7×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
-- Modellfehler verstehen und beheben *(wieder aufgegriffen: 4×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
+- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts/events aggressively (5-9 facts, 15-39 events) without preserving decision-critical context.
+- Swarm knowledge staleness triggers reflex recovery but lacks proactive TTL-based refresh schedules.
+- Skill proposals accumulate but lack automatic deployment pipelines, creating a proposal-execution gap.
+- High latency (40-53s) on nemotron-3-ultra after recovery indicates intermittent degradation, not binary health.
+- Model endpoints fail silently with 502/429 errors rather than explicit rejections, requiring client-side circuit breakers.
 - Aggressive pruning of facts and events without provenance metadata destroys the causal context needed to diagnose future failures, risking irrecoverab
 - The proposal-to-execution gap is the system's most persistent failure mode — ideas accumulate as skill proposals but rarely become owned missions with
 - Skills that produce output without return values or side effects are structurally useless regardless of conceptual merit, as the rejected 'fähigkeiten
@@ -51,11 +56,6 @@
 - Tools that produce only stdout without side-effects or return values are rejected by the hand-action validator, wasting cycles.
 - Evolutionary search with critic feedback can lift artifact scores from 4 to 8–9, but only when variants implement concrete behavior rather than delega
 - Free-tier models on OpenRouter suffer systematic rate-limiting (429) and upstream overloads (502), making them unreliable for latency-sensitive workfl
-- Swarm criticism drive marked 'stale' indicates external feedback loops expire and must be actively refreshed on a schedule.
-- Simulation verdict 'revise' with 5 risks and 4 revisions shows skill validation requires multiple iteration cycles before deployment.
-- Metabolism stress at 1.0 forces conserve mode with extreme limits (max_tasks=3, max_iterations=1), throttling all autonomous activity until stress dro
-- Relative path resolution fails silently in production - the hand action read nothing because it didn't touch real data paths under ZOETRON_DATA or sys
-- Primary models (nemotron, gemma) fail repeatedly with 502/429 errors while inclusionai/ling-3.0-flash-fin succeeds consistently, making fallback selec
 
 ---
 
