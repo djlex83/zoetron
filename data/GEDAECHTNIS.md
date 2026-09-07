@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11892 Fakten** · Stand 2026-09-07 21:40 UTC · aktualisiert bei jedem Herzschlag
+**11887 Fakten** · Stand 2026-09-07 21:51 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7136
-- **swarm_artifact:** 2120
+- **swarm_artifact:** 2118
 - **last_swarm_critique:** 827
-- **anti_pattern:** 569
+- **anti_pattern:** 567
 - **last_swarm_goal:** 559
-- **strategy:** 286
+- **strategy:** 285
 - **tool:** 181
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907214836:5:3708d6`
+*07.09. 21:48 UTC · Quelle: dream*
+
+Swarm knowledge degrades within 24 hours, so freshness triggers must be mandatory, not optional.
+
+### `dream:20260907214836:4:98846d`
+*07.09. 21:48 UTC · Quelle: dream*
+
+Model call failures lack structured telemetry (stdout, stderr, tokens, duration), making post-mortem diagnosis unreliable.
+
+### `dream:20260907214836:3:401c9c`
+*07.09. 21:48 UTC · Quelle: dream*
+
+Pruned facts without experiment_id and causal context destroy reconstructable history needed for root-cause analysis.
+
+### `dream:20260907214836:2:f99b17`
+*07.09. 21:48 UTC · Quelle: dream*
+
+Reflex-mode goal completion bypasses convergence validation, producing null scores that mask whether goals were truly achieved.
+
+### `dream:20260907214836:1:78d9b2`
+*07.09. 21:48 UTC · Quelle: dream*
+
+Model provider failures (502 overload, 429 rate limits) are systemic and recurring, requiring circuit breakers and automatic failover rather than simple retries.
 
 ### `dream:20260907213742:5:467f61`
 *07.09. 21:37 UTC · Quelle: dream*
@@ -45537,16 +45562,6 @@ High latency variance (2.8s–83.8s) for same model shows need for latency SLO m
 
 Rate limiting (429 errors) on multiple models indicates missing unified retry/backoff policy with circuit breaker.
 
-### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:2`
-*24.08. 21:43 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [8, 6, 9]): Challenger/champion shadow-deployment pattern borrowed from ML ops: never promot - Implement a champion/challenger gateway: all tool-calling requests route to the current champion, but a configurable percentage (e.g.,
-
-### `anti_pattern:Previous attempt scored 3/10. Goal: Cortex-Upgrade-Reflex: n:0`
-*24.08. 21:43 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score [7, 9, 8]): Event-driven pipeline architecture: replace the monolithic script with a complet - Build the system as an event-driven pipeline using asyncio tasks orchestrated by a central controller. Stage 1 'discover': poll OpenRo
-
 ### `last_swarm_critique`
 *24.08. 21:42 UTC · Quelle: critic*
 
@@ -45556,31 +45571,6 @@ score=3; issues=Deliverable is truncated: run_model_inference ends mid-statement
 *24.08. 21:38 UTC · Quelle: system*
 
 Cortex-Upgrade-Reflex: neue Modelle automatisch adoptieren
-
-### `dream:202608242138:5`
-*24.08. 21:38 UTC · Quelle: dream*
-
-Simulation revision loops (5 risks/5 revisions) produce no measurable improvement in final held-out measurement (49.75% vs 50.2%).
-
-### `dream:202608242138:4`
-*24.08. 21:38 UTC · Quelle: dream*
-
-MemoryStore lacks 'add_fact' method, breaking fact persistence during hand-execution actions.
-
-### `dream:202608242138:3`
-*24.08. 21:38 UTC · Quelle: dream*
-
-Identical models show 30x latency variance (4s vs 130s), indicating queueing/cold-start effects dominate over model capability.
-
-### `dream:202608242138:2`
-*24.08. 21:38 UTC · Quelle: dream*
-
-Iterative evolution improves football prediction scores (6→8) but fails to converge on beating the 50.2% baseline without odds.
-
-### `dream:202608242138:1`
-*24.08. 21:38 UTC · Quelle: dream*
-
-Free-tier models on OpenRouter suffer systemic 429 rate-limiting across all providers, making them unreliable for sustained workloads.
 
 ### `last_swarm_critique`
 *24.08. 20:47 UTC · Quelle: critic*
