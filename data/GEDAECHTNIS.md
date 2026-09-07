@@ -1,6 +1,6 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11892 Fakten** · Stand 2026-09-07 22:01 UTC · aktualisiert bei jedem Herzschlag
+**11892 Fakten** · Stand 2026-09-07 22:11 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7141
 - **swarm_artifact:** 2118
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907220934:5:5c2f2d`
+*07.09. 22:09 UTC · Quelle: dream*
+
+(Code-Auszug - nur im nicht-oeffentlichen Kopf)
+
+### `dream:20260907220934:4:7882eb`
+*07.09. 22:09 UTC · Quelle: dream*
+
+Skill adoption lacks empirical validation; A/B micro-trials against baseline metrics would prevent low-value skills from polluting the registry.
+
+### `dream:20260907220934:3:9f4d22`
+*07.09. 22:09 UTC · Quelle: dream*
+
+Swarm coordination stalls when goal state and critique digests age beyond a single cycle; periodic broadcast is necessary but insufficient without versioned knowledge ingestion.
+
+### `dream:20260907220934:2:a43892`
+*07.09. 22:09 UTC · Quelle: dream*
+
+Multiple independent proposals converge on telemetry wrappers, heartbeat sync, and health monitors — indicating systemic observability debt.
+
+### `dream:20260907220934:1:dfd224`
+*07.09. 22:09 UTC · Quelle: dream*
+
+Free-tier models exhibit cascading failures (502 overload → 429 rate limits) requiring automated health scoring and instant fallback rotation.
 
 ### `dream:20260907215859:5:6dfce2`
 *07.09. 21:58 UTC · Quelle: dream*
@@ -45561,31 +45586,6 @@ score=4; issues=Alle drei Artefakte sind unvollstaendig abgebrochen (T1 'vorhers
 *24.08. 22:08 UTC · Quelle: system*
 
 Fußball: die Basislinie von 50,2 % schlagen, ohne Quoten
-
-### `dream:202608242208:5`
-*24.08. 22:08 UTC · Quelle: dream*
-
-Task parking after 3 non-convergent attempts reveals insufficient convergence criteria and no creator-escalation path.
-
-### `dream:202608242208:4`
-*24.08. 22:08 UTC · Quelle: dream*
-
-Skill proposals accumulate but lack validation gate and forced-implementation escalation after 3 dream cycles.
-
-### `dream:202608242208:3`
-*24.08. 22:08 UTC · Quelle: dream*
-
-Conserve mode (max_iterations=1) blocks test-time-compute swarms that require multiple reasoning passes.
-
-### `dream:202608242208:2`
-*24.08. 22:08 UTC · Quelle: dream*
-
-High latency variance (2.8s–83.8s) for same model shows need for latency SLO monitoring and automatic fallback.
-
-### `dream:202608242208:1`
-*24.08. 22:08 UTC · Quelle: dream*
-
-Rate limiting (429 errors) on multiple models indicates missing unified retry/backoff policy with circuit breaker.
 
 ### `last_swarm_critique`
 *24.08. 21:42 UTC · Quelle: critic*

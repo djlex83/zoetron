@@ -24118,3 +24118,39 @@
 {"ts": 1788213343.8528397, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.22, "gelesen": 3}}
 {"ts": 1788213343.8539524, "kind": "reflex_used", "payload": {"goal": "Fähigkeiten aus Traum-Clustern erkunden", "tool": "beste-vorschläge-in-fähigkeiten-verwande.py", "ok": true}}
 {"ts": 1788213344.2580743, "kind": "act_done", "payload": {"goal_title": "Fähigkeiten aus Traum-Clustern erkunden", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1787609280.0, "key": "dream:202608242208:5", "value": "Task parking after 3 non-convergent attempts reveals insufficient convergence criteria and no creator-escalation path.", "source": "dream"}
+{"ts": 1787609280.0, "key": "dream:202608242208:4", "value": "Skill proposals accumulate but lack validation gate and forced-implementation escalation after 3 dream cycles.", "source": "dream"}
+{"ts": 1787609280.0, "key": "dream:202608242208:3", "value": "Conserve mode (max_iterations=1) blocks test-time-compute swarms that require multiple reasoning passes.", "source": "dream"}
+{"ts": 1787609280.0, "key": "dream:202608242208:2", "value": "High latency variance (2.8s–83.8s) for same model shows need for latency SLO monitoring and automatic fallback.", "source": "dream"}
+{"ts": 1787609280.0, "key": "dream:202608242208:1", "value": "Rate limiting (429 errors) on multiple models indicates missing unified retry/backoff policy with circuit breaker.", "source": "dream"}
+{"ts": 1788213597.7239656, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788213667.0101447, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788213668.5671518, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788213672.5906813, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788213672.5906782, "schalter_geoeffnet": false}}
+{"ts": 1788213730.6505625, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 58.1, "tokens_ein": 1601, "tokens_aus": 1096}}
+{"ts": 1788213730.6514623, "kind": "skill_proposal", "payload": {"proposal": "Implement a circuit-breaker wrapper for each external model that trips after 3 consecutive 429/5xx errors and enforces exponential backoff before retry."}}
+{"ts": 1788213730.6515954, "kind": "skill_proposal", "payload": {"proposal": "Add a model-health scorecard (error rate, p50/p95 latency, token efficiency) updated every 10 min; auto-demote models exceeding 15% error or 120 s p95 latency."}}
+{"ts": 1788213730.6516926, "kind": "skill_proposal", "payload": {"proposal": "Deploy a tiered router that classifies tasks by complexity (token count, reasoning depth) and assigns them to cheapest model meeting SLO, with local Llama-3.1-8B as final fallback."}}
+{"ts": 1788213730.6518216, "kind": "skill_proposal", "payload": {"proposal": "Create a canary pipeline: new model versions run 1-hour A/B against current champion; require +10% success rate and <2x baseline p95 latency before registry promotion."}}
+{"ts": 1788213730.6519396, "kind": "skill_proposal", "payload": {"proposal": "Build a request deduplication cache keyed by prompt hash + model params to absorb retry storms and reduce provider load during quota exhaustion."}}
+{"ts": 1788213730.6520567, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788213733.4964519, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788213733.4964495, "schalter_geoeffnet": false}}
+{"ts": 1788213751.6976743, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 18.2, "tokens_ein": 528, "tokens_aus": 455}}
+{"ts": 1788213751.697817, "kind": "drive_goal", "payload": {"title": "Modell-Fehlerrate deutlich senken", "why": "Das Modell scheitert oft (62 Fehler vs. 46 Erfolge). Weniger Fehler bedeuten verlässlichere Entscheidungen.", "signal": "failure"}}
+{"ts": 1788213751.6978893, "kind": "drive_goal", "payload": {"title": "Marktanalyse-Ergebnisse endlich nutzen", "why": "Drei fertige Analysen liegen ungenutzt herum. Wir müssen sie in konkrete Schritte umsetzen.", "signal": "stale"}}
+{"ts": 1788213751.6979485, "kind": "drive_goal", "payload": {"title": "Vorgeschlagene Fähigkeiten wirklich bauen", "why": "Es gibt 51 Skill-Vorschläge, aber unklar was davon umgesetzt wurde. Wir brauchen echte neue Fertigkeiten.", "signal": "gap"}}
+{"ts": 1788213754.1161594, "kind": "hand_action", "payload": {"ok": true, "exit": 0, "error": null, "duration_s": 0.2, "gelesen": 1}}
+{"ts": 1788213754.1176875, "kind": "reflex_used", "payload": {"goal": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "tool": "abgelehnte-werkzeuge-verstehen-und-verbe.py", "ok": true}}
+{"ts": 1788213754.7530706, "kind": "act_done", "payload": {"goal_title": "Vorgeschlagene Fähigkeiten prüfen und nutzen", "score": null, "converged": true, "mode": "reflex"}}
+{"ts": 1788214007.1297162, "kind": "selbstdiagnose", "payload": {"title": "Selbstdiagnose: keine Organfehler im letzten Abschnitt", "befunde": 0, "gesamt": 0, "organe": [], "details": []}}
+{"ts": 1788214075.394356, "kind": "reflex_ok", "payload": {}}
+{"ts": 1788214076.9292073, "kind": "prune_run", "payload": {"facts_pruned": 0, "events_pruned": 0}}
+{"ts": 1788214080.9744635, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788214080.9744608, "schalter_geoeffnet": false}}
+{"ts": 1788214141.607623, "kind": "model_ok", "payload": {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "latency_s": 60.6, "tokens_ein": 1385, "tokens_aus": 1472}}
+{"ts": 1788214141.6081567, "kind": "skill_proposal", "payload": {"proposal": "Deploy a model router that quarantines providers after 3 consecutive 429/502 errors and fails over to a pre-warmed local Llama-3.1-8B instance with measured SLOs."}}
+{"ts": 1788214141.6082122, "kind": "skill_proposal", "payload": {"proposal": "Implement per-model telemetry (p50/p95 latency, error rate, token efficiency) over a 10-minute sliding window with auto-demotion at >15% error rate or >120s p95 latency."}}
+{"ts": 1788214141.6082673, "kind": "skill_proposal", "payload": {"proposal": "Add a stress-aware scheduler that halves max_concurrent_tasks and doubles request timeouts when metabolism.stress > 0.8, auto-recovering when stress < 0.4 for 5 minutes."}}
+{"ts": 1788214141.6083207, "kind": "skill_proposal", "payload": {"proposal": "Create a skill-graduation pipeline requiring 1-hour A/B test (success rate > baseline +10%, p95 latency < 2x baseline) before registry activation."}}
+{"ts": 1788214141.6083734, "kind": "skill_proposal", "payload": {"proposal": "Build a path-resolution utility that all tools must use, expanding relative paths against ZOETRON_DATA and validating existence before I/O."}}
+{"ts": 1788214141.608428, "kind": "dream_finished", "payload": {"insights": 5, "skill_proposals": 5}}
+{"ts": 1788214143.968686, "kind": "model_fail", "payload": {"model": "z-ai/glm-5.2:free", "error": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/doc", "ts": 1788214143.9686835, "schalter_geoeffnet": false}}

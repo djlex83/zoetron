@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 21:59:27",
+ "stand": "2026-09-07 22:09:55",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -9,13 +9,13 @@
    "quote": 1.0
   },
   {
-   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
-   "laeufe": 10,
-   "erfolge": 10,
+   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "laeufe": 11,
+   "erfolge": 11,
    "quote": 1.0
   },
   {
-   "tool": "schwarmwissen-regelmäßig-aktualisieren.py",
+   "tool": "vorgeschlagene-fähigkeiten-echt-umsetzen.py",
    "laeufe": 10,
    "erfolge": 10,
    "quote": 1.0
@@ -460,11 +460,11 @@
   }
  ],
  "haende_quote": 0.868,
- "simulationen_angewandt": 25,
+ "simulationen_angewandt": 24,
  "swarm_scores": {
-  "n": 22,
+  "n": 21,
   "best": 9.0,
-  "schnitt": 5.73
+  "schnitt": 5.67
  },
  "score_nach_ziel_typ": {
   "analyse": {
