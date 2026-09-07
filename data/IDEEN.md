@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 11:04 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 11:15 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 14×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Event-to-fact pruning ratio 82:1 signals excessive noise in experience stream; most logged events are transient model I/O, not durable knowledge.
+- Evolutionary search (3 variants) jumped scores to 9/8/9 by addressing thread-timeout handling, proving targeted code-level fixes outperform prompt-lev
+- Simulation-revision loops (5+3 revisions) plateau at score 7 without convergence, indicating the critic's feedback isn't actionable enough to escape l
+- Fallback cascade fails silently: Google Gemma models hit 429 rate limits immediately after Nemotron failure, leaving only inclusionai/ling-3.0-flash-f
+- Primary model (Nemotron) exhibits high latency variance (36-115s) and intermittent 502 upstream errors, making it unreliable for time-bounded tasks.
 - High metabolic stress (1.0) forces conserve mode that serializes parallel workloads.
 - Swarm knowledge decays into staleness without freshness SLA and automatic re-fetch triggers.
 - Hand actions fail silently when relative paths diverge from ZOETRON_DATA environment.
@@ -51,11 +56,6 @@
 - Skill proposals accumulate faster than they get implemented, creating a persistent gap between identified solutions and executed capabilities that the
 - The reflex-based error correction loop (`modellfehler-verstehen-und-beheben.py`) converges successfully but is inherently reactive; proactive pre-flig
 - Model failures follow predictable error signatures (502=overload, 429=rate-limit) that should trigger automatic cooldown-based routing rather than exh
-- Rate-limit errors cluster temporally across cycles, indicating provider-level backoff is needed rather than per-request retry logic.
-- Swarm knowledge freshness validation prevents stale goal execution but isn't yet enforced as a mandatory reflex pre-condition.
-- Skill proposals accumulate in memory but lack automated deployment verification, creating a persistent gap between proposal and operational capability
-- Fallback to inclusionai/ling-3.0-flash-fin succeeds where larger models fail, proving smaller specialized models are more resilient for routine swarm 
-- Google Gemma models on OpenRouter consistently hit 429 rate limits, making them unreliable as primary models for high-frequency tasks.
 
 ---
 
