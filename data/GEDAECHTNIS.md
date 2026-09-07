@@ -1,13 +1,13 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11872 Fakten** · Stand 2026-09-07 20:47 UTC · aktualisiert bei jedem Herzschlag
+**11870 Fakten** · Stand 2026-09-07 20:57 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7121
-- **swarm_artifact:** 2118
+- **dream:** 7126
+- **swarm_artifact:** 2114
 - **last_swarm_critique:** 826
-- **anti_pattern:** 569
+- **anti_pattern:** 567
 - **last_swarm_goal:** 558
-- **strategy:** 286
+- **strategy:** 285
 - **tool:** 180
 - **hand_result:** 135
 - **aktuell_organfehler:** 45
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907205535:5:878fc9`
+*07.09. 20:55 UTC · Quelle: dream*
+
+Five skill proposals generated but zero activated (drive_goal 'gap'), revealing a proposal-execution disconnect that stalls capability growth.
+
+### `dream:20260907205535:4:d5ad10`
+*07.09. 20:55 UTC · Quelle: dream*
+
+Pruning removed 34 events but 0 facts, showing experience consolidation discards temporal context while preserving semantic knowledge.
+
+### `dream:20260907205535:3:ad6f65`
+*07.09. 20:55 UTC · Quelle: dream*
+
+Reflex-driven error handling succeeded where proactive model selection failed, proving reactive recovery > static routing.
+
+### `dream:20260907205535:2:67dee1`
+*07.09. 20:55 UTC · Quelle: dream*
+
+Latency variance of 22x (3.2s vs 70.8s) on same model (nemotron) indicates unreliable upstream capacity, not model quality.
+
+### `dream:20260907205535:1:d07007`
+*07.09. 20:55 UTC · Quelle: dream*
+
+Model provider failures cascade: Nvidia 502s and Google 429s simultaneously disable 3/4 primary models, leaving only one fallback.
 
 ### `dream:20260907204418:5:c88dab`
 *07.09. 20:44 UTC · Quelle: dream*
@@ -45481,16 +45506,6 @@ Latency variance spans 30x (4s to 130s), making fixed timeouts either wasteful o
 *24.08. 21:08 UTC · Quelle: dream*
 
 Rate limiting (429) cascades across all free models simultaneously, eliminating fallback options and causing total service loss.
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Best-of-N mit unbestechl:2`
-*24.08. 20:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score {'elegance': 7, 'feasibility': 8, 'impact': 6}): Contract-Driven Benchmark Generation — derive tasks from an explicit completenes - Before writing any task content, freeze a machine-readable manifest: 12 entries with fields {id,
-
-### `anti_pattern:Previous attempt scored 2/10. Goal: Best-of-N mit unbestechl:1`
-*24.08. 20:48 UTC · Quelle: evolution*
-
-ABGELEHNT von Evolution (Score {'elegance': 7, 'feasibility': 8, 'impact': 8}): Security-First Judge via OS-level isolation — make incorruptibility a property o - Stop trying to make the judge safe through code discipline alone. Run every candidate inside a ha
 
 ### `last_swarm_critique`
 *24.08. 20:47 UTC · Quelle: critic*
