@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11728 Fakten** · Stand 2026-09-07 03:48 UTC · aktualisiert bei jedem Herzschlag
+**11727 Fakten** · Stand 2026-09-07 04:01 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6936
-- **swarm_artifact:** 2159
+- **swarm_artifact:** 2158
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907035746:5:bcf4b5`
+*07.09. 03:57 UTC · Quelle: dream*
+
+Pruning removes 34 events but stale-knowledge drive fires immediately after, showing cleanup without freshness verification.
+
+### `dream:20260907035746:4:45d2af`
+*07.09. 03:57 UTC · Quelle: dream*
+
+Latency variance for the same model (3.6s vs 20.2s) violates any implicit SLA, yet no budget enforcement triggers failover proactively.
+
+### `dream:20260907035746:3:5b09db`
+*07.09. 03:57 UTC · Quelle: dream*
+
+Self-diagnosis reports zero organ errors while model_fail events persist, indicating diagnostic blind spots for external provider failures.
+
+### `dream:20260907035746:2:0018d5`
+*07.09. 03:57 UTC · Quelle: dream*
+
+Skill proposals converge falsely: the system marks 'test proposed skills' complete while the validation hand_action fails silently with 'nothing read'.
+
+### `dream:20260907035746:1:45db52`
+*07.09. 03:57 UTC · Quelle: dream*
+
+Model failures cascade because failover is reactive and lacks real-time health awareness, causing repeated 429/502 errors before fallback.
 
 ### `dream:20260907034625:5:4ef6eb`
 *07.09. 03:46 UTC · Quelle: dream*
@@ -44816,31 +44841,6 @@ The SimulationGate was proposed in the prior dream cycle yet the next swarm stil
 *24.08. 03:53 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240351:5`
-*24.08. 03:51 UTC · Quelle: dream*
-
-Several loops fire without effect (prune run removed 0 facts/events; identical drive goals like 'reduce model errors' and 'test skill proposals' re-emitted verbatim), indicating unactioned recurring signals waste budget.
-
-### `dream:202608240351:4`
-*24.08. 03:51 UTC · Quelle: dream*
-
-The one graded failure (1/10) had a single root cause - missing evidence artifacts, not bad predictions - so pre-submission verification beats post-hoc score calibration.
-
-### `dream:202608240351:3`
-*24.08. 03:51 UTC · Quelle: dream*
-
-Latency spans 27s-274s and tracks output size (the 274s call emitted ~11.6k tokens), making oversized generations the main driver of slow calls and probable timeout-related failures.
-
-### `dream:202608240351:2`
-*24.08. 03:51 UTC · Quelle: dream*
-
-With metabolism at stress 1.0/conserve (max 3 tasks, 1 iteration) and only 3 of 7 swarm tasks finished, starting new tasks under a constrained budget structurally guarantees half-done work.
-
-### `dream:202608240351:1`
-*24.08. 03:51 UTC · Quelle: dream*
-
-Skill proposals accumulate untested (50+ backlog) and the same model-health/fallback idea has been re-proposed at least three times, so the real bottleneck is implementation, not ideation.
 
 ### `last_swarm_goal`
 *24.08. 03:34 UTC · Quelle: system*

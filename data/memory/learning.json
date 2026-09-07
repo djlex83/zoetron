@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 03:46:39",
+ "stand": "2026-09-07 03:59:11",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -177,6 +177,12 @@
    "quote": 1.0
   },
   {
+   "tool": "alte-erinnerungen-aktualisieren.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
    "tool": "fähigkeitsvorschläge-in-echte-skills-ums.py",
    "laeufe": 2,
    "erfolge": 0,
@@ -292,12 +298,6 @@
   },
   {
    "tool": "veraltete-wissenstände-auffrischen.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "alte-erinnerungen-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -430,11 +430,11 @@
   }
  ],
  "haende_quote": 0.847,
- "simulationen_angewandt": 23,
+ "simulationen_angewandt": 22,
  "swarm_scores": {
-  "n": 25,
+  "n": 24,
   "best": 9.0,
-  "schnitt": 5.72
+  "schnitt": 5.75
  },
  "score_nach_ziel_typ": {
   "bau": {
