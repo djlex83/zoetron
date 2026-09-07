@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 04:29 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 04:40 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 17×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Pruning removes facts/events aggressively (47 events in one run) without preserving failure-context needed for pattern mining.
+- Stress-aware scheduling logic is repeatedly proposed but never instantiated as a reusable, parameterized skill.
+- Swarm knowledge entries decay into staleness because refresh only occurs on explicit 'stale' signals, not continuously.
+- Skill proposals accumulate rapidly (5+ per cycle) yet lack a mandatory validation gate before registry promotion.
+- Model failure rate near 50% triggers cascading improvement drives but without systematic root-cause correlation.
 - Pruning aggressively (50+ events/cycle) without preserving failure-context correlations erases the very signal needed for root-cause mining.
 - Reflex tools (modellfehler-deutlich-reduzieren.py) achieve instant convergence where swarm iterations stall, proving targeted heuristics beat generic 
 - Swarm cycles consistently fail to converge (score 7, converged=false) yet still evolve useful artifacts, suggesting convergence criteria are misaligne
@@ -51,11 +56,6 @@
 - Evolution/swarm cycles run without convergence (score 7, converged=false) because critic feedback ('Schwere Abhängigkeit von Fallb') indicates archite
 - The system lacks adaptive model routing — it repeatedly retries known-failing endpoints instead of failing over to the reliable Ling model.
 - Free-tier models exhibit systematic failure modes: Nemotron suffers 502 overloads and timeouts, Gemma models hit 429 rate limits, while Ling-3.0-flash
-- Swarm coordination and recall are invoked for model-error reduction but swarm knowledge freshness remains a separate unresolved drive.
-- Simulation-based risk assessment (5 risks, 3 revisions) preceded the successful artifact generation, validating pre-flight checks.
-- Metabolic stress at 1.0 triggers conserve mode that caps execution to 3 tasks and 1 iteration, preventing multi-step workflows.
-- File operations fail when using relative paths instead of the mandated absolute data path from ZOETRON_DATA and sys.argv[1].
-- External model APIs (Nemotron, Gemma) frequently fail with 502 overload and 429 rate limits, making inclusionai/ling-3.0-flash-fin the only reliable f
 
 ---
 
