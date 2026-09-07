@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 04:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 04:50 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -25,12 +25,12 @@
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 19×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 10×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 8×)*
-- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen auffrischen *(wieder aufgegriffen: 9×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex execution without pre-flight validation (script existence, path resolution, dependencies) wastes cycles and can propagate failures silently, ma
+- Different error classes (429, 502, 5xx) demand fundamentally distinct recovery strategies — uniform retry logic worsens rate limits and delays upstrea
+- Reactive staleness detection means swarm data is already outdated before corrective action begins; scheduled proactive scanning is required to prevent
+- The dream-to-do gap is the dominant systemic failure mode: skill proposals accumulate faster than they are validated, coded, and promoted to active ca
+- Provider failures are correlated and cascading — a single upstream overload (502) coincides with rate-limit storms (429) across providers, meaning nai
 - Pruning removes facts/events aggressively (47 events in one run) without preserving failure-context needed for pattern mining.
 - Stress-aware scheduling logic is repeatedly proposed but never instantiated as a reusable, parameterized skill.
 - Swarm knowledge entries decay into staleness because refresh only occurs on explicit 'stale' signals, not continuously.
@@ -51,11 +56,6 @@
 - Swarm cycles consistently fail to converge (score 7, converged=false) yet still evolve useful artifacts, suggesting convergence criteria are misaligne
 - Nemotron-3-Ultra latency varies 6x (8.5–53 s) for similar token loads, indicating queue-depth or cold-start effects that a latency SLO can expose.
 - Rate-limited providers (429 errors) cluster on specific model families, making provider-level circuit breakers more effective than model-level retries
-- Hand actions (file reads) complete in <0.5s while model calls take 5-55s, making model latency the dominant bottleneck and primary failure surface.
-- Calibration error of 1 (predicted 6 vs actual 7) reveals the predictor overestimates failure severity, causing wasted compute on over-engineered fixes
-- Evolution/swarm cycles run without convergence (score 7, converged=false) because critic feedback ('Schwere Abhängigkeit von Fallb') indicates archite
-- The system lacks adaptive model routing — it repeatedly retries known-failing endpoints instead of failing over to the reliable Ling model.
-- Free-tier models exhibit systematic failure modes: Nemotron suffers 502 overloads and timeouts, Gemma models hit 429 rate limits, while Ling-3.0-flash
 
 ---
 

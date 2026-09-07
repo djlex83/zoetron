@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11730 Fakten** · Stand 2026-09-07 04:42 UTC · aktualisiert bei jedem Herzschlag
+**11729 Fakten** · Stand 2026-09-07 04:52 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 6946
-- **swarm_artifact:** 2151
+- **swarm_artifact:** 2150
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907044938:5:d63c2f`
+*07.09. 04:49 UTC · Quelle: dream*
+
+Reflex execution without pre-flight validation (script existence, path resolution, dependencies) wastes cycles and can propagate failures silently, making mandatory preflight gates a prerequisite for reliable automation.
+
+### `dream:20260907044938:4:cccc33`
+*07.09. 04:49 UTC · Quelle: dream*
+
+Different error classes (429, 502, 5xx) demand fundamentally distinct recovery strategies — uniform retry logic worsens rate limits and delays upstream recovery, so error-type-aware backoff is non-negotiable.
+
+### `dream:20260907044938:3:f6bfba`
+*07.09. 04:49 UTC · Quelle: dream*
+
+Reactive staleness detection means swarm data is already outdated before corrective action begins; scheduled proactive scanning is required to prevent degraded decisions from stale inputs.
+
+### `dream:20260907044938:2:22419c`
+*07.09. 04:49 UTC · Quelle: dream*
+
+The dream-to-do gap is the dominant systemic failure mode: skill proposals accumulate faster than they are validated, coded, and promoted to active capabilities, leaving the system knowledge-rich but action-poor.
+
+### `dream:20260907044938:1:267675`
+*07.09. 04:49 UTC · Quelle: dream*
+
+Provider failures are correlated and cascading — a single upstream overload (502) coincides with rate-limit storms (429) across providers, meaning naive retry amplifies rather than resolves the problem.
 
 ### `dream:20260907043931:5:eb12a2`
 *07.09. 04:39 UTC · Quelle: dream*
@@ -44851,31 +44876,6 @@ Rate limiting, not reasoning errors, was the dominant failure cause this cycle: 
 *24.08. 04:45 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240445:5`
-*24.08. 04:45 UTC · Quelle: dream*
-
-Two near-duplicate model-health proposals emerged from the same 429/latency failures, showing the proposal pipeline lacks deduplication against its own backlog.
-
-### `dream:202608240445:4`
-*24.08. 04:45 UTC · Quelle: dream*
-
-A prune run removed 0 of ~1700 stored facts, proving current pruning criteria ignore usage/recency signals and memory will grow unboundedly without access-based decay.
-
-### `dream:202608240445:3`
-*24.08. 04:45 UTC · Quelle: dream*
-
-Simulation returned verdict 'revise' with 5 revisions but only 2 were applied, meaning unapplied revisions are a silent quality leak that needs an apply-rate metric.
-
-### `dream:202608240445:2`
-*24.08. 04:45 UTC · Quelle: dream*
-
-The system generates new skill proposals every cycle while implementing almost none (50 queued, ~0 tested), so the fix must be implement-or-reject FIFO discipline, not more generation.
-
-### `dream:202608240445:1`
-*24.08. 04:45 UTC · Quelle: dream*
-
-Long-form generation calls (simulation/planning) emitting 5-7k output tokens consistently took 170-190s, making output-token caps plus automatic model downgrade the highest-leverage latency fix.
 
 ### `last_swarm_goal`
 *24.08. 04:28 UTC · Quelle: system*
