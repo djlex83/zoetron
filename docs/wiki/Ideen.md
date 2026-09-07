@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:15 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:25 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -28,7 +28,7 @@
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
-- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
+- Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 6×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Stress signals (5xx/429 bursts) correlate with goal stagnation but trigger no automatic scope reduction.
+- Skill proposals accumulate without validation gates, creating proposal debt that blocks execution.
+- Swarm convergence fails when critic feedback targets artifact gaps but builder iterations don't close them.
+- Calibration error of 100% (predicted 8 vs actual 4) reveals systematic overconfidence in planner estimates.
+- Model fallback chains must be pre-configured and health-scored, not improvised during failures.
 - Reflex tool returned false negative; only hand-action execution (exit 0, 419 lines running) confirmed true artifact viability.
 - Evolutionary iteration with critic feedback jumped artifact quality from 4/10 to 9/10 in a single generation.
 - Self-calibration is severely miscalibrated (predicted 8 vs actual 4), indicating need for explicit calibration tracking per model/task.
@@ -51,11 +56,6 @@
 - Pruning removed 16 facts and 42 events in a single cycle, which risks losing diagnostic value if no audit trail records why each item was pruned.
 - Skill proposals are generated faster than they can be validated and executed, creating a growing gap between dreaming and doing that the system recogn
 - Model failures (502 upstream errors, timeouts) cascade through the entire pipeline because no fallback provider chain exists, causing skill proposals 
-- Latency variance (4s vs 12s) across successful calls exceeds any implicit budget, causing unpredictable pipeline duration.
-- Simulation gap persists despite repeated drive goals — no automatic trigger bridges 'stale' or 'failure' signals to simulation execution.
-- Pruning (29 facts, 62 events) runs regularly but no downstream process re-validates surviving facts against fresh swarm signals, risking stale knowled
-- Reflex-driven self-healing (modellfehler-verstehen-und-beheben.py) successfully converged on model-error goals, proving autonomous diagnosis works whe
-- Free-tier models consistently hit 429 rate limits under load, making them unreliable for time-critical paths without a provider-agnostic fallback chai
 
 ---
 
