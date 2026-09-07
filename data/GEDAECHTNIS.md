@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11815 Fakten** · Stand 2026-09-07 14:25 UTC · aktualisiert bei jedem Herzschlag
+**11809 Fakten** · Stand 2026-09-07 14:38 UTC · aktualisiert bei jedem Herzschlag
 
 - **dream:** 7031
-- **swarm_artifact:** 2140
+- **swarm_artifact:** 2134
 - **last_swarm_critique:** 823
 - **anti_pattern:** 581
 - **last_swarm_goal:** 555
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907143428:5:0659e9`
+*07.09. 14:34 UTC · Quelle: dream*
+
+Pruning removes 20 events but zero facts, indicating the system accumulates episodic noise while retaining potentially outdated semantic knowledge.
+
+### `dream:20260907143428:4:622f30`
+*07.09. 14:34 UTC · Quelle: dream*
+
+Reflex actions using concrete tools (alte-marktanalyse-aktualisieren-und-nutz.py) succeed where abstract planning fails, suggesting tool-grounded execution is more reliable.
+
+### `dream:20260907143428:3:987f77`
+*07.09. 14:34 UTC · Quelle: dream*
+
+Swarm knowledge and drive goals become stale without automated refresh cycles, causing the system to re-learn the same lessons (reduce errors, update knowledge, use skills).
+
+### `dream:20260907143428:2:c3e6b9`
+*07.09. 14:34 UTC · Quelle: dream*
+
+The system repeatedly generates high-value skill proposals (circuit-breaker, path-resolution, health-monitor) but fails to implement them, creating a persistent proposal-implementation gap.
+
+### `dream:20260907143428:1:6b0881`
+*07.09. 14:34 UTC · Quelle: dream*
+
+Model reliability varies drastically by provider: nemotron-3-ultra suffers 502 upstream overloads while gemma models hit 429 rate limits, but ling-3.0-flash-fin succeeds with low latency.
 
 ### `dream:20260907142247:5:ec1c52`
 *07.09. 14:22 UTC · Quelle: dream*
@@ -45141,31 +45166,6 @@ score=4; issues=Tautologische Verifikation: Die Swarm-Simulation 'beweist' den L
 *24.08. 14:30 UTC · Quelle: system*
 
 Extern-Quote in DRIVE: raus aus der Selbst-Schleife
-
-### `dream:202608241430:5`
-*24.08. 14:30 UTC · Quelle: dream*
-
-Proposed skills accumulate untested (drive goal) because there is no automated trial harness that validates a proposal against a minimal replay before promotion.
-
-### `dream:202608241430:4`
-*24.08. 14:30 UTC · Quelle: dream*
-
-Calibration predicted the final score exactly (3), yet the swarm continued, showing the stop criterion is decoupled from the calibration signal.
-
-### `dream:202608241430:3`
-*24.08. 14:30 UTC · Quelle: dream*
-
-A missing `add_fact` method on MemoryStore halted the hand layer, revealing that skill proposals are deployed without contract verification against the actual store interface.
-
-### `dream:202608241430:2`
-*24.08. 14:30 UTC · Quelle: dream*
-
-Model latency varies 35× (2.8s–97.5s) on the same model, making fixed timeouts ineffective and causing unpredictable swarm duration.
-
-### `dream:202608241430:1`
-*24.08. 14:30 UTC · Quelle: dream*
-
-Swarm evolution improved individual variant scores (3→9) but the swarm still failed to converge, indicating the aggregation/critic mechanism cannot synthesize partial improvements into a coherent solution.
 
 ### `last_swarm_critique`
 *24.08. 13:37 UTC · Quelle: critic*
