@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-06 23:54 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 00:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,11 +24,11 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 19×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 18×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 17×)*
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
+- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 8×)*
-- Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 8×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Reflex route executed hebbian learning tool in 1.06s while swarm took 138s, proving lightweight deterministic paths outperform heavy deliberation for 
+- Five skill proposals generated but zero executed validates that proposal generation without mandatory validation gates produces artifact backlog not c
+- Swarm converges in 1 cycle with evolved=false, indicating premature convergence from insufficient critic diversity or missing exploration pressure.
+- Calibration error of 100% (predicted 4 vs actual 8) reveals critic scoring is uncalibrated, making all downstream selection decisions unreliable.
+- Model latency variance (138s vs 15s) and 27 errors indicate single-provider dependency creates systemic unreliability requiring routing with fallbacks
 - Self-diagnosis reports zero organ errors while hand_action fails on path resolution, revealing a blind spot between organ health and execution-layer I
 - Pruning discards 24 facts and 1 event without recording retention scores or reasons, losing diagnostic value for model_error_patterns.
 - Goals mark converged=true with score=null and no critic sign-off, allowing incomplete work to pass convergence gates.
@@ -51,11 +56,6 @@
 - Reflex tools for dream/simulation improvement converge reliably (2/2 successes) while model-dependent planning fails, suggesting reflexes should handl
 - Health-check probes before task execution would have prevented 3/4 model failures observed, as the 502 and 429 errors are detectable via lightweight p
 - Free-tier model endpoints exhibit systematic unreliability: NVIDIA returns 502s under load, Gemma hits 429 rate limits, and Nemotron latency varies 5–
-- Stress-aware scheduling proposals emerge when metabolism stress exceeds thresholds, showing homeostatic regulation is a learned behavior.
-- Self-generated skill proposals target observed failure modes (model health, reflex validation, proposal pipeline) indicating effective meta-learning.
-- Pruning volume (facts/events) correlates with experience density; aggressive pruning during high-throughput phases prevents memory bloat.
-- Reflex execution succeeds when tool scripts exist and paths resolve, but fails silently when preconditions aren't validated beforehand.
-- Model failures (502/429) cluster on specific providers, making provider-aware fallback with circuit-breakers essential for reliability.
 
 ---
 
