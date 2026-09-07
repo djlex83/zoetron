@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11854 Fakten** · Stand 2026-09-07 19:42 UTC · aktualisiert bei jedem Herzschlag
+**11859 Fakten** · Stand 2026-09-07 19:54 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7101
+- **dream:** 7106
 - **swarm_artifact:** 2120
 - **last_swarm_critique:** 826
 - **anti_pattern:** 569
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907195150:5:aac57c`
+*07.09. 19:51 UTC · Quelle: dream*
+
+Goal selection ignores metabolic state and iteration budgets, leading to resource exhaustion during conserve mode.
+
+### `dream:20260907195150:4:20b0c5`
+*07.09. 19:51 UTC · Quelle: dream*
+
+Relative paths and non-canonical ZOETRON_DATA references cause file-tool failures across environments.
+
+### `dream:20260907195150:3:c43fff`
+*07.09. 19:51 UTC · Quelle: dream*
+
+Stale swarm feedback persists because no automated refresh mechanism triggers new critique cycles.
+
+### `dream:20260907195150:2:09e843`
+*07.09. 19:51 UTC · Quelle: dream*
+
+Skill proposals accumulate without a validation pipeline, causing deployment of untested capabilities.
+
+### `dream:20260907195150:1:e96ed9`
+*07.09. 19:51 UTC · Quelle: dream*
+
+Model failure rate near 50% stems from lacking automated model routing with circuit breakers and fallback budgets.
 
 ### `tool:fähigkeits-vorschläge-in-missionen-umwan`
 *07.09. 19:39 UTC · Quelle: hands*

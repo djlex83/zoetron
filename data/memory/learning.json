@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 19:40:02",
+ "stand": "2026-09-07 19:52:16",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -135,12 +135,6 @@
    "quote": 1.0
   },
   {
-   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
-   "laeufe": 2,
-   "erfolge": 1,
-   "quote": 0.5
-  },
-  {
    "tool": "vorgeschlagene-fähigkeiten-tatsächlich-u.py",
    "laeufe": 2,
    "erfolge": 2,
@@ -172,6 +166,12 @@
   },
   {
    "tool": "häufige-modellfehler-besser-verstehen.py",
+   "laeufe": 2,
+   "erfolge": 2,
+   "quote": 1.0
+  },
+  {
+   "tool": "modellfehler-verstehen-und-verringern.py",
    "laeufe": 2,
    "erfolge": 2,
    "quote": 1.0
@@ -303,13 +303,13 @@
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-verstehen-und-verringern.py",
+   "tool": "modellfehler-finden-und-beheben.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
   },
   {
-   "tool": "modellfehler-finden-und-beheben.py",
+   "tool": "vorschläge-zu-echten-fähigkeiten-machen.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0
@@ -435,7 +435,7 @@
    "quote": 1.0
   }
  ],
- "haende_quote": 0.863,
+ "haende_quote": 0.867,
  "simulationen_angewandt": 26,
  "swarm_scores": {
   "n": 22,
@@ -444,8 +444,8 @@
  },
  "score_nach_ziel_typ": {
   "analyse": {
-   "n": 21,
-   "schnitt": 6.05
+   "n": 20,
+   "schnitt": 5.95
   },
   "bau": {
    "n": 1,

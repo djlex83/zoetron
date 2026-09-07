@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 19:40 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 19:52 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
-- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
-- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 14×)*
+- Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
+- Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 12×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Goal selection ignores metabolic state and iteration budgets, leading to resource exhaustion during conserve mode.
+- Relative paths and non-canonical ZOETRON_DATA references cause file-tool failures across environments.
+- Stale swarm feedback persists because no automated refresh mechanism triggers new critique cycles.
+- Skill proposals accumulate without a validation pipeline, causing deployment of untested capabilities.
+- Model failure rate near 50% stems from lacking automated model routing with circuit breakers and fallback budgets.
 - Evolutionary improvement (4→9) succeeds when critic identifies 'pure exploration' artifacts, but swarm convergence fails without explicit convergence 
 - Calibration error of +3 (predicted 7 vs actual 4) reveals systematic overconfidence in model reliability estimates.
 - inclusionai/ling-3.0-flash-fin:free is the only model demonstrating consistent low-latency (<5s) success across all observed calls.
@@ -51,11 +56,6 @@
 - High metabolic stress (0.98) triggers conserve mode that caps iterations to 1, preventing multi-step error recovery.
 - Model cascade fails predictably: premium models (Nemotron, Gemma) hit 502/429 errors under load while inclusionai/ling-3.0-flash-fin:free remains avai
 - Relative path resolution fails silently when tools expect absolute data paths from ZOETRON_DATA env var.
-- Metabolism stress at 0.982 triggers conserve mode (max 3 tasks, 1 iteration), starving the model-error investigation swarm before it can complete.
-- Pruning discards causal chains: 10 facts and 27 events removed without experiment_id, parent_step_id, or decision_context tags, making post-hoc debugg
-- Reflex convergence lacks guards: the 'Modellfehler systematisch untersuchen' reflex returned ok=false yet act_done was not blocked, unlike the success
-- Hand actions fail silently on path resolution: relative paths ignore ZOETRON_DATA and sys.argv[1], causing 'nichts gelesen' exits despite exit code 0.
-- Model failures cascade: nemotron-3-ultra returns 502 upstream errors and gemma models hit 429 rate limits, forcing fallback to inclusionai/ling-3.0-fl
 
 ---
 
