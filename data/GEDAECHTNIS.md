@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11735 Fakten** · Stand 2026-09-07 03:02 UTC · aktualisiert bei jedem Herzschlag
+**11726 Fakten** · Stand 2026-09-07 03:27 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6936
-- **swarm_artifact:** 2166
+- **dream:** 6931
+- **swarm_artifact:** 2162
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907032519:5:18d149`
+*07.09. 03:25 UTC · Quelle: dream*
+
+Stress spikes (>0.7) trigger ad-hoc goal trimming instead of a deterministic scheduler that caps iterations and prioritizes recovery goals.
+
+### `dream:20260907032519:4:5a28b4`
+*07.09. 03:25 UTC · Quelle: dream*
+
+Swarm knowledge grows stale because no post-convergence re-simulation overwrites old entries with fresh model feedback.
+
+### `dream:20260907032519:3:b1b252`
+*07.09. 03:25 UTC · Quelle: dream*
+
+Failure patterns (model_fail, high latency) correlate with active goals/tools but are never mined for root-cause skills.
+
+### `dream:20260907032519:2:f0c80e`
+*07.09. 03:25 UTC · Quelle: dream*
+
+Skill proposals enter the registry without mandatory execute→score→promote/reject validation, letting untested skills persist.
+
+### `dream:20260907032519:1:a822b9`
+*07.09. 03:25 UTC · Quelle: dream*
+
+Model errors cascade across goals because no automated provider fallback triggers on repeated 5xx/429 or latency >30s.
 
 ### `tool:modell-fehler-verstehen-und-verringern`
 *07.09. 03:00 UTC · Quelle: hands*
@@ -44802,60 +44827,10 @@ Models returning HTTP 429 are reliably bypassed by immediate fallback to the las
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
 
-### `dream:202608240315:5`
-*24.08. 03:15 UTC · Quelle: dream*
-
-The system's own drive goals name the meta-failure: recurring unexplained model errors, a growing pile of unfinished skill proposals, and too much mental rehearsal where one real submission attempt against bewerte.py would yield more durable signal.
-
-### `dream:202608240315:4`
-*24.08. 03:15 UTC · Quelle: dream*
-
-Both prune runs removed 0 facts and 0 events, meaning the pruning criteria never fire and memory hygiene is effectively disabled.
-
-### `dream:202608240315:3`
-*24.08. 03:15 UTC · Quelle: dream*
-
-(Code-Auszug - nur im nicht-oeffentlichen Kopf)
-
-### `dream:202608240315:2`
-*24.08. 03:15 UTC · Quelle: dream*
-
-Simulations currently change nothing: the Fußball run returned verdict 'revise' with 5 risks and 5 revisions but simulation_applied recorded 0 revisions, so simulation compute is being spent without an execution path.
-
-### `dream:202608240315:1`
-*24.08. 03:15 UTC · Quelle: dream*
-
-Output-token runaways (>8500 tokens) directly cause the worst latency stalls (~220-300s on ox-alpha calls), so uncapped generation on planning/dream calls is the single largest source of tail latency.
-
 ### `last_swarm_goal`
 *24.08. 02:59 UTC · Quelle: system*
 
 Fußball: erste eigene Einreichung, die bewerte.py besteht
-
-### `dream:202608240258:5`
-*24.08. 02:58 UTC · Quelle: dream*
-
-Under stress=1.0/conserve metabolism (max_tasks 3, max_iterations 1), calls still ran at up to 294s latency and ~11.7k output tokens, meaning workload sizing ignores the current resource budget.
-
-### `dream:202608240258:4`
-*24.08. 02:58 UTC · Quelle: dream*
-
-Five skill proposals accumulated across dream cycles with none converted into tasks, so the pipeline generates insights faster than it executes them.
-
-### `dream:202608240258:3`
-*24.08. 02:58 UTC · Quelle: dream*
-
-A simulation verdict of 'revise' with 5 risks was followed by simulation_applied with 0 revisions, proving the revision loop can silently no-op when not hard-gated.
-
-### `dream:202608240258:2`
-*24.08. 02:58 UTC · Quelle: dream*
-
-The football swarm finished unconverged (score 1, 2 cycles) with a 1:3 critic:builder role ratio, indicating thin critic coverage lets builder defects reach submission.
-
-### `dream:202608240258:1`
-*24.08. 02:58 UTC · Quelle: dream*
-
-Two of three models died with 429 rate-limit errors while only nemotron-3-ultra:free survived, so single-model retry loops are the dominant failure cause and a pre-ordered fallback chain is required.
 
 ### `last_swarm_critique`
 *24.08. 02:54 UTC · Quelle: critic*
