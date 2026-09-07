@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 06:01:22",
+ "stand": "2026-09-07 06:11:01",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -219,9 +219,9 @@
    "quote": 1.0
   },
   {
-   "tool": "vergessene-schwarmprojekte-reaktivieren.py",
-   "laeufe": 1,
-   "erfolge": 1,
+   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
+   "laeufe": 2,
+   "erfolge": 2,
    "quote": 1.0
   },
   {
@@ -406,12 +406,6 @@
   },
   {
    "tool": "fehler-systematisch-sammeln-und-verstehe.py",
-   "laeufe": 1,
-   "erfolge": 1,
-   "quote": 1.0
-  },
-  {
-   "tool": "modellfehler-reduzieren-fuer-zuverlaessi.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

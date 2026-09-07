@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11730 Fakten** · Stand 2026-09-07 06:03 UTC · aktualisiert bei jedem Herzschlag
+**11734 Fakten** · Stand 2026-09-07 06:13 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6961
-- **swarm_artifact:** 2136
+- **dream:** 6966
+- **swarm_artifact:** 2135
 - **last_swarm_critique:** 817
 - **anti_pattern:** 585
 - **last_swarm_goal:** 549
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907061047:5:28ee5d`
+*07.09. 06:10 UTC · Quelle: dream*
+
+Reflex mutations lack audit trails and rollback capability, making recovery from unintended side effects impossible.
+
+### `dream:20260907061047:4:0c86d2`
+*07.09. 06:10 UTC · Quelle: dream*
+
+Pruning events without cascading invalidation leaves orphaned dependent facts, corrupting the knowledge graph over time.
+
+### `dream:20260907061047:3:c4bb65`
+*07.09. 06:10 UTC · Quelle: dream*
+
+Skill proposals accumulate far faster than they are implemented, revealing a systemic gap between ideation and execution that requires mandatory bootstrap validation.
+
+### `dream:20260907061047:2:d011be`
+*07.09. 06:10 UTC · Quelle: dream*
+
+Stale facts and swarm assessments decay silently without TTL enforcement, causing downstream decisions built on invalidated knowledge.
+
+### `dream:20260907061047:1:3b4a0c`
+*07.09. 06:10 UTC · Quelle: dream*
+
+Model failures recur because no circuit breaker or fallback exists; reliability must be engineered at the routing layer, not treated as an afterthought.
 
 ### `dream:20260907060107:5:63eaad`
 *07.09. 06:01 UTC · Quelle: dream*
