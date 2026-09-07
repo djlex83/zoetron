@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 15:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 15:24 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -27,20 +27,25 @@
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 13×)*
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
+- Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
-- Modelle zuverlässiger machen *(wieder aufgegriffen: 10×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
+- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 5×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
-- Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Memory consolidation is working (22 events pruned, 0 organ errors), but pruning alone cannot compensate for upstream data quality issues — stale input
+- The system self-heals through reflex scripts when problems are identified, but reflexes are reactive — without proactive guards (validators, health ta
+- Swarm knowledge degrades silently: the 'stale' signal shows that without an explicit TTL and refresh reflex, accumulated swarm data becomes unreliable
+- A persistent proposal-to-execution gap exists: five skill proposals were generated but the 'gap' signal confirms they are not being consumed, meaning 
+- Model infrastructure is the root bottleneck: rate limits (429), extreme latency (93s), and unavailability cascade into every downstream failure, makin
 - Under metabolic conservation (stress), the system lacks a disciplined procedure to emit exactly one verifiable atomic task, leading to wasted effort o
 - The absence of a calibration feedback loop means prediction errors accumulate undetected across cycles, preventing the system from self-correcting its
 - Stale swarm data and unconnected dream memories compound knowledge decay, degrading decision quality unless a refresh-and-link cycle runs continuously
@@ -51,11 +56,6 @@
 - Swarm feedback cycles are decoupled from execution cycles, causing stale critiques to drive new goals while fresh execution data sits unused.
 - Skill proposals accumulate faster than validation (12 proposed, 0 tested in log), creating an unvalidated backlog that blocks measurable improvement.
 - Model latency varies 2x (40-86s) for identical requests, making fixed timeouts unreliable and requiring adaptive routing with health-aware fallbacks.
-- Confidence estimates are uncalibrated – predicted scores diverge from actual outcomes, misleading the scheduler.
-- Swarm knowledge decays within hours; critiques and goals become stale before they can be reused.
-- Conserve mode triggers on single iterations without checking task triviality, wasting budget on unwinnable cycles.
-- Skill proposals accumulate but rarely get implemented, creating a proposal-implementation gap that stalls capability growth.
-- Model latency varies wildly (40-74s) for the same provider, making fixed timeouts unreliable and causing cascade failures.
 
 ---
 
