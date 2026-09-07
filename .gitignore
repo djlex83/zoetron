@@ -57,3 +57,11 @@ data/hermes/
 *bak*
 *.orig
 *.tmp
+
+# --- 07.09.2026: Kopfschutz, erste Linie nachgezogen ----------------
+# 'nur-src.patch' lag vom 28.08. bis 07.09. oeffentlich im Repo: 21 KB
+# Diff aus 14 Kern-Modulen. 'src/' oben greift nicht, wenn der Code als
+# Patch in der Wurzel liegt - der Name entschied, nicht der Inhalt.
+# Die zweite Linie prueft jetzt den Inhalt (.git/hooks/pre-commit).
+*.patch
+*.diff
