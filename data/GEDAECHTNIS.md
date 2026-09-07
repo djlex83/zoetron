@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11821 Fakten** · Stand 2026-09-07 17:46 UTC · aktualisiert bei jedem Herzschlag
+**11826 Fakten** · Stand 2026-09-07 17:58 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7076
+- **dream:** 7081
 - **swarm_artifact:** 2114
 - **last_swarm_critique:** 824
 - **anti_pattern:** 571
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907175521:5:d12d19`
+*07.09. 17:55 UTC · Quelle: dream*
+
+Calibration error of 1 point persists despite evolution, indicating the predictor overestimates artifact quality by ~20%.
+
+### `dream:20260907175521:4:088938`
+*07.09. 17:55 UTC · Quelle: dream*
+
+Swarm convergence stalls when builder-to-critic ratio exceeds 3:1 and cycles are capped at 2, leaving risks unaddressed.
+
+### `dream:20260907175521:3:9fe00c`
+*07.09. 17:55 UTC · Quelle: dream*
+
+Tools that produce only stdout without side-effects or return values are rejected by the hand-action validator, wasting cycles.
+
+### `dream:20260907175521:2:3a7311`
+*07.09. 17:55 UTC · Quelle: dream*
+
+Evolutionary search with critic feedback can lift artifact scores from 4 to 8–9, but only when variants implement concrete behavior rather than delegating externally.
+
+### `dream:20260907175521:1:1f4782`
+*07.09. 17:55 UTC · Quelle: dream*
+
+Free-tier models on OpenRouter suffer systematic rate-limiting (429) and upstream overloads (502), making them unreliable for latency-sensitive workflows.
 
 ### `dream:20260907174400:5:80a0af`
 *07.09. 17:44 UTC · Quelle: dream*
