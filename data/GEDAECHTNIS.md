@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11774 Fakten** · Stand 2026-09-07 11:28 UTC · aktualisiert bei jedem Herzschlag
+**11777 Fakten** · Stand 2026-09-07 11:39 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6991
-- **swarm_artifact:** 2138
+- **dream:** 6996
+- **swarm_artifact:** 2136
 - **last_swarm_critique:** 821
 - **anti_pattern:** 585
 - **last_swarm_goal:** 553
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907113656:5:05078c`
+*07.09. 11:36 UTC · Quelle: dream*
+
+Swarm knowledge freshness checks are proposed as mandatory gates but not yet enforced, risking stale context in high-stress cycles.
+
+### `dream:20260907113656:4:0e069f`
+*07.09. 11:36 UTC · Quelle: dream*
+
+Skill proposals accumulate (5 proposed) but deployment verification is absent, leaving execution gap unmeasured.
+
+### `dream:20260907113656:3:6cd21d`
+*07.09. 11:36 UTC · Quelle: dream*
+
+Simulation-driven revision loops (5 revisions) successfully recover from failure but consume 180s+ latency per cycle.
+
+### `dream:20260907113656:2:a9478a`
+*07.09. 11:36 UTC · Quelle: dream*
+
+Reflex tools fail silently when metabolism budget restricts iterations to 1, causing zero file operations despite valid intent.
+
+### `dream:20260907113656:1:2292b2`
+*07.09. 11:36 UTC · Quelle: dream*
+
+Model provider overload (429/502 errors) cascades into system-wide stress (0.936) triggering conserve mode that blocks reflex execution.
 
 ### `dream:20260907112540:5:6fc1ee`
 *07.09. 11:25 UTC · Quelle: dream*

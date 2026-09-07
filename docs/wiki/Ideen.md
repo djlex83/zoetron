@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 11:26 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 11:37 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -23,9 +23,9 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 14×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 13×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 10×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge freshness checks are proposed as mandatory gates but not yet enforced, risking stale context in high-stress cycles.
+- Skill proposals accumulate (5 proposed) but deployment verification is absent, leaving execution gap unmeasured.
+- Simulation-driven revision loops (5 revisions) successfully recover from failure but consume 180s+ latency per cycle.
+- Reflex tools fail silently when metabolism budget restricts iterations to 1, causing zero file operations despite valid intent.
+- Model provider overload (429/502 errors) cascades into system-wide stress (0.936) triggering conserve mode that blocks reflex execution.
 - High metabolism stress (0.936) triggers conserve mode that starves swarm iterations needed for convergence.
 - Skill proposals accumulate but deployment verification reflex fails, creating persistent idea-action gap.
 - Hand actions fail on relative paths because ZOETRON_DATA env var isn't resolved before execution.
@@ -51,11 +56,6 @@
 - Simulation-revision loops (5+3 revisions) plateau at score 7 without convergence, indicating the critic's feedback isn't actionable enough to escape l
 - Fallback cascade fails silently: Google Gemma models hit 429 rate limits immediately after Nemotron failure, leaving only inclusionai/ling-3.0-flash-f
 - Primary model (Nemotron) exhibits high latency variance (36-115s) and intermittent 502 upstream errors, making it unreliable for time-bounded tasks.
-- High metabolic stress (1.0) forces conserve mode that serializes parallel workloads.
-- Swarm knowledge decays into staleness without freshness SLA and automatic re-fetch triggers.
-- Hand actions fail silently when relative paths diverge from ZOETRON_DATA environment.
-- Proposed skills remain theoretical without mandatory simulation validation before deployment.
-- Upstream model overload (502) causes cascading failures without health-aware routing.
 
 ---
 
