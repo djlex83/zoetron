@@ -1,12 +1,12 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:33 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 23:43 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
 
+- Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 8×)*
 - Create a proposal-to-mission funnel: auto-promote proposals with ≥3 upvotes and clear success metrics to missi *(hatte die Idee 7×)*
-- Tag all pruned facts/events with experiment_id, parent_step_id, and decision_context to preserve reconstructab *(hatte die Idee 7×)*
 - Instrument every hand_action and model call with structured telemetry (stdout, stderr, exit_code, duration, to *(hatte die Idee 7×)*
 - ErrorClassBackoffStrategy: encode distinct retry policies — exponential backoff with jitter for 429 rate limit *(hatte die Idee 6×)*
 - ProposalToSkillAutoloop: automate the pipeline from top skill proposal selection → code generation → tool regi *(hatte die Idee 6×)*
@@ -23,11 +23,11 @@
 
 ## 🔥 Eigene Ziele
 
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 18×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 15×)*
-- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen aktualisieren und nutzen *(wieder aufgegriffen: 12×)*
 - Schwarm-Wissen auffrischen *(wieder aufgegriffen: 11×)*
+- Modell-Fehler stark reduzieren *(wieder aufgegriffen: 11×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 8×)*
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 8×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 8×)*
@@ -37,10 +37,15 @@
 - Vorschläge in echte Fähigkeiten wandeln *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und beheben *(wieder aufgegriffen: 6×)*
 - Modellfehler stark reduzieren *(wieder aufgegriffen: 5×)*
-- Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
+- Modellfehler reduzieren *(wieder aufgegriffen: 4×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- 75 skill proposals accumulate without a promotion funnel (upvotes, success metrics, owner, deadline) to convert them into tested missions.
+- Pruning discards causal context (experiment_id, parent_step_id, decision_context), making post-hoc debugging impossible.
+- Reflex paths bypass convergence gates (score≥8, delta<0.1 over 3 cycles, critic approval), allowing premature act_done.
+- Model failure rate (29 failed attempts) demands per-provider circuit breakers with automatic failover within a strict latency budget.
+- Relative path usage instead of canonical ZOETRON_DATA paths causes silent hand_action failures with exit code 0 but no data read.
 - Reflex-driven exploration (verbundene-traeume-nach-neuen-fuehigkeit.py) converges reliably in reflex mode, suggesting that autonomous reflex loops out
 - Self-diagnosis executed on a clean provider breaks the bootstrap dependency where failed providers cannot analyze their own failures, making it a prov
 - Skill proposals consistently fail to convert into deployed abilities because there is no gated validation pipeline — proposals accumulate without sand
@@ -51,11 +56,6 @@
 - Swarm knowledge decays without nightly synthesis: inactive swarm data becomes stale within days, requiring automated dream-link analysis to generate t
 - Stress-aware planning must gate complexity budgets before each step, not after failures, using metabolism state to cap tasks and iterations proactivel
 - Provider-specific failure modes (Nvidia 502, Google 429) require targeted fallback chains rather than generic retries, with inclusionai/ling-3.0-flash
-- High metabolic stress correlates with planning overreach; capping tasks/iterations when stress >0.8 prevents cascade failures.
-- Relative path handling in tool calls causes silent data corruption unless a middleware guard rewrites to absolute ZOETRON_DATA paths at dispatch.
-- Simulated skills never reach production because no automated A/B gate validates them against live metrics before promotion.
-- Swarm knowledge decays within hours without a heartbeat mechanism that forces fresh goal-state and critique propagation.
-- Model provider instability (502/429 errors) cascades into task failures unless automatic fallback with health scoring is baked into every LLM call.
 
 ---
 
