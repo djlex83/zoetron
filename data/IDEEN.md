@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 01:55 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 02:05 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -24,8 +24,8 @@
 ## 🔥 Eigene Ziele
 
 - Modell-Fehler stark reduzieren *(wieder aufgegriffen: 18×)*
-- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 17×)*
 - Modell-Fehler deutlich reduzieren *(wieder aufgegriffen: 16×)*
+- Schwarm-Wissen aktualisieren *(wieder aufgegriffen: 16×)*
 - Modelle zuverlässiger machen *(wieder aufgegriffen: 11×)*
 - Modellfehler deutlich reduzieren *(wieder aufgegriffen: 9×)*
 - Schwarm-Wissen auffrischen und nutzen *(wieder aufgegriffen: 9×)*
@@ -41,6 +41,11 @@
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Moderate metabolic stress (0.411) with a tight budget (max 4 tasks, 2 iterations) means the system cannot sustain concurrent swarm operations and mode
+- The recurring stale-signal on swarm knowledge indicates that refresh is reactive rather than scheduled, so the system always lags behind updated criti
+- Pruning removed 16 facts and 42 events in a single cycle, which risks losing diagnostic value if no audit trail records why each item was pruned.
+- Skill proposals are generated faster than they can be validated and executed, creating a growing gap between dreaming and doing that the system recogn
+- Model failures (502 upstream errors, timeouts) cascade through the entire pipeline because no fallback provider chain exists, causing skill proposals 
 - Latency variance (4s vs 12s) across successful calls exceeds any implicit budget, causing unpredictable pipeline duration.
 - Simulation gap persists despite repeated drive goals — no automatic trigger bridges 'stale' or 'failure' signals to simulation execution.
 - Pruning (29 facts, 62 events) runs regularly but no downstream process re-validates surviving facts against fresh swarm signals, risking stale knowled
@@ -51,11 +56,6 @@
 - Reflex-based diagnosis (häufige-modellfehler-besser-verstehen.py) converged successfully, proving that structured self-diagnosis works, but only after
 - The system reliably generates high-quality skill proposals (ProviderReliabilityIndex, ReflexPreflightGate, etc.) but the persistent gap between propos
 - 429 rate-limit errors and 502 upstream-overload errors are two distinct failure classes requiring different mitigation strategies (exponential backoff
-- High stress degrades scheduling reliability, so iteration limits and goal prioritization must adapt dynamically to measured stress levels.
-- Failure patterns recur when timestamps are not correlated with active goals and tools, meaning root-cause mining must be periodic rather than ad-hoc.
-- Skill proposals that skip execution-and-scoring validation accumulate as dead weight, so a hard one-cycle gate prevents registry bloat.
-- Stale swarm data degrades decision quality, making periodic re-simulation after every convergence cycle a non-optional maintenance task.
-- Provider-side failures (502/429) cluster under load, so automatic health tracking and demotion prevent repeated exposure to unreliable endpoints.
 
 ---
 

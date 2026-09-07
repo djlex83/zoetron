@@ -1,9 +1,9 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11723 Fakten** · Stand 2026-09-07 01:57 UTC · aktualisiert bei jedem Herzschlag
+**11727 Fakten** · Stand 2026-09-07 02:07 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 6926
-- **swarm_artifact:** 2170
+- **dream:** 6931
+- **swarm_artifact:** 2169
 - **last_swarm_critique:** 816
 - **anti_pattern:** 583
 - **last_swarm_goal:** 548
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907020456:5:c0dd27`
+*07.09. 02:04 UTC · Quelle: dream*
+
+Moderate metabolic stress (0.411) with a tight budget (max 4 tasks, 2 iterations) means the system cannot sustain concurrent swarm operations and model retries simultaneously.
+
+### `dream:20260907020456:4:d2b0bf`
+*07.09. 02:04 UTC · Quelle: dream*
+
+The recurring stale-signal on swarm knowledge indicates that refresh is reactive rather than scheduled, so the system always lags behind updated criticisms and goals.
+
+### `dream:20260907020456:3:656378`
+*07.09. 02:04 UTC · Quelle: dream*
+
+Pruning removed 16 facts and 42 events in a single cycle, which risks losing diagnostic value if no audit trail records why each item was pruned.
+
+### `dream:20260907020456:2:9ded40`
+*07.09. 02:04 UTC · Quelle: dream*
+
+Skill proposals are generated faster than they can be validated and executed, creating a growing gap between dreaming and doing that the system recognizes but cannot close.
+
+### `dream:20260907020456:1:4eb9db`
+*07.09. 02:04 UTC · Quelle: dream*
+
+Model failures (502 upstream errors, timeouts) cascade through the entire pipeline because no fallback provider chain exists, causing skill proposals to stall before execution.
 
 ### `dream:20260907015441:5:98f9d5`
 *07.09. 01:54 UTC · Quelle: dream*
