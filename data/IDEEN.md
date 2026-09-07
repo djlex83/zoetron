@@ -1,6 +1,6 @@
 # 💡 Zoetrons Ideen-Board (AUTONOM)
 
-**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 14:12 UTC
+**Alles hier hat Zoetron selbst erfunden** – ohne Anweisung des Erschaffers. Gesammelt aus den letzten 72 Stunden seines Herzschlags. · Stand 2026-09-07 14:23 UTC
 
 ## 🛠 Fähigkeiten, die er sich wünscht
 *Wie oft er dieselbe Idee hatte steht dabei – öfter = dringlicher.*
@@ -16,10 +16,10 @@
 - ModelRouter: health-checked model selection with automatic fallback, latency budgeting, and rate-limit backoff *(hatte die Idee 4×)*
 - Add SkillValidationGate: every skill proposal must spawn a validation sub-swarm that tests the proposed skill  *(hatte die Idee 4×)*
 - Deploy LatencyBudgetEnforcer middleware: tag each pipeline stage with max_ms, measure p95 per model, reject ca *(hatte die Idee 4×)*
-- Add a @circuit_breaker decorator with configurable failure thresholds, half-open probe intervals, and automati *(hatte die Idee 3×)*
 - SimulationGate: run simulation verdict; if revise, apply revisions and re-verify before committing artifact. *(hatte die Idee 3×)*
 - Add a mandatory skill validation gate requiring every proposed skill to be executed and scored within one cycl *(hatte die Idee 3×)*
 - Build a convergence gate that requires score >= 8 AND no critical risks from simulation AND critic sign-off be *(hatte die Idee 3×)*
+- Implement PreFlightCheck that queries the ModelHealthRegistry before every generation call, skipping providers *(hatte die Idee 3×)*
 
 ## 🔥 Eigene Ziele
 
@@ -35,12 +35,17 @@
 - Modell-Fehler reduzieren *(wieder aufgegriffen: 7×)*
 - Modellfehler reduzieren *(wieder aufgegriffen: 6×)*
 - Modellfehler verstehen und reduzieren *(wieder aufgegriffen: 6×)*
-- Modellfehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 4×)*
 - Träume in echte Fähigkeiten verwandeln *(wieder aufgegriffen: 4×)*
 - Modell-Fehler verstehen und reduzieren *(wieder aufgegriffen: 4×)*
+- Modell-Fehler reduzieren und Zuverlässigkeit steigern *(wieder aufgegriffen: 3×)*
 
 ## 💭 Nächtliche Erkenntnisse
 
+- Swarm knowledge refresh succeeds ad-hoc but has no scheduled validator to prevent staleness between cycles.
+- Reflex tools fail silently on relative paths because ZOETRON_DATA prefix is not auto-prepended before execution.
+- Skill proposals accumulate in dreams but lack a promotion gateway to become executable, versioned capabilities.
+- Drive goals recur across sleep cycles because reflex tools converge without registering reusable skills in the registry.
+- Model endpoint 502 errors cascade into planning failures because no circuit breaker isolates degraded endpoints.
 - Self-diagnosis reports zero organ errors while drive signals (failure, stale, gap) persist, revealing a blind spot: component health ≠ system-level go
 - Skill proposals accumulate in a consistent structured format but lack a gating mechanism (criteria, owner, deadline) to convert them into built capabi
 - Model latency varies by >25% (49–62 s) for the same model, indicating unstable inference conditions that degrade planner reliability and violate impli
@@ -51,11 +56,6 @@
 - Skill proposals accumulate but remain unintegrated because no automated validation-to-deployment pipeline exists.
 - High latency (60s) on successful nemotron calls indicates unstable infrastructure, not just transient errors, requiring health-aware routing.
 - Free-tier model endpoints exhibit cascading failures (502 overload, 429 rate-limits) making single-provider reliance a systemic reliability hazard.
-- Simulation flagged 5 risks and 5 revisions but the subsequent swarm run didn't validate those fixes against reality.
-- Pruning 50 events without causality IDs severs the forensic chain needed to debug why simulations revised 5 times yet swarm didn't converge.
-- Hand actions exit non-zero silently (exit=1, no stderr captured) creating blind spots in tool execution feedback.
-- Swarm convergence at score 7 after only 2 cycles with evolved=true indicates premature termination masquerading as progress.
-- Free-tier model providers fail unpredictably (502 overload, 429 rate limits) making single-provider dependence a reliability anti-pattern.
 
 ---
 

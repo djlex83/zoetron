@@ -1,5 +1,5 @@
 {
- "stand": "2026-09-07 14:12:14",
+ "stand": "2026-09-07 14:23:46",
  "ereignisse_ausgewertet": 4000,
  "werkzeuge": [
   {
@@ -51,12 +51,6 @@
    "quote": 1.0
   },
   {
-   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
-   "laeufe": 4,
-   "erfolge": 4,
-   "quote": 1.0
-  },
-  {
    "tool": "erkenntnisse-aus-schwarm-arbeit-ziehen.py",
    "laeufe": 4,
    "erfolge": 4,
@@ -82,6 +76,12 @@
   },
   {
    "tool": "alte-schwarm-ergebnisse-aufräumen.py",
+   "laeufe": 3,
+   "erfolge": 3,
+   "quote": 1.0
+  },
+  {
+   "tool": "alte-marktanalyse-aktualisieren-und-nutz.py",
    "laeufe": 3,
    "erfolge": 3,
    "quote": 1.0
@@ -418,6 +418,12 @@
   },
   {
    "tool": "neue-fähigkeiten-erlernen.py",
+   "laeufe": 1,
+   "erfolge": 1,
+   "quote": 1.0
+  },
+  {
+   "tool": "veraltete-schwarmziele-aktualisieren.py",
    "laeufe": 1,
    "erfolge": 1,
    "quote": 1.0

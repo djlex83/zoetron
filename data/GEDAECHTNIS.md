@@ -1,8 +1,8 @@
 # 🧠 Zoetrons Gedächtnis (LIVE)
 
-**11810 Fakten** · Stand 2026-09-07 14:14 UTC · aktualisiert bei jedem Herzschlag
+**11815 Fakten** · Stand 2026-09-07 14:25 UTC · aktualisiert bei jedem Herzschlag
 
-- **dream:** 7026
+- **dream:** 7031
 - **swarm_artifact:** 2140
 - **last_swarm_critique:** 823
 - **anti_pattern:** 581
@@ -15,6 +15,31 @@
 - **creator_teaching:** 1
 
 ---
+
+### `dream:20260907142247:5:ec1c52`
+*07.09. 14:22 UTC · Quelle: dream*
+
+Swarm knowledge refresh succeeds ad-hoc but has no scheduled validator to prevent staleness between cycles.
+
+### `dream:20260907142247:4:5add6e`
+*07.09. 14:22 UTC · Quelle: dream*
+
+Reflex tools fail silently on relative paths because ZOETRON_DATA prefix is not auto-prepended before execution.
+
+### `dream:20260907142247:3:56e47d`
+*07.09. 14:22 UTC · Quelle: dream*
+
+Skill proposals accumulate in dreams but lack a promotion gateway to become executable, versioned capabilities.
+
+### `dream:20260907142247:2:4debe9`
+*07.09. 14:22 UTC · Quelle: dream*
+
+Drive goals recur across sleep cycles because reflex tools converge without registering reusable skills in the registry.
+
+### `dream:20260907142247:1:c678ce`
+*07.09. 14:22 UTC · Quelle: dream*
+
+Model endpoint 502 errors cascade into planning failures because no circuit breaker isolates degraded endpoints.
 
 ### `dream:20260907141030:5:1903b0`
 *07.09. 14:10 UTC · Quelle: dream*
